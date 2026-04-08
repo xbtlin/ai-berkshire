@@ -390,6 +390,40 @@ cp ai-berkshire/skills/*.md ~/.claude/commands/
 - **反共识检查**：聪明人为什么不买/做空这家公司？
 - **留白原则**：宁可说"数据不足"，也不用推测伪装确定性
 
+### 金融严谨性工具 (`tools/financial_rigor.py`)
+
+LLM 心算不可靠——PE算错一个小数点、市值单位搞混一个零，都可能导致错误的投资决策。本项目内置了程序化验证工具，在 Skill 执行过程中自动调用，确保关键数据的计算精度：
+
+| 功能 | 命令 | 解决的问题 |
+|------|------|-----------|
+| **市值验算** | `verify-market-cap` | 股价×总股本 精确计算，与报告市值对比，检测单位错误 |
+| **估值验算** | `verify-valuation` | PE/PB/ROE/FCF Yield 精确十进制计算，杜绝浮点漂移 |
+| **多源交叉验证** | `cross-validate` | N个来源的同一数据自动比对，超过容差自动告警 |
+| **三情景估值** | `three-scenario` | 乐观/中性/悲观精确计算目标价，可审计复现 |
+| **Benford定律检测** | `benford` | 检测财务数据首位数字分布异常，识别可能的数据造假 |
+| **精确计算器** | `calc` | 任意财务表达式精确计算，替代LLM心算 |
+
+```bash
+# 示例：腾讯市值验算
+python3 tools/financial_rigor.py verify-market-cap \
+  --price 510 --shares 9.11e9 --reported 4.65e12 --currency HKD
+
+# 输出：
+# ✅ 验证通过, 偏差仅 0.08%
+
+# 示例：三情景估值
+python3 tools/financial_rigor.py three-scenario \
+  --price 510 --eps 23.5 --shares 91.1 \
+  --growth 0.15 0.08 0.0 --pe 25 20 15 --currency HKD
+
+# 输出：
+# 乐观 (Bull)   15%  25x  35.74  893.5  +75.2%
+# 中性 (Base)    8%  20x  29.60  592.1  +16.1%
+# 悲观 (Bear)    0%  15x  23.50  352.5  -30.9%
+```
+
+**设计原则**：所有计算使用 Python `decimal.Decimal`（精确十进制），非 `float`（浮点近似）。`0.1 + 0.2 = 0.3` 在金融场景中不允许失败。
+
 ---
 
 ## 项目路线图
@@ -399,6 +433,7 @@ cp ai-berkshire/skills/*.md ~/.claude/commands/
 - [x] 巴菲特买入前 Checklist
 - [x] 产业链全景扫描
 - [x] 未上市公司研究框架
+- [x] 金融严谨性工具（精确算术、市值验算、多源交叉验证、Benford定律检测）
 - [ ] 港股/A股/美股财报自动解读
 - [ ] 投资组合跟踪与再平衡
 - [ ] 历史回测：AI研报 vs 实际股价表现

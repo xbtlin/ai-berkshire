@@ -47,9 +47,9 @@
 9. 当前估值：市值、PE、PS、PEG、EV/Revenue
 10. 多空双方核心论点
 
-#### 数据交叉验证（必须执行）
+#### 数据交叉验证（必须执行，使用金融严谨性工具）
 
-数据收集完成后，对以下关键数据点进行多源交叉验证：
+数据收集完成后，**必须调用 `tools/financial_rigor.py` 对关键数据进行程序化验证**，杜绝LLM心算误差。
 
 **必须验证的数据点**：
 - 总股本（从交易所、Yahoo Finance、StockAnalysis 等至少2个源确认）
@@ -58,11 +58,33 @@
 - 现金储备和净现金（现金+短期投资-总债务，注意口径差异）
 - 管理层持股比例（区分经济权益和投票权，注意AB股结构）
 
+**强制验证步骤（使用Bash调用工具）**：
+
+Step 1 — 市值验算（精确十进制，非浮点）：
+```bash
+python3.11 ~/ai-berkshire/tools/financial_rigor.py verify-market-cap \
+  --price {股价} --shares {总股本} --reported {报告市值} --currency {币种}
+```
+
+Step 2 — 关键数据多源交叉验证：
+```bash
+python3.11 ~/ai-berkshire/tools/financial_rigor.py cross-validate \
+  --field {字段名} --values '{"来源1": 数值, "来源2": 数值}' --unit {单位}
+```
+对收入、净利润、现金储备分别执行。
+
+Step 3 — 估值指标精确验算（PE/PB/ROE/FCF Yield 等）：
+```bash
+python3.11 ~/ai-berkshire/tools/financial_rigor.py verify-valuation \
+  --price {股价} --eps {EPS} --bvps {每股净资产} --fcf-per-share {每股FCF} --dividend {每股股息}
+```
+
 **验证规则**：
 1. 每个关键数据点至少2个独立来源
 2. 发现来源间有差异时，优先采用公司年报/交易所数据，并注明差异原因
-3. 涉及计算的数据（市值、净现金、PE等）必须手动验算一遍
-4. 所有验证结果记录在报告附录"关键数据交叉验证记录"表格中
+3. **所有涉及计算的数据必须通过工具验算，禁止LLM心算**
+4. 工具输出结果直接嵌入报告附录"关键数据交叉验证记录"
+5. 如果工具报告 ❌ 偏差过大，必须排查原因后才能继续分析
 
 **常见错误防范**：
 - 市值单位：港币亿 vs 人民币亿 vs 美元亿，容易漏写/多写一个零
@@ -131,9 +153,15 @@
 
 ### 第七步：估值与安全边际 — 巴菲特"内在价值" + 段永平"对的价格"
 
-- 当前市场定价（关键估值指标表格）
+- 当前市场定价（关键估值指标表格）—— **必须通过工具验算**
 - 反向DCF：当前股价隐含了什么增长预期？
-- 三情景估值（表格：乐观/中性/悲观 → 假设/收入/PE/市值/股价）
+- 三情景估值 —— **必须通过工具精确计算，禁止心算**：
+```bash
+python3.11 ~/ai-berkshire/tools/financial_rigor.py three-scenario \
+  --price {股价} --eps {EPS} --shares {总股本亿} \
+  --growth {乐观增速} {中性增速} {悲观增速} \
+  --pe {乐观PE} {中性PE} {悲观PE} --years 3 --currency {币种}
+```
 - 与自身历史估值对比
 - 与同行估值对比
 

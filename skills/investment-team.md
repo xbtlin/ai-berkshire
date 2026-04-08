@@ -61,7 +61,12 @@
   4. 资产负债表健康度：现金储备、负债率、流动性
   5. 估值分析：PE/PS/PB/EV等，与历史及同业对比
   6. 安全边际评估：内在价值 vs 当前股价
-  7. 市值必须手算校验（股价×总股本），关键数据至少2个来源交叉验证
+  7. **金融严谨性验证（必须使用Bash调用工具，禁止心算）**：
+     - 市值验算：`python3.11 ~/ai-berkshire/tools/financial_rigor.py verify-market-cap --price {价格} --shares {股本} --reported {报告市值} --currency {币种}`
+     - 估值验算：`python3.11 ~/ai-berkshire/tools/financial_rigor.py verify-valuation --price {价格} --eps {EPS} --bvps {每股净资产}`
+     - 关键数据交叉验证：`python3.11 ~/ai-berkshire/tools/financial_rigor.py cross-validate --field {字段} --values '{JSON}' --unit {单位}`
+     - 三情景估值：`python3.11 ~/ai-berkshire/tools/financial_rigor.py three-scenario --price {价格} --eps {EPS} --shares {股本亿} --growth {乐观} {中性} {悲观} --pe {乐观PE} {中性PE} {悲观PE}`
+     - 将工具输出结果直接嵌入报告中作为验证记录
 
 #### 任务3：行业与竞争分析
 - subject: `分析{行业}行业格局与{公司名}竞争态势`

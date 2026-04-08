@@ -66,7 +66,12 @@
 
 #### 第二关：这是一门好生意吗（经济特征）
 
-用数据说话：
+用数据说话，**关键指标必须通过工具精确计算**：
+
+```bash
+python3.11 ~/ai-berkshire/tools/financial_rigor.py verify-valuation \
+  --price {股价} --eps {EPS} --bvps {每股净资产} --fcf-per-share {每股FCF} --dividend {每股股息}
+```
 
 | 指标 | 该公司数值 | 参考标准 | 判断 |
 |------|-----------|---------|------|
@@ -138,8 +143,13 @@
 | 股息率 | | | |
 | FCF Yield | | | |
 
-追加检验：
-- 悲观/中性/乐观三种情景下的估值区间
+追加检验（**必须通过工具精确计算，禁止心算**）：
+```bash
+python3.11 ~/ai-berkshire/tools/financial_rigor.py three-scenario \
+  --price {股价} --eps {EPS} --shares {股本亿} \
+  --growth {乐观} {中性} {悲观} --pe {乐观PE} {中性PE} {悲观PE} --currency {币种}
+```
+- 三情景下的估值区间（取工具输出结果）
 - 如果判断有误，在当前价格买入最多亏多少？
 - 股价腰斩你敢加仓吗？
 
