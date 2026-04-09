@@ -51,7 +51,7 @@ reports/{公司名}-{日期}/
 
 ## GitHub 操作
 
-- 本地克隆路径：`/tmp/ai-berkshire-upload/`
+- 本地克隆路径：`~/ai-berkshire/`
 - 远程仓库：`https://github.com/xbtlin/ai-berkshire.git`
 - 推送前先 `git pull --rebase origin main`（远程经常有新提交）
 - commit message 用中文，描述清楚改了什么
@@ -61,8 +61,7 @@ reports/{公司名}-{日期}/
 
 ```bash
 # 推送报告到GitHub
-cd /tmp/ai-berkshire-upload
-cp ~/报告文件.md reports/
+cd ~/ai-berkshire
 git add reports/xxx.md
 git commit -m "添加xxx报告"
 git pull --rebase origin main
