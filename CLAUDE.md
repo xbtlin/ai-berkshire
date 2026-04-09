@@ -16,13 +16,17 @@ assets/          — 图片等静态资源
 
 ## 报告命名规范
 
-| 类型 | 命名格式 | 示例 |
+| Skill | 命名格式 | 示例 |
 |------|---------|------|
-| 单公司深度研究（/investment-team） | `reports/{公司名}-{YYYYMMDD}/` 目录 | `reports/拼多多-20260407/` |
-| 单公司快速研究（/investment-research） | `reports/{公司名}投资研究报告_{YYYYMMDD}.md` | `reports/腾讯投资研究报告_20260408.md` |
-| 多公司Checklist | `reports/巴菲特Checklist-{主题}.md` | `reports/巴菲特Checklist-多公司对比.md` |
-| 持仓追踪 | `reports/大师持仓追踪-{YYYYMMDD}.md` | `reports/大师持仓追踪-20260408.md` |
-| 行业研究 | `reports/{行业名}行业研究_{YYYYMMDD}.md` | |
+| /investment-team | `reports/{公司名}-team-{YYYYMMDD}/` 目录 | `reports/拼多多-team-20260407/` |
+| /investment-research | `reports/{公司名}-research-{YYYYMMDD}.md` | `reports/腾讯-research-20260408.md` |
+| /investment-checklist | `reports/{公司名}-checklist-{YYYYMMDD}.md` | `reports/腾讯-checklist-20260408.md` |
+| /industry-research | `reports/{行业名}-industry-{YYYYMMDD}.md` | `reports/半导体-industry-20260408.md` |
+| /private-company-research | `reports/{公司名}-private-{YYYYMMDD}.md` | `reports/字节跳动-private-20260408.md` |
+| /earnings-review | `reports/{公司名}-earnings-{期间}.md` | `reports/腾讯-earnings-2025Q4.md` |
+| /thesis-tracker | `reports/{公司名}-thesis.md`（长期维护） | `reports/美团-thesis.md` |
+| /portfolio-review | `reports/portfolio-latest.md`（持续更新） | `reports/portfolio-latest.md` |
+| /management-deep-dive | `reports/{公司名}-management-{YYYYMMDD}.md` | `reports/美团-management-20260409.md` |
 
 ## /investment-team 目录结构
 
