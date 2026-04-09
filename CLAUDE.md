@@ -14,24 +14,42 @@ reports/         — 投资研究报告输出
 assets/          — 图片等静态资源
 ```
 
-## 报告命名规范
+## 报告目录结构
 
-| Skill | 命名格式 | 示例 |
-|------|---------|------|
-| /investment-team | `reports/{公司名}-team-{YYYYMMDD}/` 目录 | `reports/拼多多-team-20260407/` |
-| /investment-research | `reports/{公司名}-research-{YYYYMMDD}.md` | `reports/腾讯-research-20260408.md` |
-| /investment-checklist | `reports/{公司名}-checklist-{YYYYMMDD}.md` | `reports/腾讯-checklist-20260408.md` |
-| /industry-research | `reports/{行业名}-industry-{YYYYMMDD}.md` | `reports/半导体-industry-20260408.md` |
-| /private-company-research | `reports/{公司名}-private-{YYYYMMDD}.md` | `reports/字节跳动-private-20260408.md` |
-| /earnings-review | `reports/{公司名}-earnings-{期间}.md` | `reports/腾讯-earnings-2025Q4.md` |
-| /thesis-tracker | `reports/{公司名}-thesis.md`（长期维护） | `reports/美团-thesis.md` |
-| /portfolio-review | `reports/portfolio-latest.md`（持续更新） | `reports/portfolio-latest.md` |
-| /management-deep-dive | `reports/{公司名}-management-{YYYYMMDD}.md` | `reports/美团-management-20260409.md` |
-
-## /investment-team 目录结构
+所有报告按**公司名**建文件夹，公司相关的所有报告放在对应文件夹内：
 
 ```
-reports/{公司名}-{日期}/
+reports/
+├── 腾讯/                    — 腾讯所有研究报告
+│   ├── 腾讯-research-20260408.md
+│   ├── 腾讯-earnings-2025Q4.md
+│   ├── 腾讯-management-20260409.md
+│   └── 腾讯-thesis.md
+├── 拼多多/                  — 拼多多所有研究报告
+├── 泡泡玛特/                — 泡泡玛特所有研究报告
+├── 核电-industry-20260409.md — 行业报告放根目录
+├── portfolio-latest.md       — 组合报告放根目录
+└── 多公司对比-checklist-20260408.md — 多公司报告放根目录
+```
+
+## 报告命名规范
+
+| Skill | 文件命名格式 | 示例 |
+|------|---------|------|
+| /investment-team | `{公司名}/` 目录内含4个视角+最终报告 | `reports/拼多多/最终报告.md` |
+| /investment-research | `{公司名}-research-{YYYYMMDD}.md` | `reports/腾讯/腾讯-research-20260408.md` |
+| /investment-checklist | `{公司名}-checklist-{YYYYMMDD}.md` | `reports/腾讯/腾讯-checklist-20260408.md` |
+| /industry-research | `{行业名}-industry-{YYYYMMDD}.md`（根目录） | `reports/核电-industry-20260409.md` |
+| /private-company-research | `{公司名}-private-{YYYYMMDD}.md` | `reports/字节跳动/字节跳动-private-20260408.md` |
+| /earnings-review | `{公司名}-earnings-{期间}.md` | `reports/腾讯/腾讯-earnings-2025Q4.md` |
+| /thesis-tracker | `{公司名}-thesis.md`（长期维护） | `reports/腾讯/腾讯-thesis.md` |
+| /portfolio-review | `portfolio-latest.md`（根目录，持续更新） | `reports/portfolio-latest.md` |
+| /management-deep-dive | `{公司名}-management-{YYYYMMDD}.md` | `reports/腾讯/腾讯-management-20260409.md` |
+
+## /investment-team 文件结构
+
+```
+reports/{公司名}/
 ├── README.md                         — 研究框架概览+核心结论
 ├── 01-商业模式分析-段永平视角.md
 ├── 02-财务估值分析-巴菲特视角.md
