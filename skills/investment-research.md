@@ -34,6 +34,11 @@
 
 ### 第一步：数据收集
 
+> **数据源规范**：参见 `skills/financial-data.md`。所有财务数据必须来自两个独立来源，误差>1%须标记。
+> - 美股：macrotrends（主）+ stockanalysis（副）
+> - 港股：aastocks（主）+ macrotrends ADR（副）
+> - A股：东方财富（主）+ 巨潮资讯（副）
+
 使用 Task 工具启动后台 Agent，从网络收集以下数据：
 
 1. 收入结构：最近财年及近4季度分部收入、增速、毛利率
