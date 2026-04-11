@@ -247,3 +247,22 @@
 6. 最终将完整报告写入 `~/[行业名]产业链投资研究报告.md`
 7. 结论要明确，给出具体的标的、仓位和价格区间建议
 8. 每个分析模块末尾有对应大师的"追问"
+
+## 数据抽检（准出流程）
+
+报告写入后，执行数据抽检，通过方可发布：
+
+```bash
+# Step 1 — 提取抽检清单（15%随机抽样）
+python3 ~/ai-berkshire/tools/report_audit.py extract \
+  --report <报告文件路径>
+
+# Step 2 — 对清单每项从可靠信源取数（参见 skills/financial-data.md）
+
+# Step 3 — 输出准出/打回判决
+python3 ~/ai-berkshire/tools/report_audit.py verdict \
+  --results '<填好的JSON>' \
+  --report <报告文件名>
+```
+
+**【准出】** 全部通过 → 报告可发布；**【打回】** 有不通过 → 修正后重审。

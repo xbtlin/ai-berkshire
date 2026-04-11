@@ -207,3 +207,29 @@ python3 ~/ai-berkshire/tools/financial_rigor.py three-scenario \
 7. **报告开头**必须包含"信息丰富度评级"（A/B/C）和"AI研究局限性声明"
 8. **报告结尾**必须区分"AI分析置信度"与"投资确定性"——前者取决于资料量，后者取决于生意本质。明确告知读者：本报告的哪些结论基于充分数据，哪些基于有限信息的推理
 9. 如果公司属于C级（信息稀缺），报告末尾必须列出"需要一手验证的问题清单"——建议读者通过田野调查、产品体验、供应链访谈等方式补充AI的盲区
+
+## 数据抽检（准出流程）
+
+报告写入文件后，**必须**执行数据抽检，通过后方可发布：
+
+**Step 1 — 提取抽检清单（15%随机抽样）：**
+```bash
+python3 ~/ai-berkshire/tools/report_audit.py extract \
+  --report <报告文件路径>
+```
+输出 JSON 模板，每项含 `fetched_value`（待填）。
+
+**Step 2 — 取数核验：**
+对清单中每个数据点，按 `skills/financial-data.md` 规范从可靠信源取数
+（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯），
+填入 `fetched_value` / `fetched_source` / `fetched_value2` / `fetched_source2`。
+
+**Step 3 — 输出判决：**
+```bash
+python3 ~/ai-berkshire/tools/report_audit.py verdict \
+  --results '<填好的JSON>' \
+  --report <报告文件名>
+```
+
+- **【准出】**：所有抽检点偏差 ≤ 1% → 报告可发布
+- **【打回】**：任意点偏差 > 1% → 修正对应数据后重新抽检，直到准出
