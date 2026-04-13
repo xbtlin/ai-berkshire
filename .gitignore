@@ -3,7 +3,5 @@ reports/美团/command-log.jsonl
 .DS_Store
 reports/.DS_Store
 
-# 含登录凭据的雪球爬虫脚本（本地使用，禁止提交）
-tools/xueqiu_scraper.py
-tools/xueqiu_playwright.py
-tools/xueqiu_login_scraper.py
+# 雪球爬虫登录态缓存（含 cookies，本地使用）
+/tmp/xueqiu_state.json
