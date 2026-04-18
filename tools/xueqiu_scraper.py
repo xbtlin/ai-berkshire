@@ -191,8 +191,17 @@ async def load_with_state(pw, state_path, user_id):
     return None
 
 
-async def fetch_all_timeline(page, user_id, keywords, progress_path):
+async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_path=''):
     collected = {}
+    # all_posts：保存该用户所有原发言（不按关键词过滤），供离线多主题分析
+    all_posts = {}
+    if dump_all_path and os.path.exists(dump_all_path):
+        try:
+            for e in json.load(open(dump_all_path)):
+                all_posts[e['id']] = e
+            print(f"  ↪ 载入已有全量缓存：{len(all_posts)} 条")
+        except Exception as e:
+            print(f"  全量缓存读取失败: {e}")
     print("\n=== 遍历全量时间线 ===")
     data = await browser_fetch_json(
         page,
@@ -219,14 +228,18 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path):
             own_text = (text or '').strip()
             if own_text in ('', '转发微博', '轉發微博', 'Repost'):
                 continue
-            if is_match(title + ' ' + own_text, keywords):
-                pid = str(post.get('id', ''))
-                date = parse_ts(post.get('created_at', 0))
-                entry = {'id': pid, 'date': date, 'title': title, 'text': own_text,
-                         'url': f'https://xueqiu.com/{user_id}/{pid}'}
-                if rt:
-                    rt_user = (rt.get('user') or {}).get('screen_name', '')
-                    entry['retweet_of'] = f'@{rt_user}: {rt_text}'
+            pid = str(post.get('id', ''))
+            date = parse_ts(post.get('created_at', 0))
+            entry = {'id': pid, 'date': date, 'title': title, 'text': own_text,
+                     'url': f'https://xueqiu.com/{user_id}/{pid}'}
+            if rt:
+                rt_user = (rt.get('user') or {}).get('screen_name', '')
+                entry['retweet_of'] = f'@{rt_user}: {rt_text}'
+            # 全量缓存（不过滤）
+            if dump_all_path and pid not in all_posts:
+                all_posts[pid] = entry
+            # 按关键词过滤收集
+            if keywords and is_match(title + ' ' + own_text, keywords):
                 if pid not in collected:
                     collected[pid] = entry
                     found += 1
@@ -251,6 +264,9 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path):
         with open(progress_path, 'w', encoding='utf-8') as f:
             json.dump({'next_page': next_page, 'collected': list(collected.values())},
                       f, ensure_ascii=False)
+        if dump_all_path:
+            with open(dump_all_path, 'w', encoding='utf-8') as f:
+                json.dump(list(all_posts.values()), f, ensure_ascii=False)
 
     consec_fail = 0
     for p in range(start_page, max_page + 1):
@@ -296,6 +312,11 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path):
         if os.path.exists(progress_path):
             os.remove(progress_path)
 
+    # 最后一次落盘全量缓存
+    if dump_all_path:
+        with open(dump_all_path, 'w', encoding='utf-8') as f:
+            json.dump(list(all_posts.values()), f, ensure_ascii=False)
+        print(f"  全量缓存 → {dump_all_path}（{len(all_posts)} 条）")
     print(f"\n完成：扫描 {total_posts} 条，命中 {found} 条")
     return collected
 
@@ -330,24 +351,58 @@ def format_md(collected, user_id, keywords):
 
 def parse_args():
     ap = argparse.ArgumentParser(description="雪球用户时间线爬虫（按关键词筛选本人原发言）")
-    ap.add_argument('--user-id', type=int, required=True, help='雪球用户ID（主页URL数字段）')
-    ap.add_argument('--keywords', type=str, required=True,
+    ap.add_argument('--user-id', type=int, help='雪球用户ID（主页URL数字段）')
+    ap.add_argument('--keywords', type=str, default='',
                     help='关键词列表，逗号分隔。例：拼多多,PDD,黄峥,Temu')
-    ap.add_argument('--output', type=str, required=True, help='markdown 输出路径')
-    ap.add_argument('--raw-json', type=str, default='', help='（可选）原始 JSON 输出路径')
+    ap.add_argument('--output', type=str, default='', help='markdown 输出路径')
+    ap.add_argument('--raw-json', type=str, default='', help='（可选）命中条目原始 JSON 输出路径')
     ap.add_argument('--state-path', type=str, default='/tmp/xueqiu_state.json',
                     help='登录态缓存文件（默认 /tmp/xueqiu_state.json）')
+    ap.add_argument('--dump-all', type=str, default='',
+                    help='全量缓存路径：爬取时同时把该用户所有原发言写到这里，用于后续离线多主题分析')
+    ap.add_argument('--from-cache', type=str, default='',
+                    help='跳过爬取，从已有全量缓存 JSON 过滤生成 markdown（需 --keywords 和 --output）')
     return ap.parse_args()
+
+
+def filter_from_cache(cache_path, keywords, user_id):
+    posts = json.load(open(cache_path))
+    out = []
+    for p in posts:
+        if is_match((p.get('title','') + ' ' + p.get('text','')), keywords):
+            out.append(p)
+    return {p['id']: p for p in out}
 
 
 async def main():
     args = parse_args()
     keywords = [k.strip() for k in args.keywords.split(',') if k.strip()]
+
+    # 离线过滤模式
+    if args.from_cache:
+        if not (keywords and args.output):
+            print("--from-cache 需同时指定 --keywords 与 --output")
+            return
+        user_id = args.user_id or 0
+        collected = filter_from_cache(args.from_cache, keywords, user_id)
+        print(f"从缓存 {args.from_cache} 筛出 {len(collected)} 条（关键词: {keywords}）")
+        if not collected:
+            return
+        Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+        with open(args.output, 'w', encoding='utf-8') as f:
+            f.write(format_md(collected, user_id, keywords))
+        print(f"Markdown → {args.output}")
+        return
+
+    if not args.user_id:
+        print("需要 --user-id")
+        return
+
     progress_path = args.state_path + f'.progress.{args.user_id}'
     raw_json = args.raw_json or f'/tmp/xueqiu_{args.user_id}_raw.json'
 
     print("=" * 60)
-    print(f"雪球爬虫 | user_id={args.user_id} | keywords={keywords}")
+    print(f"雪球爬虫 | user_id={args.user_id} | keywords={keywords} | dump_all={args.dump_all}")
     print("=" * 60)
 
     async with async_playwright() as pw:
@@ -358,7 +413,7 @@ async def main():
             print("无法登录，退出")
             return
         browser, _, page = session
-        collected = await fetch_all_timeline(page, args.user_id, keywords, progress_path)
+        collected = await fetch_all_timeline(page, args.user_id, keywords, progress_path, args.dump_all)
         await browser.close()
 
     print(f"\n=== 最终: {len(collected)} 条命中 ===")
@@ -367,10 +422,11 @@ async def main():
     with open(raw_json, 'w', encoding='utf-8') as f:
         json.dump(list(collected.values()), f, ensure_ascii=False, indent=2)
     print(f"原始JSON → {raw_json}")
-    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-    with open(args.output, 'w', encoding='utf-8') as f:
-        f.write(format_md(collected, args.user_id, keywords))
-    print(f"Markdown  → {args.output}")
+    if args.output:
+        Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+        with open(args.output, 'w', encoding='utf-8') as f:
+            f.write(format_md(collected, args.user_id, keywords))
+        print(f"Markdown  → {args.output}")
 
 
 if __name__ == '__main__':
