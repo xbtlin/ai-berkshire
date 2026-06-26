@@ -51,8 +51,56 @@ reports/
 - I punteggi usano il simbolo ★ (★1-5), senza mezze stelle.
 - Includere citazioni di Buffett/Munger/Duan Yongping/Li Lu per commentare le situazioni.
 
+## Integrazione Directa dAPI
+
+Questo progetto include l'integrazione con le **API di trading Directa SIM (dAPI)**.
+
+### Setup iniziale
+```bash
+# Configurazione guidata (richiede Darwin aperta)
+python3 ~/ai-berkshire/tools/directa_setup.py
+
+# Oppure auto-detect porte senza input interattivo
+python3 ~/ai-berkshire/tools/directa_setup.py --auto
+
+# Installa le skill in Claude Code
+python3 ~/ai-berkshire/tools/directa_setup.py --install-skills
+```
+
+### Comandi CLI disponibili
+```bash
+python3 tools/directa_client.py status               # Verifica connessione Darwin
+python3 tools/directa_client.py portfolio            # Portafoglio corrente
+python3 tools/directa_client.py liquidity            # Liquidità disponibile
+python3 tools/directa_client.py account              # Stato patrimoniale
+python3 tools/directa_client.py orders               # Lista ordini
+python3 tools/directa_client.py orders --filter pending  # Solo ordini pendenti
+python3 tools/directa_client.py price ENI,RACE,ENEL  # Prezzi real-time
+python3 tools/directa_client.py history RACE 1d 30   # Storico candele
+python3 tools/directa_client.py export-full          # Snapshot JSON completo
+```
+
+### Skill Claude Code
+- `/directa-portfolio` — Fotografia del conto: posizioni, liquidità, ordini pendenti
+- `/directa-research` — Analisi approfondita degli asset posseduti (value investing)
+
+### Prerequisiti
+- Conto Directa attivo con API abilitate (info > 5a > 3h)
+- Piattaforma Darwin aperta e loggata
+- Configurazione in `~/.directa/ai-berkshire-config.json`
+
+### Architettura dAPI
+| Porta | Servizio | Costo |
+|-------|----------|-------|
+| 10001 | DataFeed (quotazioni real-time) | 20€/mese (gratuito se commissioni >200€/mese) |
+| 10002 | Trading (portafoglio, ordini) | Gratuito |
+| 10003 | Storico (OHLCV, tick-by-tick) | Incluso nel DataFeed |
+
+---
+
 ## Attenzione
 
 - La capitalizzazione di mercato deve essere verificata: Prezzo × Azioni totali.
 - Chiarire sempre la valuta (EUR/USD/GBP) per evitare confusioni.
 - Usare `tools/financial_rigor.py` per il calcolo preciso di indicatori come PE/ROE.
+- I dati Directa sono dati reali di conto: non confonderli con stime o proiezioni.
