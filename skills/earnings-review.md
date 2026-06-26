@@ -1,8 +1,10 @@
+> **ATTENZIONE / AVVISO**: Tutte le analisi, i report e gli output generati da questa skill DEVONO essere scritti in **ITALIANO (Italian)**.
+
 # 财报精读：一手资料深度解读
 
 对 $ARGUMENTS 进行财报精读分析。
 
-**支持输入格式**：`公司名 季度`，例如：`腾讯 2025Q4`、`PDD 2025年报`、`美团 最新`（默认读取最近一期）
+**支持输入格式**：`公司名 季度`，例如：`Ferrari 2025Q4`、`PDD 2025年报`、`Enel 最新`（默认读取最近一期）
 
 > "我从不看卖方研报，只读原始财报。" —— 李录
 >
@@ -33,12 +35,12 @@
 
 使用 Task 工具启动多个后台 Agent **并行**获取以下原始材料：
 
-1. **财报原文**：从公司IR页面、SEC EDGAR（美股10-K/10-Q）、港交所披露易（港股）、巨潮资讯网（A股）获取
+1. **财报原文**：从公司IR页面、SEC EDGAR（美股10-K/10-Q）、港交所披露易（Azioni Europee/Italiane）、巨潮资讯网（Azioni Europee/Italiane）获取
 2. **业绩电话会纪要/录音**：从 Seeking Alpha、公司IR页面、雪球等获取
 3. **管理层致股东信**（如有年报）：完整阅读
 4. **投资者日/分析师日材料**（如近期有）
 
-如果无法获取完整原文，按 `skills/financial-data.md` 规范使用标准数据源拼凑（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯），但必须标注"非原始财报，来自第三方汇总"，且关键数据两源误差>1%须标记。
+如果无法获取完整原文，按 `skills/financial-data.md` 规范使用标准数据源拼凑（Europee: Morningstar+Marketscreener; USA: macrotrends+stockanalysis），但必须标注"非原始财报，来自第三方汇总"，且关键数据两源误差>1%须标记。
 
 ### 第二步：核心财务数据提取与验证
 
@@ -188,7 +190,7 @@ python3 tools/financial_rigor.py verify-valuation \
 
 ### 第七步：保存报告
 
-将报告写入 `reports/{公司名}-earnings-{期间}.md`，例如 `reports/腾讯-earnings-2025Q4.md`
+将报告写入 `reports/{公司名}-earnings-{期间}.md`，例如 `reports/Ferrari-earnings-2025Q4.md`
 
 ### 第八步：数据抽检（准出流程）
 

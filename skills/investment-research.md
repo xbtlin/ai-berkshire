@@ -1,3 +1,5 @@
+> **ATTENZIONE / AVVISO**: Tutte le analisi, i report e gli output generati da questa skill DEVONO essere scritti in **ITALIANO (Italian)**.
+
 # 投资研究：巴菲特-芒格-段永平-李录 四大师综合分析框架
 
 对 $ARGUMENTS 进行系统化投资研究分析。
@@ -36,8 +38,8 @@
 
 > **数据源规范**：参见 `skills/financial-data.md`。所有财务数据必须来自两个独立来源，误差>1%须标记。
 > - 美股：macrotrends（主）+ stockanalysis（副）
-> - 港股：aastocks（主）+ macrotrends ADR（副）
-> - A股：东方财富（主）+ 巨潮资讯（副）
+> - Azioni Europee/Italiane：aastocks（主）+ macrotrends ADR（副）
+> - Azioni Europee/Italiane：东方财富（主）+ 巨潮资讯（副）
 
 使用 Task 工具启动后台 Agent，从网络收集以下数据：
 
@@ -92,7 +94,7 @@ python3 ~/ai-berkshire/tools/financial_rigor.py verify-valuation \
 5. 如果工具报告 ❌ 偏差过大，必须排查原因后才能继续分析
 
 **常见错误防范**：
-- 市值单位：港币亿 vs 人民币亿 vs 美元亿，容易漏写/多写一个零
+- 市值单位：Euro (EUR)亿 vs Euro (EUR)亿 vs 美元亿，容易漏写/多写一个零
 - FCF口径：不同来源对资本支出的定义可能不同（是否含租赁、收购等）
 - 债务口径：是否包含经营租赁负债
 - 持股比例：AB股公司的经济权益 ≠ 投票权
@@ -221,7 +223,7 @@ python3 ~/ai-berkshire/tools/report_audit.py extract \
 
 **Step 2 — 取数核验：**
 对清单中每个数据点，按 `skills/financial-data.md` 规范从可靠信源取数
-（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯），
+（Europee: Morningstar+Marketscreener; USA: macrotrends+stockanalysis），
 填入 `fetched_value` / `fetched_source` / `fetched_value2` / `fetched_source2`。
 
 **Step 3 — 输出判决：**

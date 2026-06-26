@@ -1,3 +1,5 @@
+> **ATTENZIONE / AVVISO**: Tutte le analisi, i report e gli output generati da questa skill DEVONO essere scritti in **ITALIANO (Italian)**.
+
 # 微信公众号文章：作者-编辑-读者三Agent协作
 
 对 $ARGUMENTS 进行深度研究，产出一篇可直接发布的微信公众号文章。三个Agent各司其职：作者写深度初稿，编辑精修结构和表达，读者从目标受众视角审读。

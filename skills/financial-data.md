@@ -1,103 +1,80 @@
-# 财务数据获取与交叉验证规范
+# Acquisizione Dati Finanziari e Standard di Validazione Incrociata
 
-本规范适用于所有涉及企业财务数据的研究。**每个关键数据必须来自两个独立来源，误差>1%须标记。**
-
----
-
-## 数据源优先级
-
-### 美股（PDD、腾讯ADR、网易ADR等）
-
-| 优先级 | 来源 | URL | 获取方式 |
-|--------|------|-----|---------|
-| 1（主） | **macrotrends** | macrotrends.net/stocks/charts/{ticker} | 直接访问，无需注册 |
-| 2（副） | **stockanalysis** | stockanalysis.com/stocks/{ticker}/financials | 直接访问，无需注册 |
-| 原始一手 | SEC EDGAR | sec.gov/cgi-bin/browse-edgar | 10-K / 10-Q 原文 |
-
-### 港股（腾讯0700、网易9999、美团3690等）
-
-| 优先级 | 来源 | URL | 获取方式 |
-|--------|------|-----|---------|
-| 1（主） | **aastocks** | aastocks.com/tc/stocks/analysis/company-fundamental | 直接访问 |
-| 2（副） | **macrotrends**（ADR代码） | 腾讯用TCEHY，网易用NTES | 直接访问 |
-| 原始一手 | HKEX披露易 | hkexnews.hk | 年报PDF |
-
-### A股（三七互娱、吉比特等）
-
-| 优先级 | 来源 | URL | 获取方式 |
-|--------|------|-----|---------|
-| 1（主） | **东方财富** | eastmoney.com → 搜股票代码 → 财务报表 | 直接访问 |
-| 2（副） | **巨潮资讯** | cninfo.com.cn | 原始年报/季报PDF |
+Questo standard si applica a tutte le ricerche che coinvolgono dati finanziari aziendali. **Ogni dato chiave deve provenire da due fonti indipendenti, e discrepanze >1% devono essere segnalate.**
 
 ---
 
-## 执行规范
+## Priorità delle Fonti Dati
 
-### 第一步：获取数据
+### Azioni Europee / Italiane (es. Ferrari, Enel, LVMH, ASML)
 
-对每个财务指标（收入、净利润、毛利率、经营现金流、资产负债率等），分别从**来源1**和**来源2**取数。
+| Priorità | Fonte | URL | Metodo di Accesso |
+|--------|------|-----|---------|
+| 1 (Primaria) | **Morningstar IT** | morningstar.it | Accesso diretto |
+| 2 (Secondaria) | **Marketscreener** | it.marketscreener.com | Accesso diretto |
+| 3 (Alternativa) | **Borsa Italiana** | borsaitaliana.it | Accesso diretto (solo per titoli italiani) |
+| Originale | Investor Relations | Sito ufficiale dell'azienda | Report annuali/trimestrali in PDF |
 
-### 第二步：误差计算与标记
+### Azioni USA (es. Apple, Microsoft, NVIDIA)
 
+| Priorità | Fonte | URL | Metodo di Accesso |
+|--------|------|-----|---------|
+| 1 (Primaria) | **macrotrends** | macrotrends.net/stocks/charts/{ticker} | Accesso diretto |
+| 2 (Secondaria) | **stockanalysis** | stockanalysis.com/stocks/{ticker}/financials | Accesso diretto |
+| Originale | SEC EDGAR | sec.gov/cgi-bin/browse-edgar | 10-K / 10-Q originali |
+
+---
+
+## Standard di Esecuzione
+
+### Passo 1: Acquisizione Dati
+Per ogni metrica finanziaria (Ricavi, Utile Netto, Margine Lordo, Flusso di Cassa Operativo, ecc.), estrarre i dati sia dalla **Fonte 1** che dalla **Fonte 2**.
+
+### Passo 2: Calcolo e Segnalazione dell'Errore
 ```
-误差率 = |来源1数值 - 来源2数值| / 来源1数值 × 100%
+Tasso di Errore = |Valore Fonte 1 - Valore Fonte 2| / Valore Fonte 1 × 100%
 ```
 
-| 误差 | 处理方式 |
+| Errore | Azione |
 |------|---------|
-| ≤ 1% | ✅ 一致，取来源1数值，标注两个来源 |
-| 1% ~ 5% | ⚠️ 标记"数据存在差异"，注明两个数值，说明可能原因（汇率/会计口径） |
-| > 5% | ❌ 标记"数据存在重大差异"，必须查原始财报核实，不得直接使用 |
+| ≤ 1% | ✅ Coerente. Usa il Valore 1 e cita entrambe le fonti. |
+| 1% ~ 5% | ⚠️ Segnala "Discrepanza nei dati", annota entrambi i valori e spiega la possibile causa (es. differenze valutarie o contabili). |
+| > 5% | ❌ Segnala "Grave discrepanza nei dati", devi verificare il report finanziario originale, non usare i dati ciecamente. |
 
-### 第三步：数据呈现格式
-
-每个关键数据必须按以下格式标注：
+### Passo 3: Formato di Presentazione dei Dati
+Ogni dato chiave deve essere annotato in questo formato:
 
 ```
-收入：1,239亿元 ✅
-  - macrotrends: 1,241亿元
-  - stockanalysis: 1,237亿元
-  - 误差: 0.3%
+Ricavi: 12,39 miliardi di EUR ✅
+  - Morningstar: 12,41 miliardi di EUR
+  - Marketscreener: 12,37 miliardi di EUR
+  - Errore: 0.3%
 ```
 
-差异示例：
+Esempio di discrepanza:
 ```
-净利润：245亿元 ⚠️ 数据存在差异
-  - macrotrends: 245亿元（GAAP）
-  - stockanalysis: 278亿元（Non-GAAP）
-  - 误差: 13.5% — 原因：会计口径不同（GAAP vs Non-GAAP）
+Utile Netto: 2,45 miliardi di EUR ⚠️ Discrepanza nei dati
+  - Morningstar: 2,45 miliardi di EUR (GAAP)
+  - Marketscreener: 2,78 miliardi di EUR (Non-GAAP)
+  - Errore: 13.5% — Causa: Differenza contabile (GAAP vs Non-GAAP)
 ```
 
 ---
 
-## 常见差异原因（不一定是数据错误）
+## Cause Comuni di Discrepanza (non necessariamente errori)
 
-| 原因 | 说明 |
+| Causa | Descrizione |
 |------|------|
-| GAAP vs Non-GAAP | 最常见，尤其是利润类数据 |
-| 汇率换算 | 港币/人民币/美元换算时间点不同 |
-| 财年定义 | 自然年 vs 财年（如苹果财年10月结束） |
-| 合并口径 | 是否含少数股东权益 |
-| 数据更新滞后 | 某平台尚未更新最新一期财报 |
+| GAAP vs Non-GAAP | Molto comune, specialmente per i dati di profitto |
+| Tassi di cambio | I tassi EUR/USD/GBP presi in momenti diversi |
+| Anno Fiscale | Anno solare vs Anno fiscale (es. l'anno fiscale di Apple finisce a settembre) |
+| Consolidamento | Inclusione o meno di interessi di minoranza |
+| Ritardo aggiornamenti | Una piattaforma potrebbe non aver ancora aggiornato l'ultimo report |
 
 ---
 
-## 特别规则
+## Regole Speciali
 
-1. **未上市公司**（米哈游、莉莉丝等）：只有一手数据来源时，数据前标记 `[估计]`，不执行交叉验证
-2. **季度数据 vs 年度数据**：优先使用年度数据做交叉验证，季度数据部分来源可能有滞后
-3. **原始财报优先**：若两个来源均与原始财报（10-K/年报PDF）不符，以原始财报为准，标记来源错误
-
----
-
-## 快速索引
-
-| 场景 | 主要来源 | 备用来源 |
-|------|---------|---------|
-| PDD / 拼多多 | macrotrends.net/stocks/charts/PDD | stockanalysis.com/stocks/pdd |
-| 腾讯 | macrotrends.net/stocks/charts/TCEHY | aastocks（0700.HK） |
-| 网易 | macrotrends.net/stocks/charts/NTES | aastocks（9999.HK） |
-| 三七互娱 | eastmoney.com（002555） | cninfo.com.cn |
-| 吉比特 | eastmoney.com（603444） | cninfo.com.cn |
-| Nintendo | macrotrends.net/stocks/charts/NTDOY | stockanalysis.com/stocks/ntdoy |
-| Capcom | macrotrends（CCOEY） | stockanalysis（CCOEY） |
+1. **Aziende Non Quotate**: Quando c'è una sola fonte primaria, anteponi al dato `[Stima]`, nessuna validazione incrociata richiesta.
+2. **Dati Trimestrali vs Annuali**: Dai priorità ai dati annuali per la validazione incrociata, alcune fonti potrebbero ritardare sui trimestrali.
+3. **Priorità ai Report Originali**: Se entrambe le fonti differiscono dal report originale (PDF Annuale), prevale il report originale e si segnala l'errore delle fonti.

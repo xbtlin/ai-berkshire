@@ -1,8 +1,10 @@
+> **ATTENZIONE / AVVISO**: Tutte le analisi, i report e gli output generati da questa skill DEVONO essere scritti in **ITALIANO (Italian)**.
+
 # 财报精读团队：四大师并行解读 + 公众号发布
 
 对 $ARGUMENTS 进行团队化财报精读分析。四位大师并行解读财报，编辑润色成文，读者评审把关质量，最终产出可直接发布的公众号文章。
 
-**支持输入格式**：`公司名 季度`，例如：`腾讯 2025Q4`、`PDD 2025年报`、`美团 最新`
+**支持输入格式**：`公司名 季度`，例如：`Ferrari 2025Q4`、`PDD 2025年报`、`Enel 最新`
 
 ## 设计理念
 
@@ -25,7 +27,7 @@
 
 | 资料类型 | 获取来源 | 优先级 |
 |---------|---------|--------|
-| 财报原文 | 公司IR页面、SEC EDGAR（美股）、港交所披露易（港股）、巨潮资讯网（A股） | 最高 |
+| 财报原文 | 公司IR页面、SEC EDGAR（美股）、港交所披露易（Azioni Europee/Italiane）、巨潮资讯网（Azioni Europee/Italiane） | 最高 |
 | 业绩电话会纪要 | Seeking Alpha、公司IR页面、雪球 | 最高 |
 | 管理层致股东信 | 年报中提取 | 高（仅年报时） |
 | 上一期财报/电话会 | 同上 | 高（用于承诺追踪） |

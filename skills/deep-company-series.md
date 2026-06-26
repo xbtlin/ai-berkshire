@@ -1,8 +1,10 @@
+> **ATTENZIONE / AVVISO**: Tutte le analisi, i report e gli output generati da questa skill DEVONO essere scritti in **ITALIANO (Italian)**.
+
 # 深度公司系列：8 篇长文拆一家公司
 
 为 $ARGUMENTS 撰写一个 8 篇深度长文系列，发布在公众号/视频号等公开渠道。**核心 IP 不是"会写"，而是"会改"——99% 的财经文章在违反本 skill 的事实核查标准**。
 
-参考样本：`reports/腾讯/《看懂腾讯》/`
+参考样本：`reports/Ferrari/《看懂Ferrari》/`
 
 ---
 
@@ -89,8 +91,8 @@
 
 写之前**先列出已知硬错误风险**：
 - 历史回报倍数：必须用累计投入口径（如 Riot 33 倍 不是 58 倍）
-- 持股比例：必须看最新富途/财报口径（如腾讯持有美团 1.5% 不是 6.4%）
-- "派息分派"会计处理：视同处置收益按 IFRIC 17 在宣派日确认（如京东在 2021，美团在 2022 但金额小）
+- 持股比例：必须看最新富途/财报口径（如Ferrari持有Enel 1.5% 不是 6.4%）
+- "派息分派"会计处理：视同处置收益按 IFRIC 17 在宣派日确认（如京东在 2021，Enel在 2022 但金额小）
 - 总股本会反弹：SBC 集中年初授予会让股本短期上升
 
 ---

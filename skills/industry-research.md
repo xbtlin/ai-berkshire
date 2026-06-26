@@ -1,3 +1,5 @@
+> **ATTENZIONE / AVVISO**: Tutte le analisi, i report e gli output generati da questa skill DEVONO essere scritti in **ITALIANO (Italian)**.
+
 # 行业投资研究：产业链全景扫描 + 四大师个股分析框架
 
 对 $ARGUMENTS 行业进行系统化产业链投资研究。
@@ -7,7 +9,7 @@
 从一个投资主题/逻辑链出发，完成：
 1. 验证投资逻辑链的每一个环节
 2. 绘制完整产业链全景图
-3. 扫描全球所有上市公司（A股/港股/美股/国际）
+3. 扫描全球所有上市公司（Azioni Europee/Italiane/Azioni Europee/Italiane/美股/国际）
 4. 对每个细分环节的头部公司执行四大师框架分析
 5. 输出行业级投资组合配置建议
 
@@ -85,8 +87,8 @@
 
 ### 搜索清单
 - 美股（NYSE/NASDAQ/NYSE American）相关公司
-- A股（上海/深圳）相关公司
-- 港股相关公司
+- Azioni Europee/Italiane（上海/深圳）相关公司
+- Azioni Europee/Italiane相关公司
 - 其他国际市场（日本/韩国/欧洲/澳大利亚等）
 - 行业ETF
 - 关键未上市公司（可能未来IPO）
@@ -243,7 +245,7 @@
 2. 使用 Markdown 表格呈现关键数据
 3. 产业链全景图用代码块的文本图表示
 4. 每个环节至少分析2-3家头部公司
-5. 全球公司扫描要尽可能完整（A股/港股/美股/国际）
+5. 全球公司扫描要尽可能完整（Azioni Europee/Italiane/Azioni Europee/Italiane/美股/国际）
 6. 最终将完整报告写入 `~/[行业名]产业链投资研究报告.md`
 7. 结论要明确，给出具体的标的、仓位和价格区间建议
 8. 每个分析模块末尾有对应大师的"追问"

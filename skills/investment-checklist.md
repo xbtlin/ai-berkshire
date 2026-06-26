@@ -1,8 +1,10 @@
+> **ATTENZIONE / AVVISO**: Tutte le analisi, i report e gli output generati da questa skill DEVONO essere scritti in **ITALIANO (Italian)**.
+
 # 巴菲特价值投资买入前 Checklist
 
 对 $ARGUMENTS 执行巴菲特价值投资买入前 Checklist 分析。
 
-**支持输入格式**：单个或多个公司，用逗号/顿号/空格分隔。例如：`腾讯, 茅台, 英伟达` 或 `NVDA AAPL MSFT`
+**支持输入格式**：单个或多个公司，用逗号/顿号/空格分隔。例如：`Ferrari, LVMH, 英伟达` 或 `NVDA AAPL MSFT`
 
 ## 执行流程
 
@@ -54,7 +56,7 @@
 - [ ] 对这个行业的认知是来自深度研究还是道听途说？
 
 **评分标准**（★1-5）：
-- ★★★★★：商业模式极其简单清晰，10年确定性高（如茅台：酿酒卖酒）
+- ★★★★★：商业模式极其简单清晰，10年确定性高（如LVMH：酿酒卖酒）
 - ★★★★☆：模式清晰但有技术门槛，需要一定专业知识理解
 - ★★★☆☆：模式可理解但10年确定性不高，行业变化快
 - ★★☆☆☆：业务线复杂或行业剧变中，难以预判未来

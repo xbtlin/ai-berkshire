@@ -1,3 +1,5 @@
+> **ATTENZIONE / AVVISO**: Tutte le analisi, i report e gli output generati da questa skill DEVONO essere scritti in **ITALIANO (Italian)**.
+
 # 未上市公司研究：多Agent并行深度研究框架
 
 对 $ARGUMENTS 进行团队化深度研究分析。专为蚂蚁集团、小红书、SpaceX、Stripe 等未上市公司设计。
@@ -525,8 +527,8 @@
 
 | 退出方式 | 可能性(★1-5) | 预计时间窗口 | 预期估值区间 | 关键前提 | 主要障碍 |
 |---------|-------------|------------|------------|---------|---------|
-| A股IPO | | | | | |
-| 港股IPO | | | | | |
+| Azioni Europee/ItalianeIPO | | | | | |
+| Azioni Europee/ItalianeIPO | | | | | |
 | 美股IPO | | | | | |
 | 被并购 | | 潜在买家是谁？ | | | |
 | 二级市场转让 | | 流动性如何？ | | | |

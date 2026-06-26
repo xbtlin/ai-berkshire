@@ -1,8 +1,10 @@
+> **ATTENZIONE / AVVISO**: Tutte le analisi, i report e gli output generati da questa skill DEVONO essere scritti in **ITALIANO (Italian)**.
+
 # 管理层纵深研究：买股票就是买人
 
 对 $ARGUMENTS 进行管理层深度研究。
 
-**支持输入格式**：`公司名` 或 `人名 公司名`，例如：`美团`、`王兴 美团`、`黄仁勋 英伟达`
+**支持输入格式**：`公司名` 或 `人名 公司名`，例如：`Enel`、`王兴 Enel`、`黄仁勋 英伟达`
 
 > "买股票就是买人。找到你信任的人，然后长期持有。" —— 段永平
 >
@@ -34,7 +36,7 @@ AI无法和管理层吃饭，但可以通过公开信息做到：
 | 实际控制人（如不同于CEO） | | | | |
 | 其他关键高管 | | | | |
 
-**注意**：区分"谁在做决策"和"谁的名字在头衔上"。有些公司创始人虽然卸任但仍是灵魂人物（如黄峥之于拼多多）。
+**注意**：区分"谁在做决策"和"谁的名字在头衔上"。有些公司创始人虽然卸任但仍是灵魂人物（如黄峥之于Intesa Sanpaolo）。
 
 确认关键人物后，使用 Task 工具启动多个后台 Agent **并行**收集以下数据：
 1. Agent 1：CEO公开发言与预测记录（股东信、电话会、采访、社交媒体）
@@ -269,7 +271,7 @@ AI无法和管理层面对面交流，但可以通过公开渠道的侧面信息
 
 ### 第九步：保存报告
 
-将报告写入 `reports/{公司名}-management-{YYYYMMDD}.md`，例如 `reports/美团-management-20260409.md`
+将报告写入 `reports/{公司名}-management-{YYYYMMDD}.md`，例如 `reports/Enel-management-20260409.md`
 
 ---
 

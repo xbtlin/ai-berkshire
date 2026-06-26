@@ -1,3 +1,5 @@
+> **ATTENZIONE / AVVISO**: Tutte le analisi, i report e gli output generati da questa skill DEVONO essere scritti in **ITALIANO (Italian)**.
+
 # 供应链瓶颈猎手：AI驱动的全球产业链瓶颈套利
 
 对 $ARGUMENTS 超级趋势执行供应链瓶颈扫描与套利机会挖掘。

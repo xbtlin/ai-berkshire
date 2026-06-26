@@ -1,3 +1,5 @@
+> **ATTENZIONE / AVVISO**: Tutte le analisi, i report e gli output generati da questa skill DEVONO essere scritti in **ITALIANO (Italian)**.
+
 # 投资论文追踪：买入后的纪律系统
 
 对 $ARGUMENTS 执行投资论文追踪检查。
