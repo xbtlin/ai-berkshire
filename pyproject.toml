@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "ai-berkshire"
+version = "0.2.0"
+description = "Framework di ricerca sugli investimenti value per il mercato EU/IT, con integrazione Directa dAPI"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+keywords = ["value-investing", "directa", "dapi", "claude", "finance", "italy"]
+
+[project.urls]
+Homepage = "https://github.com/EngineerDogIta/ai-berkshire"
+Source   = "https://github.com/EngineerDogIta/ai-berkshire"
+
+[project.scripts]
+directa-client = "tools.directa_client:main"
+directa-setup  = "tools.directa_setup:main"
+
+[tool.ruff]
+target-version = "py39"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]

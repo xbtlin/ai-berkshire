@@ -13,7 +13,7 @@ Visualizza lo stato attuale del portafoglio e della liquidità sul conto Directa
 ### Passo 1: Estrazione Dati
 Esegui il comando Python per ottenere lo snapshot completo del portafoglio:
 ```bash
-python3 ~/ai-berkshire/tools/directa_client.py export-full --json
+python3 tools/directa_client.py export-full --json
 ```
 
 ### Passo 2: Analisi dei Dati
@@ -44,4 +44,3 @@ Presenta all'utente un riepilogo chiaro e strutturato del suo conto.
 - Non inventare dati: usa solo i numeri restituiti dal JSON.
 - Formatta i valori monetari con il simbolo € (es. 1.250,00 €).
 - Mantieni un tono professionale e oggettivo.
-EOF

@@ -1,0 +1,19 @@
+# AI Berkshire — Dipendenze Python
+# ===================================
+# Python >= 3.9 richiesto
+#
+# tools/directa_client.py  — zero dipendenze esterne (solo stdlib)
+# tools/directa_setup.py   — zero dipendenze esterne (solo stdlib)
+# tools/financial_rigor.py — zero dipendenze esterne (solo stdlib)
+#
+# Dipendenze opzionali per analisi avanzata e visualizzazione:
+
+# Analisi dati e visualizzazione (opzionale, per script custom)
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# Esportazione report (opzionale)
+openpyxl>=3.1.0
+
+# Sviluppo e testing
+# pytest>=7.4.0

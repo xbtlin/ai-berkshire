@@ -11,7 +11,7 @@ A differenza di `directa-portfolio` che fa solo una fotografia del conto, questa
 ### Passo 1: Estrazione del Portafoglio
 Esegui il comando Python per ottenere i titoli posseduti:
 ```bash
-python3 ~/ai-berkshire/tools/directa_client.py export-portfolio --json
+python3 tools/directa_client.py export-portfolio --json
 ```
 
 ### Passo 2: Selezione dei Titoli
@@ -44,4 +44,3 @@ Genera un report strutturato che unisce la situazione reale del portafoglio (pre
 ## Regole di Analisi
 - Applica i principi del Value Investing (Buffett, Munger). Non consigliare vendite solo per un calo temporaneo del prezzo se i fondamentali sono intatti.
 - Distingui sempre tra i dati reali del conto (fatti) e le prospettive di mercato (opinioni/stime).
-EOF
