@@ -30,6 +30,26 @@ import sys
 from decimal import Decimal, Context, ROUND_HALF_EVEN
 from random import Random
 
+# ============================================================
+# SECURITY FIX: Path traversal prevention (added 2026-06-27)
+# CWE-22: Validate file path arguments against allowed directory
+# ============================================================
+import os as _os
+
+_REPORTS_DIR = _os.path.realpath(
+    _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'reports')
+)
+
+def _resolve_report_path(user_path: str) -> str:
+    """Validate path resolves within REPORTS_DIR. Exits on violation."""
+    resolved = _os.path.realpath(user_path)
+    if not resolved.startswith(_REPORTS_DIR):
+        print(f"\033[91m❌ 安全错误: 路径越权 ({user_path})\033[0m", file=sys.stderr)
+        print(f"   报告文件只允许在 {_REPORTS_DIR} 目录内", file=sys.stderr)
+        sys.exit(1)
+    return resolved
+
+
 _CTX = Context(prec=28, rounding=ROUND_HALF_EVEN)
 
 # ---------------------------------------------------------------------------
@@ -449,11 +469,12 @@ def main():
     args = parser.parse_args()
 
     if args.command == 'extract':
-        if not os.path.exists(args.report):
+        safe_path = _resolve_report_path(args.report)
+        if not os.path.exists(safe_path):
             print(f'❌ 文件不存在: {args.report}', file=sys.stderr)
             sys.exit(1)
 
-        with open(args.report, 'r', encoding='utf-8') as f:
+        with open(safe_path, 'r', encoding='utf-8') as f:
             text = f.read()
 
         all_points = extract_data_points(text)
