@@ -5,3 +5,7 @@ reports/.DS_Store
 
 # 雪球爬虫登录态缓存（含 cookies，本地使用）
 /tmp/xueqiu_state.json
+
+# Python 字节码缓存
+__pycache__/
+*.pyc
