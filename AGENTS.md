@@ -60,6 +60,13 @@ reports. Enable it once after cloning:
   `git config core.hooksPath .githooks`
 Bypass only when you knowingly accept responsibility: `git commit --no-verify`.
 
+The same source check also runs server-side in CI (`.github/workflows/report-gate.yml`)
+on every PR, so a local `--no-verify` cannot land an under-sourced report on `main`.
+The CI also runs a regression eval guarding the sensor itself:
+  `python3 tools/eval_sources.py`
+When you change source detection in `report_audit.py`, add a case to
+`tools/eval_sources.py` for any newly-handled source or fixed miss.
+
 ## Editing Rules
 
 - Preserve existing report files unless the task specifically asks to change

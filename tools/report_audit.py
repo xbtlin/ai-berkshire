@@ -494,13 +494,21 @@ def render_sources_report(result: dict, report_name: str = '') -> None:
 # CLI Entry Point
 # ---------------------------------------------------------------------------
 
-def main():
-    # 确保中文输出在任意终端代码页（如 Windows cp1252）下都不崩溃。
+def force_utf8_stdout():
+    """确保中文输出在任意终端代码页（如 Windows cp1252）下都不崩溃。
+
+    供本模块及复用本模块的脚本（如 eval_sources.py）共同调用，
+    避免在多处重复同一段编码修复（每个缺陷只修一次）。
+    """
     for _stream in (sys.stdout, sys.stderr):
         try:
             _stream.reconfigure(encoding='utf-8')
         except Exception:
             pass
+
+
+def main():
+    force_utf8_stdout()
 
     parser = argparse.ArgumentParser(
         description='Report Audit Tool — 研究报告数据抽检工具',

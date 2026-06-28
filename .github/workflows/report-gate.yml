@@ -1,0 +1,60 @@
+name: report-gate
+
+# 服务端来源闸门：与本地 pre-commit 同一套检查，但在 PR 上运行，
+# 因此 `git commit --no-verify` 无法绕过。这是“不可绕过”的那一层。
+on:
+  pull_request:
+    paths:
+      - 'reports/**.md'
+      - 'tools/report_audit.py'
+      - 'tools/eval_sources.py'
+      - '.github/workflows/report-gate.yml'
+  push:
+    branches: [main]
+
+jobs:
+  # 1) 回归 eval：保护 Sensor 本身不被改坏（应始终 ~100% 通过）
+  sensor-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Run source-sensor regression eval
+        run: python3 tools/eval_sources.py
+
+  # 2) 报告来源闸门：仅检查本 PR 改动的 reports/**.md（避免拦截历史报告）
+  report-sources:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Check changed reports have >= 2 independent sources
+        run: |
+          set -u
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          base="origin/${{ github.base_ref }}"
+          files=$(git diff --name-only "$base"...HEAD | grep -E '^reports/.*\.md$' || true)
+          if [ -z "$files" ]; then
+            echo "本 PR 未改动任何 reports/**.md，跳过。"
+            exit 0
+          fi
+          fail=0
+          while IFS= read -r f; do
+            [ -f "$f" ] || continue   # 删除的文件跳过
+            echo "::group::$f"
+            if ! python3 tools/report_audit.py sources --report "$f"; then
+              fail=1
+            fi
+            echo "::endgroup::"
+          done <<< "$files"
+          if [ "$fail" -ne 0 ]; then
+            echo "::error::有报告来源不足（要求 >= 2 个独立信源）。"
+            exit 1
+          fi
