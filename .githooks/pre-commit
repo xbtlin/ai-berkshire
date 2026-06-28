@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Gate（来源闸门）：阻止提交来源不足的研究报告。
+#   规则来源：CLAUDE.md「数据必须标注来源，关键数据至少2个来源交叉验证」。
+#   设计哲学：机制，不是 prompt —— 不依赖 agent「记得」遵守。
+#   范围：仅检查本次暂存的、reports/ 下新增或修改的 .md 文件。
+#   绕过（仅限你明确知情并负责时）：git commit --no-verify
+#
+# 安装（每个克隆执行一次）：
+#   git config core.hooksPath .githooks
+set -u
+
+PY=python
+command -v python3 >/dev/null 2>&1 && PY=python3
+
+# 暂存区中 reports/ 下的 .md（A=新增, M=修改）
+mapfile -t FILES < <(git diff --cached --name-only --diff-filter=AM \
+  | grep -E '^reports/.*\.md$' || true)
+
+[ ${#FILES[@]} -eq 0 ] && exit 0
+
+fail=0
+for f in "${FILES[@]}"; do
+  [ -f "$f" ] || continue
+  if ! "$PY" tools/report_audit.py sources --report "$f" >/dev/null 2>&1; then
+    echo "❌ 来源闸门打回: $f"
+    "$PY" tools/report_audit.py sources --report "$f" 2>/dev/null \
+      | grep -E '识别到独立信源|❌' || true
+    fail=1
+  fi
+done
+
+if [ "$fail" -ne 0 ]; then
+  echo
+  echo "────────────────────────────────────────────────────────"
+  echo "提交被拦截：上述报告来源不足（要求 >= 2 个独立信源）。"
+  echo "修正来源后重新提交；确需绕过（自负其责）：git commit --no-verify"
+  echo "────────────────────────────────────────────────────────"
+  exit 1
+fi
+exit 0

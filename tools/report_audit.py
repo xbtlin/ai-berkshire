@@ -399,10 +399,109 @@ def render_verdict(results: list, report_name: str = "") -> dict:
 
 
 # ---------------------------------------------------------------------------
+# 来源充分性检查（Computational Sensor）
+#   规则来自 CLAUDE.md：「数据必须标注来源，关键数据至少2个来源交叉验证」
+#   纯静态扫描，无网络、无 LLM —— 把 prompt 规则变成确定性闸门。
+# ---------------------------------------------------------------------------
+
+# 受信信源识别表：(正则, 规范名)。命中即记为一个「独立来源」。
+_SOURCE_PATTERNS = [
+    (r'macrotrends',                         'macrotrends'),
+    (r'stockanalysis',                       'stockanalysis'),
+    (r'aastocks|阿斯达克',                     'aastocks'),
+    (r'eastmoney|东方财富',                    'eastmoney'),
+    (r'cninfo|巨潮',                          'cninfo'),
+    (r'雪球|xueqiu',                          'xueqiu'),
+    (r'\bwind\b|万得',                        'wind'),
+    (r'morningstar|晨星',                     'morningstar'),
+    (r'bloomberg|彭博',                       'bloomberg'),
+    (r'sec\.gov|10-?K|10-?Q|20-?F|8-?K',      'SEC备案'),
+    (r'年报|季报|中报|财报|公司公告|业绩公告',    '公司财报/公告'),
+    (r'gurufocus',                           'gurufocus'),
+    (r'tikr',                                'tikr'),
+    (r'ycharts',                             'ycharts'),
+    (r'wsj|华尔街日报',                        'wsj'),
+    (r'reuters|路透',                         'reuters'),
+]
+
+# 「已标注来源」的通用标记（满足 CLAUDE.md「数据必须标注来源」）
+_CITATION_MARKER_RE = re.compile(
+    r'来源|數據來源|数据来源|资料来源|資料來源|出处|出處|引用|参考|參考|'
+    r'\bsource[s]?\b|https?://',
+    re.IGNORECASE,
+)
+
+
+def check_sources(md_text: str, min_sources: int = 2) -> dict:
+    """静态检查报告的来源充分性。
+
+    两条确定性规则：
+      R1 报告必须含「来源标注」标记（来源/数据来源/Source/URL 之一）。
+      R2 必须出现 >= min_sources 个相互独立的受信信源。
+
+    返回 {'verdict': 'PASS'|'FAIL', 'found_sources': [...], 'has_marker': bool,
+          'min_sources': int, 'reasons': [...]}。
+    纯计算、无副作用，便于在 pre-commit / CI 中调用。
+    """
+    found = []
+    for pat, name in _SOURCE_PATTERNS:
+        if re.search(pat, md_text, re.IGNORECASE):
+            found.append(name)
+    found = sorted(set(found))
+
+    has_marker = bool(_CITATION_MARKER_RE.search(md_text))
+
+    reasons = []
+    if not has_marker:
+        reasons.append('未发现任何来源标注标记（来源/数据来源/Source/URL）')
+    if len(found) < min_sources:
+        reasons.append(
+            f'仅识别到 {len(found)} 个独立信源（要求 >= {min_sources}）：'
+            f'{found if found else "无"}'
+        )
+
+    verdict = 'PASS' if not reasons else 'FAIL'
+    return {
+        'verdict': verdict,
+        'found_sources': found,
+        'has_marker': has_marker,
+        'min_sources': min_sources,
+        'reasons': reasons,
+    }
+
+
+def render_sources_report(result: dict, report_name: str = '') -> None:
+    BOLD, RED, GREEN, RESET = '\033[1m', '\033[91m', '\033[92m', '\033[0m'
+    print('=' * 70)
+    print(f'{BOLD}来源充分性检查（Computational Sensor）{RESET}')
+    if report_name:
+        print(f'报告：{report_name}')
+    print('=' * 70)
+    print(f'  来源标注标记：{"✅ 有" if result["has_marker"] else "❌ 无"}')
+    print(f'  识别到独立信源（要求 >= {result["min_sources"]}）：'
+          f'{result["found_sources"] if result["found_sources"] else "无"}')
+    print('-' * 70)
+    if result['verdict'] == 'PASS':
+        print(f'{BOLD}{GREEN}【准出】来源充分。{RESET}')
+    else:
+        print(f'{BOLD}{RED}【打回】来源不达标：{RESET}')
+        for r in result['reasons']:
+            print(f'  ❌ {r}')
+    print('=' * 70)
+
+
+# ---------------------------------------------------------------------------
 # CLI Entry Point
 # ---------------------------------------------------------------------------
 
 def main():
+    # 确保中文输出在任意终端代码页（如 Windows cp1252）下都不崩溃。
+    for _stream in (sys.stdout, sys.stderr):
+        try:
+            _stream.reconfigure(encoding='utf-8')
+        except Exception:
+            pass
+
     parser = argparse.ArgumentParser(
         description='Report Audit Tool — 研究报告数据抽检工具',
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -439,6 +538,12 @@ def main():
     ext.add_argument('--ratio', type=float, default=0.15, help='抽样比例，默认 0.15')
     ext.add_argument('--seed', type=int, default=None, help='随机种子（可选，用于复现）')
     ext.add_argument('--dry-run', action='store_true', help='只打印，不输出 JSON')
+
+    # sources（来源充分性静态检查 —— 无网络、可用于 pre-commit/CI）
+    src = sub.add_parser('sources', help='静态检查报告来源充分性（>=N 个独立信源）')
+    src.add_argument('--report', required=True, help='报告文件路径（Markdown）')
+    src.add_argument('--min', type=int, default=2, help='最少独立信源数，默认 2')
+    src.add_argument('--output-json', action='store_true', help='以 JSON 输出结果')
 
     # verdict
     vrd = sub.add_parser('verdict', help='根据核验结果输出准出/打回判决')
@@ -497,6 +602,20 @@ def main():
             print('抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：')
             print()
             print(json.dumps(template, ensure_ascii=False, indent=2))
+
+    elif args.command == 'sources':
+        if not os.path.exists(args.report):
+            print(f'❌ 文件不存在: {args.report}', file=sys.stderr)
+            sys.exit(2)
+        with open(args.report, 'r', encoding='utf-8') as f:
+            text = f.read()
+        result = check_sources(text, min_sources=args.min)
+        if args.output_json:
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+        else:
+            render_sources_report(result, report_name=args.report)
+        # 非零退出码 = 打回，供 pre-commit / CI 闸门判断
+        sys.exit(0 if result['verdict'] == 'PASS' else 1)
 
     elif args.command == 'verdict':
         try:

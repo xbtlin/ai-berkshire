@@ -48,6 +48,17 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
   `python3 tools/report_audit.py ...`
 - Clearly label low-confidence conclusions, incomplete data, and source gaps.
 - This project is for learning and research, not investment advice.
+- Source-sufficiency is enforced by a deterministic gate, not by memory. Any
+  report under `reports/**.md` must cite >= 2 independent recognized sources.
+  Check locally:
+  `python3 tools/report_audit.py sources --report reports/<path>.md`
+
+## Commit Gate (one-time setup per clone)
+
+A versioned pre-commit hook in `.githooks/` blocks committing under-sourced
+reports. Enable it once after cloning:
+  `git config core.hooksPath .githooks`
+Bypass only when you knowingly accept responsibility: `git commit --no-verify`.
 
 ## Editing Rules
 
