@@ -162,13 +162,13 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 > 图源：[`assets/architecture.mmd`](assets/architecture.mmd)（Mermaid 可编辑源码）
 
 **三层设计哲学**：
-- **Skill 层**：把"你要做什么"抽象成 16 个明确入口——深度研究、财报分析、行业筛选、持仓管理、思维工具，按场景选用
+- **Skill 层**：把"你要做什么"抽象成 19 个明确入口——深度研究、财报分析、行业筛选、持仓管理、思维工具，按场景选用
 - **Agent 层**：每个 skill 内部都是 4 个 Agent 并行——它们各自独立搜索、独立判断、互相挑战，最后由 Team Lead 综合
 - **工具层**：精确计算、实时检索、报告抽检——保证每份报告的数据严谨性可验证
 
 ---
 
-## Skills 一览（18个）
+## Skills 一览（19个）
 
 ### 🔬 深度研究类
 
@@ -203,6 +203,7 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 |-------|------|---------|
 | [`/portfolio-review`](skills/portfolio-review.md) | 组合管理与优化 | 从"研究公司"升级到"管理组合"——仓位、集中度、再平衡 |
 | [`/thesis-tracker`](skills/thesis-tracker.md) | 投资论文追踪 | 买入后的纪律系统：持续跟踪论文是否被证伪 |
+| [`/thesis-drift`](skills/thesis-drift.md) | 投资论文漂移检测 | 对比两份论文/报告，区分事实变化、估值变化与措辞变化 |
 | [`/news-pulse`](skills/news-pulse.md) | 股价异动快速归因 | 股价大涨/大跌时10分钟搞清"发生了什么" |
 
 ### 🧠 思维工具类
@@ -303,6 +304,7 @@ cd ai-berkshire
 # 持仓管理
 /portfolio-review 腾讯30%, 美团20%, 茅台20%, 现金30%
 /thesis-tracker 拼多多
+/thesis-drift 拼多多 reports/拼多多-thesis-2025Q4.md reports/拼多多-thesis-2026Q1.md
 /news-pulse 腾讯
 
 # 思维工具
@@ -317,6 +319,7 @@ cd ai-berkshire
 使用 earnings-review 分析 PDD 2025年报
 使用 industry-funnel 筛选 AI算力
 使用 bottleneck-hunter 扫描 AI基础设施瓶颈
+使用 thesis-drift 对比拼多多两份投资论文
 使用 wechat-article 写大模型OPD技术解读
 ```
 
@@ -659,6 +662,7 @@ cd ai-berkshire
 - [x] 财报精读（`/earnings-review` + `/earnings-team` 四大师并行解读）
 - [x] 投资组合管理（`/portfolio-review` 仓位审视与再平衡）
 - [x] 投资论文追踪（`/thesis-tracker` 买入后纪律系统）
+- [x] 投资论文漂移检测（`/thesis-drift` 证据驱动对比）
 - [x] 管理层纵深研究（`/management-deep-dive`）
 - [x] 去劣快速筛选（`/quality-screen` 7条硬指标排除）
 - [x] 段永平思维模拟（`/dyp-ask`）
