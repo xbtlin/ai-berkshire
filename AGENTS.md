@@ -71,6 +71,9 @@ The CI also runs a regression eval guarding the sensor itself:
 When you change source detection in `report_audit.py`, add a case to
 `tools/eval_sources.py` for any newly-handled source or fixed miss.
 
+Harness sovereignty audit, model-pluggability, and the staged-autonomy roadmap
+(plus the backlog of next sensors) are in `docs/harness-roadmap.md`.
+
 ## Editing Rules
 
 - Preserve existing report files unless the task specifically asks to change
