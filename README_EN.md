@@ -1,4 +1,4 @@
-English | [中文](README.md)
+English | [中文](README.md) | [日本語](README_JA.md)
 
 # AI Berkshire — Value Investing Research Framework for the AI Era
 
