@@ -46,6 +46,10 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
   `python3 tools/financial_rigor.py ...`
 - Use report audit tooling before treating generated research as publishable:
   `python3 tools/report_audit.py ...`
+  Subcommands: `sources` (>=2 independent sources, hard gate), `balance`
+  (advisory pre-filter for two-sided analysis / estimate labeling — never a
+  hard auto-block; see `docs/inferential-balance-judge.md` for the LLM-judge
+  layer and its required calibration).
 - Clearly label low-confidence conclusions, incomplete data, and source gaps.
 - This project is for learning and research, not investment advice.
 - Source-sufficiency is enforced by a deterministic gate, not by memory. Any

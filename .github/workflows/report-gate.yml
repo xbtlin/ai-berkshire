@@ -21,8 +21,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Run source-sensor regression eval
-        run: python3 tools/eval_sources.py
+      - name: Run sensor regression evals (sources + balance pre-filter)
+        run: |
+          python3 tools/eval_sources.py
+          python3 tools/eval_balance.py
 
   # 2) 报告来源闸门：仅检查本 PR 改动的 reports/**.md（避免拦截历史报告）
   report-sources:

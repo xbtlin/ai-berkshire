@@ -491,6 +491,98 @@ def render_sources_report(result: dict, report_name: str = '') -> None:
 
 
 # ---------------------------------------------------------------------------
+# 正反两面 / 估计标注检查（Inferential Sensor 的 Computational 前置过滤层）
+#   规则来自 CLAUDE.md：「呈现正反两面」「估计值必须注明估计」。
+#   语义判断（论点是否有「实质」反面）无法确定化 —— 本层只做廉价前置过滤：
+#     · 完全没有任何反面标记的实质报告 → 高精度地标为 REVIEW（极可能一面倒）。
+#     · 有反面标记 → OK（仅表示存在信号，深度仍需 Inferential 判官，见
+#       docs/inferential-balance-judge.md）。
+#   定位：顾问式 Sensor，默认不阻断（exit 0）。语义闸门的「批准」由人在环上做，
+#   不交给概率自动 merge。--strict 时 REVIEW 退出 1，供愿意硬化的人选用。
+# ---------------------------------------------------------------------------
+
+# 反面/反方/下行论据标记（出现即视为「存在反面信号」）
+_COUNTER_MARKERS = [
+    '另一方面', '但另一方面', '然而', '不过', '反过来', '反面', '反方', '反驳',
+    '质疑', '存疑', '争议', '风险', '下行', '看空', '空头', '隐患', '局限',
+    '短板', '弱点', '缺陷', '不确定', '警惕', '反例', '悲观', 'bear case', 'bear',
+]
+# 「估计/不确定」标注标记
+_ESTIMATE_MARKERS = ['估计', '估算', '假设', '推测', '大致', '约为', '左右']
+# 预测性表述（出现这些却无估计标注 → 提示风险）
+_PROJECTION_MARKERS = [
+    '预计', '预测', 'CAGR', '复合增', '目标价', 'DCF', '展望', '未来三年',
+    '到2027', '到2028', '到2029', '到2030',
+]
+# 「实质报告」信号（够长或含判断性章节，才值得检查正反两面）
+_SUBSTANTIVE_MARKERS = ['判断', '结论', '估值', '投资', '逻辑', 'thesis', '评分', '★']
+
+
+def check_balance(md_text: str) -> dict:
+    """正反两面 / 估计标注的廉价前置过滤（确定性，无网络、无 LLM）。
+
+    返回 {'verdict': 'OK'|'REVIEW'|'SKIP', 'counter_markers': [...],
+          'has_projection': bool, 'has_estimate_label': bool, 'notes': [...]}。
+    'REVIEW' = 顾问级提示「极可能一面倒，请人工或 Inferential 判官复核」，非硬性失败。
+    """
+    found_counter = sorted({m for m in _COUNTER_MARKERS
+                            if re.search(re.escape(m), md_text, re.IGNORECASE)})
+    has_projection = any(re.search(re.escape(m), md_text, re.IGNORECASE)
+                         for m in _PROJECTION_MARKERS)
+    has_estimate = any(m in md_text for m in _ESTIMATE_MARKERS)
+    substantive = (len(md_text) > 1500
+                   or any(m in md_text for m in _SUBSTANTIVE_MARKERS))
+
+    notes = []
+    if not substantive:
+        verdict = 'SKIP'
+        notes.append('报告过短/非判断性，跳过正反两面检查')
+    elif not found_counter:
+        verdict = 'REVIEW'
+        notes.append('未发现任何反面/风险/下行论据标记 —— 极可能一面倒，建议复核')
+    else:
+        verdict = 'OK'
+
+    if has_projection and not has_estimate:
+        notes.append('含预测性表述（如预计/CAGR/目标价）却未见「估计/假设」标注')
+
+    return {
+        'verdict': verdict,
+        'counter_markers': found_counter,
+        'has_projection': has_projection,
+        'has_estimate_label': has_estimate,
+        'notes': notes,
+    }
+
+
+def render_balance_report(result: dict, report_name: str = '') -> None:
+    BOLD, RED, GREEN, YELLOW, RESET = (
+        '\033[1m', '\033[91m', '\033[92m', '\033[93m', '\033[0m')
+    print('=' * 70)
+    print(f'{BOLD}正反两面 / 估计标注检查（Computational 前置过滤，顾问级）{RESET}')
+    if report_name:
+        print(f'报告：{report_name}')
+    print('=' * 70)
+    print(f'  反面论据标记：{result["counter_markers"] or "无"}')
+    print(f'  预测性表述：{"有" if result["has_projection"] else "无"}'
+          f'  |  估计标注：{"有" if result["has_estimate_label"] else "无"}')
+    print('-' * 70)
+    v = result['verdict']
+    if v == 'OK':
+        print(f'{BOLD}{GREEN}【OK】存在反面信号。深度是否实质，仍建议 Inferential 判官复核。{RESET}')
+    elif v == 'SKIP':
+        print(f'{BOLD}【跳过】{result["notes"][0]}{RESET}')
+    else:
+        print(f'{BOLD}{YELLOW}【REVIEW】顾问级提示（非硬性失败）：{RESET}')
+    for n in result['notes']:
+        print(f'  · {n}')
+    if v != 'SKIP':
+        print(f'\n  下一步（人在环上）：python3 见 docs/inferential-balance-judge.md '
+              f'用 LLM 判官逐条核验核心判断是否有实质反面。')
+    print('=' * 70)
+
+
+# ---------------------------------------------------------------------------
 # CLI Entry Point
 # ---------------------------------------------------------------------------
 
@@ -552,6 +644,13 @@ def main():
     src.add_argument('--report', required=True, help='报告文件路径（Markdown）')
     src.add_argument('--min', type=int, default=2, help='最少独立信源数，默认 2')
     src.add_argument('--output-json', action='store_true', help='以 JSON 输出结果')
+
+    # balance（正反两面/估计标注前置过滤 —— 顾问级，默认不阻断）
+    bal = sub.add_parser('balance', help='正反两面/估计标注的确定性前置过滤（顾问级）')
+    bal.add_argument('--report', required=True, help='报告文件路径（Markdown）')
+    bal.add_argument('--strict', action='store_true',
+                     help='REVIEW 时也退出 1（默认顾问级，始终 exit 0）')
+    bal.add_argument('--output-json', action='store_true', help='以 JSON 输出结果')
 
     # verdict
     vrd = sub.add_parser('verdict', help='根据核验结果输出准出/打回判决')
@@ -624,6 +723,22 @@ def main():
             render_sources_report(result, report_name=args.report)
         # 非零退出码 = 打回，供 pre-commit / CI 闸门判断
         sys.exit(0 if result['verdict'] == 'PASS' else 1)
+
+    elif args.command == 'balance':
+        if not os.path.exists(args.report):
+            print(f'❌ 文件不存在: {args.report}', file=sys.stderr)
+            sys.exit(2)
+        with open(args.report, 'r', encoding='utf-8') as f:
+            text = f.read()
+        result = check_balance(text)
+        if args.output_json:
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+        else:
+            render_balance_report(result, report_name=args.report)
+        # 顾问级：默认 exit 0；--strict 时 REVIEW 退出 1
+        if args.strict and result['verdict'] == 'REVIEW':
+            sys.exit(1)
+        sys.exit(0)
 
     elif args.command == 'verdict':
         try:
