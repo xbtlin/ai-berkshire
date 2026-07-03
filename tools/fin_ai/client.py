@@ -159,5 +159,20 @@ class FinAIClient:
             raw_events=raw_events,
         )
 
+    def raw_get(self, path: str, timeout: float = 10.0) -> httpx.Response:
+        """发起 GET 请求（公共 API，供其他模块复用，如 quota.pre_check）。
+
+        Args:
+            path: 相对路径（如 "/openai/chat/limit"），会拼到 base_url 后
+            timeout: 超时秒数
+        Returns:
+            httpx.Response
+        """
+        return self._client.get(
+            f"{self.config.base_url}{path}",
+            headers=self.config.headers(),
+            timeout=timeout,
+        )
+
     def close(self):
         self._client.close()

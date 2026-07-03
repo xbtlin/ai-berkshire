@@ -2,7 +2,6 @@
 
 接口失败时降级返回 None（不阻塞调用，文档明确"容错返回 used=0"）。
 """
-import json
 from dataclasses import dataclass
 from typing import Optional
 
@@ -22,11 +21,7 @@ class QuotaStatus:
 def pre_check(client) -> Optional[QuotaStatus]:
     """调 limit 接口，失败返回 None。"""
     try:
-        resp = client._client.get(
-            f"{client.config.base_url}/openai/chat/limit",
-            headers=client.config.headers(),
-            timeout=10.0,
-        )
+        resp = client.raw_get("/openai/chat/limit", timeout=10.0)
         if resp.status_code != 200:
             return None
         body = resp.json()
