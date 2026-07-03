@@ -5,3 +5,12 @@ reports/.DS_Store
 
 # 雪球爬虫登录态缓存（含 cookies，本地使用）
 /tmp/xueqiu_state.json
+
+# 项目本地安装的 Claude Code commands（由 skills/*.md 复制生成）
+.claude/commands/
+
+# 金融 AI 凭证（本地配置，含 token）
+.env
+
+# 金融 AI 缓存目录（含问答内容，可能涉密）
+data/fin_ai_cache/
