@@ -1,18 +1,33 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # AI Berkshire — 项目指令
 
 ## 项目概述
 
-基于 Claude Code 的价值投资研究 Skill 合集。四大师框架：巴菲特、芒格、段永平、李录。
+基于 Claude Code / Codex 的价值投资研究 Skill 合集。四大师框架：巴菲特、芒格、段永平、李录。
 GitHub: xbtlin/ai-berkshire
+
+核心卖点（详见 README.md）：强制给结论不打太极 / 四大师视角对抗 / 结构化反偏见机制 / 金融数据精确计算（Decimal）/ 可复现研究流程 / 多 Agent 并行深度 / 连续两年实盘跑赢全球主要指数 40-50 个百分点。
 
 ## 项目结构
 
 ```
-skills/          — 投研 Skill 定义（.md），复制到 ~/.claude/commands/ 使用
-tools/           — 辅助工具（financial_rigor.py 精确计算）
+skills/          — Claude Code slash-command 源文件（canonical workflow 源）
+codex-skills/    — Codex skill 包，由 scripts/sync-codex-skills.py 从 skills/*.md 生成
+codex-prompts/   — Codex slash prompt 兼容层（可选）
+scripts/         — 安装/同步脚本（install-*.sh、sync-*.py）
+tools/           — 金融严谨性 + 数据获取工具（Python，跨 Claude/Codex 共用）
 reports/         — 投资研究报告输出
 assets/          — 图片等静态资源
+data/            — 缓存的财务/行情/估值 CSV 与 JSON
+docs/            — ROADMAP、外部研究文档
+AGENTS.md        — Codex 行为约束（与 CLAUDE.md 平行，互不重复）
+ai_CLAUDE.md     — AI 协作记忆文件（用户画像、项目演进、已知问题）
 ```
+
+**关键事实**：`skills/*.md` 是 workflow 唯一源文件。修改 skills/ 后必须跑 `sync-codex-skills.py` 同步给 Codex，不要手改 codex-skills/。
 
 ## 报告目录结构
 
@@ -65,6 +80,77 @@ reports/{公司名}/
 └── 最终报告.md                       — Team Lead 综合报告
 ```
 
+## Skills 全景（18 个，按场景选用）
+
+| 类别 | Skill | 用途 |
+|------|-------|------|
+| 🔬 深度研究 | `/investment-research` `/investment-team` `/management-deep-dive` `/private-company-research` `/deep-company-series` | 单公司全方位研究；多 Agent 并行最快；管理层/未上市公司/公众号级系列 |
+| 📊 财报分析 | `/earnings-review` `/earnings-team` | 一手财报精读；四大师并行 + 公众号发布 |
+| 🏭 行业筛选 | `/industry-research` `/industry-funnel` `/quality-screen` `/bottleneck-hunter` `/investment-checklist` | 产业链全景；漏斗精选；去劣筛 7 条硬指标；供应链瓶颈；买入前 6 关 |
+| 📈 持仓管理 | `/portfolio-review` `/thesis-tracker` `/news-pulse` | 组合管理；论文追踪；股价异动 10 分钟归因 |
+| 🧠 思维工具 | `/dyp-ask` `/financial-data` `/wechat-article` | 段永平问答；财务数据交叉验证规范；公众号文章三 Agent 协作 |
+
+调用示例：`/investment-research 腾讯`、`/industry-funnel AI算力`、`/news-pulse 拼多多 跌12% 一周内`。
+
+## 工具与脚本
+
+### Python 工具（`tools/`）
+
+所有金融计算走 `decimal.Decimal`，**禁用 float**（PE 算错一位小数点 = 投资决策错）。
+
+| 工具 | 用途 |
+|------|------|
+| `financial_rigor.py` | 市值验算 / 估值验算 / 多源交叉验证 / 三情景估值 / Benford 检测 / 精确计算器 |
+| `report_audit.py` | 报告发布前的合规性审计（数据来源、置信度标注） |
+| `ashare_data.py` | A 股行情+财务（腾讯行情+东方财富，零外部依赖） |
+| `xueqiu_scraper.py` | 雪球数据抓取（含登录态缓存，详见 .gitignore） |
+| `morningstar_fair_value.py` | Morningstar 公允价值拉取 |
+| `stock_screener.py` | 股票筛选 |
+| `momentum_backtest.py` / `momentum_backtest_v2.py` | 动量回测 |
+| `fin_ai/` | 金融 AI（gangtise-reason）SSE 问答接口客户端：观点/研报/事件解读。CLI: `python -m tools.fin_ai ask "..."` / Python: `from tools.fin_ai import ask` |
+
+`financial_rigor.py` 子命令（用 `--help` 看完整参数）：
+
+```bash
+# 市值手算校验（股价 × 总股本 vs 报告值）
+python tools/financial_rigor.py verify-market-cap --price 510 --shares 9.11e9 --reported 4.65e12 --currency HKD
+
+# 估值指标精确计算（PE/PB/ROE/FCF Yield）
+python tools/financial_rigor.py verify-valuation --price 510 --eps 23.5 --bvps 120
+
+# 多源交叉验证（同字段 N 个来源对比，超容差告警）
+python tools/financial_rigor.py cross-validate --field revenue --values '{"年报": 7518, "Yahoo": 7500}' --unit 亿
+
+# 三情景估值（乐观/中性/悲观）
+python tools/financial_rigor.py three-scenario ...
+
+# 任意表达式精确计算（替代 LLM 心算）
+python tools/financial_rigor.py calc --expr '510 * 9.11e9'
+```
+
+> Windows Git Bash 用 `python`，不是 `python3`（Windows 默认不创建 python3 软链接）。
+
+### 脚本（`scripts/`）
+
+| 脚本 | 用途 |
+|------|------|
+| `install-claude-commands.sh` | 把 skills/*.md 复制到 `~/.claude/commands/` 全局可用 |
+| `install-codex-skills.sh` | 安装 Codex skills 到 `~/.codex/skills` |
+| `install-codex-prompts.sh` | 安装 Codex slash prompts |
+| `sync-codex-skills.py` | **改 skills/ 后必跑**：从 skills/*.md 重新生成 codex-skills/*/SKILL.md |
+| `sync-codex-prompts.py` | 同步 Codex slash prompts 兼容层 |
+
+校验是否同步（不写文件）：`python scripts/sync-codex-skills.py --check`
+
+## Codex 兼容性
+
+本项目同时支持 Claude Code 和 Codex，**canonical workflow 源在 `skills/*.md`**：
+
+- 改 `skills/*.md` → 跑 `sync-codex-skills.py` → 提交 codex-skills/ 的生成结果
+- 不要手改 `codex-skills/*/SKILL.md`，下次 sync 会覆盖
+- Codex 专属行为写在 `AGENTS.md`，Claude Code 专属行为写在本文件，**互不重复**
+- 仅 Codex 用的 hand-written 包需在 codex-skills/ 中标注，且不要建同名 skills/*.md
+
 ## 投研分析核心原则（最高优先级）
 
 - **客观、客观、客观**——所有投研分析必须基于事实和数据，严禁主观臆断
@@ -107,5 +193,10 @@ git push origin main
 
 - 市值必须手算校验：股价 × 总股本，与报告市值对比
 - 货币单位要明确（港币/人民币/美元），防止混淆
-- PE/ROE等指标用 tools/financial_rigor.py 精确计算
-- 报告写完后主动询问是否推送到GitHub
+- PE/ROE 等指标用 `tools/financial_rigor.py` 精确计算，禁用 LLM 心算
+- 报告发布前用 `tools/report_audit.py` 做合规审计（数据来源、置信度标注）
+- 关键数据至少 2 个独立来源交叉验证，误差 >1% 告警
+- 改 skills/ 后必须跑 `scripts/sync-codex-skills.py` 同步 Codex（用 `--check` 仅校验不写）
+- Windows Git Bash 下用 `python` 不用 `python3`；所有路径用正斜杠
+- 报告写完后主动询问是否推送到 GitHub
+- 本项目仅供学习研究，不构成投资建议
