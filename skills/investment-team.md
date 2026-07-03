@@ -211,3 +211,40 @@ python3 ~/ai-berkshire/tools/report_audit.py verdict \
 6. **耐心等待**——4个Agent研究需要几分钟，实时向用户更新进度
 7. **反偏见意识**——team-lead在汇总时必须评估：各Agent的分析是否受限于资料充裕度？是否与市场共识过度趋同？最终报告需包含"信息丰富度评级"和"AI研究局限性声明"
 8. **信息稀缺时的诚实原则**——宁可在报告中留白标注"数据不足"，也不要用推测填满框架伪装确定性
+
+---
+
+## 可选步骤：金融 AI 观点补充（消耗配额，默认关闭）
+
+如果你希望报告里包含金融 AI（gangtise-reason）的实时观点补充，在数据收集阶段调用：
+
+```bash
+# 单次：拿最新观点/事件解读
+python -m tools.fin_ai ask "{公司名} 最新市场观点和研报解读" --ttl-hours 1
+
+# 多轮 REPL：深入对话（4-5 轮覆盖业务/竞争/估值/风险）
+python -m tools.fin_ai ask --multi "{公司名}"
+
+# 查剩余配额（每日 80 次硬上限）
+python -m tools.fin_ai quota
+```
+
+将返回内容嵌入报告「§X.X 金融 AI 观点补充」段落，明确标注：
+- 来源：金融 AI（gangtise-reason），{日期}
+- 类型：第三方观点，非事实数据
+- 与报告其他模块的关系：补充参考，**不替代**程序化验算（PE/PB/ROE 等仍走 `financial_rigor.py`）
+
+⚠️ **不强制使用**。配额 80/天是硬约束，长公司研究请优先用缓存命中。
+
+Python 库调用方式（在脚本中复用）：
+
+```python
+from tools.fin_ai import ask, ask_multi_turn
+
+result = ask("茅台研报观点", ttl_hours=24)
+print(result.content)
+
+with ask_multi_turn("长城军工") as session:
+    r1 = session.ask("2025 年报怎么看？")
+    r2 = session.ask("和北方导航比谁更好？")
+```
