@@ -27,13 +27,12 @@ def ask(
     返回 ChatResult（content / session_id / conversation_sid / usage）。
     """
     cfg = Config.load()
-    client = FinAIClient(cfg)
 
     key = cache_key(query, cfg.model)
     if not refresh and not no_cache:
         cached = cache_get(key, ttl_hours)
         if cached:
-            # 把缓存包成 ChatResult
+            # 把缓存包成 ChatResult（命中缓存不需要 client，无连接泄漏）
             return ChatResult(
                 content=cached["content"],
                 session_id=cached.get("session_id", 0),
@@ -41,7 +40,8 @@ def ask(
                 usage=cached.get("usage", {}),
             )
 
-    result = client.chat(query, on_delta=on_delta)
+    with FinAIClient(cfg) as client:
+        result = client.chat(query, on_delta=on_delta)
     cache_put(key, {
         "query": query,
         "model": cfg.model,
@@ -69,7 +69,7 @@ class _MultiTurnSession:
         # 多轮 key 包含 turn 序号，避免不同轮次混淆
         key = cache_key(query, self.client.config.model,
                         conversation_sid_prefix=f"{self.sid}:turn:{self._turn}")
-        if not self.ttl_hours or self.ttl_hours > 0:
+        if self.ttl_hours > 0:
             cached = cache_get(key, self.ttl_hours)
             if cached:
                 return ChatResult(
@@ -113,8 +113,8 @@ def ask_multi_turn(topic: str, ttl_hours: int = 24):
 def quota() -> QuotaStatus:
     """查当日配额。"""
     cfg = Config.load()
-    client = FinAIClient(cfg)
-    return pre_check(client)
+    with FinAIClient(cfg) as client:
+        return pre_check(client)
 
 
 __all__ = ["ask", "ask_multi_turn", "quota", "FinAIError", "ConfigError", "ChatResult"]

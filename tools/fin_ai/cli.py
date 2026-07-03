@@ -13,6 +13,8 @@ import time
 import uuid
 from pathlib import Path
 
+import httpx
+
 from .cache import cache_key, get as cache_get, put as cache_put, clear as cache_clear, list_recent
 from .client import FinAIClient, FinAIError
 from .config import Config, ConfigError
@@ -61,62 +63,73 @@ def main(argv=None):
         if "reconnect_forbidden" in str(e):
             return 7
         return 5
+    except httpx.HTTPStatusError as e:
+        print(f"[FIN_AI ERROR] HTTP {e.response.status_code}: {e}", file=sys.stderr)
+        if e.response.status_code in (401, 403):
+            return 8
+        if e.response.status_code == 404:
+            return 9
+        return 10
+    except (httpx.ConnectError, httpx.TimeoutException) as e:
+        print(f"[FIN_AI ERROR] 网络错误: {type(e).__name__}", file=sys.stderr)
+        return 11
 
 
 def _cmd_ask(args):
     cfg = Config.load()
-    client = FinAIClient(cfg)
 
-    if args.multi:
-        return _repl(client, args.query or "")
-
-    if not args.query:
+    if not args.multi and not args.query:
         print("error: ask 需要提供 query 或 --multi", file=sys.stderr)
         return 1
 
-    key = cache_key(args.query, cfg.model)
-    if not args.refresh and not args.no_cache:
+    key = cache_key(args.query or "", cfg.model)
+    # 缓存命中不需要 client（避免无谓的连接池开销）
+    if not args.multi and not args.refresh and not args.no_cache:
         cached = cache_get(key, args.ttl_hours)
         if cached:
             print(f"[FIN_AI] [CACHE HIT] (cached at {cached.get('ts')})")
             print(cached["content"])
             return 0
 
-    # 配额预检
-    status = pre_check(client)
-    if status and status.exceeded:
-        print(f"[FIN_AI ERROR] 配额已耗尽 ({status.used}/{status.limit})，明天 00:00 重置", file=sys.stderr)
-        return 3
-    if status and status.should_warn():
-        print(f"[FIN_AI WARN] 配额将耗尽：剩余 {status.remaining}/{status.limit}", file=sys.stderr)
+    with FinAIClient(cfg) as client:
+        if args.multi:
+            return _repl(client, args.query or "")
 
-    print(f"[FIN_AI] querying: {args.query}", file=sys.stderr)
-    if status:
-        print(f"[FIN_AI] quota: remaining {status.remaining}/{status.limit}", file=sys.stderr)
+        # 配额预检
+        status = pre_check(client)
+        if status and status.exceeded:
+            print(f"[FIN_AI ERROR] 配额已耗尽 ({status.used}/{status.limit})，明天 00:00 重置", file=sys.stderr)
+            return 3
+        if status and status.should_warn():
+            print(f"[FIN_AI WARN] 配额将耗尽：剩余 {status.remaining}/{status.limit}", file=sys.stderr)
 
-    start = time.time()
-    sep = "─" * 40
-    print(sep)
-    result = client.chat(args.query, on_delta=lambda c: print(c, end="", flush=True))
-    print()
-    print(sep)
+        print(f"[FIN_AI] querying: {args.query}", file=sys.stderr)
+        if status:
+            print(f"[FIN_AI] quota: remaining {status.remaining}/{status.limit}", file=sys.stderr)
 
-    elapsed = time.time() - start
-    out_tok = result.usage.get("output_tokens", "?")
-    in_tok = result.usage.get("input_tokens", "?")
-    print(f"[FIN_AI] done in {elapsed:.1f}s · tokens: {out_tok} out / {in_tok} in · [SID: {result.session_id}]", file=sys.stderr)
+        start = time.time()
+        sep = "─" * 40
+        print(sep)
+        result = client.chat(args.query, on_delta=lambda c: print(c, end="", flush=True))
+        print()
+        print(sep)
 
-    # 写缓存（即使 --no-cache 也写，让下次受益；refresh 也写以覆盖旧值；
-    # SSE 错误由 client 异常路径保证不走到这里）
-    cache_put(key, {
-        "query": args.query,
-        "model": cfg.model,
-        "content": result.content,
-        "usage": result.usage,
-        "ts": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
-        "session_id": result.session_id,
-        "conversation_sid": result.conversation_sid,
-    })
+        elapsed = time.time() - start
+        out_tok = result.usage.get("output_tokens", "?")
+        in_tok = result.usage.get("input_tokens", "?")
+        print(f"[FIN_AI] done in {elapsed:.1f}s · tokens: {out_tok} out / {in_tok} in · [SID: {result.session_id}]", file=sys.stderr)
+
+        # 写缓存（即使 --no-cache 也写，让下次受益；refresh 也写以覆盖旧值；
+        # SSE 错误由 client 异常路径保证不走到这里）
+        cache_put(key, {
+            "query": args.query,
+            "model": cfg.model,
+            "content": result.content,
+            "usage": result.usage,
+            "ts": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+            "session_id": result.session_id,
+            "conversation_sid": result.conversation_sid,
+        })
 
     return 0
 
@@ -127,41 +140,44 @@ def _repl(client, topic):
     print(f"[FIN_AI] multi-turn REPL (topic={topic!r}, sid={sid[:8]}...)")
     print("[FIN_AI] /quit 退出；每轮前会显示剩余配额")
     turn = 0
-    while True:
-        try:
-            q = input(f"turn {turn + 1} >> ").strip()
-        except (EOFError, KeyboardInterrupt):
-            print()
-            break
-        if not q:
-            continue
-        if q in ("/quit", "/exit", "/q"):
-            break
-        turn += 1
+    try:
+        while True:
+            try:
+                q = input(f"turn {turn + 1} >> ").strip()
+            except (EOFError, KeyboardInterrupt):
+                print()
+                break
+            if not q:
+                continue
+            if q in ("/quit", "/exit", "/q"):
+                break
+            turn += 1
 
-        status = pre_check(client)
-        if status and status.exceeded:
-            print(f"[FIN_AI ERROR] 配额已耗尽，明天再试", file=sys.stderr)
-            break
-        if status:
-            print(f"[quota: {status.remaining}/{status.limit}]", file=sys.stderr)
+            status = pre_check(client)
+            if status and status.exceeded:
+                print(f"[FIN_AI ERROR] 配额已耗尽，明天再试", file=sys.stderr)
+                break
+            if status:
+                print(f"[quota: {status.remaining}/{status.limit}]", file=sys.stderr)
 
-        try:
-            result = client.chat(q, conversation_sid=sid)
-            print(result.content)
-            print(f"[SID: {result.session_id}]", file=sys.stderr)
-        except FinAIError as e:
-            print(f"[ERROR] {e}", file=sys.stderr)
-            continue
-
-    print("[FIN_AI] session ended")
+            try:
+                result = client.chat(q, conversation_sid=sid)
+                print(result.content)
+                print(f"[SID: {result.session_id}]", file=sys.stderr)
+            except FinAIError as e:
+                print(f"[ERROR] {e}", file=sys.stderr)
+                continue
+    except KeyboardInterrupt:
+        print("\n[FIN_AI] interrupted")
+    finally:
+        print("[FIN_AI] session ended")
     return 0
 
 
 def _cmd_quota():
     cfg = Config.load()
-    client = FinAIClient(cfg)
-    status = pre_check(client)
+    with FinAIClient(cfg) as client:
+        status = pre_check(client)
     if status is None:
         print("[FIN_AI] limit 接口不可用，无法预检")
         return 0
