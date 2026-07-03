@@ -95,14 +95,51 @@ def test_clear_all(cache_dir):
 
 
 def test_clear_by_query(cache_dir):
-    """clear(query='a') 仅删匹配的。"""
+    """clear(query=...) 采用**子串匹配**（设计意图：用户输入部分关键词模糊清理）。
+
+    意图说明：'茅台' 子串会同时命中 '茅台' 和 '茅台2'，这是面向用户的友好行为，
+    避免要求用户输入完整 query 字符串。如需精确匹配应在调用方自行实现。
+    """
     for q in ("茅台", "腾讯", "茅台2"):
         k = cache.cache_key(q, "m")
         cache.put(k, {"content": q, "ts": "2026-07-03T10:00:00+08:00",
                       "query": q})
     cleared = cache.clear(query="茅台")
-    assert cleared == 2  # "茅台" 和 "茅台2" 都匹配
+    assert cleared == 2  # "茅台" 和 "茅台2" 都匹配（子串语义）
     assert len(list(cache_dir.iterdir())) == 1
+
+
+def test_clear_all_also_removes_tmp_residual(cache_dir):
+    """clear(all=True) 顺手清理孤儿 .json.tmp 残留。
+
+    模拟场景：上次进程崩溃在 put() 的 write_text 之后、os.replace 之前，
+    留下 .json.tmp 孤儿。clear(all=True) 应一并清理。
+    """
+    # 手动构造一个孤儿 .tmp（模拟崩溃残留）
+    residual = cache_dir / "deadbeef.json.tmp"
+    residual.write_text('{"incomplete": true}', encoding="utf-8")
+    # 同时放一个正常 .json
+    k = cache.cache_key("q", "m")
+    cache.put(k, {"content": "x", "ts": "2026-07-03T10:00:00+08:00"})
+    assert len(list(cache_dir.iterdir())) == 2  # 1 个 .json + 1 个 .tmp
+    cleared = cache.clear(all=True)
+    assert cleared == 1  # 仅 .json 计入返回值
+    assert len(list(cache_dir.iterdir())) == 0  # .tmp 也被清掉
+
+
+def test_put_clears_existing_tmp(cache_dir):
+    """put() 入口清理同 key 的 .tmp 残留，避免历史孤儿干扰本次写入。"""
+    key = cache.cache_key("q", "m")
+    # 手动构造同 key 的 .tmp 残留
+    tmp = cache_dir / f"{key}.json.tmp"
+    tmp.write_text('{"stale": true}', encoding="utf-8")
+    cache.put(key, {"content": "fresh", "ts": "2026-07-03T10:00:00+08:00"})
+    # put 后只剩 .json，无 .tmp
+    files = list(cache_dir.iterdir())
+    assert len(files) == 1
+    assert files[0].suffix == ".json"
+    got = cache.get(key, ttl_hours=24)
+    assert got is not None and got["content"] == "fresh"
 
 
 def test_list_recent(cache_dir):

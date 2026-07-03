@@ -54,10 +54,17 @@ def get(key: str, ttl_hours: int) -> Optional[dict]:
 
 
 def put(key: str, data: dict) -> None:
-    """原子写（先写 .tmp 再 rename）。"""
+    """原子写（先写 .tmp 再 rename）。
+
+    入口先清理可能存在的 .tmp 残留（上次进程崩溃在 write_text 之后、
+    os.replace 之前留下的孤儿）。同 key 的 .tmp 会被本次写入覆盖，
+    但显式 unlink 保证干净状态。
+    """
     _CACHE_DIR.mkdir(parents=True, exist_ok=True)
     final = _CACHE_DIR / f"{key}.json"
     tmp = _CACHE_DIR / f"{key}.json.tmp"
+    if tmp.exists():
+        tmp.unlink(missing_ok=True)
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     os.replace(tmp, final)
 
@@ -65,17 +72,23 @@ def put(key: str, data: dict) -> None:
 def clear(all: bool = False, query: str = "") -> int:
     """清缓存，返回删除条数。
 
-    - all=True：清空整个缓存目录
-    - query 非空：仅删 query 字段包含该子串的条目
+    - all=True：清空整个缓存目录（含可能残留的 .json.tmp 孤儿）
+    - query 非空：删 query 字段**包含该子串**的所有条目（模糊清理，
+      用户输入部分关键词即可命中；如需精确匹配请在调用前自行过滤）。
+      注意：子串匹配会同时命中 "茅台" 和 "茅台2" 等同类条目。
     """
     if not _CACHE_DIR.exists():
         return 0
     removed = 0
-    for path in _CACHE_DIR.glob("*.json"):
-        if all:
+    # all=True 时同时清理 .json 和可能的 .json.tmp 孤儿
+    if all:
+        for path in _CACHE_DIR.glob("*.json"):
             path.unlink()
             removed += 1
-            continue
+        for tmp in _CACHE_DIR.glob("*.json.tmp"):
+            tmp.unlink()
+        return removed
+    for path in _CACHE_DIR.glob("*.json"):
         if query:
             try:
                 data = json.loads(path.read_text(encoding="utf-8"))
