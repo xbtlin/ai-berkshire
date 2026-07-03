@@ -1,6 +1,8 @@
 """config.py 单元测试：凭证加载与 headers 生成。"""
 import os
 import textwrap
+from pathlib import Path
+
 import pytest
 
 from tools.fin_ai.config import Config, ConfigError
@@ -16,7 +18,7 @@ def test_load_from_env(monkeypatch):
     monkeypatch.setenv("FIN_AI_AUTH_TOKEN", "tok")
     monkeypatch.setenv("FIN_AI_MODEL", "m1")
     # 防止误读真实 .env
-    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", "/nonexistent")
+    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", Path("/nonexistent"))
 
     cfg = Config.load()
 
@@ -48,7 +50,7 @@ def test_load_from_dotenv(tmp_path, monkeypatch):
              "FIN_AI_AUTH_TOKEN", "FIN_AI_MODEL"):
         monkeypatch.delenv(k, raising=False)
 
-    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", str(dotenv))
+    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", dotenv)
 
     cfg = Config.load()
 
@@ -57,12 +59,34 @@ def test_load_from_dotenv(tmp_path, monkeypatch):
     assert cfg.model == "dm"
 
 
+def test_dotenv_value_with_equals_sign(tmp_path, monkeypatch):
+    """token 含 = 时（如 JWT/Base64）能正确解析，包括加引号的情况。"""
+    dotenv = tmp_path / ".env"
+    dotenv.write_text(
+        'FIN_AI_AUTH_TOKEN="abc=def==ghi"\n'
+        'FIN_AI_BASE_URL=http://x\n'
+        'FIN_AI_UID=u\n'
+        'FIN_AI_TENANT_ID=t\n'
+        'FIN_AI_PRODUCT_CODE=p\n'
+        'FIN_AI_CLIENT_CATEGORY=c\n'
+        'FIN_AI_MODEL=m\n'
+    )
+    for k in ("FIN_AI_BASE_URL", "FIN_AI_UID", "FIN_AI_TENANT_ID",
+             "FIN_AI_PRODUCT_CODE", "FIN_AI_CLIENT_CATEGORY",
+             "FIN_AI_AUTH_TOKEN", "FIN_AI_MODEL"):
+        monkeypatch.delenv(k, raising=False)
+    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", dotenv)
+
+    cfg = Config.load()
+    assert cfg.auth_token == "abc=def==ghi"  # 不含引号，含等号
+
+
 def test_env_takes_priority_over_dotenv(tmp_path, monkeypatch):
     """环境变量优先于 .env 文件。"""
     dotenv = tmp_path / ".env"
     dotenv.write_text("FIN_AI_UID=fromfile")
     monkeypatch.setenv("FIN_AI_UID", "fromenv")
-    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", str(dotenv))
+    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", dotenv)
     # 其他字段用 env 补齐
     for k, v in [("FIN_AI_BASE_URL", "u"), ("FIN_AI_TENANT_ID", "t"),
                  ("FIN_AI_PRODUCT_CODE", "p"), ("FIN_AI_CLIENT_CATEGORY", "c"),
@@ -79,7 +103,7 @@ def test_missing_credential_raises(monkeypatch):
              "FIN_AI_PRODUCT_CODE", "FIN_AI_CLIENT_CATEGORY",
              "FIN_AI_AUTH_TOKEN", "FIN_AI_MODEL"):
         monkeypatch.delenv(k, raising=False)
-    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", "/nonexistent")
+    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", Path("/nonexistent"))
 
     with pytest.raises(ConfigError) as exc:
         Config.load()
@@ -96,7 +120,7 @@ def test_headers_format(monkeypatch):
     monkeypatch.setenv("FIN_AI_CLIENT_CATEGORY", "c")
     monkeypatch.setenv("FIN_AI_AUTH_TOKEN", "abc123")
     monkeypatch.setenv("FIN_AI_MODEL", "m")
-    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", "/nonexistent")
+    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", Path("/nonexistent"))
 
     cfg = Config.load()
     h = cfg.headers()

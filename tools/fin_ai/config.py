@@ -6,6 +6,7 @@
 import os
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Optional
 
 
 _DOTENV_PATH = Path(__file__).resolve().parents[2] / ".env"
@@ -66,18 +67,22 @@ class Config:
         }
 
 
-def _load_dotenv() -> dict:
-    """简单解析 .env 文件，不支持引号/嵌套变量。"""
-    path = Path(_DOTENV_PATH)
-    if not path.exists():
+def _load_dotenv(path: Optional[Path] = None) -> dict:
+    """简单解析 .env 文件，支持引号包裹的值（含 =）。"""
+    dotenv_path = path if path is not None else _DOTENV_PATH
+    if not dotenv_path.exists():
         return {}
     result = {}
-    for line in path.read_text(encoding="utf-8").splitlines():
+    for line in dotenv_path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if not line or line.startswith("#"):
             continue
         if "=" not in line:
             continue
         k, _, v = line.partition("=")
-        result[k.strip()] = v.strip()
+        v = v.strip()
+        # strip 一对首尾引号（双引号或单引号），保留中间字符
+        if len(v) >= 2 and v[0] == v[-1] and v[0] in ('"', "'"):
+            v = v[1:-1]
+        result[k.strip()] = v
     return result
