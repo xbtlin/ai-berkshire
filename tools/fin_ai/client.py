@@ -1,4 +1,4 @@
-"""HTTP + SSE 客户端：封装 /openai/chat，处理增量拼接、错误码、断线重连。
+"""HTTP + SSE 客户端：封装 /openai/chat，处理增量拼接、错误码、网络重试。
 
 外部 API:
     FinAIClient(config, transport=None, retry_delay=2)
@@ -7,12 +7,15 @@
 错误处理见 spec §5.1。
 """
 import json
+import logging
 import time
 import uuid
 from dataclasses import dataclass, field
 from typing import Callable, Optional
 
 import httpx
+
+_logger = logging.getLogger(__name__)
 
 
 class FinAIError(Exception):
@@ -44,6 +47,12 @@ class FinAIClient:
         # transport 用于测试 mock；生产传 None 走默认
         self._client = httpx.Client(timeout=120.0, transport=transport)
 
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *args):
+        self.close()
+
     def chat(
         self,
         query: str,
@@ -67,14 +76,18 @@ class FinAIClient:
                     raise  # 凭证/路径错误不重试
                 last_exc = e
                 if attempt == 1:
-                    print(f"[RETRY] HTTP {e.response.status_code}")
+                    _logger.warning("[RETRY] HTTP %s", e.response.status_code)
+                    # 注：固定间隔，无指数退避。生产场景如需 backoff，可扩展 retry_delay 为 callable。
+                    # 测试时通过 retry_delay=0 跳过等待。
                     time.sleep(self.retry_delay)
                     continue
                 raise
             except (httpx.ConnectError, httpx.TimeoutException) as e:
                 last_exc = e
                 if attempt == 1:
-                    print(f"[RETRY] {type(e).__name__}")
+                    _logger.warning("[RETRY] %s", type(e).__name__)
+                    # 注：固定间隔，无指数退避。生产场景如需 backoff，可扩展 retry_delay 为 callable。
+                    # 测试时通过 retry_delay=0 跳过等待。
                     time.sleep(self.retry_delay)
                     continue
                 raise
@@ -127,6 +140,7 @@ class FinAIClient:
                     continue
                 raw_events.append({"event": current_event, "data": data})
                 if "errorCode" in data:
+                    stream.read()  # 消费剩余 body，避免 keep-alive 告警
                     raise FinAIError(data["errorCode"], data.get("errorMsg", ""))
                 if current_event == "response.output_text.delta":
                     delta = data.get("delta", "")

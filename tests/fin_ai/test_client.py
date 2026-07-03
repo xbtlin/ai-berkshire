@@ -64,9 +64,9 @@ def test_normal_stream(fake_config):
         }),
     ]
     transport = _mock_transport(events)
-    client = FinAIClient(fake_config, transport=transport)
-    chunks = []
-    result = client.chat("你好", on_delta=chunks.append)
+    with FinAIClient(fake_config, transport=transport) as client:
+        chunks = []
+        result = client.chat("你好", on_delta=chunks.append)
 
     assert isinstance(result, ChatResult)
     assert result.content == "你好"
@@ -82,8 +82,8 @@ def test_stop_marker_terminates(fake_config):
         ("response.completed", {"response": {"usage": {"total_tokens": 1}}}),
     ]
     transport = _mock_transport(events)
-    client = FinAIClient(fake_config, transport=transport)
-    result = client.chat("问")
+    with FinAIClient(fake_config, transport=transport) as client:
+        result = client.chat("问")
     assert result.content == "答"
 
 
@@ -93,9 +93,9 @@ def test_daily_limit_exceeded(fake_config):
         ("error", {"errorCode": "daily_limit_exceeded", "errorMsg": "当日次数已达上限"}),
     ]
     transport = _mock_transport(events)
-    client = FinAIClient(fake_config, transport=transport)
-    with pytest.raises(FinAIError) as exc:
-        client.chat("问")
+    with FinAIClient(fake_config, transport=transport) as client:
+        with pytest.raises(FinAIError) as exc:
+            client.chat("问")
     assert "daily_limit_exceeded" in str(exc.value)
 
 
@@ -105,9 +105,9 @@ def test_reconnect_expired_no_retry(fake_config):
         ("error", {"errorCode": "reconnect_expired", "errorMsg": "会话不存在"}),
     ]
     transport = _mock_transport(events)
-    client = FinAIClient(fake_config, transport=transport)
-    with pytest.raises(FinAIError) as exc:
-        client.chat("问")
+    with FinAIClient(fake_config, transport=transport) as client:
+        with pytest.raises(FinAIError) as exc:
+            client.chat("问")
     assert "reconnect_expired" in str(exc.value)
 
 
@@ -119,8 +119,8 @@ def test_unknown_event_skipped(fake_config):
         ("response.completed", {"response": {"usage": {"total_tokens": 1}}}),
     ]
     transport = _mock_transport(events)
-    client = FinAIClient(fake_config, transport=transport)
-    result = client.chat("问")
+    with FinAIClient(fake_config, transport=transport) as client:
+        result = client.chat("问")
     assert result.content == "正常"
 
 
@@ -130,8 +130,8 @@ def test_conversation_sid_auto_generated(fake_config):
         ("response.completed", {"response": {"usage": {"total_tokens": 1}}}),
     ]
     transport = _mock_transport(events)
-    client = FinAIClient(fake_config, transport=transport)
-    result = client.chat("问")
+    with FinAIClient(fake_config, transport=transport) as client:
+        result = client.chat("问")
     assert result.conversation_sid  # 非空
     assert len(result.conversation_sid) == 36  # uuid4 长度
 
@@ -142,8 +142,8 @@ def test_conversation_sid_reused(fake_config):
         ("response.completed", {"response": {"usage": {"total_tokens": 1}}}),
     ]
     transport = _mock_transport(events)
-    client = FinAIClient(fake_config, transport=transport)
-    result = client.chat("问", conversation_sid="my-fixed-sid")
+    with FinAIClient(fake_config, transport=transport) as client:
+        result = client.chat("问", conversation_sid="my-fixed-sid")
     assert result.conversation_sid == "my-fixed-sid"
 
 
@@ -164,7 +164,30 @@ def test_network_error_retry_then_success(fake_config):
                               content=body)
 
     transport = httpx.MockTransport(handler)
-    client = FinAIClient(fake_config, transport=transport, retry_delay=0)
-    result = client.chat("问")
+    with FinAIClient(fake_config, transport=transport, retry_delay=0) as client:
+        result = client.chat("问")
+    assert call_count["n"] == 2
+    assert isinstance(result, ChatResult)
+
+
+def test_5xx_retry_then_success(fake_config):
+    """HTTP 5xx 首次失败，重试 1 次成功。"""
+    events = [
+        ("response.completed", {"response": {"usage": {"total_tokens": 1}}}),
+    ]
+    body = "\n".join(_sse_lines(events)).encode("utf-8")
+
+    call_count = {"n": 0}
+
+    def handler(request):
+        call_count["n"] += 1
+        if call_count["n"] == 1:
+            return httpx.Response(503, content="service unavailable")
+        return httpx.Response(200, headers={"Content-Type": "text/event-stream"},
+                              content=body)
+
+    transport = httpx.MockTransport(handler)
+    with FinAIClient(fake_config, transport=transport, retry_delay=0) as client:
+        result = client.chat("问")
     assert call_count["n"] == 2
     assert isinstance(result, ChatResult)
