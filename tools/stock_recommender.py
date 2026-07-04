@@ -111,7 +111,12 @@ def fetch_financials(code: str, years: int = 3) -> dict:
     只取年报，按日期降序。
     """
     code = code.strip().replace(".SH", "").replace(".SZ", "").replace(".BJ", "")
-    market = "SH" if code.startswith(("6", "9", "5")) else "SZ"
+    if code.startswith(("6", "9", "5")):
+        market = "SH"
+    elif code.startswith(("4", "8")):
+        market = "BJ"
+    else:
+        market = "SZ"
     url = "https://datacenter.eastmoney.com/securities/api/data/get"
     params = {
         "type": "RPT_F10_FINANCE_MAINFINADATA",
