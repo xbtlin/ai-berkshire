@@ -1,6 +1,7 @@
 """stock_recommender 的 unit test。"""
 
 import sys
+import tempfile
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -290,3 +291,145 @@ def test_generate_report_fin_ai_失败时含warning():
         thresholds={"min_dividend": 4.0, "max_pe": 15.0, "min_roe": 12.0, "max_roe_stddev": 5.0},
     )
     assert "⚠️" in md or "warning" in md.lower() or "配额不足" in md
+
+
+# ---------------------------------------------------------------------------
+# run_stable 主流程：错误降级 / 短路 / 返回码
+#
+# 说明：spec §10 禁止 mock 外部 HTTP。这里用 monkeypatch 替换 run_stable 内部
+# 调用的函数（load_index_constituents / fetch_quote / fetch_financials /
+# fetch_dividends / ask_fin_ai_opinion），测的是 run_stable 自身的控制流
+# （返回码、短路、降级、跳过），不是外部 API 行为。合规。
+# ---------------------------------------------------------------------------
+
+from tools.stock_recommender import run_stable
+
+
+def test_run_stable_dry_run_prints_no_write(monkeypatch, capsys, tmp_path):
+    """dry-run 模式仅打印不写文件。"""
+    monkeypatch.setattr("tools.stock_recommender.load_index_constituents", lambda: ["600036"])
+    monkeypatch.setattr("tools.stock_recommender.fetch_quote", lambda c: {"name": "招行", "code": c, "price": "36.0", "pe": "7.0"})
+    monkeypatch.setattr("tools.stock_recommender.fetch_financials", lambda c, years=3: {"roe_history": [16.0, 16.2, 15.8]})
+    monkeypatch.setattr("tools.stock_recommender.fetch_dividends", lambda c: {"dividend_per_10_ttm": 19.0, "raw_records": []})
+    monkeypatch.setattr("tools.stock_recommender.ask_fin_ai_opinion", lambda cands: {"summary": "", "warnings": {}, "ok": True, "error": ""})
+    monkeypatch.setattr("tools.stock_recommender.REPORTS_DIR", tmp_path)
+
+    exit_code = run_stable(
+        today="20260704", date_iso="2026-07-04",
+        top_n=5, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0,
+        dry_run=True, force=False,
+    )
+    assert exit_code == 0
+    # dry-run 不写文件
+    assert not (tmp_path / "stable-20260704.md").exists()
+    # stdout 含报告内容
+    captured = capsys.readouterr()
+    assert "# 稳定收益推荐" in captured.out
+
+
+def test_run_stable_writes_report_when_not_dry_run(monkeypatch, tmp_path):
+    """非 dry-run 模式正常写报告。"""
+    monkeypatch.setattr("tools.stock_recommender.load_index_constituents", lambda: ["600036"])
+    monkeypatch.setattr("tools.stock_recommender.fetch_quote", lambda c: {"name": "招行", "code": c, "price": "36.0", "pe": "7.0"})
+    monkeypatch.setattr("tools.stock_recommender.fetch_financials", lambda c, years=3: {"roe_history": [16.0, 16.2, 15.8]})
+    monkeypatch.setattr("tools.stock_recommender.fetch_dividends", lambda c: {"dividend_per_10_ttm": 19.0, "raw_records": []})
+    monkeypatch.setattr("tools.stock_recommender.ask_fin_ai_opinion", lambda cands: {"summary": "", "warnings": {}, "ok": True, "error": ""})
+    monkeypatch.setattr("tools.stock_recommender.REPORTS_DIR", tmp_path)
+
+    exit_code = run_stable(
+        today="20260704", date_iso="2026-07-04",
+        top_n=5, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0,
+        dry_run=False, force=False,
+    )
+    assert exit_code == 0
+    report = tmp_path / "stable-20260704.md"
+    assert report.exists()
+    content = report.read_text(encoding="utf-8")
+    assert "招行" in content
+    assert "## Top 推荐" in content
+
+
+def test_run_stable_existing_no_force_returns_1(monkeypatch, tmp_path):
+    """报告已存在且无 --force 时返回 1。"""
+    monkeypatch.setattr("tools.stock_recommender.load_index_constituents", lambda: ["600036"])
+    monkeypatch.setattr("tools.stock_recommender.fetch_quote", lambda c: {"name": "招行", "code": c, "price": "36.0", "pe": "7.0"})
+    monkeypatch.setattr("tools.stock_recommender.fetch_financials", lambda c, years=3: {"roe_history": [16.0, 16.2, 15.8]})
+    monkeypatch.setattr("tools.stock_recommender.fetch_dividends", lambda c: {"dividend_per_10_ttm": 19.0, "raw_records": []})
+    monkeypatch.setattr("tools.stock_recommender.ask_fin_ai_opinion", lambda cands: {"summary": "", "warnings": {}, "ok": True, "error": ""})
+    monkeypatch.setattr("tools.stock_recommender.REPORTS_DIR", tmp_path)
+
+    # 预先创建一个文件
+    (tmp_path / "stable-20260704.md").write_text("old content", encoding="utf-8")
+
+    exit_code = run_stable(
+        today="20260704", date_iso="2026-07-04",
+        top_n=5, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0,
+        dry_run=False, force=False,
+    )
+    assert exit_code == 1
+    # 文件未被覆盖
+    assert (tmp_path / "stable-20260704.md").read_text(encoding="utf-8") == "old content"
+
+
+def test_run_stable_constituents_load_failure_returns_1(monkeypatch, capsys):
+    """成分股加载失败时返回 1。"""
+    def _raise():
+        raise FileNotFoundError("找不到 index_constituents.json")
+    monkeypatch.setattr("tools.stock_recommender.load_index_constituents", _raise)
+
+    exit_code = run_stable(
+        today="20260704", date_iso="2026-07-04",
+        top_n=5, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0,
+        dry_run=False, force=False,
+    )
+    assert exit_code == 1
+    captured = capsys.readouterr()
+    assert "成分股加载失败" in captured.err
+
+
+def test_run_stable_single_stock_failure_skipped(monkeypatch, capsys, tmp_path):
+    """单股 fetch 失败时跳过，不影响其他股。"""
+    monkeypatch.setattr("tools.stock_recommender.load_index_constituents", lambda: ["600036", "601398"])
+    # 第一只股 fetch_quote 抛错，第二只正常
+    def _fetch_quote(code):
+        if code == "600036":
+            raise ConnectionError("招行 fetch 失败")
+        return {"name": "工行", "code": code, "price": "5.0", "pe": "5.5"}
+    monkeypatch.setattr("tools.stock_recommender.fetch_quote", _fetch_quote)
+    monkeypatch.setattr("tools.stock_recommender.fetch_financials", lambda c, years=3: {"roe_history": [12.5, 12.8, 12.2]})
+    monkeypatch.setattr("tools.stock_recommender.fetch_dividends", lambda c: {"dividend_per_10_ttm": 3.0, "raw_records": []})
+    monkeypatch.setattr("tools.stock_recommender.ask_fin_ai_opinion", lambda cands: {"summary": "", "warnings": {}, "ok": True, "error": ""})
+    monkeypatch.setattr("tools.stock_recommender.REPORTS_DIR", tmp_path)
+
+    exit_code = run_stable(
+        today="20260704", date_iso="2026-07-04",
+        top_n=5, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0,
+        dry_run=False, force=False,
+    )
+    assert exit_code == 0
+    captured = capsys.readouterr()
+    # 第一只股跳过警告（含「跳过」或 ⚠️）
+    assert "跳过" in captured.err or "⚠️" in captured.err
+    # 报告生成（第二只股的工行可能进备选或剔除，但报告应存在）
+    assert (tmp_path / "stable-20260704.md").exists()
+
+
+def test_run_stable_fin_ai_failure_degrades(monkeypatch, tmp_path):
+    """fin_ai 失败时降级，报告顶部含 warning。"""
+    monkeypatch.setattr("tools.stock_recommender.load_index_constituents", lambda: ["600036"])
+    monkeypatch.setattr("tools.stock_recommender.fetch_quote", lambda c: {"name": "招行", "code": c, "price": "36.0", "pe": "7.0"})
+    monkeypatch.setattr("tools.stock_recommender.fetch_financials", lambda c, years=3: {"roe_history": [16.0, 16.2, 15.8]})
+    monkeypatch.setattr("tools.stock_recommender.fetch_dividends", lambda c: {"dividend_per_10_ttm": 19.0, "raw_records": []})
+    monkeypatch.setattr("tools.stock_recommender.ask_fin_ai_opinion", lambda cands: {
+        "summary": "", "warnings": {}, "ok": False, "error": "fin_ai 配额不足（剩余 0/80）"
+    })
+    monkeypatch.setattr("tools.stock_recommender.REPORTS_DIR", tmp_path)
+
+    exit_code = run_stable(
+        today="20260704", date_iso="2026-07-04",
+        top_n=5, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0,
+        dry_run=False, force=False,
+    )
+    assert exit_code == 0  # fin_ai 失败不阻塞
+    content = (tmp_path / "stable-20260704.md").read_text(encoding="utf-8")
+    assert "⚠️" in content or "配额不足" in content
