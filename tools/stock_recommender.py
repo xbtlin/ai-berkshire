@@ -26,6 +26,25 @@ REPORTS_DIR = REPO_ROOT / "reports" / "股票推荐"
 INDEX_FILE = DATA_DIR / "index_constituents.json"
 
 
+def load_index_constituents():
+    """加载中证红利 + 上证 50 成分股，返回去重后的 6 位代码列表。
+
+    数据源：data/index_constituents.json（本地基线）。
+    失败时抛异常，由 main() 统一处理。
+    """
+    with open(INDEX_FILE, encoding="utf-8") as f:
+        data = json.load(f)
+    seen = set()
+    codes = []
+    for key in ("csi_dividend", "sse_50"):
+        for entry in data.get(key, []):
+            code = entry["code"].strip()
+            if code and code not in seen:
+                seen.add(code)
+                codes.append(code)
+    return codes
+
+
 def main():
     parser = argparse.ArgumentParser(description="A 股股票推荐 CLI")
     sub = parser.add_subparsers(dest="mode", required=True)
