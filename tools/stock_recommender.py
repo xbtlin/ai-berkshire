@@ -316,6 +316,118 @@ def ask_fin_ai_opinion(candidates: list) -> dict:
                 "error": f"fin_ai 调用失败: {e}"}
 
 
+def _fmt_table_row(cells):
+    return "| " + " | ".join(str(c) for c in cells) + " |"
+
+
+def generate_report(
+    today: str,
+    strong: list,
+    weak: list,
+    fin_ai_opinion: dict,
+    scanned_count: int,
+    thresholds: dict,
+) -> str:
+    """生成稳定收益推荐 Markdown 报告。"""
+    lines = []
+    lines.append(f"# 稳定收益推荐 — {today}")
+    lines.append("")
+    lines.append("> 本报告由 `tools/stock_recommender.py stable` 自动生成。仅供参考，不构成投资建议。")
+    lines.append("")
+
+    # fin_ai 失败 warning
+    if not fin_ai_opinion["ok"]:
+        lines.append(f"> ⚠️ **fin_ai 观点层降级**：{fin_ai_opinion['error']}")
+        lines.append(">")
+        lines.append("> 本期仅含硬指标分析，建议次日重跑或单独调 fin_ai 补充观点。")
+        lines.append("")
+
+    # 总结
+    lines.append("## 总结")
+    lines.append("")
+    lines.append(f"- 扫描范围：中证红利 + 上证 50 成分股（共 {scanned_count} 只）")
+    lines.append(f"- 筛选阈值：股息率 ≥ {thresholds['min_dividend']}% | PE ≤ {thresholds['max_pe']} | "
+                 f"ROE 均值 ≥ {thresholds['min_roe']}% | ROE 标准差 < {thresholds['max_roe_stddev']}pp")
+    lines.append(f"- 强烈推荐：{len(strong)} 只 | 备选：{len(weak)} 只")
+    lines.append("")
+
+    # Top 推荐
+    lines.append("## Top 推荐（4 分）")
+    lines.append("")
+    if strong:
+        lines.append(_fmt_table_row(["代码", "名称", "股息率%", "PE", "ROE 均值%", "ROE 标准差pp"]))
+        lines.append(_fmt_table_row(["---", "---", "---", "---", "---", "---"]))
+        for s in strong:
+            roe_history = s.get("roe_history", [])
+            stddev = stdev(roe_history) if len(roe_history) >= 2 else 0
+            lines.append(_fmt_table_row([
+                s["code"], s.get("name", ""),
+                f"{s.get('dividend_yield', 0):.2f}",
+                s.get("pe", "-"),
+                f"{s.get('roe_mean', 0):.2f}",
+                f"{stddev:.2f}",
+            ]))
+    else:
+        lines.append("_本期无 4 分强推荐_")
+    lines.append("")
+
+    # 备选
+    lines.append("## 备选（3 分）")
+    lines.append("")
+    if weak:
+        lines.append(_fmt_table_row(["代码", "名称", "股息率%", "PE", "ROE 均值%", "ROE 标准差pp"]))
+        lines.append(_fmt_table_row(["---", "---", "---", "---", "---", "---"]))
+        for s in weak:
+            roe_history = s.get("roe_history", [])
+            stddev = stdev(roe_history) if len(roe_history) >= 2 else 0
+            lines.append(_fmt_table_row([
+                s["code"], s.get("name", ""),
+                f"{s.get('dividend_yield', 0):.2f}",
+                s.get("pe", "-"),
+                f"{s.get('roe_mean', 0):.2f}",
+                f"{stddev:.2f}",
+            ]))
+    else:
+        lines.append("_本期无 3 分备选_")
+    lines.append("")
+
+    # fin_ai 观点层
+    lines.append("## fin_ai 观点层")
+    lines.append("")
+    if fin_ai_opinion["ok"] and fin_ai_opinion["summary"]:
+        lines.append(fin_ai_opinion["summary"])
+    else:
+        lines.append("_观点层未启用（见顶部 warning）_")
+    lines.append("")
+
+    # 方法论
+    lines.append("## 方法论")
+    lines.append("")
+    lines.append("**4 维硬指标打分（4 分制）**：")
+    lines.append("")
+    lines.append(f"- 股息率（TTM）≥ {thresholds['min_dividend']}% — 1 分")
+    lines.append(f"- PE（动）≤ {thresholds['max_pe']} — 1 分")
+    lines.append(f"- ROE 近 3 年均值 ≥ {thresholds['min_roe']}% — 1 分")
+    lines.append(f"- ROE 近 3 年标准差 < {thresholds['max_roe_stddev']}pp — 1 分")
+    lines.append("")
+    lines.append("**推荐阈值**：4 分=强烈推荐 | 3 分=备选 | < 3 分=剔除。同分按股息率降序。")
+    lines.append("")
+
+    # 数据来源
+    lines.append("## 数据来源")
+    lines.append("")
+    lines.append("- 成分股基线：`data/index_constituents.json`（每年 6 月指数调整后手动更新）")
+    lines.append("- 行情 PE/PB/价格：腾讯行情 `qt.gtimg.cn`")
+    lines.append("- 财务 ROE：东方财富 datacenter `RPT_F10_FINANCE_MAINFINADATA`")
+    lines.append("- 分红派息：东方财富 datacenter `RPT_SHAREBONUS_DET`")
+    lines.append("- 观点层：`tools/fin_ai`（gangtise-reason，每天 80 次配额）")
+    lines.append("")
+    lines.append("---")
+    lines.append("_本报告仅供学习研究，不构成投资建议。_")
+
+    return "\n".join(lines)
+
+
 def load_index_constituents():
     """加载中证红利 + 上证 50 成分股，返回去重后的 6 位代码列表。
 

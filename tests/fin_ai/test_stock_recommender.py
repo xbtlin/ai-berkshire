@@ -237,3 +237,56 @@ def test_sort_and_filter_top_n_截断():
     assert len(strong) == 2
     assert [x["code"] for x in strong] == ["A", "B"]
     assert weak == []
+
+
+from tools.stock_recommender import generate_report
+
+
+def test_generate_report_含必要章节():
+    """生成的 Markdown 含：标题 / 总结 / Top 推荐 / 备选 / fin_ai 观点层 / 方法论 / 数据来源。"""
+    today = "2026-07-04"
+    strong = [{
+        "code": "600036", "name": "招商银行", "score": 4,
+        "dividend_yield": 5.2, "pe": 7.0, "roe_mean": 16.0,
+        "roe_history": [16.0, 16.2, 15.8],
+    }]
+    weak = [{
+        "code": "601398", "name": "工商银行", "score": 3,
+        "dividend_yield": 6.0, "pe": 5.5, "roe_mean": 12.5,
+        "roe_history": [12.5, 12.8, 12.2],
+    }]
+    fin_ai_opinion = {"summary": "招行强烈推荐，工行警示不良贷款风险",
+                      "warnings": {}, "ok": True, "error": ""}
+    md = generate_report(
+        today=today,
+        strong=strong,
+        weak=weak,
+        fin_ai_opinion=fin_ai_opinion,
+        scanned_count=80,
+        thresholds={"min_dividend": 4.0, "max_pe": 15.0, "min_roe": 12.0, "max_roe_stddev": 5.0},
+    )
+    # 必须含的章节标题
+    assert "# 稳定收益推荐" in md
+    assert "## 总结" in md
+    assert "## Top 推荐" in md
+    assert "## 备选" in md
+    assert "## fin_ai 观点层" in md
+    assert "## 方法论" in md
+    assert "## 数据来源" in md
+    # 必须含的关键内容
+    assert "2026-07-04" in md
+    assert "招商银行" in md
+    assert "工商银行" in md
+    assert "扫描范围" in md  # 扫描数量
+
+
+def test_generate_report_fin_ai_失败时含warning():
+    """fin_ai 失败时报告顶部含 warning。"""
+    fin_ai_opinion = {"summary": "", "warnings": {}, "ok": False,
+                      "error": "配额不足（剩余 0/80）"}
+    md = generate_report(
+        today="2026-07-04", strong=[], weak=[],
+        fin_ai_opinion=fin_ai_opinion, scanned_count=80,
+        thresholds={"min_dividend": 4.0, "max_pe": 15.0, "min_roe": 12.0, "max_roe_stddev": 5.0},
+    )
+    assert "⚠️" in md or "warning" in md.lower() or "配额不足" in md
