@@ -12,6 +12,7 @@
 
 import argparse
 import json
+import os
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -19,6 +20,22 @@ from urllib.request import Request, urlopen
 from urllib.parse import urlencode
 from decimal import Decimal, getcontext
 from statistics import stdev
+
+# Windows 控制台默认 GBK 编码无法输出 emoji（⚠️✅❌），强制 UTF-8。
+# 必须在脚本顶部执行，早于任何 print。
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        # Python < 3.7 或重定向到文件时 reconfigure 可能失败，降级（写文件已用 utf-8）
+        pass
+
+# 让 `python tools/stock_recommender.py` 能 import tools.fin_ai
+# （直接运行脚本时 sys.path[0]=tools/，找不到 tools 包）
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
