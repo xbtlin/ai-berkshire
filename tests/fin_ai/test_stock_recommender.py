@@ -127,3 +127,77 @@ def test_calc_dividend_yield_标准():
 def test_calc_dividend_yield_零价格():
     """价格为 0 时返回 0（防除零）。"""
     assert calc_dividend_yield(dividend_per_10_ttm=5.0, price=0) == 0.0
+
+
+from tools.stock_recommender import score_stable
+
+
+def _fund(dividend_yield, pe, roe_history):
+    """构造 score_stable 输入的工厂函数。"""
+    return {
+        "dividend_yield": dividend_yield,
+        "pe": pe,
+        "roe_history": roe_history,
+    }
+
+
+def test_score_stable_满分():
+    """4 项全过 → 4 分。"""
+    fund = _fund(dividend_yield=5.0, pe=10, roe_history=[14.0, 14.5, 13.8])
+    result = score_stable(fund, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0)
+    assert result["score"] == 4
+    assert result["details"]["dividend_yield"] is True
+    assert result["details"]["pe"] is True
+    assert result["details"]["roe_mean"] is True
+    assert result["details"]["roe_stable"] is True
+
+
+def test_score_stable_股息率不达标():
+    """股息率 3% < 4% → 该维 0 分。"""
+    fund = _fund(dividend_yield=3.0, pe=10, roe_history=[14.0, 14.5, 13.8])
+    result = score_stable(fund, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0)
+    assert result["score"] == 3
+    assert result["details"]["dividend_yield"] is False
+    assert result["details"]["pe"] is True
+
+
+def test_score_stable_PE过高():
+    """PE 30 > 15 → 该维 0 分。"""
+    fund = _fund(dividend_yield=5.0, pe=30, roe_history=[14.0, 14.5, 13.8])
+    result = score_stable(fund, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0)
+    assert result["score"] == 3
+    assert result["details"]["pe"] is False
+
+
+def test_score_stable_ROE低():
+    """ROE 8% < 12% → 该维 0 分。"""
+    fund = _fund(dividend_yield=5.0, pe=10, roe_history=[8.0, 8.5, 7.8])
+    result = score_stable(fund, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0)
+    assert result["score"] == 3
+    assert result["details"]["roe_mean"] is False
+
+
+def test_score_stable_ROE波动大():
+    """ROE 序列 [8%, 15%, 22%]，stddev 7pp > 5pp → 稳定性 0 分。"""
+    fund = _fund(dividend_yield=5.0, pe=10, roe_history=[8.0, 15.0, 22.0])
+    result = score_stable(fund, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0)
+    assert result["score"] == 3
+    assert result["details"]["roe_stable"] is False
+
+
+def test_score_stable_招行样本():
+    """招行（股息 5.2%, PE 7, ROE 16%, stddev 0.8pp）→ 4 分。"""
+    fund = _fund(dividend_yield=5.2, pe=7, roe_history=[16.0, 16.2, 15.8])
+    result = score_stable(fund, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0)
+    assert result["score"] == 4
+
+
+def test_score_stable_茅台样本():
+    """茅台（股息 1%, PE 30, ROE 30%, stddev 1.2pp）→ 股息 0 + PE 0 + ROE 1 + 稳定 1 = 2 分。"""
+    fund = _fund(dividend_yield=1.0, pe=30, roe_history=[30.0, 30.5, 29.8])
+    result = score_stable(fund, min_dividend=4.0, max_pe=15.0, min_roe=12.0, max_roe_stddev=5.0)
+    assert result["score"] == 2
+    assert result["details"]["dividend_yield"] is False
+    assert result["details"]["pe"] is False
+    assert result["details"]["roe_mean"] is True
+    assert result["details"]["roe_stable"] is True

@@ -204,6 +204,42 @@ def fetch_dividends(code: str) -> dict:
     }
 
 
+def score_stable(
+    fund: dict,
+    min_dividend: float = 4.0,
+    max_pe: float = 15.0,
+    min_roe: float = 12.0,
+    max_roe_stddev: float = 5.0,
+) -> dict:
+    """4 维硬指标打分。
+
+    fund: {dividend_yield, pe, roe_history}
+        roe_history: 近 3 年 ROE 序列（最新在前），单位 %。
+    返回: {score: 0-4, details: {dividend_yield, pe, roe_mean, roe_stable}}
+    """
+    details = {}
+    # 1. 股息率 > 4%
+    details["dividend_yield"] = fund.get("dividend_yield", 0) >= min_dividend
+    # 2. PE < 15
+    pe = fund.get("pe")
+    details["pe"] = (pe is not None and 0 < pe <= max_pe)
+    # 3. ROE 均值 > 12%
+    roe_history = fund.get("roe_history") or []
+    if roe_history:
+        roe_mean = sum(roe_history) / len(roe_history)
+        details["roe_mean"] = roe_mean >= min_roe
+        # 4. ROE 稳定性：近 3 年 stddev < 5pp
+        if len(roe_history) >= 2:
+            details["roe_stable"] = stdev(roe_history) < max_roe_stddev
+        else:
+            details["roe_stable"] = False
+    else:
+        details["roe_mean"] = False
+        details["roe_stable"] = False
+    score = sum(1 for v in details.values() if v)
+    return {"score": score, "details": details}
+
+
 def load_index_constituents():
     """加载中证红利 + 上证 50 成分股，返回去重后的 6 位代码列表。
 
