@@ -80,14 +80,14 @@ reports/{公司名}/
 └── 最终报告.md                       — Team Lead 综合报告
 ```
 
-## Skills 全景（18 个，按场景选用）
+## Skills 全景（19 个，按场景选用）
 
 | 类别 | Skill | 用途 |
 |------|-------|------|
 | 🔬 深度研究 | `/investment-research` `/investment-team` `/management-deep-dive` `/private-company-research` `/deep-company-series` | 单公司全方位研究；多 Agent 并行最快；管理层/未上市公司/公众号级系列 |
 | 📊 财报分析 | `/earnings-review` `/earnings-team` | 一手财报精读；四大师并行 + 公众号发布 |
 | 🏭 行业筛选 | `/industry-research` `/industry-funnel` `/quality-screen` `/bottleneck-hunter` `/investment-checklist` | 产业链全景；漏斗精选；去劣筛 7 条硬指标；供应链瓶颈；买入前 6 关 |
-| 📈 持仓管理 | `/portfolio-review` `/thesis-tracker` `/news-pulse` | 组合管理；论文追踪；股价异动 10 分钟归因 |
+| 📈 持仓管理 | `/portfolio-review` `/thesis-tracker` `/news-pulse` `/stock-recommend` | 组合管理；论文追踪；股价异动 10 分钟归因；按偏好推荐 N 支候选股 |
 | 🧠 思维工具 | `/dyp-ask` `/financial-data` `/wechat-article` | 段永平问答；财务数据交叉验证规范；公众号文章三 Agent 协作 |
 
 调用示例：`/investment-research 腾讯`、`/industry-funnel AI算力`、`/news-pulse 拼多多 跌12% 一周内`。
@@ -189,6 +189,19 @@ git commit -m "添加xxx报告"
 git pull --rebase origin main
 git push origin main
 ```
+
+## /stock-recommend 推荐系统
+
+A 股稳定收益推荐：扫描中证红利 + 上证 50 成分股（约 100 只），按 4 维硬指标打分（股息率 TTM / PE / ROE 均值 / ROE 稳定性）+ fin_ai 观点层。
+
+```bash
+python tools/stock_recommender.py stable --top 5
+```
+
+- 单文件 CLI：`tools/stock_recommender.py`（约 400 行，纯 stdlib）
+- 输出：`reports/股票推荐/stable-{YYYYMMDD}.md`
+- 配额：单次跑烧 1 次 fin_ai（80/天足够）
+- 设计 spec：`docs/superpowers/specs/2026-07-04-stock-recommender-design.md`
 
 ## 注意事项
 
