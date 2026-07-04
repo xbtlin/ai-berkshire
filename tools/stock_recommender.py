@@ -450,16 +450,120 @@ def load_index_constituents():
 def main():
     parser = argparse.ArgumentParser(description="A 股股票推荐 CLI")
     sub = parser.add_subparsers(dest="mode", required=True)
-    p_stable = sub.add_parser("stable", help="稳定收益模式（高股息+低PE+稳定ROE）")
-    p_stable.add_argument("--top", type=int, default=5, help="Top N 推荐（默认 5）")
-    p_stable.add_argument("--min-dividend", type=float, default=4.0, help="股息率下限 %（默认 4.0）")
-    p_stable.add_argument("--max-pe", type=float, default=15.0, help="PE 上限（默认 15.0）")
-    p_stable.add_argument("--min-roe", type=float, default=12.0, help="ROE 下限 %（默认 12.0）")
-    p_stable.add_argument("--dry-run", action="store_true", help="仅打印不写文件")
-    p_stable.add_argument("--force", action="store_true", help="覆盖当日报告")
+    p_stable = sub.add_parser("stable", help="稳定收益模式")
+    p_stable.add_argument("--top", type=int, default=5)
+    p_stable.add_argument("--min-dividend", type=float, default=4.0)
+    p_stable.add_argument("--max-pe", type=float, default=15.0)
+    p_stable.add_argument("--min-roe", type=float, default=12.0)
+    p_stable.add_argument("--max-roe-stddev", type=float, default=5.0)
+    p_stable.add_argument("--dry-run", action="store_true")
+    p_stable.add_argument("--force", action="store_true")
     args = parser.parse_args()
-    print(f"[stub] mode={args.mode}", file=sys.stderr)
-    sys.exit(0)
+
+    today = datetime.now().strftime("%Y%m%d")
+    date_iso = datetime.now().strftime("%Y-%m-%d")
+
+    if args.mode == "stable":
+        sys.exit(run_stable(
+            today=today,
+            date_iso=date_iso,
+            top_n=args.top,
+            min_dividend=args.min_dividend,
+            max_pe=args.max_pe,
+            min_roe=args.min_roe,
+            max_roe_stddev=args.max_roe_stddev,
+            dry_run=args.dry_run,
+            force=args.force,
+        ))
+
+
+def run_stable(
+    today: str, date_iso: str,
+    top_n: int, min_dividend: float, max_pe: float,
+    min_roe: float, max_roe_stddev: float,
+    dry_run: bool, force: bool,
+) -> int:
+    """稳定收益模式主流程。返回退出码。"""
+    print(f"[1/5] 加载成分股...", file=sys.stderr)
+    try:
+        codes = load_index_constituents()
+    except Exception as e:
+        print(f"❌ 成分股加载失败: {e}", file=sys.stderr)
+        return 1
+    print(f"     共 {len(codes)} 只待扫描", file=sys.stderr)
+
+    print(f"[2/5] 拉基本面（顺序，约 5 分钟）...", file=sys.stderr)
+    scored_items = []
+    for i, code in enumerate(codes, 1):
+        try:
+            quote = fetch_quote(code)
+            fins = fetch_financials(code, years=3)
+            divs = fetch_dividends(code)
+            price = float(quote.get("price", 0))
+            pe_raw = quote.get("pe", "-")
+            pe = float(pe_raw) if pe_raw not in ("-", "", None) else None
+            div_per_10 = divs["dividend_per_10_ttm"]
+            div_yield = calc_dividend_yield(div_per_10, price)
+            roe_history = fins["roe_history"]
+            fund = {
+                "code": code,
+                "name": quote.get("name", code),
+                "price": price,
+                "pe": pe,
+                "dividend_yield": div_yield,
+                "roe_history": roe_history,
+            }
+            result = score_stable(
+                fund, min_dividend=min_dividend, max_pe=max_pe,
+                min_roe=min_roe, max_roe_stddev=max_roe_stddev,
+            )
+            fund.update({
+                "score": result["score"],
+                "details": result["details"],
+                "roe_mean": sum(roe_history) / len(roe_history) if roe_history else 0,
+            })
+            scored_items.append(fund)
+            print(f"     [{i}/{len(codes)}] {code} {fund['name']}: {fund['score']}/4 分", file=sys.stderr)
+        except Exception as e:
+            print(f"     [{i}/{len(codes)}] {code} ⚠️ 跳过 ({e})", file=sys.stderr)
+            continue
+
+    print(f"[3/5] 排序过滤...", file=sys.stderr)
+    strong, weak = sort_and_filter(scored_items, min_score=3, top_n=top_n)
+
+    print(f"[4/5] fin_ai 观点层...", file=sys.stderr)
+    candidates = strong + weak
+    opinion = ask_fin_ai_opinion(candidates) if candidates else {
+        "summary": "", "warnings": {}, "ok": True, "error": ""
+    }
+    if not opinion["ok"]:
+        print(f"     ⚠️ {opinion['error']}", file=sys.stderr)
+
+    print(f"[5/5] 生成报告...", file=sys.stderr)
+    md = generate_report(
+        today=date_iso,
+        strong=strong,
+        weak=weak,
+        fin_ai_opinion=opinion,
+        scanned_count=len(codes),
+        thresholds={
+            "min_dividend": min_dividend, "max_pe": max_pe,
+            "min_roe": min_roe, "max_roe_stddev": max_roe_stddev,
+        },
+    )
+
+    report_path = REPORTS_DIR / f"stable-{today}.md"
+    if dry_run:
+        print(md)
+        print(f"\n[dry-run] 不写文件（path={report_path}）", file=sys.stderr)
+    else:
+        if report_path.exists() and not force:
+            print(f"❌ 报告已存在：{report_path}（用 --force 覆盖）", file=sys.stderr)
+            return 1
+        REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+        report_path.write_text(md, encoding="utf-8")
+        print(f"✅ 报告已生成：{report_path}", file=sys.stderr)
+    return 0
 
 
 if __name__ == "__main__":
