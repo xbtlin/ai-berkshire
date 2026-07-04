@@ -265,6 +265,53 @@ def sort_and_filter(items: list, min_score: int = 3, top_n: int = 5):
     return strong, weak
 
 
+def ask_fin_ai_opinion(candidates: list) -> dict:
+    """调 fin_ai 批量问 top N 候选股的观点层。
+
+    candidates: [{code, name, score, dividend_yield, pe, roe_mean}]
+    返回: {summary: str, warnings: {code: str}, ok: bool, error: str}
+        失败时 ok=False，error 描述原因（配额耗尽/超时/网络）。
+    """
+    if not candidates:
+        return {"summary": "", "warnings": {}, "ok": True, "error": ""}
+    try:
+        from tools.fin_ai import ask, quota
+    except ImportError as e:
+        return {"summary": "", "warnings": {}, "ok": False,
+                "error": f"fin_ai 模块不可用: {e}"}
+
+    # 配额预检
+    try:
+        q = quota()
+        if q.exceeded or q.remaining < 1:
+            return {"summary": "", "warnings": {}, "ok": False,
+                    "error": f"fin_ai 配额不足（剩余 {q.remaining}/{q.limit}）"}
+    except Exception:
+        # 配额接口失败时容错（不阻塞）
+        pass
+
+    lines = ["请评估以下 A 股稳定收益候选股（按稳定性排序）：\n"]
+    for i, c in enumerate(candidates, 1):
+        lines.append(
+            f"{i}. {c.get('name', c['code'])} ({c['code']}) — "
+            f"股息率 {c.get('dividend_yield', 0):.2f}%, "
+            f"PE {c.get('pe', 'N/A')}, "
+            f"ROE 均值 {c.get('roe_mean', 0):.2f}%"
+        )
+    lines.append("\n请输出：")
+    lines.append("1. 按股息可持续性从高到低排序（仅代码）")
+    lines.append("2. 每只股的 1 个核心风险（一句话）")
+    lines.append("3. 强烈推荐的 top 3 + 应警惕的 bottom 2")
+    query = "\n".join(lines)
+
+    try:
+        result = ask(query, ttl_hours=24)
+        return {"summary": result.content, "warnings": {}, "ok": True, "error": ""}
+    except Exception as e:
+        return {"summary": "", "warnings": {}, "ok": False,
+                "error": f"fin_ai 调用失败: {e}"}
+
+
 def load_index_constituents():
     """加载中证红利 + 上证 50 成分股，返回去重后的 6 位代码列表。
 
