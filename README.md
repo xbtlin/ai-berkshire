@@ -265,7 +265,7 @@ claude --dangerously-skip-permissions
 
 ### 2. 安装 Skills
 
-Claude Code 用户安装：
+Claude Code 用户安装（macOS / Linux）：
 
 ```bash
 # 克隆仓库
@@ -274,6 +274,14 @@ git clone https://github.com/xbtlin/ai-berkshire.git
 # 复制 skills 到 Claude Code 全局 commands 目录
 cd ai-berkshire
 ./scripts/install-claude-commands.sh
+```
+
+Claude Code 用户安装（Windows PowerShell / Command Prompt）：
+
+```bat
+git clone https://github.com/xbtlin/ai-berkshire.git
+cd ai-berkshire
+.\scripts\install-claude-commands.bat
 ```
 
 Codex 用户安装（macOS / Linux）：

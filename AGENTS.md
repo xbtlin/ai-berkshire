@@ -19,7 +19,8 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
   installs Codex skills locally.
 - `scripts/install-codex-prompts.sh` / `scripts/install-codex-prompts.bat`:
   installs generated Codex slash prompts locally.
-- `scripts/install-claude-commands.sh`: installs Claude Code commands locally.
+- `scripts/install-claude-commands.sh` / `scripts/install-claude-commands.bat`:
+  installs Claude Code commands locally.
 
 ## Compatibility Rules
 

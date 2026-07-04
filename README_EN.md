@@ -266,7 +266,7 @@ Warning: this disables Claude Code's tool-approval guardrails. Use it only when 
 
 ### 2. Install Skills
 
-For Claude Code users:
+For Claude Code users on macOS / Linux:
 
 ```bash
 # Clone the repository
@@ -277,7 +277,15 @@ cd ai-berkshire
 ./scripts/install-claude-commands.sh
 ```
 
-For Codex users:
+For Claude Code users on Windows PowerShell / Command Prompt:
+
+```bat
+git clone https://github.com/xbtlin/ai-berkshire.git
+cd ai-berkshire
+.\scripts\install-claude-commands.bat
+```
+
+For Codex users on macOS / Linux:
 
 ```bash
 # Clone the repository
