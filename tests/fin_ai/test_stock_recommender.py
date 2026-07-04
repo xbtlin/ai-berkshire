@@ -20,3 +20,45 @@ def test_load_index_constituents_returns_unique_codes():
     assert len(codes) == len(set(codes)), "代码必须去重"
     # 应包含招行（必在两个指数里）
     assert "600036" in codes, "应包含招行"
+
+
+from tools.stock_recommender import _qq_code, _parse_qq_quote
+
+
+def test_qq_code_上海():
+    """6 开头代码 → sh 前缀。"""
+    assert _qq_code("600036") == "sh600036"
+
+
+def test_qq_code_深圳():
+    """0/3 开头代码 → sz 前缀。"""
+    assert _qq_code("000001") == "sz000001"
+    assert _qq_code("300750") == "sz300750"
+
+
+def test_qq_code_去除后缀():
+    """带 .SH/.SZ 后缀的代码也要能处理。"""
+    assert _qq_code("600036.SH") == "sh600036"
+
+
+def test_parse_qq_quote_标准格式():
+    """能解析腾讯行情返回的 ~ 分隔字符串。"""
+    # 简化的样本：50+ 字段，关键字段在固定位置
+    raw = '"招商银行~600036~35.50~35.00~36.00~100000~50000~50000~"'
+    raw += "~" * 50  # 填充到 50+ 字段
+    d = _parse_qq_quote(raw)
+    assert d["name"] == "招商银行"
+    assert d["code"] == "600036"
+    assert d["price"] == "35.50"
+
+
+def test_parse_qq_quote_真实线上格式():
+    """腾讯线上真实格式：fields[0]=市场标识，需要偏移 1。"""
+    # 真实格式：1~招商银行~600036~36.83~35.00~...
+    raw = '"1~招商银行~600036~36.83~35.00~'
+    raw += "~" * 50 + '"'  # 填充到 50+ 字段并闭合引号
+    d = _parse_qq_quote(raw)
+    assert d["name"] == "招商银行"
+    assert d["code"] == "600036"
+    assert d["price"] == "36.83"
+    assert d["prev_close"] == "35.00"
