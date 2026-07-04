@@ -62,3 +62,28 @@ def test_parse_qq_quote_真实线上格式():
     assert d["code"] == "600036"
     assert d["price"] == "36.83"
     assert d["prev_close"] == "35.00"
+
+
+from tools.stock_recommender import extract_roe_history
+
+
+def test_extract_roe_history_正常数据():
+    """从东财 API 响应里抽出近 N 年 ROE（按日期降序）。"""
+    api_response = {
+        "result": {
+            "data": [
+                {"REPORT_DATE": "2024-12-31T00:00:00", "ROEJQ": 16.5, "REPORT_TYPE": "年报"},
+                {"REPORT_DATE": "2023-12-31T00:00:00", "ROEJQ": 15.8, "REPORT_TYPE": "年报"},
+                {"REPORT_DATE": "2022-12-31T00:00:00", "ROEJQ": 14.2, "REPORT_TYPE": "年报"},
+                {"REPORT_DATE": "2021-12-31T00:00:00", "ROEJQ": 13.9, "REPORT_TYPE": "年报"},
+            ]
+        }
+    }
+    roes = extract_roe_history(api_response, years=3)
+    assert roes == [16.5, 15.8, 14.2]
+
+
+def test_extract_roe_history_空数据():
+    """API 返回空数据时返回空列表。"""
+    assert extract_roe_history({"result": {"data": []}}, years=3) == []
+    assert extract_roe_history({}, years=3) == []

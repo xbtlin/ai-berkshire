@@ -92,6 +92,40 @@ def fetch_quote(code: str) -> dict:
     return _parse_qq_quote(raw)
 
 
+def extract_roe_history(api_response: dict, years: int = 3) -> list:
+    """从东财 financials API 响应提取近 N 年 ROE（按日期降序）。
+
+    输入：完整的 API JSON 响应。
+    输出：[ROE_最新年, ROE_去年, ROE_前年]（单位 %）。
+    无数据返回空列表。
+    """
+    data = (api_response.get("result") or {}).get("data") or []
+    annual = [r for r in data if r.get("REPORT_TYPE") == "年报" and r.get("ROEJQ") is not None]
+    annual.sort(key=lambda x: x.get("REPORT_DATE", ""), reverse=True)
+    return [float(r["ROEJQ"]) for r in annual[:years]]
+
+
+def fetch_financials(code: str, years: int = 3) -> dict:
+    """拉东财近 5 年年报财务数据。返回 {roe_history: [...]}。失败抛异常。
+
+    只取年报，按日期降序。
+    """
+    code = code.strip().replace(".SH", "").replace(".SZ", "").replace(".BJ", "")
+    market = "SH" if code.startswith(("6", "9", "5")) else "SZ"
+    url = "https://datacenter.eastmoney.com/securities/api/data/get"
+    params = {
+        "type": "RPT_F10_FINANCE_MAINFINADATA",
+        "sty": "ALL",
+        "filter": f'(SECUCODE="{code}.{market}")(REPORT_TYPE="年报")',
+        "p": "1", "ps": "5", "sr": "-1", "st": "REPORT_DATE",
+        "source": "HSF10", "client": "PC",
+    }
+    full_url = f"{url}?{urlencode(params)}"
+    raw = _http_get(full_url)
+    api_response = json.loads(raw)
+    return {"roe_history": extract_roe_history(api_response, years=years)}
+
+
 def load_index_constituents():
     """加载中证红利 + 上证 50 成分股，返回去重后的 6 位代码列表。
 
