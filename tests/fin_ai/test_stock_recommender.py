@@ -201,3 +201,39 @@ def test_score_stable_茅台样本():
     assert result["details"]["pe"] is False
     assert result["details"]["roe_mean"] is True
     assert result["details"]["roe_stable"] is True
+
+
+from tools.stock_recommender import sort_and_filter
+
+
+def _scored(code, score, div_yield):
+    """构造 sort_and_filter 输入的工厂。"""
+    return {"code": code, "score": score, "dividend_yield": div_yield}
+
+
+def test_sort_and_filter_按分数分组_同分组按股息率降序():
+    items = [
+        _scored("A", 4, 4.5),
+        _scored("B", 4, 6.0),
+        _scored("C", 3, 5.0),
+        _scored("D", 4, 5.5),
+        _scored("E", 2, 8.0),  # 被剔除
+    ]
+    strong, weak = sort_and_filter(items, min_score=3, top_n=5)
+    # 强推荐（4 分），按股息率降序
+    assert [x["code"] for x in strong] == ["B", "D", "A"]
+    # 备选（3 分）
+    assert [x["code"] for x in weak] == ["C"]
+
+
+def test_sort_and_filter_top_n_截断():
+    items = [
+        _scored("A", 4, 6.0),
+        _scored("B", 4, 5.5),
+        _scored("C", 4, 5.0),
+        _scored("D", 4, 4.5),
+    ]
+    strong, weak = sort_and_filter(items, min_score=4, top_n=2)
+    assert len(strong) == 2
+    assert [x["code"] for x in strong] == ["A", "B"]
+    assert weak == []

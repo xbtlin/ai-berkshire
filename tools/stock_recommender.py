@@ -240,6 +240,31 @@ def score_stable(
     return {"score": score, "details": details}
 
 
+def sort_and_filter(items: list, min_score: int = 3, top_n: int = 5):
+    """分组 + 排序 + 截断（strong 与 weak 互斥）。
+
+    items: [{code, score, dividend_yield, ...}]
+    返回: (strong, weak)
+        strong: score >= 4（强烈推荐）的前 top_n 只，按股息率降序
+        weak:   min_score <= score < 4（备选，未达强烈推荐线）的前 top_n 只，
+                按股息率降序
+
+    说明：4 分项属于"强烈推荐"，不再计入"备选"。当 min_score >= 4 时
+    weak 永远为空（备选线 >= 强烈推荐线，无中间地带）。
+    """
+    strong = sorted(
+        [x for x in items if x["score"] >= 4],
+        key=lambda x: x.get("dividend_yield", 0),
+        reverse=True,
+    )[:top_n]
+    weak = sorted(
+        [x for x in items if min_score <= x["score"] < 4],
+        key=lambda x: x.get("dividend_yield", 0),
+        reverse=True,
+    )[:top_n]
+    return strong, weak
+
+
 def load_index_constituents():
     """加载中证红利 + 上证 50 成分股，返回去重后的 6 位代码列表。
 
