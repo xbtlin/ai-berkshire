@@ -88,3 +88,42 @@ def test_extract_roe_history_空数据():
     """API 返回空数据时返回空列表。"""
     assert extract_roe_history({"result": {"data": []}}, years=3) == []
     assert extract_roe_history({}, years=3) == []
+
+
+from tools.stock_recommender import (
+    extract_dividends_ttm,
+    calc_dividend_yield,
+)
+
+
+def test_extract_dividends_ttm_近365天():
+    """汇总近 365 天内所有"每10股派息"总额。"""
+    today = "2026-07-04"
+    api_response = {
+        "result": {
+            "data": [
+                # 假设今天 2026-07-04
+                {"EQUITY_REGISTRATION_DATE": "2026-06-15", "BEFORE_TAX_DIVIDEND": 3.0},  # 中期
+                {"EQUITY_REGISTRATION_DATE": "2025-07-10", "BEFORE_TAX_DIVIDEND": 5.0},  # 上年年度（< 365 天）
+                {"EQUITY_REGISTRATION_DATE": "2025-06-20", "BEFORE_TAX_DIVIDEND": 4.0},  # 超过 365 天，剔除
+            ]
+        }
+    }
+    total = extract_dividends_ttm(api_response, today=today)
+    assert total == 8.0  # 3 + 5
+
+
+def test_extract_dividends_ttm_空():
+    assert extract_dividends_ttm({}, today="2026-07-04") == 0.0
+
+
+def test_calc_dividend_yield_标准():
+    """股息率 = TTM 每10股派息 ÷ 10 ÷ 当前价 × 100。"""
+    # 每 10 股派 5 元，当前价 10 元 → 5%
+    rate = calc_dividend_yield(dividend_per_10_ttm=5.0, price=10.0)
+    assert abs(rate - 5.0) < 0.01
+
+
+def test_calc_dividend_yield_零价格():
+    """价格为 0 时返回 0（防除零）。"""
+    assert calc_dividend_yield(dividend_per_10_ttm=5.0, price=0) == 0.0

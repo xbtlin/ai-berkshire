@@ -13,7 +13,7 @@
 import argparse
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
@@ -129,6 +129,79 @@ def fetch_financials(code: str, years: int = 3) -> dict:
     raw = _http_get(full_url)
     api_response = json.loads(raw)
     return {"roe_history": extract_roe_history(api_response, years=years)}
+
+
+def extract_dividends_ttm(api_response: dict, today: str = None) -> float:
+    """汇总近 365 天内"每 10 股派息税前"总额。
+
+    today: 'YYYY-MM-DD' 字符串，默认系统当天。
+    返回单位：元（每 10 股）。
+    """
+    today_dt = datetime.strptime(today, "%Y-%m-%d") if today else datetime.now()
+    cutoff = today_dt - timedelta(days=365)
+    data = (api_response.get("result") or {}).get("data") or []
+    total = 0.0
+    for r in data:
+        date_str = (r.get("EQUITY_REGISTRATION_DATE") or "")[:10]
+        if not date_str:
+            continue
+        try:
+            reg_date = datetime.strptime(date_str, "%Y-%m-%d")
+        except ValueError:
+            continue
+        if reg_date >= cutoff:
+            amt = r.get("BEFORE_TAX_DIVIDEND")
+            if amt is not None:
+                total += float(amt)
+    return total
+
+
+def calc_dividend_yield(dividend_per_10_ttm: float, price: float) -> float:
+    """TTM 股息率 %。
+
+    dividend_per_10_ttm: 近 12 个月每 10 股派息合计（元）。
+    price: 当前股价（元）。
+    返回：股息率百分比（5.0 表示 5%）。
+    """
+    if not price or price <= 0:
+        return 0.0
+    return dividend_per_10_ttm / 10.0 / price * 100.0
+
+
+def fetch_dividends(code: str) -> dict:
+    """拉东财 F10 分红明细。返回 {dividend_per_10_ttm: float, raw_records: [...]}。"""
+    code = code.strip().replace(".SH", "").replace(".SZ", "").replace(".BJ", "")
+    if code.startswith(("6", "9", "5")):
+        market = "SH"
+    elif code.startswith(("4", "8")):
+        market = "BJ"
+    else:
+        market = "SZ"
+    url = "https://datacenter.eastmoney.com/securities/api/data/get"
+    params = {
+        "type": "RPT_SHAREBONUS_DET",
+        "sty": "ALL",
+        "filter": f'(SECUCODE="{code}.{market}")',
+        "p": "1", "ps": "20", "sr": "-1", "st": "REPORT_DATE",
+        "source": "HSF10", "client": "PC",
+    }
+    full_url = f"{url}?{urlencode(params)}"
+    raw = _http_get(full_url)
+    api_response = json.loads(raw)
+    # 东财真实字段 EQUITY_RECORD_DATE / PRETAX_BONUS_RMB 映射到规格字段名
+    # EQUITY_REGISTRATION_DATE / BEFORE_TAX_DIVIDEND（extract_dividends_ttm 使用）
+    raw_records = (api_response.get("result") or {}).get("data") or []
+    mapped = []
+    for r in raw_records:
+        mapped.append({
+            "EQUITY_REGISTRATION_DATE": r.get("EQUITY_RECORD_DATE") or r.get("EQUITY_REGISTRATION_DATE"),
+            "BEFORE_TAX_DIVIDEND": r.get("PRETAX_BONUS_RMB") if r.get("PRETAX_BONUS_RMB") is not None else r.get("BEFORE_TAX_DIVIDEND"),
+        })
+    mapped_response = {"result": {"data": mapped}}
+    return {
+        "dividend_per_10_ttm": extract_dividends_ttm(mapped_response),
+        "raw_records": raw_records,
+    }
 
 
 def load_index_constituents():
