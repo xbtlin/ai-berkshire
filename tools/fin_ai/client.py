@@ -124,7 +124,8 @@ class FinAIClient:
             session_id = int(stream.headers.get("X-Session-Id", "0") or 0)
             for line in stream.iter_lines():
                 if not line:
-                    current_event = None
+                    continue
+                if line.startswith(":"):  # SSE 注释（如 :heartbeat）
                     continue
                 if line.startswith("event:"):
                     current_event = line[6:].strip()
@@ -138,17 +139,19 @@ class FinAIClient:
                     data = json.loads(payload_str)
                 except json.JSONDecodeError:
                     continue
-                raw_events.append({"event": current_event, "data": data})
+                # 优先用 data 内的 type 字段（实际服务端格式），其次 SSE event: 头（兼容旧 mock）
+                event_type = data.get("type") or current_event or ""
+                raw_events.append({"event": event_type, "data": data})
                 if "errorCode" in data:
                     stream.read()  # 消费剩余 body，避免 keep-alive 告警
                     raise FinAIError(data["errorCode"], data.get("errorMsg", ""))
-                if current_event == "response.output_text.delta":
+                if event_type == "response.output_text.delta":
                     delta = data.get("delta", "")
                     if delta:
                         content_parts.append(delta)
                         if on_delta:
                             on_delta(delta)
-                elif current_event == "response.completed":
+                elif event_type == "response.completed":
                     usage = data.get("response", {}).get("usage", {})
 
         return ChatResult(

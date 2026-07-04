@@ -131,3 +131,57 @@ def test_headers_format(monkeypatch):
     assert h["clientcategory"] == "c"
     assert h["Authorization"] == "Bearer abc123"
     assert h["Content-Type"] == "application/json"
+
+
+def test_only_base_url_and_token_required(tmp_path, monkeypatch):
+    """token-only 模式：仅 base_url + auth_token 必填，其余字段缺省；headers() 跳过空字段。"""
+    dotenv = tmp_path / ".env"
+    dotenv.write_text(
+        "FIN_AI_BASE_URL=http://x\n"
+        "FIN_AI_AUTH_TOKEN=tok\n"
+    )
+    for k in ("FIN_AI_BASE_URL", "FIN_AI_UID", "FIN_AI_TENANT_ID",
+             "FIN_AI_PRODUCT_CODE", "FIN_AI_CLIENT_CATEGORY",
+             "FIN_AI_AUTH_TOKEN", "FIN_AI_MODEL"):
+        monkeypatch.delenv(k, raising=False)
+    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", dotenv)
+
+    cfg = Config.load()
+    assert cfg.base_url == "http://x"
+    assert cfg.auth_token == "tok"
+    assert cfg.uid == ""
+    assert cfg.tenant_id == ""
+    assert cfg.product_code == ""
+    assert cfg.client_category == ""
+    assert cfg.model == "gangtise-reason"  # 默认值
+
+    h = cfg.headers()
+    assert "uid" not in h
+    assert "tenantid" not in h
+    assert "productcode" not in h
+    assert "clientcategory" not in h
+    assert h["Authorization"] == "Bearer tok"
+    assert h["Content-Type"] == "application/json"
+
+
+def test_auth_token_with_bearer_prefix(monkeypatch):
+    """auth_token 已含 'Bearer ' 前缀时不再重复添加（兼容网关直发 token）。"""
+    monkeypatch.setenv("FIN_AI_BASE_URL", "http://x")
+    monkeypatch.setenv("FIN_AI_AUTH_TOKEN", "Bearer abc123")
+    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", Path("/nonexistent"))
+
+    cfg = Config.load()
+    h = cfg.headers()
+    assert h["Authorization"] == "Bearer abc123"  # 不是 "Bearer Bearer abc123"
+
+
+def test_auth_token_case_insensitive_bearer(monkeypatch):
+    """'bearer' 小写前缀也兼容。"""
+    monkeypatch.setenv("FIN_AI_BASE_URL", "http://x")
+    monkeypatch.setenv("FIN_AI_AUTH_TOKEN", "bearer xyz")
+    monkeypatch.setattr("tools.fin_ai.config._DOTENV_PATH", Path("/nonexistent"))
+
+    cfg = Config.load()
+    h = cfg.headers()
+    # 标准化为大写 Bearer
+    assert h["Authorization"] in ("Bearer xyz", "bearer xyz")

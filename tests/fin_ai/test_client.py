@@ -191,3 +191,69 @@ def test_5xx_retry_then_success(fake_config):
         result = client.chat("问")
     assert call_count["n"] == 2
     assert isinstance(result, ChatResult)
+
+
+def test_real_server_format_no_event_prefix(fake_config):
+    """实际服务端格式：data 内嵌 'type' 字段，无 event: 前缀（含 :heartbeat 注释）。
+
+    复现 gangtise 真实响应：每个 data 行独立，事件类型从 JSON 的 type 字段读取。
+    """
+    body = (
+        ":heartbeat\n"
+        "\n"
+        'data:{"type": "response.created", "response": {"id": "resp_1"}, "sequence_number": 0}\n'
+        "\n"
+        'data:{"type": "response.output_text.delta", "delta": "您好", "sequence_number": 1}\n'
+        "\n"
+        'data:{"type": "response.output_text.delta", "delta": "！", "sequence_number": 2}\n'
+        "\n"
+        'data:{"type": "response.completed", "response": {"usage": '
+        '{"input_tokens": 10, "output_tokens": 2, "total_tokens": 12}}, "sequence_number": 3}\n'
+        "\n"
+        "data:[STOP]\n"
+        "\n"
+    ).encode("utf-8")
+
+    def handler(request):
+        return httpx.Response(
+            200,
+            headers={"Content-Type": "text/event-stream", "X-Session-Id": "999"},
+            content=body,
+        )
+
+    transport = httpx.MockTransport(handler)
+    with FinAIClient(fake_config, transport=transport) as client:
+        chunks = []
+        result = client.chat("您好", on_delta=chunks.append)
+
+    assert result.content == "您好！"
+    assert result.session_id == 999
+    assert result.usage["total_tokens"] == 12
+    assert chunks == ["您好", "！"]
+
+
+def test_data_type_takes_priority_over_event_header(fake_config):
+    """data 内的 type 字段优先于 SSE event: 头（混合场景：两种来源都有）。"""
+    body = (
+        "event: legacy_event\n"
+        'data: {"type": "response.output_text.delta", "delta": "优先"}\n'
+        "\n"
+        "event: legacy_event\n"
+        'data: {"type": "response.completed", "response": {"usage": {"total_tokens": 1}}}\n'
+        "\n"
+        "data: [STOP]\n"
+    ).encode("utf-8")
+
+    def handler(request):
+        return httpx.Response(
+            200,
+            headers={"Content-Type": "text/event-stream", "X-Session-Id": "1"},
+            content=body,
+        )
+
+    transport = httpx.MockTransport(handler)
+    with FinAIClient(fake_config, transport=transport) as client:
+        result = client.chat("问")
+
+    # type 字段优先，所以 delta 被正确识别
+    assert result.content == "优先"

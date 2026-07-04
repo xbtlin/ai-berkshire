@@ -11,14 +11,19 @@ from typing import Optional
 
 _DOTENV_PATH = Path(__file__).resolve().parents[2] / ".env"
 
+# 必填字段：仅 base_url + auth_token。其余字段在 token-only 模式下网关自动解析
 _REQUIRED_FIELDS = (
     ("FIN_AI_BASE_URL", "base_url"),
-    ("FIN_AI_UID", "uid"),
-    ("FIN_AI_TENANT_ID", "tenant_id"),
-    ("FIN_AI_PRODUCT_CODE", "product_code"),
-    ("FIN_AI_CLIENT_CATEGORY", "client_category"),
     ("FIN_AI_AUTH_TOKEN", "auth_token"),
-    ("FIN_AI_MODEL", "model"),
+)
+
+# 可选字段：未填时使用默认值（空字符串或 model 默认名）
+_OPTIONAL_FIELDS = (
+    ("FIN_AI_UID", "uid", ""),
+    ("FIN_AI_TENANT_ID", "tenant_id", ""),
+    ("FIN_AI_PRODUCT_CODE", "product_code", ""),
+    ("FIN_AI_CLIENT_CATEGORY", "client_category", ""),
+    ("FIN_AI_MODEL", "model", "gangtise-reason"),
 )
 
 
@@ -29,12 +34,12 @@ class ConfigError(Exception):
 @dataclass
 class Config:
     base_url: str
-    uid: str
-    tenant_id: str
-    product_code: str
-    client_category: str
     auth_token: str
-    model: str
+    uid: str = ""
+    tenant_id: str = ""
+    product_code: str = ""
+    client_category: str = ""
+    model: str = "gangtise-reason"
 
     @classmethod
     def load(cls) -> "Config":
@@ -53,18 +58,34 @@ class Config:
                 f"缺少金融 AI 凭证: {', '.join(missing)}；"
                 f"参考 .env.example 配置 .env 文件"
             )
+        for env_key, field, default in _OPTIONAL_FIELDS:
+            val = os.environ.get(env_key) or env.get(env_key)
+            kwargs[field] = val if val else default
         return cls(**kwargs)
 
     def headers(self) -> dict:
-        """生成请求头。"""
-        return {
-            "uid": self.uid,
-            "tenantid": self.tenant_id,
-            "productcode": self.product_code,
-            "clientcategory": self.client_category,
-            "Authorization": f"Bearer {self.auth_token}",
+        """生成请求头。空字段跳过（token-only 模式下网关自动解析）。"""
+        h = {
+            "Authorization": _normalize_bearer(self.auth_token),
             "Content-Type": "application/json",
         }
+        if self.uid:
+            h["uid"] = self.uid
+        if self.tenant_id:
+            h["tenantid"] = self.tenant_id
+        if self.product_code:
+            h["productcode"] = self.product_code
+        if self.client_category:
+            h["clientcategory"] = self.client_category
+        return h
+
+
+def _normalize_bearer(token: str) -> str:
+    """token 标准化为 Bearer 形式（兼容已含/不含 'Bearer ' 前缀，大小写不敏感）。"""
+    if token.lower().startswith("bearer "):
+        # 已含前缀，原样返回（保留原大小写）
+        return token
+    return f"Bearer {token}"
 
 
 def _load_dotenv(path: Optional[Path] = None) -> dict:
