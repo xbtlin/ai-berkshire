@@ -283,20 +283,24 @@ def ask_fin_ai_opinion(candidates: list) -> dict:
     # 配额预检
     try:
         q = quota()
-        if q.exceeded or q.remaining < 1:
+        if q is not None and (q.exceeded or q.remaining < 1):
             return {"summary": "", "warnings": {}, "ok": False,
                     "error": f"fin_ai 配额不足（剩余 {q.remaining}/{q.limit}）"}
-    except Exception:
-        # 配额接口失败时容错（不阻塞）
-        pass
+    except Exception as e:
+        # 配额接口失败时容错（不阻塞），但留痕便于排查
+        print(f"[warn] fin_ai 配额预检失败，跳过预检: {e}", file=sys.stderr)
 
     lines = ["请评估以下 A 股稳定收益候选股（按稳定性排序）：\n"]
     for i, c in enumerate(candidates, 1):
+        div_y = c.get('dividend_yield') or 0
+        roe_m = c.get('roe_mean') or 0
+        pe_v = c.get('pe')
+        pe_str = f"{pe_v:.2f}" if isinstance(pe_v, (int, float)) else "N/A"
         lines.append(
             f"{i}. {c.get('name', c['code'])} ({c['code']}) — "
-            f"股息率 {c.get('dividend_yield', 0):.2f}%, "
-            f"PE {c.get('pe', 'N/A')}, "
-            f"ROE 均值 {c.get('roe_mean', 0):.2f}%"
+            f"股息率 {div_y:.2f}%, "
+            f"PE {pe_str}, "
+            f"ROE 均值 {roe_m:.2f}%"
         )
     lines.append("\n请输出：")
     lines.append("1. 按股息可持续性从高到低排序（仅代码）")
