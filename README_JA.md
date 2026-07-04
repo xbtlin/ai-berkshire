@@ -1,5 +1,7 @@
 日本語 | [English](README_EN.md) | [中文](README.md)
 
+> 日本語版はコミュニティによりメンテナンスされています。内容が最新でない場合は、中文版・英語版を正としてください。
+
 [![GitHub Trending](https://trendshift.io/api/badge/repositories/63696)](https://trendshift.io/repositories/63696)
 
 # AI Berkshire — AI時代のバリュー投資リサーチフレームワーク
@@ -12,7 +14,7 @@
 
 1人 + Claude Code / Codex = 投資リサーチチーム丸ごと。
 
-[実績](#実績) · [なぜAIに直接聞いてはいけないのか](#なぜaiに直接聞いてはいけないのか) · [Skill一覧](#skill一覧18スキル) · [クイックスタート](#クイックスタート) · [レポート](#実際のリサーチレポート) · [設計思想](#設計思想)
+[実績](#実績) · [なぜAIに直接聞いてはいけないのか](#なぜaiに直接聞いてはいけないのか) · [Skill一覧](#skill一覧19スキル) · [クイックスタート](#クイックスタート) · [レポート](#実際のリサーチレポート) · [設計思想](#設計思想)
 
 ---
 
@@ -173,7 +175,7 @@ AIに直接聞けばコンテキストウィンドウは1つです。4つの並�
 
 ---
 
-## Skill一覧（18スキル）
+## Skill一覧（19スキル）
 
 ### 🔬 深掘りリサーチ
 
@@ -208,6 +210,7 @@ AIに直接聞けばコンテキストウィンドウは1つです。4つの並�
 |-------|------|---------|
 | [`/portfolio-review`](skills/portfolio-review.md) | ポートフォリオレビュー＆最適化 | 「企業をリサーチする」から「ポートフォリオを管理する」へ——ポジションサイジング、集中度、リバランス |
 | [`/thesis-tracker`](skills/thesis-tracker.md) | 投資テーゼトラッカー | 購入後の規律システム：投資テーゼが否定されていないかを継続的に追跡 |
+| [`/thesis-drift`](skills/thesis-drift.md) | 投資テーゼのドリフト検出 | 2つのテーゼ／レポートを比較し、事実の変化・バリュエーションの変化・表現の変化を区別 |
 | [`/news-pulse`](skills/news-pulse.md) | 株価変動の迅速な要因分析 | 株が急騰・急落したとき——10分で「何が起きたか」を解明 |
 
 ### 🧠 思考ツール
@@ -347,6 +350,7 @@ Claude Codeで直接呼び出す：
 # ポートフォリオ管理
 /portfolio-review テンセント30%、美団20%、茅台20%、現金30%
 /thesis-tracker 拼多多
+/thesis-drift 拼多多 reports/拼多多-thesis-2025Q4.md reports/拼多多-thesis-2026Q1.md
 /news-pulse テンセント
 
 # 思考ツール
@@ -361,6 +365,7 @@ investment-researchを使ってテンセントをリサーチして
 earnings-reviewを使ってPDD2025年次の決算を分析して
 industry-funnelを使ってAI算力をスクリーニングして
 bottleneck-hunterを使ってAIインフラのボトルネックをスキャンして
+thesis-driftを使って拼多多の2つの投資テーゼを比較して
 wechat-articleを使って美団の投資記事を書いて
 ```
 
