@@ -283,13 +283,15 @@ python3 ~/ai-berkshire/tools/report_audit.py verdict \
 
 ---
 
-## 可选步骤：金融 AI 观点补充（消耗配额，默认关闭）
+## 数据源 + 观点层：金融 AI（gangtise-reason）
 
-如果你希望报告里包含金融 AI（gangtise-reason）的实时观点补充，在数据收集阶段调用：
+金融 AI（gangtise-reason）是**高价值数据源**，提供专业研报数据（业务结构/财务细节/机构评级/目标价）。**当 fin_ai 有数据时，以 fin_ai 为准确源**——B 级以下公司经验证比 WebSearch/东方财富更准（小商品城样本：fin_ai ROE 17.53% vs WebSearch 12.96%/4.15%，反推验证 fin_ai 数据自洽）。
+
+### 调用方式（在数据收集阶段）
 
 ```bash
-# 单次：拿最新观点/事件解读
-python -m tools.fin_ai ask "{公司名} 最新市场观点和研报解读" --ttl-hours 1
+# 单次：拿最新数据/观点/事件解读
+python -m tools.fin_ai ask "{公司名} 最新市场观点和研报解读" --ttl-hours 24
 
 # 多轮 REPL：深入对话（4-5 轮覆盖业务/竞争/估值/风险）
 python -m tools.fin_ai ask --multi "{公司名}"
@@ -298,14 +300,30 @@ python -m tools.fin_ai ask --multi "{公司名}"
 python -m tools.fin_ai quota
 ```
 
-将返回内容嵌入报告「§X.X 金融 AI 观点补充」段落，明确标注：
+### 数据使用原则
+
+| 数据类型 | 处理方式 |
+|---------|---------|
+| **事实数据**（EPS/BVPS/营收/业务结构/ROE 等）| **fin_ai 优先**——有数据则以 fin_ai 为准确源，写入报告 §1 数据收集 |
+| **计算数据**（PE/PB/ROE 等估值指标）| **必走 `tools/financial_rigor.py`**——用 fin_ai 提供的输入数据计算（Decimal，禁用 float）|
+| **机构观点**（评级/目标价/多空论点）| 写入「§X.X 金融 AI 观点补充」段落，作为投资决策参考，**不替代**三情景估值 |
+
+### 报告段落结构
+
+将 fin_ai 内容嵌入「§X.X 金融 AI 观点补充」段落，明确标注：
 - 来源：金融 AI（gangtise-reason），{日期}
-- 类型：第三方观点，非事实数据
-- 与报告其他模块的关系：补充参考，**不替代**程序化验算（PE/PB/ROE 等仍走 `financial_rigor.py`）
+- **数据类型**：事实数据（已采纳为准确源）/ 机构观点（参考层）
+- 与程序化验算的关系：fin_ai 提供输入数据，但 PE/PB/ROE 等指标仍走 `financial_rigor.py` 精确计算
 
-⚠️ **不强制使用**。配额 80/天是硬约束，长公司研究请优先用缓存命中。
+### 配额管理
 
-Python 库调用方式（在脚本中复用）：
+⚠️ **配额 80/天是硬约束**。
+- 数据收集阶段：单次 ask 拿研报观点（缓存 24h TTL，重复查询不烧配额）
+- 长公司研究：用 `quota` 命令监控剩余配额
+- B 级以下公司：如果完整 query 超时（>5 分钟），改用最短 query（如直接"小商品城"）重试
+- fin_ai 无数据/超时/无配额时 fallback 到 WebSearch + 年报
+
+### Python 库调用方式（在脚本中复用）
 
 ```python
 from tools.fin_ai import ask, ask_multi_turn
@@ -315,5 +333,5 @@ print(result.content)
 
 with ask_multi_turn("长城军工") as session:
     r1 = session.ask("2025 年报怎么看？")
-    r2 = session.ask("和北方导航比谁更好？")
+    r2 = session.ask("和北方导航比谁更好？")  # 上下文延续
 ```

@@ -159,6 +159,7 @@ python tools/financial_rigor.py calc --expr '510 * 9.11e9'
 - 禁止使用"我认为"、"我觉得"、"显然"等主观表述，改用"数据显示"、"证据表明"、"根据XX来源"
 - **呈现正反两面**：每个核心判断都必须附带反面论据（"但另一方面..."），让读者自己权衡
 - 对不确定的事情诚实说"不确定"或"数据不足"，不要用推测填充确定性
+- **金融 AI（gangtise-reason）数据源优先**：当 fin_ai 有数据时，**以 fin_ai 为准确源**（B 级以下公司经验证比 WebSearch/东方财富更准——小商品城样本 fin_ai ROE 17.53% vs WebSearch 12.96%/4.15%）。但 PE/PB/ROE 等估值指标仍走 `tools/financial_rigor.py` 精确计算（Decimal，禁用 float）。fin_ai 提供输入数据，financial_rigor 做精确计算，**两者协同而非替代**。fin_ai 无数据/超时/无配额时 fallback 到 WebSearch + 年报。
 - 所有skill（investment-team、investment-research、earnings-review等）在执行时都必须遵守以上原则
 
 ## 报告语言与风格
