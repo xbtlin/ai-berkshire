@@ -65,8 +65,10 @@ claude -p "/skill args" --allowedTools "Read,Edit,..." --output-format json > lo
 
 | 任务 | 触发 | skill | 输入 |
 |---|---|---|---|
-| `AI-Berkshire-Portfolio-Weekly` | 每周日 20:00 | `portfolio-review` | "我的持仓"（读 `reports/portfolio-latest.md`） |
-| `AI-Berkshire-Industry-Monthly` | 每月 1 号 20:00 | `industry-funnel` | 主题队列（`data/industry_funnel_queue.json`） |
+| `AI-Berkshire-Portfolio-Weekly` | 每周日 03:00 | `portfolio-review` | "我的持仓"（读 `reports/portfolio-latest.md`） |
+| `AI-Berkshire-Industry-Monthly` | 每月 1 号 03:00 | `industry-funnel` | 主题队列（`data/industry_funnel_queue.json`） |
+
+**默认凌晨 3 点**：用户用的是 GLM Coding Plan（5 小时刷新套餐，非按 token 付费），凌晨跑不挤占白天配额。可用 `-RunAt "04:00"` 自定义。
 
 队列管理：`python -m tools.scheduler {list-queue | add-theme "..."}`。
 

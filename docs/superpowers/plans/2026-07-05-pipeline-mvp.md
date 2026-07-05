@@ -16,10 +16,12 @@ Claude Code 支持非交互模式：`claude -p "/skill args" --allowedTools "...
 **重要约束**：不用 `--bare`——它会跳过 CLAUDE.md 项目指令（金融 Decimal 约束 / 中文报告风格 / Codex 同步规则），让 skill 行为偏离。
 
 ### 期望结果
-- 周日晚 20:00 自动跑 `portfolio-review`，更新 `reports/portfolio-latest.md`
-- 每月 1 号晚 20:00 自动跑 `industry-funnel`，主题从队列读取、跑完弹出
+- 周日凌晨 3:00 自动跑 `portfolio-review`，更新 `reports/portfolio-latest.md`
+- 每月 1 号凌晨 3:00 自动跑 `industry-funnel`，主题从队列读取、跑完弹出
 - 失败有日志可查（`logs/scheduler/*.json`），不静默崩
 - 用户可用 `--dry-run` 先看命令再决定要不要真跑
+
+**默认凌晨 3 点**：GLM Coding Plan 是 5 小时刷新套餐（非按 token 付费），凌晨跑不挤占白天配额。
 
 ---
 
@@ -103,8 +105,8 @@ python -m tools.scheduler add-theme "AI算力"                      # 加主题
 
 | 任务名 | 触发 | 命令 |
 |---|---|---|
-| `AI-Berkshire-Portfolio-Weekly` | 每周日 20:00 | `powershell -File scripts/run-scheduled-task.ps1 -Skill portfolio-review` |
-| `AI-Berkshire-Industry-Monthly` | 每月 1 号 20:00 | `powershell -File scripts/run-scheduled-task.ps1 -Skill industry-funnel` |
+| `AI-Berkshire-Portfolio-Weekly` | 每周日 03:00 | `powershell -File scripts/run-scheduled-task.ps1 -Skill portfolio-review` |
+| `AI-Berkshire-Industry-Monthly` | 每月 1 号 03:00 | `powershell -File scripts/run-scheduled-task.ps1 -Skill industry-funnel` |
 
 用 `Register-ScheduledTask` + `-Action` + `-Trigger`。提供 `-Uninstall` switch 卸载。
 

@@ -209,8 +209,10 @@ Windows 任务计划程序 + Claude Code headless 模式定时触发 skill。MVP
 
 | 任务 | 触发 | skill | 输入 |
 |------|------|-------|------|
-| `AI-Berkshire-Portfolio-Weekly` | 每周日 20:00 | `portfolio-review` | "我的持仓"（读 `reports/portfolio-latest.md`） |
-| `AI-Berkshire-Industry-Monthly` | 每月 1 号 20:00 | `industry-funnel` | 主题队列（`data/industry_funnel_queue.json`） |
+| `AI-Berkshire-Portfolio-Weekly` | 每周日 03:00 | `portfolio-review` | "我的持仓"（读 `reports/portfolio-latest.md`） |
+| `AI-Berkshire-Industry-Monthly` | 每月 1 号 03:00 | `industry-funnel` | 主题队列（`data/industry_funnel_queue.json`） |
+
+**默认凌晨 3 点**：GLM Coding Plan 是 5 小时刷新套餐，凌晨跑不挤占白天配额。
 
 ### 用法
 

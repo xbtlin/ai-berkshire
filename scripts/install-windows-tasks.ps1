@@ -1,10 +1,13 @@
 # scripts/install-windows-tasks.ps1
 # 注册 2 个 Windows 任务计划程序任务：
-#   AI-Berkshire-Portfolio-Weekly  每周日 20:00 跑 portfolio-review
-#   AI-Berkshire-Industry-Monthly  每月 1 号 20:00 跑 industry-funnel --from-queue
+#   AI-Berkshire-Portfolio-Weekly  每周日 03:00 跑 portfolio-review
+#   AI-Berkshire-Industry-Monthly  每月 1 号 03:00 跑 industry-funnel --from-queue
+#
+# 默认凌晨 3 点跑：GLM Coding Plan 是 5 小时刷新套餐，凌晨使用不挤占白天配额。
 #
 # 用法：
 #   powershell -ExecutionPolicy Bypass -File scripts/install-windows-tasks.ps1
+#   powershell -ExecutionPolicy Bypass -File scripts/install-windows-tasks.ps1 -RunAt "04:00"
 #
 # 卸载：scripts/uninstall-windows-tasks.ps1
 #
@@ -13,7 +16,7 @@
 
 param(
     [string]$RepoRoot = "C:\workspace\ai-berkshire",
-    [string]$RunAt = "20:00"
+    [string]$RunAt = "03:00"
 )
 
 $ErrorActionPreference = "Stop"
