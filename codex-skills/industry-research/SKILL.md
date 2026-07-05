@@ -285,7 +285,7 @@ python3 ~/ai-berkshire/tools/report_audit.py verdict \
 
 ## 数据源 + 观点层：金融 AI（gangtise-reason）
 
-金融 AI（gangtise-reason）是**高价值数据源**，提供专业研报数据（业务结构/财务细节/机构评级/目标价）。**当 fin_ai 有数据时，以 fin_ai 为准确源**——B 级以下公司经验证比 WebSearch/东方财富更准（小商品城样本：fin_ai ROE 17.53% vs WebSearch 12.96%/4.15%，反推验证 fin_ai 数据自洽）。
+金融 AI（gangtise-reason）是**高价值数据源**，提供专业研报数据（业务结构/财务细节/机构评级/目标价）。**当 fin_ai 有数据时，以 fin_ai 为准确源**——B 级以下公司经验证比 tavily_search/东方财富更准（小商品城样本：fin_ai ROE 17.53% vs tavily_search 12.96%/4.15%，反推验证 fin_ai 数据自洽）。
 
 ### 调用方式（在数据收集阶段）
 
@@ -321,7 +321,7 @@ python -m tools.fin_ai quota
 - 数据收集阶段：单次 ask 拿研报观点（缓存 24h TTL，重复查询不烧配额）
 - 长公司研究：用 `quota` 命令监控剩余配额
 - B 级以下公司：如果完整 query 超时（>5 分钟），改用最短 query（如直接"小商品城"）重试
-- fin_ai 无数据/超时/无配额时 fallback 到 WebSearch + 年报
+- fin_ai 无数据/超时/无配额时 fallback 到 tavily_search + 年报
 
 ### Python 库调用方式（在脚本中复用）
 

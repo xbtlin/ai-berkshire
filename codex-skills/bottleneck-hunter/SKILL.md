@@ -115,7 +115,7 @@ Layer 4：
 
 ### 2.3 其他趋势的拆解
 
-对每个确认的超级趋势执行类似拆解。使用WebSearch搜索：
+对每个确认的超级趋势执行类似拆解。使用tavily_search搜索：
 - "{趋势} supply chain bottleneck 2026"
 - "{趋势} shortage critical component"
 - "{趋势} capacity constraint"
@@ -173,9 +173,9 @@ B级瓶颈（有压力）：
 ### 4.1 对每个S级和A级瓶颈，找出所有相关上市公司
 
 搜索方式：
-- WebSearch "{瓶颈环节} supplier listed company"
-- WebSearch "{瓶颈环节} manufacturer stock"
-- WebSearch "{瓶颈产品} market share company"
+- tavily_search "{瓶颈环节} supplier listed company"
+- tavily_search "{瓶颈环节} manufacturer stock"
+- tavily_search "{瓶颈产品} market share company"
 
 ### 4.2 初筛标准（快速过滤）
 

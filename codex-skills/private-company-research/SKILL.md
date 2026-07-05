@@ -823,7 +823,7 @@ This skill is generated from `skills/private-company-research.md` so Claude Code
 {任务description的内容}
 
 **研究方法**：
-1. 使用 WebSearch 搜索最新公开信息，每个维度至少搜索3-5次，用不同关键词组合
+1. 使用 tavily_search 搜索最新公开信息，每个维度至少搜索3-5次，用不同关键词组合
 2. 搜索关键词策略：
    - 中文：公司名+收入/估值/融资/用户数/MAU/IPO/招股书/裁员/整改
    - 英文：Company Name + revenue/valuation/funding/users/IPO/filing
@@ -833,7 +833,7 @@ This skill is generated from `skills/private-company-research.md` so Claude Code
    - 高可信度：招股书、监管文件、上市公司年报中的关联披露
    - 中可信度：晚点LatePost、The Information、36氪、Bloomberg、Reuters、TechCrunch
    - 辅助验证：知乎、脉脉、Glassdoor、天眼查、企查查
-4. 使用 WebFetch 获取关键文章的全文（不要只看搜索摘要）
+4. 使用 tavily_extract 获取关键文章的全文（不要只看搜索摘要）
 5. 对重要数据，至少用2个不同来源交叉验证
 
 **数据标注规范（严格执行）**：

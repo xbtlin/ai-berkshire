@@ -50,7 +50,7 @@ This skill is generated from `skills/portfolio-review.md` so Claude Code and Cod
 
 ### 第二步：获取最新数据
 
-使用 Task 工具启动后台 Agent，通过 WebSearch 为每个持仓并行获取：
+使用 Task 工具启动后台 Agent，通过 tavily_search 为每个持仓并行获取：
 1. 当前股价和估值指标（PE、PB、股息率）
 2. 最近一个季度的关键财务变化
 3. 近期重大事件

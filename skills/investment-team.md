@@ -112,7 +112,7 @@
 {任务description的内容}
 
 **研究方法**：
-- 使用 WebSearch 搜索最新公开信息（财报、行业报告、新闻）
+- 使用 tavily_search 搜索最新公开信息（财报、行业报告、新闻）
 - **财务数据必须来自两个独立来源**，按 `skills/financial-data.md` 规范执行（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯），两源误差>1%须标记
 - 确保数据准确，关键数据标注来源
 - 分析要深入，不流于表面
@@ -205,7 +205,7 @@ python3 ~/ai-berkshire/tools/report_audit.py verdict \
 
 1. **4个Agent必须并行启动**——在同一条消息中调用4次Task工具
 2. **Agent通过SendMessage汇报**——不是文件协作，是消息通信
-3. **数据准确性**——要求Agent使用WebSearch搜索最新数据，关键数据交叉验证
+3. **数据准确性**——要求Agent使用tavily_search搜索最新数据，关键数据交叉验证
 4. **结论要明确**——不回避给出买入/观望/回避建议和具体价格区间
 5. **所有分析必须有数据支撑**——附数据来源
 6. **耐心等待**——4个Agent研究需要几分钟，实时向用户更新进度
@@ -216,7 +216,7 @@ python3 ~/ai-berkshire/tools/report_audit.py verdict \
 
 ## 数据源 + 观点层：金融 AI（gangtise-reason）
 
-金融 AI（gangtise-reason）是**高价值数据源**，提供专业研报数据（业务结构/财务细节/机构评级/目标价）。**当 fin_ai 有数据时，以 fin_ai 为准确源**——B 级以下公司经验证比 WebSearch/东方财富更准（小商品城样本：fin_ai ROE 17.53% vs WebSearch 12.96%/4.15%，反推验证 fin_ai 数据自洽）。
+金融 AI（gangtise-reason）是**高价值数据源**，提供专业研报数据（业务结构/财务细节/机构评级/目标价）。**当 fin_ai 有数据时，以 fin_ai 为准确源**——B 级以下公司经验证比 tavily_search/东方财富更准（小商品城样本：fin_ai ROE 17.53% vs tavily_search 12.96%/4.15%，反推验证 fin_ai 数据自洽）。
 
 ### 调用方式（在数据收集阶段）
 
@@ -252,7 +252,7 @@ python -m tools.fin_ai quota
 - 数据收集阶段：单次 ask 拿研报观点（缓存 24h TTL，重复查询不烧配额）
 - 长公司研究：用 `quota` 命令监控剩余配额
 - B 级以下公司：如果完整 query 超时（>5 分钟），改用最短 query（如直接"小商品城"）重试
-- fin_ai 无数据/超时/无配额时 fallback 到 WebSearch + 年报
+- fin_ai 无数据/超时/无配额时 fallback 到 tavily_search + 年报
 
 ### Python 库调用方式（在脚本中复用）
 

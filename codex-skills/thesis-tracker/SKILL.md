@@ -49,7 +49,7 @@ This skill is generated from `skills/thesis-tracker.md` so Claude Code and Codex
 
 ### A0：数据收集
 
-使用 WebSearch 获取当前股价、估值指标（PE/PB/股息率）、最新财报核心数据，用于填写估值锚点。如果已有该公司的 `/investment-research` 或 `/investment-team` 报告，优先从中读取。
+使用 tavily_search 获取当前股价、估值指标（PE/PB/股息率）、最新财报核心数据，用于填写估值锚点。如果已有该公司的 `/investment-research` 或 `/investment-team` 报告，优先从中读取。
 
 使用 `tools/financial_rigor.py verify-valuation` 校验估值数据。
 
@@ -129,7 +129,7 @@ This skill is generated from `skills/thesis-tracker.md` so Claude Code and Codex
 
 ### B2：收集最新数据
 
-使用 WebSearch 收集：
+使用 tavily_search 收集：
 1. 最新财报数据（如果有新的季报/年报）
 2. 近期重大事件（管理层变动、监管政策、竞争动态）
 3. 当前股价和估值指标
