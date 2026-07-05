@@ -18,7 +18,6 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
-from decimal import Decimal, getcontext
 from statistics import stdev
 
 # Windows 控制台默认 GBK 编码无法输出 emoji（⚠️✅❌），强制 UTF-8。
@@ -60,16 +59,24 @@ def _http_get(url, timeout=15, encoding="utf-8"):
         return data.decode("gbk", errors="replace")
 
 
-def _qq_code(code: str) -> str:
-    """将股票代码转为腾讯行情格式（sh/sz/bj 前缀）。"""
+def _detect_market(code: str) -> str:
+    """根据代码前缀判定市场：'SH' / 'SZ' / 'BJ'。
+
+    6/9/5 开头 → SH（沪市 A 股/B 股/基金）
+    4/8 开头   → BJ（北交所）
+    其他       → SZ（深市，含主板/创业板/B 股）
+    """
     code = code.strip().replace(".SH", "").replace(".SZ", "").replace(".BJ", "")
     if code.startswith(("6", "9", "5")):
-        return f"sh{code}"
-    elif code.startswith(("0", "3", "2", "1")):
-        return f"sz{code}"
+        return "SH"
     elif code.startswith(("4", "8")):
-        return f"bj{code}"
-    return f"sh{code}"
+        return "BJ"
+    return "SZ"
+
+
+def _qq_code(code: str) -> str:
+    """将股票代码转为腾讯行情格式（sh/sz/bj 前缀）。"""
+    return f"{_detect_market(code).lower()}{code.strip().replace('.SH', '').replace('.SZ', '').replace('.BJ', '')}"
 
 
 def _parse_qq_quote(raw: str) -> dict:
@@ -128,12 +135,7 @@ def fetch_financials(code: str, years: int = 3) -> dict:
     只取年报，按日期降序。
     """
     code = code.strip().replace(".SH", "").replace(".SZ", "").replace(".BJ", "")
-    if code.startswith(("6", "9", "5")):
-        market = "SH"
-    elif code.startswith(("4", "8")):
-        market = "BJ"
-    else:
-        market = "SZ"
+    market = _detect_market(code)
     url = "https://datacenter.eastmoney.com/securities/api/data/get"
     params = {
         "type": "RPT_F10_FINANCE_MAINFINADATA",
@@ -153,6 +155,10 @@ def extract_dividends_ttm(api_response: dict, today: str = None) -> float:
 
     today: 'YYYY-MM-DD' 字符串，默认系统当天。
     返回单位：元（每 10 股）。
+
+    窗口：[today-365, today]。股权登记日在未来（> today）的不计入，
+    因为尚未实际派发（如招行 2025 年报派息 2026-07-09，today=2026-07-05
+    时 4 天后才除权，不应进 TTM）。
     """
     today_dt = datetime.strptime(today, "%Y-%m-%d") if today else datetime.now()
     cutoff = today_dt - timedelta(days=365)
@@ -166,7 +172,7 @@ def extract_dividends_ttm(api_response: dict, today: str = None) -> float:
             reg_date = datetime.strptime(date_str, "%Y-%m-%d")
         except ValueError:
             continue
-        if reg_date >= cutoff:
+        if cutoff <= reg_date <= today_dt:
             amt = r.get("BEFORE_TAX_DIVIDEND")
             if amt is not None:
                 total += float(amt)
@@ -185,15 +191,29 @@ def calc_dividend_yield(dividend_per_10_ttm: float, price: float) -> float:
     return dividend_per_10_ttm / 10.0 / price * 100.0
 
 
+def _map_dividend_records(raw_records: list) -> list:
+    """东财分红记录字段重命名 + 过滤未实施记录。
+
+    过滤 ASSIGN_PROGRESS != '实施分配' 的记录（预披露/待审议/退出等），
+    避免未实际派发的分红污染 TTM 计算（防御性：当前东财预披露记录的
+    金额/登记日多为 null，本身会被 extract_dividends_ttm 跳过；但如果
+    后续东财返回了带预估金额的预披露记录，这里能正确拦截）。
+    """
+    mapped = []
+    for r in raw_records:
+        if r.get("ASSIGN_PROGRESS") != "实施分配":
+            continue
+        mapped.append({
+            "EQUITY_REGISTRATION_DATE": r.get("EQUITY_RECORD_DATE") or r.get("EQUITY_REGISTRATION_DATE"),
+            "BEFORE_TAX_DIVIDEND": r.get("PRETAX_BONUS_RMB") if r.get("PRETAX_BONUS_RMB") is not None else r.get("BEFORE_TAX_DIVIDEND"),
+        })
+    return mapped
+
+
 def fetch_dividends(code: str) -> dict:
     """拉东财 F10 分红明细。返回 {dividend_per_10_ttm: float, raw_records: [...]}。"""
     code = code.strip().replace(".SH", "").replace(".SZ", "").replace(".BJ", "")
-    if code.startswith(("6", "9", "5")):
-        market = "SH"
-    elif code.startswith(("4", "8")):
-        market = "BJ"
-    else:
-        market = "SZ"
+    market = _detect_market(code)
     url = "https://datacenter.eastmoney.com/securities/api/data/get"
     params = {
         "type": "RPT_SHAREBONUS_DET",
@@ -205,15 +225,8 @@ def fetch_dividends(code: str) -> dict:
     full_url = f"{url}?{urlencode(params)}"
     raw = _http_get(full_url)
     api_response = json.loads(raw)
-    # 东财真实字段 EQUITY_RECORD_DATE / PRETAX_BONUS_RMB 映射到规格字段名
-    # EQUITY_REGISTRATION_DATE / BEFORE_TAX_DIVIDEND（extract_dividends_ttm 使用）
     raw_records = (api_response.get("result") or {}).get("data") or []
-    mapped = []
-    for r in raw_records:
-        mapped.append({
-            "EQUITY_REGISTRATION_DATE": r.get("EQUITY_RECORD_DATE") or r.get("EQUITY_REGISTRATION_DATE"),
-            "BEFORE_TAX_DIVIDEND": r.get("PRETAX_BONUS_RMB") if r.get("PRETAX_BONUS_RMB") is not None else r.get("BEFORE_TAX_DIVIDEND"),
-        })
+    mapped = _map_dividend_records(raw_records)
     mapped_response = {"result": {"data": mapped}}
     return {
         "dividend_per_10_ttm": extract_dividends_ttm(mapped_response),
@@ -337,6 +350,13 @@ def _fmt_table_row(cells):
     return "| " + " | ".join(str(c) for c in cells) + " |"
 
 
+def _fmt_stddev(roe_history: list) -> str:
+    """格式化 ROE 标准差为 2 位小数字符串。样本数 < 2 时显示 '0.00'。"""
+    if len(roe_history) >= 2:
+        return f"{stdev(roe_history):.2f}"
+    return "0.00"
+
+
 def generate_report(
     today: str,
     strong: list,
@@ -375,14 +395,12 @@ def generate_report(
         lines.append(_fmt_table_row(["代码", "名称", "股息率%", "PE", "ROE 均值%", "ROE 标准差pp"]))
         lines.append(_fmt_table_row(["---", "---", "---", "---", "---", "---"]))
         for s in strong:
-            roe_history = s.get("roe_history", [])
-            stddev = stdev(roe_history) if len(roe_history) >= 2 else 0
             lines.append(_fmt_table_row([
                 s["code"], s.get("name", ""),
                 f"{s.get('dividend_yield', 0):.2f}",
                 s.get("pe", "-"),
                 f"{s.get('roe_mean', 0):.2f}",
-                f"{stddev:.2f}",
+                _fmt_stddev(s.get("roe_history", [])),
             ]))
     else:
         lines.append("_本期无 4 分强推荐_")
@@ -395,14 +413,12 @@ def generate_report(
         lines.append(_fmt_table_row(["代码", "名称", "股息率%", "PE", "ROE 均值%", "ROE 标准差pp"]))
         lines.append(_fmt_table_row(["---", "---", "---", "---", "---", "---"]))
         for s in weak:
-            roe_history = s.get("roe_history", [])
-            stddev = stdev(roe_history) if len(roe_history) >= 2 else 0
             lines.append(_fmt_table_row([
                 s["code"], s.get("name", ""),
                 f"{s.get('dividend_yield', 0):.2f}",
                 s.get("pe", "-"),
                 f"{s.get('roe_mean', 0):.2f}",
-                f"{stddev:.2f}",
+                _fmt_stddev(s.get("roe_history", [])),
             ]))
     else:
         lines.append("_本期无 3 分备选_")
@@ -467,14 +483,21 @@ def load_index_constituents():
 def main():
     parser = argparse.ArgumentParser(description="A 股股票推荐 CLI")
     sub = parser.add_subparsers(dest="mode", required=True)
-    p_stable = sub.add_parser("stable", help="稳定收益模式")
-    p_stable.add_argument("--top", type=int, default=5)
-    p_stable.add_argument("--min-dividend", type=float, default=4.0)
-    p_stable.add_argument("--max-pe", type=float, default=15.0)
-    p_stable.add_argument("--min-roe", type=float, default=12.0)
-    p_stable.add_argument("--max-roe-stddev", type=float, default=5.0)
-    p_stable.add_argument("--dry-run", action="store_true")
-    p_stable.add_argument("--force", action="store_true")
+    p_stable = sub.add_parser("stable", help="稳定收益模式（高股息 + 低 PE + 稳定 ROE）")
+    p_stable.add_argument("--top", type=int, default=5,
+                          help="每个分组（强烈推荐/备选）最多展示的股票数量（默认 5）")
+    p_stable.add_argument("--min-dividend", type=float, default=4.0,
+                          help="股息率（TTM）下限百分比，低于此值不计分（默认 4.0）")
+    p_stable.add_argument("--max-pe", type=float, default=15.0,
+                          help="PE（动）上限，高于此值不计分（默认 15.0）")
+    p_stable.add_argument("--min-roe", type=float, default=12.0,
+                          help="近 3 年 ROE 均值下限百分比（默认 12.0）")
+    p_stable.add_argument("--max-roe-stddev", type=float, default=5.0,
+                          help="近 3 年 ROE 标准差上限（百分点，默认 5.0）")
+    p_stable.add_argument("--dry-run", action="store_true",
+                          help="仅打印报告到 stdout，不写文件")
+    p_stable.add_argument("--force", action="store_true",
+                          help="报告已存在时强制覆盖（默认拒绝覆盖）")
     args = parser.parse_args()
 
     today = datetime.now().strftime("%Y%m%d")

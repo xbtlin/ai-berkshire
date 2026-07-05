@@ -118,6 +118,51 @@ def test_extract_dividends_ttm_空():
     assert extract_dividends_ttm({}, today="2026-07-04") == 0.0
 
 
+def test_extract_dividends_ttm_过滤未来日期():
+    """股权登记日 > today 的派息不计入 TTM（尚未实际派发）。
+
+    场景：招行 2025 年报派息股权登记日 2026-07-09（today=2026-07-05，
+    4 天后），不应计入；只算近 365 天内已派发的。
+    """
+    today = "2026-07-05"
+    api_response = {
+        "result": {
+            "data": [
+                {"EQUITY_REGISTRATION_DATE": "2025-07-10", "BEFORE_TAX_DIVIDEND": 20.0},   # ✅ 已派发
+                {"EQUITY_REGISTRATION_DATE": "2026-01-15", "BEFORE_TAX_DIVIDEND": 10.13},  # ✅ 已派发
+                {"EQUITY_REGISTRATION_DATE": "2026-07-09", "BEFORE_TAX_DIVIDEND": 10.03},  # ❌ 未来
+            ]
+        }
+    }
+    total = extract_dividends_ttm(api_response, today=today)
+    assert abs(total - 30.13) < 0.01  # 20.0 + 10.13，不含未来
+
+
+from tools.stock_recommender import _map_dividend_records
+
+
+def test_map_dividend_records_过滤预披露():
+    """ASSIGN_PROGRESS != '实施分配' 的记录被过滤（预披露/待审议等）。
+
+    场景：东财返回 3 条记录，仅 1 条是「实施分配」，其余应剔除。
+    """
+    raw_records = [
+        # 预披露：股权登记日/金额都未定
+        {"EQUITY_RECORD_DATE": None, "PRETAX_BONUS_RMB": None,
+         "ASSIGN_PROGRESS": "预披露"},
+        # 实施分配：已实际派发
+        {"EQUITY_RECORD_DATE": "2026-07-09 00:00:00", "PRETAX_BONUS_RMB": 10.03,
+         "ASSIGN_PROGRESS": "实施分配"},
+        # 待审议：跳过
+        {"EQUITY_RECORD_DATE": "2026-08-15 00:00:00", "PRETAX_BONUS_RMB": 5.0,
+         "ASSIGN_PROGRESS": "待审议"},
+    ]
+    mapped = _map_dividend_records(raw_records)
+    assert len(mapped) == 1
+    assert mapped[0]["EQUITY_REGISTRATION_DATE"] == "2026-07-09 00:00:00"
+    assert mapped[0]["BEFORE_TAX_DIVIDEND"] == 10.03
+
+
 def test_calc_dividend_yield_标准():
     """股息率 = TTM 每10股派息 ÷ 10 ÷ 当前价 × 100。"""
     # 每 10 股派 5 元，当前价 10 元 → 5%
