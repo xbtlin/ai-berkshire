@@ -58,6 +58,27 @@ def test_build_command_额外工具合并():
     assert "Read" in tools_str
 
 
+def test_build_command_默认含_max_turns():
+    """防 skill 跑飞：默认带 --max-turns 60（spike 时 portfolio-review 是 40）。"""
+    cmd = _build_command("portfolio-review", "")
+    assert "--max-turns" in cmd
+    max_turns_idx = cmd.index("--max-turns") + 1
+    assert cmd[max_turns_idx] == "60"
+
+
+def test_build_command_自定义_max_turns():
+    """max_turns 可覆盖（如简单 skill 用 30）。"""
+    cmd = _build_command("news-pulse", "", max_turns=30)
+    max_turns_idx = cmd.index("--max-turns") + 1
+    assert cmd[max_turns_idx] == "30"
+
+
+def test_build_command_禁用_max_turns():
+    """max_turns=None 时不加该参数（特殊场景：长跑 skill）。"""
+    cmd = _build_command("industry-funnel", "", max_turns=None)
+    assert "--max-turns" not in cmd
+
+
 # ---------------------------------------------------------------------------
 # pop_next_theme / mark_theme_done
 # ---------------------------------------------------------------------------
@@ -215,3 +236,60 @@ def test_run_skill_headless_失败_写_error_log(monkeypatch, tmp_path):
     log_data = json.loads(log_files[0].read_text(encoding="utf-8"))
     assert log_data["ok"] is False
     assert "skill not found" in log_data["stderr"]
+
+
+def test_run_skill_headless_传_timeout_和_stdin_给_subprocess(monkeypatch, tmp_path):
+    """关键加固：subprocess.run 必须带 timeout + stdin=DEVNULL。
+
+    防止 headless claude 在任务计划程序环境下卡死（cache 未命中、每 turn 慢、
+    无超时上限导致无限等）。runner.py 自身必须传 timeout + stdin=DEVNULL。
+    """
+    captured = {"kwargs": None}
+
+    def _fake_run(cmd, **kwargs):
+        captured["kwargs"] = kwargs
+        return _FakeCompletedProcess(
+            returncode=0,
+            stdout='{"test": 1}',
+            stderr="",
+        )
+
+    monkeypatch.setattr("subprocess.run", _fake_run)
+    run_skill_headless(skill_name="portfolio-review", log_dir=tmp_path)
+
+    assert captured["kwargs"] is not None
+    assert captured["kwargs"].get("timeout") == 1800, "默认应传 timeout=1800（30 分钟）"
+    import subprocess as sp
+    assert captured["kwargs"].get("stdin") == sp.DEVNULL, "应传 stdin=DEVNULL 防 stdin 阻塞"
+
+
+def test_run_skill_headless_自定义_timeout(monkeypatch, tmp_path):
+    """timeout 可自定义（如长跑 skill 用 3600）。"""
+    captured = {"kwargs": None}
+
+    def _fake_run(cmd, **kwargs):
+        captured["kwargs"] = kwargs
+        return _FakeCompletedProcess(0, '{"ok":1}', "")
+
+    monkeypatch.setattr("subprocess.run", _fake_run)
+    run_skill_headless(skill_name="industry-funnel", log_dir=tmp_path, timeout_sec=3600)
+    assert captured["kwargs"].get("timeout") == 3600
+
+
+def test_run_skill_headless_超时_写_error_log(monkeypatch, tmp_path):
+    """subprocess 抛 TimeoutExpired 时捕获 + 写 error log（不静默崩）。"""
+    import subprocess as sp
+
+    def _fake_run(cmd, **kwargs):
+        raise sp.TimeoutExpired(cmd=cmd, timeout=kwargs.get("timeout", 0))
+
+    monkeypatch.setattr("subprocess.run", _fake_run)
+    result = run_skill_headless(skill_name="portfolio-review", log_dir=tmp_path)
+    assert result["ok"] is False
+    assert result["exit_code"] == -1
+    assert "timeout" in result["stderr"].lower() or "超时" in result["stderr"]
+    log_files = list(tmp_path.glob("portfolio-review-*.json"))
+    assert len(log_files) == 1
+    log_data = json.loads(log_files[0].read_text(encoding="utf-8"))
+    assert log_data["ok"] is False
+    assert "timed_out" in log_data and log_data["timed_out"] is True

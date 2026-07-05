@@ -29,10 +29,14 @@ def _build_command(
     skill_name: str,
     args: str = "",
     extra_allowed_tools: list = None,
+    max_turns: int = 60,
 ) -> list:
     """构造 claude headless 命令参数列表。
 
-    返回：["claude", "-p", "/skill args", "--allowedTools", "Read,Edit,...", "--output-format", "json"]
+    返回：["claude", "-p", "/skill args", "--allowedTools", "...", "--output-format", "json", "--max-turns", "60"]
+
+    max_turns: 防 skill 跑飞（spike 时 portfolio-review 是 40 turn，留 50% buffer）。
+              传 None 则不加 --max-turns（特殊场景：长跑 skill）。
     """
     args = (args or "").strip()
     prompt = f"/{skill_name} {args}".rstrip()
@@ -41,12 +45,15 @@ def _build_command(
         for t in extra_allowed_tools:
             if t not in tools:
                 tools.append(t)
-    return [
+    cmd = [
         "claude",
         "-p", prompt,
         "--allowedTools", ",".join(tools),
         "--output-format", "json",
     ]
+    if max_turns is not None:
+        cmd.extend(["--max-turns", str(max_turns)])
+    return cmd
 
 
 def run_skill_headless(
@@ -56,18 +63,25 @@ def run_skill_headless(
     log_dir: Path = None,
     extra_allowed_tools: list = None,
     dry_run: bool = False,
+    max_turns: int = 60,
+    timeout_sec: int = 1800,
 ) -> dict:
     """调 claude -p '/{skill} {args}'，返回执行结果。
 
     返回 dict：
         dry_run=True 时：{dry_run: True, command: [...]}
-        否则：{ok, exit_code, stdout, stderr, log_path, command, started_at, duration_sec}
+        否则：{ok, exit_code, stdout, stderr, log_path, command, started_at, duration_sec, timed_out}
 
-    失败时（exit_code != 0）ok=False，但仍写 log 便于排查。
+    加固（基于 2026-07-05 spike vs 任务计划程序事故诊断）：
+    - max_turns=60：防 skill 跑飞（subprocess 死循环时硬上限）
+    - timeout_sec=1800：subprocess.run 30 分钟硬上限（防 LLM 单次调用 + 多 turn 叠加卡死）
+    - stdin=DEVNULL：防 headless claude 等待 stdin 阻塞
+
+    失败时（exit_code != 0 / timeout）ok=False，但仍写 log 便于排查。
     """
     repo_root = repo_root or REPO_ROOT
     log_dir = log_dir or LOG_DIR_DEFAULT
-    command = _build_command(skill_name, args, extra_allowed_tools)
+    command = _build_command(skill_name, args, extra_allowed_tools, max_turns=max_turns)
 
     if dry_run:
         return {"dry_run": True, "command": command}
@@ -77,6 +91,7 @@ def run_skill_headless(
     timestamp = started_at.strftime("%Y%m%d-%H%M%S")
     log_path = log_dir / f"{skill_name}-{timestamp}.json"
 
+    timed_out = False
     try:
         completed = subprocess.run(
             command,
@@ -85,12 +100,18 @@ def run_skill_headless(
             text=True,
             encoding="utf-8",
             errors="replace",
+            stdin=subprocess.DEVNULL,
+            timeout=timeout_sec,
         )
         exit_code = completed.returncode
         stdout = completed.stdout or ""
         stderr = completed.stderr or ""
+    except subprocess.TimeoutExpired as e:
+        timed_out = True
+        exit_code = -1
+        stdout = (e.stdout or "") if isinstance(e.stdout, str) else ""
+        stderr = f"timeout: subprocess 超过 {timeout_sec}s 未结束（命令：{e.cmd}）"
     except Exception as e:
-        # subprocess 自身异常（如 claude 未安装）
         exit_code, stdout, stderr = -1, "", f"subprocess.run 异常: {e}"
 
     ended_at = datetime.now()
@@ -105,6 +126,7 @@ def run_skill_headless(
         "duration_sec": duration_sec,
         "exit_code": exit_code,
         "ok": exit_code == 0,
+        "timed_out": timed_out,
         "stdout": stdout,
         "stderr": stderr,
     }
@@ -122,6 +144,7 @@ def run_skill_headless(
         "command": command,
         "started_at": log_data["started_at"],
         "duration_sec": duration_sec,
+        "timed_out": timed_out,
     }
 
 
