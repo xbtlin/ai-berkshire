@@ -14,3 +14,7 @@ reports/.DS_Store
 
 # 金融 AI 缓存目录（含问答内容，可能涉密）
 data/fin_ai_cache/
+
+# 调度 Pipeline 运行日志（含 stdout/stderr + cost，本地排查用）
+logs/scheduler/*.json
+!logs/scheduler/.gitkeep

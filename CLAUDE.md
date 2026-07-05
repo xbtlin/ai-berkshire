@@ -203,6 +203,56 @@ python tools/stock_recommender.py stable --top 5
 - 配额：单次跑烧 1 次 fin_ai（80/天足够）
 - 设计 spec：`docs/superpowers/specs/2026-07-04-stock-recommender-design.md`
 
+## 调度 Pipeline
+
+Windows 任务计划程序 + Claude Code headless 模式定时触发 skill。MVP 含 2 个任务：
+
+| 任务 | 触发 | skill | 输入 |
+|------|------|-------|------|
+| `AI-Berkshire-Portfolio-Weekly` | 每周日 20:00 | `portfolio-review` | "我的持仓"（读 `reports/portfolio-latest.md`） |
+| `AI-Berkshire-Industry-Monthly` | 每月 1 号 20:00 | `industry-funnel` | 主题队列（`data/industry_funnel_queue.json`） |
+
+### 用法
+
+```bash
+# 安装任务（注册到 Windows 任务计划程序）
+powershell -ExecutionPolicy Bypass -File scripts/install-windows-tasks.ps1
+
+# 卸载
+powershell -ExecutionPolicy Bypass -File scripts/uninstall-windows-tasks.ps1
+
+# 立即触发测试
+schtasks /run /tn "AI-Berkshire-Portfolio-Weekly"
+
+# 手动跑（不依赖任务计划程序）
+python -m tools.scheduler portfolio-review
+python -m tools.scheduler industry-funnel --from-queue
+python -m tools.scheduler portfolio-review --dry-run    # 只打印命令、不调 claude
+
+# 主题队列管理
+python -m tools.scheduler list-queue
+python -m tools.scheduler add-theme "AI算力"
+```
+
+### 故障排查
+
+- **运行日志**：`logs/scheduler/{skill}-{YYYYMMDD-HHMMSS}.json`（每个任务一次 JSON，含 stdout/stderr/exit_code/duration）
+- **任务计划程序结果**：`schtasks /query /tn "AI-Berkshire-*" /v` 看 Last Run Time / Result
+- **关键约束**：调度命令**不用 `--bare`**——会跳过 CLAUDE.md 项目指令（金融 Decimal / 中文报告风格 / Codex 同步）
+
+### 模块
+
+- `tools/scheduler/runner.py`：核心，调 `claude -p` headless + 写 log
+- `tools/scheduler/__main__.py`：CLI 入口
+- `scripts/run-scheduled-task.ps1`：任务计划程序实际入口
+- 设计 spec：`docs/superpowers/specs/2026-07-05-pipeline-design.md`
+- 实施计划：`docs/superpowers/plans/2026-07-05-pipeline-mvp.md`
+
+### 不在本期做
+
+- 日频任务（`news-pulse` 盘前 / `thesis-tracker` 盘后）— 配额压力大
+- 热点驱动（RSS / 巨潮 / 政策文件 → LLM 分类）— 留下一期，`runner.py` 接口已预留
+
 ## 注意事项
 
 - 市值必须手算校验：股价 × 总股本，与报告市值对比
