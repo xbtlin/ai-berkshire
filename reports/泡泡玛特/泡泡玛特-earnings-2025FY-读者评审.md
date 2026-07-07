@@ -1,32 +1,32 @@
-# 泡泡玛特 2025FY 财报精读 — 读者评审报告
+# Pop Mart 2025 FY Earnings Deep Dive - Reader Review
 
-## 总体评分：8/10
+## Overall Score: 8/10
 
-## 优点
+## Strengths
 
-1. **结构清晰、信息密度极高**：全文约2500字，10分钟可读完。九个章节层层递进，没有多余内容。
-2. **管理层分析有独到视角**："王宁缺席首次Q1电话会"作为红旗、"嘴上焦虑手上套现"的言行矛盾分析、承诺兑现表逐条对照——"用管理层的话打管理层的脸"，这种写法在公开分析中少见。
-3. **存货风险量化到具体冲击范围**：不是泛泛说"存货有风险"，而是算出了"减值风险11-22亿元（净利润的8-17%）"。
+1. **Clear structure and very high information density**: The full article is about 2,500 words and can be read in 10 minutes. The nine sections flow logically, with no filler.
+2. **A uniquely sharp management analysis**: Treating "Wang Ning missing the first Q1 call" as a red flag, analyzing the contradiction between anxious words and cash-out behavior, and comparing promises against delivered results - this is an uncommon and valuable way to write public analysis.
+3. **Inventory risk quantified into a concrete impact range**: Instead of vaguely saying "inventory is risky," the piece calculates a write-down risk of RMB 1.1-2.2 billion, or 8-17% of net profit.
 
-## 已修正的硬伤
+## Hard Issues Already Corrected
 
-1. ✅ 存货增速统一为259%（(54.73-15.25)/15.25=258.9%）
-2. ✅ OCF/净利润比率变动增加解释（2024年1.59x因预收款变动偏高，2025年1.0x是正常化非恶化）
-3. ✅ Q1数据标注来源（公告数据 vs 管理层指引）
+1. ✅ Inventory growth standardized at 259% ((54.73 - 15.25) / 15.25 = 258.9%)
+2. ✅ Added explanation for the OCF / net profit ratio change (2024's 1.59x was inflated by deferred revenue; 2025's 1.0x is normalization, not deterioration)
+3. ✅ Added source notes for Q1 data (announcement data vs. management guidance)
 
-## 建议优化（已部分采纳）
+## Suggested Improvements (partly adopted)
 
-- ✅ 补充LABUBU接棒者IP矩阵分析（SKULLPANDA/CRYBABY/MOLLY收入+新IP表现）
-- ✅ 估值锚定补充forward PE计算过程
-- ☐ 可比公司PE对比（名创优品/安踏等）未纳入——篇幅限制
-- ☐ 乐园业务详细点评未纳入——数据不足
+- ✅ Added analysis of LABUBU succession IP matrix (SKULLPANDA / CRYBABY / MOLLY revenue and new IP performance)
+- ✅ Added forward P/E calculation steps to the valuation anchor
+- ☐ Comparable company P/E comparisons (Miniso / Anta, etc.) were not included because of space constraints
+- ☐ The amusement-park business was not discussed in detail because data is insufficient
 
-## 读者最想知道但需后续跟踪的问题
+## Questions Readers Still Want Answered
 
-1. LABUBU在各区域的收入变化曲线（Q1占比从38%降到了多少？数据暂不可得）
-2. 越南/墨西哥工厂对关税的实际缓释效果
-3. 线上+150%的具体驱动力拆解（直播/抖音/小程序）
+1. The revenue trend for LABUBU by region (Q1 share fell from 38% to what level? Data not yet available)
+2. The actual tariff relief from Vietnam / Mexico factories
+3. The drivers behind the +150% online growth (live streaming / Douyin / mini programs)
 
-## 一句话总评
+## One-Sentence Verdict
 
-信息密度高、管理层分析有独到见地的财报精读，修正数据不一致问题后，核心判断（海外降速、存货风险、言行矛盾）都站得住脚，可以发布。
+A high-density earnings deep dive with sharp management analysis. After fixing the data inconsistency, the core judgments - overseas slowdown, inventory risk, and management contradiction - all hold up, so it is ready to publish.

@@ -1,19 +1,19 @@
-# 小米集团（1810.HK）投资研究
+# Xiaomi Group (1810.HK) Investment Research
 
-**研究日期**：2026年6月23日
-**研究框架**：四大师综合分析（巴菲特/芒格/段永平/李录）
-**综合评分**：3.5★ / 5★
+**Research date**: 2026-06-23
+**Framework**: Four-master synthesis (Buffett / Munger / Duan Yongping / Li Lu)
+**Overall score**: 3.5★ / 5★
 
-## 核心结论
+## Key Takeaway
 
-> 效率型硬件+生态公司，四大业务中仅IoT具备宽护城河。当前22.80港元已反映大量悲观预期（PE 13.8x），但DCF法下安全边际不足。18-20港元区间将进入更有吸引力的价值投资区域。
+> A hardware-plus-ecosystem company with efficiency at its core. Among the four major businesses, only IoT has a wide moat. The current HKD 22.80 price already reflects a great deal of pessimism (P/E 13.8x), but the margin of safety is still insufficient under DCF. The HKD 18-20 range would become a more attractive value-investing entry point.
 
-## 报告结构
+## Report Structure
 
-| 文件 | 内容 | 视角 |
-|------|------|------|
-| [01-商业模式分析](01-商业模式分析-段永平视角.md) | 商业模式、护城河、飞轮效应 | 段永平 |
-| [02-财务估值分析](02-财务估值分析-巴菲特视角.md) | 财务数据、估值、安全边际 | 巴菲特 |
-| [03-行业竞争分析](03-行业竞争分析-芒格视角.md) | 行业格局、竞争态势、"反过来想" | 芒格 |
-| [04-风险管理层评估](04-风险管理层评估-李录视角.md) | 风险矩阵、管理层、长期确定性 | 李录 |
-| [最终报告](最终报告.md) | 四维综合评分、投资建议 | Team Lead |
+| File | Content | Viewpoint |
+|------|---------|-----------|
+| 01-Business-Model-Analysis-Duan-Yongping-View.md | Business model, moat, flywheel effect | Duan Yongping |
+| 02-Financial-Valuation-Analysis-Buffett-View.md | Financial data, valuation, margin of safety | Buffett |
+| 03-Industry-Competition-Analysis-Munger-View.md | Industry structure, competitive dynamics, "invert, always invert" | Munger |
+| 04-Risk-Management-and-Management-Assessment-Li-Lu-View.md | Risk matrix, management, long-term certainty | Li Lu |
+| Final-Report.md | Four-dimensional overall score, investment recommendation | Team Lead |

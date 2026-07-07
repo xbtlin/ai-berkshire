@@ -1,35 +1,35 @@
-# 思格新能源（06656.HK，Sigenergy）IPO 投研框架概览
+# Sigenergy (06656.HK) IPO Investment Framework Overview
 
-**投研团队：四大师综合分析框架** | **报告日期：2026年4月9日**
-**股票代码：06656.HK** | **招股价：324.20 HKD** | **IPO市值：~800亿HKD（~703亿RMB）**
+**Investment team: Four-master synthesis framework** | **Report date: 2026-04-09**
+**Ticker: 06656.HK** | **IPO price: HKD 324.20** | **IPO market cap: about HKD 80 billion (about RMB 70.3 billion)**
 
 ---
 
-## 研究框架
+## Research Framework
 
-| 序号 | 分析维度 | 分析师角色 | 文件 |
-|:---:|---------|-----------|------|
-| 01 | 商业模式分析 | 段永平视角 | `01-商业模式分析-段永平视角.md` |
-| 02 | 财务估值分析 | 巴菲特视角 | `02-财务估值分析-巴菲特视角.md` |
-| 03 | 行业竞争分析 | 芒格视角 | `03-行业竞争分析-芒格视角.md` |
-| 04 | 风险管理层评估 | 李录视角 | `04-风险管理层评估-李录视角.md` |
-| -- | 综合报告 | Team Lead | `最终报告.md` |
+| No. | Analysis dimension | Analyst role | File |
+|:---:|-------------------|-------------|------|
+| 01 | Business model analysis | Duan Yongping view | `01-Business-Model-Analysis-Duan-Yongping-View.md` |
+| 02 | Financial valuation analysis | Buffett view | `02-Financial-Valuation-Analysis-Buffett-View.md` |
+| 03 | Industry competition analysis | Munger view | `03-Industry-Competition-Analysis-Munger-View.md` |
+| 04 | Risk management assessment | Li Lu view | `04-Risk-Management-and-Management-Assessment-Li-Lu-View.md` |
+| -- | Comprehensive report | Team Lead | `Final-Report.md` |
 
-## 核心结论
+## Key Takeaway
 
-> 思格新能源是一家极具爆发力的光储新贵，创始人许映童的华为系基因赋予了其强大的执行力和技术整合能力。SigenStor五合一产品在可堆叠光储一体机细分赛道做到全球第一，50%毛利率远超同行。但成立仅3年多、单品依赖度超90%、800亿HKD估值对应~24x PE（2025E），定价并不便宜。**短期打新有超额收益概率较高（176倍超购+顶配基石），但中长期持有需警惕增速放缓、竞争加剧和地缘政治风险。**
+> Sigenergy is a highly explosive new storage-and-solar company. Founder Xu Yingtong's Huawei background gives the company strong execution and systems integration capabilities. Its five-in-one SigenStor product has achieved global No. 1 status in the stacked integrated solar-storage niche, and its 50% gross margin is far above peers. But the company is only a little over three years old, depends on one product for more than 90% of revenue, and its HKD 80 billion valuation implies about 24x 2025E P/E, which is not cheap. **Short-term IPO trading may have a relatively high chance of excess return (176x oversubscription and top-tier cornerstone support), but long-term holders need to watch for slowing growth, intensifying competition, and geopolitical risk.**
 
-## 四维评分速览
+## Four-Dimensional Score Snapshot
 
-| 维度 | 评分 | 核心判断 |
-|------|:----:|---------|
-| 商业模式 & 护城河 | ★★★★ 4.0 | 五合一集成创新+渠道网络，但单品依赖是致命隐患 |
-| 财务 & 估值 | ★★★☆ 3.5 | 增长惊人但基数极低，50%毛利率可持续性存疑，IPO定价偏贵 |
-| 行业 & 竞争 | ★★★★ 3.8 | 赛道空间巨大，但华为、特斯拉虎视眈眈，细分赛道护城河不深 |
-| 风险 & 管理层 | ★★★☆ 3.0 | 许映童能力强但公司太年轻，地缘+关税+华为反击三重风险叠加 |
+| Dimension | Score | Core Judgment |
+|-----------|:----:|---------------|
+| Business model & moat | 4.0 | Five-in-one integration innovation plus channel network, but single-product dependence is a fatal weakness |
+| Financials & valuation | 3.5 | Growth is astonishing but from a very low base; the sustainability of 50% gross margin is questionable, and the IPO valuation is expensive |
+| Industry & competition | 3.8 | The market is huge, but Huawei and Tesla are watching closely; the moat in this niche is not deep |
+| Risk & management | 3.0 | Xu Yingtong is capable, but the company is very young, and geopolitical, tariff, and Huawei retaliation risks stack up |
 
-**综合评分：3.6 / 5**
+**Overall score: 3.6 / 5**
 
-## AI研究局限性声明
+## AI Research Limitations
 
-本报告基于公开信息搜索，存在以下局限：(1) 思格新能源尚未正式上市，部分数据来自招股书和媒体报道，可能存在偏差；(2) 作为IPO研究，缺乏上市后的交易数据和季度跟踪；(3) 光储行业变化极快，关税政策持续调整，报告数据截至2026年4月9日；(4) 公司仅成立3年多，历史数据样本极少，预测可靠性较低。
+This report is based on public information search and has the following limitations: (1) Sigenergy has not officially listed yet, and some data comes from the prospectus and media reports, so there may be deviations; (2) As an IPO analysis, there is no post-listing trading data or quarterly tracking yet; (3) The solar-storage industry changes very quickly, and tariff policy continues to evolve, so the report data is only current as of 2026-04-09; (4) The company is only a little over three years old, so the historical sample is very small and forecast reliability is limited.

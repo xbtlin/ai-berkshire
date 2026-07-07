@@ -1,20 +1,20 @@
-# MINIMAX（9922.HK）投研团队研究
+# MINIMAX (9922.HK) Investment Team Research
 
-**研究日期**：2026年4月9日
-**信息丰富度评级**：C级（信息稀缺）——2025年初港股上市，公开数据有限
+**Research date**: 2026-04-09
+**Information richness rating**: C-level (scarce information) - listed in Hong Kong in early 2025, with limited public data
 
-## 研究框架
+## Research Framework
 
-| 角色 | 视角 | 报告 |
-|------|------|------|
-| 商业模式分析师 | 段永平 | [01-商业模式分析](01-商业模式分析-段永平视角.md) |
-| 财务分析师 | 巴菲特 | [02-财务估值分析](02-财务估值分析-巴菲特视角.md) |
-| 行业研究员 | 芒格 | [03-行业竞争分析](03-行业竞争分析-芒格视角.md) |
-| 风险评估师 | 李录 | [04-风险管理层评估](04-风险管理层评估-李录视角.md) |
-| Team Lead | 综合 | [最终报告](最终报告.md) |
+| Role | Viewpoint | Report |
+|------|-----------|--------|
+| Business model analyst | Duan Yongping | 01-Business-Model-Analysis-Duan-Yongping-View.md |
+| Financial analyst | Buffett | 02-Financial-Valuation-Analysis-Buffett-View.md |
+| Industry researcher | Munger | 03-Industry-Competition-Analysis-Munger-View.md |
+| Risk assessor | Li Lu | 04-Risk-Management-and-Management-Assessment-Li-Lu-View.md |
+| Team Lead | Overall | Final-Report.md |
 
-## 核心结论
+## Key Takeaway
 
-**综合评分：★★☆☆☆（2.3/5）**
+**Overall score: 2.3/5**
 
-> MINIMAX是一家技术实力突出的AI创业公司，在海外社交AI（Talkie）和视频生成（Hailuo AI）领域有差异化定位。但从价值投资角度看，深度亏损、护城河薄弱、竞争惨烈、长期确定性极低，当前不具备投资吸引力。适合高风险偏好投资者在估值大幅回调时关注。
+> MINIMAX is an AI startup with strong technical execution and differentiated positioning in overseas social AI (Talkie) and video generation (Hailuo AI). From a value-investing perspective, however, the company has deep losses, a weak moat, fierce competition, and very low long-term certainty. It is not attractive at the current price and is best watched only if valuation corrects sharply.

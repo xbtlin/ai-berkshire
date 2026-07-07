@@ -1,123 +1,123 @@
-# 黄仁勋说AI是五层蛋糕，我把50家公司扒了个遍
+# Jensen Huang Says AI Is a Five-Layer Cake. I Dug Through 50 Companies
 
-黄仁勋今年在CES和达沃斯反复讲一个框架：AI是一块五层蛋糕。
+This year at CES and Davos, Jensen Huang repeatedly described one framework: AI is a five-layer cake.
 
-他不是在说比喻。他是在告诉所有人，AI不是一个软件产品，是一整条从发电厂到手机屏幕的新工业体系。每一层都有独立的投资机会，也都有独立的卡脖子环节。
+He was not speaking metaphorically. He was telling everyone that AI is not a software product; it is a new industrial system stretching from power plants to smartphone screens. Every layer has its own investment opportunities, and every layer has its own bottlenecks.
 
-我花了一周时间按照他的框架，把五层一共50家公司逐一扫了一遍。筛选标准只有一个：谁卡住了脖子，谁被市场忽视了。
+I spent a week using his framework to scan 50 companies across the five layers, one by one. The screening standard was simple: who controls a bottleneck, and who has the market overlooked?
 
-这篇是总纲。后面会分五篇，每篇深入一层。
+This article is the overview. Five follow-up articles will go layer by layer.
 
-## 五层是什么
+## What Are the Five Layers?
 
 ```
-第5层  应用层      AI Agent、自动驾驶、机器人
-第4层  模型层      大语言模型、多模态模型
-第3层  基础设施层  数据中心、网络、液冷
-第2层  芯片层      GPU、内存、封装、特种气体
-第1层  能源层      电力、变压器、核能
+Layer 5  Application layer    AI Agents, autonomous driving, robots
+Layer 4  Model layer          Large language models, multimodal models
+Layer 3  Infrastructure layer Data centers, networking, liquid cooling
+Layer 2  Chip layer           GPUs, memory, packaging, specialty gases
+Layer 1  Energy layer         Power, transformers, nuclear power
 ```
 
-黄仁勋的原话是："未来每家公司都会有两座工厂——一座生产产品，一座是AI工厂。AI工厂每天只做一件事：生产token。"
+Jensen Huang's original line was: "In the future, every company will have two factories - one that produces products, and one that is an AI factory. The AI factory does only one thing every day: produce tokens."
 
-他给了一个衡量AI工厂效率的核心指标：每瓦特产出多少token。AI这门生意最终像制造业一样，拼的是每一度电能产出多少智能。
+He gave one core metric for AI factory efficiency: how many tokens are produced per watt. The AI business will eventually resemble manufacturing, competing on how much intelligence each unit of electricity can produce.
 
-这就解释了为什么这块蛋糕的底层是能源而不是芯片——没有电，GPU就是一块发热的铁。
+That explains why the base of the cake is energy rather than chips: without electricity, a GPU is just a hot piece of iron.
 
-## 我的筛选标准
+## My Screening Criteria
 
-市面上大多数AI投资分析都在讲"谁最强"。但最强的公司往往最贵——Nvidia大家都知道好，但5万亿市值了。
+Most AI investment analysis in the market focuses on "who is strongest." But the strongest companies are often the most expensive: everyone knows Nvidia is good, but it already has a $5.0tn market cap.
 
-我换了一个角度：不问谁最强，问**谁卡住了脖子但市场还没反应过来**。
+I approached it from a different angle: instead of asking who is strongest, ask **who controls a bottleneck that the market has not yet recognized**.
 
-四个维度打分：
+Four dimensions:
 
-1. **瓶颈纯正度**——公司靠卡脖子业务赚的钱占多大比例？>30%才值得看
-2. **不可替代性**——是唯一供应商还是寡头？替代方案出现要多久？
-3. **市场定价程度**——股价是不是已经把瓶颈故事讲完了？P/E 100倍以上大概率已经定价了
-4. **催化剂时间窗**——半年内有没有能验证逻辑的事件？
+1. **Bottleneck purity** - What share of the company's profit engine comes from the bottleneck business? >30% is the minimum worth examining
+2. **Irreplaceability** - Is it a sole supplier or an oligopoly? How long would it take alternatives to emerge?
+3. **Market pricing** - Has the share price already told the whole bottleneck story? A P/E above 100x is likely already priced
+4. **Catalyst window** - Are there events in the next six months that can validate the thesis?
 
-按这四个维度扫完50家之后，最有意思的发现是：**真正被低估的机会不在最热门的那几家，而在供应链上那些"做同样的事但估值便宜一半"或者"坐在万亿产业链上但市值只有几十亿"的隐形玩家里。**
+After scanning 50 companies across these four dimensions, the most interesting finding was this: **the truly underpriced opportunities are not in the hottest names, but in hidden supply-chain players that "do the same work at half the valuation" or "sit on trillion-dollar supply chains with market caps of only a few billion dollars."**
 
-## 每层最值得关注的发现
+## The Most Interesting Finding in Each Layer
 
-### 第1层 能源：变压器排队4年，最无聊的层反而最确定
+### Layer 1 Energy: Transformers Have 4-Year Queues, and the Most Boring Layer Is the Most Certain
 
-美国近一半规划中的数据中心项目已被推迟或取消。不是因为缺GPU，是因为缺电和缺变压器。大型电力变压器交期4年，高压变电站3-5年。这意味着今天下单，2030年才能到货。
+Nearly half of planned U.S. data center projects have been delayed or canceled. The reason is not GPUs; it is power and transformers. Large power transformers have 4-year lead times, and high-voltage substations have 3-5-year lead times. That means an order placed today will not arrive until 2030.
 
-这一层最大的意外是**AZZ Inc.（P/E 13倍）**。它做热镀锌涂层——所有输电塔、变电站钢结构、数据中心钢构件都需要防腐处理。每一根钢柱都要经过它的产线，但市场完全按传统制造业给它定价。13倍PE，在AI概念股里闻所未闻。
+The biggest surprise in this layer is **AZZ Inc. (P/E 13x)**. It makes hot-dip galvanizing coatings: every transmission tower, substation steel structure, and data center steel component needs corrosion protection. Every steel column passes through this kind of production line, but the market prices AZZ entirely like a traditional manufacturer. A 13x P/E is almost unheard of among AI concept stocks.
 
-GE Vernova和Bloom Energy是这一层曝光度最高的，但估值也最贵（52倍和140倍PE）。真正的性价比在中游设备商和天然气基础设施里。
+GE Vernova and Bloom Energy have the highest visibility in this layer, but they also have the highest valuations (52x and 140x P/E). The real risk-reward lies in midstream equipment vendors and natural gas infrastructure.
 
-### 第2层 芯片：5万亿的Nvidia不贵，7倍PE的SK海力士更便宜
+### Layer 2 Chips: A $5.0tn Nvidia Is Not Expensive, but SK Hynix at 7x P/E Is Even Cheaper
 
-Nvidia 5万亿市值听起来很吓人，但前瞻PE只有26倍，FY2027营收预期3700亿美元，同比增长71%。一家以70%速度增长的公司卖26倍，说实话不算贵。
+Nvidia's $5.0tn market cap sounds intimidating, but its forward P/E is only 26x, and FY2027 revenue is expected to be $370.0bn, up 71% year over year. A company growing at 70% trading at 26x is honestly not expensive.
 
-但芯片层真正的"定价错误"是**SK海力士**——HBM高带宽内存62%的全球份额，供不应求到2028年，前瞻PE只有5.8-7倍。全球每一块AI训练芯片都需要HBM，而SK海力士的定价权正在随着HBM复杂度提升不断增强。7倍PE买一个这样的垄断者，是我扫完50家之后看到的最大反差。
+But the true "pricing error" in the chip layer is **SK Hynix**: 62% global share in HBM high-bandwidth memory, sold-out supply through 2028, and only 5.8-7x forward P/E. Every AI training chip in the world needs HBM, and SK Hynix's pricing power is strengthening as HBM complexity rises. Buying that kind of monopolist at 7x P/E is the biggest contrast I found after scanning all 50 companies.
 
-这一层还有两个被忽视的小市值：**关东电化（14亿美元市值）**，日本唯一的NF3/WF6特种气体供应商，每片晶圆制造都需要它的气体；**Ibiden（40亿美元市值）**，GPU封装基板的关键瓶颈，正在投5000亿日元扩产。
+This layer also has two overlooked small caps: **Kanto Denka ($1.4bn market cap)**, Japan's only NF3 / WF6 specialty-gas supplier whose gases are needed in every wafer-fabrication process; and **Ibiden ($4.0bn market cap)**, a key bottleneck in GPU package substrates, currently investing JPY 500.0bn to expand capacity.
 
-### 第3层 基础设施：7250亿美元真金白银，找同赛道的估值差
+### Layer 3 Infrastructure: $725.0bn of Real Money, and the Opportunity Is Peer Valuation Gaps
 
-四大云厂商2026年资本开支合计7250亿美元，同比翻倍。这些钱流向光模块、网络、液冷、服务器。
+The four major cloud providers will spend a combined $725.0bn in capex in 2026, roughly doubling year over year. This money flows into optical modules, networking, liquid cooling, and servers.
 
-这一层龙头公司的估值已经很贵了——Vertiv 80倍PE、Arista 60倍。但有一个明显的估值差：**nVent Electric（35倍PE）做的事和Vertiv几乎一样**（数据中心配电、液冷、机柜），估值却只有Vertiv的一半不到，液冷订单积压增长了3倍。
+Valuations for the leaders in this layer are already expensive: Vertiv at 80x P/E and Arista at 60x. But there is one clear valuation gap: **nVent Electric (35x P/E) does almost the same work as Vertiv** - data center power distribution, liquid cooling, and racks - yet trades at less than half Vertiv's multiple, while liquid-cooling backlog has grown 3x.
 
-中际旭创是中国公司在这一层定价权最强的一个点——全球800G光模块约一半是它的。但股价已经不便宜了。
+Zhongji Innolight is the strongest pricing-power point for Chinese companies in this layer: it supplies roughly half of global 800G optical modules. But the share price is no longer cheap.
 
-### 第4层 模型：Anthropic超越了OpenAI，但最被忽视的是Reddit
+### Layer 4 Models: Anthropic Has Overtaken OpenAI, but Reddit Is the Most Overlooked
 
-Anthropic年化收入从10亿涨到470亿只用了14个月，估值9650亿美元超越了OpenAI。2026年下半年两家都要IPO。
+Anthropic's annualized revenue grew from $1.0bn to $47.0bn in only 14 months, and its valuation of $965.0bn has surpassed OpenAI. Both companies are expected to IPO in the second half of 2026.
 
-但模型层最有意思的投资逻辑不在模型公司本身，而在两个"卖铲子"的角色：
+But the most interesting investment logic in the model layer is not in model companies themselves. It is in two "picks-and-shovels" roles:
 
-**Reddit**——市场按社交媒体给它定价，但人类真实对话数据是大模型训练的不可再生资源。Google和OpenAI都签了多年数据授权合同。它不是社交媒体公司，是AI训练数据的矿主。
+**Reddit** - The market prices it as social media, but authentic human conversation data is a non-renewable resource for large-model training. Google and OpenAI have both signed multi-year data-licensing agreements. It is not a social media company; it is the mine owner for AI training data.
 
-**Scale AI（未上市，估值290亿）**——GPT-4、Gemini、美国军方AI系统背后的数据标注供应商。不管哪个模型赢，都需要Scale AI标数据。
+**Scale AI (private, $29.0bn valuation)** - The data-labeling supplier behind GPT-4, Gemini, and U.S. military AI systems. No matter which model wins, someone has to label the data, and Scale AI is that supplier.
 
-另一个被忽视的估值洼地是**Cohere**——做企业AI私有部署，ARR 2.4亿美元，估值只有70-200亿，约30倍ARR，而OpenAI和Anthropic都在40-50倍。做同样的事，便宜得多。
+Another overlooked valuation pocket is **Cohere**: it focuses on private enterprise AI deployments, has ARR of $240.0mn, and is valued at only $7.0-20.0bn, or about 30x ARR, while OpenAI and Anthropic are at 40-50x. It does similar work at a much lower price.
 
-### 第5层 应用：真正靠AI赚钱的没几家，但估值分裂严重
+### Layer 5 Applications: Few Companies Truly Make Money from AI, but Valuation Dispersion Is Severe
 
-这一层的残酷现实：大多数"AI概念股"的AI收入占比仍然很低。Palantir是最纯正的（85%增速），但160倍PE；Tesla更极端（350倍PE）。
+The harsh reality in this layer: most "AI concept stocks" still derive only a low share of revenue from AI. Palantir is the purest (85% growth), but trades at 160x P/E; Tesla is even more extreme (350x P/E).
 
-真正的机会在估值被压制的一端：
+The real opportunities are at the compressed-valuation end:
 
-**Salesforce（22倍PE）**——Agentforce增速200%+，但市场只看到整体10%的营收增速，按"老CRM公司"定价。如果AI业务占比从3%提升到15%，整体增速就会重新加速，22倍PE根本不够。
+**Salesforce (22x P/E)** - Agentforce is growing 200%+, but the market only sees total revenue growth of 10% and still prices it as an "old CRM company." If AI revenue share rises from 3% to 15%, total growth will reaccelerate, and 22x P/E will not be enough.
 
-**Adobe（15倍PE）**——创意软件的绝对垄断者，历史最低估值。市场担心AI会颠覆它，但Firefly证明AI是增量不是替代——75%的财富500强在使用Firefly，240亿资产已被生成。如果这个恐惧是错的，15倍PE就是经典的"恐惧中买入"。
+**Adobe (15x P/E)** - The absolute monopolist in creative software, trading at its lowest valuation in history. The market fears AI will disrupt it, but Firefly shows AI is incremental rather than substitutional: 75% of the Fortune 500 use Firefly, and 24.0bn assets have already been generated. If that fear is wrong, 15x P/E is a classic "buying into fear" opportunity.
 
-**Tempus AI（90亿市值）**——AI精准医疗最纯正的上市公司，从52周高点腰斩后估值回到合理区间，2025年营收增长83%，合同积压超10亿美元。
+**Tempus AI ($9.0bn market cap)** - The purest listed company in AI precision medicine. After being cut in half from its 52-week high, valuation has returned to a reasonable range; 2025 revenue grew 83%, and contract backlog exceeds $1.0bn.
 
-## 全场Top 10
+## Overall Top 10
 
-跨五层综合排序，按"卡脖子程度 × 估值被低估程度"：
+Comprehensive ranking across the five layers by "degree of bottleneck control x valuation underpricing":
 
-| 排名 | 公司 | 层级 | P/E | 一句话逻辑 |
+| Rank | Company | Layer | P/E | One-Sentence Thesis |
 |------|------|------|-----|----------|
-| 1 | SK海力士 | 芯片 | 5.8-7x | HBM 62%份额+供不应求到2028年，7倍PE是全链最大定价错误 |
-| 2 | AZZ Inc. | 能源 | 13x | 每座变电站的钢结构防腐必经工序，市场完全没给AI逻辑 |
-| 3 | Salesforce | 应用 | 22x | Agentforce +200%增速，22倍PE按"老CRM"定价 |
-| 4 | Adobe | 应用 | 15x | 创意垄断者以历史最低PE交易，恐惧造就的机会 |
-| 5 | 关东电化 | 芯片 | 19-50x | 14亿美元市值坐在万亿产业链上，日本唯一NF3供应商 |
-| 6 | nVent | 基础设施 | 35x | 做和Vertiv同样的事，估值只有一半 |
-| 7 | Ibiden | 芯片 | 27-67x | 40亿美元的GPU封装基板瓶颈 |
-| 8 | Reddit | 模型 | — | 市场按社交媒体定价，实际是AI训练数据矿主 |
-| 9 | Tempus AI | 应用 | 亏损 | AI精准医疗最纯正标的，腰斩后估值合理 |
-| 10 | Nvidia | 芯片 | 26x | 5万亿市值但前瞻PE仅26倍，增长太快估值跟不上 |
+| 1 | SK Hynix | Chips | 5.8-7x | 62% HBM share + sold-out supply through 2028; 7x P/E is the biggest pricing error in the whole chain |
+| 2 | AZZ Inc. | Energy | 13x | Mandatory corrosion-protection step for every substation's steel structure, with no AI thesis priced in |
+| 3 | Salesforce | Applications | 22x | Agentforce growing +200%, but 22x P/E still prices it as "old CRM" |
+| 4 | Adobe | Applications | 15x | Creative-software monopolist trading at its lowest historical P/E; fear has created the opportunity |
+| 5 | Kanto Denka | Chips | 19-50x | $1.4bn market cap sitting on a trillion-dollar supply chain; Japan's only NF3 supplier |
+| 6 | nVent | Infrastructure | 35x | Does the same work as Vertiv at only half the valuation |
+| 7 | Ibiden | Chips | 27-67x | $4.0bn GPU package-substrate bottleneck |
+| 8 | Reddit | Models | — | Market prices it as social media; in reality, it is an AI training-data mine owner |
+| 9 | Tempus AI | Applications | Loss-making | Purest AI precision-medicine play; valuation is reasonable after a 50% drawdown |
+| 10 | Nvidia | Chips | 26x | $5.0tn market cap but only 26x forward P/E; growth is too fast for valuation to keep up |
 
-## 写在最后
+## Final Thoughts
 
-扫完五层50家公司之后，最强烈的感受是：**最好的AI投资机会不在最热门的名字里。**
+After scanning 50 companies across five layers, my strongest impression is this: **the best AI investment opportunities are not in the hottest names.**
 
-Nvidia、台积电、Anthropic这些公司确实是最强的，但市场也最了解它们。真正的超额收益来自供应链上被忽视的角落——做热镀锌的AZZ、做天然气压缩的Archrock、做封装基板的Ibiden。
+Nvidia, TSMC, and Anthropic are indeed among the strongest companies, but the market also understands them best. True excess returns come from overlooked corners of the supply chain: AZZ in hot-dip galvanizing, Archrock in natural gas compression, Ibiden in package substrates.
 
-黄仁勋说的"五层蛋糕"给了一个很好的思考框架：越底层、越物理、越不可绕过的环节，投资确定性越高。最性感的层（模型、应用）确定性最低；最无聊的层（能源、基础设施）确定性最高。
+Jensen Huang's "five-layer cake" provides a useful thinking framework: the lower, more physical, and harder-to-bypass a link is, the higher the investment certainty. The sexiest layers (models and applications) have the lowest certainty; the most boring layers (energy and infrastructure) have the highest certainty.
 
-后面五篇会逐层展开，每层10家公司逐一拆解。
+The next five articles will expand layer by layer and break down 10 companies in each layer.
 
 ---
 
-*数据来源：SEC财报、公司电话会议、高盛/摩根士丹利/花旗/UBS研报、TrendForce、IDC*
+*Sources: SEC filings, company earnings calls, Goldman Sachs / Morgan Stanley / Citi / UBS research, TrendForce, IDC*
 
-*免责声明：本文仅为投资研究，不构成投资建议。*
+*Disclaimer: This article is for investment research only and does not constitute investment advice.*

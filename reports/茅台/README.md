@@ -1,25 +1,25 @@
-# 贵州茅台（600519.SH）— 投研团队分析
+# Kweichow Moutai (600519.SH) - Investment Team Analysis
 
-**分析日期**：2026年4月9日
-**使用 Skill**：`/investment-team`
-**信息丰富度**：A级（信息充裕）
+**Analysis date**: 2026-04-09
+**Skill used**: `/investment-team`
+**Information richness**: A-level (abundant information)
 
-## 研究团队
+## Research Team
 
-| 角色 | 视角 | 评分 | 核心结论 |
-|------|------|:----:|----------|
-| business-analyst | 段永平 | ★★★★☆ | 社交货币护城河极深，但飞轮出现减速信号 |
-| financial-analyst | 巴菲特 | ★★★★☆ | 财务指标全球顶级，安全边际不足 |
-| industry-researcher | 芒格 | ★★★☆☆ | 行业量价利三降，日本清酒警示 |
-| risk-assessor | 李录 | ★★★☆☆ | 治理风险系统性，代际消费转变是慢变量 |
+| Role | Viewpoint | Score | Key Takeaway |
+|------|-----------|:----:|--------------|
+| business-analyst | Duan Yongping | ★★★★☆ | A very deep social-currency moat, but the flywheel is showing signs of slowing |
+| financial-analyst | Buffett | ★★★★☆ | World-class financial metrics, but the margin of safety is insufficient |
+| industry-researcher | Munger | ★★★☆☆ | Industry volume, price, and profit are all declining; Japanese sake is a warning |
+| risk-assessor | Li Lu | ★★★☆☆ | Governance risk is structural; generational consumption shifts are a slow variable |
 
-**综合评分：3.6 / 5**
+**Overall score: 3.6 / 5**
 
-## 核心结论
+## Key Takeaway
 
-好公司，但不是好价格。当前1,440元/21倍PE安全边际不足，建议等待1,100-1,200元区间。
+A great company, but not a great price. At RMB 1,440 and 21x P/E, the margin of safety is insufficient. It is better to wait for the RMB 1,100-1,200 range.
 
-## 报告目录
+## Report Index
 
-- [最终报告.md](最终报告.md) — Team Lead 综合报告（含四维评分、投资建议、价格区间）
-- [02-财务估值分析-巴菲特视角.md](02-财务估值分析-巴菲特视角.md) — 含 financial_rigor.py 精确验算记录
+- Final-Report.md - Team Lead summary report (including four-dimensional scoring, investment recommendation, and price range)
+- 02-Financial-Valuation-Analysis-Buffett-View.md - includes precise verification records from `financial_rigor.py`

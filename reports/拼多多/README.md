@@ -1,32 +1,32 @@
-# 拼多多（PDD Holdings）投资研究 — 2026.04.07
+# PDD Holdings Investment Research - 2026-04-07
 
-## 研究框架
+## Research Framework
 
-使用**四大师并行分析框架**，由4个AI Agent并行完成研究，Team Lead汇总输出最终报告。
+We use a **four-master parallel analysis framework**, with four AI agents completing the research in parallel and the Team Lead synthesizing the final report.
 
-| 角色 | 分析框架 | 报告文件 |
-|------|---------|---------|
-| 商业模式分析师 | 段永平视角 | [01-商业模式分析-段永平视角.md](01-商业模式分析-段永平视角.md) |
-| 财务分析师 | 巴菲特视角 | [02-财务估值分析-巴菲特视角.md](02-财务估值分析-巴菲特视角.md) |
-| 行业研究员 | 芒格视角 | [03-行业竞争分析-芒格视角.md](03-行业竞争分析-芒格视角.md) |
-| 风险评估师 | 李录视角 | [04-风险管理层评估-李录视角.md](04-风险管理层评估-李录视角.md) |
-| **Team Lead** | **综合框架** | [**最终报告.md**](最终报告.md) |
+| Role | Framework | Report File |
+|------|-----------|-------------|
+| Business model analyst | Duan Yongping view | 01-Business-Model-Analysis-Duan-Yongping-View.md |
+| Financial analyst | Buffett view | 02-Financial-Valuation-Analysis-Buffett-View.md |
+| Industry researcher | Munger view | 03-Industry-Competition-Analysis-Munger-View.md |
+| Risk assessor | Li Lu view | 04-Risk-Management-and-Management-Assessment-Li-Lu-View.md |
+| Team Lead | Integrated framework | Final-Report.md |
 
-## 核心结论
+## Key Takeaway
 
-- **综合评分：3.4 / 5**
-- **一句话**：便宜有好货，但不确定能好10年。扣现金PE 6.3x极具吸引力，但护城河偏窄、Temu根基被关税动摇、10年确定性不足。
-- **建议**：适合中等仓位价值投资，不适合重仓。
+- **Overall score: 3.4 / 5**
+- **One-line view**: Cheap but good, though it is not clear that it will stay good for 10 years. After subtracting cash, the P/E of 6.3x is highly attractive, but the moat is relatively narrow, Temu's foundation is being shaken by tariffs, and 10-year certainty is limited.
+- **Recommendation**: Suitable for a medium-sized value-investing position, but not for a heavy position.
 
-## 四维评分
+## Four-Dimensional Score
 
-| 维度 | 评分 |
-|------|:----:|
-| 商业模式 & 护城河 | 3.7/5 |
-| 财务 & 估值 | 4.4/5 |
-| 行业 & 竞争 | 3.5/5 |
-| 风险 & 管理层 | 2.0/5 |
+| Dimension | Score |
+|-----------|:-----:|
+| Business model & moat | 3.7/5 |
+| Financials & valuation | 4.4/5 |
+| Industry & competition | 3.5/5 |
+| Risk & management | 2.0/5 |
 
 ---
 
-*报告基于公开信息，不构成投资建议。*
+*This report is based on public information and does not constitute investment advice.*

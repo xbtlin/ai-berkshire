@@ -1,28 +1,29 @@
-# 腾讯 2026Q1 财报精读 — 读者评审报告
+# Tencent 2026 Q1 Earnings Deep Dive - Reader Review
 
-## 总体评分：6.5/10（初稿）→ 修改后预估8/10
+## Overall Score: 6.5/10 (draft) -> Estimated 8/10 after revisions
 
-## 优点
-1. 核心数据齐全，框架清晰，3分钟能读完
-2. "三个最重要的变化"提炼有价值，选得准、有张力
-3. 正反两面都有涉及，比大多数公众号文章诚实
+## Strengths
+1. The core data is complete and the framework is clear, so it can be read in 3 minutes
+2. The extraction of the "three most important changes" is valuable, well chosen, and strong in narrative tension
+3. It covers both the bullish and bearish sides, which is more honest than most public-market articles
 
-## 必须修改（已处理）
-1. ✅ 预期数据标注来源（彭博一致预期）
-2. ✅ 回购补充绝对数字和同比对比表
-3. ✅ 结论改为分投资者类型的行动框架
+## Must-Fix Items (already handled)
+1. ✅ Marked the source of forecast data (Bloomberg consensus estimates)
+2. ✅ Added absolute buyback figures and a year-over-year comparison table
+3. ✅ Reworked the conclusion into an action framework by investor type
 
-## 建议优化（已采纳）
-1. ✅ 增加上季度增速，体现加速趋势
-2. ✅ 展开游戏递延机制说明
-3. ✅ AI拆成两层（赋能现有业务 vs 独立产品竞争）
-4. ✅ 估值补充扣除净现金PE和FCF收益率
+## Suggested Improvements (already adopted)
+1. ✅ Added quarter-over-quarter growth to show acceleration
+2. ✅ Expanded the explanation of game deferred revenue mechanics
+3. ✅ Split AI into two layers: enabling existing businesses vs. competing as a standalone product
+4. ✅ Added valuation metrics for net-cash-adjusted P/E and FCF yield
 
-## 读者最想知道但需补充的问题
-1. 回购减少对股价的影响 → 已在文中提及
-2. 广告+20%的可持续性 → 部分涉及，后续跟踪
-3. AI投入细节和回报时间表 → 已说明管理层未给指引
-4. 社交网络-2%原因 → 已解释为音乐/视频付费疲软
+## Questions Readers Still Want Answered
+1. The impact of buybacks on share price -> already mentioned in the text
+2. Whether the +20% ad growth is sustainable -> partially addressed, to be tracked later
+3. AI spending details and payback timeline -> already explained that management gave no guidance
+4. Why social networks were down 2% -> already explained as weak music/video paid growth
 
-## 一句话总评
-数据扎实，修改后"灵魂"补上了——读者不仅知道发生了什么，还知道对自己意味着什么。
+## One-Sentence Verdict
+
+The data is solid, and after the revisions the "soul" is there - readers will not only know what happened, but also what it means for them.

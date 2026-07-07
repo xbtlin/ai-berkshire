@@ -1,4 +1,4 @@
-缺少以下视角报告，需重新运行 /investment-team 补全：
-- 01-商业模式分析-段永平视角.md
-- 03-行业竞争分析-芒格视角.md
-- 04-风险管理层评估-李录视角.md
+The following perspective reports are missing and need /investment-team to be rerun to fill them in:
+- 01-Business-Model-Analysis-Duan-Yongping-View.md
+- 03-Industry-Competition-Analysis-Munger-View.md
+- 04-Risk-Management-and-Management-Assessment-Li-Lu-View.md
