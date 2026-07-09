@@ -39,6 +39,51 @@ from pathlib import Path
 from playwright.async_api import async_playwright
 
 
+# ============================================================
+# SECURITY: Path traversal prevention (v2 — os.path.commonpath)
+# CWE-22: Validate all file path arguments
+# ============================================================
+
+import os as _os
+import sys as _sys
+
+# Allowed write directories: data/, reports/, /tmp
+_SCRAPER_BASE = _os.path.realpath(
+    _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..')
+)
+_ALLOWED_WRITE_DIRS = [
+    _os.path.join(_SCRAPER_BASE, 'data'),
+    _os.path.join(_SCRAPER_BASE, 'reports'),
+    _os.path.realpath('/tmp'),
+]
+_ALLOWED_READ_DIRS = [
+    _SCRAPER_BASE,
+    _os.path.realpath('/tmp'),
+]
+
+def _safe_path(user_path: str, allowed_dirs: list) -> str:
+    """Resolve a path and verify it is a child of an allowed directory.
+
+    Uses os.path.commonpath() == allowed_dir to prevent:
+    - Sibling prefix attacks (reports_evil/ bypassing reports/)
+    - Prefix collisions (/tmpx/ matching /tmp/)
+    - macOS /tmp -> /private/tmp (realpath resolves the link first)
+    """
+    resolved = _os.path.realpath(user_path)
+    for allowed in allowed_dirs:
+        if _os.path.commonpath([resolved, allowed]) == allowed:
+            return resolved
+    print(f"\033[91m❌ Security error: path not allowed ({user_path})\033[0m", file=_sys.stderr)
+    _sys.exit(1)
+
+def _validate_write_path(user_path: str) -> str:
+    return _safe_path(user_path, _ALLOWED_WRITE_DIRS)
+
+def _validate_read_path(user_path: str) -> str:
+    return _safe_path(user_path, _ALLOWED_READ_DIRS)
+
+
+
 def is_match(text, keywords):
     t = (text or '').lower()
     return any(k.lower() in t for k in keywords)
@@ -146,20 +191,20 @@ async def interactive_login(pw, state_path, user_id):
         print("10 分钟内未检测到登录，退出")
         await browser.close()
         return None
-    await context.storage_state(path=state_path)
+    await context.storage_state(path=_validate_write_path(state_path))
     print(f"登录态已保存 → {state_path}")
     return browser, context, page
 
 
 async def load_with_state(pw, state_path, user_id):
-    if not os.path.exists(state_path):
+    if not os.path.exists(_validate_read_path(state_path)):
         return None
     browser = await pw.chromium.launch(
         headless=True,
         args=['--no-sandbox', '--disable-blink-features=AutomationControlled'],
     )
     context = await browser.new_context(
-        storage_state=state_path,
+        storage_state=_validate_read_path(state_path),
         user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         locale='zh-CN',
         viewport={'width': 1280, 'height': 800},
@@ -197,7 +242,7 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_pa
     all_posts = {}
     if dump_all_path and os.path.exists(dump_all_path):
         try:
-            for e in json.load(open(dump_all_path)):
+            for e in json.load(open(_validate_read_path(dump_all_path))):
                 all_posts[e['id']] = e
             print(f"  ↪ 载入已有全量缓存：{len(all_posts)} 条")
         except Exception as e:
@@ -261,11 +306,11 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_pa
             print(f"  进度文件读取失败: {e}")
 
     def save_progress(next_page):
-        with open(progress_path, 'w', encoding='utf-8') as f:
+        with open(_validate_write_path(progress_path), 'w', encoding='utf-8') as f:
             json.dump({'next_page': next_page, 'collected': list(collected.values())},
                       f, ensure_ascii=False)
         if dump_all_path:
-            with open(dump_all_path, 'w', encoding='utf-8') as f:
+            with open(_validate_write_path(dump_all_path), 'w', encoding='utf-8') as f:
                 json.dump(list(all_posts.values()), f, ensure_ascii=False)
 
     consec_fail = 0
@@ -314,7 +359,7 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_pa
 
     # 最后一次落盘全量缓存
     if dump_all_path:
-        with open(dump_all_path, 'w', encoding='utf-8') as f:
+        with open(_validate_write_path(dump_all_path), 'w', encoding='utf-8') as f:
             json.dump(list(all_posts.values()), f, ensure_ascii=False)
         print(f"  全量缓存 → {dump_all_path}（{len(all_posts)} 条）")
     print(f"\n完成：扫描 {total_posts} 条，命中 {found} 条")
@@ -366,7 +411,7 @@ def parse_args():
 
 
 def filter_from_cache(cache_path, keywords, user_id):
-    posts = json.load(open(cache_path))
+    posts = json.load(open(_validate_read_path(cache_path)))
     out = []
     for p in posts:
         if is_match((p.get('title','') + ' ' + p.get('text','')), keywords):
@@ -388,8 +433,8 @@ async def main():
         print(f"从缓存 {args.from_cache} 筛出 {len(collected)} 条（关键词: {keywords}）")
         if not collected:
             return
-        Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-        with open(args.output, 'w', encoding='utf-8') as f:
+        Path(_validate_write_path(args.output)).parent.mkdir(parents=True, exist_ok=True)
+        with open(_validate_write_path(args.output), 'w', encoding='utf-8') as f:
             f.write(format_md(collected, user_id, keywords))
         print(f"Markdown → {args.output}")
         return
@@ -419,12 +464,12 @@ async def main():
     print(f"\n=== 最终: {len(collected)} 条命中 ===")
     if not collected:
         return
-    with open(raw_json, 'w', encoding='utf-8') as f:
+    with open(_validate_write_path(raw_json), 'w', encoding='utf-8') as f:
         json.dump(list(collected.values()), f, ensure_ascii=False, indent=2)
     print(f"原始JSON → {raw_json}")
     if args.output:
-        Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-        with open(args.output, 'w', encoding='utf-8') as f:
+        Path(_validate_write_path(args.output)).parent.mkdir(parents=True, exist_ok=True)
+        with open(_validate_write_path(args.output), 'w', encoding='utf-8') as f:
             f.write(format_md(collected, args.user_id, keywords))
         print(f"Markdown  → {args.output}")
 

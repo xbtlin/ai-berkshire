@@ -30,6 +30,39 @@ import sys
 from decimal import Decimal, Context, ROUND_HALF_EVEN
 from random import Random
 
+
+# ============================================================
+# SECURITY: Path traversal prevention (v2 — os.path.commonpath)
+# CWE-22: Validate file path arguments against allowed directory
+# Uses commonpath() for correct boundary checks, rejecting:
+#   - Sibling prefix attacks (reports_evil/)
+#   - Prefix collisions (/tmpx/)
+#   - macOS symlink aliases (/tmp -> /private/tmp)
+# ============================================================
+
+import os as _os
+import sys as _sys
+
+_REPORTS_DIR = _os.path.realpath(
+    _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'reports')
+)
+
+def _resolve_report_path(user_path: str) -> str:
+    """Resolve a path and assert it is within the reports/ directory.
+
+    Uses os.path.commonpath() which correctly handles:
+    - Normal subpaths: reports/Q2.md -> allowed
+    - Sibling prefixes: reports_evil/ -> rejected (commonpath returns parent)
+    - Symlink resolution: /tmp vs /private/tmp (macOS) -> handled by realpath
+    """
+    resolved = _os.path.realpath(user_path)
+    if _os.path.commonpath([resolved, _REPORTS_DIR]) != _REPORTS_DIR:
+        print(f"\033[91m❌ Security error: path not allowed ({user_path})\033[0m", file=_sys.stderr)
+        print(f"   File must be under {_REPORTS_DIR}", file=_sys.stderr)
+        _sys.exit(1)
+    return resolved
+
+
 _CTX = Context(prec=28, rounding=ROUND_HALF_EVEN)
 
 # ---------------------------------------------------------------------------
@@ -449,11 +482,12 @@ def main():
     args = parser.parse_args()
 
     if args.command == 'extract':
-        if not os.path.exists(args.report):
+        safe_path = _resolve_report_path(args.report)
+        if not os.path.exists(safe_path):
             print(f'❌ 文件不存在: {args.report}', file=sys.stderr)
             sys.exit(1)
 
-        with open(args.report, 'r', encoding='utf-8') as f:
+        with open(safe_path, 'r', encoding='utf-8') as f:
             text = f.read()
 
         all_points = extract_data_points(text)
