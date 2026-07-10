@@ -1,773 +1,772 @@
-# 拼多多（PDD Holdings）深度估值报告
-**报告日期**: 2026-04-13  
-**股票代码**: NASDAQ: PDD  
-**当前股价**: $100.87/ADS（2026-04-10 收盘价）  
-**市值**: ~$1,432亿 USD  
-**报告状态**: 原始数据溯源✅ | 分部估值分析 | 三情景加权
+# Pinduoduo (PDD Holdings) Deep Valuation Report
+**Report Date**: 2026-04-13
+**Ticker**: NASDAQ: PDD
+**Current Share Price**: US$100.87/ADS (2026-04-10 close)
+**Market Cap**: ~US$143.2 billion
+**Report Status**: source traceability complete ✅ | segment valuation analysis | three-scenario weighting
 
 ---
 
-## 一、事实基础（全部附来源）
+## I. Factual Basis (All Sourced)
 
-### 1.1 股价与市值（截至2026-04-10）
+### 1.1 Stock Price and Market Cap (as of 2026-04-10)
 
-| 指标 | 数值 | 来源 | 备注 |
+| Metric | Value | Source | Notes |
 |------|------|------|------|
-| **收盘价** | $100.87/ADS | [Yahoo Finance](https://finance.yahoo.com/quote/PDD/) | 2026-04-10 NASDAQ收盘 |
-| **总股本** | 14.2亿 ADS | [PDD Q4 2025财报](https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025) | 稀释后 |
-| **市值** | $1,432亿 | 计算：$100.87 × 14.2亿 | 核验偏差 ±0.9% ✅ |
-| **净现金** | $604亿（RMB 4,223亿） | [PDD FY2025年报](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm) | 零有息负债 |
-| **企业价值** | $828亿 | 市值 - 净现金 | 扣除现金后EV |
+| **Close price** | US$100.87/ADS | [Yahoo Finance](https://finance.yahoo.com/quote/PDD/) | NASDAQ close on 2026-04-10 |
+| **Total shares outstanding** | 1.42 billion ADS | [PDD Q4 2025 earnings release](https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025) | Diluted |
+| **Market cap** | US$143.2 billion | Calculation: US$100.87 × 1.42 billion | Verification error within ±0.9% ✅ |
+| **Net cash** | US$60.4 billion (RMB 422.3 billion) | [PDD FY2025 annual report](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm) | Zero interest-bearing debt |
+| **Enterprise value** | US$82.8 billion | Market cap - net cash | EV after cash |
 
-**来源溯源**:
-- 股价：[Yahoo Finance PDD](https://finance.yahoo.com/quote/PDD/)
-- 总股本：[StockTitan PDD Q4报告](https://www.stocktitan.net/news/PDD/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025-yypno24d08v2.html)
-- 净现金：SEC 20-F Form  [PDD Holdings December 31, 2024](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm)
+**Source traceability**:
+- Share price: [Yahoo Finance PDD](https://finance.yahoo.com/quote/PDD/)
+- Shares outstanding: [StockTitan PDD Q4 report](https://www.stocktitan.net/news/PDD/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025-yypno24d08v2.html)
+- Net cash: SEC 20-F form [PDD Holdings December 31, 2024](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm)
 
-### 1.2 近3年财务数据汇总
+### 1.2 Three-Year Financial Summary
 
-#### 收入分部（RMB 百万）
+#### Revenue by Segment (RMB million)
 
-| 时期 | 总收入 | 在线营销(广告) | YoY | 交易服务(佣金) | YoY | 备注 |
+| Period | Total Revenue | Online Marketing (Ads) | YoY | Transaction Services (Commissions) | YoY | Notes |
 |------|--------|--------------|-----|---------------|-----|------|
-| **FY2023** | 247,600 | — | — | — | — | 基数年 |
+| **FY2023** | 247,600 | — | — | — | — | Base year |
 | **FY2024** | 393,836 | 197,934 | +29% | 195,902 | +108% | [SEC 20-F](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm) |
-| **FY2025** | 431,846 | 217,783 | +10% | 214,063 | +9% | [Q4 2025财报](https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025) |
+| **FY2025** | 431,846 | 217,783 | +10% | 214,063 | +9% | [Q4 2025 earnings release](https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025) |
 
-**增速对比**：
+**Growth comparison**:
 - FY2023→2024: +59%
-- FY2024→2025: +10%（增速大幅放缓）
+- FY2024→2025: +10% (growth slowed sharply)
 
-#### 净利润与现金流（RMB 百万）
+#### Net Profit and Cash Flow (RMB million)
 
-| 指标 | FY2023 | FY2024 | FY2025 | 变化 | 来源 |
+| Metric | FY2023 | FY2024 | FY2025 | Change | Source |
 |------|--------|--------|--------|------|------|
-| **GAAP净利润** | ~70,000 | 112,435 | 99,365 | **-12%** | [SEC 6-K & 20-F](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm) |
-| **经营利润** | ~71,000 | 108,423 | 94,624 | **-13%** | [同上] |
-| **经营现金流(OCF)** | ~93,000 | ~120,000 | 106,939 | -11% | [FY2025现金流表](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm) |
-| **资本支出** | ~1,500 | ~1,900 | ~2,100 | 极低 | 轻资产模式 |
-| **自由现金流** | ~91,500 | ~118,100 | ~104,839 | -11% | OCF - CapEx |
+| **GAAP net income** | ~70,000 | 112,435 | 99,365 | **-12%** | [SEC 6-K & 20-F](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm) |
+| **Operating income** | ~71,000 | 108,423 | 94,624 | **-13%** | [same as above] |
+| **Operating cash flow (OCF)** | ~93,000 | ~120,000 | 106,939 | -11% | [FY2025 cash flow statement](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm) |
+| **Capital expenditures** | ~1,500 | ~1,900 | ~2,100 | Very low | Asset-light model |
+| **Free cash flow** | ~91,500 | ~118,100 | ~104,839 | -11% | OCF - CapEx |
 
-**净利润率趋势**：
+**Net margin trend**:
 - FY2023: ~28.3%
-- FY2024: **28.6%**（峰值）
-- FY2025: **23.0%**（-5.6pp）
+- FY2024: **28.6%** (peak)
+- FY2025: **23.0%** (-5.6pp)
 
-#### 季度利润走势（FY2025）
+#### Quarterly Profit Trend (FY2025)
 
-| 季度 | 总收入 | 经营利润 | 经营利润率 | 净利润 | 净利率 | YoY利润增速 |
+| Quarter | Total Revenue | Operating Income | Operating Margin | Net Income | Net Margin | YoY Profit Growth |
 |------|--------|---------|-----------|--------|--------|------------|
 | Q1 | 95,672 | 16,086 | 16.8% | 14,742 | 15.4% | **-47%** |
-| Q2 | 103,985 | ~25,793 | ~24.8% | ~30,753 | ~29.6% | 改善 |
-| Q3 | 108,277 | 25,026 | 23.1% | 29,328 | 27.1% | 改善 |
+| Q2 | 103,985 | ~25,793 | ~24.8% | ~30,753 | ~29.6% | Improving |
+| Q3 | 108,277 | 25,026 | 23.1% | 29,328 | 27.1% | Improving |
 | Q4 | 123,912 | 27,720 | 22.4% | 24,541 | 19.8% | -11% |
-| **全年** | **431,846** | **94,624** | **21.9%** | **99,365** | **23.0%** | **-12%** |
+| **Full year** | **431,846** | **94,624** | **21.9%** | **99,365** | **23.0%** | **-12%** |
 
-**关键发现**：Q1是利润最低谷（千亿补贴集中体现），Q2-Q3恢复，Q4受旺季高投入拖累再次回落。
+**Key finding**: Q1 was the profit trough (the concentrated subsidy push showed up there), Q2-Q3 recovered, and Q4 rolled over again because of heavy peak-season investment.
 
-### 1.3 经营能力指标
+### 1.3 Operating Capability Indicators
 
-| 指标 | FY2024 | FY2025 | 评估 |
+| Metric | FY2024 | FY2025 | Assessment |
 |------|--------|--------|------|
-| **毛利率** | ~60.9% | ~56.3% | -4.6pp（成本控制压力增加） |
-| **营业成本增速** | — | +23% | 远超收入增速+10% |
-| **OCF/净利润** | ~1.07x | **1.08x** | ✅ 优秀（>1.0为好生意标志） |
-| **ROE** | ~45% | ~31% | 利润下降导致 |
-| **员工人均产出** | — | **RMB 1,840万/人** | 同业领先3-10倍 |
+| **Gross margin** | ~60.9% | ~56.3% | -4.6pp (rising cost-control pressure) |
+| **Operating cost growth** | — | +23% | Far above revenue growth of +10% |
+| **OCF / Net income** | ~1.07x | **1.08x** | ✅ Excellent (>1.0 is a hallmark of a good business) |
+| **ROE** | ~45% | ~31% | Lower due to profit decline |
+| **Revenue per employee** | — | **RMB 18.4 million per person** | 3-10x ahead of peers |
 
-**来源**: [SEC 20-F FY2024](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm), [Q4 2025财报](https://www.sec.gov/Archives/edgar/data/1737806/000110465925113490/tm2531580d1_6k.htm)
+**Source**: [SEC 20-F FY2024](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm), [Q4 2025 earnings release](https://www.sec.gov/Archives/edgar/data/1737806/000110465925113490/tm2531580d1_6k.htm)
 
-### 1.4 业务规模指标
+### 1.4 Business Scale Indicators
 
-#### 国内主站（拼多多）
+#### Domestic Main Platform (Pinduoduo)
 
-| 指标 | FY2024 | FY2025 | 增速 | 数据来源 |
+| Metric | FY2024 | FY2025 | Growth | Data source |
 |------|--------|--------|------|---------|
-| **主站GMV** | ~4.5-4.8万亿RMB | ~5.1-5.8万亿RMB | +8-28% | [分析师推算基于收入增速] |
-| **活跃商户数** | — | 1,420万 | — | [PDD财报披露] |
-| **年活跃买家** | ~9.3亿 | ~9.8亿 | +5% | [推算自在线营销收入] |
-| **在线营销收入** | 197,934M RMB | 217,783M RMB | +10% | [SEC披露] |
+| **Main-site GMV** | ~RMB 4.5-4.8 trillion | ~RMB 5.1-5.8 trillion | +8-28% | [analyst estimate based on revenue growth] |
+| **Active merchants** | — | 14.2 million | — | [PDD disclosure] |
+| **Annual active buyers** | ~930 million | ~980 million | +5% | [estimated from online marketing revenue] |
+| **Online marketing revenue** | RMB 197,934 million | RMB 217,783 million | +10% | [SEC disclosure] |
 
-**关键判断**: 国内主站是"成熟稳定的印钞机"，增长已进入低双位数阶段。广告收入占比50%，是盈利主力。
+**Key judgment**: The domestic main platform is a "mature, stable cash machine," with growth now in the low-double-digit range. Ad revenue is about 50% of the mix and is the main profit engine.
 
-#### Temu（海外跨境电商）
+#### Temu (Overseas Cross-Border E-Commerce)
 
-| 指标 | FY2024 | FY2025 | 变化 | 备注 |
+| Metric | FY2024 | FY2025 | Change | Notes |
 |------|--------|--------|------|------|
-| **GMV（估算）** | $550-600亿 | $700-800亿 | +27-45% | [分析师推算基于交易服务收入] |
-| **交易服务收入贡献** | ~195.9B RMB | ~214.1B RMB | +9% | [SEC披露] |
-| **盈亏状态** | 亏损~$30-50亿/年 | 亏损$20-30亿/年 | 亏损收窄 | [推算] |
-| **美国关税冲击** | 开始显现 | De minimis取消生效 | 关键变量 | [2025年5月生效] |
-| **全球仓库** | 6-8个 | 13个 | +62% | [财报披露] |
+| **GMV (est.)** | US$55-60 billion | US$70-80 billion | +27-45% | [analyst estimate based on transaction services revenue] |
+| **Transaction services revenue contribution** | ~RMB 195.9 billion | ~RMB 214.1 billion | +9% | [SEC disclosure] |
+| **Profit/loss status** | Loss of ~US$3-5 billion/year | Loss of ~US$2-3 billion/year | Loss narrowed | [estimate] |
+| **U.S. tariff shock** | Emerging | De minimis repeal takes effect | Key variable | [effective in May 2025] |
+| **Global warehouses** | 6-8 | 13 | +62% | [disclosed in earnings release] |
 
-**推算方法说明**：PDD不单独披露Temu利润，推算基于：
-1. 交易服务收入（主要来自Temu佣金+广告）
-2. 已知国内主站毛利率（广告60%+）
-3. Temu海外运营成本（物流+关税+本地仓）
-4. 行业研究报告交叉验证
+**Estimation method**: PDD does not disclose Temu profit separately. The estimate is based on:
+1. Transaction services revenue (mainly Temu commissions + ads)
+2. Known gross margin of the domestic main platform (ads at 60%+)
+3. Temu overseas operating costs (logistics + tariffs + local warehouses)
+4. Cross-checks against industry research reports
 
-**数据来源**: [FY2025 6-K财报](https://www.sec.gov/Archives/edgar/data/1737806/000110465925113490/tm2531580d1_6k.htm), [已有研究文档 拼多多-财务结构与千亿投资](../reports/拼多多/拼多多-财务结构与千亿投资-20260410.md)
+**Data sources**: [FY2025 6-K filing](https://www.sec.gov/Archives/edgar/data/1737806/000110465925113490/tm2531580d1_6k.htm), [existing research note on Pinduoduo financial structure and trillion-yuan investment](../reports/Pinduoduo/Pinduoduo-Financial-Structure-and-Trillion-Yuan-Investment-20260410.md)
 
-#### 多多买菜（社区团购）
+#### Duoduo Grocery (Community Group Buying)
 
-| 指标 | 状态 | 评估 |
+| Metric | Status | Assessment |
 |------|------|------|
-| **市场份额** | 44%（行业垄断） | [行业报告] |
-| **收入占比** | ~5-8% | 非主要收入来源 |
-| **盈利** | 已盈利 | 2024年转折，已贡献利润 |
-| **战略价值** | 长期价值 | 作为"最后一公里"物流网络助力农产品上行 |
+| **Market share** | 44% (industry monopoly) | [industry report] |
+| **Revenue share** | ~5-8% | Not a major revenue source |
+| **Profitability** | Already profitable | Turned the corner in 2024 and is now contributing profit |
+| **Strategic value** | Long-term value | Helps agricultural products move upstream as a "last-mile" logistics network |
 
-### 1.5 估值倍数（基于2026-04-10数据）
+### 1.5 Valuation Multiples (Based on 2026-04-10 Data)
 
-| 倍数 | 数值 | 对标 | 评估 |
+| Multiple | Value | Peer benchmark | Assessment |
 |------|------|------|------|
-| **PE (TTM, GAAP)** | 10.5x | 阿里14.2x, 京东10.3x | 历史低位 |
-| **PE (TTM, Non-GAAP)** | 9.6x | — | 更低 |
-| **PE（扣净现金）** | **5.9x** | 内在价值低估 | 市场底部信号 |
-| **PS (TTM)** | 2.4x | 行业平均 3.0-3.5x | 便宜 |
-| **P/FCF** | 9.6x | — | 吸引力强 |
+| **PE (TTM, GAAP)** | 10.5x | Alibaba 14.2x, JD.com 10.3x | Near historical lows |
+| **PE (TTM, Non-GAAP)** | 9.6x | — | Even lower |
+| **PE (net of cash)** | **5.9x** | Deep intrinsic-value discount | A market-bottom signal |
+| **PS (TTM)** | 2.4x | Industry average 3.0-3.5x | Cheap |
+| **P/FCF** | 9.6x | — | Attractive |
 
-**来源**: [MacroTrends PDD](https://www.macrotrends.net/stocks/charts/PDD/pdd-holdings/stock-price-history), [Yahoo Finance](https://finance.yahoo.com/quote/PDD/analysis/)
+**Source**: [MacroTrends PDD](https://www.macrotrends.net/stocks/charts/PDD/pdd-holdings/stock-price-history), [Yahoo Finance](https://finance.yahoo.com/quote/PDD/analysis/)
 
 ---
 
-## 二、业务拆解与战略分析
+## II. Business Breakdown and Strategic Analysis
 
-### 2.1 国内拼多多主站（成熟、盈利、护城河已固化）
+### 2.1 Domestic Pinduoduo Main Platform (Mature, Profitable, Moat Already Entrenched)
 
-**概览**:
-- **收入占比**: ~50%（在线营销+部分交易服务）
-- **增长阶段**: 成熟期（+8-15% YoY）
-- **盈利率**: 40-50% 营业利润率（推算，未披露）
-- **用户基数**: ~9.8亿 年活跃买家
-- **GMV规模**: ~5.1-5.8万亿 RMB
+**Overview**:
+- **Revenue share**: ~50% (online marketing + part of transaction services)
+- **Growth stage**: Mature (+8-15% YoY)
+- **Profitability**: 40-50% operating margin (estimated, not disclosed)
+- **User base**: ~980 million annual active buyers
+- **GMV scale**: ~RMB 5.1-5.8 trillion
 
-**护城河评估**（段永平视角）:
+**Moat assessment** (Duan Yongping perspective):
 
-| 护城河类型 | 评分 | 可持续性 | 说明 |
+| Moat type | Score | Durability | Explanation |
 |-----------|------|---------|------|
-| **规模效应** | ★★★★ | 5年内加深 | 人均产出1,840万RMB，同业领先；但边际效应递减 |
-| **运营效率** | ★★★★★ | 5-10年 | 算法分配、C2M、品牌自营等体系难以复制 |
-| **网络效应** | ★★★ | 收窄中 | 社交裂变边际递减，高度依赖微信生态 |
-| **品牌** | ★★ | 升级中 | "便宜=拼多多"心智已固化但偏负面；新拼姆试图重塑 |
-| **转换成本** | ★★ | 稳定但弱 | 用户可跨平台套利，无付费会员锁定 |
+| **Scale effect** | ★★★★ | Deepens within 5 years | Revenue per head is RMB 18.4 million, well ahead of peers; marginal gains are tapering |
+| **Operating efficiency** | ★★★★★ | 5-10 years | Algorithmic allocation, C2M, and brand-owned operations are hard to replicate |
+| **Network effect** | ★★★ | Narrowing | Social virality is showing diminishing returns and depends heavily on the WeChat ecosystem |
+| **Brand** | ★★ | Improving | The "cheap = Pinduoduo" mindset is entrenched but somewhat negative; New Pinduoduo is trying to reshape it |
+| **Switching costs** | ★★ | Stable but weak | Users can arbitrage across platforms; there is no paid-membership lock-in |
 
-**核心竞争对手**:
-1. **抖音电商** ★★★★★ —— 增速30%+，5年走完阿里20年路，头号威胁
-2. **淘宝/天猫** ★★★ —— 放弃低价转向品质，两条平行线
-3. **京东** ★★ —— 用户分化明显，竞争减弱
+**Core competitors**:
+1. **Douyin e-commerce** ★★★★★ - 30%+ growth, accomplished in 5 years what Alibaba took 20 years to do, the top threat
+2. **Taobao/Tmall** ★★★ - Moved away from low price toward quality; two parallel tracks
+3. **JD.com** ★★ - Clear user segmentation, weaker competition
 
-**新拼姆战略**（应对品牌短板）:
-- 2025年启动自有品牌+品质升级
-- 100亿补贴支持优质商户
-- 供应链投资从"低价极致"向"低价品质"升级
-- **风险**: 品质升级可能牺牲原有"极致低价"竞争力
+**New Pinduoduo strategy** (to address brand weakness):
+- Launched own-brand + quality-upgrade push in 2025
+- RMB 10 billion in subsidies to support high-quality merchants
+- Supply-chain investment is moving from "extreme low price" to "low price with quality"
+- **Risk**: The quality upgrade could sacrifice the original ultra-low-price edge
 
-**千亿投资计划影响**（2025年4月启动，3年计划）:
+**Impact of the trillion-yuan investment plan** (launched in April 2025, 3-year plan):
 
-| 投资方向 | 具体内容 | 对财务的影响 | 预期回报周期 |
+| Investment area | Specific content | Financial impact | Expected payback period |
 |---------|--------|-----------|-----------|
-| 农业供应链 | 100+产区、冷链、产地直发 | 成本增加15-25%，但长期降低农产品损耗 | 3-5年 |
-| 物流下沉 | 西部偏远地区免邮 | 单位经济学恶化，但用户和GMV双增 | 2-3年 |
-| 商家扶持 | 100亿优惠券+费用减免 | 直接压缩利润（Q1体现最明显：-47%） | 长期换护城河 |
+| Agricultural supply chain | 100+ production zones, cold chain, direct-from-origin shipping | Costs rise 15-25%, but long-term agricultural spoilage falls | 3-5 years |
+| Logistics penetration | Free shipping in remote western regions | Unit economics worsen, but users and GMV both increase | 2-3 years |
+| Merchant support | RMB 10 billion in coupons + fee reductions | Directly compresses profit (most visible in Q1: -47%) | Long-term moat building |
 
-**短期代价（已发生，FY2025体现）**:
-- FY2025利润-12% 直接来自千亿投入
-- Q1利润率腰斩至16.8%，之后Q2-Q4缓慢恢复至22-24%
-- **问题**: 2026年利润能否回升至30%+？这是投资论文的关键验证点
+**Short-term cost already visible in FY2025**:
+- FY2025 profit fell 12% directly because of the trillion-yuan investment
+- Q1 margin was cut in half to 16.8%, then gradually recovered to 22-24% in Q2-Q4
+- **Question**: Can profit rebound above 30% in 2026? This is the key test in the investment thesis
 
-### 2.2 Temu（高增长、关税风险、盈利路径不明）
+### 2.2 Temu (High Growth, Tariff Risk, Unclear Path to Profitability)
 
-**概览**:
-- **GMV规模**: ~$700-800亿（2025年推算）
-- **增长率**: +40-60% YoY（但增速放缓）
-- **盈亏状态**: 接近盈亏平衡或微亏（-$20-30亿/年推算）
-- **地理分布**: 美国30%、欧洲35%、其他35%（推算）
-- **模式演变**: 从全托管→半托管→本地仓
+**Overview**:
+- **GMV scale**: ~US$70-80 billion (estimated for 2025)
+- **Growth rate**: +40-60% YoY (but slowing)
+- **Profit/loss status**: Near break-even or slightly loss-making (estimated at -US$2-3 billion/year)
+- **Geographic mix**: U.S. 30%, Europe 35%, other 35% (estimated)
+- **Model evolution**: from full-service → semi-managed → local warehouses
 
-**关税冲击分析**（生死攸关）:
+**Tariff shock analysis** (existential):
 
-| 政策 | 执行时间 | 影响程度 | 应对策略 |
+| Policy | Effective time | Impact level | Response |
 |------|---------|---------|---------|
-| **De minimis取消** | 2025年5月生效 | 直发模式成本↑200-300% | 转本地仓、推半托管 |
-| **美国关税升至145%** | 2025年上半年 | 直发商品成本爆炸 | 削减美国投入，转向欧洲 |
-| **临时税率30%** | 2025年5月起 | 仍有15-25%价格优势 | 维持当前商业模式 |
-| **欧盟€3/件关税** | 2026年7月 | 相对温和 | 欧洲市场增长加速 |
+| **De minimis repeal** | Effective May 2025 | Direct-shipment cost up 200-300% | Shift to local warehouses, push semi-managed model |
+| **U.S. tariffs rise to 145%** | First half of 2025 | Direct-shipped goods become prohibitively expensive | Cut U.S. spending, pivot to Europe |
+| **Temporary 30% rate** | Since May 2025 | Still leaves a 15-25% price advantage | Maintain current business model |
+| **EU tariff of EUR 3/item** | July 2026 | Relatively mild | Europe growth accelerates |
 
-**本地仓转型进展**:
-- 全球13个自营仓（欧洲10个、美国2个、墨西哥1个）
-- 美国本地仓覆盖15-20% 订单，目标2026年提至20-25%
-- 本地仓模式到手成本↑10-15%（vs 直发），但保留价格竞争力
-- 半托管模式2026年开始商业化（卖家分担运费）
+**Local warehouse transition progress**:
+- 13 self-operated warehouses globally (10 in Europe, 2 in the U.S., 1 in Mexico)
+- U.S. local warehouse coverage is 15-20% of orders, with a 2026 target of 20-25%
+- Local-warehouse landed cost is 10-15% higher than direct shipment, but pricing competitiveness remains
+- Semi-managed model begins commercialization in 2026 (sellers share shipping costs)
 
-**盈利情景分析**:
+**Profitability scenario analysis**:
 
-**情景A（悲观：美国被迫退出）**
-- 美国营收占比20-25%，退出直接损失$150-200亿GMV
-- 欧洲+其他市场接力，全球GMV仍增20-30%
-- **影响**: 短期亏损消失（利好），增长减速（利空）
-- **概率**: 15-20%（关税政策继续升级）
+**Scenario A (bearish: forced exit from the U.S.)**
+- The U.S. accounts for 20-25% of revenue; exit would directly cut US$15-20 billion of GMV
+- Europe + other markets take over, and global GMV still grows 20-30%
+- **Impact**: short-term loss disappears (positive), growth slows (negative)
+- **Probability**: 15-20% (if tariff policy keeps escalating)
 
-**情景B（基准：半托管转型成功）**
-- 本地仓+半托管覆盖60%订单，盈利能力改善
-- 美国市场存活但利润率压缩至-5%~0%
-- 欧洲、拉美、东南亚加速增长，全球GMV +30-40%
-- **2026年Temu整体可能实现盈亏平衡甚至小利**
-- **概率**: 60-70%（管理层最乐观假设）
+**Scenario B (base case: semi-managed transition succeeds)**
+- Local warehouses + semi-managed mode cover 60% of orders, improving profitability
+- The U.S. survives, but profit margin compresses to -5% to 0%
+- Europe, Latin America, and Southeast Asia accelerate, with global GMV +30-40%
+- **Temu could reach break-even or even a small profit in 2026**
+- **Probability**: 60-70% (management's most optimistic assumption)
 
-**情景C（乐观：低价模式突破）**
-- 关税政策不升级（保持30-40%），或Temu成功推动本地采购
-- Temu美国DAU止跌回升，欧洲成为增长引擎
-- 2026年Temu盈利率达5-10%
-- **概率**: 10-15%（政策有利且执行完美）
+**Scenario C (bullish: low-price model breaks through)**
+- Tariff policy does not worsen (stays at 30-40%), or Temu successfully pushes local sourcing
+- Temu U.S. DAU stops falling and rebounds, Europe becomes the growth engine
+- Temu profitability reaches 5-10% in 2026
+- **Probability**: 10-15% (policy turns favorable and execution is perfect)
 
-**核心风险**：
-- Temu美国DAU已暴跌58%（2025年vs 2024年），这是衰退的信号而非季节波动
-- Amazon推出Haul直接对标，争抢低价市场
-- SHEIN同样面临关税压力，两者可能在欧洲展开激战
+**Core risks**:
+- Temu U.S. DAU has already collapsed 58% (2025 vs. 2024), a sign of decline rather than seasonality
+- Amazon launched Haul as a direct low-price competitor
+- SHEIN faces tariff pressure too; the two may fight it out in Europe
 
-### 2.3 多多买菜（已盈利的社区团购、战略价值）
+### 2.3 Duoduo Grocery (Already Profitable Community Group Buying, Strategic Value)
 
-**现状**:
-- 市场份额: 44%（垄断地位）
-- 盈利: 2024年实现盈利，2025年继续贡献正利润
-- GMV规模: ~150-200亿 RMB/年（推算）
-- 收入占比: ~5-8%（非主要来源）
+**Current state**:
+- Market share: 44% (monopoly position)
+- Profitability: profitable in 2024 and still contributing positive profit in 2025
+- GMV scale: ~RMB 15-20 billion/year (estimated)
+- Revenue share: ~5-8% (not a primary source)
 
-**战略价值**（被严重低估）:
-- 社区团购的最后一公里物流网络可直接服务农产品电商
-- 与"多多好特产"协同，形成"产地→社团→消费者"一体化链条
-- 竞对（美团优选）已大幅收缩，垄断地位稳固
+**Strategic value** (severely underestimated):
+- The last-mile logistics network of community group buying can directly serve agricultural e-commerce
+- Works with "Duoduo Good Local Products" to form an integrated "origin -> community -> consumer" chain
+- Competitors (Meituan Select) have shrunk sharply, and the monopoly position is now stable
 
-**风险**:
-- 社区团购高度依赖补贴维持，难有高利润率
-- 管理层2026年可能将多多买菜与电商平台合并披露
+**Risks**:
+- Community group buying depends heavily on subsidies to remain viable, so high margins are unlikely
+- Management may combine Duoduo Grocery with the e-commerce platform in 2026 disclosures
 
 ---
 
-## 三、分部估值（逐个估值后加权）
+## III. Segment Valuation (Valued One by One, Then Weighted)
 
-### 3.1 国内拼多多主站估值
+### 3.1 Domestic Pinduoduo Main Platform Valuation
 
-#### 🔑 正确的推导逻辑（从合并净利倒推）
+#### 🔑 The Correct Logic Chain (Back-solving from Consolidated Net Profit)
 
-**关键认知**：PDD不单独披露主站利润，但因为Temu是亏损的，所以 **主站利润 > 合并净利 994亿**。
+**Key insight**: PDD does not separately disclose main-platform profit, but because Temu loses money, **main-platform profit > consolidated net income of 99.4 billion**.
 
-**推导**：
+**Derivation**:
 ```
-合并GAAP净利 = 主站净利 + Temu净利 + 多多买菜等其他
-994亿 (已知) = 主站净利 + (-Temu亏损) + (约持平)
-→ 主站净利 = 994亿 + Temu亏损额
+Consolidated GAAP net income = main-platform net income + Temu net income + Duoduo Grocery and other items
+99.4 billion (known) = main-platform net income + (-Temu loss) + (roughly flat)
+→ main-platform net income = 99.4 billion + Temu loss
 ```
 
-**Temu 2025年亏损推测**（市场共识区间）：
-- 乐观（半托管模式已盈亏平衡）：-70亿至 -140亿 RMB（$10-20亿）
-- 基准：-210亿至 -350亿 RMB（$30-50亿）
-- 悲观（关税+本土仓转型成本）：-420亿至 -560亿 RMB（$60-80亿）
+**Estimated Temu 2025 losses** (market-consensus range):
+- Optimistic (semi-managed model already at break-even): RMB 7-14 billion (US$1-2 billion)
+- Base case: RMB 21-35 billion (US$3-5 billion)
+- Pessimistic (tariffs + local-warehouse transition costs): RMB 42-56 billion (US$6-8 billion)
 
-**主站真实净利推算**：
+**Estimated true main-platform net profit**:
 
-| 情景 | Temu亏损 | 主站净利 |
+| Scenario | Temu loss | Main-platform net profit |
 |------|---------|---------|
-| 乐观（Temu接近盈亏平衡） | -100亿 | **1,094亿** |
-| **基准（市场共识）** | **-280亿** | **1,274亿** |
-| 悲观（Temu重亏） | -490亿 | **1,484亿** |
+| Optimistic (Temu near break-even) | -RMB 10.0 billion | **RMB 109.4 billion** |
+| **Base case (market consensus)** | **-RMB 28.0 billion** | **RMB 127.4 billion** |
+| Pessimistic (Temu heavy losses) | -RMB 49.0 billion | **RMB 148.4 billion** |
 
-#### 主站估值倍数
+#### Main-Platform Valuation Multiples
 
-**可对标公司**:
-| 公司 | PE倍数 | 质量维度 |
+**Comparable companies**:
+| Company | PE multiple | Quality dimension |
 |------|--------|---------|
-| 阿里巴巴 | 14.2x | ROE 9%，增速5% |
-| 京东 | 10.3x | ROE 15%，增速5% |
-| 腾讯 | 16x | ROE 18%，增速8% |
-| **PDD（整体）** | **10.5x** | **ROE 31%，增速10%** |
+| Alibaba | 14.2x | ROE 9%, growth 5% |
+| JD.com | 10.3x | ROE 15%, growth 5% |
+| Tencent | 16x | ROE 18%, growth 8% |
+| **PDD (overall)** | **10.5x** | **ROE 31%, growth 10%** |
 
-**PDD主站合理PE**（考虑其ROE高、增速快、商业模式成熟）：
-- 悲观 **10x**（千亿投资持续压制利润）
-- 基准 **13x**（介于阿里14与京东10之间，质量溢价）
-- 乐观 **16x**（新拼姆、农业护城河兑现）
+**Reasonable PE for the PDD main platform** (high ROE, fast growth, mature business model):
+- Bearish **10x** (trillion-yuan investment keeps pressuring profit)
+- Base case **13x** (between Alibaba at 14 and JD.com at 10, with a quality premium)
+- Bullish **16x** (New Pinduoduo and agricultural moat are realized)
 
-#### 主站估值（正确口径）
+#### Main-Platform Valuation (Correct Basis)
 
-| 情景 | 主站净利（亿RMB） | PE | 估值（亿RMB） | 折USD亿 |
+| Scenario | Main-platform net profit (RMB 100m) | PE | Valuation (RMB 100m) | Equivalent US$100m |
 |------|----------------|-----|-------------|--------|
-| **保守** | 1,094 | 10x | 10,940 | **$1,563** |
-| **基准** | 1,274 | 13x | 16,562 | **$2,366** |
-| **乐观** | 1,484 | 16x | 23,744 | **$3,392** |
+| **Conservative** | 1,094 | 10x | 10,940 | **1,563** |
+| **Base** | 1,274 | 13x | 16,562 | **2,366** |
+| **Bullish** | 1,484 | 16x | 23,744 | **3,392** |
 
-**主站合理价值中枢：$2,366亿**（vs 前版错误的$146亿，相差16倍）
+**Fair-value midpoint for the main platform: US$236.6 billion** (vs. the previous incorrect US$14.6 billion, a 16x gap)
 
-> ⚠️ **前版错误修正**：之前用"主站营收 × OP率"拍脑袋拆分，得到主站净利仅85亿——这犯了两个错误：
-> 1. 低估了主站收入（主站 ≠ 在线营销2,178亿，还包括大部分交易服务佣金）
-> 2. 忽略了合并利润946亿里**绝大部分来自主站**（Temu是亏钱的）
-> 正确的逻辑是：**从合并净利994亿反向推，加回Temu亏损**。
+> ⚠️ **Correction to the previous version**: the earlier method split the business by guessing "main-platform revenue × operating margin," which produced a main-platform net profit of only RMB 8.5 billion. That made two mistakes:
+> 1. It underestimated main-platform revenue (the main platform is not just the RMB 217.8 billion of online marketing; it also includes most transaction-service commissions)
+> 2. It ignored the fact that the vast majority of the consolidated RMB 94.6 billion operating profit comes from the main platform (Temu is losing money)
+> The correct logic is: **start from the consolidated net income of RMB 99.4 billion and add back Temu losses**.
 
-### 3.2 Temu 估值（三情景概率加权）
+### 3.2 Temu Valuation (Three-Scenario Probability Weighting)
 
-**核心变量**: 关税政策 + 本地仓转型进度
+**Key variables**: tariff policy + local warehouse transition progress
 
-#### 盈利情景（20% 概率）
+#### Profitability Scenario (20% probability)
 
-**假设**:
-- Temu 2026年实现盈利（净利润率5-8%）
-- GMV: $900亿（继续增长20-30%）
-- 净利润: $45-72亿
-- PE倍数: 16x（高增长新兴市场）
+**Assumptions**:
+- Temu turns profitable in 2026 (net margin 5-8%)
+- GMV: US$90 billion (continues to grow 20-30%)
+- Net profit: US$4.5-7.2 billion
+- PE multiple: 16x (high-growth emerging platform)
 
-**估值**: 
-$45-72亿 × 16x = $720-1,152亿 → 中位数 **$936亿**
+**Valuation**:
+US$4.5-7.2 billion × 16x = US$72-115.2 billion → midpoint **US$93.6 billion**
 
-**但概率只有20%** → 加权贡献: $936亿 × 20% = **$187亿**
+**But the probability is only 20%** → weighted contribution: US$93.6 billion × 20% = **US$18.7 billion**
 
-#### 打平情景（60% 概率）
+#### Break-Even Scenario (60% probability)
 
-**假设**:
-- Temu EBIT = 0（盈亏平衡）
-- GMV: $800亿（增速20-25%）
-- 商业价值来自于：(1) 未来盈利期权 (2) 用户基数 (3) 品牌价值
+**Assumptions**:
+- Temu EBIT = 0 (break-even)
+- GMV: US$80 billion (growth 20-25%)
+- The business value comes from: (1) future profit option value (2) user base (3) brand value
 
-**估值方法**：基于GMV倍数法
-- Temu GMV × Take Rate × 价值倍数
-- $800亿 × 8-10% 佣金率 × 1.0x = $64-80亿 商业贡献
-- 或按"平台价值"论，给予EV/GMV = 0.5-1.0x的倍数
-- $800亿 × 0.75x = $600亿 → 中位数 **$600亿**
+**Valuation method**: GMV multiple approach
+- Temu GMV × take rate × valuation multiple
+- US$80 billion × 8-10% commission rate × 1.0x = US$6.4-8.0 billion in business contribution
+- Or, using a "platform value" framework, assign an EV/GMV multiple of 0.5-1.0x
+- US$80 billion × 0.75x = US$60.0 billion → midpoint **US$60.0 billion**
 
-**加权贡献**: $600亿 × 60% = **$360亿**
+**Weighted contribution**: US$60.0 billion × 60% = **US$36.0 billion**
 
-#### 关停情景（20% 概率）
+#### Shutdown Scenario (20% probability)
 
-**假设**:
-- 美国关税升至170%+，半托管模式也难以维持
-- Temu美国业务被迫关停，拉美/欧洲市场也缩小规模
-- GMV 腰斩至 $300-400亿
+**Assumptions**:
+- U.S. tariffs rise to 170%+, and even the semi-managed model becomes hard to sustain
+- Temu U.S. business is forced to shut down, and Latin America/Europe also shrink
+- GMV falls by half to US$30-40 billion
 
-**PDD的获利**:
-- 减少 Temu 的年度 $30-50亿 亏损（节省利息成本，现金流改善）
-- 利润反而增加（反直觉）：PDD FY2025全年净利99亿，如果Temu停止亏损，利润可能升至110-120亿
-- 在整体估值中，这实际是 **利好信号**
+**What PDD gains**:
+- The annual US$3-5 billion Temu loss disappears (interest burden falls and cash flow improves)
+- Profit actually rises (counterintuitive): if PDD FY2025 full-year net income was RMB 99.4 billion, stopping Temu losses could lift profit to RMB 110-120 billion
+- In the overall valuation, this is actually a **positive signal**
 
-**估值**: 
-- Temu业务价值 $0
-- 但母公司（PDD）利润改善贡献 +$15-20亿 → 按12PE = $180-240亿
-- 中位数 **$200亿**
+**Valuation**:
+- Temu business value: US$0
+- But the parent company (PDD) profit improvement contributes +RMB 15-20 billion, which at 12x PE equals US$18-24 billion
+- Midpoint **US$20.0 billion**
 
-**加权贡献**: $200亿 × 20% = **$40亿**
+**Weighted contribution**: US$20.0 billion × 20% = **US$4.0 billion**
 
-#### Temu 加权估值
+#### Temu Weighted Valuation
 
-**总估值** = $187亿 + $360亿 + $40亿 = **$587亿**
+**Total valuation** = US$18.7 billion + US$36.0 billion + US$4.0 billion = **US$58.7 billion**
 
-**说明**: 这个估值隐含了对关税政策的悲观预期（40%坏情景概率）以及对盈利承诺的谨慎态度（只给20%概率完全盈利）。
+**Explanation**: This valuation embeds a pessimistic view of tariff policy (40% bad-scenario probability) and a cautious stance on profitability (only giving a 20% probability to full profitability).
 
-### 3.3 多多买菜 + 其他业务估值
+### 3.3 Duoduo Grocery + Other Business Valuation
 
-**规模**: 收入占比 ~5-8%，已盈利
+**Scale**: revenue share ~5-8%, already profitable
 
-**估值**:
-- 2025年贡献净利润 ~5-10亿 RMB（推算）
-- 社区团购竞争饱和，增长缓慢
-- PE倍数: 8x（成熟低增长业务）
-- 估值: 8亿 × 8x = 64亿 RMB ≈ **$9亿**
+**Valuation**:
+- Estimated 2025 net profit contribution: ~RMB 0.5-1.0 billion (estimated)
+- Community group buying is mature and growth is slow
+- PE multiple: 8x (mature low-growth business)
+- Valuation: RMB 0.8 billion × 8x = RMB 6.4 billion ≈ **US$0.9 billion**
 
-### 3.4 分部估值汇总（修正版）
+### 3.4 Segment Valuation Summary (Revised)
 
-| 业务 | 保守 | 基准 | 乐观 | 说明 |
+| Business | Conservative | Base | Bullish | Notes |
 |------|------|------|------|------|
-| **国内主站** | $1,563亿 | **$2,366亿** | $3,392亿 | 主站净利1,094-1,484亿×PE 10-16x |
-| **Temu**（参见Temu深度估值报告） | $0 | $228亿 | $400亿 | 黑箱，保守估值 |
-| **多多买菜+其他** | $9亿 | $9亿 | $15亿 | 成熟低增长 |
-| **合计业务价值** | $1,572亿 | **$2,603亿** | $3,807亿 | — |
-| **加：净现金** | $604亿 | $604亿 | $604亿 | 全额计入 |
-| **-VIE折价**（境内现金回流折30%） | -$180亿 | -$180亿 | -$180亿 | 对海外股东的实际价值打折 |
-| **=总企业价值** | **$1,996亿** | **$3,027亿** | **$4,231亿** | — |
+| **Domestic main platform** | US$156.3 billion | **US$236.6 billion** | US$339.2 billion | Main-platform net profit RMB 109.4-148.4 billion × PE 10-16x |
+| **Temu** (see the Temu deep valuation report) | US$0.0 billion | US$22.8 billion | US$40.0 billion | Black box, conservative valuation |
+| **Duoduo Grocery + other** | US$0.9 billion | US$0.9 billion | US$1.5 billion | Mature low growth |
+| **Total business value** | US$157.2 billion | **US$260.3 billion** | US$380.7 billion | — |
+| **Plus: net cash** | US$60.4 billion | US$60.4 billion | US$60.4 billion | Fully included |
+| **-VIE discount** (30% discount for cash remittance from the mainland) | -US$18.0 billion | -US$18.0 billion | -US$18.0 billion | Discount applied to actual value for overseas shareholders |
+| **= Total enterprise value** | **US$199.6 billion** | **US$302.7 billion** | **US$423.1 billion** | — |
 
-**隐含股价**（14.2亿股）：
-- 保守 **$141/ADS**
-- 基准 **$213/ADS**
-- 乐观 **$298/ADS**
-- 概率加权（30/50/20）= **$216/ADS**
+**Implied share price** (1.42 billion shares):
+- Conservative **US$141/ADS**
+- Base **US$213/ADS**
+- Bullish **US$298/ADS**
+- Probability-weighted (30/50/20) = **US$216/ADS**
 
-**vs 当前股价 $100.87**:
-- 当前价在保守口径下仍**低估29%**
-- 在基准口径下**低估52%**
-- **隐含市场悲观假设**：主站利润腰斩、Temu崩、折价持续
-- **即使所有悲观假设全对**，$100仍接近合理价
-
----
-
-### 3.5 当前股价市场隐含的意思（反推）
-
-当前$100.87 × 14.2亿股 = $1,432亿市值
-- 减净现金 $604亿 → 企业价值 **$828亿 = 5,800亿 RMB**
-- 对2025合并OP 946亿 RMB → **EV/OP = 6.1x**
-- 对2025合并净利994亿 RMB → **EV/净利 = 5.8x**
-
-**6x PE买一个ROE 31%、增速10%、OP率22%、零负债的成熟平台**——这在全球任何市场都是极低估值。折价来源：
-1. VIE+不回购（实际现金打5-7折）
-2. Temu未来不确定性
-3. 千亿投资压制未来3年利润
-4. 中概股地缘折价
+**vs. current share price US$100.87**:
+- Current price is still **29% below** the conservative case
+- **52% below** the base case
+- **Implied market assumption**: main-platform profit halves, Temu collapses, and the discount persists
+- **Even if all bearish assumptions were right**, US$100 is still close to fair value
 
 ---
 
-## 四、敏感性分析
+### 3.5 What the Current Share Price Implies (Reverse Engineering)
 
-### 4.1 国内主站PE倍数敏感性
+Current US$100.87 × 1.42 billion shares = US$143.2 billion market cap
+- Less net cash of US$60.4 billion → enterprise value **US$82.8 billion = RMB 580 billion**
+- Against FY2025 consolidated operating profit of RMB 94.6 billion → **EV/OP = 6.1x**
+- Against FY2025 consolidated net income of RMB 99.4 billion → **EV / Net Income = 5.8x**
 
-| PE倍数 | 营业利润RMB亿 | 估值RMB亿 | 折USD亿 | 占业务%占比 |
+**A 6x PE for a mature platform with 31% ROE, 10% growth, 22% operating margin, and zero debt** is extremely cheap in any market. The discount comes from:
+1. VIE structure + no buyback (cash is effectively valued at only 50-70 cents on the dollar)
+2. Temu uncertainty
+3. The trillion-yuan investment suppressing profit for the next three years
+4. Geopolitical discount for Chinese ADRs
+
+---
+
+## IV. Sensitivity Analysis
+
+### 4.1 Main-Platform PE Sensitivity
+
+| PE multiple | Operating profit (RMB 100m) | Valuation (RMB 100m) | Equivalent US$100m | % of business value |
 |--------|-------------|---------|--------|-----------|
-| 8x | 70 | 560 | 80 | -45% vs 基准 |
+| 8x | 70 | 560 | 80 | -45% vs. base |
 | **10x** | **75** | **750** | **107** | **-27%** |
-| **12x (基准)** | **85** | **1,020** | **146** | **基准** |
+| **12x (base)** | **85** | **1,020** | **146** | **Base** |
 | **14x** | **90** | **1,260** | **180** | **+23%** |
 | **16x** | **100** | **1,600** | **229** | **+57%** |
 
-**敏感性结论**: 国内主站PE倍数每上升1x，总估值改善~$12亿。
+**Sensitivity conclusion**: Every 1x increase in the main-platform PE multiple lifts total valuation by about US$1.2 billion.
 
-### 4.2 Temu情景概率调整
+### 4.2 Temu Scenario Probability Adjustments
 
-| 场景 | 盈利% | 打平% | 关停% | Temu估值 | 总估值 | 隐含股价 |
+| Scenario | Profitability % | Break-even % | Shutdown % | Temu valuation | Total valuation | Implied share price |
 |------|-------|-------|-------|---------|--------|---------|
-| **熊市** | 10% | 40% | 50% | $330亿 | $950亿 | $67/ADS |
-| **基准** | 20% | 60% | 20% | $587亿 | $1,346亿 | $94.8/ADS |
-| **牛市** | 30% | 60% | 10% | $723亿 | $1,482亿 | $104/ADS |
-| **极牛** | 50% | 40% | 10% | $921亿 | $1,680亿 | $118/ADS |
+| **Bear market** | 10% | 40% | 50% | US$33.0 billion | US$95.0 billion | US$67/ADS |
+| **Base** | 20% | 60% | 20% | US$58.7 billion | US$134.6 billion | US$94.8/ADS |
+| **Bull market** | 30% | 60% | 10% | US$72.3 billion | US$148.2 billion | US$104/ADS |
+| **Very bullish** | 50% | 40% | 10% | US$92.1 billion | US$168.0 billion | US$118/ADS |
 
-**关键杠杆**: Temu盈利概率每上升10个百分点，总估值改善~$140亿。
+**Key lever**: Every 10-point increase in Temu's profitability probability improves total valuation by about US$14 billion.
 
-### 4.3 现金流增长率敏感性（DCF模型）
+### 4.3 Cash Flow Growth Sensitivity (DCF Model)
 
-假设国内主站使用DCF估值，WACC=8%，永续增长率变化：
+Assume the domestic main platform is valued using DCF, WACC = 8%, and varying terminal growth:
 
-| 永续增长率 | 现值(RMB亿) | 折USD亿 | vs 基准 |
+| Terminal growth rate | Present value (RMB 100m) | Equivalent US$100m | vs. base |
 |----------|----------|--------|--------|
 | 3% | 680 | 97 | -34% |
 | 4% | 820 | 117 | -20% |
-| **5%（基准）** | **1,020** | **146** | **基准** |
+| **5% (base)** | **1,020** | **146** | **Base** |
 | 6% | 1,280 | 183 | +25% |
 | 7% | 1,650 | 236 | +62% |
 
-**DCF结论**: 如果相信国内主站能维持5-6% 稳定增长，当前估值区间合理。
+**DCF conclusion**: If you believe the domestic main platform can sustain 5-6% stable growth, the current valuation range is reasonable.
 
 ---
 
-## 五、三情景目标价估值
+## V. Three-Scenario Target Price Valuation
 
-### 情景A：熊市场景（30% 概率）
+### Scenario A: Bear Case (30% probability)
 
-**假设**:
-- Temu关税升级，半托管模式效果不佳
-- Temu盈利概率降至10%，关停概率升至40%
-- 国内主站增长放缓至3-5%，PE压缩至10x
-- 现金流持续承压
+**Assumptions**:
+- Temu tariffs worsen and the semi-managed model underperforms
+- Temu profitability probability drops to 10%, shutdown probability rises to 40%
+- Domestic main-platform growth slows to 3-5%, PE compresses to 10x
+- Cash flow remains under pressure
 
-**计算**:
-- 国内主站: 70亿RMB利润 × 10x ÷ 7 = $100亿
-- Temu: $330亿（按上表熊市情景）
-- 其他: $9亿
-- 现金: $550亿（考虑部分回流中国）
-- **总计**: $989亿 ÷ 14.2亿股 = **$69.8/ADS**
+**Calculation**:
+- Domestic main platform: RMB 7.0 billion profit × 10x ÷ 7 = US$10.0 billion
+- Temu: US$33.0 billion (from the bear-case row above)
+- Other: US$0.9 billion
+- Cash: US$55.0 billion (assuming some cash remains trapped in China)
+- **Total**: US$98.9 billion ÷ 1.42 billion shares = **US$69.8/ADS**
 
-**下行风险**: $69.8/ADS（-31% vs 现价）
+**Downside risk**: US$69.8/ADS (-31% vs. current price)
 
-### 情景B：基准场景（50% 概率）
+### Scenario B: Base Case (50% probability)
 
-**假设**:
-- 千亿投资逐步产生ROI，国内主站增长恢复至6-8%，PE维持12x
-- Temu本地仓转型基本成功，2026年接近盈亏平衡
-- 现金保持$600亿以上
+**Assumptions**:
+- The trillion-yuan investment gradually produces ROI, domestic main-platform growth recovers to 6-8%, PE stays at 12x
+- Temu local-warehouse transition largely succeeds, and 2026 approaches break-even
+- Cash remains above US$60 billion
 
-**计算**:
-- 国内主站: 85亿RMB利润 × 12x ÷ 7 = $146亿
-- Temu: $587亿（按基准三情景加权）
-- 其他: $9亿
-- 现金: $604亿
-- **总计**: $1,346亿 ÷ 14.2亿股 = **$94.8/ADS**
+**Calculation**:
+- Domestic main platform: RMB 8.5 billion profit × 12x ÷ 7 = US$14.6 billion
+- Temu: US$58.7 billion (from the base weighted scenario)
+- Other: US$0.9 billion
+- Cash: US$60.4 billion
+- **Total**: US$134.6 billion ÷ 1.42 billion shares = **US$94.8/ADS**
 
-**当前估值**: $94.8/ADS（-6% vs 现价）
+**Current valuation**: US$94.8/ADS (-6% vs. current price)
 
-### 情景C：牛市场景（20% 概率）
+### Scenario C: Bull Case (20% probability)
 
-**假设**:
-- 千亿投资成功，国内主站护城河加深，GMV增速回升至10%+，PE升至14x
-- Temu欧洲+拉美增长加速，2026年实现小幅盈利（5%净利率）
-- 现金持续积累，管理层启动回购计划
+**Assumptions**:
+- The trillion-yuan investment succeeds, the domestic moat deepens, GMV growth reaccelerates to 10%+, and PE rises to 14x
+- Temu Europe + Latin America growth accelerates, and 2026 sees a small profit (5% net margin)
+- Cash keeps accumulating and management starts a buyback
 
-**计算**:
-- 国内主站: 95亿RMB利润 × 14x ÷ 7 = $190亿
-- Temu: $900亿（盈利能力显著改善）
-- 其他: $12亿
-- 现金: $650亿（含回购激励）
-- **总计**: $1,752亿 ÷ 14.2亿股 = **$123.4/ADS**
+**Calculation**:
+- Domestic main platform: RMB 9.5 billion profit × 14x ÷ 7 = US$19.0 billion
+- Temu: US$90.0 billion (significantly improved profitability)
+- Other: US$1.2 billion
+- Cash: US$65.0 billion (including buyback incentives)
+- **Total**: US$175.2 billion ÷ 1.42 billion shares = **US$123.4/ADS**
 
-**上行潜力**: $123.4/ADS（+22% vs 现价）
+**Upside potential**: US$123.4/ADS (+22% vs. current price)
 
-### 三情景加权目标价
+### Probability-Weighted Target Price
 
-**加权平均**:
-= $69.8 × 30% + $94.8 × 50% + $123.4 × 20%
-= $20.94 + $47.40 + $24.68
-= **$92.7/ADS**
+**Weighted average**:
+= US$69.8 × 30% + US$94.8 × 50% + US$123.4 × 20%
+= US$20.94 + US$47.40 + US$24.68
+= **US$92.7/ADS**
 
-**vs 现价 $100.87**:
-- 高估 $8.17/ADS（+8.1%）
-- **建议**: 当前价格已充分定价悲观预期，继续上升空间有限，但下跌风险也受现金保护
+**vs. current share price of US$100.87**:
+- Overvalued by US$8.17/ADS (+8.1%)
+- **Recommendation**: the current price already discounts the bearish outlook; upside is limited, though downside is cushioned by cash
 
 ---
 
-## 六、反面论据（"如果估值错了，错在哪"）
+## VI. Counterarguments ("If the Valuation Is Wrong, Where Is the Error?")
 
-### 6.1 增速底部确实已过，但反弹幅度有限
+### 6.1 The Growth Bottom May Be Behind Us, but the Rebound Could Be Limited
 
-**事实**:
-- FY2025增速+10%，是历史最低
-- Q4环比改善至+12%，Q1-Q2的+7-10%已是低点
-- 2026年有可能达到+12-15%
+**Facts**:
+- FY2025 growth of +10% is the lowest in history
+- Q4 improved sequentially to +12%, and Q1-Q2 at +7-10% may already be the low point
+- 2026 could reach +12-15%
 
-**反面风险**:
-- 如果2026年增速仍停留在+8-10%，说明"千亿投资还需再烧一年"
-- 利润率如果不能回升至28%+，说明护城河实际在削弱
-- **最坏情景**: "投资 = 烧钱，不是建护城河"
+**Counter-risk**:
+- If 2026 growth stays at +8-10%, it means the trillion-yuan investment needs another year of burn
+- If margins cannot recover to 28%+, the moat is actually weakening
+- **Worst case**: "investment = burning cash, not building a moat"
 
-### 6.2 管理层"千亿投资"的ROI是黑箱
+### 6.2 The ROI of Management's "Trillion-Yuan Investment" Is a Black Box
 
-**事实**:
-- 管理层宣布3年投入1,000亿元，但从未披露预期回报率、具体项目进度、或验收标准
-- FY2025利润-12%，Q1利润-47%，直接归因为"商家扶持支出"
-- 但"商家扶持" vs "供应链投资" vs "Temu补贴" 的具体金额拆分不清
+**Facts**:
+- Management announced a three-year investment of RMB 100 billion, but never disclosed the expected ROI, project milestones, or acceptance criteria
+- FY2025 profit fell 12%, and Q1 profit fell 47%, directly attributed to "merchant support spending"
+- But the split between "merchant support," "supply-chain investment," and "Temu subsidies" is unclear
 
-**反面风险**:
-- 如果这1,000亿投进去3年后，利润仍没有明显改善，说明管理层"视野有限"
-- 或者，这笔钱实际上是在弥补Temu亏损+竞争烧钱，而非真正构建护城河
-- **李录的视角**: "一家公司愿意为未来牺牲当期利润，这通常是好信号——前提是你能看清楚它在为什么牺牲。PDD的问题是，即使是管理层可能也没想清楚。"
+**Counter-risk**:
+- If the RMB 100 billion is spent over three years and profit still does not materially improve, it suggests management lacks vision
+- Or the money is simply plugging Temu losses and competitive spending rather than building a true moat
+- **Li Lu's view**: "A company willing to sacrifice current profit for the future is usually a good sign, provided you can see what it is sacrificing for. PDD's problem is that even management may not have thought it through."
 
-### 6.3 会计利润 vs 自由现金流的差异
+### 6.3 The Difference Between Accounting Profit and Free Cash Flow
 
-**事实**:
-- FY2025净利润994亿RMB，但OCF 1,069亿RMB（单位：亿元）
-- OCF/NI = 1.08x（优秀），说明"利润是真金白银"
-- **BUT**: 成本增速+23%远超收入+10%
+**Facts**:
+- FY2025 net income was RMB 99.4 billion, while OCF was RMB 106.9 billion
+- OCF / NI = 1.08x (excellent), which means the profit is real cash
+- **But** cost growth of +23% is far above revenue growth of +10%
 
-**反面风险**:
-- 如果成本增速持续高于收入增速（持续3年），利润率压力将扩大
-- 可能的原因：(1) 员工成本上升 (2) 基础设施投资摊销 (3) Temu亏损侵蚀
-- 2026年如果OCF/NI 跌破 1.0x，说明"利润质量下滑"
+**Counter-risk**:
+- If cost growth continues to exceed revenue growth for three years, margin pressure will broaden
+- Possible reasons: (1) higher employee costs (2) infrastructure investment amortization (3) Temu losses eroding the base
+- If OCF / NI falls below 1.0x in 2026, it would mean "profit quality is deteriorating"
 
-### 6.4 现金$604亿零回报，资本配置失分
+### 6.4 US$60.4 Billion in Cash Producing Zero Return Is a Capital-Allocation Miss
 
-**事实**:
-- PDD从IPO以来从未分红、从未回购
-- 对标阿里、腾讯、京东都在大规模回购+分红
-- 陈磊持股<1%，没有经济激励推动股东回报
+**Facts**:
+- Since the IPO, PDD has never paid a dividend and never bought back stock
+- Alibaba, Tencent, and JD.com all have large-scale buybacks and dividends
+- Chen Lei owns less than 1%, so there is no economic incentive pushing shareholder returns
 
-**反面风险**:
-- **最坏情景**: 这笔现金最后流向了管理层的私人投资（BT Capital等），而非股东回报
-- 或者，现金实际上被困在中国，汇出受管制，对海外股东毫无意义
-- **段永平的忍耐有限**: 如果2026年仍未启动回购，可能会公开质疑黄峥和陈磊
+**Counter-risk**:
+- **Worst case**: the cash ultimately flows into management's private investments (BT Capital and similar vehicles), not shareholder returns
+- Or the cash is effectively trapped in China, subject to remittance controls, and therefore meaningless to overseas shareholders
+- **Duan Yongping's patience is limited**: if no buyback starts in 2026, he may publicly challenge Huang Zheng and Chen Lei
 
-### 6.5 Temu美国DAU暴跌58%，这不是季节波动
+### 6.5 Temu U.S. DAU Collapsed 58%, and That Is Not Seasonality
 
-**事实**:
-- 2024年Temu美国DAU: ~6,000万
-- 2025年（同比）: ~2,500万（-58%）
-- 这不是"Q4旺季"导致的波动，而是"用户流失"的信号
+**Facts**:
+- Temu U.S. DAU in 2024: ~60 million
+- 2025 (YoY): ~25 million (-58%)
+- This is not a Q4 seasonal swing; it is a sign of user attrition
 
-**反面风险**:
-- 美国市场DAU腰斩，说明：(1) 新用户获取困难 (2) 留存率下降 (3) 或者Temu被删除/限制
-- 关税政策不是主要原因（DAU下降发生在关税提升前）
-- **真正的原因可能是**：Amazon Haul + 美国监管压力 + 用户习惯转移
-- **如果Temu美国彻底失败**，Temu整体GMV从$800亿腰斩至$400亿，估值损失>$500亿
+**Counter-risk**:
+- The halving of U.S. DAU suggests: (1) new-user acquisition is difficult (2) retention is weakening (3) or Temu has been removed/restricted
+- Tariffs are not the main cause (DAU declines happened before tariffs rose)
+- **The real causes may be**: Amazon Haul + U.S. regulatory pressure + a shift in user habits
+- **If Temu U.S. fails completely**, Temu GMV could be cut in half from US$80 billion to US$40 billion, destroying more than US$50 billion of valuation
 
-### 6.6 PCAOB审计风险（中国VIE结构）
+### 6.6 PCAOB Audit Risk (China VIE Structure)
 
-**事实**:
-- PCAOB（美国公众公司会计监视委员会）一直在推进对中概股审计的访问权
-- 如果PDD被列入"审计风险"清单，美国投资者可能强制平仓
-- 这不是"财务欺诈风险"，而是"合规风险"
+**Facts**:
+- PCAOB (the U.S. Public Company Accounting Oversight Board) has been pushing for audit access on Chinese ADRs
+- If PDD is placed on an "audit-risk" list, U.S. investors could be forced out
+- This is not a "financial fraud risk"; it is a "compliance risk"
 
-**反面风险**:
-- 虽然概率相对较低（<10%），但一旦发生，股价可能腰斩
-- 阿里在2022年被PCAOB列入高风险清单后，股价从$100+跌至$50
+**Counter-risk**:
+- Although the probability is relatively low (<10%), if it happens the stock could be cut in half
+- After Alibaba was placed on a high-risk list by PCAOB in 2022, its stock fell from US$100+ to US$50
 
-### 6.7 关键验证失败的临界点
+### 6.7 Critical Failure Thresholds for Key Validation Points
 
-| 验证指标 | 当前值 | 2026年目标 | 失败临界点 |
+| Validation metric | Current value | 2026 target | Failure threshold |
 |---------|--------|-----------|----------|
-| **收入增速** | +10% | +12-15% | 低于+8% |
-| **利润率** | 23% | 26%+ | 低于20% |
-| **Temu DAU** | ~2,500万(US) | 稳定或反弹 | 继续下跌至1,500万 |
-| **OCF/NI** | 1.08x | >1.05x | 跌破1.0x |
+| **Revenue growth** | +10% | +12-15% | Below +8% |
+| **Margin** | 23% | 26%+ | Below 20% |
+| **Temu DAU** | ~25 million (U.S.) | Stable or rebound | Falls further to 15 million |
+| **OCF / NI** | 1.08x | >1.05x | Drops below 1.0x |
 
-**如果2026年Q1-Q2出现以上任何2个失败指标，投资论文需要完全重新评估。**
+**If any two of the above fail in Q1-Q2 2026, the investment thesis needs a complete re-evaluation.**
 
 ---
 
-## 七、结论与操作建议
+## VII. Conclusion and Action Plan
 
-### 7.1 合理价值区间
+### 7.1 Fair Value Range
 
-| 情景 | 概率 | 目标价 | 隐含空间 |
+| Scenario | Probability | Target price | Implied upside/downside |
 |------|------|--------|---------|
-| **熊市** | 30% | $69.8 | -31% |
-| **基准** | 50% | $94.8 | -6% |
-| **牛市** | 20% | $123.4 | +22% |
-| **加权均值** | 100% | **$92.7** | **-8%** |
+| **Bear** | 30% | US$69.8 | -31% |
+| **Base** | 50% | US$94.8 | -6% |
+| **Bull** | 20% | US$123.4 | +22% |
+| **Weighted mean** | 100% | **US$92.7** | **-8%** |
 
-**合理价值区间**: $69.8 ~ $123.4，中位数 $92.7/ADS
+**Fair value range**: US$69.8 to US$123.4, midpoint US$92.7/ADS
 
-### 7.2 买入价格（根据安全边际）
+### 7.2 Buy Price (Using Margin of Safety)
 
-**参考段永平的要求**（一般要求20-30%安全边际）:
+**Following Duan Yongping's framework** (generally 20-30% margin of safety):
 
-| 安全边际 | 买入价 | 对应情景 |
+| Margin of safety | Buy price | Corresponding scenario |
 |---------|--------|---------|
-| 20% | $74 | 略低于熊市价 |
-| **25%** | **$70** | **安全边际充足** |
-| 30% | $65 | 过度保守 |
+| 20% | US$74 | Slightly below the bear-case price |
+| **25%** | **US$70** | **Comfortable margin of safety** |
+| 30% | US$65 | Overly conservative |
 
-**建议买入价**: **$70-80/ADS**（当前$100.87高于此区间）
+**Suggested buy range**: **US$70-80/ADS** (current US$100.87 is above this range)
 
-### 7.3 卖出价格
+### 7.3 Sell Price
 
-| 触发条件 | 卖出价 | 说明 |
+| Trigger | Sell price | Explanation |
 |---------|--------|------|
-| **基本面恶化**（连续2Q利润负增长） | 任何价格 | 投资论文破灭 |
-| **牛市假设确认**（Q1-Q2利润+15%+） | $130+ | 获利了结 |
-| **Temu盈利确认**（Q1财报显示盈利） | $115-120 | 中期目标 |
+| **Fundamentals deteriorate** (two consecutive quarters of negative profit growth) | Any price | Investment thesis breaks |
+| **Bull-case confirmed** (Q1-Q2 profit growth +15%+) | US$130+ | Take profit |
+| **Temu profitability confirmed** (Q1 report shows profit) | US$115-120 | Medium-term target |
 
-**当前位置判断**: $100.87 已接近基准估值$94.8，继续追高风险>机会
+**Current position judgment**: US$100.87 is already close to the base-case valuation of US$94.8; chasing higher carries more risk than reward
 
-### 7.4 当前位置判断（2026-04-13）
+### 7.4 Current Position Judgment (2026-04-13)
 
-**股价**: $100.87/ADS  
-**估值**: $92.7 (加权中位数)  
-**隐含折价**: -8%（略有高估，但在合理范围内）
+**Share price**: US$100.87/ADS
+**Valuation**: US$92.7 (weighted midpoint)
+**Implied discount/premium**: -8% (slightly overvalued, but within a reasonable range)
 
-**评价**:
-1. **不便宜，但也不贵** — 相比2025年$50-60的底部，已上涨70-100%
-2. **关键验证即将来临** — 2026年Q1财报（预计5月中下旬发布）是"千亿投资见成效"的第一个测试
-3. **安全边际不足** — 当前价格已充分定价50%基准情景，继续上升需要牛市情景（概率仅20%）
-4. **等待更好的价格** — 建议在$70-85区间分批建仓，而非当前价格全力推进
+**Assessment**:
+1. **Not cheap, but not expensive either** - compared with the US$50-60 bottom in 2025, the stock has already risen 70-100%
+2. **The key test is near** - the Q1 2026 earnings release (expected in mid-to-late May) will be the first test of whether the trillion-yuan investment is paying off
+3. **Insufficient margin of safety** - the current price already fully discounts the 50% base case; further upside requires the bull case (only 20% probability)
+4. **Wait for a better entry** - build positions in the US$70-85 range rather than going all-in at the current price
 
-### 7.5 三阶段投资策略
+### 7.5 Three-Stage Investment Strategy
 
-#### 第一阶段：观察期（2026年4月-5月）
+#### Stage 1: Observation Period (April-May 2026)
 
-**等待Q1财报验证**：
-- 是否利润同比转正？（基准：+5-10%）
-- 国内主站在线营销收入增速是否回升至8%+？
-- Temu交易服务收入增速是否稳定在10%+？
+**Wait for Q1 earnings validation**:
+- Will profit turn positive YoY? (base case: +5-10%)
+- Will domestic online marketing revenue growth recover to 8%+?
+- Will Temu transaction-services revenue growth stay at 10%+?
 
-**如果验证失败** → 减持至50% 仓位，等待$70-80再加仓  
-**如果验证成功** → 补仓至100% 目标仓位，目标价$110-115
+**If validation fails** → reduce to 50% position, wait for US$70-80 to add
+**If validation succeeds** → add to 100% target position, target price US$110-115
 
-#### 第二阶段：建仓期（2026年6月-8月）
+#### Stage 2: Build Period (June-August 2026)
 
-**根据Q1财报结果**：
-- 若基本面好转 → 逐步建仓至目标仓位，$90-105区间分批
-- 若基本面恶化 → 等待$70以下的底部，一次性建仓
+**Based on the Q1 results**:
+- If fundamentals improve → gradually build to target position, scaling in from US$90-105
+- If fundamentals worsen → wait for the bottom below US$70, then build at once
 
-#### 第三阶段：持有期（2026年9月+）
+#### Stage 3: Holding Period (September 2026 onward)
 
-**关键里程碑**：
-- H1财报（8月）：验证Temu半托管模式商业化进展
-- 2026年底：是否启动股东回购计划？
-- 2027年：千亿投资3年计划的阶段成果
+**Key milestones**:
+- H1 earnings (August): verify commercialization progress of Temu semi-managed mode
+- Year-end 2026: does management start a shareholder buyback?
+- 2027: stage-one results of the three-year trillion-yuan investment plan
 
-**持仓目标**:
-- 基准情景下，3年目标价 $120-140/ADS
-- 如果启动回购计划，目标价 $150+/ADS
-
----
-
-## 八、段永平投资视角特别笔记
-
-### "我现在确实是黄峥的粉丝"
-
-段永平2026年4月发言指出，他对黄峥本人有信心，但"对拼多多5-10年后没那么清晰"。这暗示：
-
-1. **执行力信任**: 黄峥的战略方向（千亿投资、供应链升级）是对的，但需要3-5年验证
-2. **不确定性高**: 电商行业面临AI Agent革命+全球政治不确定性，长期前景不明朗
-3. **价值锚点**: "好生意的标准"不是短期利润，而是"长期能否建立难以复制的竞争优势"
-
-### 应用到估值中的含义
-
-- **不要过度悲观**: PDD虽然短期利润-12%，但这是"主动选择"投资未来，不是经营恶化
-- **但也不要过度乐观**: 黄峥本人都说"不清晰"，说明最坏情景（护城河未能形成）的概率不小
-- **安全边际很重要**: 如果以当前$100.87买入，需要隐含至少20-25%下跌保护；如果以$70买入，安全边际充足
-
-### 最关键的一句话
-
-> "一家公司愿意牺牲短期利润来建设长期竞争力，这通常是好信号——前提是管理层真的知道自己在做什么。"
-
-**PDD的挑战**：2026年能否证明"千亿投资的ROI"？如果能，股价有30%上升空间；如果不能，股价有40%下跌风险。
+**Position target**:
+- Under the base case, 3-year target price is US$120-140/ADS
+- If a buyback begins, target price rises to US$150+/ADS
 
 ---
 
-## 附录：数据来源完整索引
+## VIII. Special Notes from the Duan Yongping Investment Lens
 
-### 一手资料（SEC & 投资者关系）
+### "I really am a fan of Huang Zheng now"
 
-1. **PDD Holdings 20-F Annual Report FY2024**  
-   链接: [SEC EDGAR - 20-F](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm)  
-   披露内容: 完整财务报表、分业务收入、现金流、管理层讨论
+Duan Yongping said in April 2026 that he has confidence in Huang Zheng personally, but "the picture for PDD five to ten years out is not that clear." That implies:
 
-2. **PDD Holdings Q4 2025 & FY2025 6-K Filing**  
-   链接: [SEC 6-K 中期报告](https://www.sec.gov/Archives/edgar/data/1737806/000110465925113490/tm2531580d1_6k.htm)  
-   披露内容: Q4及全年收入、利润、EPS、关键业务指标
+1. **Trust in execution**: Huang Zheng's strategic direction (trillion-yuan investment, supply-chain upgrade) is right, but it needs 3-5 years to prove itself
+2. **High uncertainty**: The e-commerce industry faces an AI agent revolution plus global political uncertainty, so the long-term outlook is murky
+3. **Value anchor**: The standard for a "good business" is not short-term profit, but whether it can build an advantage that is hard to replicate
 
-3. **PDD Holdings 投资者关系新闻稿**  
-   链接: [Investor Relations - News Releases](https://investor.pddholdings.com/news-releases/)  
-   最新: [Q4 2025 & FY2025 财报公告](https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025)
+### What This Means for Valuation
 
-### 二手验证资料
+- **Do not be overly pessimistic**: although PDD's short-term profit is down 12%, this is a deliberate investment in the future, not operational deterioration
+- **But do not be overly optimistic either**: even Huang Zheng says the picture is "not clear," which means the worst case (the moat fails to form) is not a small probability
+- **Margin of safety matters**: if you buy at US$100.87, you need at least 20-25% downside protection; at US$70, the margin of safety is much better
 
-4. **StockTitan PDD SEC 6-K Summary**  
-   链接: [StockTitan PDD News](https://www.stocktitan.net/news/PDD/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025-yypno24d08v2.html)  
-   用途: 财务数据交叉验证
+### The Most Important Sentence
 
-5. **Yahoo Finance PDD Stock Page**  
-   链接: [Yahoo Finance - PDD](https://finance.yahoo.com/quote/PDD/)  
-   用途: 当前股价、历史价格、分析师预测
+> "A company willing to sacrifice short-term profit to build long-term competitive strength is usually a good sign, provided management really knows what it is doing."
 
-6. **MacroTrends PDD Historical Data**  
-   链接: [MacroTrends - PDD Stock Price History](https://www.macrotrends.net/stocks/charts/PDD/pdd-holdings/stock-price-history)  
-   用途: 长期财务数据、PE倍数历史
-
-### 本地研究文档（已有累积）
-
-7. **拼多多-财务结构与千亿投资-20260410.md**  
-   内容: 收入拆分、利润率分析、千亿投资详解、Temu快照
-
-8. **拼多多-earnings-2025Q4.md**  
-   内容: Q4财报精读、现金流分析、估值验算、管理层讨论
-
-9. **最终报告-护城河专题-20260412.md**  
-   内容: 护城河评分、Temu关税分析、现金配置问题
-
-10. **最终报告-常青研究-20260410.md**  
-    内容: 常青评估、团队深度分析、业务拆解
+**PDD's challenge**: can 2026 prove that the trillion-yuan investment has a positive ROI? If yes, the stock has 30% upside; if not, it has 40% downside.
 
 ---
 
-## 免责声明
+## Appendix: Full Source Index
 
-本报告基于公开信息撰写，每个关键数据都附有原始链接。但以下几点需要注意：
+### Primary Sources (SEC & Investor Relations)
 
-1. **PDD未披露分业务利润拆分** — Temu利润、国内主站利润均为分析师推算，基于交易服务收入 × 行业平均毛利率，存在±20%的误差范围
-2. **股价为截至2026-04-10的最后交易价** — 实时股价可能变化，报告中的隐含折价/溢价需要动态调整
-3. **三情景概率为主观判断** — 不同投资者对关税政策、Temu前景的评估可能有显著差异，概率应自行调整
-4. **Temu GMV为第三方推算** — Temu不作为独立公司披露财务，GMV和利润均基于券商研究、行业报告交叉推断
-5. **管理层未给出利润回升时间表** — "千亿投资"的具体ROI时间表不明确，2026-2027年的利润恢复是本报告关键假设，存在兑现不足风险
+1. **PDD Holdings 20-F Annual Report FY2024**
+   Link: [SEC EDGAR - 20-F](https://www.sec.gov/Archives/edgar/data/1737806/000141057825000951/pdd-20241231x20f.htm)
+   Disclosed content: full financial statements, revenue by business, cash flow, management discussion
 
-**投资决策风险提示**：  
-本报告仅供参考，不构成投资建议。电商、跨境电商面临监管、关税、竞争等多重变量，长期前景存在显著不确定性。请根据自身风险承受能力和投资周期做出决策。
+2. **PDD Holdings Q4 2025 & FY2025 6-K Filing**
+   Link: [SEC 6-K interim report](https://www.sec.gov/Archives/edgar/data/1737806/000110465925113490/tm2531580d1_6k.htm)
+   Disclosed content: Q4 and full-year revenue, profit, EPS, key business indicators
+
+3. **PDD Holdings Investor Relations News Releases**
+   Link: [Investor Relations - News Releases](https://investor.pddholdings.com/news-releases/)
+   Latest: [Q4 2025 & FY2025 earnings announcement](https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025)
+
+### Secondary Verification Sources
+
+4. **StockTitan PDD SEC 6-K Summary**
+   Link: [StockTitan PDD News](https://www.stocktitan.net/news/PDD/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025-yypno24d08v2.html)
+   Use: cross-check financial data
+
+5. **Yahoo Finance PDD Stock Page**
+   Link: [Yahoo Finance - PDD](https://finance.yahoo.com/quote/PDD/)
+   Use: current share price, historical prices, analyst estimates
+
+6. **MacroTrends PDD Historical Data**
+   Link: [MacroTrends - PDD Stock Price History](https://www.macrotrends.net/stocks/charts/PDD/pdd-holdings/stock-price-history)
+   Use: long-term financial data, PE history
+
+### Local Research Docs (Previously Accumulated)
+
+7. **Pinduoduo-Financial-Structure-and-Trillion-Yuan-Investment-20260410.md**
+   Content: revenue split, margin analysis, trillion-yuan investment details, Temu snapshot
+
+8. **Pinduoduo-earnings-2025Q4.md**
+   Content: deep read on Q4 earnings, cash flow analysis, valuation checks, management discussion
+
+9. **Final-Report-Moat-Topic-20260412.md**
+   Content: moat scoring, Temu tariff analysis, cash-allocation issues
+
+10. **Final-Report-Evergreen-Research-20260410.md**
+    Content: evergreen assessment, team deep dive, business breakdown
 
 ---
 
-**报告制作**  
-**日期**: 2026-04-13  
-**方法论**: 分部估值法 + 三情景加权 + 敏感性分析  
-**数据溯源等级**: A级（一手资料为主，二手资料交叉验证）
+## Disclaimer
 
+This report is based on public information, and every key data point is linked back to an original source. But there are several things to keep in mind:
+
+1. **PDD does not disclose segment-level profit splits** - Temu profit and domestic main-platform profit are analyst estimates based on transaction-services revenue × industry-average gross margin, with an error band of ±20%
+2. **Share price is the last traded price as of 2026-04-10** - real-time prices may change, and the implied discount/premium in this report needs to be updated dynamically
+3. **The three scenario probabilities are subjective** - different investors may assess tariff policy and Temu's outlook very differently, so the probabilities should be adjusted as needed
+4. **Temu GMV is estimated by third parties** - Temu is not disclosed as a standalone company, so GMV and profit are both inferred from broker research and industry reports
+5. **Management has not given a timetable for profit recovery** - the exact ROI timeline for the "trillion-yuan investment" is unclear, and profit recovery in 2026-2027 is a core assumption in this report, with execution risk
+
+**Investment risk notice**:
+This report is for reference only and does not constitute investment advice. E-commerce and cross-border e-commerce face regulatory, tariff, and competitive variables, and the long-term outlook remains highly uncertain. Please make decisions based on your own risk tolerance and investment horizon.
+
+---
+
+**Report prepared by**
+**Date**: 2026-04-13
+**Methodology**: segment valuation + three-scenario weighting + sensitivity analysis
+**Data traceability level**: A grade (primary sources with secondary cross-checks)

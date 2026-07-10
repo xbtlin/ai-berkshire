@@ -1,217 +1,217 @@
-# TikTok 困局——全球化的代价
+# TikTok's Dilemma: The Cost of Globalization
 
-> 《看懂字节跳动》系列 · 第 03 篇
-> 阅读时间约 10 分钟
-
----
-
-## TikTok：一个中国公司创造的全球现象
-
-从 2017 年上线到全球月活超 15 亿，TikTok 只用了 7 年。Facebook 花了 13 年，Instagram 花了 12 年。这是人类历史上增长最快的社交应用之一，也是第一个被地缘政治强制"分家"的全球性科技产品。
-
-2026 年 1 月，字节跳动被迫将 TikTok 美国业务重组为合资公司，自身持股降至 19.9%。这笔交易的代价，比大多数人意识到的要沉。
-
-核心数据：
-
-| 指标 | 数据 |
-|------|------|
-| TikTok 全球月活 | **超 15 亿**（2025 年） |
-| TikTok 美国月活 | **超 1.7 亿** |
-| 2025 年 TikTok 广告+电商收入 | **~$500 亿+** |
-| TikTok Shop 全球 GMV（2024） | **$332 亿**，同比增长接近 **70%** |
-| TikTok 海外收入占字节总收入 | **首次突破 30%**（2025 年） |
-| TikTok 在全球社交电商市场份额 | **68%**（第 1） |
-
-（来源：The Information、36 氪、Bloomberg、各行业研究报告）
+> "Understanding ByteDance" series · Part 03
+> Estimated reading time: 10 minutes
 
 ---
 
-## USDS 交易：到底发生了什么
+## TikTok: A Global Phenomenon Created by a Chinese Company
 
-### 时间线
+From its 2017 launch to more than 1.5 billion monthly active users worldwide, TikTok needed only 7 years. Facebook took 13 years. Instagram took 12 years. It is one of the fastest-growing social apps in human history, and the first global technology product to be forcibly "split apart" by geopolitics.
 
-| 时间 | 事件 |
+In January 2026, ByteDance was forced to restructure TikTok's U.S. business into a joint venture, reducing its own stake to 19.9%. The cost of this transaction is heavier than most people realize.
+
+Key data:
+
+| Metric | Data |
 |------|------|
-| 2020 年 8 月 | 特朗普首次签署行政令要求 TikTok 出售美国业务 |
-| 2024 年 4 月 | 拜登签署《保护美国人免受外国对手控制应用法案》，要求字节在 270 天内剥离 TikTok 美国业务，否则禁用 |
-| 2025 年 1 月 19 日 | TikTok 在美国短暂下线约 12 小时 |
-| 2025 年 9 月 | 特朗普政府宣布 TikTok 美国业务重组方案 |
-| **2026 年 1 月 22 日** | **TikTok USDS Joint Venture LLC 正式成立并完成交割** |
+| TikTok global MAU | **More than 1.5 billion** (2025) |
+| TikTok U.S. MAU | **More than 170 million** |
+| 2025 TikTok advertising + e-commerce revenue | **~$50 billion+** |
+| TikTok Shop global GMV (2024) | **$33.2 billion**, up nearly **70%** YoY |
+| Overseas revenue as a share of ByteDance total revenue | **Exceeded 30% for the first time** (2025) |
+| TikTok share of the global social commerce market | **68%** (No. 1) |
 
-（来源：MacRumors、Variety、Center for American Progress）
+(Sources: The Information, 36Kr, Bloomberg, various industry research reports)
 
-### 交易结构
+---
 
-最终方案不是"出售"，而是"合资重组"：
+## The USDS Transaction: What Actually Happened
 
-| 持股方 | 持股比例 | 性质 |
+### Timeline
+
+| Time | Event |
+|------|------|
+| August 2020 | Trump first signed an executive order requiring TikTok to sell its U.S. business |
+| April 2024 | Biden signed the Protecting Americans from Foreign Adversary Controlled Applications Act, requiring ByteDance to divest TikTok's U.S. business within 270 days or face a ban |
+| January 19, 2025 | TikTok briefly went offline in the U.S. for around 12 hours |
+| September 2025 | The Trump administration announced a restructuring plan for TikTok's U.S. business |
+| **January 22, 2026** | **TikTok USDS Joint Venture LLC was formally established and the transaction closed** |
+
+(Sources: MacRumors, Variety, Center for American Progress)
+
+### Transaction Structure
+
+The final structure was not a "sale" but a "joint-venture restructuring":
+
+| Shareholder | Ownership | Nature |
 |--------|---------|------|
-| Oracle | **15%** | 管理投资者，负责数据安全和基础设施 |
-| Silver Lake | **15%** | 管理投资者 |
-| MGX（阿布扎比） | **15%** | 管理投资者 |
-| 其他新投资者 | ~5% | 美国和全球投资者 |
-| 字节跳动现有投资者关联方 | **30.1%** | 已有投资人转持 |
-| **字节跳动** | **19.9%** | **不超过 20%，符合法律要求** |
+| Oracle | **15%** | Managing investor, responsible for data security and infrastructure |
+| Silver Lake | **15%** | Managing investor |
+| MGX (Abu Dhabi) | **15%** | Managing investor |
+| Other new investors | ~5% | U.S. and global investors |
+| Affiliates of existing ByteDance investors | **30.1%** | Existing investors rolling over their holdings |
+| **ByteDance** | **19.9%** | **No more than 20%, compliant with legal requirements** |
 
-（来源：SEC 8-K 文件、Rest of World、Sky SEO Digital）
+(Sources: SEC 8-K filings, Rest of World, Sky SEO Digital)
 
-**关键细节：**
+**Key details:**
 
-1. **美资持股 80.1%**，技术上满足了"非外国对手控制"的法律要求
-2. **推荐算法将用美国数据重新训练**，部署在 Oracle 云基础设施上
-3. 新合资公司覆盖范围不仅是 TikTok App，还包括 **Lemon8 和 CapCut** 的美国业务
-4. **中美两国政府均已签字批准**（来源：白宫官员确认）
+1. **U.S.-owned capital holds 80.1%**, technically satisfying the legal requirement of "not controlled by a foreign adversary"
+2. **The recommendation algorithm will be retrained on U.S. data** and deployed on Oracle cloud infrastructure
+3. The new joint venture covers not only the TikTok App, but also the U.S. businesses of **Lemon8 and CapCut**
+4. **Both the U.S. and Chinese governments have signed off** (source: confirmation from White House officials)
 
-### 字节到底"丢"了多少
+### How Much Did ByteDance Actually "Lose"?
 
-这是最核心的问题。分两个层面看：
+This is the core question. There are two levels to consider:
 
-**经济利益层面：**
+**Economic interest:**
 
-字节保留了 19.9% 股权，但丧失了美国业务 **40-60%** 的经济利益（来源：研究底稿估算）。此外，字节还保留了算法授权费——即合资公司使用字节技术需要付费。
+ByteDance retained a 19.9% equity stake, but lost **40-60%** of the economic interest in the U.S. business (source: research working-paper estimate). In addition, ByteDance retained algorithm licensing fees, meaning the joint venture must pay to use ByteDance technology.
 
-但"19.9% 股权 + 算法授权费"能值多少钱，取决于合资公司未来的盈利能力和算法授权的定价——**这两个数字目前都不透明**。
+But how much the combination of "19.9% equity + algorithm licensing fees" is worth depends on the joint venture's future profitability and the pricing of the algorithm license. **Both numbers remain opaque.**
 
-**控制权层面：**
+**Control:**
 
-字节在合资公司中**没有运营控制权**。算法重新训练、内容审核、数据管理全部由美资主导。这意味着：
+ByteDance has **no operating control** over the joint venture. Algorithm retraining, content moderation, and data management are all led by U.S.-owned capital. This means:
 
-- TikTok 美国的产品迭代，字节说了不算
-- 推荐算法是否仍能保持竞争力，取决于新团队的能力
-- 字节在美国市场从"经营者"变成了"小股东+技术供应商"
+- ByteDance no longer has the final say over TikTok U.S. product iteration
+- Whether the recommendation algorithm can remain competitive depends on the new team's capabilities
+- In the U.S. market, ByteDance has shifted from "operator" to "minority shareholder + technology supplier"
 
-**这笔交易的本质是——字节用美国业务的控制权，换取了 TikTok 在美国继续存在的权利。**
+**The essence of the transaction is this: ByteDance exchanged control of the U.S. business for the right to keep TikTok alive in the U.S.**
 
-反方观点：19.9% 的 TikTok 美国业务 + 算法授权费，仍然是一笔巨大的资产。如果 TikTok 美国未来独立上市，仅这一块就可能值数百亿美元。与其被完全禁用（价值归零），保留 19.9% 已经是最好的结果。
-
----
-
-## 算法被"重训"意味着什么
-
-TikTok 的核心竞争力是什么？**算法推荐**。
-
-全球社交应用里，TikTok 的推荐算法被公认为最精准——它能在你刷 3 条视频之内就"摸透"你的偏好。这是它击败 Instagram Reels、YouTube Shorts 的根本原因。
-
-USDS 交易要求：**TikTok 美国的推荐算法必须用美国数据重新训练，部署在 Oracle 的云基础设施上，限制外国访问。**
-
-这带来两个问题：
-
-### 问题一：重训后的算法还能一样好吗？
-
-字节的算法优势来自两件事：**全球最大的短视频数据池** + **中国最顶尖的算法工程师团队**。
-
-重训意味着：
-- 数据池从"全球"缩小到"美国"——数据量和多样性下降
-- 算法团队从字节总部变成合资公司团队——人才密度可能下降
-- 字节的算法迭代经验能否完整传递给新团队，存疑
-
-**短期内，用户不太会感知到差异——算法的惯性很大。但 2-3 年后，如果合资公司的算法迭代速度跟不上 Instagram Reels 和 YouTube Shorts，差距就会显现。**
-
-### 问题二：字节的算法授权费能持续吗？
-
-如果合资公司逐步建立了自己的算法团队，对字节的技术依赖会下降，算法授权费就可能缩水。这是一个**递减资产**，不是永续收入。
-
-反方观点：算法的核心是数据，不是代码。美国 1.7 亿月活用户的数据量足以训练一个顶级推荐系统。Meta 和 Google 的算法也是基于各自的用户数据训练的，照样很强。不必过度担忧。
+Counterargument: 19.9% of TikTok's U.S. business plus algorithm licensing fees is still an enormous asset. If TikTok U.S. eventually lists independently, this stake alone could be worth tens of billions of dollars. Compared with a full ban, which would reduce the value to zero, retaining 19.9% may already be the best possible outcome.
 
 ---
 
-## 全球化的连锁反应
+## What Does Algorithm "Retraining" Mean?
 
-美国的 TikTok 禁令开了一个危险的先例：**一个国家可以以"国家安全"为由，强制拆分一家外国公司的本地业务**。
+What is TikTok's core competitive advantage? **Algorithmic recommendations.**
 
-其他国家会不会效仿？
+Among global social apps, TikTok's recommendation algorithm is widely regarded as the most precise. It can "figure out" your preferences within 3 videos. This is the fundamental reason it defeated Instagram Reels and YouTube Shorts.
 
-| 国家/地区 | 当前态度 | 风险评估 |
+The USDS transaction requires that **TikTok U.S.'s recommendation algorithm must be retrained on U.S. data, deployed on Oracle cloud infrastructure, and subject to restricted foreign access.**
+
+This creates two questions:
+
+### Question 1: Will the Retrained Algorithm Be Just as Good?
+
+ByteDance's algorithmic advantage comes from two things: **the world's largest short-video data pool** + **China's top algorithm engineering team**.
+
+Retraining means:
+- The data pool shrinks from "global" to "U.S.", reducing both data volume and diversity
+- The algorithm team shifts from ByteDance headquarters to the joint venture team, potentially lowering talent density
+- Whether ByteDance's algorithm iteration experience can be fully transferred to the new team is uncertain
+
+**In the short term, users are unlikely to notice much difference because algorithms have strong inertia. But after 2-3 years, if the joint venture's algorithm iteration cannot keep pace with Instagram Reels and YouTube Shorts, the gap will become visible.**
+
+### Question 2: Can ByteDance's Algorithm Licensing Fees Continue?
+
+If the joint venture gradually builds its own algorithm team, its dependence on ByteDance technology will decline, and algorithm licensing fees may shrink. This is a **declining asset**, not perpetual income.
+
+Counterargument: the core of an algorithm is data, not code. The data generated by 170 million monthly active U.S. users is enough to train a top-tier recommendation system. Meta and Google also train their algorithms on their own user data, and those systems are still powerful. There is no need to over-worry.
+
+---
+
+## The Chain Reaction of Globalization
+
+The U.S. TikTok ban created a dangerous precedent: **a country can invoke "national security" to force the separation of a foreign company's local business.**
+
+Will other countries follow?
+
+| Country/Region | Current stance | Risk assessment |
 |-----------|---------|---------|
-| 欧盟 | 调查中，关注数据隐私 | 中等——GDPR 框架下有独立制裁工具 |
-| 印度 | 2020 年已禁用 TikTok | **已发生** |
-| 澳大利亚 | 2024 年禁止 16 岁以下使用 | 低——未要求剥离 |
-| 日本 | 无禁令，但政府设备已禁用 | 低 |
-| 巴西、东南亚 | 无明确限制 | 低——TikTok 增长主力市场 |
+| EU | Under investigation, focused on data privacy | Medium: the GDPR framework provides independent sanction tools |
+| India | Banned TikTok in 2020 | **Already happened** |
+| Australia | Banned use by those under 16 in 2024 | Low: no divestiture requirement |
+| Japan | No ban, but government devices have already been restricted | Low |
+| Brazil, Southeast Asia | No clear restrictions | Low: core growth markets for TikTok |
 
-**基准情景（概率约 70%）：** 美国模式不会被大规模复制。多数国家选择"监管而非剥离"。TikTok 在全球（除中国和印度外）继续运营。
+**Base case (probability around 70%):** The U.S. model will not be copied at scale. Most countries choose "regulation rather than divestiture." TikTok continues operating globally, excluding China and India.
 
-**悲观情景（概率约 15%）：** 欧盟或更多国家效仿美国要求本地化运营或股权剥离，字节不得不在多个市场重复 USDS 模式。海外业务的经济利益被大幅稀释。
+**Bear case (probability around 15%):** The EU or more countries copy the U.S. by requiring localized operations or equity divestiture. ByteDance has to repeat the USDS model in multiple markets, materially diluting the economic interest in its overseas business.
 
-**乐观情景（概率约 15%）：** USDS 模式成为"模板"，反而消除了各国的安全顾虑。TikTok 在全球的监管不确定性下降，估值重新上修。
+**Bull case (probability around 15%):** The USDS model becomes a "template" that instead removes countries' security concerns. Regulatory uncertainty around TikTok globally declines, and valuation is revised upward.
 
-（来源：研究底稿情景分析）
+(Source: scenario analysis in research working papers)
 
 ---
 
-## TikTok Shop：被低估的增长引擎
+## TikTok Shop: An Underestimated Growth Engine
 
-在禁令的阴影下，一个容易被忽视的事实是——**TikTok 正在成为全球社交电商的绝对霸主**。
+Under the shadow of the ban, one easily overlooked fact is that **TikTok is becoming the undisputed leader in global social commerce**.
 
-| 指标 | 数据 |
+| Metric | Data |
 |------|------|
-| TikTok Shop 2024 年全球 GMV | **$332 亿** |
-| 2025 年 GMV 增速 | **~70%** |
-| 全球社交电商市场份额 | **68%**（第 1） |
-| 主要市场 | 美国、东南亚（印尼、泰国、越南）、英国 |
+| TikTok Shop 2024 global GMV | **$33.2 billion** |
+| 2025 GMV growth | **~70%** |
+| Global social commerce market share | **68%** (No. 1) |
+| Main markets | U.S., Southeast Asia (Indonesia, Thailand, Vietnam), U.K. |
 
-（来源：The Information、研究底稿）
+(Sources: The Information, research working papers)
 
-TikTok Shop 的增长逻辑和抖音电商一样——**用算法推荐和短视频内容驱动冲动购买**。但在海外市场，这个模式的渗透率远低于中国，意味着增长空间更大。
+TikTok Shop's growth logic is the same as Douyin e-commerce: **use algorithmic recommendations and short-video content to drive impulse purchases**. But in overseas markets, penetration of this model remains far below China, implying greater room for growth.
 
-研究底稿的预测：**TikTok Shop 5 年内 GMV 有望达到 $2000 亿+，年均增速 50-80%。**
+The research working-paper forecast: **TikTok Shop GMV could reach $200 billion+ within 5 years, implying a 50-80% compound annual growth rate.**
 
-但 USDS 交易带来了一个问题——TikTok Shop 美国业务现在属于合资公司，字节只分到 19.9% 的经济利益。**最大的市场（美国）的增长红利，字节只能吃到五分之一。**
+But the USDS transaction creates a problem. TikTok Shop's U.S. business now belongs to the joint venture, and ByteDance receives only 19.9% of the economic interest. **For the largest market, the U.S., ByteDance can capture only one-fifth of the growth dividend.**
 
-东南亚和其他市场的 TikTok Shop 仍由字节全资控制，这部分才是字节能完整享受增长的部分。
+TikTok Shop in Southeast Asia and other markets remains wholly controlled by ByteDance. This is the portion of growth ByteDance can fully enjoy.
 
-反方观点：东南亚是 TikTok Shop 增长最快的市场（印尼、泰国、越南），美国的 GMV 占比目前不到 30%。即使美国业务被稀释，东南亚和其他新兴市场的增长仍足以支撑 TikTok Shop 的估值故事。
+Counterargument: Southeast Asia is TikTok Shop's fastest-growing market (Indonesia, Thailand, Vietnam), while the U.S. currently accounts for less than 30% of GMV. Even if the U.S. business is diluted, growth in Southeast Asia and other emerging markets is still enough to support the TikTok Shop valuation story.
 
 ---
 
-## TikTok 对字节估值的影响
+## TikTok's Impact on ByteDance Valuation
 
-TikTok（含 TikTok Shop）在字节跳动 $5500 亿估值中占多少？
+How much of ByteDance's $550 billion valuation comes from TikTok, including TikTok Shop?
 
-不同口径给出不同答案：
+Different approaches produce different answers:
 
-| 估值方法 | TikTok 估值范围 | 占字节总估值比例 |
+| Valuation method | TikTok valuation range | Share of ByteDance total valuation |
 |---------|---------------|----------------|
-| 收入倍数法（按海外收入占 30%） | $1500-2000 亿 | 27-36% |
-| 可比公司法（对标 Snap/Pinterest） | $800-1200 亿 | 15-22% |
-| USDS 交易隐含估值 | $1000-1500 亿（仅美国） | 18-27% |
+| Revenue multiple method (based on overseas revenue at 30%) | $150-200 billion | 27-36% |
+| Comparable company method (benchmarking Snap/Pinterest) | $80-120 billion | 15-22% |
+| USDS transaction implied valuation | $100-150 billion (U.S. only) | 18-27% |
 
-**保守估计，TikTok 全球业务（含 TikTok Shop）在字节估值中占 $1200-2000 亿，约 22-36%。**
+**Conservatively, TikTok's global business, including TikTok Shop, accounts for $120-200 billion of ByteDance's valuation, or about 22-36%.**
 
-但这里面的关键变量是——**字节对 TikTok 美国业务的经济利益已经从 100% 降到了 ~20%**。如果市场充分反映这一稀释，TikTok 对字节的估值贡献应该下调。
+But the key variable here is that **ByteDance's economic interest in TikTok's U.S. business has already fallen from 100% to ~20%**. If the market fully reflects this dilution, TikTok's valuation contribution to ByteDance should be marked down.
 
-目前 $5500 亿的二级市场估值是否已经反映了 USDS 的影响？**可能部分反映了，但不充分**——因为算法授权费、合资公司分红等细节至今不透明。
+Has the current $550 billion secondary-market valuation already reflected the impact of USDS? **Probably partially, but not fully**, because details such as algorithm licensing fees and joint venture dividends remain opaque.
 
 ---
 
-## 关键数字总结
+## Key Numbers Summary
 
-| 指标 | 数据 |
+| Metric | Data |
 |------|------|
-| TikTok 全球月活 | **>15 亿** |
-| TikTok 美国月活 | **>1.7 亿** |
-| TikTok 2025 年收入（估） | **~$500 亿+** |
-| TikTok Shop 2024 年 GMV | **$332 亿**（增速 ~70%） |
-| USDS 交易：字节持股 | **19.9%** |
-| USDS 交易：美资持股 | **80.1%** |
-| USDS 交易完成时间 | **2026 年 1 月 22 日** |
-| 海外收入占字节总收入 | **首次超过 30%**（2025 年） |
+| TikTok global MAU | **>1.5 billion** |
+| TikTok U.S. MAU | **>170 million** |
+| TikTok 2025 revenue (est.) | **~$50 billion+** |
+| TikTok Shop 2024 GMV | **$33.2 billion** (growth ~70%) |
+| USDS transaction: ByteDance stake | **19.9%** |
+| USDS transaction: U.S.-owned capital stake | **80.1%** |
+| USDS transaction closing date | **January 22, 2026** |
+| Overseas revenue as a share of ByteDance total revenue | **Exceeded 30% for the first time** (2025) |
 
 ---
 
-## 下期预告
+## Next Preview
 
-下一篇，我们拆字节跳动最具想象力也最烧钱的新业务——**AI 与豆包大模型**。
+In the next installment, we break down ByteDance's most imaginative and cash-burning new business: **AI and the Doubao large model**.
 
-要回答的问题：
+Questions to answer:
 
-- 豆包月活 **3.15 亿**、日活过亿——它到底是怎么做到的？
-- 字节 2025 年资本支出 **1500 亿元**，2026 年 AI 预算 **$230 亿**——这笔钱花在哪了？
-- 火山引擎能成为中国的 AWS 吗？
-- AI 豪赌的回报周期有多长？字节能等得起吗？
+- Doubao has **315 million** monthly active users and more than 100 million daily active users. How exactly did it get there?
+- ByteDance's 2025 capital expenditure was **RMB 150 billion**, and its 2026 AI budget is **$23 billion**. Where is that money being spent?
+- Can Volcano Engine become China's AWS?
+- How long is the payback cycle for the AI bet? Can ByteDance afford to wait?
 
 ---
 
-*本文是《看懂字节跳动》系列第 03 篇。后续 2 篇将陆续推出。*
-*本系列基于公开信息和媒体报道撰写，字节跳动为未上市公司，所有财务数据均为媒体报道和分析师估算，非经审计数据。*
-*本系列不构成任何投资建议。*
+*This is Part 03 of the "Understanding ByteDance" series. The final 2 installments will be released in sequence.*
+*This series is based on public information and media reports. ByteDance is a private company, and all financial data are media reports and analyst estimates, not audited figures.*
+*This series does not constitute investment advice.*

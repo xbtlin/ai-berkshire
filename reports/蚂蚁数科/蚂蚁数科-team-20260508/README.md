@@ -1,22 +1,22 @@
-# 蚂蚁数科投研团队报告
+# Ant Group Digital Technology Investment Team Report
 
-**研究日期**：2026年5月8日
-**信息丰富度**：C级（未上市，无公开财报，信息稀缺）
-**研究模式**：第一性原理——聚焦商业本质核心问题，所有推算数据标注置信度
+**Research date**: 2026-05-08
+**Information richness**: C-level (unlisted, no public financial reports, scarce information)
+**Research mode**: First-principles approach - focus on the core business questions, and label all inferred data with confidence levels
 
-## 团队构成
+## Team Composition
 
-| 角色 | 视角 | 核心结论 |
-|------|------|----------|
-| 商业模式分析师 | 段永平 | 有潜力但尚未证明自己的好生意，护城河有但不够宽 ★★★☆☆ |
-| 财务估值分析师 | 巴菲特 | 营收~80亿，合理估值500-800亿，信息不对称极高 ★★★☆☆ |
-| 行业竞争分析师 | 芒格 | BaaS+隐私计算双第一，但华为全栈挤压是结构性威胁 ★★★☆☆ |
-| 风险管理层评估师 | 李录 | 管理层技术强但商业化待验证，不满足"确定性"要求 ★★★☆☆ |
+| Role | Viewpoint | Key Takeaway |
+|------|-----------|--------------|
+| Business model analyst | Duan Yongping | A promising business that has not yet fully proven itself; it has a moat, but it is not wide enough ★★★☆☆ |
+| Financial valuation analyst | Buffett | Revenue is around RMB 8 billion, fair value is RMB 50-80 billion, and information asymmetry is extremely high ★★★☆☆ |
+| Industry competition analyst | Munger | A dual leader in BaaS and privacy computing, but Huawei's full-stack squeeze is a structural threat ★★★☆☆ |
+| Risk and management assessor | Li Lu | Strong technical management, but commercialization still needs to be proven; it does not yet meet the "certainty" requirement ★★★☆☆ |
 
-## 报告文件
+## Report Files
 
-- [01-商业模式分析-段永平视角.md](01-商业模式分析-段永平视角.md)
-- [02-财务估值分析-巴菲特视角.md](02-财务估值分析-巴菲特视角.md)
-- [03-行业竞争分析-芒格视角.md](03-行业竞争分析-芒格视角.md)
-- [04-风险管理层评估-李录视角.md](04-风险管理层评估-李录视角.md)
-- [最终报告.md](最终报告.md)
+- 01-Business-Model-Analysis-Duan-Yongping-View.md
+- 02-Financial-Valuation-Analysis-Buffett-View.md
+- 03-Industry-Competition-Analysis-Munger-View.md
+- 04-Risk-Management-and-Management-Assessment-Li-Lu-View.md
+- Final-Report.md
