@@ -1,47 +1,47 @@
-# 理想汽车（Li Auto）投资研究报告
+# Lí Auto investment study
 
-> 报告日期：2026年6月24日
-> 股票代码：NASDAQ: LI / HK: 2015
-> 当前股价：$12.63（美股） / HK$48.92（港股）
-> 市值：$128.8亿（约940亿人民币）
-
----
-
-## AI研究偏见评估
-
-**信息丰富度评级：A级（信息充裕）**
-
-理想汽车2020年在纳斯达克上市、2021年在港交所二次上市，券商覆盖密集（28位分析师），媒体报道极为丰富，创始人李想长期活跃于社交媒体。财务数据可从公司季度财报、SEC文件（20-F/6-K）获得完整验证。
-
-**A级公司的AI研究陷阱**：共识过强，AI输出容易趋同于市场定价。本报告重点做反面检验——聪明人为什么不买？被忽略的风险是什么？
-
-**偏见自查**：
-- 当前市场情绪极度悲观（股价较历史高点跌去73%，接近IPO发行价），AI分析需警惕"锚定在当前低位"产生的过度乐观倾向
-- 理想汽车属于高关注度公司，公开资料中多头叙事和空头叙事都非常充分，信息优势有限
-- 本报告的确定性来自财务数据和商业模式分析，而非预测未来销量的精确数字
+> Date of report: 24 June 2026
+> Stock code: NASDAQ: LI/ HK: 2015
+> Current share price: $12.63 (US share) / HK$48.92 (ports share)
+> Market value: $12.88 billion (approximately RMB 94 billion)
 
 ---
 
-## 第一部分：核心数据总览
+# AI studies prejudice assessment
 
-### 关键财务数据（经工具验算，全部通过）
+** Information abundance rating: A (information is abundant)**
 
-| 指标 | 数值 | 验证状态 |
+The ideal car was listed in NASDAQ in 2020, and the second in Hong Kong in 2021, with a dense coverage (28 analysts), and a very rich media coverage, with its founder, Lee, permanently active in social media. Financial data can be verified from the company’s quarterly financial statements, SEC documents (20-F/6-K).
+
+** AI study trap for A-class companies**: There is too much consensus that AI exports can easily converge with market pricing. This report focuses on the negative test - why not the smart one? What are the risks of being ignored?
+
+** Prejudice self-examination**:
+- The current market mood is extremely pessimistic (supremely high stock prices, 73%, near IPO distribution prices), and AI's analysis needs to be vigilant about the overoptimistic tendency of anchoring at the current low position.
+- The ideal car is a high-profile company, with a full and empty narrative in public information and limited information.
+- The certainty of the report is derived from financial data and business model analysis rather than from accurate figures for predicting future sales
+
+---
+
+# Part I: Core data overview
+
+# Key financial data (tool tested, all through)
+
+<unk> Indicators <unk> Value <unk> Validation state <unk>
 |------|------|----------|
-| FY2025总收入 | 1,123.1亿元 | ✅ 双源一致 |
-| FY2025净利润 | 11.4亿元（同比-86%） | ✅ 双源一致 |
-| 现金储备（含短期投资） | 1,010.2亿元 | ✅ 双源一致 |
-| 净现金头寸 | 915亿元 | ✅ 双源一致 |
-| 总股本（普通股） | 21.36亿股 | ✅ 来自20-F |
-| 美股市值 | $128.8亿 | ✅ 计算偏差0.02% |
-| 每ADS净现金 | ~$12.34 | ✅ 工具验算 |
-| 企业价值（EV） | ~$2.9亿 | 市值减净现金 |
+<unk> FY2025 gross income $112,310 million <unk>
+<unk> FY2025 net profit <unk> 1140 million (same as 86%) <unk> double-sourced <unk>
+Cash reserves (including short-term investments)
+♪ The cash position is $91.5 billion ♪
+Total equity (general)
+The market value of the dollar is $12.88 billion.
+<unk> Net cash per ADS ~ $12.34 <unk> Tool = tool = tool = tool = tool = tool = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash – cash – cash – cash – cash – cash – cash – cash – cash – cash – cash – – $ 12.34 – tool = tool = tool = tool = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash = cash % – cash – cash – cash – cash – cash – cash – cash – cash – cash – – – cash – – cash – – – cash –
+Enterprise value (EV) ~ $290 million
 
-**一个惊人的数字**：当前股价$12.63，而每ADS净现金约$12.34。市场几乎只在为资产负债表上的现金定价，理想汽车千亿规模的汽车业务，企业价值接近于零。
+** A staggering figure**: current stock price $12.63, compared to approximately $12.34 per ADS net cash. The market is almost priced only for cash on the balance sheet, ideally for cars of hundreds of billions of size, with business values close to zero.
 
-### 近5年财务趋势
+# # Financial trends for the last five years
 
-| 年份 | 收入（亿元） | 净利润（亿元） | 毛利率 | 经营利润率 | 自由现金流（亿元） | 现金储备（亿元） |
+(b) The amount of the cash reserve (c) is not included in the total amount of the amount of the cash available.
 |------|:---:|:---:|:---:|:---:|:---:|:---:|
 | 2021 | 270.1 | -3.2 | 21.3% | -3.8% | 49.0 | 501.6 |
 | 2022 | 452.9 | -20.1 | 19.4% | -8.1% | 22.5 | 584.5 |
@@ -49,434 +49,434 @@
 | 2024 | 1,444.6 | 80.5 | 20.5% | 4.9% | 82.0 | 1,128.1 |
 | 2025 | 1,123.1 | 11.4 | 18.7% | -0.5% | -128.2 | 1,010.2 |
 
-> 数据来源：理想汽车FY2021-FY2025年度财报（SEC Filing）、stockanalysis.com
+> Data source: The ideal car FY2021-FY2025 Annual Financial Reporting (SEC Filing), stockanalysis.com
 
-### 近4季度经营数据
+# # about 4 seasons of operations
 
-| 指标 | Q1 2025 | Q2 2025 | Q3 2025 | Q4 2025 |
+Indicator <unk> 1 2025 <unk> <unk> 2 2025 <unk> <unk> 3 2025 <unk> <unk> 4 2025 <unk>
 |------|:---:|:---:|:---:|:---:|
-| 总收入（亿元） | 259.3 | 302.5 | 273.6 | 287.8 |
-| 交付量（辆） | 92,864 | 111,074 | 93,211 | 109,194 |
-| 整体毛利率 | 20.5% | 20.1% | 16.3% | 17.8% |
-| 车辆毛利率 | 19.8% | 19.4% | 15.5% | 16.8% |
-| 净利润（亿元） | 6.5 | 11.3 | -6.2 | 0.2 |
+Total income (millions of yuan)
+<unk> Delivery (vehicle) <unk> 92,864 <unk> 111,074 <unk> 93,211 <unk> 109,194 <unk>
+<unk> Overall Māori ratio <unk> 20.5% <unk> 20.1% <unk> 16.3% <unk> 17.8% <unk>
+<unk> Māori ratio of vehicles 19.8% <unk> 19.4% <unk> 15.5% <unk> 16.8% <unk>
+Net profit (millions of yuan)
 
-> Q3毛利率骤降至16.3%是全年业绩恶化的拐点，主要受竞争加剧和新车型爬坡期影响。
+> The Q3 Māori rate dropped sharply to 16.3 per cent, a turning point for deteriorating performance throughout the year, mainly affected by increased competition and the uphill period of new vehicles.
 
 ---
 
-## 第二部分：生意本质分析
+# Part two: Business nature analysis
 
-### 一句话定义
+# One word of definition
 
-理想汽车的生意本质是：**以"家庭用车"为精准定位，用增程式技术路线解决里程焦虑，通过高度标准化的"套娃"产品矩阵实现规模效应和成本控制的中高端新能源汽车品牌。**
+The business essence of the ideal car is:** precision positioning of the home car, resolution of mileage anxiety with incremental technical routes, and a high-scale and cost-controlled brand for new medium- and high-end energy vehicles through a highly standardized "bot-baby" product matrix**.
 
-### 收入结构
+# Income structure
 
-| 项目 | FY2025金额（亿元） | 占比 | 同比增速 |
+Project <unk> FY 2025 (billions) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 |------|:---:|:---:|:---:|
-| 车辆销售 | 1,066.8 | 95.0% | -23.0% |
-| 其他（充电服务、配件等） | 56.3 | 5.0% | -4.9% |
-| **合计** | **1,123.1** | **100%** | **-22.3%** |
+<unk> Vehicle sales <unk> 1,066.8 <unk> 95.0 <unk> - 23.0 <unk>
+Other (charge services, accessories, etc.)
+** Total** **1,123.1 ** ** 100% ** ** 22.3% **
 
-**收入结构特征**：高度依赖车辆销售（95%），服务和软件收入占比极低。这意味着理想本质上仍是一家硬件制造公司，缺乏高毛利的经常性收入来源。与特斯拉（FSD订阅+能源业务）和蔚来（换电服务+BaaS）相比，收入多元化程度不足。
+** Income structure**: High reliance on vehicle sales (95%) and very low share of services and software. This means that the ideal is still a hardware manufacturing company, lacking a high-morith income source. There is insufficient diversification of income compared to the FSD subscription + energy business and the U.S.A. (electric exchange + BaaS).
 
-### 商业模式画布
+# Business model canvass
 
-| 维度 | 理想汽车 |
+♪ The bouquet, the bouquet, the bouquet, the bouquet ♪
 |------|---------|
-| 交易模式 | 一次性销售为主，非订阅/复购 |
-| 复购周期 | 3-5年换车周期，复购率尚无公开数据 |
-| 硬件vs软件 | 硬件为绝对主体（95%+），软件服务刚起步 |
-| 客户锁定 | 中等——通过超充网络、车机生态（星环OS）形成一定粘性，但不如蔚来换电体系的锁定强度 |
-| 渠道 | 直营为主（国内），授权经销为辅（海外） |
+<unk> Transaction mode <unk> One-time sale predominantly non-subscription/repurchase <unk>
+Repurchase cycle 3-5 years replacement cycle, repurchase rate not publicly available
+Hardware vs software <unk> Hardware is absolute (95%+) and software services are just starting
+Client locking, medium-sized -- it's a sticky thing to create by superfilling the network, car ecology (OS), but not as much as to replace the locking strength of the power system.
+Direct camp (domestic) authorized distribution as auxiliary (foreign)
 
-### 毛利率对比
+# Māori ratio comparison
 
-| 品牌 | 2024年车辆毛利率 | 特征 |
+<unk> Brand brand <unk> Māori ratio of vehicles in 2024 <unk> Characteristics <unk>
 |------|:---:|------|
-| 特斯拉 | ~17-18% | 全球规模效应，但受降价影响 |
-| 比亚迪 | ~22% | 供应链垂直整合，成本极低 |
-| **理想** | **~20%** | "套娃"降本+增程式结构简单 |
-| 蔚来 | ~13% | 换电投入重，尚未盈利 |
-| 小鹏 | ~9% | 智驾投入大，规模不足 |
+<unk> Tesla<unk> 17-18% Global scale effect, but affected by price reduction
+♪ The supply chain is vertically integrated, very low cost ♪
+<unk> Ideal** <unk> 20%** <unk> "Set-baby" drop-down + simple program structure <unk>
+~13% ~ power re-input, not yet profitable.
+♪ The ♪ The ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the the the the the the the the ♪ the the the the the the the the ♪ the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the
 
-理想的毛利率在新势力中最高，核心原因有二：（1）增程式技术结构简单，三电成本低于纯电；（2）L6/L7/L8/L9四款车高度共享平台和零部件（"套娃"策略），单车研发和模具分摊成本低。
+The ideal Māori ratio is highest among the new forces for two core reasons: (1) the incremental technology structure is simple, with three electricity costs lower than pure electricity; (2) the L6/L7/L8/L9 4 vehicle high-sharing platform and parts (the "Set-baby" strategy) and the low share of the costs of vehicle development and modelling.
 
-### 经营杠杆分析
+# Run the leverage analysis
 
-2023年是理想的"甜蜜点"——收入从453亿暴增至1239亿（+173%），而费用增速远低于收入增速，经营杠杆充分释放，实现117亿净利润。但2025年反向操作——收入下滑22%，固定费用（研发113亿、销管88亿）难以快速压缩，经营利润率从4.9%跌至-0.5%。
+The year 2023 was the ideal year for "sweet spot" — income rose from 45.3 billion to 123.9 billion (+173%) – while costs increased at a much faster rate than income, with fully leveraged business and realized a net profit of 11.7 billion. But in 2025, reverse operations — income fell by 22%, fixed costs (R&D 11.3 billion, sales managers $8.8 billion) were difficult to rapidly compress, with operating profits falling from 4.9% to -0.5%.
 
-**这暴露了理想商业模式的核心脆弱性：高固定成本+单一硬件收入=对销量极度敏感。**
+** This exposes the core vulnerabilities of the desired business model: high fixed costs + single hardware income = extremely sensitive to sales **
 
-### 追问：这门生意好在哪？
+# Ask: Where is the business?
 
-如果只能用一句话：**理想汽车是中国新能源车企中少数证明过"能赚钱"的公司，但它赚钱的前提条件——差异化的增程式定位、弱竞争的30-50万元价格段——正在被快速侵蚀。**
+If only one sentence:** The ideal car is a company of a few new energy companies in China that have proven "profitable", but its prerequisites for making money – differential incremental positioning, a weakly competitive 300,000-500,000 price band – are being rapidly eroded.**
 
 ---
 
-## 第三部分：护城河评估
+# Part III: A waterfront assessment
 
-### 五类护城河逐一验证
+# Five-class moats to verify
 
-| 护城河类型 | 强度 | 验证分析 |
+♪ The moat type ♪
 |-----------|:---:|---------|
-| **品牌/定价权** | 中等 | 在"奶爸车"细分市场建立了强认知，但品牌溢价有限——2025年L系列被迫降价应对竞争，定价权被削弱。MEGA在55万元价位的失败说明品牌上探能力不足 |
-| **转换成本** | 弱 | 汽车行业天然转换成本低。理想的超充网络（4000+站）提供一定粘性，但远不如蔚来换电体系的锁定效果。车机生态尚未形成足够深的用户依赖 |
-| **网络效应** | 弱 | 不存在用户间的直接网络效应。超充网络是单向的基础设施投入，不构成真正的网络效应 |
-| **规模效应** | 中等 | "套娃"策略带来的零部件共享和研发分摊确实降低了单车成本。年产40万辆的常州工厂达到了较好的规模效率。但比亚迪年产460万辆的规模优势不可比拟 |
-| **技术/专利壁垒** | 中等偏弱 | 增程式技术本身壁垒不高（比亚迪DM-i、问界已证明可复制）。自研M100芯片是潜在的技术壁垒，但要到2026年底才能量产上车，且尚未经过市场验证 |
+<unk> Brand/pricing rights** Medium <unk> Strong awareness in the "Creams of the Car" segment market, but limited brand premiums - the "L series" in 2025 was forced to fall to competition and price rights were weakened. The failure of MEGA in the 550,000-bit price indicates insufficient brand detection capability
+<unk> Conversion costs** Weaknesses <unk> Automobiles have low natural conversion costs. The ideal supercharged network (4,000+ station) provides a certain amount of stickyness, but far less than the locking effect of the switch system.
+<unk> **Web effect** <unk> Weak <unk> No direct inter-user network effect exists. Super-filled networks are one-way infrastructure inputs and do not constitute a real network effect
+The share of spare parts and research and development generated by the "scope" strategy does reduce the cost of bicycles. The 400,000 permanent state plants produce better scale efficiencies. But the size of the 4.6 million by Byadi is incomparable.
+**Technology/Picticity Barrier** Medium Weak <unk> Programcs are not high per se (ByadiDM-i, the question world has proven replicable). Self-researching M100 chips is a potential technical barrier, but will not be delivered until the end of 2026 and have not been market-tested
 
-### 护城河趋势判断
+# The moat of the river trends
 
-**过去5年：先宽后窄**
-- 2021-2023年：理想几乎独占"大空间增程式家庭SUV"赛道，竞品稀少，护城河看起来很宽
-- 2024-2025年：问界M7/M9正面冲击，零跑/小鹏/比亚迪纷纷推出增程车型，竞品从"几乎没有"变为"遍地都是"
+** The last five years: broad and narrow**
+- 2021-2023: idealisticly almost exclusive to the Big Space Augmentation Family Suv track, competition is scarce, moats look wide.
+2024-2025: Positive impact of M7/M9 in the field, running sprints/pippers/Biadis, running the train, from "never" to "all over the place."
 
-**未来5年预判：取决于技术路线切换成败**
-- 如果M100芯片+智驾系统成功落地，可能在智能化维度建立新的技术壁垒
-- 如果纯电i系列打开局面，增程+纯电双线覆盖将扩大可服务市场
-- 但如果两个"如果"都未兑现，理想将退化为一个没有明显护城河的二线品牌
+** The judgement for the next five years is dependent on the success of the technology shift**
+- If M100 chips + intellectual driving systems are successfully landed, new technical barriers may be created in intelligent-chemical dimensions.
+- If the pure i series opens up, the incremental + pure double-wire coverage will expand the serviceable market
+- But if both "if" fail, the ideal will be transformed into a second-line brand without a clear moat.
 
-### 追问：10年后这条护城河还在吗？什么能摧毁它？
+# Ask: 10 years later, is this moat still there? What can destroy it?
 
-理想当前最强的"护城河"——增程式差异化——本质上是一个时间窗口，而非结构性壁垒。当充电基础设施足够完善、电池成本进一步下降时，增程式的续航优势将消失。能拯救理想的是从"增程式先发者"成功转型为"智能化领先者"。能摧毁它的是：华为在智驾上持续领先+比亚迪在成本上持续领先，理想两头不靠。
+The ideal for the strongest moat at present -- incremental variation -- is essentially a window of time, not structural barriers. When the recharge infrastructure is sufficiently well developed and battery costs fall further, the advantage of the extension will disappear. The ideal is to save the ideal from "skiller" to "smart leader." The ideal is to destroy it: "Haw is to lead the driving of the intellectual + Biadi continues to lead the cost and the ideal two are not.
 
 ---
 
-## 第四部分：逆向思考与风险清单
+# Part IV: Reverse thinking and risk lists
 
-### 失败路径分析
+# Failed path analysis
 
-| 失败路径 | 概率 | 影响程度 | 逻辑 |
+The path of failure, the probability, the impact, the logic, the logic.
 |---------|:---:|:---:|------|
-| 增程式路线被市场淘汰 | 中（30%） | 致命 | 纯电渗透率持续提升（2025年占比已达74%），增程占比从51%降至26%。如果趋势持续，理想95%收入来源的增程车型将面临需求萎缩 |
-| 问界持续蚕食核心市场 | 高（50%） | 重大 | 问界M9月销已是L9的两倍，华为品牌势能+ADS 3.0智驾形成降维打击。30万以上市场理想份额从绝对领先降至约23% |
-| 纯电转型持续失败 | 中（35%） | 重大 | MEGA已失败，i系列月销仅2万+。纯电平台开发比蔚来、小鹏晚至少18个月。如果纯电无法贡献增量，公司只剩萎缩的增程赛道 |
-| 价格战压缩毛利至不可持续 | 中高（40%） | 重大 | 行业产能利用率仅49.5%，2025年平均折扣2.1万元。Q1 2026车辆毛利率已暴跌至6.1%，若持续将导致经营性亏损 |
-| 管理层动荡削弱执行力 | 中（30%） | 中等 | 半年内12位核心高管离职，智驾团队大面积流失。"去华为化"后管理体系重建需要时间 |
-| 现金储备持续消耗 | 低（15%） | 中等 | 2025年FCF为-128亿，若持续3年以上将消耗千亿现金护垫。但当前915亿净现金提供充足缓冲 |
-| 出海受阻 | 中高（45%） | 中等 | 欧盟45.3%关税、美国100%关税、出口许可证新规。理想无海外工厂，关税壁垒难以绕过 |
+The increase in the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the need to be in the need to be of the need to be in the need to be of the need to be of the need to be of the need to be of the need to be of the need to be of the need to be of the most important to be of the most important range of the most important aspects of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the range of the
+The market is still in the core market, and the market is twice as good as L9 in September, and the Chinese are playing a knockoff for brand power + ADS 3.0.
+The pure power transition continues to fail, and the major MEGA has failed, with only 20,000 plus a month in the series. The pure power platform is developed at least 18 months later than the pure power plant, the pelican. If the pure power does not contribute to the increase, the company has only a shrinking course of growth.
+The price war has reduced the Māori to unsustainable (40%) significant <unk> industry capacity utilization rate was only 49.5%, with an average discount of R$21,000 in 2025. The Māori ratio for Q1,2026 vehicles has dropped sharply to 6.1%, and if sustained, will result in a loss of business performance
+The management unrest has weakened the implementation capacity (30%) and the 12 core executives have left and the intelligent team has lost a lot of space in six months.
+<unk> Continued consumption of cash reserves (15%) <unk> Medium <unk> FCF of 128 million in 2025, which would have cost hundreds of billions of cash cushions if it lasted for more than three years.
+The U.S. Customs duties, 100% of US customs duties, new export licensing regulations. The tariff barriers are difficult to circumvent without overseas factories.
 
-### 历史类比
+# History analogy
 
-**正面类比——丰田（1970-1980年代）**：丰田早期被嘲笑为"廉价车"，通过精益生产和产品标准化逐步建立全球竞争力。理想的"套娃"策略和成本控制文化有相似之处。但丰田成功的关键是持续30年的执行力和全球化，理想才刚起步。
+** Positive analogy - Toyota (1970-1980)**: Toyota was mocked as a "low-cost car" in the early years, building global competitiveness through the production of sophisticated products and product standardization. There are similarities between the ideal "Shove" strategy and the cost-control culture. But the key to Toyota's success is its 30-year implementation and globalization, and the ideal is only just beginning.
 
-**警示类比——三星手机（2014-2016年）**：Galaxy Note 7爆炸事件重创品牌，但三星凭借供应链垂直整合和产品矩阵宽度最终恢复。MEGA的失败虽然不如Note 7严重，但对理想纯电品牌形象的伤害是真实的。
+** Alarm analogy - Three Stars' Mobile Phone (2014-2016)**: Galaxy Note 7 blasts have hit brands, but Samsung eventually recovered from vertical integration of supply chains and product matrix width. MEGA’s failure, though less severe than Note 7, is real in its damage to ideal pure brand image.
 
-**负面类比——HTC（2011-2015年）**：曾经的安卓之王，在苹果高端和中国品牌低端的夹击下，从巅峰到几乎退出市场仅用了4年。理想当前面临的"华为向下打、比亚迪向上打"的格局，与HTC当年的困境结构相似。
+** Negative analogy - HTC (2011-2015)**: The king of the old Andres, under the spell of the apple high and the Chinese brand low, took only four years to reach the peak and almost exit the market. The ideal current pattern of "Walth-down, Biade-up" is similar to the structure of the HTC's plight.
 
-### 跨学科分析
+# Interdisciplinary analysis
 
-- **技术采纳曲线**：增程式可能正从"早期大众"过渡到"晚期大众"阶段，新进入者（问界、零跑等）会加速品类商品化
-- **竞争博弈**：理想在30-50万元价格段面临典型的"红皇后效应"——必须不断加速才能维持原地不动
-- **组织熵增**：3年内从OKR到PBC再回OKR，反复折腾本身就是组织能力不足的信号
+- **Technology adoption curve**: The incremental program may be moving from "early mass" to "late mass" phase, and the newcomers (questioning, running, etc.) will accelerate the commodification of the goods
+- **Competing game**: ideal to face a typical Red Queen effect at a price of $300,000-500,000 -- must be accelerated to remain in place.
+- **Organial aphids**: Retrieval of korium from kR to PBC in three years is itself a sign of insufficient organizational capacity
 
-### 偏误自查
+# I'm wrong to check myself
 
-- **叙事偏差**：李想的创业故事极具感染力（高中辍学、三次创业、敢赌增程），但好故事不等于好投资
-- **锚定效应**：股价从$46.65跌到$12.63，容易产生"便宜了73%肯定是捡漏"的错觉——但便宜有可能是因为基本面确实恶化了
-- **幸存者偏差**：理想是"蔚小理"中曾经表现最好的，但新势力洗牌正在进行（威马、高合、极越、哪吒已出局），理想也不是不可能掉队
+- ** Narrative deviation**: Lee's business story is very contagious (high school drop-out, three start-ups, gambling up), but good stories are not good investments
+- ** anchor effect**: stock prices dropped from $46.65 to $12.63, which is easy to create the illusion that 73% of the price must have been missing -- but the price may be because the basics have actually deteriorated.
+- ** Survivors' deviation**: Ideas were the best in "The Axe," but the new forces are shuffling.
 
-### 追问：我最可能在哪里犯错？聪明人为什么不买？
+# Ask: Where am I most likely to make mistakes? Why not buy smart people?
 
-摩根大通给出"卖出"评级（目标价$14），Zacks给出"强烈卖出"——空方的核心逻辑是：**竞争格局恶化不可逆。** 增程式赛道不再是理想独占，华为+比亚迪的双重挤压下，理想的品牌溢价和定价权都在下降。Q1 2026车辆毛利率暴跌至6.1%已经发出了强烈的警告信号。聪明人不买的理由是：即使股价看起来便宜（接近净现金），但如果公司持续烧钱（2025年FCF为-128亿），净现金这个"底"也会下移。
+Morgan Chase gave a "sale" rating (target price $14), Zacks gave a "sale strongly" - the core logic of the empty side is: ** the competition pattern is deteriorating irreversibly.** The incremental track is no longer ideal monopoly, and the ideal brand premium and pricing rights are declining under double squeezes by China + Biadi. The Q1,2026 vehicle Maori rate has dropped to 6.1%. The reason why smart people don't buy is that, even if the stock price seems cheap (close to net cash), the net cash "bottom" will move if the company continues to burn the money (CF-12.8 billion in 2025).
 
 ---
 
-## 第五部分：管理层评估
+# Part V: Management assessment
 
-### 创始人李想关键决策复盘
+# Founder Lee wants to make a decision
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|:---:|
-| 2015年 | 创立理想，选择增程式路线 | 被市场验证为正确，2024年几乎所有车企跟进 | A+ |
-| 2018年 | 聚焦"家庭用车"定位 | 精准切入蓝海市场，2023年成为新势力销冠 | A |
-| 2020年 | "套娃"产品策略（L7/L8/L9共享平台） | 极大降低成本，毛利率领先同行 | A |
-| 2023年 | 引入华为PBC管理体系 | 3年后全面废弃，承认"是一个错误"，导致决策链拉长30% | C- |
-| 2024年3月 | MEGA定价55.98万、激进营销策略 | 首月退订超1万，全年仅售1.3万辆，股价一季度暴跌60% | D |
-| 2024年5月 | 大规模裁员5600人（18%） | 止血但误裁部分关键人才，后试图召回 | C |
-| 2025年 | "去华为化"、回归OKR、精力转向AI | 方向可能正确，但短期造成12位核心高管离职 | B-（待验证） |
-| 2026年3月 | 启动10亿美元回购 | 时机合理（历史低位），但执行缓慢（半年不到计划的1%） | B |
+The year 2015 created the ideal, selected the incremental route, and the market certified it as correct, followed by almost all the cars in 2024.
+The year 2018, the focus on the "family car" location, the precise entry into the blue sea market, the year 2023, became the new power crown.
+<unk> 2020 <unk> "Set-A" strategy (L7/L8/L9 shared platform) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+In 2023, the Chinese administration was introduced to the PBC, and three years later, it was completely abandoned, and it was acknowledged that "it was a mistake," which led to a 30% stretch of the decision chain.
+March 2024, the MEGA price was 559.98 million, the aggressive marketing strategy.
+May 2024, mass layoffs of 5,600 (18%) and stopping bleeding but misdirecting some of the key talent, and then trying to recall the C-ray.
+<unk> 2025 "Dewarization", "go" to OKR, energy to AI may be right, but short term results in 12 core managers leaving B-(to be verified) <unk>
+March 2026, when the $1 billion buyback was launched, the timing was reasonable (historical low), but it was slow (less than 1% of the plan for six months)
 
-### 资本配置能力
+# Capital allocation capacity
 
-| 维度 | 评估 |
+<unk> Dimensions <unk> Evaluation <unk>
 |------|------|
-| 研发投入 | 高效——用111亿支撑50万辆交付（2024年），单车研发分摊2.2万元，约为蔚来的1/3 |
-| 工厂投资 | 审慎——常州+北京两厂合计45万产能，未过度扩张 |
-| 现金管理 | 优秀——千亿现金储备，零有息负债（直到2025年才出现短期借款） |
-| 回购时机 | 合理——选在历史低位启动，但执行力不足 |
-| 并购 | 无重大并购记录，专注内生增长 |
+<unk> Research and development inputs <unk> Efficiency — support 500,000 deliveries with 11.1 billion (2024), share 22,000 dollars in bicycle research and development, approximately one third of the total amount of <unk>
+The plant investment <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+Cash management <unk> Excellent — 100 billion cash reserves, zero interest liabilities (short-term borrowings only in 2025) <unk>
+The time for repurchase is reasonable -- it's in the background, but it's not enough to execute.
+No major M & As records, focus on growth.
 
-### 股东利益一致性
+# Shareholder interest consistency
 
-| 指标 | 详情 |
+Indicators
 |------|------|
-| 李想持股 | 21.9%经济权益、68.9%投票权 |
-| 利益绑定 | 持股市值约$28亿，与公司深度绑定 |
-| 薪酬结构 | 2024年基本工资266万元，股权激励6.36亿元（里程碑触发） |
-| 减持记录 | 未见李想大规模减持记录 |
-| 王兴/美团 | 经济权益18%，但2023年以来持续减持（从22.6%降至20.6%），两年套现超13亿港元 |
+Lee wants to hold the shares 21.9% economic interest, 68.9% voting rights
+The market value of the shares is about $2.8 billion, tied to the depth of the company.
+The basic wage in 2024 is 2.66 million yuan, and the equity incentive is 636 million yuan (milestone trigger)
+♪ I'm not seeing Lee want to cut the record down ♪
+Wang Heung/USC 18% of economic interest has been declining since 2023 (from 22.6% to 20.6%), with over HK$ 1.3 billion available for two years
 
-**值得关注**：王兴作为第二大股东持续减持，虽然幅度不大，但方向明确——战略投资者在退出。
+** Noteworthy**: Wang Hsing, as the second largest shareholder, has continued to stagnate, albeit on a modest scale, but with a clear direction — strategic investors are withdrawing.
 
-### 组织能力评估
+# # Organizational competency assessment
 
-**核心矛盾**：理想的组织能力在过去3年经历了剧烈震荡。
+** Core paradox**: Ideal organizational capacity has experienced severe shocks over the past three years.
 
-2023年引入华为IPD/PBC体系，本意是从"创业公司"升级为"规模化组织"。但实践证明这套体系与理想的文化基因不兼容——强制排名（"271"末位淘汰）打击团队士气，战区制增加沟通层级，PBC让产品周期延长30%。
+The introduction of the Chinese IPD/PBC system in 2023 was intended to upgrade from "breathing company" to "sizing organization". But it has proven incompatible with the ideal cultural genes - mandatory ranking ( "271" end-point) to strike team morale, regional systems to increase the level of communication, and PBC to extend the product cycle by 30%.
 
-2025年全面"去华为化"，回归OKR和创业文化。这个决策本身可能是对的，但执行过程造成了巨大的人才流失：半年内12位副总裁及以上级别高管离职，智驾团队核心成员大面积出走创业（至少3人创办了具身智能公司，其中一家半年内融资20亿、估值超10亿美元）。
+The decision itself may be right, but the implementation process has resulted in a huge brain drain: 12 vice-presidents and senior managers at the senior executive level and above separated in six months, and the core members of the intellectual team left a large number of businesses (at least three have created smart companies, one of which has financed over $2 billion in six months and one has been valued over $1 billion).
 
-**关键人才风险**：李想的精力正在从汽车转向AI。他已将"智能汽车战略一号位"授权给马东辉，自己专注AI和具身智能。马东辉是2015年加入的老臣、20年汽车研发经验，能力毋庸置疑，但他从未独立管理过一家千亿级企业。
+** Critical talent risk**: Li Xin’s energy is shifting from a car to an AI. He has given Ma Don Fee the "Smart of Smart Car Strategy One" mandate, focusing on AI and his own intelligence. Ma Don Fixie is a senior member of the company in 2015, 20 years of car research and development experience, and has no doubt about his ability, but he has never managed a 100 billion-class enterprise independently.
 
-### 追问：如果李想退休，理想还能保持竞争力吗？
+# Ask: If Lee wants to retire, can he still be competitive?
 
-短期内不能。理想的品牌、战略和文化都与李想深度绑定。他的产品直觉（选对增程式）、成本意识（"套娃"策略）和决断力（敢于否定自己推翻PBC）是理想的核心竞争力来源。马东辉可以执行，但战略判断力需要时间证明。从AB股结构看，李想也没有退出的打算——68.9%的投票权确保他对公司拥有绝对控制。
+Not in the short term. The ideal brand, strategy, and culture are tied to Lee's depth of ambition. His product instincts (opting for the increment), cost awareness (the "supplier" strategy) and decisiveness (bolding to overturn the PBC) are the core sources of competitiveness that he would like to have. Ma Donghui can implement, but strategic judgement takes time to prove.
 
 ---
 
-## 第六部分：行业与文明趋势
+# Part VI: Industry and civilizational trends
 
-### 行业是否处于"文明级范式转移"？
+# Is industry in "civilizational paradigm shift"?
 
-**是的。** 中国新能源汽车行业正处于百年一遇的产业变革中：
-- 2025年中国新能源汽车渗透率达47.9%，月度峰值突破50%——已过临界点
-- 从"燃油车+电动车共存"向"电动车为主"的不可逆转变正在发生
-- 这不仅是动力系统的切换，更是"机械产品"向"智能终端"的范式转移
+** Yes.** The new energy automobile industry in China is undergoing a century of industrial transformation:
+- China's new energy vehicle penetration rate reached 47.9 per cent in 2025, and the monthly peak was 50 per cent — it's over the critical point.
+- The irreversible shift from "fuel car plus electric vehicle" to "power car-based" is happening.
+- It's not just a switch to power systems, but a paradigm shift from "mechanical products" to "intelligent terminals."
 
-### 历史技术革命类比
+# History and Technology Revolution analogue
 
-| 类比 | 当前阶段 | 启示 |
+♪ The current stage ♪
 |------|---------|------|
-| 智能手机（2007-2015） | 类似2012年——渗透率过50%，行业进入存量竞争+品牌整合期 | 最终只剩苹果、三星、华为、小米等5-6个主要品牌 |
-| 个人电脑（1990-2000） | 类似Wintel联盟确立后——核心技术路线已明确，开始淘汰边缘玩家 | 戴尔、康柏等品牌被整合/淘汰 |
-| 中国家电（2000-2010） | 类似2005年——价格战最惨烈阶段，行业利润率极低 | 最终美的、格力、海尔三巨头格局确立 |
+<unk> Smartphone (2007-2015) <unk> Similar to 2012 -- over 50% penetration, industry entering stock competition + brand integration period <unk> eventually only 5-6 major brands, apples, Samsung, tidals, millet, etc.
+<unk> Personal computers (1990-2000) <unk> established similar to the Wintel Alliance - Core technology routes have been identified and marginal players have been eliminated <unk> Dale, Campbell, etc.
+The Chinese electricity (2000-2010) is similar to 2005 - the worst stage of the price war, the industry's very low profit margin, and the final beauty, the Grigori, the Heir 3-megae pattern is established.
 
-### TAM分析
+# TAM analysis
 
-| 年份 | 中国新能源汽车销量 | 渗透率 | 市场规模（估算） |
+<unk> New energy vehicle sales in China <unk> penetration <unk> market size (estimate) <unk>
 |------|:---:|:---:|:---:|
-| 2025（实际） | 1,649万辆 | 47.9% | ~2.5万亿元 |
-| 2027（预测） | ~1,900万辆 | ~55-60% | ~2.9万亿元 |
-| 2030（预测） | ~2,100万辆 | 65-70% | ~3.2万亿元 |
+<unk> 2025 (actual) <unk> 16.4 million <unk> 47.9% ~ 2.5 trillion yuan <unk>
+2027 (projected) ~ 19 million ~ 55-60% ~ 2.9 trillion yuan ~
+<unk> 2030 (projected) ~ 21 million
 
-> 来源：中国汽车工业协会、前瞻产业研究院
+> Source: China Automobile Industry Association, Institute of Forward-looking Industries
 
-TAM仍在增长，但增速从28%放缓至个位数——行业从"增量红利"转向"存量竞争"。
+TAM is still growing, but the rate of growth has slowed from 28 per cent to one digit - industry has shifted from "Additional dividend" to "stock competition".
 
-### 理想在产业价值链中的位置
+# Ideal place in the industrial value chain
 
-理想处于价值链的中游——整车制造和品牌运营。
+Ideally, it would be in the middle of the value chain - full vehicle manufacturing and branding.
 
-**上游**：核心零部件（电池、芯片）高度依赖外部供应商。宁德时代供应电池，英伟达Orin供应智驾芯片（M100自研芯片预计2026年底才能替代）。
+** Upstream**: Core parts (cells, chips) are highly dependent on external suppliers.
 
-**中游**：理想的核心能力在产品定义、用户体验和成本控制，而非核心技术突破。
+** Midstream**: The desired core competencies are defined in product definitions, user experiences and cost controls, while non-core technologies break through.
 
-**下游**：直营渠道+超充网络（4000+站）提供一定的渠道壁垒。
+** Downstream**: Direct camp channels + super-filled networks (4,000+ stations) provide certain barriers to access.
 
-**关键风险**：在"软件定义汽车"的趋势下，价值正在从硬件制造向智能化（自动驾驶、座舱OS）转移。华为选择做Tier 1供应商（提供整套智驾解决方案），小鹏全栈自研智驾，比亚迪靠垂直整合控制成本。理想在这三条路径上都不是最强的。
+** Critical risk**: In the "software-defined car" trend, value is shifting from hardware manufacturing to intelligent (automatic driving, seating OS). For the Tier 1 supplier (providing a whole range of intellectual solutions), the Peng has developed its own intellectual skills, and the Yadi has managed to control costs by vertical integration.
 
-### 竞争格局量化
+# # Quantified competition patterns
 
-| 排名 | 品牌 | 2025年销量（万辆） | 同比 | 特征 |
+<unk> ranking, brand, sales in 2025 (manufacturing)
 |:---:|------|:---:|:---:|------|
-| 1 | 比亚迪 | 460.2 | +8% | 绝对龙头，成本+规模双重领先 |
-| 2 | 吉利 | 168.8 | +90% | 多品牌爆发 |
-| 3 | 长安 | 110.9 | +51% | 传统转型成功 |
-| 7 | 零跑 | 59.7 | +103% | 新势力销冠 |
-| 8 | 问界 | 47.2 | -- | 华为赋能，理想核心竞品 |
-| 9 | 小鹏 | 42.9 | +126% | 智驾领先，增速最快 |
-| 10 | 小米 | 41.1 | +200% | 首年交付即盈利 |
-| **11** | **理想** | **40.6** | **-18.8%** | **唯一销量下滑的头部新势力** |
-| 12 | 蔚来 | 32.6 | +46.9% | 子品牌放量 |
+<unk> 1 Biadi 460.2<unk> 8%
+♪ The world's gonna be so big ♪
+<unk> 3 <unk> <unk> <unk> 110.9 <unk> 51% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+♪ The new power is out of the game ♪
+♪ The world's greatest challenge ♪
+♪ The best way to get the best of it ♪
+<unk> 10 <unk> <unk> 41.1 <unk> 200% <unk> First year delivery is profitable
+** 11** Ideal** ** 40.6** ** 18.8% ** The only new head force with a drop in sales** **
+12, 32.6, +46.9%, and the number of brands available.
 
-> 来源：中国汽车工业协会、36氪、OFweek
+> Source: Chinese Automotive Industry Association, 36 kryptons, OFweek
 
-**格局特征**：马太效应显著，前15家占95%份额。比亚迪独占28%。新势力排序从"蔚小理"变为"零跑-小鹏-小米-理想-蔚来"。2024年已有16个新能源品牌退出，预计2030年仅约15个品牌能实现财务可持续。
+** Pattern characteristic**: The Matthews effect is significant, with the top 15 accounting for 95%. Biadi alone accounted for 28%. The new ranking of power changed from "Small Ration" to "Smack-Panty-Panty-Panty-Pity-Pity-Pity." Sixteen new energy brands have withdrawn in 2024, and only about 15 are expected to be financially sustainable in 2030.
 
-### 增程式vs纯电趋势
+# # Plus vs pure electrical trend
 
-| 技术路线 | 2024年占比 | 2025年趋势 |
+Technical routes, 2024, 2025, 2025, 2025, 2025, <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> <unk>
 |---------|:---:|------|
-| 纯电（BEV） | ~49% | 占比升至64%，同比+24.5% |
-| 增程/插混（PHEV/EREV） | ~51% | 占比降至26%，增速放缓至个位数 |
+*BEV ~ 49% * * The ratio rose to 64% * 24.5% *
+<unk> Extension/plugged (PHEV/EREV) ~ 51% ~ <unk> <unk> ~ <unk> <unk> ~ <unk> <unk> ~ <unk> ~ ~ <unk> ~ ~ ~ ~ ~ ~ 26%, the rate of increase slowing to individual digits ~ ~ ~ ~ ~ ~ ~ 51% ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 26% ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-**关键转折**：2024年增程式是增速最快的细分市场，但2025年格局逆转——纯电重新加速，增程增速大幅放缓。理想的核心赛道正在缩小。
+** Key turn**: The 2024 multiplier is the fastest growing market segment, but the 2025 pattern reverses - pure electricity re-accelerated and the incremental rate slowed considerably. The ideal core track is shrinking.
 
-### 追问：站在20年后回看，理想是"这个时代的丰田"还是"昙花一现的HTC"？
+# Ask: Stand back and look back 20 years later, the ideal is Toyota of the time or HTC of the moment?
 
-目前的证据指向一个介于两者之间的结果。理想不太可能成为比亚迪那样的行业巨头（缺乏供应链垂直整合和规模优势），但也不至于像HTC那样迅速消亡（千亿现金储备提供了极长的生存跑道）。更可能的结局是：成为一个有利可图的细分市场玩家（类似汽车行业的斯巴鲁或马自达），或者在AI/智能化赛道上找到第二增长曲线实现跃迁。答案取决于未来3年的执行力。
+The evidence now points to an outcome that is in between. The ideal is unlikely to be a big industry like Biadi (lack of vertical integration and size advantages in the supply chain), but not as quickly as HTC (a trillion cash reserves provide a very long survival runway). More likely, it will end up being a profitable market player (sbaru or Maduda in the auto industry) or finding a second growth curve on the AI/Intelligent track.
 
 ---
 
-## 第七部分：估值与安全边际
+# Part VII: valuation and security margin
 
-### 当前市场定价
+# Current market pricing
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|:---:|------|
-| 股价 | $12.63 | 较历史高点$46.65跌73%，接近IPO价$11.50 |
-| 市值 | $128.8亿 | |
+The price of the shares is $12.63, the historical height is $46.65, which is 73% down, close to $11.50.
+Market value $12.88 billion
 | PS（TTM） | 0.8x | |
 | PB | 1.25x | |
-| PE（FY2025年度） | ~23.4x | 基于FY2025全年EPS RMB 1.08 |
-| PE（TTM滚动） | 负值 | 近4滚动季度含亏损 |
-| Forward PE（分析师预期） | ~126x | 反映对近期盈利恢复信心不足 |
-| EV/Revenue | **~0.02x** | 扣除净现金后，企业价值接近零 |
+<unk> <unk> 23.4x <unk> based on SY2025 year EPS RMB 1.08 <unk>
+<unk> PE (TTM rolling) <unk> negative <unk> nearly 4 rolling quarterly losses <unk>
+<unk> Forward PE (analyst expected) ~126x ~ reflecting a lack of confidence in the recent recovery of profits
+<unk> EV/Revenue<unk> ~0.02x** <unk> Value of the enterprise close to zero after net cash
 
-**反向DCF分析**：当前$12.63的股价隐含了什么预期？
+** Reverse analysis of DCF**: What are the expectations implied in the current share price of $12.63?
 
-以$12.63股价、10%折现率计算：
-- 扣除每ADS净现金$12.34后，市场给经营业务的定价仅为$0.29/ADS
-- 这意味着市场预期理想汽车的经营业务未来几乎不创造任何价值
-- 等价于预期：公司将持续亏损并最终消耗掉大部分现金储备
+At $12.63, 10 per cent discount rate:
+- After deducting $12.34 per ADS net cash, the market price for operating operations is only $0.29/ADS
+- That means the market expects the future of the ideal car business to be of little value.
+- Equivalence is expected: the company will continue to lose and eventually consume most of its cash reserves
 
-**市场要么严重低估了理想的经营价值，要么在定价一个"慢性失血"的剧本。**
+** The market either grossly underestimates the desired business value or is pricing a "chronic blood loss" script.**
 
-### 三情景估值（工具验算）
+#3 scenario valuation (tool validation)
 
-**情景A：基于FY2025薄利EPS（$0.15/ADS）**
+** Scenario A: based on FY2025 thin EPS ($0.15/ADS)**
 
-| 情景 | 年增速 | 目标PE | 3年后EPS | 目标股价 | 涨跌幅 |
+The target PE, the target EPS, the target share price, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the, the, the price, the price, the price, the price, the price, the, the, the, the, the, the
 |------|:---:|:---:|:---:|:---:|:---:|
-| 乐观 | 100% | 25x | $1.20 | $30.0 | +137.5% |
-| 中性 | 50% | 15x | $0.51 | $7.6 | -39.9% |
-| 悲观 | -20% | 8x | $0.08 | $0.6 | -95.1% |
+<unk> 100% <unk> 25x <unk> 1.20 <unk> $30.0 <unk> + 137.5% <unk>
+<unk> Neutral <unk> 50% <unk> 15x <unk> 0.51 <unk> 7.6 <unk> - 39.9% <unk>
+<unk> Pessimism - 20%
 
-> 此情景以2025年近乎盈亏平衡的EPS为基数，增速敏感性极高，参考价值有限。
+> This scenario is based on the near-loss/loss balance of the EPS in 2025, with a very high speed of increase sensitivity and limited reference value.
 
-**情景B：基于FY2024正常化EPS（$1.04/ADS）**
+** Scenario B: Normalization EPS based on SY2024 ($1.04/ADS)**
 
-| 情景 | 年增速 | 目标PE | 3年后EPS | 目标股价 | 涨跌幅 |
+The target PE, the target EPS, the target share price, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the drop, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the price, the, the, the price, the price, the price, the price, the price, the, the, the, the, the, the
 |------|:---:|:---:|:---:|:---:|:---:|
-| 乐观 | 15% | 20x | $1.58 | $31.6 | +150.5% |
-| 中性 | 0% | 12x | $1.04 | $12.5 | -1.2% |
-| 悲观 | -25% | 8x | $0.44 | $3.5 | -72.2% |
+<unk> 15% <unk> 20x <unk> 1.58 <unk> 31.6 <unk> + 150.5% <unk>
+<unk> neutral 0%<unk> 12x$1.04<unk> 12.5<unk> -1.2%<unk>
+<unk> Pessimism - 25%
 
-> FY2024是理想最后一个"正常"年份（营收1445亿、净利80.5亿），以此为正常化盈利能力基准更合理。
+> SY2024 is the ideal last "normal" year (144.5 billion net gains of $8.05 billion) which makes it more reasonable to benchmark normal profitability.
 
-**核心假设解释**：
-- **乐观（目标$31.6）**：假设2026年下半年产品周期（新L9/L8/i9）成功推动销量恢复至48万辆以上，毛利率回升至18-20%，3年后EPS恢复并超越FY2024水平。给予20x PE反映成长性溢价
-- **中性（目标$12.5）**：假设盈利能力仅能恢复至FY2024水平但不增长，竞争压力持续。给予12x PE反映行业平均水平。当前股价基本处于中性情景
-- **悲观（目标$3.5）**：假设竞争持续恶化，年销量跌至30万辆以下，毛利率压缩至12-14%，盈利能力大幅缩水。但需注意：即使在此情景下，每ADS净现金仍有$10+（考虑一定的现金消耗），提供硬底
+** Core scenario interpretation**:
+- **Expressive (target $31.6),**: Assuming that the product cycle (new L9/L8/i9) has successfully returned to more than 480,000 vehicles in the second half of 2026, the Māori rate has recovered to 18-20%, and EPS has recovered and exceeded FY2024 levels three years later. 20x PE reflects a growth premium.
+- ** Neutral (target $12.5)**: Assuming profitability is restored to 2024 FY but not growing, competitive pressure persists. Give 12x PE reflects industry averages. Stock prices are currently largely neutral.
+- ** Pessimism (target $3.5)**: Assuming that competition continues to deteriorate, with annual sales falling to less than 300,000 vehicles, the gross profit rate has been reduced to 12-14% and profitability has decreased significantly. Note, however, that even in this scenario, there is still $10+ (considering a certain amount of cash consumption) per ADS net cash, providing a hard base
 
-### 净现金估值底
+# Bottom of net cash valuation
 
-| 指标 | 当前 | 1年后（假设持续烧钱） | 2年后 |
+<unk> Indicators <unk> Current <unk> (assuming that the money is burning) <unk> 2 years later <unk>
 |------|:---:|:---:|:---:|
-| 净现金（亿元） | 915 | ~787（按2025年FCF -128亿推算） | ~659 |
-| 每ADS净现金 | $12.34 | $10.61 | $8.89 |
+Net cash (billions) ~ 915 ~ 787 (based on FCF-12.8 billion in 2025) ~ 659 ~ 659 ~ 825 ~ 825 ~ 825 ~ 825 ~ 825 ~ 825 ~ 825 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 025 ~ 1 0 0 0 0 0 825 ~ 1 025 ~ 1 025 757 ~ 1 0 825 ~ 1 0 825 ~ 1 025 ~ 1 0 825 ~ 1 0 525 ~ 1 025 ~ 1 0 0 0 0 0 0 0 0 0 0 0 0 0 + 1 ~ 1 > 1 ~ 1 5 5%
+<unk> Net cash per ADS $12.34 <unk> $10.61 <unk> $8.89 <unk>
 
-即使假设理想以2025年的烧钱速度持续消耗现金（这是悲观假设，因为公司有能力削减资本开支），2年后每ADS净现金仍有约$8.89。这为股价提供了一个有一定弹性但并非坚不可摧的底部。
+Even assuming that cash is expected to continue to be consumed at the rate of burning money in 2025 (a pessimistic assumption, given the company’s ability to cut capital spending), there will be about $8.89 per ADS net cash after two years. This provides a certain elastic but not indestructible bottom of stock prices.
 
-### 与自身历史估值对比
+# Compared to their own historical valuations
 
-| 时期 | PS | PE | 背景 |
+The time period is not available for this purpose.
 |------|:---:|:---:|------|
-| 2023年（巅峰） | 3-4x | 15-20x | 销冠、盈利最好 |
-| 2024年中 | 1.5-2x | 15-25x | MEGA失败后修复 |
-| 当前（2026.6） | 0.8x | 23x/负值 | 历史最低PS水平 |
+<unk> 2023 (Stamp) <unk> 3-4x <unk> 15-20x <unk>
+<unk> Mid2024 <unk> 1.5-2x <unk> 15-25x <unk> MEGA fixes after failure
+<unk> Current (2026.6)<unk> 0.8x<unk> 23x/negative<unk> History lowest PS level<unk>
 
-### 与同行估值对比
+# Compared to peer valuation
 
-| 公司 | PS（TTM） | PB | 市值（$亿） |
+Company (TTM)
 |------|:---:|:---:|:---:|
-| 比亚迪 | ~1.5x | ~5x | ~1,100 |
-| 特斯拉 | ~12x | ~18x | ~9,000 |
-| 理想 | 0.8x | 1.25x | 128.8 |
-| 蔚来 | ~0.8x | ~4x | 110 |
-| 小鹏 | ~1.5x | ~3x | 130 |
+Biadey ~ 1.5 x ~ 5 x ~ ~ 1,100 ~ 100 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~
+~ 12x18x<unk> ~ 9,000<unk>
+<unk> Ideal 0.8x<unk> 1.25x<unk> 128.8<unk>
+~0.8 ~4 ~ 110 ~
+Pelican ~ 1.5 x ~ 3x 130 ~ 130 ~ 130 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~
 
-理想的PS（0.8x）与蔚来相当，但PB（1.25x）远低于所有同行——因为理想资产负债表上有大量现金（占总资产约60%），拉低了PB。
+The ideal PS (0.8 x) is comparable to the total, but the PB (1.25 x) is well below all counterparts — because the ideal balance sheet has a large cash base (about 60 per cent of total assets), which is lower.
 
-### 价格区间建议
+# Price range advice
 
-| 区间 | 价格（美股） | 依据 |
+<unk> Inter-regional (United States share)
 |------|:---:|------|
-| 强烈低估 | <$10 | 低于净现金底部，除非预期公司将持续大幅烧钱 |
-| 合理偏低 | $10-15 | 当前所在区间，仅反映净现金价值，经营业务免费 |
-| 合理 | $15-22 | 反映经营业务恢复至FY2024水平的价值 |
-| 合理偏高 | $22-30 | 隐含销量和利润率强劲恢复的预期 |
-| 高估 | >$30 | 需要新的增长故事（出海成功或AI突破）支撑 |
+<unk> $10 <unk> below the net cash base unless the company is expected to continue to burn money heavily
+<unk> Reasonable low <unk> $10-15 <unk> Current area reflecting only net cash value, operating free of charge
+The value of the business recovery to the FY2024 level is as follows:
+<unk> Reasonable height <unk> 22-30 <unk> The expectation of a strong recovery in implied sales and profit margins <unk>
+♪ The sea is a sea of sea ♪ ♪ the sea is a sea of sea ♪
 
-### 追问：如果股市明天关闭5年，你愿意以这个价格持有吗？
+# Ask: If the stock market closes for five years tomorrow, will you hold it at this price?
 
-以当前$12.63的价格，你买到的是：
-- 约$12.34的净现金（几乎覆盖全部成本）
-- 加上一家年营收千亿、2023年曾赚117亿的汽车公司的经营权
-- 背后是一个仍在增长的2.5万亿元市场
+At the current $12.63 price, you get:
+- Net cash of approximately $12.34 (almost all costs covered)
+- Plus the business of a car company that collects hundreds of billions a year and made $11.7 billion in 2023.
+- Behind it is a 2.5 trillion dollar market that is still growing.
 
-如果你相信理想不会破产（千亿现金+已证明的盈利能力使这个可能性极低），那么以接近净现金的价格买入，5年持有的下行风险是有限的。但"不亏钱"和"赚到满意的回报"是两码事——后者取决于理想能否在竞争加剧的环境中重新找到增长路径。
+If you believe that the ideal will not fail (a possibility that is made extremely unlikely by hundreds of billions of cash plus proven profitability), buy at a price close to net cash, the downside risk of five years is limited. But "no loss" and "get a satisfactory return" are two things – the latter depending on whether the ideal will find a way to grow again in an environment of increased competition.
 
 ---
 
-## 第八部分：综合决策备忘录
+# Part VIII: Aide Memoire for Integrated Decision-Making
 
-### 七维度评估汇总
+# # 7D assessment summary
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|:---:|
-| 生意质量 | 中等偏上——已证明过盈利能力（2023年117亿净利），但高度依赖单一硬件收入，对销量极度敏感 | 高 |
-| 护城河 | 中等偏弱且在收窄——增程式差异化正被侵蚀，新的技术壁垒（M100芯片/智驾）尚未建立 | 高 |
-| 管理层 | 中等——李想产品直觉一流（增程式、套娃），但战略摇摆（华为化→去华为化）和人才流失是重大减分项 | 中 |
-| 最大风险 | 竞争格局恶化（问界+比亚迪双面夹击）导致市场份额和毛利率持续下降，从"赚钱的新势力"变为"不赚钱的二线品牌" | 高 |
-| 文明趋势 | 强烈顺风——中国新能源渗透率已过临界点，行业处于不可逆的范式转移中。但行业内竞争将从"增量红利"转向"存量搏杀" | 高 |
-| 估值 | 极具吸引力——股价接近净现金价值，EV接近零。但低估值也反映了市场对基本面恶化的合理担忧 | 中 |
+<unk> Business quality <unk> Medium bias - proven profitability (net gain of 11.7 billion in 2023), highly dependent on single hardware revenue, extremely sensitive to sales <unk> High
+The moat, the moat, the middle weak and narrow-down -- the variance of the machining program is being eroded, and the new technical barriers (M100 chip/smart) have not been created
+<unk> Management medium - Li Xi’s first-rate intuition (additional, schnitzel), but strategic swings (demotionalization) and brain drain are major reduction elements
+The deterioration of the competition pattern (Question + Biadi double-sided) has led to a steady decline in market share and Maori rates, from "New Power for Money" to "No-Profit Second-line brand"
+Civilization trends, strong positive winds -- China's new energy penetration is already at a critical point, and the industry is in an irreversible paradigm shift. But intra-industry competition will shift from "access dividend" to "stock struggle"
+<unk> Valuations are extremely attractive - stock prices are close to net cash value, EV is close to zero. But low valuations also reflect legitimate market concerns about the deterioration of fundamentals
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **可以在$10-13区间开始小仓位建仓（总仓位的3-5%）**。当前股价接近净现金底部，下行风险有限，但需要等待2-3个季度验证产品周期能否带动业绩恢复。不建议重仓——竞争格局恶化的趋势尚未逆转 |
-| **持仓者** | **持有观望，不加仓也不割肉**。当前价格卖出意味着以接近净现金的价格出让经营业务，不合算。等待Q2/Q3 2026交付数据验证新L9/L8的市场反响。如果Q3毛利率能回升至15%以上，可适度加仓 |
-| **卖出信号** | （1）连续2个季度车辆毛利率低于10%——说明价格战已伤及根本；（2）季度交付量跌破8万辆——说明产品周期失败；（3）净现金低于500亿元且仍在加速消耗——安全垫正在消失；（4）李想大规模减持或出让投票权 |
-| **加仓信号** | （1）月交付量稳定在5万辆以上——说明新产品打开局面；（2）车辆毛利率回升至18%以上——说明定价权恢复；（3）i系列月销突破3万辆——说明纯电转型成功；（4）海外市场首个季度交付超5000辆——增长第二曲线初现 |
+** Empty warehouser** ** can start small warehouse construction in the $10-13 area (3-5% of total warehouse)**. Current stock prices are close to net cash base and downside risks are limited, but need to wait for 2-3 quarters to verify whether product cycles will lead to a recovery in performance.
+<unk> <unk> The owner of the warehouse** ** The current price is not worth the price of a business offer at a near net cash price. Waiting for Q2/Q3 2026 to deliver data to verify the market resonance of the new L9/L8. If the Q3 Māori ratio returns to over 15%, it can be reasonably shrunk.
+<unk> ** Signals sold** <unk> (1) 2 consecutive quarters of vehicle gross margins below 10% - which indicates that price wars have been broken and fundamental; (2) quarterly deliveries have fallen by 80,000 - which indicates product cycle failures; (3) net cash is below $50 billion and is still being consumed at an accelerated rate - security pads are disappearing; (4) Lee wants to significantly reduce or give up voting rights <unk>
+<unk> **Step-load signal** <unk> (1) monthly delivery stabilized at over 50,000 vehicles - indicating that new products opened up; (2) vehicle gross profit rate recovered to over 18 per cent - indicating recovery of pricing rights; (3) i monthly sales of 30,000 vehicles out of the series -- indicating successful transformation of pure electricity; (4) + 5,000 vehicles delivered in the first quarter of the overseas market - growth curve 2 is beginning to rise
 
-### 四维度模拟点评
+# 4D simulations of the evaluation
 
-> **生意质量视角**：理想做对了一件事——用"家庭"这个精准定位切入市场，用增程式解决了用户真正的痛点。但它的问题也很明显：这门生意没有"复利"。每卖出一辆车，对下一辆车的销售没有帮助。没有订阅收入、没有强锁定、没有网络效应。它赚的是制造业的辛苦钱，不是平台的轻松钱。
+> **Quality of business **: The ideal is right -- the precise location of the home is used to cut into the market, and the real pain for the user is solved with an incremental program. But the problem is also clear: this business does not have "complex profit." For every car sold, it does not help the next one. No subscription income, no hard locking, no network effects. It makes hard money in manufacturing, not easy money in platforms.
 
-> **护城河视角**：理想曾经的护城河——"30-50万元增程式家庭SUV的唯一选择"——在2024年就已经不存在了。问界的闯入让理想失去了定价权，比亚迪的向上渗透压缩了利润空间。现在的问题不是护城河有多宽，而是还有没有护城河。M100芯片如果成功，可能成为新的护城河，但这需要时间验证。
+> **Cavelandview**: The ideal mooring river -- "The only option for the 300,000-500,000-dollar family SUV" -- was no longer available in 2024. The break-in of the border lost the ideal 's pricing rights, and the upward penetration of Biadi compressed profit space. The problem is not how wide the moasure river is, but also the absence of moathe. The M100 chip, if successful, could become a new moath, but it would take time to verify.
 
-> **逆向思考视角**：最容易犯的错误是把"股价便宜"等同于"投资价值高"。理想的股价之所以便宜，不是因为市场犯了错，而是因为市场在定价一个真实的风险——竞争格局恶化是结构性的，不是周期性的。问界不会消失，比亚迪不会变弱，价格战不会停止。唯一的问题是：这些风险是否已经被$12.63的价格充分反映了？
+> ** Inverse reflection**: The most easy mistake is to equate "offer stock prices" with "high investment values". The ideal share price is cheap, not because the market made mistakes, but because the market is pricing a real risk — the deteriorating pattern of competition is structural, not cyclical. The question is not going to disappear, Biadi is not going to be weak, and price wars will not stop. The only question is: Are these risks adequately reflected in the $12.63 price?
 
-> **文明趋势视角**：中国新能源汽车是人类历史上最大规模的产业变革之一。理想身处这个浪潮中，本身就是一种优势。但产业变革的赢家从来不是所有参与者——蒸汽机时代有上千家铁路公司，最终存活下来的不到5%。理想的千亿现金给了它"活到终局"的可能性，但"活着"和"赢"是两回事。站在20年后回看，如果理想能在AI和智能驾驶上建立真正的技术壁垒，它有机会成为终局的赢家之一。如果不能，它可能成为一个被收购或边缘化的品牌。
+> ** Civilizational trend perspective**: China ' s new energy vehicle is one of the largest industrial changes in human history. The ideal is an advantage in itself. But the winner of industrial change has never been all the players – thousands of railway companies in the steam engine era, with less than 5% of the people who eventually survive. The ideal 100 billion dollars in cash gives it the possibility of "living" and "win" being two ways.
 
 ---
 
-## 关键数据交叉验证记录
+# Cross-checking records for key data
 
-| 验证项 | 来源1 | 来源2 | 偏差 | 结果 |
+<unk> Validation item <unk> Source 1 <unk> Source 2 <unk> deviation <unk> result <unk>
 |-------|-------|-------|:---:|:---:|
-| 市值 | 股价×股本计算：$128.8亿 | StockAnalysis报告：$128.8亿 | 0.02% | ✅ |
-| FY2025总收入 | 公司财报：1,123.1亿元 | StockAnalysis：1,123亿元 | 0.00% | ✅ |
-| FY2025净利润 | 公司财报：11.4亿元 | 虎嗅网：11.4亿元 | 0.00% | ✅ |
-| 现金储备 | 公司财报：1,010.2亿元 | Simply Wall St：1,012亿元 | 0.09% | ✅ |
-| 净现金头寸 | 计算值：915.0亿元 | Simply Wall St：917亿元 | 0.11% | ✅ |
-| 总股本（普通股） | 20-F年报：21.36亿股 | ADS口径：~10.2亿ADS | 口径差异 | ✅（1ADS=2股） |
+Stock prices x equity calculations: $12.88 billion
+<unk> FY2025 Gross revenue Company financial reporting: $12.31 billion
+<unk> FY2025 net profit company: $1140 million
+Cash reserves Company financial statements: $101.2 billion
+<unk> Net cash position <unk> Calculated value: $91.5 billion <unk>
+Total equity (general) 20-F: 2,136 million shares
 
 ---
 
-## AI研究置信度 vs 投资确定性
+# AI study confidence vs investment certainty
 
-### AI分析置信度（高）
+# # AI analyzes confidence (high)
 
-本报告基于充分的公开数据（A级信息丰富度），关键财务数据均经过工具验算和多源交叉验证。以下结论具有高置信度：
-- 财务数据（收入、利润、现金储备、估值指标）
-- 竞争格局（市场份额排名、销量数据）
-- 管理层履历和关键决策事实
+The report is based on adequate disclosure data (A-level information abundance), and key financial data are validated by tool validation and multi-source cross-checking. The following conclusions are highly credible:
+- Financial data (income, profits, cash reserve, valuation indicators)
+- Competition patterns (market share ranking, sales data)
+- Management history and key decision facts
 
-### 投资确定性（中等偏低）
+# # Investment certainty (medium low)
 
-尽管数据充分，以下关键变量存在高度不确定性：
-1. **2026年下半年产品周期能否成功？** 新L9两周大定破万是积极信号，但能否持续月销万辆以上需要时间验证
-2. **毛利率能否从6.1%（Q1 2026）恢复至18%以上？** 取决于价格战烈度和产品组合变化
-3. **纯电i系列能否真正放量？** MEGA的失败在前，i9的成败是关键
-4. **M100芯片能否如期量产？** 从流片到大规模上车通常需要18-24个月
-5. **马东辉独立管理汽车业务的能力？** 李想转向AI后的组织执行力是未知数
+Despite the data availability, there is a high degree of uncertainty about the following key variables:
+** Success of the product cycle in the second half of 2026?** The new L9 weeks of high-resolution 10,000 are positive signals, but it takes time to verify whether more than 10,000 vehicles will be sold on a monthly basis.
+2. ** Will the Māori rate recover from 6.1% (Q1 2026) to over 18%?** Depending on price intensity and product mix changes
+** Can the pure i series actually be released?** MEGA failed before, i9 was the key to success or failure.
+4. **Is the M100 chip ready to produce as scheduled?** It usually takes 18-24 months to get in the bus from the drifting chip to the mass vehicle.
+** The ability of Madong-fui to independently manage the automobile business?** The organizational implementation of Lee's move to AI is unknown.
 
-**本报告的核心判断是**：当前$12.63的股价已经充分反映了大部分已知风险（估值接近净现金），但向上空间取决于多个高不确定性变量的兑现。这是一个"下行有限、上行不确定"的非对称机会，适合风险承受能力较高的投资者以小仓位参与。
+** The core judgement of the present report is**: The current share price of $12.63 already fully reflects most of the known risks (valued close to net cash), but upswing space depends on the realization of several high uncertainty variables. This is an asymmetrical opportunity for "limited downs, uncertain ups", with investors who are well suited to be more risk-tolerant to participate in small positions.
 
-> 免责声明：本报告为AI辅助生成的研究参考材料，不构成投资建议。投资者应结合自身判断、实地调研和专业顾问意见做出投资决策。
+Investors should make investment decisions that take into account their own judgement, field research, and professional advice.

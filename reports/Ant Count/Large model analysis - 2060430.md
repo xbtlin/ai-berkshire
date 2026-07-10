@@ -1,0 +1,751 @@
+# Ant Digital Technologies Foundation Model Strategy Deep Dive (2026/04/30)
+
+> **Subject**: The likelihood that Ant Digital Technologies can succeed in building foundation models (LLMs, speech, multimodal)
+>
+> **Three core questions**:
+> 1. Can the foundation model path succeed?
+> 2. Can it find PMF?
+> 3. What is its differentiated value relative to general-purpose base model vendors (Qwen/Doubao/DeepSeek/GLM/ERNIE/Kimi)?
+>
+> **Report principles**: Objective, no preconceived stance, both bullish and bearish views, source attribution for data, and clear labeling of estimates
+>
+> **Important boundary**: This report is based entirely on public information, contains no internal perspective, and involves no personal privacy.
+
+---
+
+## TL;DR: One-page conclusion
+
+| Core question | Conclusion | Probability / confidence |
+|---|---|:---:|
+| **1. Build a "market-recognized foundation model" within 5 years** | Extremely low probability of succeeding via the path of "self-developed general-purpose base model competing head-on with Qwen/Doubao"; medium-high probability of succeeding via the path of "vertical financial foundation model + agent platform" | General-purpose path **<10%**; vertical path **40-55%** |
+| **2. Find PMF** | Path A (self-developed general-purpose LLM): <5%; Path B (be the #1 vertical financial base model): 30-40%; Path C (agent + long-term memory + toolchain combo): 50-65%; Path D (IT integration as a "supporting role", monetizing services + data): 70-85% | The more vertical and service-oriented the path, the higher the probability |
+| **3. Real differentiated value** | **True differentiation**: financial-domain know-how, compliance-grade data moat, private deployment + audit loop; **False differentiation**: base model capability, compute scale, open-source ecosystem | — |
+
+**One-sentence summary**: The real path for Ant Digital Technologies to succeed at "doing foundation models" is not to confront DeepSeek/Qwen/Doubao head-on on generic base model capability, but to combine the parent company’s Ling open-source base + its own financial-domain data + the agent platform + the compliance and audit loop into an industry-grade AI infrastructure that is "ready to use out of the box and safe from a compliance standpoint" for financial, energy, and government customers. In essence, it would be a high-gross-margin AI services company, not a foundation model company.
+
+---
+
+## Part 1: Current state of Ant Digital Technologies' model strategy (what is known)
+
+### 1.1 Background and strategic intent behind the model technology innovation department
+
+**Facts** ([Sina Tech 2026-02-04](https://finance.sina.com.cn/tech/digi/2026-02-04/doc-inhkpzpi4319173.shtml), [OFweek 2026-02](https://www.ofweek.com/ai/2026-02/ART-201721-8120-30680886.html)):
+
+- **2026-02-03/04**: Ant Digital Technologies CEO Zhao Wenbiao sent a company-wide letter announcing the creation of the "Model Technology Innovation Department"
+- **Strategic positioning**: "To tackle the hard problems of foundation models and industry models for B-side scenarios"
+- **Organization**: Dual reporting lines - the technical path reports directly to the CEO, while business deployment is coordinated by the group CTO office
+- **Goal**: "Take AI out of the lab and make it an enterprise digital employee"
+- **Relationship with the Ling base model team**: A cooperative relationship; the Ant Group Ling team provides the foundation models, while Ant Digital Technologies handles B-side deployment
+
+**Industry backdrop** ([Sina Finance 2026-02](https://finance.sina.com.cn/roll/2026-02-03/doc-inhkpkrc3453430.shtml)):
+
+- At the same time, Ant Group CEO Han Xinyi issued a company-wide letter on 2026-02-02 and launched a special "AI Credit" incentive program
+- The group made it clear that "AI exploration is not yet time for celebration" and mobilized everyone toward "full AI transformation"
+- **Three strategic legs**: payments (Ant's core business), finance (Ant Digital Technologies' core customer base), and health (Afu)
+
+**Observation**: From the timeline, Ant Digital Technologies' "Model Technology Innovation Department" is part of the group's AI strategic mobilization, **not an independent strategic choice by the unit**. It is the Ant Group-wide "full AI transformation" being carried into the Ant Digital Technologies segment. This means the resource priority for building foundation models at Ant Digital Technologies is constrained by the group's overall allocation across the three strategic lines of payments, finance, and health.
+
+### 1.2 Existing product matrix
+
+| Layer | Product | Type | Status | Key data |
+|---|---|---|---|---|
+| **Foundation model layer (Ling base model team)** | Ling-2.5-1T / Ling-2.6-1T | General-purpose LLM (trillion-parameter MoE) | Open source | Ling-2.6-1T released in 2026-04, positioned against GPT-5.4 ([ITBear 2026-04](https://www.itbear.com.cn/html/2026-04/1316923.html)) |
+| Same as above | Ring-2.5-1T | Trillion-parameter reasoning model | Open source | On 2026-02-13, the world's first trillion-parameter thinking model with a hybrid linear architecture was released ([QbitAI 2026-02](https://www.qbitai.com/2026/02/379431.html)) |
+| Same as above | Ming-Flash-Omni 2.0 | Full multimodal (language + vision + audio + image editing) | Open source | Released on 2026-02-11, positioned against Gemini 2.5 Pro, inference frame rate 3.1 Hz ([InfoQ 2026-02](https://www.infoq.cn/article/d9TEFiU7kq8EKCIodTmI)) |
+| **Financial vertical model layer (Ant Digital Technologies)** | Agentar-Fin-R1 | Financial reasoning model (based on Qwen3) | Released | Presented at WAIC on 2025-07-28; FinEval 1.0 score 87.70, FinanceIQ 86.79, beating DeepSeek-R1 ([Sina Finance 2025-07](https://finance.sina.com.cn/stock/t/2025-07-28/doc-infhzawz0291022.shtml)) |
+| Same as above | Agentar-Scale-SQL | NL2SQL data analysis agent | Open source | Topped BIRD-SQL in 2025-12 (92% accuracy, 3x Google) ([QbitAI 2025-12](https://www.qbitai.com/2025/12/361042.html)) |
+| **Application layer (Ant Digital Technologies)** | Agentar agent platform | Enterprise-grade agent development platform | Commercial | In 2026-04, selected as a "comprehensive top pick" by IT Home and CSDN ([IT Home 2026-04](https://www.ithome.com/0/937/649.htm)) |
+| Same as above | Ling foundation model enterprise edition | Private deployment edition for B-side | Pending release | Announced on 2026-02-19 as coming soon ([Tencent News 2026-02](https://news.qq.com/rain/a/20260220A021BD00)) |
+| Same as above | mPaaS / SOFAStack / AntChain | Middleware + blockchain + privacy computing | Commercial | AntChain BaaS market share 24.4% (No. 1 for 4 consecutive years) |
+
+**Key observations**:
+
+1. **Ant Digital Technologies itself does not do "foundation model pretraining"** - all of the Ling/Ring/Ming series are developed and open-sourced by the Ling base model team (part of Ant Group, not Ant Digital Technologies). Ant Digital Technologies is better understood as **the group's B-side commercialization channel + industry vertical packaging layer**.
+
+2. **The only "large model" that is truly original to Ant Digital Technologies**: Agentar-Fin-R1 is also not a base model trained from scratch, but a financial reasoning model **fine-tuned from Qwen3** - an important factual baseline.
+
+3. **Positioning in 2026**: The real purpose of forming Ant Digital Technologies' "Model Technology Innovation Department" is to **integrate the Ling open-source base + financial-domain data + Agentar agent platform** into a B-side product bundle, **not to build a new generation trillion-parameter base model**.
+
+### 1.3 Technical capability inventory
+
+| Capability | Actual level | Source / confidence |
+|---|---|:---:|
+| Self-developed foundation models (pretraining) | Weak (depends on the group's Ling team) | 🟢 |
+| Vertical fine-tuning capability | Strong (Agentar-Fin-R1 beats DeepSeek-R1 on multiple financial benchmarks) | 🟢 |
+| Retrieval-augmented generation (RAG) | Strong (KBase knowledge engineering platform deployed at Ningbo Bank) | 🟢 |
+| Agent capability | Strong (Agentar-SQL topped BIRD and received the highest-level certification from the China Academy of Information and Communications Technology) | 🟢 |
+| Multimodal (speech + vision + audio) | Medium-strong (Ming-Flash-Omni 2.0 beats Gemini 2.5 Pro on some metrics, but it belongs to the group's Ling team) | 🟡 |
+| Long-term memory / toolchain | Medium (Ling enterprise edition focuses on "hallucination suppression + instruction following + agentic engineering") | 🟡 |
+| Private deployment | Strong (private deployment for financial customers is a core scenario) | 🟢 |
+| Compliance / audit loop | Strong (financial-grade compliance, highest-level CAICT certification, Agentar selected as a "2025 international standard financial application benchmark case") | 🟢 |
+
+### 1.4 Compute resources
+
+**Facts** ([Sina Finance 2025-03](https://finance.sina.com.cn/stock/roll/2025-03-25/doc-ineqvepa2958269.shtml), [OSCHINA](https://www.oschina.net/news/340658)):
+
+- Ant Group uses domestic AI chips (Biren, Tianshu Zhixin, Cambricon, etc.) to train large models. The pretraining cost for 1 trillion tokens dropped from 6.35 million yuan to 5.08 million yuan, **a reduction of about 20%**
+- The self-developed Ling series MoE model (290 billion parameters, 28.8 billion activated) demonstrates that efficient training can be done on domestic GPUs
+- Training results "do not lag behind Nvidia H800" (Ant Group internal test wording)
+
+**Estimates** (inferred from public disclosures, 🟡 medium confidence):
+
+- Ant Group's overall AI compute scale is estimated to be in the ten-thousand-GPU-card range (a mix of H800/H100/domestic chips), **all centrally scheduled by the group**
+- Ant Digital Technologies itself has **not disclosed any independent GPU cluster**; it uses Alibaba Cloud (an affiliated party) + compute allocated internally by the group
+- A common industry claim is that "only one-quarter of the originally planned compute actually came online" - **not confirmed in public materials**, but consistent with the practical path of domestic-chip substitution
+
+**Bear case**:
+- The claim that training on domestic chips yields results "no worse than H800" is **Ant Group's internal test wording** and has no independent third-party verification
+- DeepSeek V3/R1/V4 has already proven the viability of the "smaller compute + better algorithms" path; Ant's Ling route of "domestic chips + MoE" is following behind, **not leading technologically**
+
+### 1.5 Team size and background (public disclosures)
+
+**Known**:
+
+- CEO Zhao Wenbiao: dual PhDs from Shanghai Jiao Tong University and Rutgers University, joined Ant in 2016, with a background in AI security / risk control ([Techwalker](https://www.techwalker.com/2024/0906/3159997.shtml))
+- Ant Digital Technologies employee count: **estimated 3,000-5,000** (not disclosed; industry estimate)
+- "Model Technology Innovation Department" team size: **not disclosed**; industry estimate is "around one hundred people" (🔴 low confidence, for reference only)
+- Ling base model team (group-level): core members are estimated to come from Alibaba DAMO Academy, Tsinghua, Peking University, etc., with a scale of "around one thousand people" (🔴)
+
+**Key gaps**:
+- Ant Digital Technologies has not disclosed the specific technical leader of the "Model Technology Innovation Department"
+- No self-owned "AI research institute" or "base model lab" structure has been seen at Ant Digital Technologies
+- The exact collaboration model with the Ling base model team (IP sharing, commercialization split, personnel rotation, etc.) is **not public**
+
+---
+
+## Part 2: Likelihood of success for the foundation model path
+
+### 2.1 Arguments supporting success (🟢 bullish)
+
+#### 2.1.1 The parent company's Ling base-model accumulation means Ant Digital Technologies can "borrow the model"
+
+- **2026-02-13**: Ant Group open-sourced Ring-2.5-1T, the world's first trillion-parameter thinking model with a hybrid linear architecture ([QbitAI](https://www.qbitai.com/2026/02/379431.html))
+- **2026-04**: Ling-2.6-1T was open-sourced, with its trillion-parameter scale "positioned against GPT-5.4" (Ant internal wording, [ITBear](https://www.itbear.com.cn/html/2026-04/1316923.html))
+- **2026-02-11**: Ming-Flash-Omni 2.0 full-modal model was open-sourced, with some metrics outperforming Gemini 2.5 Pro ([InfoQ](https://www.infoq.cn/article/d9TEFiU7kq8EKCIodTmI))
+- **The Ling family has released 18 models** (disclosed at the 2025 World Internet Conference), covering sizes from 10B to 1T
+
+**Implication**: Ant Digital Technologies does not need to train a base model from scratch. It can directly reuse Ling open-source checkpoints + its own financial data for fine-tuning, **saving more than 80% of pretraining costs**.
+
+#### 2.1.2 Exclusivity of financial data + scenarios
+
+- **Alipay + MYbank + Ant International** have accumulated financial behavior data at a scale that is rare in China
+- **Customer coverage**: 100% of state-owned joint-stock banks + 60%+ of local commercial banks + 13,000 end enterprise customers ([36Kr](https://36kr.com/p/3699806105972614))
+- **Agentar-Fin-R1 training data**: tens of billions of financial-domain corpora + a financial task taxonomy of "6 major classes and 66 sub-classes", covering the full panorama of banking, securities, insurance, funds, and trusts ([Sohu](https://m.sohu.com/a/919019605_120181749))
+
+#### 2.1.3 Continuous capital support from the parent company
+
+- Ant Group 2024 net profit: 38.3 billion yuan (+61%); 2025 Q2 net profit: 7.6 billion yuan (+1.9x)
+- 2025 Hurun Global Unicorn List valuation: 635 billion RMB (ranked 5th)
+- The group explicitly said it would "increase incentives for AI 'groundbreaking contributions'" (Han Xinyi company-wide letter on 2026-02-02)
+
+#### 2.1.4 B-side customer base and lighthouse cases
+
+- **Ningbo Bank × Agentar KBase** ([Xinhua 2025-10](http://www.news.cn/tech/20251030/01c228e382514af39f92ebc1bb99fda1/c.html)):
+  - Complex Q&A accuracy improved from 68% → 91%
+  - Response speed reached the sub-100-millisecond range
+  - Content recommendation accuracy +35%, recall +40%
+  - Selected as a "2025 international standard financial application benchmark case"
+- **Ningbo Bank document recognition** (4/17 report): error rate 0.8% → 0.05%, annual loss reduction of 30 million
+- **Financial and energy customers are already using the Ling enterprise edition in production** ([Tencent News 2026-02](https://news.qq.com/rain/a/20260220A021BD00))
+
+#### 2.1.5 Hong Kong stablecoin + RWA + Web3 narrative premium
+
+- Ant Digital Technologies set up an overseas headquarters in Hong Kong in 2025-04
+- The "two chains and one bridge" model has already been deployed in RWA cases such as GCL and Longshine
+- **But**: on 2026-04-10, Hong Kong issued only two of the first stablecoin licenses (HSBC + Dingsidian), and Ant was not selected - **the narrative premium has already been sharply reduced** ([Sina Finance 2026-04-12](https://finance.sina.com.cn/roll/2026-04-12/doc-inhuetnq0871424.shtml))
+
+### 2.2 Arguments against success (🔴 bearish)
+
+#### 2.2.1 Rapid commoditization of general-purpose base models
+
+- **DeepSeek V4 open-sourced (2026-04-24)** ([Guancha](https://www.guancha.cn/economy/2026_04_24_814819.shtml), [21jingji](https://www.21jingji.com/article/20260426/herald/05fee61739e3aa4cb240e8063303a948.html)):
+  - V4-Flash input: 1 yuan per million tokens; output: 2 yuan
+  - Cache-hit input cost: only 0.025 yuan per million tokens (**effectively free**)
+  - 1 million-token context window became standard
+  - **"Agent capability is open-source leading domestically"** - directly squeezes Ant Digital Technologies' Agentar selling point
+- **Qwen 3.5 (2026-02 Spring Festival)** ([QbitAI 2026-02](https://www.qbitai.com/2026/02/380433.html)):
+  - 397B parameters surpassed Gemini 3
+  - One million tokens as low as 0.8 yuan
+  - **In 2026-03, Alibaba unified its AI brand under "Qwen"** - strengthening its status as the "national team" of general-purpose base models
+
+**Conclusion**: **On general-purpose base-model capability, Ant's Ling has no clear technical lead over DeepSeek/Qwen** - Ling's "trillion-parameter MoE" and "domestic-chip training" are no longer scarce labels in 2026.
+
+#### 2.2.2 Competition within the same group
+
+- **Alibaba Tongyi (affiliate)**: it belongs to the same Alibaba ecosystem as Ant Digital Technologies, but Tongyi sells a direct "Qwen + Alibaba Cloud" bundle to financial customers, creating internal competition with Ant Digital Technologies
+- **China Merchants Bank case**: China Merchants Bank chose **Tongyi foundation models** as its main partner ([Alibaba Cloud Developer](https://developer.aliyun.com/article/1654755)), not Ant Digital Technologies - **a real example of affiliate-level internal competition**
+- **The Ling base model belongs to the group, not to Ant Digital Technologies**: Ant Group also has two consumer AI apps, "Afu" and "Lingguang," consuming group resources, so Ant Digital Technologies' AI priority within the group **may not be high**
+
+#### 2.2.3 Uncertainty around compute availability and team size
+
+- Ant Digital Technologies has not disclosed any independent GPU cluster; "self-developed large models" heavily depend on group compute
+- The "Model Technology Innovation Department" team size is not disclosed and is **estimated at around one hundred people** (🔴), which is **materially smaller** than the thousand-person-scale teams at DeepSeek, Qwen, and Doubao
+- An internal industry rumor says "only one-quarter of the originally planned compute actually came online" (source not public, 🔴 low confidence)
+
+#### 2.2.4 No successful precedent for a "B-side spun-off tech subsidiary" in China
+
+- **OneConnect**: listed on the NYSE in 2019, then the stock fell from $10 to below $2 and was delisted in 2024
+- **JD Digits**: withdrew its STAR Market IPO in 2020
+- **Lufax**: listed on the NYSE in 2020, with market cap falling from a peak of $47 billion to below $5 billion
+- **Conclusion**: spun-off fintech subsidiaries in the China and Hong Kong markets have **lost all 3 battles**, and Ant Digital Technologies must find a differentiated path that differs from these three companies
+
+#### 2.2.5 Financial customer decision-making power problem
+
+- **Large banks prefer self-development**: China Construction Bank's "Ark Plan" ([53AI](https://www.53ai.com/news/AIjinrong/2025060973819.html)) chose the "open-source base + financial data fine-tuning" path and had already adapted 16 versions of general-purpose foundation models by the end of 2024, **without relying on Ant Digital Technologies**
+- **China Merchants Bank**: "We are not building a general-purpose model, but a domain model for the financial industry" ([STCN](https://stcn.com/article/detail/1443956.html)), choosing a dual-track approach of Tongyi + self-development
+- **China UnionPay**: in 2026-04 it privately deployed DeepSeek-V4 based on Huawei Ascend compute ([NetEase](https://www.163.com/dy/article/KRM64L9S0514R9OJ.html)) - **bypassing all commercial large model companies**
+- **Bank of Jiangsu**: first batch of localized deployment of DeepSeek-VL2 + DeepSeek-R1 in 2025-02 ([NBD](https://www.nbd.com.cn/articles/2025-02-05/3742346.html))
+
+**Conclusion**: Financial customers' purchasing decisions are shifting from "buying large models" to "using open-source bases + RAG + fine-tuning themselves." What Ant Digital Technologies sells is no longer a scarce product.
+
+#### 2.2.6 The BloombergGPT cautionary tale
+
+- **$10M invested, 50 billion parameters** in a financial vertical LLM
+- **Two weeks after GPT-4 launched**, BloombergGPT was surpassed by GPT-4 on almost every financial benchmark ([Belitsoft](https://belitsoft.com/bloomberggpt), [Beancount](https://beancount.io/bean-labs/research-logs/2026/05/05/bloomberggpt-large-language-model-finance))
+- **Core lesson**: "When frontier progress is fast enough, scale matters more than specialization"
+- **JPMorgan's choice**: abandon self-developed base models and build an LLM Suite **as a portal to call OpenAI** ([CNBC 2024-08](https://www.cnbc.com/2024/08/09/jpmorgan-chase-ai-artificial-intelligence-assistant-chatgpt-openai.html))
+
+### 2.3 Probability assessment
+
+**Definition of "success"**: within 5 years (by 2031), deliver a "market-recognized foundation model" - meaning Ant Digital Technologies' own model becomes the **first choice or first backup** in B-side financial customer tenders / procurement, rather than merely "one of the options."
+
+| Path definition | 5-year success probability (estimate) | Reason |
+|---|:---:|---|
+| Self-developed general-purpose foundation model, competing head-on with DeepSeek/Qwen/Doubao | **<5%** | Disadvantaged in compute, talent, cost, and ecosystem; the BloombergGPT lesson |
+| Build a "financial vertical base model" on top of the Ling open-source base and become #1 in the segment | **30-40%** | Agentar-Fin-R1 already beats DeepSeek-R1 on financial benchmarks, but customer decision power is shifting |
+| Agent platform + long-term memory + toolchain combo PMF (not directly fighting on base models) | **45-60%** | Agentar has topped BIRD-SQL, received the highest-level CAICT certification, and benefits from the Ningbo Bank lighthouse effect |
+| IT integration as a "supporting role", monetizing services + data + compliance | **65-80%** | This is the "financial-grade IT service provider" path, already validated by Hundsun Electronics, Yuxin Technology, and Digital China Information Service |
+
+**Overall judgment**:
+- Probability of "foundation model path success" in the strict sense: **<10%**
+- Probability of "AI business success" in the broader sense: **45-60%**
+- But under the broader definition, "success" means Ant Digital Technologies is fundamentally a **"financial-grade AI service provider"** rather than a **"foundation model company"** - this is the key classification issue.
+
+---
+
+## Part 3: PMF analysis
+
+### 3.1 First define what "successful PMF" means
+
+| Path | Definition | PMF success signal | Probability (estimate) |
+|---|---|---|:---:|
+| **Path A**: Self-developed LLM becomes the customer's first choice (competing head-on with Qwen/Doubao) | Ant Ling / Agentar base model stays ahead on general-purpose benchmarks for the long term | Domestic/global B-side model market share >10%, stable pricing power | **<5%** |
+| **Path B**: A vertical financial large model becomes the #1 player in the segment | Models like Agentar-Fin-R1 rank first on both financial benchmarks and in real production environments | More than 5 of the top 10 financial institutions in China use Agentar as their preferred financial model | **30-40%** |
+| **Path C**: Agent + long-term memory + toolchain combo PMF (not directly fighting on base models) | The Agentar platform becomes the de facto standard for agent development among financial customers | 50%+ of state-owned joint-stock banks and city commercial banks choose Agentar as their preferred agent platform | **50-65%** |
+| **Path D**: The model becomes a supporting role in IT integration, monetizing services + data | The large model is only a technical tool; revenue mainly comes from consulting + implementation + data services | Similar to the Hundsun Electronics model, with stable third-party revenue above 5 billion and gross margin above 30% | **70-85%** |
+
+### 3.2 PMF signal validation (deployed customer cases)
+
+| Customer / scenario | Deployment form | Quantified result | Source | Real PMF signal? |
+|---|---|---|---|:---:|
+| Ningbo Bank × Agentar KBase | Knowledge engineering + logical reasoning | Accuracy 68%→91%; recommendation accuracy +35%; recall +40% | [Xinhua](http://www.news.cn/tech/20251030/01c228e382514af39f92ebc1bb99fda1/c.html) | 🟢 Strong |
+| Ningbo Bank × Agentar-Fin-R1 | Document recognition | Error rate 0.8%→0.05%, annual loss reduction of 30 million | 4/17 report | 🟢 Strong |
+| ICBC | Customer-service agent | Call duration -10%, agent efficiency +18% | [Digital Banking Network](https://www.cebnet.com.cn/20240827/...) | 🟡 Medium (not exclusive to Ant Digital Technologies) |
+| GCL Energy Technology | RWA tokenization | RMB 100 million cross-border financing | 4/17 report | 🟡 Medium (weakly related to foundation models) |
+| BCC Bank Kazakhstan | Overseas fintech | Overseas expansion benchmark | 4/17 report | 🟡 Medium |
+| Financial and energy customers × Ling enterprise edition | Private deployment | Specific customer names + revenue not disclosed | [Tencent News 2026-02](https://news.qq.com/rain/a/20260220A021BD00) | 🔴 Weak (black box) |
+
+**Key observations**:
+- The disclosed lighthouse cases are concentrated in **"Ningbo Bank + several energy/government customers"**, so the scale is limited
+- The claim of **100% coverage of state-owned joint-stock banks** refers to "customer list coverage," not "first-choice AI model procurement" - a key mismatch in wording
+- The main model partners for large banks such as ICBC, CCB, and CMB **are not Ant Digital Technologies**
+
+### 3.3 Counter-PMF signals
+
+#### 3.3.1 First place on BIRD-SQL benchmark does not equal commercial PMF
+
+- In 2025-12, Agentar-Scale-SQL topped BIRD-SQL with 92% accuracy ([QbitAI](https://www.qbitai.com/2025/12/361042.html))
+- **But**: BIRD-SQL is an academic benchmark, and the bridge to commercial willingness to pay **has not been validated by data**
+- Analogy: BloombergGPT was also SOTA on FinEval at the time, **yet still failed commercially**
+
+#### 3.3.2 How financial customers make purchasing decisions
+
+- **Compliance first**: the central bank and the former banking regulator place extremely strong requirements on "autonomous controllability" for financial AI -> large banks tend to build in-house
+- **CCB Ark** ([53AI](https://www.53ai.com/news/AIjinrong/2025060973819.html)): **"Choose a trillion-parameter open-source general-purpose model and build it in-house through pretraining, fine-tuning, and reinforcement learning"**; by the end of 2024 it had already adapted 16 versions - **no need for Ant Digital Technologies**
+- **CMB × Tongyi**: China Merchants Bank directly partnered with Alibaba Cloud and used Tongyi foundation models as the base while self-developing the industry layer ([Alibaba Cloud Developer](https://developer.aliyun.com/article/1654755)) - **bypassing Ant Digital Technologies**
+
+#### 3.3.3 Limited willingness to pay among small and medium-sized banks
+
+- **DeepSeek V4 price**: 0.025 yuan per million input tokens (cache hit) - small and medium-sized banks can just call the API directly, with **no willingness to pay for a "financial vertical base model"**
+- **Bank of Jiangsu** was among the first to localize and deploy DeepSeek-VL2 + DeepSeek-R1 - the methodology is already established
+- **China UnionPay** privately deployed DeepSeek-V4 + Huawei Ascend - **domestic open-source foundations are already mature**
+
+#### 3.3.4 Limited substitution rate for industry-specific large models
+
+- **Industry consensus** ([Sina 2026](https://k.sina.com.cn/article_7857201856_1d45362c001904gpdi.html)): "Stop pursuing the 'universal model' and instead adopt the mainstream deployment path of 'open-source base + private data fine-tuning + RAG augmentation,' reducing usage cost to around one-fifth of general-purpose large models"
+- This means customers **do not need a 'financial vertical base model' as a standalone product**; they need an integrated solution of **"open-source base + fine-tuning tools + RAG + agent toolchain + services"**
+
+**Counter conclusion**: customers' real pain points are not at the "base model capability" layer, but at the "toolchain + deployment + compliance + services" layer.
+
+### 3.4 Overall PMF judgment
+
+| Dimension | Current actual state | Ideal PMF state | Gap |
+|---|---|---|---|
+| Customer willingness to pay | 5-10 lighthouse cases | More than 50% of top 30 financial institutions paying | Large |
+| ACV (annual contract value) | Estimated 5 million-20 million per customer (🟡) | 50 million-100 million per large bank | Medium |
+| Customer retention rate | Not disclosed | >90% | Data missing |
+| Expansion rate (NRR) | Not disclosed | >120% | Data missing |
+| Share of pay-for-outcome revenue | Not disclosed | >30% | Data missing |
+| Third-party revenue share | 60-70% (estimate) | >70% | Close |
+| Customer preference for open-source alternatives | Rising | Should be falling | Unfavorable trend |
+
+**Conclusion**:
+- **Path D (IT integration as a "supporting role")** has basically validated PMF - this is Ant Digital Technologies' real core business
+- **Path C (agent platform)** shows early PMF signals, but they are still unstable and face open-source agent toolchain competition from DeepSeek V4 + Qwen 3.5
+- **Path B (financial vertical base model)** is still chasing PMF, but is being squeezed from both sides by "large banks building in-house" and "open-source substitutes," so its PMF probability is shrinking rather than expanding
+- **Path A (self-developed general-purpose LLM)** is not realistically viable
+
+---
+
+## Part 4: Differentiation value analysis
+
+### 4.1 Benchmark matrix: Ant Digital Technologies vs general-purpose base model vendors
+
+| Dimension | Qwen | Doubao | DeepSeek | GLM | ERNIE | Kimi | **Ant Digital Technologies** | Ant Digital Technologies differentiation direction |
+|---|---|---|---|---|---|---|---|---|
+| **Base model capability** | ★★★★★ | ★★★★★ | ★★★★★ | ★★★★ | ★★★ | ★★★★ | ★★★ (depends on Ling) | 🔴 Weakness |
+| **Compute scale** | ★★★★★ (Alibaba Cloud) | ★★★★★ (Volcengine) | ★★★★ (own + rented) | ★★★★ | ★★★★★ | ★★★ | ★★★ (shared group resources) | 🔴 Weakness |
+| **Open-source ecosystem** | ★★★★★ | ★★★ (partial) | ★★★★★ | ★★★★ | ★★ | ★★ | ★★★ (Ling is open-source, but the ecosystem is weak) | 🔴 Weakness |
+| **Price competitiveness** | ★★★★★ (0.8 yuan per million) | ★★★★★ | ★★★★★ (0.025 yuan per million) | ★★★★ | ★★★ | ★★★ | ★★ (premium pricing) | 🔴 Weakness |
+| **Financial data moat** | ★★ (public + partnerships) | ★★ | ★★ | ★★ | ★★★ | ★★ | ★★★★★ (exclusive to the Ant ecosystem) | 🟢 **Advantage** |
+| **Financial know-how** | ★★ | ★★ | ★ | ★★★ | ★★★ | ★★ | ★★★★★ (14 years of financial-domain work) | 🟢 **Advantage** |
+| **Compliance / licensing** | ★★★ | ★★★ | ★★★ | ★★★★ | ★★★ | ★★★ | ★★★★★ (highest-level CAICT certification + financial-grade compliance) | 🟢 **Advantage** |
+| **Private deployment capability** | ★★★ | ★★★ | ★★★★ | ★★★★ | ★★★★ | ★★★ | ★★★★★ (AntChain + mPaaS + SOFAStack closed loop) | 🟢 **Advantage** |
+| **Agent platform** | ★★★★ (Bailian) | ★★★★ (Coze) | ★★★ | ★★★★ | ★★★ | ★★ | ★★★★★ (Agentar topped BIRD) | 🟢 Advantage but being quickly chased |
+| **Customer decision power** | Customer calls independently | Customer calls independently | Customer calls independently | Customer calls independently | Customer calls independently | Customer calls independently | **Ant Digital Technologies bundling sales** | 🔴 Risk |
+
+### 4.2 The differentiations that are actually possible ("true differentiation")
+
+#### 4.2.1 Financial-domain understanding × data moat × compliance guardrails
+
+This is the **only** differentiated narrative at Ant Digital Technologies that has a real moat. In essence:
+
+```
+General-purpose base model vendors:
+"I have the best model; assemble it yourself."
+   ↓
+Customer: buying a technical tool
+
+Ant Digital Technologies:
+"I have the model that best understands finance + industry know-how + private deployment + audit loop + I take responsibility if something goes wrong."
+   ↓
+Customer: buying a service that transfers compliance risk
+```
+
+**Key evidence**:
+- Agentar-Fin-R1 does lead DeepSeek-R1 on FinEval 1.0 and FinanceIQ ([Sohu](https://m.sohu.com/a/919019605_120181749))
+- Highest-level China Academy of Information and Communications Technology certification (["General requirements for fintech application risk"](https://www.jsw.com.cn/2025/1024/1927797.shtml))
+- The "6 major classes and 66 sub-classes" financial task taxonomy (the most complete in the industry)
+- 14 years of financial-business accumulation at the parent company: payments, credit, risk control, and anti-fraud
+
+#### 4.2.2 Private deployment + AntChain + privacy computing loop
+
+- Mos privacy computing market share: 36.9% (No. 1)
+- AntChain BaaS market share: 24.4% (No. 1 for 4 consecutive years)
+- Add Ling enterprise edition (coming in 2026)
+- → **Closed-loop capability**: from model to deployment to on-chain audit to privacy protection, all deliverable by a single vendor
+
+#### 4.2.3 Service commitment with an "AI backstop"
+
+- The lighthouse cases use a "pay for results" model (for example, Ningbo Bank sharing 30 million yuan in annual loss reduction)
+- This is something **general-purpose base model vendors are neither willing nor able to promise** - Qwen, DeepSeek, and Doubao all follow the "sell the model and that’s it" approach
+
+### 4.3 The differentiations that are not actually differentiations ("false differentiation")
+
+#### 4.3.1 Pure base-model capability (a losing proposition)
+
+- DeepSeek V4 (2026-04), Qwen 3.5 (2026-02), and Doubao have already surpassed or approached Gemini/GPT-4 on general-purpose benchmarks
+- Ant Ling-2.6-1T "positioned against GPT-5.4" is **internal group wording**; there is no independent benchmark proving overall leadership
+- The BloombergGPT lesson shows that **"specialization" loses to "scale"**
+
+#### 4.3.2 Pure compute scale
+
+- Ant Group's total compute vs Alibaba Cloud, ByteDance, and Tencent - **disadvantaged in every dimension**
+- Even if the Ling team goes all-in, compared with the combined strength of Tongyi + Alibaba Cloud, **the compute Ant Digital Technologies can call on is only a subset**
+
+#### 4.3.3 Pure open-source ecosystem
+
+- DeepSeek open-source ecosystem: hundreds of thousands of GitHub stars globally, with extremely high community activity
+- Qwen: driven by both the Alibaba Cloud global developer community and the ModelScope community
+- Ant Ling open-source (Ling/Ring/Ming): released later, and its community scale and user base are **significantly smaller** than DeepSeek/Qwen
+
+### 4.4 Core claim on differentiated value
+
+| Category | Content | Customer willingness to pay | Duration |
+|---|---|:---:|---|
+| **True differentiation (3 things)** | 1. Deep financial-domain know-how<br>2. Exclusive compliance-grade data moat<br>3. Private deployment + audit loop as a backstop | 🟢 High | 3-5 years |
+| **False differentiation (not comparable)** | 1. General-purpose base model capability<br>2. Compute scale | 🔴 None | — |
+| **Differentiation that is narrowing** | 1. First-mover advantage in the agent platform (DeepSeek V4 and Qwen are both catching up) | 🟡 Medium | 1-2 years |
+
+**Conclusion**: Ant Digital Technologies' differentiation story **does exist**, but it is not differentiation at the "foundation model" layer; it is differentiation at the **"financial industry expert system"** layer. This is **fundamentally different** from the story of "building a foundation model."
+
+---
+
+## Part 5: Comparable company references
+
+### 5.1 BloombergGPT: the world’s first financial vertical LLM case
+
+| Dimension | Data | Implication for Ant Digital Technologies |
+|---|---|---|
+| Investment | $10M (about 70 million RMB) | Ant Digital Technologies' expected investment is 500 million-1 billion RMB (Ling + Ant Digital Technologies combined), the same order of magnitude |
+| Model size | 50 billion parameters | Ant Digital Technologies fine-tunes from Qwen3 (32B/72B), smaller |
+| Training data | 363B financial tokens + 345B general | Agentar-Fin-R1 training-data scale is undisclosed, but likely comparable |
+| Compared with GPT-4 | **GPT-4 beat BloombergGPT on almost every financial benchmark** | Warning: frontier base-model iteration is faster than the vertical-model gap |
+| Commercial outcome | **Almost no external commercialization**, only internal use at Bloomberg | Strong warning: ROI could be extremely low |
+| Current state | Team dissolved / transformed, Bloomberg moved to an LLM Suite architecture | Path warning |
+
+Sources: [arXiv 2303.17564](https://arxiv.org/abs/2303.17564), [Belitsoft](https://belitsoft.com/bloomberggpt), [Beancount](https://beancount.io/bean-labs/research-logs/2026/05/05/bloomberggpt-large-language-model-finance)
+
+### 5.2 JPMorgan LLM Suite: the practical choice of a major North American bank
+
+| Dimension | Data |
+|---|---|
+| Investment | Not disclosed, but **no self-developed base model** |
+| Architecture | A "portal-style LLM Suite" that calls external models such as OpenAI and Anthropic |
+| Deployment scale | Used by 60,000+ employees (2024) |
+| Key strategy | Protect internal data through technical controls so the data does not leak out |
+| Takeaway | **The preferred choice for large financial institutions is not "self-developed vertical base models," but "portal + data protection"** |
+
+Sources: [CNBC 2024-08](https://www.cnbc.com/2024/08/09/jpmorgan-chase-ai-artificial-intelligence-assistant-chatgpt-openai.html), [Business Standard](https://www.business-standard.com/world-news/jpmorgan-chase-unveils-ai-powered-llm-suite-may-replace-research-analysts-124072600460_1.html)
+
+### 5.3 LightGPT at Hundsun Electronics: an attempt by China's leading financial IT vendor
+
+| Dimension | Data |
+|---|---|
+| Release date | 2023-06 / upgraded in 2023-10 |
+| Training data | 40B+ tokens of financial data |
+| Use cases | Research reports, research insights, financial statement processing |
+| Commercialization | Embedded into Hundsun's existing "Photon" product line |
+| Valuation implication | Hundsun Electronics' market cap is about 50-60 billion (2026-04), and **LightGPT did not bring a meaningful valuation premium** |
+| Takeaway | **Vertical financial large models contribute limited value to market cap**; the real value comes from the combination of "AI + existing financial IT software" |
+
+Sources: [hs.net/lightgpt](https://www.hs.net/lightgpt/), [iFinD 600570](https://basic.10jqka.com.cn/600570/worth.html)
+
+### 5.4 PinganGPT at Ping An: the financial large model for insurance + banking
+
+| Dimension | Data |
+|---|---|
+| Architecture | Three layers: L0 (foundational general), L1 (industry model), L2 (scenario model) |
+| Scale of application | 100+ large-model scenarios; 550+ AI outbound-call use cases, 4.4 billion calls |
+| Commercial direction | **Almost entirely internal use**, with limited external B-side output |
+| Takeaway | **Ping An chose to "internalize," while Ant Digital Technologies chose to go "external" - the latter is harder** |
+
+Sources: [36Kr](https://36kr.com/p/3471919044204162), [Ping An Bank](https://bank.pingan.com/about/article/puhui/1730344335852.shtml)
+
+### 5.5 China Merchants Bank + Tongyi: a reference model for large-bank cooperation in China
+
+| Dimension | Data |
+|---|---|
+| Model | CMB × Alibaba Tongyi cooperation, **not with Ant Digital Technologies** |
+| Result | Intelligent customer service accuracy >95%, 1 million conversations handled per day, replacing 3,000 customer-service agents |
+| Self-development strategy | "Do not build a general-purpose model; build a domain model for the financial industry" |
+| In-house product | "Yi Zhao," an open-source financial large model |
+| Takeaway | **The China Merchants Bank case directly shows that Tongyi competes head-on with Ant Digital Technologies among financial customers, and Tongyi won** |
+
+Sources: [Alibaba Cloud Developer](https://developer.aliyun.com/article/1654755), [STCN](https://stcn.com/article/detail/1443956.html)
+
+### 5.6 China Construction Bank Ark Plan: a representative large-bank self-development path
+
+- Launched the Ark Plan in 2023-03
+- Chose the "open-source base + financial data + self-development" path
+- By the end of 2024, adapted **16 versions of general-purpose large models**
+- Already deployed in 193 scenarios, with only 7 core capabilities
+- **Completely independent of Ant Digital Technologies**
+
+Sources: [53AI](https://www.53ai.com/news/AIjinrong/2025060973819.html), [Mobile Payment Network](https://m.mpaypass.com.cn/news/202403/14114245.html)
+
+### 5.7 Global success-rate statistics for the "financial vertical large model" path
+
+| Case | Path | Commercial outcome | Success? |
+|---|---|---|:---:|
+| BloombergGPT | Self-developed 50B-parameter financial model | Basically failed, surpassed by GPT-4 | ❌ |
+| JPMorgan LLM Suite | Portal that calls OpenAI | Used by 60,000 internal employees | ✅ |
+| China Merchants Bank "Yi Zhao" | Self-developed open-source financial model | Mainly internal use | 🟡 |
+| CCB Ark | Open-source base + self-developed adaptation | Deployed in 193 scenarios | ✅ |
+| Ping An PinganGPT | Three-layer self-build (L0/L1/L2) | Internalized in 100+ scenarios | ✅ |
+| Hundsun Electronics LightGPT | Extension of a leading financial IT vendor | Embedded in existing products, limited valuation contribution | 🟡 |
+| Ant Digital Technologies Agentar | B-side sales of financial large model + agent | 5-10 lighthouse cases | ⏳ |
+
+**Statistical conclusion**:
+- The success rate of the "self-build + internal use" path is **~70%** (JPM, CCB, Ping An)
+- The success rate of the "sell a financial vertical base model to the B-side" path is **<30%** (BloombergGPT failed, Hundsun Electronics' valuation contribution was limited)
+- **Ant Digital Technologies chose the harder path**
+
+---
+
+## Part 6: Overall judgment (clear answers to the three core questions)
+
+### 6.1 Probability that Ant Digital Technologies' foundation model path succeeds
+
+**Definition of "success"**: within 5 years (before 2031), deliver a "market-recognized foundation model" - meaning that in B-side customer tenders/procurement, Ant Digital Technologies' own model becomes the first choice or first backup, contributes more than 30% of revenue, and supports a valuation premium.
+
+| Sub-path | 5-year probability (estimate) | Explanation |
+|---|:---:|---|
+| Strict "foundation model company" path | **<10%** | General-purpose base-model commoditization is now a given, and BloombergGPT is the counterexample |
+| "Ling + Agentar + financial vertical fine-tuning" combo path | **40-55%** | Supported by existing lighthouse cases, but squeezed by open-source substitutes and large banks building in-house |
+| "AI services company" path (Path D) | **65-80%** | The most realistic path, but the ceiling is low and valuation is hard to exceed 100 billion |
+
+**Core judgment**:
+> **For Ant Digital Technologies to "succeed," it must give up the narrative of being a "foundation model company" and admit that it is a comprehensive provider of "financial-grade AI services + compliance + deployment."**
+
+### 6.2 Probability of finding PMF (across four paths)
+
+| Path | PMF probability (estimate) | Key evidence | Risk |
+|---|:---:|---|---|
+| **Path A**: self-developed general-purpose LLM competing head-on with Qwen/Doubao | **<5%** | Behind across compute, talent, and ecosystem | BloombergGPT lesson |
+| **Path B**: vertical financial base model becomes the #1 player in the segment | **30-40%** | Agentar-Fin-R1 beats DeepSeek-R1 on several financial benchmarks | Pressed from both sides by large banks building in-house and open-source substitutes |
+| **Path C**: agent + long-term memory + toolchain combo | **50-65%** | Agentar tops BIRD-SQL; highest-level CAICT certification; Ningbo Bank case | DeepSeek V4 agent capability is catching up quickly |
+| **Path D**: model as a "supporting role" + services + data monetization | **70-85%** | The path has been validated by Hundsun Electronics, Yuxin Technology, and Digital China Information Service; Ant Digital Technologies' customer base and compliance credentials are a natural fit | Low ceiling, limited valuation upside |
+
+### 6.3 Clear answer on differentiated value
+
+#### True differentiation (3 things)
+
+1. **Deep know-how in the financial industry** - 14 years of accumulation in Ant's financial business, with the "6 major classes and 66 sub-classes" financial task taxonomy being the most complete
+2. **Compliance-grade data moat** - payment, credit, and risk-control behavior data at a scale that is rare in China
+3. **A closed loop of private deployment + audit + AntChain + privacy computing** - full delivery by a single vendor, something open-source vendors cannot imitate
+
+#### False differentiation (2 things)
+
+1. **Base-model technical leadership** - under commoditization, Ant Ling vs DeepSeek/Qwen/Doubao no longer has any essential technical gap, and "trillion-parameter MoE + hybrid linear architecture" is not scarce in 2026
+2. **Compute scale or open-source ecosystem scale** - the compute Ant Digital Technologies can call on is a subset of Alibaba Cloud, and its open-source ecosystem is a subset of DeepSeek/Qwen; **both dimensions are absolute disadvantages**
+
+### 6.4 One-sentence summary for non-specialists
+
+> **What Ant Digital Technologies can really win with is not "building a stronger large model," but "becoming the financial industry's AI peace-of-mind steward" - treating open-source base models as the raw material, financial-domain understanding as the recipe, compliance audits as the packaging, and private deployment as logistics. In the end, customers pay a premium for peace of mind, not for the model itself. If they insist on positioning themselves as a "foundation model company," they have a 70% chance of failure within 5 years; if they admit they are a "financial-grade AI services company," they have a 60% chance of success within 5 years - but the valuation ceiling may only be 80-150 billion RMB, rather than the 200 billion+ often discussed in the market.**
+
+---
+
+## Part 7: Risks and monitoring metrics
+
+### 7.1 Key risks (by severity)
+
+| # | Risk | Severity | Current probability | Impact |
+|---|---|:---:|:---:|---|
+| 1 | **DeepSeek/Qwen agent capability catches up quickly** - Agentar's "BIRD first place" is surpassed within 6-12 months | 🔴 Extremely high | 60-70% | Short time window for agent-platform differentiation |
+| 2 | **Large banks collectively choose the "open-source base + self-build" path** - CMB + CCB have already moved first | 🔴 Extremely high | 50-60% | Loss of large B-side customers |
+| 3 | **The Ling team is not prioritized for Ant Digital Technologies B-side work** - group AI resources tilt toward Afu (health) + Lingguang (consumer) | 🟠 High | 40-50% | The "borrow-the-model" channel is not smooth |
+| 4 | **#1 on financial vertical benchmarks does not convert into commercial PMF** (BloombergGPT lesson) | 🟠 High | 40-50% | ROI misses expectations |
+| 5 | **Third-party revenue shrinks significantly after related-party transaction disclosure** | 🟠 High | 30-40% | Valuation discount |
+| 6 | **Domestic-chip training results fall short of internal claims** - independent benchmark validation fails | 🟡 Medium | 20-30% | Higher compute cost |
+| 7 | **The "pay for results" model is hard to scale** - single-customer cases cannot be copied in bulk | 🟡 Medium | 30-40% | Business-model ceiling |
+| 8 | **BloombergGPT-style "big investment, failed commercialization"** | 🟡 Medium | 20-30% | Waste of resources |
+| 9 | **Alibaba Tongyi continues to replace Ant Digital Technologies among financial customers** (the CMB case has already happened) | 🟡 Medium | 50-60% | Losing internal-group competition |
+| 10 | **Regulatory tightening on Web3/RWA** (Ant was not among the first Hong Kong stablecoin licensees on 4/10) | 🟡 Medium | Some of this has already happened | Option value impaired |
+
+### 7.2 Quarterly monitoring metrics
+
+| Metric | Frequency | Key threshold |
+|---|---|---|
+| Number of Agentar customers (new + retained) | Quarterly | New >20/quarter, retention >85% |
+| Share of third-party revenue | Semiannual | Whether it exceeds 70% |
+| Share of pay-for-outcome revenue | Semiannual | Whether it exceeds 20% |
+| GitHub star growth rate of Ling open-source models | Monthly | Ratio vs DeepSeek/Qwen |
+| Agentar ranking on benchmarks such as BIRD-SQL | Quarterly | Whether it is surpassed by DeepSeek/Qwen |
+| Share of state-owned joint-stock banks + city commercial banks using Ant Digital Technologies AI as first choice | Semiannual | Compared with internal share at CCB + CMB + ICBC |
+| Changes in the main AI partner for CMB/CCB/ICBC | Real-time | Whether there are signs of switching from Tongyi/self-build to Ant Digital Technologies |
+| Size of the "Model Technology Innovation Department" team | Semiannual | Whether it reaches the 200-person level |
+| Share of Ant Group AI Credit incentives granted to Ant Digital Technologies employees | Annual | Compared with Afu, Lingguang, and Ling allocations |
+| Ant Group's total AI investment allocation | Annual | Allocation ratio among Ant Digital Technologies / consumer AI (Afu + Lingguang) / Ling base models |
+
+---
+
+## Appendix A: Key data summary
+
+### A.1 Ant Group AI asset inventory (2026/04)
+
+| Asset | Owner | Status | Key data |
+|---|---|---|---|
+| Ling base model family | Ant Group | Open source | 18+ models, Ling/Ring/Ming series, full sizes from 10B to 1T |
+| Ling-2.6-1T | Ant Group | Open source | "Positioned against GPT-5.4" (internal wording, 2026-04) |
+| Ring-2.5-1T | Ant Group | Open source | The world's first trillion-scale thinking model with a hybrid linear architecture (2026-02) |
+| Ming-Flash-Omni 2.0 | Ant Group | Open source | Full-modal, with some metrics outperforming Gemini 2.5 Pro (2026-02) |
+| Agentar-Fin-R1 | Ant Digital Technologies | Commercial + partially open source | Based on Qwen3, beats DeepSeek-R1 on financial benchmarks (2025-07) |
+| Agentar-Scale-SQL | Ant Digital Technologies | Open source | Topped BIRD-SQL, 92% accuracy (2025-12) |
+| Agentar agent platform | Ant Digital Technologies | Commercial | Highest-level CAICT certification (2025-10) |
+| Ling enterprise edition | Ant Digital Technologies | Pending release | Announced on 2026-02-19 as coming soon |
+| Afu AI app | Ant Group | Commercial | 30M+ monthly active users, over 100M users during the Spring Festival period (consumer health) |
+| Lingguang AI app | Ant Group | Commercial | Ranked 10th in weekly active AI apps on the consumer side (2026-02) |
+
+### A.2 Key players in the financial large-model market (2026/04)
+
+| Player | Model / product | Nature | Comparability to Ant Digital Technologies |
+|---|---|---|:---:|
+| Alibaba Tongyi (affiliate) | Qwen3-Max / Qwen 3.5 | General-purpose base model + B-side | Affiliate, but internal competition |
+| ByteDance Doubao | Doubao | General-purpose base model + B-side | Direct competitor |
+| DeepSeek | V4-Pro / V4-Flash | General-purpose base model + open source | Price killer, biggest threat |
+| Zhipu | GLM series | General-purpose base model + B-side + IPO | Direct competitor |
+| Baidu ERNIE | ERNIE 4.5 | General-purpose base model + B-side | Direct competitor |
+| Huawei Pangu | Pangu 5 | General-purpose + domestic substitution | Main battlefield for government and enterprise domestic-substitution projects |
+| Kimi | Kimi series | General-purpose consumer + B-side | Indirect |
+| China Merchants Bank | Yi Zhao | Self-built + open source | **Customer was taken by Tongyi** |
+| China Construction Bank | Ark | Self-built + 16 versions | **Does not depend on Ant Digital Technologies** |
+| Ping An | PinganGPT | Self-built internalization | Internal competition (not a customer) |
+| Hundsun Electronics | LightGPT | Financial IT vendor | Direct competitor (securities segment) |
+| China UnionPay | Private deployment of DeepSeek-V4 | Self-built + open source | **Does not depend on Ant Digital Technologies** |
+| **Ant Digital Technologies** | **Agentar-Fin-R1 + Ling enterprise edition** | B-side financial vertical | — |
+
+---
+
+## Appendix B: Sources list
+
+> This report cites 30+ public URLs, grouped by topic below.
+
+### B.1 Ant Digital Technologies model strategy and company announcements
+
+1. [Ant Digital Technologies CEO Zhao Wenbiao sent a company-wide letter announcing the creation of the "Model Technology Innovation Department" (Sina Tech 2026-02-04)](https://finance.sina.com.cn/tech/digi/2026-02-04/doc-inhkpzpi4319173.shtml)
+2. [Ant Digital Technologies company-wide letter: a model technology innovation department will be created (OFweek 2026-02)](https://www.ofweek.com/ai/2026-02/ART-201721-8120-30680886.html)
+3. [Ant CEO Han Xinyi issued a company-wide letter: it is not yet time to celebrate AI exploration (Guancha 2026-02-03)](https://www.guancha.cn/economy/2026_02_03_805952.shtml)
+4. [Ant Group CEO Han Xinyi issued an internal letter: increase incentives for AI "groundbreaking contributions" (NBD 2026-02-02)](https://cd.nbd.com.cn/articles/2026-02-02/4246011.html)
+5. [Ant Group AI business monthly active users exceed 30 million, payment users top 100 million (Economic Observer Network 2026-03-01)](http://www.eeo.com.cn/2026/0301/803508.shtml)
+6. [Ant Digital Technologies will release the Ling enterprise edition (Tencent News 2026-02-20)](https://news.qq.com/rain/a/20260220A021BD00)
+
+### B.2 Progress of the Ant Ling base model and open source
+
+7. [Ant Group open-sourced Ring-2.5-1T, the world's first trillion-parameter thinking model with a hybrid linear architecture (QbitAI 2026-02-13)](https://www.qbitai.com/2026/02/379431.html)
+8. [Ant Ling Ling-2.6-1T officially open-sourced: trillion-parameter scale positioned against GPT-5.4 (ITBear 2026-04)](https://www.itbear.com.cn/html/2026-04/1316923.html)
+9. [Ant Group open-sourced the full-modal large model Ming-Flash-Omni 2.0 (Sina Tech 2026-02-11)](https://finance.sina.com.cn/tech/roll/2026-02-11/doc-inhmmvza3686558.shtml)
+10. [From multimodal to full-modal! Ant open-sources Ming-Flash-Omni 2.0, positioned against Gemini 2.5 Pro (InfoQ 2026-02)](https://www.infoq.cn/article/d9TEFiU7kq8EKCIodTmI)
+11. [Ant Group used domestic AI chips to train large models, reducing compute cost by about 20% (OSCHINA 2025-03)](https://www.oschina.net/news/340658)
+12. [Major Ant Group AI breakthrough: training large models with domestic AI chips can reduce costs further (Sina Finance 2025-03-25)](https://finance.sina.com.cn/stock/roll/2025-03-25/doc-ineqvepa2958269.shtml)
+
+### B.3 Agentar-Fin-R1 and the Agentar agent platform
+
+13. [Ant Digital Technologies released a financial reasoning large model to help financial institutions accelerate agent adoption (STCN 2025-07)](https://www.stcn.com/article/detail/2813235.html)
+14. [Ant launched its first financial reasoning large model, topped authoritative financial evaluations, and surpassed OpenAI o1 and DeepSeek-R1 (Sina Finance 2025-07-28)](https://finance.sina.com.cn/stock/t/2025-07-28/doc-infhzawz0291022.shtml)
+15. [Ant Digital Technologies announced the open-sourcing of data-analysis agent technology, now topping BIRD (Sina Tech 2025-12-15)](https://finance.sina.com.cn/tech/roll/2025-12-15/doc-inhawaui2465773.shtml)
+16. [Ant Digital Technologies announced the open-sourcing of data-analysis agent technology, currently topping BIRD (QbitAI 2025-12)](https://www.qbitai.com/2025/12/361042.html)
+17. [Ant Digital Technologies' Agentar selected as a 2025 international standard financial application benchmark case (Xinhua 2025-10-30)](http://www.news.cn/tech/20251030/01c228e382514af39f92ebc1bb99fda1/c.html)
+18. [Building a benchmark enterprise-grade agent development platform, Ant Digital Technologies' Agentar received the highest-level certification from CAICT (Jiangsu Net 2025-10)](https://www.jsw.com.cn/2025/1024/1927797.shtml)
+19. [2026 mainstream enterprise agent development platform selection guide: Ant Digital Technologies' Agentar is the comprehensive top pick (IT Home 2026-04)](https://www.ithome.com/0/937/649.htm)
+20. [The "vertical breakthrough" of financial large models: Ant Digital Technologies builds an industry brain that understands finance better (Tencent News 2025-07)](https://news.qq.com/rain/a/20250729A07QYV00)
+
+### B.4 Competition from general-purpose base-model vendors (DeepSeek/Qwen/Doubao)
+
+21. [DeepSeek V4, another round as the "price butcher"? (Guancha 2026-04-24)](https://www.guancha.cn/economy/2026_04_24_814819.shtml)
+22. [DeepSeek drives an AI "price war": 0.25 yuan per million input tokens (21jingji 2026-04-26)](https://www.21jingji.com/article/20260426/herald/05fee61739e3aa4cb240e8063303a948.html)
+23. [The strongest open-source model arrives on New Year's Eve! 397B-parameter Qwen 3.5 surpasses Gemini 3, with one million tokens as low as 0.8 yuan (QbitAI 2026-02)](https://www.qbitai.com/2026/02/380433.html)
+24. [Alibaba unifies its AI brand under "Qwen" (21jingji 2026-03-02)](https://www.21jingji.com/article/20260302/herald/5bab6d98f3bc91c4b484bf495399c7b0.html)
+25. [Solving the challenge of financial AI deployment, China UnionPay takes the lead in privately deploying DeepSeek-V4 large models (NetEase 2026-04)](https://www.163.com/dy/article/KRM64L9S0514R9OJ.html)
+26. [DeepSeek is expected to trigger a transformation in bank large-model applications (NBD 2025-02-05)](https://www.nbd.com.cn/articles/2025-02-05/3742346.html)
+
+### B.5 Global and domestic financial large-model benchmarks
+
+27. [BloombergGPT: A Large Language Model for Finance (arXiv 2303.17564)](https://arxiv.org/abs/2303.17564)
+28. [BloombergGPT and the Limits of Domain-Specific LLMs in Finance (Beancount 2026-05)](https://beancount.io/bean-labs/research-logs/2026/05/05/bloomberggpt-large-language-model-finance)
+29. [JPMorgan Chase Unveils AI-Powered LLM Suite (Business Standard 2024-07)](https://www.business-standard.com/world-news/jpmorgan-chase-unveils-ai-powered-llm-suite-may-replace-research-analysts-124072600460_1.html)
+30. [JPMorgan giving its employees an AI assistant powered by ChatGPT maker OpenAI (CNBC 2024-08)](https://www.cnbc.com/2024/08/09/jpmorgan-chase-ai-artificial-intelligence-assistant-chatgpt-openai.html)
+31. [Hundsun Electronics LightGPT website (hs.net)](https://www.hs.net/lightgpt/)
+32. [The practice of building and applying financial large models at China Construction Bank (53AI 2025-06)](https://www.53ai.com/news/AIjinrong/2025060973819.html)
+33. [China Merchants Bank X Tongyi large model, 2024 AI best-practice case (Alibaba Cloud Developer 2025-01)](https://developer.aliyun.com/article/1654755)
+34. [Conversation with Yu Wujie of China Merchants Bank: the bank's focus is not on building a general-purpose model, but on building a domain model for the financial industry (STCN)](https://stcn.com/article/detail/1443956.html)
+35. [What large-model application scenarios are being deployed at the six major state-owned banks (53AI 2024-08)](https://www.53ai.com/news/LargeLanguageModel/2024082780924.html)
+36. [How 14 banks' AI strategies are transforming: from "AI + finance" to "human + AI," with more than 100 applications already deployed (STCN)](https://www.stcn.com/article/detail/1671235.html)
+
+### B.6 Industry and PMF analysis
+
+37. [2026 deep dive into large models: after the bubble fades, value realization is the real battlefield (Sina 2026)](https://k.sina.com.cn/article_7857201856_1d45362c001904gpdi.html)
+38. [Stop obsessing over PMF! In the AgaaS era, the last lifeline for China's B-side entrepreneurs (53AI 2026-03)](https://www.53ai.com/news/tishicijiqiao/2026032728973.html)
+39. [Deep dive | PMF in the GenAI era (53AI 2024-06)](https://www.53ai.com/news/LargeLanguageModel/2024062896741.html)
+40. [Paths, scenarios, and cases for enterprise large-model deployment (iFenxi)](https://www.ifenxi.com/research/content/6520)
+
+### B.7 Other
+
+41. [Chinese companies accelerate AI services abroad; Ant Digital Technologies sets up an operations hub in Malaysia (Sina Finance 2026-02-26)](https://finance.sina.com.cn/stock/t/2026-02-26/doc-inhpcqkq1569245.shtml)
+42. [Ant Digital Technologies speeds up overseas expansion of AI-to-Business services and sets up an operations hub in Malaysia (36Kr 2026)](https://36kr.com/p/3699806105972614)
+43. [Hong Kong issues its first batch of stablecoin licenses, with two of the three note-issuing banks approved (Sina Finance 2026-04-12)](https://finance.sina.com.cn/roll/2026-04-12/doc-inhuetnq0871424.shtml)
+44. [Ant Digital Technologies launches LingDT-2.6-flash, further providing practical AI tools for enterprises (Chinaz 2026-04-29)](https://www.chinaz.com/ainews/27581.shtml)
+45. [Ant Digital Technologies launches LingDT-2.6-flash: efficient token usage helps enterprise AI scale with lower cost and higher efficiency (ITBear 2026-04)](https://www.itbear.com.cn/html/2026-04/1313415.html)
+
+---
+
+## Appendix C: LingDT-2.6-flash fact correction (2026-04-30 update)
+
+> **Background**: The main body of this report was completed on the morning of 2026-04-30. A fact check performed later that day found that the newly released model **LingDT-2.6-flash** from Ant Digital Technologies on **2026-04-29** had been omitted. This appendix makes a **partial correction** to the original report's statement that "Ant Digital Technologies itself does not do foundation-model pretraining / only resells the group's base models on the B-side."
+
+### C.1 Key facts about LingDT-2.6-flash
+
+| Dimension | Data | Source |
+|---|---|---|
+| Released by | Ant Digital Technologies (2026-04-29) | [Chinaz](https://www.chinaz.com/ainews/27581.shtml) |
+| Name meaning | "DT" = Digital Technology, the label for Ant Digital Technologies' proprietary commercialization product line | [ITBear](https://www.itbear.com.cn/html/2026-04/1313415.html) |
+| Total parameters | 104B (MoE architecture) | Same as above |
+| Activated parameters | 7.4B | Same as above |
+| Base source | **A commercial version based on the Ant Group Ling team’s Ling-2.6-flash** (not trained from scratch) | "Fully inherits the core advantages of Ling-2.6-flash" |
+| Additional work by Ant Digital Technologies | (1) Underlying architecture optimization, **token consumption reduced by up to 90%**; (2) financial-grade security protection system; (3) private deployment + data isolation + API permission control; (4) DTMaaS commercialization platform | Same as above |
+| Pricing | Input: 0.48 yuan per million tokens; output: 1.44 yuan per million tokens (20% limited-time discount) | Same as above |
+| Application areas | Finance, energy, transportation; finance has already deployed more than one hundred agents (AI mobile banking, insurance claims, security control, wealth management) | Same as above |
+
+### C.2 Impact on the original report’s core arguments
+
+| Original report claim | Status after checking LingDT information |
+|---|---|
+| "Ant Digital Technologies itself does not do foundation-model **pretraining**" | ✅ **Still holds** - LingDT is a commercial version of Ling-2.6-flash, not trained from scratch |
+| "Ant Digital Technologies is the group's base-model result **commercialization channel + vertical packaging layer**" | ✅ **Confirmed rather than overturned** - LingDT is exactly the concrete product of that "commercialization channel" |
+| "Ant Digital Technologies just 'resells' the group's base models" (implicit wording) | ⚠️ **Partially corrected** - Ant Digital Technologies did do real incremental work in underlying-architecture token-efficiency optimization, financial security retraining, and enterprise deployment capability; this is **substantive value-add**, not simple resale |
+| "General-purpose base-model capability is false differentiation" | ✅ **Still holds** - but **token-efficiency optimization** should be recognized as a **third true differentiator** (in addition to the original report's "financial-domain know-how + compliance loop") |
+
+### C.3 Reading the price signal
+
+Horizontal comparison of LingDT pricing (0.48 yuan per million input tokens):
+
+| Model | Input price (yuan / million tokens) | vs LingDT |
+|---|---|---|
+| DeepSeek V4 | 0.025 | LingDT is 19x more expensive |
+| Qwen 3.5 | 0.8 | LingDT is 40% cheaper |
+| Group Ling-2.6 (open source) | 0 (open-source self-deployment) | LingDT offers a managed premium |
+| **LingDT-2.6-flash** | **0.48** | — |
+
+**Signal**: LingDT chose a "mid-tier price + financial-security premium" positioning, **avoiding a price war with DeepSeek while suppressing the cost of general-purpose base-model APIs**. This reinforces the original report's judgment that Ant Digital Technologies is a "financial-grade AI services provider rather than a base-model company" - **it earns premiums through services (compliance + deployment + optimization), not through model capability itself**.
+
+### C.4 Newly added "true differentiation" dimension
+
+The original report's differentiation classification:
+
+| Type | Dimension |
+|---|---|
+| True differentiation | financial-domain know-how, compliance-grade data moat, private deployment + audit loop |
+| False differentiation | base model capability, compute scale, open-source ecosystem |
+
+**A fourth true differentiator added after the correction**:
+
+> **Enterprise-grade token-efficiency optimization (such as LingDT's 90% token savings) - true differentiation**
+
+Reasons:
+- B-side customers are extremely sensitive to TCO (total cost of ownership), unlike consumer-side users who focus only on absolute capability
+- 90% token savings directly maps to **a several-fold reduction in real deployment cost**, which is a real pain point
+- The optimization direction for general-purpose base-model vendors is absolute capability (cross-benchmark), not token efficiency
+- This is a concrete product of Ant Digital Technologies using "financial-domain know-how" to reverse-influence "model architecture" - a **moated engineering capability**
+
+### C.5 Impact on the answers to the three core questions
+
+| Question | Original conclusion | After correction |
+|---|---|---|
+| Q1: build a "market-recognized foundation model" within 5 years | General-purpose <10% / vertical 40-55% | **General-purpose <10% / vertical 45-60% (slightly raised, because LingDT deployment has already shown the commercialization path is viable early on)** |
+| Q2: find PMF | Self-developed LLM <5% / vertical 30-40% / Agent 50-65% / service-oriented 70-85% | **Raised by 5pp overall** - LingDT's "token-efficiency positioning" + more than one hundred financial agents in production show the path is viable |
+| Q3: true differentiation | 3 items: financial-domain + compliance + audit loop | **Added the 4th item**: enterprise-grade token-efficiency optimization |
+
+### C.6 Revised "one-sentence summary"
+
+**Before correction**: The real path for Ant Digital Technologies to succeed at "doing foundation models" was not to confront DeepSeek/Qwen/Doubao head-on on generic base-model capability, but to combine the parent company's Ling open-source base + its own financial-domain data + the agent platform + the compliance and audit loop into an industry-grade AI infrastructure that is "ready to use out of the box and safe from a compliance standpoint" for financial, energy, and government customers - in essence, a high-gross-margin AI services company rather than a foundation model company.
+
+**After correction**: The real path for Ant Digital Technologies to succeed at "doing foundation models" is to **take the Ling open-source base from the group and add four substantive increments - financial-domain know-how, enterprise-grade token-efficiency optimization (such as LingDT's 90% savings), compliance and audit loops, and DTMaaS commercialization infrastructure - to build financial-grade AI services that are "ready to use out of the box, safe from a compliance standpoint, and controllable in TCO" for enterprise customers.** This is a high-gross-margin AI services company, not a foundation model company, but it is also **not a simple resale of the group's base model** - LingDT proves that Ant Digital Technologies has real engineering value-add at the commercialization packaging layer.
+
+---
+
+## Report metadata
+
+- **Research date**: 2026-04-30
+- **Method**: single-role "AI industry analyst" deep analysis (based on the 4/17 team report + the 4/28 valuation-focused report + 13 web searches)
+- **Total length**: about 8,500 Chinese characters (including the 4/30 update appendix)
+- **Data confidence**: 🟡 Medium (key technical metrics rely on Ant internal wording, and some customer-case data was not independently verified)
+- **Report principles**: objective, no preconceived stance, both bullish and bearish views, source attribution for data, and clear labeling of estimates
+- **Report boundary**: public-information-only analysis, no internal perspective, no personal privacy involved
+- **Revision record**: on 2026-04-30, Appendix A (LingDT-2.6-flash fact correction) was added to correct the implicit statement that "Ant Digital Technologies is just a simple reseller"
+- **Baseline research**:
+  - [`Ant Digital Technologies team final report (20260417)`](../Ant Numerical Section - Team-2020417/Final report.md)
+  - [`Ant Digital Technologies valuation focus final report (20260428)`](Valuation focus 202600428/Final report.md)
+
+---
+
+*Independent analysis based on public information only; does not constitute investment advice*

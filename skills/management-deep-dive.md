@@ -1,282 +1,282 @@
-# 管理层纵深研究：买股票就是买人
+# Management research: buying shares is buying
 
-对 $ARGUMENTS 进行管理层深度研究。
+Conducting management depth studies on $ARGUMENTS.
 
-**支持输入格式**：`公司名` 或 `人名 公司名`，例如：`美团`、`王兴 美团`、`黄仁勋 英伟达`
+** Supported input format**: `The name of the company ' or `The name of the person ' , e.g. `The United States Corps ' , `The Wang Jing United Group ' , `Hang In-hoon Young Ying Wei Da '
 
-> "买股票就是买人。找到你信任的人，然后长期持有。" —— 段永平
+"Assured is a buyer. Find the person you trust and hold it forever."
 >
-> "评估管理层，要看他们在没人看着的时候做什么。" —— 巴菲特
+> "Assessment management depends on what they do when nobody looks." > -- Barfitt.
 
-## 设计理念
+# Designing ideas
 
-大多数投资分析对管理层的评估停留在表面：履历、持股比例、薪酬。但巴菲特花大量时间**和管理层吃饭聊天**，李录说**他投资的本质是投人**，段永平说**买股票就是买人**。
+Most investment analyses assess management on the surface: curriculum vitae, shareholding, and remuneration. But Buffett spends a lot of time** and he eats and chats with management.
 
-本Skill是 `/investment-research` 第五步管理层评估的**深化版**。当标准投资研究中管理层评分不确定（★★★或以下）、或管理层是核心投资逻辑时，使用本Skill做纵深研究。
+This Skill is a ** in-depth version of the fifth step management assessment. This is used for in-depth research when management ratings are uncertain (below or below) in standard investment studies or when management is the core investment logic.
 
-AI无法和管理层吃饭，但可以通过公开信息做到：
-- **追踪管理层的话与做是否一致**（承诺vs兑现）
-- **分析每一笔重大资本配置决策的回报**
-- **从困难时期的决策中推断品格**
-- **通过员工/商家/客户的反馈侧面验证**
+AI cannot eat with management, but can do so through public information:
+- **Tracking management's consistency of words and actions** (Commitment vs.
+- ** Analysis of the return on each major capital allocation decision**
+- ** Inferring character from decision-making in difficult times**
+- ** through feedback from staff/business/clients**
 
-## 执行流程
+# Execute process
 
-### 第一步：识别关键管理层并启动并行数据收集
+# First step: identifying key management and initiating parallel data collection
 
-使用 WebSearch 确认以下关键人物：
+Using WebSearch to identify the following key individuals:
 
-| 角色 | 姓名 | 任期 | 背景 | 持股/期权 |
+Role Name Term Term Term Term Term Term Term
 |------|------|------|------|----------|
-| CEO/董事长 | | | | |
+<unk> CEO/Chairman <unk>
 | CFO | | | | |
-| 创始人（如不在位） | | | | |
-| 实际控制人（如不同于CEO） | | | | |
-| 其他关键高管 | | | | |
+♪ If you're not in the seat ♪
+<unk> Actual control person (if different from CEO) <unk>
+Other key executives.
 
-**注意**：区分"谁在做决策"和"谁的名字在头衔上"。有些公司创始人虽然卸任但仍是灵魂人物（如黄峥之于拼多多）。
+**Note **: Distinguishing "who makes decisions" from "who has the name on the title." Some of the founders of the company are still soul people (e.g. yellow-collars are too many words).
 
-确认关键人物后，使用 Task 工具启动多个后台 Agent **并行**收集以下数据：
-1. Agent 1：CEO公开发言与预测记录（股东信、电话会、采访、社交媒体）
-2. Agent 2：资本配置决策记录（并购、回购、分红、新业务投资）
-3. Agent 3：治理结构与薪酬（股权结构、关联交易、高管薪酬）
-4. Agent 4：侧面验证信息（员工评价、客户反馈、行业口碑）
+After identifying key individuals, several backstages were activated using the Task tool.
+1. Agent 1: CEO ' s public statements and forecast records (shareholder letters, telephone conferences, interviews, social media)
+2. Agent 2: Record of capital allocation decision-making (M & A, buy back, split, new business investment)
+3. Agent 3: Governance structure and remuneration (equity structure, associated transactions, executive remuneration)
+4. Agent 4: Side validation information (staff evaluation, client feedback, industry slogan)
 
-### 第二步：CEO能力圈评估
+# Step 2: CEO's Capability Circle Assessment
 
-#### 2.1 战略眼光
+#2.1 Strategic vision
 
-搜索CEO过去5年的公开发言（股东信、电话会、采访、社交媒体），提取其对以下问题的判断：
+Searching for the CEO ' s public statements (shareholder letters, telephone conferences, interviews, social media) over the past five years, drawing its judgement on the following issues:
 
-| 时间 | CEO的判断/预测 | 实际结果 | 准确度 |
+Time, CEO's judgement/prediction, actual results, accuracy, accuracy.
 |------|--------------|---------|:------:|
-| | "我们认为X市场会..." | X市场实际... | ✅/❌ |
-| | "未来3年我们的重点是..." | 实际执行... | ✅/❌ |
+"We think X Market will..."
+"The point for us in the next three years is to do the actual execution of the...
 
-**关键问题**：
-- CEO有没有做过超前于市场的正确判断？
-- CEO有没有在大家都看好的时候保持冷静？
-- CEO对行业趋势的理解是跟随市场还是独立思考？
+** Key issues**:
+- Did the CEO make the right judgment over the market?
+- Did the CEO stay calm when everyone was watching?
+- Is the CEO ' s understanding of industry trends following markets or thinking independently?
 
-#### 2.2 执行能力
+##2.2 Execution capacity
 
-| 维度 | 评估 | 证据 |
+♪ The way you're going ♪
 |------|------|------|
-| 战略到落地 | 说了的事做到了吗？ | |
-| 组织能力 | 能不能吸引和留住人才？ | |
-| 危机处理 | 遇到困难时怎么应对？ | |
-| 迭代速度 | 犯错后纠正的速度快吗？ | |
+Did you do what you said?
+Can you attract and retain talent?
+What do you do when you're in trouble?
+♪ The speed of error is fast?
 
-### 第三步：诚信度评估（最重要）
+#3 Step: Integrity Assessment (most important)
 
-**巴菲特**："我们寻找三种品质：正直、智慧和精力。如果没有第一种，后两种会害死你。"
+**Buffett**: "We seek three qualities: integrity, wisdom and energy. If there is no first, the last two will kill you."
 
-#### 3.1 承诺vs兑现追踪
+#3.1 Promise vs follow
 
-从过去3年的财报电话会、股东信、公开采访中，提取管理层做过的**具体承诺**：
+From the past three years of the financial statements, telephone conferences, shareholder letters, public interviews, the specific commitments made by management**:
 
-| # | 时间 | 承诺内容 | 承诺场合 | 兑现情况 | 评价 |
+♪ Time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time, time,
 |---|------|---------|---------|---------|------|
-| 1 | | "我们将在2025年实现X业务盈利" | 2024年报电话会 | | ✅/⚠️/❌ |
-| 2 | | "我们计划回购$X亿" | 2024年股东信 | | ✅/⚠️/❌ |
+<unk> "We're going to make a profit in X business in 2025"
+2 million dollars we plan to buy back.
 
-**兑现率统计**：
+**Expire statistics**:
 
-| 承诺兑现率 | 评价 |
+Performance rate of commitments
 |:---------:|------|
-| >80% | 优秀——说到做到 |
-| 60-80% | 合格——大方向对但执行有偏差 |
-| 40-60% | 令人担忧——承诺过多交付不足 |
-| <40% | 严重问题——不可信赖 |
+> 80% > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+60-80% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> in the main directions for the main directions and <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+40-60% Of concern - under-delivery of commitments
+<40% > Serious problem - untrustworthy < < 40% >
 
-#### 3.2 困难时期的表现
+# 3.2 Performance in difficult times
 
-搜索公司历史上遭遇的重大危机/困难（股价暴跌、业绩miss、监管冲击、竞争加剧），分析管理层的应对：
+Major crises/difficulties (spills in stock prices, performance miss, regulatory shocks, increased competition) experienced by search companies, analysis of management responses:
 
-| 危机事件 | 时间 | 管理层反应 | 事后回看的评价 |
+<unk> Crisis event <unk> Time <unk> Management response <unk> Post-view evaluation <unk>
 |---------|------|-----------|-------------|
 
-**关注**：
-- 是主动沟通还是躲避？
-- 是归因内部还是甩锅外部？
-- 是趁机做困难但正确的事，还是选择短期讨好市场？
+** Concern**:
+- Is it active communication or hiding?
+- Is it internal or outside?
+- Is it a difficult but correct thing to do, or is it a short-term market-friendly choice?
 
-#### 3.3 对利益相关方的态度
+#3.3 Attitudinal attitudes towards stakeholders
 
-| 利益相关方 | 管理层态度 | 证据 | 评价 |
+• Stakeholders <unk> Management attitude <unk> Evidence <unk> Evaluation <unk>
 |-----------|-----------|------|------|
-| 股东 | 尊重/忽视/利用 | | |
-| 员工 | 善待/压榨/漠视 | | |
-| 客户/用户 | 以客户为中心/短期榨取 | | |
-| 商家/供应商 | 公平合作/极端压价 | | |
-| 监管/社会 | 合规配合/打擦边球 | | |
+<unk> Shareholders <unk> Respect/neglect/use <unk>
+<unk> Staff <unk> be nice/cuff/insensitive <unk>
+Client/user
+Business/suppliers Fair cooperation/extreme price
+<unk> Regulation/social compliance/flash ball <unk>
 
-**李录**："对利益相关方的态度决定了企业的长期生命力。短期压榨能提升效率，但长期会损害生态。"
+**Lisu**: "Assumption to stakeholders determines the long-term viability of the enterprise. Short-term pressurization can increase efficiency, but it can damage the ecology in the long term."
 
-### 第四步：资本配置能力
+# Step four: capital allocation capacity
 
-这是巴菲特最看重的管理层能力——**每赚一块钱，管理层能把它变成多少钱？**
+This is Buffett's most valued managerial competence -- ** How much can management turn into every dollar they make?**
 
-#### 4.1 资本配置决策记录
+##4.1 Record of decision-making on capital allocation
 
-搜索公司过去5年的重大资本配置决策，逐笔评估：
+The search company ' s major capital allocation decisions over the past five years have been evaluated in a written way:
 
-**并购记录**：
+** Merger and purchase records**:
 
-| 时间 | 收购标的 | 金额 | 战略逻辑 | 事后回报 | 评分(1-5) |
+Time, amount of money, strategic logic, ex post, rating, 1-5 rating.
 |------|---------|------|---------|---------|:---------:|
 
-**回购记录**：
+** Repurchase records**:
 
-使用 `tools/financial_rigor.py verify-valuation` 校验回购时和当前的PE等估值指标。
+`tools/final_rigor.py valuation ' is used to verify valuation indicators such as the time of buyback and current PE.
 
-| 时间 | 回购金额 | 平均回购价 | 当时PE | 事后回看 | 评分(1-5) |
+The average buyback price.
 |------|---------|-----------|:------:|---------|:---------:|
 
-**分红记录**：
+** Red record**:
 
-| 年份 | 分红金额 | 分红率 | 同期FCF | 是否可持续 |
+<unk> Year <unk> Red amount <unk> Red rate <unk> FCF <unk> sustainable for the same period <unk>
 |------|---------|:------:|---------|:---------:|
 
-**新业务投资**：
+** New business investments**:
 
-| 时间 | 投资领域 | 累计投入 | 当前状态 | 回报评估 | 评分(1-5) |
+<unk> Time area <unk> Cumulative input <unk> Current status <unk> Evaluation of returns <unk> Rating (1-5) <unk>
 |------|---------|---------|---------|---------|:---------:|
 
-#### 4.2 资本配置评分
+## 4.2 Capital allocation rating
 
-| 维度 | 评分(1-5) | 说明 |
+<unk> Dimensions <unk> Ratings (1-5) <unk> Description <unk>
 |------|:---------:|------|
-| 并购纪律 | | 是否在合理价格收购？收购后整合如何？ |
-| 回购时机 | | 是否在低估时回购、高估时停止？ |
-| 分红合理性 | | 分红率是否与FCF匹配？ |
-| 新业务投资 | | 成功率如何？止损纪律如何？ |
-| 现金管理 | | 现金储备是否合理？是否囤积过多？ |
-| **综合评分** | | |
+Are you buying at a reasonable price?
+Do you think the time for repurchases stop when they're underestimated or overestimated?
+Is the score match with the FCF?
+How's the success rate?
+Is the cash reserve reasonable?
+** Combined score**
 
-**巴菲特标准**：理想的管理层在有好机会时果断投资，没有好机会时积极回购/分红，永远不做高价并购。
+** Buffett standard**: ideal management invests decisively when there are good opportunities, actively buy back/sallow when there are no good opportunities, never doing high-value M&As.
 
-### 第五步：治理结构评估
+# Step 5: Governance structure assessment
 
-#### 5.1 股权结构
+## 5.1 Equity structure
 
-| 项目 | 详情 | 风险评估 |
+Project details Risk assessment
 |------|------|---------|
-| 是否有AB股/超级投票权？ | | |
-| 创始人/实控人持股比例？ | | |
-| 是否有VIE结构？ | | |
-| 独立董事是否真正独立？ | | |
-| 大股东近期增减持记录？ | | |
+<unk> AB shares/super-vote vote?
+<unk> Founder/Treator Shareholding Ratio?
+Is there a VIE structure?
+Are independent directors really independent?
+<unk> Records of recent stockholders' growth and decline?
 
-#### 5.2 薪酬合理性
+##5.2 Rationale of remuneration
 
-| 高管 | 年度总薪酬 | 占公司净利润比 | 与同行对比 | 是否合理 |
+<unk> Senior executives <unk> Total annual remuneration <unk>
 |------|-----------|:------------:|:---------:|:-------:|
 
-**关注**：激励结构是否与长期股东利益一致？还是鼓励短期行为？
+** Concern**: Does the incentive structure correspond to long-term shareholder interests or encourage short-term behaviour?
 
-#### 5.3 关联交易
+##5.3 Associated transactions
 
-| 关联方 | 交易内容 | 金额 | 是否公允 | 风险评估 |
+<unk> Related parties <unk> Trade content <unk> Amount <unk> Whether or not fair <unk> Risk assessment <unk>
 |--------|---------|------|:-------:|---------|
 
-### 第六步：侧面验证
+# Step six: Side-checking
 
-AI无法和管理层面对面交流，但可以通过公开渠道的侧面信息验证。**注意**：以下信息取决于公开可搜索的内容，可能不完整，标注信息来源和可得性。
+AI cannot communicate face to face with management, but can be validated through open access to side information.**Note: The following information is dependent on publicly searchable content and may be incomplete, indicating the source of information and availability.
 
-#### 6.1 员工视角
+# 6.1 Staff perspective
 
-搜索 Glassdoor评分摘要、知乎讨论等**可公开搜索**的员工评价（脉脉等需登录的平台标注"用户可自行补充"）：
+Search for employee evaluations for Glasdoor ratings, knowledge of discussions, etc.** that are publicly searchable** (the "user can supplement" for the platform that requires a pulse, etc.):
 
-| 维度 | 评分趋势 | 关键反馈 |
+<unk> Dimensions <unk> Rating trends <unk> Key feedback <unk>
 |------|---------|---------|
-| 企业文化 | | |
-| 管理层评价 | | |
-| 工作强度 | | |
-| 薪酬满意度 | | |
-| 发展前景 | | |
+Business culture
+Management evaluation
+♪ The strength of the work ♪
+<unk> Emolument satisfaction
+Development prospects
 
-#### 6.2 客户/商家视角
+##6.2 Client/business perspective
 
-搜索App Store评分、消费者投诉、商家论坛：
+Searching App Street ratings, consumer complaints, business forum:
 
-| 维度 | 评分/趋势 | 关键反馈 |
+<unk> Dimension <unk> Rating/Trend <unk> Key feedback <unk>
 |------|----------|---------|
-| 产品满意度 | | |
-| 客户服务 | | |
-| 商家/供应商关系 | | |
+<unk> Product satisfaction
+Client services
+Business/supplier relations
 
-#### 6.3 行业口碑
+## 6.3 Industry
 
-搜索行业论坛、社交媒体，了解同行和业内人士对该管理层的评价。
+Search industry forums, social media and learn about the management ' s evaluation by peers and practitioners.
 
-### 第七步：CEO离开后的情景分析
+# Step seven: Situation analysis after CEO leaves
 
-**巴菲特**："好公司应该是傻瓜都能经营的——因为迟早会有傻瓜来经营。"
+**Buffett**: "Good companies should be run by fools -- because sooner or later they'll be running."
 
-| 问题 | 回答 |
+Question. Question. Question.
 |------|------|
-| 如果CEO明天离开，公司能正常运转吗？ | |
-| 现有管理团队的深度如何？有没有明确的继任者？ | |
-| 公司的竞争优势是依赖CEO个人，还是依赖组织/系统？ | |
-| 历史上的管理层交接是否顺利？ | |
+If the CEO leaves tomorrow, will the company be able to function?
+How deep is the current management team?
+<unk> ..the competitive advantage of a company is to rely on the CEO personally or on the organization/system?
+♪ How's the management transition going in history?
 
-### 第八步：输出管理层评估报告
+# # Step 8: Export management assessment report
 
-#### 报告结构
+# Report structure #
 
 ```
-一、关键人物速览（表格）
-二、诚信度评估
-   - 承诺兑现率
-   - 困难时期表现
-   - 对利益相关方态度
-三、能力评估
-   - 战略眼光（预判准确度）
-   - 执行能力
-   - 资本配置记录
-四、治理结构
-   - 股权结构风险
-   - 薪酬合理性
-   - 关联交易
-五、侧面验证
-   - 员工视角
-   - 客户/商家视角
-六、综合评分与结论
+I. Quick-view of key persons (table)
+II. Assessment of integrity
+- Performance rate of commitments
+- Performance in difficult times
+- Attitudinal attitudes towards stakeholders
+III. CAPACITY ASSESSMENT
+- Strategic vision (predictability)
+- Enforcement capacity
+- Capital allocation records
+IV. GOVERNANCE STRUCTURE
+- Equity structure risk
+- Justification of remuneration
+- Associated transactions
+V. Side verification
+- The employee perspective.
+- Client/business perspective
+VI. OVERVIEW AND CONCLUSIONS
 ```
 
-#### 综合评分
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-| 维度 | 权重 | 评分(1-5) | 加权 |
+<unk> dimension <unk> weight <unk> Rating (1-5) <unk> Weight <unk>
 |------|:----:|:---------:|:----:|
-| 诚信度 | 35% | | |
-| 战略与执行能力 | 25% | | |
-| 资本配置能力 | 25% | | |
-| 治理结构 | 15% | | |
-| **综合评分** | 100% | | |
+Good faith, 35%.
+Strategy and implementation capacity 25%
+Capital allocation capacity 25%
+The governance structure, 15%, 15%, 15%, 15%, 15%, 15%, 15%,
+** Combined score** ** ** ** ** ** ** ** ** ** 100% ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** *
 
-#### 段永平的"买人"标准
+# A piece of "buyer" standard
 
-> 回答以下三个问题：
-> 1. **这个人是否正直？**（诚实、不占股东便宜）
-> 2. **这个人是否有能力？**（战略眼光+执行力+资本配置）
-> 3. **你愿意把钱交给这个人管10年吗？**
+> Answer three questions:
+> 1. ** Is this person righteous?** (honest, not cheap for shareholders)
+> 2. ** Does the person have the capacity?** (Strategic vision + implementation + capital allocation)
+> 3. ** Would you like to give the money to this man for 10 years?**
 >
-> 三个都是"是" = ★★★★★（5分）
-> 前两个是"是" = ★★★★（4分）
-> 只有第一个是"是" = ★★★（3分）
-> 第一个不是"是" = ★（1分，不投）
+> Three are "yes" = <unk> (5 points)
+> The first two are "yes" = <unk> (4 points)
+> Only the first one is "yes" = <unk> (3 points)
+♪ The first one is not "yes" ♪ ♪ 1 point, no vote ♪
 
-### 第九步：保存报告
+# Step 9: Save the report
 
-将报告写入 `reports/{公司名}-management-{YYYYMMDD}.md`，例如 `reports/美团-management-20260409.md`
+Write report to `reports/{corporate name}-management-{YYYYMMMD}.md`, for example `reports/USS-management-20260409.md`
 
 ---
 
-## 关键原则
+# Key principles
 
-- **诚信是一票否决项** — 能力不足可以学习，品格有问题无法修复
-- **看行为不看言辞** — 管理层说什么不重要，做了什么才重要
-- **在困难中看真相** — 顺风时谁都是好CEO，逆风时才见真功夫
-- **资本配置是终极考试** — 赚钱容易，把赚到的钱配置好难
-- **不要爱上管理层** — 保持客观，即使是你欣赏的人也可能犯大错
+- ** Integrity is a veto ** – lack of capacity to learn, integrity is not fixed
+- ** Seeing behavior doesn't mean words** - What management says doesn't matter, what does matter.
+- ** In the middle of the difficulties ** – In the wind, everyone is good CEOs, in the face of the wind.
+- ** Capital allocation is the final exam** - Easy money, hard money to make
+- ** Don't fall in love with management** - Be objective, even if you like it.

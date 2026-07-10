@@ -1,0 +1,139 @@
+# Tencent Q1 financial report: Profit only increased by 9%? Unpacking the AI core business hides 17%
+
+Tencent’s Q1 revenue was 196.5 billion, 2.5 billion lower than market expectations.
+
+But if you only draw conclusions after seeing this number, you will miss the most important new information in this financial report-Tencent has separated out its AI investment for the first time. After excluding the loss of AI products, core business profits increased by 17% and the profit margin was 43%.
+
+In other words, Tencent's core engine is not slowing down, but making room for the "new passenger" AI.
+
+Ma Huateng used a metaphor at today’s shareholders’ meeting:
+
+> "It turned out that a year ago we thought we were on the boat, but then we found that the boat was leaking. Now we feel like we are standing on it, but we can't sit down. We still hope the boat can be faster."
+
+This sentence is very honest. Tencent's AI progress is probably in this state - it has not fallen, but it is not stable yet.
+
+> **Reading Tip**: Tencent’s financial report has two sets of profit figures. This article mainly uses "Non-IFRS profit", which is the profit after excluding one-time factors such as equity incentives and investment fluctuations, which can better reflect the true profitability of the core business.
+
+---
+
+## 1. Transcript
+
+| Indicators | Q1 2026 | Year-on-year | Market expectations | Meet the standards? |
+|------|---------|------|---------|-------|
+| Total revenue | 196.5 billion | +9% | 199.4 billion | ❌ 2.5 billion less |
+| Non-IFRS net profit attributable to parent company | 67.9 billion | +11% | 67.2-67.8 billion | ✅ Slightly exceeded expectations |
+| Free cash flow | 56.7 billion | +20% | — | Strong hematopoietic ability |
+| WeChat monthly active users | 1.432 billion | +2% | — | Steady growth |
+
+**Sub-Business**:
+
+| Business | Q1 2026 | Year-on-year | One sentence review |
+|------|---------|------|-----------|
+| Local games | 45.4 billion | +6% | The revenue of Honor of Kings, Peace Elite, and Delta Operations all hit record highs, and the low revenue growth rate is due to the misalignment of the Spring Festival and the delay in revenue recognition |
+| International games | 18.8 billion | +13% | Increased contribution from Clash Royale, Clash Tides, and Fearless Contracts |
+| Social Network | 31.9 billion | -2% | The only negative growth sector, also affected by the Spring Festival time difference |
+| **Marketing Services (Advertising)** | **38.2 billion** | **+20%** | **Fastest growth, AI-driven advertising efficiency improvement** |
+| Fintech and enterprise services | 59.9 billion | +9% | Among them, enterprise services (including cloud) grew by +20% |
+
+Revenue growth has been stable in the 9-13% range, neither accelerating nor deteriorating. The real focus is not on revenue, but on profit structure.
+
+---
+
+## 2. Three key changes
+
+### Change 1: Tencent "reported small accounts" for the first time - core business profit margin 43%
+
+This is the most important new information of the season. For the first time, Tencent has separated its investment in new AI products (Hunyuan, Yuanbao, CodeBuddy, WorkBuddy, QClaw) from its core business:
+
+| Caliber | Q1 2026 | Q1 2025 | Year-on-year | Profit margin |
+|------|---------|---------|------|--------|
+| Non-IFRS operating profit (including AI products) | 75.6 billion | 69.3 billion | +9% | 38.5% |
+| **Non-IFRS operating profit (excluding AI products)** | **84.4 billion** | **72.1 billion** | **+17%** | **43.0%** |
+| AI new product loss | **About 8.8 billion** | About 2.8 billion | +214% | — |
+
+Seeing this set of numbers, you may have the same intuition as me - Tencent is "reporting a small account."
+
+On the surface, profits only increased by 9%, but the profit growth rate of the core business (games + advertising + financial technology) was 17%, and the profit margin was 43%. The so-called "growth slowdown" is entirely due to the 8.8 billion spent on AI products in the first quarter.
+
+In a word: It’s not that Tencent can’t make money anymore, it’s that it’s using the money it makes to feed AI. 8.8 billion were fed in the first quarter.
+
+### Change 2: Advertising business accelerates to +20%, AI money is not wasted
+
+The growth rate of marketing services revenue increased to 20% from 17% in the previous quarter, which was the fastest growth rate among all sectors.
+
+The growth comes from two aspects: the video account user duration +20% year-on-year has brought more advertising inventory (volume), and the AI-driven advertising recommendation model upgrade has improved advertising effects and pricing capabilities (price). The AIM+ automated delivery solution has covered approximately 30% of advertiser expenditures. The specific contribution of "volume" and "price" was not disclosed in the financial report.
+
+Advertising is the most intuitive case of AI empowering existing businesses - investment in AI is not all about "burning money", and part of it is already making money.
+
+### Change three: Repurchase "ebbs" - where does the money go?
+
+In the past two years, Tencent has relied on buybacks to send "red envelopes" to shareholders. Now the red envelope budget has been diverted to recruit AI engineers and buy GPUs.
+
+Buybacks have slowed down significantly from HK$112 billion in 2024 to about HK$80 billion in 2025, to HK$7.6 billion in Q1 2026 (annualized to about HK$30 billion). At the same time, capital expenditures jumped to 31.9 billion (+16%) from 27.5 billion in Q1 last year, a 63% increase from the previous quarter.
+
+The good news is: Even with reduced buybacks and increased capital expenditures, Tencent's net cash increased from 90.2 billion to 146.9 billion (+63%). Not only was there no less cash in my pocket, but it was even more. Free cash flow was 56.7 billion, +20% year-on-year - making money faster than spending money.
+
+Liu Chiping's tone at the performance meeting was: **In 2026, "revenue growth may be faster than profit growth"** - This is to manage market expectations in advance, which means that AI will continue to burn, and don't expect too high profit growth rates.
+
+The risk is also clear: if AI fails to make a mark in a few years, the money that could have been spent on repurchases will be wasted. This plan is not cost-effective. We will not know until 3 years later.
+
+---
+
+## 3. What truth did the management say?
+
+In addition to financial report numbers, management's speeches at shareholder meetings and performance briefings are much more candid than in press releases.
+
+**Ma Huateng talks about AI competitive strategy:**
+
+> "You can't just look at what others are doing and just step over and seize other people's territory. We have done so in the past but basically failed in the end."
+
+This sentence is tantamount to acknowledging Tencent’s past lessons of blindly following the trend in some fields (short video, e-commerce, etc.). In the context of AI, it means that Tencent will not engage in an arms race with general large models, but will focus on AI applications in scenarios where it has advantages (social networking, advertising, games).
+
+**Liu Chiping’s self-criticism of Hunyuan:**
+
+According to 36Kr, Liu Chiping internally commented that Hunyuan was "more like a test-taking exam, with good performance in individual subjects, but his secrets were revealed as soon as he entered the examination room, and many key abilities were lacking**".
+
+Although Hunyuan 3 Preview topped the Token usage rankings on OpenRouter, this achievement was somewhat limited - limited promotion during the period, coupled with quota calls for internal business. The real test will be whether the product can retain external developers after the limited exemption period ends.
+
+**Yuanbao’s real user data:**
+
+Yuanbao’s MAU in March was approximately 57.35 million, but this number needs to be understood in context: the peak value exceeded 114 million during the Spring Festival (Tencent spent 1 billion on promotion), and fell quickly after the holiday. Net user additions in the first quarter were only about 8.2 million. For comparison, the average daily calls of Byte Doubao during the same period was about 30 times that of Hunyuan, with a net increase of about 100 million users in the first quarter.
+
+The gap exists objectively. However, the management's attitude is to accept "slowness" and not rush to catch up: Ma Huateng said "play slowly and steadily", and Liu Chiping said "monetization will naturally occur as usage increases."
+
+**Liu Chiping responded to rumors of layoffs:**
+
+> "There is definitely no big layoff plan. Tencent is not the same as Silicon Valley companies."
+
+---
+
+## 4. An easily overlooked detail
+
+The growth rate of accounts receivable (+16%) is significantly faster than the growth rate of revenue (+9%). It needs to be observed in Q2 whether it is collected normally. The possible reason is that large customers in the rapid growth of advertising and cloud businesses have longer billing periods, but if they continue to expand, they need to be vigilant.
+
+---
+
+## 5. Conclusion: What has changed in this financial report?
+
+**On the surface, it is lower than expected, but in reality, it is slightly higher. **
+
+The revenue loss of 2.5 billion is mainly due to the delayed recognition of game revenue due to the misalignment of the Spring Festival. This is an old problem and will naturally be made up for in Q2. What really matters is that the profit data "excluding AI products" disclosed for the first time - core business +17% growth, 43% profit margin - are far better than market concerns.
+
+**For the holder: Hold, no action required. **
+
+The money-making machine of the core business is turning well. Spending money on AI is a proactive move, not a forced one. Net cash of RMB 146.9 billion provides sufficient safety cushion. The only thing you need to be vigilant about is: if there is no improvement in AI product user data for 2-3 consecutive quarters, you need to re-evaluate the return expectations on AI investment.
+
+**Next thing to watch**:
+- Q2 financial report - game revenue to make up for the Spring Festival time difference + whether the scale of AI product losses will continue to expand
+- The official version of Hunyuan 3 - whether external developers can be retained after the limited exemption period ends
+- Yuanbao user growth - after peaking during the Spring Festival, it fell back to 57 million. Can it regain momentum?
+
+---
+
+**Summary of this financial report in one sentence**: The core business is rock solid, AI investment is burning money fiercely, and the ebb in buybacks is regrettable.
+
+Investing in Tencent is essentially betting on one thing: whether this company can create a "WeChat-level" product in the AI era. The answer to Q1 is: not yet, but it can afford the money to try. In Ma Huateng's own words - the boat stood on board, but he still couldn't sit down.
+
+---
+
+*Data source: Tencent’s official 2026 Q1 performance announcement, shareholders’ meeting and performance briefing speech, 36 Krypton*

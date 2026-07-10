@@ -1,50 +1,50 @@
-# 供应链瓶颈 Top 5 投资机会
+# Supply Chain Bottleneck Top 5 Investment Opportunities
 
-> 最后更新：2026-06-05
-> 选股标准：瓶颈信号强度 × 估值安全边际 × 近期催化剂 × 纯正度
+> Last updated: 2026-06-05
+> Stock selection criteria: Bottleneck signal strength × Valuation safety margin × Recent catalysts × Purity
 
 ---
 
-## ⚠️ 重大变化（2026-06-05）
+## ⚠️ Major changes (2026-06-05)
 
-1. **Kanto Denka (4047.T)** — 一个月暴涨111%至3,560日元创历史新高，瓶颈信号极强但估值已大幅反映，从Top 5降至跟踪区
-2. **Centrus (LEU)** — 获9亿美元HALEU合同+营收指引上调+Roth Capital目标价上调至$230，催化剂密集
-3. **Almonty (AII)** — 桑东矿首批矿石已交付ROM堆场，正式进入采矿运营阶段，钨价APT暴涨534%
-4. **UAMY** — 获DoD 2.48亿美元合同，Stibnite Hill复产，但CFO临时休假是治理风险信号
+1. **Kanto Denka (4047.T)** — surged 111% in one month to 3,560 yen, a record high. The bottleneck signal is extremely strong, but the valuation has been significantly reflected, falling from the Top 5 to the tracking area.
+2. **Centrus (LEU)** — Obtained US$900 million HALEU contract + Revenue guidance raised + Roth Capital raised target price to $230, intensive catalysts
+3. **Almonty (AII)** — The first batch of ore from the Sangdong Mine has been delivered to the ROM yard and has officially entered the mining operation stage. The price of tungsten APT has soared 534%.
+4. **UAMY** — Winning a US$248 million contract from DoD, Stibnite Hill resumes production, but the temporary leave of the CFO is a sign of governance risks
 
 ---
 
 ## Top 5
 
-| 排名 | 公司 | 代码 | 瓶颈 | 最新价 | 估值 | 近期催化剂 | 建议动作 |
+| Ranking | Company | Ticker | Bottleneck | Latest Price | Valuation | Near-term Catalysts | Recommended Actions |
 |------|------|------|------|--------|------|------------|----------|
-| 1 | **Almonty Industries** | AII.TO | S级：西方唯一大型钨矿，供全球（除中国）40%钨需求 | C$26.74 | 钨价+534%，矿山刚投产待盈利验证 | 桑东矿首批矿石交付，向商业化过渡 | 重点研究，纯正度100% |
-| 2 | **Centrus Energy** | LEU | S级：美国唯一HALEU生产商 | $180.20 | PE 66x，市值35.7亿 | 9亿美元合同+指引上调+目标价$230 | 持续跟踪，等回调或盈利验证 |
-| 3 | **US Antimony** | UAMY | S级：美国唯一锑冶炼商 | $9.24 | 小市值，营收起步期 | DoD 2.48亿合同+矿山复产 | 积极跟踪，注意CFO休假风险 |
-| 4 | **Chemring Group** | CHG.L | A级：NATO唯一NC供应商，Sole-Source确认 | 497.80p | PE合理，分析师目标633p（+27%） | 中期业绩订单簿创新高+收入+6.5% | 逢低建仓区间 |
-| 5 | **Nittobo** | 3110.T | A级：T-glass全球90-100%份额 | ¥22,360 | 利润+225%，目标价¥27,641（+24%） | AI封装需求驱动+全年指引上调 | 优质标的，等拆分后回调 |
+| 1 | **Almonty Industries** | AII.TO | Class S: The only large-scale tungsten mine in the West, supplying 40% of the world's (excluding China) tungsten demand | C$26.74 | Tungsten price +534%, the mine has just been put into production and is awaiting profit verification | The first batch of ore from Sangdong Mine has been delivered, transitioning to commercialization | Focused research, purity 100% |
+| 2 | **Centrus Energy** | LEU | Class S: The only HALEU producer in the United States | $180.20 | PE 66x, market capitalization 3.57 billion | US$900 million contract + guidance increase + target price $230 | Continue to track, waiting for a correction or profit verification |
+| 3 | **US Antimony** | UAMY | Class S: The only antimony smelter in the United States | $9.24 | Small market capitalization, initial revenue stage | DoD 248 million contract + mine resumption | Active tracking, pay attention to the risk of CFO vacation |
+| 4 | **Chemring Group** | CHG.L | Grade A: NATO's only NC supplier, confirmed by Sole-Source | 497.80p | Reasonable PE, analyst target 633p (+27%) | Interim results order book hits new high + revenue +6.5% | Dip position range |
+| 5 | **Nittobo** | 3110.T | Class A: T-glass 90-100% global share | ¥22,360 | Profit +225%, target price ¥27,641 (+24%) | AI packaging demand driven + full-year guidance raised | High-quality targets, waiting for callback after split |
 
 ---
 
-## 第6-10名 持续跟踪
+## No. 6-10 Keep tracking
 
-| 排名 | 公司 | 代码 | 状态 | 最新价 | 要点 |
+| Ranking | Company | Ticker | Status | Latest Price | Highlights |
 |------|------|------|------|--------|------|
-| 6 | Kanto Denka | 4047.T | S级但+111%已过热 | ¥3,560 | 瓶颈最强但估值已充分反映，等回调 |
-| 7 | AXT Inc | AXTI | A级但内部人减持 | $104.00 | Q1毛利率飙升，但内部人卖$2010万是警示 |
-| 8 | FormFactor | FORM | B级，估值严重偏高 | $125.44 | EPS超预期27%但GF Value仅$50.66 |
-| 9 | Aixtron | AIXA | B级，Berenberg降级 | €59.54 | 股价远超分析师共识€35.89，过热 |
-| 10 | Soitec | SOI.PA | B级，评级中性 | €165.70 | 股价超分析师共识€117.89，等Q2财报7/29 |
+| 6 | Kanto Denka | 4047.T | S grade but +111% overheated | ¥3,560 | The strongest bottleneck but the valuation has been fully reflected, waiting for a correction |
+| 7 | AXT Inc | AXTI | A-rated but insiders underweight | $104.00 | Q1 gross margin surges, but $20.1m insider selling is a warning |
+| 8 | FormFactor | FORM | Grade B, seriously overvalued | $125.44 | EPS exceeded expectations by 27% but GF Value was only $50.66 |
+| 9 | Aixtron | AIXA | B grade, downgraded by Berenberg | €59.54 | Share price well above analyst consensus of €35.89, overheated |
+| 10 | Soitec | SOI.PA | Grade B, neutral rating | €165.70 | Share price exceeded analyst consensus of €117.89, waiting for Q2 financial report 7/29 |
 
 ---
 
-## 本周重点关注
+## Focus on this week
 
-- Almonty桑东矿商业化产量进展
-- Kanto Denka火灾修复时间表
-- UAMY CFO休假后续+Q2产量数据
-- Centrus DOE Option 1b续约（6月30日到期，历史上6/17-6/20宣布）
+- Progress in commercial production of Almonty Sangdong Mine
+- Kanto Denka Fire Restoration Timetable
+- UAMY CFO vacation follow-up + Q2 production data
+- Centrus DOE Option 1b renewal (expired on June 30, historically announced on 6/17-6/20)
 
 ---
 
-*数据来源：Yahoo Finance、SEC 10-Q、MarketBeat、TrendForce、Simply Wall St*
+*Data sources: Yahoo Finance, SEC 10-Q, MarketBeat, TrendForce, Simply Wall St*

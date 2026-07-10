@@ -1,334 +1,334 @@
-# 华工科技（000988.SZ）投资研究报告
+# China Technology (000988.SZ) Investment Study
 
-> **研究日期**：2026年6月23日
-> **股价**：CNY 163.66 | **市值**：CNY 1,630亿
-> **52周区间**：CNY 44.00 - 181.57 | **1年涨幅**：+269%
-
----
-
-## AI研究偏见自觉
-
-**信息丰富度评级：B+级（信息适中偏充裕）**
-
-华工科技上市20余年，但在AI算力/光模块概念爆发前（2024年以前），券商覆盖和市场关注度有限。2024年起因800G/1.6T光模块需求爆发成为热门标的，覆盖迅速增加但时间较短。公司三大业务板块（联接/感知/智能制造）中，光电器件板块信息最充裕，激光和感知板块相对透明度低。
-
-**B+级的AI研究陷阱**：市场对华工科技的认知高度集中在"AI光模块"叙事上，忽视了激光和感知板块（合计占收入53%）增速远低于光模块的事实。AI可能过度强化热门叙事，低估传统业务的拖累效应。
-
-**偏见自查**：
-- 1年涨幅269%后的"确定性感"更多来自股价momentum而非生意本质
-- PE 111倍（FY2025基准）意味着市场已极度乐观——还有多少上行空间？
-- AI光模块叙事可能掩盖了一个事实：华工科技在光模块市场仅排全球第5，份额6-8%
+> ** Date of study**: 23 June 2026
+> ** share price**: CNY 163.66 ** Market value**: CNY 163 billion
+> ** 52 weeks**: CNY 44.00 - 181.57 ** 1 year increase**: +269%
 
 ---
 
-## 关键数据交叉验证记录
+# AI studies prejudices
 
-| 验证项 | 来源1 | 来源2 | 偏差 | 结果 |
+** Information abundance rating: B+ (information is moderate and abundant)**
+
+China Engineering has been on the market for more than 20 years, but before the ACI computing/light module concept (pre-2024), bond-collage coverage and market interest were limited. The demand for 800G/16.6 T-light modules in 2024 became a hot spot, with rapid increases in coverage but short periods of time. Of the three business plates of the company (connection/sensibility/smart manufacturing), the optical electrical plate is the most informative and the laser and the perception plate is less transparent.
+
+**B+ level AI study trap**: Market awareness of Chinese technology is highly concentrated on the "AI light module" narrative, ignoring the fact that lasers and sensor plates (totally 53% of revenue) are growing at a much lower rate than light modules. AI may over-enforce popular narratives and underestimate the drag effect of traditional business.
+
+** Prejudice self-examination**:
+- "Sexy" after a year of 269 percent increase, more from the market than from the business.
+- PE 111 times (FY 2025 benchmark) means the market is already extremely optimistic — how much more room to go?
+- The AI light module narrative may conceal the fact that Chinese technology ranks only 5th in the world market for light modules, with a 6-8% share
+
+---
+
+# Cross-checking records for key data
+
+<unk> Validation item <unk> Source 1 <unk> Source 2 <unk> deviation <unk> result <unk>
 |--------|-------|-------|------|------|
-| 市值（CNY 1,630亿） | 股价163.66×股本9.957亿=1,629.6亿 | Investing.com 1,629.6亿 | 0.00% | 通过 |
-| FY2025收入（143.55亿） | 公司年报 | 东方财富/搜狐财经 | 一致 | 通过 |
-| FY2025归母净利（14.71亿） | 公司年报 | 证券之星 | 一致 | 通过 |
-| 总股本（9.957亿） | 分红公告基数9.96亿 | Investing.com 9.957亿 | 一致 | 通过 |
+Market value (CNY 163 billion) 16,366 x stock value 995.7 million = 162.96 billion
+<unk> FY2025 (14,355 million)
+<unk> FY2025 net profit from mother's profits (1.471 billion) <unk>
+Total equity (995.7 million)
 
-> PE(FY2025)=111.33x、PB=13.94x、ROE=12.52%、股息率=0.15% 均通过 `financial_rigor.py` 精确验算。
+> PE(FY2025) = 111.33x, PB=13.94x, ROE=12.52%, dividends = 0.15% are calculated by `final_rigor.py`.
 
 ---
 
-## 一、生意本质分析
+# One, business nature analysis
 
-### 一句话定义
+# One word of definition
 
-**华工科技是一家脱胎于华中科技大学的"光+智造"平台型公司，核心价值在于光电器件（光模块）业务搭上了AI算力需求的爆发浪潮，同时拥有激光加工和传感器两个传统支撑业务。**
+** Chinese Engineering is a platform-type "Importation plus Images" company from the Chinese University of Technology. The core value is that the optical appliances (light modules) business has been associated with the wave of AI computing needs, while the two traditional support operations of laser processing and sensors are available.**
 
-### 收入结构拆解（FY2025）
+# # income structure disassemble (FY2025)
 
-| 业务板块 | 收入（亿元） | 占比 | 同比增速 | 定位 |
+The business plate, the income (millions of dollars), the income, the ratio, the speed, the speed, the positioning, the location, the ability to make the difference.
 |----------|------------|------|---------|------|
-| **联接业务**（华工正源/光电器件） | 60.97 | **42.5%** | **+53.4%** | 光模块（400G/800G/1.6T），AI算力核心受益 |
-| **感知业务**（华工高理） | 40.27 | 28.0% | +9.8% | PTC加热器/温度传感器，下游家电+新能源车 |
-| **智能制造**（华工激光） | 36.36 | 25.3% | +4.1% | 激光切割/焊接设备，下游汽车/锂电/3C |
-| 其他/抵销 | ~5.95 | 4.1% | — | — |
-| **合计** | **143.55** | **100%** | **+22.6%** | — |
+** Linking operations** (HDR/PV) <unk> 60.97 **42.5 **<unk> ** + 53.4 ** <unk> Light module (400G/800G/16 T), AI Numerical Core Benefits
+** Perception business** (HAT) <unk> 40.27 <unk> 28.0 <unk> <unk> + 9.8% <unk> PTC heater/temperature sensor, downstream home power + new energy vehicle <unk>
+**Intelligent manufacturing** (Word laser) <unk> 36.36 <unk> 25.3% <unk> + 4.1% <unk> Laser cutting/welding equipment, downstream car/lithium 3C <unk>
+<unk> Other/offset ~ 5.95 ~ 4.1% ~ <unk> <unk> ~ <unk> ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+** Total** ** 143.55** ** 100%** ** ** 22.6%** ** <unk> <unk> ** ** ** ** ** 22.6% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-**关键发现**：光模块板块贡献了42.5%收入和几乎全部增量（增长贡献率>100%），但感知+激光合计占57.5%收入且增速仅个位数。**华工科技的估值故事是光模块的故事，但收入结构讲的是一个多元化但不平衡的故事。**
+** Key findings**: The light module plate contributed 42.5 per cent of income and almost all of the increase (growth contribution > 100 per cent), but the perception + laser combined generated 57.5 per cent of income and increased only by one number.** The Chinese technology valuation story is the light module, but the income structure is a diverse but unbalanced story**
 
-### 5年盈利趋势
+# 5 years profit trend
 
-| 指标 | FY2021 | FY2022 | FY2023 | FY2024 | FY2025 |
+<unk> Indicator <unk> FY2021 <unk> FY2022 <unk> FY2023 <unk> FY2024 <unk> FY2025 <unk>
 |------|--------|--------|--------|--------|--------|
-| 总收入（亿） | ~78 | ~88 | 103.1 | 117.1 | 143.55 |
-| 收入增速 | — | ~13% | ~17% | +13.6% | +22.6% |
-| 归母净利润（亿） | ~7.0 | ~7.5 | 10.07 | 12.21 | 14.71 |
-| 净利润增速 | — | ~7% | ~34% | +21.3% | +20.5% |
-| 扣非净利润（亿） | — | — | — | 8.97 | 11.87 |
-| 扣非增速 | — | — | — | — | +32.3% |
-| EPS（元） | ~0.70 | ~0.75 | ~1.01 | ~1.23 | 1.47 |
-| 经营现金流（亿） | — | — | — | ~7.3 | 12.21 |
-| 研发费用（亿） | — | — | — | ~9.9 | 10.92 |
-| 研发占收入比 | — | — | — | ~8.5% | 7.6% |
+Total income (billions) ~78 ~ 88 ~ 103.1 <unk> 117.1 <unk> 143.55 ~
+<unk> Income growth rate<unk> ~ 13% ~ 17% <unk> + 13.6% <unk> + 22.6% <unk>
+<unk> Net profit from return to mother (millions) ~ 7.0 ~ 7.5 ~ 10.07 <unk> 12.21 <unk> 14.71 <unk>
+<unk> Net profit growth rate ~ ~ 7% ~ 34% ~ <unk> 21.3% <unk> + 20.5% ~
+<unk> Net profit (millions) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> 11.87 <unk>
+<unk> Non-accelerated <unk> <unk> <unk> <unk> <unk> + 32.3% <unk>
+<unk> EPS (M$) ~0.70 ~0.75 ~ 1.01 ~ 1.23 ~ 1.47 ~ 1.7 ~ 1.70 ~ 1.01 ~ 1.23 ~ 1.47 ~ 1.
+<unk> Operating cash flow (billions) <unk> <unk> <unk> ~ 7.3 <unk> 12.21 <unk>
+<unk> R & D costs (millions) <unk> <unk> <unk> <unk> ~ 9.9 <unk> 10.92 <unk>
+R & D as a percentage of income
 
-**核心观察**：
-- 收入从2021年的~78亿增长至2025年的143.55亿，5年CAGR约16%——扎实但不算爆发
-- 净利润5年CAGR约20%——高于收入增速，体现了产品结构优化（高毛利光模块占比提升）
-- 扣非净利11.87亿 vs 归母14.71亿——**非经常性损益2.84亿，占比19%**，政府补助和投资收益占比不低
+** Core observations**:
+- Income increased from ~78 billion in 2021 to 14,355 million in 2025 and the CAGR of 5 years to approximately 16% - solid but not explosive
+- Net profit of about 20% in 5 years - higher than income growth, reflecting product structural excellence (high Māori light module ratio)
+- Net net profit deductions of $1,187 million vs. Retroductions of 1,471 million - ** Non-recurrent gain/loss of 284 million, or 19 per cent**, and government subsidies and investment returns are not low
 
-### 商业模式画布
+# Business model canvass
 
-- **类型**：科技制造业，硬件设备+器件销售，一次性交易为主
-- **客户**：光模块→北美/国内云厂商（数据中心）；激光→汽车/锂电/3C制造商；感知→家电/汽车OEM
-- **复购性**：光模块随数据中心扩建持续采购；激光设备为大额低频采购+耗材复购；传感器随终端产品出货持续
-- **毛利率特征**：光模块毛利率在30-40%区间（行业水平），激光设备30-35%，传感器25-30%
+- **Typical**: science and technology manufacturing, hardware equipment plus equipment sales, one-off transactions
+- **Crown**: Light Module — North America/National Clouds Factory (Data Centre); Manufacturers of Laser & Lithium/Currents; Perceptions & Home/Atmospheric OEM
+- **Repurchaseability**: continuous procurement of light modules with the expansion of data centres; large low-frequency procurement of laser equipment + repurchase of consumables; continuous delivery of sensors with end products
+- **Māori **: Light module Māori rate in 30-40% (industry level), laser equipment 30-35%, sensors 25-30%
 
-### 追问：这门生意好在哪？
+# Ask: Where is the business?
 
-**如果只能用一句话描述**：华工科技是少数同时拥有"光通信芯片到模块全自研能力"和"激光核心器件自制能力"的中国企业——但这门生意目前更像是一个"AI概念的受益者"而非"AI生态的主导者"。
+** If only one sentence can describe**: Chinese technology is a minority of Chinese enterprises that also have "light communication chips to module full self-research" and "las core device self-made" -- but this business is now more like a "beneficiaries of the AI concept" than "master of the AI ecology".
 
-生意的好处：
-1. **站在AI算力风口上**——800G/1.6T光模块需求爆发，联接业务+53%
-2. **三条腿走路**——光模块+激光+感知，单一板块下行时有缓冲
-3. **校企背景=技术底蕴**——硅光芯片全自研、1.6T产品已送样北美OTT
+Benefits of business:
+** Stand on the AIS wind of computing ** — 800 G/1.6 T light demand outbreak, connecting operations + 53%
+** Three legs walking** - light module + laser + perception, with buffers when a single plate falls down
+** School background = technology bottom** — Silicon photochips all self-researched, 1.6T products are being sampled in North America
 
-生意的隐忧：
-1. **光模块全球仅第5**——中际旭创28-30%份额，华工正源仅6-8%，差距悬殊
-2. **收入结构"两热一冷"**——光模块高增长掩盖了激光/感知的平庸
-3. **PE 111倍**——按FY2025利润计，即使按2026E也有45-50倍，已极度乐观
+Business’s Axis:
+** Light module 5** — Middle Xin ' s 28-30% share, Chinese industry only 6-8%, with wide disparities
+2. ** Income structure "Dr.
+**PE 111 times** - 45-50 times even 2026E in FY 2025 profits, is extremely optimistic
 
 ---
 
-## 二、护城河评估
+# II. A waterfront assessment
 
-### 五类护城河逐项验证
+# Five-class moats, one by one
 
-| 护城河类型 | 强度 | 验证分析 |
+♪ The moat type ♪
 |-----------|------|---------|
-| **品牌/定价权** | 弱 | 光模块是标准化器件，价格竞争激烈。华工正源无品牌溢价，定价跟随行业 |
-| **转换成本** | 中等 | 数据中心光模块需要通过严格认证（6-12个月），一旦入围短期内不易被替换。但每一代新产品（800G→1.6T）都需重新认证 |
-| **网络效应** | 无 | 硬件制造无网络效应 |
-| **规模效应** | 中等 | 光模块的规模优势有限（中际旭创份额4-5倍于华工正源），激光和感知板块在细分领域有一定规模 |
-| **技术壁垒** | **中等偏强** | 硅光芯片全自研（单波200G芯片已用于1.6T模块）；3.2T CPO光引擎有前瞻布局；激光核心器件部分自制。但与Coherent/Lumentum的技术代差仍存在 |
+The light module is standardized and the price is competitive. China-China has no brand premium, and the price is the same as industry.
+<unk> ** Conversion cost** Medium <unk> Data centre light module requires rigorous certification (6-12 months) and cannot easily be replaced once it is in the short term. However, each new product (800G61.6T) needs to be recertified
+<unk> Network effects** <unk> No hardware manufacture no network effects<unk>
+<unk> **Scalation effects** <unk> Medium <unk> Light modules have limited advantages in size (4-5 times the share of mid-sized Xiaotung) and laser and sensor plates have a certain size in the area of disaggregation
+<unk> Technical barriers** <unk> Mediumly <unk> Silicon chip full self-research (single wave 200G chip already used in module 1.6T); 3.2T CPO light engine with forward-looking layout; laser core devices partially self-made. However, technical substitutes with Colherent/Lumentum still exist
 
-### 护城河趋势
+# The moat of the river
 
-**过去3年：快速变宽**——从800G到1.6T、从传统光模块到硅光/CPO，技术壁垒在加厚。进入北美OTT供应链是重要里程碑。
+** The last three years: Rapid width** - from 800G to 1.6 T, from traditional light modules to silicon/CPO, with technical barriers increasing. Access to North America's OTT supply chain is an important milestone.
 
-**未来3年：关键分歧期**
-- **变宽路径**：1.6T量产+CPO放量+更多北美客户认证→份额从6-8%提升至10-15%
-- **变窄路径**：中际旭创/新易盛以量压价+CPO颠覆传统光模块→华工正源被边缘化
+** Next 3 years: critical period of disagreement**
+- ** Widening Path**: 1.6 T Volume + CPO Release + More North American Client Certification = from 6-8% to 10-15%
+- ** Narrow path**: IM/New Leap to downgrade traditional light modules with price-pressure + CPO to undermine the marginalization of Chinese workers
 
-### 追问：10年后这条护城河还在吗？
+# Ask: 10 years later, is this moat still there?
 
-**不确定**。光模块行业技术迭代极快（每2-3年一代），今天的技术优势3年后可能毫无意义。CPO（共封装光学）如果成为主流，可能重塑整个光模块供应链格局。华工科技的硅光+CPO布局是正确方向，但能否在中际旭创面前守住并扩大份额，是最大的未知数。
+The PV industry has a very fast mix of technology (every 2-3 years), and today's technological advantage may be meaningless three years later. CPOs (combined optical) can re-create the entire supply chain of the PV. Silicon + CPO layout of Chinese technology is in the right direction, but it is the biggest unknown whether they can hold and expand their share in the face of mid-life stifling.
 
 ---
 
-## 三、逆向思考与风险清单
+# Three, reverse thinking and risk list
 
-### 失败路径全景
+# Failed path panorama
 
-| 失败路径 | 概率 | 影响程度 |
+<unk> Failed path <unk> Probability <unk> Impact level <unk>
 |----------|------|---------|
-| AI算力投资周期性放缓（类似2000年光通信泡沫） | 25-35% | 极高——PE 100x回归30x意味着-70% |
-| 中际旭创/新易盛以规模优势挤压份额 | 40-50% | 高——份额从6-8%萎缩至3-5% |
-| CPO技术颠覆传统可插拔光模块 | 15-25% | 极高——但华工已布局CPO，非零对冲 |
-| 北美客户认证不及预期（1.6T送样→量产脱节） | 20-30% | 高——光模块板块增速断崖 |
-| 激光/感知业务持续低迷拖累整体 | 40-50% | 中等——合计占收入57%但利润贡献低 |
-| 美国对华光通信技术出口管制 | 15-20% | 中高——核心芯片/设备受限 |
-| 估值回归均值（PE从100x回到30-40x） | 50-60% | 极高——即使业绩增长，股价也可能下跌 |
+<unk> Arithmetic investment cyclical slowdown (like the 2000 light telecommunications bubble) <unk> 25-35% <unk> very high — PE 100x returns 30x means -70% <unk>
+<unk> Middle-Creation/New Leaping with Size Strength 40-50% High - from 6-8% to 3-5%
+The CPO technology-subversive tradition can be inserted into the purge module 15-25% <unk> very high - but the Chinese have set up the CPO, not a zero-synchronous
+<unk> North American client certification is not as well as expected (1.6 T sample delivery is off-line) <unk> 20-30% <unk> High-light module plate acceleration off the cliff <unk>
+<unk> Continued low laser/perception operations drag the whole 40-50%
+<unk> U.S. export control of PVC 15-20%
+<unk> Valuation regression to mean value (PE returns from 100x to 30-40x) <unk> 50-60% <unk> very high - stock prices may fall even if performance increases <unk>
 
-### 历史类比
+# History analogy
 
-| 类比 | 相似点 | 结局 | 启示 |
+The synonyms, the symmetry, the symmetry, the end, the revelation, the sermon.
 |------|--------|------|------|
-| **2000年光通信泡沫（JDS Uniphase）** | 光通信需求暴增→估值疯涨 | 泡沫破裂后跌去99% | AI光模块需求真实性远强于2000年，但估值泡沫的风险依然存在 |
-| **2019-2020年5G光模块行情** | 5G建设拉动光模块需求→股价大涨 | 2021年5G建设放缓后光模块公司股价回调30-50% | 通信设备投资有周期性，AI也不例外 |
-| **中际旭创（2023-2026）** | AI光模块龙头，从200亿涨至4000亿市值 | 进行中——市值已20倍于华工科技 | 龙头效应极强，第二梯队获得的估值溢价远低于龙头 |
+** JS Uniphase** <unk> The surge in demand for light communications has been evaluated <unk> The bursting of the bubble has fallen to 99% <unk> The demand for AI light modules is much more real than in 2000, but the risk of valuing foam remains <unk>
+** 5G light module development 2019-2020** <unk> 5G construction light module demand <unk> stock price increase <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+** Middle Xinjiang (2023-2026)** ALI light module tap, rising from $20 billion to 400 billion in market value *
 
-### 追问：我最可能在哪里犯错？
+# Ask: Where am I most likely to make mistakes?
 
-1. **把"AI算力趋势"等同于"华工科技确定受益"**。AI确实需要光模块，但华工科技全球份额仅6-8%，中际旭创占30%。趋势对、标的不一定对
-2. **锚定269%的1年涨幅产生追涨冲动**。过去1年涨了269%不意味着未来1年还能涨。PE从30倍到100倍的估值扩张已经完成
-3. **忽视57%的"非AI"收入**。激光和感知板块增速仅4-10%，如果光模块增速放缓，整体利润增速可能骤降至个位数
+1. ** Replace "AI Arithmetic Trends" with "Hachtotech determines benefits". AI does need a light module, but China Technology has a global share of 6-8%, with a 30% middle Xiaoqiao.
+2. **The one-year upswing of the anchor of 269% has generated an impulse. The 269% increase in the past year does not mean that the next year will be higher.
+3. ** Ignores 57% of non-AI income**. Laser and sensor plate increases by only 4-10%. If light module increases slow, overall profit increases may drop to single digits.
 
-**聪明人为什么不买**：
-- PE 111倍（FY2025），即使用2026E也有45-50倍——比中际旭创（~35x）贵30%+
-- 光模块全球第5，份额仅中际旭创的1/4——买行业beta为什么不直接买龙头？
-- 2026Q1扣非增速仅18-23%，与100倍PE严重不匹配
-- 1年涨269%后，大部分利好已在股价中
+♪ Why don't smart people buy ♪
+- PE 111 times (FY 2025), i.e. 45-50 times more than 2026E -- 30% more than middle X (~35x) +
+- Light Module 5th Global, with a share of only one quarter of the mid-life revolution - Why not buy the front head directly from the berta?
+- 2026Q1 non-recruiting speeds of 18-23%, which is seriously incompatible with 100 times PE
+- After a 269% increase in a year, most of the profit is in the stock price.
 
 ---
 
-## 四、管理层评估
+# IV. Management assessment
 
-### 核心管理层
+# # Core management
 
-| 职务 | 姓名 | 背景 |
+Position Name Background
 |------|------|------|
-| 董事长兼总经理 | 马新强 | 1965年生，全国人大代表（三届），华中科技大学激光国家工程研究中心副主任。从校办企业时代即开始经营华工科技 |
+<unk> Chairman and Director General <unk> Ma <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-### 股权结构
+# Equity structure
 
-- **实际控制人**：武汉市国资委（通过华中科技大学资产经营公司等平台间接控制）
-- **校企改革**：2021年完成校企分离，华中科技大学不再直接控股，转由武汉国资委管理
-- 管理层个人持股比例较低（校企/国企背景）
+- **Practice Controler**: Wuhan City State Finance Committee (indirect control via platforms such as China CSTU Asset Management Corporation)
+- ** School reform**: Separation of the school establishment was completed in 2021, and the Chinese University of Technology no longer holds direct shares and is transferred to the management of the Wuhan National Council
+- Low individual management shareholding (school/state business background)
 
-### 关键决策评估
+# # Evaluation of key decisions
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2010s | 布局光模块业务（华工正源） | 赶上AI光模块爆发，成为公司最大增长引擎 | A |
-| 2024-2025 | 硅光芯片全自研投入 | 单波200G硅光芯片已用于1.6T模块，技术方向正确 | A |
-| 2025-2026 | 布局3.2T CPO光引擎 | 前瞻布局，但量产尚早 | B+（待验证） |
-| 持续 | 研发高投入（7.6%占收入比） | 研发费10.92亿，在中游制造企业中比例较高 | A- |
-| 持续 | 激光/感知业务维持 | 增速低迷（4-10%），未见显著战略调整 | C+（缺乏活力） |
+<unk> 2010s <unk> layout of the light module operations (HCN) <unk> catch the AI light module burst and become the company's biggest growth engine <unk> A<unk>
+<unk> 2024-2025 <unk> Silicon photochip fully self-reflectioned <unk> single wave 200G silicon chip used in 1.6T module, technology correct
+<unk> 2025-2026 <unk> layout 3.2T CPO light engine <unk> forward-looking layout but production is still early <unk> B+ (to be verified) <unk>
+<unk> High R & D input (7.6% of income) <unk> R & D fees 1,092 million, which is a high proportion of manufacturing enterprises in the middle and middle sectors <unk> A-<unk>
+<unk> Sustained laser/perception operations maintained <unk> Low growth rate (4-10%), no significant strategic adjustment C+ (incidental) <unk>
 
-### 追问：如果CEO退休，公司还能保持竞争力吗？
+# Ask: If CEO retires, can the company remain competitive?
 
-**中短期能**。华工科技的竞争力更多来自技术平台和客户关系而非个人。马新强运营公司20余年，已建立了完善的产学研体系。但长期看，校企/国企背景可能在市场化竞争中（特别是与中际旭创等民企的竞争）形成机制劣势。
+China Technology and Technology are more competitive than individuals in technology platforms and customer relationships. For over 20 years, the company has developed a well-developed system of research and development in production. But in the long run, the school/state business background may create a institutional disadvantage in market-based competition, especially among private companies such as middle-class inventions.
 
 ---
 
-## 五、行业与文明趋势
+# V. Trends in industry and civilization
 
-### 范式转移判断
+# The paradigm shift judgement
 
-AI算力需求驱动的数据中心扩建是一次**文明级基础设施升级**，类似于2000年代互联网对通信基础设施的需求。光模块是这一升级的关键环节——每个GPU集群都需要大量高速光互连。
+The expansion of the data centre driven by the arithmetic needs of AI is a **civilizational infrastructure upgrade**, similar to the Internet demand for communications infrastructure in the 2000s. The light module is a key element of this upgrade – each GPU cluster requires a large amount of high-speed light interconnection.
 
-### TAM增长曲线
+# Tam growth curves
 
-| 市场 | 2024年规模 | 2030年预测 | CAGR |
+Market 2024, forecast 2030, CAGR
 |------|-----------|-----------|------|
-| 全球数据中心光模块 | ~140亿美元 | ~400-500亿美元 | ~20-25% |
-| 全球AI算力基础设施 | ~2,000亿美元 | ~8,000-10,000亿美元 | ~25-30% |
-| 中国激光加工设备 | ~900亿元 | ~1,500亿元 | ~10% |
-| 全球传感器 | ~2,000亿美元 | ~3,000亿美元 | ~7% |
+~$14 billion ~ $40-50 billion ~ 20-25 per cent ~ 20-25 per cent ~
+<unk> Global Arithmetic Infrastructure ~ $200 billion ~ $800-$10,000 billion ~ 25-30% ~
+<unk> China laser processing equipment ~ 90 billion yuan ~ 150 billion yuan ~ 10% ~ 10% ~
+<unk> Global sensors ~ $200 billion ~ $300 billion ~ 7% ~
 
-**华工科技面对的核心TAM**：全球光模块市场20-25% CAGR是极高增速，但华工科技仅占6-8%份额，增长空间取决于能否抢占更多份额。
+** The core TAM**: The global market for light modules is 20-25% CAGR is very high, but it only accounts for 6-8%, and the room for growth depends on the ability to capture a larger share.
 
-### 追问：20年后这家公司是"标准石油"还是"3Com"？
+# Ask: 20 years later is this company "Standard Oil" or "3Com"?
 
-**更可能是"中国的Lumentum"**——一家在光电器件领域有技术积累、占据第二梯队位置的专业化公司。不会成为行业霸主（中际旭创更接近那个角色），也不太可能消失（三条业务线提供了生存韧性）。
+** More likely to be "China Lumentum"** - a specialized company with a technological accumulation in the field of optical appliances, which occupies a second-tier position. It is not a big deal (the role is closer to the role of Mid-Sud) or likely to disappear (three lines of business provide survival.
 
-关键风险是"3Com式衰败"——如果CPO技术让传统可插拔光模块过时，而华工科技的CPO转型不够快，可能沦为技术换代的牺牲品。
+The key risk is "3Com-type decay" - if CPO technology makes traditional puncture modules obsolete, and the CPO of Chinese technology is not fast enough to become a victim of technological change.
 
 ---
 
-## 六、估值与安全边际
+# VI. Valuation and security margin
 
-### 当前市场定价
+# Current market pricing
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|------|------|
-| PE（FY2025） | **111.33x** | 基于归母14.71亿 |
-| PE（TTM） | **~96x** | 含2026Q1增量 |
-| PE（2026E） | **~45-50x** | 基于券商预测归母~23-25亿 |
-| PB | **13.94x** | 远超行业中位数 |
+<unk> PE(FY2025) <unk> 111.33x** <unk> based on parentage of 1,471 million <unk>
+<unk> PE(TTM)<unk> <unk> 96x**<unk> containing 2026Q1 increment<unk>
+<unk> PE(2026E)<unk> 45-50x**<unk> Based on the forecast return of coupons ~23-25 billion
+<unk> PB<unk> ** 13.94x**<unk> Far from the median industry <unk>
 | PS | **11.35x** | — |
-| ROE | 12.52% | 合理但不算出色 |
-| FCF Yield | **0.43%** | 极低 |
-| 股息率 | **0.15%** | 几乎可忽略 |
+♪ ROPE 12,52% ♪
+FCF Yield<unk> 0.43%**
+<unk> Escillation rate <unk> 0.15%** <unk> almost negligible <unk>
 
-> 所有指标经 `financial_rigor.py` 精确验算。
+> All indicators are accurately measured by `final_rigor.py ' .
 
-### PE历史区间
+# PE History Zone
 
-| 年份 | 平均PE | 最高PE | 最低PE |
+Year Average PE <unk> Highest PE <unk> Lowest PE <unk>
 |------|--------|--------|--------|
 | 2022 | 24.28 | 32.16 | **18.75** |
 | 2023 | 31.17 | 46.09 | 19.62 |
 | 2024 | 31.21 | 38.86 | 24.12 |
 | 2025 | 41.65 | 66.15 | 31.83 |
-| 2026（至今） | 63.08 | **92.47** | 46.33 |
+<unk> 2026 (to date)<unk> 63.08 <unk> 92.47** <unk> 46.33 <unk>
 
-当前PE处于近5年**100%分位**（历史最高区间）。2022年底PE低点为18.75倍——如果回到那个水平，股价将跌至约27元（-83%）。
+The current PE is at a level of almost five years **100% ** (the highest historical zone). By the end of 2022, the PE low was 18.75 times — if returned to that level, the share price would fall to about $27 (83%).
 
-### 三情景估值
+# Three scenarios valuation
 
-> 基于2026年预估EPS=2.30（券商预测归母~23亿/9.96亿股），投射3年至2029年。经工具精确验算。
+> Impacts from 3 to 2029 are based on a 2026 estimate of EPS = 2.30 (prospector forecasted parent – 2.3 billion/996 million shares).
 
-| 情景 | 年增速 | 目标PE | 2029年EPS | 目标股价 | 较现价涨跌 |
+♪ The world's greatest challenge ♪
 |------|--------|--------|-----------|---------|-----------|
-| **乐观**（AI持续爆发+份额提升+1.6T/CPO放量） | 40% | 45x | CNY 6.31 | **CNY 284** | +74% |
-| **中性**（AI增速放缓+份额稳定+激光感知温和增长） | 20% | 30x | CNY 3.97 | **CNY 119** | -27% |
-| **悲观**（AI投资周期下行+份额萎缩+估值回归） | 5% | 18x | CNY 2.66 | **CNY 48** | -71% |
+** EXPOINT ** (AI continuing outbreak + share increase + 1.6 T/CPO release) <unk> 40% <unk> 45x <unk> CNY 6.31 ** CNY 284** <unk> 74% <unk>
+** Neutral** (AI growth rate slowing + share stabilization + laser perception temperature and growth) <unk> 20% <unk> 30x CNY 3.97 ** CNY 119** <unk> - 27% <unk>
+** Pessimism** (downwards of the AI investment cycle + share contraction + valuation regression) <unk> 5% <unk> 18x CNY 2.66 ** CNY 48** <unk> -71% <unk>
 
-**关键洞察**：
-- 即使乐观情景（40%年增长+45x PE），3年上行仅74%（年化20%）——对一个PE 100+的股票来说，赔率偏低
-- 中性情景直接亏27%——市场需要"一切顺利"才能打平
-- 悲观情景-71%——如果AI投资周期放缓，杀估值+杀业绩双重打击
+** Key insight**:
+- Even in the optimistic scenario (40% annual growth + 45x PE), only 74% up to three years (20% annual) - for a PE 100+ stock, the odds are low
+- The neutral scenario is 27% off the grid. The market needs "all good" to level.
+- Pessimism - 71% - if the AI investment cycle slows down, the valuation + the performance is hit by both
 
-### 与同行估值对比
+# Compared to peer valuation
 
-| 公司 | PE（TTM） | PS | 光模块市占 | 1年涨幅 |
+<unk> PE(TTM)<unk> PS <unk> Light module market <unk> 1 year increase
 |------|----------|-----|-----------|--------|
-| **华工科技** | **~96x** | **11.4x** | **6-8%** | **+269%** |
-| 中际旭创 | ~35x | ~8x | 28-30% | +180% |
-| 新易盛 | ~30x | ~7x | 15-18% | +150% |
-| 光迅科技 | ~45x | ~5x | 5-8% | +120% |
+**Technology and technology** ** ~ 96 x ** ** 11.4 x ** 6-8 ** ** ** ** + 269 ** ** ** ** ** ** **
+~35x<unk> 8x<unk> 28-30%<unk> +180%<unk>
+~30x<unk> 7x<unk> 15-18%<unk> +150%<unk>
+~45x<unk> 5x<unk> 5-8%<unk> +120%<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> 5<unk> 5<unk> <unk> 5<unk> 8%<unk> <unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 8%<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 8%<unk> 4%<unk> 4%<unk> 4%<unk> 4%<unk> 4<unk> 4%<unk> 4%<unk> 4%<unk> 4%<unk> 4<unk> 4%<unk> 4<unk> 4%<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4%<unk> 4<unk> 4%<unk> 4%<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4%<unk> 4%<unk> <unk> <unk> 4%<unk> 4<unk> <unk> 4<unk> <unk> 4<unk> <unk> 4%<unk> <unk> 4<unk> <unk> <unk> <unk> 4<unk> <unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4%<unk> 4%<unk> 4%<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4%<unk> 4%<unk> 4%<unk> 4<unk> 4<unk> 4%3<unk> 4%4%3<unk> 4%3<unk> 4%4%4%3<unk> 4<unk> 4%3<unk> 4%4%3<unk> 4%4%3<unk> 4%3%3%3%3%3%3%3%3%3%3%3%3%3%3%3%3%3%2<unk> 2<unk> 2%2%2<unk> 2<unk> 2<unk> 2<unk>
 
-**华工科技的PE几乎是龙头中际旭创的3倍，但份额仅其1/4**。这一估值溢价极不合理——除非市场认为华工科技的份额会在未来3年追上中际旭创，否则当前价格透支了过多预期。
+** The PE of Chinese technology is almost three times the number of mid-life hits, but its share is only one quarter. This valuation premium is highly unreasonable – and the current price overhang is too much unless the market thinks that Chinese technology will catch up with the mid-level busts in the next three years.
 
-### 追问：如果股市明天关闭5年，你愿意以这个价格持有吗？
+# Ask: If the stock market closes for five years tomorrow, will you hold it at this price?
 
-**不愿意。**
+** No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no.
 
-163.66元对应PE 111倍（FY2025）或~50倍（2026E）。5年后（2031年），即使华工科技净利润增长到40-50亿（3年CAGR 30%+），PE回归到合理的25-30倍，股价也仅在100-150元——与当前163元相比几乎无上行空间甚至下行。
+Five years later (2031), even China's net profits in technology rose to $4 billion to $5 billion (30 per cent in CAGR + in 3 years), the PE returned to a reasonable 25-30 times, and the share price was only $100-150 — almost no space or even down line compared to the current $163.
 
-**只有在净利润持续5年40%+增长且PE维持在40倍以上时，当前价格才能获得合理回报**——这需要光模块业务出现超预期的市占率提升，且AI算力投资不出现任何周期性放缓。这个概率不超过20-25%。
+** Only if net profits last five years 40% + growth and the PE is more than 40 times more than, can the current price be given a reasonable return** - this requires a higher than anticipated market share for the module operation and no cyclical slowdown in AI computing investments. This probability does not exceed 20-25%.
 
 ---
 
-## 七、综合决策备忘录
+# VII. Memorandums for integrated decision-making
 
-### 维度汇总
+# # dimension summary
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| 生意质量 | 中等偏上——光模块搭上AI风口是真实的增长引擎，但激光/感知板块平庸。ROE仅12.5%，非经常性损益占比高 | 70% |
-| 护城河 | 中等——硅光自研+客户认证有一定壁垒，但全球份额仅6-8%，与龙头差距悬殊 | 60% |
-| 管理层 | 中等——马新强经营20余年稳健，研发投入高，但校企/国企背景在市场化竞争中可能是劣势 | 65% |
-| 最大风险 | 估值极端高位（PE 100x, 近5年100%分位）+ AI投资周期性风险 + 光模块份额竞争 | 85%（风险确定性高） |
-| 文明趋势 | 强烈顺风——AI算力对光互连的需求是文明级趋势 | 85% |
-| 估值 | **严重偏高**——PE 100+x对一个全球份额仅6-8%的第二梯队光模块企业完全不合理。中性情景3年亏27% | 80% |
+<unk> Business quality <unk> Medium bias -- light module on board the AI wind vent is a real growth engine, but laser/sensor plate is mediocre. ROE only 12.5%, non-recurrent gain/loss is high 70% <unk>
+The moats, the middle-silicon light self-research + client certification have some barriers, but the global share is only 6-8%, which is a wide gap between the taps and the poles.
+<unk> Management medium-sized — Ma Xinjun has been running for more than 20 years and has high R & D investment, but the school/state business background may be a disadvantage in market-based competition <unk> 65%
+<unk> Maximum risk Valuation extreme high (PE 100x, 100% split for nearly five years) + AI investment cycle risk + light module share competition <unk> 85% (high risk certainty) <unk>
+The civilizational trend, the strong smoothness of the wind-- the need for light interconnection in the arithmetic of AI is a civilizational trend, and the need for light interconnections is for the cynicism of the society, and the power of the system is to be used to create a culture of the world.
+<unk> Valuation ** Severely over-** — PE 100+x is totally unreasonable for a second-stage light module with a global share of only 6-8%.
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **回避。当前价格不具备投资价值。** PE 100x、PB 14x、股息率0.15%——这是一个极度拥挤的交易。如果看好AI光模块，中际旭创（PE 35x、份额30%）的性价比远优于华工科技。如果非要买华工科技，等待回调至CNY 70-80（2026E PE ~30-35x）以下 |
-| **持仓者** | **强烈建议减仓至5%以下甚至清仓**。1年涨269%后获利了结是理性选择。当前估值需要"一切完美"才能维持——任何低于预期的季度业绩或AI投资放缓的信号都可能导致30%+回调 |
-| **卖出信号** | （1）2026Q2-Q3光模块出货量环比增速放缓；（2）北美云厂商资本开支指引下调；（3）中际旭创/新易盛大幅降价挤压份额；（4）PE回到60x以上时如无新催化剂支撑 |
-| **加仓信号** | （1）股价回调至CNY 70-80（2026E PE 30-35x）；（2）1.6T光模块获得北美OTT正式大批量订单；（3）全球光模块市占率从6-8%提升至12%+；（4）CPO产品开始贡献收入 |
+** Empty warehouse ** avoided. Current prices are not worth investment.** PE 100x, PB 14x, dividends 0.15% - a highly crowded trade. If you look at the AI light module, the value of the middle-class Xinjiang (PE 35x, 30%) is much better than Chinese technology. If you do not want to buy Chinese technology, you wait to go back to CNY 70-80 (2026E ~ 30-35x)
+<unk> ** Warehousing ** ** strongly recommends a reduction to less than 5% and even a cleanup**. The profit after a one-year increase of 269% is a rational choice. The current valuation requires "all perfect" to maintain -- any sign of less than expected quarterly performance or slower AI investment could lead to 30% + rewinding
+<unk> ** Signals from sale** <unk> (1) 2026Q2-Q3 light module output speeds up; (2) North American cloud company capital expenditure guidelines down; (3) share of price squeezes for intermediate creation/newly easy to hit; (4) PE back to 60 x if no new catalyst is available
+<unk> **Step signal** <unk> (1) Re-equity adjustment to CNY 70-80 (2026E PE 30-35x); (2) 1.6 T light module obtains a formal OTT bulk order from North America; (3) global light module market ratio is raised from 6-8% to 12% +; (4) CPO products start contributing revenue <unk>
 
-### 四维度模拟点评
+# 4D simulation of the evaluation
 
-> **生意质量视角**：华工科技是一家典型的"时代给了机会"的公司。2023年之前它是一家平淡无奇的中游制造企业，收入增速10-15%，ROE 12%——放在任何时代都不值100倍PE。AI算力浪潮把它的光模块业务推上了风口，但它在这个风口上只排第5。好的投资应该是在确定的赛道上买确定的龙头——而不是在确定的赛道上买第5名然后给出比龙头更高的估值。
+> ** Quality of Business **: China Technology was a typical "era gives opportunity" company. By 2023 it was a flat middle-swap manufacturing firm with a 10-15% increase in revenue, ROE 12% -- in an era that was no 100 times greater than PE. AI's computing wave pushed its module business to the wind, but it was only number 5. Good investment should be to buy a identified dragon on a given track -- not to buy a fifth on a given track and then to make a higher valuation than a dragon.
 
-> **逆向思维视角**：让我最不安的是这个数字：269%。一年涨269%后还有多少人在认真做基本面分析？又有多少人只是在追momentum？2000年光通信泡沫时JDS Uniphase的PE超过1000倍，所有人都说"这次不一样"。AI的需求当然比2000年的互联网更真实——但估值永远有均值回归的地心引力。
+> ** Inverse mind**: The most disturbing thing for me is this number: 269. How many more people do basic analysis after a year of 269% rise? How many are just chasing the modemum?
 
-> **管理层视角**：马新强是一位稳健的技术型管理者，但他不是一个能把第5做成第1的"杀手型"CEO。华工科技的文化是学院派的、稳重的、注重技术积累的——这些在正常时期是优点，但在光模块这样竞争白热化的市场上，可能不够"凶狠"。看看中际旭创的扩产速度和客户攻占力度，再看看华工科技——差距不仅在规模，更在组织的进攻性。
+> ** Management perspective**: Ma Xinqiang is a sound technology manager, but he is not a CEO who can make number 5 the "killer" CEO. The Chinese technology culture is a college-based, stable, technology-based accumulation culture -- these are advantages in normal times, but it may not be "hard" enough to compete in a white-hot market like a light module. Look at the growth rate of mid-to-class Xinjiang and the competition of customers, and look at the Chinese technology — the gap is not only large, but even more aggressive.
 
-> **文明趋势视角**：AI对光互连的需求是真实的、持久的、文明级的。每一个GPU集群都需要光模块，每一个数据中心都需要高速互连。但文明趋势正确不等于个股投资正确。20年后全球光模块市场可能有5000亿美元——问题是华工科技能分到多少？6-8%的份额可能变成3%也可能变成15%。在这个不确定性下，给100倍PE是在赌一个极度乐观的结果。
+> ** Civilization trend perspective**: AI ' s demand for light interconnection is real, durable, and civilized. Each GPU cluster needs a light module, and every data centre needs a high-speed interconnection. But civilizational trends are not the right investment.
 
 ---
 
-## 附录：AI分析置信度 vs 投资确定性
+# Appendix: AI Analytic Confidence vs Investment Determination
 
-| 结论 | AI分析置信度 | 投资确定性 | 说明 |
+<unk> Conclusion <unk> AI analysis of confidence <unk> Investment certainty <unk>
 |------|------------|-----------|------|
-| AI光模块需求持续高增长 | **高（90%）** | **高（85%）** | 北美云厂商资本开支数据确凿，AI训练/推理对光互连需求明确 |
-| 华工科技光模块份额6-8% | **高（85%）** | **中高（75%）** | LightCounting等第三方数据验证 |
-| 1.6T光模块将成为2027年主流 | **中高（75%）** | **中（65%）** | 技术路线基本确定，但量产时间和价格曲线有不确定性 |
-| 当前PE 100+严重偏高 | **高（90%）** | **高（85%）** | 与龙头中际旭创35x对比、与自身历史对比，均显示极端高估 |
-| 华工科技能提升份额至10%+ | **低（35%）** | **低（30%）** | 竞争格局固化，中际旭创/新易盛的规模优势持续扩大 |
-| 激光/感知业务能加速增长 | **低（30%）** | **低（25%）** | 过去3年增速仅个位数，无明显催化剂 |
+<unk> The continued high growth in demand for AI light modules <unk> High (90%) <unk> High (85%) ** High data on capital expenditure by North American cloud producers, clear demand for light interconnections in AI training/ration
+<unk> Share of Chinese technology luminous modules 6-8% <unk> High (85%) ** Medium & High (75%) ** Third-party data validation for the LightCounting etc. <unk>
+<unk> 1.6 T light module will be the mainstream in 2027 <unk> medium (75%) <unk> medium (65%) ** technical route is largely determined, but there are uncertainties in the time of production and price curves <unk>
+<unk> Current PE 100+ severely high <unk> high (90%)<unk> high (85%)** contrast with the middle of the dragon 35x and with its own history shows extreme overestimation
+<unk> China Industry and Technology can increase its share to 10% <unk> Low (35%) ** Low (30%) ** Solid competition patterns, and growing advantages of medium-sized Xinjiang/New Leaps scale <unk>
+<unk> Laser/sensor operations can accelerate growth <unk> low (30%) <unk> low (25%) <unk> growth at only one number and no visible catalyst in the last three years
 
-**核心区分**：
-- AI光模块趋势的确定性高，但**华工科技在这个趋势中的受益程度远不如龙头**
-- **当前估值的最大问题不是"公司不好"，而是"价格太贵"**。以100倍PE买一个6-8%份额的第二梯队玩家，风险回报比严重失衡
-- 如果回调至CNY 70-80（PE 30-35x），华工科技会成为一个不错的AI光模块投资标的——但在163元，它不是
+** Core distinction**:
+- The trend in AI light modules is highly certain, but ** Chinese technology has benefited much less than the leader in this trend**
+- ** The biggest problem with the current valuation is not "ungood company," but "price too expensive". Buy a second-tier player with a 100-fold PE share, with a risk return that is more than unbalanced.
+- If we go back to CNY 70-80 (PE 30-35x), SIT will be a good investment in AI light modules -- but $163, it's not.
 
 ---
 
-*报告生成时间：2026年6月23日 | 数据截止：2026年6月23日*
-*货币单位：人民币（CNY）*
-*数据来源：华工科技年报/中报/季报、Investing.com、亿牛网、东方财富、LightCounting、C114通信网、证券之星、同花顺、券商研报（华泰/国海/东吴等）*
+*Report generated: 23 June 2026
+* Monetary unit: renminbi (CNY)*
+*Source: China Tech Annual/Intelligence.com, EBN, Eastern Wealth, LightCounting, C114 Communication Network, Securities Star, HS, Bonders, Stock Exchange (Warthai/Kinghai/Tung Wu, etc.)*

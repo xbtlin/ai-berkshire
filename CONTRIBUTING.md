@@ -1,48 +1,48 @@
-# 贡献指南 / Contributing Guide
+# Contributing Guide / Contributing Guide
 
-中文 | [English](#english)
+Chinese | [English](#english)
 
-感谢你对 AI Berkshire 的关注。这个项目起点是我个人的投资研究流程，开源出来是希望方法论对更多人有用。为了让维护可持续，请在提交 issue 或 PR 前花两分钟读完这份指南。
+Thank you for your interest in AI Berkshire. The starting point of this project is my personal investment research process. I open source it in the hope that the methodology will be useful to more people. To make maintenance sustainable, please take two minutes to read this guide before submitting an issue or PR.
 
-## 欢迎的贡献
+## Contributions welcome
 
-- **Skill 的 bug 修复**：提示词错漏、流程跑不通、输出格式问题等。请在 PR 描述里说明：哪个 skill、什么场景下出的问题、修复后你实际跑过的结果。
-- **Skill 的改进**：让分析更严谨、数据交叉验证更可靠、输出更可用的改动。改动需要附带说明"为什么这样更好"，最好有改动前后的输出对比。
-- **文档改进**：README、docs/ 中的错别字、失效链接、表述不清的修正；英文版与中文版内容不同步的修正。
-- **兼容性适配**：Claude Code / Codex 新版本带来的适配问题。
-- **用本框架产出的研究报告**：欢迎提交到 `reports/community/` 子目录（按 `reports/community/[公司名]/` 组织）。要求：① 报告确实是用本仓库的 skill 跑出来的，并在文首注明所用 skill 和模型；② 附上免责声明（不构成投资建议）；③ 一个 PR 一份报告。质量明显不达标（如未用框架、纯手写观点、缺关键财务交叉验证）的会被关闭。
-- **新 Skill 提议**：请先开 issue 讨论，说明这个 skill 解决什么研究场景、和现有 18 个 skill 的边界是什么。直接提交大型新功能 PR 而没有事先讨论的，可能会被关闭——不是否定你的工作，而是方向没对齐时双方都浪费时间。
+- **Skill bug fixes**: incorrect prompt words, process failure, output format issues, etc. Please explain in the PR description: which skill, in which scenario the problem occurred, and the results you actually ran after the fix.
+- **Skill Improvements**: Changes to make analysis more rigorous, data cross-validation more reliable, and output more usable. Changes need to be accompanied by a description of "why this is better", and it is best to compare the output before and after the change.
+- **Documentation improvements**: Corrections to typos, broken links, and unclear expressions in README and docs/; corrections to the out-of-sync content between the English and Chinese versions.
+- **Compatibility Adaptation**: Adaptation issues caused by the new version of Claude Code / Codex.
+- **Research reports produced using this framework**: Welcome to submit to the `reports/community/` subdirectory (organized by `reports/community/[company name]/`). Requirements: ① The report is indeed run using the skills of this warehouse, and the skill and model used are indicated at the beginning of the article; ② Attached is a disclaimer (does not constitute investment advice); ③ One PR per report. Those whose quality is obviously not up to standard (such as no framework, purely handwritten opinions, and lack of key financial cross-validation) will be closed.
+- **New Skill Proposal**: Please open an issue for discussion first, explaining what research scenarios this skill solves and what the boundaries are with the existing 18 skills. Submitting a large new feature PR without discussing it first will likely get you shut down - not a denial of your work, but a waste of time for both parties when the directions are misaligned.
 
-## 不接受的贡献
+## Contributions not accepted
 
-- **修改 `reports/` 下已有的报告（`community/` 除外）、`实盘记录/`、`筛选公司/`**：这些是我个人的研究产出和交易记录，不接受外部修改。你自己的研究请提交到 `reports/community/`（见上），或在自己的仓库发布后在 issue 里分享链接。
-- **投资观点之争**：报告里的结论（比如某公司值不值得买）是方法论运行的结果，不接受以"我不同意这个结论"为由的修改。对方法论本身的质疑欢迎开 issue 讨论。
-- **纯样板文件类 PR**：由自动化工具批量生成、与项目实际需求无关的配置文件或治理文件。
-- **大规模格式化/重命名**：不改变实质内容、只产生大量 diff 噪音的改动。
+- **Modify existing reports under `reports/` (except `community/`), `real record/`, `screening company/`**: These are my personal research output and transaction records and do not accept external modifications. Please submit your own research to `reports/community/` (see above), or share the link in an issue after publishing it in your own repository.
+- **Investment Viewpoint Debate**: The conclusion in the report (such as whether a company is worth buying) is the result of the methodology, and modifications based on "I disagree with this conclusion" are not accepted. If you have any questions about the methodology itself, you are welcome to open an issue for discussion.
+- **Pure boilerplate PR**: Configuration files or governance files that are generated in batches by automated tools and have nothing to do with the actual needs of the project.
+- **Mass Format/Rename**: Changes that don't change the actual content and just create a lot of diff noise.
 
-## 提交 PR 的基本要求
+## Basic requirements for submitting a PR
 
-1. 一个 PR 只做一件事，保持 diff 聚焦。
-2. 描述里写清楚：改了什么、为什么改、怎么验证的。涉及 skill 的改动，请附上你在 Claude Code 或 Codex 里实际运行的效果。
-3. 中文或英文均可。
-4. 改动 README.md 中影响内容的部分时，请同步更新 README_EN.md（反之亦然）；纯排版修正可以只改一边。
+1. A PR only does one thing, keep the diff focused.
+2. Write clearly in the description: what was changed, why it was changed, and how it was verified. For changes involving skill, please attach the actual effect of running it in Claude Code or Codex.
+3. Both Chinese and English are accepted.
+4. When changing parts of README.md that affect the content, please update README_EN.md simultaneously (and vice versa); pure typography corrections can only change one side.
 
-## 提交 Issue
+## Submit Issue
 
-请从三个 Issue 模板中选择对应类型提交（已关闭空白 issue）。**核心要求：任何观点都要附具体、可复现的例子**，否则无法核实，会被要求补充或直接关闭。
+Please select the corresponding type from the three Issue templates to submit (the blank issue has been closed). **Core requirement: Any opinion must be accompanied by specific and reproducible examples**, otherwise it cannot be verified and will be asked to supplement or be closed directly.
 
-- **🐞 Skill 报错**：注明调用的 skill（确保标题与正文一致）、完整命令、报错信息、**使用的模型和客户端版本**。
-- **📉 数据错误**（股价/市值/财务数据）：给出具体标的、错误数值、**你认为的正确值和来源链接**，并说明是否涉及复权/送转/增发/汇率等口径。
-- **💡 改进建议**：给出**具体出处**（哪份报告、哪张表）和**期望的改进对比**（当前长这样 → 期望长这样），不接受只有抽象描述的建议。
-- **研究请求**（"帮我分析某某公司"）：本项目不接单。这套框架的意义就是让你自己跑出专业级研究——照着 README 的快速开始，用你自己的 AI 工具运行即可。
+- **🐞 Skill error report**: Indicate the skill called (make sure the title is consistent with the text), complete command, error message, **model used and client version**.
+- **📉 Data error** (stock price/market value/financial data): Give the specific target, error value, **what you think is the correct value and source link**, and explain whether it involves restoration of rights/transfer/additional issuance/exchange rate, etc.
+- **💡 Improvement suggestions**: Give **specific sources** (which report, which table) and **expected improvement comparison** (currently looks like this → expected to look like this). Suggestions with only abstract descriptions are not accepted.
+- **Research Request** ("Help me analyze such-and-such company"): No orders will be accepted for this project. The meaning of this framework is to allow you to run professional-level research yourself - just follow the quick start of the README and run it with your own AI tool.
 
-## 安全问题
+## Security issues
 
-发现 API 密钥泄露、提示注入等安全漏洞，请**不要**开公开 issue，按 [SECURITY.md](SECURITY.md) 的方式私下报告。
+If you find security vulnerabilities such as API key leaks and prompt injection, please **do not** open a public issue and report privately via [SECURITY.md](SECURITY.md).
 
-## 免责声明
+## Disclaimer
 
-本项目的一切内容仅为研究方法论的展示，不构成投资建议。贡献者提交的内容同样默认遵循这一原则，请勿在贡献中加入荐股、收益承诺类内容。
+All contents of this project are only a demonstration of research methodology and do not constitute investment advice. The content submitted by contributors also follows this principle by default. Please do not include stock recommendations or income commitments in your contributions.
 
 ---
 
@@ -63,7 +63,7 @@ Thanks for your interest in AI Berkshire. This project grew out of my personal i
 
 ## Out of scope
 
-- **Edits to existing reports under `reports/` (except `community/`), `实盘记录/` (live trading records), or `筛选公司/`** — these are my personal research output and trading records. Submit your own research to `reports/community/` (see above), or publish it in your own repo and share the link in an issue.
+- **Edits to existing reports under `reports/` (except `community/`), ` real trading records/` (live trading records), or `Screening companies/`** — these are my personal research output and trading records. Submit your own research to `reports/community/` (see above), or publish it in your own repo and share the link in an issue.
 - **Disagreements over investment conclusions** — report conclusions are outputs of the methodology; "I disagree with this call" is not a basis for a PR. Challenges to the methodology itself are welcome as issues.
 - **Boilerplate-only PRs** generated by automated tools without a concrete need in this project.
 - **Mass reformatting/renaming** that produces large diffs without substantive change.

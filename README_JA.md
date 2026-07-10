@@ -1,283 +1,281 @@
-日本語 | [English](README_EN.md) | [中文](README.md)
-
-> 日本語版はコミュニティによりメンテナンスされています。内容が最新でない場合は、中文版・英語版を正としてください。
+English
 
 [![GitHub Trending](https://trendshift.io/api/badge/repositories/63696)](https://trendshift.io/repositories/63696)
 
-# AI Berkshire — AI時代のバリュー投資リサーチフレームワーク
+# AI Berkshire — Value Investing Research Framework for the AI Era
 
-> 「価格はあなたが払うもの、価値はあなたが得るもの」 — ウォーレン・バフェット
+> "Price is what you pay, value is what you get." — Warren Buffett
 >
-> AIでリサーチの深度と効率を再定義する。
+> Redefining the depth and efficiency of investment research with AI.
 
-**AI Berkshire** は、Claude CodeおよびCodexに対応した投資リサーチSkillのコレクションです。バフェット・マンガー・段永平（ダン・ヨンピン）・李録（リ・ルー）という4人のバリュー投資の巨人の方法論を体系化し、AIエージェントによりプロフェッショナル水準のリサーチを提供します。
+**AI Berkshire** is a collection of investment research skills compatible with both Claude Code and Codex. It systematizes the methodologies of four value investing masters — Buffett, Munger, Duan Yongping, and Li Lu — and delivers professional-grade research through AI Agents.
 
-1人 + Claude Code / Codex = 投資リサーチチーム丸ごと。
+One person + Claude Code / Codex = an entire investment research team.
 
-[実績](#実績) · [なぜAIに直接聞いてはいけないのか](#なぜaiに直接聞いてはいけないのか) · [Skill一覧](#skill一覧19スキル) · [クイックスタート](#クイックスタート) · [レポート](#実際のリサーチレポート) · [設計思想](#設計思想)
+[Track Record](#real-track-record) · [Why Not Just Ask AI?](#why-cant-you-just-ask-ai-directly) · [Skills](#skills-overview-19-skills) · [Quick Start](#quick-start) · [Reports](#live-research-reports) · [Design Philosophy](#design-philosophy)
 
 ---
 
-## 実績
+## Real Track Record
 
-> これは紙の上のシミュレーションではありません。このフレームワークは実際の資金による、監査済みポートフォリオで裏付けられています。
+> Not paper trading. This framework is backed by a real-money, audited portfolio.
 
-### 2024年通年リターン：+69.29%
+### 2024 Full-Year Return: +69.29%
 
 <img src="assets/2024-returns.jpg" width="300" />
 
-### 2025年通年リターン：+66.38%
+### 2025 Full-Year Return: +66.38%
 
 <img src="assets/2025-returns.jpg" width="300" />
 
-### ベンチマーク比較
+### Benchmark Comparison
 
-| ベンチマーク | 2024年通年 | 2025年通年 |
-|------------|-----------|----------|
-| **本フレームワーク（実績）** | **+69.29%** | **+66.38%** |
-| ハンセン指数 | +17.67% | +27.77% |
+| Benchmark | 2024 Full Year | 2025 Full Year |
+|-----------|---------------|----------|
+| **This Framework (Live)** | **+69.29%** | **+66.38%** |
+| Hang Seng Index | +17.67% | +27.77% |
 | S&P 500 | +23.31% | +16.39% |
 | CSI 300 | +14.68% | +17.66% |
-| NASDAQ総合 | +28.64% | +20.36% |
+| NASDAQ Composite | +28.64% | +20.36% |
 
-**2024年アルファ**：S&P 500を **46ポイント** 上回り、ハンセン指数を **52ポイント** 上回る
+**2024 Alpha**: Beat the S&P 500 by **46 percentage points**, beat the Hang Seng by **52 percentage points**
 
-**2025年アルファ**：S&P 500を **50ポイント** 上回り、ハンセン指数を **39ポイント** 上回る
+**2025 Alpha**: Beat the S&P 500 by **50 percentage points**, beat the Hang Seng by **39 percentage points**
 
-**2年間の累計実績リターンは146万元超**、2年連続で主要グローバル指数を大幅にアウトパフォーム。
+**Cumulative live returns exceed ¥1.46 million over two years**, significantly outperforming all major global indices for two consecutive years.
 
-> *免責事項：過去の実績は将来の結果を保証するものではありません。スクリーンショットは実際の証券口座（富途証券）のものです。*
+> *Disclaimer: Past performance does not guarantee future results. Screenshots are from a real brokerage account (Futu Securities).*
 
 ---
 
-## なぜAIに直接聞いてはいけないのか？
+## Why Can't You Just Ask AI Directly?
 
-「拼多多（ピンドゥオドゥオ）は買いですか？」とClaudeに聞くことはできます。すると「一方では...他方では...」とバランスの取れた分析が返ってきて、「投資にはリスクが伴います、ご自身の判断でご検討ください」と締め括られます。
+You can, of course, ask Claude: "Should I buy Pinduoduo?" You'll get a balanced "on one hand... on the other hand..." analysis that ends with "investing involves risks, please make your own judgment."
 
-**そういう分析は正しそうに見えても、実際の意思決定には使えません。**
+**That kind of analysis looks right but can't drive actual decisions.**
 
-AI Berkshireが解決するのは「AIは分析できるか？」という問題ではなく、**分析の質と意思決定の規律**という問題です。何が違うのかを説明します。
+AI Berkshire doesn't solve the "can AI analyze?" problem — it solves the **analysis quality and decision discipline** problem. Here's what's different:
 
-### 1. 判定を強制する——曖昧さを許さない
+### 1. Forces a Verdict — No Fence-Sitting
 
-AIに直接聞けば、どちらにも都合の良い「分析」が返ってきます。AI Berkshireは具体的なアウトプットを強制します：**合格 / 不合格 / グレーゾーン**、具体的な価格帯と段階的な推奨付きで。
+Ask AI directly, and you get a both-sides-pleasing "analysis." AI Berkshire forces concrete output: **Pass / Fail / Gray Zone**, with specific price ranges and tiered recommendations.
 
-> AIへの素朴な質問への回答：*「拼多多には成長ポテンシャルがありますが、競争圧力も存在します。投資家は...」*
+> Vanilla AI response: *"Pinduoduo has growth potential but also faces competitive pressure. Investors should weigh..."*
 >
-> AI Berkshireの出力：
+> AI Berkshire output:
 
-> | 戦略 | 推奨 | 価格帯 |
-> |------|------|--------|
-> | アグレッシブ | 現在値で20%ポジション構築 | $95–105 |
-> | モデレート | バイバック方針明確化を待つ | $85–95 |
-> | コンサバティブ | 10年間の確実性基準を満たさない——パス | — |
+> | Strategy | Recommendation | Price Range |
+> |----------|---------------|-------------|
+> | Aggressive | Build 20% position at current price | $95–105 |
+> | Moderate | Wait for buyback policy clarity | $85–95 |
+> | Conservative | Doesn't meet 10-year certainty bar — pass | — |
 >
-> **ミラーテスト**：5文で説明できなければ = 買わない。例外なし。
+> **Mirror Test**: If you can't articulate it in 5 sentences = don't buy. No exceptions.
 
-### 2. 4人の巨人による弁証法——単一視点ではなく
+### 2. Four-Master Dialectic, Not a Single Perspective
 
-「バフェットの手法でこれを分析して」ではありません。4つの視点は**本物の緊張と矛盾**を生み出します——
+It's not just "analyze this using Buffett's method." The four perspectives create **real tension and contradictions** —
 
-拼多多を例に：
-- **段永平**（ビジネスモデル）：優れたビジネス、C2Mモデルは複製困難 → 3.7/5
-- **バフェット**（財務・バリュエーション）：現金除きPERはわずか6.3倍、キャッシュマシン → 4.4/5
-- **マンガー**（逆説的思考）：見かけよりモートは浅い——抖音（ドウイン）は3年でGMV4兆元に到達 → 3.5/5
-- **李録**（長期確実性）：マネジメント文化に懸念、10年後は不確実 → 2.0/5
+Take Pinduoduo as an example:
+- **Duan Yongping** (business model): Great business, C2M model hard to replicate → 3.7/5
+- **Buffett** (financial valuation): Ex-cash P/E just 6.3x, a cash machine → 4.4/5
+- **Munger** (inversion): Moat shallower than it appears — Douyin hit ¥4 trillion GMV in 3 years → 3.5/5
+- **Li Lu** (long-term certainty): Management culture concerns, uncertain in 10 years → 2.0/5
 
-**バフェットは「本当に安い」と言い、李録は「不確実なら買うな」と言う**——この衝突こそが投資判断の実像です。単一プロンプトではこのような多視点の弁証法は生まれず、だからこそブラインドスポットを防ぎます。
+**Buffett says "genuinely cheap," Li Lu says "if uncertain, don't buy"** — this conflict is the real state of investment decisions. A single prompt can't produce this multi-perspective dialectic, yet it's precisely what prevents blind spots.
 
-### 3. 構造化されたバイアス対抗メカニズム
+### 3. Structured Anti-Bias Mechanisms
 
-AIの最大の危険は誤った答えを出すことではなく、**正しそうに見えるが精査に耐えない**答えを出すことです。AI Berkshireはプロセスに複数の「欺瞞防止」レイヤーを組み込んでいます：
+AI's greatest danger isn't giving wrong answers — it's giving answers that **look right but don't withstand scrutiny**. AI Berkshire embeds multiple "anti-deception" layers into the process:
 
-| メカニズム | 解決する問題 | 例 |
-|-----------|------------|-----|
-| **情報リッチネス評価（A/B/C）** | 「データが多い＝確実性が高い」という幻想を防ぐ | 泡泡玛特（ポップマート）はB評価：データ限定、推定値は信頼度付きでフラグ |
-| **マンガー式逆説テスト** | 失敗シナリオを強制的に考えさせる | 「拼多多はどうすれば潰れるか？」→ 確率付き5シナリオをリスト |
-| **即死チェックリスト** | 8つのレッドライン、1つでも該当すれば拒否 | マネジメントの誠実性に問題 → バリュエーションに関わらず即座に却下 |
-| **逆張りチェック** | 群衆と同じ考え方を避ける | 「なぜ賢い人がこれをショートしているのか？」→ 見落とされたリスクを浮かび上がらせる |
-| **知的誠実さ** | 「分からない」を優先 | データのギャップは「グレーゾーン」と明記、推測で確実性を埋めない |
+| Mechanism | Problem Solved | Example |
+|-----------|---------------|---------|
+| **Information Richness Rating (A/B/C)** | Prevents "more data = more certainty" illusion | Pop Mart rated B: limited data, estimated metrics flagged with confidence levels |
+| **Munger-Style Inversion Test** | Forces thinking about failure scenarios | "How could Pinduoduo die?" → Lists 5 scenarios with probabilities |
+| **Quick-Kill Checklist** | 8 red lines, any one is a veto | Management integrity issues → immediate rejection regardless of valuation |
+| **Contrarian Check** | Avoids thinking like the crowd | "Why are smart people shorting this?" → Surfaces overlooked risks |
+| **Intellectual Honesty** | Prefer "I don't know" | Marks data gaps as "gray zone" rather than filling certainty with speculation |
 
-### 4. 財務データの精度
+### 4. Financial Data Precision
 
-LLMは暗算が信頼できません。PERを1桁間違えたり、香港ドルと人民元を混同したりすることで、壊滅的な投資判断につながる可能性があります。
+LLMs can't do mental math reliably. Getting a P/E wrong by one decimal point or confusing HKD with CNY can lead to catastrophic investment decisions.
 
-**実例**：テンセント分析時、異なるソースが「香港ドル10億単位」と「人民元10億単位」で時価総額を報告していた。AI Berkshireのアプローチ：
+**Real case**: When analyzing Tencent, different sources reported market cap in "HKD billions" and "CNY billions." AI Berkshire's approach:
 
 ```bash
-# 時価総額の手動検証：株価 × 発行済株式数、報告データと照合
+# Market cap manual verification: Price × Shares Outstanding, cross-checked with reported data
 python3 tools/financial_rigor.py verify-market-cap \
   --price 510 --shares 9.11e9 --reported 4.65e12 --currency HKD
-# ✅ 検証済み — 乖離はわずか0.08%
+# ✅ Verified — deviation only 0.08%
 ```
 
-すべての計算はPython `decimal.Decimal`（厳密な10進算術）を使用し、`float`は使いません。重要データは最低2つの独立したソースによるクロスバリデーションが必要です。
+All calculations use Python `decimal.Decimal` (exact decimal arithmetic), not `float`. Key data requires at least 2 independent sources for cross-validation.
 
-### 5. 再現可能なリサーチプロセス
+### 5. Reproducible Research Process
 
-AIに直接聞くと、毎回フォーマット・深度・カバレッジが異なります——今日のテンセント分析にはモートスコアがあっても、明日の美団（メイトゥアン）分析では忘れられているかもしれません。
+Ask AI directly, and the format, depth, and coverage vary every time — today's Tencent analysis has a moat score, tomorrow's Meituan analysis might forget it.
 
-AI Berkshireが保証するのは：**同じインプット → 構造的に一貫した、均等な深度のアウトプット**。これにより：
-- 同一の採点基準で7社を並べて比較できる
-- 同じ会社を6か月後に再分析し、変化を直接比較できる
-- チームメンバー間でリサーチアウトプットを揃えられる
+AI Berkshire ensures: **Same input → structurally consistent, equally deep output.** This means you can:
+- Compare 7 companies side by side with identical scoring criteria
+- Re-analyze the same company 6 months later and directly compare changes
+- Align research outputs across team members
 
-> 実際のアウトプット——同一チェックリストで7社をスクリーニング：
+> Real output — 7 companies screened with the same Checklist:
 >
-> | 企業 | 判定 | 能力の輪 | 優れたビジネス | モート | マネジメント | 安全マージン | 総合 |
-> |------|:---:|:------:|:----------:|:----:|:----------:|:---------:|:---:|
-> | 貴州茅台 | ✅ 合格 | ★★★★★ | ★★★★★ | ★★★★★ | ★★★☆☆ | ★★★★☆ | 4.7 |
-> | テンセント | ✅ 合格 | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★★ | ★★★★☆ | 4.7 |
-> | NVIDIA | ✅ 条件付き | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★★ | ★★★☆☆ | 4.3 |
-> | 美団 | ✅ 条件付き | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | 4.0 |
-> | 快手 | ✅ 条件付き | ★★★☆☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★★ | 4.0 |
-> | 拼多多 | ❓ グレー | ★★★★☆ | ★★★★☆ | ★★★☆☆ | ★★★☆☆ | ★★★★★ | 3.8 |
-> | 泡泡玛特 | ❓ グレー | ★★★☆☆ | ★★★★☆ | ★★★★☆ | ★★★★★ | ★★★☆☆ | 3.7 |
+> | Company | Verdict | Circle of Competence | Good Business | Moat | Management | Margin of Safety | Overall |
+> |---------|:-------:|:-------------------:|:------------:|:----:|:----------:|:---------------:|:-------:|
+> | Kweichow Moutai | ✅ Pass | ★★★★★ | ★★★★★ | ★★★★★ | ★★★☆☆ | ★★★★☆ | 4.7 |
+> | Tencent | ✅ Pass | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★★ | ★★★★☆ | 4.7 |
+> | NVIDIA | ✅ Conditional | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★★ | ★★★☆☆ | 4.3 |
+> | Meituan | ✅ Conditional | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | 4.0 |
+> | Kuaishou | ✅ Conditional | ★★★☆☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★★ | 4.0 |
+> | Pinduoduo | ❓ Gray | ★★★★☆ | ★★★★☆ | ★★★☆☆ | ★★★☆☆ | ★★★★★ | 3.8 |
+> | Pop Mart | ❓ Gray | ★★★☆☆ | ★★★★☆ | ★★★★☆ | ★★★★★ | ★★★☆☆ | 3.7 |
 
-### 6. マルチエージェント並列処理 = リサーチ深度の掛け算
+### 6. Multi-Agent Parallelism = Multiplied Research Depth
 
-`/investment-team` は4つの独立したエージェントを**同時に**起動して1社をリサーチします。各エージェントは独自のウェブ検索を行い、データをクロスバリデーションし、独立した結論に至ります。これは1つのプロンプトを4つのセクションに分けているのではなく、4人の「アナリスト」がそれぞれ完全なリサーチを行い、チームリードが最終判断をまとめています。
+`/investment-team` launches 4 independent Agents to research a company **simultaneously**. Each Agent conducts its own web searches, cross-validates data, and reaches independent conclusions. This isn't splitting one prompt into four sections — it's 4 "analysts" each doing complete research, with a Team Lead synthesizing the final call.
 
-AIに直接聞けばコンテキストウィンドウは1つです。4つの並列エージェントは4倍の検索量、4倍の情報源、4つの独立した視点を意味します。
-
-<p align="center">
-  <img src="assets/team-core-en.svg" alt="チームリードが4エージェントを並列実行" width="720" />
-</p>
-
-### 一言で言えば
-
-> **普通のユーザーがAIに聞けば「正しそうな分析」が返ってきます。AI Berkshireなら「実際に意思決定に使えるリサーチレポート」が得られます。**
-
----
-
-## アーキテクチャ
+Ask AI directly, and you have one context window. Four parallel Agents means 4× the search volume, 4× the information sources, and 4 independent perspectives.
 
 <p align="center">
-  <img src="assets/architecture-en.svg" alt="AI Berkshire アーキテクチャ" width="760" />
+  <img src="assets/team-core-en.svg" alt="Team Lead orchestrating four master agents in parallel" width="720" />
+</p>
+
+### In One Sentence
+
+> **Regular users asking AI get "analysis that looks right." With AI Berkshire, you get "research reports you can actually make decisions from."**
+
+---
+
+## Architecture
+
+<p align="center">
+  <img src="assets/architecture-en.svg" alt="AI Berkshire Architecture" width="760" />
 </p>
 
 
-**3層設計の思想**：
-- **Skill層**：「やりたいこと」を19の明確なエントリーポイントに抽象化——深掘りリサーチ、決算分析、業界スクリーニング、ポートフォリオ管理、思考ツール。シナリオ別に選択。
-- **エージェント層**：チーム型Skill（`/investment-team`、`/earnings-team`など）はチームリードの下で4人の巨匠視点エージェントを並列実行——独立して検索・判断し、互いに反論し、最後に統合。軽量Skillはこの層を通らず、ツールを直接呼び出す。
-- **ツール層**：精密計算、リアルタイムウェブ検索、レポート監査——すべてのレポートのデータが厳密かつ検証可能であることを保証。
+**Three-Layer Design Philosophy**:
+- **Skill Layer**: Abstracts "what you want to do" into 19 clear entry points — deep research, earnings analysis, industry screening, portfolio management, and thinking tools. Pick by scenario.
+- **Agent Layer**: Team skills (e.g. `/investment-team`, `/earnings-team`) run 4 master-perspective Agents in parallel under a Team Lead — searching and judging independently, challenging each other before synthesis. Lightweight skills skip this layer and call tools directly.
+- **Tool Layer**: Exact-precision calculations, real-time web search, report auditing — ensures every report's data is rigorous and verifiable.
 
 ---
 
-## Skill一覧（19スキル）
+## Skills Overview (19 Skills)
 
-### 🔬 深掘りリサーチ
+### 🔬 Deep Research
 
-| Skill | 目的 | 使用場面 |
-|-------|------|---------|
-| [`/investment-research`](skills/investment-research.md) | 四巨人総合分析 | 上場企業の全方位リサーチ |
-| [`/investment-team`](skills/investment-team.md) | マルチエージェント並列リサーチチーム | 4エージェント並列——最速かつ最も網羅的 |
-| [`/management-deep-dive`](skills/management-deep-dive.md) | 経営陣の深掘り | 「株を買うことは人を買うこと」——経営陣が鍵となる変数のとき |
-| [`/private-company-research`](skills/private-company-research.md) | 非上場企業リサーチ | アントグループ、SpaceXのような情報の少ない非上場企業のリサーチ |
-| [`/deep-company-series`](skills/deep-company-series.md) | 8部構成の長編深掘りシリーズ | 発行品質のシリーズ、認知リセットから意思決定収束まで約12万字 |
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [`/investment-research`](skills/investment-research.md) | Four-master comprehensive analysis | Full-spectrum research on a public company |
+| [`/investment-team`](skills/investment-team.md) | Multi-Agent parallel research team | 4 Agents in parallel — fastest and most comprehensive |
+| [`/management-deep-dive`](skills/management-deep-dive.md) | Management deep dive | "Buying a stock is buying its people" — when management is the key variable |
+| [`/private-company-research`](skills/private-company-research.md) | Private company research | Research info-scarce private companies like Ant Group, SpaceX |
+| [`/deep-company-series`](skills/deep-company-series.md) | 8-part long-form deep dive series | Publication-grade series, ~120K words from cognitive reset to decision closure |
 
-### 📊 決算分析
+### 📊 Earnings Analysis
 
-| Skill | 目的 | 使用場面 |
-|-------|------|---------|
-| [`/earnings-review`](skills/earnings-review.md) | 決算の深読み（一次資料） | バフェットが有報を読むように——セルサイドレポートを読まずに生の開示書類のみを読む |
-| [`/earnings-team`](skills/earnings-team.md) | 決算チーム＋発行可能な記事 | 四巨人が並列で決算を解釈 → 編集仕上げ → 読者レビュー → 発行可能状態 |
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [`/earnings-review`](skills/earnings-review.md) | Earnings deep read (primary sources) | Read raw filings only — no sell-side reports — like Buffett reads annual reports |
+| [`/earnings-team`](skills/earnings-team.md) | Earnings team + publishable article | Four masters interpret earnings in parallel → editor polish → reader review → publish-ready |
 
-### 🏭 業界スクリーニング
+### 🏭 Industry Screening
 
-| Skill | 目的 | 使用場面 |
-|-------|------|---------|
-| [`/industry-research`](skills/industry-research.md) | 業界バリューチェーンスキャン | ある業界のバリューチェーン全体の投資機会をマッピング |
-| [`/industry-funnel`](skills/industry-funnel.md) | 業界ファネルスクリーニング | 全市場 → 粗選り≤10社 → 最終選定3社、深掘り分析付き |
-| [`/quality-screen`](skills/quality-screen.md) | クオリティスクリーン（7つの厳格指標） | 一流でない企業を素早く排除；個別銘柄 / 業界 / 指数 / テーマのバッチスクリーニングに対応 |
-| [`/bottleneck-hunter`](skills/bottleneck-hunter.md) | サプライチェーンボトルネックハンター | 大きなトレンドから物理的なサプライチェーンのボトルネックと裁定機会を探す |
-| [`/investment-checklist`](skills/investment-checklist.md) | バフェット購入前チェックリスト | 6つのゲート、10分で深掘りする価値があるかを判断 |
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [`/industry-research`](skills/industry-research.md) | Industry value chain scan | Map all investment opportunities across an industry's value chain |
+| [`/industry-funnel`](skills/industry-funnel.md) | Industry funnel screening | Full market → rough cut ≤10 → final pick 3, with deep analysis |
+| [`/quality-screen`](skills/quality-screen.md) | Quality screen (7 hard metrics) | Quickly eliminate non-first-class companies; supports single stock / industry / index / thematic batch screening |
+| [`/bottleneck-hunter`](skills/bottleneck-hunter.md) | Supply-chain bottleneck hunter | Start from a supertrend and find physical supply-chain bottlenecks and arbitrage opportunities |
+| [`/investment-checklist`](skills/investment-checklist.md) | Buffett pre-buy checklist | Six gates, 10-minute decision on whether to dig deeper |
 
-### 📈 ポートフォリオ管理
+### 📈 Portfolio Management
 
-| Skill | 目的 | 使用場面 |
-|-------|------|---------|
-| [`/portfolio-review`](skills/portfolio-review.md) | ポートフォリオレビュー＆最適化 | 「企業をリサーチする」から「ポートフォリオを管理する」へ——ポジションサイジング、集中度、リバランス |
-| [`/thesis-tracker`](skills/thesis-tracker.md) | 投資テーゼトラッカー | 購入後の規律システム：投資テーゼが否定されていないかを継続的に追跡 |
-| [`/thesis-drift`](skills/thesis-drift.md) | 投資テーゼのドリフト検出 | 2つのテーゼ／レポートを比較し、事実の変化・バリュエーションの変化・表現の変化を区別 |
-| [`/news-pulse`](skills/news-pulse.md) | 株価変動の迅速な要因分析 | 株が急騰・急落したとき——10分で「何が起きたか」を解明 |
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [`/portfolio-review`](skills/portfolio-review.md) | Portfolio review & optimization | Graduate from "researching companies" to "managing a portfolio" — sizing, concentration, rebalancing |
+| [`/thesis-tracker`](skills/thesis-tracker.md) | Investment thesis tracker | Post-buy discipline system: continuously track whether your thesis has been falsified |
+| [`/thesis-drift`](skills/thesis-drift.md) | Investment thesis drift detection | Compare two theses/reports — separate factual, valuation, and wording changes |
+| [`/news-pulse`](skills/news-pulse.md) | Price-move rapid attribution | When a stock surges or drops — figure out "what happened" in 10 minutes |
 
-### 🧠 思考ツール
+### 🧠 Thinking Tools
 
-| Skill | 目的 | 使用場面 |
-|-------|------|---------|
-| [`/dyp-ask`](skills/dyp-ask.md) | 段永平Q&A | 段永平の思考方法で任意の問いを考える——ビジネス、投資、人生 |
-| [`/financial-data`](skills/financial-data.md) | 財務データの取得とクロスバリデーション | 重要データが2つ以上の独立したソースから得られることを保証；1%超の乖離をアラート |
-| [`/wechat-article`](skills/wechat-article.md) | WeChat記事ワークフロー | 著者・編集者・読者エージェントが協力して発行可能な記事を制作 |
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [`/dyp-ask`](skills/dyp-ask.md) | Duan Yongping Q&A | Think through any question the Duan Yongping way — business, investing, life |
+| [`/financial-data`](skills/financial-data.md) | Financial data retrieval & cross-validation | Ensure key data comes from 2+ independent sources; alerts on >1% deviation |
+| [`/wechat-article`](skills/wechat-article.md) | WeChat article workflow | Author, editor, and reader Agents collaborate to produce a publishable article |
 
 ---
 
-## クイックスタート
+## Quick Start
 
-### コストとモデル選択
+### Cost & Model Selection
 
-深掘りリサーチ系のSkillは、設計上、複数回のリサーチパス、複数ソースの照合、マルチエージェント統合を実行するため、大量のトークンを消費することがあります。そのコストは、ビジネス品質・財務・業界構造・リスクをより網羅的にカバーするための一部です。
+Deep-research skills run multiple research passes, cross-source checks, and multi-agent synthesis by design, so they can consume a large number of tokens. That cost is part of getting fuller coverage across business quality, financials, industry structure, and risk.
 
-重大な投資判断においては、メンテナーの見解として、通常は最も強力なモデルが最良の分析ROIをもたらします；モデルコストの節約が重要な判断品質を犠牲にすべきではありません。軽量モデルはトリアージ、要約、低リスクな質問には有用ですが、モート・バリュエーション・マネジメント・リスクの統合は、モデルの能力により強く依存すると考えるべきです。
+For high-stakes investment decisions, the maintainer's view is that the strongest model usually offers the best analysis ROI; saving model cost should not come at the expense of important judgment quality. Lighter models can be useful for triage, summarization, or low-risk questions, but moat, valuation, management, and risk synthesis should be expected to depend more heavily on model capability.
 
-コストを抑えるには、深掘りリサーチをそのまま安くしようとする前にワークフローを調整してください：まず [`/quality-screen`](skills/quality-screen.md) で弱い企業を除外する、あるいは [`/news-pulse`](skills/news-pulse.md) で株価変動の迅速な要因分析を行う。結果が深掘りに値する場合にのみ [`/investment-research`](skills/investment-research.md) や [`/investment-team`](skills/investment-team.md) を実行してください。
+To control cost, adjust the workflow before expecting a full deep-research run to become cheap: use [`/quality-screen`](skills/quality-screen.md) first to rule out weaker companies, or [`/news-pulse`](skills/news-pulse.md) for quick price-move attribution. Run [`/investment-research`](skills/investment-research.md) or [`/investment-team`](skills/investment-team.md) only when the result is worth deeper work.
 
-### 1. AIクライアントのインストール
+### 1. Install an AI Client
 
-このリポジトリは1つの標準ワークフローを維持し、Claude Codeコマンドと Codex skillの両方を提供します。使用するクライアントをインストールしてください。
+This repository keeps one canonical workflow and provides Claude Code commands plus Codex skills. Install the client you plan to use.
 
-Claude Codeユーザーの場合：
+For Claude Code users:
 
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-CodexユーザーでmacOS / Linuxの場合：
+For Codex users on macOS / Linux:
 
 ```bash
 # macOS / Linux
 curl -fsSL https://chatgpt.com/codex/install.sh | sh
 
-# または npm を使用
+# Or use npm
 npm install -g @openai/codex
 
-# または Homebrew を使用
+# Or use Homebrew
 brew install --cask codex
 
-# インストール確認
+# Verify installation
 codex --version
 ```
 
-Windowsユーザーは公式PowerShellインストーラーを使用できます：`powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`
+Windows users can use the official PowerShell installer: `powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`.
 
-`codex --version` がバージョンを表示したら、このプロジェクトのCodex skillsのインストールに進めます。
+If `codex --version` prints a version, you can continue with this project's Codex skills installation.
 
-#### 承認プロンプトを減らす
+#### Reducing Approval Prompts
 
-これらのSkillは多数のツール呼び出しを行い、Claude Codeはデフォルトでその都度承認を求めます。この挙動はClaude Codeのクライアント側の権限システムによるもので、本プロジェクトが変更できるリポジトリのデフォルト設定ではありません。
+These skills issue many tool calls, and Claude Code asks for approval for each one by default. That behavior comes from Claude Code's client-side permission system; it is not a repository default this project can change.
 
-現在のワークフローを信頼し、信頼できる環境で実行している場合は、権限スキップモードでClaude Codeを起動できます：
+If you trust the current workflow and are running in a trusted environment, start Claude Code in skip-permissions mode:
 
 ```bash
 claude --dangerously-skip-permissions
 ```
 
-警告：このモードはClaude Codeのツール承認ガードレールを無効化します。リポジトリ・コマンド・作業ディレクトリを信頼している場合にのみ使用してください。
+Warning: this disables Claude Code's tool-approval guardrails. Use it only when you trust the repository, commands, and working directory.
 
-### 2. Skillのインストール
+### 2. Install Skills
 
-Claude CodeユーザーでmacOS / Linuxの場合：
+For Claude Code users on macOS / Linux:
 
 ```bash
-# リポジトリをクローン
+# Clone the repository
 git clone https://github.com/xbtlin/ai-berkshire.git
 
-# skillをClaude Codeグローバルコマンドディレクトリにコピー
+# Copy skills to Claude Code global commands directory
 cd ai-berkshire
 ./scripts/install-claude-commands.sh
 ```
 
-Claude CodeユーザーでWindows PowerShell / コマンドプロンプトの場合：
+For Claude Code users on Windows PowerShell / Command Prompt:
 
 ```bat
 git clone https://github.com/xbtlin/ai-berkshire.git
@@ -285,421 +283,421 @@ cd ai-berkshire
 .\scripts\install-claude-commands.bat
 ```
 
-CodexユーザーでmacOS / Linuxの場合：
+For Codex users on macOS / Linux:
 
 ```bash
-# リポジトリをクローン
+# Clone the repository
 git clone https://github.com/xbtlin/ai-berkshire.git
 
-# Codex skillsを生成して ~/.codex/skills にインストール
+# Generate and install Codex skills to ~/.codex/skills
 cd ai-berkshire
 ./scripts/install-codex-skills.sh
 
-# オプション：Codexスラッシュプロンプトを ~/.codex/prompts にインストール
-# Claude Codeのような /investment-research エントリーポイントを使いたい場合
+# Optional: install Codex slash prompts to ~/.codex/prompts
+# for a Claude Code-like /investment-research entry point
 ./scripts/install-codex-prompts.sh
 ```
 
-CodexユーザーでWindows PowerShell / コマンドプロンプトの場合：
+For Codex users on Windows PowerShell / Command Prompt:
 
 ```bat
 git clone https://github.com/xbtlin/ai-berkshire.git
 cd ai-berkshire
 .\scripts\install-codex-skills.bat
 
-REM オプション：Codexスラッシュプロンプトをインストール
+REM Optional: install Codex slash prompts
 .\scripts\install-codex-prompts.bat
 ```
 
-リポジトリは3つのエントリーポイントを維持しています：`skills/*.md` はClaude Codeコマンドのソース；`codex-skills/*/SKILL.md` は `scripts/sync-codex-skills.py` が `skills/*.md` から生成するCodex skillパッケージ；`codex-prompts/*.md` はオプションのCodexスラッシュプロンプト互換レイヤーです。
+The repository maintains three entry points: `skills/*.md` are the Claude Code command sources; `codex-skills/*/SKILL.md` are Codex skill packages generated from `skills/*.md` by `scripts/sync-codex-skills.py`; `codex-prompts/*.md` are an optional Codex slash-prompt compatibility layer.
 
-### 3. 使い方
+### 3. Use
 
-Claude Codeで直接呼び出す：
+Invoke directly in Claude Code:
 
 ```bash
-# 深掘りリサーチ
-/investment-research テンセント
-/investment-team 美団
-/management-deep-dive 王興、美団
+# Deep Research
+/investment-research Tencent
+/investment-team Meituan
+/management-deep-dive Wang Xing, Meituan
 /private-company-research SpaceX
-/deep-company-series 拼多多
+/deep-company-series Pinduoduo
 
-# 決算分析
-/earnings-review テンセント 2025Q4
-/earnings-team PDD 2025年次
+# Earnings Analysis
+/earnings-review Tencent 2025Q4
+/earnings-team PDD 2025 Annual
 
-# 業界スクリーニング
-/industry-research 原子力発電
-/industry-funnel AI算力
-/quality-screen ハンセン指数構成銘柄
-/bottleneck-hunter AIインフラ
-/investment-checklist 茅台、NVIDIA、Apple
+# Industry Screening
+/industry-research Nuclear Power
+/industry-funnel AI Compute
+/quality-screen Hang Seng Index Constituents
+/bottleneck-hunter AI Infrastructure
+/investment-checklist Moutai, NVIDIA, Apple
 
-# ポートフォリオ管理
-/portfolio-review テンセント30%、美団20%、茅台20%、現金30%
-/thesis-tracker 拼多多
-/thesis-drift 拼多多 reports/拼多多-thesis-2025Q4.md reports/拼多多-thesis-2026Q1.md
-/news-pulse テンセント
+# Portfolio Management
+/portfolio-review Tencent 30%, Meituan 20%, Moutai 20%, Cash 30%
+/thesis-tracker Pinduoduo
+/thesis-drift Pinduoduo reports/PDD-thesis-2025Q4.md reports/PDD-thesis-2026Q1.md
+/news-pulse Tencent
 
-# 思考ツール
-/dyp-ask 拼多多の本当のモートはどこにあるか？
-/wechat-article 美団
+# Thinking Tools
+/dyp-ask Where is Pinduoduo's real moat?
+/wechat-article Meituan
 ```
 
-Codexにインストール後、Codexを再起動してskill名で参照します：
+After installing for Codex, restart Codex and refer to skills by name, for example:
 
 ```text
-investment-researchを使ってテンセントをリサーチして
-earnings-reviewを使ってPDD2025年次の決算を分析して
-industry-funnelを使ってAI算力をスクリーニングして
-bottleneck-hunterを使ってAIインフラのボトルネックをスキャンして
-thesis-driftを使って拼多多の2つの投資テーゼを比較して
-wechat-articleを使って美団の投資記事を書いて
+Use investment-research to research Tencent
+Use earnings-review to analyze PDD 2025 annual results
+Use industry-funnel to screen AI compute
+Use bottleneck-hunter to scan AI infrastructure bottlenecks
+Use thesis-drift to compare two Pinduoduo theses
+Use wechat-article to write a Meituan investment article
 ```
 
-Codexスラッシュプロンプトをインストールした場合、Codexを再起動して`/`メニューから検索します。Codexの公式カスタムプロンプトエントリーポイントは通常 `prompts:<name>` として表示されます：
+If you install Codex slash prompts, restart Codex and search for them in the `/` menu. Codex's official custom prompt entry point usually appears as `prompts:<name>`, for example:
 
 ```text
-/prompts:investment-research テンセント
+/prompts:investment-research Tencent
 ```
 
 ---
 
-## Skill詳細説明
+## Detailed Skill Descriptions
 
-### 1. `/investment-research` — 四巨人総合分析
+### 1. `/investment-research` — Four-Master Comprehensive Analysis
 
-最も徹底した単一企業の深掘りリサーチフレームワーク。7つのモジュールを順次実行：
+The most thorough single-company deep research framework. Executes seven modules in sequence:
 
 ```
-データ収集 → ビジネスの本質（段永平） → モート（バフェット） → 逆説的思考（マンガー）
-    → マネジメント評価（段永平＋バフェット） → 文明的トレンド（李録）
-    → バリュエーション＆安全マージン
+Data Collection → Business Essence (Duan Yongping) → Moat (Buffett) → Inversion (Munger)
+    → Management Assessment (Duan Yongping + Buffett) → Civilizational Trends (Li Lu)
+    → Valuation & Margin of Safety
 ```
 
-**主な特徴**：
-- AIリサーチバイアス認識メカニズム（A/B/C情報リッチネス評価）
-- 重要データのマルチソースクロスバリデーション（時価総額手動計算、2つ以上の独立したソース）
-- 各巨人の「フォローアップ質問」を随所に織り込み
-- 三シナリオバリュエーション（強気/基本/弱気）＋逆DCF
+**Key Features**:
+- AI research bias awareness mechanism (A/B/C information richness rating)
+- Multi-source cross-validation on key data (manual market cap calculation, 2+ independent sources)
+- Each master's "follow-up questions" woven throughout
+- Three-scenario valuation (bull/base/bear) + reverse DCF
 
-**アウトプット抜粋**：
+**Sample Output Excerpt**:
 
-> #### 総合判断メモ
+> #### Comprehensive Decision Memo
 >
-> | 次元 | 結論 | 確信度 |
-> |------|------|--------|
-> | ビジネス品質（段永平） | 優秀：プラットフォームビジネス、双方向ネットワーク効果、限界コストほぼゼロ | ★★★★★ |
-> | モート（バフェット） | ワイドかつ拡大中：ネットワーク効果＋スイッチングコスト＋規模の経済、三重層 | ★★★★☆ |
-> | マネジメント（段永平＋バフェット） | 強力：創業者主導、優れた資本配分規律 | ★★★★☆ |
-> | 最大リスク（マンガー） | 規制政策の不確実性；新事業の損失が全体利益を圧迫 | ★★★☆☆ |
-> | 文明的トレンド（李録） | デジタル消費トレンドと整合しているが、「文明的パラダイムシフト」ではない | ★★★★☆ |
-> | バリュエーション（バフェット＋段永平） | 現在PER18倍、歴史的中央値をわずかに下回る、控えめな安全マージン | ★★★★☆ |
+> | Dimension | Conclusion | Confidence |
+> |-----------|-----------|------------|
+> | Business Quality (Duan Yongping) | Excellent: platform business, two-sided network effects, near-zero marginal cost | ★★★★★ |
+> | Moat (Buffett) | Wide and widening: network effects + switching costs + scale economies, triple-layered | ★★★★☆ |
+> | Management (Duan Yongping + Buffett) | Strong: founder-led, excellent capital allocation discipline | ★★★★☆ |
+> | Top Risk (Munger) | Regulatory policy uncertainty; new business losses dragging overall profits | ★★★☆☆ |
+> | Civilizational Trend (Li Lu) | Aligned with digital consumption trends, but not a "civilization-level paradigm shift" | ★★★★☆ |
+> | Valuation (Buffett + Duan Yongping) | Current P/E 18x, slightly below historical median, modest margin of safety | ★★★★☆ |
 >
-> **段永平**：「このビジネスの本質は消費者と商人をつなぐこと——効率向上から利益を得る。優れたビジネスの特徴：ユーザーが増えれば商人が増え、商人が増えればユーザーが増える。フライホイールが回り始めれば、止めるのは非常に難しい。」
+> **Duan Yongping**: "The essence of this business is connecting consumers and merchants — profiting from efficiency gains. The hallmark of a great business: more users bring more merchants, more merchants bring more users. Once the flywheel spins, it's very hard to stop."
 >
-> **マンガー**：「逆転、常に逆転せよ——この会社が明日消えたら、ユーザーと商人はどうするか？答えが『すぐに代替品を見つける』なら、モートは十分深くない。答えが『生活が非常に不便になる』なら、それは注目に値する。」
+> **Munger**: "Invert, always invert — if this company vanished tomorrow, what would users and merchants do? If the answer is 'quickly find a substitute,' the moat isn't deep enough. If the answer is 'life would become very inconvenient,' that's worth paying attention to."
 
 ---
 
-### 2. `/investment-team` — マルチエージェントリサーチチーム
+### 2. `/investment-team` — Multi-Agent Research Team
 
-4つのAIエージェントを並列起動し、本物の投資リサーチチームをシミュレートします。各エージェントは独立して検索し、独立して分析し、独立した評価を提供。チームリードが最終判断をまとめます。
+Launches 4 AI Agents in parallel, simulating a real investment research team. Each Agent searches independently, analyzes independently, and delivers independent ratings. The Team Lead synthesizes the final judgment.
 
-**アウトプット抜粋**：
+**Sample Output Excerpt**:
 
-> #### 一行結論
-> 美団は中国ローカル生活サービスの圧倒的リーダーで、多層的なネットワーク効果モートを持つ。現在のバリュエーションは歴史的低水準——長期的な価値は大きい。押し目での積み増しを推奨。
+> #### One-Line Conclusion
+> Meituan is the undisputed leader in China's local life services, with multi-layered network effect moats. Current valuation sits at historically low levels — significant long-term value. Recommend accumulating on dips.
 >
-> #### 四次元スコアカード
+> #### Four-Dimension Scorecard
 >
-> | 次元 | フレームワーク | スコア | コア判断 |
-> |------|-------------|-------|---------|
-> | ビジネスモデル＆モート | 段永平 | ★★★★☆ | 強力な双方向ネットワーク効果；フードデリバリー＋店舗内でフライホイール形成 |
-> | 財務＆バリュエーション | バフェット | ★★★★☆ | コア事業の利益率が着実に改善；バリュエーションは歴史的低水準 |
-> | 業界＆競合 | マンガー | ★★★☆☆ | 抖音が店舗内ビジネスに侵入；競合環境が悪化する可能性 |
-> | リスク＆マネジメント | 李録 | ★★★★☆ | 王興は卓越した戦略的ビジョンを持つが、新事業のキャッシュバーンは要監視 |
+> | Dimension | Framework | Score | Core Judgment |
+> |-----------|-----------|-------|---------------|
+> | Business Model & Moat | Duan Yongping | ★★★★☆ | Strong two-sided network effects; food delivery + in-store form a flywheel |
+> | Financials & Valuation | Buffett | ★★★★☆ | Core business margins improving steadily; valuation at historical lows |
+> | Industry & Competition | Munger | ★★★☆☆ | Douyin invading in-store business; competitive landscape may deteriorate |
+> | Risk & Management | Li Lu | ★★★★☆ | Wang Xing has exceptional strategic vision, but new business cash burn needs monitoring |
 >
-> **総合スコア：3.8 / 5**
+> **Composite Score: 3.8 / 5**
 >
-> #### 投資推奨
+> #### Investment Recommendation
 >
-> | 戦略 | 推奨 | 価格帯（香港ドル） |
-> |------|------|-----------------|
-> | アグレッシブ | 現在値で30%ポジション構築 | 120–140 |
-> | モデレート | 100–110への押し目を待つ | 100–120 |
-> | コンサバティブ | 四半期決算で利益率トレンド確認を待つ | <100 |
+> | Strategy | Recommendation | Price Range (HKD) |
+> |----------|---------------|-------------------|
+> | Aggressive | Build 30% position at current price | 120–140 |
+> | Moderate | Wait for pullback to 100–110 to enter | 100–120 |
+> | Conservative | Wait for quarterly results to confirm margin trend | <100 |
 
 ---
 
-### 3. `/investment-checklist` — バフェット購入前チェックリスト
+### 3. `/investment-checklist` — Buffett Pre-Buy Checklist
 
-6つのゲートによる迅速なスクリーニング——10分で深掘りする価値があるかを判断：
-
-```
-ゲート1：能力の輪（理解できるか？）
-    ↓ 通過
-ゲート2：優れたビジネス（経済性はどうか？）
-    ↓ 通過
-ゲート3：モート（競争優位はどのくらい深いか？）
-    ↓ 通過
-ゲート4：マネジメント（信頼できるか？）
-    ↓ 通過
-ゲート5：安全マージン（価格は十分に安いか？）
-    ↓ 通過
-ゲート6：意思決定の規律（合理的か、FOMOか？）
-    ↓ 通過
-   ✅ ミラーテスト
-```
-
-**複数企業の比較に対応**——複数の対象を一度にスクリーニング：
+Six gates for rapid screening — decide in 10 minutes whether a company is worth deeper research:
 
 ```
-/investment-checklist テンセント、アリババ、美団、拼多多
+Gate 1: Circle of Competence (Can I understand it?)
+    ↓ Pass
+Gate 2: Good Business (What are the economics?)
+    ↓ Pass
+Gate 3: Moat (How deep is the competitive advantage?)
+    ↓ Pass
+Gate 4: Management (Can they be trusted?)
+    ↓ Pass
+Gate 5: Margin of Safety (Is the price cheap enough?)
+    ↓ Pass
+Gate 6: Decision Discipline (Rational or FOMO?)
+    ↓ Pass
+   ✅ Mirror Test
 ```
 
-**アウトプット抜粋**：
+**Supports multi-company comparison** — screen multiple targets at once:
 
-> #### ミラーテスト
+```
+/investment-checklist Tencent, Alibaba, Meituan, Pinduoduo
+```
+
+**Sample Output Excerpt**:
+
+> #### Mirror Test
 >
-> 「私がテンセントをHK$380で買うのは：
-> 1. このビジネスの本質は**ソーシャルネットワーク＋デジタルコンテンツプラットフォーム**——私は理解している；
-> 2. そのモートは**12億ユーザーのソーシャルグラフ**であり、拡大中；
-> 3. マネジメント——**馬化騰（ポニー・マー）は控えめで実用的、優れた資本配分者**——信頼できる；
-> 4. 現在の価格は**本質的価値の約80%**を表し、意味のある安全マージンを提供；
-> 5. たとえ間違っていても、下落リスクは管理可能、なぜなら**純現金は2,000億元超、ゲームのキャッシュフローは盤石だから**。」
+> "I am buying Tencent at HK$380 because:
+> 1. The essence of this business is a **social network + digital content platform** — I understand it;
+> 2. Its moat is **1.2 billion users' social graph**, and it's widening;
+> 3. Management — **Pony Ma is understated, pragmatic, and an excellent capital allocator** — trustworthy;
+> 4. The current price represents **~80% of intrinsic value**, providing a meaningful margin of safety;
+> 5. Even if I'm wrong, downside is manageable because **net cash exceeds ¥200 billion and gaming cash flow is rock-solid**."
 >
-> ✅ ミラーテスト通過
+> ✅ Passed the Mirror Test
 >
-> **5文で説明できなければ = 買わない。例外なし。**
+> **If you can't articulate it in 5 sentences = don't buy. No exceptions.**
 
 ---
 
-### 4. `/industry-research` — 業界バリューチェーンスキャン
+### 4. `/industry-research` — Industry Value Chain Scan
 
-投資テーマから出発して、業界バリューチェーンの全体研究を完成させます：
+Start from an investment theme and complete a full industry value chain study:
 
 ```
-投資ロジックチェーン → バリューチェーンマップ → グローバル上場企業スキャン
-    → セグメントリーダーへの四巨人分析 → ポートフォリオ配分推奨
+Investment Logic Chain → Value Chain Map → Global Listed Company Scan
+    → Four-Master Analysis on Segment Leaders → Portfolio Allocation Recommendation
 ```
 
-**アウトプット抜粋**：
+**Sample Output Excerpt**:
 
-> #### 投資ロジックチェーン：原子力発電
+> #### Investment Logic Chain: Nuclear Power
 >
-> 根本的トレンド：AIデータセンターの電力需要爆発＋カーボンニュートラル目標
-> → 推進力：安定したクリーンなベースロード電力への急増する需要
-> → 生み出すもの：原子炉再稼働 / 新設 / SMRへの確実な需要
-> → 恩恵：ウラン採掘 → 燃料加工 → 設備製造 → 運営会社
+> Underlying Trend: AI data center power demand explosion + carbon neutrality goals
+> → Drives: surging demand for stable, clean baseload power
+> → Creates: deterministic demand for nuclear restarts / new builds / SMRs
+> → Benefits: uranium mining → fuel fabrication → equipment manufacturing → operators
 >
-> #### 推奨ポートフォリオ
+> #### Recommended Portfolio
 >
-> | ティア | 比重 | 対象 | セグメント | コアロジック |
-> |-------|------|------|---------|-----------|
-> | コア | 50% | CGN / カメコ | 運営＋ウラン | 最高確実性 |
-> | サテライト | 30% | 中核電力 / 東方電気 | 運営＋設備 | 国産代替受益者 |
-> | オプション | 15% | NuScale / Nano Nuclear | SMR | 高リスク・高凸性 |
-> | ETF | 代替 | URA / URNM | 全チェーン | パッシブアプローチ |
+> | Tier | Weight | Target | Segment | Core Logic |
+> |------|--------|--------|---------|------------|
+> | Core | 50% | CGN / Cameco | Operations + Uranium | Highest certainty |
+> | Satellite | 30% | CNNP / Dongfang Electric | Operations + Equipment | Domestic substitution beneficiary |
+> | Option | 15% | NuScale / Nano Nuclear | SMR | High risk, high convexity |
+> | ETF | Alternative | URA / URNM | Full chain | Passive approach |
 
 ---
 
-### 5. `/industry-funnel` — 業界ファネルスクリーニング
+### 5. `/industry-funnel` — Industry Funnel Screening
 
-業界/テーマから出発して段階的に絞り込む：**全市場 → ≤10社 → 3社の深掘り**：
+Start from an industry/theme and progressively narrow: **Full market → ≤10 → 3 deep dives**:
 
 ```
-全市場スキャン（アクティビティ＋リターン＋時価総額上位30の和集合 → 30–60社）
-    ↓ 5つのバリュー投資ハードフィルター
-粗選り ≤ 10社
-    ↓ 詳細分析（各300–500字）
-詳細分析 ≤ 10社
-    ↓ 最終選定（スコア上位3社ではなく、ポートフォリオ補完性による）
-3社への四巨人深掘り分析（各800–1200字）
+Full Market Scan (activity + returns + top-30 market cap union → 30-60 companies)
+    ↓ 5 value investing hard filters
+Rough Cut ≤ 10
+    ↓ Detailed analysis (300-500 words each)
+Detailed Analysis ≤ 10
+    ↓ Final selection (by portfolio complementarity, NOT by top-3 score)
+Four-Master Deep Analysis on 3 companies (800-1200 words each)
     ↓
-推奨ポートフォリオ（コア / サテライト / オプション）＋アクションシグナル
+Recommended Portfolio (Core / Satellite / Option) + Action Signals
 ```
 
-**主な特徴**：
-- すべての層で明確な採用/除外基準——除外された銘柄には理由が記載（ブラックボックスにしない）
-- 最終3社はランキングスコアではなく**ポートフォリオ補完性**（高確実性＋適度な上昇余地＋高凸性）で選定
-- 「将来のIPO候補」リスト必須、プライベートマーケットの主要プレイヤーを見逃さないため
-- AIバイアス認識：大型株バイアス / 英語圏バイアス / ナラティブバイアス / 上場企業のみバイアスに対抗
+**Key Features**:
+- Every layer has explicit keep/drop criteria — eliminated names come with a stated reason (not a black box)
+- Final 3 are selected for **portfolio complementarity** (high certainty + moderate upside + high convexity), not by ranking scores
+- Mandatory "future IPO candidates" list to avoid missing private-market key players
+- AI bias awareness: counters large-cap bias / English-language bias / narrative bias / listed-only bias
 
-**`/industry-research`との違い**：
-- `industry-research`はバリューチェーン構造とパノラマビューを重視（セグメント別スライス）
-- `industry-funnel`は株式選別ファネルを重視（全市場から3社への段階的スクリーニング）
+**Difference from `/industry-research`**:
+- `industry-research` emphasizes value chain structure and panoramic view (sliced by segment)
+- `industry-funnel` emphasizes the stock-picking funnel (progressive screening from full market to 3)
 
-**実地テスト：AIセクター、4サブトラック並列（2026-05-09）**：
+**Live Test: AI Sector, 4 Sub-Tracks in Parallel (2026-05-09)**:
 
-| サブトラック | 最終3社 | コアポジション選定 |
-|-----------|---------|----------------|
-| AI算力 | TSMC / NVIDIA / SKハイニックス | TSMC ★★★★★ |
-| AIモデル | アルファベット / Meta / アリババ | アルファベット ★★★★★ |
-| AIアプリケーション | マイクロソフト / Adobe / AppLovin | マイクロソフト＋Adobe ★★★★ |
-| AIインフラ＆電力 | イートン / 特変电工 / Talen Energy | イートン＋特変电工 ★★★★ |
+| Sub-Track | Final 3 | Core Position Pick |
+|-----------|---------|-------------------|
+| AI Compute | TSMC / NVIDIA / SK Hynix | TSMC ★★★★★ |
+| AI Models | Alphabet / Meta / Alibaba | Alphabet ★★★★★ |
+| AI Applications | Microsoft / Adobe / AppLovin | Microsoft + Adobe ★★★★ |
+| AI Infrastructure & Power | Eaton / TBEA / Talen Energy | Eaton + TBEA ★★★★ |
 
-**主要洞察**：AIアプリケーション層で最大の勝者は、AIネイティブ企業ではなく——流通・データ・ワークフロー組み込みを持つ既存大手です。これは1995–2000年のインターネットバブルの「ツルハシとシャベルを売れ」のパターンを反映しています（アマゾンとアップルが勝ち；Pets.comは負けた）。
+**Key Insight**: The biggest winners in the AI application layer aren't AI-native companies — they're established giants with distribution, data, and workflow embeddedness. This echoes the 1995–2000 Internet bubble's "sell the picks and shovels" pattern (Amazon and Apple won; Pets.com didn't).
 
-完全レポート：[AI算力](reports/AI算力-funnel-20260509.md) · [AIモデル](reports/AI模型-funnel-20260509.md) · [AIアプリケーション](reports/AI应用-funnel-20260509.md) · [AIインフラ＆電力](reports/AI基建电力-funnel-20260509.md)
+Full reports: [AI Compute](reports/AI Calculator-funnel-20260509.md) · [AI Models](reports/AI model - funnel-20260509.md) · [AI Applications](reports/AI application-fundel-20260509.md) · [AI Infrastructure & Power](reports/AI capital power-fundel-20260509.md)
 
 ---
 
-### 6. `/private-company-research` — 非上場企業深掘りリサーチ
+### 6. `/private-company-research` — Private Company Deep Research
 
-情報の乏しい非上場企業向けに設計された「探偵型」リサーチフレームワーク：
+A "detective-style" research framework designed for information-scarce private companies:
 
-**主な差別化点**：
-- **財務データの組み立て**：IPO資料、親会社レポート、資金調達ニュース、業界データから組み立て
-- **信頼度タグ付け**：すべてのデータポイントに 🟢 高 / 🟡 中 / 🔴 低の信頼度タグ
-- **マルチ手法バリュエーションクロスチェック**：資金調達ラウンドバリュエーション＋比較企業＋DCF＋逆算
-- **出口経路分析**：IPO / M&A / セカンダリー移転の経路を完全評価
+**Key Differentiators**:
+- **Financial data piecing**: Assembled from IPO filings, parent company reports, funding news, and industry data
+- **Confidence tagging**: Every data point tagged 🟢 High / 🟡 Medium / 🔴 Low confidence
+- **Multi-method valuation cross-check**: Funding-round valuation + comparable companies + DCF + endgame backsolve
+- **Exit path analysis**: Full evaluation of IPO / M&A / secondary transfer paths
 
-**アウトプット抜粋**：
+**Sample Output Excerpt**:
 
-> #### 企業スナップショット：SpaceX
+> #### Company Snapshot: SpaceX
 >
-> | 項目 | 詳細 |
-> |------|------|
-> | 最新バリュエーション | 約3,500億ドル（2025年セカンダリーマーケット）🟡 |
-> | 推定売上高 | 約130億ドル（2024年）🟡 |
-> | Starlinkサブスクライバー数 | 400万人以上（2024年末）🟢 |
-> | 打ち上げ回数 | 年間100回以上（2024年）🟢 |
+> | Item | Detail |
+> |------|--------|
+> | Latest Valuation | ~$350B (2025 secondary market) 🟡 |
+> | Estimated Revenue | ~$13B (2024) 🟡 |
+> | Starlink Subscribers | 4M+ (end of 2024) 🟢 |
+> | Launch Cadence | 100+ per year (2024) 🟢 |
 >
-> #### バリュエーション評価
+> #### Valuation Assessment
 >
-> | 手法 | バリュエーション範囲 | 備考 |
-> |------|-----------------|------|
-> | 最新資金調達 | 3,500億ドル | セカンダリーマーケット価格；流動性プレミアム含む |
-> | 比較企業 | 2,000–2,800億ドル | 通信＋航空宇宙＋防衛とのベンチマーク |
-> | DCF（基本ケース） | 2,500–3,500億ドル | 2027年Starlink売上高300億ドルを仮定 |
-> | 逆算 | 4,000–6,000億ドル | Starlinkがグローバル通信インフラになると仮定 |
+> | Method | Valuation Range | Notes |
+> |--------|----------------|-------|
+> | Latest Funding | $350B | Secondary market price; includes liquidity premium |
+> | Comparable Companies | $200–280B | Benchmarked against telecom + aerospace + defense |
+> | DCF (Base Case) | $250–350B | Assumes Starlink $30B revenue by 2027 |
+> | Endgame Backsolve | $400–600B | Assumes Starlink becomes global telecom infrastructure |
 >
-> **複合フェアバリュー範囲：2,500億ドル – 4,000億ドル**
+> **Composite Fair Value Range: $250B – $400B**
 
 ---
 
-### 7. `/news-pulse` — 株価変動の迅速な要因分析
+### 7. `/news-pulse` — Price-Move Rapid Attribution
 
-「株が急騰・急落したとき、何が起きたかを素早く把握する」ために設計。**深掘りリサーチではなく、10–15分の迅速な要因分析**——保有株が動いたときのパニック売りや長文の不安スパイラルを防ぎます。
+Designed for "when a stock surges or drops, quickly figure out what happened." **Not deep research — it's 10–15 minute rapid attribution** to avoid panic-selling or essay-length anxiety spirals when your holdings move.
 
-**主な差別化点**：
-- **4次元並列偵察**：企業イベント / 規制政策 / 業界競合 / 市場センチメント（セルサイド＋インフルエンサー＋南向き資金フロー）
-- **羅列ではなく要因分析**：すべてのニュースを列挙するだけでなく、「どのイベントが実際にこの株価変動を説明するか」を判断
-- **性質分類を必須化**：バリューイベント / センチメント変動 / **真の原因不明** / 混合——「真の原因不明」は最も価値あるアウトプットになることが多い（インサイダー先取りの可能性）
-- **明確なアクションアイテム**：深掘りリサーチのトリガーか、テーゼの再検討か、ただ観察するかを明示
+**Key Differentiators**:
+- **4-dimensional parallel recon**: Company events / Regulatory policy / Industry competitors / Market sentiment (sell-side + influencers + southbound capital flows)
+- **Attribution over listing**: Doesn't just list all news — judges "which event actually explains this price move"
+- **Mandatory nature classification**: Value Event / Sentiment Fluctuation / **True Cause Unknown** / Mixed — where "True Cause Unknown" is often the most valuable output (potential insider front-running)
+- **Clear action items**: Whether to trigger deep research, re-examine your thesis, or simply watch
 
-**状況別使い分け**：
-| シナリオ | Skill |
-|---------|-------|
-| 完全なリサーチ（数時間） | `/investment-team` または `/investment-research` |
-| 決算深読み | `/earnings-review` |
-| 長期テーゼ追跡 | `/thesis-tracker` |
-| **株価変動、10分間の要因分析** | **`/news-pulse`** |
+**When to Use What**:
+| Scenario | Skill |
+|----------|-------|
+| Complete research (hours) | `/investment-team` or `/investment-research` |
+| Earnings deep read | `/earnings-review` |
+| Long-term thesis tracking | `/thesis-tracker` |
+| **Price move, 10-min attribution** | **`/news-pulse`** |
 
-**アウトプット抜粋**（テンセント4/17–5/01実地テスト、14日間で-10.47%）：
+**Sample Output Excerpt** (Tencent 4/17–5/01 live test, -10.47% over 14 days):
 
-> #### 一行要因分析
-> この-10.47%の下落の約70–80%は資金フローとセンチメントによって引き起こされた（バイバック自粛期間＋南向き売り＋セクターベータ＋AIナラティブの移行）。20–30%はAI設備投資倍増発表の遅延消化から来ている——**ファンダメンタルの悪化はない**。セルサイドコンセンサスは買い継続。これは「流動性＋センチメント主導の下落」であり、バリューイベントではない。
+> #### One-Line Attribution
+> Approximately 70–80% of this -10.47% drop was driven by fund flows and sentiment (buyback blackout period + southbound selling + sector beta + AI narrative displacement). 20–30% came from deferred digestion of the AI capex doubling announcement — **no fundamental deterioration**. Sell-side consensus remains Buy. This is a "liquidity + sentiment-driven pullback," not a value event.
 >
-> #### 要因テーブル
+> #### Attribution Table
 >
-> | 候補説明 | 推定寄与 | 確信度 |
-> |---------|---------|--------|
-> | バイバック自粛期間（構造的、5/13決算前） | -3%〜-4% | 高 |
-> | 南向き資金がテンセントの純売り手に転換 | -2%〜-3% | 高 |
-> | 競合他社にAIナラティブを奪われる（DeepSeek V4 / Qwen 3.6 / MoonDark 1T） | -1%〜-2% | 中 |
-> | セクター/マクロベータ（原油＋地政学＋FRBウォーシュタカ派） | -2%〜-3% | 高 |
-> | Q1決算前のリスク低減 | -1%〜-2% | 中 |
-> | ファンダメンタルの悪化 | **0%** | 非常に高い（除外済み） |
+> | Candidate Explanation | Estimated Contribution | Confidence |
+> |----------------------|----------------------|------------|
+> | Buyback blackout period (structural, pre-5/13 earnings) | -3% to -4% | High |
+> | Southbound capital turned net seller on Tencent | -2% to -3% | High |
+> | AI narrative stolen by competitors (DeepSeek V4 / Qwen 3.6 / MoonDark 1T) | -1% to -2% | Medium |
+> | Sector/macro beta (oil + geopolitics + Fed Warsh hawkish) | -2% to -3% | High |
+> | Pre-Q1 earnings de-risking | -1% to -2% | Medium |
+> | Fundamental deterioration | **0%** | Very High (ruled out) |
 >
-> #### 性質分類：✅ 混合
-> 70%資金フロー/センチメント ＋ 20%長期AIナラティブ懸念 ＋ 10%Q1前の不確実性
+> #### Nature Classification: ✅ Mixed
+> 70% fund flows / sentiment + 20% long-term AI narrative concern + 10% pre-Q1 uncertainty
 >
-> **主な反証**：段永平が4/8にテンセントプットを売った（強気）；セルサイド24人のアナリストコンセンサスは強い買い；ネットイーズが4/30に逆行して2%上昇（ゲーム業界問題を除外）；テンセントがハンセンテックを7ポイント下回った（ハンセンテックは実際に月間4%上昇）。
+> **Key counter-evidence**: Duan Yongping sold Tencent puts on 4/8 (bullish); 24 sell-side analysts consensus Strong Buy; NetEase rose 2% on 4/30 against the tide (rules out gaming industry issue); Tencent underperformed Hang Seng Tech by 7pp (Hang Seng Tech actually rose 4% for the month).
 
-使い方：
+Usage:
 
 ```
-/news-pulse テンセント
-/news-pulse 拼多多 1週間で-12%
+/news-pulse Tencent
+/news-pulse Pinduoduo down 12% within a week
 /news-pulse miHoYo
 ```
 
 ---
 
-## 実際のリサーチレポート
+## Live Research Reports
 
-> 以下はこのフレームワークで生成された実際の投資リサーチレポートです。AI駆動リサーチの実際のアウトプット品質を示しています。
+> Below are real investment research reports generated with this framework, showcasing actual AI-powered research output quality.
 
-| 企業 | 使用Skill | コア結論 | レポート |
-|-----|---------|---------|---------|
-| 拼多多（PDD） | `/investment-team` | 総合3.4/5——極めて安いが10年の確実性は不十分；モデレートなポジションに適切 | [レポートを見る](reports/拼多多/) |
-| テンセント（0700.HK） | `/investment-research` | ソーシャル独占＋優れた資本配分；先行PER14倍は妥当〜低い | [レポートを見る](reports/腾讯/) |
-| 7社比較 | `/investment-checklist` | 茅台＆テンセントは合格；NVIDIA、美団＆快手は条件付き；拼多多＆泡泡玛特はグレーゾーン | [レポートを見る](reports/多公司对比-checklist-20260408.md) |
-| 巨人保有銘柄トラッカー | カスタムリサーチ | バフェット / 李録 / 段永平の最新13F保有銘柄＋PDDコスト基準分析 | [レポートを見る](reports/大师持仓追踪-research-20260408.md) |
+| Company | Skill Used | Core Conclusion | Report |
+|---------|-----------|----------------|--------|
+| Pinduoduo (PDD) | `/investment-team` | Composite 3.4/5 — extremely cheap but 10-year certainty insufficient; suitable for moderate position | [View Report](reports/More%20than%20you%20can%20spell/) |
+| Tencent (0700.HK) | `/investment-research` | Social monopoly + superior capital allocation; 14x forward P/E is reasonable-to-low | [View Report](reports/Circulation/) |
+| 7-Company Comparison | `/investment-checklist` | Moutai & Tencent pass; NVIDIA, Meituan & Kuaishou conditional; Pinduoduo & Pop Mart gray zone | [View Report](reports/Multi-firm comparison -- checklist-20260408.md) |
+| Master Holdings Tracker | Custom Research | Buffett / Li Lu / Duan Yongping latest 13F holdings + PDD cost-basis analysis | [View Report](reports/Master warehouse tracking -- research-260408.md) |
 
-> *レポートは継続的に追加されます。このフレームワークで生成した独自のリサーチレポートを提出するPRを歓迎します。*
+> *More reports will be added continuously. PRs submitting your own research reports generated with this framework are welcome.*
 
 ---
 
-## 設計思想
+## Design Philosophy
 
-### 四巨人方法論の統合
+### Four-Master Methodology Synthesis
 
-**段永平 ·「正しいビジネス」**——ビジネスの本質。残る3つの視点の共通の出発点：
+**Duan Yongping · "The Right Business"** — business essence, the shared starting point for the other three lenses:
 
-| バフェット | マンガー | 李録 |
+| Buffett | Munger | Li Lu |
 |:---:|:---:|:---:|
-| モート<br>安全マージン<br>経営陣 | 逆説的思考<br>リスクリスト<br>バイアス審査 | 文明トレンド<br>パラダイムシフト<br>産業価値 |
+| Moat<br>Margin of safety<br>Management | Inversion<br>Risk list<br>Bias audit | Civilization trends<br>Paradigm shifts<br>Industry value |
 
-4人の巨人は単に分業しているのではなく——**互いに挑戦し合う**ように設計されています：
-- 段永平が「優れたビジネス」と言えば → マンガーは「どうすれば潰れるか？」と問う
-- バフェットが「十分に安い」と言えば → 李録は「10年後も存在するか？」と問う
-- 4つのレポートを貼り合わせたものではなく——4つの思考システムの衝突
+The four masters aren't just dividing labor — they're designed to **challenge each other**:
+- Duan Yongping says "great business" → Munger asks "how could it die?"
+- Buffett says "cheap enough" → Li Lu asks "will it still exist in 10 years?"
+- What you get isn't four reports stitched together — it's four thinking systems colliding
 
-### 財務精度ツール（`tools/financial_rigor.py`）
+### Financial Rigor Tool (`tools/financial_rigor.py`)
 
-| 機能 | コマンド | 解決する問題 |
-|------|---------|------------|
-| **時価総額検証** | `verify-market-cap` | 株価×発行済株式数、精密計算、単位エラーを検出 |
-| **バリュエーション検証** | `verify-valuation` | PER / PBR / ROE / FCFイールド——厳密な10進算術 |
-| **マルチソースクロスバリデーション** | `cross-validate` | 同一データポイントをNソースで自動比較；許容範囲超でアラート |
-| **三シナリオバリュエーション** | `three-scenario` | 強気/基本/弱気の正確な目標株価計算 |
-| **ベンフォードの法則検出** | `benford` | 財務データの最初の桁分布の異常を検出 |
-| **精度電卓** | `calc` | 任意の財務計算式を正確に計算——LLMの暗算を代替 |
+| Feature | Command | Problem Solved |
+|---------|---------|---------------|
+| **Market Cap Verification** | `verify-market-cap` | Price × shares outstanding, exact calculation, detects unit errors |
+| **Valuation Verification** | `verify-valuation` | P/E / P/B / ROE / FCF Yield — exact decimal arithmetic |
+| **Multi-Source Cross-Validation** | `cross-validate` | Auto-compare same data point across N sources; alerts above tolerance |
+| **Three-Scenario Valuation** | `three-scenario` | Bull / base / bear exact target price calculation |
+| **Benford's Law Detection** | `benford` | Detect anomalies in first-digit distribution of financial data |
+| **Precision Calculator** | `calc` | Any financial expression computed exactly — replaces LLM mental math |
 
-**設計原則**：すべての計算はPython `decimal.Decimal`（厳密な10進数）を使用し、`float`（浮動小数点近似）は使いません。金融コンテキストで `0.1 + 0.2 = 0.3` が失敗することは絶対に許されません。
-
----
-
-## 今後の方向性
-
-- [ ] ヒストリカルバックテスト：AIリサーチレポート vs. 実際の株価パフォーマンス
-- [ ] マクロ経済サイクル分析フレームワーク
-- [ ] MCPを通じたリアルタイムデータフィード（Wind / Bloomberg / Yahoo Finance）
+**Design Principle**: All calculations use Python `decimal.Decimal` (exact decimal), not `float` (floating-point approximation). `0.1 + 0.2 = 0.3` must never fail in a financial context.
 
 ---
 
-## 免責事項
+## Future Directions
 
-本プロジェクトは教育・研究目的のみであり、投資アドバイスを構成するものではありません。投資にはリスクが伴います；判断は慎重に行ってください。常に自身でデューデリジェンスを行ってください（DYOR）。
+- [ ] Historical backtesting: AI research reports vs. actual stock price performance
+- [ ] Macroeconomic cycle analysis framework
+- [ ] Real-time data feeds via MCP (Wind / Bloomberg / Yahoo Finance)
 
 ---
 
-## ライセンス
+## Disclaimer
+
+This project is for educational and research purposes only and does not constitute investment advice. Investing involves risk; decisions should be made with caution. Always do your own due diligence (DYOR).
+
+---
+
+## License
 
 MIT License
 
 ---
 
-> 「あなたができる最高の投資は自分自身への投資です。」 — ウォーレン・バフェット
+> "The best investment you can make is in yourself." — Warren Buffett
 >
-> AI Berkshire：誰もが自分だけの投資リサーチチームを持てるように。
+> AI Berkshire: Giving everyone their own investment research team.
 
-## Star履歴
+## Star History
 
-このプロジェクトが役に立った方は、ぜひStarをお願いします！
+If this project has been helpful to you, please give it a Star!
 
 [![Star History Chart](https://api.star-history.com/svg?repos=xbtlin/ai-berkshire&type=Date)](https://star-history.com/#xbtlin/ai-berkshire&Date)

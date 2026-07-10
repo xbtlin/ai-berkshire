@@ -1,245 +1,245 @@
-# 看懂XX公司（深度公司系列）：3-8 篇长文拆一家公司
+# See XX Company (Insight series): 3-8 long stories to tear down a company
 
-为 $ARGUMENTS 撰写一个《看懂XX》深度长文系列（3-8 篇，按公司复杂度定，见"篇数适配"），发布在公众号/视频号等公开渠道。**核心 IP 不是"会写"，而是"会改"——99% 的财经文章在违反本 skill 的事实核查标准**。
+For $ARGUMENTS, a series of depths (3-8 articles, based on company complexity, see "The number fits") is published in public channels such as public/video numbers.** Core IP is not "will write," but "will change" - 99% of the financial articles are violating the factual verification standard of this skill**.
 
-参考样本：`reports/腾讯/《看懂腾讯》/`
-
----
-
-## 一、触发场景
-
-用户希望为一家公司做"教科书级别"的深度研究，并以**系列长文**形式公开发布。区别于一篇研报：
-- 3-8 篇（复杂公司 8 篇约 12 万字，简单公司 3 篇约 3 万字），从认知重置到决策框架完整闭环
-- 每篇独立成文（适合单篇分享），但贯穿一套估值/管理层/价格判断
-- 写给"愿意花 90 分钟读懂一家公司"的读者，不是写给券商客户
-
-**不适合用本 skill 的场景**：单篇研报、季报点评、行业研究——那些用 `/investment-research`、`/earnings-review`、`/industry-research`。
+Reference sample: `reports/Text/Reads/Reads/
 
 ---
 
-## 二、系列篇目模板
+# One, trigger scene
 
-### 篇数适配公司复杂度（先定篇数，再定篇目）
+Users want to do a deep study of the "textbook level" for a company and to publish it in a series of long articles**.
+- 3-8 (complex company 8 about 120,000 words, simple company 3 about 30,000 words), from cognitive re-set to complete shut-down of decision-making frameworks
+- Each separate document (fit for single sharing), but through a set of valuations/managements/price judgements
+- To a reader who would like to spend 90 minutes reading a company, not to a customer who's a coupon dealer.
 
-**篇数不固定为 8。** 8 篇是腾讯这种"多业务 + 万亿投资组合 + 20 年管理层故事"的公司才撑得起的容量。写之前先问：这家公司有几个能用"一个尖锐问题"独立成文的主轴？有几个写几篇。
+** The scenes not suitable for this skill**: single studies, quarterly reviews, industry studies - those used `/investment-research ' , `/earnings-review ' , `/industry-research ' .
 
-| 复杂度 | 特征 | 篇数 | 例子 |
+---
+
+# Two, series template
+
+# # Numbers match company complexity (numbers first, then lines)
+
+** The number of undetermined pieces is 8. ** 8 are the capacity of a company that can afford to make a "multi-business + trillion portfolio + 20 years of management story."
+
+The number of articles, the number of articles, the number of examples, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of pieces, the number of items, the number of items, the number of items, the number of items, the number of items, the number of items, the number of items, the number of items, the number of items, the number of items, the number of items, the number of items, the number of the items, the number of the items, the number of the items, the number of the items, the number of the items, the number of the items, the number of the items, the number of the items, the number of the items, the nature, the nature, the nature, the nature of the factors, the nature, the nature, the nature, the nature, the factors, the factors, the nature, the factors, the nature, the nature, the factors, the factors, the nature, the nature, the nature, the factors, the nature, the factors, the nature, the nature, the nature, the circumstances, the nature, the circumstances, the nature, the circumstances, the nature, the nature, the nature, the nature, the nature, the nature, the nature, the nature, the nature, the type, the type, the nature, the nature, the nature, the nature, the nature, the type, the nature, the type, the type, the type, the type, the type, the type, the type, the type, the type, the type
 |--------|------|------|------|
-| 高 | 多条业务线各自成生意 + 隐藏资产/投资组合 + 管理层史料丰富 | 7-8 篇 | 腾讯 |
-| 中 | 2-3 条业务线 + 一个重大时代变量 | 4-6 篇 | — |
-| 低 | 主业清晰、核心问题少而集中 | **3 篇** | 快手 |
+<unk> High, multi-line business lines are traded + Hide Assets/Investment Portfolio + Management History 7-8
+<unk> 2-3 lines of business + a major time variable 4-6 pieces of <unk>
+♪ The main business is clear, the core issues are few, but concentrated ♪
 
-**3 篇的标准合并方式**（下面 8 主轴仍是检查清单，全部要覆盖，只是折进 3 篇）：
+**3 Standard consolidation** (The following 8 axis remains the check list, all covered, only three folds):
 
-| # | 篇名方向 | 折入的主轴 |
+♪ The title, the title, the axis, the key
 |---|---------|-----------|
-| 01 | 你以为你看懂了 X（开篇 + 生意与护城河） | 认知重置 + 护城河 + 利润引擎概览 |
-| 02 | X 的最大变量（当下叙事/隐藏资产） | 隐藏资产 + AI/时代变量 |
-| 03 | 多少钱值得买，什么信号必须卖（财务 + 决策终章） | 财务深度 + 管理层要点 + 估值决策 |
+<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> 02 <unk> (current narrative/hidden assets) <unk> Hide assets + AI/ Age variables <unk>
+<unk> 03 <unk> How much is worth, what signals must be sold (financial + final chapter of decision) <unk> Financial depth + management points + valuation decision
 
-判断信号：如果某篇写到一半发现在"凑内容"（同一事实换说法重复出现），说明篇数定多了——合并。反之，某篇超过 12,000 字还塞不下，拆开。
+The judgement sign: If one is half-written and found in "compiled content" (the same fact is repeated), it means that the number of pages is too many -- merge. On the other hand, a single article is stuck in over 12,000 words.
 
-### 8 主轴全模板（复杂公司用；简单公司当检查清单折叠）
+#8 Main axis full template (complex companies; simple companies folding)
 
-| # | 篇名模板 | 核心问题 | 字数 |
+# # # the title template # # the core issue # # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words # the number of words that are the number of words that are the number of words that are the number of words that are the number of words that are the number of words that are the number of words that are the number of words that are the number of words that are the number of words that are the number of words are the number of words that are the number of the words are the number of the are the name.
 |---|---------|---------|------|
-| 01 | 你以为你看懂了 X，其实没有 | 认知重置：破 3 个常见错觉 | 4,000-5,000 |
-| 02 | X 的护城河——`<生意本质一句话>` | 护城河深不深、未来 5/10 年还在不在 | 6,000-8,000 |
-| 03 | X 的最大利润引擎——`<最赚钱业务>` | 主业是什么、为什么能持续 | 6,000-8,000 |
-| 04 | X 藏在账上的另一家公司——`<隐藏资产>` | 投资组合 / 子公司 / 隐藏价值 | 8,000-10,000 |
-| 05 | AI（或当下叙事）时代，X 是赢家还是输家 | 时代变量：分业务拆 AI 影响 | 8,000-10,000 |
-| 06 | 用巴菲特方式拆 X 的财报 | 财务深度：毛利率/FCF/ROE/SBC | 8,000-10,000 |
-| 07 | `<管理层金句>`——X 的管理层值不值得托付 | 资本配置纪律 + 诚信检验 + 接班人 | 8,000-10,000 |
-| 08 | 多少钱值得买，什么信号必须卖（系列终章） | DCF 三情景 + 红线清单 + 仓位框架 | 10,000-12,000 |
+<unk> 01 <unk> You think you see X, but you don't know <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> 02 <unk> the moat of the moat -- `The essence of business' <unk> the moat of the moat is not deep, it's not yet 5/10 years old <unk> 6,000-8,000 years old
+<unk> 03 <unk> X <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> X Another company hidden in the account - `The Hidden Assets' / Affiliated / Hide Value <unk> 8,000-10,000 <unk>
+05 <unk> AI (or current narrative), X is the winner or the loser
+<unk> Financial depth: Māori/FCF/ROE/SBC <unk> 8,000-10,000 <unk>
+<unk> Management value of `Management ' — <unk> Management value not worthy of entrustment <unk> Capital allocation discipline + integrity test + successor <unk> 8,000-10,000 <unk>
+<unk> 08 <unk> How much is worth, what signals must be sold (salary chapter) <unk> DCF 3 scenarios + Red Line List + Position frame <unk> 10,000-12000 <unk>
 
-加一篇 `00-系列说明.md` 作为目录索引，不发表。
+Add a `00-series note.md ' as index to the table of contents, not published.
 
-**篇目必须适配公司**：模板是腾讯长出来的，不是套子。某篇没有独立内容（如没有投资组合的公司写不了 04），就替换成该公司特有的主轴（如快手的可灵 AI、电商），或按上面的合并方式折进更少的篇数。判断标准：这一篇能否用"一个尖锐问题"独立成文。
+** The article must fit the company**: the template is a stubble, not a condom. A single piece without a stand-alone content (e.g. a company without a portfolio cannot write 04) is replaced by a company-specific main axis (e.g. a fast-handed psychic AI, electrician) or a smaller number of entries in the same way as above.
 
 ---
 
-## 二·五、篇内结构模板（从《看懂腾讯》8 篇正文提炼）
+# II.V. ON THE BIG BIG BIG BIG.
 
-每篇不是自由发挥，有固定骨架。共性结构：
+Each one is not free to play, it has a fixed bone.
 
-- **头部引用块**：`> 《看懂X》系列 · 第 0N 篇 · <主轴>`，开篇加阅读时间
-- **第一节永远是钩子**：一组反常识数字 / 一条反常曲线 / 一个让市场担心的数字，不写背景铺垫
-- **每篇末尾**：`## 本篇要点回顾`（5-8 条，数字与正文严格一致）+ `## 下期预告`（用尖锐问题预告，不剧透结论）
-- **结尾两行斜体**：`*本文是《看懂X》系列第 0N 篇...*` + `*本系列基于公开信息和价值投资框架研究，不构成任何投资建议。*`
+- ** Head citation **: > See X series . 0N Main axis > , opening and reading time
+- ** Section I is always a hook**: a set of aberrations / an aberrations / a number that worries the market, without setting the background
+- ** At the end of each article**: `# This highlights ` (5-8 articles, numbers strictly consistent with the text) + <unk> # Next forecast ' (Advisory, Unexploded Conclusions with sharp questions)
+- **The last two lines are italics**: * This is the X-ray series, section 0N* * <unk> * This series is based on open information and value investment framework studies and does not constitute any investment proposal.*
 
-各篇专属骨架：
+Each of the individual skeletons:
 
-| 篇 | 骨架 |
+♪ The bone, the bone, the bone ♪
 |---|------|
-| 01 开篇 | 股价被市场反复"重新定性"的历史曲线 → 三个常见错觉（每个用财报数据破）→ "需要同时戴几副眼镜"阅读地图表（链接到 02-08）→ 估值钩子数字表（只留悬念不给结论） |
-| 02 护城河 | 挑战者失败名单（有名有姓有年份）→ 迁移成本的本质（用户迁不走什么）→ 生态飞轮 → 5 年/10 年后护城河还在吗 → 一个反向思维实验（"如果我有 1000 亿能不能复制它"） |
-| 03 利润引擎 | 反常识数字开场 → 核心产品为何长青（拆到定价权层面）→ 增长空间量化（份额路径 + 反面论据：故事不工作的可能）→ 组织能力（为什么能持续出产品）→ 市场为什么低估 → AI/时代变量对本业务的影响 → 5 年后图景 |
-| 04 隐藏资产 | TOP 持仓表（**只统计未并表部分**，并表的单独说明防双算）→ 会计处理差异（哪些进利润表哪些不进）→ "不会卖 vs 可能减持"分类 → 市场为何打折价（逐条）→ 几个意外发现 → 估算折扣的简单方法 |
-| 05 AI/时代变量 | 让市场担心的数字 → 分业务拆赢家/输家（严重分化，不给整体结论）→ 关键反问（"X 输了单点之争，还能赢吗"）→ 5-10 年被绕过的场景推演（逐条反驳或承认）→ 5 个情景 → 未来一年监控信号清单 |
-| 06 财务 | 一条反常曲线开场 → 利润表（毛利率变化归因）→ 口径选择（Non-IFRS vs GAAP，为什么）→ EPS 与回购 → 资产负债表（净现金）→ 现金流与 FCF Yield → 股东回报按"1 美元测试"→ ROE 变化是好是坏 → 估值横向+历史比较 → 价值投资 10 项 Checklist 逐条过 → 把财报压缩成三句话 |
-| 07 管理层 | 核心团队表 → 关键人物的长期贡献（用具体决策，不用形容词）→ 利益对齐（持股/薪酬占利润比）→ **诚信检验：挑一次真实危机看应对** → 5 年承诺兑现率（逐条核对当年原话）→ 资本配置纪律 → 接班人隐忧（不回避）→ "买人三问"（诚实/能干/热爱）→ 综合评分 |
-| 08 决策 | SOTP 分部估值（说清"你买的到底是什么"）→ 历史估值分位 + **必须警告"后视镜不是导航仪"** → 未来利润三情景表（乐观/中性/保守 + 隐含增速，标明"是预测不是事实"）→ 红线清单（触发≠必卖，但必须重审）→ 赔率思维收尾 |
+<unk> Opening page <unk> The historical curve of the market 'recharacterized' stock prices <unk> Three common illusions (each broken with a financial disclosure) <unk> "need to wear a couple glasses at the same time" reading the map (link to 02-08) <unk> Valuation hook table (only left open without conclusion) <unk>
+<unk> 02 The moat, the challenger's failed list, the nature of the cost of the move (user can't move anything), <unk> 5 years and 10 years later, <unk> A reverse thinking experiment ( "if I have $100 billion to copy it," <unk>
+<unk> 03 Profit engine <unk> Uncommon knowledge digital opening <unk> Why core products grow in age (draw to the price-fixing level) <unk> Growth spatial quantification (share path + counterarguments: story not working) <unk> Organizational capacity (why products can be sustained) <unk> Why markets underestimate the impact of AI/era variables on their business 5 years later <unk>
+<unk> Hide assets <unk> TOP warehouse table (** only unincorporated ** and separate statement of prevention **) <unk> Accounting treatment differences (which are in profit statements and which are in decline) <unk> "Vs may not be sold" <unk> Why the market is discounted (article by article) <unk> Simple method of estimating discounts discovered by accident <unk>
+<unk> AI/era variables <unk> Numbers that make the market worry <unk> Breaking up the operation winners/ losers (severe split without conclusion) <unk> Key counter-questions ( "X loses one single point, can you win") <unk> 5-10 years of bypassed scenes (rejection or admission by article) <unk> 5 scenarios
+<unk> Financial <unk> Atypical curve opening <unk> profit statement (morigin rate change attributable) <unk> caliber selection (Non-IFRS vs GAAP, why) <unk> EPS and buyback balance sheet (net cash) <unk> cash flow and FCF Yield <unk> shareholder returns tested at $1 <unk> ROE changes are good or bad <unk> valuation horizontal + historical comparison <unk> value investment 10 pieces of Checklist investments, article by article <unk>
+<unk> Management <unk> Core team table <unk> Long-term contributions of key persons (with specific decision-making, no adjectives) <unk> Matching of interests (equity/pay as a profit ratio) <unk> Good faith test: picking a real crisis to respond** 5 years of commitment compliance (article by article) <unk> Capital allocation discipline <unk> Successor ' s fear (incident) <unk> Buyer ' s three questions (incidentity/dry/love) <unk> Comprehensive rating
+<unk> Decision-making <unk> SOTP branch valuation (specify what you bought) <unk> Historical valuation rating <unk> ** Must warn "Rearview mirrors are not navigational" ** Future profit scenario 3 (optimism/neutral/conservative + implied acceleration, indicating "if the prediction is not true" <unk> List of red lines (triggered to sell, but must be re-examined) <unk> Rate of Compensation Thinking to End <unk>
 
 ---
 
-## 三、写作风格规范
+# Three, writing style
 
-### 语气
+# The tone of the word #
 
-- **直接、犀利、不说废话**——第一句就给数字或反常识结论
-- **价值投资框架**——巴菲特/芒格/段永平/李录视角穿插（但不堆砌名言）
-- **不预设立场**——先摆数据、再推逻辑、最后得结论
-- **呈现正反两面**——每个核心判断都附"但另一方面..."的反方
-- **公众号体感**——前 18-20 字必须能独立站住（手机预览）
+- ** Direct, sharp, no bullshit** - The first sentence leads to numbers or aberrations.
+- ** Value investment framework** - Buffett/Mung/Pongping/Li Szong (but not a famous word)
+- ** Unpre-established** — Data first, logic first, final conclusions
+- ** Presents both sides of the equation** - Each core judgement is accompanied by the opposite of "but on the other hand..."
+- **The public sense** - the former 18-20 words must stand alone (cell preview)
 
-### 禁用词
+# Disable words
 
-| 禁用 | 原因 | 替代 |
+<unk> Disable the <unk> cause <unk> substitute <unk>
 |------|------|------|
-| 显然 / 必然 / 一定 | 主观绝对化 | 数据显示 / 证据表明 |
-| 我认为 / 我觉得 | 主观腔调 | 删除或改为"按本框架" |
-| 教科书级别 / 神来之笔 | 流量党褒奖 | 描述具体事实 |
-| 严重不匹配 / 严重低估 | 强主观词 | 给具体折让百分比 |
-| 完美 / 无可挑剔 | 单边判断 | 加上反方观察 |
+The data show that the evidence is not available.
+I think / I think / <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+♪ The schoolbook level ♪ ♪ The Gods come ♪
+<unk> Serious mismatch / Serious underestimation <unk> Strong subjective word <unk> Specific percentage of concession <unk>
+♪ Perfect ♪ ♪ Uncritical ♪ unilateral judgment ♪ ♪ plus counter-observation ♪
 
-### 标题风格
+# Title style
 
-- 用**反差数字**或**反共识结论**做钩子（"15 年 7 次挑战全失败"、"年薪 4292 万仅占利润的万分之 1.65"）
-- 副标题中性、概括内容（"——`<本质判断>`"）
-- **避免流量党比喻**："小巴菲特"、"中国版 X"、"YYDS" 一律避开
-- 用专业读者熟悉的术语（"伯克希尔"而不是"巴菲特"，公司名优于人名）
-
----
-
-## 四、严苛事实核查 Checklist（核心 IP）
-
-### 写之前就要警惕的"伪精确"陷阱
-
-1. **概率加权期望值**：`30% × A + 50% × B + 20% × C = 期望 +X%` 这种计算几乎全是垃圾——概率分配是纯主观，给读者错误精确感。**只列情景 + 触发条件 + 方向，不算加权期望**。
-2. **第三方测算 MAU/份额**：QuestMobile/七麦/CBNData 等口径差异巨大（同一时点能差 2-3 倍）。**只用最可信的两个对比作 anchor，其他做定性描述**。
-3. **历史增速线性外推**：`2025 年 +33% × 5 年复合 → 2030 年 X` 是金融文盲式预测。**情景假设 + 高/低区间 + 不是承诺**。
-4. **未公开的持股比例**：字节、Halti 类未上市公司持股**从未公开披露**。**给区间，标"不可知"**。
-5. **强归因**：竞争对手失败 = 因为 X。多重原因都列出来，**本文不做单一归因**。
-
-### 修订时必跑的 7 项检查
-
-```
-□ 1. 跨篇数字一致性：总市值、Non-IFRS 净利润、关键持股 % 全系列对齐
-□ 2. 口径标注：Non-IFRS / GAAP / Non-IFRS-SBC / FCF 各用哪个，全文清楚
-□ 3. 重复加计扫描：已并表子公司不在"投资组合"里、SOTP 不双算
-□ 4. 横向比较公平性：不能"主业 PE（剔除现金+组合）" vs "对手 PE（不剔）"
-□ 5. 概率加权全删：见上一条
-□ 6. 绝对化表述全弱化：grep "显然|必然|严重|教科书|完美"
-□ 7. 第三方数据来源标注：每条非财报数据后跟"（来源：X）"
-```
-
-### 模型偏好
-
-写之前**先列出已知硬错误风险**：
-- 历史回报倍数：必须用累计投入口径（如 Riot 33 倍 不是 58 倍）
-- 持股比例：必须看最新富途/财报口径（如腾讯持有美团 1.5% 不是 6.4%）
-- "派息分派"会计处理：视同处置收益按 IFRIC 17 在宣派日确认（如京东在 2021，美团在 2022 但金额小）
-- 总股本会反弹：SBC 集中年初授予会让股本短期上升
+- hooks with ** inverse ** or ** counterconsensus ** ("15 years, seven challenges have failed" , "42.92 million a year, 1.65 a million profit")
+- Subtitle neutral, general content ("-- `---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- ** Avoid the flow party metaphor**: "Small Buffett", "Chinese X", "YYDS" all avoids.
+- In a term that professional readers know.
 
 ---
 
-## 五、执行流程
+# Four, hard fact check
 
-### 阶段 1：调研（写 01-02 篇前完成）
+# The trap of false precision that needs to be kept on guard before writing
 
-1. 阅读公司近 5 年年报、最新季报
-2. 阅读至少 3 份独立卖方研报（找共识 + 反共识）
-3. 用 `/investment-team` 或 `/investment-research` 先生成内部研究底稿
-4. 与用户确认 8 篇的核心论点（避免写完才发现方向不对）
+** Probability weighted expectations**: `30% x A + 50% x B + 20% x C = Expected +X% ' This calculation is almost all garbage - probability distribution is purely subjective and gives readers a sense of error of accuracy.** Only scenario + trigger + direction is listed, not weighted expectations**.
+2. ** Third-party measurement MAU/share**: QuestMobile/7/CBNData and other calibres vary significantly (two to three times the difference in the same timescale).** Only ancchor with the two most credible comparisons, other qualitative **.
+3. ** Historical linear extrapolation**: `2025 + 33% x 5 years compound <unk> 2030 X ' is a financial illiteracy scenario.** Scenario scenario + high/low range + is not a commitment**.
+4. ** Undisclosed shareholding**: bytes, Halti type unlisted stockholding** never publicly disclosed**.** For inter-districts, marked "unknown".**
+5. **Former attribution**: Failure of competitor = due to X. For a number of reasons, ** this document does not contain a single attribution**.
 
-### 阶段 2：写作（按 01→末篇顺序写，不跳）
+# 7 checks that have to run when the revision is done
 
-- 每篇写完先存 `reports/{公司名}/《看懂{公司名}》/0X-XX.md`
-- **目录冲突规则**：若 `reports/{公司名}/《看懂{公司名}》/` 已存在（旧版系列），不覆盖、不混放——新系列写入带日期后缀的新文件夹 `reports/{公司名}/《看懂{公司名}》-{YYYYMMDD}/`，旧文件夹原样保留
-- 不立即推 GitHub——等用户审阅
-- 用户提修订意见后修改
-- 修订完才 git push
+```
+1. Cross-digital consistency: total market value, net profit of Noon-IFRS, key shareholding % full series alignment
+2. CLIMATION: Non-IFRS/GAAP/ Non-IFRS-SBC/FCF, with clear text
+3. Repeated count scan: already listed subsidiaries are not in the "portfolio", SOTP is not double-counting
+4. Horizontal fairness: "Main business PE" vs "Common-PE"
+5. All probabilities weighted delete: see previous article
+6. Absoluteization: grep "it is obvious that the text books are perfect."
+7. Third-party data source labelling: each non-fiscal data back and back "(source: X)"
+```
 
-### 阶段 3：跨篇一致性扫描（全部篇目写完后）
+# Model preference
 
-派 Explore agent 并行扫描全系列做以下检查：
-1. 同一数字（市值、净利润、持股比例）跨篇是否一致
-2. 同一术语（FBS、SBC、Non-IFRS）首次出现是否解释
-3. 引用关系：02 篇说"详见 06 篇"是否真的对应
-4. 要点回顾 vs 正文是否数字一致
+** List known risk of hard error**:
+- Historical returns multiple: cumulative input caliber (e. g. Riot 33 not 58 times)
+- Shareholding ratio: must look at the latest trajectories/fiscal caliber (if the Quest holds the American Corps 1.5%, not 6.4%)
+- "Service distribution" accounting treatment: the proceeds of disposal are recognized on IFRIC 17 on the day of the proclamation.
+- The stock capital rebounds: SBC awards at the beginning of the year will make equity short-term upswing.
 
-### 阶段 4：发布前最终核查
+---
+
+# V. Implementation process
+
+## Phase 1: Research (completed before writing 01-02)
+
+1. Reader company ' s nearly 5-yearly, latest quarterly reports
+2. Read at least 3 independent vendor papers (seeking consensus + anti-consensus)
+3. Use of Mr. `/investment-team ' or `/investment-research ' as the final draft of the internal study
+4. Confirmation with users of 8 core arguments (avoiding completion before finding the wrong direction)
+
+# # Phase 2: Writing (in the last #01 #, no jump)
+
+- Each piece is written before `reports/{corporate name}/0X-XX.md`
+- ** Catalogue conflict rules**: if `reports/{corporate name}/Recognition {corporate name}/ `Existed (old version series) does not cover and do not mix - new folders with date after date write new series `reports/{corporate name}/ Read {corporate name} {YYYMMDD}/ `, old folders are retained as they were
+- Don't push GitHub immediately -- wait for the user to review.
+- Changes after user has submitted the amendments
+- Just get it over with.
+
+## Phase 3: Cross-consistency Scan (after all the books)
+
+Sending an Expore agent to scan the entire series in parallel for the following checks:
+1. Consistency across the same figures (market value, net profit, shareholding)
+2. Interpretation of the same term (FBS, SBC, Non-IFRS) for the first time
+3. Quoting relationships: 02 says "Detailed in 06" does it really correspond?
+4. Highlights review vs. Whether the text is consistent
+
+## Phase 4: Final verification before release
 
 ```bash
-# 推送前必须本地 grep 一次（按 ai-berkshire 隐私规则）
-grep -r "<本机用户名>\|/Users/\|<个人身份信息>" reports/ | head
+# Must be local grep once before being pushed (by ai-berkshire privacy rules)
+"Rep-r"/ "Users/ Personal Identification" reports/ <unk> head
 ```
 
-确认无误后才 `git pull --rebase && git commit && git push`。
+`git pull-rebase & & git committee & git push ' .
 
 ---
 
-## 六、修订意见处理流程
+# VI. REVISED COMMENTS PROCEDURE
 
-用户给修订意见时，按以下顺序处理：
+When the user gives the revision, the following order is followed:
 
-### 1. 先核查事实（不要直接改）
+# 1. Verification of facts (do not change directly)
 
-如果用户说"X 数据不对"，先用 Bash/Read 找原始数据交叉验证：
-- 看 ai-berkshire 项目里同公司的 earnings/财报报告
-- 看富途/官方披露
-- 给出"用户说的数据 vs 我查到的数据 vs 我之前用的数据"三方对比
+If the user says "X data is wrong", then use Bash/Read to cross-check the original data:
+- Look, the one-berkshire project is the corporate abbot reports.
+- Look for the rich/official disclosure.
+- Give me the "data I've got" cross-check.
 
-### 2. 判断修订级别
+##2. Deciding revision level
 
-| 级别 | 类型 | 处理 |
+Level, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type,
 |------|------|------|
-| 🔥 硬错误 | 数字错、归因错、口径错 | 必改，不需犹豫 |
-| ⚠️ 主观化 | 强主观词、绝对化、流量党比喻 | 弱化或删除 |
-| 🔬 颗粒度 | 来源标注、口径细化 | 优先级低，按可读性平衡 |
-| ❓ 不可靠 | 第三方测算差异大 | **删比改更稳**（用户明确指示） |
+The hysteria of the hysteria, the hardness of the error, the error of the number, the error of the caliber, the error of the caliber, the change of the hysteria, the hysteria of the hysteria, the hysteria of the hysteria, the hysteria of the hysteria, the hysteria of the hysteria, the hysteria of the hysteria, the hysteria of the hysteria, the hysteria of the hysteria, the hysteria of the hysteria, the hysteria of the hysteric, the hysteria of the hysteria, the hysteria of the hysteria, the hysteria of the hysteric, the hysteric, the hysteria of the tres, the tects, the tectity of the treache, the treache of the t being, the ts, the t, the t being the ts, the ts, the ts, the t the t the ts, the ts, the ts, the digit, the t the digit the digit the digit, the t the t the digit of the digits, the ts, the digit the digit the digit the digit the digit the digit the .
+♪ So, what's the point of this?
+<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Unreliable <unk> Third party measurements vary considerably <unk> deletes are more stable than changes** (user clear instructions) <unk>
 
-### 3. 修订后联动检查
+##3. # revised and linked check
 
-修一处先想"哪些地方还会引用这个数字/概念"。例：
-- 改了总市值 → 全系列联动改 PE / 主业 PE / 折让 / FCF Yield
-- 改了持股 % → 改 TOP 10 排序 + 历史持股表 + 减持清单
-- 改了术语口径 → 改首次定义 + 后续引用 + 要点回顾
+So, you can start by thinking, "Where do you think this number/concept is going to be?"
+- Changed total market value * Series of PE/ Main PE/ FCF Yield
+- Changed shareholding %<unk> Reorder TOOP 10+ History holding + Deduction List
+- Changed terminology <unk> Changed definition + Follow-up + Review of Elements
 
-### 4. 推送后立即报告
+##4. Report immediately after delivery
 
 ```
-推送成功（commit hash）。
-[N] 处修订总结 [带表]：
-- 改了什么
-- 联动改了什么
-- 还有什么没改
+_Other Organiser
+[N] Summary of the revision [with table]:
+- Changed what?
+- What's the connection?
+- What else has changed?
 
-下一步等指示。
+Next is the instructions.
 ```
 
 ---
 
-## 七、本 skill 不做什么
+# Seven, Ben skill doesn't do anything
 
-- **不替读者做投资决策**——所有篇章末尾"不构成投资建议"
-- **不预测股价**——只给"情景 + 触发条件"
-- **不算"期望年化回报"加权值**——主观概率分配会误导读者
-- **不写"X 大佬也持有"** —— 用别人的持仓为自己的判断背书是反价值投资的
-- **不强求 8 篇都写**——如果某篇没足够独立内容（如某公司管理层不够特别），合并到其他篇或减篇数
-
----
-
-## 八、合规与隐私
-
-- 所有公开报告**只用公开信息**（财报、官方披露、券商研报、知名第三方机构）
-- 不用任何**用户个人信息**（公司花名、内部 IM、未公开持仓信息）
-- 推送前必须用 grep 扫描 本机用户名 / `/Users/` / 真实姓名 等隐私字段
-- 公开署名按用户多层身份策略，不混用
+- ** Not making investment decisions for readers** - "Do not constitute investment advice" at the end of all chapters
+- ** No share price forecast** - Only "scenario plus trigger conditions"
+- ** Not counting the "expected annualized return" weight** - subjective probability distributions mislead readers
+- ** No "X" too, Big Brother.** - Use someone else's hold as a countervalue investment.
+- ** Not strongly requested 8 articles** — if one is not sufficiently independent (e.g., not sufficiently special for a company management), merge to another or delete
 
 ---
 
-## 一句话总结
+# VIII. Compliance and privacy
 
-**写《看懂 X 系列》的核心能力 ≠ 写得好，而是改得严**——
-89% 的财经长文死于伪精确数字、主观加权期望值、绝对化表述。本 skill 的存在就是为了把这些坑全部标记出来，写之前避开，写之后扫干净。
+- All public reports** are used only with public information** (fiscal, official disclosure, voucher review, recognized third party agency)
+- No ** User Personal Information** (College Name, Internal IM, Unpublished Store Information)
+- Pre-scan with grep the privacy field of the username of the machine / `/ Users/ `/ real name /
+- Open signature based on a multi-layer identity policy, not mixed
+
+---
+
+# One sentence to sum up
+
+** Core ability to write "See and See X" ** well written, but hard modified **-
+89% of the financial paper dies from false precision, subjective weighting of expectations, and absolute expressions. This is the only way that this skill exists is to mark all these pits, avoid writing before writing, and clean them up.

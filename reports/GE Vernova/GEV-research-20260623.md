@@ -1,492 +1,492 @@
-# GE Vernova（GEV）投资研究报告
+#GE Vernova (GEV) investment study
 
-## 巴菲特-芒格-段永平-李录 四大师综合分析框架
+# Buffett-Mung-Dong-Song-Shu-Shing-Li-Shong-Shong-Shong-Shong 4 Masters Integrated Analysis Framework
 
-> **研究日期**：2026年6月23日
-> **当前股价**：$1,127.59（2026年6月22日收盘）
-> **市值**：$3,030亿
-> **52周区间**：$479.04 - $1,181.95
-> **上市日期**：2024年4月2日（从GE拆分）
-
----
-
-## AI研究偏见自觉
-
-### 信息丰富度评级：B级（信息适中）
-
-GE Vernova于2024年4月才从GE拆分独立上市，独立运营历史仅约2年。虽然被38位华尔街分析师覆盖，但独立运营的财务数据仅有FY2024和FY2025两个完整年度（此前为GE母公司的carve-out数据）。Wind业务的实际亏损程度、Prolec GE并购的整合效果、SMR核电的商业化前景等关键变量尚缺乏足够的历史数据验证。
-
-**AI研究陷阱**：AI可能用"合理推测"填补空白——尤其是对Wind业务扭亏时间表、CapEx回报周期、以及AI电力需求的长期持续性做出过于自信的判断。
-
-**应对策略**：每个关键推算标注置信度，区分"有据推算"和"凭空填充"。特别关注：当前$1,128的股价已经上市以来涨了880%，Forward PE 61x——这个价格隐含了什么假设？
-
-**偏见自查**：
-- [x] AI输出与市场共识高度雷同（79%分析师看多）——本报告需重点做反面检验
-- [x] "AI电力需求"叙事极具说服力，容易产生叙事偏差——需量化验证
-- [x] 股价涨880%后容易产生"错过恐惧"（FOMO）——需独立于股价历史评估内在价值
-
-### AI研究局限性声明
-
-本报告财务数据来自GE Vernova官方财报（10-K/10-Q/8-K）、StockAnalysis、Yahoo Finance等公开来源，经工具交叉验证。独立运营历史仅2年，缺乏完整周期数据。竞争格局数据基于Synergy Research、IEA等第三方研究。管理层评价受限于独立运营时间短。行业TAM预测跨度大（29%-41% CAGR），不同机构分歧显著。
+> ** Date of study**: 23 June 2026
+> ** Current stock prices**: $1,127.59 (cut off on 22 June 2026)
+> ** Market value**: $303 billion
+> **52 weeks**: $479.04 - $1,181.95
+> ** Date of listing**: 2 April 2024 (discrete from GE)
 
 ---
 
-## 第一步：关键数据验证记录
+# AI studies prejudices
 
-### 市值验算
+## Information abundance rating: B (median)
 
-| 项目 | 数值 |
+GE Vernova was separated from the GE in April 2024 and has been independently active for only about two years. Although covered by 38 Wall Street analysts, independently operated financial data are available only for two full years (previously carve-out data for the GE parent company).
+
+**AI study trap**: AI may fill the gap with "reasonable speculation" - especially in making overly confident judgements about the Wind business loss schedule, the CapEx return cycle, and the long-term sustainability of AI's electricity demand.
+
+** Response strategy**: Each key extrapolation is trusted, distinguishing between "excerpt," "filled with blanks". Special attention: The current stock price of $1,128 has increased by 880% since it was marketed, and Forward PE 61x -- what are the assumptions that this price implies?
+
+** Prejudice self-examination**:
+- [x] AI output is highly similar to market consensus (79% of analysts are over-represented) - the emphasis in this report is on the negative test
+- [x] The narrative "AI electricity demand" is very convincing and easily leads to a narrative deviation - it needs to be quantified.
+- [x] Stock price increases of 880% make it easy to miss fear - independent of the value inherent in the historical valuation of stock prices
+
+# AI Research Limitations Statement
+
+Financial data for this report are obtained from open sources such as the GE Vernova Official Financial Reporting (10-K/10-Q/8-K), StockAnalysis, Yahoo Finance, and so on, and are cross-tested by the tool. Independent operating history is only two years old, with a lack of complete cycle data. Competition pattern data are based on third-party studies such as Synergy Research, IEA. Management evaluation is limited to short operating hours. The industry Tam forecast is large (29-41% CAGR) and there are significant differences among different agencies.
+
+---
+
+# Step one: key data validation records
+
+# Market value count
+
+<unk> Project <unk> Value <unk>
 |------|------|
-| 股价 | $1,127.59 |
-| 稀释总股本 | 2.6872亿股（来源：StockAnalysis/SEC 10-Q） |
-| 计算市值 | $3,030.1亿 |
-| 报告市值 | $3,030.0亿 |
-| 偏差 | 0.00% ✅ |
+The stock price is $1,127.59.
+<unk> Total dilution of stock <unk> 268.72 million shares (source: StockAnalysis/SEC 10-Q) <unk>
+• Calculate market value
+Report market value
+<unk> deviation <unk> 00%<unk> <unk> <unk>
 
-### 估值指标精确验算
+# # Equivalence of valuation indicators
 
-| 指标 | 计算过程 | 结果 | 说明 |
+<unk> Indicators <unk> Calculation process <unk> Results <unk> Description <unk>
 |------|---------|------|------|
-| PE（TTM） | $1,127.59 / $34.17 | 33.00x | ⚠️ 含大量一次性收益，失真严重 |
-| Forward PE | 基于FY2026E EPS $15.24 | ~61x | 更能反映真实估值水平 |
-| PB | $1,127.59 / $51.81 | 21.76x | 极高 |
-| P/FCF | $1,127.59 / $28.01 | 40.26x | 偏高 |
-| FCF收益率 | $28.01 / $1,127.59 | 2.48% | 偏低 |
-| 股息率 | $2.00 / $1,127.59 | 0.18% | 象征性 |
+<unk> PE(TTM) <unk> $1,127.59 / $34.17 <unk> 33.00 x <unk> with significant one-time earnings, serious loss
+<unk> Forward PE <unk> based on FY2026E EPS $15.24 <unk> 61x <unk> more reflective of the true valuation level <unk>
+<unk> PB <unk> 1,127.59 / $51.81 <unk> 21.76 x <unk> very high <unk>
+<unk> P/FCF <unk> 1,127.59 / $28.01 <unk> 40.26 x <unk> <unk>
+FCF returns $28.01 / $1,127.59 <unk> 2.48% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Estimation rate <unk> $2.00 / $1,127.59 <unk> 0.18% <unk> symbolic <unk>
 
-**关键警示**：TTM EPS $34.17包含Q1 2026的Prolec GE持股重估收益$40亿（税前）、Proficy出售收益$3.3亿、以及FY2025 Q4的$29亿税收优惠。**正常化TTM EPS约$7-10，对应正常化PE约113-161x。** Forward PE 61x（基于FY2026E EPS $15.24）是更合理的参考。
+** Key warning**: TTM EPS $34.17 includes a estimated return of $4 billion (pre-tax) from Prolec GE in Q1,2026, $330 million from Proficy sales, and $2.9 billion from SY2025 Q4.** Normalization of TTM EPS is about $7-10, corresponding to regularization of PE about 113-161x.** Forward PE 61x (based on FY2026E EPS $15.24) is a more reasonable reference.
 
-### 关键财务数据交叉验证
+## Cross-checking key financial data
 
-| 数据项 | 来源1（GEV IR） | 来源2（StockAnalysis） | 偏差 | 结论 |
+Source 1 (GEV IR) <unk> Source 2 (StockAnalysis) <unk>
 |--------|----------------|---------------------|------|------|
-| FY2025总收入 | $380.68亿 | $380.68亿 | 0% | ✅ 一致 |
-| FY2025自由现金流 | $37.49亿 | $37.49亿 | 0% | ✅ 一致 |
-| FY2025 Adj. EBITDA | $32亿 | $32亿 | 0% | ✅ 一致 |
+<unk> FY2025 Total income $38.68 billion <unk> $38.68 billion <unk> 0% <unk> Unanimous <unk>
+<unk> FY2025 Free Cash Flow <unk> $3.749 billion <unk> $3.749 billion <unk> 0% <unk> Unanimous
+SY2025 Adj. EBITDA <unk> $3.2 billion <unk> $3.2 billion <unk> 0% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
 ---
 
-## 第二步：生意本质分析 — 段永平"对的生意"
+# Step 2: Business nature analysis - a piece of "right business"
 
-### 一句话定义
+# One word of definition
 
-**GE Vernova的本质是全球电力基础设施的"卖铲人"——不论世界用什么方式发电（天然气、风电、核电），也不论电力需求为何增长（AI、电动车、再工业化），只要人类需要更多电，GEV就卖发电设备和电网设备，然后靠服务合同收几十年的维护费。**
+** GE Vernova is by nature the "seller" of the global electricity infrastructure - no matter how the world produces electricity (gas, wind, nuclear) or whatever the increase in electricity demand (AI, electric vehicles, re-industrialization), as long as humans need more electricity, GEV sells power generation and grid equipment, and then collects maintenance costs for decades on service contracts**
 
-### 收入结构拆解
+# The income structure is broken down
 
-#### FY2025分部收入
+## # FY2025 branch income
 
-| 分部 | 收入（亿美元） | 占比 | 同比增速 | EBITDA利润率 | 主要产品 |
+<unk> Division <unk> Income ($ billion) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 |------|-------------|------|---------|-------------|---------|
-| Power（电力） | 197.7 | 51.9% | +9% | 14.7% | 燃气轮机（HA级）、蒸汽轮机、核电 |
-| Electrification（电气化） | 96.4 | 25.3% | +28% | ~14.9% | 变压器、高压直流输电、电网设备 |
-| Wind（风电） | 91.1 | 23.9% | -6% | 亏损 | 陆上风电、海上风电 |
-| **合计** | **380.7** | **100%** | **+9%** | **8.4%** | |
+<unk> Power (electric) 197.7 <unk> 51.9 <unk> 14.7 <unk> gas turbine (HA), steam turbine, nuclear power
+<unk> Electricization <unk> 96.4 <unk> 25.3% <unk> <unk> ~ 14.9% <unk> transformer, high voltage direct transmission, grid equipment <unk>
+<unk> Wind (wind) 91.1 <unk> 23.9 <unk> - 6 <unk> Loss <unk> Land wind, sea wind <unk>
+** Total** **380.7 ** 100% ** ** ** ** 9% ** ** 8.4% ** ** ** ** <unk> <unk> <unk> ** ** ** ** ** ** <unk> <unk> <unk> <unk> <unk> **
 
-#### Q1 2026最新季度
+# # Q1 2026 latest quarter
 
-| 分部 | 收入（亿美元） | 同比增速 | EBITDA利润率 | 订单（亿美元） |
+<unk> Income ($ billion) <unk>
 |------|-------------|---------|-------------|-------------|
 | Power | 50.0 | +12% | 16.3% | 100 |
 | Electrification | 29.6 | +61% | 17.8% | 71 |
-| Wind | 14.0 | -23% | 亏损 | 12 |
-| **合计** | **93.4** | **+16%** | **9.6%** | **183** |
+<unk> Wind 14.0 <unk> - 23% <unk> Loss <unk> 12 <unk>
+** Total** ** 93.4 ** ** ** ** 16% ** ** 9.6% ** 183** **
 
-### 5年盈利能力趋势
+# # 5 years of profitability trend
 
-| 指标 | FY2022* | FY2023* | FY2024 | FY2025 | Q1 2026年化 |
+<unk> Indicators <unk> FY2022* <unk> FY2023* <unk> FY2024 <unk> FY2025 <unk> Q1 2026
 |------|---------|---------|--------|--------|------------|
-| 总收入（亿美元） | 296.5 | 332.4 | 349.4 | 380.7 | ~450（指引） |
-| Adj. EBITDA（亿美元） | N/A | 8.1 | 20.4 | 32.0 | ~56（指引中值） |
-| EBITDA利润率 | N/A | 2.4% | 5.8% | 8.4% | 12-14%（指引） |
-| 自由现金流（亿美元） | N/A | 4.4 | 17.0 | 37.5 | 65-75（指引） |
-| 净利润（亿美元） | 亏损 | -4.7 | 15.6 | 49.0** | -- |
+Total income ($) <unk> 296.5 <unk> 332.4 <unk> 349.4 <unk> 380.7 ~450 (Guidance) <unk>
+<unk> Adj. EBITDA (billions of United States dollars) <unk> N/A <unk> 8.1 <unk> 20.4 <unk> 32.0 ~ 56 (median guide) <unk>
+<unk> EBITDA profit margin N/A <unk> 2.4% <unk> 5.8% <unk> 8.4% <unk> 12-14% (Guidance) <unk>
+Free cash flow (in millions of United States dollars)
+Net profits ($ billion) Losses
 
-*FY2022-2023为拆分前carve-out数据 **含$29亿税收优惠
+*FY2022-2023 is carve-out data before split ** contains $2.9 billion in tax concessions
 
-**核心趋势**：利润率从2.4%→5.8%→8.4%→12-14%（指引），FCF从4.4亿→17亿→37.5亿→65-75亿（指引）。改善斜率极为陡峭。
+** Core trend**: Profit margins from 2.4% <unk> 5.8% <unk> 84% <unk> 12-14% (Guidance) and FCF from 440%-1.7 billion – 3.75 billion – 6.5-75 billion (Guidance).
 
-### 商业模式画布
+# Business model canvass
 
-**核心模式**：大型设备销售（一次性）+ 长期服务合同（经常性收入）
+** Core model**: large equipment sales (one-time) + long-term service contracts (recurring income)
 
-- **设备销售**：燃气轮机、变压器、风力发电机——大额、长周期、高壁垒
-- **服务收入**：全球7,000+台燃气轮机和59,000台风机的维护合同——$860亿服务积压，高利润率、高可预见性
-- **订单积压**：总积压$1,630亿——相当于约3.6年的收入，可视性极强
+- ** Sale of equipment**: gas turbines, transformers, wind generators - large, long-cycle, high barriers
+- **Service income**: Maintenance contract for 7,000+ gas turbines and 59,000 typhoons worldwide - $86 billion in backlog of services, high profitability, high predictability
+- **Log backlog**: Total backlog of $163 billion - equivalent to approximately 3.6 years of income, highly visible
 
-### 生态粘性/客户锁定强度
+# Eco-cooter/client lock strength
 
-**极强。** 具体证据：
+** Very strong.** Specific evidence:
 
-1. **装机基础锁定**：全球7,000+台GE燃气轮机在运行，每台寿命30-40年。更换供应商意味着重新培训、重新认证、重新配套——成本和时间都不可接受
-2. **长期服务协议（LTSA）**：典型合同期10-20年，涵盖大修、备件、远程监控。$860亿服务积压就是未来多年的锁定收入
-3. **技术锁定**：GE的HA级燃气轮机（效率>64%）与其控制系统深度绑定，客户不可能只换硬件不换软件
-4. **认证壁垒**：电网设备（变压器、断路器等）需要各国电力监管机构认证，新供应商进入需要数年
+** Reloading base locked**: 7,000+ GE gas turbines are in operation worldwide, with a life span of 30-40 years each. Change of supplier means re-training, re-certification, re-packaging — costs and time are unacceptable
+2. **LSA: typical contract period of 10-20 years covering major repairs, spare parts, remote monitoring. $86 billion of service backlog is targeted revenue for years to come
+3. **Technology lock-in**: HA-class gas turbines (efficiency > 64%) are tied to their control system depth and the client cannot change hardware without software
+4. ** Certification barriers**: grid equipment (voltage transformers, circuit breakers, etc.) requires certification by national power regulators and entry by new suppliers takes several years
 
-### 毛利率分析
+# Māori rate analysis
 
-| 对比项 | GE Vernova | Siemens Energy | Vestas | Eaton | Emerson |
+♪ The world's greatest ♪
 |--------|-----------|---------------|--------|-------|---------|
-| 毛利率 | 20.3% | 18.8% | 13.5% | 37.1% | 52.7% |
-| 营业利润率 | 6.2% | 7.0% | 6.1% | 18.6% | 24.5% |
+<unk> Māori rate <unk> 20.3% <unk> 18.8% <unk> 13.5% <unk> 37.1% <unk> 52.7% <unk>
+<unk> Operating profit rate 6.2% <unk> 7.0% <unk> 6.1% <unk> 18.6% <unk> 24.5% <unk>
 
-GEV毛利率在电力设备同行中处于中上水平，但显著低于Eaton（电气配电）和Emerson（自动化）。原因：
-1. Wind业务亏损严重拖累整体利润率
-2. 大型设备制造（燃气轮机、变压器）的原材料和人工成本高
-3. 利润率正在快速改善——Power从12.5%→14.7%→16.3%，Electrification从9%→14.9%→17.8%
+The GEV Māori ratio is at a medium level among the electricity equipment peers, but is significantly lower than that of Eaton (electric distribution) and Emerson (automated).
+1. Wind operating losses significantly drag overall profit margins
+2. High raw materials and labour costs for large equipment manufacture (gas turbines, transformers)
+Profit margins are improving rapidly - Power from 12.5% ~ 14.7% ~ 16.3%, Electrication from 9% ~ 14.9% ~ 17.8%
 
-### 经营杠杆
+# And you're going to be a lever
 
-**显著且正在释放。** EBITDA利润率从2.4%（FY2023）到8.4%（FY2025）再到12-14%（FY2026指引），2028年目标20%。经营杠杆来自：
-1. 高定价权——燃气轮机供不应求，新订单价格持续高于积压
-2. 固定成本摊薄——收入增长快于固定费用增长
-3. Wind业务亏损收窄——从-$5.88亿→-$5.98亿→-$4亿（指引），最终预期转正
+** Notable and in the process of release.** EBITDA profit margins range from 2.4% (FY2023) to 8.4% (FY2025) to 12-14% (FY2026) and target 20% for 2028.
+High pricing power — gas turbines are in short supply and new orders continue to be priced at higher prices than backlogs
+Fixed cost amortization — income grew faster than fixed cost
+Wind operations losses were narrow - from $588 million to $598 million to $400 million (Guidance), with a final expected turnaround
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-**这门生意好在哪？如果只能用一句话描述，是什么？**
+** Where's the business? If there's only one word to describe it, what?**
 
-> **GEV卖的是全球电力系统的"刚需设备"——不管经济好坏、不管哪个党执政、不管AI热不热，人类都需要电，而GEV的燃气轮机和变压器是发电和输电的物理基础，没有替代品。更好的是，每卖一台设备就锁定30年的服务收入。**
+> **GEV sells the global power system "just-in-demand equipment" -- no matter what the economy is, no matter what party is in power, no matter whether AI is hot, humans need electricity, and GEV gas turbines and transformers are the physical basis for power generation and transmission, with no alternatives. Better yet, 30 years of service income are locked in every single piece of equipment.**
 >
-> 但这门生意有一个明显的"坏处"：Wind业务持续亏损、海上风电项目Vineyard Wind面临$8亿+诉讼、叶片质量问题严重。这不是一门"全好"的生意，而是"两好一坏"——Power和Electrification极好，Wind是个黑洞。
+> But there is a clear "bad" in this business: Wind has a continuing loss, the offshore wind project Vineyard Wind faces $800 million in litigation, leaves quality problems are serious. This is not a "good" business, but a "good and bad" business — Power and Electrification are great, Wind is a black hole.
 
 ---
 
-## 第三步：护城河评估 — 巴菲特"经济护城河"
+# Step three: A moat river assessment -- Buffett "The Economic moat."
 
-### 五类护城河逐一验证
+# Five-class moats to verify
 
-| 护城河类型 | 强度 | 验证证据 |
+♪ The moat type ♪
 |-----------|------|---------|
-| **品牌/定价权** | ★★★★★ | 燃气轮机积压从50GW增至100GW，新订单价格持续高于存量积压——在产能稀缺下拥有绝对定价权。Electrification板块book-to-bill 2.5x说明需求远超供给。 |
-| **转换成本** | ★★★★★ | 燃气轮机寿命30-40年，更换供应商需重新设计电厂、重新认证、重新培训。7,000+台装机基础=7,000+个锁定客户。电网设备认证周期3-5年。 |
-| **网络效应** | ★★☆☆☆ | 电力设备不具备典型的网络效应。但GEV的全球服务网络（覆盖170+国家）形成了一定的规模网络优势——服务站越多，响应越快，客户越倾向选择GEV。 |
-| **规模效应** | ★★★★☆ | 全球最大燃气轮机装机基础（7,000+台）分摊研发成本。年研发投入约$15-20亿（估计），覆盖Power+Wind+Electrification三大领域。$110亿资本开支计划（2025-2028）建立产能壁垒。 |
-| **技术/专利壁垒** | ★★★★★ | GE HA级燃气轮机效率>64%，全球领先。大型燃气轮机制造涉及高温合金、精密铸造、叶片冷却等极端技术，全球仅3家企业掌握（GE、西门子、三菱）。BWRX-300 SMR技术是长期独特资产。 |
+** Brand/pricing rights** <unk> Gas turbine backlog increased from 50 GW to 100 GW, and new orders continued to be priced above stock backlogs - absolute pricing rights in the case of scarce capacity. The Electrification block book-to-bill 2.5x indicates that demand is far above supply.
+<unk> ** Conversion cost** <unk> Gas turbine lifetime 30-40 years, and replacement of suppliers requires re-engineering, re-certification, re-training. 7,000+ installed base = 7,000+ locked customers.
+<unk> ** Network effect** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+**Scalation effects** <unk> The world’s largest gas turbine installation base (7,000+) shares R & D costs. R & D investment is estimated at $1.5-20 billion (estimated) per year, covering three main areas of Power+Wind+Electrication. $11 billion in capital expenditure plans (2025-2028) creates barriers to capacity.
+**Technology/patent barriers** <unk> <unk> GE HA class gas turbine efficiency > 64%, leading the world. Large gas turbine mechanisms involve extreme technologies such as high-temperature alloys, precision casting, leaf cooling, and are owned by only three companies worldwide (GE, Siemens, Mitsubishi). BWRX-300 SMR technology is a unique long-term asset.
 
-### 护城河趋势分析
+# A trend analysis of the moat
 
-**过去2年（拆分以来）：显著变宽**
-- 燃气轮机积压从50GW翻倍至100GW，定价权大幅增强
-- Electrification板块因变压器供不应求而爆发，book-to-bill达2.5x
-- 收购Prolec GE完善变压器全球产能布局
-- 服务积压从不到$800亿增至$860亿
+** The last two years (since split): significant width**
+- The gas turbine backlog doubled from 50 GW to 100 GW, with a significant increase in pricing authority
+- Electrication plate burst due to the demand for transformers, book-to-bill up to 2.5 x
+- Acquisition of Prolec GE to perfect the global production profile of transformers
+- The backlog of services has increased from less than $80 billion to $86 billion
 
-**未来5年预判：继续变宽，但需关注Wind**
-- **加宽因素**：AI数据中心电力需求结构性增长、全球电网老化升级周期、天然气作为过渡燃料的持续需求、SMR核电商业化
-- **收窄风险**：Wind业务如果持续亏损可能拖累整体资源配置；海上风电技术路线的不确定性；如果AI投资周期放缓，数据中心电力需求增速可能低于预期
+** Prejudice for the next five years: continued to be wider, but attention needs to be paid to Wind**
+- ** Widening factor**: Structural growth in electricity demand in the AI data centre, global grid ageing and upgrading cycle, continuing demand for natural gas as a transit fuel, commercialization of SMR nuclear power
+- **Shrink risk**: Wind operations may be burdened with overall resource allocation if there is a continuing loss; uncertainties about the sea wind and power technology route; and the data centre electricity demand may increase less than expected if the AI investment cycle slows down
 
-### 巴菲特式追问
+# Barfith-style questioning
 
-**10年后这条护城河还在吗？什么能摧毁它？**
+** Is this moat still in place in 10 years? What can destroy it?**
 
-> **转换成本和技术壁垒护城河10年后仍在——大型燃气轮机和电网设备的物理特性决定了客户不会轻易更换供应商。7,000+台装机基础在未来30年都将产生服务收入。**
+> **The conversion costs and technical barriers are still in place 10 years later - the physical properties of large gas turbines and grid equipment do not make it easy for customers to replace their suppliers. ** The 7,000+ installed aircraft base will generate service income over the next 30 years**
 >
-> **能摧毁护城河的场景**：①全球快速转向100%可再生能源+电池储能，天然气发电被彻底淘汰——但目前看这至少需要20-30年，且天然气作为调峰电源的角色短期内不可替代；②一种全新的发电技术（如成熟的核聚变）让现有设备过时——概率极低；③竞争对手（三菱或中国厂商）在技术上超越GE——可能性存在但短期内不大。
+> ** The scene of the destruction of the moat river**: a rapid global shift towards 100 per cent renewable energy + battery storage, complete phase-out of natural gas power generation - which would take at least 20-30 years at present and which would not be a substitute for the role of natural gas as a power source for the peak in the short term; a completely new generation technology (e.g. mature fusion) that would make existing equipment obsolete — the probability is extremely low; and the possibility that competitors (the Mitsubishi or Chinese manufacturers) will technically outpace GE is unlikely to exist.
 >
-> **最现实的风险不是护城河被摧毁，而是"AI电力需求"叙事被证伪——如果数据中心电力需求增长远低于预期，GEV的增长故事将大打折扣，但基础业务（存量服务）仍然稳固。**
+> ** The most realistic risk is not the destruction of the moat, but the narrative "AI power demand" is false — if the data centre's electricity demand grows far below expectations, the GEO growth story will be greatly reduced, but basic operations (stock services) remain strong**.
 
 ---
 
-## 第四步：逆向思考与风险清单 — 芒格"反过来想"
+# Step four: Reverse thinking and risk list - Manger "inverted"
 
-### GE Vernova可能失败的所有路径
+# Ge Vernova could fail all the paths
 
-| 失败路径 | 概率 | 影响程度 | 时间窗口 | 详细描述 |
+<unk> Failed path <unk> probabilities <unk> Impact degree <unk> Time window <unk> Detailed description <unk>
 |---------|------|---------|---------|---------|
-| 估值泡沫破裂 | 35% | 高 | 1-2年 | Forward PE 61x隐含极乐观预期，任何增长放缓信号都可能导致30-50%回调 |
-| AI电力需求低于预期 | 20% | 高 | 2-4年 | 如果AI投资周期放缓或效率提升减少电力需求，GEV的"AI电力"估值溢价将蒸发 |
-| Wind业务持续失血 | 30% | 中 | 1-3年 | Vineyard Wind诉讼（$8亿+）、海上风电叶片质量问题、2026年仍预亏$4亿 |
-| 周期性逆转 | 15% | 高 | 3-5年 | 电力设备本质上是周期性行业，当前处于罕见上行周期，2017-2020年的衰退证明周期会逆转 |
-| 产能/供应链执行不力 | 20% | 中 | 1-3年 | $1,630亿积压能否高效转化为利润？$110亿CapEx能否按时转化为产能？ |
-| 反垄断/监管风险 | 10% | 中 | 2-5年 | 如果GEV在燃气轮机市场的主导地位引发监管关注 |
-| 天然气长期需求下降 | 15% | 中高 | 5-10年 | 如果可再生能源+储能成本持续下降，天然气发电的长期角色被削弱 |
+<unk> Valuation foam bursting 35% <unk> high 1-2 years <unk> Forward PE 61x implied a very optimistic expectation that any sign of slower growth could lead to a 30-50% return
+<unk> AI's electricity demand is lower than expected <unk> 20% <unk> 2-4 years <unk> if the AI investment cycle slows down or efficiency increases to reduce electricity demand, the GEO's "AI Power" valuation premium will evaporate <unk>
+<unk> Wind business continues to bleed 30% <unk> 1-3 <unk> Vineyard Wind litigation ($800 million+), sea wind blade quality problems, still a shortfall of $400 million in 2026 <unk>
+The power plant is essentially a cyclical industry, currently in a rare upward cycle, and the recession cycle from 2017 to 2020 will reverse.
+Can the $163 billion backlog be efficiently converted into profits? Can $11 billion CapEx be converted into capacity on time?
+<unk> Antimonopoly/regulation risk <unk> 10% <unk> 2-5 years <unk> If the dominance of the GEV in the gas turbine market is causing regulatory concern <unk>
+The long-term role of natural gas in power generation is weakened if the cost of renewable energy plus storage continues to decline.
 
-### 历史类比
+# History analogy
 
-**类比1：2014-2016年的油服公司（Schlumberger/Halliburton）**
-- 页岩油革命推动油服公司订单暴增、股价飙涨
-- 之后油价暴跌导致油服公司收入腰斩、股价暴跌60-70%
-- **警示**：GEV的当前上行周期是否类似油服公司的"周期顶部"？
+** Analog 1: Flumberger/Halliburton 2014-2016**
+- The shale oil revolution pushed the oil-coat company to order a huge increase in stock prices.
+- The subsequent collapse in oil prices led to a sharp drop in the revenue of the oil-suit companies and a 60-70 per cent drop in stock prices
+- **Amendment**: Is the current GEOV up-cycle similar to the "top of the cycle" of the oil-suit company?
 
-**类比2：2000年的Cisco（互联网基础设施"卖铲人"）**
-- Cisco因互联网基础设施需求爆发而成为全球市值最大公司之一
-- 2000年PE达120x，之后互联网泡沫破裂，股价暴跌80%
-- **警示**：GEV作为AI电力基础设施的"卖铲人"，是否也享受着过高的叙事溢价？
+** Paranoid 2: Cisco 2000**
+- Cisco became one of the largest companies in the world in market because of the outbreak of Internet infrastructure needs
+- PE reached 120x in 2000, and then the Internet bubble burst, and stock prices fell by 80%.
+- **Amour**: Does GEV enjoy excessive press premium as a "seller" of AI's power infrastructure?
 
-**类比3：拆分后的GE Healthcare（GEHC）**
-- 2023年从GE拆分，上市后股价稳步上涨，但涨幅远不如GEV
-- 两者区别：GEHC面临的行业增长温和，GEV则赶上了AI电力超级周期
-- **启示**：GEV的高涨幅部分归功于"天时"（赶上AI叙事），而非纯粹的基本面改善
+** Alteration 3: split GE Healthcare (GEHC)**
+- Split from GE in 2023, and stock prices rose steadily after listing, but far less than the GEV.
+- The difference: GEHC faces moderate growth in the industry, and GEV catch up with AI ' s power supercycle
+- ** Apocalypse**: The increase in GEO is partly due to "Change Time" rather than purely basic improvements
 
-### 偏误自查
+# I'm wrong to check myself
 
-- **叙事偏差**：AI数据中心→电力需求暴增→GEV是最大受益者——这个叙事链极具说服力，但需要量化：Q1 2026数据中心订单$24亿仅占总订单$183亿的13%，AI并非唯一驱动力
-- **锚定效应**：股价从$141涨到$1,128，容易产生"还会继续涨"的锚定——需独立评估内在价值
-- **幸存者偏差**：GEV是从GE拆分出来的"优质资产"，但GE本身经历了20年的价值毁灭——不应因为拆分后表现好就忘记母公司的历史教训
+- ** Narrative deviation**: AI Data Centre <unk> Step Increase in electricity demand <unk> GEV is the biggest beneficiary <unk> The narrative chain is very convincing, but needs to be quantified: Q1,2026 data centre orders amount to only 13% of the total $18.3 billion, and AI is not the only driver
+- **Assort effect**: stock prices increased from $141 to $1,128, which is easy to generate anchors that "will continue to rise" - need to be independently evaluated for intrinsic value
+- ** Survivors' deviation**: GEV was split from GE's "good asset", but GE itself has been destroyed for 20 years - it's not the history of the parent company that should be forgotten because it's been broken up well.
 
-### 空方核心论点汇总
+# # A summary of empty core arguments
 
-1. **Forward PE 61x是工业股历史罕见水平**——Morningstar公允价值仅$540，当前股价溢价超100%
-2. **物理产能限制**——设备销售增长上限约1.5倍，远低于估值隐含的利润翻三倍预期
-3. **Wind业务是个黑洞**——2026年仍预亏$4亿，Vineyard Wind诉讼$8亿+，68块叶片存在粘合缺陷
-4. **内部人大量卖出**——过去24个月内部人净方向偏卖
-5. **周期性风险**——当前处于罕见上行周期，但电力设备行业的周期性不会消失
+**Forward PE 61x is a historical rare level of industrial stock** — Morningstar's fair value is only $540 and the current stock premium is over 100%
+** Physics capacity limitation** — equipment sales have increased by about 1.5 times the maximum, well below the projected triple profit margin implied in the valuation
+** Wind business is a black hole** — $400 million in 2026, $800 million in Vineyard Wind litigation, 68 pieces of leaves with sticky defects
+** Massive sales by insiders** — net sales by insiders over the past 24 months
+** Periodic risk** — Current up-cycles are rare, but the cyclicality of the electricity equipment industry will not disappear
 
-### 芒格式追问
+# Man format questions
 
-**我最可能在哪里犯错？聪明人为什么会不买/做空这家公司？**
+** Where would I most likely make a mistake? Why would a smart man not buy the company? **
 
-> **最可能犯的错误是被"AI电力需求"的宏大叙事所迷惑，忽视了这是一门受物理产能限制的制造业。** 即使需求无限大，GEV的工厂一年只能生产那么多台燃气轮机和变压器。Forward PE 61x隐含的增长预期，可能已经把未来5-7年的增长都price in了。
+> ** The most likely mistake was to be confused by the grand narrative of "AI's electricity demand" and to ignore the fact that it is a manufacturing industry that is limited by physical capacity.** Even with unlimited demand, GEO plants can produce only so many gas turbines and transformers a year. Forward PE 61x implied growth expectations, probably already have a price in the next 5-7 years.
 >
-> **Morningstar给$540公允价值的逻辑**：采用"穿越周期"估值法——当前盈利是峰值而非常态，长期正常化利润率远低于当前水平。如果他们是对的，当前股价高估了100%。
+> **Morningstar logic for fair value $540**: Adopt "over-cycle" valuations - current profits are peak and extraordinary, long-term normalized profit margins are much lower than current levels. If they are right, current stock prices are overestimated by 100%.
 >
-> **聪明人不买的理由**：在Forward PE 61x买入一家工业设备制造商，你需要相信这不是周期顶部、AI电力需求会持续超预期、Wind业务会扭亏、$1,630亿积压能全部高效转化——任何一个假设被证伪，都意味着显著下跌。
+> ** Reason why smart people don't buy**: Buying a manufacturer of industrial equipment in Forward PE 61x, you need to believe that this is not the top of the cycle, that AI's electricity demand will continue to be over-expected, that Wind will lose business, that $163 billion of the backlog will be fully efficient -- any hypothesis that is false would mean a significant decline.
 
 ---
 
-## 第五步：管理层评估 — 段永平"对的人" + 巴菲特"管理层诚信"
+# Step five: Management assessment - "The Right Man" # "Management Integrity"
 
-### CEO Scott Strazik 关键决策复盘
+# CEO Scott Strazik Key Decision Recup
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2024年4月 | 成功带领GEV从GE拆分独立上市 | 零长期债务上市，结构清晰 | ★★★★★ |
-| 2024-2025 | 聚焦Power和Electrification盈利改善 | EBITDA利润率从2.4%提升至8.4% | ★★★★★ |
-| 2025年12月 | Investor Day上调长期指引，股息翻倍，回购增至$100亿 | 市场反应极为正面 | ★★★★☆ |
-| 2026年2月 | 以$52.75亿收购Prolec GE剩余50%股权 | 全球变压器产能大幅提升，战略正确 | ★★★★☆ |
-| 2024-2026 | 对Wind业务采取务实策略——缩减海上风电、裁员900人 | 亏损收窄方向正确，但Vineyard Wind诉讼是遗留问题 | ★★★☆☆ |
-| 2026 Q1 | 上调2026全年指引（收入$445-455亿、EBITDA 12-14%、FCF $65-75亿） | 超市场预期，股价当日涨14% | ★★★★★ |
+April 2024, successful in leading GEV to split its own separate listings, zero long-term debt listings, clear structure, and no one to be able to get it.
+<unk> 2024-2025 Focus Power and Electrication <unk> EBITDA profit margin increased from 2.4% to 8.4% <unk>
+December 2025, the Investor Day upgraded long-term guidelines, doubled dividends, and bought back $10 billion.
+The remaining 50% of Prolec GE was purchased for $5.275 billion in February 2026.
+2024-2026 Practical strategy for Wind operations - wind down the sea, downsized 900 people - losses are in the right direction, but Vineyard Wind is a legacy
+2026 Q1 <unk> Upgraded 2026 year-round guidelines (income US$ 44.545 billion, EBITDA 12-14%, FCF $6.5.5 billion) <unk> Supermarket forecasted 14% increase in stock prices on the same day
 
-**总体评价**：Strazik是一位务实、专注的工业管理者。在GE内部多年历练（曾负责Power业务），对这门生意有深刻理解。拆分后迅速聚焦核心业务、改善利润率、收缩亏损业务——执行力强。但独立运营仅2年，尚需更长时间验证。
+** Overall evaluation**: Strazik is a pragmatic and focused industrial manager. There is a strong understanding of this business through years of practice within GE (who was in charge of Power business).
 
-### 资本配置
+# Capital allocation
 
-| 维度 | 评价 | 评分 |
+<unk> Dimensions <unk> Evaluation <unk> Rating <unk>
 |------|------|------|
-| 并购 | Prolec GE收购战略正确（变压器供不应求时扩产能） | ★★★★☆ |
-| 回购 | $100亿回购授权，2025年返还$36亿——积极回馈股东 | ★★★★☆ |
-| 股息 | 年股息$2/股（收益率仅0.18%），2025年12月翻倍 | ★★★☆☆ |
-| CapEx | $110亿资本开支计划（2025-2028），聚焦产能扩张 | ★★★★☆ |
-| Wind战略 | 收缩海上风电、裁员——务实但不够果断（应更早/更彻底退出） | ★★★☆☆ |
+The acquisition strategy of Prolec GE is correct (exploitation of capacity when the supply of transformers should not be needed)
+Repurchases $10 billion, return of $3.6 billion in 2025 - active feedback to shareholders
+Annual dividends at $2/s (return rate of 0.18 per cent) doubled in December 2025
+CapEx, $11 billion capital expenditure plan (2025-2028), with a focus on expanding production capacity
+<unk> Wind strategy, shrinking the wind, downsizing at sea - pragmatic but not decisive (should be withdrawn earlier/more completely) <unk>
 
-### 股东利益一致性
+# Shareholder interest consistency
 
-| 指标 | 数据 | 评价 |
+Indicators Data Evaluation
 |------|------|------|
-| 内部人持股 | ~0.05% | 极低——拆分后管理层持股比例很小 |
-| 内部人交易 | 过去24个月净卖出 | 方向偏卖，但可能是10b5-1预设计划 |
-| 回购力度 | $100亿授权，2025年返还$36亿 | 积极 |
-| Druckenmiller建仓 | 2025年Q3新建仓GEV | 重要外部验证信号 |
+<unk> Internal holdings ~ 0.05% ~ very low - very small management share after split ~
+The insider's deal, the net sale over the last 24 months, the sale in the direction of the sale, but it could be a 10b5-1 preset plan, the sale in the direction of the sale, the sale in the direction of the sale in the last 24 months, the sale in the direction of the sale in the direction of the sale in the first place, the sale in the first place, the sale in the first place, the sale in the first place, the sale in the second place, the sale in the second place, the sale in the second place, the sale in the second place, the sale in the second place, the sale in the second place, the sale in the second place, the sale in the second place, the sale in the second place, the sale in the second place, the sale in the second place, the sale in the second place, the sale in the second, the first in the second in the second place, the first in the second in the second in the second in the second in the second in the second in the second in the second in the second in the second in the second in the second.
+Repurchase effort $10 billion, return $3.6 billion in 2025
+<unk> Druckenmiller Construction warehouse <unk> New warehouse GEV in Q3 in 2025
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-**如果CEO退休，这家公司还能保持竞争力吗？**
+** If the CEO retires, will the company remain competitive?**
 
-> **能。** GEV的护城河是结构性的——7,000+台燃气轮机装机基础、$860亿服务积压、全球电网设备认证——这些不依赖任何个人。大型燃气轮机制造的核心技术积累在组织层面，而非个人。但Strazik的执行力和务实风格对利润率改善的贡献不可忽视，继任者需要维持这种纪律性。
+> ** Can.** The GEO moat is a structural — 7,000+ gas turbines, a backlog of 86 billion services, global grid equipment certification — and these are not dependent on any individual. The core technology built by the large gas turbines is built at the organizational level, not at the individual level. But Strazik's enforcement and practical style make a contribution to improved profitability.
 
 ---
 
-## 第六步：行业与文明趋势 — 李录"文明演进框架"
+# Step 6: Industry and civilizational trends - Lee Siu ' s Framework for Civilization Evolution
 
-### 是否处于"文明级范式转移"？
+# Is it in "civilizational paradigm shift"?
 
-**是的。** 全球正经历三重电力需求叠加：AI数据中心→电力需求暴增、能源转型→清洁发电替代化石燃料、电气化→交通/工业从燃油转向电力。这是自1880年代电力革命以来最大的一次电力基础设施投资周期。
+** Yes.** The world is experiencing a triple power demand convergence: the AI data centre has experienced a surge in electricity demand, energy transformation has replaced fossil fuels with clean electricity generation, and electrification has shifted transport/industry from fuel to electricity. This is the largest cycle of investment in electricity infrastructure since the electricity revolution in the 1880s.
 
-### TAM增长曲线与天花板
+# Tam growth curves and ceilings
 
-| 市场 | 当前规模（估计） | 2030年预测 | CAGR | GEV定位 |
+Current size (estimate)
 |------|----------------|----------|------|---------|
-| 全球燃气轮机 | ~$200亿 | ~$350亿 | 8-10% | 第一（市场份额~33%） |
-| 全球风电设备 | ~$1,000亿 | ~$1,500亿+ | 7-10% | 第三（陆上~15%，海上缩减） |
-| 全球电网/变压器 | ~$3,000亿 | ~$5,000亿+ | 10-15% | 前五 |
-| 全球核电/SMR | ~$500亿 | ~$1,000亿+ | 10-15% | 领先SMR技术（BWRX-300） |
-| 全球电力投资总计 | ~$1.2万亿 | ~$2万亿+ | 10-12% | 多领域参与 |
+<unk> Global gas turbine ~ $20 billion ~ $35 billion ~ 8-10% <unk> 1 (market share ~ 33%) <unk>
+<unk> Global wind power equipment ~ $100 billion ~ $150 billion + 7-10% <unk> Third (land ~ 15%, sea shrink) <unk>
+<unk> Global grid/transformation power ~ $300 billion ~ $500 billion + 10-15% <unk> top five <unk>
+<unk> Global nuclear power/SMR ~ $50 billion ~ $100 billion + 10-15% <unk> leading SMR technology (BWRX-300) <unk>
+Global electricity investment totals $1.2 trillion, $2 trillion plus 10-12%, multi-sector participation, and the number of countries that are in the process of becoming involved in the process.
 
-**置信度说明**：以上TAM数据跨度较大，不同机构预测差异显著。燃气轮机市场数据较可靠（3家供应商垄断，数据透明），电网/变压器数据中等可靠（市场分散，统计口径不一），SMR市场数据置信度较低（商业化前景高度不确定）。
+** Trust note**: The above TAM data are of a large range and differ significantly from one agency to another. The gas turbine market data are more reliable (three suppliers monopolize, data transparency), the grid/voltage transformer data are more reliable (segregated, statistically diverse), and the SMR market data are less reliable (highly uncertain commercialization prospects).
 
-### AI数据中心电力需求
+# # AI data centre electricity demand
 
-- IEA预测2024-2030年**美国数据中心电力需求增长130%**
-- Q1 2026仅Electrification板块就获得$24亿数据中心相关订单，超2025全年总和
-- 微软、谷歌、亚马逊、Meta等超大规模企业的电力采购计划持续扩大
-- 但需要注意：数据中心订单仅占GEV Q1 2026总订单的~13%——"AI电力"是重要催化剂但不是唯一驱动力
+- IEA forecasts 130 per cent increase in electricity demand for the United States data centre in 2024-2030**
+- Q1,2026 Electrication plates alone received $2.4 billion in data centre-related orders, exceeding the total of 2025
+- Continued expansion of electricity procurement schemes in mega-scale enterprises such as Microsoft, Google, Amazon and Meta
+- But note that data centre orders represent only ~13% of the GEV Q1 2026 total -- "AI Power" is an important catalyst, but not the only driver.
 
-### 公司在产业价值链中的位置
+# The company's position in the industrial value chain
 
-GEV占据电力价值链的**上游设备制造**环节——发电设备（燃气轮机、风机、核电）和输配电设备（变压器、高压直流输电）。这是一个"卖铲人"的位置：无论最终用户是谁（数据中心、工厂、家庭），只要需要电，就需要GEV的设备。
+GEOV occupies the upstream equipment manufacturing** link of the electricity value chain ** - power generation equipment (gas turbines, wind machines, nuclear power) and transmission and distribution equipment (voltage transformers, high voltage direct transmission). This is the position of the "seller": whoever the end-user (data centre, factory, household) needs the GEO equipment whenever electricity is needed.
 
-**优势**：不依赖具体的终端应用场景，受益于所有电力需求增长。
-**劣势**：制造业受物理产能限制，无法像软件公司那样边际成本接近零地扩张。
+**Success**: Not dependent on specific end-use scenarios, benefiting from all the increase in electricity demand.
+** Disadvantage**: Manufacturing is limited by physical capacity and cannot expand at a marginal cost close to zero, as is the case with software companies.
 
-### 李录式追问
+# Lee's asking questions
 
-**站在20年后回看，这家公司是"这个时代的标准石油"还是"昙花一现的3Com"？**
+** Standing here 20 years later, is this company Standard Oil of the Age or 3Com of the Expedition?**
 
-> **更像是"这个时代的Caterpillar或ABB"——一家在基础设施建设周期中持续受益的优质工业企业，但不是"标准石油"级别的垄断者。**
+> ** More like "Caterpillar or ABB of the era" - a high-quality industrial enterprise that has continued to benefit from the infrastructure construction cycle, but not a monopoly of the standard oil level.**
 >
-> 标准石油之所以伟大，是因为它控制了石油的炼制和运输——整个价值链的咽喉。GEV虽然在燃气轮机领域有极强地位，但电力行业的价值链比石油更分散——发电、输电、配电、储能、智能电网——GEV只覆盖其中一部分。
+> Standard oil is great because it controls the refining and transportation of oil - the throat of the entire value chain. While GEO has a strong position in the gas turbines, the electricity sector has a more fragmented value chain than oil — power generation, transmission, distribution, storage, smart grids — GEOV covers only a portion of it.
 >
-> 20年后GEV大概率仍然是全球最重要的电力设备公司之一——7,000+台燃气轮机的服务收入、SMR核电的商业化、电网升级的持续需求——这些是长期的结构性支撑。但它不会成为"标准石油"，因为电力行业的结构不允许任何一家公司垄断。
+> 20 years later, GEOV probably remains one of the most important power equipment companies in the world – the revenue from services of 7,000+ gas turbines, the commercialization of SMR nuclear power, and the continuing demand for grid upgrading – these are long-term structural underpinnings. It will not become "standard oil" because the structure of the electricity industry does not allow any single company to monopolize.
 >
-> **不太可能是"3Com"**：GEV有$380亿年收入、$37.5亿FCF、$1,630亿积压订单、全球垄断级的燃气轮机技术——这不是一家可能突然消失的公司。风险不是"消亡"，而是"估值过高导致回报不佳"。
+> ** unlikely to be a "3Com"**: GEO has $3.80 billion in revenue, $3.75 billion in FCF, $163 billion in backlog orders, global monopoly-level gas turbine technology -- not a company that could suddenly disappear. The risk is not "lost," but "excessive valuation leads to poor returns".
 
 ---
 
-## 第七步：估值与安全边际 — 巴菲特"内在价值" + 段永平"对的价格"
+# Step seven: valuation and security margin -- Barfitt "inner value" + price of "right"
 
-### 当前市场定价
+# Current market pricing
 
-| 指标 | 当前值 | 说明 |
+Indicators Current value Description
 |------|-------|------|
-| PE（TTM） | 33.0x | ⚠️ 含大量一次性收益，严重失真 |
-| **Forward PE** | **61.0x** | **更能反映真实估值——工业股历史罕见** |
-| PS | 7.70x | 同行中最高 |
-| EV/EBITDA（TTM） | 87.0x | TTM EBITDA基数低 |
-| EV/EBITDA（FY2026E） | ~50x | 仍显著高于同行 |
-| P/FCF | 40.3x | 偏高 |
-| PB | 21.8x | 极高 |
-| FCF收益率 | 2.48% | 偏低 |
+<unk> PE(TTM) <unk> 33.0x <unk> with a large one-time profit and serious distortion
+**Forward PE** **61.0x** ** More reflective of true valuation — industrial unit history is rare** **
+<unk> PS<unk> 7.70x<unk> Top <unk>
+<unk> EV/EBITDA(TTM) <unk> 87.0x <unk> TTM EBITDA base figure <unk>
+<unk> EV/EBITDA(FY2026E)<unk> 50x<unk> is still significantly higher than the peer
+P/FCF <unk> 40.3x <unk> High <unk>
+PB <unk> 21.8 x <unk>
+FCF rate of return 2.48%
 
-### 同行估值对比
+# # Peer valuation comparison
 
-| 指标 | **GEV** | Siemens Energy | Vestas | Eaton | Emerson |
+<unk> Indicators <unk> GEV** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 |------|---------|---------------|--------|-------|---------|
 | Forward PE | **61.0x** | 32.5x | 20.7x | 31.0x | 22.1x |
 | PS | **7.70x** | 3.60x | 1.26x | 5.93x | 4.59x |
 | EV/Revenue | **7.54x** | 3.41x | 1.23x | 6.67x | 5.26x |
 | PEG | **1.93x** | 0.59x | 0.62x | 3.23x | 2.16x |
 
-**GEV是同行中估值最贵的——无论以哪个指标衡量。**
+** GEOV is the most expensive valuation in the peer — measured by any indicator.**
 
-### 反向DCF：当前股价隐含了什么增长预期？
+# Inverse DCF: What are the growth expectations implied in current stock prices?
 
-当前市值$3,030亿，FY2025 Adj. EBITDA $32亿，FY2026指引中值$56亿：
-- 当前市值 / FY2026E EBITDA ≈ 54x
-- 如果终端EV/EBITDA回到25x（成熟工业公司水平），当前价格隐含EBITDA需要从$56亿增长至$121亿——即在$56亿基础上再翻一倍+
-- 按2028年目标（$520亿收入×20% EBITDA margin = $104亿EBITDA），25x EV/EBITDA对应$2,600亿EV，约$970/股
-- **结论**：当前股价已经部分price in了2028年的乐观目标
+The current market value is $303 billion, FY2025 Adj. EBITDA $3.2 billion, and the median FY2026 guide is $5.6 billion:
+- Current market value / SY2026E EBITDA<unk> 54x
+- If the terminal EV/EBITTA returns to 25x (the mature industrial firm level), the current price implies that EBITTA needs to increase from $5.6 billion to $12.1 billion - that is, double the $5.6 billion +
+- By the target of 2028 (52 billion US dollars per 20% EBITDA mark = $10.4 billion EBITDA), 25 x EV/EBIDDA corresponds to $26 billion EV, approximately $970/square
+- ** Conclusion**: Current stock prices are already partially in 2028 as an optimistic target
 
-### 三情景估值（工具精确计算）
+#3 scenario valuation (tool precision)
 
-基于正常化FY2026E EPS $15.24：
+Based on normal FY2026E EPS $15.24:
 
-| 情景 | 年EPS增速 | 3年后目标PE | 3年后EPS | 目标股价 | 较当前涨跌幅 |
+The year is a year of EPS acceleration, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, the year, the year is now the year of the year, when the year was the year of the year, when the year was the year of the year, when the year was the year of the year, when the year was the year of the year, when the year was the year, when the year was the year of the year, when the year was the year, when the year was the year was the year, when the year was the year, the year was the year was the year, the year was the year, the year was the year, the year was the year, the year was the year was the year was the year, the year, the year, the year was the year, the year, the year, the year was the year, the year, the year, the year was the year was the year was the year, the year was the year, the year was the year, the year was the year was the year, the year, the year, the year was the year was the year was the year, the year, the year, the year was the year, the year, the year, the year was the year was the year, the year was the year was the year
 |------|----------|-----------|---------|---------|------------|
-| **乐观** | 30% | 45x | $33.48 | **$1,507** | **+33.6%** |
-| **中性** | 20% | 35x | $26.33 | **$922** | **-18.3%** |
-| **悲观** | 12% | 25x | $21.41 | **$535** | **-52.5%** |
+** EXPOINTED** ** 30% ** 45x <unk> $33.48 ** $1,507** ** + 33.6% ** **
+**Medical** <unk> 20% <unk> 35x <unk> $26.33 ** $922** **-18.3%**
+** Pessimism** 12% ** 25x <unk> $21.41 ** $535** ** 52.5%** ** **
 
-**假设说明**：
-- **乐观（30%增速/45x PE）**：AI电力需求持续超预期，所有业务线超额完成，Wind扭亏，SMR获得突破性订单。45x PE为工业股极限估值
-- **中性（20%增速/35x PE）**：基本符合分析师一致预期和公司指引，PE从61x回归到35x（仍高于工业平均但反映增长溢价）。**中性场景下当前价格高估18%**
-- **悲观（12%增速/25x PE）**：AI电力需求增长放缓，Wind业务继续失血，PE回归工业股正常水平。**悲观场景下跌超50%**
+** Note of the hypothesis**:
+** EXPOREful (30% acceleration/45x PE)**: AI ' s electricity demand continues to be over-expected, all lines of business are over-completed, Wind is out of line, SMR gets break orders. 45 x PE values the industrial unit limit
+- ** Neutral (20% acceleration/35x PE)**: essentially consistent with analysts ' expectations and corporate guidelines, PE returned from 61x to 35x (still above industry average but reflecting growth premium).** Current prices under the neutral scenario were overestimated by 18%**
+- ** Pessimism (12%/ 25x PE)**: AI’s electricity demand growth slowed, Wind business continued to bleed and PE returned to industrial unit normal.** Pessimism scene dropped by over 50%**
 
-### Morningstar公允价值对比
+# Morningstar Fair Value Comparison
 
-| 机构 | 公允价值 | 较当前价位 |
+The organization has a fair value, which is at current prices.
 |------|---------|-----------|
-| Morningstar | $540 | 当前溢价109% |
-| Simply Wall St | $760 | 当前溢价48% |
-| 本报告中性场景 | $922 | 当前溢价22% |
-| 分析师一致目标价 | $1,212 | 当前折价7% |
-| 本报告乐观场景 | $1,507 | 当前折价25% |
+Morningstar <unk> $540 <unk> current premium of 109% <unk>
+<unk> Simply Wall St <unk> $760 <unk> Current premium of 48% <unk>
+<unk> The sexual scene in this report <unk> $922 <unk> The current premium is 22% <unk>
+The analyst's target price is the same.
+♪ The present report is an optimistic scenario ♪
 
-### 安全边际评估
+# Security margin assessment
 
-| 场景 | 目标价 | 安全边际 |
+The scene, the target price, the security margin, the security margin, the security margin.
 |------|-------|---------|
-| 乐观场景（3年） | $1,507 | 当前价低25%（有限上行） |
-| 中性场景（3年） | $922 | **当前价高22%（无安全边际）** |
-| 悲观场景（3年） | $535 | **当前价高111%（严重高估）** |
-| Morningstar公允价值 | $540 | **当前价高109%** |
+<unk> Optimistic scene (3 years) <unk> $1,507 <unk> current price is 25% lower (limited up) <unk>
+<unk> Medium scene (3 years) <unk> $922 ** 22% current price (no security margin)** <unk>
+<unk> Pessimism (3 years) <unk> $535 ** Current prices are 111% higher (serious overestimation)** <unk>
+Morningstar fair value $540 ** current price is 109% ** <unk>
 
-**核心结论：当前股价在中性和悲观场景下均无安全边际。只有在乐观场景（所有假设都正确）下才有合理回报。**
+** Core conclusion: Current stock prices are not security marginal in neutral and pessimistic scenarios. Only in optimistic scenarios (all assumptions are correct) can there be a reasonable return**
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-**如果股市明天关闭5年，你愿意以这个价格持有吗？**
+** If the stock market closes for five years tomorrow, would you hold it at that price?**
 
-> **不太愿意。** 以$1,128买入，Forward PE 61x，意味着我在为一家工业设备制造商支付"超级成长股"的价格。
+> ** Not very pleased.** Buyed at $1,128, Forward PE 61x, means I'm paying the price of "super-growth" for a manufacturer of industrial equipment.
 >
-> 5年后的回报取决于：
-> 1. **如果2028年目标完全实现**（$520亿收入、20% EBITDA margin、$104亿EBITDA），按25x EV/EBITDA估值，目标价约$970——**5年亏14%**
-> 2. **如果超额完成**（$600亿收入、22% EBITDA margin、$132亿EBITDA），按30x EV/EBITDA，目标价约$1,480——**5年涨31%，年化5.6%**
-> 3. **如果遇到周期逆转**——参考2017-2020年GE Power的衰退——股价可能腰斩
+> The return after five years depends on:
+> 1. **If the target of 2028 is fully achieved** (52 billion income, 20 per cent EBITDA mark, $10.4 billion EBITDA), the target price is estimated at 25 x EV/EBITDA at approximately $970 ** 14 per cent deficit in 5 years**
+> 2. ** If the completion is over-achieved** ($60 billion in income, 22% EBITDA mark, $13.2 billion EBITDA), at 30 x EV/EBITDA, at a target price of approximately $1,480 ** 31% increase in five years, 5.6% annual**
+> 3. ** If there is a cyclical reversal** - reference to the GE Power recession from 2017 to 2020 - share price may be cut
 >
-> 以段永平的标准，这个价格没有"明显便宜"的感觉。生意是好生意，但价格不是好价格。**我宁愿等一个大幅回调（-30%至-40%，即$680-790区间）再考虑建仓。**
+> In a time-table standard, this price does not feel "many cheap." Business is good, but prices are bad. ** I would rather wait for a big round ( -30% to -40%, or $680-790) to think about silos. **
 
 ---
 
-## 第八步：综合决策备忘录
+# Step eight: a comprehensive decision-making memorandum
 
-### 汇总表格
+# Matrix
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| **生意质量（段永平）** | 优秀但有瑕疵。Power和Electrification极好（高壁垒、强定价权、$860亿服务积压），但Wind业务持续亏损是明显的减分项。整体是"两好一坏"的生意。 | ★★★★☆ |
-| **护城河（巴菲特）** | 极宽。7,000+台装机基础的转换成本、HA级燃气轮机的技术壁垒、全球仅3家供应商的寡头格局。护城河正在变宽（积压翻倍、定价权增强）。 | ★★★★★ |
-| **管理层（段永平+巴菲特）** | Strazik是务实能干的工业管理者，拆分后执行力强。但独立运营仅2年，缺乏完整周期验证。内部人持股极低（0.05%），利益绑定不足。 | ★★★☆☆ |
-| **最大风险（芒格）** | 估值泡沫。Forward PE 61x是工业股历史罕见水平，Morningstar公允价值$540暗示100%+的溢价。中性场景下当前价格高估18-22%。 | ★★★★★ |
-| **文明趋势（李录）** | 强烈顺风。AI数据中心+能源转型+电网升级三重叠加，全球电力投资从$1.2万亿增至$2万亿+。GEV作为"卖铲人"处于极有利位置。 | ★★★★★ |
-| **估值（巴菲特+段永平）** | **过高。** Forward PE 61x、PS 7.7x——同行中最贵。三情景估值中性目标$922（-18%），悲观$535（-53%）。当前价位几乎没有安全边际，只有乐观场景才能获得合理回报。 | ★☆☆☆☆ |
+** ** Business quality (single)** good but flawed. Power and Electriface are excellent (high barriers, strong pricing authority, $86 billion backlog of services), but Wind's business continued to lose a significant reduction. The whole business is "two goods and one bads".
+** The moat river** is very wide. 7,000+ conversion costs for the installation of the engine base, technical barriers to the HA-grade gas turbines, oligarchic patterns of only three suppliers worldwide. The moat is becoming wider (register, increased pricing).
+** Management (Yongping + Buffett)** <unk> Strazik is a pragmatic industrial manager with strong implementation after splitting. However, independent operations are only two years and lack full cycle validation. In-house holdings are extremely low (0.05%) and benefits are insufficiently tied.
+<unk> The most risky (Manger)** estimated foam. Forward PE 61x is the rare level of industrial stock history, and the fair value of Morningstar at $540 suggests a 100% premium. The current price is overestimated by 18-22% in the neutral scenario.
+The A.I. Data Center + Energy Transformation + Power Network Upgradings 3 and 3, increasing global electricity investment from $1.2 trillion to $2 trillion +. GEOV is in a very favourable position as a "stealer."
+** Valuation (Buffett+Ping)** Exceeded.** Forward PE 61x, PS 7.7x - most expensive among peers. **In three scenario valuations, the neutral target is $922 (-18%), pessimistic $535 (53%). The current price is virtually non-sample, and only optimistic scenarios yield reasonable returns.
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **暂不建仓，等待回调。** Forward PE 61x买入一家工业设备公司，风险收益比极差。建议观察$700-800区间（Forward PE ~38-43x），届时安全边际开始出现。如果回调至$550以下（接近Morningstar公允价值），则是极佳建仓机会。 |
-| **持仓者** | **考虑获利了结至少30-50%仓位。** 上市以来涨880%，当前估值几乎没有容错空间。保留底仓享受长期增长，但锁定大部分利润。如果持有成本很低（<$300），可以更耐心——但不应在$1,100+继续加仓。 |
-| **卖出信号** | ① 连续两个季度订单增速放缓至<20%；② Wind业务诉讼结果不利（超$8亿赔偿）；③ AI数据中心投资出现明显降温信号；④ Electrification book-to-bill降至1.5x以下 |
-| **加仓信号** | ① 股价回调至$700以下（Forward PE ~38x，开始出现安全边际）；② 2028年EBITDA margin达到20%目标且积压持续增长；③ Wind业务首次实现季度盈亏平衡；④ SMR核电获得商业化订单突破 |
+** Empty warehouse ** ** Not yet constructed, awaiting return.** Forward PE 61x bought into an industrial equipment company, with a very poor risk return. It is recommended to observe 700-800 blocks (Forward PE ~ 38-43x), when the security margin begins to appear. If we move back to less than $550 (close to Morningstar fair value), the opportunity to build a warehouse is excellent.
+<unk> ** warehousekeeper** ** Considered profiting from at least 30-50% of the warehouse.** The current valuation is almost no room for error, with 880% up since the market. Keeping the bottom of the warehouse enjoys long-term growth, but locks in most profits. If holding costs are low (<$300), it can be patient — but should not be kept up at $1,100+. <unk>
+<unk> **Sale signal** <unk> 1 Order growth slowed to <20% for two consecutive quarters;2 Wind business litigation was unfavourable (over $800 million);3 there was a clear cooling signal in the AI data centre investment;4 Electricization book-to-bill fell below 1.5x
+**Step-up signal** <unk> 1 Stock return to under $700 (Forward PE ~ 38x, starting to have a security margin); 2 EBITDA markin, 2028, reaching 20% target and a backlog of steady growth; 3 Wind, first time, achieving quarterly balance; 4 SMR, breaking orders for commercialization
 
-### 具体价格区间
+# The price range
 
-| 区间 | 对应Forward PE | 操作建议 |
+<unk> Inter-district <unk> to Forward PE <unk> Operational Recommendations <unk>
 |------|---------------|---------|
-| **$500以下** | <33x | 重仓区——接近Morningstar公允价值，极具吸引力 |
-| **$500-700** | 33-46x | 建仓区——安全边际开始出现，分批买入 |
-| **$700-900** | 46-59x | 观望区——估值合理但不便宜 |
-| **$900-1,100** | 59-72x | 谨慎区——估值偏高，不建议新增仓位 |
-| **$1,100以上** | >72x | 减仓区——当前位置，建议获利了结 |
+** Under $500** < 33x <unk> Repository - approaching Morningstar fair value, extremely attractive
+**$500-700** <unk> 33-46x <unk> Construction of warehouse area — security margin is beginning to appear and buy in bulk
+**$700-900** <unk> 46-59x <unk> observation area - reasonable and not cheap
+**$900-1,100** <unk> 59-72x <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+** Over $1,100** > 72x <unk> Retract - Current position, recommended profit
 
-### 四位大师的模拟点评
+# Four masters' simulations
 
-> **巴菲特**："GE Vernova有一条很宽的护城河——全球只有三家公司能造大型燃气轮机，7,000台装机基础意味着几十年的服务收入。我喜欢这种'卖了设备就锁定客户几十年'的商业模式。但我不喜欢Forward PE 61倍——这个价格把未来五到七年的增长都提前支付了。我会把它放在观察名单上，等着一个'5年一遇'的好价格。在这个价位，安全边际为零。"
+> **Buffett** "GE Vernova has a wide mound of water -- only three companies worldwide can build large gas turbines, and 7,000 installed machines represent decades of service earnings. I like this business model, "Selling equipment for decades, locking customers." But I don't like the Forward PE 61 times -- a price that pays up ahead for the next five to seven years. I'll put it on the watch list, waiting for a good price for 'five years'. At this price, the security margin is zero."
 
-> **芒格**："反过来想——什么情况下你会在Forward PE 61倍亏钱买GE Vernova？答案很多：AI电力需求不如预期、周期逆转、Wind业务继续失血、产能扩张不顺利。这些事情中任何一个发生，股价就可能跌30-50%。而且，880%的涨幅意味着大量获利盘——一旦叙事松动，抛售可能非常剧烈。我不否认这是一门好生意，但好生意和好投资是两码事。在61倍Forward PE的价位，你是在为一切顺利买单。"
+> ** Manger** "Counterly think -- under what circumstances would you lose 61 times the money for GE Vernova? There are many answers: AI needs electricity less than expected, cycle reversals, Wind business continues to bleed, production expansion is not going well. Any one of these things could fall 30-50%. And, 880% of the increase means a lot of profit. Once the narrative is loose, the sale can be very dramatic. I don't deny that this is a good business, but good business and investment are two things. At 61 times the price of the Ford PE, you're buying the bill for everything."
 
-> **段永平**："这是一门好生意吗？Power和Electrification部分非常好——高壁垒、强定价权、长期服务合同。但Wind业务是个大问题——持续亏损、叶片质量缺陷、Vineyard Wind诉讼。如果我买这家公司，我希望看到Wind业务要么扭亏、要么彻底剥离。这是对的价格吗？绝对不是。Forward PE 61倍买一家工业设备公司？这不是我的风格。我需要看到这个价格打六折到七折，也就是$700以下，才会开始认真考虑。"
+> **nnning** "Is this a good business? Power and Electrication are good in part — high barriers, strong pricing, long-term service contracts. But Wind is a big problem — sustained losses, leaf quality defects, Vineyard Wind litigation. If I buy this company, I want to see Wind either lose or strip away. Is that the price right? No.
 
-> **李录**："站在文明演进的角度，电力基础设施的升级是一个确定的长期趋势——AI、电动车、工业电气化都在推动电力需求增长。GE Vernova在这个趋势中的位置很好——它是'卖铲人'，不管金矿在哪里，挖金的人都需要铲子。但20年后回看，GEV不会是'标准石油'——电力行业太分散，没有人能垄断。它更像是Caterpillar——一家在基建周期中持续受益的优质工业企业。长期看好，但当前估值让我犹豫。我会等一个市场恐慌时刻——也许是下一次经济衰退恐慌——那时候这些'周期股'的估值会被大幅压缩，那才是买入的好时机。"
+> **Lire**: "In the perspective of civilization, upgrading of electricity infrastructure is a definite long-term trend — AI, electric vehicles, industrial electrification are driving the growth of electricity demand. GE Vernova is well placed in this trend — it's a shovel seller, wherever the gold mine is, and the gold diggers need shovels. But 20 years later, GEOV will not be a standard oil — the electricity industry is too dispersed and no one can monopolize. It's more like Caterpillar, a high-quality industrial enterprise that has continued to benefit from the construction cycle. Long-term good, but the current valuation has given me hesitation. I'll wait for a moment of market panic — perhaps the next economic downturn — when the valuation of these cyclical shares will be significantly compressed, and that's the time to buy it."
 
 ---
 
-## 附录
+# Appendix
 
-### AI分析置信度 vs 投资确定性
+# AI analyze confidence vs investment certainty
 
-| 结论类别 | AI分析置信度 | 投资确定性 | 说明 |
+<unk> Conclusion category <unk> AI analysis of confidence <unk> Investment certainty <unk>
 |---------|------------|-----------|------|
-| 财务数据准确性 | 高 | 高 | 基于官方财报，但独立历史仅2年 |
-| 护城河宽度 | 高 | 高 | 寡头格局+装机基础+服务锁定有充分数据支撑 |
-| 管理层质量 | 中 | 中 | 独立运营仅2年，缺乏完整周期验证 |
-| AI电力需求持续性 | 中 | 低 | 趋势明确但幅度和持续时间高度不确定 |
-| Wind业务扭亏 | 低 | 低 | Vineyard Wind诉讼、叶片缺陷、政策不确定性 |
-| 估值是否合理 | 高 | 高 | Forward PE 61x在工业股中极端偏高有充分数据支撑 |
-| 长期增长潜力 | 高 | 中高 | 电力基础设施升级是确定趋势，但GEV受物理产能限制 |
+Financial data accuracy High financial data based on official financial reporting but independent history only 2 years
+The moat's width, height, height, oligarchic pattern, and the basics of the loading machine plus the locking of the service are supported by data.
+Management quality <unk> Independent operation only 2 years without full cycle validation <unk>
+The AI electricity demand is continuing, the power demand is continuing, the demand is low, the trend is clear, but the range and duration are highly uncertain, the demand is very high.
+♪ Wind business is losing ♪
+<unk> Whether the valuation is reasonable <unk> High <unk> Forward PE 61x is supported by extremely high data in the industrial stock <unk>
+Long-term growth potentials High, medium, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, determined, the upgrading of the electricity infrastructure is determined, but the GEO is limited by physical capacity.
 
-**核心区分**：本报告对GEV的**生意质量**（Power+Electrification优秀）和**护城河宽度**（极宽）有高确定性判断，对**当前估值过高**也有高置信度评估。但对**AI电力需求的长期持续性**和**Wind业务扭亏前景**缺乏足够数据——前者是估值溢价的核心支撑，后者是最大的已知拖累。
+** Core distinction**: High degree of certainty in the report on the quality of the business** (Power+Electrication) and ** breadth of the moat** (extreme breadth) and high confidence assessment on the current overvaluation**, but insufficient data on the long-term sustainability of the **AI electricity demand** and the **Wind business reversal prospects** — the former being the central underpinning of the valuation premium and the latter the largest known drag.
 
-**一句话总结**：GE Vernova是一家好公司——但在Forward PE 61x的价位，好公司不等于好投资。等一个大幅回调再考虑。
+** Summary of sentence**: GE Vernova is a good company - but good companies are not good investments at the Forward PE 61x.
 
-### 数据来源汇总
+## Data source summary
 
-| 类别 | 主要来源 |
+Category
 |------|---------|
-| 财务数据 | GE Vernova IR（10-K/10-Q/8-K）、StockAnalysis、Macrotrends |
-| 估值数据 | StockAnalysis、GuruFocus、FinanceCharts、Morningstar |
-| 竞争格局 | IEA、S&P Global、Synergy Research |
-| 行业数据 | IEA、Grand View Research、S&P Global |
-| 多空论点 | CNBC、Seeking Alpha、Utility Dive、Yahoo Finance |
-| 管理层信息 | SEC DEF 14A、MarketBeat、GE Vernova IR |
+<unk> Financial data <unk> GE Vernova IR (10-K/10-Q/8-K), StockAnalysis, Macrotrends <unk>
+<unk> Valuation data StockAnalysis, GuruFocus, FinanceCharts, Morningstar <unk>
+Competition patterns
+Industry data IEA, Grand View Research, S&P Global
+♪ The argument of the air ♪
+• Management information <unk> SEC DEF 14A, MarketBeat, GE Vernova IR <unk>

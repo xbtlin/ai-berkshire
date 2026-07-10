@@ -1,452 +1,452 @@
-# 比亚迪（BYD）投资研究报告
+#Byadi Investment Study
 
-**四大师综合分析框架：巴菲特 · 芒格 · 段永平 · 李录**
+** The comprehensive analysis framework of the four masters: Buffett Mung Dhu Yongping Lee Shun-shue**
 
-研究日期：2026年6月24日 | 股票代码：002594.SZ / 1211.HK
-
----
-
-## AI研究偏见自觉
-
-**信息丰富度评级：A级（信息充裕）**
-
-比亚迪是全球市值前十的车企、A+H双重上市、券商覆盖极其密集、媒体报道铺天盖地。数据来源充足，但这恰恰意味着**AI输出极易趋同于市场共识**，alpha有限。
-
-**本报告的应对策略**：重点做反面检验——"聪明人为什么不买？被忽略的风险是什么？"
-
-**偏见自查**：
-- [x] "确定性"感受来自生意本质还是资料数量？——比亚迪资料极丰富，需警惕用信息量替代确定性
-- [x] AI输出是否与市场共识高度雷同？——多方论点（垂直整合+海外扩张）确实是市场共识，本报告着重挖掘被低估的风险
-- [x] 是否存在被低估的可能性？——国内市占率下滑、FCF转负、研发资本化比例提升等负面信号在乐观叙事中被淡化
+Date of study: 24 June 2026 Stock code: 002594.SZ/1211.HK
 
 ---
 
-## 第一步：关键数据总览
+# AI studies prejudices
 
-### 基本面快照（2026年6月24日）
+** Information abundance rating: A (information is abundant)**
 
-| 指标 | A股（002594.SZ） | H股（1211.HK） | 数据来源 |
+Biadi is the top 10 global market-marketing car company, A+H double listing, a very dense bond-marketing and media coverage. The data are available, but this means that **AI output is very easy to converge with market consensus** and alpha is limited.
+
+** The response strategy of the present report**: Focus on the negative test -- "Why not buy smart people? What risk is the risk of being ignored?"
+
+** Prejudice self-examination**:
+- [x] Does "precise" feel from the nature of business or from the amount of information? - Biadi is extremely rich and needs to be vigilant about replacing certainty with information.
+- [x] Is AI output highly aligned with market consensus? - Multi-dimensional arguments (vertical integration + overseas expansion) are indeed market consensus, and this report focuses on exploring undervalued risks
+- [x] Is there any underestimation? — negative signals such as declining domestic city occupancy, FCF shifts, higher R&D capitalization have been diluted in optimistic narratives.
+
+---
+
+# Step 1: a summary of key data
+
+# Basic face snapshot (24 June 2026)
+
+• Indicators: Unit A (002594.SZ) <unk> Unit H (1211.HK) <unk> Data sources <unk>
 |------|:---:|:---:|------|
-| 股价 | 85.00元 | 75.85港元 | Investing.com |
-| 总股本 | 54.34亿股 | 36.83亿股 | 新浪财经 |
-| A+H总股本 | 91.17亿股 | — | 比亚迪年报 |
-| 市值 | 4,619亿元 ✅ | 2,794亿港元 ✅ | 工具验算 |
-| PE（TTM） | **23.74倍** | ~22倍 | 工具验算 |
-| PB | **3.41倍** | ~2.72倍 | 工具验算 |
-| ROE | **14.34%** | — | 工具验算 |
-| 股息率 | **0.42%** | ~0.53% | 工具验算 |
-| FCF Yield | **-7.27%** | — | 工具验算 |
+The price of the shares is 85.00 HK$ 75.85
+The stock stock is 534 million shares, 36.83 billion shares, and the economy is new.
+<unk> Total A+H equity <unk> 917 million <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The market value is $461.9 billion, the value of the equipment is $279.4 billion.
+<unk> PE(TTM)<unk> 23.74 times**<unk> 22 times greater than the tool count
+<unk> PB<unk> 3.41 times**<unk> 2.72 times greater than the amount of the tool used to calculate the tool
+ROE <unk> 14.34%**<unk>
+<unk> Estimation rate ** 0.42% ** <unk> ~ 0.53% <unk> Tool measurement <unk>
+FCF Yield<unk> **-7.27%**<unk> -Tool tool measurement
 
-> 注：2025年7月完成"10送转20"，总股本从30.39亿扩至91.17亿。以上均为除权后数据。
+Note: "10 Transfer 20" was completed in July 2025, with total equity expanded from 3,339 million to 9,117 million.
 
-### 五年财务趋势
+# Five years financial trend
 
-| 指标 | 2021 | 2022 | 2023 | 2024 | 2025 |
+Indicator 2021 <unk> 2022 <unk> 2023 <unk> 2024 <unk> 2025 <unk>
 |------|:---:|:---:|:---:|:---:|:---:|
-| 总收入（亿元） | 2,161 | 4,241 | 6,023 | 7,771 | 8,040 |
-| 收入增速 | 38% | **96%** | 42% | 29% | **3.5%** |
-| 净利润（亿元） | 30.5 | 166.2 | 300.4 | 402.5 | **326.2** |
-| 净利润增速 | — | 446% | 81% | 34% | **-19%** |
-| 毛利率 | 12.7% | 16.8% | 18.2% | 19.4% | **17.5%** |
-| 净利润率 | 1.4% | 3.9% | 5.0% | 5.2% | **4.1%** |
+Total income (billion yuan) 2,161 <unk> 4,241 <unk> 6,023 <unk> 7,771 <unk> 8,040 <unk>
+<unk> Income growth <unk> 38% <unk> 96% <unk> 42% <unk> 29% <unk> 3.5% <unk>
+Net profit (millions of yuan) 30.5 <unk> 166.2 <unk> 300.4 <unk> 402.5 <unk> 326.2 ** <unk>
+<unk> Net profit growth rate <unk> 446% <unk> 81% <unk> 34% **-19% ** <unk>
+<unk> Māori <unk> 12.7% <unk> 16.8% <unk> 18.2% <unk> 19.4% ** 17.5% ** <unk>
+<unk> Net profit rate 1.4% <unk> 3.9% <unk> 5.0% <unk> 5.2% **4.1% ** <unk>
 | ROE | 4.7% | 15.7% | 23.1% | 23.8% | **14.8%** |
-| 自由现金流（亿元） | 281 | 434 | 476 | 361 | **-977** |
-| 研发投入（亿元） | 106 | 202 | 399 | 542 | **634** |
-| 研发/营收 | 4.9% | 4.8% | 6.6% | 7.0% | **7.9%** |
+Free cash flow (millions of yuan)
+<unk> R & D investment (billions of yuan) <unk> 106 <unk> 202 <unk> 399 <unk> 542 ** 634 **
+<unk> R & D/receipt 4.9% <unk> 4.8% <unk> 6.6% <unk> 7.0% ** 7.9% **
 
-数据来源：比亚迪年报、StockAnalysis、CnEVPost
+Source: Biadi Annual, StockAnalysis, CnEVPost
 
-**关键趋势**：收入增速从96%急降至3.5%，净利润六年来首次下滑，自由现金流首次转负（-977亿元），毛利率连续下滑。但研发投入逆势增长17%至634亿元——**研发支出是净利润的近两倍**。
+** Key trends**: Revenue growth has declined sharply from 96% to 3.5%, net profits have fallen for the first time in six years, free cash flows have shifted for the first time (------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 收入结构（FY2025）
+## Income structure (FY2025)
 
-| 业务分部 | 收入（亿元） | 占比 | 毛利率 | 同比增速 |
+The business branch, the income (millions of yuan), the share, the gross profit rate, the same rate of growth, the average income, the average income, the average income, the average income, the average income, the average income, the average income, the average income, the average income, the average income, the average gross domestic product, the average rate of the year, the average growth rate, the average growth rate, the average income, the average income, the average income, the average income, the average income, the average growth rate, the average growth rate, the average growth rate, the average growth rate, the average growth rate, the proportion of the total income, the total income, the total income, the total of the total income, the total of the total income, the total of the total income, the total, the total, the total, the total, the total, the total, the total, the total, the number of the total, the total, the total, the number of the total, the number of the total, the number of the total, the number of the population, the number, the number of the, the number, the number, the number of the number, the, the, the number, the, the, the number, the number of the number of the, the, the, the, the, the number of the number of the number of the, the, the number, the number, the number, the number, the number of the number of the number of the number of the number of the number of the number of the number of the number of the, which, the number of the number of the
 |---------|:---:|:---:|:---:|:---:|
-| 汽车及相关产品 | 6,486 | 80.7% | 20.49% | +5.1% |
-| 手机部件及组装 | 1,552 | 19.3% | 6.29% | -2.7% |
+<unk> Automobile and related products <unk> 6,486 <unk> 80.7% <unk> 20.39% <unk> + 5.1% <unk>
+<unk> Mobile parts and assembly 1,552 <unk> 19.3 <unk> 6.29 <unk> - 2.7 % <unk>
 
-| 区域 | 收入（亿元） | 占比 | 毛利率 | 同比增速 |
+<unk> Region income (billions) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 |------|:---:|:---:|:---:|:---:|
-| 境内 | 4,932 | 61.4% | 16.66% | -11.8% |
-| **境外** | **3,107** | **38.7%** | **19.46%** | **+40.1%** |
+<unk> In the country 4,932 <unk> 61.4 <unk> 16.66 <unk> - 11.8 <unk>
+**Extraterritorial** ** 3,107** ** 38.7%** ** 19.46%** ** 40.1%** **
 
-数据来源：比亚迪年报、知乎财报分析
+Source: Biadi Annual Report, Financial Reporting Analysis
 
-### 竞争格局
+# Competition patterns
 
-**中国新能源汽车市场份额（2025年）**
+** Share of China ' s new energy vehicle market (2025)**
 
-| 排名 | 企业 | 新能源销量（万辆） | 同比增速 | 市场份额 |
+The market share of the new energy market (millions) is increasing at the same rate.
 |:---:|---|:---:|:---:|:---:|
-| 1 | **比亚迪** | **460.2** | +7.7% | **~28%** |
-| 2 | 吉利汽车 | 168.8 | +90% | ~10% |
-| 3 | 上汽集团 | 164.3 | +33% | ~10% |
-| 4 | 长安汽车 | 110.9 | +51% | ~7% |
-| 5 | 奇瑞汽车 | 87.4 | +50% | ~5% |
+<unk> ** Biadi** ** 460.2** <unk> + 7.7% ** ~ 28%** <unk>
+2 x Jiri, 168.8 x 90% x 10% x 10%
+<unk> 3 <unk> Up-air group 164.3 <unk> 33 <unk> ~10% <unk>
+<unk> 4 <unk> <unk> <unk> <unk> <unk> <unk> <unk> 51% ~ 7% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> 5<unk> <unk> 81.4<unk> 50%<unk> 5%<unk>
 
-数据来源：新华网、OFweek、21经济网
+Source: Xinhuanet, OFweek, 21 Economy Network
 
-**全球电动车格局**：比亚迪2025年纯电销量225.7万辆，**首次超越特斯拉**（163.6万辆），成为全球纯电和插混双料冠军。
+** Global pattern of electric vehicles**: 2.257 million in 2025 by Biadi,** first-time beyond Tesla** (1636 thousand) to become global champions of pure electricity and blending.
 
-### 关键数据交叉验证记录
+## Key data cross-checking records
 
-| 验证项 | 结果 | 详情 |
+<unk> Verification item <unk> Results <unk> Details <unk>
 |--------|:---:|------|
-| A股市值验算 | ✅ | 85.0×54.34亿 = 4,618.9亿元，偏差0.00% |
-| H股市值验算 | ✅ | 75.85×36.83亿 = 2,793.6亿港元，偏差0.02% |
-| FY2025营收交叉验证 | ✅ | 三源一致，共识值8,039.7亿元 |
-| FY2025净利润交叉验证 | ✅ | 三源一致，共识值326.2亿元 |
-| 现金储备交叉验证 | ✅ | 两源一致，共识值~751亿元 |
-| PE（TTM）精确验算 | ✅ | 85.0 / 3.58 = 23.74倍 |
-| PB精确验算 | ✅ | 85.0 / 24.96 = 3.41倍 |
-| ROE精确验算 | ✅ | 3.58 / 24.96 = 14.34% |
+<unk> Market value of A share <unk> 85.0 x 5.434 billion = $461.89 billion, deviation of 0.00 per cent <unk>
+<unk> Market value of H shares <unk> 75.85 x 3.683 billion = HK$279.36 billion, or 0.02 per cent deviation <unk>
+<unk> Cross-checking of Camp SY2025 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> SY2025 net profit cross-check <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> 32.620 billion dollars <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Cross-checking of cash reserves <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> PE(TTM) accurate calculation
+<unk> PB accurate calculation <unk> <unk> <unk> 85.0 / 2496 = 3.41 times <unk>
+<unk> ROE accurate calculation <unk> <unk> 3.58/ 24.96 = 14.34% <unk>
 
 ---
 
-## 第二步：生意本质分析 — 段永平"对的生意"
+# Step 2: Business nature analysis - a piece of "right business"
 
-### 一句话定义
+# One word of definition
 
-**比亚迪的生意本质是：通过极致垂直整合实现成本领先的新能源汽车制造商，正从"中国价格战王者"向"全球化制造巨头"转型。**
+** Biadi's business is essentially: new energy car manufacturers that are leading the cost through extreme vertical integration are in transition from "China Price Warlord" to "Globalizing the Big Bang."**
 
-### 商业模式画布
+# Business model canvass
 
-比亚迪是一台**垂直整合制造机器**。据瑞银拆车报告，一台比亚迪汽车**约75%的零部件由自身研发生产**，17%来自中国供应商，仅8%来自海外供应商。这意味着它更像一个"汽车产业链"而非一家"车企"。
+Biadey is a vertically integrated manufacturing machine. According to the Swede's Dismantling Vehicle, ** about 75% of the spare parts of a Biadean are produced by their own R&D**, 17% from Chinese suppliers and only 8% from overseas suppliers. This means that it is more like a "car chain" than a "car company".
 
-核心收入模式：**一次性硬件销售**（非订阅/非平台），但通过垂直整合将利润截留在产业链内部。
+Core revenue model:** one-time hardware sales** (non-subscription/non-platform), but profit is cut off from the industrial chain through vertical integration.
 
-### 产品矩阵：五大品牌覆盖5-150万元
+# Product matrix: 5 to 1.5 million dollars in five brands
 
-| 品牌 | 定位 | 价格区间 | 2025年销量 |
+♪ The price range ♪
 |------|------|---------|:---:|
-| 王朝网 | 家用主流 | 7-24万元 | 188.5万辆 |
-| 海洋网 | 年轻时尚 | 5.6-24万元 | 222.0万辆 |
-| 方程豹 | 个性越野 | 20-45万元 | 23.5万辆 |
-| 腾势 | 高端豪华 | 25-50万元 | 15.7万辆 |
-| 仰望 | 超豪华科技 | 100万元+ | 4,785辆 |
+The king's army has been set up to control the family's main household, 724 million dollars, and 188,85,000 vehicles.
+♪ The ocean web ♪
+♪ The way you're going ♪
+♪ The big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the, the, the big, the, the big, the big, the, the, the, the, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the big, the, the
+♪ I'm looking up ♪
 
-### 垂直整合体系——弗迪系五大公司
+# Vertical integration system -- Freddy's five big companies
 
-| 子公司 | 业务 | 关键能力 |
+<unk> Subsidiary branch <unk> business <unk> key capabilities <unk>
 |--------|------|---------|
-| 弗迪电池 | 动力电池 | 刀片电池，产能135+ GWh，全球第二 |
-| 弗迪动力 | 电机、混动 | DM-i/DM-p超级混动，装机量行业第一 |
-| 弗迪科技 | 汽车电子 | 电控系统全自研 |
-| 弗迪视觉 | 车灯 | 全系车灯自研 |
-| 弗迪模具 | 模具 | 自制成本8000万（竞品需2亿） |
+♪ The world's second largest ♪
+<unk> Ferdy Power <unk> Electric power, mixing <unk> DM-i/DM-p Supermix, first in the load industry
+♪ The power of the world ♪
+♪ The fady's vision, the lights, the lights, the lights ♪
+♪ The game is a big game ♪
 
-此外：比亚迪半导体覆盖IGBT、SiC功率芯片，IGBT全球第二、国内第一；自研智驾芯片"璇玑A3"（4nm、2100 TOPS）已发布。
+In addition: Biadi semiconductor covers IGBT, Sic power chip, IGBT Global Second and First in the Country; self-researching of the <unk> A3 chip (4nm, 2100 TOPS) has been published.
 
-### 毛利率同行对比（FY2024/2025）
+# # Maori Peer Comparison (FY 2024/2025)
 
-| 车企 | 汽车毛利率 | 平均售价区间 |
+The average price of the car is not the same as the price of the car.
 |------|:---:|------|
-| 比亚迪 | 20.5% | 8-25万元 |
-| 特斯拉 | 18.0% | 20-90万元 |
-| 吉利 | 16.6% | 8-30万元 |
-| 小鹏 | 15.6% | 15-40万元 |
-| 上汽 | ~9.0% | 8-30万元 |
+Biadee, 20.5%, $8-250,000.
+Tesla, 18.0%, $200,000-90 million.
+<unk> Gilly 16.6% <unk> 8-300,000 <unk>
+Ping, Peng, 15.6%, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, Ping, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P,
+♪ The ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the the ♪ the the the the ♪ the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the
 
-在平均售价远低于特斯拉的情况下，比亚迪汽车毛利率仍高于特斯拉——这是垂直整合成本优势的直接体现。但**毛利率已连续三年下滑**（2023年20.2% → 2024年19.4% → 2025年17.5%），反映价格战对利润的侵蚀。
+The Bialdi car Maori rate is still higher than Tesla – a direct reflection of vertical integration cost advantages – when the average selling price is much lower than Tesla. But ** Māori rates have declined for three consecutive years ** (20.2% in 2023 <unk> 19.4% in 2024 <unk> 17.5% in 2025), reflecting the erosion of profits by the price war.
 
-### 经营杠杆分析
+# Run the leverage analysis
 
-2025年出现**负经营杠杆**：收入增3.5%但净利润降19%。固定成本（研发634亿、海外建厂资本支出1,568亿）在收入增速放缓时大幅压缩利润。这是"高固定成本制造业"模式的固有风险——增长期放大利润，放缓期放大亏损。
+In 2025,** negative leverage** occurred: income increased by 3.5% but net profits fell by 19%. Fixed costs (R&D 63.4 billion and overseas construction capital expenditure of $156.8 billion) significantly compressed profits at a slower rate of income growth. This is the inherent risk of the "high fixed cost manufacturing" model – a period of growth that magnifies profits and slows down losses.
 
-> **段永平式追问**：这门生意好在哪？
+> **neveral**: Where is the business?
 >
-> 好在**极致的成本控制能力和垂直整合深度**。75%自产率意味着每一环节的利润都留在自己手里，而不是支付给供应商。但这也意味着——这本质上是一门靠**制造效率和规模**赚钱的生意，而不是靠品牌溢价或用户锁定。段永平可能会说：**"这是一门好生意，但不是一门轻松的生意。"**
+> Good for ** extreme cost control and vertical integration depth**. 75% self-production means that every step of the profit is left in its own hands, not paid to the supplier. But it also means that -- essentially -- it is a business that earns money by creating efficiency and size**, not by branding premiums or locking the user.
 
 ---
 
-## 第三步：护城河评估 — 巴菲特"经济护城河"
+# Step three: A moat river assessment -- Buffett "The Economic moat."
 
-### 五类护城河逐一验证
+# Five-class moats to verify
 
-| 护城河类型 | 强度 | 证据 |
+The moat type, the moat, the strength, the evidence, the evidence.
 |-----------|:---:|------|
-| **成本优势/规模效应** | ★★★★★ | 75%自产率，制造成本比欧洲车企低25%（UBS），电池成本比行业低15%，模具成本仅竞品的40% |
-| **技术/专利壁垒** | ★★★★ | 累计5.1万专利，刀片电池二代（190-210Wh/kg、9分钟10-97%充电），DM5.0热效率46%全球最高。但竞品（吉利雷神、奇瑞C-DM）在快速追赶 |
-| **规模效应** | ★★★★ | 460万辆全球前五，国内10大基地产能400万+，但增速已放缓至7.7% |
-| **品牌/定价权** | ★★★ | 复购率30.55%行业第一，仰望在百万级市场站住脚。但国内主流市场仍靠"以价换量"，毛利率持续下滑 |
-| **转换成本/网络效应** | ★★ | 全价位产品矩阵支撑品牌内升级，但缺乏特斯拉超充网络或蔚来换电那样的生态锁定 |
+** Cost advantage/scale effect** <unk> 75% self-production rate, manufacturing costs 25% lower than European car enterprises (UBS), battery costs 15% lower than industry, and model costs only 40% of the competition
+** Technological/patent barriers** <unk> Cumulative 51,000 patents, Blade Battery 2 (190-210 Wh/kg, 9 min 10-97% charge), DM 5.0 with the highest heat efficiency 46% globally. But competition (Gilire God, Chire C-DM) is fast-tracking
+<unk> **Scaling effect** <unk> 4.6 million top five global vehicles, with a capacity of 4 million plus the country's 10 largest bases, but the rate of growth has slowed to 7.7% <unk>
+** Brand/pricing rights** <unk> Repurchase rate 30.55% industry is the first to stand up to the market of the million. But the main domestic market is still "price-for-value" and the Maori rate continues to decline.
+** Conversion costs/network effects** <unk> Full-priced product matrix supports intra-brand upgrading, but lacks Tesla supercharged network or ecological locking like power switching
 
-### 护城河趋势判断
+# The moat of the river trends
 
-**过去5年**：护城河**显著变宽**。从2021年73万辆到2025年460万辆，从国内品牌到全球销冠，从单一电池到全栈自研。
+** The last five years**: The moat ** has significantly increased **. From 730,000 in 2021 to 4.6 million in 2025, from domestic brands to global crowns, from single batteries to full-scale self-research.
 
-**未来5年**：趋势**不确定**。国内面临华为/小米/吉利的三面夹击，市占率已从峰值37.3%降至约28%。海外面临关税壁垒。技术代差在缩小（吉利雷神、奇瑞C-DM实现"平替"）。护城河能否继续变宽，取决于海外扩张是否成功。
+** Next five years**: Trends** Undefined**. The country faces a triple blow of /mi/gil, with a city share falling from a peak of 37.3% to about 28%. The overseas level faces tariff barriers. The technical gap is narrowing (Gilire, Chire C-DM, "Pull." The continued breadth of the moat depends on the success of overseas expansion.
 
-> **巴菲特式追问**：10年后这条护城河还在吗？什么能摧毁它？
+> **Buffettian **: 10 years later, is this moat still there? What can destroy it?
 >
-> 成本优势和规模效应在10年后大概率仍在——垂直整合能力不是一朝一夕能复制的。但**两件事可能摧毁它**：（1）固态电池技术路线切换使磷酸铁锂体系的积累失效；（2）全球地缘政治持续恶化，海外市场被系统性封锁，460万辆产能面临内卷消化压力。
+> Cost advantages and scale effects are still likely to be replicated after 10 years – vertical integration capacity is not available overnight. ** But two things could destroy it **: (1) the accumulation of the phosphate lithium system through the switch of solid battery technology; (2) the continued deterioration of global geopoliticals, the systematic closure of overseas markets and the internalization pressure of 4.6 million productive capacity.
 
 ---
 
-## 第四步：逆向思考与风险清单 — 芒格"反过来想"
+# Step four: Reverse thinking and risk list - Manger "inverted"
 
-### 比亚迪可能失败的路径
+# The path Biaddy might fail
 
-| 失败路径 | 概率 | 影响程度 | 逻辑 |
+The path of failure, the probability, the impact, the logic, the logic.
 |---------|:---:|:---:|------|
-| 价格战持续侵蚀利润 | **高** | 高 | 国内渗透率已达62%，增量空间收窄，存量竞争必然是零和博弈。2026Q1净利润已暴跌55% |
-| 海外扩张受阻于关税/政治壁垒 | **中高** | 极高 | 美国145%关税封锁，欧盟27%关税，若PHEV也被加征关税，将切断欧洲增长引擎 |
-| 智能化落后导致高端化失败 | 中 | 高 | 华为ADS和特斯拉FSD在高阶智驾数据积累上领先3-5年 |
-| 固态电池/新技术路线颠覆 | 低 | 极高 | 5年内固态电池成本仍是锂离子的3-7倍，短期"共存"而非"颠覆"。但长期风险不可忽视 |
-| 王传福离任/关键人风险 | 低 | 极高 | 60岁，无明确接班人。公司高度依赖其个人战略判断 |
-| 海外工厂执行失败 | 中 | 高 | 同时在6个国家建厂，管理难度极大。巴西已出现劳工争议 |
-| FCF持续为负导致财务压力 | 中低 | 中 | 2025年FCF -977亿，总债务从405亿飙升至1,242亿，资产负债率仍在70.8% |
+The price war continues to erode profits <unk> high <unk> high <unk> domestic penetration has reached 62%, incremental space has been reduced, and stock competition is bound to be zero-sum games. 2026Q1 net profits have dropped 55%
+The expansion of overseas is hampered by tariff/political barriers, high ** medium ** very high <unk> United States 145% of customs blockades, EU 27% of tariffs, and if PHEV is also subject to tariff escalation, it will cut off the European engine of growth
+♪ The brainiac lags out of the high end ♪
+The cost of solid batteries in five years is still three to seven times that of lithium ion, and the short term "coexistence" is not "subversive". But the long-term risk is not to be ignored.
+The King has given his word that he is leaving the post/critical person at risk, that he is very, very, very high, that he is 60 years old, that he has no clear successor.
+The failure of overseas factory enforcement has been a major problem in the management of factories in six countries.
+The FCF continues to be negative, causing financial pressure, middle and low, and high, and total debt rose from 40.5 billion to 124.2 billion in 2025.
 
-### 历史类比
+# History analogy
 
-| 类比公司 | 相似之处 | 结局 | 对比亚迪的启示 |
+The analogy, the similarities, the ending, the revelation of Biadey, the resonance of the company.
 |---------|---------|------|--------------|
-| **丰田（1980年代）** | 国内龙头、成本领先、全球化扩张、面临贸易壁垒 | 成为全球最大车企 | 丰田从出口到海外建厂花了30年，比亚迪只用了4年，但美国市场被封锁是关键差异 |
-| **三星（2000年代）** | 极致垂直整合、从低端向高端突破 | 成为全球消费电子霸主 | 垂直整合是双刃剑——三星在面板/内存周期下行时利润大幅波动 |
-| **现代汽车（1990-2010年代）** | 韩国车企全球化、品牌从"低质低价"升级 | 用30年进入全球前三 | 品牌升级需要极长时间——现代从"笑柄"到"尊重"用了30年 |
+** Toyota (in the 1980s)** The domestic leadership, the leading cost, the expansion of globalization, the face of trade barriers, the world's largest car company <unk> Toyota has been exported to overseas plants for 30 years, Biadei only four years, but the blockade of the United States market is a key difference *
+<unk> ** Three Stars (2000s)** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Modern car (in the 1990s)** South Korean car company globalization, branding from "low-quality low-price" to "low-price" branding, 30 years into the world's first three, branding upgrading takes an extremely long time -- 30 years from "joke" to "respect" in modern times.
 
-### 跨学科验证
+# Interdisciplinary validation
 
-- **技术采纳S曲线**：中国新能源渗透率62%，已过拐点进入后半段，增速必然放缓。比亚迪作为渗透期的最大赢家，增量红利已基本兑现
-- **竞争博弈论**：国内"一超多强"格局不稳定——当老二到老五都在追赶时，龙头的最优策略是保持价格竞争（牺牲利润），而非收割利润（让出份额）
-- **网络效应理论**：比亚迪不具备网络效应——更多用户不会让产品更好。对比特斯拉的FSD数据飞轮，这是结构性劣势
+- **Technology adoption S curve**: China ' s new energy penetration rate is 62%, has crossed the point into the second half, and the rate of increase is bound to slow. Biadi, as the biggest winner of the penetration period, has largely realized the incremental dividend.
+- **Competing theory**: Domestic "one super strong" is unstable - when the second to fifths are chasing, the best strategy for the leader is to keep the price competitive (at the expense of profit) rather than reaping the profits (sending share)
+- ** Web Effects Theory**: Biadi does not have a network effect -- more users do not make the product better. Bitasla's FSD data wheels, which is a structural disadvantage.
 
-### 偏误自查
+# I'm wrong to check myself
 
-- **叙事偏差**："全球新能源车王者"的宏大叙事容易让人忽视2025年利润下滑19%、FCF-977亿的现实
-- **锚定效应**：2024年PE 40+倍的历史锚点让当前24倍看起来"便宜"，但如果利润继续下滑，24倍可能并不便宜
-- **幸存者偏差**：强调比亚迪从电池到汽车的成功转型，但忽略了同期无数垂直整合失败的案例
+- ** Narrative deviation**: The grand story of the Global New Energy Car King can easily ignore the 19% profit decline in 2025, the FCF-97.7 billion reality.
+- **Assort effect**: 2024 PE 40+ times the historical anchor makes the current 24 times "favourable", but 24 times may not be cheap if the profit continues to fall.
+- ** Survivors' deviation**: emphasised the successful transition of Biadi from battery to car, but ignored numerous cases of vertical integration failures during the same period
 
-> **芒格式追问**：我最可能在哪里犯错？聪明人为什么不买/做空？
+> ** Man format questioning**: Where do I most likely make mistakes? Why don't smart people buy/do nothing?
 >
-> 最可能犯的错是**高估海外扩张的确定性**。市场共识的"三个飞轮"（规模+海外+新业务）听起来完美，但海外扩张面临关税（欧盟27%）、品牌信任度（全球消费者对中国品牌信任度仅30%）、工厂执行风险的三重不确定性。聪明的空方看的是：**国内份额见顶+价格战无法停止+海外关税壁垒 = "增收不增利"可能是新常态**。
+The most likely mistake is to overestimate the certainty of overseas expansion**. The market consensus of "three flying wheels" (size + overseas + new business) sounds perfect, but overseas expansion faces a triple uncertainty of tariffs (27% EU), brand confidence (only 30% global consumer confidence in Chinese brands), and plant implementation risks. Smart empties look at:** domestic shares are not enough to stop + overseas tariff barriers = "no gains" may be new **.
 
 ---
 
-## 第五步：管理层评估 — 段永平"对的人" + 巴菲特"管理层诚信"
+# Step five: Management assessment - "The Right Man" # "Management Integrity"
 
-### 王传福关键决策复盘
+# The king has given the key to decision-making
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|:---:|
-| 1995年 | 借250万创办比亚迪做电池，用"人+夹具"自制生产线 | 成本仅日本1/15，2003年成为全球第二大充电电池商 | ★★★★★ |
-| 2003年 | 2.7亿收购秦川汽车进入造车，顶住基金集体施压 | 开启第二增长曲线，事后证明是改变命运的决策 | ★★★★★ |
-| 2008年 | 获伯克希尔2.3亿美元投资 | 品牌背书+资本支持，巴菲特17年获30倍回报 | ★★★★ |
-| 2022年 | 全球首个宣布停产燃油车 | 当年销量186万→2024年427万，证明判断正确 | ★★★★★ |
-| 2023年 | 发起价格战，秦PLUS降至7.98万 | 销量暴涨但利润率持续下滑，2025年净利润-19% | ★★★ |
-| 2024年 | 大规模海外建厂（同时6国） | 执行中，结果待验证。巴西劳工争议暴露管理挑战 | 待定 |
+<unk> 1995: <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+In 2003, 270 million people bought the Qincheon car into the car, held back the fund's collective pressure, turned on the second growth curve, and proved to be a decision-making change.
+<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The first fuel truck to be declared off-loaded worldwide was 1.86 million and 4.27 million in 2024, which proved the correct judgment.
+In 2023, the price war started, Qin PLUS fell to 798,000.
+The results are to be verified. The Brazilian labor dispute exposes management challenges.
 
-### 资本配置能力
+# Capital allocation capacity
 
-- **研发投入**：14年中有13年研发投入超过净利润，2025年研发634亿 vs 净利润326亿。长期主义的极致体现
-- **资本化争议**：2025年研发资本化比例从1.78%升至8.61%，若维持上年比例，税前利润将减少约43亿元。这是一个值得警惕的信号
-- **分红率**：仅10%，几乎全部利润用于再投资。符合高增长期特征，但FCF为负意味着分红靠融资而非经营
+- **R **R **: R & D investment exceeded net profits in 13 years in 14 years, and R & D was developed in 63.4 billion vs in 2025.
+- **Customization controversy**: The ratio of R&D capitalization rose from 1.78 per cent to 8.61 per cent in 2025, and if the previous year ' s ratio is maintained, the pre-tax profit will be reduced by approximately $4.3 billion. This is a warning signal.
+- **Red rate**: only 10%, almost all profits are reinvested.
 
-### 股东利益一致性
+# Shareholder interest consistency
 
-| 维度 | 情况 | 评价 |
+<unk> Dimensions Situation Evaluation <unk>
 |------|------|------|
-| 王传福持股 | 17.65%（~1,120亿港元） | ★★★★ 利益高度一致 |
-| 薪酬 | 813.9万元（非管理层最高） | ★★★★★ 简朴务实 |
-| 减持记录 | 近3年无减持，2015年唯一减持用于员工持股计划 | ★★★★★ |
-| 员工激励 | 2025年41亿元员工持股计划覆盖2.5万人 | ★★★★ |
+The King's shareholding 17.65% (~112 billion Hong Kong dollars)
+♪ The world's greatest ♪
+The only reduction in the share-holding plan available for 2015 is the fact that the average staff member is not in the position to pay for the current period.
+The employee incentive scheme covered 25,000 people in 2025.
 
-### 组织与文化
+# Organisation and culture
 
-- **工程师文化**：12.2万研发人员为全球车企之最，"技术为王，创新为本"
-- **成本控制文化**：极致到要求供应商降价10%，2024年底引发行业争议
-- **管理风险**：近90万人的超大组织，2025年从96.9万降至88.5万，裁员约8.4万人
+- **Engineer culture**: 122,000 R&D workers are the world 's largest car company, "Technology is the best, Innovation is the best."
+- **Current control culture**: extremely high to 10% price reduction required from suppliers, resulting in industrial controversy at the end of 2024
+- **Risk management**: nearly 900,000 mega-organizations, from 969,000 to 885,000 in 2025, with about 84,000 layoffs
 
-> **段永平式追问**：如果CEO退休，这家公司还能保持竞争力吗？
+> **Plus Eternity**: If CEO retires, will the company remain competitive?
 >
-> **这是比亚迪最大的不确定性之一。** 王传福身兼董事长兼总裁，是战略和技术路线的总设计师。2024年聘任首位80后副总裁，梯队在建但远未成熟。他今年60岁，如果5-10年内没有完成接班人培养，将是重大风险。对比丰田（丰田章男→佐藤恒治平稳交接），比亚迪的接班人问题更令人担忧。
+> ** This is one of Biadi ' s greatest uncertainties.** The Wang is the chairman and president of the board, who is the chief designer of the strategic and technological route. In 2024, the first post-80 vice president was appointed, but the ladder was still far from mature. He is a major risk if he does not complete the replacement in 5-10 years.
 
 ---
 
-## 第六步：行业与文明趋势 — 李录"文明演进框架"
+# Step 6: Industry and civilizational trends - Lee Siu ' s Framework for Civilization Evolution
 
-### 所在行业是否处于"文明级范式转移"？
+# Is the industry in "civilizational paradigm shift"?
 
-**是的。** 从化石燃料到电动化的转型，是继蒸汽机→内燃机之后的第三次动力革命。
+** Yes.** The transition from fossil fuels to electricization was the third power revolution following the combustion engine in the steam engine.
 
-| 技术革命 | 周期 | 渗透率拐点 | 主导公司 |
+The technology revolution, the cycle, the penetration, the leading companies, the most powerful companies.
 |---------|------|----------|---------|
-| 蒸汽机→内燃机 | 1880-1920年 | ~1908年（福特T型车） | 福特→通用 |
-| 内燃机→电动化 | 2010-2040年 | ~2024年（中国渗透率>50%） | 特斯拉→**比亚迪？** |
+<unk> Steam engine internal combustion engine 1880-1920 ~ 1908 (Fort T) <unk> Ford common <unk>
+<unk> Internal combustion engine electric motors <unk> 2010-2040 <unk> 2024 (China > 50%) <unk> Tesla ** Biadei** **
 
-### 全球电动车渗透率曲线
+# # Global electric vehicle penetration curve
 
-| 市场 | 2025年渗透率 | 2030年预测 | 天花板预判 |
+♪ The market ♪ ♪ The penetration rate in 2025 ♪ ♪ The forecast in 2030 ♪
 |------|:---:|:---:|:---:|
-| 中国 | **62%** | 80% | 85-90% |
-| 欧洲 | 28% | 52% | 75-80% |
-| 美国 | ~12% | 30% | 60-70% |
-| 东南亚 | ~20% | 40% | 65-75% |
-| 全球平均 | 25% | 42% | 70% |
+<unk> China <unk> 62%** <unk> 80% <unk> 85-90% <unk>
+Europe 28% 52% 75-80%
+<unk> United States ~ 12% ~ 30% ~ 60-70% ~
+<unk> South-East Asia ~ 20% ~ 40% ~ 65-75% ~
+The global average is 25%, 42%, 70%.
 
-数据来源：IEA Global EV Outlook 2026、BloombergNEF
+Source: IEA Global EVI Outlook 2026, BloombergNEF
 
-### 比亚迪在产业价值链中的位置
+# Biady's place in the industrial value chain #
 
-比亚迪的独特之处在于：**它不是价值链中的一环，它本身就是一条价值链。** 从锂矿（巴西矿权）→电池（弗迪电池）→电机电控（弗迪动力）→芯片（比亚迪半导体）→整车→储能→回收，几乎覆盖全链条。
+Biadi’s unique feature is that ** it is not a link in the value chain, but it is a value chain in itself.** The whole car is recycled from lithium mine (Brazilian mine rights) to battery (Furdy batteries) to electron (Furdy power) chip (Byadi semiconductor) to the whole chain.
 
-这个位置的优势是**利润截留**和**供应链安全**，劣势是**资本密集**和**管理复杂度**。
+The advantages of this location are ** profit capture** and ** supply chain security**, and ** capital-intensive** and ** managerial complexity**.
 
-### 储能：第二增长曲线
+# Rear energy: second growth curve
 
-2025年比亚迪超越特斯拉成为**全球最大储能系统集成商**，出货超60GWh，市占率13%。推出"浩瀚"储能系统（14.5MWh，特斯拉Megapack的三倍容量）。全球BESS市场2025年约500亿美元，预计2030年达1,060亿美元。
+By 2025 Biadi overstepped Tesla as the ** world's largest energy system integer**, with over 60 GWh, or 13% of the city. The "Big" energy system (14.5 MWh, three times the capacity of Tesla Megapack) was introduced. The global BESS market was about $50 billion in 2025 and is projected to reach $106 billion in 2030.
 
-### 技术路线风险
+# Technology route risk
 
-| 技术路线 | 对比亚迪的威胁 | 时间窗口 | 比亚迪应对 |
+♪ The technology, the threat of Biade, the time window, the response of Biadee ♪
 |---------|:---:|---------|---------|
-| 固态电池 | 中（长期） | 2030年后规模化 | 已建60Ah中试线，能量密度450Wh/kg |
-| 钠离子电池 | 低（互补） | 已到来 | 30GWh产线已投产，行业领先 |
-| 氢燃料电池 | 极低 | 10年+ | 乘用车领域不构成威胁 |
+<unk> Solid-state battery <unk> Medium (long) <unk> Scaled after 2030 <unk> Medium 60Ah test line with energy density 450Wh/kg <unk>
+<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The hydrogen fuel cell, the hydrogen fuel cell, the very low, the ten years + the platinum, the area of the vehicle, is not a threat.
 
-> **李录式追问**：站在20年后回看，比亚迪是"这个时代的标准石油"还是"昙花一现的3Com"？
+> **Li's follow-up**: Stand back 20 years later, is Biadi a "standard oil of the time" or "trimmy 3com"?
 >
-> **更像是"这个时代的丰田"——但尚未到达终局。** 丰田在1980年代也面临贸易壁垒、品牌质疑、全球化挑战，最终花了30年成为全球最大车企。比亚迪具备类似的制造能力和成本优势，但面临更复杂的地缘环境。20年后它大概率仍是全球前五的车企，但能否成为"前二"取决于海外扩张的成败。它不会是3Com式的昙花一现——垂直整合能力和460万辆的规模惯性，不是一夜之间可以归零的。
+> ** More like "Toyota of the era" — but not yet at the end.** Toyota also faced trade barriers, brand questions, and globalization challenges in the 1980s, and eventually took 30 years to become the largest car company in the world. Biadi has similar manufacturing capabilities and cost advantages, but faces more complex geo-location. It will probably remain the top five global firms after 20 years, but the first two depends on the success or failure of overseas expansion. It will not be a 3com-style glimmer -- vertical integration capacity and 4.6 million vehicles, not a zero-sum-night-long inertia.
 
 ---
 
-## 第七步：估值与安全边际 — 巴菲特"内在价值" + 段永平"对的价格"
+# Step seven: valuation and security margin -- Barfitt "inner value" + price of "right"
 
-### 当前估值指标（工具验算）
+## Current valuation indicator (tool validation)
 
-| 指标 | A股数值 | 历史分位 | 说明 |
+Indicator: A share value: History classification: description:
 |------|:---:|:---:|------|
-| PE（TTM） | **23.74倍** | 10年中位数41.8倍的57%分位 | 绝对值不低，但远低于历史中位数 |
-| PB | **3.41倍** | — | 制造业偏高 |
-| PS | ~0.96倍 | — | 低于1倍，制造业合理 |
-| ROE | **14.34%** | 2024年23.8%的60% | 大幅回落 |
-| 股息率 | **0.42%** | — | 极低，几乎不分红 |
-| FCF Yield | **-7.27%** | — | 负值，资本支出远超经营现金流 |
-| Forward PE | ~14.6倍 | — | 隐含2026年利润大幅反弹（+44%） |
+<unk> PE(TTM) <unk> 23.74 times** <unk> 57% of the median 41.8 times the median in 10 years <unk> not low in absolute terms, but far below the median in history <unk>
+<unk> PB<unk> 3.41 times**
+PS ~0.96 times – less than one times more than manufacturing is reasonable
+♪ ROE ♪ ♪ 14.34% ♪ ♪ 60% of 23.8% in 2024 ♪ ♪ The big fall ♪
+<unk> Escort rate <unk> 0.42%** <unk> <unk> <unk> <unk> very low, almost no red <unk>
+FCF Yield <unk> 7.27%** <unk> negative value, capital expenditure far exceeding operating cash flow
+<unk> Forward PE ~14.6 times <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> 44% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-### 反向DCF：当前股价隐含了什么？
+# Inverse DCF: What does the current stock price imply?
 
-A股85元 × 91.17亿股 = 市值约7,749亿元。以10%折现率和3%永续增长率计算：
-- 如果维持当前利润326亿元不增长 → 内在价值约4,660亿元 → 当前**溢价66%**
-- 当前市值隐含的是未来3-5年净利润增长至**500-600亿元**的预期——即利润需要在当前基础上增长50-80%
+A share of $85 million x 917 million = market value of approximately $774.9 billion. At 10 per cent discount and 3 per cent constant growth rate:
+- If the current profits of $32.6 billion are not increased, the intrinsic value is about $466.0 billion.
+- The current market value implies a projected net profit growth of **50-60 billion yuan over the next three to five years — that is, a profit increase of 50-80 per cent over the current level
 
-这意味着**市场已经定价了海外扩张成功+利润率恢复的乐观情景**。如果利润恢复不及预期，当前估值存在下修风险。
+This means that ** the market has already priced the optimistic scenario of successful overseas expansion + recovery of profit margins. ** If profits are not restored as expected, there is a risk of a downward revision of the current valuation.
 
-### 三情景估值（工具精确计算）
+#3 scenario valuation (tool precision)
 
-| 情景 | 年均EPS增速 | 3年后目标PE | 3年后EPS | 目标股价 | 较当前涨跌 |
+The average annual EPS rate increases three years later, and then three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, three years later, two years later, two years later, two years later, two years later, two years later, two years later, two years later, two years later, two years later, two years later, two years later, two years later, two years later, two years later, two years later, the next year, the year, the year, the year after the year, the year is the year of the year, the year, the year is the year, the year is the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year, the year,
 |------|:---:|:---:|:---:|:---:|:---:|
-| **乐观** | 25% | 30倍 | 6.99元 | **209.8元** | **+147%** |
-| **中性** | 15% | 25倍 | 5.44元 | **136.1元** | **+60%** |
-| **悲观** | 5% | 18倍 | 4.14元 | **74.6元** | **-12%** |
+** EXPOINTED** 25% ** 30 times ** $6.99 ** $209.8 ** ** + 147% ** ** ** ** <unk>
+** Middle ** 15% ** 25 times <unk> 5.44 ** 136.1 ** ** ** 60% ** ** ** <unk>
+** Pessimism** 5% <unk> 18 times <unk> $4.14 ** $74.6 ** 12% ** ** ** ** <unk>
 
-**乐观假设**：海外销量突破200万辆、储能独立上市、智能化追上第一梯队、价格战趋缓利润率恢复。EPS年增25%至6.99元，给30倍PE，目标价210元。
+** EXPO: **: Overseas sales out of 2 million, stock can be listed independently, smart as well as the first-tier, price-fastered recovery. EPS is 25 to 6.99 dollars a year, 30 times the PE, targeted at 210 dollars.
 
-**中性假设**：海外温和增长至150万辆、国内份额稳定、毛利率小幅恢复。EPS年增15%至5.44元，给25倍PE，目标价136元。
+** Neutral assumption**: The increase in the temperature of 1.5 million vehicles abroad, the stability of domestic shares, and the small recovery in the Maori rate.
 
-**悲观假设**：海外受关税严重限制、国内价格战延续、利润率持续承压。EPS年增5%至4.14元，给18倍PE，目标价75元（接近当前价）。
+** Pessimistic assumption**: Overseas countries are subject to severe tariff restrictions, domestic price wars and continued profit margins.
 
-### 与自身历史估值对比
+# Compared to their own historical valuations
 
-| 时期 | PE | 背景 |
+Period
 |------|:---:|------|
-| 2020年底 | ~200倍 | 新能源爆发前夜，利润极低 |
-| 2022年中 | ~50倍 | 高速增长期峰值 |
-| 2024年中 | ~25倍 | 增速放缓，但利润仍在增长 |
-| **2026年6月** | **23.74倍** | 利润下滑，增长不确定 |
+By the end of 2020, 200 times more than the amount of money that was spent on the night before the outbreak.
+In mid-2022, the <unk> 50 times the <unk> the peak of the high-growth period
+In 2024, the <unk> 25 times the <unk> the <unk> the <unk> the <unk> the <unk> the <unk> the <unk> the <unk> the <unk> is slowing down but the profit is still growing
+**June 2026** ** 23.74 times**
 
-当前PE处于近5年低位，但需注意：2020年200倍PE时利润仅30亿，如今24倍PE时利润326亿——**PE低不代表便宜，关键是利润能否持续增长**。
+The current PE is at a low level for almost five years, but it is important to note that in 2020, 200 times the PE had a profit of only 3 billion, and now 24 times the PE had a profit of 32.6 billion - ** PE is low and not cheap, and the key is whether the profit will continue to grow**
 
-### 与同行估值对比
+# Compared to peer valuation
 
-| 公司 | PE（TTM） | PS | 市值 |
+*The following information was provided to the Board:
 |------|:---:|:---:|------|
-| 特斯拉 | ~354倍 | ~17倍 | 1.44万亿美元 |
-| **比亚迪** | **24倍** | **~1倍** | ~1,100亿美元 |
-| 吉利 | ~10倍 | ~0.5倍 | ~1,800亿港元 |
-| 上汽 | ~14倍 | ~0.2倍 | ~1,412亿元 |
-| 长安 | ~27倍 | ~0.5倍 | ~838亿元 |
+Tesla, ~ 354 times ~ 17 times ~ ~ 1.44 trillion dollars ~
+<unk> Biadee** <unk> 24 times ** <unk> <unk> <unk> 1 times <unk> ~ 110 billion United States dollars
+~ 10 times ~ 0.5 times ~ 180 billion Hong Kong dollars ~
+~ 14 times ~ 0.2 times ~ 141.2 billion dollars ~
+♪ The world's gonna be so big ♪
 
-比亚迪估值在中国车企中偏高（吉利10倍、上汽14倍），但远低于特斯拉。市场给比亚迪的溢价来自"技术含量+全球化潜力"，但相比特斯拉的"AI/自动驾驶/能源"叙事，溢价空间有限。
+Biadi values are high in Chinese car companies (10 times Gilly, 14 times higher), but far below Tesla. Market premiums for Biasdi come from "technology content plus globalization potential," but they are limited in space compared to Tesla's "AI/ATM/Energy" narrative.
 
-> **段永平式追问**：如果股市明天关闭5年，你愿意以85元持有吗？
+> **Plus Yongping**: Would you like to hold it for $85 if the stock market were closed for five years tomorrow?
 >
-> **需要谨慎。** 5年后（2031年），如果比亚迪成功走通全球化路径，年销量800-1000万辆，净利润600-800亿元，那85元的买入价将获得丰厚回报。但如果海外扩张受阻、国内价格战延续，利润可能长期徘徊在300-400亿元，那24倍PE的买入价回报将非常有限。关键判断点在于：**你对海外扩张的信心有多大？**
+Five years later (2031), if Biadi successfully takes the path of globalization, selling 8-10 million vehicles per year, making a net profit of $60-80 billion, the price of the 85 won will be well paid. If overseas expansion is blocked, domestic price wars continue, profits may linger for a long time at $30-40 billion, the return on 24 times the price of the PE will be very limited. The key judgement is: ** How much confidence do you have in overseas expansion?**
 
 ---
 
-## 第八步：综合决策备忘录
+# Step eight: A comprehensive decision-making memorandum
 
-### 综合评估表
+## Comprehensive assessment table
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|:---:|
-| 生意质量（段永平） | 好生意但不轻松——垂直整合制造商，成本领先但利润率受价格战压制。硬件一次性销售模式无复购锁定 | ★★★★ |
-| 护城河（巴菲特） | 成本+规模+技术三位一体，当前仍宽。但技术代差在缩小、品牌溢价有限、转换成本低 | ★★★★ |
-| 管理层（段永平+巴菲特） | 王传福是中国制造业罕见的战略家+工程师。持股17.65%利益一致，近3年无减持。但接班人问题突出 | ★★★★ |
-| 最大风险（芒格） | 海外扩张受阻+国内价格战延续="增收不增利"成为新常态。2025年FCF-977亿、利润-19%已是警示 | ★★★★ |
-| 文明趋势（李录） | 电动化是确定的文明级范式转移，比亚迪处于正确的赛道、正确的位置。储能第二曲线打开新空间 | ★★★★★ |
-| 估值（巴菲特+段永平） | PE 24倍不贵但也不便宜，隐含利润大幅反弹预期。Forward PE 14.6倍有吸引力但需验证 | ★★★ |
+The hardware one-time sales model is locked in without a repurchase.
+The cost + scale + technology is still wide. But the technology gap is shrinking, brand premiums are limited, conversion costs are low
+<unk> Management (Yongping + Buffett) <unk> Wang Yufu is a rare Chinese manufacturer + engineer. 17.65% share shares are equal, and have not decreased for nearly three years.
+The most risky is that overseas expansion is being blocked + the domestic price war continues = "no gains" became the new norm. FCF-97.7 billion in 2025, profit - 19%, is a warning.
+The electricization is a defined paradigm shift of civilization, Biadi is in the right track and position. The storage can open a new space with a second curve.
+<unk> Valuation (Buffett+Ping) <unk> PE 24 times less expensive but not cheap, with implicit profit rebound expectations. Forward PE 14.6 times attractive but subject to verification
 
-### 最终决策表
+# Final decision sheet
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **观望偏积极。** 当前A股85元处于中性偏低位置。建议等待以下信号之一出现再建仓：（1）2026Q2/Q3财报确认利润拐点；（2）A股跌至75元以下（对应PE~21倍）提供更好的安全边际；（3）欧盟关税政策明朗化。H股75.85港元因估值更低（PE~22倍），相对A股更有吸引力 |
-| **持仓者** | **继续持有。** 长期逻辑（电动化趋势+垂直整合优势+全球化潜力）未被破坏。2026年是"黎明前的黑暗"——补贴退坡+透支效应消化中，下半年有望回暖。但如果仓位超过投资组合的20%，建议适度减至15%以下 |
-| **卖出信号** | （1）连续两个季度海外销量同比负增长；（2）毛利率跌破15%且无改善迹象；（3）王传福因健康或其他原因卸任且无合格接班人；（4）固态电池大规模量产且比亚迪在该路线上明显落后 |
-| **加仓信号** | （1）A股跌至70元以下（PE~20倍），提供充足安全边际；（2）2026Q2/Q3净利润同比转正且海外毛利率维持19%+；（3）储能业务独立披露且增速超50%；（4）欧盟关税政策出现缓和 |
+** Empty warehouser** ** ** ** ** ** ** ** ** ** % ostentatious.** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+<unk> The warehousekeeper** <unk> ** continues to hold.** Long-term logic (electricization trends + vertical integration advantages + globalization potential) was not destroyed. 2026 was "Dark before dawn" - subsidies are falling off the slope + indulging effects, and the rest of the year is expected to warm. If the warehouse space exceeds 20% of the portfolio, it is recommended to be reduced to less than 15%.
+<unk> ** Signals from sales** <unk> (1) Negative growth in overseas sales on a par for two consecutive quarters; (2) decline in the Māori rate by 15 per cent without any sign of improvement; (3) resignation of Wang for health or other reasons and lack of qualified replacement; (4) mass production of solid-state batteries and significant backwardness of Biadi along the route
+<unk> **Step signal** <unk> (1) A share down to $70 (PE~20 times) to provide sufficient security margins; (2) 2026Q2/Q3 net profit positive-on-year and 19% Māori ratio overseas maintained; (3) storage capacity independently disclosed and increased by over 50%; (4) EU tariff policy eased
 
-### 价格区间总结
+# Price range summary #
 
-| 区间 | A股价格 | 对应PE | 策略 |
+<unk> A share price <unk> PE policy <unk>
 |------|:---:|:---:|------|
-| 深度低估 | <70元 | <20倍 | 积极建仓 |
-| 合理偏低 | 70-85元 | 20-24倍 | 分批建仓 |
-| **当前位置** | **85元** | **24倍** | **观望/持有** |
-| 合理 | 85-110元 | 24-31倍 | 持有 |
-| 偏高 | >130元 | >36倍 | 考虑减仓 |
+♪ Deeply underestimated ♪ < $70 < 20 times ♪ active warehouse construction ♪
+♪ We're gonna be able to get the best of us ♪
+** Current position** ** $85 ** ** 24 times ** ** Watching/holding** **
+<unk> Reasonable 85-110 <unk> 24-31 <unk> holding <unk>
+<unk> > $130 > 36 times > <unk> Consider reducing the storage
 
-### 四位大师模拟点评
+# Four masters simulated the reviews
 
-> **巴菲特视角**："比亚迪是一家了不起的公司，王传福是一位了不起的经营者。我们在2008年投资它并获得了30倍回报。但我们在2022-2025年全部卖出了——不是因为它不好，而是因为在当前的竞争环境和地缘政治格局下，未来的确定性降低了。护城河主要来自成本优势而非品牌忠诚，而成本优势型护城河在价格战中会被自我消耗。以24倍PE买入一家利润在下滑、FCF为负的制造业公司，安全边际不够充分。"
+> **Buffett perspective**: "Byadi is a great company, and Wang Tsifeng is a great operator. We invested in it in 2008 and got 30 times the return. We sold it all in 2022-2025 – not because it was bad, but because the future is less certain in the current competitive environment and geopolitical landscape. The moat is largely based on cost advantage rather than brand loyalty, and the moat of cost is self-consumption in price wars. Buying 24 times the profits of a manufacturing company with FCF is not enough security margin."
 
-> **芒格视角**："反过来想——如果我要做空比亚迪，我会押注什么？我会押注'增收不增利'是结构性的而非周期性的。国内62%的渗透率意味着增量红利已基本兑现，存量竞争是零和博弈。海外关税让高利润市场充满不确定性。最让我担忧的是研发资本化比例的提升——从1.78%到8.61%，这是利润质量下降的信号。不过，王传福是我见过的最优秀的制造业企业家之一——如果有人能解决这些问题，那就是他。"
+> ** Mang perspective**: "Counterly think -- if I do AirBiardy, what do I bet? I'll bet that 'I'm not adding up' is structural, not cyclical. Domestic penetration of 62% means that the incremental dividend is basically realized, and stock competition is zero and game. Overseas tariffs give high-profit markets uncertainty. What worries me is the increase in the ratio of R&D capitalization -- from 1.78% to 8.61%, which is a sign of a decline in the quality of profits. But, the King's legacy is one of the best manufacturing entrepreneurs I've ever seen -- if anyone can solve these problems, it's him."
 
-> **段永平视角**："生意模式上，比亚迪更像是一个'对的人做了一个还行的生意'。垂直整合制造商的利润率天花板是有限的——你看丰田做了100年，净利润率也就6-8%。比亚迪的长期净利润率大概会稳定在4-6%之间。关键看两件事：第一，海外能不能复制国内的成功，这决定了收入天花板；第二，智能化能不能跟上，这决定了品牌能不能向上走。以85元的价格，如果你愿意等3-5年，中性情景下有60%的上行空间，但前提是要忍受利润下滑和股价波动。"
+> **nnnought a long-term net profit rate of about 4-6%. Two things are important: first, whether or not the overseas country replicates the success of the home, which determines the income ceiling; second, whether or not the intelligence is up and running, which determines whether the brand can move up. At 85 dollars, if you want to wait three to five years, there is 60% of the upboard space in the neutral scenario.
 
-> **李录视角**："比亚迪处在人类文明从化石能源到电能转型的正中心。这个转型的确定性是极高的——不是'是否发生'的问题，而是'多快发生'的问题。比亚迪在这场转型中的位置也是明确的——它是目前全球产能最大、技术覆盖最全的电动车制造商。从20年的维度看，电动化+储能的市场空间足够支撑一个万亿级别的公司。但投资的关键不仅是方向正确，还有估值是否合理。当前24倍PE包含了对未来的乐观预期，如果市场给出15-18倍PE的价格，那就是明显的机会了。"
+> **Liance** "Byadi is at the heart of the transformation of human civilization from fossil energy to electricity. The certainty of this transition is extremely high -- not whether it happened, but how fast it happened. Biadi's position in this transition is clear -- it is the manufacturer of the most global power and technology-covering electric vehicles. Twenty years in dimension, the electric + storage market space is enough to support a trillion-dollar company. But the key to investment is not only the right direction, but whether the valuation is reasonable. The current 24-fold PE contains optimistic expectations for the future. If the market gives 15-18 times the price of the PE, it is a clear opportunity."
 
 ---
 
-## AI研究置信度 vs 投资确定性
+# AI study confidence vs investment certainty
 
-### AI分析置信度
+# AI analyzes confidence
 
-| 结论类别 | 置信度 | 依据 |
+<unk> Conclusion category <unk> Confidence <unk>
 |---------|:---:|------|
-| 财务数据（收入/利润/现金流） | **极高** | 公司年报+多源交叉验证+工具验算 |
-| 竞争格局（市场份额/排名） | **高** | 多家权威机构数据一致 |
-| 技术能力评估 | **高** | 公开专利数据+第三方拆解报告 |
-| 管理层评估 | **中高** | 公开信息充足，但"真实想法"不可观测 |
-| 海外扩张前景 | **中** | 涉及地缘政治，变量多且AI预测能力有限 |
-| 估值合理性判断 | **中** | 取决于对增长率的假设，而增长率本身不确定 |
+<unk> Financial data (income/profit/cash flow) <unk> very high ** corporate annual report + multi-source cross-check + tool validation <unk>
+Competition patterns (market share/rank)
+<unk> Technical capability assessment <unk> high ** public patent data + third party dismantling report <unk>
+<unk> Management assessment <unk> medium-high** <unk> public information sufficient, but "real thoughts" are not observed <unk>
+<unk> Prospects for overseas expansion <unk> Medium** <unk> geopolitics, multivariant and AI's limited forecasting capacity <unk>
+<unk> Rationale of valuation <unk> in ** <unk> depends on assumptions about growth rates, which are not certain per se
 
-### 投资确定性
+# I'm sure of the investment
 
-| 维度 | 确定性 | 说明 |
+<unk> Dimensions <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 |------|:---:|------|
-| 电动化大趋势 | **极高** | 文明级范式转移，不可逆 |
-| 比亚迪的制造能力 | **极高** | 460万辆、75%自产率已被充分验证 |
-| 国内市场份额维持 | **中高** | 竞争加剧但规模优势难撼动 |
-| 海外扩张成功 | **中** | 最大的不确定性来源——关税、品牌、执行 |
-| 利润率恢复 | **中** | 取决于价格战何时停止+海外占比提升速度 |
-| 3年后股价>85元 | **中偏高** | 中性情景136元，悲观情景75元，概率加权后偏正 |
+♪ The big trend of electricization ♪
+The Bialdi manufacturing capacity is extremely high.
+<unk> Maintenance of domestic market share <unk> Medium and high ** Increased competition but not likely to be influenced by the advantages of scale <unk>
+<unk> Success in overseas expansion <unk> ** ** The biggest source of uncertainty - tariffs, brands, enforcement <unk>
+<unk> Return of profit margin <unk> medium** <unk> depends on when price wars stop and + the rate of overseas occupation rise <unk>
+3 years later, the share price is >85 <unk> medium ** high ** neutral scenario 136, pessimistic scenario 75, probabilities weighted and positive
 
-**关键区分**：本报告的"AI分析置信度"高，是因为比亚迪数据极为丰富（A级）；但"投资确定性"只是中等，因为**比亚迪当前正处在增长模式切换的关键节点**——从国内高增长转向全球化+利润率修复，这个转换能否成功尚未被验证。高分析置信度 ≠ 高投资确定性。
+** Key distinctions**: The high "AI Analytic Confidence" in this report is due to the great wealth of Biadi data (A Level); but "Investment Uncertainty" is only moderate because ** Biadi is currently at the key node for the shift in growth patterns** - the transition from high domestic growth to globalization+profit recovery has not yet been proven.
 
 ---
 
-*数据来源：比亚迪2024/2025年年报、StockAnalysis、CnEVPost、CleanTechnica、IEA Global EV Outlook 2026、BloombergNEF、瑞银拆车报告、Investing.com、CompaniesMarketCap、MacroTrends、GuruFocus、新华网、证券时报、每经网、21经济网、中国基金报、新浪财经、东方财富、IT之家等*
+*Source: Biadi Annual 2024/2025, StockAnalysis, CnEVPost, CleanTechnica, IEA Global EV Outlook 2026, BloombergNF, Silver Breakup Report, Investment.com, Company Market Cap, MacroTrends, GuruFocus, Xinhua Network, Securities Times, Every Energical Network, 21 Economic Net, China Foundation, New Wave, Eastern Wealth, IT House, etc.*
 
-*估值数据经 `financial_rigor.py` 工具精确验算，所有计算使用十进制精确运算，无浮点误差*
+* Valuation data are accurately measured by the `final_rigor.py ' tool, all calculations are calculated using a decimal method and are calculated using precise calculations without a floating point error*

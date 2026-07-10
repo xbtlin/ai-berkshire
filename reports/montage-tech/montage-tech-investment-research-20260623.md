@@ -1,351 +1,351 @@
-# 澜起科技（688008.SH / 6809.HK）投资研究报告
+# Research report on investment in science and technology (6880008.SH/6809.HK)
 
-> **研究日期**：2026年6月23日
-> **A股股价**：CNY 258.00 | **市值**：CNY ~3,122亿
-> **52周区间**：CNY 78.29 - 288.79 | **1年涨幅**：~230%
-
----
-
-## AI研究偏见自觉
-
-**信息丰富度评级：A级（信息充裕）**
-
-澜起科技2019年科创板上市、2026年2月港股二次上市，券商覆盖广泛（11位分析师一致买入评级）。公司为全球内存接口芯片龙头，行业数据（Frost & Sullivan/LightCounting）可验证。同时因AI服务器概念成为2025-2026年最热门半导体标的之一。
-
-**A级公司的AI研究陷阱**：市场对澜起科技的叙事高度一致——"DDR5渗透率提升+AI服务器拉动互连芯片+全球三寡头垄断=确定性增长"。11个分析师全部看多、零卖出评级。**本报告的alpha在于两个逆向问题**：（1）PE 131倍（FY2025基准）是否已把未来3年增长全部price in？（2）DDR5/DDR6切换周期中，竞争格局会不会松动？
-
-**偏见自查**：
-- "三寡头垄断93%份额"的叙事让确定性感觉极强——但瑞萨和Rambus的份额在DDR5时代可能重新洗牌
-- 1年涨230%后市场处于极度亢奋状态，分析师目标价255.84（低于当前价258）暗示上行空间为零
-- 创始人和早期投资者5年累计套现超百亿——内部人在卖，外部人在追
+> ** Date of study**: 23 June 2026
+> **A share price**: CNY 258.00 ** Market value**: CNY ~ 312.2 billion
+> ** 52 weeks**: CNY 78.29 - 288.79 ** 1 year increase**: ~230%
 
 ---
 
-## 关键数据交叉验证记录
+# AI studies prejudices
 
-| 验证项 | 来源1 | 来源2 | 偏差 | 结果 |
+** Information abundance rating: A (information is abundant)**
+
+The company is the global memory interface chip lead, and industry data (Frost & Sullivan/RightCounting) can be validated. It is one of the most popular semiconductors in the period 2025-2026 because of the AI server concept.
+
+**A.A. Research trap**: Markets are highly consistent with the narrative of technology-inflammation -- "DDR5 penetration up + AI server pulls interconnectivity chips + global triple oligopoly = definitive growth". 11 analysts are all over-rated and rated zero sales.** The alpha in this report is a two-inverse problem** (1) has the PE 131 times (FY2025) allowed a full increase in the next three years in? (2) Will the competition pattern relax during the DR5/DR6 switch-over cycle?
+
+** Prejudice self-examination**:
+- The narrative of "The Oligopoly Monopoly 93%" gives a sense of certainty - but Risa and Rambus' shares may be reshuffled in the DDR5 era.
+- The market is in a state of extreme excitement after a 230 per cent increase in one year, and the analyst's target price is 255.84 (down from the current price of 258) implying zero ups.
+- The founder and early investor accumulated over 10 billion over five years - insiders sell, outsiders chase.
+
+---
+
+# Cross-checking records for key data
+
+<unk> Validation item <unk> Source 1 <unk> Source 2 <unk> deviation <unk> result <unk>
 |--------|-------|-------|------|------|
-| 市值（~3,122亿） | 股价258×股本12.1亿=3,122亿 | Investing.com ~3,481亿 | ~10% | 通过（差异因Investing含H股或不同股本口径） |
-| FY2025收入（54.56亿） | 公司年报 | 证券之星 | 一致 | 通过 |
-| FY2025归母净利（22.36亿） | 公司年报 | 证券之星 | 一致 | 通过 |
+Market value (~312.2 billion) <unk> Stock value: 258 x 1.12 billion = 312.2 billion <unk> Investment.com ~ 348.1 billion ~ 10% <unk> Pass (discrepancies due to the inclusion of H or different sizes) <unk>
+<unk> FY2025 (5,456 million)
+<unk> SY2025 net profit from mother (2.236 billion) <unk>
 
-> PE(FY2025)=130.96x、PB=14.97x、ROE=11.43%、股息率=0.15% 均通过 `financial_rigor.py` 精确验算。
+> PE(FY2025) = 130.96x, PB=14.97x, ROE=11.43%, dividends = 0.15% are calculated by `final_rigor.py`.
 
 ---
 
-## 一、生意本质分析
+# One, business nature analysis
 
-### 一句话定义
+# One word of definition
 
-**澜起科技是全球内存接口芯片市场三寡头之一（市占率36.8%，全球第一），其核心产品是让CPU与内存条"对话"的桥梁芯片——每一台服务器的每一根内存条都需要它。**
+**Technology is one of the three oligarchs in the global memory interface (city 36.8%, global number one) whose core product is the bridge chip that allows CPU to "talk" with the memory line -- which is needed for every memory bar on each server**
 
-### 收入结构拆解（FY2025）
+# # income structure disassemble (FY2025)
 
-| 业务线 | 收入（亿元） | 占比 | 同比增速 | 毛利率 |
+The business line, the income (millions of yuan) the percentage, the rate of increase, the rate of Maori, the rate of increase, the rate of gross domestic product, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of the increase, the rate of the increase, the rate of the proportion of the gross national income, the rate of the income, the proportion of the income, the proportion of the income, the proportion of the total, the proportion of the total, the proportion of the total, the proportion of the total, the proportion of the total, the proportion of the total, the proportion of the total, the proportion of the total, the proportion of the total, the number of the total, the number of the total, the number of the total, the, the number of the total, the number of the
 |--------|------------|------|---------|--------|
-| **互连类芯片**（内存接口+PCIe Retimer+CXL） | 51.39 | **94.2%** | **+53.4%** | **65.57%** |
-| 津逮服务器平台 | 3.08 | 5.6% | — | — |
-| 其他 | ~0.09 | 0.2% | — | — |
-| **合计** | **54.56** | **100%** | **+49.9%** | **62.23%** |
+** Interconnection chip** (RAM interface + PCIe Retimer+CXL) <unk> 51.39 <unk> 94.2% ** ** + 53.4% ** ** 65.57% ** <unk>
+<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+Other ~0.09 ~ 0.2 % ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+** Total** ** 54.56** ** 100%** ** ** 49.9% ** 62.23% **
 
-**关键发现**：澜起科技本质上是一家单一产品线公司——互连芯片贡献94%收入。这是优点也是风险——高度聚焦带来了极深的技术壁垒，但也意味着增长天花板受限于内存接口芯片TAM。
+** Key findings**: Intense technology is essentially a single product line company - the interconnection chip contributes 94% of the revenue. This is both a good and a risk - a high focus that creates a deep technical barrier, but also means that growth ceilings are limited to memory interface chips.
 
-### 5年盈利趋势
+# 5 years profit trend
 
-| 指标 | FY2021 | FY2022 | FY2023 | FY2024 | FY2025 |
+<unk> Indicator <unk> FY2021 <unk> FY2022 <unk> FY2023 <unk> FY2024 <unk> FY2025 <unk>
 |------|--------|--------|--------|--------|--------|
-| 总收入（亿） | ~25.4 | ~36.8 | ~22.9 | ~36.4 | 54.56 |
-| 收入增速 | — | +45% | -38% | +59% | +49.9% |
-| 归母净利润（亿） | ~10.0 | ~14.1 | ~7.0 | ~14.1 | 22.36 |
-| 净利润增速 | — | +41% | -50% | +101% | +58.4% |
-| 毛利率 | ~73% | ~69% | ~53% | ~55% | 62.23% |
-| 净利率 | ~39% | ~38% | ~31% | ~39% | 39.03% |
-| 研发费用（亿） | — | 5.64 | 6.82 | 7.63 | ~9.5 |
-| 研发占收入比 | — | 15.3% | 29.8% | 21.0% | ~17% |
-| 经营现金流（亿） | — | — | — | — | ~18 |
+Total income (billions) ~25.4 ~36.8 ~ 22.9 ~ 36.4 ~ 54.56 ~
+<unk> Income growth <unk> + 45% <unk> <unk> 38% <unk> 59% <unk> 49.9% <unk>
+<unk> Net profit from the return of the mother (in millions) ~10.0<unk> 14.1<unk> 7.0<unk> 14.1<unk> 22.36<unk>
+<unk> Net profit growth <unk> + 41% <unk> - 50% <unk> + 101% <unk> + 58.4% <unk>
+<unk> Māori ratio ~ 73% ~ 69% ~ 53% ~ 55% ~ 62.23% <unk>
+Net interest rate ~ 39% ~ 38% ~ 31% ~ 39% ~ 39.03% ~
+<unk> R & D costs (millions) <unk> 5.64 <unk> 6.82 <unk> 7.63 ~ 9.5 <unk>
+R & D as a percentage of income – 15.3% – 29.8% – 21.0% ~ 17% –
+<unk> Operating cash flow (billions) <unk> <unk> <unk> <unk> <unk> ~ 18 ~ <unk> <unk> <unk> <unk> <unk>
 
-**核心观察**：
-- **收入和利润高度周期性**：2023年因DDR4→DDR5切换期库存调整，收入暴跌38%、利润腰斩。2024年随DDR5放量强力反弹
-- **毛利率极高但有波动**：FY2021高达73%，FY2023因产品结构调整降至53%，FY2025回升至62%。长期看60-65%是合理中枢
-- **研发投入极重**：FY2023研发占收入比高达30%（行业下行期仍坚持高研发），绝对值持续增长
+** Core observations**:
+- ** High cyclicality of income and profits**: Reconciled in 2023 by stock swaps of DR4 <unk> DR5 with a 38% drop in income and profit beetal.
+- **Maori rate is very high but volatile**: FY 2021 is as high as 73%, FY 2023 has fallen to 53% as a result of product restructuring and FY 2025 has risen to 62%.
+- **The R & D input is extremely heavy**: SY2023 represents up to 30% of income (high R & D is still maintained in the industry down the road) and growth in absolute terms is sustained
 
-### 商业模式画布
+# Business model canvass
 
-- **类型**：Fabless芯片设计公司（设计芯片，不拥有晶圆厂，由台积电/三星代工）
-- **客户**：DRAM厂商（三星、SK海力士、美光）是核心客户——它们把澜起的RCD/DB芯片封装到内存条上
-- **复购性**：极强——每代DDR标准持续5-8年，期间持续出货。每次DDR换代需重新设计芯片
-- **定价模式**：ASP随DDR代际升级而提升（DDR5 RCD芯片价格约为DDR4的2-3倍）
-- **轻资产模型**：无工厂，研发+销售为主，资本开支极低
+- **type**: Fabless chip design company (design chip, not having a crystal circle plant, with a station-based power/three star replacement)
+- **Crowd**: Dram manufacturers (Sam, SK Hercules, Mistwang) are core clients - they have added the RCD/DB chips to the RAM.
+- ** Repurchase**: Very strong - the DDR standard lasts 5-8 years each generation and continues to be delivered.
+- ** Pricing model**: ASP upgraded with the DDR intergenerational upgrade (DDR5 RDCD chip prices are about 2-3 times as high as the DR4)
+- **LA model**: No plant, R & D + marketing, capital expenditure is extremely low
 
-### 追问：这门生意好在哪？
+# Ask: Where is the business?
 
-**如果只能用一句话描述**：澜起科技卖的是"CPU读取内存的门票"——全球每一台服务器的每一根DDR5内存条上都需要一颗它的芯片，而全球只有3家公司能做这颗芯片。
+** If one word is enough to describe**: The technology is being sold "CPU's ticket to read memory" -- each DDR5 RAM on a server needs a chip of it on every one of its servers worldwide, and only three companies worldwide can do it.
 
-生意的好处：
-1. **三寡头垄断93%**——全球仅澜起、瑞萨、Rambus三家能做，新进入者需5-8年才能获得JEDEC标准认证
-2. **技术驱动的持续升级**——DDR4→DDR5→DDR6，每代芯片复杂度和ASP均大幅提升
-3. **轻资产高毛利**——Fabless模式，毛利率62%、净利率39%，接近软件公司水平
-4. **AI算力是超级催化剂**——AI服务器每台需要更多内存条（8-12根→24-32根），乘数效应巨大
+Benefits of business:
+**93% oligopoly** - global only, Risa, Rambus, new entrants take 5-8 years to get JEDEC standard certification
+** Continuous technologically driven upgrade** - DDR4 <unk> DDR5 § DDR6 with significant increases in the complexity of each chip and the ASP
+** Māori for light assets** - Fables model, 62% Māori rate, 39% net interest rate, close to software company level
+**AI computing is a super-catalyst** — each AI server requires more memory bars (8-12 ff 24-32) and the multiplier effect is significant
 
-生意的隐忧：
-1. **收入高度周期性**——2023年暴跌38%证明了DDR换代期间的剧烈波动
-2. **客户高度集中**——三星/海力士/美光占全球DRAM 95%+份额，客户议价权极强
-3. **天花板可见**——内存接口芯片全球TAM仅~12-16亿美元（2024年），即使到2030年也仅~50亿美元
+Business’s Axis:
+** High cyclicality of income** — 38% sharp fall in 2023 attests to the high volatility during the DR replacement period
+** High client concentration** - Samsung/Hales/Mezzam account for 95% + share of DRAM globally, with very high client bargaining power
+** The ceiling is visible** — the memory interface chip is only ~1.21 to 16 billion dollars globally (2024), and ~5 billion dollars even by 2030
 
 ---
 
-## 二、护城河评估
+# II. A waterfront assessment
 
-### 五类护城河逐项验证
+# Five-class moats, one by one
 
-| 护城河类型 | 强度 | 验证分析 |
+♪ The moat type ♪
 |-----------|------|---------|
-| **品牌/定价权** | 中等 | 芯片按JEDEC标准设计，差异化有限。但因三寡头垄断，定价权高于一般芯片公司 |
-| **转换成本** | **极强** | 内存接口芯片需通过JEDEC标准委员会认证+DRAM厂商验证（2-3年周期）。更换供应商意味着整条内存条重新设计和验证，成本极高 |
-| **网络效应** | 弱 | 无直接网络效应，但JEDEC标准制定中的参与权构成间接影响力 |
-| **规模效应** | 中等 | Fabless模式下规模优势有限，但出货量越大、单颗芯片的研发摊薄成本越低 |
-| **技术/专利壁垒** | **极强** | DDR5 RCD/DB芯片设计门槛极高，全球仅3家量产。澜起是DDR5第一代和第二子代芯片唯二的供应商之一。PCIe Retimer和CXL芯片进一步加厚技术壁垒 |
+<unk> Brand/pricing rights** Medium <unk> Chips designed according to JEDEC standards with limited variation. But due to the oligopoly, pricing is higher than average chip companies
+<unk> ** Conversion costs** <unk> very strong** <unk> Memory interface chip to be certified by JEDEC Standards Committee +DRAM vendor (2-3 year cycle). Change of supplier means entire memory strip redesign and validation at very high cost
+<unk> Network effects** Weaknesses <unk> No direct network effects, but participation in the setting of JEDEC standards constitutes indirect influence <unk>
+<unk> **Scalation effect** <unk> Medium <unk> Fabless model has limited advantages in size, but the larger the volume, the lower the cost of a single chip R & D spread
+**Technology/Pictic barriers** ** Extreme** DDR5 RDD/DB chip design threshold very high, with only three production volumes worldwide. Contributor to the first generation of DR5 and second generation chip two. PCIE Retimer and CXL chip further thicken technical barriers
 
-### 护城河趋势
+# The moat of the river
 
-**过去5年：显著变宽**
-- DDR5时代市占率从~30%提升至36.8%（超越瑞萨成为全球第一）
-- 产品线从单一内存接口扩展至PCIe Retimer + CXL互连芯片
-- 进入AI服务器高速互连赛道，TAM扩大数倍
+** The last five years: significant width**
+- The DDR5 city share rose from ~30% to 36.8% (Big Risa is the world ' s number one).
+- Extension of product lines from a single memory interface to PCIE Retimer + CXL interconnectivity chip
+- Access to the AI server high-speed interconnection track, TAM multiplied.
 
-**未来5年预判：持续变宽但需警惕DDR6切换风险**
-- DDR5渗透率从~50%提升至90%+，量价齐升
-- PCIe 6.0/7.0 Retimer + CXL 3.0打开新增长曲线
-- **风险**：DDR6（预计2028-2030年）可能重新洗牌竞争格局
+** Prejudice for the next five years: continuous expansion but alert to the risk of a DDR6 switch**
+- DDR5 penetration rate increased from ~50% to 90% + with a full price increase
+- PCIE 6.0/7.0 Retimer + CXL 3.0 opens the new growth curve
+- **Risk**: Possible reshuffling of competitive patterns of DDR6 (expected 2028-2030)
 
-### 追问：10年后这条护城河还在吗？
+# Ask: 10 years later, is this moat still there?
 
-**大概率还在**。JEDEC标准认证的高门槛+DRAM厂商不愿冒险更换验证过的供应商=极强的客户粘性。但DDR6切换期（~2028-2030年）是观察窗口——如果有第4家公司（如中国本土新进入者或大型IDM）突破认证壁垒，三寡头格局可能松动。
+** The high threshold for JEDEC standard certification + DRAM manufacturers are reluctant to risk replacing certified suppliers = extremely sticky customers. But the DDR6 switch period (~2028-2030) is an observation window - the oligarchic pattern may be relaxed if a fourth company (e.g., a new entrants to China mainland or a large IDM) breaks through the certification barrier.
 
 ---
 
-## 三、逆向思考与风险清单
+# Three, reverse thinking and risk list
 
-### 失败路径全景
+# Failed path panorama
 
-| 失败路径 | 概率 | 影响程度 |
+<unk> Failed path <unk> Probability <unk> Impact level <unk>
 |----------|------|---------|
-| DDR换代周期导致收入再次暴跌（类似2023年-38%） | 30-40% | 高 |
-| AI服务器投资周期性放缓 | 25-35% | 高 |
-| 瑞萨/Rambus在DDR5/DDR6中抢回份额 | 20-30% | 中高 |
-| 美国制裁限制芯片代工（台积电/三星受限为澜起代工） | 10-15% | 极高 |
-| CXL/PCIe Retimer市场竞争加剧（Broadcom、Marvell等巨头进入） | 30-40% | 中等 |
-| 内存接口芯片TAM天花板（2030年仅50亿美元） | 60-70% | 中等（限制上行但不致命） |
-| 估值回归均值（PE从130x回到80x） | 50-60% | 高 |
-| 创始人/早期股东持续减持打击信心 | 40-50% | 中等 |
+<unk> DDR replacement cycle has led to another sharp drop in income (like 2023-38%) <unk> 30-40% <unk> High <unk>
+<unk> A.I. Server investment is slowing down cyclically <unk> 25-35% <unk> High <unk>
+<unk> Risa/Rambus recovery of share in DR5/DR6 <unk> 20-30% <unk> medium height <unk>
+<unk> United States sanctions limit chip surrogates (power/three stars limit) <unk> 10-15 <unk>
+<unk> CXL/PCIE Retimer market competition (Broadcom, Marvell, etc.) <unk> 30-40%
+<unk> Memory interface chip TAM ceiling ($5 billion in 2030) <unk> 60-70% <unk> Medium (restricted but not fatal) <unk>
+<unk> Valuation regression to mean value (PE from 130x to 80x) <unk> 50-60% <unk> High <unk>
+<unk> Founder/early shareholder sustained loss of confidence 40-50%
 
-### 历史类比
+# History analogy
 
-| 类比 | 相似点 | 结局 | 启示 |
+The synonyms, the symmetry, the symmetry, the end, the revelation, the sermon.
 |------|--------|------|------|
-| **Rambus（2000年代）** | 内存接口/IP芯片，技术垄断地位 | 经历了专利诉讼、技术路线争议后稳定在~20%份额 | 技术垄断不等于永久垄断，标准切换是最大风险期 |
-| **IDT（被瑞萨收购前）** | 内存接口芯片先驱 | 2019年被瑞萨以67亿美元收购 | 内存接口芯片公司有极高的并购价值 |
-| **2023年澜起科技自身** | DDR4→DDR5切换期 | 收入-38%、利润-50%、股价腰斩 | 周期性极强，换代期波动不可避免 |
+**Rambus (2000s)** Memory interface/IP chip, technology monopoly <unk> stability at ~20% after patent litigation, technology route dispute <unk> technology monopoly is not equal to permanent monopoly <unk> standard switching is the most risky period <unk>
+**IDT ** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+**Technology itself in 2023** DDR4<unk> DDR5 switch period ** Income - 38%, profit - 50%, share value cut **
 
-### 追问：我最可能在哪里犯错？
+# Ask: Where am I most likely to make mistakes?
 
-1. **把"三寡头垄断"等同于"永远高增长"**。垄断格局确定，但市场天花板也确定——2030年TAM仅50亿美元，澜起占1/3也才17亿美元（~120亿人民币）。当前54.56亿收入离天花板不算远
-2. **忽视周期性**。2023年刚刚证明了这门生意的剧烈波动性。下一次DDR6切换期（~2028-2030年）可能重演
-3. **被"AI服务器"叙事锚定**。AI确实拉动了内存用量，但PCIe Retimer/CXL市场的竞争远不如内存接口那么封闭——Broadcom、Marvell、Microchip都在做
+1. ** To equate "Old Oligopoly" with "Ever-high growth".** Monopoly patterns are defined, but market ceilings are determined — TAM only $5 billion in 2030, plus $1.7 billion (~12 billion yuan). The current income of $5,456 million is not far from the ceiling.
+2. ** Ignore cyclical**. The business has just been shown to be highly volatile in 2023. The next DDR6 switch period (~2028-2030) may be repeated.
+3. ** anchored by the "AI server" narrative**. AI does pull up memory, but the PCIE Retimer/CXL market is far less competitive than the memory interface - Broadcom, Marvell, Microchip are doing.
 
-**聪明人为什么不买**：
-- PE 131倍，分析师目标价255.84（低于现价258）——连看多的分析师都认为当前没有上行空间
-- 创始人和早期股东5年套现超百亿——内部人在跑
-- TAM天花板可见：内存接口芯片2030年仅50亿美元，撑不起3000亿市值
-- 2023年收入暴跌38%的前车之鉴——周期性极强
+♪ Why don't smart people buy ♪
+- PE 131 times, the analyst's target is 255.84 (down from 258) - even the more visible analysts think there's no room for up-front.
+- Founder and early shareholder, five years old, over 10 billion -- insiders running.
+- TAM ceiling visible: $5 billion in 2030 for memory interface chips, which cannot sustain the $300 billion market value
+- The first 38% drop in 2023 - a highly cyclical one.
 
 ---
 
-## 四、管理层评估
+# IV. Management assessment
 
-### 核心管理层
+# # Core management
 
-| 职务 | 姓名 | 背景 |
+Position Name Background
 |------|------|------|
-| 创始人/董事长 | 杨崇和 | "IC设计业海归第一人"，美籍华人，曾任IDT研发副总裁。2004年创立澜起科技 |
-| 联合创始人/总经理 | Stephen Kuong-Io Tai | 与杨崇和共同创立公司，负责日常运营 |
+Founder/Chairman of the Board of Directors, Yang Chong and Xiao, Chinese-American, former Vice President of IDT Research and Development.
+<unk> Co-founder/general manager <unk> Stephen Kuong-Io Tai <unk> and Yang Chong and co-founder of the company responsible for day-to-day operations <unk>
 
-### 股权与治理
+# Equity and governance
 
-| 维度 | 详情 |
+<unk> Dimensions <unk> Details <unk>
 |------|------|
-| 实际控制人 | **无**——公司无控股股东、无实际控制人 |
-| 创始人持股 | 杨崇和+Stephen Tai通过WLT合计持股仅~4.62%（从创业时的60%大幅稀释） |
-| 管理层薪酬 | 杨崇和、Stephen Tai各年薪999万元（在A股芯片公司中属最高水平） |
-| 早期投资者减持 | 上市以来累计套现超百亿元（Intel、中信等早期投资者） |
-| 分红 | FY2024每10股派3.90元，FY2025中期每10股派2.00元。累计分红约11.23亿（2022-2024） |
+<unk> Actual controller <unk> None ** - company without controlling shareholders, no real controlling person <unk>
+<unk> Founder holding shares <unk> Yang Chong and + Stephen Tai combined holding shares through WLT ~ 4.62% (from 60% of start-up) <unk>
+<unk> Management remuneration <unk> Yang Chong and Stephen Tai each year $9.99 million (highest level in A chip company) <unk>
+Early investors have lost their assets, and since they were listed, they have accumulated over $10 billion.
+<unk> SY2024 for $3.90 per 10 shares and NY2025 for $2.00 per 10 shares.
 
-### 关键决策评估
+# # Evaluation of key decisions
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2004年 | 创立澜起，聚焦内存接口芯片 | 成长为全球三寡头之一 | A+ |
-| 2014-2016年 | 私有化→重新上市（科创板） | IPO后市值从百亿到千亿 | A |
-| 2019年 | 参与DDR5标准制定 | 提前布局，DDR5时代份额提升至全球第一 | A+ |
-| 2023年 | 逆周期高研发（研发占收入30%） | 保持技术领先，DDR5第二子代率先量产 | A |
-| 2024-2025年 | 布局PCIe Retimer + CXL | 打开第二增长曲线 | B+（待验证） |
-| 2026年2月 | 港股二次上市 | 拓宽融资渠道、提升国际影响力 | A- |
+<unk> 2004 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The market value of IPOs ranged from 10 billion to 100 billion
+2019: Participation in the DDR5 standard setting.
+<unk> 2023 Reverse cycle high R & D (30% of income) <unk> Keep the technology ahead, with DDR5 Second Generation leading production <unk>
+<unk> 2024-2025 PCIe Retimer + CXL <unk> Opens a second growth curve <unk> B+ (to be verified) <unk>
+February 2026, the Hong Kong stock was listed twice, the financing was expanded and international influence was enhanced
 
-### 需关注的问题
+# The issues to be asked #
 
-| 问题 | 严重程度 |
+The problem, the gravity, the magnitude, the magnitude of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the extent of the problem, the fact, the fact of the fact, the fact, the fact, the fact of the fact, the fact, the fact, the fact of the situation, the fact, the fact, the fact, the fact of the nature of the situation, the nature of the situation, the nature of the situation, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the circumstances, the
 |------|---------|
-| 创始人持股仅4.62%，利益绑定弱 | 中高 |
-| 早期投资者持续大额减持 | 中 |
-| 无实控人治理结构的稳定性 | 中 |
-| 管理层年薪999万（A股芯片公司最高） | 低（与业绩匹配） |
+The founder holds only 4.62%, the interest is weak, the interest is weak, the interest is medium and high, the interest is low, the interest is low, the interest is low, the interest is low, the interest is low, the interest is low, the interest is low, the interest is low, the interest is low, the interest is low, the interest is high, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the income is low, the the income is very high, the income is low, the income is very high, the income is low, the income is low, the income is low, the income is low, the population is very high, the population is very high, the population is very much.
+Early investors have continued to experience a significant decline in their holdings.
+The stability of the uncontrollable governance structure
+<unk> Management annual salary of 999 million (highest chip company) <unk> low (matched to performance) <unk>
 
-### 追问：如果CEO退休，公司还能保持竞争力吗？
+# Ask: If CEO retires, can the company remain competitive?
 
-**短期能**。澜起科技的竞争力来源于技术积累和JEDEC标准认证，非个人驱动。但杨崇和是公司在JEDEC标准委员会的核心代表，其退出可能影响公司在标准制定中的话语权。
+The competitiveness of technology is driven by technological accumulation and JEDEC standard certification, which is not personal. But Yang Chong and the company’s core representative on JEDEC Standards Committee, whose withdrawal may affect the company’s voice in standard setting.
 
 ---
 
-## 五、行业与文明趋势
+# V. Trends in industry and civilization
 
-### 范式转移判断
+# The paradigm shift judgement
 
-AI算力需求驱动的服务器升级是一次**计算基础设施的代际跃迁**。每台AI服务器需要的内存容量是传统服务器的3-5倍，内存接口芯片用量呈倍数增长。澜起科技正站在这一趋势的核心节点上。
+The server upgrade driven by AI's computing needs is an intergenerational leap in ** computing infrastructure**. Each AI server requires three to five times the memory capacity of the traditional server, with multiple increases in the amount of memory interface chips. Technology is at the core of this trend.
 
-### TAM增长曲线
+# Tam growth curves
 
-| 市场 | 2024年规模 | 2030年预测 | CAGR |
+Market 2024, forecast 2030, CAGR
 |------|-----------|-----------|------|
-| 全球内存互连芯片 | ~11.7亿美元 | **~50亿美元** | **25.9%** |
-| 全球服务器市场 | ~3,060亿美元 | ~5,000亿美元 | ~10% |
-| AI服务器 | ~2,050亿美元 | ~4,000亿美元 | ~15% |
-| PCIe Retimer | ~3-5亿美元 | ~15-20亿美元 | ~30% |
-| CXL芯片 | <1亿美元 | ~5-10亿美元 | >50% |
+<unk> Global memory interconnection chip ~ $1.17 billion <unk> <unk> $5 billion ** 25.9% **
+~ $306 billion ~ $500 billion ~ 10% ~
+~250 billion ~ $400 billion ~ 15% ~
+~$300-500 million ~$1.5-20 billion ~30% ~
+<unk> CXL chip < $100 million ~ $500-$10 billion > 50% >
 
-**综合TAM**：澜起科技面对的核心TAM（内存接口+PCIe+CXL）从2024年的~15-17亿美元扩张至2030年的~70-80亿美元。按36%份额计算，2030年收入潜力约180-200亿元人民币。
+** Consolidated TAM**: The core TAM (RAM interface + PCIE+CXL) that is the face of technology has expanded from ~1.51 billion in 2024 to ~7-8 billion in 2030. In terms of 36% of the share, the income potential in 2030 is about 18-20 billion yuan.
 
-### 追问：20年后这家公司是"标准石油"还是"3Com"？
+# Ask: 20 years later is this company "Standard Oil" or "3Com"?
 
-**更像是"计算时代的ARM（精简版）"**——一家在细分领域拥有不可或缺技术的专业公司。不会成为万亿市值的巨头（TAM限制），但只要DDR标准延续、服务器需要内存，澜起就有存在价值。
+** More like "ARM of the Calculating Age"** -- a professional company with the necessary technology in the area of disaggregation. It's not going to be a trillion-dollar market-market giant (TAM limit), but it's worth it as long as the DR standard continues and the server needs to be RAM.
 
-风险在于**技术路线颠覆**——如果未来计算架构从"CPU+独立内存"转向"存算一体"或其他全新范式，内存接口芯片可能被淘汰。但这至少是10-15年后的事。
+The risk is that **Technology route subversion** - if future computing structures shift from CPU+ stand-alone memory to "storage as one" or other completely new paradigms, the memory interface chip may be eliminated. This is at least 10-15 years later.
 
 ---
 
-## 六、估值与安全边际
+# VI. Valuation and security margin
 
-### 当前市场定价
+# Current market pricing
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|------|------|
-| PE（FY2025） | **130.96x** | 基于归母22.36亿 |
-| PE（TTM） | **~113x** | 含最新季度 |
-| PB | **14.97x** | 远超半导体行业中位数 |
+<unk> PE(FY2025) <unk> 130.96x** <unk> based on maternal patrimony = 2,236 million <unk>
+<unk> PE(TTM)<unk> <unk> 113x**<unk> including the latest quarter <unk>
+<unk> PB<unk> **14.97x**<unk> Far from the median semiconductor industry <unk>
 | PS | **~57x** | — |
 | ROE | 11.43% | — |
-| FCF Yield | **0.58%** | 极低 |
-| 股息率 | **0.15%** | 几乎可忽略 |
-| 分析师目标价 | **255.84**（低于现价258） | 11人买入、0人卖出但目标价已到 |
+FCF Yield<unk> 0.58%**
+<unk> Escillation rate <unk> 0.15%** <unk> almost negligible <unk>
+<unk> Analyst target price **255.84** (under 258) <unk> 11 buy-in, 0 sell-out, but the target price has arrived
 
-### PE历史区间
+# PE History Zone
 
-| 年份 | 平均PE | 最高PE | 最低PE |
+Year Average PE <unk> Highest PE <unk> Lowest PE <unk>
 |------|--------|--------|--------|
 | 2022 | 80.71 | 129.47 | **48.65** |
 | 2023 | 79.56 | 131.21 | 53.70 |
 | 2024 | 97.01 | 128.52 | 58.83 |
 | 2025 | 68.30 | 90.95 | 52.11 |
-| 2026（至今） | 105.44 | **168.06** | 70.81 |
+<unk> 2026 (to date) <unk> 105.44 <unk> 168.06 ** 70.81 <unk>
 
-当前PE ~131x处于近5年约33%分位（因2022-2024年也有高PE时段）。但绝对PE水平仍然极高。历史最低PE 48.65倍出现在2022年底——如果回到那个水平，股价约96元（-63%）。
+The current PE ~131x is at about 33% of the split for almost five years (because of the high PE time in 2022-2024), but the absolute level of the PE is still very high. The lowest ever was the end of 2022 – if returned to that level, the share price was about 96 (63%).
 
-### 三情景估值
+# Three scenarios valuation
 
-> 基于2026E EPS=2.75（券商预测归母~33亿/12.1亿股），投射3年至2029年。经工具精确验算。
+> Based on 2026E EPS = 2.75 (prospector forecasted mother of 3.3 billion/12.1 billion shares) projected for projection for 3 to 2029 years.
 
-| 情景 | 年增速 | 目标PE | 2029年EPS | 目标股价 | 较现价涨跌 |
+♪ The world's greatest challenge ♪
 |------|--------|--------|-----------|---------|-----------|
-| **乐观**（DDR5全面放量+PCIe/CXL起量） | 35% | 50x | CNY 6.77 | **CNY 338** | +31% |
-| **中性**（DDR5稳健+互连温和增长） | 15% | 35x | CNY 4.18 | **CNY 146** | -43% |
-| **悲观**（DDR6切换期收入下滑+估值回归） | -5% | 20x | CNY 2.36 | **CNY 47** | -82% |
+** EXPOINTMENT** (DDR5 total + PCIE/CXL starting) <unk> 35% <unk> 50x <unk> CNY 6.77 ** CNY 338** <unk> + 31% <unk>
+** Neutral** (DDR5 robust + interconnective moderate growth) <unk> 15% <unk> 35x <unk> CNY 4.18 ** CNY 146** <unk> - 43%
+** Pessimism** (DDR6 income decline + valuation regression) <unk> - 5% <unk> 20x CNY 2.36 ** CNY 47** <unk> -82% <unk>
 
-**关键洞察**：
-- 乐观情景3年仅+31%（年化9%）——对一个PE 131x的股票来说，赔率极差
-- 中性情景直接亏43%——市场需要持续高增长才能维持当前价格
-- 分析师一致目标价255.84已低于现价258——连最乐观的人都认为没有上行空间了
+** Key insight**:
+- The optimism scenario is only +31% for 3 years (9% annual) - for a PE 131x stock, the rate of repayment is extremely poor
+- A 43% direct loss on the neutral scenario - the market needs to continue to grow at high levels to maintain current prices
+- The analyst's goal is 255.84 below the current price 258 - even the most optimistic people think there's no room for upswing.
 
-### 与同行估值对比
+# Compared to peer valuation
 
-| 公司 | PE（TTM） | 毛利率 | 市占率 | 定位 |
+<unk> Company <unk> PE(TTM) <unk> Māori rate <unk> Urban rate <unk> Positioning <unk>
 |------|----------|--------|--------|------|
-| **澜起科技** | **~131x** | **62%** | **36.8%** | 全球第一 |
-| 瑞萨电子 | ~20x | ~55% | 36.0% | 全球第二（综合半导体IDM） |
-| Rambus | ~45x | ~80% | 20.5% | 全球第三（IP授权+芯片） |
+** The first technology in the world **
+~20x<unk> 55%<unk> 36.0%<unk> Global Second (Composite Semiconductor IMM)<unk>
+~45x<unk> 80%<unk> 20.5%<unk> Global 3rd (IP authorization+chip)<unk>
 
-**澜起PE是瑞萨的6.5倍、Rambus的3倍**——即使考虑A股vs海外市场的估值溢价，这一差距也极不合理。唯一解释是市场在为澜起的"PCIe/CXL第二增长曲线"支付极高溢价。
+** The PE is 6.5 times more than in Risa and three times more than in Rambus** - even if the value premium on A stockvs' overseas market is considered to be unreasonable. The only explanation is that the market pays a very high premium for the "PCIE/CXL Second Growth Curve" that is being built up.
 
-### 追问：如果股市明天关闭5年，你愿意以这个价格持有吗？
+# Ask: If the stock market closes for five years tomorrow, will you hold it at this price?
 
-**不愿意。**
+** No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no.
 
-258元对应PE 131倍。5年后（2031年），即使澜起科技净利润增长到50-60亿（5年CAGR ~18-20%），PE回归到合理的40-50倍，股价约165-250元——**与当前258元相比几乎无上行空间甚至下行**。
+Five years later (2031), even if net profits in technology grew to between $5 billion and $6 billion (5 years CAGR ~ 18-20%), the PE returned to a reasonable 40-50 times, with shares worth about $165-250 ** with little or no room to go up or even down ** compared to the current 258 dollars.
 
-**要在258元买入获得合理回报，需要净利润5年增长到80亿+（CAGR 30%+）且PE维持50倍以上**。这要求PCIe/CXL业务在2028-2030年贡献30亿+利润——可能性存在但概率不高。
+** To get a reasonable return on the purchase of 258 dollars, a net profit increase of 5 years to 8 billion + (30% CAG) and more than 50 times PE** is required. This requires that PCIE/CXL operations contribute 3 billion + profit in 2028-2030 — there is a possibility, but not a high probability.
 
 ---
 
-## 七、综合决策备忘录
+# VII. Memorandums for integrated decision-making
 
-### 维度汇总
+# # dimension summary
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| 生意质量 | 极佳——三寡头垄断、60%+毛利率、Fabless轻资产、AI算力核心受益 | 90% |
-| 护城河 | 极强——JEDEC标准认证+DRAM厂商验证=5-8年进入壁垒，全球仅3家能做 | 85% |
-| 管理层 | 中等偏上——技术出身、研发投入大方、决策记录优秀，但持股低、减持多 | 70% |
-| 最大风险 | DDR换代周期波动（2023年已验证-38%/-50%）+ 极高估值（PE 131x） | 85% |
-| 文明趋势 | 强烈顺风——AI算力+DDR5/6升级=内存接口芯片量价齐升 | 85% |
-| 估值 | **严重偏高**——PE 131x、分析师目标价低于现价、乐观情景3年仅+31% | 90% |
+<unk> Business quality <unk> Oligopoly <unk> 60% + Māori ratio + Fabless light assets <unk> AI core value <unk> 90% <unk>
+<unk> Protector Rivers Very powerful - JEDEC standard certification + DRAM manufacturer certification = 5-8 years of entry barrier, only 3 globally can do 85% of the total number of jobs
+Management Medium-to-Medium - Technical origin, investment in R & D, good record of decision-making, but low shareholding, low-to-sustained 70%
+<unk> Maximum risk <unk> DDR swing cycle fluctuations (certified in 2023 - 38/-50%) + very high valuation (PE 131x) <unk> 85% <unk>
+<unk> Civilization trend <unk> Strong wind smoothing - AI Calculus + DDR5/6 upgrade = memory interface chip volume up
+<unk> Valuation ** Severely over-** — PE 131x, analyst target price below current price, optimistic scenario only +31% <unk> 90% <unk>
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **等待回调。当前258元不具备投资价值。** 目标买入区间：CNY 120-150（对应2026E PE 44-55x），此时安全边际较充足。如果在DDR6切换期（~2028-2029年）出现类似2023年的周期性暴跌，将是极佳的长期买入机会 |
-| **持仓者** | **减仓至5%以下。** 1年涨230%后获利了结是理性选择。分析师目标价已低于现价，上行空间几乎为零。保留小仓位享受万一的超预期惊喜 |
-| **卖出信号** | （1）DDR5出货量环比增速转负；（2）PCIe Retimer市场被Broadcom/Marvell挤压；（3）创始人进一步大幅减持；（4）PE超过150x |
-| **加仓信号** | （1）股价回调至CNY 120-150区间（PE 44-55x）；（2）DDR6时代澜起率先通过JEDEC认证；（3）CXL芯片开始贡献10%+收入；（4）PCIe Retimer进入NVIDIA供应链 |
+** Empty warehouser** <unk> waiting for a return. Currently, $258 is not worth investment.** Target buy-in: CNY 120-150 (equivalent to 2026E PE 44-55x), where security margins are adequate. A cyclical drop similar to that in 2023 during the DDR6 switch period (~ 2028-2029) would be an excellent long-term buy-in opportunity
+** Warehousing** ** Warehousing to under 5%.** The profit from a 230% increase in a year is a rational choice. Analysts have a lower target price than they are, and upboard space is almost zero. Keeping a small warehouse is a surprise in case of a super-expected surprise.
+<unk> ** Signals sold** <unk> (1) DDR5 volume ring-by-speed rotation; (2) PCIE Retimer market squeezed by Broadcom/Marvell; (3) further substantial reduction by the founder; (4) PE over 150 x <unk>
+<unk> **Step signal** <unk> (1) Re-equity adjustment to CNY 120-150 (PE 44-55x); (2) DDR6 era pioneered through JEDEC certification; (3) CXL chip started contributing 10% + revenue; (4) PCIE Retimeer entered NVIDIA supply chain
 
-### 四维度模拟点评
+# 4D simulations of the evaluation
 
-> **生意质量视角**：这可能是A股最接近"芯片设计版茅台"的公司——三寡头垄断一个不可或缺的细分市场，毛利率62%，产品随技术升级持续涨价。但茅台的PE是30倍，澜起是130倍。同样的好生意，价格差了4倍——差的部分全是"未来增长预期"。
+> ** Business quality perspective**: This may be the company A most close to the Chip Designs Maurer -- the Oligarchs monopolize an indispensable segment market, with a 62% Māori ratio, and products that continue to increase in prices as technology upgrades. But PEs in the huts are 30 times, 130 times more. The same good business is four times below the price -- the bad part is all about "prospecting for future growth".
 
-> **逆向思维视角**：最让我不安的数字不是PE 131倍——半导体高PE不罕见。最让我不安的是**50亿美元**。这是2030年内存接口芯片的全球TAM。澜起占36%就是18亿美元=~130亿人民币收入。按40%净利率就是52亿利润。给50倍PE就是2600亿市值——而当前市值已经3100亿。**市场已经把2030年的终局价格提前定价了。**
+> ** Inverse thinking**: The number that worries me is not PE 131 times more than the semiconductor height of PE is not uncommon. The most disturbing thing is that it is **$5 billion**. This is the global TAM, which stored the interface chip in 2030. The combination of 36% is $1.8 billion = ~13 billion. The net interest rate is 5.2 billion. The 50 times PE is $260 billion in value terms -- and the market is now 31 billion.** The market has already pre-pricing its final price for 2030.**
 
-> **管理层视角**：杨崇和是真正的技术领袖——在IDT时代就做内存接口，参与了DDR3/4/5三代标准制定。但他和Stephen Tai持股仅4.62%，年薪各999万——**利益绑定几乎纯靠"荣誉感"而非经济利益**。5年累计套现超百亿的数据也说明，内部人对当前估值的"投票"是用脚投的。
+> ** Management perspective**: Yang Chong and a true technical leader - a memory interface in the IDT era, participating in the DDR3/4/5 generation standard setting. But he and Stephen Tai hold only 4.62% of the shares, each of which is $9.99 million a year ** benefits are tied almost exclusively to "honour" rather than economic benefits**. Five years of cumulative data of over 10 billion also show that insiders have foot-dropped "voting" on the current valuation.
 
-> **文明趋势视角**：只要人类继续扩建数据中心、训练AI模型，就需要更多更快的内存，就需要内存接口芯片。这个趋势20年内不会消失。但问题是：一个2030年TAM仅50亿美元的市场，能撑起多大的公司？澜起的命运可能类似ARM上市前的故事——"每个人都知道它不可或缺，但不可或缺≠无限增长"。
+> ** Civilization trend perspective**: As long as humans continue to expand data centres and train AI models, they need more and faster memory, and memory interface chips. This trend will not disappear in 20 years. But the question is: How many companies can a market of only $5 billion in 2030 TAM, and the fate that could be created is similar to the story of ARM before it was put on the market -- "Everyone knows it is indispensable, but it is indispensable to grow indefinitely."
 
 ---
 
-## 附录：AI分析置信度 vs 投资确定性
+# Appendix: AI Analytic Confidence vs Investment Determination
 
-| 结论 | AI分析置信度 | 投资确定性 | 说明 |
+<unk> Conclusion <unk> AI analysis of confidence <unk> Investment certainty <unk>
 |------|------------|-----------|------|
-| 三寡头垄断格局稳固（5年内） | **高（90%）** | **高（85%）** | JEDEC认证壁垒+DRAM厂商验证周期确保短期内无新进入者 |
-| DDR5渗透率持续提升 | **高（90%）** | **高（85%）** | 服务器DDR5替代DDR4是确定性趋势 |
-| 内存接口芯片TAM 2030年~50亿美元 | **中高（80%）** | **中高（75%）** | Frost & Sullivan等机构数据一致 |
-| PCIe/CXL成为第二增长引擎 | **中（60%）** | **中（55%）** | 市场真实但竞争开放（Broadcom/Marvell/Microchip均参与） |
-| 当前PE 131x严重偏高 | **高（90%）** | **高（85%）** | 分析师目标价低于现价、历史对比、同行对比均指向高估 |
-| DDR6切换期将导致收入波动 | **中高（75%）** | **中高（70%）** | 2023年的-38%是直接前例 |
+<unk> The oligopoly pattern is solid (in five years) <unk> High (90%) <unk> High (85%) <unk> JEDEC Certification Barrier + DRAM Certification Cycle to ensure no new entrants in the short term <unk>
+<unk> Continuously increasing penetration of DDR5 <unk> high (90%) <unk> high (85%) <unk> server DDR5 replaces DDR4 is a definite trend <unk>
+<unk> Memory interface chip TAM 2030 ~ $5 billion <unk> Medium (80%) ** Medium (75%) ** Medium (75%) <unk> Frost & Sullivan <unk> Agency data are consistent
+<unk> PCIE/CXL became the second engine of growth <unk> (60%)<unk> (55%)<unk> (broadcom/Marvell/Microchip)<unk> (broadcom/Microchip all participate)<unk>
+<unk> Current PE 131x is seriously high <unk> High (90%) <unk> High (85%) <unk> Analysts target prices below current prices, historical comparisons, peer comparisons are all pointed to overvaluation
+<unk> DDR6 transition periods will cause income fluctuations <unk> medium (75%) ** medium (70%) ** medium (38%) in 2023 is the direct precedent <unk>
 
-**核心区分**：
-- 澜起科技的**生意质量极高**（三寡头垄断+高毛利+AI顺风），这一点置信度很高
-- 但**当前价格已将未来3-5年的增长预期几乎全部定价**。乐观情景3年仅+31%、中性情景-43%的赔率结构说明一切
-- **最佳策略是等待**：等DDR6切换期的周期性下行（类似2023年），或等估值回到PE 50-60x区间再入场
+** Core distinction**:
+- The high quality of the business that builds up technology** (Oligopoly + High Mauricio + AI) is very confident.
+- ** Current prices, however, have almost fully priced the growth expected over the next 3-5 years**. The optimistic scenario of only +31%, neutral scenario - 43% of the rate structure of the compensation for the next 3 years is indicative of everything.
+- ** Best strategy is to wait** for the cyclical downline of the DR6 transition period (like 2023) or for the valuation to return to PE 50-60x and re-enter
 
 ---
 
-*报告生成时间：2026年6月23日 | 数据截止：2026年6月23日*
-*货币单位：人民币（CNY）*
-*数据来源：澜起科技年报/中报/季报、Investing.com、亿牛网、Frost & Sullivan、LightCounting、证券之星、同花顺、东方财富、券商研报（太平洋/国海/华泰等）*
+*Report generated: 23 June 2026
+* Monetary unit: renminbi (CNY)*
+*Source: Initiating Science Annual/Intelligence/Quarterly, Investing.com, Billion Cownet, Frost & Sullivan, LightCounting, Securities Star, Humpty, Eastern Wealth, voucher research (Pacific/Ni/Watanic et al.)*

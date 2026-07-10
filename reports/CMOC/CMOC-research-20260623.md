@@ -1,480 +1,480 @@
-# 洛阳钼业（CMOC）投资研究报告
+# CMCC investment study
 
-**日期**：2026年6月23日
-**股票代码**：A股 603993.SH / H股 03993.HK
-**当前股价**：A股 19.49元（6/22收盘）/ H股 17.47港元
-**市值**：约4,170亿元（A股）
-**总股本**：213.94亿股
-
----
-
-## 信息丰富度评级：A级（信息充裕）
-
-洛阳钼业A+H双重上市多年，券商覆盖密集（16位分析师全部"强烈买入"），年报季报数据完整，英文年报可供国际投资者查阅。
-
-**AI研究局限性声明**：
-- 数据主要来源于公司年报（2024-2025）、季报（2026Q1）、券商研报及行业数据库
-- 作为A级公司，主要风险是**共识过强**——全市场看多时往往是最危险的时候
-- 本报告重点进行反面检验：聪明人为什么不买？哪些风险被低估了？
-
-**偏见自查**：
-- [x] 铜的"新能源叙事"非常强大，需警惕"叙事驱动的确定性幻觉"
-- [x] 周期股的盈利高点往往伴随估值陷阱——"低PE"可能是周期顶部信号
-- [x] 刚果金政治风险难以量化，AI倾向于"提及但低估"
+** Date**: 23 June 2026
+** Stock code**: A Unit 603993.SH / H Unit 03993.HK
+** Current share price**: A share $19.49 (6/22 closure)/H share $17.47
+** Market value**: approximately $417 billion (Unit A)
+** Total equity**: 21.394 billion shares
 
 ---
 
-## 第一步：核心数据总览
+# Information abundance rating: A (information is abundant)
 
-### 收入结构（2025年报）
+The Luoyang industry A+H has been on the market for many years, with a dense bond market coverage (all 16 analysts "better buy"), and the annual quarterly reports are complete and available in English to international investors.
 
-| 板块 | 收入（亿元） | 占比 | 毛利率 | 说明 |
+**A. Study limitations statement**:
+- Data mainly from company annual reports (2024-2025), quarterly newspapers (2026Q1), voucher vendor reviews and industry databases
+- As a class A company, the main risk is ** too much consensus** - the market is often the most dangerous time.
+- The report focuses on the negative test: why not the smart man? What risks are underestimated?
+
+** Prejudice self-examination**:
+- [x] Copper's New Energy narrative is very strong.
+- [x] The high profit point of the cycle shares is often accompanied by the valuation trap -- "low-pe" may be the top signal of the cycle.
+- [x] The political risks of the Democratic Republic of the Congo are difficult to quantify, and AI prefers to "reference but understate"
+
+---
+
+# Step 1: A core data overview
+
+# # Income structure (Report 2025)
+
+The income (millions of yuan) is the ratio of the gross domestic product to the gross domestic product (GDP) and the gross domestic product (GDP) is the sum of the total amount of the gross domestic product (GDP) per capita.
 |------|------------|------|--------|------|
-| **矿山采掘及加工** | 777 | 38% | ~53% | 利润核心 |
-| 其中：铜 | 551 | 27% | 55.2% | 最大利润来源 |
-| 其中：钴 | 未单独披露 | — | 63.6% | 受益于出口禁令提价 |
-| 其中：钨 | 未单独披露 | — | 66.4% | 钨价创历史新高 |
-| 其中：铌 | ~40（估） | ~2% | ~37% | 寡头垄断市场 |
-| **IXM金属贸易** | ~1,290 | 62% | ~2-4% | 收入大、利润薄 |
-| **合计** | 2,066.8 | 100% | 23.9% | — |
+** Mining and processing** ** <unk> 777 <unk> 38% ~ 53% <unk> profit core <unk>
+Of which: copper 551 <unk> 27% <unk> 55.2% <unk> maximum source of profit <unk>
+Of which: cobalt <unk> not separately disclosed <unk> 63.6% <unk> benefit from export ban increases
+<unk> of which: tungsten tungsten tungsten undisclosed <unk> <unk> <unk> 66.4% <unk> tungsten prices are at an all-time high <unk>
+Of which: <unk> 40 (estimated) ~ 2% ~ 37% ~ oligopoly market ~ <unk>
+**IXM metal trade** <unk> 1,290 <unk> 62% ~ 2-4% ** high income and low profit
+** Total** <unk> 2,066.8 <unk> 100% <unk> 23.9% <unk>
 
-*核心洞察：IXM贸易贡献62%收入但毛利率仅2-4%，矿山业务贡献38%收入但几乎全部利润。看洛阳钼业要看"矿山毛利"，不要被总收入误导。*
+* Core insight: IXM trade contributes 62% of income but the Māori rate is only 2-4%, while mining operations contribute 38% of income but almost all of the profits.
 
-### 各矿种全球排名与产量
+# Global ranking and production of all minerals
 
-| 矿种 | 2025年产量 | 全球排名 | 市占率 | 产量趋势 |
+<unk> Minerals <unk> Production in 2025 <unk> Global ranking <unk> city occupancy <unk> Production trends <unk>
 |------|-----------|---------|--------|---------|
-| **铜** | 74.11万吨 | 前10 | ~3.3% | 2024年65万吨→2025年74万吨→2028目标80-100万吨 |
-| **钴** | 11.75万吨 | **第1** | ~31% | 2023年超越嘉能可成全球第一 |
-| **钼** | 13,906吨 | 储量第2 | — | 稳定 |
-| **钨** | 7,114吨 | 储量第1 | — | 稳定 |
-| **铌** | 10,348吨 | 第2 | ~10% | 创历史新高 |
+** Copper** 74.11 million tons ** top 10 ~ 3.3% <unk> 650,000 <unk> 740,000 ~ 2025 = 2028 target 8-10 million <unk>
+** Cobalt** ** 11.75 million ** 1** <unk> ~ 31% <unk> 2023 is the world's number one <unk>
+<unk> molybdenum** <unk> 13,906 tonnes <unk> 2 dm<unk> <unk> stability
+<unk> <unk> 7,114 tonnes of <unk> 1 <unk> <unk> <unk> stability <unk>
+<unk> 10,348 tonnes <unk> 2<unk> 10% <unk>
 
-### 近5年财务指标
+# # Financial indicators for the last five years
 
-| 指标 | 2021年 | 2022年 | 2023年 | 2024年 | 2025年 |
+Indicators 2021 2022 2023 2024 2025
 |------|--------|--------|--------|--------|--------|
-| 营业收入（亿元） | 1,738.6 | 1,729.9 | 1,862.7 | 2,130.3 | 2,066.8 |
-| 归母净利润（亿元） | 51.1 | 60.7 | 82.5 | 135.3 | 203.4 |
-| 净利润增速 | +119% | +19% | +36% | +64% | +50% |
-| 毛利率 | — | — | 12.8% | 16.6% | 23.9% |
-| 净利率 | — | — | — | 7.3% | 11.6% |
+<unk> Operating income (billions of yuan) <unk> 1,738.6 <unk> 1,729.9 <unk> 1,862.7 <unk> 2,130.3 <unk> 2,066.8 <unk>
+<unk> Net profit from repatriation (millions of yuan)
+<unk> Net profit growth + 119% <unk> + 19% <unk> 36% <unk> + 64% <unk> 50% <unk>
+<unk> Māori ratio <unk> <unk> 12.8% <unk> 16.6% <unk> 23.9% <unk>
+Net interest rate <unk> <unk> <unk> <unk> <unk> <unk> 7.3% <unk> 11.6% <unk>
 | ROE | — | — | — | 14.7%（ROIC） | 26.2% |
-| 经营性现金流（亿元） | — | — | — | 323.9 | 208.4 |
-| EPS（元） | 0.24 | 0.28 | 0.39 | 0.63 | 0.95 |
+<unk> Operating cash flow (billions of yuan) <unk> <unk> <unk> <unk> <unk> <unk> 323.9 <unk> 208.4 <unk>
+EPS (Men) 0.24 <unk> 0.28 <unk> 0.39 <unk> 0.63 <unk> 0.95 <unk>
 
-*关键趋势：净利润连续5年高速增长，从2021年51亿到2025年203亿，4年翻4倍。驱动力是铜产量翻倍+铜价上涨双击。*
+*Key trends: Net profits have grown at a high rate for five consecutive years, from $5.1 billion in 2021 to $20.3 billion in 2025, four times in four. The driving force is double the copper production and the copper price increase.*
 
-### 2026年Q1最新数据
+# 2026 Q1 latest data
 
-| 指标 | Q1 2026 | 同比 |
+Indicator <unk> Q1 2026 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 |------|---------|------|
-| 营业收入 | 664亿元 | +44.3% |
-| 归母净利润 | 77.6亿元 | **+96.7%** |
-| 经营性现金流 | 113.3亿元 | **+762%** |
-| 产铜 | 18.79万吨 | +10.2% |
-| 产金（新增） | 43,027盎司 | 首次纳入 |
+* Business income * 66.4 billion yuan * + 44.3 per cent *
+<unk> Net profit from maternity <unk> $776 million <unk> 96.7%**
+<unk> Operating cash flow <unk> $113.3 billion <unk> + 762% ** <unk>
+<unk> Copper production 18.7 million tons + 10.2% <unk>
+<unk> Production (new) <unk> 43,027 ounces <unk> For the first time in <unk>
 
-*Q1单季利润77.6亿，年化310亿+，增速仍在加速。*
+* Q1 single season profits of $7.76 billion, annualized 31 billion plus, and the rate of increase is still accelerating.*
 
-### 资产负债表
+# Balance sheet
 
-| 指标 | 2024年末 | 2025年末 | Q1 2026末 |
+<unk> Target: late 2024 <unk> late 2025 <unk> late Q1 2026 <unk>
 |------|---------|---------|----------|
-| 总资产 | — | 2,009亿 | 2,237亿 |
-| 每股净资产 | 3.24元 | 3.63元 | ~4.17元 |
-| 资产负债率 | 49.5% | ~45-47%（估） | — |
-| 货币资金 | 304亿 | — | — |
-| 有息负债 | 295亿 | — | — |
+Total assets – <unk> 209 billion <unk> 227.7 billion <unk>
+<unk> Net assets per share <unk> $3.24 <unk> $3.63 ~ $4.17 <unk>
+<unk> Asset and liability ratio 49.5% ~ 45-47% (estimate) <unk> <unk> <unk> <unk>
+<unk> Monetary funds <unk> 30.4 billion <unk>
+<unk> Interest-bearing liabilities <unk> 29.5 billion <unk>
 
-### 关键数据交叉验证记录
+## Key data cross-checking records
 
-| 验证项 | 结果 | 来源 |
+<unk> Validation item <unk> Results <unk> Source <unk>
 |--------|------|------|
-| 市值验算（19.49×213.94亿股） | ✅ 4,170亿元，偏差0.01% | 工具验算 |
-| 2025年营业收入 | ✅ 2,066.84亿元，三来源一致 | 年报、证券时报、SMM |
-| 2025年归母净利润 | ✅ 203.39亿元，三来源一致 | 年报、证券时报、东方财富 |
-| PE（2025 EPS 0.95） | ✅ 20.5x | 工具验算 |
-| PB（BVPS 3.63） | ✅ 5.37x | 工具验算 |
-| ROE | ✅ 26.2% | 工具验算 |
-| 股息率 | ✅ 1.47% | 工具验算 |
+<unk> Market value measurement (19.49 x 21.394 billion shares) <unk> $417 billion, or 0.01 per cent deviation <unk> Tool measurement <unk>
+<unk> Business income in 2025 <unk> 2,066,684 million yuan, with three sources of consistency <unk> Annual Report, Securities Times, SMM <unk>
+The year 2025 was a year of net profit for mothers, 203.9 million yuan, three sources of common value, annual paper, securities timer, Eastern wealth, and the rest of the world.
+<unk> PE(2025 EPS 0.95) <unk> 20.5x <unk> Tool measurement
+<unk> PB(BVPS 3.63) <unk> 5.37x <unk> Tool measurement
+<unk> ROE <unk> 26.2%
+<unk> Estimation rate 1.47%
 
 ---
 
-## 第二步：生意本质分析 — 段永平"对的生意"
+# Step 2: Business nature analysis - a piece of "right business"
 
-### 一句话定义
+# One word of definition
 
-**洛阳钼业本质上是一家"用中国资本+运营能力开发非洲顶级矿山"的全球化矿业公司。它的核心价值是在大宗商品周期低谷时以极低价格收购世界级矿山资产，然后通过精益运营释放产能和利润。**
+** The Luoyang industry is essentially a global mining company, "Developing African Top Mines with Chinese Capital Plus Business Capacity". Its core value is to buy world-class mineral assets at very low prices at the low point of the commodity cycle, and then release production and profits through the operation of the profit.**
 
-### 商业模式画布
+# Business model canvass
 
 ```
-矿山资源（TFM/KFM/巴西/栾川）
-         ↓ 采掘+加工
-   铜/钴/钼/钨/铌/磷 精矿和金属
-         ↓ 100%自产通过IXM销售
-   IXM全球金属贸易平台
+Mineral resources (TFM/KFM/Brazil/Sakakawa)
+<unk> Extraction + processing
+Copper/cobalt/magnetium/tungsten/tungsten/phosphorus concentrate and metals
+100% self-incarcerated through IXM
+IXM Global Metal Trade Platform
          ↓
-   全球终端客户（电子、新能源、钢铁、化工）
+Global terminal customers (electronics, new energy, steel, chemicals)
 ```
 
-这是一个**资源-生产-贸易垂直整合**模式，类似缩小版的嘉能可。
+This is a **resource-production-trade vertical integration** model, similar to the reduced edition of the benefits.
 
-### 生意的本质特征
+# The nature of business
 
-**1. 大宗商品生意的核心逻辑——"成本决定命运"**
+**1. Core logic of commodity business - "Cost determines destiny"**
 
-大宗商品企业没有定价权，铜价由伦敦金属交易所决定。在这种生意中，唯一能控制的变量是**成本**。洛阳钼业的竞争力来自：
-- KFM铜C1现金成本约$1.2/磅，处于全球前10%分位
-- TFM铜品位2.24%，远高于全球平均0.5%
-- 副产品钴/钼收入进一步摊薄铜的净成本
+The only variables that can be controlled in this business are **cost**. The competitiveness of the Luoyang industry derives from:
+- KFM copper C1 cash costs approximately $1.2 pounds, top 10% globally
+- TFM copper grade of 2.24%, well above the global average of 0.5%
+- Net cost of further spread of copper by-product cobalt/magnetium revenue
 
-**2. 周期性是宿命，不是例外**
+**2. Periodicity is destiny, not exception**
 
-矿业是强周期行业。洛阳钼业2025年净利润203亿，但2020年仅23亿——5年波动9倍。投资矿业股必须接受一个事实：**你永远不知道自己买在周期的哪个位置**。
+Mining is a powerful cycle. The Luoyang industry made a net profit of $20.3 billion in 2025, but only $2.3 billion in 2020 – nine times the five-year fluctuation. The investment in mining shares must accept the fact that** you never know where you buy it in the cycle**.
 
-**3. "量价齐升"的双击阶段**
+**3. Double-click phase "Quantified up"**
 
-2024-2026年的洛阳钼业正处于罕见的"量价齐升"黄金期：
-- 量：铜产量从2023年42万吨→2025年74万吨（+76%），还在扩产
-- 价：铜价从2023年约$8,500/吨→2026年6月$13,595/吨（+60%）
-- 量价双击直接体现为净利润4年翻4倍
+The Luoyang industry is in a rare "valued up" gold period in 2024-2026:
+- Amount: copper production increased from 420,000 tons in 2023 to 740,000 tons in 2025 (+76 per cent) and is still expanding
+- Price: copper from approximately $8,500/t in 2023 to $13,595/t in June 2026 (+60%)
+- Double-clicking is a direct increase in net profit by four years.
 
-### 毛利率对比
+# Māori ratio comparison
 
-| 公司 | 毛利率 | 净利率 | 说明 |
+<unk> Māori rate <unk> net interest rate <unk>
 |------|--------|--------|------|
-| 洛阳钼业（矿山板块） | 53% | — | 矿山暴利 |
-| 洛阳钼业（合并） | 23.9% | 11.6% | 被IXM贸易拉低 |
-| 紫金矿业 | ~20% | ~12% | 品种更分散 |
-| 自由港FCX | ~40% | ~18% | 纯矿山，无贸易 |
-| 嘉能可 | ~15% | ~5% | 贸易占比更高 |
+<unk> Liaoyang's Molybdenum Industry 53%
+<unk> Lhoyang industry (combined) 23.9% <unk> 11.6% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+♪ The ♪ ♪ The ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the more the more the the more the the the the ♪ the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the
+Freeport FCX ~ 40% ~ 18% ~ pure mines, no trade ~
+♪ The world's gonna be so big ♪
 
-*洛阳钼业矿山端毛利率53%非常优秀，反映了资源品位和成本优势。但合并报表被IXM稀释。*
+*The 53% Māori rate at the end of the mine in the Luoyang industry is excellent, reflecting resource grade and cost advantages.* The consolidated statement was diluted by IXM.*
 
-> **段永平式追问**：这门生意好在哪？
+> **neveral**: Where is the business?
 >
-> **好在"矿权是不可复制的资产"**。一座品位2.24%的铜矿不是想建就能建的——全球新铜矿从发现到投产平均需要16年。洛阳钼业在2016年铜价低谷时以$26.5亿买下TFM，如今这座矿山一年能赚200亿+人民币。但这门生意的"差"也很明显——它完全依赖大宗商品价格，管理层再优秀也无法对抗铜价暴跌。如果铜价回到$7,000/吨，利润会腰斩。
+> ** Well, "The right to mine is an unreplicateable asset."** A copper mine of 2.2% grade is not built - it takes 16 years for the global new copper mine to be found and put into production. The Luoyang industry bought TFMs at $2.65 billion in 2016 at a low price of copper, and now makes $20 billion + RMB a year. The "bad" of this business is also obvious – it depends entirely on commodity prices, and management is no better than it can counter a sharp fall in copper prices. If copper returns to $7,000 per tonne, profits will be cut.
 
 ---
 
-## 第三步：护城河评估 — 巴菲特"经济护城河"
+# Step three: A moat river assessment -- Buffett "The Economic moat."
 
-### 五类护城河逐一验证
+# Five-class moats to verify
 
-| 护城河类型 | 强度 | 验证 |
+♪ The moat type ♪
 |-----------|------|------|
-| **品牌/定价权** | ★☆☆☆☆ | **几乎不存在**。铜是标准化大宗商品，LME定价，洛阳钼业没有品牌溢价能力 |
-| **转换成本** | ★☆☆☆☆ | **极低**。铜就是铜，客户完全可以从任何供应商购买 |
-| **网络效应** | ★★☆☆☆ | **有限**。IXM贸易平台有一定网络效应——客户和供应商越多，交易效率越高、价差越窄。但这不是核心护城河 |
-| **规模效应** | ★★★★☆ | **显著**。TFM和KFM的规模使单位成本极低。全球铜产量前10名的矿企，单位成本通常低于行业中位数20-30% |
-| **资源壁垒** | ★★★★★ | **这是真正的护城河**。TFM品位2.24%（全球均值0.5%）、KFM钴品位0.91%（全球最高级别）。铜资源量4,290万吨（全球第4）、钴560万吨（全球第1）。这些矿山无法被复制 |
+** Brand/pricing rights** <unk> <unk> <unk> ** almost non-existent**. Copper is a standardized bulk commodity, LME pricing, and the Luoyang industry has no brand premium capacity
+<unk> Conversion cost** <unk> <unk> very low**. Copper is copper, and customers can buy <unk> from any supplier.
+<unk> Network effects** <unk> Limited**. IXM trade platforms have some network effects - the more customers and suppliers, the more efficient and the less expensive the transaction. But this is not the core moat.
+<unk> **Scaling effect** <unk> <unk> <unk> ** Notable**. TFM and KFM size make unit costs extremely low. The top 10 copper producers worldwide usually have unit costs below the median industry of 20-30%.
+** Resource barriers** <unk> ** This is the true moat**. TFM grade 2.24% (global average 0.5%) and KFM cobalt grade 0.91% (global highest level). Copper resources amount 42.9 million tonnes (global 4th), cobalt 5.6 million tonnes (global 1) cannot be replicated
 
-### 护城河的本质
+# The nature of the moat
 
-矿业公司的护城河不是品牌、技术或网络效应——而是**"上帝给你的地"**。谁拥有品位最高、储量最大、成本最低的矿山，谁就有护城河。洛阳钼业通过2016-2020年的逆周期收购，拿到了全球最好的铜钴矿山之一。
+The mining company moats are not brands, technologies or network effects -- they are ** "The land that God gave you." Whoever owns the highest grade, the most stored and the lowest cost of a mine, has the mounds. The Luoyang industry acquired one of the world's best copper and cobalt mines through a countercyclical acquisition from 2016 to 2020.
 
-但这种护城河有一个致命弱点：**它保护不了你的利润免受价格周期的冲击**。即使你有全球最好的矿山，当铜价跌到$5,000/吨时，你依然会亏钱。
+But this moat has a fatal weakness:** it does not protect your profits from price cycles. Even if you have the best mines in the world, you will lose money when copper falls to $5,000 per tonne.
 
-### 护城河趋势判断
+# The moat of the river trends
 
-**过去5年（2021-2026）：显著变宽**
-- TFM混合矿扩产完成，产能从25万吨铜→45万吨铜
-- KFM一期投产，新增15万吨铜+5万吨钴
-- 收购巴西金矿，增加"铜金双极"对冲能力
-- IXM贸易平台持续壮大
+** The last five years (2021-2026): significant width**
+- TFM mixed mine was expanded to produce 250,000 tons of copper and 450,000 tons of copper.
+- KFM first stage of production, with 150,000 tons of copper plus 50,000 tons of cobalt
+- Acquisition of Brazilian gold mines, increased "copper gold diode" hedging capacity
+- IXM trade platform continues to grow
 
-**未来5年预判：继续变宽**
-- KFM二期2027年投产，新增10万吨铜
-- 2028年目标产铜80-100万吨（跻身全球前5-6位）
-- 巴西金矿整合完成，黄金年产8吨
+** Prejudice for the next five years: continuing to widen**
+- KFM II, 2027, with 100,000 tons of copper added
+- 80-100 million tons of copper produced in 2028 (the top 5-6 places in the world)
+- Brazil gold mine integrated, with 8 tons of gold per year
 
-> **巴菲特式追问**：10年后这条护城河还在吗？什么能摧毁它？
+> **Buffettian **: 10 years later, is this moat still there? What can destroy it?
 >
-> **矿山还在，但利润不一定**。TFM和KFM的矿山寿命超过30年，资源不会消失。但能"摧毁"这条护城河的力量有三个：(1) 刚果金政府强行国有化或大幅提高矿业税——这是最大的尾部风险；(2) 铜的替代技术突破（如铝导线或超导材料大规模替代铜）——概率低但不是零；(3) 铜矿品位持续下降导致全行业成本上升，但这其实反过来强化了高品位矿山（如TFM/KFM）的相对优势。
+> ** Mines are still in place, but not necessarily for profit. TFM and KFM have a lifetime of more than 30 years and resources will not disappear. But the power to "devastate" the moat is threefold: (1) the Democratic Republic of the Congo government has forcibly nationalized or significantly increased mining taxes — the biggest tail risk; (2) the copper substitution technology breakthrough (e.g., aluminium or large-scale substitution of copper with superconductor material) — is low but not zero; and (3) the continued decline in copper mineral grade has led to higher industry-wide costs, which in turn has reinforced the comparative advantage of high-grade mines, such as TFM/KFM.
 
 ---
 
-## 第四步：逆向思考与风险清单 — 芒格"反过来想"
+# Step four: Reverse thinking and risk list - Manger "inverted"
 
-### 失败路径清单
+# Failed path list
 
-| 失败路径 | 概率 | 影响 | 说明 |
+<unk> Failed path <unk> probabilities <unk> influence <unk> description <unk>
 |----------|------|------|------|
-| **铜价暴跌至$7,000-8,000/吨** | 中 | 极高 | 全球经济衰退或中国需求断崖式下滑。利润可能腰斩以上 |
-| **刚果金矿权国有化/强制没收** | 低 | 极高 | 历史上有先例（赞比亚、委内瑞拉）。TFM/KFM占利润80%+，一旦发生是灾难性的 |
-| **刚果金大幅加税** | 中高 | 高 | 已发生10%干股转让要求，未来可能进一步加码。每增加5%税率直接吞噬数十亿利润 |
-| **钴价崩塌至长期低位** | 高 | 中 | 全球钴严重过剩+磷酸铁锂替代。出口配额制仅是暂时止血 |
-| **周期顶部买入的"估值陷阱"** | 中高 | 高 | 当前PE看似"低"，但如果盈利处于周期顶部，PE会随盈利下滑而飙升 |
-| **新管理团队磨合失败** | 中低 | 中 | 2025年大换血，新团队不到1年，执行力未经验证 |
-| **KFM二期延期或超支** | 中低 | 中 | 海外大型矿山项目延期是常态，预算超支也很常见 |
-| **ESG事件/尾矿溃坝** | 低 | 极高 | 刚果金运营环境复杂，ESG事件可能引发股价暴跌和监管压力 |
-| **Kessler综合征：自产钴压低钴价** | 高 | 中 | 洛阳钼业自身的钴产量增长是全球钴价下跌的重要推手，"越挖越不值钱" |
+**The copper price fell to $7,000-8,000/tonne** ** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> global economic recession or a cliff-sliding decline in Chinese demand.
+** Nationalization/compulsory confiscation of Congolese gold rights** Low <unk> Very high <unk> History of the past (Zambia, Venezuela). TFM/KFM accounts for 80% of profits + if it happens catastrophic <unk>
+<unk> The Democratic Republic of the Congo has significantly increased taxes** and the middle and high, and 10% of the transfer requirements have already occurred, and may be added further in the future.
+<unk> Cobalt prices have collapsed to a long low ** High <unk> Global cobalt overflow + lithium phosphate.
+<unk> The "value trap" ** bought at the top of the cycle ** is medium and high <unk> high <unk> is currently like low <unk> but if the profit is at the top of the cycle, the PE will rise as the profit falls <unk>
+** New management team failed ** middle and low ** middle and middle ** middle and middle ** high blood exchange in 2025, new team less than a year, execution power unverified **
+** KFM 2 extensions or overexpenditures** medium and low;
+**ESG event/tails ** Low <unk> Very high <unk> Complex FARDC environment <unk> ESG event may trigger stock price collapses and regulatory pressure <unk>
+**Kessler syndrome: Cobalt produced from home ** high <unk> high <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-### 历史类比
+# History analogy
 
-**正面类比：2000年代的必和必拓（BHP）**
-- 相似点：在中国城镇化拉动的大宗商品超级周期中，通过并购全球优质矿山实现跨越式增长
-- 差异点：BHP资产更分散（铁矿+铜+煤+石油），地缘政治风险更低（澳洲+智利为主）
-- 启示：超级周期中矿业巨头可以涨10-20倍，但周期结束后也会跌70%+
+** Positive analogy: BHP in the 2000s**
+- Similarity: Cross-border growth through M&As in China ' s urbanized and driven commodity supercycle
+- Difference point: BHP assets are more dispersed (ore + copper + coal + oil) and geopolitical risks are lower (Australia + Chile predominantly)
+- Apocalypse: mining giants can increase 10-20 times in the supercycle, but they will also drop 70% after the cycle is over
 
-**负面类比：2011年的嘉能可IPO**
-- 相似点：在大宗商品高点上市/估值膨胀、"采矿+贸易"一体化模式
-- 结局：嘉能可IPO后铜价从$10,000跌至$4,300，股价从530p跌至70p（-87%）
-- 教训：**矿业股最危险的时刻往往是利润最好的时刻**
+** Negative analogy: 2011 PHRO**
+- Similarity: marketing/value inflation at high points in bulk commodities, "mining + trade" integration model
+- End of story: before IPO, copper prices fell from $10,000 to $4,300, and shares from 530 to 70 p (-87 per cent)
+- Lessons learned:** The most dangerous moments in the mining unit are often the best profit times**
 
-### 跨学科分析
+# Interdisciplinary analysis
 
-**资源诅咒理论**：刚果金是全球最典型的"资源诅咒"国家——拥有世界级矿产资源但治理极差。这不是短期风险，而是结构性风险。在刚果金的外资矿企，长期来看几乎没有一家能完全避免与政府的冲突。
+** Resource curse theory**: The Democratic Republic of the Congo is the world's most typical country of the "resource curse" - with world-class mineral resources but very poorly managed. This is not a short-term risk, but a structural one. In the case of foreign mining companies in the Democratic Republic of the Congo, few of them have been able to avoid conflict with the government altogether in the long run.
 
-**商品周期理论**：铜的超级周期通常持续10-15年。上一轮始于2001年结束于2011年。本轮始于2020年，如果历史韵律重复，可能持续到2030-2035年。但这只是统计规律，不是确定性。
+** Commodity cycle theory**: Copper supercycles usually last 10-15 years. The last round began in 2001 and ended in 2011. The current round starts in 2020 and may last until 2030-2035 if the historical rhythms repeat. But this is just a statistical pattern, not certainty.
 
-### 偏误自查
+# I'm wrong to check myself
 
-- **叙事偏差**："铜是新能源的石油"这个叙事非常吸引人，但铜价最终取决于供需而非叙事。2011年也有人说"铜是中国城镇化的石油"
-- **锚定效应**：2025年203亿净利润是历史最高，容易成为锚点。但2020年仅23亿——9倍波动是矿业常态
-- **共识偏差**：16位分析师全部"强烈买入"、目标均价26元。当全市场一致看多时，需格外小心
+- ** Narrative deviation**: The narrative "Cron is new energy oil" is very attractive, but the price of copper ultimately depends on supply and demand rather than on narrative.
+- **Assort effect**: 20.3 billion net profits in 2025 were the highest in history and easy to be anchor points. But only 2.3 billion in 2020 — nine times the volatility of mining is the norm.
+- **consensual deviation**: All 16 analysts "better buy" at an average of $26.
 
-> **芒格式追问**：我最可能在哪里犯错？聪明人为什么不买？
+> ** Man format questioning**: Where do I most likely make mistakes? Why not buy smart people?
 >
-> 最可能的错误是**把周期性增长当成长期增长**。2024-2026年的"量价齐升"是真实的，但它建立在两个前提上：(1) 铜价维持$13,000+/吨高位；(2) 刚果金政治环境不恶化。聪明人不买的理由：这是一家80%利润来自非洲最不稳定国家之一的公司，铜价每跌10%利润就跌20%+。在大宗商品高点，低PE是陷阱，不是机会。
+> The most likely mistake is** to treat cyclical growth as long-term growth**. The "surge" in 2024-2026 is real, but it is based on two premises: (1) maintenance of a high copper price of $13,000 +/t; and (2) non-deterioration of the political environment in the Democratic Republic of the Congo. Smart people do not buy: this is a business where 80% of profits come from one of Africa's most unstable countries, and copper costs drop by 20% per 10% + per cent. At the high point of commodities, low PE is a trap, not an opportunity.
 
 ---
 
-## 第五步：管理层评估 — 段永平"对的人" + 巴菲特"管理层诚信"
+# Step five: Management assessment - "The Right Man" # "Management Integrity"
 
-### 股权结构
+# Equity structure
 
-| 股东 | 持股 | 角色 |
+Shareholders, shareholders, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, responsibilities, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, role, or status
 |------|------|------|
-| 鸿商集团（于泳） | 24.69% | 实际控制人，从不公开露面 |
-| 洛矿集团（国有） | 24.68% | 国有背景股东 |
-| 公众 | ~50% | A+H股流通 |
+The Hong Kong Group, 24.69%, the real control, never public appearances.
+<unk> L ' Ore Group (State) <unk> 24.68%
+Public ~ 50% ~ A+H share flow ~
 
-**于泳**：中国最神秘的千亿富豪之一。2004年以1.78亿元参与混改获49%股权，20年回报超420亿元。从不在公司任职，极少公开露面。2025年鸿商系董事全部辞任，转向职业经理人体制。
+** Swimming**: China’s most mysterious billionaire. In 2004, 49% of the shares were transferred with 178 million yuan, with returns exceeding 42 billion yuan in 20 years. Never worked in the company, and rarely showed up publicly. In 2025, the Hong Kong Business Department director resigned and turned to a career manager system.
 
-### 关键决策复盘
+# Key decision-making remix
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| **2004** | 于泳1.78亿元参与混改获49%股权 | 20年回报420亿+，堪称中国最成功的MBO之一 | ★★★★★ |
-| **2016/09** | $15亿收购巴西铌磷资产 | 稳定现金流，全球第二铌生产商，提供周期对冲 | ★★★★☆ |
-| **2016/11** | $26.5亿收购TFM 56%权益（大宗周期底部） | **教科书级别**。当时铜价$4,800/吨，如今$13,595。这座矿如今年利润200亿+ | ★★★★★ |
-| **2020** | $5.5亿收购KFM 95%（疫情期间） | 全球最大高品位铜钴矿，2023年投产，正成为新增长引擎 | ★★★★★ |
-| **2021** | 转让KFM 25%给宁德时代 | 引入产业链合作伙伴，锁定钴下游需求 | ★★★★☆ |
-| **2022-23** | TFM吉卡明股权争议，支付$8亿和解金 | 代价高昂，但保住了核心资产。反映了在刚果金经营的隐性成本 | ★★★☆☆ |
-| **2025** | 管理层大换血，引入紫金/新奥/先进制造业背景高管 | 方向正确——从"创始人驱动"转向"职业经理人+专业化"。但团队磨合期存在不确定性 | ★★★★☆（待验证） |
-| **2025/12** | $10.15亿收购巴西四座金矿 | "铜金双极"战略合理，黄金对冲铜价下行风险。待交割 | ★★★★☆（待验证） |
+**2004** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+**2016/09** <unk> 1.5 billion for Brazilian phosphorus assets <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+**2016/11** $2.65 billion to buy 56% of TFM (the bottom of the large cycle)<unk> ** textbook grade**. At that time copper cost $4,800 per ton, now $13,595. The mine now earns 20 billion + <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> 20 billion <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+**20 ** $550 million to acquire 95% KFM (during the epidemic) <unk> The largest high-grade copper and cobalt mine in the world, which was produced in 2023, is becoming a new growth engine <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+**2021** <unk> Transfer of KFM 25% to Ningde era **
+**2022-23** TFM Gjikamine equity dispute, with $800 million in settlement payments, high cost, but kept core assets. Reflecting hidden costs of operating in the Democratic Republic of the Congo
+<unk> 2025** Management blood swaps, introducing purple gold/New Olympic/advanced manufacturing background executives in the right direction -- from "founder-driven" to "career managers plus specialization".
+**2025/12** <unk> $10.15 billion for the acquisition of four Brazilian gold mines <unk> "Bronze bipolar" strategy with a reasonable risk of falling gold against copper prices.
 
-### 资本配置能力总评
+# # Capital allocation capacity assessment
 
-洛阳钼业的并购战绩是中国矿企中最好的——**几乎每一笔重大收购都踩在了周期底部**。2016年铜价$4,800时买TFM，2020年疫情时买KFM。这种"逆周期低买"的纪律非常罕见，反映了管理层对商品周期的深刻理解。
+The Mt. and Merchant Luo industry is the best Mt. of Chinese mining companies ** and almost every major acquisition is on the bottom of the cycle. The copper price was $4,800 in 2016 for TFMs and KFMs in 2020. This discipline of "low buys against the cycle" is rare and reflects management's deep understanding of the commodity cycle.
 
-### 分红政策
+# The red divide
 
-| 年度 | 每股股息 | 分红总额 | 分红比例 |
+<unk> Annual <unk> per dividend <unk> gross <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 |------|---------|---------|---------|
-| 2023 | 0.154元 | ~33亿 | ~40% |
-| 2024 | 0.255元 | 55亿 | 40% |
-| 2025 | 0.286元 | 61亿 | 30% |
+2023, 0.154, <unk> 3.3 billion, ~ 40%.
+2024, 0255, 5.5 billion, 40%, 40%.
+<unk> 2025 <unk> <unk> <unk> 286 <unk> 6.1 billion <unk> 30% <unk>
 
-上市13年累计分红161.58亿元，累计融资186亿元，分红融资比0.87。2026年计划首次中期分红。分红比例从40%降至30%，主要因为资本支出需求增加（KFM二期+巴西金矿）。
+The cumulative share of the 13-year period on the market was $16,158 million, and the cumulative share of $18.6 billion, with a split of 0.87 million. The plan ' s first medium-term share for 2026 fell from 40 to 30 per cent, mainly because of increased demand for capital expenditure (KFM II+Brazil gold mine).
 
-> **段永平式追问**：如果CEO退休，这家公司还能保持竞争力吗？
+> **Plus Eternity**: If CEO retires, will the company remain competitive?
 >
-> **这个问题对洛阳钼业特别有意义**——因为2025年恰好发生了大规模管理层换血。旧团队（孙瑞文等鸿商系）已经离开，新团队（刘建锋/阙朝阳/彭旭辉）刚到位不到一年。好消息是：矿山不会因为换CEO而品位下降，TFM和KFM的资源禀赋是"老天爷给的"。坏消息是：洛阳钼业最厉害的能力——"逆周期精准抄底"——高度依赖于泳和管理层的判断力。新团队能否延续这种资本配置水平，尚未验证。
+> ** This question is particularly relevant for the Luoyang industry** — because a massive change of management occurred in 2025. The old team (Sun Riewen and others) has left and the new team (Lu Jianfeng/Sangyang/Peng Xuhui) has been in place for less than a year. The good news is that the mine will not fall because of the CEO, and the TFM and KFM resource endowments are "God's." The bad news is that the Luoyang industry's best ability - "Accurately applied to the down-cycle" - is highly dependent on swimming and management judgement. The ability of the new team to continue this level of capital allocation has not yet been proven.
 
 ---
 
-## 第六步：行业与文明趋势 — 李录"文明演进框架"
+# Step 6: Industry and civilizational trends - Lee Siu ' s Framework for Civilization Evolution
 
-### 文明级范式转移判断
+# A paradigm shift of judgment
 
-**铜正处于一次文明级能源转型的核心位置。**
+** Copper is at the heart of a civilized energy transition.**
 
-电力化+电气化是21世纪最大的文明趋势之一，而铜是电力传输不可替代的基础材料：
-- 电动车单车用铜83kg vs 燃油车23kg（3.6倍）
-- 可再生能源发电单位用铜量是传统发电的4-5倍
-- AI数据中心需要大量铜用于电力传输和散热
+Electricalization + electrification is one of the greatest civilizational trends of the twenty-first century, and copper is an irreplaceable base for electricity transmission:
+- Copper 83 kg vs fuel truck 23kg (3.6 times) for electric vehicles bicycles
+- The amount of copper used in renewable energy units is four to five times the amount of conventional electricity generated
+- AIS data centres require large amounts of copper for power transmission and heat radiation
 
-这使得铜具备了"结构性增长"的逻辑——不是简单的周期波动，而是需求中枢长期上移。
+This gives copper the logic of "structural growth" — not simple cyclical fluctuations, but long-term upward shifts in demand hubs.
 
-### TAM分析
+# TAM analysis
 
-| 市场 | 2025年规模 | 2030年预测 | CAGR |
+Markets, 2025 size, 2030 forecast, 2030, CAGR, 2030, 2030, 2030,
 |------|-----------|-----------|------|
-| 全球铜市场 | ~$3,800亿 | ~$5,700亿+ | ~8% |
-| 全球钴市场 | ~$120亿 | ~$150-180亿 | ~6% |
-| 全球钼市场 | ~$60亿 | ~$70-80亿 | ~4% |
-| 全球太空金属 | ~$4,000亿+ | ~$6,000-7,000亿 | ~8-10% |
+~$38 billion ~ $570 billion ~ 8% ~
+~ $12 billion ~ $15-18 billion ~ 6 per cent ~
+♪ The global market ♪ ♪ 6 billion ♪ ♪ 7-8 billion ♪ ♪ 4% ♪ 7 billion ♪
+~$400 billion ~$60 billion-$70 billion ~8-10 per cent ~
 
-### 铜供需关键数据
+# Key data on copper supply and demand
 
-| 指标 | 数据 |
+Indicators Data
 |------|------|
-| 当前铜价 | $13,595/吨（2026/6/22） |
-| 2025年全球需求 | ~2,800万吨 |
-| 2030年预测需求 | ~4,200万吨（+50%） |
-| 供需缺口（2026E） | JPM预计短缺33万吨；ICSG预计短缺15万吨 |
-| 新矿开发周期 | 从发现到投产平均**16年** |
-| Goldman 2035年铜价预测 | $15,000/吨 |
+Current copper prices $13,595 tons (2026/6/22)
+Global demand in 2025 ~ 28 million tons ~
+Projected demand in 2030 ~ 42 million tonnes (+50%) ~
+• Supply and demand gap (2026E) <unk> JPM projected shortfall of 330,000 tonnes; ICSG projected shortfall of 150,000 tonnes <unk>
+New mining development cycle
+Goldman 2035 copper price forecast $15,000/t
 
-**供给端的关键矛盾**：全球铜矿品位持续下降（过去20年平均品位从1%降至约0.5%），新矿发现越来越少、越来越贵。需求在增长，但供给响应速度极慢。这是铜价长期看涨的核心逻辑。
+** Key contradiction on the supply end**: The global copper mineral grade has been declining continuously (from an average of 1 to about 0.5 per cent over the past 20 years), and new mining discoveries have become less and more expensive. Demand is growing, but supply response is very slow. This is the core logic behind the long-term rise in copper prices.
 
-### 洛阳钼业在产业价值链中的位置
+# The position of the Luoyang industry in the industrial value chain
 
-洛阳钼业处于价值链的**上游（矿山开采）+中游（冶炼加工）+贸易（IXM）**。这个位置的优势是：在铜价上涨时赚取最大弹性的利润。劣势是：在铜价下跌时也承受最大的利润冲击。
+The Luoyang industry is in the upper ** (mine mining) + middle-stream (smelting) + trade (IXM)** value chain. The advantage of this position is that it earns the most elastic profits when copper prices rise. The disadvantage is that it also bears the greatest profit shock when copper prices fall.
 
-> **李录式追问**：站在20年后回看，这家公司是"这个时代的标准石油"还是"昙花一现的3Com"？
+> **Li's follow-up**: Stand back 20 years later, is this company "Standard Oil of the Age" or "Standing 3Com"?
 >
-> **更像是"这个时代的必和必拓"**——一家在大宗商品超级周期中崛起的矿业巨头，拥有世界级资源，但最终命运取决于商品价格和地缘政治。它不会消失（矿山在那里），但也不太可能成为"标准石油"那样的垄断者——因为铜矿供给终究会响应高价格，而刚果金的政治风险给公司估值设置了天花板。20年后的洛阳钼业大概率是全球前5的矿业公司，但股价走势将随铜价大幅波动。
+> ** More like "The Time's Bundang and Butu"** -- a mining giant who emerged in a supercycle of large commodities, with world-class resources, but whose fate depends on commodity prices and geopolitics. It will not disappear (where the mines are), but it is unlikely to become a monopoly like Standard Oil — because copper supply will eventually respond to high prices, while FARDC political risk sets ceilings for company valuations. Twenty years later, the Luoyang magma industry will probably be the top five mining companies in the world, but stock prices will fluctuate significantly with copper prices.
 
 ---
 
-## 第七步：估值与安全边际 — 巴菲特"内在价值" + 段永平"对的价格"
+# Step seven: valuation and security margin -- Barfitt "inner value" + price of "right"
 
-### 当前市场定价（工具验算）
+# Current market pricing (tools validation)
 
-| 指标 | A股（603993） | H股（03993） |
+• Indicators: A (603993) — H (03993) —
 |------|-------------|-------------|
-| 股价 | 19.49元 | 17.47港元 |
-| 市值 | ~4,170亿元 | ~5,139亿港元 |
+The price of the shares is $19.49.
+Market value 417 billion HK$ 513.9 million
 | PE（2025 EPS 0.95） | **20.5x** | ~18.7x |
 | PE（TTM EPS ~1.13） | **17.2x** | — |
 | PB | **5.37x** | — |
 | PS | ~1.8x | — |
 | EV/EBITDA | ~7.9x | — |
-| 股息率 | **1.47%** | ~1.7% |
+<unk> Equities <unk> 1.47%** ~ 1.7% <unk>
 | FCF Yield | **4.98%** | — |
 
-### 反向DCF：当前股价隐含的增长预期
+# Inverse DCF: The current implied growth in stock prices is expected
 
-以A股19.49元、EPS 0.95元计算：
-- PE 20.5x 隐含市场预期净利润维持在200亿+水平
-- 如果2026年铜价维持$13,000+且KFM继续爬产，2026E EPS可达1.4-1.5元，forward PE仅13-14x
-- 如果铜价回落至$10,000/吨，利润可能回落至120-150亿，EPS 0.56-0.70，PE将升至28-35x
+Based on Unit A $19.49, EPS 0.95:
+- PE 20.5x implied that the market expected net profit remained at 20 billion +
+- If copper prices in 2026 are at $13,000 plus and KFM continues to climb, 2026E EPS can reach $1.4-1.5, forward PE only 13-14x
+- If copper prices fall to $10,000/t, profits may fall to $12-15 billion, EPS 0.56-0.70, PE will rise to 28-35x
 
-**核心问题：当前PE是"便宜"还是"周期陷阱"？**
+** Core question: is the current PE "favourable" or "cycle trap"?**
 
-这取决于你对铜价的判断：
-- 如果认为铜价将在$12,000-15,000区间维持3-5年（新能源+AI驱动），当前估值便宜
-- 如果认为铜价可能回调至$8,000-10,000（全球衰退），当前估值是陷阱
+It depends on your determination of the price of copper:
+- If copper prices are considered to be maintained for 3-5 years (new energy + AI driven) at $12,000-15000, the current valuation is cheap
+- If the copper price is considered likely to revert to $8,000-10,000 (global recession), the current valuation is a trap
 
-### 三情景估值（工具精确计算）
+#3 scenario valuation (tool precision)
 
-基于2025年EPS 0.95元，3年预测期：
+Based on EPS 0.95 in 2025 and projected for the three-year period:
 
-| 情景 | EPS年增速 | 3年后EPS | 目标PE | 目标股价 | 涨跌幅 |
+♪ The year-by-year ♪ ♪ the year-by-year ♪ ♪ the year-by-year ♪ ♪ the year-by-year ♪ ♪ the year-by-year ♪ ♪ the year-by-year ♪
 |------|----------|---------|--------|---------|--------|
-| **乐观** | 30% | 2.09元 | 18x | **37.6元** | **+93%** |
-| **中性** | 15% | 1.44元 | 14x | **20.2元** | **+4%** |
-| **悲观** | -5% | 0.81元 | 8x | **6.5元** | **-67%** |
+** EXPOINTED** 30%
+** Middle ** 15% ** 1.44 <unk> 14 x ** 20.2 ** ** + 4% ** ** <unk>
+** Pessimism** - 5% <unk> 0.81 <unk> 8x ** 6.5 ** ** ** 67% ** ** <unk>
 
-*乐观假设：铜价维持$13,000+，KFM二期投产，产铜90万吨。中性假设：铜价小幅回调至$11,000-12,000，产铜80万吨。悲观假设：全球衰退铜价跌至$8,000，产量增长但利润下滑。*
+*optimistic assumption: copper prices are kept at $13,000+, KFM 2 was launched and 900,000 tons of copper were produced. Neutral assumption: copper prices have been slightly adjusted to $111,000-12 million, and 800,000 tons of copper. Pessimistic assumption: global prices of recession copper have fallen to $8,000, with production increasing but profit declining.*
 
-### 同行估值对比
+# # Peer valuation comparison
 
-| 公司 | PE(TTM) | PE(2026E) | PB | 主要品种 |
+<unk> Company <unk> PE(TTM) <unk> PE(2026E) <unk> PB <unk> Main variety <unk>
 |------|---------|-----------|-----|---------|
-| **洛阳钼业** | **~17x** | **~13x** | **5.4x** | 铜、钴、钼 |
-| 紫金矿业 | ~30x | ~15x | ~5.8x | 铜、金、锌 |
-| 自由港FCX | ~37x | ~20x | — | 铜、金、钼 |
-| 嘉能可 | ~40x | — | — | 铜、钴、锌、贸易 |
+**Loyang molybdenum** ** ~ 17 x ** <unk> 13 x ** ** 5.4 x ** Copper, cobalt, molybdenum
+~30x<unk> 15x<unk> 5.8x<unk> Copper, gold, zinc
+Freeport FCX ~ 37x ~ 20x ~ copper, gold, molybdenum
+~40x<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-洛阳钼业在可比公司中估值最低，反映的是**刚果金风险折价**。
+The Luoyang industry has the lowest valuations compared to companies, reflecting the Democratic Republic of the Congo risk discount**.
 
-### 自身历史估值
+# My own history values
 
-| 时期 | PE(TTM)区间 | 当前位置 |
+<unk> PE(TTM) Zone
 |------|-----------|---------|
 | 2020-2021 | 25-60x | — |
 | 2022-2023 | 15-30x | — |
 | 2024 | 10-20x | — |
-| 当前 | **17-20x** | 历史中位数附近 |
+<unk> Current<unk> **17-20x**<unk> Near the median in history<unk>
 
-### 分析师一致预期
+# The analyst's the same as expected
 
-| 指标 | 数据 |
+Indicators Data
 |------|------|
-| 评级 | **强烈买入**（16买/0持/0卖） |
-| 目标均价 | 26.24元（+35%上行空间） |
-| 目标区间 | 21.7-34.0元 |
+<unk> Rating <unk> ** Strong buy-in** (16 buy/0 buy/0 sell) <unk>
+<unk> Average target price <unk> 26.24 (+35% upspace) <unk>
+<unk> Target area <unk> 21.7-34.0
 
-> **段永平式追问**：如果股市明天关闭5年，你愿意以这个价格持有吗？
+> **Plus Yongping**: Would you hold it at this price if the stock market were closed for five years tomorrow?
 >
-> **有条件地愿意**。条件是：(1) 相信铜的结构性需求增长故事在5年内不会被证伪；(2) 接受刚果金政治风险作为"已知的未知"。以19.49元买入，对应2026年forward PE约13-14x，如果5年后铜产量翻倍至100万吨、铜价维持$12,000+，利润可能达到400-500亿，即使PE压缩至12x，股价也能到22-28元。但如果铜价崩塌或刚果金出事，亏损50%+也完全可能。这不是一笔"闭眼持有"的投资——它需要持续跟踪铜价和刚果金政策。
+> ** Conditionally willing**. Condition: (1) Believe that the story of structural growth in copper demand will not be false for five years; (2) accept the political risk of the Democratic Republic of the Congo as "known unknown". Purchased for $19.49, corresponding to 2026 forforward PE about 13-14x, if copper production doubles to 1 million tons after five years, copper prices remain at $12,000+, profits may reach $40-50 billion, and even if the PE is compressed to 12x, shares can reach $22-28. If the copper price collapses or the Congolese gold goes down, the loss + 50% is entirely possible. This is not a "eye holding" investment – it needs to follow up on copper prices and Congolese gold policy on a continuous basis.
 
 ---
 
-## 第八步：综合决策备忘录
+# Step eight: a comprehensive decision-making memorandum
 
-### 汇总评估
+## Summary assessment
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| **生意质量**（段永平） | 矿业是"靠天吃饭"的生意，没有定价权，但洛阳钼业拥有全球顶级矿山，成本曲线位置优越 | ★★★★☆ |
-| **护城河**（巴菲特） | 资源禀赋是真正的护城河——品位、储量、成本优势。但无法抵御价格周期 | ★★★★☆ |
-| **管理层**（段永平+巴菲特） | 并购战绩教科书级别（逆周期低买TFM/KFM），但2025年大换血后新团队尚未验证 | ★★★★☆ |
-| **最大风险**（芒格） | 刚果金政治风险（无法量化的尾部风险）+ 铜价周期性回调 + "低PE"可能是周期顶部陷阱 | ★★★★★ |
-| **文明趋势**（李录） | 铜是能源转型的核心材料，需求中枢长期上移。洛阳钼业处于最受益的位置 | ★★★★☆ |
-| **估值**（巴菲特+段永平） | PE 17-20x处于历史中位数，forward PE ~13x在同业中最低。但需警惕周期顶部估值陷阱 | ★★★☆☆ |
+The mining industry is a business of "drawn by heaven" with no pricing rights, but the Luoyang Molympe industry has the world's top mining mountain, with a high cost curve.
+** Protector's River** (Baffit) ** Resource endowments are real moats - grade, reserves, cost advantages. But they cannot resist the price cycle.
+** Management** (Long-Ping + Buffett) <unk> Merger-purchase grade (low-cost TFM/KFM) but new team has not been validated since the blood exchange in 2025
+<unk> Maximum risk** (Munge) <unk> Democratic Republic of the Congo political risk (unquable tail risk) + copper price cyclical rewind + "low-pe" could be the top of the cycle trap <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The luxurious industry is in the most beneficial position.
+** Valuation** (Buffett+Ping) <unk> PE 17-20x is in the median of history, forward ~13x is the lowest in the community.
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **可适度建仓（3-5%仓位），但分批买入**。当前铜价$13,595/吨处于高位，等待回调至$11,000-12,000再加仓更安全。股价若回调至15-17元（PE 16-18x基于2025年EPS），安全边际更充分。不建议在当前位置一次性重仓 |
-| **持仓者** | **继续持有**，但设置跟踪止损。铜的长期结构性需求增长支持持有，KFM二期投产将带来新增量。若持仓成本低于15元，安全边际充足；若成本高于25元，考虑部分减仓 |
-| **卖出信号** | 铜价跌破$10,000/吨并持续3个月以上；刚果金出台重大不利政策（如将矿业税提高至50%以上或强制国有化）；Q2-Q3利润增速放缓至个位数；管理层出现诚信问题或重大战略失误 |
-| **加仓信号** | 铜价回调至$10,000-11,000但长期需求逻辑未变（提供更好的安全边际）；KFM二期提前投产或产量超预期；刚果金政治环境改善（如税收政策明确化）；股价跌至13-15元区间（PE <16x） |
+** Empty warehouser** ** modestly constructed (3-5% of warehouse space), but bought in bulk**. The current copper price is $13,595 tons, which is now high, awaiting a return to $11,000-12,000 for reloading. Stock prices are adjusted to $15-17 (PE 16-18x based on 2025 EPS), and security margins are more adequate. No one-time rehousing is recommended at the current position
+<unk> ** warehousekeeper** <unk> ** Continues to hold** but has a track-up loss. The long-term structural demand growth for copper supports holding, and KFM II will bring about additional production. If the cost of holding a warehouse is less than $15, there is sufficient security margin; if the cost is more than $25, some reduction is considered
+<unk> ** Signals sold** Copper prices fell by $10,000/t and continued for more than three months; FARDC has major adverse policies (e.g., raising mining taxes to more than 50 per cent or mandatory nationalization); Q2-Q3 profits are slowing down to one digit; management has bad governance or major strategic failures
+<unk> **Save signal** <unk> Redirection of copper prices to $10,000-11,000 but no change in the long-term demand logic (providing better security margins); KFM II advance production or production over-expected; improved political environment in the Democratic Republic of the Congo (e.g. clear taxation policy); stock price down to $13-15 (PE < 16x) <unk>
 
-### 合理价格区间（A股）
+# # Reasonable price range (A share)
 
-| 情景 | 3年目标价 | 假设条件 |
+<unk> Scenario <unk> 3 year target price <unk>
 |------|----------|---------|
-| 乐观 | **30-38元** | 铜价$13,000+，产铜90万吨+，PE 18x |
-| 中性 | **18-22元** | 铜价$11,000-12,000，产铜80万吨，PE 14x |
-| 悲观 | **6-10元** | 铜价$8,000以下或刚果金重大风险事件，PE 8x |
+♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The
+<unk> Gender <unk> $18-22 ** Copper at $11,000-12,000, copper at 800,000 tons, PE 14x <unk>
+<unk> Pessimism <unk> $6-10 ** Copper less than $8,000 or major risk event for the Democratic Republic of the Congo, PE 8x <unk>
 
-### 四位大师模拟点评
+# Four masters simulated the reviews
 
-> **巴菲特**："矿业不是我最喜欢的生意——它没有定价权，利润完全取决于上帝（矿石品位）和市场先生（商品价格）。但如果一定要在矿业股中选一家，洛阳钼业的资源禀赋是世界级的。我的问题是：80%的利润来自世界上最不稳定的国家之一——这让我睡不好觉。"
+> **Buffett**: "Mine is not my favorite business -- it has no pricing power, and profits depend entirely on God (ore grade) and Mr Market (price prices). If one must be selected in the mining stock, the resources of the Luoyang industry are world-class. My question is: 80% of the profits come from one of the most unstable countries in the world -- which makes me sleepless."
 
-> **芒格**："反过来想——在哪种情况下你会后悔买了这只股票？答案是：铜价大幅下跌+刚果金政局恶化。这两件事的概率各有20-30%，而且可能同时发生。如果你承受不了腰斩的风险，就不要碰矿业股。但如果你理解了这一点还愿意买，说明你可能真的理解了这门生意。"
+> ** Mang**: "Counterly think -- in which case would you regret buying this stock? The answer is that the price of copper has fallen dramatically + the political situation in the Democratic Republic of the Congo has deteriorated. The probability is 20-30% each, and it can happen simultaneously. If you cannot afford the risk of a bee-head, do not touch the mining stock. But if you understand that, you may actually understand the business."
 
-> **段永平**："管理层的逆周期并购能力让我印象深刻——2016年在铜价$4,800时买TFM，这需要极大的逆向思维和资本纪律。但2025年管理层大换血后，我还不确定新团队能否延续这种判断力。如果于泳真的'放权'了，我需要看到新CEO做出至少一个正确的关键决策，才能真正放心。"
+> **Pongping**: "Managing 's ability to countercyclical M&As is impressive -- buying TFMs at $4,800 in copper in 2016 requires a lot of inverse thinking and capital discipline. But after the exchange of blood in 2025, I am not sure that the new team can continue this judgement. If swimming really is 'free', I need to see the new CEO make at least one key decision that is right to be truly reassured."
 
-> **李录**："从文明演进的角度，铜是少数兼具'旧经济基石'和'新经济引擎'属性的材料。电力文明的每一步深化都需要更多的铜。洛阳钼业手握全球最好的铜矿，处于正确的位置。但投资不能只看位置——价格同样重要。当前铜价$13,595已经price in了相当多的乐观预期。如果让我选择时点，我宁愿在市场恐慌时（铜价$9,000-10,000）大举买入，而不是在万众看好时追高。"
-
----
-
-## AI分析置信度 vs 投资确定性
-
-### 基于充分数据的高置信度结论
-
-1. **洛阳钼业拥有世界级矿山资源**——TFM品位2.24%、KFM钴品位0.91%、铜资源量全球第4、钴全球第1。数据来自年报和第三方矿业数据库
-2. **净利润5年翻4倍是真实的产量+价格双击**——铜产量从2021年~25万吨到2025年74万吨，铜价同期翻倍。S-1级别的数据可靠性
-3. **管理层的逆周期并购是教科书级别**——2016年TFM、2020年KFM，事后证明都是极佳时机
-4. **在同业可比公司中估值最低**——PE低于紫金矿业、FCX、嘉能可，反映刚果金风险折价
-
-### 基于有限信息的中等置信度推理
-
-5. **铜的结构性短缺预期**——多家机构预测供需缺口，但预测差异大（JPM短缺33万吨 vs Goldman过剩16万吨）。长期逻辑合理但短期波动不可预测
-6. **KFM二期将如期投产**——计划2027年上半年投产，但海外矿山项目延期是常态
-7. **新管理团队的执行力**——方向正确（专业化升级），但磨合期不足1年，缺乏实绩验证
-
-### 数据不足的低置信度判断
-
-8. **刚果金政治风险的真实概率**——10%干股转让、出口禁令、税收变化都已发生，但更极端的国有化风险无法用公开数据量化
-9. **铜价未来3年的走势**——当前$13,595处于历史高位，短期可能回调，但幅度和时间不可预测
-10. **于泳"放权"后的真实控制力**——鸿商系董事退出不等于于泳放弃控制，实际权力结构外部难以判断
-
-**总结**：对洛阳钼业的**资源质量和管理团队历史战绩**置信度高，对**当前是否是好的买入时点**置信度中等。核心不确定性来自两个方面：铜价是否已经price in了过多乐观预期，以及刚果金政治风险是否被市场充分定价。建议投资者将洛阳钼业视为**"好公司、合理估值、但需要择时"**的标的——不是"闭眼买入"的选择，而是需要跟踪铜价和刚果金政策的周期性投资。
+> **Lisu**: "Bronze is a few things that are both "old economic cornerstones" and "new economic engines" in terms of civilization. Every step of electricity civilization deepens requires more copper. The Loyang industry holds the best copper mine in the world, and is in the right place. But investment cannot be just about the location -- price is equally important. The current copper price of $13,595 is already fairly optimistic. If I choose a time, I would prefer to buy it in the market when I panic (copper price $9,000-10,000).
 
 ---
 
-*报告生成日期：2026年6月23日*
-*数据来源：公司年报（2024-2025）、2026Q1季报、证券时报、东方财富、SMM上海有色网、JPMorgan、Goldman Sachs、S&P Global、Investing.com、Morningstar、公司官网*
-*关键数据均通过 financial_rigor.py 工具交叉验证*
-*本报告仅供研究参考，不构成投资建议*
+# AI analyze confidence vs investment certainty
+
+# # High confidence conclusions based on sufficient data
+
+** The Luoyang industry has world-class mineral resources** - TFM 2.24% grade, KFM 0.91% grade cobalt, and copper volume 4 and cobalt 1st world global. Data from the annual report and third-party mining database
+** Net profit four times in five years is real production + price double-click** - copper production doubled over the same period from 2021 - 250,000 tonnes to 740,000 tonnes in 2025.
+** Reverse cycle M&As by management are textbook levels** - TFM 2016 and KFM 2020, which proved to be excellent timings after the event
+** The lowest valuation among comparable companies ** — PE below the value of the UV mine, FCX, Greco, reflecting the Democratic Republic of the Congo risk discount
+
+# Based on the medium confidence of limited information
+
+** Structural shortfall forecast for copper** - Multiple agencies predict supply and demand gaps, but the forecast varies widely (330,000 tons vs Goldman is over 160,000 tons). Long-term logical but unpredictable short-term fluctuations
+** KFM II will be ready to start production** - scheduled to start production in the first half of 2027, but the extension of the overseas mine project is the norm
+**The performance of the new management team** - The right direction (specialization upgrade) but less than one year of consolidation and lack of performance validation
+
+# # Low confidence judgement with insufficient data
+
+** The real probability of FARDC political risk** — 10% of the transfer of shares, export bans, tax changes have occurred, but more extreme nationalization risks cannot be quantified with public data
+** Trends in copper prices over the next three years** — currently $13,595 at an all-time high, with a short-term possibility of a return, but with unpredictable ranges and timing
+** Real control after swimming "decentralisation"** - The withdrawal of the Hong Kong Department of Trade is not tantamount to a waiver of control by swimming, and the actual power structure is difficult to judge outside.
+
+** Summary**: The historical performance of the resource quality and management team** for the Luoyang industry is high** and the confidence level is medium** for the current ** good point of entry**. The core uncertainty stems from two sources: whether copper prices are already being over-optimized and whether the Democratic Republic of the Congo political risks are fully priced by the market. Investors are advised to view the Luoyang industry as a ** "good company, reasonable valuation, but when it is necessary to choose"** — not as an option for "blind buy-in", but rather as a need to track the copper price and the Democratic Republic of the Congo policy cyclical investment.
+
+---
+
+*Report generated: 23 June 2026*
+*Source: Corporate Annual (2024-2025), 2026Q1, Securities Times, Eastern Wealth, SMM Shanghai Colour Network, JPMorgan, Goldman Sachs, S&P Global, Investing.com, Morningstar, Network of Company Officials*
+* Key data are cross-checked through the financio_rigor.py tool*
+* The present report is for research purposes only and does not constitute an investment proposal*

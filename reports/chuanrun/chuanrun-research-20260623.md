@@ -1,46 +1,46 @@
-# 川润股份（002272.SZ）四大师综合投资研究报告
+# Integrated investment study by Four Masters of Kawanaga (002272.SZ)
 
-**研究日期**：2026年6月23日
-**股价**：18.50元 | **市值**：89.7亿元 | **总股本**：4.85亿股
-**52周区间**：6.80 - 22.60元 | **近一年涨幅**：+77.3%
-
----
-
-## 信息丰富度评级：B级（信息适中）
-
-川润股份是一家市值不足百亿的小盘工业股，仅有1家券商覆盖（国海证券，2026年3月首次覆盖），公开研究资料有限。
-
-**AI研究局限性声明**：
-- 仅1家券商覆盖，盈利预测缺乏交叉验证
-- 液冷业务2025年首次单独披露，历史可追溯性差
-- 核电润滑冷却的市场份额数据来源有限，精确度存疑
-- 前五大客户集中度、核电订单金额等关键数据未披露
-- 本报告中标注"估计"的数据，置信度较低
-
-**偏见自查**：川润股份过去一年因"液冷+核电"概念涨幅77%，市场情绪偏热。AI在资料有限时容易被市场叙事牵引——本报告需重点做反面检验。
+** Date of study**: 23 June 2026
+** Stock **: $18.50 ** Market value ** Market value ** ** $8.97 billion ** Total equity** **
+** 52 weeks: 6.80 - 22.60 US$ ** Recent year increase** +77.3%
 
 ---
 
-## 一、生意本质分析 — 段永平"对的生意"
+# Information abundance rating: B (median)
 
-### 用一句话定义这门生意
+Kawayun shares are a small industrial stock with a market value of less than 10 billion and only one voucher dealer covers it (State Sea Securities, first covered in March 2026), with limited public research information.
 
-**川润的本质是一家为重工业和能源行业提供定制化润滑冷却系统的制造商，正试图将冷却技术延伸到数据中心液冷这个高增长赛道。**
+**A. Study limitations statement**:
+- Only one voucher dealer covered, profit forecasts not cross-checked
+- Ill-cold operations were first disclosed separately in 2025, with a history of poor traceability
+- Limited sources of market share data for nuclear power lubricants cooling and questionable accuracy
+- Critical data such as concentration of top five clients, amounts of nuclear power orders, etc. are not disclosed
+- The data marked "estimated" in this report is less credible
 
-### 收入结构拆解（2025年）
+** Prejudice self-examination**: Kawayun shares have increased by 77% over the past year because of the concept of "Liquid Cold+ Nuclear Power" and market mood bias. AI is vulnerable to market narratives when information is limited - this report focuses on the opposite.
 
-| 业务板块 | 收入（亿元） | 占比 | 同比增速 | 定位 |
+---
+
+# One, business nature analysis - a piece of "right business"
+
+# Define this business in a word
+
+**Thon Yu is in essence a manufacturer of customized lubricants for heavy industry and energy industries, and attempts are being made to extend cooling technology to the high-growth track of liquid cooling in data centres**
+
+## Dismantling of income structure (2025)
+
+The business plate, the income (millions of dollars), the income, the ratio, the speed, the speed, the positioning, the location, the ability to make the difference.
 |---------|------------|------|---------|------|
-| 新能源流体系统 | 8.40 | 48% | +40.8% | 基本盘（风电/光热/储能） |
-| 清洁能源装备 | 4.49 | 26% | -32.0% | 余热/生物质发电锅炉 |
-| 液冷系统 | 2.25 | 13% | +77.8% | 增长核心（AI服务器冷却） |
-| 流体工业技术服务 | 0.89 | 5% | +6.9% | 毛利率最高（33%） |
-| 储能装备 | 0.46 | 3% | +50.8% | 规模小，毛利率极低（<3%） |
-| **合计** | **17.50** | **100%** | **+9.6%** | |
+<unk> New energy fluid system 8.40 <unk> 48% <unk> + 40.8% <unk> Basic disk (wind/light heat/storage) <unk>
+<unk> Clean energy equipment 4.49 <unk> 26% <unk> - 32.0% <unk> Surplus heat/biomass boilers
+<unk> Liquid cooling system 2.25 <unk> 13% <unk> 77.8% <unk> Growth core (AI server cooling) <unk>
+<unk> Fluid industrial technical services <unk> 0.89 <unk> 5% <unk> 6.9% <unk> Māori rate (33%) <unk>
+<unk> Storage equipment <unk> 0.46 <unk> 3% <unk> 50.8% <unk> Small scale, very low Maori ratio (<3%) <unk>
+** Total** ** 17.50 ** 100% ** ** 9.6% ** ** ** ** ** ** ** ** ** 9.6% ** <unk> <unk> <unk> <unk> <unk>
 
-### 5年盈利能力趋势
+# # 5 years of profitability trend
 
-| 年份 | 营收（亿元） | 净利润（万元） | 毛利率 | 经营现金流（万元） |
+(millions of yuan)
 |------|------------|-------------|--------|--------------|
 | 2021 | ~15.31 | ~5,100 | ~16% | — |
 | 2022 | 16.99 | 1,198 | ~16% | — |
@@ -48,321 +48,321 @@
 | 2024 | 15.97 | **-11,570** | 17.7% | **-13,000** |
 | 2025 | 17.50 | **-2,491** | 18.4% | +7,018 |
 
-**趋势**：2022年利润骤降→2023年转亏→2024年亏损扩大→2025年亏损收窄78.5%但仍未盈利。收入在2023-2024年连续下滑后，2025年恢复增长。
+** Trends**: The profit fell sharply in 2022 – in 2023 – in 2024, the loss expanded – in 2025, the loss increased by 78.5% but the profit was still not realized. After a continuous decline in income in 2023-2024, growth resumed in 2025.
 
-### 商业模式特征
+# Business model characteristics
 
-| 维度 | 川润股份 | 评价 |
+<unk> dimension <unk> shares <unk> evaluation <unk>
 |------|---------|------|
-| 收入模式 | 项目制一次性销售 | 缺乏复购/订阅属性 |
-| 定制化程度 | 高（按客户需求定制） | 规模化难度大 |
-| 毛利率 | 17-18% | 典型工业制造水平，无溢价能力 |
-| 客户粘性 | 中等（资质壁垒+服务） | 非不可替代 |
-| 资本密集度 | 中等 | 拟定增9.5亿扩产 |
-| 周期性 | 强（跟随风电/核电投资周期） | 业绩波动大 |
+<unk> Income pattern <unk> Project-based one-time sale <unk> Lack of repurchase/subscription properties <unk>
+<unk> Level of customization <unk> High (customized to client) <unk> Large scale difficulty <unk>
+<unk> Māori ratio <unk> 17-18%
+<unk> Client sticky, medium (qualification barriers + services) <unk>
+Capital intensity, medium, proposed increase of 950 million
+*Cycleiculium *Cycleiculium *Cycleic acid *Cyclopic eccentric (following the wind/nuclear cycle of investment)*
 
-### 段永平式追问：这门生意好在哪？
+# # A piece of Eternity asks: Where is the business?
 
-**坦率地说，这不是一门"好生意"。**
+** Frankly, it's not a good business.**
 
-从段永平的标准看：
-- **无定价权**：17-18%的毛利率说明川润在供应链中议价能力有限，是"给别人打工"的角色
-- **无复购/订阅**：项目制销售，每个订单都要重新竞标，没有"睡觉也在赚钱"的属性
-- **周期性强**：业绩随风电/核电投资周期大幅波动，连续三年亏损已经证明了这一点
-- **规模不经济**：收入16-17亿的体量，无法摊薄固定成本，净利润率在盈利年份也仅3-4%
+From the standard of Eternity:
+- ** No pricing rights**: 17-18% Māori rate indicates that Kawayun has limited bargaining power in the supply chain and is a "work for others" role
+- **No repurchase/subscription**: Project sales, each order rebid, without the "sleeping and earning" attributes
+- ** very cyclical**: Performance fluctuates significantly with the wind/nuclear investment cycle, as demonstrated by the loss for three consecutive years
+- ** Uneconomical of scale**: the amount of $1.61.7 billion in revenue, which cannot be spread over fixed costs, and net profit rates are only 3-4% in profit years
 
-唯一值得关注的变量是**液冷业务**（2.25亿，+77.8%），但这改变的是"增长叙事"而非"生意本质"。液冷本质上仍然是卖硬件设备，毛利率不会比传统业务高太多。
+The only variable worth noting is ** Liquid Cold Business** (250 million, +77.8%), but this changes the "growth narrative" rather than the "business essence." Liquid Cold is still, in essence, selling hardware equipment, and the Māori rate is not much higher than traditional business.
 
-**评分：★★（2/5）— 平庸的项目制工业品生意，低毛利、强周期、无复购**
+** Rating: <unk> (5) - mediocre industrial project business, low Maori, strong cycle, no repurchase**
 
 ---
 
-## 二、护城河评估 — 巴菲特"经济护城河"
+# II. A moat assessment - Buffett "The Economic moat."
 
-| 护城河类型 | 有无 | 验证 |
+♪ The moat type ♪
 |-----------|------|------|
-| 品牌/定价权 | ❌ | 毛利率17-18%，无法提价不损失销量 |
-| 转换成本 | ⚠️ 弱 | 核电资质认证有一定壁垒，但风电/水泥领域替代较易 |
-| 网络效应 | ❌ | 不存在 |
-| 规模效应 | ❌ | 年收入仅17亿，无法与恒立液压（93亿）等对手比规模 |
-| 技术/专利壁垒 | ⚠️ 弱 | 318件专利（发明60件），在细分领域有积累，但技术门槛不高 |
+Branding/pricing rights <unk> Māori rates 17-18%, no price increase without loss of sales <unk>
+The X-rays are not the only ones that are used to make the X-rays.
+♪ The network effects ♪
+The size effect, the size of the income, which is only 1.7 billion dollars a year, cannot be compared to the size of rivals like the constant hydraulic pressure (9.3 billion)
+Technical/patent barriers <unk> Weak <unk> 318 patents (60 inventions) accumulated in the area of disaggregation but not high technical thresholds
 
-### 护城河的真实来源
+# The real source of the moat
 
-川润真正的壁垒不在于上述五类传统护城河，而在于两个"准入资质"：
+The real barrier to Kawayun is not the five traditional moats, but the two "access status":
 
-1. **核电项目资质**：覆盖国内绝大多数核电站，为首台国产化核电海水循环泵配套。核电是高门槛行业，一旦进入供应链就有较强的粘性。但川润提供的是辅助系统（润滑冷却），不是核岛主设备，价值量和壁垒都有限。
+1. **Quality of nuclear power projects**: Covers the vast majority of nuclear power plants in the country, which are the first nationally produced nuclear power-based seawater cycle pump. Nuclear power is a high-threshold industry, with a strong viscosity once it enters the supply chain. But Kawayun provides support systems (lubber cooling), not nuclear island master equipment, with limited value and barriers.
 
-2. **华为液冷合作关系**：作为华为昇腾AI服务器核心液冷供应商，参与制定行业标准（第一起草单位）。但液冷赛道竞争者众多（英维克市占率50%+、高澜股份、中科曙光等），川润的份额和绑定深度尚不确定。
+2. **Fuu is a liquid cold cooperative**: As a core liquid cold supplier for the tungsten AI server, China is involved in setting industry standards (first drafting unit). However, there are a large number of competitors in the tactile cold track (in the city of Antwick, 50% plus, high shares, middle-class dawn, etc.), and the share and binding depth of Kawayun is uncertain.
 
-### 护城河趋势
+# The moat of the river
 
-**过去5年**：窄且变窄。传统润滑冷却业务毛利率从~16%提升至18%（改善有限），但收入规模停滞，连续亏损说明竞争优势不足以支撑盈利。
+** The last five years**: Narrow and narrow. The traditional lubricant cooling rate rose from ~16% to 18% (with limited improvement), but the income level stagnated, and the continuous loss suggests that competitive advantage is not sufficient to support profitability.
 
-**未来5年**：取决于液冷和核电两个增量能否兑现。如果液冷业务从2.25亿增长到10亿+并保持较高毛利率，护城河会略微变宽。但如果液冷沦为价格战红海（类似储能毛利率<3%的前车之鉴），护城河反而更窄。
+If the liquid cold business increases from 225 million to 1 billion plus and maintains a high Māori rate, the moat will slightly widen. If the liquid cold becomes a price-war red sea (like a 3% advance ratio of storage capacity), the moat becomes narrower.
 
-**巴菲特式追问**：10年后这条护城河还在吗？
+**Buffettian **: 10 years later, is this moat still there?
 
-核电资质是最持久的壁垒——核电站运营30-60年，润滑冷却系统需要全生命周期服务，先发优势可以持续。但液冷业务的壁垒取决于技术迭代速度和华为合作的稳定性，10年后格局难以预判。
+Nuclear power is the most persistent barrier – 30 to 60 years of operation of a nuclear power plant, with a lubricant cooling system that requires full life-cycle service and pre-emptive advantage that can be sustained. But barriers to liquid cold operations depend on the speed of technological overlap and the stability of China’s cooperation, and the pattern is difficult to prejudge after 10 years.
 
-**评分：★★（2/5）— 窄护城河，主要靠资质准入而非真正的竞争优势**
+** Rating: <unk> (5) - Narrow moat, mainly based on qualification access rather than a real competitive advantage**
 
 ---
 
-## 三、逆向思考与风险清单 — 芒格"反过来想"
+# Three, reverse thinking and risk list - Manger's "backward thinking"
 
-### 公司可能失败的路径
+# The path that companies may fail
 
-| 风险路径 | 概率 | 影响程度 | 说明 |
+Risk path, probability, impact, degree, description, description.
 |---------|------|---------|------|
-| 液冷业务不及预期 | 高 | 极高 | 当前估值很大程度建立在液冷增长叙事上。实际收入仅2.25亿，远低于市场"10亿级订单"的期望 |
-| 持续亏损导致财务恶化 | 中高 | 高 | 已连续三年亏损，资产负债率55%并上升，若2026年仍不能盈利将面临ST风险 |
-| 实控人继续减持 | 高 | 中高 | 罗丽华已套现6.36亿，减持导致跌停的前科。管理层与股东利益不一致 |
-| 风电周期下行 | 中 | 高 | 新能源流体系统占收入48%，高度依赖风电装机量 |
-| 液冷竞争加剧/价格战 | 中高 | 高 | 英维克市占率50%+，高澜、曙光等强劲对手，川润作为后进入者份额有限 |
-| 定增摊薄 | 高 | 中 | 拟增发9.5亿元，按当前股价将摊薄约10% |
-| 核电审批放缓 | 低 | 中 | 政策风险较小，但核电设备订单对川润利润的贡献有限 |
+The current valuation is based on a very large amount of liquid growth narrative. Real income is only 225 million, which is far below the market's "one billion-grade order" expectations.
+The continuing deficit leads to financial deterioration The year after the third consecutive year of loss, the asset and liability ratio rose by 55 per cent, and if the year 2026 is not profitable, the risk of the ST risks is high
+The realist continues to lose 636 million dollars, cutting the previous record that caused the collapse. Management does not have the same interest as shareholders.
+The wind cycle goes down, the wind cycle goes up, the power flow system is 48% of the income, and the wind is highly dependent on the power supply.
+<unk> Increased competition/price battles Mid-high <unk> High <unk> Invik city 50% +, strong rivals like the engraved, dawning, and the limited share of Kawayun as a post-entryer
+The top of the list is the sum of $950 million, which is about 10% at the current stock price.
+The nuclear power approval is slowing down, the low, the low, the low, the low policy risks, but the nuclear power equipment orders have limited contribution to the profits of Kawachi.
 
-### 历史类比
+# History analogy
 
-川润股份的处境让人想起**2015-2016年的蓝科高新/科华恒盛**——当时也是传统工业企业搭上热门概念（光伏/数据中心），股价在业绩尚未兑现时因概念大幅炒作，随后业绩不及预期导致股价回落。
+The situation of Kawayun shares is reminiscent of the HS/Kohaengang, LKG, 2015-2016** — which was also popular with traditional industrial enterprises (photovolt/data centres) and which were heavily engineered when performance was not materialized, and subsequently underperformed as expected, leading to a stock price decline.
 
-更近的案例是**2023年的液冷概念炒作潮**中大量标的：多数公司液冷收入占比极小，但股价涨幅远超基本面支撑。川润液冷收入2.25亿仅占总收入13%，但市场在按"液冷纯正标的"定价。
+More recently, the 2023 HCI phenomenon has been heavily marked: most companies have a very small share of the IC, but stock prices have increased far beyond the base. Kawaniya RVI income is only 13% of total revenue, but the market is pricing "IR pure".
 
-### 偏误自查
+# I'm wrong to check myself
 
-- **叙事偏差**：市场将川润包装为"液冷+核电"双主线概念股，但实际仍是一家以风电润滑冷却为主业的亏损制造商
-- **锚定效应**：从6.80元涨到18.50元，投资者可能锚定低点觉得"已经涨了很多但还有空间"，忽视了绝对估值的荒谬性
-- **幸存者偏差**：市场关注液冷概念中涨幅最大的标的，但忽视了大量液冷概念股已经回落
+- ** Narrative deviation**: The market has used the Yakawa Rough Packaging as a two-line concept unit for "Liquid Cold + Nuclear Power", but it is still a loss manufacturer in wind-based cooling.
+- **Assort effect**: From 6.80 to 18.50, investors may have anchored lows that feel "a lot but still room" and ignore the absurdity of absolute valuations.
+- ** Survivors' deviation**: Market concern with the most elevated indicator of the liquefied cold concept, but neglecting a large amount of liquefied concept units has fallen
 
-### 芒格式追问：聪明人为什么不买这家公司？
+# Man format asks: Why don't smart people buy this company?
 
-1. **连续三年亏损**，2026Q1仍亏3088万——基本面不支撑当前估值
-2. **PB 6.15倍**对一家亏损制造商是荒谬的——这个估值水平适合高增长科技公司，不适合毛利率17%的工业企业
-3. **实控人在卖**——如果管理层都在套现，为什么外部投资者应该买入？
-4. **液冷收入仅2.25亿**——按5倍PS给液冷业务估11亿，剩余15亿收入的传统业务值78亿吗？绝对不值
-5. **融资余额5亿+**——杠杆资金深度介入，一旦情绪逆转可能踩踏
+** Three consecutive years of loss**, 2026Q1 still loses 30.8 million - fundamentals do not support the current valuation
+**PB 6.15 times** is absurd to a loss manufacturer - this valuation level is appropriate for high-growth technology companies and for industrial enterprises with a Māori rate of 17%
+** The realist** — if management is sourcing, why should external investors buy it?
+** R.I. income is only 225 million ** - estimated at 1.1 billion for 5 times PS for I.S., with the remaining 1.5 billion income worth $7.8 billion in traditional business?
+** 500 million +** financing balance — leveraged funds are deeply involved and may be stepped on once emotional reversals occur
 
-**评分：★★（2/5）— 风险远大于机会，多个致命路径并存**
+** Rating: <unk> (2) - Risks are much greater than opportunity, multiple fatal paths coexist**
 
 ---
 
-## 四、管理层评估 — 段永平"对的人" + 巴菲特"管理层诚信"
+# Four, management assessment - "The Right Man" # "Management Integrity"
 
-### 实控人与管理层
+# Realistic and management
 
-| 人物 | 角色 | 持股 | 关键行为 |
+The key behaviors.
 |------|------|------|---------|
-| 罗丽华 | 实控人 | 15.51% | **累计套现约6.36亿元**，2024年12月减持导致跌停 |
-| 钟利钢 | 实控人（罗丽华之夫） | 一致行动人 | — |
-| 罗永忠 | 董事长 | 5.42% | 1969年生，中欧EMBA |
-| 钟海晖 | 总经理 | — | 一致行动人 |
-| 一致行动人合计 | — | 29.46% | 家族控制 |
+♪ The ♪ The ♪ The ♪ The ♪ The ♪ ♪ The ♪ The ♪ ♪ The ♪ The ♪ The ♪ The ♪ ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The
+♪ The man who made the living ♪
+<unk> , President of the Board 5.42% <unk> , born 1969, Central Europe EMBA <unk>
+♪ The world's greatest ever ♪
+<unk> Total number of concerted actions <unk> 29.46% family control <unk>
 
-### 资本配置能力评估
+# # Capital allocation capacity assessment
 
-| 决策 | 时间 | 结果 | 评分 |
+♪ The time ♪
 |------|------|------|------|
-| 上市融资 | 2009年 | 主营业务持续，但盈利能力始终偏弱 | ★★★ |
-| 进入核电领域 | ~2015年 | 覆盖国内大部分核电站，方向正确 | ★★★★ |
-| 低位定增融资 | 2024年2月 | 定增约5017万股，增发价远低于后来股价 | ⚠️ |
-| 实控人高位减持 | 2024年12月 | 套现6.36亿，减持导致跌停，严重损害股东信任 | ★ |
-| 高管减持 | 2024-2025年 | 李辉、缪银兵、饶红同期宣布减持 | ★ |
-| 拟定增9.5亿扩产液冷/储能 | 2025-2026年 | 方向合理，但在公司持续亏损时大规模融资值得商榷 | ★★ |
+<unk> Listed finance <unk> 2009 Main battalion business is ongoing but profit-making is still weak <unk>
+<unk> Into nuclear power, <unk> 2015 <unk> cover most nuclear power plants in the country, in the right direction <unk>
+<unk> Low-level fixed-level additional financing <unk> February 2024 <unk>
+The realist's high position is down, and in December 2024, 636 million dollars were set, and the loss of ownership caused a collapse and seriously damaged the shareholder's trust.
+The executives have reduced their power, and the government has announced a reduction in their power in the same period.
+<unk> Proposed 950 million additional IC/Service Energy 2025-2026.
 
-### 核心治理问题："低位定增→高位减持"
+# Core governance issue: "Deficit growth and high retention"
 
-2024年2月低位定增融资→2024年底实控人高位减持套现6.36亿元。这个操作序列虽然在法律上合规，但从股东利益一致性角度看是**严重的负面信号**。
+The low-level financing in February 2024 reduced the amount of $636 million by the end of 2024. This sequence, while legally compliant, is a serious negative sign from the point of view of shareholder coherence**.
 
-**巴菲特的标准**：管理层是否像对待自己的钱一样对待股东的钱？答案显然是否定的。
+** Barfitt's criteria**: Does management treat shareholders' money like they do their own? The answer is clearly negative.
 
-### 薪酬合理性
+# Justified pay
 
-总经理薪酬100万、副总60-67万，在A股同体量公司中属于中等偏低。薪酬本身不是问题，问题在于减持套现远超薪酬收入。
+The general manager’s remuneration is 1 million and the deputy total is 600,000-670,000, which is medium low in the A-share companies. Remuneration is not a problem per se, but rather a reduction in the income from the set-up far exceeding the pay.
 
-### 段永平式追问：如果CEO退休，这家公司还能保持竞争力吗？
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-川润是一家家族控制的工业企业，核心竞争力来自长期积累的技术和客户关系，而非某个人的个人能力。如果管理层换人，公司不会崩溃，但也不会变好——因为竞争优势本就有限。
+Kawayun is a family-controlled industrial enterprise whose core competitiveness derives from long-standing technological and customer relationships, rather than from the personal abilities of one person. If management changes, the company will not collapse, but will not become better – because competitive advantages would otherwise be limited.
 
-**评分：★★（2/5）— 实控人大额减持是严重的治理红旗，利益不一致**
+** Rating: <unk> (2) - The substantial reduction in the control of the owner is a serious red flag of governance with inconsistent interests**
 
 ---
 
-## 五、行业与文明趋势 — 李录"文明演进框架"
+# V. Trends in industry and civilization - Lee Siu 'A framework for civilization evolution
 
-### 核电：确定性最高的增量
+# Nuclear power: the highest degree of certainty
 
-| 指标 | 数据 |
+Indicators Data
 |------|------|
-| 2022-2025年年均核准 | ≥10台/年，已形成常态化 |
-| 在运装机 | 6,083万千瓦（58台），世界第三 |
-| 在建装机 | 4,190万千瓦（35台），全球第一 |
-| 合计（运+建+核准） | 1.13亿千瓦（102台），**世界第一** |
-| 2030年目标 | 在运~1.2亿千瓦 |
-| 核电设备市场 | ~546亿元/年 |
+<unk> Approved annually 2022-2025 <unk> 10 per year, regularized <unk>
+<unk> In the loading aircraft <unk> 60,83 thousand kW (58 units), third world <unk>
+<unk> Construction of a machine 41.9 million kW (35 units), the world's first <unk>
+Total (M + construction + approval) <unk> 113 million kW (102 units),** the world's first**
+Target 2030.
+<unk> Market for nuclear power equipment ~ 54.6 billion yuan/year <unk>
 
-核电是中国能源转型中确定性最高的方向之一——"双碳"目标+能源安全+技术成熟。但川润在核电中的定位是**辅助系统供应商**（润滑冷却），不是核岛主设备商，能分到的蛋糕有限。
+Nuclear power is one of the most definitive directions in China’s energy transition – the goal of “double carbon” + energy security + technological maturity. But Kawan’s positioning in nuclear power is ** the provider of auxiliary systems (lubber cooling), not the nuclear island masters, and limited access to cakes.
 
-### 液冷：增速最快但竞争最激烈
+# Liquid cold: fastest increase but most competitive
 
-| 指标 | 数据 |
+Indicators Data
 |------|------|
-| 2024年中国液冷服务器市场 | 23.7亿美元（+67%） |
-| 2029年预测 | 162亿美元 |
+China ' s liquid cold server market 2024
+<unk> 2029 projection $16.2 billion <unk>
 | CAGR（2024-2029） | 46.8% |
 
-液冷是AI算力爆发带来的"文明级"基础设施需求——这一点毫无疑问。但问题在于：**好行业≠好公司**。液冷赛道的竞争者包括英维克（市占率50%+）、高澜股份、中科曙光（曙光数创）等，川润作为后进入者，收入仅2.25亿，在一个未来可能达千亿级的市场中占比微不足道。
+Liquid cold is the "civilizational" infrastructure demand that the AI calculates -- and that is beyond doubt. But the problem is:** good industry is good companies.** The competitors in the ICL are the British Vic (a 50% +), the high-value shares, the Chinese Qing’s (a dawn) etc., and Kawayun, as a post-entry, earns only 225 million, representing a negligible share of a market that may reach hundreds of millions in the future.
 
-### 风电：存量市场，增长趋缓
+# Wind: stock market, growth is slowing
 
-川润的基本盘——风电润滑冷却——受益于全球风电装机增长，但增速已趋缓。川润在风电润滑冷却全球市占率约30-35%（据公司自述），是细分龙头，但赛道天花板有限。
+The base plate of Kawayu — wind-sliding cooling — benefits from the growth of global wind power installed, but the rate of increase has slowed. Kawayu has a global market rate of about 30-35% (as reported by the company) of wind-sliding cooling, which is a disaggregated tap, but limited track ceiling.
 
-### 川润在产业价值链中的位置
+# Where Kawakawa is in the industrial value chain
 
-川润处于产业链的**辅助设备/配套环节**——不是核心设备（如核岛反应堆、风电整机），也不是终端应用（如发电运营）。这个位置的特点是：
-- 进入门槛中等（有资质壁垒但技术门槛不高）
-- 议价能力弱（下游是大型央企/龙头企业）
-- 价值量有限（在总投资中占比小）
+**Auxiliary equipment/packages** - not core equipment (e.g., nuclear island reactor, wind engine) or end-use (e.g. power generation operation) in the industrial chain.
+- Medium entry threshold (qualified barriers but not high technical threshold)
+- Weak bargaining power (downstream, large-scale corporations/lead companies)
+- Limited value (lower than total investment)
 
-### 李录式追问：20年后回看，这家公司是"标准石油"还是"3Com"？
+# Lee asks: 20 years later, is this company Standard Oil or 3Com?
 
-**两者都不是。** 川润更可能是一家普通的工业配套企业——不会消失，但也不会成为伟大公司。核电和液冷的增长会带来一定增量，但川润在产业链中的位置决定了它无法捕获大部分价值。
+** Neither.** Kawayun is more likely to be a common industrial company -- not disappearing, but not becoming a great company. The growth of nuclear power and liquid cold will bring a certain amount of increase, but Kawayun’s location in the industrial chain determines that it cannot capture most of its value.
 
-**评分：★★★（3/5）— 行业方向正确（核电+液冷），但川润在价值链中的位置决定了它只能分到有限的蛋糕**
+** Rating: <unk> (3/5) - Industry is in the right direction (nuclear power plus liquid cold), but Kawayun's position in the value chain determines that it can only be divided into a limited number of cakes**
 
 ---
 
-## 六、估值与安全边际 — 巴菲特"内在价值" + 段永平"对的价格"
+# Six, valuation and security margin - Barfitt's "inner value" # # # and the price of the "right"
 
-### 当前估值指标（经工具验算）
+## Current valuation indicator (tooled)
 
-| 指标 | 数据 | 说明 |
+Indicators Data Description
 |------|------|------|
-| 股价 | 18.50元 | 2026年6月 |
-| 市值 | 89.7亿元 | ✅ 验算通过（18.5×4.85亿股） |
-| PE（TTM） | **负值（亏损）** | 连续三年亏损，PE不适用 |
-| PB | **6.15倍** | ✅ 验算通过（18.5/3.01） |
-| PS | **5.13倍** | 89.7亿/17.5亿 |
-| PE（2026E） | **~132倍** | 基于国海证券预测EPS 0.14元 |
-| PE（2027E） | **~71倍** | 基于国海证券预测EPS 0.26元 |
+The price of the stock is $18.50.
+(c) The amount of the total value of the goods is estimated at US$ 89.70 million;
+<unk> PE(TTM)<unk> Negative (deficit)** Loss for three consecutive years
+<unk> PB<unk> 6.15 times** <unk> <unk> <unk> <unk> <unk> 18.5/3.01) <unk>
+<unk> PS <unk> 5.13 times ** <unk> 89.70 billion/1750 billion <unk>
+<unk> PE(2026E)<unk> <unk> 132 times** <unk> based on the forecasts of national sea-based securities €0.14
+<unk> PE(2027E)<unk> ~71 times** <unk> based on the forecasts of national sea-based securities EPS 0.26
 
-### 估值的荒谬性检验
+# The absurdity of valuation
 
-| 对比对象 | 市值 | PE | PB | PS | 毛利率 | 净利润率 |
+<unk> Ratio of objects to market value <unk> PE<unk> PB<unk> PS <unk> Māori rate <unk> net profit rate <unk>
 |---------|------|-----|-----|-----|--------|---------|
-| **川润股份** | **89.7亿** | **亏损** | **6.15** | **5.13** | **18%** | **亏损** |
-| 恒立液压（液压龙头） | ~700亿 | ~25x | ~4x | ~7x | 33% | 20% |
-| 英维克（液冷龙头） | ~170亿 | ~45x | ~6x | ~5x | 30% | 10% |
-| 高澜股份（液冷对手） | ~80亿 | ~60x | ~4x | ~6x | 25% | 5% |
+**Secretization** **Secures** **Sustain** ** 6.15 **Secure**Scope **Scope **Screen**Successful **Successful **Successful **Successful **Successful **Successful **Successful **Successful **Success **Survey**
+<unk> 70 billion ~ 25 x 25 x 4 x 7 x 33% ~ 20% ~ 20% ~ 20% ~
+<unk> 17 billion ~ 45 x 6 x 5 x 30% ~ 10% ~ 10% ~
+♪ 8 billion ♪ 60 x 4 x 6 x 25% ♪ 5% ♪ 5 ♪ 5 ♪ 5 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1 ♪ 1
 
-川润的PB 6.15倍与英维克（液冷龙头、毛利率30%、已盈利）相当，但川润毛利率仅18%且仍在亏损。**市场在用龙头公司的估值给一家亏损配套企业定价。**
+The PB 6.15 times more than the British Victile (Little Cold Dragon, 30% Māori, Profit), but only 18% and still in loss.** The market is pricing a loss-backed company using the Länder valuation.**
 
-### 三情景估值（经工具精确计算）
+#3 scenario valuation (measured with precision by tools)
 
-基于国海证券2026E EPS 0.14元，三年预测：
+Based on the national maritime securities of $2026E EPS 0.14, three-year projections are:
 
-| 情景 | 年增速 | 目标PE | 2029E EPS | 目标股价 | vs当前 |
+<unk> Situations, annual rate of increase, target PE <unk> 2029E EPS <unk> Target share price
 |------|--------|--------|----------|---------|--------|
-| 乐观 | 40% | 60x | 0.38元 | 23.0元 | **+24.6%** |
-| 中性 | 25% | 40x | 0.27元 | 10.9元 | **-40.9%** |
-| 悲观 | 10% | 25x | 0.19元 | 4.7元 | **-74.8%** |
+<unk> 40% <unk> 60x <unk> 0.38 <unk> 23.0 <unk> <unk> 24.6%** <unk>
+<unk> Neutral 25% <unk> 40x <unk> 0.27 <unk> 10.9 <unk> **-40.9%** <unk>
+<unk> Pessimism 10% <unk> 25x <unk> 0.19 <unk> 4.7 <unk> **-74.8%** <unk>
 
-**核心发现**：即使在最乐观的假设下（40%盈利增速+60倍PE），三年后的目标价仅23元，上行空间仅25%。而中性和悲观情景下，下行幅度高达41%-75%。**风险/回报比极不对称——下行远大于上行。**
+** Core findings**: Even under the most optimistic scenario (40 per cent profit growth + 60 times PE), the target price after three years is only $23 and upspace is only 25 per cent. In neutral and pessimistic scenarios, downs are as high as 41 per cent-75 per cent.** Risks/returns are highly asymmetrical - downs are much greater than ups.**
 
-### 反向DCF：当前股价隐含了什么？
+# Inverse DCF: What does the current stock price imply?
 
-当前89.7亿市值，扣除净资产约14.6亿（3.01元×4.85亿股），市场给川润的无形资产/增长溢价约75亿元。
+The market value of the current $8.97 billion, net of net assets of approximately $1.46 billion ($301 x 485 million shares), is estimated at $7.5 billion for the market value of the intangible assets/growth of Kawayun.
 
-要让75亿元的增长溢价合理化，川润需要在未来5年内达到年净利润3-4亿元（假设15倍PE）。对比2025年亏损2491万→2026E盈利6800万（国海证券预测），从亏损到年利润3-4亿的跨越需要收入翻倍+净利润率从-1.4%提升至10%以上。
+To rationalize the $7.5 billion growth premium, Kawachi would need to reach a net annual profit of $300-4 billion over the next five years (assuming 15 times the PE). Compared with the loss of 2,491,600.026E in 2025, which is a profit of 68 million (State-owned securities forecast), the cross-over income doubling from the loss to the annual profit of $300-4 billion + net profit rate would have increased from -1.4 per cent to over 10 per cent.
 
-**这意味着当前股价隐含了极度乐观的假设：液冷业务爆发性增长+核电订单大幅增加+毛利率显著提升。任何一个假设未能兑现，估值都将大幅回调。**
+** This means that the current stock price implies a very optimistic assumption: the surge in liquid cold operations + the significant increase in nuclear power orders + the significant increase in the Maori rate. Any assumption that is not met will be revalued substantially.**
 
-### 合理估值区间
+# Rational valuation range
 
-| 方法 | 估值 | 逻辑 |
+<unk> Methodology <unk> Valuation <unk> Logic <unk>
 |------|------|------|
-| PB合理值（2.5-3倍） | 36-44亿 → 7.4-9.1元 | 亏损制造商合理PB区间 |
-| PS合理值（2-3倍） | 35-53亿 → 7.2-10.9元 | 工业制造业合理PS区间 |
-| 2027E PE（30-40倍） | 38-50亿 → 7.8-10.3元 | 基于国海证券2027E EPS 0.26元 |
-| **综合合理区间** | **7-11元** | **当前价格高出70-160%** |
+<unk> PB reasonable value (2.5-3 times) <unk> 36-44 billion <unk> 7.4-9.1 dollars <unk>
+(b) The average value of the manufacturing industry is 2.5 to 5 billion yuan.
+2027E PE (30-40 times) 38-50 billion $7.8-10.3 <unk> Based on national sea securities $2027E EPS 0.26 <unk>
+** Integrated reasonable area** ** $7-11 ** ** current prices are 70-160% higher** **
 
-### 段永平式追问：如果股市明天关闭5年，你愿意以18.5元持有吗？
+# # # Queue the Eternity: If the stock market closes for five years tomorrow, will you hold it for $18.5?
 
-**绝对不愿意。** 一家连续三年亏损、毛利率17%、实控人在减持的工业配套企业，即使液冷和核电的增长叙事全部兑现，5年后的合理估值也难以支撑当前价格。以18.5元买入，你需要所有乐观假设同时成立才能不亏钱——这不是投资，是投机。
+** Absolutely not.** A three-year-long industry-backed industry-backed business with a 17% Māori ratio, and a controlled company, even if the narratives of the growth of liquid cold and nuclear power are fully realized, would not support the current price. Five years later, a reasonable valuation would be difficult.
 
-**评分：★（1/5）— 严重高估，当前价格透支了所有乐观预期**
+** Rating: <unk> (1/5) - gross overestimation, with current prices overstretched all optimistic expectations**
 
 ---
 
-## 七、综合决策备忘录
+# VII. Memorandums for integrated decision-making
 
-### 六维评估表
+# Six-dimensional assessment table
 
-| 维度 | 结论 | 评分 | 信心度 |
+♪ The way you're going ♪
 |------|------|------|--------|
-| 生意质量（段永平） | 低毛利、强周期、项目制工业品，不是好生意 | ★★ | 高 |
-| 护城河（巴菲特） | 窄护城河，主要靠资质准入 | ★★ | 高 |
-| 管理层（段永平+巴菲特） | 实控人大额减持，利益严重不一致 | ★★ | 高 |
-| 最大风险（芒格） | 液冷不及预期+实控人减持+持续亏损 | ★★ | 高 |
-| 文明趋势（李录） | 行业方向对（核电+液冷），但川润位置有限 | ★★★ | 中 |
-| 估值（巴菲特+段永平） | PB 6.15x对亏损制造商严重高估 | ★ | 高 |
+♪ The quality of business ♪
+The moats are narrow, but they're mostly qualified to access the mounds.
+<unk> Management (Yongping + Buffett) <unk> Realist has suffered a significant reduction in ownership and a serious inconsistency of interests <unk>
+<unk> Maximum risk (Munge) <unk> Liquid cooler than expected + realist reduction + ongoing loss <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The industry is in the direction of the industry, but the position of the river is limited.
+<unk> Valuation (Buffett+Ping) <unk> PB 6.15x seriously overestimated the deficit manufacturer <unk> high
 
-**综合评分：1.8★ / 5★**
+** Combined rating: 1.8 / 5 **
 
-### 最终决策表
+# Final decision sheet
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **回避。** 当前估值严重透支，风险/回报比极不对称。即使看好液冷和核电方向，也有更好的标的（英维克、高澜等）。等待估值回归至7-11元区间（PB 2.5-3倍）再考虑。 |
-| **持仓者** | **减仓至清仓。** 股价从6.80元涨至18.50元已实现172%涨幅，当前估值无安全边际。实控人都在卖，散户不应比实控人更有信心。 |
-| **卖出信号** | 实控人继续减持公告；2026H1液冷订单低于预期；连续两季度经营现金流为负；融资余额继续攀升（杠杆踩踏风险） |
-| **加仓信号** | 股价回落至8-10元（PB ~3倍）；液冷订单超过5亿/年；连续两个季度盈利；实控人停止减持并增持 |
+<unk> empty warehouser**<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> ** ** ** ** The current valuation is heavily overstretched, with risks/returns being asymmetrical. Even if you look at the direction of liquid cold and nuclear power, there are better targets (Evik, Takashi, etc.).
+** The owner** The owner** The owner** The owner of the warehouse** The stock price increased from $6.80 to $18.50, which has already increased by 172%, and the current valuation is safe.
+<unk> **Sale signal** <unk> Control continues to reduce the bulletin; 2026H1 liquid cold orders are lower than expected; operating cash flows are negative for two consecutive quarters; financing balances continue to climb (leveraging risk) <unk>
+<unk> **Step signal** <unk> Stock price down to $8-10 (PB ~ 3 times); liquid cold orders over 500 million/year; two consecutive quarters of profit; real-time control stopped and increased ownership
 
-### 四位大师模拟点评
+# Four masters simulated the reviews
 
-> **巴菲特**："一家连续三年亏损、毛利率17%的工业配套企业，PB估值6倍——这不是投资，这是在赌场。好的行业趋势不等于好的投资机会，尤其当价格已经把所有好消息都定价了的时候。我会把这只股票放进'太难'的篮子里。"
+> **Buffett**: "A three-year-long industrial support with a Māori rate of 17%, PB values six times -- not investment, in casinos. Good industry trends are not good investment opportunities, especially when prices are priced with all the good news. I'll put this stock in the 'too hard' basket."
 
-> **芒格**："反过来想——实控人在公司亏损时大举减持，这告诉你什么？她对公司的未来比市场更悲观，或者她认为当前股价已经超过了公司的内在价值。无论哪种情况，外部投资者都不应该比内部人更乐观。"
+> ** Manger**: "Cut back to thinking -- the realist is losing a lot of weight in the company, what does that tell you? She's more pessimistic about the company's future than the market, or she thinks the current stock price is already out of value. In either case, external investors should not be more optimistic than insiders."
 
-> **段永平**："我不投资没有定价权的制造企业。17%的毛利率意味着这家公司是在给客户打工。好的生意应该让客户愿意支付溢价，而不是靠报价最低来赢单。液冷概念很热，但热门≠好生意。"
+> **Ping Yongping**: "I don't invest in manufacturing enterprises without pricing rights. 17% of the Māori rate means that the company is working for its customers. Good business should make customers willing to pay premiums, not win by making the lowest price. The lubricant concept is hot, but the business is popular."
 
-> **李录**："核电和液冷确实是文明进步带来的长期机会，这一点我不否认。但投资的关键不是找对行业，而是找到能在行业中持久赢得超额回报的公司。川润在产业链中的位置——辅助系统配套商——决定了它分不到太多蛋糕。而且，以这个价格买入，即使行业判断正确，回报也可能令人失望。"
-
----
-
-## AI分析置信度 vs 投资确定性
-
-### 基于充分数据的结论（置信度高）：
-- 公司连续三年亏损，2025年亏损收窄但未盈利 → 事实
-- 综合毛利率17-18%，在工业制造中无突出竞争力 → 事实
-- 实控人累计套现约6.36亿元 → 事实
-- 当前PB 6.15倍、PS 5.13倍对于亏损制造商偏高 → 高置信度判断
-- 三情景估值即使乐观假设上行仅25%，下行41-75% → 工具验算结果
-
-### 基于有限信息的推理（置信度中等）：
-- 液冷业务的真实市场份额和华为合作深度 → 仅有公司单方面表述
-- 核电业务的订单金额和利润贡献 → 未单独披露
-- 2026年能否实现盈利 → 仅1家券商预测，无交叉验证
-
-### 关键区分：AI分析置信度 ≠ 投资确定性
-
-本报告的AI分析置信度是**中等**（B级信息，数据有限），但投资确定性的判断却是**较高**——不是因为我们对公司了解得足够深，而是因为：
-
-**当一家亏损公司的PB达到6倍时，你不需要深入了解它的每一个细节就能判断估值过高。** 这就像你不需要知道一个人的精确体重就能判断他是否超重——当偏离合理范围足够远时，精确数据反而不重要了。
+> **Lisu**: "Nuclectic power and liquid cold are indeed long-term opportunities for civilizational progress, and I do not deny it. But the key to investment is not to find the right industry, but to find companies that can sustain excess returns in industry. Kawayun's position in the industrial chain, the auxiliary system provider, does not divide much of the cake. And, buying it at this price, even if the industry is right, the return may be disappointing."
 
 ---
 
-## 关键数据交叉验证记录
+# AI analyze confidence vs investment certainty
+
+# # Conclusion based on sufficient data (high confidence):
+- The company lost three years in a row, with a narrow but unprofitable loss in 2025.
+- Combined Māori rate of 17-18%, with no significant competitiveness in industrial manufacturing
+- The realist has accumulated about 636 million yuan.
+- Current PB 6.15 times, PS 5.13 times higher than the deficit manufacturer's high confidence judgement
+- Three scenario estimates, even if the optimistic assumption is only 25% up, down line 41-75% <unk> Tool results
+
+# Logic based on limited information (medium confidence):
+- The real market share and the Chinese share of liquid cold business is the depth of cooperation — only the company's unilateral statements.
+- The amount of the order and profit contribution of the nuclear power business * not separately disclosed
+- Will it be profitable in 2026 <unk> Only one voucherer forecast without cross-checking
+
+# Key distinction: AI analyzes confidence #
+
+The AI analysis of this report is confident ** medium** (B level information, limited data), but the investment certainty judgement is high ** ** ** not because we know the company well enough, but because:
+
+** When a loss company reaches six times its PB, you do not need to know every detail to judge overvaluation.** This is like you don’t need to know a person’s exact weight to judge whether he is overweight – and when the deviation is far enough, the exact data is irrelevant.
+
+---
+
+# Cross-checking records for key data
 
 ```
-市值验算：18.5元 × 4.85亿股 = 89.72亿元 ≈ 报告89.70亿 ✅（偏差0.03%）
-PB验算：18.5 / 3.01 = 6.15倍 ✅
-PS验算：89.7 / 17.50 = 5.13倍 ✅
-PE验算：18.5 / -0.0514 = -359.92倍（亏损，不适用）✅
-2025年营收交叉验证：年报17.50亿 = 证券时报17.50亿 ✅（偏差0%）
-三情景估值：乐观+24.6% / 中性-40.9% / 悲观-74.8% ✅（工具精确计算）
+Market value measurement: $18.5 million x 485 million shares = $8,972 million <unk> Report: $8,970 million <unk> (a deviation of 0.03 per cent)
+PB calculation: 18.5 / 3.01 = 6.15 times
+PS calculation: 89.7 / 17.50 = 5.13 times <unk>
+PE calculation: 18.5 / - 0.0514 = -359.92 (deficit, not applicable)
+Cross-checking of revenue received in 2025: 1.750 billion annual reports = 1.750 billion securities time papers (0 per cent deviation)
+Three scenario valuations: optimistic +24.6% / neutral - 40.9% / pessimistic - 74.8% <unk> (tool accurate)
 ```
 
 ---
 
-**数据来源**：川润股份2024年报、2025年报（2026年4月披露）、2026Q1季报、国海证券研报（2026年3月）、证券时报、中证网、同花顺数据
+** Data sources: Kawayun Shares 2024, 2025 (disclosed April 2026), 2026Q1, State Securities Research (March 2026), Securities Times, China Network, Homolu Data

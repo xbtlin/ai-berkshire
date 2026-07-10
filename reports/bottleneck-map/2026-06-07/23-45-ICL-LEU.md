@@ -1,153 +1,153 @@
-# 瓶颈猎手 — 2026-06-07 23:45
+# Bottleneck hunters — 2026-06-07 23:45
 
-## 明确标的
+# Clear mark
 
 ---
 
-### ICL Group（NYSE: ICL）— 溴：DRAM供应链的隐形咽喉
+#ICL Group (NYSE: ICL) - Bromine: the invisible throat of the DRAM supply chain
 
-**⚠️ 历史排除注记**：master-map 2026-05-26 已明确将 ICL 排除出观察名单候选，理由是"溴化物仅占总收入17.3%，不达30%纯正度门槛"。以下重新评估基于**5/26后的新发展**——伊朗导弹已明确打击内盖夫地区（距ICL Dead Sea设施35km），属于5/26时尚未出现的新事实。
+** History exclusion note**: master-map 2026-05-26 has clearly excluded ICL from the list of candidates for observation on the grounds that "Bbrominated substances represent only 17.3% of total revenue, not below the 30% pure positive threshold". The following reassessment is based on new developments after **5/26** - Iranian missiles have clearly struck the Negev region (35km from the ICL Dead Sea facility) and is a new fact that has not yet occurred at 5/26.
 
-**为什么现在值得重新考虑**：伊朗战争已升级至直接打击内盖夫（ICL死海提取/转化设施所在地），而韩国97.5%的溴进口来自以色列，溴→HBr（氢溴酸）是DRAM和NAND蚀刻的不可替代消耗品。溴价格已升至$12,000/MT（接近正常水平的两倍），ICL是全球唯一覆盖Dead Sea溴提取+转化的大规模上市公司，且估值合理（PS 1.06x）。23:00前的所有扫描均未覆盖此新角度。
+** Why it is worth reconsidering**: Iran’s war has escalated to directly hit Negev (where ICL Dead Sea extraction/conversion facilities are located), while 97.5% of the country’s bromine imports are from Israel, and bromobr (hydrobromic acid) is an irreplaceable consumer for DRAM and NAND etching. The price of bromine has risen to $120/MT (nearly twice the normal level), and ICL is the only large-scale listed company worldwide that covers the transformation of Dead Sea bromine + and is reasonably valued (PS 1.06x).
 
-**注**：由于溴业务占收入仅17.5%（低于30%纯正度门槛），ICL为**半纯正标的**——不符合深入研究标准，但地缘风险升级使其值得进入观察名单跟踪。
+**Note **: ICL is ** semi-pure ** - does not meet the criteria for in-depth study, but geo-risk escalation makes it worthwhile to enter the watch list, as bromine accounts for only 17.5% of income (below the 30% pure positive threshold).
 
-**瓶颈定位**：Layer 3，溴/HBr特气，瓶颈评级 **S级**（单点故障级）
+** Bottleneck Positioning**: Layer 3, Bromine/HBret, Bottleneck Rating **S Level** (single point failure level)
 
-| 瓶颈判定标准 | 评估 | 得分 |
+<unk> Incidence determination criteria <unk> Evaluation <unk> Score <unk>
 |------------|------|------|
-| 供给集中度 | 以色列+约旦占全球产量2/3，ICL一家控制约40% | 🔴 ≤2家主要来源 |
-| 扩产周期 | Dead Sea溴提取需要新许可+设施，建设周期3-5年 | 🔴 >2年 |
-| 替代难度 | 先进DRAM节点无氯基替代；HBr在多晶硅刻蚀无法绕过 | 🔴 不可替代 |
-| 产能利用率 | 伊朗战争威胁下产能利用率承压；韩国厂存货仅2-3周 | 🔴 高度紧张 |
-| 需求增速 | AI/DRAM需求持续高速增长，记忆芯片需求刚性 | 🔴 >50%/年（AI驱动） |
-| 客户验证周期 | 半导体级HBr认证周期>12个月 | 🔴 >1年 |
+<unk> Supply concentration <unk> Israel + Jordan accounts for 2/3 of global production, and ICL families control about 40% <unk> 2 major sources <unk>
+<unk> Extension cycle <unk> Dead Sea bromine extraction requires new licences plus facilities, construction cycles 3-5 years > 2 years >
+<unk> <unk> <unk> advanced DRAM node with no chlor-based replacement; HBr cannot bypass silicon etchings in multi-crystal silicon
+Production capacity utilization is under pressure under threat of Iran war; Korea factory stock is only 2-3 weeks old.
+<unk> Demand acceleration AI/DRAM demand continues to grow at a high rate, memory chip demand is rigid > 50%/year (AI-driven) <unk>
+<unk> Client validation cycle <unk> Semiconductor-level HBr certification cycle > 12 months <unk> 1 year >
 
-**瓶颈评级：S级（6/6红灯）** — 单点故障级
+** Bottleneck rating: S level (6/6 red light)** — single point failure level
 
-**财务快照**：
-| 指标 | 数值 | 来源 | 信号灯 |
+** Financial snapshot**:
+<unk> Indicators <unk> Value <unk> Source <unk> Signal light <unk>
 |------|------|------|-------|
-| 市值 | $8.57B USD | companiesmarketcap.com | — |
-| 2025年收入 | $7.15B USD | BusinessWire 2026-02-17 | — |
-| Q1 2026收入 | $2.02B USD（YoY +14%） | TipRanks Q1 2026 | — |
-| 年化PS | $8.57B / $8.08B = **1.06x** | 计算值 | 🟢 绿灯 |
-| 尾随PE | 29.41x | StockAnalysis | 🟡 黄灯 |
-| 前瞻PE | **13.21x** | StockAnalysis | 🟢 绿灯 |
-| EV/EBITDA | 7.31x | StockAnalysis | 🟢 绿灯 |
-| 全年EBITDA指引 | $1.5B–$1.7B（上调） | ICL Q1 2026 IR | — |
-| Industrial Products收入（2025） | $1,254M（占总收入约17.5%） | ICL 6-K | — |
+Market value $8.57B USD <unk> companiesmarketcap.com<unk>
+<unk> Income in 2025 <unk> $7.15B USD<unk> BusinessWire 2026-02-17 <unk>
+<unk> 1 2026 income <unk> 2.02B USD (Yoy + 14%) <unk> TipRinks Q1 2026 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Annual PS <unk> $8.57B / $8.08B = **1.06x** <unk> calculation value <unk> green light <unk>
+♪ The ♪ ♪ The ♪ ♪ The ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the the the the ♪ the the ♪ the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the
+♪ The world's greatest ♪
+<unk> EV/EBITDA <unk> 7.31x<unk> StockAnalysis <unk> Green light <unk>
+<unk> EBITDA year-round guide $1.5B–$1.7B (upward) <unk> ICL Q1 2026 IR <unk>
+Income (2025) $1,254M (about 17.5% of total income)
 
-**估值检查**：🟢 绿灯（无红灯触发条件）
-- PS 1.06x：远低于30x红线
-- 前瞻PE 13.21x：低于80x黄线
-- 市值 $8.57B vs ICL全业务TAM（钾肥+磷肥+溴+特种）：TAM远超$8.57B，未触发"市值>TAM 20%"红线
+** Valuation inspection**: <unk> Green light (red-free light trigger)
+- PS 1.06x: well below 30x red wire
+- Foreground PE 13.21x: below 80xYellow Line
+- Market value $8.57B vs ICL full operations Tam (potassium + phosphorus + bromine + special): Tam is well over $8.57B and does not trigger "market value" > Tam 20% red line
 
-**估值安全边际检验（10年25xPE退出法）**：
-- 当前市值：$8.57B
-- 10%年化回报需10年后市值：$8.57B × 2.5937 = **$22.2B**
-- 需要净利润：$22.2B / 25 = **$888M**
-- 参考：2026年EBITDA中值$1.6B，假设净利润转化率60% → 约$960M
-- 即：**若2026年盈利水平维持10年，已满足10%年化门槛**
-- 结论：**当前价格具备基本安全边际**（注：EBITDA to净利润转化率为估计，实际受税率/折旧影响）
+** Valuation security margin test (ten years 25 x PE exit method)**:
+- Current market value: $8.57B
+- 10% annualized return takes 10 years to market value: $8.57B x 2.5937 = $22.2B**
+- Net profit required: $22.2B / 25 = ** $888M**
+- Reference: Middle value of EBITDA, 2026 $1.6B, assuming a net profit conversion rate of 60% <unk> approximately $960M
+- i.e. ** if the profit level is maintained for 10 years in 2026, the 10% annualization threshold has been met**
+- Conclusion: ** Current prices have a basic security margin** (Note: EBITDA to net profit conversion rate estimated, actual affected by tax/depreciation)
 
-**看多逻辑**：
-1. **地理垄断+不可替代**：Dead Sea溴是全球最具成本优势的来源地，ICL为最大提取商；无替代技术在先进DRAM节点中取代HBr，韩国97.5%依赖度短期无法改变
-2. **溴价格仍在上行通道**：伊朗战争未结束，导弹仍在威胁内盖夫，供应风险溢价未消退；$12,000/MT溴价直接提升ICL盈利能力（Industrial Products毛利率扩张）
-3. **估值合理**：PS 1.06x、前瞻PE 13.21x在大宗化工股中处于合理偏低区间，未定价地缘风险溢价
+** See how logical **:
+1. ** Geographic Monopoly+In altresability**: Dead Sea bromine is the most cost-effective source of global benefits, with ICL the largest extractor; no alternative technology replaces HBL in advanced DRAM nodes, and Korea ' s 97.5% dependency is not changed in the short term
+** Bromine prices are still on the way**: the Iranian war is not over, missiles are still threatening Negev, supply risk premiums are not lost; $120/MT bromine directly increases ICL profitability (Industrial Products Māori spread)
+3. ** Rationale: PS 1.06x, forward-looking PE 13.21x is in a reasonably low range in the Big Broms Unit, without pricing geo-risk premium
 
-**看空逻辑**：
-1. **双刃剑风险**：伊朗导弹若直接命中ICL Dead Sea设施，产量中断会使ICL股价大幅下跌（而非上涨）——这是地缘风险的两面性，不是单边利多
-2. **溴仅占总收入17.5%**：暴露度稀释；钾肥和磷酸盐周期若转弱，可能抵消溴价格利好
-3. **以色列政治/战争风险**：上市地（特拉维夫证交所+NYSE ADR），战争升级可能触发估值折价
-4. **竞争格局变化**：约旦溴矿商（Jordan Bromine Company）可能填补部分缺口；中国溴化企业（如博汇化学）在海外半导体客户认证周期内影响有限但不可忽视
+**Exact logic**:
+** Double-edged sword risk**: If Iranian missiles hit ICL Dead Sea directly, the output disruption would result in a significant decrease (rather than an increase) in ICL share prices — a dichotomy of geo-risks, not a unilateral LSD
+2. ** Bromine only accounts for 17.5% of total income**: dilution of exposure; reduced potassium fertilizer and phosphate cycles may offset good bromine price
+3. **Israeli political/war risks**: Listed land (Tel Aviv SEC+NYSE ADR), war escalation may trigger valuation discounts
+4. ** Changes in competition patterns**: Jordan Bromine Company may fill some gaps; China Brominated Enterprises (e.g., Bodden Chemistry) have limited but not negligible impacts during the offshore semiconductor customer certification cycle
 
-**建议**：**加入观察名单 ★★（地缘风险溢价跟踪）**，纯正度不达标但地缘事件值得监控：
-- 关键事项：ICL Dead Sea设施距导弹打击点是否在安全范围内（35km是否太近？）
-- 溴业务在ICL分部利润（非收入）中的实际占比——若占利润30%+则可考虑升级
-- 近期催化剂：伊朗-以色列停火谈判进展；溴价格持续高位；ICL Q2 2026业绩
+** Recommendation**: ** Added to the watch list <unk> (geo-risk premium tracking)**. Pure orthodoxy but geo-related events warrant monitoring:
+- Critical matters: Is the ICL Dead Sea facility within security range from the missile strike point (35 km too close?)
+- Real share of bromine in ICL segment profits (non-income) - 30% of profits + could be considered for upgrading
+- Recent catalysts: Iran-Israel ceasefire negotiations progress; continuing high bromine prices; ICL Q2 2026 performance
 
 ---
 
-### Centrus Energy（NYSE: LEU）— $9亿DOE扩张任务订单：投资逻辑重大升级
+#Centrus Energy (NYSE:LEU) -- $900 million DOE extension task orders: significant upgrading of investment logic
 
-**为什么现在值得关注**：23:00扫描将LEU标为"★★★ 无变化"，但搜索发现2026年1月5日DOE已向Centrus子公司颁发**固定价格$9亿（加可选$1.7亿）Piketon扩张任务订单**，这是对既有投资论点的重大强化——之前的论点仅建立在Phase III（$1.1亿/年）合同续签上，而$9亿固定价格合同将整个叙事从"政府依赖型小公司"升级为"有长期锁定收入的核燃料垄断平台"。
+** The reasons for the concern are now: ** The 2300 scan marked the LEG as "no change", but the search found that on 5 January 2026 DOE had issued a fixed price of $900 million (with an optional $170 million) to Centrus subsidiary for the Piketon Extension Task Order** which was a significant reinforcement of the existing investment argument, which had previously been based only on the renewal of the Phase III ($110 million/year) contract, while the $900 million fixed price contract upgraded the narrative from "Government-dependent small companies" to "nuclear fuel monopoly platform with long-term locked revenues".
 
-**瓶颈定位**：Layer 3，HALEU铀浓缩（先进反应堆核燃料），瓶颈评级 **S级**
+** Bottleneck positioning**: Layer 3, HALLEU Enrichment (Advanced Reactor Nuclear Fuel), bottleneck rating**S Class**
 
-| 指标 | 数值 | 来源 | 信号灯 |
+<unk> Indicators <unk> Value <unk> Source <unk> Signal light <unk>
 |------|------|------|-------|
-| 股价（截至2026-06-06） | $161.01 | 搜索结果 | — |
-| 市值 | $3.18B USD | WallStreetZen | — |
-| Q1 2026收入 | $76.7M（YoY +5%） | StockTitan Q1 10-Q | — |
-| 全年2026指引收入 | $450M–$500M（中值$475M） | PRNewswire Q1 2026 | — |
-| PS（以2026指引中值） | $3.18B / $0.475B = **6.7x** | 计算值 | 🟡 黄灯（亏损期豁免，需说明） |
-| PE | 约估计（Q1 EPS $1.05 × 4 = ~$4.2年化；PE ~38x） | 计算值，估计 | 🟡 黄灯 |
-| 订单积压 | **$39亿（2040年）** | Centrus Q1 2026 | — |
-| 现金 | $18.7亿 | Q1 10-Q | — |
-| 长期债务 | $12.1亿 | Q1 10-Q | — |
-| 净现金 | 约$6.6亿净现金正 | 计算值 | 🟢 |
-| 2026-01-05 DOE扩张合同 | **$9亿固定价格（+可选$1.7亿）** | Centrus IR | — |
+<unk> Stock prices (up to 2026-06-06) $161.01 <unk> Search results <unk>
+Market value $3.18B USD <unk> WallStreetZen <unk>
+<unk> 1 2026 income <unk> $76.7M (Yoy+5%) <unk> StockTitan Q1 10-Quy<unk>
+<unk> 2026 year-round income <unk> $450 M– $500 M (median $475M) <unk> PRNewswire Q1 2026 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> PS (medium value in 2026) <unk> $3.18B / $0.475B = **6.7x** <unk> Calculated value <unk> yellow lamps (deficit period exemption, note) <unk>
+<unk> PE estimate (Q1 EPS $1.05 x 4 = $4.2 in years; PE ~ 38x) <unk> calculation value, estimated <unk> <unk> yellow light <unk>
+<unk> Order backlog ** $3.9 billion (2040)**
+Cash $1.87 billion
+Long-term debt $1.21 billion
+<unk> Net cash <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Contract for expansion of DOE **$90 million fixed price (+ $150 million optional) ** Centrus IR<unk>
 
-**估值黄灯说明**：PS 6.7x在核燃料垄断公司中属合理，原因：
-1. $3.9B订单积压覆盖至2040，相当于市值1.2倍——纯周转视角下不贵
-2. Piketon $9亿扩张由DOE固定价格合同支撑，资本风险大幅降低
-3. 净现金$6.6亿 = 市值的20.8%，实际EV约$2.52B，EV/订单积压 = 0.65x
+** Valuation yellow light note**: PS 6.7x is reasonable in the Nuclear Fuel Monopoly for:
+$3.9B backlog of orders covered to 2040, equivalent to 1.2 times the market value — not expensive under a purely liquidity perspective
+2. Piketon 900 million expansion is supported by a Doe fixed price contract, with a significant reduction in capital risk
+3. Net cash of $660 million = 20.8 per cent of market value, actual EV of approximately $252B, EVI/order backlog = 0.65 x
 
-**10年25xPE退出法**：
-- 市值$3.18B，10%年化回报需10年后净利润：$3.18B × 2.5937 / 25 = **$330M**
-- Piketon扩张第一期2029年投产，若2031年实现满产，收入可能达$8-10亿
-- 假设核燃料业务15%净利润率 → 净利润$120-150M（激进假设尚不足$330M）
-- 若考虑$900M固定价格合同（2026-2029建设期逐步确认）：年均约$220M/年额外收入在建设期部分确认
-- **结论：若Piketon扩张按期兑现，2031年前后年化回报可能接近10%，但有执行风险**。当前主要是"政策+垄断地位溢价"而非纯价值
+**10 years 25 xPE exits**:
+- Market value $3.18B, 10% annualized return net profit after 10 years: $3.18B x 2.5937/ = **$330M**
+- Piketon expanded first production in 2029, with revenue likely to reach $800-$10 billion if it reaches full production by 2031
+- Assuming a 15 per cent net profit margin for the nuclear fuel business $120-150M net profit (radical assumption is not $330M)
+- If the 900M fixed price contract (phased confirmation for the construction period 2026-2029) is considered: an average annual average of approximately $220M/year additional revenue is partially recognized during the construction period
+- ** Conclusion: if Piketon expands on schedule, the annualized return could be close to 10% around 2031, but there is a risk of implementation**. The current focus is mainly on "policy plus monopoly status premium" rather than pure value
 
-**为何23:00报告未反映$9亿合同**：
-- 23:00报告将LEU归类为"无变化 ★★★"，但$9亿DOE任务订单（2026-01-05）是对LEU论点的重大升级，影响远大于Phase III续签问题
-- 这不是新信号，而是已发生但未在当前扫描中充分权衡的重要事实
+**Why the 2300 report does not reflect $900 million in contracts**:
+-2300 Report classifies the LEG as "no change," but $900 million DOE task orders (2026-01-05) represent a major escalation of the LEG argument, which has much more impact than the Phase III renewal issue
+- This is not a new signal, but an important fact that has happened but is not fully weighed in the current scan.
 
-**近期催化剂**：
-- **2026-06-30（23天内）**：DOE Phase III到期，2年Phase IV选择权是否行使——这是已知的二元事件
-- **已执行**：$9亿Piketon固定价格合同（2026-01-05，已公告）
+**Recent catalyst**:
+- **2026-06-30 (23 days)**: DOE Phase III expired and whether the two-year Phase IV option was exercised - this is a known binary event
+- ** Implemented**: $900 million Piketon fixed price contract (2026-01-05, announced)
 
-**建议**：**升级至 ★★★★**，理由：
-1. $9亿固定价格DOE合同大幅降低执行风险
-2. $3.9B积压 / $6.6亿净现金 / PS 6.7x组合在垄断核燃料平台中不贵
-3. Phase IV选择权行使（23天内）提供近期催化剂
-4. 等Phase IV确认后可考虑执行 `/investment-research` 深入研究
+** Proposal**: ** Upgrade to <unk> , justification:
+1. A $900 million fixed price DOE contract significantly reduces implementation risk
+2. $3.9B backlog / $660 million net cash / PS 6.7x portfolio is not expensive in monopolistic nuclear fuel platforms
+3. Phase IV option exercise (within 23 days) to provide immediate catalyst
+4. The implementation of the in-depth study `/investment-research ' may be considered after the confirmation of the Phase IV
 
 ---
 
-## 其他信号（无明确新标的）
+# Other signals (no new target specified)
 
-| 环节 | 信号 | 来源 | 初步判断 |
+The first time I've been in the hospital, the second time I've been in the hospital, the second time I've been in the hospital, the second time I've been in the hospital, the second time I've been in the hospital.
 |------|------|------|---------|
-| **Showa Denko（日本）** | 已扩建高纯HBr产能并投产；是ICL溴的下游转化商，但独立于ICL | Showa Denko PR | 日本上市（4004.T），可作为溴/HBr供应链第二层标的，需估值核查后再评级 |
-| **DRAM库存状态** | 韩国厂商仅2-3周溴库存；若ICL产线中断，4-6周内产能受限 | warontherocks.com | 宏观确认——溴瓶颈时效性极强（非长尾风险，是近期风险） |
-| **铜（大宗）** | 数据中心每MW需约27吨铜；2026年缺口230,000-400,000吨；铜价$5.61/磅 | S&P Global / UBS | 瓶颈真实但无直接小市值纯正标的；铜矿股已被充分定价 |
-| **ABF基板/CoWoS** | TSMC CoWoS从75k-80k扩至120k-130k wafer/月；仍100%预订；NVIDIA锁定2026-27超半数产能 | Digitimes / FusionWW | 确认A级瓶颈持续；3110.T ★★★★维持 |
+<unk> **Showa Denko (Japan)** <unk> has expanded and is operational in high-purity HB; is a downstream converter of ICL bromine but independent of ICL <unk> Showa Denko PR <unk> Japan listed (4004.T) as the second tier of the bromine/HBr supply chain, subject to valuation and subsequent rating
+<unk> **DRAM inventory** Korean manufacturer only 2-3 weeks of bromine stock; if ICL production lines are interrupted, capacity limits within 4-6 weeks <unk> waronthocks.com macro-recognition - very time-bound (non-long tail risk, immediate risk) <unk>
+<unk> Copper (large)** Data centre approximately 27 tons of copper per MW; gap of 230,000-40.000 tons in 2026; copper price of $5.61 lb.
+**ABF base plate/CoWoS** <unk> TSMC CoWoS from 75k-80k to 120k-130k wafer/month; still 100% reservation; NVIDIA locks over half of the capacity of 2026-27 <unk> Digitines/FusionW<unk> confirming that Class A bottlenecks persist; 3110.T maintain <unk>
 
 ---
 
-## 观察名单状态变化
+# Watching the status of the list
 
-| 标的 | 变化 | 触发原因 |
+The subject matter, the change, the trigger, the cause, the cause, the cause, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the reason, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the fact, the...
 |------|------|---------|
-| **LEU** | ★★★ → **建议升 ★★★★** | $9亿DOE固定价格Piketon扩张合同（2026-01-05）在当前评级中未充分反映 |
-| **ICL** | **重新评估后新增 ★★**（前次5/26因<30%纯正度被排除；5/26后伊朗导弹打击内盖夫属新发展） | 溴/HBr S级瓶颈，地缘风险打击距设施35km；PS 1.06x合理；纯正度不达标，以地缘风险跟踪为主 |
-| **4047.T ★★★★** | 无变化 | 双重S级瓶颈（WF₆+NF₃）维持，FY2026结果显示30日涨幅+100.79%，1年涨幅+302.48%；市场已部分定价，入场区间¥3,800-4,200仍适用 |
-| **ALM ★★★** | 无变化 | CB结算明日（6/9），AGM同日；Russell纳入6/29不变；前瞻PE 9.8x维持 |
-| **CHG.L ★★★★** | 无变化 | 芝加哥厂已完工开始爬坡，苏格兰厂调试中，挪威推进中；FY2026已确认91%收入覆盖；无新动作 |
+**LEU** ** ** Proposed for promotion ** ** $900 million DOPE fixed price Piketon expansion contract (2026-01-05) is not fully reflected in the current rating
+<unk> ICL** ** New <unk> (last 5/26 excluded due to <30% purity; new developments in Negev after 5/26 Iranian missile strike) <unk> Bromine/HBr S class bottlenecks, geo-risk impact facility 35km; PS 1.06x reasonable; pure failure to achieve standards, mainly geo-risk tracking
+**4047.T<unk> No change <unk> Double S-class bottlenecks (WF6+NF3) maintained, FY 2026 results showing 30-day increases +100.79 per cent and 1-year increases +302.48 per cent; market prices are partially priced and entry <unk> 800-4200 still apply
+**ALM<unk> No change <unk> CB Settlement tomorrow (6/9), AGM same day; Russell included 6/29 unchanged; forward vision PE 9.8x maintenance <unk>
+<unk> CCHG.L<unk> No change <unk> Chicago factory has been completed and has started climbing, Scottish plant debugging is underway, Norway is advancing; FY 2026 has confirmed 91% income coverage; no new action <unk>
 
 ---
 
-## 本轮扫描覆盖范围
+# This round of scan coverage
 
-- **AI基础设施**：CoWoS ✅（无新）/ HBM ✅（无新）/ 探针卡 ✅（无新）
-- **能源转型/核电**：LEU Piketon $9亿合同 ✅（**新发现**）/ Phase IV pending ✅
-- **国防现代化**：CHG.L ✅（确认，无新信号）
-- **半导体再工业化**：溴/HBr + ICL Group ✅（**全新信号**）/ Kanto Denka 4047.T ✅（确认）
-- **地缘政治供应链**：伊朗战争 → 溴 → DRAM ✅（新角度）
+- **AI infrastructure**: CoWoS <unk> (no new) / HBM <unk> (no new) / probe card <unk> (no new)
+- **Energy Transformation/Nuclear Power**: LEU Piketon $900 million contract (** new discovery**)/Phase IV feeding <unk>
+- **Modernization of Defence**: CHG.L. (Acknowledging, no new signal)
+- ** Semiconductor re-industrialization**: bromine/HBr + ICL Group <unk> (** new signal**)/ Kanto Denka 4047.T <unk> (confirmation)
+- **Geopolitics supply chain**: Iran War <unk> Bromine <unk> DRAM <unk> (New angle)
 
 ---
 
-*信源：[ICL Q1 2026业绩（TipRanks）](https://www.tipranks.com/news/company-announcements/icl-posts-strong-q1-2026-results-on-higher-bromine-potash-and-phosphate-prices) | [ICL市值（companiesmarketcap）](https://companiesmarketcap.com/icl-group/marketcap/) | [溴与DRAM瓶颈（War on the Rocks）](https://warontherocks.com/the-bromine-chokepoint-how-strife-in-the-middle-east-could-halt-production-of-the-worlds-memory-chips/) | [韩国97.5%溴进口依赖（BigGo Finance）](https://finance.biggo.com/news/3bPwj50ByH9TLH69g_F-) | [TrendForce：中东动荡与溴风险（2026-03-09）](https://www.trendforce.com/news/2026/03/09/news-middle-east-energy-turmoil-raises-chip-risks-spotlight-on-tsmc-power-use-and-bromine-for-dram/) | [TrendForce：韩国8项材料风险（2026-04-17）](https://www.trendforce.com/news/2026/04/17/news-korea-chip-supply-risks-rise-material-disruptions-may-outweigh-energy-uncertainty-israeli-bromine-imports-at-97-5/) | [ICL全年2025业绩（BusinessWire）](https://www.businesswire.com/news/home/20260217956054/en/ICL-Reports-Fourth-Quarter-and-Full-Year-2025-Results) | [Centrus $9亿Piketon任务订单（Centrus IR）](https://investors.centrusenergy.com/news-releases/news-release-details/centrus-awarded-900-million-expand-uranium-enrichment-ohio) | [Centrus Q1 2026（StockTitan）](https://www.stocktitan.net/sec-filings/LEU/10-q-centrus-energy-corp-quarterly-earnings-report-bcd93b464f33.html) | [Centrus Q1 2026结果（PRNewswire）](https://www.prnewswire.com/news-releases/centrus-reports-first-quarter-2026-results-302763250.html) | [溴供应风险（Gasworld）](https://www.gasworld.com/story/bromine-supply-risk-more-dangerous-than-helium-for-chip-industry/2246847.article/) | [伊朗战争与半导体（CNBC 2026-03-10）](https://www.cnbc.com/2026/03/10/iran-war-semiconductor-memory-chip-impact.html)*
+* Source: [ICL Q1 2026 performance (TipRanks)] (https://www.tipranks.com/news/company-announcements/icl-posts-strong-q1-2026-results-on-higher-bromine-potash-and-phosphate-prices[ICL market value (companies marketcap)] (A/C.6/53/L.https://companiesmarketcap.com/icl-group/marketcap/) <unk> [War on the Rocks] (Brussels and DRAM bottlenecks)]https://warontherocks.com/the-bromine-chokepoint-how-strife-in-the-middle-east-could-halt-production-of-the-worlds-memory-chips/) <unk> [Korea 97.5% import dependence of bromine (BigGo Finance)] (https://finance.biggo.com/news/3bPwj50ByH9TLH69g_F-[TrendForce: The risk of instability and bromine in the Middle East (2026-03-09)] (TrendForce:https://www.trendforce.com/news/2026/03/09/news-middle-east-energy-turmoil-raises-chip-risks-spotlight-on-tsmc-power-use-and-bromine-for-dram/[TrendForce: 8 material risks in Korea (2026-04-17)] (TrendForce: 8 materials risk)https://www.trendforce.com/news/2026/04/17/news-korea-chip-supply-risks-rise-material-disruptions-may-outweigh-energy-uncertainty-israeli-bromine-imports-at-97-5/[ICL 2025 performance (BusinessWire) (Advanced)https://www.businesswire.com/news/home/20260217956054/en/ICL-Reports-Fourth-Quarter-and-Full-Year-2025-Results[Centrus $900 million Piketon Task Order (Centrus IR)] (Centrus IR)https://investors.centrusenergy.com/news-releases/news-release-details/centrus-awarded-900-million-expand-uranium-enrichment-ohio) | [Centrus Q1 2026（StockTitan）](https://www.stocktitan.net/sec-filings/LEU/10-q-centrus-energy-corp-quarterly-earnings-report-bcd93b464f33.html[Centrus Q1 2026 Outcome (PRNewswire)] (Pending)https://www.prnewswire.com/news-releases/centrus-reports-first-quarter-2026-results-302763250.html) <unk> [Bow supply risk (Gasworld)] (https://www.gasworld.com/story/bromine-supply-risk-more-dangerous-than-helium-for-chip-industry/2246847.article/[Iranian War and Semiconductor (CNBC 2026-03-10)] (C)https://www.cnbc.com/2026/03/10/iran-war-semiconductor-memory-chip-impact.html)*

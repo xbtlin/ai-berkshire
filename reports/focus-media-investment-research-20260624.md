@@ -1,498 +1,498 @@
-# 分众传媒（002027.SZ）投资研究报告
+# Study on investment in the media (002027.SZ)
 
-> **报告日期**：2026年6月24日
-> **股价**：4.86元 | **市值**：699亿元 | **总股本**：144.42亿股
-
----
-
-## 信息丰富度评级与AI研究局限性声明
-
-**信息丰富度评级：A级（信息充裕）**
-
-分众传媒于2005年在纳斯达克上市，2015年回归A股，上市超过20年，券商覆盖密集（近6个月15家券商发布研报），财务数据完备，行业研究报告丰富。
-
-**AI研究陷阱警示**：A级公司的核心风险是"共识过强"——AI输出极易趋同于市场定价。本报告的主要价值不在于发现新信息，而在于对已知信息的结构化梳理和逆向检验。
-
-**偏见自查**：
-- 分众是一门高度透明的生意，分析的"确定性"感受主要来自生意本质的简洁清晰，而非仅仅因为资料丰富
-- 市场共识目前高度一致（11/12分析师给出"买入"），本报告将重点检验"聪明人为什么不买"
-- 当前股价处于52周低位（4.80-8.76元区间），可能存在市场已定价但未被充分讨论的隐含风险
+> ** Date of report**: 24 June 2026
+> ** share price **: $4.86 ** market value ** ** $69.9 billion ** total equity** ** $14.442 billion
 
 ---
 
-## 第一部分：生意本质分析
+# Information abundance rating and AI research limitation statement
 
-### 一句话定义
+** Information abundance rating: A (information is abundant)**
 
-**分众做的是"城市主流人群注意力的物理垄断"生意——在电梯这个封闭空间里，用无法跳过的广告位，向品牌商出售3亿城市中产的强制注意力。**
+The public media were listed in NASDAQ in 2005 and returned to A-stock in 2015, with more than 20 years of listing, a high-volume-seller coverage (research of 15 vouchers issued in nearly six months), complete financial data and extensive industry studies.
 
-### 收入结构拆解（2025年）
+**AI Research Traps**: The core risk for A-class companies is "too much consensus" - AI exports are very easy to converge with market pricing. The main value of this report is not to discover new information, but to structure and reverse test known information.
 
-| 业务板块 | 收入（亿元） | 占比 | 同比增速 | 毛利率 |
+** Prejudice self-examination**:
+- The division is a highly transparent business, and the "determinate" feeling is mainly based on the simple nature of the business, not simply on the wealth of information.
+- Market consensus is now highly consistent (the "buy-in" is given by the 11/12 analyst), and this report will focus on "why not buy the smart guy."
+- The current low 52 weeks of stock prices (between $4.80 and $8.76) may present an implicit risk that the market has been priced but not fully discussed
+
+---
+
+# Part one: Business nature analysis
+
+# One word of definition
+
+** The crowds are doing the business of "Physic Monopoly of Attention for the Main Urban People" - in the closed space of the elevator, selling 300 million city-based attentions to branders with untraceable advertising slots**
+
+## Dismantling of income structure (2025)
+
+Business plate, income (billions of dollars)
 |---------|-----------|------|---------|-------|
-| 楼宇媒体（电梯LCD+海报） | 120.34 | 94.3% | +4.20% | 69.96% |
-| 影院媒体 | 6.39 | 5.0% | -7.24% | ~83% |
-| 其他 | 0.85 | 0.7% | +257.3% | — |
-| **合计** | **127.59** | **100%** | **+4.05%** | **70%** |
+<unk> Building media (Elevator LCD+ poster) <unk> 120.34 <unk> 94.3 <unk> + 4.20 <unk> 69.96 <unk>
+<unk> cinema media 6.39<unk> 5.0%<unk> -7.24%<unk> ~83%<unk>
+<unk> Other 0.85 <unk> 0.7% <unk> + 257.3% <unk> <unk>
+** Total** ** 127.59** ** 100%** ** ** ** 4.05%** ** 70%** **
 
-**客户行业分布变迁（2025年楼宇媒体）**：
+** Changes in the distribution of client industries (Media 2025)**:
 
-| 行业 | 收入（亿元） | 同比增速 | 占比 |
+The industry, the income (millions of yuan) and the rate of increase in the same proportion
 |------|-----------|---------|------|
-| 日用消费品 | 63.65 | -16.22% | ~51.6% |
-| 互联网 | 32.42 | +188.59% | ~26.3% |
-| 房产家居 | — | -33.54% | — |
-| 通讯 | — | -33.60% | — |
+<unk> Consumer goods used in the day
+<unk> Internet 32.42 <unk> 188.59% ~ 26.3% <unk>
+♪ The house ♪
+♪ We're gonna be in the middle of the night ♪
 
-> 核心变化：互联网行业（字节、阿里、拼多多等）爆发性增长，已成第二大客户行业；传统消费品缩减，客户结构正在经历结构性转型。
+> Core changes: Internet industry (bytes, Ali, multiplicity of pieces, etc.) has grown in an explosive manner, becoming the second largest customer industry; traditional consumer goods have been reduced and client structures are undergoing structural transformation.
 
-### 5年盈利能力趋势
+# # 5 years of profitability trend
 
-| 指标 | 2021 | 2022 | 2023 | 2024 | 2025 |
+Indicator 2021 <unk> 2022 <unk> 2023 <unk> 2024 <unk> 2025 <unk>
 |------|------|------|------|------|------|
-| 营收（亿元） | 148.36 | 94.25 | 119.04 | 122.62 | 127.59 |
-| 归母净利润（亿元） | 60.63 | 27.90 | 48.27 | 51.55 | 29.46* |
-| 毛利率 | ~67.5% | ~60% | 65% | 66.3% | 70% |
-| 净利率 | ~40.9% | ~29.6% | ~40.6% | ~42.0% | 23.1%* |
-| 经营现金流（亿元） | ~96 | ~52 | ~61-74 | 66.4 | 72.09 |
-| 自由现金流（亿元） | ~93 | ~49 | ~58-74 | ~63 | ~70.5 |
+Revenue (millions of yuan)
+<unk> Net profit from return to mother (millions of yuan) <unk> 27.90 <unk> 48.27 <unk> 51.55 <unk> 29.46*
+<unk> Māori ratio ~ 67.5% ~ 60% ~ 65% <unk> 66.3% <unk> 70%
+Net interest rate ~ 40.9% ~ 29.6% ~ 40.6% ~ 42.0% ~ 23.1%*
+Operating cash flow (millions of yuan) ~96 ~ 52 ~ 61-74 ~ 66.4 <unk> 72.09 ~
+Free cash flow (billions) ~93 ~ 49 ~ 58-74 ~ 63 ~ 70.5 ~ 60%
 
-> *2025年净利润含数禾科技减值21.53亿元（一次性非现金项目）。剔除后主业净利润约51亿元，与2024年基本持平。
+* Net profit in 2025 includes a reduction of 2,153 million yuan in grass technology (a one-time non-cash item).
 
-**数据来源**：公司年报（巨潮资讯）、新浪财经、东方财富
+** Data source**: Corporate Annual Report (Glossy Information), New Wave Finance, Eastern Wealth
 
-### 商业模式画布
+# Business model canvass
 
-**收费模式**：固定周期、固定点位的刊例价定价。核心收入公式为"点位数 × 刊挂率 × 刊例价 × 折扣率"。大客户以年度框架协议为主，锁定全年投放金额和折扣率，存量客户贡献超过85%的收入。
+** Fees **: Fixed cycle, fixed point price pricing. Core income formula is "point number x journal rate x journal rate x discount rate". Large clients focus on the annual framework agreement, locking in the amount and discount rate of their annual investment, and stock clients contribute more than 85% of their income.
 
-**成本结构（2024年营业成本约41亿元）**：
+** Cost structure (approximately $4.1 billion in operating costs in 2024)**:
 
-| 成本项 | 占营业成本比例 | 说明 |
+Cost item <unk> as a proportion of operating costs <unk>
 |--------|-------------|------|
-| 媒体资源成本（点位租金） | 73.35% | 最大成本项，使用权资产折旧 |
-| 职工薪酬 | 9.94% | 同比下降9.77%，持续精简 |
-| 设备折旧 | 3.80% | 同比暴降51.8%，大量资产已折旧完毕 |
-| 其他 | 12.91% | 海报制作、物流、流量费等 |
+• Cost of media resources (point rent) <unk> 73.35 per cent Maximum cost item, depreciation of right of use assets <unk>
+9.94% 9.77% decrease in comparison with previous year, continuously streamlining
+<unk> Depreciation of equipment 3.80% drop by 51.8% on year, with significant assets depreciated
+<unk> Other 12.91% Poster production, logistics, flow charges, etc.
 
-**经营杠杆特征**：点位租金和设备折旧为固定成本，边际新增广告收入几乎是纯利润。2021年收入增长22.6%时，净利润增长51.4%——收入增长被放大2.3倍。
+** Business leverage**: Point rent and equipment depreciation is fixed cost, marginal new advertising income is almost pure profit. In 2021, income grew by 51.4 per cent net profit - income growth was greater by 2.3 times.
 
-**客户锁定/生态粘性**：
-- 年投放超1亿元客户留存率约90%
-- 与阿里巴巴打通"天攻智投"数据回流系统，形成曝光-追投闭环
-- 2025年与支付宝推出"碰一下"NFC互动，从"传播场"升级为"交易入口"
-- 回款极严格：账期3个月，90%以上客户按时回款
+**Customer locking/ecological sticky**:
+- Annual retention rate of over $100 million for clients, about 90%
+- Play the Akibas data back, create exposure - catch-up loops.
+- In 2025, we'll "handle" the NFC, and we'll upgrade it from "dissemination field" to "trade entrance."
+- Very strict repayment: three months of account period, over 90 per cent of clients on time
 
-**毛利率为何能维持高位**：
-1. 物理垄断——电梯等候区空间有限，独家合约排他
-2. 收入公式中"刊挂率"的弹性——淡季降价保量、旺季溢价提利
-3. 设备资本开支高峰已过，折旧大幅下降
-4. 低效三四线点位持续收缩，2025年媒体资源成本同比下降14.45%
+** Why do Maori rates keep high**:
+Physical monopoly - limited space in the elevator waiting area, exclusive contract exclusion
+Flexible "recording" in the income formula - low-season price premiums, boom premium incentives
+3. Capital expenditure on equipment has passed, and depreciation has declined significantly
+4. The three or four-line inefficient points continued to contract, with media resource costs falling by 14.45 per cent in 2025 compared to the same year
 
-### 追问
+# Ask me
 
-> 这门生意好在哪？如果只能用一句话描述，是什么？
+Where is this business better? If only one word can be said, what is it?
 
-**用物理空间的排他性创造注意力垄断，赚的是品牌商为"确定性触达"支付的溢价。** 电梯这个场景的独特之处在于：它是少数几个现代人无法选择"跳过"或"关闭"的广告场景。手机广告可以划走、电视广告可以换台，但电梯广告你只能看。分众的生意本质不是媒体，而是"注意力的不动产"。
+** The exclusiveness of physical space creates a monopoly of attention, earning a premium from branders for "determinate touch."** The unique thing about the elevator scene is that it is a "jump" or "cut off" advertising scene that few modern people can choose. Mobile phone advertising can be removed, television advertising can be replaced, but elevator advertising is only available to you. The business of the crowd is not media, but real estate of attention.
 
 ---
 
-## 第二部分：护城河评估
+# Part II: A waterfront assessment
 
-### 五类护城河逐项验证
+# Five-class moats, one by one
 
-| 护城河类型 | 强度 | 验证依据 |
+♪ The moat type ♪
 |-----------|------|---------|
-| **独占资源** | **极强** | 电梯LCD约126万台+海报约180万个，高端写字楼LCD市占率超90%。物业独家合约排他，竞品物理上无法进入同一电梯等候区。新潮烧了89亿融资7年仅拿到~74万屏（不到分众1/4），且集中在社区而非高端写字楼。 |
-| **规模效应** | **强** | 覆盖340+城市、297万+终端。收购新潮后终端超370万台、400+城市。全国网络一次性覆盖的便利性是区域竞品无法匹配的。单屏年均收入约6,000元，新潮仅约2,700元——2.2倍溢价反映规模溢价力。 |
-| **品牌/定价权** | **强** | 每年1月和7月各上调刊例价约10%，已持续多年。即便提价，CPM（千人成本）仍仅为互联网广告的1/3到1/10。净利率稳定在40%以上（正常年份）。 |
-| **转换成本** | **中到高** | 大客户年度框架协议绑定，与阿里数据系统深度整合。NFC"碰一下"创造新的交互闭环。但对小型广告主（年投放<1000万）转换成本较低，留存率明显下降。 |
-| **网络效应** | **弱** | 不具备经典双边网络效应，但存在"密度驱动的价值效应"——点位密度达到阈值后才能实现"饱和攻击"。零散竞品因无法提供全国饱和覆盖，对品牌主价值大打折扣。 |
+<unk> Unique resources** <unk> ** Extremist** elevators <unk> 1.26 million + posters + about 1.8 million + high-end writing buildings + LCD City, with a 90% rate. Property exclusive contract, physically unable to access the same elevator waiting area. New tides burned ~740,000 screens (less than one quarter of the population) in 8.9 billion finance for seven years, and concentrated in communities rather than high-end writing buildings.
+<unk> **Scaling effect** ** Strong** <unk> covers 340+ cities, 2.97 million+ terminals. Purchases of over 3.7 million post-tidal terminals, 400+ cities. The ease of one-time coverage of the national network is not matched by regional competitions. The average annual income of the new tide is about $6,000, with only $2,700 - 2.2 times the premium reflecting the premium.
+** Branding/pricing rights** ** Strong** <unk> Annual updates of about 10% per year and July, respectively, have been ongoing for many years. Even with price increases, the CPM (thousands of people cost) is only one third to one tenth of Internet advertising. Net interest rates have stabilized at over 40% (normal year).
+<unk> ** Conversion costs** <unk> Medium to High** Large Client Annual Framework Agreement tied to deep integration with Ali ' s data system. NFC "flash" creates new interlocking loops. For small advertisers (with < 10 million annual investments), conversion costs are lower, and retention rates are significantly reduced.
+<unk> Network effects** <unk> Weak** <unk> Not classic bilateral network effects, but "density-driven value effects" - dot density thresholds are reached to achieve "saturation attacks".
 
-### 护城河趋势
+# The moat of the river
 
-| 时间段 | 趋势 | 表现 |
+Time period, time period, trend, performance, performance, performance, and...
 |--------|------|------|
-| 2018-2019 | **明显收窄** | 新潮五折价格战，分众毛利率从69%暴跌至36.5%，净利润从58.2亿骤降至18.8亿 |
-| 2020-2022 | 底部企稳 | 收缩低效点位，聚焦高端。竞争烈度下降 |
-| 2023-2024 | 重新加宽 | 毛利率恢复至65-66%，净利率回到40%+ |
-| 2025至今 | **质变性加宽** | 83亿收购新潮，消灭唯一有意义的竞争对手。梯媒市占率从68.3%跃升至超80% |
+<unk> 2018-2019 <unk> Clear narrowness** <unk> New tide price war, with a sharp fall in the gross profit rate from 69% to 36.5% and a sharp decline in net profit from $5.82 billion to $1.88 billion <unk>
+<unk> 202022 <unk> Bottom steady <unk> Low-impact position, high-end focus. Competition is down
+<unk> 2023-2024 Re-opening <unk> Re-establishment of the Maori rate to 65-66% and return of the net interest rate to 40% + <unk>
+The market has jumped from 68.3% to over 80%.
 
-**新潮冲击的最终结论**：新潮累计融资约89亿元（百度21亿领投、京东战投），连亏7年至2024年才首次微利约6000万，最终以83亿被分众收购。这场7年竞争以分众"吞并对手"的方式结束，反向验证了护城河的深度——**这个行业的经济规律只允许一家公司盈利**。
+** Final conclusion of the new tide **: The new tide has accumulated financing of about $8.9 billion (US$ 2.1 billion in investment, the Kyoto war) and was the first to be won at about $60 million in 7 to 2024, with the result that the competition ended in a "merger" of 8.3 billion. The seven-year competition, which proved the depth of the moat ** the economic rules of the industry allowed only one company to make a profit**.
 
-### 追问
+# Ask me
 
-> 10年后这条护城河还在吗？什么能摧毁它？
+> Is this moat still in place in 10 years? What can destroy it?
 
-**10年后护城河大概率仍在。** 电梯是城市基础设施，不会消失。物理独占性不依赖技术迭代——只要电梯等候区的空间有限且人需要等待，广告的强制触达就存在。潜在威胁：(1) AR眼镜普及使人在电梯中沉浸于虚拟世界，不再注意物理屏幕；(2) 物业公司联合自建媒体网络，但历史证明物业公司缺乏广告运营能力；(3) 监管强制拆除或限制电梯广告，但目前无此趋势。
+** The river moat is still probably in place 10 years later.** The elevator is an urban infrastructure and will not disappear. Physical exclusivity does not depend on technological overlaps - as long as the elevator waiting area is limited and people need to wait, the forced tentage of advertising exists. Potential threats: (1) AR glasses are widespread enough to sow the virtual world in elevators without attention to physical screens; (2) property companies have jointly built their own media networks, but history has shown that property companies lack the ability to advertise; and (3) regulation of the demolition or restriction of elevator advertising, but there is no current trend.
 
 ---
 
-## 第三部分：逆向思考与风险清单
+# Part III: Reverse reflections and risk lists
 
-### 这家公司可能失败的所有路径
+# All the paths this company could fail
 
-| 失败路径 | 概率 | 影响程度 | 说明 |
+<unk> Failed path <unk> probabilities <unk> Impact degree <unk> description <unk>
 |---------|------|---------|------|
-| 宏观经济长期低迷，广告预算持续萎缩 | 中等（25%） | 高 | 利润具有3-5倍GDP放大效应。2022年收入从148亿骤降至94亿（-36.5%），净利润几乎腰斩 |
-| 收购新潮触发反垄断否决或附加严苛条件 | 中等（20%） | 高 | 梯媒窄口径合并市占率超80%，远超50%垄断推定标准。历史先例：2009年分众-新浪合并案被商务部叫停 |
-| 客户集中度持续恶化 | 中等（20%） | 高 | 前五大客户占比从2019年的16%飙升至2025年的34.58%，第一大客户占比达18.55%。互联网客户"钟摆效应"加大波动 |
-| 数字广告持续侵蚀品牌广告预算 | 中等（20%） | 中 | 营收增速已放缓至3-4%，单点位年均收入从5,543元降至3,953元（2021→2023） |
-| 监管收紧限制电梯广告密度 | 中低（15%） | 高 | 2025年江苏出台新规：住宅电梯内电子广告不超1个、音量不超25分贝。若全国推广将实质压缩单梯收入密度 |
-| 应收账款恶化/坏账风险 | 中低（15%） | 中 | 2025Q1周转天数恶化至103天（2023年约50天），累计坏账准备超20亿元 |
-| 非主营投资持续暴雷 | 中低（15%） | 中 | 数禾科技已损失21亿。收购新潮后商誉将从1.72亿跃升至46.80亿元 |
-| 关键人物风险（江南春离开） | 低（5%） | 中高 | 组织极度依赖创始人，60-70位高管直接向江南春汇报 |
-| AR/VR颠覆电梯场景注意力 | 极低（<5%） | 高 | 10年内大规模普及概率极低 |
+The macroeconomics have been falling for a long time, and the advertising budget has been shrinking for a long time.
+The acquisition of new waves triggers anti-monopoly vetoes or stringent conditions Medium (20%) High echelons narrow-calibre mergers with over 80% and well over 50% monopoly presumption. Historical precedent: 2009 crowd-surge merger cases were stopped by the Department of Commerce.
+The concentration of clients continues to deteriorate, the concentration of customers continues to deteriorate, the concentration of customers continues to deteriorate, the concentration of customers continues to grow, and the top five clients jumped from 16% in 2019 to 34.58% in 2025, and the top clients account for 18.55%.
+The growth rate of the growth rate has slowed to 3-4%, and the average annual income per dot has fallen from $5,543 to $3,953 (2021 — 2023).
+In 2025, Jiangsu introduced a new regulation: electronic advertising in residential elevators is not more than one, and the volume is not more than 25 cents.
+<unk> Deterioration of accounts receivable/bad debt risk Middle (15%) <unk> 2025Q1 turnover days deteriorated to 103 days (approximately 50 days in 2023), with accumulated bad debt prepared to exceed $2 billion
+The acquisition of new capital will rise from 172 million to 4.680 billion yuan.
+<unk> Critical person risk (Eng Nam Chun leaving) <unk> low (5%) <unk> medium high <unk> organization heavily dependent on its founders and 60-70 executives reporting directly to Jiang Nam Chun <unk>
+The ARR/VR sabotaging the elevator scene, the very low ( < 5%) the high, the very low probability of mass penetration in 10 years.
 
-### 历史类比
+# History analogy
 
-| 类比公司 | 相似之处 | 结局 | 对分众的启示 |
+The synonyms, the synonyms, the similarities, the ending, the revelation to the crowd, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stairs, the stumps, the stumps, the stairs, the stairs, the stairs, the stairs, the stubs, the stairs, the stuffs, the stairs, the sts, the st, the st, the st, the st, the st, the st, the st, the sts, the sts, the st, the sts, the sts, the st, the st, the sts, the sts, the st, the sts, the st, the st, the st, the st, the st, the st, the st, the st, the st, the st, the st, the st, the st, the st, the st, the st, the st, the st, the st, the s, the s, the st, the st, the st, the st, the st, the s
 |---------|---------|------|------------|
-| **Clear Channel Outdoor（美国）** | 户外广告龙头，高杠杆扩张 | 2018年LBO债务过高导致破产，2026年被62亿美元私有化 | 分众几乎零有息负债，财务极保守，不会重蹈此路 |
-| **JCDecaux（法国）** | 全球户外广告龙头 | 2020年收入-40.6%（疫情冲击），2024年已超前高 | 周期性波动可恢复，物理广告位不会被数字化"绕过" |
-| **Lamar（美国）** | REIT结构户外广告龙头 | 2020年收入仅-10.5%，2022年即超前高，持续创新高 | 韧性最强的户外广告模式 |
-| **分众自身2019年** | 激进扩张应对价格战 | 净利润暴跌68%，但2年内恢复 | 分众展现了极强的周期恢复力 |
-| **中国报纸行业** | 传统媒体被数字替代 | 2011-2016年广告收入从454亿跌至102亿（-77%），69家停刊 | 关键区别：互联网替代了纸媒的内容消费，但无法替代电梯中的物理广告位。同期电梯广告逆势增长 |
+**Clear Channel Outdoor (United States)** Outdoor advertising, high-leveraging expansion **
+** JCDecaux (France)** Global outdoor advertising leader ** 2020 income-40.6% (epidemiological shock) is over-excusable 2024 cyclical fluctuations can recover, physical advertising positions are not digitally "over-the-counter" <unk>
+**Lamar (United States)** <unk> ReIT structure leading outdoor advertising <unk> Income in 2020 was only 10.5%, 2022 was higher, sustained innovation was high <unk> and the most resilient outdoor advertising model was found <unk>
+<unk> ** The radical expansion of the price war **
+** The Chinese newspaper industry** Traditional media replaced by numbers <unk> Advertising revenue dropped from $45.4 billion to $10.2 billion (77%) in 2011-2016, 69 out of date <unk> Key difference: the Internet replaced paper-based content consumption but could not replace the physical advertising slot in elevators.
 
-> **全球关键发现**：没有一家户外广告公司因数字替代而结构性衰落。美国户外广告行业2025年达创纪录的94.6亿美元。物理空间中的广告屏幕无法被数字化"跳过"——与报纸不同（内容转移到线上），乘客在物理空间中无法选择忽略。
+> ** Key Global Discovery**: No outdoor advertising company has been structurally weakened by digital substitution. The U.S. outdoor advertising industry reached a record $9.46 billion in 2025. The advertising screen in physical space cannot be digitally "exceeded" - unlike newspapers (which have been transferred online), and passengers cannot choose to ignore it in physical space.
 
-### 跨学科模型检验
+# Interdisciplinary modeling
 
-1. **技术采纳S曲线**：电梯LCD广告已过快速增长期，进入成熟阶段。增长将从"铺设新点位"转向"提升单点位收入"和"开拓海外市场"
-2. **竞争博弈论**：新潮被收购后梯媒进入近似垄断格局。需警惕"垄断者的松懈"——失去竞争对手后创新动力可能下降
-3. **广告预算零和博弈**：总广告预算增速放缓时，分众需从其他媒介（特别是效果广告）争夺份额，这比过去单纯从电视广告抢份额更难
+1. **Technology adoption S curve**: Elevator LCD advertising is already growing rapidly and is entering maturity. Growth will shift from "Play New Point" to "Step One Point Income" and "Splacing Overseas Markets"
+2. **Competition theory**: The new tide has been acquired into a near monopolistic pattern.
+3. ** Zero-sum advertising budget**: When the overall advertising budget is slowing down, it is more difficult to compete for shares from other media (especially effect advertising) than it was in the past to steal shares from television advertising alone.
 
-### 偏误自查
+# I'm wrong to check myself
 
-- **叙事偏差**："电梯媒体垄断者"的叙事过于完美，但营收增速仅3-4%，说明垄断并未带来高增长
-- **锚定效应**：2021年148亿的营收峰值可能不是常态，而是后疫情反弹的异常高点
-- **幸存者偏差**：我们看到的是"赢家分众"，但行业整体增长已放缓，分众可能是一个"赢在存量市场"的守成者
+- ** Narrative bias**: The narrative of "Elevator Media Monopoly" is too perfect, but the growth rate of the harvest is only 3-4%, which means that the monopoly has not led to a high growth
+- **Assort effect**: The peak of $14.8 billion in 2021 may not be normal, but rather an abnormally high point of the post-epidemiological rebound.
+- ** Survivors' deviation**: We see "winners out of crowds", but overall industry growth has slowed down and crowds may be a "win in stock market" watchman.
 
-### 空方核心论点
+# The empty core argument
 
-1. **周期股伪装成价值股**：净利率在15%-50%之间剧烈波动，利润高点恰是周期顶点。"在PE最便宜的时候买入，实际可能是在最贵的时候买入"
-2. **增长天花板明显**：营收连续3年在120-130亿元区间徘徊，3-4%的增速本质上是通胀水平增长
-3. **高分红是增长乏力的信号**：分红率92%意味着管理层看不到好的再投资机会
-4. **管理层资本配置记录差**：从2005年疯狂并购60多家公司（16亿美元并购中11亿被减记），到数禾科技减值73%（损失超21亿），"每次多元化扩张最终都以巨额亏损收场"
-5. **收购新潮是"花钱买垄断"**：83亿对价的新潮2024年才刚盈利6000万，需100年以上回本。收购后商誉将跃升至46.80亿元
-6. **客户集中度恶化**：前五大客户占比从16%飙升至34.58%，互联网客户"钟摆效应"使收入波动性加大
-7. **应收账款质量堪忧**：周转天数从50天恶化至103天，累计坏账准备超20亿元
-8. **广告效果"黑箱"**：ROI难以归因，广告主在经济承压时首先砍的就是"难以量化ROI"的品牌广告
-9. **监管基础脆弱**：《民法典》明确电梯广告收益属于全体业主，已出现大量业委会起诉要求返还广告收益的案件
+1. ** Periodic shares disguised as value shares**: Net interest rates fluctuated sharply between 15 and 50 per cent, with high profit points at the top of the cycle. "Access at the cheapest of the PE, actually at the most expensive."
+2. ** Growth ceiling is clear**: for three consecutive years, the harvest hovered between $12-13 billion, with inflation growth at a rate of 3-4%.
+3. ** High red mark is a sign of weak growth**: 92% red rate means management does not see good reinvestment opportunities
+4. ** Management poor capital allocation records**: from the frenzied M&A of over 60 companies in 2005 (1.1 billion of $1.6 billion of M&As were written off), to the loss of 73% of the value of grass technology (with losses exceeding 2.1 billion), "every diversification expansion ends with a huge loss."
+5. ** The acquisition trend is "Purpose the Monopoly"**: the new trend of $8.3 billion was only 60 million in 2024, and it will take more than 100 years to return.
+6. ** Customer concentration deteriorated**: the top five clients jumped from 16 to 34.58 per cent, and the Internet client "bang-slap effect" increased income volatility
+7. ** The quality of accounts receivable is in a bad condition**: turnover days have deteriorated from 50 to 103 days, with accumulated bad debt preparation exceeding $2 billion
+8. ** "Black Box"**: ROI is hard to attribute. The first thing the advertiser would cut when he was under economic pressure is "ROI" brand ads.
+9. **The regulatory base is fragile**: the Civil Code makes it clear that the proceeds of elevator advertising belong to all owners and there are a large number of cases in which the Industrial Council has filed a complaint for the return of the proceeds of advertising
 
-### 追问
+# Ask me
 
-> 我最可能在哪里犯错？聪明人为什么不买这家公司？
+Where would I most likely make a mistake? Why wouldn't the smart guy buy this company?
 
-**最可能的错误有两个**：
+** The most likely errors are two**:
 
-**第一，高估"垄断=好生意"的简单推理。** 分众确实是电梯媒体的垄断者，但"一个增长缓慢的垄断者"和"一个高速增长的挑战者"哪个更值钱？聪明人不买分众的核心理由是：这是一门好生意，但不是一门增长的生意。在3-4%营收增速下，投资者得到的主要是分红回报（6.79%），而不是资本增值。
+** First, the simple reasoning of overestimating "monopoly = good business."** The crowd is indeed the monopoly of elevator media, but what is more valuable is "a slow-growing monopoly" and "a fast-growing challenger"? The central reason why smart people don't buy the score is that it is a good business, but not a growing business. At a 3-4% pick-up, investors receive a bonus return (6.79%), rather than capital value.
 
-**第二，忽视了管理层资本配置的历史教训。** 从早期60多家并购到数禾科技暴雷，管理层在主业之外的投资记录极差。如果收购新潮后46.80亿商誉也面临减值，将再次重创股东利益。需要持续跟踪管理层是否已真正吸取教训、聚焦主业。
+** Second, the historical lessons of management’s capital allocation were ignored.** From the early 60 M&As to the technological booms, management has a very poor record of investing outside the main business. If the $4,680 million goodwill were also impaired after the acquisition of the new tide, it would again be in the shareholder’s interest. There is a need to keep track of whether management has really learned the lessons and focused on the main business.
 
 ---
 
-## 第四部分：管理层评估
+# Part IV: Management assessment
 
-### 创始人兼董事长：江南春
+# Founder and Chairman: Jiang Nam Chun
 
-**履历**：1973年生，华东师范大学中文系（非复旦），从诗人到广告人。1994年大三创业做广告代理，2003年创立分众传媒，2005年纳斯达克上市（中国传媒第一股），2013年私有化退市，2015年借壳宏达新材回归A股。2026年6月已卸任法定代表人，但仍任董事长/总裁——是否为退居二线信号需持续关注。
+** CV**: Born 1973, Chinese Faculty of the Chinese (not repeats), Chinese Faculty of the Chinese Teachers' University of Huadong, from poet to advertiser. In 1994, 3rd year, advertising agent, 2003 created a branch media, 2005 was listed in Nasdak (China's first media unit), 2013 privatization was withdrawn and 2015 was returned to A. The President/President, who was a legal delegate, left in June 2026, still has to be kept in mind as a second-line sign of withdrawal.
 
-**持股**：通过四层境外架构间接持有23.72%（Media Management HK），加上Gio2 HK（1.71%）和Giovanna Investment HK（1.04%），合计约26.5%。无直接持股，无主动减持记录。
+** Shareholding**: 23.72% (Media Management HK) indirectly held through four layers of offshore structures, plus Gio2 HK (1.71%) and Giovanni Investment HK (1.04%), totalling approximately 26.5%. No direct holdings, no active records.
 
-**薪酬**：年薪仅480万元，但通过分红年获约6.5-11.3亿元。利益与股东高度一致。
+** Remuneration**: The annual salary is only 4.8 million yuan, but the split is approximately 6.5-1130 million yuan.
 
-**关键决策复盘**：
+**Rocker of key decisions**:
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2003年 | 发明电梯广告，创立分众 | 开创全新行业品类 | A+ |
-| 2005年 | 纳斯达克上市 | 融资扩张，确立行业地位 | A |
-| 2006-2008年 | 大举并购（框架传媒等10+家公司） | 消灭早期竞争对手，但商誉高企 | B+ |
-| 2013年 | 私有化退市 | 低估值时退出，为A股重新上市埋下伏笔 | A |
-| 2015年 | 借壳宏达新材回归A股 | 估值大幅提升 | A |
-| 2018年 | 接受阿里150亿战略投资 | 获得数据能力和生态资源 | A- |
-| 2019年 | 激进扩张应对新潮价格战 | 净利润暴跌68%，但最终赢得竞争 | B |
-| 2025年 | 83亿收购新潮传媒 | 消灭唯一对手，待反垄断审批 | 待定 |
+In 2003, the elevator commercial was invented, the public was created, the whole new trade was created.
+2005 Nestak is listed, financing expansion, establishment of industry status
+<unk> 2006-2008 Large M & As (10+ companies, framework media etc.) <unk> Elimination of early competitors but high reputation B+ <unk>
+<unk> Privatization exited from the market <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> 2015 <unk> Return to A share with shell macros and <unk> valuations greatly increased <unk> A<unk>
+<unk> Acceptance of the Ali15 billion strategic investment <unk> Access to data capabilities and ecological resources <unk> A-<unk>
+In 2019, radical expansion responded to the new tide price war, and net profits fell by 68%, but eventually won the competition.
+In 2025, $8.3 billion in new media was acquired, and the only opponent was eliminated, pending approval of the antimonopoly.
 
-### 资本配置能力
+# Capital allocation capacity
 
-| 维度 | 评价 |
+<unk> Dimensions Evaluation <unk>
 |------|------|
-| **分红** | 极慷慨。2023-2025年累计分红约144亿元。2024年分红率92.45%。承诺2024-2026年分红率不低于80% |
-| **回购** | 有记录，但非主要手段 |
-| **并购** | 早期并购（框架传媒等）极成功，奠定了垄断地位。新潮收购战略意义重大但对价偏高（新潮2024年仅盈利6000万） |
-| **对外投资** | **明显薄弱**。2005-2007年收购60多家公司耗资约16亿美元，其中约11亿被减记（浑水做空报告揭露）。投资数禾科技导致21.53亿减值（减值73.45%）。管理层在主业之外的资本配置纪律性存疑 |
+** Score** <unk> very generous. The cumulative share was about 14.4 billion yuan in 2023-2025. The rate was 92.45% in 2024. The commitment was no less than 80% in 2024-2026.
+<unk> Repurchase** Recorded but not principal means <unk>
+The new wave acquisition strategy is significant but high (the new wave only made 60 million dollars in 2024).
+** Outward investment** ** is clearly weak**. Over 60 companies were acquired in 2005-2007 at a cost of about $1.6 billion, of which about 1.1 billion were written off (a blank report revealed). Investment in technology led to 2,153 million impairments (a reduction of 73.45 per cent).
 
-### 核心管理团队
+# Core management team
 
-极度精简，仅三人核心团队：
+Very streamlined, with only three core teams:
 
-| 姓名 | 职务 | 说明 |
+Name/function
 |------|------|------|
-| 江南春 | 董事长/总裁 | 创始人，2026年6月卸任法定代表人 |
-| 孔微微 | 副董事长/副总裁/CFO/董秘 | 身兼四职，实质上的"二号人物" |
-| 嵇海荣 | CMO | 负责市场与品牌 |
+<unk> President/President of the Gang Nam Chun <unk> Founder of the Senate in June 2026
+<unk> Vice-President/Vice-President/CFO/Secretary-General <unk>
+The market and brands are in charge of the market.
 
-近三年核心团队零离职。高管薪酬总额1,102万元，占净利润仅0.021%——薪酬极度克制。
+The core team has left at zero for the last three years.
 
-### 诚信度评估
+# A good faith assessment
 
-| 维度 | 评价 |
+<unk> Dimensions Evaluation <unk>
 |------|------|
-| **分红承诺** | **可靠**。近三年分红率80%-167%，超额兑现。累计分红超326亿元 |
-| **回购承诺** | **不可靠**。2022年宣布回购后零执行即终止（"忽悠式回购"）。累计回购仅15.3亿元 |
-| **战略承诺** | **反复**。多次公开表态"不会收购新潮"，后反转收购 |
-| **历史瑕疵** | 2015年美国SEC就Allyes关联交易信披违规罚款5,560万美元 |
-| **综合兑现率** | 约50-60%。分红承诺可靠，但宏大愿景和非分红承诺执行力参差不齐 |
+<unk> Red commitments** <unk> reliable**. 80% - 167% overhang in the last three years.
+<unk> Repurchase commitment** <unk> Unreliability**.
+<unk> Strategic commitments**, <unk> , <unk> , **, **. Many times, publicly, say, "No new tides, no more."
+** Historical flaw** 2015 US SEC fined $55.6 million for Allyes-associated trading.
+** Combined delivery rate** <unk> about 50-60%.
 
-### 股东利益一致性
+# Shareholder interest consistency
 
-- 持股约26.5%，利益高度绑定。年薪480万但年分红收入6.5-11.3亿——几乎全部收入来自分红
-- 无主动减持记录，持股微降系收购新潮发行新股被动稀释
-- 阿里巴巴系持有8.88%，机构合计持有52.46%（165家机构）
+- about 26.5% of the share, highly tied interest. 4.8 million annual, but 655 - 113 million annual dividends - almost all of the income is from the dividends.
+- No active record of stock holdings, small stock holdings are passive dilution of new acquisitions and issuances
+- 8.88 per cent of the Alibasis population and 52.46 per cent of the total number of institutions (165 institutions)
 
-### 追问
+# Ask me
 
-> 如果创始人退休，这家公司还能保持竞争力吗？
+> If the founder retires, can the company remain competitive?
 
-**这是分众最大的隐患之一。** 核心团队仅3人，组织结构极度扁平（60-70位高管直接向江南春汇报），没有明确的接班人。江南春不仅是CEO，更是分众最大的销售员——他亲自拜访大客户，每年输出大量营销方法论（"饱和攻击""品牌引爆"等），这些概念输出本身就是销售行为。2026年6月已卸任法定代表人，但仍任董事长/总裁，意图尚不明确。
+** This is one of the greatest risks to the public.** The core team is composed of only three people, with a very flat structure (60-70 executives reporting directly to Jiang Namchun), with no clear successor. Jiang Namchun is not only CEO, but also the largest salesman in the group — he personally visits large clients and exports a large amount of marketing methodology (the "Satuking Attack" brand detonation, etc.) every year, and these concepts are in themselves sales acts.
 
-好消息是：分众的护城河主要来自物理点位的独占性，而非管理能力。即便换了CEO，电梯还在、合约还在、垄断地位不变。短期可能影响大客户关系和提价能力，但不会动摇根本。CFO孔微微身兼四职、团队极稳定也说明日常运营并不完全依赖江南春一人。
+The good news is that the widely divided moats of the moat are largely the result of the monopoly of physical locations, not management. Even with the change of CEOs, elevators are still in place, contracted, and monopolistic positions are still in place.
 
 ---
 
-## 第五部分：行业与文明趋势
+# Part V: Industry and civilizational trends
 
-### 行业是否处于"文明级范式转移"？
+# Is industry in "civilizational paradigm shift"?
 
-**否。** 电梯广告不是一个技术驱动型行业，不存在"范式转移"的风险。它的价值根基是城市化进程和商业地产——只要城市中有楼、楼中有电梯、电梯前有等待的人，这门生意就存在。
+** No.** Elevator advertising is not a technology-driven industry, and there is no risk of "model shift". Its value is based on urbanization and commercial property — as long as there are buildings in cities, buildings, elevators waiting people in front of elevators, the business exists.
 
-但分众正在经历一个**效率升级**：
-- AI广告生成：90%广告片已实现AI生成，成本从10-50万元降至2000-3000元
-- "碰一下"NFC：从品牌曝光升级为交易入口，打开效果广告收入空间
-- 数字化投放：全网推送成功率接近100%，实时监测平台已建成
+But the crowd is experiencing an **efficiency upgrade**:
+- AI advertising: 90% of the films were generated by AI, with the cost reduced from $100,000 to US$2000-3000
+- " Touch" NFC: upgrade from brand exposure to trade entry, open up the effect advertising revenue space
+- Digitally delivered: the full web-based delivery success rate is close to 100 per cent, and a real-time monitoring platform has been established
 
-### 市场规模与增长
+# Market size and growth
 
-| 维度 | 数据 |
+<unk> Dimensions <unk> Data <unk>
 |------|------|
-| 中国电梯媒体市场规模（2024年） | 超150亿元 |
-| 预计2025年 | 突破200亿元 |
-| 户外场景广告增速（2025年） | +11.8% |
-| 电梯LCD广告增速 | +12.0% |
-| 电梯海报增速 | +13.7% |
+<unk> Size of the Chinese elevator media market (2024) <unk> Over $15 billion <unk>
+We're expecting 20 billion dollars in 2025.
+<unk> The outdoors advertising has increased faster (2025) <unk> 11.8% <unk>
+♪ Elevator LCD commercials up ♪
+♪ Elevator poster up ♪ ♪ ♪ ♪ ♪ ♪ ♪ Elevator up ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪ ♪
 
-**增长驱动力**：线上流量成本持续上升（互联网广告CPM约100-300元），推动品牌预算向线下结构性转移（分众CPM仅10-50元）。
+** Growth drivers**: The cost of online flows continues to rise (an Internet advertisement of the CPM of approximately $100-300) and promotes a structural shift of the brand budget below line (the split CPM of only $10-50).
 
-### 产业价值链位置
+# The location of the industrial value chain
 
-分众处于"广告主→媒体平台→物业"价值链的核心节点。上游（物业）供给分散、下游（广告主）需求刚性，分众作为中间平台两端通吃。收购新潮后对上游的议价能力进一步增强。
+The group is located at the core of the value chain of "Adverters' Media Platforms, Property's Property". Upstream (property) supply is fragmented, downstream (advertiseors) demand is rigid, and it is shared as an intermediate platform.
 
-### 海外扩张
+# I'm expanding overseas
 
-- 已覆盖韩国、泰国、新加坡、印尼、马来西亚、越南、日本、阿联酋等约100个城市
-- 境外电梯电视约15万台（+10.3%），海报约2.6万台（+62.5%）
-- 东南亚市场收入增速超30%
-- 江南春目标：3-5年打造全球性企业
+- Some 100 cities have been covered, including Korea, Thailand, Singapore, Indonesia, Malaysia, Viet Nam, Japan, the United Arab Emirates, etc.
+- Approximately 150,000 external elevator televisions (+10.3 per cent) and about 26,000 posters (+62.5 per cent)
+- South-East Asia market revenue grew by more than 30 per cent
+- Jiang Nam Chun Target: 3-5 years to build a global enterprise
 
-### 追问
+# Ask me
 
-> 站在20年后回看，这家公司是"这个时代的标准石油"还是"昙花一现"？
+♪ Stand back and look back in 20 years, is this company "Standard Oil of the Age" or "Standing Up"?
 
-**分众更像是"这个时代的户外广告版麦当劳"——不是颠覆性创新者，而是凭借标准化复制和网络密度建立护城河的运营商。** 20年后它大概率仍然存在且盈利，但不会成为万亿级巨头。天花板在于：电梯广告的总可寻址市场有限（中国市场200-300亿量级），国际化进展缓慢，且广告本身是一个周期性行业。分众更适合被看作一只"长期现金奶牛"，而非增长故事。
+** The split is more like "the outdoor advertising version of this era, McDonald's" – not a subversive innovator, but a mosaic of standardized reproduction and network density.** It is likely to remain and profit from 20 years later, but it will not become a trillion-class giant. The ceiling is that the total location market for elevator advertising is limited (China market 20-30 billion-billion-volume), internationalization is slow, and advertising is itself a cyclical industry.
 
 ---
 
-## 第六部分：估值与安全边际
+# Part VI: Valuation and security margin
 
-### 当前市场定价（2026年6月24日）
+## Current market pricing (24 June 2026)
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|------|------|
-| 股价 | 4.86元 | 52周低位附近（4.80-8.76） |
-| 市值 | 699亿元 | |
-| PE（TTM） | 19.49x | TTM净利润约36亿（含减值影响） |
-| PE（2024年正常化） | 13.56x | 基于2024年净利润51.55亿 |
-| PB | 4.54x | 每股净资产1.07元 |
-| P/FCF | 11.05x | 基于2024年每股FCF 0.44元 |
-| FCF收益率 | 9.05% | |
-| 股息率 | 6.79% | 基于每股分红0.33元 |
+<unk> Stock price $4.86 <unk> Near 52 weeks low (4.80-8.76) <unk>
+Market value 69.9 billion yuan
+<unk> PE(TTM) <unk> 19.49x <unk> TTM net profit of approximately 3.6 billion (with impairment effect) <unk>
+<unk> PE (normalized 2024) 13.56 x <unk> based on net profit of $5.155 million in 2024
+<unk> PB 4.54x <unk> net assets of $1.07 per share
+11.05x <unk> based on FCF 0.44 per share in 2024
+FCF rate of return
+<unk> Escillation rate 6.79% <unk> Based on 0.33 dollars per share
 | EV/EBITDA | ~16x | |
 | ROE | 23.30% | |
 
-> **工具验算确认**：市值 = 4.86元 × 144.42亿股 = 701.9亿元，与报告市值699亿偏差仅0.41%，验证通过。PE = 4.86/0.2493 = 19.49x，PB = 4.86/1.07 = 4.54x，均通过精确十进制计算验证。
+> ** Instrument validation**: Market value = $486 x $144.2 million = $70.190 billion, with a deviation of only 0.41 per cent from the reported market value of $69.9 billion, certified. PE = 4.86/0.2493 = 19.49 x, PB = 4.86/1.07 = 4.54 x, all certified by an accurate decimal system.
 
-### 反向DCF：当前股价隐含了什么？
+# Inverse DCF: What does the current stock price imply?
 
-以当前股价4.86元、2024年正常化EPS 0.357元、10%折现率计算：
+Based on the current stock price of $4.86, the regularization of EPS 0.357 in 2024 and a discount rate of 10 per cent:
 
-- 当前正常化PE约13.6x，隐含市场对分众的定价约等于"零增长+高分红"模型
-- 如果分众未来10年EPS零增长但维持6.79%股息率，投资者年化回报约6.79%
-- 市场似乎定价了"分众是一只债券"——高确定性、低增长、纯靠分红回报
+- The current normalization of the PE, which implies that market pricing of the crowd is about the same as the zero growth + high red model
+- If the EPS is zero-growth but maintains a 6.79 per cent dividend rate over the next 10 years, investors will return about 6.79 per cent annually
+- The market seems to have priced a bond -- high certainty, low growth, pure red returns.
 
-### 三情景估值（3年期，工具精确计算）
+## 3 scenario valuation (3-year period, tool accurate)
 
-| 情景 | 年均EPS增速 | 目标PE | 3年后EPS | 目标股价 | 较现价涨跌 |
+The average annual rate of increase in EPS is three years later.
 |------|-----------|--------|---------|---------|----------|
-| **乐观** | 15% | 20x | 0.54元 | **10.9元** | +123.4% |
-| **中性** | 8% | 17x | 0.45元 | **7.6元** | +57.3% |
-| **悲观** | 0% | 13x | 0.36元 | **4.6元** | -4.5% |
+** EXPOINTED** ** 15% ** 20 x <unk> 0.54 ** $10.9 ** <unk> 123.4% **
+**Men** 8% <unk> 17x <unk> 0.45 ** $7.6 ** <unk> 57.3% <unk>
+** Pessimism** 0%<unk> 13x<unk> 0.36 ** $4.6 **<unk> - 4.5% <unk>
 
-**情景假设说明**：
-- **乐观（15%增长）**：新潮收购完成后协同效应释放，广告单价提升10-15%，海外业务贡献增量。对应净利润从51.5亿增至约78亿
-- **中性（8%增长）**：收购顺利但协同低于预期，主业温和增长，海外贡献有限。对应净利润增至约65亿
-- **悲观（0%增长）**：反垄断否决收购或附加严苛条件，宏观持续低迷，广告预算继续萎缩
+** Scenario note**:
+- **optimal (15% growth)**: Synergy released after the new tide was completed, advertising unit prices increased by 10-15%, and overseas operations increased their contribution. Corresponding net profits increased from $5.15 billion to approximately $7.8 billion
+- **neutral (8% growth)**: successful but less coordinated acquisitions, moderate growth in the main industry and limited overseas contributions. Corresponding net profits increased to about 6.5 billion
+- ** Pessimism (0% growth)**: anti-monopoly veto or imposition of stringent conditions, macro depression and continued shrinking advertising budgets
 
-### 历史估值对比
+# Compare historical valuations
 
-| PE区间 | 2020-2025年范围 | 当前位置 |
+<unk> PE Inter-Pate <unk> Range 2020-2025
 |--------|---------------|---------|
-| 最高 | 86.66x（2021年初） | |
-| 中位数 | ~22x | |
-| 最低 | 11.51x（2022年底） | |
-| **当前（正常化）** | **13.56x** | **接近历史低位** |
+<unk> Highest 86.66x (early 2021) <unk>
+Medium ~ 22x ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+<unk> Minimum <unk> 11.51x (end of 2022) <unk>
+** Current (normal)** ** 13.56 x** ** Near historical low** **
 
-| PB区间 | 2020-2025年范围 | 当前位置 |
+<unk> PB Inter-Pate
 |--------|---------------|---------|
-| 最高 | 12.45x | |
-| 中位数 | ~6x | |
-| 最低 | 3.26x | |
-| **当前** | **4.54x** | **低于中位数** |
+<unk> Highest <unk> 12.45x <unk>
+Medium ~ 6x<unk>
+The minimum number of <unk> 3.26x <unk>
+** Current** <unk> ** 4.54x** <unk> ** Below median** <unk>
 
-### 同行估值对比
+# # Peer valuation comparison
 
-| 公司 | PE | EV/EBITDA | 净利率 | 说明 |
+<unk> PE <unk> EV/EBITDA net interest rate
 |------|-----|----------|--------|------|
-| 分众传媒（正常化） | ~13.6x | ~16x | ~42% | 电梯媒体垄断 |
-| Lamar（美国REIT） | ~28x | ~19.6x | ~25% | 美国户外广告龙头 |
-| JCDecaux（法国） | ~13-15x | ~5.4x | ~10% | 全球户外广告 |
-| Clear Channel | 亏损 | ~12-14x | 亏损 | 高杠杆，已破产重组 |
+<unk> (normal) ~ 13.6 x 16 x 42%
+Lamar (USA REIT) ~ 28x 19.6x ~ 25%
+JCDecaux (France) ~ 13-15x<unk> 5.4x<unk> 10%
+Clear Channel <unk> Loss ~ 12-14x ~ Loss ~ High Leveraging ~ Bankruptcy Reorganization ~
 
-> 分众的净利率（42%）远超全球同行，正常化PE（13.6x）低于美国同行但与JCDecaux相当。考虑到分众的利润率优势和垄断地位，当前估值偏低。
+> The split net interest rate (42%) is far higher than the global peer, and the normal PE (13.6x) is lower than the United States colleague but is comparable to JCDecaux. Given the split’s profit margin advantage and monopoly position, the current valuation is undervalued.
 
-### 追问
+# Ask me
 
-> 如果股市明天关闭5年，你愿意以这个价格持有吗？
+> If the stock market closes for five years tomorrow, will you hold it at this price?
 
-**愿意。** 以4.86元买入，正常化PE约13.6x，FCF收益率9.05%，股息率6.79%。即便零增长，5年累计分红回报约34%。如果收购新潮成功且经济温和复苏（中性情景），5年后股价+分红的总回报可达80-100%。关键前提是：分众的物理垄断地位不会在5年内被颠覆——基于上述分析，这个前提是高度确定的。
+** Will.** Buyed at $4.86, regularizing the PE by about 13.6x, FCF by 9.05%, and dividends by 6.79%. Even if it does not, the cumulative return on the five-year bonus is about 34%. If the new tide is successfully acquired and the economy is moderate and recovering (neutral scenario), the total return on the equity price plus the bonus will be 80-100% after five years. The key premise is that the physical monopoly of the crowd will not be reversed in five years — based on the above analysis, which is highly defined.
 
 ---
 
-## 第七部分：综合决策备忘录
+# Part VII: Memorandum on integrated decision-making
 
-### 汇总评估
+## Summary assessment
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| 生意质量 | **优秀**。物理垄断、高毛利、强现金流、轻资本。本质是"注意力不动产" | 95% |
-| 护城河 | **宽且正在加宽**。独占资源+规模效应双重壁垒，收购新潮后接近完全垄断 | 90% |
-| 管理层 | **合格偏上但有瑕疵**。利益高度绑定（年薪480万、年分红6-11亿），分红承诺可靠。但对外投资屡屡失败、承诺兑现率仅50-60%、核心团队仅3人无接班人 | 75% |
-| 最大风险 | **宏观周期性**。2022年已证明收入可在一年内暴跌36%。其次是反垄断风险和增长天花板 | 85% |
-| 行业趋势 | **稳定但非高增长**。电梯场景不会消失，但TAM有限（200-300亿量级），不是"文明级"机遇 | 90% |
-| 估值 | **有吸引力**。正常化PE 13.6x处于历史低位附近，FCF收益率9%，股息率6.8%。三情景中位值7.6元 | 85% |
+Physical monopolies, high Maori, strong cash flows, light capital. The essence is "care real estate."
+The moat <unk> wide and expanding**. The two barriers of exclusive resource plus scale effect, after the acquisition of the new tide, are close to full monopoly 90%
+<unk> Management ** qualification bias but flawed**. High interest levels (48 million annual salary, $6001 million annual bonus) are tied, and red promises are reliable. But foreign investment has failed, promises have been only 50-60%, and only three core teams have no replacements 75% <unk>
+<unk> Maximum risk <unk> macrocyclical**. It has been shown that income could drop by 36% in 2022. Second, anti-monopoly risk and growth ceiling <unk> 85%
+The elevator scene will not disappear, but the TAM will be limited (from 20 to 30 billion in magnitude), not "civilizational" opportunities 90%.
+<unk> Valuation <unk> attractive**. Normalized PE 13.6x is near a historically low level, with FCF yield of 9% and dividends of 6.8%.
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **建议在4.5-5.5元区间分批建仓**。当前股价接近悲观情景底部（4.6元），向下空间有限（约5%），向上中性空间约57%。这是一个"赔率好、赢面大"的不对称机会。但需注意这不是成长股，买入的核心逻辑是"低估的现金奶牛+分红回报"。 |
-| **持仓者** | **继续持有**。在反垄断审批明确之前不建议追加，但也不应卖出。6.8%的股息率本身就是极好的持有回报。如果股价回落至4.5元以下可考虑加仓。 |
-| **卖出信号** | (1) 反垄断否决收购且股价跌破4元（失去并购逻辑）；(2) 连续2个季度主业净利润同比下滑超20%（非一次性因素）；(3) 毛利率跌破55%（价格战重启或成本失控）；(4) 管理层大规模减持 |
-| **加仓信号** | (1) 反垄断审批通过；(2) 收购后首个完整季度验证协同效应（广告单价提升或成本下降）；(3) 股价跌至4元以下（对应正常化PE约11x，历史底部区域） |
+<unk> Empty warehouser** ** Proposed for a batch of 4.5-5.5 yuan**. Current stock prices are close to the bottom of pessimistic scenarios ($4.6), limited down space (about 5%), and about 57% of upper neutral space. This is an asymmetrical opportunity for "good odds, big wins". But note that this is not a growing stock, and the core logic of buying is "undervalued cash cow plus red returns".
+<unk> <unk> The holder of the warehouse** <unk> the holder of the stock** continues to hold**. No additional, but no sale should be recommended until the AOC is clear. 6.8% of the dividends are in themselves excellent returns.
+<unk> **Sale signal** <unk> (1) Antitrust veto over acquisitions and stock price falls by $4 (lost merger logic); (2) net profit from major industries for two consecutive quarters is 20 per cent higher than the same time (non-one-time factor); (3) Māori rate falls by 55 per cent (price war restart or cost out of control); (4) management massive reduction
+<unk> **Stems of the khokim** <unk> (1) approval of the anti-monopoly; (2) validation of synergies (advertisement unit price increases or lower costs) for the first full quarter of the acquisition; (3) stock prices falling below $4 (comparable to normal PE about 11x, historical bottom region) <unk>
 
-### 综合评述
+# # General comments
 
-> **从生意质量角度看**：分众是一门教科书级的好生意——物理垄断创造定价权，轻资本运营产生充裕现金流，高分红回馈股东。如果只能用一个词形容，就是"注意力的不动产"。它的弱点不在于生意本质，而在于增长天花板——这是一门"赚当下钱"的生意，不是"赚未来钱"的生意。
+> ** ** From a business quality perspective**: The divide is a good business at the textbook level - physical monopolies create pricing rights, light capital operations generate sufficient cash flows, and high dividends to shareholders. If one word is used, it is "real estate of attention." Its weakness is not the nature of the business, but the growth ceiling -- it is a business that "earns money now" and not a business that "earns future money".
 
-> **从护城河角度看**：收购新潮后分众在梯媒领域接近完全垄断，护城河处于20年来最宽的状态。但垄断也可能带来松懈——失去竞争对手后的创新动力下降值得长期关注。
+> ** From the perspective of the moat**: The acquisition of new tides has led to a near-total monopoly in the espriteau, which has been the widest in 20 years. But monopolies can also bring laxity - the decline in the incentive for innovation after losing competitors is a matter of long-term concern.
 
-> **从风险角度看**：必须承认分众是一只"伪防御股"——毛利率70%、净利率40%看起来很稳，但2022年收入暴跌36%证明它对宏观周期高度敏感。投资者应将其视为"带有周期属性的高息股"而非"确定性成长股"。
+> ** From a risk perspective**: It must be recognized that the split is a "pseudo-defence stock" - the 70% Māori rate and the 40% net interest rate look stable, but the 36% drop in 2022 of income confirms that it is highly sensitive to the macrocycle. Investors should consider it a "supreme interest-bearing stock" rather than a "determinative growth unit".
 
-> **从估值角度看**：4.86元的价格意味着市场已经充分定价了所有悲观预期——低增长、收购不确定性、宏观风险。这恰恰创造了不对称的赔率结构：向下有底（分红托底+物理资产支撑），向上有弹性（收购协同+经济复苏）。当前是一个"概率加权后的正期望值"买点。
+> ** From a valuation perspective**: The price of $4.86 means that the market has fully priced all pessimistic expectations - low growth, uncertainty in acquisitions, macro risk. This creates an asymmetrical structure of the odds: bottom down (backed by red bottom plus physical assets), elasticity (collaborative acquisition plus economic recovery).
 
-**建议价格区间**：
-- 合理买入区间：4.0 - 5.5元（正常化PE 11-15x）
-- 合理估值中枢：7.0 - 8.0元（正常化PE 19-22x）
-- 乐观估值上限：10 - 11元（正常化PE 27-30x，需验证收购协同+增长加速）
+** Proposed price ranges**:
+- Reasonable purchase of space: 4.0 - 5.5 (normal PE 11-15x)
+- Reasonable valuation hub: $7.0 - $8.0 (normal PE 19-22x)
+- Optimal ceiling: $10 - $11 (normal PE 27-30x, to verify buy-in synergies + acceleration of growth)
 
 ---
 
-## 附录一：关键数据交叉验证记录
+# Appendix I: Cross-checking records of key data
 
-### 市值验算
+# Market value count
 
 ```
-股价: 4.86 CNY × 总股本: 144.42亿股 = 计算市值: 701.9亿 CNY
-报告市值: 699亿 CNY
-偏差: 0.41% ✅ 通过
+Stock price: 4.86 CNY x Total stock: 144.2 million shares = calculated market value: 70.19 billion CNY
+Reported market value: 69.9 billion CNY
+Flexibility: 0.41% <unk> Passed
 ```
 
-### 营收与利润交叉验证
+# The harvest crosses the profit
 
-| 数据项 | 来源1（年报） | 来源2 | 来源3 | 偏差 | 结果 |
+Source 1 (annual report)
 |--------|-------------|-------|-------|------|------|
-| 2024年营收 | 122.62亿 | 122.62亿 | 122.62亿 | 0% | ✅ |
-| 2024年净利润 | 51.55亿 | 51.55亿 | 51.55亿 | 0% | ✅ |
-| 2025年营收 | 127.59亿 | 127.59亿 | 127.59亿 | 0% | ✅ |
-| 2025年净利润 | 29.46亿 | 29.46亿 | 29.46亿 | 0% | ✅ |
+<unk> Collection in 2024 <unk> 1262 million <unk> 1262 million <unk> 1262 million <unk> 0% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> 2024 net profit <unk> 51.55 billion <unk> <unk> <unk> <unk> <unk> 1.55 billion <unk> 0% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> In 2025, the collection of <unk> 127.59 billion
+Net profit in 2025
 
-### 估值指标验算
+# # valuation indicator validation
 
 ```
 PE(TTM) = 4.86 / 0.2493 = 19.49x ✅
 PB = 4.86 / 1.07 = 4.54x ✅
 P/FCF = 4.86 / 0.44 = 11.05x ✅
 FCF Yield = 0.44 / 4.86 = 9.05% ✅
-股息率 = 0.33 / 4.86 = 6.79% ✅
+Equities = 0.33 / 4.86 = 6.79%
 ROE = 0.2493 / 1.07 = 23.30% ✅
 ```
 
-### 三情景估值验算
+# Three scenarios valuation
 
 ```
-乐观: EPS 0.357 × (1.15)^3 = 0.54 × 20x = 10.9元 (+123.4%) ✅
-中性: EPS 0.357 × (1.08)^3 = 0.45 × 17x = 7.6元 (+57.3%) ✅
-悲观: EPS 0.357 × (1.00)^3 = 0.36 × 13x = 4.6元 (-4.5%) ✅
+Optimism: EPS 0.357 x (1.15) § 3 = 0.54 × 20 x 10.9 (+123.4%) <unk>
+Neutral: EPS 0.357 x (1.08) § 3 = 0.45 × 17 x $7.6 (+57.3%) <unk>
+Pessimism: EPS 0.357 x (1.00) <unk> 3 = 0.36 × 13x = 4.6 (- 4.5%) <unk>
 ```
 
 ---
 
-## 附录二：AI分析置信度 vs 投资确定性
+# Appendix II: AI Analytic Confidence vs Investment Validity
 
-| 维度 | AI分析置信度 | 投资确定性 | 说明 |
+<unk> dimension <unk> AI analysis of confidence <unk> Investment certainty <unk>
 |------|------------|-----------|------|
-| 财务数据准确性 | **高**（95%） | — | 上市公司公开披露，多源验证 |
-| 商业模式理解 | **高**（90%） | — | 生意本质简单清晰 |
-| 护城河判断 | **高**（90%） | **高** | 物理垄断可观察、可验证 |
-| 增长预测 | **中等**（60%） | **中等** | 受宏观经济、政策、竞争等外部因素影响大 |
-| 管理层评价 | **中等**（70%） | **中等** | 公开信息有限，需要长期跟踪 |
-| 收购新潮影响 | **中低**（50%） | **低** | 反垄断结果未知，协同效应难以量化 |
-| 估值合理性 | **中等**（75%） | **中高** | 估值模型可靠，但假设的增速和PE区间有主观性 |
+Financial data accuracy ** high ** (95%) <unk> Public disclosure by listed companies, multi-source validation <unk>
+♪ Business model understanding ♪ ♪ High (90%) ♪
+<unk> Adjudication of the moat <unk> High (90%) <unk> High ** Physical Monopoly Observable, Verifier
+<unk> Growth projections <unk> Medium** (60%) <unk> Medium** <unk> High impact of external factors such as macroeconomics, policies, competition etc.
+Management evaluation ** Medium** (70%) ** Medium** Public information limited and requires long-term follow-up
+<unk> Impact of new acquisitions <unk> Medium and low ** (50%) <unk> Low ** Antimonopoly results are unknown and synergies are difficult to quantify <unk>
+<unk> Rationale of valuation ** Medium (75%) ** Medium (75%) ** Medium (H) ** High (H) <unk> Valuation model is reliable, but the assumed speed of increase and PE inter-separation are subjective
 
-**核心结论**：
+** Core conclusions**:
 
-- **基于充分数据的结论**：分众的生意本质、护城河强度、财务质量——这些判断有高确定性，不会因新数据而改变
-- **基于有限信息的推理**：收购协同效应、未来增长率、宏观经济走向——这些判断的置信度较低，建议投资者持续跟踪
-- **AI研究的独特盲区**：客户投放意愿的边际变化、物业续约谈判的实际情况、管理层的真实战略意图——这些需要一线调研补充
+- ** Conclusion based on sufficient data**: The business nature of the crowd, the strength of the moat, financial quality - these judgements are highly certain and will not be altered by new data
+- ** Deeds based on limited information**: acquisition synergies, future growth rates, macroeconomic trends — these are less credible and recommend continuous follow-up by investors
+- **AII study unique blind zone**: marginal changes in client willingness to invest, actual conditions of negotiations for renewal of property, real strategic intentions of management - these need to be supplemented by first-line research
 
 ---
 
-## 附录三：主要数据来源
+# Appendix III: Main data sources
 
-1. 分众传媒年报（巨潮资讯 cninfo.com.cn）
-2. 新浪财经 finance.sina.com.cn
-3. 东方财富 eastmoney.com
-4. 同花顺 10jqka.com.cn
-5. Investing.com（实时行情）
-6. 亿牛网 eniu.com（历史PE/PB）
-7. 证券时报 stcn.com
-8. 知乎投资研究专栏
-9. CTR媒介智讯
-10. NielsenIQ 分众案例研究
-11. 东吴证券、广发证券、首创证券研报
-12. 21经济网（收购新潮报道）
-13. 澎湃新闻（反垄断分析）
-14. 央视新闻（电梯广告监管报道）
-15. OAAA 美国户外广告协会（全球行业数据）
-16. 雪球投资研究（空方论点）
-17. 界面新闻（深度调研报道）
+1. Annual press reports (cninfo.com.cn)
+2. New wave finance.sina.com.cn
+3. Eastern wealth
+4. Cozy 10jqka.com.cn
+5. Investing.com (real-time)
+6. Billion cattle net eniu.com (historical PE/PB)
+7. Securities Times stcn.com
+8. Knowledge of investment research columns
+9. CTR Media Ideas
+10. NielsenIQ Disclaimer Case Study
+11. East Wu Securities, Open Securities, First-initiated Securities Research
+12. Economic Network 21 (New Trends in Acquisitions Report)
+13. News (antimonopoly analysis)
+14. Public eye news (elevator advertising supervision coverage)
+15. OAAAA American Association for Outdoor Advertising (Global Industry Data)
+16. Snowball Investment Study (empty-party argument)
+17. Interface news (in-depth research)

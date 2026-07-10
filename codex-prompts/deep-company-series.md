@@ -1,5 +1,5 @@
 ---
-description: "AI Berkshire slash entry for 深度公司系列：8 篇长文拆一家公司."
+description: "AI Berkshire slash entry for See XX Company (Insight series): 3-8 long stories to tear down a company."
 argument-hint: $ARGUMENTS
 ---
 

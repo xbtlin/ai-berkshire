@@ -1,433 +1,433 @@
-# 赤子城科技（09911.HK）投资研究报告
+# Research report on Rhodes City Technology (09911.HK)
 
-**日期**：2026年6月23日
-**股票代码**：09911.HK
-**当前股价**：7.94港元（折合人民币约7.30元）
-**市值**：约112亿港元（~97亿人民币）
-**总股本**：14.13亿股
-
----
-
-## 信息丰富度评级：B级（信息适中）
-
-赤子城科技2019年港股上市，券商覆盖中等（11位分析师），以华西、天风、国海等中小券商为主。公司年报披露较规范，但分产品/分地区的财务细节有限（如各产品DAU、分区域收入占比等为估算值）。英文覆盖极少。
-
-**AI研究局限性声明**：
-- 社交产品的核心竞争力（用户粘性、社区氛围、主播质量）无法通过财务数据充分评估
-- 中东/东南亚等新兴市场的政策风险难以量化
-- 部分估算数据（如分产品收入、区域收入占比）基于券商研报推算，标注了置信度
-- 小市值港股的流动性折价和市场关注度不足可能导致信息不对称——这既是风险也是机会
-
-**偏见自查**：
-- [x] "低PE+高增长"的组合很诱人，需警惕是否因港股小市值折价和行业风险而合理
-- [x] 11位分析师全部"强烈买入"，可能存在覆盖偏差（只有看好的券商才会覆盖小市值股）
-- [x] 社交产品生命周期短，当前高增长未必可持续
+** Date**: 23 June 2026
+** Stock code**:09911.HK
+** Current share price**: HK$7.94 (approximately US$ 7.30)
+** Market value**: approximately HK$11.2 billion (~K$97 billion)
+** Total equity**: 1,413 million shares
 
 ---
 
-## 第一步：核心数据总览
+# Information abundance rating: B (median)
 
-### 收入结构（2025年报）
+The company’s annual report discloses more regular, but the financial details of the sub-products/sub-regions are limited (e.g., DAU, subregional income share, etc.).
 
-| 板块 | 收入（亿元） | 占比 | 同比增速 |
+**A. Study limitations statement**:
+- Core competitiveness of social products (user sticky, community atmosphere, broadcast quality) cannot be adequately assessed through financial data
+- Policy risks in emerging markets such as the Middle East/South-East Asia are difficult to quantify
+- Partial estimates (e.g., sub-product income, regional income share) based on the voucher vendor ' s study, with confidence indicated
+- The low market value of the small market share liquidity discounts and insufficient market attention may lead to information asymmetry - both risks and opportunities
+
+** Prejudice self-examination**:
+- [x] The combination of "low-pe-high growth" is attractive and requires caution as to whether it is justified by the small market value discounts and industry risks.
+- [x] All 11 analysts "better buy" with possible coverage deviations (only good-looking coupons cover small market value shares)
+- [x] Social products have a short life cycle and current high growth is not necessarily sustainable
+
+---
+
+# Step 1: A core data overview
+
+# # Income structure (Report 2025)
+
+♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The ♪ The The The The The ♪ The ♪ The The The The ♪ The ♪ The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The
 |------|------------|------|---------|
-| **社交业务** | 61.4 | 89% | +32.9% |
-| **创新业务**（游戏+电商） | 7.5 | 11% | +59.3% |
-| **合计** | 68.89 | 100% | +35.3% |
+** Social business** 61.4 <unk> 89% <unk> 32.9 <unk>
+**Innovation** (game + power) <unk> 7.5 <unk> 11 <unk> + 59.3 <unk>
+** Total ** 68.89 <unk> 100% <unk> + 35.3% <unk>
 
-### 核心产品表现（2025年）
+## Performance of core products (2025)
 
-| 产品 | 类型 | 收入趋势 | 利润增速 | 定位 |
+<unk> Product type <unk> Income trends <unk> profit growth <unk> location <unk>
 |------|------|---------|---------|------|
-| **SUGO** | 陪伴社交 | +80%+ | +100%+ | 已成为单月流水最高产品，增长引擎 |
-| **TopTop** | 游戏社交 | +70%+ | +100%+ | 快速爬坡期 |
-| **MICO** | 直播社交 | 小幅下滑 | — | 旗舰老产品，收入占比下降 |
-| **YoHo** | 语音社交 | 稳定 | — | 中东核心产品 |
-| **Blued** | LGBTQ+社交 | 稳定 | — | 2022年收购，已扭亏为盈 |
+**SUGO** <unk> Social + 80% + + 100% <unk> <unk> has become the single-month water top product, the growth engine <unk>
+<unk> Toptop** <unk> Game Socialization + 70% + <unk> 100% <unk> Rapid climb period
+♪ The world's greatest ever ♪
+**YoHo** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+**Blued** ** LGBTQ+ Social <unk> Stable <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-### 近5年财务指标
+# # Financial indicators for the last five years
 
-| 指标 | 2021年 | 2022年 | 2023年 | 2024年 | 2025年 |
+Indicators 2021 2022 2023 2024 2025
 |------|--------|--------|--------|--------|--------|
-| 营业收入（亿元） | 23.6 | 28.0 | 33.1 | 50.9 | 68.9 |
-| 收入增速 | +100% | +19% | +18% | +54% | +35% |
-| 归母净利润（亿元） | -2.86 | 1.30 | 5.13 | 4.80 | 9.35 |
-| 经调整净利润（亿元） | — | — | — | 5.83 | 11.60 |
-| 毛利率 | — | — | 52.1% | 51.2% | 55.9% |
-| 经营利润率 | — | — | 16.7% | 14.3% | 12.9% |
-| EPS（人民币） | -0.29 | 0.11 | 0.45 | 0.42 | 0.74 |
+Operating income (millions of yuan)
+<unk> Income growth + 100% <unk> + 19% <unk> + 18% <unk> + 54% <unk> 35% <unk>
+<unk> Net profit from repatriation (millions of yuan) <unk> -286 <unk> 1.30 <unk> 5.13 <unk> 4.80 <unk> 9.35 <unk>
+<unk> Adjusted net profit (millions of yuan) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> 11.60 <unk>
+<unk> Māori ratio <unk> <unk> <unk> 52.1% <unk> 51.2% <unk> 55.9% <unk>
+<unk> Operating profitability <unk> <unk> <unk> <unk> <unk> 16.7% <unk> 14.3% <unk> 12.9% <unk>
+EPS (RMB) -0.29
 
-*5年收入CAGR约30%。2024年归母净利润同比-6.3%系2023年有一次性并购收益，剔除后实际增长。2025年经调整净利润+99%，重回高增。*
+*The five-year income of CAGR is about 30%. The return to the net profit in 2024 was the same as the ratio of 6.3%, which was the one-time M & As gain in 2023, and the net profit after graduation was eliminated.* The adjusted net profit + 99% in 2025 was a return to higher profits.*
 
-### 资产负债表
+# Balance sheet
 
-| 指标 | 2024年 | 说明 |
+Indicators 2024
 |------|--------|------|
-| 现金及等价物 | 20.49亿元 | 净现金状态 |
-| 经营性现金流 | 10.63亿元 | 2025年13.8亿（+35%） |
-| 有息负债 | 极低 | 净负债率-94.1%（净现金） |
-| 资产负债率 | ~45% | 健康 |
+<unk> Cash and equivalent <unk> 2,049 million <unk> net cash position <unk>
+<unk> Operating cash flow <unk> 1,063 million <unk> 1.38 billion (+35 per cent) in 2025 <unk>
+* Interest-bearing liabilities *
+<unk> Asset and liability ratio ~ 45%
 
-### 当前估值（工具验算）
+## Current valuation (tools validation)
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|------|------|
-| 股价 | 7.94港元 / ~7.30元 | 52周区间6.94-14.09港元 |
-| 市值 | 112亿港元 | 工具验算偏差0.17% ✅ |
-| PE（2025 EPS 0.74） | **9.9x** | 工具验算 ✅ |
-| PE（经调整EPS ~0.82） | **~8.9x** | 基于经调整净利11.6亿 |
-| PB | **4.42x** | 工具验算 ✅ |
-| ROE | **44.9%** | 极高 |
-| P/FCF | **7.45x** | 自由现金流充裕 |
-| FCF Yield | **13.4%** | 工具验算 ✅ |
-| 股息率 | 0% | 从未分红，以回购代替 |
+*The total value of the project is US$ 2,704 per month.
+The market value is HK$11.2 billion, the tool's calculation was 0.17% deviation.
+<unk> PE(2025 EPS 0.74)<unk> 9x**<unk> Tool <unk>
+<unk> PE (adjusted EPS ~ 0.82) <unk> ~ 8.9x** <unk> based on adjusted net gain of $1.16 billion
+<unk> PB<unk> **4.42x**<unk> Tool measurement
+♪ ROE ♪ 44.9% ♪ Extremely high ♪
+<unk> P/FCF<unk> 7.45x** <unk> Free cash flow sufficient <unk>
+FCF Yield<unk> **13.4%** <unk> Tool <unk>
+<unk> Sing rate 0% <unk> never rededicated, purchased instead of <unk>
 
-### 分析师一致预期
+# The analyst's the same as expected
 
-| 指标 | 数据 |
+Indicators Data
 |------|------|
-| 评级 | **强烈买入**（11买/0持/0卖） |
-| 目标均价 | **14.04港元**（+77%上行空间） |
-| 2026E EPS | 0.70元 |
-| 2027E EPS | 1.16元 |
-| 2028E EPS | 1.32元 |
+<unk> Rating <unk> ** Strong buy-in** (11 buy/0 buy/0 sell) <unk>
+<unk> Average target price ** HK$14.04** (+77% upboard space) <unk>
+2026E EPS = 0.70
+<unk> 2027E EPS <unk> 1.16 <unk>
+<unk> 2028E EPS <unk> 1.32 US$ <unk>
 
-### 关键数据交叉验证记录
+## Key data cross-checking records
 
-| 验证项 | 结果 | 来源 |
+<unk> Validation item <unk> Results <unk> Source <unk>
 |--------|------|------|
-| 市值验算（7.94×14.13亿股） | ✅ 112.2亿港元，偏差0.17% | 工具验算 |
-| 2025年营业收入 | ✅ 68.89亿元，三来源一致 | 年报、证券之星、猎云网 |
-| 2025年归母净利润 | ✅ 9.35亿元，三来源一致 | 年报、经济观察网、华西证券 |
-| PE | ✅ 9.86x（按人民币折算） | 工具验算 |
-| ROE | ✅ 44.9% | 工具验算 |
+<unk> Market value (794 x 1,413 million shares) <unk> HK$ 112.2 million, or a margin of 0.17 per cent <unk> Tool <unk>
+<unk> Business income in 2025 <unk> $8,889 million, three sources of common value <unk> Annual Report, Securities Star, cloud hunting net <unk>
+The year 2025, net profit from the mother 935 million yuan, three sources of revenue, the annual report, the Economic Watch, the Wassie Securities
+<unk> PE <unk> 9.86x (converted in renminbi) <unk> Tool <unk>
+<unk> ROE <unk> 44.9%
 
 ---
 
-## 第二步：生意本质分析 — 段永平"对的生意"
+# Step 2: Business nature analysis - a piece of "right business"
 
-### 一句话定义
+# One word of definition
 
-**赤子城科技本质上是一家"把中国直播社交玩法卖到中东和东南亚"的出海互联网公司。它用虚拟礼物打赏模式在新兴市场复制了国内秀场直播的成功，同时不断扩展产品矩阵降低单一爆款风险。**
+** Chizi City Technology is essentially an Internet company that sells Chinese live social play to the Middle East and South-East Asia. It replicates the success of domestic show live in emerging markets in a virtual gift mode, while expanding the product matrix to reduce the risk of single blasts**
 
-### 商业模式解析
+# Business Mode Parsing
 
-**核心变现逻辑——虚拟礼物经济**
+** Core realization logic — virtual gift economy**
 
 ```
-用户在直播间/聊天室 → 向主播/匹配对象送虚拟礼物（豪车、钻石等）
+Users in live studios/chatrooms <unk> Virtual gifts to anchor/matching objects (cars, diamonds, etc.)
          ↓
-平台抽成40-60% → 赤子城收入
-主播/公会分成40-60% → 记为收入成本
+The platform is 40-60%.
+Maincast/public split 40-60% as income cost
 ```
 
-这个模式的关键特征：
-1. **高毛利**（55.9%）：虚拟商品边际成本接近零
-2. **高复购**：社交/情感需求是持续性的，"氪金送礼"有成瘾性
-3. **强经营杠杆**：收入增长35%但研发费率反降1.27pct（AI赋能）
+Key features of this model:
+1. ** High Māori** (55.9%): Virtual commodity marginal costs are close to zero
+2. ** High Repurchase**: Social/emotional needs are ongoing and kryptonite gifts are addictive
+3. ** Strong leverage**: 35% increase in revenue but 1.27 pct (AI enabling)
 
-### 为什么是中东？
+# Why the Middle East?
 
-中东是赤子城的核心优势市场（占社交收入约50%+），这不是偶然：
-- **社交压抑**：保守的伊斯兰文化限制了线下社交（尤其男女社交），线上社交成为刚需
-- **付费能力强**：海湾国家人均GDP高，打赏意愿强烈
-- **年轻人口**：中东60%人口在30岁以下，天然的社交产品用户群
-- **竞争较少**：Western社交产品（Tinder等）对中东本地化不足，中国出海公司填补了空白
+The Middle East is the central niche market for Akiko City (about 50 per cent + social income), not by chance:
+- **Social repression**: Conservative Islamic culture limits socialization (especially between men and women) and online socialization becomes a necessity
+- ** High capacity to pay**: Gulf countries have high per capita GDP and strong willingness to reward
+- **Young population**: 60% of the population in the Middle East is under 30 years of age, natural social product user group
+- ** Less competitive**: Western social products (Tinder et al.) are not sufficiently localized for the Middle East, and China Seaboard companies fill the gap
 
-### 经营杠杆分析
+# Run the leverage analysis
 
-| 费率 | 2024年 | 2025年 | 变化 | 说明 |
+Rates 2024 2025 Change
 |------|--------|--------|------|------|
-| 毛利率 | 51.2% | 55.9% | +4.7pct | 规模效应+产品结构优化 |
-| 销售费率 | 25.4% | 32.9% | +7.5pct | 买量成本上升（**关注点**） |
-| 研发费率 | 6.6% | 5.3% | -1.3pct | AI提升效率 |
-| 管理费率 | — | — | — | — |
+<unk> Māori 51.2% <unk> 55.9% <unk> 4.7pc<unk> <unk> Scale effect + product structure optimization <unk>
+<unk> Sales rate 25.4% <unk> 32.9% <unk> +7.5pct <unk> Purchase cost increase (** Concern**) <unk>
+<unk> R & D rates 6.6% <unk> 5.3% <unk> -1.3pct <unk> AI efficiency enhancement <unk>
+<unk> Management rate <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-**警告信号**：销售费率从25.4%飙升至32.9%，意味着获客成本在快速上升。如果这个趋势持续，利润率将承压。这是"增长甜蜜期终将结束"的早期信号。
+** Warning signal**: Sales rates have jumped from 25.4% to 32.9%, meaning that the cost of getting a visitor is rising rapidly. If this trend continues, the profit margin will be stressed. This is the early sign of "The end of the sweet period of growth."
 
-> **段永平式追问**：这门生意好在哪？
+> **neveral**: Where is the business?
 >
-> **好在"虚拟礼物"模式的暴利和复购**——毛利率56%，边际成本几乎为零，用户的社交/情感需求驱动持续付费。用中国验证过的商业模式（秀场直播）复制到中东/东南亚，这是一种"降维打击"。但这门生意的风险也很明显：(1) 社交产品的生命周期通常很短，用户可能随时迁移到新平台；(2) 获客成本在快速上升；(3) 高度依赖应用商店渠道，一次下架可能致命。如果只能用一句话描述：**"在别人的土地上（中东/东南亚）、别人的平台上（Google Play/App Store）做的好生意。"** 这既是优势（巨大的市场机会），也是脆弱性的来源。
+> ** Good for the "virtual gift" model ** — Māori 56%, marginal cost almost zero, user social/emotional demand driven on a continuous basis. Copying the business model (live show) from China to the Middle East/South-East Asia is a "deep blow". The risk of this business is also clear: (1) the life cycle of social products is usually short and users may move to new platforms at any time; (2) the cost of access is rising rapidly; (3) a high reliance on the application of shop lines can be fatal at a time. If only one sentence is used to describe: ** "Good business done on other people's land (Middle East/South-East Asia), on others' platforms."** This is both an advantage (a huge market opportunity) and a source of vulnerability.
 
 ---
 
-## 第三步：护城河评估 — 巴菲特"经济护城河"
+# Step three: A moat river assessment -- Buffett "The Economic moat."
 
-### 五类护城河逐一验证
+# Five-class moats to verify
 
-| 护城河类型 | 强度 | 验证 |
+♪ The moat type ♪
 |-----------|------|------|
-| **品牌/定价权** | ★★☆☆☆ | 虚拟礼物定价由平台设定，理论上有定价权。但用户对价格敏感度低（消费主要由情感驱动而非理性）。品牌层面，MICO/SUGO在中东有一定知名度，但远未达到"品牌护城河"级别 |
-| **转换成本** | ★★★☆☆ | 中等。用户的社交关系链（好友、关注的主播）构成一定转换成本。但社交产品的"历史"并不值钱——用户可以轻松在新平台重建关系 |
-| **网络效应** | ★★★☆☆ | 局部网络效应存在——在中东特定国家，MICO/SUGO的用户密度足够高，匹配效率好。但总MAU约3,175万，分摊到各产品后不构成强壁垒 |
-| **规模效应** | ★★★☆☆ | 虚拟商品无边际成本，收入规模越大利润率越高（55.9%毛利率验证了这一点）。但与TikTok/Facebook相比规模太小 |
-| **本地化运营壁垒** | ★★★★☆ | **这是赤子城最有价值的护城河**。2024年获沙特RHQ牌照（首家中国社交企业）、全球20+运营中心、深入理解中东文化（设计阿拉伯风格礼物、斋月运营策略等）。这种"知道怎么在中东做社交"的能力是隐性壁垒，新进入者需要数年才能积累 |
+<unk> Brand/pricing rights** Virtual gift pricing is set by the platform and theoretically has pricing rights. But users are less sensitive to prices (consumption is mostly emotional rather than rational). At the brand level, MICO/SUGO has a certain profile in the Middle East, but it is far from "brand moat" level.
+<unk> ** Convert cost** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Network effects** <unk> Local network effects exist - in selected Middle East countries, MICO/SUGO has a sufficiently high user density and a good match. However, total MAU is about 31,75 million, and distribution to products does not constitute a strong barrier
+<unk> **Scaling effect** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+** Localized operational barriers** <unk> This is the most valuable moat of the town**. Saudi RHQ (the first Chinese social company), 20+ global operations centre, and deep understanding of Middle Eastern culture (design of Arab style gifts, Ramadan operations strategy, etc.). This ability to "know how to socialize in the Middle East" is a hidden barrier, and new entrants will need to accumulate over the years.
 
-### 护城河的本质
+# The nature of the moat
 
-赤子城的护城河不是技术壁垒或品牌壁垒——而是**"在别人不愿去或不会去的市场深耕"的运营壁垒**。中东社交市场对很多西方和中国公司来说太小、太复杂、文化差异太大。赤子城愿意在利雅得设总部、招募本地主播、理解阿拉伯文化，这种"脏活累活"本身就是壁垒。
+The Baekko City mound is not a technical or brand barrier – but a ** "deep-farming barrier in markets where others do not want to go or will not go." Social markets in the Middle East are too small, too complex, and culturally diverse for many Western and Chinese companies. The city is willing to host its headquarters in Riyadh, recruit its own host, and understand Arab culture.
 
-但这种壁垒是**可衰减的**——一旦中东市场被证明足够有利可图，更大的竞争对手（TikTok Live、Bigo Live）会加大投入。
+But this barrier is ** degenerable** — greater input from larger competitors (TikTok Live, Bigo Live) will be achieved once the Middle East market has proved sufficiently profitable.
 
-### 护城河趋势
+# The moat of the river
 
-**过去5年：逐步建立**——从工具应用转型社交，在中东扎根，获得沙特RHQ牌照，构建多产品矩阵。
-**未来5年：可能变窄**——中东社交赛道正变得拥挤，2025年沙特等四国新上线74,256个社交App。竞争加剧是必然趋势。
+** The last five years: Building ** - Transforming Society from Tool Application, Rooting in the Middle East, obtaining Saudi RHQ license plates, and building multi-product matrices.
+** Next five years: Possible narrow ** - The Middle East social track is becoming crowded, with 74,256 social Apps in 2025 in four countries, Saudi Arabia. Increased competition is a necessary trend.
 
-> **巴菲特式追问**：10年后这条护城河还在吗？什么能摧毁它？
+> **Buffettian **: 10 years later, is this moat still there? What can destroy it?
 >
-> **大概率不在了——至少不是以现在的形态。** 社交产品的迭代周期通常是3-5年，10年后MICO和SUGO可能已经被新产品取代。能摧毁它的力量：(1) TikTok/Meta等巨头认真进入中东社交直播市场；(2) 新的社交范式出现（如AR/VR社交）；(3) 中东政府加强对外资互联网平台的监管。赤子城的生存依赖于持续推出新产品并保持本地化优势——这是一场永不结束的跑步机。
+> ** The approximate rate is missing — at least not in the current form.** The iterative cycle of social products is usually 3 to 5 years, and after 10 years MICO and SUGO may have been replaced by new products. It destroys its power: (1) the giants TikTok/Meta are seriously entering the Middle East social live market; (2) new social paradigms (e.g. AR/VR socialization); (3) Middle Eastern governments are strengthening their regulation of foreign Internet platforms.
 
 ---
 
-## 第四步：逆向思考与风险清单 — 芒格"反过来想"
+# Step four: Reverse thinking and risk list - Manger "inverted"
 
-### 失败路径清单
+# Failed path list
 
-| 失败路径 | 概率 | 影响 | 说明 |
+<unk> Failed path <unk> probabilities <unk> influence <unk> description <unk>
 |----------|------|------|------|
-| **核心产品被应用商店下架** | 中 | 极高 | 社交/直播App因内容违规被下架是行业常态。一次核心市场的下架可能导致收入断崖 |
-| **中东政策收紧** | 中 | 高 | 内容审查、数据本地化、外资运营限制。沙特/阿联酋正在加强互联网监管 |
-| **获客成本持续飙升** | 高 | 高 | 销售费率已从25.4%升至32.9%。如果ROI转负，增长模式崩塌 |
-| **社交产品生命周期耗尽** | 中高 | 高 | MICO已上线7年+，收入已开始下滑。SUGO/TopTop能否接棒是关键不确定性 |
-| **LGBTQ+产品（Blued）政策敏感** | 中 | 中 | 中东是全球对LGBTQ+最不友好的地区之一，Blued在这些市场存在政策风险 |
-| **竞争加剧导致市场份额流失** | 中 | 中高 | TikTok Live、Bigo Live、Yalla等加大中东投入 |
-| **港股小市值流动性陷阱** | 高 | 中 | 日均成交额有限，机构难以大额建仓/退出 |
-| **创始人控制力不足** | 低 | 中 | 24.2%持股无超级投票权，理论上存在控制权风险 |
+** Core products are downed by application stores** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+** Middle East policy tightening** High content review, data localization, foreign capital operating restrictions. Saudi Arabia/UA are strengthening Internet regulation
+** The cost of getting visitors has been rising steadily** <unk> High<unk> High<unk> Sales rate has increased from 25.4% to 32.9% if ROI turns negative, growth mode collapses <unk>
+<unk> ** Social product life cycle depletion** <unk> Medium and High <unk> <unk> MICO has been on line for seven years + and income has started to decline. SUGO/TopTop is a key uncertainty
+<unk> Policy sensitivity of LGBTQ+ products** <unk> Middle East is one of the most unfriendly regions of the world for LGBTQ+ where Blue has policy risks <unk>
+<unk> ** Increased competition led to loss of market share**
+** Small market value liquidity trap for Hong Kong stock**
+** The founder is not sufficiently controlled** low <unk> 24.2% shareholdings do not have super-voting rights, theoretical control risks <unk>
 
-### 历史类比
+# History analogy
 
-**正面类比：2015-2018年的欢聚时代（YY）**
-- 相似点：直播社交模式、虚拟礼物变现、海外扩张（Bigo Live）
-- YY从中国直播延伸到东南亚，股价从$25涨到$140
-- 教训：但YY最终被百度收购私有化，Bigo Live增长放缓。直播社交的天花板比预期更快到达
+** Positive analogy: The Era of Gathering 2015-2018**
+- Similarity: live social mode, virtual gift realization, overseas expansion (Bigo Live)
+- YY went live from China to South-East Asia, and stock prices went up from $25 to $140.
+- Lessons: But YY was eventually privatized by 100-percent takeover, and Bigo Live slowed down. The social ceiling arrived faster than expected.
 
-**负面类比：2019-2021年的触宝科技**
-- 相似点：中国出海移动互联网公司、从工具转型内容/社交、港股上市
-- 结局：转型不成功，收入停滞，退市
-- 教训：出海互联网公司的转型失败率很高，成功转型是少数
+** Negative analogy: 2019-2021 Tsingue technology**
+- Similarities: China Maritime Mobile Internet Corporation, conversion from tool content/socialization, listing of Hong Kong shares
+- End of story: failed transition, stagnant income, retreat
+- Lessons learned: The transition rate of Internet companies in China is high and successful is a minority
 
-### 偏误自查
+# I'm wrong to check myself
 
-- **幸存者偏差**：我们只看到赤子城转型成功了，但99%从工具转型社交的出海公司都失败了
-- **锚定效应**：14港元的分析师目标价和52周高点14.09港元形成锚点。但分析师目标价对小市值港股的准确性值得怀疑
-- **叙事偏差**："中东社交蓝海"的叙事很性感，但蓝海可能很快变红海
+- ** Survivors' deviation**: We only saw the transformation of the town of Akiko succeed, but 99% of the shipping companies that have transformed their society from tools failed.
+- **Assort effect**: The analysts' target price of $14.09 and 52 weeks' height form anchor.
+- ** Narrative deviation**: The narrative of "Society Blue Sea in the Middle East" is sexy, but the blue sea may soon turn red.
 
-> **芒格式追问**：我最可能在哪里犯错？聪明人为什么不买？
+> ** Man format questioning**: Where do I most likely make mistakes? Why not buy smart people?
 >
-> 最可能的错误是**高估社交产品的生命周期和护城河**。聪明人不买的理由：(1) 港股小市值+零分红，机构配置价值低；(2) 社交产品的爆款窗口期通常2-3年，MICO已见顶，SUGO/TopTop能否持续是未知数；(3) 获客成本飙升（+7.5pct）暗示增长质量下降；(4) 中东市场虽好，但地缘政治和文化合规风险难以预测；(5) 一家112亿港元市值的公司，任何单一市场的政策变化都可能造成30%+的股价波动。
+> The most likely errors are** overestimated the life cycle of social products and moat river**. The reasons why smart people do not buy: (1) small market value of the port shares + zero cents, low institutional allocation value; (2) social product boom windows usually run for 2-3 years, MICO is high, and SUGO/Toptop is uncertain; (3) the surge in the cost of access implies a decrease in the quality of growth (+7.5 pct); (4) the Middle East market is good, but geopolitical and cultural compliance risks are unpredictable; and (5) a single market value company with a market value of HK$112 billion, any policy change that could result in 30 per cent + price volatility.
 
 ---
 
-## 第五步：管理层评估 — 段永平"对的人" + 巴菲特"管理层诚信"
+# Step five: Management assessment - "The Right Man" # "Management Integrity"
 
-### 创始人 刘春河
+# Founder, Liu Chun Ha
 
-1985年生，山东人，北京邮电大学研究生。2009年在济南创业，从安卓培训起步，经历三次关键转型：
-1. 安卓培训 → 出海工具应用（Solo Launcher）
-2. 工具应用 → 社交娱乐（MICO）
-3. 单产品 → 多产品矩阵（SUGO/TopTop/Blued）
+Born in 1985 and from Shandong, a graduate student at Beijing Post and Telecommunications University.
+1. Andre Training: Application of the Outing Tool (Solo Launcher)
+2. Tools application — social entertainment (MICO)
+3. Single product Multi-product Matrix (SUGO/Toptop/Blued)
 
-### 关键决策复盘
+# Key decision-making remix
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| **2013** | 从安卓培训转型出海工具 | Solo Launcher在海外获得大量用户，积累出海经验 | ★★★★☆ |
-| **2018-19** | 从工具转型社交（推出MICO） | 成功，2019年港股上市。极少有出海公司成功完成工具→社交转型 | ★★★★★ |
-| **2022** | 收购蓝城兄弟（Blued） | 不到一年扭亏为盈，拓展LGBTQ+细分市场 | ★★★★★ |
-| **2023-25** | 推出SUGO/TopTop | 两款产品均实现100%+利润增长，成为新增长引擎 | ★★★★★ |
-| **2025** | AI全面落地（Token消耗+30倍） | 研发费率反降1.3pct，效率提升显著 | ★★★★☆ |
-| **2025/06** | 总部迁至香港 | 全球化升级，有利于融资和人才 | ★★★★☆ |
+**2013** <unk> Transition from Andre to the sea travel tool <unk> Solo Launcher has acquired a large number of users overseas, accumulated experience in the sea
+**2018-19** <unk> Socialization from Tool (MIO) <unk> Successfully listed in 2019. Very few offshore companies successfully completed the social transformation of tools
+**2022** The acquisition of Blue City Brothers **
+**2023-25** Launch SUGO/Toptop <unk> both products with 100% profit growth to become new growth engines
+**2025** AI full landing (Token consumption + 30 times) <unk> R& D rate in reverse by 1.3 pct, with significant efficiency gains
+**2025/06** Relocation of headquarters to Hong Kong
 
-### 股东利益一致性
+# Shareholder interest consistency
 
-| 维度 | 评估 |
+<unk> Dimensions <unk> Evaluation <unk>
 |------|------|
-| 创始人持股 | 刘春河+李平合计24.2%，利益基本一致 |
-| 增持/减持 | 2023年刘春河增持90万股并**锁定3年**，无减持记录 |
-| 分红 | 从未分红（0%），但2024-2026年累计回购超5亿港元 |
-| 薪酬 | 未见异常高薪报道 |
+♪ The founder holds the shares ♪
+<unk> Increase/decrease in holdings of 900,000 shares of Liu Chun River in 2023 and ** lock-in for 3 years** no reduction in holding records <unk>
+<unk> No red (0%) but cumulative repurchases in 2024-2026 exceeded HK$500 million
+♪ The way you're getting paid ♪
 
-**管理层最大的加分项**：三次成功转型。在出海互联网行业，从工具到社交的转型成功率极低（参考触宝、猎豹等失败案例）。赤子城不仅转型成功，还持续孵化出新增长产品（SUGO/TopTop）。这反映了管理层的战略眼光和执行力。
+** The largest sub-item of management**: Three successful transformations. In the offshore Internet industry, the transition from tools to socialization has been extremely low (reference to failed cases such as the Tsing Bo and the cheetah). Not only has the city been successful in its transformation, but it has also continued to hatch new growth products (SUGO/TopTop). This reflects management ' s strategic vision and implementation.
 
-**减分项**：从未分红，虽然以回购代替，但对港股投资者来说，分红是重要的信任信号。
+** Less sub-item**: No dividends have been received, although they have been replaced by buy-backs, but they are an important trust signal for port equity investors.
 
-> **段永平式追问**：如果CEO退休，这家公司还能保持竞争力吗？
+> **Plus Eternity**: If CEO retires, will the company remain competitive?
 >
-> **不确定**。赤子城的核心竞争力——战略转型能力和新产品孵化能力——高度依赖创始团队。刘春河+李平的组合（一个做战略、一个做海外运营）是公司的核心。如果他们退出，公司可能变成一个"靠存量产品吃老本"的平台，逐渐被新进入者蚕食。好在创始人仅40岁，短期内没有退休风险。
+The core competitiveness of Akiko City - strategic transformational capacity and incubation of new products - is highly dependent on the founding team. Liu Chunhe+Li Ping's combination (a strategy, an overseas operation) is the core of the company. If they withdraw, the company may become a platform for "food on stock" and gradually become a prey for new entrants. It is good that the founders are 40 years old and have no risk of retirement in the short term.
 
 ---
 
-## 第六步：行业与文明趋势 — 李录"文明演进框架"
+# Step 6: Industry and civilizational trends - Lee Siu ' s Framework for Civilization Evolution
 
-### 行业趋势
+# Industry trends
 
-**全球社交应用市场**正在经历两个结构性变化：
+** The global market for social applications** is undergoing two structural changes:
 
-**1. 新兴市场互联网社交渗透**
+**1. Emerging market social penetration**
 
-中东、东南亚、拉美、非洲等地区的移动互联网渗透率仍在快速提升。中东60%人口在30岁以下，智能手机普及率高但社交产品供给不足。这是一个"中国互联网模式向新兴市场输出"的历史窗口期。
+Mobile Internet penetration is still rising rapidly in the Middle East, South-East Asia, Latin America, and Africa. Sixty% of the population in the Middle East is under 30 years of age, and smartphone penetration is high, but social goods are not available.
 
-**2. AI重塑社交产品**
+**2. AI re-engineering social products**
 
-AI正在改变社交产品的三个关键环节：
-- **匹配效率**：AI推荐算法让用户更快找到感兴趣的人/主播
-- **内容生产**：AI虚拟主播降低内容供给成本
-- **跨语言社交**：AI实时翻译让不同语言的用户能直接交流
+AI is changing three key links in social products:
+- ** Matching efficiency**: AI recommends algorithms that allow users to find interested persons/hosts more quickly
+- ** Content production**: AI Virtual hosts reduce content supply costs
+- ** Trans-linguistic socialization**: AI real-time translation allows users of different languages to communicate directly
 
-### TAM分析
+# TAM analysis
 
-| 市场 | 规模 | 增速 |
+The market, the market, the size, the speed, the speed.
 |------|------|------|
-| 全球社交应用收入（2024） | 超60亿美元 | +9.2% |
-| 全球社交应用市场（2030E） | 超3,100亿美元 | CAGR ~26% |
-| 中东社交应用市场 | 快速增长中 | — |
+<unk> Global social applications revenue (2024) <unk> over $6 billion <unk> 9.2% <unk>
+<unk> Global Social Applications Market (2030E) <unk> over $310 billion <unk> CAGR ~ 26% <unk>
+♪ The Middle East social application market ♪
 
-**赤子城的TAM渗透率极低**——68.9亿元收入仅占全球社交应用市场的2%左右。理论天花板远未到达。
+** The TAM penetration rate in Akiko City is extremely low** – $6.89 billion in income is about 2% of the global market for social applications. The theoretical ceiling is far from reaching.
 
-### 文明趋势判断
+# Civilization trend judgment
 
-社交是人类的基本需求，但**社交产品不是文明级基础设施**——它们是建立在别人基础设施上的应用层产品。赤子城依赖Google Play/App Store分发、依赖AWS/阿里云提供基础设施、依赖各国政策允许运营。这决定了它的脆弱性远高于基础设施型公司。
+Socialization is a basic human need, but ** social goods are not a civilizational infrastructure** – they are applications based on infrastructure of others. The city depends on Google Play/App Street for distribution, on AWS/Aariun for infrastructure provision, and on national policies to allow it to operate. This determines its vulnerability far beyond infrastructure-type companies.
 
-> **李录式追问**：站在20年后回看，这家公司是"这个时代的标准石油"还是"昙花一现的3Com"？
+> **Li's follow-up**: Stand back 20 years later, is this company "Standard Oil of the Age" or "Standing 3Com"?
 >
-> **既不是标准石油也不是3Com**——更可能是"这个时代的陌陌/YY"。社交娱乐公司很少能成为持久的垄断者——它们的命运是在一波又一波的产品迭代中生存。赤子城如果能持续孵化新产品（像字节跳动那样），可能存活并壮大；如果某一天新产品孵化失败，就会像陌陌/YY一样进入衰退。20年后这家公司大概率还存在，但形态可能完全不同。
+> ** Not standard oil nor 3Com** - more likely "the strangeness of the times/YY" - social entertainment companies rarely become lasting monopolies -- their fate survives in waves of products and waves. The city of Akiko may survive and grow if it continues to hatch new products (like bytes) and if it fails to hatch one day, it will enter recession like an unfamiliar/YYY. Twenty years later, the company will probably exist, but its shape may be different.
 
 ---
 
-## 第七步：估值与安全边际 — 巴菲特"内在价值" + 段永平"对的价格"
+# Step seven: valuation and security margin -- Barfitt "inner value" + price of "right"
 
-### 当前市场定价（工具验算）
+# Current market pricing (tools validation)
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|------|------|
-| 股价 | 7.94港元 / ~7.30元 | — |
-| 市值 | 112亿港元 | ✅ 验算通过 |
+<unk> Share price <unk> HK$ 7.94 / ~ $7.30 <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The market value is HK$11.2 billion.
 | PE（2025 GAAP EPS 0.74） | **9.9x** | ✅ |
-| PE（2025 经调整EPS ~0.82） | **~8.9x** | — |
-| PE（2026E EPS 0.70） | **~10.4x** | 分析师预测 |
+<unk> PE(2025 adjusted EPS ~ 0.82) <unk> ~8.9x**<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> PE (2026E EPS 0.70) <unk> <unk> 10.4x** <unk> Analyst forecast
 | PB | **4.42x** | ✅ |
-| ROE | **44.9%** | ✅ 极高 |
+♪ The ♪ ♪ The ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the the ♪ the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the
 | P/FCF | **7.45x** | ✅ |
-| FCF Yield | **13.4%** | ✅ 非常高 |
-| EV/EBITDA | ~10x | 估算 |
+FCF Yield <unk> 13.4% <unk> very high <unk>
+<unk> EV/EBITDA<unk> 10x<unk> Estimation
 
-### 三情景估值（工具精确计算）
+#3 scenario valuation (tool precision)
 
-基于2025年EPS 0.74元，3年预测期：
+Based on EPS 0.74 in 2025 and projected for the three-year period:
 
-| 情景 | EPS年增速 | 3年后EPS | 目标PE | 目标价（人民币） | 目标价（港元） | 涨跌幅 |
+<unk> Situations <unk> EPS annual acceleration <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> 3 years later <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 |------|----------|---------|--------|---------------|---------------|--------|
-| **乐观** | 35% | 1.82元 | 15x | 27.3元 | ~29.7港元 | **+274%** |
-| **中性** | 15% | 1.13元 | 10x | 11.3元 | ~12.3港元 | **+54%** |
-| **悲观** | -10% | 0.54元 | 6x | 3.2元 | ~3.5港元 | **-56%** |
+<unk> <unk> <unk> 35% <unk> 1.82 <unk> 15 x <unk> 27.3 <unk> 29.7 HK$ <unk> 274%** <unk>
+<unk> Medium** 15% <unk> 1.13 <unk> 10 x 11.3 <unk> HK$ 12.3 <unk> 54%** <unk>
+** Pessimism** - 10% <unk> 0.54 <unk> 6x <unk> 3.2 <unk> 3.5 HK$ **- 56% ** <unk>
 
-*乐观假设：SUGO/TopTop维持高增长，AI赋能提效，多产品矩阵成功扩张，PE向互联网行业中位数靠拢。中性假设：增长放缓至15%，维持当前PE。悲观假设：核心产品生命周期衰退，获客成本失控，或重大合规事件。*
+*optimal assumption: SUGO/Toptop maintains high growth, AI is strong, multi-product matrixes are expanding successfully, and PE is closing towards the median Internet industry. The neutral assumption is that growth slows to 15%, maintaining the current PE. Pessimistic assumption is that core products have a declining life cycle, lost their client costs, or major compliance events.*
 
-### 反向DCF分析
+# Reverse DCF analysis
 
-当前PE 9.9x、FCF Yield 13.4%隐含的预期非常保守：
-- 市场仅定价了"年均10-15%增长+行业平均估值"的预期
-- 如果公司能实现2025-2028年20-30%的复合增长（分析师预测），当前估值存在显著低估
+The current projection of the PE 9.9x, FCF Yield 13.4% is very conservative:
+- Markets price only the "average annual growth of 10-15% plus average industry valuation" projection
+- If the company can achieve a 20-30% compound growth in 2025-2028 (analyst forecast), there is a significant underestimation of the current valuation
 
-### 同行估值对比
+# # Peer valuation comparison
 
-| 公司 | 股票 | PE(TTM) | PS | 增速 | 市值 |
+<unk> Stock (TTM) <unk> PS <unk>
 |------|------|---------|-----|------|------|
-| **赤子城科技** | 09911.HK | **~10x** | ~1.5x | +35% | 112亿港元 |
-| Yalla Group | YALA | ~12x | ~4x | ~15% | ~$12亿 |
-| 欢聚集团 | BIGO | ~10x | ~1x | ~5% | ~$30亿 |
-| Hello Group（陌陌） | MOMO | ~7x | ~1x | ~0% | ~$25亿 |
+**Scope technology** <unk> 09911.HK<unk> 10x**<unk> 1.5x<unk> 35% HK$11.2 billion
+<unk> Yalla Group <unk> YALA ~12x<unk> 4x<unk> 15%<unk> $1.2 billion<unk>
+♪ The big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big, big,
+Hello Group (unknown)
 
-赤子城的增速远高于同行（+35% vs 0-15%），但PE相当。如果市场给予增速溢价，估值有提升空间。
+The city of Akiko is growing at a much faster rate than its peers (+35% vs 0-15%), but the PE is equivalent. If the market gives a premium on the acceleration, there is room for improvement.
 
-### 自身历史估值
+# My own history values
 
-52周股价区间6.94-14.09港元，当前7.94接近52周低位。2025年初一度冲到14港元（PE约19x），随后因港股整体回调而下跌。
+The 52-week stock price range is $6.94-14.09, and currently 7.94 is close to 52 weeks low.
 
-> **段永平式追问**：如果股市明天关闭5年，你愿意以这个价格持有吗？
+> **Plus Yongping**: Would you hold it at this price if the stock market were closed for five years tomorrow?
 >
-> **谨慎地愿意**。理由：(1) PE不到10倍，FCF Yield 13.4%，即使完全不增长，自由现金流回报也不错；(2) ROE 45%说明这是一门赚钱效率极高的生意；(3) 管理层三次成功转型的记录给了一定信心。但有两个"不睡不着觉"的风险：(1) 社交产品5年后可能已经过气；(2) 中东政策的黑天鹅。所以仓位不能太重——这是一笔"对了赚很多、错了认赔"的投资，适合5-10%仓位。
+> ** Be cautiously willing**. Reason: (1) PE less than 10 times, FCF Yield 13.4%, even if not growing at all, is a good return on free cash flow; (2) ROE 45% indicates that this is a highly profitable business; (3) management's record of three successful transformations gives some confidence. But there are two risks of "snap-in-the-sleeper": (1) social products may have passed through after five years; (2) Middle Eastern policy black swans. So the position cannot be too heavy -- it's a "synchronous, misclaimed" investment, which is 5-10% of the size.
 
 ---
 
-## 第八步：综合决策备忘录
+# Step eight: A comprehensive decision-making memorandum
 
-### 汇总评估
+## Summary assessment
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| **生意质量**（段永平） | 虚拟礼物模式暴利（毛利56%、ROE 45%），复购强。但生意建立在"别人的土地、别人的平台"上，脆弱性不可忽视 | ★★★☆☆ |
-| **护城河**（巴菲特） | 本地化运营是核心壁垒，但不够深——社交产品的护城河本质上都是"跑步机上的护城河"，需要不断奔跑 | ★★★☆☆ |
-| **管理层**（段永平+巴菲特） | 三次成功转型极为罕见，创始人增持锁定3年，无减持。执行力和战略眼光获得验证 | ★★★★☆ |
-| **最大风险**（芒格） | 应用商店下架、中东政策变化、获客成本失控、社交产品生命周期衰退 | ★★★★☆ |
-| **文明趋势**（李录） | 顺应"中国互联网模式出海"和"新兴市场数字化"趋势，但不是文明级基础设施 | ★★★☆☆ |
-| **估值**（巴菲特+段永平） | PE 10x、FCF Yield 13.4%、增速35%——估值具有吸引力，市场明显给予了"港股小市值+社交产品"的双重折价 | ★★★★☆ |
+** ** Quality of business** <unk> Virtual gift model <unk> (56% Māori, 45% ROE) with strong repurchases. But business is based on "other people's land, others' platform," and vulnerability cannot be ignored
+Localization is a core barrier, but not deep enough - the social goods moat is essentially a moat on a jockey, and it needs to run.
+** Management** (Long-Ping + Buffett) <unk> Three successful transitions are rare, with the founder locked in for three more years without loss.
+<unk> Maximum risk** (Mung) <unk> Application store landing, Middle East policy changes, out of control of the cost of getting visitors, decline in the life cycle of social products <unk>
+** Civilization trends** (Li Jie) <unk>
+** Valuation** (Buffett+Ping) <unk> PE 10x, FCF Yield 13.4%, speed increase 35% - Valuation is attractive, the market apparently gives a double discount to "small market value of the Hong Kong stock plus social products"
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **可小仓位建仓（3-5%）**。当前7.94港元接近52周低位，PE不到10倍，FCF Yield超13%，估值具有吸引力。但需意识到这是一笔"高赔率但有风险"的投资——不是核心持仓，而是卫星仓位。建议分两次买入（当前+若跌至6.5-7港元加仓） |
-| **持仓者** | **继续持有**。基本面（收入+35%、利润+95%）强劲，估值便宜。但建议设置7港元以下的心理止损线——如果基本面恶化（如Q2增速骤降或重大合规事件），果断止损 |
-| **卖出信号** | 核心产品被主要市场应用商店下架；季度收入增速跌破10%且获客成本继续上升；管理层大规模减持；中东出台针对外资社交平台的限制政策 |
-| **加仓信号** | 股价跌至6-6.5港元区间（PE <8x），且基本面未恶化；SUGO/TopTop进入新的大型市场（如印度/巴西）并表现良好；公司宣布首次分红（信心信号）；获得大型机构投资者增持 |
+** Empty warehouser** ** Small warehouse construction (3-5%). ** The current HK$ 7.94 is close to 52 weeks low, PE is less than 10 times lower, FCF Yield is over 13%, and the valuation is attractive. But it is important to recognize that this is a "high-cost but risky" investment - not a core warehouse, but a satellite warehouse.
+<unk> The warehousekeeper** <unk> The owner continued to hold**. Basics (income + 35%, profit + 95%) are strong and are cheap to value. But it is proposed to set a mental cut-off line below HK$7 - if the fundamentals deteriorate (e.g., Q2 surges or major compliance events), to stop the damage decisively
+<unk> ** Signals sold** Core products are taken down by major market application stores; quarterly revenue growth rates of 10 per cent and client costs continue to rise; management is significantly reduced; Middle East policy restrictions on foreign social platforms are in place
+<unk> **Standar signal** <unk> Stock price dropped to HK$6-6.5, with no deterioration in base (PE < 8x); SUGO/Toptop entered and performed well in new large markets (e.g. India/Brazil); companies announced their first bonus (confidence signals); and secured increased institutional investor ownership
 
-### 合理价格区间（港元）
+# # Reasonable price range (port$)
 
-| 情景 | 3年目标价 | 假设条件 |
+<unk> Scenario <unk> 3 year target price <unk>
 |------|----------|---------|
-| 乐观 | **20-30港元** | SUGO/TopTop维持高增长，PE回升至15x |
-| 中性 | **11-13港元** | 增速放缓至15%，PE维持10x |
-| 悲观 | **3-5港元** | 核心产品衰退或重大合规事件 |
+<unk> Port 20-30** <unk> SUGO/Toptop maintained high growth and PE recovered to 15 x <unk>
+<unk> Neutral <unk> HK$11-13** <unk> Slows up to 15%, PE maintains 10x <unk>
+<unk> Pessimism ** HK$3-5** Core product decline or major compliance event <unk>
 
-### 四位大师模拟点评
+# Four masters simulated the reviews
 
-> **巴菲特**："这种生意我看不懂——社交产品的用户今天在这里、明天可能就走了。我需要能看到10年后确定还在赚钱的生意，而社交App无法给我这种确定性。但我承认，PE不到10倍、ROE 45%、FCF Yield 13%的组合在任何行业都是诱人的。如果你理解这个行业，这可能是一笔好投资——但不是我的菜。"
+> **Buffett**: "This business I don't understand -- social product users are here today and probably leave tomorrow. I need to see a business that is certain to be making money after 10 years, and social app can't give me that certainty. But I admit that the PE is less than 10 times, ROE 45%, FCF Yield 13% combination is attractive in any industry. If you understand this industry, it could be a good investment -- not my food."
 
-> **芒格**："反过来想——为什么这么赚钱的公司只值10倍PE？市场不是傻瓜。答案是：港股小市值折价+社交产品不确定性+中东地缘风险。这些折价有一部分是合理的（社交产品确实有周期），有一部分是过度的（10倍PE for 35%增速在任何市场都偏低）。如果你能承受50%的下跌风险，这可能值得一赌。"
+> **Mung**: "Cut back, why does a company that makes so much money worth only 10 times PE? The market is not a fool. The answer is: the small market value discounts for Hong Kong shares + uncertainty for social products + geo-risk in the Middle East. These discounts are partly reasonable (social products do have cycles), and partly excessive (10 times the 35% increase is low in any market). If you can afford 50% of the downside risk, it may be worth a bet."
 
-> **段永平**："我最看重的是管理层的三次成功转型——这说明团队有学习能力和战略判断力。从安卓培训到出海工具到社交直播到多产品矩阵，每一步都踩对了。这种创始人值得投一票。但仓位不能太重——社交产品的不确定性太高，我不会在这种标的上下重注。"
+> **Place Yongping**: "I value most the three successful changes in management -- which means that teams have learning skills and strategic judgement. From Andre training to tools to social broadcasting to multi-product matrices, each step is right. This founder deserves a vote. But the warehouse cannot be too heavy -- social product uncertainty is too high, and I will not place a heavy bet on that mark."
 
-> **李录**："中国互联网模式向新兴市场输出是一个有意思的趋势——15年前美国把互联网模式输出到全世界，现在轮到中国了。赤子城在中东的位置，有点像10年前TikTok在东南亚。但最终能否成为一家持久的公司，取决于它能否从'一个个产品的运营商'变成'一个社交生态系统的构建者'。如果始终在'做产品-产品过气-做新产品'的循环里，规模可以做大但价值很难持续。"
-
----
-
-## AI分析置信度 vs 投资确定性
-
-### 基于充分数据的高置信度结论
-
-1. **财务数据可靠**——2025年收入68.89亿（+35%）、经调整净利11.6亿（+99%）、毛利率55.9%。三来源交叉验证通过
-2. **估值确实便宜**——PE 10x、FCF Yield 13.4%、ROE 45%在互联网行业中属于低估水平。工具验算确认
-3. **管理层有能力**——三次成功转型、创始人增持锁定3年、5亿港元回购计划。公开信息支撑
-
-### 基于有限信息的中等置信度推理
-
-4. **SUGO/TopTop的增长持续性**——当前增速70-100%非常高，但社交产品的高增长期通常2-3年。能否持续是最大不确定性
-5. **获客成本趋势**——销售费率+7.5pct是警告信号，但可能因新产品投放期而暂时偏高
-6. **中东市场竞争格局**——赤子城目前领先，但TikTok Live等强敌虎视眈眈
-
-### 数据不足的低置信度判断
-
-7. **各产品的具体DAU/MAU和分区域收入**——公司披露不够细致，仅有总MAU和收入大类
-8. **主播生态的健康度和留存率**——核心竞争要素但无公开数据
-9. **Blued在中东市场的政策风险**——LGBTQ+产品在保守地区的合规边界模糊
-
-### 需要一手验证的问题清单
-
-由于B级信息丰富度，以下问题建议通过产品体验和行业调研补充：
-
-1. **亲自下载MICO/SUGO/TopTop**：体验产品质量、用户活跃度、付费引导流程、内容质量
-2. **观察中东应用商店排名**：关注MICO/SUGO在沙特/阿联酋App Store畅销榜的位置稳定性
-3. **调研中东主播生态**：了解主播分成比例、主播留存率、公会管理模式
-4. **关注Google Play合规记录**：查看MICO等产品是否有被下架/警告的历史
-5. **跟踪获客成本趋势**：2026年Q1-Q2的销售费率是否继续上升，是判断增长质量的关键
-
-**总结**：赤子城是一家**"高增长、低估值、但有风险"**的出海互联网公司。如果你相信中国互联网模式出海的长期趋势、愿意承受社交产品的周期性风险、并且理解港股小市值的流动性折价，当前PE 10x / FCF Yield 13%提供了不错的风险收益比。但这不是一笔"确定性投资"——它更像是一张"赔率不错的彩票"，适合作为卫星仓位（3-5%），而非核心持仓。
+> **Li Jie**: "China Internet model exports to emerging markets -- the US exported Internet mode to the world 15 years ago, now China. The location of Akiko City in the Middle East is a bit like TikTok 10 years ago in South-East Asia. But ultimately it will be a sustainable company, depending on whether it can move from 'the operator of one product' to 'the builder of a social ecosystem'. If it is always in the cycle of 'product-product-over-product-product-product-making', it can be large but very valuable."
 
 ---
 
-*报告生成日期：2026年6月23日*
-*数据来源：公司年报（2024-2025）、证券之星、经济观察网、猎云网、DoNews、华西证券研报、天风证券研报、Investing.com、富途牛牛*
-*关键数据均通过 financial_rigor.py 工具交叉验证*
-*本报告仅供研究参考，不构成投资建议*
+# AI analyze confidence vs investment certainty
+
+# # High confidence conclusions based on sufficient data
+
+** Financial data reliable** — Income in 2025 of $6,889 million (+35 per cent), adjusted net gains of $1,160 million (+99 per cent), Māori rate of 55.9 per cent, cross-checked by three sources
+**The valuation is indeed cheap** — PE 10x, FCF Yield 13.4%, ROE 45% are undervalued in the Internet industry.
+** Management capacity** — three successful transitions, with the founder holding a lockdown of HK$500 million for three years and a back purchase program.
+
+# Based on the medium confidence of limited information
+
+**SuGO/TopTop growth sustainability** — the current rate of increase is 70-100% very high, but the high growth period for social products is usually 2-3 years. Sustainability is the greatest uncertainty.
+** Trends in cost of access** - Sales rate +7.5 pct is a warning signal, but may be temporarily higher due to the release period of new products
+**The Middle East market competition pattern** — The town of Akiko is now leading, but powerful enemies like TikTok Live are still in the dark
+
+# # Low confidence judgement with insufficient data
+
+** Specific DAU/MU and subregional revenues per product** - Unvented by companies, with only total MAU and broad income categories
+** Health and retention rates of the host ecology** - Core competitive elements but no publicly available data
+**blued policy risks in Middle East markets** - LGBTQ+ products have blurred compliance boundaries in conservative areas
+
+# A list of questions that needs to be verified
+
+Given the wealth of information at level B, the following issues are suggested to be supplemented by product experience and industry research:
+
+1. **Deep download of MICO/SUGO/TopTop**: experience product quality, user activity, fee-direction process, content quality
+2. ** Observation of Middle East appliance shop ranking**: concern about the stability of the position of MICO/SUGO on the Saudi/UA Apple Street best market list
+3. ** Study of the Middle East main broadcast ecology**: understanding the proportion of the main broadcaster, the retention rate of the main broadcaster, the management model of the Communion
+** Focus on Google Play compliance records**: Check whether products such as MICO have a history of being taken down/alerted
+5. **Tracking on the cost of visitors**: whether the sales rate of Q1-Q2 continued to rise in 2026 is key to determining the quality of growth
+
+** Summary**: Akoko City is a high-growth, low-valued, but risky Internet company. If you believe in the long-term trend of China's Internet model to sea, are willing to take risks from social products on a cyclical basis, and understand the liquidity discounts of the small market value of Hong Kong shares, 13% of the current PE 10x/FCF Yield provides a good risk return. But this is not a "determinate investment" – it is more like a "good-paying lottery" that is suitable for a satellite position (3-5%) and not a non-core warehouse.
+
+---
+
+*Report generated: 23 June 2026*
+*Source: Corporate Annual Bulletin (2024-2025), Securities Star, Economic Watch, Cloud Hunt, DoNews, W.S.S., Skywind, Investing.com, F.S.
+* Key data are cross-checked through the financio_rigor.py tool*
+* The present report is for research purposes only and does not constitute an investment proposal*

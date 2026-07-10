@@ -1,474 +1,474 @@
-# 供应链瓶颈猎手：AI驱动的全球产业链瓶颈套利
+# Supply chain bottleneck hunter: AI-driven global industry chain bottleneck arbitrage
 
-对 $ARGUMENTS 超级趋势执行供应链瓶颈扫描与套利机会挖掘。
+Implementation of supply chain bottleneck scanning and arbitrage opportunities for the $ARGUMENTS super-trend.
 
-## 核心理念
+# Core idea
 
-不问"AI推荐什么股票"，问"如果这个趋势继续扩张，哪一环会先不够用？"
+And no "AI recommends what stock" and no "if this trend continues, which ring will not be enough?"
 
-传统投研盯龙头、盯已知赛道。这个系统反过来：**从物理供应链的咽喉位置出发，找那些没人注意但一旦断货整个行业都得停下来等的公司**。
+Traditional investment is aimed at the dragons, at known tracks. The system is the other way around:** from the throat of the physical supply chain to companies that have no attention but have to stop once the entire industry has stopped**.
 
-超额收益来源：第一层瓶颈（GPU、HBM、电力）已被充分定价。真正的alpha在**第二层、第三层**——光模块、激光器、InP衬底、SOI晶圆、外延设备、晶圆级测试、IC载板、特殊玻纤等。
+Sources of excess earnings: First-tier bottlenecks (GPU, HBM, electricity) are fully priced. Real alpha is on ** Second, Third ** - Light Module, Lasers, InP Bottom, SOI Crystal Circle, Outer Device, Crystal Circle Test, ICboard, Special Fibres, etc.
 
 ---
 
-## 第一步：超级趋势确认
+# Step one: supertrend confirmation
 
-### 1.1 趋势筛选标准
+##1.1 Trends screening criteria
 
-不在小风口里找幻觉，只追符合以下全部条件的超级趋势：
+Without hallucinating in the wind, only the super-trends that meet all of the following conditions are pursued:
 
-| 标准 | 要求 | 验证方法 |
+<unk> Standard <unk> Requirements <unk> Certification method <unk>
 |------|------|---------|
-| 持续性 | 至少3-5年确定性增长 | 搜索行业预测、资本开支计划 |
-| 物理性 | 需要实际硬件/材料/设备建设 | 区分"软件升级"和"物理扩建" |
-| 规模性 | 全球资本开支>500亿美元/年 | 搜索头部玩家capex指引 |
-| 加速性 | 需求增速>供给扩产速度 | 对比需求增长率vs产能扩张计划 |
+<unk> Continuous growth at least 3-5 years
+The physical, the physical, the physical, the physical hardware/material/equipment, the physical hardware, the physical hardware, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the, the, the, the, the, the physical, the physical, the physical, the, the, the, the, the, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the physical, the, the, the physical, the physical, the physical, the physical, the physical, the physical, the material, the, the material, the material, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the physical, the,
+<unk> Scaliency >50 billion dollars per year of global capital expenditure > <unk> Search head player capex guidelines <unk>
+<unk> Speed of growth in demand <unk> Speed of expansion of supply <unk> Plan for expansion of capacity in comparison with growth in demand vs
 
-### 1.2 当前跟踪的超级趋势清单
+##1.2 List of super-trends currently being tracked
 
-每次运行时更新，初始清单：
+Update each run, initial list:
 
-1. **AI基础设施建设** — 数据中心、GPU集群、网络互联、电力
-2. **能源转型** — 核电重启、电网升级、储能
-3. **国防现代化** — 西方军费上升周期、供应链重构
-4. **半导体再工业化** — 美欧日补贴建厂、设备/材料瓶颈
-5. **太空经济** — 卫星互联网、发射频次激增
+1. **AI infrastructure development** ** Data centres, GPU clusters, network connectivity, electricity
+2. **Energy transformation** — Nuclear power re-engineer, grid upgrade, storage energy
+3. **Modernization of Defence** — The Western Warfare Cycle, Restructured Supply Chain
+** Semiconductor re-industrialization** — US-European Day Subsidized Plants, Equipment/material bottlenecks
+5. **Space economy** – satellite Internet and launch frequency surge
 
-如果用户指定了具体趋势（如"AI基础设施"），只聚焦该趋势。
+If the user specifies a specific trend (e.g. "AI infrastructure"), focus only on that trend.
 
-### 1.3 趋势验证输出
+##1.3 Trends Validation Output
 
 ```
-趋势名称：
-核心驱动力：（一句话）
-已发生的验证事件（至少3个）：
-  1. [日期] [事件] [来源]
+Trend name:
+Core driver: (one sentence)
+Validation events (at least three):
+1. [Date] [incident] [Source]
   2.
   3.
-资本开支规模：全球约 $XX 亿/年，增速 YY%
-供需缺口判断：需求增速 > 供给扩产速度？是/否/不确定
-趋势确认：✅ 可追踪 / ❌ 证据不足，暂不追踪
+Size of capital expenditure: global approximately $2 billion/year, YY per cent
+Demand and supply gap judgement: demand increase > supply increase speed? Yes/No/Impartial
+Trends confirmed: <unk> Traceable / <unk> Insufficient evidence, not yet tracked
 ```
 
 ---
 
-## 第二步：供应链物理拆解
+# Step 2: Physical disassembly of supply chains
 
-### 2.1 分层拆解框架
+##2.1 Fragmentation Frame
 
-**不停留在概念层，拆到物理实体**。
+** Staying on the conceptual level and breaking down physical entities**
 
 ```
-Layer 0（终端）：最终产品/服务
+Layer 0 (endpoint): Final product/service
     │
-Layer 1（核心组件）：已被市场充分关注的核心硬件
-    │                 ⬆ 定价充分，alpha有限
+Layer 1 (core component): Core hardware that has received sufficient market attention
+♪ We're priced well, Alpha's limited ♪
     │─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-    │                 ⬇ 关注度低，alpha集中区
+Low focus, Alpha concentration.
     │
-Layer 2（子组件/材料）：支撑核心组件的零部件和材料
+Layer 2 (subcomponents/materials): parts and materials supporting core components
     │
-Layer 3（上游设备/原料）：制造子组件所需的设备和原材料
+Layer 3 (upstream equipment/materials): equipment and raw materials for manufacturing sub-components
     │
-Layer 4（基础设施）：电力、冷却、土地、人才、认证
+Layer 4 (Infrastructure): Electricity, cooling, land, talent, certification
 ```
 
-### 2.2 以AI基础设施为例的拆解模板
+##2.2 Dismantling templates using AI infrastructure as an example
 
 ```
-Layer 0：AI模型训练/推理服务
-Layer 1：GPU/加速器、HBM内存、服务器、数据中心
-Layer 2（重点扫描区）：
-  ├─ 网络互联：光模块、光纤、交换芯片、铜缆
-  ├─ 光通信核心：激光器（EML/VCSEL/CW）、调制器、光探测器
-  ├─ 半导体材料：InP衬底、GaAs衬底、SOI晶圆、SiC衬底
-  ├─ 先进封装：CoWoS载板、HBM TSV、ABF基板膜
-  ├─ PCB/载板：高频高速PCB、IC载板、特殊玻纤布
-  ├─ 测试：晶圆级测试（Probe Card）、老化测试、ATE
-  ├─ 散热/冷却：液冷系统、CDU、浸没式冷却液
-  └─ 电力连接：母线槽、UPS、配电柜、变压器
+Layer 0: AI model training/ration service
+Layer 1: GPU/Accelerator, HBM memory, server, data centre
+Layer 2 (focus scan):
+TI-Network interconnection: light modules, fibre optics, switch chips, copper cables
+TI-LIGHT CENTRE: Lasers (EML/VCSEL/CW), modem, light detectors
+In-subconductor material: In-P line, GaAs line, SOI crystal round, Sic line
+TI- Advanced envelope: CoWoS Board, HBM TSV, ABF Base Deck
+TI-PCB/boardboard: High-frequency high-speed PCB, IC board, special fibre sheet
+TI-test: Probe Card, Old Test, ATE
+D-- Dispersing/cooling: liquid cooling systems, CDUs, immersed cooling fluids
+<unk> Electricity connection: parent groove, UPS, distribution cabinet, transformer
 Layer 3：
-  ├─ 外延设备：MOCVD、MBE
-  ├─ 光刻/刻蚀：特殊波长光刻、InP刻蚀
-  ├─ 原材料：高纯金属（铟、镓、锗）、特气、靶材
-  └─ 认证/标准：MSA标准、Telcordia认证
+TI-Extension equipment: MOCVD, MBE
+X-ray/articulation: Special wavelength light etching, Inp etching
+Xin- Raw materials: high-purity metals (silt, sulfur, sulfur), special gases, target material
+<unk> Certification/Standards: MSCA Standards, Telcordia Certification
 Layer 4：
-  ├─ 电力：核电、天然气发电、输变电
-  ├─ 冷却水/散热基础设施
-  └─ 数据中心土地/许可
+TI-Electrification: Nuclear power, gas power generation, electricity transmission
+D-Cooled water/discharge infrastructure
+<unk> - Data centre land/licensing
 ```
 
-### 2.3 其他趋势的拆解
+#2.3 Dismantling of other trends
 
-对每个确认的超级趋势执行类似拆解。使用WebSearch搜索：
-- "{趋势} supply chain bottleneck 2026"
-- "{趋势} shortage critical component"
-- "{趋势} capacity constraint"
-- "{趋势} sole source supplier"
+Use WebSearch to search for:
+- "Supply trending 2026."
+- "Standline"
+- "Trends"
+- "Standline"
 
 ---
 
-## 第三步：瓶颈识别——寻找"咽喉"
+# Step three: bottleneck identification -- looking for "squealing throat"
 
-### 3.1 瓶颈判定6条标准
+#3.1 bottlenecks determine 6 criteria
 
-对Layer 2-3的每个环节，逐条评估：
+Each of the Layer 2-3 links is evaluated article by article:
 
-| # | 标准 | 问题 | 得分 |
+♪ The standard, the problem, the score, the score ♪
 |---|------|------|------|
-| 1 | **供给集中度** | 全球供应商≤3家？ | 🔴 ≤2家 / 🟡 3-5家 / 🟢 >5家 |
-| 2 | **扩产周期** | 新增产能需要多久？ | 🔴 >2年 / 🟡 1-2年 / 🟢 <1年 |
-| 3 | **替代难度** | 能否用其他技术/材料替代？ | 🔴 不可替代 / 🟡 部分可替代 / 🟢 易替代 |
-| 4 | **产能利用率** | 当前产能利用率？ | 🔴 >90% / 🟡 70-90% / 🟢 <70% |
-| 5 | **需求增速** | 下游需求增速？ | 🔴 >50%/年 / 🟡 20-50% / 🟢 <20% |
-| 6 | **客户验证周期** | 新供应商进入需要多久验证？ | 🔴 >1年 / 🟡 6-12月 / 🟢 <6月 |
+<unk> Supply concentration** Global suppliers <unk> 3 <unk> 2 <unk> 3-5 > 5 <unk>
+<unk> ** Extension cycle** <unk> How long does it take to add new capacity? > 2 years / 1-2 years / < 1 year < <unk>
+<unk> ** Alternative difficulty** <unk> Can other technologies/materials be replaced? <unk> Unable to replace / <unk>
+<unk> ** Performance utilization** Current performance utilization? > 90% / <unk> 70-90% / < 70% <unk>
+<unk> Demand acceleration** Downstream demand acceleration? <unk> > 50%/year / <unk> 20-50% / < 20% <unk>
+<unk> Client validation cycle** How long does it take for a new vendor to enter? <unk> > 1 year / <unk> June-December / < June < <unk>
 
-**瓶颈评级**：
-- 🔴🔴🔴 ≥4个 → **S级瓶颈**（单点故障级，最高优先级）
-- 🔴🔴 3个 → **A级瓶颈**（严重受限）
-- 🔴 1-2个 → **B级瓶颈**（有压力但可控）
-- 无🔴 → 非瓶颈，跳过
+** Bottleneck Rating**:
+- <unk> 4 <unk> **S-level bottlenecks** (single point failure, highest priority)
+- <unk> 3 <unk> ** Class A bottlenecks** (seriously restricted)
+- <unk> 1-2 <unk> **B-barrier** (pressure but manageable)
+- No chords <unk> non-cooling, skipping
 
-### 3.2 瓶颈地图输出
+#3.2 Bottleneck Map Output
 
 ```
-供应链瓶颈地图 — {趋势名称}
-更新日期：YYYY-MM-DD
+Supply chain bottlenecks map - {Trend name}
+Update date: YYY-MM-DD
 
-S级瓶颈（单点故障）：
-  1. [环节名] — [原因一句话] — 供应商：[公司列表]
+S-level bottlenecks (single-point malfunction):
+1. [Plus name] - [Cause in one sentence] - Vendors: [List of companies]
   2.
 
-A级瓶颈（严重受限）：
+A-barriers (seriously restricted):
   1.
   2.
 
-B级瓶颈（有压力）：
+B-barrel (pressure):
   1.
   2.
 
-最近变化（vs上次扫描）：
-  - [新增/升级/降级/解除] [环节名] — [原因]
+Recent changes (vs last scan):
+- [New/upgrade/redeployment/discharge] [point name] - [cause]
 ```
 
 ---
 
-## 第四步：公司筛选——从瓶颈到标的
+# Step four: company screening - from bottlenecks to targets
 
-### 4.1 对每个S级和A级瓶颈，找出所有相关上市公司
+# 4.1 Identify all relevant listed companies for each S and A bottleneck
 
-搜索方式：
-- WebSearch "{瓶颈环节} supplier listed company"
-- WebSearch "{瓶颈环节} manufacturer stock"
-- WebSearch "{瓶颈产品} market share company"
+Search by:
+- WebSearch "supplier lied company"
+- WebSearch "manufacturer stick"
+- WebSearch "market share company"
 
-### 4.2 初筛标准（快速过滤）
+##4.2 Primary screening criteria (fast filter)
 
-| 标准 | 要求 | 理由 |
+- I'm not sure.
 |------|------|------|
-| 上市状态 | 已上市（A/港/美/日/台/欧） | 可交易 |
-| 瓶颈业务占比 | >30%收入来自瓶颈环节 | 纯正度 |
-| 市值 | 优先<100亿美元 | 大市值已被充分定价 |
-| 流动性 | 日均成交额>100万美元 | 可进出 |
+Listed (A/Port/US/D/D)
+<unk> Breathing Business Ratio > 30% of income from bottleneck links <unk> Pure integrity <unk>
+<unk> Priority < $10 billion <unk>
+* The average daily amount is > $1 million *
 
-### 4.2.1 估值检查（必须执行，不可跳过）
+##4.2.1 Valuation inspection (must be performed, not skip)
 
-**瓶颈真实 ≠ 投资机会。** 必须对每家公司计算 PS、PE 并标注在报告中。以下用组合条件判断估值是否透支：
+** Bottleneck real investment opportunities.** Each company must be counted PS, PE and marked in the report. The following combinations determine whether the valuation is overdrafted:
 
-#### 估值红灯（满足任意一条 → 信号强度封顶 ★★，标注"⚠️ 估值透支"）
+# # Valuing red lights (satisfying with any one of the signals # # peaking, marking "single # # # overdrafting)
 
-1. **市值 > TAM的20%**：公司市值已超过其可触达市场规模的20%，说明增长预期已过度内化
-2. **PS > 30x 且 收入增速 < 100%**：高估值但增速不足以支撑。增速>100%的公司可豁免PS红线，但仍需标注"⚠️ 高估值需高增速持续验证"
-3. **市值 > 5年乐观收入预测的10倍**：即使最乐观假设全部兑现，当前定价仍然过高
-4. **增发后60天内股价翻倍**：情绪驱动特征明显，信号强度降一级
+1. ** Market value > 20% of TAM**: The market value of the company exceeds 20% of its market size, indicating that growth expectations are over-internalized
+2. **PS > 30x and revenue increase < 100%**: High valuation but not high enough to support. 100% of companies can exempt the PS red line, but still need to mark "<unk> high valuation requires continuous high rate of increase"
+3. ** Market value > 10 times the five-year optimistic income projection**: current pricing is too high, even if the best optimistic assumptions are met
+4. **Step price doubling within 60 days of the increase**: emotional drivers are visible and signal intensity is down to one level
 
-#### 估值黄灯（需要额外解释，否则降级）
+# # Valuation of yellow lamps (additional explanation required, otherwise downgraded)
 
-1. **亏损 + PS > 15x**：允许进入 ★★★ 但必须说明盈利路径和时间表
-2. **PS 是同行盈利公司的 5 倍以上**：必须解释溢价来源（市场份额、增速差、壁垒差异）
-3. **PE > 80x**：需要计算 PEG 并说明增速是否支撑
+1. ** Loss + PS > 15x**: Allowed access <unk> but must state profit path and timetable
+2. **PS is more than 5 times the value of the peer profit company**: the source of the premium must be explained (market share, speed difference, barrier differences)
+3. **PE > 80x**: PEG needs to be calculated and whether the acceleration is supported
 
-#### 估值绿灯（加分项）
+# # Valuation of green lights (plus sub-items)
 
-- PS < 10x 且收入在增长 → 信号强度可加一级
-- PE < 30x 且有护城河 → 标注"估值具有安全边际"
+- PS < 10x and income is growing – signal strength can be added to one level
+- PE < 30x with moats.
 
-#### 估值合理性检验（必做）
+# # valuation reasonableness test (which must be done)
 
-对每家标的回答："以当前市值买入，假设最乐观情景全部兑现，10年后以25x PE退出，年化回报是多少？" 年化回报<10%→标注"当前价格不具备安全边际"。
+The answer to each of the household indicators: "Acquire at current market value, assume the best optimism, exit at 25 x PE in 10 years, and annualized return?" Annualized return <10%, "There is no security margin in the current price."
 
-**注意**：估值检查的目的是防止推荐"PS 100倍的亏损公司"这种明显错误，而不是排除所有高估值早期公司。关键是增速、TAM、竞争格局能否支撑当前估值，需要具体分析而非一刀切。
+**Note **: The purpose of the valuation inspection is to prevent a clear error in recommending a "pass 100 times PS loss company" rather than to exclude all companies from the early stages of high valuation. The key is whether the acceleration, TAM, and the competitive pattern support the current valuation, which requires specific analysis rather than one-size-fits-all.
 
-### 4.3 深度筛选维度
+##4.3 Deep Filter Dimensions
 
-对通过初筛的公司，逐家评估：
+For companies that pass the initial screening, home-by-house assessment:
 
 ```
-## {公司名}（{代码}）
+# {Costname} ({Code})
 
-**瓶颈定位**：
-- 在供应链中的具体位置
-- 市场份额：全球第X，占比XX%
-- 客户名单（已知的）
+** Bottleneck positioning**:
+- Specific location in the supply chain
+- Market share: Global X, XX per cent
+- Client list (known)
 
-**产能与扩张**：
-- 当前产能 / 利用率
-- 扩产计划 / 时间表
-- 扩产所需资金 vs 现有现金
+**Explosion and expansion**:
+- Current capacity/availability
+- Expansion plan / Timetable
+- Funding requirements for expansion vs Cash available
 
-**财务快照**：
-- 市值 / 收入 / 利润 / 增速
-- 瓶颈业务收入占比
-- 毛利率趋势（瓶颈越紧，毛利率应上升）
+** Financial snapshot**:
+- Market value / income / profit / speed of increase
+- Breaches of business income
+- Māori rate trends (the more bottlenecks, the more Māori rate should rise)
 
-**风险检查清单**：
-- [ ] 替代技术风险：能否被绕过？
-- [ ] 稀释风险：有无大量增发/可转债？
-- [ ] 地缘风险：是否在敏感地区/受出口管制？
-- [ ] 管理层风险：有无不良记录？
-- [ ] 客户集中风险：是否过度依赖单一客户？
-- [ ] 估值透支：当前估值是否已反映3年增长？
+** Risk checklist**:
+- [ ] Alternative technology risks: can they be bypassed?
+- [ ] Divulging risk: Are there significant increases/deliverables?
+- [ ] Geo-risk: Are they in sensitive areas/export controls?
+- [ ] Management risk: any poor records?
+- [ ] Client concentration risk: is there an overdependence on a single client?
+- [ ] Valuation overdraft: Does the current valuation reflect a three-year increase?
 
-**瓶颈持续性判断**：
-- 这个瓶颈什么时候会被解除？
-- 解除后这家公司还有什么？
-- 是一次性还是持续的？
+** Bottleneck continuity judgement**:
+- When will this bottleneck be removed?
+- What else does this company have after it's been disbanded?
+- Is it a one-time or a continuous one?
 ```
 
 ---
 
-## 第五步：交叉验证——不只听一个故事
+# Step five: cross-check -- not just one story
 
-### 5.1 正向验证
+# 5.1 is being verified
 
-| 验证项 | 问题 | 搜索方式 |
+<unk> Verification item <unk> Problems <unk> Search methods <unk>
 |--------|------|---------|
-| 客户验证 | 头部客户是否已签约/导入？ | 搜索公司公告、客户财报提及 |
-| 收入验证 | 瓶颈是否已体现在收入增长中？ | 搜索最近2-3个季度财报 |
-| 价格验证 | 产品是否在涨价？ | 搜索行业报价、分析师报告 |
-| 产能验证 | 产能是否真的紧张？ | 搜索交期数据、客户抱怨 |
-| 资本验证 | 是否有扩产资本开支？ | 搜索公司capex指引 |
+<unk> Client authentication <unk> Head client signed/inbound?
+<unk> Income validation <unk>
+<unk> Price validation <unk>
+Is it really stressful?
+♪ The capital is certified ♪
 
-### 5.2 反向验证（芒格式否定）
+#5.2 Reverse authentication (Dang format negative)
 
-| 反向问题 | 意义 |
+♪ The reverse question ♪
 |---------|------|
-| 聪明人为什么不买这只股票？ | 寻找已知的bearish论点 |
-| 这个瓶颈能被绕过吗？有什么替代路线？ | 技术路线风险 |
-| 中国/其他玩家能不能很快复制产能？ | 供给冲击风险 |
-| 终端需求如果放缓50%，这家公司会怎样？ | 下行敏感度 |
-| 管理层过去有没有在高点增发稀释？ | 管理层信任度 |
-| 当前估值隐含了什么增长假设？ | 估值合理性 |
+Why don't you be smart enough to buy this stock?
+Can this bottleneck be bypassed?
+Can Chinese/other players replicate their capacity quickly?
+What happens to this company if the terminal demand slows down by 50%?
+Did management ever get more thinner at higher levels?
+What are the growth assumptions implied in the current valuation?
 
-### 5.3 信号交叉验证
+##5.3 Signal cross-checking
 
-- 同一瓶颈的多家公司是否都在涨？（行业验证）
-- 下游客户是否在财报中提到供应紧张？（客户验证）
-- 行业协会/研究机构是否有相关数据？（第三方验证）
+- Are the same bottlenecks growing in many companies?
+- Did downstream customers mention supply constraints in their accounts? (client certification)
+- Is there data on industry associations/research institutions? (third party validation)
 
 ---
 
-## 第六步：输出——瓶颈机会看板
+# Step 6: Output - bottleneck opportunism
 
-### 6.1 瓶颈机会排名表
+# 6.1 Bottleneck opportunity ranking table
 
-| 排名 | 公司 | 代码 | 市值 | 年收入 | PS | PE | 瓶颈环节 | 瓶颈评级 | 市场份额 | 收入增速 | 信号强度 | 估值判断 |
+<unk> Market value <unk> Annual income <unk> PS <unk> PE <unk> bottleneck link <unk> bottleneck rating <unk> Market share <unk> Income growth <unk> Signal strength <unk> Valuation judgement <unk>
 |------|------|------|------|--------|-----|-----|---------|---------|---------|---------|---------|---------|
-| 1 | | | | | x | x | | S/A | | | ★1-5 | 合理/偏高/透支 |
+<unk> 1<unk> <unk> <unk> <unk> <unk> x<unk> S/A<unk> <unk> <unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> <unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 1<unk> 2<unk> <unk> <unk> <unk> <unk> 2<unk> <unk> <unk> <unk> <unk> <unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> <unk> <unk> <unk> 2<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-**必填字段**：市值、年收入、PS、PE 为必填项，不可用"待核实"跳过。如果无法获取财务数据，信号强度不得超过 ★★。
+** Required field**: Market value, annual income, PS, PE are mandatory entries and cannot be skipped "to be verified". If financial data cannot be obtained, signal strength should not exceed <unk> .
 
-信号强度评级（估值检查结果直接影响评级）：
-- ★★★★★ 多重交叉验证、客户已导入、收入已体现、估值绿灯（PS合理+盈利或接近盈利）
-- ★★★★ 大部分验证通过、估值绿灯或黄灯（需附解释）
-- ★★★ 逻辑成立但部分待验证、估值黄灯可接受（如高增速早期公司）
-- ★★ 早期信号，或瓶颈逻辑成立但估值红灯（市值>TAM 20%、PS>30x且增速不足、市值远超5年预测等）
-- ★ 纯概念、未验证
+Signal strength rating (value inspection results directly impact rating):
+- Multiple cross-checking, customer import, income presentation, valuation green light (PS reasonable + or near profit)
+- Most certifications pass, value green or yellow (with explanation)
+- Logically established but partially to be verified, valued yellow light acceptable (e.g., early-speed company)
+- Early signal, or bottleneck logic established but valued red light (market value > TAM 20%, PS > 30x with insufficient acceleration, market value well beyond 5 years forecast, etc.)
+- Pure concept, not verified.
 
-### 6.2 每个机会的一页纸摘要
+# 6.2 A page of paper summaries of every opportunity
 
 ```
-🎯 {公司名}（{代码}）— {一句话瓶颈定位}
+<unk> Name of company}- {Step-tight-dot-dot-dot-dot-dot-dot-dot-dot-dot-dot-dot-dot-dot-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do-do
 
-为什么是瓶颈：
-（2-3句话解释这个环节为什么卡脖子）
+Why is it a bottleneck?
+Two to three words explain why this is a neck-stuffing thing.
 
-为什么是这家公司：
-（2-3句话解释为什么是这家而不是别家）
+Why this company:
+Two to three words to explain why this is the house, not the other.
 
-催化剂时间线：
-- 近期（1-3月）：[具体事件，如财报、产能投产、客户验证]
-- 中期（3-12月）：[行业趋势、扩产节点]
+Catalyst time line:
+- Recent (January-March): [specific events, such as financial reporting, production capacity, customer certification]
+- Medium-term (March-December): [Industry trends, extension nodes]
 
-主要风险：
+Main risks:
 1.
 2.
 
-关键数据：市值 $XX / 年收入 $XX / PS Xx / PE Xx / 收入增速 XX% / 瓶颈业务占比 XX%
+Key data: market value $XX/ Annual income $XX/ PS Xx/ PE Xx/ Income acceleration XX per bottleneck operations per XX per cent
 
-估值安全边际检验：以当前市值买入、10年后25x PE退出，需要净利润达到$XX，对应年收入$XX（是今天的X倍），年化回报XX%。结论：有/无安全边际。
+Valuation security margin test: Purchased at current market value, 25 x PE exited 10 years later, requiring net profit to reach $XX, corresponding annual income of $XX (or X times today), annualized return of XX per cent. Conclusion: Yes/No Security margin.
 
-交叉验证状态：✅ 客户验证 / ✅ 收入验证 / ✅ 估值合理 / ⚠️ 估值透支 / ❌ 未验证项
+Cross-certification status: <unk> Client authentication / <unk> Income validation / <unk> Value reasonable / <unk> Valuation overdraft / <unk> not validated
 
-结论：值得深入研究 / 加入观察名单 / 暂不追踪
+Conclusion: worth studying further / joining watch list / not tracking for the time being
 ```
 
-### 6.3 行动建议
+#6.3 Proposals for action
 
-| 标的 | 建议动作 | 理由 |
+The proposed action is justified.
 |------|---------|------|
-| A | 执行 `/investment-team` 深入研究 | S级瓶颈+多重验证 |
-| B | 加入观察名单，等下季财报 | 逻辑成立但收入未体现 |
-| C | 暂不追踪 | 替代技术风险过高 |
+<unk> A<unk> Execute `/investment-team ' in-depth study <unk> S-level bottlenecks + multiple validation <unk>
+B. Adding to watch lists, waiting for next season's financial statements
+C., no tracking, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no..
 
 ---
 
-## 第七步：存量更新——瓶颈地图动态维护
+# Step seven: inventory update — bottleneck map dynamic maintenance
 
-### 7.1 每次运行时的增量更新
+#7.1 Increment Updates at Every Run
 
-1. 检查已识别瓶颈是否仍然成立
-   - 有无新供应商进入？
-   - 产能是否已扩张到解除瓶颈？
-   - 替代技术是否有突破？
+1. Check whether identified bottlenecks are still in place
+- Are there any new suppliers?
+- Has the capacity expanded to remove bottlenecks?
+- Are there breakthroughs in alternative technologies?
 
-2. 扫描新出现的瓶颈
-   - 搜索最近7天的supply chain / shortage / bottleneck新闻
-   - 检查财报季中的供应链相关disclosure
+2. Scanning emerging bottlenecks
+- Search for the last seven days of the news
+- Check supply chain-related issues during the financial reporting season
 
-3. 更新瓶颈评级（升级/降级/解除）
+3. Update of bottleneck ratings (upgrade/downgrade/release)
 
-### 7.2 状态文件
+##7.2 Status File
 
-在 `reports/bottleneck-map/` 目录维护：
-- `master-map.md` — 瓶颈总地图（持续更新）
-- `watchlist.md` — 观察名单（持续更新）
-- `YYYY-MM-DD/` — 每天一个文件夹，包含该天所有扫描报告
-- `deep-dive/` — 深入分析的公司单独建文件
+In `reports/bottteneck-map/` directory maintenance:
+- `master-map.md ' — Bottleneck Master Map (continuous updating)
+- `watchlist.md' — watch list (continuous updating)
+- `YYYY-MM-DD/' — a folder every day containing all scanned reports for the day
+- `deep-dive/' — in-depth analysis of individual corporate documents
 
 ---
 
-## 每小时扫描模式（定时任务使用）
+# Scanning mode per hour (timed task)
 
-每小时执行一次，采用"只在有料时出报告"的模式：
+One hour per hour, using the "Report only when you know it" model:
 
-### 扫描流程（每小时）
+## Scanning process (per hour)
 
-1. **新闻扫描**：搜索过去1-2小时的供应链相关新闻
-   - 关键词：supply chain bottleneck, shortage, capacity constraint, allocation, lead time, sole source, 瓶颈, 缺货, 产能, 涨价
-   - 覆盖：英文+中文源
-2. **市场信号**：检查已跟踪公司的股价变化（特别关注异常波动>5%）
-3. **财报/公告**：检查是否有瓶颈相关公司发布财报或重大公告
-4. **估值机会**：检查watchlist中公司是否有因大盘下跌等原因进入买入区间
-5. **判断是否出报告**：
-   - 有新瓶颈信号、有明确标的机会、有重大状态变化 → **出报告**
-   - 无新发现 → **不出报告**，仅在日志中记录"本轮无新信号"
+1. ** News scan**: search for supply chain-related news over the past 1-2 hours
+- Suffice it to say, "supply enough, shortpage, capability concern, allocation, lead time, sole source, bottleneck, stock shortage, capacity, price increase."
+- Overwrite: English + Chinese Source
+2. ** Market signal**: Checking of changes in stock prices of companies tracked (with particular attention to abnormal fluctuations > 5%)
+3. **Filter/Broadcast**: Check if there are bottlenecks in the issuance of financial statements or major announcements by companies
+4. **Value opportunity**: Check whether companies in watchlist have entered the buying area for reasons such as the fall in the big plate
+5. **Setting whether to report**:
+- New bottlenecks signal, opportunity with clear targets, significant changes in state ** out of report**
+** No report**, only "No new signal from this wheel" in the log.
 
-### 报告输出规则
+# Report the output rules
 
-**每天一个文件夹**：`reports/bottleneck-map/YYYY-MM-DD/`
+** One folder per day**: `reports/bottteneck-map/YYYY-MM-DD/`
 
-**文件命名规则**（通过文件名一眼看出有没有标的）：
+** File naming rules** (is visible from the file name):
 
-| 情况 | 文件名格式 | 示例 |
+<unk> Situation <unk> Filename format <unk> Example <unk>
 |------|-----------|------|
-| 发现明确标的 | `HH-MM-标的代码1-标的代码2.md` | `09-00-FORM-IBDN.md` |
-| 有瓶颈信号但无明确标的 | `HH-MM-信号扫描.md` | `14-00-信号扫描.md` |
-| 无新发现 | 不生成文件 | — |
+<unk> Found clearly marked <unk> HH-MM - code 1 for the target - code 2.md ' <unk> 09-00-FORM-IBDN.md ' <unk>
+<unk> <unk> `HH-MM-Scanning of signals without clear indication of bottlenecks.md <unk> 14-00-Scanning of signals.md <unk> Scan of signals
+No new discoveries. No files generated.
 
-**文件名中的标的代码 = 通过估值检查、值得深入研究的公司。** 仅信号扫描阶段出现但估值不合格的公司不放在文件名中。
+** The code of the subject matter in the filename = companies that are examined through valuation and merit in study.** Companies that appear only during the signal scanning phase but whose valuation is not satisfactory are not included in the filename.
 
-### 报告模板（有标的时）
+## Report template (specific time)
 
 ```markdown
-# 瓶颈猎手 — YYYY-MM-DD HH:MM
+# Bottleneck hunter - YYYY-MM-DD HH:MM
 
-## 明确标的
+# Clear mark
 
-### {公司名}（{代码}）— {一句话瓶颈定位}
+## <unk> name of company}- <unk> scene-- <unk> scuff-point-positioning
 
-**为什么现在值得关注**：（触发本次关注的具体事件/数据变化）
+** Why is it worth noting now**: (Specific event/data change triggering this concern)
 
-**瓶颈定位**：Layer X，{环节名}，瓶颈评级 S/A/B
-**财务快照**：市值 $XX / 年收入 $XX / PS Xx / PE Xx / 收入增速 XX%
-**估值检查**：红灯/黄灯/绿灯（具体说明）
-**估值安全边际**：10年25xPE退出法，年化回报XX%
+** Bottleneck Positioning**: Layer X, {point name}, Bottleneck Rating S/A/B
+** Financial snapshot**: market value $XX/ Annual income $XX/ PS Xx/ PE Xx/ Income acceleration XX per cent
+** Valuation inspection**: red/yellow/green (specify)
+** Valuation security margin**: 10 years 25 xPE exit method, annualized return XX per cent
 
-**看多逻辑**（2-3条）：
+** See how logical** (2-3):
 1.
 2.
 
-**看空逻辑**（2-3条）：
+** Flank logic** (2-3):
 1.
 2.
 
-**建议**：执行深入研究 / 加入观察 / 等待更好价格
+** Recommendation**: Implementation of in-depth study / Add observations / Waiting for better prices
 
 ---
 
-## 其他信号（无明确标的）
+# Other signals (no clear target)
 
-| 环节 | 信号 | 来源 | 初步判断 |
+The first time I've been in the field, the second time I've been in the office, the second time I've been in the office, the second time I've been in the office, the second time I've been in the office, the second time I've been in the office.
 |------|------|------|---------|
 
-## 观察名单状态变化
+# Watching the status of the list
 
-（升级/降级/新增/移除，无变化则写"无变化"）
+(upgrade/downgrade/adden/remove, no change says no change)
 ```
 
-### 报告模板（仅信号扫描时）
+## Report template (scanning signal only)
 
 ```markdown
-# 瓶颈猎手信号扫描 — YYYY-MM-DD HH:MM
+# Bottleneck hunter signal scan — YYYY-MM-DD HH:MM
 
-## 新信号
+# New signal
 
-| 环节 | 信号描述 | 来源 | 是否有可投资标的 | 下一步 |
+<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 |------|---------|------|----------------|-------|
 
-## 观察名单状态
+# Watch the list status
 
-无变化 / 有变化（列出）
+No change / change (listed)
 ```
 
 ---
 
-## AI研究偏见自觉
+# AI studies prejudices
 
-| 偏见 | 表现 | 应对 |
+The way you see it, the way you see it, the way you do it.
 |------|-----|------|
-| 龙头偏好 | 搜索结果被大市值公司占据 | 刻意搜索小市值供应商、加"small cap"关键词 |
-| 英文偏好 | 遗漏日韩台公司 | 必须搜索日/韩/台湾市场的供应商 |
-| 叙事偏好 | 被"AI概念"标签吸引 | 只看实际供应链位置，不看市场标签 |
-| 确认偏见 | 找到瓶颈后只找正面证据 | 强制执行反向验证（第五步） |
-| 时效偏见 | 依赖过时信息 | 优先搜索最近30天的数据 |
+The search was taken over by the big market company, and the small market market supplier, plus the "small cap" keyword, and the search was made by the big market company.
+<unk> English preferences <unk> missing Japanese-Korean companies <unk> must search for suppliers in the Japanese/Korean/Taiwan market <unk>
+The narrative is attracted by the "AI concept" label, which is based on the physical supply chain location, not the market label, which is the only way to get a job.
+<unk> Confirm bias, <unk> Find bottlenecks and find only positive evidence. <unk> Enforce reverse verification (step 5)
+Time-bound bias, reliance on outdated information, priority on data for the last 30 days, and the most recent data.
 
 ---
 
-## 核心原则（最高优先级）
+# Core principles (highest priority)
 
-1. **不让AI推荐股票，让AI拆供应链** — 问题比答案重要
-2. **物理优先** — 只关注需要实际物理产品/材料/设备的环节
-3. **第二层、第三层** — 不追已被充分定价的龙头
-4. **交叉验证** — 每个结论至少2个独立信源
-5. **诚实面对不确定性** — 找不到数据就写"数据不足"，不用推测填充
-6. **瓶颈有时效性** — 每个瓶颈都会被解除，关键是判断时间窗口
-7. **小市值≠好机会** — 小市值也可能是烂公司，必须过财务质量关
-8. **瓶颈真实≠投资机会** — 一家公司可以坐在最紧的瓶颈上，但如果PS>30x或仍在亏损，当前价格就不是买点。**估值是硬门槛，不可被瓶颈纯正度、信号强度或叙事吸引力覆盖。** 宁可错过一个涨了的瓶颈股，也不要在100倍PS买入一家亏损公司
-9. **遵循CLAUDE.md客观性原则** — 不预设看多，先数据后结论
+1. ** Not allowing AI to recommend stocks and allow AI to dismantle the supply chain** — questions are more important than answers
+2. **Physics priority** — Focus only on the link requiring physical products/materials/equipment
+3. ** Second and third tiers** ** Failure to pursue fully priced taps
+4. ** Cross-check** – at least two independent sources for each conclusion
+5. ** Honesty faces uncertainty** – Write "data inadequate" when data is not found, without presumably filling it
+** Bottleneck time-limited** — Every bottleneck is removed, the key is to judge the window of time.
+** Small market value presents good opportunities** – Small market value may also be a bad company, and must pass the financial quality threshold
+** Bottleneck real investment opportunities** ** A company can sit on the tightest bottleneck, but if PS > 30x or if it is still losing, the current price is not the point of purchase.** The valuation is a hard threshold and cannot be covered by bottleneck purity, signal strength or narrative appeal.** Rather than missing a raised bottleneck share, it would be worth not buying a 100-fold PS loss company.
+9. ** Guided by the principle of objectivity of CLAUDE.md** - not expected to be large, but to conclude after data
 
 ---
 
-## 输出要求
+# Output requirements
 
-1. **报告位置**：
-   - 完整扫描：`reports/bottleneck-map/{趋势名}-bottleneck-{YYYYMMDD}.md`
-   - 每日扫描：`reports/bottleneck-map/daily/{YYYY-MM-DD}-{am/pm}.md`
-   - 瓶颈总地图：`reports/bottleneck-map/master-map.md`
-   - 观察名单：`reports/bottleneck-map/watchlist.md`
-2. **语言**：中文
-3. **风格**：直接、犀利、不说废话
-4. **数据**：所有数据标注来源；估计值标"估计"
-5. **不预设立场**：先摆数据 → 推逻辑 → 出结论
-6. **正反两面**：每个核心判断附反面论据
+1. ** Location of reporting**:
+- Full scan: `reports/bottleneck-map/{trendname}-bottleneck-<unk> YYYMMMD}.md`
+- Daily scan: `reports/bottleneck-map/daily/{YYYY-MM-DD}- {am/pm}.md`
+- A map of bottlenecks: `reports/bottlecheck-map/master-map.md '
+- Watchlist: `reports/bottleneck-map/watchlist.md '
+2. ** Languages**: Chinese
+3. **Class**: direct, sharp, no bullshit
+4. ** Data**: All data labeled source; estimated value "estimate"
+5. ** Not pre-established**: Data first * Logical * Conclusion
+** Positive and negative**: each core judgement is supported by arguments to the contrary

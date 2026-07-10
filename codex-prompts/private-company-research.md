@@ -1,5 +1,5 @@
 ---
-description: "AI Berkshire slash entry for 未上市公司研究：多Agent并行深度研究框架."
+description: "AI Berkshire slash entry for Unlisted company research: MultiAgent parallel in-depth research framework."
 argument-hint: $ARGUMENTS
 ---
 

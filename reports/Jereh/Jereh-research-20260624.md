@@ -1,32 +1,32 @@
-# 杰瑞股份（002353.SZ）四大维度综合分析报告
+# A comprehensive analysis of the four dimensions of Jerry's shares (002353.SZ)
 
-**日期**：2026年6月24日
-**股价**：159.30元 | **市值**：1,631亿元 | **PE(TTM)**：57.7x
-
----
-
-## AI研究偏见自觉
-
-**信息丰富度评级：A级（信息充裕）**
-
-杰瑞股份上市超15年（2010年上市），券商覆盖密集（12家以上机构买入评级），2025年以来因AI算力电力概念股价暴涨362%，媒体报道极为密集。
-
-**AI研究陷阱**：市场共识极强——"油服龙头+AI电力第二曲线"的叙事已高度一致，AI输出大概率趋同于市场定价。当前市场情绪处于极度乐观状态，需警惕共识过强导致的alpha缺失。
-
-**应对策略**：本报告重点做反面检验——聪明人为什么不买？159元的股价隐含了什么？被忽略的风险是什么？
-
-**偏见自查**：
-- [x] "确定性"感受主要来自资料数量和股价涨幅，而非生意本质验证
-- [x] AI输出与市场共识高度雷同——"电驱压裂龙头+燃气轮机第二曲线"
-- [x] 需警惕：一年涨362%的股票，市场预期已经包含了大量乐观假设
+** Date**: 24 June 2026
+** Stock price **: $159.30 ** Market value **: $163.1 billion ** PE(TTM)**: 57.7 x
 
 ---
 
-## 第一步：关键财务数据
+# AI studies prejudices
 
-### 1.1 五年财务历史
+** Information abundance rating: A (information is abundant)**
 
-| 年度 | 营收(亿) | 增速 | 归母净利(亿) | 增速 | 毛利率 | 净利率 | ROE | 经营现金流(亿) |
+The shares of Jerry were listed 15 years after they were listed (listed in 2010), the securities were heavily covered (more than 12 institutions bought ratings), the shares of AI ' s computing concept had soared by 362 per cent since 2025, and media coverage was extremely intense.
+
+**AI study trap**: The narrative of the market consensus – the "Longs of Oil Clothes + the AI Power Second Curve" – is highly consistent, with the AI output likely converges on market pricing. Market sentiment is extremely optimistic, and caution is needed against the lack of alpha as a result of the consensus.
+
+** Response strategy**: This report focuses on the negative test - why not the smart man? What does the 159 share price imply? What is the risk of being ignored?
+
+** Prejudice self-examination**:
+- [x] The sense of "precise" comes mainly from the amount of information and stock price increases, not from the confirmation of business nature.
+- [x] AI output is very similar to market consensus -- "E.V.C. Dragon + Gas Wheeler Second Curve"
+- [x] Be vigilant: 362% of equities per year are expected to contain a large number of optimistic assumptions
+
+---
+
+# Step one: key financial data
+
+# 1.1 Five years of financial history
+
+<unk> Annual revenue (millions) <unk> Growth rate <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> Mäori rate <unk> net interest rate <unk> ROE <unk> operating cash flow (billions) <unk>
 |------|---------|------|-------------|------|--------|--------|------|---------------|
 | 2020 | 82.94 | — | 16.90 | — | 37.9% | 20.8% | — | 3.14 |
 | 2021 | 87.76 | +5.8% | 15.86 | -6.2% | 34.9% | 18.4% | 13.5% | 8.08 |
@@ -35,437 +35,437 @@
 | 2024 | 133.54 | -4.0% | 26.27 | +7.0% | 33.7% | 20.1% | 13.0% | 25.93 |
 | 2025 | 162.23 | +21.5% | 26.80 | +2.0% | 31.7% | 17.0% | 12.2% | 53.78 |
 
-*数据来源：公司年报、东方财富、同花顺*
+*Source: Corporate Annual Report, Eastern Wealth, Hosho-Yo
 
-**关键观察**：
-- 收入从2020年83亿增长至2025年162亿，CAGR约14.4%，增长稳健
-- 但2025年出现"增收不增利"——营收增21.5%，净利仅增2.0%，毛利率从33.7%下滑至31.7%
-- 经营现金流2025年大幅改善至53.78亿（同比+107%），现金转化率显著提升
-- ROE呈小幅下降趋势：从15.1%（2022）降至12.2%（2025）
+** Key observations**:
+- Income grew from 8.3 billion in 2020 to 16.2 billion in 2025, with CAGR accounting for about 14.4 per cent and growth robustly
+- But in 2025, there was a "no gain" - 21.5 per cent increase in the camp, a net gain of only 2.0 per cent, and a decrease in the Maori rate from 33.7 to 31.7 per cent
+- Operating cash flows improved significantly to $5.378 billion in 2025 (year-on-year + 107 per cent) and cash conversion rates increased significantly
+- ROPE shows a slight downward trend: from 15.1 per cent (2022) to 12.2 per cent (2025)
 
-### 1.2 2026年一季报
+# 1.2 Quarterly report 2026
 
-| 指标 | 2026Q1 | 同比 |
+Indicator: 2026Q1
 |------|--------|------|
-| 营收 | 32.91亿 | +22.5% |
-| 归母净利 | 5.88亿 | +26.3% |
-| EPS | 0.58元 | +26.1% |
-| 经营现金流 | -12.64亿 | -218.5% |
+*The total number of people who are in the process of becoming involved in the process is *
+* Net return to mother 588 million + 26.3% *
+<unk> EPS $ 0.58 + 26.1%
+<unk> Operating cash flow <unk> - 1,264 million <unk> - 2185.5% <unk>
 
-*数据来源：公司一季报*
+*Source: company quarterly report*
 
-**警示**：Q1现金流由净流入10.67亿转为净流出12.64亿，需关注原因（可能与大额订单备货有关）。
+** Warning**: Q1 cash flows from net inflows to net outflows of $1,067 million to $1,264 million, possibly related to large order reserve.
 
-### 1.3 收入结构（2025年）
+#1.3 Income structure (2025)
 
-| 业务板块 | 收入(亿) | 占比 | 同比增速 |
+Business plate, income (billions)
 |---------|---------|------|---------|
-| 高端装备制造 | 100.16 | 61.7% | +9.1% |
-| 油气工程及技术服务 | 47.18 | 29.1% | +43.3% |
-| 新能源及再生循环 | 9.56 | 5.9% | +106.5% |
-| 油气田开发 | 3.93 | 2.4% | +12.6% |
+<unk> High-end equipment manufacturing <unk> 100.16 <unk> 61.7 <unk> + 9.1 % <unk>
+<unk> Hydrocarbon engineering and technical services <unk> 47.18 <unk> 29.1 % <unk> + 43.3 % <unk>
+<unk> New energy and regeneration cycle <unk> 9.56 <unk> 5.9% <unk> 106.5% <unk>
+<unk> Development of oil and gas fields 3.93 <unk> 2.4% <unk> + 12.6% <unk>
 
-| 区域 | 收入(亿) | 占比 |
+<unk> Regional income (millions) <unk>
 |------|---------|------|
-| 国内 | 83.85 | 51.7% |
-| 海外 | 78.38 | 48.3% |
+83.85. 51.7%.
+Overseas 78.38 48.3%
 
-*数据来源：公司2025年年报*
+*Source: company annual report 2025*
 
-### 1.4 资产负债表（2025年末）
+#1.4 Balance sheet (end 2025)
 
-| 指标 | 数值 |
+<unk> Indicators <unk> Value <unk>
 |------|------|
-| 总资产 | 391.30亿 |
-| 总负债 | 152.13亿 |
-| 资产负债率 | 38.9% |
-| 货币资金 | 87.25亿 |
-| 交易性金融资产 | 29.36亿 |
-| 短期借款 | 9.54亿 |
-| 应收账款 | 58.98亿 |
-| 存货 | 61.68亿 |
+Total assets 39130 million
+Total liabilities 152.13 million
+<unk> Asset and liability ratio <unk> 38.9% <unk>
+<unk> Monetary funds <unk> 810.5 million <unk>
+<unk> Trading financial assets <unk> 236 billion <unk>
+Short-term borrowing 954 million
+Accounts receivable
+Inventory 668 million
 
-*数据来源：公司2025年年报*
+*Source: company annual report 2025*
 
-**净现金头寸**：货币资金87.25亿 + 交易性金融资产29.36亿 - 短期借款9.54亿 ≈ **107亿（净现金）**，财务状况健康。
+** Net cash position**: Monetary funds + tradable financial assets + 2,036 million - short-term borrowing ** 954 million ** 10.7 billion (net cash)**, financial health
 
-### 1.5 订单情况
+# # 1.5 orders status
 
-| 指标 | 数值 | 同比 |
+<unk> Indicators <unk> Value <unk>
 |------|------|------|
-| 2025年新增订单 | 200.97亿 | +10.2% |
-| 2025年末存量订单 | 123.31亿 | +21.4% |
-| 2026年以来北美燃机订单 | >11亿美元（~80亿元） | 新业务 |
+<unk> New order in 2025 <unk> 2097 million <unk> 10.2% <unk>
+<unk> Stock orders late 2025 <unk> 12.31 million <unk> 21.4% <unk>
+<unk> North American combustion orders since 2026 > $1.1 billion (~8 billion) <unk> New business <unk>
 
-*数据来源：公司年报、公司公告*
+*Source: Corporate Annual Bulletin, Corporate Bulletin*
 
 ---
 
-## 第二步：生意本质分析——段永平"对的生意"
+# Step 2: Business nature analysis -- a piece of "right business"
 
-### 一句话定义
+# One word of definition
 
-**杰瑞股份的本质是：以油气压裂装备为基本盘，以燃气轮机发电机组为第二曲线，面向全球能源（含AI算力电力）基础设施提供高端装备的制造商和工程服务商。**
+**The essence of Jerry's shares is that manufacturers and engineering service providers that provide high-end equipment to global energy (including AI numeracy) infrastructure, using oil-gas-cracking equipment as their basic plate, gas turbine generators as their second curve**
 
-### 商业模式画布
+# Business model canvass
 
-杰瑞的商业模式正在从"单一油服设备商"转型为"能源装备平台"：
+Jerry's business model is changing from a single-suiter to an energy platform:
 
-| 维度 | 描述 |
+<unk> dimension <unk> description <unk>
 |------|------|
-| **核心客户** | 中石油、中石化、中海油（国内）；北美油服公司、中东NOC、AI数据中心运营商（海外） |
-| **收入模式** | 装备销售（一次性，约62%）+ 工程服务（项目制，约29%）+ 新能源/循环（约6%） |
-| **复购驱动** | 设备消耗品/易损件更换、服务跟进、客户产能扩张带来的重复采购 |
-| **核心竞争力** | 电驱/涡轮压裂技术领先、快速交付能力、成本优势、燃机集成能力 |
+** Core client** Middle oil, China petrochemical, China Sea oil (domestic); North American Oil Clothing Company, Middle East NOC, AI data centre operator (Overseas) <unk>
+** Income pattern** Sales of equipment (one-time, approximately 62 per cent) + engineering services (project system, approximately 29 per cent) + new energy/cycle (approximately 6 per cent) <unk>
+** Repurchase driver** Repurchase equipment consumables/lossy replacements, service follow-up, duplicate procurements resulting from expansion of client capacity
+<unk> Core competitiveness** <unk> Power drive/turburary crack technology lead, fast-delivery capacity, cost advantage, burner integration capacity <unk>
 
-### 毛利率与同行对比
+# Māori ratio versus peer
 
-| 公司 | 毛利率(2024) | 净利率(2024) | 定位 |
+<unk> Māori rate (2024) <unk> net interest rate (2024) <unk> Positioning <unk>
 |------|-------------|-------------|------|
-| 杰瑞股份 | 33.7% | 20.1% | 国内民营油服设备龙头 |
-| 石化机械 | ~14.7% | ~1.7% | 国有油服设备（中石化子公司） |
-| Halliburton | ~20% | ~11% | 全球油服巨头（以服务为主） |
-| SLB | ~21% | ~12% | 全球油服巨头 |
+<unk> Jerry shares 33.7% <unk> 20.1% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Fossil machinery ~ 14.7% ~ 1.7% <unk> State-owned oil-suit equipment (MEC) <unk>
+<unk> Halliburton<unk> 20%<unk> 11%<unk> Global oil suit giant (service-based)<unk>
+♪ The world's big suit ♪
 
-*数据来源：各公司年报*
+*Source: annual corporate reports*
 
-杰瑞 vs 石化机械的盈利差距极为惊人：毛利率差18.8pp，净利率差16.6pp。杰瑞2024年赚26.3亿，石化机械净利润长期低于10亿。原因：(1) 电驱压裂设备技术溢价；(2) 高端装备占比高（毛利率39.4%）；(3) 海外业务毛利率38.6%远高于国内29.7%。
+Jerry vs. The profit gap between petrochemical machines is striking: the Māori rate is 18.8 pp short and the net interest rate is 16.6 pp low. Jerry earned $2.63 billion in 2024, and the net profit from petrochemical machines is consistently below 1 billion. The reasons are: (1) the technical premium for electro-pulsion-firing equipment; (2) the high proportion of high-end equipment (Māori rate 39.4 per cent); and (3) the Māori rate for overseas operations is 38.6 per cent well above the domestic rate of 29.7 per cent.
 
-**但2025年毛利率已从33.7%降至31.7%**，主要因海外业务占比提升带来的费用增加和燃气轮机外采成本。趋势值得警惕。
+** But the Māori rate fell from 33.7% to 31.7% in 2025**, mainly due to the cost of higher overseas operations and the cost of gas turbine out-of-air.
 
-### 经营杠杆分析
+# Run the leverage analysis
 
-2025年营收增21.5%但净利仅增2.0%，显示**负向经营杠杆**正在显现——海外业务扩张、新产能建设、燃气轮机外采成本等因素导致费用率上升。研发费用5.51亿（+9.0%），三费合计增速高于收入增速。
+The 21.5 per cent increase in the 2025 growth in the net gain was only 2.0 per cent, showing that ** negative business leverage** is emerging – the expansion of overseas operations, new capacity-building, and the cost of out-of-gas turbine extraction, among other factors, have led to higher cost rates. R&D costs of $551 million (+9.0 per cent) and combined fees of three are increasing at a faster rate than income.
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **这门生意好在哪？如果只能用一句话描述，是什么？**
+> ** Where is the business? If only one word can be said, what?**
 >
-> 杰瑞做的是全球能源基础设施的"卖铲子"生意——无论油价涨跌，只要全球仍在开采油气、建设数据中心、需要电力，就需要它的设备。核心优势在于"中国制造的高端能源装备"——比西方巨头便宜30-50%，比国内同行技术领先2-3年。
+> Jerry does the "sale shovel" business of the global energy infrastructure – whether oil prices rise or fall, as long as the world is still exploiting oil and gas, building data centres, and requiring electricity, it needs its equipment. The central advantage is that "high-end energy equipment made in China" – 30-50% cheaper than the Western giant, and two-three years ahead of domestic peer technology.
 
 ---
 
-## 第三步：护城河评估——巴菲特"经济护城河"
+# Step three: A moat river assessment -- Buffett "The Economic moat."
 
-### 五类护城河逐一验证
+# Five-class moats to verify
 
-| 护城河类型 | 强度 | 证据 |
+The moat type, the moat, the strength, the evidence, the evidence.
 |-----------|------|------|
-| **品牌/定价权** | ★★★☆☆ | 国内压裂设备市占率50%+，具备一定议价能力，但面对三桶油客户时定价权有限。海外市场以性价比取胜，非品牌溢价 |
-| **转换成本** | ★★★★☆ | 油气装备涉及设备认证、人员培训、配套服务、技术参数适配，客户切换成本较高。但并非不可替代 |
-| **网络效应** | ★☆☆☆☆ | 制造业特征明显，无显著网络效应 |
-| **规模效应** | ★★★★☆ | 国内最大的民营油服设备商，规模带来采购成本优势和研发摊销优势。北美产能扩建进一步强化规模壁垒 |
-| **技术/专利壁垒** | ★★★★☆ | 电驱压裂国内市占率80-90%，全球首个涡轮压裂装备（2014年），技术领先竞争对手2-3年。但燃气轮机核心机头外采（西门子/贝克休斯/川崎），集成能力而非核心技术自主 |
+** Brand/pricing rights** <unk> Market share of domestic crushing equipment + 50%, with a certain bargaining power, but limited pricing power when faced with three barrel oil customers.
+<unk> Conversion costs** <unk> Hydrocarbon equipment related to equipment certification, training of personnel, support services, technical parameters, high switching costs for customers.
+<unk> Network effects** <unk> Manufacturing characteristics are clear, no significant network effects<unk>
+<unk> **Scaling effect** <unk> The largest private supplier of oil-coat equipment in the country, the size of which brings about a cost advantage in procurement and a research and development amortization advantage.
+**Technology/Pictic barriers** <unk> EVD domestic market 80-90%, first turbo-shatter equipment in the world (2014), with technology leading the competition for 2-3 years. But the gas turbine core is being picked outside (Westgate/Beckhousehouse/Thonaki), integrated capacity and non-core technical autonomy
 
-### 护城河趋势判断
+# The moat of the river trends
 
-**过去5年：变宽**
-- 从柴油压裂拓展至电驱压裂、涡轮压裂，技术代差拉大
-- 海外市场从几乎为零扩展至营收的48%
-- 燃气轮机业务开辟全新赛道
+** The last five years: the wider the
+- From diesel pressure to electric voltage, turbo pressure, technology to power.
+- The offshore market has expanded from almost zero to 48 per cent of the revenue generated
+- Gas turbine business opens a new track.
 
-**未来5年：分化**
-- 压裂设备护城河可能收窄——电驱压裂技术将逐步被对手追赶
-- 燃气轮机护城河取决于能否从"集成商"升级为"核心技术自主"——目前机头外采，核心技术在西门子/GE手中
+** The next five years: fragmentation**
+- The ripping equipment can narrow the mounds - the power-drive breakup technology will be pursued by the opponent.
+- The gas turbine moat depends on the upgrading from "integrater" to "core technology autonomy" -- currently outside the engine, with Siemens/GE in the core.
 
-### 巴菲特式追问
+# Barfith-style questioning
 
-> **10年后这条护城河还在吗？什么能摧毁它？**
+** Is this moat still in place? What can destroy it?**
 >
-> 压裂设备护城河大概率仍在，但可能从"技术领先"退化为"规模+成本"护城河。真正的风险来自两个方向：(1) 能源转型——如果全球大幅减少化石能源投资，压裂设备需求萎缩；(2) 燃气轮机业务的核心机头完全依赖西方供应商——如果地缘政治导致断供，第二曲线可能中断。
+> The ripping-up-of-the-mix river is still probably at a rate, but it may be from "technology leading" to "size-plus-cost" moat. The real risk is in two directions: (1) energy transformation — demand for crack-up equipment shrinks if fossil energy investments are substantially reduced globally; and (2) core airframes in gas turbine operations are entirely dependent on Western suppliers — and the second curve could be interrupted if geopolitics lead to a breakdown of supply.
 
 ---
 
-## 第四步：逆向思考与风险清单——芒格"反过来想"
+# Step four: Reverse thinking and risk list - Manger's "back-up"
 
-### 这家公司可能失败的路径
+# The path this company might fail
 
-| 失败路径 | 概率 | 影响程度 | 说明 |
+<unk> Failed path <unk> probabilities <unk> Impact degree <unk> description <unk>
 |---------|------|---------|------|
-| 油价持续低迷（<50美元/桶） | 中等 | 高 | 全球上游资本开支减少，压裂设备需求下降，但杰瑞已有48%海外+燃机对冲 |
-| 燃气轮机机头断供 | 低-中 | 极高 | 核心机头依赖西门子/贝克休斯/川崎，中美关系恶化可能导致断供 |
-| AI数据中心电力需求不及预期 | 中等 | 高 | 当前估值大量定价了AI电力故事，如果AI投资放缓，股价回撤风险极大 |
-| 北美市场政策风险 | 中等 | 高 | 关税、本地化要求、技术禁令等可能影响北美业务 |
-| 应收账款风险 | 中低 | 中 | 应收账款58.98亿（占营收36%），若大客户回款不及预期将影响现金流 |
-| 竞争加剧/技术追赶 | 中等 | 中 | 四川宏华等在电驱压裂追赶，石化机械/宝石机械也在布局 |
-| 管理层风险 | 低 | 中 | 已启动职业经理人过渡（李志勇任董事长），但孙伟杰仍为核心决策者 |
-| 锂电投资失误 | 中等 | 中 | 累计投入15.12亿、亏损2.48亿，无明确盈利路径，占用管理层注意力 |
-| 能源转型长期威胁 | 低（短期） | 高（长期） | 全球脱碳长期趋势可能削弱化石能源设备需求 |
+<unk> Continued low oil prices (<$50/bp) <unk> Medium <unk> High <unk> Global upstream capital expenditure and demand for cracking equipment have declined, but Jerry has already 48% offshore + burner hedges
+The core is dependent on Siemens/Beckhouse Hughes/Thonzaki, and the deterioration of the US-China relationship could lead to a breakdown of the supply.
+The current valuation has heavily priced AI's electricity story, and if AI's investment slows down, the share price is extremely risky.
+<unk> North American market policy risks <unk> Medium <unk> High <unk> Customs duties, localization requirements, technology bans etc. may affect North American operations <unk>
+Accounts receivable risk Middle and low
+<unk> Increased competition/technical catch <unk> medium <unk> Sichuan Honghua and others are catching up with the power-drive cracks, petrochemical/premium machines are also in the layout <unk>
+Management risks, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, low, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, high, and high, high, and high, high, and high, and high, and high, and low, and low, and low, and low, and low, and low, and low, and low, and low, and low, and low, and low, and high, and high, and, and, and, and still, the middle, the transition, has started, the transition, the transition of the career manager has started the transition has started the transition of the career is the transition of the career is the transition is still to be the core is the core is the core is the core is the core decision is the core decision.
+The cumulative investment of 1,512 million, the loss of 248 million, no clear profit path, and the loss of management attention.
+Long-term threats to energy transformation Low (short-term) High (long-term) Global carbon decarbonization trends may weaken fossil energy equipment demand
 
-### 历史类比
+# History analogy
 
-杰瑞当前的处境类似于**2014-2015年的三一重工**——国内工程机械龙头借出海实现第二增长曲线。但也类似于**2007年的中国船舶**——周期性行业在景气高点被赋予成长股估值，最终均值回归。
+Jerry is in a situation similar to that of the triple-timers in 2014-2015** — the domestic engineering machinery leads out of the sea to achieve a second growth curve. ** The Chinese ship** cyclical industry was assigned to the growth unit valuation at the height of the climate, and the mean value was eventually returned.
 
-**关键区别**：杰瑞的燃气轮机/AI电力故事为其增添了"科技成长"成分，但核心仍是周期性制造业。一旦AI投资周期降温，高估值可能难以维持。
+** Key difference**: Jerry's gas turbine/AI electricity story adds a "tech growth" component to it, but the core is still a cyclical manufacturing industry. Once the AI investment cycle cools, it may be difficult to maintain a high valuation.
 
-### 空方核心论点
+# The empty core argument
 
-1. **估值泡沫**：PE 57.7x对应一家制造业公司，历史PE中枢仅15-20x（近5年中位数约16x），当前处于历史99.7%分位，隐含了极为乐观的增长预期
-2. **增收不增利**：2025年营收增21.5%但净利仅增2.0%，毛利率从33.7%降至31.7%，盈利质量在恶化
-3. **燃机业务缺乏核心技术**：机头外采，杰瑞本质是"系统集成商"而非"核心设备商"，利润率可能不如市场预期
-4. **一年涨362%**：短期涨幅过大，大量浮盈盘存在，调整压力显著。券商目标价区间66.5-116.7元，分歧极大
-5. **2026Q1现金流恶化**：经营现金流从+10.67亿暴降至-12.64亿，财务费用因汇兑损失增加2.27亿
-6. **锂电投资亏损**：累计投入15.12亿、亏损2.48亿的锂电负极材料项目，反映管理层在能力圈外的冒险
+1. ** Valuation foam**: PE 57.7x corresponds to a manufacturing company, historical PE hub only 15-20x (about 16 x in the median for the last five years), currently at 99.7% of history, implying very optimistic growth expectations
+2. **No gains**: 21.5 per cent increase in the 2025 camp but only 2.0 per cent net gain, Māori rate declining from 33.7 per cent to 31.7 per cent, and profit quality deteriorating
+3. **The combustion business lacks core technology**: the engine is out there, Jerry is essentially an integrator of the system, not a core equipment operator, and the profit margin may not be as high as the market expected.
+4. **362% increase a year**: short-term increases are excessive, large-scale floating inventories are in progress, and pressure is high.
+5. **Declining cash flow 2026Q1**: Operating cash flow decreased from +1,067 million to 1,264 million, and financial costs increased by 227 million due to exchange losses
+**Lithium investment loss**: cumulative investment of $1,512 million and deficit of $248 million in lithium negative materials project, reflecting management ' s risk exposure outside the circle of competence
 
-### 芒格式追问
+# Man format questions
 
-> **我最可能在哪里犯错？聪明人为什么会不买/做空这家公司？**
+** Where would I most likely make a mistake? Why would a smart man not buy or make a job on this company?**
 >
-> 最可能的犯错点在于：把"短期订单爆发"当成了"长期竞争优势"。杰瑞在AI电力方面的核心竞争力是"快速交付"——GE/西门子订单排到2029年，杰瑞能更快供货。但这恰恰说明杰瑞在"填补产能缺口"，一旦巨头产能跟上，杰瑞的窗口期可能关闭。57倍PE要求的是永续高增长，但填补缺口是一次性的。
+The most likely mistake is to think of "short-term order eruption" as a "long-term competitive advantage". Jerry's core competitiveness in AI's electricity is "quick delivery" – GE/Simen's order lined up to 2029, and Jerry can deliver faster. This is exactly what Jerry's "filling the capacity gap" means, and Jerry's window period may close when he's got a big head. 57 times PE requires sustained high growth, but filling the gap is one-off.
 
 ---
 
-## 第五步：管理层评估——段永平"对的人" + 巴菲特"管理层诚信"
+# Step five: Management assessment -- "The Right Man" # "Management Integrity"
 
-### 创始人/管理层概况
+# # Founder/Management profile
 
-| 姓名 | 职位 | 持股 | 背景 |
+Name, position, shareholding, background, background.
 |------|------|------|------|
-| 孙伟杰 | 总裁（原董事长） | 19.04% | 1963年生，中国煤炭经济学院大专，曾任烟台黄金技校教务科长，后下海创业，烟台前首富 |
-| 王坤晓 | 董事 | 13.05% | 联合创始人 |
-| 刘贞峰 | 董事 | 10.73% | 孙伟杰亲属，联合创始人 |
-| 李志勇 | 董事长（2025年12月接任） | — | 1977年生，研究生学历，从杰瑞销售体系成长起来的职业经理人 |
+<unk> 19.04% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+Queen Xiao Xiao, Director 13.05%, Co-founder of the United States
+Liu Jin Feng, Director 10.73%
+<unk> Lee Chi Yong <unk> Chairman (replaced December 2025) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-**实控人合计持股**：~42.8%，利益高度绑定。
+** Total holdings by physical controller** ~ 42.8%, highly bound.
 
-**重要变化**：2025年12月换届，孙伟杰卸任董事长转任总裁（仍为实控人），李志勇接任董事长——标志着从创始人治理向职业经理人治理的过渡。
+** Significant changes**: In December 2025, the outgoing Chairman of Sun Weiji was replaced by a Managing Director (still the realist) and the Chairman of Li Zhiyong, marking the transition from founder to career manager governance.
 
-**内部人交易**：2024-2026年管理层持续增持（合计超6700万元），**无任何内部人减持**。这是一个非常积极的信号。
+** Internal transactions**: management continued to grow over 2024-2026 (total over $67 million),** no internal stock **. This is a very positive signal.
 
-### 关键决策复盘
+# Key decision-making remix
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2010年 | 深交所上市 | 获得资本市场融资渠道 | ★★★★☆ |
-| 2014年 | 研发涡轮压裂（全球首创） | 奠定技术领先地位 | ★★★★★ |
-| 2019年 | 推出全球首个电驱压裂成套装备 | 国内电驱压裂市占率80-90% | ★★★★★ |
-| 2020年 | 自研5MW车载燃气轮机 | 为2025年北美订单爆发埋下伏笔 | ★★★★★ |
-| 2023年 | 出口电驱压裂至北美 | 打开海外高端市场 | ★★★★☆ |
-| 2025年 | 切入AI数据中心供电 | 获得11亿美元+订单，但尚待交付验证 | ★★★★☆（待验证） |
+* The following information was provided to the public at the time of the meeting:
+♪ The world's first ever to be a technological leader ♪
+<unk> 2019 Launching the first power-drive-breaker kit worldwide
+<unk> 2020 Self-researched 5MW gas turbines <unk>
+<unk> 2023 <unk> export-driven voltage to North America <unk> <unk> open up high-end markets overseas <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Entering the AI data centre to power the <unk> getting $1.1 billion plus orders, but still to be delivered for validation
 
-### 资本配置失误：锂电投资
+# Capital misallocation: lithium investment
 
-2021年公司投资约25亿进入锂电负极材料（天水项目），累计投入15.12亿元，累计亏损2.48亿元，无明确盈利路径。管理层已放缓投资但未退出。这是唯一明显的资本配置失误，反映了管理层在能力圈外的冒险。
+In 2021, the company invested about 2.5 billion dollars in lithium-based negative electrode materials (the Skywater Project), with cumulative investment of 1,512 million yuan, with accumulated losses of 248 million yuan, without a clear profit path. Management slowed down its investments but did not withdraw. This was the only apparent misallocation of capital, reflecting management ' s risk outside the capacity circle.
 
-### 公司治理风险事件
+Corporate governance risk event
 
-2020年4月，杰瑞集团副总裁、首席法务官鲍毓明被指控性侵养女。公司24小时内解除其劳动合同，配合调查。最终因证据不足不予起诉，但发现鲍毓明隐瞒美国国籍在华执业，被吊销律师执照并驱逐出境。事件反映了高管审查存在盲区，但公司处置果断，对经营无实质影响。
+In April 2020, the deputy president of the Jerry Group and chief legal officer Paul L. Bowman was charged with sexual assault. The company cancelled his labour contract within 24 hours, cooperating with the investigation.
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **如果CEO退休，这家公司还能保持竞争力吗？**
+> ** If CEO retires, will the company remain competitive?**
 >
-> 杰瑞的核心竞争力已从"创始人个人能力"转化为"组织能力+技术积累"——压裂设备50%市占率、电驱技术领先、北美产能布局，这些不会因为孙伟杰退休而消失。但战略嗅觉和关键决策（如切入AI电力赛道）仍高度依赖创始人。接班人计划是一个值得关注的中长期风险。
+> Jerry’s core competitiveness has been transformed from "founder’s personal ability" to "organic capacity plus technological accumulation" – 50% city occupancy, power-drive ahead, and North American production, which will not disappear as Sun Weijier retires. But strategic sense and key decision-making, such as entry into the AI electric track, remain highly dependent on the founders.
 
 ---
 
-## 第六步：行业与文明趋势——李录"文明演进框架"
+# Step 6: Industry and civilization trends - Lee Siu ' s Framework for Civilization Evolution
 
-### 行业定位
+# Industry positioning
 
-杰瑞处于两大文明级趋势的交汇点：
+Jerry is at the crossroads of two major civilizational trends:
 
-**趋势一：全球能源安全——化石能源仍是"必需品"**
-- 全球油气上游资本开支2024年约5400亿美元，预计未来5年维持高位
-- 中东、非洲、南美等地区仍在大规模扩产
-- 中国页岩气开发持续推进
+** Trends I: Global energy security — fossil energy remains a necessity**
+- Global upstream capital expenditure on hydrocarbons, estimated at $54 billion in 2024, is expected to remain high over the next five years
+- Large-scale expansion in the Middle East, Africa, South America, etc.
+- China shale gas development is continuing to advance.
 
-**趋势二：AI算力爆发——电力成为瓶颈**
-- 美国数据中心规划装机容量从2023年的5GW增至2025年10月的245GW
-- 燃气发电因可快速部署，成为AI数据中心供电的首选过渡方案
-- 全球燃气轮机市场被GE Vernova/西门子/三菱三巨头垄断（2024年占85%），产能严重紧张，订单排至2029年
+** Trend II: AI Calculus Episode - Power becomes a bottleneck**
+- The U.S. data centre planned to increase its installed capacity from 5 GW in 2023 to 245 GW in October 2025
+- Gas generation became the preferred transition option for the AI data centre owing to rapid deployment
+- Global gas turbine market is monopolized by GE Vernova/Simon/Tigni Mitsubishi (85 per cent in 2024), with severe capacity stress, with orders slated to 2029
 
-### 杰瑞在产业价值链中的位置
+# Jerry's place in the industrial value chain
 
 ```
-上游供应链              杰瑞的角色                下游客户
-西门子(SGT-A05)   →   燃气轮机集成商        →   AI数据中心
-贝克休斯(LM2500)  →   （采购机头+            →   北美油服公司
-川崎重工(NovaLT)  →    设计集成+快速交付）    →   中东NOC
+Upstream supply chain, Jerry's role, downstream clients.
+SCT-A05 * Gas turbines ICator * AI data centre
+BAM2500 (purchase of aircraft + North American Oil Clothing Company)
+NovaLT Design integration + Quick Delivery
 ```
 
-**关键判断**：杰瑞在燃气轮机领域的角色是**"快速集成交付商"**而非"核心技术拥有者"。类似于手机行业的"组装厂"而非"芯片设计商"。这决定了其长期利润率和竞争壁垒的上限。
+** Key judgement**: Jerry's role in the gas turbine area is ** "Quick-intelligence provider"** not "core technology owner". Similar to the mobile phone industry, "assembly plant" rather than "chip designer." This determines the upper limit of its long-term profitability and barriers to competition.
 
-### 客户/供应商集中度分析
+## Client/supplier concentration analysis
 
-**客户集中度（改善中）**：前五大客户占比从2023年的30%降至2024年的20%，最大客户仅占5.48%，覆盖70+国家、2400+客户。
+** Client concentration (in progress)**: The top five clients declined from 30 per cent in 2023 to 20 per cent in 2024, with the largest client accounting for only 5.48 per cent, covering 70+ countries, 2400+ clients.
 
-**供应商集中度（关键风险）**：燃气轮机业务核心机头100%依赖西门子能源/贝克休斯/川崎重工。这是最大的供应链单点故障风险。
+** Vendor concentration (critical risk): 100 per cent of the core airframes in gas turbine operations rely on Siemens Energy/Beckhousehouse/Thonzaki Heavy Worker. This is the biggest single point failure risk in the supply chain.
 
-### 技术路线风险
+# Technology route risk
 
-| 替代技术 | 威胁程度 | 时间窗口 |
+<unk> Alternative technology <unk> Threat level <unk> Time window <unk>
 |---------|---------|---------|
-| 核电（SMR小型模块化反应堆） | 中等 | 5-10年 |
-| 地热发电 | 低 | 10年+ |
-| 电池储能+可再生能源 | 中等 | 5-8年 |
-| 氢能 | 低 | 10年+ |
+<unk> Nuclear power (SMR small modular reactor)
+♪ Geothermal power ♪
+<unk> Battery storage energy + renewable energy <unk> Medium <unk> 5-8 years <unk>
+Xia, hydrogen, Xia, Xia, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X
 
-燃气轮机发电是AI数据中心的**过渡方案**，不是终极方案。如果SMR小型核反应堆加速商业化，燃气轮机需求窗口可能比预期更短。
+Gas turbine power is a ** transition option for the AI data centre**, not the ultimate one. If SMR small nuclear reactors are commercialized faster, the gas turbine demand window may be shorter than expected.
 
-### 李录式追问
+# Lee's asking questions
 
-> **站在20年后回看，这家公司是"这个时代的标准石油"还是"昙花一现的3Com"？**
+> ** Stand back and look 20 years later, is this company Standard Oil of the Age or 3Com of the Expedition?**
 >
-> 杰瑞更可能是**"这个时代的卡特彼勒"**——一家优秀的制造业公司，受益于全球基建周期，但不会成为标准石油级别的垄断者。它的油气设备业务有持久价值，但燃气轮机/AI电力可能只是一个5-10年的窗口期机遇。20年后，杰瑞仍在，但股价是否配得上今天的估值，取决于它能否在窗口期内积累真正的核心技术和品牌壁垒。
+> Jerry is more likely to be ** "Catepil of the era"** -- a good manufacturing company that benefits from the global capital cycle but does not become a monopoly at the standard oil level. Its hydrocarbon operations have a lasting value, but gas turbines/AI power may be just a window window opportunity of 5-10 years. Twenty years later, Jerry is still, but stock prices are worth today's valuation, depending on whether it can accumulate real core technical and brand barriers during the window period.
 
 ---
 
-## 第七步：估值与安全边际——巴菲特"内在价值" + 段永平"对的价格"
+# Step seven: valuation and security margin -- Barfitt "inner value" + price of "right"
 
-### 当前估值指标
+# Current valuation indicators
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|------|------|
-| 股价 | 159.30元 | 2026年6月24日 |
-| 总股本 | 10.24亿股 | 含回购专户362万股 |
-| 市值 | 1,631亿元 | 工具验算：159.3×10.24亿=1,631亿 ✅ |
-| PE(TTM) | 57.7x | 工具验算：159.3/2.76=57.7 ✅ |
-| PB | 6.92x | 工具验算：159.3/23.01=6.9 ✅ |
-| P/FCF | 30.3x | 基于2025年FCF≈53.78亿（OCF近似） |
-| EV/EBITDA | 37.2x | 来源：Investing.com |
-| 股息率 | 0.53% | 每股0.85元 |
-| 52周最低/最高 | 33.67 / 175.50元 | 一年振幅422% |
+The price of the stock is 159.30.
+* Total equity * 1024 million shares * Including 3.62 million shares for the purchase of the owner
+* Market value $163.1 billion
+<unk> PE(TTM) <unk> 57.7x <unk> Tool: 159.3/2.76 = 57.7 <unk>
+<unk> PB <unk> 6.92x <unk> Tool: 159.3/23.01 = 6.9 <unk>
+P/FCF 30.3x based on FCF 5.378 billion in 2025 (OCF approximation)
+<unk> EV/EBITDA <unk> 37.2x <unk> Source: Investing.com <unk>
+<unk> Escillation rate <unk> 0.53% <unk> 0.85 dollars per share <unk>
+<unk> 52 weeks minimum/maximum <unk> 33.67/175.50 <unk> 422% amplitude per year <unk>
 
-*数据来源：Investing.com、公司年报、financial_rigor.py验算*
+*Source: Investing.com, corporate annual report, financial_rigor.py
 
-### 反向DCF：当前股价隐含了什么？
+# Inverse DCF: What does the current stock price imply?
 
-市值1,631亿，2025年净利26.80亿，PE=57.7x。
+The market value was $163.1 billion, with a net gain of $2,680 million in 2025, PE = 57.7x.
 
-假设市场给予3年后25x PE（制造业合理估值），则当前股价隐含**未来3年净利CAGR约32%**（即3年后净利需达到约65亿）。
+Assuming that the market gives 25 x PE (a reasonable valuation of manufacturing) three years later, the current stock price is implicit** that the net CAGR benefits over the next three years are about 32 per cent** (i.e. that the net gains will reach about 6.5 billion after three years).
 
-这意味着市场预期杰瑞的净利润在3年内从26.8亿翻倍到65亿——年均增长32%。对于一家制造业公司，这是极为激进的预期。
+This means that the market expects Jerry to double his net profit from 2.68 billion to 6.5 billion in three years – an average annual increase of 32%. This is a very radical expectation for a manufacturing company.
 
-### 三情景估值（工具精确计算）
+#3 scenario valuation (tool precision)
 
-| 情景 | 年增速 | 3年后EPS | 目标PE | 目标股价 | 当前涨跌幅 |
+The year after three years, the EPS will be the target PE, the target share price, the current up and down.
 |------|--------|---------|--------|---------|-----------|
-| **乐观** | 35% | 6.79元 | 40x | 271.6元 | +70.5% |
-| **中性** | 20% | 4.77元 | 30x | 143.1元 | **-10.2%** |
-| **悲观** | 5% | 3.20元 | 20x | 63.9元 | **-59.9%** |
+** EXPOINTED** 35%
+** neutral** ** 20% <unk> 4.77 <unk> 30 x <unk> 143.1 **10.2%** <unk>
+** Pessimism** 5% ** 3.20 <unk> 20 x 63.9 <unk> **- 59.9 ** <unk>
 
-*通过financial_rigor.py三情景模型精确计算*
+*Accurate calculation through the financial_rigor.py scenario 3 model*
 
-**关键发现**：在中性情景下（20%盈利增速+30x PE），杰瑞未来3年的回报为**-10%**。只有在乐观情景下（35%增速+40x PE）才有正回报。这意味着**当前股价已经充分甚至过度定价了乐观预期**。
+** Key findings**: In a neutral scenario (20% profit growth + 30x PE), Jerry will return **-10% over the next three years. Only in a optimistic scenario (35% increase + 40x PE) will there be positive returns.
 
-### 历史估值对比
+# Compare historical valuations
 
-| 时期 | PE范围 | 股价范围 | 市场情绪 |
+The period, the PE range, the stock price range, the market mood, the market mood, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the market, the..., the...
 |------|--------|---------|---------|
-| 2020-2023年（常态期） | 10-25x | 15-40元 | 正常 |
-| 2024年Q4（低点） | ~15x | ~28元 | 悲观 |
-| 2025年Q4-2026年（AI电力热潮） | 35-60x | 70-175元 | 极度乐观 |
+<unk> 2020-2023 (normal period) <unk> 10-25 x <unk> 15-40 <unk> Normal
+♪ The world's greatest ♪
+<unk> Q4-2026, 2025 (AI power heat)
 
-当前57.7x PE处于历史极端高位，远超过去5年中枢（约18x）。
+Currently, 57.7xPE is at an extreme historical high, well above the hub of the last five years (approximately 18x).
 
-### 与同行估值对比
+# Compared to peer valuation
 
-| 公司 | PE(TTM) | PB | 市值 |
+*The following information was provided to the Board:
 |------|---------|-----|------|
-| 杰瑞股份 | 57.7x | 6.9x | 1,631亿 |
-| 石化机械 | ~25x | ~2.5x | ~200亿（估计） |
-| Halliburton | ~12x | ~3x | ~250亿美元 |
-| SLB | ~14x | ~3.5x | ~550亿美元 |
-| Baker Hughes | ~20x | ~3x | ~400亿美元 |
+Jerry shares 57.7 x 6.9 x 163.1 billion
+~25x<unk> 2.5x<unk> 20 billion (estimate)<unk>
+Halliburton ~ 12 x 3 x 25 billion
+SLB<unk> 14x<unk> 3.5x<unk> 55 billion
+Baker Hughes ~ 20 x 3 x 40 billion
 
-*注：部分数据为近期估计值*
+*Note: Some data are recent estimates*
 
-杰瑞的PE是全球油服巨头的**3-5倍**，PB是2倍以上。即使考虑"中国制造+AI电力溢价"，估值差距仍然惊人。
+Jerry's PE is a global **3-5-fold ** and the PB is more than twice. Even considering the Chinese manufacturing +AI power premium, the valuation gap is still striking.
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **如果股市明天关闭5年，你愿意以这个价格持有吗？**
+> ** If the stock market closes for five years tomorrow, will you hold it at this price?**
 >
-> **不愿意。** 159元/股（57.7x PE）对应的是"一切都要按最乐观情景兑现"的价格。杰瑞是一家好公司，但不是一个好价格。五年后如果PE回归到25x的合理水平，即使盈利翻倍（从27亿到54亿），股价也只有约132元——比现在还低17%。只有盈利3年翻3倍以上，才能支撑当前股价。对一家制造业公司来说，这个概率很低。
+> ** Not willing.** 159 bucks/stocks (57.7 x PE) correspond to the price of "all things to be done with the best optimism". Jerry is a good company, but not a good price. If the PE returns to a reasonable level of 25 x five years later, even if the profit doubles (from 2.7 billion to 5.4 billion), the share price is about 132 dollars — 17% lower than it is today. Only three times more than three years of profit can support the current share price.
 
 ---
 
-## 第八步：综合决策备忘录
+# Step eight: a comprehensive decision-making memorandum
 
-### 综合评估
+# # Comprehensive assessment
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| 生意质量（段永平） | 好生意——全球能源装备"卖铲子"模式，但2025年出现增收不增利的警示信号 | ★★★★☆ |
-| 护城河（巴菲特） | 中等偏强——压裂设备市占率领先，但燃气轮机核心技术外采，护城河有上限 | ★★★☆☆ |
-| 管理层（段永平+巴菲特） | 优秀——创始人战略眼光出色（电驱压裂→AI电力），持股50%利益绑定，但接班人不明 | ★★★★☆ |
-| 最大风险（芒格） | 估值风险——57.7x PE对制造业公司而言处于历史极端，隐含了极度乐观的增长预期 | ★★★★★ |
-| 文明趋势（李录） | 顺势——同时受益于能源安全和AI算力两大趋势，但燃气发电可能是过渡方案 | ★★★★☆ |
-| 估值（巴菲特+段永平） | 危险——中性情景3年回报为负，当前价格已透支未来3年乐观预期 | ★★☆☆☆ |
+Good business -- global energy equipment "sell shovel" mode, but in 2025, there were signs of less profit.
+The moat's a little bit more powerful than the city's leading, but the core of the gas turbines is technically extracting, and the moat has a ceiling.
+<unk> Management (Yongping + Buffett) <unk> Excellent <unk> Founder's Strategic Vision (EVC <unk> AI Power) with 50% interest tied but unknown
+The most risky (Munger) valuation risk - 57.7x PE is historically extreme for manufacturing companies, implying extremely optimistic growth expectations
+Civilization trends (Li Jian) Consistency - both benefits from energy security and AI computing, but gas generation may be a transition option
+<unk> Valuation (Buffett+Ping) <unk> Hazard - neutral scenario returns negative for three years, and current prices have oversold the optimistic expectations for the next three years
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **回避当前价位。** 159元/57.7x PE对制造业公司来说风险收益比极差。建议设置观察价位：80-100元（对应25-35x PE），到达后重新评估 |
-| **持仓者** | **考虑部分止盈。** 一年涨362%，大量乐观预期已反映在股价中。建议至少减仓30-50%锁定利润，保留底仓享受长期成长 |
-| **卖出信号** | (1) 北美燃机订单增速放缓或交付出现问题；(2) 连续2个季度毛利率继续下滑至30%以下；(3) 西方对燃气轮机出口实施限制；(4) AI资本开支周期见顶 |
-| **加仓信号** | (1) 股价回落至80-100元区间（PE 25-35x）；(2) 自研燃气轮机取得突破性进展；(3) 连续多季度毛利率企稳回升并超过35% |
+** Empty warehouser** ** Avoided current prices.** $159/57.7x PE is a very poor risk-earner for manufacturing companies. ** Proposed observation price: $80-100 (equivalent to 25-35x PE), reassessed upon arrival
+<unk> ** warehousekeeper** ** Consider partial closure.** Growth of 362% a year, with a high level of optimism reflected in stock prices.
+<unk> ** Signals sold** <unk> (1) Problems in the growth or delivery of North American combustion orders; (2) continued decline in the Maori rate to less than 30 per cent for two consecutive quarters; (3) Western restrictions on gas turbine exports; (4) A.C. capital expenditure cycle at the top
+<unk> **Step signal** <unk> (1) Stock price down to 80-100 yuan (PE 25-35x); (2) break-through progress on self-research gas turbines; (3) multi-quarterly recovery of Māori rates and over 35%
 
-### 四位大师模拟点评
+# Four masters simulated the reviews
 
-> **巴菲特**："杰瑞是一家出色的公司，管理层有远见。但我不会在57倍市盈率买入任何制造业公司。好公司加上高价格等于平庸的投资回报。我的报价是80元。"
+> **Buffett**: "Jerry is a brilliant company with a vision of management. But I won't buy any manufacturing company at 57 times the city's profit. Good companies, with high prices, are equal to a flat return on investment. My offer is $80."
 
-> **芒格**："反过来想——如果AI数据中心建设放缓，如果西门子不再卖机头给杰瑞，如果油价跌到40美元——这个股价还撑得住吗？三个'如果'里只要一个成真，投资者就会遭受重大损失。在高度不确定的周期里支付确定性溢价，是投资中最昂贵的错误之一。"
+> **Mung**: "Cut back thinking -- if the AI data centre is slowing down, if Siemens is not selling the plane to Jerry, if oil prices fall to $40 -- can this share be sustained? Three 'if's only one, investors will suffer a great loss. Paying certainty premium in a highly uncertain cycle is one of the most expensive mistakes in investment."
 
-> **段永平**："杰瑞的生意本质没问题——'卖铲子'给全球能源行业，这是对的生意。孙伟杰也是'对的人'——从黄金技校教务科长到压裂设备全球龙头，证明了眼光和执行力。但159元不是'对的价格'。对的价格应该让你即使判断错了也不会亏大钱。"
+> **Songping**: "Jerry's business is fine -- 'Sell shovel' to the global energy industry, 'it's the right business. Sun Weiji is also the right man' -- from the head of the Golden Technical School to the global leader of the cracking device, proving vision and implementation. But $159 is not the right price."
 
-> **李录**："杰瑞站在能源安全和AI算力两大文明级趋势的交汇点，位置极好。但要区分'时代给的机会'和'公司自身的能力'——北美燃机订单是因为GE/西门子产能不足，杰瑞在'补缺'。真正的护城河需要自主核心技术。如果杰瑞能在窗口期内发展出自研燃气轮机，它就是下一个西门子；如果不能，它只是一个受益于产能缺口的集成商。"
+> **Lisu**: "Jerry is at the crossroads of two major civilizational trends: energy security and AI computing, and is in excellent position. To distinguish between the opportunities of the times from the company's own capabilities -- North American burner orders are due to the lack of GE/Simen production capacity, Jerry is filling the gap. A true moat requires autonomous core technology. If Jerry can develop a self-research gas turbine during the window period, it is the next Siemens; if not, it is just an integrator benefiting from the capacity gap."
 
 ---
 
-## 关键数据交叉验证记录
+# Cross-checking records for key data
 
-### 市值验算
+# Market value count
 ```
-✅ 股价 159.3 × 总股本 10.24亿 = 1,631亿（报告市值1,625亿，偏差0.38%）
-```
-
-### 收入验证
-```
-✅ 2025年营收 162.23亿——年报摘要/东方财富/证券时报三源一致（偏差0.01%）
+<unk> Stock price 159.3 x Total equity stock 1024 million = 163.1 billion (reported market value 162.5 billion, deviation 0.38 per cent)
 ```
 
-### 净利润验证
+# # Income certified
 ```
-✅ 2025年归母净利 26.80亿——三源完全一致（偏差0.00%）
+<unk> 162.23 billion in 2025 — annual report summaries/Oriental wealth/security report three sources of consistency (a deviation of 0.01 per cent)
 ```
 
-### 估值指标验算
+# Net profit validation
+```
+<unk> Net return to mother in 2025 — $2.68 billion — three sources fully consistent (0.00 per cent deviation)
+```
+
+# # valuation indicator validation
 ```
 ✅ PE(TTM) = 159.3 / 2.76 = 57.72x
 ✅ PB = 159.3 / 23.01 = 6.92x
 ✅ P/FCF = 159.3 / 5.25 = 30.34x
-✅ 股息率 = 0.85 / 159.3 = 0.53%
+<unk> Equities = 0.85 / 159.3 = 0.53%
 ```
 
-### 三情景估值验算
+# Three scenarios valuation
 ```
-✅ 乐观：EPS 2.76 × (1.35)³ = 6.79 → 6.79 × 40 = 271.6元（+70.5%）
-✅ 中性：EPS 2.76 × (1.20)³ = 4.77 → 4.77 × 30 = 143.1元（-10.2%）
-✅ 悲观：EPS 2.76 × (1.05)³ = 3.20 → 3.20 × 20 = 63.9元（-59.9%）
+<unk> Optimism: EPS 2.76 x (1.35) 3 = 6.79 <unk> 6.79 × 40 = $271.6 (+ 70.5%)
+<unk> Neutral: EPS 2.76 x (1.20) 3 = 4.77 <unk> 4.77 × 30 = 143.1 yuan (- 10.2%)
+<unk> Pessimism: EPS 2.76 x (1.05) 3 = 3.20 <unk> 3.20 × 20 = 63.9 (-59.9%)
 ```
 
 ---
 
-## AI研究置信度 vs 投资确定性
+# AI study confidence vs investment certainty
 
-### AI分析置信度：高
+# AI analyze confidence: High
 
-杰瑞股份为A级信息充裕公司，数据覆盖全面——15年上市历史、完整年报、12+家券商覆盖、大量媒体报道。本报告的财务数据、竞争格局、管理层信息均经过多源交叉验证，数据层面可信度高。
+Jerry shares a class A-rich company, with full data coverage – 15 years of listing history, full annual reporting, 12+ coupons, and a lot of media coverage. Financial data, competition patterns, and management information are cross-checked across multiple sources for this report, with high data levels of credibility.
 
-### 投资确定性：中低
+# Investment certainty: medium and low
 
-尽管AI分析置信度高，**投资确定性却较低**，原因如下：
+Despite the high level of confidence in AI analysis,** investment certainty is low** for the following reasons:
 
-1. **估值处于历史极端**——57.7x PE已隐含极度乐观预期，任何不及预期都可能导致大幅回调
-2. **第二曲线（燃气轮机）尚未经过完整周期验证**——11亿美元订单看起来惊人，但能否持续获取订单、能否保持合理利润率、交付是否顺利，均有待验证
-3. **核心技术依赖外供**——燃气轮机机头外采是结构性风险，不可控
-4. **周期性行业的估值陷阱**——油气设备是典型周期行业，在景气高点给予高PE是经典的价值陷阱
+** Valuation is at historical extremes** - 57.7 x PE has implied extreme optimism that any less than expected could lead to a significant return
+** The second curve (gas turbine) has not been fully tested** — $1.1 billion orders appear to be alarming, but the continued availability of orders, the maintenance of reasonable profitability and the smooth delivery of deliveries are to be verified.
+** Core technology dependence on external supply** - Outboarding of gas turbines is a structural risk that is uncontrollable
+** Valuation trap for cyclical industries** - Hydrocarbon equipment is typical of the cyclical industry, and giving high PE at high-scenario points is classic value traps
 
-**一句话总结**：杰瑞股份是一家优秀的公司，处于绝佳的行业位置，但159元的股价已经把"可能发生的好事"全部定价了，留给投资者的安全边际几乎为零。等待更好的价格，是更聪明的选择。
+** Summary **: Jerry shares is a good company in a good business position, but the 159 dollar share price has already priced the "probably good thing" and left the investor with almost zero security margin. Waiting for better prices is a smarter option.
 
 ---
 
-*免责声明：本报告为AI辅助生成的投资研究分析，不构成投资建议。所有数据截至2026年6月24日，可能已发生变化。投资决策请基于个人判断并咨询专业投资顾问。*
+* Disclaimer: This report does not constitute an AI-assisted investment research analysis. All data may have changed as of 24 June 2026.

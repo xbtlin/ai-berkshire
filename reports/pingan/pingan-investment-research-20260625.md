@@ -1,45 +1,45 @@
-# 中国平安（601318.SS / 2318.HK）投资研究报告
+# China Peace (601318.SS/2318.HK) investment study
 
-> 研究日期：2026年6月25日
-> 研究框架：巴菲特-芒格-段永平-李录 四维综合分析
-
----
-
-## 信息丰富度评级：A级（信息充裕）
-
-中国平安是中国最大的综合金融集团之一，A+H双重上市超20年，券商覆盖极为密集（50+家覆盖），媒体报道量级巨大，年报信息披露完整。
-
-**AI研究陷阱**：A级信息充裕意味着AI输出极易趋同于市场共识定价，alpha有限。本报告重点在反面检验——聪明人为什么不买？被忽略的风险是什么？
-
-**AI研究局限性声明**：
-- 股价数据截至2026年6月14日，非实时数据
-- 保险公司的内含价值（EV）高度依赖精算假设，AI难以独立验证假设合理性
-- 投资组合底层资产质量需要一手调研验证
-- 管理层评估主要基于公开信息，缺少一手访谈视角
+> Research date: 25 June 2026
+> Research framework: Buffett-Mung-Dhongping-Li-Shäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkäkätätätätätttätätttättänäkäkäkäkäkäkäkäkäkätähähähähäkäwättttttttttttt
 
 ---
 
-## 公司概览
+# Information abundance rating: A (information is abundant)
 
-| 项目 | 数据 |
+China ' s peace is one of China ' s largest financial complexes, A+H has been listed for over 20 years, and the bond dealers have been heavily covered (50+ household coverage), the media coverage is large in volume, and the annual reports are fully disclosed.
+
+**AI study trap**: A-level information abundance means that AI output is highly likely to converge with market consensus pricing, and alpha is limited. The focus of this report is on the opposite side of the test — why not the smart man? What are the risks of being ignored?
+
+**A. Study limitations statement**:
+- Stock price data as of 14 June 2026, non-real time
+- The integrity value of insurance companies (EV) is highly dependent on actuarial assumptions, and AI has difficulty independently verifying the reasonableness of the assumptions
+- The quality of the bottom asset of the portfolio requires a first-hand study and validation
+- Management assessments are based primarily on open information and lack of a one-hand interview perspective
+
+---
+
+# Corporate overview
+
+Project Data
 |------|------|
-| 公司全称 | 中国平安保险（集团）股份有限公司 |
-| 上市市场 | A股（601318.SS）+ H股（2318.HK） |
-| 总股本 | 181.08亿股（A股106.60亿 + H股74.48亿） |
-| A股股价 | ~54.01元（2026.6.14） |
-| A股市值 | ~9,780亿元 |
-| H股股价 | ~53.85港元 |
-| 创始人/董事长 | 马明哲（1988年创办） |
-| 总经理/联席CEO | 谢永林 |
-| 核心业务 | 寿险、财险、银行、资管、科技 |
+<unk> Company full name <unk> China Peace and Security (GSO) Inc. <unk>
+Listed market share A (601318.SS) + H (2318.HK) <unk>
+Total equity <unk> 6008 million (A + H + 7,448 million) <unk>
+<unk> A share price ~ $54.01 (2026.6.14) <unk>
+Market value of A shares ~ 978 billion
+H share price HK$53.85
+<unk> Founder/Chairman of the Board <unk> Ma Min Chul (found in 1988) <unk>
+*General Manager/Co-Co-CEO * Xie Yonglin *
+Core business Life insurance, financial insurance, banking, financial management, technology and technology
 
 ---
 
-## 第一步：关键财务数据
+# Step one: key financial data
 
-### 近5年核心财务指标
+# # Core financial indicators for the last five years
 
-| 年份 | 营业收入（亿元） | 归母净利润（亿元） | 营运利润（亿元） | EPS（元） | ROE |
+Operating profits (millions of yuan)
 |------|:---:|:---:|:---:|:---:|:---:|
 | 2020 | ~12,183 | 1,431 | 1,395 | ~7.84 | 19.5% |
 | 2021 | ~11,804 | 1,016 | 1,480 | 5.77 | 18.9% |
@@ -48,21 +48,21 @@
 | 2024 | 10,289 | 1,266 | 1,219 | ~6.99 | 13.8% |
 | 2025 | 10,505 | 1,348 | 1,344 | ~7.44 | ~14% |
 
-*2023年起执行IFRS 17新准则，收入口径变化，与此前不可直接对比。
+* The new IFRS 17 guidelines have been implemented since 2023, with changes in the income calibre that were not directly comparable to those previously recorded.
 
-### 2025年分部利润贡献
+# # 2025 branch profit contribution
 
-| 分部 | 净利润（亿元） | 同比 | 利润占比 |
+<unk> Division <unk> net profit (millions of yuan) <unk>
 |------|:---:|:---:|:---:|
-| 寿险及健康险 | 1,087 | +16.9% | 74% |
-| 银行 | 247 | -4.2% | 17% |
-| 财产险 | 145 | -2.8% | 10% |
-| 科技 | 32 | -75% | 2% |
-| 资产管理 | -38 | 亏损缩窄68% | -3% |
+Life and health insurance 1 087 <unk> 16.9 <unk> 74 <unk>
+Bank 247-4.2% <unk> 17% <unk>
+Property insurance 145-2.8 per cent 10 per cent
+Technology 32 - 75% 2%
+<unk> Asset management <unk> -38 <unk>
 
-### 保险核心指标趋势
+Trends in core indicators of insurance
 
-| 年份 | 集团EV（亿元） | NBV（亿元） | NBV同比 | 产险COR | 综合投资收益率 |
+<unk> Group EV (billions) <unk> NBV (billions) <unk> NBV in comparison to <unk> Production Risk COR <unk> Combined investment return
 |------|:---:|:---:|:---:|:---:|:---:|
 | 2020 | ~13,281 | 496 | — | 99.1% | — |
 | 2022 | ~14,200 | 288 | -24% | — | — |
@@ -70,12 +70,12 @@
 | 2024 | ~14,226† | 285 | +29%‡ | 98.3% | 5.8% |
 | 2025 | 15,043 | 369 | +29.3% | 96.8% | 6.3% |
 
-†EV假设经历多次下调（投资回报率5%→4.5%→4%，风险贴现率11%→9.5%→8.5%），不同年份口径不完全可比。
-‡可比口径。
+<unk> EV assumes several downward adjustments (5.5 per cent — 4.5 per cent — 4 per cent return on investments and 11.5 per cent — 8.5 per cent risk discount) and is not entirely comparable in different years.
+A caliber comparable to that.
 
-### 分红记录（连续14年增长）
+# # Red record (14 years in a row)
 
-| 年份 | 每股股息（元） | 分红总额（亿元） | 同比 |
+<unk> Year per dividend (dollar) <unk> Total red (billion yuan) <unk>
 |------|:---:|:---:|:---:|
 | 2020 | 2.20 | 401 | +7.3% |
 | 2021 | 2.38 | 431 | +8.2% |
@@ -84,396 +84,396 @@
 | 2024 | 2.55 | — | +5.0% |
 | 2025 | 2.70 | 489 | +5.9% |
 
-### 当前估值指标（工具验算）
+## Current valuation indicator (tool validation)
 
-| 指标 | A股 | H股 |
+Indicators
 |------|:---:|:---:|
 | PE（TTM） | 7.26x | 6.43x |
 | PB | 0.98x | 0.86x |
 | P/EV | 0.65x | — |
-| 股息率 | 5.00% | — |
+<unk> Estimation rate 5.00%<unk>
 | Forward PE | — | 5.63x |
-| 盈利收益率 | 13.78% | — |
+<unk> Profit rate 13.78%
 
-> 每股净资产55.25元，每股内含价值83.07元（2025年新假设口径）。
+> $ 55.25 per unit of net assets, valued at $ 83.07 per unit (new assumed calibre 2025).
 
-### 关键数据交叉验证记录
+## Key data cross-checking records
 
-| 验证项 | 结果 | 来源数 | 偏差 |
+<unk> Verification item <unk> Results <unk> Source <unk> deviation <unk>
 |--------|:---:|:---:|:---:|
-| 市值验算（股价×股本） | ✅ 通过 | 2 | 0.00% |
-| 归母净利润 2025 | ✅ 通过 | 3 | ≤0.02% |
-| 总股本 | ✅ 通过 | 2 | 0.00% |
-| 集团内含价值 | ✅ 通过 | 2 | 0.00% |
-| 营业收入 2025 | ✅ 通过 | 3 | ≤0.01% |
-| NBV 2025 | ✅ 通过 | 2 | 0.00% |
-| 估值指标验算 | ✅ 通过 | 工具精确计算 | 无浮点误差 |
+Market value (equity prices x equity)
+<unk> net profit from the mother's return <unk> 225<unk> <unk> 3<unk> 0.02% <unk>
+Total stock <unk> by 2<unk> 00%<unk>
+Group value <unk> by 2<unk> 00%<unk>
+<unk> Business income 2025 <unk> through <unk> 3 <unk> 0.01 <unk>
+<unk> NBV 2025<unk> <unk> <unk> by 2<unk> 00%<unk> <unk>
+<unk> Valuation indicator measurement <unk> Equivalent calculation through tool <unk> no floating point error <unk>
 
-数据来源：中国平安2025年报、证券时报、东方财富网、Yahoo Finance、平安官网
+Source: China Peace 2025, Securities Times, Eastern Wealth Network, Yahoo Finance, Peace Officer Network
 
 ---
 
-## 第二步：生意本质分析 — 段永平"对的生意"
+# Step 2: Business nature analysis - a piece of "right business"
 
-### 一句话定义
+# One word of definition
 
-**中国平安的生意本质是：以保险为入口获取客户，通过综合金融生态实现交叉销售，以2.51亿客户的终身价值（LTV）为核心资产进行经营。**
+** The essence of China's safe business is that it is a customer-to-client policy, cross-marketing through a comprehensive financial ecology, and operating with a life-long value of 251 million customers (LTV) as its core asset.**
 
-### 商业模式画布
+# Business model canvass
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    客户入口：保险                          │
-│              （寿险代理人 + 银保 + 线上）                   │
+<unk> Client portal: insurance
+<unk> (life insurance agent + silver insurance + online) <unk>
 ├─────────────┬─────────────┬──────────────┬──────────────┤
-│   寿险/健康险  │   财产险     │    银行      │  资管/科技    │
-│   利润74%    │   利润10%    │   利润17%    │  利润-1%     │
+• Management/technology
+<unk> 74% profit <unk> 10% profit <unk> 17% profit <unk> profit <unk> 1% profit <unk>
 ├─────────────┴─────────────┴──────────────┴──────────────┤
-│              交叉销售 → 多产品客户留存率99%                  │
-│              综合金融 + 医疗养老 双轮驱动                    │
+<unk> Cross-sales 99% retention rate for multiple product clients <unk>
+<unk> Integrated finance + medical old-age
 ├─────────────────────────────────────────────────────────┤
-│         科技赋能：55,435件AI专利 · 2.3万AI代理人             │
-│         大模型调用81.8亿次 · AI辅助销售6,616亿元             │
+• Technology enabling: 55,435 AI patents . 23,000 AI agents <unk>
+<unk> The big model called 8.18 billion times... ..an AI-assisted sale of $661.6 billion.
 └─────────────────────────────────────────────────────────┘
 ```
 
-### 生意特征分析
+# Business profiling
 
-**收入模式**：保险为长期合约型收入（寿险保单期限15-30年），银行为利差收入，具有高度可预测性和持续性。这不是一次性销售的生意，而是"客户终身陪伴"模式。
+** Income model**: Insurance is long-term contract income (15-30 years of life insurance policy) and banks are highly predictable and sustainable in terms of spreads. This is not a one-time sale business, but a "client life-a-long" model.
 
-**生态粘性**：多产品客户留存率高达99%，这是极强的客户锁定。客户从买一份保险到用平安银行信用卡、在好医生看病、用陆金所理财，整个生活的金融和健康需求都在平安生态内解决。迁移成本极高——你不会为了换一家保险公司而同时换掉银行、医疗、理财。
+** Eco-coalent**: The retention rate of multiple product customers is 99%, which is a very strong client lock-in. Clients are able to meet their financial and health needs in a safe environment, from buying an insurance policy to using a safe bank credit card, treating a good doctor, using land money.
 
-**毛利率水平**：
-- 寿险NBV率28.5%，同行对比偏高（行业15-25%），反映产品结构优化和代理人产能提升
-- 产险COR 96.8%，意味着承保利润率约3.2%，属于行业优秀水平
-- 高NBV率来源：产品结构向高价值保障型转移 + 代理人产能提升（人均NBV+17.2%）
+** Māori level**:
+- Life insurance NBV rate of 28.5 per cent and high peer comparison (15-25 per cent in industry), reflecting product structural optimization and agent productivity improvement
+- Production insurance COR 96.8%, which means that the insured profit margin is about 3.2%, which is a high level of industry excellence
+- High NBV rate source: shift in product structure to high value-guaranteed + proxy productivity (NBV+17.2% per capita)
 
-**经营杠杆**：保险行业具有天然的经营杠杆——固定成本（后台系统、品牌投入、管理层薪酬）在规模扩大后被摊薄。平安2.51亿客户基础使其单位获客成本远低于中小险企。AI赋能进一步放大这一优势——2.3万AI代理人的边际成本趋近于零。
+** Business leverage**: The insurance industry has natural leverage - fixed costs (back-office systems, brand inputs, management remuneration) are spread out after scale. Safe and secure customer base of 251 million makes the unit cost much lower than that of small and medium-sized risk companies. AI is able to further magnify this advantage — 23,000 AI agents have a marginal cost close to zero.
 
-**一个值得警惕的点**：2021-2023年利润大幅波动（1,431亿→1,016亿→838亿→857亿），表明这门生意虽然长期稳定，但短期受投资端波动影响极大。保险公司的利润≠经营利润，投资端的资产减值（如华夏幸福432亿减值）可以一次性摧毁多年积累。这是保险生意的结构性弱点。
+** A warning point**: The large fluctuations in profits in 2021-2023 (143.1 billion — 111.6 billion — 83.8 billion — 85.7 billion) indicate that the business, although stable in the long term, is highly influenced by the volatility of the investment end in the short term. The profits of the insurance companies are so profitable that the impairment of the assets at the end of the investment (such as Happiness 43.2 billion) can be destroyed once and for all. This is a structural weakness of the insurance business.
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **这门生意好在哪？如果只能用一句话描述，是什么？**
+> ** Where is the business? If only one word can be said, what?**
 >
-> 好在"客户一旦进来就几乎不会走"。99%的多产品客户留存率意味着平安的2.51亿客户是一个持续产生现金流的"蓄水池"——每年的保费续缴、银行利差、理财手续费、健康服务费用，都是这个蓄水池自然流出的水。这门生意的核心不是卖保险，而是经营客户关系。
+> Good thing "The Clients are almost never going to leave." 99% of multi-product customers' retention rate means that the 211 million customers are a "pool" that continues to generate cash flows -- annual premiums, bank spreads, money handling charges, health services are all water that is flowing out of the reservoir. The core of the business is not insurance, but customer relations.
 
 ---
 
-## 第三步：护城河评估 — 巴菲特"经济护城河"
+# Step three: A moat river assessment -- Buffett "The Economic moat."
 
-### 五类护城河逐一验证
+# Five-class moats to verify
 
-| 护城河类型 | 具体表现 | 验证结论 | 强度 |
+<unk> Type of moat, <unk> Specific performance, <unk> Validation conclusion, <unk> strength, <unk>
 |-----------|---------|---------|:---:|
-| **品牌/定价权** | 全球保险品牌价值第1；健康险市场份额第1（15.9%）；不需要打价格战即可获客 | 品牌溢价真实存在——平安产品定价不是最低的，但客户信任度高。不过保险产品同质化程度高，定价权有限 | ★★★★ |
-| **转换成本** | 寿险保单期限15-30年，退保损失大；综合金融一站式服务使迁移成本极高；多产品留存率99% | 转换成本是平安最强的护城河。一旦客户持有多个平安产品（保险+银行+理财），迁移的心理和实际成本都很高 | ★★★★★ |
-| **网络效应** | 2.51亿客户基础为医疗养老生态提供数据优势；但保险本身不具备典型网络效应 | 有限的网络效应——更多客户→更多健康数据→更好的风控和产品设计，但不如互联网平台的直接网络效应 | ★★☆ |
-| **规模效应** | 6.49万亿投资组合带来投资端规模优势；2.51亿客户摊薄固定成本；AI投入的边际成本趋零 | 规模效应显著——中小险企在投资能力、科技投入、品牌建设上都无法与平安竞争 | ★★★★ |
-| **技术/专利壁垒** | 55,435件AI专利申请；2.3万AI代理人；大模型调用81.8亿次 | 科技投入领先同行3-5年，但技术护城河在金融领域可持续性不如产品壁垒 | ★★★ |
+** Brand/pricing rights** 1st value of global insurance brand; 1st share of the market for health insurance; no price war is required for customers; brand premiums are real - not least priced for safe products, but clients have a high level of trust.
+** Conversion costs** life insurance policy duration 15-30 years, with high loss of insurance; integrated financial one-stop service has resulted in high relocation costs; multi-product retention rate 99%; conversion costs are the safest moat. Once the customer has multiple safe products (insurance plus banking plus finance), the psychological and physical costs of relocation are high
+<unk> ** Network effect** <unk> 251 million customer base provides a data advantage for the health-care age ecology; but insurance does not have typical network effects per se <unk> Limited network effects - more clients & more health data — better wind control and product design, but less direct network effects than Internet platforms <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> **Scaling effects** The $6.49 trillion portfolio brings about capital-side size advantages; 251 million clients amortize fixed costs; the marginal cost of AI inputs is zero; the scale effect is significant - small and medium-sized risk companies cannot compete safely with investment capacity, scientific inputs, branding
+**Technology/Pystical Barriers** 55,435 AI patent applications; 23,000 AI agents; large models call 8.18 billion times <unk> Science and technology inputs lead 3-5 years, but the technology moat is less sustainable in the financial sphere than product barriers <unk>
 
-### 护城河趋势判断
+# The moat of the river trends
 
-**过去5年**：护城河经历了"先窄后宽"的过程。
-- 2021-2023年：代理人数量从100万+急剧缩减，渠道护城河一度削弱；华夏幸福暴雷暴露了投资端风控短板
-- 2024-2025年：寿险改革见效（NBV连续两年+29%），代理人产能大幅提升，科技赋能开始产出效益，护城河重新加宽
+** The past five years**: The moat has gone through the process of "shrunk and wide."
+- 2021-2023: The number of agents has been drastically reduced from 1 million to a drying down of the waterway; the summer storm has exposed the windboards of investment
+2024-2025: Life insurance reform has worked (NBV for two years in a row + 29%), agent productivity has increased significantly, technology empowerment has started yielding benefits, moat rivers have been re-opened
 
-**未来5年预判**：护城河有望持续加宽。
-- "综合金融+医疗养老"的生态整合越深，客户迁移成本越高
-- AI赋能是递增式投入——一次性投入持续产出，规模效应随时间放大
-- 但需警惕：互联网保险和新兴保险科技公司可能从低端市场蚕食份额
+** The sentence for the next five years**: The moat river is expected to continue to widen.
+- The deeper the ecological integration of "composite finance plus medical ageing" the higher the cost of customer migration
+- AI enabling is an incremental input - one-time input is continuous output, scale effects are increased over time
+- But beware: Internet insurance and emerging insurance technology companies may encroach on the share of low-end markets
 
-### 巴菲特式追问
+# Barfith-style questioning
 
-> **10年后这条护城河还在吗？什么能摧毁它？**
+** Is this moat still in place? What can destroy it?**
 >
-> 10年后护城河大概率还在，且可能更宽——2.51亿客户关系、综合金融生态、AI能力差距，这些都是时间的朋友。能摧毁它的力量有三个：一是系统性金融风险导致的资产端巨额损失（类似2008年AIG）；二是监管强制拆分综合金融集团；三是颠覆性的保险分销模式出现（类似互联网对传统零售的颠覆）。前两者是小概率事件，第三者目前看不到有这个能力的挑战者。
+The moat river is still at a presumably high rate and may be wider in 10 years — 251 million customer relations, integrated financial ecology, and the AI capability gap — which are friends of time. The power to destroy it is threefold: the huge loss of assets at the end of the chain of systemic financial risk (like AIG 2008), the regulation of the forced fragmentation of the integrated financial group, and the emergence of subversive insurance distribution models (like the subversion of traditional retailing by the Internet). The first two are small probability events, and the third is currently missing the challengers with that capability.
 
 ---
 
-## 第四步：逆向思考与风险清单 — 芒格"反过来想"
+# Step four: Reverse thinking and risk list - Manger "inverted"
 
-### 这家公司可能失败的所有路径
+# All the paths this company could fail
 
-| 失败路径 | 发生概率 | 影响程度 | 当前防护 |
+<unk> Failed path <unk> probability of occurrence <unk> impact <unk> current protection <unk>
 |---------|:---:|:---:|---------|
-| 利率长期下行导致利差损 | 中（30%） | 极高 | 已下调EV假设至4%投资回报率；增配高股息资产 |
-| 投资端再现大额减值（类华夏幸福） | 低（15%） | 高 | 房地产敞口从4.3%降至3.1%；投资策略转向"下有保底" |
-| 寿险改革逆转/代理人产能下滑 | 低（10%） | 中高 | NBV连续高增长，多渠道战略分散风险 |
-| 平安银行资产质量恶化 | 中低（20%） | 中 | NPL 1.05%，拨备覆盖率充足 |
-| 科技/资管板块持续亏损拖累 | 中（25%） | 低 | 资管亏损已缩窄68%，科技板块尚未找到盈利模式 |
-| 监管政策重大变化 | 低（10%） | 中高 | 综合金融模式得到监管认可 |
-| 系统性金融危机 | 极低（5%） | 极高 | 偿付能力充足率193%，远超监管红线 |
-| 管理层更替导致战略失焦 | 中低（20%） | 中 | 马明哲仍在幕后把控战略方向 |
+<unk> Interest rate down long term leads to a loss of profit margin (30%) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The investment end re-emerges a large impairment (Happiness of Hs. Hs. Hs. Hs. Hs. Hs. Hs.
+<unk> Life risk reform reversal/deprived agent capacity <unk> low (10%) medium and high <unk> NBV continuous high growth, multichannel strategic spread risk <unk>
+<unk> Deterioration in the quality of the assets of the Peace Bank <unk> Medium (20%) <unk> NPL 1.05%, sufficient coverage
+The technology/management panel has been held up by a continuous loss of 25 per cent.
+<unk> Significant changes in regulatory policy <unk> low (10%) medium and high <unk> Integrated financial model is recognized as regulatory
+<unk> Systemic financial crisis very low (5%) <unk> very high <unk> solvency sufficiency 193% far beyond the regulatory red line <unk>
+<unk> Management turnover has caused strategic failure <unk> medium and low (20%) <unk> Ma Myung-chul is still behind the scenes to control the strategic direction <unk>
 
-### 历史类比
+# History analogy
 
-| 类比公司 | 相似点 | 结局 | 对平安的启示 |
+The company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the organization, the organization, the end, the outcome, the spirit, the peace, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the society, the world, the society, the society, the society, the world, the society, the society, the society, the society, the society, the people, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the world, the
 |---------|-------|------|------------|
-| AIG（2008年前） | 全球最大保险集团，涉足衍生品投资 | 金融危机中因CDS几乎破产，被政府救助 | 警示：保险公司的致命风险在投资端而非承保端 |
-| 伯克希尔·哈撒韦 | 保险+投资+多元经营的综合金融模式 | 成为全球最成功的保险集团 | 模板：优秀的资本配置能力决定保险集团的上限 |
-| 日本生命保险（90年代） | 日本保险业在低利率时代的挣扎 | 利差损导致行业长期低迷 | 前车之鉴：如果中国进入日本式低利率，保险行业整体承压 |
-| 友邦保险（AIA） | 亚洲保险市场的高端品牌，专注价值导向 | 持续高估值运营，P/EV长期1.5x+ | 对标：平安P/EV仅0.65x，同为优质险企估值差距巨大 |
+The biggest insurance group in the world, involved in derivative investment, was almost bankrupt in the financial crisis because of CDS, and was rescued by the government.
+The most successful insurance group in the world.
+The Japanese insurance industry struggled in the low interest rate era.
+<unk> Friendship Insurance (AIA) <unk> High-end brand of the Asian insurance market, focused on value orientation <unk> Sustained high valuation operations, P/EV 1.5x+ <unk> Tender: Peace P/EV only 0.65x, with a huge gap between valuation of high-quality risk enterprises <unk>
 
-### 跨学科分析
+# Interdisciplinary analysis
 
-- **技术采纳曲线**：平安的AI应用处于"早期大众"阶段——已证明有用（AI辅助销售6,616亿元），但尚未到达全面渗透。关键问题是：AI能否从"提效工具"升级为"核心竞争力"？
-- **竞争博弈**：中国保险市场是寡头竞争格局（CR5约60-74%），大公司之间不会发生毁灭性价格战。平安的竞争者（人寿、太保、人保）也在转型，但平安科技领先优势明显。
-- **均值回归**：平安2021-2023年经历了罕见的"三连跌"（利润从1,431亿跌至838亿），2024-2025年强劲反弹。从均值回归角度看，当前正处于周期上行期。
+- **Technology Adoption Curve**: Safe AI applications are in the "early mass" phase - have proven useful (AI-assisted sales of $66.6 billion) but have not reached full penetration. The key question is: Can AI upgrade from "Employer Tool" to "Core Competitiveness"?
+- **Competing game**: China’s insurance market is a form of oligopoly (CR5 about 60-74%), and there will be no devastating price wars between large companies. Peace competitors (life, euphoria, human security) are also in transition, but the technological edge is clear.
+- **Metrend**: Safe 2021-2023 experienced a rare "three-colour fall" (profits fell from 143.1 billion to 83.8 billion) and a strong rebound from 2024 to 2025. From the point of view of the average return, the current cycle is in its last stage.
 
-### 偏误自查
+# I'm wrong to check myself
 
-- **叙事偏差**："综合金融+科技+医疗养老"的叙事非常吸引人，但需要警惕——"什么都做"的公司往往每样都做不好。平安的科技板块至今盈利贡献为负。
-- **锚定效应**：P/EV 0.65x相对于历史1.2-1.5x显得极其便宜，但必须考虑这是否是"新常态"——低利率环境下保险股的结构性重估。
-- **幸存者偏差**：我们看到的是平安的成功转型，但同时期很多保险公司（如安邦）已经消亡。不能因为平安活下来了就认为它永远安全。
+- ** Narrative bias**: The narrative "Integrative finance plus technology plus medical care" is fascinating, but the companies that need to be vigilant -- "do anything" are often bad at everything. The safe technology plate is so far a negative profit.
+- **Assort effect**: P/EV 0.65x is extremely cheap compared to history 1.2-1.5x, but it is important to consider whether this is a "new normal" - a structural revaluation of the insurance stock in a low interest rate environment.
+- ** Survivors' deviation**: We see a successful and safe transition, but at the same time many insurance companies (e.g., Ambon) have died. It cannot be considered safe forever because it survives.
 
-### 空方核心论点
+# The empty core argument
 
-1. **利率下行是结构性趋势**：中国10年期国债收益率已降至2%以下，保险公司长期投资回报率假设4%可能仍然偏高
-2. **寿险ROE持续下滑**：从2022年37.3%降至2024年25.7%，趋势不乐观
-3. **科技业务是"伪故事"**：陆金所、好医生等独立上市后表现不佳，科技板块不创造股东价值
-4. **华夏幸福的教训没学够**：方正集团重整（370-507亿元）可能成为新的"坑"
-5. **估值低有合理原因**：不是被低估，而是市场正确反映了保险行业在低利率环境下的长期压力
+1. ** Downside interest rates are a structural trend**: China ' s 10-year rate of return on public debt has fallen below 2 per cent and insurance companies may still have a 4 per cent return on long-term investments
+2. ** Life insurance ROE continues to decline**: from 37.3 per cent in 2022 to 25.7 per cent in 2024, the trend is not encouraging
+3. **Technology business is a "false story"**: the independent market of the Institute of Land Gold, good doctors, etc., has performed poorly and the technology plate does not create shareholder value
+4. ** The lessons of Happiness in summer are not enough**: the reconstitution of the Fangzheng group (37-507 million yuan) could become a new pit.
+5. **The low valuation is justified**: it is not underestimated, but the market correctly reflects the long-term pressure of the insurance industry in a low interest rate environment
 
-### 芒格式追问
+# Man format questions
 
-> **我最可能在哪里犯错？聪明人为什么会不买/做空这家公司？**
+** Where would I most likely make a mistake? Why would a smart man not buy/take a job on this company?**
 >
-> 最可能犯的错误是低估利率下行对保险行业的结构性打击。如果中国真的走向日本式低利率（10年期国债<1%），平安4%的投资回报率假设将难以维持，EV需要进一步大幅下调，P/EV看似便宜实则是"价值陷阱"。聪明的空头看到的是：一个利润高度依赖投资收益的商业模式，在利率长期下行的趋势中，不管短期多繁荣，长期都是逆风。
+> The most likely mistake is to underestimate the structural blow to the insurance industry from falling interest rates. If China really moves to a Japanese-style low interest rate (10-year-old state debt < 1%), a safe 4% return on investment assumption will be difficult to sustain, the EV will need to go down further, and P/EVs look cheaply as a "value trap". Smart empty view is that a business model that relies heavily on investment returns, and in the long run interest rates will be counter-winding, regardless of short-term prosperity.
 
 ---
 
-## 第五步：管理层评估 — 段永平"对的人" + 巴菲特"管理层诚信"
+# Step five: Management assessment - "The Right Man" # "Management Integrity"
 
-### CEO/创始人关键决策复盘
+# CEO/founder key decision retrace
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|:---:|
-| 1988年 | 在蛇口创办平安保险 | 从一家地方性保险公司成长为全球市值最大保险集团之一 | A+ |
-| 2004年 | 推动港交所上市（143亿港元） | 成功融资，奠定国际化基础 | A |
-| 2009年 | 收购深圳发展银行（291亿元） | 整合为平安银行，补齐银行牌照，综合金融成型 | A |
-| 2013-2015年 | 布局科技生态（陆金所、好医生、金融壹账通） | 战略方向正确，但独立上市后估值回落，尚未证明商业成功 | B |
-| 2015-2016年 | 收购汽车之家（16亿美元） | 成功整合，成为汽车生态入口 | A- |
-| 2018-2019年 | 投资华夏幸福（~180亿元+100亿PPP） | 巨额亏损，累计减值432亿，平安史上最大投资失败 | D |
-| 2020年 | 启动寿险改革（从"人海战术"到"高质量发展"） | 代理人从100万+精简到36万，产能大幅提升，NBV强劲反弹 | A |
-| 2021年 | 方正集团重整（370-507亿元） | 平安史上最大并购，深耕医疗大健康，尚待观察 | B-（待验证） |
-| 2023年 | 高管团队大换血（姚波、陈心颖离任） | 管理层年轻化，但关键人才流失也是风险 | B |
+In 1988, the safety insurance at the snake's mouth was created, and from a local insurance company to one of the largest insurance groups in the world's market, the A+ has been created.
+* The following documents were issued for the next round of negotiations:
+• The acquisition of the Shenzhen Development Bank (29.1 billion yuan) and its consolidation into the Peace Bank, the completion of the bank licence plate, the consolidation of the financial system
+The strategic direction is correct, but the valuations have fallen since the independent listing and have not proved commercial success
+The company's home ($1.6 billion) was successfully integrated into the car's eco-entry.
+The biggest investment in the history of peace has failed.
+<unk> 2020 <unk> Launching life insurance reform (from "human-sea tactics" to "quality development" <unk> <unk> <unk> <unk> <unk> + 360,000, with a significant increase in productivity, a strong rebound of NBV <unk> A <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+2021, the group re-organisation (37-507 million yuan) The largest merger in the history of peace, deep-dry medical care, but not yet observed
+♪ The big blood-changing team (Yapo, Chen, Iong) ♪
 
-### 资本配置能力评估
+# # Capital allocation capacity assessment
 
-| 维度 | 评价 |
+<unk> Dimensions Evaluation <unk>
 |------|------|
-| **分红纪律** | 优秀——连续14年增长，分红比例稳定在36-38%，体现对股东回报的重视 |
-| **回购** | 有行动——2024年回购注销1.03亿股A股，但力度相对于万亿市值而言较小 |
-| **并购** | 褒贬不一——深发展收购是教科书级别的成功，华夏幸福是教训深刻的失败。方正集团仍待观察 |
-| **研发投入** | 持续高投入——科技板块虽未盈利，但AI应用成效初显 |
-| **总体评分** | B+：有远见、有执行力，但投资端风控有盲区。华夏幸福事件暴露了过度集中单一标的的风控缺陷 |
+** Red disciplines** Excellent - 14 years of growth, with a stable 36-38% share, reflecting the importance attached to shareholder returns
+** Repurchase** In action - 103 million shares A were written off in 2024, but the strength was smaller than the trillion market value
+<unk> Merger ** Merger <unk> Pride <unk> - Deep Development Acquisitions are successful at the level of textbooks, Happiness at summer is a failure at the level of lessons learned.
+** R & D inputs** Continued high inputs - technology plates are not profitable, but AI applications are showing off
+** Overall score** <unk> B+: Vision, execution, but investment winds are in the blind. Happiness in summer revealed a faulty wind control of an over-centralized single-speculator.
 
-### 股东利益一致性
+# Shareholder interest consistency
 
-| 维度 | 现状 | 评价 |
+<unk> Dimensions <unk> Status <unk> Evaluation <unk>
 |------|------|------|
-| 管理层直接持股 | <0.02%（极低） | 差——管理层几乎无"皮肤在游戏中" |
-| 长期服务计划 | 核心人才75,175人参与H股持股计划 | 较好——覆盖面广但金额相对有限 |
-| 薪酬结构 | 联席CEO郭晓涛1,342万/年，马明哲610万/年 | 合理——上市险企最高但不离谱 |
-| 减持记录 | 第一大股东卜蜂集团持续减持（8.97%→5.29%） | 值得关注——但属于财务投资者正常退出 |
-| 股权结构 | 无控股股东、无实际控制人 | 双刃剑——分散股权保证管理层独立性，但也缺乏大股东监督 |
+<unk> Management directly holding < 0.02% (very low) <unk> <unk> <unk> <unk> management has almost no skin in the game <unk>
+Long-term service plan 75,175 people in core H equity plan
+Co-chair CEO Xiaotao 13.42 million years, Mamingzi 6.1 million years, reasonable - highest but not out of proportion to the risk.
+<unk> Record-cutting <unk> First major shareholder, the Bumblebee Group, continued to lose hold (8.97% ~5.29%) <unk> Noteworthy - but financial investors normally withdraw
+The management is independent, but there is also a lack of oversight by the major shareholders.
 
-### 企业文化特征
+# Cultural identity of the enterprise
 
-马明哲的管理哲学核心是**"危机感驱动"**——"平安没有守业，只有创业"。这种文化的优势是推动持续创新和转型（平安是中国金融业中最积极拥抱科技的公司），劣势是可能导致过度扩张和"为变而变"。
+The core of Ma Min Chul’s management philosophy is ** "Crisis Driver"** – "Peace is not on the line, only entrepreneurship." The advantage of this culture is to drive sustained innovation and transformation (Peace is the most active embrace of technology in China’s financial sector) and the disadvantage is that it can lead to over-exploitation and "change."
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **如果CEO退休，这家公司还能保持竞争力吗？**
+> ** If CEO retires, will the company remain competitive?**
 >
-> 这是平安的一个关键风险点。马明哲是中国金融业最具远见的创始人之一——综合金融、科技转型、医疗养老，每一步战略都领先行业3-5年。2020年他辞去CEO日常管理，转为幕后掌控战略，已在做有序过渡。但2023年高管大换血也说明接班人梯队并不稳固。好消息是：平安的竞争力更多依赖制度和系统（综合金融生态、AI平台、客户数据资产），而非某一个人。坏消息是：战略层面的前瞻性判断力——这是马明哲最不可替代的能力——很难制度化。
+Ma Myung Chee is one of the most visionary founders of China's financial sector – comprehensive finance, technological transition, and medical retirement – each step leading the industry for 3-5 years. He resigned from the CEO's day-to-day management in 2020 to a behind-the-scenes strategy, making an orderly transition. But the 2023 senior blood exchange also shows that the next team is not solid. The good news is that a safe competitiveness depends more on institutions and systems (integrated financial ecology, AI platforms, customer data assets) than on a single individual. The bad news is that forward judgement at the strategic level – the most irreplaceable capacity of Maing Chul – is difficult to institutionalize.
 
 ---
 
-## 第六步：行业与文明趋势 — 李录"文明演进框架"
+# Step 6: Industry and civilizational trends - Lee Siu ' s Framework for Civilization Evolution
 
-### 文明级范式判断
+# Civilizational paradigm judgment
 
-中国保险行业正处于**两个文明级趋势的交汇点**：
+China's insurance industry is at a crossroads of two civilized trends**:
 
-1. **人口老龄化**：中国60岁以上人口已超3亿（2025年），2035年预计达4亿+。养老保险和健康保险是应对老龄化的核心金融工具——这不是"行业增长"，而是"文明必需"。
+1. ** Population ageing**: China has over 300 million people over 60 years of age (2025), with 400 million + expected in 2035. Pension and health insurance are the core financial instruments for dealing with ageing – not "industry growth" but "civil necessity".
 
-2. **AI技术革命**：AI对保险行业的改造才刚刚开始。平安已率先将AI应用于定价、核保、理赔、销售全链条，这是一个正在发生的范式转移。
+**AI Technology Revolution**: AI has only just begun to transform the insurance sector.
 
-### 保险密度/深度对比：增长空间巨大
+# Insurance density/deepness comparison: the space for growth is huge
 
-| 指标 | 中国 | 美国 | 日本 | 差距倍数 |
+<unk> Indicators China <unk> United States <unk> Japan <unk>
 |------|:---:|:---:|:---:|:---:|
-| 保险密度（元/人） | 3,635 | ~30,000 | ~25,000 | 7-8x |
-| 保险深度（占GDP%） | 3.9% | 11% | 10% | 2.5-3x |
-| 全球市场份额 | 10.6% | — | — | 仅次于美国 |
+<unk> Insurance density (M/P) ~ 3,635<unk> ~ 30,000<unk> 25,000<unk> 7-8x<unk>
+<unk> Insurance depth (% of GDP) 3.9% <unk> 11% <unk> 10% <unk> 2.5-3x <unk>
+<unk> Global market share <unk> 10.6% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-中国保险市场2025年1-11月保费收入5.76万亿元（+7.6%），仍处于高增长轨道。
+The Chinese insurance market, which generated $5.76 trillion in premiums (+ 7.6 per cent) in January-November 2025, is still on a high growth path.
 
-### TAM增长预测
+# Tam growth forecast
 
-按保险深度从3.9%提升至6%计算（接近全球平均），中国保险市场TAM约可从当前6万亿增长至10万亿+，增长空间67%。这是一个**可能在15-20年内实现的确定性增长**。
+The Chinese insurance market, calculated as the insurance depth from 3.9 per cent to 6 per cent (close to the global average), could grow from about 6 trillion to 10 trillion +, with a 67 per cent growth space. This is a definite growth ** that could be achieved in 15-20 years.
 
-### 产业价值链位置
+# The location of the industrial value chain
 
-平安处于保险产业价值链的**最核心位置**——直接面对终端客户、拥有分销渠道、掌控产品设计和投资管理。这是产业链中价值最高的环节，不受上游供应商或下游渠道的"卡脖子"。
+Safe at the heart of the insurance industry value chain** - direct to end-users, with distribution channels, control of product design and investment management. This is the most valuable link in the chain, free from upstream suppliers or downstream channels.
 
-### 技术路线风险
+# Technology route risk
 
-- 保险行业的技术变革速度相对缓慢（不像半导体或软件），平安当前的技术领先具有可持续性
-- 主要风险来自互联网平台（蚂蚁、腾讯微保）对简单保险产品分销渠道的蚕食，但这些平台在复杂寿险产品上竞争力有限
+- Technology change in the insurance industry is relatively slow (as opposed to semiconductors or software), and the technological lead is sustainable
+- The main risks are the encroachment of Internet platforms (ants, tweets) on simple distribution channels for insurance products, but these platforms are limited in competitiveness in complex life-risk products
 
-### 李录式追问
+# Lee's asking questions
 
-> **站在20年后回看，这家公司是"这个时代的标准石油"还是"昙花一现的3Com"？**
+> ** Stand back and look 20 years later, is this company Standard Oil of the Age or 3Com of the Expedition?**
 >
-> 更接近"这个时代的标准石油"——但要加一个限定条件。保险是文明的基础设施，只要人类社会存在风险分担需求，保险行业就会存在。中国的老龄化趋势和保险深度差距，几乎确保了行业未来15-20年的结构性增长。平安作为行业龙头，大概率能享受这个红利。但它不会像标准石油那样垄断市场——这是一个寡头竞争的行业，平安的份额大概率稳定在15-20%。20年后的平安很可能仍然是中国最大的保险公司，但其科技生态是否真正成功，将决定它是"一家很好的保险公司"还是"一家伟大的综合金融科技集团"。
+> Closer to "the standard oil of the time" — with a qualification. Insurance is a civilized infrastructure, and the insurance industry will exist as long as there is a risk-sharing demand in human society. China’s ageing trends and insurance depth gaps almost ensure the industry’s structural growth over the next 15-20 years. Peace as a industry leader, probably a bonus. It will not monopolize the market as standard oil – an oligopolistic industry with a safe share of roughly 15-20%.
 
 ---
 
-## 第七步：估值与安全边际 — 巴菲特"内在价值" + 段永平"对的价格"
+# Step seven: valuation and security margin -- Barfitt "inner value" + price of "right"
 
-### 当前市场定价（工具验算）
+# Current market pricing (tools validation)
 
-| 指标 | 数值 | 历史分位 |
+<unk> Indicators <unk> Value <unk> History
 |------|:---:|---------|
-| PE（TTM） | 7.26x | 近5年低位区间 |
-| PB | 0.98x | 破净，历史罕见 |
-| P/EV | 0.65x | 历史均值1.2-1.5x，极度折价 |
-| 股息率 | 5.00% | 历史最高区间 |
-| 盈利收益率 | 13.78% | 极具吸引力 |
+<unk> PE(TTM) <unk> 7.26x<unk>
+PB<unk> 0.98x<unk> Pull, history rare
+<unk> P/EV <unk> 0.65x <unk> History average 1.2-1.5x, extreme discount
+<unk> Escillation rate 5.00% <unk> History of the highest interval <unk>
+<unk> Profit rate 13.78%
 
-### 反向DCF：当前股价隐含的增长预期
+# Inverse DCF: The current implied growth in stock prices is expected
 
-当前A股54.01元，PE 7.26x，隐含的市场预期是：
-- **利润零增长或微增**——市场基本按"永续不增长"给平安定价
-- 如果假设10% cost of equity，PE 7.26x隐含的永续增长率约为**3.2%**
-- 这意味着市场认为平安的利润增长将长期低于通胀+GDP增速
-- **这是一个极其悲观的预期**——只有在利率持续大幅下行、保险行业结构性衰退的情景下才合理
+The market is currently expected to be:
+- ** Zero or Decreasing profit** - Markets are largely priced on "never-ending"
+- If 10% cost of equity, the implied rate of per capita growth of PE 7.26x is about **3.2%**
+- This means that the market believes that a healthy profit growth will be lower than inflation + GDP growth for a long time
+- ** This is a very pessimistic expectation** — only if the interest rate continues to fall sharply and the insurance industry is structurally depressed.
 
-### 三情景估值（3年期，工具精确计算）
+## 3 scenario valuation (3-year period, tool accurate)
 
-| 情景 | 年增速假设 | 目标PE | 3年后EPS | 目标股价 | 当前涨跌幅 |
+The year-on-year increase scenario, the target PE, the target share price, the current increase or decline, the target PE, the target share price, the target share price, the current price, the current price increase or decline, the current rate of growth or decline, the rate of increase or the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of the increase, the rate of the increase, the rate of the increase, the rate of the increase, the rate of the current rate of the current increase, the rate of the current increase, the rate of the increase, the rate of the increase, the rate of the increase, the rate of the increase, the rate of the rate of the current increase, the rate of the increase, the rate of the increase, the rate of the increase, the rate of the increase, the rate of the increase, the rate of the increase, the rate of the rate of the rate of the increase, the increase, the rate of the increase, the rate of the rate of the rate of the rate of the
 |------|:---:|:---:|:---:|:---:|:---:|
-| **乐观** | 12% | 10x | 10.45元 | **104.5元** | +93.5% |
-| **中性** | 8% | 8x | 9.37元 | **75.0元** | +38.8% |
-| **悲观** | 3% | 6x | 8.13元 | **48.8元** | -9.7% |
+** EXPOINTED** 12% ** 10x <unk> 10.45 ** $104.5 ** <unk> 93.5% **
+**Medium** 8% <unk> 8x <unk> 9.37 **75.0 ** <unk> 38.8% <unk>
+** Pessimism** 3% ** 6 x 8.13 ** 48.8 ** <unk> - 9.7% **
 
-**假设依据**：
-- **乐观情景（12%增速，10x PE）**：NBV持续高增长，利率企稳，房地产风险完全出清，估值修复至合理水平
-- **中性情景（8%增速，8x PE）**：寿险改革成效持续但增速放缓，银行稳健，估值小幅修复
-- **悲观情景（3%增速，6x PE）**：利率进一步下行，投资端承压，行业增长放缓
+** Assumed on the basis of:
+- **optimal 12% growth, 10x PE**: NBV continues to grow at high rates, interest rates are stable, real estate risks are fully cleared and valuation is restored to reasonable levels
+- **neutral (8% increase, 8x PE)**: life insurance reform continues but slows down, banks are robust, valuations are small
+- ** Pessimism 3%, 6x PE**: interest rates go down further, investment booms and industry growth slows down
 
-### 与自身历史估值对比
+# Compared to their own historical valuations
 
-| 时期 | PE | PB | P/EV | 背景 |
+The time period is the time when the data are available.
 |------|:---:|:---:|:---:|------|
-| 2020年高点 | ~12x | ~2.0x | ~1.2x | 疫情前牛市 |
-| 2021年 | ~8x | ~1.3x | ~1.0x | 华夏幸福暴雷前 |
-| 2022-2023年低谷 | ~6-7x | ~0.8x | ~0.5x | 房地产风险+利率下行 |
-| 2024年反弹 | ~9x | ~1.1x | ~0.7x | 利润恢复增长 |
-| **当前** | **7.26x** | **0.98x** | **0.65x** | 股价从高点回调 |
+~12x<unk> 2.0x<unk> 1.2x<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+♪ The world's greatest ♪
+<unk> 2022-2023 Low valley ~ 6-7x<unk> 0.8x<unk> 0.5x<unk> Real estate risk plus interest rate
+<unk> 2024 rebounded ~9x<unk> 1.1x<unk> 0.7x<unk> Re-growth of profits
+** Current** ** 7.26 x** <unk> 0.98x** ** 0.65x** ** stock exchange rate from high point
 
-当前估值处于历史中低位水平，但高于2022-2023年的极端低点。
+The current valuation is at a historically low level, but above the extreme low of 2022-2023.
 
-### 与同行估值对比
+# Compared to peer valuation
 
-| 公司 | PE | PB | P/EV | 股息率 |
+<unk> PE<unk> PB<unk> P/EV<unk>
 |------|:---:|:---:|:---:|:---:|
-| **中国平安** | **7.26x** | **0.98x** | **0.65x** | **5.00%** |
-| 中国人寿 | ~8-9x | ~0.9x | ~0.5x | ~3% |
-| 中国太保 | ~8x | ~0.9x | ~0.5x | ~4% |
-| 友邦保险 | ~15x | ~1.8x | ~1.5x | ~2.5% |
-| 伯克希尔 | ~10x | ~1.6x | — | 无分红 |
+** China Peace** ** 7.26 x ** 0.98 x ** ** 0.65 x ** ** 5.00 per cent ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 5.00 ** ** ** ** ** <unk> <unk> ** <unk> <unk> <unk> ** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Chinese life ~ 8-9x<unk> 0.9x<unk> 0.5x<unk> 3%<unk>
+<unk> Chinese Taibo ~ 8x ~ 0.9x ~ 0.5x ~ 4% ~
+~15x<unk> 1.8x<unk> 1.5x<unk> 2.5%<unk>
+~10x<unk> 1.6x<unk> ~ ~ ~ ~ no points ~ ~ ~ ~ ~ ~ ~ ~ 10x ~ 1.6x ~ ~ ~ ~ No points ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-平安在内地保险股中估值适中（略高于人寿、太保），但与友邦的P/EV差距巨大（0.65x vs 1.5x）。这一差距部分反映了市场对"中国利率下行"的担忧，部分是市场情绪折价。
+The safe-in-land insurance unit is valued fairly (a little higher than life, too much), but the gap between P/EVs in friendly countries (0.65 x vs 1.5 x) reflects, in part, market concerns about "China's interest rate down", and in part market sentiment discounts.
 
-### 估值结论
+# The valuation conclusion
 
-**合理估值区间：65-85元（A股）**
-- 下限65元：对应P/EV 0.78x，PE ~8.7x，保守情景
-- 上限85元：对应P/EV 1.02x，PE ~11.4x，EV回归面值
-- 当前54.01元相对于合理估值区间有**20-57%的安全边际**
+** Reasonable valuation space: $65-85 (Unit A)**
+- The floor is 65: corresponding to P/EV 0.78x, PE ~ 8.7x, conservative scenario
+- Up to 85: P/EV 1.02x, PE ~ 11.4x, EV regression value
+- The current margin of $54.01 relative to the reasonable valuation area is **20-57% security margin**
 
-**买入价格建议：55元以下（A股）**
-- 当前价格已在买入区间内或非常接近
-- P/EV 0.65x意味着每花65元买入了100元的内含价值——这是巴菲特式的"用5毛钱买1块钱的东西"
+** Purchase price proposal: less than $55 (stock A)**
+- Current prices are being purchased in or close to the area
+- P/EV 0.65x means that the value of $100 is bought for every $65 -- this is Buffett-style "50 bucks for a dollar."
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **如果股市明天关闭5年，你愿意以这个价格持有吗？**
+> ** If the stock market closes for five years tomorrow, will you hold it at this price?**
 >
-> 答案是**愿意**，基于以下逻辑：5年后（2031年），假设NBV保持10%年增长，EV将从15,043亿增长至约18,000-20,000亿。即使P/EV维持在0.65x（不修复），每股价值也在64-72元。加上5年累计分红约14元（按2.7元/年递增），总回报达78-86元，对应44-59%的收益率。如果P/EV修复至0.8x-1.0x，回报将更为可观。
+> The answer is ** Will**, based on the logic that five years later (2031), assuming that NBV will grow by 10% annually, EV will grow from 1,504.3 billion to about 18,000-2000 billion. Even if P/EV is maintained at 0.65 x (not repaired), the value of each share will be $64-72. Adding to the cumulative red fraction of about $14 (at 2.7/year increase) for five years, the total return would be $78-86, corresponding to 44-59%. If P/EV is repaired to 0.8x-1.0x, the return would be even more significant.
 >
-> 风险在于：如果利率大幅下行，EV假设需要再次下调，那么"100元EV"可能缩水为80元甚至更低——此时0.65x P/EV就不是低估而是合理定价。
+> The risk is that if interest rates fall significantly and EV assume that they need to be re-adjusted, then "100 bucks EVI" may shrink to $80 or even lower -- and at this point 0.65 x P/EV is not understated but reasonably priced.
 
 ---
 
-## 第八步：综合决策备忘录
+# Step eight: a comprehensive decision-making memorandum
 
-### 汇总评估
+## Summary assessment
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|:---:|
-| **生意质量**（段永平） | 优秀——2.51亿客户、99%留存率、综合金融生态是极强的生意模式。但利润受投资端波动影响大，不是"简单的好生意" | 高（85%） |
-| **护城河**（巴菲特） | 宽——转换成本和品牌是最强的两条护城河，科技壁垒和规模效应提供额外保护。过去2年护城河在加宽 | 高（80%） |
-| **管理层**（段永平+巴菲特） | 良好——马明哲的战略远见出色，但华夏幸福暴露了投资风控缺陷。接班人梯队仍需观察 | 中高（70%） |
-| **最大风险**（芒格） | 利率长期下行导致利差损——这是保险行业的"慢性病"，不会突然爆发但持续侵蚀盈利能力 | 中高（75%） |
-| **文明趋势**（李录） | 强烈顺风——老龄化+保险深度差距提供15-20年结构性增长空间，AI赋能是额外催化剂 | 高（85%） |
-| **估值**（巴菲特+段永平） | 有吸引力——P/EV 0.65x、PE 7.26x、股息率5.0%，安全边际充足。但需考虑"低利率新常态"可能使低估值合理化 | 中高（75%） |
+** ** Quality of business** (Long-Ping) <unk> Excellence - 251 million clients, 99% retention rate, and integrated financial ecology are very strong business models. But profits are highly influenced by fluctuations in the investment end, not "simple good business" <unk> High (85%)
+**Cafety** (Baffit) Wide - the two most powerful moagers in the world, with technical barriers and scale effects providing additional protection.
+** Management** (Long-Ping + Buffett) <unk> Good - Mamin Chul's strategic vision is excellent, but Happiness revealed a weakness in investment control.
+<unk> Maximum risk** (Manger) <unk> Long-term downs in interest rates result in a loss of profit spread -- this is a "chronic disease" in the insurance industry, which does not suddenly break out but continues to erode profitability <unk> medium-high (75%) <unk>
+** Civilization trends** (Li Ji) <unk> Strong smoothness - ageing + insurance depth gap provides a structural growth space for 15-20 years, with AI empowerment as an additional catalyst <unk> high (85%) <unk>
+** Valuation** (Buffett+Ping) <unk> Attractive - P/EV 0.65x, PE 7.26x, dividends 5.0%, security margin sufficient. Subject to consideration of "New Normal Low Interest Rate" which may rationalize low valuations Medium (75%) <unk>
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **建议在55元以下建仓**。当前P/EV 0.65x提供了充足的安全边际，即使悲观情景下跌空间也仅约10%，而中性到乐观情景有39-94%的上行空间。建议分3次建仓：50元以下建1/3仓，53元附近1/3仓，55元以下完成最后1/3仓。如果无法等到更低价格，当前54元附近亦可接受 |
-| **持仓者** | **继续持有**。寿险改革成效显著（NBV+29.3%），分红持续增长（股息率5%），基本面在改善。不建议在当前估值水平减仓。如果仓位不重（<总资产10%），可考虑在50元以下加仓 |
-| **卖出信号** | ① 10年期国债收益率跌破1.5%且持续半年以上；② 平安银行NPL突破2%；③ NBV连续两个季度负增长；④ 管理层大规模减持或核心高管集中离职；⑤ P/EV超过1.2x（对应约100元股价），估值修复完成 |
-| **加仓信号** | ① 股价跌至45元以下（P/EV<0.55x），大幅加仓；② NBV增速持续20%+且利率企稳；③ 科技/资管板块扭亏为盈；④ 方正集团重整完成并贡献利润 |
+** Empty warehouse ** ** Suggested warehouse up to $55. ** Current P/EV 0.65x provides sufficient security margins, with only about 10% of pessimistic scenario space falling, while neutral to optimistic scenario has 39-94% upboard space. ** Proposed warehouse construction in 3 stages: 1/3 of warehouse less than $50, 1/3 of warehouse near $53, and 1/3 of warehouse less than $55. If it is not possible to wait for lower prices, the current range of 54 is acceptable.
+<unk> The owner** <unk> the holder** continued to hold**. The life insurance reform was very effective (NBV+29.3%), with a steady increase in dividends (5% of dividends) and an improvement in its basics. No reduction is recommended at the current valuation level. If the warehouse is not heavy (10% of total assets), a build-up of the warehouse below $50 can be considered
+** Signals sold** 1 <unk> The return on public debt for the 10-year period fell by 1.5 per cent and continued for more than six months; 2 NPL for the Peace Bank exceeded 2 per cent; 3 NBV negative growth for two consecutive quarters; 4 management massive reduction or centralization of the head of the core; 5 P/EV over 1.2x (equivalent to approximately $100 shares) and valuation repairs completed
+<unk> **Step signal** <unk> 1 share price dropped below $45 (P/EV < 0.55x), substantially stung; 2 NBV growth rate continued at 20% + and interest rate stabilized; 3 S & T/RM plate reversed to gain; 4 GLORK completes and contributes profits
 
-### 四位大师的模拟点评
+# Four masters' simulations
 
-> **巴菲特**：
-> "我喜欢保险生意，前提是管理层能控制承保纪律和投资风险。平安的综合金融模式让我想起了伯克希尔的保险+投资框架，但华夏幸福那笔投资让我担心——432亿的减值说明投资端的风控还不够严格。好消息是，P/EV 0.65倍意味着你用65分钱买一块钱的资产，这样的安全边际是我喜欢的。如果管理层证明他们从华夏幸福的教训中真正学到了什么，这可能是一笔好买卖。"
+> **Buffett**:
+> "I like insurance business, if management controls the risk of insurance and investment. A safe and comprehensive financial model reminds me of Birkhshire's insurance + investment framework, but the Happiness investment in summer worries me that – the $43.2 billion in impairment suggests that the wind is not strict enough. The good news is that P/EV 0.65 means you buy a dollar of assets with 65 cents, and that security margin is my favorite. If management proves what they really learned from the Happiness of summer, it could be a good deal."
 
-> **芒格**：
-> "反过来想——什么情况下买入平安会亏钱？答案是中国走向日本式低利率陷阱。如果10年期国债收益率跌到1%以下并维持10年，所有保险公司都会很痛苦，平安也不例外。你必须对此有自己的判断：你认为中国会走日本的路吗？如果不会，当前价格就是个好价格。如果你不确定，那就别买太多。投资要在你的能力圈内做决定。"
+> ** Manger**:
+> Conversely, think — under what circumstances would buy peace be lost? The answer is China's move to a Japanese-style low-interest rate trap. If the return on public debt falls below 1% over a 10-year period and lasts for 10 years, all insurance companies will suffer, and peace will be no exception. You must judge for yourself: Do you think China will go Japan's way? If not, the current price is a good price. If you're not sure, don't buy too much.
 
-> **段永平**：
-> "做对的事情，买对的公司，用对的价格。平安这门生意对不对？2.51亿客户、99%留存率——这是非常好的生意特征。管理层对不对？马明哲的远见无疑是一流的，但华夏幸福那笔投资说明他不是不会犯错。价格对不对？5%的股息率、7倍的PE、破净的PB——从价格角度看，下行空间有限。我会关注一个简单的问题：如果平安持续每年赚1,300-1,500亿，分红2.7元以上，5年后这笔投资的回报足够好吗？算算账，答案是肯定的。"
+> **Ping Yongping**:
+> "Do the right thing, buy the right company, use the right price. Right to the safe business? Twenty-one million customers, 99% retention rate -- which is a very good business feature. Right management? Mamingge's vision is certainly first-rate, but Happiness's investment suggests he's not wrong. Right? 5% dividends, seven times PE, a broken PB -- the lower space is limited from a price point of view. I'll be concerned with a simple question: if it lasts well over $130-1500 billion a year, the return on the investment is good enough for five years?
 
-> **李录**：
-> "投资要跟着文明的方向走。中国3,635元/人的保险密度和发达国家3万元/人之间有7-8倍的差距——这个差距就是未来15-20年保险行业确定性增长的来源。平安作为行业龙头，拥有最大的客户基础和最领先的科技能力，大概率能享受这个文明红利。我唯一的保留意见是：综合金融集团的管理复杂度很高，平安需要证明它不只是一家好的保险公司，而是能真正整合保险、银行、科技、医疗的生态型企业。如果能做到，这家公司在中国金融版图中的位置将是不可替代的。"
+> **Lishe**:
+> "Investment should follow civilization's direction. China has a 7-8-fold gap between 3,635 yuan/persons' insurance density and 30,000 yuan/persons in developed countries -- a gap that is the source of definitive growth in the insurance sector over the next 15-20 years. Peace, as the leader of the industry, has the largest customer base and the best technological capabilities, and probably enjoys the civilizational dividend. My only reservation is that the management of a comprehensive financial group is complex and peace requires proof that it is not just a good insurance company, but rather an ecological enterprise that can truly integrate insurance, banking, technology, and medical care.
 
 ---
 
-## AI分析置信度 vs 投资确定性
+# AI analyze confidence vs investment certainty
 
-| 维度 | AI分析置信度 | 投资确定性 | 说明 |
+<unk> dimension <unk> AI analysis of confidence <unk> Investment certainty <unk>
 |------|:---:|:---:|------|
-| 财务数据 | 极高 | — | 年报数据经多源交叉验证，精确可靠 |
-| 生意模式 | 高 | 中高 | 综合金融模式逻辑清晰，但保险投资端的不确定性使利润波动大 |
-| 护城河 | 高 | 中高 | 转换成本和品牌护城河有充分数据支撑，但利率环境的变化可能改变护城河的"含金量" |
-| 管理层 | 中高 | 中 | 公开信息充足，但管理层的投资决策能力（最关键的能力）只能从历史记录间接推断 |
-| 行业趋势 | 高 | 高 | 保险深度差距和老龄化趋势是高确定性的长期逻辑 |
-| 估值 | 高（数据面） | 中（判断面） | 估值数据精确，但"当前低估值是否合理"取决于对利率走向的判断——这是AI和人类都难以确定的 |
-| **总体** | **高** | **中高** | AI对平安的分析基于充裕的公开数据，置信度高。但投资确定性受限于利率走向这个核心变量 |
+Financial data very high – multiple cross-checks of annual reports, accurate and reliable <unk>
+The business model is high, medium and high, and the integrated financial model is logical, but uncertainty at the end of the insurance investment makes profits very volatile.
+The moat, the moat, the moat, the moustache, the middle and high, the conversion costs and brand moats are well supported, but changes in interest rate environments may change the moat's "gold" content.
+<unk> Management <unk> medium and high <unk> public information is sufficient, but management's investment decision-making capacity (most critical) can only be inferred indirectly from historical records <unk>
+The trends in the industry, the high, the high, the deep gaps in insurance and the ageing trends are the long-term logic of high certainty.
+<unk> Valuation <unk> High (data surface) <unk> Valuation data are accurate, but "justification of the current low valuation" depends on the determination of the course of interest rates -- which is difficult to determine for both AI and humans.
+<unk> Total** High** Medium** High** AI ' s analysis of peace is based on ample open data and high confidence. But investment certainty is limited to the core variable of interest rates
 
-**本报告的高确信结论**（基于充分数据）：
-1. 平安的综合金融生态和2.51亿客户基础是真实且强大的竞争优势
-2. NBV连续两年+29%的增长反映了寿险改革的实质成效
-3. 当前P/EV 0.65x在历史上属于极低水平，安全边际充足
-4. 连续14年分红增长体现了管理层对股东回报的承诺
+** High-level assurance conclusion of the present report** (based on sufficient data):
+1. Safe and integrated financial ecology and 251 million customer base are real and powerful competitive advantages
+2. The NBV growth for two years in a row + 29% reflects the substantive effectiveness of life insurance reforms
+3. The current P/EV 0.65x is historically very low and securely marginal
+4. 14 consecutive years of red-score growth reflect management ' s commitment to shareholder returns
 
-**本报告的推理性结论**（基于有限信息的判断，需一手验证）：
-1. 利率走向——中国是否会走向日本式低利率？这决定了保险行业的长期价值天花板
-2. 方正集团重整——370-507亿元的并购能否如期产出协同价值？
-3. 科技板块——55,435件AI专利的商业价值到底有多大？是核心竞争力还是面子工程？
-4. 管理层接班——马明哲之后，平安能否维持战略水平？
+** The reasoning of the present report** (As a result of a limited information judgement, one hand is required to verify):
+Interest rate movement - Will China move towards Japanese-style low rates? This determines the long-term value ceiling in the insurance industry
+Can the merger and purchase be phased out in the same way as the rest of the group - $37-507 million in value?
+Technology plate - what is the commercial value of 55,435 AI patents? Core competitiveness or face engineering?
+Will the security of the management, after the succession of the Maing Chul, maintain the strategic level?
 
 ---
 
-*数据来源：中国平安2024-2025年报、证券时报、东方财富网、Yahoo Finance、新浪财经、第一财经、平安官网、虎嗅、前瞻网等*
-*估值计算经 financial_rigor.py 工具精确验算*
-*本报告仅供投资研究参考，不构成投资建议*
+*Source: China Peace 2024-2025, Securities Times, Eastern Wealth Network, Yahoo Finance, New Wave Finance, First Economy, Peace Officer Network, Tigers, Foreground Network, etc.
+*The valuation calculation was accurately verified by the financial_rigor.py tool*
+* The present report is intended for investment studies only and does not constitute an investment proposal.

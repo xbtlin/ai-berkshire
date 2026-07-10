@@ -1,252 +1,252 @@
-# LiblibAI（演语科技）投资研究报告
+#LiblibAI (Liblibai) Investment Study
 
-**四大师综合分析框架 | 2026年6月21日**
+** The comprehensive analytical framework of the four masters ** June 21, 2026**
 
-**信息丰富度评级：B-C级（未上市公司，无公开财报）** | **AI研究局限性声明：** LiblibAI为未上市公司，所有财务数据来自融资新闻和媒体报道，未经审计验证。推算数据基于行业类比和逻辑推导，标注置信度。报告采用"第一性原理模式"，聚焦商业本质的核心问题，不用推测填满框架伪装确定性。
-
----
-
-## 1. 一句话结论
-
-> LiblibAI是中国AIGC应用层增速最快的公司（ARR $3亿，增速3000%+），团队执行力极强（三次PMF验证），PS 6.7x在同类中明显偏低。但本质是"AI模型中间层"生意——上受模型方挤压，下无定价权，护城河依赖执行速度而非结构性壁垒。字节跳动正面竞争+GPU成本刚性+资本依赖度高是三重核心风险。以$20亿估值获得期权，风险收益比有吸引力；作为外部投资者，需要更高的安全边际。
+** Information abundance rating: B-C (unlisted companies, no public financial statements)** ** AI study limitation statement:** LiblibAI is an unlisted company, all financial data are from financing news and media reports, and are not audited. The derived data are based on industry analogy and logical reasoning, and are marked with confidence. The report uses the "first principle model" and focuses on the core issues of business nature without presumably filling the frame with a disguise of certainty.
 
 ---
 
-## 2. 四维评分总表
+# 1. One sentence conclusion
 
-| 维度 | 框架 | 评分 | 核心判断 |
+> LiblibAI is the fastest-growing company in the AIG layer in China (ARR $300 million, 3,000%+), with a strong team execution (three PMF certifications), and a significantly low PS 6.7x in its class. But the essence is that the "AI model middle" business is squeezed by model players, has no pricing rights, the moat depends on enforcement speed, rather than structural barriers. Byte beats positive competition + GPU cost rigidity + high capital dependency is a triple core risk.
+
+---
+
+#2. Summary of 4D ratings
+
+The core judgment.
 |------|------|------|----------|
-| 商业模式 | 段永平 | ★★½ | 执行力一流但"AI模型中间层"定价权弱，护城河是社区生态而非结构性壁垒 |
-| 财务与估值 | 巴菲特 | ★★★½ | ARR增速惊人，PS 6.7x同类最低，但盈利质量和利润率不透明 |
-| 行业竞争 | 芒格 | ★★★½ | 国内图像生成领先，但字节威胁极大，AI设计工具面临Canva/Figma降维 |
-| 风险管理 | 李录 | ★★½ | 陈冕执行力强但非技术出身，三重风险叠加（字节+GPU成本+资本依赖） |
+The main power of the executive but the "AI model meso" is weak.
+Financial and valuations Buffett <unk> ARR growth rate is alarming, PS 6.7x lowest, but profit quality and profit margins are not transparent
+Industry competition Mung <unk> domestic image generation leading, but bytes threatening, AI design tools facing Canva/Figma downscaling
+Risk management Lee-shue-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-Li-R-Li-Li-Li-L-L-L-L-L-L-L-L-L-L-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-T-R-R-R-R-R-R-R-R-R-R-R-R-I-R-R-R-F
 
-**综合评分：3 / 5**
+** Combined rating: 3/ 5**
 
 ---
 
-## 3. 核心数据速览
+#3. Core data quick view
 
-| 指标 | 数据 | 置信度 |
+Indicators Data Confidence
 |------|------|--------|
-| 估值 | 超$20亿（B+轮） | 已确认 |
-| 累计融资 | ~$5-6亿 | 推算（中） |
-| ARR（2026年5月） | 接近$3亿 | 已确认 |
-| ARR年底目标 | $6亿 | 已确认（指引） |
-| 同比增速 | 3000%+ | 已确认 |
-| PS倍数（当前） | 6.7x | 计算 |
-| PS倍数（年底隐含） | 3.3x | 计算 |
-| 注册用户 | 3000万+ | 已确认 |
-| DAU（国内） | 400万 | 已确认 |
-| 社区模型数 | 10万+ | 已确认 |
-| 创作者参与 | 50万+ | 已确认 |
-| LibTV日收入 | 首月百万美金级，5月达首月13倍 | 已确认 |
-| 成立时间 | 2023年5月（3年） | 已确认 |
-| 团队规模 | ~百人 | 推算 |
-| 盈利状态 | 声称"已在赚钱"，未经验证 | 低 |
+<unk> Valuation <unk> over $2 billion (B+ wheel) <unk> Confirmed <unk>
+<unk> Cumulative financing ~ $500-60 million ~ extrapolation ~
+<unk> ARR (May 2026) <unk> close to $300 million <unk> confirmed <unk>
+<unk> ARR end-of-year target <unk> $600 million <unk> confirmed (guide) <unk>
+<unk> Same speed increase <unk> 300%+ <unk> confirmed <unk>
+<unk> PS multiple (current) <unk> 6.7x <unk> Calculating <unk>
+<unk> PS multiple (end of year implied) <unk> 3.3x <unk> Calculated <unk>
+<unk> Registered user <unk> 30 million + <unk> confirmed <unk>
+DAU (domestic) 4 million confirmed
+<unk> Community model <unk> 100,000 + <unk> confirmed <unk>
+♪ The creator is involved ♪ ♪ 500,000 + ♪ confirmed ♪
+The first month's millions, 13 times the first month in May.
+<unk> Establishment May 2023 (3 years) <unk> Confirmation
+♪ The size of the team ♪
+♪ The money's already making, the money's not proven ♪
 
 ---
 
-## 4. 各维度分析摘要
+# 4. Summary of the analysis of dimensions
 
-### 商业模式（段永平视角）— 2.5/5星
+# Business model (a long-speech view) - 2.5/5 star
 
-1. **本质是"GPU算力零售+内容生态"的混合体**，用户为生成结果付费，平台赚取算力差价和工作流溢价
-2. **50万用户模型的网络效应是"内容生态型"（类YouTube）而非"社交网络型"（类微信）**——可被追赶，不构成不可逾越壁垒
-3. **更接近"AI模型能力的中间商"而非"AI时代的Canva"**——品牌归因在底层模型（Flux好就选Flux，Kling好就切Kling），不在平台
-4. **最强护城河不是技术，是"模型聚合+工作流产品化"的执行力**——三次PMF验证（图片2023→设计Agent 2025→视频2026），但执行力护城河不等于结构性护城河
-5. **定价权弱**：本质是算力零售商，上受GPU成本和模型API价格挤压，下受用户比价。15%的模型市场抽成率不高
-6. **LibTV嵌入B端生产工作流的粘性最高**——服务短剧/广告公司的"从脚本到成片"生产线，是最有壁垒潜力的方向
-7. **段永平式追问**："如果字节跳动认真做即梦，LiblibAI能守住多少用户？如果答案是'不确定'，那护城河就不够深。"
+1. **In essence, a mixture of "GPU Arithmetic Retail + Content Ecology"**, with users paying for the results, platform earning arithmetic differential and workflow premium
+2. **500,000 user models have a web effect of "Context Ecology" instead of "Social Networking"** - catch-up and do not constitute insurmountable barriers
+3. ** Closer to "the broker of AI model capabilities" than "the Canva of the AI era"** - brand attribution is at the bottom of the model (Flux, Kling, Kling), not on the platform.
+** The most powerful moat is not technology, it is the implementation power of "model polymer + productization of workflow"** — three PMF validations (photo 2023 — design agent Agent 2025 — video 2026), but the moat is not the structural moat.
+** Weak pricing**: Essentially, arithmetic retailer, subject to the cost of GPU and model API prices and user-priced. 15% of model markets are not well-exposed
+** LibTV embedded the highest sticky stream of production work at end B** - The short-service drama/advertising company 'From Script to Snippet' production line is the most barrier-prone direction
+** The Eternity track**: "How many users do LiblibAI have if the bytes beat seriously and dream? If the answer is "unsure", the moat is not deep enough."
 
-### 财务与估值（巴菲特视角）— 3.5/5星
+# Finance and valuation (Buffett perspective) -- 3.5/5 star
 
-1. **PS 6.7x是同类AI公司"地板价"**——Suno同为$3亿ARR估值$54亿（18x），可灵$5亿ARR估值$200亿（40x）
-2. **年底如果ARR达$6亿，隐含PS仅3.3x**——低于已上市的美图（6.9x），增速3000%的公司以成熟期估值定价
-3. **GPU推理成本是"死穴"**——AIGC平台GPU成本通常占收入25-40%，如果毛利率低于30%，$3亿ARR实际毛利不到$1亿
-4. **声称"已在赚钱"但未经验证**——可能指经营现金流为正或EBITDA转正，不是真正的自由现金流充裕
-5. **现金跑道充裕**——累计融资$5-6亿，18-36个月+跑道，不存在短期断粮风险
+**PS 6.7x is the same AI 's "floor price"** - Suno valued $5.4 billion (18x) for $300 million ARR and $5 billion for $20 billion (40x)
+** If the ARR amounts to $600 million at year's end, implicitly PS only 3.3x** — below the marketed map (6.9x), the rate of increase of 3,000 per cent is priced at maturity valuation.
+** GPU reasoning costs are "Death Caves"** - The AIG platform GPU costs 25-40% of income, and if Māori is below 30%, $300 million RMR actually does not have Mānaka 100 million
+** Claiming "already making money" but not certified** - may mean operating cash flows that are positive or EBITDA-reverted, not real free cash flows sufficient
+** Cash runways are abundant** — cumulative financing — $500-60 million, 18-36 months + runways, no short-term food break risk
 
-**员工期权三情景回报**：
+**Employee 3 scenario return**:
 
-| 情景 | 2029年估值 | 回报倍数 | 概率 |
+<unk> Situations 2029 valuations <unk> Multiplier returns <unk> Probability <unk>
 |------|-----------|---------|------|
-| 牛市 | $100-200亿 | 5-10x | 20-25% |
-| 基准 | $40-80亿 | 2-4x | 40-45% |
-| 熊市 | $15-25亿 | 0.75-1.25x | 25-30% |
-| 极端下行 | <$10亿 | <0.5x | 5-10% |
+<unk> Cow market $10-20 billion
+Base $4-8 billion
+<unk> Bear City <unk> $1.5-25 billion <unk> 0.75-1.25 x 25-30% <unk>
+<unk> Extreme downfall < $1 billion < 0.5 x <unk> 5-10% <unk>
 
-**加权期望回报：~3.3倍**
+** weighted expected return: ~3.3 times**
 
-**可比公司估值**：
+**Comparable corporate valuation**:
 
-| 公司 | 估值 | ARR | PS | 增速 | 盈利 |
+♪ The world's greatest ever ♪
 |------|------|-----|-----|------|------|
-| Canva | $420亿 | $40亿 | 10.5x | ~40% | 盈利 |
-| 可灵 | $200亿 | $5亿 | 40x | >300% | 亏损 |
-| Suno | $54亿 | $3亿 | 18x | 快速增长 | 未知 |
-| Midjourney | $100亿 | $5-6亿 | 17-20x | ~60% | 盈利 |
-| 美图 | ~$37亿 | ~$5.4亿 | 6.9x | ~29% | 盈利 |
-| **LiblibAI** | **$20亿** | **$3亿** | **6.7x** | **3000%+** | **接近盈亏平衡** |
+Canva, $42 billion, $4 billion, 10.5 x ~ 40%, profit, profit, profit, profit, and profit.
+<unk> 20 billion <unk> 500 million <unk> 40x > 300% <unk> <unk> loss <unk>
+<unk> Suno <unk> $5.4 billion <unk> $300 million <unk> 18x <unk> fast growth <unk> unknown <unk>
+Midjourney, $10 billion, $500-60 million, 17-20x, ~60%, profit, profit, profit, and a lot of money.
+♪ The world's greatest ♪
+**Liblibai** **$2 billion** **$300 million** **6.7x** **3,000%** ** Close to the profit/loss balance** **
 
-### 行业竞争（芒格视角）— 3.5/5星
+# # Industry competition (Manger perspective) -- 3.5/5 star
 
-1. **国内AI图像生成领先**——社区生态国内第一（50万+用户模型），但即梦网页端月访问量是LiblibAI的3.5倍且增速更快
-2. **字节跳动是最大威胁（5/5级别）**——流量+模型+资本+工具链全面碾压，但字节基因是"中心化分发"不是"UGC社区"，LiblibAI在专业创作者细分有生存空间
-3. **AI视频赛道：LibTV增速惊人但可灵领先**——可灵Q1营收6.5亿元，计划分拆上市估值$200亿。LibTV差异化在"B端生产工作流"
-4. **"AI设计Agent"短期是独立品类，长期会成为Feature**——Figma AI Agent和Canva AI 2.0已在做，星流/Lovart时间窗口2-3年
-5. **开源模型越强，LiblibAI的平台价值越大**——类比安卓生态，开源需要平台降低使用门槛
-6. **AIGC终局不是赢者通吃而是"寡头垂直化"**——每个垂直赛道1-2家平台+若干工具
+** Lead in the generation of AI images in the country** - First in the community eco-country (500,000+user model), but the dream web page has 3.5 times the number of monthly visits to LiblibAI and is growing faster
+** byte beat is the greatest threat (5/5 level)** - flow+models + capital + tool chain fully crushed, but byte genes are "centralized distribution" not "UGC community" and LiblibAI has a living space in the professional creators' breakdown
+**AI video track: LibTV is increasing at an alarming but promising lead** — <unk> 1 battalion collects $650 million and plans to split up the market to an estimated $20 billion.
+4. ** "AI Design Agent" is a stand-alone category in the short term, and will become Feature** in the long term - Figma AI Agent and Canva AI 2.0 already in operation, Star current/Lovart time window 2-3 years
+** The stronger the open source model, the greater the value of the LiblibAI platform** - compared to the Anzo ecology, the opening source requires the platform to lower the threshold for use
+**AIG final game is not a winner but an oligarchic verticalization** - 1-2 platforms per vertical track plus a number of tools
 
-**各赛道竞争地位**：
+** Contested status of the respective races**:
 
-| 赛道 | 竞争地位 | 最大威胁 |
+The race track, the competitive position, the greatest threat.
 |------|---------|---------|
-| AI图像生成（国内） | 领先 | 即梦（字节） |
-| AI图像生成（全球） | 落后（差异化中） | Midjourney/Adobe |
-| AI视频生成 | 落后（快速追赶） | 可灵（快手） |
-| AI设计工具 | 持平（差异化中） | Canva/Figma |
-| 产业链位置 | 领先（平台层） | 模型方直做前端 |
+<unk> AI image generation (domestic) <unk> lead
+<unk> AI image generation (global) <unk> backward (discrepancies) <unk> Midjourney/ Adobe <unk>
+♪ A-V-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-O-T-O-T-O-T-O-O-O-T-O-T-O-A-T-O-T-O-O-O-T-O-T-O-T-T-O-T-O-T-A-T-E-E-E-E-T-E-E-E-E-E-E-E-E-E-E-E-E-E-E-E-E-E-E-E-E
+<unk> AI design tool <unk> flat (discrepancies) <unk> Canva/ Figma <unk>
+<unk> Industrial chain position <unk> leading (platform level) <unk> modeling straight ahead <unk>
 
-### 风险评估（李录视角）— 2.5/5星
+# # Risk assessment (Li Jie perspective) - 2.5/5 star
 
-1. **陈冕执行力极强**（账上4000块挺过来，三次PMF），但**非技术出身**——AI技术判断力依赖团队，公开信息中看不到CTO级技术合伙人
-2. **字节正面竞争（80%概率）是最大风险**——即梦月活1200万+，字节的流量+模型+资本LiblibAI无法匹敌
-3. **"一年四轮"融资：60%好事40%隐患**——资本认可是真的，但高度依赖融资，资本降温时脆弱
-4. **三条产品线对百人团队是极大挑战**——任何一条线遇到重大挫折都可能拖累全局
-5. **陈冕最大盲区**：技术深度不足+百人到五百人的组织跃迁经验缺失+字节方法论移植到创业公司的"形似神不至"
-6. **10年确定性低**：成为$100亿公司概率15-20%，消失或被收购概率35-40%，中间态（被大厂收编）40-50%
+** Chen Coon has a very strong executive power** (4000 on the account, three PMFs) but** non-technical origin** - AI's technical judgement depends on the team, and the CTO level technical partner is not visible in the public information
+** byte positive competition (80% probability) is the greatest risk** - 12 million live in the dream moon plus bytes flow+models + capital LiblibAI cannot match
+3. ** "Four Rounds a Year" Financing: 60% Good 40% Imperative** - Capital recognition is true, but highly reliant on finance and fragile when capital cools down
+** Three product lines are a great challenge to 100 people** - any major setback to any line could be a drag on the whole picture.
+5. **The largest blind area of Chen **: The lack of experience in tissue leaping from less than technical depth to 500 people + the byte approach is transferred to the company of start-up.
+** 10 years of low certainty**: 15-20 per cent probability of becoming $10 billion, 35-40 per cent probability of disappearing or being acquired, 40-50 per cent intermediate (incorporated by large plants)
 
-**风险矩阵**：
+**Risk matrix**:
 
-| 风险 | 概率 | 影响 | 综合 |
+Risk, probability, impact, combined.
 |------|------|------|------|
-| 字节正面竞争 | 高（80%） | 高 | **极高** |
-| GPU成本/盈利压力 | 高（75%） | 高 | **高** |
-| 资本市场降温 | 中高（60%） | 高 | **高** |
-| 技术壁垒消解（开源） | 高（70%） | 中 | **中高** |
-| 产品线分散 | 中（50%） | 中高 | **中高** |
-| 估值透支 | 中（45%） | 中 | **中** |
-| 创始人盲区 | 中（35%） | 中高 | **中** |
-| 监管合规 | 低中（30%） | 中高 | **中** |
+♪ The big, big, big, big, big, big ♪
+<unk> GPU cost/profit pressure <unk> high (75%) <unk> high ** high ** <unk>
+<unk> Capital market cooling <unk> Medium (60%) High <unk> High ** High **
+<unk> Technical barrier removal (open source) <unk> High (70%) <unk> Medium ** High **
+<unk> Dispersed product line <unk> medium (50%) medium and high <unk> medium and high ** <unk>
+<unk> Valuation overdraft <unk> (45%) <unk> ** **
+<unk> Founder blind zone <unk> (35%) <unk> medium height ** medium **
+<unk> Regulatory compliance <unk> Medium (30%) <unk> Medium and high ** Medium **
 
 ---
 
-## 5. 投资论点（Bull vs Bear）
+#5. Investment argument (Bull vs Bear)
 
-### 🟢 看多逻辑
+# # # look at how logical
 
-1. ARR $3亿、增速3000%+，是中国AIGC应用层跑得最快的公司
-2. PS 6.7x在同类中明显偏低（Suno 18x、可灵 40x），估值有安全边际
-3. 三次PMF验证证明团队产品嗅觉和执行力一流
-4. 50万+用户模型的社区生态形成了12-18个月的先发优势
-5. 产品矩阵（图片+视频+设计）覆盖AIGC创作全链路，提升客单价
-6. "平台层聚合器"的产业链位置正确——开源模型越强，平台价值越大
-7. 声称"已在赚钱"，若属实则比大部分AI创业公司更健康
+1. ARR $300 million, 3,000 per cent plus, the fastest-run company in China ' s AIG application layer
+2. PS 6.7x is significantly lower in the same category (Suno 18x, gen. 40x), with a margin of security valuation
+3. Three PMF certification team products with first-rate sense of smell and performance
++500,000 user model community ecology has a 12- to 18-month pre-existing advantage
+5. Product matrix (photo+video+design) covers the full chain of AIG creation, raising the unit price
+The industrial chain of Platform Polymer is right - the more open-source models are, the more valuable the platform is
+7. Claims that "we're making money" are healthier than most AI start-ups if they are true
 
-### 🔴 看空逻辑
+# # look at the logic #
 
-1. 本质是"AI模型中间层"，上受模型方挤压，下无定价权，长期利润空间存疑
-2. 字节跳动（即梦+剪映+豆包）全面竞争不可避免，资源差距悬殊
-3. 底层模型不自主——90%+生成调用走第三方模型，品牌归因不在平台
-4. GPU成本刚性，毛利率可能仅30-50%，$3亿ARR实际利润微薄
-5. 社区护城河是"相对壁垒"非"绝对壁垒"，字节砸钱补贴可在12-18个月内追赶
-6. 三条产品线对百人团队是极大挑战，资源分散风险高
-7. 高度依赖融资，如果2027年资本市场降温，公司将面临严峻考验
+1. The essence is "the middle of the AI model", overstretched by the model, unpricing rights, and long-term profit space questionable
+2. Byte beats (i.e. dream+map+beans bag) are inevitable and resource gaps are wide
+Bottom model autonomy - 90% + generation of third-party mobile models, brand attribution is not on the platform
+4. GPU cost rigidity, Māori ratio may be only 30-50 per cent, with $300 million in actual profit margins
+5. Community moats are "relative barriers" and "absolute barriers" with by-product-related payments that can be pursued within 12-18 months.
+6. Three product lines are a major challenge to 100 people ' s teams, with high risk of resource fragmentation
+7. High reliance on finance, with firms facing a severe test if capital markets cool down in 2027
 
 ---
 
-## 6. 巴菲特买入前Checklist
+# 6. Baffert bought the former Checklist
 
-| # | 检查项 | 通过? | 说明 |
+♪ Check the item through ♪
 |---|--------|-------|------|
-| 1 | 我能理解这个生意吗？ | ⚠️ | 基本可理解，但AIGC技术迭代极快，6个月后产品形态可能大变 |
-| 2 | 有持久的竞争优势吗？ | ❌ | 社区生态是相对壁垒（12-18个月），非结构性护城河 |
-| 3 | 管理层诚实且有能力吗？ | ✅ | 陈冕执行力极强，三次PMF验证，但需观察组织扩张期表现 |
-| 4 | 估值合理吗？ | ✅ | PS 6.7x在同类中偏低，有安全边际 |
-| 5 | 有安全边际吗？ | ⚠️ | 估值偏低提供一定安全边际，但商业模式本身的脆弱性削弱了安全感 |
-| 6 | 自由现金流充沛吗？ | ❌ | 未经验证，高增长期大概率FCF为负 |
-| 7 | ROE持续高于15%吗？ | ❓ | 数据不可得，未上市公司 |
-| 8 | 负债率健康吗？ | ✅ | 累计融资$5-6亿，现金跑道充裕 |
-| 9 | 10年后这个生意还在吗？ | ⚠️ | 独立存在概率35-40%，被收购概率40-50%，消失概率15-20% |
-| 10 | 有不可接受的风险吗？ | ⚠️ | 字节正面竞争+商业模式脆弱性，但不是"致命"的（有被收购的退出路径） |
+I can understand this business, but the AIG technology is very fast, and the product pattern may change dramatically in six months.
+<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> community ecology as a relative barrier (12-18 months) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The executive is very strong, the PMF is three times authenticated, but it's a function of the organizational expansion.
+Is the value reasonable?
+The low valuations provide a certain margin of security, but the vulnerability of the business model itself weakens the sense of security.
+The high growth rate is probably negative.
+Do you have a steady 15% or more of the number of unlisted companies?
+8% of the debt is healthy?
+The business is still in place 10 years later.
+<unk> 10 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> + vulnerability of business models but not "lethal" <unk>
 
-**通过率：3/10（2个通过，5个警告，2个不通过，1个数据不可得）**
+** Passage rate: 3/10 (2 passes, 5 warnings, 2 non-passage, 1 data not available)**
 
 ---
 
-## 7. 最终投资建议
+#7. Final investment proposal
 
-### 定性判断表
+# Qualitative judgement sheet
 
-| 维度 | 判断 |
+♪ The ♪ The ♪
 |------|------|
-| 生意质量 | **中等** — 增速一流，但护城河浅、定价权弱 |
-| 管理层 | **良好** — 执行力极强，但技术深度和组织跃迁是盲区 |
-| 估值 | **偏低** — PS 6.7x在同类中有安全边际 |
-| 时机 | **适合观望** — 等增速验证和字节竞争格局明朗化 |
+♪ The quality of business ♪ ** Medium** ** * The speed of growth is great, but the moat is shallow, the price is weak
+Management <unk> Good ** Implementation is very strong, but technological depth and organizational leaping are blind areas
+<unk> Valuation <unk> ** <unk> <unk> PS 6.7x has a security margin in the same category
+<unk> Timing <unk> Fit for observation** <unk> Equivalent speed validation and byte competition patterns are clear
 
-### 分层建议
+# # Tied advice
 
-| 身份 | 建议 | 理由 |
+Identification, advice, justification.
 |------|------|------|
-| **外部投资者（一级市场）** | 观望 | $20亿估值的安全边际不足以补偿商业模式脆弱性和字节竞争风险 |
-| **员工（低行权价期权）** | 值得考虑 | 期望回报~3.3倍，风险可控（有被收购退出路径） |
-| **员工（$15亿+行权价期权）** | 需谨慎 | 需要公司成长到$50亿+才有合理回报，概率约45-50% |
-| **战略投资方（腾讯/蚂蚁）** | 合理 | 生态卡位价值大于财务回报 |
+** External investors (first-tier market)**
+** Employees (low-priced options)**
+** Employees ($1.5 billion plus options)**
+** Strategic investors (Tents/ants)** Reasonable <unk> Ecocard value is greater than financial return <unk>
 
-### 关键催化剂
+# Key catalysts
 
-**加仓/看多信号：**
-1. ARR如期达到$6亿年底目标，证明增速可持续
-2. 毛利率超过50%，证明不只是"为英伟达打工"
-3. LibTV在B端市场形成标准化工作流，客户续约率>80%
-4. 字节即梦增速放缓或战略收缩，竞争压力减轻
-5. 启动IPO流程，估值得到二级市场验证
+**Saves/see multiple signals:**
+1. ARR is on track to reach the end-of-year target of $600 million, demonstrating that the acceleration is sustainable
+2. The Maori rate is over 50%, proving to be more than "working for Yvetteda."
+3. LibTV to develop standardized workflows in B end market, client renewal rate >80%
+4. Bytes, which are a slowing of dream growth or strategic contraction, and a reduction in competitive pressure
+5. Launch of the IPO process, valuation validated by secondary market
 
-**减仓/看空信号：**
-1. ARR增速在2026年H2降至100%以下，增长动能衰减
-2. 字节即梦推出免费/低价版本，LiblibAI付费用户流失明显
-3. 核心团队成员离职，组织能力出问题
-4. 再次出现监管下架事件
-5. 新一轮融资估值持平或下降（flat/down round）
+** Deposition/seek signal:**
+1. ARR growth rate dropped below 100% in 2026, with growth power decline
+2. Bytes dream of free/low-priced versions, and Liblibai user loss is significant
+3. Staff of the core team separated and organizational capacity was in trouble
+4. Reoccupation of custody
+5. A new round of financing valuations flat or declining (flat/down round)
 
 ---
 
-## 8. 总结
+#8. Summary
 
-LiblibAI是一家令人印象深刻的创业公司——3年内从账上4000块做到$3亿ARR、$20亿估值，三次验证产品市场匹配，团队执行力在中国AI创业公司中首屈一指。但执行力不等于护城河。本质上，LiblibAI是AI模型能力的"中间层聚合器"——它不拥有底层模型（核心生成能力来自Flux/Kling/SD等第三方），也不直接触达终端场景（B端客户可以随时切换供应商）。这种"中间层"定位在AI技术快速迭代的赛道里，既是优势（灵活聚合最新模型）也是隐患（护城河随技术迭代而贬值）。
+LiblibAI is an impressive start-up company - a company that has made $300 million worth of value worth of value from the books for 4,000 over three years, has certified three product market matches, and has the largest team execution in China's AI Enterprise. But enforcement is not equivalent to moating the city. In essence, LiblibAI is an "intermediate polymer" of AI model capability - it does not have a bottom model (core generation capacity from third parties such as Flux/Kling/SD) or direct access to the terminal (end B clients can switch suppliers at any time). This "mid layer" is located in the fast-tracking AIS technology.
 
-对于以$20亿估值获得期权的员工来说，风险收益比是合理的——PS 6.7x明显偏低，期望回报约3.3倍，且即使公司被收购（而非独立上市），员工也有合理退出路径。但必须清醒认识到：字节跳动的正面竞争几乎不可避免，GPU成本结构性地压缩利润空间，而社区生态虽有先发优势但并非不可逾越的护城河。LiblibAI最终的命运，很大程度上取决于它能否在字节进攻之前，将"平台层聚合器"升级为"不可替代的创作基础设施"——目前看，这个转化正在发生（LibTV嵌入B端工作流），但远未完成。
+For employees who have won options at $2 billion in value, the risk return ratio is reasonable – the PS 6.7x is clearly low, with expectations of a return of about 3.3 times, and even when the company is acquired (not independently listed) there is a reasonable exit path for employees. But it must be clear that positive byte competition is almost inevitable, that GPU costs are structurally compressed profit space, and that community ecology, although pre-eminent, is not an insurmountable mound. LiblibAI’s ultimate fate depends to a large extent on whether it upgrades the Platform Layer Convergence to an irreplaceable creative infrastructure before the byte attack – a transformation that is now taking place (LibTV embedded into the B end stream), but is far from complete.
 
 ---
 
 ## Sources
 
-### 商业模式分析
-- [估值超20亿美元，演语科技如何做到中国AI应用层头部公司](https://finance.sina.com.cn/wm/2026-06-18/doc-inicuyvx5508418.shtml)
-- [3亿美元融资、20亿美元估值背后](https://eu.36kr.com/zh/p/3858117895738631)
-- [Liblib的3亿美元融资：三次PMF](https://www.163.com/dy/article/KVMRT3NG0511N33R.html)
-- [营收涨了30倍，ARR 3亿美金](https://www.ifanr.com/1669210)
-- [400万日活，2500万用户，1.3亿美元](https://finance.sina.com.cn/stock/t/2025-10-23/doc-infuvrat2626622.shtml)
+# Business model analysis
+- [Assessment over $2 billion, how speech technology works to the Chinese AI Applied Headlines Corporation] (Canadian Applied Head Company)https://finance.sina.com.cn/wm/2026-06-18/doc-inicuyvx5508418.shtml)
+- [300 million in financing, behind $2 billion in valuation] (https://eu.36kr.com/zh/p/3858117895738631)
+- [Libl's $300 million financing: three PMFs] (https://www.163.com/dy/article/KVMRT3NG0511N33R.html)
+- [Rocker up 30, ARR 300 million]https://www.ifanr.com/1669210)
+- [4 million daily lives, 25 million users, 130 million United States dollars] (https://finance.sina.com.cn/stock/t/2025-10-23/doc-infuvrat2626622.shtml)
 
-### 财务与估值分析
+# Financial and valuation analysis
 - [Canva revenue, valuation & funding](https://sacra.com/c/canva/)
 - [Suno raises $400M at $5.4B valuation](https://techfundingnews.com/suno-raises-400m-at-5-4b-valuation-as-ai-music-hits-300m-arr/)
 - [Midjourney Revenue: $500M ARR](https://getlatka.com/companies/midjourney)
-- [可灵计划独立融资上市](https://36kr.com/p/3805011253042952)
-- [美图2025年财报](https://caifuhao.eastmoney.com/news/20260327184045913151180)
+- [The plan is independently financed] (https://36kr.com/p/3805011253042952)
+- [Media 2025 Financial Report]https://caifuhao.eastmoney.com/news/20260327184045913151180)
 
-### 行业与竞争分析
-- [Research and Markets-AI图像生成市场](https://www.researchandmarkets.com/report/ai-image-generator-market)
-- [GMInsights-生成式AI市场](https://www.gminsights.com/industry-analysis/generative-ai-market)
-- [DemandSage-Midjourney统计2026](https://www.demandsage.com/midjourney-statistics/)
+# Industry and competition analysis
+- [Research and Markets-AI image generation market] (https://www.researchandmarkets.com/report/ai-image-generator-market)
+- [GMINSights - Generating AI Market] (Gmnights - Generating AI Market)https://www.gminsights.com/industry-analysis/generative-ai-market)
+- [DemandSage-Midjoourney Statistics 2026] (Photo by @d.com/Sc.https://www.demandsage.com/midjourney-statistics/)
 - [Fueler-Adobe Firefly 2026](https://fueler.io/blog/adobe-firefly-usage-revenue-valuation-growth-statistics)
 - [TechCrunch-Figma AI Agent](https://techcrunch.com/2026/05/20/figma-adds-an-ai-assistant-to-its-collaborative-canvas/)
 
-### 风险与管理层评估
-- [陈冕-财富中国40位40岁以下精英](https://www.fortunechina.com/detail/people/4040/2025/37/chenmian.htm)
-- [92年男生融资9.26亿](https://36kr.com/p/3521698417319040)
-- [从账上4000块到估值10亿美金](https://www.163.com/dy/article/KCPK3BLJ051181RS.html)
-- [LiblibAI获融资，Lovart被马斯克点赞](https://news.qq.com/rain/a/20251023A046DN00)
-- [Lovart创始人陈冕复盘应用创业](https://www.xiaoyuzhoufm.com/episode/68455e0a6dbe9284e75c6fbf)
+# Risk and management assessment
+- [Con-Foundation China 40 elites under 40] (Called China 40th elite)https://www.fortunechina.com/detail/people/4040/2025/37/chenmian.htm)
+- [926 million in 92 for boys] (https://36kr.com/p/3521698417319040)
+- [From $4,000 to $1 billion in the books]https://www.163.com/dy/article/KCPK3BLJ051181RS.html)
+- [LiblibAI was financed, Loveart was picked up by Musk]https://news.qq.com/rain/a/20251023A046DN00)
+- [Board founder Chen coronation retune application entrepreneurship] (https://www.xiaoyuzhoufm.com/episode/68455e0a6dbe9284e75c6fbf)

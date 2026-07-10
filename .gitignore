@@ -1,27 +1,27 @@
-# ===== 系统与工具产物 =====
+# ===== System and tool products =====
 .DS_Store
 __pycache__/
 *.pyc
 .codex/
 /tmp/
 logs/command-log.jsonl
-reports/美团/command-log.jsonl
+reports/Meituan/command-log.jsonl
 
-# 雪球爬虫登录态缓存（含 cookies，本地使用）
+# Snowball crawler login state cache (including cookies, local use)
 /tmp/xueqiu_state.json
 
-# ===== 音视频大文件不入库 =====
-# 如确需提交某个文件，用 git add -f 显式加入
+# ===== Large audio and video files are not stored in the database =====
+# If you really need to submit a file, use git add -f to add it explicitly
 *.m4a
 *.mp3
 *.wav
 *.mp4
 *.mov
 
-# ===== 本地资料区：不打算公开的文件放这个目录，永不入库 =====
+# ===== Local data area: files that are not intended to be made public are placed in this directory and will never be stored in the database =====
 /local/
 
-# 组合报告只存本地，不公开
+# The combined report is only saved locally and not made public.
 reports/portfolio-latest.md
 
-# 实盘记录/ 公开权重口径版；原始账本（含股数/金额）在 local/实盘记录-原始/（已被 /local/ 规则覆盖）
+# Real offer record/public weight caliber version; the original ledger (including number of shares/amount) is in local/real offer record-original/(overwritten by /local/ rules)

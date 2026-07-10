@@ -1,39 +1,39 @@
-# OpenRouter 模型使用量多维度拆解：价格归一化前后的真实排名
+# OpenRouter model uses multidimensional decomposition: real ranking before and after price standardization
 
-> 数据快照：2026年6月23日 | 分析日期：2026年7月2日
+> Data snapshot: 23 June 2026 <unk> Analysis date: 2 July 2026
 
-## 核心问题
+# The core issue
 
-OpenRouter 上的模型使用量排行能反映模型真实好用程度吗？答案是：**不能直接用**。原始 token 使用量基本就是价格的倒数——便宜的模型天然获得不成比例的流量。本文通过多维度分析和价格归一化，试图还原一个更接近"真实好用度"的排名。
+The model on OpenRouter shows how well the model is actually used. The answer is: ** Can't be used directly. The original token use is basically the downside of price — cheap models naturally generate a disproportionate flow. Through multi-dimensional analysis and price standardization, this paper attempts to re-establish a ranking closer to "real good use".
 
-## 数据来源
+# Data source
 
-- **CodeSOTA Agent Leaderboard**（主要数据源）：覆盖46个 Agent 应用的30天使用数据，同时提供 token 量、花费、采用 app 数、#1 slot 数
-- **DigitalApplied** April/June 2026 报告：周度 token 量、市场份额
-- **OpenRouter 官方博客**：开源模型基准测试、定价、吞吐量
-- **AICost**：月度 token 排行、中国模型分析
+- **CodeSOTA Agent Leaderboard** (main data source): 30 days of data over 46 Agent applications, with token amounts, costs, apps, #1 lots
+- **DigitalApplied** April/June 2026 Report: Weekly token volume, market share
+- **OpenRouter Official Blog**: Open Source Model Benchmarking, Pricing, Tong
+- **AICOT** Monthly token queue, China Model Analysis
 
-## 方法论
+# Methodology
 
-### 五个维度
+# Five dimensions
 
-| 维度 | 权重 | 含义 | 噪声特征 |
+♪ The ♪ The ♪
 |------|:----:|------|----------|
-| 收入（Revenue） | 30% | 用钱投票——开发者愿意为这个模型花多少钱 | 偏向有钱的企业用户 |
-| 采用广度（Apps） | 25% | 有多少不同应用集成了这个模型 | 最不受价格影响 |
-| 使用量（Tokens） | 20% | 原始 token 处理量 | 价格噪声最大 |
-| 质量领先（#1 Slots） | 15% | 在多少个应用中被选为首选模型 | 样本小但信号强 |
-| 单开发者付费 | 10% | Revenue/Apps——每个开发者愿意花多少 | 过滤掉"便宜才用"的噪声 |
+The developers are willing to pay for this model, and the producers are willing to pay for it, and the users of the rich companies are going to pay for it.
+<unk> Using the Apps, 25%, <unk> how many different applications have been integrated into this model, <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> ,
+<unk> Tokens <unk> 20% <unk> Original token process volume <unk> Prices are the most loud <unk>
+<unk> <unk> 1 Slots <unk> 15% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+So, the developers pay 10%, the developers pay 10%, the developers/apps -- how much each developer wants to spend, the platinum filters off the "favourless" noise, the platinum, the platinum, the platinum, the platinum, the platinum, the platinum, the platinum, the platinum, the platinum, the platinum, the platinum, the platinum, the platinum, the platinum, the platinum, the platinum, the tact, the twee, the twee, the twee, the twee, the tweak, the twee, the twee, the twee, the twee, the twerench, the twerench, the tweret, the twe, the twerend, the twerend, the t, the t, the t, the t, the t, the t, the t, the t the twe, the twe, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the t, the
 
-### 为什么不用"token/价格"做归一化
+# Why not use "token/price" as a way to normalize
 
-"每美元处理多少 token"本质上就是价格的倒数，无法提供增量信息。真正有意义的价格归一化方法是：**在控制了价格因素后，开发者的行为是否仍然指向这个模型**——即收入、采用广度、#1 slots 这些维度。
+"How much token" is essentially the price inverted, and it does not provide incremental information. The real way to normalize prices is:** Whether, after controlling price factors, the developers' behaviour still points to the model** – income, wideness, #1lots – dimensions.
 
 ---
 
-## 综合排名 Top 20
+# Combined Top 20
 
-| 排名 | 模型 | 供应商 | 综合分 | 收入 | 使用量 | 采用 | #1 | 有效价格 |
+<unk> ranking <unk> model <unk> supplier <unk> overall score <unk> income <unk> use <unk> use <unk> 1<unk> effective price <unk>
 |:----:|------|--------|:-----:|:----:|:-----:|:----:|:---:|:--------:|
 | 1 | Claude Sonnet 4.6 | Anthropic | 96.4 | #1 | #3 | #3 | #2 | $6.35/M |
 | 2 | MiniMax M3 | MiniMax | 86.2 | #6 | #2 | #4 | #6 | $0.55/M |
@@ -58,13 +58,13 @@ OpenRouter 上的模型使用量排行能反映模型真实好用程度吗？答
 
 ---
 
-## 各维度排名对比
+# And the scales are in comparison with the dimensions
 
-### 维度一：原始使用量（Token Volume）
+## # dimension one: Token Volume
 
-价格噪声最大的维度。前10全部是 $1/M 以下的低价模型（Claude Sonnet 4.6 除外）。
+The price is the largest dimension. The top 10 are all low price models (except Claude Sonnet 4.6) below $1/M.
 
-| 排名 | 模型 | Token 量 | 有效价格 |
+<unk> ranking, <unk> model, <unk> Token volume, <unk> valid price, <unk>
 |:----:|------|:--------:|:--------:|
 | 1 | DeepSeek V4 Flash | 6,420B | $0.12/M |
 | 2 | MiniMax M3 | 4,530B | $0.55/M |
@@ -77,13 +77,13 @@ OpenRouter 上的模型使用量排行能反映模型真实好用程度吗？答
 | 9 | MiMo-V2.5-Pro | 1,270B | $0.56/M |
 | 10 | MiMo-V2.5 | 857B | $0.18/M |
 
-**Claude Sonnet 4.6 是唯一一个以高价（$6.35/M）挤进 token 量 Top 3 的模型**——这本身就是极强的质量信号。
+**Claude Sonnet 4.6 is the only model to squeeze into token ton volume Top 3 at a high price ($6.35 M)** - this is in itself a very strong quality signal.
 
-### 维度二：收入（Revenue = 用钱投票）
+# # dimension two: income (Revenue = vote with money)
 
-收入是最强的质量信号。愿意花真金白银，说明模型在生产环境中不可替代。
+Revenue is the strongest quality signal.
 
-| 排名 | 模型 | 月收入 | Token 量 |
+<unk> ranking, <unk> model, <unk> monthly income, <unk> Token volume, <unk>
 |:----:|------|:------:|:--------:|
 | 1 | Claude Sonnet 4.6 | $20.9M | 3,290B |
 | 2 | Claude Opus 4.8 | $16.3M | 1,540B |
@@ -96,13 +96,13 @@ OpenRouter 上的模型使用量排行能反映模型真实好用程度吗？答
 | 9 | Step 3.7 Flash | $1.3M | 2,880B |
 | 10 | GPT-5.3-Codex | $1.3M | 247B |
 
-**Anthropic 前5占了4席，总月收入 $50.1M，占全市场的 66%。** 尽管 token 量只占约 15%。
+** The top five seats in Anthropic were four, with a total monthly income of $50.1M, or 66% of the market.** Although the token volume was only about 15%.
 
-### 维度三：开发者采用广度（Apps Count）
+## Three dimensions: Developer takes breadth (apps Count)
 
-最不受价格影响的维度——开发者花时间集成一个模型，不仅仅因为便宜。
+The least price-proof dimension — developers spend time in a model, not just because it's cheap.
 
-| 排名 | 模型 | Apps 数 | 有效价格 |
+<unk> Ranking, <unk> Model, <unk> Apps Number, <unk> Valid Price, <unk>
 |:----:|------|:-------:|:--------:|
 | 1 | DeepSeek V4 Flash | 36 | $0.12/M |
 | 2 | DeepSeek V4 Pro | 34 | $0.56/M |
@@ -115,13 +115,13 @@ OpenRouter 上的模型使用量排行能反映模型真实好用程度吗？答
 | 9 | Claude Opus 4.6 | 21 | $10.60/M |
 | 10 | Gemini 3 Flash Preview | 21 | $1.20/M |
 
-**DeepSeek V4 Flash 在采用广度上排第一，说明它的流行不仅仅是价格驱动。** 36个不同 app 选择集成它，开发者用脚投票。
+** DeepSeek V4 Flash is number one in his wide range, showing that its prevalence is not just a price-driven exercise. ** 36 different apps choose to integrate it, developers vote with their feet.
 
-### 维度四：质量领先（#1 Slots）
+# # dimension four: Quality lead (#1 Slots)
 
-在多少个应用中被选为首选模型——这是最纯粹的质量信号。
+The preferred model in how many applications — the purest quality signal — was chosen.
 
-| 排名 | 模型 | #1 数 | 总采用 |
+♪ The ♪ The ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the the ♪ the ♪ the ♪ the the ♪ the the the ♪ the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the
 |:----:|------|:-----:|:------:|
 | 1 | DeepSeek V4 Flash | 6 | 36 apps |
 | 2 | Claude Sonnet 4.6 | 5 | 29 apps |
@@ -131,13 +131,13 @@ OpenRouter 上的模型使用量排行能反映模型真实好用程度吗？答
 | 6 | MiniMax M3 | 2 | 28 apps |
 | 7 | Step 3.7 Flash | 2 | 7 apps |
 
-**只有15个模型拿到过至少一个 #1 slot。** 能在至少一个场景中成为最优选择，本身就是很高的门槛。
+** Only 15 models have at least one #1 slot.** It is a high threshold that can be the best option in at least one scenario.
 
-### 维度五：单开发者付费（Revenue / App）
+## Five dimensions: single developers pay (Revenue / App)
 
-每个集成该模型的开发者平均花多少钱——过滤掉"因为免费所以用"的噪声。
+The average cost per developers of the integrated model -- filtering out the noise "for free use."
 
-| 排名 | 模型 | 每 App 收入 | Apps 数 |
+<unk> Ranking, <unk> Model, <unk> App/App, <unk> Apps, <unk>
 |:----:|------|:----------:|:-------:|
 | 1 | Claude Sonnet 4.6 | $721K | 29 |
 | 2 | Claude Opus 4.8 | $680K | 24 |
@@ -150,79 +150,79 @@ OpenRouter 上的模型使用量排行能反映模型真实好用程度吗？答
 | 9 | MiniMax M3 | $89K | 28 |
 | 10 | Gemini 3.5 Flash | $83K | 26 |
 
-**Claude Sonnet 4.6 不仅采用广（29 apps），每个 app 还平均花 $721K/月**——既广又深。
+** Claude Sonnet 4.6 Not only does it use wide (29 apps), but each app also spends an average of $721K/month** — wide and deep.
 
 ---
 
-## 价格归一化核心发现
+# Prices are down to the core
 
-对比"原始 token 排名"和"综合排名"的位差，就能看出价格在多大程度上扭曲了使用量数据。
+The difference between the original token ranking and the combined ranking shows how much price distorts the use of data.
 
-### 被价格虚高膨胀的模型
+# A model of price inflation
 
-这些模型的 token 使用量排名远高于综合排名——说明使用量主要由低价驱动，而非质量。
+The token usage of these models is ranked far above the combined ranking - indicating that usage is largely low-cost driven rather than quality.
 
-| 模型 | Token排名 | 综合排名 | 下降 | 有效价格 | 诊断 |
+<unk> Model, <unk> Token ranking, <unk> comprehensive ranking, <unk> decline, <unk> effective price, <unk> diagnostic, <unk>
 |------|:---------:|:-------:|:----:|:--------:|------|
-| Nemotron 3 Super | #8 | #25 | ↓17 | $0.19/M | 10个 app，0个 #1。纯粹靠便宜跑批量 |
-| MiMo-V2.5 | #10 | #21 | ↓11 | $0.18/M | 25个 app 但0个 #1，没人觉得它最好 |
-| MiniMax M2.7 | #15 | #24 | ↓9 | $0.44/M | 被 M3 取代后仍靠老用户惯性 |
-| Nemotron 3 Ultra | #21 | #29 | ↓8 | $0.98/M | benchmark 不错（AA 48）但实际采用很低 |
-| Step 3.7 Flash | #5 | #12 | ↓7 | $0.47/M | 只有7个 app，极度集中使用 |
-| Laguna M.1 | #6 | #13 | ↓7 | $0.26/M | 2.13T token 但只有12个 app |
+Nemotron 3 Super #8<unk> 25<unk> 17<unk> 0.19/M<unk> 10app<unk> 1.
+♪ MiMo-V2.5 ♪ 21 <unk> 11 <unk> 0.18/M <unk> 25 apps but 0 ♪ 1, no one thinks it's better ♪
+MiniMax M2.7 #15 #24 <unk> 9 <unk> 0.44 <unk> <unk> replaced by M3 and still dependent on the old user inertia
+<unk> Nemotron 3 Ultra <unk> 21 <unk> 29 <unk> 8 <unk> 0.98/M<unk> benchmark is good (AA48) but actually very low
+Step 3.7 Flash <unk> 5<unk> 12<unk> 0.47/M<unk> 3<unk> 7 app, extremely concentrated
+Laguna M.1 #6<unk> 13<unk> 0.26/M<unk> 2.13T token but only 12 apps
 
-### 被价格压制的模型
+# A model of price repression
 
-这些模型的 token 使用量排名远低于综合排名——因为贵，使用量被抑制了，但收入和采用度说明质量确实好。
+The token usage of these models is far below the combined ranking - because of their high cost, usage is suppressed, but income and adoption are good indications of quality.
 
-| 模型 | Token排名 | 综合排名 | 上升 | 有效价格 | 诊断 |
+<unk> Model, <unk> Token ranking, <unk> comprehensive ranking, <unk> up, <unk> effective price, <unk> diagnostic, <unk>
 |------|:---------:|:-------:|:----:|:--------:|------|
-| Claude Fable 5 | #29 | #19 | ↑10 | $21.21/M | 全场最贵，42B token，但月入 $891K |
-| Claude Opus 4.6 | #17 | #8 | ↑9 | $10.60/M | 21个 app 愿意以 $10.60/M 持续用 |
-| Gemini 3.5 Flash | #14 | #6 | ↑8 | $3.59/M | 26个 app，价格适中但采用极广 |
-| Claude Opus 4.7 | #16 | #9 | ↑7 | $10.59/M | 20个 app，$5.87M 月收入 |
-| GPT-5.3-Codex | #22 | #15 | ↑7 | $5.19/M | 只有5个 app 但月入 $1.28M，极度垂直 |
-| GPT-5.5 | #13 | #7 | ↑6 | $12.01/M | $7.94M 月收入，收入排第三 |
+Claude Fable 5 #29 #19 #10 <unk> 21.21/M <unk> 42B token, but $891K <unk>
+Claude Opus 4.6 #17 #8 #9 <unk> 10.60/M<unk> 21app willing to use $10.60/M on a continuous basis
+<unk> Gemini 3.5 Flash <unk> 14 #6<unk> 8<unk> $3.59/M<unk> 26 apps, moderate price but very wide
+♪ Claude Opus 4.7 ♪ 16 ♪ 9 ♪ 7 <unk> 10.59/M <unk> 20 apps, $5.87M monthly income ♪
+<unk> GPT-5.3-Codex #22<unk> 15<unk> 7<unk> 5.19/M<unk> 5 app but monthly $1.28M, extremely vertical
+<unk> GPT-5.5 <unk> 13 <unk> 7<unk> 6<unk> $12.01/M<unk> $7.94M monthly income, 3rd income
 
 ---
 
-## 关键洞察
+# Key insight
 
-### 1. Token 使用量 ≈ 价格的倒数
+# 1. Token Usage # #1 #1 # token # # # ton # # # ton # # # ton # # # ton # # # ton # # # ton # # # ton # # # ton # # # ton # # # ton # # # # ton # # # to # # # to # # # to # # # to # # # # to # #
 
-DeepSeek V4 Flash 处理了 6.42T token（第一），但收入只有 $739K（第十三）。Claude Sonnet 4.6 的 token 量只有它的一半，但收入是它的 **28倍**。如果只看 token 排行榜，你会以为 DeepSeek V4 Flash 是市场上最好的模型——但它更多是"最便宜的够用模型"。
+DeepSeek V4 Flash handled 6.42T token (first), but only $739K (thirteenth). Claude Sonnet 4.6 has half of its token, but 28 times its income. If you look at token's ranking, you think DeepSeek V4 Flash is the best model in the market -- it's more "the cheapest enough model".
 
-### 2. 收入是最强但有偏差的质量信号
+#2. Income is the strongest but biased quality signal
 
-Anthropic 6个模型拿走了 $50.1M 月收入（占全市场66%），但 token 只占15%。这说明企业用户真的认为 Anthropic 的模型更好，愿意为此付出 10-20 倍的价格溢价。但这也意味着收入排行偏向"有预算的企业选什么"，不代表"最佳性价比"。
+Six models of Anthropic took $50.1M monthly (66% of the market), but token only 15%. This suggests that business users really think that the model of Anthropic is better and are willing to pay a price premium of 10-20 times. But this also means that income is biased towards what is budgeted, not the best value for money.
 
-### 3. 采用广度是最干净的信号
+#3. Use breadth is the cleanest signal
 
-开发者花时间集成一个模型，成本远高于切换价格——这意味着 apps 数量相对不受价格影响。在这个维度上，DeepSeek V4 Flash（36 apps）和 DeepSeek V4 Pro（34 apps）排在前两位，说明它们的流行不仅仅是价格效应。
+Developers spend time gathering a model at a much higher cost than switching prices -- which means that the number of apps is relatively unpriced. At this dimension, DeepSeek V4 Flash (36 apps) and DeepSeek V4 Pro (34 apps) are ranked first, suggesting that their epidemic is not just price effects.
 
-### 4. 四个维度都靠前的才是"真正好用"
+# 4. Four dimensions are the real good thing
 
-- **Claude Sonnet 4.6**：四个维度全部 Top 3，唯一一个。绝对统治力。
-- **MiniMax M3**、**DeepSeek V4 Pro**：便宜但采用和领先度都强，不只是靠价格。
-- **GPT-5.5**：收入第三但采用只有16个 app，主要靠少数高付费用户。
+- **Claude Sonnet 4.6**: Four dimensions all Top 3, only. Absolute rule.
+- **MiniMax M3**,**DeepSeek V4 Pro**: Cheap but adoptable and lead, not just price.
+- **GPT-5.5**: Third-income but only 16 applications, mainly by a small number of high-paying users.
 
-### 5. 中国模型：token 占51%，收入占7%
+5. China model: 51% token and 7% income
 
-中国模型（MiniMax、DeepSeek、Xiaomi、Moonshot、Z.ai、Qwen）在 token 量上已经超过一半，但收入贡献不到十分之一。这个差距的核心解释是价格策略——中国模型普遍以 1/10 到 1/100 的价格竞争。例外是 MiniMax M3，在采用和质量领先维度都表现突出，不只是靠便宜。
+The Chinese model (MiniMax, DeepSeek, Xiaomi, Moonshot, Z.ai, Qwen) is already more than half of the total token, but the revenue contribution is less than one tenth. The core explanation for this gap is price strategy – the Chinese model generally competes at a price of 1/10 to 1/10.
 
-### 6. 对投资者的启示
+# 6. A revelation to investors
 
-如果你在评估 AI 模型/公司的竞争力：
-- **不要看 token 使用量排行榜**——它基本就是价格的倒数
-- **看收入 + 采用广度的交叉**——Claude Sonnet 4.6 在两个维度都是 Top 3，这才是真正的护城河
-- **注意"价格膨胀型"模型**——Nemotron 3 Super 的 token 量看起来很大，但下降17位后才是它的真实位置
-- **关注价格弹性**——如果一个模型涨价后使用量骤降，说明用户忠诚度低；如果维持住了（如 Claude Opus 系列），说明切换成本高
+If you're assessing AI model/company competitiveness:
+- ** Don't look totoken uses the tokens ** - It's basically the price down.
+- ** See income + use wide cross ** - Claude Sonnet 4.6 at both dimensions Top 3, which is the real moat.
+- ** Note that the "price inflation" model** -- Nemotron 3 Super's token volume looks huge, but it's not until it's down 17 digits until it's actually in place.
+- ** Concern about price elasticity** — if a model is used to increase prices sharply, it means low user loyalty; if it is maintained (e.g. Claude Opus series), it means high switching costs
 
 ---
 
-## 供应商分布（Top 20）
+# Vendor distribution (Top 20)
 
-| 供应商 | 模型数 | 总收入 | 总 Token | 平均价格 |
+<unk> Vendors <unk> Model number <unk> Total income <unk> Total Token <unk> Average price <unk>
 |--------|:------:|:------:|:--------:|:--------:|
 | Anthropic | 6 | $50.1M | 6.0T | $8.35/M |
 | OpenAI | 2 | $9.2M | 0.9T | $10.22/M |
@@ -238,9 +238,9 @@ Anthropic 6个模型拿走了 $50.1M 月收入（占全市场66%），但 token 
 
 ---
 
-## 数据来源
+# Data source
 
-- [CodeSOTA Agent Leaderboard](https://www.codesota.com/agentic/openrouter-models)（主数据源，46个 Agent 应用30天快照）
+- [CodeSOTA Agent Leaderboard](https://www.codesota.com/agentic/openrouter-models) (Main data source, 46 Agent application 30 days snapshot)
 - [OpenRouter Rankings April 2026 - DigitalApplied](https://www.digitalapplied.com/blog/openrouter-rankings-april-2026-top-ai-models-data)
 - [OpenRouter June 2026 Roundup - DigitalApplied](https://www.digitalapplied.com/blog/openrouter-new-models-june-2026-roundup-pricing-rankings)
 - [OpenRouter: The Open Weight Models That Matter June 2026](https://openrouter.ai/blog/insights/the-open-weight-models-that-matter-june-2026/)

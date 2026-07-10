@@ -1,362 +1,362 @@
-# 中国神华（601088.SH / 1088.HK）投资研究报告
+# Chinese Senghua (601088.SH/1088.HK) investment study
 
-> **研究日期**：2026年6月23日
-> **A股股价**：CNY 40.66 | **总市值**：CNY 8,076亿
-> **H股股价**：HKD 42.06
-> **52周区间**（A股）：CNY 36.80 - 51.18
-
----
-
-## AI研究偏见自觉
-
-**信息丰富度评级：A级（信息充裕）**
-
-中国神华A+H双重上市近20年，券商覆盖极广，年报信息披露连续12年获上交所A级评价。煤炭行业数据透明度高（国家统计局/煤炭工业协会/海关数据齐全）。
-
-**A级公司的AI研究陷阱**：市场共识高度一致——"高股息+低估值+一体化护城河=类债券优质资产"。这一叙事在"中特估"行情下被反复强化。**本报告的alpha不在于重复共识，而在于回答两个反面问题**：（1）PE从2023年的8-10倍拉到当前15倍，这轮估值重估是否已到位？（2）煤炭消费即将达峰的背景下，"高股息"叙事能撑多久？
-
-**偏见自查**：
-- "中特估"叙事可能让市场低估了煤炭长期衰退的确定性
-- 高分红率创造了一种"安全感"，但分红的可持续性取决于盈利，而盈利在过去3年连续下滑
-- AI分析对央企治理的理解可能过于模式化，需区分"制度化稳定"和"制度化平庸"
+> ** Date of study**: 23 June 2026
+> **A share price**: CNY 40.66 ** Total market value**: CNY 807.6 billion
+> ** H share price**: HKD 42.06
+> **52 weeks** (Unit A): CNY 36.80 - 51.18
 
 ---
 
-## 关键数据交叉验证记录
+# AI studies prejudices
 
-| 验证项 | 来源1 | 来源2 | 偏差 | 结果 |
+** Information abundance rating: A (information is abundant)**
+
+For almost 20 years, China’s Sino-Chinese A+H has been listed, with a very wide range of coupons, and annual report disclosures have been evaluated for 12 years at Level A. Data transparency in the coal sector is high (NSO/ACI/Customs data are complete).
+
+**A.A. study trap**: Market consensus is highly consistent - "High dividends + low valuation + integrated mounds = high-quality assets of bonds." This narrative has been reinforced repeatedly in the context of the "Middle-Assessment" exercise.** The alpha version of this report does not repeat the consensus, but answers two negative questions **: (1) Is the valuation revalued from 8-10 times in 2023 to 15 times the current? (2) How long can the "high-economy" narrative be sustained in the context of coal consumption?
+
+** Prejudice self-examination**:
+- The Middle-Assessment narrative may have led the market to underestimate the certainty of a long-term decline in coal.
+- High red rates create a sense of security, but the sustainability of the red depends on profit, which has been declining continuously over the past three years.
+- AI analyses the understanding of corporate governance that may be too modelistic to distinguish between "institutional stability" and "institutional mediocrity".
+
+---
+
+# Cross-checking records for key data
+
+<unk> Validation item <unk> Source 1 <unk> Source 2 <unk> deviation <unk> result <unk>
 |--------|-------|-------|------|------|
-| 市值（CNY 8,076亿） | 股价40.66×股本198.69亿=8,079亿 | Investing.com ~7,901亿 | <2% | 通过（差异因时点和口径） |
-| FY2025收入（2,949亿） | 公司年报 | 券商研报 | 0.00% | 通过 |
-| FY2025归母净利（528.49亿） | 公司年报 | 证券时报 | 0.00% | 通过 |
-| 总股本（198.69亿） | 公司公告 | 新浪财经 | 一致 | 通过 |
+Market value (CNY 807.6 billion) <unk> Stock value <unk> 19.869 billion = 807.9 billion <unk> Investment.com ~ 790.1 billion < 2% <unk> Pass (discrepancies by point and calibre) <unk>
+<unk> FY2025 income ($294.9 billion)
+<unk> SY2025 net profit from mother (52.849 billion) <unk> company annual report <unk> securities time report <unk> 0.00 per cent <unk> pass
+The company's announcement, the new financial record, the same deal, the same deal, the same deal.
 
-> PE=15.29x、PB=1.89x、ROE=12.37%、股息率=4.94% 均通过 `financial_rigor.py` 精确验算。
+> PE=15.29x, PB=1.89x, ROE=12.37%, dividends = 4.94% are calculated using `final_rigor.py ' .
 
-**重要说明**：2025年千亿重组（1,336亿收购国能集团12家子公司）将发行约10亿新股用于支付30%对价，完成后总股本将增至约208-217亿股，EPS相应摊薄。本报告主要基于重组前口径分析。
+** Key note**: In 2025, the 100 billion reorganisation (the 12 subsidiaries of the Group of Acquisition Powers (the Group of 12) will issue about 1 billion new shares to cover 30 per cent of the price, and upon completion the total equity will increase to about 20.821.7 billion shares, with the EPS being set up accordingly. The present report is based mainly on pre-reorganization calibre analysis.
 
 ---
 
-## 一、生意本质分析
+# One, business nature analysis
 
-### 一句话定义
+# One word of definition
 
-**中国神华是一个以煤炭开采为核心，通过自有铁路、港口、航运、电厂构建全产业链闭环的"能源基础设施运营商"——本质上不是卖煤的，而是卖"从地下到插座"的全链条能源服务。**
+** The Chinese Senghua is a closed "energy infrastructure operator" with coal mining at its core, building the entire industrial chain through its own railways, ports, shipping, power plants - essentially not selling coal, but selling the whole chain of energy services "from underground to the plugs".**
 
-### 收入结构拆解（FY2025，合并抵销前）
+## Dismantling of income structure (FY 2025, before offset)
 
-| 业务分部 | 收入（亿元） | 利润总额（亿元） | 毛利率 | 利润占比 |
+Business branch income (millions of yuan) Total profits (millions of yuan)
 |---------|------------|----------------|--------|---------|
-| 煤炭 | 2,212 | 465.97 | 30.1% | **62%** |
-| 发电 | 891 | 126.27 | 18.0% | **17%** |
-| 铁路 | ~457 | 129.01 | 37.9% | **17%** |
-| 港口 | ~74 | 26.31 | 46.7% | 3.5% |
-| 航运 | ~35 | 2.69 | 11.5% | 0.4% |
-| 煤化工 | ~62 | 0.58 | 7.2% | ~0% |
-| **合并抵销后** | **2,949** | — | **35.1%** | — |
+<unk> Coal 2,212 <unk> 465.97 <unk> 30.1 <unk> 62 ** <unk>
+**The following information is provided in the present document:
+<unk> 457 <unk> 129.01 <unk> 37.9% ** 17% **
+Port ~ 74 ~ 26.31 <unk> 46.7 <unk> 3.5 <unk>
+<unk> Shipping ~ 35 ~ 2.69 <unk> 11.5 <unk> 0.4 <unk>
+<unk> 62<unk> 0.58<unk> 7.2%<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> 4<unk> <unk> <unk> 4<unk> <unk> <unk> <unk> <unk> 4<unk> <unk> <unk> <unk> <unk> <unk> 4<unk> <unk> 4<unk> <unk> 3<unk> 3<unk> 3<unk> <unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3
+** After offset by consolidation** ** 2,949** <unk> ** 35.1% ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-**关键发现**：煤炭虽贡献62%利润，但运输（铁路+港口+航运）贡献~21%、发电贡献~17%。非煤板块合计贡献38%利润，这是与纯煤企的本质区别。
+** Key findings**: Coal contributes 62% of profits, but transport (rail + port + shipping) contributes ~ 21%, electricity generation contribution ~ 17%. Non-coal plates together contribute 38% of profits, which is different from the nature of pure coal.
 
-### 5年盈利趋势
+# 5 years profit trend
 
-| 指标 | FY2021 | FY2022 | FY2023 | FY2024 | FY2025 |
+<unk> Indicator <unk> FY2021 <unk> FY2022 <unk> FY2023 <unk> FY2024 <unk> FY2025 <unk>
 |------|--------|--------|--------|--------|--------|
-| 收入（亿） | 3,352 | 3,445 | 3,431 | 3,384 | 2,949 |
-| 归母净利（亿） | 503 | **696** | 597 | 587 | 528 |
-| 净利率 | 15.0% | 20.2% | 17.4% | 17.3% | **21.3%** |
+Income (billions) <unk> 3,352 <unk> 3,445 <unk> 3,431 <unk> 3,384 <unk> 2,949 <unk>
+<unk> Net return to mother (millions) <unk> 503 ** 696** <unk> 597 <unk> 587 <unk> 528 <unk>
+Net interest rate <unk> 15.0% 20.2% <unk> 17.4% <unk> 17.3% ** 21.3% **
 | ROE | 13.6% | 18.1% | 14.8% | 13.5% | 12.8% |
-| 经营现金流（亿） | 946 | 1,097 | 897 | 911 | 751 |
-| 分红率 | ~100% | ~73% | ~75% | ~77% | **~79%** |
+<unk> Operating cash flow (billions) <unk> 946 <unk> 1,097 <unk> 897 <unk> 911 <unk> 751 <unk>
+<unk> 100% ~ 73% ~ 75% ~ 77% <unk> 79% <unk>
 
-**核心矛盾**：收入连续3年下降（-13.2%/年），净利润从696亿高点回落至528亿（-24%）。但净利率反而从17%提升至21%——收入缩水时利润韧性极强，体现了一体化模式的对冲效应（煤价跌→电力利润升、运输成本降）。
+** Core paradox**: Income fell for three consecutive years (-13.2 per cent/year) and net profits fell from 69.6 billion to 52.8 billion (-24 per cent). However, net interest rates rose from 17 per cent to 21 per cent - very resilient in the event of a contraction of income, reflecting the symmetrical effects of the integration model (coal price falls, electricity profits rise, transport costs fall).
 
-### 商业模式画布
+# Business model canvass
 
-- **类型**：资源开采+基础设施运营，非一次性交易而是持续运营
-- **复购性**：煤炭和电力是持续消费品，不存在"用完就走"的风险
-- **客户锁定**：长协煤覆盖53.6%销量，自有电厂消纳78%自产煤——自己是自己最大的客户
-- **周期属性**：煤价有周期波动，但一体化模式将纯周期股特征转化为**弱周期+高分红**的类公用事业特征
+- **Typologies**: Resource extraction + infrastructure operation, not one-off transaction but ongoing operation
+- ** Repurchase**: Coal and electricity are consumer goods of a continuous nature, without the risk of "spent or run"
+- **Customer lockdown**: The JCLU covers 53.6% of sales, and the owner-owned plant consumes 78% of the home-grown coal - itself its biggest customer
+- **cyclical attributes**: Coal prices fluctuated cyclically, but the integration model transformed the purely cyclical share feature into a class of utilities ** weak cycle + high-scoring red**
 
-### 追问：这门生意好在哪？
+# Ask: Where is the business?
 
-**如果只能用一句话描述**：中国神华卖的不是煤炭，而是一条从矿井到电网的"能源高速公路"——这条路上的每一段（挖煤、运煤、装船、发电）都赚钱，而且路本身就是护城河。
+** If only one sentence is used to describe**: China's Shinhua sells not coal, but an "energy highway" from the mine to the grid — every part of this road (coal digging, shipping, generating electricity) is profitable and the road itself is a moat.
 
-生意的好处：
-1. **不可复制的全产业链**——2,408公里铁路+黄骅港+52.7GW电厂，建设耗时20年、投资数千亿，无人能从零复制
-2. **自然对冲机制**——煤价涨则煤炭利润增、电力利润减；煤价跌则反之。2025年收入-13%但利润仅-10%
-3. **超强现金流**——即使在盈利下滑年，经营现金流仍达751亿，资产负债率仅23%
+Benefits of business:
+** Non-reproductive whole-sector chain** - 2,408 km of railway + Yellowstone + 52.7 GW power plant built over 20 years, invested hundreds of billions, and no one can replicate from zero
+** Natural hedge mechanisms** - Coal profits increased and electricity lost when coal prices increased; coal prices fell in contrast. Income - 13% but profits - only - 10% in 2025
+** Super-high cash flow** — operating cash flows reached $75.1 billion even in a year of declining profitability, with only 23 per cent asset-liability ratio
 
-生意的隐忧：
-1. **增长天花板明确**——煤炭消费2026-2028年达峰，之后进入长期下降通道
-2. **不是"成长股"**——过去4年收入复合增速为负，这是一个"收获期"而非"播种期"的生意
-3. **央企身份的代价**——保供优先于利润，煤价高涨时不能充分套利
+Business’s Axis:
+** Growth ceiling is clear** - coal consumption peaked in 2026-2028, then entering long-term decline routes
+2. ** Not "Growing stock"** — The combined income growth rate for the last four years was negative. It was a "harvesting period" rather than a "sowning period" business.
+** Cost of identity** - price of security over profit, not sufficient arbitrage when coal prices rise
 
 ---
 
-## 二、护城河评估
+# II. A waterfront assessment
 
-### 五类护城河逐项验证
+# Five-class moats, one by one
 
-| 护城河类型 | 强度 | 验证分析 |
+♪ The moat type ♪
 |-----------|------|---------|
-| **品牌/定价权** | 弱 | 煤炭是大宗商品，无品牌溢价。定价受长协机制和政策管控（570-770元/吨绿色区间），无法自由提价 |
-| **转换成本** | 中等 | 长协+自有铁路绑定的大客户转换成本较高，但煤炭本身同质化严重，电厂可以切换供应商 |
-| **网络效应** | 无 | 煤炭/电力无网络效应 |
-| **规模效应/成本优势** | **极强** | 最核心护城河。自有铁路运价低于国铁17%；黄骅港吞吐量全国煤港第一（连续7年）；坑口电厂零运距供煤；结构件自制率90%。全链条交付成本为行业最低 |
-| **资源/基础设施壁垒** | **极强** | 150.9亿吨可采储量（32-46年开采寿命）；2,408公里自有铁路（中国第二大铁路运营商）；铁路/港口/航运牌照均需政府审批，不可复制 |
+<unk> Brand/pricing rights** Weak coal is a bulk commodity with no brand premium. Pricing is regulated by the JCMB mechanism and policy (570-770/tonne green zone) and cannot freely raise prices
+<unk> ** conversion cost** <unk> medium <unk> <unk> + large customers bound by their own railways have higher conversion costs, but coal itself is highly homogeneous and power plants can switch suppliers <unk>
+<unk> Network effects** <unk> No coal/electricity no network effects<unk>
+<unk> **Scalorie effect/cost advantage** <unk> ** Very strong** <unk> Core moat. <unk>
+** Resource/Infrastructure barriers** ** Extreme** 15.9 billion tonnes of recoverable (32-46 years of mining life); 2,408 km of owned railway (second largest operator in China); railway/port/shipping plates require government approval and are not replicable
 
-### 护城河趋势
+# The moat of the river
 
-**过去5年：稳固**。供给侧改革淘汰小矿后行业CR10提升至50%，龙头受益。千亿重组进一步加厚资源壁垒（储量+98%）。
+The supply side reform has led to a 50% rise in the small mining sector, benefiting from the leadership.
 
-**未来10年：缓慢收窄但仍极宽**。煤炭需求达峰后铁路/港口利用率将逐步下降，但30+年的资源储量和不可复制的基础设施意味着护城河在可预见的未来（10-15年）仍然牢固。
+** Next 10 years: Slow but still very wide**. Railway/port utilization will decline gradually after coal demand peaks, but 30+ years of resource reserves and non-reusable infrastructure mean that the moat will remain solid for the foreseeable future (10-15 years).
 
-### 追问：10年后这条护城河还在吗？什么能摧毁它？
+# Ask: 10 years later, is this moat still there? What can destroy it?
 
-**10年后（2036年）护城河仍在，但开始变浅**。煤炭占一次能源比重预计从53%降至~42%，需求下降10-15%。自有铁路和港口利用率下降将侵蚀运输板块利润率。
+** Ten years later (2036) the moat river is still in place, but it is beginning to shallow. The share of coal in primary energy is expected to decline from 53% to ~42%, and demand to fall by 10-15%.
 
-**最可能摧毁护城河的因素**：不是竞争对手，而是**需求本身的消失**。如果储能技术出现突破性进展（如钠离子电池成本降至0.5元/Wh以下），风光+储能可能在2035年前对煤电形成全面替代，届时整条"能源高速公路"的流量将大幅萎缩。
+** The most likely cause of destruction of the moat**: not the competitors, but the loss of demand**. If there is breakthrough in storage technology (e.g. sodium ion batteries below 0.5/Wh), windlight + storage could be a full replacement for coal power by 2035, when the flow of the entire energy highway will shrink significantly.
 
 ---
 
-## 三、逆向思考与风险清单
+# Three, reverse thinking and risk list
 
-### 失败路径全景
+# Failed path panorama
 
-| 失败路径 | 概率 | 影响程度 | 时间窗口 |
+<unk> Failed path <unk> probabilities <unk> Impact degree <unk> Time window <unk>
 |----------|------|---------|---------|
-| 煤炭消费达峰后加速下降 | 70-80% | 高 | 2028-2035 |
-| 碳价大幅上升（现~90元/吨→200+元/吨） | 40-50% | 中高 | 2028-2030 |
-| 煤价跌破长协下限（<570元/吨） | 30-40% | 中等 | 周期性 |
-| 央企改革方向偏离股东利益 | 20-30% | 中等 | 持续 |
-| 储能技术突破加速煤电替代 | 20-30% | 极高 | 2030-2040 |
-| 矿难/环保事故 | 5-10% | 中等 | 随机 |
-| ESG资金持续流出压制估值 | 50-60% | 中等 | 持续 |
-| 千亿重组标的资产质量不及预期 | 15-20% | 中等 | 2026-2028 |
+<unk> Acceleration of coal consumption after peaking 70-80%
+<unk> Large increase in carbon prices (now ~90/t$200+t/t) <unk> 40-50%
+<unk> Coal price falls below the LTA limit (< 570 ton) <unk> 30-40%
+The reform of the country is not in the direction of shareholders ' interests 20-30%
+<unk> , the storage technology breaks through the accelerated coal power replacement 20-30% <unk> , very high <unk> 2030-2040 <unk> ,
+<unk> Mine/environmental accident <unk> 5-10%
+<unk> ESG funds continue to flow to the value of the repression 50-60%
+The assets of the hundreds of millions of reorganization targets are of less quality than expected
 
-### 历史类比
+# History analogy
 
-| 类比 | 相似点 | 结局 | 对中国神华的启示 |
+The synonyms, the symmetry, the symmetry, the end, the revelation of the Chinese gods, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the revelation of the Chinese gods, the sibling, the sibling, the sibling, the sibling, the sibling, the si...
 |------|--------|------|-----------------|
-| **Peabody Energy（美国）** | 全球最大私营煤企 | 2016年破产（页岩气替代+高杠杆） | 中国神华负债率23%（vs Peabody高杠杆），且中国无页岩气大规模替代。核心区别：杠杆和替代能源进度 |
-| **日本煤电退出** | 渐进退出而非硬退出 | 2024年67%煤电不盈利，但仍在缓慢运营 | 中国更可能走日本模式——煤炭"慢衰退"而非"急死亡" |
-| **埃克森美孚** | 传统能源巨头面对能源转型 | 市值从4500亿回升至5000亿+，靠资本纪律+高分红 | 化石能源巨头通过高分红+克制扩张仍可为股东创造可观回报 |
-| **伯克希尔持有BHE（能源）** | 巴菲特长期持有传统能源资产 | 持续产生稳定现金流 | 传统能源的价值在于现金流的确定性，而非增长 |
+**Perbody Energy (United States)** The world's largest private coal company ** Bankruptcy in 2016 (shale gas replacement + high leverage) <unk> China's G-share debt ratio (vs Peabody high leverage) and China's large-scale replacement of shale gas.
+<unk> **Japan coal power exit** <unk> gradual withdrawal instead of hard withdrawal <unk> 67% coal power in 2024 is still not profitable but still operating slowly <unk> China is more likely to go Japan mode - coal "slow decline" than "surge death" <unk>
+The traditional energy giants face a transformation of energy, the market value has risen from 450 billion to 500 billion plus, with capital discipline plus high points of red.
+** Burkehill holds BHE** <unk> Buffett has long held traditional energy assets <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-### 追问：我最可能在哪里犯错？
+# Ask: Where am I most likely to make mistakes?
 
-1. **锚定于过去3年的估值重估（8x→15x PE）**，误以为还会继续重估。实际上"中特估"行情可能已大部分反映在股价中
-2. **低估煤炭衰退速度**。如果新能源+储能成本下降快于预期，2030年后煤炭需求可能出现断崖式而非线性下降
-3. **高分红≠好投资**。如果盈利持续下滑（过去3年-24%），分红绝对金额也会下降，"高股息"叙事将瓦解
+1. **Assessment of the valuation (8x5xPE)** scheduled for the last three years, mistakenly assumed that it would continue to be revalued. In fact, the "mid-estimate" process may have been largely reflected in the stock price
+2. ** Underestimating the rate of the coal recession**. If the cost of new energy + storage energy falls faster than expected, coal demand may fall off a cliff rather than a linear one after 2030.
+3. ** High score is a good investment**. If profits continue to decline (over the last three years - 24%), the absolute amount of the dividends will fall, and the narrative of "high dividends" will collapse.
 
-**聪明人为什么不买**：
-- H股外资持股从26%降至16.6%（6年降10个百分点），国际资金在系统性撤出中国煤炭
-- PE 15倍在煤炭股中偏高（中煤10x、兖矿12x、陕煤12x），溢价来自"中特估"而非基本面
-- 利润连续3年下滑（-14%、-2%、-10%），收入4年下滑，增长为负
+♪ Why don't smart people buy ♪
+- H share of foreign investment, from 26 per cent to 16.6 per cent (10 percentage points down in 6 years), and international funds are systematically withdrawing from Chinese coal
+- PE 15 times higher than coal in the coal stock (10 Chinese coal, 12 silicon, 12 silicon), premium from "medium overestimate" instead of base.
+- 3 consecutive years of decline in profits ( -14%, -2%, -10%) and 4 years of decline in income, negative growth
 
 ---
 
-## 四、管理层评估
+# IV. Management assessment
 
-### 央企治理特征
+# The character of governance in America
 
-| 维度 | 评估 |
+<unk> Dimensions <unk> Evaluation <unk>
 |------|------|
-| 管理层稳定性 | **弱**——过去10年6任董事长，平均任期不到2年。当前董事长职位空缺 |
-| 管理层持股 | **接近零**——央企限薪体制下，管理层无股权激励 |
-| 薪酬水平 | 总经理年薪~100万元，管理近6000亿资产，激励严重不足 |
-| 资本配置 | **优秀**——2016年以来资本开支占经营现金流比例从68%降至26%，多余现金全部用于分红 |
-| 分红纪律 | **极强**——分红率从40%提升至79%，上市以来累计派现超5000亿 |
-| 保供vs利润 | 央企保供优先。2022年煤价翻倍时利润仅增39%，牺牲了短期利润换长期稳定 |
+Management stability ** Weak** - 6 Directors for the last 10 years, with an average term of less than 2 years.
+* Management holdings ** Close to zero** - Management has no equity incentive under the pay-limit system
+The General Manager's annual salary ~ 1 million yuan, managing nearly 600 billion assets, and the incentive is seriously inadequate
+<unk> Capital allocation ** Excellent** - Capital expenditure as a proportion of operating cash flows from 68% to 26% since 2016, with surplus cash fully used for the distribution of dividends
+<unk> Expeditional <unk> ** Extremist ** - The red rate has risen from 40% to 79%, and since the market has accumulated over 500 billion <unk>
+The profits were only 39% higher when coal prices doubled in 2022, at the expense of short-term profits for long-term stability.
 
-### 关键决策复盘
+# Key decision-making remix
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2017年 | 与国电合并成立国能集团 | 带来同业竞争问题，8年后才通过千亿重组解决 | B（被动决策） |
-| 2016年 | 史诗级特别分红590亿 | A股涨停、H股暴涨16%，一战封神 | A+ |
-| 2020-2025年 | 分红率从40%跃升至79% | 吸引大量高股息资金，估值中枢翻倍 | A |
-| 2016-2022年 | 资本开支高度克制 | 产能稳定、现金流充沛、分红充足 | A |
-| 2025年 | 千亿重组（1336亿收购） | 解决同业竞争，资源储量+98%。但部分标的溢价764%存疑 | B+（待验证） |
-| 新能源布局 | 1.2GW风光装机，占比极小 | 务实但保守，聊胜于无 | C+（力度不足） |
+In 2017, the merger of the National Energy Group (NSG) brought about competition among practitioners, which was resolved by a multibillion-dollar reorganization eight years later.
+♪ The Episode score is 59 billion ♪
+<unk> 2020-2025 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+Capital expenditure is highly restrained.
+<unk> 2025 100 billion recomposition (acquire 13.36 billion) <unk> Addressing competition among practitioners, resource reserves + 98%. But the premium of some of the targets is doubtful 764% B+ (to be verified) <unk>
+<unk> New energy layout <unk> 1.2 GW wind-loader, very small <unk> pragmatic but conservative, better than no <unk> C+ (intensible) <unk>
 
-### 追问：如果CEO退休，这家公司还能保持竞争力吗？
+# Ask: If CEO retires, can this company remain competitive?
 
-**能**。这正是中国神华作为央企的一个隐性优势——**公司运营完全不依赖个人能力**。过去10年换了6任董事长，业绩波动主要来自煤价而非管理层更替。制度化运营体系确保了"铁打的营盘流水的兵"。
+** Can**. This is a hidden advantage of China’s conglomerate as a company ** The company does not operate on personal capacity at all. Six new directors have changed over the past 10 years, with performance fluctuations mainly from coal prices rather than management turnover. Institutionalized operating systems ensure “the soldiers of the barley camp”.
 
-但反面是：也不会有任何管理层有动力去做出伟大的战略突破（如全面转型新能源）。央企的天花板在于**不会犯大错，也不会做大对**。
+But the opposite is that there is no management incentive to make a great strategic breakthrough (e.g., a comprehensive shift in new energy). The idea of the ceiling is that ** does not make a big mistake or do a big right **.
 
 ---
 
-## 五、行业与文明趋势
+# V. Trends in industry and civilization
 
-### 范式转移判断
+# The paradigm shift judgement
 
-全球能源系统正从化石能源向可再生能源转变。**煤炭处于这一转变的"被替代"端**。
+Global energy systems are shifting from fossil to renewable energy.** Coal is at the end of this shift, "substituted"**.
 
-| 类比 | 对应 |
+The following are the main indicators of achievement:
 |------|------|
-| 马车→汽车 | 煤电→风光+储能 |
-| 煤炭 | "21世纪的马车" |
-| 中国神华 | "最好的马车公司"——即使行业衰退，龙头仍是最后倒下的 |
+♪ The car, the coal, the wind, the storage ♪
+♪ The 21st Century Cars ♪
+♪ China ♪ ♪ The best carriage company ♪ ♪ Even if the industry is falling down ♪
 
-### 关键时间表
+# Key schedule
 
-| 时间点 | 事件 | 对中国神华的影响 |
+The time, the time, the events, the influence of the Chinese gods, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the the time, the the time, the the time, the the the time, the the the time, the the the time, the the the the the the China, the the the the the China, the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the
 |--------|------|-----------------|
-| 2025年 | 全球煤炭需求达峰（IEA） | 标志性转折 |
-| 2026-2028年 | 中国煤炭消费达峰（49-51亿吨） | 增量消失 |
-| 2030年 | 碳达峰，煤炭占一次能源降至46-47% | 需求开始缓降 |
-| 2035年 | 煤电利用率降至~32%（vs当前~48%） | 发电板块承压 |
-| 2040年 | 煤炭占比降至~25% | 行业规模缩水近半 |
-| 2060年 | 碳中和，煤炭占比5-10% | 行业基本退出 |
+<unk> The peak global demand for coal (IEA)
+China's coal consumption peaked (4.9-51 billion tons)
+Carbon peaks, coal drops to 46-47% of primary energy, demand starts to slow down, demand to slow down.
+<unk> 2035 Reduction in coal power utilization to ~32% (vs currently ~48%) <unk> Power plate pressure <unk>
+The coal ratio dropped to ~25%.
+<unk> 2060 <unk> carbon neutral, coal 5-10% <unk> industry largely exited <unk>
 
-**但关键区分**：需求"达峰"≠"断崖"。中国煤炭消费预计在2026-2028年达到49-51亿吨平台期，2030年仍维持~49亿吨，2035年~42-45亿吨。**未来10年的下降斜率是温和的（年均-2%~-3%），不是灾难性的**。
+** But the key difference**: the demand is "supreme" "circumstance" of the cliff. China’s coal consumption is expected to reach 4.9-51 billion tons of platform time in 2026-2028, remaining ~4.9 billion tons in 2030 and ~42-4.5 billion tons in 2035.** The decline in the next 10 years is moderate (average - 2% - 3%) and not catastrophic**.
 
-### 追问：20年后这家公司是"标准石油"还是"3Com"？
+# Ask: 20 years later is this company "Standard Oil" or "3Com"?
 
-**既不是"标准石油"也不是"3Com"**。更像是**"21世纪的美国铁路公司"**——一个处于衰退行业但因基础设施不可替代、现金流持续充沛而长期存在的"慢衰退高分红"资产。
+** Neither standard oil nor 3Com**. More like ** "America Railways of the 21st Century"** -- a slow-down high-dimension asset that is in a recessionary industry but long-standing because of the inescapable nature of infrastructure and the continued high cash flow.
 
-20年后（2046年），中国仍会消费相当于目前30-40%的煤炭，中国神华大概率仍是最大的煤炭生产商，只是规模显著缩小。但在那之前的15-20年里，它每年能产生500-800亿的现金流，分红400-600亿。**对股东来说，赚的是"最后的收获"，而非"未来的增长"**。
+Twenty years later (2046), China will still consume 30-40% of the coal currently in use, and China’s Shinhua ratio will remain the largest coal producer, albeit on a significantly smaller scale. But, in the 15-20 years before that, it could generate a cash flow of $50-80 billion a year, with a share of $40-60 billion.
 
 ---
 
-## 六、估值与安全边际
+# VI. Valuation and security margin
 
-### 当前市场定价
+# Current market pricing
 
-| 指标 | A股（601088） | H股（1088） |
+• Indicators: <unk> A (601088) <unk> H (1088), <unk>
 |------|:------------:|:-----------:|
-| 股价 | CNY 40.66 | HKD 42.06 |
+The price of the stock is CNY 40.66.
 | PE（TTM） | **15.29x** | **~13.8x** |
 | PB | **1.89x** | ~1.8x |
-| 股息率 | **4.94%** | **~5.4%** |
+<unk> Escillation rate ** 4.94% ** <unk> ~ 5.4% ** <unk>
 | ROE | 12.37% | — |
 | FCF Yield | 3.76% | — |
-| 盈利收益率 | 6.54% | — |
+<unk> Profit rate 6.54% <unk> <unk> <unk>
 
-> 所有A股指标通过 `financial_rigor.py` 精确验算。
+> All A-unit indicators are measured accurately by `final_rigor.py ' .
 
-### PE历史区间（A股）
+# PE History Zone (Unit A)
 
-| 年份 | 平均PE | 最高PE | 最低PE |
+Year Average PE <unk> Highest PE <unk> Lowest PE <unk>
 |------|--------|--------|--------|
 | 2021 | 9.24 | 10.70 | 8.12 |
 | 2022 | 10.67 | 12.76 | 9.41 |
 | 2023 | 9.43 | 10.81 | **7.75** |
 | 2024 | 13.89 | 15.97 | 10.95 |
 | 2025 | 14.18 | 16.92 | 12.22 |
-| 当前 | — | — | **15.29** |
+**The current ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** = ** ** = ** = ** = ** ** = ** ** ** ** ** = = ** ** ** ** ** ** ** = = ** ** ** ** ** ** ** ** = = = = = = = = = = = = = = = = = = = = = = = = = = ** ** ** ** = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = \
 
-当前PE 15.29x处于近5年**94%分位**。2021-2023年均值约10倍，2024-2025年中枢上移至14倍。估值重估的驱动力是"中特估"+高股息策略资金。
+The current PE 15.29x is at a **94% split for almost five years. The average value is about 10 times in 2021-2023, and the central hub is 14 times in 2024-2025. The revaluation is driven by the "medium-special" plus high-value-equity strategy funds.
 
-### 反向DCF
+# Back to DCF
 
-当前市值8,076亿，按8%贴现率和0%永续增长率：
-- 隐含稳态净利润约**646亿**（高于当前528亿）
-- 意味着市场在定价未来利润将回升至600-650亿水平
-- 考虑千亿重组后（注入1140亿收入/~100亿利润），合并后利润可能达到600-650亿，当前股价大致合理
+The current market value of $807.6 billion is based on a discount rate of 8 per cent and a zero per cent growth rate of per cent:
+- Implicitly steady net profit of about **64.6 billion** (up from current 52.8 billion)
+- Means that the market is pricing future profits to rise to 60-65 billion.
+- Consider the sum of US$ 100 billion in reorganization (infused with $114 billion in income ~10 billion in profits), and the profit from consolidation may reach US$ 60-65 billion, with the current stock price being roughly reasonable
 
-### 三情景估值
+# Three scenarios valuation
 
-> 基于FY2025 EPS=2.66，投射3年至2029年。经工具精确验算。
+> Impact 3 to 2029 based on SY2025 EPS = 2.66.
 
-| 情景 | 年增速 | 目标PE | 2029年EPS | 目标股价 | 较现价涨跌 |
+♪ The world's greatest challenge ♪
 |------|--------|--------|-----------|---------|-----------|
-| **乐观**（重组增厚+煤价企稳） | +5% | 16x | CNY 3.08 | **CNY 49.3** | +21% |
-| **中性**（利润持平+估值回归） | 0% | 13x | CNY 2.66 | **CNY 34.6** | -15% |
-| **悲观**（煤价持续下行+碳成本上升） | -8% | 9x | CNY 2.07 | **CNY 18.6** | -54% |
+** EXPOINT ** (Reorganization thickening + stable coal prices) <unk> + 5% <unk> 16x <unk> CNY 3.08 ** CNY 49.3** <unk> 21% <unk>
+** Neutral** (Parity of profit + regression in valuation) <unk> 0%<unk> 13x CNY 2.66<unk>
+** Pessimism** (continuing downs in coal prices + rising carbon costs) <unk> - 8% <unk> 9x <unk> CNY 2.07 ** CNY 18.6** <unk> - 54% <unk>
 
-**关键洞察**：即使乐观情景，3年上行空间也仅21%（年化约7%）。加上~5%股息率，乐观总回报约年化12%。**这不是一个暴利型投资机会，而是一个"收息+温和增值"的稳健型配置**。
+** Key insight**: Even if optimistic, only 21% of the space has been up for three years (about 7% annual). Plus ~5% dividends, the overall return on optimism is about 12% annual.** This is not a profit-oriented investment opportunity, but a robust configuration of "rate-raising plus temperature and value-added".**
 
-### 同行估值对比
+# # Peer valuation comparison
 
-| 公司 | PE | PB | 股息率 | ROE |
+<unk> PE<unk> PB<unk> Escillation rate<unk> ROE<unk>
 |------|-----|-----|--------|------|
-| **中国神华** | **15.3x** | **1.89x** | **4.9%** | **12.4%** |
-| 中煤能源 | ~10x | ~1.2x | ~6% | ~12% |
-| 兖矿能源 | ~12x | ~1.4x | ~5-10% | ~12% |
-| 陕西煤业 | ~12x | ~2.0x | ~7% | ~18% |
+** China ** 15.3 x ** 1.89 x ** 4.9% ** 12.4% ** **
+~10x<unk> 1.2x<unk> 6%<unk> 12%<unk> <unk> <unk> <unk> <unk> 6%<unk> <unk> <unk> <unk> 1<unk> 1<unk> 2<unk> 2<unk> <unk> 2<unk> 2<unk> 2<unk> 4<unk> 2<unk> 2<unk> 4<unk> 2<unk> 2<unk> 2<unk> 4<unk> 2<unk> 4<unk> 2<unk> 2<unk> 4<unk> 4<unk> 2<unk> 4<unk> 4<unk> 2<unk> 4<unk> 2<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> <unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> 6<unk> <unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 6<unk> 8<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3.7<unk> 3.7%3.7%2%2%2%3.7%3.7%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%2%
+~12x<unk> 1.4x<unk> 5-10%<unk> 12%<unk> <unk>
+~12x<unk> 2.0x<unk> 7%<unk> 18%<unk> <unk> <unk> 7<unk> <unk> <unk> 7<unk> <unk> <unk> 7<unk> <unk> <unk> 7<unk> <unk> <unk> 4<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-中国神华PE显著高于同行（溢价约30-50%），溢价来源是一体化护城河和更高的盈利稳定性。但问题是：**30-50%的溢价是否已充分反映了一体化的价值？**
+China’s God Pe is significantly higher than its peers (with a premium of about 30-50%), and the premium is derived from the integrated moat and higher profitability. But the question is: **30-50% of the premium adequately reflects the value of integration?**
 
-### 关键价格区间（A股）
+# Key price compartment (A share)
 
-| 价位（CNY） | 含义 | 对应PE |
+CNY meaning
 |-------------|------|--------|
-| 48-51 | 乐观情景/52周高点 | 18-19x |
-| 40-42 | **当前价位** | 15x |
-| 34-36 | 中性情景/安全边际区 | 13x |
-| 26-30 | 极具吸引力 | 10-11x |
-| 18-20 | 悲观极端 | 7-8x |
+<unk> 48-51 <unk> optimism scenario / 52 weeks high <unk> 18-19x <unk>
+<unk> 40-42 <unk> Current price** <unk> 15x <unk>
+<unk> 34-36 <unk> Neutral scenario/safe marginal zone <unk> 13x <unk>
+<unk> 26-30 <unk> Extremely attractive <unk> 10-11 x <unk>
+18-20 pessimism extreme 7-8x <unk>
 
-### 追问：如果股市明天关闭5年，你愿意以这个价格持有吗？
+# Ask: If the stock market closes for five years tomorrow, will you hold it at this price?
 
-**谨慎地愿意，但更希望以更低的价格买入。**
+** Prudently willing, but more likely to buy at lower prices**
 
-以40.66元持有5年：
-- 每年股息约2元（假设分红率75%+利润温和增长），5年累计~10元
-- 5年后股价如果维持PE 13-15x，在33-45元区间
-- 总回报约10+(-8~+4)=2-14元，即**5-35%的5年总回报**（年化1-6%）
-- 加上股息再投资复利效果，年化总回报约**5-8%**
+For five years, at $40.66:
+- A dividends of about $2 per year (assuming a red rate of 75 per cent + moderate profit growth), accumulated over 5 years ~10 dollars
+- 5 years later, if the PE 13-15x is maintained, 33-45 won
+- Total return of approximately 10+(8+4) = 2-14, i.e. **5-35% of total 5-year return** (annual 1-6%)
+- Combined with the reinvestment of dividends, total annualized return is about 5-8%**
 
-这个回报率对于一个负增长行业的龙头来说**尚可接受但不够出色**。**如果能在CNY 34-36（PE 13x）买入，5年年化总回报可提升至8-12%，安全边际更充足。**
+This rate of return is not yet acceptable but excellent for a leader in a negative growth industry** ** If bought in CNY 34-36 (PE 13x), the total five-year annualized return could rise to 8-12%, and the security margin could be more adequate**.
 
 ---
 
-## 七、综合决策备忘录
+# VII. Memorandums for integrated decision-making
 
-### 维度汇总
+# # dimension summary
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| 生意质量 | 极佳——一体化模式带来超强盈利韧性（收入-13%利润仅-10%）、ROE>12%、负债率仅23% | 90% |
-| 护城河 | 极强——煤电路港航一体化在全球独一无二，2408公里铁路+黄骅港不可复制。但长期随需求萎缩将缓慢变浅 | 85% |
-| 管理层 | 制度化运营——资本纪律优秀（分红率79%），但央企治理存在天然局限（换帅频繁、薪酬激励不足、保供优先） | 70% |
-| 最大风险 | 煤炭需求达峰后的长期衰退（确定性高）+ 当前PE处于历史94%分位（短期估值偏高） | 80% |
-| 文明趋势 | 逆风——煤炭是能源转型的"被替代者"。但中国退煤进程将是渐进式（30-35年），非灾难性 | 85% |
-| 估值 | 中性偏高——PE 15.3x处于近5年高位，溢价于同行30-50%。乐观情景3年上行仅21% | 75% |
+<unk> Quality of business <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The coal-fired port is unique worldwide, with 2408 km of railway + yellow-collar ports unrogue. But long-term demand shrinks slowly and slowly, and the demand shrinks by 85%.
+<unk> Management <unk> Institutional operation — excellent capital discipline (79% of the rate), but natural limitations in governance (high turnover, inadequate pay incentives, priority) <unk> 70%
+Long-term recession (high certainty) after peak coal demand + current PE is at 94% in history (high short-term valuation) <unk> 80%
+The civilizational trend is the reverse wind - coal is the "substitute" of the energy transition. But the process of coal retirement in China will be gradual (30-35 years), non-disaster 85%.
+<unk> Valuation <unk> Mediumly high - PE 15.3x is at a high level of nearly five years, with a premium of 30-50% for peers.
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **等待回调至CNY 34-36区间（PE 13x）再建仓**。当前15x PE处于历史高位，安全边际不足。如果看好高股息策略，H股~42港元（PE ~14x、股息率~5.4%）比A股性价比更高 |
-| **持仓者** | **继续持有收息，但不宜加仓**。作为组合中5-10%的"防御性现金流资产"配置合理。若股价升至CNY 48+（PE 18x+），可考虑减至5%以下 |
-| **卖出信号** | （1）PE突破18x且无新催化剂支撑；（2）煤炭长协价跌破570元/吨下限持续3个月以上；（3）分红率降至60%以下；（4）碳价加速上行至150元/吨+ |
-| **加仓信号** | （1）A股回调至CNY 34-36（PE 13x），股息率回到6%+；（2）千亿重组完成且合并报表利润确认在600亿+；（3）煤价企稳回升至长协区间中枢 |
+** Empty warehouser** ** Waiting to return to CNY 34-36 (PE 13x) to re-position the warehouse**. 15 x PE is now at an all-time high and has insufficient security margins. If you look at high-interest strategies, H-42 (PE ~ 14x, dividends ~ 5.4%) is higher than A shares
+<unk> <unk> The owner of the warehouse** <unk> The collection of interest continues to be held but it is not appropriate to increase the stock. ** The configuration of the "defensible cash flow assets" as 5-10% of the portfolio is reasonable.
+<unk> **Sale signal** <unk> (1) PE breaching 18x without new catalysts; (2) COCOC down by 570/t$0 for more than three months; (3) red rate down to less than 60%; (4) carbon price acceleration up to 150 k$/t+ <unk>
+**Step **Step **(l) A shares are transferred back to CNY 34-36 (PE 13x) and dividends are returned to 6% +; (2) trillion recombinant and consolidated statements are confirmed at 60 billion + profit; (3) coal prices are steadily rising to the centre of the JCJ
 
-### 四维度模拟点评
+# 4D simulations of the evaluation
 
-> **生意质量视角**：中国神华不是一门"好生意"——它是一门"正在慢慢变差的伟大生意"。煤电路港航一体化的商业模式，即使放在全球范围内比较，也堪称大师级的产业整合。问题是：这条"能源高速公路"上的车流量未来30年将持续减少。买中国神华，买的不是增长，而是在行业衰退过程中，龙头最后一批收割残余利润的权利。
+> ** Quality of Business **: China’s God is not a good business – it is a great business that is slowly becoming worse. The integrated business model of coal circuit shipping, even if compared globally, is a master-class industry. The problem is that traffic on this energy highway will continue to decline over the next 30 years.
 
-> **逆向思维视角**：市场最容易犯的错误是把"不会死"等同于"值得买"。中国神华30年内不会倒闭，这一点几乎确定。但"不倒闭"和"好投资"之间隔着一个"估值"。PE从8倍涨到15倍，这轮重估的核心驱动（"中特估"+高股息策略）还有多少空间？如果PE回归12-13倍——这在煤炭股中已经是溢价——当前价格就有15-20%的下行风险。
+> ** Inverse thinking perspective**: The most easy mistake in the market is to equate "not dead" with "not worth buying." China 's gods will not fail for 30 years, which is almost certain. But there is a "value" between "not closed" and "good investment." PEs rise from eight to 15 times, and how much room is left for the core driver of this revaluation ("medium overestimate" + high dividends strategy? If the PE returns 12 to 13 times -- which is already a premium on coal stocks -- there is a downside risk of 15 to 20% of the current price.
 
-> **管理层视角**：对央企管理层不必有过高期待，也不必过于悲观。他们不会做出疯狂的并购或冒险的转型，但也不会主动损害股东利益——至少在分红这件事上，中国神华的管理层做到了A股最优。上市以来累计分红超5000亿元，是累计融资额的7.2倍。这个数字在整个A股市场都是罕见的。
+> ** Management perspective**: There is no need for over-exploitation or pessimism on the part of the management of the company. They do not make a crazy merger or a risky transition, but they do not actively harm shareholders' interests - at least in the case of the dividends, the management of the Chinese god has achieved the best A share. The cumulative red mark since the market has been over $500 billion, 7.2 times the amount of the accumulated financing. This figure is rare throughout the A-stock market.
 
-> **文明趋势视角**：从20年、30年的维度看，煤炭行业的衰退是不可逆的文明级趋势。但"不可逆"不等于"很快"。中国2025年仍新增78GW煤电（十年新高），说明现实比叙事慢得多。中国神华在未来15年仍将是中国能源体系不可或缺的一部分。投资者要回答的问题不是"煤炭会不会衰退"（答案是确定的），而是"在衰退到来之前，你能以什么价格买到多少年的现金流"。
+> ** Civilization trend perspective**: The decline in the coal industry is an irreversible trend of civilization in 20 and 30 years. But "insolvency" is not a "quick" trend. China 's new 78GW coal power in 2025 (a decade of new height) indicates that reality is much slower than in the narrative. China ' s God will remain an indispensable part of China ' s energy system for the next 15 years. The question to be answered by investors is not whether coal will decline (the answer is yes) but "how much cash flow can you buy until the recession comes."
 
 ---
 
-## 附录：AI分析置信度 vs 投资确定性
+# Appendix: AI Analytic Confidence vs Investment Validity
 
-| 结论 | AI分析置信度 | 投资确定性 | 说明 |
+<unk> Conclusion <unk> AI analysis of confidence <unk> Investment certainty <unk>
 |------|------------|-----------|------|
-| 一体化护城河极强 | **高（95%）** | **高（90%）** | 2408公里铁路、黄骅港等硬资产数据确凿 |
-| 分红率维持70%+ | **高（90%）** | **高（85%）** | 公司承诺65%下限，历史兑现度极高 |
-| 煤炭需求2026-2028年达峰 | **高（85%）** | **中高（80%）** | 多机构预测一致，但具体峰值年份有1-2年不确定性 |
-| 千亿重组后利润增厚至600亿+ | **中高（75%）** | **中（65%）** | 标的资产质量和整合效果需时间验证 |
-| 当前PE 15x处于合理偏高 | **高（85%）** | **中高（75%）** | 历史数据确凿，但"中特估"是否构成永久性估值重估存在分歧 |
-| 2035年后煤炭行业大幅萎缩 | **中高（75%）** | **中（60%）** | 储能技术进步和政策执行力度是关键不确定变量 |
-| 长期持有年化回报5-8% | **中（65%）** | **中（55%）** | 高度依赖买入价格和分红再投资假设 |
+<unk> Integrated moats are extremely strong <unk> high (95%) ** high (90%) ** hard assets such as 2408 km of railways, yellow port <unk>
+<unk> 70% <unk> High (90%) ** High (85%) ** Company commitment 65% lower, history is extremely high <unk>
+<unk> Coal demand peaked in 2026-2028 <unk> high (85%) ** medium (80%) ** multi-agency forecasts are consistent, but there is uncertainty for a specific peak year 1-2 years <unk>
+<unk> 100 billion re-organisations with profits up to 60 billion + <unk> medium (75%) ** medium (65%) ** target asset quality and integration results need time to be validated <unk>
+<unk> Current PE 15x is reasonably high <unk> high (85%) <unk> medium (75%) ** historical data are valid, but there is a disagreement as to whether the "medium evaluation" constitutes a permanent revaluation
+The coal industry contracted significantly after 2035 <unk> medium (75%) ** medium (60%) ** storage energy technological advances and policy implementation are key uncertainties <unk>
+<unk> Long-term annualized return 5-8% <unk> medium (65%) ** medium (55%) <unk> high reliance on purchase prices and red reinvestment assumptions <unk>
 
-**核心区分**：
-- 本报告对中国神华的护城河、分红政策、行业格局的判断基于充分数据，置信度高
-- 最大的不确定性来自**能源转型的速度**和**"中特估"估值重估的持续性**——前者决定了10年后的盈利水平，后者决定了短期的估值水位
-- **当前A股40.66元的价格定价了乐观但非极端的预期**：如果投资者对"中特估"持续性和千亿重组增厚有信心，当前价格可持有；如果追求更高安全边际，建议等待PE回到13倍（约CNY 34-36）
+** Core distinction**:
+- The findings in this report on the moat of China, the red divide policy and the industry pattern are based on sufficient data and high confidence
+- The greatest uncertainties are due to the **velocity of energy transformation** and **continuity of the "mid-estimate" valuation** - the former determines the level of profitability after 10 years, the latter determines the level of water to be valued in the short term
+- ** Current A share of $40.66 price pricing is optimistic but not extreme **: if investors have confidence in the "medium overestimate" sustainability and the hundreds of millions of restructurings, current prices can be held; if higher security margins are pursued, it is recommended that the PE be returned to 13 times (approximately CNY 34-36)
 
 ---
 
-*报告生成时间：2026年6月23日 | 数据截止：2026年6月23日*
-*货币单位：人民币（CNY），港币标注为HKD*
-*数据来源：中国神华年报/中报/季报、国海/国联民生/东吴证券研报、IEA Coal 2025、中国煤炭工业协会、国家统计局、国家能源局、中电联、Investing.com、亿牛网、证券时报、东方财富等*
+*Report generated: 23 June 2026
+* Monetary unit: renminbi (CNY), indicated as HKD*
+*Source: China Annual/Ninhua Bulletin/Ni-Hu-Hu-Hu/ Dong-Wu Securities Researcher, IEA Coal 2025, China Coal Industry Association, National Statistical Office, National Energy Agency, China-Turkish Union, Investment.com, Billion Cow Network, Securities Times, Eastern Wealth, etc.*

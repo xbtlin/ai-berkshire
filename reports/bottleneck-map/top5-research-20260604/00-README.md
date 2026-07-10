@@ -1,18 +1,18 @@
-# 供应链瓶颈 Top 5 标的深度研究
+# In-depth research on the Top 5 targets of supply chain bottlenecks
 
-> 研究日期：2026年6月4日
-> 五份报告并行研究，覆盖瓶颈逻辑、财务数据、竞争格局、估值、催化剂、风险
+> Study date: June 4, 2026
+> Parallel research in five reports, covering bottleneck logic, financial data, competitive landscape, valuation, catalysts, risks
 
-| 序号 | 标的 | 代码 | 评级 | 核心结论 |
+| Serial number | Target | Code | Rating | Core conclusion |
 |------|------|------|------|----------|
-| 1 | Chemring Group | CHG.L | 买入（逢回调） | 估值最便宜（P/S 2.6x），NATO唯一NC供应商，净利+36%利润拐点确认，目标580-650p |
-| 2 | Kanto Denka | 4047.T | 观望等回调 | 日本唯一NF3供应商，FY2027指引+45%，但股价已涨294%严重高估，入场价¥1,350-1,610 |
-| 3 | Almonty Industries | TSX:AII | 有条件观望 | 钨+钼矿双轮驱动，6月四重催化剂，但从未盈利，trailing P/S 159x，入场价US$12-16 |
-| 4 | Nittobo | 3110.T | 回避等回调 | T-glass绝对垄断但估值红灯（经常性P/E 103x），入场价¥7,700-10,500（拆后¥1,540-2,100） |
-| 5 | Centrus Energy | LEU | 观望等催化剂 | 美国唯一HALEU生产商，8年垄断窗口，但P/E 62x，Option 1b（6/30到期）是Binary事件 |
+| 1 | Chemring Group | CHG.L | Buy (on correction) | Cheapest valuation (P/S 2.6x), NATO’s only NC supplier, net profit +36% profit turning point confirmed, target 580-650p |
+| 2 | Kanto Denka | 4047.T | Waiting and waiting for a correction | Japan’s only NF3 supplier, FY2027 guidance +45%, but the stock price has risen 294% and is seriously overvalued, the entry price is ¥1,350-1,610 |
+| 3 | Almonty Industries | TSX:AII | Conditionally wait and see | Tungsten + molybdenum ore two-wheel drive, quadruple catalysts in June, but never profitable, trailing P/S 159x, entry price US$12-16 |
+| 4 | Nittobo | 3110.T | Avoiding corrections | T-glass has an absolute monopoly but a red light on valuation (recurring P/E 103x), entry price ¥7,700-10,500 (¥1,540-2,100 after split) |
+| 5 | Centrus Energy | LEU | Waiting and waiting for catalysts | The only HALEU producer in the United States, 8-year monopoly window, but P/E 62x, Option 1b (expires on 6/30) is a Binary event |
 
-## 整体结论
+## Overall conclusion
 
-5个标的的瓶颈逻辑都很扎实，但只有Chemring在估值上提供了安全边际（P/S 2.6x，分析师全部Buy）。其余4个要么已经涨飞了（Kanto Denka +294%、Nittobo高估70-135%），要么估值全部建立在未来兑现上（Almonty从未盈利、Centrus P/E 62x）。
+The bottleneck logic of the five targets is all solid, but only Chemring provides a margin of safety in valuation (P/S 2.6x, all analysts buy). The remaining four have either skyrocketed (Kanto Denka +294%, Nittobo overvalued by 70-135%), or their valuations are all based on future realization (Almonty has never been profitable, Centrus P/E 62x).
 
-瓶颈是真的，但好公司不等于好投资——价格必须合理。
+The bottleneck is real, but a good company does not equal a good investment – the price has to be right.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-从 Morningstar 筛选器 API 抓取所有有公允价值估计的股票，
-计算潜在涨幅，输出 Top 100。
+Fetch all stocks with fair value estimates from the Morningstar Screener API,
+Calculate the potential increase and output Top 100.
 """
 
 import json
@@ -46,21 +46,21 @@ def extract_ticker(tenforeid: str) -> str:
 
 def main():
     print(f"\n{'='*80}")
-    print(f"  Morningstar 公允价值筛选  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f" Morningstar Fair Value Filter {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print(f"{'='*80}\n")
 
-    # 第一页获取总数
-    print("  正在获取第 1 页...")
+    # Get the total number on the first page
+    print("Getting page 1...")
     data = fetch_page(1)
     total = data.get("total", 0)
     all_rows = data.get("rows", [])
     total_pages = (total + PAGE_SIZE - 1) // PAGE_SIZE
-    print(f"  共 {total} 只股票，{total_pages} 页\n")
+    print(f" Total {total} stocks, {total_pages} pages\n")
 
-    # 抓取剩余页
+    # Fetch remaining pages
     for page in range(2, total_pages + 1):
         if page % 10 == 0 or page == total_pages:
-            print(f"  正在获取第 {page}/{total_pages} 页...")
+            print(f"Getting page {page}/{total_pages}...")
         try:
             data = fetch_page(page)
             rows = data.get("rows", [])
@@ -69,12 +69,12 @@ def main():
             all_rows.extend(rows)
             time.sleep(0.3)
         except Exception as e:
-            print(f"  ⚠️  第 {page} 页失败: {e}")
+            print(f" ⚠️ Page {page} failed: {e}")
             time.sleep(1)
 
-    print(f"\n  共获取 {len(all_rows)} 条记录")
+    print(f"\n A total of {len(all_rows)} records obtained")
 
-    # 计算潜在涨幅
+    # Calculate potential increase
     stocks = []
     for row in all_rows:
         fair_value = row.get("FairValueEstimate")
@@ -98,14 +98,14 @@ def main():
             "industry": row.get("IndustryName", ""),
         })
 
-    # 按潜在涨幅排序
+    # Sort by potential increase
     stocks.sort(key=lambda x: x["upside_pct"], reverse=True)
 
-    # 输出 Top 100
+    # Output Top 100
     print(f"\n{'='*80}")
-    print(f"  潜在涨幅 Top 100")
+    print(f" Potential increase Top 100")
     print(f"{'='*80}\n")
-    print(f"  {'排名':>4} {'代码':<8} {'公司名':<35} {'现价':>10} {'公允价值':>10} {'潜在涨幅':>8} {'星级':>4} {'护城河':<8} {'行业':<20}")
+    print(f" {'rank':>4} {'code':<8} {'company name':<35} {'current price':>10} {'fair value':>10} {'potential increase':>8} {'star':>4} {'moat':<8} {'industry':<20}")
     print(f"  {'-'*4} {'-'*8} {'-'*35} {'-'*10} {'-'*10} {'-'*8} {'-'*4} {'-'*8} {'-'*20}")
 
     for i, s in enumerate(stocks[:100], 1):
@@ -117,7 +117,7 @@ def main():
             f"{s['moat']:<8} {s['industry'][:20]:<20}"
         )
 
-    # 保存完整数据到 CSV
+    # Save complete data to CSV
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     today = datetime.now().strftime("%Y%m%d")
     csv_path = os.path.join(OUTPUT_DIR, f"morningstar_fair_value_{today}.csv")
@@ -131,21 +131,21 @@ def main():
         for i, s in enumerate(stocks, 1):
             writer.writerow({"rank": i, **s})
 
-    print(f"\n  完整数据已保存到: {csv_path}")
-    print(f"  共 {len(stocks)} 只股票（按潜在涨幅排序）\n")
+    print(f"\n The complete data has been saved to: {csv_path}")
+    print(f" {len(stocks)} stocks in total (sorted by potential gain)\n")
 
-    # 统计摘要
+    # Statistical summary
     undervalued = [s for s in stocks if s["upside_pct"] > 0]
     overvalued = [s for s in stocks if s["upside_pct"] < 0]
-    print(f"  📊 统计摘要:")
-    print(f"     低估股票: {len(undervalued)} 只 ({len(undervalued)/len(stocks)*100:.0f}%)")
-    print(f"     高估股票: {len(overvalued)} 只 ({len(overvalued)/len(stocks)*100:.0f}%)")
+    print(f" 📊 Statistical summary:")
+    print(f" Undervalued stocks: {len(undervalued)} only ({len(undervalued)/len(stocks)*100:.0f}%)")
+    print(f" Overvalued stocks: {len(overvalued)} only ({len(overvalued)/len(stocks)*100:.0f}%)")
     if undervalued:
         avg_upside = sum(s["upside_pct"] for s in undervalued) / len(undervalued)
-        print(f"     低估股票平均潜在涨幅: +{avg_upside:.1f}%")
+        print(f" Average potential upside of undervalued stocks: +{avg_upside:.1f}%")
     if stocks:
         wide_moat_undervalued = [s for s in stocks if s["moat"] == "Wide" and s["upside_pct"] > 0]
-        print(f"     宽护城河+低估: {len(wide_moat_undervalued)} 只")
+        print(f" wide moat + undervalued: {len(wide_moat_undervalued)} only")
 
 
 if __name__ == "__main__":

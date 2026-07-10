@@ -1,31 +1,31 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-雪球通用爬虫：遍历指定用户的完整时间线，按关键词筛选本人原发言。
+\u96ea\u7403\u901a\u7528\u722c\u866b：\u904d\u5386\u6307\u5b9a\u7528\u6237\u7684\u5b8c\u6574\u65f6\u95f4\u7ebf，\u6309\u5173\u952e\u8bcd\u7b5b\u9009\u672c\u4eba\u539f\u53d1\u8a00。
 
-特性：
-  - Playwright 登录态复用：首次 headful 手动登录，state 持久化到本地
-  - 双通道 fetch：优先页面内 JS fetch，失败回退 context.request（APIRequestContext）
-  - 断点续爬：每 10 页保存进度；中断后再运行自动从上次位置继续
-  - 反限流：2-4s 随机抖动 + 每 50 页长休 30s + 连续 5 次超时自动退出保进度
-  - 纯转发过滤：只收录被采集用户自己写的内容（text 非空、非"转发微博"）
+\u7279\u6027：
+  - Playwright \u767b\u5f55\u6001\u590d\u7528：\u9996\u6b21 headful \u624b\u52a8\u767b\u5f55，state \u6301\u4e45\u5316\u5230\u672c\u5730
+  - \u53cc\u901a\u9053 fetch：\u4f18\u5148\u9875\u9762\u5185 JS fetch，\u5931\u8d25\u56de\u9000 context.request（APIRequestContext）
+  - \u65ad\u70b9\u7eed\u722c：\u6bcf 10 \u9875\u4fdd\u5b58\u8fdb\u5ea6；\u4e2d\u65ad\u540e\u518d\u8fd0\u884c\u81ea\u52a8\u4ece\u4e0a\u6b21\u4f4d\u7f6e\u7ee7\u7eed
+  - \u53cd\u9650\u6d41：2-4s \u968f\u673a\u6296\u52a8 + \u6bcf 50 \u9875\u957f\u4f11 30s + \u8fde\u7eed 5 \u6b21\u8d85\u65f6\u81ea\u52a8\u9000\u51fa\u4fdd\u8fdb\u5ea6
+  - \u7eaf\u8f6c\u53d1\u8fc7\u6ee4：\u53ea\u6536\u5f55\u88ab\u91c7\u96c6\u7528\u6237\u81ea\u5df1\u5199\u7684\u5185\u5bb9（text \u975e\u7a7a、\u975e"\u8f6c\u53d1\u5fae\u535a"）
 
-凭据通过环境变量传入，**不进入代码仓库**：
+\u51ed\u636e\u901a\u8fc7\u73af\u5883\u53d8\u91cf\u4f20\u5165，**\u4e0d\u8fdb\u5165\u4ee3\u7801\u4ed3\u5e93**：
   export XQ_PHONE=13xxxxxxxxx
   export XQ_PASSWORD=xxx
-也可不设，首次运行会弹出 headful 浏览器让你手动登录（扫码/短信/密码随意）。
+\u4e5f\u53ef\u4e0d\u8bbe，\u9996\u6b21\u8fd0\u884c\u4f1a\u5f39\u51fa headful \u6d4f\u89c8\u5668\u8ba9\u4f60\u624b\u52a8\u767b\u5f55（\u626b\u7801/\u77ed\u4fe1/\u5bc6\u7801\u968f\u610f）。
 
-用法示例：
-  # 段永平关于拼多多
+\u7528\u6cd5\u793a\u4f8b：
+  # \u6bb5\u6c38\u5e73\u5173\u4e8e\u62fc\u591a\u591a
   python3 xueqiu_scraper.py \\
       --user-id 1247347556 \\
-      --keywords 拼多多,PDD,Temu,黄峥 \\
-      --output ../reports/拼多多/段永平雪球发言-PDD相关.md
+      --keywords \u62fc\u591a\u591a,PDD,Temu,\u9ec4\u5ce5 \\
+      --output ../reports/\u62fc\u591a\u591a/\u6bb5\u6c38\u5e73\u96ea\u7403\u53d1\u8a00-PDD\u76f8\u5173.md
 
-  # 其他用户 + 其他关键词
-  python3 xueqiu_scraper.py --user-id 6784593966 --keywords 茅台 --output /tmp/out.md
+  # \u5176\u4ed6\u7528\u6237 + \u5176\u4ed6\u5173\u952e\u8bcd
+  python3 xueqiu_scraper.py --user-id 6784593966 --keywords \u8305\u53f0 --output /tmp/out.md
 
-登录态缓存默认 /tmp/xueqiu_state.json，可用 --state-path 覆盖。
+\u767b\u5f55\u6001\u7f13\u5b58\u9ed8\u8ba4 /tmp/xueqiu_state.json，\u53ef\u7528 --state-path \u8986\u76d6。
 """
 
 import argparse
@@ -60,7 +60,7 @@ def clean(s):
 
 
 async def browser_fetch_json(page, url, timeout_s=15):
-    """优先页面 JS fetch；失败回退到 context.request。"""
+    """\u4f18\u5148\u9875\u9762 JS fetch；\u5931\u8d25\u56de\u9000\u5230 context.request。"""
     js = f"""
         async () => {{
             const ctl = new AbortController();
@@ -110,11 +110,11 @@ async def verify_login(page, user_id):
 
 async def interactive_login(pw, state_path, user_id):
     phone = os.environ.get('XQ_PHONE', '')
-    print("\n[需要登录] 将打开 headful 浏览器，请在其中完成雪球登录")
+    print("\n[\u9700\u8981\u767b\u5f55] \u5c06\u6253\u5f00 headful \u6d4f\u89c8\u5668，\u8bf7\u5728\u5176\u4e2d\u5b8c\u6210\u96ea\u7403\u767b\u5f55")
     if phone:
-        print(f"        环境变量 XQ_PHONE = {phone}   （密码用 XQ_PASSWORD）")
+        print(f"        \u73af\u5883\u53d8\u91cf XQ_PHONE = {phone}   （\u5bc6\u7801\u7528 XQ_PASSWORD）")
     else:
-        print("        未设 XQ_PHONE/XQ_PASSWORD，请在浏览器中手动扫码或输入登录信息")
+        print("        \u672a\u8bbe XQ_PHONE/XQ_PASSWORD，\u8bf7\u5728\u6d4f\u89c8\u5668\u4e2d\u624b\u52a8\u626b\u7801\u6216\u8f93\u5165\u767b\u5f55\u4fe1\u606f")
     browser = await pw.chromium.launch(
         headless=False,
         args=['--disable-blink-features=AutomationControlled'],
@@ -129,25 +129,25 @@ async def interactive_login(pw, state_path, user_id):
     )
     page = await context.new_page()
     await page.goto('https://xueqiu.com/', wait_until='domcontentloaded')
-    print(">>> 请在浏览器内完成登录；脚本每 5s 轮询，检测成功自动继续（最长 10 分钟）")
+    print(">>> \u8bf7\u5728\u6d4f\u89c8\u5668\u5185\u5b8c\u6210\u767b\u5f55；\u811a\u672c\u6bcf 5s \u8f6e\u8be2，\u68c0\u6d4b\u6210\u529f\u81ea\u52a8\u7ee7\u7eed（\u6700\u957f 10 \u5206\u949f）")
     ok = False
     for i in range(120):
         await asyncio.sleep(5)
         try:
             if await verify_login(page, user_id):
                 ok = True
-                print(f"  ✓ 登录成功（第 {i+1} 次轮询）")
+                print(f"  ✓ \u767b\u5f55\u6210\u529f（\u7b2c {i+1} \u6b21\u8f6e\u8be2）")
                 break
         except Exception as e:
-            print(f"  轮询异常(忽略): {e}")
+            print(f"  \u8f6e\u8be2\u5f02\u5e38(\u5ffd\u7565): {e}")
         if (i + 1) % 6 == 0:
-            print(f"  ...仍在等待登录（已等 {(i+1)*5}s）")
+            print(f"  ...\u4ecd\u5728\u7b49\u5f85\u767b\u5f55（\u5df2\u7b49 {(i+1)*5}s）")
     if not ok:
-        print("10 分钟内未检测到登录，退出")
+        print("10 \u5206\u949f\u5185\u672a\u68c0\u6d4b\u5230\u767b\u5f55，\u9000\u51fa")
         await browser.close()
         return None
     await context.storage_state(path=state_path)
-    print(f"登录态已保存 → {state_path}")
+    print(f"\u767b\u5f55\u6001\u5df2\u4fdd\u5b58 → {state_path}")
     return browser, context, page
 
 
@@ -175,7 +175,7 @@ async def load_with_state(pw, state_path, user_id):
             loaded = True
             break
         except Exception as e:
-            print(f"  首页加载失败(第{attempt+1}次): {e}")
+            print(f"  \u9996\u9875\u52a0\u8f7d\u5931\u8d25(\u7b2c{attempt+1}\u6b21): {e}")
             await asyncio.sleep(5)
     if not loaded:
         try:
@@ -184,35 +184,35 @@ async def load_with_state(pw, state_path, user_id):
             pass
     await asyncio.sleep(2)
     if await verify_login(page, user_id):
-        print("✓ 已复用保存的登录态")
+        print("✓ \u5df2\u590d\u7528\u4fdd\u5b58\u7684\u767b\u5f55\u6001")
         return browser, context, page
-    print("已保存的 state 已过期")
+    print("\u5df2\u4fdd\u5b58\u7684 state \u5df2\u8fc7\u671f")
     await browser.close()
     return None
 
 
 async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_path=''):
     collected = {}
-    # all_posts：保存该用户所有原发言（不按关键词过滤），供离线多主题分析
+    # all_posts：\u4fdd\u5b58\u8be5\u7528\u6237\u6240\u6709\u539f\u53d1\u8a00（\u4e0d\u6309\u5173\u952e\u8bcd\u8fc7\u6ee4），\u4f9b\u79bb\u7ebf\u591a\u4e3b\u9898\u5206\u6790
     all_posts = {}
     if dump_all_path and os.path.exists(dump_all_path):
         try:
             for e in json.load(open(dump_all_path)):
                 all_posts[e['id']] = e
-            print(f"  ↪ 载入已有全量缓存：{len(all_posts)} 条")
+            print(f"  ↪ \u8f7d\u5165\u5df2\u6709\u5168\u91cf\u7f13\u5b58：{len(all_posts)} \u6761")
         except Exception as e:
-            print(f"  全量缓存读取失败: {e}")
-    print("\n=== 遍历全量时间线 ===")
+            print(f"  \u5168\u91cf\u7f13\u5b58\u8bfb\u53d6\u5931\u8d25: {e}")
+    print("\n=== \u904d\u5386\u5168\u91cf\u65f6\u95f4\u7ebf ===")
     data = await browser_fetch_json(
         page,
         f'https://xueqiu.com/v4/statuses/user_timeline.json?user_id={user_id}&page=1&count=20'
     )
     if not data or data.get('error_code'):
-        print(f"  第1页失败: {data}")
+        print(f"  \u7b2c1\u9875\u5931\u8d25: {data}")
         return collected
     max_page = data.get('maxPage', 600)
     total = data.get('total', '?')
-    print(f"  用户ID: {user_id} | 总帖子数: {total} | 总页数: {max_page}")
+    print(f"  \u7528\u6237ID: {user_id} | \u603b\u5e16\u5b50\u6570: {total} | \u603b\u9875\u6570: {max_page}")
 
     total_posts = 0
     found = 0
@@ -226,7 +226,7 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_pa
             rt = post.get('retweeted_status') or {}
             rt_text = clean(rt.get('text', ''))
             own_text = (text or '').strip()
-            if own_text in ('', '转发微博', '轉發微博', 'Repost'):
+            if own_text in ('', '\u8f6c\u53d1\u5fae\u535a', '\u8f49\u767c\u5fae\u535a', 'Repost'):
                 continue
             pid = str(post.get('id', ''))
             date = parse_ts(post.get('created_at', 0))
@@ -235,10 +235,10 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_pa
             if rt:
                 rt_user = (rt.get('user') or {}).get('screen_name', '')
                 entry['retweet_of'] = f'@{rt_user}: {rt_text}'
-            # 全量缓存（不过滤）
+            # \u5168\u91cf\u7f13\u5b58（\u4e0d\u8fc7\u6ee4）
             if dump_all_path and pid not in all_posts:
                 all_posts[pid] = entry
-            # 按关键词过滤收集
+            # \u6309\u5173\u952e\u8bcd\u8fc7\u6ee4\u6536\u96c6
             if keywords and is_match(title + ' ' + own_text, keywords):
                 if pid not in collected:
                     collected[pid] = entry
@@ -256,9 +256,9 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_pa
             for e in prev.get('collected', []):
                 collected[e['id']] = e
                 found += 1
-            print(f"  ↪ 续爬：从第 {start_page} 页开始，已有 {found} 条")
+            print(f"  ↪ \u7eed\u722c：\u4ece\u7b2c {start_page} \u9875\u5f00\u59cb，\u5df2\u6709 {found} \u6761")
         except Exception as e:
-            print(f"  进度文件读取失败: {e}")
+            print(f"  \u8fdb\u5ea6\u6587\u4ef6\u8bfb\u53d6\u5931\u8d25: {e}")
 
     def save_progress(next_page):
         with open(progress_path, 'w', encoding='utf-8') as f:
@@ -277,34 +277,34 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_pa
                 timeout_s=15,
             )
         except Exception as e:
-            print(f"  第{p}页异常: {e}")
+            print(f"  \u7b2c{p}\u9875\u5f02\u5e38: {e}")
             data = None
         if not data:
             consec_fail += 1
-            print(f"  第{p}页无响应/超时（连续 {consec_fail} 次）")
+            print(f"  \u7b2c{p}\u9875\u65e0\u54cd\u5e94/\u8d85\u65f6（\u8fde\u7eed {consec_fail} \u6b21）")
             if consec_fail >= 5:
-                print("  连续失败 5 次，保存进度并退出（再次运行自动续爬）")
+                print("  \u8fde\u7eed\u5931\u8d25 5 \u6b21，\u4fdd\u5b58\u8fdb\u5ea6\u5e76\u9000\u51fa（\u518d\u6b21\u8fd0\u884c\u81ea\u52a8\u7eed\u722c）")
                 save_progress(p)
                 break
             await asyncio.sleep(5 * consec_fail)
             continue
         consec_fail = 0
         if data.get('error_code'):
-            print(f"  第{p}页错误: {data.get('error_code')} {data.get('error_description')}")
+            print(f"  \u7b2c{p}\u9875\u9519\u8bef: {data.get('error_code')} {data.get('error_description')}")
             save_progress(p)
             break
         statuses = data.get('statuses', [])
         if not statuses:
-            print(f"  第{p}页空，结束")
+            print(f"  \u7b2c{p}\u9875\u7a7a，\u7ed3\u675f")
             break
         prev_found = found
         process(data)
         if p % 10 == 0 or found > prev_found:
-            print(f"  第{p}/{max_page}页 | 已扫 {total_posts} 条 | 命中 {found}")
+            print(f"  \u7b2c{p}/{max_page}\u9875 | \u5df2\u626b {total_posts} \u6761 | \u547d\u4e2d {found}")
         if p % 10 == 0:
             save_progress(p + 1)
         if p % 50 == 0:
-            print(f"  ⏸ 第{p}页后休息 30s")
+            print(f"  ⏸ \u7b2c{p}\u9875\u540e\u4f11\u606f 30s")
             await asyncio.sleep(30)
         else:
             await asyncio.sleep(random.uniform(2.0, 4.0))
@@ -312,25 +312,25 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_pa
         if os.path.exists(progress_path):
             os.remove(progress_path)
 
-    # 最后一次落盘全量缓存
+    # \u6700\u540e\u4e00\u6b21\u843d\u76d8\u5168\u91cf\u7f13\u5b58
     if dump_all_path:
         with open(dump_all_path, 'w', encoding='utf-8') as f:
             json.dump(list(all_posts.values()), f, ensure_ascii=False)
-        print(f"  全量缓存 → {dump_all_path}（{len(all_posts)} 条）")
-    print(f"\n完成：扫描 {total_posts} 条，命中 {found} 条")
+        print(f"  \u5168\u91cf\u7f13\u5b58 → {dump_all_path}（{len(all_posts)} \u6761）")
+    print(f"\n\u5b8c\u6210：\u626b\u63cf {total_posts} \u6761，\u547d\u4e2d {found} \u6761")
     return collected
 
 
 def format_md(collected, user_id, keywords):
     posts = sorted(collected.values(), key=lambda x: x.get('date', ''))
     lines = [
-        f"# 雪球发言整理：用户 {user_id}",
+        f"# \u96ea\u7403\u53d1\u8a00\u6574\u7406：\u7528\u6237 {user_id}",
         "",
-        f"> **信息来源**：雪球 https://xueqiu.com/u/{user_id}",
-        f"> **整理时间**：{datetime.now().strftime('%Y-%m-%d')}",
-        f"> **收录条数**：{len(posts)} 条",
-        f"> **关键词筛选**：{', '.join(keywords)}",
-        f"> **采集方式**：Playwright 登录态 + user_timeline.json 全量遍历（仅本人原发言）",
+        f"> **\u4fe1\u606f\u6765\u6e90**：\u96ea\u7403 https://xueqiu.com/u/{user_id}",
+        f"> **\u6574\u7406\u65f6\u95f4**：{datetime.now().strftime('%Y-%m-%d')}",
+        f"> **\u6536\u5f55\u6761\u6570**：{len(posts)} \u6761",
+        f"> **\u5173\u952e\u8bcd\u7b5b\u9009**：{', '.join(keywords)}",
+        f"> **\u91c7\u96c6\u65b9\u5f0f**：Playwright \u767b\u5f55\u6001 + user_timeline.json \u5168\u91cf\u904d\u5386（\u4ec5\u672c\u4eba\u539f\u53d1\u8a00）",
         "",
         "---",
         "",
@@ -341,27 +341,27 @@ def format_md(collected, user_id, keywords):
         if p.get('title'):
             lines += [f"**【{p['title']}】**", ""]
         if p.get('retweet_of'):
-            lines += [f"> 转发原文：{p['retweet_of']}", ""]
+            lines += [f"> \u8f6c\u53d1\u539f\u6587：{p['retweet_of']}", ""]
         if p.get('text'):
             lines.append(p['text'])
             lines.append("")
-        lines += [f"来源：{p.get('url','')}", "", "---", ""]
+        lines += [f"\u6765\u6e90：{p.get('url','')}", "", "---", ""]
     return '\n'.join(lines)
 
 
 def parse_args():
-    ap = argparse.ArgumentParser(description="雪球用户时间线爬虫（按关键词筛选本人原发言）")
-    ap.add_argument('--user-id', type=int, help='雪球用户ID（主页URL数字段）')
+    ap = argparse.ArgumentParser(description="\u96ea\u7403\u7528\u6237\u65f6\u95f4\u7ebf\u722c\u866b（\u6309\u5173\u952e\u8bcd\u7b5b\u9009\u672c\u4eba\u539f\u53d1\u8a00）")
+    ap.add_argument('--user-id', type=int, help='\u96ea\u7403\u7528\u6237ID（\u4e3b\u9875URL\u6570\u5b57\u6bb5）')
     ap.add_argument('--keywords', type=str, default='',
-                    help='关键词列表，逗号分隔。例：拼多多,PDD,黄峥,Temu')
-    ap.add_argument('--output', type=str, default='', help='markdown 输出路径')
-    ap.add_argument('--raw-json', type=str, default='', help='（可选）命中条目原始 JSON 输出路径')
+                    help='\u5173\u952e\u8bcd\u5217\u8868，\u9017\u53f7\u5206\u9694。\u4f8b：\u62fc\u591a\u591a,PDD,\u9ec4\u5ce5,Temu')
+    ap.add_argument('--output', type=str, default='', help='markdown \u8f93\u51fa\u8def\u5f84')
+    ap.add_argument('--raw-json', type=str, default='', help='（\u53ef\u9009）\u547d\u4e2d\u6761\u76ee\u539f\u59cb JSON \u8f93\u51fa\u8def\u5f84')
     ap.add_argument('--state-path', type=str, default='/tmp/xueqiu_state.json',
-                    help='登录态缓存文件（默认 /tmp/xueqiu_state.json）')
+                    help='\u767b\u5f55\u6001\u7f13\u5b58\u6587\u4ef6（\u9ed8\u8ba4 /tmp/xueqiu_state.json）')
     ap.add_argument('--dump-all', type=str, default='',
-                    help='全量缓存路径：爬取时同时把该用户所有原发言写到这里，用于后续离线多主题分析')
+                    help='\u5168\u91cf\u7f13\u5b58\u8def\u5f84：\u722c\u53d6\u65f6\u540c\u65f6\u628a\u8be5\u7528\u6237\u6240\u6709\u539f\u53d1\u8a00\u5199\u5230\u8fd9\u91cc，\u7528\u4e8e\u540e\u7eed\u79bb\u7ebf\u591a\u4e3b\u9898\u5206\u6790')
     ap.add_argument('--from-cache', type=str, default='',
-                    help='跳过爬取，从已有全量缓存 JSON 过滤生成 markdown（需 --keywords 和 --output）')
+                    help='\u8df3\u8fc7\u722c\u53d6，\u4ece\u5df2\u6709\u5168\u91cf\u7f13\u5b58 JSON \u8fc7\u6ee4\u751f\u6210 markdown（\u9700 --keywords \u548c --output）')
     return ap.parse_args()
 
 
@@ -378,14 +378,14 @@ async def main():
     args = parse_args()
     keywords = [k.strip() for k in args.keywords.split(',') if k.strip()]
 
-    # 离线过滤模式
+    # \u79bb\u7ebf\u8fc7\u6ee4\u6a21\u5f0f
     if args.from_cache:
         if not (keywords and args.output):
-            print("--from-cache 需同时指定 --keywords 与 --output")
+            print("--from-cache \u9700\u540c\u65f6\u6307\u5b9a --keywords \u4e0e --output")
             return
         user_id = args.user_id or 0
         collected = filter_from_cache(args.from_cache, keywords, user_id)
-        print(f"从缓存 {args.from_cache} 筛出 {len(collected)} 条（关键词: {keywords}）")
+        print(f"\u4ece\u7f13\u5b58 {args.from_cache} \u7b5b\u51fa {len(collected)} \u6761（\u5173\u952e\u8bcd: {keywords}）")
         if not collected:
             return
         Path(args.output).parent.mkdir(parents=True, exist_ok=True)
@@ -395,14 +395,14 @@ async def main():
         return
 
     if not args.user_id:
-        print("需要 --user-id")
+        print("\u9700\u8981 --user-id")
         return
 
     progress_path = args.state_path + f'.progress.{args.user_id}'
     raw_json = args.raw_json or f'/tmp/xueqiu_{args.user_id}_raw.json'
 
     print("=" * 60)
-    print(f"雪球爬虫 | user_id={args.user_id} | keywords={keywords} | dump_all={args.dump_all}")
+    print(f"\u96ea\u7403\u722c\u866b | user_id={args.user_id} | keywords={keywords} | dump_all={args.dump_all}")
     print("=" * 60)
 
     async with async_playwright() as pw:
@@ -410,18 +410,18 @@ async def main():
         if not session:
             session = await interactive_login(pw, args.state_path, args.user_id)
         if not session:
-            print("无法登录，退出")
+            print("\u65e0\u6cd5\u767b\u5f55，\u9000\u51fa")
             return
         browser, _, page = session
         collected = await fetch_all_timeline(page, args.user_id, keywords, progress_path, args.dump_all)
         await browser.close()
 
-    print(f"\n=== 最终: {len(collected)} 条命中 ===")
+    print(f"\n=== \u6700\u7ec8: {len(collected)} \u6761\u547d\u4e2d ===")
     if not collected:
         return
     with open(raw_json, 'w', encoding='utf-8') as f:
         json.dump(list(collected.values()), f, ensure_ascii=False, indent=2)
-    print(f"原始JSON → {raw_json}")
+    print(f"\u539f\u59cbJSON → {raw_json}")
     if args.output:
         Path(args.output).parent.mkdir(parents=True, exist_ok=True)
         with open(args.output, 'w', encoding='utf-8') as f:

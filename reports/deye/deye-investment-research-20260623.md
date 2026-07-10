@@ -1,396 +1,396 @@
-# 德业股份（605117.SH）投资研究报告
+# German shares (605117.SH) investment study
 
-> **研究日期**：2026年6月23日
-> **股价**：CNY 101.85 | **市值**：CNY 1,297亿
-> **52周区间**：CNY 36.44 - 126.90
-
----
-
-## AI研究偏见自觉
-
-**信息丰富度评级：A级（信息充裕）**
-
-德业股份自2021年A股上市，券商覆盖广泛（银河/华创/东吴/开源等均有深度研报），年报/中报/季报披露规范，港股招股书（2026年1月递交）提供了额外的详细信息。新能源行业关注度高，媒体报道密集。
-
-**A级公司的AI研究陷阱**：德业是当前A股"逆变器+储能"赛道的热门标的，市场共识高度看多（2026Q1预增68%、券商一致预期2026年净利53.8亿）。AI输出容易趋同于这一乐观共识。**本报告重点做反面检验**：欧盟逆变器禁令的实质影响、新兴市场应收账款风险、以及40倍PE是否已充分定价增长预期。
-
-**偏见自查**：
-- 德业"新兴市场户储龙头"的叙事极具吸引力，需警惕叙事偏差覆盖了真实的地缘政治风险
-- 2026Q1数据亮眼（+68%）可能造成锚定效应，遮蔽2025全年增速仅9%的事实
-- 行业产能严重过剩（1TW vs 538GW需求），价格战压力在多数看多研报中被低估
+> ** Date of study**: 23 June 2026
+> ** share price**: CNY 101.85 ** Market value**: CNY 129.7 billion
+> **52 weeks**: CNY 36.44 - 126.90
 
 ---
 
-## 关键数据交叉验证记录
+# AI studies prejudices
 
-| 验证项 | 来源1 | 来源2 | 偏差 | 结果 |
+** Information abundance rating: A (information is abundant)**
+
+The German shares have been on the market since 2021 in A, with a wide range of securities (Galactic/Washio/O-Kaisu, etc.) and annual/mid-report/quarterly disclosure guidelines, with additional details provided by the Ports ' share offer (submitted in January 2026). The new energy sector has a high level of interest and media coverage.
+
+**A.A. Research trap**: The German industry is the hot spot in the current A-shares plus storage, with a high market consensus (68 per cent increase in 2026Q1 and a bond-broker consensus of $5.38 billion in 2026). AI exports are easily convergent with this optimistic consensus.** The report focuses on the opposite test**: the substantive impact of the EU Reversers Ban, the emerging market receivables risk, and whether 40 times the PE has fully priced growth expectations.
+
+** Prejudice self-examination**:
+- The German "Emergency Markets' Chiefs" narrative is extremely attractive, and it needs to be warned that the narrative bias covers real geopolitical risks.
+- 2026Q1 data bright eyes (+68%) may have anchoring effects, obscuring the fact that only 9% of the annual increase was achieved in 2025
+- Heavy excess capacity in industry (1 TW vs 538 GW demand) and price-war pressure is underestimated in most multi-research newspapers
+
+---
+
+# Cross-checking records for key data
+
+<unk> Validation item <unk> Source 1 <unk> Source 2 <unk> deviation <unk> result <unk>
 |--------|-------|-------|------|------|
-| 市值（CNY 1,297亿） | 股价101.85×股本12.73亿=1,296.6亿 | Investing.com | 0.05% | 通过 |
-| FY2025收入（122.24亿） | 公司年报 | 东方财富 | 0.00% | 通过 |
-| FY2025归母净利润（31.71亿） | 公司年报 | 东方财富 | 0.00% | 通过 |
-| 总股本（12.73亿） | 公司公告（10转4后） | Investing.com 12.7亿 | <0.3% | 通过 |
+Market value (CNY 129.7 billion)
+<unk> FY2025 (12.24 billion)
+<unk> FY2025 net profit from mother (3.171 billion) <unk> annual corporate report <unk> Eastern wealth <unk> 0.00 per cent <unk> through <unk>
+Total equity (1,273 million) Company announcement (10-to-four)
 
-> PE=40.90x、PB=12.56x、ROE=30.70%、FCF Yield=2.16% 均通过 `financial_rigor.py` 精确验算。
+> PE=40.90x, PB=12.56x, ROE=30.70%, FCF Yield=2.16% are measured by `final_rigor.py ' .
 
-**重要说明**：德业自上市以来每年进行资本公积金转增（10转4或10转8），总股本从IPO时约2.07亿股扩大到12.73亿股。不同平台的估值指标因股本口径差异较大，本报告统一采用最新转增后股本12.73亿股。
+** Significant note**: The German industry has been making annual capital fund transfers (10 to 4 or 10 to 8) since it was listed, and the total equity stock has been expanded from about 207 million shares at IPO to 1,273 million shares. The valuation indicators for different platforms are based on large differences in equity calibres, and the latest conversion and subsequent equity share has been consistently applied in this report.
 
 ---
 
-## 一、生意本质分析
+# One, business nature analysis
 
-### 一句话定义
+# One word of definition
 
-**德业股份是一家以极致成本控制为核心竞争力的新能源设备公司，通过"逆变器+储能电池包"一站式方案，深耕全球新兴市场的分布式光伏和户用储能需求。**
+**The German shares are a new energy equipment company with extreme cost control as its core competitiveness, which has deep-cut global emerging market distribution photovoltaic and household storage energy needs through the one-stop programme "Reverse transformer plus storage battery pack".**
 
-### 收入结构拆解（FY2025）
+# # income structure disassemble (FY2025)
 
-| 业务线 | 收入（亿元） | 占比 | 同比增速 | 毛利率 |
+The business line, the income (millions of yuan) the ratio, the rate of growth, the rate of Maori, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the amount of the gross domestic product, the amount of the gross domestic product, the amount of the income of the income, the amount of the income, the amount of the income, the amount of the income, the amount of the income, the amount of the amount of the, the amount of the amount of the amount of the, the amount of the income, the, the amount of the, the, the amount of the, the, the amount of the, the most, the, the, the, the, the, the most, the most, the most, the most, the most, the most, which, the most, the most, the most, the most, which, the most, which, which, the most, which, which, which, which, which, the most, the most, the most, the most, which, the most, the most, the most, the most, the most, which, which, which, which, which, the most, the most, which, which, which, which, which, which, which, which, which, which, the
 |--------|-------------|------|---------|--------|
-| 储能逆变器 | 52.17 | 42.7% | +18.9% | **51.10%** |
-| 储能电池包 | 38.32 | 31.4% | +56.3% | 31.81% |
-| 光伏逆变器 | 10.54 | 8.6% | -7.2% | 32.11% |
-| 热交换器 | 9.38 | 7.7% | -52.0% | 7.71% |
-| 除湿机 | 8.05 | 6.6% | -16.9% | 29.72% |
-| **合计** | **122.24** | **100%** | **+9.1%** | **~38%** |
+<unk> Storage Reversers 52.17 <unk> 42.7 <unk> 18.9 <unk> 51.10 ** <unk>
+<unk> Storage battery kit 38.32 <unk> 31.4 <unk> + 56.3 <unk> 31 81 % <unk>
+<unk> Photovoltaic reverse transformer <unk> 10.54 <unk> 8.6% <unk> - 7.2% <unk> 32.11% <unk>
+<unk> Thermal exchangers 9.38 <unk> 7.7% <unk> -52.0 <unk> 7.71% <unk>
+<unk> Dehumidifier 8.05 <unk> 6.6 <unk> 16.9 <unk> 29.72 <unk>
+** Total** 122.24** ** 100%** ** ** ** 9.1%** ** ~ 38%** **
 
-**新能源业务合计**：101.81亿（占比83.3%，+27.0%），新能源毛利率41.63%。传统家电业务持续萎缩。
+** Total new energy operations**: 10,181 million (83.3%, +27.0%) and 41.63% of new energy sources. Traditional household electricity operations have continued to contract.
 
-### 5年盈利能力趋势
+# # 5 years of profitability trend
 
-| 指标 | FY2021 | FY2022 | FY2023 | FY2024 | FY2025 |
+<unk> Indicator <unk> FY2021 <unk> FY2022 <unk> FY2023 <unk> FY2024 <unk> FY2025 <unk>
 |------|--------|--------|--------|--------|--------|
-| 总收入（亿） | 41.68 | 59.56 | 74.80 | 112.06 | 122.24 |
-| 收入增速 | +37.9% | +42.9% | +25.6% | +49.8% | +9.1% |
-| 归母净利润（亿） | 5.79 | 15.17 | 17.91 | 29.60 | 31.71 |
-| 净利润增速 | +50.8% | +162.3% | +18.0% | +65.3% | +7.1% |
-| 毛利率 | 22.95% | 38.03% | 40.41% | 38.76% | ~38% |
-| 净利率 | ~13.9% | ~25.5% | ~23.9% | 26.42% | ~25.9% |
+Total income (millions)
+<unk> Income growth + 37.9% <unk> 42.9% <unk> 25.6% <unk> 49.8% <unk> 9.1% <unk>
+<unk> Net profit from repatriation (millions) <unk> 15.17 <unk> 17.91 <unk> 29.6 <unk> 31.71 <unk>
+<unk> Net profit rate + 50.8% <unk> 162.3% <unk> 18.0% <unk> + 65.3% <unk> + 7.1% <unk>
+<unk> Māori ratio 22.95% <unk> 38.03% <unk> 40.41% <unk> 38.76% ~ 38% <unk>
+Net interest rate ~ 13.9% ~ 25.5% ~ 23.9% ~ 26.42% ~ 25.9% ~
 | ROE | ~15.2% | ~24.3% | ~20% | 31.31% | 30.7% |
-| 经营现金流（亿） | ~7.97 | ~22.0 | ~20.8 | 33.67 | 39.86 |
+<unk> Operating cash flow (millions) ~ 7.97 ~ 22.0 ~ 20.8 ~ 33.67 <unk> 39.86 ~
 
-**关键转折**：2021年收入结构以低毛利热交换器为主（占56%），毛利率仅23%。2022年逆变器爆发后，毛利率跃升至38%+并稳定保持。收入增长从2021-2024年的高速（+38%~+50%）在2025年骤降至9%，但2026Q1重新加速至+74%。
+** Key turning**: The income structure was dominated by low Maori heat exchangers in 2021 (56%), with a Maori rate of only 23%. After the inverse in 2022, the Maori rate jumped to 38%+ and remained stable. The income growth fell sharply from the high rate (+38% + 50%) in 2021-2024 to 9% in 2025, but the rate of 2026Q1 accelerated again to +74%.
 
-### 商业模式画布
+# Business model canvass
 
-- **类型**：硬件制造+出口，一次性销售为主（非订阅）
-- **收入模式**：逆变器和电池包为硬件设备销售，安装后无持续服务收入（区别于Enphase的Enlighten平台）
-- **海外收入占比**：FY2025约80%（外销97.47亿，内销24.39亿），新能源业务海外占比92%
-- **销售模式**：82%贴牌OEM/ODM + 18%自有品牌，轻资产出海
+- **type**: hardware manufacture + export, one-time sale dominated (non-subscription)
+- ** Income mode**: Inverters and battery bags sold for hardware equipment and installed without continuous service income (as distinct from Enlighten platform in Enphase)
+- ** Overseas income **: approximately 80% of SY2025 (outsourcing 9,747 million and inward sales 2,439 million), and 92% of new energy operations abroad
+- ** Sale pattern**: 82% OEM/ODM + 18% own brand and light assets are out of the sea
 
-### 毛利率解读
+# Māori rate interpretation
 
-| 对比 | 德业 | Enphase | 阳光电源 | 锦浪科技 |
+♪ The sun, the wind, the wind, the wind ♪
 |------|------|---------|---------|---------|
-| 综合毛利率 | ~38% | ~47% | ~28% | ~32% |
-| 逆变器毛利率 | 51.1%（储能逆变器） | ~47% | ~28% | ~32% |
-| 费用率 | ~10% | ~35% | ~15% | ~18% |
-| 净利率 | ~26% | ~12% | ~13% | ~14% |
+<unk> Total Māori ~ 38% ~ 47% ~ 28% ~ 32% ~
+<unk> Reverser Māori 51.1% (storage reversible) ~ 47% ~ 28% ~ 32%
+Cost rate ~ 10% ~ 35% ~ 15% ~ 18% ~
+Net interest rate ~ 26% ~ 12% ~ 13% ~ 14% ~
 
-德业毛利率低于Enphase但净利率反而更高，核心在于**极低的费用率**（~10% vs Enphase~35%）。这是经销商模式+中国制造成本优势的直接体现。储能逆变器51.1%的毛利率在中国逆变器企业中属最高水平。
+The German Maori rate is lower than that of Enphase but higher than the net interest rate, at the core of which is ** the very low cost ** (~10% vs Enphase~35%). This is a direct reflection of the distributioner model + the Chinese manufacturing cost advantage. The storage energy reversioner rate of 51.1% is the highest among the Chinese reversants.
 
-### 追问：这门生意好在哪？
+# Ask: Where is the business?
 
-**如果只能用一句话描述**：德业用中国制造的成本优势，卖的却是海外新兴市场高毛利的"电力刚需"产品——缺电国家的居民为了有电用、不停电，愿意为逆变器+储能付出溢价。
+** If one can only describe the cost advantage of the German industry, made in China, it sells the "power needs" products of the foreign emerging markets - residents of power-deficient countries are willing to pay a premium for the inverter + storage capacity for the sake of electricity and power supply.
 
-生意的好处：
-1. **需求刚性**——南非日均停电18小时、巴基斯坦/缅甸电力严重不足，储能逆变器是"有电vs没电"的选择，不是"省钱vs不省钱"
-2. **毛利率极高**——储能逆变器51.1%，远超传统制造业
-3. **现金流优秀**——FY2025经营现金流39.86亿，接近净利润的126%
+Benefits of business:
+1. ** Demand rigid** - South Africa has an average power outage of 18 hours per day, Pakistan/Myanmar has a severe power shortage, and storage inverters are the "powerless" option, not "saving money vs."
+**Maori ** - Storage Reversers 51.1%, far beyond traditional manufacturing
+**Excellent cash flow** — FY 2025 operating cash flow of 3,986 million, close to 126 per cent of net profit
 
-生意的隐患：
-1. **硬件一次性销售**——安装后无持续收入，增长完全依赖新出货
-2. **贴牌占比82%**——品牌资产薄弱，渠道商拥有议价权
-3. **2025年增速骤降至9%**——高增长能否持续是核心问题
+Business hazard:
+** One-time sale of hardware** — no continuing income after installation, growth entirely dependent on new shipments
+** 82% of the cards ** - weak brand assets and bargaining power of channel
+** The year 2025 saw a sharp drop to 9%** ** High growth sustainability is at the core of the issue
 
 ---
 
-## 二、护城河评估
+# II. A waterfront assessment
 
-### 五类护城河逐项验证
+# Five-class moats, one by one
 
-| 护城河类型 | 强度 | 验证分析 |
+♪ The moat type ♪
 |-----------|------|---------|
-| **品牌/定价权** | 弱-中 | 82%贴牌意味着终端品牌不属于德业。巴西自有品牌渠道正在建设，但在欧美成熟市场品牌力远逊于Enphase/华为。新兴市场客户对"Deye"品牌有一定认知（南非市占>50%），但更多认的是价格而非品牌 |
-| **转换成本** | 中等偏强 | 逆变器+电池包配套形成产品锁定（不同厂商逆变器与电池包通常不兼容）；100kW以上离网系统采用私有协议锁定客户；但户用小系统的转换成本不高 |
-| **网络效应** | 弱 | 硬件产品无网络效应。Enphase的Enlighten平台有弱网络效应（数据积累→优化发电→吸引更多用户），德业缺乏这一维度 |
-| **规模效应/成本优势** | **极强** | 最核心护城河。结构件自制率90%、IGBT国产化降本30%、模具自制率70%+、经销模式费用率仅~10%。微逆单瓦售价仅Enphase的1/3~1/4。储能逆变器毛利率51.1%在中国同行中最高 |
-| **认证壁垒** | 强 | 覆盖全球主要市场认证（UL/CE/AS4777/NRS/INMETRO等），认证周期6-18个月、成本数十万至数百万。新进入者需1-2年追赶 |
+** Brand/pricing rights** Weak-Middle-Augrey means that end brands are not German. Brazil has a branding channel, but it's much less powerful in mature markets in Europe and America than Enphase/Was. Emerging market customers have some knowledge of the "Deye" brand (South Africa > 50%), but more price than brand.
+<unk> ** Conversion cost** <unk> Mediumly strong <unk> Inverter+ Battery Packing Form Product Lock (different manufacturers are usually incompatible with battery packages); Offline systems over 100kW use private agreements to target customers; but conversion costs for household small systems are not high
+<unk> Network effects** Weak hardware products do not have network effects. Enlighten platform has weak network effects (data accumulation optimizes power generation to attract more users), and the German industry lacks this dimension
+<unk> **Scalation effect/cost advantage** <unk> ** very strong** <unk> core mound. <unk> structural self-formulation rate 90%, IGBT national production rate 30%, model self-production rate 70% +, distribution model cost rate ~10%. Micro-reflection single-war sales cost only one-third to one-fourth of Enphase.
+<unk> ** Certification barriers** <unk> Coverage of major global markets certification (UL/CE/AS4777/NRS/INMETRO, etc.), 6-18 months certification cycle, hundreds of thousands to millions of dollars.
 
-### 护城河趋势判断
+# The moat of the river trends
 
-**过去5年：显著变宽**
-- 从家电OEM转型为新兴市场户储龙头
-- 海外经销商从无到291家（行业最多）
-- 产品线从单一逆变器扩展至"逆变器+电池包+热泵"
-- 南非、缅甸、菲律宾等市场建立先发优势
+** The last five years: significant width**
+- Transition from home to home to emerging market household stock
+- 291 overseas dealers (highest industry)
+- The product line has been expanded from a single inverter to "reverse transformer plus battery package plus heat pump".
+- Create pre-eminence in markets such as South Africa, Myanmar, Philippines
 
-**未来5年：面临收窄风险**
-- **欧盟逆变器禁令（2027年全面生效）**可能系统性压缩德业在欧洲的市场空间（德国占24%收入）
-- 华为、辉瑞/三生等巨头若进入微逆+户储市场，将直接冲击德业的成本优势护城河
-- 全球逆变器产能过剩（1TW vs 538GW需求），价格战将侵蚀利润率
-- 竞品追赶：锦浪、固德威、Growatt同样在加速出海新兴市场
+** Next 5 years: exposure to narrow risks**
+- ** EU Reversers Ban (full force 2027)** Possible systematic reduction of German market space in Europe (24% German revenue)
+- The giant Hua-Swie-Sam-Sang will directly impact the German industry's cost advantage by entering the MRT market
+- Overcapacity of global inverters (1 TV vs 538 GW demand), and price wars will erode profit margins
+- Race chase: The same as the great waves, the firm Dewey and the Groott are accelerating their release to the sea.
 
-### 追问：10年后这条护城河还在吗？
+# Ask: 10 years later, is this moat still there?
 
-**最可能摧毁护城河的因素**：
-1. **欧盟"华为5G禁令"式的逆变器封锁**——如果2027年禁令严格执行，德业将被迫退出欧洲（占收入~24%），且示范效应可能扩散至澳洲等西方市场
-2. **华为全面进入户用储能**——华为FusionSolar已在欧洲户储市场Top3，若其以类似手机的"性价比+品牌"策略进入新兴市场，德业的成本优势将被大幅削弱
-3. **Enphase大幅降价**——Enphase 2024年营收暴跌42%后可能采取激进降价策略，若微逆价差从3-4倍缩窄至1.5-2倍，德业的性价比叙事将弱化
+** The most likely factor to destroy the moat**:
+1. ** EU- "W"-type reverse-module blockade** - if the 2027 ban were strictly enforced, the German industry would be forced to withdraw from Europe (income ~ 24%) and the demonstration effect could spread to Western markets such as Australia
+2. **FusionSolar has entered the European Household Market Top3 for full access to household storage energy** — if it enters emerging markets with a mobile phone-like "value for money plus brand" strategy, the German industry’s cost advantage will be significantly reduced
+**Enphase significantly reduced prices** — Enphase may adopt a radical price reduction strategy after a 42% drop in the 2024 harvest, with a slight price margin of 3-4 to 1.5-2 times smaller in German terms.
 
-**10年后的关键判断**：护城河的持久性取决于德业能否从"成本领先"升级为"成本领先+品牌+软件生态"。如果始终停留在硬件OEM模式，护城河会随着竞品追赶逐渐收窄。
+** Key judgement ** 10 years later: The sustainability of the moat depends on whether the German industry can upgrade from "cost leads" to "cost leads + brand + software ecology". If it stays in the hardware OEM mode, the moat will narrow as competitions catch up.
 
 ---
 
-## 三、逆向思考与风险清单
+# Three, reverse thinking and risk list
 
-### 失败路径全景
+# Failed path panorama
 
-| 失败路径 | 概率 | 影响程度 | 具体情景 |
+<unk> Failed path <unk> probabilities <unk> Impact level <unk> Specific scenarios <unk>
 |----------|------|---------|---------|
-| **欧盟逆变器网络安全禁令全面落地** | 60-70% | 极高 | 2027年4月起新合同全面纳入限制。德国占收入24%（~17.7亿），是最高利润区。禁令扩展至储能系统（BESS）进一步加大打击面 |
-| 美国145%关税+东南亚反规避封堵 | 已发生 | 中等 | 德业美国直接敞口仅~3%，通过Sol-Ark贴牌。但被锁在全球最大利润市场之外是长期机会损失 |
-| 全球逆变器价格战 | 70-80% | 高 | 产能1TW vs需求538GW，严重过剩。价格年降10-15%已在发生。德业储能逆变器51%毛利率有下行空间 |
-| 巴西政策持续收紧 | 40-50% | 中等 | Fio B逐年递增至2027年75%，组件进口税25%。2025年巴西分布式新增首次下滑12% |
-| 应收账款恶化/坏账 | 20-30% | 中高 | 2024年末应收账款17亿（+203%），增速远超营收。新兴市场客户信用风险高（巴基斯坦、乌克兰等） |
-| 华为大举进入户储新兴市场 | 30-40% | 高 | 华为2024年全球逆变器出货176GW，储能逆变器市占22.7%。若以"华为"品牌+渠道下沉新兴市场，德业价格优势将被削弱 |
-| 继电器事件类质量问题再次发生 | 10-15% | 中等 | 2023年德国拆机发现缺少继电器已损伤品牌。若在更大市场发生类似事件，可能导致认证撤销 |
+** The EU counter-changer network security ban has been fully in place** 60-70% very high <unk> New contracts have been fully incorporated since April 2027. Germany accounts for 24% of revenue (~1.17 billion) and is the highest profit area.
+<unk> US 145% of tariffs + South-East Asia counter-circumvention block <unk> has occurred <unk> medium <unk> German – direct exposure – only ~3%, through Sol-Ark. But locked outside the world’s largest profit market is a long-term opportunity loss <unk>
+The price of the global reversible is 538 GW, which is a major surplus. The price drop of 10-15% is already happening. The German storage reversion rate of 51% has a lower range of Māori.
+Brazil's policy has continued to tighten, 40-50% Medium Fio B has increased to 75% by year 2027 and import taxes on components 25%. Brazil's distribution has fallen by 12% for the first time in 2025.
+<unk> Deterioration/bad accounts receivable <unk> 20-30% Medium-high <unk> 1.7 billion accounts receivable (+203%) late 2024, increasing faster than revenue.
+The Chinese market, which is the largest market in the world, is now the world's most important one, and the Chinese market is the world's most important one, with a global reversible, 176 GW in 2024, with a storage counter market of 22.7 per cent.
+<unk> Repeated problems with quality in electrical events <unk> 10-15% medium <unk> 2023 German dismantling found that the lack of relays had damaged brands. A similar event in the larger market could lead to the decertification of the certification <unk>
 
-### 历史类比
+# History analogy
 
-| 类比公司 | 相似点 | 结局 | 启示 |
+The analogy company, the analogy, the resemblance, the end, the revelation, the resonance.
 |----------|--------|------|------|
-| **阳光电源（2016-2020）** | 从UPS/电力电子切入逆变器 | 市值~3,000亿，全球逆变器Top2 | 证明中国逆变器企业可成为全球龙头。但阳光"先国内后海外"更稳健 |
-| **锦浪科技（2022-2024）** | 欧洲占比高→去库存重创→股价暴跌70%→归母-11% | 2025年开始恢复 | **高海外依赖在去库存周期中极其脆弱**。德业分散在110+国家，比锦浪好 |
-| **固德威（2024）** | 海外占比从80%骤降至30%→亏损 | 正在恢复 | 高海外占比是双刃剑 |
-| **Enphase（2022-2024）** | 微逆龙头→市值从$40B跌至$10B | 估值回归合理 | 即使行业龙头也难逃周期波动 |
-| **格力投资银隆** | 家电企业跨界新能源 | 失败，技术路线选错 | 德业转型成功的关键是"变频→电控→逆变器"的自然延伸，而非跨界 |
+** Sun power (2016-2020)** Sun power from UPS/electric electron to reverse transformer <unk> market value ~300 billion, global reverse changer Top2 <unk> proves that Chinese reverse changer companies can become global leaders. But Sun is "home and abroad" more robust.
+** The high proportion of Europeans who have gone to stock-stuffs has dropped by 70%, and the price of stock has fallen by 11%. ** The recovery began in 2025 ** High overseas dependence is extremely vulnerable in the stock-go-country **.
+<unk> **Gudwy** <unk> The ratio of overseas share dropped sharply from 80% to 30%, <unk> is recovering, <unk> high overseas ratio is double-edged sword <unk>
+**Enphase (2022-2024)** Microreverse taps have dropped from $40B to $10B, and the valuations have returned to soundness, even industry leaders have been unable to escape cycle fluctuations.
+The key to a successful German transition is the natural extension of the "Change-Change-Changer" rather than the transboundary extension of the "Change-Change-Changer"
 
-### 追问：我最可能在哪里犯错？
+# Ask: Where am I most likely to make mistakes?
 
-1. **低估欧盟禁令的实际影响**。这不是"可能发生"的风险——欧盟已立法。2027年全面生效后，德业在欧洲的收入（占总收入~24%）将面临系统性压缩。这是逆变器版的"华为5G禁令"
-2. **被2026Q1的高增长锚定**。2026Q1归母+68%极其亮眼，但2025全年仅+9%。需要判断：Q1是趋势的开始还是一次性波动？
-3. **将"成本优势"等同于"不可替代"**。中国逆变器企业都有成本优势——锦浪、固德威、Growatt的成本结构与德业相差不远。德业的真正差异化是渠道网络，而渠道可以被后来者复制
+1. ** Underestimates the actual impact of the EU ban**. This is not a risk of "probable" -- the EU has enacted legislation. After full entry into force in 2027, German revenues in Europe (total income ~ 24%) will face systematic compression. This is the reverse version of the "Haw 5G Ban"
+2. ** ** anchored by high growth of 2026Q1**. 2026Q1 parent + 68% is extremely bright, but 2025 is only + 9%. It needs to be judged whether Q1 is the beginning of the trend or a one-time fluctuation?
+3. ** To equate "cost advantage" with "instead of"**. Chinese retroverts have cost advantages - the cost structures of Jingbo, Gudway, Groottt and German industries are not far from being. The real difference in the German industry is the network of channels, which can be replicated by latercomers.
 
-**聪明人为什么会做空**：
-- PE 41倍对一个硬件制造商而言偏高（2025年净利增速仅7%）
-- 欧盟禁令是已确定的中期利空，market尚未充分定价
-- 应收账款增速是营收增速的4倍（+203% vs +50%），信用风险在积累
+♪ Why would a wise man do that?
+- 41 times higher for a hardware manufacturer (net gain rate of 7% in 2025)
+- The EU ban is the medium-term benefit that has been determined and the market has not been fully priced
+- Receivables are growing at a four-fold rate compared to the rate of growth in the collection (+203 per cent vs + 50 per cent) and credit risk is accumulating
 
 ---
 
-## 四、管理层评估
+# IV. Management assessment
 
-### 创始人张和君
+# Founder Jang and King
 
-| 维度 | 详情 |
+<unk> Dimensions <unk> Details <unk>
 |------|------|
-| 年龄 | 73岁 |
-| 学历 | 高中 |
-| 持股 | 一致行动人合计60.30%（绝对控制） |
-| 座右铭 | "每天都要有进步" |
-| 财富排名 | 胡润百富榜350亿（2024年，第128位） |
-| 经历 | 1971年模具工→2000年创立德业→2016年并购日新科技→2021年IPO→2025年新能源收入102亿 |
+Age 73 years
+Education
+Total number of unaggregated operators 60.30% (absolute control)
+♪ Every day we make progress ♪
+The wealth ranking, the wealth ranking, the fortunes, the wealth ranking, the wealth ranking, the wealth ranking, the wealth ranking, the wealth ranking, the wealth ranking, the wealth ranking, the wealth ranking, the wealth ranking, the wealth ranking, the wealth ranking, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the wealth, the, the wealth, the wealth, the, the, the, the, the, the, the, the, the, the..., the..., the..., the..., the..., the... the..., the... the... the... the... the... the... the... the... the... the...
+New technology for the M&A in 2016 — IPO — $10.2 billion in 2025
 
-### 核心团队
+# Core team
 
-| 姓名 | 职务 | 关键信息 |
+Name, position, key information, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name, name
 |------|------|---------|
-| 张栋斌 | 执行董事 | 长子，47岁，**加拿大籍** |
-| 张栋业 | 副董事长兼总经理 | 次子，44岁，**加拿大籍** |
-| 季德海 | 副总经理 | 33岁，2016年随日新科技并购加入，逆变器业务技术关键人物 |
-| 谈最 | 董事/副总裁/CFO | 49岁，2000年加入，财务老臣 |
+<unk> Zhang Dingbin <unk> Executive Director <unk> Senior son, 47 years old ** Canadian**
+<unk> Vice-Chairman and Managing Director of Zhang Jingdu <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+♪ The new technology is new ♪ ♪ The new technology ♪ ♪ The new technology ♪ ♪ The new technology ♪ the new technology ♪ ♪ the new technology ♪ the new technology ♪ ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology ♪ the new technology key ♪ the in the new ♪ the new technology ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the new ♪ the the the the the ♪ the ♪ the new ♪ the new ♪ the new ♪ the the ♪ the new ♪ the new ♪ the new technology ♪ the new technology ♪ the new ♪ the new the new ♪ the new ♪ the new the new the new technology ♪ the new the new ♪ the new ♪ the new technology ♪ the new ♪ the new ♪ the new the new the new ♪ the new ♪ the new ♪ the new the new the new the new the new the new the new the new the new the new the new the new the new the new the new the ♪ the new the new the new the new
+Director/Vice President/CFO 49 years old, joined in 2000, financial master
 
-### 关键决策复盘
+# Key decision-making remix
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2016年 | 并购宁波日新科技进入逆变器 | 踩准新能源爆发前夜，以较低成本获取核心技术 | A+ |
-| 2018-2019年 | 优先开拓南非/巴西新兴市场 | 南非储能市占>50%，巴西逆变器市占~22% | A+ |
-| 2017年 | 提前布局储能逆变器 | 2022年南非停电危机时完美爆发 | A+ |
-| 2022年 | 定增35.5亿全部投向逆变器扩产 | 产能及时匹配高速增长 | A |
-| 2024年 | 马来西亚建厂1.5亿美元 | 规避贸易壁垒，但产能投产需时间 | B+（待验证） |
-| 2025年 | 投资21.27亿建16GWh工商储产线 | 押注工商储第二增长曲线，投入较大 | B+（待验证） |
+<unk> Merger of new technologies for Ningbo Day into reverses <unk> Step on the night before the outbreak to acquire core technologies at lower cost <unk> A+ <unk>
+* South Africa/Brazil Emerging Markets * 50% South Africa Reserve Energy and ~ 22% Brazil Reversers
+<unk> 2017 <unk> early deployment of a power inverter <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+In 2022, the number of people who are in the process of becoming a transversal agent increased by 3.55 billion.
+<unk> 2024 US$ 150 million in Malaysian construction plants <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> 2025 Investment in 2,127 million to build 16GWh business storage lines <unk> bet on the second growth curve of the business reserve, with larger inputs <unk> B+ (to be validated) <unk>
 
-### 需关注的治理问题
+Governance issues to focus on
 
-| 问题 | 严重程度 | 详情 |
+The problem, the gravity, the details, the details.
 |------|---------|------|
-| **家族高度集控** | 高 | 7名董事3人为张家人；73岁创始人一人控股60%+；继任安排不清晰 |
-| **"明增暗减"** | 中 | 张和君个人仅增持12万股（0.02%），而控制的员工持股平台持续减持套现~5亿元 |
-| **核心家族外籍** | 中 | 两子均为加拿大籍，在地缘政治复杂背景下存在不确定性 |
-| **IPO后巨额分红** | 中 | 上市3.5年累计分红49亿，按60%持股计算家族获29亿+。分红率极高（2024年82.89%），但也说明对股东慷慨 |
-| **专利诉讼未披露** | 中 | 2025年8月美国CyboEnergy专利诉讼截至9月未向投资者披露 |
+** Family highly controlled** High <unk> 7 directors 3 are members of Zhang family; 73-year-old founder holds 60% +; succession arrangements are unclear
+** "Imminent and Imminent"** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+** Core family foreign** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+The huge share of the IPO **, the cumulative share of the 3.5 years on the market was 4.9 billion, and the family was 2.9 billion plus on a 60% share. The rate of the red rate was extremely high (82.89% in 2024), but it also indicated generosity to shareholders.
+** Patent litigation not disclosed** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> not disclosed to investors as of September, <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-### 追问：如果CEO退休，这家公司还能保持竞争力吗？
+# Ask: If CEO retires, can this company remain competitive?
 
-**短期风险可控**：两子已在核心管理岗位多年，日常运营可延续。季德海（33岁）是逆变器技术的关键人物。
+** Short-term risk control**: Two children have been in core management positions for years and are running on a continuous basis.
 
-**长期隐忧**：张和君的战略嗅觉（2016年并购日新、2018年南非先发）难以复制。从高中学历到350亿身家，他的商业直觉是德业最大的无形资产。两子的加拿大国籍+本科学历（海洋大学经济学/乔治布朗工商管理）能否延续这种判断力存疑。类比：很多宁波民企的二代接班后丧失了创一代的狼性和嗅觉。
+** Long-term concern**: Jang and King’s strategic sense (new in 2016 and early in 2018 in South Africa) is difficult to replicate. From high school education to 35 billion people, his business instinct is the largest intangible asset in German. Two sons of Canadian nationality plus the scientific calendar (economics of the University of the Sea/George Brown business administration) are doubtful whether they can continue this judgement.
 
 ---
 
-## 五、行业与文明趋势
+# V. Trends in industry and civilization
 
-### 范式转移判断
+# The paradigm shift judgement
 
-全球能源系统正处于**从集中式化石能源向分布式可再生能源转变**的文明级范式转移。分布式光伏+储能是这一转变的核心载体。
+Global energy systems are in the process of ** a paradigm shift from centralized fossil energy to distributed renewable energy**, with distributed photovoltaics and storage being the core vehicle for this shift.
 
-| 类比 | 对应 |
+The following are the main indicators of achievement:
 |------|------|
-| 集中式电网 → 分布式光储 | 大型机 → 个人电脑 |
-| 逆变器 | 光伏系统的"大脑" |
-| 德业 | 新兴市场分布式能源的"联想" |
+* Centralized grids distributed light storage *
+The brain of the photovoltaic system.
+"Consequences" of the emerging market distributed energy source.
 
-### TAM增长曲线
+# Tam growth curves
 
-| 市场 | 2024年规模 | 2030年预测 | CAGR | 德业参与度 |
+Market 2024, size 2030, projection 2030, CAGR, German industry participation,
 |------|-----------|-----------|------|-----------|
-| 全球光伏逆变器 | 127-150亿美元 | 237-419亿美元 | 8-18% | 高 |
-| **全球微型逆变器** | **30-47亿美元** | **85-173亿美元** | **18-25%** | 高（增长最快子赛道） |
-| 全球户用储能 | 109亿美元（2025） | 193亿美元 | 12% | 极高 |
-| 巴西逆变器 | 5.7亿美元 | 7-10亿美元 | 6-9% | 极高（市占~22%） |
-| 全球除湿机 | 34-48亿美元 | 51-71亿美元 | 5-9% | 中（传统业务） |
+<unk> Global photovoltaic inverter 127-15 billion United States dollars <unk> 237-41.9 billion <unk> 8-18% <unk> High
+** Global microreverser** ** $3.47 billion** ** $8.517.3 billion** ** 18-25% ** High ( fastest growing track) **
+The global household storage capacity is $10.9 billion (2025) $19.3 billion, 12%, and the amount of money that you're in is very high.
+Brazil Reverser $570 million
+Global dehumidifiers $34-4.8 billion $5.1-7.1 billion
 
-### 产业链位置
+# The industrial chain position
 
-德业处于**中游制造**环节：上游采购IGBT/电容/电芯 → 中游设计制造逆变器和电池包 → 下游通过经销商触达终端用户。
+German industry is in the ** meso-manufacturing **: upstream procurement of IGBT/Chams/Crys <unk> Medium-movement Design Inverters and Battery Packages <unk> downstream reaching end users through distributors.
 
-**核心能力**：垂直整合（结构件自制率90%）+ 轻资产渠道（经销商模式）。缺乏上游芯片自研能力（vs Enphase的ASIC）和下游软件生态（vs Enphase的Enlighten）。
+** Core capabilities**: Vertical integration (90% structural self-formulation rate) + light asset channel (distributors mode). Lack of upstream chip self-research capability (ASIIC for vs Enphase) and downstream software ecology (Enlighten for vs Enphase).
 
-### 追问：20年后这家公司是"时代的标准石油"还是"昙花一现的3Com"？
+# Ask: 20 years later is this company "Standard Oil of the Time" or "Standing 3Com"?
 
-**更可能是"新兴市场的施耐德电气"**——一家在发展中国家电力基础设施领域占有重要地位的设备制造商。不会成为"标准石油"（逆变器行业太分散、技术门槛不够高），但如果能从82%贴牌升级为50%+自有品牌、同时向工商储延伸，完全可能成为年营收500+亿、市值3000-5000亿的全球化企业。
+** More likely to be "Schneider Electric in Emerging Markets"** - a manufacturer of equipment that has a major role in electricity infrastructure in developing countries. Not "standard oil" (the reverses industry is too fragmented and the technology threshold is not high), but if it were to be upgraded from 82% to 50% + own brand, and to extend to business and industry deposits, it would be a perfect opportunity for a global enterprise with an annual revenue of 50 + billion and a market value of 3,000-500 billion.
 
-"3Com"式衰败的概率不高但存在——如果欧盟禁令扩散至更多西方国家、华为大举下沉新兴市场、且德业未能成功建立自有品牌和软件生态，则可能退化为纯粹的OEM制造商，利润率持续压缩。
+The probability of a "3Com" decline is low but there is a risk that if the EU ban spreads to more Western countries, China is a sunk emerging market and the German industry fails to successfully build its own brand and software ecology, it may degenerate into a pure OEM manufacturer with a continuous contraction in profitability.
 
 ---
 
-## 六、估值与安全边际
+# VI. Valuation and security margin
 
-### 当前市场定价
+# Current market pricing
 
-| 估值指标 | 当前值 | 同行对比 |
+<unk> Valuation indicator <unk> Current value <unk> Peer comparison <unk>
 |----------|--------|---------|
-| PE（TTM，转增后） | **40.90x** | 锦浪~25x，固德威~30x，阳光电源~18x |
-| PB | **12.56x** | 同行8-15x |
-| PS（TTM） | **10.6x** | 同行3-8x |
-| ROE | **30.70%** | 同行15-25% |
+♪ The sun ♪
+<unk> PB<unk> 12.56x**<unk> 8-15x<unk>
+<unk> PS(TTM)<unk> 10.6x**<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+ROE <unk> 30.70%** <unk> 15-25% <unk>
 | FCF Yield | **2.16%** | — |
-| 股息率 | **~2-4%** | 分红慷慨 |
-| 2026E PE | **~14.5x** | 基于券商一致预期归母53.8亿 |
+<unk> Escillation rate <unk> 2-4% <unk>
+2026E PE <unk> 14.5x** <unk> expected return to the mother of $5.38 billion based on the consensus of the voucher dealers
 
-> 所有指标通过 `financial_rigor.py` 精确验算。
+> All indicators are measured accurately by `final_rigor.py ' .
 
-### PE历史区间
+# PE History Zone
 
-| 年份 | 平均PE | 最高PE | 最低PE |
+Year Average PE <unk> Highest PE <unk> Lowest PE <unk>
 |------|--------|--------|--------|
 | 2022 | 120.33 | 177.39 | 52.54 |
 | 2023 | 51.45 | 137.84 | **11.10** |
 | 2024 | 23.49 | 36.77 | **12.91** |
 | 2025 | 21.17 | 27.29 | 14.00 |
-| 2026（至今） | 36.82 | 50.30 | 24.65 |
+<unk> 2026 (to date) <unk> 36.82 <unk> 50.30 <unk> 24.65 <unk>
 
-历史最低PE 11-13倍出现在2023年底-2024年初（欧洲去库存+板块杀估值）。当前PE 41倍处于历史偏高区间。
+The lowest ever ever ever ever was a PE 11-13 times more than in late 2023 and early 2024 (European inventory plus plate killing valuation).
 
-### 反向DCF
+# Back to DCF
 
-当前市值1,297亿，按10%贴现率和3%永续增长率推算：
-- 隐含2030年净利润约**80-100亿**
-- 隐含未来5年净利润CAGR约**25-30%**
-- 这要求：全球化持续成功 + 工商储放量 + 毛利率维持
+The current market value of $129.7 billion is calculated at a discount rate of 10 per cent and a constant growth rate of 3 per cent:
+- Implicit net profit in 2030, about **8-10 billion**
+- Implicit net profit CAGR **25-30% **
+- This requires: the continued success of globalization + business reserves + Maori maintenance
 
-**是否合理？** 如果2026年净利确实达到53.8亿（+70%），则后续4年仅需~15%增速即可达到80亿。但如果2026年增速低于预期（如欧盟禁令提前影响），则当前估值偏高。
+** Is it reasonable?** If the net gain did reach $5.38 billion (+70%) in 2026, it would take only ~15% to increase by 8 billion in the next four years. If the increase in 2026 is lower than expected (e.g., the early impact of the EU ban), the current valuation is high.
 
-### 三情景估值
+# Three scenarios valuation
 
-> 基于2026年预估EPS=4.23 CNY（券商预期归母53.8亿/12.73亿股），投射3年至2029年。所有计算经工具精确验算。
+> On the basis of the 2026 estimate of EPS = 4.23 CNY (the voucher dealer is expected to return to the mother of 5.38 billion/1273 billion shares) and to project from 3 to 2029 years.
 
-| 情景 | 年增速 | 目标PE | 2029年EPS | 目标股价 | 较现价涨跌 |
+♪ The world's greatest challenge ♪
 |------|--------|--------|-----------|---------|-----------|
-| **乐观**（全球化+工商储双引擎） | 35% | 30x | CNY 10.41 | **CNY 312** | +207% |
-| **中性**（国内稳健+海外温和增长） | 20% | 22x | CNY 7.31 | **CNY 161** | +58% |
-| **悲观**（欧盟禁令+价格战+增速放缓） | 5% | 14x | CNY 4.90 | **CNY 69** | -33% |
+** EXPOINT ** (Globalization + Business Reserve Double Engine) <unk> 35% <unk> 30x <unk> CNY 10.41 ** CNY 312** <unk> +207% <unk>
+** Neutral** (domestic robust + moderate growth overseas) <unk> 20% <unk> 22x <unk> CNY 7.31 ** CNY 161** <unk> 58% <unk>
+** Pessimism** (EU ban + price war + slowdown) <unk> 5% <unk> 14x <unk> CNY 4.90 ** CNY 69** <unk> - 33% <unk>
 
-### 关键价格区间
+# Key price range
 
-| 价位（CNY） | 含义 | 对应2026E PE |
+CNY meaning
 |-------------|------|-------------|
-| 130-160 | 中性情景目标价 | 24-30x |
-| 100-110 | **当前价位** | 19-21x |
-| 70-80 | 安全边际较充足 | 13-15x |
-| 50-60 | 极端悲观（类似2023年底） | 9-11x |
+<unk> 130-160 <unk> Neutral scenario target price <unk> 24-30 x <unk>
+<unk> 100-110 <unk> ** Current price** <unk> 19-21x <unk>
+<unk> 70-80 <unk> Security margin sufficient <unk> 13-15x <unk>
+<unk> 50-60 Extreme pessimism (like the end of 2023) <unk> 9-11x <unk>
 
-### 追问：如果股市明天关闭5年，你愿意以这个价格持有吗？
+# Ask: If the stock market closes for five years tomorrow, will you hold it at this price?
 
-**有条件地愿意。**
+** Conditionally willing.**
 
-以101.85元买入，5年后（2031年）如果德业成功：
-- 年营收300-500亿、净利70-100亿，市值3000-5000亿（当前1,297亿的2.3-3.9倍），回报可观
-- ROE持续>25%，高分红率意味着持有期间有真金白银回报
+Purchased at $101.85, if five years later (2031) the German industry succeeds:
+- $30-50 billion per year, net gain of $7-10 billion, market value of $30-500 billion (currently 2.3-3.9 times the current $129.7 billion), with significant returns
+- ROE continues >25%, and high red rate means real silver returns during holding.
 
-但前提条件是：
-1. 欧盟禁令未扩散至更多西方国家
-2. 新兴市场渠道网络不被华为/Growatt大幅蚕食
-3. 工商储第二增长曲线成功起量
+However, the prerequisites are:
+1. The EU ban has not spread to more Western countries
+2. Emerging market channel networks are not heavily eroded by China/Growat
+3. Successful start of the second growth curve of the business reserve
 
-如果上述任一条件不满足，当前价格的安全边际不够——**建议等待回调至CNY 70-80区间（2026E PE ~13-15x）再建仓**。
+If any of these conditions are not met, the current price security margin is insufficient -** it is proposed to wait for a return to CNY 70-80 (2026E PE ~ 13-15x) to re-position**.
 
 ---
 
-## 七、综合决策备忘录
+# VII. Memorandums for integrated decision-making
 
-### 维度汇总
+# # dimension summary
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| 生意质量 | 优秀——新兴市场户储刚需+51%逆变器毛利率+极低费用率，ROE>30% | 85% |
-| 护城河 | 中等偏强——成本优势+渠道先发极强，但品牌弱、技术落后Enphase一代、贴牌占比高 | 70% |
-| 管理层 | 良好——战略决策记录优异，但家族集控、创始人73岁、继任安排不清晰 | 70% |
-| 最大风险 | 欧盟逆变器禁令（已立法，2027年全面生效）是最大的确定性中期利空 | 80%（风险确定性高） |
-| 文明趋势 | 强烈顺风——分布式光储是能源转型的核心载体，德业在新兴市场占据有利位置 | 90% |
-| 估值 | 偏高——PE 41x在A股逆变器板块中偏贵，2026E PE ~14.5x若业绩兑现则合理 | 60%（高度依赖业绩兑现） |
+<unk> Business quality <unk> Good - Emerging Market Household Reserves Just Need +51% Reverser Māori + Very Low Cost, ROE > 30% <unk> 85%
+The moats, the medium-high-cost advantage plus the channel were first extremely strong, but the brand was weak, the technology was backward, the Enphase generation was high, the tags were high, 70%.
+Management <unk> Good <unk> Strategic decision-making record excellent <unk> Family grouping, founder 73, lack of clarity of succession arrangements 70%
+The EU reverse changer ban (which is now in force in 2027) is the largest certainty medium-term profit margin 80% (high risk)
+The German industry has a favourable position in emerging markets.
+<unk> High - PE 41x is expensive in A Reverse Transflector plate, 2026E PE ~ 14.5x is reasonable if performance is met 60% (high reliance on performance) <unk>
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **等待回调至CNY 70-80区间（2026E PE 13-15x）再考虑建仓**。当前PE 41x对硬件制造商偏高，且欧盟禁令尚未充分定价。如果2026Q2-Q3继续保持高增长且禁令影响有限，可在CNY 85-95区间建5%观察仓 |
-| **持仓者** | **持有但控制仓位在10%以内**。生意质量、行业趋势、管理层三个维度均给正面信号。2026年业绩高增长（Q1+68%）是短期支撑。但需密切关注2027年欧盟禁令的实际执行和应收账款趋势 |
-| **卖出信号** | （1）欧盟禁令严格执行导致德国/欧洲收入季度环比下降>20%；（2）储能逆变器毛利率跌破40%；（3）应收账款增速持续超过营收增速2倍以上；（4）张和君大幅减持（>1%持股） |
-| **加仓信号** | （1）股价回调至CNY 70-80区间；（2）马来西亚产能成功规避欧盟/美国贸易壁垒；（3）工商储季度收入突破10亿并保持>50%增速；（4）自有品牌收入占比提升至30%+ |
+** Empty warehouser** ** Waiting to be transferred back to CNY 70-80 (2026E PE 13-15x) to consider warehousing**. Currently PE 41x is high on hardware manufacturers and the EU ban is not fully priced. If the growth of 2026Q2-Q3 continues with limited impact, 5% observation warehouse can be built between CNY 85-95
+<unk> ** warehousekeeper** ** has but controls within 10%**. ** Business quality, industry trends, management three dimensions are positive. <unk> high performance growth in 2026 (Q1+68%) is supported by short-term growth. <unk> However, close attention needs to be paid to the actual implementation of the 2027 EU ban and to the trend in accounts receivable
+<unk> ** Signals from sales** <unk> (1) Strict enforcement of the EU ban has led to a >20% decline in the German/European quarterly round of income > ; (2) a 40% decline in the storage counter-carriage rate; (3) a consistently higher rate of increase in receivables than the rate of increase in the harvest more than twice; (4) a significant decrease in the holding of Zhang and Kings (>1% shareholding) <unk>
+<unk> **Step signal** <unk> stock return to CNY 70-80; (2) Malaysian capacity to successfully circumvent EU/US trade barriers; (3) quarterly revenue from business deposits to exceed 1 billion and maintain > 50% growth; (4) self-owned brand revenue ratio to 30% + <unk>
 
-### 四维度模拟点评
+# 4D simulation of the evaluation
 
-> **生意质量视角**：这是一门好生意。储能逆变器51%毛利率、30%+ROE、40亿现金流——放在任何行业都是顶级指标。但好生意不等于好股票。问题在于：新兴市场的"电力刚需"能持续多久？南非电力改善后（Eskom逐步恢复供电），储能需求会不会断崖式下降？买德业不是买一个稳定增长的消费品公司，而是买一个高度依赖全球新兴市场电力缺口的周期成长股。
+> ** Quality of business perspective**: This is a good business. The storage capacity reversible 51% Māori, 30% + ROE, and 4 billion cash flows - in any industry - is a top indicator. But good business is not good stock. The question is: how long does the "power needs" in emerging markets last?
 
-> **逆向思维视角**：我最担心两件事。第一，欧盟禁令。这不是假设性风险——已经立法，2027年落地。德业24%收入来自德国，这是最高利润区。被封堵后的替代市场能否补上缺口？第二，应收账款。2024年增203%远超营收增速，这在新兴市场客户群体中是危险信号。巴基斯坦、乌克兰——这些国家的经销商真的能按时付款吗？
+> ** Inverse thinking**: I worry about two things most. First, the EU ban. This is not a hypothetical risk -- it has been legislated, and it landed in 2027. Germany is the top profit area, with 24% of German earnings. Can the closed substitute market fill the gap? Second, the receivables. The 203% increase in 2024 is far beyond the growth rate, which is a dangerous sign in the emerging market client community.
 
-> **管理层视角**：张和君是我见过的最优秀的中国草根企业家之一。高中学历，从模具工做到350亿身家。关键决策（并购日新、押注南非、提前布局储能）几乎全部正确。但他今年73岁了。两个儿子是加拿大籍，在中美脱钩的大背景下，这个细节让我不安。更让我不安的是"明增暗减"——嘴上增持12万股，实际通过员工持股平台减持5亿元。
+> ** Management perspective**: Zhang and Jun are among the best Chinese grassroots entrepreneurs I have ever seen. High school qualifications, 35 billion people from the model workers. Key decisions (merger and purchase days, bet on South Africa, early storage capacity) are almost all right. But he is 73 years old. The details are disturbing me in the context of China-US decoupling.
 
-> **文明趋势视角**：从20年的维度看，全球从集中式化石能源到分布式可再生能源的转变是不可逆的。德业站在了这个趋势的正确一侧。但个体公司能否持续捕获趋势红利取决于护城河的深度。德业的成本优势是强壁垒，但纯粹的成本领先在制造业中很少能维持20年——总有更便宜的替代者出现。德业需要在成本优势窗口期内建立品牌和软件生态，否则10年后可能沦为纯代工角色。
+> ** Civilization trend perspective**: The global shift from centralized fossil energy to distributed renewable energy sources is irreversible from a 20-year dimension. The German industry is on the right side of the trend. But the continued ability of individual companies to capture the dividends of the trend depends on the depth of the moat. The German industry has a cost advantage of strong barriers, but the pure cost is rarely ahead of the manufacturing industry for 20 years – and there are always cheaper substitutes.
 
 ---
 
-## 附录：AI分析置信度 vs 投资确定性
+# Appendix: AI Analytic Confidence vs Investment Determination
 
-| 结论 | AI分析置信度 | 投资确定性 | 说明 |
+<unk> Conclusion <unk> AI analysis of confidence <unk> Investment certainty <unk>
 |------|------------|-----------|------|
-| 生意质量优秀（高毛利+高ROE） | **高（90%）** | **高（85%）** | 财务数据充分、趋势清晰 |
-| 新兴市场渠道先发优势 | **高（85%）** | **中高（75%）** | 南非/巴西数据确凿，但可持续性需观察 |
-| 欧盟禁令将损害欧洲收入 | **高（85%）** | **高（80%）** | 已立法，时间表明确。不确定的是执行力度和豁免条款 |
-| 2026年净利达53.8亿 | **中高（75%）** | **中（65%）** | Q1+68%强力开局，但全年能否维持取决于Q2-Q4 |
-| 工商储成为第二增长引擎 | **中（60%）** | **中（55%）** | 投资已落地（21.27亿），但产能投产要到2028年 |
-| 应收账款风险可控 | **中（55%）** | **低（45%）** | 增速异常（+203%），新兴市场客户信用数据有限，AI难以准确评估坏账概率 |
-| 创始人继任安排妥当 | **低（40%）** | **低（35%）** | 公开信息极少披露继任计划，73岁创始人的健康和接班是AI的盲区 |
+<unk> High quality of business (high Mäori + high ROE) <unk> High (90%) ** High (85%) ** Financial data are adequate and trends are clear <unk>
+<unk> Advance advantage of emerging market channels <unk> high (85%) <unk> medium (75%) ** South Africa/Brazil data are robust but sustainability needs to be observed <unk>
+The EU ban will harm European income <unk> high (85%)<unk> high (80%)** legislation, time frame is clear.
+<unk> net profit of $5.38 billion in 2026 ** medium (75%)** medium (65%)** <unk> Q1+68% strong start, but maintenance throughout the year depends on Q2-Q4 <unk>
+<unk> Business reserves become second engine of growth <unk> medium (60%)** medium (55%)** investment has been settled (2.27 billion), but production capacity is expected to be operational by 2028 <unk>
+<unk> Receivable risk manageable <unk> medium (55%)** low (45%)** <unk> abnormal acceleration (+203%), limited credit data for emerging market clients, and difficulties for AI in accurately assessing the probability of bad debts <unk>
+<unk> The founder's succession arrangements are well organized <unk> low (40%)<unk> low (35%)<unk> Public information rarely discloses succession plans <unk> Health and replacement of 73-year-old founders are blind areas of AI <unk>
 
-**核心区分**：
-- 本报告对德业生意质量、成本优势、行业趋势的判断基于充分数据，置信度高
-- 最大的不确定性来自**欧盟禁令的实际执行力度**和**新兴市场应收账款质量**——前者取决于政治博弈，后者取决于各国经济状况，均超出公开数据分析能力
-- **当前PE 41倍需要"大部分乐观假设兑现"才能获得合理回报**。如果投资者对欧盟禁令影响和业绩持续性没有高于市场共识的信心，建议等待更好的价格
+** Core distinction**:
+- The report ' s judgement on the quality of German business, cost advantages, industry trends is based on sufficient data and high confidence
+- The greatest uncertainties are due to** actual enforcement of the EU ban** and** the quality of receivables in emerging markets ** — the former depends on political games and the latter on the economic situation of countries, both exceeding the ability to analyse publicly available data
+- **The current PE 41 times the number of optimistic assumptions that will be needed to achieve reasonable returns**. If investors do not have greater confidence in the impact of the EU ban and the sustainability of performance than the market consensus, suggest that they wait for better prices.
 
 ---
 
-*报告生成时间：2026年6月23日 | 数据截止：2026年6月23日*
-*货币单位：人民币（CNY）*
-*数据来源：德业股份年报/中报/季报、港股招股书（2026年1月）、Wood Mackenzie、SolarPower Europe、Grand View Research、Mordor Intelligence、Investing.com、东方财富、新浪财经、银河/华创/东吴/开源证券研报、Enphase 10-K、ESS News、PV Tech、pv magazine等*
+*Report generated: 23 June 2026
+* Monetary unit: renminbi (CNY)*
+*Source: Annual/in progress/quarterly, Ports Equity Reservation (January 2026), Wood Mackenzie, SolarPower Europe, Grand View Research, Mordor Intelligence, Investment.com, Eastern Wealth, New Wave Finance, Galaxy/Hong Kong/Kai Source Securities Research, Enphase 10-K, ESS News, PV Tech, pv Magazine, etc.*

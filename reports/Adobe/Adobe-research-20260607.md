@@ -1,38 +1,38 @@
-# Adobe (ADBE) 投资研究报告
+#Adobe (ADBE) Investment Studies
 
-> 分析日期：2026年6月7日 | 股价：$250 | 市值：1,010亿美元
+> date of analysis: 7 June 2026 Stock price: $250
 >
-> 信息丰富度评级：**A级**（上市42年，券商覆盖39家，媒体报道密集）
+> Information abundance rating: **A level** (42 years on the market, 39 coupons covered, intensive media coverage)
 >
-> AI研究局限性声明：Adobe是信息极度充裕的公司，AI分析可能趋同于市场共识。本报告重点做反面检验——聪明人为什么在卖？被忽略的风险是什么？
+> AI study limitations statement: Adobe is a highly informative company, and AI analysis may converge with market consensus. This report focuses on the negative test - why are smart people selling? What are the risks of being overlooked?
 
 ---
 
-## 综合决策备忘录（前置结论）
+# Comprehensive decision-making memorandum (pre-conclusion)
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| 生意质量 | 订阅制创意工具垄断者，毛利率89%，FCF强劲——好生意 | ★★★★★ |
-| 护城河 | 从"宽"过渡到"窄"，转换成本仍在但AI侵蚀边缘 | ★★★☆☆ |
-| 管理层 | 18年CEO即将离任，继任者未定，交接期风险 | ★★★☆☆ |
-| 最大风险 | AI将创意工具价值从应用层下沉到模型层 | ★★★★☆ |
-| 文明趋势 | AI是创意工具的范式转移，Adobe既是受益者也是受害者 | ★★★☆☆ |
-| 估值 | PE 14.5x，FCF Yield 10.2%，历史罕见低估 | ★★★★★ |
+The market is a good business, the subscriptions are a monopoly of creative tools, 89% of the Māori are strong, the FCF is strong, the good business is good, the good business is good, the bad is bad.
+The moat, the moat, the moat, the switch from "broad" to "narrow," the conversion cost is still on the edge of the A.I. erosion.
+<unk> Management <unk> 18 years of departure of CEO, undetermined successor, risk period of handover <unk>
+AI sunk the value of creative tools from the application layer to the model layer.
+The A.I. is a paradigm shift in creative tools, and Adobe is both a beneficiary and a victim.
+<unk> Valuation <unk> PE 14.5x, FCF Yield 10.2%, history rarely understates <unk>
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| 空仓者 | 当前价位可建立小仓位（10-15%目标仓位），等Q2财报（6月11日）确认增长后加仓 |
-| 持仓者 | 继续持有，当前估值提供安全边际 |
-| 卖出信号 | Creative Cloud ARR增速跌破8%；企业席位续约出现下降；新CEO战略方向大幅偏离 |
-| 加仓信号 | 股价跌破$220（FCF Yield >12%）；新CEO确认且市场认可；AI变现数据持续加速 |
+The current price can be set up for small storage (10-15% of the target warehouse) and after the Q2 financial statement (11 June) confirms the increase and the storage is increased.
+♪ The barnkeeper ♪ ♪ The owner continues to hold, the current valuation provides security margin ♪
+<unk> Creative Claude ARR drops by 8%; business seats are renewed by falling; new CEO strategic directions are significantly different
+<unk> Garrison signal <unk> stock price falls $220 (FCF Yield > 12%); new CEO confirmed and market approved; AI liquidity data continues to accelerate
 
 ---
 
-## 第一步：核心财务数据
+# Step 1: Core financial data
 
-### 5年财务趋势
+# # 5 years financial trend
 
-| 财年 | 收入（亿美元） | 净利润（亿美元） | 收入增速 | 毛利率 | Non-GAAP经营利润率 | FCF（亿美元） |
+(In millions of United States dollars)
 |------|---------------|-----------------|---------|--------|-------------------|--------------|
 | FY2021 | 157.85 | 48.22 | +23% | ~88% | ~46% | ~62 |
 | FY2022 | 176.06 | 47.56 | +12% | ~88% | ~46% | ~67 |
@@ -40,278 +40,278 @@
 | FY2024 | 215.10 | 55.60 | +11% | ~89% | ~46% | ~79 |
 | FY2025 | 237.69 | 71.30 | +11% | ~89% | ~46% | ~99 |
 
-数据来源：Adobe 10-K/8-K（SEC）；StockAnalysis
+Sources: Adobe 10-K/8-K (SEC); StockAnalysis
 
-### FY2025 分部收入
+# # SY2025 Division income
 
-| 业务分部 | 收入（亿美元） | 占比 | 同比增长 |
+<unk> Business branch <unk> Income ($ billion) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 |---------|---------------|------|---------|
-| Digital Media（创意云+文档云） | 176.50 | 74% | +11% |
-| Digital Experience（体验云） | 58.60 | 25% | +9% |
+<unk> Digital Media (Concrete Clouds + Document Clouds) <unk> 176.50 <unk> 74% <unk> + 11% <unk>
+<unk> Digital Exchange (Expercise Clouds) <unk> 58.60 <unk> 25% + 9% <unk>
 | Publishing & Other | ~2.59 | 1% | — |
-| **合计** | **237.69** | **100%** | **+11%** |
+** Total** ** 237.69** ** 100%** ** ** 11%** ** **
 
-### 最新季度（Q1 FY2026，2025.12-2026.02）
+## # latest quarter (Q1 SY2026, 2025.12-2026.02)
 
-- 收入：64.0亿美元（+12% YoY）
-- Non-GAAP EPS：$6.06（超预期 $5.87）
-- 经营现金流：29.6亿美元（季度新高）
-- Digital Media ARR：260.6亿美元
-- RPO（剩余履约义务）：222.2亿美元（+13% YoY）
+- Income: $6.4 billion (+12% YoY)
+- Non-GAAP EPS: $6.06 (over-expected $5.87)
+- Operating cash flow: $2.96 billion (quarterly high)
+- Digital Media ARR: $26.6 billion
+- RPG (remaining performance obligation): $22.22 billion (+13% YoY)
 
-### 当前估值指标（工具验算）
+## Current valuation indicator (tool validation)
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|------|------|
-| 股价 | $250 | 2026.06.06 |
-| 市值 | 1,010亿美元 | ✅ 验算通过（偏差0.54%） |
-| PE (TTM) | 14.55x | ✅ 工具验算 |
-| Forward PE | ~10.4x | 基于FY2026E EPS ~$24 |
-| PB | 8.93x | ✅ 工具验算 |
-| P/FCF | 9.80x | ✅ 工具验算 |
-| FCF Yield | 10.21% | ✅ 工具验算 |
+<unk> Stock price <unk> $250 <unk> 2026.06 <unk>
+Market value $101 billion
+<unk> PE(TTM)<unk> 14.55x<unk> Tool tool measurement
+~10.4x ~FY2026E EPS ~ $24 ~
+<unk> PB<unk> 8.93x<unk> <unk> Tool measurement
+<unk> P/FCF <unk> 9.80x <unk> Tool measurement
+FCF Yield <unk> 10.21% <unk> Tool
 | PEG | 0.81 | GuruFocus |
 | EV/EBITDA | 10.66x | StockAnalysis |
-| ROE | 61.4% | ✅ 工具验算 |
+<unk> ROE <unk> 61.4%
 
-### 资产负债表
+# Balance sheet
 
-| 指标 | FY2025末 |
+Indicator: end of SY2025
 |------|---------|
-| 现金及等价物 | ~54亿美元 |
-| 长期债务 | ~62亿美元 |
-| 净债务 | ~8亿美元 |
-| 债务/FCF | 0.6x（极低） |
+Cash and equivalents
+Long-term debt
+Net debt ~ $800 million ~
+<unk> Debt/FCF <unk> 0.6x (very low) <unk>
 
-### 回购记录
+# Repurchase records
 
-| 财年 | 回购金额（亿美元） | 说明 |
+Amount of repurchase ($ billion)
 |------|-------------------|------|
-| FY2023 | ~46 | 均价 ~$401 |
-| FY2024 | ~100 | 均��� ~$543（高价回购） |
-| FY2025 | ~128 | 均价 ~$415 |
+FY2023 ~46 ~ Average $ 401 ~
+~100 ~ $543 (high-value buyback) ~
+~128 ~ $415 ~
 
-授权余额：250亿美元回购计划（有效期至2028.03）。
+Authorized balance: $25 billion buyback plan (effective until 2028.03).
 
 ---
 
-## 第二步：生意本质分析
+# Step 2: Business nature analysis
 
-### 一句话定义
+# One word of definition
 
-**Adobe 的生意本质是"创意和文档工作流的订阅税"——专业人士每月必须缴纳的生产力工具使用费。**
+** Adobe's business essence is "subscription tax on creative and documentary workflows" - monthly productivity tool user fees that professionals must pay.**
 
-### 商业模式画布
+# Business model canvass
 
-| 维度 | 分析 |
+X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, and X-ray, X-ray, X-ray, X-ray, X-ray, and then-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray,
 |------|------|
-| 收入模式 | 订阅制（占比>95%），按席位/用量计费 |
-| 客户 | 创意专业人士（设计师/摄影师/视频制作者）+ 企业（营销团队/IT部门） |
-| 锁定机制 | PSD/AI/INDD专有格式 + 工作流惯性 + 年费订阅罚款 |
-| 毛利率 | 89%（软件分发的边际成本趋近于零） |
-| 经营杠杆 | 收入增长11%时，FCF增长25%——强经营杠杆 |
+Income pattern <unk> Subscription (> 95%), by seat/volume
+<unk> Client <unk> Creative professionals (designer/photographer/video producer) + enterprises (marketing team/IT sector) <unk>
+<unk> Locking mechanism <unk> PDF/AI/IND-specific format + Inertance + Annual subscription penalty <unk>
+<unk> Māori ratio <unk> 89% (the marginal cost of software distribution is closer to zero) <unk>
+When the income grew by 11%, the FCF grew by 25% - strong leverage.
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> 这门生意好在哪？如果只能用一句话描述，是什么？
+Where is this business better? If only one word can be said, what is it?
 
-**"Adobe的好在于：客户付费不是因为喜欢Adobe，而是因为不得不用——10年的PSD文件、团队协作流程、行业标准要求都绑在了Adobe身上。这种'不得不'比'想要'更持久。"**
+** "Adobe's good thing is that the client pays not because he likes Adobe, but because he has to use -- 10 years of PSD documents, team work processes, industry standards are tied to Adobe. This'll have to be more permanent than 'want'."**
 
-但另一方面：如果AI让创作变得简单到不需要专业工具，这种"不得不"就会松动。
+But on the other hand, if AI makes creation so simple that it does not require professional tools, this "must" will be relaxed.
 
 ---
 
-## 第三步：护城河评估
+# Step three: A moat river assessment
 
-| 护城河类型 | 强度 | 证据 | 趋势 |
+♪ The moat type ♪
 |-----------|------|------|------|
-| 转换成本 | ★★★★☆ | PSD/AI/INDD格式锁定，10年+文件资产不可迁移 | 稳定，但AI可能绕过 |
-| 品牌/定价权 | ★★★★☆ | 2024-2025涨价16-50%，NRR仍达130% | 仍在，但激进涨价推动替代品探索 |
-| 规模效应 | ★★★☆☆ | 研发42.9亿/年，小公司无法匹敌 | 稳定 |
-| 网络效应 | ★★☆☆☆ | 文件格式是事实标准，但非传统网络效应 | 被Figma协作功能削弱 |
-| 技术壁垒 | ★★★☆☆ | Firefly"商用安全"差异化，但AI技术迭代太快 | 不确定 |
+<unk> Conversion cost <unk> PSD/AI/INDD format locked, 10 years + file assets not transferable <unk> stable, but AI may bypass <unk>
+The price increase of 2024-2025 is 16-50%, and the NRR is still 130%.
+♪ The big one ♪
+The file format is a factual criterion, but the non-traditional network effect is weakened by Figma collaboration
+Technical barriers, technical barriers, technical problems, and the difference between Firefly "commercial security," but AI technology is fast and fast.
 
-### 晨星护城河降级（2026年3月）
+# Morning Starfleet down (March 2026)
 
-晨星将Adobe从**"宽护城河"降为"窄护城河"**：
-- 公允价值从$560降至$380（降幅32%）
-- 理由：AI时代软件公司长期回报率不确定性增加
-- 护城河来源从"转换成本+网络效应"缩减为仅"转换成本"
+Morning Stars descended Adobe from ** the Broadguard River to ** the narrow Guardian River:
+- Fair value decreased from $560 to $380 (32 per cent decrease)
+- Reason: Increased uncertainty about the long-term return of AI-era software
+- The moat's source has been reduced from "conversion costs plus network effects" to "conversion costs" only.
 
-### 巴菲特式追问
+# Barfith-style questioning
 
-> 10年后这条护城河还在吗？什么能摧毁它？
+> Is this moat still in place in 10 years? What can destroy it?
 
-**护城河仍在的情景**：AI成为Adobe产品的增强功能（像Firefly一样嵌入），专业创作仍需要Adobe级别的精细控制，PSD格式继续是行业标准。
+** The still-fenced river**: AI became an enhanced feature of Adobe products (as embedded as Firefly), professional creation still required precision control at Adobe level, and PSD format continued to be industry standard.
 
-**护城河被摧毁的情景**：AI让"非设计师"可以直接生成专业级内容（无需Photoshop），创作从"工具导向"变为"提示词导向"，文件格式的重要性因AI实时生成而下降。
+** The destruction of the moat river**: AI allows "non-designer" to directly generate professional content (without the need for Photoshop) and to create from "tool-oriented" to "speech-oriented" and the importance of file formats is reduced by the real-time generation of AI.
 
-**我的判断**：5年内护城河仍在（企业客户惯性极强），但10年维度存在结构性风险。窄护城河的评级是合理的。
+** My judgement**: The moat river is still in place for five years (business customers are extremely inert), but there are structural risks in 10 years.
 
 ---
 
-## 第四步：逆向思考与风险清单
+# Step four: Reverse thinking and risk list
 
-### Adobe可能失败的所有路径
+# All paths Adobe could fail #
 
-| 路径 | 概率 | 影响程度 | 时间维度 |
+The path, the probability, the impact, the time dimension, the time dimension, the time dimension, the time dimension, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the, the time, the time, the time, the time, the, the, the, the time, the time, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the..., the, the, the, the, the, the, the, the, the, the, the, the, the, the, the,
 |------|------|---------|---------|
-| AI让创意工具价值从应用层下沉到模型层 | 30% | 致命 | 5-10年 |
-| Canva+Figma双面夹击蚕食份额 | 40% | 中等 | 3-5年 |
-| 新CEO战略失误 | 20% | 中等 | 1-3年 |
-| 激进涨价引发客户流失 | 25% | 低 | 1-2年 |
-| Adobe Stock被Firefly自我蚕食 | 80% | 低（4.5亿收入） | 已在发生 |
-| 体验云被Salesforce/HubSpot挤压 | 35% | 低 | 持续 |
+AI allows the value of creative tools to sink from the application layer to the model layer.
+<unk> Canva+Figma double-faced catch-off share <unk> 40% <unk> medium <unk> 3-5 years <unk>
+New CEO strategic failure 20% 20%
+<unk> Radical price hikes trigger loss of customers <unk> 25% <unk> low <unk> 1-2 years <unk>
+<unk> Adobe Stock is being self-infested by Firefly 80% <unk> low (45 million income) <unk>
+♪ The clouds are squeezed by Salesforce/HubSpot 35% ♪
 
-### 历史类比
+# History analogy
 
-| 类比公司 | 相似之处 | 结局 | 对Adobe的启示 |
+The synonyms, the synonyms, the similarities, the ending, the revelation to Adobe, the resonance to the hymn.
 |---------|---------|------|-------------|
-| Microsoft Office（2010年） | 垄断办公软件，面临云/移动挑战 | 成功转型订阅制，市值翻10倍 | Adobe已完成订阅转型，但AI是新一轮挑战 |
-| Kodak（2000年） | 数码相机颠覆胶卷 | 破产 | 如果AI真的让"人人都是设计师"，Adobe可能是新Kodak |
-| Autodesk（2015年） | 同为设计工具订阅转型 | 成功，但增速放缓 | 转型成功≠持续高增长 |
+<unk> Microsoft Office (2010) Monopoly office software, facing cloud/mobility challenges <unk> Successful conversion of subscription systems, with a market value of 10 times <unk> Adobe completed subscription transition, but AI is a new challenge <unk>
+If AI really lets "everybody is a designer," Adobe could be the new Kodak platinum.
+Autodesk (2015) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-### 芒格式追问
+# Man format questions
 
-> 我最可能在哪里犯错？聪明人为什么会不买/做空这家公司？
+Where would I most likely make a mistake? Why would a smart man not buy or do a job on this company?
 
-**空方最核心的一条逻辑**：Adobe当前的估值（PE 14x）看似便宜，但如果AI真的在3-5年内颠覆创意工具市场，那么Adobe的"正常化"盈利水平可能不是当前的$17 EPS，而是$10-12。按$10 EPS × 12x PE = $120——比现价还有50%下跌空间。
+** The core logic of the empty party**: Adobe's current valuation (PE 14x) seems cheap, but if AI really subverts the market for creative tools in 3-5 years, Adobe's "normal" profitability may not be the current $17 EPS, but $10-12. At $10 EPS x 12 x PE = $120 — there is 50% more room for decline than in current prices.
 
-**我犯错的最大可能**：低估AI颠覆的速度。历史上，技术颠覆总是"比预期慢开始，比预期快结束"。
+** The greatest possibility of my mistake**: underestimating the speed of AI's subversion. Historically, technology subversion has always "started slower than expected, ended faster than expected."
 
 ---
 
-## 第五步：管理层评估
+# Step 5: Management assessment
 
-### CEO Shantanu Narayen 关键决策
+# CEO Shantanu Narayen Key Decision Making
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|:----:|
-| 2012-13 | 创意软件从买断制转订阅制 | 颠覆性成功，股价涨6倍 | 5/5 |
-| 2009 | 18亿收购Omniture | 奠定体验云基础，年收入58.6亿 | 4/5 |
-| 2022 | 200亿收购Figma | 被反垄断否决，赔10亿分手费，错失380亿价值 | 1/5 |
-| 2023-24 | 推出Firefly | "���用安全"差异化，ARR>2.5亿，但蚕食Stock | 3/5 |
-| 2026.03 | 宣布卸任CEO | 过渡期不确定性，股价再跌6% | 待观察 |
+<unk> 2012-13 Creative software from buy-off to subscription
+<unk> 2009 <unk> 1.8 billion to buy Omniture <unk> to create a foundation for experience, earning an annual income of $5.86 billion <unk> 4/5 <unk>
+2022 billion to buy Figma, 1 billion to pay for break-up, and 38 billion to lose.
+2023-24. Launching Firefly <unk> "Safe" difference, ARR > 250 million, but eating Stock 3/5 <unk>
+<unk> 2026.03. <unk>
 
-### 管理层诚信度
+# Management integrity
 
-| 维度 | 评价 | 证据 |
+<unk> Dimensions Evaluation Evidence <unk>
 |------|------|------|
-| 坦诚度 | 正面 | 公开承认Stock业务下滑"超预期"，不掩盖 |
-| 承诺兑现 | 较好 | 收入指引多次达成或超预期 |
-| 减持行为 | 值得关注 | 近期减持$1800万（持仓减17%），但非清仓式 |
-| 资本配置 | 中等偏上 | 大规模回购（250亿计划），但FY2024高价回购（均价$543）显示时机判断不佳 |
+♪ And the truth, the head, the head, the head, the public admits that Stock's downhill ♪
+♪ Promise to live up to the promise ♪ ♪ Better ♪ ♪ Income guidance comes through or exceeds expectations ♪
+The recent reduction of $18 million (17% for warehousing), but not the clearing system.
+<unk> Capital allocation <unk> Medium-to-medium repurchases (plan 25 billion), but high FY 2024 buybacks (average $543) show bad timing
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> 如果CEO退休，这家公司还能保持竞争力吗？
+> If CEO retires, can this company remain competitive?
 
-**风险明确**：Narayen的接班人尚未确定（预计6-9个月内），这是一个真实的不确定性。但Adobe的竞争优势更依赖生态/格式锁定而非CEO个人魅力，组织能力足以支撑过渡期。
+** Risk clear**: Narayen’s successor is not yet identified (expected to be 6-9 months), which is a real uncertainty. But Adobe’s competitive advantage is more dependent on ecological/format locking than on CEO personal charm, and organizational capacity is sufficient to support the transition period.
 
 ---
 
-## 第六步：行业与文明趋势
+# Step 6: Industry and civilizational trends
 
-### AI对创意工具的影响 — 李录"文明演进框架"
+# AI's influence on creative tools - Lee Sze "The Framework for Civilization Evolution"
 
-AI对创意工具是**文明级范式转移**——类似从手工排版到桌面出版（DTP），Adobe恰恰是上一次转移的赢家。
+AI's creative tool is ** civilizational paradigm shift** — similar to the manual layout to desktop publishing (DTP), where Adobe was the winner.
 
-| 维度 | 分析 |
+X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, and X-ray, X-ray, X-ray, X-ray, X-ray, and then-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray, X-ray,
 |------|------|
-| TAM变化 | AI可能扩大创意市场TAM（更多人能创作），但单位价值下降 |
-| 价值链位置 | Adobe处于"应用层"，AI的价值可能下沉到"模型层" |
-| 历史类比 | DTP时代：Adobe(PostScript) > 手工排版 → AI时代：模型(Midjourney) > Adobe？ |
+AI may expand the creative market Tam (more people can create), but the unit value is down.
+<unk> Adobe is in the "application level" and AI's value may sink to the "model layer" <unk>
+History analogue DTP Age: Adobe (PostScript) > Manual Layout <unk> AI Age: Model (Midjourney) > Adobe?
 
-### 李录式追问
+# Lee's asking questions
 
-> 站在20年后回看，这家公司是"这个时代的标准石油"还是"昙花一现的3Com"？
+♪ Stand back 20 years and look at this company as "standard oil of the time" or "trimmy com"?
 
-**我的判断**：Adobe更可能是"微软式"的存在——在新范式中找到自己的位置，但不再是唯一赢家。不会消失，但增长中枢可能从11%降至5-7%。不是3Com，也不是标准石油，而是一家"持续存在但光环褪色"的好公司。
+** My judgment**: Adobe is more likely to be a "soft" presence -- finding his place in the new paradigm, but no longer the only winner. It won't disappear, but the growth hub could drop from 11% to 5-7%. It's not 3Com, it's not standard oil, it's a good company that "continues but fades with light."
 
 ---
 
-## 第七步：估值与安全边际
+# Step seven: valuation and security margin
 
-### 三情景估值（工具精确计算）
+#3 scenario valuation (tool precision)
 
-| 情景 | 年增速 | 3年后EPS | 目标PE | 目标股价 | 涨跌幅 |
+♪ The world's gonna be so big ♪
 |------|--------|---------|--------|---------|--------|
-| 乐观 | 15% | $26.13 | 25x | **$653** | +161% |
-| 中性 | 10% | $22.87 | 18x | **$412** | +65% |
-| 悲观 | 5% | $19.89 | 12x | **$239** | -5% |
+<unk> 15% <unk> 26.13 <unk> 25x <unk> ** $653** <unk> 161% <unk>
+<unk> Gender 10% <unk> 22.87 <unk> 18x <unk> ** $412** <unk> 65% <unk>
+♪ We're gonna be the best we can ♪
 
-### 与历史估值对比
+# Compared to historical valuations
 
-| 时期 | PE | 说明 |
+Period
 |------|-----|------|
-| 10年中位数 | ~49x | 市场给予高成长溢价 |
-| 5年中位数 | ~38x | 成长放缓但仍有溢价 |
-| 当前 | 14.5x | **历史最低区间** |
-| 如果回到5年中位PE | $17.18 × 38 = $653 | 翻倍空间 |
+<unk> Medium 10 years ~ 49x <unk> Markets give high growth premiums ~
+<unk> Medium five-year ~38x<unk> Slow growth but still price premiums ~
+<unk> Current <unk> 14.5x<unk> Home lowest **
+If you return to the middle of five years of PE $17.18 x 38 = $653 <unk> , double the space
 
-### 反向DCF
+# Back to DCF
 
-当前$250股价隐含的假设：
-- 未来10年FCF年增长仅~3-4%（远低于历史11%）
-- 即市场在定价"AI颠覆导致增长停滞"的情景
+The current implied assumption of $250:
+- FCF annual growth in the next 10 years is only ~3-4% (almost below 11% in history)
+- That's the market pricing "AI's downside" scenario.
 
-### 与同行对比
+# Compared to peers
 
-| 公司 | 前瞻PE | 收入增速 | FCF Yield |
+The company, the company, the forward-looking PE, the income growth rate, the FCF Yield, the income growth rate, the growth rate, the growth rate, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the increase in the income of the company, the amount of the money, the increase in the income of the country, the income of the country, the difference, the situation is the way, the way, the way, the way, the way, the way, the way, the way, the way it is the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the income, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the way, the
 |------|--------|---------|-----------|
 | Adobe | 10.4x | 11% | 10.2% |
 | Salesforce | 13x | 9% | 7% |
 | Microsoft | 22x | 15% | 3.5% |
 | ServiceNow | 22x | 19% | 5% |
 
-Adobe是这组同行中**估值最低、FCF Yield最高**的。
+Adobe was the lowest valuation of the group** and the highest FCF Yield**.
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> 如果股市明天关闭5年，你愿意以这个价格持有吗？
+> If the stock market closes for five years tomorrow, will you hold it at this price?
 
-**愿意，但仓位不宜过重。** 理由：
-- 10%的FCF Yield意味着即使增长为零，5年累计回收50%本金
-- 但护城河确实在收窄，5年后的确定性不如腾讯/微软
-- 合理仓位：5-10%（而非20%+重仓）
+** Yes, but it should not be too heavy.** Reason:
+- 10% FCF Yield means that even if the increase is zero, 50% of the principal is recovered over five years
+- But the moat is shrinking. Five years later, it's less certain.
+- Reasonable location: 5-10% (rather than 20% + heavy)
 
 ---
 
-## 关键数据交叉验证记录
+# Cross-checking records for key data
 
-| 数据点 | 来源1 | 来源2 | 偏差 | 结果 |
+<unk> Data point <unk> Source 1 <unk> Source 2 <unk> Variance <unk> Results <unk>
 |--------|-------|-------|------|------|
-| 市值 | 计算值1,010亿 | 报告值1,016亿 | 0.54% | ✅通过 |
-| FY2025收入 | 10-K: 237.69亿 | BusinessWire: 237.69亿 | 0% | ✅通过 |
-| FY2025净利润 | 10-K: 71.30亿 | StockAnalysis: 71.30亿 | 0% | ✅通过 |
-| PE (TTM) | 工具验算: 14.55x | StockAnalysis: 14.66x | 0.8% | ✅通过 |
-| 总股本 | StockAnalysis: 4.042亿 | 10-Q: 4.11亿(稀释) | 差异为基本vs稀释 | ✅合理 |
+The report is worth 101.6 billion.
+<unk> SY2025 Income 10-K: 23.769 billion <unk> BusinessWire: 23.769 billion <unk> 0% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> FY2025 net profit <unk> 10-K: 71.30 million <unk> StockAnalysis: 71.30 million <unk> 0% <unk> <unk> through <unk>
+<unk> PE (TTM) <unk> Tool: 14.55x <unk> StockAnalysis: 14.66x <unk> 0.8% <unk> by <unk>
+<unk> StockAnalysis: 404.2 million <unk> 10-Q: 411 million (reduced) <unk> Differences are basic vs diluted <unk>
 
 ---
 
-## AI分析置信度 vs 投资确定性
+# AI analyze confidence vs investment certainty
 
-| 维度 | AI分析置信度 | 投资确定性 |
+<unk> dimension <unk> AI analysis of confidence <unk> Investment certainty <unk>
 |------|------------|-----------|
-| 财务数据 | 极高（公开披露完整） | 极高（数据可验证） |
-| 生意本质 | 极高（商业模式清晰） | 高（订阅模式确定） |
-| 短期护城河（1-3年） | 高 | 高（转换成本仍在） |
-| 长期护城河（5-10年） | 中低（AI影响不确定） | 低（无法确定AI颠覆速度） |
-| 管理层 | 中（CEO交接期） | 低（新CEO未确定） |
-| 估值 | 高（数据充分） | 高（确实处于历史低位） |
+Financial data <unk> High level (public disclosure complete) <unk> High level (data authenticated) <unk>
+♪ Business nature ♪ ♪ business nature ♪ ♪ business model clear ♪ ♪ business model clear ♪ ♪ business model clear ♪
+<unk> Short-term moat (1-3 years) <unk> High <unk> High <unk> (conversion costs still) <unk>
+Long-term moat (5-10 years) Medium low (AI impact uncertain) Low (AI destabilization speed not possible)
+<unk> Management <unk> (CEO handover period) <unk> Low (new CEO not determined) <unk>
+<unk> Valuation <unk> High (data is sufficient) <unk> High (almost in historical low) <unk>
 
-**基于充分数据的结论**：Adobe当前估值处于历史罕见低位，FCF能力强劲，短期内护城河仍在。
+** Conclusion based on sufficient data**: Adobe's current valuation is at a historically low level, FCF is strong and the moat is still in place in the short term.
 
-**基于有限信息的推理**：AI对创意工具的长期影响无法精确预测。晨星降级是一个信号，但降级后股价又跌了35%——市场可能过度反应了。
+** A reasoning based on limited information**: AI’s long-term impact on creative tools cannot be predicted with precision. Morning star downgrading is a signal, but after downgrading, stock prices fall by 35% – the market may overreact.
 
 ---
 
-## 四位大师模拟点评
+# Four masters simulated the reviews
 
-> **巴菲特**："一个89%毛利率、10%FCF收益率的生意，在任何年代都值得关注。但护城河从宽变窄，我需要更多折扣。$200以下我会认真考虑。"
+> **Buffett**: "A business with 89% Māori and 10% FCF returns is worth attention in any age. But the moat has become narrow and I need more discounts. I'll consider less than $200."
 
-> **芒格**："反过来想——如果AI真的让每个人都能做专业设计，Adobe不就成了卖铲子给金矿的人吗？不对，它成了卖铲子但金矿可能不需要铲子了。这个问题没有确定答案。"
+> ** Mang**: "Cut back to thinking -- If AI really allows everyone to do a professional design, wouldn't Adobe be the one who sells shovels to gold mines? No, it sells shovels but the gold mines may not need shovels. That question does not answer."
 
-> **段永平**："好生意不等于好投资。Adobe生意很好，但我不确定10年后'好'的程度。CEO交接期增加了不确定性。如果是我，我会等新CEO上任且证明自己后再动手。"
+> **Ping Yongping**: "Good business is not good investment. Adobe's good business, but I'm not sure how much 'good' will be after 10 years. The CEO's handover period adds uncertainty. If it were me, I'd wait until the new CEO takes up his duties and proves himself."
 
-> **李录**："从文明演进的角度，AI是比互联网更大的变革。每一次大变革都会有旧王让位新王。Adobe是旧王——它可能适应，也可能不能。我更愿意投新王。"
+> **Lisu**: "AII is a much bigger change than the Internet from the point of view of civilization. Every big change will be the king of the old. Adobe is the king of the old -- it may adapt or not. I prefer to be the king."

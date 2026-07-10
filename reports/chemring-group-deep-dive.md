@@ -1,379 +1,379 @@
-# Chemring Group (CHG.L) 深度投资研究报告
+#Chemring Group (CHG.L) In-depth investment study
 
-**研究日期：2026年6月4日 | 股价：497.8p | 市值：约14.3亿英镑**
-
----
-
-## 一、公司概况
-
-Chemring Group PLC（伦敦交易所代码：CHG）是一家英国防务技术集团，总部位于汉普郡，成立于1905年，在伦敦证券交易所上市。公司专注于高壁垒、高门槛的含能材料（Energetics）与传感器技术两大领域。
-
-### 业务结构（两大分部）
-
-**1. 对抗措施与含能材料（Countermeasures & Energetics）**
-- 占集团营收约60%，是核心利润引擎
-- 产品包括：硝化纤维素（NC）基推进剂、HMX高能炸药、MCX含能材料、固体火箭推进剂、烟火装置、弹药组件、卫星分离子系统、导弹组件
-- 生产高度危险的含能材料，需要极其严格的安全许可和监管认证
-- 主要客户：Nammo（挪威）、Diehl Defence（德国）、各国军方
-
-**2. 传感器与信息（Sensors & Information，含Roke子公司）**
-- 占集团营收约40%
-- 产品包括：电子对抗设备、化学/生物威胁探测、爆炸物危险探测设备
-- 2026年4月发布CORTEXA GUARDIAN反无人机系统，已在瑞典和英国实现销售
-- Roke防务产品五年国际销售管线超过3亿英镑
-
-### 全球生产设施
-
-Chemring在英国、美国、挪威、澳大利亚设有核心制造基地，产品销往全球50多个国家的军事组织和安全机构。特别值得注意的是：
-
-- **挪威 Chemring Nobel**：含能材料生产核心基地，满负荷运转中
-- **美国田纳西州**：投资1.2亿美元的含能材料新设施
-- **英国苏格兰**：对抗措施生产扩张
-- **澳大利亚**：满足主权能力要求的特种生产
-
-这些设施均属于高度危险的军用制造，受到严格的环境、安全和国防监管，新建许可证通常需要一年以上，构成天然的进入壁垒。
+** Date of study: 4 June 2026 Stock price: 497.8p Market value: approximately Pound1.430 billion**
 
 ---
 
-## 二、财务数据分析
+# I. Corporate profile
 
-### 2.1 近五年财务趋势
+The company focuses on high barriers, high-threshold energy content and sensor technology.
 
-| 指标 | FY2021 | FY2022 | FY2023 | FY2024 | FY2025 |
+# # Business structure (two branches)
+
+**1. Countermeasures and Energy Materials (CounterMeasures & Energy)**
+- About 60% of the group revenue, core profit engine.
+- Products include nitrocellulose (NC) base propellants, HMX high-energy explosives, MCX energy-containing materials, solid rocket propellants, pyrotechnic devices, ammunition components, satellite separation subsystems, missile components
+- Production of highly hazardous energy-containing materials requiring extremely strict safety permits and regulatory certification
+- Main clients: Nammo (Norway), Diehl Diffence (Germany), national military
+
+**2. Sensors and information (Sensors & Information, including Roke subsidiary)**
+- About 40% of the group.
+- Products include electronic countermeasures equipment, chemical/biological threat detection equipment, explosive hazard detection equipment
+- Released in April 2026 of the CORTEXA GUIARDIAN anti-operability system, which has been marketed in Sweden and the United Kingdom
+- The five-year international sale of Roke defense products exceeds £300 million.
+
+# Global production facilities
+
+The following are particularly noteworthy:
+
+- **Norway: Core energy materials production base, operating at full capacity
+- ** Tennessee, United States**: investment in $120 million in new energy-containing materials facilities
+- ** Scotland**: Production expansion of counter-measures
+- **Australia**: Special production to meet sovereign capacity requirements
+
+These facilities are highly dangerous military manufactures, subject to strict environmental, security and defence controls, and new permits usually take more than one year, constituting a natural barrier to entry.
+
+---
+
+# II. Analysis of financial data
+
+#2.1 Financial trends for the last five years
+
+<unk> Indicator <unk> FY2021 <unk> FY2022 <unk> FY2023 <unk> FY2024 <unk> FY2025 <unk>
 |------|--------|--------|--------|--------|--------|
-| 营收（百万英镑） | 393.3 | 401.0 | 472.6 | 488.3* | 497.5 |
-| 经营利润（百万英镑，Underlying） | 57.5 | 59.4 | 69.2 | 69.6 | 73.5 |
-| 经营利润率 | 14.6% | 14.8% | 14.6% | 14.3% | 14.8% |
-| 摊薄每股收益（便士） | 16.9 | 18.5 | 20.0 | 18.9 | 19.4 |
-| 每股股息（便士） | 4.8 | 5.7 | 6.9 | 7.8 | 8.0 |
-| 订单簿（百万英镑） | 500.8 | 650.9 | 921.6 | 1,022.4 | 1,345.4 |
-| 净负债（百万英镑） | 26.6 | 7.2 | 14.4 | 52.8 | 89.0 |
+* The following documents were issued for the duration of the session:
+Operating profits (£1 million, Undeleling)
+<unk> Business profitability 14.6% 14.8% 14.6% 14.3% 14.8%
+(b) The amount of the equipment required to provide the equipment required to support the mission's operations is not included in the proposed budget.
+<unk> per dividend (pence) <unk> 4.8 <unk> 5.7 <unk> 6.9 <unk> 7.8 <unk> 8.0 <unk>
+<unk> Order book (£1 million) <unk> 500.8 <unk> 650.9 <unk> 921.6 <unk> 1,022.4 <unk> 1,345.4 <unk>
+Net liability (£1 million)
 
-*注：FY2024年度报告显示营收510.4百万英镑，但FY2025年报中引用的可比数据为488.3百万英镑，可能存在会计调整或可比口径差异。数据来源：Chemring官方年报及投资者关系页面。*
+*Note: The annual report of SY2024 shows a revenue of Pound51,044 million, but the comparable figure cited in the SY2025 report is Pound48,833 million, which may be subject to accounting adjustments or comparative caliber differences. Source: Chemring Official Annual Report and Investor Relations Page.*
 
-**关键趋势解读：**
+** Key trends read:**
 
-1. **营收稳步增长**：五年复合增长率约6%，FY2023增速最快（+18%），主要受乌克兰战争推动的弹药需求驱动
-2. **利润率稳健**：经营利润率维持在14-15%区间，FY2025达到14.8%的五年高点
-3. **订单簿爆发式增长**：从FY2021的5亿英镑跃升至FY2025的13.5亿英镑（+169%），提供了极强的营收可见性
-4. **净负债上升合理**：净负债增加主要源于产能扩张投资（挪威工厂、美国田纳西、苏格兰），而非经营恶化
-5. **股息持续增长**：五年股息复合增长率约13.6%
+1. ** Steady growth in revenue **: 5 years of complex growth of about 6% and fastest FY 2023 (+18%), driven mainly by the demand for ammunition driven by the war in Ukraine
+2. ** Profits are robust**: operating profitability is maintained at 14-15%, while FY2025 reaches a five-year high of 14.8%
+3. **Operator boom**: from Pound500 million for FY 2021 to Pound1.35 billion for FY 2025 (+169%), providing a strong income visibility
+4. ** Net debt rises reasonably**: net debt increases are mainly due to expansionary capacity investments (Norwegian factory, Tennessee, United States of America, Scotland) rather than deterioration of operations
+5. **Ends sustained growth**: five years of combined dividends growth of approximately 13.6 per cent
 
-### 2.2 最新H1 FY2026业绩（截至2026年4月30日）
+##2.2 Update H1 SY2026 performance (as at 30 April 2026)
 
-| 指标 | H1 2026 | H1 2025 | 变动 |
+Indicator H1 2026 H1 2025 Change
 |------|---------|---------|------|
-| 营收 | 237.3百万英镑 | 222.8百万英镑 | +7% |
-| 经营利润（Underlying） | 24.5百万英镑 | 26.5百万英镑 | -8% |
-| 经营利润率 | 10.3% | 11.9% | -1.6ppt |
-| 摊薄每股收益 | 6.1p | 6.6p | -8% |
-| 中期股息 | 2.8p | 2.7p | +4% |
-| 净负债 | 144.5百万英镑 | 93.3百万英镑 | +55% |
-| 订单簿 | 1,399.4百万英镑 | 1,296.0百万英镑 | +8% |
+£237.3 million.
+Undue to earn £24.5 million £26.5 million £28.8 per cent £27.5 million
+<unk> Operating profitability 10.3% <unk> 11.9% <unk> -1.6ppt <unk>
+The amount of the revenue is estimated at US$ 2,701,240 per unit.
+<unk> Medium-term dividends 2.8p <unk> 2.7p <unk> 4% <unk>
+Net liability £14.45 million £93.3 million + 55% £25,000
+£13.994 million £12.960 million +8 per cent £2.9 million
 
-*数据来源：Chemring 2026年6月2日中期业绩公告。*
+* Data source: Mid-term Performance Bulletin, 2 June 2026, Chemring*
 
-**分部表现：**
+** Division performance:**
 
-| 分部 | H1 2026经营利润 | 同比变动 |
+Division H1 2026 operating profits
 |------|-----------------|----------|
-| 对抗措施与含能材料 | 26.1百万英镑 | +32% |
-| 传感器与信息 | 9.6百万英镑 | 承压下降 |
+<unk> Measures of confrontation and energy materials £26.1 million + 32% <unk>
+♪ The power of the earth ♪
 
-**H1利润下滑的原因：**
-- 传感器与信息分部因Roke业务组合变化、CORTEXA早期预生产单元低利润率、以及导弹防御中心项目低利润率过手收入导致利润承压
-- 含能材料分部表现强劲，利润大增32%
-- 管理层确认全年预期不变，约70%的经营利润将在下半年实现
-- 全年现金转化率预期80-85%
+** Reasons for the decline in profits for H1:**
+- Sensors and Information Divisions are under-restricted by changes in the Roke portfolio, low profitability of the early production units of the CORTEXA and low profit margins from the Missile Defense Centre project
+- The energy-bearing sector performed well, with a 32 per cent increase in profits
+- Management confirms that the year-round expectations remain unchanged, with about 70 per cent of operating profits to be realized in the second half of the year
+- The year-round cash conversion rate is expected to be 80-85 per cent
 
-### 2.3 分部营收趋势
+##2.3 Parture Collection Trends
 
-| 分部 | FY2023 | FY2024 | FY2025 |
+<unk> Division <unk> FY2023 <unk> FY2024 <unk> FY2025 <unk>
 |------|--------|--------|--------|
-| 对抗措施与含能材料 | 285.6百万 | 276.3百万* | 322.7百万 |
-| 传感器与信息 | 187.0百万 | 212.0百万 | 174.8百万 |
+<unk> Measures of confrontation and energy-containing materials <unk> 285.6 million <unk> 276.3 million* <unk> 322.7 million <unk>
+<unk> Sensors and information <unk> 180.0 million <unk> 212.0 million <unk> 17.8 million <unk>
 
-*注：FY2024对抗措施与含能材料在年报中有两个口径（298.4百万/276.3百万），可能因田纳西业务运营挑战导致调整。FY2025传感器与信息分部受英国政府订单延迟影响下滑18%。数据来源：Chemring各年度业绩公告。*
-
----
-
-## 三、核心投资逻辑：结构性瓶颈中的关键供应商
-
-### 3.1 NATO弹药供应链的结构性缺口
-
-这是Chemring投资论点的核心。
-
-**硝化纤维素（NC）供需缺口：**
-- 欧洲NC年产能：4,500-10,000吨（理论值，实际更低）
-- 乌克兰需求：6,000+吨/年
-- 欧洲自身补库需求：13,000+吨/年
-- 合计需求：约20,000吨/年
-- **供应缺口：10,000-14,000吨/年（超过50%）**
-
-（来源：European Policy Centre报告"Running on Empty: the Chemical Shortage Undermining European Defence"）
-
-**弹药产量对比：**
-- 俄罗斯月产约25万发炮弹
-- 2024年一季度，俄罗斯三个月产量等于NATO全年产量
-- NATO 2026年目标仅为月产26.7万发——仅能达到与俄罗斯的平价，远不足以构成可信威慑
-
-**供应链依赖中国的风险：**
-- 中国控制全球约46%的化学品销售
-- 欧洲弹药生产商超过70%的棉短绒（NC的关键原料）来自中国
-- 地缘政治紧张可能切断这一供应链
-
-### 3.2 Sole-Source唯一供应商地位
-
-Chemring Nobel（挪威子公司）在MCX含能材料领域拥有**唯一合格供应商**地位，这是投资论点中最关键的护城河：
-
-**Diehl Defence合同确认：**
-- 2024年11月签署12年框架协议
-- 初始采购订单价值约2.31亿欧元（约2亿英镑），交付期为2026年底至2031年
-- MCX材料是Nammo先进弹药技术的核心组件，用于155毫米炮弹生产
-- **Chemring Nobel是MCX材料的唯一合格供应商**，意味着在该品类中没有替代来源
-
-**Nammo HMX供应协议：**
-- 2,300万英镑的10年协议
-- 交付期为2027-2037年
-- 覆盖多种HMX产品
-
-**唯一供应商地位的含义：**
-- 在炮弹这一NATO最急需扩产的品类中，Chemring是无法绕开的供应商
-- 客户转换成本极高（需要重新认证、重新设计弹药配方）
-- 合同锁定期长达10-12年，提供长期营收可见性
-
-### 3.3 挪威工厂扩产计划
-
-**ASAP资助项目（进行中）：**
-- 欧盟ASAP计划（支持弹药生产法案）资助6,670万欧元
-- Chemring Nobel牵头三个ASAP资助项目
-- 新推进剂制造设施建设已完成，设备已安装，正在调试和许可阶段
-- 2027年初开始量产，将大幅提升产能和产出
-
-**新生产设施可行性研究（第二阶段）：**
-- 2024年10月与挪威政府共同启动
-- 第一阶段（选址、基础设施、环境评估）已完成
-- 第二阶段（概念选择、设施规模、商业安排）预计2026年完成
-- 新工厂计划建在挪威Asker市
-- 挪威政府已共同出资3,200万英镑用于现有产能扩张
+*Note: The FY2024 countermeasures and energy-containing materials are in the annual report of two calibres (298.4 million/276.3 million), possibly adjusted by operational challenges in Tennessee. SY2025 sensors and information divisions have fallen by 18% due to delays in orders from the British Government. * Data source: Chmring annual performance bulletins.*
 
 ---
 
-## 四、竞争格局与护城河分析
+# III. Core investment logic: key suppliers in structural bottlenecks
 
-### 4.1 主要竞争对手
+#3.1 Structural gaps in the ammunition supply chain of the NATO
 
-| 公司 | 国家 | 市值 | 核心弹药/含能材料能力 | 与Chemring的竞争关系 |
+This is at the heart of the Chemring investment argument.
+
+** Supply and demand gap for nitrocellulose (NC):**
+- Annual capacity of NC in Europe: 4,500 - 10,000 tonnes (orthodoxy, lower in real terms)
+- Ukraine needs: 6,000 + tonnes/year
+- European self-repository needs: 13,000 + tonnes/year
+- Total demand: approximately 20,000 tonnes/year
+- ** Supply gap: 10,000-14,000 tonnes/year (over 50%)**
+
+(Source: Europaan Policy Center report "Running on Empty: the European Shortage Undernifying European Development")
+
+** Comparison of ammunition production:**
+- The Russians produce about 250,000 rounds of ammunition.
+- In the first quarter of 2024, Russia produced three months equal to the total annual production of NATOs
+- The 2026 target for NATO is only 267,000 rounds per month — only to reach parity with Russia, far from constituting a credible deterrent
+
+** Risk of supply chain dependence on China:**
+- China controls about 46% of global sales of chemicals
+- More than 70% of European ammunition producers of cotton velvet (NC key raw materials) are from China
+- Geopolitical tensions could cut off this supply chain.
+
+#3.2 Sole-Sourge sole supplier status
+
+The only qualified supplier in the field of energy materials in MCX**, which is the key moat in the investment argument, is:
+
+**Diehl Defense Contract confirmed:**
+- 12-year framework agreement signed in November 2024
+- The initial purchase order was worth approximately Euro231 million (approximately Pound200 million) and delivery period was between the end of 2026 and 2031
+- MCX material is a core component of the advanced ammunition technology in Nammo for the production of 155-mm artillery shells
+- **Chemring Nobel is the only qualified supplier of MCX materials**, meaning that there is no alternative source in this category
+
+**Nammo HMX supply agreement:**
+- A 10-year deal of £23 million.
+- Delivery period is 2027-2037
+- Covering a wide range of HMX products
+
+** Meaning of sole supplier status:**
+- Chemring is an inescapable supplier of the shell, the most needed extension of the NATO.
+- High cost of client conversion (recertification required, redesign of ammunition formulations)
+- Contract locks for a fixed period of 10 to 12 years, providing long-term income visibility
+
+##3.3 Norwegian Plant Expansion Scheme
+
+**ASAP-funded project (ongoing):**
+- EU ASAP (Support for Ammunition Production Act) funding of Euro66.7 million
+- Conference Nobel leads three ASAP-funded projects
+- New propellant manufacturing facilities have been completed, equipment installed and in the debugging and licensing phase
+- Production volume will be started in early 2027, with significant improvements in capacity and output
+
+** Feasibility study of new production facilities (phase II):**
+- Launched with the Norwegian Government in October 2024
+- Phase I (location, infrastructure, environmental assessment) completed
+- Phase II (concept selection, facility size, commercial arrangements) is expected to be completed in 2026
+- New plant planned for Asker City, Norway
+- The Norwegian Government has co-financed Pound32 million for the expansion of existing capacity
+
+---
+
+# IV. COMPETITION POLICIES AND ASPECTS OF THE WATER
+
+## 4.1 Main competitor
+
+The company, the country, the market value, the core ammunition/energy material capability, the competitive relationship with Chemring, the market value of the ammunition, the core ammunition/energy material, the core ammunition/energy material, the core ammunition/energy material, the energy and the energy content of the ammunition, the energy and the energy supply, the energy and the energy of the company, the market value of the country, the market value of the company, the market value of the ammunition, the market value of the ammunition, the core ammunition/energy materials, the market of the company, the competitive relationship with Chemring, the market of the company, the market of the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the market, the market, the market, the market value, the market, the core, the core, the core ammunition, the core ammunition, the core ammunition, the materials, the core ammunition, the materials, the materials, the core ammunition, the materials, the core, the materials, the materials, the materials, the materials, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the company, the
 |------|------|------|----------------------|---------------------|
-| **Rheinmetall** | 德国 | 约500亿欧元 | 中大口径弹药、120mm坦克弹、155mm炮弹、NC生产 | 弹药终端产品竞争；NC领域存在竞争，但Rheinmetall同样面临NC供应不足 |
-| **BAE Systems** | 英国 | 约530亿英镑 | 小/大口径弹药、RDX炸药、干混技术突破 | BAE在弹药终端有优势，但**没有NC推进剂生产技术** |
-| **Nammo** | 挪威 | 非上市 | 155mm炮弹、大口径弹药 | **Chemring的客户而非竞争对手**——Nammo依赖Chemring的MCX材料 |
-| **L3Harris (Aerojet)** | 美国 | 约570亿美元 | 固体火箭发动机、推进系统 | 美国市场为主，与Chemring直接竞争有限 |
+<unk> Competition for medium- and large-calibre ammunition, 120 mm tank shells, 155mm shells, NC production end-products; competition in NC, but Rheinmetall also faces inadequate NC supply
+** BAE Systems** ** UK approximately £53 billion <unk> small/large calibre ammunition, RDX explosives, dry-foil technology breakthrough <unk> BAE has advantages at the end of the ammunition, but ** there is no NC propellant production technology** **
+** Nammo** <unk> Norway <unk> non-market <unk> 155mm shells, large calibre ammunition ** Chemring's client rather than competition** — Nammo relies on Chemring's MCX materials <unk>
+**L3Harris (Aerojet)** US <unk> US <unk> US$57 billion <unk> solid rocket motors, propulsion systems <unk> US market dominated, limited direct competition with Chemring
 
-### 4.2 护城河分析
+# 4.2 Array of the moat
 
-**强护城河因素：**
+** Strong moat factor:**
 
-1. **唯一合格供应商地位**（最强护城河）：MCX含能材料领域无替代供应商，通过12年框架合同锁定。这不是简单的成本优势，而是"你不用我的材料，这种弹药就造不出来"的硬性锁定。
+1. **The only qualified supplier status** (the most protected river): no substitute supplier in the MCX energy-bearing materials field is locked through a 12-year framework contract. This is not a simple cost advantage, but a hard lock "You don't need my materials, this ammunition cannot be made".
 
-2. **安全许可与监管壁垒**：含能材料（炸药、推进剂）的生产需要极其严格的安全认证、环境许可和国防安全审查。新建一座合规的军用炸药工厂需要数年时间和数亿资金，而且许可证审批本身可能需要一年以上。
+2. **Security licensing and regulatory barriers**: Production of energy-containing materials (explosives, propellants) requires extremely strict security certification, environmental licensing and defence security clearance.
 
-3. **客户转换成本极高**：弹药制造商（如Nammo）的弹药配方设计基于特定供应商的含能材料规格。更换供应商意味着重新设计配方、重新测试、重新认证——这一过程可能需要3-5年。
+** High customer conversion costs**: The munitions formulation design of the ammunition manufacturer (e.g. Nammo) is based on the specification of the energy material of the particular supplier. The change of supplier means redesigning the formulation, retesting, recertification - a process that may take three to five years.
 
-4. **主权安全需求**：各国政府要求关键弹药组件在本国或盟国境内生产，Chemring在多个NATO国家的生产设施满足了这一需求。
+** Sovereign security needs**: Governments require critical ammunition components to be produced in their own countries or in allied countries, and Chemring has met this demand at production facilities in several NATO countries.
 
-**BAE Systems在NC推进剂领域的缺失：**
-根据EPC研究报告，BAE Systems正在开发替代制造技术（处于试验阶段，预计2026年底达到工业成熟），但目前并不具备NC推进剂生产能力。这意味着即使是英国最大的防务承包商，在这一关键品类中也无法替代Chemring。
+** BAE Systems missing in NC propellant area:**
+According to the EPC study, BAE Systems is developing alternative manufacturing technologies (in a pilot phase, expected to be industrially mature by the end of 2026), but currently does not have a NC propellant production capacity. This means that even the largest British defence contractor cannot replace Chemring in this key category.
 
-**相对弱势：**
-- 规模远小于Rheinmetall和BAE Systems，在大型综合防务竞标中缺乏影响力
-- 传感器与信息分部面临更多竞争，护城河不如含能材料分部深
-- 品牌知名度不如大型防务集团
+** Relatively vulnerable:**
+- Far less than Rheinmetall and BAE Systems, with lack of influence in large integrated defence bids
+- Sensors and information divisions face more competition, and moat rivers are less deep than energy-containing materials.
+- It's not as well known as a big defense group.
 
 ---
 
-## 五、估值分析
+# V. Valuation analysis
 
-### 5.1 当前估值水平
+##5.1 Current valuation level
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|------|------|
-| 股价 | 497.8p | 2026年6月3日收盘 |
-| 市值 | 约14.3亿英镑 | 约2.72亿股 |
-| 静态P/E（TTM） | 约32x | 基于FY2025 underlying摊薄EPS 19.4p |
-| 远期P/E（FY2026E） | 约22-25x | 基于分析师预期 |
-| P/S（TTM） | 约2.9x | 基于FY2025营收497.5百万 |
-| EV/EBITDA（TTM） | 约15.6x | EV约15.4亿（市值14.3亿+净负债1.445亿，取H1 2026数据），FY2025 EBITDA 98.6百万 |
-| 股息率 | 约1.6% | 基于FY2025 8.0p |
+Stock prices 497.8 p
+* Market value * About £1.43 billion * About £272 million
+<unk> Static P/E(TTM)<unk> About 32x <unk> based on SY2025 underlying EPS 19.4p <unk>
+<unk> Forward P/E (FY2026E) <unk> Approximately 22-25x <unk> Based on analyst expectations <unk>
+<unk> P/S(TTM) <unk> Roughly 2.9 x <unk> based on FY2025 Camp 497.5 million <unk>
+<unk> EV/EBITDA(TTM) <unk> 15.6x <unk> EV = 1.54 billion (market value 1.430 billion + net liability of $144.5 million, extracting data from H1,2026), FY2025 EBITDA 98.6 million
+<unk> Estimation rate <unk> About 1.6% <unk> Based on FY2025 8.0p <unk>
 
-### 5.2 与美国同业Aerojet Rocketdyne（现L3Harris）对比
+#5.2 Compared to Aerojet Rocketdyne (now L3 Harris)
 
-| 指标 | Chemring (CHG.L) | L3Harris (LHX) |
+<unk> Indicators <unk> Chemring (CHG.L) <unk> L3 Harris (LHX) <unk>
 |------|-------------------|----------------|
-| 市值 | 约14亿英镑（18亿美元） | 约570亿美元 |
-| P/E（TTM） | 约32x | 约30-40x |
-| 业务范围 | 含能材料+传感器 | 综合防务（含Aerojet推进系统） |
-| 增长特征 | 小盘高增长+唯一供应商 | 大盘防务，规模更大但增长较慢 |
+* Market value * About £1.4 billion ($1.8 billion) * About $57 billion *
+P/E(TTM) <unk> 32x <unk> 30-40x <unk>
+<unk> Operational scope <unk> energy-containing materials + sensors <unk> Integrated defence (including Aerojet propulsion system) <unk>
+<unk> Growth characteristics <unk> High growth + only supplier <unk> Large defense, larger but slower growth <unk>
 
-**估值对比评价：**
-Chemring当前静态P/E约32x，看起来不便宜，但考虑到：
-- FY2026全年利润预计显著高于H1表现（70%利润在下半年）
-- 13.9亿英镑订单簿提供约2.8年的营收覆盖
-- 含能材料分部利润增长32%的强劲势头
+** Valuation comparison evaluation:**
+The current static P/E 32x does not look cheap, but takes into account:
+- SY2026 is expected to be significantly higher than H1 performance throughout the year (70% of profits in the second half of the year)
+- Pound13.9 billion in purchase book provides around 2.8 years of coverage
+- Strong momentum for 32 per cent growth in profits in the energy-bearing sector
 
-远期P/E可能降至22-25x区间，相对于结构性增长机会和唯一供应商地位，并不过分昂贵。
+The forward P/E may fall to between 22-25 x and is not too expensive in relation to structural growth opportunities and sole supplier status.
 
-### 5.3 简易DCF估值框架
+#5.3 Simple DCF valuation framework
 
-**假设条件：**
-- FY2026E营收：约530百万英镑（基于91%订单覆盖和H1增速外推）
-- FY2027-2030营收复合增长：10-12%（新产能投产+合同交付）
-- 长期经营利润率：15-17%（含能材料占比提升，产能利用率改善）
+** Assumption:**
+- SY2026E: approximately Pound53 million (based on 91% order coverage and H1 acceleration extra push)
+- Combined growth in FY2027-2030: 10-12% (new capacity in production plus contract delivery)
+- Long-term operating profitability: 15-17% (upgrade of energy-containing materials, improved capacity utilization)
 - WACC：8-9%
-- 终值增长率：2.5%
+- End-of-life growth rate: 2.5 per cent
 
-**估值区间：**
-- 保守情景（10%增长、15%利润率、9% WACC）：约530-560p
-- 基准情景（12%增长、16%利润率、8.5% WACC）：约600-650p
-- 乐观情景（15%增长、17%利润率、8% WACC）：约700-750p
+** Valuation interval:**
+- Conservative scenario (10% increase, 15% profit margin, 9% WACC): approximately 530-560p
+- Baseline scenario (12 per cent increase, 16 per cent profit margin, 8.5 per cent WACC): approximately 600-650p
+- Optimal scenario (15% growth, 17% profit margin, 8% WACC): approximately 700-750p
 
-*注：这是简化的DCF框架，实际估值需要更详细的自由现金流建模。*
+*Note: This is a simplified DCF framework, and actual valuation requires more detailed free cash flow modelling.*
 
-### 5.4 分析师目标价
+#5.4 Analyst target price
 
-| 机构 | 目标价 | 评级 |
+The target price is the rating of the target value
 |------|--------|------|
-| RBC Capital Markets | 580p | 买入 |
-| SQC Research | 580p | 买入 |
-| 分析师平均 | 612p（高670p/低530p） | 强烈买入（4买入/0持有/0卖出） |
+<unk> RBC Capital Markets<unk> 580p<unk>
+SQC Research <unk> 580p <unk> Buying <unk>
+<unk> Analyst average <unk> 612p (670p/530p) <unk> Strong buy (4 buy/0 hold/0 sell) <unk>
 
-相对当前股价497.8p，分析师平均目标价隐含约23%的上涨空间。
+The average target price for analysts implies an increase of about 23 per cent compared to the current stock price of 497.8 p.
 
 ---
 
-## 六、催化剂
+# Six, catalyst
 
-### 6.1 近期催化剂（6-12个月）
+#6.1 Recent catalysts (6-12 months)
 
-1. **FY2026全年业绩释放**：管理层确认70%利润在下半年，H2业绩大幅改善将验证投资逻辑
-2. **挪威新推进剂工厂投产**：2027年初投产，但市场可能在2026年下半年提前定价
-3. **Diehl Defence合同交付启动**：2026年底开始的2.31亿欧元MCX材料交付
-4. **CORTEXA GUARDIAN商业化**：反无人机系统已在瑞典/英国实现销售，更多订单可期
-5. **欧洲防务预算加速**：多国承诺将国防开支提高至GDP的3%+
+1. **FY2026 year-round performance release**: Management confirms 70 per cent of profits in the second half of the year, and significant improvement in H2 performance will validate investment logic
+2. ** New propellant plant in Norway is operational**: in early 2027, but the market may be pricing ahead of schedule in the second half of 2026
+3. **Diehl Office contract delivery start-up**: Euro231 million in MCX materials delivery started at the end of 2026
+4. **CORTEXA GUIARDIAN commercialization**: Anti-UAV systems have been sold in Sweden/United Kingdom, with more orders ready
+5. **Acceleration of the European defence budget**: Multi-country commitment to raise defence spending to 3 per cent of GDP +
 
-### 6.2 中期催化剂（1-3年）
+#6.2 Medium-term catalyst (1-3 years)
 
-1. **EU ASAP 6,670万欧元资助项目全面投产**：产能翻倍
-2. **挪威新工厂可行性研究完成**：2026年完成概念选择，可能触发新一轮大规模投资
-3. **订单簿持续增长**：当前14亿英镑，长期框架合同（12-15年）继续累积
-4. **美国田纳西新设施达产**：1.2亿美元投资的含能材料工厂逐步贡献增量营收
-5. **英国国防投资计划落地**：解决传感器与信息分部的订单延迟问题
+1. **EU ASAP 66.7 million Euros in funding project full-scale production**: doubling capacity
+2. ** Feasibility study completed for new Norwegian plants**: conceptual options completed in 2026, with the potential to trigger a new round of large-scale investments
+3. **Order book growth **: Pound1.4 billion currently, long-term framework contracts (12-15 years) continue to accumulate
+4. ** New facilities in Tennessee, United States of America, yielding production**: incremental contribution from 120 million dollars of invested energy-containing materials plants
+** UK Defence Investment Plan landing**: Addressing delays in orders for sensors and information divisions
 
-### 6.3 合同管线亮点
+#6.3 Contract pipe bright spots
 
-| 合同 | 金额 | 期限 | 状态 |
+Contract amount
 |------|------|------|------|
-| Diehl Defence MCX框架 | 2.31亿欧元（初始订单） | 12年 | 2026年底开始交付 |
-| Nammo HMX供应 | 2,300万英镑 | 10年（2027-2037） | 已签约 |
-| UK STORM导弹防御 | 2.51亿英镑 | 6年 | 执行中 |
-| 其他近期合同 | 2.78亿英镑（总计） | 多年期 | 已签约 |
+<unk> Diehl Defense MCX framework <unk> 231 million euro (initial order) <unk> 12 years <unk> delivery started at the end of 2026
+<unk> Nammo HMX supply Pound23 million <unk> 10 years (2027-2037) <unk>
+<unk> UK STDRM missile defence Pound251 million 6 years
+Other recent contracts Pound278 million (total)
 
 ---
 
-## 七、风险分析
+# VII. Risk analysis
 
-### 7.1 主要风险
+#7.1 Main risks
 
-**1. 英国财政压力与国防预算不确定性（高风险）**
-- Chemring约44%的收入来自英国业务
-- 英国国防投资计划发布延迟已导致传感器与信息分部订单断档，Q1订单录入同比暴跌68%
-- 英国政府历史上将国防开支视为比医疗和教育更容易削减的领域
-- 当前Starmer政府面临巨大财政压力
+**1. British fiscal pressure and defence budget uncertainty (high risk)**
+- About 44% of the Chemring's income comes from British business.
+- The delay in the release of the British Defence Investment Plan has led to the staggering of the sensor and the information sub-orders, with the Q1 entering a 68% drop in the same year.
+- The British Government has historically seen defence spending as an area where it is easier to cut than health care and education
+- The current Starmer government is under great financial pressure.
 
-**2. 传感器与信息分部疲软（中高风险）**
-- Roke分部FY2025营收下滑18%、利润下降25%
-- H1 2026利润率继续承压
-- 该分部的护城河不如含能材料深，竞争更为激烈
-- 过度依赖英国政府单一客户
+**2. Weak sensors and information divisions (medium- and high-risk)**
+- Roke Division, FY 2025, 18% down and profit down 25%
+- H1 2026 profit margin continues to be under pressure.
+- The moat of the division is less energy-intensive and more competitive.
+- Overdependence on a single customer of the British government
 
-**3. 净负债快速上升（中等风险）**
-- 净负债从FY2022的7.2百万飙升至H1 2026的144.5百万英镑
-- 净负债/EBITDA达到1.47x
-- 虽然主要是产能扩张投资，但如果新产能投产延迟或需求不及预期，偿债压力将增大
+**3. Rapid increase in net liability (medium risk)**
+- Net liability jumped from 7.2 million in FY 2022 to £14.45 million in H12026.
+- Net liability/EBITDA to 1.47 x
+- Although mainly investment in expansion of capacity, debt service pressure will increase if new capacity is delayed or demand is not as anticipated
 
-**4. 产能扩张执行风险（中等风险）**
-- 三地同时扩产（挪威、美国、苏格兰），项目管理复杂度高
-- 含能材料工厂的调试和许可流程严格，任何安全事故都可能导致重大延迟
-- 田纳西对抗措施业务此前已出现运营挑战
+**4. Risks of performance in the expansion of capacity (medium risk)**
+- Three-geographical expansion (Norway, United States, Scotland) and high project management complexity
+- Strict debugging and licensing processes for energy-containing materials plants, with any security incident likely to result in significant delays
+- The countermeasure operations in Tennessee have previously had operational challenges
 
-**5. 地缘政治情景变化（中低风险但影响重大）**
-- 如果乌克兰和谈成功或冲突降级，弹药紧迫需求可能下降
-- 但NATO补库存和构建可信威慑是长期结构性趋势，不会因单一和谈事件逆转
-- 框架合同的长期性（10-12年）提供了缓冲
+**5. Changes in the geopolitical scenario (low-to-medium-risk but significant)**
+- If Ukraine ' s peace talks succeed or conflicts downgrade, the urgent need for ammunition may decrease
+- NATO replenishment and the construction of credible deterrence are, however, long-term structural trends that will not be reversed by the single peace talks
+- Long-term (10-12 years) framework contract provides a buffer
 
-**6. 关键人物和技术风险（中低风险）**
-- MCX含能材料的生产知识和工艺高度专业化
-- CEO Michael Ord自2018年任职，稳定性尚可，但继任计划的透明度不足
+**6. Critical persons and technological risks (middle and low risks)**
+- Highly specialized production knowledge and processes of MCX energy-containing materials
+- CEO Michael Ord has been in office since 2018 and has been stable, but the succession plan is not sufficiently transparent
 
-### 7.2 风险缓释因素
+#7.2 Risk-reducing factors
 
-- 14亿英镑订单簿覆盖约2.8年营收，提供强大的下行保护
-- 91%的FY2026预期营收已锁定
-- 客户地理分布50+国家，虽然英国占比较高但正在改善
-- 欧洲防务预算增长是跨党派、跨国家的结构性趋势
-- 含能材料的唯一供应商地位意味着即使需求放缓，Chemring也是最后被削减的供应商
-
----
-
-## 八、投资结论
-
-### 评级：买入（逢回调加仓）
-
-### 目标价区间：580-650p（12个月）
-
-**核心投资论点：**
-
-Chemring Group是NATO弹药供应链中"卡脖子"的关键节点。在硝化纤维素和含能材料供需缺口超过50%的结构性背景下，Chemring Nobel的唯一合格供应商地位（MCX材料）和12年框架合同锁定了长期增长确定性。这不是一个需要预测市场需求的投资——需求已经通过14亿英镑订单簿和NATO成员国的防务预算承诺锁定。
-
-**买入理由：**
-1. **结构性供需缺口**中的唯一供应商，定价权强且可持续
-2. 14亿英镑订单簿（覆盖约2.8年营收）提供罕见的营收确定性
-3. 多个产能扩张项目（EU ASAP资助、挪威新厂、美国田纳西）将在2027-2028年释放显著的增量营收
-4. 含能材料分部利润增长32%验证了核心逻辑正在兑现
-5. 当前P/E约32x看似不低，但远期P/E 22-25x相对于增长确定性具备吸引力
-6. 分析师一致看好（4买入/0卖出），平均目标价612p，隐含23%上涨空间
-
-**主要关注点：**
-1. 传感器与信息分部的持续疲软可能拖累整体利润率
-2. 净负债快速上升需要密切监控
-3. 英国国防预算不确定性是最大的政策风险
-4. 当前股价距离52周高点不远，短期回调风险存在
-
-**买入策略建议：**
-- 理想介入区间：450-480p（对应回调5-10%）
-- 当前价位（497.8p）可以建立小仓位（总目标仓位的30-40%）
-- 在FY2026下半年业绩确认后（预计2026年12月），根据实际利润率和现金转化率决定是否加仓
-
-**关键监测指标：**
-- 含能材料分部的利润率趋势（应持续上行）
-- 订单簿增长速度（应维持或加速）
-- 挪威新设施投产进度（2027年初是关键节点）
-- 净负债/EBITDA比率（应在产能投产后开始下降）
-- 英国国防投资计划的发布和落地
+- Pound1.4 billion in bookbooks covering about 2.8 years of collection, providing strong downside protection
+- 91% of the FY2026 expected to be locked in.
+- The geographical distribution of clients in 50+ countries, although the UK is in a relatively high position but improving
+- Growth of the European defence budget is a structural trend across parties and countries
+- The sole supplier status of energy-containing materials means that Chemring is the last supplier to be cut, even if demand slows down
 
 ---
 
-## 数据来源
+VIII. Investment findings
 
-- Chemring Group 官方投资者关系页面及年度/中期业绩公告
+# Rating: buyin' (when you return to the warehouse)
+
+## Target price range: 580-650p (12 months)
+
+** Core investment argument:**
+
+The Chemring Group is a key node for "cricket" in the NATO ammunition supply chain. In a structural context where the supply and demand gap for nitrocellulose and energy-containing materials is more than 50%, Chemring Nobel’s only qualified supplier status (MCX materials) and the 12-year framework contract are locked in long-term growth certainty. This is not an investment that requires forecasting market demand – demand has been locked through Pound1.4 billion purchase books and the defence budget commitments of the NATO member countries.
+
+** Reasons for purchase:**
+1. **The only supplier in the structural supply and demand gap**, with strong pricing power and sustainability
+Pound1.4 billion (covering approximately 2.8 years of collection) provides rare revenue certainty
+3. Several energy expansion projects (EU ASAP-funded, new Norwegian plants, Tennessee, United States) will release significant incremental revenues in 2027-2028
+4. The 32 per cent increase in profits in the energy-bearing material segment confirms that core logic is being realized
+5. Currently, about 32x P/E appears to be not low, but the forward P/E 22-25x is attractive to growth certainty
+6. Analysts agreed (4 buy/0 sell) with an average target price of 612 p, implying 23 per cent space for increase
+
+** Principal focus:**
+1. Continued weakness of sensors and information segments may drag overall profitability
+2. Rapid increases in net liabilities require close monitoring
+3. The greatest policy risk is the uncertainty of the British defence budget
+4. Current stock price is not far from 52 weeks high, and short-term return risk exists
+
+** Purchase strategy proposal:**
+- Ideally, intervention: 450-480p (replies 5-10%)
+- Current prices (497.8 p) allow for small warehouses (30-40% of total target locations)
+- After the FY 2026 performance was confirmed (expected December 2026), whether to increase the stock based on actual profit and cash conversion rates
+
+** Key monitoring indicators:**
+- Profitability trends in the energy-containing material segment (should continue)
+- Order book growth rate (should be maintained or accelerated)
+- Progress in the commissioning of new Norwegian facilities (at the beginning of 2027, the key node)
+- Net liability/EBITDA ratio (deduction should begin after delivery of capacity)
+- The launch and landing of the British Defense Investment Plan
+
+---
+
+# Data source
+
+- The Chemring Group Official Investor Relations Page and Annual/Medium Term Performance Bulletin
 - European Policy Centre: "Running on Empty: the Chemical Shortage Undermining European Defence"
 - Atlas Institute: "The Strategic Ammunition Gap: NATO's Industrial Lag Risks Deterrence"
-- EU Defence Industry and Space: ASAP项目进展报告
-- SQC Research, RBC Capital Markets, TipRanks 分析师研究
-- Kyiv Independent: NATO弹药生产调查报道
-- Defence News: Rheinmetall NC供应报道
-- MarketBeat, Yahoo Finance, Investing.com 财务数据
+- EU Defense Insurance and Space: ASAP Project Progress Report
+- SQC Research, RBC Capital Marks, TipRinks Analyst Research
+- Kyiv Independent: report of the NATO ammunition production survey
+- Defense News: Rheinmetall NC Supply Report
+-MarketBeat, Yahoo Finance, Investing.com
 
 ---
 
-*免责声明：本报告仅供投资研究参考，不构成投资建议。投资有风险，入市需谨慎。所有财务数据来源于公开渠道，可能存在误差。*
+* Disclaimer: This report is for investment studies only and does not constitute an investment recommendation. Investment is risky and market entry requires caution.

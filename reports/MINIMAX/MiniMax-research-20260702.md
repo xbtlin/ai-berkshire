@@ -1,369 +1,369 @@
-# MiniMax（稀宇科技，00100.HK）投资研究报告
+# MiniMax Investment Study
 
-**报告日期：2026年7月2日 | 现价：约358港元（当日盘中，前收盘417港元）| 市值：约1,124亿港元（约144亿美元）| 市销率(TTM)：约182倍**
+** Date of report: 2 July 2026 Current prices: approximately HK$ 358 (the previous round was collected at HK$417) market value: approximately HK$112 billion (approximately US$14.4 billion) market sales (TTM): approximately 182 times**
 
-> 四大师框架综合分析（巴菲特·芒格·段永平·李录）。本报告为 /investment-research 单篇综合研究，数据于2026年7月2日重新采集，不复用本目录下2026年4月的历史稿件。
-
----
-
-## 前置声明：信息丰富度评级与AI研究局限性
-
-**信息丰富度评级：B级（信息适中）**
-
-MiniMax 于2026年1月9日港交所上市，至今仅约半年。它同时具备B级公司的两面性：
-
-- **信息充裕的一面**：有完整招股书（收入、亏损、毛利率、用户、股权结构均为审计披露），媒体报道密集（六小虎话题热度极高）。
-- **信息稀缺的一面**：上市时间太短，缺乏多年财务序列与成熟券商深度覆盖；核心运营数据（月度现金消耗率、Talkie付费用户结构、API真实调用规模、各产品单独毛利）披露有限；最关键的是——**这是一家仍在高速烧钱、尚未验证盈利模式的前沿AI公司，其估值不由利润锚定，而由叙事与流动性锚定**。
-
-**B级公司的AI研究陷阱与本报告应对**：
-
-AI最容易在这类公司上犯两个错——一是用"合理推测"填补运营数据空白，制造虚假确定性；二是被"六小虎商业化最好""海外收入70%""视频模型超Sora"这类强叙事裹挟，把"相对最好"误读为"绝对能赢"。本报告的应对是：**把所有估算数据标注置信度，把估值锚定在可验证的收入硬数据上（而非讲故事的市值），并用市销率反推市场隐含的增长预期到底有多苛刻。**
-
-**AI研究局限性声明**：
-
-1. 本报告对"生意质量"的判断（六小虎中商业化领先、出海独特）置信度较高，有招股书收入结构支撑；但对"能否最终胜出"的判断置信度低——这取决于三年后的技术格局、监管走向和融资环境，均无法从当前公开资料推定。
-2. MiniMax 是一只极端高波动的次新股（上市后区间165发行价→盘中最高1330→当前358，且报告当日单日再跌约14%），任何"当前股价/市值/PS"都是时点快照，读者阅读时数字可能已大幅变化。
-3. **时间敏感的重大事件**：2026年7月9日（距本报告仅7天）首批基石/股东解禁约1.07亿股，占总股本34.25%，流通盘将从约5%放大到约46%——这是一个已知的、迫近的巨量供给冲击，本报告估值不试图预测其短期价格影响，仅提示其存在。
-
-**偏见自查结论**：本报告结论（价值投资框架下回避）与当前市场的激烈分歧并存——多头看"中国AI全球化头号玩家"，空头看"500倍PS泡沫"。本报告不站队叙事，而是回到一个朴素问题：**在182倍市销率、无盈利、7天后巨量解禁的位置上，是否存在价值投资意义上的安全边际？** 答案决定了评级。
+> A comprehensive analysis of the Four Masters Framework (Buffett Munger Tsiyongping Lee Jing-Jing). This report is a single comprehensive study, which was re-collected on 2 July 2026 and does not repeat the historical contribution of April 2026 under this catalogue.
 
 ---
 
-## 关键数据交叉验证记录（financial_rigor.py 程序化验算）
+# Pre-declaration: Information abundance rating and AI research limitations
 
-| 验证项 | 数据/计算 | 结果 |
+** Information abundance rating: B (median)**
+
+MiniMax, which was listed on 9 January 2026 at the Hong Kong Port, has only been in existence for about six months.
+
+- ** A well-informed side**: full offer (income, loss, gross profit, user, equity structure are all audit disclosures) and media coverage is intense (the six tigers are extremely hot).
+- **The scarce side of information**: too short a time to be listed and lack of multi-year financial sequence and mature bonder depth coverage; limited disclosure of core operating data (monthly cash consumption, Talkie user structure, API real call size, separate Māori for individual products); most crucially -** a forward AI company that is still burning money at high speed and has not yet tested profit patterns, whose valuation is not anchored in profit, but in narratives and liquidity**
+
+**Al Research Traps for B-class companies and responses to this report**
+
+AI is the most vulnerable to making two mistakes on such companies — one by filling the operating data gap with "reasonable speculation" and creating false certainty; the other by holding up the "Better 70% Overseas Income" video model, such as "Better Commercialized by Six Tigers" and reading "Better than Irregularly Win" as "Better than Irregular".** The response to this report is:** to put all estimates on a level of confidence, anchor the valuation on verifiable hard income data (as opposed to storytelling market value) and to push the hidden growth expectations of the market back to market.**
+
+**A. Study limitations statement**:
+
+1. The report ' s judgement of the quality of business ' (commercialization leading among the six tigers, uniqueness to the sea) is more credible and supported by a revenue structure of the offer; however, the 'final success' is less credible - depending on the technology pattern, regulatory direction and financing environment after three years, and cannot be inferred from the current public information.
+2. MiniMax is an extremely volatile sub-equity (up to 1330 ~358 currently available in the post-market distribution plate and about 14% below the date of the report), any "current stock price/market value/PS" is a snapshot and the figures may have changed significantly when read by readers.
+**Temporal-sensitive major event**: The first pillar/shareholder release of approximately 107 million shares, or 34.25 per cent of the total equity, on 9 July 2026 (seven days from this report), will be expanded from about 5 per cent to about 46 per cent of the circulation pallet — a known, imminent, massive supply shock, and the valuation in this report does not attempt to predict its short-term price impact but to indicate its existence.
+
+** Bias self-examination**: The report concludes (avoidance in the value investment framework) that there is a sharp divergence in the current market – looking at China's A.I. Globalization's Number One player, looking at 500 times the PS bubble. Instead of speaking up, the report goes back to a simple question: ** Is there a security margin in the sense of a value investment in the sense of a 182-fold market sales rate, a non-profit, and a massive release after seven days?** The answer determines the rating.
+
+---
+
+# Key data cross-checking records (final_rigor.py program analysis)
+
+<unk> Validation item <unk> Data/calculation <unk> Results <unk>
 |---|---|---|
-| 市值验算 | 358.4港元 × 313.64M股 = 1,124.1亿港元 vs 行情源1,121.6亿 | ✅ 偏差0.22% |
-| 2024收入交叉 | 招股书30.52M vs 媒体口径30.50M（美元） | ✅ 偏差0.03% |
-| 现金储备交叉 | 财务源11.02亿 vs 风险源11.00亿（美元） | ✅ 偏差0.09% |
-| 当前PS | 市值144.1亿美元 / 2025收入0.79亿美元 | 182.3倍（精确验算） |
-| 峰值PS | 3,900亿港元市值时 / 2025收入 | 632.6倍（精确验算） |
+<unk> Market value assessment HK$358.4 x 313.64 M shares = HK$112.41 billion vs. Line source US$112.16 billion <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> 2024 Cross-income <unk>
+<unk> Cross-border cash reserve <unk> financial source <unk> 1,102 million vs Risk source <unk> $1,100 million (United States dollars) <unk> deviation <unk> 0.09 per cent <unk>
+<unk> Current PS market value $14.41 billion / $2025 million income 182.3 times (precision)
+<unk> Peak PS <unk> HK$39 billion market value / 2025 <unk> 632.6 times (precision) <unk>
 
-> 所有计算经 `financial_rigor.py` 精确十进制运算，无浮点/心算误差。完整输出见附录A。
+> All calculations are calculated by `final_rigor.py ' with precise decimals, with no float/heart error. For the full output, see Appendix A.
 
 ---
 
-## 一、生意本质分析
+# One, business nature analysis
 
-### 1.1 一句话定义
+# 1.1 One word definition
 
-**MiniMax 是一家用"MoE+线性注意力"低成本技术路线做多模态大模型、并靠海外C端AI陪伴（Talkie）与视频生成（海螺）率先跑通收入的前沿AI公司——本质是"模型即产品"的技术驱动型创业公司，赌的是在通用人工智能的军备竞赛中活到终局。**
+** MiniMax is a front-line AI company that uses the low-cost MoE+ linear attention route to make a model of multi-models and uses the overseas C-EI with video generation (nail) - a technology-driven start-up company that is essentially "models or products" - to bet that it survives the end of an arms race of common artificial intelligence**
 
-### 1.2 收入结构拆解
+##1.2 Dismantling of income structure
 
-单位：美元（招股书口径）
+(United States dollars (Calendar caliber)
 
-| 分部 | 2024年 | 2025前9月 | 性质与趋势 |
+<unk> Division 2024 <unk> pre-September 2025 <unk> Nature and trends <unk>
 |---|---|---|---|
-| Talkie+星野（AI陪伴） | 占比约64% | 与海螺共为支柱 | C端订阅+虚拟道具，海外为主 |
-| 海螺AI/Hailuo（视频+多模态） | 占比7.7% | **升至约32.6%** | 增长最快的第二曲线 |
-| 开放平台（API/MaaS，B端） | 占比约29% | B端毛利率69.4% | 直面DeepSeek价格战 |
-| **总收入** | **3,052万** | **5,344万（+175%）** | 2025全年约7,904万（+158.9%） |
+<unk> Talkie+Sun (AI accompanying) <unk> 64% <unk> with conch as a pillar <unk> C end subscription + virtual props, mainly overseas <unk>
+<unk> conch AI/Hailuo (video + multi-module) <unk> 7.7% <unk> up to about 32.6% ** <unk> The fastest growing second curve <unk>
+<unk> Open platform (API/MaaS, End B) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+** Total income** ** 30.52 million** ** 53.44 million (+175%)** ** approximately 79.04 million (+158.9%) for the whole of 2025 **
 
-**结构性特征**：
-- **海外收入占比>70%**——这是中国大模型公司里最独特的收入结构，也是MiniMax全部叙事的基石。
-- **C端收入占比>71%**——决定了它的毛利率天花板（C端毛利率仅4.7%，星野拖累；剔除后整体接近50%）。
-- 收入两年增长约23倍（2023年346万→2025年7,904万美元），增速惊人，但**绝对规模极小**——2025全年收入不到8,000万美元，约相当于Anthropic（ARR约300亿美元）的0.26%。
+** Structural characteristics**:
+- **The share of overseas income > 70%** — the most unique income structure in China's large model company and the cornerstone of all MiniMax narratives.
+- **C End-of-Surrey > 71%** - determines its Māori rate (C end-of-Sur-Saurtage rate is 4.7%, Starfield drags; overall after graduation is close to 50%).
+- The two-year increase in income was about 23 times (34.6 million in 2023 — $79.04 million in 2025), which is alarmingly high, but** is extremely small in absolute size — less than $80 million in total income for 2025, which is about 0.26 per cent of the amount of Anthropic (approximately $30 billion in ARR).
 
-### 1.3 五年盈利能力趋势
+# 1.3 Five-year profit-making trend
 
-单位：美元（招股书/年报口径）
+(United States dollars) (sharebooks/annual reports)
 
-| 指标 | 2022 | 2023 | 2024 | 2025 |
+Indicator 2022 <unk> 2023 <unk> 2024 <unk> 2025 <unk>
 |---|---|---|---|---|
-| 收入 | — | 346万 | 3,052万 | 7,904万 |
-| 整体毛利率 | — | -24.7% | +12.2% | +25.4% |
-| 经调整净亏损 | 0.12亿 | 0.89亿 | 2.44亿 | 约2.5亿 |
-| 会计口径净亏损 | 0.74亿 | 2.69亿 | 4.65亿 | 18.72亿* |
+♪ The world's greatest ever ♪
+<unk> Overall Māori ratio <unk> - 24.7% <unk> 12.2% <unk> + 25.4% <unk>
+<unk> Adjusted net loss <unk> 12 million <unk> 89 million <unk> 244 million <unk> about 250 million <unk>
+<unk> Net accounting deficit <unk> 74 million <unk> 269 million <unk> 465 million <unk> 1872 million*
 
-*2025年会计亏损18.72亿美元中，约16亿为上市前优先股公允价值变动的**非现金**项（IPO后消失），经调整口径才是真实经济亏损（约2.5亿美元）。四年累计经调整亏损约6亿美元，累计消耗现金约5亿美元。
+* Of the $1.872 billion in accounting losses in 2025, approximately $1.6 billion represented non-cash** items of the pre-marketed priority equity fair value (disappeared after IPO), which were adjusted to reflect real economic losses (approximately $250 million). The accumulated deficit of approximately $600 million over four years was adjusted and cash was accumulated to the tune of about $500 million.
 
-**解读**：这是一条典型的大模型烧钱曲线，但有两个亮点值得诚实指出：
-1. **毛利率快速转正并爬升**（-24.7%→+25.4%），说明单位经济在改善，不是无底洞。
-2. **亏损率在收窄**：2025前三季收入涨170%+，经调整亏损仅微增约8.6%——经营杠杆开始显现。
+** Interpretation**: This is a typical large model of a cash curve, but two bright spots are worth pointing out honestly:
+1. **Māori rate is fast-changing and climbing** (24.7% + 25.4%), which indicates that the unit economy is improving and not being a bottomless hole.
+** Loss rate is narrow**: income increased by 170 per cent in the first three quarters of 2025, adjusted losses increased only marginally by about 8.6 per cent — business leverage is beginning to show.
 
-但也要诚实指出致命的一面：**用"每增长1美元收入需要投入近10美元亏损"来换取市场与技术壁垒**，这个单位经济在当前阶段远未证明可持续。
+But it is also true to point out the fatal side:** the unit economy is far from being sustainable at this stage, in exchange for the "nearly $10 per dollar increase in income" for market and technical barriers.**
 
-### 1.4 商业模式画布
+# 1.4 Business model canvas
 
-- **模型即产品**：闫俊杰明确"传统产品更像渠道，真正的产品是模型本身"——这是理解MiniMax一切战略的钥匙，也是它与"套壳应用"公司的本质区别。
-- **复购驱动**：Talkie/星野的AI陪伴靠情感粘性（星野人均80分钟+/天），复购是习惯性的；但AI陪伴的付费天花板和用户留存的长期性都未经周期验证。
-- **粘性存疑**：C端用户切换成本低（AI陪伴产品同质化竞争激烈），B端API直面DeepSeek的免费开源+极致低价，粘性都不算强。
+- ** Model is a product**: Junjie is clear that "traditional products are more like channels, the real product is the model itself" - it is the key to understanding all MiniMax strategies and the essence of it is different from the company "Sketts Application".
+- ** Repurchase driver**: Talkie/Satellite AI is accompanied by emotional sticky (80 minutes +/day per person in the planet) and repurchase is customary; however, neither the paid ceiling nor the long-term nature of the user retained by AI is regularly validated.
+- ** Sticky **: C end user switching costs (AI accompanying products are competitively homogenized), B end API face-to-face DeepSeek free open source + extremely low price, not strong sticky.
 
-**关键追问（生意视角）**：这门生意好在哪？一句话——**它是中国大模型创业公司里唯一把"技术领先"部分兑现成了"真实海外收入"的公司**。别人还在讲AGI故事时，它已经让美国用户为AI女友付费了。但"好"是相对六小虎而言的；放到全球AI竞争的绝对坐标里，它是一个收入不到8000万美元、token份额仅4.2%的小玩家。
+** Key chaser (business perspective)**: What's the best business? The first word -- ** it's the only company in China that cashes the "technology lead" part of its business company into "real overseas income." Others tell the AGI story, it already lets American users pay for AI's girlfriend. But "good" is relative to six tigers; it's placed in the absolute coordinates of the global AI competition, a small player with less than $80 million, with a 4.2% share of token.
 
 ---
 
-## 二、护城河评估
+# II. A waterfront assessment
 
-### 2.1 五类护城河逐项验证
+#2.1 Type 5 moats per se
 
-| 护城河类型 | 验证结果 | 强度 |
+♪ The moat type ♪
 |---|---|---|
-| 品牌/定价权 | Talkie在海外AI陪伴有先发品牌认知（2022年10月即上线，早于ChatGPT），但AI陪伴赛道进入门槛低、同质化严重，定价权弱。海螺视频"加量不加价"说明被可灵等挤压。 | ★★☆☆☆ |
-| 转换成本 | C端几乎为零（用户可随时换AI陪伴/视频工具）；B端API迁移成本也低（模型能力趋同、DeepSeek免费）。 | ★☆☆☆☆ |
-| 网络效应 | 弱。AI陪伴的角色UGC生态（创作者分成）有一点网络效应雏形，但远未形成锁定。 | ★★☆☆☆ |
-| 规模效应 | 反向的——大模型是重资产军备竞赛，MiniMax规模（收入、token份额、算力）显著小于字节/阿里/DeepSeek，规模上是被碾压方而非碾压方。 | ★☆☆☆☆ |
-| 技术/专利壁垒 | **相对最强的一项**：MoE+线性注意力（Lightning Attention）路线自研，M1为全球首个开源大规模混合注意力推理模型，长上下文（原生1M）和推理效率（宣称仅需DeepSeek R1约30%算力）有真实技术含量。但技术领先窗口以"月"计，且面临Anthropic的蒸馏指控质疑。 | ★★★☆☆ |
+Talkie is accompanied by a pre-branded branding awareness (upline October 2022, before ChatGPT), but AI has a low threshold for entry, a high homogenization and a weak pricing power. The conch video "no price added" means that it is squeezed by spirit and so on.
+<unk> Conversion costs <unk> End C is almost zero (user can change AI accompanies/video tools at any time); end B API migration costs are low (model capacity convergence, DeepSeek free). <unk>
+The UGC eco-system, which AI accompanied, has a little of a network effect, but it is far from being locked.
+<unk> The scale effect is inverse -- the big model is a heavy asset race, and the size of MiniMax (income, share of token, arithmetic) is significantly smaller than bytes/Ali/DeepSeek, on a scale that is crushed rather than crushed.
+Technical/patental barriers ** the strongest: MoE+ linear attention route self-researched, M1 being the first open source large-scale hybrid model of attention reasoning worldwide, long context (original 1M) and efficiency of reasoning (alleged to require only about 30% of DeepSeek R1) have real technical content. But technology leads windows are counted as "month" and are challenged by the distillation charges of Anthropic.
 
-### 2.2 护城河趋势判断
+#2: #2.2 Affording River Trend
 
-**过去两年：技术护城河有真实积累，但商业护城河始终没建起来。** MiniMax的技术判断（早押多模态、早押MoE）事后看都对，但这些判断带来的是"暂时领先"，而非"持久壁垒"——开源策略本身就意味着放弃靠模型直接收费，护城河只能寄望于产品和数据飞轮。
+** The last two years: the technological moat has been built, but the commercial moat has never been built.** MiniMax’s technical judgments (mortality, MoE) are correct after all, but they bring with them a "temporary lead" rather than a "persistent barrier" – the open source strategy itself means that the model is being abandoned from charge-back, and the moat can only rely on product and data wheels.
 
-**未来判断：这是本案最大的不确定性。** 三个侵蚀力量同时存在：
-1. **DeepSeek的降维打击**：以"开源+低价+国产算力"终结闭源定价权，直接把MiniMax股价打到腰斩。
-2. **大厂的免费碾压**：字节豆包（MAU约60%）用免费+流量占据超级入口，MiniMax只能龟缩海外和垂类。
-3. **技术趋同**：模型能力快速收敛，任何单点领先都会被快速追平/开源化。
+** Future judgement: this is the greatest uncertainty in the case.** Three erosion forces exist simultaneously:
+1. **DeepSeek ' s downside blow**: closed-source pricing rights with Open Source + Low Price + National Production Accommodation, directly hitting MiniMax 's share to the waist.
+2. ** Free pressurization in large factories**: Bytebean bags (about 60% of MAU) occupy the super-entry points with free + flow, and MiniMax has to contract overseas and peacocks.
+3. ** Technological convergence**: Model capabilities are rapidly reduced and any single point leads are rapidly levelled/opened.
 
-**关键追问（护城河视角）**：10年后这条护城河还在吗？**大概率不在——至少不是现在这条。** 大模型行业目前不存在可持续护城河，所有人都在同一条快速贬值的技术曲线上狂奔。MiniMax能不能活下来，不取决于"护城河多宽"，而取决于"能不能在钱烧完前，把海外C端做成一个有真实留存和付费的、大厂看不上或够不着的独立生态"。这更像一场赛跑，而非一座城堡。
+** Key chase: ** Is this moat still in place after 10 years?** Probably not – at least not now.** There is no sustainable moat in the big model industry, and everyone is running on the same technological curve of rapid devaluation. MiniMax will survive, not on how wide the moat is, but on whether "to make C C-end overseas a separate ecology with real retention and payment, and not a single castle" before the money burns. This is more like a race, not a castle.
 
 ---
 
-## 三、逆向思考与风险清单
+# Three, reverse thinking and risk list
 
-### 3.1 失败路径全景
+#3.1 Failed Path Panorama
 
-| # | 失败路径 | 概率 | 影响 | 备注 |
+# The path of failure # the probability of failure # the probability of impact # the impact # the note # the risk of failure # the probability of failure # the probability of failure # the probability of failure # the probability of failure # the likelihood of failure # the impact of the impact of the failure # the impact of the failure of the response of the United Nations.
 |---|---|---|---|---|
-| 1 | 估值回归：182倍PS向合理区间收敛，戴维斯双杀 | **高** | 高 | 已在发生（峰值1330→现358，跌73%） |
-| 2 | 7月9日解禁（34%股本）引发踩踏抛售 | 中高 | 中 | 距报告仅7天，流通盘5%→46% |
-| 3 | Talkie遭美国监管下架（类TikTok审查） | 中 | 高 | 核心现金牛，曾有下架前科 |
-| 4 | DeepSeek/大厂持续价格战，B端收入被压垮 | 中高 | 中 | V4降价已致股价腰斩 |
-| 5 | 烧钱军备竞赛中掉队（重蹈百川/零一覆辙） | 中 | 极高 | token份额仅4.2%，落后Kimi/DeepSeek |
-| 6 | 核心技术人才被大厂挖角 | 中 | 中 | 技术合伙人杨斌已离职，字节Seed持续挖角 |
-| 7 | 技术路线（线性注意力）被证伪或边缘化 | 低中 | 高 | 尚未被行业广泛验证 |
-| 8 | AI一级市场泡沫破裂，再融资通道收窄 | 中 | 高 | 现金可撑50+月，但军备竞赛需持续输血 |
+1 <unk> Valuation regression: 182 times PS to reasonable range, Davis to both <unk> high ** high <unk> high <unk> to be occurring (stamp 1330 to 358, 73% drop) <unk>
+2 <unk> Released on July 9 (34% of equity) triggering pedaling, mid-high, mid-high, mid-point, seven days from report, 5 ff 46 °
+<unk> Talkie was placed under U.S. supervision (type TikTok review) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> DeepSeek/ Big Factory has continued price wars, and B ends are stifling, and the V4 has been cut off to the stock price.
+5 <unk> Falling in the arms race with the money burning (spill the same to the same time)
+The core technologist is being dug by the big factory, the tech partner Yang Bin is out of service, the by-doed Seed continues to dig the by-laws.
+The technical route (linear attention) is false or marginalized.
+8 <unk> A.C. market bubbles burst, refinancing channels narrow, <unk> high, <unk> cash can last 50 + months, but the arms race needs to continue to bleed
 
-### 3.2 历史类比
+#3.2 History analogy
 
-- **最贴近的类比是2021年的中概教育股/2000年的.com次新股**：好故事+高增长+天价估值+早期解禁，一旦叙事松动或流动性收紧，估值可以跌80%以上而基本面"没变"。182倍PS本身就是脆弱性的来源。
-- **行业内类比是六小虎自己的掉队者**：百川2025年3月创始团队集体出走、转型医疗；零一万物停止超大模型预训练、"全面拥抱DeepSeek"。这些都曾是明星公司。**"大模型创业公司失败后几乎无法被收购"**（模型和技术积累变现价值低），意味着失败是清零式的，没有安全垫。
-- **正面类比是早期的字节/PDD**：如果MiniMax真能把海外C端做成独立生态，它可能是"下一个从边缘长出来的赢家"。但这个正面情形的概率，市场用182倍PS已经定价得很满。
+- ** The closest analogy is the Middle-Industrial Unit in 2021/.com-new Unit in 2000: good story + high growth + daily price valuation + early release, and once narratives are loose or liquidity is tightened, valuations can drop by more than 80% and the basics "no change". 182 times PS is the source of vulnerability itself.
+- ** The industry analogy is the six tigers themselves who fell **: the start-up team in Begawa left in March 2025, and transformed medical care; everything stopped the megamodel pre-training, "Access to DeepSeek." These were all star companies.** "The big model startup company has failed and is almost unattainable."** (The model and technology build-up are low value) which means that failure is zero and no security cushions.
+- ** The positive analogy is the early bytes/PDD**: If MiniMax really can make C-ends independent, it could be the next winner from the edge. But the probability of this positive scenario is that the market is already fully priced with 182 times the PS.
 
-### 3.3 空方核心论点（原样呈现）
+#3.3 Empty Core Arguments (as presented)
 
-1. **估值离谱**：峰值市销率超500倍（远超OpenAI/Anthropic），即便现价仍182倍。用2025全年不到8,000万美元收入，对撑起百亿美元市值。（新浪财经2026-04、投中网）
-2. **泡沫已破的实证**：6月前两周累计跌约53%，"极短时间跌超30%基本可算泡沫破灭"；峰值1238港元已腰斩再腰斩。（21世纪经济报道2026-06-22）
-3. **解禁抛压**：7月9日首批解禁约34%股本，流通盘放大近10倍，供给冲击明确。
-4. **技术可信度存疑**：2026年2月被Anthropic指控"工业级蒸馏"；M3/benchmark争议；OpenRouter使用量仅第18位——真实技术领先与使用规模被质疑。
-5. **收入基本盘脆弱**：高度依赖Talkie单一产品+海外市场，同时暴露于App Store下架、未成年人监管、地缘审查三重风险。
-6. **六小虎终局悲观**：李开复预测"最终只剩DeepSeek、阿里、字节三家"，创业公司大多难逃失败且无人接盘。
+1. ** Valuation is out of line**: peak market sales are over 500 times (exceeding OpenAI/Anthropic) and 182 times the current price. US$ 10 billion worth of market value is raised with revenues of less than $80 million for the entire year 2025. (New Wave Finance 2026-04, Net in)
+2. **Foot has broken**: cumulatively, about 53% fell in the first two weeks of June, "a very short drop of over 30% is almost equal to the burst of the bubble"; peaking HK$1238 has been re-cuted. (Economic Report 21 2026-06-22)
+3. ** Release of pressure**: The first release of about 34% of the equity on 9 July, the circulation disc was nearly 10 times larger and the supply shock was clear.
+4. ** ** Doubts about technical credibility**: "Industrial distillation" was charged by Anthropic in February 2026; M3/benchmark dispute; OpenRouter only 18th place - real technology lead and scale of use challenged.
+** Income base vulnerability**: High reliance on the Talkie Single Product + Overseas Market, exposed to the triple risk of App Store being set aside, minors being supervised, geo-censorship.
+6. **The end of the six tigers **: Li Kaillion predicted that "there will be only three of DeepSeek, Ali and bytes" and that most start-ups will fail and will not be reached.
 
-### 3.4 偏误自查
+# 3.4 Misreading
 
-- **叙事偏差（最危险）**："六小虎商业化最好""海外70%""视频超Sora"都是真实但相对的优点，容易被放大成"能赢"。要反复提醒自己：**相对最好 ≠ 绝对能活；商业化领先 ≠ 商业模式成立。**
-- **锚定偏误**：现价358港元容易被"从1330跌下来、便宜了73%"的锚定误导。但1330本身是泡沫，从泡沫回落不等于进入价值区——182倍PS仍在泡沫区间。
-- **幸存者偏差**：我们讨论MiniMax是因为它上市了、活到了现在。同期起跑的大量大模型公司已死或转型，它们不在讨论视野里。
-- **权威偏误**：阿里、腾讯、高瓴、红杉的豪华股东阵容，以及解禁前"战略股东公开表态长期看好"，容易被当作背书。但产业资本的战略投资逻辑（生态卡位、对冲布局）与财务回报逻辑不同，且"解禁前喊话看好"本身需要打折解读。
+- ** narrative bias (most dangerous)**: "The Six Tigers are best commercialized" 70% overseas" video superSora is a real, relative advantage, easily magnified as "winner." Remind yourself repeatedly: ** The best is the best, absolutely viable, the best commercial leader is the business model.**
+- **Appointment bias**: The current price of HK$358 is easily misled by the anchoring "down from 1330, cheaply 73%." But 1330 is a bubble itself, and the fall from the bubble is not equal to entering the value zone - 182 times the PS is still in the foam zone.
+- ** Survivors' deviation**: We're talking about MiniMax because it's on the market and it's alive. A large number of model companies that have run in the same period are dead or transformed, and they're not in the discussion.
+- ** Authoritative error**: Ali, Tart, Highmei, Redwood, and the pre-release "Strategists' public statements of long-term "will be endorsed. But the strategic investment logic (eco-position, hedge) of industrial capital is different from the financial return logic, and the "step call for good" itself requires a compromise.
 
-**关键追问（风险视角）**：聪明人为什么会做空/不买？**因为在182倍PS上，你需要相信一个收入不到8,000万美元的公司三年内收入增长7倍、且市场仍愿给25倍PS——而这期间它还要熬过DeepSeek价格战、大厂碾压、Talkie监管、7天后的解禁。任何一个价值投资者看到"无盈利+无安全边际+迫近的巨量解禁"，都会本能地站到场边。** 我最可能犯的错，是低估了前沿AI"赢家通吃"情形下的极端上行——如果MiniMax真成了少数活下来的赢家，今天的价格可能回看很便宜。但这是风险投资的赌法，不是价值投资的买法。
+** Key follow-up (risk perspective)**: Why would smart people do nothing?** Because on 182 times the PS, you need to believe that a company with less than $80 million will grow seven times its income in three years and the market will still give 25 times the PS — and during this period it will survive the DeepSeek price battle, the big plant crush, the Talkie regulation, and the seven days after release. Any value investor sees "no profit + no security margin + the impending mass release" that would have been able to get on the edge.** My most likely mistake is to underestimate the extremes of the front AI 's winner eater's scenario — if MiniMax is a small number of surviving winners, today's price might be cheap. But this is the risk-taking method of investment, not the buying of value investment.
 
 ---
 
-## 四、管理层评估
+# IV. Management assessment
 
-### 4.1 创始人与关键决策复盘
+# 4.1 Founder and Key Decision Recompap
 
-**闫俊杰**：东南大学数学本科→中科院自动化所AI博士→清华博士后，约200篇顶会论文、引用超3万次；商汤6年做到副总裁/研究院副院长。是六小虎中技术底色最纯的创始人之一，获黄仁勋公开赏识、2026年1月作为大模型企业代表出席总理座谈会。
+**Jung Jie: After Dr. A.I. from the Graduate School of Mathematics at the University of South East, Dr. A. Qinghua, over 200 top dissertations and over 30,000 citations were made; the Vice-President/Vice-President of the Academy was a six-year post-graduate Vice President/Rector of the Institute. He was one of the most pure technical founders of the six tigers, and was publicly recognized by Huang In-hoon, who attended the Prime Minister's symposium as a representative of the big model business in January 2026.
 
-| 时间 | 决策 | 评估 | 评分 |
+Time, decision-making, assessment, rating, rating.
 |---|---|---|---|
-| 2021.11 | 商汤上市前离职创业，早于ChatGPT | 提前卡位，判断力强 | ★★★★☆ |
-| 2022–23 | 押注多模态（文本+语音+视觉）| 事后看方向正确 | ★★★★☆ |
-| 2023下半年 | 重仓MoE，2024.1推国内首个MoE大模型 | 前瞻押注成功 | ★★★★★ |
-| 2023 | Talkie出海，做成AI独角兽最成功出海C端产品 | 商业化上最关键的正确决策 | ★★★★★ |
-| 2024 | 海螺AI+视频模型，开辟第二曲线 | 营收占比一年7.7%→32.6% | ★★★★☆ |
-| 2025 | 开源M1/M2维持技术影响力 | 引流有效，但放弃模型直接变现 | ★★★☆☆ |
-| 2026.1 | 4年闪电IPO，抓住AI估值高点融资 | 资本运作精准，为军备竞赛储备弹药 | ★★★★☆ |
+2021.11 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> 2022–23 <unk> multi-module (text + voice + visual) <unk>
+<unk> Second half of 2023, re-store MoE, 2024.1 push the first big MoE model in the country, and make a good forward bet.
+2023 <unk> Talkie out to sea as the most successful sea-end C product of the AI Unicorn, <unk> the most critical and correct decision in commercialization <unk>
+<unk> 2024 <unk> conch AI+ video model, opening up a second curve <unk> revenue per year 7.7% <unk> 32.6% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> 2025 <unk> Open source M1/M2 maintains technical influence <unk> effective current but abandons model directly realized <unk> <unk>
+<unk> 2026.1 <unk> 4-year lightning IPO, caught on AI valuation high-point financing <unk> precision capital operation, ammunition reserve for arms race <unk>
 
-**判断力总评**：闫俊杰的技术判断和时机把握，在六小虎里属于第一档。他拒绝移动互联网"烧钱投流"逻辑、坚持技术驱动，价值观是对的。IPO踩在AI估值高点、募资约6.2亿美元，是精明的资本运作。
+** Master of Judgement**: Jin-ja's technical judgement and timing is the first in six tigers. He refuses to move the Internet 'bringing money' logic, insists on technology-driven values, is right. IPOs are on top of AI's high valuation, raising about $620 million, and are smart capital operations.
 
-### 4.2 资本配置与股东利益一致性
+# 4.2 Consistency of capital allocation with shareholder interests
 
-- **股权与控制**：AB股结构，B类10票/股，创始团队掌握>60%投票权。闫俊杰经济权益约10.61%，控制权牢固。外部股东阿里13.66%、米哈游6.4%、红杉、IDG、腾讯等。
-- **一致性**：创始团队持股绑定深，激励到位（2025年9月推百万美元期权留人）。但对二级市场投资者而言，**在IPO估值高点上市、7天后即迎来34%股本解禁**，这个时间结构对早期股东（退出）远比对二级散户（接盘）友好——这不是道德问题，是结构现实，价值投资者必须看清自己在食物链的哪一环。
-- **资本配置能力尚无法评判**：公司刚上市、仍在纯投入期，超60%募资投向算力和训练，回报率要3年后才能验证。
+** Equity and control**: AB stock structure, B-type 10 votes/units, with the founding team holding >60% of the vote. <unk> At 10.61% of the economic rights of Jojo, control is strong. External shareholders Ali 13.66%, Mikhaili 6.4%, Redwood, IDG, Quest, etc.
+- ** Coherence**: The founding team has a deep stock-holding and incentive (a multimillion dollar option retention in September 2025). For secondary market investors,** 34 per cent of the equity release was posted at the IPO valuation high point and followed seven days later.** This time structure is much more friendly to early shareholders (exit) than to secondary bulk (disconnection) - this is not a moral issue, it is a structural reality, and value investors must see which link they are in the food chain.
+- ** Capital allocation capacity is not yet judged**: companies are just listed and are still in a pure investment period, with over 60 per cent of their funds being invested in computing and training, and the return rate will take three years to be validated.
 
-### 4.3 组织与文化
+# 4.3 Organization and culture
 
-AI Native组织、仅约3个管理层级、约385–400人"顶几千人产出"、极致人效（人均月成本约11万元）。文化年轻化、技术驱动。风险点：技术合伙人杨斌、星野负责人张前川、To B负责人魏伟等核心成员先后离职——大模型独角兽"联创出走"的通病在MiniMax也存在，但原始班底（贠烨祎、周彧聪等）仍在，模型分线由更年轻骨干接棒。
+AI Native, only about three management levels, about 385-400 "up to thousands" and extremely human (about $110,000 per person per month). Cultural rejuvenation, technology-driven. Risk point: techno-partner Yingbin, head of Hoshino Zhang Sichuan, head of ToB, and other core members of the Great Model Unicorn "Creak Out" also exist in MiniMax, but the original base (single, Zhou Xing, etc.) is still in place, with model lines being tied by younger bones.
 
-**关键追问（管理层视角）**：如果闫俊杰离开，公司还能保持竞争力吗？**存疑。** 这家公司高度依赖闫俊杰的技术判断力和方向感——他就是公司的"首席产品经理"（模型即产品）。技术团队已有核心流失，创始人的不可替代性偏高。这既是"对的人"的加分（你在赌一个顶尖技术判断者），也是关键人风险的减分。
-
----
-
-## 五、行业与文明趋势
-
-### 5.1 行业所处位置
-
-**大模型无疑处于"文明级范式转移"**——这是AI，是蒸汽机/电力/互联网级别的技术革命，李录框架下的"文明演进"命题成立。中国AI核心产业2025年超1.2万亿元、预计2030年破3万亿；AI Agent市场2023–2028年CAGR约72.7%。**赛道是史诗级的好赛道，这一点毫无疑问。**
-
-但"好赛道"不等于"好生意"，这正是芒格反复强调的陷阱。当前中国大模型的产业结构是：
-- **基础设施层**（算力/芯片）赚钱确定性最高，但被英伟达和大厂占据；
-- **模型层**（六小虎所在）竞争最惨烈、被开源和价格战压制、盈利最难；
-- **应用层**（超级入口）被字节/阿里/腾讯用免费+流量把持。
-
-MiniMax卡在最难的模型层，用"出海+垂类"策略在夹缝里找差异化生存空间——这是聪明的求生，但不是占据了价值链的有利位置。
-
-### 5.2 二十年之问
-
-**站在2046年回看，MiniMax更可能是什么？** 三种可能，概率大致三分：
-
-1. **"这个时代的标准石油"**（低概率）：成为少数活到终局的通用AI巨头之一，海外C端生态成型。若如此，今天的价格回看极便宜。
-2. **"昙花一现的3Com"**（中高概率）：技术曾领先，但在巨头碾压和资本消耗中掉队，最终被收购或边缘化——像今天的百川、零一。
-3. **"被收购的技术团队"**（中概率）：技术和人才有价值，但独立商业模式没跑通，最终并入某个大厂生态。
-
-**关键追问（趋势视角）**：**AI是这个时代最确定的文明级机会，但"押中赛道"和"押中公司"是两回事。** 铁路时代的赢家不是最早的铁路公司，互联网时代的赢家不是最早的门户。MiniMax在正确的赛道上，用正确的技术判断，跑在一条极窄的路上——它可能是赢家，但今天没人（包括它自己）能确定，而市场的定价假设它大概率是赢家。
+** Key follow-up (management perspective)**: Can the company remain competitive if he leaves?** Doubts** The company is highly dependent on the technical judgement and direction of the firm - he is the company's "chief product manager" (model or product). The technology team has lost its core and the founders are indefensiblely high. This is both a "right person" plus (you bet on a top technology judge) and a cut on key human risks.
 
 ---
 
-## 六、估值与安全边际
+# V. Trends in industry and civilization
 
-### 6.1 当前市场定价（经工具验算）
+#5.1 Industry Location
 
-| 指标 | 数值 | 说明 |
+** The big model is undoubtedly in the "civilizational paradigm shift"** - this is AI, a technology revolution at the steam engine/electricity/Internet level, and the idea of "civilization evolution" was created in the framework of Li Sue. China's AI core industry was over 1.2 trillion yuan in 2025 and is expected to break 3 trillion in 2030; the AI Agent market 2023-2028 CAGR is about 72.7% ** The track is an epic track, no doubt **
+
+But "good track" is not "good business," which is the trap that Manger has repeatedly stressed. The current industrial structure of the Chinese model is:
+- ** Infrastructure layer** (numeric/chip) is the most profitable but is occupied by British Weida and the big plant;
+- ** Model layer** (where the six tigers are located) is the most competitive, depressed by open sources and price wars, and the hardest to earn;
+- **Applied layer** (super-entry) is held by by bytes/Ali/Team free + flow.
+
+MiniMaxka is in the hardest layer of models, using the "go-over-trillion" strategy to find a different life space in the cracks — smart survival, but not a favourable position in the value chain.
+
+# 5.2 20 years of questioning
+
+** Stand back in 2046, what's more likely about MiniMax?** Three possibilities, about three points in probability:
+
+1. ** "Standard oil of this era"** (low probability): one of the few universal AI giants who survives to the end, with an offshore C-end eco-formulation.
+2. ** "3Com"** (middle and high probability): technology was ahead of the curve, but fell behind in the crushing and capital consumption of giants, and was eventually acquired or marginalized — like the one in the 100th and 100th of today.
+3. ** "Technology Teams Acquisitions"** (Middle Probability): Technology and talent are valuable but stand-alone business models fail to run and eventually integrate into a large plant ecology.
+
+** Key chase (trend perspective)**: **AI is the most definite civilizational opportunity of the time, but "sent in track" and "stake in company" are two different things.** Railways won not the first railway company, Internet-era winners not the first portal. MiniMax, in the right track, runs on a narrow road -- probably the winner, but nobody today (including himself) can determine, and market pricing assumes that it is probably the winner.
+
+---
+
+# VI. Valuation and security margin
+
+#6.1 Current market pricing (tools)
+
+<unk> Indicators <unk> Value <unk> Description <unk>
 |---|---|---|
-| 现价 | 约358港元 | 2026-07-02盘中，前收盘417（当日-14%）|
-| 市值 | 约1,124亿港元（约144亿美元） | 验算偏差0.22% ✅ |
-| 市销率(TTM) | **约182倍** | 144.1亿美元 / 2025收入0.79亿美元 |
-| 峰值市销率 | 约633倍 | 3,900亿港元市值时 |
-| 市盈率 | **不适用** | 公司深度亏损，无盈利 |
-| 现金 | 约11亿美元 | 可撑50+月 |
+* Current prices = approximately HK$ 358 = in disk 2026-07-02, closing 417 (day - 14%) =
+*The total value of the total value of the Fund is HK$ 11.4 billion (approximately US$ 14.4 billion).
+<unk> Market sales (TTM) ** About 182 times** ** ** $14.4 billion / $ 79 million for 2025
+<unk> peak market sales rate <unk> about 633 times <unk> 390 billion Hong Kong dollars in market value <unk>
+<unk> Market gain <unk> not applicable ** company deep loss, no profit <unk>
+Cash, cash, about $1.1 billion, 50 + month.
 
-**估值方法说明**：MiniMax无盈利，PE/DCF均不适用。本报告采用**市销率(PS)驱动的三情景估值**——对未来3年（至2028年）收入做增长假设，应用退出时点的PS倍数，反推隐含市值与股价。所有计算经 `financial_rigor.py` 精确验算。
+** Note on valuation methodology**: MiniMax is not profitable and neither PE/DCF is applicable. The present report uses the three scenario valuations, ** driven by market sales rates (PS), which assumes growth over the next three years (until 2028), applying the PS multipliers of the exit point, which are inversely implied by market value and share price. All calculations are calculated as `final_rigor.py ' .
 
-### 6.2 反向估值：现价隐含了什么？
+#6.2 Inverse valuation: What does the present price imply?
 
-**要维持现价持平（3年不亏不赚），假设2028年市场仍愿给25倍PS（已是成熟高增长软件股的乐观倍数），MiniMax需要2028年收入达到约5.76亿美元——对应2025–2028年收入复合增速约94%/年，连续三年。**
+** To maintain current parity (no loss for three years), assuming that the market is still willing to give 25 times the PS in 2028 (a promising multiplier of mature, high-growth software units), MiniMax needs to earn about $576 million in 2028 — corresponding to a compound increase of about 94 per cent per year in 2025-2028, ** for three consecutive years.
 
-翻译成人话：**当前股价假设MiniMax能连续三年每年收入翻倍（接近），且三年后市场依然愿意给它25倍市销率的高溢价——仅仅是为了让今天的买家不亏钱。** 这就是182倍PS的含义。
+Translating:** Current stock prices assume that MiniMax will double (close) its annual income for three years in a row, and that the market will remain willing to offer it a 25-fold market premium – just to keep today’s buyers at no loss.** That is what 182 times the PS means.
 
-### 6.3 三情景估值（3年期，PS驱动，工具精确计算）
+#6.3 3 scenario valuation (3-year PS drive, tool precision)
 
-以2025年收入0.79亿美元为基数，当前市值144.1亿美元、总股本313.64M、汇率7.8：
+Based on the income of $79 million for 2025, the current market value is $14.41 billion, the total equity is 313.64M, and the exchange rate is 7.8:
 
-| 情景 | 收入CAGR | 2028收入 | 退出PS | 隐含市值 | 隐含股价 | vs现价 |
+<unk> Income CAGR <unk> 2028 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 |---|---|---|---|---|---|---|
-| 乐观 | 90%/年 | 5.42亿美元 | 25倍 | 135.5亿美元 | 约337港元 | **-6%** |
-| 中性 | 55%/年 | 2.94亿美元 | 15倍 | 44.2亿美元 | 约110港元 | **-69%** |
-| 悲观 | 25%/年 | 1.54亿美元 | 8倍 | 12.4亿美元 | 约31港元 | **-91%** |
+<unk> 90%/year <unk> 542 million <unk> 25 times <unk> 135.5 million <unk> approximately $337 <unk> 6%** <unk>
+<unk> Gender 55%/year <unk> 294 million <unk> 15 times <unk> 4420 million <unk> approximately 110 HK$ **-69%** <unk>
+<unk> Pessimism 25%/year 154 million <unk> 8 times <unk> 1.24 billion <unk> approximately 31 HK$ **-91%** <unk>
 
-**这张表是全篇最重要的结论**：
-- **即使是乐观情景**（连续三年90%增速+25倍退出PS，这已是相当激进的假设），三年后也只值现价的94%——**上行空间接近于零**。
-- **中性情景下亏损约69%，悲观情景下亏损约91%。**
-- 赔率结构**严重不对称，且是负向的**：向上几乎没空间，向下深不见底。这与拼多多那种"下行有净现金托底、上行有重估空间"的正向赔率截然相反。
+** This table is the most important conclusion of the entire book**:
+- ** Even if the optimism ** (a three-year three-year period of 90 per cent increase + 25 times withdrawal from the PS is already a fairly radical assumption), it would be only 94 per cent of the current price ** upbound space close to zero ** after three years.
+- ** about 69 per cent of losses under the neutral scenario and about 91 per cent under the pessimistic scenario**
+- The structure of the rate of compensation** is highly asymmetrical and negative: there is little room up and down and deep. This is in contrast to the positive odds of "downside net cash bottom, upside space for revaluation."
 
-### 6.4 与自身历史及同业对比
+# 6.4 Compared to their own history and their work
 
-- **对自己**：上市半年，PS从峰值633倍回落到182倍。看似"跌了很多"，但绝对水平仍是全球AI公司中最贵的之一。
-- **对同业**：智谱2025年收入约7.24亿人民币、Kimi ARR超2亿美元，均数倍于MiniMax的收入；而OpenAI/Anthropic的ARR是MiniMax的300–380倍。**MiniMax是"收入最小、估值倍数最高"的组合**，这个组合在任何估值框架下都是最脆弱的。
+- **to himself**: Six months on the market, the PS fell from a peak of 633 to 182. It seems "slowed a lot," but absolute levels are still one of the most expensive of the global AI companies.
+- ** Inter-operator**: The IM earned about RMB 724 million in 2025, and Kimi ARR exceeded RMB 200 million, which is several times more than MiniMax's, while OpenAI/Anthropic's ARR is 300–380 times that of MiniMax.** MiniMax is the "minimal income, highest valuation multiple" combination**, which is the most vulnerable in any valuation framework.
 
-### 6.5 价格区间判断
+#6.5 Price interval judgement
 
-| 区间 | 判断 |
+♪ The time is right ♪
 |---|---|
-| > 340港元（现价附近，PS>170倍） | **回避区**：即便乐观情景也无上行，无任何安全边际 |
-| 110–340港元 | 观察区：接近中性情景公允值（约110港元）才谈得上讨论，但仍需强执行验证 |
-| < 110港元（PS<55倍） | 价值投资者可开始研究的起点，但前提是收入维持50%+增速、监管无重大恶化 |
-| < 60港元（悲观情景附近） | 若基本面未崩坏而价格到此，才可能出现真正的安全边际 |
+> 340 HK$ (near current prices, PS > 170 times) <unk> Avoidance area**: No upturn, no security margin, even if optimistic
+<unk> HK$110–$340 <unk> Observation area: near neutral scenario fair value (approximately HK$110) is discussed, but verification is still required
+< 110 HK$ (PS < 55 times) <unk> Value investors can start research starting if income is maintained at 50% + speed, and there is no significant deterioration in regulation <unk>
+< HK$60 < (near pessimistic scenario) < < if the basics do not collapse and the price does come to this point, there will be a real security margin.
 
-**关键追问（估值视角）**：如果股市明天关闭5年，你愿意以358港元持有MiniMax吗？**不愿意。** 关闭5年意味着你无法依赖流动性和叙事，只能依赖生意本身产生的价值。而在182倍PS、无盈利、烧钱、格局未定的位置上，5年后这家公司是活下来的赢家还是掉队的百川，是一个我无法回答、市场也无法回答的问题。段永平的标准很简单：**看不懂 + 价格贵，就不碰。** MiniMax在"价格"这一关就已经出局，"看不懂终局"是第二道否决。
+** Key follow-up (value perspective)**: If the stock market closes tomorrow for five years, would you hold MiniMax at HK$ 358?** No. ** Close for five years means you cannot rely on liquidity and narrative, but on the value generated by the business itself. In 182 times the PS, nonprofit, burning money, and unsettled positions, five years later, the company is a winner who survives or a loser who falls, and the market cannot answer. The standard in the Eternquila is simple:** + price is expensive, so don't touch.** MiniMax is out of the game at the price, and "Ignomy is the second veto.
 
 ---
 
-## 七、综合决策备忘录
+# VII. Memorandums for integrated decision-making
 
-### 7.1 六维结论汇总
+#7.1 6D Summary of Conclusions
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |---|---|---|
-| 生意质量 | 六小虎中商业化最好，海外收入独特，视频模型领先——相对优秀但绝对规模极小、模式未验证 | 中高 |
-| 护城河 | 弱。技术有真实积累但领先窗口以月计，无持久商业壁垒，被开源和大厂双重侵蚀 | 中高 |
-| 管理层 | 闫俊杰技术判断和时机把握第一档，价值观正；但关键人依赖高、核心团队有流失 | 中 |
-| 最大风险 | 182倍PS无安全边际+7天后34%解禁+DeepSeek价格战+Talkie监管，负向赔率 | 高 |
-| 文明趋势 | AI是史诗级好赛道，但MiniMax卡在最难的模型层，"押中赛道≠押中公司" | 中高 |
-| 估值 | 极端昂贵。乐观情景上行仅-6%，中性-69%，悲观-91%，赔率严重负向 | 高 |
+The best commercialization of six tigers, unique overseas earnings, leading video models -- relatively good but extremely small, unverified models, medium and high.
+The technology is real, but the lead window is in months, without persistent commercial barriers, and is being eroded by both open sources and large factories.
+♪ Management ♪ ♪ Jin-joo ♪ ♪ The technology and the timing of the first phase ♪ ♪ The values are right; but the key people are dependent on the high, the core team is lost ♪
+<unk> Maximum risk 182 times PS no security margin + 34% release after 7 days + DeepSeek price battle + Talkie regulation, negative recovery rate <unk> high
+♪ The civilizational trend ♪ ♪ AI is an epic track, but MiniMax is in the hardest layer of models, "The track track is in the middle and high
+<unk> Valuation <unk> Extremely expensive. The optimism scenario is only -6%, neutral -69%, pessimistic -91%, and the rate is very negative.
 
-### 7.2 最终决策
+# 7.2 Final Decision Making
 
-**综合评级：回避（价值投资框架）。**
+** Consolidated rating: avoidance (value investment framework).**
 
-这是一个罕见的"**生意值得尊敬、价格无法接受**"的案例。MiniMax是六小虎里我最愿意长期观察的公司——闫俊杰是个真正的技术信仰者，海外C端和视频模型是真实的差异化。但投资是"生意质量"和"价格"的乘积，**再好的生意，在182倍市销率、无盈利、无安全边际、且7天后面临34%股本解禁的位置上，都不构成价值投资的买入标的。** 四位大师会异口同声地站到场边——这不是因为他们看空AI，而是因为这个价格已经把最乐观的情景都定价满了，只留下了风险。
+This is a rare case of "**business is respectable and unattainable." MiniMax is the firm I would like to see most in the six tigers – Joon-ja is a true technology believer, and overseas C-side and video models are genuinely different. But investment is a "quality" and "price" multiplier.** A business that is good, ** in 182 times market sales, no profit, no security margin, and 34% of the unbundling stock after seven days, does not constitute a price entry point for value investment.** Four masters will stand on the sidelines, not because they're empty AI, but because the price has already priced the most optimistic scenarios, leaving only risks.
 
-| 策略 | 建议 |
+Policy Recommendations
 |---|---|
-| 空仓者 | **回避，观察。** 现价无安全边际，即便乐观情景也无上行。把它放进观察清单，作为理解中国AI商业化的最佳样本持续跟踪，但不买入。真要参与AI浪潮，宁可选价值链上盈利确定性更高的环节 |
-| 持仓者 | **重新审视你的买入逻辑。** 如果你是当作风险投资式的"AI彩票"小仓位持有并能承受-90%，那是另一套框架、自负盈亏；如果你是当价值投资买入的，现价没有任何安全边际支撑，应严肃考虑在7月9日解禁前后的流动性冲击中重新评估仓位 |
-| 卖出信号（对持仓者）| ① 收入增速跌破50%（增长故事的生命线断裂）；② Talkie遭美国实质性下架/封禁；③ 现金消耗加速而再融资通道收窄；④ 核心技术人才（LLM/视觉负责人级别）进一步流失 |
-| 买入信号（对空仓者）| ① 股价跌至PS<55倍区间（约110港元下方）**且**收入维持50%+增速——即"价格回归+基本面未坏"同时满足；② 实现经调整经营现金流转正（盈利模式被验证）；③ 视为投机而非投资时，可等解禁抛压充分释放后的技术性超跌，但那是交易不是投资 |
+<unk> Empty warehouser <unk> <unk> evading observation.** The current price is not security marginal, and even optimistic. Put it on the watch list as the best sample to understand China AI commercialization, but not buy it.
+<unk> The owner of the warehouse <unk> ** re-examines your buying logic.** If you hold and can withstand -90% of the risk-based "AI lottery" pocket, that is another framework, self-inflicted profit or loss; if you buy the value investment and the price is not supported by any security margin, seriously consider re-evaluation the warehouse position in the liquidity shock before and after the lifting of the ban on 9 July.
+<unk> Sales signal (to warehouse owners)1 Income growth rate falls 50 per cent (lifelines of growth stories are broken); 2 Talkie is substantially down/enclosed in the United States; 3 Cash consumption is accelerated and refinancing access narrows; 4 Core technical talent (LLMM/Visual Chief level) is further lost
+<unk> Purchase of signals (to empty warehousers)1 Stock prices dropped to PS < 55 times below (about HK$110)** and ** Income maintained 50% + acceleration - i.e. "price regression + fundamentals not broken" - met;2 cash flow of adjusted operations is positive (profit model validated);3 where speculation is considered rather than investment, the trade is not fully released by technical collapse, but that is not investment
 
-### 7.3 四个维度的收尾检验
+# 7.3 Four-dimensional closing test
 
-> **生意的检验**：这是六小虎里最"对"的生意——它真的让海外用户为AI付了费，真的有全球最强的国产视频模型。但"对的生意"有大小之分，收入不到8000万美元、卡在最卷的模型层、护城河以月计——它是一门值得尊敬的小生意，不是一门已经赢了的大生意。
+> ** Test of business**: This is the most "right" business in six tigers -- it really costs overseas users to pay for AI, and it really has the strongest national production video model. But "right business" has a big income of less than $80 million, it's stuck in the most rolling layers, the moat is a month -- it's a respectable small business, not a big one that has already won.
 
-> **风险的检验**：反过来想——买入后最可能后悔的路径不是"公司倒了"，而是"公司活得好好的、技术还在进步，但股价从358跌到110，因为182倍PS本就该跌"。在这个价位，你最大的对手不是竞争对手，是估值地心引力和7天后的解禁闸门。
+> ** Risk test**: Conversely, thinking -- the path that you're most likely to regret when you buy it is not "the company's down," but "the company is alive and well and the technology is improving, but the stock price fell from 358 to 110 because 182 times the PS would have fallen." At this price, your biggest opponent is not the competitor, but the value of gravity and the release gate in seven days.
 
-> **人的检验**：闫俊杰是我愿意下注的那类人——技术纯粹、判断力强、价值观正。如果这家公司估值合理，我会认真研究是否投"人"。但投资不能只投人，尤其当这个人选择在估值高点上市、且早期股东即将在7天后解禁离场时，你要清楚自己是这场游戏里的哪一方。
+> ** Tests**: Junjie is the kind of person I want to bet - pure technology, judgment, and values. If this company is valued properly, I will carefully study whether to invest in "persons." But investment cannot be a mere investment, especially when this person chooses to be listed at the high value point and early shareholders are released in seven days.
 
-> **价格的检验**：182倍市销率、无盈利、负向赔率——这个价格已经为最好的故事付了全款，却没为任何一个坏消息留余地。投资最危险的位置，从来不是"坏公司的低价"，而是"好公司的天价"。MiniMax是好公司，但358港元是天价。**好公司 + 坏价格 = 坏投资。** 这道乘法题，答案很清楚。
-
----
-
-## 附录A：关键数据交叉验证记录（financial_rigor.py 工具输出）
-
-**1. 市值验算**：现价358.4港元 × 总股本313.64M股 = 1,124.1亿港元，行情源市值1,121.6亿港元，偏差0.22% ✅
-
-**2. 2024收入交叉验证**：招股书30.52M vs 媒体口径30.50M（美元），偏差0.03% ✅
-
-**3. 现金储备交叉验证**：财务源11.02亿 vs 风险源11.00亿（美元），偏差0.09% ✅
-
-**4. 当前PS（精确验算）**：市值144.1亿美元 / 2025收入0.79亿美元 = 182.3倍
-
-**5. 峰值PS（精确验算）**：3,900亿港元 ÷ 7.8 ÷ 0.79亿美元 = 632.6倍
-
-**6. 三情景估值（PS驱动，精确验算）**：
-- 乐观（90%CAGR×25xPS）：2028收入5.42亿美元 → 隐含股价约337港元（-6%）
-- 中性（55%CAGR×15xPS）：2028收入2.94亿美元 → 隐含股价约110港元（-69%）
-- 悲观（25%CAGR×8xPS）：2028收入1.54亿美元 → 隐含股价约31港元（-91%）
-
-**7. 反向估值（精确验算）**：维持现价持平（25xPS）需2028收入5.76亿美元，对应3年收入CAGR约94%
-
-**已知数据口径差异/局限**：① 港股无macrotrends/stockanalysis对应源，财务数据以招股书+媒体交叉，非双券商源；② 现价为2026-07-02盘中数据（前收盘417，当日-14%），非收盘价，且该股极端高波动；③ 会计口径亏损含大额优先股公允价值变动非现金项，本报告经济分析采用经调整口径；④ 各家六小虎估值、Talkie/星野收入拆分为媒体估算，置信度中等。
-
-## 附录B：主要数据来源
-
-- **公司官方**：MiniMax招股书（HKEX 2025-12-31，含"董事及主要股东""股本演变""风险因素"章节）、MiniMax IR官网、2025年报数据、MiniMax-M1/M2 arXiv技术论文
-- **上市与融资**：证券时报、华尔街见闻、动点科技、CNBC、Caixin Global、Dealroom、东吴/东财新股研报
-- **行情核验**：Investing.com（0100.HK）、Google Finance（0100:HKG）——2026-07-02盘中
-- **竞争与产品**：36氪、晚点LatePost、量子位、InfoQ、QuestMobile、月狐数据、LMArena/VBench/SWE-Pro榜单
-- **风险与多空**：21世纪经济报道（泡沫先破）、新浪财经、投中网、财新、Pandaily/SCMP/CTOL（Talkie下架）、Forbes（新TikTok）、Anthropic蒸馏指控报道
-- **估值倍数对标**：财新（Anthropic估值）、36氪、投中网（MiniMax市值讨论）
+> ** Test of price**: 182 times market sales, no profit, no negative reward -- the price has paid the best story, but it leaves no room for any bad news. The most dangerous place for investment is never "bad company low" but "good company real price." MiniMax is a good company, but HK$ 358 is a natural price.** Good company + bad price = bad investment.** The answer is clear on this multiplication question.
 
 ---
 
-## 结语：AI分析置信度 ≠ 投资确定性
+# Appendix A: Key Data Cross-Verification Record (final_rigor. py tool output)
 
-**基于充分数据的结论（高置信度）**：
-- 财务硬数据（收入、亏损、毛利率、现金、股权结构）来自审计招股书，经交叉验证；
-- 当前182倍PS、峰值633倍PS是事实；三情景估值的赔率严重负向是数学结论；
-- 7月9日34%股本解禁是已披露的确定事件；
-- "六小虎中商业化最好、海外收入占比>70%"有招股书收入结构支撑。
+**1. Market value calculation**: current value HK$ 358.4 x 313.44 M shares in total equity = HK$ 112.41 billion, market value of the BDN = HK$ 112.16 billion, or 0.22% deviation
 
-**基于有限信息推理的结论（中低置信度）**：
-- MiniMax能否活到终局、成为少数赢家之一——这取决于三年后的技术格局、监管和融资环境，无法从当前资料推定；
-- 线性注意力技术路线的长期价值——尚未被行业验证；
-- Talkie监管风险是否会实质引爆——目前多为测评质疑，无确证性一手监管文件；
-- 各竞品估值和市场份额——多为媒体估算。
+**2. Cross-checking of 2024 revenue**: caller 30.52 M vs Media 30.50 M (United States dollars), deviation 0.03%
 
-**本报告最诚实的一句话**：MiniMax的招股书告诉你它是一家值得尊敬的、六小虎里最能打的AI公司；但它的股价告诉你，市场已经假设它是最终的赢家之一。**前者我有较高把握，后者无人能确认。** 而182倍市销率的位置，不给"后者可能不成立"留任何余地。AI能确认的是"这门生意相对同行不错"和"这个价格绝对昂贵"，无法确认的是"这家公司二十年后是否还在"——而恰恰是最后这个问题，决定了今天358港元到底是便宜还是灾难。
+**3. Cross-checking of cash reserves**: financial source 1,102 million vs risk source 1,100 billion (United States dollars) with 0.09 per cent deviation
 
-**需要一手验证的问题清单**（B级公司的AI盲区，建议读者补充）：
-1. **产品体验**：亲自使用Talkie/星野/海螺，验证AI陪伴的留存和付费意愿是否真实可持续，而非新鲜感驱动；
-2. **监管尽调**：向了解美国App Store审查和AI应用国安审查的人士求证，Talkie被实质下架的真实概率和时间线；
-3. **技术验证**：向大模型研究者求证，MiniMax线性注意力路线的技术领先是否真实、Anthropic蒸馏指控的可信度；
-4. **解禁跟踪**：7月9日及后续解禁后，早期股东（尤其财务投资人红杉/IDG/高瓴）的实际减持行为——这比任何"看好表态"更能说明聪明钱的真实判断；
-5. **现金消耗**：从后续财报追踪真实的季度现金消耗率和再融资安排，判断"50个月跑道"在军备竞赛加速下是否会大幅缩短。
+**4. Current PS (precision)**: market value $14.41 billion / $2025 million income = 182.3 times
+
+**5. Peak PS (precision)**: HK$ 390 billion <unk> 780 million = 632.6 times
+
+**6. Third scenario valuation (PS-driven, accurate)**:
+- Optimism (90% CAGR x 25xPS): 2028 million dollars (US$ 542 million) * Implicit share price of approximately HK$ 337 (-6%)
+- Neutral (55% CAGR x 15 x PS): $2028 million US$294 million * Implicit share price approximately HK$110 (-69%)
+- Pessimism (25% CAGR x 8xPS): 2028 million US$ 154 million * Implicit share value of approximately HK$ 31 (91%)
+
+**7. Reverse valuation (precision)**: $2028 million of income required to maintain current parity (25 x PS) corresponding to approximately 94 per cent of three-year income CAGR
+
+** Known caliber differences/limits**: 1 Port Unit has no macrectrends/stockanalysis counterpart, financial data crosses with stock books and media, and is not a double-divide source; 2 Current value is 2026-07-02 (formerly closed 417, that date-14 per cent), non-collected prices and the Unit is extremely volatile; 3 Accounting calibre losses include large priority unit fair value changes, non-cash, and the economic analysis is based on adjusted calibres; 4 Household Six Tigers valuations, Talkie/Starno revenue are split into media estimates with medium confidence.
+
+# Appendix B: Main data sources
+
+- ** Company Official**: MiniMax Reservation Book (HKEX 2025-12-31, with "Directors and Main Shareholders" "Evolution of Equity" Risk Factors section), MiniMax IR Network, 2025 newspaper data, MiniMax-M1/M2 arXiv technical paper
+- ** Listing and financing**: Securities Times, Wall Street News, Technology, CNBC, Caixin Global, Dealroom, East Wu/Tung Treasure New Unit
+- **Logistic verification**: Investing.com (01000.HK), Google Finance (01000:HKG) — 2026-07-02
+- **Competition and products** 36 kryptonium, late LatePost, quantum bits, InfoQ, QuestMobile, Monthly Fox Data, LMARENA/VBENCH/SWE-Pro List
+- ** Risks and Space**: Economic Report 21 (bush first), New Wave Finance, Injected Network, Financial New, Pandily/SCMP/CTOC (the fall of Talkie), Forbes (the new TikTok), and Anthropic Distillation Allegations
+- ** Valuation multiple logarithm**: Financial (Anthropic valuation), 36 kryptons, Inbound (MiniMax market value discussion)
 
 ---
 
-*报告生成：2026年7月2日 | 模型：Claude Opus 4.8 | 数据经 financial_rigor.py 程序化验证 | report_audit.py 数据抽检：11点抽样，10通过/1口径警告/0不通过，判决【准出】*
+# Concluding remarks: AI analyzes confidence # investment certainty
+
+** Conclusion based on sufficient data (high confidence)**:
+- Financial hard data (income, loss, gross margin, cash, equity structure) are from audit offers and are cross-checked;
+- The current 182-fold PS, peak 633-fold PS, is true; the three- scenarios valuations have a serious negative rate of compensation, which is mathematically concluded;
+- The release of 34 per cent of the equity on 9 July was a definite event that was disclosed;
+- The best commercialization of the six tigers, with overseas income >70%, is supported by a revenue structure of equity.
+
+** Conclusion based on reasoning based on limited information (middle-low confidence)**:
+- whether MiniMax will survive to the end and become one of the few winners - depending on the technology landscape, regulatory and financing environment after three years, and cannot be inferred from current information;
+- Long-term value of linear attention technology routes - not yet validated by industry;
+- Whether the regulatory risk in Talkie will be activated in substance - many of the current assessments are critical and the regulatory documents are not conclusive;
+- Valuation of competing products and market share - mostly media estimates.
+
+** The most honest sentence of this report**: MiniMax's offer tells you it is the most respected and capable AI company in the six tigers; its share price tells you that the market has assumed it to be one of the ultimate winners.** I have a higher degree of certainty about the former, and nobody can confirm it.** And the location of the 182-fold market sales rate leaves no room for the "the latter may not be established." AI can confirm that "the business is a good business" and "the price is absolutely expensive," and it cannot be confirmed that "the company is still in existence 20 years later" -- and that this is the final question, which determines whether HK$ 358 is cheap or catastrophic today.
+
+** List of issues requiring first-hand validation** (AII blind area of B-class companies, suggested to readers to add):
+1. ** Product experience**: personal use of Talkie/Satellite/nose/nail to verify whether the retention and payment intentions of AI accompanying are truly sustainable rather than fresh-mindedly driven;
+2. ** Regulatory **: authenticated by those who know about the Apple Store Review and the AI Applied National Security Review in the United States, the real probability and time frame of Talkie being physically de-listed;
+3. **Technology validation**: to obtain evidence from researchers of large models as to whether the technical lead of the MiniMax linear attention route is real and the credibility of the Anthony distillation charge;
+4. **Liberation**: On 9 July and subsequent release, the actual de facto deconception of the early shareholders (especially the financial investor Redwood/IDG/Hong Kong) was more indicative of the true judgement of smart money than any "take a good look at it";
+5. ** Cash consumption**: The tracking of real quarterly cash consumption and refinancing arrangements in the follow-up financial statements will determine whether the 50-month runway will be significantly shortened if the arms race accelerates.
+
+---
+
+*Report generated: 2 July 2026 Model: Claude Opus 4.8 <unk> Data validated by final_rigor.py Program

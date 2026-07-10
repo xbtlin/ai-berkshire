@@ -1,0 +1,97 @@
+# Meituan Mirror Test — 2026-04-21
+
+**Operation**: Sell PUT, exercise price 85
+**Actual cost**: About 83~84 (exercise price minus premium)
+**Scale**: If all options are exercised, Meituan will rise to approximately 30% of the portfolio weight
+
+---
+
+## 1. Business model
+
+- **Takeaway**: high frequency demand, core chassis, commission + advertising fee
+- **Flash Sale**: Reuse the delivery capacity of delivery riders, compress "next-day delivery" to less than one hour, and open up new space
+- **In-store & Wine Travel**: low frequency and high gross profit, driven by takeaway traffic
+- Overall positioning: urban life infrastructure
+
+---
+
+## 2. Moat
+
+**Trilateral Network Effect** (User × Merchant × Rider):
+
+- More users → more merchants → more riders → richer categories and lower delivery costs → better experience → more users
+- The three parties are locked into each other, making it difficult for any party to migrate
+
+**Stress test passed**:
+- Ele.me burned about 50 billion before and after, but failed to break through
+- This round of food delivery war (JD.com + Alibaba) is expected to burn 88 billion to 90 billion. Meituan’s share has declined but the three-sided network is still intact.
+- The moat is still there after a cumulative 100 billion level stress test, and in fact a monopoly has been formed
+- Conclusion: The moat has **widened** over the past five years, not narrowed
+
+**The food delivery war is irrational**: Ali’s main business is e-commerce + cloud + AI, and food delivery and its synergy are questionable; if synergy is a false proposition, Ali will reduce investment like Ele.me. Current signals indicate that the war has been called off. Regardless of the outcome, it will be good for Meituan.
+
+---
+
+## 3. Management
+
+WANG The overall management team is among the best in the country. ** Passed unanimously. **
+
+---
+
+## 4. Valuation & Margin of Safety
+
+**Current market capitalization**: approximately HK$464.6 billion
+
+**Profit Center Calculation**:
+
+| Business | Conservative estimate | Optimistic estimate |
+|---|---|---|
+| Takeout + flash sale (100 million orders/day, profit of 1~1.5 yuan per order) | 36.5 billion | 55 billion |
+| In-store + Hotel and Travel | 20 billion | 20 billion |
+| International business | - | 10 billion~20 billion |
+| **Total** | **~55 billion** | **~85 billion** |
+
+- The median is about 70 billion, with a 30% discount (uncertainty in the food delivery war) ≈ **49 billion~50 billion**
+- Give 15~20x PE: **750 billion ~ 1 trillion**
+- Compared with the current price of 464.6 billion: the discount is approximately **45% to 40%%**, with a significant margin of safety
+
+**Pessimistic Scenario** (Alibaba will continue to burn for a few more years):
+- The profit is maintained at 30 billion, giving 15x PE = 450 billion ≈ approximately equal to the current price, basically a support
+
+---
+
+## 5. Balance sheet
+
+| Project | Amount (HKD 100 million) |
+|---|---|
+| Total Current Assets | 2,250 |
+| Cash and equivalents | 1,067 |
+| Short term investment | 600 |
+| Non-current assets | 1,200 |
+| Total assets | 3,469 |
+| Current liabilities | 1,200 |
+| Non-current liabilities (including convertible bonds 47 billion) | 700+ |
+| Total liabilities | 1,900+ |
+| Stockholders' Equity | 1,500 |
+
+- Current assets (2,250) - Current liabilities (1,200) = **Net current assets approximately 100 billion**
+- Even if we lose RMB 20 billion this year, we can still sustain it for many years; and we can replenish ammunition through external financing.
+
+---
+
+## 6. What will happen if you make a wrong judgment?
+
+**The biggest risk**: The three-sided network is breached.  
+**Probability judgment**: extremely small. Reason:
+1. The 100 billion stress test has passed, and the moat has been verified in actual combat
+2. Meituan will defend the main network at all costs; if necessary, it will cut off non-core businesses such as internationalization and shrink its defense.
+3. From the perspective of business rules, the food delivery war is unlikely to last for more than four years. Alibaba’s synergy effect is questionable and it is likely to cool down.
+
+---
+
+## 7. Focus on future tracking
+
+1. The pace of the food delivery war is cooling down (changes in Alibaba/JD.com’s subsidy intensity)
+2. Flash sale order volume and profit trend per order
+3. Internationalization (Keeta) progress
+4. Can quarterly profits turn positive?

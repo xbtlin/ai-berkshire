@@ -1,331 +1,331 @@
-# 中科飞测（688361.SH）投资研究报告
+# Investment study on Central Science Flying (688361.SH)
 
-> **研究日期**：2026年6月24日
-> **股价**：CNY 275.90 | **市值**：CNY 966亿
-> **52周区间**：估计 CNY 80 - 300+
-
----
-
-## AI研究偏见自觉
-
-**信息丰富度评级：B级（信息适中）**
-
-中科飞测2022年科创板上市，上市仅4年，券商覆盖有限（主要为东吴/华西/光大/华泰等），部分早期财务数据需推算。作为半导体检测量测设备细分赛道的国产替代标的，行业数据（SEMI/Gartner）可参考但公司层面的竞争情报有限。
-
-**B级公司的AI研究陷阱**：市场对中科飞测的叙事高度聚焦"国产替代KLA"+"半导体自主可控"。这个叙事在地缘政治背景下极具感染力，但容易掩盖一个基本事实——**公司2025年净利润仅0.59亿，经营现金流为负8.62亿，却享有966亿市值**。AI可能因"国产替代"叙事过度乐观，将极早期的公司按成熟期估值。
-
-**偏见自查**：
-- "国产替代"叙事创造了一种"政策确定性"的幻觉——但政策支持≠公司一定成功
-- PE 1,642倍——这不是"高估值"，这是"几乎没有盈利基础的纯概念定价"
-- 如果没有"中美科技脱钩"这个宏观叙事，这家公司是否值得投资？
+> ** Date of study**: 24 June 2026
+> ** share price**: CNY 275.90 ** Market value**: CNY 96.6 billion
+> **52 weeks**: estimated CNY 80-300+
 
 ---
 
-## 关键数据交叉验证记录
+# AI studies prejudices
 
-| 验证项 | 来源1 | 来源2 | 偏差 | 结果 |
+** Information abundance rating: B (median)**
+
+The Chinese Flying Survey was launched in 2022, with only four years of listing, and limited coverage of the voucher dealers (mainly Dong Wu/Wawxi/Gwang Da/Watan, etc.) and some early financial data had to be extrapolated.
+
+**AII study traps for B-class companies**: The market’s highly focused narrative of Chinese science is “national production replaces KLA’+” semiconductor autonomy.” This narrative is extremely contagious in geopolitical contexts, but it is easy to hide the basic fact that ** the company’s net profit in 2025 was only 59 million, operating cash flows were negative at 862 million, but enjoyed a market value of 96.6 billion**. AI may over-optimize the “national production replacement” narrative by valuing very early firms at maturity.
+
+** Prejudice self-examination**:
+- The narrative of "State-of-state" created a illusion of "policy certainty" - but policy support for the company must be successful.
+- PE 1,642 times -- this is not "high valuation," it's "pure concept pricing with little profit base."
+- If there is no "Customs and Technology Decoupling" macro narrative, is this company worth investing?
+
+---
+
+# Cross-checking records for key data
+
+<unk> Validation item <unk> Source 1 <unk> Source 2 <unk> deviation <unk> result <unk>
 |--------|-------|-------|------|------|
-| 市值（~966亿） | 股价275.9×股本~3.5亿=965.6亿 | 亿牛网966.1亿 | 0.04% | 通过 |
-| FY2025收入（20.53亿） | 公司年报 | 证券时报/证券之星 | 一致 | 通过 |
-| FY2025归母净利（0.5865亿） | 公司年报 | 证券时报 | 一致 | 通过 |
+Market value (~96.6 billion)
+<unk> FY2025 (US$ 2,053 million) <unk>
+<unk> SY2025 net profit from mother (586.5 million) <unk>
 
-> PE(FY2025)=1,642x、PB≈27.6x、ROE=1.68%、股息率=0%、FCF为负 均通过 `financial_rigor.py` 精确验算。
+> PE(FY2025)=1,642x, PB<unk> 27.6x, ROE=1.68%, dividends = 0%, FCF negative are calculated by `final_rigor.py ' .
 
-**重要说明**：中科飞测2024年仍为亏损状态，2025年刚刚扭亏为盈（净利润0.59亿），传统PE估值完全无意义。市场定价逻辑是PS（~47倍）和远期盈利预期。
+** Significant note**: The Chinese Flying Survey remained in deficit in 2024, the loss was reversed in 2025 (net profit of 59 million) and the traditional PE valuation is totally meaningless. The market pricing logic is PS (~47 times) and forward profit expectations.
 
 ---
 
-## 一、生意本质分析
+# One, business nature analysis
 
-### 一句话定义
+# One word of definition
 
-**中科飞测是中国半导体检测和量测设备的国产替代先锋——本质上是在"做KLA做的事"，但规模仅为KLA的1/50，在中美科技脱钩的窗口期抢占国内晶圆厂订单。**
+** The Chinese Flying Survey is the national product of Chinese semiconductor detection and measurement equipment in place of the vanguard - essentially "doing what KLA does", but only 1/50 KLA size, taking orders from domestic crystal mills during the window period of Sino-American technology decoupling**
 
-### 收入结构拆解（FY2025）
+# # income structure disassemble (FY2025)
 
-| 产品线 | 收入（亿元） | 占比 | 同比增速 | 毛利率 |
+The product line, the income (millions of yuan) the ratio, the rate of increase, the rate of Maori, the rate of increase, the rate of gross domestic product, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of the increase, the rate of the proportion of the country's income, the proportion of the population, the proportion of the population, the proportion of the population, the proportion of the population, the proportion of the population, the number of the population, the number of the population, the number of the population, the number of the population, the number of the population, the number of the population, the number of the population, the number of the population, the number of the population, the population, the population, the which, the which, the most, the most, the most, the most, the factors, the factors, the factors, the factors, the most, the factors, the factors, the factors, the factors, the factors, the factors, the factors, the factors, the factors, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, the most, which, which, which, the most, the
 |--------|------------|------|---------|--------|
-| **检测设备** | 13.64 | 66.4% | +38.5% | 53.29% |
-| **量测设备** | 6.23 | 30.3% | +72.7% | 41.91% |
-| 软件产品 | 0.13 | 0.6% | 新增 | 54.59% |
-| 其他 | ~0.53 | 2.6% | — | — |
-| **合计** | **20.53** | **100%** | **+48.8%** | **49.93%** |
+** Test equipment** 13.64 <unk> 66.4 <unk> + 38.5 <unk> 53.29 <unk>
+**Measuring equipment** 6.23 <unk> 30.3 <unk> + 72.7 <unk> 41.91 <unk>
+<unk> Software products 0.13 <unk> 0.6 % <unk> New <unk> 54.59 <unk>
+<unk> Other ~ 0.53 <unk> 2.6% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+** Total** ** 20.53** ** 100%** ** ** 48.8% ** 49.93% **
 
-**关键发现**：量测设备增速（+72.7%）远超检测设备（+38.5%），表明公司在量测领域的国产替代正在加速。软件产品首次贡献收入，虽然金额微小但方向正确（软件=高毛利复购收入）。
+** Key findings**: Measuring equipment at a much faster rate (+72.7%) than testing equipment (+38.5%), indicating that the company’s national production replacement in the field of measuring is accelerating. Software products contribute revenue for the first time, albeit in small amounts, but in the right direction (software = high Māori repurchase revenue).
 
-### 财务趋势（近4年，上市以来）
+# # Financial trends (for nearly four years, since listing)
 
-| 指标 | FY2022 | FY2023 | FY2024 | FY2025 |
+Indicator: SY2022 <unk> SY2023 <unk> SY2024 <unk> SY2025 <unk>
 |------|--------|--------|--------|--------|
-| 收入（亿） | ~6.5 | ~8.9 | ~13.8 | 20.53 |
-| 收入增速 | — | ~37% | ~55% | +48.8% |
-| 归母净利（亿） | ~-0.3 | ~1.4 | ~-0.83 | **0.59** |
-| 扣非净利（亿） | — | — | -1.23 | — |
-| 毛利率 | ~48% | ~49% | ~49% | 49.93% |
-| 净利率 | 负 | ~16% | 负 | **2.86%** |
-| 研发费用率 | ~30%+ | ~30% | ~30% | ~25-30% |
-| 经营现金流（亿） | — | — | ~-3.1 | **-8.62** |
+Income (billions) ~ 6.5 ~ 8.9 ~ 13.8 ~ 20.53 ~
+<unk> Income growth rate<unk> ~ 37% ~ 55% <unk> 48.8% <unk>
+<unk> Net return to mother (billion) ~-0.3 ~ 1.4 ~- 0.83 <unk> **0.59** <unk>
+<unk> Net profit (millions) <unk> <unk> <unk> <unk> - 1.23 <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Māori ~ 48% <unk> 49% <unk> 49% <unk> 49.93% <unk>
+Net interest rate <unk> negative <unk> 16% <unk> negative <unk> **2.86% **
+<unk> 30% ~ 30% ~ 30% ~ 30% ~ 30% ~ 25-30% ~ 25-30% ~ 25% ~ 30% ~ 30% ~ 30% ~
+<unk> Operating cash flow (billions) <unk> <unk> -3.1 <unk> **-8.62** <unk>
 
-**核心矛盾**：收入高速增长（4年CAGR ~50%+），但**几乎不赚钱**。2023年曾短暂盈利（1.4亿），2024年又转亏，2025年勉强扭亏（0.59亿）。经营现金流持续为大幅负数（-8.62亿），公司处于"烧钱换增长"阶段。
+** Core paradox**: High income growth (4 years CAGR ~ 50% +), but ** little money **. Short profit in 2023 (140 million), then loss in 2024, barely lost in 2025 (59 million). Operating cash flows are persistently negative (-862 million) and companies are in the "burn-for-money" phase.
 
-### 商业模式画布
+# Business model canvass
 
-- **类型**：高端装备制造，单台设备价值数百万至数千万元，一次性销售+少量售后服务
-- **客户**：国内头部晶圆厂（中芯国际、长江存储、华虹半导体等），Top 5客户占比>70%
-- **复购性**：弱——设备寿命长（10年+），复购依赖客户扩产。但技术升级带来换代需求
-- **认证周期**：极长——半导体设备进入晶圆厂产线需6-18个月验证，一旦入围短期内不易被替换
-- **收入确认特点**：设备交付→安装→验收→确认收入，周期长，导致应收账款和合同负债大
+- **Typical**: high-end equipment manufactured, single-stage equipment worth millions to tens of millions of dollars, one-time sale plus small after-sale services
+- **Crown**: Domestic Head Crystal Circle Factory (Center Cyclops International, Yangtze Storage, China Rainbow Semiconductor, etc.), Top 5 clients > 70%
+- ** Repurchase**: Weak - long life of equipment (10 years+) and reliance on customer extension for repurchase. But technological upgrading brings demand for replacement
+- ** Certification cycle**: very long - semiconductor equipment entering the crystalline production line takes 6-18 months to be validated and cannot easily be replaced once it is in the short term
+- **Income recognition characteristics**: equipment delivery — installation — receipt and inspection — recognition income, long cycle, leading to high receivables and contractual liabilities
 
-### 追问：这门生意好在哪？
+# Ask: Where is the business?
 
-**如果只能用一句话描述**：中科飞测赌的是"中国半导体产业链必须自主可控"这个国家意志——如果这个趋势持续20年，公司可能成为"中国的KLA"；如果中美关系缓和或国产替代失败，公司可能沦为一个亏损的小设备商。
+** If one sentence is used to describe**: Chinese Flying Gambles is that "China's semiconductor industrial chain must be autonomously controlled" of the will of the country — if this trend continues for 20 years, the company may become "China's KLA"; if Chinese-American relations ease or national production fails, the company may become a small equipment dealer at a loss.
 
-生意的好处：
-1. **TAM巨大**——全球半导体检测量测设备市场~120-150亿美元，中国市场~292亿元，KLA一家市占51%。国产替代率<5%，天花板极高
-2. **政策强力驱动**——半导体设备是国家大基金重点投资方向，客户（晶圆厂）有政治任务采购国产设备
-3. **技术壁垒高→一旦突破则护城河深**——半导体检测量测涉及精密光学、图像算法、纳米级精度，后来者进入极难
+Benefits of business:
+**TAM is huge** - Global market for semiconductive medical survey equipment ~ $12-15 billion, Chinese market ~ 29.2 billion yuan, and 51% of KLA municipalities.
+** Policy power drive** — Semiconductor equipment is a key investment direction for the large national fund, and the client (the Crystal Mill) has a political mission to procure equipment of national origin
+** High technical barriers, if broken, are deep in the moat** — semiconductive medical measurements involving precision optical, image algorithms, nano-grade accuracy, and later entry is extremely difficult.
 
-生意的隐忧：
-1. **几乎不赚钱**——2025年净利率仅2.86%，经营现金流-8.62亿
-2. **客户极度集中**——Top 5客户>70%，本质上依赖几家国有晶圆厂的采购意愿
-3. **与KLA差距巨大**——KLA年收入~110亿美元、净利率32%、市值~800亿美元。中科飞测收入仅其1/40、净利率仅其1/11
+Business’s Axis:
+** Little money ** — net interest rate in 2025: only 2.86 per cent; operating cash flow - 862 million
+**The extreme concentration of clients** - 70% of Top 5 clients > - depends in essence on the procurement willingness of several State-owned crystal mills
+** The difference from KLA is large** - KLA annual income ~ $11 billion, net interest rate 32%, market value ~ $80 billion.
 
 ---
 
-## 二、护城河评估
+# II. A waterfront assessment
 
-### 五类护城河逐项验证
+# Five-class moats, one by one
 
-| 护城河类型 | 强度 | 验证分析 |
+♪ The moat type ♪
 |-----------|------|---------|
-| **品牌/定价权** | 弱 | 作为国产替代者，定价通常低于KLA/ASML 30-50%以争取客户。无品牌溢价 |
-| **转换成本** | 中等偏强 | 半导体设备验证周期6-18个月，一旦进入产线不易被替换。但客户同时引入多家供应商分散风险 |
-| **网络效应** | 弱 | 硬件设备无网络效应。但积累的工艺数据有一定"数据飞轮"潜力 |
-| **规模效应** | 弱（当前）→中等（未来） | 当前体量太小（20亿收入），规模效应尚未显现。若收入达50-100亿，研发摊薄将显著改善利润率 |
-| **技术壁垒** | **中等偏强** | 光学检测、电子束检测、X光检测三条技术路线均有布局，部分产品性能达到KLA/Onto Innovation同等水平。在国内同行中技术最全面 |
+** Brand/pricing rights** Weak <unk> As a national substitute, prices are usually lower than KLA/ASML 30-50% for clients. No brand premium
+<unk> ** Conversion cost** <unk> Mediumly strong <unk> semiconductor equipment validation cycle 6-18 months, which is not easily replaced once it enters the production line.
+<unk> Network effects** Weak hardware equipment with no network effects. But accumulated process data has a certain "data wheel" potential
+<unk> **Scalation effect** Weak (current) <unk> Medium (future) <unk> When the amount of precursors is too small (two billion dollars in revenue) the scale effect has not yet materialized.
+<unk> Technical barriers** <unk> Mediumly strong** Optical tests, electro-beam tests, X-ray tests, three technical routes, some of which are comparable to KLA/Onto Innovation.
 
-### 护城河趋势
+# The moat of the river
 
-**过去3年：从无到有**。2022年上市时产品线仅覆盖几个细分领域，2025年已形成"光学+电子束+X光"三大技术路线一站式覆盖。
+** The last three years: from none to none. The product lines covered only a few sub-areas when they were listed in 2022 and three technical routes, "optic + electrobeam + X-ray" in 2025, were covered in one-stop-shop.
 
-**未来5年：快速加宽期（如果国产替代持续推进）**。关键看两个变量：
-1. 美国对KLA等出口管制是否加严→直接决定国产替代需求强度
-2. 公司产品能否从成熟制程（28nm+）向先进制程（14nm以下）突破→决定TAM天花板
+** Next 5 years: rapid extension period (if national production is replaced by continuous progress)**. Two variables are considered:
+1. U.S. tightening export controls such as KLA directly determines the intensity of national production replacement demand
+2. Whether the company ' s products can break through the maturity process (28nm+) to the advanced process (14nm below) to determine the TAM ceiling
 
-### 追问：10年后这条护城河还在吗？
+# Ask: 10 years later, is this moat still there?
 
-**高度不确定**。如果中国半导体产业持续发展+美国持续制裁→中科飞测可能成长为50-100亿收入、20-30%净利率的"中国KLA"。但如果中美关系缓和→晶圆厂重新采购KLA→中科飞测的竞争力将大幅削弱（产品仍落后KLA 1-2代）。
+China’s KLA, which is likely to grow from $5 billion to $10 billion in income and 20 to 30% net interest rate, is likely to grow if China’s semiconductor industry continues to grow + the US sanctions. If China’s China KLA is eased, the Chinese-American company will be less competitive in re-purchase of KLA-based flight control (the product is still behind KLA 1-2 generation).
 
 ---
 
-## 三、逆向思考与风险清单
+# Three, reverse thinking and risk list
 
-### 失败路径全景
+# Failed path panorama
 
-| 失败路径 | 概率 | 影响程度 |
+<unk> Failed path <unk> Probability <unk> Impact level <unk>
 |----------|------|---------|
-| 长期无法实现规模化盈利（持续烧钱） | 30-40% | 极高 |
-| 美国制裁松绑→晶圆厂回购KLA | 15-25% | 极高 |
-| 客户集中度过高→单一大客户砍单 | 20-30% | 高 |
-| 技术突破不及预期→产品无法进入先进制程 | 30-40% | 高 |
-| 国内竞争加剧（上海精测、睿励科学等） | 20-30% | 中等 |
-| 现金流持续恶化→需要大额融资摊薄 | 40-50% | 中等 |
-| 估值回归→PS从47x回到20x意味着-57% | 50-60% | 高 |
+<unk> Long-term failure to achieve economies of scale (continuing burning of money) <unk> 30-40% <unk> very high <unk>
+<unk> U.S. sanctions to untie the crystal mill to buy back KLA 15-25% <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The client group has been able to get through a single, single client cut-off, 20-30%.
+The technology breakthrough is not as good as expected, and the product is not going to be able to enter the advanced process.
+<unk> Increased domestic competition (Shanghai precision, science, etc.) <unk> 20-30%
+<unk> Continued deterioration of cash flows requires a large financing spread <unk> -50%
+<unk> Valuation returns from 47x to 20x means 57% <unk> 50-60% <unk> High <unk>
 
-### 历史类比
+# History analogy
 
-| 类比 | 相似点 | 结局 | 启示 |
+The synonyms, the symmetry, the symmetry, the end, the revelation, the sermon.
 |------|--------|------|------|
-| **北方华创（2015-2020年）** | 半导体设备国产替代先锋 | 从50亿市值涨至3000亿+，成为中国最大半导体设备公司 | 国产替代成功案例，但北方华创用了10年才实现规模化盈利 |
-| **中微公司（2019-2024年）** | 刻蚀设备国产替代 | 市值从100亿涨至1500亿+ | 证明半导体设备国产替代的估值溢价可以持续 |
-| **上海精测（2015至今）** | 同为检测量测设备，直接竞争对手 | 收入增长但盈利波动大，市值~100亿 | 并非所有国产替代标的都能成功——赛道正确不等于公司正确 |
+**Nortarware (2015-2020)** NWWCs replaced pioneers by NWs, increased from 5 billion to 300 billion plus, becoming the largest Chinese semiconductor equipment company, <unk> National Production Substitutes, but TWSG took 10 years to make a profit in scale
+** MEXI (2019-2024)** Substitute for national production of corrosion equipment
+** Shanghai Precision (2015-present)** Also for measuring equipment, direct competition <unk> income growth but high profitability, market value ~10 billion <unk> Not all national sub-proprietary targets have been successful <unk> the correct track is not the correct company <unk>
 
-### 追问：我最可能在哪里犯错？
+# Ask: Where am I most likely to make mistakes?
 
-1. **被"国产替代"叙事催眠**。"KLA被制裁→中科飞测受益"的逻辑链看起来清晰，但忽视了一个事实：KLA在中国的收入占比约30%，美国目前并未完全禁止KLA对华销售。制裁的实际力度远不如市场叙事那么极端
-2. **将"收入高增长"等同于"好公司"**。收入增长48.8%很亮眼，但经营现金流-8.62亿意味着每卖一块钱设备实际上在亏钱。这是典型的"增收不增利"陷阱
-3. **忽视966亿市值对应的盈利要求**。按15%目标净利率、30x合理PE计算，需要21.5亿净利润。按当前净利率2.86%→需要750亿收入。按50%年增速，从20.53亿增长到750亿需要约7年——这假设了一切完美
+1. ** Hypnotized by "state-made" narrative**. The logical chain of "KLA is a benefit to the Chinese police" seems clear, but ignores the fact that KLA earns about 30% of China 's revenues, and that the United States does not currently completely prohibit KLA sales to China. The actual level of sanctions is far less extreme than market narratives.
+2. ** To equate "high income growth" with "good company"**. The 48.8% growth in income is bright, but operating cash flows - 862 million means that every dollar of equipment sold is actually losing. This is a typical "no gain" trap.
+3. ** Ignores the profit requirement corresponding to the market value of 96.6 billion. **A net profit of $2.15 billion is required at the target net interest rate of 15%, and reasonable PE of 30 x. At the current net interest rate of 286% – 75 billion is needed. At the 50% annual rate of increase, it takes about 7 years from 2,053 million to 75 billion - which assumes everything is perfect.
 
-**聪明人为什么不买**：
-- PE 1,642倍——这不是"高估值"，这是"几乎没有盈利"
-- 经营现金流-8.62亿——公司在烧钱而非赚钱
-- PS 47倍——即使用PS估值也远超半导体设备行业中位数（~10-15x）
-- KLA市值800亿美元（~5,600亿人民币），中科飞测市值966亿=KLA的17%——但收入仅KLA的1/40、利润仅其1/400
+♪ Why don't smart people buy ♪
+- PE 1,642 times -- this is not "high value," it's "never profit."
+- Operating cash flow - 862 million - companies burning money instead of making money
+- 47 times PS - i.e., valuation using PS is also well above the median in semiconductor equipment industry (~10-15x)
+- KLA market value is $80 billion (~56 billion yuan) and SCI Flying market value is 96.6 billion = 17% of KLA - but revenue is only 1/40 KLA and profit is only 1,400
 
 ---
 
-## 四、管理层评估
+# IV. Management assessment
 
-### 核心管理层
+# # Core management
 
-| 职务 | 姓名 | 背景 |
+Position Name Background
 |------|------|------|
-| 创始人/董事长 | 陈鲁（Chen Lu） | 曾任职于Rudolph Technologies和KLA（科磊半导体），全球龙头工作经验 |
-| 首席科学家 | 黄有为 | 中科院微电子研究所出身 |
-| 核心技术人员 | 杨乐 | 中科院微电子研究所出身 |
+<unk> Founder/Chairman Chen Lu <unk> formerly worked for Rudolph Technologies and KLA, Global Leader Work Experience <unk>
+<unk> Chief scientist <unk> Huang Yu <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Core technical staff <unk> Yang Lei<unk> <unk> I'm from the Microelectronic Institute of Central School <unk>
 
-**团队特点**：创始团队兼具"海外龙头工作经验"和"中科院科研背景"，这在中国半导体设备公司中属于较强的技术基因。
+** Team characteristics**: Founding team with "Lead Work Experiences Abroad" and "Scientific Background of the Chinese Academy", which is a strong technical gene in China's semiconductor equipment companies.
 
-### 股权结构
+# Equity structure
 
-| 持股方 | 比例 | 说明 |
+Shareholders, ratio, description, description.
 |--------|------|------|
-| 陈鲁/哈承姝夫妇 | **30.54%** | 实际控制人，创始人夫妇 |
-| 其他管理层/员工 | 估计10-15% | 含股权激励 |
-| 机构投资者 | ~50%+ | 大基金等国家资本 |
+* Mr. and Mrs. Chen Rue/Mrs. Khazenjian ** 30.44% **
+Other management/staff estimated 10-15%
+Institutional investors ~ 50% ~ major funds ~ national capital ~
 
-### 关键决策评估
+# # Evaluation of key decisions
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2014年 | 创立中科飞测，聚焦半导体检测量测 | 精准切入KLA垄断的国产空白赛道 | A |
-| 2022年 | 科创板上市，募资~30亿 | 获得资金支撑高研发投入 | A- |
-| 持续 | "光学+电子束+X光"三路线并行布局 | 成为国内技术路线最全面的检测量测设备公司 | A |
-| 持续 | 研发费用率维持25-30% | 短期牺牲利润换长期技术积累，方向正确 | B+（代价是持续亏损） |
-| 2025年 | 合同负债8.81亿（+55.8%） | 在手订单充裕，增长可见性高 | A |
+<unk> 2014 <unk> Created a Chinese science flight, focused on semi-conducted medical measurements <unk> Precision into the KLA monopoly's national production blank track <unk> A<unk>
+2022, the project was launched, raising ~3 billion dollars, getting funds to support high-level R & D investment, and the cost of the project was raised.
+<unk> Continuous, <unk> , parallel layout of the three routes "optic + electrobeam + X-ray" <unk> , becoming the most comprehensive detection and measurement equipment for the country's technological routes <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> ,
+The R & D cost rate is 25-30%.
+881 million (+55.8%)
 
-### 追问：如果CEO退休，公司还能保持竞争力吗？
+# Ask: If CEO retires, can the company remain competitive?
 
-**短期风险较大**。陈鲁是公司技术方向和客户关系的核心——他在KLA的工作经验是公司最宝贵的无形资产。核心团队仅3-5人，关键人才依赖度高。但如果公司在5年内成功建立50人以上的核心研发团队并形成制度化技术积累，CEO风险将逐步降低。
+Chen Lu is at the heart of the company’s technical orientation and customer relationship – his experience in KLA is the company’s most valuable intangible asset. The core team is only three to five, with high reliance on key talent.
 
 ---
 
-## 五、行业与文明趋势
+# V. Trends in industry and civilization
 
-### 范式转移判断
+# The paradigm shift judgement
 
-中国半导体产业自主可控是一次**国家安全驱动的产业重构**，类似于冷战时期美国建立独立于苏联的航天工业体系。半导体检测量测设备是这一重构中最后攻克的"堡垒"之一——因为KLA的技术垄断度极高（全球51%份额）。
+China’s semiconductor industry autonomy is a national security-driven industrial re-establishment**, similar to the creation of the Soviet-based space industry system in the United States during the Cold War. The semiconductor medical surveying equipment is one of the "bulks" in this re-engineering that will last in the first place – because KLA’s technological monopoly is extremely high (51% of the world’s share).
 
-### TAM增长曲线
+# Tam growth curves
 
-| 市场 | 2024年规模 | 2030年预测 | CAGR | 国产替代率 |
+<unk> Market size 2024 <unk> Forecast 2030 <unk> CAGR National Production Substitute Rate <unk>
 |------|-----------|-----------|------|-----------|
-| 全球半导体检测量测设备 | ~120-150亿美元 | ~200亿美元 | ~5-8% | — |
-| 中国半导体检测量测设备 | ~292亿元 | ~400-500亿元 | ~10-15% | <5%→目标20-30% |
-| 中科飞测目标可寻址市场 | — | ~100-150亿元 | — | 当前市占~7% |
+<unk> Global semiconductive medical survey equipment ~ $12-15 billion ~ $20 billion ~ 5-8% ~ 12-15 billion ~ 12 billion ~ 12 billion ~ 10 million ~ 10 million ~ 10 million ~ 10 million ~ 10 million ~ 10 million ~ 12 million ~ 12 million ~ 12 million ~ 12 million ~ 12 million ~ 12 million ~ 20 billion ~ 5-8 per cent ~ 12 million ~ 12 million ~ 12 million ~ 12 million ~ 10 million ~ 20 billion ~ 5% ~ 5% ~ 8% ~ 12% ~ 12% ~ 12% ~ 12% <unk>
+<unk> Chinese semi-conducted medical survey measuring equipment ~ 29.2 billion yuan ~ 40-50 billion yuan ~ 10-15 per cent ~ < 5 per cent ~ target 20-30 per cent ~ <unk>
+<unk> The Chinese Flying Targets are available for location markets <unk> ~ 10-15 billion yuan <unk> <unk> ~ 7% of the current city ~ 7% <unk>
 
-**关键洞察**：中国市场~292亿元，国产替代率<5%。如果国产替代率在2030年提升至20-30%，对应60-90亿元的国产设备市场。中科飞测作为领军者如果拿到40-50%份额，对应24-45亿元收入——这是合理的5年收入预期。
+** Key insight**: China market ~ 29.2 billion yuan, with a national production replacement rate of < 5%. If the national production replacement rate rises to 20-30% in 2030, it corresponds to 6-9 billion yuan yuan of national production equipment market.
 
-### 追问：20年后这家公司是"标准石油"还是"3Com"？
+# Ask: 20 years later is this company "Standard Oil" or "3Com"?
 
-**更可能是"中国的Onto Innovation"（KLA之后的全球第二梯队检测量测公司）**——在中国市场占据15-25%份额、全球份额5-10%的专业化设备公司。不太可能成为"中国的KLA"（KLA的技术积累跨越40年，不可能在10年内复制）。
+** More likely to be "China's Onto Innovation" (Global Second Team Test Measurement Company after KLA)** - a specialized equipment company with a 15-25% share in the Chinese market and a 5-10% share in the world. It is unlikely to be "China's KLA" (the KLA technology accumulation spans 40 years and cannot be replicated in 10 years).
 
-"3Com"式消亡的概率不高（~10%）——半导体设备的国产替代需求有国家意志保底。但如果公司技术突破不及预期、始终无法进入先进制程，可能止步于"成熟制程设备供应商"的角色，收入天花板在30-50亿元。
+The probability of 3Com-style destruction is low (~10%) – the national demand for alternatives to semiconductor equipment is kept under the will of the state. If corporate technology breaks out less than expected, and is never able to enter advanced processes, it may stop at the role of mature process equipment provider, with a ceiling of $3-5 billion.
 
 ---
 
-## 六、估值与安全边际
+# VI. Valuation and security margin
 
-### 当前市场定价
+# Current market pricing
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|------|------|
-| PE（FY2025） | **1,642x** | 净利润仅0.59亿 |
-| PS（TTM） | **~47x** | 半导体设备行业中位数10-15x |
+<unk> PE(FY2025) ** 1,642x** net profit only 59 million <unk>
+<unk> PS(TTM)<unk> <unk> 47x**<unk> Medium digit 10-15x <unk> in semiconductor equipment industry
 | PB | **~27.6x** | — |
-| ROE | **1.68%** | 极低——刚扭亏 |
-| FCF Yield | **-0.89%** | 经营现金流为负 |
-| 股息率 | **0%** | 无分红 |
-| 合同负债 | **8.81亿** | +55.8%，在手订单充裕 |
-| 分析师目标价 | **~211元**（24x PS） | 低于当前价275.9 |
+♪ ROPE ♪ 1.68% ♪ Very low ♪
+FCF Yield <unk> 0.89%**
+<unk> Escillation rate<unk> 0%** <unk> No dividends
+<unk> Contract liability **881 million** <unk> 55.8%, sufficient in hand order
+<unk> Analyst target price <unk> ~ $211** (24 x PS) <unk> below current price of 275.9 <unk>
 
-### 三情景估值
+# Three scenarios valuation
 
-> 基于2026年预估EPS=1.06（券商预期归母~3.70亿/3.50亿股），投射3年至2029年。经工具精确验算。
+> 3 to 2029 years based on an estimated 2026 EPS = 0.06 (the expected return of the voucher to the mother ~ 370 million/350 million shares)
 
-| 情景 | 年增速 | 目标PE | 2029年EPS | 目标股价 | 较现价涨跌 |
+♪ The world's greatest challenge ♪
 |------|--------|--------|-----------|---------|-----------|
-| **乐观**（国产替代加速+先进制程突破） | 50% | 80x | CNY 3.58 | **CNY 286** | **+3.7%** |
-| **中性**（稳健增长+估值回归） | 25% | 50x | CNY 2.07 | **CNY 104** | **-62.5%** |
-| **悲观**（技术突破受阻+制裁松绑+估值崩塌） | 5% | 25x | CNY 1.23 | **CNY 31** | **-88.9%** |
+** EXPOINTMENT** (Accelerating national production replacement + breakthroughs) ** 50% <unk> 80x <unk> CNY 3.58 ** CNY 286** **+ 3.7% **
+** Neutral** (Stead growth + regression in valuation) <unk> 25% <unk> 50x <unk> CNY 2.07 ** CNY 104** **-62.5%** <unk>
+** Pessimism** (Technology breakthrough blocked + sanctions loose + valuation collapsed) <unk> 5% <unk> 25x <unk> CNY 1.23 ** CNY 31** **-88.9%** <unk>
 
-**这是本报告最关键的发现**：即使在最乐观的情景下（50%年增速+80倍PE），3年上行空间仅+3.7%。中性情景亏62.5%，悲观亏89%。**当前价格已将5-7年后的终局提前定价，完全没有安全边际。**
+** This is the most critical finding of the present report**: even in the most optimistic scenario (50 per cent annual increase + 80 times PE), three years of space up the road was only +3.7 per cent, with a 62.5 per cent loss for the neutral scenario and a 89 per cent deficit for pessimism.** Current prices have pre-pricinged the final phase after five to seven years, with no security margin at all**
 
-### 与KLA估值对比
+# Compared to KLA valuation
 
-| 指标 | 中科飞测 | KLA |
+<unk> Indicators <unk> Central flight <unk> KLA <unk>
 |------|---------|-----|
-| 市值 | 966亿CNY（~135亿美元） | ~800亿美元 |
-| 收入 | 20.53亿CNY（~2.9亿美元） | ~110亿美元 |
-| 净利润 | 0.59亿CNY（~830万美元） | ~35亿美元 |
+<unk> Market value <unk> 96.6 billion CNY (~ $13.5 billion) ~ $80 billion <unk>
+<unk> Income <unk> 2,053 million CNY (~ $290 million) ~ $11 billion <unk>
+Net profits 59 million CNY (~8.3 million) ~ $3.5 billion
 | PS | **47x** | **7x** |
 | PE | **1,642x** | **23x** |
-| 净利率 | 2.86% | 32% |
-| 市值/KLA | **17%** | 100% |
-| 收入/KLA | **2.6%** | 100% |
+Net interest rate 2.86% <unk> 32% <unk>
+Market value/KLA **17%** 100%
+<unk> Income/KLA<unk> 2.6%** <unk> 100% <unk>
 
-**中科飞测的市值是KLA的17%，但收入仅其2.6%、利润仅其0.02%**。要证明当前估值合理，中科飞测需要在未来7-10年将收入做到KLA的15-20%（即~200亿元），净利率提升至25%+——这需要极其乐观的假设。
+** The market value of the Chinese Flying Survey is 17% of KLA, but the revenue is only 2.6% and the profit is only 0.02%. ** To justify the current valuation, the SLM will require 15-20% of KLA revenue over the next 7-10 years (i.e. ~ 20 billion yuan) and an increase in the net interest rate to 25%+ – an assumption that requires great optimism.
 
-### 追问：如果股市明天关闭5年，你愿意以这个价格持有吗？
+# Ask: If the stock market closes for five years tomorrow, will you hold it at this price?
 
-**绝对不愿意。**
+** Absolutely not.**
 
-275.9元对应PS 47倍、PE 1,642倍。5年后（2031年），即使中科飞测收入增长到80-100亿（5年CAGR ~30-35%）、净利率提升至15%（即净利12-15亿），给予30倍PE，市值约360-450亿——**较当前966亿下跌50-60%**。
+The sum of RMB 275.9 corresponds to PS 47 times and PE 1,642 times. Five years later (2031), even the median Flying Revenue grew to 8-10 billion (5 years CAGR ~ 30-35%), the net interest rate was raised to 15% (i.e., a net gain of 12.45 billion) and the market value was 30 times PE, at about 36-45 billion -** a decrease of 50-60% from the current 96.6 billion.**
 
-这只股票的唯一合理买入窗口是：**市值降至200-300亿（对应股价~57-86元），即PS降至10-15倍**。在那个水位上，增长预期仍然丰富，但价格不再透支5-7年的未来。
+The only rational purchase window for this stock is:** the market value fell to $20-30 billion (comparable share price ~ $57-86), i.e. the PS fell to 10-15 times**. At that water level, growth is expected to remain abundant, but prices will no longer be available for five to seven years.
 
 ---
 
-## 七、综合决策备忘录
+# VII. Memorandums for integrated decision-making
 
-### 维度汇总
+# # dimension summary
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| 生意质量 | 中等——赛道极好（KLA垄断的国产空白），但公司本身几乎不赚钱，现金流为负 | 65% |
-| 护城河 | 弱→中等——技术路线全面但与KLA差距仍大，转换成本是主要壁垒 | 55% |
-| 管理层 | 中等偏上——创始团队有KLA+中科院双重背景，研发投入大方。但关键人才依赖度高 | 65% |
-| 最大风险 | 极端高估值（PS 47x、PE 1,642x）+经营现金流持续为负+客户集中度>70% | 90%（风险确定性极高） |
-| 文明趋势 | 强烈顺风——半导体自主可控是国家意志，检测量测是最后攻克的堡垒 | 80% |
-| 估值 | **极度偏高**——乐观情景3年仅+3.7%，中性情景-62.5%。分析师目标价211元已低于现价 | 90% |
+The company itself barely makes money, cash flows are negative.
+The main barrier is the cost of conversion.
+Management <unk> Medium <unk> Founding team with a dual KLA+ Chinese Academy background and a high level of R & D input. But critical talent is highly dependent 65%
+<unk> Maximum risk Extreme high valuation (PS 47x, PE 1,642x) + operating cash flow on a continuous basis negative + client concentration > 70% <unk> 90% (high risk certainty) <unk>
+The most powerful, smooth wind - the semiconductor's autonomy is the will of the nation, and the test is the last fort of the attack.
+<unk> Valuation ** Extremely high** - optimistic 3 years only + 3.7%, neutral 62.5%. Analysts target $211 below current prices <unk> 90%
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **回避。当前价格严重透支未来5-7年增长。** 如果看好半导体检测量测国产替代，等待回调至CNY 57-86（PS 10-15x）再入场——那时赔率才对称。或者考虑北方华创/中微公司等已实现规模化盈利的半导体设备公司 |
-| **持仓者** | **强烈建议减仓或清仓。** 分析师目标价211元低于当前275.9元。即使乐观情景3年也仅+3.7%。这是一个"叙事极好但价格极差"的典型案例 |
-| **卖出信号** | （1）2026年全年经营现金流仍为负；（2）合同负债环比下降（订单放缓信号）；（3）PS超过50x且无新催化剂；（4）美国对KLA制裁出现松绑迹象 |
-| **加仓信号** | （1）股价回调至CNY 57-86（PS 10-15x）；（2）单季度经营现金流转正；（3）产品成功进入14nm及以下先进制程产线；（4）连续2个季度净利率超过10% |
+** Empty warehouse** <unk> ** avoided. Current prices are seriously overstretched for the next 5-7 years.** If a semiconductor medical examination is taken to measure the replacement of national production, waiting for a return to CNY 57-86 (PS 10-15x) – then the rate of reimbursement is symmetrical.
+** The owner** strongly recommended that the warehouse be reduced or cleared.** The analyst's target is $211 below the current $275.9. Even the optimistic scenario is only 3.7% for three years.
+<unk> ** Signals from sale** <unk> cash flow from operating throughout 2026 remained negative; (2) contract liability ring decline (slow signal of order); (3) PS over 50 x without new catalyst; (4) signs of untying of United States sanctions against KLA <unk>
+<unk> **Step-upper signal** <unk> (1) Re-equity adjustment to CNY 57-86 (PS 10-15x); (2) operating cash flow positive in the first quarter; (3) successful product entry into advanced process production lines of 14 nm and below; (4) net interest rate of more than 10 per cent for two consecutive quarters
 
-### 四维度模拟点评
+# 4D simulation of the evaluation
 
-> **生意质量视角**：中科飞测所在的赛道无可挑剔——全球120亿美元的市场，KLA一家占51%，中国国产替代率不到5%。问题是公司本身：20亿收入、0.59亿利润、-8.62亿现金流——这不是一门"好生意"，这是一门"可能变成好生意的早期创业"。967亿市值买一个年利润不到6000万的公司，好的生意不等于好的投资。
+> **Quality of business perspective**: The track where China is running is impeccable — the global market of $12 billion, with the KLA family accounting for 51% and China having less than 5% of the national production replacement rate. The problem is the company itself: 2 billion dollars in revenue, 59 million in profits, -862 million in cash flow — this is not a good business, this is a "early start-up that could turn into a good business". The value of 96.7 billion dollars is a company that pays less than 60 million a year, and good business is not a good investment.
 
-> **逆向思维视角**：最危险的投资叙事是"确定的趋势+不确定的公司=确定的投资"。半导体国产替代是确定的趋势——但中科飞测是唯一的赢家吗？上海精测、睿励科学在同一赛道竞争。即使国产替代成功，市场可能由2-3家公司分食，中科飞测不一定能拿到最大份额。更关键的问题是：即使中科飞测成功，967亿市值对应的增长预期已经被完全price in——买入者赚的是"超预期"而非"预期兑现"。
+> ** Inverse thinking** The most dangerous investment narrative is "Trends + Undefined Companies = Selected Investments". The semiconductor national product replacement is a definite trend — but is Chinese flying the only winner? Shanghai precision, intelligent science competing in the same race. Even if the national product succeeds, the market may be divided by two or three companies, and Chinese flying may not necessarily get the largest share. The more crucial question is that, even if the Chinese flight is successful, the market value of 96.7 billion is expected to grow completely in — the buyer earns "over-expected" rather than "expected" .
 
-> **管理层视角**：陈鲁从KLA带出的经验是中科飞测最宝贵的资产。但一个令人不安的事实是：KLA有4万+员工和40年技术积累，中科飞测可能只有几百名工程师和10年历史。管理层的视野和能力可以弥补一部分差距，但硬件设备的技术积累不是靠个人英雄主义能跨越的。
+> ** Management perspective**: Chen Ru’s experience from KLA is the most valuable asset of the Chinese Flying Plan. But one disturbing fact is that KLA has 40,000 + staff and 40 years of technological accumulation, with only a few hundred engineers and 10 years of history. Management’s vision and capacity can fill some of the gaps, but the accumulation of hardware equipment is not a matter of personal heroism.
 
-> **文明趋势视角**：站在20年的维度看，中国拥有自己的半导体检测量测设备体系是不可逆的。问题只在于速度和规模。中科飞测很可能存活并成长——但从967亿市值到能支撑这个估值的盈利水平（30-50亿净利），需要7-10年的完美执行。在这个时间尺度上，有太多变量可以出错。最佳策略是"看好赛道但等待合理价格"。
+> ** Civilizational trend perspective**: At 20 years' dimension, China has its own system of semiconducted medical measurements. The problem is only speed and size. The Chinese Flying Survey is likely to survive and grow – but from the market value of 967 billion to the level of profit that supports this valuation ($3-5 billion net), it takes 7-10 years to perform. At this time, too many variables can be wrong. The best strategy is "watch the track but wait for reasonable prices".
 
 ---
 
-## 附录：AI分析置信度 vs 投资确定性
+# Appendix: AI Analytic Confidence vs Investment Determination
 
-| 结论 | AI分析置信度 | 投资确定性 | 说明 |
+<unk> Conclusion <unk> AI analysis of confidence <unk> Investment certainty <unk>
 |------|------------|-----------|------|
-| 半导体检测量测国产替代趋势确定 | **高（90%）** | **高（85%）** | 国家政策+地缘政治共同驱动 |
-| 中科飞测是国内检测量测领军者 | **中高（80%）** | **中高（75%）** | 产品线最全面，但竞争对手也在追赶 |
-| 收入将持续高增长（30-50% CAGR） | **中高（75%）** | **中（65%）** | 合同负债+55.8%支撑短期可见性，但中期增速可能放缓 |
-| 3-5年内实现15%+净利率 | **中（55%）** | **中（50%）** | 需要规模效应显现+毛利率维持+费用率下降，不确定性大 |
-| 当前PS 47x极度偏高 | **高（90%）** | **高（85%）** | 与全球同行对比、与自身增速对比均显示极端高估 |
-| 经营现金流将在2-3年内转正 | **中（50%）** | **低（40%）** | 半导体设备行业回款周期长，且公司仍在大力投入研发 |
+<unk> Semiconducted medical examination to measure alternative trends in national production determined <unk> High (90%)** High (85%)** National policy + geopolitical common drivers <unk>
+<unk> Central science flight is the lead in domestic detection measurements <unk> medium high (80%) ** medium high (75%) ** product lines are the most comprehensive, but competition is catching up <unk>
+<unk> Income will continue to grow at a high rate (30-50% CAGR) ** medium (75%) ** medium (65%) ** contract liabilities + 55.8% support short-term visibility, but the medium-term rate of increase may slow <unk>
+<unk> Net interest rate of 15% + interest rate achieved within 3-5 years <unk> medium (55%)** medium (50%)** need for scale effects to show + Māori maintenance + lower cost, uncertainty high <unk>
+The current PS 47x is extremely high <unk> high (90%)<unk> high (85%)** high <unk> compared to global counterparts and to their own growth rates show extreme overestimation
+<unk> Operating cash flows will be reversed within 2-3 years <unk> medium (50%)** low (40%)** long repayment cycles in semiconductor equipment industry and companies are still heavily engaged in research and development <unk>
 
-**核心区分**：
-- **赛道确定性高≠公司投资确定性高**——国产替代的趋势毫无疑问，但中科飞测在967亿市值上的投资确定性极低
-- 本报告最重要的结论不是"公司不好"（公司在正确的赛道上做正确的事），而是**"价格太贵"**——即使最乐观的情景，3年上行也仅3.7%
-- 建议读者**持续跟踪但等待合理价格**：PS回到10-15x（股价CNY 57-86）时，中科飞测将成为一个风险回报比极佳的投资标的
+** Core distinction**:
+- **The high degree of certainty in the investment of the track-based high-speed company** - The trend towards national production substitution is beyond doubt, but the middle-class Flying Survey is extremely uncertain in terms of the market value of 96.7 billion
+- The most important conclusion of this report is not that the company is bad. It's that the company is doing the right thing on the right track.
+- Suggested reader** to follow on an ongoing basis but await reasonable prices**: when PS returns to 10-15x (CNY 57-86), the Chinese Flying Survey will become a risk return that is better than an investment target
 
-### 需要一手验证的问题清单（B级公司补充）
+# # A list of questions that need to be verified (complement B)
 
-1. **产品实际性能vs KLA差距**——晶圆厂使用反馈如何？检出率/误报率达到KLA的几成？
-2. **先进制程突破进展**——14nm及以下产线的验证进度如何？客户是否愿意在先进制程用国产设备？
-3. **回款周期**——应收账款周转天数是否在改善？坏账风险有多大？
-4. **研发人才稳定性**——核心工程师流失率如何？与上海精测等竞品的人才争夺情况？
-5. **大基金持股动向**——国家资本是在增持还是减持？
+** The actual performance of the product vs. KLA gap** - How did the crystal mills use feedback? How many per cent of KLA were detected/mistakes?
+** Progress on advanced process breakthrough** — How far has the certification of production lines 14 nm and below? Is the customer willing to use national production equipment in advanced process?
+** Return period** — Is the turnaround days for accounts receivable improving? What is the risk of bad debt?
+**The stability of the human resources for research and development** - What is the rate of loss of core engineers? - What is the competition for talent in competitions such as precision tests in Shanghai?
+** Large Fund share-in-equity** — is national capital increasing or declining?
 
 ---
 
-*报告生成时间：2026年6月24日 | 数据截止：2026年6月24日*
-*货币单位：人民币（CNY）*
-*数据来源：中科飞测年报/中报/季报、亿牛网、证券时报、证券之星、东方财富、华西/东吴/光大证券研报、SEMI、Gartner*
+*Report generated: 24 June 2026
+* Monetary unit: renminbi (CNY)*
+*Source: China Flying/Interim/Quarterly, Billion Cownet, Securities Times, Securities Star, Eastern Wealth, Wasi/East Wu/Gwang Da Securities Research, SEMI, Gartner*

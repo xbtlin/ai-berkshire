@@ -1,0 +1,162 @@
+# You think you understand Tencent, but you don’t
+
+> "Understanding Tencent" series · Part 01 · Beginning
+> Reading time is about 5 minutes
+
+---
+
+## A fact that makes you re-examine Tencent
+
+In the past 10 years, Tencent’s stock price has followed a curve that makes people question life:
+
+- At the beginning of 2018, it reached **475 Hong Kong dollars** and was ridiculed as "too high";
+- At the end of 2018, it fell to **252 Hong Kong dollars** and was ridiculed as "the game is over";
+- It soared to **775 Hong Kong dollars** at the beginning of 2021 and was called "China FAANG";
+- It fell to **199 Hong Kong dollars** in October 2022, and was called "the end of the Internet era";
+- Returning to more than **400 Hong Kong dollars** in 2024, I was lamented that "I would have bought the bottom if I had known";
+- In April 2026, it fell to **467 Hong Kong dollars**, and was criticized as "AI lags behind bytes".
+
+**The same company has been recharacterized by the market at least 5 times in 10 years. ** And every characterization is almost always wrong in hindsight.
+
+Tencent is not an under-researched company - it is one of the most thoroughly researched Chinese companies in the world, with dozens of sell-side research reports covering it every quarter. But more research ≠ understanding. This company has been seriously misunderstood precisely because it is too complex - a 5,000-word sell-side research report cannot fit in it, and it only leaves a binary conclusion of "long/short".
+
+So what this series wants to do is to **dismantle Tencent layer by layer** so that you can see its true structure.
+
+---
+
+## Three common misconceptions about Tencent
+
+Before we start to dismantle, let’s dispel three of the most widespread misconceptions.
+
+### Illusion 1: Tencent is a "social company"
+
+This is the most intuitive understanding and also the most inaccurate.
+
+Opening the 2025 financial report, the distribution of Tencent’s revenue of 751.8 billion yuan is as follows:
+
+| Sector | Revenue (100 million yuan) | Proportion |
+|------|-------------|------|
+| Value-added services (including games + social subscriptions) | 3,693 | 49% |
+| Fintech and corporate services | 2,294 | 31% |
+| Online Advertising | 1,450 | 19% |
+| Others | 81 | 1% |
+
+In the revenue structure, pure "social" (music/video membership) only contributed 17%. **Tencent's real business is to use the social relationship chain as its foundation and build four buildings on top of it: games, advertising, payment, and cloud services. **
+
+But it is the building, not the foundation, that really makes the big money.
+
+### Illusion 2: Tencent is a "game company"
+
+Games will contribute 241.6 billion yuan in revenue in 2025, with a gross profit margin of 60-70%. It is indeed Tencent’s largest profit engine. But if you regard Tencent as a "game company", you will seriously underestimate another company hidden in Tencent's accounts-a 1.04 trillion yuan external investment portfolio**.
+
+Let me make one thing clear first to avoid misunderstandings: the equity assets held by Tencent are divided into two categories -
+
+- **Consolidated subsidiaries** (such as Riot Games 100%, Miniclip, China Literature) - their revenue and profits have been merged into Tencent's main business statements, and **cannot be added separately** during valuation, otherwise it will be a double calculation.
+- **Unconsolidated external investments** (financial investments/associates) - this is the real "extra" asset.
+
+In Tencent's financial report, "financial assets measured at fair value + investments in associates/joint ventures" add up to approximately **1,015.8 billion** (approximately 1.04 trillion, Tencent's 2025 annual report data), and **only counts the second category**. Penetrate to specific companies:
+
+- Pinduoduo: About **13-14%** (continued to be diluted by PDD's additional ESOP issuance, 2024 annual report caliber is 15.6%, recent data from Futu and other channels is about 13.76%), equity is about **20 billion US dollars**
+- ByteDance: Tencent is one of the early investors. **The shareholding ratio has not been publicly disclosed**. After being diluted by multiple rounds of new financing, industry estimates are in the single digits. The valuation of a single equity ** is much smaller than the US$50 billion circulated in the market**
+- Spotify: 9.1%, equity approximately **$9.3 billion**
+- Sea Limited: 18.7%, equity approximately **US$8.6 billion**
+- Universal Music, WeBank, Epic Games (28%), Kuaishou, Supercell, Meituan, Krafton…
+
+**When you buy one share of Tencent, you simultaneously own the equity segments of the long list of companies above. ** Valuing Tencent as a pure gaming company is equivalent to throwing away this 1 trillion "external investment portfolio" in vain - this is the key mathematical root of the market's long-term discount to Tencent.
+
+(Note: The revenue and profits from League of Legends/Valorant, which is 100% owned by Riot Games, have been reflected in Tencent’s “game” business reports, and are not within the 1 trillion “investment portfolio” caliber above - it is another layer of superimposed value, which will be discussed separately in Parts 03 and 04.)
+
+### Illusion 3: Tencent "lost" in the AI era
+
+This is the hottest narrative of 2026. The reason is:
+
+- Yuanbao (Tencent's AI assistant) MAU 57.35 million (calculated by third parties such as QuestMobile, as of early 2026);
+- Doubao (Byte’s AI assistant) MAU 345 million (same caliber in the same period);
+- **The magnitude difference is about 6 times**.
+
+The data is correct, but the conclusions are questionable.
+
+If you think the AI era is equal to the "AI chat assistant MAU battle", then Tencent is indeed lagging behind. But if you think that the AI era is equal to "Who can turn AI into a multiplier for existing business?", the conclusion is exactly the opposite:
+
+- Tencent's advertising business will grow **+19%** in 2025 (financial report data), among which the AIGC tool "Miaosi" penetrates a higher proportion of customers (third-party research estimates about 65%);
+- The GMV of WeChat stores in 2024 will be **+192%** year-on-year (disclosed in WeChat public courses). In 2025, Tencent will shift to structural indicator disclosure (the GMV growth rate of brand sales is 4.3 times that of the platform as a whole, and monthly mobile sales merchants +1.7 times - see article 02 for details) - AI customer service, AI product selection, and AI translation are almost standard;
+- The average daily search volume on WeChat Souyisou increased from 333 million to **1 billion+** (The Paper);
+- The monetization rate of video account advertising is significantly lower than that of Douyin - a third-party estimate is about 1.8% for Tencent and about 6-7% for Douyin (note: the monetization rate is an unofficial calculation, and the calculations vary greatly from different studies), but even a conservative estimate means that there is still room for 2-3 times improvement in monetization of video account advertising.
+
+**Tencent is not trying to be "China's ChatGPT", what Tencent is trying to do is "AI in All"** - mixing AI into every dish of WeChat, advertising, games, and payment. Which of the two routes is better still needs time to be tested (see Part 05 for details), but only using ChatGPT’s standards to evaluate Tencent will miss its AI leverage in existing businesses.
+
+---
+
+## To understand Tencent, you need to wear several pairs of glasses at the same time
+
+If you had to define Tencent in one sentence, the closest version might be:
+
+> **Tencent = an operating company that uses WeChat’s social relationship chain to lock in 1.4 billion users + an investment fund with a market value of about 1 trillion yuan + a cash flow machine that prints 230 billion yuan of money every year. **
+
+Everyone has written about these three things separately, but few have evaluated them together. This is one of the common explanations for the market's frequent discount on Tencent's valuation - the current PE is about 45% lower than the 10-year median (about 27x), and the valuation model is not good at handling "three-layer overlay" companies.
+
+To understand this company, you need to wear at least these pairs of glasses at the same time:
+
+| Glasses | What to see | Which part of this series to start |
+|------|---------|-------------------|
+| Business model | How the WeChat ecological flywheel rotates | Chapter 02 · Moat |
+| Business | 14 Everlasting Games + Overseas Breakthrough | Chapter 03 · Games |
+| Assets | The true composition of a $1 trillion investment portfolio | Chapter 04 · Investment Map |
+| Variables of the Times | Is AI an opportunity or a threat | Chapter 05 · AI |
+| Finance | Why gross profit margin soared from 42% to 56% in 4 years | Chapter 06 · Finance |
+| People | Ma Huateng and Liu Chiping’s Capital Allocation Discipline | Chapter 07 · Management |
+| Decision | How much to buy and what signal to sell | Chapter 08 · Decision |
+
+Wearing each pair of glasses separately, you will see the correct but incomplete version of Tencent.
+
+---
+
+## A small preview: Is Tencent expensive now?
+
+Leave a hook and let's end with a set of numbers. These numbers will be explained in detail in Chapters 06 and 08. Remember the magnitude first:
+
+| Indicators | 2025 Data |
+|------|------------|
+| Non-IFRS net profit | **259.6 billion** (+17%) |
+| Non-IFRS EPS | ~28.6 RMB / ~32.5 HKD |
+| Free cash flow | **182.6 billion yuan** (still +18% after large investment in AI) |
+| Shareholder return (buyback 80 billion + dividend 41 billion) | **HK$121 billion** |
+| Net cash | **107.1 billion** |
+| Gross profit margin | **56%** (increased from 42% in 4 years, a record high) |
+| Current stock price (2026-05-04) | ~470 Hong Kong dollars |
+| Current PE (Non-IFRS caliber) | **~14.5x** (HKD 470 ÷ Non-IFRS EPS HKD 32.5) |
+| Current PE (IFRS/GAAP TTM caliber) | **~17.3x** (Futu channel real-time data) |
+| 10-year median PE | ~27x |
+| Portfolio fair value | **~1,015.8 billion** |
+
+> **Data source**: Tencent 2025 annual report (released on 2026-03-18), HKEX disclosure.
+> AI data (Miaosi penetration is 65%, Souyisou daily searches are 1 billion+, video account monetization rate is 1.8%, AI comics exceed 100 million, etc.) come from third-party research and calculations (CBNData, Guanchao New Consumption, QuestMobile, etc.). The figures from different sources are slightly different and are only for magnitude reference.
+
+Put all this together, and what you see from Tencent is this:
+
+- A company with an extremely deep moat and record gross profit margins
+- Current valuation is **45%** below the 10-year median
+- 1 trillion in equity assets lying on the books
+- Still taking 120 billion in cash to buy back + dividends every year
+- But at the same time, market sentiment continues to be bearish as the AI narrative is taken away by bytes
+
+What do these facts mean together? **Different glasses will give different answers. ** This is the question that the next 7 posts will answer.
+
+---
+
+## Next issue preview
+
+In the next article, we will dismantle Tencent’s deepest moat-**WeChat**.
+
+Instead of saying something like "WeChat has 1.4 billion users so it's great", which I've heard ten thousand times, I'm going to answer a few more pointed questions:
+
+- Bytedance is doing "Duoshan", Alibaba is doing "Laiwang", and NetEase is doing "Yixin" - why did they all fail?
+- The video account has more than 600 million DAU. Why is it more like a "defensive product" than an "offensive product" from a value investment perspective?
+- Will WeChat be stronger or weaker in 5 years? Will we be bypassed by AI assistants in 10 years?
+
+See you next week.
+
+---
+
+*This article is the 01st in the "Understanding Tencent" series. The next 7 articles will be released one after another. *
+*This series is based on public information and value investment framework research and does not constitute any investment advice. *

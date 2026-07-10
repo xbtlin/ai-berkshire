@@ -1,0 +1,194 @@
+# Veeva Systems(VEEV) Morningstar Deep Undervaluation Research
+
+> Morningstar Fair Value: $287 | Current Price: $163.85 | Potential Gain: +75.2%
+> Moat Rating: Wide Moat | Uncertainty: High
+> Industry: Health Information Services
+> Study date: May 19, 2026
+
+---
+
+## 1. Company Profile
+
+### Main business
+
+Veeva Systems is a California-based cloud software company specializing in vertical cloud solutions for the life sciences industry (pharmaceuticals, biotech). The company officially joined the S&P 500 Index on May 7, 2026, replacing the acquired Coterra Energy.
+
+The company's products cover the entire life cycle of life science companies:
+- **Commercial Cloud**: CRM, content management, data analysis, helping pharmaceutical companies manage sales teams and commercial operations
+- **R&D & Quality Cloud**: clinical trial management, regulatory submission, quality management, safety monitoring, etc.
+- **Data Cloud**: patient data, prescription data and other reference data services
+
+### Revenue structure (FY2026, as of January 31, 2026)
+
+| Type of income | Amount | Year-on-year growth |
+|---------|------|---------|
+| Total Revenue | $3.195 billion | +16% |
+| Subscription Revenue | $2.684 billion | +17% |
+| - Business Cloud Subscriptions | $1.258 billion | — |
+| - R&D and Quality Cloud Subscriptions | $1.427 billion | — |
+| Professional services revenue | ~$511 million | — |
+
+R&D and quality clouds have surpassed commercial clouds as a larger revenue source, reflecting the accelerating trend of clinical and regulatory digitization.
+
+### Market position
+
+- Life science CRM market share is about 80%, with an extremely rare monopoly position
+- 9 of the world’s top 20 pharmaceutical companies have committed to using Vault CRM (vs. Salesforce only 3)
+- The top 20 pharmaceutical companies all adopt its electronic trial master file (eTMF) product
+- More than 115 customers have gone online with Vault CRM
+- Join the S&P 500 Index in May 2026
+
+---
+
+## 2. Financial analysis
+
+### Key financial data
+
+| Indicators | FY2024 | FY2025 | FY2026 |
+|------|--------|--------|--------|
+| Total revenue | ~2.36 billion | 2.747 billion | 3.195 billion |
+| Revenue growth | — | ~16% | +16% |
+| Subscription revenue | — | 2.285 billion | 2.684 billion |
+| GAAP earnings per share | — | $4.32 | $5.44 |
+| Non-GAAP earnings per share | — | $6.60 | $8.10 |
+| Gross profit margin | — | ~74% | 74.46% |
+| Net profit margin | — | — | 33.9% |
+| ROE | — | ~11.5% | 12.6% |
+| Free cash flow | ~885 million | 1.07 billion | ~1.3 billion+ |
+| Non-GAAP Operating Margin | — | 43.5% | 45% |
+
+### Trend Analysis
+
+**Positive Signs:**
+- Revenue continues to maintain solid growth of 16-17%
+- Non-GAAP operating profit margin expanded from 43.5% to 45%, demonstrating economies of scale
+- Free cash flow has grown strongly year after year (+20.83% year-on-year in FY2025)
+- Net profit margin is 33.9%, which is at the top level in the SaaS industry
+- The proportion of subscription revenue continues to increase (84%), and the quality of revenue is high
+
+**Need to pay attention to:**
+- ROE is only 12.6%, partly because the company has no debt, a large amount of cash, and an extremely conservative balance sheet
+- Compared to high-growth SaaS companies, 16% revenue growth is not aggressive
+
+---
+
+## 3. Moat analysis
+
+### Morningstar wide moat rating basis
+
+**1. Extremely high switching costs (source of core moat)**
+
+The life sciences industry is regulated by strict regulations such as FDA 21 CFR Part 11. Once an enterprise adopts Veeva's system, replacement means:
+- Need to re-verify that the entire system complies with regulatory requirements
+- Need to retrain all users
+- At risk of compliance disruption
+
+This regulatory lock-in effect makes it extremely difficult for customers to switch suppliers.
+
+**2. Vertical professional barriers (intangible assets)**
+
+Veeva has been deeply involved in the life sciences industry for nearly 20 years since its establishment in 2007, and has accumulated profound industry knowledge. Its products are not simple modifications of general-purpose software, but native designs for scenarios such as pharmaceutical research and development, clinical trials, and regulatory submissions. Even if competitors have stronger common platform capabilities, it will be difficult to replicate this industry depth.
+
+**3. Network effect (gradual enhancement)**
+
+As more and more pharmaceutical companies, CROs, and regulatory agencies use the Veeva platform, the flow of data on the platform creates a network effect, especially in the field of clinical trial data management.
+
+### Is the moat deepening?
+
+**Positive evidence (the moat is deepening):**
+- R&D cloud grows faster than commercial cloud, and the product matrix continues to expand
+- Complete the migration from the Salesforce platform to its own Vault platform in September 2025, eliminating dependence on third-party platforms
+- Customers expand from single CRM users to multi-product suite users, deepening the lock-in effect
+- After joining the S&P 500, brand recognition and institutional holdings will be further enhanced
+
+**Negative Evidence (Moat Challenged):**
+- Salesforce moves from partner to direct competitor, launches dedicated Life Sciences Cloud
+- There is a window of customer churn during the migration of the CRM platform
+- Morningstar has raised its uncertainty rating to "high" from "medium"
+
+---
+
+## 4. Valuation analysis
+
+### Current valuation level
+
+| Indicators | Current Value | Historical Median/Industry Mean |
+|------|--------|-------------------|
+| Price to Earnings Ratio (TTM) | ~37x | 10-year median 76.4x |
+| Forward P/E ratio | ~19.7x | Historical average is much higher than this |
+| EV/EBITDA | 22.3x | — |
+| EV/FCF | 15.8x | — |
+| Market Cap | ~$28.4 billion | — |
+| Enterprise Value | ~$22 billion | — |
+
+### Why does Morningstar believe it is severely undervalued?
+
+1. **The current PE is less than half of the historical median**: 37 times TTM PE vs. 76 times the 10-year median, significant valuation compression
+2. **Forward PE is only 19.7 times**: For a monopolistic SaaS company with a growth rate of 16%, an operating profit margin of 45%, and a market share of 80%, this valuation is extremely low
+3. **EV/FCF is only 15.8 times**: Considering the company’s large amount of net cash, the valuation under the enterprise value caliber is more attractive
+4. **The market is overly worried about Salesforce competition and platform migration risks**, but actual data shows that "large-scale customer exodus" has not occurred.
+5. **Passive fund inflows after joining the S&P 500** have not yet been fully reflected
+
+### Analyst consensus
+
+The average target price is $307-320, with 40-45% upside potential from the current price.
+
+---
+
+## 5. Risk factors
+
+### 1. Salesforce Direct Competitive Risks
+Salesforce launches dedicated Life Sciences Cloud, directly competing for Veeva's core customers. Although it has only acquired 3 of the top 20 pharmaceutical companies so far, Salesforce has strong sales capabilities and brand influence, and long-term competition cannot be ignored.
+
+### 2. CRM platform migration execution risks
+Veeva is migrating its CRM products from the Salesforce platform to its own Vault platform, with most of the migration expected to be completed between 2026-2029. The company has made it clear that it will not migrate custom code, custom objects or third-party integrations, which could lead to customer dissatisfaction and technical complexity.
+
+### 3. Cyclicality of the life sciences industry
+Veeva's revenue is highly dependent on research and development spending from the pharmaceutical and biotechnology industries. If the industry enters a down cycle (such as tightening of new drug approvals and worsening financing environment), customers may postpone purchases or cut spending.
+
+### 4. Risks of AI disruption
+The rapid development of large language models may change the landscape of the software industry. Morningstar has raised its uncertainty rating to "high" as a result. While Veeva's regulatory compliance barriers provide some protection, the impact of AI on software remains difficult to predict.
+
+### 5. Data security and privacy supervision
+Veeva handles large amounts of sensitive clinical and patient data and faces increasingly stringent global privacy and AI regulatory risks.
+
+---
+
+## 6. Investment thesis
+
+### Look at the long logic
+
+1. **Monopolistic market position + regulatory lock-in**: 80% of the CRM market share and the extremely high switching costs brought about by FDA compliance requirements make it almost impossible for competitors to shake its position in the short term. This is not a general "market leadership", but a pattern close to a monopoly.
+
+2. **Valuation is at an extremely low level in history**: The current PE is only half of the historical median, and the forward PE is less than 20 times. A monopoly SaaS company with a growth rate of 16%, a profit margin of 45%, and positive net cash should enjoy a higher valuation multiple.
+
+3. **R&D cloud opens up the second growth curve**: R&D and quality cloud have surpassed commercial cloud to become the largest source of revenue. There is still a lot of room for penetration in areas such as clinical trial digitization and regulatory technology to provide support for continued growth.
+
+### Bearish logic
+
+1. **Salesforce’s head-to-head competition cannot be underestimated**: Salesforce is one of the most powerful enterprise software companies in the world, and its Life Sciences Cloud may gradually erode Veeva’s market share in the medium to long term, especially in small and medium-sized clients.
+
+2. **Platform migration is a multi-year exposure**: The migration window of 2026-2029 means that customers have ample "re-evaluation" time, and any technical issues during the migration process may lead to customer churn.
+
+3. **Growth may gradually slow down**: Although the revenue growth rate of 16% is solid, the growth rate may decrease year by year as market penetration increases. If the growth rate drops below 10%, the market may further compress valuations.
+
+---
+
+## 7. Conclusion
+
+Veeva Systems is an investment worth taking a closer look at.
+
+**Core basis for judgment:**
+
+- This is a SaaS company with a near-monopoly position in a vertical market with high regulatory barriers, and excellent financial quality (high gross profit, high net profit, strong free cash flow, zero debt)
+- Valuations are currently at historically extreme lows and the market appears to be overpriced in the risks of Salesforce competition and platform migration
+- Just joined the S&P 500, which will bring continuous passive capital inflows
+- Morningstar gives an upside potential of 75%, and analysts’ consensus also has an upside potential of 40%+
+
+**Main uncertainties:**
+
+- The actual impact of Salesforce competition remains to be seen
+- The execution of CRM platform migration is a key variable in the next 3 years
+- The impact of AI on the software industry is still unclear
+
+**Recommendation: It’s worth diving into the in-depth research phase to focus on tracking Vault CRM migration progress and customer acquisition for Salesforce Life Sciences Cloud. **

@@ -1,18 +1,18 @@
-name: 🐞 Skill 报错 / 无法运行
-description: 某个 skill 执行报错、卡住，或工具/参数缺失导致跑不起来
+name: 🐞 Skill error / unable to run
+description: A certain skill reports an error, gets stuck, or is unable to run due to missing tools/parameters.
 title: "[Bug] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        感谢反馈 🙏 **请务必给出可复现的具体信息**——没有复现信息的报错无法定位，会被要求补充或直接关闭。
-        提交前请先搜索是否已有相同 issue。
+        Thanks for the feedback 🙏 **Please be sure to provide specific reproducible information** - Error reports without reproducible information cannot be located and will be asked to be supplemented or closed directly.
+        Before submitting, please search to see if there is already an identical issue.
   - type: dropdown
     id: skill
     attributes:
-      label: 涉及的 Skill
-      description: 报错发生在哪个 skill？只选一个，且确保标题与正文描述的是同一个（曾出现标题写 investment-research、正文写 investment-team 的情况）。
+      label: Skill involved
+      description: In which skill did the error occur? Choose only one, and make sure that the title and the main text describe the same thing (there have been cases where the title was written investment-research and the main text was written investment-team).
       options:
         - bottleneck-hunter
         - deep-company-series
@@ -33,56 +33,56 @@ body:
         - thesis-drift
         - thesis-tracker
         - wechat-article
-        - 不确定
-        - 其他 / 涉及多个
+        - Not sure
+        - Others/involving multiple
     validations:
       required: true
   - type: input
     id: command
     attributes:
-      label: 你运行的完整命令
-      description: 一字不差地贴出你实际输入的命令。
-      placeholder: "/investment-team 美团"
+      label: the complete command you ran
+      description: Post the exact command you typed, verbatim.
+      placeholder: "/investment-team Meituan"
     validations:
       required: true
   - type: textarea
     id: expected-actual
     attributes:
-      label: 期望结果 vs 实际结果
-      description: 你期望发生什么？实际发生了什么？请**完整贴出报错信息/日志**，不要只描述。
+      label: expected result vs actual result
+      description: What do you expect to happen? What actually happened? Please **post the complete error message/log**, don’t just describe it.
       placeholder: |
-        期望：正常生成四大师并行分析报告
-        实际：报错 "TeamCreate is not a valid tool"，流程中断
+        Expectation: Normally generate the four-master parallel analysis report
+        Actual: The error "TeamCreate is not a valid tool" is reported and the process is interrupted.
     validations:
       required: true
   - type: textarea
     id: repro
     attributes:
-      label: 复现步骤
-      description: 从头到尾怎么操作能重现？（安装方式、运行环境、具体操作顺序）
+      label: steps to reproduce
+      description: How can I reproduce the operation from beginning to end? (Installation method, operating environment, specific operation sequence)
     validations:
       required: true
   - type: input
     id: model
     attributes:
-      label: 使用的模型
-      description: 不同模型表现可能不同，这一项对定位至关重要。
-      placeholder: "Opus 4.8 / Sonnet / 其他"
+      label: model used
+      description: Different models may perform differently, and this item is crucial for positioning.
+      placeholder: "Opus 4.8 / Sonnet / Others"
     validations:
       required: true
   - type: input
     id: client
     attributes:
-      label: 客户端及版本
-      placeholder: "Claude Code CLI (版本号) / Codex / IDE 插件"
+      label: client and version
+      placeholder: "Claude Code CLI (version number) / Codex / IDE plug-in"
     validations:
       required: true
   - type: checkboxes
     id: confirm
     attributes:
-      label: 确认
+      label: confirm
       options:
-        - label: 我已搜索过现有 issue，确认没有重复
+        - label: I have searched for existing issues and confirmed that there are no duplicates.
           required: true
-        - label: 我已提供可复现的完整信息（命令、报错、模型、客户端）
+        - label: I have provided complete and reproducible information (commands, error reports, models, clients)
           required: true

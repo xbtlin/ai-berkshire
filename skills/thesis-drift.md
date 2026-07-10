@@ -1,210 +1,210 @@
-# 投资论文漂移检测：分清事实变化与措辞变化
+# Investment paper drift detection: distinguishing factual changes from wording changes
 
-对 $ARGUMENTS 执行投资论文漂移检测。
+Perform investment thesis drift detection on $ARGUMENTS.
 
-**支持输入格式**：
-- `公司名 旧报告路径 新报告路径` — 指定两份研究报告或论文快照进行对比
-- `公司名 reports/{公司名}-thesis-旧日期.md reports/{公司名}-thesis-新日期.md` — 对比两份带日期的论文快照
-- `公司名` — 自动查找 `reports/{公司名}-thesis.md` 及同目录历史快照；如果没有基线则转入缺失基线处理
+**Supported input formats**:
+- `Company Name Old Report Path New Report Path` — Specify two research reports or paper snapshots for comparison
+- `Company name reports/{Company name}-thesis-old date.md reports/{Company name}-thesis-new date.md` — Compare two dated paper snapshots
+- `Company Name` — Automatically search for `reports/{Company Name}-thesis.md` and historical snapshots in the same directory; if there is no baseline, transfer to missing baseline processing
 
-> "当事实改变时，我就改变想法。你呢？" —— 凯恩斯
+> "When the facts change, I change my mind. What about you?" - Keynes
 >
-> "股价波动不是论文漂移，事实变了才是。" —— AI Berkshire
+> "Stock price fluctuations are not thesis drift, the facts have changed." —— AI Berkshire
 
-## 设计理念
+## Design concept
 
-长期持仓最难的不是每天读新闻，而是区分三件事：
-- **事实改变**：收入、利润率、竞争格局、管理层行为、资本配置发生可验证变化
-- **价格改变**：市场情绪或估值倍数变化，但生意本身未变
-- **措辞改变**：两份报告表达不同，但底层证据和判断没有变化
+The hardest thing about holding a long-term position is not reading the news every day, but distinguishing three things:
+- **CHANGE OF FACTS**: Verifiable changes in revenue, margins, competitive landscape, management behavior, capital allocation
+- **Price Change**: Market sentiment or valuation multiples change, but the business itself remains unchanged
+- **Wording change**: The two reports express themselves differently, but the underlying evidence and judgment remain the same.
 
-投资论文漂移检测的目标是：**只在证据变化时承认论文变化**。不能因为报告换了写法就制造漂移，也不能因为股价涨跌就误判基本面。
+The goal of investing in paper drift detection is to: **Acknowledge paper changes only when the evidence changes**. You cannot create a drift just because the report is written differently, nor can you misjudge fundamentals just because the stock price rises or falls.
 
-本 Skill 依赖 `/thesis-tracker` 输出的结构化维度：核心假设清单、红线清单、估值锚点、追踪记录表。没有这些结构时，先补齐基线，再做漂移检测。
+This Skill relies on the structured dimensions output by `/thesis-tracker`: core assumptions list, red line list, valuation anchors, and tracking record table. When there are no such structures, first fill in the baseline and then do drift detection.
 
-## 执行流程
+## Execution process
 
-### 第一步：判断操作模式
+### Step 1: Determine the operating mode
 
-解析 `$ARGUMENTS`：
-- 如果提供两份报告路径 → 进入**指定报告对比**模式
-- 如果只提供公司名 → 查找 `reports/{公司名}-thesis.md` 及历史快照，进入**自动快照对比**模式
-- 如果只找到一份报告或没有历史基线 → 进入**缺失基线处理**模式
-- 如果两份报告不是同一家公司 → 停止并要求用户确认，不做跨公司漂移判断
+Parse `$ARGUMENTS`:
+- If two report paths are provided → enter **specified report comparison** mode
+- If only the company name is provided → Search `reports/{company name}-thesis.md` and historical snapshots, enter the **automatic snapshot comparison** mode
+- If only one report is found or no historical baseline → Enter **Missing Baseline Handling** mode
+- If the two reports are not from the same company → stop and ask the user to confirm, without making cross-company drift judgments
 
 ---
 
-## 模式A：指定报告对比
+## Mode A: Specify report comparison
 
-### A1：读取并校验两份报告
+### A1: Read and verify two reports
 
-读取旧报告和新报告，提取：
-- 报告日期、公司名、股票代码
-- 核心论文（5句话）
-- 核心假设清单
-- 红线清单
-- 估值锚点
-- 追踪记录表
-- 管理层质量判断
-- 竞争护城河判断
-- 当前建议动作（买入 / 持有 / 观察 / 减仓 / 清仓）
+Read old reports and new reports, extract:
+- Report date, company name, stock code
+- Core thesis (5 sentences)
+- List of core assumptions
+- Red line list
+- Valuation anchor
+- Tracking record sheet
+- Management quality judgment
+- Competitive moat judgment
+- Current recommended actions (buy/hold/observe/reduce position/clear position)
 
-如果报告缺少关键结构，先标注"结构缺失"，但仍尽量从正文中抽取证据；抽取不到的维度标为"无法判断"，不能编造结论。
+If the report lacks key structures, first mark it as "missing structure", but still try to extract evidence from the text; mark the dimensions that cannot be extracted as "unable to judge" and do not make up conclusions.
 
-### A2：证据归一化
+### A2: Evidence normalization
 
-把两份报告中的事实证据整理成同一张表：
+Organize the factual evidence from the two reports into the same table:
 
-| 维度 | 旧报告证据 | 新报告证据 | 数据来源 | 是否可验证 |
+| Dimensions | Old report evidence | New report evidence | Data source | Is it verifiable |
 |------|-----------|-----------|---------|-----------|
-| 估值锚点 | | | | |
-| 核心假设 | | | | |
-| 红线 | | | | |
-| 管理层质量 | | | | |
-| 竞争护城河 | | | | |
+| Valuation Anchor | | | | |
+| Core Assumptions | | | | |
+| red line | | | | |
+| Management Quality | | | | |
+| Competitive moat | | | | |
 
-**只比较证据，不比较文风。** 如果新旧报告只是同义改写、排序变化、语气变化，但事实数据和判断阈值没有变化，判定为 Unchanged。
+**Only compare evidence, not style of writing. ** If the old and new reports are only synonymous rewrites, sorting changes, and tone changes, but there are no changes in factual data and judgment thresholds, it is determined to be Unchanged.
 
-### A3：数值与估值校验
+### A3: Value and valuation verification
 
-所有数值变化必须使用 `tools/financial_rigor.py` 做精确计算，禁止 LLM 心算：
+All numerical changes must be accurately calculated using `tools/financial_rigor.py`, LLM mental arithmetic is prohibited:
 
 ```bash
 python3 tools/financial_rigor.py verify-valuation \
-  --price {当前价格} \
+  --price {current price} \
   --eps {EPS} \
-  --bvps {每股净资产} \
-  --fcf-per-share {每股自由现金流}
+  --bvps {net assets per share} \
+  --fcf-per-share {free cash flow per share}
 ```
 
-如需计算市值、百分比变化、目标价差异或情景估值，使用：
+To calculate market cap, percentage change, price target differential, or scenario valuation, use:
 
 ```bash
-python3 tools/financial_rigor.py verify-market-cap --price {价格} --shares {股本} --reported {报告市值} --currency {币种}
-python3 tools/financial_rigor.py cross-validate --field {字段} --values '{JSON}' --unit {单位}
-python3 tools/financial_rigor.py three-scenario --price {价格} --eps {EPS} --shares {股本亿} --growth {乐观} {中性} {悲观} --pe {乐观PE} {中性PE} {悲观PE}
-python3 tools/financial_rigor.py calc --expr '{精确算式}'
+python3 tools/financial_rigor.py verify-market-cap --price {price} --shares {share capital} --reported {reported market capitalization} --currency {currency}
+python3 tools/financial_rigor.py cross-validate --field {field} --values '{JSON}' --unit {unit}
+python3 tools/financial_rigor.py three-scenario --price {price} --eps {EPS} --shares {equity billions} --growth {optimistic} {neutral} {pessimistic} --pe {optimistic PE} {neutral PE} {pessimistic PE}
+python3 tools/financial_rigor.py calc --expr '{Exact calculation formula}'
 ```
 
-关键财务数据必须至少两处独立来源交叉验证。来源不足、口径不一致、无法复核的数字必须标注为"低置信度 / 待核实"。
+Key financial data must be cross-verified by at least two independent sources. Figures with insufficient sources, inconsistent caliber, and unverifiable figures must be marked as "low confidence/pending verification".
 
-### A4：逐维度判定漂移
+### A4: Determine drift dimension by dimension
 
-固定使用以下维度，不要临时增减：
+Use the following dimensions permanently and do not increase or decrease them temporarily:
 
-| 维度 | 判定重点 | Improved | Unchanged | Weakened |
+| Dimensions | Determination focus | Improved | Unchanged | Weakened |
 |------|---------|----------|-----------|----------|
-| 估值锚点 | 内在价值、PE/PB/FCF Yield、安全边际、目标价区间 | 安全边际扩大或内在价值上修且经工具验算 | 估值区间和安全边际无实质变化 | 安全边际收窄、内在价值下修或估值假设失效 |
-| 核心假设清单 | 收入增速、利润率、现金流、用户/订单/产能等可验证假设 | 更多假设被新证据强化 | 假设状态与证据基本一致 | 假设边际弱化、受损或破裂 |
-| 红线清单 | 诚信、监管、业务衰退、竞争突破、管理层异常动作 | 原有红线风险解除或显著下降 | 未触发且风险水平不变 | 红线被触发或触发概率上升 |
-| 管理层质量 | 诚信、资本配置、回购分红、执行力、股东友好度 | 新行为提高信任度 | 行为延续旧判断 | 行为损害信任或资本配置变差 |
-| 竞争护城河 | 市占率、定价权、网络效应、成本优势、替代威胁 | 护城河变宽或竞争优势被验证 | 格局无实质变化 | 护城河被削弱或竞对突破 |
+| Valuation anchor point | Intrinsic value, PE/PB/FCF Yield, safety margin, target price range | The safety margin expands or the intrinsic value is revised upward and is verified by tools | There is no substantial change in the valuation range and safety margin | The safety margin narrows, the intrinsic value is revised downward, or the valuation assumption is invalid |
+| List of core assumptions | Verifiable assumptions such as revenue growth, profit margin, cash flow, users/orders/capacity, etc. | More assumptions are strengthened by new evidence | The status of the assumptions is basically consistent with the evidence | The margins of the assumptions are weakened, damaged or broken |
+| Red line list | Integrity, supervision, business decline, competition breakthrough, abnormal management actions | The original red line risk is lifted or significantly reduced | Not triggered and the risk level remains unchanged | The red line is triggered or the probability of triggering increases |
+| Management quality | Integrity, capital allocation, repurchase dividends, execution, shareholder friendliness | New behaviors improve trust | Behaviors that continue old judgments | Behaviors that damage trust or worsen capital allocation |
+| Competitive moat | Market share, pricing power, network effect, cost advantage, threat of substitution | The moat widens or the competitive advantage is verified | There is no substantial change in the pattern | The moat is weakened or the competition breaks through |
 
-每个维度只能给出三类结论：**Improved / Unchanged / Weakened**。
+Only three types of conclusions can be given for each dimension: **Improved/Unchanged/Weakened**.
 
-### A5：证据驱动规则
+### A5: Evidence-driven rules
 
-每个非 Unchanged 的结论必须引用导致变化的具体新证据：
-- 财报行项目：例如收入增速、毛利率、经营现金流、回购金额、净现金
-- 监管披露：例如 10-K/20-F、年报、中报、港交所公告、SEC filing
-- 新闻事件：例如管理层变动、监管处罚、重大客户流失、竞品突破
-- 价格与估值：必须说明这是"估值变化"还是"基本面变化"，不能混淆
+Each non-Unchanged conclusion must cite specific new evidence that led to the change:
+- Financial report line items: such as revenue growth, gross profit margin, operating cash flow, repurchase amount, net cash
+- Regulatory disclosures: such as 10-K/20-F, annual report, interim report, Hong Kong Stock Exchange announcement, SEC filing
+- News events: such as management changes, regulatory penalties, major customer losses, competitive product breakthroughs
+- Price and valuation: It must be stated whether this is a "change in valuation" or a "change in fundamentals" and cannot be confused.
 
-如果找不到能解释变化的证据，必须判定为 **Unchanged** 或 **无法判断**，不能用措辞差异推断漂移。
+If no evidence can be found to explain the change, it must be judged as **Unchanged** or **Unable to determine**, and the wording difference cannot be used to infer drift.
 
-### A6：输出漂移报告
+### A6: Output drift report
 
-#### 报告结构
+#### Report structure
 
 ```
-一、对比对象与时间跨度
-二、总体结论：论文是否漂移
-三、维度漂移表
-四、证据差异明细
-五、估值与数值验算
-六、建议动作迁移
-七、不确定项与需补充来源
-八、下次跟踪重点
+1. Comparison objects and time span
+2. Overall conclusion: Does the paper drift?
+3. Dimension drift table
+4. Details of evidence differences
+5. Valuation and Numerical Calculation
+6. Suggested action migration
+7. Uncertain items and sources that need to be supplemented
+8. Focus on tracking next time
 ```
 
-#### 维度漂移表
+#### Dimension drift table
 
-| 维度 | 旧判断 | 新判断 | 漂移方向 | 触发证据 | 置信度 |
+| Dimensions | Old judgment | New judgment | Drift direction | Trigger evidence | Confidence |
 |------|-------|-------|:--------:|---------|:------:|
-| 估值锚点 | | | Improved / Unchanged / Weakened | | 高/中/低 |
-| 核心假设清单 | | | Improved / Unchanged / Weakened | | 高/中/低 |
-| 红线清单 | | | Improved / Unchanged / Weakened | | 高/中/低 |
-| 管理层质量 | | | Improved / Unchanged / Weakened | | 高/中/低 |
-| 竞争护城河 | | | Improved / Unchanged / Weakened | | 高/中/低 |
+| Valuation Anchors | | | Improved / Unchanged / Weakened | | High/Medium/Low |
+| List of Core Assumptions | | | Improved / Unchanged / Weakened | | High/Medium/Low |
+| Redline List | | | Improved / Unchanged / Weakened | | High/Medium/Low |
+| Management Quality | | | Improved / Unchanged / Weakened | | High/Medium/Low |
+| Competitive Moat | | | Improved / Unchanged / Weakened | | High/Medium/Low |
 
-**Unchanged 行的触发证据写 `—`，不要为了填表编造证据。**
+Write `—` as the triggering evidence for the **Unchanged line. Do not make up evidence just to fill in the form. **
 
-#### 总体结论必须回答
+#### The overall conclusion must be answered
 
-1. **论文是否漂移？** 未漂移 / 正向漂移 / 负向漂移 / 证据不足无法判断
-2. **漂移来自哪里？** 估值 / 基本面 / 管理层 / 竞争格局 / 红线事件
-3. **是事实变化还是价格变化？** 明确拆开说明
-4. **建议动作如何迁移？** 例如：Watch → Buy、Buy → Hold、Hold → Reduce、Reduce → Exit
-5. **下一步需要什么证据？** 下一份财报 / 监管披露 / 管理层说明 / 竞对数据
-
----
-
-## 模式B：自动快照对比
-
-### B1：查找快照
-
-在 `reports/` 中查找：
-- `reports/{公司名}-thesis.md`
-- `reports/{公司名}-thesis-*.md`
-- `reports/{公司名}/` 目录下包含 `thesis`、`论文`、`追踪` 的报告
-
-选择时间最早且结构完整的文件作为旧报告，时间最新的文件作为新报告。若用户指定日期，以用户指定为准。
-
-### B2：防止错误配对
-
-对比前必须确认：
-- 公司名或股票代码一致
-- 报告日期不同
-- 两份报告都包含可抽取的论文结构或研究结论
-
-如果无法确认同一公司，停止并要求用户提供明确路径。
-
-### B3：执行模式A
-
-找到两份有效快照后，按模式A完整执行。
+1. **Does the paper drift? ** No drift / Positive drift / Negative drift / Insufficient evidence to judge
+2. **Where does the drift come from? ** Valuation/Fundamentals/Management/Competitive Landscape/Red Line Events
+3. **Is it a change in facts or a change in price? **Clear disassembly instructions
+4. **How to migrate the recommended actions? ** For example: Watch → Buy, Buy → Hold, Hold → Reduce, Reduce → Exit
+5. **What evidence is needed for the next step? ** Next financial report/Regulatory disclosures/Management notes/Competitive data
 
 ---
 
-## 模式C：缺失基线处理
+## Mode B: Automatic snapshot comparison
 
-如果只找到一份报告或没有找到旧快照：
+### B1: Find Snapshot
 
-1. 明确说明：**缺少可比较的历史基线，不能执行漂移检测**
-2. 不要根据记忆或市场印象补造旧论文
-3. 引导用户先使用 `/thesis-tracker {公司名} 建立论文` 建立结构化基线
-4. 如果当前报告已足够完整，可建议将它保存为 `reports/{公司名}-thesis.md` 作为未来漂移检测基线
+Look in `reports/` for:
+- `reports/{company name}-thesis.md`
+- `reports/{company name}-thesis-*.md`
+- The `reports/{company name}/` directory contains reports of `thesis`, `thesis`, and `tracking`
 
-输出格式：
+Select the oldest file with complete structure as the old report, and the latest file as the new report. If the user specifies the date, the date specified by the user shall prevail.
+
+### B2: Prevent wrong pairing
+
+Before comparison, you must confirm:
+- The company name or stock code is the same
+- Different reporting dates
+- Both reports contain extractable thesis structure or research conclusions
+
+If the same company cannot be confirmed, stop and ask the user for a clear path.
+
+### B3: Execution mode A
+
+After finding two valid snapshots, execute mode A completely.
+
+---
+
+## Mode C: Missing baseline processing
+
+If only one report is found or no old snapshots are found:
+
+1. Clarification: **Lack of comparable historical baseline, drift detection cannot be performed**
+2. Do not rewrite old papers based on memory or market impressions
+3. Guide users to first use `/thesis-tracker {company name} to create a paper` to establish a structured baseline
+4. If the current report is complete enough, it is recommended to save it as `reports/{company name}-thesis.md` as a baseline for future drift detection
+
+Output format:
 
 ```
-无法执行论文漂移检测：缺少历史基线。
+Unable to perform paper drift detection: missing historical baseline.
 
-已找到：
-- 当前报告：{路径 / 未找到}
-- 历史基线：未找到
+Found:
+- Current report: {path/not found}
+- Historical baseline: not found
 
-建议：
-1. 先运行 /thesis-tracker {公司名} 建立论文
-2. 下次有新财报或重大事件后，再运行 /thesis-drift {公司名} 旧报告 新报告
+Suggestions:
+1. First run /thesis-tracker {company name} to create the paper
+2. Next time there is a new financial report or major event, run /thesis-drift {company name} old report new report
 ```
 
 ---
 
-## 关键原则
+## Key Principles
 
-- **证据优先于措辞** — 同义改写不是漂移，只有事实证据变化才是漂移
-- **基本面优先于股价** — 股价涨跌只影响估值锚点，不自动改变生意质量
-- **数值必须验算** — 所有百分比、估值倍数、目标价差异必须用 `tools/financial_rigor.py`
-- **不确定就标注不确定** — 来源缺失、口径不一致、无法复核时，不要硬判
-- **红线单独处理** — 红线触发优先级高于估值便宜，不能被低 PE 掩盖
-- **输出必须可复盘** — 每个 Improved / Weakened 结论都要能追溯到具体证据
+- **Evidence takes precedence over wording** — Synonymous rewriting is not drift, only changes in factual evidence are drift
+- **Fundamentals take priority over stock price** — The rise and fall of stock price only affect the valuation anchor point and do not automatically change the quality of business.
+- **Values must be verified** — All percentages, valuation multiples, and target price differences must be calculated using `tools/financial_rigor.py`
+- **If you are not sure, mark it as uncertain** — When the source is missing, the caliber is inconsistent, and it is impossible to review, do not make a hard judgment.
+- **Red lines are treated separately** — The red line triggering priority is cheaper than the valuation and cannot be masked by low PE
+- **Output must be replayable** — Each Improved / Weakened conclusion must be traceable to specific evidence

@@ -1,1071 +1,1071 @@
-# 未上市公司研究：多Agent并行深度研究框架
+# Unlisted company research: MultiAgent parallel in-depth research framework
 
-对 $ARGUMENTS 进行团队化深度研究分析。专为蚂蚁集团、小红书、SpaceX、Stripe 等未上市公司设计。
+A team-based depth study of $ARGUMENTS is performed. Designed for unlisted companies such as ant group, a small red book, SpaceX, and Stripe.
 
-**最终目标**：在信息天然稀缺的条件下，尽可能还原这家公司的**真实价值**——不是市场给的估值，而是生意本身值多少钱。
+** Final objective**: In conditions of natural scarcity of information, restore, to the extent possible, the real value of the company** — not the value of the market, but the value of the business itself.
 
-## 框架特点
+# Frame Characteristics
 
-未上市公司 vs 上市公司研究的核心差异：
-- **无标准化财报**：需多源拼凑、交叉验证
-- **估值锚定少**：依赖融资轮次、可比公司法、情景推演
-- **信息不对称大**：需要更多"拼图式"研究方法
-- **退出路径不确定**：IPO/并购/二级转让均有可能
+The core differences in research by unlisted companies vs listed:
+- **No standardized financial statement**: Multiple sources of aggregation and cross-checking
+- **The valuation is low anchor**: reliance on financing wheels, comparable corporate methods, scenario development
+- ** Information asymmetry**: more "map" research methods are needed
+- ** Exit path uncertain**: IPO/M / Secondary transfer possible
 
-## AI研究偏见自觉（本框架的核心前提）
+# AI studies prejudice conscious (core premise of this framework)
 
-未上市公司是AI研究偏见最严重的领域。必须时刻警惕以下陷阱：
+Unlisted companies are the most serious areas of AI’s research on bias.
 
-**核心矛盾**：AI擅长结构化已有信息，但未上市公司的信息天然稀缺。这会导致：
-1. **虚假保守**：因为资料少，AI倾向给出保守/模糊的结论，但资料少≠公司不好
-2. **虚假精确**：为了填满报告模板，AI可能用"合理推测"伪装成"有据分析"
-3. **对标陷阱**：强行与上市公司对标时，会继承上市公司的估值逻辑，忽略未上市公司的独特价值
-4. **幸存者偏差**：网上能搜到的公司信息往往有正面偏向（公司主动传播的多是好消息）
+** Core contradictions**: AI is good at structured information that is available but not listed. This leads to:
+1. **False conservative**: AI prefers conservative/unmixed conclusions due to the lack of information, but it is not good for the company to have less information
+2. **False precision**: To fill the reporting template, AI may use "reasonable presumption" to disguise it as "probably reasoned analysis".
+3. ** Trail-trace**: Forcible matching of bid with listed companies will inherit the valuation logic of listed companies, ignoring the unique value of unlisted companies
+** Survivors' deviation**: Corporate information available online is often positive (good news is most of the company's initiative)
 
-**应对原则**：
-- 宁可留白说"不知道"，也不要用推测填满表格伪装确定性
-- 每个数据点必须标注置信度（🟢高/🟡中/🔴低），让读者自己判断
-- 区分"可验证的事实"与"AI的推理"，用不同格式标注
-- 对于信息极度稀缺的公司，切换为"第一性原理模式"——不追求报告完整，只回答几个核心问题：
-  1. 这门生意解决什么真实问题？需求是真需求还是伪需求？
-  2. 为什么是这个团队？他们有什么独特优势？
-  3. 如果成功了，天花板有多高？如果失败了，最可能死在哪里？
-  4. 当前阶段的关键验证节点是什么？
+** Response principles**:
+- Better say "no" than "no." And don't pretend to be certain with a surmise form.
+- Each data point must be marked with confidence (high/medium/low) so that readers can judge for themselves
+- Distinguishing "verifiable facts" from "AI reasoning" and marking in different formats
+- For companies with extremely scarce information, switch to "first-of-the-ground model" - not seeking the completeness of the report, but only to answer a few core questions:
+What real problems does this business solve? Is demand real or false?
+2. Why this team? What are their unique advantages?
+3. If it succeeds, how high is the ceiling? If it fails, where is the most likely to die?
+What are the key validation nodes at this stage?
 
-**反向利用信息不对称**：市场对未上市公司信息少→定价效率低→恰恰可能是超额收益的来源。AI研究的目标不是消除信息不对称（做不到），而是在有限信息中提取最关键的判断依据。
+** Reverse use of information asymmetries**: Markets are precisely the source of excessive gains from low pricing efficiency for unlisted companies. AI research is not aimed at eliminating information asymmetries (which cannot be achieved), but at extracting the most critical judgement in limited information.
 
 ---
 
-## 执行流程
+# Execute process
 
-### 第一步：展示团队框架
+# Step one: show team framework
 
-向用户展示以下团队结构，确认后启动：
+Show the following team structure to users, confirm it and start:
 
-| 角色 | 职责 | 核心视角 |
+The role, the duties, the core perspective, the role, the responsibilities, the responsibilities, the core perspective, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the responsibilities, the , the responsibilities, the responsibilities, the , the , the , the , the , the , the , the , the , the , the , the
 |------|------|----------|
-| **team-lead**（你自己） | 统筹协调、信息拼图、交叉验证、输出最终报告 | 投资决策整合 |
-| **business-decoder** | 商业模式拆解 & 产品用户分析 | "这门生意的本质是什么" |
-| **financial-detective** | 财务数据拼凑 & 估值推演 | "在信息缺失下尽可能还原真实财务面貌" |
-| **competitive-mapper** | 行业格局 & 竞争态势 & 替代威胁 | "谁在和它竞争，谁可能颠覆它" |
-| **risk-governance-analyst** | 风险全景 & 管理层/治理/投资人评估 | "什么可能出错，谁在掌舵" |
-| **tech-ip-analyst** | 技术栈/专利/研发能力/技术护城河 | "技术壁垒是真是假，能撑多久" |
-| **signal-miner** | 替代数据挖掘：招聘/专利/诉讼/App数据/供应链 | "常规信息之外，还有什么蛛丝马迹" |
+**team-lead** (yourself) <unk> Coordination, information puzzles, cross-checking, final report output <unk> Investment decision integration <unk>
+<unk> Business-decoder** <unk> Business mode unwinding & product user analysis <unk> "What is the essence of this business?" <unk>
+<unk> Financial-detective** Financial data aggregation & valuation
+**Competitive-mapper** <unk> Industry patterns & competition dynamics & alternative threats <unk>
+<unk> **risk-governance-analyst** Risk panorama & management/governance/investment assessment <unk> "What could be wrong, who is at the helm" <unk>
+**tech-ip-analyst** ** techno-restriction/research and development capacity/technology moat ** ** ** technology barriers are real, how long can they last **
+<unk> **signal-miner** <unk> Alternative data mining: recruitment/proprietary/suitment/app data/supply chain <unk> "What's the trail beyond the conventional information"? <unk>
 
-### 第二步：创建团队
+# Step 2: Create a team
 
-使用 TeamCreate 创建团队：
-- team_name: `{公司名}-private-research`（英文小写，如 `ant-group-private-research`）
+Create a team using TeamCreate:
+- name: `{corporate name} - privaté-research ' (in lower case, e.g. `ant-group-private-research ' )
 - agent_type: `team-lead`
 
-### 第三步：创建6个任务
+# Step 3: Create six missions
 
-使用 TaskCreate 创建以下6个任务（每个都要有 subject、description、activeForm）：
+Create the following six tasks using the TaskCreate (with subject, description, activeForm):
 
 ---
 
-#### 任务1：商业模式与产品用户深度分析
-- subject: `拆解{公司名}商业模式、产品矩阵与用户生态`
-- activeForm: `分析{公司名}商业模式与用户生态`
-- description 包含：
+Task 1: Business Model and Product User In-depth Analysis
+- subject: `Dismantling {corporate name} business models, product matrices and user ecology '
+- ActiveForm: `Analysis of {corporate name} business models and user ecology '
+- Discreet contains:
 
 ```
-## 商业模式深度拆解
+# Business model deep down
 
-### 1. 核心生意定义
-- 用一句话定义这门生意的本质（段永平式定义：用最朴素的语言，把这门生意讲给一个聪明但不懂行的人听）
-- 公司解决什么问题？为谁创造价值？
-- 价值主张与同类产品的差异化
-- 这个问题如果公司不存在，用户会怎么解决？替代方案的代价有多高？
-- 需求的"刚性"判断：经济下行时用户会砍掉这个支出吗？
+#1 Definition of Core Business
+- Define the nature of this business in a single sentence.
+- What's the company solving? Who's the value?
+- Difference between value propositions and products of the same kind
+- How would users solve the problem if the company did not exist? How expensive would the alternative be?
+- "Step" judgment of demand: will users cut off this expense when the economy goes down?
 
-### 2. 收入模式拆解
-- 收入构成：广告/佣金/订阅/交易抽成/金融服务/SaaS/硬件/授权费等
-- 各收入线占比（如有数据）及增长趋势
-- 变现效率指标推算：ARPU、Take Rate、广告加载率、转化率等
-- 收入质量评估：
-  - 经常性收入 vs 一次性收入的占比
-  - 收入集中度：前5大客户/渠道占比
-  - 收入的可预测性（合同型/订阅型 vs 交易型）
-  - 收入确认方式是否合理（有无提前确认收入的迹象）
-- 与同业上市公司变现效率对标
+#2 Income mode dismantled
+- Income composition: advertising/commissions/subscription/transaction extraction/financial services/SaaaS/hardware/authorization fees, etc.
+- Ratio of income lines (if available) and growth trends
+- Discount efficiency indicator extrapolation: ARPU, Take Rate, advertising load, conversion rate, etc.
+- Income quality assessment:
+- Recurrent income vs One-time income as a percentage
+- Income concentration: top five clients/channels
+- Predictability of income (contractual/subscriptive vs trading)
+- Reasonability of income recognition (indicators of early recognition of income)
+- Matching efficiency with listed companies
 
-### 3. 单位经济模型（UE）推算
-- CAC（获客成本）推算：
-  - 付费获客 vs 自然增长的占比
-  - 分渠道CAC（如有）
-  - CAC趋势：随规模增长是上升还是下降？
-- LTV（生命周期价值）推算：
-  - ARPU × 预期生命周期
-  - 考虑交叉销售和升级销售
-- LTV/CAC 比值、回本周期
-- 边际成本结构：新增用户/交易的边际成本趋势
-- 规模经济拐点：何时/是否已过盈亏平衡点
+##3. Unit economic model (UE) extrapolation
+- CAC (cost of access) calculations:
+- Pay-for-goer vs. Proportion of natural growth
+- Sub-channel CAC (if any)
+- CAC Trends: Do you want to increase or decrease with scale?
+- LTV (life cycle value) extrapolation:
+- ARPU x Expected life cycle
+- Consider cross-sales and upgrades
+- LTV/CAC margin, return cycle
+- Marginal cost structure: marginal cost trends for new users/transactions
+- Economies of scale: when/if the balance has been exceeded
 
-### 4. 产品矩阵与飞轮效应
-- 核心产品 + 延伸产品 + 孵化产品
-- 飞轮如何运转：网络效应/数据飞轮/规模效应
-- 产品之间的协同效应与交叉导流
-- 产品生命周期：各产品分别处于哪个阶段
-- 产品迭代速度：App/产品更新频率、近12个月重大功能更新
+##4. Product matrix and fly-wheel effects
+- Core + extended + incubation
+- How the wheels work: network effects/data wheels/scale effects
+- Synergies and cross-conducting flows between products
+- Product life cycle: what stage are the products at?
+- Product iterative speed: App/product update frequency, nearly 12 months of major functionality update
 
-### 5. 商业模式画布（BMC）
-用以下9要素完整描述商业模式：
-| 要素 | 内容 |
+##5. Business Model Painting (BMC)
+The business model is described in its entirety with the following nine elements:
+Elements
 |------|------|
-| 价值主张 | |
-| 客户细分 | |
-| 渠道通路 | |
-| 客户关系 | |
-| 收入来源 | |
-| 核心资源 | |
-| 关键活动 | |
-| 重要伙伴 | |
-| 成本结构 | |
+♪ Value advocacy ♪
+- Client breakdown. - Uh-huh.
+♪ The channel leads ♪
+<unk> Customer relations <unk>
+Source of income
+Core resources
+<unk> Critical activities <unk>
+♪ The big guy ♪
+Cost structure
 
-### 6. 用户深度分析
-- 用户规模：MAU/DAU（从QuestMobile、Sensor Tower、SimilarWeb等推算）
-- 用户增长曲线：处于S曲线哪个阶段（用具体数据论证）
-- 用户粘性指标：
-  - DAU/MAU 比率（日活/月活比）
-  - 平均使用时长、打开频次
-  - 次日/7日/30日留存率（如有）
-  - 用户增长 vs 留存趋势对比（虚假增长识别）
-- 用户画像：年龄/地域/消费力/职业分布
-- 用户口碑：
-  - App Store/Google Play评分趋势（近12个月变化）
-  - 社交媒体舆情分析
-  - 知乎/微博/小红书上的用户真实反馈
-  - 负面评价的主要集中点
-- 用户获取效率：
-  - 付费获客 vs 自然增长 vs 口碑传播比例
-  - 是否依赖单一获客渠道
+##6. User depth analysis
+- User size: MAU/DAU (from QuestMobil, Sensor Tower, SimyarWeb, etc.)
+- User growth curve: at which stage of the S curve (as demonstrated by specific data)
+- User-contagious indicators:
+- DAU/MAU ratio (days/month living ratio)
+- Average length of use, frequency of opening
+- Retention rate (if any) on the following day/seven/30
+- User growth vs Retention trend comparison (false growth recognition)
+- User portrait: age/geographic/consumption/vocational distribution
+- User ' s inscription:
+- App Store/Google Play rating trend (recently 12 months change)
+- Social media analysis.
+- Known the real feedback from users in Twitter/Small Red Book
+- Main focus of negative evaluations
+- User efficiency:
+- Payee vs. Natural growth vs. Portrait rate
+- Whether to rely on a single access channel
 
-### 7. 定价权评估
-- 过去3年是否有提价历史？提价后用户流失情况？
-- 与竞品的价格对比：是价格领导者还是跟随者？
-- 用户对价格的敏感度评估
-- 佣金/抽成比例在产业链中的合理性
+##7. Assessment of pricing authority
+- Have you had a history of price increases over the past three years?
+- Prices compared to competition: price leaders or followers?
+- User sensitivity assessment of prices
+- Commission/proportionality in the chain of industry
 
-### 8. 护城河评估
-对以下6个维度逐一验证并打分(★1-5)：
+##8. A waterfront assessment
+Each of the following six dimensions is verified and scored (<unk> 1-5):
 
-| 护城河类型 | 评分 | 证据 | 趋势 | 持久性评估 |
+<unk> Type of moat, <unk> Rating, <unk> Evidence, <unk> Trends, <unk> Persistence assessment, <unk>
 |-----------|------|------|------|-----------|
-| 网络效应 | | 用户越多，价值越大？是单边还是双边/多边？ | 加宽/稳定/收窄 | |
-| 转换成本 | | 用户迁移到竞品的代价？数据/关系/习惯迁移成本？ | | |
-| 品牌心智 | | 品类=品牌？NPS推算？ | | |
-| 数据壁垒 | | 数据飞轮是否形成？独有数据资产？数据量级？ | | |
-| 监管牌照 | | 是否有准入门槛？牌照获取难度？ | | |
-| 规模经济 | | 规模带来的成本优势是否显著？ | | |
+<unk> Network effects <unk> The more users the greater the value?
+Cost of moving users to competition?
+♪ The way you're going ♪
+♪ Do you have a data wheel?
+Do you have access thresholds?
+<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-综合护城河评级：宽/中/窄/无
+Integrated moat rating: wide/medium/narrow/nil
 
-### 9. 国际化分析（如适用）
-- 海外市场拓展情况
-- 国际化收入占比
-- 本土化策略与挑战
-- 海外竞争格局差异
+##9. Internationalization analysis (if applicable)
+- Overseas market expansion
+- Internationalization of income as a percentage of income
+- Localization strategies and challenges
+- Differences in overseas competition patterns
 ```
 
 ---
 
-#### 任务2：财务数据拼凑与估值推演
-- subject: `拼凑{公司名}财务数据并进行估值分析`
-- activeForm: `拼凑{公司名}财务数据与估值`
-- description 包含：
+Task 2: Financial data aggregation and valuation
+- subject: `Cluster {corporate name} financial data and valuation analysis '
+- ActiveForm: `Cluster {corporate name} Financial data and valuation '
+- Discreet contains:
 
 ```
-## 财务数据拼凑（侦探式研究）
+# Financial data collection (detective research)
 
-未上市公司没有标准财报，需要多源拼凑、交叉验证。每一个数据都要追溯到具体来源，标明时间和置信度。
+Each data is traced to the specific source, indicating time and confidence.
 
-### 1. 数据来源矩阵
-**按优先级搜索以下来源**：
+##1. Data Source Matrix
+** Search the following sources by priority**:
 
-| 优先级 | 来源类型 | 具体来源 | 可信度 | 搜索方法 |
+<unk> Priority <unk> Source type <unk> Specific source <unk> Credibility <unk> Search method <unk>
 |--------|---------|---------|--------|---------|
-| 1 | 招股书/监管文件 | SEC Filing、港交所、证监会披露的招股书草案 | 🟢高 | 搜索"公司名 + 招股书/prospectus/IPO filing" |
-| 2 | 母公司/关联上市公司财报 | 如阿里年报中蚂蚁数据、Google Cloud年报 | 🟢高 | 搜索母公司年报中的关联披露 |
-| 3 | 监管处罚/合规披露 | 央行、证监会、市场监管总局处罚文件 | 🟢高 | 搜索"公司名 + 处罚/罚款/整改" |
-| 4 | 债券/ABS发行文件 | 如蚂蚁花呗ABS说明书中的底层数据 | 🟢高 | 搜索"公司名 + 债券/ABS/信托" |
-| 5 | 工商登记信息 | 天眼查/企查查的工商年报、实缴资本 | 🟡中高 | |
-| 6 | 融资新闻 | 估值、融资金额、投资方 | 🟡中 | 搜索"公司名 + 融资/估值/valuation" |
-| 7 | 第三方研报 | 券商、咨询公司、行业协会研报 | 🟡中 | 搜索"公司名 + 研报/report" |
-| 8 | 深度媒体报道 | 晚点LatePost、The Information、36氪、Bloomberg | 🟡中 | 直接搜索这些媒体+公司名 |
-| 9 | 行业数据推算 | 通过行业总量和市场份额反推 | 🔴低-中 | |
-| 10 | 前员工/内部人爆料 | Blind、脉脉、论坛 | 🔴低 | 仅作参考，不作为主要依据 |
+<unk> List of applications/regulatory documents <unk> SEC Filing, Port Office, SEC disclosure draft offer
+2 parent/associated listed companies, such as the ants in the Alith Annual Report, Google Cloud, and the links in the parent annual report.
+<unk> Regulatory penalties/compliance disclosures Central Bank, SEC, DGMS, penalties documents <unk> Market Supervision Department <unk> Search for the name of the company + Punishment/Fine/Reform
+<unk> 4 Bonds/ABS issue files <unk> bottom data from antflowers ABS instructions <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> "Standing" + Bonds/ABS/Trust" <unk>
+5 Business register information
+<unk> 6 Finance news Valuation, amount of financing, investor search "Corporate name + Finance/Value/Valuation"
+<unk> Third party researcher, consulting firm, industry association researcher, search for "Corporate name" + rereport"
+<unk> 8 <unk> Deep media coverage <unk> Late Post, The Information, 36 kryptons, Bloomberg <unk>
+<unk> 9 Industry data extrapolation through the inverse in volume and market share of the industry
+<unk> 10 ex-staff/internal human material <unk> Blind, pulse, forum <unk> low <unk> for reference purposes only, not the main basis
 
-### 2. 关键财务指标推算
-尽可能推算以下数据，**每个数据点必须标明**：来源、时间、置信度、推算方法。
+#2. Presumption of key financial indicators
+To the extent possible, ** the following data must be extrapolated, ** each data point must be marked: source, time, confidence, method of extrapolation.
 
-**收入端**：
-- 总收入规模与增速（近3年，年度/季度颗粒度）
-- 收入结构拆解（按业务线/产品线）
-- 收入增长驱动因素分解：量（用户/交易量）× 价（ARPU/客单价）
-- 收入的季节性波动模式
+** End of income**:
+- Total income size and rate of increase (nearly three years, annual/quarterly particle size)
+- Dismantling of income structure (by line of business/product)
+- Disaggregate income growth drivers: volume (user/transaction) x price (ARPU/unit price)
+- Seasonal fluctuations in income
 
-**成本端**：
-- 毛利率推算（对标同业上市公司，说明选取逻辑）
-- 研发费用率推算（通过员工数 × 人均薪酬，或研发人员占比推算）
-- 销售费用率推算（通过获客渠道和投放数据推算）
-- 管理费用率推算
+** Cost end**:
+- Māori ratio calculation (for listed companies with a description of the logic of selection)
+- The R&D rate is calculated (by number of employees x per capita remuneration, or by the share of R&D personnel)
+- Calculation of sales cost rates (by access to customers and by placing data)
+- Administration rate calculations
 
-**利润端**：
-- 经营利润/EBITDA 推算
-- 净利润/调整后净利润推算
-- 盈利时间线：何时盈利？如果尚未盈利，预计何时？
+** Profit end**:
+- Business profits/EBITDA extrapolation
+- Net profit/adjusted net profit deduction
+- Time line for profit: when is it going to be going to be going to be going to be going to be going to be going to be going to be going to be going to be going to be going to be going to be going to be going to be going to be going to the next round of the year;
 
-**现金流端**：
-- 经营现金流判断（正/负，是否自我造血）
-- 资本开支水平和趋势
-- 自由现金流推算
-- 账上现金/烧钱速度（通过融资金额、融资间隔、员工数推算）
-- 现金跑道：按当前烧钱速度还能撑多久？
+** Cash flow**:
+- Business cash flow judgement (positive/negative, self-made)
+- Levels and trends in capital expenditure
+- Free cash flow.
+- Cash on the books/fever speed (through financing amounts, financing intervals, employee counts)
+- Cash runway: how long can we keep burning the money at the current rate?
 
-**效率指标**：
-- 员工数量与人效（人均收入、人均利润）
-- 资本效率：每融1元钱产生多少收入
-- 与同业上市公司效率指标对标
+**Indicators of efficiency**:
+- Number and effects of employees (per capita income, per capita profits)
+- Capital efficiency: how much income is generated per $1 cut
+- Matching efficiency indicators with listed companies
 
-### 3. 财务数据交叉验证
-- 同一指标如果有多个来源，全部列出并说明差异
-- 用不同方法推算同一指标，检查结果是否收敛
-- 标注无法验证的"孤证"数据
+##3. Cross-checking of financial data
+- All of the same indicators, if multiple sources, with an indication of variances
+- different methods of deriving the same indicator, checking whether results are being reduced
+- Mark unverifiable "single" data.
 
-| 指标 | 来源A（数据/时间） | 来源B（数据/时间） | 差异 | 采信判断 |
+Source A (data/time) Source B (data/time) Difference
 |------|-------------------|-------------------|------|---------|
 
-### 4. 融资历史与估值演变
-整理完整融资时间线：
+##4. History of finance and evolution of valuation
+Collapse the full financing time line:
 
-| 轮次 | 时间 | 金额 | 投前估值 | 投后估值 | 领投方 | 跟投方 | 估值倍数增长 | 备注 |
+The value of the investment is increased by multiples of the value of the investment, the price of the investment is increased by the amount of the investment.
 |------|------|------|---------|---------|--------|--------|------------|------|
 
-分析：
-- 估值增长曲线是否健康（每轮增长倍数是否合理）
-- 融资间隔是否合理（过于频繁=烧钱快？过于稀疏=融资困难？）
-- 是否出现估值倒挂（Down Round）
-- 老股东是否持续加注（信心信号）
-- 最新一轮的投资条款推测：
-  - 优先清算权（1x/2x/participating）
-  - 反稀释保护（full ratchet/weighted average）
-  - 对赌条款（业绩/上市时间）
-  - 这些条款对普通股价值的影响
+Analysis:
+- Valuation of the health of the growth curve (reasonable multipliers per round)
+- Is the financing interval reasonable (excessively frequent = fast burning money? Too thin = difficult financing?
+- Whether there is a valuation inverted (Down Rowd)
+- Whether the old shareholder keeps raising (confidence signals)
+- The latest round of investment clauses assumes:
+- Priority right to liquidation (1x/2x/participating)
+- Full stretchet/weighted protection
+- Recourse to gambling clauses (performance/market time)
+- The effect of these provisions on ordinary stock values
 
-### 5. 估值分析（多方法交叉）
+##5. Valuation analysis (multi-method cross-cutting)
 
-**方法1：最近融资估值法**
-- 最近一轮估值及时间
-- 考虑优先清算权等条款后的"普通股等价估值"（通常需要打折20-40%）
-- 距今时间差异调整
-- 这一轮投资人的动机分析（财务投资 vs 战略投资，战略投资者可能溢价）
+** Method 1: Recent method of financing valuation**
+- The most recent valuation and timing
+- "General equity equivalent valuation" after consideration of provisions such as priority rights in liquidation (usually 20-40% discount)
+- Adjustment of differences from now on
+- An analysis of the investor ' s motivation for this round (financial investment vs strategic investment, potential premium for strategic investors)
 
-**方法2：可比上市公司法**
-- 选择3-5家上市可比公司，说明选取理由
-- 关键倍数对比：
+**Method 2: Comparable listing of companies**
+- Selecting 3-5 comparable companies to be listed, explaining the reasons for the selection
+- Key multiples:
 
-| 可比公司 | P/S | P/E | EV/EBITDA | EV/Revenue | 增速 | 利润率 |
+<unk> Comparable companies <unk> P/S <unk> P/E <unk> EV/EBIDA <unk> EV/Revenue <unk> Growth <unk> Profitability <unk>
 |---------|-----|-----|-----------|------------|------|--------|
 
-- 应用的调整：
-  - 流动性折价：20-30%（标注具体取值和理由）
-  - 增速溢价/折价
-  - 规模折价
-  - 监管/政策风险折价
+- Application adjustments:
+- Liquidity discount: 20-30% (stated with specific values and reasons)
+- Speed premium/discount
+- Large discount.
+- Regulatory/policy risk discount
 
-**方法3：DCF 情景分析**
-三种情景，每种都要列出关键假设：
+**Method 3: DCF Situation Analysis**
+Each of the three scenarios will include key assumptions:
 
-| 假设 | 悲观 | 中性 | 乐观 |
+Let's assume that the pessimism, the pessimism, the neutrality, the optimism, the optimism, the...
 |------|------|------|------|
-| 未来5年收入CAGR | | | |
-| 终态经营利润率 | | | |
-| 终态增长率 | | | |
+The next five years' income will be CAGR.
+<unk> Final operating profit margin <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+♪ The final growth rate ♪
 | WACC | | | |
-| 终值倍数(EV/EBITDA) | | | |
+<unk> End-of-life multiple (EV/EBITDA) <unk>
 
-每个假设要有论据支撑，不能凭空假设。
+Each hypothesis is supported by arguments and cannot be assumed in vain.
 
-**方法4：终局市值倒推法**
-- 假设5年/10年后这门生意在终态时的市场地位
-- 终态收入和利润率假设
-- 终态合理倍数（参考同行业成熟公司）
-- 倒推当前合理估值区间
-- 隐含的年化回报率
+** Method 4: Inverted market value**
+- Assuming that the business is in the market position at the end of the day five years or ten years later.
+- End-of-life income and profit margin assumptions
+- A reasonable multiplier of the end state (reference to mature companies in the same industry)
+- Invert the current reasonable valuation range
+- Implicit annual rate of return.
 
-**方法5：交易对标法**
-- 同行业近2年的并购/融资交易
-- 交易倍数（P/S、P/E）
-- 交易背景和溢价/折价因素
+** Method 5: Transaction matching**
+- Mergers and acquisitions/financing transactions with the industry for almost two years
+- Multiplier transaction (P/S, P/E)
+- transaction background and premium/discount factors
 
-### 6. 估值综合判断
+6. Valuation combined judgement
 
-| 方法 | 估值区间 | 置信度 | 权重 | 加权估值 |
+<unk> Methodology <unk> Valuation interval <unk> Confidence <unk> weight <unk> Weighted valuation <unk>
 |------|---------|--------|------|---------|
 
-- 不同方法得出的估值是否收敛？如果差异大，分析原因
-- 最终给出的估值区间要区分"合理估值"和"保守估值"（安全边际估值）
+- Are valuations based on different methods being reduced? If differences are significant, the reasons for the analysis are analysed
+- The final valuation area is to distinguish between "reasonable" and "conservative" valuations.
 ```
 
 ---
 
-#### 任务3：行业格局与竞争态势分析
-- subject: `分析{公司名}所在行业的竞争格局与替代威胁`
-- activeForm: `分析{公司名}行业格局与竞争态势`
-- description 包含：
+Task 3: Industry Pattern and Competition Profile
+- subject: `Analyze the patterns of competition and the alternative threats in the industries where {the name of the company} is located '
+- ActiveForm: `Analysis of {corporate name} industry patterns and competition dynamics '
+- Discreet contains:
 
 ```
-## 行业格局与竞争态势
+# Industry patterns and competition
 
-### 1. 行业定位与市场规模
-- 公司所在的核心赛道定义（注意：公司自己定义的赛道可能是美化过的，要独立判断）
-- TAM/SAM/SOM 三层市场规模：
-  - TAM（总可寻址市场）：整个大行业
-  - SAM（可服务市场）：公司技术/模式能覆盖的
-  - SOM（可获得市场）：当前实际能获取的
-- 市场规模数据来源对比（不同研究机构的预测可能差异很大）
-- 市场渗透率：当前 vs 天花板
-- 行业所处阶段：萌芽期/成长期/成熟期/衰退期（附论据）
-- 行业增长驱动因素：哪些力量在推动/阻碍行业增长
+#1 Industry positioning and market size
+- The core track definition of the company.
+- TAM/SM/SOM 3-tier market size:
+- TAM (total location market): The whole industry
+- SAM (serviceable market): technology/models of companies covered
+- SOM (access to market): available at present
+- Comparison of market-scale data sources (predictations by different research institutions may vary significantly)
+- Market penetration: current vs ceiling
+- Phases in the industry: budding/long-term/mature/recessional (with arguments)
+- Industry drivers of growth: what forces drive/imped on industry growth
 
-### 2. 产业链全景地图
-绘制完整产业链结构（文本图）：
+#2. Profile of the industrial chain
+Draws a complete structure of the industrial chain (text chart):
 
 ```
-上游供应方（谁？议价能力？）
+Upstream suppliers (who? bargaining power?
     ↓
-公司所处环节（价值链中哪个位置？利润池占比？）
+The company ' s links (where in the value chain? The profit pool?
     ↓
-下游客户/用户（集中度？替代选择？）
+Downstream client/user (concentration? Alternative options?
     ↕
-竞争对手 / 替代品 / 潜在进入者
+Competing / Alternative / Potential Entry
 ```
 
-- 利润池分析：产业链各环节的利润分配
-- 公司在产业链中的议价能力（上游/下游）
-- 上下游依赖度分析：是否存在单一供应商/客户依赖
-- 产业链正在发生的结构性变化
+- Profit pool analysis: profit distribution across the chain
+- Company bargaining power in the industrial chain (upstream/downstream)
+- Upstream/downstream dependence analysis: whether there is a single supplier/client dependency
+- The structural changes that are taking place in the industrial chain
 
-### 3. 波特五力分析（量化打分）
+#3. Port 5 Power Analysis (Quantitative Score)
 
-| 力量 | 强度(★1-5) | 关键因素 | 对公司影响 |
+The key factors are the impact on the company.
 |------|-----------|---------|-----------|
-| 行业内竞争 | | 集中度、差异化程度、退出壁垒 | |
-| 新进入者威胁 | | 资本壁垒、技术壁垒、监管壁垒、品牌壁垒 | |
-| 替代品威胁 | | 替代品性价比、转换成本 | |
-| 供应商议价能力 | | 供应商集中度、转换成本 | |
-| 买方议价能力 | | 客户集中度、信息透明度 | |
+Competition within the industry concentration, differentiation, exit barriers
+New entrants threaten capital barriers, technical barriers, regulatory barriers, brand barriers, and brand barriers.
+<unk> Alternative threat <unk> Alternative value, conversion cost <unk>
+• Supplier bargaining power * Supplier concentration, conversion costs *
+<unk> Buyer's bargaining power <unk> Customer concentration, information transparency <unk>
 
-综合行业吸引力评分：★1-5
+Integrated Industry Attraction Rating: <unk> 1-5
 
-### 4. 竞争格局深度扫描
+##4. Deep scan of competition patterns
 
-| 竞争对手 | 类型 | 市场份额(推算) | 收入规模 | 融资/市值 | 核心优势 | 主要劣势 | 威胁等级 |
+<unk> Competing type <unk> Market share (produce) <unk> Income size <unk> Finance/market value <unk> Core advantage <unk> Main disadvantage <unk> Threat level <unk>
 |---------|------|---------------|---------|----------|---------|---------|---------|
-| 直接竞争者1 | 直接 | | | | | | |
-| 直接竞争者2 | 直接 | | | | | | |
-| 间接竞争者1 | 跨界 | | | | | | |
-| 潜在进入者1 | 巨头 | | | | | | |
+♪ The direct competitor 1 ♪
+♪ The two direct competitors ♪
+<unk> Indirect competitor 1 <unk> Cross-border
+The potential entryist 1 <unk> , the giant <unk> , the giant <unk> , the giant <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the king <unk> , the head <unk> , the head <unk> , the head <unk> , the head <unk> the head <unk> the head <unk> the head <unk> the head <unk> the head <unk> the head <unk> the head <unk> the head <unk> the head <unk> the head <unk> the head <unk> the head <unk> the head of the head <unk> the head <unk> the head <unk> the head the head of the head <unk> the head the head <unk> the head the head the head the head the head the head of the the head of the the <unk> the head the the head the head the the the the the head of the the the the the the the the
 
-重点分析：
-- **直接竞争者**：同赛道直接对手，逐个分析其战略意图和资源投入
-- **间接竞争者**：跨界潜在竞争，特别是大厂的相关业务
-- **替代品威胁**：不同技术路线/模式，特别是AI可能带来的颠覆
-- **潜在进入者**：巨头可能入局的概率和方式（自建/收购/投资）
+Focus analysis:
+- **Direct Compete**: Direct opponent with track, analysing strategic intent and resource inputs on a case-by-case basis
+- **Indirect competitors**: Potential cross-border competition, especially related operations in large plants
+- ** Alternative threat**: Different technology routes/modules, particularly the potential subversion of AI
+- ** Potential entrants**: Probability and manner of possible entry of giants (self-build/acquisition/investment)
 
-### 5. 竞争对手深度对比
-选择2-3个最直接的竞争对手（含上市和未上市），进行多维对比：
+##5. Competition depth
+Select the two to three most direct competitors (both listed and unlisted) for a multidimensional comparison:
 
-| 维度 | {公司名} | 竞争者A | 竞争者B | 竞争者C |
+♪ The world's greatest challenge ♪
 |------|---------|---------|---------|---------|
-| 成立时间 | | | | |
-| 用户规模(MAU) | | | | |
-| 收入规模 | | | | |
-| 收入增速 | | | | |
-| 融资总额/市值 | | | | |
-| 估值/收入倍数 | | | | |
-| 变现效率(ARPU) | | | | |
-| 毛利率 | | | | |
-| 盈利状态 | | | | |
-| 员工数量 | | | | |
-| 技术能力 | | | | |
-| 差异化定位 | | | | |
-| 国际化程度 | | | | |
+♪ When you're set ♪
+<unk> User size (MAU)
+♪ The size of the income ♪
+♪ The way the income grows ♪
+Total financing/market value
+<unk> Valuation/income multiplier
+<unk> ARPU
+♪ The maoriginity ♪
+♪ The money's on the line ♪
+- No. - No. - No.
+Technical capability
+- I'm not sure.
+♪ Internationalization ♪
 
-### 6. 竞争动态与趋势
-- 近12个月的竞争格局关键变化（融资、并购、产品发布、人事变动）
-- 竞争对手的战略方向推断（从招聘、专利、产品更新推断）
-- 行业正在发生的结构性转变
-- 技术变革对竞争格局的影响（特别是AI/大模型）
-- 监管政策对竞争格局的影响
-- 是否存在"赢家通吃"的行业特征？还是会形成稳定的多寡头格局？
+6. Competition dynamics and trends
+- Key changes in the competitive pattern over the last 12 months (financing, mergers and acquisitions, product issuance, personnel changes)
+- Presumption of the strategic direction of competitors (from recruitment, patents, product renewal)
+- The structural transformations taking place in the industry
+- Impact of technological change on competition patterns (especially AI/Big Models)
+- Regulatory policy effects on competition patterns
+- Is there a "winner-takes" industry? Or is it a stable oligarchic pattern?
 
-### 7. 竞争情景推演
-- 情景A：公司胜出——需要什么条件？概率？
-- 情景B：均势共存——各自的生存空间？
-- 情景C：被颠覆——最可能的颠覆者和路径？
+7. Competition scenarios
+- Scenario A: The company wins — what are the conditions? Probability?
+- Scenario B: Coexistence of balance — respective living spaces?
+- Scenario C: Subversive - most likely subversives and routes?
 
-### 8. 全球对标分析
-寻找海外/国内的对标公司（已上市），分析：
+##8. Global analysis of targets
+Search for overseas/domestic counter-target companies (listed) for analysis:
 
-| 维度 | 对标公司A | 对标公司B | {公司名}对标启示 |
+♪ The world's greatest ever ♪
 |------|---------|---------|----------------|
-| 发展路径 | | | |
-| 当前估值水平 | | | |
-| 从类似阶段到上市的时间 | | | |
-| 上市后股价表现 | | | |
-| 成功/失败的关键因素 | | | |
+♪ The path to development ♪
+<unk> Current valuation level <unk> <unk> <unk> <unk>
+The time between the stage and the market
+The stock market is a good thing.
+The key to success/failure
 
-- 对标的局限性说明（中国市场特殊性、监管差异、用户习惯差异）
+- Description of the limitations of the subject matter (speciality of the Chinese market, differences in regulations, differences in user habits)
 ```
 
 ---
 
-#### 任务4：风险全景与治理评估
-- subject: `评估{公司名}全维度风险与管理层/治理结构`
-- activeForm: `评估{公司名}风险与治理结构`
-- description 包含：
+Task 4: Risk Panorama and Governance Assessment
+- subject: `Assessment of the full dimensions of risk and management/governance structure `
+- ActiveForm: `Assessment of {corporate name} risks and governance structures '
+- Discreet contains:
 
 ```
-## 风险全景与治理评估
+# Risk landscape and governance assessment
 
-### 1. 创始人/CEO 深度评估
+##1. Founder/ CEO In-depth evaluation
 
-> "买股票就是买人。" —— 段永平
+> "Assured is a buyer." > - Snack Yongping
 
-- **背景与履历**：教育、职业经历、创业经历
-  - 有无连续创业经历？上一次创业的结果？
-  - 行业相关经验年限
-  - 之前管理的最大团队/业务规模
-- **战略眼光**：搜索CEO过去3年的公开发言（演讲、访谈、内部信、社交媒体）
-  | 时间 | CEO的判断/预测 | 实际结果 | 准确度 |
+- ** Background and curriculum vitae**: Education, career, entrepreneurship
+- Have you had a continuous business experience? The results of the last business?
+- Industry-related experience
+- Maximum team/business size previously managed
+- **Strategic Vision**: Search for the CEO ' s public statements (speaks, interviews, internal correspondence, social media) over the past three years
+Time, CEO's judgement/prediction, actual results, accuracy, accuracy.
   |------|--------------|---------|--------|
-  - 有无做过超前于市场的正确判断？
-  - 有无在大家都看好时保持冷静？
-- **执行力**：关键里程碑是否按时达成
-  | 承诺 | 承诺时间 | 承诺场合 | 兑现情况 | 评价 |
+- Have you ever made the right judgment before the market?
+- Do you stay calm when everyone's watching?
+- **Enforcement**: whether key milestones are met on time
+♪ Promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, promise, evaluation, evaluation, evaluation, promise, promise, promise, promise, promise, promise, promise, promise, time, time, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, commitment, status, status, evaluation, evaluation, evaluation, evaluation, and any other
   |------|---------|---------|---------|------|
-- **格局与价值观**：
-  - 对用户/员工/社会的态度（从具体事件判断，不看口号）
-  - 面对困难时的选择（裁员方式、危机处理、利益冲突时的取舍）
-  - 对短期利润 vs 长期价值的取舍
-- **争议事件**：是否有负面记录（搜索"CEO名字 + 争议/丑闻/问题"）
-- **评级**：★1-5（附详细理由）
+- ** Patterns and values**:
+- Attitudes towards users/employees/society (in terms of specific events, not slogans)
+- Choices in the face of difficulties (retrenchment, crisis management, conflict of interest)
+- Short-term profit vs. Long-term value trade-offs
+- ** Controversial event**: Whether there is negative record (search "CEO name + controversy/ scandal/question")
+- ** Rating**: * 1-5 (with detailed justification)
 
-### 2. 核心团队评估
-- 核心高管团队名单与背景（CTO/CFO/COO/VP等）
-  | 姓名 | 职位 | 背景 | 任期 | 此前经历 |
+##2. Core team assessment
+- List and background of core executive teams (CTOC/CFO/COO/VP, etc.)
+Name, position, background, term of office, previous experience,
   |------|------|------|------|---------|
-- 关键人才流动分析：
-  - 近2年重要高管离职情况（谁走了？去了哪？为什么？）
-  - 近2年重要高管加入情况（从哪挖来的？说明什么？）
-  - 人才净流入还是净流出？
-- 团队互补性：创始团队的能力是否互补？有无明显短板？
-- 团队文化信号：
-  - Glassdoor/脉脉评分与趋势（近12个月变化方向比绝对值重要）
-  - 员工推荐意愿（Would recommend to a friend）
-  - CEO支持率
-  - 加班文化、组织氛围的舆论
-- 关键人物依赖度：如果CEO/CTO离开，公司会怎样？
+- Analysis of key human mobility:
+- For the last two years, the important executives' separation.
+- The top executives' participation for the last two years.
+- Net brain inflows or net outflows?
+- Team complementarity: does the capacity of the founding team complement each other? Is there a clear gap?
+- Team culture signal:
+- Glassdoor/Pulse scoring and trends (change direction over absolute values over the last 12 months)
+- Would recommend to a friend
+- CEO support rate
+- Public opinion on the culture of overtime, organizational atmosphere
+- Critical person dependency: What happens to the company if the CEO/CTO leaves?
 
-### 3. 股权结构与治理
+3. Equity structure and governance
 
-**股权架构**：
-| 股东 | 持股比例 | 投票权比例 | 类型 | 备注 |
+** Equity structure**:
+Shareholders Shareholders Shareholding Proportion of voting rights Type of vote
 |------|---------|-----------|------|------|
 
-- 创始人控制权结构：AB股/一致行动人/VIE架构
-- 创始人持股比例变化趋势（每轮融资稀释情况）
-- 员工持股计划：覆盖面、行权条件、与上市对赌
+- Founder control structure: AB Unit/Coherent Actors/VIE Structure
+- Trends in the proportion of ownership held by the founders (reduced per round of financing)
+- Staff holding schemes: coverage, conditions of tenure, and bet against listing
 
-**治理结构**：
-- 董事会构成（独立董事占比、投资方席位）
-- 重大决策机制
-- 潜在的利益冲突：
-  - 关联交易（创始人其他公司与本公司的交易）
-  - 同业竞争
-  - 大股东利益与小股东利益的冲突点
+** Governance structure**:
+- Composition of the board of directors (independent directors, investor seats)
+- Major decision-making mechanisms
+- Potential conflict of interest:
+- Associated transactions (other company-to-own transactions by the founder)
+- Competition with a trade.
+- Conflicting points between the interests of large shareholders and those of small shareholders
 
-### 4. 投资人阵容深度分析
+##4. Investor-like depth analysis
 
-| 投资方 | 轮次 | 金额 | 估算持股 | 类型 | 战略价值 | 退出压力 |
+<unk> Investor <unk> Round <unk> Amount <unk> estimated shareholding <unk> Type <unk> Strategic value <unk> Exit pressure <unk>
 |--------|------|------|---------|------|---------|---------|
 
-分析：
-- 领投机构的品牌背书意义（顶级VC vs 不知名基金）
-- 产业资本的战略协同价值（是否带来资源/渠道）
-- 投资人退出压力评估：
-  - 基金存续期还剩多久？
-  - 是否已在二级市场抛售老股？
-  - 对赌条款是否临近到期？
-- 投资人阵容的红旗信号：
-  - 是否有声誉不佳的投资人？
-  - 早期投资人是否已清仓？
-  - 最近一轮的跟投情况（老股东不跟=不看好？）
+Analysis:
+- Brand endorsement by the investment authority (top VC vs unknown fund)
+- Strategic synergy value of industrial capital (whether or not to bring resources/channels)
+- Investors withdraw from pressure assessment:
+- How long is the Fund's life?
+- Has the old stock been sold in the secondary market?
+- Is the bet clause nearing expiration?
+- Red flag signal for the investor's face:
+- Are there any under-reputed investors?
+- Have the early investors cleared?
+- The latest round of follow-up.
 
-### 5. 全维度风险清单
+##5. Full-dimensional risk list
 
-| 风险类型 | 具体风险 | 概率(高/中/低) | 影响(高/中/低) | 严重度 | 是否可对冲 | 监控指标 |
+<unk> Risk type <unk> Specific risk <unk> Probability (high/medium/low) <unk> Impact (high/medium/low) <unk> Seriousness <unk> Whether or not to flush <unk> Monitoring indicator <unk>
 |---------|---------|---------------|---------------|--------|-----------|---------|
-| 监管风险 | 反垄断、数据安全、行业整顿、牌照风险 | | | | | |
-| 竞争风险 | 巨头入场、新模式颠覆、价格战 | | | | | |
-| 技术风险 | 平台迁移、AI颠覆、技术路线失败 | | | | | |
-| 人才风险 | 创始人/核心团队流失 | | | | | |
-| 融资风险 | 资金链、估值倒挂、融资困难 | | | | | |
-| IPO风险 | 上市窗口、监管审批、市场环境 | | | | | |
-| 地缘风险 | 中美关系、跨境数据、制裁 | | | | | |
-| 商业化风险 | 变现不及预期、用户反弹 | | | | | |
-| 治理风险 | 关联交易、信息不透明、投资人冲突 | | | | | |
-| 合规风险 | 数据隐私(GDPR/个保法)、内容合规 | | | | | |
-| 宏观风险 | 经济周期、利率环境、资本市场冷热 | | | | | |
-| ESG风险 | 环境/社会/治理相关风险 | | | | | |
+Regulatory risk Antimonopoly, data security, industrial consolidation, license plate risk,
+The big ones are coming in, the new model is being subverted, the price war is going to be a big one.
+The technology risks, the platform migration, the AI subversion, the technology route failure, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the technology, the nature, the nature, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the environment, the way of the way of the way, the way, the way, the way, the way, the way
+♪ The world's greatest ♪
+<unk> Financing risks <unk> Fund chain, valuation reversal, financing difficulties <unk>
+IPO risk listing window, regulatory approval, market environment
+Geo-risks Central American relations, cross-border data, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, sanctions, or any of the persons
+The commercial risk, the realization of the situation, the user's rebound, the hymen, the hysteria, the hysteria, the hysteria, the hysteria, the hysteria, the hysteria, the hysteria, the hysteria, the hysteria, the hysteria, the hyphenia, the hysteria, the hysteria, the hyphens, the hyphenogenia, the hyphenology, the hyphen, the hyphens, the hyphens, the hyphens, the hymen, the hymen, the hymen, the hymen, the hymen, the tremen, the treacherous, the tectonics, the tectonic, the treache, the treache, the tremen, the treache, the t being the ts, the ts, the t being the t being the ts, the ts, the t the .
+Governance risks linked transactions, opacity of information, investor conflicts, and the development of a new system of governance.
+Data privacy (GDPR/PA), content compliance
+<unk> Macro-risk <unk> Economic cycle, interest rate environment, cold capital markets <unk>
+<unk> ESG risk <unk> Environmental/social/governance-related risks <unk>
 
-### 6. 退出路径分析
+##6. Exit path analysis
 
-| 退出方式 | 可能性(★1-5) | 预计时间窗口 | 预期估值区间 | 关键前提 | 主要障碍 |
+<unk> Method of withdrawal <unk> Possibility <unk> Time window <unk> Expected valuation interval <unk> Key prerequisites <unk> Main obstacles <unk>
 |---------|-------------|------------|------------|---------|---------|
-| A股IPO | | | | | |
-| 港股IPO | | | | | |
-| 美股IPO | | | | | |
-| 被并购 | | 潜在买家是谁？ | | | |
-| 二级市场转让 | | 流动性如何？ | | | |
+♪ A share of IPO ♪
+I'm not sure what you're doing.
+I'm not sure what you're doing.
+Who's the potential buyer?
+How's the liquidity?
 | SPAC | | | | | |
-| 长期不退出 | | | | | |
+♪ Long-term non-exitation ♪
 
-- 最可能的退出路径及理由
-- 退出时间线推演
-- 各退出路径下的预期回报分析
+- The most likely exit path and reasons.
+- Exit time line.
+- Analysis of expected returns under each exit path
 
-### 7. 最坏情景分析（芒格式逆向思考）
+#7. Worst scenario analysis (deverse thinking in Man format)
 
-> "反过来想，总是反过来想。" —— 芒格
+"Close the thought, always the thought."
 
-- 这家公司最可能怎么**失败**？列出3种具体失败路径
-- 每种失败路径的概率评估和触发条件
-- 最坏情景下，投资人能收回多少？（清算价值分析）
-- 聪明人为什么**不投**这家公司？（至少列出5条理由）
-- 历史上类似定位/阶段的公司，有哪些失败了？为什么？
-- 什么信号出现意味着"论文已破"，应该止损？
+- What's the best chance this company can do?
+- Probability assessment and trigger conditions for each failure path
+- How much can investors recover in the worst-case scenario?
+- Why don't you vote for this company?
+- What have failed in historical positioning/stage-like companies? Why?
+- What signal means "thesis is broken," should it stop?
 ```
 
 ---
 
-#### 任务5：技术能力与知识产权分析
-- subject: `分析{公司名}技术栈、专利布局与研发能力`
-- activeForm: `分析{公司名}技术能力与知识产权`
-- description 包含：
+Task 5: Technical capacity and intellectual property analysis
+- subject: `Analysis {corporate name} technology warehouse, patent layout and R & D capacity '
+- ActiveForm: `Analysis {corporate name} Technical capabilities and intellectual property rights '
+- Discreet contains:
 
 ```
-## 技术能力与知识产权深度分析
+# Technical capacity and intellectual property depth analysis
 
-> 对科技公司而言，技术壁垒的真假和持久性直接决定估值的合理性。
+> For technology companies, the authenticity and persistence of technical barriers directly determine the reasonableness of the valuation.
 
-### 1. 技术栈分析
-- 核心技术架构推断（从招聘信息、技术博客、开源项目、会议演讲推断）
-- 技术栈选择是否合理（是否用了正确的工具解决正确的问题）
-- 技术债务信号：
-  - 招聘岗位中是否大量招"重构/迁移"类角色
-  - 是否在做大规模技术栈切换
-  - 用户端是否有频繁的bug/故障投诉
+# 1. Technical warehouse analysis
+- Core technical architecture extrapolation (from recruitment information, technology blogs, open source projects, conference lectures)
+- Whether the technology store selection is reasonable (whether the right tools are used to solve the right problem)
+- Technology debt signals:
+- Do you have a large number of "re-engineering/relocation" roles in recruitment positions?
+- Is there a large-scale technology switch?
+- Is there a frequent bug/ trouble complaints from the user
 
-### 2. 专利布局分析
-搜索专利数据库（Google Patents、CNIPA、USPTO）：
+#2. Patent layout analysis
+Searching for patent databases (Google Patents, CIPA, USA):
 
-| 专利指标 | 数据 | 来源 |
+<unk> Patent indicators <unk> Data <unk> Source <unk>
 |---------|------|------|
-| 专利总数（已授权） | | |
-| 专利申请中 | | |
-| 近2年新增专利数 | | |
-| 核心技术领域分布 | | |
-| 关键专利的引用次数 | | |
-| 专利的国际布局 | | |
+Total number of patents (authorized)
+♪ In patent application ♪
+Number of new patents added in the last two years
+Distribution of core technical areas
+<unk> Number of references to key patents <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The international layout of patents
 
-- 专利质量评估（不只看数量）：
-  - 是否有核心/基础专利？
-  - 专利覆盖的技术领域是否与主营业务一致？
-  - 是否存在专利诉讼（被诉或主动起诉）？
-- 专利趋势：申请速度在加快还是放缓？技术方向有无转移？
-- 与竞争对手的专利对比
+- Patent quality assessment (not just quantity):
+- Is there a core/basic patent?
+- Are the technical areas covered by patents consistent with the main business?
+- Is there a patent action (initiated or active)?
+- Patent trends: is the rate of application accelerating or slowing? Has the technology shifted?
+- Compared to competitors' patents
 
-### 3. 研发能力评估
-- **研发投入**：
-  - 研发人员数量/占比（从招聘平台、LinkedIn推算）
-  - 研发费用推算（人数 × 平均薪酬 + 基础设施）
-  - 研发费用率（与同业对比）
-  - 研发投入趋势：在加大还是缩减？
-- **研发产出**：
-  - 学术论文发表（搜索Google Scholar、arXiv）
-  - 技术会议演讲（搜索KDD、NeurIPS、SIGIR等顶会）
-  - 开源贡献（搜索GitHub组织账号）
-  - 技术博客/公众号输出
-- **研发效率**：
-  - 从技术研发到产品落地的速度
-  - 技术成果的商业转化率
+#3. Assessment of R & D capacity
+- **Research and development inputs**:
+- Number/percentage of R & D staff (from recruitment platform, LinkedIn)
+- Presumption of R & D costs (number of persons x average remuneration + infrastructure)
+- R & D cost rates (compared to industry)
+- Trends in R & D inputs: increasing or shrinking?
+- **R **:
+- Academic papers (search Google Scholar, arXiv)
+- Technical conference lectures (searching kDD, NeuriniPS, SIGIR, etc.)
+- Open source contribution (search GitHub's account)
+- Technical Blog/Public Output
+- **R & D efficiency**:
+- The speed of technology development to the end of the product.
+- Rate of commercial transformation of technological achievements
 
-### 4. 技术人才评估
-- **核心技术领导者**：CTO/VP Eng/首席科学家的背景和能力
-  | 姓名 | 职位 | 学历 | 前公司 | 技术影响力 |
+##4. Assessment of skilled personnel
+- ** Core technical leaders**: background and competencies of CTOC/VP Eng/Chief Scientist
+Name, position, education, former company, technology influence, and technology impact.
   |------|------|------|--------|-----------|
-- **技术人才密度**：
-  - 来自哪些公司/实验室？（Google/Meta/MSRA/BAT等顶尖机构占比）
-  - 技术岗位的薪酬竞争力（从招聘信息推算）
-  - 技术团队的流失率信号（LinkedIn上离职动态）
-- **招聘信号**：
-  - 当前在招什么技术岗位？（反映技术战略方向）
-  - 技术岗位的招聘难度和填充速度
-  - 是否在建新的技术团队/实验室？
+- **Technology human density**:
+- From which companies/laboratories? (coordinate of top institutions such as Google/Meta/MSARA/BAT)
+- Pay competitiveness of technical posts (from recruitment information)
+- Loss rate signal for the technical team (LinkedIn departure dynamics)
+- ** Recruitment signal**:
+- What technical posts are currently being recruited? (reflecting the strategic direction of technology)
+- Difficulties in recruiting and filling technical posts
+- Are new technical teams/laboratorys being built?
 
-### 5. 技术护城河评估
+##5. Technical moat river assessment
 
-| 技术壁垒维度 | 评分(★1-5) | 证据 | 持久性 |
+<unk> Technical barrier dimensions <unk> Rating (1-5) <unk> Evidence <unk> Persistence <unk>
 |-------------|-----------|------|--------|
-| 算法/模型壁垒 | | 是否有独创算法？是否可被复制？ | |
-| 数据壁垒 | | 数据量级、独有数据、数据飞轮速度 | |
-| 工程壁垒 | | 系统复杂度、长时间积累的工程能力 | |
-| 人才壁垒 | | 核心技术人才是否难以替代 | |
-| 生态壁垒 | | 开发者生态、API/SDK覆盖、技术标准 | |
+<unk> Algorithm/mode barriers <unk> Is there an ingenuity? Is it replicable? <unk>
+Data barriers <unk> Data level, unique data, data speed <unk>
+Engineering barriers, systems complexity, long-term accumulation of engineering capabilities, and the need for a more efficient and efficient system,
+♪ Can't you replace the core technical talent ♪
+<unk> Ecological barriers <unk> Developer ecology, API/SDK coverage, technical standards <unk>
 
-- 综合技术护城河评级：强/中/弱
-- 技术护城河的衰减速度评估（AI时代技术壁垒的半衰期可能很短）
+- Integrated technology moat rating: strong/medium/weak
+- Assessment of the decline rate of the Technical Protector River (half-lives of the technical barriers of the AI era may be short)
 
-### 6. AI/新技术影响评估
-- 公司的AI能力和布局
-- AI对公司核心业务的影响（增强 vs 威胁 vs 中性）
-- 公司是AI变革的受益者还是被颠覆者？
-- 其他新兴技术（Web3/AR/VR/量子计算等）的影响评估
+#6. AI/New Technology Impact Assessment
+- The A.I.'s ability and layout.
+- AI impact on core corporate business (enhanced vs threat vs neutral)
+- Is the company the beneficiary of AI's change or the subversive?
+- Impact assessment of other emerging technologies (Web3/AR/VR/Quantum Calculation, etc.)
 
-### 7. 技术风险清单
-| 风险 | 具体描述 | 概率 | 影响 |
+##7. Technical risk list
+Risk, risk, specific description, probability, impact, impact.
 |------|---------|------|------|
-| 技术路线失败 | 押注的技术方向被证伪 | | |
-| 开源替代 | 核心技术被开源方案替代 | | |
-| 平台依赖 | 对特定云/芯片/操作系统的依赖 | | |
-| 安全漏洞 | 数据泄露/系统被攻击 | | |
-| 人才流失 | 核心技术人员出走 | | |
+The technical course of the bet is compromised.
+<unk> Open source replacement <unk> Core technology replaced by open source option <unk>
+The platform is dependent on the cloud/chip/operational system.
+Security breach, data leak/system attack,
+The brain drain, the core tech is out.
 ```
 
 ---
 
-#### 任务6：替代数据信号挖掘
-- subject: `挖掘{公司名}的非常规数据信号与隐藏线索`
-- activeForm: `挖掘{公司名}替代数据信号`
-- description 包含：
+Task 6: Alternative data signal mining
+- subject: `Excavation of unconventional data signals {corporate name} and hidden clues '
+- ActiveForm: `Excavation {corporate name} Alternative Data Signals '
+- Discreet contains:
 
 ```
-## 替代数据信号挖掘
+# Alternative data signal excavation
 
-> 未上市公司的常规信息有限，替代数据往往能提供比新闻报道更真实的经营信号。
-> 本任务的目标是：在常规信息源之外，挖掘一切可能有用的蛛丝马迹。
+> The conventional information of unlisted companies is limited, and alternative data often provide a more real business signal than news stories.
+The objective of this mission is to excavate any trace of potential utility beyond the conventional sources of information.
 
-### 1. 招聘信号分析
-搜索 LinkedIn、Boss直聘、脉脉、Indeed、Glassdoor 上的招聘信息：
+#1 Recruitment signal analysis
+Search for recruitment information on LinkedIn, Boss directly, pulse, Indeed, Glassdoor:
 
-**招聘规模与趋势**：
-- 当前在招岗位总数
-- 近6个月招聘趋势（加速/平稳/缩减）
-- 与竞争对手的招聘规模对比
+**Scalation and trends in recruitment**:
+- Total number of posts currently in recruitment
+- Recruitment trends for almost six months (accelerated/stable/reduced)
+- Comparison of the recruitment scale of competitors
 
-**招聘结构分析**：
-| 岗位类别 | 数量 | 占比 | 信号解读 |
+**Analysis of recruitment structure**:
+Job type, number, percentage, percentage, signal reading, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number of cases, number, number of cases, number, number of cases, number, number of cases, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number, number,
 |---------|------|------|---------|
-| 研发/工程 | | | 技术方向 |
-| 产品 | | | 产品战略 |
-| 销售/BD | | | 商业化阶段 |
-| 市场/运营 | | | 增长策略 |
-| 数据/AI | | | AI布局 |
-| 国际化 | | | 出海计划 |
-| 合规/法务 | | | 监管应对/IPO准备 |
-| 财务/IR | | | IPO准备信号 |
+<unk> R & D/ engineering <unk>
+<unk> Product <unk> Product strategy <unk>
+<unk> Sales/BD<unk> Commercialization phase <unk>
+Market/operational <unk> Growth strategy <unk>
+Data/AI<unk>
+♪ I'm going to sea ♪
+<unk> Compliance/legal issues <unk> Regulatory response/IPO preparation <unk>
+<unk> Financial/IR <unk> IPO prep signal <unk>
 
-**关键信号捕捉**：
-- 是否在招IR（投资者关系）= IPO信号
-- 是否在招合规/数据安全 = 监管压力或IPO准备
-- 是否在招海外岗位 = 国际化布局
-- 高级岗位的薪酬范围 = 公司财力和人才竞争力
-- 岗位JD中提到的技术栈/业务方向 = 战略方向
+** Key signal capture**:
+- Whether IR is being recruited = IPO signal
+- Whether to comply/data security = regulatory pressure or IPO readiness
+- Is it hiring overseas jobs = internationalization?
+- The remuneration scale for senior positions = the financial and human competitiveness of companies
+- Technology store/operational direction mentioned in position JD = strategic direction
 
-### 2. App/产品数据分析
-搜索 App Store、Google Play、七麦数据、SimilarWeb：
+##2. App/product data analysis
+Search App Store, Google Play, Seven Wheat Data, SimyarWeb:
 
-| 指标 | 数据 | 来源 | 趋势 |
+<unk> Indicators <unk> Data <unk> Source <unk> Trends <unk>
 |------|------|------|------|
-| App Store排名 | | | 近6个月趋势 |
-| 用户评分 | | | 变化方向 |
-| 评分数量 | | | 增速 |
-| 下载量估算 | | | |
-| App更新频率 | | | |
-| 最近更新的主要功能 | | | |
+<unk> App Store ranking <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+♪ User rating ♪
+♪ The number of points ♪
+<unk> Download estimates
+<unk> App Update Frequency <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Main features recently updated
 
-- App Store评论中的高频关键词和情感分析
-- 近期差评的主要集中点（bug？收费？体验下降？）
-- Web流量数据（SimilarWeb）：UV、PV、访问时长、跳出率
+- HF keywords and emotional analysis in App Store's review
+- The main focus of the recent poor evaluation (bug? charge? Experience drops?
+- Web traffic data (SimilarWeb): UV, PV, length of access, jump rate
 
-### 3. 社交媒体与舆情信号
-搜索微博、知乎、小红书、Twitter/X、Reddit：
+#3. Social media and love signals
+We're searching for Twitter, Xibo, Siu Red, Twitter/X, Reddit:
 
-- 公司官方账号的互动数据（粉丝/转发/评论趋势）
-- 用户自发讨论的热度和情感（正/负/中性）
-- 行业KOL/大V对公司的评价
-- 近3个月的舆情热点事件
-- 负面舆情清单及公司应对方式
-- 是否有内部人（前员工/现员工）的爆料
+- Interactive data on the official company account (Focus/transmit/commental trends)
+- Thermality and emotion (positive/negative/neutral) of the user ' s spontaneous discussion
+- Industry KOL/Big V evaluation of companies
+- The hotspots of the last three months.
+- Negative lists and corporate responses
+- Any insider (former/current) material available
 
-### 4. 企业工商与法律信号
-搜索天眼查/企查查/启信宝：
+##4. Business and business and legal signals
+Search for SkyEye/Business Check/Book:
 
-**工商信息**：
-- 注册资本及变更历史
-- 实缴资本
-- 股东/股权变更记录
-- 子公司/关联公司清单（新设=新业务？注销=业务收缩？）
-- 经营范围变更（新增范围=新业务方向）
+** Business information**:
+- Registered capital and change of history
+- Cashing capital
+- Record of shareholder/equity changes
+- List of affiliates/associated companies (new = new business? write-off = business contraction?
+- Change in scope of operations (new scope = new business direction)
 
-**法律信息**：
-| 类型 | 数量 | 重要案件摘要 |
+** Legal information**:
+<unk> Type <unk> Number <unk> Summary of significant cases <unk>
 |------|------|-------------|
-| 作为原告的诉讼 | | |
-| 作为被告的诉讼 | | |
-| 知识产权纠纷 | | |
-| 劳动仲裁 | | |
-| 行政处罚 | | |
-| 被执行人记录 | | |
+The action as plaintiff.
+The defendant's suit.
+(b) Intellectual property disputes
+Labour arbitration
+Administrative penalties
+♪ The record of the executor ♪
 
-- 重大诉讼/仲裁的详情和潜在财务影响
-- 行政处罚记录（环保/税务/劳动/数据安全等）
+- Details of major litigation/arbitration and potential financial implications
+- Record of administrative penalties (environmental protection/taxation/labour/data security, etc.)
 
-### 5. 供应链与合作伙伴信号
-- 已知的核心供应商/合作伙伴清单
-- 供应商是否上市？其财报中是否提到与该公司的合作数据？
-- 招标/采购信息（政府采购网、企业招标平台）
-- 合作伙伴的评价和合作深度
+##5. Supply chain and partner signals
+- List of known core suppliers/partners
+- Are suppliers listed? Does their financial statements mention cooperation data with the company?
+- Tendering/procurement information (GPN, enterprise solicitation platform)
+- Evaluation and depth of cooperation by partners
 
-### 6. 域名与数字足迹
-搜索 domain/subdomain 信息：
-- 公司注册的域名清单（新注册的域名可能暗示新业务/新产品）
-- 子域名分析（api.xx.com、pay.xx.com等暗示业务架构）
-- SSL证书信息
-- 商标注册情况（新注册商标=新品牌/新产品线）
+##6. Domain name and digital footprint
+Search for domain/subdomain information:
+- List of domain names registered by companies (new registered domain names may imply new business/new products)
+- Subdomain name analysis (api.xx.com, pay.xx.com, etc.)
+- SSL Certificate Information
+- Trademark registration (new trademarks = new brands/new product lines)
 
-### 7. 行业会议与曝光信号
-- 公司高管近12个月的会议演讲/参会记录
-- 行业奖项/媒体榜单（是否进入"独角兽榜"、"最具创新力"等）
-- 政府/行业协会的互动（政策咨询、标准制定参与）
-- 媒体曝光频率和质量的变化趋势
+#7. Industry meetings and exposure signals
+- Proceedings of the meeting of company executives for almost 12 months
+- Industry awards/media lists.
+- Government/industry associations interaction (policy advice, standard-setting participation)
+- Trends in the frequency and quality of media exposure
 
-### 8. 二级市场交易信号（如有）
-- 是否存在老股交易市场（SharesPost、EquityZen、微信群等）
-- 老股交易的隐含估值 vs 最近一轮融资估值
-- 买卖双方的供需状况
-- 是否有大量员工在抛售期权/RSU
+##8. Signals of secondary market transactions (if any)
+- The existence of an old stock exchange market (Shares Post, EquityZen, micro-message, etc.)
+- Implicit valuation of old stock transactions vs.
+- Supply and demand situation of buyers and sellers
+- Whether there are large numbers of employees selling options/RSU
 
-### 9. 信号综合评分
+##9. Signals combined rating
 
-| 信号类别 | 方向(正/负/中性) | 强度(强/中/弱) | 置信度 | 核心发现 |
+<unk> Signal class <unk> Direction (positive/negative/neutral) <unk> Strength (strong/medium/weak) <unk> Confidence <unk> Core discovery <unk>
 |---------|----------------|---------------|--------|---------|
-| 招聘信号 | | | | |
-| 产品数据 | | | | |
-| 舆情信号 | | | | |
-| 法律信号 | | | | |
-| 供应链信号 | | | | |
-| 数字足迹 | | | | |
-| 行业曝光 | | | | |
-| 二级交易 | | | | |
+♪ We're gonna get you a job ♪
+<unk> Product data <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+♪ The signal of love ♪
+The law. The law. The law.
+♪ The supply chain signal ♪
+♪ The digital footprint ♪
+Industry exposure.
+Second level of transaction.
 
-**信号合力判断**：各信号是否指向同一方向？有无矛盾信号？
+** Signal synergy **: Are the signals in the same direction? Are there conflicting signals?
 
-### 10. 反常信号清单（最重要）
-列出所有"不寻常"的发现——这些往往是最有价值的信息：
-- 与公司对外叙事不一致的信号
-- 与行业常识不符的数据
-- 突然出现的变化（招聘急缩/急扩、高管密集离职等）
-- 无法解释的现象
+#10. List of abnormal signals (most important)
+List all "unusual" discoveries -- these are often the most valuable information:
+- Signals that are inconsistent with the company's external narratives
+- Data that are not consistent with common sense of the industry
+- Sudden changes (shrunk/surge, intensive SM departures, etc.)
+- Unexplainable phenomena.
 ```
 
 ---
 
-### 第四步：启动6个并行Agent
+# Step four: start six parallel Agents
 
-使用 Agent 工具同时启动6个Agent（**必须在同一条消息中并行调用**）：
+Start six Agents simultaneously using the Agent tool (** must be called in parallel in the same message):
 
-每个Agent的配置：
+Configuration of each Agent:
 - `subagent_type`: `general-purpose`
 - `run_in_background`: `true`
 
-每个Agent的prompt模板：
+Prompt templates for each Agent:
 
 ```
-你是{公司名}未上市公司研究团队中的"{角色中文名}"。
+You're the "Round Chinese" of the unlisted research team.
 
-你正在研究一家**未上市公司**，这意味着：
-- 没有标准化的公开财报，需要从多个来源拼凑信息
-- 数据可能不完整或相互矛盾，需要标注置信度
-- 需要更多的推理和合理推算，但要透明展示推算过程
-- 搜不到信息 ≠ 信息不存在，搜到的信息可能有偏差
+You're studying a company that's not listed**, which means:
+- There is no standardized public financial reporting, and information needs to be compiled from multiple sources
+- Data may be incomplete or contradictory and require a confidence mark
+- More reasoning and reasonable reasoning, but transparent presentation of the process.
+- No information.
 
-请完成以下研究任务：{任务subject}
+Please complete the following study tasks: {tasksubject}
 
-具体要求：
-{任务description的内容}
+Specific requirements:
+{The job description content}
 
-**研究方法**：
-1. 使用 WebSearch 搜索最新公开信息，每个维度至少搜索3-5次，用不同关键词组合
-2. 搜索关键词策略：
-   - 中文：公司名+收入/估值/融资/用户数/MAU/IPO/招股书/裁员/整改
-   - 英文：Company Name + revenue/valuation/funding/users/IPO/filing
-   - 具体人名+公司名（搜索管理层相关信息）
-   - 公司名+具体竞争对手名（搜索竞争动态）
-3. 重点信息源：
-   - 高可信度：招股书、监管文件、上市公司年报中的关联披露
-   - 中可信度：晚点LatePost、The Information、36氪、Bloomberg、Reuters、TechCrunch
-   - 辅助验证：知乎、脉脉、Glassdoor、天眼查、企查查
-4. 使用 WebFetch 获取关键文章的全文（不要只看搜索摘要）
-5. 对重要数据，至少用2个不同来源交叉验证
+** Methods of study**:
+1. Search for state-of-the-art public information using WebSearch, at least 3-5 searches per dimension, combining different keywords
+2. Search keyword strategy:
+- Chinese: name of company + income/value/finance/user/MU/IPO/stock withdrawal/retrenchment/reform
+- English: Company Name + value/value/funding/user/IPO/filing
+- Specific name + company name (search for management-related information)
+- Company name + specific competition name (searching for competition dynamics)
+3. Key sources of information:
+- High credibility: callers, regulatory documents, linkage disclosures in the annual company reports
+- Credibility: Late Late Late Post, The Information, 36 kryptons, Bloomberg, Reuters, TechCrunch
+- Auxiliary verification: knowledge, pulse, Glassdoor, SkyEnds, business.
+4. Use WebFech to get full text of key articles (do not look at search summaries only)
+5. Cross-checking of critical data with at least two different sources
 
-**数据标注规范（严格执行）**：
-- 每个关键数据标注来源（具体到媒体名称和文章标题）
-- 标注数据时间（精确到年月）
-- 标注置信度：🟢高（招股书/官方披露）/ 🟡中（可信媒体/研报）/ 🔴低（推算/传闻）
-- 不同来源数据有冲突时，**全部列出**并说明差异和你的判断
-- 区分"事实"和"推理"：事实用正常字体，推理/推算用*斜体*并标注推算方法
-- 无法获取的信息明确标注"数据缺失"，不要编造
+** Data labelling norms (imperced)**:
+- The source of each key data label (specific to media names and article titles)
+- The time of the data (precise to month)
+- Mark confidence: <unk> (stock call/official disclosure)/[credible media/research]/<unk> (probation/allegation)
+- When conflicting data from different sources,** all data are included** and differences are explained and your judgement is judged
+- Distinguishing "fact" from "extreme": facts in normal fonts, reasoning/probation in italics* and labelling method
+- Unavailable information clearly labels "data missing", and don't make it up.
 
-**输出要求**：
-- 报告要详尽，使用Markdown表格呈现关键数据
-- 每个分析维度要有明确结论和评分
-- 推算过程要完全透明（展示计算逻辑和每一步假设）
-- 在报告末尾提供：
-  1. 本维度的总体评分（★1-5）和核心判断
-  2. 本维度信息完整度自评（充分/适中/不足/严重不足）
-  3. 最重要的3个发现
-  4. 最大的信息盲区（什么信息缺失最影响判断）
+**Export request**:
+- Report in detail, presenting key data using Markdown tables
+- Each analytical dimension must have clear conclusions and ratings.
+- The process of calculation should be fully transparent (showing the logic of the calculation and each step of the hypothesis)
+- Provide at the end of the report:
+Overall rating of the present dimension (<unk> 1-5) and core judgement
+Self-assessment of completeness of information in this dimension (adequate/moderate/adequate/seriously inadequate)
+3. The three most important findings
+4. Largest information blind areas (what information missing most affects judgement)
 ```
 
-### 第五步：接收报告并跟踪进度
+# Step five: receiving reports and tracking progress
 
-- 向用户实时展示进度表（哪些Agent已完成、哪些仍在研究中）
-- 每收到一份报告，更新进度并展示该报告的核心要点（3-5条）
-- 等待全部6份报告到齐
+- Real-time presentation of the schedule to users (who have completed the work and who are still under study)
+- Each report received, updating progress and presenting the core elements of the report (3-5 articles)
+- Waiting for all six reports.
 
-### 第六步：交叉验证与信息拼图
+# Step six: cross-checking and information puzzles
 
-**这是增强版框架最关键的新增步骤**。在汇总前，team-lead 需要：
+** This is the most critical additional step of the enhanced version of the framework**. Before aggregation, the team-led needs:
 
-1. **数据冲突仲裁**：
-   - 提取各Agent报告中的关键数据
-   - 识别不同Agent引用的相同数据是否一致
-   - 对冲突数据进行仲裁：列出所有来源，说明采信哪个、为什么
+1. ** Data conflict arbitration**:
+- extract key data from the Agent reports
+- Identify consistency of identical data quoted by different Agent
+- Arbitration of conflict data: listing all sources, indicating which and why they are accepted
 
-2. **信号一致性检验**：
-   - 业务增长信号（business-decoder）vs 招聘信号（signal-miner）是否一致？
-     （如果说业务快速增长，但招聘在缩减，需要解释）
-   - 技术领先叙事（tech-ip）vs 专利/人才数据（signal-miner）是否支撑？
-   - 估值水平（financial-detective）vs 竞争地位（competitive-mapper）是否匹配？
-   - 管理层公开叙事（risk-governance）vs 实际行动信号（signal-miner）是否一致？
+2. ** Signal consistency test**:
+- Does business growth signal (business-decoder)vs recruitment signal (signal-miner) match?
+(If business growth is rapid but recruitment is declining, an explanation is needed)
+- Does the technical lead narrative (tech-ip)vs patent/talent data (signal-miner) support?
+- Does the valuation level (final-detective)vs competitive status match?
+- Is the management ' s public narrative (risk-governance)vs (signal-miner) consistent?
 
-3. **信息拼图还原**：
-   - 将6份报告中的信息碎片拼合，看能否还原出更完整的画面
-   - 标注信息"白区"（确认已知）、"灰区"（有线索但不确定）、"黑区"（完全未知）
+3. **Map restoration**:
+- Combine the information fragments in the six reports to see if they can be restored to a more complete picture
+- Mark the information "White Zone" (verified known), "Gree Zone" (with leads but not certain), "Black Zone" (in total unknown)
 
-4. **反偏见检查**：
-   - 检查报告中是否存在"正面信息详细、负面信息简略"的偏差
-   - 确认每个正面判断都有对应的反面检验
+4. **Anti-bias inspection**:
+- Check if there's a "good information detail, negative information brevity" bias in the report.
+- Confirm that every positive judgment has a counter-check.
 
-### 第七步：汇总最终报告
+# Step seven: summary final report
 
-综合6份分析报告，输出以下结构的最终报告：
+Combine six analytical reports, and produce the following final reports:
 
 ---
 
-#### 1. 一句话结论
-> 用一段话（50-100字）概括这家未上市公司的**真实价值判断**：生意值多少钱，为什么。
+# 1. One word of conclusion
+> Summarize the true value of this unlisted company** in a phrase (50-100 words): How much business is worth and why.
 
-#### 2. 公司画像速览
-| 项目 | 内容 | 置信度 |
+##2. Corporate portraits
+Project content confidence level
 |------|------|--------|
-| 公司名称 | | |
-| 成立时间 | | |
-| 总部 | | |
-| 创始人/CEO | | |
-| 核心业务 | | |
-| 员工规模 | | |
-| 最新估值 | | |
-| 最新融资轮次 | | |
-| 推算收入规模 | | |
-| 推算利润状态 | | |
-| 推算用户规模 | | |
-| 主要投资方 | | |
-| VIE/红筹架构 | | |
+Name of company
+♪ When you're set ♪
+HQ, HQ, HQ, HQ, H-R-R-R-R-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-
+<unk> Founder/ CEO <unk>
+Core business
+♪ The size of the staff ♪
+<unk> Latest valuation <unk>
+♪ The latest financing wheel ♪
+<unk> The income scale is calculated <unk>
+♪ The profit state is calculated ♪
+♪ The size of the user ♪
+<unk> Main investors <unk>
+<unk> VIE/R-Backing Structure
 
-#### 3. 六维评分总表
-| 维度 | 分析师 | 评分(★1-5) | 核心判断 | 置信度 | 信息完整度 |
+##3.6D Rating Summary
+<unk> dimension <unk> analyst <unk> rating <unk> core judgement <unk> confidence <unk> information integrity <unk>
 |------|--------|-----------|---------|--------|-----------|
-| 商业模式 & 用户 | business-decoder | | | | |
-| 财务 & 估值 | financial-detective | | | | |
-| 行业 & 竞争 | competitive-mapper | | | | |
-| 风险 & 治理 | risk-governance-analyst | | | | |
-| 技术 & 知识产权 | tech-ip-analyst | | | | |
-| 替代数据信号 | signal-miner | | | | |
+Business Mode & User
+Financial & Valuation
+& Competition
+Risk & Governance
+<unk> Tech-ip-anonyst<unk>
+<unk> Substitute data signal <unk> signal-miner<unk>
 
-综合评分：★X / 5
+Combined rating: <unk> X/5
 
-#### 4. 关键数据拼图（交叉验证后）
-整合各分析师拼凑的数据，**仅保留经过交叉验证的数据**：
+###4. Key data puzzle (after cross-checking)
+Integration of the data compiled by the analysts** retention of only cross-checked data**:
 
-| 指标 | 数据 | 来源数量 | 来源明细 | 置信度 | 备注 |
+<unk> Indicators <unk> Data <unk> Number of sources <unk> Source details <unk> Confidence <unk> Remarks <unk>
 |------|------|---------|---------|--------|------|
 
-#### 5. 信号一致性矩阵
-| 检验项 | 信号A | 信号B | 一致性 | 解读 |
+###5. Signal consistency matrix
+<unk> Test, <unk> Signal A, <unk> Sign B, <unk> Consistency, <unk> Interpretation, <unk>
 |--------|-------|-------|--------|------|
-| 增长叙事 vs 招聘趋势 | | | ✅/⚠️/❌ | |
-| 技术领先叙事 vs 专利数据 | | | | |
-| 估值水平 vs 竞争地位 | | | | |
-| 管理层叙事 vs 实际行动 | | | | |
+<unk> Growth narrative vs Recruitment trends
+<unk> Technical lead narrative vs Patent data
+<unk> Valuation level vs Competition position <unk>
+Management narrative vs Actual action
 
-#### 6. 各维度分析摘要
-每个维度摘取3-5条最重要的发现（标注来源和置信度）
+##6. Summary of dimensions analysis
+3-5 most important findings per dimension (indicating source and confidence)
 
-#### 7. 真实价值评估
+## 7. Real value assessment
 
-**生意本质判断**：
-- 这是一门什么样的生意？（一句话）
-- 这门生意的"确定性"有多高？
-- 段永平式判断：这是不是一门"对的生意"？
+** Business essence judgement**:
+- What kind of business is this?
+- How much certainty is this business?
+- A "right business"?
 
-**护城河评分卡**：
-| 护城河类型 | 评分(★1-5) | 核心证据 | 趋势 | 持久性 |
+** Cavalry scoring card **:
+<unk> Type of moat <unk> Rating (1-5) <unk> Core evidence <unk> Trends <unk> Persistence <unk>
 |-----------|-----------|---------|------|--------|
-| 网络效应 | | | 加宽/稳定/收窄 | |
-| 转换成本 | | | | |
-| 品牌心智 | | | | |
-| 数据壁垒 | | | | |
-| 监管牌照 | | | | |
-| 规模经济 | | | | |
-| 技术壁垒 | | | | |
+<unk> Network effects <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+♪ The world's greatest ♪
+I'm not sure what you're talking about.
+♪ The data barrier ♪
+- I'm not sure.
+♪ The big economy ♪
+♪ The technical barriers ♪
 
-**估值判断**：
-| 估值方法 | 估值区间 | 置信度 | 说明 |
+** Valuation judgement**:
+<unk> Valuation method <unk> Valuation interval <unk> Confidence <unk>
 |---------|---------|--------|------|
-| 最近融资估值（调整后） | | | |
-| 可比公司法 | | | |
-| DCF情景分析 | | | |
-| 终局市值倒推 | | | |
-| 交易对标法 | | | |
+<unk> Recent financing valuation (adjusted) <unk>
+♪ The law of the company ♪
+♪ The DAF scenario analysis ♪
+♪ The final market is pushing back ♪
+♪ The deal is the subject matter ♪
 
-**综合真实价值区间**：
-- 保守估值（安全边际估值）：$XXB
-- 合理估值（中性假设）：$XXB
-- 乐观估值（最优情景）：$XXB
-- 当前市场估值：$XXB
-- **安全边际**：当前估值 vs 保守估值 = XX%
+** Consolidated real value interval**:
+- Conservative valuation (security margin): $XXB
+- Reasonable valuation (neutral assumption): $XXB
+- Optimal valuation (maximity scenario): $XXB
+- Current market valuation: $XXB
+- **Safe margins**: Current valuation vs Conservative valuation = XX per cent
 
-#### 8. 投资论点（看多 vs 看空）
-- 🟢 看多逻辑（5-7条，每条附证据来源）
-- 🔴 看空逻辑（5-7条，每条附证据来源）
-- ⚖️ 哪一方的论据更有说服力？为什么？
+# 8. Investment argument (see too many vs and see nothing)
+- Look at logic (5-7 articles, each with the source of evidence)
+- Viewing logic (5-7 articles, each with the source of evidence)
+- Which side of the argument is more convincing? Why?
 
-#### 9. 风险矩阵
-| 风险 | 概率 | 影响 | 综合严重度 | 是否可对冲 | 监控指标 |
+##9. Risk matrix
+Risk, probability, impact, combined severity, whether or not you can hit, monitor, monitor, monitor, monitor, monitor, monitor, monitor, monitor, monitor, monitor, monitor, monitor, monitor, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control, and control,
 |------|------|------|-----------|-----------|---------|
 
-Top 3 核心风险及应对策略
+Top 3 Core risk and response strategy
 
-#### 10. 退出路径评估
-最可能的退出方式、时间窗口、预期回报
+##10 Exit path assessment
+Most likely exit, time window, expected return
 
-#### 11. 投资决策表
+11. Investment decision sheet
 
-**一页纸决策表**：
+** One page of the decision sheet**:
 ```
 ┌──────────────────────────────────────────────┐
-│  公司：XXX    最新估值：$XXB                  │
-│  阶段：[种子/成长/成熟/Pre-IPO]              │
-│  信息完整度：[充分/适中/不足/严重不足]        │
+Company: XXX Latest valuation: $XXB
+Phase: [seeds/growth/mature/Pre-IPO]
+Information completeness: [adequate/moderate/adequate/seriously inadequate] <unk>
 ├──────────────────────────────────────────────┤
-│  核心投资逻辑（3句话以内）：                  │
+Core investment logic (within 3 sentences): <unk>
 │  1. ________________________________________  │
 │  2. ________________________________________  │
 │  3. ________________________________________  │
 ├──────────────────────────────────────────────┤
-│  真实价值判断：                               │
-│  合理估值区间：$XXB - $XXB                    │
-│  当前估值 vs 合理估值：偏贵/合理/偏低         │
-│  安全边际：____%                              │
+<unk> Real value judgement: <unk>
+<unk> Reasonable valuation interval: $XXB - $XXB
+Current valuation vs Reasonable valuation: Premium/reasonable/low
+Security margin: <unk>
 ├──────────────────────────────────────────────┤
-│  关键假设 & 验证方式：                        │
-│  假设1 → 跟踪指标 → 验证节点 → 验证时间      │
-│  假设2 → 跟踪指标 → 验证节点 → 验证时间      │
-│  假设3 → 跟踪指标 → 验证节点 → 验证时间      │
+Key assumptions & authentication: <unk>
+<unk> Scenario 1 <unk> Tracking indicators <unk> Validation node <unk> Verification time <unk>
+<unk> Scenario 2 <unk> Tracking indicators <unk> Validation node <unk> Verification time <unk>
+<unk> Scenario 3 <unk> Tracking indicators <unk> Validation node <unk> Verification time <unk>
 ├──────────────────────────────────────────────┤
-│  致命风险 & "论文已破"信号：                  │
-│  风险1 → 如果X发生，结论翻转 → 止损策略       │
-│  风险2 → 如果Y发生，结论翻转 → 止损策略       │
+<unk> Fatal risk & "Thesis Broken" Signal: <unk>
+Risk 1 <unk> If X happens, conclusions are reversed <unk> damage-control strategy <unk>
+Risk 2 <unk> If Y happens, conclusions are reversed <unk> damage-control strategy <unk>
 ├──────────────────────────────────────────────┤
-│  结论：投资 / 观望 / 回避                     │
-│  如果观望：重新评估的触发条件是什么？          │
-│  预期退出：IPO / 并购 / 二级转让              │
-│  预期回报倍数：X - Y 倍                      │
-│  预期时间框架：X - Y 年                      │
-│  年化回报率：X% - Y%                         │
+Conclusion: Investments / Watch / Avoidance
+If you look at it: What triggers a reassessment?
+Expected exit: IPO/ M / M / II transfer
+<unk> Expected multiple return: X-Y times <unk>
+Expected time frame: X-Y years
+Annual rate of return: X% - Y%
 └──────────────────────────────────────────────┘
 ```
 
-**分层建议**：
-| 投资者类型 | 建议 | 理由 |
+** Tiered recommendations**:
+<unk> Type of investor <unk> Recommendation <unk> Reason <unk>
 |-----------|------|------|
-| PE/VC机构（领投） | | |
-| PE/VC机构（跟投） | | |
-| 二级市场转让 | | |
-| IPO后买入 | | |
-| 不建议参与 | | |
+* PE/VC (initiated)
+* PE/VC (and vote)
+<unk> Secondary market transfer <unk>
+IPO buys after IPO
+No, I'm not.
 
-**关键催化剂**：
-| 看多催化剂 | 预计时间 | 看空催化剂 | 预计时间 |
+**Key catalyst**:
+♪ Look at the catalyst, look at the time, look at the time, look at the time, look at the time, look at the time, look at the time, look at the time, look at the time, look at the time, look at the time, look at the time, look at the time, look at the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time, see the time.
 |-----------|---------|-----------|---------|
 | | | | |
 
-#### 12. 信息盲区地图
-| 维度 | 已知信息 | 缺失信息 | 缺失影响 | 获取建议 |
+12. Map of the information blind area
+<unk> dimension <unk> Known information <unk> Missing information <unk> Missing effects <unk> Get advice <unk>
 |------|---------|---------|---------|---------|
 
-这些信息盲区是否影响核心结论的可靠性？如果影响，明确说明"在X信息缺失的情况下，以上结论的置信度为Y"。
+Does the information blindness affect the reliability of the core findings? If so, it is clearly stated that "In the absence of X information, the confidence in the conclusions is Y".
 
-#### 13. 持续跟踪清单
-| 跟踪事项 | 频率 | 信息来源 | 关注指标 | 预警阈值 |
+# 13. Keep tracking the list
+<unk> Tracking <unk> Frequency <unk> Information source <unk> Concern indicator <unk> Early warning threshold <unk>
 |---------|------|---------|---------|---------|
 
-#### 14. 总结段落
-150-250字的最终总结，包含：
-- 这门生意的本质
-- 真实价值判断
-- 当前估值的合理性
-- 最大的确定性和不确定性
-- 最终建议和核心理由
+# 14. Summary Paragraph
+150-250 words, including:
+- The nature of this business.
+- Real value judgement.
+- Rationale of the current valuation
+- Maximum certainty and uncertainty
+- Final recommendations and core arguments
 
 ---
 
-### 第八步：保存报告
+# Step eight: Save the report
 
-将完整最终报告写入 `reports/{公司名}/{公司名}-private-{YYYYMMDD}.md`。
+Write the complete final report to `reports/{corporate name}/{corporate name}-private-{YYYMMMD}.md`.
 
-### 第九步：清理团队
+# Step 9: Cleaning team
 
-使用 TeamDelete 清理团队资源。
+Use TeamDelete to clean up team resources.
 
 ---
 
-## 重要注意事项
+# Important attention
 
-1. **6个Agent必须并行启动**——在同一条消息中调用6次Agent工具
-2. **数据置信度标注**——未上市公司数据来源参差不齐，每个关键数据必须标注来源和置信度
-3. **推算要透明**——所有推算过程要展示计算逻辑，不能凭空给数字
-4. **交叉验证**——关键数据至少2个来源交叉验证，来源冲突时都列出
-5. **信号一致性检验**——汇总阶段必须做跨维度的信号一致性检查
-6. **结论要明确**——不回避给出投资/观望/回避建议，但同时说明结论的置信度
-7. **耐心等待**——6个Agent研究需要几分钟，实时向用户更新进度
-8. **中英文搜索**——未上市公司信息可能分布在中英文媒体，需要两种语言搜索
-9. **反偏见核心原则**——资料少≠公司不好，AI分析篇幅短≠投资确定性低。对于信息极度稀缺的公司，切换"第一性原理模式"聚焦核心问题，不追求报告形式完整
-10. **诚实留白**——报告中明确区分"有据分析"和"推测填充"，允许出现"此维度数据不足，无法给出有意义的结论"
-11. **替代数据不是噪音**——招聘、专利、诉讼、App数据等替代数据可能比新闻报道更接近真实经营状况
-12. **真实价值导向**——最终目标是判断这门生意值多少钱，不是输出一份好看的报告。如果信息不足以做出可靠的估值判断，直接说"信息不足，无法给出可靠估值"
+**6 Agents must start in parallel** - 6 calls in the same message
+**Data confidence mark** — Unlisted company data sources are mixed, and each key data must be marked with source and confidence
+** The calculation is transparent** - all the calculations are based on a calculation logic that cannot be given in blank
+** Cross-check** — at least 2 sources cross-checking key data, all listed in conflict of origin
+** Signal consistency test** - Signal consistency check across dimensions is required at the aggregation stage
+** Conclusions to be clear** - not shy from making investment/visit/sustainability recommendations, but at the same time indicate the confidence of the conclusions
+** Patience** — 6 Agent studies will take minutes to update user progress in real time
+**Save in Chinese and English** - Unlisted information on companies may be distributed in Chinese and English media, requiring search in both languages
+9. ** Core anti-bias principle** - Poor information, poor information, low investment certainty in AI analysis. For companies with extremely scarce information, switch to the "first principle model" to focus on core issues and not seek complete reporting
+** Integrity left blank** - The report clearly distinguishes between "accurate analysis" and "presumed filling", allowing for "insufficiency of data in this dimension to make meaningful conclusions".
+** Alternative data are not noise** - Alternative data such as recruitment, patents, litigation, App data may be closer to real business than news reports
+** Real value orientation** - The ultimate goal is to judge how much the business is worth, not to export a good report. If the information is not sufficient to make a reliable valuation, say, "Incomplete information is not enough to give a reliable valuation."

@@ -1,0 +1,188 @@
+#PayPal(PYPL) Morningstar Deep Undervaluation Research
+
+> Study date: May 19, 2026
+> Morningstar Fair Value: $80 | Current Price: $44.38 | Potential Gain: +80.2%
+> Moat Rating: Narrow Moat | Uncertainty Rating: High
+> Industry: Credit Services
+
+---
+
+## 1. Company Profile
+
+### Main business
+
+PayPal is the world's leading digital payments platform, providing online and mobile payment solutions for consumers and merchants. Core products include PayPal checkout, Venmo (P2P payments), Braintree (merchant payment processing), Xoom (cross-border remittances), etc. The company was spun off from eBay in 2015 and went public independently.
+
+### Income structure
+
+- **Transaction revenue**: accounting for approximately 90% of total revenue, derived from merchant transaction fees (charged as a percentage of transaction amount + fixed fee)
+- **Value-added service revenue**: accounting for about 10%, including merchant and consumer financial services (loans, interest income, etc.). In 2025, this part of the revenue will be approximately US$3.4 billion.
+
+### Market position
+
+- The global online payment processing market share is approximately 41%-45%, significantly ahead of Stripe (approximately 8%)
+- Approximately 439 million active accounts in 2025
+- Total payment volume (TPV) in 2025 will reach US$1.79 trillion, a year-on-year increase of 7%
+- The top 60% of the world’s top e-commerce websites offer PayPal checkout option
+
+---
+
+## 2. Financial analysis
+
+### Revenue and Profit Trends (2023-2025)
+
+| Indicators | FY2023 | FY2024 | FY2025 |
+|------|--------|--------|--------|
+| Total Revenue | $29.77 billion | $31.8 billion | $33.2 billion |
+| Revenue growth | -- | +7% | +4% |
+| GAAP Operating Income | -- | $5.35 billion | $6.1 billion |
+| GAAP Operating Margin | -- | 16.8% | 18.3% |
+| GAAP earnings per share | $3.84 | $4.01 | $5.41 |
+| Non-GAAP earnings per share | -- | $4.65 | $5.31 |
+| Free Cash Flow | -- | $6.8 billion | $6.4 billion |
+| TPV | 1.53 trillion | 1.68 trillion | 1.79 trillion |
+
+### Q1 2026 latest quarterly report
+
+- Revenue: US$8.4 billion, +7% year-on-year
+- GAAP operating profit: $1.5 billion, operating margin 17.8% (down 182 basis points year-over-year)
+- GAAP earnings per share: $1.21, -6% year-on-year
+
+### Key Financial Indicators
+
+- **ROE**: approximately 25% (2025)
+- **Gross Margin/Trading Margin**: Trading profit USD USD 15.5 billion in 2025, +6% year-on-year
+- **Capital Return**: Repurchase 920,000 shares in 2024, deploying US$6 billion; repurchase approximately 620,000 shares in the first three quarters of 2025; start quarterly cash dividends in Q3 2025
+- **Balance Sheet**: Asset-light business model, no significant debt pressure
+
+### Trend Judgment
+
+Revenue growth will slow down from 7% in 2024 to 4% in 2025, but the profit side will perform strongly: GAAP EPS increased by 35% year-on-year, mainly benefiting from operational efficiency improvements and large-scale repurchases. Free cash flow remains above $6 billion, and cash generation remains strong. Q1 2026 revenue growth rebounded to 7%, but profit margins have narrowed.
+
+---
+
+## 3. Moat analysis
+
+### Morningstar Rating Basis
+
+Morningstar gives PayPal a **Narrow Moat** rating based primarily on:
+
+1. **Network Effect**: 439 million active users and tens of millions of merchants form a bilateral network, and consumers and merchants attract each other. The more users there are, the more willing merchants are to connect to PayPal; the more merchants there are, the more likely consumers are to use PayPal.
+2. **Scale Advantage**: As the world's largest independent digital payment platform, the data advantages brought by scale help risk control and anti-fraud.
+3. **Brand Trust**: In the field of online payment, PayPal is one of the brands most familiar and trusted by consumers.
+
+### Sources of competitive advantage
+
+- Lock-in effect of bilateral networks
+- Global layout (more than 200 countries and regions)
+- Diversified product matrix (PayPal, Venmo, Braintree, Xoom)
+- Credit and risk control data accumulated over more than 20 years
+
+### Is the moat deepening or narrowing?
+
+**Facts show signs of narrowing of the moat:**
+
+- **Branded checkout share is under pressure**: branded checkout (branded checkout) has sluggish growth, which is PayPal’s core product with the highest profit margin, directly reflecting consumer stickiness
+- **Intensified competition**: Apple Pay users have reached 818 million, surpassing PayPal’s 439 million; Stripe accounts for 93% of the leading DTC e-commerce brands
+- **CEO replacement**: In February 2026, the board of directors replaced CEO Alex Chriss, reflecting dissatisfaction with execution.
+- **Braintree business grows but margins are low**: Off-brand payment processing faces fierce price competition
+
+**But there are also positive signs:**
+- Trading profits continued to grow in US dollars (+6%), indicating that core profitability is still there
+- Online payment market share still ranks first (41%-45%)
+- Venmo commercialization gradually advances
+
+---
+
+## 4. Valuation analysis
+
+### Current valuation
+
+| Metrics | PayPal | Industry Median | PayPal 10-Year Average |
+|------|--------|-----------|---------------|
+| Price to earnings ratio (TTM) | 8.3-8.7x | 13.3x | 42.3x |
+| P/S Ratio | ~1.4x | -- | -- |
+
+### Comparative analysis of valuation
+
+- The current PE is about 8.3 times, **35% lower than the industry median of 13.3 times**
+- **80% below its own 10-year historical median of 42.3 times** - an extreme historical low
+- Even at non-GAAP EPS $5.31, PE is only ~8.4x
+
+### Morningstar Fair Value $80 Logic
+
+Morningstar believes the market has overpriced the following negative factors:
+1. Brand checkout growth slows down
+2. Market share concerns due to intensified competition
+3. Uncertainty caused by CEO replacement
+
+Morningstar's fair value assumption assumes that PayPal can maintain modest growth (mid-single-digit revenue growth) and continue to improve margins. Based on a fair value of $80, the implied PE is about 15 times, which is still far lower than the historical average and is a conservative estimate.
+
+### Why does the market give such a low valuation?
+
+- Market concerns that PayPal is becoming a "low-growth, low-margin payment processor" rather than a high-growth technology platform
+- CEO replacement and execution doubts
+- The stock price plummeted 19% in a single day after the Q4 2025 financial report was released.
+- Investors are highly pessimistic about the future of branded checkout businesses
+
+---
+
+## 5. Risk factors
+
+1. **Risk of continued shrinkage of branded checkout**: If the market share of branded checkout continues to be eroded by Apple Pay, Google Pay, etc., PayPal's revenue source with the highest profit margin will face a structural decline. This is the core risk.
+
+2. **Management Execution Risk**: The CEO will be replaced in February 2026, and there is a high degree of uncertainty whether the new strategic reorganization plan will be effective. PayPal has undergone multiple strategic changes in recent years, and its execution has repeatedly disappointed investors.
+
+3. **Braintree profit margin pressure**: Braintree's non-branded payment processing business is growing at a decent rate, but it faces fierce price competition from Stripe, Adyen, etc., and the profit margin is much lower than that of the brand business, which may lead to "increasing revenue without increasing profits."
+
+4. **Macroeconomic Sensitivity**: E-commerce transaction volume is directly linked to consumer spending, and economic recession will affect TPV growth.
+
+5. **Regulatory and Compliance Risk**: Changes in payment regulatory policies around the world (such as rate caps, data privacy regulations) may affect the revenue model.
+
+---
+
+## 6. Investment thesis
+
+### Look at the bull case
+
+1. **Extremely cheap valuation**: PE is over 8 times, free cash flow yield is about 14% (market value of 6.4 billion/~46 billion), even with zero growth, it can create high returns for shareholders through repurchases and dividends. At the current repurchase rate, the company can repurchase approximately 15% of its outstanding shares each year.
+
+2. **Big room for profit margin improvement**: GAAP operating profit margin has increased from 16.8% to 18.3% in 2025, and management continues to promote cost optimization. Transaction profit dollar growth (6%) is faster than revenue growth (4%), indicating that unit economics are improving.
+
+3. **The long-term trend of digital payments remains unchanged**: The long-term penetration rate of global e-commerce and digital payments is still increasing, and PayPal, as the largest independent digital payment platform, will still benefit.
+
+### Bear Case
+
+1. **Substantial narrowing of the moat**: Apple Pay relies on the overwhelming advantages of Apple’s ecosystem and is systematically eroding PayPal’s position on the mobile side. The number of Apple Pay users is nearly twice the number of active PayPal users.
+
+2. **Structural issues with continued slowdown in growth**: Revenue growth will drop from 8% in 2023 to 4% in 2025, and brand checkout growth will be even worse. This may not be a cyclical issue, but reflects fundamental changes in the competitive landscape of the payments industry.
+
+3. **Frequent changes in management harm execution**: CEOs and strategic directions have been changed many times in recent years, and organizational turmoil has affected product innovation and market expansion. A low valuation may be a reasonable reflection of "management discount".
+
+---
+
+## 7. Conclusion
+
+**Whether it is worth further research: It is worth it, but it needs to be done with caution. **
+
+PayPal's current valuation is indeed at an extremely low level in history, with a PE of 8 times and a free cash flow rate of return of 14%. For a company with annual revenue of US$33 billion and annual free cash flow of US$6.4 billion, market pricing implies highly pessimistic expectations.
+
+**Core issues that need to be verified:**
+
+1. Is the decline in brand checkout a temporary execution issue or an irreversible structural change?
+2. Can the new management deliver visible strategic results within 12-18 months?
+3. Can the commercialization of Venmo become a new growth engine?
+
+If brand checkout can stabilize and grow moderately, PayPal has a significant margin of safety at its current valuation. But if the core business continues to shrink, the current low valuation may not be "cheap", but the market's reasonable pricing of business decline. It is recommended to continuously track the quarterly data of the brand checkout and the execution of the strategy by the new management.
+
+---
+
+Sources:
+- [PayPal Q4 2025 Earnings Release (SEC Filing)](https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000021/pypl4q-25earningsrelease.htm)
+- [PayPal Q1 2026 Earnings Release (SEC Filing)](https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000065/pypl1q-26earningsrelease.htm)
+- [PayPal PE Ratio Analysis - GuruFocus](https://www.gurufocus.com/term/pettm/PYPL)
+- [PayPal Statistics 2026 - Capital One Shopping](https://capitaloneshopping.com/research/paypal-statistics/)
+- [PayPal Morningstar Quote](https://www.morningstar.com/stocks/xnas/pypl/quote)
+- [PayPal Earnings: Growth Slows, New CEO Appointed - Morningstar](https://www.morningstar.com/stocks/paypal-earnings-growth-slows-new-ceo-appointed)
+- [PayPal vs Stripe Statistics 2026](https://coinlaw.io/paypal-vs-stripe-statistics/)
+- [PYPL Stock Forecast 2026 - Intellectia](https://intellectia.ai/blog/pypl-stock-price-forecast-2026-analysis)

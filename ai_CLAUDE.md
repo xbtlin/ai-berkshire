@@ -1,64 +1,64 @@
-# AI Berkshire — AI 记忆文件
+# AI Berkshire — AI Memory Files
 
-> 本文件记录 Claude 在与用户协作过程中积累的项目知识、用户偏好和历史决策，供后续会话参考。
+> This file records Claude’s accumulated project knowledge, user preferences, and historical decisions during collaboration with users for reference in subsequent sessions.
 
-## 用户画像
+## User portrait
 
-- 投资风格：价值投资，重仓集中持有，关注中国互联网+消费+AI
-- 研究偏好：直接犀利不废话，要明确结论不要两面讨好，数据必须准确
-- 使用场景：个人投资决策辅助，同时将本项目作为开源产品推广
+- Investment style: value investment, concentrated holding of large positions, focusing on China's Internet + consumption + AI
+- Research preferences: direct and sharp, no nonsense, clear conclusions, don’t flatter both sides, data must be accurate
+- Usage scenario: Personal investment decision-making assistance, while promoting this project as an open source product
 
-## 项目演进历史
+## Project evolution history
 
-### 2026年4月7-9日（首批研究+框架完善）
+### April 7-9, 2026 (first batch of research + framework improvement)
 
-**完成的研究：**
-1. `/investment-team 拼多多` — 首个完整的4Agent并行研究，综合评分3.4/5
-2. `/investment-checklist` 7家公司 — 茅台、腾讯、英伟达、美团、拼多多、泡泡玛特、快手
-3. 大师持仓追踪 — 巴菲特/李录/段永平最新13F + PDD成本价分析
-4. 对美团等5家公司进行了深度再评估（用户挑战了初始评估）
+**Research Completed:**
+1. `/investment-team Pinduoduo` — The first complete 4Agent parallel research, with an overall score of 3.4/5
+2. `/investment-checklist` 7 companies - Moutai, Tencent, Nvidia, Meituan, Pinduoduo, Bubble Mart, Kuaishou
+3. Master position tracking — Buffett/Li Lu/Duan Yongping’s latest 13F + PDD cost price analysis
+4. Conducted in-depth re-evaluation of 5 companies including Meituan (users challenged the initial evaluation)
 
-**用户反馈导致的修正：**
-- 美团从 ❌ 改为 ✅ 有条件通过 — 用户指出：等盈利恢复再买就晚了，2000亿打不垮=真护城河
-- 英伟达从 ❓ 改为 ✅ 有条件通过 — AI Capex仍在加速，Jevons Paradox
-- 快手从 ❓ 改为 ✅ 有条件通过 — 可灵AI被低估，Sora已关停
+**Correction due to user feedback:**
+- Meituan changed from ❌ to ✅ Conditionally passed - User pointed out: It will be too late to buy again after profits recover, 200 billion cannot defeat it = a real moat
+- NVIDIA changed from ❓ to ✅ Conditional Pass — AI Capex still accelerating, Jevons Paradox
+- Kuaishou changed from ❓ to ✅ Conditionally passed - Keling AI is underestimated and Sora has been shut down
 
-**关键教训：**
-- 不要机械套用checklist，要有独立判断
-- "等盈利恢复再买"是逻辑谬误——股价会提前反映
-- 竞争对手花了更多钱但没占到便宜 = 护城河的最佳证据
+**Key Lesson:**
+- Don’t mechanically apply the checklist, use independent judgment
+- "Waiting for profits to recover before buying" is a logical fallacy - the stock price will reflect it in advance
+- Competitors spend more money but don’t take advantage = best evidence of moat
 
-### Skill体系演进
+### Skill system evolution
 
-**V1（5个Skill）— 覆盖买入前研究：**
+**V1 (5 Skills) – Covers pre-buy research:**
 - investment-research、investment-team、investment-checklist、industry-research、private-company-research
 
-**V2（9个Skill）— 补齐买入后流程：**
-- 新增：earnings-review（财报精读）、thesis-tracker（论文追踪）、portfolio-review（组合管理）、management-deep-dive（管理层纵深）
-- 经过2轮自验证迭代修复：路径统一、工具调用补全、并行收集、反偏见机制、量化评分公式
+**V2 (9 Skills)—Complete the post-purchase process:**
+- Newly added: earnings-review (intensive reading of financial reports), thesis-tracker (paper tracking), portfolio-review (portfolio management), management-deep-dive (management depth)
+- After 2 rounds of self-verification iterative repairs: path unification, tool call completion, parallel collection, anti-bias mechanism, quantitative scoring formula
 
-## 项目核心卖点（README中已体现）
+## Core selling points of the project (reflected in README)
 
-1. **强制给结论不打太极** — 通过/不通过/灰色，带具体价格区间
-2. **四大师视角对抗** — 不是分工而是互相挑战，制造真实的矛盾和张力
-3. **结构化反偏见机制** — A/B/C信息丰富度、芒格逆向、快速否决、反共识
-4. **金融数据精确性** — Decimal精确计算、市值手算、多源交叉验证
-5. **可复现研究流程** — 同样输入→结构一致输出，支持横向对比和纵向跟踪
-6. **多Agent并行深度** — 4个Agent各自搜索+独立分析，4倍信息量
-7. **实盘验证** — 两年累计146万收益，连续跑赢指数40-50个百分点
+1. **It is mandatory not to give a conclusion** — pass/fail/grey, with specific price range
+2. **Confrontation from the perspectives of the four masters** — not division of labor but challenge to each other, creating real contradictions and tensions
+3. **Structured anti-bias mechanism** — A/B/C information richness, Munger reverse, quick rejection, anti-consensus
+4. **Accuracy of financial data** — Decimal accurate calculation, hand calculation of market value, multi-source cross-validation
+5. **Reproducible research process** — Same input → output with consistent structure, supporting horizontal comparison and vertical tracking
+6. **Multi-Agent Parallel Depth** — 4 Agents search + independent analysis, 4 times the amount of information
+7. **Real market verification** — Accumulated income of 1.46 million in two years, continuously outperforming the index by 40-50 percentage points
 
-## 用户偏好与工作习惯
+## User preferences and work habits
 
-- **报告语言**：中文
-- **推送到GitHub**：研究完成后通常会要求推送，主动询问
-- **git操作**：远程经常有新提交（用户可能在其他地方也在改），推送前必须 `git pull --rebase`
-- **对错误的态度**：直接指出，不需要委婉。用户会挑战AI的判断，这时应该认真重新评估而非辩护
-- **不要过度总结**：用户能看diff，不需要每次操作完都复述一遍做了什么
-- **研究深度**：宁可花时间做深做准，不要为了快而粗糙
+- **Report Language**: Chinese
+- **Push to GitHub**: After the research is completed, you will usually be asked to push, and ask proactively
+- **git operation**: There are often new submissions remotely (the user may be making changes elsewhere), and `git pull --rebase` must be used before pushing.
+- **Attitude towards mistakes**: Point it out directly, no need to be tactful. Users will challenge the AI’s judgment, and this should be a serious re-evaluation rather than a defense.
+- **Don’t over-summarize**: Users can see the diff and don’t need to repeat what they did after each operation.
+- **Research Depth**: It’s better to spend time doing deep and accurate research than to be rough just for the sake of speed.
 
-## 已知问题和待改进
+## Known issues and improvements to be made
 
-- reports/ 目录下有一些早期文件命名不规范（中文下划线混合），后续统一为英文短横格式
-- 部分早期报告（如腾讯控股-投资研究报告.md）使用旧命名，未迁移
-- financial_rigor.py 工具的实际覆盖面需要在Skill执行中验证
-- README中的输出示例是虚构的，后续应替换为真实报告的截取
+- There are some early file names in the reports/ directory that are not standardized (Chinese underscores are mixed), and will be unified into English short horizontal format in the future.
+- Some early reports (such as Tencent Holdings-Investment Research Report.md) use the old naming and have not been migrated.
+- The actual coverage of the financial_rigor.py tool needs to be verified in the Skill execution
+- The output examples in the README are fictitious and should be replaced with excerpts from real reports.

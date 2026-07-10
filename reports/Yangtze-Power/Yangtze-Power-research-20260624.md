@@ -1,443 +1,443 @@
-# 长江电力（600900.SH）四大师综合投资研究报告
+# Integrated investment study by the Four Masters of Yangtze Power (6009000.SH)
 
-> 研究日期：2026年6月24日 | 股价：26.94元 | 市值：6,592亿元
-
----
-
-## AI研究偏见自觉
-
-**信息丰富度评级：A级（信息充裕）**
-
-长江电力上市超20年，券商覆盖密集（16位分析师），媒体报道丰富，财务数据完整透明。
-
-**A级陷阱警示**：共识过强——市场对长江电力的"水电茅台"定位高度一致，AI输出极易趋同于市场定价。本报告的重点在于：**聪明人为什么不买？被忽略的风险是什么？当前价格是否已充分反映所有利好？**
-
-**偏见自查**：
-- [x] 确定性感受来自生意本质（水电资源垄断+稳定现金流），而非仅因资料丰富
-- [x] 本报告分析与市场共识高度重合（水电龙头、稳定分红），需格外关注反面论据
-- [x] 信息优势有限——长江电力的投资逻辑几乎已被市场完全定价
+> Date of study: 24 June 2026 Stock price: $26.94 million Market value: $659.2 billion
 
 ---
 
-## 第一步：核心数据总览
+# AI studies prejudices
 
-### 收入结构（2025年度）
+** Information abundance rating: A (information is abundant)**
 
-| 业务板块 | 营业收入（亿元） | 占比 | 同比增速 | 毛利率 |
+The Yangtze electricity has been on the market for over 20 years, with a dense coverage of coupons (16 analysts), rich media coverage and complete and transparent financial data.
+
+** A-level trap warning**: too strong consensus - the market position of the "hydro-power puddle" of Yangtze power is highly consistent and AI exports are very easy to converge with market pricing. The focus of this report is:** why not the smart man? What are the risks of being ignored? ** Is the current price fully reflecting all the benefits?**
+
+** Prejudice self-examination**:
+- [x] The certainty stems from the nature of the business (hydropower resource monopoly plus stable cash flow) rather than simply from the wealth of information
+- [x] The analysis in this report is highly consistent with market consensus (power taps, stable fractions), requiring extra attention to the counter arguments
+- [x] Limited information advantages - The investment logic of Yangtze electricity has been almost fully priced by the market
+
+---
+
+# Step 1: A core data overview
+
+## Income structure (2025)
+
+Business plate Business income (millions of yuan)
 |----------|-----------------|------|----------|--------|
-| 境内水电业务 | 756.62 | 87.73% | +1.59% | 65.79% |
-| 其他业务（含海外） | 103.23 | 11.97% | +5.27% | 31.54% |
-| **合计** | **862.42** | **100%** | **+2.07%** | **61.67%** |
+<unk> Inland utilities 756.62 87.73% <unk> + 1.59% <unk> 65.79% <unk>
+Other operations (including overseas)
+** Total** ** 862.42 ** ** 100% ** ** ** ** ** ** ** 2.07% ** ** 61.67% ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
 
-### 六大电站发电量（2025年度）
+##6 Power generation in #2025
 
-| 电站 | 装机容量（万千瓦） | 发电量（亿千瓦时） | 同比增速 |
+<unk> Power station <unk> installed capacity (thousands of kilowatts) <unk> power generation (billion kilowatt hours) <unk> same speed increase <unk>
 |------|-------------------|-------------------|----------|
-| 三峡 | 2,250 | 957.15 | +15.44% |
-| 溪洛渡 | 1,386 | 613.56 | -1.20% |
-| 白鹤滩 | 1,600 | 601.04 | -0.54% |
-| 乌东德 | 1,020 | 369.18 | -6.88% |
-| 向家坝 | 640 | 337.21 | +0.93% |
-| 葛洲坝 | 273.5 | 193.81 | +11.36% |
-| **合计** | **7,169.5** | **3,071.94** | **+3.82%** |
+<unk> Three gorges 2,250 <unk> 957.15 <unk> 15.44 <unk>
+♪ The earth ♪
+Xiao-Ying, Xiao-Ying, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, Xiao-Qing, X-Que, X-Que, X-Que, X-Que, X-Que, X-Que, X-X-X-T, X-X-X-T, X-
+<unk> Utunde <unk> 1,020 <unk> 369.18 <unk> - 6.88% <unk>
+<unk> 640<unk> 337.21<unk> +0.93% <unk>
+<unk> Guo Chau Dam 273.5 <unk> 193.81 <unk> 11.36% <unk>
+** Total** ** 7,169.5 ** ** **,071.94 ** ** + 3.82% ** **
 
-### 近5年财务指标
+# # Financial indicators for the last five years
 
-| 指标 | 2021 | 2022 | 2023 | 2024 | 2025 |
+Indicator 2021 <unk> 2022 <unk> 2023 <unk> 2024 <unk> 2025 <unk>
 |------|------|------|------|------|------|
-| 营业收入（亿元） | 556.90 | 688.63 | 781.44 | 844.92 | 862.42 |
-| 收入增速 | -3.62% | +23.65% | +13.48% | +8.12% | +2.07% |
-| 归母净利润（亿元） | 264.47 | 237.26 | 272.45 | 324.96 | 345.03 |
-| 净利润增速 | +0.57% | -10.29% | +14.83% | +19.28% | +6.17% |
-| 毛利率 | ~61% | 57.29% | 57.83% | 59.13% | 61.67% |
-| 净利率 | ~47.6% | ~34.5% | 34.87% | 38.46% | 40.52% |
-| 经营现金流（亿元） | 357.32 | 434.77 | 647.19 | 596.48 | 605.63 |
-| 自由现金流（亿元） | ~322E | ~285E | ~539 | ~525 | ~570E |
-| 资产负债率 | 64.80% | ~63% | 62.90% | ~60% | 58.27% |
+<unk> Operating income (millions of yuan) <unk> 556.90 <unk> 688.63 <unk> 781.44 <unk> 844.92 <unk> 862.42 <unk>
+<unk> Income growth rate <unk> - 3.62% <unk> 23.65% <unk> 13.48% <unk> 8.12% <unk> + 2.07% <unk>
+<unk> Net profit from the return of the mother (in billions of yuan) <unk> 237.26 <unk> 272.45 <unk> 324.96 <unk> 345.03. <unk>
+<unk> Net profit growth + 0.57% <unk> - 10.29% <unk> + 14.83% <unk> + 19.28% <unk> + 6.17% <unk>
+<unk> Māori ~ 61% 57.29% <unk> 57.83% <unk> 59.13% <unk> 61.67% <unk>
+Net interest rate ~ 47.6% ~ 34.5% <unk> 34.87% <unk> 38.46% <unk> 40.52% <unk>
+<unk> Operating cash flow (millions of yuan) <unk> 357.32 <unk> 434.77 <unk> 647.19 <unk> 596.48 <unk> 605.63 <unk>
+Free cash flow (billions) ~322E ~ 285E ~ 539 ~ 525 E ~ 570E ~ 570E ~ 530 E-mail ~539 ~ 539 E-mail ~525E-070E-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+<unk> Asset and liability ratio 64.80% ~ 63% ~ 62.9% ~ 60% ~ 58.27% <unk>
 | ROE | ~12.34% | ~13.5% | 13.53% | ~15.45% | 15.59% |
-| EPS（元） | 1.15 | 0.87 | 1.1132 | 1.3281 | 1.3964 |
-| 每股股息（元） | 0.8153 | 0.8533 | 0.82 | 0.943 | 1.00 |
-| 分红率 | ~70% | ~94.3% | 73.66% | ~71% | 70.92% |
+<unk> EPS(M) 1.15 <unk> 0.87 <unk> 1.1132 <unk> 1.3281 <unk> 1.3964 <unk>
+<unk> per dividend (in yuan) <unk> 0.8153<unk> 0.853<unk> 0.82<unk> 0.943<unk> 1.00 <unk>
+<unk> <unk> 70% ~ 94.3% <unk> 73.66% ~ 71% ~ 70.92% <unk>
 
-> 注：E=估算值。2022年为重组年份（收购乌东德、白鹤滩），财务数据存在口径变化。EPS因股本变化（2022年增发）不可直接同比。
+Note: E = estimated. Financial data vary in calibre in 2022 in the year of reorganization (acquisition of Utunde, White Crane Beach). EPS cannot be directly compared to the year when the equity changes (up in 2022).
 
-### 关键数据交叉验证记录
+## Key data cross-checking records
 
-**市值验算**：26.94元 × 244.68亿股 = 6,591.7亿元，与报告市值6,591亿元偏差0.01% ✅
+** Market value measurement** $26.94 x $24.468 billion = $659.97 billion, or 0.01 per cent deviation from the reported market value of $654.1 billion
 
-**估值指标精确计算**（工具验算）：
+** Exact calculation of valuation indicators** (tool validation):
 
-| 指标 | 工具计算值 | 说明 |
+<unk> Indicators <unk> Tool computations <unk> Note <unk>
 |------|-----------|------|
 | PE（TTM） | 19.29x | 26.94 / 1.3964 |
-| PB | 2.82x | 26.94 / 9.54（每股净资产） |
+<unk> PB 2.82x 26.94/9.54 (net assets per unit)<unk>
 | ROE | 14.64% | 1.3964 / 9.54 |
-| P/FCF | 11.56x | 26.94 / 2.33（每股FCF估算） |
+<unk> P/FCF <unk> 11.56x <unk> 26.94 / 2.33 (estimated FCF per unit) <unk>
 | FCF Yield | 8.65% | |
-| 股息率 | 3.71% | 1.00 / 26.94 |
-| 盈利收益率 | 5.18% | EPS / 股价 |
+<unk> Escillation rate 3.71% <unk> 1.00 / 26.94 <unk>
+<unk> Profit rate <unk> 5.18% EPS/ share price <unk>
 
-**多源交叉验证**：营业收入（862.42亿 ✅）、归母净利润（345.03亿 ✅）、总股本（244.68亿股 ✅），所有来源偏差均<2%。
+** Multi-source cross-check**: operating income (8,622 million <unk> ), net return profit ($34,503 million <unk> ), total equity (24,468 million <unk> ), all source deviations < 2%.
 
-> 数据来源：长江电力2025年年报、东方财富、新浪财经、Investing.com、同花顺
+> Data source: Yangtze Power 2025, Eastern Wealth, New Wave Finance, Investment.com, Hosho
 
 ---
 
-## 第二步：生意本质分析——段永平"对的生意"
+# Step 2: Business nature analysis -- a piece of "right business"
 
-### 一句话定义
+# One word of definition
 
-**长江电力的生意本质是：垄断长江干流不可再生的水力资源，将自然降水转化为稳定的电力收入和现金流分红。**
+** The business nature of the Yangtze electricity is: monopolization of non-renewable hydro resources from the river ' s dry currents, transforming natural precipitation into stable electricity revenues and cash flows.**
 
-### 商业模式画布
+# Business model canvass
 
-- **收入模式**：售电收入（发电量 × 上网电价），非订阅但高度可重复——水来了就发电，电网必须消纳
-- **成本结构**：重资产一次性投入（大坝建设），运营期无燃料成本，边际成本趋近于零
-- **客户锁定**：长期购售电协议，西电东送框架下保量保价，2024年市场化交易电量占比38.6%
-- **资产寿命**：三峡大坝设计寿命150年，其他电站50-100年，存量电站折旧完毕后成本进一步下降
+- ** Income pattern**: Revenue from the sale of electricity (power generation x Internet prices), non-subscription but highly repetitious - water comes and power is generated and the grid has to be eliminated
+- ** Cost structure**: One-time input of heavy assets (dam construction), no fuel cost for the operating life, marginal cost closer to zero
+- **Customer lockdown**: Long-term purchase and sale agreement, guaranteed price under the West East Transport Framework, 38.6% of the marketed trade electricity in 2024
+- **Insolvement life**: design lifetime of the three-thousand dam 150 years, other power stations 50-100 years, further reduced cost after stock stations had been depreciated
 
-### 电价形成机制
+# The power price formation mechanism
 
-| 电站 | 定价机制 | 备注 |
+♪ Power stations, pricing mechanisms, comments, comments, comments ♪
 |------|---------|------|
-| 葛洲坝 | 成本加成定价 | 最传统 |
-| 三峡 | 落地电价倒推（与受端火电标杆电价挂钩） | 送华东、华中、广东 |
-| 溪洛渡、向家坝 | 落地电价倒推 + 部分市场化 | 市场化比例逐步增加 |
-| 乌东德、白鹤滩 | 以市场化定价为主 | 市场化程度最高 |
+The Goose Dam, the cost plus the price, the most traditional, the most traditional, the most expensive, the most expensive, the most expensive, the most expensive, the most expensive, the most expensive, the most expensive, the most expensive, the most expensive, the most expensive, the most expensive, the most expensive, the most expensive, the most traditional, the most expensive, the most expensive, the most expensive, the most expensive, the most expensive, the most traditional, the most important of the most important ones.
+♪ Three gorges, three drop-downs, one drop-off (linked to the fire pole) ♪ To China, China, China, Guangdong, China
+♪ The ♪ ♪ The ♪ ♪ The ♪ ♪ The ♪ ♪ The ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the the the the the ♪ the ♪ the the the the the ♪ the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the
+Utund, White Crane Beach, market pricing, market-based.
 
-梯级电站平均上网电价：285.52元/兆瓦时（2024年，含税），同比提升约4元/兆瓦时。
+The average cost of electricity connected to the grid for the ladder power station is $285.52/MWh (2024, including taxes), with an increase of about $4/MWh in the same year.
 
-### 毛利率与同行对比
+# Māori ratio versus peer
 
-长江电力2025年毛利率61.67%，其中水电业务毛利率65.79%。水电行业整体毛利率高于火电（~20%）、风电（~40%），原因是**零燃料成本**。长江电力在水电公司中毛利率处于中上水平，略低于部分折旧完毕的老电站。
+The Māori ratio for the Yangtze Power sector as a whole was higher than for the electricity sector (~20%), wind power (~40%) because of ** zero fuel costs. The Māori ratio for the Yangtze Power Company is at a medium level, slightly lower than for the old power station, which is partially depreciated.
 
-### 经营杠杆分析
+# Run the leverage analysis
 
-2025年收入增速仅+2.07%，但净利润增速+6.17%——经营杠杆效应明显。主要驱动力：
-1. 债务规模下降 → 财务费用减少（2024年财务费用111亿元，同比减少14亿）
-2. 固定成本不变 + 发电量小幅增长 → 利润弹性放大
-3. 资产负债率从62.9%持续降至58.27%，利息负担持续减轻
+The income growth rate in 2025 was only 2.07%, but the net profit rate was + 6.17% - the operating leverage effect is clear.
+1. Decline in the size of debt • Decrease in financial costs (US$ 11.1 billion in 2024, a decrease of $1.4 billion in the same year)
+2. Fixed cost constant + modest increase in power generation <unk> profit elasticity
+3. The asset-liability rate has been consistently reduced from 62.9 per cent to 58.27 per cent, and the interest burden has been continuously reduced
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **这门生意好在哪？如果只能用一句话描述？**
+> ** Where's the business? If only one word? **
 
-自然垄断+零边际成本+确定性需求。长江的水不会停，中国的电力需求不会萎缩，而你不可能在长江上再建第二组六座梯级电站。这是一门"躺着赚钱"的生意，唯一的变量是天上下多少雨。
+Natural monopolies + zero marginal costs + certainty needs. The water in the Yangtze River will not stop, China will not shrink its electricity demand, and you will not be able to build a second set of six ladder stations on the Yangtze River. This is a business of "stale-making" with the only variable being how much rain rain is going on.
 
 ---
 
-## 第三步：护城河评估——巴菲特"经济护城河"
+# Step three: A moat river assessment -- Buffett "The Economic moat."
 
-### 五类护城河验证
+# Five-class moats certified
 
-| 护城河类型 | 评级 | 验证 |
+<unk> Type of moat
 |-----------|------|------|
-| **品牌/定价权** | ★★★ | 部分具备。水电享有优先上网权，但电价受政府管控，定价权有限。市场化交易比例提升中（38.6%），低成本优势在竞价中占据有利地位 |
-| **转换成本** | ★★★★★ | 极高。电力是标准品，但大坝与电网的物理连接、西电东送的基础设施投资构成事实上的锁定。客户（电网公司）无法"换一家水电站" |
-| **网络效应** | ★★ | 有限。六库联调存在协同效应（增发~100亿千瓦时/年），但并非传统意义的网络效应 |
-| **规模效应** | ★★★★★ | 极强。7,170万千瓦装机，全球最大。规模带来梯级调度优化、管理成本分摊、融资成本优势（AAA评级） |
-| **资源/特许壁垒** | ★★★★★ | 最核心的护城河。长江干流梯级开发权为三峡集团独占，自然资源不可复制。竞争对手拿1万亿也无法在长江上再建一套六站联调系统 |
+<unk> Brand/pricing rights** are partially available. Hydropower has priority access, but electricity prices are regulated by the government and price-fixing is limited.
+<unk> conversion costs** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Network effects** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> **Scalation effects** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The Yangtze River is a three-phasic group with exclusive powers to develop the main ladders of the river.
 
-### 护城河趋势
+# The moat of the river
 
-**过去5年——明显变宽**：
-- 2016年装机4,554万千瓦 → 2023年装机7,170万千瓦（+57%）
-- 从"四库联调"升级为"六库联调"，协同效应增强
-- 资产负债率持续下降，财务护城河加深
+** The last five years - clear width**:
+- Installation in 2016 45,54 million kW — 71.7 million kW in 2023 (+57 per cent)
+- From Four-Bing to Six-Bing, synergies are enhanced.
+- Sustained decline in asset-liability ratios and deepening financial moat
 
-**未来5年预判——保持稳定，略有拓宽**：
-- 水电资源禀赋不变，护城河底座不动摇
-- 抽水蓄能布局（4,000万千瓦储备）增加调峰能力的战略价值
-- 电力市场化改革下，低成本优势的竞争价值更加凸显
-- 但新增大型水电装机空间有限，护城河拓宽速度将放缓
+** The judgment for the next five years - stability, slightly broader**:
+- Water and electricity resources remain the same, the base of the moat is unshakable.
+- The extraction of water storage (40 million kilowatt reserves) increases the strategic value of the ability to peak
+- The competitive value of low-cost advantages is more pronounced under electricity market-based reforms
+- But the additional large hydropower will be limited, and the speed of the moat will slow down.
 
-### 巴菲特式追问
+# Barfith-style questioning
 
-> **10年后这条护城河还在吗？什么能摧毁它？**
+** Is this moat still in place? What can destroy it?**
 
-10年后护城河依然坚固。长江的水不会消失，大坝的物理存在不会改变。能"摧毁"它的理论路径只有两条：一是极端气候变化导致长江流域长期持续干旱（概率极低）；二是政策性强制大幅压低水电上网电价（政治风险，但考虑到碳中和目标下水电的战略地位，可能性不高）。更现实的威胁不是护城河被摧毁，而是**护城河虽在但估值过高导致回报平庸**。
+The moat is still strong 10 years later. The water of the Yangtze River will not disappear, and the physical presence of the dam will not change. There are only two theoretical paths to "defame" it: one is that extreme climate change causes the Yangtze River basin to continue to dry for long periods (with a very low probability); the other is that policy imperatives will significantly lower the price of electricity for electricity (with a low probability given the strategic status of the hydropower in carbon and under the target). The more realistic threat is not that the moat has been destroyed, but that the moat ** that is overvalued has resulted in a flat return**.
 
 ---
 
-## 第四步：逆向思考与风险清单——芒格"反过来想"
+# Step four: Reverse thinking and risk list - Manger's "back-up"
 
-### 失败路径分析
+# Failed path analysis
 
-| 失败路径 | 概率 | 影响程度 | 说明 |
+<unk> Failed path <unk> probabilities <unk> Impact degree <unk> description <unk>
 |---------|------|---------|------|
-| 连续多年严重枯水 | 中（15-20%） | 中 | 2022年枯水导致水电收入-10.6%；极端情况下可能连续2-3年枯水，利润累计下滑15-25% |
-| 电力市场化改革压低电价 | 中（20-30%） | 中 | 市场化交易占比持续提升，新能源大量并网压低边际电价；2026年部分地区代理购电价格同比-10% |
-| 利率上升推高融资成本 | 低（10%） | 中 | 有息负债约2,933亿元，利率每上升1%则增加~30亿财务费用（占净利润~9%） |
-| 大坝安全事故 | 极低（<1%） | 极高 | 三峡大坝设计抵御万年一遇地震，长期安全运行记录良好 |
-| 政策性强制降电价 | 低-中（10-15%） | 高 | 地方政府降电价诉求存在，但水电作为清洁能源受政策保护 |
-| 海外投资亏损 | 低（10%） | 低 | 秘鲁LDS盈利稳定，但地缘政治和汇率风险存在 |
-| 抽水蓄能投资回报不达预期 | 中（20%） | 中 | 回报周期长，监管准许收益率可能不及预期 |
+<unk> Several years of severe water wear, <unk> (15-20%) <unk> 2022 of water water leading to hydroelectric income - 10.6%; extremes may be 2 - 3 years of water wear and accumulated profit decline of 15 - 25%
+The share of marketized transactions has continued to rise, with large new energy sources co-opting low marginal electricity prices; and the price of power purchased by proxy in some parts of the region in 2026 was equal to -10 per cent.
+Interest rate increases push up financing costs 10% low interest interest liabilities of about $293.3 billion, with interest rates increasing by 1% ~ ~3 billion financial costs (net profit ~ 9%) <unk>
+The dam was designed to withstand earthquakes in the years, and the long-term safe operation was good.
+Policy-based compulsory electricity cuts Low-medium (10-15%) High local government claims for electricity cuts exist, but hydropower is protected as a clean energy source Policy protection
+Losses on overseas investments (10%) Low LDSs in Peru are profitable and stable, but geopolitical and exchange rate risks exist
+The return on the pump energy investment is not as good as expected (20%) and the return is likely to be long, and the regulatory approval rate may not be as high as expected
 
-### 历史类比
+# History analogy
 
-- **最佳类比：美国南方电力公司（Southern Company）** ——大型公用事业公司，护城河坚固，增长缓慢但分红稳定。过去20年年化回报约8-10%（含分红再投资）。长江电力的未来回报可能类似。
-- **反面类比：三峡水利（600116）** ——同样是水电资产，但规模和资源禀赋远不如长江电力，估值溢价低。说明不是所有水电都是好投资，规模和垄断地位才是关键。
+- **Best analogy: Southern Company** - Large utility companies, moats, strong, slow but stable growth. Annualized returns of about 8-10% (including dividends) over the last 20 years. The future returns of Yangtze electricity may be similar.
+- ** Negative analogy: Three Gorges water (6001116)** — also hydropower assets, but far less large and less resource endowment than Yangjiang electricity, and less valuation premium. Not all hydropower is good investment, but size and monopoly are key.
 
-### 偏误自查
+# I'm wrong to check myself
 
-| 偏误类型 | 自查结果 |
+<unk> Mistake type <unk> Self-check results <unk>
 |---------|---------|
-| 叙事偏差 | "水电茅台""永续资产"的叙事很有吸引力，但不应忽视增长天花板和估值风险 |
-| 锚定效应 | 容易被历史高点31.36元锚定，认为当前26.94元"便宜"；需用内在价值而非历史股价评估 |
-| 幸存者偏差 | 长江电力是水电龙头，但不代表所有水电公司都值得投资 |
-| 确定性偏差 | 水电的确定性让人低估尾部风险（极端气候、政策变化） |
+The narrative of "Wedics and Waters Pow" is attractive, but it should not lose sight of the growth ceiling and valuation risks.
+The anchoring effect is easily anchored by the historical height of $31.36, which is now 26.94 "favourable"; the value needs to be used instead of historical stock value assessment
+The Yangtze power is a hydroelectric dragon, but it doesn't mean that all hydroelectric companies are worth investing in.
+The certainty of hydropower makes the tail risk (extreme climate, policy changes) underestimated.
 
-### 空方核心论点
+# The empty core argument
 
-1. **增长天花板已至**：2025年收入增速仅2.07%，六站已接近满发，未来有机增长率可能仅2-5%
-2. **估值不便宜**：PE 19.29x对于年增5-6%的公用事业并不低，隐含增长预期可能偏高
-3. **债务依然庞大**：有息负债~2,933亿元，虽在下降但绝对规模仍巨大，利率环境变化是潜在风险
-4. **电价长期承压**：新能源大量并网压低系统边际电价，水电虽受保护但长期影响不可忽视
-5. **机构拥挤交易**：社保、保险、北向资金大量持仓，一旦风格切换可能导致集中卖出
+1. ** Growth ceiling has reached **: income grew by just 2.07 per cent in 2025, six stations are nearing full growth, and the future organic growth rate is likely to be only 2-5 per cent
+2. ** Values are not cheap**: PE 19.29x is not low for utilities that increase by 5-6% per year, and implied growth expectations may be high
+3. ** Debts remain large**: interest-bearing liabilities ~ $293.3 billion, which are declining but still significant in absolute size, and changes in the interest rate environment are a potential risk
+4. ** Long-term voltage**: New energy sources are heavily co-located with low system marginal tariffs, and the long-term effects of hydropower, while protected, cannot be ignored
+5. ** Overcrowded trading**: Social security, insurance, large North-bound funds holdings, which could lead to concentrated sales once style shifts
 
-### 芒格式追问
+# Man format questions
 
-> **我最可能在哪里犯错？聪明人为什么不买？**
+♪ Where do I most likely make mistakes? Why don't you buy them? ♪
 
-最可能犯的错误是**把"好公司"等同于"好投资"**。长江电力确实是一门极好的生意，但聪明人不买的理由很简单：**一家年增长5-6%的公用事业，给19倍PE，含分红的预期年化回报约9-10%，这并不令人兴奋。** 如果你能在其他地方找到15%以上的年化回报机会，长江电力的机会成本就太高了。真正该买长江电力的人是：追求确定性、愿意接受8-10%年化回报、资金量大到需要配置低波动资产的投资者。
+The most likely mistake is to ** equate "good company" with "good investment"**. The reason why electricity is not bought by smart people is really an excellent business: ** a public utility that grows 5-6% a year, giving 19 times PE, with a red annualized return of about 9-10%, is not exciting.** If you can find more than 15% of annualized returns elsewhere, the opportunity cost of electricity is too high. The real buyers of electricity are investors who want certainty, are willing to accept 8-10% annualized returns, and are large enough to have low-volatile assets.
 
 ---
 
-## 第五步：管理层评估——段永平"对的人" + 巴菲特"管理层诚信"
+# Step five: Management assessment -- "The Right Man" # "Management Integrity"
 
-### 核心高管
+# Core executives #
 
-| 职务 | 姓名 | 背景特征 |
+* Functions Name Background characteristics
 |------|------|---------|
-| 董事长 | 刘伟平 | 水利部副部长空降，政府+央企复合型领导 |
-| 副董事长、党委书记 | 何红心 | 正高级会计师，财务和资本运作专家 |
-| 总经理 | 刘海波 | 一线技术干部出身，白鹤滩电厂厂长历任 |
+♪ The government and the Queens ♪
+<unk> Deputy Chairman, Party Secretary <unk> He Xin <unk> Senior Accountant, Financial and Capital Operations Specialist <unk>
+General Manager Liu Haibo, first-line technical staff, head of the White Crane Beach Power Plant
 
-### 关键决策复盘
+# Key decision-making remix
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2016年 | 797亿元收购川云公司（溪洛渡+向家坝） | 装机+73.58%，四库联调年增发~100亿千瓦时 | ★★★★★ |
-| 2022-23年 | 805亿元收购云川公司（乌东德+白鹤滩） | 装机至7,170万千瓦，奠定全球最大 | ★★★★★ |
-| 2019-20年 | 250亿元收购秘鲁路德斯公司 | 2024年利润20亿，配电电价周期性上调 | ★★★★ |
-| 2024年起 | 中期分红机制+承诺2026-30年分红率≥70% | 强化股东回报，提升配置价值 | ★★★★★ |
-| 2025年 | 布局抽水蓄能4,000万千瓦 | 打开第二曲线，但投入大、回报周期长 | ★★★（待验证） |
+In 2016, 79.7 billion yuan to buy the Kawanaya Clouds Company (Hyun Doo+ to the dam) installed + 73.58%, 4-Cubrey Fulbrums increased by ~10 billion kilowatt hours a year.
+2022-23, 80.5 billion dollars to buy the Yunchuan Company, installed to 71.7 million kilowatts, laying the largest rickshaw in the world.
+2019-20: 25 billion yuan to buy the Peruvian Luddes Company, 2024: 2 billion dollars, cyclically upturning the distribution price
+<unk> Since 2024, medium-term red-score mechanisms + commitment of ~70% of 2026-30s <unk> enhanced shareholder returns, enhanced configuration value <unk>
+<unk> 2025 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> (to be verified) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-### 资本配置能力
+# Capital allocation capacity
 
-- **分红记录**：上市22年累计分红24次，总额超2,072.7亿元。2025年分红率70.92%，承诺2026-2030年不低于70%
-- **债务管理**：资产负债率从2021年64.8%持续降至2025年58.27%，AAA信用评级，融资成本低
-- **再融资**：2025-2027年约1,200亿元债券到期，需滚动再融资，目前低利率环境有利
+- **Score records**: 24 points in 22 years of cumulative redecorated in total over $207,270 million. 70,92% in 2025 and no less than 70% in 2026-2030
+- **Debt management**: asset-liability ratio has been continuously reduced from 64.8 per cent in 2021 to 58.27 per cent in 2025, AAA credit rating, low financing cost
+- **Refinancing**: approximately $120 billion in bonds expired in 2025-2027 and needs to be refinanced rolling, with the current low interest rate environment favourable
 
-### 股东利益一致性
+# Shareholder interest consistency
 
-| 维度 | 评价 |
+<unk> Dimensions Evaluation <unk>
 |------|------|
-| 管理层持股 | ★★ 央企体制，高管持股为零或极低，无股权激励 |
-| 控股股东行为 | ★★★★ 三峡集团持股~53%，2025年宣布增持40-80亿元（时隔12年首次） |
-| 薪酬结构 | ★★★ 以基本工资+绩效为主，与业绩挂钩但弹性有限 |
-| 关联交易 | ★★★★ 两次重大收购均经独立董事审核和股东大会投票，定价基本公允 |
+Management ownership, executive management with zero or very low shares, no equity incentives, and management with no equity incentives.
+The third-firth group held a share ~ 53%, with an additional $4 billion to $8 billion announced in 2025 (first time 12 years away)
+* Salary structure * Mainly based on basic pay + performance, linked to performance but limited in resilience
+Both major acquisitions were cleared by independent directors and voted by shareholders ' congresses, and the price was generally fair.
 
-### 治理亮点
+# Governance bright
 
-- 行业内率先实现外部董事占多数（15名董事中10名外部董事）
-- 薪酬与考核委员会、审计委员会全部由外部董事组成
+- Leading the external board (10 out of 15)
+- The Remuneration and Evaluation Board, the Audit Committee, is composed of all external directors
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **如果CEO退休，这家公司还能保持竞争力吗？**
+> ** If CEO retires, will the company remain competitive?**
 
-**完全可以。** 这是管理层评估中最关键的一点：长江电力的竞争力来自资产本身（六座大坝），而非管理层个人能力。大坝不会因为换了CEO就少发电。管理层的主要贡献是资本配置（收购决策）和运营优化（梯级调度），这些已经制度化。央企的管理层更替机制虽非市场化，但三峡集团体系内的人才储备充足。**这是一门"系统驱动"而非"人才驱动"的生意。**
+** Total number of cases.** This is the most critical point in the management assessment: the competitiveness of Yangtze electricity comes from the assets themselves (six dams) rather than from the personal capacity of management. The dam does not generate electricity less because it changes the CEO. The management's main contribution is capital allocation (acquisition decisions) and operational optimization (step-level movement), which have been institutionalized. While the management replacement mechanism is non-marketized, there is sufficient pool of talent within the tri-gorge system.** This is a business that is "system-driven" rather than "brain-driven".**
 
 ---
 
-## 第六步：行业与文明趋势——李录"文明演进框架"
+# Step 6: Industry and civilization trends - Lee Siu ' s Framework for Civilization Evolution
 
-### 行业定位
+# Industry positioning
 
-水电不是"文明级范式转移"的驱动者，而是**文明基础设施的稳定底座**。在AI、新能源、电动车等变革浪潮中，水电扮演的角色是"提供确定性电力供给"——不性感但不可或缺。
+Hydropower is not the driver of the "civilizational paradigm shift" but ** the stable base of civilizational infrastructure. In the wave of change, such as AI, new energy sources, electric cars, it plays the role of "provides definitive power supply" -- not sexy but indispensable.
 
-### 技术革命类比
+# Technology revolution analogy
 
-水电更像是**"铁路"而非"互联网"**：
-- 建设期投入巨大，一旦建成则几乎永久运营
-- 自然垄断，无法被后来者复制
-- 增长缓慢但现金流极为稳定
-- 类比：19世纪美国铁路建成后的长期运营阶段——增长空间有限但提供稳定分红
+Hydropower is more like **rail than Internet **:
+- The construction period is huge and, once built, almost permanent
+- Natural monopoly, impossible to replicate by later.
+- Slow growth but very stable cash flow
+- analogue: long-term operational phase after the construction of the 19th century United States railway — limited growth space but providing a stable score
 
-### TAM与天花板
+# Tam with the ceiling
 
-| 维度 | 数据 |
+<unk> Dimensions <unk> Data <unk>
 |------|------|
-| 中国电力行业总装机 | 38.91亿千瓦（2025年） |
-| 水电总装机 | 4.5亿千瓦，占比11.6% |
-| 长江电力装机 | 7,170万千瓦，占全国水电16%，发电量占21% |
-| 水电新增空间 | 有限（优质资源基本开发完毕），主要增量来自金沙江上游、雅砻江、雅鲁藏布江 |
+<unk> China Power Industry Rumps <unk> 3,891 million kW (2025) <unk>
+<unk> Total power and water installed 450 million kW, 11.6%
+The Yangtze electric power plant has been installed at 71.7 million kW, representing 16 per cent of the national electricity and electricity generation, and 21 per cent of the electricity generated.
+Additional space for hydropower (basic development of high-quality resources)
 
-**关键判断**：中国水电开发已进入"存量为主"阶段。长江电力通过抽水蓄能（储备4,000万千瓦）和海外扩张寻找增量，但增速将远低于过去10年。
+** Key judgements**: China’s hydropower development is now in the “predominant stock” phase. Yangjiang’s electricity is seeking to increase by pumping capacity (storage of 40 million kW) and overseas expansion, but at a much slower rate than in the last 10 years.
 
-### 价值链位置
+# The value chain position
 
-长江电力处于电力产业链的**上游发电端**，掌握最稀缺的资源（水力）。在碳中和目标下，水电作为"零碳基荷电源"的战略地位将持续提升。但风光新能源的大规模并网可能压低系统边际电价，对水电的电价形成间接压力。
+The Yangtze power is at the upstream power end of the electricity chain**, with the most scarce resources (hydropower). The strategic position of hydropower as a zero-carbon-based charge power source will continue to rise under carbon neutral and targeted. But large-scale grid-connection of new wind-fire energy sources may lower the system’s marginal electricity prices, putting indirect pressure on the electricity price of hydropower.
 
-### 水风光互补的战略机遇
+# The strategic opportunities of the water and light to complement each other #
 
-国家推动水风光一体化基地，金沙江、雅砻江等流域规划总规模超9亿千瓦。水电的调峰能力在风光占比提升的电力系统中价值更加突出——这是长江电力的一个中期利好。
+The state promotes the water-winding integration base, which is built on the river basins of Kinshasa and Yagi Rivers, totalled more than 900 million kW. The capacity to raise hydropower is more valuable than the power system that has been upgraded – a medium-term benefit for the Yangtze.
 
-### 李录式追问
+# Lee's asking questions
 
-> **站在20年后回看，长江电力是"这个时代的标准石油"还是"昙花一现的3Com"？**
+> ** Stand by and look back 20 years later, is Yangjie power "standard oil of the time" or "trimmy com"?**
 
-**都不是。** 长江电力更像是"这个时代的伯克希尔·哈撒韦能源公司"——不会成为时代的标志性企业，但会作为一个稳定、可靠、持续产生现金流的资产存在。20年后三峡大坝仍然矗立，六座电站仍然发电，股东仍然收到分红。它不会爆发式增长，也不会衰亡。这恰恰是它的投资价值——可预见性。
+** Not at all.** The Yangtze power is more like "Berkhir Hasaway Energy Company of the times" -- not a landmark business of the times, but a stable, reliable and continuous cash flow asset. Twenty years later, the three-gorge dam is still standing, six power stations are still generating electricity, and shareholders are still receiving dividends. It does not burst into growth or die. That is precisely the value of its investment -- predictability.
 
 ---
 
-## 第七步：估值与安全边际——巴菲特"内在价值" + 段永平"对的价格"
+# Step seven: valuation and security margin -- Barfitt "inner value" + price of "right"
 
-### 当前市场定价（工具验算）
+# Current market pricing (tools validation)
 
-| 指标 | 数值 |
+<unk> Indicators <unk> Value <unk>
 |------|------|
-| 股价 | 26.94元 |
-| 总市值 | 6,592亿元 |
+The price of the shares is 26.94 dollars.
+Total market value 659.2 billion yuan
 | PE（TTM） | 19.29x |
 | PB | 2.82x |
 | ROE | 14.64% |
 | P/FCF | 11.56x |
 | FCF Yield | 8.65% |
-| 股息率 | 3.71% |
-| 盈利收益率 | 5.18% |
-| 10年国债收益率 | ~1.85% |
-| 盈利收益率-国债利差 | ~333bp |
+<unk> Equities 3.71% <unk>
+<unk> Profit rate <unk> 5.18% <unk>
+10 years of returns on public debt
+<unk> Profit rate - public debt spread ~ 333bp ~
 
-### 反向DCF：当前股价隐含了什么？
+# Inverse DCF: What does the current stock price imply?
 
-以26.94元股价反推：
-- 假设折现率8%，永续增长率2%，当前EPS 1.3964元
-- 隐含的长期EPS增长率约**4-5%**
-- 这一增长预期基本合理——与长江电力的有机增长能力（发电量+2-3%，电价+1-2%，债务减轻释放利润）匹配
-- **结论：当前股价隐含的增长预期不算激进，但也没有太多安全边际**
+Inverse at $26.94:
+- 2 per cent permanent growth rate, assuming a discount rate of 8 per cent, current EPS 1.3964
+- Implicit long-term EPS growth rate of about **4-5%**
+- This growth is expected to be largely reasonable - in line with the organic growth capacity of Yangtze power (power generation + 2-3%, electricity prices + 1-2%, and debt relief release profits)
+- ** Conclusion: The current implied growth in stock prices is not expected to be radical, but not too much security margin**
 
-### 三情景估值（工具精确计算，3年期）
+#3 scenario valuation (tool precision, 3-year period)
 
-| 情景 | 年EPS增速 | 目标PE | 3年后EPS | 目标股价 | 潜在涨跌幅 |
+♪ The year the EPS is up, the year is up ♪
 |------|----------|--------|---------|---------|-----------|
-| 乐观（Bull） | 10% | 22x | 1.86元 | 40.9元 | +51.8% |
-| 中性（Base） | 6% | 19x | 1.66元 | 31.6元 | +17.3% |
-| 悲观（Bear） | 2% | 16x | 1.48元 | 23.7元 | -12.0% |
+<unk> Bull 10% <unk> 22x <unk> 1.86 <unk> 40.9 <unk> 51.8% <unk>
+<unk> Gender (Base) 6% <unk> 19x <unk> 1.66 <unk> 31.6 <unk> + 17.3% <unk>
+<unk> Bear 2% <unk> 16x <unk> 1.48 <unk> 23.7 <unk> - 12.0% <unk>
 
-**情景假设说明**：
-- **乐观**：连续丰水年+电价市场化上行+抽蓄贡献利润，PE修复至历史中枢22x
-- **中性**：正常来水+电价稳定+债务减负释放利润，PE维持当前19x
-- **悲观**：枯水年+电价下行+市场风格切换，PE压缩至16x
+** Scenario note**:
+- **optimal**: Successive water years + market-based electricity prices + profit from savings, PE restoration to historical hub 22x
+- **neutral**: Normal inbound water + electricity price stabilization + debt reduction release profits, PE maintenance current 19x
+- ** Pessimism**: Dying water years + electricity prices + market style switch, PE compressed to 16x
 
-### 含分红的预期年化回报
+# With the expected annual returns of red
 
-| 情景 | 3年股价回报 | 年化股息~3.7% | 年化总回报 |
+<unk> 3-year stock return <unk> annual dividends ~ 3.7% <unk> total annual return <unk>
 |------|-----------|-------------|-----------|
-| 乐观 | +14.9%/年 | +3.7%/年 | ~18.6%/年 |
-| 中性 | +5.5%/年 | +3.7%/年 | ~9.2%/年 |
-| 悲观 | -4.2%/年 | +3.7%/年 | ~-0.5%/年 |
+<unk> 14.9%/year <unk> 3.7%/year ~ 18.6%/year <unk>
+<unk> Gender + 5.5%/year + 3.7%/year ~ 9.2%/year
+<unk> Pessimism - 4.2%/year <unk> 3.7%/year ~-0.5%/year <unk>
 
-### 与历史估值对比
+# Compared to historical valuations
 
-| 指标 | 当前 | 近5年最高 | 近5年最低 | 中位数 | 当前分位 |
+<unk> Indicators Current <unk> Top 5 years Middle 5 years Middle <unk> Current <unk>
 |------|------|----------|---------|--------|---------|
 | PE（TTM） | 19.29x | 29.73x | 18.10x | ~23x | ~15% |
-| PB | 2.82x | — | — | — | 中等偏高 |
-| 股息率 | 3.71% | 3.66% | 3.2% | ~3.4% | 偏高（股价偏低） |
+<unk> PB<unk> 2.82x<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> 1<unk> 1<unk> 1<unk> 1<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 2<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> <unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 4<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> <unk> <unk> <unk> <unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk> 3<unk>
+<unk> Equities 3.71% <unk> 3.66% <unk> 3.2% ~ 3.4% <unk> High (low share price) <unk>
 
-当前PE处于近5年约15%分位，显著低于历史中枢23x。
+The current PE is about 15 per cent divided over the last five years, significantly below the historical hub of 23x.
 
-### 与可比公司对比
+# Compared to comparable companies
 
-| 公司 | PE（TTM） | PB | 股息率 | 分红承诺 |
+<unk> Company <unk> PE(TTM) <unk> PB <unk> dividends <unk> split commitment <unk>
 |------|----------|-----|--------|---------|
-| **长江电力** | **19.29x** | **2.82x** | **3.71%** | **≥70%（2026-2030）** |
-| 华能水电 | ~22x | — | ~3.6-4% | ≥70% |
-| 国投电力 | ~16.8x | ~1.67x | ~3.3% | ≥55% |
-| 川投能源 | ~14.9x | ~1.58x | ~2.5-3% | ≥0.5元/股 |
+** Yangtze electricity** ** 19.29 x ** 2.82 x ** 3.71% ** ** 70% (2026-2030)**
+~22x<unk> <unk> 3.6-4%<unk> 70%<unk>
+~16.8x<unk> 1.67x<unk> 3%<unk> 55%<unk>
+~14.9x<unk> 1.58x<unk> 2.5-3%<unk> 0.5%/share
 
-长江电力相对国投电力PE溢价约15%，相对川投能源溢价约29%，反映龙头地位和更高的盈利确定性。但对比华能水电，长江电力当前PE反而更低——可能是市场对华能水电成长性更乐观。
+The Yangtze electric power premium is about 15% versus the state’s PE contribution, and 29% against the river’s energy input, reflecting the primacy and higher profitability. But compared to the energy power plant, the current electricity market is now lower – probably more optimistic about the growth of the power plant.
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **如果股市明天关闭5年，你愿意以这个价格持有吗？**
+> ** If the stock market closes for five years tomorrow, will you hold it at this price?**
 
-**基本愿意，但谈不上兴奋。** 26.94元买入，持有5年，中性假设下每年收到~1元股息（累计~5元），5年后股价可能在30-35元区间。总回报~33-52%，年化~6-8.7%。这个回报对于追求稳定、厌恶波动的资金是可以接受的（尤其对比1.85%的国债收益率）。但对于追求15%+年化回报的积极投资者来说，吸引力不足。**如果股价跌到23-24元区间（PE~16-17x，股息率~4.2-4.3%），安全边际会显著提升。**
+** Essentially willing, but not excited.** 26.94 dollars for purchases, five years for holdings, and ~1 dollar dividends (cumulative ~5 dollars) per year under the neutral assumption, with shares likely to be between 30 and 35 yuan in five years. Total return ~33-52%, annualized ~6-8.7%, is acceptable for funds that are stable and repulsive (especially compared to 1.85% of the return on the national debt).** But the attractiveness for active investors who pursue 15% plus annualized returns is insufficient.** If stock prices fall to 23-24 yuan (PE~16-17x, dividends ~4.2-4.3%), the margin of security will rise significantly**.
 
 ---
 
-## 第八步：综合决策备忘录
+# Step eight: A comprehensive decision-making memorandum
 
-### 汇总评价
+## Summary evaluation
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| 生意质量（段永平） | 极好的生意——自然垄断+零边际成本+确定性需求，"躺着赚钱"型 | ★★★★★ |
-| 护城河（巴菲特） | 极深且稳定——长江干流梯级开发权不可复制，10年后依然坚固 | ★★★★★ |
-| 管理层（段永平+巴菲特） | 合格偏上——资本配置决策出色（两次收购）、股东回报意识强，但央企体制限制了激励绑定 | ★★★★ |
-| 最大风险（芒格） | 增长天花板+估值不算便宜——不是"会不会亏钱"的风险，而是"回报可能平庸"的风险 | ★★★★ |
-| 文明趋势（李录） | 水电是文明基础设施的稳定底座，不会爆发也不会衰亡。碳中和下战略地位稳固 | ★★★★ |
-| 估值（巴菲特+段永平） | 当前PE 19.29x处于历史低位（15%分位），含分红中性预期年化回报~9%。不贵但安全边际有限 | ★★★ |
+♪ The quality of business ♪ ♪ The good business ♪ ♪ The natural monopoly + the zero marginal cost + the certainty demand ♪
+The river is a moat, the river is a mound of depth and stability — the power to develop the step of the river is unrobble and ten years later it is still strong.
+Management (Yongping + Buffett)
+The most risky, the most expensive, the more the ceiling plus the more the value is not cheap -- not the risk of "mayn't lose money," but the risk of "maybe the less good."
+Hydropower is the stable base of civilization's infrastructure, and it will not explode or die.
+<unk> Valuation (Buffett+Ping) <unk> Current PE 19.29x is at a historically low (15% split) with a fraction of the medium expected annual return of ~9%.
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **观望为主，等待更好的价格。** 当前26.94元对应PE 19.29x，中性预期年化回报~9%，对于追求确定性的保守资金可以小仓位建仓（10-15%仓位）。理想建仓区间：23-25元（PE 16-18x，股息率4.0-4.3%） |
-| **持仓者** | **继续持有，享受分红。** 不建议在当前价位减仓——估值处于历史低位，基本面稳健。若股价突破32元（PE~23x接近历史中枢），可考虑减仓10-20%锁定部分利润 |
-| **卖出信号** | ① PE突破25x（股价~35元）且无增长加速迹象 ② 连续2年以上严重枯水导致利润趋势性下滑 ③ 电力市场化改革导致电价持续大幅下降 ④ 出现更具吸引力的替代标的 |
-| **加仓信号** | ① 股价回落至23-24元区间（PE~16-17x，股息率>4.2%） ② 丰水年来临，单季度业绩超预期（如2026Q1+30.5%） ③ 抽水蓄能项目开始贡献利润 ④ 利率持续下行推动高股息资产重估 |
+** Empty warehouser** ** ** waiter is the main waiter and awaits better prices.** Current $26.94 corresponds to PE 19.29x, neutral expected annual returns ~ 9%, and small warehouse space can be built for conservative funds seeking certainty (10-15%). ** Ideally, warehouse space: $23-25 (PE 16-18x, dividends 4.0 - 4.3%) <unk>
+<unk> <unk> The owner** continues to hold and enjoy a share of the bonus.** It is not recommended to reduce the price at this time - the valuation is at a historically low level, the basics are sound. If the stock price goes past $32 (PE~23x near the historical hub), a 10-20% reduction in the locking-down portion of profits could be considered
+<unk> ** Signals sold** <unk> 1 PE breakthroughs 25x (equity price ~ 35 yuan) with no sign of acceleration2 Heavy water loss for more than two years has led to a decline in profit trends3 Power marketization reforms have led to a significant and sustained decline in electricity prices4
+**Step signal** <unk> 1 Stock down to $23-24 (PE~16-17x, dividends > 4.2%)2 Water-rich year, with sub-expected performance in a single quarter (e.g. 2026Q1+30.5%)3 Pumping energy project starting to contribute profits4 Interest rate continues to fall to facilitate high equity asset revaluation
 
-### 合理价格区间
+# A reasonable price range
 
-| 区间 | 股价范围 | PE范围 | 股息率 | 适用情景 |
+<unk> Inter-segment <unk> stock range <unk> PE range <unk> dividends rate <unk> circumstances applicable <unk>
 |------|---------|--------|--------|---------|
-| **深度低估** | <22元 | <16x | >4.5% | 枯水年恐慌+市场暴跌，果断加仓 |
-| **合理偏低** | 22-25元 | 16-18x | 4.0-4.5% | 值得建仓/加仓 |
-| **合理** | 25-30元 | 18-21.5x | 3.3-4.0% | 持有，分红再投资 |
-| **合理偏高** | 30-35元 | 21.5-25x | 2.9-3.3% | 可以减仓10-20% |
-| **高估** | >35元 | >25x | <2.9% | 应该减仓 |
+<unk> Deeply underestimated** < $22 < 16 x > 4.5% <unk> Dwelling years of panic + market crash, determined to stow
+** Reasonable low** <unk> 22-25 <unk> 16-18x <unk> 4.0-4.5 <unk> Worthy of warehousing/siloing
+** Reasonable** $ 25-30 <unk> 18-21.5 x <unk> 3.3-4.0 <unk> Hold, split red reinvest
+** Reasonable height** <unk> 30-35 <unk> 21.5-25 x <unk> 2.9-3.3% <unk> can be reduced by 10-20% <unk>
+** Overestimated** > $35 > 25 x < 2.9% <unk> should be reduced
 
-**当前26.94元处于"合理"区间的中下部，估值不贵但安全边际有限。**
+** The current $26.94 is at the lower end of the "reasonable" zone, valued at a modest cost but with limited security margins**
 
-### 四位大师模拟点评
+# Four masters simulated the reviews
 
-> **巴菲特**："长江电力拥有我最喜欢的那种护城河——自然资源垄断加上低成本优势。它就像一座收费桥，每一滴流过的水都替股东赚钱。但我不会在PE 19倍时大量买入一家年增长5%的公用事业。如果它跌到15-16倍PE，那就是另一回事了。"
+> **Buffett**: "The Yangtze Power has my favorite moat -- the monopoly of natural resources plus the low-cost advantage. It's like a toll bridge, where every drop of water flows makes money for shareholders. But I won't buy a 5%-a-year-up utility at the time of 19 times PE. If it falls to 15-16 times PE, that's another thing."
 
-> **芒格**："反过来想——什么情况下持有长江电力5年会亏钱？答案是几乎不可能，除非你以过高的价格买入。这正是它的优点也是缺点：确定性太高，所以市场已经给了它不错的定价。在座的各位，如果你们的资金成本低于8%，这是一笔不错的投资。如果你们追求15%的年化回报，去别处找吧。"
+> ** Mang**: "Cut back and think -- under what circumstances you're losing money at the Yangtze Five? The answer is almost impossible, unless you buy it at a high price. That's its virtue and its weakness: it's too certain, so the market has already priced it well. If you're here, it's a good investment. If you want to get 15% annualized, go elsewhere."
 
-> **段永平**："这是一门好生意，对的生意，关键是对的价格。26.94元不算贵，但也不是'不用想就该买'的价格。段永平买网易的时候是70美分，那才叫对的价格。长江电力这种公司，你得等到市场先生发脾气的时候——比如来一次2022年那样的枯水恐慌，或者一次系统性的市场暴跌。"
+> **nnnnn a good business, right business, right price. 26.94 is not a price, but not a price of 'never mind to buy'. The price is 70 cents when the Internet is easy. You have to wait for a company like Yangjie to get angry -- like a dry water panic in 2022, or a systematic market crash."
 
-> **李录**："长江电力不是文明进步的引擎，而是文明运转的基石。它不会让你发财，但它会在所有周期中存活。对于管理大规模资金的机构投资者，这类资产的价值在于'可预见性'。但对于个人投资者，机会成本的考量更重要。"
-
----
-
-## AI分析置信度 vs 投资确定性
-
-### AI分析置信度：高（A级信息充裕）
-
-本报告基于20年以上的完整财务数据、数百篇券商研报和媒体报道、多源交叉验证的核心指标。以下结论有充分数据支撑：
-- 生意本质判断（自然垄断+零边际成本）
-- 护城河评估（资源壁垒极强）
-- 财务数据和估值计算（工具精确验算）
-- 历史分红记录和管理层决策复盘
-
-### 投资确定性：中高
-
-投资确定性来自生意本质而非资料数量。长江电力的高确定性体现在：
-- **收入确定性高**：水来了就发电，电发了就能卖
-- **现金流确定性高**：经营杠杆+债务减负，自由现金流充裕
-- **分红确定性高**：章程明确≥70%分红，控股股东增持表态
-
-**不确定的部分**：
-- 年度来水量波动（10-15%影响幅度）——这是真实的自然风险，无法通过更多研究消除
-- 电力市场化改革的最终影响——政策走向具有不确定性
-- 抽水蓄能投资的长期回报——尚处早期，数据不足以判断
-
-**最终判断**：长江电力是A股市场上确定性最高的公司之一，"好公司"的判断可以给高置信度。但"好价格"的判断置信度中等——当前估值合理但安全边际有限，需要投资者根据自身回报要求和机会成本做出取舍。
+> **Lisu**: "Gang Power is not an engine of civilization ' s progress, but a cornerstone of civilization 's functioning. It does not make you rich, but it will survive in all cycles. For institutional investors who manage large-scale funds, the value of such assets is 'foreseeability'. But for individual investors, the opportunity cost is more important."
 
 ---
 
-> 数据来源：长江电力2021-2025年年报、东方财富、新浪财经、同花顺、Investing.com、理杏仁、GuruFocus、国家能源局、前瞻网、智研咨询、东吴证券、中信证券研报、知乎、雪球、集思录
+# AI analyze confidence vs investment certainty
+
+# # AI analyze confidence: High (A level of information is good)
+
+The report is based on complete financial data for more than 20 years, hundreds of voucher firms and media reports, and core indicators that are cross-checked across multiple sources. The following conclusions are supported by sufficient data:
+- Business nature judgement (natural monopoly + zero marginal cost)
+- Waterfront assessment (resource barriers are extremely high)
+- Financial data and valuation calculations (tool accuracy)
+- History Red Record and Management Decision Recompirment
+
+# Investment certainty: medium and high
+
+The high degree of certainty about the power of Yangjie is reflected in:
+- ** High income certainty**: When the water comes, it's powered, it's sold.
+- ** High degree of certainty in cash flow**: operating leverage + debt reduction, ample free cash flow
+- ** High redweedics**: the constitution is clear: ~70% red, and the controlling shareholders are on the increase
+
+** Undefined part**:
+- Annual fluctuations in water levels (10-15% of the impact range) - this is a real natural risk that cannot be eliminated through more research
+- The ultimate impact of electricity market reform — policy course uncertain
+- Long-term return on investment in pumping capacity - early, data not enough to judge
+
+** Final Judgement**: The Yangtze Power is one of the most certain companies in the A share market, and the "good company" judgement can give high confidence. But the "good price" judgement is medium-confidence – the current valuation is reasonable but the security margin is limited and requires investors to make trade-offs based on their own return requirements and opportunity costs.
+
+---
+
+> Data source: Yangjiang Electricity Annual 2021-2025, Eastern Wealth, New Wave Finance, Hosho, Investment.com, Almonds, GuruFocus, National Energy Agency, Foresight Network, IQS, Dong Oo Securities, Sino-Sin Securities Research, Kyoyu, Snowball, brainstorming

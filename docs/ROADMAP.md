@@ -1,37 +1,37 @@
 # ai-berkshire Roadmap
 
-## P0：近期（1-2个月）
+## P0: Recent (1-2 months)
 
-### A股数据源接入
-- 接入 akshare、东方财富等免费数据源
-- 覆盖 A 股财务数据、行情、龙虎榜
-- 现有 Skill 无需改动，数据层扩展即可
+### A-share data source access
+- Access free data sources such as akshare and Oriental Fortune
+- Covers A-share financial data, market trends, and dragon and tiger rankings
+- Existing skills do not need to be modified, the data layer can be expanded
 
-## P1：中期（3-6个月）
+## P1: Mid-term (3-6 months)
 
-### HTML 报告输出
-- 在 Markdown 基础上增加 HTML 报告格式
-- 支持暗色模式、导航栏、图表可视化
-- 提升报告传播性和阅读体验
+### HTML report output
+- Add HTML report format based on Markdown
+- Support dark mode, navigation bar, chart visualization
+- Improve report dissemination and reading experience
 
-### 多档深度模式
-- `lite`：5分钟速判，快速给出估值区间和核心结论
-- `standard`：当前默认模式，完整多Agent研究
-- `deep`：增加更多交叉验证和历史类比，机构级深度
+### Multi-level depth mode
+- `lite`: 5-minute quick judgment, quickly give valuation range and core conclusions
+- `standard`: current default mode, complete multi-Agent research
+- `deep`: Add more cross-validation and historical analogies, institution-level depth
 
-### 多股横向对比
-- 支持 2-4 只股票同维度横向对决
-- 同行业公司估值对标
-- 输出对比矩阵和择优建议
+### Horizontal comparison of multiple stocks
+-Support 2-4 stocks in the same dimension for horizontal duel
+- Valuation benchmarking of companies in the same industry
+- Output comparison matrix and selection suggestions
 
-## P2：长期（6个月+）
+## P2: Long term (6 months+)
 
-### 测试覆盖
-- 为核心工具（financial_rigor.py 等）增加单元测试
-- 为 Skill 输出增加回归测试
-- 确保迭代不破坏已有功能
+### Test coverage
+- Add unit tests for core tools (financial_rigor.py, etc.)
+- Add regression testing for Skill output
+- Ensure iteration does not break existing functionality
 
-### 组合级分析
-- 持仓组合健康度评估
-- 行业/地域集中度分析
-- 相关性风险检测
+### Portfolio Level Analysis
+- Assessment of the health of the position portfolio
+- Industry/geographical concentration analysis
+- Relevance risk detection

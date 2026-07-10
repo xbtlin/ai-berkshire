@@ -1,41 +1,41 @@
-# 绿的谐波（688017.SH）四大师综合投资研究报告
+# Green Harmonisation (688017.SH) Four Masters of Integrated Investment Studies
 
-**研究日期**：2026年6月23日
-**股价**：~330元 | **市值**：~605亿元 | **总股本**：1.8333亿股
-**52周区间**：波动剧烈 | **2025年净利润**：1.24亿元
-
----
-
-## 信息丰富度评级：B级（信息适中）
-
-绿的谐波是科创板上市公司，7家券商覆盖（2买入+5增持），信息量适中但以概念炒作叙事为主。核心风险在于市场共识过于乐观——"人形机器人"叙事主导定价，基本面数据反而被忽视。
-
-**AI研究局限性声明**：
-- 人形机器人需求预测高度不确定，各来源差异大（2027年需求600万台 vs 实际可能远低于此）
-- 与哈默纳科的技术差距评估主要来自国内媒体/券商，可能存在乐观偏差
-- 产能利用率、客户集中度等细节数据披露不充分
-- 当前股价波动极大（380-600亿市值区间），估值判断对取价时点高度敏感
+** Date of study**: 23 June 2026
+** Stock **: ~ 330 ** Market value ** ~ 60.5 billion ** Total equity**: 1833.3 million shares
+** 52 weeks**: volatile ** 2025 net profit ** 124 million yuan
 
 ---
 
-## 一、生意本质分析 — 段永平"对的生意"
+# Information abundance rating: B (median)
 
-### 用一句话定义这门生意
+The green collage is a company listed on the board, with seven coupons covered (2 buy-in +5 increase), with moderate information levels but mostly conceptually based narratives. The core risk is that market consensus is too optimistic – the narrative of "human robot" is dominated by pricing, and basic data is ignored.
 
-**绿的谐波是中国唯一实现谐波减速器全产业链自主的精密制造商，为工业机器人和人形机器人提供核心关节部件。**
+**A. Study limitations statement**:
+- The human robotics demand forecast is highly uncertain and the sources vary widely (six million vs in 2027), which may actually be much lower)
+- Assessment of the technology gap with Harmonaco, mainly from domestic media/colleges, with possible optimism bias
+- Inadequate disclosure of details of capacity utilization, client concentration, etc.
+- Current stock price volatility (38-60 billion market value range) is very high and valuation judgements are highly sensitive to the timing of the bid
 
-### 收入结构（2025年）
+---
 
-| 产品 | 收入（万元） | 占比 | 同比增速 | 毛利率 |
+# One, business nature analysis - a piece of "right business"
+
+# Define this business in a word
+
+** Green collage is the only sophisticated manufacturer in China that has achieved full-scale chain autonomy for the harmonic deceleration machine, providing core joint components for industrial and human robots**
+
+## Income structure (2025)
+
+The product, the income (millions of dollars) the ratio, the rate of increase, the rate of Maori, the rate of increase, the rate of gross domestic product, the rate of gross domestic product, the rate of gross domestic product, the rate of loss, the rate of loss, the rate of loss of income, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of increase, the rate of the gross national product, the rate of the gross national product, the rate of the income, the amount of the income, the amount of the income, the proportion of the income, the proportion of the income, the proportion of the income, the proportion of the population, the proportion of the population, the proportion of the population, the proportion of the population, the proportion of the population, the proportion of the population, the proportion of the population, the proportion of the population, the number of the population, the number, the population, the number of the population, the which, the
 |------|------------|------|---------|--------|
-| 谐波减速器及金属件 | 47,649 | 83.4% | +46.4% | 36.8% |
-| 机电一体化产品 | 7,430 | 13.0% | +41.3% | 40.9% |
-| 智能自动化装备 | 1,489 | 2.6% | +221.4% | 11.5% |
-| **合计** | **57,100** | **100%** | **+47.3%** | **36.9%** |
+<unk> Coalcer and metal items 47,649 <unk> 83.4 <unk> + 46.4 <unk> 36.8 <unk>
+<unk> Machine and electric integration products <unk> 7,430 <unk> 13.0 <unk> +41.3 <unk> 40.9 <unk>
+<unk> Smart automation equipment 1 489 <unk> 2.6% <unk> 221.4% <unk> 11.5% <unk>
+** Total ** 57 100** 100% ** ** 47.3% ** 36.9% **
 
-### 5年盈利能力趋势
+# # 5 years of profitability trend
 
-| 年份 | 营收（亿元） | 同比 | 净利润（亿元） | 同比 | 毛利率 | ROE |
+<unk> Year Collection (millions)
 |------|------------|------|-------------|------|--------|-----|
 | 2020 | 2.17 | +16% | 0.82 | +40% | ~50% | — |
 | 2021 | 4.43 | +105% | 1.89 | +131% | ~53% | 5.5% |
@@ -44,338 +44,338 @@
 | 2024 | 3.87 | +9% | 0.56 | -33% | ~37% | 1.6% |
 | **2025** | **5.71** | **+47%** | **1.24** | **+121%** | **36.9%** | **4.2%** |
 
-**关键趋势**：
-- **收入**：2021年爆发（+105%）→2022-2023年行业下行→2024年缓慢复苏→2025年强劲反弹
-- **毛利率**：从53%持续下滑至37%，连续4年下行，价格战侵蚀严重
-- **净利润**：2021年高点1.89亿→2024年低点0.56亿→2025年回升至1.24亿，但仍未回到2021年水平
-- **ROE极低**：1.6%-5.5%，IPO+定增导致净资产基数庞大（约35亿），资金使用效率差
+** Key trends**:
+- **Income**: 2021 outbreak (+105%) <unk> 2022-2023 industry downside <unk> 2024 slow recovery <unk> 2025 strong rebound
+- **Māori**: from 53% to 37%, four years down, price erosion is high
+- ** Net profit**: The 2021 high point – the 2024 low point – 56 million – the 2025 recovery to 124 million, but it still has not returned to the 2021 level
+- ** ROE extremely low**: 1.6% - 5.5%, IPO+ fixed increase leading to a large net asset base (approximately 3.5 billion) and inefficient use of funds
 
-### 商业模式画布
+# Business model canvass
 
-| 维度 | 绿的谐波 | 评价 |
+♪ The green wave ♪
 |------|---------|------|
-| 收入模式 | 硬件一次性销售（减速器单价~1,128元/台） | 无订阅/复购属性 |
-| 产品形态 | 精密机械零部件 | 典型B2B工业品 |
-| 客户粘性 | 中强（验证周期6-12月，但非不可替代） | 有转换成本但非锁定 |
-| 下游分布 | 多关节机器人36%、协作机器人32%、数控机床8% | 高度依赖机器人行业景气度 |
-| 定价权 | 弱化中（单价一年降15%，毛利率连降4年） | 国产替代完成后开始内卷 |
+<unk> Income pattern <unk> One-time sale of hardware (swinger unit price ~ $1,128/desk) <unk> No subscription/repurchase properties <unk>
+<unk> Product form <unk> precision mechanical parts <unk> typical B2B industrial products <unk>
+<unk> Client sticky <unk> Medium strong (verification cycle 6-December, but not irreplaceable) <unk> Conversion costs but not locking <unk>
+<unk> Downstream distribution <unk> multi-band robot 36%, collusive robot 32%, digital machine bed 8% <unk> highly dependent on the robotic industry climate <unk>
+The price is reduced by 15% per year per unit and the Maori rate is reduced by four years.
 
-### 段永平式追问：这门生意好在哪？
+# # # a long-square chase: Where is the business?
 
-**好的一面**：谐波减速器是机器人的"关节"，是不可或缺的核心部件，技术门槛真实存在（P型齿廓、交叉滚子轴承等）。绿的谐波是中国唯一实现全产业链自主的企业，在国产替代浪潮中占据龙头地位。
+** Good side**: Harmonizers are robotic "hypes" and are essential core components, and technological thresholds are real (P-codge stubbles, cross-rolling bearings, etc.). Green symmetry is the only Chinese enterprise that has achieved full-scale chain autonomy and has the leading role in the national production replacement wave.
 
-**不好的一面**：
-1. **毛利率连降4年**（53%→37%），说明"国产替代"红利正在消退，进入国产厂商之间的价格战阶段
-2. **ROE极低**（1.6%-4.2%），说明大量融资的钱没有高效运转——IPO+定增募了几十亿，净利润只有1亿多
-3. **周期性强**——2023年收入下降20%、利润暴跌46%，说明这不是一门"旱涝保收"的生意
-4. **单价持续下行**（~1,320元→~1,128元，降幅15%），与段永平最看重的"定价权"背道而驰
+♪ Bad side ♪
+1. ** The four-year decline in the Maori ratio** (53% ~ 37%) indicates that the "national production replacement" dividend is waning into a price-war phase between national producers
+** ROE is extremely low** (1.6-4.2%), which indicates that the large amount of money financed is not working efficiently - IPO+ raised billions of dollars and net profits were more than 100 million
+**Cyclical** — 20% decline in income and 46% collapse in profits in 2023, which means this is not a "drought-and-water" business
+4. ** The unit price continued down ** (~ $1,320 ~ $1,128, 15% reduction) contrary to the "pricing power" that is the most valued in the Eternity of the Sector
 
-**如果只能用一句话**：绿的谐波是一门"好赛道、好技术、差商业模型"的生意——产品重要但不稀缺，技术领先但在被追赶，定价权在丧失而非增强。
+** If we can only use one sentence**: Green waves are a business of "good track, good technology, bad business models" - products are important but not scarce, technology is ahead but being chased, and pricing rights are being lost rather than enhanced.
 
-**评分：★★★（3/5）— 技术含量真实但商业模式不够好，毛利率下行趋势令人担忧**
+** Rating: <unk> (3/5) - Real technology but not good business models, and the downward trend in Māori rates is worrying**
 
 ---
 
-## 二、护城河评估 — 巴菲特"经济护城河"
+# II. A moat assessment - Buffett "The Economic moat."
 
-| 护城河类型 | 验证 | 评分 |
+♪ The moat type ♪
 |-----------|------|------|
-| 品牌/定价权 | ❌ 单价一年降15%，毛利率连降4年，明确缺乏定价权 | ★ |
-| 转换成本 | ⚠️ 验证周期6-12月提供一定粘性，但多家国产厂商已通过验证 | ★★★ |
-| 网络效应 | ❌ 不存在 | — |
-| 规模效应 | ⚠️ 全球产能排名第三（12%），但利用率不足50% | ★★ |
-| 技术/专利壁垒 | ✅ P型齿廓、交叉滚子轴承自研，204件专利，国内唯一全链路自主 | ★★★★ |
+Brand/pricing rights 15% per year per unit price reduction, four years after Māori rate decline, clear lack of pricing authority
+The certification cycle is 6-December.
+<unk> Network effects<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Scale effect <unk> Global capacity ranking 3 (12%), but utilization rate is less than 50% <unk>
+<unk> Technical/patent barriers <unk> P-type cogs, cross-rolling bearings, 204 patents, the only full-link autonomy in the country <unk>
 
-### 技术壁垒深度解析
+# Technical barriers deep down
 
-绿的谐波的技术壁垒是其最核心的资产：
+The green harmonic technical barriers are its core asset:
 
-**与哈默纳科对比**：
+** Compared to Harmonako**:
 
-| 维度 | 绿的谐波 | 哈默纳科 | 判断 |
+♪ The Queen, the Queen, the Green Harmonico, the Queen, the Queen, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Jute, the Jute, the Jute, the Juve, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Holy Spirit, the Juve, the Juve, the Ju, the Ju, the Holy, the Holy, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the Lord, the
 |------|---------|---------|------|
-| 传动精度 | 1 arc min | 1 arc min | 持平 |
-| 空程(回差) | <30 arc sec | 60 arc sec | **绿的优** |
-| 设计寿命 | 15,000h | 10,000h | **绿的优** |
-| 精度保持性 | 有差距 | 优 | 哈默优 |
-| 噪音控制 | 有差距 | 优 | 哈默优 |
-| 售价 | 1,100-2,000元 | 3,000-4,000元 | **绿的优（约50%折价）** |
-| 产品谱系 | 不完整 | 齐全 | 哈默优 |
+<unk> 1 arc merc merc merm
+<unk> Air (return) < 30 arc sec<unk> 60 arc sec<unk> green**
+♪ The green ♪
+The hysteria, the accuracy, the difference.
+Noise control, noise control, no difference.
+*The price of the sale is 1,100 to 2,000 * 3,000 to 4,000 ** green good (approximately 50% discount)**
+The product spectrum, the product spectrum, the whole thing, the whole thing, the whole thing.
 
-**核心判断**：绿的谐波在主要参数上已追平甚至超越哈默纳科，但在精度保持性和噪音控制等"使用体验"维度仍有差距。价格约为哈默纳科的50%是其最大竞争武器——但这同时也意味着"以价换量"，牺牲利润率换市场份额。
+** Core judgement**: Green harmonics have been levelled out on key parameters and even beyond Hamernaco, but there is still a gap in the "use experience" dimensions of accuracy maintenance and noise control. About 50% of Harmonaco's price is its biggest competitive weapon – but it also means "price for money" at the expense of profit for market share.
 
-### 护城河趋势
+# The moat of the river
 
-**过去5年**：**变窄**。技术壁垒本身没有削弱，但竞争格局在恶化——来福谐波、大族精密、双环传动等国产对手快速追赶，谐波减速器国产化率从39%飙升至75%。国产替代的"共同敌人"（哈默纳科）被打败后，国产厂商开始相互厮杀。毛利率从53%降至37%就是护城河变窄的直接证据。
+The technical barriers themselves have not weakened, but the pattern of competition has deteriorated — the rapid catch-up of rivals in the countries of Lei Fu, the elite, the bi-ring movement, and the national production rate of the harmonic deceleration has risen from 39% to 75%. After the defeat of the national substitute "Common Enemy" (Hammernaco), the national producers began to fight each other. The decline in the Maori rate from 53% to 37% is a direct proof of the narrowness of the moat.
 
-**未来5年**：**取决于人形机器人**。如果人形机器人需求爆发，谐波减速器出现供不应求，绿的谐波作为产能最大的国产厂商会受益，护城河可能暂时变宽。但如果需求不及预期，产能过剩（全球利用率已不足50%）将加剧价格战，护城河进一步变窄。
+If demand for human robots erupts, the harmonic slowdown is in short supply, the green harmonics benefit from being the most productive national producer, and the moat may become slightly wider. If demand falls short of expectations, excess capacity (which is less than 50% globally) will exacerbate price wars and the moat will become even narrower.
 
-**巴菲特式追问**：10年后这条护城河还在吗？
+**Buffettian **: 10 years later, is this moat still there?
 
-技术壁垒大概率还在——精密制造的know-how不容易被彻底复制。但定价权可能进一步丧失。谐波减速器可能走上"液晶面板"的老路：中国企业通过技术突破+价格战击败日本对手，然后在国产厂商之间继续内卷，最终所有人都不赚钱。
+Technical barriers are likely to remain – the know-how that are sophisticatedly manufactured are not easy to replicate. But pricing power may be lost further. Harmonizing the deceleration device may go down the old path of the LCD: Chinese firms defeat Japanese opponents through technological breakthroughs + price wars, then continue to introvert among national producers, and eventually all of them will not make money.
 
-**评分：★★★（3/5）— 技术壁垒真实但在缩窄，定价权持续丧失是最大隐忧**
+** Rating: <unk> (3/5) - Technical barriers are real but narrow, and the continued loss of pricing rights is the greatest concern**
 
 ---
 
-## 三、逆向思考与风险清单 — 芒格"反过来想"
+# Three, reverse thinking and risk list - Manger's "backward thinking"
 
-### 失败路径
+# Failed path
 
-| 风险路径 | 概率 | 影响 | 说明 |
+Risk path, probability, impact, description, description.
 |---------|------|------|------|
-| 人形机器人放量远不及预期 | **高** | **极高** | 当前估值的核心支撑。特斯拉Optimus量产时间表一再推迟 |
-| 毛利率继续下滑至30%以下 | **中高** | **高** | 单价一年降15%，国产对手持续追赶 |
-| 产能过剩导致行业性亏损 | **中** | **高** | 全球产能利用率已不足50%，绿的自身扩至159万台 |
-| 技术路线变化（行星减速器替代） | **中低** | **极高** | 人形机器人可能采用不同的减速方案 |
-| 大客户流失 | **中** | **中高** | 第一大客户优傲占比13%，前五大客户变动较大 |
-| 哈默纳科大幅降价反击 | **中** | **高** | 哈默产能从130万扩至260万台，有降价空间 |
+The human robots are far less than expected, and the current valuation is based on the core of the current valuation.
+<unk> Māori rate continues to decline to below 30% <unk> Medium ** High ** High ** Single price drops by 15% a year, and the national rivals keep catching up <unk>
+<unk> Overcapacity leads to industrial losses <unk> Medium** High** Global capacity utilization is less than 50%, and green itself extends to 1.59 million units
+<unk> Technological route changes (planetary deceleration) <unk> medium ** low ** very high ** human robots may use different deceleration options <unk>
+<unk> Large client loss <unk> Medium ** High ** Top client pride 13%, top five clients change considerably <unk>
+Harmonako has been able to fight down a lot of prices, and the number of prices has been reduced from 1.3 million to 2.6 million.
 
-### 历史类比
+# History analogy
 
-绿的谐波让人想起**2015-2018年的京东方（BOE）**——同样是在国产替代叙事下，技术突破后获得巨大市场关注。但京东方的教训是：即使技术追上了，面板行业最终变成了"谁都不赚钱"的苦生意，ROE长期低于5%。绿的谐波ROE已经只有1.6%-4.2%，毛利率连降4年，轨迹令人不安。
+The green harmonic wave reminds me of **The 2015-2018 Kyoto East (BOE)** – also under the alternative narrative of national production, where technology has gained great market attention. But the lesson from the Kyoto East is that even if technology is up, the panel industry has finally become a hard business of "no one makes any money" and ROE has been under 5% for a long time. Green Harbleroe has only 1.6% - 4.2%, and the Maori rate has fallen four years, and the trajectory is disturbing.
 
-**更乐观的类比**是**宁德时代早期**——同样是中国制造商在核心零部件领域击败日本对手，最终凭借规模效应建立了持久的竞争优势。但宁德时代的毛利率在扩张期维持在25-30%，而绿的谐波的37%正在快速向这个区间靠拢——且收入规模（5.7亿）与宁德时代不可同日而语。
+** The more optimistic analogy** is ** the early part of the Ningde era** – also the Chinese manufacturer defeated Japanese rivals in the core spare parts field, and eventually created a lasting competitive advantage with scale effects. But the Māori ratio of Ningde has remained at 25-30% during expansion, while 37% of the green collage is fast approaching the zone – and the scale of income (570 million) is not comparable to that of Ningde.
 
-### 芒格式追问：聪明人为什么不买？
+# Man format asks: Why don't smart people buy it?
 
-1. **PE 485倍**——即使2025年利润翻倍至2.5亿，PE仍高达242倍。要让估值合理化（PE降至50倍），净利润需要达到12亿——是当前的10倍。这意味着你在赌一个极度乐观的未来
-2. **7家券商均价目标价238元**——当前330元已超出卖方目标价39%。连最乐观的分析师都认为股价过高
-3. **毛利率下行**——市场在讲"量的爆发"故事，但忽视了"价的崩塌"。即使出货量翻3倍，如果单价再降30%+毛利率降至25%，利润增长可能远不及预期
-4. **ROE 4.2%**——净资产35亿只赚1.24亿，资本效率极差。市场给了605亿市值，说明价格完全脱离了资本回报的锚
-5. **实控人首次减持**——上市6年后兄弟二人同时首次减持3%，信号值得重视
+**PE 485 times** ** ** Even if profits doubled to 250 million in 2025, PE is 242 times higher. To rationalize valuation (PE down to 50 times), net profits would need to reach 1.2 billion – 10 times the current level. This means you're betting on a very optimistic future.
+**7 coupons are at a target price of $238** – currently $330 is 39% above the seller's target.
+3. **Mauritage downside** - The market is telling the story of the "quantity" but ignores the "price collapse". Even if the volume of the shipment triples, if the unit price drops by 30 + Māori down to 25 %, the profit growth may be far less than expected.
+**ROE 4.2%** — net assets of 3.5 billion make only 124 million dollars and capital efficiency is extremely inefficient. Markets gave 60.5 billion dollars in market value, indicating that prices are completely off the anchor of the return on capital
+** The first reduction in the control of the physical person** — the first reduction of 3% for the brother and brother in six years after listing at the same time is noteworthy.
 
-**评分：★★（2/5）— 风险/回报严重失衡，多个高概率风险路径**
+** Rating: <unk> (2) - Risk/return imbalance, multiple high probability risk paths**
 
 ---
 
-## 四、管理层评估 — 段永平"对的人"
+# Four, management assessment - "The Right Man"
 
-### 左昱昱（董事长）& 左晶（副董事长）
+# Left # # left # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # ( # # # # # # # # #
 
-| 维度 | 评价 | 评分 |
+<unk> Dimensions <unk> Evaluation <unk> Rating <unk>
 |------|------|------|
-| 技术能力 | 2003年从精密加工转型自主研发谐波减速器，突破日本垄断，技术直觉和坚持值得尊重 | ★★★★ |
-| 战略眼光 | 选对了赛道，在国产替代窗口期建立了领先地位 | ★★★★ |
-| 资本配置 | IPO+定增募资数十亿，ROE仅1.6%-4.2%，大量资金配置低收益资产，效率差 | ★★ |
-| 股东利益一致性 | 兄弟合计持股37.6%，利益绑定较深；但2025年首次减持3%是负面信号 | ★★★ |
-| 诚信度 | 无重大负面记录 | ★★★★ |
+The transition from precision processing to autonomous development of a harmonic deceleration device in 2003 broke through the Japanese monopoly, and the intuition and persistence of technology was worthy of respect.
+The race track was right, and the lead was established during the National Production Alternative Window.
+IPO+ set up multi-billion grant-raising, ROE only 1.6-4.2 per cent, large amount of money allocated to low-yield assets, inefficient efficiency
+The shareholders' interests are consistent. The brothers have a total share of 37.6% and the benefits are more tied; but the 3% cut for the first time in 2025 is a negative sign.
+Good faith, no significant negative record.
 
-### 关键决策复盘
+# Key decision-making remix
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2003年 | 从精密加工转型研发谐波减速器 | 正确。抓住国产替代历史机遇 | ★★★★★ |
-| 2020年 | 科创板上市 | 正确。获得资金和品牌背书 | ★★★★ |
-| 2024年 | 收购德国Haux | 待验证。垂直整合方向对，但协同效应尚未显现 | ★★★ |
-| 2024-2025年 | 定增20亿扩产 | 方向正确但时机值得商榷——在产能利用率不足50%时大幅扩产 | ★★★ |
-| 2025年 | 首次减持3% | 负面信号。"自身资金需求"的解释缺乏说服力 | ★★ |
+<unk> 2003 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The funds and brand endorsements are available.
+The acquisition of the German Haux is pending verification. Vertical integration is right, but the synergism has not yet been demonstrated.
+The increase of 2 billion by 2024-2025 is a question of timing, but it is a question of whether the rate of capacity utilization is significantly increased when it is less than 50%.
+The reason why you're not in the financial position is not convincing.
 
-### 段永平式追问：如果CEO退休，这家公司还能保持竞争力吗？
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-**大概率可以**。谐波减速器的竞争力来自技术积累和制造工艺，而非创始人个人魅力。左氏兄弟建立了技术团队和生产体系，这些组织能力可以传承。但战略方向（如人形机器人布局的timing和力度）可能会因管理层更替而出现偏差。
+The ability to deliver technology and production systems is built by the Left Brother, who has built the technical teams and production systems that can be passed on. But strategic directions (such as the timing and the strength of the human robot layout) may be distorted by the change of management.
 
-**评分：★★★（3/5）— 技术创业者值得尊重，但资本配置效率差、首次减持是瑕疵**
+** Rating: <unk> (3/5) - Technology entrepreneurs are respected, but inefficient capital allocation and first reduction is a flaw**
 
 ---
 
-## 五、行业与文明趋势 — 李录"文明演进框架"
+# V. Trends in industry and civilization - Lee Siu 'A framework for civilization evolution
 
-### 谐波减速器所处的文明趋势
+# The civilization of the harmonic deceleration
 
-谐波减速器处于两个重叠的文明级趋势交汇点：
+The harmonic deceleration is at two overlapping points of civilizational trend:
 
-1. **工业自动化**（进行中）：全球工业机器人密度持续提升，中国从2015年的49台/万人上升至2023年的392台/万人，仍有翻倍空间
-2. **人形机器人**（潜在）：如果实现，是"蒸汽机级别"的范式转移。但当前处于极早期
+1. **Industrial automation** (ongoing): Global industrial robotic density has continued to increase, with China increasing from 49 in 2015 to 392 in 2023, with still more space for doubling
+2. ** Human robot** (potential): if realized, it is a paradigm shift of "steam level". But it is at an early stage.
 
-### TAM分析
+# Tam analysis #
 
-| 市场 | 2024年规模 | 预测 | CAGR |
+Market 2024 Size
 |------|-----------|------|------|
-| 全球谐波减速器 | ~5亿美元 | 2032年29亿美元 | 29.5% |
-| 中国谐波减速器 | ~51.5亿元 | 持续增长 | ~28% |
-| 含人形机器人的潜在市场 | — | 2025年147.5亿元 | — |
-| 人形机器人对谐波需求 | ~0 | 2027年600万台（乐观预测） | — |
+<unk> Global harmonic deceleration device ~ $500 million ~ $2.9 billion in 2032 <unk> 29.5% ~
+<unk> China Harmonizer ~ $5.15 billion <unk> Sustained growth ~ 28% ~
+The potential market for human robots.
+The human robot needs a collage.
 
-### 绿的谐波在产业链中的位置
+# Green waves in the industrial chain
 
 ```
-原材料 → 精密加工 → 谐波减速器 → 机器人整机 → 终端应用
+Raw materials * precision processing * harmonic decelerations * Robot complete machine * terminal applications
                     ↑
-               绿的谐波（核心零部件供应商）
+Green harmonic (core parts supplier)
 ```
 
-绿的谐波处于产业链的**核心零部件环节**——与川润股份（辅助设备）不同，谐波减速器是机器人成本的重要组成部分（约占人形机器人成本30%），在价值链中有较高的战略地位。
+Green harmonics are in the core parts of the industrial chain** - unlike the Kawayun shares (aid devices), harmonic slowners are an important component of robotic costs (about 30 per cent of the human robotic costs) and have a high strategic position in the value chain.
 
-但这个位置也意味着：下游（机器人厂商）的议价能力在增强——随着国产替代完成和供应商增多，下游有更多选择，压价动力强劲。
+But this position also means that downstream bargaining power is increasing — with national production being completed and suppliers increasing, downstream options are more open and price pressures strong.
 
-### 人形机器人的不确定性
+# The uncertainty of human robots
 
-| 乐观情景 | 悲观情景 |
+♪ The pessimism ♪
 |---------|---------|
-| 特斯拉Optimus 2027年量产10万台+ | 量产一再推迟，2030年前不超过1万台 |
-| 多家厂商跟进，2030年全球100万台+ | 技术瓶颈导致商业化失败 |
-| 谐波减速器供不应求，绿的谐波产能利用率100%+ | 行星减速器等替代方案崛起 |
-| 绿的谐波收入20亿+、利润5亿+ | 绿的谐波收入仍在10亿以下 |
+Tesla Optimus, 100,000 in 2027, and production of 10,000 more by 2030.
+The company's many suppliers followed up on the global 1 million + + + in 2030, and the technical bottlenecks caused commercial failure.
+<unk> Harmonisation decelerations are in short supply, green harmonisation capacity is 100% plus <unk> planetary decelerations, etc.
+Green harmonics are 2 billion + profit 500 million + green harmonics are still under 1 billion <unk>
 
-**核心判断**：人形机器人是一个**真实但时间高度不确定**的机会。2027年600万台的需求预测大概率过于乐观——特斯拉在制造和成本控制方面很强，但人形机器人的应用场景验证还远未完成。
+** Core judgement**: Human robots are an opportunity to ** real but highly uncertain**. In 2027, 6 million demand forecasts were probably overly optimistic – Tesla was very strong in manufacturing and cost control, but the application of human robots is far from complete.
 
-### 李录式追问：20年后这家公司是"标准石油"还是"3Com"？
+# Lee asks: 20 years later, is this company Standard Oil or 3Com?
 
-**更可能是"日本电产的中国版"**——一家在精密传动领域有真实技术积累的公司，能从行业增长中受益，但不会成为"赢家通吃"的垄断者。谐波减速器的市场结构注定是寡头竞争（哈默纳科+绿的谐波+2-3家对手），而非一家独大。20年后绿的谐波大概率仍然存在且更大，但它的利润率和ROE可能令今天以500倍PE买入的投资者失望。
+** More likely to be the "Chinese version of Japanese electricity"** – a company with real technological accumulation in the field of precision, which can benefit from industrial growth, but not as a monopoly on "winner-taker." The market structure of the harmonic deceleration device is bound to be oligarchic (Hamenaco+green +2-3 rivals) rather than a single big one. Greener may still be more likely to be available and larger after 20 years, but its profit rate and ROE may disappoint investors who buy 500 times PE today.
 
-**评分：★★★★（4/5）— 赛道确定性高，公司位置好，但估值已把最乐观的未来都定价了**
+** Rating: <unk> (4/5) - high level of certainty in the track and good position of the company, but the valuation has priced the most optimistic future**
 
 ---
 
-## 六、估值与安全边际 — 巴菲特"内在价值"
+# Six, valuation and security margin - Barfitt "inner value"
 
-### 当前估值（经工具验算）
+# # Current valuation (tooled)
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|------|------|
-| 股价 | ~330元 | 波动剧烈 |
-| 市值 | 605亿元 | ✅ 验算通过（330×1.8333亿股） |
-| PE（TTM） | **485倍** | ✅ 验算通过（330/0.68） |
-| PB | **17.25倍** | ✅ 验算通过（330/19.13） |
-| PS（TTM） | **106倍** | 605亿/5.71亿 |
-| ROE | **3.55%** | ✅ 验算通过（0.68/19.13） |
-| 盈利收益率 | **0.21%** | 相当于买入一个年化0.21%的"资产" |
+The stock price is ~330 dollars.
+(c) The amount of the total value of the goods is estimated at US$ 60.5 million.
+<unk> PE(TTM)<unk> **485 times** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> (330/0.68) <unk>
+<unk> PB<unk> 17.25 times** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> (330/19.13) <unk>
+<unk> PS(TTM)<unk> 106 times** <unk> 60.5 billion/571 million <unk>
+ROE <unk> 3.55%** <unk> <unk> (0.68/19.13) <unk>
+<unk> profit rate <unk> 0.21%** <unk> buys an annualized 0.21% "asset" <unk>
 
-### 券商目标价 vs 当前价
+# # Vs current prices #
 
-| 券商 | 目标价 | vs 当前330元 |
+The price is $330.
 |------|--------|-------------|
-| 国金证券 | 258.92元 | **当前高出27%** |
-| 国泰海通 | 364.73元 | 当前低于10% |
-| 7家均价 | 238.00元 | **当前高出39%** |
+<unk> National bonds <unk> 258.92 <unk> 27% current height** <unk>
+<unk> , the nation's own sea traffic is 364.73 dollars, <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk>
+7 averages $238.00 ** currently 39% ** <unk>
 
-**当前股价已超出大多数券商目标价。**
+** Current stock prices exceed the target prices of most coupons.**
 
-### 三情景估值（经工具精确计算）
+#3 scenario valuation (measured with precision by tools)
 
-基于2025年EPS 0.68元，预测3年后（2028年）：
+Based on the EPS 0.68 in 2025, it is projected that three years later (2028):
 
-| 情景 | 年增速 | 目标PE | 2028E EPS | 目标股价 | vs当前 |
+<unk> Situations, annual rate of increase, target PE <unk> 2028E EPS <unk> Target share price
 |------|--------|--------|----------|---------|--------|
-| 乐观 | 60% | 100x | 2.79元 | 278.5元 | **-15.6%** |
-| 中性 | 35% | 60x | 1.67元 | 100.4元 | **-69.6%** |
-| 悲观 | 15% | 35x | 1.03元 | 36.2元 | **-89.0%** |
+♪ We're gonna be the best we can do ♪
+<unk> Gender 35% <unk> 60x <unk> 1.67 <unk> 100.4 <unk> **- 69.6%** <unk>
+<unk> Pessimism 15% <unk> 35x <unk> 1.03 <unk> 36.2 <unk> **-89.0%** <unk>
 
-**这是本报告最重要的发现**：
+** This is the most important finding of the present report**:
 
-即使假设绿的谐波未来三年盈利以60%的惊人速度增长（意味着2028年净利润达5.1亿元，是当前的4倍），并且市场仍然愿意给予100倍PE（这对一家制造企业来说已是极其慷慨），**三年后的合理价格仍然低于当前价格**。
+Even assuming that green twilight profits grew at an alarming rate of 60 per cent over the next three years (meaning net profits of $510 million in 2028, four times the current level), and that the market remains willing to give 100 times the PE (which is already extremely generous for a manufacturing enterprise), ** reasonable prices after three years are still below current prices**.
 
-换言之：**当前股价不仅透支了乐观预期，甚至透支了"超级乐观"预期。**
+In other words:** current stock prices have overstretched not only optimistic expectations, but even "super-optimistic" expectations.**
 
-### 估值的荒谬性校验
+# The absurd verification of the valuation
 
-| 对比 | 市值 | 净利润 | PE | 毛利率 | ROE |
+<unk> Market value <unk> Net profit <unk> PE <unk> Mäori ratio <unk> ROE <unk>
 |------|------|--------|-----|--------|-----|
-| **绿的谐波** | **605亿** | **1.24亿** | **485x** | **37%** | **4.2%** |
-| 汇川技术（工控龙头） | ~2,000亿 | ~55亿 | ~36x | ~36% | ~18% |
-| 恒立液压（液压龙头） | ~700亿 | ~28亿 | ~25x | ~33% | ~14% |
-| 哈默纳科（全球龙头） | ~2,500亿日元（~120亿元） | — | ~50x | ~50% | — |
+** Green ** ** ** 60.5 billion ** ** 124 million ** ** 485 x ** ** 37% ** 4.2% ** ** ** **
+<unk> 200 billion ~ 5.5 billion ~ 36 x 36% ~ 18% ~ 18% ~
+~ 70 billion ~ 2.8 billion ~ 25 x 33% ~ 14% ~ 14% ~
+~ 250 billion yen (~12 billion yen) ~ 50 ~ 50 ~ 50 ~ 50 ~ 50 ~ 50 ~ 50 ~ 50 ~ 50 ~ 50 ~ 50 ~ 50 ~
 
-绿的谐波的市值（605亿）已经是行业全球龙头哈默纳科（约120亿元人民币）的**5倍**——但收入仅为哈默的约1/4、全球份额仅为哈默的30%。
+The market value of green harmonics (60.5 billion) is already **5 times that of the industry's global leader, Hamernaco (approximately RMB 12 billion)** — but income is only about a quarter of that of Hamer and the global share is only 30 per cent of that of Hammer.
 
-### 合理估值区间
+# Rational valuation range
 
-| 方法 | 假设 | 合理市值 | 合理股价 |
+<unk> Methodology Hypothetically reasonable market value <unk> Reasonable stock price <unk>
 |------|------|---------|---------|
-| 2027E PE 50x | 净利润3亿（券商预测） | 150亿 | ~82元 |
-| 2028E PE 40x | 净利润5亿（极乐观） | 200亿 | ~109元 |
-| PS 20x（成长股） | 收入10亿（2027E） | 200亿 | ~109元 |
-| PB 8x（科技制造） | 净资产~40亿 | 320亿 | ~175元 |
-| **综合合理区间** | | **150-200亿** | **82-109元** |
+<unk> 2027E PE 50x <unk> net profit of 300 million (Vanioners forecast) <unk> 15 billion ~ 82 yuan <unk>
+2028E PE 40x <unk> net profit of 500 million <unk> 20 billion ~ 109 <unk>
+<unk> PS 20x (Growing Unit) <unk> 1 billion (2027E) <unk> 20 billion ~ 109 yuan
+<unk> PB 8x (technology and technology manufacturing) <unk> net assets ~ 4 billion ~ 32 billion ~ 175 dollars ~
+** Integrated reasonable area** ** 15-20 billion** ** 82-109 dollars** **
 
-**当前330元高于合理区间200%-300%。**
+** Current $330 is above 200-300 per cent of reasonable space.**
 
-### 段永平式追问：如果股市关闭5年，你愿意以330元持有吗？
+# # # Queue the Eun-Pil: If the stock market is closed for five years, will you hold it at $330?
 
-**绝对不愿意。** 330元买入意味着你以605亿市值买入一家年利润1.24亿的公司。即使5年后利润增长5倍至6亿，PE回归50倍，市值也只有300亿——你亏损50%。以330元持有5年不亏钱，需要净利润增长到12亿以上（当前的10倍），并且市场给予50倍PE。这要求一切完美——人形机器人爆发、毛利率企稳、竞争格局不恶化——同时实现的概率极低。
+** Absolutely not.** Buying $330 means buying a company with annual profits of 124 million at a market value of 60.5 billion. Even if five to 600 million dollars in five years, PE returns 50 times, the market value is only 30 billion – you lose 50%. Holding $330 for five years is not a loss. Net profits need to grow to over 1.2 billion (currently 10 times) and the market gives 50 times. This requires everything perfect – a human robot explosion, stable Maori rates, and non-deteriorating competition – with very low probability of achieving it simultaneously.
 
-**评分：★（1/5）— 当前估值是"概念泡沫"级别，远超任何合理估值框架**
+** Rating: <unk> (1/5) - Current valuation is "concept foam" level, well beyond any reasonable valuation framework**
 
 ---
 
-## 七、综合决策备忘录
+# VII. Memorandums for integrated decision-making
 
-### 六维评估表
+# Six-dimensional assessment table
 
-| 维度 | 结论 | 评分 | 信心度 |
+♪ The way you're going ♪
 |------|------|------|--------|
-| 生意质量（段永平） | 好赛道、好技术，但商业模式不够好，毛利率持续下行 | ★★★ | 高 |
-| 护城河（巴菲特） | 技术壁垒真实但在缩窄，定价权在丧失 | ★★★ | 高 |
-| 管理层（段永平+巴菲特） | 技术创业者值得尊重，资本配置效率差 | ★★★ | 中 |
-| 最大风险（芒格） | 人形机器人不及预期+毛利率继续下滑+产能过剩 | ★★ | 高 |
-| 文明趋势（李录） | 赛道确定性高，公司位置好 | ★★★★ | 中（人形机器人时间表不确定） |
-| 估值（巴菲特+段永平） | PE 485x，三情景即使乐观仍高估，超出券商目标价39% | ★ | 高 |
+♪ The quality of business ♪ ♪ The good track, the good technology, but the business model is not good enough, the Maori rate keeps going down ♪
+The technical barriers are real but narrow, and the price is losing.
+<unk> Management (Yongping + Buffett) <unk> Technology entrepreneurs are worthy of respect, inefficient capital allocation <unk>
+<unk> Mung, <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> ,<unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> , <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The course is so certain, the company is in good position, the company is in a state of emergency.
+<unk> Valuation (Buffett + Yongping)<unk> PE 485x, scenario 3 is overestimated even if optimistic, exceeding the target price of the couponer by 39%
 
-**综合评分：2.5★ / 5★ — 好公司、好赛道，但以当前价格买入是投机而非投资**
+** Combined score: 2.5 / 5 — good company, good track, but buying at current prices is speculation rather than investment**
 
-### 最终决策表
+# Final decision sheet
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **回避。** 当前估值处于"概念泡沫"状态，三情景估值即使最乐观也显示高估。如果真心看好人形机器人赛道，等待股价回落至100-120元区间（PE 60-80倍）再考虑建仓。 |
-| **持仓者** | **减仓。** 股价已远超7家券商均价目标238元。至少减至半仓，锁定部分利润。底仓可保留参与长期赛道，但仓位不宜超过组合的3-5%。 |
-| **卖出信号** | 人形机器人量产时间表再次推迟；季度毛利率跌破30%；实控人继续减持；融资余额/杠杆资金异常攀升 |
-| **加仓信号** | 股价回落至100元以下（PE <150x基于2025利润）；特斯拉Optimus确认大规模量产订单并指定绿的为供应商；季度毛利率企稳回升至40%以上 |
+<unk> ** Empty warehouser** <unk> ** avoided.** The current valuation is in the "concept bubble" state, and the three scenario valuations show overestimation even if they are the most optimistic. If you really look at the good-looking robotic track, wait until the stock price returns to the $100-120 range (PE 60-80 times).
+<unk> ** warehousekeeper** <unk> ** warehouser.** Stock prices are well above the average price of the seven coupons target of $238. ** At least half-silos are kept, with some profits locked.
+<unk> ** Signals sold** <unk> Time schedule for human robotic mass production postponed again; quarterly Maori rate fell by 30%; realist holdings continued to decline; financing balances/leveraging funds exceptionally increased <unk>
+<unk> **Standar signal** <unk> Stock price down to less than $100 (PE < 150 x based on 2025 profits); Tesla Optimus confirming large volume orders and designating green suppliers; quarterly Maori rate rising steadily to over 40%
 
-### 四位大师模拟点评
+# Four masters simulated the reviews
 
-> **巴菲特**："我完全理解这家公司的技术价值——谐波减速器是机器人不可或缺的关键部件。但605亿市值对应1.24亿利润，PE 485倍——这不是在为一家公司定价，这是在为一个梦想定价。我不买梦想，我买确定性。等利润追上估值的时候再来找我。"
+> **Buffett**: "I fully understand the company ' s technical value -- the harmonic deceleration machine is an essential component of the robot. But the market value of 60.5 billion is $124 million, PE 485 times more -- not a price for a company, it's a price for a dream. I don't buy dreams, I buy certainty. Wait until the profit is valued."
 
-> **芒格**："让我用简单算术帮你清醒一下：605亿市值、年利润1.24亿，意味着你花605元买了1.24元的年收益。即使利润每年翻倍，5年后也只有40亿利润，按50倍PE只值2000亿——但前提是利润真的每年翻倍，连续五年。你觉得这个概率有多大？"
+> **Mung**: "Let me clear you up with simple arithmetic: 60.5 billion dollars in market value, 124 million dollars in annual profits, which means you spend $605 for $1.24 a year. Even if profits double each year, they will be only 4 billion dollars in five years, worth only 200 billion dollars at 50 times PE -- but only if the profits double each year, five years in a row. What do you think the probability is?"
 
-> **段永平**："技术很好的公司，创始人有情怀。但我最担心的是毛利率——从53%降到37%，连降四年。这说明国产替代完成后，竞争已经从'中国vs日本'变成了'中国vs中国'。所有参与者都在降价抢份额，最终可能谁都不赚钱。这不是我想要的'好生意'。"
+> **Ningping**: "Technology is a good company, and the founder is in love. But my biggest concern is the Maori rate -- from 53% to 37%, down to four years. This means that after the national replacement, the competition has changed from "China vs Japan" to "China vs China". All participants are cutting their share, and eventually they may not make any money. This is not the "good business" I want."
 
-> **李录**："人形机器人如果成功，确实是文明级的变革。但投资的关键是择时和择价——即使方向100%正确，以当前价格买入，你的回报可能远不如等一年在更合理的价格买入。1999年买入互联网公司的人方向完全正确，但以泡沫价格买入的投资者等了15年才解套。"
-
----
-
-## AI分析置信度 vs 投资确定性
-
-### 基于充分数据的结论（置信度高）：
-- 2025年营收5.71亿（+47%）、净利润1.24亿（+121%），业绩拐点已确认 → 事实
-- 毛利率从53%连续4年下滑至37% → 事实
-- PE 485倍、PB 17.25倍，股价超出券商目标价39% → 工具验算事实
-- 三情景估值即使最乐观仍显示当前高估15.6% → 工具验算事实
-- 谐波减速器全球产能利用率不足50% → 行业数据
-
-### 基于有限信息的推理（置信度中等）：
-- 人形机器人需求量和时间表 → 高度不确定，各来源差异巨大
-- 绿的谐波在特斯拉供应链中的具体份额和订单量 → 仅有"进入供应商名单"的确认
-- 未来3-5年毛利率走向 → 取决于竞争格局演变和需求弹性
-- 哈默纳科降价反击的可能性和力度 → 无确切信息
-
-### 核心区分
-
-**AI分析置信度**：B级（中等）——数据有限但足以得出关键判断
-
-**投资确定性判断**：高置信度判断——**当前价格下风险/回报比极度不对称。** 这个结论不需要精确预测人形机器人的需求量或绿的谐波的未来利润——当PE 485倍、即使最乐观三情景估值也显示高估时，你不需要更多数据就能做出决策。
-
-**需要一手验证的问题清单**：
-1. 绿的谐波在特斯拉Optimus供应链中的实际份额和定价是多少？
-2. 哈默纳科260万台扩产计划的定价策略如何？是否会大幅降价反击？
-3. 来福谐波等国产竞争对手的真实技术水平和产能爬坡速度？
-4. 绿的谐波的微型谐波减速器（人形机器人用）量产良率和成本？
-5. 人形机器人终端客户（汽车厂/物流公司）的真实采购意愿和价格敏感度？
+> **Lisu**: "The human robot, if successful, is a change of civilization. But the key to investment is timing and pricing -- even if it is in the right direction, buying at the current price is likely to be far less than waiting for a year to buy at a more reasonable price. The people buying Internet companies were exactly the right way, but investors buying at bubble prices waited 15 years to unwind."
 
 ---
 
-## 关键数据交叉验证记录
+# AI analyze confidence vs investment certainty
+
+# # Conclusion based on sufficient data (high confidence):
+- 571 million (+47%) in 2025, net profit 124 million (+12%), performance nodes confirmed
+- The Maori rate has fallen from 53 per cent to 37 per cent for four years.
+- PE 485 times, PB 17.25 times, stock price exceeds the target price of the voucherer by 39% <unk> Instrumentation fact
+- Three scenario estimates show an overestimation of 15.6%, even if the best of them are positive.
+- Harmonisation decelerations are less than 50% of global capacity utilization <unk> industry data
+
+# Logic based on limited information (medium confidence):
+- The human robot needs and timetable.
+- Green combos have a specific share and order volume in Tesla's supply chain .. only confirmed "entry into the supplier list."
+- The Māori rate in the next 3-5 years depends on the evolution of the competitive pattern and the elasticity of demand
+- The probability and strength of Harmonako's price reduction to counter the attack is unknown.
+
+# Core distinction
+
+**AI analysis confidence**: Level B (medium) - data limited but sufficient to arrive at key judgements
+
+** Investment certainty judgement**: high confidence judgement - ** risk/return ratio is extremely asymmetrical under current prices.** This conclusion does not require precise predictions of the future profits of human robotics or green harmonics — when PE 485 times the value of the three most optimistic scenarios shows an overestimation, you do not need more data to make decisions.
+
+** List of issues requiring first-hand validation**:
+1. What is the actual share and pricing of the green harmonics in the Tesla Optimus supply chain?
+2. What is the pricing strategy for the 2.6 million expansion plans in Hamernaco? Will the price be substantially reduced?
+3. Real technological level and productivity uphill of competitors from countries such as Lei Fuyubo?
+4. Greenly collating mini-collercer (human robotic) yields good yields and costs?
+5. Real purchasing willingness and price sensitivity of HDR clients (car factory/logistics companies)?
+
+---
+
+# Cross-checking records for key data
 
 ```
-市值验算：330元 × 1.8333亿股 = 604.99亿 ≈ 报告605亿 ✅（偏差0.00%）
-PE验算：330 / 0.68 = 485.29倍 ✅
-PB验算：330 / 19.13 = 17.25倍 ✅
-ROE验算：0.68 / 19.13 = 3.55% ✅
-2025年营收交叉验证：年报5.71亿 = 证券之星5.71亿 ✅（偏差0%）
-三情景估值：乐观-15.6% / 中性-69.6% / 悲观-89.0% ✅（工具精确计算）
+Market value measurement: $330 x $183.3 million = $60.499 billion <unk> Report 60.5 billion <unk> (a deviation of 0.00 per cent)
+PE calculation: 330/ 0.68 = 485.29 times <unk>
+PB calculation: 330 / 19.13 = 17.25 times <unk>
+ROE: 0.68 / 19.13 = 3.55%
+Cross-checking of revenue in 2025: Annual Report 571 million = securities star 571 million <unk> (0% deviation)
+3 scenario valuation: optimistic - 15.6% / neutral - 69.6% / pessimistic - 89.0% <unk> (tool accurate)
 ```
 
 ---
 
-**数据来源**：绿的谐波2024年报、2025年报、2026Q1季报、GGII谐波减速器报告、国金证券/东吴证券/国泰海通研报、东方财富网、证券之星、新浪财经
+** Data sources: Green Harmonious 2024, 2025, 2026Q1, GGII Harmonizer Report, National Gold Securities/East Wu Securities/National Thai Ocean Research, Eastern Wealth Network, Securities Star, New Wave Finance

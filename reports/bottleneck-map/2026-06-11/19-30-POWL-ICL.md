@@ -1,243 +1,243 @@
-# 瓶颈猎手 — 2026-06-11 19:30
-**第二百零九轮扫描**
+# Bottleneck hunters — 2026-06-11 19:30
+**Scanship 209**
 
 ---
 
-## 执行摘要
+# Executive summary
 
-本轮（18:10→19:30）发现 **3个新信号（2个明确标的相关）**：
+**3 new signals were found in the current round (18:10:19:30) (2 clearly identified)**:
 
-1. **🆕 Powell Industries (POWL) — $4亿+史上最大订单（5月4日公告，今日首次捕获）**：Q2 FY2026新订单$4.9亿（YoY +97%）+ 季后公告$4亿+数据中心"第一期"超大订单，积压订单$18亿（+33%，覆盖至FY2028）。PS 9.0x绿灯，PE 55.67x黄灯（PEG~1.1可接受）。TAM边界需深度核验。**维持★★★，但新增"临界升级节点"标注，建议执行`/investment-research`深入核验TAM与产能天花板。**
+1. **Power Industries (POWL) — $400 million + the largest order ever (advertisement 4 May, first captured today)**: Q2 SY2026 new order $490 million (Yoy + 97 per cent) + after-season announcement $400 million + data centre "first phase" super-large order with a backlog of $1.8 billion (+33 per cent, covering NY2028). PS 9.0x green light, PE 55.67x yellow light (PE-DG~1.1 acceptable). ** TAM border is subject to in-depth verification. ** Maintenance of the mark of the `critical upgrades', with a recommendation to implement `in-depth verification of TAM and energy ceilings'.**
 
-2. **🆕 ICL Group — $8亿高级票据发行（6/9定价，6/16结算，今日首次捕获）**：6.036%利率，10年期，用于偿还循环信贷+资本开支+并购（已完成Bartek食品配料收购，年收入$0.65亿）。这是管理层在高溴价周期内主动锁定长期固息债务的资本策略信号——ICL置信于当前高价持续。★★★★维持。
+2. **ICL Group — $800 million advanced paper issuance (6/9 pricing, 6/16 settlement, first captured today)**: 6.036 per cent interest rate, 10 years, to repay revolving credit plus capital expenditure + M& As (completed Bartek food-package acquisition, with annual income of $650 million). This is the management ' s active targeting of long-term debt-fixing capital strategy signal - ICL is confident that the current high prices will continue.
 
-3. **🔴 霍尔木兹今日（6/11）重大升级——伊朗宣布全面封堵所有商船**：响应美军对班达尔阿巴斯和格什姆岛的空袭，伊朗宣布对所有油轮和商船"完全封锁"，并声明任何试图通过的船只将遭受攻击。这比此前的"管控"和"拦截"性质更为极端。短期利好ICL溴化物定价，但整体地缘尾部风险上升。
+** ** Hormuz today (6/11) has significantly escalated - Iran announced a total closure of all merchant ships**: in response to the air strikes by the United States forces on Bandar Abbas and Ghashm Island, Iran declared a "total blockade" of all tankers and merchant ships and declared that any vessel attempting to pass would be attacked. This is more extreme than the previous "control" and "interception" periods.
 
 ---
 
-## 明确标的详情
+# Clear target details
 
-### Powell Industries（POWL）— 中压配电：史上最大数据中心订单首次捕获
+#Power Industries (POWL) - Medium voltage distribution: first captured by the largest data centre order in history
 
-**为什么现在值得关注**：5月4-5日发布Q2 FY2026财报时，公司公告了"季后获得$4亿+超大数据中心订单"（公司历史最大），以及当季新订单$4.9亿（YoY +97%）。今日扫描发现，此前208轮次均未捕获此信号——最后一次记录仅为"POWL ★★★ 无新信号"。这是信息缺口补填。
+** Why is it worth noting now? **: When the Q2 SY2026 report was released on 4-5 May, the company announced "Breaking 400 million + Super Data Center Orders after season" (the largest in the company's history) and 490 million new orders during the season (YoY + 97%). Today, the scan found that none of the previous 208 rounds had captured this signal — the last recorded was only "POWL No New Signs". This is the information gap.
 
-**瓶颈定位**：Layer 4，数据中心电气基础设施（中压开关柜/配电系统），瓶颈评级 **B-A级**
+** Bottleneck positioning**: Layer 4, Data Centre electrical infrastructure (medium voltage switch/distribution system), bottleneck rating**B-A level**
 
-- 大型数据中心需要定制化中压配电系统（MVPD），设计-制造-交付周期12-24个月
-- Powell专注于北美定制化中压配电柜（10-38kV），非标准化，不可直接向亚洲供应商切换
-- 客户（微软/亚马逊/超大规模数据中心开发商）已在等待其他标准产品，POWL的交付周期即是瓶颈
+- Large data centres need to customize the MVPD, design-manufacture-delivery cycle 12-24 months
+- Powell focuses on the voltage distribution cabinets in North America (10-38kV) and cannot be standardized and can not be switched directly to Asian suppliers
+- Clients (MSF/Amassian/Super-Multi-Small Data Centre Developer) are waiting for other standard products, and the PowL delivery cycle is a bottleneck
 
-**瓶颈6项标准评估**：
+**Standard assessment of six bottlenecks**:
 
-| # | 标准 | 评估 | 得分 |
+# The standard # the evaluation # the score #
 |---|------|------|------|
-| 1 | 供给集中度 | 北美定制中压配电：POWL+ABB+Eaton+西门子，4-5家 | 🟡 3-5家 |
-| 2 | 扩产周期 | POWL正考虑$7000-1亿产能扩张，需12-18个月 | 🔴 >1年 |
-| 3 | 替代难度 | 定制中压系统换供应商需重新认证+设计（6-12月以上）| 🟡 部分可替代 |
-| 4 | 产能利用率 | $1.8B积压 vs $1.2B年收入→1.5倍book-to-bill，明显饱和 | 🔴 >90% |
-| 5 | 需求增速 | AI数据中心电力需求爆发式增长，订单+97% YoY | 🔴 >50%/年 |
-| 6 | 客户验证周期 | 大型数据中心换配电供应商需重新设计和审批，>6个月 | 🟡 6-12月 |
+<unk> Supply concentration <unk> North American custom-made voltage distribution: POWL+AB+Eaton+Simon, 4-5 <unk> 3-5 <unk>
+<unk> 2 <unk> Extension cycle <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> 1 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+Recertifying + design (over 6-December)
+4 <unk> Capacity utilization rate
+<unk> Demand growth <unk> Power demand outbreak growth at AI data centre, order + 97% YoY<unk> > 50%/year
+The major data centre switch provider needs redesign and approval, >6 months > <unk> June-December
 
-**瓶颈评级：A级**（3个🔴，供给不是S级，有竞争对手，但产能和需求紧张）
+** Bottleneck rating: A ** (3 x 3 x 3 x S supply, rival but tight capacity and demand)
 
 ---
 
-**Q2 FY2026财务实际（2026年5月4日，POWL财年10月31日结束）**
+** Q2 SY2026 financial actual (end of fiscal year POWL on 4 May 2026)**
 
-| 指标 | 数值 | YoY变化 | 来源 |
+<unk> Indicators <unk> Value <unk> YoY Change <unk> Source <unk>
 |------|------|---------|------|
-| 收入 | $297M | **+6%** | POWL 8-K |
-| 毛利率 | **29.6%** | — | POWL 8-K |
-| EPS稀释 | $1.25 | **Miss：预期$1.35，差7.4%** | Investing.com |
-| 新订单 | **$490M** | **+97%** | POWL财报 |
-| 积压订单（3/31/2026）| **$1.8B** | **+33% YoY** | 积压覆盖至FY2028 |
-| 现金+短期投资 | **$545M** | 无债务 | 8-K |
-| **季后获得超大订单** | **>$4亿** | **公司历史最大** | Seeking Alpha/POWL |
+<unk> Income $297M<unk> <unk> 6%** <unk> POWL 8-K<unk>
+<unk> Māori <unk> 29.6%** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> EPS dilution $1.25 <unk> Miss: projected $1.35, 7.4% less <unk> Investing.com
+<unk> New order <unk> $490M** <unk> 97%** <unk> POWL
+<unk> Backlog order (3/31/2026) **$1.8B** ** + 33% YoY** <unk> Backlog to FY2028 <unk>
+<unk> Cash + short-term investments **$545M**
+** After season, super-large orders** <unk> $400 million** ** corporate history** <unk> Seeing Alpha/POWL <unk>
 
-**超大订单细节**：$4亿+为"第一期"（first-phase）绿地数据中心园区的behind-the-meter现场发电配电设计，"第一期"意味着后续各期可能跟进。该订单未计入Q2末$1.8B积压。
+** Super-large order details**: $400 million plus behind-the-meter field power distribution design for the Greenfield Data Center campus. The first phase means that the next period may follow. The order is not included in the $1.8B backlog at the end of Q2.
 
 ---
 
-**估值检查**
+** Valuation inspection**
 
-| 指标 | 数值 | 红/黄/绿灯 |
+<unk> Indicators <unk> Value <unk> Red/yellow/green lights <unk>
 |------|------|-----------|
-| 市值（6/9）| ~$10.7B | — |
-| 收入TTM（~4×$297M）| ~$1.2B | — |
-| **PS** | **$10.7B / $1.2B ≈ 9.0x** | 🟢 绿灯（<30x） |
-| **PE（追踪）** | **55.67x** | 🟡 黄灯（需PEG验证）|
-| **PEG** | 55.67 / (~50% forward earnings growth) ≈ **1.1x** | 🟢 可接受（<2x）|
-| 市值 vs TAM 20% | $10.7B vs 全球MV配电市场估计$25-50B × 20% = $5-10B | ⚠️ **边界警告：市值$10.7B处于$5-10B区间上下** |
+Market value (6/9) ~ $10.7B – <unk>
+<unk> Income from TTM(~4 x $297M)<unk> $1.2B<unk>
+**PS**<unk> $10.7B/$1.2B<unk> 9.0x**<unk> Green Lantern (<30x)<unk>
+**PE (Tracking)** **55.67x** <unk> Yellow (PEG) <unk>
+**PEG** <unk> 55.67 / (~50% forward earlynings growth) **1.1x** <unk> acceptable (<2x) <unk>
+** Boundary warning: $10.7B is in the upper and lower 5-10B area**
 
-**红灯条件核查**：
-1. ❌ PS 9.0x，未触发PS>30x红灯
-2. ❌ PE 55.67x < 80x，未触发PE红灯
-3. ⚠️ **TAM边界敏感**：若定义为仅北美定制中压配电市场（约$3-5B），则市值$10.7B远超TAM×20%=$0.6-1B → 触发红灯。若定义为全球MV电气基础设施市场（$30-50B），则20%=$6-10B，市值$10.7B处于边界。**TAM定义不确定，不能清洁通过此条。**
+**Red light condition verification**:
+1. <unk> PS 9.0x, untried PS>30x red light
+2. <unk> PE 55.67x < 80x, untriggered PE red light
+** TAM border sensitivity**: If defined as a custom-based and power distribution market in North America alone (approximately $3-5B), the market value is $10.7B well above 20% of TAMx = $0.6-1B to trigger red lights. If defined as the global MV electrical infrastructure market ($30-50B), 20% = $6-10B, with $10.7B at the border.** TAM is defined as uncertain and cannot be cleared through this article.**
 
-**估值安全边际（10年25xPE退出法）**：
+** Valuation security margin (10 years 25 x PE exit method)**:
 
-| 假设 | 净利润基础 | 年化CAGR | 10年净利 | 退出市值 | 年化回报 |
+<unk> Assumptions, net profit base, annual CAGR, 10 years net profit, exit market value, annual return, and annualized return.
 |------|---------|------|--------|---------|---------|
-| 保守（15% CAGR，收入$1.2B→$4.9B，净利率~16%）| $192M | 15% | $776M | $19.4B | **6.1%** ❌ |
-| 基准（20% CAGR，数据中心建设持续）| $192M | 20% | $1,186M | $29.7B | **10.7%** ✅ |
-| 乐观（25% CAGR，积压放量+新订单持续）| $192M | 25% | $1,791M | $44.8B | **15.4%** ✅ |
+<unk> Conservative (15% CAGR, income $1.2B — $4.9B, net interest rate ~ 16%) <unk> 192M <unk> 15% <unk> $776M <unk> $19.4B ** 6.1% **
+<unk> Baseline (20% CAGR, ongoing data centre) <unk> $192M <unk> 20% <unk> $1,186M <unk> $29.7B **10.7% <unk>
+<unk> Optimism (25% CAGR, backlog + new orders continue) <unk> $192M <unk> 25% <unk> $1,791M <unk> $44.8B **15.4%** <unk>
 
-**结论**：安全边际高度依赖净利润年化20%+增长。鉴于订单+97%、积压$1.8B + $4亿+季后超大订单，这条路径可信但不确定。20%净利润CAGR要求订单持续转化为收入（当前收入仅+6%，订单大幅领先于收入，转化中）。
-
----
-
-**看多逻辑**：
-
-1. **积压-收入剪刀差极宽**：积压$1.8B是当前季度收入$297M的6倍（约6个季度消化期），订单+97%说明未来收入增速将从目前+6%大幅加速。$4亿+超大订单纳入积压后将使积压达$2.2B+，覆盖至FY2029
-2. **史上最大单一订单（>$4亿）验证结构性机会**：传统上POWL以中小型项目为主；超大数据中心订单标志着客户规模质的跃升，且"第一期"意味着同一园区未来各期订单可能复购
-3. **零负债+$5.45亿现金**：可支撑$7000-1亿产能扩张同时保留M&A弹药，无财务杠杆风险
-
-**看空逻辑**：
-
-1. **收入实现滞后于订单**：Q2收入+6%而订单+97%——积压转化成收入需要6-18个月，在此期间可能面临交付执行风险（材料成本、劳工）。PE 55.67x隐含了高增长的快速实现
-2. **TAM边界触发估值警告**：若聚焦定义为北美数据中心定制中压配电的核心市场，市值已超出TAM×20%。产能扩张$7000万-1亿也说明自身并非无限扩产标的，天花板比想象中低
-3. **大客户集中风险**：超大数据中心园区订单意味着可能高度依赖1-2个超大规模客户（亚马逊/微软/Meta），若其中一个调整AI资本开支节奏，POWL受冲击显著
-
-**建议**：★★★（维持）。$4亿+超大订单和订单+97%是真实强信号，但PE 55.67x + TAM边界不确定性使得10年回报仅在20%+ CAGR情景下才达安全边际。**建议执行`/investment-research`专项深研，核心问题：（1）北美定制中压配电可触达市场规模；（2）POWL产能扩张上限；（3）收入增速加速的具体时间表。答案决定是否升至★★★★。**
+** Conclusion **: The security margin is highly dependent on net profit annualization of 20% + growth. Given the order + 97%, backlog of $1.8 B + $400 million + super-large orders, this path is credible but uncertain. 20% net profit CAGR requires that the order be continuously converted into income (currently only + 6%, with the order significantly ahead of income, in transition).
 
 ---
 
-### ICL Group（ICL）— $8亿债券：管理层高溴价置信信号
+** See how logical **:
 
-**为什么现在值得关注**：6月9日定价、6月16日结算（5天后），今日首次捕获。同日，霍尔木兹局势升级为"完全封堵所有商船"（6/11），这是此前18:10报告后新发生的最重大地缘事件变化。两者叠加，ICL的溴化物定价环境比任何一个单独因素更强化。
+1. ** Backlog - Income Scissors very wide**: The backlog of $1.8B is six times the current quarterly income of $297M (approximately six quarterly digestive periods), and the purchase orders + 97% indicate that future revenue growth will be significantly accelerated from the current + 6%. $400 million + super-large orders will result in a backlog of $2.2B+ covering FY2029
+2. **The largest single order ever (>$400 million) validates structural opportunities**: the PowL has traditionally been dominated by small and medium-sized projects; the Super Data Centre order marks a leap in client size and the "first issue" means that future orders may be repurchased in the same campus
+3. ** Zero liabilities + $545 million in cash**: 7000-100 million in capacity expansion while retaining M&A ammunition without financial leverage risk
 
-**$8亿高级票据关键细节**：
+**Exact logic**:
 
-| 项目 | 内容 | 来源 |
-|------|------|------|
-| 发行规模 | **$8亿美元**（优先无担保票据）| BusinessWire 6/9/2026 |
-| 利率 | **6.036%**，半年付息 | BusinessWire |
-| 期限 | 10年，到期2036年，一次性还本 | BusinessWire |
-| 结算日期 | **2026年6月16日**（5天后）| BusinessWire |
-| 上市 | 特拉维夫证交所机构平台（TASE UP）| BusinessWire |
-| 资金用途 | 偿还循环信贷（到期2030年）+ 资本开支 + **投资与并购** | ICL公告 |
+1. ** Income realized behind orders**: Q2 income + 6% against Q97% - backlogs are converted to income for 6-18 months, during which time they may face delivery implementation risks (material costs, labour). PE 55.67x implicitly implies high growth and rapid realization
+2. **TAM boundary triggers valuation warning**: Focus is defined as the core market for voltage distribution in the customisation of the North American data centre, and the market value is 20% higher than TAMx. The energy expansion of $70-100 billion also indicates that it is not an unlimited extension, and the ceiling is lower than it would have thought.
+3. ** Large client concentration risk**: Super-data centre campus orders imply a potential high dependency on 1-2 mega-scale clients (Amazon/Micau/Meta), with PowL being hit significantly if one of them adjusts the AI capital spending tempo
 
-**已知并购行动（资金部署）**：
-- Q1 2026完成：收购Bartek Ingredients（加拿大食品配料，年收入~$6500万）
-- 策略方向：特种食品配料 + 特种农业营养（非溴化物方向）
-
-**为什么这是一个正信号（不是警告）**：
-
-管理层在ICL历史估值相对低位（PS 1.07x、PE 13x）、溴化物高价期，以6.036%固息率锁定10年长期债务。这意味着：
-- ICL相信高溴价周期将持续足够长以覆盖利息（年息$4800万 vs FY2026E EBITDA $1.5-1.7B → 占3%，微不足道）
-- 为并购准备弹药，而非用于股东回报，反映管理层对业务未来有信心
-- 利率6.036%是合理的投资级相邻水平
-
-**风险**：
-- 增加$8亿固息债务，若Hormuz突然和平化+溴价回归2024年水平，ICL需用降低的现金流偿债
-- 并购执行风险（Bartek整合 + 可能的后续并购）
-
-**ICL估值维持绿灯（不因债券发行改变）**：
-
-| 指标 | 数值 | 灯号 |
-|------|------|------|
-| 市值 | ~$8.57B | — |
-| PS（前向FY2026E）| ~1.07x | 🟢 |
-| 前向PE | ~13x | 🟢 |
-| 年度利息新增 | $4800万（$800M × 6.036%）| 占EBITDA ~3%，影响极小 |
-
-**建议**：★★★★ 维持。$8亿债券是"管理层用行动投票"的正信号，霍尔木兹进一步升级短期支撑溴化物定价。核心风险不变：Hormuz意外快速正常化是最大尾部风险，今日全面封堵升级使这一风险短期降低（但中长期地缘政治不确定性增加）。等8/5 Q2 2026财报确认溴价传导。
+** Recommendation **: <unk> (maintenance). $400 million plus mega-orders and orders + 97% are genuine signals, but PE 55.67x + TAM border uncertainties have led to a 10-year return of only 20% + CAGR scenario reaching a security margin.** It is proposed to implement `introspective study ' , which is a core issue: (1) the ability of North American custom-made voltage distribution to reach market size; (2) the PowL production expansion cap; and (3) the specific timetable for revenue acceleration.** The answer will be whether to rise to a high-speed scale.
 
 ---
 
-## 其他信号（无明确标的）
+##ICL Group -- $800 million bonds: management high-bromine confidence signal
 
-### 1. 霍尔木兹6/11全面封堵——今日重大升级
+** Why is it worth noting now: 9 June price fixing, 16 June settlement (five days later), first captured today. On the same day, Hormuz upgraded to "full block all merchant ships" (6/11), the most significant change in geo-related events since the previous 18:10 report. The combination of the two, the ICL's brominated pricing environment is stronger than any single factor.
 
-| 时间 | 事件 | 来源 |
+**$800 million in advanced notes key details**:
+
+Project content Source
 |------|------|------|
-| 6/11 今日凌晨 | 伊朗宣布"完全封锁"所有油轮和商船，"任何通过船只将遭攻击" | Al Jazeera |
-| 6/11 今日 | 美军轰炸班达尔阿巴斯+格什姆岛，中央司令部称"自卫行动" | 维基百科/Al Jazeera |
-| 背景 | 2026年2月28日霍尔木兹已开始封堵（持续100+天），但此前是"管控拦截"；今日升级为"全面封堵+主动攻击声明" | 维基百科 |
+<unk> Issue size **$800 million** (priority unsecured) <unk> BusinessWire 6/9/2026 <unk>
+<unk> Interest rate **6.036% **, six months interest **
+<unk> 10 years, due 2036, one-time return
+<unk> Settlement date ** 16 June 2026** (5 days later) <unk> BusinessWire <unk>
+♪ The city is on the market ♪
+* Purpose of funds * Refund of revolving credit (due to 2030) + Capital expenditure ** Investment and M & As** ICL bulletin *
 
-**对ICL的影响**：
-- 短期BULLISH：全面封堵+主动攻击声明使以色列死海溴化物出口通过红海-苏伊士路线的不确定性更大，维持溴化物全球供应紧张
-- 中长期RISK升级：美伊直接军事交火（美军直接轰炸伊朗本土）意味着冲突规模超出此前预期，若局势蔓延至以色列本土，ICL死海生产设施面临风险（此前为边缘情景，现在概率轻微上升）
+** Known M & As (fund deployment)**:
+- Q1 2026: Purchase of Bartek Ingrediants (Canadian food ration, $65 million per year)
+- Strategic direction: Special food formulations + Special agricultural nutrition (non-brominated substance orientation)
 
-### 2. AXTI InP产能翻倍——对IQE/InP竞争格局的间接影响
+** Why is this a positive signal (not a warning)**:
 
-| 项目 | 数据 | 来源 |
+Management ' s historical valuation of ICL is relatively low (PS 1.07x, PE 13x), with a high price period for brominated substances, locking in 10 years of long-term debt at a firm rate of 6.036%. This means:
+- ICL believes that the high bromine price cycle will last long enough to cover interest (48 million vs. EY2026E EBIDDA $1.5-1.7B <unk> 3%, negligible)
+- Ammunition for M & A, not for shareholder returns, reflecting management ' s confidence in the future of operations
+- 6.036% interest rate is reasonable investment level proximity level
+
+**Risk**:
+- Increase $800 million in solid debt, and if Hormuz suddenly peacefully returns to 2024 levels, ICL will have to use lower cash flow to service the debt
+- Merger implementation risk (Bartek integration + possible follow-up M & As)
+
+**ICL valuations maintain green light (not changed by bond issuance)**:
+
+<unk> Indicators <unk> Value <unk> Light number <unk>
 |------|------|------|
-| AXTI Q1 2026收入 | $26.9M（+39% YoY，+17% QoQ）| SEC 8-K |
-| 积压订单 | **$1亿**（历史新高）| BigGo Finance |
-| 融资规模 | 4月2026：**$5.5亿公开增发**（含超额配售选项）| BusinessWire |
-| 资金用途 | Tongmei（北京桐芯）InP产能扩张 + 6英寸InP R&D | AXTI公告 |
-| 产能计划 | **2026和2027各翻一倍InP产能**（Tongmei中国工厂）| Yahoo Finance |
-| 市值（6/10）| ~$55.8亿 | MacroTrends |
-| PS | ~**43.9x**（TTM收入约$1.3亿）| StockAnalysis |
-| PE | 亏损（EPS TTM -$0.311）| Yahoo Finance |
+Market value $8.57B<unk>
+PS (FY2026E) ~1.07x <unk>
+~13x<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Annual interest added $48 million ($800M x 6.036%) <unk> or ~3% EBITDA, with minimal impact
 
-**AXTI估值结论：仍为红灯，★★维持**
-- PS 43.9x >> 30x红灯 → 信号强度封顶★★，无论业务逻辑多强
-- 亏损 + PS > 15x → 黄灯条件也未通过（PS 43.9x >> 15x）
-- $5.5亿增发严重稀释（在股价不明的情况下，这是巨额摊薄）
-
-**然而，AXTI产能翻倍对IQE是潜在竞争信号**：
-- AXTI承诺2026和2027各翻倍InP产能 → 到2027年末全球InP供给显著增加
-- LightCounting预测InP短缺"2026年中开始缓解"与此吻合
-- IQE的6英寸InP平台领先优势（良率和规格）是其核心护城河，但AXTI/Tongmei垂直整合+中国规模化也是潜在挑战
-- **这是IQE的长期替代技术风险**，18:10报告未提及，在此补充记录
+** Recommendation **: Maintain. $800 million in bonds is a positive sign of "management voting with action," and Hormuz further upgrades the short-term BP pricing. Core risk remains unchanged: Hormuz ' s unexpected rapid normalization is the biggest tail risk, which today ' s full containment escalation reduces (but increases geopolitical uncertainty in the medium and long term) and the 8/5 Q2,2026 financial returns confirm bromine price transmission.
 
 ---
 
-## 观察名单状态
+# Other signals (no clear target)
 
-| 公司 | 代码 | 上轮评级 | 本轮变化 | 最新评级 |
+# 1. Holmuz 6/11 full block - a major upgrade today
+
+♪ Time, time, event, source, source ♪
+|------|------|------|
+Iran has declared a "total blockade" of all tankers and merchant ships, and any ship passing through will be attacked.
+Today, the United States forces bombed Bandar Abbas + Gshm Island, and the Central Command called it Operation Self-Defence.
+The day of February 28, 2026, Hormuz began blocking (100 + days), but it was previously "control intercepts"; today it is "full blockage plus active attack statement"
+
+** Impact on ICL**:
+- Short-term BPLISH: Full blockage + active attack statement increases uncertainty about Israel ' s exports of dead sea brominated substances via the Red Sea-Suez route and maintains global supply of brominated substances
+- Mid- to Long-Term RISK Upgrade: Direct US-Iraqi military fire (direct United States bombing of Iranian mainland) means that the conflict is larger than previously anticipated and that ICL production facilities are at risk if the situation spreads to Israel mainland (previously marginal scenario, the probability is now slightly higher)
+
+##2. AXTI InP doubling capacity - indirect impact on IQE/InP competition patterns
+
+Project Data Source
+|------|------|------|
+<unk> AXTI Q1 2026 Income <unk> $26.9M (+39% YoY, +17% QoQ) <unk> SEC 8-K <unk>
+<unk> Backlog of orders **$100 million ** (historical heights) <unk> BigGo Finance <unk>
+<unk> Scale of financing 2026: **$550 million in public increase** (including over-sale options) <unk> BusinessWire <unk>
+<unk> Use of funds <unk> Tongmei (Beijing) Inp Extension + 6 inches InP R&D <unk> AXTI
+**2026 and 2027, respectively, doubled the InP capacity** (Tongmei Chinese Plant)<unk> Yahoo Finance<unk>
+Market value (6/10) ~ $5.58 billion ~ MacroTrends ~
+<unk> PS<unk> 43.9x**(TTM revenue of approximately $130 million)<unk> StockAnalysis<unk>
+* PE * Loss (EPS TTM - $ 0.311) *Yahoo Finance *
+
+**AXTI valuation conclusion: red still, <unk> maintenance**
+- PS 43.9x > > 30x red light ~ Signal strength capped, no matter how much business logic
+- Loss + PS > 15x Yellow light conditions also failed (PS 43.9x > > 15x)
+- $550 million in serious dilution (in the absence of an unknown share price, this is a huge overhang)
+
+** However, the doubling of AXTI production capacity is a potential competitive signal for IQE**:
+- AXTI committed to double the InP capacity by 2026 and 2027, respectively.
+- LightCounting predicts that the InP deficit will be alleviated by mid-2026.
+- IQE ' s 6-inch InP platform ' s leading edge (good rate and specification) is its core moat, but vertical integration of AXTI/Tongmei + China ' s scale is also a potential challenge
+- ** This is the long-term alternative technology risk for IQE**, not mentioned in the 18:10 report, which is added here
+
+---
+
+# Watch the list status
+
+♪ The company, the code, the last round, the last round, the current cycle, the latest ratings, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw me, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw me, the last time I saw you, the last time I saw you, the last time I saw you, the last time I saw you, the next day, the next day, the next day, the next day, the next day, the next day, the next day, the next day, the day, the day, the next day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the day, the... the
 |------|------|---------|---------|---------|
-| **Kanto Denka** | **4047.T** | ★★★★★ | 无新信号；7/1竞争者退出倒计时20天 | **★★★★★（维持）** |
-| **ICL Group** | **ICL** | ★★★★ | 🆕 $8亿债券（6/9定价，6/16结算）；霍尔木兹今日升级为全面封堵 | **★★★★（维持，两个正信号）** |
-| **IQE plc** | **IQE.L** | ★★★ | AXTI产能翻倍是长期竞争风险（IQE 6英寸优势是护城河）；Q1交易更新"符合预期" | **★★★（维持，新增AXTI竞争风险记录）** |
-| **Centrus LEU** | **LEU** | ★★★★ | 无新信号；Phase IV（6/30，19天）+$27亿DOE铀浓缩项目宏观背景确认 | **★★★★（维持）** |
-| **Almonty Industries** | **ALM** | ★★★ | 无新信号（Sangdong Phase 1已商业生产，Phase 2资金到位）| **★★★（维持）** |
-| **TOK** | **4186.T** | ★★★⚠️ | 无新信号 | **★★★⚠️（维持）** |
-| **AXTI** | **AXTI** | ★★ | $5.5亿增发（4月）+ InP翻倍产能计划；PS 43.9x红灯不变 | **★★（维持，红灯不变）** |
-| **Powell Industries** | **POWL** | ★★★ | 🆕 $4亿+史上最大订单（5/4公告）；订单+97% YoY；积压$1.8B；PE 55x黄灯+TAM边界；需深度研究 | **★★★（维持，临界升级节点）** |
+** Kanto Denka** ** 4047.T** <unk> No new signal; 7/1 competitor exits the countdown 20 days ** (maintenance)** **
+**ICL Group** ** ICL** <unk> <unk> <unk> <unk> <unk> <unk> <unk> $800 million in bonds (6/9 pricing, 6/16 settlement); Hormuz today upgraded to full block ** <unk> (maintain, two positive signals)** <unk>
+<unk> IQE plc** <unk> IQE.L** <unk> AXTI doubling capacity is a long-term competitive risk (IQE 6 inches advantage is the moat); Q1 transaction update "satisfactory" <unk> (maintain, add AXTI competitive risk record)**
+<unk> Central LEU** <unk> LEU** LEU** <unk> <unk> No new signal; Phase IV (6/30, 19 days) + $2.7 billion in the macro-level confirmation of the DOE enrichment project <unk> (maintenance)**
+**Almondy Industries** **AlM** <unk> <unk> No new signal (Sangdong Phase 1 commercially produced and Phase 2 funded) ** (maintenance)**
+**Tok** **4186.T** <unk> No new signal ** (maintenance)** **
+**AXTI** **AXTI** <unk> <unk> <unk> $550 million (April) + InP doubling capacity plan; PS 43.9x red light unchanged ** <unk> (maintain, red)** <unk>
+**Powell Industries** ** PowL** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
 ---
 
-## 关键节点（更新）
+# Key Nodes (update)
 
-| 日期 | 事件 | 优先级 | 状态 |
+Date, event, priority, status, status.
 |------|------|--------|------|
-| **6/11 今日持续** | 霍尔木兹全面封堵（升级）：美伊直接军事交火 | 🚨🚨🚨 | 超越此前"管控拦截"，性质升级 |
-| **6/15（4天）** | ICL新CFO Alperovitz上任 | ★★★ | 监控资本配置信号 |
-| **6/16（5天）** | **ICL $8亿高级票据结算** | ★★★★ | 债务到账，并购弹药就位 |
-| **6/18（7天）** | LEU年会 Section 382 NOL保护投票 | ★★★★ | 10AM ET虚拟会议 |
-| **6/29（18天）** | ALM加入Russell 1000 | ★★★ | 被动买盘 |
-| **6/30（19天）** | **LEU DOE Phase IV两年延期选项** | ★★★★★ | 决定前无新消息 |
-| **7/1（20天）** | **Showa Denko Kanto + Central Glass永久停止WF6** | 🔴🔴 | 4047.T WF6定价权临界点 |
-| **7月底** | AXTI Q2 2026财报 | ★★★ | 观察InP量价与产能爬坡 |
-| **8/5** | **ICL Q2 2026财报** | ★★★★★ | 溴化物价格兑现+新CFO首秀 |
-| **8月初** | **POWL Q3 FY2026财报** | ★★★★ | $4亿超大订单进入积压后的订单加速确认 |
-| **8月** | **IQE FY2026中期报告** | ★★★★ | EBITDA转正确认 |
-| **8/12** | **Kanto Denka Q1 FY2027财报** | ★★★★★ | WF6+NF3定价权首季验证 |
+**6/11. ** This is the day to continue** <unk> Holmuz full blockage (upgraded): direct military fire exchanges between the US and Iraq, which went beyond the previous "control intercepts", which were upgraded to the point where the police were using the word "controlled"
+**6/15 (4 days)** The new CFO Alperovitz of ICL is in office.
+** 6/16 (5 days)** ICL $800 million advanced bill settlement** <unk> debt to account, ammunition acquisition in place
+** 6/18 (7 days)** LEU annual meeting Section 382 NOL Protection of Voting <unk> 10AM ET Virtual session <unk>
+** 6/29 (18 days)** ALM joined Russell 1000 <unk> <unk> passive purchase
+** 6/30 (19 days)** LEU DoE Phase IV two-year extension**
+** 7/1 (20 days) ** Showa Denko Kanto + Central Glass permanently stopped WF6** <unk> 4047.T WF6 pricing threshold point <unk>
+** End of July** AXTI Q2 2026 financial report **
+** 8/5** ** ICL Q2 2026 ** <unk> Brominated substance price realization + new CFC premiere **
+** Early August** ** PowL Q3 SY2026 report** ** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+** August** ** Interim report IQE FY 2026** <unk> EBITDA confirmed
+** 8/12** ** Kanto Denka Q1 SY2027 ** <unk> <unk> WF6+ NF3 First quarter validation of pricing authority
 
 ---
 
-## 核心结论
+# Core conclusion
 
-**本轮最重要发现：POWL $4亿+超大订单——此前208轮均未捕获，今日首次记录**
+** The most important finding of this round is that: PowL $400 million plus super-large orders — none of the previous 208 rounds, recorded for the first time today**
 
-这是POWL历史上最大的单笔订单，来自"第一期"数据中心园区的中压配电系统，潜在后续各期复购。叠加Q2新订单+97% YoY和$1.8B积压（覆盖FY2028），POWL从"静静等待"状态变为"明确进入超大规模AI基础设施建设"状态。
+This is the largest single order in the history of PowL, from the "first phase" of the data centre campus, with potential subsequent repurchases. Adding Q2 new orders + 97% YoY and $1.8B backlog (covering FY 2028), PowL moves from "waiting" to "staying" to "staying into super-large-scale AI infrastructure."
 
-但估值并非没有压力：PE 55.67x需要约20%净利润CAGR才能达到10年25xPE退出法的10%回报门槛；TAM边界在不同定义下触发不同的估值信号（PS层面绿灯，TAM层面有边界警告）。**维持★★★，建议执行`/investment-research`专项研究，核心问题是北美定制中压配电的真实TAM和POWL的产能天花板。结论将决定是否升至★★★★。**
+But valuation is not without pressure: PE 55.67x requires about 20 per cent of net profit CAGR to reach the 10 per cent return threshold for 10 years of 25 xPE exit; TAM boundary triggers different valuation signals by different definitions (green lights at PS level, border warning at TAM level).** Maintenance of <unk> , recommending implementation of a special study `/investment-research ' , the core issue being the real TAM and PowL energy ceilings in North America for custom-made voltage.** The conclusion will be whether to elevate to <unk> .**
 
-**次要：ICL $8亿债券+霍尔木兹全面封堵双重正信号**
+** Minor: ICL $800 million bonds + Hormuz completely blocked the double positive signal**
 
-债券信号（管理层对高价周期置信）+霍尔木兹信号（"全面封堵并主动攻击"升级，超越此前"管控拦截"）共同强化了ICL溴化物定价的持续性。当前估值PS 1.07x / PE 13x几乎未改变，但两个信号都在同一方向推力。**ICL ★★★★ 维持，8/5 Q2财报是下一个决定性验证节点。**
+Bond signals (management confidence in high-price cycles) + Hormuz signals ( "full blockage and active attack" upgrades beyond the previous "control intercept") together reinforce the continuity of ICL brominated substances pricing. The current valuation of PS 1.07x/PE 13x is almost unchanged, but both signals are pushed in the same direction.**ICL <unk> maintained, and the 8/5 Q2 statement is the next decisive validation node**.
 
-**补充：AXTI InP产能翻倍——对IQE的竞争格局风险首次记录**
+**Addition: doubling AXTI InP capacity - first recorded risk of competition pattern for IQE**
 
-此前关注IQE的论证主要围绕"6英寸InP平台先发+MACOM战略锁定"。AXTI/Tongmei承诺2026和2027各翻倍InP产能，$5.5亿融资规模支撑其执行，这是一个需要在IQE看空逻辑中显式记录的竞争威胁。IQE的护城河（6英寸技术领先+MACOM LTSA+欧美客户认证）仍然有效，但供给侧变化值得追踪。
+The previous argument focused on IQE is centred on "the 6-inch In-P platform pre-emptive +MACOM strategic lockdown". AXTI/Tongmei committed to double the In-P capacity by 2026 and 2027, and the size of the $550 million financing supported its implementation, a competitive threat that needed to be clearly documented in the IQE logic. The IQE moat River (six-inch technology lead + MACOM LTSA+ Euro-American client certification) remains valid, but supply side changes are worth tracking.
 
 ---
 
-## 信源
+# Message source
 
 - [ICL Group Prices Private Offering of $800 Million Senior Notes Due 2036](https://www.businesswire.com/news/home/20260609679661/en/ICL-Group-Prices-Private-Offering-of-$800-Million-Senior-Notes-Due-2036)
 - [ICL Group prices $800M 2036 senior notes — StockTitan](https://www.stocktitan.net/news/ICL/icl-group-prices-private-offering-of-800-million-senior-notes-due-16zm793l7ll7.html)

@@ -75,11 +75,11 @@ This is a Codex-only hand-written skill kept under `codex-skills/` for simple in
 
 For long-form research reports, prefer a calm stepped layout:
 
-- Use a simple title: `公司名（ticker）研究报告`. Avoid adding "四大师综合" or "投资备忘录" to the title unless the user asks for that framing.
-- Use dated filenames for reports: `公司名研究报告-YYYYMMDD.md`.
+- USE a simple title: `Avoid reading "the Four Masters Consolidated" to the Title unless the user asks for that fraggling.
+- USe dated files for reports: `Study of corporate names -YYYYMMDD.md`.
 - Start with one compact metadata block: research date, price, market cap, key multiples, and a one-sentence thesis.
 - Use horizontal separators between major sections.
-- Use Chinese step headings for readability, for example "第一步：核心数据总览", "第二步：生意本质分析", and "第八步：最终决策与行动清单".
+- Use China step heads for readabilization, for example "first step: a core data overview", "second step: business nature analysis", and "eighth step: final decision and action list".
 - Keep section titles short and concrete; avoid dense numbering such as "2.3.1" unless the document is technical.
 - Use quote blocks for master-style questions, not inline bold paragraphs.
 - Treat GitHub Markdown as the typography system: use heading levels, tables, quote blocks, and bold text; do not add HTML/CSS font styling unless the user explicitly asks for a non-GitHub artifact.
@@ -94,37 +94,37 @@ For long-form research reports, prefer a calm stepped layout:
 
 For AI Berkshire company reports, use this order unless the user asks otherwise:
 
-1. `AI研究偏见自觉`
+1. `AI study of prejudice conscious '
    - State the information-richness rating, consensus trap, bias checklist, and AI research limitation.
 
-2. `第一步：核心数据总览`
+`First step: a core data overview '
    - Show segment revenue, key operating assets or units, 3-5 year financial trend, and cross-source validation.
 
-3. `第二步：生意本质分析`
+3. `Step 2: Business nature analysis '
    - Define the business in one sentence, map revenue/cost/customer/asset life/growth drivers, and explain the real profit variables.
 
-4. `第三步：护城河评估`
+`Step 3: Apocalypse assessment '
    - Score moat sources, explain evidence, and state what can destroy or weaken the moat.
 
-5. `第四步：逆向思考与风险清单`
+`Step 4: Reverse reflection and risk list '
    - Put the bear case in serious language. Include failure paths, probability, impact, and observable warning indicators.
 
-6. `第五步：管理层评估`
+`Step 5: Management assessment '
    - Judge management through capital allocation, governance, incentives, dividends/buybacks, leverage, and whether the business is system-driven.
 
-7. `第六步：行业与文明趋势`
+`Step 6: Industry and civilizational trends '
    - Separate broad trend from investable economics and explain where the company captures value.
 
-8. `第七步：估值与安全边际`
+`Step seven: valuation and security margin '
    - Show current valuation, reverse-DCF intuition, scenario valuation, comparable companies if useful, and explicit price bands.
 
-9. `第八步：最终决策与行动清单`
+`Step 8: final decision-making and action list '
    - Put the full decision here, not at the top: summary table, advice for empty-handed investors, advice for holders, add/sell triggers, and master-style comments if useful.
 
-10. `AI分析置信度 vs 投资确定性`
+10. `AI analyzes confidence vs. investment certainty '
     - Separate data confidence from investment certainty.
 
-11. `数据来源与审计记录`
+`Sources of data and audit records '
     - List key sources and concise audit results. Keep command lines out of the report unless explicitly requested.
 
 ## Quality Bar

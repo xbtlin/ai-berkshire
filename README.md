@@ -1,291 +1,281 @@
-中文 | [English](README_EN.md) | [日本語](README_JA.md)
+English
 
 [![GitHub Trending](https://trendshift.io/api/badge/repositories/63696)](https://trendshift.io/repositories/63696)
 
-# AI Berkshire - AI 时代的价值投资研究框架
+# AI Berkshire — Value Investing Research Framework for the AI Era
 
 > "Price is what you pay, value is what you get." — Warren Buffett
 >
-> 用 AI 重新定义投资研究的深度与效率。
+> Redefining the depth and efficiency of investment research with AI.
 
-**AI Berkshire** 是一套同时兼容 Claude Code 与 Codex 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
+**AI Berkshire** is a collection of investment research skills compatible with both Claude Code and Codex. It systematizes the methodologies of four value investing masters — Buffett, Munger, Duan Yongping, and Li Lu — and delivers professional-grade research through AI Agents.
 
-一个人 + Claude Code / Codex = 一个投研团队。
+One person + Claude Code / Codex = an entire investment research team.
 
-> 📮 **仓库是全量框架，公众号是精选。** 真正值得深研的公司，加上报告之外我自己的判断与取舍，都在微信公众号「**复利炼丹炉**」——[扫码关注 ↓](#精选研究首发于公众号)
-
-[实盘业绩](#real-track-record) · [为什么不能直接问AI](#为什么不能直接问-ai) · [Skills 一览](#skills-一览19个) · [快速开始](#快速开始) · [实战报告](#实战研究报告) · [设计理念](#设计理念) · [公众号](#精选研究首发于公众号)
+[Track Record](#real-track-record) · [Why Not Just Ask AI?](#why-cant-you-just-ask-ai-directly) · [Skills](#skills-overview-19-skills) · [Quick Start](#quick-start) · [Reports](#live-research-reports) · [Design Philosophy](#design-philosophy)
 
 ---
 
 ## Real Track Record
 
-> 不是纸上谈兵。这套框架背后是真金白银验证的投资体系。
+> Not paper trading. This framework is backed by a real-money, audited portfolio.
 
-### 2024 全年收益：+69.29%
+### 2024 Full-Year Return: +69.29%
 
 <img src="assets/2024-returns.jpg" width="300" />
 
-### 2025 全年收益：+66.38%
+### 2025 Full-Year Return: +66.38%
 
 <img src="assets/2025-returns.jpg" width="300" />
 
-### 与主要指数对比
+### Benchmark Comparison
 
-| 指标 | 2024 全年 | 2025 全年 |
-|------|----------|----------|
-| **本框架实盘** | **+69.29%** | **+66.38%** |
-| 恒生指数 | +17.67% | +27.77% |
-| 标普500 | +23.31% | +16.39% |
-| 沪深300 | +14.68% | +17.66% |
-| 纳斯达克 | +28.64% | +20.36% |
+| Benchmark | 2024 Full Year | 2025 Full Year |
+|-----------|---------------|----------|
+| **This Framework (Live)** | **+69.29%** | **+66.38%** |
+| Hang Seng Index | +17.67% | +27.77% |
+| S&P 500 | +23.31% | +16.39% |
+| CSI 300 | +14.68% | +17.66% |
+| NASDAQ Composite | +28.64% | +20.36% |
 
-**2024 年超额收益**：跑赢标普500 **46个百分点**，跑赢恒生指数 **52个百分点**
+**2024 Alpha**: Beat the S&P 500 by **46 percentage points**, beat the Hang Seng by **52 percentage points**
 
-**2025 年超额收益**：跑赢标普500 **50个百分点**，跑赢恒生指数 **39个百分点**
+**2025 Alpha**: Beat the S&P 500 by **50 percentage points**, beat the Hang Seng by **39 percentage points**
 
-**两年累计实盘收益超 146万元**，连续两年大幅跑赢全球主要指数。
+**Cumulative live returns exceed ¥1.46 million over two years**, significantly outperforming all major global indices for two consecutive years.
 
-> *免责声明：历史收益不代表未来表现。截图来自富途证券真实账户。*
-
-### 精选研究首发于公众号
-
-仓库里是完整的框架和全量报告，公众号里是**精选**——真正值得深研的公司，加上报告之外我自己的判断与取舍：
-
-<img src="assets/wechat-qr.png" width="160" alt="微信公众号：复利炼丹炉" />
-
-**复利炼丹炉** —— 用 AI 炼投研这颗丹。
+> *Disclaimer: Past performance does not guarantee future results. Screenshots are from a real brokerage account (Futu Securities).*
 
 ---
 
-## 为什么不能直接问 AI？
+## Why Can't You Just Ask AI Directly?
 
-你当然可以直接问 Claude："帮我分析拼多多值不值得买"。你会得到一篇"一方面...另一方面..."的平衡分析，最后以"投资有风险，请自行判断"收尾。
+You can, of course, ask Claude: "Should I buy Pinduoduo?" You'll get a balanced "on one hand... on the other hand..." analysis that ends with "investing involves risks, please make your own judgment."
 
-**这种分析看起来对，但没法拿来做决策。**
+**That kind of analysis looks right but can't drive actual decisions.**
 
-AI Berkshire 解决的不是"能不能分析"的问题，而是**分析质量和决策纪律**的问题。以下是核心差异：
+AI Berkshire doesn't solve the "can AI analyze?" problem — it solves the **analysis quality and decision discipline** problem. Here's what's different:
 
-### 1. 强制给结论，不打太极
+### 1. Forces a Verdict — No Fence-Sitting
 
-直接问AI，你得到的是两面讨好的"分析"。AI Berkshire 强制输出：**通过/不通过/灰色地带**，带具体价格区间和分层建议。
+Ask AI directly, and you get a both-sides-pleasing "analysis." AI Berkshire forces concrete output: **Pass / Fail / Gray Zone**, with specific price ranges and tiered recommendations.
 
-> 普通AI回答：*"拼多多有增长潜力但也面临竞争压力，投资者需要权衡..."*
+> Vanilla AI response: *"Pinduoduo has growth potential but also faces competitive pressure. Investors should weigh..."*
 >
-> AI Berkshire 输出：
+> AI Berkshire output:
 
-> | 策略 | 建议 | 价格区间 |
-> |------|------|---------|
-> | 激进型 | 当前价位可建仓20% | $95-105 |
-> | 稳健型 | 等回购政策明确后建仓 | $85-95 |
-> | 保守型 | 不符合10年确定性标准，观望 | — |
+> | Strategy | Recommendation | Price Range |
+> |----------|---------------|-------------|
+> | Aggressive | Build 20% position at current price | $95–105 |
+> | Moderate | Wait for buyback policy clarity | $85–95 |
+> | Conservative | Doesn't meet 10-year certainty bar — pass | — |
 >
-> **镜子测试**：5句话说不完整 = 不买，没有例外。
+> **Mirror Test**: If you can't articulate it in 5 sentences = don't buy. No exceptions.
 
-### 2. 四大师视角对抗，而非单一分析
+### 2. Four-Master Dialectic, Not a Single Perspective
 
-不是"用巴菲特方法分析一下"这么简单。四个视角会产生**真实的矛盾和张力**——
+It's not just "analyze this using Buffett's method." The four perspectives create **real tension and contradictions** —
 
-以拼多多为例：
-- **段永平**（商业模式）：好生意，C2M模式难以复制 → 评分 3.7/5
-- **巴菲特**（财务估值）：扣现金PE仅6.3x，印钞机 → 评分 4.4/5
-- **芒格**（逆向思考）：护城河比想象中浅，抖音3年做到4万亿GMV → 评分 3.5/5
-- **李录**（长期确定性）：管理层文化有隐患，10年后不确定 → 评分 2.0/5
+Take Pinduoduo as an example:
+- **Duan Yongping** (business model): Great business, C2M model hard to replicate → 3.7/5
+- **Buffett** (financial valuation): Ex-cash P/E just 6.3x, a cash machine → 4.4/5
+- **Munger** (inversion): Moat shallower than it appears — Douyin hit ¥4 trillion GMV in 3 years → 3.5/5
+- **Li Lu** (long-term certainty): Management culture concerns, uncertain in 10 years → 2.0/5
 
-**巴菲特说"真便宜"，李录说"不确定就不买"**——这种冲突才是投资决策的真实状态。单一prompt无法制造这种多视角对抗，而这恰恰是避免盲点的关键。
+**Buffett says "genuinely cheap," Li Lu says "if uncertain, don't buy"** — this conflict is the real state of investment decisions. A single prompt can't produce this multi-perspective dialectic, yet it's precisely what prevents blind spots.
 
-### 3. 结构化反偏见机制
+### 3. Structured Anti-Bias Mechanisms
 
-AI最危险的不是给错答案，而是给一个**看起来很对但经不起推敲**的答案。AI Berkshire 在流程中内置了多层"防骗"机制：
+AI's greatest danger isn't giving wrong answers — it's giving answers that **look right but don't withstand scrutiny**. AI Berkshire embeds multiple "anti-deception" layers into the process:
 
-| 机制 | 解决什么问题 | 举例 |
-|------|------------|------|
-| **信息丰富度评级（A/B/C）** | 防止"资料多=确定性高"的幻觉 | 泡泡玛特评为B级：数据有限，推算指标标注置信度 |
-| **芒格式逆向检验** | 强制思考失败场景 | "什么情况下拼多多会死？"→ 列出5大情景及概率 |
-| **快速否决清单** | 8条红线一票否决 | 管理层诚信污点 → 直接否决，不管估值多便宜 |
-| **反共识检查** | 避免和市场想法一样 | "聪明人为什么在做空？"→ 发现被忽视的风险 |
-| **留白原则** | 宁可说"不知道" | 数据不足时标注"灰色地带"，不用推测伪装确定性 |
+| Mechanism | Problem Solved | Example |
+|-----------|---------------|---------|
+| **Information Richness Rating (A/B/C)** | Prevents "more data = more certainty" illusion | Pop Mart rated B: limited data, estimated metrics flagged with confidence levels |
+| **Munger-Style Inversion Test** | Forces thinking about failure scenarios | "How could Pinduoduo die?" → Lists 5 scenarios with probabilities |
+| **Quick-Kill Checklist** | 8 red lines, any one is a veto | Management integrity issues → immediate rejection regardless of valuation |
+| **Contrarian Check** | Avoids thinking like the crowd | "Why are smart people shorting this?" → Surfaces overlooked risks |
+| **Intellectual Honesty** | Prefer "I don't know" | Marks data gaps as "gray zone" rather than filling certainty with speculation |
 
-### 4. 金融数据的精确性
+### 4. Financial Data Precision
 
-LLM心算不可靠。PE算错一个小数点、市值单位搞混港币和人民币，就可能导致错误的投资决策。
+LLMs can't do mental math reliably. Getting a P/E wrong by one decimal point or confusing HKD with CNY can lead to catastrophic investment decisions.
 
-**真实案例**：分析腾讯时，不同来源的市值数据有"港币亿"和"人民币亿"两种单位。AI Berkshire 的处理方式：
+**Real case**: When analyzing Tencent, different sources reported market cap in "HKD billions" and "CNY billions." AI Berkshire's approach:
 
 ```bash
-# 市值手算校验：股价 × 总股本，与报告数据对比
+# Market cap manual verification: Price × Shares Outstanding, cross-checked with reported data
 python3 tools/financial_rigor.py verify-market-cap \
   --price 510 --shares 9.11e9 --reported 4.65e12 --currency HKD
-# ✅ 验证通过, 偏差仅 0.08%
+# ✅ Verified — deviation only 0.08%
 ```
 
-所有计算使用 Python `decimal.Decimal`（精确十进制），不用 `float`。关键数据至少2个独立来源交叉验证。
+All calculations use Python `decimal.Decimal` (exact decimal arithmetic), not `float`. Key data requires at least 2 independent sources for cross-validation.
 
-### 5. 可复现的研究流程
+### 5. Reproducible Research Process
 
-直接问AI，每次输出的格式、深度、覆盖面都不一样——今天分析腾讯有护城河评分，明天分析美团可能就忘了。
+Ask AI directly, and the format, depth, and coverage vary every time — today's Tencent analysis has a moat score, tomorrow's Meituan analysis might forget it.
 
-AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出**。这意味着你可以：
-- 7家公司横向对比，评分标准完全一致
-- 同一家公司半年后重新分析，直接对比变化
-- 团队成员之间的研究结果可以对齐
+AI Berkshire ensures: **Same input → structurally consistent, equally deep output.** This means you can:
+- Compare 7 companies side by side with identical scoring criteria
+- Re-analyze the same company 6 months later and directly compare changes
+- Align research outputs across team members
 
-> 真实输出——7家公司用同一标准 Checklist 筛选：
+> Real output — 7 companies screened with the same Checklist:
 >
-> | 公司 | 通过? | 能力圈 | 好生意 | 护城河 | 管理层 | 安全边际 | 综合 |
-> |------|:-----:|:------:|:------:|:------:|:------:|:-------:|:----:|
-> | 茅台 | ✅ 通过 | ★★★★★ | ★★★★★ | ★★★★★ | ★★★☆☆ | ★★★★☆ | 4.7 |
-> | 腾讯 | ✅ 通过 | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★★ | ★★★★☆ | 4.7 |
-> | 英伟达 | ✅ 有条件 | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★★ | ★★★☆☆ | 4.3 |
-> | 美团 | ✅ 有条件 | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | 4.0 |
-> | 快手 | ✅ 有条件 | ★★★☆☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★★ | 4.0 |
-> | 拼多多 | ❓ 灰色 | ★★★★☆ | ★★★★☆ | ★★★☆☆ | ★★★☆☆ | ★★★★★ | 3.8 |
-> | 泡泡玛特 | ❓ 灰色 | ★★★☆☆ | ★★★★☆ | ★★★★☆ | ★★★★★ | ★★★☆☆ | 3.7 |
+> | Company | Verdict | Circle of Competence | Good Business | Moat | Management | Margin of Safety | Overall |
+> |---------|:-------:|:-------------------:|:------------:|:----:|:----------:|:---------------:|:-------:|
+> | Kweichow Moutai | ✅ Pass | ★★★★★ | ★★★★★ | ★★★★★ | ★★★☆☆ | ★★★★☆ | 4.7 |
+> | Tencent | ✅ Pass | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★★ | ★★★★☆ | 4.7 |
+> | NVIDIA | ✅ Conditional | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★★ | ★★★☆☆ | 4.3 |
+> | Meituan | ✅ Conditional | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | 4.0 |
+> | Kuaishou | ✅ Conditional | ★★★☆☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★★ | 4.0 |
+> | Pinduoduo | ❓ Gray | ★★★★☆ | ★★★★☆ | ★★★☆☆ | ★★★☆☆ | ★★★★★ | 3.8 |
+> | Pop Mart | ❓ Gray | ★★★☆☆ | ★★★★☆ | ★★★★☆ | ★★★★★ | ★★★☆☆ | 3.7 |
 
-### 6. 多Agent并行 = 研究深度的倍增
+### 6. Multi-Agent Parallelism = Multiplied Research Depth
 
-`/investment-team` 启动4个独立Agent**同时**研究一家公司。每个Agent各自搜索网络、交叉验证数据、独立给出结论。这不是把一个prompt拆成四段——是4个"分析师"各自做了完整的研究，Team Lead再综合。
+`/investment-team` launches 4 independent Agents to research a company **simultaneously**. Each Agent conducts its own web searches, cross-validates data, and reaches independent conclusions. This isn't splitting one prompt into four sections — it's 4 "analysts" each doing complete research, with a Team Lead synthesizing the final call.
 
-一个人直接问AI，上下文窗口是一个。4个Agent并行，等于4倍的搜索量、4倍的信息源、4个独立视角。
-
-<p align="center">
-  <img src="assets/team-core.svg" alt="Team Lead 并行调度四大师 Agent" width="720" />
-</p>
-
-### 一句话总结
-
-> **普通人问AI得到的是"看起来对的分析"，用 AI Berkshire 得到的是"可以拿来做决策的投研报告"。**
-
----
-
-## 整体架构
+Ask AI directly, and you have one context window. Four parallel Agents means 4× the search volume, 4× the information sources, and 4 independent perspectives.
 
 <p align="center">
-  <img src="assets/architecture.svg" alt="AI Berkshire 整体架构" width="760" />
+  <img src="assets/team-core-en.svg" alt="Team Lead orchestrating four master agents in parallel" width="720" />
+</p>
+
+### In One Sentence
+
+> **Regular users asking AI get "analysis that looks right." With AI Berkshire, you get "research reports you can actually make decisions from."**
+
+---
+
+## Architecture
+
+<p align="center">
+  <img src="assets/architecture-en.svg" alt="AI Berkshire Architecture" width="760" />
 </p>
 
 
-**三层设计哲学**：
-- **Skill 层**：把"你要做什么"抽象成 19 个明确入口——深度研究、财报分析、行业筛选、持仓管理、思维工具，按场景选用
-- **Agent 层**：团队型 skill（如 `/investment-team`、`/earnings-team`）由 Team Lead 并行调度 4 个大师视角 Agent——各自独立搜索、独立判断、互相挑战，最后综合研判；轻量 skill 不经过这一层，直连工具快进快出
-- **工具层**：精确计算、实时检索、报告抽检——保证每份报告的数据严谨性可验证
+**Three-Layer Design Philosophy**:
+- **Skill Layer**: Abstracts "what you want to do" into 19 clear entry points — deep research, earnings analysis, industry screening, portfolio management, and thinking tools. Pick by scenario.
+- **Agent Layer**: Team skills (e.g. `/investment-team`, `/earnings-team`) run 4 master-perspective Agents in parallel under a Team Lead — searching and judging independently, challenging each other before synthesis. Lightweight skills skip this layer and call tools directly.
+- **Tool Layer**: Exact-precision calculations, real-time web search, report auditing — ensures every report's data is rigorous and verifiable.
 
 ---
 
-## Skills 一览（19个）
+## Skills Overview (19 Skills)
 
-### 🔬 深度研究类
+### 🔬 Deep Research
 
-| Skill | 用途 | 适合场景 |
-|-------|------|---------|
-| [`/investment-research`](skills/investment-research.md) | 四大师综合深度分析 | 对一家上市公司进行全方位投资研究 |
-| [`/investment-team`](skills/investment-team.md) | 多Agent并行投研团队 | 4个Agent并行研究，最快速、最全面 |
-| [`/management-deep-dive`](skills/management-deep-dive.md) | 管理层纵深研究 | "买股票就是买人"——当管理层是核心变量时深挖 |
-| [`/private-company-research`](skills/private-company-research.md) | 未上市公司深度研究 | 研究蚂蚁、SpaceX等信息稀缺的未上市公司 |
-| [`/deep-company-series`](skills/deep-company-series.md) | 8篇长文系列拆一家公司 | 公众号级深度系列，12万字从认知重置到决策闭环 |
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [`/investment-research`](skills/investment-research.md) | Four-master comprehensive analysis | Full-spectrum research on a public company |
+| [`/investment-team`](skills/investment-team.md) | Multi-Agent parallel research team | 4 Agents in parallel — fastest and most comprehensive |
+| [`/management-deep-dive`](skills/management-deep-dive.md) | Management deep dive | "Buying a stock is buying its people" — when management is the key variable |
+| [`/private-company-research`](skills/private-company-research.md) | Private company research | Research info-scarce private companies like Ant Group, SpaceX |
+| [`/deep-company-series`](skills/deep-company-series.md) | 8-part long-form deep dive series | Publication-grade series, ~120K words from cognitive reset to decision closure |
 
-### 📊 财报分析类
+### 📊 Earnings Analysis
 
-| Skill | 用途 | 适合场景 |
-|-------|------|---------|
-| [`/earnings-review`](skills/earnings-review.md) | 财报精读（一手资料） | 只读原始财报，不依赖二手研报，像巴菲特一样读年报 |
-| [`/earnings-team`](skills/earnings-team.md) | 财报精读团队 + 公众号发布 | 四大师并行解读财报 → 编辑润色 → 读者评审 → 可发布文章 |
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [`/earnings-review`](skills/earnings-review.md) | Earnings deep read (primary sources) | Read raw filings only — no sell-side reports — like Buffett reads annual reports |
+| [`/earnings-team`](skills/earnings-team.md) | Earnings team + publishable article | Four masters interpret earnings in parallel → editor polish → reader review → publish-ready |
 
-### 🏭 行业筛选类
+### 🏭 Industry Screening
 
-| Skill | 用途 | 适合场景 |
-|-------|------|---------|
-| [`/industry-research`](skills/industry-research.md) | 产业链全景扫描 | 研究一个行业的全部投资机会（按产业链环节切片） |
-| [`/industry-funnel`](skills/industry-funnel.md) | 行业漏斗筛选 | 全市场 → 粗筛 ≤10 家 → 终选 3 家深度分析 |
-| [`/quality-screen`](skills/quality-screen.md) | 去劣筛选（7条硬指标） | 快速排除非一流公司，支持个股/行业/指数/主题批量筛 |
-| [`/bottleneck-hunter`](skills/bottleneck-hunter.md) | 供应链瓶颈猎手 | 从超级趋势出发，寻找产业链物理瓶颈和套利机会 |
-| [`/investment-checklist`](skills/investment-checklist.md) | 巴菲特买入前 Checklist | 六关快速筛选，10分钟决定是否值得深入 |
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [`/industry-research`](skills/industry-research.md) | Industry value chain scan | Map all investment opportunities across an industry's value chain |
+| [`/industry-funnel`](skills/industry-funnel.md) | Industry funnel screening | Full market → rough cut ≤10 → final pick 3, with deep analysis |
+| [`/quality-screen`](skills/quality-screen.md) | Quality screen (7 hard metrics) | Quickly eliminate non-first-class companies; supports single stock / industry / index / thematic batch screening |
+| [`/bottleneck-hunter`](skills/bottleneck-hunter.md) | Supply-chain bottleneck hunter | Start from a supertrend and find physical supply-chain bottlenecks and arbitrage opportunities |
+| [`/investment-checklist`](skills/investment-checklist.md) | Buffett pre-buy checklist | Six gates, 10-minute decision on whether to dig deeper |
 
-### 📈 持仓管理类
+### 📈 Portfolio Management
 
-| Skill | 用途 | 适合场景 |
-|-------|------|---------|
-| [`/portfolio-review`](skills/portfolio-review.md) | 组合管理与优化 | 从"研究公司"升级到"管理组合"——仓位、集中度、再平衡 |
-| [`/thesis-tracker`](skills/thesis-tracker.md) | 投资论文追踪 | 买入后的纪律系统：持续跟踪论文是否被证伪 |
-| [`/thesis-drift`](skills/thesis-drift.md) | 投资论文漂移检测 | 对比两份论文/报告，区分事实变化、估值变化与措辞变化 |
-| [`/news-pulse`](skills/news-pulse.md) | 股价异动快速归因 | 股价大涨/大跌时10分钟搞清"发生了什么" |
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [`/portfolio-review`](skills/portfolio-review.md) | Portfolio review & optimization | Graduate from "researching companies" to "managing a portfolio" — sizing, concentration, rebalancing |
+| [`/thesis-tracker`](skills/thesis-tracker.md) | Investment thesis tracker | Post-buy discipline system: continuously track whether your thesis has been falsified |
+| [`/thesis-drift`](skills/thesis-drift.md) | Investment thesis drift detection | Compare two theses/reports — separate factual, valuation, and wording changes |
+| [`/news-pulse`](skills/news-pulse.md) | Price-move rapid attribution | When a stock surges or drops — figure out "what happened" in 10 minutes |
 
-### 🧠 思维工具类
+### 🧠 Thinking Tools
 
-| Skill | 用途 | 适合场景 |
-|-------|------|---------|
-| [`/dyp-ask`](skills/dyp-ask.md) | 段永平问答 | 以段永平的方式思考任何问题——商业、投资、人生 |
-| [`/financial-data`](skills/financial-data.md) | 财务数据获取与交叉验证规范 | 确保关键数据来自2个独立来源，误差>1%告警 |
-| [`/wechat-article`](skills/wechat-article.md) | 微信公众号文章 | 作者、编辑、读者三Agent协作，产出可发布文章 |
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| [`/dyp-ask`](skills/dyp-ask.md) | Duan Yongping Q&A | Think through any question the Duan Yongping way — business, investing, life |
+| [`/financial-data`](skills/financial-data.md) | Financial data retrieval & cross-validation | Ensure key data comes from 2+ independent sources; alerts on >1% deviation |
+| [`/wechat-article`](skills/wechat-article.md) | WeChat article workflow | Author, editor, and reader Agents collaborate to produce a publishable article |
 
 ---
 
-## 快速开始
+## Quick Start
 
-### 成本与模型选择
+### Cost & Model Selection
 
-深度投研类 Skill 默认会进行多轮研究、交叉验证和多 Agent 综合判断，因此 token 消耗较高，这是为了换取更完整的商业、财务、行业和风险分析。
+Deep-research skills run multiple research passes, cross-source checks, and multi-agent synthesis by design, so they can consume a large number of tokens. That cost is part of getting fuller coverage across business quality, financials, industry structure, and risk.
 
-如果是真实投资决策中高风险、高重要性的判断，维护者的观点是：最强模型通常更可能带来更好的分析 ROI，不建议只为节省模型成本而牺牲关键判断质量。轻量模型更适合做初筛、摘要或低风险问题；涉及护城河、估值、管理层和风险交叉判断时，应预期分析质量会更依赖模型能力。
+For high-stakes investment decisions, the maintainer's view is that the strongest model usually offers the best analysis ROI; saving model cost should not come at the expense of important judgment quality. Lighter models can be useful for triage, summarization, or low-risk questions, but moat, valuation, management, and risk synthesis should be expected to depend more heavily on model capability.
 
-想控制成本时，优先调整 workflow，而不是期待完整深度研究变得便宜：快速排除公司可先用 [`/quality-screen`](skills/quality-screen.md)，股价异动归因可用 [`/news-pulse`](skills/news-pulse.md)。只有当结果值得继续深入时，再运行 [`/investment-research`](skills/investment-research.md) 或 [`/investment-team`](skills/investment-team.md)。
+To control cost, adjust the workflow before expecting a full deep-research run to become cheap: use [`/quality-screen`](skills/quality-screen.md) first to rule out weaker companies, or [`/news-pulse`](skills/news-pulse.md) for quick price-move attribution. Run [`/investment-research`](skills/investment-research.md) or [`/investment-team`](skills/investment-team.md) only when the result is worth deeper work.
 
-### 1. 安装 AI 客户端
+### 1. Install an AI Client
 
-本仓库保留同一套 canonical workflow，并分别提供 Claude Code commands 与 Codex skills。按你使用的客户端安装即可。
+This repository keeps one canonical workflow and provides Claude Code commands plus Codex skills. Install the client you plan to use.
 
-Claude Code 用户：
+For Claude Code users:
 
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-Codex 用户：
+For Codex users on macOS / Linux:
 
 ```bash
 # macOS / Linux
 curl -fsSL https://chatgpt.com/codex/install.sh | sh
 
-# 或使用 npm
+# Or use npm
 npm install -g @openai/codex
 
-# 或使用 Homebrew
+# Or use Homebrew
 brew install --cask codex
 
-# 验证安装
+# Verify installation
 codex --version
 ```
 
-Windows 用户可使用官方 PowerShell 安装命令：`powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`。
+Windows users can use the official PowerShell installer: `powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`.
 
-如果 `codex --version` 能正常输出版本号，就可以继续安装本项目的 Codex skills。
+If `codex --version` prints a version, you can continue with this project's Codex skills installation.
 
-#### 减少授权确认
+#### Reducing Approval Prompts
 
-这些 skills 会频繁调用工具，Claude Code 默认会逐次请求授权确认。这个行为来自 Claude Code 客户端权限机制，不是本仓库可以修改的默认设置。
+These skills issue many tool calls, and Claude Code asks for approval for each one by default. That behavior comes from Claude Code's client-side permission system; it is not a repository default this project can change.
 
-如果你信任当前 workflow，并且在可信环境中运行，可以用 Claude Code 的跳过权限确认模式启动：
+If you trust the current workflow and are running in a trusted environment, start Claude Code in skip-permissions mode:
 
 ```bash
 claude --dangerously-skip-permissions
 ```
 
-注意：该模式会关闭 Claude Code 的工具审批保护，只应在你信任仓库、命令和工作目录的情况下使用。
+Warning: this disables Claude Code's tool-approval guardrails. Use it only when you trust the repository, commands, and working directory.
 
-### 2. 安装 Skills
+### 2. Install Skills
 
-Claude Code 用户安装（macOS / Linux）：
+For Claude Code users on macOS / Linux:
 
 ```bash
-# 克隆仓库
+# Clone the repository
 git clone https://github.com/xbtlin/ai-berkshire.git
 
-# 复制 skills 到 Claude Code 全局 commands 目录
+# Copy skills to Claude Code global commands directory
 cd ai-berkshire
 ./scripts/install-claude-commands.sh
 ```
 
-Claude Code 用户安装（Windows PowerShell / Command Prompt）：
+For Claude Code users on Windows PowerShell / Command Prompt:
 
 ```bat
 git clone https://github.com/xbtlin/ai-berkshire.git
@@ -293,405 +283,406 @@ cd ai-berkshire
 .\scripts\install-claude-commands.bat
 ```
 
-Codex 用户安装（macOS / Linux）：
+For Codex users on macOS / Linux:
 
 ```bash
-# 克隆仓库
+# Clone the repository
 git clone https://github.com/xbtlin/ai-berkshire.git
 
-# 生成并安装 Codex skills 到 ~/.codex/skills
+# Generate and install Codex skills to ~/.codex/skills
 cd ai-berkshire
 ./scripts/install-codex-skills.sh
 
-# 可选：安装 Codex slash prompts 到 ~/.codex/prompts
-# 用于获得接近 Claude Code 的 /investment-research 体验
+# Optional: install Codex slash prompts to ~/.codex/prompts
+# for a Claude Code-like /investment-research entry point
 ./scripts/install-codex-prompts.sh
 ```
 
-Codex 用户安装（Windows PowerShell / Command Prompt）：
+For Codex users on Windows PowerShell / Command Prompt:
 
 ```bat
 git clone https://github.com/xbtlin/ai-berkshire.git
 cd ai-berkshire
 .\scripts\install-codex-skills.bat
 
-REM 可选：安装 Codex slash prompts
+REM Optional: install Codex slash prompts
 .\scripts\install-codex-prompts.bat
 ```
 
-仓库同时维护三套入口：`skills/*.md` 是 Claude Code command 源文件；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 从 `skills/*.md` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层。
+The repository maintains three entry points: `skills/*.md` are the Claude Code command sources; `codex-skills/*/SKILL.md` are Codex skill packages generated from `skills/*.md` by `scripts/sync-codex-skills.py`; `codex-prompts/*.md` are an optional Codex slash-prompt compatibility layer.
 
-### 3. 使用
+### 3. Use
 
-在 Claude Code 中直接调用：
+Invoke directly in Claude Code:
 
 ```bash
-# 深度研究
-/investment-research 腾讯
-/investment-team 美团
-/management-deep-dive 王兴 美团
+# Deep Research
+/investment-research Tencent
+/investment-team Meituan
+/management-deep-dive Wang Xing, Meituan
 /private-company-research SpaceX
-/deep-company-series 拼多多
+/deep-company-series Pinduoduo
 
-# 财报分析
-/earnings-review 腾讯 2025Q4
-/earnings-team PDD 2025年报
+# Earnings Analysis
+/earnings-review Tencent 2025Q4
+/earnings-team PDD 2025 Annual
 
-# 行业筛选
-/industry-research 核电
-/industry-funnel AI算力
-/quality-screen 恒生指数成分股
-/bottleneck-hunter AI基础设施
-/investment-checklist 茅台, 英伟达, 苹果
+# Industry Screening
+/industry-research Nuclear Power
+/industry-funnel AI Compute
+/quality-screen Hang Seng Index Constituents
+/bottleneck-hunter AI Infrastructure
+/investment-checklist Moutai, NVIDIA, Apple
 
-# 持仓管理
-/portfolio-review 腾讯30%, 美团20%, 茅台20%, 现金30%
-/thesis-tracker 拼多多
-/thesis-drift 拼多多 reports/拼多多-thesis-2025Q4.md reports/拼多多-thesis-2026Q1.md
-/news-pulse 腾讯
+# Portfolio Management
+/portfolio-review Tencent 30%, Meituan 20%, Moutai 20%, Cash 30%
+/thesis-tracker Pinduoduo
+/thesis-drift Pinduoduo reports/PDD-thesis-2025Q4.md reports/PDD-thesis-2026Q1.md
+/news-pulse Tencent
 
-# 思维工具
-/dyp-ask 拼多多的护城河到底在哪里？
-/wechat-article 美团
+# Thinking Tools
+/dyp-ask Where is Pinduoduo's real moat?
+/wechat-article Meituan
 ```
 
-在 Codex 中安装后重启 Codex，然后直接按 skill 名称描述任务，例如：
+After installing for Codex, restart Codex and refer to skills by name, for example:
 
 ```text
-使用 investment-research 研究腾讯
-使用 earnings-review 分析 PDD 2025年报
-使用 industry-funnel 筛选 AI算力
-使用 bottleneck-hunter 扫描 AI基础设施瓶颈
-使用 thesis-drift 对比拼多多两份投资论文
-使用 wechat-article 写美团投研文章
+Use investment-research to research Tencent
+Use earnings-review to analyze PDD 2025 annual results
+Use industry-funnel to screen AI compute
+Use bottleneck-hunter to scan AI infrastructure bottlenecks
+Use thesis-drift to compare two Pinduoduo theses
+Use wechat-article to write a Meituan investment article
 ```
 
-如果安装了 Codex slash prompts，重启 Codex 后也可以在 `/` 菜单里搜索这些 prompt。Codex 官方的 custom prompt 入口通常显示为 `prompts:<name>`，例如：
+If you install Codex slash prompts, restart Codex and search for them in the `/` menu. Codex's official custom prompt entry point usually appears as `prompts:<name>`, for example:
 
 ```text
-/prompts:investment-research 腾讯
+/prompts:investment-research Tencent
 ```
 
 ---
 
-## 各 Skill 详细介绍
+## Detailed Skill Descriptions
 
-### 1. `/investment-research` — 四大师综合分析
+### 1. `/investment-research` — Four-Master Comprehensive Analysis
 
-最全面的单公司深度研究框架。按七个模块顺序执行：
+The most thorough single-company deep research framework. Executes seven modules in sequence:
 
 ```
-数据收集 → 生意本质(段永平) → 护城河(巴菲特) → 逆向思考(芒格)
-    → 管理层评估(段永平+巴菲特) → 文明趋势(李录) → 估值与安全边际
+Data Collection → Business Essence (Duan Yongping) → Moat (Buffett) → Inversion (Munger)
+    → Management Assessment (Duan Yongping + Buffett) → Civilizational Trends (Li Lu)
+    → Valuation & Margin of Safety
 ```
 
-**核心特色**：
-- AI研究偏见自觉机制（A/B/C级信息丰富度评级）
-- 关键数据多源交叉验证（市值手算校验、至少2个独立来源）
-- 四位大师的"追问"贯穿全文
-- 三情景估值（乐观/中性/悲观）+ 反向DCF
+**Key Features**:
+- AI research bias awareness mechanism (A/B/C information richness rating)
+- Multi-source cross-validation on key data (manual market cap calculation, 2+ independent sources)
+- Each master's "follow-up questions" woven throughout
+- Three-scenario valuation (bull/base/bear) + reverse DCF
 
-**输出示例摘录**：
+**Sample Output Excerpt**:
 
-> #### 综合决策备忘录
+> #### Comprehensive Decision Memo
 >
-> | 维度 | 结论 | 信心度 |
-> |------|------|--------|
-> | 生意质量（段永平） | 极佳：平台型生意，双边网络效应，边际成本趋零 | ★★★★★ |
-> | 护城河（巴菲特） | 宽阔且在变宽：网络效应+转换成本+规模效应三重叠加 | ★★★★☆ |
-> | 管理层（段永平+巴菲特） | 优秀：创始人掌舵，资本配置纪律强 | ★★★★☆ |
-> | 最大风险（芒格） | 监管政策不确定性，新业务亏损拖累整体利润 | ★★★☆☆ |
-> | 文明趋势（李录） | 顺应数字化消费趋势，但非"文明级范式转移" | ★★★★☆ |
-> | 估值（巴菲特+段永平） | 当前PE 18x，处于历史中位数偏低，有一定安全边际 | ★★★★☆ |
+> | Dimension | Conclusion | Confidence |
+> |-----------|-----------|------------|
+> | Business Quality (Duan Yongping) | Excellent: platform business, two-sided network effects, near-zero marginal cost | ★★★★★ |
+> | Moat (Buffett) | Wide and widening: network effects + switching costs + scale economies, triple-layered | ★★★★☆ |
+> | Management (Duan Yongping + Buffett) | Strong: founder-led, excellent capital allocation discipline | ★★★★☆ |
+> | Top Risk (Munger) | Regulatory policy uncertainty; new business losses dragging overall profits | ★★★☆☆ |
+> | Civilizational Trend (Li Lu) | Aligned with digital consumption trends, but not a "civilization-level paradigm shift" | ★★★★☆ |
+> | Valuation (Buffett + Duan Yongping) | Current P/E 18x, slightly below historical median, modest margin of safety | ★★★★☆ |
 >
-> **段永平**："这门生意的本质是连接消费者和商家，赚的是效率提升的钱。好生意的标志是：用户越多，商家越多；商家越多，用户越多。飞轮一旦转起来，很难停下。"
+> **Duan Yongping**: "The essence of this business is connecting consumers and merchants — profiting from efficiency gains. The hallmark of a great business: more users bring more merchants, more merchants bring more users. Once the flywheel spins, it's very hard to stop."
 >
-> **芒格**："反过来想——如果这家公司明天消失，用户和商家会怎么办？如果答案是'很快找到替代品'，那护城河就不够深。如果答案是'生活会变得非常不方便'，那就值得关注。"
+> **Munger**: "Invert, always invert — if this company vanished tomorrow, what would users and merchants do? If the answer is 'quickly find a substitute,' the moat isn't deep enough. If the answer is 'life would become very inconvenient,' that's worth paying attention to."
 
 ---
 
-### 2. `/investment-team` — 多Agent投研团队
+### 2. `/investment-team` — Multi-Agent Research Team
 
-启动4个AI Agent并行研究，模拟真实投研团队协作。每个Agent独立搜索、独立分析、独立给出评分，最后由Team Lead综合研判。
+Launches 4 AI Agents in parallel, simulating a real investment research team. Each Agent searches independently, analyzes independently, and delivers independent ratings. The Team Lead synthesizes the final judgment.
 
-**输出示例摘录**：
+**Sample Output Excerpt**:
 
-> #### 一句话结论
-> 美团是中国本地生活服务的绝对龙头，拥有多重网络效应护城河，当前估值处于历史较低水平，长期投资价值显著，建议逢低建仓。
+> #### One-Line Conclusion
+> Meituan is the undisputed leader in China's local life services, with multi-layered network effect moats. Current valuation sits at historically low levels — significant long-term value. Recommend accumulating on dips.
 >
-> #### 四维评分总表
+> #### Four-Dimension Scorecard
 >
-> | 维度 | 框架 | 评分 | 核心判断 |
-> |------|------|------|----------|
-> | 商业模式 & 护城河 | 段永平 | ★★★★☆ | 双边网络效应强劲，外卖+到店形成飞轮 |
-> | 财务 & 估值 | 巴菲特 | ★★★★☆ | 核心业务利润率持续改善，估值处于历史低位 |
-> | 行业 & 竞争 | 芒格 | ★★★☆☆ | 抖音入侵到店业务，竞争格局有恶化风险 |
-> | 风险 & 管理层 | 李录 | ★★★★☆ | 王兴战略眼光出色，但新业务烧钱需警惕 |
+> | Dimension | Framework | Score | Core Judgment |
+> |-----------|-----------|-------|---------------|
+> | Business Model & Moat | Duan Yongping | ★★★★☆ | Strong two-sided network effects; food delivery + in-store form a flywheel |
+> | Financials & Valuation | Buffett | ★★★★☆ | Core business margins improving steadily; valuation at historical lows |
+> | Industry & Competition | Munger | ★★★☆☆ | Douyin invading in-store business; competitive landscape may deteriorate |
+> | Risk & Management | Li Lu | ★★★★☆ | Wang Xing has exceptional strategic vision, but new business cash burn needs monitoring |
 >
-> **综合评分：3.8 / 5**
+> **Composite Score: 3.8 / 5**
 >
-> #### 投资建议
+> #### Investment Recommendation
 >
-> | 策略 | 建议 | 价格区间(港元) |
-> |------|------|---------------|
-> | 激进型 | 当前价位可建仓30% | 120-140 |
-> | 稳健型 | 等回调至100-110建仓 | 100-120 |
-> | 保守型 | 等待季报验证利润率趋势后再介入 | <100 |
+> | Strategy | Recommendation | Price Range (HKD) |
+> |----------|---------------|-------------------|
+> | Aggressive | Build 30% position at current price | 120–140 |
+> | Moderate | Wait for pullback to 100–110 to enter | 100–120 |
+> | Conservative | Wait for quarterly results to confirm margin trend | <100 |
 
 ---
 
-### 3. `/investment-checklist` — 巴菲特买入前 Checklist
+### 3. `/investment-checklist` — Buffett Pre-Buy Checklist
 
-六关快速筛选，帮你在10分钟内决定一家公司是否值得深入研究：
-
-```
-第一关：能力圈（我能理解吗？）
-    ↓ 通过
-第二关：好生意（经济特征如何？）
-    ↓ 通过
-第三关：护城河（竞争优势深不深？）
-    ↓ 通过
-第四关：管理层（值得信任吗？）
-    ↓ 通过
-第五关：安全边际（价格便宜吗？）
-    ↓ 通过
-第六关：决策纪律（是理性还是FOMO？）
-    ↓ 通过
-   ✅ 镜子测试
-```
-
-**支持多公司对比**——一次筛选多个标的：
+Six gates for rapid screening — decide in 10 minutes whether a company is worth deeper research:
 
 ```
-/investment-checklist 腾讯, 阿里巴巴, 美团, 拼多多
+Gate 1: Circle of Competence (Can I understand it?)
+    ↓ Pass
+Gate 2: Good Business (What are the economics?)
+    ↓ Pass
+Gate 3: Moat (How deep is the competitive advantage?)
+    ↓ Pass
+Gate 4: Management (Can they be trusted?)
+    ↓ Pass
+Gate 5: Margin of Safety (Is the price cheap enough?)
+    ↓ Pass
+Gate 6: Decision Discipline (Rational or FOMO?)
+    ↓ Pass
+   ✅ Mirror Test
 ```
 
-**输出示例摘录**：
+**Supports multi-company comparison** — screen multiple targets at once:
 
-> #### 镜子测试
+```
+/investment-checklist Tencent, Alibaba, Meituan, Pinduoduo
+```
+
+**Sample Output Excerpt**:
+
+> #### Mirror Test
 >
-> "我以 380港元 买入 腾讯，因为：
-> 1. 这门生意的本质是**社交网络+数字内容平台**，我理解它；
-> 2. 它的护城河是**12亿用户的社交关系链**，而且在变宽；
-> 3. 管理层**Pony Ma低调务实、资本配置优秀**，值得信赖；
-> 4. 当前价格相当于内在价值的**8折**，有一定安全边际；
-> 5. 即使我错了，下行风险可控，因为**账上净现金超2000亿、游戏现金流强劲**。"
+> "I am buying Tencent at HK$380 because:
+> 1. The essence of this business is a **social network + digital content platform** — I understand it;
+> 2. Its moat is **1.2 billion users' social graph**, and it's widening;
+> 3. Management — **Pony Ma is understated, pragmatic, and an excellent capital allocator** — trustworthy;
+> 4. The current price represents **~80% of intrinsic value**, providing a meaningful margin of safety;
+> 5. Even if I'm wrong, downside is manageable because **net cash exceeds ¥200 billion and gaming cash flow is rock-solid**."
 >
-> ✅ 通过镜子测试
+> ✅ Passed the Mirror Test
 >
-> **5句话说不完整 = 不买。没有例外。**
+> **If you can't articulate it in 5 sentences = don't buy. No exceptions.**
 
 ---
 
-### 4. `/industry-research` — 产业链全景扫描
+### 4. `/industry-research` — Industry Value Chain Scan
 
-从一个投资主题出发，完成产业链全景研究：
+Start from an investment theme and complete a full industry value chain study:
 
 ```
-投资逻辑链构建 → 产业链全景图 → 全球上市公司扫描
-    → 各环节头部公司四大师分析 → 投资组合配置建议
+Investment Logic Chain → Value Chain Map → Global Listed Company Scan
+    → Four-Master Analysis on Segment Leaders → Portfolio Allocation Recommendation
 ```
 
-**输出示例摘录**：
+**Sample Output Excerpt**:
 
-> #### 投资逻辑链：核电
+> #### Investment Logic Chain: Nuclear Power
 >
-> 底层趋势：AI数据中心电力需求爆发 + 碳中和目标
-> → 导致：稳定清洁基荷电源需求激增
-> → 创造：核电重启/新建/SMR的确定性需求
-> → 受益：铀矿 → 燃料加工 → 设备制造 → 运营商
+> Underlying Trend: AI data center power demand explosion + carbon neutrality goals
+> → Drives: surging demand for stable, clean baseload power
+> → Creates: deterministic demand for nuclear restarts / new builds / SMRs
+> → Benefits: uranium mining → fuel fabrication → equipment manufacturing → operators
 >
-> #### 推荐组合
+> #### Recommended Portfolio
 >
-> | 层级 | 仓位 | 标的 | 环节 | 核心逻辑 |
-> |------|------|------|------|---------|
-> | 核心 | 50% | 中国广核(CGN)、Cameco | 运营+铀矿 | 确定性最高 |
-> | 卫星 | 30% | 中国核电、东方电气 | 运营+设备 | 国产替代受益 |
-> | 期权 | 15% | NuScale、Nano Nuclear | SMR | 高风险高弹性 |
-> | ETF | 替代 | URA、URNM | 全链 | 懒人方案 |
+> | Tier | Weight | Target | Segment | Core Logic |
+> |------|--------|--------|---------|------------|
+> | Core | 50% | CGN / Cameco | Operations + Uranium | Highest certainty |
+> | Satellite | 30% | CNNP / Dongfang Electric | Operations + Equipment | Domestic substitution beneficiary |
+> | Option | 15% | NuScale / Nano Nuclear | SMR | High risk, high convexity |
+> | ETF | Alternative | URA / URNM | Full chain | Passive approach |
 
 ---
 
-### 5. `/industry-funnel` — 行业漏斗筛选
+### 5. `/industry-funnel` — Industry Funnel Screening
 
-从一个行业/方向出发，**全市场 → ≤10 家 → 3 家**逐层精选：
+Start from an industry/theme and progressively narrow: **Full market → ≤10 → 3 deep dives**:
 
 ```
-全市场扫描（活跃度 + 涨幅 + 市值前 30 并集，30-60 家）
-    ↓ 价值投资 5 条硬指标
-粗筛 ≤ 10 家
-    ↓ 精细分析（每家 300-500 字）
-精细分析 ≤ 10 家
-    ↓ 终选（按组合互补性，不按打分前 3）
-四大师深度分析 3 家（每家 800-1200 字）
+Full Market Scan (activity + returns + top-30 market cap union → 30-60 companies)
+    ↓ 5 value investing hard filters
+Rough Cut ≤ 10
+    ↓ Detailed analysis (300-500 words each)
+Detailed Analysis ≤ 10
+    ↓ Final selection (by portfolio complementarity, NOT by top-3 score)
+Four-Master Deep Analysis on 3 companies (800-1200 words each)
     ↓
-推荐组合（核心 / 卫星 / 期权）+ 操作信号
+Recommended Portfolio (Core / Satellite / Option) + Action Signals
 ```
 
-**核心特色**：
-- 每层都有明确留/弃标准，被淘汰的标的留下淘汰理由（不是黑箱）
-- 终选 3 家按"组合互补性"选（高确定性 + 中等弹性 + 高弹性），不按打分前 3 排序
-- 强制列"未来 IPO 候选"，避免漏掉一级市场核心玩家
-- AI 偏见自觉机制：应对龙头偏好 / 英文偏好 / 故事偏好 / 上市偏好
+**Key Features**:
+- Every layer has explicit keep/drop criteria — eliminated names come with a stated reason (not a black box)
+- Final 3 are selected for **portfolio complementarity** (high certainty + moderate upside + high convexity), not by ranking scores
+- Mandatory "future IPO candidates" list to avoid missing private-market key players
+- AI bias awareness: counters large-cap bias / English-language bias / narrative bias / listed-only bias
 
-**与 `/industry-research` 的区别**：
-- `industry-research` 偏重产业链结构与全景（按环节切片）
-- `industry-funnel` 偏重个股筛选漏斗（从全市场逐层精选到 3 家）
+**Difference from `/industry-research`**:
+- `industry-research` emphasizes value chain structure and panoramic view (sliced by segment)
+- `industry-funnel` emphasizes the stock-picking funnel (progressive screening from full market to 3)
 
-**实测：AI 行业 4 子赛道并行（2026-05-09）**：
+**Live Test: AI Sector, 4 Sub-Tracks in Parallel (2026-05-09)**:
 
-| 子赛道 | 终选 3 家 | 核心仓位推荐 |
-|-------|---------|------------|
-| AI 算力 | TSMC / NVIDIA / SK Hynix | TSMC ★★★★★ |
-| AI 模型 | Alphabet / Meta / 阿里巴巴 | Alphabet ★★★★★ |
-| AI 应用 | 微软 / Adobe / AppLovin | 微软 + Adobe ★★★★ |
-| AI 基建电力 | Eaton / 特变电工 / Talen Energy | Eaton + 特变电工 ★★★★ |
+| Sub-Track | Final 3 | Core Position Pick |
+|-----------|---------|-------------------|
+| AI Compute | TSMC / NVIDIA / SK Hynix | TSMC ★★★★★ |
+| AI Models | Alphabet / Meta / Alibaba | Alphabet ★★★★★ |
+| AI Applications | Microsoft / Adobe / AppLovin | Microsoft + Adobe ★★★★ |
+| AI Infrastructure & Power | Eaton / TBEA / Talen Energy | Eaton + TBEA ★★★★ |
 
-**关键发现**：AI 应用层最大赢家不是 AI Native 公司，而是有渠道+数据+工作流嵌入度的成熟巨头——这呼应了 1995-2000 互联网泡沫"卖铲子"的历史规律（亚马逊和苹果赢，Pets.com 输）。
+**Key Insight**: The biggest winners in the AI application layer aren't AI-native companies — they're established giants with distribution, data, and workflow embeddedness. This echoes the 1995–2000 Internet bubble's "sell the picks and shovels" pattern (Amazon and Apple won; Pets.com didn't).
 
-完整报告：[AI 算力](reports/AI算力-funnel-20260509.md) · [AI 模型](reports/AI模型-funnel-20260509.md) · [AI 应用](reports/AI应用-funnel-20260509.md) · [AI 基建电力](reports/AI基建电力-funnel-20260509.md)
-
----
-
-### 6. `/private-company-research` — 未上市公司深度研究
-
-专为信息稀缺的未上市公司设计的"侦探式"研究框架：
-
-**核心差异化**：
-- **财务数据拼凑**：从招股书、母公司财报、融资新闻、行业数据多源拼凑
-- **置信度标注**：每个数据点标注 🟢高 / 🟡中 / 🔴低 置信度
-- **多方法估值交叉**：融资估值法 + 可比公司法 + DCF + 终局倒推法
-- **退出路径分析**：IPO/并购/二级转让全路径评估
-
-**输出示例摘录**：
-
-> #### 公司画像速览：SpaceX
->
-> | 项目 | 内容 |
-> |------|------|
-> | 最新估值 | ~$350B (2025年二级市场) 🟡 |
-> | 推算收入 | ~$130亿 (2024年) 🟡 |
-> | Starlink用户 | 400万+ (2024年底) 🟢 |
-> | 发射次数 | 100+ 次/年 (2024年) 🟢 |
->
-> #### 估值判断
->
-> | 方法 | 估值区间 | 说明 |
-> |------|---------|------|
-> | 最近融资 | $350B | 二级市场报价，有流动性溢价 |
-> | 可比公司法 | $200-280B | 对标电信+航天+国防 |
-> | DCF(中性) | $250-350B | 假设Starlink 2027年$300亿收入 |
-> | 终局倒推 | $400-600B | 假设星链成为全球电信基础设施 |
->
-> **综合合理估值区间：$250B - $400B**
+Full reports: [AI Compute](reports/AI Calculator-funnel-20260509.md) · [AI Models](reports/AI model - funnel-20260509.md) · [AI Applications](reports/AI application-fundel-20260509.md) · [AI Infrastructure & Power](reports/AI capital power-fundel-20260509.md)
 
 ---
 
-### 7. `/news-pulse` — 股价异动新闻归因
+### 6. `/private-company-research` — Private Company Deep Research
 
-专为"股价大涨/大跌时快速搞清发生了什么"设计的情报响应 Skill。**不是深度投研，是 10-15 分钟的快速归因**——避免持仓异动时陷入小作文焦虑或盲目止损。
+A "detective-style" research framework designed for information-scarce private companies:
 
-**核心差异化**：
-- **4 维并行侦察**：公司事件 / 监管政策 / 行业对手 / 市场情绪（卖方+大V+南向资金）
-- **归因优先于罗列**：不是把所有新闻列一遍，而是判断"哪个事件配得上这次股价异动"
-- **强制性质判断**：价值事件 / 情绪波动 / **真因不明** / 混合——其中"真因不明"是最有价值的输出（可能存在内幕抢跑）
-- **明确行动建议**：是否触发深度研究、是否需要重审论文、是否仅观察等
+**Key Differentiators**:
+- **Financial data piecing**: Assembled from IPO filings, parent company reports, funding news, and industry data
+- **Confidence tagging**: Every data point tagged 🟢 High / 🟡 Medium / 🔴 Low confidence
+- **Multi-method valuation cross-check**: Funding-round valuation + comparable companies + DCF + endgame backsolve
+- **Exit path analysis**: Full evaluation of IPO / M&A / secondary transfer paths
 
-**与其他 Skill 的区别**：
-| 场景 | 用什么 |
-|------|------|
-| 完整投研（小时级） | `/investment-team` 或 `/investment-research` |
-| 财报深读 | `/earnings-review` |
-| 长期论文跟踪 | `/thesis-tracker` |
-| **股价异动 10 分钟归因** | **`/news-pulse`** |
+**Sample Output Excerpt**:
 
-**输出示例摘录**（腾讯 4/17-5/01 实测，14 天 -10.47%）：
-
-> #### 一句话归因
-> 这次 -10.47% 跌幅约 70-80% 由资金面+情绪面驱动（回购静默期 + 南向减仓 + 板块 beta + AI 叙事被夺），20-30% 由 AI 投入翻倍的递延消化承担——**基本面无利空**，卖方维持买入共识，性质上属于"流动性+情绪型回调"，不是价值事件。
+> #### Company Snapshot: SpaceX
 >
-> #### 异动归因表
+> | Item | Detail |
+> |------|--------|
+> | Latest Valuation | ~$350B (2025 secondary market) 🟡 |
+> | Estimated Revenue | ~$13B (2024) 🟡 |
+> | Starlink Subscribers | 4M+ (end of 2024) 🟢 |
+> | Launch Cadence | 100+ per year (2024) 🟢 |
 >
-> | 候选解释 | 估算贡献 | 置信度 |
-> |---------|--------|--------|
-> | 回购静默期消失（结构性，5/13 财报前） | -3% ~ -4% | 高 |
-> | 南向资金转向净卖腾讯 | -2% ~ -3% | 高 |
-> | AI 叙事被竞品夺走（DeepSeek V4/Qwen3.6/月暗 1T） | -1% ~ -2% | 中 |
-> | 板块/宏观 beta（油价+地缘+Fed Warsh 鹰派） | -2% ~ -3% | 高 |
-> | 一季报前避险 | -1% ~ -2% | 中 |
-> | 基本面恶化 | **0%** | 极高（排除） |
+> #### Valuation Assessment
 >
-> #### 性质判断：✅ 混合型
-> 70% 资金面/情绪面 + 20% AI 长期叙事担忧 + 10% 一季报前不确定性
+> | Method | Valuation Range | Notes |
+> |--------|----------------|-------|
+> | Latest Funding | $350B | Secondary market price; includes liquidity premium |
+> | Comparable Companies | $200–280B | Benchmarked against telecom + aerospace + defense |
+> | DCF (Base Case) | $250–350B | Assumes Starlink $30B revenue by 2027 |
+> | Endgame Backsolve | $400–600B | Assumes Starlink becomes global telecom infrastructure |
 >
-> **关键反证**：段永平 4/8 卖腾讯 put（看多）；卖方 24 家共识 Strong Buy；网易 4/30 逆市涨 2%（排除游戏行业问题）；腾讯跑输恒科 7 个百分点（恒科月度反而涨 4%）。
+> **Composite Fair Value Range: $250B – $400B**
 
-调用方式：
+---
+
+### 7. `/news-pulse` — Price-Move Rapid Attribution
+
+Designed for "when a stock surges or drops, quickly figure out what happened." **Not deep research — it's 10–15 minute rapid attribution** to avoid panic-selling or essay-length anxiety spirals when your holdings move.
+
+**Key Differentiators**:
+- **4-dimensional parallel recon**: Company events / Regulatory policy / Industry competitors / Market sentiment (sell-side + influencers + southbound capital flows)
+- **Attribution over listing**: Doesn't just list all news — judges "which event actually explains this price move"
+- **Mandatory nature classification**: Value Event / Sentiment Fluctuation / **True Cause Unknown** / Mixed — where "True Cause Unknown" is often the most valuable output (potential insider front-running)
+- **Clear action items**: Whether to trigger deep research, re-examine your thesis, or simply watch
+
+**When to Use What**:
+| Scenario | Skill |
+|----------|-------|
+| Complete research (hours) | `/investment-team` or `/investment-research` |
+| Earnings deep read | `/earnings-review` |
+| Long-term thesis tracking | `/thesis-tracker` |
+| **Price move, 10-min attribution** | **`/news-pulse`** |
+
+**Sample Output Excerpt** (Tencent 4/17–5/01 live test, -10.47% over 14 days):
+
+> #### One-Line Attribution
+> Approximately 70–80% of this -10.47% drop was driven by fund flows and sentiment (buyback blackout period + southbound selling + sector beta + AI narrative displacement). 20–30% came from deferred digestion of the AI capex doubling announcement — **no fundamental deterioration**. Sell-side consensus remains Buy. This is a "liquidity + sentiment-driven pullback," not a value event.
+>
+> #### Attribution Table
+>
+> | Candidate Explanation | Estimated Contribution | Confidence |
+> |----------------------|----------------------|------------|
+> | Buyback blackout period (structural, pre-5/13 earnings) | -3% to -4% | High |
+> | Southbound capital turned net seller on Tencent | -2% to -3% | High |
+> | AI narrative stolen by competitors (DeepSeek V4 / Qwen 3.6 / MoonDark 1T) | -1% to -2% | Medium |
+> | Sector/macro beta (oil + geopolitics + Fed Warsh hawkish) | -2% to -3% | High |
+> | Pre-Q1 earnings de-risking | -1% to -2% | Medium |
+> | Fundamental deterioration | **0%** | Very High (ruled out) |
+>
+> #### Nature Classification: ✅ Mixed
+> 70% fund flows / sentiment + 20% long-term AI narrative concern + 10% pre-Q1 uncertainty
+>
+> **Key counter-evidence**: Duan Yongping sold Tencent puts on 4/8 (bullish); 24 sell-side analysts consensus Strong Buy; NetEase rose 2% on 4/30 against the tide (rules out gaming industry issue); Tencent underperformed Hang Seng Tech by 7pp (Hang Seng Tech actually rose 4% for the month).
+
+Usage:
 
 ```
-/news-pulse 腾讯
-/news-pulse 拼多多 跌12% 一周内
-/news-pulse 米哈游
+/news-pulse Tencent
+/news-pulse Pinduoduo down 12% within a week
+/news-pulse miHoYo
 ```
 
 ---
 
-## 实战研究报告
+## Live Research Reports
 
-> 以下是使用本框架生成的真实投资研究报告，展示 AI 投研的实际输出效果。
+> Below are real investment research reports generated with this framework, showcasing actual AI-powered research output quality.
 
-| 公司 | 使用 Skill | 核心结论 | 报告链接 |
-|------|-----------|---------|---------|
-| 拼多多 (PDD) | `/investment-team` | 综合3.4/5，极度便宜但10年确定性不足，适合中等仓位 | [查看报告](reports/拼多多/) |
-| 腾讯控股 (0700.HK) | `/investment-research` | 社交垄断+资本配置卓越，14x前瞻PE合理偏低 | [查看报告](reports/腾讯/) |
-| 7家公司对比 | `/investment-checklist` | 茅台、腾讯通过；英伟达、美团、快手有条件通过；拼多多、泡泡玛特灰色 | [查看报告](reports/多公司对比-checklist-20260408.md) |
-| 大师持仓追踪 | 自定义研究 | 巴菲特/李录/段永平最新13F持仓+PDD成本分析 | [查看报告](reports/大师持仓追踪-research-20260408.md) |
+| Company | Skill Used | Core Conclusion | Report |
+|---------|-----------|----------------|--------|
+| Pinduoduo (PDD) | `/investment-team` | Composite 3.4/5 — extremely cheap but 10-year certainty insufficient; suitable for moderate position | [View Report](reports/More%20than%20you%20can%20spell/) |
+| Tencent (0700.HK) | `/investment-research` | Social monopoly + superior capital allocation; 14x forward P/E is reasonable-to-low | [View Report](reports/Circulation/) |
+| 7-Company Comparison | `/investment-checklist` | Moutai & Tencent pass; NVIDIA, Meituan & Kuaishou conditional; Pinduoduo & Pop Mart gray zone | [View Report](reports/Multi-firm comparison -- checklist-20260408.md) |
+| Master Holdings Tracker | Custom Research | Buffett / Li Lu / Duan Yongping latest 13F holdings + PDD cost-basis analysis | [View Report](reports/Master warehouse tracking -- research-260408.md) |
 
-> *更多报告将持续添加。欢迎 PR 提交你用本框架生成的研究报告。*
+> *More reports will be added continuously. PRs submitting your own research reports generated with this framework are welcome.*
 
 ---
 
-## 设计理念
+## Design Philosophy
 
-### 四大师方法论融合
+### Four-Master Methodology Synthesis
 
-**段永平 · "对的生意"**——商业模式本质，是其余三个视角的共同起点：
+**Duan Yongping · "The Right Business"** — business essence, the shared starting point for the other three lenses:
 
-| 巴菲特 | 芒格 | 李录 |
+| Buffett | Munger | Li Lu |
 |:---:|:---:|:---:|
-| 护城河<br>安全边际<br>管理层 | 逆向思考<br>风险清单<br>偏误自查 | 文明趋势<br>范式转移<br>产业价值 |
+| Moat<br>Margin of safety<br>Management | Inversion<br>Risk list<br>Bias audit | Civilization trends<br>Paradigm shifts<br>Industry value |
 
-四位大师不是简单的分工，而是设计来**互相挑战**的：
-- 段永平说"好生意"，芒格会问"怎么会死"
-- 巴菲特说"够便宜"，李录会问"10年后还在吗"
-- 你得到的不是四份报告的拼接，而是四种思维方式的碰撞
+The four masters aren't just dividing labor — they're designed to **challenge each other**:
+- Duan Yongping says "great business" → Munger asks "how could it die?"
+- Buffett says "cheap enough" → Li Lu asks "will it still exist in 10 years?"
+- What you get isn't four reports stitched together — it's four thinking systems colliding
 
-### 金融严谨性工具 (`tools/financial_rigor.py`)
+### Financial Rigor Tool (`tools/financial_rigor.py`)
 
-| 功能 | 命令 | 解决的问题 |
-|------|------|-----------|
-| **市值验算** | `verify-market-cap` | 股价×总股本 精确计算，检测单位错误 |
-| **估值验算** | `verify-valuation` | PE/PB/ROE/FCF Yield 精确十进制计算 |
-| **多源交叉验证** | `cross-validate` | N个来源的同一数据自动比对，超过容差告警 |
-| **三情景估值** | `three-scenario` | 乐观/中性/悲观精确计算目标价 |
-| **Benford定律检测** | `benford` | 检测财务数据首位数字分布异常 |
-| **精确计算器** | `calc` | 任意财务表达式精确计算，替代LLM心算 |
+| Feature | Command | Problem Solved |
+|---------|---------|---------------|
+| **Market Cap Verification** | `verify-market-cap` | Price × shares outstanding, exact calculation, detects unit errors |
+| **Valuation Verification** | `verify-valuation` | P/E / P/B / ROE / FCF Yield — exact decimal arithmetic |
+| **Multi-Source Cross-Validation** | `cross-validate` | Auto-compare same data point across N sources; alerts above tolerance |
+| **Three-Scenario Valuation** | `three-scenario` | Bull / base / bear exact target price calculation |
+| **Benford's Law Detection** | `benford` | Detect anomalies in first-digit distribution of financial data |
+| **Precision Calculator** | `calc` | Any financial expression computed exactly — replaces LLM mental math |
 
-**设计原则**：所有计算使用 Python `decimal.Decimal`（精确十进制），非 `float`（浮点近似）。`0.1 + 0.2 = 0.3` 在金融场景中不允许失败。
-
----
-
-## 未来方向
-
-- [ ] 历史回测：AI研报 vs 实际股价表现
-- [ ] 宏观经济周期分析框架
-- [ ] 基于MCP的实时数据接入（Wind/Bloomberg/Yahoo Finance）
+**Design Principle**: All calculations use Python `decimal.Decimal` (exact decimal), not `float` (floating-point approximation). `0.1 + 0.2 = 0.3` must never fail in a financial context.
 
 ---
 
-## 免责声明
+## Future Directions
 
-本项目仅供学习和研究目的，不构成任何投资建议。投资有风险，决策需谨慎。请始终做好自己的尽职调查（DYOR）。
+- [ ] Historical backtesting: AI research reports vs. actual stock price performance
+- [ ] Macroeconomic cycle analysis framework
+- [ ] Real-time data feeds via MCP (Wind / Bloomberg / Yahoo Finance)
+
+---
+
+## Disclaimer
+
+This project is for educational and research purposes only and does not constitute investment advice. Investing involves risk; decisions should be made with caution. Always do your own due diligence (DYOR).
 
 ---
 
@@ -703,10 +694,10 @@ MIT License
 
 > "The best investment you can make is in yourself." — Warren Buffett
 >
-> AI Berkshire：让每个人都拥有自己的投研团队。
+> AI Berkshire: Giving everyone their own investment research team.
 
 ## Star History
 
-如果这个项目对你有帮助，请给一个 Star 支持！精选公司研究与个人判断首发于微信公众号「**复利炼丹炉**」（二维码见[文首](#精选研究首发于公众号)）。
+If this project has been helpful to you, please give it a Star!
 
 [![Star History Chart](https://api.star-history.com/svg?repos=xbtlin/ai-berkshire&type=Date)](https://star-history.com/#xbtlin/ai-berkshire&Date)

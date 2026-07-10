@@ -1,515 +1,515 @@
-# 春风动力（603129.SH）投资研究报告
+# Spring Wind Dynamics (603129.SH) Investment Study
 
-**巴菲特-芒格-段永平-李录 四维综合分析框架**
+** Buffett-Mung-Dhong-Jongping-Li-Jing-Jing-Jing-Li-Jing-Jing-Jing-Jing-Jing-Jing-Jing-Jing-Jing-Jing-Jing-Jing-Jing-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pong-Pak-Pong-Pak-Pak-Pak-Pak-Pak-Pak-Pak-Pun-Pan-Pan-Pan-Pan-Pan-Pan-Pan-Pan-Pan-Pan-Pan-Pan-Pan-Pan-Pan-Pan-Pan-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-P-
 
-**报告日期**：2026年6月24日
-**股价**：241.11 元 | **市值**：370亿元 | **总股本**：1.5348亿股
+** Date of report**: 24 June 2026
+** Stock prices**: $241.11 ** Market value**: $37 billion ** Total equity**: 153.4 million shares
 
 ---
 
-## AI研究偏见自觉
+# AI studies prejudices
 
-### 信息丰富度评级：B级（信息适中）
+## Information abundance rating: B (median)
 
-春风动力2017年上市，至今约9年，券商覆盖中等（过去90天16家机构评级），年报信息披露完整但分部毛利率等关键数据未单独披露。
+Spring Wind was listed in 2017, and has been around nine years now, with medium bond-seller coverage (16 agency ratings over the past 90 days), and annual reports disclose complete information but key data such as branch Maori rates are not separately disclosed.
 
-| 维度 | 评估 |
+<unk> Dimensions <unk> Evaluation <unk>
 |------|------|
-| 上市时间 | 2017年至今，约9年 |
-| 券商覆盖 | 中等偏上（16家机构覆盖） |
-| 英文资料 | 较少，海外投资者关注有限 |
-| 数据缺口 | 分部毛利率未披露、海外各区域利润率不透明 |
-| AI研究陷阱 | 可能用"合理推测"填补分部盈利数据空白 |
+The time of the market... 2017 to date, about 9 years.
+<unk> . Slightly above (16 institutions)
+<unk> English information <unk> Less foreign investors have limited interest <unk>
+Data gaps Division Maori rates not disclosed, profit margins not transparent across overseas regions
+The AI study traps, the possibility of filling the segment with "reasonable speculation."
 
-**偏见自查**：
-- 本报告"确定性"感受主要来自ATV/UTV全球竞争格局清晰、中国大排量摩托车增长趋势明确，而非资料数量本身
-- 与市场共识的差异点：市场可能低估了KTM合作终止后的渠道重建难度，也可能低估了极核电动的盈利转正速度
-- 分部毛利率、海外各区域利润率等关键数据为推算值，标注了置信度
+** Prejudice self-examination**:
+- The sense of "preclusion" in this report is mainly derived from the clear global competition patterns of ATV/UTV and the clear trend in the growth of large-volume motor vehicles in China, rather than the amount of information itself
+- Differences with market consensus: markets may underestimate the difficulty of re-establishing channels after KTM's termination, or the rate of profit from the electronuclear power.
+- Confidence is indicated as extrapolation in key data such as branch Maori rates, overseas regional profitability rates, etc.
 
 ---
 
-## 第一步：关键数据总览
+# Step 1: a summary of key data
 
-### 1.1 核心财务数据（已交叉验证 ✅）
+##1.1 Core financial data (cross-checked)
 
-| 指标 | FY2021 | FY2022 | FY2023 | FY2024 | FY2025 |
+<unk> Indicator <unk> FY2021 <unk> FY2022 <unk> FY2023 <unk> FY2024 <unk> FY2025 <unk>
 |------|--------|--------|--------|--------|--------|
-| **营业收入（亿元）** | 78.61 | 113.78 | 121.10 | 150.38 | 197.46 |
-| 收入同比增速 | +59.1% | +44.7% | +6.4% | +24.2% | +31.3% |
-| **归母净利润（亿元）** | 4.12 | 7.01 | 10.08 | 14.72 | 16.75 |
-| 净利润同比增速 | — | +70.4% | +43.7% | +46.1% | +13.8% |
-| **毛利率** | 21.38% | 25.07% | 32.29% | 29.56% | 26.62% |
-| **经营利润率** | 5.28% | 5.20% | 7.95% | 8.58% | 8.39% |
-| **净利率** | 5.24% | 6.16% | 8.32% | 9.79% | 8.48% |
-| **EPS（元）** | 3.01 | 4.68 | 6.70 | 9.74 | 10.99 |
-| **BVPS（元）** | 24.22 | 28.11 | 33.49 | 40.90 | 49.17 |
+** Operating income (millions of yuan)**
+<unk> Income increase per year + 59.1% <unk> 44.7% <unk> 6.4% <unk> 24.2% <unk> 31.3% <unk>
+** Net profit from the return of mothers (in millions of yuan)** <unk> 7.01 <unk> 10.08 <unk> 14.72 <unk> 16.75 <unk>
+<unk> Net profit increase in year-on-year <unk> + 70.4% <unk> + 43.7% <unk> + 46.1% <unk> + 13.8% <unk>
+**Māori ** 21.38% <unk> 25.07% <unk> 32.29% <unk> 29.56% <unk> 26.6% <unk>
+** Operating profitability** 5.28% 5.20% <unk> 7.95% <unk> 8.58% <unk> 8.39% <unk>
+** Net interest rate** 5.24% <unk> 6.16% <unk> 8.32% <unk> 9.79% <unk> 8.48% <unk>
+**EPS(M)** <unk> 3.01 <unk> 4.68 <unk> 6.70 <unk> 9.74 <unk> 10.99 <unk>
+**BVPS(M)** 24.22 <unk> 28.11 <unk> 33.49 <unk> 40.90 <unk> 49.17 <unk>
 
-数据来源：StockAnalysis（S&P Global）、Investing.com，两个来源数据一致。
+Sources: StockAnalysis (S&P Global), Investment.com, two sources are consistent.
 
-### 1.2 现金流与资产负债表（FY2025）
+##1.2 Cash flow and balance sheet (FY2025)
 
-| 指标 | FY2023 | FY2024 | FY2025 |
+Indicator: SY2023 <unk> SY2024 <unk> SY2025 <unk>
 |------|--------|--------|--------|
-| 经营现金流（亿元） | 13.85 | 29.73 | 39.66 |
-| 资本开支（亿元） | -8.62 | -4.03 | -7.73 |
-| 自由现金流（亿元） | 3.01 | 22.26 | 25.24 |
-| 货币资金（亿元） | — | 71.49 | 95.77 |
-| 总债务（亿元） | — | 1.88 | 2.49 |
-| **净现金（亿元）** | — | 69.70 | **93.28** |
+<unk> Operating cash flow (millions of yuan) <unk> 13.85 <unk> 29.73 <unk> 39.66 <unk>
+<unk> Capital expenditure (millions of yuan) <unk> 8.62 <unk> 4.03 <unk> 7.73 <unk>
+Free cash flow (millions of yuan)
+<unk> Monetary funds (millions of yuan) <unk>
+Total debt (millions of yuan) – 1.88 <unk> 2.49 <unk>
+** Net cash (millions of yuan)** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 | ROE | 21.67% | 26.25% | 22.95% |
 | ROIC | 19.22% | 22.42% | 22.17% |
 
-### 1.3 FY2025 分部收入
+#1.3 FY2025 Division income
 
-| 业务线 | 收入（亿元） | 占比 | 同比增速 | 销量（万台） |
+The business line, the income (millions of yuan), the income, the share, the same rate of growth, the sales (millions)
 |--------|------------|------|----------|------------|
-| 全地形车（ATV/UTV） | 96.08 | 48.7% | +33.3% | 19.70 |
-| 燃油摩托车 | 64.71 | 32.8% | +7.2% | 29.59 |
-| 极核电动两轮车 | 19.12 | 9.7% | +381.0% | 55.12 |
-| 配件及其他 | 11.96 | 6.1% | +15.5% | — |
-| 其他业务 | 5.58 | 2.8% | — | — |
-| **合计** | **197.46** | **100%** | **+31.3%** | — |
+<unk> ATV/UTV (ATV)
+<unk> Fuel motorcycle <unk> 64.71 <unk> 32.8 <unk> 7.2 % <unk> 29.59 <unk>
+<unk> Polar powered two-wheeler <unk> 19.12 <unk> 9.7% <unk> +381.0% <unk> 55.12 <unk>
+<unk> Parts and other 11.96 <unk> 6.1 <unk> + 15.5 <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+Other operations 5.58 <unk> 2.8 % <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+** Total** ** 197.46** ** 100%** ** ** 31.3%** ** ** ** ** ** ** ** ** ** ** ** ** ** 31.3% ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 31.3 ** ** ** ** ** ** ** ** ** ** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-### 1.4 估值指标（工具验算 ✅）
+#1.4 Valuation indicators (tools <unk> )
 
-| 指标 | 数值 | 验算方法 |
+<unk> Indicators <unk> Value <unk> Method of calculation <unk>
 |------|------|---------|
 | PE（TTM） | **21.94x** | 241.11 / 10.99 = 21.94 |
 | PB | **4.90x** | 241.11 / 49.17 = 4.90 |
 | P/FCF | **14.67x** | 241.11 / 16.44 = 14.67 |
-| FCF收益率 | **6.82%** | 16.44 / 241.11 |
-| 股息率 | **1.74%** | 4.20 / 241.11 |
+FCF rate of return ** 6.82% ** 16.44 / 241.11 <unk>
+<unk> Equities ** 1.74% ** 4.20 / 241.11 <unk>
 | ROE | **22.35%** | 10.99 / 49.17 |
-| PS | **1.87x** | 370亿 / 197.46亿 |
-| PEG | **0.66** | 基于未来3年复合增速27.83% |
+<unk> PS <unk> 187x** <unk> 37 billion / 19746 million <unk>
+PEG <unk> 0.66** <unk> based on a compound rate of 27.83% over the next three years
 | EV/EBITDA | **13.90x** | StockAnalysis |
 
-### 关键数据交叉验证记录
+## Key data cross-checking records
 
-| 验证项 | 结果 | 偏差 |
+<unk> Verification item <unk> Results <unk> deviation <unk>
 |--------|------|------|
-| 市值验算（股价×股本 vs 报告市值） | ✅ 通过 | 0.02% |
-| FY2025营业收入（2源对比） | ✅ 通过 | 0.00% |
-| FY2025归母净利润（2源对比） | ✅ 通过 | 0.00% |
-| 净现金（推算 vs 报告） | ✅ 通过 | 0.00% |
-| 估值指标（工具精确计算） | ✅ 通过 | 精确十进制 |
+Market value (equity prices x equity shares report market value)
+Business income from SY2025 (2 sources compared)
+<unk> FY2025 net profit from the mother (2 sources compared) <unk> by 0.000% <unk>
+Net cash (presumption vs report)
+<unk> Valuation indicator (tool precision) <unk> by <unk> accurate decimal <unk>
 
 ---
 
-## 第二步：生意本质分析 — 段永平"对的生意"
+# Step 2: Business nature analysis - a piece of "right business"
 
-### 一句话定义
+# One word of definition
 
-**春风动力是中国唯一具备全球竞争力的动力运动装备平台型企业，以自研发动机为核心，在ATV/UTV、中大排量摩托车、电动两轮车三条赛道同时发力。**
+** Spring wind power is the only China-competitive platform-type motor-equipment enterprise with a self-research and development motive, with simultaneous power in three tracks: ATV/UTV, medium-sized and large-volume motorcycles, and electric two-wheeler.**
 
-### 商业模式画布
+# Business model canvass
 
-| 维度 | 描述 |
+<unk> dimension <unk> description <unk>
 |------|------|
-| 收入模式 | 以一次性整车销售为主（~90%），配件/服务复购为辅（~10%） |
-| 产品形态 | 硬件制造（整车+发动机），非软件/平台 |
-| 客户结构 | 海外收入占比~65%（北美~30%、欧洲~27%、其他~8%），国内~35% |
-| 渠道模式 | 国内1,400+经销商；海外7,000+零售终端；美国220家由子公司直管 |
-| 竞争定位 | "高性价比的全球挑战者"——同品质比竞品便宜1,000美元+ |
+* Income pattern * Mainly based on one-time full-car sales (~90%) supported by the repurchase of spare parts/services (~10%) *
+<unk> Product form <unk> Hardware manufacture (car + engine), non-software/platform <unk>
+<unk> Customer structure ~ 65% of overseas income (North America ~ 30%, Europe ~ 27%, other ~ 8%), domestic ~ 35% ~
+Channel mode 1,400+ distributors in the country; 7,000+ retail terminals overseas; 220 in the United States managed by subsidiaries
+<unk> Competition positioning <unk> "High-value Global Challenger" -- $1,000 plus <unk> less than quality.
 
-### 5年盈利能力趋势
+# # 5 years of profitability trend
 
-| 指标 | FY2021 | FY2022 | FY2023 | FY2024 | FY2025 | 趋势 |
+<unk> Indicators <unk> FY2021 <unk> FY2022 <unk> FY2023 <unk> FY2024 <unk> FY2025 <unk> Trends <unk>
 |------|--------|--------|--------|--------|--------|------|
-| 毛利率 | 21.4% | 25.1% | 32.3% | 29.6% | 26.6% | 2023年见顶后回落 |
-| 经营利润率 | 5.3% | 5.2% | 8.0% | 8.6% | 8.4% | 稳步提升后企稳 |
-| 净利率 | 5.2% | 6.2% | 8.3% | 9.8% | 8.5% | 2024年高点后回落 |
-| ROE | — | — | 21.7% | 26.3% | 23.0% | 持续优秀（>20%） |
+<unk> Māori rate 21.4% 25.1% 32.3% <unk> 29.6% <unk> 26.6% <unk> 2023
+<unk> Operating profitability 5.3% <unk> 5.2% <unk> 8.0% <unk> 8.6% <unk> 8.4% <unk> Steady up and steady
+Net interest rate 5.2% 6.2% 8.3% <unk> 9.8% <unk> 8.5% <unk> fall back after 2024
+ROE <unk> <unk> 21.7% <unk> 26.3% <unk> 23.0% <unk> sustained excellence (> 20%) <unk>
 
-**毛利率波动原因**：2023年毛利率32.3%为异常高点，受益于产品结构优化和汇率利好；2024-2025年回落至27-30%区间，主因：(1) 原材料成本上升；(2) 美国关税（2025年关税成本约9.8亿元）；(3) 极核电动两轮车快速放量但毛利率为负（-0.03%），拉低整体。
+** Reasons for Māori fluctuations**: Māori was 32.3 per cent in 2023 at an abnormally high point, benefiting from product structural optimization and exchange rate benefits; fell to 27-30 per cent between 2024 and 2025, mainly due to: (1) higher raw material costs; (2) United States customs duties (approximately R$ 980 million in 2025); and (3) the rapid release of two-wheeler vehicles with nuclear power but negative Māori rates (-0.03 per cent), which is a low overall.
 
-### 经营杠杆分析
+# Run the leverage analysis
 
-春风动力具备显著的经营杠杆效应：
-- FY2024收入+24%，净利润+46%——利润增速接近收入增速的2倍
-- FY2025收入+31%，净利润仅+14%——经营杠杆被关税成本和极核亏损抵消
-- 研发费用率从7.6%（2023）降至6.2%（2025），但绝对额持续增长（12.2亿），体现规模效应
-- 随着极核毛利率转正、关税成本稳定，经营杠杆有望重新释放
+Spring wind power has a significant business leverage:
+- SY2024 income + 24%, net profit + 46% - profit increases are close to double the rate of income growth
+- SY2025 income + 31% net profit + 14% - operating leverage offset by tariff costs and polar nuclear losses
+- The R & D cost rate has decreased from 7.6 per cent (2023) to 6.2 per cent (2025), but in absolute terms it has increased steadily (1.22 billion), reflecting the impact of scale
+- With the return of the nuclear Maori rate and the stabilization of tariff costs, it is hoped that the leverage will be released again
 
-### 生态粘性/客户锁定
+# Eco-cooter/client lock-in
 
-**锁定强度：中低**
+** Lock strength: medium and low**
 
-- 一次性销售为主，复购依赖品牌忠诚而非切换成本
-- 配件/服务后市场收入占比低（~10%），远不如Polaris/BRP的20-25%
-- 海外经销商网络有一定渠道粘性，但终端消费者品牌忠诚度仍需积累
-- 正面因素：MotoGP赛事成绩和骑行社区正在构建情感联结
+- One-time sales dominated, and repurchases relied on brand loyalty rather than switching costs
+- Low market share of post-services spare parts/services (~10%) and far less than 20-25% of Polaris/BRP
+- The overseas distribution network has some kind of bonding, but the end-consumer brand loyalty still needs to be built up
+- Positive factor: MotoGP performance and the community of riding are building emotional bonds
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **这门生意好在哪？如果只能用一句话描述，是什么？**
+> ** Where is the business? If only one word can be said, what?**
 
-这门生意的本质是：**用中国制造业的成本优势+自研发动机技术，在全球动力运动这个被美日欧寡头垄断的高附加值赛道中撕开缺口**。好处在于，动力运动是一个全球化、高壁垒、稳定增长的品类，一旦建立起品牌和渠道，就能持续获取份额；但挑战在于，作为硬件制造商，缺乏软件/平台的网络效应和高复购粘性，增长依赖持续的产品力和渠道拓展。
+The essence of this business is:** Global Dynamics, a high value added race that is dominated by the US-Japan oligopoly, has been torn apart by China’s manufacturing cost advantage + its own technology for motivation.** The advantage is that the dynamic is a global, high-barrier, stable growth class that can be continuously shared once branded and channeled; but the challenge is that, as hardware manufacturers, there is a lack of network effects and high repurchase-motivability of software/platforms, growth depends on sustained product power and access expansion.
 
 ---
 
-## 第三步：护城河评估 — 巴菲特"经济护城河"
+# Step three: A moat river assessment -- Buffett "The Economic moat."
 
-### 五类护城河逐一验证
+# Five-class moats to verify
 
-| 护城河类型 | 评级 | 核心证据 |
+♪ The moat type ♪
 |-----------|------|---------|
-| **品牌/定价权** | ★★★☆☆ 中等 | 欧洲ATV市占率第一连续10年+；MotoGP Moto3包揽三料冠军（中国品牌首次）；红点设计奖。但全球品牌力仍弱于Polaris/BRP/Honda，主要靠性价比竞争而非品牌溢价，定价权有限 |
-| **转换成本** | ★★☆☆☆ 较弱 | 消费者可以较低成本切换到竞品；配件体系有一定锁定但不强；经销商层面有一定转换成本（培训、库存、工具） |
-| **网络效应** | ★☆☆☆☆ 很弱 | 硬件制造业，用户越多产品不会越好；骑行社区和赛事文化提供了微弱的社区效应 |
-| **规模效应** | ★★★★☆ 强 | 自研发动机+纵向一体化制造，从铸造到总装"一个屋檐下"完成；年产能80万台发动机、60万+整车；相较日系品牌有30-40%成本优势；国家级智能制造示范企业 |
-| **技术/专利壁垒** | ★★★☆☆ 中等 | 累计有效专利2,119项（含发明242项）；自主三缸动力平台；基于KTM LC8c平台开发能力。但发动机技术非独家，竞争对手有更深积累 |
+** Brand/pricing rights** Medium <unk> European ATV city occupancy rate for the first 10 consecutive years +; MotoGP Moto3 package three-show champion (China brand for the first time); Red Point Design Award. But global brand power is still weak than Polaris/BRP/Honda, mainly based on a competitive value for money rather than brand premium, limited pricing rights
+<unk> ** Conversion costs** <unk> Weaknesses <unk> Consumers can switch to competitive products at lower cost; parts systems are locked but not strong; distributors have some conversion costs (training, inventory, tools) <unk>
+<unk> ** Network effects** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> **Scalation effects** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+**Technology/Picticity Barrier** Medium <unk> Cumulatively valid patents 2,119 (including 242 inventions); autonomous three-cylinder power platforms; development capacity based on KTM LC8c platforms. But engine technology is not exclusive and competitors have deeper accumulations
 
-### 护城河趋势：过去5年变宽还是变窄？
+# The trend of the moat: Is it wide or narrow over the past five years?
 
-**过去5年（2021-2025）：明显变宽**
+** The last five years (2021-2025): significant width**
 
-| 维度 | 2021年 | 2025年 | 变化 |
+<unk> dimension 2021 <unk> 2025 <unk> change <unk>
 |------|--------|--------|------|
-| 全球ATV市占率 | ~3% | ~6% | 翻倍 |
-| 中国大排量摩托市占率 | ~10% | ~21% | 翻倍 |
-| 海外经销商网络 | ~3,000家 | 7,000+家 | 翻倍+ |
-| 研发投入 | 3.79亿 | 12.20亿 | 3.2倍 |
-| 累计专利 | ~800项 | 2,119项 | 2.6倍 |
-| 全球产能布局 | 仅中国 | 中国+泰国+墨西哥 | 三洲布局 |
+Global ATV coverage ~ 3% ~ 6% ~ double ~ <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> China’s Big Trail City is home to <unk> 10% <unk> 21% <unk> double <unk>
+<unk> Overseas distribution network ~ 3,000 ~ 7,000 + home <unk> double + <unk>
+<unk> R & D investment 379 million
+<unk> Cumulative patent ~800 ~ 2,119 <unk> 2.6 <unk>
+♪ The world's production and production ♪
 
-**未来5年预判：继续变宽，但速度放缓**
+** Prejudice for the next five years: continued to widen but slower**
 
-有利因素：规模效应持续增强、品牌通过赛事积累势能、全球渠道网络日趋成熟。
-不利因素：KTM合作关系变化（技术来源不确定性）、关税壁垒增加成本、极核电动领域竞争激烈。
+Enabling factors: the continued growth of the scale effect, the accumulation of brands through competitions and the growing maturity of the global network of channels.
+Adverse factors: KTM cooperative changes (uncertain sources of technology), increased costs of tariff barriers, and intense competition in the field of nuclear power.
 
-### 巴菲特式追问
+# Barfith-style questioning
 
-> **10年后这条护城河还在吗？什么能摧毁它？**
+** Is this moat still in place? What can destroy it?**
 
-护城河的核心是**规模效应+全球渠道网络**，这两者10年后大概率还在——产能和渠道是需要数十年积累的重资产，竞争对手难以快速复制。能摧毁它的力量是：(1) 电动化颠覆——如果动力运动快速电动化，新进入者可能绕过发动机壁垒；(2) 中国品牌内卷——更多中国制造商以更低价格进入海外市场，削弱春风的性价比优势；(3) 贸易壁垒封锁——如果主要市场对中国制造设置不可逾越的关税墙。
+At the heart of the moat is **Scaling effect + global channel network**, which, after 10 years, are likely to remain — capacity and channels are a heavy asset that will need to be accumulated over decades, and it is difficult for competitors to replicate quickly. The forces that can destroy it are: (1) electric subversion — if power movements are fast electrically moving, new entrants may bypass engine barriers; (2) Chinese brand insider volume — more Chinese manufacturers enter overseas markets at lower prices, weakening springwind value-added; and (3) trade barriers blockade — if major markets impose an insurmountable tariff wall on Chinese manufacturing.
 
 ---
 
-## 第四步：逆向思考与风险清单 — 芒格"反过来想"
+# Step four: Reverse thinking and risk list - Manger "inverted"
 
-### 公司可能失败的所有路径
+# All the paths that companies may fail
 
-| # | 失败路径 | 概率 | 影响 | 说明 |
+# The path of failure # the probability of failure # the probability of impact # the effect of the failure # the explanation of the failure # the probability of failure # the probability of failure # the probability of failure # the probability of failure # the impact of the impact of the failure # the fact that the result of the failure is the result of the failure of the failure of the failure of the failure of the failure.
 |---|---------|------|------|------|
-| 1 | 美国关税持续升级，墨西哥/泰国转口路径被封堵 | 中高 | 致命 | 2025年关税成本已达9.8亿（占净利润58%）；若综合税率升至50%+，美国市场将不可经营 |
-| 2 | KTM技术合作彻底终止，高端产品线断供 | 中 | 严重 | 1250NK/1250MT等旗舰车型基于KTM平台；Bajaj接管后合作前景不明 |
-| 3 | 极核电动持续亏损，拖累整体盈利 | 中 | 中等 | 2025年极核收入19亿但毛利率-0.03%；若2026年仍无法转正，资本市场信心将受损 |
-| 4 | 北美ATV/UTV需求长期低迷 | 低中 | 严重 | 北美UTV 2024年销量-7.2%，若高利率环境持续压制可选消费 |
-| 5 | 产能扩张过度（桐乡35亿项目） | 低中 | 中等 | 在手项目+可转债21.79亿，若需求不达预期则利用率承压 |
-| 6 | 汇率剧烈波动 | 中 | 中等 | 海外收入占比65%+，人民币大幅升值将直接侵蚀利润 |
-| 7 | Polaris/BRP发起价格战 | 低 | 中等 | Polaris 2025年TTM亏损，可能为保份额而降价 |
-| 8 | 电动化颠覆燃油动力运动 | 低 | 长期致命 | 电动ATV/UTV CAGR 19.6%远高于传统7.4%，但渗透率仍低 |
-| 9 | 创始人家族治理风险 | 低 | 中等 | 赖国贵家族控股40%，2025年高位减持6.32亿 |
+1 US Customs escalation, blocked transit routes between Mexico and Thailand
+2 <unk> KTM Technical Cooperation completely terminated, high-end product lines were cut off, severe, 1250 NK/1250MT flag vehicle models based on KTM platforms; and prospects for cooperation after the takeover of Bajaj were unclear
+3 <unk> Continued losses in the electronuclear power, which drags the overall profit
+<unk> 4 North America ATV/UTV demand is chronically low <unk> low <unk> severe <unk> North America UTV sales in 2024 - 7.2% if high interest rate environment continues to suppress alternative consumption <unk>
+5 <unk> Overextension of capacity (Plutonium 3.5 billion)
+6 <unk> Exchange rate volatility <unk> Medium <unk> Overseas income ratio + 65 +, and a significant appreciation of the renminbi will directly erode profits <unk>
+7 <unk> Polaris/BRP Launching Price Warfare
+<unk> 8 <unk> Electrodynamically destabilizing fuel power movements <unk> low <unk> long-term lethal <unk> electric ATV/UTV CAGR 19.6% is much higher than the traditional 7.4%, but penetration is still low <unk>
+The founder's family is at risk of running the family.
 
-### 历史类比
+# History analogy
 
-| 类比公司 | 相似点 | 结局 | 对春风的启示 |
+The synonyms, the symmetry, the symmetry, the end, the revelation of the spring wind, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sibling, the sire, the si the spring wind, the si.
 |----------|--------|------|-------------|
-| **比亚迪（2010年）** | 中国制造出海，从低端切入，纵向一体化 | 成为全球新能源汽车龙头 | 春风在动力运动领域走类似路径，但赛道规模小得多 |
-| **海尔/美的（2010年代）** | 中国家电品牌全球化，收购+自建渠道 | 成功建立全球品牌 | 春风的渠道建设走在正确路径上 |
-| **华晨宝马/观致汽车** | 合资学技术→自主品牌 | 华晨失败（过度依赖合资），观致失败 | 春风须警惕对KTM技术的过度依赖 |
-| **雅迪/小牛（电动两轮）** | 中国电动两轮车出海 | 雅迪全球销量第一，小牛增长放缓 | 极核需要在品牌定位上差异化 |
+<unk> Biadee (2010)** China creates seaboard, cut from the low end, vertically integrated <unk> becoming the global engine of new energy cars <unk> Spring wind is taking a similar path in the field of motor motion, but the track is much smaller <unk>
+**Haer/American (2010s)** Globalizing national brands, buying + self-build channels * Successfully creating global brands * Springwind channels are on the right path **
+♪ The spring wind must be vigilant about the excessive reliance on KTM technology ♪
+**Adele/Cow (two wheels of electric power)**
 
-### 偏误自查
+# I'm wrong to check myself
 
-| 偏误类型 | 检查结果 |
+<unk> Mistake type <unk> Check results <unk>
 |----------|---------|
-| **叙事偏差** | "中国动力运动龙头出海"是一个compelling的叙事，需警惕被故事吸引而忽视关税和盈利质量问题 |
-| **锚定效应** | 股价从305元跌至241元，可能让人觉得"便宜了"，但需从绝对估值判断 |
-| **幸存者偏差** | 春风是中国ATV出口中唯一成功的大品牌，但这不意味着成功可以永续 |
-| **确认偏差** | 多数券商给出买入评级（14/16），需特别重视空方论点 |
+<unk> Narrative deviation** <unk> "China's Power Movement Dragons out of the Sea" is a compelling narrative that needs to be vigilant about attracting stories that ignore tariff and profit quality issues <unk>
+<unk> ** anchor effect** <unk> stock price dropped from $305 to $241, which may be "lower", but it's based on absolute valuations.
+<unk> Survivors' deviation** <unk> Spring wind is the only successful brand in China's ATV exports, but that doesn't mean that success can last forever <unk>
+** Confirmation of deviation** Most coupons give purchase ratings (14/16), with particular emphasis on empty arguments
 
-### 空方核心论点
+# The empty core argument
 
-1. **2026Q1利润增速骤降至+1.8%**（vs 2025Q1的+49.6%），可能预示增长中枢下移
-2. **毛利率从32.3%（2023）持续下滑至26.6%（2025）**，三年下降5.7个百分点，趋势不佳
-3. **PS 1.87x是全球同行最高**（Polaris 0.53x、BRP 0.67x），隐含了过高的增长预期
-4. **KTM合作变局**：欧洲28国代理终止+技术合作前景不明，高端化路径受阻
-5. **控股股东高位减持6.32亿**：如果管理层都在卖，为什么散户要买？
+1. **2026Q1 profit growth has dropped sharply to +1.8%** (+49.6% vs 2025Q1) which may portend a downward shift in growth hub
+2. **Maori rate continued to decline from 32.3% (2023) to 26.6% (2025)** and to decline by 5.7 percentage points over three years, with a negative trend
+3. **PS 1.87x is the highest global peer** (Polaris 0.53x, BRP 0.67x), implying excessive growth expectations
+4. **KTM Cooperative Change Agency**: The prospects for the Agency ' s termination in Europe + technical cooperation are unclear and high-end pathways are blocked
+5. **The holding stock holdings are high by 632 million**: If management is selling, why should the bulk buy?
 
-### 芒格式追问
+# Man format questions
 
-> **我最可能在哪里犯错？聪明人为什么会不买/做空这家公司？**
+** Where would I most likely make a mistake? Why would a smart man not buy or make a job on this company?**
 
-最可能犯错之处：**高估了春风的定价权，低估了关税对盈利的结构性侵蚀**。春风的核心竞争力是"比Polaris/BRP便宜1,000美元+"，但如果关税抹平了这个价差，春风在北美就失去了存在的理由。聪明人不买的理由是：这是一家制造业公司，ROE虽然不错（23%），但毛利率只有27%且在下滑，净利率8.5%，利润增速（+14%）已经大幅落后于收入增速（+31%），说明赚钱越来越"费劲"了。
+The most likely mistake is:** the price-setting rights overestimated spring winds, which understate the structural erosion of tariffs on profits**. Spring winds' core competitiveness is "$1,000 plus less than Polaris/BRP," but if tariffs wipe out the price difference, springwind loses its raison d'être in North America. The reason why smart people don't buy is that it is a manufacturing company, ROE is good (23%), but the Māori rate is only 27% and is declining, with a net interest rate of 8.5%, and profit growth (+14%) is already significantly behind the income increase (+31%), suggesting that making money is becoming more "explicable".
 
 ---
 
-## 第五步：管理层评估 — 段永平"对的人" + 巴菲特"管理层诚信"
+# Step five: Management assessment - "The Right Man" # "Management Integrity"
 
-### 创始人：赖国贵
+# Founder: Lai Guin
 
-| 维度 | 评估 |
+<unk> Dimensions <unk> Evaluation <unk>
 |------|------|
-| 年龄 | 1964年生，62岁 |
-| 背景 | 温州乐清人，大专学历，1989年创办春风摩托配件厂 |
-| 持股 | 通过春风控股持股29.49%，家族合计~40% |
-| 角色变化 | 2024年12月卸任董事长，改任普通董事，完成交班 |
+Age <unk> Born 1964, age 62 <unk>
+<unk> Background <unk> Lecheng Man, University degree, Wenzhou, 1989: creation of the Spring Wind Motors and Parts Factory <unk>
+♪ The spring wind holds 29,49%, the family total ~ 40% ♪
+<unk> The role changed <unk> The chairman of the Board of Directors was replaced as a regular director in December 2024 and completed his shift
 
-### 接班人：赖民杰（"创二代"）
+# Next: Rae Minjie
 
-| 维度 | 评估 |
+<unk> Dimensions <unk> Evaluation <unk>
 |------|------|
-| 年龄 | 1985年生，41岁 |
-| 入职时间 | 2008年，在公司18年 |
-| 晋升路径 | 市场部→创意中心→研究院副院长→总经理（2015）→董事长（2024） |
-| 薪酬 | 176万元/年（2025年），在A股制造业中属中低水平 |
+Age (1985, 41 years old)
+* Entry into office: 2008, 18 years at the firm
+* The path to promotion * The Vice-President of the Creative Centre of the Ministry of Markets * The Director-General of the Institute (2015) * The Chairman of the Board (2024) * The President of the Institute is the President of the Council of Ministers of the Interior.
+* Remuneration 1.76 million yuan/year (2025), which is low and medium in A share
 
-### CEO关键决策复盘
+# CEO key decision-record
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2013年 | 与KTM建立合作（代理→合资→参股） | 获取LC8c发动机技术，高端化关键转折点 | ★★★★★ |
-| 2017年 | A股IPO，募资投产能 | 成功融资并扩大规模 | ★★★★☆ |
-| 2020年 | 创立极核电动品牌 | 2025年收入19亿，爆发式增长，但尚未盈利 | ★★★☆☆（待观察） |
-| 2021年 | 泰国工厂投产 | 有效分散关税风险 | ★★★★☆ |
-| 2023年 | 墨西哥工厂投产 | 对冲美国关税，正确的前瞻布局 | ★★★★★ |
-| 2025年初 | 竞购KTM母公司（3.5-7亿欧元） | 未能成功，Bajaj胜出，避免了巨额资本支出 | ★★★☆☆（未成但也未损） |
-| 2025年9月 | 股价历史高位305元时公告减持 | 市场信心受创，市值蒸发80亿 | ★☆☆☆☆（严重负面） |
-| 2026年3月 | 控股德国Kalex，独立布局MotoGP | 开始"去KTM化"，展示战略自主性 | ★★★★☆ |
+<unk> Cooperation with KTM (agent joint venture) <unk> Acquisition of LC8c engine technology, critical turning point for high end
+2017: A share of IPO, financing and scaling up of the fund-raising
+<unk> 2020, creating a nuclear power brand, <unk> 1.9 billion in 2025, but not yet profitable.
+<unk> 2021 Thailand’s plant is operational <unk> Effectively spreading customs risks <unk>
+2023, Mexico factory, the exact front line for the US customs.
+The competition for the KTM parent company (Euro350-700 million) failed, and Bajaj won, avoiding huge capital expenditures.
+The announcement came down at 305 at the highest stock price in history.
+March 2026, the holding of Kalex, Germany, independent layout MotoGP, began "go to ktmization" to show strategic autonomy.
 
-### 资本配置能力
+# Capital allocation capacity
 
-| 维度 | 评估 |
+<unk> Dimensions <unk> Evaluation <unk>
 |------|------|
-| **研发投入** | 优秀——4年翻5倍（2.36亿→12.20亿），占收入6-7%，力度大 |
-| **分红** | 良好——上市以来累计分红15.55亿，派现率>30%，逐年递增 |
-| **回购** | 一般——累计仅回购7,066万元，规模较小 |
-| **并购** | 保守——以合资和设立子公司为主，未进行大额收购 |
-| **产能投资** | 激进——桐乡35亿新基地+可转债21.79亿，需关注回报率 |
+** R & D inputs**
+<unk> <unk> good - cumulative share since the market was added > 30%, increasing each year <unk>
+** Repurchase** General — cumulatively only $70.66 million, smaller <unk>
+<unk> Merger and purchase** Conservative - predominantly joint ventures and establishment of subsidiaries, no large acquisitions
+<unk> Energy investment** <unk> Radical - 3.5 billion new bases in the Kwanjiang commune + 2,179 million debt transferable, with a focus on returns <unk>
 
-### 股东利益一致性
+# Shareholder interest consistency
 
-**正面信号**：
-- 家族持股40%，与中小股东利益高度绑定
-- 股权激励覆盖1,310人（占员工25.86%），激励面广
-- 管理层薪酬中低（董事长年薪176万），未过度自肥
+** Positive signal**:
+- 40% family share, highly tied to the interests of small and medium-sized shareholders
+- Equity incentives covering 1,310 (25.86 per cent of employees) and wide range of incentives
+- Medium and low remuneration of management (1.76 million annual salary of the Chairman) and no over-fertilization
 
-**负面信号**：
-- **2025年9月高位减持**：股价创历史新高304.8元当日公告减持，实际套现6.32亿元——这是一个明确的负面信号，反映大股东对短期估值的判断与中小股东利益存在冲突
-- 核心技术高管杨东来仅任职3年即离职，家族企业对职业经理人的融合存在挑战
+** Negative signal**:
+- **Step-down September 2025**: The announcement of a record high of $304.8 was reduced on the day that the stock price was set at $632 million — a clear negative signal that the majority's judgement of the short-term valuation was in conflict with the interests of small and medium-sized shareholders
+- Core technical executive Yang Dong has left the post for only three years, and family enterprises have challenged the integration of career managers
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **如果CEO退休，这家公司还能保持竞争力吗？**
+> ** If CEO retires, will the company remain competitive?**
 
-赖国贵已于2024年底完成交班，赖民杰接任董事长。交接过渡期长达约10年（2015年任总经理），这一点比较正面。但赖民杰尚未经历过真正的行业逆周期考验——他上任以来遇到的最大挑战是关税和KTM变局，目前应对尚可（墨西哥/泰国分散、控股Kalex独立化），但最终成效需要2-3年才能验证。**风险在于这仍是家族企业治理**，关键岗位由家族成员把持，能否吸引和留住顶级职业经理人是长期隐忧。
+The transition period of about 10 years (in 2015 as Managing Director) has not yet been a real industry countercyclical test. But the biggest challenge he has encountered since taking office is customs and KTM change, which is now feasible (decentralized and independent of Mexico/Thailand) but ultimately takes two to three years to prove.** The risk is that it remains family business governance**, with key positions dominated by family members and long-term concerns about attracting and retaining top career managers.
 
 ---
 
-## 第六步：行业与文明趋势 — 李录"文明演进框架"
+# Step 6: Industry and civilizational trends - Lee Siu ' s Framework for Civilization Evolution
 
-### 行业是否处于"文明级范式转移"？
+# Is industry in "civilizational paradigm shift"?
 
-**不是。** 动力运动行业属于传统制造业+消费升级赛道，不存在类似AI/新能源汽车那样的文明级范式转移。但存在两个结构性趋势：
+** No.** The dynamic sports industry is part of the traditional manufacturing + consumption upgrading track, and there is no civilized paradigm shift similar to AI/New Energy Cars. However, there are two structural trends:
 
-1. **中国制造全球化的第三波浪潮**：继家电（海尔/美的）、手机（小米/传音）之后，动力运动装备是中国制造出海的新品类。春风动力是这一浪潮的先锋。
+1. **The third wave of China ' s globalization**: after home power (Haels/American), mobile phones (mille/sounding), the motor movement equipment is the new product of China ' s seaboard. The spring wind power was the vanguard of the wave.
 
-2. **中国消费升级——从通勤到休闲**：中国大排量摩托车渗透率仅7.5%，对标日本有2-14倍提升空间；摩旅文化从小众走向主流，这是不可逆的消费趋势。
+** China's consumption has escalated - from commute to leisure**: China's motor vehicle penetration rate is only 7.5 per cent, with 2-14 times the space for Japan; the motorbike culture has moved from small to mainstream, an irreversible consumption trend.
 
-### 历史技术革命类比
+# History and Technology Revolution analogue
 
-| 时期 | 类比 | 与春风的相关性 |
+The time, the time, the time, the analogy, the relevance of the spring wind, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time, the time,
 |------|------|--------------|
-| 1970-80年代 | 日本摩托车（Honda/Yamaha）全球化，从低端切入欧美市场 | 春风正在重走日本品牌40年前的路，但面临更复杂的贸易壁垒 |
-| 2000-10年代 | 韩国汽车（现代/起亚）从"廉价车"到"主流品牌" | 春风需要完成从"便宜的中国ATV"到"值得信赖的全球品牌"的跃迁 |
-| 2010-20年代 | 中国手机品牌（小米/OPPO）出海 | 春风的性价比策略类似小米，但硬件制造业缺乏软件的网络效应 |
+<unk> The 1970s-80s, the Japanese motorcycle (Honda/Yamaha) was globalized, cutting from the low to the European and American markets, and the spring wind was re-drawn 40 years ago, but faced more complex trade barriers.
+The South Korean car from "Affordable Car" to "Major Brand" in the 2000s and 10s, and the Spring Wind needs to make a leap from "AtV" to "Reliable Global Brand"
+<unk> Chinese mobile phone brand (mille/OPPO) went out to sea in the 2010-20s.
 
-### TAM增长曲线与天花板
+# Tam growth curves and ceilings
 
-| 市场 | 2025年规模 | 2030-2035年预测 | CAGR | 春风占比 |
+<unk> Market size 2025 <unk> Forecast 2030-2035 <unk> CAGR <unk> Spring wind ratio <unk>
 |------|-----------|----------------|------|---------|
-| 全球ATV/UTV | ~118亿美元 | ~170-216亿美元 | 7-8% | ~6% |
-| 全球大排量摩托车 | ~284亿美元 | ~487亿美元 | 6.2% | <2% |
-| 中国大排量摩托车 | ~200亿元 | ~400亿元 | ~15% | ~21% |
-| 全球电动两轮车 | 万亿级 | — | — | 极小 |
+<unk> Global ATV/UTV ~ $11.8 billion ~ $17.216 billion ~ 7-8 per cent ~ 6 per cent ~
+<unk> Global motorbike ~ $28.4 billion ~ $48.7 billion <unk> 6.2% < 2% ~
+<unk> China's Big Motorcycle ~ 20 billion yuan ~ 40 billion yuan ~ 15% ~ 21% ~
+♪ The world's two wheels ♪
 
-**天花板分析**：春风当前197亿收入，面对的全球TAM至少在500-700亿美元（3500-5000亿元）量级。即使只在ATV/UTV领域将全球份额从6%提升至10-12%，收入天花板也在800-1000亿元以上。**天花板不是当前的约束**。
+** Ceiling analysis**: Springwind is currently generating 19.7 billion dollars, with global TAM at least $50-70 billion (35-500 billion) in volume. Even in the ATV/UTV area alone, raising the global share from 6% to 10-12%, the income ceiling is more than $80-100 billion.** The ceiling is not currently a constraint**.
 
-### 公司在产业价值链中的位置
+# The company's position in the industrial value chain
 
-春风动力是产业链中游的**纵向一体化整车制造商**：
-- 自研发动机（不依赖第三方），掌控核心零部件
-- 从铸造、机加工到底盘焊接、喷涂、总装一体化完成
-- 下游渠道自建（国内1,400+、海外7,000+终端）
-- 这种高度垂直整合的模式在中国同行中独一无二
+Spring wind power is a vertically integrated whole car manufacturer that travels through the industrial chain**:
+- Control of core parts and components by means of a self-research and development motive (not dependent on third parties)
+- Welding, spraying, integration of the entire outfit from the casting, machine processing.
+- Home-made downstream channels (1,400+ in the country, 7,000+ offshore terminals)
+- This highly vertically integrated model is unique among Chinese counterparts.
 
-### 客户/供应商集中度
+# # Client/supplier concentration
 
-| 维度 | 风险等级 | 说明 |
+<unk> Dimensions <unk> Risk level <unk> Description <unk>
 |------|---------|------|
-| 客户集中度 | 低 | 全球100+国家、7,000+终端，无单一客户依赖 |
-| 供应商集中度 | 中低 | 核心发动机自制，但仍依赖部分进口零部件（如电子元器件） |
-| 区域集中度 | 中 | 北美+欧洲合计占海外收入~85%，对这两个区域依赖度高 |
+Client concentration Low global 100+ countries, 7,000+ terminals, no single customer dependent
+<unk> Supplier concentration Middle and low <unk> Core engine home-made but still dependent on parts and components imported (e.g. electronic components) <unk>
+<unk> Regional concentration <unk> North America + Europe together account for ~85% of overseas income, and there is a high dependency on both regions <unk>
 
-### 李录式追问
+# Lee's asking questions
 
-> **站在20年后回看，这家公司是"这个时代的标准石油"还是"昙花一现的3Com"？**
+> ** Stand back and look 20 years later, is this company Standard Oil of the Age or 3Com of the Expedition?**
 
-春风动力更接近**"这个时代的现代汽车"**——一家通过性价比优势从新兴市场走向全球主流的制造企业。它不会成为垄断性的标准石油（动力运动市场不够大，也不具备赢家通吃的网络效应），但也不会是昙花一现的3Com——发动机技术、全球渠道网络和制造能力是实实在在的资产，不会因为某个技术路线切换而一夜归零。20年后的风险在于：如果动力运动全面电动化，春风的燃油发动机壁垒将失去价值——但这个转型的时间窗口至少还有10-15年。
+Spring winds are closer** to "modern cars of this era"** – a manufacturing enterprise that moves from emerging markets to global mainstream through a value-for-money advantage. It will not become a monopoly standard oil (the power movement market is not large enough and does not have a winner-taker network effect), but it will not be a mere 3Com-engine technology, global channel networks and manufacturing capacity that are real assets that will not be lost overnight due to a technology shift. Twenty years later, the risk is that the spring wind engine barrier will lose value if the power movement is fully electricized – but this window of transition will have at least 10-15 years.
 
 ---
 
-## 第七步：估值与安全边际 — 巴菲特"内在价值" + 段永平"对的价格"
+# Step seven: valuation and security margin -- Barfitt "inner value" + price of "right"
 
-### 7.1 当前市场定价
+#7.1 Current market pricing
 
-| 指标 | 春风动力 | 同行对比 |
+♪ The indicators, the spring winds, the peer comparison ♪
 |------|---------|---------|
-| PE（TTM） | 21.94x | Polaris 亏损、BRP 22.1x、隆鑫 14.6x |
-| PE（Forward） | ~15.2x | Polaris 31.1x、BRP 29.7x、隆鑫 ~12.8x |
-| PB | 4.90x | Polaris 5.21x、BRP 8.51x、隆鑫 2.49x |
-| PS | 1.87x | Polaris 0.53x、BRP 0.67x、隆鑫 1.30x |
+<unk> PE(TTM) <unk> 21.94x <unk> Polaris loss, BRP 22.1x, Lumpy 14.6x <unk>
+<unk> PE (Forward)<unk> 15.2x<unk> Polaris 31.1x, BRP 29.7x, Lumpy ~12.8x
+<unk> PB <unk> 4.90x <unk> Polaris 5.21x, BRP 8.51x, Lump <unk> 2.49x <unk>
+<unk> PS <unk> 1.87x<unk> Polaris 0.53x, BRP 0.67x, Lumpy 1.30x<unk>
 | P/FCF | 14.67x | — |
-| 股息率 | 1.74% | 隆鑫 6.16%、Polaris/BRP <1% |
+<unk> Escillation rate 1.74%
 | PEG | 0.66 | — |
-| 净现金占市值比 | **25.2%** | 极为罕见的高比例 |
+Net cash as a percentage of market value ** 25.2% ** very rare high proportion <unk>
 
-**关键发现**：
-1. PE和PB与BRP/Polaris基本持平，但春风的增速远超对手（+31% vs +3-6%）
-2. PS是同行最高（1.87x vs 0.5-0.7x），说明市场对春风的收入增长给予了溢价
-3. Forward PE仅15.2x，如果2026年利润增长达到一致预期（+31-44%），估值并不贵
-4. **净现金93亿占市值25%**，扣除净现金后的"企业价值"仅277亿，EV/净利润仅16.5x
+** Key findings**:
+1. PE and PB are almost at BRP/Polaris, but spring winds are growing at a much faster rate than rivals (+31% vs +3-6%)
+2. PS is the highest peer (1.87 x vs. 0.5-0.7 x) and indicates that the market has provided a premium on spring wind income growth
+Forward PE only 15.2x, if profit growth in 2026 is consistent (+31-44%) the valuation is not expensive
+4. ** Net cash of 9.3 billion is 25% of market value**, the "business value" after net cash is only 27.7 billion and the LV/net profit is only 16.5 x
 
-### 7.2 反向DCF：当前股价隐含了什么增长预期？
+#7.2 Inverse DCF: What are the growth expectations implied in current stock prices?
 
-当前股价241元，PE 21.94x，隐含的假设是：
-- 如果给予15x终端PE（制造业合理水平），需要未来3年EPS从10.99元增长至16.07元，即复合增速**13.5%**
-- 这远低于一致预期的27-30%增速
-- **结论**：当前股价隐含的增长预期较为保守，市场已经price in了一定的关税和增速放缓风险
+The current share price is $241, PE 21.94x, which implies the following assumptions:
+- If the 15x terminal PE (a reasonable level of manufacturing) is given, the EPS will need to increase from $10.99 to $16.07 over the next three years, i.e., a composite acceleration of **13.5%**
+- That's far below the 27-30% increase that was expected.
+- **Conclusion**: The current implied growth in equity prices is expected to be conservative, and the market has already been priced with a certain risk of tariff and slowdown
 
-### 7.3 三情景估值（工具精确计算 ✅）
+#7.3 Scenario 3 valuation (tool precision)
 
-| 情景 | 假设 | 3年后EPS | 给予PE | 目标股价 | 较当前涨跌幅 |
+The assumption is that three years later, the EPS gives PE the target share price, the current price is up and down.
 |------|------|---------|--------|---------|------------|
-| **乐观** | 年增速35%（关税缓解+极核盈利+份额提升） | 27.04元 | 25x | **676元** | **+180%** |
-| **中性** | 年增速25%（一致预期水平） | 21.46元 | 20x | **429元** | **+78%** |
-| **悲观** | 年增速10%（关税恶化+需求放缓） | 14.63元 | 15x | **219元** | **-9%** |
+** EXCHANGE** <unk> 35% annual increase (tariff mitigation + polar nuclear profit + share increase) <unk> 27.04 <unk> 25 x <unk> ** 676 ** ** + 180%** <unk>
+** neutral** <unk> annual rate of increase of 25% (consistently expected level) <unk> 21.46 <unk> 20 x <unk> ** 429 ** ** + 78%** <unk>
+** Pessimism** <unk> Annual rate of increase of 10% (deterioration of tariffs + slowdown of demand) <unk> 14.63 <unk> 15 x <unk> 219 ** ** 9% ** ** <unk>
 
-**概率加权目标价**：乐观20% × 676 + 中性50% × 429 + 悲观30% × 219 = **416元**（较当前+73%）
+** Probability weighted target price**: optimistic 20% × 676 + neutral 50% × 429 + pessimism 30% × 219 = ** $416 ** (regressed + 73%)
 
-### 7.4 历史估值对比
+#7.4 Comparison of historical valuations
 
-| 指标 | 近5年中位数 | 当前 | 分位 |
+<unk> Indicators <unk> Mid-five years
 |------|-----------|------|------|
-| PE | 27.81x | 21.94x | **37%**（中低） |
-| PB | 4.79x | 4.90x | 37%（中低） |
+<unk> PE 27.81 x <unk> 21.94x<unk> **37%** (middle and low) <unk>
+PB 4.79x<unk> 4.90x<unk> 37% (middle and low)
 
-当前估值处于近5年偏低位置，但需注意2021年50x+的估值是泡沫状态，以2023-2025年20-25x的区间作为参考更合理。
+The current valuation is at a low level for almost five years, but it is noted that the valuation of 50x+ in 2021 was a foam state, with a 20-25x interval of 2023-2025 as a more reasonable reference.
 
-### 7.5 同行估值对比
+#7.5 Peer valuation comparison
 
-| 公司 | PE(TTM) | Forward PE | PB | PS | 营收增速 | 净现金/负债 |
+*The following information was provided by the Administration:
 |------|---------|-----------|------|------|---------|------------|
-| **春风动力** | 21.9x | 15.2x | 4.9x | 1.87x | +31% | 净现金93亿 |
-| Polaris | 亏损 | 31.1x | 5.2x | 0.53x | +3% | 高负债 D/E 2.92 |
-| BRP | 22.1x | 29.7x | 8.5x | 0.67x | +6% | 高负债 D/E 4.16 |
-| 隆鑫通用 | 14.6x | 12.8x | 2.5x | 1.30x | +47-61% | — |
+** Spring wind power** 21.9 x <unk> 15.2 x <unk> 4.9 x <unk> 1.87x <unk> + 31% <unk> net cash <unk> 9.3 billion <unk>
+<unk> Polaris <unk> Loss <unk> 31.1x 5.2x <unk> 0.53x <unk> + 3% High liabilities D/E 2.92 <unk>
+BRP 22.1x <unk> 29.7x <unk> 8.5x <unk> 0.67x + 6% <unk> High liability D/E 4.16 <unk>
+<unk> 1-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-
 
-**对比结论**：春风的Forward PE（15.2x）是同行中最低的，同时增速最快（+31%）、资产负债表最健康（净现金93亿）。如果对标BRP的Forward PE（29.7x），春风的合理股价应为15.7元×29.7 = 466元，较当前+93%。但PS维度（1.87x vs 0.5-0.7x）显示市场已给予收入端溢价。
+** Comparative conclusion**: Spring Wind's Forward PE (15.2 x) is the lowest among peers, with the fastest increase (+31%) and the healthiest balance sheet (net cash) of 9.3 billion. If the BRP's Forward PE (29.7 x) is the benchmark, the fair share price for spring winds should be 15.7 yuan x 29.7 = 466 dollars, compared to the current +93%. But PS dimensions (1.87 x vs 0.5-0.7 x) show that the market has already given an income premium.
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> **如果股市明天关闭5年，你愿意以这个价格持有吗？**
+> ** If the stock market closes for five years tomorrow, will you hold it at this price?**
 
-**愿意，但需要接受两个前提**：(1) 关税不会彻底封死美国市场——墨西哥/泰国路径仍然可行；(2) 极核电动在2年内实现盈利。如果这两个前提成立，5年后春风的收入有望从200亿增长至400-500亿，净利润30-50亿，以15-20x PE计，市值450-1000亿，较当前370亿有明显上升空间。净现金93亿（占市值25%）提供了一定的安全垫。
+** Will, but needs to accept two premises**: (1) Tariffs will not completely block the US market — the Mexico/Thailand route remains viable; (2) Polar Power will be profitable within two years. If these two premises are established, spring wind revenues are expected to rise from 20 billion to 40-50 billion in five years, with a net profit of 3-50 billion at 15-20x PE, with a market value of 45-100 billion, with a marked increase over the current 37 billion. Net cash of 9.3 billion (25% of the market value) provides a certain security cushion.
 
 ---
 
-## 第八步：综合决策备忘录
+# Step 8: A comprehensive decision-making memorandum
 
-### 汇总评估
+## Summary assessment
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| **生意质量（段永平）** | 中上——纵向一体化制造+三赛道发力，但硬件制造缺乏复购粘性，毛利率在下行 | ★★★★☆ 较高 |
-| **护城河（巴菲特）** | 中等偏强——规模效应和渠道网络是核心，品牌力在积累中，但尚无定价权 | ★★★☆☆ 中等 |
-| **管理层（段永平+巴菲特）** | 中上——创始人有远见（KTM合作、全球化布局），接班人尚待检验，高位减持是污点 | ★★★☆☆ 中等 |
-| **最大风险（芒格）** | 关税+KTM变局双重打击——2025年关税成本9.8亿元相当于净利润的58% | ★★★★☆ 较高确定性 |
-| **文明趋势（李录）** | 顺势——中国制造出海+消费升级双重红利，但非文明级范式转移 | ★★★★☆ 较高 |
-| **估值（巴菲特+段永平）** | 合理偏低——Forward PE 15x处于历史低位，PEG 0.66，净现金占市值25%提供安全垫 | ★★★★☆ 较高 |
+** ** Quality of business (single)** Medium - vertically integrated manufacturing + triple-tracking, but hardware manufacturing lacks repurchase sticky, Māori is down
+** The moat (Buffett)** Medium vertebrae - scale effects and channel networks are at the core, branding is on the build-up, but no pricing authority is available
+** Management (Yongping + Buffett)**
+<unk> Maximum risk (Mung)** <unk> Double blow to tariff + KTM variation — customs cost of $980 million in 2025 equals 58% of net profit <unk> High level of certainty <unk>
+** Civilization trends (Li Su)**
+** Valuation (Buffett+Ping)** Reasonable low - Forward PE 15x is at a historically low level, PEG 0.66, net cash as a percentage of market value provides security advances at 25%
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **建议分批建仓（当前价位可配置半仓）**。Forward PE 15x+PEG 0.66+净现金25%，估值具备安全边际。但需密切跟踪2026Q2-Q3的关税影响和极核盈利进度。理想加仓价位：200-220元（对应Forward PE 12-14x） |
-| **持仓者** | **继续持有，但不急于加仓**。2026Q1利润增速骤降至+1.8%是短期信号，需确认Q2-Q3能否恢复。关注三个拐点：(1) 极核毛利率转正；(2) 美国关税政策明确化；(3) 欧洲渠道重建完成 |
-| **卖出信号** | (1) Forward PE升至30x以上（股价~470元）；(2) 美国关税综合税率突破50%且无有效规避路径；(3) 2026全年净利润增速降至个位数；(4) 管理层再次大规模减持 |
-| **加仓信号** | (1) 股价跌至200元以下（Forward PE<13x，接近悲观情景）；(2) 极核电动季度毛利率转正；(3) 中美贸易缓和、关税下调；(4) ATV全球市占率突破8% |
+** Empty warehouse ** ** Proposed for construction in batch (current price is available for half of the warehouse). ** Forward PE 15x+PEG 0.66+ net cash 25%, with a margin of security value. However, the tariff impact and the progress of the nuclear profits of 2026Q2-Q3 need to be closely tracked. * Ideally, the premium is 200-020 (equivalent to Forward PE 12-14x) <unk>
+<unk> <unk> The owner** continues to hold but does not rush to stow**. 2026Q1 profit surges to +1.8% are short-term signals, and it needs to be confirmed whether Q2-Q3 can recover. Focus on three turning points: (1) the conversion of the extreme nuclear Maori ratio; (2) the clarification of United States customs policy; and (3) the completion of European pipeline reconstruction.
+<unk> **Sale signal** <unk> (1) Forward PE up to 30 x (equity price ~ $470); (2) U.S. customs combined tariff rate exceeded 50% without effective circumvention path; (3) net profit growth down to a single number for the year 2026; (4) management again substantially reduced
+<unk> **Standar signal** <unk> (1) share price dropped below $200 (Forward PE < 13x, near pessimism); (2) Rendering of the quarter of the polar power; (3) Moderation of Central American trade and tariff reductions; (4) ATV global market outperformed 8%
 
-### 价格区间总结
+# Price range summary #
 
-| 区间 | 股价 | 含义 |
+<unk> Inter-segment <unk> stock price <unk> meaning <unk>
 |------|------|------|
-| 深度价值区 | <200元 | Forward PE<13x，悲观情景已充分定价 |
-| 合理低估区 | 200-260元 | Forward PE 13-17x，当前所处位置 |
-| 合理估值区 | 260-360元 | Forward PE 17-23x，需要增长兑现 |
-| 高估区 | >360元 | Forward PE>23x，透支未来2年增长 |
+<unk> Deep value zone < 200 < Forward PE< 13x, pessimistic scenario fully priced < < < < < > >
+<unk> Reasonable underestimation of the area <unk> $200-260 <unk> Forward PE 13-17x, current location <unk>
+<unk> Reasonable valuation area <unk> 260-360 <unk> Forward PE 17-23x, needing growth to meet <unk>
+<unk> Overestimated area > 360 > Forward PE> 23x, overdraft growth over the next two years
 
-### 四位大师的模拟点评
+# Four masters' simulations
 
-> **巴菲特**：
-> "春风动力让我想起了上世纪80年代的日本制造企业——优秀的成本控制、不断提升的品质、正在建立的全球品牌。净现金93亿占市值25%让我感到安心。但我担忧的是27%的毛利率和缺乏定价权——在关税压力下，这家公司是在用利润换市场份额。我会等到它证明能在关税环境下维持住利润率再出手。"
+> **Buffett**:
+> "Spring Wind Motivation reminded me of Japanese manufacturing firms in the 1980s — excellent cost controls, rising quality, and the global brand being built. Net cash, 9.3 billion dollars, represents 25% of the market value, comforts me. But I am worried about 27% of the Maori rate and lack of pricing power – a company that, under tariff pressure, is using profits to exchange market shares. I will wait until it proves that it can sustain the profit margin in a tariff environment."
 
-> **芒格**：
-> "反过来想——如果我要做空春风动力，我会赌关税持续升级和毛利率继续下滑。2023年32%的毛利率降到了2025年的27%，如果2026年再降到24%怎么办？这家公司收入增长31%但利润只增长14%，这是一个危险的信号——越卖越多但越赚越少。另外，控股股东在股价最高点减持，这说明什么？要么他们觉得估值到顶了，要么需要钱——两种可能都不是好事。"
+> ** Manger**:
+> "Conversely, I think -- if I do the spring-wind drive, I'll bet that the tariff escalation and the Maori rate continue to fall. In 2023, 32% of the gross Maori rate fell to 27% in 2025, and what if it fell to 24% in 2026? This company has increased its income by 31% but its profits by only 14%, which is a dangerous sign -- the more it sells, the less it earns. And, if the shareholders in the holding stock are at the highest, then what does that mean? Or they think that the value is up or need money -- neither of these may be good."
 
-> **段永平**：
-> "这门生意的本质是制造业出海，核心是'对的事情'——用好产品赢得全球用户。赖国贵从1989年小作坊做起，35年坚持一个方向，这是我欣赏的企业家。接班人赖民杰入职18年再接班，过渡期充分，比很多二代接班靠谱。我担心的是高位减持这件事——做'对的事情'包括对股东负责。如果你觉得公司值得长期持有，为什么在最高点卖？这个动作让我对管理层的长期主义打了个折扣。估值上，以当前的增速和质地，15倍Forward PE是不贵的。"
+> **Ping Yongping**:
+> "This business is essentially manufacturing out, and the core is 'yes' -- win global users with good products. The local government has been in one direction for 35 years, since the mill in 1989. This is my admired entrepreneur. The next generation, the next 18 years, is full of transition, and many generations are on track. What I'm worried about is holding it high -- doing 'right' is responsible for shareholders. If you think the company deserves to hold it for a long time, why sell it at the highest? This move makes me discount management's long-termism. It's not expensive to value 15 times the current speed and quality of Forward Pe."
 
-> **李录**：
-> "从文明演进的角度看，春风动力代表的是中国制造业价值链攀升的大趋势。中国已经在家电、手机、新能源汽车上实现了全球化，动力运动装备是下一个品类。但这不是一个10倍股的故事——动力运动市场全球也就500-700亿美元，远小于汽车和手机。春风的价值在于：它是这个品类中唯一有机会从区域品牌成长为全球品牌的中国企业，赛道虽窄，但护城河可以很深。20年后回看，如果它成功了，就是'中国的BRP'。"
+> **Lishe**:
+> "In terms of civilizational evolution, spring winds are the big trend toward a rise in China's manufacturing value chain. China has globalized its home power, mobile phones, and new energy vehicles, with motor sports equipment next in the category. This is not a tenfold story – the power market is $50-70 billion globally, far less than cars and mobile phones. Spring winds are worth the value of being the only Chinese enterprise in this class that has a chance to grow from a regional brand to a global brand, but the track can be narrow, but the moat can be deep. 20 years later, if it succeeds, it's China's BRP."
 
 ---
 
-## AI研究置信度 vs 投资确定性
+# AI study confidence vs investment certainty
 
-| 维度 | AI分析置信度 | 投资确定性 | 说明 |
+<unk> dimension <unk> AI analysis of confidence <unk> Investment certainty <unk>
 |------|------------|-----------|------|
-| 历史财务数据 | ★★★★★ 极高 | — | 多源交叉验证，数据准确 |
-| 竞争格局 | ★★★★☆ 较高 | — | 全球市场份额数据基本可靠 |
-| 管理层评估 | ★★★☆☆ 中等 | — | 公开信息有限，关键决策内幕不可知 |
-| 关税影响量化 | ★★★☆☆ 中等 | — | 2025年数据明确，但未来政策高度不确定 |
-| 极核电动前景 | ★★☆☆☆ 较低 | — | 仅2年数据，盈利模型尚未验证 |
-| KTM合作走向 | ★★☆☆☆ 较低 | — | Bajaj接管后合作细节未公开 |
-| 估值判断 | ★★★★☆ 较高 | **中等偏高** | Forward PE 15x在增速30%的背景下确有安全边际 |
-| **综合投资判断** | — | **★★★★☆ 中上** | 生意质地好、估值合理、但关税和KTM两大不确定性需持续跟踪 |
+<unk> Historical financial data <unk> very high <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Competition patterns <unk> Higher <unk> Global market share data are generally reliable <unk>
+Management assessment Medium-sized-sized-- Limited access to public information, and lack of information on key decisions
+<unk> Quantified tariff effects <unk> medium <unk> <unk> <unk> data for 2025 are clear, but future policies are highly uncertain
+<unk> The polar power future <unk> Low <unk> <unk> 2 years data, profit model not yet validated
+<unk> KTM cooperation towards <unk> lower <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Valuation judgement <unk> High <unk> Medium ** <unk> Forward PE 15x has a security margin in the context of 30% growth
+** Integrated investment judgements** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> good quality of business, fair valuation, but two uncertainties, duty and KTM, need to be followed up on a continuous basis
 
-**关键区分**：本报告的AI分析置信度取决于数据充分程度，而投资确定性取决于生意本质的可预测性。春风动力的生意本质（制造业出海+消费升级）是确定的，但短期盈利受关税政策这一外生变量的强烈干扰，使得1-2年维度的盈利预测确定性降低。如果投资者的持有期是3-5年，能够穿越关税扰动，投资确定性会显著提升。
+** Key distinctions**: The AAI analytical confidence level of this report depends on the adequacy of data, while investment certainty depends on the predictability of the nature of the business. The nature of the business driven by spring winds (manufacturing industry + consumption escalation) is determined, but short-term profitability is strongly disrupted by the extraneous variable of tariff policy, which reduces the certainty of profit projections in a 1-to-two-year dimension.
 
 ---
 
-## 附录：数据来源汇总
+# Appendix: Data source summary
 
-### 财务数据
+# Financial data
 - StockAnalysis (S&P Global Market Intelligence)
 - Investing.com
-- 证券时报
-- 同花顺、东方财富网
+- The Securities Times.
+- The same flower, the Eastern Wealth Network.
 
-### 竞争与行业
+# Competition and industry
 - Research and Markets - ATV & UTV Market Global Forecast
 - Mordor Intelligence - North America ATV & UTV Market
-- 华经情报网 - 中国大排量摩托车行业
-- 未来智库 - 全地形车行业深度报告
+- China Motorcycle Industries.
+- The future think tank.
 - Powersports Business
 
-### 管理层与公司治理
-- 春风动力年度报告（巨潮资讯网）
-- 界面新闻、新浪财经、每日经济新闻
+# Management and corporate governance
+- Annual Spring Wind Dynamics Report (Stamp Information Network)
+- Interface news, new business, daily economic news.
 
-### 风险因素
-- 美国海关CBP公告
-- 虎嗅、新浪财经——春风动力陷多事之秋
+# Risk factors
+- US Customs CBP Bulletin
+- Sniff, new fortunes - Spring winds are in the middle of a long fall.
 - RideApart、Motorcycle.com
 
-### 估值与券商研报
-- 华创证券、太平洋证券、国金证券、开源证券
-- 知了财报网（PE/PB历史数据）
-- 东方财富网（一致预期）
+# Valuation and voucher research
+- Chinese securities, Pacific securities, gold securities, open-source securities
+- Information on the Financial Reporting Network (PE/PB historical data)
+- Eastern Wealth Network (unanimous expectations)
 
 ---
 
-*本报告由AI生成，基于公开信息分析，不构成投资建议。关键数据已通过 financial_rigor.py 工具交叉验证。报告中标注"推算"的数据点基于有限信息推理，置信度较低，请结合一手调研判断。*
+* The report was generated by AI and is based on open information analysis and does not constitute an investment recommendation. Key data have been cross-tested through the financial_rigor.py tool. The data points marked in the report as "arigging" are based on limited information reasoning and are less credible, and are judged in conjunction with a single-hand study.*

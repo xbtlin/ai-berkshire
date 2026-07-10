@@ -1,5 +1,5 @@
 ---
-description: "AI Berkshire slash entry for 投资论文漂移检测：分清事实变化与措辞变化."
+description: "AI Berkshire slash entry for Investment paper drift detection: distinguishing factual changes from wording changes."
 argument-hint: $ARGUMENTS
 ---
 

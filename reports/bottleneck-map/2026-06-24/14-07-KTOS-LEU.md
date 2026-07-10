@@ -1,135 +1,135 @@
-# 瓶颈猎手 — 2026-06-24 14:07
+# Bottleneck hunters — 2026-06-24 14:07
 
-本轮扫描覆盖：AI基础设施 / 能源转型 / 国防现代化 / 半导体再工业化 / 太空经济
+Scan coverage: AI infrastructure / energy transformation / defence modernization / semiconductor re-industrialization / space economy
 
-**核心变化（vs 13:05扫描）：① KTOS（Kratos Defense）首次确认为固体火箭发动机最佳上市纯正度标的，估值检查通过 ② LEU估值完整核查完成，PS 7.6x绿灯，从★★★正式升级至★★★★ ③ UUUU/VAC $1.9B M&A昨日宣布（6/23），新稀土磁铁供应链信号 ④ DPA 6月11日正式援引，固体火箭发动机被列为战略瓶颈 ⑤ NEU（NewMarket）确认为AMPAC拥有者，但SRM纯正度仅8%，不达标**
+** Core changes (vs 13:05 scan): 1 KTOS (Kratos Defense) was first identified as the best pure-reform sign for solid rocket motors on the market, valuation check was completed through full verification of 2 LIU valuations, PS 7.6x green light was officially upgraded from <unk> to <unk> 3 UUUU/VAC $ 1.9B M&A announced yesterday (6/23), 4 DPA formally cited on 11 June as a strategic bottleneck 5 NEU (New Market) identified as AMPA owners, but SRM was only 8% pure and not eligible**
 
 ---
 
-## 明确标的（通过估值检查）
+# Clear target (through valuation inspection)
 
-### 🎯 KTOS（Kratos Defense & Security Solutions）— 固体火箭发动机最佳上市纯正度标的
+##KTOS (Kratos Defense & Security Solutions) - Best listed purity of solid rocket motors
 
-**为什么现在值得关注**：13:05扫描将KTOS列为"下轮搜索"对象；本轮确认KTOS是目前美国上市公司中固体火箭发动机（SRM）纯正度最高的标的。Defense Rocket Systems Q1 2026有机收入同比+45.8%（连续两季>40%），Prometheus Energetics（KTOS+Rafael合资）已破土动工，Indiana新厂预计2027投产，进一步推高纯正度。
+** Why is it worth noting now**: 13.05 scans have listed KTOS as the target of the next round of search; the round confirms that KTOS is the most pure standard of solid rocket motors (SRM) in the current US listing companies. Defense Rocket Systems Q1 2026 organic revenues are equal to +45.8% (>40% in two consecutive seasons), Prometheus Energytics (KTOS+Rafael Joint Venture) has broken ground and Indina's new plant is expected to start 2027, further pushing the purity.
 
-**瓶颈定位**：Layer 1，固体火箭发动机 & 超音速推进系统，瓶颈评级 **A级**（美国整合后仅2-3家有实际产能的供应商）
+** Bottleneck Positioning**: Layer 1, Solid Rocket Engine & Ultrasonic Propulsion System, Bottleneck Rating **A Level** (only 2-3 physically capable suppliers following integration in the United States)
 
-| 指标 | 数据 | 来源 |
+<unk> Indicators <unk> Data <unk> Source <unk>
 |------|------|------|
-| 市值 | $9.53B | 实时数据 6/24/2026 |
-| 股价 | $51.23 | Nasdaq KTOS |
-| 2026全年收入指引 | $1.70-1.76B | Kratos Q1 2026 Financial Guidance |
-| PS | **5.5x** | 计算值（$9.53B / $1.73B） |
-| 前向PE | **68.9x** | GuruFocus 5/17/2026 |
-| 收入增速 | 22.6% YoY（Q1 2026） | Kratos Q1 2026 8-K |
-| 积压订单 | $2.0B（历史记录），管线 $14B+ | Kratos Q1 2026 |
-| Defense Rocket Systems增速 | +45.8% YoY（Q1 2026） | Kratos Q1 8-K |
-| SRM/火箭业务估计收入占比 | ~23%（2026E）→ 预计35-40%（2027E） | 估计（基于$400M 2026E火箭收入） |
+• Market value <unk> $9.53B <unk> Real-time data 6/24/2026 <unk>
+<unk> Stock price <unk> $51.23 <unk> Nasdaq KTOS <unk>
+<unk> 2026 year-round income guidelines ($1.70-1.76B) <unk> Kratos Q1 2026 Financial Guildance <unk>
+<unk> PS <unk> 5.5x** <unk> Calculator value ($9.53B / $1.73B) <unk>
+♪ The world's greatest ♪
+<unk> Income growth 22.6% YoY (Q1 2026) <unk> Kratos Q1 2026 8-K <unk>
+<unk> Backlog order <unk> $2.0B (historical records), pipe line <unk> $14B+ <unk> Kratos Q1 2026 <unk>
+<unk> Defense Rocket Systems +45.8% YoY(Q1 2026) <unk> Kratos Q1 8-K <unk>
+<unk> SRM/Rocker operations estimated revenue ~ 23% (2026E) ~ Projected 35-40% (2027E) <unk> Estimated (based on $400 M 2026E rocket revenue) <unk>
 
-**估值检查**：
-- 🟢 PS 5.5x：不触发任何红灯（红灯阈值：PS > 30x且增速<100%）
-- 🟡 前向PE 68.9x：**黄灯**（行业中位数30.3x，KTOS高出127%）。需解释：SRM为高度成长期业务，火箭系统增速+45.8%支持高PE；PEG = 68.9 / 22.6 = 3.0，偏高但可接受；不触发"PE > 80x"红灯
-- 🟢 市值 < 5年乐观收入×10：5年估计收入$4B+，×10 = $40B；市值$9.53B远低于，不触发
-- 🟡 SRM纯正度23%（2026）：低于30%门槛，但2027预计达35-40%（Prometheus新厂投产）
+** Valuation inspection**:
+- <unk> PS 5.5x: No red light trigger (red light threshold: PS > 30x and < 100% increase)
+- <unk> Front-end PE 68.9x: ** Yellow (median industry 30.3x, KTOS over 127%). Explanation: SRM is high and long-term, rocket systems increase + 45.8% supporting high PE; PEG = 68.9/ 22.6 = 3.0, high but acceptable; does not trigger "PE > 80x" red light
+- Market value < 5-year optimistic income x 10:5 estimated income $4B+, × 10 = $40B; market value $9.53B is much lower and not triggered
+- 23% SRM purity (2026): below the 30% threshold, but 2027 is expected to reach 35-40% (input of Prometheus new plant)
 
-**估值安全边际检验（10年25xPE退出法）**：
-- 买入市值：$9.53B
-- 10%年化回报目标→10年后退出需 $9.53B × (1.1)¹⁰ = $24.7B
-- 以25x PE退出：需净利润 = $24.7B / 25 = **$988M**
-- 当前前向净利润估计：~$138M（市值 / 前向PE）
-- 需要年化增速：($988M / $138M)^(1/10) = **21.5% CAGR持续10年**
-- 结论：**安全边际有限**——需要罕见的持续高增速。DPA政策支撑 + SRM产业建设周期为10年高增速提供支撑，但不保证
+** Valuation security margin test (ten years 25 x PE exit method)**:
+- Purchased market value: $9.53B
+- 10% annualized return target = 10 years after exit cost $9.53B x (1.1) 10 = $24.7B
+- Exit at 25 x PE: Net profit required = $24.7B / 25 = ** $988M**
+- Current estimate of net forward profits: ~138M (market value / forward to PE)
+- Need to increase annual rate: ($988M/ $138M) <unk> (1/10) = **21.5% CAGR lasting 10 years**
+- Conclusion: ** Limited security margin** - Need for rare, sustained and high growth. DPA policy support + SRM industry construction cycle supports 10 years of high growth, but does not guarantee
 
-**看多逻辑**（数据支撑）：
-1. **DPA援引是系统性催化剂**：2026年6月11日特朗普政府援引国防生产法，将固体火箭发动机、点火器、制导系统列为关键瓶颈，政府将直接资助扩产。KTOS作为仅有的2-3家具备实际产能的上市公司之一，优先受益
-2. **Prometheus合资提供2027年跨越式增量**：KTOS + Rafael合资建立印第安纳州新SRM工厂，预计2027年投产后火箭业务收入目标$700M（vs 2026E $400M），届时纯正度跨越30%门槛
-3. **订单能见度极高**：$2.0B积压订单（历史记录）+ $14B+机会管线，覆盖2年以上收入，降低增速失速风险
+** See multilogical** (data support):
+**DPA cited as a systemic catalyst**: On 11 June 2026, the Trump Government invoked the Defence Production Act to include solid rocket motors, point firearms, guidance systems as a key bottleneck, and the Government will directly fund extension. KTOS, as one of the only 2 to 3 companies with real capacity, has priority for benefits.
+2. **Prometheus Joint Venture provides a 2027 Cross-Cross Increment**: KTOS + Rafael Joint in the establishment of the new SRM plant in Indiana, with an estimated revenue target of $700 M (vs 2026E $400M) for post-partum rocket operations in 2027, when pure integrity crossed the 30% threshold
+3. ** Order visibility is very high**: $2.0B backlog (historical records) + $14B+opportunity line, covering income for more than two years, reducing the risk of speed-developing
 
-**看空逻辑**（对等呈现）：
-1. **估值已定价大量增长预期**：前向PE 68.9x、市值$9.53B，已隐含持续高增速；若合同延误或Prometheus投产推迟，估值收缩风险显著
-2. **目前纯正度不足30%**：2026年KTOS仍有77%收入来自非SRM业务（UAS、政府解决方案、微波），若这些业务增速放缓，整体增速达不到PE要求
-3. **竞争格局可能变化**：L3Harris Missile Solutions预计H2 2026独立IPO，独立后将成为更纯正的SRM竞争对手，可能吸走资本关注度
+** Viewing logic** (reciprocal presentation):
+1. **The valuation has been substantially increased in the forecast of price growth**: forward to PE 68.9x and market value $9.53B, implying a sustained high rate of increase; the valuation risk is significant if the contract is delayed or Prometheus is delayed
+2. ** Currently less than 30% pure **: 77% of KTOS revenue in 2026 was from non-SRM operations (UAS, government solutions, microwave), which would not have been as fast as PE requirements if the pace of growth slowed
+3. ** Possible changes in competition patterns**: L3 Harris Missile Solutions expects H2 2026 independent IPOs to become a more pure SRM competitor after independence, possibly absorbing capital concerns
 
-**建议**：**加入观察名单 ★★★**（逻辑成立，估值有黄灯，纯正度2026年不足，待2027年Prometheus投产 + 纯正度超30%后升级至★★★★）。近期催化剂：下季（Q2 2026）财报是否显示火箭业务收入加速；Prometheus工厂进展更新。
+** Recommendation**: ** Add to the watch list ** (logically established, evaluated with yellow light, less than 2026 years of purity, upgraded to <unk> after Prometheus was launched in 2027 + above 30% of purity). Recent catalyst: whether next season (Q2 2026) financial statements show accelerated rocket operations revenue; update of Prometheus plant.
 
 ---
 
-## LEU（Centrus Energy）估值完整核查 — 从★★★正式升级至★★★★
+#LEU (Centrus Energy) complete verification of valuation - from formal upgrade to #Treasure
 
-**触发**：13:05扫描发现LEU体量远超预期（$900M DOE任务令 + $2.3B积压），要求完整估值核查。本轮完成。
+** Trigger**: 13.05 scans found LEU far above expectations ($9000M DOE mission order + $2.3B backlog) and required complete valuation verification.
 
-| 指标 | 数据 | 来源 |
+<unk> Indicators <unk> Data <unk> Source <unk>
 |------|------|------|
-| 市值 | **$3.61B** | 实时数据 6/24/2026，$183.51/股 |
-| 2026收入指引 | $450-500M（中值$475M） | Centrus IR |
-| **PS** | **7.6x** | 计算值（$3.61B / $475M） |
-| 前向PE（估计） | ~90x | 估计（$40M年化净利润） |
-| 积压订单 | $2.3B（含条件性合同） | Centrus官网 |
-| DOE任务令 | $900M（Piketon, Ohio HALEU扩产） | DOE 1/5/2026 |
-| 52周区间 | $144.65 - $464.25 | 市场数据 |
+* Market value ** $3.61B** Real-time data 6/24/2026, $183.51
+<unk> 2026 income guidelines <unk> $450-500M (median $475M) <unk> Centrus IR <unk>
+**PS**<unk> ** 7.6x** <unk> Calculatory value ($3.61B/ $475M) <unk>
+<unk> Forward to PE (estimate) ~90x <unk> ($40M net annualized profit) <unk>
+<unk> Backlog of orders $2.3B (conditional contract) <unk> Centrus official network <unk>
+<unk> DOE Task Order $900M (Piketon, Ohio HALEU extension) <unk> DOE 1/5/2026 <unk>
+<unk> 52 weeks <unk> $144.65 - $464.25 <unk> Market data <unk>
 
-**估值检查**：
-- 🟢 PS 7.6x：不触发红灯。属于"PS < 10x且收入增长"绿灯加分项
-- 🟡 前向PE ~90x：**黄灯**（PE > 80x，需要说明）。说明：$900M DOE任务令 + $2.3B积压为收入提供多年能见度；HALEU商业化初期毛利率较低，但随规模扩大有显著提升空间。PEG难以直接计算（早期快速增长期），但$2.3B积压订单本身代表~4.8年现有收入覆盖，支撑高PE
-- ❓ 市值 vs TAM：HALEU TAM难以精确界定（$1B-5B+之间，取决于全球先进核反应堆部署速度）。若保守TAM $2B，20%门槛 = $400M，LEU市值 $3.61B > $400M，**存在潜在红灯但TAM本身不确定**——记录为"需长期监控"
+** Valuation inspection**:
+- <unk> PS 7.6x: No red light triggers. Green light with "PS < 10x with income growth"
+- <unk> front to PE ~ 90x: ** yellow light** (PE > 80x, note). <unk> $2.3B backlog of $900M mission orders provides a multi-year visibility of income; HALEU initially had a low Māori rate but with significant scope for improvement. PEG is difficult to calculate directly (early rapid growth period), but $2.3B backlog orders represent per se ~ 4.8 years of existing income coverage, supporting high PEs
+- Market value vs TAM: HALEU TAM is difficult to define precisely (between $1B-5B+ and depending on the speed of deployment of advanced nuclear reactors worldwide). If the TAM $2B is conservative, the 20% threshold = $400M, LEU market value $3.61B > $400M,** potential red light exists but Tam itself is uncertain** - recorded as "needing long-term monitoring"
 
-**估值安全边际检验（10年25xPE退出法）**：
-- 买入：$3.61B
-- 10%年化目标：10年后需 $3.61B × (1.1)¹⁰ = $9.36B
-- 以25x PE退出：需净利润 = $374M
-- 情景：HALEU市场2036年收入$2B（15.4% CAGR），净利率20%（规模扩大后合理）→净利润$400M → 退出值$10B > $9.36B ✅
-- 结论：**在乐观HALEU部署假设下具备安全边际**（但依赖HALEU全球商业化兑现）
+** Valuation security margin test (ten years 25 x PE exit method)**:
+- Buying: $3.61B
+- 10% annual target: $ 3.61B x (1.1)10 = $ 9.36B after 10 years
+- Exit at 25xPE: Net profit required = $374M
+- Scenario: HALEU market revenue in 2036 at $2B (15.4% CAGR), net interest rate at 20% (reasonable on scale) <unk> net profit at $400M <unk> exit value of $10B > $9.36B
+- Conclusion: ** Security margin under optimistic HALEU deployment assumptions** (but relying on global commercialization of HALEU)
 
-**升级决定：★★★ → ★★★★**
-理由：$900M DOE任务令（政府合同担保）+ $2.3B积压（4.8年收入覆盖）+ PS 7.6x绿灯，为高PE提供了结构性支撑。主要不确定性是HALEU全球化速度，而非公司本身执行力。
+** Upgrade decision: <unk> <unk>
+Reason: The 900M DOE Task Order (Government Contract Guarantee) + $2.3B backlog ( 4.8 years of income coverage) + PS 7.6x green light provides structural support for the high PE. The main uncertainty is the pace of the HALEU globalization, not the company’s own enforcement.
 
 ---
 
-## 其他信号（无明确标的）
+# Other signals (no clear target)
 
-| 环节 | 信号描述 | 来源 | 初步判断 |
+The first time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, the second time I've been in the room, and the second time I've been in the room, and the second time I've been in the room, and the second time I've been in the room, and the second time I's been in the way I's been in the way to get to see the next.
 |------|---------|------|---------|
-| **UUUU/VAC — 稀土磁铁M&A** | 2026年6月23日（昨日）Energy Fuels宣布以$1.9B收购VAC（Vacuumschmelze GmbH）：$718M现金+65.853M新股。VAC：100年+历史、400+专利、1000+客户、现有2000吨/年永磁体产能（可扩至12000吨）。DoD承诺$725M有条件融资支持稀土扩产。交易预计2027年初完成。VAC 2025年EBITDA $29M，订单同比+20%+ | Energy Fuels IR 6/23/2026；Benzinga；CNBC；Seeking Alpha | **加入观察名单（待交易完成）**。UUUU将从铀矿商转型为"矿山→磁铁"一体化稀土平台。当前无法计算合并后PS/PE（交易未完成），且存在大幅稀释（65.853M新股）。信号强度 ★★（太早，数据不足）。DoD背书 + 中国替代逻辑清晰是亮点 |
-| **NEU/AMPAC — 铵高氯酸盐唯一美国生产商** | NewMarket Corporation（NYSE: NEU，市值$7.24B，年收入$2.73B）于2024年1月收购AMPAC。AMPAC是北美唯一铵高氯酸盐（AP）生产商，AP为固体火箭推进剂核心氧化剂。AMPAC 2025年4月批准$1亿扩产投资，2026年完工。但AMPAC/特种材料板块Q1 2026仅$58.1M（年化~$230M），占NEU总收入约8.4% | NewMarket Q1 2026 8-K；NewMarket官网；H.I.G Capital PR | **纯正度不足，不作为投资标的。** NEU 8%收入来自SRM相关（远低于30%阈值），主体业务为石油添加剂。记录为"行业信号：AP独家供应"。若有私有化/分拆可能性，可重新评估 |
-| **DPA 6月11日援引** | 特朗普政府6月11日正式援引国防生产法（DPA），将固体火箭发动机、点火器、制导系统列为战略瓶颈；五角大楼直接对L3Harris Missile Solutions投资$10亿股权，以加速PAC-3、THAAD、Tomahawk生产。Aerojet Rocketdyne目标2029年年产量25000枚（vs 2024年13000枚）。五角大楼已识别"数百个单点故障" | Breaking Defense 6/2026；Aeronautics Magazine 6/11/2026 | **系统性政策确认**：SRM瓶颈从"工业界私下担忧"升级为"总统援引DPA"级别，催化剂时间窗口加速。不改变KTOS★★★评级，但增加政策背书权重 |
-| **L3Harris Missile Solutions — H2 2026 IPO** | LHX宣布Missile Solutions子公司（收入$4B+）计划H2 2026独立IPO。包含PAC-3、THAAD、Tomahawk、ATACMS等主力弹药产线。DoD $10亿股权投资已确认 | L3Harris官网；SA Business Wire 4/2026 | **潜在未来标的**。IPO完成后将是最纯正的SRM上市公司（收入纯正度可能>60%）。现阶段无法投资（LHX母公司$56.5B市值，SRM占比约17%，稀释严重）。**设置提醒：H2 2026 LHX Missile Solutions IPO招股书** |
-| **KTOS-SRM 竞争对手排除** | DCO（Ducommun）：SRM相关约19%，不达标。MRCY（Mercury Systems）：无SRM业务，当前亏损，完全不适合。 | KTOS Q1 2026；DCO Q1 2026；MRCY官网 | 本轮彻底排除DCO和MRCY作为SRM标的 |
+**UUUU/VAC - Rare earth magnet M&A** <unk> Energy Fuels announced yesterday, 23 June 2026 that he would buy VAC (Vacumschmelze GmbH): $718M cash + 65.853M new shares at $1.9B. VAC: 100+ History, 400+ Patents, 1000+ Clients, 2000 tonnes/year longmagnetic capacity (which could be expanded to 12,000 tonnes). DoD committed $725M to conditional financing to support rare earth expansion.VAC 2025 EBITDA $29M, order of the same ratio + 20% <unk> Energy Fuels IR 6/23/2026; Benzinga; CNBC; Seeking Alpha ** joined the watch list (to be traded)**. UUUU will be converted from uranium miners to an integrated "Magnetic Magnet" rare earth platform. The combined PS/PE (transaction not completed) is currently uncalculated and has a significant dilution (65.853M new unit). Signal strength (too early, insufficient data) DoD backbook + China ' s alternative logic is clear and bright.
+**NEU/AMPAC - The only American producer of ammonium perchlorate** NewMarket Corporation (NYSE:NEU, market value $7.24B, annual revenue $2.73B) acquired the MPAC in January 2024. AMPAC is the only producer of ammonium perchlorate (AP) in North America, AP being the solid rocket propellant core oxidant. AMAPAC approved an investment in extension of $100 million in April 2025 and completed in 2026.However, the MAPAC/Special Materials plate Q1,2026, at $58.1M (annually ~$230M), accounts for about 8.4% of total NEU revenue <unk> NewMarket Q1 2026 8-K; NewMarket Network; H.I.G Capital <unk> ** is not a target for investment, but is not pure.** NEU 8% of revenue is from SRM-related (by far less than the 30% threshold), with the main business being an oil additive. Recorded as "Industry signal: AP supply"
+**Param Government, 11 June, citing** Defence Production Act (DPA) was officially invoked by the Trump Government on 11 June to include solid rocket motors, point firearms, guidance systems as strategic bottlenecks; the Pentagon invested $1 billion directly in L3Harris Missile Solutions to accelerate production of PAC-3, THAAD, Tomahawk. Aerojet Rocketdyne targeted 25,000 units (vs 13,000 units in 2024).The Pentagon has identified hundreds of single point malfunctions, <unk> Breaking Defense 6/2026; Aeronautics Magazine 6/11/2026 <unk> Systemic policy confirmation**: SRM bottlenecks have been upgraded from "Investment Concerns" to "Invocation of DPA" level by the President, and catalyst time windows have accelerated. No change in KTOS ratings, but increase policy endorsement weights
+**L3Harris Missile Solutions — H2 2026 IP** <unk> LPX announced the Missile Solutions (income $4B+) project H2 2026 independent IPO. Includes major ammunition production lines such as PAC-3, THAAD, Tomahawk, ATACMS. DoD $1 billion in equity investment confirmed <unk> L3 Harris official network; SA Business Wire 4/2026 ** potential future target**. When IPO is completed, it will be the most pure SRM listed company (pure income may be > 60%).** Set alarm: H2 2026 LHX Missile Solutions IPO caller** <unk>
+**KTOS-SRM Competitor Exclusion** <unk> DCO (Ducommun): SRM is about 19% unsatisfied. MRCY (Mercury Systems): no SRM business, current losses, totally unsuitable. <unk> KTOS Q1 2026; DCO Q1 2026; MRCY Network of Officers <unk> Total exclusion of DCO and MRCY as SRM targets in this round
 
 ---
 
-## 观察名单状态（vs 13:05扫描）
+# Watch List Status (vs 13.05 scan)
 
-| 标的 | 变化 | 原因 | 新评级 |
+The subject matter of the subject matter changes
 |------|------|------|--------|
-| **LEU（Centrus）** | ⬆️ **正式升级** | 完整估值核查完成：PS 7.6x绿灯，前向PE黄灯但有$2.3B积压+$900M DOE任务令支撑 | ★★★ → **★★★★** |
-| **KTOS（Kratos Defense）** | 🆕 **新增观察** | 首次确认为SRM最佳上市纯正度标的（23%，2027E 35-40%），估值检查通过（PS 5.5x绿灯，PE 68.9x黄灯） | 新增 **★★★** |
-| **UUUU（Energy Fuels）** | 🆕 **新增观察（M&A追踪）** | $1.9B VAC收购昨日宣布，稀土磁铁转型，DoD $725M背书，但交易2027年完成，当前财务数据不可计算 | 新增 **★★**（待交易完成后重评） |
-| **ALM（Alpha Metallurgical）** | ✅ 无变化 | Russell 1000纳入T=5天（6/29），WF6 H2缺口论点持续强化 | ★★★★ 维持 |
-| **IQE.L** | ✅ 无变化 | AGM T=5天（6/30），MACOM战略投资£30M已确认（非收购），基本面驱动论点 | ★★★ 维持（论点已重置为基本面） |
-| **Foosung 093400** | ✅ 无变化 | WF6缺口持续确认 | ★★★ 维持 |
-| **FORM（FormFactor）** | ✅ 无变化 | HBM4多空信号对立，等待$121区间 | ★★★ 维持（等待） |
+**LEU(Centrus)** Official upgrade** Complete valuation verification: PS 7.6x green light, forward to PE yellow light with $2.3B backlog + $900M DOE task order supported <unk> ** ** ** ** <unk>
+**KTOS (Kratos Defense)** <unk> Additional observations** <unk> First confirmed as the best net-reform SRM listing (23%, 2027E 35-40%), valuation check passed (PS 5.5x green, PE 68.9x yellow) <unk> New ** <unk> <unk>
+**UUUY FUEL** ** Additional observation (M&A tracking)** <unk> 1.9B VAC acquisition announced yesterday that the rhemagnetic magnet transformation, DoD $725M endorsement, but transaction completed in 2027, current financial data not compute ** (to be re-evaluated after transaction completed) **
+<unk> **Alpha Metalurgical** <unk> No change <unk> Russell 1000 = 5 days (6/29) *F6 H2 gap argument continues to be reinforced <unk> maintenance
+**IQE.L** No change <unk> AGM T= 5 days (6/30), MACOM strategic investment £30M confirmed (non-acquisition), basic-driven argument <unk> Maintenance (argument reset to basic) <unk>
+**Foosung 093400** <unk> No change <unk> WF6 gap confirmed continuously <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+**FormActor** <unk> No change <unk> HBM4 multi-space signal opposing, waiting for $121 inter-block <unk> maintenance (waiting) <unk>
 
 ---
 
-## 关键倒计时更新（截至今日14:07）
+# Key Countdown Update (as of today: 14:07)
 
-| 标的/事件 | 事件 | 剩余时间 | 状态 |
+<unk> Subject/incident <unk> Event <unk> Time remaining <unk> State <unk>
 |-----------|------|---------|------|
-| **ALM** | Russell 1000纳入生效 | **T=5天（6/29）** | 确认 |
-| **LEU** | DOE Option 1b截止 | **T=6天（6/30）** | $900M任务令已先行覆盖 |
-| **IQE.L** | AGM（战略投资确认） | **T=6天（6/30）** | 非收购公告 |
-| **4047.T（Kanto Denka）** | WF6永久停产 | **T=7天（7/1）** | 确认，ALM/Foosung受益 |
-| **ABF/Ajinomoto** | Q3 2026涨价30%生效 | **T=~7天** | 行业信号，非直接标的 |
-| **L3Harris Missile Solutions** | IPO（预计） | **T=~1-6月（H2 2026）** | 新增追踪 |
+**ALM**<unk> Russell 1000 entered into force **T= 5 days (6/29)**
+**LEU** <unk> DOE Office 1b ending **T= 6 days (6/30) ** <unk> $900M task order overwritten
+** IQE.L** AGM (strategic investment recognition) ** T= 6 days (6/30) ** Non-acquisition bulletin **
+**4047.T(Kanto Denka)** <unk> WF6 permanent shutdown **T= 7 days (7/1) ** confirmed that ALM/Foosung benefited <unk>
+** ABF/Ajinomoto** <unk> Q3 2026 increase effective 30% ** T= ~ 7 days ** industry signal, not direct
+**L3Harris Missile Solutions** <unk> IPO (projected) **T= ~ January-June (H2 2026)** <unk> New trace
 
 ---
 
-## 新增追踪队列（下轮搜索）
+# Add a new tracking queue (down-wheel search)
 
-1. **L3Harris Missile Solutions IPO细节**：搜索招股说明书草案、定价区间、收入拆分（SRM纯正度）
-2. **UUUU/VAC合并后财务建模**：VAC年收入估算（$29M EBITDA → 倒推收入，估计$200-400M），合并实体PS/PE
-3. **固体推进剂原材料完整链条**：AP（AMPAC/NEU）→ 高氯酸铵 → 铝粉 → 粘合剂（HTPB）——各环节是否有纯正度>30%的上市公司？
+1. **L3 Harris Missile Solutions IPO Details**: Draft Search and Recruitment Unit Instructions, Price-Plus Inter-Purpose, Income Division (SRM pure integrity)
+2. **UUUU/VAC consolidated financial model**: VAC estimated annual income ($29M EBITDA <unk> inverted income estimated at $200-400M), merged entity PS/PE
+** Complete chain of solid propellant raw materials**: AP(APAC/NEU) <unk> Ammonium perchlorate <unk> aluminium powder <unk> adhesives (HTPB) - Is there a company listed with a pure integrity > 30% of the chain?
 
 ---
 
-*数据来源：Kratos Defense Q1 2026 8-K（6/24/2026）；GuruFocus KTOS Forward PE（5/17/2026）；Stockanalysis.com KTOS市场数据；Centrus Energy IR $900M DOE任务令（1/2026）；LEU实时市值（6/24/2026）；Energy Fuels IR $1.9B VAC收购公告（6/23/2026）；DoD $725M有条件融资；Benzinga/Seeking Alpha/CNBC VAC报道（6/23/2026）；NewMarket Q1 2026 8-K（AMPAC/NEU数据）；Breaking Defense DPA援引（6/2026）；L3Harris Missile Solutions $1B DoD股权投资（1/2026）；Prometheus Energetics破土动工（6/2026）*
+* Data sources: Kratos Defense Q1 2026 8-K (6/24/2026); GuruFocus KTOS Forward PE (5/17/2026); Stockanalysis.com KTOS market data; Centrus Energy IR $900M DOE mission order (1/2026); real-time market value of LEU (6/24/2026); Energy Fuels IR $1.9B VAC buy-in bulletin (6/23/2026); DoD $725M conditional financing; Benzinga/Seking Alpha/CNBC VAC report (6/23/2026);NewMarket Q1 2026 8-K (AMPAC/NEU data); citing Breaking Defense DPA (6/2026); L3 Harris Missile Solutions $1B DoD equity investment (1/2026); Prometheus Energy Works break-down (6/2026)*

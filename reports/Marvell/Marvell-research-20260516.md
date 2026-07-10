@@ -1,313 +1,313 @@
-# Marvell Technology (MRVL) 投资研究报告
+#Marvell Technology (MRVL) Investment Study
 
-**日期：** 2026年5月16日  
-**股价：** $176.89（2026.5.15收盘）  
-**市值：** $1,547亿  
-**研究框架：** 巴菲特-芒格-段永平-李录 四大师综合分析
-
----
-
-## 信息丰富度评级：A级（信息充裕）
-
-Marvell 是纳斯达克上市公司，券商覆盖密集（26+分析师），财报季媒体报道丰富，AI/半导体赛道热度极高。
-
-**AI研究局限性声明：** 由于信息过于充裕，本报告存在"共识过强"风险——大量分析与市场主流观点趋同。因此重点执行反面检验：聪明人为什么不买？被忽略的风险是什么？当前价格已经反映了多少乐观预期？
-
-**偏见自查：**
-- [x] 确定性感受主要来自资料数量，而非对生意本质的深刻理解——定制ASIC的真实客户粘性需要更多一手验证
-- [x] AI输出与市场共识高度雷同（看多AI基建/看好定制硅片），信息优势有限
-- [x] 需警惕"高增速=好公司"的叙事偏差
+** Date: ** May 16, 2026
+** share price: ** $176.89 (2026.5.15 closing)
+** Market value: ** $154.7 billion
+** Framework of research:** Buffett-Mung-Dhong-Jongping-Li-Shu-Shiv synthesis analysis
 
 ---
 
-## 第一步：关键数据总览
+# Information abundance rating: A (information is abundant)
 
-### 核心财务数据
+Marvell is a listed company of NASDAQ, with a dense bond-seller coverage (26+analyst), a rich financial season of media coverage and a high level of AI/semiconductor track heat.
 
-| 指标 | FY2021 | FY2022 | FY2023 | FY2024 | FY2025 | FY2026 |
+**A. Limitation statement for the study:** There is a risk of "too much consensus" in this report because of the insufficiency of information - a large amount of analysis converges with the prevailing market view. Focus on the counter-test: why not the smart one buys it? What are the risks of being ignored? How much optimism are the current prices already reflecting?
+
+** Prejudice self-examination:**
+- [x] The certainty sense comes mainly from the amount of information, not from a profound understanding of the nature of business - customizing the true customer content of ASIC requires more first-hand verification
+- [x] AI output is highly similar to market consensus (see multiple AI infrastructure/see custom-made silicon) and information has limited advantages
+- [x] Beware of the "high speed = good company" narrative bias.
+
+---
+
+# Step 1: a summary of key data
+
+## Core financial data
+
+<unk> Indicator <unk> FY2021 <unk> FY2022 <unk> FY2023 <unk> FY2024 <unk> FY2025 <unk> FY2026 <unk>
 |------|--------|--------|--------|--------|--------|--------|
-| 收入（$B） | 2.97 | 4.46 | 5.92 | 5.51 | 5.77 | 8.20 |
-| YoY增速 | — | +50% | +33% | -7% | +5% | +42% |
-| Non-GAAP毛利率 | 63.3% | — | — | — | 61.0% | ~62% |
-| GAAP营业利润率 | -8.7% | -7.8% | 4.0% | -10.3% | -12.5% | — |
-| Non-GAAP营业利润率 | 24.2% | — | — | — | ~33% | ~38%（估） |
-| 经营现金流（$M） | 817 | 819 | 1,289 | 1,371 | 1,681 | — |
-| 自由现金流（$M） | ~650 | 650 | 1,083 | 1,034 | 1,397 | — |
+Income ($B) 2.97 4.46 5.92 5.51 5.77 8.20
+<unk> YoY Speed Increase <unk> + 50% <unk> <unk> 33% <unk> 7% <unk> 5% <unk> 42% <unk>
+<unk> Non-GAAP Māori ratio 63.3% <unk> <unk> <unk> <unk> <unk> <unk> <unk> 61.0% ~ 62% <unk>
+<unk> GAAP operating profit margin <unk> 8.7% <unk> 7.8% <unk> 4.0% <unk> 10.3% <unk> 12.5% <unk> <unk> <unk> <unk> <unk> <unk>
+<unk> Non-GAAP operating profit rate <unk> 24.2% <unk> <unk> <unk> ~ 33% ~ 38% (estimate) <unk>
+<unk> Operating cash flow ($M) <unk> 817 <unk> 819 <unk> 1,289 <unk> 1,371 <unk> 1,681 <unk> <unk> <unk> <unk> <unk>
+<unk> Free cash flow ($M) ~650 ~ 650 ~ 1,083 ~ 1,034 ~ 1,397 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ 1 ~ ~ ~ ~ 1 ~ 1 ~ 1
 
-数据来源：Marvell IR新闻稿、StockAnalysis.com、SEC Filing
+Sources: Marvell IR press release, StockAnalysis.com, SEC Filing
 
-### FY2026 分部收入结构（截至2026年1月）
+## SY2026 Divisional income structure (as of January 2026)
 
-| 分部 | 收入 | 占比 | YoY增速 |
+♪ The way you're going ♪
 |------|------|------|---------|
-| 数据中心 | ~$6.0B | 74% | +46% |
-| 企业网络 | ~$626M | 8% | 触底回升 |
-| 运营商基础设施 | ~$338M | 4% | 5G放缓 |
-| 消费者 | ~$316M | 4% | 稳定 |
-| 汽车/工业 | ~$322M | 4% | 已出售给Infineon |
-| **合计** | **$8,195M** | **100%** | **+42%** |
+<unk> Data centre ~ $6.0B ~ 74% + 46% ~
+♪ The network of businesses ♪
+Operator infrastructure ~ $338M ~ 4% ~ 5G Slowing ~
+Consumers ~ $316M ~ 4% ~ Stable ~ S-O-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-
+Automobile/industrial ~ $322M ~ 4% ~ sold to Infinion ~
+** Total** ** $8,195M** ** 100% ** ** 42%** **
 
-### 当前估值（工具验算）
+## Current valuation (tools validation)
 
-| 指标 | 数值 | 验算方法 |
+<unk> Indicators <unk> Value <unk> Method of calculation <unk>
 |------|------|----------|
-| 市值 | $1,547亿 | 874.5M股 × $176.89 = $154.7B ✅ |
+* Market value $154.7 billion * 874.5 M × $176.89 = $154.7B = $154.7B
 | PE (TTM, GAAP) | 57.6x | $176.89 / $3.07 ✅ |
-| Forward PE (FY2027E) | ~46.5x | 基于共识EPS ~$3.80 |
+<unk> Forward PE (FY2027E)<unk> 46.5x<unk> Consensus-based EPS ~ $3.80
 | PS (TTM) | 18.9x | $154.7B / $8.195B ✅ |
 | P/FCF | 110.6x | $176.89 / $1.60（FY2025 FCF per share）✅ |
-| PEG | ~1.12 | 基于30%+增速预期 |
-| Beta | 2.25 | 高波动性 |
-| 52周范围 | $58.61 - $192.15 | 近一年涨幅超200% |
+PEG ~ 1.12 ~ based on 30% + acceleration expected ~
+<unk> Beta <unk> 2.25 <unk> High volatility <unk>
+<unk> 52 weeks range <unk> $58.61 - $192.15 <unk> over 200% increase in the last year
 
-### 关键数据交叉验证记录
+## Key data cross-checking records
 
 ```
-市值验算：874.5M × $176.89 = $154.69B vs 报告$154.7B → 偏差0.01% ✅
-FY2026收入：Marvell IR / Futurum / SeekingAlpha 三源一致 → $8,195M ✅
-总股本：StockAnalysis 874.5M / Marvell PR基本865.5M / 稀释877M → 偏差<2% ✅
+Market value measurement: $874.5M x $176.89 = $154.69B vs report $154.7B <unk> variance of 0.01% <unk>
+SY2026 Income: Marvell IR/ Futurum / Seeking Alpha 3-Signature ~ $8,195M
+Total equity: StockAnalysis 874.5M / Marvell PR basic 865.5M / diluted 877M <unk> deviation < 2% <unk>
 ```
 
 ---
 
-## 第二步：生意本质分析 — 段永平"对的生意"
+# Step 2: Business nature analysis - a piece of "right business"
 
-### 一句话定义
+# One word of definition
 
-**Marvell 是 AI 数据中心的"管道工"——不做 GPU 通用计算，而是为超大规模云厂商设计定制芯片并提供高速光互连，处于 Broadcom-Marvell ASIC 双寡头格局的第二位。**
+** Marvell is the "Pipheral Man" at the AI data centre - instead of making GPU universal calculations, custom chips and high-speed light interconnections for super-large cloud producers, in second place in the Broadcom-Marvell ASIC double-occupational pattern**
 
-### 商业模式画布
+# Business model canvass
 
-| 维度 | 特征 |
+<unk> Dimensions, <unk> Characteristics, <unk>
 |------|------|
-| 收入模式 | 芯片销售（一次性）+ 定制设计服务（多年合同） |
-| 客户类型 | 超大规模云厂商（AWS/Google/微软）为核心 |
-| 价值主张 | 帮客户设计比通用GPU更高效的专用AI芯片 |
-| 复购驱动 | 每代芯片设计周期3-4年，技术锁定 |
-| 毛利率 | Non-GAAP ~61%，典型Fabless半导体水平 |
+<unk> Income pattern <unk> Chip sales (one-time) + custom design services (multi-year contract) <unk>
+<unk> Client type <unk> Super-large cloud company (AWS/Google/Microsoft) is the core <unk>
+The value is the idea of helping clients design a special AI chip that is more efficient than GPU.
+<unk> Repurchase driver <unk> Design cycle 3-4 years per chip, technology lock <unk>
+<unk> Māori ratio <unk> Non-GAAP ~ 61%, typical Fablesss semiconductor level <unk>
 
-### 两大业务支柱
+# Two main pillars of operations
 
-1. **定制ASIC（Custom XPU）：** 与AWS（Trainium）、微软（Maia）、Google共同设计AI加速芯片。FY2026收入$15亿，增速翻倍。Marvell提供SerDes、互连、封装等IP，整合进客户的专用芯片。
+1. ** Customize ASIC (Custom XPU):** Design AI acceleration chips with AWS (Trainium), Microsoft (Maia) and Google. SY2026 generated $1.5 billion, doubling speed. Marvell provides IPs, interconnection, sealing, etc., and integrates into the client ' s dedicated chip.
 
-2. **光学互连（Optical DSP）：** 800G/1.6T PAM4光学DSP芯片，连接数据中心内的GPU/XPU集群。市场份额超60%，技术领先1-2代。
+2. **Optical DSP: **800G/16.6 T PAM4 optical DSP chip to connect the GPU/XPU cluster in the data centre. Market share is over 60%, technology leads 1-2 generation.
 
-### 毛利率分析
+# Māori rate analysis
 
-Non-GAAP毛利率维持在61-63%区间，这是典型的Fabless半导体公司水平（设计IP，不自建工厂）。但注意：
+The Māori ratio of Non-GAAP is maintained at 61-63%, which is typical of the Fabless semiconductor level (designed IP, not self-built plant).
 
-- GAAP毛利率仅41%——差距来自收购带来的巨额无形资产摊销（Inphi $100亿、Cavium $60亿等收购）
-- 毛利率没有明显扩张趋势，说明定制ASIC业务的议价能力有限——客户是比Marvell大得多的超大规模厂商
-- 对比：Broadcom Non-GAAP毛利率超70%，Nvidia超75%。Marvell的61%偏低，反映其作为"设计服务商"而非"平台型"公司的定位
+- GAAP Māori rate is only 41% - the gap is due to the huge amortization of intangible assets resulting from acquisitions (Inphi $10 billion, Cavium $6 billion etc.)
+- Māori rates are not clearly expanding, indicating limited bargaining power for customizing ASIC operations - clients are much larger than Marvell's super-largers
+- Contrast: Broadcom Non-GAAP has a Māori ratio of over 70% and Nvidia 75%. Marvell's 61% is low, reflecting its position as a design service provider rather than a platform-type company
 
-### 经营杠杆
+# And you're going to be a lever
 
-- 收入从FY2024的$55亿增长到FY2026的$82亿（+49%），Non-GAAP营业利润率从~25%提升到~38%
-- 正向经营杠杆明显：研发费用的边际杠杆在大规模营收上显现
-- 但这是半导体公司的典型特征，并非独特优势
+- Revenue increased from $5.5 billion in FY 2024 to $8.2 billion in FY 2026 (+49 per cent), and Noon-GAAP increased its operating profit rate from ~25 per cent to ~38 per cent
+- Levering towards business is clear: marginal leverage of R&D costs is visible in large-scale revenue collection
+- But it's a typical feature of semiconductor companies. It's not a unique advantage.
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> 这门生意好在哪？如果只能用一句话描述，是什么？
+Where is this business better? If only one word can be said, what is it?
 
-**好在**：处于AI浪潮的"卖铲子"位置，且客户一旦选定就难以中途更换设计伙伴。
+** Good in **: The position of "sell shovel" in the tide of AI and the client, once selected, will be unable to change design partners in the middle of the journey.
 
-**但另一方面**：这是一门"依附于大客户"的生意。AWS、Google有绝对议价权，Marvell本质上是他们的高级外包设计团队。生意质量不如拥有自主生态的Nvidia或有广泛客户基础的Broadcom。
+** But on the other hand: This is a business that is "dependent to large customers." AWS, Google, has absolute bargaining power, and Marvell is essentially their advanced outsourcing design team. Business is of less quality than Nvidia, with an autonomous ecology, or Broadcom, with a broad client base.
 
 ---
 
-## 第三步：护城河评估 — 巴菲特"经济护城河"
+# Step three: A moat river assessment -- Buffett "The Economic moat."
 
-| 护城河类型 | 评估 | 强度 |
+♪ The moat type ♪
 |-----------|------|------|
-| 品牌/定价权 | ❌ 不适用。B2B芯片设计，无消费者品牌。面对AWS/Google等巨头客户，定价权有限 | 弱 |
-| 转换成本 | ✅ 定制ASIC设计周期3-4年，深度整合客户架构，中途更换代价极高 | 强 |
-| 网络效应 | ❌ 不存在。芯片设计不具备网络效应特征 | 无 |
-| 规模效应 | ⚠️ 有限。IP复用降低边际设计成本，但规模远小于Broadcom | 中等 |
-| 技术/专利壁垒 | ✅ 10,000+专利，光学DSP市占率60%+，2nm先发，SerDes领先 | 强 |
+Brand/pricing rights not applicable. B2B chip design, no consumer brand. Limited pricing rights for big clients like AWS/Google
+Customize the ASIC design cycle for 3-4 years, in depth integrate the client structure, and the cost of midway replacement is extremely high
+The chip design does not have network effect characteristics
+<unk> scale effect <unk> <unk> limited. IP reuse reduces marginal design costs but is much smaller than Broadcom <unk> medium <unk>
+<unk> Technology/Picticity Barrier <unk> 10,000+ Patent, 60% + 2nm in optical DSP, leading by SerDes
 
-### 护城河趋势
+# The moat of the river
 
-**过去5年：明显变宽**
-- 2021年收购Inphi确立光互连领导地位
-- 定制ASIC客户从1家扩展到3-4家超大规模厂商
-- 进入5nm/3nm先进制程，技术代差扩大
-- Nvidia $20亿投资验证平台价值
+** The last five years: significant width**
+- Acquisition of Inphi in 2021 to establish a light-connected leadership
+- Customization of ASIC clients from one to three to four super-large manufacturers
+- Advanced 5 nm/3nm process, with increased technical substrate
+- Nvidia $2 billion in investment to validate platform value
 
-**未来5年：关键变量**
-- 变宽可能：AI算力需求持续爆发，定制ASIC渗透率从~10%提升到25%+
-- 变窄风险：Broadcom规模优势持续扩大；超大规模厂商自研能力增强（Google已有自研TPU经验）；新进入者（如Alchip、GUC）在低端市场蚕食
+** Next 5 years: key variables**
+- Widening possibilities: AI’s computing needs continue to erupt, customizing ASIC penetration increased from ~10% to 25%+
+- Narrow risks: Broadcom ' s growing advantages in size; mega-scale self-research capabilities (Google has self-research TPU experience); new entrants (e.g. Alchip, GUC) encroach on low-end markets
 
-### 巴菲特式追问
+# Barfith-style questioning
 
-> 10年后这条护城河还在吗？什么能摧毁它？
+> Is this moat still in place in 10 years? What can destroy it?
 
-**可能存在的场景：** 如果AI算力需求持续高增长，定制ASIC保持经济性优势，Marvell的多代设计经验和IP积累将持续构成壁垒。
+** Possible scenarios:** If AI's demand for numeracy continues to grow high and customizing ASIC maintains economic advantages, Marvell's multigenerational design experience and IP accumulation will continue to constitute barriers.
 
-**可能被摧毁的场景：**
-1. 超大规模厂商组建内部芯片设计团队（Google已经这样做了部分TPU设计）
-2. 通用GPU架构效率追赶，ASIC的性价比优势消失
-3. 新的芯片设计EDA工具/AI辅助设计大幅降低设计壁垒
-4. Broadcom凭借更大规模和更多客户持续挤压Marvell的生存空间
+** scenes that could be destroyed:**
+1. Super-large manufacturers form internal chip design teams (Google has already done some TPU designs)
+2. GPU architecture efficiency catch-up, with ASIC ' s value for money advantage disappearing
+3. New chip design EDA/AI-assisted design significantly reduces design barriers
+Broadcom continues to squeeze Marvell's life space with a larger and larger number of clients.
 
 ---
 
-## 第四步：逆向思考与风险清单 — 芒格"反过来想"
+# Step four: Reverse thinking and risk list - Manger "inverted"
 
-### Marvell可能失败的路径
+# The path Marvell may fail #
 
-| 失败路径 | 概率 | 影响程度 | 说明 |
+<unk> Failed path <unk> probabilities <unk> Impact degree <unk> description <unk>
 |----------|------|----------|------|
-| AWS/微软削减AI资本支出 | 中（20-30%） | 致命 | 收入74%来自数据中心，客户集中度极高 |
-| 核心客户更换设计伙伴 | 低-中（15%） | 严重 | AWS转向Broadcom或自研，收入断崖 |
-| 通用GPU持续碾压ASIC | 低（10%） | 严重 | Nvidia架构持续改进，ASIC性价比优势不足 |
-| Broadcom大幅降价抢客户 | 中（20%） | 中等 | Broadcom有规模优势可以打价格战 |
-| 中国地缘政治风险 | 中（25%） | 中等 | FY2025中国收入占43%，关税/制裁影响不确定 |
-| Celestial AI整合失败 | 低-中（15%） | 中等 | $32.5亿收购，FY2028才有收入，技术路线未验证 |
-| AI泡沫破裂 | 中（20%） | 致命 | 估值基于30%+增长预期，一旦增速放缓，估值杀+业绩杀双击 |
+AWS/MSC cut AI capital expenditure (20-30%) <unk> Deaths <unk> 74% revenue from data centres, very high client concentration <unk>
+<unk> Core client replacement partner <unk> low-medium (15%) <unk> severe <unk> AWS shift to Broadcom or self-research, income cut off cliff <unk>
+<unk> General GPU continued to crush ASIC <unk> low (10%) <unk> severe <unk> Nvidia architecture continued to improve, ASIC value-for-money did not have sufficient advantages
+<unk> Broadcom has a significant price reduction for customers <unk> (20%) <unk> medium <unk> <unk> Broadcom has a big advantage in price warfare <unk>
+<unk> China’s geopolitical risks (25%) <unk> Medium <unk> SY2025 Chinese revenue accounts for 43%, tariff/sanctions impact uncertain <unk>
+<unk> Celestial AI integration failed <unk> low-medium (15%) <unk> medium $3.25 billion acquisition, FY 2028 income, technology route not verified <unk>
+<unk> AI foam bursting (20%) <unk> Death valuation based on 30% + growth expectations, estimated kill + performance double-click once growth slows
 
-### 历史类比
+# History analogy
 
-| 公司 | 相似点 | 结局 |
+The company, the company, the similarity, the end, the end.
 |------|--------|------|
-| **Xilinx（2015-2022）** | FPGA/ASIC设计，依赖大客户，被AMD收购 | 被收购（OK结局） |
-| **3Com（1990s）** | 网络设备领域的第二名，落后于Cisco | 衰落、被HP收购 |
-| **LSI Logic（2000s）** | 定制ASIC设计服务商，客户集中 | 增长停滞，被Avago（现Broadcom）收购 |
-| **Altera（2010-2015）** | FPGA设计，依赖Intel等大客户 | 被Intel收购 |
+**Xilinx(2015-2022)** FPGA/AsIC design, dependent on large clients, acquired by AMD, acquired (OK) <unk>
+**3Com(90s)** Second place in the field of network equipment, behind Cisco <unk> Decay, acquired by HP
+** LSI Logic (2000)** Customized ASIC design service provider, client concentration * Stagnated growth, acquired by Avago (now Broadcom)
+**Altera (2010-2015)** FPGA design, dependent on big clients like Intel, acquired by Intel
 
-**历史教训：** 在半导体领域，"第二名设计服务商"的长期独立存活率不高。要么被收购，要么被第一名持续拉开差距。Marvell需要证明自己能从"强势第二"成长为"并列第一"。
+** Historical lessons:** In semiconductor, the long-term independent survival of the second designer is low. Either acquired or consistently pulled the gap by the first. Marvell needs to prove that she can grow from "strength second" to "first" with "first."
 
-### 偏误自查
+# I'm wrong to check myself
 
-- **叙事偏差：** "AI改变世界→需要定制芯片→Marvell受益"叙事太完美、太线性。现实中技术路线充满不确定性
-- **锚定效应：** 股价从$58涨到$177，容易锚定在"还能涨"上。但从$177的起点看，上行空间已经远小于下行风险
-- **幸存者偏差：** 我们看到的是Marvell成功赢得AWS/微软合同的故事，看不到那些竞标失败、项目取消的情况
+- ** Narrative deviation:** "AI needs to customize the chips – Marvell benefits" narrative is too perfect and too linear. The technology course is full of uncertainty.
+- **Assort effect:** Stock prices increased from $58 to $177, which is easy to anchor on "and can do it." But from the start of $177, the upswing space is much less than downside risk.
+- ** Survivors' deviation:** We see the story of Marvell winning the AWS/MS contract, and we don't see the failure of the bid, the cancellation of the project.
 
-### 空方核心论点
+# The empty core argument
 
-1. **估值荒谬：** PS 18.9x，P/FCF 110x，forward PE 46.5x——即使按FY2028 $150亿收入计算，当前市值隐含的远期PS仍有10x+
-2. **客户集中度是定时炸弹：** 如果AWS一个合同不续约，收入可能下降20-30%
-3. **Broadcom的规模碾压：** Broadcom ASIC市占率60-70%，客户更多、IP更全、价格更灵活
-4. **GAAP持续亏损：** 连续5年GAAP净亏损，Non-GAAP美化掉了巨额收购摊销和股权激励
-5. **中国敞口：** FY2025中国收入43%，地缘政治风险被低估
+** Valuation is absurd:** PS 18.9x, P/FCF 110x, forward PE 46.5x - even if calculated at FY 2028.00 billion income, the current market value still implies 10x+ in the forward PS
+2. ** Client concentration is a time bomb:** if AWS does not renew a contract, revenue may fall by 20-30%
+3. **Broadcom mass crush:** Broadcom ASIC 60-70%, more customers, more IP, more flexible prices
+4. **GAAP continuing loss:** Net loss for GAAP for five years, and Noon-GAAP glorified the huge acquisition amortization and equity incentives
+5. **China Open:** SY2025 China has 43% income and geopolitical risks are underestimated
 
-### 芒格式追问
+# Man format questions
 
-> 我最可能在哪里犯错？聪明人为什么会不买/做空这家公司？
+Where would I most likely make a mistake? Why would a smart man not buy or do a job on this company?
 
-**最可能犯的错：** 把"AI长期趋势确定"等同于"Marvell短期确定性高"。AI趋势确定≠这家公司一定能持续赢得合同≠当前估值合理。三段逻辑之间都有巨大跳跃。
+** Most likely error: ** The "AI long-term trend" is equated with "Marvell short-term certainty". The AI trend is determined that the company will continue to win the current valuation of the contract. There is a huge leap in all three logics.
 
-**聪明人不买的理由：** 在$177的价格上，你需要相信Marvell能在3年内将收入从$82亿增长到$150亿，同时保持利润率扩张——任何一个环节出问题，都是30%+的下行空间。风险收益不对称。
+** Reason why smart people don't buy:** At $177, you need to believe that Marvell will increase his income from $8.2 billion to $15 billion in three years while maintaining a profit spread — a 30%-plus downside space for any link. Risk gains are asymmetric.
 
 ---
 
-## 第五步：管理层评估 — 段永平"对的人" + 巴菲特"管理层诚信"
+# Step five: Management assessment - "The Right Man" # "Management Integrity"
 
-### CEO Matt Murphy 关键决策复盘
+# CEO Matt Murphy Key Decision Recup
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2016年 | 加入Marvell，开启战略转型 | 从消费电子转向数据基础设施 | ★★★★★ |
-| 2017年 | $60亿收购Cavium | 获得DPU/安全处理器能力，整合成功 | ★★★★ |
-| 2019年 | 收购Avera + Aquantia | 强化ASIC和以太网，为后续增长铺路 | ★★★★ |
-| 2021年 | $100亿收购Inphi | 确立光互连领导地位，事后证明极其正确 | ★★★★★ |
-| 2021年 | $11亿收购Innovium | 进入数据中心交换芯片 | ★★★ |
-| 2025年 | 出售汽车以太网给Infineon | 聚焦核心，获得$25亿现金 | ★★★★ |
-| 2026年 | $32.5亿收购Celestial AI | 布局光子互连，尚待验证 | 待定 |
+<unk> Joining Marvell, starting the strategic transition from consumer electronics to data infrastructure <unk>
+2017: $6 billion to buy Cavium <unk> to acquire DPU/SafeTex, successfully integrated
+2019 Purchase of Avera + Aquania <unk> Strengthening of ASIC and Ether Networks to pave the way for subsequent growth
+2021, $10 billion to buy Inphi, establish the leadership of the light connection, and prove it to be absolutely correct.
+In 2021, $1.1 billion was purchased to exchange chips for data centres.
+♪ And the world's greatest ♪
+2026, $3.25 billion to buy Celestial AI, but still to be verified, photon connections are still to be confirmed.
 
-### 资本配置能力
+# Capital allocation capacity
 
-- **研发投入：** FY2025研发费用约$19亿，占收入33%——高于行业平均，但考虑到定制ASIC的高IP密集度，合理
-- **并购成功率：** 4/5的大型收购被市场认可为成功（Cavium、Inphi、Innovium、Avera），这是极少见的高成功率
-- **回购：** 2026年启动$50亿回购授权+$10亿加速回购，表明管理层对自身估值有信心
-- **股息：** 极少（~0.2%股息率），优先投入增长
+- **R & D input:** SY2025 R & D costs approximately $1.9 billion, or 33% of revenue - higher than industry average, but reasonable given the high IP intensity of customised ASIC
+- **M&A success rate: **4/5 large acquisitions were recognized as success by the market (Cavium, Inphi, Innovium, Avera), which is a rare high success rate
+- **Repurchase:** 5 billion repurchase authorization initiated in 2026 + 1 billion accelerated buybacks, indicating management ' s confidence in its own valuation
+- **Single:** Very small (~0.2%), priority input growth
 
-### 管理层持股与激励对齐
+# Management ownership aligned with incentives
 
-- Murphy直接持股约25.6万股（市值~$4,500万），占总薪酬的合理比例
-- 薪酬结构中96%为股权激励——与股东利益高度一致
-- 近期少量减持37,500股（$397万），比例微小，属正常变现
-- **但另一方面：** 管理层总持股比例很低（<0.1%），这是大型科技公司的通病
+- Murphy holds a direct share of about 256,000 shares (market value ~ $45 million), which represents a reasonable share of total remuneration
+- 96% of the remuneration structure is equity incentive - highly consistent with shareholder interests
+- Short recent savings of 37,500 shares ($3.97 million) in small proportions and normal liquidity
+- ** But on the other hand:** The low overall management share (<0.1%) is a disease in large technology companies
 
-### 组织能力
+# Organizational ability
 
-- 2025年7月提拔Chris Koopmans为总裁兼COO——明确的接班人培养
-- 设立独立的数据中心事业群总裁（Sandeep Bharathi）——组织结构与战略匹配
-- 关键人才风险：如果Murphy离职，市场可能给予10-15%的不确定性折价
+- July 2025, promotion of Chris Koopmans to president and COO - a clear successor.
+- Establishment of an independent data centre, executive director (Sandeep Bharathi) - organizational structure aligned with strategy
+- Critical talent risk: if Murphy leaves, the market may offer an uncertainty discount of 10-15%
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> 如果CEO退休，这家公司还能保持竞争力吗？
+> If CEO retires, can this company remain competitive?
 
-**可能可以：** Murphy已经建立了清晰的战略方向（聚焦数据中心）、接班人梯队（Koopmans）和客户关系网络。核心技术能力内嵌于组织。
+** Possible:** Murphy has established clear strategic directions (focus data centres), succession ladders (Kopmans) and customer relationship networks. Core technical capabilities embedded in the organization.
 
-**风险在于：** 半导体行业的CEO/CTO个人能力对技术方向判断至关重要。Murphy在收购方面的战略眼光（尤其是Inphi收购的时机把握）难以复制。下一代领导者是否能做出同等质量的战略决策，存在不确定性。
+** Risk is that:** CEO/CTOC personal capabilities in semiconductor industries are critical to technical direction judgement. Murphy’s strategic vision in the acquisition (especially in the case of Inphi) is difficult to replicate. There is uncertainty about whether the next generation of leaders can make strategic decisions of equal quality.
 
 ---
 
-## 第六步：行业与文明趋势 — 李录"文明演进框架"
+# Step 6: Industry and civilizational trends - Lee Siu ' s Framework for Civilization Evolution
 
-### 文明级范式转移判断
+# A paradigm shift of judgment
 
-AI确实是继互联网之后最重要的技术范式转移。数据中心算力需求的指数级增长，驱动了对定制芯片和高速互连的结构性需求。
+AI is indeed the most important technology paradigm shift after the Internet. The exponential growth in data centre computing needs drives the structural demand for custom chips and high-speed interconnections.
 
-**但需要区分：**
-- ✅ AI是文明级趋势 = 高确定性
-- ⚠️ 定制ASIC是AI的必要组件 = 中等确定性（通用GPU仍占主导）
-- ⚠️ Marvell是定制ASIC的长期赢家 = 较低确定性（竞争激烈、客户可换）
+** But a distinction needs to be made:**
+AI is a trend of civilization = high certainty.
+- <unk> Customisation of ASIC is essential for AI = medium certainty (general GPU still dominated)
+- <unk> Marvell is a long-term winner of custom-made ASIC = less certain (competitive, exchangeable)
 
-### 技术革命类比
+# Technology revolution analogy
 
-| 历史类比 | Marvell对应角色 | 结局 |
+History analogy. Marvell's counterpart.
 |----------|----------------|------|
-| 铁路时代的钢铁公司 | 提供"轨道"的管道工 | 少数幸存壮大，多数被淘汰 |
-| 互联网时代的思科 | 网络设备供应商 | 2000年泡沫后20年未回前高 |
-| 移动互联网的高通 | 提供核心芯片IP | 成功，但估值长期低于市场 |
-| 云计算的Intel | 服务器芯片供应商 | 初期受益巨大，后被AWS自研+AMD/Arm侵蚀 |
+The railroad-era steel company, the railroad-- the railroad-- the railroad-- the track-- the pipeman, the track-- the track-- the track-- the track-- the track-- the track-- the track-- the track-- the track--- the track-- the track-- the track-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the-- the--- the-- the-- the-- the-- the--- the--the----the----the----the----the----the----the----the---------the------the------the----the-----------------the--------the--------------------------------------------------------------------------------------------------------------------------------------------
+<unk> The Cisco of the Internet age, the network equipment provider, <unk> 20 years after the 2000 bubble, <unk>
+<unk> Mobile Internet high access <unk> Provide core chip IP <unk> Successfully but valuation is long below market <unk>
+<unk> Intel <unk> server chip provider for cloud computing <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-**关键教训：** "卖铲子"生意在技术浪潮初期表现极佳，但长期面临两个风险：(1) 客户自研；(2) 竞争者追赶。
+** Key lessons:** The "sale shovel" business performed well in the early stages of the technology wave, but faced two long-term risks: (1) self-research by clients; and (2) competition catch-up.
 
-### TAM与天花板
+# Tam with the ceiling
 
-| 市场 | 2025年 | 2028年预测 | CAGR |
+Market 2025 2028 Forecast 2028
 |------|--------|-----------|------|
-| 数据中心半导体 | ~$400亿 | $940亿 | ~35% |
-| 定制ASIC | ~$100亿 | $408亿 | ~47% |
-| 光学互连 | ~$50亿 | $150亿+ | ~30% |
+♪ We're gonna be in the middle of the day ♪
+♪ ASIC ♪ $10 billion ♪ $40.8 billion ♪ 47% ♪
+♪ The light is the only thing that's ever been ♪
 
-Marvell管理层目标：2028年数据中心市占率20%（从10%提升），对应收入~$190亿。这个目标非常激进。
+Marvell Management Target: 20% of data centre city in 2028 (up from 10%) corresponding income ~ $19 billion. This target is very radical.
 
-### 产业价值链位置
+# The location of the industrial value chain
 
 ```
-AI应用层（OpenAI/企业客户）
+AI application level (OpenAI/enterprise client)
     ↓
-云平台层（AWS/Google/微软）—— 决定用GPU还是ASIC
+Cloud Platform Layer (AWS/Google/Microsoft) - Decision on GPU or ASIC
     ↓
-芯片设计层 ← Marvell在这里（定制ASIC + 光互连）
+Chip design layer, <unk> Marvell is here.
     ↓
-芯片制造层（台积电）
+Chip manufacturing layer (top power)
 ```
 
-Marvell处于中间层——受制于上游云厂商的资本支出决策，依赖下游台积电的产能。两头受压，自主权有限。
+Marvell is in the middle - subject to capital spending decisions by upstream cloud producers, relying on the power-generation capacity of downstream platforms. Both are under pressure and have limited autonomy.
 
-### 李录式追问
+# Lee's asking questions
 
-> 站在20年后回看，这家公司是"这个时代的标准石油"还是"昙花一现的3Com"？
+♪ Stand back 20 years and see if this company is "standard oil of the time" or "trimmy com"?
 
-**最可能的结局：** 既非标准石油，也非3Com。更可能是**"这个时代的高通"**——在AI浪潮中获得实质性增长，成为重要但非主导的参与者，长期估值回归合理水平（20-30x PE）。
+** Most likely outcome:** Neither standard oil nor 3Com. ** More likely, ** "The high-tour of the era"** - substantial growth in the AI wave, leading to significant but undominated participants, returning to reasonable levels in the long-term valuation (20-30 x PE).
 
-**乐观情景（20%概率）：** 成为AI时代的Broadcom——通过持续并购和客户拓展，发展为$500亿+收入的数据基础设施巨头。
+** EXCHANGE 20% Probability:** Becomes Broadcom in the AI era - Develops $50 billion + income data infrastructure giants through continuous M&As and client outreach.
 
-**悲观情景（20%概率）：** 成为下一个被收购的LSI Logic——客户集中度导致议价能力丧失，增速放缓后被更大玩家收购。
+** Pessimism 20% Probability:** LSI Logic, the next acquired, has become a client concentration that results in loss of bargaining power and is bought by larger players after slowing up.
 
 ---
 
-## 第七步：估值与安全边际 — 巴菲特"内在价值" + 段永平"对的价格"
+# Step seven: valuation and security margin -- Barfitt "inner value" + price of "right"
 
-### 当前市场定价
+# Current market pricing
 
-| 指标 | Marvell | Broadcom | Nvidia | 行业平均 |
+Indicators: Marvell <unk> Broadcom <unk> Nvidia <unk> Average industry <unk>
 |------|---------|----------|--------|----------|
 | trailing PE | 57.6x | ~62x | ~41x | ~35x |
 | Forward PE | ~46.5x | — | ~28x | ~30x |
@@ -315,123 +315,123 @@ Marvell处于中间层——受制于上游云厂商的资本支出决策，依�
 | P/FCF | 110.6x | ~35x | ~45x | ~30x |
 | PEG | 1.12 | ~1.5 | ~0.9 | 1.0-1.5 |
 
-### 反向DCF：当前股价隐含什么预期？
+## Inverse DCF: What are the expectations of the current stock prices?
 
-以$176.89计算，假设终端PE 25x、折现率10%：
-- 隐含FY2029 EPS需达到~$7.0（当前$3.07的2.3倍）
-- 隐含收入需达到~$18B（当前$8.2B的2.2倍）
-- 隐含4年收入CAGR ~22%
+At $176.89, assume a terminal PE 25x with a discount rate of 10 per cent:
+- Implicitly FY2029 EPS to reach ~7.0 (2.3 times the current $3.07)
+- Ideal income is required to reach ~18B (2.2 times current $8.2B)
+- Implicit 4 years of CAGR ~ 22%
 
-**判断：** 市场定价隐含的增长预期（4年CAGR 22%）与管理层指引（FY2027 +30%，FY2028 +40-50%）基本一致。如果管理层兑现指引，当前价格大致合理；如果增速低于预期，下行空间显著。
+**Defence:** The underlying growth expectations for market pricing (22% in four years CAGR) are largely consistent with the management guidelines (FY2027+30%, FY2028+40-50%). If management meets the guidelines, the current prices are generally reasonable; if the increase is lower than expected, the downside space is significant.
 
-### 三情景估值（工具精确计算）
+#3 scenario valuation (tool precision)
 
-| 情景 | 3年EPS增速 | 目标PE | 3年目标价 | 涨跌幅 |
+♪ Three years of EPS acceleration ♪
 |------|-----------|--------|-----------|--------|
-| **乐观** | 40%/年 | 50x | $421 | +138% |
-| **中性** | 30%/年 | 40x | $270 | +53% |
-| **悲观** | 15%/年 | 30x | $140 | -21% |
+** EXPOINT** <unk> 40%/year <unk> 50x <unk> $421<unk> +138% <unk>
+<unk> Medium** 30%/year <unk> 40x <unk> 270 <unk> + 53% <unk>
+** Pessimism** 15%/year 30x <unk> 140 <unk> - 21% <unk>
 
-**概率加权期望值：** 假设乐观25%/中性50%/悲观25%
-- 期望目标价 = $421×0.25 + $270×0.50 + $140×0.25 = $275
-- 期望收益率 = +55%（3年），年化约16%
+** Probability weighted expectations:** Hypothetical 25/Mine 50/Pessim 25/
+- Expected target price = $421 x 0.25 + $270 x 0.50 + $140 x 0.25 = $275
+- Expected return = 55% (3 years), annualized approximately 16%
 
-### 历史估值对比
+# Compare historical valuations
 
-- Marvell过去3年Forward PE区间：25x-65x
-- 当前46.5x处于中等偏高位置
-- 2022年底低谷时Forward PE约25x（当时增速放缓+行业库存调整）
+- Marvell has been in the Forward PE area for the last three years: 25 x-65 x
+- The current 46.5 x is in mid-high.
+- Forward PE about 25x at the end of 2022, when the growth slowed + industry stock adjustment
 
-### 同行估值对比
+# # Peer valuation comparison
 
-Marvell的PEG（1.12）看起来比Broadcom便宜（~1.5），但：
-- Broadcom客户更分散、利润率更高、规模更大
-- Nvidia的PEG更低（~0.9），且市场地位更稳固
-- Marvell的"便宜"可能反映了市场对客户集中度风险的折价
+Marvell's PEG (1.12) seems cheaper than Broadcom (~1.5), but:
+- Broadcom's clients are more dispersed, more profitable and larger.
+- Nvidia PEG is lower (~0.9) and market position is stronger
+- Marvell's "favorite" might reflect the market's discount on the risk of concentration on customers.
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-> 如果股市明天关闭5年，你愿意以这个价格持有吗？
+> If the stock market closes for five years tomorrow, will you hold it at this price?
 
-**答案：偏向犹豫。** $177的价格要求一切顺利——AI资本支出持续增长、Marvell保持客户关系、Broadcom不打价格战、中国风险不爆发。任何一个假设不成立，5年后的回报可能令人失望。
+** Answer: Slightly hesitant.** Prices of $177 require everything to go smoothly — AI's continued growth in capital spending, Marvell's maintenance of customer relations, Broadcom's no price war, China's risk is not breaking out. Any hypothesis is not valid, and returns may be disappointing five years later.
 
-如果价格在$120-130（对应30-35x forward PE），安全边际更充分。
+The margin of security is more adequate if the price is $120-130 (equivalent to 30-35 x forward PE).
 
 ---
 
-## 第八步：综合决策备忘录
+# Step eight: a comprehensive decision-making memorandum
 
-### 汇总评估
+## Summary assessment
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| 生意质量（段永平） | 中上——定制ASIC有技术壁垒和客户锁定，但本质是"大客户外包设计"，议价能力有限 | ★★★ |
-| 护城河（巴菲特） | 中等偏强——转换成本和技术壁垒是核心，但规模不如Broadcom、客户可换 | ★★★ |
-| 管理层（段永平+巴菲特） | 优秀——Murphy的战略眼光和并购执行力属业内一流 | ★★★★ |
-| 最大风险（芒格） | 客户集中度+估值过高——任何增速低于预期的迹象都会导致暴跌 | ★★★★ |
-| 文明趋势（李录） | 顺势——AI数据中心是确定性趋势，Marvell位于价值链关键位置 | ★★★★ |
-| 估值（巴菲特+段永平） | 偏贵——当前价格已充分反映乐观预期，安全边际不足 | ★★ |
+<unk> Business quality (single)
+The main problem is the cost of switching and the technical barriers are not as big as Broadcom, and the customers can change.
+<unk> Management (Yongping + Buffett) <unk> Excellence — Murphy's strategic vision and M & A implementation power is the best in the industry <unk>
+The client concentration plus overvalued -- any sign of less than expected growth could cause a sharp drop.
+Civilization trends (Li Ji) Conservative - A.I. Data Center is a definite trend, and Marvell is at the key of the value chain
+<unk> Valuation (Buffett + Pingping) <unk> Precious <unk> Current prices fully reflect optimism, security margins are inadequate
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | 观望等待。当前$177估值已充分定价未来3年增长，风险收益比不佳。建议等待回调至$120-135区间（对应forward PE 30-35x）再考虑建仓 |
-| **持仓者** | 可继续持有但设止损。如果持仓成本远低于当前价格，享受趋势但保持警惕。FY2027Q1业绩（5月27日）是关键验证点 |
-| **卖出信号** | ① 任何大客户（AWS/微软）ASIC项目延迟或取消的消息 ② AI资本支出增速连续两季下滑 ③ Broadcom赢得Marvell现有客户的下一代合同 ④ 中美关系进一步恶化导致供应链受阻 |
-| **加仓信号** | ① 股价回调30%+至$120-135区间 ② FY2027收入增速超预期（>35%）③ 新增重量级ASIC客户（如Meta/字节跳动）④ Celestial AI技术提前验证成功 |
+** Empty warehouser** waits for. The current valuation of $177 has been fully priced to increase over the next three years, with a negative risk return. It is recommended to wait for the return to $120-135 (comparable to room PE 30-35x) before considering the warehouse construction
+<unk> ** Warehousing** may continue to be held but with a limit. If the cost of holding a warehouse is far below the current price, enjoy trends but remain vigilant. SY2027Q1 performance (27 May) is the key validation point
+**Sale signal** <unk> 1 Information on delay or cancellation of any large client ASIS project 2 AI capital expenditure growth has fallen two consecutive seasons 3 Broadcom winning the next generation of Marvell's current client 4 Central American relations have further deteriorated to block the supply chain <unk>
+**Step signal** <unk> 1 Stock return 30% + to $120-135 2 SY2027 revenue acceleration faster than expected (> 35%)3 Additional weight ASC clients (e.g. Meta/byte beat)4 Celestial AI technology successfully pre-validated
 
-### 四位大师模拟点评
+# Four masters simulated the reviews
 
-> **巴菲特：** "这是一家好公司，处在一个好行业。但好公司在错误的价格上也可以是一笔坏投资。在57倍市盈率的价格上买入，你需要很多事情都对了才能赚钱。我更愿意在30倍以下出手。"
+> **Buffett:** "This is a good company, in a good business. But a good company can be a bad investment in the wrong price. You need a lot of money to buy at 57 times the market surplus. I'd rather do it under 30 times."
 
-> **芒格：** "反过来想。当所有人都在兴奋地谈论AI芯片时，问问自己：如果AI资本支出明年下降30%会怎样？如果AWS决定像Google做TPU一样自研会怎样？在1547亿美元市值上，你赌的不是公司好不好，而是它是否好到超过市场所有人的预期。"
+> ** Mang:** "Closedly." When everyone was excited to talk about the AI chip, ask themselves: What would happen if AI's capital spending fell by 30% next year? What would happen if AWS decided to study itself like Google as TPU? On the market value of $154.7 billion, you're betting not on the company's good, but whether it's better than everyone in the market expects."
 
-> **段永平：** "公司是对的公司，CEO是对的人。Murphy的收购决策一个比一个准，这种判断力很稀缺。但价格不太对——我想在一个让我'怎么也亏不了多少'的价格上买入。$177不是那个价格。"
+> **Ping Yongping:** "The company is right, CEO is right. Murphy's decision to buy is one-off, and that's a rare judgement. But the price is not right -- I think it's not that price that makes me' and I'm not losing much."
 
-> **李录：** "AI是文明演进的确定趋势，Marvell站在了正确的一边。但历史告诉我们，技术范式转移中'卖铲子'的公司最终表现参差不齐——你需要区分谁是Cisco（2000年后20年没回前高），谁是台积电（持续创造价值）。Marvell目前更像前者的估值，期望后者的增长。"
+> **Lisu:** "AI is a definite trend in the evolution of civilization, and Marvell is on the right side. But history tells us that the company selling shovels in the technology paradigm shift is ultimately performing differently -- you need to distinguish between Cisco (not back in 20 years), and the power builder (continuous value creation). Marvell is now more like the valuation of the former, and expects the latter to grow."
 
 ---
 
-## AI分析置信度 vs 投资确定性
+# AI analyze confidence vs investment certainty
 
-| 维度 | AI分析置信度 | 投资确定性 | 说明 |
+<unk> dimension <unk> AI analysis of confidence <unk> Investment certainty <unk>
 |------|-------------|-----------|------|
-| 财务数据 | 高（多源验证） | — | 历史数据可靠 |
-| 行业趋势 | 高（共识明确） | 中等 | AI长期需求确定，短期波动不确定 |
-| 竞争格局 | 中等 | 中等 | 双寡头格局目前稳定，但5年后不确定 |
-| 客户关系持续性 | 低（缺乏一手信息） | 低 | 合同细节不公开，续约意愿需验证 |
-| 管理层能力 | 中等 | 较高 | 有明确的历史决策记录可评判 |
-| 估值合理性 | 高（工具验算） | 低 | 估值取决于未来增速假设，而非历史数据 |
+Financial data High (multi-source)
+<unk> Industry trends <unk> High (consensus clear) <unk> Medium <unk> Long-term needs determination by AI, short-term fluctuations <unk>
+The competition pattern is stable, but not certain after five years.
+The contract details are not publicly available and the wish for renewal needs to be verified.
+Management competencies, middle, high, clear history of decision-making.
+<unk> Rationale of valuation <unk> High (tools) <unk> Low <unk> Valuation depends on future acceleration assumptions rather than historical data <unk>
 
-**关键区分：** 本报告中数据准确度高（AI分析置信度高），但"Marvell能否持续保持30%+增速"这个核心投资判断的确定性仍然很低——这取决于客户关系、竞争动态、AI资本支出周期等难以预测的变量。
+** Key distinctions:** Data accuracy in the present report (AI analysis is highly trusted), but the certainty of the core investment judgement of "Marvell's ability to sustain 30% plus acceleration" remains low - depending on variables that are difficult to predict, such as customer relations, competitive dynamics, AI's capital expenditure cycle.
 
-**高确信结论：**
-- Marvell是数据中心ASIC领域的第二名，地位明确
-- 管理层执行力优秀，收购整合能力行业一流
-- 当前估值（57x PE / 18.9x PS）定价了非常乐观的增长预期
+** High-level Committee on the Elimination of Racial Discrimination
+- Marvell is second in the ASIIC field at the data centre.
+- Good executive executives, acquisition of the best in the integration industry
+- The current valuation (57 x PE/ 18.9x PS) has set very optimistic growth expectations
 
-**低确信结论（需一手验证）：**
-- AWS/微软下一代ASIC是否继续选择Marvell
-- 定制ASIC vs 通用GPU的长期经济性对比
-- Celestial AI光子互连技术的商业化时间表
-- 中国收入43%在地缘政治压力下的可持续性
-
----
-
-## 数据来源
-
-- Marvell Technology Investor Relations（季度/年度财报新闻稿）
-- StockAnalysis.com（财务数据、估值指标）
-- Futurum Group（Q3/Q4 FY2026分析）
-- Seeking Alpha（分析师文章、收入指引）
-- TipRanks/MarketBeat（分析师评级与目标价）
-- CNBC（Nvidia投资、Celestial AI收购）
-- Tom's Hardware（行业动态）
-- Counterpoint Research（ASIC市场预测）
-- Marvell官方博客与新闻稿（技术路线图）
+** Low-confirmed conclusion (to be verified):**
+- AWS/MSC next generation ASIC continues to choose Marvell
+- Customize ASIC vs General GPU Long-Term Economic Comparison
+- Timeline for commercialization of the Celestial AI photon interconnection technology
+- 43% of China ' s income is sustainable under geopolitical pressure
 
 ---
 
-*报告完成日期：2026年5月16日*  
-*下次更新触发点：FY2027 Q1业绩（2026年5月27日）*
+# Data source
+
+- Marvell Technology Investment Resources (quarterly/annual finance press release)
+- StockAnalysis.com (financial data, valuation indicators)
+- Futurum Group (Q3/Q4 SY2026 analysis)
+- Seeking Alpha (analyst articles, income guidelines)
+- TipRanks/MarketBeat (analyst rating and target price)
+- CNBC (Nvidia Investment, Celestial AI Acquisition)
+- Tom's Hardware.
+- Council Research (AsIC market forecast)
+- Official Marvell blog and press release (technical road map)
+
+---
+
+* Report completion date: 16 May 2026*
+:: Next update trigger: FY 2027 Q1 performance (27 May 2026)*

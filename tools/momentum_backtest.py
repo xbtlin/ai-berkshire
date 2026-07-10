@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-动量发现 + 价值验证 回测工具
-回测标的：NVDA / AMD / MU（AI芯片三巨头）
-时间范围：2022-01 ~ 2025-12
-核心问题：这个框架能否在AI浪潮早期捕捉到这些股票？
+\u52a8\u91cf\u53d1\u73b0 + \u4ef7\u503c\u9a8c\u8bc1 \u56de\u6d4b\u5de5\u5177
+\u56de\u6d4b\u6807\u7684：NVDA / AMD / MU（AI\u82af\u7247\u4e09\u5de8\u5934）
+\u65f6\u95f4\u8303\u56f4：2022-01 ~ 2025-12
+\u6838\u5fc3\u95ee\u9898：\u8fd9\u4e2a\u6846\u67b6\u80fd\u5426\u5728AI\u6d6a\u6f6e\u65e9\u671f\u6355\u6349\u5230\u8fd9\u4e9b\u80a1\u7968？
 """
 
 import json
@@ -13,11 +13,11 @@ from urllib.request import urlopen, Request
 from collections import OrderedDict
 
 # ============================================================
-# 第一部分：获取历史价格数据（Yahoo Finance Chart API）
+# \u7b2c\u4e00\u90e8\u5206：\u83b7\u53d6\u5386\u53f2\u4ef7\u683c\u6570\u636e（Yahoo Finance Chart API）
 # ============================================================
 
 def fetch_price_data(ticker, start_date="2021-06-01", end_date="2025-12-31"):
-    """通过Yahoo Finance API获取日线数据"""
+    """\u901a\u8fc7Yahoo Finance API\u83b7\u53d6\u65e5\u7ebf\u6570\u636e"""
     start_ts = int(datetime.strptime(start_date, "%Y-%m-%d").timestamp())
     end_ts = int(datetime.strptime(end_date, "%Y-%m-%d").timestamp())
     url = (
@@ -43,28 +43,28 @@ def fetch_price_data(ticker, start_date="2021-06-01", end_date="2025-12-31"):
                 rows.append({"date": dt, "open": o, "high": h, "low": l, "close": c, "volume": v})
         return rows
     except Exception as e:
-        print(f"  [WARN] 无法获取 {ticker} 价格数据: {e}")
+        print(f"  [WARN] \u65e0\u6cd5\u83b7\u53d6 {ticker} \u4ef7\u683c\u6570\u636e: {e}")
         return None
 
 
 # ============================================================
-# 第二部分：手工输入关键季度基本面数据
-# （API获取季度财务数据不可靠，核心数据手工录入更准确）
+# \u7b2c\u4e8c\u90e8\u5206：\u624b\u5de5\u8f93\u5165\u5173\u952e\u5b63\u5ea6\u57fa\u672c\u9762\u6570\u636e
+# （API\u83b7\u53d6\u5b63\u5ea6\u8d22\u52a1\u6570\u636e\u4e0d\u53ef\u9760，\u6838\u5fc3\u6570\u636e\u624b\u5de5\u5f55\u5165\u66f4\u51c6\u786e）
 # ============================================================
 
 FUNDAMENTALS = {
     "NVDA": {
-        "name": "英伟达",
+        "name": "\u82f1\u4f1f\u8fbe",
         "quarters": OrderedDict([
-            # (财报发布日, {营收亿美元, 营收同比增速, 毛利率, EPS, EPS超预期%})
+            # (\u8d22\u62a5\u53d1\u5e03\u65e5, {\u8425\u6536\u4ebf\u7f8e\u5143, \u8425\u6536\u540c\u6bd4\u589e\u901f, \u6bdb\u5229\u7387, EPS, EPS\u8d85\u9884\u671f%})
             # FY2023 = calendar 2022
             ("2022-05-25", {"rev": 82.9, "rev_yoy": 46.0, "gm": 65.5, "eps": 1.36, "eps_beat": 4.6, "label": "FY23Q1 (Apr22)"}),
             ("2022-08-24", {"rev": 67.0, "rev_yoy": -4.0, "gm": 43.5, "eps": 0.51, "eps_beat": -24.0, "label": "FY23Q2 (Jul22)"}),
             ("2022-11-16", {"rev": 59.3, "rev_yoy": -17.0, "gm": 53.6, "eps": 0.58, "eps_beat": 7.4, "label": "FY23Q3 (Oct22)"}),
             ("2023-02-22", {"rev": 60.5, "rev_yoy": -21.0, "gm": 63.3, "eps": 0.88, "eps_beat": 10.0, "label": "FY23Q4 (Jan23)"}),
-            # FY2024 = calendar 2023 — AI爆发
-            ("2023-05-24", {"rev": 71.9, "rev_yoy": -13.0, "gm": 64.6, "eps": 1.09, "eps_beat": 18.5, "label": "FY24Q1 (Apr23) ★ AI拐点"}),
-            ("2023-08-23", {"rev": 135.1, "rev_yoy": 101.0, "gm": 70.1, "eps": 2.70, "eps_beat": 29.0, "label": "FY24Q2 (Jul23) ★★ 爆发"}),
+            # FY2024 = calendar 2023 — AI\u7206\u53d1
+            ("2023-05-24", {"rev": 71.9, "rev_yoy": -13.0, "gm": 64.6, "eps": 1.09, "eps_beat": 18.5, "label": "FY24Q1 (Apr23) ★ AI\u62d0\u70b9"}),
+            ("2023-08-23", {"rev": 135.1, "rev_yoy": 101.0, "gm": 70.1, "eps": 2.70, "eps_beat": 29.0, "label": "FY24Q2 (Jul23) ★★ \u7206\u53d1"}),
             ("2023-11-21", {"rev": 181.2, "rev_yoy": 206.0, "gm": 74.0, "eps": 4.02, "eps_beat": 19.0, "label": "FY24Q3 (Oct23) ★★★"}),
             ("2024-02-21", {"rev": 221.0, "rev_yoy": 265.0, "gm": 76.0, "eps": 5.16, "eps_beat": 12.0, "label": "FY24Q4 (Jan24)"}),
             ("2024-05-22", {"rev": 260.4, "rev_yoy": 262.0, "gm": 78.4, "eps": 6.12, "eps_beat": 9.0, "label": "FY25Q1 (Apr24)"}),
@@ -81,22 +81,22 @@ FUNDAMENTALS = {
             ("2023-05-02", {"rev": 53.5, "rev_yoy": -9.0, "gm": 44.0, "eps": 0.60, "eps_beat": 7.1, "label": "Q1 2023"}),
             ("2023-08-01", {"rev": 54.0, "rev_yoy": -18.0, "gm": 46.0, "eps": 0.58, "eps_beat": 1.8, "label": "Q2 2023"}),
             ("2023-10-31", {"rev": 58.0, "rev_yoy": 4.0, "gm": 47.0, "eps": 0.70, "eps_beat": 6.1, "label": "Q3 2023"}),
-            ("2024-01-30", {"rev": 61.7, "rev_yoy": 10.0, "gm": 47.0, "eps": 0.77, "eps_beat": 3.7, "label": "Q4 2023 ★ MI300发布"}),
+            ("2024-01-30", {"rev": 61.7, "rev_yoy": 10.0, "gm": 47.0, "eps": 0.77, "eps_beat": 3.7, "label": "Q4 2023 ★ MI300\u53d1\u5e03"}),
             ("2024-04-30", {"rev": 54.7, "rev_yoy": 2.0, "gm": 47.0, "eps": 0.62, "eps_beat": 3.3, "label": "Q1 2024"}),
             ("2024-07-30", {"rev": 58.3, "rev_yoy": 9.0, "gm": 49.0, "eps": 0.69, "eps_beat": 1.5, "label": "Q2 2024"}),
-            ("2024-10-29", {"rev": 68.2, "rev_yoy": 18.0, "gm": 50.0, "eps": 0.92, "eps_beat": 4.5, "label": "Q3 2024 ★ AI加速"}),
+            ("2024-10-29", {"rev": 68.2, "rev_yoy": 18.0, "gm": 50.0, "eps": 0.92, "eps_beat": 4.5, "label": "Q3 2024 ★ AI\u52a0\u901f"}),
         ]),
     },
     "MU": {
-        "name": "美光科技",
+        "name": "\u7f8e\u5149\u79d1\u6280",
         "quarters": OrderedDict([
             ("2022-06-30", {"rev": 86.4, "rev_yoy": 16.0, "gm": 47.0, "eps": 2.59, "eps_beat": 4.0, "label": "FY22Q3 (May22)"}),
             ("2022-09-29", {"rev": 66.4, "rev_yoy": -20.0, "gm": 40.0, "eps": 1.45, "eps_beat": -5.0, "label": "FY22Q4 (Aug22)"}),
             ("2022-12-21", {"rev": 40.9, "rev_yoy": -47.0, "gm": 22.0, "eps": -0.04, "eps_beat": 22.0, "label": "FY23Q1 (Nov22)"}),
             ("2023-03-28", {"rev": 36.9, "rev_yoy": -53.0, "gm": 11.0, "eps": -1.91, "eps_beat": 5.0, "label": "FY23Q2 (Feb23)"}),
             ("2023-06-28", {"rev": 37.5, "rev_yoy": -57.0, "gm": -8.0, "eps": -1.43, "eps_beat": 15.0, "label": "FY23Q3 (May23)"}),
-            ("2023-09-27", {"rev": 40.1, "rev_yoy": -40.0, "gm": -1.0, "eps": -1.07, "eps_beat": 18.0, "label": "FY23Q4 (Aug23) ★ HBM拐点"}),
-            ("2023-12-20", {"rev": 47.3, "rev_yoy": 16.0, "gm": 20.0, "eps": -0.95, "eps_beat": 68.0, "label": "FY24Q1 (Nov23) ★★ 反转"}),
+            ("2023-09-27", {"rev": 40.1, "rev_yoy": -40.0, "gm": -1.0, "eps": -1.07, "eps_beat": 18.0, "label": "FY23Q4 (Aug23) ★ HBM\u62d0\u70b9"}),
+            ("2023-12-20", {"rev": 47.3, "rev_yoy": 16.0, "gm": 20.0, "eps": -0.95, "eps_beat": 68.0, "label": "FY24Q1 (Nov23) ★★ \u53cd\u8f6c"}),
             ("2024-03-20", {"rev": 58.2, "rev_yoy": 58.0, "gm": 28.0, "eps": 0.42, "eps_beat": 82.0, "label": "FY24Q2 (Feb24) ★★★"}),
             ("2024-06-26", {"rev": 68.1, "rev_yoy": 82.0, "gm": 35.4, "eps": 0.62, "eps_beat": 6.9, "label": "FY24Q3 (May24)"}),
             ("2024-09-25", {"rev": 77.5, "rev_yoy": 93.0, "gm": 36.5, "eps": 1.18, "eps_beat": 5.4, "label": "FY24Q4 (Aug24)"}),
@@ -106,31 +106,31 @@ FUNDAMENTALS = {
 
 
 # ============================================================
-# 第三部分：动量发现引擎（第一层筛选）
+# \u7b2c\u4e09\u90e8\u5206：\u52a8\u91cf\u53d1\u73b0\u5f15\u64ce（\u7b2c\u4e00\u5c42\u7b5b\u9009）
 # ============================================================
 
 def compute_momentum_signals(prices):
-    """计算动量信号"""
+    """\u8ba1\u7b97\u52a8\u91cf\u4fe1\u53f7"""
     signals = []
     for i in range(60, len(prices)):
         row = prices[i]
         date = row["date"]
         close = row["close"]
 
-        # 60日新高
+        # 60\u65e5\u65b0\u9ad8
         past_60_highs = [prices[j]["high"] for j in range(i - 60, i)]
         is_60d_high = close > max(past_60_highs)
 
-        # 放量确认：近5日均量 > 20日均量的2倍
+        # \u653e\u91cf\u786e\u8ba4：\u8fd15\u65e5\u5747\u91cf > 20\u65e5\u5747\u91cf\u76842\u500d
         vol_5 = sum(prices[j]["volume"] for j in range(i - 4, i + 1)) / 5
         vol_20 = sum(prices[j]["volume"] for j in range(i - 19, i + 1)) / 20
-        is_volume_surge = vol_5 > vol_20 * 1.8  # 放宽到1.8倍
+        is_volume_surge = vol_5 > vol_20 * 1.8  # \u653e\u5bbd\u52301.8\u500d
 
-        # 30日涨幅
+        # 30\u65e5\u6da8\u5e45
         close_30d_ago = prices[i - 30]["close"]
         pct_30d = (close - close_30d_ago) / close_30d_ago * 100
 
-        # 综合判断
+        # \u7efc\u5408\u5224\u65ad
         momentum_triggered = is_60d_high and is_volume_surge
 
         if momentum_triggered:
@@ -146,11 +146,11 @@ def compute_momentum_signals(prices):
 
 
 # ============================================================
-# 第四部分：价值验证引擎（第二层筛选）
+# \u7b2c\u56db\u90e8\u5206：\u4ef7\u503c\u9a8c\u8bc1\u5f15\u64ce（\u7b2c\u4e8c\u5c42\u7b5b\u9009）
 # ============================================================
 
 def find_latest_fundamental(ticker, signal_date):
-    """找到信号日期之前最近的一个季度财报"""
+    """\u627e\u5230\u4fe1\u53f7\u65e5\u671f\u4e4b\u524d\u6700\u8fd1\u7684\u4e00\u4e2a\u5b63\u5ea6\u8d22\u62a5"""
     quarters = FUNDAMENTALS[ticker]["quarters"]
     latest = None
     latest_date = None
@@ -162,70 +162,70 @@ def find_latest_fundamental(ticker, signal_date):
 
 
 def verify_value(ticker, fund_data, prev_fund_data=None):
-    """5维价值验证"""
+    """5\u7ef4\u4ef7\u503c\u9a8c\u8bc1"""
     if not fund_data:
-        return {"score": 0, "details": "无基本面数据"}
+        return {"score": 0, "details": "\u65e0\u57fa\u672c\u9762\u6570\u636e"}
 
     checks = {}
 
-    # 1. 营收加速（营收同比增速是否在改善）
+    # 1. \u8425\u6536\u52a0\u901f（\u8425\u6536\u540c\u6bd4\u589e\u901f\u662f\u5426\u5728\u6539\u5584）
     rev_yoy = fund_data.get("rev_yoy", 0)
     if prev_fund_data:
         prev_rev_yoy = prev_fund_data.get("rev_yoy", 0)
         rev_accelerating = rev_yoy > prev_rev_yoy
     else:
         rev_accelerating = rev_yoy > 20
-    checks["营收加速"] = rev_accelerating
+    checks["\u8425\u6536\u52a0\u901f"] = rev_accelerating
 
-    # 2. 毛利率方向（>45%且不萎缩）
+    # 2. \u6bdb\u5229\u7387\u65b9\u5411（>45%\u4e14\u4e0d\u840e\u7f29）
     gm = fund_data.get("gm", 0)
     if prev_fund_data:
         prev_gm = prev_fund_data.get("gm", 0)
         gm_expanding = gm > prev_gm or gm > 50
     else:
         gm_expanding = gm > 45
-    checks["毛利率扩张"] = gm_expanding
+    checks["\u6bdb\u5229\u7387\u6269\u5f20"] = gm_expanding
 
-    # 3. EPS超预期（>10%为强信号）
+    # 3. EPS\u8d85\u9884\u671f（>10%\u4e3a\u5f3a\u4fe1\u53f7）
     eps_beat = fund_data.get("eps_beat", 0)
-    checks["盈利惊喜"] = eps_beat > 10
+    checks["\u76c8\u5229\u60ca\u559c"] = eps_beat > 10
 
-    # 4. 营收增速本身（>15%）
-    checks["营收高增长"] = rev_yoy > 15
+    # 4. \u8425\u6536\u589e\u901f\u672c\u8eab（>15%）
+    checks["\u8425\u6536\u9ad8\u589e\u957f"] = rev_yoy > 15
 
-    # 5. 毛利率绝对值（>40%，芯片行业标准）
-    checks["毛利率健康"] = gm > 40
+    # 5. \u6bdb\u5229\u7387\u7edd\u5bf9\u503c（>40%，\u82af\u7247\u884c\u4e1a\u6807\u51c6）
+    checks["\u6bdb\u5229\u7387\u5065\u5eb7"] = gm > 40
 
     score = sum(1 for v in checks.values() if v)
     return {"score": score, "max": 5, "details": checks, "fund": fund_data}
 
 
 # ============================================================
-# 第五部分：回测主逻辑
+# \u7b2c\u4e94\u90e8\u5206：\u56de\u6d4b\u4e3b\u903b\u8f91
 # ============================================================
 
 def backtest_ticker(ticker):
-    """对单个标的进行完整回测"""
+    """\u5bf9\u5355\u4e2a\u6807\u7684\u8fdb\u884c\u5b8c\u6574\u56de\u6d4b"""
     print(f"\n{'='*70}")
-    print(f"  回测标的：{FUNDAMENTALS[ticker]['name']} ({ticker})")
+    print(f"  \u56de\u6d4b\u6807\u7684：{FUNDAMENTALS[ticker]['name']} ({ticker})")
     print(f"{'='*70}")
 
-    # 获取价格数据
-    print(f"\n  [1/3] 获取历史价格数据...")
+    # \u83b7\u53d6\u4ef7\u683c\u6570\u636e
+    print(f"\n  [1/3] \u83b7\u53d6\u5386\u53f2\u4ef7\u683c\u6570\u636e...")
     prices = fetch_price_data(ticker, "2021-06-01", "2025-06-30")
     if not prices:
-        print("  ❌ 无法获取价格数据，跳过")
+        print("  ❌ \u65e0\u6cd5\u83b7\u53d6\u4ef7\u683c\u6570\u636e，\u8df3\u8fc7")
         return None
 
-    print(f"  获取到 {len(prices)} 个交易日数据 ({prices[0]['date']} ~ {prices[-1]['date']})")
+    print(f"  \u83b7\u53d6\u5230 {len(prices)} \u4e2a\u4ea4\u6613\u65e5\u6570\u636e ({prices[0]['date']} ~ {prices[-1]['date']})")
 
-    # 计算动量信号
-    print(f"\n  [2/3] 扫描动量信号...")
+    # \u8ba1\u7b97\u52a8\u91cf\u4fe1\u53f7
+    print(f"\n  [2/3] \u626b\u63cf\u52a8\u91cf\u4fe1\u53f7...")
     momentum_signals = compute_momentum_signals(prices)
-    print(f"  发现 {len(momentum_signals)} 个动量触发点")
+    print(f"  \u53d1\u73b0 {len(momentum_signals)} \u4e2a\u52a8\u91cf\u89e6\u53d1\u70b9")
 
-    # 价值验证
-    print(f"\n  [3/3] 对动量信号进行价值验证...")
+    # \u4ef7\u503c\u9a8c\u8bc1
+    print(f"\n  [3/3] \u5bf9\u52a8\u91cf\u4fe1\u53f7\u8fdb\u884c\u4ef7\u503c\u9a8c\u8bc1...")
 
     buy_signals = []
     seen_months = set()
@@ -233,15 +233,15 @@ def backtest_ticker(ticker):
     for sig in momentum_signals:
         month_key = sig["date"][:7]
         if month_key in seen_months:
-            continue  # 同月只取第一个信号
+            continue  # \u540c\u6708\u53ea\u53d6\u7b2c\u4e00\u4e2a\u4fe1\u53f7
         seen_months.add(month_key)
 
-        # 找基本面数据
+        # \u627e\u57fa\u672c\u9762\u6570\u636e
         q_date, fund = find_latest_fundamental(ticker, sig["date"])
         if not fund:
             continue
 
-        # 找前一季度数据做对比
+        # \u627e\u524d\u4e00\u5b63\u5ea6\u6570\u636e\u505a\u5bf9\u6bd4
         quarters_list = list(FUNDAMENTALS[ticker]["quarters"].items())
         prev_fund = None
         for idx, (qd, qf) in enumerate(quarters_list):
@@ -266,16 +266,16 @@ def backtest_ticker(ticker):
             "eps_beat": fund.get("eps_beat", "N/A"),
         }
 
-        # 买入信号：价值验证>=3/5
+        # \u4e70\u5165\u4fe1\u53f7：\u4ef7\u503c\u9a8c\u8bc1>=3/5
         if verification["score"] >= 3:
-            result["action"] = "✅ 买入信号"
+            result["action"] = "✅ \u4e70\u5165\u4fe1\u53f7"
             buy_signals.append(result)
         else:
-            result["action"] = "❌ 不通过"
+            result["action"] = "❌ \u4e0d\u901a\u8fc7"
 
-    # 输出结果
+    # \u8f93\u51fa\u7ed3\u679c
     print(f"\n  {'—'*60}")
-    print(f"  动量发现 + 价值验证结果：")
+    print(f"  \u52a8\u91cf\u53d1\u73b0 + \u4ef7\u503c\u9a8c\u8bc1\u7ed3\u679c：")
     print(f"  {'—'*60}")
 
     all_signals_with_action = []
@@ -288,26 +288,26 @@ def backtest_ticker(ticker):
                 found = True
                 break
 
-    # 只展示关键时间窗口的信号
+    # \u53ea\u5c55\u793a\u5173\u952e\u65f6\u95f4\u7a97\u53e3\u7684\u4fe1\u53f7
     first_buy = None
     for bs in buy_signals:
         if bs["date"] >= "2022-06-01":
             if not first_buy:
                 first_buy = bs
-            print(f"\n  📅 {bs['date']} | 收盘价 ${bs['close']}")
-            print(f"     动量：30日涨幅 {bs['pct_30d']}% | 放量倍数 {bs['vol_ratio']}x")
-            print(f"     基本面（{bs['fund_label']}）：")
-            print(f"       营收同比 {bs['rev_yoy']}% | 毛利率 {bs['gm']}% | EPS超预期 {bs['eps_beat']}%")
-            print(f"     价值验证：{bs['value_score']}/{bs['value_max']} ", end="")
+            print(f"\n  📅 {bs['date']} | \u6536\u76d8\u4ef7 ${bs['close']}")
+            print(f"     \u52a8\u91cf：30\u65e5\u6da8\u5e45 {bs['pct_30d']}% | \u653e\u91cf\u500d\u6570 {bs['vol_ratio']}x")
+            print(f"     \u57fa\u672c\u9762（{bs['fund_label']}）：")
+            print(f"       \u8425\u6536\u540c\u6bd4 {bs['rev_yoy']}% | \u6bdb\u5229\u7387 {bs['gm']}% | EPS\u8d85\u9884\u671f {bs['eps_beat']}%")
+            print(f"     \u4ef7\u503c\u9a8c\u8bc1：{bs['value_score']}/{bs['value_max']} ", end="")
             for k, v in bs["details"].items():
                 print(f"{'✅' if v else '❌'}{k} ", end="")
-            print(f"\n     判断：{bs['action']}")
+            print(f"\n     \u5224\u65ad：{bs['action']}")
 
-    # 计算假设收益
+    # \u8ba1\u7b97\u5047\u8bbe\u6536\u76ca
     if first_buy and prices:
         buy_price = first_buy["close"]
         buy_date = first_buy["date"]
-        # 找1年后和2年后的价格
+        # \u627e1\u5e74\u540e\u548c2\u5e74\u540e\u7684\u4ef7\u683c
         for p in prices:
             if p["date"] >= buy_date:
                 final_price = p["close"]
@@ -315,23 +315,23 @@ def backtest_ticker(ticker):
         total_return = (final_price - buy_price) / buy_price * 100
 
         print(f"\n  {'='*60}")
-        print(f"  📊 假设在首次买入信号执行：")
-        print(f"     买入日：{buy_date} @ ${buy_price}")
-        print(f"     最终日：{final_date} @ ${round(final_price, 2)}")
-        print(f"     总回报：{round(total_return, 1)}%")
+        print(f"  📊 \u5047\u8bbe\u5728\u9996\u6b21\u4e70\u5165\u4fe1\u53f7\u6267\u884c：")
+        print(f"     \u4e70\u5165\u65e5：{buy_date} @ ${buy_price}")
+        print(f"     \u6700\u7ec8\u65e5：{final_date} @ ${round(final_price, 2)}")
+        print(f"     \u603b\u56de\u62a5：{round(total_return, 1)}%")
         print(f"  {'='*60}")
 
     return {"ticker": ticker, "buy_signals": buy_signals, "first_buy": first_buy}
 
 
 # ============================================================
-# 主程序
+# \u4e3b\u7a0b\u5e8f
 # ============================================================
 
 if __name__ == "__main__":
     print("=" * 70)
-    print("  动量发现 + 价值验证 回测系统")
-    print("  标的：NVDA / AMD / MU | 时间：2022-2025")
+    print("  \u52a8\u91cf\u53d1\u73b0 + \u4ef7\u503c\u9a8c\u8bc1 \u56de\u6d4b\u7cfb\u7edf")
+    print("  \u6807\u7684：NVDA / AMD / MU | \u65f6\u95f4：2022-2025")
     print("=" * 70)
 
     results = {}
@@ -340,21 +340,21 @@ if __name__ == "__main__":
         if result:
             results[ticker] = result
 
-    # 总结
+    # \u603b\u7ed3
     print(f"\n\n{'='*70}")
-    print(f"  📋 回测总结")
+    print(f"  📋 \u56de\u6d4b\u603b\u7ed3")
     print(f"{'='*70}")
-    print(f"\n  {'标的':<8} {'首次买入信号':<16} {'买入价':<12} {'触发基本面'}")
+    print(f"\n  {'\u6807\u7684':<8} {'\u9996\u6b21\u4e70\u5165\u4fe1\u53f7':<16} {'\u4e70\u5165\u4ef7':<12} {'\u89e6\u53d1\u57fa\u672c\u9762'}")
     print(f"  {'—'*65}")
     for ticker, r in results.items():
         if r["first_buy"]:
             fb = r["first_buy"]
             print(f"  {ticker:<8} {fb['date']:<16} ${fb['close']:<10} {fb['fund_label']}")
         else:
-            print(f"  {ticker:<8} {'无买入信号':<16}")
+            print(f"  {ticker:<8} {'\u65e0\u4e70\u5165\u4fe1\u53f7':<16}")
 
-    print(f"\n  关键问题回答：")
+    print(f"\n  \u5173\u952e\u95ee\u9898\u56de\u7b54：")
     print(f"  ┌─────────────────────────────────────────────────────────────┐")
-    print(f"  │ 这个框架能否在AI浪潮早期捕捉到NVDA/AMD/MU？              │")
-    print(f"  │ 答案见上方详细分析。                                       │")
+    print(f"  │ \u8fd9\u4e2a\u6846\u67b6\u80fd\u5426\u5728AI\u6d6a\u6f6e\u65e9\u671f\u6355\u6349\u5230NVDA/AMD/MU？              │")
+    print(f"  │ \u7b54\u6848\u89c1\u4e0a\u65b9\u8be6\u7ec6\u5206\u6790。                                       │")
     print(f"  └─────────────────────────────────────────────────────────────┘")

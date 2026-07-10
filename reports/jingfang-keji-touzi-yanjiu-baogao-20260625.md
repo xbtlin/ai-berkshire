@@ -1,45 +1,45 @@
-# 晶方科技（603005.SH）投资研究报告
+# Investment studies on crystallized technology (60305.SH)
 
-**报告日期**：2026年6月25日
-**分析框架**：巴菲特-芒格-段永平-李录 四维综合分析
-
----
-
-## AI研究偏见自觉
-
-**信息丰富度评级：B级（信息适中）**
-
-晶方科技上市12年，但券商覆盖极少（过去90天仅2家），属于半导体封测领域的"小而美"公司，市场关注度集中在主题炒作期（先进封装、AI概念），缺乏持续深度覆盖。公开财务数据完整，但分业务详细数据（如车载/消费占比、分客户毛利率）需从年报PDF中推算。
-
-**主要偏见风险**：
-- 近期股价翻倍上涨（25→50元），AI搜索结果可能被"涨后找理由"的分析污染
-- 先进封装/AI概念叙事强烈，需警惕将"行业趋势"等同于"公司确定性增长"
-- 细分领域"全球第一"的描述需审视——全球CIS封装市场约80-100亿美元，"第一"的绝对规模有限
-
-**偏见自查**：
-- [x] 确定性感受主要来自技术壁垒（毛利率47%是行业3倍）和车载CIS结构性增长，而非资料数量
-- [x] AI输出与近期券商研报高度雷同（车载CIS+CPO+AI眼镜叙事），信息优势有限
-- [x] 估值分析需独立验算，不能依赖概念叙事
+** Date of report**: 25 June 2026
+** Analysis framework**: Buffett-Mung-Dhong-Jongping-Li-Shing 4D comprehensive analysis
 
 ---
 
-## 第一步：关键数据总览
+# AI studies prejudices
 
-### 基本信息
+** Information abundance rating: B (median)**
 
-| 项目 | 数据 |
+Crystal technology has been on the market for 12 years, but the voucher dealers have had very little coverage (only 2 in the last 90 days), are small and American companies in semiconductor sealing, and market attention is concentrated on the subject-false (advanced envelopes, AI concepts) and lacks continuous depth coverage. Financial data are available in a complete manner, but detailed sub-business data (e.g., vehicle/consumption ratios, customer Māori ratios) are extrapolated from the annual report.
+
+** Main prejudice risk**:
+- The recent stock price doubling (25 £50), the AI search results could be contaminated by "Step Up and Find Reason" analysis
+- Advanced seal/AI concept narratives are strong and alert to the "industry trends" being equated with "firm certainty growth"
+- The description of the area of breakdown "Global First" needs to be examined -- the global CIS envelope market is about $8-10 billion, and the "First" is limited in absolute size.
+
+** Prejudice self-examination**:
+- [x] The certainty is mainly derived from technical barriers (47% of the Māori rate is three times higher than the industry) and structural growth in vehicle-borne CIS, rather than from the amount of information available
+- [x] AI output is highly similar to recent voucher research (car-borne CIS+CPO+AI glasses) and information has limited advantages
+- [x] Valuation analysis is independent and cannot be relied on for conceptual narratives
+
+---
+
+# Step 1: a summary of key data
+
+Basic information
+
+Project Data
 |------|------|
-| 公司全称 | 苏州晶方半导体科技股份有限公司 |
-| 上市时间 | 2014年（上交所） |
-| 总股本 | 6.52亿股（全流通）|
-| 最新股价 | 49.60元（2026年6月25日）|
-| 总市值 | **323亿元** |
-| 52周区间 | 17.07 - 51.48元 |
-| 实际控制人 | **无**（第一大股东中新创投持股15.77%）|
+<unk> Company full name <unk> Suzhou Crystal Semiconductor Technology Company Ltd. <unk>
+<unk> Listed time <unk> 2014 (surpository) <unk>
+Total equity 652 million shares (full circulation)
+<unk> Latest stock price 49.60.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.
+Total market value ** 32.3 billion**
+<unk> 52 weeks <unk> 17.07 - 51.48 dollars <unk>
+<unk> Actual controller <unk> None ** (15.77% of the first major shareholder) <unk>
 
-### 5年财务趋势
+# # 5 years financial trend
 
-| 年度 | 营收（亿元） | 同比 | 归母净利（亿元） | 同比 | 毛利率 | 净利率 | ROE |
+The annual income (millions of yuan) is equal to the net return to the mother (millions of yuan) and the gross rate of gross domestic product (Māori) is equal to the net interest rate of the ROE (millions of dollars) and the net interest rate of the ROE (millions of dollars) is equal to the net profit to the mother (millions) and the net interest rate of the mother (millions of dollars) is equal to the net profit to the sum of the gross gross domestic product (millions of dollars) and the net interest rate of the gross domestic product ($) is equal to the net interest rate of the gross domestic product ($) and the net interest rate of the gross domestic product ($) is equal to the amount of the gross domestic product ($) and the net interest rate of the gross domestic product ($) is equal to the sum of the gross domestic product ($) and the net income ($) is equal to the sum of the gross domestic income ($) and the net income ($) is equal to the amount of the gross income ($) is equal to the amount of the amount of the income ($) and the income ($) is equal to the income ($) is equal to the amount of the amount of the income ($) is equal to the amount of the income ($) is equal for the amount of the amount of the amount of the amount of the amount of the amount of the amount of the amount of the amount of the amount of the amount of the amount of the income ($ per per year ($ per year ($)
 |------|------------|------|----------------|------|--------|--------|-----|
 | 2020 | 11.04 | +97% | 3.82 | +254% | 49.7% | 34.6% | 14.3% |
 | 2021 | 14.11 | +28% | 5.76 | +51% | 52.3% | 41.0% | 15.8% |
@@ -48,413 +48,413 @@
 | 2024 | 11.30 | +24% | 2.53 | +68% | 43.3% | 22.4% | 6.1% |
 | 2025 | 14.74 | +30% | 3.70 | +46% | 47.1% | 25.1% | 8.3% |
 
-### 2025年收入结构
+# # income structure in 2025
 
-| 业务板块 | 收入（亿元） | 占比 | 同比 | 毛利率 |
+Business plate income (billions of dollars)
 |---------|------------|------|------|--------|
-| 芯片封装及测试 | 11.35 | 77% | +39% | 49.9% |
-| 光学器件（Anteryon） | 3.24 | 22% | +11% | ~37% |
-| 设计业务 | 0.11 | 1% | -40% | ~68% |
-| **合计** | **14.74** | **100%** | **+30%** | **47.1%** |
+<unk> Chip encapsulation and testing <unk> 11.35 <unk> 77% <unk> 39% <unk> 49.9% <unk>
+<unk> Anteryon <unk> 3.24 <unk> 22% <unk> 11% ~ 37% <unk>
+<unk> Design business 0.11 <unk> 1 <unk> 1 <unk> 40 <unk> 68 <unk>
+** Total** ** 14.74** ** 100%** ** ** 30%** ** 47.1%** **
 
-| 地区 | 收入（亿元） | 占比 |
+Income (millions of yuan)
 |------|------------|------|
-| 外销 | 9.94 | 67.5% |
-| 内销 | 4.76 | 32.5% |
+<unk> Sales 9.94 <unk> 67.5% <unk>
+<unk> 4.76 <unk> 32.5% <unk>
 
-### 2026年Q1（最新）
+# 2026 Q1 (latest)
 
-| 指标 | 数据 | 同比 |
+Indicators Data
 |------|------|------|
-| 营收 | 3.34亿元 | +14.9% |
-| 归母净利 | 0.65亿元 | +0.1% |
-| 扣非净利 | 0.61亿元 | +11.6% |
-| 毛利率 | 47.4% | +11.9个百分点 |
+<unk> 334 million yuan + 14.9% <unk>
+<unk> net profit to mother <unk> <unk> <unk> <unk> 0.1% <unk>
+<unk> net profit <unk> <unk> <unk> <unk> + 11.6% <unk>
+<unk> Māori rate 47.4% <unk> + 11.9 percentage points <unk>
 
-### 资产负债表要点（2025年末）
+# # Balance sheet highlights (end 2025)
 
-| 项目 | 金额 |
+Project
 |------|------|
-| 货币资金 | 18.02亿元 |
-| 交易性金融资产 | 7.50亿元 |
-| 现金类资产合计 | ~25.5亿元 |
-| 总资产 | 51.73亿元 |
-| 短期借款 | 1.41亿元 |
-| 总负债 | ~5.3亿元 |
-| 净资产 | 46.43亿元 |
-| 商誉 | 2.83亿元 |
-| 资产负债率 | **10.2%** |
-| 净现金 | **~17亿元** |
+<unk> Monetary funds <unk> 1,802 million yuan <unk>
+<unk> Transactional financial assets <unk> 750 million <unk>
+Total cash-type assets
+Total assets
+Short-term borrowing <unk> $141 million <unk>
+Total liabilities ~ 530 million yuan
+Net assets
+I'm not sure what I'm talking about.
+<unk> Asset and liability ratio ** 10.2%**
+♪ Net cash ♪ ♪ ♪ 1.7 billion ♪ ♪ ♪ ♪
 
-### 当前估值（工具验算）
+## Current valuation (tools validation)
 
-| 指标 | 数值 |
+<unk> Indicators <unk> Value <unk>
 |------|------|
 | PE（TTM） | **87.0x** |
 | PB | **7.0x** |
 | PS（TTM） | 21.9x |
 | EV/EBITDA | 56.5x |
-| 盈利收益率 | 1.15% |
-| FCF Yield | **-0.46%**（负自由现金流）|
-| 股息率 | 0.24% |
+<unk> Profit rate <unk> 1.15% <unk>
+FCF Yield <unk> -0.46%** (negative free cash flow)
+<unk> Equities 0.24% <unk>
 | ROE | 8.1% |
 
-### 关键数据交叉验证记录
+## Key data cross-checking records
 
-| 验证项 | 结果 | 偏差 |
+<unk> Verification item <unk> Results <unk> deviation <unk>
 |--------|------|------|
-| 市值验算（49.60×6.52亿） | ✅ 通过 | 0.02% |
-| 总股本（4源交叉） | ✅ 通过 | <0.2% |
-| 2025年营收（3源交叉） | ✅ 通过 | 0.00% |
-| 2025年归母净利（3源交叉） | ✅ 通过 | 0.00% |
-| 现金及等价物（2源交叉） | ✅ 通过 | 0.00% |
-| PE/PB/ROE等估值指标 | ✅ 工具精确计算 | 无浮点误差 |
+<unk> Market value measurement (496.6 x 652 million) <unk> Passed 0.02% <unk>
+Total stock (4 sources cross) <unk> through < 0.2% <unk>
+<unk> Collection in 2025 (3 sources cross) <unk> by 0.000% <unk>
+<unk> net profit from the mother in 2025 (3 sources cross) <unk> by 0.000% <unk>
+Cash and equivalents (2 cross-sources)
+Valuation indicators such as PE/PB/ROE
 
 ---
 
-## 第二步：生意本质分析 — 段永平"对的生意"
+# Step 2: Business nature analysis - a piece of "right business"
 
-### 一句话定义
+# One word of definition
 
-**晶方科技是全球传感器芯片（尤其是CIS影像传感器）晶圆级封装的隐形冠军，做的是半导体后道环节中技术壁垒最高、毛利率最厚的细分生意。**
+** Crystal technology is the invisible champion of the crystal circle envelope of global sensor chips (especially CIS image sensors) and is the most technical barrier-free and grossly rich segmented business in the semiconductor back-tracking chain**
 
-### 商业模式画布
+# Business model canvass
 
-- **客户**：CIS芯片设计公司（豪威/索尼/格科微/思特威）
-- **收入模式**：代工服务，按封装/测试订单收取加工费。非经典订阅模式，但车规认证周期2-3年，客户粘性极高
-- **价值链位置**：芯片设计 → 晶圆制造 → **晶方：封装测试** → 模组厂 → 终端OEM
-- **核心产品**：WLCSP（晶圆级封装）、TSV（硅通孔封装），应用于CIS、MEMS、生物识别等传感器芯片
+- ** Client**: CIS Chip Design Company (Howie/Soni/Gekwee/Stwee)
+- ** Income pattern**: proxy services, which collects processing fees on a package/test order.
+- ** value chain location**: chip design <unk> crystal circle manufacturing ** crystal: encapsulation test** module plant <unk> terminal OEM
+- ** Core product**: WCCSSP (crystal circle envelope), TSV (silicon perforated envelope), applied to sensor chips such as CIS, MEMS, biometrics etc.
 
-### 毛利率对比：为什么晶方是行业的3倍？
+# Māori ratio: Why is the crystal three times the industry?
 
-| 封测企业 | 2024年营收 | 毛利率 | 定位 |
+<unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> 2024 <unk> <unk> <unk> <unk>
 |---------|----------|--------|------|
-| 长电科技 | ~360亿元 | ~15% | 综合型OSAT |
-| 通富微电 | ~239亿元 | ~13% | 综合型OSAT |
-| 华天科技 | ~145亿元 | ~9% | 综合型OSAT |
-| **晶方科技** | **14.7亿元** | **47.1%** | **传感器封装专精** |
+♪ Long-range electrotechn ♪ 36 billion ♪ 15% ♪
+♪ We're gonna get you some ♪
+♪ We're gonna be in the middle of the night ♪
+** Crystal technology** ** 1.47 billion ** 47.1% ** Sensor wrapping** <unk>
 
-晶方毛利率是行业平均的**3-4倍**，原因：
-1. **技术差异化定价**：WLCSP/TSV属于先进封装，不是传统引线键合的"卖劳动力"生意
-2. **细分寡头地位**：车规CIS封装全球市占35%，CIS封装整体60%+，定价权强
-3. **高良率壁垒**：12英寸WLCSP良率>99.5%，全球仅晶方和台湾精材能做
-4. **避开红海**：不做手机SoC、存储等同质化封装，专攻传感器这个"小而难"的赛道
+The crystalline Maori rate is an average industry **3-4 times** for:
+1. **Technology differential pricing**: WCLSP/TSV is an advanced envelope and not a traditional "sale labour" business with a combined lead
+2. ** Disaggregate oligarchic status**: 35% of global city in Car Regulations CIS, 60% of total CIS envelopes, strong pricing
+3. ** High Rate Barrier**: 12 inches WCLSP > 99.5%, global only crystals and Taiwanncules can do it
+4. ** Avoid the Red Sea**: no cell phone SoC, storage equivalents, specializing in sensors, the "small and difficult" track
 
-### 经营杠杆分析
+# Run the leverage analysis
 
-从2021→2023年的周期下行看：营收下滑35%，净利润下滑74%。净利润弹性是营收弹性的2倍以上，说明固定成本占比较高，经营杠杆显著。这意味着：上行周期利润弹性大（2020年营收翻倍，净利润翻3.5倍），下行周期同样痛苦。
+The downside of the 2021-2023 cycle: a 35% drop in revenue and a 74% decline in net profits. Net profit elasticity is more than twice the yield elasticity, indicating a relatively high fixed cost and significant leverage.
 
-### 生态粘性/客户锁定
+# Eco-cooter/client lock-in
 
-- 车规芯片封装认证周期**2-3年**，通过AEC-Q100后客户极少更换
-- 晶方是国内唯一通过车规AEC-Q100 Grade 0认证的封测厂
-- 从芯片设计阶段就参与封装方案定制，深度绑定
+- Car chip sealing cycle** 2-3 years** with very few customer replacements after AEC-Q100
+- Crystal is the only seal plant in the country certified by AEC-Q100 Grade 0
+- Be involved in the wrapping program from the chip design stage, deep binding
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-**这门生意好在哪？如果只能用一句话描述，是什么？**
+** Where's the business? If there's only one word to describe it, what?**
 
-> 这是一门"技术门槛高到竞争对手很少、细分到大公司看不上、但对下游不可或缺"的生意。毛利率47%说明晶方不是在卖产能，而是在卖技术能力。但问题在于：这个"小而美"的赛道天花板也小——2025年全年营收才14.7亿元，即便翻倍也才30亿，这决定了它是一个好生意，但不是一个大生意。
+> This is a business with a "technology threshold so high that there are few competitors, and so much to divide into big companies, but it is essential for downstream". The Maori rate is 47%, which means that the crystal is selling technological skills, not production. But the problem is that this small and beautiful track ceiling is small — it was only 1.47 billion dollars a year in 2025, and it was only 3 billion dollars a year, double, which determines that it is a good business, but not a big one.
 
 ---
 
-## 第三步：护城河评估 — 巴菲特"经济护城河"
+# Step three: A moat river assessment -- Buffett "The Economic moat."
 
-### 五类护城河逐一验证
+# Five-class moats to verify
 
-| 护城河类型 | 强度 | 验证依据 |
+♪ The moat type ♪
 |-----------|------|---------|
-| **技术/专利壁垒** | **极强** | 516项全球专利（70%为发明专利）；全球首条12英寸车规TSV量产线；12英寸WLCSP良率>99.5%，全球仅2家能做；技术领先国内同行约2年 |
-| **转换成本** | **极强** | 车规认证周期2-3年，AEC-Q100 Grade 0国内唯一；客户从研发阶段即参与封装方案定制，迁移代价极高 |
-| **规模效应** | **中强** | CIS封装细分领域全球第一，但OSAT整体规模仅行业1/30；规模带来良率和成本优势 |
-| **品牌/定价权** | **中等** | 毛利率47%体现出明显的定价能力，但OSAT行业品牌溢价有限，更多是技术壁垒的体现 |
-| **网络效应** | **无** | 封测行业不存在网络效应 |
+** Technology/Palticity Barrier** ** Extreme** 516 global patents (70% invention patents); first 12-inch car code TSV volume line worldwide; 12-inch WCSP > 99.5%, only 2 globally capable; technology leads the domestic peer for about two years
+<unk> Conversion costs** <unk> Very strong** <unk> Vehicle certification cycle 2-3 years AEC-Q100 Grade 0 is the only country; clients are involved in customizing the wrapping programme from the research and development stage and migration costs are extremely high
+<unk> **Scaling effect** ** Medium Power** <unk> CIS sealing area is the world's number one, but OSAT as a whole is only industry 1/30; size brings good rates and cost advantages <unk>
+** Brand/pricing rights** Medium** Māori 47% reflect significant pricing capacity, but the OSAT industry has limited brand premiums, more so the technical barriers
+<unk> Network effects** <unk> None <unk> Closed industries do not have network effects<unk>
 
-### 护城河趋势：过去5年和未来5年
+# The trend of the moat: the past five years and the next five years
 
-**过去5年（变宽）**：
-- TSV技术从实验室走向12英寸车规量产，技术壁垒进一步提升
-- 车载CIS认证客户从少数扩展到豪威、索尼、安森美等主力厂商
-- 毛利率从2023年低谷38%恢复至47%，定价能力回升
+** The last five years (wided)**:
+- TSV technology moves from the laboratory to 12-inch vehicle production, and technical barriers are further elevated
+- The number of CIS certified clients has expanded from a few to major manufacturers like Howie, Sony, Ansommy.
+- Māori recovery from 38 per cent in 2023 to 47 per cent in the low valley, and recovery in pricing capacity
 
-**未来5年（判断：维持/略窄）**：
-- 车载CIS增长确定性高，但华天科技等竞争对手也在追赶WLCSP
-- CPO/光互联是新的技术方向，能否形成新的壁垒待验证
-- 马来西亚建厂有助于全球化布局，但同时也增加了管理复杂度
+** For the next five years (judgement: maintenance/slightly narrow)**:
+- Carborne CIS growth is highly certain, but competitors like Hua TianTech are chasing the WCLSP.
+- CCPO/Import is a new technological direction and the possibility of creating new barriers to be validated
+- Malaysia ' s plant construction has helped to shape the global landscape, but also has increased the complexity of management
 
-### 巴菲特式追问
+# Barfith-style questioning
 
-**10年后这条护城河还在吗？什么能摧毁它？**
+** Is this moat still in place in 10 years? What can destroy it?**
 
-> 护城河大概率还在，但可能被侵蚀。CIS芯片的光学特性决定了WLCSP/TSV方案短期内难以被颠覆。但风险在于：（1）如果CIS芯片本身发生技术路线变革（类似2018年指纹识别被面部识别替代），护城河将从内部坍塌；（2）长电科技、华天科技等综合封测巨头若决心进入CIS领域，凭借资金和产能优势可能蚕食份额；（3）台积电的InFO等一体化方案可能向传感器领域延伸，挤压独立封测厂空间。
+> The moat is likely to be in place, but it may be eroded. The CIS chip optical properties determine that the WCSP/TSV program is difficult to destabilize in the short term. But the risk is: (1) that if the CIS chip itself undergoes a technological shift (like the 2018 fingerprint recognition replaced by facial recognition), the moat will collapse from within; (2) that long-electric technology, China Tech and other integrated seals, if determined to enter the CIS field, may erode the share of food by financial and productive advantage; and (3) that integrated programmes such as the InFO of power generation may extend to the sensor sector and squeeze the space of independent seals.
 
 ---
 
-## 第四步：逆向思考与风险清单 — 芒格"反过来想"
+# Step four: Reverse thinking and risk list - Manger "inverted"
 
-### 失败路径清单
+# Failed path list
 
-| 风险路径 | 概率 | 影响程度 | 说明 |
+Risk path, probability, impact, degree, description, description.
 |---------|------|---------|------|
-| CIS技术路线变革 | 低（10%） | 致命 | 类似2018年指纹识别消亡，若CIS被新型传感器替代，公司核心业务瓦解 |
-| 第一大客户流失 | 中低（15%） | 严重 | 第一大客户占营收39%，若转移订单将造成重大冲击 |
-| 半导体下行周期 | 高（40%） | 显著 | 2022-2023年净利润暴跌74%的前车之鉴，当前可能处于周期高点 |
-| 竞争加剧 | 中（25%） | 中等 | 华天科技昆山产线追赶，综合OSAT巨头进入CIS领域 |
-| 地缘政治升级 | 中（20%） | 严重 | 核心技术人员为美籍，外销占比68%，索尼等日企客户可能受影响 |
-| 管理层风险 | 中低（15%） | 显著 | 创始人王蔚已60岁，无明确接班人，持股仅0.25% |
-| 马来西亚基地投入过大 | 中低（15%） | 中等 | 累计投资1.1亿美元，若产能利用率不足将拖累利润 |
+The CIS technology route changes the company's core business collapses if the CIS is replaced by new sensors.
+The first client is lost, the second client is missing, the second client is seriously affected.
+The first 74% drop in net profits in 2022-2023 is probably high.
+♪ The big OSATs are in the CIS field ♪
+The core technical staff is American, 68% of the sales are out, and Japanese customers like Sony may be affected.
+<unk> Management risk Middle (15%) <unk> Not significant <unk> Founder Wang Wei is 60 years old, no known successor, holding only 0.25% <unk>
+<unk> Malaysia base over-input (15%) <unk> Medium <unk> Investments of $110 million accumulated, which will cost profits if capacity is underutilized <unk>
 
-### 历史类比
+# History analogy
 
-| 类比公司 | 相似之处 | 结局 | 对晶方的启示 |
+The synonyms, the synonyms, the similarities, the ending, the revelation to the crystals, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stumps, the stairs, the stairs, the stairs, the stairs, the stairs, the stairs, the stairs, the stairs, the stairs, the stairs, the stairs, the stairs, the stairs, the sts, the stair, the st, the st, the sts, the sts, the sts, the sts, the sts, the sts, the sts, the sts, the st, the st, the sts, the sts, the sts, the st, the st, the st?, the st?, the st? the st, the st?, the st? the st? the st? the
 |---------|---------|------|-------------|
-| STATS ChipPAC（新加坡） | 小型OSAT、技术领先、规模不足 | 2015年被长电科技18亿美元收购 | 无实际控制人的晶方也可能成为收购标的 |
-| UTAC（新加坡） | 细分封测企业、多次资本运作 | 2020年被中国智路资本收购 | 小型独立OSAT的生存空间在缩小 |
-| 2018年晶方自身 | 苹果弃用指纹识别 | 毛利率暴跌至25.9%，扣非净利仅464万元 | 单一技术路线依赖的脆弱性 |
+The crystals of the unmanageable people could be the subject of a purchase.
+<unk> UTAC (Singapore) <unk> Sub-classified enterprises, multiple capital operations <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+The crystal itself in 2018, the apples were turned on fingerprints, the Maori rate fell to 25.9 per cent, and the net profit was only $4.64 million.
 
-### 偏误自查
+# I'm wrong to check myself
 
-- **叙事偏差**：先进封装/AI/车载CIS的叙事极其诱人，但晶方2025年营收仅14.7亿元，与叙事中的"万亿级市场"之间存在巨大鸿沟
-- **锚定效应**：股价从17元涨到50元，容易让人觉得"已经涨了很多"或"还有很大空间"，但估值应锚定基本面而非价格
-- **幸存者偏差**：关注了晶方的成功案例（车规封装龙头），但忽略了同期被淘汰或被收购的小型OSAT
+- ** Narrative bias**: The advanced envelope/AI/car-mounted CIS narrative is extremely tempting, but the crystal collected only $1.47 billion in 2025, which is a huge gap between the "Billion Class Market" in the narrative.
+- **Assort effect**: The stock price has increased from $17 to $50, which makes it easy to think that "a lot of it" or "there's plenty of room," but the valuation should be based on the base, not the price.
+- ** Survivors' deviation**: attention was paid to the success of the crystalline (car code seals the taps) but neglects small OSATs that were eliminated or acquired during the same period
 
-### 芒格式追问
+# Man format questions
 
-**我最可能在哪里犯错？聪明人为什么会不买/做空这家公司？**
+** Where would I most likely make a mistake? Why would a smart man not buy the company? **
 
-> 最可能犯的错误是**把行业趋势等同于公司确定性增长**。车载CIS确实在爆发，但晶方的增长是否能维持50%+的增速来消化87倍PE？2026Q1已经显示增速放缓（净利润零增长）。聪明的空方会说：（1）87倍PE对应的是一家ROE仅8%、营收15亿的小公司，估值泡沫明显；（2）CPO、AI眼镜、机器人视觉都是"讲故事"阶段，短期贡献营收有限；（3）第一大股东连年减持，大基金已退出，"聪明钱"在离场。
+> The most likely mistake is to ** equate industry trends with firm-level certainty growth**. The car-borne CIS does explode, but is the crystal-based growth able to absorb 87 times the PE at a 50% + speed? 2026Q1 has shown a slowdown (net profit zero growth). Smart parties say: (1) 87 times PE corresponds to a small ROE of 8%, a $1.5 billion, valued bubble; (2) CCPO, AI glasses, robot vision are all "treaths" phase, short-term contribution limited; (3) the first shareholder is losing its stock year, big funds are out, and "smart money" is out of the field.
 
 ---
 
-## 第五步：管理层评估 — 段永平"对的人" + 巴菲特"管理层诚信"
+# Step five: Management assessment - "The Right Man" # "Management Integrity"
 
-### CEO王蔚关键决策复盘
+# CEO's key decision-making rev
 
-| 时间 | 决策 | 结果 | 评分 |
+Time, time, decision-making, results, ratings, ratings.
 |------|------|------|------|
-| 2005年 | 撮合中新创投与以色列Shellcase合资，引进WLCSP技术 | 奠定公司技术基础，开创中国WLCSP产业 | ★★★★★ |
-| 2009-2011年 | 自主研发ThinPac替代引进技术 | 摆脱技术依赖，收入占比达99%+ | ★★★★★ |
-| 2019年 | 3225万欧元收购荷兰Anteryon（飞利浦光学分拆） | 补齐光学器件能力，ASML为大客户，正推动分拆上市 | ★★★★ |
-| 2021-2022年 | 投资以色列VisIC（GaN功率） | 战略性布局，尚无明显回报 | ★★★ |
-| 2024-2026年 | 马来西亚建厂，累计投资1.1亿美元 | 应对地缘风险的前瞻布局，但投入巨大且尚未产出 | ★★★★ |
-| 持续 | 坚持聚焦传感器封装，不追逐SoC/存储等热门赛道 | 差异化定位，毛利率远超同行 | ★★★★★ |
+2005 The new venture was jointly launched with Shellcase, Israel, to introduce the technology of the World Health Organization (WLCSP) to build the technological base of the company and to create the Chinese industry of the World Health Organization (WHO) to create a new technology base.
+<unk> Auto-researching of the ThinPac Alternative Technology for Introduction
+2019 Euro3.225 million for Dutch Anteryon (Philips optics) <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+2021-2022 Investment in Israel ' s VisIC (GaN power) Strategic layout, with no apparent return
+2024-2026 Construction of plants in Malaysia, cumulative investment of $110 million
+♪ The ♪ ♪ The ♪ The ♪ ♪ The ♪ The ♪ ♪ The ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the the the the the the the the the ♪ the ♪ the ♪ the ♪ the the the the the the the the the the the ♪ the ♪ the ♪ the the the the the the the ♪ the ♪ the the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the the the the the the the ♪ the the the the the the the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the ♪ the the ♪ the ♪ the the the the the the
 
-### 资本配置能力
+# Capital allocation capacity
 
-- **研发回报率**：研发费用率12-17%（远超行业5-8%），产出516项专利，支撑47%毛利率，研发投入产出效率高
-- **并购成功率**：Anteryon收购成功（补齐光学能力，正推动分拆上市），VisIC待观察。整体并购策略审慎，围绕核心能力延伸
-- **分红/回购**：承诺不低于净利润70%分红但实际仅21%，回购力度弱（1500-2500万元），资本回馈股东意识不强
+- **R ** R & D return**: R & D cost 12-17% (a far higher industry than 5-8%), output 516 patents, supporting 47% M & D input efficiency
+- **M&A success rate**: The acquisition of Anteryon was successful (upgrading optical capabilities and promoting market segmentation), VisIC is to be observed. The overall M&A strategy is cautious and extends around core competencies.
+- **Score/back-purchase**: commitment of not less than 70% of net profit but only 21% in real terms, weak buy-back ($15-25 million) and low capital feedback to shareholders
 
-### 利益绑定 — 重大隐忧
+# The interest bound — the big worry
 
-| 姓名 | 持股 | 占总股本 |
+Name, name, share, share, share, share.
 |------|------|---------|
-| 王蔚（董事长） | 160.8万股 | 0.25% |
-| 段佳国（董秘） | 40.3万股 | 0.06% |
-| 钱孝青（副总） | 0.5万股 | ~0% |
-| **管理层合计** | **~201万股** | **<0.3%** |
+Queen Wie (Chairman) 1.68 million shares 0.25%
+<unk> 430,000 shares <unk> 0.06% <unk>
+Xiaoqing (Deputy Director) <unk> 05,000 shares ~ 0% <unk>
+** Management total** ** ~ 2.01 million shares** <unk> 0.3%** <unk>
 
-**管理层持股不到0.3%，利益绑定极弱。** 一家323亿市值的公司，CEO全部持股仅值800万元，这与段永平强调的"管理层要有significant skin in the game"存在巨大差距。公司也缺乏有力的股权激励计划。
+** Management shares are less than 0.3% and interest-singling is extremely weak.** A 32.3 billion-market company, with CEOs holding only $8 million, is a huge gap with the "management needs to be significant in the game" that has been highlighted in a long-term perspective. Companies also lack a strong equity incentive plan.
 
-### 治理红旗
+# The red flag of governance
 
-1. **无实际控制人**：股权高度分散，第一大股东仅15.77%且持续减持
-2. **大股东持续套现**：中新创投自2022年起累计套现~10.78亿元
-3. **关联交易偏高**：前五大供应商中关联方采购占21.53%
-4. **信息披露违规**：2023年因2016-2019年未披露关联方资金往来被证监会警示
-5. **接班人不明**：王蔚近60岁，公司称继任计划"不会对外公开"
-6. **核心技术依赖美籍人员**：Vage Oganesian（技术核心，薪酬高于CEO）为美籍
+1. ** No real control**: highly decentralized, with only 15.77% of the first largest shareholder and continued to lose ownership
+2. **Society-shares ongoing**: Surges from China have accumulated ~1,078 million yuan since 2022
+3. ** High number of associated transactions**: 21.53 per cent of the top five suppliers were related party procurement
+4. ** Information disclosure irregularities**: 2023 warned by the CSRC for non-disclosure of related party funds transactions in 2016-2019
+5. **The successor is unknown**: Wang Wei is nearly 60 years old and the company says the succession plan "is not public"
+6. ** Core technology dependent on American personnel**: Vage Oganesian (technic core, higher than CEO)
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-**如果CEO退休，这家公司还能保持竞争力吗？**
+** If the CEO retires, will the company remain competitive?**
 
-> 这是一个真实且紧迫的问题。王蔚已近60岁，掌舵20年。他的核心价值在于：（1）早期引进以色列技术的战略眼光；（2）坚持聚焦传感器封装的战略定力。技术层面由美籍副总Vage Oganesian主导，运营层面有钱孝青等骨干。但在缺乏明确接班人、管理层持股极低的情况下，继任过渡期可能出现战略摇摆。好在晶方的护城河主要靠技术专利和客户认证，而非创始人个人品牌，有一定的制度化基础。
+Wang Wei is nearly 60 years old, with 20 years of executive wheelship. His core value is: (1) a strategic vision for the early introduction of Israeli technology; and (2) adherence to the strategic fixation of the focused sensor envelope. The technology level is dominated by Vage Oganesian, the US Deputy General, and operates with a rich filial backbone.
 
 ---
 
-## 第六步：行业与文明趋势 — 李录"文明演进框架"
+# Step 6: Industry and civilizational trends - Lee Siu ' s Framework for Civilization Evolution
 
-### 所在行业是否处于"文明级范式转移"？
+# Is the industry in "civilizational paradigm shift"?
 
-**是的，但晶方处于这个范式转移的边缘而非中心。**
+** Yes, but the crystal is on the edge of this paradigm shift rather than at the centre**
 
-半导体封装正经历从"传统引线键合"到"先进封装"的范式转移。这一转移的核心驱动力是：摩尔定律放缓后，封装成为提升芯片性能的关键路径（Chiplet、2.5D/3D封装、CoWoS等）。
+Semiconductor sealing is a paradigm shift from "traditional lead-line alignment" to "advanced envelopes". The core driving force of this shift is that, after the Mole Law slows down, the envelope becomes a key path to enhance chip performance (Chiplet, 2.5D/3D envelope, CoWoS, etc.).
 
-但晶方科技的主战场是**传感器封装**（CIS/MEMS），这与AI芯片先进封装（CoWoS/HBM）是两条不同的赛道。晶方通过CPO（光互联封装）尝试切入AI相关领域，但目前贡献微乎其微。
+But the main battleground for crystal technology is the **sensor encapsulation** (CIS/MEMS), which is two different tracks from the advanced ASI chip encapsulation (CoWoS/HBM). The crystal tries to cut into the area of AI through the CPO (light-connected encapsulation), but its contribution is minimal.
 
-### TAM分析
+# TAM analysis
 
-| 市场 | 当前规模 | 预测 | CAGR |
+Markets, current size, forecast, CAGR,
 |------|---------|------|------|
-| 全球半导体封测 | 821亿美元（2024年） | 2030年约1200亿美元 | 8.6% |
-| 全球先进封装 | 519亿美元（2024年） | 2028年786亿美元 | 10.6% |
-| 全球CIS市场 | 232亿美元（2024年） | 2030年301亿美元 | 4.4% |
-| 车载CIS | 25亿美元（2024年） | 2030年约55亿美元 | 16%+ |
-| WLCSP市场 | 42亿美元（2023年） | 2032年97亿美元 | 9.8% |
+<unk> Global semiconductor sealing $82.1 billion (2024) <unk> approximately $120 billion in 2030 <unk> 8.6% <unk>
+<unk> Advanced global envelope <unk> 51.9 billion (2024) <unk> $78.6 billion in 2028 <unk> 10.6% <unk>
+<unk> Global CIS market $23.2 billion (2024) <unk> $30.1 billion in 2030 <unk> 4.4% <unk>
+<unk> Carloaded CIS $2.5 billion (2024) <unk> About $5.5 billion in 2030 <unk> 16% + <unk>
+<unk> WCLCSP market $4.2 billion (2023) <unk> $9.7 billion in 2032 <unk> 9.8% <unk>
 
-**关键判断**：晶方的核心市场（CIS封装）TAM增速不算快（4-5%），但结构性增长来自车载CIS（16%+CAGR）和新兴应用（机器人、AR/VR）。车载CIS是确定性最高的增量。
+** Key judgements**: The crystal core market (CIS encapsulation) has not grown fast (4-5%), but structural growth is due to the fact that the carborne CIS (16% + CAGR) and the newest applications (rots, AR/VR). Carborne CIS is the highest increase of certainty.
 
-### 产业价值链位置
+# The location of the industrial value chain
 
-晶方处于"封装测试"环节，夹在上游晶圆制造和下游模组之间。这个位置的特点是：
-- **不如芯片设计赚钱**（毛利率通常低于设计公司）
-- **但晶方在传感器细分领域例外**（47%毛利率接近设计公司水平）
-- **被上下游挤压的风险**：台积电InFO向后延伸，下游模组厂向前延伸
+The crystal is in the "envelope test" phase, between upstream crystal round manufacturing and downstream modelling. The characteristics of this position are:
+- ** Less than chip design ** (Māori rates are usually lower than those of the design company)
+- ** Except in the field of sensor disaggregation** (47% Māori rate close to design firm level)
+- ** Risk of being squeezed up and down**: InFO-channels are going backwards and downstream module plants are going forward
 
-### 六大增长方向
+# Six main directions of growth
 
-1. **车载CIS**（核心，占比45%，增速120%+）：L2++/L3智能驾驶推动单车摄像头从6颗增至15颗
-2. **CPO光互联**（新增长曲线）：TSV工艺切入英伟达光引擎供应链，2026年起逐步贡献
-3. **AI眼镜/AR**：CIS封装全球市占45%
-4. **机器人视觉**：已实现商业化量产
-5. **激光雷达**：已获五年长约
-6. **GaN功率器件**：通过VisIC布局数据中心AI电源
+1. ** Carborne CIS** (core, 45 per cent, 120 per cent + ): L2+/L3 smart drive single-car cameras increased from 6 to 15
+2. **CPO light interconnection** (New Growth Curve): TSV process is entering the British Weilder Light Engine supply chain, gradually contributing since 2026
+3. **AI glasses/AR**: 45% of the global city in CIS envelopes
+4. ** Robot vision**: commercialized mass product
+5. **Lidar**: Five years long
+**GaN power unit**: AI powered through VisIC layout data centre
 
-### 李录式追问
+# Lee's asking questions
 
-**站在20年后回看，这家公司是"这个时代的标准石油"还是"昙花一现的3Com"？**
+** Standing here 20 years later, is this company Standard Oil of the Age or 3Com of the Expedition?**
 
-> 两者都不是。晶方更可能是一家"持续存在的利基冠军"——类似于工业领域中某些隐形冠军企业，在一个不大但不可或缺的细分赛道持续保持领先。它不会成为万亿市值的巨头（赛道太小），但也不会消亡（技术壁垒真实存在）。最大的变数是：如果AI驱动的传感器需求（机器人视觉、自动驾驶、AR/VR）在未来10年爆发性增长，晶方可能从"利基冠军"升级为"细分领域巨头"；反之，如果传感器技术路线出现颠覆性变革，晶方可能沦为"被淘汰的上一代技术标准"。
+The crystal is more likely to be a "continuing champion of the niche" -- like some invisible champions in industry, who keep leading in a small but indispensable segment of the track. It will not become a giant with a trillion-dollar market value (too small a track), but it will not die (the technical barriers are real). The biggest variable is that if AI-driven sensor demand (rotoid vision, autopilot, AR/VR) is growing sexually over the next 10 years, the crystal may be upgraded from "base champion" to "sub-area giant"; and, conversely, if the sensor technology route is turned into a subversive change, the crystal may become "the next generation of technology standards that have been eliminated".
 
 ---
 
-## 第七步：估值与安全边际 — 巴菲特"内在价值" + 段永平"对的价格"
+# Step seven: valuation and security margin -- Barfitt "inner value" + price of "right"
 
-### 当前市场定价（工具精确验算）
+# # Current market pricing (tool precision)
 
-| 指标 | 数值 | 说明 |
+<unk> Indicators <unk> Value <unk> Description <unk>
 |------|------|------|
-| PE（TTM） | **87.0x** | 基于2025年EPS 0.57元 |
-| PB | **7.0x** | 基于每股净资产7.07元 |
-| PS | 21.9x | 基于2025年营收14.74亿元 |
+<unk> PE(TTM)<unk> 87.0x**<unk> based on EPS 0.57 in 2025
+<unk> PB <unk> 7.0x** <unk> based on net assets of $7.07 per share
+21.9 x <unk> based on a collection of $1,474 million in 2025
 | EV/EBITDA | 56.5x | — |
-| 盈利收益率 | 1.15% | PE的倒数 |
-| FCF Yield | -0.46% | 自由现金流为负 |
-| 股息率 | 0.24% | — |
+<unk> Profit rate <unk> 1.15% <unk> PE down
+FCF Yield <unk> -0.46% <unk> Free cash flow negative <unk>
+<unk> Estimation rate <unk> 0.24% <unk> <unk>
 
-### 反向DCF：当前股价隐含了什么预期？
+# Inverse DCF: What are the expectations of the current stock price?
 
-当前323亿市值 / 2025年净利3.70亿 = 87倍PE。如果3年后PE回归55倍（接近历史中位数），要维持当前市值，需要2028年净利润达到323/55 = **5.87亿元**，对应2025-2028年净利润CAGR约**17%**。
+If, after three years, the PE returns 55 times (close to the historical median), it will take a net profit of 323/55 = $587 million** for 2028, corresponding to approximately 17% of the net profit of CAGR for 2025-2028.
 
-如果期望3年50%回报（年化14.5%），需要2028年市值达到485亿，在55倍PE下需要净利润**8.8亿元**，对应CAGR约**33%**。
+If 50 per cent of the returns are expected over three years (14.5 per cent annually), the market value would need to reach $48.5 billion in 2028, net profit would be required under 55 times PE**$880 million**, corresponding to approximately CAGR**33 per cent**.
 
-**券商一致预期**：2026年净利约5.15-5.45亿元（+39-47%），2027年约6.66-7.06亿元。如果2028年净利达到9亿元（年化35%增长），在55倍PE下对应市值495亿，股价约76元。
+** Unanimous expectations for bond dealers**: net gains of approximately $515-545 million (+39-47%) in 2026 and approximately $666-706 million in 2027. If net gains of about $900 million (an annual 35% increase) in 2028, the corresponding market value under 55 times PE would be approximately $49.5 billion, with a share price of approximately $76.
 
-### 三情景估值（工具精确计算）
+#3 scenario valuation (tool precision)
 
-基于2025年EPS 0.57元，预测3年后目标价：
+Based on the EPS 0.57 in 2025, the target price is projected after three years:
 
-| 情景 | 年化增速 | 目标PE | 2028年EPS | 目标股价 | 涨跌幅 |
+♪ The world's gonna be so big ♪
 |------|---------|--------|----------|---------|--------|
-| **乐观** | 50% | 70x | 1.92元 | **134.7元** | +172% |
-| **中性** | 35% | 55x | 1.40元 | **77.1元** | +56% |
-| **悲观** | 15% | 40x | 0.87元 | **34.7元** | -30% |
+** EXPOINTED** ** 50% ** 70 x 1.92 ** 134.7 ** <unk> 172% **
+**Men** Mictino ** 35% <unk> 55x <unk> 1.40 ** 77.1 ** <unk> 56% <unk>
+** Pessimism** 15% <unk> 40x <unk> 0.87 ** $34.7 ** <unk> - 30% <unk>
 
-**乐观情景假设**：车载CIS持续爆发+CPO大规模放量+马来西亚基地成功投产，维持50%利润增速
-**中性情景假设**：车载CIS稳健增长+CPO小规模贡献，35%利润增速
-**悲观情景假设**：行业周期下行+CPO低于预期+费用率上升，仅15%增速
+** Optimal scenario**: Continued vehicle-borne CIS outbreak + CCPO mass release + successful production of Malaysia base, maintaining 50 per cent profit growth rate
+** Neutral scenario**: Promising growth of vehicle-borne CIS + small-scale contribution of CCPO, 35% profit growth rate
+** Pessimistic scenario**: lower than expected + CCPO + higher cost rate for industry cycle, only 15% increase
 
-### 与自身历史估值对比
+# Compared to their own historical valuations
 
-| 时期 | PE范围 | 当前PE位置 |
+♪ Time, time, time, time ♪ ♪ PE range, ♪ ♪ Current PE position ♪
 |------|--------|-----------|
-| 2022年（周期底部） | 19.6 - 41.7x | 当前87x远高于底部 |
-| 2023-2024年（复苏期） | 23 - 149x | 当前处于中位偏上 |
-| 历史平均 | 80.8x | 当前略高于平均 |
-| 近5年PE百分位 | 87% | **偏高** |
+<unk> 2022 (bottom of cycle) <unk> 19.6 - 41.7 x <unk> currently 87x far above the bottom <unk>
+<unk> 2023-2024 (recovery period) <unk> 23 - 149x <unk> currently in the middle of the spectrum <unk>
+The historical average 80.8x <unk> is currently slightly above the average
+<unk> Near five years of PE percentile 87% <unk> ** High** <unk>
 
-### 与同行估值对比
+# Compared to peer valuation
 
-| 公司 | PE（TTM） | PB | 毛利率 | ROE |
+<unk> <unk> <unk> (TTM)<unk> <unk> <unk> Mäori ratio<unk> ROE<unk>
 |------|----------|-----|--------|-----|
-| 长电科技 | ~25x | ~2.5x | ~15% | ~10% |
-| 通富微电 | ~35x | ~3x | ~13% | ~8% |
-| 华天科技 | ~40x | ~2x | ~9% | ~5% |
-| **晶方科技** | **87x** | **7.0x** | **47%** | **8%** |
+~ 25 x 2.5 x 15% ~ 10% ~ 10% ~
+~35x<unk> 3x<unk> 13%<unk> 8%<unk>
+♪ 40x<unk> 2x<unk> 9%<unk> 5%<unk>
+** Crystal technology** ** 87 x ** 7.0 x ** 47% ** 8% ** ** ** ** ** ** ** ** ** 7% ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 8% ** ** ** ** ** ** ** ** ** <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
 
-晶方的PE和PB显著高于同行，市场给予了"技术稀缺性"溢价。但关键矛盾是：**毛利率是行业3倍，但ROE仅与行业持平（8% vs 5-10%）**，说明高毛利被低资产周转率和低杠杆稀释了。
+Crystal PEs and PBs are significantly higher than their peers, and the market gives a "technology scarcity" premium. But the key paradox is that:** Māori is three times as high as industry, but ROE is only the same as industry (8% vs 5-10%)**, suggesting that high Māori is diluted by low asset turnover and low leverage.
 
-### 段永平式追问
+# A piece of eternally tangled questions
 
-**如果股市明天关闭5年，你愿意以这个价格持有吗？**
+** If the stock market closes for five years tomorrow, would you hold it at that price?**
 
-> **不愿意。** 以87倍PE、323亿市值买入一家年赚3.7亿、ROE仅8%的公司，需要未来5年利润CAGR保持35%+才能在5年后获得合理回报。但半导体行业的强周期性（2022-2023年净利暴跌74%）让这种持续高增长充满不确定性。如果中间经历一个下行周期，持有体验会非常痛苦。好价格应该是在周期下行、市场恐慌时买入——比如2022年PE跌到20倍时。
+> ** Not willing.** Buying 87 times the PE, $32.3 million in market value, and only 8% of ROE, a company that earns 370 million a year, requires a 35% plus profit for the next five years to get a reasonable return. But the strong cyclical nature of semiconductor industries (74% net profit in 2022-2023) makes this sustained high growth uncertain.
 
 ---
 
-## 第八步：综合决策备忘录
+# Step eight: A comprehensive decision-making memorandum
 
-### 汇总评估
+## Summary assessment
 
-| 维度 | 结论 | 信心度 |
+♪ The dimension, the conclusions, the confidence, the confidence ♪
 |------|------|--------|
-| 生意质量（段永平） | 好生意：技术驱动、细分龙头、高毛利。但"小而美"天花板明显，营收规模有限 | 高（85%） |
-| 护城河（巴菲特） | 窄护城河：技术壁垒+转换成本构成真实壁垒，但赛道不大，无网络效应 | 高（80%） |
-| 管理层（段永平+巴菲特） | 战略能力强（聚焦+精准并购），但利益绑定极弱（持股<0.3%），治理有瑕疵 | 中（60%） |
-| 最大风险（芒格） | 周期性波动（净利曾跌74%）和估值泡沫（87倍PE、ROE仅8%） | 高（85%） |
-| 文明趋势（李录） | 受益于智能驾驶/AI传感器趋势，但处于范式转移的边缘而非中心 | 中（65%） |
-| 估值（巴菲特+段永平） | **显著高估**：87倍PE、-0.46%FCF收益率、超过所有券商目标价 | 高（90%） |
+♪ Business quality (Long-Ping) Good business: technology driven, broken taps, high-mori. But the small and beautiful ceiling is obvious, with limited collection, high (85%) ♪
+<unk> Buffett, <unk> Narrow Protector: Technical barriers + conversion costs constitute real barriers, but the track is small, no network effects <unk> High (80%)
+Management (Yongping + Buffett)
+• Maximum risk (Manger) cyclical fluctuations (spill net profit has dropped by 74%) and valuation foams (87 times PE, ROE only 8%) <unk> High (85%) <unk>
+<unk> Civilization trends (Li Ji) <unk> Benefit from intelligent driving/AI sensor trends but are on the edge of paradigm shift rather than centre <unk> (65%) <unk>
+<unk> Valuation (Buffett+Ping) <unk> Significant overestimation **: 87 times PE, -0.46% FCF rate of return, exceeding all bond dealers' target price <unk> High (90%) <unk>
 
-### 最终决策
+# The final decision
 
-| 策略 | 建议 |
+Policy Recommendations
 |------|------|
-| **空仓者** | **观望，等待更好价格。** 当前87倍PE严重透支增长预期，建议等待PE回落至40-50倍区间（对应股价约23-29元），或等待2026年后续季报验证增长持续性后再做决策 |
-| **持仓者** | **考虑减仓锁定利润。** 股价已翻倍且超过所有券商目标价，2026Q1净利润零增长是值得警惕的信号。建议至少减持一半仓位 |
-| **卖出信号** | （1）连续2个季度营收增速低于20%；（2）毛利率跌破40%；（3）第一大客户发生重大变动；（4）管理层大规模减持 |
-| **加仓信号** | （1）PE回落至40倍以下（股价约23元）；（2）车载CIS季度营收增速维持50%+；（3）CPO业务开始贡献可观营收（季度5000万+）；（4）管理层增持或推出有力的股权激励 |
+** Empty warehouser** ** Watching, waiting for better prices.** Current 87-fold PE severe growth forecast, suggesting waiting for PE to fall to 40-50 times the price (equivalent to approximately $23-29) or for decision-making to be made after the next quarterly report in 2026 confirms the continuity of growth.
+** Warehousing** ** Consider reducing locking profits.** Stock prices have doubled and exceeded all the stock exchange targets, and zero net profit growth of 2026Q1 is a warning sign.
+<unk> **Sale signal** <unk> (1) 2 consecutive quarterly harvests of less than 20%; (2) Māori rate down 40%; (3) significant changes in top clients; (4) significant management decline
+<unk> **Step signal** <unk> (1) PE down to less than 40 times (about $23 in stock); (2) quarterly CIS-borne growth rate of 50 per cent +; (3) CPO operations start to contribute significantly to revenue (50 million + quarter); (4) management increases or rolls out strong equity incentives <unk>
 
-### 合理买入价格区间
+# Just buy the price range
 
-| 估值基准 | 假设 | 对应股价 |
+<unk> Valuation base <unk> Assumption <unk> Counterpart share price <unk>
 |---------|------|---------|
-| 2026年净利5.2亿，40倍PE | 保守合理估值 | **32元** |
-| 2026年净利5.2亿，50倍PE | 中性合理估值 | **40元** |
-| 2025年净利3.7亿，30倍PE | 安全边际充足 | **17元** |
+<unk> 520 million net profit in 2026, 40 times PE <unk> conservatively reasonable valuation ** $32** <unk>
+<unk> net gain of $520 million in 2026, 50 times PE <unk> neutrally reasonable valuation ** $40** <unk>
+* Net gain of 370 million, 30 times PE in 2025 * security margin sufficient ** $17 ** **
 
-**建议买入区间：25-35元（2026E PE 30-43倍）**
+** Proposed purchase of rooms: $25-35 (2026E PE 30-43)**
 
-### 四位大师模拟点评
+# Four masters simulated the reviews
 
-> **巴菲特**：这是一家有真实护城河的公司——47%的毛利率不是靠说故事得来的，是靠99.5%的良率和2-3年的车规认证壁垒。但87倍PE意味着你在为未来5年的完美执行付全价。我宁愿等一个半导体下行周期，在20-30倍PE时再看它。另外，管理层持股不到0.3%让我不安——如果经营者不愿意大量持有自己公司的股票，我为什么要持有？
+> **Buffett**: This is a company with a real moat — 47% of the Maori rate is not from storytelling, 99.5% from car regulation barriers and 2-3 years of car certification barriers. But 87 times the PE means you pay the full price for the perfect execution over the next five years. I prefer to wait for a semiconductor to watch it at 20-30 times the PE. And management shares are less than 0.3% — if the operator is unwilling to hold his own company stock in large quantities, why should I hold it?
 
-> **芒格**：反过来想——这家公司最让我担心的不是技术被颠覆，而是它的"小而美"陷阱。营收15亿、净利4亿，给了323亿市值。这需要一切都按最好的剧本走才能自圆其说。半导体行业的人总是在周期高点最乐观、低点最悲观。2021年大家说它是"永恒成长股"，2023年就有人说"不行了"。真正的好生意不需要靠周期位置来证明自己。
+> **Mung**: The other way around, this company's concern is not about the technology being subverted, but about its "small and beautiful" trap. The proceeds are 1.5 billion, net profits are $400 million, giving 32.3 billion in market value. This requires everything to be in the best script to be self-sufficient. The semiconductor industry is always the most optimistic and pessimistic at the highest end of the cycle. In 2021, people say it's the "Eternal Growth Unit," and in 2023 they say it's "no more."
 
-> **段永平**：生意是对的——在一个大行业里找到小切口做到全球第一，这个思路我喜欢。人也基本是对的——王蔚20年聚焦不摇摆，说明他有定力。但价格不对。我买东西喜欢有明显的便宜感，87倍PE让我完全没有便宜感。而且管理层持股太低了，如果CEO自己都不愿意多买自己公司的股票，这说明什么？
+> **Pixture **: Business is right -- finding a small cut in a big business to be global first, and I like that idea. People are also basically right -- 20 years of focus, and he's got a certain power. But the price is not right. I like to buy things cheaply, and 87 times PE makes me feel cheap. And management holds too low, and if the CEO does not want to buy more shares of his own company, what does that mean?
 
-> **李录**：晶方处在一个有趣的位置——它受益于智能驾驶和AI传感器的文明级趋势，但它不是这个趋势的核心受益者。核心受益者是CIS芯片设计公司（豪威、索尼）和终端整车厂。晶方作为封装环节，更像是"卖铲子的人"——稳定但不会爆发。CPO方向如果能走通，可能改变这个判断，但现在谈还太早。
-
----
-
-## AI分析置信度 vs 投资确定性
-
-### 基于充分数据的结论（高置信度）
-
-- 财务数据完整且多源交叉验证，历史趋势清晰
-- 毛利率47%、资产负债率10%等核心指标准确可信
-- 当前87倍PE处于历史偏高区间，这是事实判断
-- 半导体行业强周期性（净利润从5.76亿→1.50亿）是历史事实
-
-### 基于有限信息的推理（较低置信度）
-
-- 车载CIS业务占比45%来自部分来源，年报未明确拆分，实际比例可能有偏差
-- CPO/光互联业务的营收贡献预期（机构预测3-4亿元）缺乏公司指引验证
-- "AI眼镜CIS封装全球市占率第一（45%）"的数据来源单一，未经验证
-- 管理层的真实继任安排无公开信息，风险判断基于推测
-- 分客户毛利率（车载50%+ vs 消费40%+）为推算值
-
-### 需要一手验证的问题
-
-1. 车载CIS封装的具体营收和毛利率拆分（需查阅完整年报PDF）
-2. CPO业务目前是否有实质性订单，还是仅处于送样阶段？
-3. 马来西亚WaferTek工厂的实际进展和客户意向
-4. 第一大客户是否为豪威科技/韦尔股份？具体合作深度如何？
-5. Anteryon分拆上市的估值预期和对母公司的影响
-6. 管理层是否有增持或股权激励计划？
+> **Lisu**: Crystal is in an interesting position -- it benefits from the civilizational trends of smart drivers and AI sensors, but it is not the central beneficiary of this trend. The central beneficiaries are CIS Chip Design (Howie, Sony) and the terminal whole. Crystal is stable but not explosive as a wrapper, more like "the shoveler." The CPO direction, if it goes through, may change that judgment, but it is too early to talk about it.
 
 ---
 
-*免责声明：本报告基于公开信息和AI分析生成，不构成投资建议。投资者应结合自身情况独立判断，并注意半导体行业的高波动性风险。*
+# AI analyze confidence vs investment certainty
 
-*数据来源：公司年报、东方财富网、Investing.com、证券之星、知了财报网、亿牛网、长江证券研报、中邮证券研报等*
+# # Conclusion based on sufficient data (high confidence)
+
+- Complete and multi-source cross-checking of financial data and clear historical trends
+- Core indicators such as the Māori rate of 47 per cent and the asset-liability ratio of 10 per cent are accurate and credible
+- The current 87-fold Pe is in a high-level area. It's a factual judgment.
+- The strong cyclical nature of the semiconductor industry (net profit from 576 – 150 million) is a historical fact
+
+# # Logic based on limited information (low confidence)
+
+- 45 per cent of the vehicle-borne CIS operations were from partial sources, annual reports were not clearly split and actual ratios could be biased
+- The expected revenue contribution of the CCPO/ISP (institutional forecast of $300-400 million) lacks corporate guidance validation
+- The data source for "AI Glass CIS Covering the Global Marketplace First (45%)" is single, unverified
+- The true succession arrangements of management are not publicly available and risk judgements are based on speculation
+- The ratio of gross (50% vehicle + vs consumption 40% +) to extrapolated value
+
+# The problem needs a hand-to-hand verification
+
+1. Specific collection and splitting of the Māori rate on the vehicle with the CIS envelope (see full annual report PDF)
+Is there a substantive order for the CCPO operation at present, or is it only in the sample stage?
+3. Real progress and customer intentions at the WaferTek plant in Malaysia
+4. Is the first largest client in Howe Tech/Wear? What is the depth of cooperation?
+5. Valuation expectations and implications for parent companies for market-distribution of Anteryon
+6. Does management have an incentive plan for increasing ownership or equity?
+
+---
+
+* Disclaimer: This report is based on public information and AI analysis and does not constitute an investment recommendation.
+
+*Source: Annual Corporate Report, Eastern Wealth Network, Investment.com, Securities Star, Information Network, Billion Bull Network, Yangjiang Securities Research, China Post Securities Research, etc.*

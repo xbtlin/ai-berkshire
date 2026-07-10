@@ -1,123 +1,123 @@
-# 财务数据获取与交叉验证规范
+# Financial data acquisition and cross-validation specifications
 
-本规范适用于所有涉及企业财务数据的研究。**每个关键数据必须来自两个独立来源，误差>1%须标记。**
-
----
-
-## 数据源优先级
-
-### 美股（PDD、腾讯ADR、网易ADR等）
-
-| 优先级 | 来源 | URL | 获取方式 |
-|--------|------|-----|---------|
-| 1（主） | **macrotrends** | macrotrends.net/stocks/charts/{ticker} | 直接访问，无需注册 |
-| 2（副） | **stockanalysis** | stockanalysis.com/stocks/{ticker}/financials | 直接访问，无需注册 |
-| 原始一手 | SEC EDGAR | sec.gov/cgi-bin/browse-edgar | 10-K / 10-Q 原文 |
-
-### 港股（腾讯0700、网易9999、美团3690等）
-
-| 优先级 | 来源 | URL | 获取方式 |
-|--------|------|-----|---------|
-| 1（主） | **aastocks** | aastocks.com/tc/stocks/analysis/company-fundamental | 直接访问 |
-| 2（副） | **macrotrends**（ADR代码） | 腾讯用TCEHY，网易用NTES | 直接访问 |
-| 原始一手 | HKEX披露易 | hkexnews.hk | 年报PDF |
-
-### A股（三七互娱、吉比特等）
-
-| 优先级 | 来源 | URL | 获取方式 |
-|--------|------|-----|---------|
-| 1（主） | **东方财富** | eastmoney.com → 搜股票代码 → 财务报表 | 直接访问 |
-| 2（副） | **巨潮资讯** | cninfo.com.cn | 原始年报/季报PDF |
+This specification applies to all research involving corporate financial data. **Each key data must come from two independent sources, and errors >1% must be marked. **
 
 ---
 
-## 执行规范
+## Data source priority
 
-### 第一步：获取数据
+### US stocks (PDD, Tencent ADR, NetEase ADR, etc.)
 
-对每个财务指标（收入、净利润、毛利率、经营现金流、资产负债率等），分别从**来源1**和**来源2**取数。
+| Priority | Source | URL | How to obtain |
+|--------|------|-----|---------|
+| 1 (main) | **macrotrends** | macrotrends.net/stocks/charts/{ticker} | Direct access, no registration required |
+| 2 (Deputy) | **stockanalysis** | stockanalysis.com/stocks/{ticker}/financials | Direct access, no registration required |
+| Original First Hand | SEC EDGAR | sec.gov/cgi-bin/browse-edgar | 10-K / 10-Q Original Text |
 
-### 第二步：误差计算与标记
+### Hong Kong stocks (Tencent 0700, NetEase 9999, Meituan 3690, etc.)
+
+| Priority | Source | URL | How to obtain |
+|--------|------|-----|---------|
+| 1 (main) | **aastocks** | aastocks.com/tc/stocks/analysis/company-fundamental | Direct access |
+| 2 (Deputy) | **macrotrends** (ADR code) | Tencent uses TCEHY, NetEase uses NTES | Direct access |
+| Original First Hand | HKEX Disclosure | hkexnews.hk | Annual Report PDF |
+
+### A shares (Sanqi Interactive Entertainment, Gigabyte, etc.)
+
+| Priority | Source | URL | How to obtain |
+|--------|------|-----|---------|
+| 1 (main) | **Eastern Wealth** | eastmoney.com → Search stock code → Financial statements | Direct access |
+| 2 (Vice) | **Cninfo** | cninfo.com.cn | Original annual report/quarterly report PDF |
+
+---
+
+## Execution specifications
+
+### Step one: Get data
+
+For each financial indicator (revenue, net profit, gross profit margin, operating cash flow, asset-liability ratio, etc.), take the numbers from **Source 1** and **Source 2** respectively.
+
+### Step 2: Error calculation and marking
 
 ```
-误差率 = |来源1数值 - 来源2数值| / 来源1数值 × 100%
+Error rate = |Source 1 value - Source 2 value| / Source 1 value × 100%
 ```
 
-| 误差 | 处理方式 |
+| Error | Processing |
 |------|---------|
-| ≤ 1% | ✅ 一致，取来源1数值，标注两个来源 |
-| 1% ~ 5% | ⚠️ 标记"数据存在差异"，注明两个数值，说明可能原因（汇率/会计口径） |
-| > 5% | ❌ 标记"数据存在重大差异"，必须查原始财报核实，不得直接使用 |
+| ≤ 1% | ✅ Consistent, take the value of source 1 and mark two sources |
+| 1% ~ 5% | ⚠️ Mark "Data discrepancies", indicate two values, and explain the possible reasons (exchange rate/accounting standards) |
+| > 5% | ❌ Marked "Major differences in data", the original financial report must be checked for verification and may not be used directly |
 
-### 第三步：数据呈现格式
+### Step 3: Data presentation format
 
-每个关键数据必须按以下格式标注：
+Each key data must be labeled in the following format:
 
 ```
-收入：1,239亿元 ✅
-  - macrotrends: 1,241亿元
-  - stockanalysis: 1,237亿元
-  - 误差: 0.3%
+Revenue: 123.9 billion yuan ✅
+  - macrotrends: 124.1 billion yuan
+  - stockanalysis: 123.7 billion yuan
+  - Error: 0.3%
 ```
 
-差异示例：
+Difference example:
 ```
-净利润：245亿元 ⚠️ 数据存在差异
-  - macrotrends: 245亿元（GAAP）
-  - stockanalysis: 278亿元（Non-GAAP）
-  - 误差: 13.5% — 原因：会计口径不同（GAAP vs Non-GAAP）
+Net profit: 24.5 billion yuan ⚠️ There are differences in data
+  - macrotrends: 24.5 billion (GAAP)
+  - stockanalysis: 27.8 billion yuan (Non-GAAP)
+  - Error: 13.5% — Reason: different accounting standards (GAAP vs Non-GAAP)
 ```
 
 ---
 
-## 常见差异原因（不一定是数据错误）
+## Common reasons for differences (not necessarily data errors)
 
-| 原因 | 说明 |
+| Reason | Description |
 |------|------|
-| GAAP vs Non-GAAP | 最常见，尤其是利润类数据 |
-| 汇率换算 | 港币/人民币/美元换算时间点不同 |
-| 财年定义 | 自然年 vs 财年（如苹果财年10月结束） |
-| 合并口径 | 是否含少数股东权益 |
-| 数据更新滞后 | 某平台尚未更新最新一期财报 |
+| GAAP vs Non-GAAP | Most common, especially profit data |
+| Exchange rate conversion | Hong Kong dollar/renminbi/US dollar conversion time is different |
+| Fiscal year definition | Calendar year vs fiscal year (such as Apple’s fiscal year ends in October) |
+| Merger caliber | Whether minority shareholders’ interests are included |
+| Data update lags | A certain platform has not updated the latest financial report |
 
 ---
 
-## 特别规则
+## Special rules
 
-1. **未上市公司**（米哈游、莉莉丝等）：只有一手数据来源时，数据前标记 `[估计]`，不执行交叉验证
-2. **季度数据 vs 年度数据**：优先使用年度数据做交叉验证，季度数据部分来源可能有滞后
-3. **原始财报优先**：若两个来源均与原始财报（10-K/年报PDF）不符，以原始财报为准，标记来源错误
+1. **Unlisted companies** (MiHoYo, Lilith, etc.): When there are only primary data sources, mark `[estimate]` before the data, and no cross-validation is performed.
+2. **Quarterly data vs. annual data**: Priority is given to using annual data for cross-validation. Some sources of quarterly data may be lagging behind.
+3. **Original financial report takes precedence**: If both sources are inconsistent with the original financial report (10-K/annual report PDF), the original financial report shall prevail and the source will be marked as incorrect.
 
 ---
 
-## 股价与复权（历史序列必读）
+## Stock price and restoration of rights (must read for historical sequences)
 
-价格有三种口径，混用会让历史股价位置、长期涨幅、历史估值分位全部失真：
+There are three calibers of price. Mixing them will distort the historical stock price position, long-term growth rate, and historical valuation quantiles:
 
-| 口径 | 含义 | 用途 |
+| Caliber | Meaning | Purpose |
 |------|------|------|
-| 不复权 | 实际成交价，除权除息日跳空 | 仅用于"当前时点"快照 |
-| 前复权 | 以最新价为基准回调历史价 | 历史股价对比、N年涨幅、历史PE band 一律用它 |
-| 后复权 | 以上市首日为基准前推 | 计算历史总回报/年化收益 |
+| No restoration of rights | Actual transaction price, gap on ex-rights and ex-dividend days | Only used for "current point in time" snapshot |
+| Pre-right restoration | Recall the historical price based on the latest price | Historical stock price comparison, N-year increase, historical PE band, always use it |
+| Post-resumption of rights | Forward based on the first day of listing | Calculate historical total return/annualized return |
 
-规则：
+Rules:
 
-1. 涉及历史价格的分析统一用**前复权**，且同一分析内**不得混用**复权与不复权来源。
-2. 当前市值/当前PE 用**当前实际股价 × 当前总股本**即可，与复权无关——复权只影响历史序列。
-3. 跨越拆股/大比例送转的每股指标（历史EPS、历史股价），必须复权还原后再同比。
-4. 总回报/年化收益需计入分红（后复权已含），只看价格涨幅会低估。
-5. 增发/回购后市值验算以最新总股本为准（`financial_rigor.py verify-market-cap` 偏差>5% 会提示核对）。
+1. For analysis involving historical prices, **previous reinstatement** shall be uniformly used, and **reinstatement and non-reinstatement sources shall not be mixed within the same analysis.
+2. The current market value/current PE can be calculated by using **current actual stock price × current total equity**, which has nothing to do with re-righting - re-righting only affects the historical sequence.
+3. Per-share indicators (historical EPS, historical stock price) that exceed stock splits/large-proportion transfers must be restored and then compared with the same period last year.
+4. Total return/annualized income needs to be included in dividends (included in post-rights restoration), and it will be underestimated if you only look at the price increase.
+5. The market value calculation after additional issuance/repurchase shall be based on the latest total share capital (`financial_rigor.py verify-market-cap` will prompt for verification if the deviation is >5%).
 
 ---
 
-## 快速索引
+## Quick index
 
-| 场景 | 主要来源 | 备用来源 |
+| Scenario | Primary Source | Alternate Source |
 |------|---------|---------|
-| PDD / 拼多多 | macrotrends.net/stocks/charts/PDD | stockanalysis.com/stocks/pdd |
-| 腾讯 | macrotrends.net/stocks/charts/TCEHY | aastocks（0700.HK） |
-| 网易 | macrotrends.net/stocks/charts/NTES | aastocks（9999.HK） |
-| 三七互娱 | eastmoney.com（002555） | cninfo.com.cn |
-| 吉比特 | eastmoney.com（603444） | cninfo.com.cn |
+| PDD / Pinduoduo | macrotrends.net/stocks/charts/PDD | stockanalysis.com/stocks/pdd |
+| Tencent | macrotrends.net/stocks/charts/TCEHY | aastocks (0700.HK) |
+| NetEase | macrotrends.net/stocks/charts/NTES | aastocks (9999.HK) |
+| Sanqi Interactive Entertainment | eastmoney.com (002555) | cninfo.com.cn |
+| Gigabit | eastmoney.com (603444) | cninfo.com.cn |
 | Nintendo | macrotrends.net/stocks/charts/NTDOY | stockanalysis.com/stocks/ntdoy |
 | Capcom | macrotrends（CCOEY） | stockanalysis（CCOEY） |
