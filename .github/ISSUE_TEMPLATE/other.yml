@@ -1,0 +1,26 @@
+name: 💬 讨论 / 新 Skill 提议 / 其他
+description: 新 skill 提议、用法讨论、致谢或一般反馈（非报错/数据/建议类）
+title: "[讨论] "
+labels: ["discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这里用于**非问题类**的交流：新 skill 提议、用法讨论、致谢等。
+        如果你是要报告 skill 报错、数据错误或提改进建议，请返回选择对应的专用模板（那些需要可复现信息）。
+  - type: textarea
+    id: content
+    attributes:
+      label: 内容
+      description: 说清楚你想讨论/提议什么。若是新 skill 提议，请说明它解决什么研究场景、和现有 skill 的边界。
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我已搜索过现有 issue，确认没有重复
+          required: true
+        - label: 这不是 skill 报错 / 数据错误 / 改进建议（那些应走专用模板）
+          required: true

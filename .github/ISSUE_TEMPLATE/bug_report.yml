@@ -1,0 +1,88 @@
+name: 🐞 Skill 报错 / 无法运行
+description: 某个 skill 执行报错、卡住，或工具/参数缺失导致跑不起来
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈 🙏 **请务必给出可复现的具体信息**——没有复现信息的报错无法定位，会被要求补充或直接关闭。
+        提交前请先搜索是否已有相同 issue。
+  - type: dropdown
+    id: skill
+    attributes:
+      label: 涉及的 Skill
+      description: 报错发生在哪个 skill？只选一个，且确保标题与正文描述的是同一个（曾出现标题写 investment-research、正文写 investment-team 的情况）。
+      options:
+        - bottleneck-hunter
+        - deep-company-series
+        - dyp-ask
+        - earnings-review
+        - earnings-team
+        - financial-data
+        - industry-funnel
+        - industry-research
+        - investment-checklist
+        - investment-research
+        - investment-team
+        - management-deep-dive
+        - news-pulse
+        - portfolio-review
+        - private-company-research
+        - quality-screen
+        - thesis-drift
+        - thesis-tracker
+        - wechat-article
+        - 不确定
+        - 其他 / 涉及多个
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: 你运行的完整命令
+      description: 一字不差地贴出你实际输入的命令。
+      placeholder: "/investment-team 美团"
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: 期望结果 vs 实际结果
+      description: 你期望发生什么？实际发生了什么？请**完整贴出报错信息/日志**，不要只描述。
+      placeholder: |
+        期望：正常生成四大师并行分析报告
+        实际：报错 "TeamCreate is not a valid tool"，流程中断
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 复现步骤
+      description: 从头到尾怎么操作能重现？（安装方式、运行环境、具体操作顺序）
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: 使用的模型
+      description: 不同模型表现可能不同，这一项对定位至关重要。
+      placeholder: "Opus 4.8 / Sonnet / 其他"
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: 客户端及版本
+      placeholder: "Claude Code CLI (版本号) / Codex / IDE 插件"
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我已搜索过现有 issue，确认没有重复
+          required: true
+        - label: 我已提供可复现的完整信息（命令、报错、模型、客户端）
+          required: true

@@ -1,4 +1,6 @@
-中文 | [English](README_EN.md)
+中文 | [English](README_EN.md) | [日本語](README_JA.md)
+
+[![GitHub Trending](https://trendshift.io/api/badge/repositories/63696)](https://trendshift.io/repositories/63696)
 
 # AI Berkshire - AI 时代的价值投资研究框架
 
@@ -6,9 +8,13 @@
 >
 > 用 AI 重新定义投资研究的深度与效率。
 
-**AI Berkshire** 是一套基于 [Claude Code](https://claude.ai/code) 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
+**AI Berkshire** 是一套同时兼容 Claude Code 与 Codex 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
 
-一个人 + Claude = 一个投研团队。
+一个人 + Claude Code / Codex = 一个投研团队。
+
+> 📮 **仓库是全量框架，公众号是精选。** 真正值得深研的公司，加上报告之外我自己的判断与取舍，都在微信公众号「**复利炼丹炉**」——[扫码关注 ↓](#精选研究首发于公众号)
+
+[实盘业绩](#real-track-record) · [为什么不能直接问AI](#为什么不能直接问-ai) · [Skills 一览](#skills-一览19个) · [快速开始](#快速开始) · [实战报告](#实战研究报告) · [设计理念](#设计理念) · [公众号](#精选研究首发于公众号)
 
 ---
 
@@ -20,13 +26,13 @@
 
 <img src="assets/2024-returns.jpg" width="300" />
 
-### 2025 年至今收益：+66.38%
+### 2025 全年收益：+66.38%
 
 <img src="assets/2025-returns.jpg" width="300" />
 
 ### 与主要指数对比
 
-| 指标 | 2024 全年 | 2025 至今 |
+| 指标 | 2024 全年 | 2025 全年 |
 |------|----------|----------|
 | **本框架实盘** | **+69.29%** | **+66.38%** |
 | 恒生指数 | +17.67% | +27.77% |
@@ -41,6 +47,14 @@
 **两年累计实盘收益超 146万元**，连续两年大幅跑赢全球主要指数。
 
 > *免责声明：历史收益不代表未来表现。截图来自富途证券真实账户。*
+
+### 精选研究首发于公众号
+
+仓库里是完整的框架和全量报告，公众号里是**精选**——真正值得深研的公司，加上报告之外我自己的判断与取舍：
+
+<img src="assets/wechat-qr.png" width="160" alt="微信公众号：复利炼丹炉" />
+
+**复利炼丹炉** —— 用 AI 炼投研这颗丹。
 
 ---
 
@@ -134,18 +148,9 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 一个人直接问AI，上下文窗口是一个。4个Agent并行，等于4倍的搜索量、4倍的信息源、4个独立视角。
 
-```
-┌─────────────────────────────────────────────┐
-│              Team Lead (你)                  │
-│         统筹协调 · 汇总研判                  │
-├──────┬──────┬──────────┬───────────┤
-│ Agent 1    │ Agent 2    │ Agent 3        │ Agent 4         │
-│ 商业模式   │ 财务估值    │ 行业竞争       │ 风险管理层       │
-│ 段永平视角 │ 巴菲特视角  │ 芒格视角       │ 李录视角         │
-└──────┴──────┴──────────┴───────────┘
-        ↓ 并行研究，实时汇报进度 ↓
-              最终综合报告
-```
+<p align="center">
+  <img src="assets/team-core.svg" alt="Team Lead 并行调度四大师 Agent" width="720" />
+</p>
 
 ### 一句话总结
 
@@ -156,19 +161,18 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 ## 整体架构
 
 <p align="center">
-  <img src="assets/architecture.png" alt="AI Berkshire 整体架构" width="600" />
+  <img src="assets/architecture.svg" alt="AI Berkshire 整体架构" width="760" />
 </p>
 
-> 图源：[`assets/architecture.mmd`](assets/architecture.mmd)（Mermaid 可编辑源码）
 
 **三层设计哲学**：
-- **Skill 层**：把"你要做什么"抽象成 16 个明确入口——深度研究、财报分析、行业筛选、持仓管理、思维工具，按场景选用
-- **Agent 层**：每个 skill 内部都是 4 个 Agent 并行——它们各自独立搜索、独立判断、互相挑战，最后由 Team Lead 综合
+- **Skill 层**：把"你要做什么"抽象成 19 个明确入口——深度研究、财报分析、行业筛选、持仓管理、思维工具，按场景选用
+- **Agent 层**：团队型 skill（如 `/investment-team`、`/earnings-team`）由 Team Lead 并行调度 4 个大师视角 Agent——各自独立搜索、独立判断、互相挑战，最后综合研判；轻量 skill 不经过这一层，直连工具快进快出
 - **工具层**：精确计算、实时检索、报告抽检——保证每份报告的数据严谨性可验证
 
 ---
 
-## Skills 一览（16个）
+## Skills 一览（19个）
 
 ### 🔬 深度研究类
 
@@ -194,6 +198,7 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 | [`/industry-research`](skills/industry-research.md) | 产业链全景扫描 | 研究一个行业的全部投资机会（按产业链环节切片） |
 | [`/industry-funnel`](skills/industry-funnel.md) | 行业漏斗筛选 | 全市场 → 粗筛 ≤10 家 → 终选 3 家深度分析 |
 | [`/quality-screen`](skills/quality-screen.md) | 去劣筛选（7条硬指标） | 快速排除非一流公司，支持个股/行业/指数/主题批量筛 |
+| [`/bottleneck-hunter`](skills/bottleneck-hunter.md) | 供应链瓶颈猎手 | 从超级趋势出发，寻找产业链物理瓶颈和套利机会 |
 | [`/investment-checklist`](skills/investment-checklist.md) | 巴菲特买入前 Checklist | 六关快速筛选，10分钟决定是否值得深入 |
 
 ### 📈 持仓管理类
@@ -202,6 +207,7 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 |-------|------|---------|
 | [`/portfolio-review`](skills/portfolio-review.md) | 组合管理与优化 | 从"研究公司"升级到"管理组合"——仓位、集中度、再平衡 |
 | [`/thesis-tracker`](skills/thesis-tracker.md) | 投资论文追踪 | 买入后的纪律系统：持续跟踪论文是否被证伪 |
+| [`/thesis-drift`](skills/thesis-drift.md) | 投资论文漂移检测 | 对比两份论文/报告，区分事实变化、估值变化与措辞变化 |
 | [`/news-pulse`](skills/news-pulse.md) | 股价异动快速归因 | 股价大涨/大跌时10分钟搞清"发生了什么" |
 
 ### 🧠 思维工具类
@@ -210,28 +216,110 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 |-------|------|---------|
 | [`/dyp-ask`](skills/dyp-ask.md) | 段永平问答 | 以段永平的方式思考任何问题——商业、投资、人生 |
 | [`/financial-data`](skills/financial-data.md) | 财务数据获取与交叉验证规范 | 确保关键数据来自2个独立来源，误差>1%告警 |
+| [`/wechat-article`](skills/wechat-article.md) | 微信公众号文章 | 作者、编辑、读者三Agent协作，产出可发布文章 |
 
 ---
 
 ## 快速开始
 
-### 1. 安装 Claude Code
+### 成本与模型选择
+
+深度投研类 Skill 默认会进行多轮研究、交叉验证和多 Agent 综合判断，因此 token 消耗较高，这是为了换取更完整的商业、财务、行业和风险分析。
+
+如果是真实投资决策中高风险、高重要性的判断，维护者的观点是：最强模型通常更可能带来更好的分析 ROI，不建议只为节省模型成本而牺牲关键判断质量。轻量模型更适合做初筛、摘要或低风险问题；涉及护城河、估值、管理层和风险交叉判断时，应预期分析质量会更依赖模型能力。
+
+想控制成本时，优先调整 workflow，而不是期待完整深度研究变得便宜：快速排除公司可先用 [`/quality-screen`](skills/quality-screen.md)，股价异动归因可用 [`/news-pulse`](skills/news-pulse.md)。只有当结果值得继续深入时，再运行 [`/investment-research`](skills/investment-research.md) 或 [`/investment-team`](skills/investment-team.md)。
+
+### 1. 安装 AI 客户端
+
+本仓库保留同一套 canonical workflow，并分别提供 Claude Code commands 与 Codex skills。按你使用的客户端安装即可。
+
+Claude Code 用户：
 
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
+Codex 用户：
+
+```bash
+# macOS / Linux
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+
+# 或使用 npm
+npm install -g @openai/codex
+
+# 或使用 Homebrew
+brew install --cask codex
+
+# 验证安装
+codex --version
+```
+
+Windows 用户可使用官方 PowerShell 安装命令：`powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`。
+
+如果 `codex --version` 能正常输出版本号，就可以继续安装本项目的 Codex skills。
+
+#### 减少授权确认
+
+这些 skills 会频繁调用工具，Claude Code 默认会逐次请求授权确认。这个行为来自 Claude Code 客户端权限机制，不是本仓库可以修改的默认设置。
+
+如果你信任当前 workflow，并且在可信环境中运行，可以用 Claude Code 的跳过权限确认模式启动：
+
+```bash
+claude --dangerously-skip-permissions
+```
+
+注意：该模式会关闭 Claude Code 的工具审批保护，只应在你信任仓库、命令和工作目录的情况下使用。
+
 ### 2. 安装 Skills
 
-将 `skills/` 目录下的 `.md` 文件复制到你的 Claude Code commands 目录：
+Claude Code 用户安装（macOS / Linux）：
 
 ```bash
 # 克隆仓库
 git clone https://github.com/xbtlin/ai-berkshire.git
 
 # 复制 skills 到 Claude Code 全局 commands 目录
-cp ai-berkshire/skills/*.md ~/.claude/commands/
+cd ai-berkshire
+./scripts/install-claude-commands.sh
 ```
+
+Claude Code 用户安装（Windows PowerShell / Command Prompt）：
+
+```bat
+git clone https://github.com/xbtlin/ai-berkshire.git
+cd ai-berkshire
+.\scripts\install-claude-commands.bat
+```
+
+Codex 用户安装（macOS / Linux）：
+
+```bash
+# 克隆仓库
+git clone https://github.com/xbtlin/ai-berkshire.git
+
+# 生成并安装 Codex skills 到 ~/.codex/skills
+cd ai-berkshire
+./scripts/install-codex-skills.sh
+
+# 可选：安装 Codex slash prompts 到 ~/.codex/prompts
+# 用于获得接近 Claude Code 的 /investment-research 体验
+./scripts/install-codex-prompts.sh
+```
+
+Codex 用户安装（Windows PowerShell / Command Prompt）：
+
+```bat
+git clone https://github.com/xbtlin/ai-berkshire.git
+cd ai-berkshire
+.\scripts\install-codex-skills.bat
+
+REM 可选：安装 Codex slash prompts
+.\scripts\install-codex-prompts.bat
+```
+
+仓库同时维护三套入口：`skills/*.md` 是 Claude Code command 源文件；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 从 `skills/*.md` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层。
 
 ### 3. 使用
 
@@ -253,15 +341,35 @@ cp ai-berkshire/skills/*.md ~/.claude/commands/
 /industry-research 核电
 /industry-funnel AI算力
 /quality-screen 恒生指数成分股
+/bottleneck-hunter AI基础设施
 /investment-checklist 茅台, 英伟达, 苹果
 
 # 持仓管理
 /portfolio-review 腾讯30%, 美团20%, 茅台20%, 现金30%
 /thesis-tracker 拼多多
+/thesis-drift 拼多多 reports/拼多多-thesis-2025Q4.md reports/拼多多-thesis-2026Q1.md
 /news-pulse 腾讯
 
 # 思维工具
 /dyp-ask 拼多多的护城河到底在哪里？
+/wechat-article 美团
+```
+
+在 Codex 中安装后重启 Codex，然后直接按 skill 名称描述任务，例如：
+
+```text
+使用 investment-research 研究腾讯
+使用 earnings-review 分析 PDD 2025年报
+使用 industry-funnel 筛选 AI算力
+使用 bottleneck-hunter 扫描 AI基础设施瓶颈
+使用 thesis-drift 对比拼多多两份投资论文
+使用 wechat-article 写美团投研文章
+```
+
+如果安装了 Codex slash prompts，重启 Codex 后也可以在 `/` 菜单里搜索这些 prompt。Codex 官方的 custom prompt 入口通常显示为 `prompts:<name>`，例如：
+
+```text
+/prompts:investment-research 腾讯
 ```
 
 ---
@@ -547,23 +655,11 @@ cp ai-berkshire/skills/*.md ~/.claude/commands/
 
 ### 四大师方法论融合
 
-```
-              ┌──────────────────┐
-              │    段永平         │
-              │  "对的生意"       │
-              │  商业模式本质      │
-              └────────┬─────────┘
-                       │
-    ┌──────────────────┼──────────────────┐
-    │                  │                  │
-    ▼                  ▼                  ▼
-┌────────┐     ┌──────────┐      ┌────────┐
-│ 巴菲特  │     │   芒格    │      │  李录   │
-│ 护城河  │     │ 逆向思考  │      │ 文明趋势│
-│ 安全边际│     │ 风险清单  │      │ 范式转移│
-│ 管理层  │     │ 偏误自查  │      │ 产业价值│
-└────────┘     └──────────┘      └────────┘
-```
+**段永平 · "对的生意"**——商业模式本质，是其余三个视角的共同起点：
+
+| 巴菲特 | 芒格 | 李录 |
+|:---:|:---:|:---:|
+| 护城河<br>安全边际<br>管理层 | 逆向思考<br>风险清单<br>偏误自查 | 文明趋势<br>范式转移<br>产业价值 |
 
 四位大师不是简单的分工，而是设计来**互相挑战**的：
 - 段永平说"好生意"，芒格会问"怎么会死"
@@ -585,22 +681,8 @@ cp ai-berkshire/skills/*.md ~/.claude/commands/
 
 ---
 
-## 项目路线图
+## 未来方向
 
-- [x] 四大师综合分析框架（`/investment-research`）
-- [x] 多Agent并行投研团队（`/investment-team`）
-- [x] 巴菲特买入前 Checklist（`/investment-checklist`）
-- [x] 产业链全景扫描（`/industry-research` + `/industry-funnel`）
-- [x] 未上市公司研究框架（`/private-company-research`）
-- [x] 金融严谨性工具（精确算术、市值验算、多源交叉验证、Benford定律检测）
-- [x] 股价异动快速归因（`/news-pulse` 4 维并行侦察）
-- [x] 财报精读（`/earnings-review` + `/earnings-team` 四大师并行解读）
-- [x] 投资组合管理（`/portfolio-review` 仓位审视与再平衡）
-- [x] 投资论文追踪（`/thesis-tracker` 买入后纪律系统）
-- [x] 管理层纵深研究（`/management-deep-dive`）
-- [x] 去劣快速筛选（`/quality-screen` 7条硬指标排除）
-- [x] 段永平思维模拟（`/dyp-ask`）
-- [x] 深度系列长文（`/deep-company-series` 8篇12万字）
 - [ ] 历史回测：AI研报 vs 实际股价表现
 - [ ] 宏观经济周期分析框架
 - [ ] 基于MCP的实时数据接入（Wind/Bloomberg/Yahoo Finance）
@@ -625,6 +707,6 @@ MIT License
 
 ## Star History
 
-如果这个项目对你有帮助，请给一个 Star 支持！
+如果这个项目对你有帮助，请给一个 Star 支持！精选公司研究与个人判断首发于微信公众号「**复利炼丹炉**」（二维码见[文首](#精选研究首发于公众号)）。
 
 [![Star History Chart](https://api.star-history.com/svg?repos=xbtlin/ai-berkshire&type=Date)](https://star-history.com/#xbtlin/ai-berkshire&Date)

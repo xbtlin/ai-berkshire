@@ -96,9 +96,9 @@ description: 公司新闻脉搏：股价异动时快速归因。用 4 个并行 
   1. **卖方评级变动**：高盛、摩根、中金等最近的评级/目标价调整
   2. **机构持仓变化**：13F 披露（美股）、港股通持仓、北上资金流向
   3. **做空数据**：做空比例、新发布的做空报告（如有）
-  4. **大 V 观点**：可调用 `python3 ~/ai-berkshire/tools/xueqiu_scraper.py` 抓段永平等大 V 最近相关发言
+  4. **大 V 观点**：可调用 `python3 tools/xueqiu_scraper.py` 抓段永平等大 V 最近相关发言
      - 段永平 user_id: `1247347556`
-     - 命令示例：`python3 ~/ai-berkshire/tools/xueqiu_scraper.py --user-id 1247347556 --keywords {公司名},{股票代码} --output /tmp/dyp-{公司名}.md`
+     - 命令示例：`python3 tools/xueqiu_scraper.py --user-id 1247347556 --keywords {公司名},{股票代码} --output /tmp/dyp-{公司名}.md`
      - 仅在该公司是段永平/李录关注标的时调用，否则跳过节省时间
   5. **传言与小作文**：媒体未证实的传言、社交媒体讨论热点（雪球/X/Reddit）
   6. **技术面信号**：是否触及关键支撑/阻力、是否有大宗交易、融资融券异常

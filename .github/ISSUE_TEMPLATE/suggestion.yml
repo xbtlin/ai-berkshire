@@ -1,0 +1,45 @@
+name: 💡 改进建议
+description: 对报告格式、skill 流程或框架的改进建议
+title: "[建议] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢建议 🙏 **请附具体、可复现的例子**：在哪份报告/哪张表看到的问题，以及期望改成什么样。
+        只有抽象描述（如"读起来不方便"）而没有具体出处的建议很难落地，会被要求补充。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你观察到的问题 + 具体出处（必填）
+      description: 在哪份报告、哪一段或哪张表看到的？请贴链接或截图，最好把有问题的原文片段贴出来。
+      placeholder: |
+        reports/全球AI赛道10家核心标的筛选-20260628.md 的市值对比表，
+        同一列里 NVIDIA 用美元、SK海力士用韩元，没法横向比大小。
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: 期望的改进效果（必填）
+      description: 最好给"当前长这样 → 期望长这样"的对比，越具体越容易被采纳。
+      placeholder: |
+        当前：市值列混用美元/韩元
+        期望：跨市场对比表里，绝对量级的列统一换算成美元并注明汇率
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充说明（选填）
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我已搜索过现有 issue，确认没有重复
+          required: true
+        - label: 我已提供具体出处和期望效果，而非仅抽象描述
+          required: true

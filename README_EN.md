@@ -1,4 +1,6 @@
-English | [中文](README.md)
+English | [中文](README.md) | [日本語](README_JA.md)
+
+[![GitHub Trending](https://trendshift.io/api/badge/repositories/63696)](https://trendshift.io/repositories/63696)
 
 # AI Berkshire — Value Investing Research Framework for the AI Era
 
@@ -6,9 +8,11 @@ English | [中文](README.md)
 >
 > Redefining the depth and efficiency of investment research with AI.
 
-**AI Berkshire** is a collection of investment research skills built on [Claude Code](https://claude.ai/code). It systematizes the methodologies of four value investing masters — Buffett, Munger, Duan Yongping, and Li Lu — and delivers professional-grade research through AI Agents.
+**AI Berkshire** is a collection of investment research skills compatible with both Claude Code and Codex. It systematizes the methodologies of four value investing masters — Buffett, Munger, Duan Yongping, and Li Lu — and delivers professional-grade research through AI Agents.
 
-One person + Claude = an entire investment research team.
+One person + Claude Code / Codex = an entire investment research team.
+
+[Track Record](#real-track-record) · [Why Not Just Ask AI?](#why-cant-you-just-ask-ai-directly) · [Skills](#skills-overview-19-skills) · [Quick Start](#quick-start) · [Reports](#live-research-reports) · [Design Philosophy](#design-philosophy)
 
 ---
 
@@ -20,13 +24,13 @@ One person + Claude = an entire investment research team.
 
 <img src="assets/2024-returns.jpg" width="300" />
 
-### 2025 Year-to-Date Return: +66.38%
+### 2025 Full-Year Return: +66.38%
 
 <img src="assets/2025-returns.jpg" width="300" />
 
 ### Benchmark Comparison
 
-| Benchmark | 2024 Full Year | 2025 YTD |
+| Benchmark | 2024 Full Year | 2025 Full Year |
 |-----------|---------------|----------|
 | **This Framework (Live)** | **+69.29%** | **+66.38%** |
 | Hang Seng Index | +17.67% | +27.77% |
@@ -134,19 +138,9 @@ AI Berkshire ensures: **Same input → structurally consistent, equally deep out
 
 Ask AI directly, and you have one context window. Four parallel Agents means 4× the search volume, 4× the information sources, and 4 independent perspectives.
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                   Team Lead (You)                        │
-│            Coordinate · Synthesize · Decide              │
-├──────────┬──────────┬──────────────┬───────────────┤
-│ Agent 1        │ Agent 2        │ Agent 3              │ Agent 4               │
-│ Business Model │ Financials     │ Industry &           │ Risk &                │
-│ Duan Yongping  │ Buffett        │ Competition          │ Management            │
-│                │                │ Munger               │ Li Lu                 │
-└──────────┴──────────┴──────────────┴───────────────┘
-         ↓ Parallel research, real-time progress ↓
-                  Final Synthesized Report
-```
+<p align="center">
+  <img src="assets/team-core-en.svg" alt="Team Lead orchestrating four master agents in parallel" width="720" />
+</p>
 
 ### In One Sentence
 
@@ -157,19 +151,18 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 ## Architecture
 
 <p align="center">
-  <img src="assets/architecture.png" alt="AI Berkshire Architecture" width="600" />
+  <img src="assets/architecture-en.svg" alt="AI Berkshire Architecture" width="760" />
 </p>
 
-> Source: [`assets/architecture.mmd`](assets/architecture.mmd) (editable Mermaid diagram)
 
 **Three-Layer Design Philosophy**:
-- **Skill Layer**: Abstracts "what you want to do" into 16 clear entry points — deep research, earnings analysis, industry screening, portfolio management, and thinking tools. Pick by scenario.
-- **Agent Layer**: Each skill runs 4 Agents in parallel — they search independently, judge independently, challenge each other, and the Team Lead synthesizes.
+- **Skill Layer**: Abstracts "what you want to do" into 19 clear entry points — deep research, earnings analysis, industry screening, portfolio management, and thinking tools. Pick by scenario.
+- **Agent Layer**: Team skills (e.g. `/investment-team`, `/earnings-team`) run 4 master-perspective Agents in parallel under a Team Lead — searching and judging independently, challenging each other before synthesis. Lightweight skills skip this layer and call tools directly.
 - **Tool Layer**: Exact-precision calculations, real-time web search, report auditing — ensures every report's data is rigorous and verifiable.
 
 ---
 
-## Skills Overview (16 Skills)
+## Skills Overview (19 Skills)
 
 ### 🔬 Deep Research
 
@@ -195,6 +188,7 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 | [`/industry-research`](skills/industry-research.md) | Industry value chain scan | Map all investment opportunities across an industry's value chain |
 | [`/industry-funnel`](skills/industry-funnel.md) | Industry funnel screening | Full market → rough cut ≤10 → final pick 3, with deep analysis |
 | [`/quality-screen`](skills/quality-screen.md) | Quality screen (7 hard metrics) | Quickly eliminate non-first-class companies; supports single stock / industry / index / thematic batch screening |
+| [`/bottleneck-hunter`](skills/bottleneck-hunter.md) | Supply-chain bottleneck hunter | Start from a supertrend and find physical supply-chain bottlenecks and arbitrage opportunities |
 | [`/investment-checklist`](skills/investment-checklist.md) | Buffett pre-buy checklist | Six gates, 10-minute decision on whether to dig deeper |
 
 ### 📈 Portfolio Management
@@ -203,6 +197,7 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 |-------|---------|-------------|
 | [`/portfolio-review`](skills/portfolio-review.md) | Portfolio review & optimization | Graduate from "researching companies" to "managing a portfolio" — sizing, concentration, rebalancing |
 | [`/thesis-tracker`](skills/thesis-tracker.md) | Investment thesis tracker | Post-buy discipline system: continuously track whether your thesis has been falsified |
+| [`/thesis-drift`](skills/thesis-drift.md) | Investment thesis drift detection | Compare two theses/reports — separate factual, valuation, and wording changes |
 | [`/news-pulse`](skills/news-pulse.md) | Price-move rapid attribution | When a stock surges or drops — figure out "what happened" in 10 minutes |
 
 ### 🧠 Thinking Tools
@@ -211,28 +206,110 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 |-------|---------|-------------|
 | [`/dyp-ask`](skills/dyp-ask.md) | Duan Yongping Q&A | Think through any question the Duan Yongping way — business, investing, life |
 | [`/financial-data`](skills/financial-data.md) | Financial data retrieval & cross-validation | Ensure key data comes from 2+ independent sources; alerts on >1% deviation |
+| [`/wechat-article`](skills/wechat-article.md) | WeChat article workflow | Author, editor, and reader Agents collaborate to produce a publishable article |
 
 ---
 
 ## Quick Start
 
-### 1. Install Claude Code
+### Cost & Model Selection
+
+Deep-research skills run multiple research passes, cross-source checks, and multi-agent synthesis by design, so they can consume a large number of tokens. That cost is part of getting fuller coverage across business quality, financials, industry structure, and risk.
+
+For high-stakes investment decisions, the maintainer's view is that the strongest model usually offers the best analysis ROI; saving model cost should not come at the expense of important judgment quality. Lighter models can be useful for triage, summarization, or low-risk questions, but moat, valuation, management, and risk synthesis should be expected to depend more heavily on model capability.
+
+To control cost, adjust the workflow before expecting a full deep-research run to become cheap: use [`/quality-screen`](skills/quality-screen.md) first to rule out weaker companies, or [`/news-pulse`](skills/news-pulse.md) for quick price-move attribution. Run [`/investment-research`](skills/investment-research.md) or [`/investment-team`](skills/investment-team.md) only when the result is worth deeper work.
+
+### 1. Install an AI Client
+
+This repository keeps one canonical workflow and provides Claude Code commands plus Codex skills. Install the client you plan to use.
+
+For Claude Code users:
 
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
+For Codex users on macOS / Linux:
+
+```bash
+# macOS / Linux
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+
+# Or use npm
+npm install -g @openai/codex
+
+# Or use Homebrew
+brew install --cask codex
+
+# Verify installation
+codex --version
+```
+
+Windows users can use the official PowerShell installer: `powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`.
+
+If `codex --version` prints a version, you can continue with this project's Codex skills installation.
+
+#### Reducing Approval Prompts
+
+These skills issue many tool calls, and Claude Code asks for approval for each one by default. That behavior comes from Claude Code's client-side permission system; it is not a repository default this project can change.
+
+If you trust the current workflow and are running in a trusted environment, start Claude Code in skip-permissions mode:
+
+```bash
+claude --dangerously-skip-permissions
+```
+
+Warning: this disables Claude Code's tool-approval guardrails. Use it only when you trust the repository, commands, and working directory.
+
 ### 2. Install Skills
 
-Copy the `.md` files from the `skills/` directory to your Claude Code commands directory:
+For Claude Code users on macOS / Linux:
 
 ```bash
 # Clone the repository
 git clone https://github.com/xbtlin/ai-berkshire.git
 
 # Copy skills to Claude Code global commands directory
-cp ai-berkshire/skills/*.md ~/.claude/commands/
+cd ai-berkshire
+./scripts/install-claude-commands.sh
 ```
+
+For Claude Code users on Windows PowerShell / Command Prompt:
+
+```bat
+git clone https://github.com/xbtlin/ai-berkshire.git
+cd ai-berkshire
+.\scripts\install-claude-commands.bat
+```
+
+For Codex users on macOS / Linux:
+
+```bash
+# Clone the repository
+git clone https://github.com/xbtlin/ai-berkshire.git
+
+# Generate and install Codex skills to ~/.codex/skills
+cd ai-berkshire
+./scripts/install-codex-skills.sh
+
+# Optional: install Codex slash prompts to ~/.codex/prompts
+# for a Claude Code-like /investment-research entry point
+./scripts/install-codex-prompts.sh
+```
+
+For Codex users on Windows PowerShell / Command Prompt:
+
+```bat
+git clone https://github.com/xbtlin/ai-berkshire.git
+cd ai-berkshire
+.\scripts\install-codex-skills.bat
+
+REM Optional: install Codex slash prompts
+.\scripts\install-codex-prompts.bat
+```
+
+The repository maintains three entry points: `skills/*.md` are the Claude Code command sources; `codex-skills/*/SKILL.md` are Codex skill packages generated from `skills/*.md` by `scripts/sync-codex-skills.py`; `codex-prompts/*.md` are an optional Codex slash-prompt compatibility layer.
 
 ### 3. Use
 
@@ -254,15 +331,35 @@ Invoke directly in Claude Code:
 /industry-research Nuclear Power
 /industry-funnel AI Compute
 /quality-screen Hang Seng Index Constituents
+/bottleneck-hunter AI Infrastructure
 /investment-checklist Moutai, NVIDIA, Apple
 
 # Portfolio Management
 /portfolio-review Tencent 30%, Meituan 20%, Moutai 20%, Cash 30%
 /thesis-tracker Pinduoduo
+/thesis-drift Pinduoduo reports/PDD-thesis-2025Q4.md reports/PDD-thesis-2026Q1.md
 /news-pulse Tencent
 
 # Thinking Tools
 /dyp-ask Where is Pinduoduo's real moat?
+/wechat-article Meituan
+```
+
+After installing for Codex, restart Codex and refer to skills by name, for example:
+
+```text
+Use investment-research to research Tencent
+Use earnings-review to analyze PDD 2025 annual results
+Use industry-funnel to screen AI compute
+Use bottleneck-hunter to scan AI infrastructure bottlenecks
+Use thesis-drift to compare two Pinduoduo theses
+Use wechat-article to write a Meituan investment article
+```
+
+If you install Codex slash prompts, restart Codex and search for them in the `/` menu. Codex's official custom prompt entry point usually appears as `prompts:<name>`, for example:
+
+```text
+/prompts:investment-research Tencent
 ```
 
 ---
@@ -549,24 +646,11 @@ Usage:
 
 ### Four-Master Methodology Synthesis
 
-```
-              ┌──────────────────┐
-              │   Duan Yongping   │
-              │  "The Right Biz"  │
-              │  Business Essence │
-              └────────┬─────────┘
-                       │
-    ┌──────────────────┼──────────────────┐
-    │                  │                  │
-    ▼                  ▼                  ▼
-┌────────┐     ┌──────────┐      ┌────────┐
-│ Buffett │     │  Munger   │      │ Li Lu  │
-│  Moat   │     │ Inversion │      │ Civ.   │
-│ Margin  │     │ Risk List │      │ Trends │
-│  of     │     │  Bias     │      │Paradigm│
-│ Safety  │     │  Audit    │      │ Shift  │
-└────────┘     └──────────┘      └────────┘
-```
+**Duan Yongping · "The Right Business"** — business essence, the shared starting point for the other three lenses:
+
+| Buffett | Munger | Li Lu |
+|:---:|:---:|:---:|
+| Moat<br>Margin of safety<br>Management | Inversion<br>Risk list<br>Bias audit | Civilization trends<br>Paradigm shifts<br>Industry value |
 
 The four masters aren't just dividing labor — they're designed to **challenge each other**:
 - Duan Yongping says "great business" → Munger asks "how could it die?"
@@ -588,22 +672,8 @@ The four masters aren't just dividing labor — they're designed to **challenge 
 
 ---
 
-## Roadmap
+## Future Directions
 
-- [x] Four-master comprehensive analysis framework (`/investment-research`)
-- [x] Multi-Agent parallel research team (`/investment-team`)
-- [x] Buffett pre-buy checklist (`/investment-checklist`)
-- [x] Industry value chain scan (`/industry-research` + `/industry-funnel`)
-- [x] Private company research framework (`/private-company-research`)
-- [x] Financial rigor tools (exact arithmetic, market cap verification, multi-source cross-validation, Benford's Law)
-- [x] Price-move rapid attribution (`/news-pulse` with 4-dimensional parallel recon)
-- [x] Earnings deep read (`/earnings-review` + `/earnings-team` four-master parallel interpretation)
-- [x] Portfolio management (`/portfolio-review` — position review & rebalancing)
-- [x] Investment thesis tracker (`/thesis-tracker` — post-buy discipline system)
-- [x] Management deep dive (`/management-deep-dive`)
-- [x] Quality screen (`/quality-screen` — 7 hard metrics rapid elimination)
-- [x] Duan Yongping thinking simulator (`/dyp-ask`)
-- [x] Deep company series (`/deep-company-series` — 8-part, ~120K words)
 - [ ] Historical backtesting: AI research reports vs. actual stock price performance
 - [ ] Macroeconomic cycle analysis framework
 - [ ] Real-time data feeds via MCP (Wind / Bloomberg / Yahoo Finance)

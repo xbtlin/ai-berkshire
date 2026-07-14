@@ -270,10 +270,12 @@ def cmd_financials(code: str):
 def cmd_search(keyword: str):
     """搜索股票代码。"""
     url = "https://searchadapter.eastmoney.com/api/suggest/get"
+    # Use env var or fall back to the public eastmoney search token
+    token = os.environ.get("EASTMONEY_SEARCH_TOKEN") or "D43BF722C8E33BDC906FB84D85E326E8"
     params = {
         "input": keyword,
         "type": "14",
-        "token": "D43BF722C8E33BDC906FB84D85E326E8",
+        "token": token,
         "count": "10",
     }
     data = _curl_json(url, params)

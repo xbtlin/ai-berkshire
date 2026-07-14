@@ -1,0 +1,60 @@
+name: 📉 数据错误（股价 / 市值 / 财务数据）
+description: 报告中的股价、市值、估值或财务数据有误
+title: "[Data] "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈 🙏 数据类问题**必须给出可核实的证据**：具体标的 + 错误数值 + 你认为的正确值 + **来源链接**。
+        只说"数据经常错"而不给具体例子，无法核实，会被要求补充。
+  - type: input
+    id: ticker
+    attributes:
+      label: 涉及的标的 / 股票代码
+      placeholder: "英伟达 NVDA / 腾讯 0700.HK / 三七互娱 002555"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 出现问题的 Skill 或报告
+      description: 哪个 skill 生成的、或 reports/ 下哪份报告（贴路径或链接）。
+      placeholder: "reports/腾讯/腾讯-research-20260408.md，或 /investment-research"
+    validations:
+      required: true
+  - type: textarea
+    id: wrong-value
+    attributes:
+      label: 错误的数据是什么
+      description: 哪个字段（股价/市值/PE/收入……）、报告里显示的值是多少。
+      placeholder: "报告写『市值 4.33 万亿港元』"
+    validations:
+      required: true
+  - type: textarea
+    id: correct-value
+    attributes:
+      label: 你认为的正确值 + 来源（必填）
+      description: 正确值应该是多少？**必须附来源链接**（富途/东财/官方财报等），并说明是否涉及复权、送转、增发、汇率等口径问题。
+      placeholder: |
+        正确应为 ~4.65 万亿港元。
+        来源：https://www.futunn.com/stock/00700-HK
+        原因：报告用的总股本是增发前的旧值 / 历史价未做前复权
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 复现命令 / 步骤
+      placeholder: "/investment-research 腾讯"
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我已搜索过现有 issue，确认没有重复
+          required: true
+        - label: 我已提供正确值及可核实的来源链接
+          required: true

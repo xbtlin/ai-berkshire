@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 934" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowLoop" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#b9b8b0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- 画布 -->
+  <rect x="0.5" y="0.5" width="799" height="933" rx="14" fill="#fcfcfb" stroke="#e5e4e0"/>
+
+  <!-- 标题 -->
+  <text x="28" y="40" font-size="20" font-weight="700" fill="#0b0b0b">AI Berkshire · 三层架构</text>
+  <text x="774" y="40" font-size="12" fill="#8a897f" text-anchor="end">一次投资研究的完整路径</text>
+
+  <!-- 入口 -->
+  <rect x="250" y="56" width="300" height="36" rx="18" fill="#ffffff" stroke="#d8d7d2"/>
+  <text x="400" y="79" font-size="14.5" fill="#0b0b0b" text-anchor="middle">一个人 + Claude Code / Codex</text>
+  <line x1="400" y1="92" x2="400" y2="116" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="412" y="110" font-size="12" fill="#8a897f">按场景选择入口</text>
+
+  <!-- ① Skill 入口层 -->
+  <rect x="24" y="120" width="712" height="150" rx="12" fill="#f3f7fc" stroke="#d9e4f0"/>
+  <text x="44" y="150" font-size="16" font-weight="700" fill="#0b0b0b">① Skill 入口层</text>
+  <text x="716" y="150" font-size="12.5" fill="#52514e" text-anchor="end">19 个 Skill · 场景即入口</text>
+
+  <g>
+    <rect x="44" y="166" width="124" height="52" rx="9" fill="#ffffff" stroke="#dbe4ee"/>
+    <text x="106" y="189" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">深度研究</text>
+    <text x="106" y="208" font-size="11.5" fill="#8a897f" text-anchor="middle">5 个</text>
+
+    <rect x="180" y="166" width="124" height="52" rx="9" fill="#ffffff" stroke="#dbe4ee"/>
+    <text x="242" y="189" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">财报分析</text>
+    <text x="242" y="208" font-size="11.5" fill="#8a897f" text-anchor="middle">2 个</text>
+
+    <rect x="316" y="166" width="124" height="52" rx="9" fill="#ffffff" stroke="#dbe4ee"/>
+    <text x="378" y="189" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">行业筛选</text>
+    <text x="378" y="208" font-size="11.5" fill="#8a897f" text-anchor="middle">5 个</text>
+
+    <rect x="452" y="166" width="124" height="52" rx="9" fill="#ffffff" stroke="#dbe4ee"/>
+    <text x="514" y="189" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">组合管理</text>
+    <text x="514" y="208" font-size="11.5" fill="#8a897f" text-anchor="middle">4 个</text>
+
+    <rect x="588" y="166" width="124" height="52" rx="9" fill="#ffffff" stroke="#dbe4ee"/>
+    <text x="650" y="189" font-size="14" font-weight="700" fill="#0b0b0b" text-anchor="middle">思维工具</text>
+    <text x="650" y="208" font-size="11.5" fill="#8a897f" text-anchor="middle">3 个</text>
+  </g>
+
+  <text x="400" y="248" font-size="12" fill="#8a897f" text-anchor="middle">不知道用哪个？从 /quality-screen 快速排除开始，值得深挖再上团队型 skill · 完整清单见下方表格</text>
+
+  <line x1="400" y1="270" x2="400" y2="296" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="412" y="290" font-size="12" fill="#8a897f">团队型 skill · 并行调度</text>
+
+  <!-- 轻量 skill 旁路 -->
+  <line x1="40" y1="272" x2="40" y2="668" stroke="#b9b8b0" stroke-width="1.3" marker-end="url(#arrowLoop)"/>
+  <text x="27" y="470" font-size="11.5" fill="#8a897f" text-anchor="middle" transform="rotate(-90 27 470)">轻量 skill 直连工具层</text>
+
+  <!-- ② 多 Agent 并行核心 -->
+  <rect x="64" y="298" width="672" height="348" rx="12" fill="#faf6ee" stroke="#e3d9c4" stroke-width="1.4"/>
+  <text x="84" y="328" font-size="16" font-weight="700" fill="#0b0b0b">② 多 Agent 并行核心</text>
+  <text x="716" y="328" font-size="12.5" fill="#52514e" text-anchor="end">四大师方法论</text>
+
+  <!-- Team Lead -->
+  <rect x="250" y="342" width="300" height="36" rx="18" fill="#0b0b0b"/>
+  <text x="400" y="365" font-size="14" fill="#ffffff" text-anchor="middle">Team Lead · 统筹与综合研判</text>
+  <line x1="400" y1="378" x2="400" y2="398" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="412" y="394" font-size="11.5" fill="#8a897f">×4 并行</text>
+
+  <!-- 四大师 2×2 -->
+  <g>
+    <rect x="84" y="402" width="309" height="96" rx="10" fill="#ffffff" stroke="#e6ddc9"/>
+    <rect x="84" y="402" width="309" height="4.5" rx="2" fill="#2a78d6"/>
+    <text x="238" y="434" font-size="15" font-weight="700" fill="#0b0b0b" text-anchor="middle">段永平 · 商业模式</text>
+    <text x="238" y="458" font-size="12.5" fill="#52514e" text-anchor="middle">这是不是一门好生意？</text>
+    <text x="238" y="480" font-size="11" fill="#8a897f" text-anchor="middle">本分 · 不懂不碰</text>
+
+    <rect x="407" y="402" width="309" height="96" rx="10" fill="#ffffff" stroke="#e6ddc9"/>
+    <rect x="407" y="402" width="309" height="4.5" rx="2" fill="#1baf7a"/>
+    <text x="561" y="434" font-size="15" font-weight="700" fill="#0b0b0b" text-anchor="middle">巴菲特 · 财务估值</text>
+    <text x="561" y="458" font-size="12.5" fill="#52514e" text-anchor="middle">价格是否明显低于价值？</text>
+    <text x="561" y="480" font-size="11" fill="#8a897f" text-anchor="middle">能力圈 · 安全边际</text>
+
+    <rect x="84" y="514" width="309" height="96" rx="10" fill="#ffffff" stroke="#e6ddc9"/>
+    <rect x="84" y="514" width="309" height="4.5" rx="2" fill="#eda100"/>
+    <text x="238" y="546" font-size="15" font-weight="700" fill="#0b0b0b" text-anchor="middle">芒格 · 行业竞争</text>
+    <text x="238" y="570" font-size="12.5" fill="#52514e" text-anchor="middle">反过来想：它会怎么死？</text>
+    <text x="238" y="592" font-size="11" fill="#8a897f" text-anchor="middle">多元模型 · 逆向思维</text>
+
+    <rect x="407" y="514" width="309" height="96" rx="10" fill="#ffffff" stroke="#e6ddc9"/>
+    <rect x="407" y="514" width="309" height="4.5" rx="2" fill="#008300"/>
+    <text x="561" y="546" font-size="15" font-weight="700" fill="#0b0b0b" text-anchor="middle">李录 · 风险与管理层</text>
+    <text x="561" y="570" font-size="12.5" fill="#52514e" text-anchor="middle">十年后的确定性有多高？</text>
+    <text x="561" y="592" font-size="11" fill="#8a897f" text-anchor="middle">知识诚实 · 极度耐心</text>
+  </g>
+
+  <!-- 交叉质证徽章 -->
+  <rect x="345" y="494" width="110" height="24" rx="12" fill="#ffffff" stroke="#d8d7d2"/>
+  <text x="400" y="510" font-size="11.5" fill="#52514e" text-anchor="middle">⇄ 交叉质证</text>
+
+  <text x="400" y="632" font-size="12.5" fill="#52514e" text-anchor="middle">结论允许冲突——冲突本身就是信息</text>
+
+  <line x1="400" y1="646" x2="400" y2="672" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="412" y="666" font-size="12" fill="#8a897f">关键数字必须过工具，禁止心算</text>
+
+  <!-- ③ 工具与数据层 -->
+  <rect x="24" y="674" width="712" height="170" rx="12" fill="#f2f6f3" stroke="#d6e3d9"/>
+  <text x="44" y="704" font-size="16" font-weight="700" fill="#0b0b0b">③ 工具与数据层</text>
+  <text x="716" y="704" font-size="12.5" fill="#52514e" text-anchor="end">精确计算 · 实时数据 · 质量准出</text>
+
+  <g>
+    <rect x="44" y="720" width="330" height="48" rx="9" fill="#ffffff" stroke="#dbe6de"/>
+    <text x="209" y="740" font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="middle" font-family="'SF Mono',Menlo,Consolas,monospace">financial_rigor.py</text>
+    <text x="209" y="758" font-size="11" fill="#52514e" text-anchor="middle">Decimal 精确计算，拒绝心算</text>
+
+    <rect x="390" y="720" width="330" height="48" rx="9" fill="#ffffff" stroke="#dbe6de"/>
+    <text x="555" y="740" font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="middle" font-family="'SF Mono',Menlo,Consolas,monospace">report_audit.py</text>
+    <text x="555" y="758" font-size="11" fill="#52514e" text-anchor="middle">15% 抽检，不通过不发布</text>
+
+    <rect x="44" y="780" width="330" height="48" rx="9" fill="#ffffff" stroke="#dbe6de"/>
+    <text x="209" y="800" font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="middle" font-family="'SF Mono',Menlo,Consolas,monospace">WebSearch / WebFetch</text>
+    <text x="209" y="818" font-size="11" fill="#52514e" text-anchor="middle">实时行情与公告检索</text>
+
+    <rect x="390" y="780" width="330" height="48" rx="9" fill="#ffffff" stroke="#dbe6de"/>
+    <text x="555" y="800" font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="middle" font-family="'SF Mono',Menlo,Consolas,monospace">xueqiu_scraper.py</text>
+    <text x="555" y="818" font-size="11" fill="#52514e" text-anchor="middle">大 V 观点与市场情绪</text>
+  </g>
+
+  <line x1="400" y1="844" x2="400" y2="868" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="412" y="862" font-size="12" fill="#8a897f">抽检通过方可准出</text>
+
+  <!-- 输出 -->
+  <rect x="170" y="870" width="460" height="40" rx="20" fill="#0b0b0b"/>
+  <text x="400" y="895" font-size="14" fill="#ffffff" text-anchor="middle">结构化研究报告 · reports/{公司名}/*.md</text>
+
+  <!-- 追踪闭环 -->
+  <path d="M 630 890 H 764 V 195 H 744" fill="none" stroke="#b9b8b0" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#arrowLoop)"/>
+  <text x="778" y="545" font-size="11" fill="#8a897f" text-anchor="middle" transform="rotate(-90 778 545)">报告沉淀为论文基线 · 手动运行 thesis-tracker / drift 追踪</text>
+</svg>
