@@ -16,6 +16,7 @@ Usage (called automatically by Skills, no manual execution needed):
 """
 
 import argparse
+import ast
 import json
 import math
 import sys
@@ -294,23 +295,43 @@ def exact_calc(expr: str):
     print("精确计算 (Exact Calculator)")
     print("=" * 60)
 
-    # Safe evaluation: only allow numbers and arithmetic
-    allowed = set("0123456789.+-*/() eE")
-    if not all(c in allowed for c in expr.replace(" ", "")):
-        print(f"  ❌ 不安全的表达式: {expr}")
-        return None
-
     try:
-        # Replace scientific notation for Decimal compatibility
-        result = eval(expr, {"__builtins__": {}}, {})
-        d_result = exact(result)
+        tree = ast.parse(expr, mode="eval")
+        d_result = _evaluate_decimal_ast(tree.body, expr)
         print(f"  表达式: {expr}")
         print(f"  结果:   {fmt_number(d_result)}")
         print(f"  精确值: {d_result}")
-        return float(d_result)
-    except Exception as e:
+        return d_result
+    except (ArithmeticError, SyntaxError, ValueError) as e:
         print(f"  ❌ 计算错误: {e}")
         return None
+
+
+def _evaluate_decimal_ast(node: ast.AST, expr: str) -> Decimal:
+    """Evaluate a restricted arithmetic AST using Decimal throughout."""
+    if isinstance(node, ast.Constant) and isinstance(node.value, (int, float)):
+        source = ast.get_source_segment(expr, node)
+        if source is None:
+            raise ValueError("无法读取数字")
+        return Decimal(source)
+
+    if isinstance(node, ast.UnaryOp) and isinstance(node.op, (ast.UAdd, ast.USub)):
+        value = _evaluate_decimal_ast(node.operand, expr)
+        return value if isinstance(node.op, ast.UAdd) else -value
+
+    if isinstance(node, ast.BinOp):
+        left = _evaluate_decimal_ast(node.left, expr)
+        right = _evaluate_decimal_ast(node.right, expr)
+        if isinstance(node.op, ast.Add):
+            return _CTX.add(left, right)
+        if isinstance(node.op, ast.Sub):
+            return _CTX.subtract(left, right)
+        if isinstance(node.op, ast.Mult):
+            return _CTX.multiply(left, right)
+        if isinstance(node.op, ast.Div):
+            return _CTX.divide(left, right)
+
+    raise ValueError("仅支持数字与 +、-、*、/、() 运算")
 
 
 # ---------------------------------------------------------------------------
