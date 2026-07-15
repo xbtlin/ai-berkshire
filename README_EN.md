@@ -14,6 +14,8 @@ Beyond the core four-master framework, `/investor-council` adds source-grounded 
 
 One person + Claude Code / Codex = an entire investment research team.
 
+🌐 [Open the Investor Council Web UI](https://ai-berkshire-investor-council.vercel.app/) — select up to four complementary, source-grounded lenses from 11 investor philosophies by scenario and focus.
+
 [Track Record](#real-track-record) · [Why Not Just Ask AI?](#why-cant-you-just-ask-ai-directly) · [Skills](#skills-overview-20-skills) · [Quick Start](#quick-start) · [Reports](#live-research-reports) · [Design Philosophy](#design-philosophy)
 
 ---

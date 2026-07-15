@@ -29,7 +29,7 @@ AI Berkshire の強みは、投資家の考え方を単発のプロンプトで�
                                      └→ 非平均の条件付き結論
 ```
 
-併せて、基準コミットで再現した検証上の不整合も修正した。具体的には、十進計算での binary float 混入、1出典だけの「交差検証」、1出典または空の監査結果が `PASS` になる挙動、負数・ゼロの抽出欠落である。境界条件を含め、実装後は44件の自動テストが通過している。
+併せて、基準コミットで再現した検証上の不整合も修正した。具体的には、十進計算での binary float 混入、1出典だけの「交差検証」、1出典または空の監査結果が `PASS` になる挙動、負数・ゼロの抽出欠落である。Investor Council は日本語Web UIと読み取り専用APIでも利用できるようにし、境界条件を含めて実装後は55件の自動テストが通過している。
 
 ## 2. 基準コミットの構造と強み
 
@@ -207,12 +207,14 @@ registry は「本人そのもの」ではなく、公開資料から独自に�
 - [`tests/test_financial_rigor.py`](../tests/test_financial_rigor.py)：十進演算、科学表記、Python 3.7 AST 互換、`eval` 不使用、四則以外の拒否、全ペア1%境界、2出典、ゼロ除算、CLI 終了コード
 - [`tests/test_report_audit.py`](../tests/test_report_audit.py)：負数・ゼロ・内部空セル抽出、空・placeholder・第二出典欠落・同一出典・片側不一致の拒否、正常な二重検証、純粋 JSON 出力、CLI 終了コード
 - [`tests/test_generated_artifacts.py`](../tests/test_generated_artifacts.py)：全 canonical skill の Codex skill / prompt 対応、生成物の同期状態、README の skill 数
+- [`tests/test_investor_council_ja.py`](../tests/test_investor_council_ja.py)：30関心軸・7 scenario・11 investor の日本語化網羅性、非破壊変換、出典URL保持、未知IDのfail-closed
+- [`tests/test_web_api.py`](../tests/test_web_api.py)：API契約、入力上限、異常系、セキュリティヘッダー、静的公開設定、日本語レスポンス
 
 2026-07-16 JST の確認結果は次の通りである。
 
 ```text
 python3 -m unittest discover -s tests -v
-Ran 44 tests ... OK
+Ran 55 tests ... OK
 
 python3 tools/investor_council.py validate
 哲学レジストリは有効：11 investor / 7 scenario / reviewed_at 2026-07-16
@@ -223,6 +225,25 @@ python3 scripts/sync-codex-skills.py --check
 python3 scripts/sync-codex-prompts.py --check
 20 Codex prompts checked
 ```
+
+### 7.6 日本語Web UI、読み取り専用API、Vercel公開
+
+[Investor Council Web UI](https://ai-berkshire-investor-council.vercel.app/) を追加し、CLIを使わなくても scenario、レンズ数、追加の関心軸から評議会を選べるようにした。画面は [`public/index.html`](../public/index.html)、[`public/app.js`](../public/app.js)、[`public/styles.css`](../public/styles.css) の依存なし構成で、PCとモバイルに対応する。canonical registry の中国語本文を変更せず、[`tools/investor_council_ja.py`](../tools/investor_council_ja.py) が30関心軸、7 scenario、11 profileを日本語の表示用コピーへ非破壊変換する。英語名、ID、source title、source URLは保持する。
+
+[`api/index.py`](../api/index.py) はVercel Python Runtimeの標準 `BaseHTTPRequestHandler` と既存selectorを再利用する、状態を持たない読み取り専用APIである。
+
+| Method / endpoint | 役割 |
+|---|---|
+| `GET /api?view=health` | schema versionとregistry review日を含む死活確認 |
+| `GET /api?view=meta` | 日本語化した11 profileの概要、7 scenario、30関心軸、入力上限 |
+| `GET /api?view=investor&id={id}` | 1 profileの原則・問い・限界・哲学資料 |
+| `POST /api?view=select` | scenario、focus tag、明示lens、最大4件の上限から決定論的に選択 |
+
+POSTはUTF-8 JSONだけを受け付け、本文16 KiB、配列30件、文字列80文字、lens 1〜4件に制限する。未対応field、scenario、tag、lens、methodはfail-closedで拒否する。任意URL、ファイルpath、shell commandは入力にも実行経路にも持たない。CSP、`nosniff`、frame拒否、referrer・permissions policy、APIの`no-store`を設定した。
+
+Vercelの静的公開対象は [`vercel.json`](../vercel.json) の `outputDirectory=public` により3ファイルだけに限定した。`data/watchlist.json`、`tools/*.py`、`reports/`等は公開URLから取得できず、production buildでもreports、assets、tests、skills、researchをFunction bundleから除外した。Python 3.12は [`.python-version`](../.python-version) と [`pyproject.toml`](../pyproject.toml) で固定し、外部ライブラリは追加していない。
+
+2026-07-16 JSTにproduction URLで、トップページ、CSS/JS、health、meta、focus指定を含むselect、上限違反、非公開pathを実HTTPで確認した。結果は正常系200、上限違反422、`/data/watchlist.json`・`/tools/investor_council.py`・`/reports/example.md`はいずれも404であった。
 
 ## 8. 使い方
 
@@ -273,7 +294,20 @@ Claude Code の slash-command または Codex skill では、例えば次の入�
 
 実行時には、selector の出力だけで結論を出さず、対象企業について一つの evidence packet を先に作る。少なくとも時点・通貨・株式数・時価総額、5年と直近4四半期の財務、segment economics、競争、経営者と資本配分、評価、強気・弱気仮説、unknown を含める。重要数値は会社開示または取引所を含む二つの独立出典で検証する。
 
-### 8.3 公開前の最小確認
+### 8.3 Web UIとAPI
+
+ブラウザでは [公開Web UI](https://ai-berkshire-investor-council.vercel.app/) を開き、研究シナリオ、2〜4のレンズ数、任意の関心軸を選ぶ。これは対象企業の事実調査や売買判断を行う画面ではなく、次の調査で使う相補的な問いを選ぶ入口である。
+
+APIを直接使う場合の例は次の通りである。
+
+```bash
+curl -fsS -X POST \
+  'https://ai-berkshire-investor-council.vercel.app/api?view=select' \
+  -H 'Content-Type: application/json' \
+  --data '{"scenario":"company","focus_tags":["passive"],"lenses":[],"limit":4}'
+```
+
+### 8.4 公開前の最小確認
 
 ```bash
 python3 -m unittest discover -s tests -v
