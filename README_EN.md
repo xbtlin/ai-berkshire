@@ -440,7 +440,7 @@ Launches 4 AI Agents in parallel, simulating a real investment research team. Ea
 
 ### 3. `/investor-council` — Source-Grounded Multi-Investor Council
 
-Select up to four complementary perspectives from 11 source-grounded philosophy lenses. Every lens receives the same validated evidence packet before independent analysis and a structured cross-examination round.
+Select complementary perspectives from 11 source-grounded philosophy lenses: four by default and up to six, executed in batches when more than four are requested. Every lens receives the same validated evidence packet before independent analysis and a structured cross-examination round.
 
 ```text
 /investor-council NVIDIA | scenario=growth | lenses=auto | max=4

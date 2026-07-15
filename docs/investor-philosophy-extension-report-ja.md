@@ -239,7 +239,7 @@ python3 scripts/sync-codex-prompts.py --check
 | `GET /api?view=investor&id={id}` | 1 profileの原則・問い・限界・哲学資料 |
 | `POST /api?view=select` | scenario、focus tag、明示lens、最大4件の上限から決定論的に選択 |
 
-POSTはUTF-8 JSONだけを受け付け、本文16 KiB、配列30件、文字列80文字、lens 1〜4件に制限する。未対応field、scenario、tag、lens、methodはfail-closedで拒否する。任意URL、ファイルpath、shell commandは入力にも実行経路にも持たない。CSP、`nosniff`、frame拒否、referrer・permissions policy、APIの`no-store`を設定した。
+POSTはUTF-8 JSONだけを受け付け、本文16 KiB、各配列30件、各文字列80文字、`limit` 1〜4に制限する。明示lensは0〜`limit`件である。未対応field、scenario、tag、lens、methodはfail-closedで拒否する。任意URL、ファイルpath、shell commandは入力にも実行経路にも持たない。CSP、`nosniff`、frame拒否、referrer・permissions policy、APIの`no-store`を設定した。CLI / skillは既定4・最大6 lensを許可し、5件以上を分割実行するが、Web UI / APIは一つの評議会を最大4 lensに限定する。
 
 Vercelの静的公開対象は [`vercel.json`](../vercel.json) の `outputDirectory=public` により3ファイルだけに限定した。`data/watchlist.json`、`tools/*.py`、`reports/`等は公開URLから取得できず、production buildでもreports、assets、tests、skills、researchをFunction bundleから除外した。Python 3.12は [`.python-version`](../.python-version) と [`pyproject.toml`](../pyproject.toml) で固定し、外部ライブラリは追加していない。
 

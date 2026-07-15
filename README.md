@@ -449,7 +449,7 @@ REM 可选：安装 Codex slash prompts
 
 ### 3. `/investor-council` — 有出处的多投资家评议会
 
-按研究场景从 11 个出典可追溯的哲学 lens 中选择最多 4 个互补视角。所有 lens 共用同一份已验证事实包，再进行独立分析和交叉质询。
+按研究场景从 11 个出典可追溯的哲学 lens 中选择互补视角；默认4个、最多6个，超过4个时分批执行。所有 lens 共用同一份已验证事实包，再进行独立分析和交叉质询。
 
 ```text
 /investor-council 英伟达 | scenario=growth | lenses=auto | max=4

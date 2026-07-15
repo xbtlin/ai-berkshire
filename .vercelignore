@@ -1,7 +1,10 @@
 .git
+.vercel
 .github
 .claude
 .openai
+local
+tmp
 assets
 codex-prompts
 codex-skills
@@ -18,4 +21,9 @@ __pycache__
 .ruff_cache
 *.pyc
 *.log
+*.m4a
+*.mp3
+*.wav
+*.mp4
+*.mov
 .DS_Store

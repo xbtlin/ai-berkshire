@@ -156,7 +156,10 @@ class StaticDeploymentTests(unittest.TestCase):
         self.assertIsNone(config["framework"])
         self.assertEqual("public", config["outputDirectory"])
         self.assertIn("api/index.py", config["functions"])
-        self.assertIn("reports/**", config["functions"]["api/index.py"]["excludeFiles"])
+        function_excludes = config["functions"]["api/index.py"]["excludeFiles"]
+        self.assertIn("reports/**", function_excludes)
+        self.assertIn("local/**", function_excludes)
+        self.assertIn("tmp/**", function_excludes)
         csp = config["headers"][0]["headers"][0]["value"]
         self.assertIn("default-src 'self'", csp)
         self.assertIn("frame-ancestors 'none'", csp)
@@ -167,6 +170,22 @@ class StaticDeploymentTests(unittest.TestCase):
         self.assertNotIn("<script>", html)
         self.assertTrue((ROOT / "public" / "app.js").is_file())
         self.assertTrue((ROOT / "public" / "styles.css").is_file())
+
+        ignore_lines = set(
+            (ROOT / ".vercelignore").read_text(encoding="utf-8").splitlines()
+        )
+        for private_path in (
+            ".vercel",
+            "local",
+            "tmp",
+            "reports",
+            "*.m4a",
+            "*.mp3",
+            "*.wav",
+            "*.mp4",
+            "*.mov",
+        ):
+            self.assertIn(private_path, ignore_lines)
 
 
 if __name__ == "__main__":
