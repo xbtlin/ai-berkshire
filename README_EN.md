@@ -10,9 +10,11 @@ English | [中文](README.md) | [日本語](README_JA.md)
 
 **AI Berkshire** is a collection of investment research skills compatible with both Claude Code and Codex. It systematizes the methodologies of four value investing masters — Buffett, Munger, Duan Yongping, and Li Lu — and delivers professional-grade research through AI Agents.
 
+Beyond the core four-master framework, `/investor-council` adds source-grounded lenses inspired by Graham, Fisher, Lynch, Marks, Bogle, Dalio, and Greenblatt.
+
 One person + Claude Code / Codex = an entire investment research team.
 
-[Track Record](#real-track-record) · [Why Not Just Ask AI?](#why-cant-you-just-ask-ai-directly) · [Skills](#skills-overview-19-skills) · [Quick Start](#quick-start) · [Reports](#live-research-reports) · [Design Philosophy](#design-philosophy)
+[Track Record](#real-track-record) · [Why Not Just Ask AI?](#why-cant-you-just-ask-ai-directly) · [Skills](#skills-overview-20-skills) · [Quick Start](#quick-start) · [Reports](#live-research-reports) · [Design Philosophy](#design-philosophy)
 
 ---
 
@@ -156,13 +158,13 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 
 
 **Three-Layer Design Philosophy**:
-- **Skill Layer**: Abstracts "what you want to do" into 19 clear entry points — deep research, earnings analysis, industry screening, portfolio management, and thinking tools. Pick by scenario.
+- **Skill Layer**: Abstracts "what you want to do" into 20 clear entry points — deep research, earnings analysis, industry screening, portfolio management, and thinking tools. Pick by scenario.
 - **Agent Layer**: Team skills (e.g. `/investment-team`, `/earnings-team`) run 4 master-perspective Agents in parallel under a Team Lead — searching and judging independently, challenging each other before synthesis. Lightweight skills skip this layer and call tools directly.
 - **Tool Layer**: Exact-precision calculations, real-time web search, report auditing — ensures every report's data is rigorous and verifiable.
 
 ---
 
-## Skills Overview (19 Skills)
+## Skills Overview (20 Skills)
 
 ### 🔬 Deep Research
 
@@ -170,6 +172,7 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 |-------|---------|-------------|
 | [`/investment-research`](skills/investment-research.md) | Four-master comprehensive analysis | Full-spectrum research on a public company |
 | [`/investment-team`](skills/investment-team.md) | Multi-Agent parallel research team | 4 Agents in parallel — fastest and most comprehensive |
+| [`/investor-council`](skills/investor-council.md) | Source-grounded investor council | Select complementary Graham, Fisher, Lynch, Marks, Bogle, Dalio, and other lenses by scenario; surface conflicts and scope limits |
 | [`/management-deep-dive`](skills/management-deep-dive.md) | Management deep dive | "Buying a stock is buying its people" — when management is the key variable |
 | [`/private-company-research`](skills/private-company-research.md) | Private company research | Research info-scarce private companies like Ant Group, SpaceX |
 | [`/deep-company-series`](skills/deep-company-series.md) | 8-part long-form deep dive series | Publication-grade series, ~120K words from cognitive reset to decision closure |
@@ -319,6 +322,7 @@ Invoke directly in Claude Code:
 # Deep Research
 /investment-research Tencent
 /investment-team Meituan
+/investor-council NVIDIA | scenario=growth | lenses=auto
 /management-deep-dive Wang Xing, Meituan
 /private-company-research SpaceX
 /deep-company-series Pinduoduo
@@ -349,6 +353,7 @@ After installing for Codex, restart Codex and refer to skills by name, for examp
 
 ```text
 Use investment-research to research Tencent
+Use investor-council to compare Graham, Fisher, and Marks lenses on NVIDIA
 Use earnings-review to analyze PDD 2025 annual results
 Use industry-funnel to screen AI compute
 Use bottleneck-hunter to scan AI infrastructure bottlenecks
@@ -431,7 +436,33 @@ Launches 4 AI Agents in parallel, simulating a real investment research team. Ea
 
 ---
 
-### 3. `/investment-checklist` — Buffett Pre-Buy Checklist
+### 3. `/investor-council` — Source-Grounded Multi-Investor Council
+
+Select up to four complementary perspectives from 11 source-grounded philosophy lenses. Every lens receives the same validated evidence packet before independent analysis and a structured cross-examination round.
+
+```text
+/investor-council NVIDIA | scenario=growth | lenses=auto | max=4
+```
+
+**Core features**:
+- Adds Graham, Fisher, Lynch, Marks, Bogle, Dalio, and Greenblatt while retaining the original four-master framework
+- Does not impersonate investors or invent present-day opinions; every profile links to primary, official, institutional, or publisher sources
+- Separates `company`, `security`, `portfolio`, and `behavior` scopes; `N/A` and `unknown` are never treated as zero
+- Prohibits cross-philosophy score averaging; reports robust consensus, key conflicts, hard vetoes, and evidence that could resolve disputes
+- Compares active-selection proposals with a Bogle-style low-cost index baseline
+
+Validate the registry and selector directly:
+
+```bash
+python3 tools/investor_council.py validate
+python3 tools/investor_council.py select --scenario portfolio --focus costs,regime
+```
+
+See the Japanese design and implementation report at [`docs/investor-philosophy-extension-report-ja.md`](docs/investor-philosophy-extension-report-ja.md).
+
+---
+
+### 4. `/investment-checklist` — Buffett Pre-Buy Checklist
 
 Six gates for rapid screening — decide in 10 minutes whether a company is worth deeper research:
 
@@ -474,7 +505,7 @@ Gate 6: Decision Discipline (Rational or FOMO?)
 
 ---
 
-### 4. `/industry-research` — Industry Value Chain Scan
+### 5. `/industry-research` — Industry Value Chain Scan
 
 Start from an investment theme and complete a full industry value chain study:
 
@@ -503,7 +534,7 @@ Investment Logic Chain → Value Chain Map → Global Listed Company Scan
 
 ---
 
-### 5. `/industry-funnel` — Industry Funnel Screening
+### 6. `/industry-funnel` — Industry Funnel Screening
 
 Start from an industry/theme and progressively narrow: **Full market → ≤10 → 3 deep dives**:
 
@@ -544,7 +575,7 @@ Full reports: [AI Compute](reports/AI算力-funnel-20260509.md) · [AI Models](r
 
 ---
 
-### 6. `/private-company-research` — Private Company Deep Research
+### 7. `/private-company-research` — Private Company Deep Research
 
 A "detective-style" research framework designed for information-scarce private companies:
 
@@ -578,7 +609,7 @@ A "detective-style" research framework designed for information-scarce private c
 
 ---
 
-### 7. `/news-pulse` — Price-Move Rapid Attribution
+### 8. `/news-pulse` — Price-Move Rapid Attribution
 
 Designed for "when a stock surges or drops, quickly figure out what happened." **Not deep research — it's 10–15 minute rapid attribution** to avoid panic-selling or essay-length anxiety spirals when your holdings move.
 

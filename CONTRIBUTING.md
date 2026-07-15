@@ -11,7 +11,7 @@
 - **文档改进**：README、docs/ 中的错别字、失效链接、表述不清的修正；英文版与中文版内容不同步的修正。
 - **兼容性适配**：Claude Code / Codex 新版本带来的适配问题。
 - **用本框架产出的研究报告**：欢迎提交到 `reports/community/` 子目录（按 `reports/community/[公司名]/` 组织）。要求：① 报告确实是用本仓库的 skill 跑出来的，并在文首注明所用 skill 和模型；② 附上免责声明（不构成投资建议）；③ 一个 PR 一份报告。质量明显不达标（如未用框架、纯手写观点、缺关键财务交叉验证）的会被关闭。
-- **新 Skill 提议**：请先开 issue 讨论，说明这个 skill 解决什么研究场景、和现有 18 个 skill 的边界是什么。直接提交大型新功能 PR 而没有事先讨论的，可能会被关闭——不是否定你的工作，而是方向没对齐时双方都浪费时间。
+- **新 Skill 提议**：请先开 issue 讨论，说明这个 skill 解决什么研究场景、和现有 20 个 skill 的边界是什么。直接提交大型新功能 PR 而没有事先讨论的，可能会被关闭——不是否定你的工作，而是方向没对齐时双方都浪费时间。
 
 ## 不接受的贡献
 
@@ -59,7 +59,7 @@ Thanks for your interest in AI Berkshire. This project grew out of my personal i
 - **Documentation fixes** — typos, dead links, unclear wording, and syncing the English README with the Chinese one.
 - **Compatibility fixes** for new versions of Claude Code / Codex.
 - **Research reports produced with this framework** — submit to the `reports/community/` subdirectory (organized as `reports/community/[company]/`). Requirements: (1) the report was actually generated with this repo's skills — state the skill and model used at the top; (2) include a disclaimer (not investment advice); (3) one report per PR. Reports that clearly miss the bar (framework not used, hand-written opinions only, missing financial cross-validation) will be closed.
-- **New skill proposals** — open an issue first to discuss the research scenario it addresses and how it differs from the existing 18 skills. Large unsolicited feature PRs may be closed to avoid wasted effort on both sides.
+- **New skill proposals** — open an issue first to discuss the research scenario it addresses and how it differs from the existing 20 skills. Large unsolicited feature PRs may be closed to avoid wasted effort on both sides.
 
 ## Out of scope
 

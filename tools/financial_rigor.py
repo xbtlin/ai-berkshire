@@ -16,10 +16,12 @@ Usage (called automatically by Skills, no manual execution needed):
 """
 
 import argparse
+import ast
 import json
 import math
+import re
 import sys
-from decimal import Decimal, Context, ROUND_HALF_EVEN, InvalidOperation
+from decimal import Decimal, Context, DecimalException, ROUND_HALF_EVEN, InvalidOperation
 
 # ---------------------------------------------------------------------------
 # Exact Decimal Engine (no floating-point drift)
@@ -39,18 +41,18 @@ def exact(value) -> Decimal:
 
 def fmt_number(d: Decimal, unit: str = "") -> str:
     """Format large numbers in human-readable form (亿/万亿/B/T)."""
-    v = float(d)
+    v = exact(d)
     abs_v = abs(v)
     if unit in ("亿", "亿元", "亿港元", "亿美元"):
-        if abs_v >= 10000:
-            return f"{v/10000:.2f}万亿{unit[1:] if len(unit) > 1 else ''}"
+        if abs_v >= Decimal("10000"):
+            return f"{_CTX.divide(v, Decimal('10000')):.2f}万亿{unit[1:] if len(unit) > 1 else ''}"
         return f"{v:.2f}{unit}"
-    if abs_v >= 1e12:
-        return f"{v/1e12:.2f}T"
-    if abs_v >= 1e9:
-        return f"{v/1e9:.2f}B"
-    if abs_v >= 1e6:
-        return f"{v/1e6:.2f}M"
+    if abs_v >= Decimal("1e12"):
+        return f"{_CTX.divide(v, Decimal('1e12')):.2f}T"
+    if abs_v >= Decimal("1e9"):
+        return f"{_CTX.divide(v, Decimal('1e9')):.2f}B"
+    if abs_v >= Decimal("1e6"):
+        return f"{_CTX.divide(v, Decimal('1e6')):.2f}M"
     return f"{v:,.2f}"
 
 
@@ -65,7 +67,12 @@ def verify_market_cap(price, shares, reported_cap, currency=""):
     r = exact(reported_cap)
 
     calculated = _CTX.multiply(p, s)
-    deviation = abs(float(calculated - r) / float(r)) * 100 if r != 0 else 0
+    if r == 0:
+        deviation = Decimal("0") if calculated == 0 else Decimal("Infinity")
+    else:
+        deviation = _CTX.multiply(
+            _CTX.divide(abs(calculated - r), abs(r)), Decimal("100")
+        )
 
     print("=" * 60)
     print("市值验算 (Market Cap Verification)")
@@ -106,6 +113,10 @@ def verify_valuation(price, eps=None, bvps=None, fcf_per_share=None,
     print(f"  当前股价: {p}")
     print()
 
+    if p == 0:
+        print("  ❌ 当前股价不能为 0，无法计算收益率或估值倍数")
+        return None
+
     results = {}
 
     if eps is not None:
@@ -126,7 +137,7 @@ def verify_valuation(price, eps=None, bvps=None, fcf_per_share=None,
             pb = _CTX.divide(p, b)
             print(f"  PB:        {p} / {b} = {pb:.2f}x")
             results["PB"] = float(pb)
-            if eps is not None and float(exact(eps)) != 0:
+            if eps is not None and exact(eps) != 0:
                 roe = _CTX.divide(exact(eps), b) * 100
                 print(f"  ROE:       {exact(eps)} / {b} = {roe:.2f}%")
                 results["ROE"] = float(roe)
@@ -164,43 +175,121 @@ def verify_valuation(price, eps=None, bvps=None, fcf_per_share=None,
 # 3. Cross-Source Data Validation (多源交叉验证)
 # ---------------------------------------------------------------------------
 
-def cross_validate(field_name, source_values: dict, unit="", tolerance_pct=2.0):
+def _pairwise_relative_difference_pct(left: Decimal, right: Decimal) -> Decimal:
+    """Return symmetric relative difference using the smaller absolute value."""
+    denominator = min(abs(left), abs(right))
+    if denominator == 0:
+        return Decimal("0") if left == right else Decimal("Infinity")
+    return _CTX.multiply(
+        _CTX.divide(abs(_CTX.subtract(left, right)), denominator),
+        Decimal("100"),
+    )
+
+
+def cross_validate(field_name, source_values: dict, unit="", tolerance_pct=Decimal("1")):
     """Compare a data point across multiple sources, flag discrepancies."""
     print("=" * 60)
     print(f"交叉验证: {field_name} (Cross-Validation)")
     print("=" * 60)
 
-    values = {k: exact(v) for k, v in source_values.items()}
+    try:
+        tolerance = exact(tolerance_pct)
+    except (InvalidOperation, ValueError, TypeError):
+        print(f"  ❌ 无效容差: {tolerance_pct}")
+        return {"consensus": None, "all_consistent": False}
+
+    if not tolerance.is_finite() or tolerance < 0:
+        print(f"  ❌ 容差必须是有限的非负数: {tolerance_pct}")
+        return {"consensus": None, "all_consistent": False}
+
+    if not isinstance(source_values, dict) or len(source_values) < 2:
+        source_count = len(source_values) if isinstance(source_values, dict) else 0
+        print(f"  ❌ 至少需要 2 个独立来源，当前仅 {source_count} 个")
+        return {"consensus": None, "all_consistent": False}
+
+    if any(not str(source).strip() for source in source_values):
+        print("  ❌ 每个来源都必须有非空名称")
+        return {"consensus": None, "all_consistent": False}
+
+    normalized_sources = {
+        re.sub(r"\s+", " ", str(source)).strip().casefold()
+        for source in source_values
+    }
+    if len(normalized_sources) < 2:
+        print("  ❌ 至少需要 2 个名称不同的独立来源")
+        return {"consensus": None, "all_consistent": False}
+
+    try:
+        values = {str(k): exact(v) for k, v in source_values.items()}
+    except (InvalidOperation, ValueError, TypeError) as exc:
+        print(f"  ❌ 来源数据不是有效数字: {exc}")
+        return {"consensus": None, "all_consistent": False}
+
+    if any(not value.is_finite() for value in values.values()):
+        print("  ❌ 来源数据必须是有限数字")
+        return {"consensus": None, "all_consistent": False}
+
     sources = list(values.keys())
     nums = list(values.values())
 
     # Find median as reference
-    sorted_vals = sorted(float(v) for v in nums)
+    sorted_vals = sorted(nums)
     n = len(sorted_vals)
-    median = sorted_vals[n // 2] if n % 2 == 1 else (sorted_vals[n//2-1] + sorted_vals[n//2]) / 2
+    median = (
+        sorted_vals[n // 2]
+        if n % 2 == 1
+        else _CTX.divide(
+            _CTX.add(sorted_vals[n // 2 - 1], sorted_vals[n // 2]),
+            Decimal("2"),
+        )
+    )
 
     print(f"  数据来源数: {len(sources)}")
-    print(f"  参考中位数: {fmt_number(exact(median))} {unit}")
+    print(f"  参考中位数: {fmt_number(median)} {unit}")
     print()
 
-    all_ok = True
+    # Keep the median as a descriptive consensus, but never use it as the
+    # acceptance reference. Comparing each source only with the midpoint can
+    # let two values nearly 2% apart pass a 1% tolerance.
     for src, val in values.items():
-        dev = abs(float(val) - median) / median * 100 if median != 0 else 0
-        status = "✅" if dev <= tolerance_pct else "❌"
-        if dev > tolerance_pct:
-            all_ok = False
-        print(f"  {status} {src:20s}: {fmt_number(val)} {unit}  (偏差 {dev:.2f}%)")
+        if median == 0:
+            dev = Decimal("0") if val == 0 else Decimal("Infinity")
+        else:
+            dev = _CTX.multiply(
+                _CTX.divide(abs(val - median), abs(median)), Decimal("100")
+            )
+        print(
+            f"  • {src:20s}: {fmt_number(val)} {unit}  "
+            f"(距中位数 {dev:.2f}%)"
+        )
+
+    print()
+    print("  来源两两相对差（以较小绝对值为分母）:")
+    pairwise_results = []
+    for left_index, left_source in enumerate(sources):
+        for right_source in sources[left_index + 1:]:
+            deviation = _pairwise_relative_difference_pct(
+                values[left_source], values[right_source]
+            )
+            pairwise_results.append(deviation)
+            status = "✅" if deviation <= tolerance else "❌"
+            print(
+                f"  {status} {left_source} ↔ {right_source}: "
+                f"{deviation:.2f}%"
+            )
+
+    all_ok = all(deviation <= tolerance for deviation in pairwise_results)
 
     print()
     if all_ok:
-        print(f"  ✅ 所有来源偏差 ≤ {tolerance_pct}%, 数据一致")
+        print(f"  ✅ 所有来源两两相对差 ≤ {tolerance}%, 数据一致")
     else:
-        print(f"  ⚠️  存在来源偏差 > {tolerance_pct}%, 请核实差异原因")
+        print(f"  ⚠️  存在来源组合的相对差 > {tolerance}%, 请核实差异原因")
         print(f"     建议: 优先采用公司年报/交易所数据")
 
     # Consensus value
     consensus = median
-    print(f"\n  共识值 (加权中位数): {fmt_number(exact(consensus))} {unit}")
+    print(f"\n  共识值 (中位数): {fmt_number(consensus)} {unit}")
     return {"consensus": consensus, "all_consistent": all_ok}
 
 
@@ -285,6 +374,73 @@ def benford_check(values: list):
 # 5. Exact Calculator (精确计算器)
 # ---------------------------------------------------------------------------
 
+_DECIMAL_LITERAL_RE = re.compile(
+    r"(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)(?:[eE][+-]?[0-9]+)?\Z"
+)
+_DECIMAL_LITERAL_PREFIX_RE = re.compile(
+    r"(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)(?:[eE][+-]?[0-9]+)?"
+)
+
+
+def _numeric_token_at(source: str, node) -> str:
+    """Read a numeric literal without relying on its float-valued AST payload."""
+    lines = source.splitlines()
+    if not getattr(node, "lineno", None) or node.lineno > len(lines):
+        raise ValueError("数值位置无效")
+    # The accepted expression alphabet is ASCII, so AST byte offsets and string
+    # offsets are identical. This also works on Python 3.7, which lacks
+    # ast.get_source_segment/end_col_offset.
+    remainder = lines[node.lineno - 1][node.col_offset:]
+    match = _DECIMAL_LITERAL_PREFIX_RE.match(remainder)
+    if match is None:
+        raise ValueError("仅可使用十进制数值")
+    return match.group(0)
+
+
+def _is_numeric_ast_node(node) -> bool:
+    """Support both legacy ``Num`` and modern ``Constant`` AST nodes."""
+    constant_type = getattr(ast, "Constant", None)
+    if constant_type is not None and isinstance(node, constant_type):
+        return True
+
+    # ``Constant`` does not exist on Python 3.7, whose parser emits a concrete
+    # ``Num`` node. Checking its type name avoids touching the deprecated
+    # compatibility alias on newer Python versions.
+    return type(node).__name__ == "Num"
+
+
+def _eval_decimal_ast(node, source: str) -> Decimal:
+    """Evaluate a parsed arithmetic AST using Decimal operations only."""
+    if isinstance(node, ast.Expression):
+        return _eval_decimal_ast(node.body, source)
+
+    # Python 3.7 emits ``Num`` nodes; newer versions emit ``Constant``.
+    if _is_numeric_ast_node(node):
+        token = _numeric_token_at(source, node)
+        if _DECIMAL_LITERAL_RE.fullmatch(token) is None:
+            raise ValueError("仅可使用十进制数值")
+        return Decimal(token)
+
+    if isinstance(node, ast.UnaryOp) and isinstance(node.op, (ast.UAdd, ast.USub)):
+        operand = _eval_decimal_ast(node.operand, source)
+        return _CTX.plus(operand) if isinstance(node.op, ast.UAdd) else _CTX.minus(operand)
+
+    if isinstance(node, ast.BinOp):
+        left = _eval_decimal_ast(node.left, source)
+        right = _eval_decimal_ast(node.right, source)
+        if isinstance(node.op, ast.Add):
+            return _CTX.add(left, right)
+        if isinstance(node.op, ast.Sub):
+            return _CTX.subtract(left, right)
+        if isinstance(node.op, ast.Mult):
+            return _CTX.multiply(left, right)
+        if isinstance(node.op, ast.Div):
+            return _CTX.divide(left, right)
+        raise ValueError("仅可使用 +、-、*、/ 四则运算")
+
+    raise ValueError("仅可使用数值、四则运算和括号")
+
+
 def exact_calc(expr: str):
     """Evaluate a financial expression with exact decimal arithmetic.
 
@@ -294,21 +450,27 @@ def exact_calc(expr: str):
     print("精确计算 (Exact Calculator)")
     print("=" * 60)
 
-    # Safe evaluation: only allow numbers and arithmetic
-    allowed = set("0123456789.+-*/() eE")
-    if not all(c in allowed for c in expr.replace(" ", "")):
+    if (
+        not isinstance(expr, str)
+        or not expr.strip()
+        or len(expr) > 4096
+        or re.fullmatch(r"[0-9.eE+\-*/()\s]+", expr) is None
+    ):
         print(f"  ❌ 不安全的表达式: {expr}")
         return None
 
     try:
-        # Replace scientific notation for Decimal compatibility
-        result = eval(expr, {"__builtins__": {}}, {})
-        d_result = exact(result)
+        tree = ast.parse(expr, mode="eval")
+        if sum(1 for _ in ast.walk(tree)) > 512:
+            raise ValueError("表达式过于复杂")
+        d_result = _eval_decimal_ast(tree, expr)
+        if not d_result.is_finite():
+            raise ValueError("结果不是有限数字")
         print(f"  表达式: {expr}")
         print(f"  结果:   {fmt_number(d_result)}")
         print(f"  精确值: {d_result}")
-        return float(d_result)
-    except Exception as e:
+        return d_result
+    except (SyntaxError, ValueError, DecimalException) as e:
         print(f"  ❌ 计算错误: {e}")
         return None
 
@@ -329,6 +491,13 @@ def three_scenario_valuation(current_price, current_eps, shares_billion,
     p = exact(current_price)
     eps = exact(current_eps)
     shares = exact(shares_billion)
+
+    if p == 0:
+        print("  ❌ 当前股价不能为 0，无法计算目标价涨跌幅")
+        return False
+    if isinstance(years, bool) or not isinstance(years, int) or years < 0:
+        print("  ❌ 预测期必须是非负整数")
+        return False
 
     scenarios = [
         ("乐观 (Bull)", growth_optimistic, pe_optimistic),
@@ -351,20 +520,24 @@ def three_scenario_valuation(current_price, current_eps, shares_billion,
         for _ in range(years):
             future_eps = _CTX.multiply(future_eps, _CTX.add(Decimal("1"), g))
         target_price = _CTX.multiply(future_eps, target_pe)
-        change = float(target_price - p) / float(p) * 100
+        change = _CTX.multiply(
+            _CTX.divide(_CTX.subtract(target_price, p), p), Decimal("100")
+        )
+        growth_pct = _CTX.multiply(g, Decimal("100"))
 
-        print(f"  {name:12} {float(g)*100:>7.0f}% {float(target_pe):>7.0f}x "
-              f"{float(future_eps):>10.2f} {float(target_price):>9.1f} {change:>+7.1f}%")
+        print(f"  {name:12} {growth_pct:>7.0f}% {target_pe:>7.0f}x "
+              f"{future_eps:>10.2f} {target_price:>9.1f} {change:>+7.1f}%")
 
     print()
     print("  ✅ 所有计算使用精确十进制, 结果可审计复现")
+    return True
 
 
 # ---------------------------------------------------------------------------
 # CLI Entry Point
 # ---------------------------------------------------------------------------
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(
         description="Financial Rigor Toolkit — 金融数据严谨性验证工具",
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -381,26 +554,26 @@ Examples:
 
     # verify-market-cap
     mc = sub.add_parser("verify-market-cap", help="验算市值 = 股价 × 总股本")
-    mc.add_argument("--price", type=float, required=True)
-    mc.add_argument("--shares", type=float, required=True, help="总股本")
-    mc.add_argument("--reported", type=float, required=True, help="报告市值")
+    mc.add_argument("--price", required=True)
+    mc.add_argument("--shares", required=True, help="总股本")
+    mc.add_argument("--reported", required=True, help="报告市值")
     mc.add_argument("--currency", default="", help="币种")
 
     # verify-valuation
     val = sub.add_parser("verify-valuation", help="验算估值指标")
-    val.add_argument("--price", type=float, required=True)
-    val.add_argument("--eps", type=float, default=None)
-    val.add_argument("--bvps", type=float, default=None, help="每股净资产")
-    val.add_argument("--fcf-per-share", type=float, default=None)
-    val.add_argument("--dividend", type=float, default=None, help="每股股息")
-    val.add_argument("--revenue-per-share", type=float, default=None)
+    val.add_argument("--price", required=True)
+    val.add_argument("--eps", default=None)
+    val.add_argument("--bvps", default=None, help="每股净资产")
+    val.add_argument("--fcf-per-share", default=None)
+    val.add_argument("--dividend", default=None, help="每股股息")
+    val.add_argument("--revenue-per-share", default=None)
 
     # cross-validate
     cv = sub.add_parser("cross-validate", help="多源交叉验证")
     cv.add_argument("--field", required=True, help="数据字段名")
     cv.add_argument("--values", required=True, help="JSON: {来源: 数值}")
     cv.add_argument("--unit", default="")
-    cv.add_argument("--tolerance", type=float, default=2.0, help="容差百分比")
+    cv.add_argument("--tolerance", default="1", help="容差百分比，默认 1%")
 
     # benford
     bf = sub.add_parser("benford", help="Benford定律检测")
@@ -412,40 +585,104 @@ Examples:
 
     # three-scenario
     ts = sub.add_parser("three-scenario", help="三情景估值")
-    ts.add_argument("--price", type=float, required=True)
-    ts.add_argument("--eps", type=float, required=True)
-    ts.add_argument("--shares", type=float, required=True, help="总股本(亿)")
-    ts.add_argument("--growth", nargs=3, type=float, required=True,
+    ts.add_argument("--price", required=True)
+    ts.add_argument("--eps", required=True)
+    ts.add_argument("--shares", required=True, help="总股本(亿)")
+    ts.add_argument("--growth", nargs=3, required=True,
                     help="三情景年增速 (乐观 中性 悲观), 如 0.15 0.08 0.0")
-    ts.add_argument("--pe", nargs=3, type=float, required=True,
+    ts.add_argument("--pe", nargs=3, required=True,
                     help="三情景目标PE, 如 25 20 15")
-    ts.add_argument("--years", type=int, default=3)
+    ts.add_argument("--years", default="3")
     ts.add_argument("--currency", default="")
 
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
+
+    def decimal_arg(value, option):
+        if value is None:
+            return None
+        try:
+            parsed = exact(value)
+        except (InvalidOperation, ValueError, TypeError):
+            parser.error(f"{option} 必须是有效数字: {value}")
+        if not parsed.is_finite():
+            parser.error(f"{option} 必须是有限数字: {value}")
+        return parsed
+
+    def integer_arg(value, option):
+        parsed = decimal_arg(value, option)
+        if parsed != parsed.to_integral_value():
+            parser.error(f"{option} 必须是整数: {value}")
+        return int(parsed)
 
     if args.command == "verify-market-cap":
-        verify_market_cap(args.price, args.shares, args.reported, args.currency)
+        passed = verify_market_cap(
+            decimal_arg(args.price, "--price"),
+            decimal_arg(args.shares, "--shares"),
+            decimal_arg(args.reported, "--reported"),
+            args.currency,
+        )
+        return 0 if passed else 1
     elif args.command == "verify-valuation":
-        verify_valuation(args.price, args.eps, args.bvps, args.fcf_per_share,
-                        args.dividend, args.revenue_per_share)
+        outcome = verify_valuation(
+            decimal_arg(args.price, "--price"),
+            decimal_arg(args.eps, "--eps"),
+            decimal_arg(args.bvps, "--bvps"),
+            decimal_arg(args.fcf_per_share, "--fcf-per-share"),
+            decimal_arg(args.dividend, "--dividend"),
+            decimal_arg(args.revenue_per_share, "--revenue-per-share"),
+        )
+        return 0 if outcome is not None else 1
     elif args.command == "cross-validate":
-        values = json.loads(args.values)
-        cross_validate(args.field, values, args.unit, args.tolerance)
+        try:
+            values = json.loads(
+                args.values, parse_float=Decimal, parse_int=Decimal
+            )
+        except (json.JSONDecodeError, InvalidOperation) as exc:
+            parser.error(f"--values JSON 解析失败: {exc}")
+        if not isinstance(values, dict):
+            parser.error("--values 必须是 JSON 对象: {来源: 数值}")
+        outcome = cross_validate(
+            args.field,
+            values,
+            args.unit,
+            decimal_arg(args.tolerance, "--tolerance"),
+        )
+        return 0 if outcome["all_consistent"] else 1
     elif args.command == "benford":
-        values = json.loads(args.values)
+        try:
+            values = json.loads(
+                args.values, parse_float=Decimal, parse_int=Decimal
+            )
+        except (json.JSONDecodeError, InvalidOperation) as exc:
+            parser.error(f"--values JSON 解析失败: {exc}")
+        if not isinstance(values, list):
+            parser.error("--values 必须是 JSON 数组")
         benford_check(values)
+        return 0
     elif args.command == "calc":
-        exact_calc(args.expr)
+        return 0 if exact_calc(args.expr) is not None else 1
     elif args.command == "three-scenario":
-        three_scenario_valuation(
-            args.price, args.eps, args.shares,
-            args.growth[0], args.growth[1], args.growth[2],
-            args.pe[0], args.pe[1], args.pe[2],
-            args.years, args.currency)
+        outcome = three_scenario_valuation(
+            decimal_arg(args.price, "--price"),
+            decimal_arg(args.eps, "--eps"),
+            decimal_arg(args.shares, "--shares"),
+            decimal_arg(args.growth[0], "--growth"),
+            decimal_arg(args.growth[1], "--growth"),
+            decimal_arg(args.growth[2], "--growth"),
+            decimal_arg(args.pe[0], "--pe"),
+            decimal_arg(args.pe[1], "--pe"),
+            decimal_arg(args.pe[2], "--pe"),
+            integer_arg(args.years, "--years"), args.currency)
+        return 0 if outcome else 1
     else:
         parser.print_help()
+        return 0
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        exit_code = main()
+    except DecimalException as exc:
+        print(f"❌ 十进制计算失败: {exc}", file=sys.stderr)
+        exit_code = 1
+    sys.exit(exit_code)

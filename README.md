@@ -10,11 +10,13 @@
 
 **AI Berkshire** 是一套同时兼容 Claude Code 与 Codex 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
 
+核心四大师框架之外，`/investor-council` 还提供 Graham、Fisher、Lynch、Marks、Bogle、Dalio、Greenblatt 等有出处、可追溯的互补分析 lens。
+
 一个人 + Claude Code / Codex = 一个投研团队。
 
 > 📮 **仓库是全量框架，公众号是精选。** 真正值得深研的公司，加上报告之外我自己的判断与取舍，都在微信公众号「**复利炼丹炉**」——[扫码关注 ↓](#精选研究首发于公众号)
 
-[实盘业绩](#real-track-record) · [为什么不能直接问AI](#为什么不能直接问-ai) · [Skills 一览](#skills-一览19个) · [快速开始](#快速开始) · [实战报告](#实战研究报告) · [设计理念](#设计理念) · [公众号](#精选研究首发于公众号)
+[实盘业绩](#real-track-record) · [为什么不能直接问AI](#为什么不能直接问-ai) · [Skills 一览](#skills-一览20个) · [快速开始](#快速开始) · [实战报告](#实战研究报告) · [设计理念](#设计理念) · [公众号](#精选研究首发于公众号)
 
 ---
 
@@ -166,13 +168,13 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 
 **三层设计哲学**：
-- **Skill 层**：把"你要做什么"抽象成 19 个明确入口——深度研究、财报分析、行业筛选、持仓管理、思维工具，按场景选用
+- **Skill 层**：把"你要做什么"抽象成 20 个明确入口——深度研究、财报分析、行业筛选、持仓管理、思维工具，按场景选用
 - **Agent 层**：团队型 skill（如 `/investment-team`、`/earnings-team`）由 Team Lead 并行调度 4 个大师视角 Agent——各自独立搜索、独立判断、互相挑战，最后综合研判；轻量 skill 不经过这一层，直连工具快进快出
 - **工具层**：精确计算、实时检索、报告抽检——保证每份报告的数据严谨性可验证
 
 ---
 
-## Skills 一览（19个）
+## Skills 一览（20个）
 
 ### 🔬 深度研究类
 
@@ -180,6 +182,7 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 |-------|------|---------|
 | [`/investment-research`](skills/investment-research.md) | 四大师综合深度分析 | 对一家上市公司进行全方位投资研究 |
 | [`/investment-team`](skills/investment-team.md) | 多Agent并行投研团队 | 4个Agent并行研究，最快速、最全面 |
+| [`/investor-council`](skills/investor-council.md) | 有出处的多投资家评议会 | 按场景选择 Graham、Fisher、Lynch、Marks、Bogle、Dalio 等互补 lens，显式呈现冲突与适用边界 |
 | [`/management-deep-dive`](skills/management-deep-dive.md) | 管理层纵深研究 | "买股票就是买人"——当管理层是核心变量时深挖 |
 | [`/private-company-research`](skills/private-company-research.md) | 未上市公司深度研究 | 研究蚂蚁、SpaceX等信息稀缺的未上市公司 |
 | [`/deep-company-series`](skills/deep-company-series.md) | 8篇长文系列拆一家公司 | 公众号级深度系列，12万字从认知重置到决策闭环 |
@@ -329,6 +332,7 @@ REM 可选：安装 Codex slash prompts
 # 深度研究
 /investment-research 腾讯
 /investment-team 美团
+/investor-council 英伟达 | scenario=growth | lenses=auto
 /management-deep-dive 王兴 美团
 /private-company-research SpaceX
 /deep-company-series 拼多多
@@ -359,6 +363,7 @@ REM 可选：安装 Codex slash prompts
 
 ```text
 使用 investment-research 研究腾讯
+使用 investor-council 比较 Graham、Fisher、Marks 对英伟达的分析
 使用 earnings-review 分析 PDD 2025年报
 使用 industry-funnel 筛选 AI算力
 使用 bottleneck-hunter 扫描 AI基础设施瓶颈
@@ -440,7 +445,33 @@ REM 可选：安装 Codex slash prompts
 
 ---
 
-### 3. `/investment-checklist` — 巴菲特买入前 Checklist
+### 3. `/investor-council` — 有出处的多投资家评议会
+
+按研究场景从 11 个出典可追溯的哲学 lens 中选择最多 4 个互补视角。所有 lens 共用同一份已验证事实包，再进行独立分析和交叉质询。
+
+```text
+/investor-council 英伟达 | scenario=growth | lenses=auto | max=4
+```
+
+**核心特色**：
+- 新增 Graham、Fisher、Lynch、Marks、Bogle、Dalio、Greenblatt，并保留现有四大师
+- 不扮演投资家、不虚构当前观点；每个 profile 绑定官方、机构或正规出版来源
+- `company` / `security` / `portfolio` / `behavior` 分 scope，`N/A` 与 `unknown` 不按 0 分处理
+- 禁止跨哲学简单平均，输出稳健共识、关键冲突、硬否决项和可裁决证据
+- 主动选股方案默认与 Bogle 式低成本指数基准比较
+
+资料库和选择器可单独验证：
+
+```bash
+python3 tools/investor_council.py validate
+python3 tools/investor_council.py select --scenario portfolio --focus costs,regime
+```
+
+设计与实现分析见 [`docs/investor-philosophy-extension-report-ja.md`](docs/investor-philosophy-extension-report-ja.md)。
+
+---
+
+### 4. `/investment-checklist` — 巴菲特买入前 Checklist
 
 六关快速筛选，帮你在10分钟内决定一家公司是否值得深入研究：
 
@@ -483,7 +514,7 @@ REM 可选：安装 Codex slash prompts
 
 ---
 
-### 4. `/industry-research` — 产业链全景扫描
+### 5. `/industry-research` — 产业链全景扫描
 
 从一个投资主题出发，完成产业链全景研究：
 
@@ -512,7 +543,7 @@ REM 可选：安装 Codex slash prompts
 
 ---
 
-### 5. `/industry-funnel` — 行业漏斗筛选
+### 6. `/industry-funnel` — 行业漏斗筛选
 
 从一个行业/方向出发，**全市场 → ≤10 家 → 3 家**逐层精选：
 
@@ -553,7 +584,7 @@ REM 可选：安装 Codex slash prompts
 
 ---
 
-### 6. `/private-company-research` — 未上市公司深度研究
+### 7. `/private-company-research` — 未上市公司深度研究
 
 专为信息稀缺的未上市公司设计的"侦探式"研究框架：
 
@@ -587,7 +618,7 @@ REM 可选：安装 Codex slash prompts
 
 ---
 
-### 7. `/news-pulse` — 股价异动新闻归因
+### 8. `/news-pulse` — 股价异动新闻归因
 
 专为"股价大涨/大跌时快速搞清发生了什么"设计的情报响应 Skill。**不是深度投研，是 10-15 分钟的快速归因**——避免持仓异动时陷入小作文焦虑或盲目止损。
 
