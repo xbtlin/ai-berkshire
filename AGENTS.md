@@ -12,6 +12,11 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
 - `codex-prompts/*.md`: generated Codex custom prompts for slash-command
   style entry points. These are a compatibility layer; skills remain preferred.
 - `tools/*.py`: shared financial validation and data tools used by both systems.
+- `data/investor_philosophies.json`: source-grounded investor philosophy cards
+  and scenario defaults used by `investor-council`.
+- `tools/investor_council.py`: validates and selects complementary philosophy
+  lenses; it does not score securities.
+- `tests/`: standard-library regression tests for tools and skill contracts.
 - `reports/`: research outputs. Do not rewrite unrelated reports while changing
   tooling or skills.
 - `scripts/sync-codex-skills.py`: regenerates Codex skills from `skills/*.md`.
@@ -52,6 +57,8 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
   `python3 tools/financial_rigor.py ...`
 - Use report audit tooling before treating generated research as publishable:
   `python3 tools/report_audit.py ...`
+- Before using or editing the investor philosophy registry, run:
+  `python3 tools/investor_council.py validate`
 - Clearly label low-confidence conclusions, incomplete data, and source gaps.
 - This project is for learning and research, not investment advice.
 
@@ -63,6 +70,8 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
 - Before finishing a skill/tool change, run the relevant syntax or generation
   check. For compatibility changes, run:
   `python3 scripts/sync-codex-skills.py`
+- Run `python3 -m unittest discover -s tests -v` after changing a shared tool,
+  generated artifact contract, or investor philosophy profile.
 - To verify generated Codex artifacts are current without rewriting files, run:
   `python3 scripts/sync-codex-skills.py --check`
   and, when slash prompts are relevant:

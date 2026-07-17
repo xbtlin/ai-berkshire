@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720">
+  <defs><radialGradient id="bg" cx="78%" cy="8%" r="92%"><stop offset="0" stop-color="#1b4b34"/><stop offset="0.46" stop-color="#0a2117"/><stop offset="1" stop-color="#06110d"/></radialGradient><style>text{font-family:"Hiragino Sans","Yu Gothic",sans-serif}.muted{fill:#92a89b}.green{fill:#80d99a}.gold{fill:#e4bf72}</style></defs>
+  <rect width="720" height="720" fill="url(#bg)"/><g opacity="0.1" stroke="#b9f1c7"><path d="M0 120h720M0 240h720M0 360h720M0 480h720M0 600h720"/><path d="M120 0v720M240 0v720M360 0v720M480 0v720M600 0v720"/></g>
+  <rect x="35" y="35" width="650" height="650" rx="34" fill="#091b14" fill-opacity="0.84" stroke="#b2d7be" stroke-opacity="0.2"/>
+  <text x="67" y="86" font-size="12" font-weight="700" letter-spacing="3" class="green">STEP 04 · READ THE DIFFERENCES</text>
+  <text x="67" y="143" font-size="40" font-weight="600" fill="#eaf4ed">違いを問いとして読む</text>
+  <text x="69" y="178" font-size="16" class="muted">結論を平均せず、各レンズの役割と限界を比べます。</text>
+  <g transform="translate(67 218)">
+    <rect width="586" height="337" rx="24" fill="#0d261b" stroke="#b2d7be" stroke-opacity="0.2"/>
+    <g transform="translate(24 24)">
+      <rect width="538" height="62" rx="13" fill="#ffffff" fill-opacity="0.025" stroke="#b2d7be" stroke-opacity="0.16"/><text x="19" y="26" font-size="11" class="green">中核原則</text><text x="19" y="48" font-size="14" fill="#dbe8df">何を変わらない判断基準として使うか</text><text x="511" y="38" text-anchor="middle" font-size="18" class="muted">⌄</text>
+      <rect y="74" width="538" height="62" rx="13" fill="#ffffff" fill-opacity="0.025" stroke="#b2d7be" stroke-opacity="0.16"/><text x="19" y="100" font-size="11" class="green">このレンズが問うこと</text><text x="19" y="122" font-size="14" fill="#dbe8df">次の調査で、どんな問いを事実に当てるか</text><text x="511" y="112" text-anchor="middle" font-size="18" class="muted">⌄</text>
+      <rect y="148" width="538" height="62" rx="13" fill="#ffffff" fill-opacity="0.025" stroke="#b2d7be" stroke-opacity="0.16"/><text x="19" y="174" font-size="11" class="gold">適用限界</text><text x="19" y="196" font-size="14" fill="#dbe8df">その視点を使いすぎてはいけない境界</text><text x="511" y="186" text-anchor="middle" font-size="18" class="muted">⌄</text>
+      <rect y="222" width="538" height="62" rx="13" fill="#80d99a" fill-opacity="0.08" stroke="#80d99a" stroke-opacity="0.25"/><text x="19" y="248" font-size="11" class="green">哲学資料</text><text x="19" y="270" font-size="14" fill="#dbe8df">出典を開き、原則の根拠を確かめる</text><text x="511" y="260" text-anchor="middle" font-size="17" class="green">↗</text>
+    </g>
+  </g>
+  <g transform="translate(67 583)"><circle cx="18" cy="18" r="18" fill="#80d99a" fill-opacity="0.12" stroke="#80d99a" stroke-opacity="0.4"/><text x="18" y="24" text-anchor="middle" font-size="16" class="green">✓</text><text x="50" y="14" font-size="15" font-weight="700" fill="#eaf4ed">ここから実際の企業・証券調査へ</text><text x="50" y="36" font-size="12" class="muted">この画面自体は売買判断や投資助言を行いません。</text></g>
+  <g transform="translate(67 647)"><rect width="112" height="4" rx="2" fill="#2c4839"/><rect x="124" width="112" height="4" rx="2" fill="#2c4839"/><rect x="248" width="112" height="4" rx="2" fill="#2c4839"/><rect x="372" width="112" height="4" rx="2" fill="#2c4839"/><rect x="496" width="90" height="4" rx="2" fill="#80d99a"/></g>
+</svg>

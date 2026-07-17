@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720">
+  <defs><radialGradient id="bg" cx="78%" cy="8%" r="92%"><stop offset="0" stop-color="#1b4b34"/><stop offset="0.46" stop-color="#0a2117"/><stop offset="1" stop-color="#06110d"/></radialGradient><style>text{font-family:"Hiragino Sans","Yu Gothic",sans-serif}.muted{fill:#92a89b}.green{fill:#80d99a}.gold{fill:#e4bf72}</style></defs>
+  <rect width="720" height="720" fill="url(#bg)"/><g opacity="0.1" stroke="#b9f1c7"><path d="M0 120h720M0 240h720M0 360h720M0 480h720M0 600h720"/><path d="M120 0v720M240 0v720M360 0v720M480 0v720M600 0v720"/></g>
+  <rect x="35" y="35" width="650" height="650" rx="34" fill="#091b14" fill-opacity="0.84" stroke="#b2d7be" stroke-opacity="0.2"/>
+  <text x="67" y="86" font-size="12" font-weight="700" letter-spacing="3" class="green">STEP 03 · SELECT</text>
+  <text x="67" y="143" font-size="40" font-weight="600" fill="#eaf4ed">評議会を選ぶ</text>
+  <text x="69" y="178" font-size="16" class="muted">条件が整ったら、選定ボタンを押します。</text>
+  <g transform="translate(67 224)">
+    <rect width="586" height="98" rx="18" fill="#b9f1c7"/>
+    <text x="31" y="61" font-size="21" font-weight="800" fill="#06110d">評議会を選ぶ</text>
+    <text x="539" y="61" text-anchor="middle" font-size="31" fill="#06110d">→</text>
+  </g>
+  <path d="M360 343v44" stroke="#80d99a" stroke-width="3" stroke-linecap="round"/><path d="M349 377l11 12 11-12" fill="none" stroke="#80d99a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(67 409)">
+    <rect width="280" height="145" rx="20" fill="#113124" stroke="#80d99a" stroke-opacity="0.3"/>
+    <text x="22" y="36" font-family="Georgia,serif" font-size="18" class="gold">01</text><text x="58" y="34" font-size="12" class="green">QUALITY VALUE</text><text x="22" y="70" font-size="20" fill="#eaf4ed">ウォーレン・バフェット</text><rect x="22" y="91" width="83" height="25" rx="12" fill="#80d99a" fill-opacity="0.1"/><text x="63" y="108" text-anchor="middle" font-size="11" class="green">競争優位</text>
+    <rect x="306" width="280" height="145" rx="20" fill="#113124" stroke="#80d99a" stroke-opacity="0.3"/>
+    <text x="328" y="36" font-family="Georgia,serif" font-size="18" class="gold">02</text><text x="364" y="34" font-size="12" class="green">QUALITY GROWTH</text><text x="328" y="70" font-size="20" fill="#eaf4ed">フィリップ・フィッシャー</text><rect x="328" y="91" width="67" height="25" rx="12" fill="#80d99a" fill-opacity="0.1"/><text x="361" y="108" text-anchor="middle" font-size="11" class="green">経営</text>
+  </g>
+  <text x="67" y="598" font-size="15" fill="#dbe8df">指定した論点と学派の多様性から、最大4席を提案します。</text>
+  <g transform="translate(67 647)"><rect width="112" height="4" rx="2" fill="#2c4839"/><rect x="124" width="112" height="4" rx="2" fill="#2c4839"/><rect x="248" width="112" height="4" rx="2" fill="#2c4839"/><rect x="372" width="112" height="4" rx="2" fill="#80d99a"/><rect x="496" width="90" height="4" rx="2" fill="#2c4839"/></g>
+</svg>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="公開資料に基づく11の投資哲学レンズを、研究シナリオに合わせて比較するInvestor Council。">
+    <meta name="theme-color" content="#071611">
+    <title>Investor Council — AI Berkshire</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Investor Council ホーム">
+        <span class="brand-mark">IB</span>
+        <span>
+          <strong>Investor Council</strong>
+          <small>AI Berkshire Research Lab</small>
+        </span>
+      </a>
+      <div class="status" id="api-status" aria-live="polite">
+        <span class="status-dot"></span>
+        接続中
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">SOURCE-GROUNDED · 11 INVESTOR LENSES</div>
+        <h1>違いを平均せず、<br><span>問いとして並べる。</span></h1>
+        <p>
+          同じ事実に、Buffett、Graham、Fisher、Marks、Bogle、Dalioなどの
+          公開原則を適用。共通認識だけでなく、衝突と適用限界を見える形にします。
+        </p>
+        <div class="hero-meta">
+          <span id="meta-investors">11レンズ</span>
+          <span id="meta-scenarios">7シナリオ</span>
+          <span id="meta-reviewed">確認日 —</span>
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="Investor Council 選択ツール">
+        <aside class="control-panel">
+          <div class="panel-heading">
+            <span class="step-number">01</span>
+            <div>
+              <p class="kicker">RESEARCH ROUTER</p>
+              <h2>評議会を組む</h2>
+            </div>
+          </div>
+
+          <form id="council-form">
+            <label class="field-label" for="scenario">研究シナリオ</label>
+            <select id="scenario" name="scenario" disabled></select>
+            <p class="field-help" id="scenario-description"></p>
+
+            <div class="field-row">
+              <div>
+                <label class="field-label" for="limit">レンズ数</label>
+                <select id="limit" name="limit" disabled>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4" selected>4</option>
+                </select>
+              </div>
+              <button class="text-button" id="reset-focus" type="button" disabled>関心軸を解除</button>
+            </div>
+
+            <fieldset>
+              <legend class="field-label">追加の関心軸 <span>任意</span></legend>
+              <div class="focus-grid" id="focus-grid" aria-label="関心軸"></div>
+            </fieldset>
+
+            <button class="primary-button" id="submit-button" type="submit" disabled>
+              <span>評議会を選ぶ</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </form>
+
+          <div class="method-note">
+            <strong>選び方</strong>
+            <p>指定した関心軸を先にカバーし、その後にシナリオ適合度と学派の多様性で席を埋めます。</p>
+          </div>
+
+          <details class="usage-guide" id="usage-guide">
+            <summary>
+              <span>
+                <small>QUICK GUIDE</small>
+                <strong>使い方・動画を見る</strong>
+              </span>
+              <span class="usage-guide-toggle" aria-hidden="true">＋</span>
+            </summary>
+            <div class="usage-guide-body">
+              <p class="usage-intro">
+                この画面は分析結果を出すものではなく、次の調査で使う問いと投資哲学レンズを選ぶ入口です。
+              </p>
+              <ol class="usage-steps">
+                <li><span>1</span><p><strong>研究シナリオを選ぶ</strong><small>企業・証券・ポートフォリオなど、今回の調査対象を指定します。</small></p></li>
+                <li><span>2</span><p><strong>レンズ数を決める</strong><small>比較したい視点の数を2〜4から選びます。</small></p></li>
+                <li><span>3</span><p><strong>関心軸を追加する</strong><small>任意で、競争優位・経営・価格など重視する論点を選びます。</small></p></li>
+                <li><span>4</span><p><strong>評議会を選ぶ</strong><small>各カードの中核原則、問い、適用限界、哲学資料を比較します。</small></p></li>
+              </ol>
+
+              <figure class="usage-video-wrap">
+                <video
+                  id="usage-video"
+                  controls
+                  playsinline
+                  preload="none"
+                  width="720"
+                  height="720"
+                  poster="/media/investor-council-guide-poster.jpg"
+                  aria-describedby="usage-video-caption"
+                >
+                  <source src="/media/investor-council-guide.mp4" type="video/mp4">
+                  <track kind="captions" srclang="ja" label="日本語" src="/media/investor-council-guide-ja.vtt" default>
+                  動画を再生できない場合は、<a href="/media/investor-council-guide.mp4">使い方動画を開いてください</a>。
+                </video>
+                <figcaption id="usage-video-caption">
+                  操作デモ · 約23秒 · 音声なし（日本語字幕付き）
+                </figcaption>
+              </figure>
+            </div>
+          </details>
+        </aside>
+
+        <section class="results-panel" aria-busy="true" id="results-panel">
+          <p class="sr-only" id="result-status" role="status" aria-live="polite"></p>
+          <div class="result-placeholder" id="result-placeholder">
+            <span class="placeholder-mark">∴</span>
+            <h2>同じ証拠、異なる問い。</h2>
+            <p>左の条件から、今回の分析に必要な投資哲学レンズを選びます。</p>
+          </div>
+          <div id="error-box" class="error-box" role="alert" hidden></div>
+          <div id="selection-results" hidden></div>
+        </section>
+      </section>
+
+      <section class="principles-strip" aria-label="設計原則">
+        <article><span>01</span><h3>同一の事実</h3><p>全レンズが一つのevidence packetを読む。</p></article>
+        <article><span>02</span><h3>適用範囲を分離</h3><p>company・security・portfolio・behaviorを混ぜない。</p></article>
+        <article><span>03</span><h3>非平均の統合</h3><p>総合点ではなく、共通認識・衝突・条件を残す。</p></article>
+      </section>
+    </main>
+
+    <footer>
+      <p>教育・研究支援用です。投資助言、本人の見解、売買推奨ではありません。</p>
+      <a href="https://github.com/xbtlin/ai-berkshire" target="_blank" rel="noopener noreferrer">Source repository ↗</a>
+    </footer>
+  </body>
+</html>

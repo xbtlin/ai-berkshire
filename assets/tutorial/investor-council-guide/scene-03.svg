@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720">
+  <defs><radialGradient id="bg" cx="78%" cy="8%" r="92%"><stop offset="0" stop-color="#1b4b34"/><stop offset="0.46" stop-color="#0a2117"/><stop offset="1" stop-color="#06110d"/></radialGradient><style>text{font-family:"Hiragino Sans","Yu Gothic",sans-serif}.muted{fill:#92a89b}.green{fill:#80d99a}.gold{fill:#e4bf72}</style></defs>
+  <rect width="720" height="720" fill="url(#bg)"/><g opacity="0.1" stroke="#b9f1c7"><path d="M0 120h720M0 240h720M0 360h720M0 480h720M0 600h720"/><path d="M120 0v720M240 0v720M360 0v720M480 0v720M600 0v720"/></g>
+  <rect x="35" y="35" width="650" height="650" rx="34" fill="#091b14" fill-opacity="0.84" stroke="#b2d7be" stroke-opacity="0.2"/>
+  <text x="67" y="86" font-size="12" font-weight="700" letter-spacing="3" class="green">STEP 02 · FOCUS</text>
+  <text x="67" y="143" font-size="40" font-weight="600" fill="#eaf4ed">レンズ数と関心軸</text>
+  <text x="69" y="178" font-size="16" class="muted">比較する視点の数と、優先したい論点を決めます。</text>
+  <g transform="translate(67 220)">
+    <rect width="586" height="315" rx="24" fill="#0d261b" stroke="#b2d7be" stroke-opacity="0.2"/>
+    <text x="28" y="45" font-size="12" font-weight="700" fill="#c9d9ce">レンズ数</text>
+    <rect x="28" y="61" width="154" height="58" rx="12" fill="#081a12" stroke="#80d99a" stroke-opacity="0.55"/>
+    <text x="49" y="98" font-size="18" fill="#eaf4ed">4 レンズ</text><path d="M148 84l7 8 7-8" fill="none" stroke="#80d99a" stroke-width="2"/>
+    <text x="28" y="162" font-size="12" font-weight="700" fill="#c9d9ce">追加の関心軸 <tspan class="muted" font-weight="400">任意</tspan></text>
+    <g transform="translate(28 184)" font-size="14">
+      <rect width="136" height="48" rx="11" fill="#80d99a" fill-opacity="0.14" stroke="#80d99a"/><text x="68" y="30" text-anchor="middle" class="green">競争優位</text>
+      <rect x="148" width="116" height="48" rx="11" fill="#80d99a" fill-opacity="0.14" stroke="#80d99a"/><text x="206" y="30" text-anchor="middle" class="green">経営</text>
+      <rect x="276" width="116" height="48" rx="11" fill="#ffffff" fill-opacity="0.025" stroke="#b2d7be" stroke-opacity="0.18"/><text x="334" y="30" text-anchor="middle" class="muted">価格</text>
+      <rect x="404" width="126" height="48" rx="11" fill="#ffffff" fill-opacity="0.025" stroke="#b2d7be" stroke-opacity="0.18"/><text x="467" y="30" text-anchor="middle" class="muted">財務強度</text>
+      <rect y="60" width="136" height="48" rx="11" fill="#ffffff" fill-opacity="0.025" stroke="#b2d7be" stroke-opacity="0.18"/><text x="68" y="90" text-anchor="middle" class="muted">資本配分</text>
+      <rect x="148" y="60" width="150" height="48" rx="11" fill="#ffffff" fill-opacity="0.025" stroke="#b2d7be" stroke-opacity="0.18"/><text x="223" y="90" text-anchor="middle" class="muted">下方リスク</text>
+    </g>
+  </g>
+  <text x="67" y="580" font-size="15" fill="#dbe8df">関心軸は選ばなくても利用できます。</text>
+  <text x="67" y="607" font-size="13" class="muted">選んだ論点を先にカバーし、残りを多様性で補います。</text>
+  <g transform="translate(67 647)"><rect width="112" height="4" rx="2" fill="#2c4839"/><rect x="124" width="112" height="4" rx="2" fill="#2c4839"/><rect x="248" width="112" height="4" rx="2" fill="#80d99a"/><rect x="372" width="112" height="4" rx="2" fill="#2c4839"/><rect x="496" width="90" height="4" rx="2" fill="#2c4839"/></g>
+</svg>

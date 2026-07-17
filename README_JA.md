@@ -12,9 +12,13 @@
 
 **AI Berkshire** は、Claude CodeおよびCodexに対応した投資リサーチSkillのコレクションです。バフェット・マンガー・段永平（ダン・ヨンピン）・李録（リ・ルー）という4人のバリュー投資の巨人の方法論を体系化し、AIエージェントによりプロフェッショナル水準のリサーチを提供します。
 
+中核の4巨人フレームワークに加え、`/investor-council` はGraham、Fisher、Lynch、Marks、Bogle、Dalio、Greenblattに着想を得た出典付きレンズを提供します。
+
 1人 + Claude Code / Codex = 投資リサーチチーム丸ごと。
 
-[実績](#実績) · [なぜAIに直接聞いてはいけないのか](#なぜaiに直接聞いてはいけないのか) · [Skill一覧](#skill一覧19スキル) · [クイックスタート](#クイックスタート) · [レポート](#実際のリサーチレポート) · [設計思想](#設計思想)
+🌐 [Investor Council Web UIを開く](https://ai-berkshire-investor-council.vercel.app/) — 11人の投資家に着想を得た出典付きレンズから、研究シナリオと関心軸に合う相補的視点を最大4つ選べます。
+
+[実績](#実績) · [なぜAIに直接聞いてはいけないのか](#なぜaiに直接聞いてはいけないのか) · [Skill一覧](#skill一覧20スキル) · [クイックスタート](#クイックスタート) · [レポート](#実際のリサーチレポート) · [設計思想](#設計思想)
 
 ---
 
@@ -158,13 +162,13 @@ AIに直接聞けばコンテキストウィンドウは1つです。4つの並�
 
 
 **3層設計の思想**：
-- **Skill層**：「やりたいこと」を19の明確なエントリーポイントに抽象化——深掘りリサーチ、決算分析、業界スクリーニング、ポートフォリオ管理、思考ツール。シナリオ別に選択。
+- **Skill層**：「やりたいこと」を20の明確なエントリーポイントに抽象化——深掘りリサーチ、決算分析、業界スクリーニング、ポートフォリオ管理、思考ツール。シナリオ別に選択。
 - **エージェント層**：チーム型Skill（`/investment-team`、`/earnings-team`など）はチームリードの下で4人の巨匠視点エージェントを並列実行——独立して検索・判断し、互いに反論し、最後に統合。軽量Skillはこの層を通らず、ツールを直接呼び出す。
 - **ツール層**：精密計算、リアルタイムウェブ検索、レポート監査——すべてのレポートのデータが厳密かつ検証可能であることを保証。
 
 ---
 
-## Skill一覧（19スキル）
+## Skill一覧（20スキル）
 
 ### 🔬 深掘りリサーチ
 
@@ -172,6 +176,7 @@ AIに直接聞けばコンテキストウィンドウは1つです。4つの並�
 |-------|------|---------|
 | [`/investment-research`](skills/investment-research.md) | 四巨人総合分析 | 上場企業の全方位リサーチ |
 | [`/investment-team`](skills/investment-team.md) | マルチエージェント並列リサーチチーム | 4エージェント並列——最速かつ最も網羅的 |
+| [`/investor-council`](skills/investor-council.md) | 出典付き投資家評議会 | Graham、Fisher、Lynch、Marks、Bogle、Dalioなどから相補的なレンズを選び、対立と適用限界を明示 |
 | [`/management-deep-dive`](skills/management-deep-dive.md) | 経営陣の深掘り | 「株を買うことは人を買うこと」——経営陣が鍵となる変数のとき |
 | [`/private-company-research`](skills/private-company-research.md) | 非上場企業リサーチ | アントグループ、SpaceXのような情報の少ない非上場企業のリサーチ |
 | [`/deep-company-series`](skills/deep-company-series.md) | 8部構成の長編深掘りシリーズ | 発行品質のシリーズ、認知リセットから意思決定収束まで約12万字 |
@@ -321,6 +326,7 @@ Claude Codeで直接呼び出す：
 # 深掘りリサーチ
 /investment-research テンセント
 /investment-team 美団
+/investor-council NVIDIA | scenario=growth | lenses=auto
 /management-deep-dive 王興、美団
 /private-company-research SpaceX
 /deep-company-series 拼多多
@@ -351,6 +357,7 @@ Codexにインストール後、Codexを再起動してskill名で参照しま�
 
 ```text
 investment-researchを使ってテンセントをリサーチして
+investor-councilを使ってNVIDIAをGraham、Fisher、Marksの観点から比較して
 earnings-reviewを使ってPDD2025年次の決算を分析して
 industry-funnelを使ってAI算力をスクリーニングして
 bottleneck-hunterを使ってAIインフラのボトルネックをスキャンして
@@ -433,7 +440,33 @@ Codexスラッシュプロンプトをインストールした場合、Codexを�
 
 ---
 
-### 3. `/investment-checklist` — バフェット購入前チェックリスト
+### 3. `/investor-council` — 出典付きマルチ投資家評議会
+
+11人の投資家に着想を得た出典付きの哲学レンズから、研究シナリオに合う相補的な視点を選びます。既定は4つ、最大6つで、5つ以上は分割実行します。各レンズは同じ検証済みファクトパックを読み、独立分析後に構造化された相互反証を行います。
+
+```text
+/investor-council NVIDIA | scenario=growth | lenses=auto | max=4
+```
+
+**主な特徴**：
+- 既存の4巨人に加え、Graham、Fisher、Lynch、Marks、Bogle、Dalio、Greenblattを収録
+- 投資家本人になりきらず、現在の見解を捏造しない；各プロフィールを一次・公式・大学アーカイブ・出版社の資料に接続
+- `company` / `security` / `portfolio` / `behavior` を分離し、`N/A` と `unknown` を0点扱いしない
+- 哲学をまたぐ単純平均を禁止し、堅牢な合意・重要な対立・拒否条件・対立を解く追加証拠を出力
+- アクティブ運用案をBogle型の低コスト指数ベースラインと比較
+
+資料レジストリと選択器は単独でも検証できます：
+
+```bash
+python3 tools/investor_council.py validate
+python3 tools/investor_council.py select --scenario portfolio --focus costs,regime
+```
+
+設計・実装の詳細は [`docs/investor-philosophy-extension-report-ja.md`](docs/investor-philosophy-extension-report-ja.md) を参照してください。
+
+---
+
+### 4. `/investment-checklist` — バフェット購入前チェックリスト
 
 6つのゲートによる迅速なスクリーニング——10分で深掘りする価値があるかを判断：
 
@@ -476,7 +509,7 @@ Codexスラッシュプロンプトをインストールした場合、Codexを�
 
 ---
 
-### 4. `/industry-research` — 業界バリューチェーンスキャン
+### 5. `/industry-research` — 業界バリューチェーンスキャン
 
 投資テーマから出発して、業界バリューチェーンの全体研究を完成させます：
 
@@ -505,7 +538,7 @@ Codexスラッシュプロンプトをインストールした場合、Codexを�
 
 ---
 
-### 5. `/industry-funnel` — 業界ファネルスクリーニング
+### 6. `/industry-funnel` — 業界ファネルスクリーニング
 
 業界/テーマから出発して段階的に絞り込む：**全市場 → ≤10社 → 3社の深掘り**：
 
@@ -546,7 +579,7 @@ Codexスラッシュプロンプトをインストールした場合、Codexを�
 
 ---
 
-### 6. `/private-company-research` — 非上場企業深掘りリサーチ
+### 7. `/private-company-research` — 非上場企業深掘りリサーチ
 
 情報の乏しい非上場企業向けに設計された「探偵型」リサーチフレームワーク：
 
@@ -580,7 +613,7 @@ Codexスラッシュプロンプトをインストールした場合、Codexを�
 
 ---
 
-### 7. `/news-pulse` — 株価変動の迅速な要因分析
+### 8. `/news-pulse` — 株価変動の迅速な要因分析
 
 「株が急騰・急落したとき、何が起きたかを素早く把握する」ために設計。**深掘りリサーチではなく、10–15分の迅速な要因分析**——保有株が動いたときのパニック売りや長文の不安スパイラルを防ぎます。
 

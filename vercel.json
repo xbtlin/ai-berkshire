@@ -1,0 +1,40 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "{data/investor_philosophies.json,tools/investor_council.py,tools/investor_council_ja.py}",
+      "excludeFiles": "{.github/**,assets/**,codex-*/**,docs/**,reports/**,research/**,scripts/**,skills/**,tests/**,public/**,logs/**,local/**,tmp/**,实盘记录/**,筛选公司/**,data/*.csv,data/{fundamentals,watchlist}.json,tools/*.{png,woff,sh},*.md,LICENSE,.editorconfig}",
+      "maxDuration": 10
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    }
+  ]
+}

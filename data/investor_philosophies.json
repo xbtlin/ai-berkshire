@@ -1,0 +1,689 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-07-16",
+  "description": "Source-grounded investor philosophy cards for AI Berkshire. All principles are short paraphrases, not quotations or endorsements.",
+  "focus_taxonomy": {
+    "asset_allocation": "资产配置",
+    "asset_value": "资产价值",
+    "behavior": "投资者行为与心理",
+    "business_quality": "商业质量",
+    "capital_allocation": "资本配置",
+    "catalyst": "价值实现催化剂",
+    "circle_of_competence": "能力圈",
+    "consumer_observation": "消费者与日常观察",
+    "costs": "费用与税负",
+    "credit": "信用与融资条件",
+    "culture": "企业文化",
+    "cycle": "市场与信用周期",
+    "diversification": "分散化",
+    "downside": "永久损失与下行风险",
+    "growth": "长期成长",
+    "innovation": "创新与研发",
+    "macro": "宏观环境",
+    "management": "管理层质量",
+    "margin_of_safety": "安全边际",
+    "moat": "竞争优势与护城河",
+    "opportunity_cost": "机会成本",
+    "passive": "被动投资基准",
+    "portfolio": "组合构建",
+    "quantitative": "定量筛选",
+    "regime": "经济环境适应性",
+    "research_network": "外部事实核验网络",
+    "risk": "风险识别与控制",
+    "special_situations": "特殊情形",
+    "systematic": "规则化执行",
+    "valuation": "估值"
+  },
+  "scenarios": {
+    "company": {
+      "description": "单一上市公司的质量、价格与风险研究",
+      "focus_tags": [
+        "business_quality",
+        "moat",
+        "management",
+        "valuation",
+        "downside",
+        "risk"
+      ],
+      "default_lenses": [
+        "warren-buffett",
+        "charlie-munger",
+        "philip-fisher",
+        "howard-marks"
+      ]
+    },
+    "growth": {
+      "description": "成长公司及其增长质量研究",
+      "focus_tags": [
+        "growth",
+        "innovation",
+        "management",
+        "business_quality",
+        "valuation",
+        "risk"
+      ],
+      "default_lenses": [
+        "philip-fisher",
+        "peter-lynch",
+        "warren-buffett",
+        "charlie-munger"
+      ]
+    },
+    "deep-value": {
+      "description": "低估值、资产折价与安全边际研究",
+      "focus_tags": [
+        "asset_value",
+        "valuation",
+        "margin_of_safety",
+        "downside",
+        "catalyst",
+        "quantitative"
+      ],
+      "default_lenses": [
+        "benjamin-graham",
+        "joel-greenblatt",
+        "howard-marks",
+        "charlie-munger"
+      ]
+    },
+    "china-quality": {
+      "description": "中国公司商业模式、文化与长期确定性研究",
+      "focus_tags": [
+        "business_quality",
+        "culture",
+        "management",
+        "moat",
+        "circle_of_competence",
+        "downside"
+      ],
+      "default_lenses": [
+        "duan-yongping",
+        "li-lu",
+        "charlie-munger",
+        "benjamin-graham"
+      ]
+    },
+    "portfolio": {
+      "description": "资产配置、费用、分散与环境压力测试",
+      "focus_tags": [
+        "asset_allocation",
+        "portfolio",
+        "diversification",
+        "costs",
+        "regime",
+        "risk"
+      ],
+      "default_lenses": [
+        "john-bogle",
+        "ray-dalio",
+        "howard-marks",
+        "warren-buffett"
+      ]
+    },
+    "special-situations": {
+      "description": "分拆、重组、事件驱动与复杂证券研究",
+      "focus_tags": [
+        "special_situations",
+        "catalyst",
+        "valuation",
+        "asset_value",
+        "downside",
+        "risk"
+      ],
+      "default_lenses": [
+        "joel-greenblatt",
+        "benjamin-graham",
+        "howard-marks",
+        "charlie-munger"
+      ]
+    },
+    "active-vs-passive": {
+      "description": "主动选股方案与低成本指数基准的比较",
+      "focus_tags": [
+        "passive",
+        "costs",
+        "diversification",
+        "business_quality",
+        "valuation",
+        "behavior"
+      ],
+      "default_lenses": [
+        "john-bogle",
+        "warren-buffett",
+        "peter-lynch",
+        "howard-marks"
+      ]
+    }
+  },
+  "investors": [
+    {
+      "id": "warren-buffett",
+      "name": "Warren Buffett",
+      "name_zh": "沃伦·巴菲特",
+      "school": "quality-value",
+      "scope": ["company", "security", "portfolio"],
+      "summary": "把股票视为企业所有权，在能力圈内寻找具备持久竞争优势、可信管理层和长期再投资能力的企业，并以相对内在价值有吸引力的价格买入。",
+      "principles": [
+        "先理解企业如何赚钱，再讨论证券价格。",
+        "把护城河、管理层诚信和资本配置作为长期价值的核心。",
+        "内在价值是区间而非精确点估计，并需要安全余量。",
+        "机会稀缺时保持耐心，真正高把握时允许集中。"
+      ],
+      "questions": [
+        "如果市场关闭十年，仍愿意持有这门生意吗？",
+        "新增留存收益能否以较高回报率继续投入？",
+        "什么变化会永久削弱护城河或管理层可信度？"
+      ],
+      "focus_tags": [
+        "business_quality",
+        "capital_allocation",
+        "circle_of_competence",
+        "downside",
+        "management",
+        "margin_of_safety",
+        "moat",
+        "opportunity_cost",
+        "portfolio",
+        "valuation"
+      ],
+      "best_for": [
+        "长期复利型企业",
+        "资本配置与管理层评估",
+        "商业质量与估值的联合判断"
+      ],
+      "limitations": [
+        "不适合把能力圈外或无法估值的公司强行打低分，应输出 unknown。",
+        "集中持有要求高确定性和足够损失承受力，不能直接复制给所有用户。"
+      ],
+      "sources": [
+        {
+          "title": "Berkshire Hathaway Shareholder Letters",
+          "url": "https://www.berkshirehathaway.com/letters/letters.html",
+          "kind": "primary"
+        },
+        {
+          "title": "Berkshire Hathaway Owner's Manual",
+          "url": "https://www.berkshirehathaway.com/owners.html",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "charlie-munger",
+      "name": "Charlie Munger",
+      "name_zh": "查理·芒格",
+      "school": "multidisciplinary-inversion",
+      "scope": ["company", "security", "behavior"],
+      "summary": "通过逆向思考、跨学科模型和激励分析减少愚蠢错误，优先寻找少数高质量企业，并重视认知偏误与极端失败路径。",
+      "principles": [
+        "先列出如何失败，再讨论如何成功。",
+        "从经济学、心理学、数学和工程等多模型交叉检验结论。",
+        "激励会系统性塑造管理层、员工和渠道行为。",
+        "避免明显错误通常比追求精巧预测更可靠。"
+      ],
+      "questions": [
+        "怎样才能毁掉这项投资？",
+        "哪些激励正在驱动当事人的真实行为？",
+        "我是否同时受到锚定、确认偏误和社会认同影响？"
+      ],
+      "focus_tags": [
+        "behavior",
+        "business_quality",
+        "culture",
+        "downside",
+        "management",
+        "moat",
+        "risk"
+      ],
+      "best_for": [
+        "失败路径与反证",
+        "激励机制和企业文化",
+        "认知偏误审计"
+      ],
+      "limitations": [
+        "多模型分析容易被写成事后故事，必须把每个模型绑定到可验证证据。",
+        "公开材料中的警句不能当作本人对当前公司的意见。"
+      ],
+      "sources": [
+        {
+          "title": "Poor Charlie's Almanack",
+          "url": "https://www.stripe.press/poor-charlies-almanack",
+          "kind": "publisher"
+        },
+        {
+          "title": "Berkshire Hathaway 2023 Annual Report — Charlie Munger tribute",
+          "url": "https://www.berkshirehathaway.com/2023ar/2023ar.pdf",
+          "kind": "official_firm"
+        }
+      ]
+    },
+    {
+      "id": "duan-yongping",
+      "name": "Duan Yongping",
+      "name_zh": "段永平",
+      "school": "business-model-culture",
+      "scope": ["company", "security", "behavior"],
+      "summary": "以买公司和未来现金流为出发点，重点判断生意模式、差异化、企业文化和能力圈，并用“不做清单”约束杠杆、投机与频繁交易。",
+      "principles": [
+        "好生意应有差异化、用户价值与可持续现金流。",
+        "企业文化和本分决定长期行为边界。",
+        "看不懂就不投，不用宏观或短期股价预测弥补认知缺口。",
+        "用最佳机会衡量新投资的机会成本。"
+      ],
+      "questions": [
+        "这门生意为什么是好生意，能否一句话说清？",
+        "公司是否长期把用户价值置于短期利润之前？",
+        "如果不能借钱也不能看股价，仍愿意拥有它吗？"
+      ],
+      "focus_tags": [
+        "business_quality",
+        "circle_of_competence",
+        "culture",
+        "management",
+        "moat",
+        "opportunity_cost",
+        "risk",
+        "valuation"
+      ],
+      "best_for": [
+        "商业模式与差异化",
+        "企业文化",
+        "能力圈和不为清单"
+      ],
+      "limitations": [
+        "社交平台发言具有时间和语境，必须链接原帖并区分原话与归纳。",
+        "“毛估估”不能替代财务数据交叉验证。"
+      ],
+      "sources": [
+        {
+          "title": "Duan Yongping public Xueqiu account",
+          "url": "https://xueqiu.com/u/1247347556",
+          "kind": "primary_platform"
+        }
+      ]
+    },
+    {
+      "id": "li-lu",
+      "name": "Li Lu",
+      "name_zh": "李录",
+      "school": "quality-value",
+      "scope": ["company", "security"],
+      "summary": "以长期所有高质量企业为中心，强调经济护城河、成长潜力、可信管理层、诚实面对未知，以及避免资本永久损失。",
+      "principles": [
+        "长期持有具有护城河和成长潜力的高质量企业。",
+        "把可信的人和诚信文化视为投资条件。",
+        "明确区分知道、可推断和不知道。",
+        "机会极少但高度确定时才考虑集中。"
+      ],
+      "questions": [
+        "二十年后企业仍可能持续创造价值吗？",
+        "管理层是否处在值得信任的关系网络中？",
+        "最可能造成永久资本损失的变量是什么？"
+      ],
+      "focus_tags": [
+        "business_quality",
+        "culture",
+        "downside",
+        "growth",
+        "management",
+        "moat",
+        "risk"
+      ],
+      "best_for": [
+        "长期确定性",
+        "可信管理层和企业文化",
+        "永久损失风险"
+      ],
+      "limitations": [
+        "文明趋势不能替代公司层面的价值获取证据。",
+        "高度集中只适用于证据充分且有相应风险容量的情况。"
+      ],
+      "sources": [
+        {
+          "title": "Himalaya Capital — What We Do and Core Values",
+          "url": "https://www.himcap.com/",
+          "kind": "official_firm"
+        }
+      ]
+    },
+    {
+      "id": "benjamin-graham",
+      "name": "Benjamin Graham",
+      "name_zh": "本杰明·格雷厄姆",
+      "school": "defensive-value",
+      "scope": ["security", "portfolio"],
+      "summary": "以保守估算的内在价值、财务安全性和安全边际为核心，用可重复的纪律减少市场情绪与预测误差，并通过适当分散应对单项判断失误。",
+      "principles": [
+        "价格显著低于保守价值估计时才形成安全边际。",
+        "分析应优先采用资产、盈利能力与财务强度等可核验事实。",
+        "市场波动提供报价而不是指令。",
+        "规则必须标注时代和利率背景，不能机械照搬历史阈值。"
+      ],
+      "questions": [
+        "在保守假设下，价格相对价值低端仍有多大折价？",
+        "资产负债表能否承受盈利恶化与再融资压力？",
+        "如果故事完全落空，剩余价值和回收路径是什么？"
+      ],
+      "focus_tags": [
+        "asset_value",
+        "diversification",
+        "downside",
+        "margin_of_safety",
+        "quantitative",
+        "systematic",
+        "valuation"
+      ],
+      "best_for": [
+        "深度价值与资产折价",
+        "财务安全性",
+        "候选池的规则化筛选"
+      ],
+      "limitations": [
+        "历史固定倍数与债券收益率阈值必须按当期环境重新校准。",
+        "单一所谓 Graham Number 不能代表完整哲学。"
+      ],
+      "sources": [
+        {
+          "title": "Columbia Business School — History of Value Investing",
+          "url": "https://business.columbia.edu/heilbrunn/about/valueinvestinghistory",
+          "kind": "institutional_archive"
+        },
+        {
+          "title": "CFA Institute Research Foundation — Benjamin Graham",
+          "url": "https://rpc.cfainstitute.org/research/foundation/1977/benjamin-graham-the-father-of-financial-analysis-full-pdf",
+          "kind": "institutional_archive"
+        }
+      ]
+    },
+    {
+      "id": "philip-fisher",
+      "name": "Philip Fisher",
+      "name_zh": "菲利普·费雪",
+      "school": "quality-growth",
+      "scope": ["company", "security"],
+      "summary": "寻找具有长成长跑道、优秀研发销售能力、深厚管理团队和诚信文化的企业，并用客户、供应商、竞争者等外部公开证据核验管理层叙事。",
+      "principles": [
+        "成长质量来自市场空间、创新效率、销售能力和组织深度的组合。",
+        "财务报表之外，还要用多类外部公开证据核验公司说法。",
+        "管理层面对坏消息的坦诚程度是关键质量信号。",
+        "高质量成长企业适合长期持有，但买入价格仍不可忽略。"
+      ],
+      "questions": [
+        "增长跑道来自真实客户需求还是短期行业顺风？",
+        "客户、供应商、前员工和竞争者的公开证据是否相互印证？",
+        "管理层是否具备超越创始人的组织深度？"
+      ],
+      "focus_tags": [
+        "business_quality",
+        "growth",
+        "innovation",
+        "management",
+        "research_network",
+        "risk"
+      ],
+      "best_for": [
+        "高质量成长公司",
+        "研发、销售和组织能力",
+        "外部事实核验"
+      ],
+      "limitations": [
+        "外部调研只能使用公开、合法信息，不能诱导或收集重大未公开信息。",
+        "受版权保护的原始清单应短句改写，不能整段复制。"
+      ],
+      "sources": [
+        {
+          "title": "Wiley — Common Stocks and Uncommon Profits and Other Writings",
+          "url": "https://www.wiley-vch.de/en/areas-interest/finance-economics-law/finance-investments-13fi/investments-securities-13fi3/common-stocks-and-uncommon-profits-and-other-writings-978-0-471-44550-0",
+          "kind": "publisher"
+        }
+      ]
+    },
+    {
+      "id": "peter-lynch",
+      "name": "Peter Lynch",
+      "name_zh": "彼得·林奇",
+      "school": "researchable-growth",
+      "scope": ["company", "security", "behavior"],
+      "summary": "从熟悉的产品和行业发现候选，但必须完成基本面研究；用通俗故事说明持有理由，并按成长、周期、困境反转等不同公司类型追踪真正的盈利驱动。",
+      "principles": [
+        "日常观察只是线索，不是买入证据。",
+        "必须能简单说明拥有的是什么以及盈利为何增长。",
+        "不同类型公司需要不同的研究问题和卖出条件。",
+        "资产负债表决定企业能否活过低谷。"
+      ],
+      "questions": [
+        "能否在两分钟内讲清持有逻辑与关键盈利驱动？",
+        "它属于成长、周期、稳定、资产机会还是困境反转？",
+        "当前估值已经隐含了多高的增长预期？"
+      ],
+      "focus_tags": [
+        "business_quality",
+        "consumer_observation",
+        "growth",
+        "management",
+        "risk",
+        "valuation"
+      ],
+      "best_for": [
+        "消费与中小型成长公司",
+        "公司类型分支分析",
+        "简明投资故事和盈利驱动"
+      ],
+      "limitations": [
+        "“买你了解的”不能简化为喜欢产品就买股票。",
+        "公司分类是提问路由，不是固定估值公式。"
+      ],
+      "sources": [
+        {
+          "title": "Fidelity — Peter Lynch and Chris Kuiper interview transcript",
+          "url": "https://www.fidelity.com/bin-public/060_www_fidelity_com/documents/learning-center/110322%20rewards%20exclusive_UnderstandtheChange-Transcript_%20F.pdf",
+          "kind": "primary"
+        },
+        {
+          "title": "Simon & Schuster — One Up On Wall Street",
+          "url": "https://www.simonandschuster.com/books/One-Up-On-Wall-Street/Peter-Lynch/9780743200400",
+          "kind": "publisher"
+        }
+      ]
+    },
+    {
+      "id": "howard-marks",
+      "name": "Howard Marks",
+      "name_zh": "霍华德·马克斯",
+      "school": "cycle-risk",
+      "scope": ["security", "portfolio", "behavior"],
+      "summary": "区分好资产与好投资，关注价格中包含的共识预期、下行结果分布、信用和心理周期，并以二层思维寻找与市场不同且更正确的判断。",
+      "principles": [
+        "资产质量不等于投资吸引力，价格和预期决定回报空间。",
+        "风险不是单一波动率，而是结果不确定性与永久损失。",
+        "市场周期由基本面、信用条件和投资者心理共同推动。",
+        "宏观预测不可靠，但可以识别所处区间并准备多种情景。"
+      ],
+      "questions": [
+        "共识已经在价格中计入了什么？",
+        "我的观点与共识哪里不同，为什么可能更正确？",
+        "在价值收敛前，资金与心理承受力能否让我活下来？"
+      ],
+      "focus_tags": [
+        "behavior",
+        "credit",
+        "cycle",
+        "downside",
+        "risk",
+        "valuation"
+      ],
+      "best_for": [
+        "价格与共识预期",
+        "信用和心理周期",
+        "下行结果与生存能力"
+      ],
+      "limitations": [
+        "市场温度用于调整防御度，不是精确择时信号。",
+        "主观周期判断必须附证据、反证和置信度。"
+      ],
+      "sources": [
+        {
+          "title": "Oaktree — The Best of Howard Marks's memos",
+          "url": "https://www.oaktreecapital.com/insights/memo/the-best-of",
+          "kind": "primary"
+        },
+        {
+          "title": "Oaktree — You Can't Predict. You Can Prepare.",
+          "url": "https://www.oaktreecapital.com/docs/default-source/memos/2001-11-20-you-cant-predict-you-can-prepare.pdf",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "john-bogle",
+      "name": "John C. Bogle",
+      "name_zh": "约翰·博格",
+      "school": "low-cost-indexing",
+      "scope": ["portfolio", "behavior"],
+      "summary": "用低成本、广泛分散的市场指数获取资本市场回报，以目标和风险承受力确定资产配置，减少交易、税负与情绪造成的长期复利损耗。",
+      "principles": [
+        "费用、税与换手会确定性地侵蚀投资者所得回报。",
+        "广泛分散和简单资产配置是多数投资者的强基准。",
+        "长期纪律通常比追逐近期赢家更重要。",
+        "任何主动策略都应与低成本指数的净回报比较。"
+      ],
+      "questions": [
+        "扣除费用、税和行为偏差后，主动方案仍有优势吗？",
+        "组合是否足够分散且符合用户期限与损失承受力？",
+        "复杂性是否带来了可证明的净收益？"
+      ],
+      "focus_tags": [
+        "asset_allocation",
+        "behavior",
+        "costs",
+        "diversification",
+        "passive",
+        "portfolio",
+        "systematic"
+      ],
+      "best_for": [
+        "主动策略的基准案例",
+        "长期低成本资产配置",
+        "费用、税与行为拖累"
+      ],
+      "limitations": [
+        "不应给个股护城河或管理层评分，超出适用范围时输出 N/A。",
+        "指数投资仍需要适合个人目标的资产配置和风险承受力。"
+      ],
+      "sources": [
+        {
+          "title": "The John C. Bogle Center — Bogle Archive",
+          "url": "https://boglecenter.net/bogle-archive/",
+          "kind": "institutional_archive"
+        },
+        {
+          "title": "Vanguard — History of low-cost broad indexing",
+          "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/who-we-are/our-history.html",
+          "kind": "official_firm"
+        }
+      ]
+    },
+    {
+      "id": "ray-dalio",
+      "name": "Ray Dalio / Bridgewater",
+      "name_zh": "瑞·达利欧 / 桥水",
+      "school": "macro-risk-balance",
+      "scope": ["portfolio", "behavior"],
+      "summary": "不押注单一未来，用经济增长与通胀相对预期的不同环境检验资产表现，并按风险贡献而非名义金额观察组合是否真正分散。",
+      "principles": [
+        "把未来拆成多个经济环境而非依赖单一点预测。",
+        "名义资金分散不等于风险来源分散。",
+        "相关性和波动在压力期会变化，必须单独做危机场景。",
+        "将原则明文化有助于复盘，但模型参数仍需怀疑。"
+      ],
+      "questions": [
+        "增长和通胀分别高于或低于预期时，组合如何表现？",
+        "哪个单一风险来源主导了组合损失？",
+        "相关性突变、流动性枯竭或去杠杆时会发生什么？"
+      ],
+      "focus_tags": [
+        "asset_allocation",
+        "diversification",
+        "macro",
+        "portfolio",
+        "regime",
+        "risk",
+        "systematic"
+      ],
+      "best_for": [
+        "经济环境压力测试",
+        "风险贡献与相关性",
+        "组合级分散"
+      ],
+      "limitations": [
+        "All Weather 的机构实现不能被描述为面向个人的官方复制品。",
+        "一般用户默认不使用杠杆，宏观分析只做压力测试而不做短线预测。"
+      ],
+      "sources": [
+        {
+          "title": "Bridgewater — The All Weather Story",
+          "url": "https://www.bridgewater.com/research-and-insights/the-all-weather-story",
+          "kind": "official_firm"
+        },
+        {
+          "title": "Ray Dalio — Principles",
+          "url": "https://www.principles.com/principles/",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "joel-greenblatt",
+      "name": "Joel Greenblatt",
+      "name_zh": "乔尔·格林布拉特",
+      "school": "systematic-value",
+      "scope": ["security", "portfolio"],
+      "summary": "用企业价值相关收益率和资本回报等指标寻找相对便宜的好公司，并以规则化、分散和足够长的执行期克服单项判断与短期风格失效。",
+      "principles": [
+        "企业质量和价格应分别排序，不能只看便宜。",
+        "规则化候选池需要明确会计口径、排除行业和数据时点。",
+        "分散持有和持续执行用于承受单个错误与阶段性落后。",
+        "复杂事件中要单独识别价值实现催化剂和结构风险。"
+      ],
+      "questions": [
+        "高资本回报是否来自可持续经营而非会计或周期峰值？",
+        "企业价值、现金、租赁和负债口径是否一致？",
+        "价值通过什么催化剂、在多长时间内可能实现？"
+      ],
+      "focus_tags": [
+        "business_quality",
+        "catalyst",
+        "quantitative",
+        "special_situations",
+        "systematic",
+        "valuation"
+      ],
+      "best_for": [
+        "规则化价值筛选",
+        "质量与估值双排序",
+        "特殊情形与催化剂"
+      ],
+      "limitations": [
+        "公开资料不足以完全复制官方筛选器，必须标为 greenblatt-like 而非官方结果。",
+        "回测必须使用 point-in-time 数据并计入退市、费用、税和流动性。"
+      ],
+      "sources": [
+        {
+          "title": "Gotham Funds — Investment Philosophy",
+          "url": "https://www.gothamfunds.com/strategy",
+          "kind": "official_firm"
+        },
+        {
+          "title": "Magic Formula Investing — How It Works",
+          "url": "https://www.magicformulainvesting.com/Home/HowItWorks",
+          "kind": "official_firm"
+        },
+        {
+          "title": "Simon & Schuster — You Can Be a Stock Market Genius",
+          "url": "https://www.simonandschuster.com/books/You-Can-Be-a-Stock-Market-Genius/Joel-Greenblatt/9780684840079",
+          "kind": "publisher"
+        }
+      ]
+    }
+  ]
+}
