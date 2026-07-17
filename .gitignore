@@ -17,6 +17,7 @@ reports/美团/command-log.jsonl
 *.wav
 *.mp4
 *.mov
+!public/media/investor-council-guide.mp4
 
 # ===== 本地资料区：不打算公开的文件放这个目录，永不入库 =====
 /local/

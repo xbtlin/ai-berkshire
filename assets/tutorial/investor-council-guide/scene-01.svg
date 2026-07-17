@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720">
+  <defs>
+    <radialGradient id="bg" cx="78%" cy="8%" r="92%">
+      <stop offset="0" stop-color="#1b4b34"/>
+      <stop offset="0.46" stop-color="#0a2117"/>
+      <stop offset="1" stop-color="#06110d"/>
+    </radialGradient>
+    <style>
+      text { font-family: "Hiragino Sans", "Yu Gothic", sans-serif; }
+      .muted { fill: #92a89b; }
+      .green { fill: #80d99a; }
+      .gold { fill: #e4bf72; }
+    </style>
+  </defs>
+  <rect width="720" height="720" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#b9f1c7"><path d="M0 120h720M0 240h720M0 360h720M0 480h720M0 600h720"/><path d="M120 0v720M240 0v720M360 0v720M480 0v720M600 0v720"/></g>
+  <rect x="35" y="35" width="650" height="650" rx="34" fill="#091b14" fill-opacity="0.82" stroke="#b2d7be" stroke-opacity="0.2"/>
+  <rect x="67" y="66" width="52" height="52" rx="14" fill="#80d99a" fill-opacity="0.09" stroke="#80d99a" stroke-opacity="0.48"/>
+  <text x="93" y="101" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#b9f1c7">IB</text>
+  <text x="136" y="87" font-size="16" font-weight="700" fill="#eaf4ed">Investor Council</text>
+  <text x="136" y="107" font-size="10" letter-spacing="2" class="muted">AI BERKSHIRE RESEARCH LAB</text>
+  <line x1="67" y1="143" x2="653" y2="143" stroke="#b2d7be" stroke-opacity="0.18"/>
+  <text x="67" y="201" font-size="12" font-weight="700" letter-spacing="3" class="green">QUICK GUIDE · 23 SEC</text>
+  <text x="67" y="287" font-size="54" font-weight="600" fill="#eaf4ed">4ステップで</text>
+  <text x="67" y="354" font-size="54" font-weight="600" class="green">評議会を組む。</text>
+  <text x="69" y="411" font-size="20" class="muted">調査に必要な問いと投資哲学レンズを選びます。</text>
+  <g transform="translate(67 480)">
+    <rect width="586" height="110" rx="22" fill="#102b1f" stroke="#80d99a" stroke-opacity="0.25"/>
+    <circle cx="55" cy="55" r="27" fill="#e4bf72" fill-opacity="0.12" stroke="#e4bf72" stroke-opacity="0.4"/>
+    <text x="55" y="63" text-anchor="middle" font-family="Georgia, serif" font-size="22" class="gold">01</text>
+    <text x="101" y="49" font-size="18" font-weight="700" fill="#dbe8df">まず研究シナリオを選択</text>
+    <text x="101" y="75" font-size="14" class="muted">企業・証券・ポートフォリオなどから始めます</text>
+  </g>
+  <g transform="translate(67 632)"><rect width="112" height="4" rx="2" fill="#80d99a"/><rect x="124" width="112" height="4" rx="2" fill="#2c4839"/><rect x="248" width="112" height="4" rx="2" fill="#2c4839"/><rect x="372" width="112" height="4" rx="2" fill="#2c4839"/><rect x="496" width="90" height="4" rx="2" fill="#2c4839"/></g>
+</svg>

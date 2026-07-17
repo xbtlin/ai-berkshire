@@ -26,4 +26,5 @@ __pycache__
 *.wav
 *.mp4
 *.mov
+!public/media/investor-council-guide.mp4
 .DS_Store

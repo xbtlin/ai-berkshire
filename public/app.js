@@ -253,4 +253,8 @@ byId("reset-focus").addEventListener("click", () => {
   });
 });
 
+byId("usage-guide").addEventListener("toggle", (event) => {
+  if (!event.currentTarget.open) byId("usage-video").pause();
+});
+
 init();

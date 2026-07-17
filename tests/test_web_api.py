@@ -167,13 +167,41 @@ class StaticDeploymentTests(unittest.TestCase):
         html = (ROOT / "public" / "index.html").read_text(encoding="utf-8")
         self.assertIn('src="/app.js"', html)
         self.assertIn('href="/styles.css"', html)
+        self.assertIn('id="usage-guide"', html)
+        self.assertIn('id="usage-video"', html)
+        self.assertIn('src="/media/investor-council-guide.mp4"', html)
+        self.assertIn('preload="none"', html)
+        self.assertIn('kind="captions"', html)
         self.assertNotIn("<script>", html)
-        self.assertTrue((ROOT / "public" / "app.js").is_file())
+        app_js = (ROOT / "public" / "app.js").read_text(encoding="utf-8")
+        self.assertIn('byId("usage-video").pause()', app_js)
         self.assertTrue((ROOT / "public" / "styles.css").is_file())
+        for media_name in (
+            "investor-council-guide.mp4",
+            "investor-council-guide-poster.jpg",
+            "investor-council-guide-ja.vtt",
+        ):
+            self.assertTrue((ROOT / "public" / "media" / media_name).is_file())
 
-        ignore_lines = set(
+        media_dir = ROOT / "public" / "media"
+        video_bytes = (media_dir / "investor-council-guide.mp4").read_bytes()
+        self.assertGreater(len(video_bytes), 100_000)
+        self.assertEqual(b"ftyp", video_bytes[4:8])
+        self.assertTrue(
+            (media_dir / "investor-council-guide-poster.jpg")
+            .read_bytes()
+            .startswith(b"\xff\xd8")
+        )
+        captions = (media_dir / "investor-council-guide-ja.vtt").read_text(
+            encoding="utf-8"
+        )
+        self.assertTrue(captions.startswith("WEBVTT\n"))
+        self.assertIn("00:18.600 --> 00:23.200", captions)
+
+        ignore_order = (
             (ROOT / ".vercelignore").read_text(encoding="utf-8").splitlines()
         )
+        ignore_lines = set(ignore_order)
         for private_path in (
             ".vercel",
             "local",
@@ -186,6 +214,9 @@ class StaticDeploymentTests(unittest.TestCase):
             "*.mov",
         ):
             self.assertIn(private_path, ignore_lines)
+        public_video = "!public/media/investor-council-guide.mp4"
+        self.assertIn(public_video, ignore_lines)
+        self.assertGreater(ignore_order.index(public_video), ignore_order.index("*.mp4"))
 
 
 if __name__ == "__main__":
