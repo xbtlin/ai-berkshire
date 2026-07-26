@@ -38,33 +38,49 @@ _CTX = Context(prec=28, rounding=ROUND_HALF_EVEN)
 
 # 匹配模式：数字 + 单位，前面有上下文标签
 # 例：收入：1,239亿元、PE 18.8x、毛利率 56%、市值 ~$5,670亿
+#
+# 注意：所有数字捕获组必须带上可选符号位 _SIGN，否则 "-1.72%" 会被抓成 "1.72"，
+# 导致核验时报告值与信源值符号相反、偏差 200%，产生假打回。
+# 符号位涵盖 ASCII 正负号、Unicode 减号(U+2212)、en-dash(U+2013)、全角正负号。
+_SIGN = r'[+\-−–－＋]?'
+
 _PATTERNS = [
     # 百分比
-    (r'([\d,，\.]+)\s*%',                        '%',    'percent'),
+    (r'(' + _SIGN + r'[\d,，\.]+)\s*%',                        '%',    'percent'),
     # 亿元/亿美元/亿港元
-    (r'([\d,，\.]+)\s*亿(元|美元|港元|RMB|USD|HKD)?', '亿',    'hundred_million'),
+    (r'(' + _SIGN + r'[\d,，\.]+)\s*亿(元|美元|港元|RMB|USD|HKD)?', '亿',    'hundred_million'),
     # 倍数 PE/PB/PS
-    (r'([\d,，\.]+)\s*[xX倍]',                   'x',    'multiple'),
+    (r'(' + _SIGN + r'[\d,，\.]+)\s*[xX倍]',                   'x',    'multiple'),
     # 万亿
-    (r'([\d,，\.]+)\s*万亿',                      '万亿', 'trillion'),
+    (r'(' + _SIGN + r'[\d,，\.]+)\s*万亿',                      '万亿', 'trillion'),
     # 美元绝对值（B/T）
-    (r'\$\s*([\d,，\.]+)\s*([BMT亿])',             '$',    'usd_abs'),
+    (r'\$\s*(' + _SIGN + r'[\d,，\.]+)\s*([BMT亿])',             '$',    'usd_abs'),
     # 纯整数（如市值、收入、用户数等，出现在表格 | 里）
-    (r'\|\s*[~约]?\$?([\d,，\.]+)\s*\|',          '',     'table_num'),
+    (r'\|\s*[~约]?\$?(' + _SIGN + r'[\d,，\.]+)\s*\|',          '',     'table_num'),
 ]
 
 _LABEL_RE = re.compile(
-    r'(?P<label>[^\|\n：:]{2,25})[：:\s]+[~约]?\$?(?P<num>[\d,，\.]+)\s*(?P<unit>亿[元美港]?元?|万亿|[xX倍]|%|[BMT])?'
+    r'(?P<label>[^\|\n：:]{2,25})[：:\s]+[~约]?\$?(?P<num>' + _SIGN + r'[\d,，\.]+)'
+    r'\s*(?P<unit>亿[元美港]?元?|万亿|[xX倍]|%|[BMT])?'
 )
 
 _TABLE_ROW_RE = re.compile(
-    r'\|\s*(?P<label>[^|]{1,40})\s*\|\s*[~约]?\$?(?P<num>[\d,，\.]+)\s*(?P<unit>亿[元美港]?元?|万亿|[xX倍]|%|[BMT])?\s*\|'
+    r'\|\s*(?P<label>[^|]{1,40})\s*\|\s*[~约]?\$?(?P<num>' + _SIGN + r'[\d,，\.]+)'
+    r'\s*(?P<unit>亿[元美港]?元?|万亿|[xX倍]|%|[BMT])?\s*\|'
 )
 
 
 def _clean_num(s: str) -> float:
-    """把带逗号、中文逗号的数字字符串转为 float。"""
+    """把带逗号、中文逗号、各类正负号的数字字符串转为 float。
+
+    支持 ASCII '-'/'+'、Unicode 减号 '−'(U+2212)、en-dash '–'(U+2013)、
+    全角 '－'(U+FF0D)/'＋'(U+FF0B)——报告中这些符号都可能被用作正负号。
+    """
     s = s.replace(',', '').replace('，', '').strip()
+    # 归一化各类符号为 ASCII
+    for ch in ('−', '–', '－'):
+        s = s.replace(ch, '-')
+    s = s.replace('＋', '+')
     try:
         return float(s)
     except ValueError:
@@ -99,14 +115,14 @@ def _is_valid_label(label: str) -> bool:
 
 # 两列表格行：| 标签 | 数值 unit |（专为财务报告的 KV 表设计）
 _KV_TABLE_RE = re.compile(
-    r'^\|\s*(?P<label>[^|*\n]{2,40}?)\s*\|\s*[~约]?\$?(?P<num>[\d,，\.]+)\s*'
+    r'^\|\s*(?P<label>[^|*\n]{2,40}?)\s*\|\s*[~约]?\$?(?P<num>' + _SIGN + r'[\d,，\.]+)\s*'
     r'(?P<unit>亿[元美港]?元?|万亿|[xX倍]|%|[BMT亿])?\s*[\|（\(]'
 )
 
 # 带标签的 KV 行：标签：数值 单位
 _KV_LABEL_RE = re.compile(
     r'(?P<label>[\u4e00-\u9fa5A-Za-z][^\|\n：:*]{1,30})[：:]\s*[~约]?\$?'
-    r'(?P<num>[\d,，\.]+)\s*(?P<unit>亿[元美港]?元?|万亿|[xX倍]|%|[BMT])?'
+    r'(?P<num>' + _SIGN + r'[\d,，\.]+)\s*(?P<unit>亿[元美港]?元?|万亿|[xX倍]|%|[BMT])?'
 )
 
 
@@ -138,13 +154,14 @@ def _parse_md_tables(lines: list) -> list:
                         col_header = headers_raw[col_idx] if col_idx < len(headers_raw) else f'列{col_idx}'
                         # 提取 cell 中的数字+单位
                         m = re.search(
-                            r'[~约]?\$?([\d,，\.]+)\s*(亿[元美港]?元?|万亿|[xX倍]|%|[BMT])?',
+                            r'[~约]?\$?(' + _SIGN + r'[\d,，\.]+)\s*'
+                            r'(亿[元美港]?元?|万亿|[xX倍]|%|[BMT])?',
                             cell
                         )
                         if m:
                             val = _clean_num(m.group(1))
                             unit = (m.group(2) or '').strip()
-                            if val and val != 0 and val < 1e15:
+                            if val is not None and val != 0 and abs(val) < 1e15:
                                 results.append((row_label, col_header, val, unit, i + 1, dline))
                     i += 1
                 continue
@@ -170,7 +187,7 @@ def extract_data_points(md_text: str) -> list:
         label = re.sub(r'[\*_`]+', '', label).strip()
         if not _is_valid_label(label):
             return
-        if val is None or val == 0 or val > 1e15:
+        if val is None or val == 0 or abs(val) > 1e15:
             return
         # 过滤纯年份/季度
         if re.fullmatch(r'(20\d{2}|Q[1-4]|\d{4}\s*Q[1-4])', label.strip()):
@@ -402,7 +419,21 @@ def render_verdict(results: list, report_name: str = "") -> dict:
 # CLI Entry Point
 # ---------------------------------------------------------------------------
 
+def _force_utf8_stdio():
+    """把 stdout/stderr 强制切到 UTF-8。
+
+    Windows 控制台默认 GBK，报告里的 €、→、★ 等字符会让 print(json.dumps(...))
+    抛 UnicodeEncodeError 直接崩溃。errors='replace' 保证极端字符也不中断流程。
+    """
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding='utf-8', errors='replace')
+        except Exception:
+            pass  # 非 TextIOWrapper（如被重定向到管道对象）时忽略
+
+
 def main():
+    _force_utf8_stdio()
     parser = argparse.ArgumentParser(
         description='Report Audit Tool — 研究报告数据抽检工具',
         formatter_class=argparse.RawDescriptionHelpFormatter,
