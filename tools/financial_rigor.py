@@ -54,6 +54,19 @@ def fmt_number(d: Decimal, unit: str = "") -> str:
     return f"{v:,.2f}"
 
 
+def _force_utf8_stdio():
+    """把 stdout/stderr 强制切到 UTF-8。
+
+    Windows 控制台默认 GBK，本工具输出的 ❌ / ⚠️ / ✅ 会抛 UnicodeEncodeError，
+    导致「偏差超标」这条最该被看到的告警路径反而直接崩溃退出。
+    """
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding='utf-8', errors='replace')
+        except Exception:
+            pass
+
+
 # ---------------------------------------------------------------------------
 # 1. Market Cap Verification (股价×总股本 vs 报告市值)
 # ---------------------------------------------------------------------------
@@ -422,6 +435,7 @@ Examples:
     ts.add_argument("--years", type=int, default=3)
     ts.add_argument("--currency", default="")
 
+    _force_utf8_stdio()
     args = parser.parse_args()
 
     if args.command == "verify-market-cap":
