@@ -128,7 +128,7 @@
 
 **研究方法**：
 - 使用 WebSearch 搜索最新公开信息（财报、行业报告、新闻）
-- **财务数据必须来自两个独立来源**，按 `skills/financial-data.md` 规范执行（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯），两源误差>1%须标记
+- **财务数据必须来自两个独立来源**，按 `skills/financial-data.md` 规范执行（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯；台股：FinMind `tools/twstock_data.py`+Goodinfo），两源误差>1%须标记
 - 确保数据准确，关键数据标注来源
 - 分析要深入，不流于表面
 - **联网失败禁止伪装**：若 WebSearch 被拦截/不可用，禁止用训练知识冒充联网结果。必须在报告顶部醒目标注「⚠️ 本报告未能联网，基于训练知识（截止日期 X），置信度降级」，并如实告知 team-lead，由其决定是否中止研究

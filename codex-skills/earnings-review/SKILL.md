@@ -53,7 +53,7 @@ This skill is generated from `skills/earnings-review.md` so Claude Code and Code
 3. **管理层致股东信**（如有年报）：完整阅读
 4. **投资者日/分析师日材料**（如近期有）
 
-如果无法获取完整原文，按 `skills/financial-data.md` 规范使用标准数据源拼凑（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯），但必须标注"非原始财报，来自第三方汇总"，且关键数据两源误差>1%须标记。
+如果无法获取完整原文，按 `skills/financial-data.md` 规范使用标准数据源拼凑（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：东方财富+巨潮资讯；台股：FinMind `tools/twstock_data.py`+Goodinfo），但必须标注"非原始财报，来自第三方汇总"，且关键数据两源误差>1%须标记。
 
 ### 第二步：核心财务数据提取与验证
 

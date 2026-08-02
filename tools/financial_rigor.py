@@ -55,6 +55,19 @@ def fmt_number(d: Decimal, unit: str = "") -> str:
     return f"{v:,.2f}"
 
 
+def _force_utf8_stdio():
+    """把 stdout/stderr 强制切到 UTF-8。
+
+    Windows 控制台默认 GBK，本工具输出的 ❌ / ⚠️ / ✅ 会抛 UnicodeEncodeError，
+    导致「偏差超标」这条最该被看到的告警路径反而直接崩溃退出。
+    """
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding='utf-8', errors='replace')
+        except Exception:
+            pass
+
+
 # ---------------------------------------------------------------------------
 # 1. Market Cap Verification (股价×总股本 vs 报告市值)
 # ---------------------------------------------------------------------------
@@ -289,7 +302,8 @@ def benford_check(values: list):
 def exact_calc(expr: str):
     """Evaluate a financial expression with exact decimal arithmetic.
 
-    Supports: +, -, *, /, (), numbers (including scientific notation).
+    Supports: +, -, *, /, ** (integer exponents), (), numbers
+    (including scientific notation).
     """
     print("=" * 60)
     print("精确计算 (Exact Calculator)")
@@ -302,6 +316,9 @@ def exact_calc(expr: str):
         print(f"  结果:   {fmt_number(d_result)}")
         print(f"  精确值: {d_result}")
         return d_result
+    except ZeroDivisionError:
+        print("  ❌ 计算错误: 除数为零")
+        return None
     except (ArithmeticError, SyntaxError, ValueError) as e:
         print(f"  ❌ 计算错误: {e}")
         return None
@@ -310,10 +327,16 @@ def exact_calc(expr: str):
 def _evaluate_decimal_ast(node: ast.AST, expr: str) -> Decimal:
     """Evaluate a restricted arithmetic AST using Decimal throughout."""
     if isinstance(node, ast.Constant) and isinstance(node.value, (int, float)):
-        source = ast.get_source_segment(expr, node)
+        source = None
+        if hasattr(ast, "get_source_segment"):  # Python 3.8+
+            source = ast.get_source_segment(expr, node)
         if source is None:
-            raise ValueError("无法读取数字")
+            source = repr(node.value)
         return Decimal(source)
+
+    # Python 3.7 把数字字面量解析为 ast.Num 而非 ast.Constant
+    if hasattr(ast, "Num") and isinstance(node, ast.Num):
+        return Decimal(repr(node.n))
 
     if isinstance(node, ast.UnaryOp) and isinstance(node.op, (ast.UAdd, ast.USub)):
         value = _evaluate_decimal_ast(node.operand, expr)
@@ -330,8 +353,13 @@ def _evaluate_decimal_ast(node: ast.AST, expr: str) -> Decimal:
             return _CTX.multiply(left, right)
         if isinstance(node.op, ast.Div):
             return _CTX.divide(left, right)
+        if isinstance(node.op, ast.Pow):
+            # 复利计算常用（如 1.15**5），仅支持整数指数
+            if right != right.to_integral_value():
+                raise ValueError("幂运算仅支持整数指数（如 1.15**5）")
+            return _CTX.power(left, right.to_integral_value())
 
-    raise ValueError("仅支持数字与 +、-、*、/、() 运算")
+    raise ValueError("仅支持数字与 +、-、*、/、**、() 运算")
 
 
 # ---------------------------------------------------------------------------
@@ -443,6 +471,7 @@ Examples:
     ts.add_argument("--years", type=int, default=3)
     ts.add_argument("--currency", default="")
 
+    _force_utf8_stdio()
     args = parser.parse_args()
 
     if args.command == "verify-market-cap":

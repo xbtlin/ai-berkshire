@@ -9,7 +9,7 @@ GitHub: xbtlin/ai-berkshire
 
 ```
 skills/          — 投研 Skill 定义（.md），复制到 ~/.claude/commands/ 使用
-tools/           — 辅助工具（financial_rigor.py 精确计算）
+tools/           — 辅助工具（financial_rigor.py 精确计算、twstock_data.py 台股FinMind取数）
 reports/         — 投资研究报告输出
 assets/          — 图片等静态资源
 ```
@@ -106,6 +106,7 @@ git push origin main
 ## 注意事项
 
 - 市值必须手算校验：股价 × 总股本，与报告市值对比
-- 货币单位要明确（港币/人民币/美元），防止混淆
+- 货币单位要明确（港币/人民币/美元/新台币），防止混淆
 - PE/ROE等指标用 tools/financial_rigor.py 精确计算
+- 台股数据用 tools/twstock_data.py（FinMind）获取，并按 skills/financial-data.md 台股章节交叉验证
 - 报告写完后主动询问是否推送到GitHub

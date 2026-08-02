@@ -19,7 +19,14 @@ reports/美团/command-log.jsonl
 *.mov
 
 # ===== 本地资料区：不打算公开的文件放这个目录，永不入库 =====
+# API token（如 FinMind 的 local/finmind_token.txt）也放这里，只留本机
 /local/
+
+# ===== 密钥/凭证类文件，任何位置一律不入库 =====
+.env
+.env.*
+*_token.txt
+*.token
 
 # 组合报告只存本地，不公开
 reports/portfolio-latest.md
