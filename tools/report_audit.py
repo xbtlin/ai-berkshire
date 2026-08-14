@@ -213,8 +213,11 @@ def extract_data_points(md_text: str) -> list:
         # 跳过无意义行标签
         if not _is_valid_label(row_label):
             continue
-        # 跳过无意义列标题（YoY增速列单独标注，不作为待核验数据）
-        if col_header.upper() in ('YOY', 'YOY增速', '增速', '同比', '变化', '趋势', '说明', '备注'):
+        # 跳过增速及叙述性列，它们可能含年份或 10-K 等非数据标识符。
+        if col_header.strip().casefold() in (
+                'yoy', 'yoy增速', '增速', '同比', '变化', '趋势', '说明', '备注',
+                'source', 'sources', 'note', 'notes', 'verified',
+                'recommendation', 'commentary', 'summary'):
             continue
         # label = "行标签 · 列标题"（若列标题是行标签的补充）
         if col_header and col_header != row_label:
