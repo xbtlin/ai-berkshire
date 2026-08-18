@@ -1,0 +1,57 @@
+[
+  {
+    "id": 5,
+    "label": "逆变器 · 代表龙头（主板）",
+    "reported_value": 605117.0,
+    "unit": "",
+    "line_number": 13,
+    "raw_text": "| 逆变器 | -34.4% | -13.2% | 德业股份 605117 |",
+    "fetched_value": 605117.0,
+    "fetched_source": "新浪K线+东财行情API(德业股份605117, 60日-42.6%距高-46.1%)",
+    "note": "板块龙头代码"
+  },
+  {
+    "id": 4,
+    "label": "逆变器 · 年初至今",
+    "reported_value": -13.2,
+    "unit": "%",
+    "line_number": 13,
+    "raw_text": "| 逆变器 | -34.4% | -13.2% |",
+    "fetched_value": -13.2,
+    "fetched_source": "东财板块接口 f25(BK1320 逆变器, 年初至今-13.2%)",
+    "note": "板块指数年初至今涨跌幅"
+  },
+  {
+    "id": 9,
+    "label": "燃料电池 · 年初至今",
+    "reported_value": -34.3,
+    "unit": "%",
+    "line_number": 14,
+    "raw_text": "| 燃料电池 | -32.6% | -34.3% |",
+    "fetched_value": -34.3,
+    "fetched_source": "东财板块接口 f25(燃料电池板块, 年初至今-34.3%)",
+    "note": "板块指数年初至今涨跌幅"
+  },
+  {
+    "id": 14,
+    "label": "风电 · 代表龙头（主板）",
+    "reported_value": 2202.0,
+    "unit": "",
+    "line_number": 17,
+    "raw_text": "| **风电** | **-26.5%~-27.6%** | **-13~-15%** | 金风002202/明阳601615/日月603218/大金002487 |",
+    "fetched_value": 2202.0,
+    "fetched_source": "新浪K线API(金风科技002202 60日-22.8% 距高-36.6%)",
+    "note": "板块龙头代码"
+  },
+  {
+    "id": 17,
+    "label": "光伏 · 60日跌幅",
+    "reported_value": -26.0,
+    "unit": "%",
+    "line_number": 18,
+    "raw_text": "| **光伏** | **-26.0%~-30.3%** | **-3~-11%** |",
+    "fetched_value": -26.0,
+    "fetched_source": "东财板块接口 f24(BK1027 光伏设备 60日-26.0%)",
+    "note": "板块指数60日涨跌幅(取区间下界)"
+  }
+]

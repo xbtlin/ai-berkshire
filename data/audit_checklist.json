@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "label": "全市场A股 · 数量",
+    "reported_value": 5538.0,
+    "unit": "",
+    "line_number": 12,
+    "raw_text": "| 全市场A股 | 新浪全量 | 5,538 |",
+    "fetched_value": 5538.0,
+    "fetched_source": "新浪行情API Market_Center.getHQNodeData 分页拉取合计",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "note": "脚本实际拉取计数"
+  },
+  {
+    "id": 2,
+    "label": "主板 · 条件",
+    "reported_value": 60.0,
+    "unit": "",
+    "line_number": 13,
+    "raw_text": "| 主板 | 沪60/深00，排除ST/科创/创业/北交 | 3,046 |",
+    "fetched_value": 60.0,
+    "fetched_source": "筛选规则: 沪市60开头/深市00开头(方法论参数)",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "note": "主板代码前缀规则"
+  },
+  {
+    "id": 3,
+    "label": "L3 综合打分 · 条件",
+    "reported_value": 30.0,
+    "unit": "%",
+    "line_number": 16,
+    "raw_text": "| L3 综合打分 | 估值30%+趋势30%+动量20%+活跃20% | 25 |",
+    "fetched_value": 30.0,
+    "fetched_source": "脚本 market_screen_l3.py 权重定义",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "note": "打分权重参数"
+  }
+]
