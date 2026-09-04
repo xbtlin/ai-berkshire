@@ -14,7 +14,7 @@
 
 > 📮 **仓库是全量框架，公众号是精选。** 真正值得深研的公司，加上报告之外我自己的判断与取舍，都在微信公众号「**复利炼丹炉**」——[扫码关注 ↓](#精选研究首发于公众号)
 
-[实盘业绩](#real-track-record) · [为什么不能直接问AI](#为什么不能直接问-ai) · [Skills 一览](#skills-一览19个) · [快速开始](#快速开始) · [实战报告](#实战研究报告) · [设计理念](#设计理念) · [公众号](#精选研究首发于公众号)
+[实盘业绩](#real-track-record) · [为什么不能直接问AI](#为什么不能直接问-ai) · [Skills 一览](#skills-一览20个) · [快速开始](#快速开始) · [实战报告](#实战研究报告) · [设计理念](#设计理念) · [公众号](#精选研究首发于公众号)
 
 ---
 
@@ -166,13 +166,13 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 
 **三层设计哲学**：
-- **Skill 层**：把"你要做什么"抽象成 19 个明确入口——深度研究、财报分析、行业筛选、持仓管理、思维工具，按场景选用
+- **Skill 层**：把"你要做什么"抽象成 20 个明确入口——深度研究、财报分析、行业筛选、持仓管理、思维工具，按场景选用
 - **Agent 层**：团队型 skill（如 `/investment-team`、`/earnings-team`）由 Team Lead 并行调度 4 个大师视角 Agent——各自独立搜索、独立判断、互相挑战，最后综合研判；轻量 skill 不经过这一层，直连工具快进快出
 - **工具层**：精确计算、实时检索、报告抽检——保证每份报告的数据严谨性可验证
 
 ---
 
-## Skills 一览（19个）
+## Skills 一览（20个）
 
 ### 🔬 深度研究类
 
@@ -199,12 +199,14 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 | [`/industry-funnel`](skills/industry-funnel.md) | 行业漏斗筛选 | 全市场 → 粗筛 ≤10 家 → 终选 3 家深度分析 |
 | [`/quality-screen`](skills/quality-screen.md) | 去劣筛选（7条硬指标） | 快速排除非一流公司，支持个股/行业/指数/主题批量筛 |
 | [`/bottleneck-hunter`](skills/bottleneck-hunter.md) | 供应链瓶颈猎手 | 从超级趋势出发，寻找产业链物理瓶颈和套利机会 |
+| [`/era-alpha`](skills/era-alpha.md) | 时代α捕手 | 识别时代级高增长主线中的核心α，验证增长可持续性，给出介入与退出纪律 |
 | [`/investment-checklist`](skills/investment-checklist.md) | 巴菲特买入前 Checklist | 六关快速筛选，10分钟决定是否值得深入 |
 
 ### 📈 持仓管理类
 
 | Skill | 用途 | 适合场景 |
 |-------|------|---------|
+| [`/income-investment`](skills/income-investment.md) | 收益型股票分析 | 区分可持续收益、机会型高息与收益率陷阱 |
 | [`/portfolio-review`](skills/portfolio-review.md) | 组合管理与优化 | 从"研究公司"升级到"管理组合"——仓位、集中度、再平衡 |
 | [`/thesis-tracker`](skills/thesis-tracker.md) | 投资论文追踪 | 买入后的纪律系统：持续跟踪论文是否被证伪 |
 | [`/thesis-drift`](skills/thesis-drift.md) | 投资论文漂移检测 | 对比两份论文/报告，区分事实变化、估值变化与措辞变化 |
@@ -217,6 +219,12 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 | [`/dyp-ask`](skills/dyp-ask.md) | 段永平问答 | 以段永平的方式思考任何问题——商业、投资、人生 |
 | [`/financial-data`](skills/financial-data.md) | 财务数据获取与交叉验证规范 | 确保关键数据来自2个独立来源，误差>1%告警 |
 | [`/wechat-article`](skills/wechat-article.md) | 微信公众号文章 | 作者、编辑、读者三Agent协作，产出可发布文章 |
+
+### 🔗 搭配 Claude Code 内置的 /deep-research
+
+除以上 20 个 skill 外，Claude Code 自带一个 `/deep-research` 深度研究编排器（内置于客户端，不由本仓库分发，安装 Claude Code 即可使用）。它的流程是：把问题拆成 5 个检索角度并行搜索 → 抓取来源、提取可证伪论断 → 每条论断由 3 个独立 Agent 对抗验证（3 票中 2 票证伪才剔除）→ 按置信度合成带引用来源的报告。核心价值是每条结论都被人试图推翻过，而不是搜到什么写什么。
+
+适合在运行本仓库的个股/行业 skill 之前，先对一个关键事实判断做独立核查。实战示例：[存储涨价周期研究](reports/存储行业/存储涨价周期研究-还能维持几年高价-20260727.md)（106 个检索/验证 Agent，23 条论断三票制交叉验证）、[diffusion LLM 技术路线综述](reports/大模型技术/diffusion-LLM技术路线综述-与AR对比-20260706.md)（25 条论断验证，22 条确认、3 条被证伪）。
 
 ---
 
@@ -345,6 +353,7 @@ REM 可选：安装 Codex slash prompts
 /investment-checklist 茅台, 英伟达, 苹果
 
 # 持仓管理
+/income-investment Verizon mode=existing role=core-income quantity=100 cost_basis=39.50 tax_residence=France horizon=5y
 /portfolio-review 腾讯30%, 美团20%, 茅台20%, 现金30%
 /thesis-tracker 拼多多
 /thesis-drift 拼多多 reports/拼多多-thesis-2025Q4.md reports/拼多多-thesis-2026Q1.md
@@ -646,6 +655,7 @@ REM 可选：安装 Codex slash prompts
 | 腾讯控股 (0700.HK) | `/investment-research` | 社交垄断+资本配置卓越，14x前瞻PE合理偏低 | [查看报告](reports/腾讯/) |
 | 7家公司对比 | `/investment-checklist` | 茅台、腾讯通过；英伟达、美团、快手有条件通过；拼多多、泡泡玛特灰色 | [查看报告](reports/多公司对比-checklist-20260408.md) |
 | 大师持仓追踪 | 自定义研究 | 巴菲特/李录/段永平最新13F持仓+PDD成本分析 | [查看报告](reports/大师持仓追踪-research-20260408.md) |
+| 折扣零售产业链 | `/industry-research` | 逻辑链6环中2环已证伪（尾货供给枯竭、线上量价齐升）；最佳环节是奥莱物业与消费REITs而非线上特卖平台 | [查看报告](reports/折扣零售产业链/) |
 
 > *更多报告将持续添加。欢迎 PR 提交你用本框架生成的研究报告。*
 
@@ -709,4 +719,9 @@ MIT License
 
 如果这个项目对你有帮助，请给一个 Star 支持！精选公司研究与个人判断首发于微信公众号「**复利炼丹炉**」（二维码见[文首](#精选研究首发于公众号)）。
 
-[![Star History Chart](https://api.star-history.com/svg?repos=xbtlin/ai-berkshire&type=Date)](https://star-history.com/#xbtlin/ai-berkshire&Date)
+<a href="https://github.com/xbtlin/ai-berkshire/stargazers">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/star-history-dark.svg">
+    <img alt="Star History Chart" src="assets/star-history.svg">
+  </picture>
+</a>

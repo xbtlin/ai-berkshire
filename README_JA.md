@@ -14,7 +14,7 @@
 
 1人 + Claude Code / Codex = 投資リサーチチーム丸ごと。
 
-[実績](#実績) · [なぜAIに直接聞いてはいけないのか](#なぜaiに直接聞いてはいけないのか) · [Skill一覧](#skill一覧19スキル) · [クイックスタート](#クイックスタート) · [レポート](#実際のリサーチレポート) · [設計思想](#設計思想)
+[実績](#実績) · [なぜAIに直接聞いてはいけないのか](#なぜaiに直接聞いてはいけないのか) · [Skill一覧](#skill一覧20スキル) · [クイックスタート](#クイックスタート) · [レポート](#実際のリサーチレポート) · [設計思想](#設計思想)
 
 ---
 
@@ -158,13 +158,13 @@ AIに直接聞けばコンテキストウィンドウは1つです。4つの並�
 
 
 **3層設計の思想**：
-- **Skill層**：「やりたいこと」を19の明確なエントリーポイントに抽象化——深掘りリサーチ、決算分析、業界スクリーニング、ポートフォリオ管理、思考ツール。シナリオ別に選択。
+- **Skill層**：「やりたいこと」を20の明確なエントリーポイントに抽象化——深掘りリサーチ、決算分析、業界スクリーニング、ポートフォリオ管理、思考ツール。シナリオ別に選択。
 - **エージェント層**：チーム型Skill（`/investment-team`、`/earnings-team`など）はチームリードの下で4人の巨匠視点エージェントを並列実行——独立して検索・判断し、互いに反論し、最後に統合。軽量Skillはこの層を通らず、ツールを直接呼び出す。
 - **ツール層**：精密計算、リアルタイムウェブ検索、レポート監査——すべてのレポートのデータが厳密かつ検証可能であることを保証。
 
 ---
 
-## Skill一覧（19スキル）
+## Skill一覧（20スキル）
 
 ### 🔬 深掘りリサーチ
 
@@ -191,12 +191,14 @@ AIに直接聞けばコンテキストウィンドウは1つです。4つの並�
 | [`/industry-funnel`](skills/industry-funnel.md) | 業界ファネルスクリーニング | 全市場 → 粗選り≤10社 → 最終選定3社、深掘り分析付き |
 | [`/quality-screen`](skills/quality-screen.md) | クオリティスクリーン（7つの厳格指標） | 一流でない企業を素早く排除；個別銘柄 / 業界 / 指数 / テーマのバッチスクリーニングに対応 |
 | [`/bottleneck-hunter`](skills/bottleneck-hunter.md) | サプライチェーンボトルネックハンター | 大きなトレンドから物理的なサプライチェーンのボトルネックと裁定機会を探す |
+| [`/era-alpha`](skills/era-alpha.md) | 時代アルファキャッチャー | 時代級の高成長トレンドの中核アルファを識別し、成長の持続性を検証し、エントリーと撤退の規律を提示 |
 | [`/investment-checklist`](skills/investment-checklist.md) | バフェット購入前チェックリスト | 6つのゲート、10分で深掘りする価値があるかを判断 |
 
 ### 📈 ポートフォリオ管理
 
 | Skill | 目的 | 使用場面 |
 |-------|------|---------|
+| [`/income-investment`](skills/income-investment.md) | インカム中心の株式分析 | 持続的収益、機会的高利回り、利回りの罠を区別 |
 | [`/portfolio-review`](skills/portfolio-review.md) | ポートフォリオレビュー＆最適化 | 「企業をリサーチする」から「ポートフォリオを管理する」へ——ポジションサイジング、集中度、リバランス |
 | [`/thesis-tracker`](skills/thesis-tracker.md) | 投資テーゼトラッカー | 購入後の規律システム：投資テーゼが否定されていないかを継続的に追跡 |
 | [`/thesis-drift`](skills/thesis-drift.md) | 投資テーゼのドリフト検出 | 2つのテーゼ／レポートを比較し、事実の変化・バリュエーションの変化・表現の変化を区別 |
@@ -337,6 +339,7 @@ Claude Codeで直接呼び出す：
 /investment-checklist 茅台、NVIDIA、Apple
 
 # ポートフォリオ管理
+/income-investment Verizon mode=existing role=core-income quantity=100 cost_basis=39.50 tax_residence=France horizon=5y
 /portfolio-review テンセント30%、美団20%、茅台20%、現金30%
 /thesis-tracker 拼多多
 /thesis-drift 拼多多 reports/拼多多-thesis-2025Q4.md reports/拼多多-thesis-2026Q1.md
@@ -702,4 +705,9 @@ MIT License
 
 このプロジェクトが役に立った方は、ぜひStarをお願いします！
 
-[![Star History Chart](https://api.star-history.com/svg?repos=xbtlin/ai-berkshire&type=Date)](https://star-history.com/#xbtlin/ai-berkshire&Date)
+<a href="https://github.com/xbtlin/ai-berkshire/stargazers">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/star-history-dark.svg">
+    <img alt="Star History Chart" src="assets/star-history.svg">
+  </picture>
+</a>

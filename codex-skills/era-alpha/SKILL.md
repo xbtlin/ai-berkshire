@@ -1,0 +1,111 @@
+---
+name: era-alpha
+description: "AI Berkshire skill: 时代α捕手：高增长核心资产的识别-验证-持有框架. Source: skills/era-alpha.md."
+---
+
+## Codex adapter note
+
+This skill is generated from `skills/era-alpha.md` so Claude Code and Codex users share one canonical workflow.
+
+- Treat `$ARGUMENTS` as the user's request in the current Codex thread.
+- When the source mentions Claude-only surfaces such as Task, Agent, WebSearch, Bash, Read, or Write, use the closest Codex capability available in this session: subagents when available, web search when needed, shell commands for local tools, and normal file edits for workspace files.
+- Use shared project tools from `tools/` in this repository. Prefer running commands from the repository root with paths like `python3 tools/financial_rigor.py ...`; if the current thread starts outside the repo, locate the actual checkout path first instead of assuming a fixed home-directory path.
+- Before starting research, run the `date` command to confirm today's date; treat it as the baseline for "latest" data and state the data cutoff date in the report header. Never assume the current date from training data.
+- Preserve the research quality rules from `AGENTS.md`: cross-check financial data, use exact arithmetic tools for valuation/math, and clearly label uncertainty and source gaps.
+
+# 时代α捕手：高增长核心资产的识别-验证-持有框架
+
+对 $ARGUMENTS 行业/方向执行"时代α四步法"：建立行业认知地图 → 自问核心问题 → 全方位验证 → 持有到拐点。目标是找出当下最核心高增长行业中真正有定价权、有壁垒、能持续跑赢同行的 α 企业，并给出介入与退出纪律。
+
+## 方法论来源与本质
+
+源自一套职业投资人的四步操作手册，本质一句话：**把财富建立在认知之上，而不是运气或情绪之上**。原版四步（读一年财报建地图 → 自问核心高增长行业与核心α → 财报+调研+行业+宏观全验证后介入 → 基本面拐点前死拿）是职业选手的修炼路径，本技能内置了三项修正，使其成为可执行路径：
+
+1. **修正一（精简范围）**：不覆盖所有行业，聚焦指定赛道的 2-3 个核心环节做深做透。三五家真正看透，胜过认识一千家。
+2. **修正二（高频数据交叉验证）**：财报是三个月前的体检报告，必须用行业高频数据（周度/月度出货量、价格、订单、装机、渗透率）做实时体温计校正。
+3. **修正三（估值锚点）**：长期看"高了还能更高"，但市盈率超历史均值 3 个标准差时介入可能长期输时间。合理或低估时重仓、明显泡沫时减仓、拐点确认时清仓，不闭眼买。
+
+与现有技能的分工：
+- `industry-research` 偏产业链全景切片；`industry-funnel` 偏全市场漏斗筛选
+- `era-alpha` 偏"时代级高增长主线"的 α 识别 + 增长可持续性验证 + 持有/退出纪律，聚焦更窄、验证更深、给出明确的拐点清单
+
+---
+
+## 第一步：行业认知地图（原版"读365份财报"的聚焦版）
+
+对目标赛道建立产业链认知地图，每个环节回答：
+
+1. 这个环节处于什么阶段？（导入期/成长期/成熟期/衰退期，用渗透率和增速定位）
+2. 商业模式与赚钱方式？（毛利率、费用率、现金流与利润的匹配度）
+3. 竞争格局？（CR3、定价权在谁手里、壁垒是技术/规模/生态/牌照）
+4. 每个环节的 α 候选是谁？（营收增速、ROE 趋势、市占率变化三个维度筛）
+
+**信息源要求**：以招股说明书、年报/季报、业绩说明会纪要等一手资料为主，券商观点只做线索不做结论。A股/港股/美股/未上市候选都要覆盖，不因资料难找而漏掉。
+
+**产出**：产业链环节表（环节 | 阶段 | 格局 | α候选 | 一句话理由），并从中选出 2-3 个最值得做深的核心环节（修正一）。
+
+## 第二步：自问核心问题（不听别人的）
+
+用第一步的数据回答，禁止引用"市场共识""机构观点"作为论据：
+
+1. **当下这条赛道最核心、增长最快的环节是什么？** 用数据说话：增速、渗透率、订单能见度。
+2. **该环节的核心 α 是谁？** 标准：定价权（毛利率高于同行且稳定或提升）、壁垒（对手三年内追不上的东西是什么）、增长质量（收入增长伴随现金流增长，不是赊出来的）。
+3. **为什么是它而不是老二？** 必须能一句话说清 α 与 β 的差别，说不清就是没看懂。
+
+**产出**：1-3 家核心 α + 明确的"为什么是它"论证。
+
+## 第三步：全方位验证（财报 + 高频数据交叉）
+
+对每家核心 α 做增长可持续性五问，所有维度必须一致指向"高增长可持续"才算看懂：
+
+| 维度 | 验证内容 |
+|------|---------|
+| 财报 | 最近 4-8 个季度营收/利润增速趋势、毛利率方向、合同负债/存货/在建工程等前瞻科目 |
+| 高频数据（修正二） | 该环节的周度/月度实时指标（出货量、价格、招标、流量、token 调用量等），是否与财报趋势一致 |
+| 行业跟踪 | 政策方向、技术路线有无被颠覆风险、供给端扩产节奏（供过于求是成长股最大杀手） |
+| 竞争格局 | 市占率变化方向、新进入者威胁、客户集中度与议价权 |
+| 宏观 | 利率环境、资本开支周期位置、地缘/监管变量 |
+
+**任何一个维度出现矛盾信号，必须明确写出，不许含糊带过。**
+
+## 第四步：估值锚点与介入（修正三，替代"不看股价"）
+
+1. 当前 PE/PS 处于自身历史分位数的什么位置？是否超过历史均值 +3 个标准差？
+2. 估值与增速匹配吗？（PEG 视角：高增速可以消化高估值，但要算清楚需要几年）
+3. 结论三选一：**低估/合理可重仓介入**、**偏贵但增长可消化可持有或分批**、**明显泡沫只看不买**。
+4. 给出介入方式建议：一次性/分批/等回调到什么水位。
+
+## 第五步：持有纪律与拐点清单
+
+**持有纪律**：只要基本面一切正常（增速未放缓、格局未恶化、渗透率仍在提升、宏观未逆转），股价波动是噪音，说什么都不能随便离场。
+
+**拐点清单**（每家 α 必须列出，逐条可观察、可证伪）：
+
+| 层级 | 拐点信号示例 |
+|------|------------|
+| 宏观拐点 | 货币政策转向、资本开支周期见顶信号 |
+| 行业拐点 | 供给过剩价格崩盘、技术路线被颠覆、渗透率见顶、政策逆转 |
+| 公司拐点 | 核心管理层离职、毛利率连续两季下滑、市占率被侵蚀、合同负债转负增长 |
+
+每条信号写明**观察哪个数据、多久看一次**，让"拐点"从感觉变成清单。
+
+---
+
+## 执行方式
+
+1. 数据规模大时，按产业链环节并行派出研究 Agent（每环节一个），要求联网获取最新财报与高频数据，返回结构化事实（数据+出处），不返回观点。
+2. 主线程按第一到第五步综合成报告。
+3. 遵循 `financial-data` 技能的交叉验证规范；关键数字（增速、毛利率、估值分位）必须标注数据截至日期。
+
+## 报告结构
+
+```
+一、行业认知地图（环节表 + 核心环节选择理由）
+二、核心问题的回答（最核心高增长环节 + 核心α + 为什么是它）
+三、增长可持续性验证（五维度逐项 + 矛盾信号明示）
+四、估值锚点与介入建议
+五、持有纪律与拐点清单（可观察、可证伪）
+六、本报告可能错在哪（至少 3 条自我证伪）
+```
+
+风格要求：数据密度优先，保留全部硬数据，砍掉脚手架语言；纯中文表达；不挂任何投资人名字，用分析维度命名章节。

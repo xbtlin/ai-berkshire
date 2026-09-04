@@ -92,10 +92,38 @@ def _parse_qq_quote(raw: str) -> dict:
         "market_cap": fields[45] if len(fields) > 45 else "-",    # 总市值（亿）
         "float_cap": fields[44] if len(fields) > 44 else "-",     # 流通市值（亿）
         "pb": fields[46] if len(fields) > 46 else "-",
-        "high_52w": fields[47] if len(fields) > 47 else "-",
-        "low_52w": fields[48] if len(fields) > 48 else "-",
+        # 注意：腾讯 ~ 分隔协议第 47/48 位是当日涨停价/跌停价，不是 52 周极值（issue #70）
+        "limit_up": fields[47] if len(fields) > 47 else "-",
+        "limit_down": fields[48] if len(fields) > 48 else "-",
         "total_shares": fields[38] if len(fields) > 38 else "-",  # will recalculate
     }
+
+
+def _em_secid(code: str) -> str:
+    """将股票代码转为东方财富 secid 格式：沪市前缀 1.，深市/北交所前缀 0.。"""
+    code = code.strip().replace(".SH", "").replace(".SZ", "").replace(".BJ", "")
+    if code.startswith(("6", "9", "5")):
+        return f"1.{code}"
+    return f"0.{code}"
+
+
+def _fetch_52w(code: str) -> tuple:
+    """从东方财富取 52 周最高/最低（f174/f175）。
+
+    腾讯行情协议无此数据。优先 push2delay（主站 push2 对连续请求限流较严，
+    52 周极值不受延时行情影响），失败回退 push2。取不到返回 ("-", "-")。
+    """
+    secid = _em_secid(code)
+    query = f"api/qt/stock/get?secid={secid}&fields=f174,f175&invt=2&fltt=2"
+    for host in ("push2delay.eastmoney.com", "push2.eastmoney.com"):
+        try:
+            data = _curl_json(f"https://{host}/{query}").get("data") or {}
+            high, low = data.get("f174"), data.get("f175")
+            if high not in (None, "-") and low not in (None, "-"):
+                return high, low
+        except Exception:
+            continue
+    return "-", "-"
 
 
 def _fmt_yi(value) -> str:
@@ -151,8 +179,9 @@ def cmd_quote(code: str):
     print(f"  PE(动):     {d['pe']}")
     print(f"  PB:         {d['pb']}")
     print(f"  换手率:     {d['turnover_rate']}%")
-    print(f"  52周最高:   {d['high_52w']}")
-    print(f"  52周最低:   {d['low_52w']}")
+    high_52w, low_52w = _fetch_52w(code)
+    print(f"  52周最高:   {high_52w}")
+    print(f"  52周最低:   {low_52w}")
 
 
 def cmd_valuation(code: str):
@@ -175,8 +204,9 @@ def cmd_valuation(code: str):
     print(f"  流通市值:   {d['float_cap']}亿")
     print(f"  PE(动):     {d['pe']}")
     print(f"  PB:         {d['pb']}")
-    print(f"  52周最高:   {d['high_52w']}")
-    print(f"  52周最低:   {d['low_52w']}")
+    high_52w, low_52w = _fetch_52w(code)
+    print(f"  52周最高:   {high_52w}")
+    print(f"  52周最低:   {low_52w}")
 
     # 市值验算
     try:
