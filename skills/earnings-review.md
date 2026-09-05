@@ -188,7 +188,10 @@ python3 tools/financial_rigor.py verify-valuation \
 
 ### 第七步：保存报告
 
-将报告写入 `reports/{公司名}-earnings-{期间}.md`，例如 `reports/腾讯-earnings-2025Q4.md`
+将报告写入 `reports/{公司名}-earnings-{期间}-精读.md`，例如 `reports/腾讯-earnings-2025Q4-精读.md`
+
+> 命名约定：`-精读` 后缀用于区分本 skill 的一手资料精读报告；`earnings-team` 的最终公众号文章使用
+> 不带后缀的 `{公司名}-earnings-{期间}.md`，两个 skill 先后运行不会互相覆盖。
 
 ### 第八步：数据抽检（准出流程）
 
@@ -197,7 +200,7 @@ python3 tools/financial_rigor.py verify-valuation \
 ```bash
 # Step 1 — 提取抽检清单
 python3 tools/report_audit.py extract \
-  --report reports/{公司名}-earnings-{期间}.md
+  --report reports/{公司名}-earnings-{期间}-精读.md
 
 # Step 2 — 对清单每项从可靠信源取数（参见 skills/financial-data.md）
 
