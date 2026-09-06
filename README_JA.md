@@ -14,7 +14,7 @@
 
 1人 + Claude Code / Codex = 投資リサーチチーム丸ごと。
 
-[実績](#実績) · [なぜAIに直接聞いてはいけないのか](#なぜaiに直接聞いてはいけないのか) · [Skill一覧](#skill一覧20スキル) · [クイックスタート](#クイックスタート) · [レポート](#実際のリサーチレポート) · [設計思想](#設計思想)
+[実績](#実績) · [なぜAIに直接聞いてはいけないのか](#なぜaiに直接聞いてはいけないのか) · [Skill一覧](#skill一覧21スキル) · [クイックスタート](#クイックスタート) · [レポート](#実際のリサーチレポート) · [設計思想](#設計思想)
 
 ---
 
@@ -158,13 +158,13 @@ AIに直接聞けばコンテキストウィンドウは1つです。4つの並�
 
 
 **3層設計の思想**：
-- **Skill層**：「やりたいこと」を20の明確なエントリーポイントに抽象化——深掘りリサーチ、決算分析、業界スクリーニング、ポートフォリオ管理、思考ツール。シナリオ別に選択。
+- **Skill層**：「やりたいこと」を21の明確なエントリーポイントに抽象化——深掘りリサーチ、決算分析、業界スクリーニング、ポートフォリオ管理、思考ツール。シナリオ別に選択。
 - **エージェント層**：チーム型Skill（`/investment-team`、`/earnings-team`など）はチームリードの下で4人の巨匠視点エージェントを並列実行——独立して検索・判断し、互いに反論し、最後に統合。軽量Skillはこの層を通らず、ツールを直接呼び出す。
 - **ツール層**：精密計算、リアルタイムウェブ検索、レポート監査——すべてのレポートのデータが厳密かつ検証可能であることを保証。
 
 ---
 
-## Skill一覧（20スキル）
+## Skill一覧（21スキル）
 
 ### 🔬 深掘りリサーチ
 
@@ -198,6 +198,7 @@ AIに直接聞けばコンテキストウィンドウは1つです。4つの並�
 
 | Skill | 目的 | 使用場面 |
 |-------|------|---------|
+| [`/capital-allocation`](skills/capital-allocation.md) | 現金維持と資金配分 | 現金を維持するか適格な候補に配分するかを判断し、ポジションサイズ、ハード制約、目標ウェイトを適用 |
 | [`/income-investment`](skills/income-investment.md) | インカム中心の株式分析 | 持続的収益、機会的高利回り、利回りの罠を区別 |
 | [`/portfolio-review`](skills/portfolio-review.md) | ポートフォリオレビュー＆最適化 | 「企業をリサーチする」から「ポートフォリオを管理する」へ——ポジションサイジング、集中度、リバランス |
 | [`/thesis-tracker`](skills/thesis-tracker.md) | 投資テーゼトラッカー | 購入後の規律システム：投資テーゼが否定されていないかを継続的に追跡 |
@@ -339,6 +340,10 @@ Claude Codeで直接呼び出す：
 /investment-checklist 茅台、NVIDIA、Apple
 
 # ポートフォリオ管理
+/capital-allocation
+/capital-allocation --candidates "Itochu, Verizon, Coca-Cola"
+/capital-allocation --mode income
+/capital-allocation --external-capital 500
 /income-investment Verizon mode=existing role=core-income quantity=100 cost_basis=39.50 tax_residence=France horizon=5y
 /portfolio-review テンセント30%、美団20%、茅台20%、現金30%
 /thesis-tracker 拼多多
