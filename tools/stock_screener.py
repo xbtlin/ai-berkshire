@@ -24,6 +24,16 @@ import sys
 from datetime import datetime, timedelta
 from collections import OrderedDict
 
+
+def _force_utf8_stdio():
+    """Windows 控制台默认 GBK，❌/✅ 等字符会让 print() 抛 UnicodeEncodeError。"""
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
+
 # ============================================================
 # 配置
 # ============================================================
@@ -56,7 +66,8 @@ def fetch_prices_curl(ticker, days=120):
     try:
         result = subprocess.run(
             ["curl", "-s", "-H", "User-Agent: Mozilla/5.0", url],
-            capture_output=True, text=True, timeout=15
+            capture_output=True, text=True, encoding="utf-8", errors="replace",
+            timeout=15
         )
         if result.returncode != 0:
             return None
@@ -398,4 +409,5 @@ def main():
 
 
 if __name__ == "__main__":
+    _force_utf8_stdio()
     main()

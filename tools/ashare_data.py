@@ -23,6 +23,15 @@ from decimal import Decimal, ROUND_HALF_EVEN
 _TIMEOUT = 15
 
 
+def _force_utf8_stdio():
+    """Windows 控制台默认 GBK，❌/✅ 等字符会让 print() 抛 UnicodeEncodeError。"""
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
+
 def _curl(url):
     """用 curl --noproxy 直连，绕过系统代理。"""
     result = subprocess.run(
@@ -365,4 +374,5 @@ def main():
 
 
 if __name__ == "__main__":
+    _force_utf8_stdio()
     main()
