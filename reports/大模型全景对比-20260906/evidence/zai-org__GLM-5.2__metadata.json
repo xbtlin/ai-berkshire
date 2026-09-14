@@ -1,0 +1,14 @@
+{
+  "id": "zai-org/GLM-5.2",
+  "sha": "cf457fa734ab149ffef225f80893eb38c6ff5cdc",
+  "lastModified": "2026-09-01T11:36:01.000Z",
+  "gated": false,
+  "safetensors": {
+    "parameters": {
+      "BF16": 753329921024,
+      "F32": 19456
+    },
+    "total": 753329940480
+  },
+  "weights_files": 282
+}

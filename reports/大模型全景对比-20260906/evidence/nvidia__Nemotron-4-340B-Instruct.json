@@ -1,0 +1,13 @@
+{
+  "repo": "nvidia/Nemotron-4-340B-Instruct",
+  "url": "https://huggingface.co/nvidia/Nemotron-4-340B-Instruct",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "Nemotron-4-340B-Instruct is a large language model (LLM) that can be used as part of a synthetic data generation pipeline to create training data that helps researchers and developers build their own LLMs. It is a fine-tuned version of the Nemotron-4-340B-Base model, optimized for English-based single and multi-turn chat use-cases. It supports a context length of 4,096 tokens. ",
+    "- Models are commercially usable. ",
+    "### License: "
+  ],
+  "LICENSE_status": 200,
+  "license_head": ""
+}

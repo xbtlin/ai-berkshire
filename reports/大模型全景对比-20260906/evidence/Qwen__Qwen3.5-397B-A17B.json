@@ -1,0 +1,27 @@
+{
+  "repo": "Qwen/Qwen3.5-397B-A17B",
+  "url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "    - Number of Parameters: 397B in total and 17B activated",
+    "- Context Length: 262,144 natively and extensible up to 1,010,000 tokens.",
+    "* Search Agent: most search agents built on our model adopt a simple context-folding strategy(256k): once the cumulative Tool Response length reaches a preset threshold, earlier Tool Responses are pruned from the history to keep the context within limits.<br>",
+    "* BrowseComp: we tested two strategies, simple context-folding achieved a score of 69.0, while using the same discard-all strategy as DeepSeek-V3.2 and Kimi K2.5 achieved 78.6.<br>",
+    "> The model has a default context length of 262,144 tokens.",
+    "> However, because Qwen3.5 leverages extended context for complex tasks, we advise maintaining a context length of at least 128K tokens to preserve thinking capabilities.",
+    "- **Standard Version**: The following command can be used to create an API endpoint with maximum context length 262,144 tokens using tensor parallel on 8 GPUs.",
+    "    python -m sglang.launch_server --model-path Qwen/Qwen3.5-397B-A17B --port 8000 --tp-size 8 --mem-fraction-static 0.8 --context-length 262144 --reasoning-parser qwen3",
+    "    python -m sglang.launch_server --model-path Qwen/Qwen3.5-397B-A17B --port 8000 --tp-size 8 --mem-fraction-static 0.8 --context-length 262144 --reasoning-parser qwen3 --tool-call-parser qwen3_coder",
+    "    python -m sglang.launch_server --model-path Qwen/Qwen3.5-397B-A17B --port 8000 --tp-size 8 --mem-fraction-static 0.8 --context-length 262144 --reasoning-parser qwen3 --speculative-algo NEXTN --speculative-num-steps 3 --speculative-eagle-topk 1 --speculative-num-draft-tokens 4",
+    "- **Standard Version**: The following command can be used to create an API endpoint with maximum context length 262,144 tokens using tensor parallel on 8 GPUs.",
+    "> We recommend using the following set of sampling parameters for generation",
+    "> Please note that the support for sampling parameters varies according to inference frameworks.",
+    "You can obtain direct response from the model without thinking by configuring the API parameters. ",
+    "Qwen3.5 natively supports context lengths of up to 262,144 tokens. ",
+    "  In the `config.json` file, change the `rope_parameters` fields in `text_config` to:",
+    "    VLLM_ALLOW_LONG_MAX_MODEL_LEN=1 vllm serve ... --hf-overrides '{\"text_config\": {\"rope_parameters\": {\"mrope_interleaved\": true, \"mrope_section\": [11, 11, 10], \"rope_type\": \"yarn\", \"rope_theta\": 10000000, \"partial_rotary_factor\": 0.25, \"factor\": 4.0, \"original_max_position_embeddings\": 262144}}}' --max-model-len 1010000  "
+  ],
+  "LICENSE_status": 200,
+  "license_head": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or ent"
+}

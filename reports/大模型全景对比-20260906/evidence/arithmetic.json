@@ -1,0 +1,310 @@
+[
+  {
+    "label": "Astra example USD",
+    "expression": "100000/1000000*10+10000/1000000*50",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 100000/1000000*10+10000/1000000*50\n  结果:   1.50\n  精确值: 1.5\n",
+    "decimal_independent_check": "1.5",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "Opus example USD",
+    "expression": "100000/1000000*5+10000/1000000*25",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 100000/1000000*5+10000/1000000*25\n  结果:   0.75\n  精确值: 0.75\n",
+    "decimal_independent_check": "0.75",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "Grok example USD",
+    "expression": "100000/1000000*2+10000/1000000*6",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 100000/1000000*2+10000/1000000*6\n  结果:   0.26\n  精确值: 0.26\n",
+    "decimal_independent_check": "0.26",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "GLM example USD",
+    "expression": "100000/1000000*1.4+10000/1000000*4.4",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 100000/1000000*1.4+10000/1000000*4.4\n  结果:   0.18\n  精确值: 0.184\n",
+    "decimal_independent_check": "0.184",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "ERNIE 5.1 inferred T",
+    "expression": "2.4/3",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 2.4/3\n  结果:   0.80\n  精确值: 0.7999999999999999\n",
+    "decimal_independent_check": "0.8",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "100B at 16 bit weight GB",
+    "expression": "100*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 100*16/8\n  结果:   200.00\n  精确值: 200.0\n",
+    "decimal_independent_check": "200",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "100B at 8 bit weight GB",
+    "expression": "100*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 100*8/8\n  结果:   100.00\n  精确值: 100.0\n",
+    "decimal_independent_check": "100",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "100B at 4 bit weight GB",
+    "expression": "100*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 100*4/8\n  结果:   50.00\n  精确值: 50.0\n",
+    "decimal_independent_check": "50",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "117B at 16 bit weight GB",
+    "expression": "117*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 117*16/8\n  结果:   234.00\n  精确值: 234.0\n",
+    "decimal_independent_check": "234",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "117B at 8 bit weight GB",
+    "expression": "117*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 117*8/8\n  结果:   117.00\n  精确值: 117.0\n",
+    "decimal_independent_check": "117",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "117B at 4 bit weight GB",
+    "expression": "117*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 117*4/8\n  结果:   58.50\n  精确值: 58.5\n",
+    "decimal_independent_check": "58.5",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "122B at 16 bit weight GB",
+    "expression": "122*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 122*16/8\n  结果:   244.00\n  精确值: 244.0\n",
+    "decimal_independent_check": "244",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "122B at 8 bit weight GB",
+    "expression": "122*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 122*8/8\n  结果:   122.00\n  精确值: 122.0\n",
+    "decimal_independent_check": "122",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "122B at 4 bit weight GB",
+    "expression": "122*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 122*4/8\n  结果:   61.00\n  精确值: 61.0\n",
+    "decimal_independent_check": "61",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "196B at 16 bit weight GB",
+    "expression": "196*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 196*16/8\n  结果:   392.00\n  精确值: 392.0\n",
+    "decimal_independent_check": "392",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "196B at 8 bit weight GB",
+    "expression": "196*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 196*8/8\n  结果:   196.00\n  精确值: 196.0\n",
+    "decimal_independent_check": "196",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "196B at 4 bit weight GB",
+    "expression": "196*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 196*4/8\n  结果:   98.00\n  精确值: 98.0\n",
+    "decimal_independent_check": "98",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "320B at 16 bit weight GB",
+    "expression": "320*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 320*16/8\n  结果:   640.00\n  精确值: 640.0\n",
+    "decimal_independent_check": "640",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "320B at 8 bit weight GB",
+    "expression": "320*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 320*8/8\n  结果:   320.00\n  精确值: 320.0\n",
+    "decimal_independent_check": "320",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "320B at 4 bit weight GB",
+    "expression": "320*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 320*4/8\n  结果:   160.00\n  精确值: 160.0\n",
+    "decimal_independent_check": "160",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "397B at 16 bit weight GB",
+    "expression": "397*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 397*16/8\n  结果:   794.00\n  精确值: 794.0\n",
+    "decimal_independent_check": "794",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "397B at 8 bit weight GB",
+    "expression": "397*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 397*8/8\n  结果:   397.00\n  精确值: 397.0\n",
+    "decimal_independent_check": "397",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "397B at 4 bit weight GB",
+    "expression": "397*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 397*4/8\n  结果:   198.50\n  精确值: 198.5\n",
+    "decimal_independent_check": "198.5",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "428B at 16 bit weight GB",
+    "expression": "428*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 428*16/8\n  结果:   856.00\n  精确值: 856.0\n",
+    "decimal_independent_check": "856",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "428B at 8 bit weight GB",
+    "expression": "428*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 428*8/8\n  结果:   428.00\n  精确值: 428.0\n",
+    "decimal_independent_check": "428",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "428B at 4 bit weight GB",
+    "expression": "428*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 428*4/8\n  结果:   214.00\n  精确值: 214.0\n",
+    "decimal_independent_check": "214",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "671B at 16 bit weight GB",
+    "expression": "671*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 671*16/8\n  结果:   1,342.00\n  精确值: 1342.0\n",
+    "decimal_independent_check": "1342",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "671B at 8 bit weight GB",
+    "expression": "671*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 671*8/8\n  结果:   671.00\n  精确值: 671.0\n",
+    "decimal_independent_check": "671",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "671B at 4 bit weight GB",
+    "expression": "671*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 671*4/8\n  结果:   335.50\n  精确值: 335.5\n",
+    "decimal_independent_check": "335.5",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "753B at 16 bit weight GB",
+    "expression": "753*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 753*16/8\n  结果:   1,506.00\n  精确值: 1506.0\n",
+    "decimal_independent_check": "1506",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "753B at 8 bit weight GB",
+    "expression": "753*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 753*8/8\n  结果:   753.00\n  精确值: 753.0\n",
+    "decimal_independent_check": "753",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "753B at 4 bit weight GB",
+    "expression": "753*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 753*4/8\n  结果:   376.50\n  精确值: 376.5\n",
+    "decimal_independent_check": "376.5",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "1020B at 16 bit weight GB",
+    "expression": "1020*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 1020*16/8\n  结果:   2,040.00\n  精确值: 2040.0\n",
+    "decimal_independent_check": "2040",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "1020B at 8 bit weight GB",
+    "expression": "1020*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 1020*8/8\n  结果:   1,020.00\n  精确值: 1020.0\n",
+    "decimal_independent_check": "1020",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "1020B at 4 bit weight GB",
+    "expression": "1020*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 1020*4/8\n  结果:   510.00\n  精确值: 510.0\n",
+    "decimal_independent_check": "510",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "1600B at 16 bit weight GB",
+    "expression": "1600*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 1600*16/8\n  结果:   3,200.00\n  精确值: 3200.0\n",
+    "decimal_independent_check": "3200",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "1600B at 8 bit weight GB",
+    "expression": "1600*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 1600*8/8\n  结果:   1,600.00\n  精确值: 1600.0\n",
+    "decimal_independent_check": "1600",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "1600B at 4 bit weight GB",
+    "expression": "1600*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 1600*4/8\n  结果:   800.00\n  精确值: 800.0\n",
+    "decimal_independent_check": "800",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "2400B at 16 bit weight GB",
+    "expression": "2400*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 2400*16/8\n  结果:   4,800.00\n  精确值: 4800.0\n",
+    "decimal_independent_check": "4800",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "2400B at 8 bit weight GB",
+    "expression": "2400*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 2400*8/8\n  结果:   2,400.00\n  精确值: 2400.0\n",
+    "decimal_independent_check": "2400",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "2400B at 4 bit weight GB",
+    "expression": "2400*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 2400*4/8\n  结果:   1,200.00\n  精确值: 1200.0\n",
+    "decimal_independent_check": "1200",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "2800B at 16 bit weight GB",
+    "expression": "2800*16/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 2800*16/8\n  结果:   5,600.00\n  精确值: 5600.0\n",
+    "decimal_independent_check": "5600",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "2800B at 8 bit weight GB",
+    "expression": "2800*8/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 2800*8/8\n  结果:   2,800.00\n  精确值: 2800.0\n",
+    "decimal_independent_check": "2800",
+    "tool_numeric_agreement_within_1e-12": true
+  },
+  {
+    "label": "2800B at 4 bit weight GB",
+    "expression": "2800*4/8",
+    "tool_stdout": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: 2800*4/8\n  结果:   1,400.00\n  精确值: 1400.0\n",
+    "decimal_independent_check": "1400",
+    "tool_numeric_agreement_within_1e-12": true
+  }
+]

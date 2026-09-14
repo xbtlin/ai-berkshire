@@ -1,0 +1,19 @@
+{
+  "repo": "XiaomiMiMo/MiMo-V2.5-Pro",
+  "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "MiMo-V2.5-Pro is an open-source Mixture-of-Experts (MoE) language model with 1.02T total parameters and 42B active parameters. It utilizes the hybrid attention architecture and 3-layers Multi-Token Prediction (MTP) introduced in [MiMo-V2-Flash](https://github.com/XiaomiMiMo/MiMo-V2-Flash), with up to 1M tokens context length.",
+    "- **Efficient Pre-Training**: Trained on 27T tokens using FP8 mixed precision and native 32k seq length. The context window supports up to 1M tokens.",
+    "| Model | Total Params | Active Params | Context Length | Precision | Download |",
+    "GraphWalks is a long-context benchmark from OpenAI that fills the prompt with a directed graph of hex-hash nodes and asks the model to run a breadth-first search (nodes exactly at depth *N*) or list a node's parents. We evaluate across the full 32k–1M input-token span and apply the same evaluation fixes described by Anthropic.",
+    "MiMo V2.5 Pro delivers a major leap in long-context reasoning. Past 128k, V2 Pro degrades rapidly and collapses to 0.00 at 1M on both subtasks, while V2.5 Pro still scores 0.56 BFS / 0.92 Parents at 512k and 0.37 / 0.62 at 1M.",
+    "| **Total Parameters** | 1.02T | 310B |",
+    "| **Activated Parameters** | 42B | 15B |",
+    "| **Max Context Length** | 1M | 1M |",
+    "              --context-length 1048576 \\",
+    "For local deployment, we recommend setting the sampling parameters to `temperature=1.0`, `top_p=0.95`."
+  ],
+  "LICENSE_status": 404
+}

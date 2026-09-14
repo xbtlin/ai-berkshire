@@ -1,0 +1,282 @@
+{
+  "as_of": "2026-09-06",
+  "method": "Scenario assumptions, not probabilities. CAGR assumes dividends retained without interest. IRR uses disclosed model annual payouts. Delay sensitivity adds no earnings or payout assumptions.",
+  "companies": [
+    {
+      "name": "腾讯",
+      "price": "442.8",
+      "currency": "HKD",
+      "report": "腾讯/腾讯研究报告-20260906.md",
+      "scenarios": {
+        "bull": {
+          "target_price": "893.740775868052",
+          "annual_dividends": [
+            "0",
+            "0",
+            "22"
+          ],
+          "total_dividends": "22",
+          "total_return_pct": "106.8068599521345980126467931345980126468",
+          "terminal_wealth_cagr_pct": "27.40554017577533916014994733714641167100",
+          "annual_cashflow_irr_pct": "27.40554017577533916014994733714641167106"
+        },
+        "base": {
+          "target_price": "655.6598579657175",
+          "annual_dividends": [
+            "0",
+            "0",
+            "18"
+          ],
+          "total_dividends": "18",
+          "total_return_pct": "52.13637262098407859078590785907859078590",
+          "terminal_wealth_cagr_pct": "15.01231692171918861858101116955579407280",
+          "annual_cashflow_irr_pct": "15.01231692171918861858101116955579407274"
+        },
+        "bear": {
+          "target_price": "270.1963959379121",
+          "annual_dividends": [
+            "0",
+            "0",
+            "12"
+          ],
+          "total_dividends": "12",
+          "total_return_pct": "-36.27000995078769196025293586269196025294",
+          "terminal_wealth_cagr_pct": "-13.94397464865917125189984197566042892900",
+          "annual_cashflow_irr_pct": "-13.94397464865917125189984197566042892900"
+        }
+      },
+      "base_terminal_price_minus_20pct_cagr": "7.005183964892287308447897128213018724100",
+      "base_same_wealth_in_year5_cagr": "8.754343583877752645830792301664138750300"
+    },
+    {
+      "name": "PDD",
+      "price": "82.21",
+      "currency": "USD",
+      "report": "拼多多/拼多多研究报告-20260906.md",
+      "scenarios": {
+        "bull": {
+          "target_price": "190.45169706860008",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ],
+          "total_dividends": "0",
+          "total_return_pct": "131.6648790519402505777885901958399221506",
+          "terminal_wealth_cagr_pct": "32.31834683487440677107267650729994724330",
+          "annual_cashflow_irr_pct": "32.31834683487440677107267650729994724334"
+        },
+        "base": {
+          "target_price": "117.69552202267917",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ],
+          "total_dividends": "0",
+          "total_return_pct": "43.16448366704679479382070307748449093780",
+          "terminal_wealth_cagr_pct": "12.70549664522920638020404950244631394210",
+          "annual_cashflow_irr_pct": "12.70549664522920638020404950244631394206"
+        },
+        "bear": {
+          "target_price": "49.4115311115621",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ],
+          "total_dividends": "0",
+          "total_return_pct": "-39.89596020975294976280257876170782143292",
+          "terminal_wealth_cagr_pct": "-15.60801131056454040340124259296287908750",
+          "annual_cashflow_irr_pct": "-15.60801131056454040340124259296287908750"
+        }
+      },
+      "base_terminal_price_minus_20pct_cagr": "4.626514943055679292519719479294861215700",
+      "base_same_wealth_in_year5_cagr": "7.440261886550687429889755402910700202000"
+    },
+    {
+      "name": "快手",
+      "price": "33.66",
+      "currency": "HKD",
+      "report": "快手/快手研究报告-20260906.md",
+      "scenarios": {
+        "bear": {
+          "target_price": "20.954480363259574",
+          "annual_dividends": [
+            "0.2",
+            "0.2",
+            "0.2"
+          ],
+          "total_dividends": "0.6",
+          "total_return_pct": "-35.96411062608563874034462269756387403446",
+          "terminal_wealth_cagr_pct": "-13.80650680216830560177125253968406454988",
+          "annual_cashflow_irr_pct": "-13.91274788867164504292439850439286898786"
+        },
+        "base": {
+          "target_price": "63.0831412649775",
+          "annual_dividends": [
+            "0.5",
+            "0.5",
+            "0.5"
+          ],
+          "total_dividends": "1.5",
+          "total_return_pct": "91.86910655073529411764705882352941176470",
+          "terminal_wealth_cagr_pct": "24.26104962427316838187692828959490659870",
+          "annual_cashflow_irr_pct": "24.51564709612315548123912543385038254226"
+        },
+        "bull": {
+          "target_price": "106.93219833121552",
+          "annual_dividends": [
+            "0.8",
+            "0.8",
+            "0.8"
+          ],
+          "total_dividends": "2.4",
+          "total_return_pct": "224.8134234438963755199049316696375519905",
+          "terminal_wealth_cagr_pct": "48.09645274760792071638750430490358988850",
+          "annual_cashflow_irr_pct": "48.70743883696220871624945437580192069514"
+        }
+      },
+      "base_terminal_price_minus_20pct_cagr": "15.57657530479826478135382933103024863860",
+      "base_same_wealth_in_year5_cagr": "13.92027132264736478957503686746511026170"
+    },
+    {
+      "name": "美团",
+      "price": "81.75",
+      "currency": "HKD",
+      "report": "美团/美团研究报告-20260906.md",
+      "scenarios": {
+        "bear": {
+          "target_price": "6.086466896469928",
+          "annual_dividends": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ],
+          "total_dividends": "0.0",
+          "total_return_pct": "-92.55478055477684648318042813455657492355",
+          "terminal_wealth_cagr_pct": "-57.93129264557537164803759714281969794608",
+          "annual_cashflow_irr_pct": "-57.93129264557537164803759714281969794610"
+        },
+        "base": {
+          "target_price": "90.23344043566097",
+          "annual_dividends": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ],
+          "total_dividends": "0.0",
+          "total_return_pct": "10.37729716900424464831804281345565749240",
+          "terminal_wealth_cagr_pct": "3.345900004366914921496113620636633858500",
+          "annual_cashflow_irr_pct": "3.345900004366914921496113620636633858450"
+        },
+        "bull": {
+          "target_price": "191.56711563360568",
+          "annual_dividends": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ],
+          "total_dividends": "0.0",
+          "total_return_pct": "134.3328631603739204892966360856269113150",
+          "terminal_wealth_cagr_pct": "32.82436030207114824952682592953789007810",
+          "annual_cashflow_irr_pct": "32.82436030207114824952682592953789007806"
+        }
+      },
+      "base_terminal_price_minus_20pct_cagr": "-4.062164908013538065184820904444868790730",
+      "base_same_wealth_in_year5_cagr": "1.994311590915612916686317993335900583300"
+    },
+    {
+      "name": "泡泡玛特",
+      "price": "154",
+      "currency": "HKD",
+      "report": "泡泡玛特/泡泡玛特研究报告-20260906.md",
+      "scenarios": {
+        "bear": {
+          "target_price": "59.73617163995417648315484629",
+          "annual_dividends": [
+            "2.066995558475923061700859734",
+            "1.756946224704534602445730774",
+            "1.493404290998854412078871158"
+          ],
+          "total_dividends": "5.317346074179312076225461666",
+          "total_return_pct": "-57.75745602978344898741538444415584415584",
+          "terminal_wealth_cagr_pct": "-24.96739552705880164861590218496078918438",
+          "annual_cashflow_irr_pct": "-25.49693284055839268708312332290904592074"
+        },
+        "base": {
+          "target_price": "196.0522623216054205666871278",
+          "annual_dividends": [
+            "2.626300239004702243102268838",
+            "2.836404258125078422550450345",
+            "3.063316598775084696354486373"
+          ],
+          "total_dividends": "8.526021095904865362007205556",
+          "total_return_pct": "32.84304118020148436928203464675324675320",
+          "terminal_wealth_cagr_pct": "9.929166843981580770522666009090372346400",
+          "annual_cashflow_irr_pct": "10.07978205542489014730532213972038904326"
+        },
+        "bull": {
+          "target_price": "369.7830736518620758287994523",
+          "annual_dividends": [
+            "2.918111376671891381224743154",
+            "3.501733652006269657469691784",
+            "4.202080382407523588963630141"
+          ],
+          "total_dividends": "10.621925411085684627658065079",
+          "total_return_pct": "147.0162331577582860106866995967532467532",
+          "terminal_wealth_cagr_pct": "35.17877242312732969083546840078784093960",
+          "annual_cashflow_irr_pct": "35.61514419668248938800230626867488021474"
+        }
+      },
+      "base_terminal_price_minus_20pct_cagr": "2.402392398621986331912392893444374166400",
+      "base_same_wealth_in_year5_cagr": "5.844369900426420121327688717908840095800"
+    },
+    {
+      "name": "MiniMax",
+      "price": "361.4",
+      "currency": "HKD",
+      "report": "MINIMAX/MiniMax研究报告-20260906.md",
+      "scenarios": {
+        "bear": {
+          "target_price": "17.10644579922148221206723601",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ],
+          "total_dividends": "0",
+          "total_return_pct": "-95.26661710038143823683806419203099059214",
+          "terminal_wealth_cagr_pct": "-63.82649879496492597412540247415649578773",
+          "annual_cashflow_irr_pct": "-63.82649879496492597412540247415649578770"
+        },
+        "base": {
+          "target_price": "313.6181729857271738878993269",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ],
+          "total_dividends": "0",
+          "total_return_pct": "-13.22131350699303434203117684006640841173",
+          "terminal_wealth_cagr_pct": "-4.616989837118299207504013998632068536700",
+          "annual_cashflow_irr_pct": "-4.616989837118299207504013998632068536706"
+        },
+        "bull": {
+          "target_price": "1176.068148696476902079622476",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ],
+          "total_dividends": "0",
+          "total_return_pct": "225.4200743487761212173830868843386828998",
+          "terminal_wealth_cagr_pct": "48.18859484691664758273734322500221010890",
+          "annual_cashflow_irr_pct": "48.18859484691664758273734322500221010886"
+        }
+      },
+      "base_terminal_price_minus_20pct_cagr": "-11.45425702231881823583073525854361177621",
+      "base_same_wealth_in_year5_cagr": "-2.796340723991723316659028720795211079080"
+    }
+  ]
+}

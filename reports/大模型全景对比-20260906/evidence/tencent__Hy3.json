@@ -1,0 +1,18 @@
+{
+  "repo": "tencent/Hy3",
+  "url": "https://huggingface.co/tencent/Hy3",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "**Hy3** is a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters and 3.8B MTP layer parameters, developed by the Tencent Hy Team. Following the Hy3 Preview launch in late April, we gathered feedback from 50+ products and scaled up post-training with higher quality data. Today, we introduce Hy3, which outperforms similar-size models and rivals flagship open-source models with 2-5x parameters. It also shows significant gains in utility across various products and productivity tasks.",
+    "| Total Parameters | 295B |",
+    "| Activated Parameters | 21B |",
+    "| MTP Layer Parameters | 3.8B |",
+    "| Context Length | 256K |",
+    "**Complex context retention and multi-turn intent tracking**: Through joint optimization of SFT and RL, Hy3 improved on operational pain points like coreference resolution, ellipsis recovery, and multi-turn constraint inheritance. On internal comprehensive multi-turn tests, the issue rate dropped from 17.4% to 7.9%. Hy3 also improved markedly on long-dialogue evals like MRCR. Its outputs are more concise while ensuring complex intents do not decay or drift over long-horizon interactions.",
+    "> **Recommended parameters**: `temperature=0.9`, `top_p=1.0`.",
+    "Hy3 has 295B parameters in total. To serve it on 8 GPUs, we recommend using H20-3e or other GPUs with larger memory capacity."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "Tencent is pleased to support the open source community by making Tencent Hy3 available.\n\nCopyright (C) 2026 Tencent.  All rights reserved.\n\nTencent Hy3 is licensed under the Apache-2.0.\n\n\nTerms of the Apache-2.0:\n--------------------------------------------------------------------\nApache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCT"
+}

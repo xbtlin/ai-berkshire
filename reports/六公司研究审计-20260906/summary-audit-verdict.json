@@ -1,0 +1,12 @@
+{
+  "audit_scope": "9 seed42 samples: 1 externally sourced market fact, 8 conditional model calculations. No forecasts externally verified.",
+  "verdict": {
+    "verdict": "PASS",
+    "pass_count": 9,
+    "warn_count": 0,
+    "fail_count": 0,
+    "total": 9,
+    "fail_items": [],
+    "warn_items": []
+  }
+}

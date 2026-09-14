@@ -1,0 +1,17 @@
+{
+  "repo": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+  "url": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "We introduce **K-EXAONE**, a large-scale multilingual language model developed by LG AI Research. Built using a Mixture-of-Experts architecture, K-EXAONE features **236 billion total** parameters, with **23 billion active** during inference. Performance evaluations across various benchmarks demonstrate that K-EXAONE excels in reasoning, agentic capabilities, general knowledge, multilingual understanding, and long-context processing.",
+    "- **Long-Context Capabilities:** Natively supports a **256K context window**, utilizing a **3:1 hybrid attention** scheme with a **128-token sliding window** to significantly minimize memory usage during long-document processing.",
+    "- Number of Parameters: 236B in total and 23B activated",
+    "- Number of Parameters (without embeddings): 234B",
+    "- Context Length: 262,144 tokens",
+    "Practically, you can serve the model with a 256K context length using tensor parallel on 4 H200 GPUs.",
+    "Practically, you can serve the model with a 256K context length using tensor parallel on 4 H200 GPUs."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "K-EXAONE AI Model License Agreement\n\nThis License Agreement (\"Agreement\") is entered into between LG Management\nDevelopment Institute Co., Ltd. (\"Licensor\") and you (\"User\") and governs the\nuse of the K-EXAONE AI Model (\"Model\"). By downloading, installing, copying,\nor using the Model, you agree to comply with and be bound by the terms of\nthis Agreement. If you do not agree to all terms, you must not download,\ninstall, copy, or use the Model. Thi"
+}

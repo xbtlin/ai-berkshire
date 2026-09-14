@@ -1,0 +1,14 @@
+{
+  "repo": "tencent/Hunyuan-Large",
+  "url": "https://huggingface.co/tencent/Hunyuan-Large",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "With the rapid development of artificial intelligence technology, large language models (LLMs) have made significant progress in fields such as natural language processing, computer vision, and scientific tasks. However, as the scale of these models increases, optimizing resource consumption while maintaining high performance has become a key challenge. To address this challenge, we have explored Mixture of Experts (MoE) models. The currently unveiled Hunyuan-Large (Hunyuan-MoE-A52B) model is the largest open-source Transformer-based MoE model in the industry, featuring a total of 389 billion parameters and 52 billion active parameters. This is currently the largest open-source Transformer-b",
+    "- **Long-Context Processing Capability**: The pre-trained model supports text sequences up to 256K, and the Instruct model supports up to 128K, significantly enhancing the ability to handle long-context tasks.",
+    "activated parameters, indicating the effectiveness of our post-training.    Delving into the model performance ",
+    "Remarkably, this leap in accuracy is achieved with only 52 billion activated parameters, underscoring the efficiency of our model.",
+    "      title={Hunyuan-Large: An Open-Source MoE Model with 52 Billion Activated Parameters by Tencent}, "
+  ],
+  "LICENSE_status": 404
+}

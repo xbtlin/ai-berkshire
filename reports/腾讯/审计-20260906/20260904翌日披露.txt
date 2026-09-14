@@ -1,0 +1,282 @@
+                                                                                                                                                                                                     FF305
+
+                                                                                 Next Day Disclosure Return
+                                  (Equity issuer - changes in issued shares or treasury shares, share buybacks and/or on-market sales of treasury shares)
+
+Instrument:                          Equity issuer                                                                                                  Status:            New Submission
+
+Name of Issuer:                      Tencent Holdings Limited
+
+Date Submitted:                      04 September 2026
+
+
+Section I must be completed by a listed issuer where there has been a change in its issued shares or treasury shares which is discloseable pursuant to rule 13.25A of the Rules Governing the
+Listing of Securities on The Stock Exchange of Hong Kong Limited (the “Exchange”) (the “Main Board Rules”) or rule 17.27A of the Rules Governing the Listing of Securities on GEM of the
+Exchange (the “GEM Rules”).
+
+Section I
+
+1. Class of shares                   Ordinary shares                  Type of shares       Not applicable                            Listed on the Exchange             Yes
+
+Stock code (if listed)               00700                            Description
+
+Multi-counter stock code 80700                                  RMB   Description
+
+A. Changes in issued shares or treasury shares
+
+                                                                                     Changes in issued shares                  Changes in treasury
+                                                                                    (excluding treasury shares)                     shares
+
+                                                                                                        As a % of existing                               Issue/ selling price per   Total number of issued
+                                        Events                                                          number of issued
+                                                                           Number of issued                                                                  share (Note 4)                 shares
+                                                                                                        shares (excluding      Number of treasury
+                                                                           shares (excluding
+                                                                                                     treasury shares) before       shares
+                                                                            treasury shares)
+                                                                                                        the relevant event
+                                                                                                             (Note 3)
+
+Opening balance as at (Note 1)           03 September 2026                           9,103,153,877                                                   0                                         9,103,153,877
+
+1).    Other (please specify)                                                                   0                        %                           0
+
+
+       Not applicable
+
+      Date of changes           04 September 2026
+
+Closing balance as at (Notes 5 and 6) 04 September 2026                              9,103,153,877                                                   0                                         9,103,153,877
+
+
+
+
+                                                                                               Page 1 of 8                                                                                        v 1.3.0
+                                                                                                                                             FF305
+
+B. Shares redeemed or repurchased for cancellation but not yet cancelled as at the closing balance date (Notes 5 and 6)
+
+1).    Shares repurchased for cancellation but not yet cancelled                 673,000            0.00739 %             HKD   446.8355
+
+       Date of changes       17 August 2026
+
+2).    Shares repurchased for cancellation but not yet cancelled                 681,000            0.00748 %             HKD   441.1919
+
+       Date of changes       18 August 2026
+
+3).    Shares repurchased for cancellation but not yet cancelled                 673,000            0.00739 %             HKD   446.0435
+
+       Date of changes       19 August 2026
+
+4).    Shares repurchased for cancellation but not yet cancelled                 662,000            0.00727 %             HKD   453.5927
+
+       Date of changes       20 August 2026
+
+5).    Shares repurchased for cancellation but not yet cancelled                 667,000            0.00733 %             HKD   450.1949
+
+       Date of changes       21 August 2026
+
+6).    Shares repurchased for cancellation but not yet cancelled                 680,000            0.00747 %             HKD   441.5003
+
+       Date of changes       24 August 2026
+
+7).    Shares repurchased for cancellation but not yet cancelled                 682,000            0.00749 %             HKD    440.479
+
+       Date of changes       25 August 2026
+
+8).    Shares repurchased for cancellation but not yet cancelled                 672,000            0.00738 %             HKD   447.0162
+
+       Date of changes       26 August 2026
+
+9).    Shares repurchased for cancellation but not yet cancelled                 670,000            0.00736 %             HKD   448.5486
+
+       Date of changes       27 August 2026
+
+10).   Shares repurchased for cancellation but not yet cancelled                 659,000            0.00724 %             HKD   455.6587
+
+       Date of changes       28 August 2026
+
+11).   Shares repurchased for cancellation but not yet cancelled                 223,000            0.00245 %             HKD   450.8914
+
+       Date of changes       31 August 2026
+
+
+
+
+                                                                                     Page 2 of 8                                           v 1.3.0
+                                                                                                                    FF305
+
+12).   Shares repurchased for cancellation but not yet cancelled   226,000           0.00248 %   HKD   442.9614
+
+       Date of changes       01 September 2026
+
+13).   Shares repurchased for cancellation but not yet cancelled   229,000           0.00252 %   HKD   437.5105
+
+       Date of changes       02 September 2026
+
+14).   Shares repurchased for cancellation but not yet cancelled   229,000           0.00252 %   HKD   437.8814
+
+       Date of changes       03 September 2026
+
+15).   Shares repurchased for cancellation but not yet cancelled   226,000           0.00248 %   HKD   443.8447
+
+       Date of changes       04 September 2026
+
+
+
+
+                                                                       Page 3 of 8                                v 1.3.0
+                                                                                                                                                                                               FF305
+
+Confirmation
+
+
+Pursuant to Main Board Rule 13.25C / GEM Rule 17.27C, we hereby confirm to the best knowledge, information and belief that, in relation to each issue of shares or sale or transfer of treasury
+shares as set out in Section I, it has been duly authorised by the board of directors of the listed issuer and carried out in compliance with all applicable listing rules, laws and other regulatory
+requirements and, insofar as applicable:
+
+(Note 7)
+
+
+
+(i)   all the securities of each class are in all respects identical (Note 8).
+
+
+
+ Notes to Section I:
+
+
+ 1.        Please insert the closing balance date of the last Next Day Disclosure Return published pursuant to Main Board Rule 13.25A / GEM Rule 17.27A or Monthly Return pursuant to Main
+           Board Rule 13.25B / GEM Rule 17.27B, whichever is the later.
+
+ 2.        Please set out all changes in issued shares or treasury shares requiring disclosure pursuant to Main Board Rule 13.25A / GEM Rule 17.27A together with the relevant dates of
+           changes. Each category will need to be disclosed individually with sufficient information to enable the user to identify the relevant category in the listed issuer's Monthly Return. For
+           example, multiple issues of shares as a result of multiple exercises of share options under the same share option scheme or of multiple conversions under the same convertible note
+           must be aggregated and disclosed as one category. However, if the issues resulted from exercises of share options under 2 share option schemes or conversions of 2 convertible
+           notes, these must be disclosed as 2 separate categories.
+
+ 3.        The percentage change in the number of issued shares (excluding treasury shares) of the listed issuer is to be calculated by reference to the opening balance of the number of issued
+           shares (excluding treasury shares) being disclosed in this Next Day Disclosure Return.
+
+ 4.        In the case of a share repurchase or redemption, the “issue/ selling price per share” shall be construed as “repurchase price per share” or “redemption price per share”.
+
+           Where shares have been issued/ sold/ repurchased/ redeemed at more than one price per share, a volume-weighted average price per share should be given.
+
+ 5.        The closing balance date is the date of the last relevant event being disclosed.
+
+ 6.        For repurchase or redemption of shares, disclosure is required when the relevant event has occurred (subject to the provisions of Main Board Rules 10.06(4)(a), 13.25A and 13.31 /
+           GEM Rules 13.13(1), 17.27A and 17.35), even if the repurchased or redeemed shares have not yet been cancelled.
+
+           If repurchased or redeemed shares are to be cancelled upon settlement of such repurchase or redemption after the closing balance date, they shall remain part of the issued shares as
+           at the closing balance date in Part A. Details of these repurchased or redeemed shares shall be disclosed in Part B.
+
+ 7.        Items (i) to (viii) are suggested forms of confirmation. The listed issuer may amend the item(s) that is/are not applicable to meet individual cases.
+
+ 8.        “Identical” means in this context:
+
+                                                                                               Page 4 of 8                                                                                  v 1.3.0
+                                                                                                                                                                              FF305
+
+-   the securities are of the same nominal value with the same amount called up or paid up;
+-   they are entitled to dividend/interest at the same rate and for the same period, so that at the next ensuing distribution, the dividend/interest payable per unit will amount to
+    exactly the same sum (gross and net); and
+-   they carry the same rights as to unrestricted transfer, attendance and voting at meetings and rank pari passu in all other respects.
+
+
+
+
+                                                                              Page 5 of 8                                                                                  v 1.3.0
+                                                                                                                                                                                                FF305
+
+Section II must also be completed by a listed issuer where it has made a repurchase of shares which is discloseable under Main Board Rule 10.06(4)(a) / GEM Rule 13.13(1).
+
+Repurchase report
+Section II
+
+1. Class of shares         Ordinary shares                        Type of shares       Not applicable                         Listed on the Exchange           Yes
+
+Stock code (if listed)     00700                                  Description
+
+Multi-counter stock code 80700                           RMB      Description
+
+A.      Repurchase report
+                                                                                        Repurchase price per share or
+                                Number of shares            Method of repurchase                                              Lowest repurchase
+      Trading date                                                                       highest repurchase price per                                                Aggregate price paid $
+                                  repurchased                     (Note 1)                                                     price per share $
+                                                                                                    share $
+
+1).   04 September 2026                        226,000 On the Exchange                HKD                         447.4 HKD                        440.2 HKD                          100,308,902.2
+
+
+ Total number of shares
+                                               226,000                                                                            Aggregate price paid $ HKD                          100,308,902.2
+ repurchased
+
+
+ Number of shares
+ repurchased for                               226,000
+ cancellation
+
+ Number of shares
+ repurchased for holding                             0
+ as treasury shares
+
+
+B.      Additional information for issuer who has a primary listing on the Exchange
+
+1).     Date of the resolution granting the repurchase mandate                                                                                                                     13 May 2026
+
+2).     Total number of shares which the issuer is authorised to repurchase under the repurchase mandate                                                                           911,799,163
+
+3).     Number of shares repurchased on the Exchange or another stock exchange under the repurchase mandate                                              (a)                        43,924,700
+
+4).     As a % of number of issued shares (excluding treasury shares) as at the date of the resolution granting the repurchase mandate                                                  0.48174 %
+        (a) x 100 / number of issued shares (excluding treasury shares) as at the date of the resolution granting the repurchase mandate
+
+5).     Moratorium period for any issue of new shares, or sale or transfer of treasury shares after the share repurchase(s) set out in Part A         Up to                    04 October 2026
+        (Note 2)
+
+
+
+
+                                                                                            Page 6 of 8                                                                                       v 1.3.0
+                                                                                                                                                                                           FF305
+
+We hereby confirm that the repurchases made on the Exchange set out in Part A above were made in accordance with the Main Board Rules / GEM Rules and that there have been no material
+changes to the particulars contained in the Explanatory Statement dated 09 April 2026 which has been filed with the Exchange.
+
+
+Notes to Section II:
+
+1.       Please state whether the repurchase was made on the Exchange, on another stock exchange (stating the name of the exchange), by private arrangement or by general offer.
+
+2.       Subject to the carve-out set out in Main Board Rule 10.06(3)(a)/ GEM Rule 13.12, an issuer may not (i) make a new issue of shares, or a sale or transfer of any treasury shares; or (ii)
+         announce a proposed new issue of shares, or a sale or transfer of any treasury shares, for a period of 30 days after any purchase by it of shares, whether on the Exchange or otherwise,
+         without the prior approval of the Exchange.
+
+
+
+
+                                                                                           Page 7 of 8                                                                                  v 1.3.0
+                                                                                                                                                                                           FF305
+
+Section III must also be completed by a listed issuer where it has made a sale of treasury shares on the Exchange or any other stock exchange on which the issuer is listed which is discloseable
+under Main Board Rule 10.06B / GEM Rule 13.14B.
+
+Report of on-market sale of treasury shares                                                                                           Not applicable
+
+
+
+      Submitted by: Lau Suk Yi
+                   (Name)
+
+
+               Title: Secretary
+                     (Director, Secretary or other Duly Authorised Officer)
+
+
+
+
+                                                                                           Page 8 of 8                                                                                  v 1.3.0
+

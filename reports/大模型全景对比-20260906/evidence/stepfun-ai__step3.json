@@ -1,0 +1,14 @@
+{
+  "repo": "stepfun-ai/step3",
+  "url": "https://huggingface.co/stepfun-ai/step3",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "Step3 is our cutting-edge multimodal reasoning model—built on a Mixture-of-Experts architecture with 321B total parameters and 38B active. ",
+    "| **Max Context Length** | 65536 |",
+    "| **Total Parameters (LLM)** | 316B |",
+    "| **Total Parameters (VLM)** | 321B |"
+  ],
+  "LICENSE_status": 200,
+  "license_head": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or ent"
+}

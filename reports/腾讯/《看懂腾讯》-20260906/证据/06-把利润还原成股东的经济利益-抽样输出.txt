@@ -1,0 +1,227 @@
+======================================================================
+报告数据抽检清单
+文件：reports/腾讯/《看懂腾讯》-20260906/06-把利润还原成股东的经济利益.md
+总提取数据点：105  |  抽样比例：15%  |  抽检数量：16
+随机种子：20260906（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  2     15  收入 · 2022                               554552.00  
+  6     16  毛利 · 2021                               245944.00  
+  7     16  毛利 · 2022                               238746.00  
+ 13     17  IFRS 经营利润，同一重列口径 · 2023                 160074.00  
+ 26     20  经营活动净现金流 · 2021                         175186.00  
+ 33     21  现金购买及预付物业设备等 · 2023                      21008.00  
+ 40     22  归母权益 · 2025                            1154152.00  
+ 39     22  归母权益 · 2024                             973548.00  
+ 48     49  来自被投企业的净收益等调整 · 2025 年                   -7896.00  
+ 59     78  毛利 · 2025 全年                            422593.00  
+ 65     79  IFRS 经营利润 · 减：2025 上半年                  117670.00  
+ 75     82  归母股份支付调整 · 2025 全年                       34711.00  
+ 76     82  归母股份支付调整 · 2026 上半年                      14949.00  
+ 77     82  归母股份支付调整 · 减：2025 上半年                    18904.00  
+ 92     98  土地净现金，退款为正 · 2025 全年                         6.00  
+100    100  自算集团广义现金余额 · 2025 全年                    183394.00  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 2,
+    "label": "收入 · 2022",
+    "reported_value": 554552.0,
+    "unit": "",
+    "line_number": 15,
+    "raw_text": "| 收入 | 560,118 | 554,552 | 609,015 | 660,257 | 751,766 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 6,
+    "label": "毛利 · 2021",
+    "reported_value": 245944.0,
+    "unit": "",
+    "line_number": 16,
+    "raw_text": "| 毛利 | 245,944 | 238,746 | 293,109 | 349,246 | 422,593 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 7,
+    "label": "毛利 · 2022",
+    "reported_value": 238746.0,
+    "unit": "",
+    "line_number": 16,
+    "raw_text": "| 毛利 | 245,944 | 238,746 | 293,109 | 349,246 | 422,593 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 13,
+    "label": "IFRS 经营利润，同一重列口径 · 2023",
+    "reported_value": 160074.0,
+    "unit": "",
+    "line_number": 17,
+    "raw_text": "| IFRS 经营利润，同一重列口径 | 124,656 | 110,827 | 160,074 | 208,099 | 241,562 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 26,
+    "label": "经营活动净现金流 · 2021",
+    "reported_value": 175186.0,
+    "unit": "",
+    "line_number": 20,
+    "raw_text": "| 经营活动净现金流 | 175,186 | 146,091 | 221,962 | 258,521 | 303,052 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 33,
+    "label": "现金购买及预付物业设备等 · 2023",
+    "reported_value": 21008.0,
+    "unit": "",
+    "line_number": 21,
+    "raw_text": "| 现金购买及预付物业设备等 | 29,302 | 22,679 | 21,008 | 62,927 | 87,482 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 40,
+    "label": "归母权益 · 2025",
+    "reported_value": 1154152.0,
+    "unit": "",
+    "line_number": 22,
+    "raw_text": "| 归母权益 | 806,299 | 721,391 | 808,591 | 973,548 | 1,154,152 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 39,
+    "label": "归母权益 · 2024",
+    "reported_value": 973548.0,
+    "unit": "",
+    "line_number": 22,
+    "raw_text": "| 归母权益 | 806,299 | 721,391 | 808,591 | 973,548 | 1,154,152 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 48,
+    "label": "来自被投企业的净收益等调整 · 2025 年",
+    "reported_value": -7896.0,
+    "unit": "",
+    "line_number": 49,
+    "raw_text": "| 来自被投企业的净收益等调整 | -7,896 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 59,
+    "label": "毛利 · 2025 全年",
+    "reported_value": 422593.0,
+    "unit": "",
+    "line_number": 78,
+    "raw_text": "| 毛利 | 422,593 | 229,698 | 205,506 | 446,785 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 65,
+    "label": "IFRS 经营利润 · 减：2025 上半年",
+    "reported_value": 117670.0,
+    "unit": "",
+    "line_number": 79,
+    "raw_text": "| IFRS 经营利润 | 241,562 | 134,651 | 117,670 | 258,543 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 75,
+    "label": "归母股份支付调整 · 2025 全年",
+    "reported_value": 34711.0,
+    "unit": "",
+    "line_number": 82,
+    "raw_text": "| 归母股份支付调整 | 34,711 | 14,949 | 18,904 | 30,756 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 76,
+    "label": "归母股份支付调整 · 2026 上半年",
+    "reported_value": 14949.0,
+    "unit": "",
+    "line_number": 82,
+    "raw_text": "| 归母股份支付调整 | 34,711 | 14,949 | 18,904 | 30,756 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 77,
+    "label": "归母股份支付调整 · 减：2025 上半年",
+    "reported_value": 18904.0,
+    "unit": "",
+    "line_number": 82,
+    "raw_text": "| 归母股份支付调整 | 34,711 | 14,949 | 18,904 | 30,756 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 92,
+    "label": "土地净现金，退款为正 · 2025 全年",
+    "reported_value": 6.0,
+    "unit": "",
+    "line_number": 98,
+    "raw_text": "| 土地净现金，退款为正 | +6 | +6 | -1 | -1 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 100,
+    "label": "自算集团广义现金余额 · 2025 全年",
+    "reported_value": 183394.0,
+    "unit": "",
+    "line_number": 100,
+    "raw_text": "| 自算集团广义现金余额 | 183,394 | 90,549 | 43,262 | 136,107 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

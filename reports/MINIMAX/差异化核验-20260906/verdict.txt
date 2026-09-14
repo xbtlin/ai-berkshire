@@ -1,0 +1,21 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：reports/MINIMAX/MiniMax-差异化与护城河研究-20260906.md
+======================================================================
+
+  ✅ 通过 [ 1] 开放平台及其他企业服务收入占比 · 2026年上半年           报告:        63.40 %
+                                                    https://file.cdn.minimax.io/public/586c7995-cab1-41b5-9178-c06685b32c88.pdf: 63.40 (偏差 0.00%)  |  https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820: 63.40 (偏差 0.00%)
+  ✅ 通过 [ 2] 中国内地以外收入占比 · 2026年上半年                报告:        60.80 %
+                                                    https://file.cdn.minimax.io/public/586c7995-cab1-41b5-9178-c06685b32c88.pdf: 60.80 (偏差 0.00%)  |  https://www-web.itiger.com/news/1169167557: 60.80 (偏差 0.00%)
+  ✅ 通过 [ 3] 综合毛利率 · 2026年上半年                     报告:        17.90 %
+                                                    https://file.cdn.minimax.io/public/586c7995-cab1-41b5-9178-c06685b32c88.pdf: 17.90 (偏差 0.00%)  |  https://www-web.itiger.com/news/1169167557: 17.90 (偏差 0.00%)
+  ✅ 通过 [ 4] 总收入同比增速 · 2026年上半年                   报告:       283.10 %
+                                                    https://file.cdn.minimax.io/public/586c7995-cab1-41b5-9178-c06685b32c88.pdf: 283.10 (偏差 0.00%)  |  https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820: 283.10 (偏差 0.00%)
+  ✅ 通过 [ 5] 销售及分销费用同比变化 · 2026年上半年               报告:       -17.90 %
+                                                    https://file.cdn.minimax.io/public/586c7995-cab1-41b5-9178-c06685b32c88.pdf: -17.90 (偏差 0.00%)  |  https://www-web.itiger.com/news/1169167557: -17.90 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 5  |  通过: 5  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================

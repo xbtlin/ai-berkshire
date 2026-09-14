@@ -1,0 +1,37 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：/Users/linxuan/ai-berkshire/reports/七公司五年回报与资金配置-20260906/腾讯与拼多多五年底稿.md
+======================================================================
+
+  [92m✅ 通过[0m [12] 模型起点稀释股份/ADS · PDD                   报告:        14.80 亿
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 14.80 (偏差 0.00%)
+  [92m✅ 通过[0m [14] 2026正常化利润基数 · PDD                    报告:       850.00 
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 850.00 (偏差 0.00%)
+  [92m✅ 通过[0m [15] 对应正常化模型PE · 腾讯                       报告:        15.25 倍
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 15.25 (偏差 0.00%)
+  [92m✅ 通过[0m [18] 增值服务收入年增速／2031净利率 · 乐观               报告:         8.00 %
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 8.00 (偏差 0.00%)
+  [92m✅ 通过[0m [29] 2031归母经济利润 · 乐观                      报告:      3940.39 
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 3940.39 (偏差 0.00%)
+  [92m✅ 通过[0m [32] 交易服务收入年增速／2031净利率 · 悲观               报告:        -2.00 %
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: -2.00 (偏差 0.00%)
+  [92m✅ 通过[0m [36] 常态税后利息 · 基准                          报告:        80.00 
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 80.00 (偏差 0.00%)
+  [92m✅ 通过[0m [55] 腾讯乐观 · 退出PE                          报告:        22.00 
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 22.00 (偏差 0.00%)
+  [92m✅ 通过[0m [70] PDD基准 · 2031稀释股数，亿股/亿ADS             报告:        15.55 
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 15.55 (偏差 0.00%)
+  [92m✅ 通过[0m [76] PDD乐观 · 2031稀释股数，亿股/亿ADS             报告:        15.17 
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 15.17 (偏差 0.00%)
+  [92m✅ 通过[0m [82] 每年发行及股份激励等增加 · 悲观                    报告:         1.00 %
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 1.00 (偏差 0.00%)
+  [92m✅ 通过[0m [87] 起算每股股息／每年增速 · 悲观                     报告:         4.00 
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 4.00 (偏差 0.00%)
+  [92m✅ 通过[0m [95] 五年逐年压力校核中，分红加回购最高占现金 · 乐观            报告:        84.49 %
+                                                    Model inputs and independently recalculated Decimal result; not external verification of a forecast: 84.49 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 13  |  通过: [92m13[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================

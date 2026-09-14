@@ -1,0 +1,38 @@
+{
+  "price_hkd": "361.4",
+  "years": 3,
+  "terminal_year": 2029,
+  "scenarios": [
+    {
+      "scenario": "悲观",
+      "terminal_price_hkd": "17.10644579922148221206723601",
+      "annual_dividends_hkd": [
+        "0",
+        "0",
+        "0"
+      ],
+      "cash_dividend_sum_hkd": "0"
+    },
+    {
+      "scenario": "基准",
+      "terminal_price_hkd": "313.6181729857271738878993269",
+      "annual_dividends_hkd": [
+        "0",
+        "0",
+        "0"
+      ],
+      "cash_dividend_sum_hkd": "0"
+    },
+    {
+      "scenario": "乐观",
+      "terminal_price_hkd": "1176.068148696476902079622476",
+      "annual_dividends_hkd": [
+        "0",
+        "0",
+        "0"
+      ],
+      "cash_dividend_sum_hkd": "0"
+    }
+  ],
+  "method": "Decimal独立重算; dividends held as cash, no reinvestment"
+}

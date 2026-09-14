@@ -1,0 +1,23 @@
+{
+  "broken_relative_links": [],
+  "article_counts": [
+    {
+      "file": "02-可灵值多少钱先问谁付成本.md",
+      "characters": 11665,
+      "chinese_characters": 8330
+    },
+    {
+      "file": "03-便宜的市盈率与昂贵的再投资.md",
+      "characters": 15551,
+      "chinese_characters": 8724
+    },
+    {
+      "file": "01-四亿日活之后快手究竟卖什么.md",
+      "characters": 11171,
+      "chinese_characters": 8174
+    }
+  ],
+  "financial_commands": 91,
+  "financial_command_failures": 0,
+  "note": "抽样覆盖边界另见coverage.json；非所有陈述完整双源审计。"
+}

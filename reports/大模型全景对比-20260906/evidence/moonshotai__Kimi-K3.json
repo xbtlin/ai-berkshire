@@ -1,0 +1,17 @@
+{
+  "repo": "moonshotai/Kimi-K3",
+  "url": "https://huggingface.co/moonshotai/Kimi-K3",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world's first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and reasoning.",
+    "- **Native Multimodality & Long Context**: Kimi K3 understands text, images, and video within the same model, and supports a 1-million-token context window.",
+    "<td align=\"center\" style=\"vertical-align: middle; text-align: center\"><strong>Total Parameters</strong></td>",
+    "<td align=\"center\" style=\"vertical-align: middle; text-align: center\"><strong>Activated Parameters</strong></td>",
+    "<td align=\"center\" style=\"vertical-align: middle; text-align: center\"><strong>Parameters of Vision Encoder</strong></td>",
+    "   - **BrowseComp.** We adopt a context-compaction strategy triggered at 300K tokens. When evaluated with the full 1M-token context window and no context management, Kimi K3 achieves a score of 90.4. The results of Claude Fable 5, Claude Opus 4.8, GPT-5.6 Sol, and GPT-5.5 are cited from [Anthropic](https://www.anthropic.com/news/claude-fable-5-mythos-5) and [OpenAI](https://openai.com/index/gpt-5-6/).",
+    "For full guides and examples (vision input, structured output, partial mode, tool choice, dynamic tool loading, context caching), see the [Kimi K3 Quickstart](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart) and [Thinking Effort](https://platform.kimi.ai/docs/guide/use-thinking-effort)."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "Kimi K3 License\n\nCopyright (c) 2026 Moonshot AI\n\nPermission is hereby granted, free of charge, to any person (the \"Licensee\")\nobtaining a copy of this software — including the model weights, parameters,\nconfiguration files, inference and training code, and associated documentation\n(collectively, the \"Software\") — to deal in the Software without restriction.\nThis includes, without limitation, the rights to use, copy, modify, merge,\npublish, distri"
+}

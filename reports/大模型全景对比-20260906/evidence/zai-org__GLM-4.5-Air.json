@@ -1,0 +1,11 @@
+{
+  "repo": "zai-org/GLM-4.5-Air",
+  "url": "https://huggingface.co/zai-org/GLM-4.5-Air",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "The **GLM-4.5** series models are foundation models designed for intelligent agents. GLM-4.5 has **355** billion total parameters with **32** billion active parameters, while GLM-4.5-Air adopts a more compact design with **106** billion total parameters and **12** billion active parameters. GLM-4.5 models unify reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications.",
+    "We have open-sourced the base models, hybrid reasoning models, and FP8 versions of the hybrid reasoning models for both GLM-4.5 and GLM-4.5-Air. They are released under the MIT open-source license and can be used commercially and for secondary development."
+  ],
+  "LICENSE_status": 404
+}

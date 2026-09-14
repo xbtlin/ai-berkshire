@@ -1,0 +1,27 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：reports/英伟达/英伟达商业模式与十年利润研究-20260907.md
+======================================================================
+
+  ✅ 通过 [ 2] 收入 · FY2023                          报告:       269.74 亿美元
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581023000017/nvda-20230129.htm: 269.74 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 269.74 (偏差 0.00%)
+  ✅ 通过 [ 8] GAAP净利润 · FY2024                     报告:       297.60 亿美元
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 297.60 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 297.60 (偏差 0.00%)
+  ✅ 通过 [ 9] GAAP净利润 · FY2025                     报告:       728.80 亿美元
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 728.80 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 728.80 (偏差 0.00%)
+  ✅ 通过 [15] 毛利率 · FY2026                         报告:        71.10 %
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 71.10 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 71.07 (偏差 0.04%)
+  ✅ 通过 [18] 经营现金流 · FY2024                       报告:       280.90 亿美元
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 280.90 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 280.90 (偏差 0.00%)
+  ✅ 通过 [16] 经营现金流 · FY2022                       报告:        91.08 亿美元
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581023000017/nvda-20230129.htm: 91.08 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 91.08 (偏差 0.00%)
+  ⬜ [41] 其他收入（假设） · 基准                            1000.00   →  [未提供核验值，跳过]
+  ⬜ [48] 常态净利率（假设） · 乐观                             45.00 %  →  [未提供核验值，跳过]
+  ✅ 通过 [53] 价值份额下降10个百分点至35% · 年度常态利润（亿美元）       报告:      3200.00 亿美元
+                                                    financial_rigor: (2000 * 0.35 + 100) * 0.40; USD bn converted to 亿美元: 3200.00 (偏差 0.00%)  |  Independent Decimal arithmetic; NOT independent forecast evidence: 3200.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 7  |  通过: 7  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================

@@ -1,0 +1,16 @@
+{
+  "repo": "CohereLabs/command-a-plus-05-2026-bf16",
+  "url": "https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "Command A+ is an open source model with 25 billion active parameters and 218B total parameters model optimized for agentic, multilingual, and reasoning-heavy tasks with a focus on enterprise performance, while also providing support for vision inputs for processing image inputs.",
+    "* License: [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)  ",
+    "* Model Size: 25B active parameters, 218B total parameters  ",
+    "* Context length: 128K input",
+    "**Model Architecture**: Command A+ is a decoder-only Sparse Mixture-of-Experts Transformer Model. With 25B active parameters and 218B total parameters, it has 128 experts, out of which 8 are active per token, and a single shared expert is applied to all tokens. The attention layers interleave sliding-window attention layers with Rotational Positional Embeddings and global attention layers without positional embeddings in a 3:1 ratio, as first introduced in Command A. The sparse MoE layer is trained in a fully dropless manner and uses a token-choice router. We use additive-bias-based load balancing to encourage balanced token load across all experts, and swap out the softmax router activation",
+    "**Context Length:** Command A+ supports a context length of 128K & 64K output length.",
+    "        \"parameters\": {"
+  ],
+  "LICENSE_status": 404
+}

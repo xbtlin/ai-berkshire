@@ -1,0 +1,13 @@
+{
+  "repo": "openai/gpt-oss-120b",
+  "url": "https://huggingface.co/openai/gpt-oss-120b",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "- `gpt-oss-120b` — for production, general purpose, high reasoning use cases that fit into a single 80GB GPU (like NVIDIA H100 or AMD MI300X) (117B parameters with 5.1B active parameters)",
+    "- `gpt-oss-20b` — for lower latency, and local or specialized use cases (21B parameters with 3.6B active parameters)",
+    "* **Permissive Apache 2.0 license:** Build freely without copyleft restrictions or patent risk—ideal for experimentation, customization, and commercial deployment.  "
+  ],
+  "LICENSE_status": 200,
+  "license_head": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or ent"
+}

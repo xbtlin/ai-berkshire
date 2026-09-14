@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "label": "开放平台及其他企业服务收入占比 · 2026年上半年",
+    "reported_value": 63.4,
+    "unit": "%",
+    "raw_text": "| 开放平台及其他企业服务收入占比 | 63.4% | 包含付费个人用户、企业用户及Token Plan，不能全部等同于大型企业合同收入 |",
+    "line_number": 15,
+    "fetched_value": 63.4,
+    "fetched_source": "https://file.cdn.minimax.io/public/586c7995-cab1-41b5-9178-c06685b32c88.pdf",
+    "fetched_value2": 63.4,
+    "fetched_source2": "https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820"
+  },
+  {
+    "id": 2,
+    "label": "中国内地以外收入占比 · 2026年上半年",
+    "reported_value": 60.8,
+    "unit": "%",
+    "raw_text": "| 中国内地以外收入占比 | 60.8% | 已有全球商业化，但地域覆盖不自动代表强品牌或高留存 |",
+    "line_number": 16,
+    "fetched_value": 60.8,
+    "fetched_source": "https://file.cdn.minimax.io/public/586c7995-cab1-41b5-9178-c06685b32c88.pdf",
+    "fetched_value2": 60.8,
+    "fetched_source2": "https://www-web.itiger.com/news/1169167557"
+  },
+  {
+    "id": 3,
+    "label": "综合毛利率 · 2026年上半年",
+    "reported_value": 17.9,
+    "unit": "%",
+    "raw_text": "| 综合毛利率 | 17.9% | 集团口径，不能直接用来判断某一个模型的盈利水平 |",
+    "line_number": 17,
+    "fetched_value": 17.9,
+    "fetched_source": "https://file.cdn.minimax.io/public/586c7995-cab1-41b5-9178-c06685b32c88.pdf",
+    "fetched_value2": 17.9,
+    "fetched_source2": "https://www-web.itiger.com/news/1169167557"
+  },
+  {
+    "id": 4,
+    "label": "总收入同比增速 · 2026年上半年",
+    "reported_value": 283.1,
+    "unit": "%",
+    "raw_text": "| 总收入同比增速 | +283.1% | 增长很快，仍需结合基数及收入结构变化解释 |",
+    "line_number": 18,
+    "fetched_value": 283.1,
+    "fetched_source": "https://file.cdn.minimax.io/public/586c7995-cab1-41b5-9178-c06685b32c88.pdf",
+    "fetched_value2": 283.1,
+    "fetched_source2": "https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820"
+  },
+  {
+    "id": 5,
+    "label": "销售及分销费用同比变化 · 2026年上半年",
+    "reported_value": -17.9,
+    "unit": "%",
+    "raw_text": "| 销售及分销费用同比变化 | -17.9% | 增长对新增推广费用的依赖有所降低，不等于每个应用都有强自然增长 |",
+    "line_number": 19,
+    "fetched_value": -17.9,
+    "fetched_source": "https://file.cdn.minimax.io/public/586c7995-cab1-41b5-9178-c06685b32c88.pdf",
+    "fetched_value2": -17.9,
+    "fetched_source2": "https://www-web.itiger.com/news/1169167557"
+  }
+]

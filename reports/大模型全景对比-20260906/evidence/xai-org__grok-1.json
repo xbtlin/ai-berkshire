@@ -1,0 +1,10 @@
+{
+  "repo": "xai-org/grok-1",
+  "url": "https://huggingface.co/xai-org/grok-1",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "Due to the large size of the model (314B parameters), a multi-GPU machine is required to test the model with the example code."
+  ],
+  "LICENSE_status": 404
+}

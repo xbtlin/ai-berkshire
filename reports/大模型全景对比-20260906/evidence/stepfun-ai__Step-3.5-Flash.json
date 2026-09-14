@@ -1,0 +1,22 @@
+{
+  "repo": "stepfun-ai/Step-3.5-Flash",
+  "url": "https://huggingface.co/stepfun-ai/Step-3.5-Flash",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "**Step 3.5 Flash** ([visit website](https://static.stepfun.com/blog/step-3.5-flash/)) is our most capable open-source foundation model, engineered to deliver frontier reasoning and agentic capabilities with exceptional efficiency. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token. This \"intelligence density\" allows it to rival the reasoning depth of top-tier proprietary models, while maintaining the agility required for real-time interaction.",
+    "- **Efficient Long Context**: The model supports a cost-efficient **256K context window** by employing a 3:1 Sliding Window Attention (SWA) ratio—integrating three SWA layers for every full-attention layer. This hybrid approach ensures consistent performance across massive datasets or long codebases while significantly reducing the computational overhead typical of standard long-context models.",
+    "Performance of Step 3.5 Flash measured across **Reasoning**, **Coding**, and **Agentic Abilities**. Open-source models (left) are sorted by their total parameter count, while top-tier proprietary models are shown on the right. xbench-DeepSearch scores are sourced from [official publications](https://xbench.org/agi/aisearch) for consistency. The shadowed bars represent the enhanced performance of Step 3.5 Flash using [Parallel Thinking](https://arxiv.org/pdf/2601.05593).",
+    "| Est. decoding cost @ 128K context, Hopper GPU** | **1.0x**<br>100 tok/s, MTP-3, EP8 | **6.0x**<br>33 tok/s, MTP-1, EP32 | **18.9x**<br>33 tok/s, no MTP, EP32 | **18.9x**<br>100 tok/s, MTP-3, EP8 | **3.9x**<br>100 tok/s, MTP-3, EP8 | **1.2x**<br>100 tok/s, MTP-3, EP8 |",
+    "| BrowseComp (w/ Context Manager) | 69.0 | 67.6 | 60.2/74.9 | 67.5 | 62.0 | 58.3 |",
+    "| BrowseComp-ZH (w/ Context Manager) | 73.7 | — | —/— | — | — | — |",
+    "3. **BrowseComp (with Context Manager)**: When the effective context length exceeds a predefined threshold, the agent resets the context and restarts the agent loop. By contrast, Kimi K2.5 and DeepSeek-V3.2 used a \"discard-all\" strategy.",
+    "### Recommended Inference Parameters",
+    "| **Context Window** | 256K |",
+    "| **Total Parameters** | **196.81B** (196B Backbone + 0.81B Head) |",
+    "| **Active Parameters** | **~11B** (per token generation) |",
+    "    \"longContext\": \"stepfun-api,step-3.5-flash\",",
+    "      title={Step 3.5 Flash: Open Frontier-Level Intelligence with 11B Active Parameters}, "
+  ],
+  "LICENSE_status": 404
+}

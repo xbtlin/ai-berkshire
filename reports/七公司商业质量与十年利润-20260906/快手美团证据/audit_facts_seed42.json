@@ -1,0 +1,41 @@
+[
+  {
+    "id": 4,
+    "label": "快手2026上半年 · 收入",
+    "reported_value": 692.51,
+    "unit": "",
+    "raw_text": "| 快手2026上半年 | 692.51 | 60.49 | 72.87 |",
+    "line_number": 12,
+    "fetched_value": 692.51,
+    "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+    "fetched_value2": 692.51,
+    "fetched_source2": "https://www.ithome.com/0/991/705.htm",
+    "classification": "historical_fact"
+  },
+  {
+    "id": 5,
+    "label": "快手2026上半年 · IFRS归母净利润",
+    "reported_value": 60.49,
+    "unit": "",
+    "raw_text": "| 快手2026上半年 | 692.51 | 60.49 | 72.87 |",
+    "line_number": 12,
+    "fetched_value": 60.49,
+    "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+    "fetched_value2": 60.49,
+    "fetched_source2": "https://www.ithome.com/0/991/705.htm",
+    "classification": "historical_fact"
+  },
+  {
+    "id": 12,
+    "label": "美团2026上半年 · 公司经调整净利润，非IFRS",
+    "reported_value": -24.44,
+    "unit": "",
+    "raw_text": "| 美团2026上半年 | 1956.82 | -46.72 | -24.44 |",
+    "line_number": 14,
+    "fetched_value": -24.4427,
+    "fetched_source": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082800436_c.pdf",
+    "fetched_value2": -24.44,
+    "fetched_source2": "https://finance.sina.com.cn/stock/relnews/hk/2026-08-28/doc-inipwnxp8987332.shtml",
+    "classification": "historical_fact"
+  }
+]

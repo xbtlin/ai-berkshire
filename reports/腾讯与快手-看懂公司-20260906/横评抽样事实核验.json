@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "label": "收盘价（港元） · 腾讯 00700",
+    "reported_value": 442.8,
+    "unit": "",
+    "raw_text": "| 收盘价（港元） | 442.80 | 33.66 |",
+    "line_number": 13,
+    "fetched_value": 442.8,
+    "fetched_source": "https://stockanalysis.com/quote/hkg/0700/history/ (2026-09-04)",
+    "fetched_value2": 442.8,
+    "fetched_source2": "https://cn.investing.com/equities/tencent-holdings-hk-historical-data (2026-09-04)"
+  },
+  {
+    "id": 4,
+    "label": "已发行股数（股） · 快手 01024",
+    "reported_value": 4326961215.0,
+    "unit": "",
+    "raw_text": "| 已发行股数（股） | 9,103,153,877 | 4,326,961,215 |",
+    "line_number": 14,
+    "fetched_value": 4326961215,
+    "fetched_source": "IR linked Euroland: September 3 next-day B shares + August monthly A shares; URLs in 独立来源与反方核查.md",
+    "fetched_value2": 4330000000,
+    "fetched_source2": "https://stockanalysis.com/quote/hkg/1024/statistics/ (4.33 billion, rounded)"
+  },
+  {
+    "id": 9,
+    "label": "截至中期的 TTM 归母净利润（亿元） · 腾讯 00700",
+    "reported_value": 2355.08,
+    "unit": "",
+    "raw_text": "| 截至中期的 TTM 归母净利润（亿元） | 2,355.08 | 157.66 |",
+    "line_number": 17,
+    "fetched_value": 2355.08,
+    "fetched_source": "Tencent FY2025 + H12026 - H12025 IFRS attributable income; primary statement values 224842,114115,103449 million CNY",
+    "fetched_value2": 2355.08,
+    "fetched_source2": "https://stockanalysis.com/quote/hkg/0700/financials/ (TTM net income 235508 million CNY)"
+  }
+]

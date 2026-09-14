@@ -1,0 +1,12 @@
+{
+  "repo": "deepseek-ai/DeepSeek-R1-0528",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "In the search results I provide to you, each result is formatted as [webpage X begin]...[webpage X end], where X represents the numerical index of each article. Please cite the context at the end of the relevant sentence when appropriate. Use the citation format [citation:X] in the corresponding part of your answer. If a sentence is derived from multiple contexts, list all relevant citation numbers, such as [citation:3][citation:5]. Be sure not to cluster all citations at the end; instead, include them in the corresponding parts of the answer.",
+    "This code repository is licensed under [MIT License](LICENSE). The use of DeepSeek-R1 models is also subject to [MIT License](LICENSE). DeepSeek-R1 series (including Base and Chat) supports commercial use and distillation."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "MIT License\n\nCopyright (c) 2023 DeepSeek\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to t"
+}

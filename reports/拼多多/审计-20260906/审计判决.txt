@@ -1,0 +1,38 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：/Users/linxuan/ai-berkshire/reports/拼多多/拼多多研究报告-20260906.md
+======================================================================
+
+  [92m✅ 通过[0m [ 2] 收入 · 2022                            报告:    130557.59 
+                                                    https://investor.pddholdings.com/static-files/e9586d93-bb1d-4e98-af8a-4e73b62350f2: 130557.59 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 130558.00 (偏差 0.00%)
+  [92m✅ 通过[0m [ 8] 营业成本 · 2023                          报告:     91723.58 
+                                                    https://cdn.yahoofinance.com/prod/sec-filings/0001737806/000110465926050727/pdd-20251231x20f.htm: 91723.58 (偏差 0.00%)  |  https://finance.sina.com.cn/tech/2025-03-20/doc-ineqiark3734433.shtml: 91723.60 (偏差 0.00%)
+  [92m✅ 通过[0m [ 9] 营业成本 · 2024                          报告:    153900.37 
+                                                    https://cdn.yahoofinance.com/prod/sec-filings/0001737806/000110465926050727/pdd-20251231x20f.htm: 153900.37 (偏差 0.00%)  |  https://finance.sina.com.cn/tech/2025-03-20/doc-ineqiark3734433.shtml: 153900.40 (偏差 0.00%)
+  [92m✅ 通过[0m [15] 经营利润 · 2025                          报告:     93102.13 
+                                                    https://cdn.yahoofinance.com/prod/sec-filings/0001737806/000110465926050727/pdd-20251231x20f.htm: 93102.13 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 93102.00 (偏差 0.00%)
+  [92m✅ 通过[0m [18] GAAP归母 · 2023                        报告:     60026.54 
+                                                    https://cdn.yahoofinance.com/prod/sec-filings/0001737806/000110465926050727/pdd-20251231x20f.htm: 60026.54 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 60027.00 (偏差 0.00%)
+  [92m✅ 通过[0m [16] GAAP归母 · 2021                        报告:      7768.67 
+                                                    https://investor.pddholdings.com/static-files/e9586d93-bb1d-4e98-af8a-4e73b62350f2: 7768.67 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 7769.00 (偏差 0.00%)
+  [92m✅ 通过[0m [41] 悲观 · 三年总回报                           报告:       -39.90 %
+                                                    估值模型.json / financial_rigor三情景与calc原输出: -39.90 (偏差 0.01%)  |  独立Decimal35位复算；若为增长/PE，则与本文件事先明确的情景输入核对，非外部事实: -39.90 (偏差 0.01%)
+  [92m✅ 通过[0m [48] 基准 · 年化回报                            报告:        12.71 %
+                                                    估值模型.json / financial_rigor三情景与calc原输出: 12.71 (偏差 0.04%)  |  独立Decimal35位复算；若为增长/PE，则与本文件事先明确的情景输入核对，非外部事实: 12.71 (偏差 0.04%)
+  [92m✅ 通过[0m [54] 乐观 · 年化回报                            报告:        32.32 %
+                                                    估值模型.json / financial_rigor三情景与calc原输出: 32.32 (偏差 0.01%)  |  独立Decimal35位复算；若为增长/PE，则与本文件事先明确的情景输入核对，非外部事实: 32.32 (偏差 0.01%)
+
+----------------------------------------------------------------------
+  抽检总数: 9  |  通过: [92m9[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 9,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 9,
+  "fail_items": [],
+  "warn_items": []
+}

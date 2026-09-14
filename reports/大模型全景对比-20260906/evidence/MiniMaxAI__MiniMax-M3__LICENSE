@@ -1,0 +1,17 @@
+MINIMAX COMMUNITY LICENSE
+Copyright (c) 2026 MiniMax
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software for non-commercial purposes, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or provide copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+1. The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+2. If the Software (or any derivative works thereof) is used for any Commercial Use for your products or services: 
+  1. you shall prominently display “Built with MiniMax M3” on a related website, user interface, blogpost, about page or product documentation. 
+  2. you shall obtain a separate, prior written authorization from MiniMax by contacting api@minimax.io with the subject line “M3 licensing - authorization request”, if such products and services generate more than 20 million US dollars (or equivalent in other currencies) in yearly revenue; otherwise, you only need to send a one-time notice to api@minimax.io with the subject “M3 licensing — notice”.
+3. “Commercial Use” means any use of the Software or any derivative work thereof that is primarily intended for commercial advantage or monetary compensation, which includes, without limitation: (i) offering products or services to third parties for a fee, which utilize, incorporate, or rely on the Software or its derivatives, (ii) the commercial use of APIs provided by or for the Software or its derivatives, including to support or enable commercial products, services, or operations, whether in a cloud-based, hosted, or other similar environment, and (iii) the deployment or provision of the Software or its derivatives that have been subjected to post-training, fine-tuning, instruction-tuning, or any other form of modification, for any commercial purpose.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Appendix: Prohibited Uses 
+You agree you will not use, or allow others to use, the Software or any derivatives of the Software to:
+1. Generate or disseminate content prohibited by applicable laws or regulations.
+2. Assist with, engage in or otherwise support any military purpose.
+3. Exploit, harm, or attempt to exploit or harm minors.
+4. Generate or disseminate false or misleading information with the intent to cause harm.
+5. Promote discrimination, hate speech, or harmful behavior against individuals or groups based on race or ethnic origin, religion, disability, age, nationality and national origin, veteran status, sexual orientation, gender or gender identity, caste, immigration status, or any other characteristic that is associated with systemic discrimination or marginalization.

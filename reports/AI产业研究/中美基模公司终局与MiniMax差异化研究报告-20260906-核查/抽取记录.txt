@@ -1,0 +1,97 @@
+======================================================================
+报告数据抽检清单
+文件：/Users/linxuan/ai-berkshire/reports/AI产业研究/中美基模公司终局与MiniMax差异化研究报告-20260906.md
+总提取数据点：6  |  抽样比例：100%  |  抽检数量：6
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  6      3  长期观察终点                                    2036.00  
+  5      3  资料截止                                      2026.00  
+  1     81  总收入 · 披露值                                  116.57  
+  2     82  开放平台及其他企业服务收入占比 · 披露值                       63.40  %
+  3     83  集团毛利率 · 披露值                                 17.90  %
+  4     84  研发费用 · 披露值                                 296.87  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 6,
+    "label": "长期观察终点",
+    "reported_value": 2036.0,
+    "unit": "",
+    "line_number": 3,
+    "raw_text": "资料截止：2026-09-06；长期观察终点：2036年。以下把可核事实与主观推演分开。讨论产业结构和经营质量，不做当前股价估值或买卖建议。用于学习与研究。",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "资料截止",
+    "reported_value": 2026.0,
+    "unit": "",
+    "line_number": 3,
+    "raw_text": "资料截止：2026-09-06；长期观察终点：2036年。以下把可核事实与主观推演分开。讨论产业结构和经营质量，不做当前股价估值或买卖建议。用于学习与研究。",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 1,
+    "label": "总收入 · 披露值",
+    "reported_value": 116.573,
+    "unit": "",
+    "line_number": 81,
+    "raw_text": "| 总收入 | 116.573 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 2,
+    "label": "开放平台及其他企业服务收入占比 · 披露值",
+    "reported_value": 63.4,
+    "unit": "%",
+    "line_number": 82,
+    "raw_text": "| 开放平台及其他企业服务收入占比 | 63.4% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 3,
+    "label": "集团毛利率 · 披露值",
+    "reported_value": 17.9,
+    "unit": "%",
+    "line_number": 83,
+    "raw_text": "| 集团毛利率 | 17.9% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 4,
+    "label": "研发费用 · 披露值",
+    "reported_value": 296.87,
+    "unit": "",
+    "line_number": 84,
+    "raw_text": "| 研发费用 | 296.870 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

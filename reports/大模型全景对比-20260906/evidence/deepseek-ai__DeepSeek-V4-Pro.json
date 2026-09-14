@@ -1,0 +1,14 @@
+{
+  "repo": "deepseek-ai/DeepSeek-V4-Pro",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**.",
+    "1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2.",
+    "*\\*FP4 + FP8 Mixed: MoE expert parameters use FP4 precision; most other parameters use FP8.*",
+    "For local deployment, we recommend setting the sampling parameters to `temperature = 1.0, top_p = 1.0`. For the Think Max reasoning mode, we recommend setting the context window to at least **384K** tokens."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "MIT License\n\nCopyright (c) 2023 DeepSeek\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to t"
+}

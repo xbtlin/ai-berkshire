@@ -1,0 +1,668 @@
+{
+  "cutoff_date": "2026-09-06",
+  "timezone": "Asia/Shanghai",
+  "scope": "Public official model cards, license files, and repository metadata. No full weights downloaded.",
+  "cards": [
+    {
+      "file": "CohereLabs__command-a-plus-05-2026-bf16__README.md",
+      "bytes": 10428,
+      "sha256": "507c57ee705b109f326392c9687d9e14b2697b88790f3048ca86faf91fb58b02"
+    },
+    {
+      "file": "LGAI-EXAONE__K-EXAONE-2.0-750B-A37B__README.md",
+      "bytes": 33000,
+      "sha256": "80cb734dbdff74e4e10f2e83d77b503b9e94d00cf89c2ff952e3a252f8997b4a"
+    },
+    {
+      "file": "LGAI-EXAONE__K-EXAONE-236B-A23B__README.md",
+      "bytes": 21868,
+      "sha256": "5f56b934af975a10b7b72c49f200d85c82cae022b3604a2a29bcc2ed4bad1cb7"
+    },
+    {
+      "file": "MiniMaxAI__MiniMax-M1-80k__README.md",
+      "bytes": 24198,
+      "sha256": "4df24f961a0c9c1d20c4e496ff8a7fec040898ff8b78540bcda3a8ab0b2ce432"
+    },
+    {
+      "file": "MiniMaxAI__MiniMax-M2.7__README.md",
+      "bytes": 14902,
+      "sha256": "2e871f2f502616c7168e4db41427c0d58c3906ba7357e73064a4564c93c33c62"
+    },
+    {
+      "file": "MiniMaxAI__MiniMax-M2__README.md",
+      "bytes": 22046,
+      "sha256": "d91af953273176f346f0ce1c74c27f3873bc49237eb2df9db645618a5eb45d22"
+    },
+    {
+      "file": "MiniMaxAI__MiniMax-M3__README.md",
+      "bytes": 5122,
+      "sha256": "6148856dbf8be26dcf3f9b913be0252c38454e852108fdab01212fe965f3e327"
+    },
+    {
+      "file": "Qwen__Qwen3-235B-A22B-Instruct-2507__README.md",
+      "bytes": 16212,
+      "sha256": "af233f6e013228859d81a2088521781d4e6a06c5960ab3b7ceee6466f550b5f6"
+    },
+    {
+      "file": "Qwen__Qwen3-Coder-480B-A35B-Instruct__README.md",
+      "bytes": 5500,
+      "sha256": "435afee9137a46ceb1e510fb8d2cef921d69ca1f5f7d5a1d9252ba22ebe21149"
+    },
+    {
+      "file": "Qwen__Qwen3-VL-235B-A22B-Instruct__README.md",
+      "bytes": 6697,
+      "sha256": "207f81bc285522284cb14c0b8ff2ff022993f5e55c39edf570eb00e1c64103d1"
+    },
+    {
+      "file": "Qwen__Qwen3.5-122B-A10B__README.md",
+      "bytes": 92633,
+      "sha256": "1775bb720398d6107cce3da0c3129abfd24ec639fd9853d5134df1e5c6118a4d"
+    },
+    {
+      "file": "Qwen__Qwen3.5-397B-A17B__README.md",
+      "bytes": 94793,
+      "sha256": "bda4b24e975f65ac677985306ddbad33362e65064637660654c8bb7dea7edf50"
+    },
+    {
+      "file": "Qwen__Qwen3.8-2.4T-A95B__README.md",
+      "bytes": 35755,
+      "sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331"
+    },
+    {
+      "file": "XiaomiMiMo__MiMo-V2.5-Pro__README.md",
+      "bytes": 11122,
+      "sha256": "5387cd822ba7b6e6570107bb9b265490cece72fd1c179da503f83243c8f1698f"
+    },
+    {
+      "file": "XiaomiMiMo__MiMo-V2.5__README.md",
+      "bytes": 10705,
+      "sha256": "8c54ab372168ccf760a0fec8b8756b1405d0e137e2de1b5799e1ec0a2dc8a13f"
+    },
+    {
+      "file": "baidu__ERNIE-4.5-300B-A47B-Base-PT__README.md",
+      "bytes": 7589,
+      "sha256": "fca0aebc5a6c6ac142d69d3b0b6dc2ebd7f871d13f681485878490c9048a2202"
+    },
+    {
+      "file": "baidu__ERNIE-4.5-300B-A47B-Paddle__README.md",
+      "bytes": 13262,
+      "sha256": "61021f1c9c85ff2c530692b89b9386586a0b784ff08942efcd381d533c918766"
+    },
+    {
+      "file": "baidu__ERNIE-4.5-VL-424B-A47B__README.md",
+      "bytes": 6578,
+      "sha256": "0858ddd1c2535846bd25d3b959c2451891f30d16af52c997b147dcd8ee3c2447"
+    },
+    {
+      "file": "bigscience__bloom__README.md",
+      "bytes": 29877,
+      "sha256": "dfcc25552c185cdba2436f530678b29e39ae542157484d792145126b43d10770"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-R1-0528__README.md",
+      "bytes": 14564,
+      "sha256": "8a695d50e8dd56ea3fb74c6bbefb6138259f857710d5db9995d1146853827754"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-R1__README.md",
+      "bytes": 15994,
+      "sha256": "d26d26ddb518fee60c6c6bf7a708bd751b1619d93a4944f188143693d956c77f"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-V2__README.md",
+      "bytes": 16102,
+      "sha256": "8bf7588b4dfe338bfc9fbe544c88a90b9ba659804e739cdfea3418becfbce636"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-V3.1__README.md",
+      "bytes": 11340,
+      "sha256": "dcb317340f6f0ae5146c99b0f0062c1c9781d330997901254ff0c18a5b35a918"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-V3.2__README.md",
+      "bytes": 7361,
+      "sha256": "22b9f57e1ece2df27f9de0e71377e19481f7a6892eca8bc23e73fcdffe1d845c"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-V3__README.md",
+      "bytes": 19626,
+      "sha256": "3739763a851074c810f1565f9823956f3a095231f8c591dd3c254581bdd3cf08"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-V4-Flash__README.md",
+      "bytes": 13149,
+      "sha256": "c4d714818a4d3333542edc7d38ea065825a0cf7aa8fea3605bbd1d1c18e4a610"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-V4-Pro__README.md",
+      "bytes": 13149,
+      "sha256": "c4d714818a4d3333542edc7d38ea065825a0cf7aa8fea3605bbd1d1c18e4a610"
+    },
+    {
+      "file": "inclusionAI__Ling-2.6-1T-base__README.md",
+      "bytes": 7890,
+      "sha256": "6fdbe5d4663510f775a59bd47020cfc6b3588ecca8f983804a4336cfa9a13ff6"
+    },
+    {
+      "file": "inclusionAI__Ling-2.6-1T__README.md",
+      "bytes": 7970,
+      "sha256": "1a4a0027dee37c19a945748b49506f10a09a39a356906afe013dd4e2894f3f7a"
+    },
+    {
+      "file": "inclusionAI__Ling-2.6-flash__README.md",
+      "bytes": 12122,
+      "sha256": "af78448a82ba45e59eacf3fda6c3ed23129ecbe51e5ca373babcb9084d9fe030"
+    },
+    {
+      "file": "inclusionAI__Ring-2.6-1T__README.md",
+      "bytes": 10220,
+      "sha256": "89a75bca62202225ddc5464f8bde32ad75dac283221c1ff8d0fb1715c87c2657"
+    },
+    {
+      "file": "mistralai__Devstral-2-123B-Instruct-2512__README.md",
+      "bytes": 59385,
+      "sha256": "360b600b7d9aeaa3509590d0473e7cdcc7d0490ced278535e6639b87003fb54b"
+    },
+    {
+      "file": "mistralai__Mistral-Large-3-675B-Instruct-2512__README.md",
+      "bytes": 14427,
+      "sha256": "8f8882191b7bc0e2a348b2f85b35180bc213f4c15da17e8028c8b5cb7a25cb5a"
+    },
+    {
+      "file": "mistralai__Mistral-Medium-3.5-128B__README.md",
+      "bytes": 21872,
+      "sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465"
+    },
+    {
+      "file": "mistralai__Pixtral-Large-Instruct-2411__README.md",
+      "bytes": 26835,
+      "sha256": "e600fa5e386424933849b99f5161650be6695640de0cc161704459907a95ba40"
+    },
+    {
+      "file": "moonshotai__Kimi-K2.5__README.md",
+      "bytes": 40082,
+      "sha256": "1b04bed9c6c25894171c0ab5e0b4c4d57667698a654dbfd5a6c1649b922810a5"
+    },
+    {
+      "file": "moonshotai__Kimi-K3__README.md",
+      "bytes": 45261,
+      "sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe"
+    },
+    {
+      "file": "nvidia__Llama-3_1-Nemotron-Ultra-253B-v1__README.md",
+      "bytes": 18332,
+      "sha256": "1c2352cbec47b1d162b83ebc3932e3d65f8b98047102583339ae0957f9ab4641"
+    },
+    {
+      "file": "nvidia__NVIDIA-Nemotron-3-Super-120B-A12B-BF16__README.md",
+      "bytes": 82606,
+      "sha256": "cade76c064eda90d4f53e12614f45816ae6cfe43dacc8a9410abcc2fc7a17e59"
+    },
+    {
+      "file": "nvidia__NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16__README.md",
+      "bytes": 87023,
+      "sha256": "f7801419bedc351cce8d9a22eff5326daa5503b3f6d95bed9325a367b5612151"
+    },
+    {
+      "file": "nvidia__Nemotron-4-340B-Instruct__README.md",
+      "bytes": 12774,
+      "sha256": "9bc52ee616fe448991db53d18d8f4b2b0ba7f1c641066096356c451bd593970e"
+    },
+    {
+      "file": "openai__gpt-oss-120b__README.md",
+      "bytes": 7111,
+      "sha256": "92b0408cf5dce04e4c5e4e5f2be0361da710d3650baefd7d7519badd1c687919"
+    },
+    {
+      "file": "openpangu__openPangu-Ultra-MoE-718B-model__README.md",
+      "bytes": 5801,
+      "sha256": "455f5bf0638c2b28c8aca08fbfd2849a4a19a36d36a8aeefbee9ca99f4ee02e5"
+    },
+    {
+      "file": "stepfun-ai__Step-3.5-Flash__README.md",
+      "bytes": 26241,
+      "sha256": "6b903e2816900a43ec28d4a8f0f5c2feb72f7c65945cad503375414a270751d2"
+    },
+    {
+      "file": "stepfun-ai__step3__README.md",
+      "bytes": 6079,
+      "sha256": "c58140bb49bad463e45077d8f317290728d08696ae39e296ef76d1cc359613ba"
+    },
+    {
+      "file": "tencent__Hunyuan-Large__README.md",
+      "bytes": 13971,
+      "sha256": "30e7ba40f8092d00950c1da08edf064db56eac10b382e083cde1982e9beb884c"
+    },
+    {
+      "file": "tencent__Hy3__README.md",
+      "bytes": 10325,
+      "sha256": "dbdfc5920bf548fb484b5ec1837032f6c85e1886f2930aa5bee629c1f9620e8b"
+    },
+    {
+      "file": "upstage__Solar-Open-100B__README.md",
+      "bytes": 8435,
+      "sha256": "b3620aeabed0e73e57abe73c7f7f7fe34d5569ba487a83861ed38a4f8db4a89a"
+    },
+    {
+      "file": "xai-org__grok-1__README.md",
+      "bytes": 975,
+      "sha256": "e297ee52053c45f4cc8a0aa9bb2886ab4322f564be02cee0ea919b20bad03557"
+    },
+    {
+      "file": "xai-org__grok-2__README.md",
+      "bytes": 1583,
+      "sha256": "fe20d1639232a81974e61307b089be67880b4960174e4b6d94f61ada51e1b3cd"
+    },
+    {
+      "file": "zai-org__GLM-4.5-Air__README.md",
+      "bytes": 3001,
+      "sha256": "fdcdf454bbb54db5cf1a1dd83152feb6555c4962678cae5c7658bf9cd0261e8b"
+    },
+    {
+      "file": "zai-org__GLM-4.6V__README.md",
+      "bytes": 8354,
+      "sha256": "2fd45a740ae60a4a1495ffdb643fe24de88b2e0ecdbb7aa9eb9b1c241016afea"
+    },
+    {
+      "file": "zai-org__GLM-4.7__README.md",
+      "bytes": 13605,
+      "sha256": "ad072cbe81374f18149a107f2e1cbed93f27a6b220409a6bb34ba97a4d36757e"
+    },
+    {
+      "file": "zai-org__GLM-5.2__README.md",
+      "bytes": 10939,
+      "sha256": "7ba22185651d8f69fbf6227ee718eb680fd834ec8e79ba78df6fa54896614b3d"
+    },
+    {
+      "file": "zai-org__GLM-5.3-Flash__README.md",
+      "bytes": 8027,
+      "sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02"
+    },
+    {
+      "file": "zai-org__GLM-5.3__README.md",
+      "bytes": 14209,
+      "sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf"
+    },
+    {
+      "file": "zai-org__GLM-5__README.md",
+      "bytes": 12732,
+      "sha256": "4f8859aa1e0585e25f4fc61b5c17b2c488c767f37f41231818bc065a865ceae7"
+    }
+  ],
+  "licenses": [
+    {
+      "file": "LGAI-EXAONE__K-EXAONE-2.0-750B-A37B__LICENSE",
+      "bytes": 569,
+      "sha256": "ff8dc19a8a3eaa348aa0635ef0806a4bdb342b084ed7e8787a788f9a5a450b8a"
+    },
+    {
+      "file": "LGAI-EXAONE__K-EXAONE-236B-A23B__LICENSE",
+      "bytes": 10186,
+      "sha256": "e6856d61099fde8122d7ffa53d067bb4882bf7343185987e9c38fd4804c351cc"
+    },
+    {
+      "file": "MiniMaxAI__MiniMax-M1-80k__LICENSE",
+      "bytes": 11337,
+      "sha256": "9b01816663fa3c027bc8c0c878361b6a0e5c7bff16e25c4fc7b1ae2822cef102"
+    },
+    {
+      "file": "MiniMaxAI__MiniMax-M2.7__LICENSE",
+      "bytes": 3709,
+      "sha256": "6373a886779a26e56af8070699ebaa8f90104cadcc7bbf6897037f72017bedfe"
+    },
+    {
+      "file": "MiniMaxAI__MiniMax-M3__LICENSE",
+      "bytes": 3339,
+      "sha256": "b53f2fdda3049b0e9013207be51efc2d372cda1fcfdd8bb4bb8b22658ca5db9c"
+    },
+    {
+      "file": "Qwen__Qwen3-235B-A22B-Instruct-2507__LICENSE",
+      "bytes": 11343,
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    },
+    {
+      "file": "Qwen__Qwen3-Coder-480B-A35B-Instruct__LICENSE",
+      "bytes": 11343,
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    },
+    {
+      "file": "Qwen__Qwen3.5-122B-A10B__LICENSE",
+      "bytes": 11343,
+      "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32"
+    },
+    {
+      "file": "Qwen__Qwen3.5-397B-A17B__LICENSE",
+      "bytes": 11343,
+      "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32"
+    },
+    {
+      "file": "Qwen__Qwen3.8-2.4T-A95B__LICENSE",
+      "bytes": 3390,
+      "sha256": "a136bc4137ef3d7a7a54963164a47270f73e497917728ea0f4407a0115db1290"
+    },
+    {
+      "file": "baidu__ERNIE-4.5-300B-A47B-Base-PT__LICENSE",
+      "bytes": 11367,
+      "sha256": "53c3b68d6b485469e6e509dd68cee977f8f566deecc152e34869ed339f539d2f"
+    },
+    {
+      "file": "baidu__ERNIE-4.5-300B-A47B-Paddle__LICENSE",
+      "bytes": 11367,
+      "sha256": "53c3b68d6b485469e6e509dd68cee977f8f566deecc152e34869ed339f539d2f"
+    },
+    {
+      "file": "baidu__ERNIE-4.5-VL-424B-A47B__LICENSE",
+      "bytes": 11365,
+      "sha256": "e06c1039021830c5531e2e5c50a7f29a34c0fd8f7f6c539620164d4e09ec89f9"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-R1-0528__LICENSE",
+      "bytes": 1064,
+      "sha256": "1c8f573e830ca9b3ebfeb7ace1823146e22b66f99ee223840e7637c9e745e1c7"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-R1__LICENSE",
+      "bytes": 1064,
+      "sha256": "1c8f573e830ca9b3ebfeb7ace1823146e22b66f99ee223840e7637c9e745e1c7"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-V2__LICENSE",
+      "bytes": 13759,
+      "sha256": "ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-V3.1__LICENSE",
+      "bytes": 1064,
+      "sha256": "1c8f573e830ca9b3ebfeb7ace1823146e22b66f99ee223840e7637c9e745e1c7"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-V3.2__LICENSE",
+      "bytes": 1064,
+      "sha256": "1c8f573e830ca9b3ebfeb7ace1823146e22b66f99ee223840e7637c9e745e1c7"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-V4-Flash__LICENSE",
+      "bytes": 1064,
+      "sha256": "1c8f573e830ca9b3ebfeb7ace1823146e22b66f99ee223840e7637c9e745e1c7"
+    },
+    {
+      "file": "deepseek-ai__DeepSeek-V4-Pro__LICENSE",
+      "bytes": 1064,
+      "sha256": "1c8f573e830ca9b3ebfeb7ace1823146e22b66f99ee223840e7637c9e745e1c7"
+    },
+    {
+      "file": "mistralai__Devstral-2-123B-Instruct-2512__LICENSE",
+      "bytes": 1695,
+      "sha256": "867daee3b68e4e9392c9767fec4f099096fa6ad67adfc9c24020494e97766778"
+    },
+    {
+      "file": "mistralai__Mistral-Medium-3.5-128B__LICENSE",
+      "bytes": 1695,
+      "sha256": "648194727930df730890e9f9affdbcc5c930d406d6829559b25ca3d5a973fc8c"
+    },
+    {
+      "file": "moonshotai__Kimi-K2.5__LICENSE",
+      "bytes": 1465,
+      "sha256": "c524b41658421b8b143c5b50637ef008909da56013ad12ccaba0536139ee35b0"
+    },
+    {
+      "file": "moonshotai__Kimi-K3__LICENSE",
+      "bytes": 3065,
+      "sha256": "20c797ce19af0c17de52c6afb144644768a591c521655f5ebf5712c9850f2887"
+    },
+    {
+      "file": "nvidia__Nemotron-4-340B-Instruct__LICENSE",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "openai__gpt-oss-120b__LICENSE",
+      "bytes": 11357,
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "file": "openpangu__openPangu-Ultra-MoE-718B-model__LICENSE",
+      "bytes": 4455,
+      "sha256": "468cca71f609a8d61fed9c4b231a40ff89994c335eb3de49bb991d45aaeefc76"
+    },
+    {
+      "file": "stepfun-ai__step3__LICENSE",
+      "bytes": 11357,
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "file": "tencent__Hy3__LICENSE",
+      "bytes": 11607,
+      "sha256": "76a14d21e741dbbf1572e9c0e6bb809a9bd76f5b4da64a0b89e7331cc77ea84a"
+    },
+    {
+      "file": "upstage__Solar-Open-100B__LICENSE",
+      "bytes": 12549,
+      "sha256": "de031be88349e197e9ae20b7051679f55eb50ca53f7ffb2362343f8516b02d66"
+    },
+    {
+      "file": "xai-org__grok-2__LICENSE",
+      "bytes": 5467,
+      "sha256": "2576e2a47e576d18b3f86a9216083c2966bc19391207a80f9cd8faced69542d5"
+    },
+    {
+      "file": "zai-org__GLM-5.2__LICENSE",
+      "bytes": 1065,
+      "sha256": "f4a18c6ae40b0a8e7d2b7667f52f6e1994e54a46430d2e172b73cb8c9b5eb0d7"
+    },
+    {
+      "file": "zai-org__GLM-5.3-Flash__LICENSE",
+      "bytes": 1070,
+      "sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1"
+    },
+    {
+      "file": "zai-org__GLM-5.3__LICENSE",
+      "bytes": 4263,
+      "sha256": "96e1622099fc9d6b70c9760f007d99e66d7497eec636b63c60fe208401e9170c"
+    }
+  ],
+  "metadata": [
+    {
+      "file": "MiniMaxAI__MiniMax-M3__metadata.json",
+      "bytes": 301,
+      "sha256": "c98c57bebf3fe4595a770b580b995fe0743b3c6edd7b27f0eaf40a0074566013"
+    },
+    {
+      "file": "Qwen__Qwen3.8-2.4T-A95B__metadata.json",
+      "bytes": 283,
+      "sha256": "49911eba9c875d435e5cbe34a6407ef77bdebe71883698bcd6db9f63d75209b2"
+    },
+    {
+      "file": "ai21labs__AI21-Jamba-Large-1.7__metadata.json",
+      "bytes": 289,
+      "sha256": "5a31219722ce163a56ba092b2fa0dc4331b2dd1b9e72aa3f7e9c2eea96dae19d"
+    },
+    {
+      "file": "inclusionAI__Ling-2.6-1T__metadata.json",
+      "bytes": 334,
+      "sha256": "949841439d26f772e8da414655f731bb37f4a0ef329a2b1bf2806d362126c1be"
+    },
+    {
+      "file": "meta-llama__Llama-4-Maverick-17B-128E-Instruct__metadata.json",
+      "bytes": 306,
+      "sha256": "8a6b9abde7db4b9cb4e543e4f407e34383ee4d9c0234cbdeef051504d3c57d74"
+    },
+    {
+      "file": "moonshotai__Kimi-K3__metadata.json",
+      "bytes": 326,
+      "sha256": "c3ddaf5a4baa0c6398ba711fc0fbd9342148e66fb5fd9aebc12a4b29f3409993"
+    },
+    {
+      "file": "tiiuae__falcon-180B__metadata.json",
+      "bytes": 277,
+      "sha256": "ea58c4daada9bdda263e67aed7823ae0cd9d31ca830d0cc3f756c411a67c12e8"
+    },
+    {
+      "file": "zai-org__GLM-5.2__metadata.json",
+      "bytes": 294,
+      "sha256": "9fdfd376bba10705692f6ec0da3baffed599ce20034a3efaff80e38bf6b64d3c"
+    },
+    {
+      "file": "zai-org__GLM-5.3__metadata.json",
+      "bytes": 323,
+      "sha256": "32bb578c6c5db55b15de7dedfebbb5e3af4e801374a409a587dcd2254a4b3f89"
+    },
+    {
+      "file": "zai-org__GLM-5__metadata.json",
+      "bytes": 292,
+      "sha256": "96dfa4c76e7c098f6380d6d9e7402802113be01114b5dae7398df717cae033bf"
+    }
+  ],
+  "report_source_urls": {
+    "01-全球旗舰模型对比报告.md": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview",
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.meta.com/llama/",
+      "https://api-docs.deepseek.com/",
+      "https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra",
+      "https://aws.amazon.com/nova/models/",
+      "https://cohere.com/blog/command-a-plus",
+      "https://deepmind.google/models/gemini/",
+      "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "https://developers.openai.com/api/docs/models/gpt-oss-120b",
+      "https://docs.x.ai/developers/models",
+      "https://docs.z.ai/guides/overview/pricing",
+      "https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/",
+      "https://github.com/stepfun-ai/Step-3.5-Flash",
+      "https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16",
+      "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
+      "https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/main/LICENSE",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE",
+      "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+      "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/blob/main/LICENSE",
+      "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+      "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+      "https://huggingface.co/api/models/zai-org/GLM-5.3",
+      "https://huggingface.co/baidu/ERNIE-4.5-VL-424B-A47B",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "https://huggingface.co/inclusionAI/Ling-2.6-1T",
+      "https://huggingface.co/inclusionAI/Ling-2.6-1T-base",
+      "https://huggingface.co/inclusionAI/Ring-2.6-1T",
+      "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512",
+      "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512",
+      "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+      "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE",
+      "https://huggingface.co/moonshotai/Kimi-K3",
+      "https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE",
+      "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+      "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "https://huggingface.co/openpangu/openPangu-Ultra-MoE-718B-model",
+      "https://huggingface.co/stepfun-ai/Step-3.5-Flash",
+      "https://huggingface.co/tencent/Hy3",
+      "https://huggingface.co/xai-org/grok-1",
+      "https://huggingface.co/zai-org/GLM-5.3",
+      "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/LICENSE",
+      "https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE",
+      "https://opensource.org/ai/open-source-ai-definition",
+      "https://platform.claude.com/docs/en/models/overview",
+      "https://platform.kimi.com/",
+      "https://platform.minimax.io/docs/api-reference/api-overview",
+      "https://seed.bytedance.com/zh/blog/seed2-1-officially-released-advancing-ai-productivity",
+      "https://www.alibabacloud.com/help/en/model-studio/",
+      "https://www.alibabacloud.com/help/en/model-studio/web-search",
+      "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/",
+      "https://www.upstage.ai/blog/en/solar-pro-3-0323"
+    ],
+    "02-千亿参数模型报告.md": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://ai.meta.com/llama/",
+      "https://arxiv.org/abs/2005.14165",
+      "https://arxiv.org/abs/2101.03961",
+      "https://arxiv.org/abs/2112.11446",
+      "https://arxiv.org/abs/2201.11990",
+      "https://arxiv.org/abs/2204.02311",
+      "https://arxiv.org/abs/2205.01068",
+      "https://aws.amazon.com/nova/models/",
+      "https://developers.openai.com/api/docs/guides/latest-model",
+      "https://docs.x.ai/developers/models",
+      "https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/",
+      "https://ernie.baidu.com/blog/posts/ernie5.0/",
+      "https://github.com/stepfun-ai/Step-3.5-Flash",
+      "https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16",
+      "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
+      "https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M1-80k",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M2",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/LICENSE",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE",
+      "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
+      "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
+      "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+      "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/blob/main/LICENSE",
+      "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+      "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+      "https://huggingface.co/ai21labs/AI21-Jamba-Large-1.7",
+      "https://huggingface.co/api/models/zai-org/GLM-5.2",
+      "https://huggingface.co/api/models/zai-org/GLM-5.3",
+      "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-Base-PT",
+      "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-Paddle",
+      "https://huggingface.co/baidu/ERNIE-4.5-VL-424B-A47B",
+      "https://huggingface.co/bigscience/bloom",
+      "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V2",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "https://huggingface.co/inclusionAI/Ling-2.6-1T",
+      "https://huggingface.co/inclusionAI/Ling-2.6-1T-base",
+      "https://huggingface.co/inclusionAI/Ling-2.6-flash",
+      "https://huggingface.co/inclusionAI/Ring-2.6-1T",
+      "https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct",
+      "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512",
+      "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512/blob/main/LICENSE",
+      "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512",
+      "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+      "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE",
+      "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "https://huggingface.co/moonshotai/Kimi-K2.5/blob/main/LICENSE",
+      "https://huggingface.co/moonshotai/Kimi-K3",
+      "https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE",
+      "https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+      "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+      "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "https://huggingface.co/nvidia/Nemotron-4-340B-Instruct",
+      "https://huggingface.co/openai/gpt-oss-120b",
+      "https://huggingface.co/openpangu/openPangu-Ultra-MoE-718B-model",
+      "https://huggingface.co/stepfun-ai/step3",
+      "https://huggingface.co/tencent/Hunyuan-Large",
+      "https://huggingface.co/tencent/Hy3",
+      "https://huggingface.co/tiiuae/falcon-180B",
+      "https://huggingface.co/upstage/Solar-Open-100B",
+      "https://huggingface.co/upstage/Solar-Open-100B/blob/main/LICENSE",
+      "https://huggingface.co/xai-org/grok-1",
+      "https://huggingface.co/xai-org/grok-2",
+      "https://huggingface.co/zai-org/GLM-4.5-Air",
+      "https://huggingface.co/zai-org/GLM-5",
+      "https://huggingface.co/zai-org/GLM-5.2",
+      "https://huggingface.co/zai-org/GLM-5.3",
+      "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE",
+      "https://openmdw.ai/license/1-1/",
+      "https://opensource.org/ai/open-source-ai-definition",
+      "https://platform.claude.com/docs/en/models/overview",
+      "https://seed.bytedance.com/en/seed2_1",
+      "https://www.upstage.ai/blog/en/solar-pro-3-0323"
+    ]
+  }
+}

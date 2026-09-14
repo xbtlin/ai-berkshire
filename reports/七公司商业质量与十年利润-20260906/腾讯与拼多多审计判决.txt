@@ -1,0 +1,38 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：/Users/linxuan/ai-berkshire/reports/七公司商业质量与十年利润-20260906/腾讯与拼多多底稿.md
+======================================================================
+
+  [92m✅ 通过[0m [ 2] 拼多多 · 2036悲观／基准／乐观年度利润               报告:       500.00
+                                                    financial_rigor output rounded as stated: 500.00 (偏差 0.00%)  |  40 digit Decimal independent recalculation rounded as stated: 500.00 (偏差 0.00%)
+  [92m✅ 通过[0m [ 8] 2026上半年收入 · 拼多多                      报告:      2185.87
+                                                    https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial/: 2185.87 (偏差 0.00%)  |  https://www.marketscreener.com/news/pdd-holdings-inc-reports-earnings-results-for-the-second-quarter-and-six-months-ended-june-30-2026-ce7858dbda8bf527: 2185.87 (偏差 0.00%)
+  [92m✅ 通过[0m [ 9] 2026上半年经营利润 · 腾讯                     报告:      1346.51
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0812/2026081200296.pdf: 1346.51 (偏差 0.00%)  |  https://finance.eastmoney.com/a/202608123839209916.html (Caizhong News original): 1346.51 (偏差 0.00%)
+  [92m✅ 通过[0m [16] VAS收入年增速 / 2036经济净利率 · 乐观            报告:         8.00 %
+                                                    Scenario input in 腾讯与拼多多计算.py: 8.00 (偏差 0.00%)  |  Independent inspection of growth factor in 腾讯与拼多多Decimal复算.json: 8.00 (偏差 0.00%)
+  [92m✅ 通过[0m [15] VAS收入年增速 / 2036经济净利率 · 基准            报告:         6.00 %
+                                                    Scenario input in 腾讯与拼多多计算.py: 6.00 (偏差 0.00%)  |  Independent inspection of growth factor in 腾讯与拼多多Decimal复算.json: 6.00 (偏差 0.00%)
+  [92m✅ 通过[0m [18] 广告收入年增速 / 2036经济净利率 · 基准             报告:         9.00 %
+                                                    Scenario input in 腾讯与拼多多计算.py: 9.00 (偏差 0.00%)  |  Independent inspection of growth factor in 腾讯与拼多多Decimal复算.json: 9.00 (偏差 0.00%)
+  [92m✅ 通过[0m [41] 交易服务收入年增速 / 2036经济净利率 · 乐观           报告:        12.00 %
+                                                    Scenario input in 腾讯与拼多多计算.py: 12.00 (偏差 0.00%)  |  Independent inspection of growth factor in 腾讯与拼多多Decimal复算.json: 12.00 (偏差 0.00%)
+  [92m✅ 通过[0m [48] 2036经济归母净利润计算值 · 悲观                  报告:       532.40
+                                                    financial_rigor output rounded as stated: 532.40 (偏差 0.00%)  |  40 digit Decimal independent recalculation rounded as stated: 532.40 (偏差 0.00%)
+  [92m✅ 通过[0m [53] 主表取整数 · 乐观                           报告:      3000.00
+                                                    financial_rigor output rounded as stated: 3000.00 (偏差 0.00%)  |  40 digit Decimal independent recalculation rounded as stated: 3000.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 9  |  通过: [92m9[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 9,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 9,
+  "fail_items": [],
+  "warn_items": []
+}

@@ -1,0 +1,17 @@
+{
+  "repo": "Qwen/Qwen3.8-2.4T-A95B",
+  "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "    - Number of Parameters: 2.4T in total and 95B activated",
+    "- Context Length: 262,144 natively and extensible up to 1,010,000 tokens.",
+    "<p style=\"margin-top:12px;font-size:10px;line-height:1.4;opacity:0.7\">1. Fable5 results may involve fallbacks.<br>2. Terminal Bench 2.1: Evaluated with Claude Code (avg@10), using a 5-hour timeout and max_tokens=131,072. For all other models, we report the best published score across harnesses: Claude Opus 4.8 and Claude Fable 5 with Terminus 2 from Artificial Analysis (https://artificialanalysis.ai/evaluations/terminalbench-v2-1); GPT-5.6 Sol with Codex (https://openai.com/index/previewing-gpt-5-6-sol/).<br>3. SWE-bench Pro: Evaluated with the Claude Code harness, temp=1.0, top_p=0.95, and a 256K context window. Problematic tasks corrected and all baselines evaluated on the refined benchmar",
+    "> We recommend using the following set of sampling parameters for generation:",
+    "> Please note that the support for sampling parameters varies according to inference frameworks.",
+    "1. **Sampling Parameters**:  ",
+    "   - We suggest using the following set of sampling parameters:  "
+  ],
+  "LICENSE_status": 200,
+  "license_head": "Qwen3.8-Max License\n\nCopyright (c) 2026 Qwen\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software, including the model weights, parameters, configuration files, inference code and associated documentation files (collectively, the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, sell, deploy, host"
+}

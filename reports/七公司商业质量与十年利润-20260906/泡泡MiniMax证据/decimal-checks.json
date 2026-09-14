@@ -1,0 +1,275 @@
+{
+  "pop_2025_revenue_CNY100m": {
+    "expression": "37120052 / 100000",
+    "decimal_result": "371.20052",
+    "tool_result": "371.20052",
+    "absolute_delta": "0.00000",
+    "within_tolerance": true
+  },
+  "pop_2025_parent_profit_CNY100m": {
+    "expression": "12775689 / 100000",
+    "decimal_result": "127.75689",
+    "tool_result": "127.75689",
+    "absolute_delta": "0.00000",
+    "within_tolerance": true
+  },
+  "pop_H1_revenue_CNY100m": {
+    "expression": "17172921 / 100000",
+    "decimal_result": "171.72921",
+    "tool_result": "171.72921",
+    "absolute_delta": "0.00000",
+    "within_tolerance": true
+  },
+  "pop_H1_parent_profit_CNY100m": {
+    "expression": "5038384 / 100000",
+    "decimal_result": "50.38384",
+    "tool_result": "50.38384",
+    "absolute_delta": "0.00000",
+    "within_tolerance": true
+  },
+  "pop_2025_parent_margin": {
+    "expression": "12775689 / 37120052 * 100",
+    "decimal_result": "34.41721741122560927446976636778418306095",
+    "tool_result": "34.41721741122561",
+    "absolute_delta": "7.2553023363221581693905E-16",
+    "within_tolerance": true
+  },
+  "pop_H1_parent_margin": {
+    "expression": "5038384 / 17172921 * 100",
+    "decimal_result": "29.33912058408700534987612183157425577163",
+    "tool_result": "29.339120584087002",
+    "absolute_delta": "3.34987612183157425577163E-15",
+    "within_tolerance": true
+  },
+  "mini_2025_revenue_USD100m": {
+    "expression": "79038 / 100000",
+    "decimal_result": "0.79038",
+    "tool_result": "0.79038",
+    "absolute_delta": "0.00000",
+    "within_tolerance": true
+  },
+  "mini_2025_parent_profit_USD100m": {
+    "expression": "-1871617 / 100000",
+    "decimal_result": "-18.71617",
+    "tool_result": "-18.71617",
+    "absolute_delta": "0.00000",
+    "within_tolerance": true
+  },
+  "mini_H1_revenue_USD100m": {
+    "expression": "116573 / 100000",
+    "decimal_result": "1.16573",
+    "tool_result": "1.16573",
+    "absolute_delta": "0.00000",
+    "within_tolerance": true
+  },
+  "mini_H1_parent_profit_USD100m": {
+    "expression": "-357997 / 100000",
+    "decimal_result": "-3.57997",
+    "tool_result": "-3.57997",
+    "absolute_delta": "0.00000",
+    "within_tolerance": true
+  },
+  "mini_2025_adjusted_minus_SBC_USDm": {
+    "expression": "-250.856 - 24.031",
+    "decimal_result": "-274.887",
+    "tool_result": "-274.887",
+    "absolute_delta": "0.000",
+    "within_tolerance": true
+  },
+  "mini_H1_adjusted_minus_SBC_USDm": {
+    "expression": "-293.031 - 28.208",
+    "decimal_result": "-321.239",
+    "tool_result": "-321.23900000000003",
+    "absolute_delta": "3E-14",
+    "within_tolerance": true
+  },
+  "mini_2025_operating_proxy_USDm": {
+    "expression": "-250.856 - 24.031 - 40.369",
+    "decimal_result": "-315.256",
+    "tool_result": "-315.256",
+    "absolute_delta": "0.000",
+    "within_tolerance": true
+  },
+  "mini_H1_operating_proxy_USDm": {
+    "expression": "-293.031 - 28.208 - 8.039",
+    "decimal_result": "-329.278",
+    "tool_result": "-329.278",
+    "absolute_delta": "0.000",
+    "within_tolerance": true
+  },
+  "mini_2025_H2_gross_margin": {
+    "expression": "(20.079-3.685)/(79.038-30.429)*100",
+    "decimal_result": "33.72626468349482606101750704602028430949",
+    "tool_result": "33.72626468349483",
+    "absolute_delta": "3.93898249295397971569051E-15",
+    "within_tolerance": true
+  },
+  "mini_H1_gross_margin": {
+    "expression": "20.813/116.573*100",
+    "decimal_result": "17.85404853611042008012146895078620263697",
+    "tool_result": "17.85404853611042",
+    "absolute_delta": "8.012146895078620263697E-17",
+    "within_tolerance": true
+  },
+  "mini_H1_enterprise_mix": {
+    "expression": "73.929/116.573*100",
+    "decimal_result": "63.41863038610999116433479450644660427372",
+    "tool_result": "63.418630386109996",
+    "absolute_delta": "4.83566520549355339572628E-15",
+    "within_tolerance": true
+  },
+  "mini_H1_RD_over_revenue": {
+    "expression": "296.870/116.573",
+    "decimal_result": "2.546644591800845821931322004237687972344",
+    "tool_result": "2.546644591800846",
+    "absolute_delta": "1.78068677995762312027656E-16",
+    "within_tolerance": true
+  },
+  "pop_bear_revenue_CNY100m": {
+    "expression": "(20000000*600+10000000*800)/100000000+10",
+    "decimal_result": "210",
+    "tool_result": "210.0",
+    "absolute_delta": "0.0",
+    "within_tolerance": true
+  },
+  "pop_base_revenue_CNY100m": {
+    "expression": "(35000000*1000+30000000*1300)/100000000+40",
+    "decimal_result": "780",
+    "tool_result": "780.0",
+    "absolute_delta": "0.0",
+    "within_tolerance": true
+  },
+  "pop_bull_revenue_CNY100m": {
+    "expression": "(50000000*1300+60000000*1600)/100000000+90",
+    "decimal_result": "1700",
+    "tool_result": "1700.0",
+    "absolute_delta": "0.0",
+    "within_tolerance": true
+  },
+  "pop_bear_profit_CNY100m": {
+    "expression": "210*(0.55-0.35)*(1-0.25)*(1-0.02)",
+    "decimal_result": "30.870000",
+    "tool_result": "30.87000000000001",
+    "absolute_delta": "1E-14",
+    "within_tolerance": true
+  },
+  "pop_base_profit_CNY100m": {
+    "expression": "780*(0.67-0.31)*(1-0.25)*(1-0.02)",
+    "decimal_result": "206.388000",
+    "tool_result": "206.388",
+    "absolute_delta": "0.000000",
+    "within_tolerance": true
+  },
+  "pop_bull_profit_CNY100m": {
+    "expression": "1700*(0.70-0.29)*(1-0.25)*(1-0.02)",
+    "decimal_result": "512.295000",
+    "tool_result": "512.295",
+    "absolute_delta": "0.000000",
+    "within_tolerance": true
+  },
+  "pop_failure_profit_CNY100m": {
+    "expression": "100*(0.40-0.50)*0.98",
+    "decimal_result": "-9.800",
+    "tool_result": "-9.799999999999999",
+    "absolute_delta": "1E-15",
+    "within_tolerance": true
+  },
+  "mini_bear_revenue_USD100m": {
+    "expression": "(10000*60000+10000000*40)/100000000",
+    "decimal_result": "10",
+    "tool_result": "10.0",
+    "absolute_delta": "0.0",
+    "within_tolerance": true
+  },
+  "mini_base_revenue_USD100m": {
+    "expression": "(100000*70000+30000000*100)/100000000",
+    "decimal_result": "100",
+    "tool_result": "100.0",
+    "absolute_delta": "0.0",
+    "within_tolerance": true
+  },
+  "mini_bull_revenue_USD100m": {
+    "expression": "(200000*100000+50000000*200)/100000000",
+    "decimal_result": "300",
+    "tool_result": "300.0",
+    "absolute_delta": "0.0",
+    "within_tolerance": true
+  },
+  "mini_bear_pretax_USD100m": {
+    "expression": "10*0.25-6-2",
+    "decimal_result": "-5.50",
+    "tool_result": "-5.5",
+    "absolute_delta": "0.00",
+    "within_tolerance": true
+  },
+  "mini_base_pretax_USD100m": {
+    "expression": "100*0.50-25-10",
+    "decimal_result": "15.0",
+    "tool_result": "15.0",
+    "absolute_delta": "0.0",
+    "within_tolerance": true
+  },
+  "mini_bull_pretax_USD100m": {
+    "expression": "300*0.60-70-30",
+    "decimal_result": "80.0",
+    "tool_result": "80.0",
+    "absolute_delta": "0.0",
+    "within_tolerance": true
+  },
+  "mini_bear_profit_USD100m": {
+    "expression": "(10*0.25-6-2)*1",
+    "decimal_result": "-5.50",
+    "tool_result": "-5.5",
+    "absolute_delta": "0.00",
+    "within_tolerance": true
+  },
+  "mini_base_profit_USD100m": {
+    "expression": "(100*0.50-25-10)*(1-0.25)",
+    "decimal_result": "11.250",
+    "tool_result": "11.25",
+    "absolute_delta": "0.000",
+    "within_tolerance": true
+  },
+  "mini_bull_profit_USD100m": {
+    "expression": "(300*0.60-70-30)*(1-0.25)",
+    "decimal_result": "60.000",
+    "tool_result": "60.0",
+    "absolute_delta": "0.000",
+    "within_tolerance": true
+  },
+  "mini_bear_profit_CNY100m": {
+    "expression": "(10*0.25-6-2)*7",
+    "decimal_result": "-38.50",
+    "tool_result": "-38.5",
+    "absolute_delta": "0.00",
+    "within_tolerance": true
+  },
+  "mini_base_profit_CNY100m": {
+    "expression": "(100*0.50-25-10)*(1-0.25)*7",
+    "decimal_result": "78.750",
+    "tool_result": "78.75",
+    "absolute_delta": "0.000",
+    "within_tolerance": true
+  },
+  "mini_bull_profit_CNY100m": {
+    "expression": "(300*0.60-70-30)*(1-0.25)*7",
+    "decimal_result": "420.000",
+    "tool_result": "420.0",
+    "absolute_delta": "0.000",
+    "within_tolerance": true
+  },
+  "mini_base_at_H1_margin_profit_CNY100m": {
+    "expression": "(100*(20.813/116.573)-25-10)*7",
+    "decimal_result": "-120.0216602472270594391497173444965815412",
+    "tool_result": "-120.02166024722706",
+    "absolute_delta": "5.608502826555034184588E-16",
+    "within_tolerance": true
+  },
+  "mini_base_breakeven_GM_percent": {
+    "expression": "(25+10)/100*100",
+    "decimal_result": "35.00",
+    "tool_result": "35.0",
+    "absolute_delta": "0.00",
+    "within_tolerance": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tiiuae/falcon-180B",
+  "sha": "d2ea5531862d4fe907280234990e6380d2befd97",
+  "lastModified": "2023-09-06T13:04:38.000Z",
+  "gated": "auto",
+  "safetensors": {
+    "parameters": {
+      "BF16": 179522565120
+    },
+    "total": 179522565120
+  },
+  "weights_files": 81
+}

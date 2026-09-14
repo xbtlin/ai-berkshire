@@ -1,0 +1,85 @@
+{
+  "腾讯": {
+    "price": "442.8",
+    "fx_rmb_per_quote": "0.86458",
+    "currency": "HKD",
+    "issued_quote_units": "9103153877",
+    "issued_as_of": "2026-09-04",
+    "model_diluted_quote_units": "9200000000",
+    "profit_2026_yi": "2309.5",
+    "scenarios": {
+      "bear": {
+        "profit_expression": "3900*0.25+1650*1.02**5*0.25+2400*0.12+50-100",
+        "pe": "12",
+        "net_share_change": "0",
+        "gross_buyback_rate": "0.01",
+        "share_issuance_rate": "0.01",
+        "dividend_start": "4",
+        "dividend_growth": "0",
+        "fcf_conversion": "0.55"
+      },
+      "base": {
+        "profit_expression": "3900*1.06**5*0.32+1650*1.09**5*0.35+2400*1.06**5*0.17+225-75",
+        "pe": "18",
+        "net_share_change": "-0.01",
+        "gross_buyback_rate": "0.02",
+        "share_issuance_rate": "0.01",
+        "dividend_start": "5.3",
+        "dividend_growth": "0.05",
+        "fcf_conversion": "0.75"
+      },
+      "bull": {
+        "profit_expression": "3900*1.08**5*0.34+1650*1.12**5*0.375+2400*1.09**5*0.19+275-75",
+        "pe": "22",
+        "net_share_change": "-0.015",
+        "gross_buyback_rate": "0.025",
+        "share_issuance_rate": "0.01",
+        "dividend_start": "5.3",
+        "dividend_growth": "0.10",
+        "fcf_conversion": "0.85"
+      }
+    }
+  },
+  "拼多多": {
+    "price": "82.21",
+    "fx_rmb_per_quote": "6.7787",
+    "currency": "USD",
+    "issued_quote_units": "1423396462",
+    "issued_as_of": "2026-03-18 (also 2025-12-31); not an exact 2026-09-04 share count",
+    "ordinary_per_ads": "4",
+    "model_diluted_quote_units": "1480000000",
+    "profit_2026_yi": "850",
+    "scenarios": {
+      "bear": {
+        "profit_expression": "2200*0.25+2350*0.98**5*(-0.03)+40",
+        "pe": "8",
+        "net_share_change": "0.015",
+        "gross_buyback_rate": "0",
+        "share_issuance_rate": "0.015",
+        "dividend_start": "0",
+        "dividend_growth": "0",
+        "fcf_conversion": "0.60"
+      },
+      "base": {
+        "profit_expression": "2200*1.05**5*0.35+2350*1.08**5*0.03+80",
+        "pe": "12",
+        "net_share_change": "0.01",
+        "gross_buyback_rate": "0",
+        "share_issuance_rate": "0.01",
+        "dividend_start": "0",
+        "dividend_growth": "0",
+        "fcf_conversion": "0.80"
+      },
+      "bull": {
+        "profit_expression": "2200*1.08**5*0.375+2350*1.12**5*0.065+100",
+        "pe": "16",
+        "net_share_change": "0.005",
+        "gross_buyback_rate": "0",
+        "share_issuance_rate": "0.005",
+        "dividend_start": "0",
+        "dividend_growth": "0",
+        "fcf_conversion": "0.90"
+      }
+    }
+  }
+}

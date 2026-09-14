@@ -1,0 +1,16 @@
+{
+  "repo": "upstage/Solar-Open-100B",
+  "url": "https://huggingface.co/upstage/Solar-Open-100B",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "* **MoE Architecture (102B / 12B):** Built on a Mixture-of-Experts architecture with **102B total / 12B active parameters**. This design delivers the knowledge depth of a massive model with the inference speed and cost-efficiency of a much smaller model.",
+    "    * **Total Parameters:** 102.6B",
+    "    * **Active Parameters:** 12B (per token)",
+    "* **Context Length:** 128k",
+    "* **License:** **Upstage Solar License** (See [LICENSE](#license))",
+    "We recommend using the following generation parameters:"
+  ],
+  "LICENSE_status": 200,
+  "license_head": "# Upstage Solar License\n\n# Preamble\n\nThe 'Upstage Solar License' (hereinafter referred to as \"this License\") was established by Upstage Co., Ltd., incorporated under the laws of the Republic of Korea, to encourage the development of open-source software using Solar AI models, and is not affiliated with the Apache Software Foundation.\n\nThis License basically adopts all provisions of the Apache License, Version 2.0 (hereinafter referred to as \"Apac"
+}

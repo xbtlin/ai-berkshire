@@ -1,0 +1,1 @@
+固定 seed 42。已逐项区分 external-fact、calculation-only、assumption-disclosure-only。工具 PASS 表示选中数字与实取事实或计算/假设声明一致，不表示预测具有客观发生概率；假设不伪装成外部 fetched。历史现金数据商小幅分类差异保留原值并披露。

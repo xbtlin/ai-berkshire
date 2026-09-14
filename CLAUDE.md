@@ -97,10 +97,16 @@ reports/{公司名}/
 ```bash
 # 推送报告到GitHub
 cd ~/ai-berkshire
-git add reports/xxx.md
+python3 tools/reports_index.py          # 先刷新研究索引（必做）
+git add reports/xxx.md reports/README.md reports/index.json README.md
 git commit -m "添加xxx报告"
 git pull --rebase origin main
 git push origin main
+```
+
+```bash
+# 只检查索引是否过期，不写盘（CI 也跑这条）
+python3 tools/reports_index.py --check
 ```
 
 ## 注意事项
@@ -110,3 +116,8 @@ git push origin main
 - PE/ROE等指标用 tools/financial_rigor.py 精确计算
 - 台股数据用 tools/twstock_data.py（FinMind）获取，并按 skills/financial-data.md 台股章节交叉验证
 - 报告写完后主动询问是否推送到GitHub
+- **推送前必须跑 `python3 tools/reports_index.py` 刷新索引**，否则 CI 的索引校验会失败
+- 新报告文件名带 `-YYYYMMDD` 后缀、正文首行写 `# 标题`，索引即可自动识别；
+  需要覆盖时在文件头加 YAML front-matter（`title` / `date` / `type`），
+  规范见 `reports/_index/README.md`
+- 新建的**专题目录或筛选池目录**要登记进 `reports/_index/config.json`，否则会被当成公司

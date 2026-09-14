@@ -1,0 +1,148 @@
+{
+  "cutoff": "2026-09-06",
+  "forecast_year": 2036,
+  "unit": "CNY 100 million",
+  "kuaishou": {
+    "bear": {
+      "dau_million": 300,
+      "annual_ad_arpu_cny": 180,
+      "live_revenue_yi": 200,
+      "gmv_yi": 11000,
+      "commission_rate": "0.012",
+      "core_net_margin": "0.05",
+      "kling_revenue_yi": 60,
+      "kling_net_margin": "-0.10",
+      "kling_owner_share": "0.60",
+      "other_net_loss_yi": 20
+    },
+    "base": {
+      "dau_million": 400,
+      "annual_ad_arpu_cny": 280,
+      "live_revenue_yi": 280,
+      "gmv_yi": 23000,
+      "commission_rate": "0.014",
+      "core_net_margin": "0.12",
+      "kling_revenue_yi": 300,
+      "kling_net_margin": "0.20",
+      "kling_owner_share": "0.50",
+      "other_net_loss_yi": 10
+    },
+    "bull": {
+      "dau_million": 450,
+      "annual_ad_arpu_cny": 350,
+      "live_revenue_yi": 350,
+      "gmv_yi": 35000,
+      "commission_rate": "0.016",
+      "core_net_margin": "0.15",
+      "kling_revenue_yi": 800,
+      "kling_net_margin": "0.25",
+      "kling_owner_share": "0.40",
+      "other_net_loss_yi": 0
+    }
+  },
+  "meituan": {
+    "bear": {
+      "core_revenue_yi": 3500,
+      "core_operating_margin": "0.06",
+      "new_business_operating_profit_yi": -80,
+      "hq_sbc_cost_yi": 180,
+      "net_funding_cost_yi": 20,
+      "effective_tax": "0"
+    },
+    "base": {
+      "core_revenue_yi": 5000,
+      "core_operating_margin": "0.13",
+      "new_business_operating_profit_yi": 30,
+      "hq_sbc_cost_yi": 180,
+      "net_funding_cost_yi": 20,
+      "effective_tax": "0.20"
+    },
+    "bull": {
+      "core_revenue_yi": 7000,
+      "core_operating_margin": "0.17",
+      "new_business_operating_profit_yi": 150,
+      "hq_sbc_cost_yi": 220,
+      "net_funding_cost_yi": 30,
+      "effective_tax": "0.20"
+    }
+  },
+  "cross_checks": [
+    [
+      "快手2025收入",
+      {
+        "HKEX": 1427.76,
+        "StockAnalysis_SandP": 1427.76
+      }
+    ],
+    [
+      "快手2025归母利润",
+      {
+        "HKEX": 186.17,
+        "StockAnalysis_SandP": 186.17
+      }
+    ],
+    [
+      "快手2026H1收入",
+      {
+        "HKEX": 692.51,
+        "ITHome_editorial_reproduction": 692.51
+      }
+    ],
+    [
+      "快手2026H1归母利润",
+      {
+        "HKEX": 60.49,
+        "ITHome_editorial_reproduction": 60.49
+      }
+    ],
+    [
+      "美团2025收入",
+      {
+        "HKEX": 3648.54746,
+        "StockAnalysis_SandP": 3648.55
+      }
+    ],
+    [
+      "美团2025归母利润",
+      {
+        "HKEX": -233.55015,
+        "StockAnalysis_SandP": -233.55
+      }
+    ],
+    [
+      "美团2026H1收入",
+      {
+        "HKEX": 1956.8195,
+        "ChinaSecuritiesJournal_via_Eastmoney": 1956.82
+      }
+    ],
+    [
+      "美团2026H1集团利润_不是归母",
+      {
+        "HKEX": -46.72036,
+        "ChinaSecuritiesJournal_via_Eastmoney": -46.72
+      }
+    ],
+    [
+      "美团2026H1经调整集团利润",
+      {
+        "HKEX": -24.4427,
+        "Yiou_via_Sina_editorial_reproduction": -24.44
+      }
+    ],
+    [
+      "快手2025经营现金流",
+      {
+        "HKEX": 267.16,
+        "Stockopedia_Refinitiv": 267.16
+      }
+    ],
+    [
+      "快手2025资本支出",
+      {
+        "HKEX": 149.42,
+        "Stockopedia_Refinitiv": 149.42
+      }
+    ]
+  ]
+}

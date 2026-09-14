@@ -1,0 +1,41 @@
+[
+  {
+    "id": 4,
+    "label": "8 月末已发行总股数 · MiniMax",
+    "reported_value": 349235308.0,
+    "unit": "",
+    "raw_text": "| 8 月末已发行总股数 | 1,331,779,203 | 349,235,308 |",
+    "line_number": 12,
+    "fetched_value": 349235308,
+    "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0903/2026090301230.pdf",
+    "fetched_value2": 349240000,
+    "fetched_source2": "https://stockanalysis.com/quote/hkg/0100/statistics/",
+    "classification": "historical_fact_or_historical_arithmetic"
+  },
+  {
+    "id": 5,
+    "label": "股价乘法定股数，亿港元 · 泡泡玛特",
+    "reported_value": 2050.94,
+    "unit": "",
+    "raw_text": "| 股价乘法定股数，亿港元 | 2,050.94 | 1,262.14 |",
+    "line_number": 13,
+    "fetched_value": 2050.93997262,
+    "fetched_source": "HKEX legal shares times live 154 HKD quote",
+    "fetched_value2": 2050.94,
+    "fetched_source2": "https://www.lixinger.com/equity/company/detail/hk/09992/9992/announcement?type=mr",
+    "classification": "historical_fact_or_historical_arithmetic"
+  },
+  {
+    "id": 12,
+    "label": "经营估值起点 · MiniMax",
+    "reported_value": 1.65182,
+    "unit": "亿美元",
+    "raw_text": "| 经营估值起点 | 正常化利润 112 亿元为假设，对应 15.83 倍 PE | TTM 已确认收入 1.65182 亿美元，对应股权 PS 97.45 倍 |",
+    "line_number": 16,
+    "fetched_value": 1.65182,
+    "fetched_source": "HKEX 2025 annual and H1 2026: TTM arithmetic",
+    "fetched_value2": 1.65,
+    "fetched_source2": "https://stockanalysis.com/quote/hkg/0100/financials/",
+    "classification": "historical_fact_or_historical_arithmetic"
+  }
+]

@@ -1,0 +1,42 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：/Users/linxuan/ai-berkshire/reports/泡泡玛特/泡泡玛特研究报告-20260906.md
+======================================================================
+
+  [92m✅ 通过[0m [ 4] 收入 · 2024                            报告:       130.38 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0421/2026042100395_c.pdf: 130.38 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/9992/financials/: 130.38 (偏差 0.00%)
+  [92m✅ 通过[0m [ 5] 收入 · 2025                            报告:       371.20 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0421/2026042100395_c.pdf: 371.20 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/9992/financials/: 371.20 (偏差 0.00%)
+  [92m✅ 通过[0m [12] 归母净利润 · 2026上半年                      报告:        50.38 
+                                                    https://www.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000354_c.pdf: 50.38 (偏差 0.01%)  |  https://www.finet.hk/newscenter/news_content/6a86c2d02308290c11eadd7c: 50.38 (偏差 0.00%)
+  [92m✅ 通过[0m [15] 毛利率 · 2023                           报告:        61.30 %
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0421/2026042100395_c.pdf: 61.30 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/9992/financials/: 61.32 (偏差 0.03%)
+  [92m✅ 通过[0m [18] 毛利率 · 2026上半年                        报告:        69.70 %
+                                                    https://www.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000354_c.pdf: 69.70 (偏差 0.00%)  |  https://www.finet.hk/newscenter/news_content/6a86c2d02308290c11eadd7c: 69.70 (偏差 0.00%)
+  [92m✅ 通过[0m [14] 毛利率 · 2022                           报告:        57.50 %
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0421/2026042100395_c.pdf: 57.50 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/9992/financials/: 57.49 (偏差 0.02%)
+  [92m✅ 通过[0m [29] 经营现金流 · 2025                         报告:       108.65 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0421/2026042100395_c.pdf: 108.65 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/9992/financials/cash-flow-statement/: 108.65 (偏差 0.00%)
+  [92m✅ 通过[0m [36] 现金及等价物 · 2026上半年                     报告:       124.42 
+                                                    https://www.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000354_c.pdf: 124.42 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/9992/financials/balance-sheet/: 124.42 (偏差 0.00%)
+  [92m✅ 通过[0m [32] 现金及等价物 · 2022                        报告:         6.85 
+                                                    https://stockanalysis.com/quote/hkg/9992/financials/balance-sheet/: 6.85 (偏差 0.05%)  |  https://pdf.dfcfw.com/pdf/H3_AP202401051616654746_1.pdf [国信证券2024-01-05:2022A现金685百万元；仅采用历史现金字段]: 6.85 (偏差 0.00%)
+  [92m✅ 通过[0m [82] 三年现金股息合计 · 乐观                        报告:        10.62 
+                                                    financial_rigor calc 模型结果.json:乐观三年分红: 10.62 (偏差 0.02%)  |  独立Decimal实现，见审计脚本；不是外部未来事实源: 10.62 (偏差 0.02%)
+  [92m✅ 通过[0m [87] 从154元出发三年含息年化 · 基准                   报告:         9.93 %
+                                                    financial_rigor calc 模型结果.json:基准含分红年化: 9.93 (偏差 0.01%)  |  独立Decimal实现，见审计脚本；不是外部未来事实源: 9.93 (偏差 0.01%)
+
+----------------------------------------------------------------------
+  抽检总数: 11  |  通过: [92m11[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 11,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 11,
+  "fail_items": [],
+  "warn_items": []
+}

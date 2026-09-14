@@ -1,0 +1,22 @@
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=stealth, every node/.style={font=\small},
+box/.style={draw=black!65, rounded corners=2pt, align=center, minimum height=1.4cm, text width=4.2cm},
+arr/.style={->,thick,draw=black!70}]
+\node[font=\small\bfseries] at (2.9,1.25) {任务执行闭环};
+\node[box,fill=black!4] (task) at (0,0) {任务执行\\模型、运行框架、记忆};
+\node[box,fill=black!4] (evidence) at (5.8,0) {经验记录\\结果与运行轨迹};
+\node[font=\small\bfseries] at (2.9,-1.35) {系统改进闭环};
+\node[box,fill=blue!5] (improver) at (5.8,-2.7) {改进算子\\提出、测试、选择};
+\node[box,fill=blue!5] (commit) at (0,-2.7) {提交的后继系统\\有版本记录的继承变化};
+\draw[arr] (task)--(evidence);
+\draw[arr] (evidence)--(improver);
+\draw[arr] (improver)--(commit);
+\draw[arr] (commit)--(task);
+\draw[arr,dashed] (commit.south) -- (0,-4.0) -- (5.8,-4.0) -- (improver.south);
+\node[align=center,text width=10cm,font=\footnotesize] at (2.9,-4.45) {递归：继承的变化影响下一轮改进者};
+\node[draw=black!50,dashed,align=center,text width=10cm,minimum height=0.85cm] at (2.9,-5.6) {外部审计：稳定约定、隔离反馈、完整预算};
+\end{tikzpicture}
+\caption{两个相连的闭环，以及递归主张所需的额外继承关系。外部审计是本文评估方案中的实验边界。本图为本文综合绘制，并非复制既有论文图。}
+\label{fig:loops}
+\end{figure}

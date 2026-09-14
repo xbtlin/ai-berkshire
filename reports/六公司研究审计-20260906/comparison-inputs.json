@@ -1,0 +1,205 @@
+{
+  "as_of": "2026-09-06",
+  "companies": [
+    {
+      "name": "腾讯",
+      "price": "442.8",
+      "currency": "HKD",
+      "report": "腾讯/腾讯研究报告-20260906.md",
+      "model_source": "reports/腾讯/审计-20260906/估值模型.json",
+      "dividend_timing": "Original model aggregates dividends at the terminal date; not a forecast of actual payout dates.",
+      "scenarios": {
+        "bull": {
+          "target_price": "893.740775868052",
+          "annual_dividends": [
+            "0",
+            "0",
+            "22"
+          ]
+        },
+        "base": {
+          "target_price": "655.6598579657175",
+          "annual_dividends": [
+            "0",
+            "0",
+            "18"
+          ]
+        },
+        "bear": {
+          "target_price": "270.1963959379121",
+          "annual_dividends": [
+            "0",
+            "0",
+            "12"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PDD",
+      "price": "82.21",
+      "currency": "USD",
+      "report": "拼多多/拼多多研究报告-20260906.md",
+      "model_source": "reports/拼多多/审计-20260906/估值模型.json",
+      "dividend_timing": "Original model aggregates dividends at the terminal date; not a forecast of actual payout dates.",
+      "scenarios": {
+        "bull": {
+          "target_price": "190.45169706860008",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "base": {
+          "target_price": "117.69552202267917",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "bear": {
+          "target_price": "49.4115311115621",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    {
+      "name": "快手",
+      "price": "33.66",
+      "currency": "HKD",
+      "report": "快手/快手研究报告-20260906.md",
+      "model_source": "reports/快手/审计-20260906/comparison_summary.json",
+      "scenarios": {
+        "bear": {
+          "target_price": "20.954480363259574",
+          "annual_dividends": [
+            "0.2",
+            "0.2",
+            "0.2"
+          ]
+        },
+        "base": {
+          "target_price": "63.0831412649775",
+          "annual_dividends": [
+            "0.5",
+            "0.5",
+            "0.5"
+          ]
+        },
+        "bull": {
+          "target_price": "106.93219833121552",
+          "annual_dividends": [
+            "0.8",
+            "0.8",
+            "0.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "美团",
+      "price": "81.75",
+      "currency": "HKD",
+      "report": "美团/美团研究报告-20260906.md",
+      "model_source": "reports/美团/审计-20260906/comparison_summary.json",
+      "scenarios": {
+        "bear": {
+          "target_price": "6.086466896469928",
+          "annual_dividends": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "base": {
+          "target_price": "90.23344043566097",
+          "annual_dividends": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "bull": {
+          "target_price": "191.56711563360568",
+          "annual_dividends": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        }
+      }
+    },
+    {
+      "name": "泡泡玛特",
+      "price": "154",
+      "currency": "HKD",
+      "report": "泡泡玛特/泡泡玛特研究报告-20260906.md",
+      "model_source": "reports/泡泡玛特/审计-20260906/comparison_summary.json",
+      "scenarios": {
+        "bear": {
+          "target_price": "59.73617163995417648315484629",
+          "annual_dividends": [
+            "2.066995558475923061700859734",
+            "1.756946224704534602445730774",
+            "1.493404290998854412078871158"
+          ]
+        },
+        "base": {
+          "target_price": "196.0522623216054205666871278",
+          "annual_dividends": [
+            "2.626300239004702243102268838",
+            "2.836404258125078422550450345",
+            "3.063316598775084696354486373"
+          ]
+        },
+        "bull": {
+          "target_price": "369.7830736518620758287994523",
+          "annual_dividends": [
+            "2.918111376671891381224743154",
+            "3.501733652006269657469691784",
+            "4.202080382407523588963630141"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MiniMax",
+      "price": "361.4",
+      "currency": "HKD",
+      "report": "MINIMAX/MiniMax研究报告-20260906.md",
+      "model_source": "reports/MINIMAX/审计-20260906/comparison_summary.json",
+      "scenarios": {
+        "bear": {
+          "target_price": "17.10644579922148221206723601",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "base": {
+          "target_price": "313.6181729857271738878993269",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "bull": {
+          "target_price": "1176.068148696476902079622476",
+          "annual_dividends": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    }
+  ]
+}

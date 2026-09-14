@@ -1,0 +1,58 @@
+======================================================================
+报告数据抽检清单
+文件：/Users/linxuan/ai-berkshire/reports/快手/快手与可灵-差异化与护城河研究-20260906.md
+总提取数据点：3  |  抽样比例：15%  |  抽检数量：3
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  3      3  数据截止                                      2026.00
+  1     13  快手应用平均日活跃用户 · 2026年第二季度数值与口径                 4.12  亿
+  2     14  可灵营业收入 · 2026年第二季度数值与口径                      8.50  亿元
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 3,
+    "label": "数据截止",
+    "reported_value": 2026.0,
+    "unit": "",
+    "line_number": 3,
+    "raw_text": "数据截止：2026年9月6日。本文聚焦竞争优势，不作股价估值或买卖建议。信息丰富度：快手主站为A，可灵产品为A、独立经济性为B。公开资料对产品功能的支持强于对长期超额利润的支持；研究判断不等于投资确定性。",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 1,
+    "label": "快手应用平均日活跃用户 · 2026年第二季度数值与口径",
+    "reported_value": 4.123,
+    "unit": "亿",
+    "line_number": 13,
+    "raw_text": "| 快手应用平均日活跃用户 | 4.123亿人 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 2,
+    "label": "可灵营业收入 · 2026年第二季度数值与口径",
+    "reported_value": 8.5,
+    "unit": "亿元",
+    "line_number": 14,
+    "raw_text": "| 可灵营业收入 | 超过8.5亿元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

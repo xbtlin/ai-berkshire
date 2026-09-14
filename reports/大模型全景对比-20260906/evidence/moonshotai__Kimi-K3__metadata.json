@@ -1,0 +1,15 @@
+{
+  "id": "moonshotai/Kimi-K3",
+  "sha": "f831ab66814297da540d832a5235f8e904f29d06",
+  "lastModified": "2026-09-02T02:22:41.000Z",
+  "gated": false,
+  "safetensors": {
+    "parameters": {
+      "F32": 11122432,
+      "BF16": 57179884544,
+      "U8": 2722740830208
+    },
+    "total": 2779931837184
+  },
+  "weights_files": 96
+}

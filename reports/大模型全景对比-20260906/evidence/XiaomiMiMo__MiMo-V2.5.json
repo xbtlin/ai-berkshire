@@ -1,0 +1,19 @@
+{
+  "repo": "XiaomiMiMo/MiMo-V2.5",
+  "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "- **Efficient Pre-Training**: Trained on a total of ~48T tokens using FP8 mixed precision. The context window supports up to 1M tokens.",
+    "- **Architecture**: Sparse MoE (Mixture of Experts), 310B total / 15B activated parameters",
+    "- **Context Length**: Up to 1M tokens",
+    "- **Multi-Token Prediction (MTP)**: 329M parameters, 3 layers",
+    "| **Total Parameters** | 1.02T | 310B |",
+    "| **Activated Parameters** | 42B | 15B |",
+    "| **Max Context Length** | 1M | 1M |",
+    "4. **SFT & Agentic Post Training**: Supervised fine-tuning with diverse agentic data. During this stage, the context window is progressively extended from 32K → 256K → 1M.",
+    "    --context-length 262144 \\",
+    "For local deployment, we recommend setting the sampling parameters to `temperature=1.0`, `top_p=0.95`."
+  ],
+  "LICENSE_status": 404
+}

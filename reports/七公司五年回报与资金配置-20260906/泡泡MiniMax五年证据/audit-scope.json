@@ -1,0 +1,8 @@
+{
+  "sample_count": 14,
+  "historical_facts": 3,
+  "model_consistency_only": 11,
+  "seed": 42,
+  "forecast_validated": false,
+  "full_current_H1_cash_flow_statement_obtained": false
+}

@@ -1,0 +1,820 @@
+Hong Kong Exchanges and Clearing Limited and The Stock Exchange of Hong Kong Limited take no responsibility
+for the contents of this announcement, make no representation as to its accuracy or completeness and expressly
+disclaim any liability whatsoever for any loss howsoever arising from or in reliance upon the whole or any part of the
+contents of this announcement.
+
+
+
+
+                                         MiniMax Group Inc.
+ (A company controlled through weighted voting rights and incorporated in the Cayman Islands with limited liability)
+                                               (Stock Code: 0100)
+
+     (1) REVISION OF ANNUAL CAPS FOR CONTINUING CONNECTED
+    TRANSACTIONS UNDER THE MASTER API SERVICE AGREEMENT;
+     (2) REVISION OF ANNUAL CAPS FOR CONTINUING CONNECTED
+         TRANSACTIONS UNDER THE ALIBABA CLOUD SERVICES
+                         AGREEMENT; AND
+    (3) PROPOSED REFRESHMENT OF EXISTING GENERAL MANDATE
+                  Independent Financial Adviser to the Independent Board Committee
+                                  and the Independent Shareholders
+
+
+
+
+ REVISION OF ANNUAL CAPS FOR CONTINUING CONNECTED TRANSACTIONS
+ UNDER THE MASTER API SERVICE AGREEMENT AND THE ALIBABA CLOUD
+ SERVICES AGREEMENT
+
+ Reference is made to the chapter headed “Connected Transactions” contained in the Prospectus
+ in relation to, among other things, the Master API Service Agreement and the Alibaba Cloud
+ Services Agreement. Pursuant to the Master API Service Agreement, we agreed to provide API
+ services to businesses operated by Alibaba Group for a term commencing on the Listing Date
+ and ending on December 31, 2028. Pursuant to the Alibaba Cloud Services Agreement, we
+ agreed to purchase from Alibaba Cloud Computing Ltd. certain cloud products and services for a
+ term commencing on the Listing Date and ending on December 31, 2028.
+
+ On August 26, 2026 (after trading hours), the Company entered into the Supplemental Master
+ API Service Agreement and the Supplemental Alibaba Cloud Services Agreement with Alibaba
+ Cloud Computing Ltd. to amend the existing annual caps for the years ending December 31,
+ 2026, 2027 and 2028 for the continuing connected transactions under the Master API Service
+ Agreement and the Alibaba Cloud Services Agreement.
+
+
+
+
+                                                          1
+LISTING RULES IMPLICATIONS
+
+As of the date of this announcement, Alibaba Group, through its associates, is indirectly
+interested in approximately 11.36% of the beneficial interests in the share capital of our
+Company. Accordingly, Alibaba and its close associates (including Alibaba Cloud Computing
+Ltd.) are connected persons of our Company, and the transactions contemplated under the Master
+API Service Agreement, Alibaba Cloud Services Agreement and Supplemental Agreements
+including Revised Annual Caps, constitute continuing connected transactions of the Company
+under Chapter 14A of the Listing Rules.
+
+As the revision contemplated under the Supplemental Agreements constitutes a material change
+to the continuing connected transactions under the Master API Service Agreement and Alibaba
+Cloud Services Agreement, the Company must re-comply with the provisions of Chapter 14A
+of the Listing Rules applicable to the relevant continuing connected transactions. As one or
+more of the applicable percentage ratios with reference to the Revised Annual Caps is more than
+5%, the revision of the Master API Service Agreement and Alibaba Cloud Services Agreement
+contemplated under the Supplemental Agreements are subject to the reporting, annual review,
+announcement, circular and Independent Shareholders ’ approval requirements under Chapter
+14A of the Listing Rules.
+
+PROPOSED REFRESHMENT OF EXISTING GENERAL MANDATE
+
+The Board proposes to refresh the Existing General Mandate for the Directors to allot, issue and
+deal with new Class A Ordinary Shares up to 20% of the issued share capital of the Company
+(excluding treasury shares) as at the date of passing of the relevant resolution at the EGM.
+Pursuant to Rule 13.36(4) of the Listing Rules, the grant of the New General Mandate is subject
+to the Independent Shareholders’ approval by way of an ordinary resolution at the EGM.
+
+GENERAL
+
+A circular containing, among other things, (i) details of the Supplemental Master API Service
+Agreement, the Supplemental Alibaba Cloud Services Agreement and the transactions
+contemplated thereunder (including the Revised Annual Caps), (ii) information regarding the
+grant of the New General Mandate, (iii) a letter from the Independent Board Committee to
+the Independent Shareholders together with the recommendation of the Independent Board
+Committee, (iv) a letter from the Independent Financial Adviser to the Independent Board
+Committee and the Independent Shareholders and (v) a notice of the extraordinary general
+meeting is expected to be made available to the Shareholders on or before August 26, 2026.
+
+
+
+
+                                               2
+1. REVISION OF ANNUAL CAPS FOR CONTINUING CONNECTED TRANSACTIONS
+   UNDER THE MASTER API SERVICE AGREEMENT AND THE ALIBABA CLOUD
+   SERVICES AGREEMENT
+
+BACKGROUND
+
+Master API Service Agreement and Alibaba Cloud Services Agreement
+
+Reference is made to the chapter headed “Connected Transactions” contained in the Prospectus in
+relation to, among other things, the Master API Service Agreement and the Alibaba Cloud Services
+Agreement. Pursuant to the Master API Service Agreement, we agreed to provide API services to
+businesses operated by Alibaba Group for a term commencing on the Listing Date and ending on
+December 31, 2028. Pursuant to the Alibaba Cloud Services Agreement, we agreed to purchase
+from Alibaba Cloud Computing Ltd. certain cloud products and services for a term commencing on
+the Listing Date and ending on December 31, 2028.
+
+The Board hereby announces that the Board has reviewed and assessed the continuing connected
+transactions under the Master API Service Agreement and the Alibaba Cloud Services Agreement
+and it is reasonably expected that the existing annual caps for the transactions under the Master
+API Service Agreement and the Alibaba Cloud Services Agreement for the years ending December
+31, 2026, 2027 and 2028 will not be sufficient to support the business needs of the Group.
+Accordingly, on August 26, 2026, the Company entered into the Supplemental Agreements with
+Alibaba Cloud Computing Ltd. to amend the existing annual caps for the years ending December
+31, 2026, 2027 and 2028 for the continuing connected transactions under the Master API Service
+Agreement and the Alibaba Cloud Services Agreement.
+
+SUPPLEMENTAL AGREEMENTS
+
+Supplemental Master API Service Agreement
+
+Principal terms
+
+Date:                      August 26, 2026
+
+Parties:                   (i)    the Company; and
+
+                           (ii)   Alibaba Cloud Computing Ltd.
+
+Revision of annual caps:   (i)    The annual cap for the year ending December 31, 2026 was
+                                  revised from USD0.65 million to USD7.5 million;
+
+                           (ii)   The annual cap for the year ending December 31, 2027 was
+                                  revised from USD1.00 million to USD22.0 million; and
+
+                           (iii) The annual cap for the year ending December 31, 2028 was
+                                 revised from USD1.50 million to USD33.0 million.
+
+Save for the above revision, all other terms of the Master API Service Agreement remain
+unchanged.
+
+
+
+
+                                                3
+Pricing policy
+
+The amounts paid and to be paid by Alibaba to our Company under the Master API Service
+Agreement are determined based on the standard fee rates of API services as provided by the
+Group from time to time. The sales price for our API services under the Master API Service
+Agreement is fair and reasonable, and on normal commercial terms no less favorable to our
+Company than terms offered to Independent Third Parties.
+
+Historical transaction amounts, existing annual caps and Revised Annual Caps
+
+As disclosed in the Prospectus, the existing annual caps under the Master API Service Agreement
+are approximately USD0.65 million, USD1.0 million and USD1.5 million for the three years
+ending December 31, 2026, 2027 and 2028, respectively, while the historical transaction amounts
+under the Master API Service Agreement for the years ended December 31, 2023, 2024 and 2025,
+and six months ended June 30, 2026 are approximately USD41,376, USD33,284, USD341,244 and
+USD501,704, respectively.
+
+As at the date of this announcement, the continuing connected transactions between the Company
+and Alibaba Cloud Computing Ltd. under the Master API Service Agreement have not exceeded
+the existing annual cap for the year ending December 31, 2026 under the Master API Service
+Agreement.
+
+The following table sets out the Revised Annual Caps under the Master API Service Agreement (as
+amended by the Supplemental Master API Service Agreement) for the years ending December 31,
+2026, 2027 and 2028.
+
+                                  For the year ending For the year ending For the year ending
+                                        December 31,        December 31,        December 31,
+                                                 2026                2027                2028
+                                    (USD in millions)   (USD in millions)   (USD in millions)
+
+Revised Annual Caps                                 7.5                 22.0                  33.0
+
+Basis of determination of the Revised Annual Caps
+
+The Revised Annual Caps were determined after arm’s length negotiations between the Company
+and Alibaba Cloud Computing Ltd. based on (i) the historical transaction amount; (ii) the high
+utilization rates of the existing annual caps under the Master API Service Agreement due to the
+expansion of use cases and traffic with Alibaba Group, which reached approximately 77.2%
+as of June 30, 2026; (iii) the pricing principles agreed by the parties under the Master API
+Service Agreement; and (iv) the expected further substantial expansion in the scope and scale of
+cooperation between the parties based on the distinctive capabilities of the Group’s multimodal
+general foundation models, including but not limited to: (a) the application of the advanced audio
+and speech models across Alibaba Group’s digital media and interaction scenarios; (b) the deep
+integration of the Group’s core text, reasoning, and logic models into Alibaba Group’s software
+ecosystem; and (c) the parties’ joint development of industry-specific AI solutions in key vertical
+sectors, which are expected to result in continued rapid growth in API call volume and the scale of
+related services.
+
+
+
+
+                                                4
+Reasons for and benefits of entering into the Supplemental Master API Service Agreement
+
+As a globally leading artificial intelligence foundation model company, the Group possesses
+multimodal general foundation model capabilities, stable algorithm infrastructure and standardized
+API service operation system, and maintains sustained growth in service capacity to cater to the
+booming market demand for generative AI and cloud intelligent services. In view of the business
+recognition and established business relationship between the Group and Alibaba Group, providing
+API services to Alibaba allows the Group to expand high-quality benchmark enterprise clients,
+consolidate long-term stable revenue sources, reduce market expansion costs and further elevate
+the Group’s brand influence and market share in the domestic large model API service sector.
+
+As the utilization rate of the existing annual cap under the Master API Service Agreement for
+the year ending December 31, 2026 has reached approximately 77.2% as of June 30, 2026, it is
+reasonably expected that the existing annual cap will not be sufficient to support the expansion of
+business scenarios and the continuous cooperation between the two parties. In this connection, the
+Supplemental Master API Service Agreement has been entered into to revise the annual caps for
+the Master API Service Agreement to enable the Group to continue to supply the API services to
+Alibaba and support its business growth.
+
+The Company considers that the entering into of the Supplemental Master API Service Agreement
+to increase the annual caps for the continuing connected transactions under the Master API
+Service Agreement for the years ending December 31, 2026, 2027 and 2028 is based on the actual
+business needs of the Group, in particular, to cater for its market expansion and business strategies.
+The above-mentioned annual caps and estimated transaction amounts only represent reasonable
+estimates made by the Group based on currently available business cooperation scale, service
+growth trend and market environment. The actual transaction value shall be subject to changes
+in the external economic environment, industry AI demand iteration, and the actual service
+consumption needs of Alibaba from time to time, and should not be construed as reflecting the
+actual financial performance or future financial potential of the Group.
+
+Taking into account (i) the continuous growth of market demand for large model API services and
+the Group’s service capacity reserve, (ii) the long-term cooperation foundation and mutual business
+trust between the Group and Alibaba, and (iii) the transaction terms being no less favourable
+than those for independent third-party transactions, the Directors (including the independent
+non-executive Directors) are of the view that the terms of the Supplemental Master API Service
+Agreement (including the Revised Annual Caps) and transactions contemplated thereunder are fair
+and reasonable, on normal commercial terms or better and are conducted in the ordinary and usual
+course of business of the Group and in the interests of the Company and its Shareholders as a
+whole.
+
+
+
+
+                                                  5
+Supplemental Alibaba Cloud Services Agreement
+
+Principal terms
+
+Date:                      August 26, 2026
+
+Parties:                   (i)    the Company; and
+
+                           (ii)   Alibaba Cloud Computing Ltd.
+
+Revision of annual caps:   (i)    The annual cap for the year ending December 31, 2026 was
+                                  revised from USD115 million to USD300.0 million;
+
+                           (ii)   The annual cap for the year ending December 31, 2027 was
+                                  revised from USD125 million to USD400.0 million; and
+
+                           (iii) The annual cap for the year ending December 31, 2028 was
+                                 revised from USD135 million to USD500.0 million.
+
+Save for the above revision, all other terms of the Alibaba Cloud Services Agreement remain
+unchanged.
+
+Pricing policy
+
+The prices of transactions contemplated under the Alibaba Cloud Services Agreement and the
+Supplemental Alibaba Cloud Services Agreement are based on the standard fee rates as provided
+by Alibaba Cloud Computing Ltd. from time to time, which sets out the specific service scope and
+the corresponding prices. The prices offered by Alibaba Cloud Computing Ltd. are comparable to
+the prices offered by other third-party cloud services providers.
+
+Historical transaction amounts, existing annual caps and Revised Annual Caps
+
+As disclosed in the Prospectus, the existing annual caps under the Alibaba Cloud Services
+Agreement are approximately USD115 million, USD125 million and USD135 million for the three
+years ending December 31, 2026, 2027 and 2028, respectively, while the historical transaction
+amounts under the Alibaba Cloud Services Agreement for the years ended December 31, 2023,
+2024 and 2025, and six months ended June 30, 2026 are approximately USD3.1 million, USD10.0
+million, USD75.9 million and USD75.6 million, respectively.
+
+As at the date of this announcement, the continuing connected transactions between the Company
+and Alibaba Cloud Computing Ltd. under the Alibaba Cloud Services Agreement have not
+exceeded the existing annual cap for the year ending December 31, 2026 under the Alibaba Cloud
+Services Agreement.
+
+The following table sets out the Revised Annual Caps under the Alibaba Cloud Services
+Agreement (as amended by the Supplemental Alibaba Cloud Services Agreement) for the years
+ending December 31, 2026, 2027 and 2028.
+
+
+
+
+                                                6
+                                  For the year ending For the year ending For the year ending
+                                        December 31,        December 31,        December 31,
+                                                 2026                2027                2028
+                                    (USD in millions)   (USD in millions)   (USD in millions)
+
+Revised Annual Caps                               300.0                 400.0                 500.0
+
+Basis of determination of the Revised Annual Caps
+
+The Revised Annual Caps were determined after arm’s length negotiations between the Company
+and the Alibaba Cloud Computing Ltd. based on (i) the historical transaction amount; (ii) the high
+utilization rates of the existing annual caps under the Alibaba Cloud Services Agreement, which
+reached approximately 65.7% as of June 30, 2026; (iii) the pricing principles agreed by the parties
+under the Alibaba Cloud Services Agreement; (iv) the prevailing market prices of similar cloud
+products and services; and (v) the Group’s current and estimated increasing demand for cloud
+products and services arising from the expected business development and expansion in cloud
+services and AI infrastructure, including but not limited to: (a) its ongoing and growing demand for
+high-performance cloud computing resources and underlying infrastructure for model training and
+upgrades, in order to maintain the technological leadership of its multimodal general foundation
+models; (b) its surging demand for high-performance cloud products and highly available data
+centre operation and maintenance services for model inference and high-concurrency responses, as
+its customer base and API call volume continue to grow rapidly; and (c) its increasing investment
+in cloud security and protection systems to safeguard the business continuity, data security and
+high stability of its core operations.
+
+The Company determined the Revised Annual Caps primarily by reference to the Group’s expected
+research and development expenses in the coming years as such expenses are expected to be mainly
+incurred for the procurement of cloud products and services for the purpose of AI infrastructure
+and model research and development. Accordingly, the Company considers the Group’s expected
+research and development expenses to be an appropriate basis for the estimation of its demand for
+cloud services.
+
+For the year ended December 31, 2025, the Group’s research and development expenses amounted
+to approximately USD252.8 million, and the historical transaction amount under the Alibaba Cloud
+Services Agreement for the same year amounted to approximately USD75.9 million, representing
+approximately 30.0% of the Group’s total research and development expenses. This ratio served as
+a reference point for the Company in assessing its current procurement needs from Alibaba Cloud
+Computing Ltd.
+
+In July 2026, the Company completed the Placing and the issuance of the 2027 Convertible Bonds.
+Approximately 80% of the aggregate net proceeds, being HK$12,701.6 million (equivalent to
+approximately USD1,620.7 million, based on the exchange rate of USD1.00 to HK$7.8370), are
+intended to be utilized by December 31, 2027 for the enhancement of the Group’s AI infrastructure
+and model research and development. This implies an additional average monthly research and
+development-related expenditure of approximately USD92.6 million over such period. Together
+with the actual transaction amount incurred in the first half of 2026, this formed the basis for
+determining the Revised Annual Cap for the year ending December 31, 2026.
+
+
+
+
+                                                 7
+The Revised Annual Caps for the years ending December 31, 2027 and 2028 are USD400.0 million
+and USD500.0 million, respectively, representing year-on-year increases of approximately 33.3%
+and 25.0%. In determining such Revised Annual Caps, the Company considered the historical
+growth trend of the Group’s research and development expenses. For the year ended December
+31, 2025, the Group’s research and development expenses increased by approximately 33.8%
+as compared with that for the year ended December 31, 2024, primarily due to increased cloud
+services expenses associated with model training, model iteration and capability upgrades. On
+this basis, the Company considers the expected increase in transaction amount from the year
+ending December 31, 2026 to the year ending December 31, 2027 will be broadly in line with the
+historical growth rate of research and development expenses.
+
+Reasons for and benefits of entering into the Supplemental Alibaba Cloud Services
+Agreement
+
+Alibaba Cloud is a globally leading cloud computing and artificial intelligence technology
+company, providing scalable, secure and reliable cloud computing services worldwide. The Group’s
+procurement of cloud products and services from Alibaba Cloud Computing Ltd. can ensure that,
+in the course of massive data processing, complex model iteration and high-concurrency API
+calls, the Group obtains secure, stable and efficient underlying infrastructure and cloud service
+support with a high degree of scalability and flexibility, thereby ensuring the smooth progress of
+the Group’s core business operations and the research and development of its foundation models.
+As the utilization rate of the existing annual cap under the Alibaba Cloud Services Agreement for
+the year ending December 31, 2026 has reached approximately 65.7% as of June 30, 2026, it is
+reasonably expected that the existing annual cap will not be sufficient to support the continuous
+expansion of the Group’s business scale and its increasing procurement demand for cloud products
+and services. In this connection, the Supplemental Alibaba Cloud Services Agreement has been
+entered into to revise the annual caps for the Alibaba Cloud Services Agreement to enable the
+Group to continue to procure high-quality cloud products and services from Alibaba Cloud
+Computing Ltd. and support the Group’s business growth.
+
+The Company considers that the entering into of the Supplemental Alibaba Cloud Services
+Agreement to increase the annual caps for the continuing connected transactions under the Alibaba
+Cloud Services Agreement for the years ending December 31, 2026, 2027 and 2028 is based on the
+actual business needs of the Group. The above-mentioned annual caps and estimated transaction
+amounts only represent reasonable estimates made by the Group based on currently available
+business development scale, cloud service consumption trend and market environment. The actual
+transaction value shall be subject to changes in the external economic environment, industry
+demand iteration, and the actual consumption demand of the Group for cloud products and services
+from time to time, and should not be construed as reflecting the actual financial performance or
+future financial potential of the Group.
+
+Taking into account (i) the continuous growth of the Group’s demand for cloud products and
+services for its research and development and business expansion, (ii) the long-term cooperation
+foundation and mutual business trust between the Group and Alibaba, and (iii) the transaction
+terms being no less favourable than those for independent third-party transactions, including
+price competitiveness and service quality, the Directors (including the independent non-executive
+Directors) are of the view that the terms of the Supplemental Alibaba Cloud Services Agreement
+(including the Revised Annual Caps) and transactions contemplated thereunder are fair and
+reasonable, on normal commercial terms or better and are conducted in the ordinary and usual
+course of business of the Group and in the interests of the Company and its Shareholders as a
+whole.
+
+                                                8
+INTERNAL CONTROL MEASURES AND PROCEDURES
+
+In order to ensure the terms and conditions of the continuing connected transactions contemplated
+under the Master API Service Agreement, the Alibaba Cloud Services Agreement and the
+Supplemental Agreements are on normal commercial terms and fair and reasonable to the Company
+and Shareholders and are no less favourable than those offered by Independent Third Parties, the
+Company has adopted the following internal control procedures:
+
+(i)    The Group will ensure that the terms and conditions (including the pricing policy) of the
+       transactions are fair and reasonable by following the below procedures: the relevant personnel
+       of the business, legal and finance teams of the Company will continuously monitor the terms
+       and conditions under each specific agreement.
+
+(ii)   Prior to entering into a new transaction, the relevant business team will compare the
+       proposed prices or fee rates against those offered by at least two independent third-party
+       service providers for comparable products or services, taking into account not only price but
+       also other commercial factors such as delivery quality, delivery schedule and certainty of
+       execution.
+
+(iii) During the term of the agreements, the designated staff of the finance team of the Company
+      will closely monitor the actual amounts incurred for the purpose of ensuring the relevant
+      annual caps are not exceeded. They will closely monitor the continuing connected transactions
+      and report the latest status to the finance department of the Company on a monthly basis. In
+      addition, the relevant business team will conduct a semi-annual review of the prices and fee
+      rates of key products and services by benchmarking them against those offered by at least
+      two independent third-party service providers for comparable products or services, so as to
+      assess whether the transactions continue to be on normal commercial terms. If any material
+      deviation is identified after taking into account the relevant commercial factors, the matter
+      will be escalated to senior management, which will consider whether re-negotiation with
+      Alibaba Group is necessary.
+
+(iv) The independent non-executive Directors will conduct annual review of continuing connected
+     transactions and provide annual confirmations in the Company’s annual report on whether the
+     continuing connected transactions are conducted: (1) in the ordinary course of business; (2) in
+     accordance with normal commercial terms or better and on terms that are fair and reasonable;
+     (3) in accordance with the terms of the relevant agreements; and (4) in the interests of the
+     Company and the Shareholders as a whole.
+
+(v)    The Company ’ s external auditors will also conduct an annual review of the continuing
+       connected transactions of the Group and provide annual confirmation to ensure that the
+       transactions are conducted in accordance with the terms of the framework agreements
+       (including the pricing policies and the annual caps thereof), on normal commercial terms and
+       aligned with the pricing policy.
+
+GENERAL INFORMATION OF THE PARTIES
+
+The Company is a leading global AI foundation model company committed to advancing the
+frontiers of AI toward artificial general intelligence (AGI), guided by the mission of “Intelligence
+with Everyone.” We seek to develop AI capabilities that support an increasingly broad range of
+human intellectual and creative tasks across diverse modalities. Our Class A Ordinary Shares were
+listed on the Main Board of the Stock Exchange (stock code: 0100) on January 9, 2026.
+
+                                                  9
+Alibaba Cloud Computing Ltd. is a company established in the PRC with limited liability and a
+consolidated entity of Alibaba Group. It offers a complete suite of cloud services to customers
+worldwide, including computing, storage, network, security, database, big data and AI, container,
+machine learning, and model training and inference services. It also operates data centers in
+multiple countries around the world.
+
+Alibaba Group, as a Substantial Shareholder of the Company, is a company incorporated in the
+Cayman Islands, with its American depositary shares listed on the New York Stock Exchange
+(symbol: BABA), and its ordinary shares listed on the Stock Exchange (stock code: 9988 (HKD
+Counter) and 89988 (RMB Counter)). Alibaba Group is a global technology company focused on
+AI + Cloud and consumption.
+
+LISTING RULES IMPLICATIONS
+
+As at the date of this announcement, Alibaba, through its associates, is indirectly interested in
+approximately 11.36% of the beneficial interests in the share capital of our Company. Accordingly,
+Alibaba and its close associates (including Alibaba Cloud Computing Ltd.) are connected persons
+of our Company, and the transactions contemplated under the Master API Service Agreement,
+Alibaba Cloud Services Agreement and Supplemental Agreements including Revised Annual Caps,
+constitute continuing connected transactions of the Company under Chapter 14A of the Listing
+Rules.
+
+As the revision contemplated under the Supplemental Agreements constitutes a material change
+to the continuing connected transactions under the Master API Service Agreement and Alibaba
+Cloud Services Agreement, the Company must re-comply with the provisions of Chapter 14A
+of the Listing Rules applicable to the relevant continuing connected transactions. As one or
+more of the applicable percentage ratios with reference to the Revised Annual Caps is more than
+5%, the revision of the Master API Service Agreement and Alibaba Cloud Services Agreement
+contemplated under the Supplemental Agreements is subject to the reporting, annual review,
+announcement, circular and Independent Shareholders’ approval requirements under Chapter 14A
+of the Listing Rules.
+
+Mr. Chen Yingjie, our non-executive Director, serving as the managing director of the strategic
+investment department in Alibaba Group, is deemed to have a material interest in the Supplemental
+Agreements. Therefore, Mr. Chen Yingjie has abstained from voting on the relevant Board
+resolutions approving the Supplemental Agreements and the transactions contemplated thereunder
+(including the Revised Annual Caps). To the best of the Directors’ knowledge, information and
+belief, having made all reasonable enquiries, save as disclosed above, none of the other Directors
+has a material interest in such transactions and is required to abstain from voting on the relevant
+resolutions at the Board meeting.
+
+2. PROPOSED REFRESHMENT OF EXISTING GENERAL MANDATE
+
+EXISTING GENERAL MANDATE
+
+At the 2025 AGM, the Shareholders approved, among other things, the grant of the Existing
+General Mandate which authorized the Directors to allot, issue and deal with not more than
+62,727,061 new Class A Ordinary Shares, being 20% of the issued share capital of the Company of
+313,635,308 Shares as at the date of the 2025 AGM.
+
+
+
+
+                                                10
+References are made to the announcements of the Company dated July 10, 2026 and July 16, 2026
+in relation to the Placing and the issuance of 2027 Convertible Bonds under the Existing General
+Mandate. Pursuant to the Placing, the Company has issued 35,600,000 new Class A Ordinary
+Shares under the Existing General Mandate. In addition, pursuant to the issuance of the 2027
+Convertible Bonds, 19,402,985 Class A Ordinary Shares will be issuable upon full conversion
+of the 2027 Convertible Bonds under the Existing General Mandate. Following completion of
+the Placing on July 14, 2026 and the issuance of 2027 Convertible Bonds on July 16, 2026,
+approximately 87.69% of the Existing General Mandate has been utilized by the Company.
+
+PROPOSED GRANT OF NEW GENERAL MANDATE
+
+As a significant portion of the Existing General Mandate has been utilized, the Board proposes
+that: (i) the Directors be granted the New General Mandate to allot and issue Class A Ordinary
+Shares not exceeding 20% of the Company’s issued share capital (excluding treasury shares) as
+at the date of passing the relevant resolution(s) at the EGM; and (ii) the New General Mandate be
+extended to Shares repurchased by the Company pursuant to the repurchase mandate granted to the
+Directors at the 2025 AGM.
+
+The Company has not refreshed the Existing General Mandate since the 2025 AGM. The New
+General Mandate will last until whichever is the earliest of: (i) the conclusion of the next annual
+general meeting of the Company; (ii) the expiration of the period within which the next annual
+general meeting of the Company is required by the articles of association of the Company or any
+applicable laws to be held; and (iii) the date on which the authority set out in this resolution is
+revoked or varied by an ordinary resolution of the Shareholders in general meeting.
+
+As at the date of this announcement, the Company had 349,235,308 Shares in issue. On the
+basis that there are no changes in the issued share capital of the Company from the date of this
+announcement and up to the date of the EGM, the Directors will be authorized to allot and issue up
+to 69,847,061 new Class A Ordinary Shares under the New General Mandate, representing 20% of
+the issued share capital of the Company (excluding treasury shares) as at the date of the EGM.
+
+REASONS FOR THE GRANT OF THE NEW GENERAL MANDATE
+
+In assessing the needs for the grant of the New General Mandate, the Board has considered the
+following:
+
+(i)   A significant portion (approximately 87.69%) of the Existing General Mandate has been
+      utilized following the completion of the Placing on July 14, 2026 and the issuance of the 2027
+      Convertible Bonds on July 16, 2026. As the next annual general meeting of the Company (the
+      “2026 AGM”) is currently expected to be held in mid-June 2027, the Board considers that,
+      absent a refreshed general mandate, the Company would have limited flexibility to conduct
+      equity fund-raising during the period prior to the 2026 AGM. The Directors believe that the
+      grant of the New General Mandate will significantly enhance the Group’s financing capacity
+      and financial flexibility, enabling the Company to strategically deploy capital when suitable
+      opportunities arise, which is in the best interests of the Company and the Shareholders as a
+      whole.
+
+
+
+
+                                                 11
+(ii)   The Group is a leading global AI foundation model company committed to advancing
+       the frontiers of AI toward artificial general intelligence (AGI). The Group has recorded
+       significant business growth in recent years, with revenue increasing by approximately
+       158.9% from approximately US$30.5 million for the year ended December 31, 2024 to
+       approximately US$79.0 million for the year ended December 31, 2025, and gross profit
+       improving by approximately 437.2% from approximately US$3.7 million to approximately
+       US$20.1 million over the same period. The continued development and commercialization of
+       the Group’s foundation models and AI-native products require substantial and ongoing capital
+       investment, in particular for enhancing the Group’s AI infrastructure and model research
+       and development, accelerating global commercialization and the development of the Group’s
+       products, and general working capital and corporate purposes. The New General Mandate
+       will provide the Company with the flexibility to further fund its business development when
+       suitable opportunities are identified.
+
+(iii) The Board believes the New General Mandate offers a faster, more flexible, and more
+      cost-effective financing option than debt financing, rights issues, or open offers. Unlike debt
+      financing, it does not impose interest obligations; unlike pre-emptive equity fund-raising
+      methods, it involves less time, lower costs, and fewer procedural uncertainties. It also allows
+      the Company to respond quickly to funding or investment opportunities. Accordingly,
+      the Board considers the grant of the New General Mandate to be fair, reasonable, and
+      in the interests of the Company and its shareholders as a whole. As of the date of this
+      announcement, the Company had no concrete plan to utilize the New General Mandate, nor
+      had it entered into any arrangement, memorandum of understanding or negotiation about any
+      possible fund raising exercises.
+
+LISTING RULES IMPLICATIONS
+
+Pursuant to Rule 13.36(4) of the Listing Rules, the grant of the New General Mandate will be
+subject to the Independent Shareholders’ approval by way of ordinary resolution(s) at the EGM.
+
+INDEPENDENT BOARD COMMITTEE AND INDEPENDENT FINANCIAL ADVISER
+
+An Independent Board Committee, comprising all independent non-executive Directors, has been
+established to advise the Independent Shareholders as to whether (i) the terms of the Supplemental
+Agreements and the transactions contemplated thereunder are fair and reasonable, on normal
+commercial terms or better and in the ordinary and usual course of business of the Group and in
+the interest of the Company and the Independent Shareholders as a whole; and (ii) the proposed
+grant of the New General Mandate is fair and reasonable and in the interests of the Company and
+the Shareholders as a whole, and to advise the Independent Shareholders on how to vote at the
+EGM. The Company has appointed the Independent Financial Adviser to advise the Independent
+Board Committee and the Independent Shareholders in respect of (i) the Supplemental Agreements
+and the transactions contemplated thereunder; and (ii) the proposed grant of the New General
+Mandate.
+
+GENERAL
+
+The EGM will be convened and held for the Independent Shareholders to consider and, if thought
+fit, to approve, among other things, (i) the Supplemental Agreements and the transactions
+contemplated thereunder, including the Revised Annual Caps, and (ii) the grant of the New General
+Mandate.
+
+
+                                                 12
+Pursuant to Rule 2.15 and Rule 14A.36 of the Listing Rules, any Shareholder and his or her or its
+associates with a material interest in the resolutions will abstain from voting on the resolutions in
+respect of entering into of the transactions contemplated under the Supplemental Agreements and
+the Revised Annual Caps. As at the date of this announcement, Alibaba, through its associates,
+is indirectly interested in approximately 11.36% of the beneficial interests in the share capital of
+our Company. Accordingly, Alibaba and its close associates (including Alibaba Cloud Computing
+Ltd.) are connected persons of our Company, and the transactions contemplated under the Master
+API Service Agreement, the Alibaba Cloud Services Agreement and the Supplemental Agreements
+including the Revised Annual Caps, constitute continuing connected transactions of the Company
+under Chapter 14A of the Listing Rules. In respect of the relevant resolutions to be passed at
+the EGM, Alibaba controls or is entitled to exercise control over the voting rights attached to its
+shareholding of 39,662,627 Shares in the Company (representing approximately 11.36% of the
+total issued share capital of the Company).
+
+Pursuant to Rule 13.36(4) of the Listing Rules, the grant of the New General Mandate will be
+subject to the Independent Shareholders’ approval by way of ordinary resolution(s) at the EGM.
+Any controlling shareholders and their respective associates, or where there is no controlling
+shareholder, the Directors (excluding independent non-executive Directors) and the chief executive
+of the Company and their respective associates shall abstain from voting in favour of the relevant
+resolutions to approve the grant of the New General Mandate.
+
+As at the date of this announcement, to the best knowledge, belief and information of the
+Directors having made all reasonable enquiries, Dr. Yan, Local Linearity, Alpha EXP, MiniMax
+Matrix, MiniMax Limited, Scaling EXP Limited, and MiniMax Awakening are the Controlling
+Shareholders. Accordingly, Dr. Yan, Local Linearity, Alpha EXP, MiniMax Matrix, MiniMax
+Limited, Scaling EXP Limited, and MiniMax Awakening, together with their associates, are
+required to abstain from voting in favour of the ordinary resolution(s) regarding the grant of the
+New General Mandate at the EGM.
+
+Save for the aforesaid and to the best of the information, knowledge and belief of the Directors
+having made all reasonable enquiries, no other Shareholders are required to abstain from voting at
+the EGM.
+
+DEFINITIONS
+
+In this announcement, unless otherwise defined or the context otherwise requires, the following
+terms or expressions shall have the following meanings:
+
+“2025 AGM”                    the annual general meeting of the Company held on June 11, 2026
+
+“2027 Convertible Bonds”      zero coupon guaranteed convertible bonds with an aggregate
+                              principal amount of HK$6,500.00 million due 2027, issued by the
+                              Company’s wholly-owned subsidiary MiniMax Innovations Limited
+                              on July 16, 2026
+
+“Alibaba Cloud                the Alibaba cloud services agreement entered into between the
+  Services Agreement”         Company and Alibaba Cloud Computing Ltd. on December 29, 2025
+
+
+
+
+                                                 13
+“Alibaba Group” or           Alibaba Group Holding Limited (阿里巴巴集團控股有限公司), a
+  “Alibaba”                  company incorporated in the Cayman Islands, with its American
+                             depositary shares, listed on the New York Stock Exchange (symbol:
+                             BABA), and its ordinary shares listed on the Stock Exchange (stock
+                             code: 9988 (HKD Counter) and 89988 (RMB Counter))
+
+“associate(s)”               has the meaning ascribed thereto under the Listing Rules
+
+“Board”                      the board of Directors of the Company
+
+“Class A Ordinary Shares”    Class A ordinary shares in the share capital of the Company with
+                             a par value of US$0.0001 each, conferring a holder of a Class A
+                             ordinary share one vote per share on all matters subject to the vote
+                             at general meetings of the Company
+
+“Class B Ordinary Shares”    Class B ordinary shares in the share capital of the Company with
+                             a par value of US$0.0001 each, conferring weighted voting rights
+                             in the Company such that a holder of a Class B ordinary share is
+                             entitled to ten votes per share on all matters subject to the vote at
+                             general meetings of the Company, subject to the requirements under
+                             Rule 8A.24 of the Listing Rules that the Reserved Matters shall be
+                             voted on a one vote per share basis
+
+“close associate(s)”         has the meaning ascribed thereto under the Listing Rules
+
+“Company”, “our              MiniMax Group Inc., an exempted company with limited liability
+  Company”, or               incorporated under the laws of the Cayman Islands on June 30, 2021
+  “the Company”
+
+“connected person(s)”        has the meaning ascribed thereto under the Listing Rules
+
+“connected transaction(s)”   has the meaning ascribed thereto under the Listing Rules
+
+“Controlling Shareholder(s)” has the meaning ascribed thereto under the Listing Rules and unless
+                             the context requires otherwise, refers to Dr. Yan, Local Linearity,
+                             Alpha EXP, MiniMax Matrix, MiniMax Limited, Scaling EXP
+                             Limited, and MiniMax Awakening
+
+“Director(s)”                the director(s) of our Company
+
+“EGM” or “Extraordinary      the extraordinary general meeting of the Company to be convened to
+  General Meeting”           consider and, if appropriate, to approve Supplemental Agreements
+                             and the transactions contemplated thereunder (including the Revised
+                             Annual Caps) and the proposed grant of the New General Mandate,
+                             or any adjournment thereof
+
+“Existing General            the general mandate granted to the Directors by the resolution of the
+  Mandate”                   Shareholders passed at the 2025 AGM to allot, issue and deal with
+                             additional Class A Ordinary Shares not exceeding 20% of the issued
+                             share capital of the Company (excluding treasury shares) as at the
+                             date of the 2025 AGM
+
+                                               14
+“Group”                      the Company and its subsidiaries
+
+“Independent Board           an independent board committee of the Company comprising all
+  Committee”                 the independent non-executive Directors to advise the Independent
+                             Shareholders in respect of (i) the Supplemental Agreements and
+                             transactions contemplated thereunder; and (ii) the proposed grant of
+                             the New General Mandate
+
+“Independent Financial       Gram Capital Limited, a corporation licensed to carry on Type 6
+  Adviser”                   (advising on corporate finance) regulated activity as defined under
+                             the SFO, being the independent financial adviser to the Independent
+                             Board Committee and the Independent Shareholders in respect of
+                             (i) the Supplemental Agreements and the transactions contemplated
+                             thereunder; and (ii) the proposed grant of the New General Mandate
+
+“Independent Shareholders”   Shareholders who are not required to abstain from voting at the
+                             EGM
+
+“Independent Third           any person(s) or entity(ies) who is not a connected person of the
+  Party(ies)”                Company within the meaning of the Listing Rules
+
+“Listing Date”               January 9, 2026, on which our Class A Ordinary Shares are listed
+                             and on which dealings in our Class A Ordinary Shares are to be first
+                             permitted to take place on the Stock Exchange
+
+“Listing Rules”              the Rules Governing the Listing of Securities on The Stock
+                             Exchange of Hong Kong Limited (as amended, supplemented or
+                             otherwise modified from time to time)
+
+“Listing”                    the listing of our Shares on the Main Board
+
+“Master API Service          the master API service agreement entered into between the Company
+  Agreement”                 and Alibaba Cloud Computing Ltd. on December 29, 2025
+
+“Main Board”                 the stock exchange (excluding the option market) operated by the
+                             Stock Exchange which is independent from and operated in parallel
+                             with the GEM of the Hong Kong Stock Exchange
+
+“New General Mandate”        the general mandate proposed to be sought at the EGM to authorise
+                             the Directors to allot, issue and deal with new Class A Ordinary
+                             Shares not exceeding 20% of the issued share capital of the
+                             Company (excluding treasury shares) as at the date of passing the
+                             relevant resolution
+
+“Placing”                    the allotment and issuance of 35,600,000 Class A Ordinary Shares at
+                             the placing price of HK$268.00 per Class A Ordinary Share pursuant
+                             to the Existing General Mandate on July 14, 2026
+
+“Prospectus”                 the prospectus dated December 31, 2025 issued by the Company
+
+
+
+                                              15
+“Revised Annual Caps”        the proposed revision of annual caps for the years ending December
+                             31, 2026, 2027 and 2028 in respect of the transactions under the
+                             Alibaba Cloud Services Agreement and the Master API Service
+                             Agreement as set out in the section headed “Historical transaction
+                             amounts, existing annual caps and Revised Annual Caps” in this
+                             announcement
+
+“Share(s)”                   the Class A Ordinary Shares and the Class B Ordinary Shares in the
+                             share capital of the Company, as the context so requires
+
+“Shareholder(s)”             holder(s) of our Share(s)
+
+“Stock Exchange”             The Stock Exchange of Hong Kong Limited
+
+“Supplemental Agreements” collectively, the Supplemental Master API Service Agreement and
+                          Supplemental Alibaba Cloud Services Agreement
+
+“Supplemental Alibaba        the supplemental agreement to the Alibaba Cloud Services
+  Cloud Services             Agreement dated August 26, 2026, entered into between the
+  Agreement”                 Company and Alibaba Cloud Computing Ltd. to revise the existing
+                             annual caps under the Alibaba Cloud Services Agreement
+
+“Supplemental Master         the supplemental agreement to the Master API Service Agreement
+   API Service               dated August 26, 2026, entered into between the Company and
+  Agreement”                 Alibaba Cloud Computing Ltd. to revise the existing annual caps
+                             under the Master API Service Agreement
+
+“subsidiary(ies)”            has the meaning ascribed thereto under the Listing Rules
+
+“Substantial                 has the meaning ascribed thereto under the Listing Rules
+  Shareholder(s)”
+
+“USD”, “US$” or              United States dollar, the lawful currency of the United States
+  “U.S. dollars”
+
+“%”                          per cent
+
+                                                               By order of the Board
+                                                               MiniMax Group Inc.
+                                                                   Dr. Yan Junjie
+                                                    Chairman of the Board and Executive Director
+
+Hong Kong, August 26, 2026
+
+As of the date of this announcement, the Board comprises: (i) Dr. Yan Junjie, Ms. Yun Yeyi, Mr.
+Zhao Pengyu and Mr. Zhou Yucong as executive Directors; (ii) Mr. Chen Yingjie and Mr. Liu Wei
+as non-executive Directors; and (iii) Mr. Huang Guobin, Dr. Wang Pengcheng and Dr. Li Ziqing as
+independent non-executive Directors.
+
+
+
+
+                                               16
+

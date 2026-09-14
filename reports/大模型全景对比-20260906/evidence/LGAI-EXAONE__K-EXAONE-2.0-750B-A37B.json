@@ -1,0 +1,15 @@
+{
+  "repo": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
+  "url": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "In response to the growth of agentic AI, we focused on expanding the model's capabilities in reasoning, agentic workflows, and long-context management. Through careful calibration of the training data and recipes, K-EXAONE 2.0 achieves consistent improvements in agentic coding and long-context understanding, with strong performance on long-context retrieval and safety.",
+    "\t\t<td align=\"center\" style=\"vertical-align: middle; text-align: center\"><strong>Number of Parameters</strong></td>",
+    "\t\t<td align=\"center\" style=\"vertical-align: middle; text-align: center\"><strong>Active Parameters</strong></td>",
+    "            \"parameters\": {",
+    "            \"context\": 262144,"
+  ],
+  "LICENSE_status": 200,
+  "license_head": "Apache 2.0\n\nCopyright © 2026 LG AI Research\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either "
+}

@@ -1,0 +1,117 @@
+{
+  "pop": {
+    "bear": {
+      "revenue": "250",
+      "gm": "0.55",
+      "opex": "0.35",
+      "pe": "10",
+      "annual_profit_prefix": [
+        "80",
+        "65",
+        "50",
+        "40"
+      ],
+      "profit_CNY100m": "36.750000",
+      "dividends_HKD": "5.900273561090673235474880594017242087439",
+      "exit_HKD": "31.91684318234881198214562823626622214732",
+      "CAGR_percent": "-24.48494575804598922426529195318813537534",
+      "shares": "1331779203"
+    },
+    "base": {
+      "revenue": "550",
+      "gm": "0.67",
+      "opex": "0.31",
+      "pe": "16",
+      "annual_profit_prefix": [
+        "105",
+        "115",
+        "125",
+        "135"
+      ],
+      "profit_CNY100m": "145.530000",
+      "dividends_HKD": "13.58159382030928731917792845621197955089",
+      "exit_HKD": "202.2251184033620727188747005049827835254",
+      "CAGR_percent": "6.9815400579602021808372046909580826372",
+      "shares": "1331779203"
+    },
+    "bull": {
+      "revenue": "950",
+      "gm": "0.70",
+      "opex": "0.29",
+      "pe": "22",
+      "annual_profit_prefix": [
+        "140",
+        "175",
+        "210",
+        "250"
+      ],
+      "profit_CNY100m": "286.282500",
+      "dividends_HKD": "23.04271232970823336900780115554775980004",
+      "exit_HKD": "546.9908584590939397500117767131305151608",
+      "CAGR_percent": "29.9199792303403792095546237333976582846",
+      "shares": "1331779203"
+    }
+  },
+  "mini": {
+    "bear": {
+      "revenue_USDb": "1",
+      "gm": "0.25",
+      "rd_USDb": "0.5",
+      "sga_USDb": "0.15",
+      "shares": "750000000",
+      "multiple": "1",
+      "method": "equity_PS",
+      "cash_issue_price": "65",
+      "net_burn_USDb": "4.5",
+      "profit_USDb": "-0.4",
+      "profit_CNY100m": "-27.11480",
+      "equity_value_USDb": "1",
+      "exit_HKD": "10.45393909952423912959664422802593937712",
+      "CAGR_percent": "-50.76676609679694346637497766537524641133",
+      "share_increase_percent": "114.7549181940103261265896975113409781579",
+      "future_equity_proceeds_USDb": "3.125100525512608022187145027807691740304",
+      "residual_cash_USDb": "0.906945412983657",
+      "dividends_HKD": "0"
+    },
+    "base": {
+      "revenue_USDb": "5",
+      "gm": "0.45",
+      "rd_USDb": "1.8",
+      "sga_USDb": "0.5",
+      "shares": "500000000",
+      "multiple": "3",
+      "method": "equity_PS",
+      "cash_issue_price": "150",
+      "net_burn_USDb": "4",
+      "profit_USDb": "-0.05",
+      "profit_CNY100m": "-3.389350",
+      "equity_value_USDb": "15",
+      "exit_HKD": "235.2136297392953804159244951305836359852",
+      "CAGR_percent": "-8.23123922535573228898471392384546324172",
+      "share_increase_percent": "43.16994546267355075105979834089398543860",
+      "future_equity_proceeds_USDb": "2.47671320537713130836296044964373699972",
+      "residual_cash_USDb": "0.7585580928481805",
+      "dividends_HKD": "0"
+    },
+    "bull": {
+      "revenue_USDb": "12",
+      "gm": "0.55",
+      "rd_USDb": "3",
+      "sga_USDb": "1.2",
+      "shares": "450000000",
+      "multiple": "25",
+      "method": "PE",
+      "cash_issue_price": "400",
+      "net_burn_USDb": "3.5",
+      "profit_USDb": "1.800",
+      "profit_CNY100m": "122.01660",
+      "equity_value_USDb": "45.0",
+      "exit_HKD": "784.0454324643179347197483171019454532838",
+      "CAGR_percent": "16.7536902288193409776839126300596561927",
+      "share_increase_percent": "28.85295091640619567595381850680458689470",
+      "future_equity_proceeds_USDb": "4.079204687345148774838833404635107026421",
+      "residual_cash_USDb": "2.861049574816198",
+      "dividends_HKD": "0"
+    }
+  }
+}

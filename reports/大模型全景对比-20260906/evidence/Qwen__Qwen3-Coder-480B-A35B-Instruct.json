@@ -1,0 +1,16 @@
+{
+  "repo": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+  "url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "- **Long-context Capabilities** with native support for **256K** tokens, extendable up to **1M** tokens using Yarn, optimized for repository-scale understanding.",
+    "- Number of Parameters: 480B in total and 35B activated",
+    "- Context Length: **262,144 natively**. ",
+    "**Note: If you encounter out-of-memory (OOM) issues, consider reducing the context length to a shorter value, such as `32,768`.**",
+    "            \"parameters\": {",
+    "1. **Sampling Parameters**:"
+  ],
+  "LICENSE_status": 200,
+  "license_head": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or ent"
+}

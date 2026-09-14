@@ -1,0 +1,34 @@
+{
+  "retrieval_method": "web.run rendered text, 2026-09-06; curl returned empty body; this is an extracted value record, not raw HTML",
+  "cashflow_url": "https://www.stockopedia.com/share-prices/meituan-HKG%3A3690/cashflow/",
+  "unit": "CNY million",
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "CFO": [
+    -4011,
+    11411,
+    40522,
+    57147,
+    -13815
+  ],
+  "capex": [
+    -9010,
+    -5731,
+    -6880,
+    -10999,
+    -13271
+  ],
+  "cash_and_short_term_investments": [
+    116795,
+    112032,
+    145160,
+    168243,
+    166834
+  ],
+  "provider": "Refinitiv as page footer explicitly states"
+}

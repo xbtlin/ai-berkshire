@@ -1,0 +1,18 @@
+NON-COMMERCIAL LICENSE
+Non-commercial use permitted based on MIT-style terms; commercial use requires prior written authorization.
+Copyright (c) 2026 MiniMax
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software for non-commercial purposes, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or provide copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+1. The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+2. If the Software (or any derivative works thereof) is used for any Commercial Use, you shall prominently display "Built with MiniMax M2.7" on a related website, user interface, blogpost, about page or product documentation.
+3. Any Commercial Use of the Software or any derivative work thereof is prohibited without obtaining a separate, prior written authorization from MiniMax.  To request such authorization, please contact api@minimax.io with the subject line "M2.7 licensing".
+4. "Commercial Use" means any use of the Software or any derivative work thereof that is primarily intended for commercial advantage or monetary compensation, which includes, without limitation: (i) offering products or services to third parties for a fee, which utilize, incorporate, or rely on the Software or its derivatives, (ii) the commercial use of APIs provided by or for the Software or its derivatives, including to support or enable commercial products, services, or operations, whether in a cloud-based, hosted, or other similar environment, and (iii) the deployment or provision of the Software or its derivatives that have been subjected to post-training, fine-tuning, instruction-tuning, or any other form of modification, for any commercial purpose.
+5. Permitted Free Uses. The following uses are expressly permitted free of charge: (a) personal use, including self-hosted deployment for coding, development of applications, agents, tools, integrations, research, experimentation, or other personal purposes; (b) use by non-profit organizations, academic institutions, and researchers for non-commercial research or educational purposes; (c) modification of the Software solely for the uses described in (a) or (b) above.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Appendix: Prohibited Uses
+You agree you will not use, or allow others to use, the Software or any derivatives of the Software to:
+1. Generate or disseminate content prohibited by applicable laws or regulations.
+2. Assist with, engage in or otherwise support any military purpose.
+3. Exploit, harm, or attempt to exploit or harm minors.
+4. Generate or disseminate false or misleading information with the intent to cause harm.
+5. Promote discrimination, hate speech, or harmful behavior against individuals or groups based on race or ethnic origin, religion, disability, age, nationality and national origin, veteran status, sexual orientation, gender or gender identity, caste, immigration status, or any other characteristic that is associated with systemic discrimination or marginalization.

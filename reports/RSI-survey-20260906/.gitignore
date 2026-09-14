@@ -1,0 +1,11 @@
+# Local TeX build products; final PDFs are tracked in output/pdf/.
+/arxiv/*.aux
+/arxiv/*.blg
+/arxiv/*.log
+/arxiv/*.out
+/arxiv/*.pdf
+
+# Downloaded reference pages stay local; metadata and evidence notes are tracked.
+/research/*.abs.html
+/research/*.full.html
+/research/*.full.txt

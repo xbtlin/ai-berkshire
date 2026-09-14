@@ -1,0 +1,10 @@
+{
+  "repo": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "* **Long Context & Video Understanding**: Native 256K context, expandable to 1M; handles books and hours-long video with full recall and second-level indexing."
+  ],
+  "LICENSE_status": 404
+}

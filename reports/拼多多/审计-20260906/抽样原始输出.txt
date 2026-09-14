@@ -1,0 +1,136 @@
+======================================================================
+报告数据抽检清单
+文件：/Users/linxuan/ai-berkshire/reports/拼多多/拼多多研究报告-20260906.md
+总提取数据点：57  |  抽样比例：15%  |  抽检数量：9
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  2     26  收入 · 2022                               130557.59  
+  8     27  营业成本 · 2023                              91723.58  
+  9     27  营业成本 · 2024                             153900.37  
+ 15     28  经营利润 · 2025                              93102.13  
+ 18     29  GAAP归母 · 2023                            60026.54  
+ 16     29  GAAP归母 · 2021                             7768.67  
+ 41    123  悲观 · 三年总回报                                 -39.90  %
+ 48    124  基准 · 年化回报                                   12.71  %
+ 54    125  乐观 · 年化回报                                   32.32  %
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 2,
+    "label": "收入 · 2022",
+    "reported_value": 130557.589,
+    "unit": "",
+    "line_number": 26,
+    "raw_text": "| 收入 | 93949.939 | 130557.589 | 247639.205 | 393836.097 | 431845.713 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "营业成本 · 2023",
+    "reported_value": 91723.577,
+    "unit": "",
+    "line_number": 27,
+    "raw_text": "| 营业成本 | 31718.093 | 31462.298 | 91723.577 | 153900.374 | 188801.753 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "营业成本 · 2024",
+    "reported_value": 153900.374,
+    "unit": "",
+    "line_number": 27,
+    "raw_text": "| 营业成本 | 31718.093 | 31462.298 | 91723.577 | 153900.374 | 188801.753 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "经营利润 · 2025",
+    "reported_value": 93102.131,
+    "unit": "",
+    "line_number": 28,
+    "raw_text": "| 经营利润 | 6896.762 | 30401.921 | 58698.762 | 108422.862 | 93102.131 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "GAAP归母 · 2023",
+    "reported_value": 60026.544,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| GAAP归母 | 7768.670 | 31538.062 | 60026.544 | 112434.512 | 97842.539 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 16,
+    "label": "GAAP归母 · 2021",
+    "reported_value": 7768.67,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| GAAP归母 | 7768.670 | 31538.062 | 60026.544 | 112434.512 | 97842.539 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 41,
+    "label": "悲观 · 三年总回报",
+    "reported_value": -39.9,
+    "unit": "%",
+    "line_number": 123,
+    "raw_text": "| 悲观 | -10% | 8 | 49.41 | 0 | -39.90% | -15.61% | 35.17 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 48,
+    "label": "基准 · 年化回报",
+    "reported_value": 12.71,
+    "unit": "%",
+    "line_number": 124,
+    "raw_text": "| 基准 | +5% | 12 | 117.70 | 0 | +43.16% | +12.71% | 83.77 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 54,
+    "label": "乐观 · 年化回报",
+    "reported_value": 32.32,
+    "unit": "%",
+    "line_number": 125,
+    "raw_text": "| 乐观 | +12% | 16 | 190.45 | 0 | +131.66% | +32.32% | 135.56 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

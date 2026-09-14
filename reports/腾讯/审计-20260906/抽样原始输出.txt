@@ -1,0 +1,175 @@
+======================================================================
+报告数据抽检清单
+文件：/Users/linxuan/ai-berkshire/reports/腾讯/腾讯研究报告-20260906.md
+总提取数据点：77  |  抽样比例：15%  |  抽检数量：12
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+ 76      3  研究日期与资料截止                                 2026.00  
+  4     26  收入 · 2024                               660257.00  
+  5     26  收入 · 2025                               751766.00  
+ 15     28  经营利润 · 2025                             241562.00  
+ 14     28  经营利润 · 2024                             208099.00  
+ 12     28  经营利润 · 2022                             110827.00  
+ 18     29  IFRS归母 · 2023                           115216.00  
+ 29     31  经营现金流 · 2024                            258521.00  
+ 32     39  收入 · 2025Q4                             194371.00  
+ 36     40  IFRS归母 · 2025Q4                          58260.00  
+ 55    123  悲观 · 常态利润年增长                                -8.00  %
+ 70    125  乐观 · 2029退出PE                               22.00  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 76,
+    "label": "研究日期与资料截止",
+    "reported_value": 2026.0,
+    "unit": "",
+    "line_number": 3,
+    "raw_text": "研究日期与资料截止：2026年9月6日；行情统一为9月4日正规收盘。股价442.80港元，实际已发行9,103,153,877股，验算市值约40,308.77亿港元。以官方中间价1港元兑0.86458元人民币换算，市值约34,850.15亿",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 4,
+    "label": "收入 · 2024",
+    "reported_value": 660257.0,
+    "unit": "",
+    "line_number": 26,
+    "raw_text": "| 收入 | 560118 | 554552 | 609015 | 660257 | 751766 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "收入 · 2025",
+    "reported_value": 751766.0,
+    "unit": "",
+    "line_number": 26,
+    "raw_text": "| 收入 | 560118 | 554552 | 609015 | 660257 | 751766 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "经营利润 · 2025",
+    "reported_value": 241562.0,
+    "unit": "",
+    "line_number": 28,
+    "raw_text": "| 经营利润 | 124656 | 110827 | 160074 | 208099 | 241562 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 14,
+    "label": "经营利润 · 2024",
+    "reported_value": 208099.0,
+    "unit": "",
+    "line_number": 28,
+    "raw_text": "| 经营利润 | 124656 | 110827 | 160074 | 208099 | 241562 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 12,
+    "label": "经营利润 · 2022",
+    "reported_value": 110827.0,
+    "unit": "",
+    "line_number": 28,
+    "raw_text": "| 经营利润 | 124656 | 110827 | 160074 | 208099 | 241562 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "IFRS归母 · 2023",
+    "reported_value": 115216.0,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| IFRS归母 | 224822 | 188243 | 115216 | 194073 | 224842 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "经营现金流 · 2024",
+    "reported_value": 258521.0,
+    "unit": "",
+    "line_number": 31,
+    "raw_text": "| 经营现金流 | 175186 | 146091 | 221962 | 258521 | 303052 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 32,
+    "label": "收入 · 2025Q4",
+    "reported_value": 194371.0,
+    "unit": "",
+    "line_number": 39,
+    "raw_text": "| 收入 | 192869 | 194371 | 196458 | 204785 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "IFRS归母 · 2025Q4",
+    "reported_value": 58260.0,
+    "unit": "",
+    "line_number": 40,
+    "raw_text": "| IFRS归母 | 63133 | 58260 | 58093 | 56022 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 55,
+    "label": "悲观 · 常态利润年增长",
+    "reported_value": -8.0,
+    "unit": "%",
+    "line_number": 123,
+    "raw_text": "| 悲观 | -8% | 12 | 270.20 | 12 | -36.27% | -13.94% | 200.86 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 70,
+    "label": "乐观 · 2029退出PE",
+    "reported_value": 22.0,
+    "unit": "",
+    "line_number": 125,
+    "raw_text": "| 乐观 | +12% | 22 | 893.74 | 22 | +106.81% | +27.41% | 651.81 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

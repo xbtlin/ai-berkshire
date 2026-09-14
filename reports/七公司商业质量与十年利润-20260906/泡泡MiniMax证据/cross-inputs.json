@@ -1,0 +1,106 @@
+[
+  [
+    "pop_2025_revenue",
+    {
+      "HKEX": 37120.052,
+      "StockAnalysis": 37120
+    },
+    "CNY_million"
+  ],
+  [
+    "pop_2025_parent_profit",
+    {
+      "HKEX": 12775.689,
+      "StockAnalysis": 12776
+    },
+    "CNY_million"
+  ],
+  [
+    "pop_H1_revenue",
+    {
+      "HKEX": 17172.921,
+      "Finet": 17173
+    },
+    "CNY_million"
+  ],
+  [
+    "pop_H1_parent_profit",
+    {
+      "HKEX": 5038.384,
+      "Finet": 5038
+    },
+    "CNY_million"
+  ],
+  [
+    "pop_H1_members_repurchase",
+    {
+      "HKEX": 51.6,
+      "Yicai": 51.6
+    },
+    "percent"
+  ],
+  [
+    "mini_2025_revenue",
+    {
+      "HKEX": 79.038,
+      "StockAnalysis": 79.04
+    },
+    "USD_million"
+  ],
+  [
+    "mini_2025_parent_profit",
+    {
+      "HKEX": -1871.617,
+      "StockAnalysis": -1872
+    },
+    "USD_million"
+  ],
+  [
+    "mini_H1_revenue",
+    {
+      "HKEX_live_PDF": 116.573,
+      "Reuters": 116.6
+    },
+    "USD_million"
+  ],
+  [
+    "mini_H1_parent_profit",
+    {
+      "HKEX_live_PDF": -357.997,
+      "Reuters": -358
+    },
+    "USD_million"
+  ],
+  [
+    "mini_H1_adjusted_profit",
+    {
+      "HKEX_live_PDF": -293.031,
+      "EEO": -293.0
+    },
+    "USD_million"
+  ],
+  [
+    "mini_H1_RD",
+    {
+      "HKEX_live_PDF": 296.87,
+      "EEO": 296.9
+    },
+    "USD_million"
+  ],
+  [
+    "mini_H1_enterprise_revenue",
+    {
+      "HKEX_live_PDF": 73.929,
+      "Reuters": 73.9
+    },
+    "USD_million"
+  ],
+  [
+    "mini_H1_product_revenue",
+    {
+      "HKEX_live_PDF": 42.644,
+      "Reuters": 42.6
+    },
+    "USD_million"
+  ]
+]

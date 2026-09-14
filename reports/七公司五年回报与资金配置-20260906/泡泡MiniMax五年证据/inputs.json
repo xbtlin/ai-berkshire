@@ -1,0 +1,81 @@
+{
+  "pop": {
+    "bear": {
+      "revenue": "250",
+      "gm": "0.55",
+      "opex": "0.35",
+      "pe": "10",
+      "annual_profit_prefix": [
+        "80",
+        "65",
+        "50",
+        "40"
+      ]
+    },
+    "base": {
+      "revenue": "550",
+      "gm": "0.67",
+      "opex": "0.31",
+      "pe": "16",
+      "annual_profit_prefix": [
+        "105",
+        "115",
+        "125",
+        "135"
+      ]
+    },
+    "bull": {
+      "revenue": "950",
+      "gm": "0.70",
+      "opex": "0.29",
+      "pe": "22",
+      "annual_profit_prefix": [
+        "140",
+        "175",
+        "210",
+        "250"
+      ]
+    }
+  },
+  "mini": {
+    "bear": {
+      "revenue_USDb": "1",
+      "gm": "0.25",
+      "rd_USDb": "0.5",
+      "sga_USDb": "0.15",
+      "shares": "750000000",
+      "multiple": "1",
+      "method": "equity_PS",
+      "cash_issue_price": "65",
+      "net_burn_USDb": "4.5"
+    },
+    "base": {
+      "revenue_USDb": "5",
+      "gm": "0.45",
+      "rd_USDb": "1.8",
+      "sga_USDb": "0.5",
+      "shares": "500000000",
+      "multiple": "3",
+      "method": "equity_PS",
+      "cash_issue_price": "150",
+      "net_burn_USDb": "4"
+    },
+    "bull": {
+      "revenue_USDb": "12",
+      "gm": "0.55",
+      "rd_USDb": "3",
+      "sga_USDb": "1.2",
+      "shares": "450000000",
+      "multiple": "25",
+      "method": "PE",
+      "cash_issue_price": "400",
+      "net_burn_USDb": "3.5"
+    }
+  },
+  "fx_HKD_CNY": "0.86458",
+  "fx_USD_CNY": "6.7787",
+  "period_years": 5,
+  "price_date": "2026-09-04",
+  "dividend_reinvestment": false,
+  "probabilities": null
+}

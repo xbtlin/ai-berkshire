@@ -1,0 +1,110 @@
+======================================================================
+报告数据抽检清单
+文件：reports/腾讯/《看懂腾讯》-20260906/08-什么价格值得承担腾讯的未来.md
+总提取数据点：42  |  抽样比例：15%  |  抽检数量：7
+随机种子：20260906（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  3     63  第 1 年 · 乐观                                 130.00  
+  7     65  第 3 年 · 熊市                                  95.00  
+ 20     69  第 10 年现金 · 基准                              268.02  
+ 24    114  核心经营资产价值 · 熊市，8%                          1460.77  
+ 30    116  总股权价值 · 熊市，8%                             1921.40  
+ 33    117  按 92 亿股及汇率折算每股 · 熊市，8%                     244.01  
+ 38    150  永续增速由 2% 降为 1% · 每股条件价值，港元                 466.14  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 3,
+    "label": "第 1 年 · 乐观",
+    "reported_value": 130.0,
+    "unit": "",
+    "line_number": 63,
+    "raw_text": "| 第 1 年 | 50 | 100 | 130 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 7,
+    "label": "第 3 年 · 熊市",
+    "reported_value": 95.0,
+    "unit": "",
+    "line_number": 65,
+    "raw_text": "| 第 3 年 | 95 | 170 | 220 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 20,
+    "label": "第 10 年现金 · 基准",
+    "reported_value": 268.02,
+    "unit": "",
+    "line_number": 69,
+    "raw_text": "| 第 10 年现金 | 132.49 | 268.02 | 440.80 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "核心经营资产价值 · 熊市，8%",
+    "reported_value": 1460.77,
+    "unit": "",
+    "line_number": 114,
+    "raw_text": "| 核心经营资产价值 | 1,460.77 | 3,397.83 | 5,336.47 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 30,
+    "label": "总股权价值 · 熊市，8%",
+    "reported_value": 1921.4,
+    "unit": "",
+    "line_number": 116,
+    "raw_text": "| 总股权价值 | 1,921.40 | 3,989.73 | 6,054.67 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 33,
+    "label": "按 92 亿股及汇率折算每股 · 熊市，8%",
+    "reported_value": 244.01,
+    "unit": "",
+    "line_number": 117,
+    "raw_text": "| 按 92 亿股及汇率折算每股 | 244.01 | 506.68 | 768.92 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 38,
+    "label": "永续增速由 2% 降为 1% · 每股条件价值，港元",
+    "reported_value": 466.14,
+    "unit": "",
+    "line_number": 150,
+    "raw_text": "| 永续增速由 2% 降为 1% | 466.14 | 十年之后增长更弱，对今天价值影响多大 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

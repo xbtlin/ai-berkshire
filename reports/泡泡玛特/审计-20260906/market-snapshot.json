@@ -1,0 +1,81 @@
+{
+  "retrieved_at": "2026-09-06T02:31:16.704726",
+  "source": "https://qt.gtimg.cn/q=hk00700,hk01024,hk03690,hk09992,hk00100,usPDD",
+  "field_mapping": {
+    "3": "price",
+    "30": "quote_timestamp",
+    "45": "total_market_cap_100m"
+  },
+  "caution": "Shares implied by quote price and cap are a consistency check, not an independent shares verification. Exchange month-end reports control legal issued shares.",
+  "quotes": [
+    {
+      "provider_symbol": "v_hk00700",
+      "name": "腾讯控股",
+      "symbol": "00700",
+      "regular_close": "442.800",
+      "quote_timestamp": "2026/09/04 16:08:06",
+      "market_cap_100m": "40308.7654",
+      "currency": "HKD",
+      "shares_implied_from_cap": "9103153884.372177055103884372"
+    },
+    {
+      "provider_symbol": "v_hk01024",
+      "name": "快手-W",
+      "symbol": "01024",
+      "regular_close": "33.660",
+      "quote_timestamp": "2026/09/04 16:08:06",
+      "market_cap_100m": "1456.4551",
+      "currency": "HKD",
+      "shares_implied_from_cap": "4326961081.402257872846108140"
+    },
+    {
+      "provider_symbol": "v_hk03690",
+      "name": "美团-W",
+      "symbol": "03690",
+      "regular_close": "81.750",
+      "quote_timestamp": "2026/09/04 16:08:06",
+      "market_cap_100m": "5048.4588",
+      "currency": "HKD",
+      "shares_implied_from_cap": "6175484770.642201834862385321"
+    },
+    {
+      "provider_symbol": "v_hk09992",
+      "name": "泡泡玛特",
+      "symbol": "09992",
+      "regular_close": "154.000",
+      "quote_timestamp": "2026/09/04 16:08:06",
+      "market_cap_100m": "2050.9400",
+      "currency": "HKD",
+      "shares_implied_from_cap": "1331779220.779220779220779221"
+    },
+    {
+      "provider_symbol": "v_hk00100",
+      "name": "MINIMAX-W",
+      "symbol": "00100",
+      "regular_close": "361.400",
+      "quote_timestamp": "2026/09/04 16:08:06",
+      "market_cap_100m": "1262.1364",
+      "currency": "HKD",
+      "shares_implied_from_cap": "349235307.1389042612064194798"
+    },
+    {
+      "provider_symbol": "v_usPDD",
+      "name": "拼多多",
+      "symbol": "PDD.OQ",
+      "regular_close": "82.21",
+      "quote_timestamp": "2026-09-04 16:00:01",
+      "market_cap_100m": "1170.17423",
+      "currency": "USD",
+      "shares_implied_from_cap": "1423396460.284636905485950614"
+    }
+  ],
+  "valuation_fx": {
+    "date": "2026-09-04",
+    "type": "official central parity, not market close",
+    "USD_CNY": "6.7787",
+    "HKD_CNY": "0.86458",
+    "USD_HKD_derived": "7.840454324643179347197483171",
+    "source": "https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760",
+    "secondary_publisher": "https://english.news.cn/20260904/790d1ee7b6864f7b96752579a210e783/c.html"
+  }
+}

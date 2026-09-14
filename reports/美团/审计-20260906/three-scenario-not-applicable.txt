@@ -1,0 +1,1 @@
+TTM归母净利润为负；EPS增长×PE无法表示由亏转盈。未运行无经济意义的负PE three-scenario，改用financial_rigor calc逐项验证核心收入×分部利润率−新业务亏损−未分配费用−税、盈余现金和战略投资三情景。

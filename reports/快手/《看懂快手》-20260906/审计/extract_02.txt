@@ -1,0 +1,58 @@
+======================================================================
+报告数据抽检清单
+文件：reports/快手/《看懂快手》-20260906/02-可灵值多少钱先问谁付成本.md
+总提取数据点：9  |  抽样比例：15%  |  抽检数量：3
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  2     75  有效定价、利用率较高 · 渠道与服务成本                        15.00  
+  1     75  有效定价、利用率较高 · 直接生成及交付成本                      25.00  
+  6     76  价格竞争与正常使用 · 覆盖训练研发前的贡献                      40.00  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 2,
+    "label": "有效定价、利用率较高 · 渠道与服务成本",
+    "reported_value": 15.0,
+    "unit": "",
+    "line_number": 75,
+    "raw_text": "| 有效定价、利用率较高 | 25 | 15 | 60 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 1,
+    "label": "有效定价、利用率较高 · 直接生成及交付成本",
+    "reported_value": 25.0,
+    "unit": "",
+    "line_number": 75,
+    "raw_text": "| 有效定价、利用率较高 | 25 | 15 | 60 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 6,
+    "label": "价格竞争与正常使用 · 覆盖训练研发前的贡献",
+    "reported_value": 40.0,
+    "unit": "",
+    "line_number": 76,
+    "raw_text": "| 价格竞争与正常使用 | 45 | 15 | 40 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

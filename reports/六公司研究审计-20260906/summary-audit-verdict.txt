@@ -1,0 +1,29 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：六公司研究汇总-20260906.md
+======================================================================
+
+  [92m✅ 通过[0m [ 2] [腾讯](腾讯/腾讯研究报告-20260906.md) · 悲观退出价  报告:       270.20 
+                                                    Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt: 270.20 (偏差 0.00%)
+  [92m✅ 通过[0m [ 8] [PDD](拼多多/拼多多研究报告-20260906.md) · 基准  报告:       117.70 
+                                                    Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt: 117.70 (偏差 0.00%)
+  [92m✅ 通过[0m [ 9] [PDD](拼多多/拼多多研究报告-20260906.md) · 乐观  报告:       190.45 
+                                                    Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt: 190.45 (偏差 0.00%)
+  [92m✅ 通过[0m [ 7] [PDD](拼多多/拼多多研究报告-20260906.md) · 悲观  报告:        49.41 
+                                                    Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt: 49.41 (偏差 0.00%)
+  [92m✅ 通过[0m [15] [快手](快手/快手研究报告-20260906.md) · 基准等效年  报告:        24.30 %
+                                                    Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt: 24.26 (偏差 0.16%)
+  [92m✅ 通过[0m [18] [美团](美团/美团研究报告-20260906.md) · 基准退出价  报告:        90.23 
+                                                    Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt: 90.23 (偏差 0.00%)
+  [92m✅ 通过[0m [16] [美团](美团/美团研究报告-20260906.md) · 正规收盘价  报告:        81.75 
+                                                    Tencent quote regular close 2026-09-04; market-snapshot.json: 81.75 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/3690/history/: 81.75 (偏差 0.00%)
+  [92m✅ 通过[0m [41] PDD · 原三年基准年化                        报告:        12.70 %
+                                                    Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt: 12.71 (偏差 0.04%)
+  [92m✅ 通过[0m [48] 美团 · 退出价值低20%的三年年化                   报告:        -4.10 %
+                                                    Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt: -4.06 (偏差 0.92%)
+
+----------------------------------------------------------------------
+  抽检总数: 9  |  通过: [92m9[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================

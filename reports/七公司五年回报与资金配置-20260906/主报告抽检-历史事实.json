@@ -1,0 +1,14 @@
+[
+  {
+    "id": 24,
+    "label": "美团 · 起始价格",
+    "reported_value": 81.75,
+    "unit": "",
+    "line_number": 18,
+    "raw_text": "| 美团 | HKD 81.75 | -35.2% | **-0.8%** | 20.4% | 偏低；利润恢复幅度难判断 | **0%** |",
+    "fetched_value": 81.75,
+    "fetched_source": "https://www.investing.com/equities/meituan-dianping-historical-data ; regular close 2026-09-04, live inspected in this task",
+    "fetched_value2": 81.75,
+    "fetched_source2": "https://stockanalysis.com/quote/hkg/3690/history/ ; same close, live inspected in this task"
+  }
+]

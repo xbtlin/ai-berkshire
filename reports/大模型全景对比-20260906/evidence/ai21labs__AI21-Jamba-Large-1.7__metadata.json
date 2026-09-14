@@ -1,0 +1,13 @@
+{
+  "id": "ai21labs/AI21-Jamba-Large-1.7",
+  "sha": "f95d1c3c9ac9028a9306e717047b5515e73c1dd1",
+  "lastModified": "2026-02-02T11:29:54.000Z",
+  "gated": "auto",
+  "safetensors": {
+    "parameters": {
+      "BF16": 398555145696
+    },
+    "total": 398555145696
+  },
+  "weights_files": 166
+}

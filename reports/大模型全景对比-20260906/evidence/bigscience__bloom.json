@@ -1,0 +1,14 @@
+{
+  "repo": "bigscience/bloom",
+  "url": "https://huggingface.co/bigscience/bloom",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: bigscience-bloom-rail-1.0",
+    "**License:** RAIL License v1.0 ([link](https://huggingface.co/spaces/bigscience/license) / [article and FAQ](https://bigscience.huggingface.co/blog/the-bigscience-rail-license))",
+    "* 176,247,271,424 parameters:",
+    "    * 3,596,615,680 embedding parameters",
+    "-   Non-commercial entities",
+    "Blog post on the hardware/engineering side: https://bigscience.huggingface.co/blog/which-hardware-to-train-a-176b-parameters-model"
+  ],
+  "LICENSE_error": "Command '['curl', '-L', '--max-time', '25', '-sS', '-w', '\\n%{http_code}', 'https://huggingface.co/bigscience/bloom/raw/main/LICENSE']' returned non-zero exit status 35."
+}

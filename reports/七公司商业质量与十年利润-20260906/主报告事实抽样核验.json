@@ -1,0 +1,39 @@
+[
+  {
+    "id": 2,
+    "label": "腾讯 · 最新一期归母净利润",
+    "reported_value": 1141.15,
+    "unit": "",
+    "line_number": 65,
+    "raw_text": "| 腾讯 | 2248.42 | 1141.15（2026H1） | [双源与原件](腾讯与拼多多底稿.md) |",
+    "fetched_value": 1141.15,
+    "fetched_source": "HKEX https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0812/2026081200296.pdf",
+    "fetched_value2": 1141.15,
+    "fetched_source2": "S&P Capital IQ https://www.marketscreener.com/news/tencent-holdings-limited-reports-earnings-results-for-the-second-quarter-and-six-months-ended-june-3-ce7859d8db80f42d"
+  },
+  {
+    "id": 5,
+    "label": "阿里巴巴 · 最近完整年度归母净利润",
+    "reported_value": 1059.04,
+    "unit": "",
+    "line_number": 67,
+    "raw_text": "| 阿里巴巴 | 1059.04（FY2026） | 105.37（2026年6月季度） | [双源与原件](阿里巴巴底稿.md) |",
+    "fetched_value": 1059.04,
+    "fetched_source": "HKEX https://www.hkexnews.hk/listedco/listconews/sehk/2026/0618/2026061800844.pdf",
+    "fetched_value2": 1059.04,
+    "fetched_source2": "https://stockanalysis.com/stocks/baba/financials/"
+  },
+  {
+    "id": 8,
+    "label": "美团 · 最新一期归母净利润",
+    "reported_value": -46.72,
+    "unit": "",
+    "line_number": 68,
+    "raw_text": "| 美团 | -233.55 | -46.72（2026H1，四舍五入） | [双源与归属口径](快手与美团底稿.md) |",
+    "fetched_value": -46.72487,
+    "fetched_source": "HKEX https://www.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082800436_c.pdf",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "source_gap": "第三方只核验集团亏损-46.72036亿元，不能充当精确归母第二源。"
+  }
+]

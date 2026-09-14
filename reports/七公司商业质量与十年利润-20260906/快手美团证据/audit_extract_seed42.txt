@@ -1,0 +1,201 @@
+======================================================================
+报告数据抽检清单
+文件：/Users/linxuan/ai-berkshire/reports/七公司商业质量与十年利润-20260906/快手与美团底稿.md
+总提取数据点：89  |  抽样比例：15%  |  抽检数量：14
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  4     12  快手2026上半年 · 收入                             692.51
+  5     12  快手2026上半年 · IFRS归母净利润                       60.49
+ 12     14  美团2026上半年 · 公司经调整净利润，非IFRS                 -24.44
+ 14     50  美团 · 已披露的经营或资本配置行为                        2025.00
+ 15     64  快手平均日活，百万人 · 悲观                            300.00
+ 18     65  每位日活年度广告收入，人民币元 · 悲观                       180.00
+ 29     68  电商GMV · 乐观                               35000.00
+ 32     69  技术佣金净收入/GMV · 乐观                             1.60  %
+ 36     71  传统收入合计 · 悲观                                872.00
+ 55     77  可灵归属快手利润 · 基准                               30.00
+ 70     95  核心分部经营利润 · 乐观                             1190.00
+ 76     97  总部及持续股份薪酬等费用 · 乐观                         -220.00
+ 82     99  税前可持续利润 · 乐观                              1090.00
+ 87    101  2036可持续税后归母利润 · 乐观                         872.00
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 4,
+    "label": "快手2026上半年 · 收入",
+    "reported_value": 692.51,
+    "unit": "",
+    "line_number": 12,
+    "raw_text": "| 快手2026上半年 | 692.51 | 60.49 | 72.87 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "快手2026上半年 · IFRS归母净利润",
+    "reported_value": 60.49,
+    "unit": "",
+    "line_number": 12,
+    "raw_text": "| 快手2026上半年 | 692.51 | 60.49 | 72.87 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 12,
+    "label": "美团2026上半年 · 公司经调整净利润，非IFRS",
+    "reported_value": -24.44,
+    "unit": "",
+    "line_number": 14,
+    "raw_text": "| 美团2026上半年 | 1956.82 | -46.72 | -24.44 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 14,
+    "label": "美团 · 已披露的经营或资本配置行为",
+    "reported_value": 2025.0,
+    "unit": "",
+    "line_number": 50,
+    "raw_text": "| 美团 | 核心业务在2025竞争中转亏，仍建设本地供给与国际业务；年报同时披露关停美团优选；2024大额回购之后，2025回购显著收缩 | 强执行、重运营、围绕用户场景扩展；有退出旧业务的行为，竞争加剧时转为保留现金 | 不能据此判断补",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "快手平均日活，百万人 · 悲观",
+    "reported_value": 300.0,
+    "unit": "",
+    "line_number": 64,
+    "raw_text": "| 快手平均日活，百万人 | 300 | 400 | 450 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "每位日活年度广告收入，人民币元 · 悲观",
+    "reported_value": 180.0,
+    "unit": "",
+    "line_number": 65,
+    "raw_text": "| 每位日活年度广告收入，人民币元 | 180 | 280 | 350 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "电商GMV · 乐观",
+    "reported_value": 35000.0,
+    "unit": "",
+    "line_number": 68,
+    "raw_text": "| 电商GMV | 11000 | 23000 | 35000 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 32,
+    "label": "技术佣金净收入/GMV · 乐观",
+    "reported_value": 1.6,
+    "unit": "%",
+    "line_number": 69,
+    "raw_text": "| 技术佣金净收入/GMV | 1.2% | 1.4% | 1.6% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "传统收入合计 · 悲观",
+    "reported_value": 872.0,
+    "unit": "",
+    "line_number": 71,
+    "raw_text": "| 传统收入合计 | 872 | 1722 | 2485 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 55,
+    "label": "可灵归属快手利润 · 基准",
+    "reported_value": 30.0,
+    "unit": "",
+    "line_number": 77,
+    "raw_text": "| 可灵归属快手利润 | -3.60 | 30.00 | 80.00 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 70,
+    "label": "核心分部经营利润 · 乐观",
+    "reported_value": 1190.0,
+    "unit": "",
+    "line_number": 95,
+    "raw_text": "| 核心分部经营利润 | 210 | 650 | 1190 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 76,
+    "label": "总部及持续股份薪酬等费用 · 乐观",
+    "reported_value": -220.0,
+    "unit": "",
+    "line_number": 97,
+    "raw_text": "| 总部及持续股份薪酬等费用 | -180 | -180 | -220 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 82,
+    "label": "税前可持续利润 · 乐观",
+    "reported_value": 1090.0,
+    "unit": "",
+    "line_number": 99,
+    "raw_text": "| 税前可持续利润 | -70 | 480 | 1090 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 87,
+    "label": "2036可持续税后归母利润 · 乐观",
+    "reported_value": 872.0,
+    "unit": "",
+    "line_number": 101,
+    "raw_text": "| **2036可持续税后归母利润** | **-70** | **384** | **872** |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

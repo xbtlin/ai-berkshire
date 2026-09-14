@@ -1,0 +1,14 @@
+{
+  "repo": "inclusionAI/Ling-2.6-1T-base",
+  "url": "https://huggingface.co/inclusionAI/Ling-2.6-1T-base",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "Ling-2.6-1T-base is designed to preserve the capability of the Ling-2.0 trillion-scale backbone while making long-context training and inference materially more efficient. The core upgrade is a hybrid attention retrofit that combines Lightning Attention with MLA in a 7:1 ratio, together with a smooth migration pipeline from the original GQA-based architecture.",
+    "According to the technical report, the model is trained through approximately 9.6T tokens across migration pre-training, continued pre-training, and mid-training, with staged context extension from 4K to 256K. The same base checkpoint is later specialized into:",
+    "- Long-context training pipeline extended to 256K context during mid-training",
+    "| Context training schedule | 4K -> 32K -> 256K |",
+    "In the technical report, Ling-2.6-1T-base shows broad gains over Ling-2.0-1T-base, especially on factual knowledge, multilingual knowledge coverage, long-context understanding, and reasoning-oriented evaluations, while preserving or improving strong math and code capability. One notable exception in this selected subset is MMLU-Pro, where Ling-2.0-1T-base remains slightly higher."
+  ],
+  "LICENSE_status": 404
+}

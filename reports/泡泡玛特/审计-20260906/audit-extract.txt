@@ -1,0 +1,201 @@
+======================================================================
+报告数据抽检清单
+文件：/Users/linxuan/ai-berkshire/reports/泡泡玛特/泡泡玛特研究报告-20260906.md
+总提取数据点：93  |  抽样比例：15%  |  抽检数量：14
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  4     26  收入 · 2024                                  130.38  
+  5     26  收入 · 2025                                  371.20  
+ 12     27  归母净利润 · 2026上半年                             50.38  
+ 15     28  毛利率 · 2023                                  61.30  %
+ 18     28  毛利率 · 2026上半年                               69.70  %
+ 14     28  毛利率 · 2022                                  57.50  %
+ 29     30  经营现金流 · 2025                               108.65  
+ 36     31  现金及等价物 · 2026上半年                           124.42  
+ 32     31  现金及等价物 · 2022                                6.85  
+ 55    169  正常化年度利润，亿元 · 本报告口径                         112.00  
+ 70    197  悲观 · 退出PE                                   10.00  倍
+ 76    199  乐观 · 退出PE                                   22.00  倍
+ 82    210  三年现金股息合计 · 乐观                               10.62  
+ 87    212  从154元出发三年含息年化 · 基准                           9.93  %
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 4,
+    "label": "收入 · 2024",
+    "reported_value": 130.38,
+    "unit": "",
+    "line_number": 26,
+    "raw_text": "| 收入 | 44.91 | 46.17 | 63.01 | 130.38 | 371.20 | 171.73 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "收入 · 2025",
+    "reported_value": 371.2,
+    "unit": "",
+    "line_number": 26,
+    "raw_text": "| 收入 | 44.91 | 46.17 | 63.01 | 130.38 | 371.20 | 171.73 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 12,
+    "label": "归母净利润 · 2026上半年",
+    "reported_value": 50.38,
+    "unit": "",
+    "line_number": 27,
+    "raw_text": "| 归母净利润 | 8.54 | 4.76 | 10.82 | 31.25 | 127.76 | 50.38 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "毛利率 · 2023",
+    "reported_value": 61.3,
+    "unit": "%",
+    "line_number": 28,
+    "raw_text": "| 毛利率 | 61.4% | 57.5% | 61.3% | 66.8% | 72.1% | 69.7% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "毛利率 · 2026上半年",
+    "reported_value": 69.7,
+    "unit": "%",
+    "line_number": 28,
+    "raw_text": "| 毛利率 | 61.4% | 57.5% | 61.3% | 66.8% | 72.1% | 69.7% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 14,
+    "label": "毛利率 · 2022",
+    "reported_value": 57.5,
+    "unit": "%",
+    "line_number": 28,
+    "raw_text": "| 毛利率 | 61.4% | 57.5% | 61.3% | 66.8% | 72.1% | 69.7% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "经营现金流 · 2025",
+    "reported_value": 108.65,
+    "unit": "",
+    "line_number": 30,
+    "raw_text": "| 经营现金流 | 7.79 | 8.91 | 19.91 | 49.54 | 108.65 | 36.37 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "现金及等价物 · 2026上半年",
+    "reported_value": 124.42,
+    "unit": "",
+    "line_number": 31,
+    "raw_text": "| 现金及等价物 | 52.65 | 6.85 | 20.78 | 61.09 | 137.75 | 124.42 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 32,
+    "label": "现金及等价物 · 2022",
+    "reported_value": 6.85,
+    "unit": "",
+    "line_number": 31,
+    "raw_text": "| 现金及等价物 | 52.65 | 6.85 | 20.78 | 61.09 | 137.75 | 124.42 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 55,
+    "label": "正常化年度利润，亿元 · 本报告口径",
+    "reported_value": 112.0,
+    "unit": "",
+    "line_number": 169,
+    "raw_text": "| 正常化年度利润，亿元 | 112 | 本报告情景基点，非公司指引 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 70,
+    "label": "悲观 · 退出PE",
+    "reported_value": 10.0,
+    "unit": "倍",
+    "line_number": 197,
+    "raw_text": "| 悲观 | -15% | 68.78 | 10倍 | 海外及老IP继续回落，库存和低店效侵蚀利润，新品不能充分抵消 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 76,
+    "label": "乐观 · 退出PE",
+    "reported_value": 22.0,
+    "unit": "倍",
+    "line_number": 199,
+    "raw_text": "| 乐观 | +20% | 193.54 | 22倍 | 多IP和海外复购得到验证，渠道效率恢复，非单款重演热潮 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 82,
+    "label": "三年现金股息合计 · 乐观",
+    "reported_value": 10.62,
+    "unit": "",
+    "line_number": 210,
+    "raw_text": "| 三年现金股息合计 | 5.32 | 8.53 | 10.62 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 87,
+    "label": "从154元出发三年含息年化 · 基准",
+    "reported_value": 9.93,
+    "unit": "%",
+    "line_number": 212,
+    "raw_text": "| 从154元出发三年含息年化 | -24.97% | +9.93% | +35.18% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

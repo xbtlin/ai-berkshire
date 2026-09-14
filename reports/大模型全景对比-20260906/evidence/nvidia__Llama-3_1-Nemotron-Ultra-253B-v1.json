@@ -1,0 +1,17 @@
+{
+  "repo": "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+  "url": "https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "Llama-3.1-Nemotron-Ultra-253B-v1 is a large language model (LLM) which is a derivative of [Meta Llama-3.1-405B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct) (AKA the *reference model*). It is a reasoning model that is post trained for reasoning, human chat preferences, and tasks, such as RAG and tool calling. The model supports a context length of 128K tokens. This model fits on a single 8xH100 node for inference.",
+    "This model is ready for commercial use. ",
+    "** This model has 253B model parameters. <br> ",
+    "- **Input Parameters:** One-Dimensional (1D)  ",
+    "- **Other Properties Related to Input:** Context length up to 131,072 tokens",
+    "- **Output Parameters:** One-Dimensional (1D)  ",
+    "- **Other Properties Related to Output:** Context length up to 131,072 tokens",
+    "If none of the function can be used, point it out. If the given question lacks the parameters required by the function,"
+  ],
+  "LICENSE_status": 404
+}

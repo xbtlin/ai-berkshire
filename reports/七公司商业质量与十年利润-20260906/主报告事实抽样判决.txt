@@ -1,0 +1,17 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：/Users/linxuan/ai-berkshire/reports/七公司商业质量与十年利润-20260906/七公司对比研究报告-20260906.md
+======================================================================
+
+  [92m✅ 通过[0m [ 2] 腾讯 · 最新一期归母净利润                       报告:      1141.15
+                                                    HKEX https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0812/2026081200296.pdf: 1141.15 (偏差 0.00%)  |  S&P Capital IQ https://www.marketscreener.com/news/tencent-holdings-limited-reports-earnings-results-for-the-second-quarter-and-six-months-ended-june-3-ce7859d8db80f42d: 1141.15 (偏差 0.00%)
+  [92m✅ 通过[0m [ 5] 阿里巴巴 · 最近完整年度归母净利润                   报告:      1059.04
+                                                    HKEX https://www.hkexnews.hk/listedco/listconews/sehk/2026/0618/2026061800844.pdf: 1059.04 (偏差 0.00%)  |  https://stockanalysis.com/stocks/baba/financials/: 1059.04 (偏差 0.00%)
+  [92m✅ 通过[0m [ 8] 美团 · 最新一期归母净利润                       报告:       -46.72
+                                                    HKEX https://www.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082800436_c.pdf: -46.72 (偏差 0.01%)
+
+----------------------------------------------------------------------
+  抽检总数: 3  |  通过: [92m3[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================

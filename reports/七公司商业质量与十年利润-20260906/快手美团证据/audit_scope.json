@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "sample_count": 14,
+  "historical_facts": 3,
+  "model_consistency_only": 10,
+  "excluded": [
+    {
+      "id": 14,
+      "label": "美团 · 已披露的经营或资本配置行为",
+      "reported_value": 2025.0,
+      "unit": "",
+      "raw_text": "| 美团 | 核心业务在2025竞争中转亏，仍建设本地供给与国际业务；年报同时披露关停美团优选；2024大额回购之后，2025回购显著收缩 | 强执行、重运营、围绕用户场景扩展；有退出旧业务的行为，竞争加剧时转为保留现金 | 不能据此判断补",
+      "line_number": 50,
+      "reason": "The extractor matched the year 2025 in a narrative table, not a financial amount. Full behavior claim checked in official annual report."
+    }
+  ],
+  "forecast_validated": false
+}

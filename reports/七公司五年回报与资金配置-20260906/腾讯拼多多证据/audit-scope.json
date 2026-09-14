@@ -1,0 +1,27 @@
+{
+  "seed": 42,
+  "sample_count": 15,
+  "historical_fact_count": 1,
+  "model_count": 13,
+  "excluded": [
+    {
+      "id": 5,
+      "label": "法定已发行数量 · 核验边界",
+      "reported_value": 9.0,
+      "unit": "",
+      "line_number": 12,
+      "raw_text": "| 法定已发行数量 | 9,103,153,877股 | 5,693,585,848普通股，即1,423,396,462 ADS | 腾讯为9月4日；PDD为年报披露2026年3月18日，不能写成9月4日精确股本 |",
+      "fetched_value": null,
+      "fetched_source": "",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "exclusion_reason": "Parser captured the month 9 in the source-date boundary column; this is not a financial assertion."
+    }
+  ],
+  "limitations": [
+    "Sampled PDD exact shares use one official source, not two independent exact share counts.",
+    "Other price and FX facts were separately cross-validated with financial_rigor.",
+    "Model assumptions and forecast outputs are not externally provable facts.",
+    "PASS concerns arithmetic and provenance consistency only, not expected investment outcomes."
+  ]
+}

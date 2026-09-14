@@ -1,0 +1,268 @@
+{
+  "Tencent FY2025 revenue yi": {
+    "expression": "751766/100",
+    "decimal_result": "7517.66",
+    "tool_result": "7517.66",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "Tencent FY2025 profit yi": {
+    "expression": "224842/100",
+    "decimal_result": "2248.42",
+    "tool_result": "2248.42",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "Tencent FY2025 nonIFRS yi": {
+    "expression": "259626/100",
+    "decimal_result": "2596.26",
+    "tool_result": "2596.26",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "Tencent H12026 revenue yi": {
+    "expression": "401243/100",
+    "decimal_result": "4012.43",
+    "tool_result": "4012.43",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "Tencent H12026 profit yi": {
+    "expression": "114115/100",
+    "decimal_result": "1141.15",
+    "tool_result": "1141.15",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "Tencent H12026 nonIFRS yi": {
+    "expression": "136320/100",
+    "decimal_result": "1363.2",
+    "tool_result": "1363.2",
+    "absolute_residual": "0.0",
+    "pass": true
+  },
+  "Tencent H12026 operating profit yi": {
+    "expression": "134651/100",
+    "decimal_result": "1346.51",
+    "tool_result": "1346.51",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "Tencent H12026 SBC included attributable yi": {
+    "expression": "14949/100",
+    "decimal_result": "149.49",
+    "tool_result": "149.49",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "Tencent FY2025 repurchase and cash dividend yi": {
+    "expression": "(73312+37535)/100",
+    "decimal_result": "1108.47",
+    "tool_result": "1108.47",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "Tencent H12026 repurchase and cash dividend yi": {
+    "expression": "(22257+41595)/100",
+    "decimal_result": "638.52",
+    "tool_result": "638.52",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "Tencent TTM normalized bridge yi": {
+    "expression": "(259626+136320-124381-30756)/100-108.09",
+    "decimal_result": "2300.00",
+    "tool_result": "2300.0",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "PDD FY2025 revenue yi": {
+    "expression": "431845.713/100",
+    "decimal_result": "4318.45713",
+    "tool_result": "4318.45713",
+    "absolute_residual": "0.00000",
+    "pass": true
+  },
+  "PDD FY2025 profit yi": {
+    "expression": "97842.539/100",
+    "decimal_result": "978.42539",
+    "tool_result": "978.42539",
+    "absolute_residual": "0.00000",
+    "pass": true
+  },
+  "PDD FY2025 operating profit yi": {
+    "expression": "93102.131/100",
+    "decimal_result": "931.02131",
+    "tool_result": "931.02131",
+    "absolute_residual": "0.00000",
+    "pass": true
+  },
+  "PDD H12026 revenue yi": {
+    "expression": "218587/100",
+    "decimal_result": "2185.87",
+    "tool_result": "2185.87",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "PDD H12026 profit yi": {
+    "expression": "39729/100",
+    "decimal_result": "397.29",
+    "tool_result": "397.29",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "PDD H12026 operating profit yi": {
+    "expression": "47330/100",
+    "decimal_result": "473.3",
+    "tool_result": "473.3",
+    "absolute_residual": "0.0",
+    "pass": true
+  },
+  "PDD H12026 nonGAAP yi": {
+    "expression": "42560/100",
+    "decimal_result": "425.6",
+    "tool_result": "425.6",
+    "absolute_residual": "0.0",
+    "pass": true
+  },
+  "PDD H12026 SBC yi": {
+    "expression": "(42560-39729)/100",
+    "decimal_result": "28.31",
+    "tool_result": "28.31",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "PDD FY2025 adjusted audit difference yi": {
+    "expression": "(99364.469-97842.539)/100",
+    "decimal_result": "15.2193",
+    "tool_result": "15.21929999999993",
+    "absolute_residual": "7E-14",
+    "pass": true
+  },
+  "PDD FY2025 operating margin pct": {
+    "expression": "93102.131/431845.713*100",
+    "decimal_result": "21.55911896247074704664255865844383176730",
+    "tool_result": "21.559118962470748",
+    "absolute_residual": "9.5335744134155616823270E-16",
+    "pass": true
+  },
+  "PDD FY2024 operating margin pct": {
+    "expression": "108422.862/393836.097*100",
+    "decimal_result": "27.52994528076485584306407545979717547323",
+    "tool_result": "27.529945280764856",
+    "absolute_residual": "1.5693592454020282452677E-16",
+    "pass": true
+  },
+  "PDD H12026 cash investments yi": {
+    "expression": "(128918+327496)/100",
+    "decimal_result": "4564.14",
+    "tool_result": "4564.14",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "PDD normalized bridge yi": {
+    "expression": "(93102.131+47330-41879)/100*0.8+80-18.425048",
+    "decimal_result": "850.000000",
+    "tool_result": "850.0000000000001",
+    "absolute_residual": "1E-13",
+    "pass": true
+  },
+  "Tencent model 2026 income check": {
+    "expression": "3900*0.32+1650*0.35+2400*0.16+200-100",
+    "decimal_result": "2309.50",
+    "tool_result": "2309.5",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "PDD model 2026 income check": {
+    "expression": "2200*0.35+2350*0+80",
+    "decimal_result": "850.00",
+    "tool_result": "850.0",
+    "absolute_residual": "0.00",
+    "pass": true
+  },
+  "Tencent 2036 bear profit": {
+    "expression": "3900*1**10*0.25+1650*1.02**10*0.25+2400*1**10*0.12+50-100",
+    "decimal_result": "1715.8351982478373162240000",
+    "tool_result": "1715.8351982478375",
+    "absolute_residual": "1.837760000E-13",
+    "pass": true
+  },
+  "Tencent 2036 base profit": {
+    "expression": "3900*1.06**10*0.32+1650*1.09**10*0.35+2400*1.06**10*0.18+250-50",
+    "decimal_result": "4575.7766522689417871975750",
+    "tool_result": "4575.776652268944",
+    "absolute_residual": "2.2128024250E-12",
+    "pass": true
+  },
+  "Tencent 2036 bull profit": {
+    "expression": "3900*1.08**10*0.36+1650*1.12**10*0.40+2400*1.09**10*0.22+350-50",
+    "decimal_result": "6630.9585338628084709646400",
+    "tool_result": "6630.958533862813",
+    "absolute_residual": "4.5290353600E-12",
+    "pass": true
+  },
+  "PDD 2036 bear profit": {
+    "expression": "2200*1**10*0.25+2350*0.98**10*(-0.03)+40",
+    "decimal_result": "532.3963671144279442380800",
+    "tool_result": "532.3963671144279",
+    "absolute_residual": "4.42380800E-14",
+    "pass": true
+  },
+  "PDD 2036 base profit": {
+    "expression": "2200*1.05**10*0.35+2350*1.08**10*0.06+80",
+    "decimal_result": "1638.6572872340928072643400",
+    "tool_result": "1638.6572872340935",
+    "absolute_residual": "6.927356600E-13",
+    "pass": true
+  },
+  "PDD 2036 bull profit": {
+    "expression": "2200*1.08**10*0.40+2350*1.12**10*0.13+120",
+    "decimal_result": "2968.6906252492081935155200",
+    "tool_result": "2968.6906252492104",
+    "absolute_residual": "2.2064844800E-12",
+    "pass": true
+  },
+  "Tencent 2036 bear revenue": {
+    "expression": "3900*1**10+1650*1.02**10+2400*1**10",
+    "decimal_result": "8311.34079299134926489600",
+    "tool_result": "8311.34079299135",
+    "absolute_residual": "7.3510400E-13",
+    "pass": true
+  },
+  "Tencent 2036 base revenue": {
+    "expression": "3900*1.06**10+1650*1.09**10+2400*1.06**10",
+    "decimal_result": "15188.49055129697125320450",
+    "tool_result": "15188.49055129698",
+    "absolute_residual": "8.74679550E-12",
+    "pass": true
+  },
+  "Tencent 2036 bull revenue": {
+    "expression": "3900*1.08**10+1650*1.12**10+2400*1.09**10",
+    "decimal_result": "19226.12985215289460245600",
+    "tool_result": "19226.12985215291",
+    "absolute_residual": "1.539754400E-11",
+    "pass": true
+  },
+  "PDD 2036 bear revenue": {
+    "expression": "2200*1**10+2350*0.98**10",
+    "decimal_result": "4120.12109618573519206400",
+    "tool_result": "4120.121096185735",
+    "absolute_residual": "1.9206400E-13",
+    "pass": true
+  },
+  "PDD 2036 base revenue": {
+    "expression": "2200*1.05**10+2350*1.08**10",
+    "decimal_result": "8657.04192250141983461400",
+    "tool_result": "8657.041922501425",
+    "absolute_residual": "5.16538600E-12",
+    "pass": true
+  },
+  "PDD 2036 bull revenue": {
+    "expression": "2200*1.08**10+2350*1.12**10",
+    "decimal_result": "12048.37828360902226739200",
+    "tool_result": "12048.378283609032",
+    "absolute_residual": "9.73260800E-12",
+    "pass": true
+  }
+}

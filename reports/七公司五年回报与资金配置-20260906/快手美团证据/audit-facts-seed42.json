@@ -1,0 +1,26 @@
+[
+  {
+    "id": 4,
+    "label": "实际发行总股数，亿股 · 美团",
+    "reported_value": 61.754848,
+    "unit": "",
+    "line_number": 12,
+    "raw_text": "| 实际发行总股数，亿股 | 43.26961215 | 61.754848 |",
+    "fetched_value": 61.754848,
+    "fetched_source": "Official Meituan August monthly return: (5596331814+579152986)/1e8",
+    "fetched_value2": 61.754848,
+    "fetched_source2": "Tencent quote snapshot: reports/美团/审计-20260906/tencent_quote.txt; exact shares match official latest monthly return"
+  },
+  {
+    "id": 5,
+    "label": "全公司市值，人民币亿元 · 快手",
+    "reported_value": 1259.22,
+    "unit": "",
+    "line_number": 13,
+    "raw_text": "| 全公司市值，人民币亿元 | 1,259.22 | 4,364.80 |",
+    "fetched_value": 1259.221989237298,
+    "fetched_source": "Decimal:33.66*43.26961215*0.86458",
+    "fetched_value2": 1259.221950358,
+    "fetched_source2": "Tencent independently reported HKD market cap1456.4551 hundred-million * same stated FX; derived value, not a second FX observation"
+  }
+]

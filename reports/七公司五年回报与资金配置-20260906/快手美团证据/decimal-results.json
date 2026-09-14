@@ -1,0 +1,306 @@
+{
+  "快手": {
+    "market_cap_cny_100m": "1259.221989237298020",
+    "scenarios": {
+      "保守": {
+        "profit_cny_100m": "58.800",
+        "pe": "8",
+        "shares_2031_100m": "46.61366102347599969515625",
+        "price_2031_hkd": "11.6720977100359321526788157040179391841497319606",
+        "cumulative_dps_hkd": "1.5",
+        "terminal_wealth_hkd": "13.1720977100359321526788157040179391841497319606",
+        "terminal_wealth_cagr": "-0.171088497165828541685545409245980614171700959637",
+        "annual_cashflow_irr": "-0.176760514004089908550396609210855105703141133758",
+        "funding_assumptions": [
+          {
+            "year": 2027,
+            "cash_after_capex_leases_nci": "20",
+            "gross_buyback_cash": "0E-13",
+            "dividend_cash": "11.39135756752101150",
+            "retained_cash": "8.60864243247898850"
+          },
+          {
+            "year": 2028,
+            "cash_after_capex_leases_nci": "20",
+            "gross_buyback_cash": "0E-16",
+            "dividend_cash": "11.56222793103382667250",
+            "retained_cash": "8.43777206896617332750"
+          },
+          {
+            "year": 2029,
+            "cash_after_capex_leases_nci": "30",
+            "gross_buyback_cash": "0E-19",
+            "dividend_cash": "11.73566134999933407258750",
+            "retained_cash": "18.26433865000066592741250"
+          },
+          {
+            "year": 2030,
+            "cash_after_capex_leases_nci": "40",
+            "gross_buyback_cash": "0E-22",
+            "dividend_cash": "11.91169627024932408367631250",
+            "retained_cash": "28.08830372975067591632368750"
+          },
+          {
+            "year": 2031,
+            "cash_after_capex_leases_nci": "50",
+            "gross_buyback_cash": "0E-25",
+            "dividend_cash": "12.09037171430306394493145718750",
+            "retained_cash": "37.90962828569693605506854281250"
+          }
+        ],
+        "fcf_total_cny_100m": "160",
+        "distribution_total_cny_100m": "58.69131483310656027369526968750"
+      },
+      "基准": {
+        "profit_cny_100m": "175.80",
+        "pe": "12",
+        "shares_2031_100m": "43.26961215",
+        "price_2031_hkd": "56.3912770003402963308224983311362395328756175402",
+        "cumulative_dps_hkd": "4.0",
+        "terminal_wealth_hkd": "60.3912770003402963308224983311362395328756175402",
+        "terminal_wealth_cagr": "0.12401477572157348480517301897506115801223706889",
+        "annual_cashflow_irr": "0.128325727112614042567532999858462884294075188786",
+        "funding_assumptions": [
+          {
+            "year": 2027,
+            "cash_after_capex_leases_nci": "50",
+            "gross_buyback_cash": "13.093514445426450",
+            "dividend_cash": "29.9280330181176000",
+            "retained_cash": "6.9784525364559500"
+          },
+          {
+            "year": 2028,
+            "cash_after_capex_leases_nci": "70",
+            "gross_buyback_cash": "14.96401650905880000",
+            "dividend_cash": "29.928033018117600000",
+            "retained_cash": "25.107950472823600000"
+          },
+          {
+            "year": 2029,
+            "cash_after_capex_leases_nci": "90",
+            "gross_buyback_cash": "16.8345185726911500000",
+            "dividend_cash": "29.92803301811760000000",
+            "retained_cash": "43.23744840919125000000"
+          },
+          {
+            "year": 2030,
+            "cash_after_capex_leases_nci": "110",
+            "gross_buyback_cash": "18.705020636323500000000",
+            "dividend_cash": "29.9280330181176000000000",
+            "retained_cash": "61.3669463455589000000000"
+          },
+          {
+            "year": 2031,
+            "cash_after_capex_leases_nci": "130",
+            "gross_buyback_cash": "20.57552269995585000000000",
+            "dividend_cash": "29.928033018117600000000000",
+            "retained_cash": "79.496444281926550000000000"
+          }
+        ],
+        "fcf_total_cny_100m": "450",
+        "distribution_total_cny_100m": "233.812757954043750000000000"
+      },
+      "乐观": {
+        "profit_cny_100m": "288.500",
+        "pe": "16",
+        "shares_2031_100m": "41.148970617682146285",
+        "price_2031_hkd": "129.748289101606246852258676377454029453406467005",
+        "cumulative_dps_hkd": "6.0",
+        "terminal_wealth_hkd": "135.748289101606246852258676377454029453406467005",
+        "terminal_wealth_cagr": "0.32167309912174250061167339735201921189405745636",
+        "annual_cashflow_irr": "0.332303128613848829754835921575427406310232369806",
+        "funding_assumptions": [
+          {
+            "year": 2027,
+            "cash_after_capex_leases_nci": "100",
+            "gross_buyback_cash": "29.928033018117600",
+            "dividend_cash": "44.4431290319046360",
+            "retained_cash": "25.6288379499777640"
+          },
+          {
+            "year": 2028,
+            "cash_after_capex_leases_nci": "150",
+            "gross_buyback_cash": "44.44312903190463600",
+            "dividend_cash": "43.998697741585589640",
+            "retained_cash": "61.558173226509774360"
+          },
+          {
+            "year": 2029,
+            "cash_after_capex_leases_nci": "200",
+            "gross_buyback_cash": "58.6649303221141195200",
+            "dividend_cash": "43.55871076416973374360",
+            "retained_cash": "97.77635891371614673640"
+          },
+          {
+            "year": 2030,
+            "cash_after_capex_leases_nci": "250",
+            "gross_buyback_cash": "72.597851273616222906000",
+            "dividend_cash": "43.1231236565280364061640",
+            "retained_cash": "134.2790250698557406878360"
+          },
+          {
+            "year": 2031,
+            "cash_after_capex_leases_nci": "300",
+            "gross_buyback_cash": "86.24624731305607281232800",
+            "dividend_cash": "42.691892419962756042102360",
+            "retained_cash": "171.061860266981171145569640"
+          }
+        ],
+        "fcf_total_cny_100m": "1000",
+        "distribution_total_cny_100m": "509.695744572959403070194360"
+      }
+    }
+  },
+  "美团": {
+    "market_cap_cny_100m": "4364.7965300539200",
+    "scenarios": {
+      "保守": {
+        "profit_cny_100m": "44.800",
+        "pe": "12",
+        "shares_2031_100m": "66.527509912710987700000",
+        "price_2031_hkd": "9.34658170393188881874392739931349982231023878645",
+        "cumulative_dps_hkd": "0",
+        "terminal_wealth_hkd": "9.34658170393188881874392739931349982231023878645",
+        "terminal_wealth_cagr": "-0.351913449068626852430652850606716128734031756428",
+        "annual_cashflow_irr": "-0.351913449068626852430652850606716128734031756428",
+        "funding_assumptions": [
+          {
+            "year": 2027,
+            "cash_after_capex_leases_nci": "-100",
+            "gross_buyback_cash": "0E-11",
+            "dividend_cash": "0E-14",
+            "retained_cash": "-100.00000000000000"
+          },
+          {
+            "year": 2028,
+            "cash_after_capex_leases_nci": "-50",
+            "gross_buyback_cash": "0E-14",
+            "dividend_cash": "0E-17",
+            "retained_cash": "-50.00000000000000000"
+          },
+          {
+            "year": 2029,
+            "cash_after_capex_leases_nci": "0",
+            "gross_buyback_cash": "0E-17",
+            "dividend_cash": "0E-20",
+            "retained_cash": "0E-20"
+          },
+          {
+            "year": 2030,
+            "cash_after_capex_leases_nci": "20",
+            "gross_buyback_cash": "0E-20",
+            "dividend_cash": "0E-23",
+            "retained_cash": "20.00000000000000000000000"
+          },
+          {
+            "year": 2031,
+            "cash_after_capex_leases_nci": "40",
+            "gross_buyback_cash": "0E-23",
+            "dividend_cash": "0E-26",
+            "retained_cash": "40.00000000000000000000000000"
+          }
+        ],
+        "fcf_total_cny_100m": "-90",
+        "distribution_total_cny_100m": "0E-26"
+      },
+      "基准": {
+        "profit_cny_100m": "238.400",
+        "pe": "18",
+        "shares_2031_100m": "63.314235298736883900000",
+        "price_2031_hkd": "78.3920831544535932559266218522136099298367174105",
+        "cumulative_dps_hkd": "0",
+        "terminal_wealth_hkd": "78.3920831544535932559266218522136099298367174105",
+        "terminal_wealth_cagr": "-0.008353487630968110726845172741299061162683525344",
+        "annual_cashflow_irr": "-0.0083534876309681107268451727412990611626835253445",
+        "funding_assumptions": [
+          {
+            "year": 2027,
+            "cash_after_capex_leases_nci": "40",
+            "gross_buyback_cash": "0E-11",
+            "dividend_cash": "0E-14",
+            "retained_cash": "40.00000000000000"
+          },
+          {
+            "year": 2028,
+            "cash_after_capex_leases_nci": "80",
+            "gross_buyback_cash": "0E-14",
+            "dividend_cash": "0E-17",
+            "retained_cash": "80.00000000000000000"
+          },
+          {
+            "year": 2029,
+            "cash_after_capex_leases_nci": "120",
+            "gross_buyback_cash": "0E-17",
+            "dividend_cash": "0E-20",
+            "retained_cash": "120.00000000000000000000"
+          },
+          {
+            "year": 2030,
+            "cash_after_capex_leases_nci": "160",
+            "gross_buyback_cash": "0E-20",
+            "dividend_cash": "0E-23",
+            "retained_cash": "160.00000000000000000000000"
+          },
+          {
+            "year": 2031,
+            "cash_after_capex_leases_nci": "200",
+            "gross_buyback_cash": "0E-23",
+            "dividend_cash": "0E-26",
+            "retained_cash": "200.00000000000000000000000000"
+          }
+        ],
+        "fcf_total_cny_100m": "600",
+        "distribution_total_cny_100m": "0E-26"
+      },
+      "乐观": {
+        "profit_cny_100m": "502.400",
+        "pe": "22",
+        "shares_2031_100m": "61.754848",
+        "price_2031_hkd": "207.012261345625175996060437325882043170380828779",
+        "cumulative_dps_hkd": "0",
+        "terminal_wealth_hkd": "207.012261345625175996060437325882043170380828779",
+        "terminal_wealth_cagr": "0.20420842582806753015175668188649192152899862124",
+        "annual_cashflow_irr": "0.204208425828067530151756681886491921528998621246",
+        "funding_assumptions": [
+          {
+            "year": 2027,
+            "cash_after_capex_leases_nci": "80",
+            "gross_buyback_cash": "24.02640291772800",
+            "dividend_cash": "0E-14",
+            "retained_cash": "55.97359708227200"
+          },
+          {
+            "year": 2028,
+            "cash_after_capex_leases_nci": "150",
+            "gross_buyback_cash": "29.36560356611200000",
+            "dividend_cash": "0E-17",
+            "retained_cash": "120.63439643388800000"
+          },
+          {
+            "year": 2029,
+            "cash_after_capex_leases_nci": "250",
+            "gross_buyback_cash": "34.70480421449600000000",
+            "dividend_cash": "0E-20",
+            "retained_cash": "215.29519578550400000000"
+          },
+          {
+            "year": 2030,
+            "cash_after_capex_leases_nci": "350",
+            "gross_buyback_cash": "40.04400486288000000000000",
+            "dividend_cash": "0E-23",
+            "retained_cash": "309.95599513712000000000000"
+          },
+          {
+            "year": 2031,
+            "cash_after_capex_leases_nci": "450",
+            "gross_buyback_cash": "42.71360518707200000000000000",
+            "dividend_cash": "0E-26",
+            "retained_cash": "407.28639481292800000000000000"
+          }
+        ],
+        "fcf_total_cny_100m": "1280",
+        "distribution_total_cny_100m": "170.85442074828800000000000000"
+      }
+    }
+  }
+}

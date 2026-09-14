@@ -1,0 +1,26 @@
+{
+  "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "| **Total Parameters** | 550B (55B active) |",
+    "| **Context Length** | Up to 1M tokens |",
+    "The model employs a hybrid **Latent Mixture-of-Experts (LatentMoE)** architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. Like the Super model, the Ultra model incorporates **Multi-Token Prediction (MTP)** layers for faster text generation and improved quality, and it is trained using an **NVFP4** pre-training recipe to maximize compute efficiency. The model has **55B active parameters** and **550B parameters in total**.",
+    "This model is ready for commercial and non-commercial use.",
+    "- **Number of model parameters:** 550B Total / 55B Active",
+    "- **Input Parameters:** One-Dimensional (1D): Sequences",
+    "- **Other Properties Related to Input:** Maximum context length up to 1M tokens. Supported languages include: English, French, Spanish, Italian, German, Japanese, Hindi, Korean, Brazilian Portuguese, and Chinese",
+    "- **Output Parameters:** One-Dimensional (1D): Sequences",
+    "- **Other Properties Related to Output:** Maximum context length up to 1M tokens",
+    "Context length defaults to 256k above. To use up to 1M, set `VLLM_ALLOW_LONG_MAX_MODEL_LEN=1` and `--max-model-len 1048576`.",
+    "  --context-length 262144 \\",
+    "Context length defaults to 256k above. To use up to 1M, set `SGLANG_ALLOW_OVERWRITE_LONGER_CONTEXT_LEN=1` and `--context-length 1048576`.",
+    "context_parallel_size: 1",
+    "For long-context benchmarking, set `TLLM_ALLOW_LONG_MAX_MODEL_LEN=1` as an environment variable and add `--max_seq_len <seq_len>` as the desired maximum context length. The MTP `speculative_config` block above carries over unchanged — on rc16, `max_draft_len` is the authoritative field and `num_nextn_predict_layers` is treated as deprecated.",
+    "            \"parameters\": {",
+    "                        \"context\": 1000000,",
+    "| Nemotron-Pretraining-Legal | Text | 4.3B | CommonPile (caselaw_access_project_filtered); California Code of Regulations; Judicial Ethics Opinions; [GLOBALCIT](https://globalcit.eu/); [CUAD](https://www.atticusprojectai.org/cuad); Nemotron Personas; [ToSDR Terms of Service Corpus](https://www.kaggle.com/datasets/sonu1607/tosdr-terms-of-service-corpus); CodeHima/TOS_Dataset; [ContractNLI](https://stanfordnlp.github.io/contract-nli/); CaseHOLD; Code of Federal Regulations; [Canadian Case Law](https://huggingface.co/datasets/a2aj/canadian-case-law) (subsets that allow commercial use) | [Qwen3-235B-A22B-Thinking-2507](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507) |"
+  ],
+  "LICENSE_status": 404
+}

@@ -1,0 +1,17 @@
+{
+  "repo": "moonshotai/Kimi-K2.5",
+  "url": "https://huggingface.co/moonshotai/Kimi-K2.5",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "| **Total Parameters** | 1T |",
+    "| **Activated Parameters** | 32B |",
+    "| **Context Length** | 256K |",
+    "| **Parameters of Vision Encoder** | 400M |",
+    "   - Unless otherwise specified, all Kimi K2.5 experiments were conducted with temperature = 1.0, top-p = 0.95, and a context length of 256k tokens.",
+    "   - Terminal-Bench 2.0 scores were obtained with the default agent framework (Terminus-2) and the provided JSON parser. In our implementation, we evaluated Terminal-Bench 2.0 under non-thinking mode. This choice was made because our current context management strategy for the thinking mode is incompatible with Terminus-2.",
+    "   - LongBench-V2: identical prompts and input contexts standardized to ~128k tokens."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "Modified MIT License\n\nCopyright (c) 2026 Moonshot AI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the “Software”), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, "
+}

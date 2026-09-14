@@ -1,0 +1,458 @@
+{
+  "report": "快手-公众号-看懂快手03-20260906.md",
+  "review_date": "2026-09-06",
+  "sha256": "dcd6e8ca27c130f352e18e95470fc535df1ef323a52990f8d9ef0beebb7b6152",
+  "chinese_characters": 3624,
+  "table_count": 5,
+  "automatic_extract_count": 49,
+  "sample_seed": 42,
+  "automatic_sample_checks": [
+    {
+      "id": 2,
+      "label": "减：资本购买及预付 · 金额，亿元",
+      "reported_value": 149.42,
+      "unit": "",
+      "raw_text": "| 减：资本购买及预付 | 149.42 |",
+      "line_number": 48,
+      "fetched_value": 149.42,
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf",
+      "classification": "已披露资本购买",
+      "external_source_count": 1
+    },
+    {
+      "id": 7,
+      "label": "研究使用的现金代理 · 金额，亿元",
+      "reported_value": 53.11,
+      "unit": "",
+      "raw_text": "| 研究使用的现金代理 | 53.11 |",
+      "line_number": 53,
+      "fetched_value": 53.11,
+      "fetched_source": "第二三篇-计算复核.json; financial_rigor calc + independent Decimal",
+      "classification": "历史现金代理计算",
+      "external_source_count": 0
+    },
+    {
+      "id": 8,
+      "label": "现金、短期存款及流动金融资产 · 金额，亿元",
+      "reported_value": 804.07,
+      "unit": "",
+      "raw_text": "| 现金、短期存款及流动金融资产 | 804.07 |",
+      "line_number": 89,
+      "fetched_value": 804.07,
+      "fetched_source": "https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-technology-announces-second-quarter-and-interim-2026",
+      "classification": "资产负债表分项加总",
+      "external_source_count": 1
+    },
+    {
+      "id": 9,
+      "label": "减：短期及长期借款 · 金额，亿元",
+      "reported_value": 273.62,
+      "unit": "",
+      "raw_text": "| 减：短期及长期借款 | 273.62 |",
+      "line_number": 90,
+      "fetched_value": 273.62,
+      "fetched_source": "https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-technology-announces-second-quarter-and-interim-2026",
+      "classification": "借款分项加总",
+      "external_source_count": 1
+    },
+    {
+      "id": 16,
+      "label": "第2期 · 乐观",
+      "reported_value": 100.0,
+      "unit": "",
+      "raw_text": "| 第2期 | 20 | 60 | 100 |",
+      "line_number": 111,
+      "fetched_value": 100,
+      "fetched_source": "第二三篇-计算复核.json; financial_rigor calc + independent Decimal",
+      "classification": "模型假设",
+      "external_source_count": 0
+    },
+    {
+      "id": 15,
+      "label": "第2期 · 基准",
+      "reported_value": 60.0,
+      "unit": "",
+      "raw_text": "| 第2期 | 20 | 60 | 100 |",
+      "line_number": 111,
+      "fetched_value": 60,
+      "fetched_source": "第二三篇-计算复核.json; financial_rigor calc + independent Decimal",
+      "classification": "模型假设",
+      "external_source_count": 0
+    },
+    {
+      "id": 18,
+      "label": "第3期 · 基准",
+      "reported_value": 80.0,
+      "unit": "",
+      "raw_text": "| 第3期 | 35 | 80 | 130 |",
+      "line_number": 112,
+      "fetched_value": 80,
+      "fetched_source": "第二三篇-计算复核.json; financial_rigor calc + independent Decimal",
+      "classification": "模型假设",
+      "external_source_count": 0
+    },
+    {
+      "id": 41,
+      "label": "保守 · 剩余资产，亿元",
+      "reported_value": 100.0,
+      "unit": "",
+      "raw_text": "| 保守 | 100 | 15.37港元 | 17.21港元 |",
+      "line_number": 147,
+      "fetched_value": 100,
+      "fetched_source": "第二三篇-计算复核.json; financial_rigor calc + independent Decimal",
+      "classification": "独立剩余资产假设",
+      "external_source_count": 0
+    }
+  ],
+  "tool_verdict": {
+    "verdict": "PASS",
+    "pass_count": 8,
+    "warn_count": 0,
+    "fail_count": 0,
+    "total": 8,
+    "fail_items": [],
+    "warn_items": []
+  },
+  "complete_numeric_table_row_checks": [
+    {
+      "label": "2021",
+      "values": [
+        "2021",
+        "810.82",
+        "-780.74",
+        "-132.83"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "2022",
+      "values": [
+        "2022",
+        "941.83",
+        "-136.90",
+        "-43.05"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "2023",
+      "values": [
+        "2023",
+        "1134.70",
+        "63.96",
+        "158.84"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "2024",
+      "values": [
+        "2024",
+        "1268.98",
+        "153.35",
+        "217.24"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "2025",
+      "values": [
+        "2025",
+        "1427.76",
+        "186.17",
+        "117.74"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "经营现金流",
+      "values": [
+        "267.16"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "减：资本购买及预付",
+      "values": [
+        "149.42"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "简单自由现金流",
+      "values": [
+        "117.74"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "再减：租赁本金及相关利息",
+      "values": [
+        "38.23"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "扣租赁后余额",
+      "values": [
+        "79.51"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "再保留：股份薪酬经济成本",
+      "values": [
+        "26.40"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "研究使用的现金代理",
+      "values": [
+        "53.11"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "现金、短期存款及流动金融资产",
+      "values": [
+        "804.07"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "减：短期及长期借款",
+      "values": [
+        "273.62"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "减：租赁负债",
+      "values": [
+        "116.72"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "上述资源减借款及租赁",
+      "values": [
+        "413.73"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "第1期",
+      "values": [
+        "0",
+        "30",
+        "70"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "第2期",
+      "values": [
+        "20",
+        "60",
+        "100"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "第3期",
+      "values": [
+        "35",
+        "80",
+        "130"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "第4期",
+      "values": [
+        "45",
+        "100",
+        "160"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "第5期",
+      "values": [
+        "50",
+        "120",
+        "200"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "第6期",
+      "values": [
+        "50",
+        "130",
+        "230"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "第7期",
+      "values": [
+        "50",
+        "140",
+        "260"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "第8期",
+      "values": [
+        "50",
+        "150",
+        "290"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "第9期",
+      "values": [
+        "50",
+        "160",
+        "320"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "第10期",
+      "values": [
+        "50",
+        "170",
+        "350"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "保守",
+      "values": [
+        "100",
+        "15.37",
+        "17.21"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "基准",
+      "values": [
+        "150",
+        "46.45",
+        "53.67"
+      ],
+      "status": "PASS"
+    },
+    {
+      "label": "乐观",
+      "values": [
+        "200",
+        "96.30",
+        "114.46"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "manual_core_fact_records": [
+    {
+      "label": "2021收入",
+      "value": 810.82,
+      "source": "https://www.hkexnews.hk/listedco/listconews/sehk/2022/0419/2022041900053.pdf",
+      "source2": "https://stockanalysis.com/quote/hkg/1024/financials/",
+      "external_source_count": 2,
+      "scope": "原研究已核原件;本轮重新对照Stock Analysis历史列;非每本年报重新逐页审计"
+    },
+    {
+      "label": "2021IFRS归母利润",
+      "value": -780.74,
+      "source": "https://www.hkexnews.hk/listedco/listconews/sehk/2022/0419/2022041900053.pdf",
+      "source2": "https://stockanalysis.com/quote/hkg/1024/financials/",
+      "external_source_count": 2,
+      "scope": "原研究已核原件;本轮重新对照Stock Analysis历史列;非每本年报重新逐页审计"
+    },
+    {
+      "label": "2022收入",
+      "value": 941.83,
+      "source": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/0427/2023042700613.pdf",
+      "source2": "https://stockanalysis.com/quote/hkg/1024/financials/",
+      "external_source_count": 2,
+      "scope": "原研究已核原件;本轮重新对照Stock Analysis历史列;非每本年报重新逐页审计"
+    },
+    {
+      "label": "2022IFRS归母利润",
+      "value": -136.9,
+      "source": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/0427/2023042700613.pdf",
+      "source2": "https://stockanalysis.com/quote/hkg/1024/financials/",
+      "external_source_count": 2,
+      "scope": "原研究已核原件;本轮重新对照Stock Analysis历史列;非每本年报重新逐页审计"
+    },
+    {
+      "label": "2023收入",
+      "value": 1134.7,
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0422/2024042200369.pdf",
+      "source2": "https://stockanalysis.com/quote/hkg/1024/financials/",
+      "external_source_count": 2,
+      "scope": "原研究已核原件;本轮重新对照Stock Analysis历史列;非每本年报重新逐页审计"
+    },
+    {
+      "label": "2023IFRS归母利润",
+      "value": 63.96,
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0422/2024042200369.pdf",
+      "source2": "https://stockanalysis.com/quote/hkg/1024/financials/",
+      "external_source_count": 2,
+      "scope": "原研究已核原件;本轮重新对照Stock Analysis历史列;非每本年报重新逐页审计"
+    },
+    {
+      "label": "2024收入",
+      "value": 1268.98,
+      "source": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0425/2025042500501.pdf",
+      "source2": "https://stockanalysis.com/quote/hkg/1024/financials/",
+      "external_source_count": 2,
+      "scope": "原研究已核原件;本轮重新对照Stock Analysis历史列;非每本年报重新逐页审计"
+    },
+    {
+      "label": "2024IFRS归母利润",
+      "value": 153.35,
+      "source": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0425/2025042500501.pdf",
+      "source2": "https://stockanalysis.com/quote/hkg/1024/financials/",
+      "external_source_count": 2,
+      "scope": "原研究已核原件;本轮重新对照Stock Analysis历史列;非每本年报重新逐页审计"
+    },
+    {
+      "label": "2025收入",
+      "value": 1427.76,
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf",
+      "source2": "https://stockanalysis.com/quote/hkg/1024/financials/",
+      "external_source_count": 2,
+      "scope": "原研究已核原件;本轮重新对照Stock Analysis历史列;非每本年报重新逐页审计"
+    },
+    {
+      "label": "2025IFRS归母利润",
+      "value": 186.17,
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf",
+      "source2": "https://stockanalysis.com/quote/hkg/1024/financials/",
+      "external_source_count": 2,
+      "scope": "原研究已核原件;本轮重新对照Stock Analysis历史列;非每本年报重新逐页审计"
+    }
+  ],
+  "model_source": "../《看懂快手》-20260906/审计/dcf_scenarios.json",
+  "recalculation_source": "第二三篇-计算复核.json",
+  "scope": "全文作者-编辑-读者审阅；全部核心数字表行核对和33项独立算术复算。工具样本混合年份、事实、计算和假设，已分别标注。PASS仅表示所核数值一致，不证明预测实现或所有事实双源。融资合同以发行人原件为准；8月31日更新本轮使用此前取得的官方缓存。未改动原研究及第一篇。",
+  "presentation_revisions": [
+    {
+      "date": "2026-09-07",
+      "previous_sha256": "c28420be1f11b53d89e4ec933fb2cfe17b85af1a9701936678fa71c121c44df1",
+      "change": "正文外链集中到配套审读记录;文末只保留一个资料入口。表格、公式、数据与口径说明保持;第三篇将第三方页面明确为Stock Analysis。",
+      "original_external_link_occurrences": 19,
+      "article_external_link_occurrences": 1,
+      "body_external_link_occurrences": 0,
+      "verification": "所有表格行和LaTeX公式逐字对照一致;原始链接与页码完整归档;抽检行号更新。未重新执行来源审计或估值预测。"
+    }
+  ]
+}

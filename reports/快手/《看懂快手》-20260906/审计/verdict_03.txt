@@ -1,0 +1,50 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：03
+======================================================================
+
+  [92m✅ 通过[0m [ 4] 收入 · 2024                            报告:      1268.98 人民币亿元
+                                                    https://www.hkexnews.hk/listedco/listconews/sehk/2025/0425/2025042500501.pdf: 1268.98 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/1024/financials/: 1268.98 (偏差 0.00%)
+  [92m✅ 通过[0m [ 5] 收入 · 2025                            报告:      1427.76 人民币亿元
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf: 1427.76 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/1024/financials/: 1427.76 (偏差 0.00%)
+  [92m✅ 通过[0m [15] IFRS归母净利润 · 2025                     报告:       186.17 人民币亿元
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf: 186.17 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/1024/financials/: 186.17 (偏差 0.00%)
+  [92m✅ 通过[0m [14] IFRS归母净利润 · 2024                     报告:       153.35 人民币亿元
+                                                    https://www.hkexnews.hk/listedco/listconews/sehk/2025/0425/2025042500501.pdf: 153.35 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/1024/financials/: 153.35 (偏差 0.00%)
+  [92m✅ 通过[0m [12] IFRS归母净利润 · 2022                     报告:      -136.90 人民币亿元
+                                                    https://www.hkexnews.hk/listedco/listconews/sehk/2023/0427/2023042700613.pdf: -136.90 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/1024/financials/: -136.90 (偏差 0.00%)
+  [92m✅ 通过[0m [18] 经营现金流 · 2023                         报告:       207.81 人民币亿元
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0422/2024042200369.pdf: 207.81 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/1024/financials/: 207.81 (偏差 0.00%)
+  [92m✅ 通过[0m [29] 简单自由现金流，未扣融资类租赁 · 2024               报告:       217.24 人民币亿元
+                                                    https://www.hkexnews.hk/listedco/listconews/sehk/2025/0425/2025042500501.pdf: 217.24 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/1024/financials/: 217.24 (偏差 0.00%)
+  [92m✅ 通过[0m [32] 收入 · 2025Q4                          报告:       395.68 人民币亿元
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf: 395.68 (偏差 0.00%)
+  [92m✅ 通过[0m [36] 经营利润 · 2025Q4                        报告:        57.90 人民币亿元
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf: 57.90 (偏差 0.00%)
+  [92m✅ 通过[0m [55] 应付股息 · 金额                            报告:        25.84 人民币亿元
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf: 25.84 (偏差 0.00%)
+  [92m✅ 通过[0m [70] 基准 · 第4期                             报告:       100.00 人民币亿元
+                                                    dcf_scenarios.json，financial_rigor calc 与 Decimal 算术复核: 100.00 (偏差 0.00%)
+  [92m✅ 通过[0m [76] 基准 · 第10期                            报告:       170.00 人民币亿元
+                                                    dcf_scenarios.json，financial_rigor calc 与 Decimal 算术复核: 170.00 (偏差 0.00%)
+  [92m✅ 通过[0m [82] 乐观 · 第6期                             报告:       230.00 人民币亿元
+                                                    dcf_scenarios.json，financial_rigor calc 与 Decimal 算术复核: 230.00 (偏差 0.00%)
+  [92m✅ 通过[0m [87] 保守 · 假设可分现金余额                        报告:       100.00 亿元
+                                                    dcf_scenarios.json，financial_rigor calc 与 Decimal 算术复核: 100.00 (偏差 0.00%)
+  [92m✅ 通过[0m [95] 乐观 · 8%折现每股价值                        报告:       114.46 港元/股
+                                                    dcf_scenarios.json，financial_rigor calc 与 Decimal 算术复核: 114.46 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 15  |  通过: [92m15[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 15,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 15,
+  "fail_items": [],
+  "warn_items": []
+}

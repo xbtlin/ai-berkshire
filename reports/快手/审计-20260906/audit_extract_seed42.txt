@@ -1,0 +1,240 @@
+======================================================================
+报告数据抽检清单
+文件：reports/快手/快手研究报告-20260906.md
+总提取数据点：110  |  抽样比例：15%  |  抽检数量：17
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  4     18  估值参考汇率（人民币/港元） · 数值                          0.86  
+  5     19  TTM归母净利润 · 数值                              157.66  
+ 15     37  毛利 · 2024                                  692.92  
+ 14     37  毛利 · 2023                                  573.91  
+ 12     37  毛利 · 2021                                  340.30  
+ 18     38  归母净利润 · 2022                              -136.90  
+ 29     40  资本支出 · 2023                                 48.97  
+ 28     40  资本支出 · 2022                                 51.00  
+ 30     40  资本支出 · 2024                                 80.63  
+ 36     41  现金及短期投资 · 2025                             622.56  
+ 32     41  现金及短期投资 · 2021                             454.57  
+ 55     66  流动公允价值损益金融资产 · 亿元                          563.53  
+ 70    102  传统税后经营收益 · 乐观                              192.73  
+ 76    104  可灵收入 · 乐观                                  160.00  
+ 82    106  快手可灵权益 · 乐观                                 55.00  %
+ 87    108  三年传统股东现金流 · 基准                             300.00  
+ 95    111  三年末目标价（港元） · 悲观                             20.95  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 4,
+    "label": "估值参考汇率（人民币/港元） · 数值",
+    "reported_value": 0.86458,
+    "unit": "",
+    "line_number": 18,
+    "raw_text": "| 估值参考汇率（人民币/港元） | 0.86458 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "TTM归母净利润 · 数值",
+    "reported_value": 157.66,
+    "unit": "",
+    "line_number": 19,
+    "raw_text": "| TTM归母净利润 | 157.66 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "毛利 · 2024",
+    "reported_value": 692.92,
+    "unit": "",
+    "line_number": 37,
+    "raw_text": "| 毛利 | 340.30 | 421.31 | 573.91 | 692.92 | 785.49 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 14,
+    "label": "毛利 · 2023",
+    "reported_value": 573.91,
+    "unit": "",
+    "line_number": 37,
+    "raw_text": "| 毛利 | 340.30 | 421.31 | 573.91 | 692.92 | 785.49 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 12,
+    "label": "毛利 · 2021",
+    "reported_value": 340.3,
+    "unit": "",
+    "line_number": 37,
+    "raw_text": "| 毛利 | 340.30 | 421.31 | 573.91 | 692.92 | 785.49 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "归母净利润 · 2022",
+    "reported_value": -136.9,
+    "unit": "",
+    "line_number": 38,
+    "raw_text": "| 归母净利润 | -780.74 | -136.90 | 63.96 | 153.35 | 186.17 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "资本支出 · 2023",
+    "reported_value": 48.97,
+    "unit": "",
+    "line_number": 40,
+    "raw_text": "| 资本支出 | 77.64 | 51.00 | 48.97 | 80.63 | 149.42 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 28,
+    "label": "资本支出 · 2022",
+    "reported_value": 51.0,
+    "unit": "",
+    "line_number": 40,
+    "raw_text": "| 资本支出 | 77.64 | 51.00 | 48.97 | 80.63 | 149.42 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 30,
+    "label": "资本支出 · 2024",
+    "reported_value": 80.63,
+    "unit": "",
+    "line_number": 40,
+    "raw_text": "| 资本支出 | 77.64 | 51.00 | 48.97 | 80.63 | 149.42 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "现金及短期投资 · 2025",
+    "reported_value": 622.56,
+    "unit": "",
+    "line_number": 41,
+    "raw_text": "| 现金及短期投资 | 454.57 | 356.20 | 490.18 | 516.40 | 622.56 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 32,
+    "label": "现金及短期投资 · 2021",
+    "reported_value": 454.57,
+    "unit": "",
+    "line_number": 41,
+    "raw_text": "| 现金及短期投资 | 454.57 | 356.20 | 490.18 | 516.40 | 622.56 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 55,
+    "label": "流动公允价值损益金融资产 · 亿元",
+    "reported_value": 563.53,
+    "unit": "",
+    "line_number": 66,
+    "raw_text": "| 流动公允价值损益金融资产 | 563.53 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 70,
+    "label": "传统税后经营收益 · 乐观",
+    "reported_value": 192.73,
+    "unit": "",
+    "line_number": 102,
+    "raw_text": "| 传统税后经营收益 | 78.00 | 139.87 | 192.73 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 76,
+    "label": "可灵收入 · 乐观",
+    "reported_value": 160.0,
+    "unit": "",
+    "line_number": 104,
+    "raw_text": "| 可灵收入 | 50 | 100 | 160 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 82,
+    "label": "快手可灵权益 · 乐观",
+    "reported_value": 55.0,
+    "unit": "%",
+    "line_number": 106,
+    "raw_text": "| 快手可灵权益 | 65% | 60% | 55% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 87,
+    "label": "三年传统股东现金流 · 基准",
+    "reported_value": 300.0,
+    "unit": "",
+    "line_number": 108,
+    "raw_text": "| 三年传统股东现金流 | 180 | 300 | 450 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 95,
+    "label": "三年末目标价（港元） · 悲观",
+    "reported_value": 20.95,
+    "unit": "",
+    "line_number": 111,
+    "raw_text": "| 三年末目标价（港元） | 20.95 | 63.08 | 106.93 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

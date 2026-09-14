@@ -1,0 +1,54 @@
+{
+  "report_files": [
+    {
+      "name": "01-全球旗舰模型对比报告.md",
+      "sha256": "338b8ec735e75ae45f07730e340c1ec57e90a7d51e02fdb134915b17f4907965",
+      "characters": 14148,
+      "table_rows_including_headers_by_section": {
+        "范围与判断方法": 5,
+        "国际前沿旗舰：能力上限与主力产品": 7,
+        "中国主流旗舰：能力、部署与开放的分化": 13,
+        "欧洲、韩国与企业开放生态": 6,
+        "到底谁更强：保留可比条件，才能读懂分数": 5,
+        "API 成本：先统一单位，再谈性价比": 8,
+        "开放许可最容易踩错的地方": 7,
+        "如何按场景选": 7
+      }
+    },
+    {
+      "name": "02-千亿参数模型报告.md",
+      "sha256": "5e88d817338888a681b452c9cd8da55f364e63eb26b00cfc95ff5d5b17dd5013",
+      "characters": 15465,
+      "table_rows_including_headers_by_section": {
+        "计数规则：先把 B、T 和激活参数分开": 7,
+        "当代万亿级模型": 8,
+        "500B 至 999B：大型集群部署区间": 10,
+        "200B 至 499B：开放大模型最密集的区间": 26,
+        "100B 至 199B：相对可接近的千亿级部署": 14,
+        "已披露规模，但不能当作可下载的当前旗舰": 9,
+        "这些旗舰的参数不能编": 8,
+        "开源到底怎么看：权重许可速查": 6,
+        "千亿模型究竟需要多大内存": 14
+      }
+    },
+    {
+      "name": "03-核查记录.md",
+      "sha256": "156217d59f6c4cab6fa4f235dbcee14b61f2f5e38bfaacdbc5ba2ac13c694813",
+      "characters": 3317,
+      "table_rows_including_headers_by_section": {
+        "来源与版本": 9
+      }
+    }
+  ],
+  "errors": [],
+  "counts": {
+    "flagship_manufacturers": 23,
+    "main_parameter_entries": 54,
+    "additional_parameter_disclosed_entries": 8,
+    "saved_model_cards": 57,
+    "saved_license_files": 34,
+    "metadata_snapshots": 10
+  },
+  "arithmetic": "44 independent Decimal checks; all 39 storage cells matched.",
+  "passed": true
+}

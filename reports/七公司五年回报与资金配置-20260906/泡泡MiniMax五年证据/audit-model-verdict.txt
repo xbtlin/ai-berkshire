@@ -1,0 +1,33 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：泡泡玛特与MiniMax五年底稿.md model only
+======================================================================
+
+  [92m✅ 通过[0m [15] 收入 · 乐观                              报告:       950.00 
+                                                    Explicit input or financial_rigor with independent Decimal arithmetic; no forecast verified: 950.00 (偏差 0.00%)
+  [92m✅ 通过[0m [14] 收入 · 基准                              报告:       550.00 
+                                                    Explicit input or financial_rigor with independent Decimal arithmetic; no forecast verified: 550.00 (偏差 0.00%)
+  [92m✅ 通过[0m [18] 毛利率 · 乐观                             报告:        70.00 %
+                                                    Explicit input or financial_rigor with independent Decimal arithmetic; no forecast verified: 70.00 (偏差 0.00%)
+  [92m✅ 通过[0m [29] 2031 总股数，亿股 · 基准                     报告:        13.32 
+                                                    Explicit input or financial_rigor with independent Decimal arithmetic; no forecast verified: 13.32 (偏差 0.00%)
+  [92m✅ 通过[0m [32] 五年现金股息合计，港元/股 · 基准                   报告:        13.58 
+                                                    Explicit input or financial_rigor with independent Decimal arithmetic; no forecast verified: 13.58 (偏差 0.01%)
+  [92m✅ 通过[0m [36] 退出股价，港元 · 乐观                         报告:       546.99 
+                                                    Explicit input or financial_rigor with independent Decimal arithmetic; no forecast verified: 546.99 (偏差 0.00%)
+  [92m✅ 通过[0m [55] 税后经济利润，亿元人民币 · 悲观                    报告:       -27.11 
+                                                    Explicit input or financial_rigor with independent Decimal arithmetic; no forecast verified: -27.11 (偏差 0.02%)
+  [92m✅ 通过[0m [70] 五年年化 · 悲观                            报告:       -50.80 %
+                                                    Explicit input or financial_rigor with independent Decimal arithmetic; no forecast verified: -50.77 (偏差 0.07%)
+  [92m✅ 通过[0m [76] 新增股份中预留员工获股，百万股 · 悲观                 报告:        20.00 
+                                                    Explicit input or financial_rigor with independent Decimal arithmetic; no forecast verified: 20.00 (偏差 0.00%)
+  [92m✅ 通过[0m [82] 按1%发行成本后新股净筹资 · 悲观                   报告:        31.25 
+                                                    Explicit input or financial_rigor with independent Decimal arithmetic; no forecast verified: 31.25 (偏差 0.00%)
+  [92m✅ 通过[0m [87] 偿债与消耗后剩余资金 · 乐观                      报告:        28.61 
+                                                    Explicit input or financial_rigor with independent Decimal arithmetic; no forecast verified: 28.61 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 11  |  通过: [92m11[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================

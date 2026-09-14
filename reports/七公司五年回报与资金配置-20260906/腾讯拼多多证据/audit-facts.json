@@ -1,0 +1,15 @@
+[
+  {
+    "id": 4,
+    "label": "法定已发行数量 · PDD",
+    "reported_value": 5693585848.0,
+    "unit": "",
+    "line_number": 12,
+    "raw_text": "| 法定已发行数量 | 9,103,153,877股 | 5,693,585,848普通股，即1,423,396,462 ADS | 腾讯为9月4日；PDD为年报披露2026年3月18日，不能写成9月4日精确股本 |",
+    "fetched_value": 5693585848,
+    "fetched_source": "Official PDD 2025 20-F p120: outstanding as of March 18, 2026; live accessed September 6, 2026",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "classification": "historical_fact_single_official_source"
+  }
+]

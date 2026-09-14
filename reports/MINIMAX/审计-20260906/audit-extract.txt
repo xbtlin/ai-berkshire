@@ -1,0 +1,227 @@
+======================================================================
+报告数据抽检清单
+文件：/Users/linxuan/ai-berkshire/reports/MINIMAX/MiniMax研究报告-20260906.md
+总提取数据点：106  |  抽样比例：15%  |  抽检数量：16
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  4     26  收入 · 2026上半年                               116.57  
+  5     27  毛利 · 2023                                   -0.85  
+ 12     28  毛利率 · 2026上半年                               17.90  %
+ 15     29  IFRS净利润 · 2024                            -465.24  
+ 14     29  IFRS净利润 · 2023                            -269.25  
+ 18     30  经调整净利润 · 2022                              -12.15  
+ 29     32  简单自由现金流（CFO减设备资本开支） · 2024                -259.24  
+ 28     32  简单自由现金流（CFO减设备资本开支） · 2023                 -65.15  
+ 32     33  现金及等价物 · 2023                              206.29  
+ 36     43  AI原生产品 · 2025全年收入，百万美元                      53.08  
+ 55    167  新增股份平均发行价，港元 · 悲观                           65.00  
+ 70    180  2027全年 · 悲观                                  6.00  
+ 76    182  2029全年 · 悲观                                  6.00  
+ 82    184  2029毛利，亿美元 · 悲观                              1.20  
+ 87    185  2029研发费用，亿美元 · 乐观                           17.00  
+ 95    199  退出股权PS · 基准                                  6.00  倍
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 4,
+    "label": "收入 · 2026上半年",
+    "reported_value": 116.573,
+    "unit": "",
+    "line_number": 26,
+    "raw_text": "| 收入 | 0 | 3.460 | 30.523 | 79.038 | 116.573 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "毛利 · 2023",
+    "reported_value": -0.854,
+    "unit": "",
+    "line_number": 27,
+    "raw_text": "| 毛利 | 0 | -0.854 | 3.738 | 20.079 | 20.813 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 12,
+    "label": "毛利率 · 2026上半年",
+    "reported_value": 17.9,
+    "unit": "%",
+    "line_number": 28,
+    "raw_text": "| 毛利率 | 不适用 | -24.7% | 12.2% | 25.4% | 17.9% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "IFRS净利润 · 2024",
+    "reported_value": -465.238,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| IFRS净利润 | -73.728 | -269.246 | -465.238 | -1,871.617 | -357.997 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 14,
+    "label": "IFRS净利润 · 2023",
+    "reported_value": -269.246,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| IFRS净利润 | -73.728 | -269.246 | -465.238 | -1,871.617 | -357.997 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "经调整净利润 · 2022",
+    "reported_value": -12.15,
+    "unit": "",
+    "line_number": 30,
+    "raw_text": "| 经调整净利润 | -12.150 | -89.074 | -244.243 | -250.856 | -293.031 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "简单自由现金流（CFO减设备资本开支） · 2024",
+    "reported_value": -259.242,
+    "unit": "",
+    "line_number": 32,
+    "raw_text": "| 简单自由现金流（CFO减设备资本开支） | -11.275 | -65.152 | -259.242 | -280.561 | 不强行推算 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 28,
+    "label": "简单自由现金流（CFO减设备资本开支） · 2023",
+    "reported_value": -65.152,
+    "unit": "",
+    "line_number": 32,
+    "raw_text": "| 简单自由现金流（CFO减设备资本开支） | -11.275 | -65.152 | -259.242 | -280.561 | 不强行推算 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 32,
+    "label": "现金及等价物 · 2023",
+    "reported_value": 206.295,
+    "unit": "",
+    "line_number": 33,
+    "raw_text": "| 现金及等价物 | 4.691 | 206.295 | 288.912 | 507.621 | 930.905 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "AI原生产品 · 2025全年收入，百万美元",
+    "reported_value": 53.08,
+    "unit": "",
+    "line_number": 43,
+    "raw_text": "| AI原生产品 | 53.080 | 42.644 | +100.9% | 视频、角色互动等产品的使用和订阅 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 55,
+    "label": "新增股份平均发行价，港元 · 悲观",
+    "reported_value": 65.0,
+    "unit": "",
+    "line_number": 167,
+    "raw_text": "| 新增股份平均发行价，港元 | 65 | 150 | 400 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 70,
+    "label": "2027全年 · 悲观",
+    "reported_value": 6.0,
+    "unit": "",
+    "line_number": 180,
+    "raw_text": "| 2027全年 | 6 | 12 | 18 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 76,
+    "label": "2029全年 · 悲观",
+    "reported_value": 6.0,
+    "unit": "",
+    "line_number": 182,
+    "raw_text": "| 2029全年 | 6 | 30 | 60 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 82,
+    "label": "2029毛利，亿美元 · 悲观",
+    "reported_value": 1.2,
+    "unit": "",
+    "line_number": 184,
+    "raw_text": "| 2029毛利，亿美元 | 1.2 | 12 | 33 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 87,
+    "label": "2029研发费用，亿美元 · 乐观",
+    "reported_value": 17.0,
+    "unit": "",
+    "line_number": 185,
+    "raw_text": "| 2029研发费用，亿美元 | 4 | 10 | 17 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 95,
+    "label": "退出股权PS · 基准",
+    "reported_value": 6.0,
+    "unit": "倍",
+    "line_number": 199,
+    "raw_text": "| 退出股权PS | 2倍 | 6倍 | 10倍 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

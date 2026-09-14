@@ -1,0 +1,201 @@
+======================================================================
+报告数据抽检清单
+文件：/Users/linxuan/ai-berkshire/reports/七公司五年回报与资金配置-20260906/泡泡玛特与MiniMax五年底稿.md
+总提取数据点：88  |  抽样比例：15%  |  抽检数量：14
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  4     12  8 月末已发行总股数 · MiniMax                 349235308.00  
+  5     13  股价乘法定股数，亿港元 · 泡泡玛特                        2050.94  
+ 12     16  经营估值起点 · MiniMax                             1.65  亿美元
+ 15     28  收入 · 乐观                                    950.00  
+ 14     28  收入 · 基准                                    550.00  
+ 18     29  毛利率 · 乐观                                    70.00  %
+ 29     33  2031 总股数，亿股 · 基准                            13.32  
+ 32     34  五年现金股息合计，港元/股 · 基准                          13.58  
+ 36     35  退出股价，港元 · 乐观                               546.99  
+ 55     55  税后经济利润，亿元人民币 · 悲观                          -27.11  
+ 70     61  五年年化 · 悲观                                  -50.80  %
+ 76     76  新增股份中预留员工获股，百万股 · 悲观                        20.00  
+ 82     78  按1%发行成本后新股净筹资 · 悲观                          31.25  
+ 87     79  偿债与消耗后剩余资金 · 乐观                             28.61  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 4,
+    "label": "8 月末已发行总股数 · MiniMax",
+    "reported_value": 349235308.0,
+    "unit": "",
+    "line_number": 12,
+    "raw_text": "| 8 月末已发行总股数 | 1,331,779,203 | 349,235,308 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "股价乘法定股数，亿港元 · 泡泡玛特",
+    "reported_value": 2050.94,
+    "unit": "",
+    "line_number": 13,
+    "raw_text": "| 股价乘法定股数，亿港元 | 2,050.94 | 1,262.14 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 12,
+    "label": "经营估值起点 · MiniMax",
+    "reported_value": 1.65182,
+    "unit": "亿美元",
+    "line_number": 16,
+    "raw_text": "| 经营估值起点 | 正常化利润 112 亿元为假设，对应 15.83 倍 PE | TTM 已确认收入 1.65182 亿美元，对应股权 PS 97.45 倍 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "收入 · 乐观",
+    "reported_value": 950.0,
+    "unit": "",
+    "line_number": 28,
+    "raw_text": "| 收入 | 250 | 550 | 950 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 14,
+    "label": "收入 · 基准",
+    "reported_value": 550.0,
+    "unit": "",
+    "line_number": 28,
+    "raw_text": "| 收入 | 250 | 550 | 950 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "毛利率 · 乐观",
+    "reported_value": 70.0,
+    "unit": "%",
+    "line_number": 29,
+    "raw_text": "| 毛利率 | 55% | 67% | 70% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "2031 总股数，亿股 · 基准",
+    "reported_value": 13.31779203,
+    "unit": "",
+    "line_number": 33,
+    "raw_text": "| 2031 总股数，亿股 | 13.31779203 | 13.31779203 | 13.31779203 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 32,
+    "label": "五年现金股息合计，港元/股 · 基准",
+    "reported_value": 13.58,
+    "unit": "",
+    "line_number": 34,
+    "raw_text": "| 五年现金股息合计，港元/股 | 5.90 | 13.58 | 23.04 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "退出股价，港元 · 乐观",
+    "reported_value": 546.99,
+    "unit": "",
+    "line_number": 35,
+    "raw_text": "| 退出股价，港元 | 31.92 | 202.23 | 546.99 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 55,
+    "label": "税后经济利润，亿元人民币 · 悲观",
+    "reported_value": -27.11,
+    "unit": "",
+    "line_number": 55,
+    "raw_text": "| 税后经济利润，亿元人民币 | -27.11 | -3.39 | 122.02 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 70,
+    "label": "五年年化 · 悲观",
+    "reported_value": -50.8,
+    "unit": "%",
+    "line_number": 61,
+    "raw_text": "| **五年年化** | **-50.8%** | **-8.2%** | **+16.8%** |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 76,
+    "label": "新增股份中预留员工获股，百万股 · 悲观",
+    "reported_value": 20.0,
+    "unit": "",
+    "line_number": 76,
+    "raw_text": "| 新增股份中预留员工获股，百万股 | 20 | 20 | 20 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 82,
+    "label": "按1%发行成本后新股净筹资 · 悲观",
+    "reported_value": 31.25,
+    "unit": "",
+    "line_number": 78,
+    "raw_text": "| 按1%发行成本后新股净筹资 | 31.25 | 24.77 | 40.79 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 87,
+    "label": "偿债与消耗后剩余资金 · 乐观",
+    "reported_value": 28.61,
+    "unit": "",
+    "line_number": 79,
+    "raw_text": "| 偿债与消耗后剩余资金 | 9.07 | 7.59 | 28.61 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

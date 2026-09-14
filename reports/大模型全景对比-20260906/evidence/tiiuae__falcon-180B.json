@@ -1,0 +1,6 @@
+{
+  "repo": "tiiuae/falcon-180B",
+  "url": "https://huggingface.co/tiiuae/falcon-180B",
+  "README.md_status": 401,
+  "LICENSE_error": "Command '['curl', '-L', '--max-time', '25', '-sS', '-w', '\\n%{http_code}', 'https://huggingface.co/tiiuae/falcon-180B/raw/main/LICENSE']' returned non-zero exit status 35."
+}

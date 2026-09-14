@@ -1,0 +1,22 @@
+{
+  "repo": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "- Number of Parameters: 235B in total and 22B activated",
+    "- Context Length: **262,144 natively and extendable up to 1,010,000 tokens**",
+    "    python -m sglang.launch_server --model-path Qwen/Qwen3-235B-A22B-Instruct-2507 --tp 8 --context-length 262144",
+    "**Note: If you encounter out-of-memory (OOM) issues, consider reducing the context length to a shorter value, such as `32,768`.**",
+    "To support **ultra-long context processing** (up to **1 million tokens**), we integrate two key techniques:",
+    "> To effectively process a 1 million token context, users will require approximately **1000 GB** of total GPU memory. This accounts for model weights, KV-cache storage, and peak activation memory demands.",
+    "##### Key Parameters",
+    "| `--max-model-len 1010000` | Sets maximum context length to ~1M tokens |",
+    "    --context-length 1010000 \\",
+    "##### Key Parameters",
+    "| `--context-length 1010000` | Defines max input length |",
+    "1. **Sampling Parameters**:"
+  ],
+  "LICENSE_status": 200,
+  "license_head": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or ent"
+}

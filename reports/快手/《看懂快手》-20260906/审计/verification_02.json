@@ -1,0 +1,68 @@
+[
+  {
+    "id": 2,
+    "label": "有效定价、利用率较高 · 渠道与服务成本",
+    "reported_value": 15.0,
+    "unit": "示例金额",
+    "raw_text": "| 有效定价、利用率较高 | 25 | 15 | 60 |",
+    "line_number": 75,
+    "classification": "教学假设或算术；不适用外部事实验证",
+    "fetched_value": 15,
+    "fetched_source": "reproduce.py 示例输入；100-45-15=40 经 financial_rigor calc 复核",
+    "independent_external_sources": 0
+  },
+  {
+    "id": 1,
+    "label": "有效定价、利用率较高 · 直接生成及交付成本",
+    "reported_value": 25.0,
+    "unit": "示例金额",
+    "raw_text": "| 有效定价、利用率较高 | 25 | 15 | 60 |",
+    "line_number": 75,
+    "classification": "教学假设或算术；不适用外部事实验证",
+    "fetched_value": 25,
+    "fetched_source": "reproduce.py 示例输入；100-45-15=40 经 financial_rigor calc 复核",
+    "independent_external_sources": 0
+  },
+  {
+    "id": 6,
+    "label": "价格竞争与正常使用 · 覆盖训练研发前的贡献",
+    "reported_value": 40.0,
+    "unit": "示例金额",
+    "raw_text": "| 价格竞争与正常使用 | 45 | 15 | 40 |",
+    "line_number": 76,
+    "classification": "教学假设或算术；不适用外部事实验证",
+    "fetched_value": 40,
+    "fetched_source": "reproduce.py 示例输入；100-45-15=40 经 financial_rigor calc 复核",
+    "independent_external_sources": 0
+  },
+  {
+    "id": 101,
+    "label": "人工重点抽检：可灵2025重组备考收入",
+    "reported_value": 11,
+    "unit": "亿元人民币",
+    "fetched_value": 11,
+    "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0702/2026070204066_c.pdf 印刷第6页",
+    "classification": "事实；未经审计重组备考约数，单一发行人来源",
+    "independent_external_sources": 1
+  },
+  {
+    "id": 102,
+    "label": "人工重点抽检：可灵2025备考亏损",
+    "reported_value": 19,
+    "unit": "亿元人民币",
+    "fetched_value": 19,
+    "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0702/2026070204066_c.pdf 印刷第23页",
+    "classification": "事实；未经审计重组备考约数，单一发行人来源",
+    "independent_external_sources": 1
+  },
+  {
+    "id": 103,
+    "label": "人工重点抽检：认购与激励上限用满后经济权益",
+    "reported_value": 68.33,
+    "unit": "%",
+    "fetched_value": 68.33,
+    "fetched_source": "https://ea-cdn.eurolandir.com/press-releases-attachments/4175052/HKEX-EPS_20260831_12309546_0.PDF 第3页66.33+2",
+    "classification": "附条件表值；不是现时已归属比例，单一发行人来源",
+    "independent_external_sources": 1
+  }
+]

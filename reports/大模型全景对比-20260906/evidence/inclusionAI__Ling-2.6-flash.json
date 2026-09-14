@@ -1,0 +1,14 @@
+{
+  "repo": "inclusionAI/Ling-2.6-flash",
+  "url": "https://huggingface.co/inclusionAI/Ling-2.6-flash",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "Today, we announce the official open-source release of **Ling-2.6-flash**, an **instruct model** with **104B total parameters** and **7.4B active parameters**. ",
+    "For the agent use cases seeing the strongest demand today, we continuously refined Ling-2.6-flash in tool use, multi-step planning, and task execution. As a result, the model achieves performance that is competitive with, and in some cases reaches **SOTA level** against, models with larger active parameter counts on benchmarks including **BFCL-V4, TAU2-bench, SWE-bench Verified, Claw-Eval, and PinchBench**.",
+    "Whether the workload involves **long-context understanding** or **extended text generation**, Ling-2.6-flash preserves model capability while delivering **faster responses, higher throughput, and better real-world deployment efficiency**.",
+    "    --context-length 262144 \\",
+    "    --context-length 262144 \\"
+  ],
+  "LICENSE_status": 404
+}

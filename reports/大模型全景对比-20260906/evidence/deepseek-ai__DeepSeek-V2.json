@@ -1,0 +1,14 @@
+{
+  "repo": "deepseek-ai/DeepSeek-V2",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V2",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "Today, we’re introducing DeepSeek-V2, a strong Mixture-of-Experts (MoE) language model characterized by economical training and efficient inference. It comprises 236B total parameters, of which 21B are activated for each token. Compared with DeepSeek 67B, DeepSeek-V2 achieves stronger performance, and meanwhile saves 42.5% of training costs, reduces the KV cache by 93.3%, and boosts the maximum generation throughput to 5.76 times. ",
+    "    <img src=\"https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/activationparameters.png?raw=true\" style=\"height:300px; width:auto; margin-right:10px\">",
+    "Evaluation results on the ``Needle In A Haystack`` (NIAH) tests.  DeepSeek-V2 performs well across all context window lengths up to **128K**. ",
+    "This code repository is licensed under [the MIT License](LICENSE-CODE). The use of DeepSeek-V2 Base/Chat models is subject to [the Model License](LICENSE-MODEL). DeepSeek-V2 series (including Base and Chat) supports commercial use."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "DEEPSEEK LICENSE AGREEMENT\n\nVersion 1.0, 23 October 2023\n\nCopyright (c) 2023 DeepSeek\n\nSection I: PREAMBLE \n\nLarge generative models are being widely adopted and used, and have the potential to transform the way individuals conceive and benefit from AI or ML technologies. \n\nNotwithstanding the current and potential benefits that these artifacts can bring to society at large, there are also concerns about potential misuses of them, either due to t"
+}

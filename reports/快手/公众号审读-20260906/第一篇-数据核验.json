@@ -1,0 +1,162 @@
+{
+  "report": "快手-公众号-看懂快手01-20260906.md",
+  "review_date": "2026-09-06",
+  "sha256": "1415fe7292aa95b879d1fe5d7ccf51a6c5b73fe5feffc309b20a132711235e8d",
+  "automatic_extract_count": 0,
+  "manual_numeric_checks": [
+    {
+      "id": 1,
+      "label": "2026Q2平均日活",
+      "reported_value": 4.123,
+      "fetched_value": 4.123,
+      "unit": "亿",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0"
+    },
+    {
+      "id": 2,
+      "label": "2026Q2日活同比",
+      "reported_value": 0.8,
+      "fetched_value": 0.8,
+      "unit": "%",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0"
+    },
+    {
+      "id": 3,
+      "label": "2026Q2调整后净利润",
+      "reported_value": 39.13,
+      "fetched_value": 39.13,
+      "unit": "亿元人民币",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+      "source_count": 2,
+      "rounding_error_percent": "0",
+      "fetched_value2": 39.1,
+      "fetched_source2": "https://finance.sina.com.cn/stock/relnews/hk/2026-08-20/doc-ininxzps2010469.shtml"
+    },
+    {
+      "id": 4,
+      "label": "2026Q2调整后净利润同比降幅",
+      "reported_value": 30.3,
+      "fetched_value": 30.3,
+      "unit": "%",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+      "source_count": 2,
+      "rounding_error_percent": "0",
+      "fetched_value2": 30.3,
+      "fetched_source2": "https://finance.sina.com.cn/stock/relnews/hk/2026-08-20/doc-ininxzps2010469.shtml"
+    },
+    {
+      "id": 5,
+      "label": "2025收入约数",
+      "reported_value": 1428,
+      "fetched_value": 1427.76,
+      "unit": "亿元人民币",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0.01680954782316355690031938141"
+    },
+    {
+      "id": 6,
+      "label": "2025线上营销收入约数",
+      "reported_value": 815,
+      "fetched_value": 814.62,
+      "unit": "亿元人民币",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0.04664751663352237853232181876"
+    },
+    {
+      "id": 7,
+      "label": "2025直播收入约数",
+      "reported_value": 391,
+      "fetched_value": 390.87,
+      "unit": "亿元人民币",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0.03325913986747511960498375419"
+    },
+    {
+      "id": 8,
+      "label": "2025其他服务收入约数",
+      "reported_value": 222,
+      "fetched_value": 222.27,
+      "unit": "亿元人民币",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0.1214738831151302469968956674"
+    },
+    {
+      "id": 9,
+      "label": "2025GMV约数",
+      "reported_value": 1.598,
+      "fetched_value": 1.5980707,
+      "unit": "万亿元人民币",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0.004424084616531671596256661235"
+    },
+    {
+      "id": 10,
+      "label": "2026Q1净成交ROI客户渗透率",
+      "reported_value": 45,
+      "fetched_value": 45,
+      "unit": "%",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0"
+    },
+    {
+      "id": 11,
+      "label": "2026Q2净成交ROI客户渗透率",
+      "reported_value": 55,
+      "fetched_value": 55,
+      "unit": "%",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0"
+    },
+    {
+      "id": 12,
+      "label": "2026Q2分成成本及相关税项",
+      "reported_value": 123.23,
+      "fetched_value": 123.23,
+      "unit": "亿元人民币",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0"
+    },
+    {
+      "id": 13,
+      "label": "2026Q2分成成本及相关税项收入占比",
+      "reported_value": 34.7,
+      "fetched_value": 34.7,
+      "unit": "%",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0"
+    },
+    {
+      "id": 14,
+      "label": "2025Q2分成成本及相关税项收入占比",
+      "reported_value": 30.1,
+      "fetched_value": 30.1,
+      "unit": "%",
+      "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+      "source_count": 1,
+      "rounding_error_percent": "0"
+    }
+  ],
+  "tool_verdict": {
+    "verdict": "PASS",
+    "pass_count": 14,
+    "warn_count": 0,
+    "fail_count": 0,
+    "total": 14,
+    "fail_items": [],
+    "warn_items": []
+  },
+  "review_scope": "自动提取未识别叙述型数字，已人工核验14项，2项另有独立机构复核；其余为发行人原件确认，未宣称全部双源。正文不含估值模型。编辑与读者分别审读，均建议压缩开头口径说明与结尾重复，已采纳；按用户要求保留电商货币化率并说明口径。"
+}

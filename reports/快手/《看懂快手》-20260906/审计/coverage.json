@@ -1,0 +1,29 @@
+[
+  {
+    "article": "01",
+    "article_sha256": "fb7383d5f3b376bf4069f44f5e766becb73666671d2aeef06674c2965d7689ba",
+    "automatic_sample_count": 1,
+    "checked_entries_including_models": 4,
+    "two_independent_sources_fact_count": 2,
+    "single_issuer_fact_count": 1,
+    "notice": "工具 PASS 仅指抽检值在容差内；未覆盖全部正文，模型输入无外部验证含义，单源事实保留来源缺口。"
+  },
+  {
+    "article": "02",
+    "article_sha256": "2c7de93f35173645e1b083b459cf5501a59e87ea98530efd880939b56e722ac5",
+    "automatic_sample_count": 3,
+    "checked_entries_including_models": 6,
+    "two_independent_sources_fact_count": 0,
+    "single_issuer_fact_count": 3,
+    "notice": "工具 PASS 仅指抽检值在容差内；未覆盖全部正文，模型输入无外部验证含义，单源事实保留来源缺口。"
+  },
+  {
+    "article": "03",
+    "article_sha256": "ed0a10d80db6701c679db8db062386af088a71be95c9d2c3958458908c334e60",
+    "automatic_sample_count": 15,
+    "checked_entries_including_models": 15,
+    "two_independent_sources_fact_count": 7,
+    "single_issuer_fact_count": 3,
+    "notice": "工具 PASS 仅指抽检值在容差内；未覆盖全部正文，模型输入无外部验证含义，单源事实保留来源缺口。"
+  }
+]

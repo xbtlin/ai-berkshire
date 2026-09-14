@@ -1,0 +1,950 @@
+Hong Kong Exchanges and Clearing Limited and The Stock Exchange of Hong Kong Limited take no responsibility
+for the contents of this announcement, make no representation as to its accuracy or completeness and expressly
+disclaim any liability whatsoever for any loss howsoever arising from or in reliance upon the whole or any part of the
+contents of this announcement.
+
+
+
+
+                                         MiniMax Group Inc.
+ (A company controlled through weighted voting rights and incorporated in the Cayman Islands with limited liability)
+                                               (Stock Code: 0100)
+
+                        INTERIM RESULTS ANNOUNCEMENT
+                      FOR THE SIX MONTHS ENDED JUNE 30, 2026
+
+ FINANCIAL HIGHLIGHTS
+
+                                                              Six months ended June 30,
+                                                                     2026          2025                    Change
+                                                                 USD ’000      USD ’000                       (%)
+                                                              (Unaudited)    (Unaudited)
+
+ Revenue                                                            116,573             30,429                283.1
+ Gross profit                                                        20,813              3,685                464.8
+ Loss for the period                                               (357,997)          (402,188)               -11.0
+ Non-IFRS Measure:Note
+   Adjusted net loss                                               (293,031)          (138,735)               111.2
+
+ Note: Please refer to section headed “Non-IFRS Measure ” in this interim results announcement for more details.
+
+
+The board (the “Board”) of directors (the “Directors”) of MiniMax Group Inc. (the “Company”,
+and together with its subsidiaries, the “Group”) is pleased to announce the unaudited consolidated
+results of the Group for the six months ended June 30, 2026 (the “Reporting Period”), together
+with the comparative figures for the six months ended June 30, 2025. The contents of this interim
+results announcement have been prepared in accordance with applicable disclosure requirements
+under the Rules Governing the Listing of Securities on The Stock Exchange of Hong Kong Limited
+(the “Stock Exchange”) (the “Listing Rules”) in relation to preliminary announcements of interim
+results and have been reviewed by the audit committee (the “Audit Committee”) of the Board.
+
+In this announcement, “we”, “us”, and “our” refer to the Company and where the context otherwise
+requires, the Group. Unless otherwise defined herein, capitalized terms used in this announcement
+shall have the same meanings as those defined in the prospectus of the Company dated December
+31, 2025 (the “Prospectus”).
+
+
+
+
+                                                          1
+BUSINESS REVIEW AND OUTLOOK
+
+Business Review
+
+We continued to advance our mission of “Intelligence with Everyone” by delivering frontier model
+performance and making advanced intelligence affordable at scale. We view inference efficiency
+not only as essential to making advanced intelligence affordable at scale, but also as a critical
+enabler of further scaling model capabilities through more extensive post-training, experimentation
+and deployment. We continued to improve the capabilities and full-stack efficiency of our
+foundation models, translate technological progress into AI-native products and harnesses such
+as MiniMax Code, and enhance our Open Platform for enterprise customers and developers. Our
+model capabilities continued to advance across language and multi-modality, while our products
+and services reached an increasingly broad global user base.
+
+During the Reporting Period, we upgraded our core model offerings through the release of
+MiniMax M3, further strengthening our capabilities in coding, agentic workflows and professional
+work. Shortly after the Reporting Period, we also released MiniMax H3 with open weights,
+advancing video generation for commercial creation and widening the paths for enterprise
+deployment and developer innovation. As demand for inference and agentic workloads continued
+to grow, our Open Platform served an expanded base of enterprise customers and developers
+and became an increasingly important driver of our business. We continued to deepen our global
+footprint, serving enterprise customers, developers and individual users across more than 230
+countries and regions with increasingly capable and cost-efficient intelligence offerings.
+
+For the six months ended June 30, 2026, our total revenue increased by 283.1% year-on-year from
+US$30.4 million to US$116.6 million, exceeding our total revenue of US$79.0 million for the
+full year of 2025. This growth reflected the continued expansion of our global customer and user
+base, rapidly increasing demand for model inference, and our ability to convert edges in model
+capabilities into products and services used by global enterprises, developers and individual users.
+
+Revenue from our Open Platform and other AI-based enterprise services increased by 703.1%
+year-on-year from US$9.2 million to US$73.9 million and represented 63.4% of our total revenue,
+compared with 30.3% in the corresponding period of 2025. The increase was driven by growth in
+paying users and enterprise customers, the increase in API call volumes, and the rapid adoption of
+our Token Plan. This performance demonstrated the growing demand for our models in production
+environments and the increasing contribution of enterprise and developer workloads to our
+business.
+
+Revenue from our AI-native products increased by 100.9% year-on-year from US$21.2 million to
+US$42.6 million, driven by higher user engagement, stronger willingness to pay and the continued
+commercialization of Hailuo AI and our other AI-native products. We continued to upgrade
+our AI-native product portfolio and harness products, enabling users to apply frontier model
+capabilities more directly to productivity.
+
+We maintained our commitment to long-term technological innovation while improving the
+efficiency with which research and development translated into business growth. Our research and
+development expenses increased by 138.8% year-on-year during the Reporting Period, significantly
+lower than our revenue growth of 283.1%. Gross profit increased by 464.8% year-on-year from
+US$3.7 million to US$20.8 million. We believe our continued investment in model capability,
+infrastructure efficiency and productization provides the foundation for sustainable growth over the
+long term.
+
+                                                 2
+Business Outlook
+
+Looking ahead, we believe model intelligence has substantial room to advance. In coding and
+agentic work, models will increasingly move beyond assisting with individual tasks toward taking
+sustained responsibility for complex, multi-step tasks. Workplace applications are expected to
+follow a similar path, reshaping how knowledge work is performed across industries. Video
+and other generative capabilities will continue moving closer to production-ready content
+and more complete creative workflows. At the same time, the deeper integration of language
+understanding and multi-modal generation will bring video and other generative capabilities closer
+to production-ready content and more complete creative workflows. Together, these developments
+will substantially expand both the supply of intelligence and the range of applications that can be
+built on top of it.
+
+We will remain focused on extending the performance-cost frontier. Model performance must first
+reach the level required to reliably complete increasingly complex real-world tasks; full-stack
+efficiency then determines how broadly and economically that intelligence can be elevated. We
+will therefore continue to advance our language and multi-modal model offerings, while improving
+training and inference efficiency through full-stack co-design across models, infrastructure,
+systems and products. Our objective is to deliver increasingly capable intelligence with compelling
+unit economics, making frontier capabilities affordable at scale.
+
+We will continue to strengthen our Open Platform, expand AI-native products and harnesses,
+and enhance scalable infrastructure and token throughput capacity. By making our models
+easier to access, integrate and deploy, we aim to serve a broader range of enterprise customers,
+developers and individual users and deepen commercialization across global markets. Through the
+combination of frontier performance, full-stack efficiency and global commercialization, we will
+continue working toward our mission of “Intelligence with Everyone.”
+
+
+
+
+                                                3
+MANAGEMENT DISCUSSION AND ANALYSIS
+
+The following table sets forth the comparative figures for the six months ended June 30, 2026 and
+2025:
+
+                                                                    Six months ended June 30,
+                                                                           2026          2025
+                                                                       USD ’000      USD ’000
+                                                                    (Unaudited)    (Unaudited)
+
+Revenue                                                                  116,573          30,429
+Cost of sales                                                            (95,760)        (26,744)
+
+Gross profit                                                              20,813           3,685
+
+Other income and gains, net                                                8,039          20,339
+Selling and distribution expenses                                        (26,973)        (32,843)
+Administrative expenses                                                  (30,230)        (14,843)
+Research and development expenses                                       (296,870)       (124,333)
+Fair value loss on financial liabilities                                 (31,025)       (253,876)
+Finance costs                                                               (647)           (325)
+Impairment (losses)/reversal on financial assets, net                     (1,104)              8
+
+Loss before tax                                                         (357,997)       (402,188)
+
+Income tax expense                                                             –               –
+
+Loss for the period                                                     (357,997)       (402,188)
+
+Non-IFRS Measure
+Loss for the period                                                     (357,997)       (402,188)
+Adjusted for:
+  Share-based payment expenses                                            28,208           6,634
+  Fair value loss on financial liabilities                                31,025         253,876
+  Listing expenses                                                         5,733           2,943
+
+Adjusted net loss (non-IFRS measure)                                    (293,031)       (138,735)
+
+
+
+
+                                                  4
+Financial Review
+
+Revenue
+
+Our revenue increased by 283.1% from US$30.4 million for the six months ended June 30, 2025
+to US$116.6 million for the six months ended June 30, 2026. This was primarily driven by the
+continued expansion of our global customer and user base, rapidly increasing demand for model
+inference, and our ability to convert advances in model capabilities into products and services used
+by global enterprises, developers and individual users.
+
+The following table sets forth the breakdown of our revenue by nature, in absolute amounts and as
+a percentage of our total revenue, for the periods indicated.
+
+                                                         Six months ended June 30,
+                                                         2026                      2025
+                                               USD ’000           %     USD ’000                 %
+                                             (Unaudited)              (Unaudited)
+
+AI-native products                                   42,644        36.6        21,223          69.7
+Open Platform and other AI-based
+  enterprise services                                73,929        63.4         9,206          30.3
+
+Total revenue                                     116,573         100.0        30,429         100.0
+
+AI-native products. Revenue from our AI-native products increased by 100.9% from US$21.2
+million for the six months ended June 30, 2025 to US$42.6 million for the six months ended June
+30, 2026, primarily driven by higher user engagement and increased user willingness to pay for our
+products, as well as the continued adoption and monetization of products such as Hailuo AI and
+our other AI-native products.
+
+Open Platform and other AI-based enterprise services. Revenue generated from Open Platform
+and other AI-based enterprise services increased by 703.1% from US$9.2 million for the six
+months ended June 30, 2025 to US$73.9 million for the six months ended June 30, 2026, primarily
+fueled by the growth in paying individual users and enterprise users, the increase in API call
+volumes, and the rapid adoption of our Token Plan.
+
+Our global strategy has supported simultaneous product launches across markets, enabling rapid
+international growth. As of June 30, 2026, our products and services were deployed in over 230
+countries and regions, with revenue from international markets contributing a significant portion of
+our total revenue. Revenue generated outside Chinese mainland contributed approximately 60.8%
+of our total revenue for the six months ended June 30, 2026.
+
+                                                         Six months ended June 30,
+                                                         2026                      2025
+                                               USD ’000           %     USD ’000                 %
+                                             (Unaudited)              (Unaudited)
+
+Chinese mainland                                     45,745        39.2         8,571          28.2
+Rest of the World                                    70,828        60.8        21,858          71.8
+
+Total revenue                                     116,573         100.0        30,429         100.0
+
+
+                                                 5
+Cost of sales
+
+Our cost of sales increased by 258.1% from US$26.7 million for the six months ended June
+30, 2025 to US$95.8 million for the six months ended June 30, 2026, primarily in line with the
+increase in revenue.
+
+Gross profit and gross profit margin
+
+As a result of the foregoing, our gross profit improved by 464.8% from US$3.7 million for the six
+months ended June 30, 2025 to US$20.8 million for the six months ended June 30, 2026. Our gross
+profit margin increased from 12.1% for the six months ended June 30, 2025 to 17.9% for the six
+months ended June 30, 2026, which was primarily driven by improving infrastructure efficiency.
+
+Other income and gains, Net
+
+Our other income and gains, net decreased by 60.5% from US$20.3 million for the six months
+ended June 30, 2025 to US$8.0 million for the six months ended June 30, 2026, primarily
+attributable to lower gains from wealth management products, reflecting a lower average balance
+of funds allocated to such products during the Reporting Period.
+
+Selling and distribution expenses
+
+Our selling and distribution expenses decreased by 17.9% from US$32.8 million for the six months
+ended June 30, 2025 to US$27.0 million for the six months ended June 30, 2026, mainly due to a
+decrease in promotional expenses as a result of our continued pursuit of an organic user growth
+strategy.
+
+Administrative expenses
+
+Our administrative expenses increased by 103.7% from US$14.8 million for the six months ended
+June 30, 2025 to US$30.2 million for the six months ended June 30, 2026, mainly driven by (i)
+an increase in headcount of management departments in line with the rapid development of our
+business and higher share-based payment expenses; and (ii) an increase in service fees to external
+professional service providers. As a result of our continued revenue growth and increased focus
+on enhancing administrative efficiency, administrative expenses as a percentage of total revenue
+decreased from 48.8% for the six months ended June 30, 2025 to 25.9% for the six months ended
+June 30, 2026.
+
+Research and development expenses
+
+Our research and development expenses increased by 138.8% from US$124.3 million for the
+six months ended June 30, 2025 to US$296.9 million for the six months ended June 30, 2026,
+mainly attributable to an increase in cloud services expenses related to training activities,
+driven by the increased model iteration and upgrades as we continued to develop and refine our
+foundation models and multi-modal capabilities. The year-on-year growth rate of our research and
+development expenses was significantly lower than our revenue growth rate of 283.1% during the
+period, demonstrating our improved research and development efficiency.
+
+
+
+
+                                                6
+Fair value loss on financial liabilities
+
+Our fair value loss on financial liabilities decreased from US$253.9 million for the six months
+ended June 30, 2025 to US$31.0 million for the six months ended June 30, 2026, as our convertible
+redeemable preferred shares were automatically converted into ordinary shares and redesignated
+from liabilities to equity accordingly upon the completion of the listing of the Class A Ordinary
+Shares of the Company on the Main Board of the Stock Exchange (the “Listing”).
+
+Loss for the Period
+
+As a result of the foregoing, our loss for the six months ended June 30, 2026 was US$358.0
+million, decreased by 11.0% from a loss of US$402.2 million for the six months ended June 30,
+2025.
+
+Adjusted net loss (non-IFRS measure)
+
+We recorded adjusted net loss (non-IFRS measure) of US$293.0 million for the six months ended
+June 30, 2026 and US$138.7 million for the six months ended June 30, 2025, by adding back
+share-based payments, fair value loss on financial liabilities and listing expenses for the respective
+periods.
+
+Non-IFRS Measure
+
+To supplement our unaudited interim condensed consolidated financial statements which are
+presented in accordance with the IFRSs, we also use adjusted net loss (non-IFRS measure) as
+additional financial measure, which is not required by, or presented in accordance with, the IFRSs.
+We believe this non-IFRS measure facilitates comparisons of operating performance from period to
+period and company to company by eliminating potential impacts of certain items.
+
+We define our adjusted net loss (non-IFRS measure) as net loss adjusted by adding back (i)
+share-based payment expenses, which are non-cash expenses arising from share-based awards
+granted to participants under our share incentive schemes and are included in the cost of sales,
+administrative expenses, research and development expenses, and selling and distribution expenses;
+(ii) fair value loss on financial liabilities, comprising fair value changes of convertible redeemable
+preferred shares which were re-designated from liabilities to equity as a result of the automatic
+conversion into ordinary shares upon Listing, and convertible bonds; and (iii) listing expenses.
+
+We believe adjusted net loss (non-IFRS measure) provides useful information to investors and
+others in understanding and evaluating our consolidated results of operations in the same manner as
+our management does. However, our presentation of adjusted net loss (non-IFRS measure) may not
+be comparable to similarly titled measures presented by other companies. The use of this non-IFRS
+measure has limitations as an analytical tool, and should not be considered in isolation from, or
+as a substitute for an analysis of, our results of operations or financial condition as reported under
+IFRS.
+
+
+
+
+                                                  7
+Liquidity and Financial Resources
+
+We funded our cash requirements mainly from cash received from financing activities for the
+six months ended June 30, 2026. As of June 30, 2026, our cash balance was US$1,322.8 million,
+including cash and cash equivalents US$930.9 million, financial assets at amortised cost US$29.6
+million, financial assets at fair value through profit or loss US$347.5 million, restricted cash
+US$0.8 million and time deposit US$14.0 million, compared to our cash balance of US$1,050.3
+million as of December 31, 2025.
+
+As of June 30, 2026, we did not provide guarantees and pledges to related parties.
+
+Significant Investments
+
+The Group did not make or hold any significant investments as of June 30, 2026.
+
+Material Acquisitions and Disposals
+
+The Group did not have any material acquisitions or disposals of subsidiaries, consolidated
+affiliated entities, associated companies or joint ventures during the period ended June 30, 2026.
+
+Charge on Assets
+
+As of June 30, 2026, we did not pledge or charge any assets.
+
+Future Plans for Material Investments or Capital Assets
+
+The Group did not have detailed future plans for material investments or capital assets as of June
+30, 2026.
+
+Gearing Ratio
+
+As of June 30, 2026, the Company’s gearing ratio (equals total liabilities divided by total assets, in
+percentage) was 21.5% (December 31, 2025: 343.3%).
+
+Foreign Exchange Risk Exposure
+
+As of June 30, 2026, our cash and cash equivalents balance was mainly denominated in US dollars,
+Renminbi and Hong Kong dollars. As we expand globally with our users, we become increasingly
+exposed to the effects of fluctuations in currency exchange rates. We manage our foreign exchange
+risk by performing regular reviews of our Group’s net foreign exchange exposures and trying to
+minimize these exposures through natural hedges, wherever possible.
+
+Indebtedness
+
+Bank borrowings
+
+As at June 30, 2026, our interest-bearing bank borrowings amounted to US$133.6 million,
+representing an increase of US$98.1 million from US$35.5 million as at December 31, 2025. The
+increase was primarily attributable to additional borrowings for working capital purposes to support
+our operations. These borrowings were primarily denominated in RMB and were unsecured.
+
+
+                                                  8
+Contingent Liabilities
+
+The Company had no material contingent liabilities as of June 30, 2026.
+
+Capital Commitment
+
+The Company did not have significant capital commitments as of June 30, 2026.
+
+Employees and Remuneration
+
+As of June 30, 2026, the Company had a total of 568 full-time employees. The total employee
+remuneration expenses for the period ended June 30, 2026, including share-based payments, were
+US$68.9 million, as compared to US$35.9 million for the period ended June 30, 2025.
+
+As required by relevant laws and regulations, we participate in various employee social security
+schemes organized by local municipal and provincial governments, including pension insurance,
+maternity insurance, unemployment insurance, work-related injury insurance, health insurance, and
+housing provident funds as applicable.
+
+We provide comprehensive onboarding, continuous training programs, and mentorship support
+to facilitate employee development. Our compensation structures, including equity incentives,
+are competitively designed to attract and retain top talent. We regularly organize internal
+knowledge-sharing sessions where employees are invited to discuss industry trends, products, and
+technologies, enhancing our team’s professional skills and knowledge base.
+
+CORPORATE GOVERNANCE
+
+The Board is committed to achieving high corporate governance standards. The Board believes
+that high corporate governance standards are essential in providing a framework for the Company
+to safeguard the interests of Shareholders and to enhance corporate value and accountability. The
+Company has in place a corporate governance framework and has established a set of policies and
+procedures based on the Corporate Governance Code contained in Appendix C1 to the Listing
+Rules. Such policies and procedures provide the infrastructure for enhancing the Board’s ability
+to implement governance and exercise proper oversight on business conduct and affairs of the
+Company.
+
+Compliance with the Code on Corporate Governance Practices
+
+The Board is of the view that the Company has complied with all code provisions as set out in Part
+2 of the Corporate Governance Code during the period from January 9, 2026 (the date on which the
+Class A Ordinary Shares of the Company were listed on the Stock Exchange, the “Listing Date”)
+to June 30, 2026 (the “Relevant Period”), except for deviation from the code provision C.2.1.
+
+
+
+
+                                                9
+Pursuant to code provision C.2.1 of part 2 of the Corporate Governance Code, companies listed on
+the Stock Exchange are expected to comply with, but may choose to deviate from the requirement
+that the responsibilities between the chairman and the chief executive officer should be separate
+and should not be performed by the same individual. We do not have a separate chairman and chief
+executive officer and Dr. Yan Junjie currently performs these two roles. The Board believes that
+vesting the roles of both chairman and chief executive officer in the same person has the benefit
+of ensuring consistent leadership within the Group and enables more effective overall strategic
+planning for the Group. The Board considers that the balance of power and authority for the
+present arrangement will not be impaired and this structure will enable the Company to make and
+implement decisions promptly and effectively.
+
+The Company will continue to enhance its corporate governance practices appropriate to the
+conduct and growth of its business and to review such practices from time to time to ensure that
+they comply with statutory and professional standards and align with the latest development.
+
+Compliance with the Model Code for Securities Transactions by Directors
+
+The Company has adopted the Model Code for Securities Transactions by Directors of Listed
+Issuers (the “Model Code”) as set out in Appendix C3 to the Listing Rules, to regulate all dealings
+by Directors of securities in the Company and other matters covered by the Model Code.
+
+Having made specific enquiry of all the Directors, all the Directors confirmed that they have
+strictly complied with the required standards set out in the Model Code during the Relevant Period.
+No incident of non-compliance with the Model Code by the employees was noted by the Company
+for the Relevant Period.
+
+Audit Committee
+
+The Audit Committee consists of three Directors, two independent non-executive directors, namely
+Dr. Wang Pengcheng (chairman) and Mr. Huang Guobin, and one non-executive director, namely
+Mr. Liu Wei. Dr. Wang Pengcheng has the appropriate professional qualifications or accounting
+or related financial management expertise as required under Rules 3.10(2) and 3.21 of the Listing
+Rules.
+
+The Audit Committee has reviewed the unaudited interim condensed consolidated financial
+statements for the period ended June 30, 2026 and has met with the independent auditors. The
+Audit Committee considers the interim results to be in compliance with the applicable accounting
+standards, laws and regulations, and the Company has made appropriate disclosures thereof. The
+Audit Committee has also discussed matters with respect to the accounting policies and practices
+adopted by the Company and internal control with senior management of the Company.
+
+The Company ’ s independent auditor, Ernst & Young, has reviewed the unaudited interim
+condensed consolidated financial information for the six months ended June 30, 2026 in accordance
+with Hong Kong Standard on Review Engagements 2410 “Review of Interim Financial Information
+Performed by the Independent Auditor of the Entity” issued by the Hong Kong Institute of
+Certified Public Accountants.
+
+
+
+
+                                                10
+OTHER INFORMATION
+
+Purchase, Sale or Redemption of the Company’s Listed Securities or Sale of Treasury Shares
+
+Neither the Company nor any of its subsidiaries purchased, sold or redeemed any of the Company ’s
+securities listed on the Stock Exchange or sold any treasury Shares (as defined under the Listing
+Rules) during the Relevant Period. As of June 30, 2026, the Company did not hold any treasury
+shares (as defined under the Listing Rules).
+
+Events after the Reporting Period
+
+On July 14, 2026, the Company completed the allotment and issuance of 35,600,000 Class A
+Ordinary Shares at the placing price of HK$268.00 per Class A Ordinary Share (the “Placing”)
+pursuant to the general mandate granted at the annual general meeting of the Company held on
+June 11, 2026 (the “General Mandate”). The gross proceeds from the Placing were approximately
+HK$9,540.80 million, and the aggregate net proceeds from the Placing (after deduction of the
+commissions and estimated expenses) were approximately HK$9,443.71 million. The total number
+of issued Class A Ordinary Shares of the Company increased from 232,532,774 Class A Ordinary
+Shares to 268,132,774 Class A Ordinary Shares upon completion of the Placing, and the number
+of Class B Ordinary Shares of the Company remained unchanged as 81,102,534 Class B Ordinary
+Shares. The number of total issued shares of the Company (the “Shares”) had therefore increased
+from 313,635,308 Shares to 349,235,308 Shares.
+
+On July 16, 2026, the Company ’ s wholly-owned subsidiary MiniMax Innovations Limited
+completed the issuance of zero coupon guaranteed convertible bonds with an aggregate principal
+amount of HK$6,500.00 million due 2027 (the “2027 Convertible Bonds”). The 2027 Convertible
+Bonds are unconditionally and irrevocably guaranteed by the Company, and are convertible at
+the option of the holder thereof into fully paid Class A Ordinary Shares of the Company with
+a nominal value of US$0.0001 each at the initial conversion price of HK$335.00 per Class A
+Ordinary Share. The aggregate net proceeds (after deduction of the commissions and estimated
+expenses) were approximately HK$6,433.3 million.
+
+For further details, please refer to the announcements of the Company dated July 10, 2026 and July
+16, 2026.
+
+Save as disclosed above, the Company is not aware of any material subsequent events from June
+30, 2026 to the date of this announcement.
+
+Dividend
+
+The Board did not recommend the payment of any dividend for the period ended June 30, 2026.
+
+
+
+
+                                               11
+INTERIM CONDENSED CONSOLIDATED STATEMENT OF PROFIT OR LOSS
+For the six months ended June 30, 2026
+
+                                                        Notes   Six months ended June 30,
+                                                                       2026          2025
+                                                                   USD ’000      USD ’000
+                                                                (Unaudited)    (Unaudited)
+
+REVENUE                                                  3          116,573         30,429
+
+Cost of sales                                                       (95,760)       (26,744)
+
+Gross profit                                                         20,813          3,685
+
+Other income and gains, net                                           8,039         20,339
+Selling and distribution expenses                                   (26,973)       (32,843)
+Administrative expenses                                             (30,230)       (14,843)
+Research and development expenses                                  (296,870)      (124,333)
+Fair value loss on financial liabilities                            (31,025)      (253,876)
+Finance costs                                                          (647)          (325)
+Impairment (losses)/reversal on financial assets, net    4           (1,104)             8
+
+LOSS BEFORE TAX                                          4         (357,997)      (402,188)
+
+Income tax expense                                       5                –              –
+
+LOSS FOR THE PERIOD                                                (357,997)      (402,188)
+
+Attributable to:
+  Owners of the parent                                             (357,997)      (402,188)
+  Non-controlling interests                                               –              –
+
+                                                                   (357,997)      (402,188)
+
+LOSS PER SHARE ATTRIBUTABLE TO ORDINARY
+ EQUITY HOLDERS OF THE PARENT
+
+Basic and diluted
+– For loss for the period (USD)                          7            (1.18)         (3.70)
+
+
+
+
+                                                 12
+INTERIM CONDENSED CONSOLIDATED STATEMENT OF COMPREHENSIVE
+INCOME
+For the six months ended June 30, 2026
+
+                                                            Six months ended June 30,
+                                                                   2026          2025
+                                                               USD ’000      USD ’000
+                                                            (Unaudited)    (Unaudited)
+
+LOSS FOR THE PERIOD                                            (357,997)      (402,188)
+
+OTHER COMPREHENSIVE INCOME
+Other comprehensive income to be reclassified
+  to profit or loss in subsequent periods:
+Exchange differences on translation of foreign operations         1,325             80
+Net other comprehensive income to be reclassified
+  to profit or loss in subsequent periods                         1,325             80
+
+Other comprehensive income not to be reclassified
+  to profit or loss in subsequent periods:
+Changes in fair value of equity investments designated
+  at fair value through other comprehensive income                  617          3,019
+Net other comprehensive income not to be reclassified
+  to profit or loss in subsequent periods                           617          3,019
+
+TOTAL COMPREHENSIVE LOSS FOR THE PERIOD                        (356,055)      (399,089)
+
+Attributable to:
+  Owners of the parent                                         (356,055)      (399,089)
+  Non-controlling interests                                           –              –
+
+                                                               (356,055)      (399,089)
+
+
+
+
+                                                13
+INTERIM CONDENSED CONSOLIDATED STATEMENT OF FINANCIAL POSITION
+June 30, 2026
+
+                                                        Notes         As at        As at
+                                                                   June 30, December 31,
+                                                                      2026          2025
+                                                                  USD ’000      USD ’000
+                                                                (Unaudited)     (Audited)
+
+NON-CURRENT ASSETS
+Property, plant and equipment                                        74,913         1,571
+Right-of-use assets                                                   3,869         2,357
+Prepayments, other receivables and other assets                     100,817           887
+Financial assets at amortised cost                                   29,629             –
+Financial assets at fair value through profit or loss                69,129        69,965
+Financial assets at fair value through
+  other comprehensive income                                          7,653         6,224
+Restricted cash                                                          41            41
+
+Total non-current assets                                            286,051        81,045
+
+CURRENT ASSETS
+Trade receivables                                        8           39,144        10,730
+Prepayments, other receivables and other assets                     165,431        16,319
+Financial assets at fair value through profit or loss               278,347       438,525
+Restricted cash                                                         752        20,377
+Time deposits                                                        14,038        13,787
+Cash and cash equivalents                                           930,905       507,621
+
+Total current assets                                              1,428,617     1,007,359
+
+CURRENT LIABILITIES
+Interest-bearing bank borrowings                                    133,555        35,452
+Trade and bills payables                                 9          170,121        57,677
+Other payables, accruals and other liabilities                       38,934        34,068
+Contract liabilities                                                 18,287         7,541
+Lease liabilities                                                     2,035         1,318
+Convertible redeemable preferred shares                                   –     3,597,566
+
+Total current liabilities                                           362,932     3,733,622
+
+NET CURRENT ASSETS/(LIABILITIES)                                  1,065,685    (2,726,263)
+
+TOTAL ASSETS LESS CURRENT LIABILITIES                             1,351,736    (2,645,218)
+
+
+
+
+                                                   14
+INTERIM CONDENSED CONSOLIDATED STATEMENT OF FINANCIAL POSITION
+June 30, 2026
+
+                                       Notes         As at        As at
+                                                  June 30, December 31,
+                                                     2026          2025
+                                                 USD ’000      USD ’000
+                                               (Unaudited)     (Audited)
+
+NON-CURRENT LIABILITIES
+Deferred tax liabilities                               812             –
+Lease liabilities                                    1,833           638
+Other non-current liabilities                        2,408         2,334
+
+Total non-current liabilities                        5,053         2,972
+
+Net assets/(liabilities)                         1,346,683    (2,648,190)
+
+EQUITY
+Share capital                                           20             –
+Reserves/(Deficits)                              1,346,663    (2,648,190)
+
+Total equity                                     1,346,683    (2,648,190)
+
+
+
+
+                                15
+NOTES TO INTERIM CONDENSED CONSOLIDATED FINANCIAL INFORMATION
+June 30, 2026
+
+1.   BASIS OF PREPARATION
+
+     The interim condensed consolidated financial information for the six months ended June
+     30, 2026 has been prepared in accordance with IAS 34 Interim Financial Reporting . The
+     interim condensed consolidated financial information does not include all the information
+     and disclosures required in the annual financial statements, and should be read in conjunction
+     with the Group’s annual consolidated financial statements for the year ended December 31,
+     2025.
+
+2.   CHANGES IN ACCOUNTING POLICIES AND DISCLOSURES
+
+     The accounting policies adopted in the preparation of the interim condensed consolidated
+     financial information are consistent with those applied in the preparation of the Group’s
+     annual consolidated financial statements for the year ended December 31, 2025, except for
+     the adoption of the following amended IFRS Accounting Standards for the first time for the
+     current period’s financial information.
+
+     Amendments to IFRS 9                 Amendments to the Classification and Measurement of
+       and IFRS 7                         Financial Instruments
+     Amendments to IFRS 9                 Contracts Referencing Nature-dependent Electricity
+       and IFRS 7
+     Annual Improvements to IFRS          Amendments to IFRS 1, IFRS 7, IFRS 9, IFRS 10
+       Accounting Standards                and IAS 7
+       – Volume 11
+
+     The nature and impact of the amended IFRS Accounting Standards are described below:
+
+     (a)   Amendments to IFRS 9 and IFRS 7 Amendments to the Classification and Measurement
+           of Financial Instruments clarify that a financial asset is derecognised when the entity’s
+           rights to the contractual cash flows expire or are transferred, while a financial liability
+           is derecognised on the settlement date. The amendments introduce an accounting
+           policy option to derecognise a financial liability that is settled through an electronic
+           payment system before the settlement date if specified criteria are met. The amendments
+           clarify how to assess the contractual cash flow characteristics of financial assets
+           with environmental, social and governance and other similar contingent features.
+           Moreover, the amendments clarify the requirements for classifying financial assets
+           with non-recourse features and contractually linked instruments. The amendments also
+           include additional disclosures for investments in equity instruments designated at fair
+           value through other comprehensive income and financial instruments with contingent
+           features. The change in accounting policy did not have a material impact on the Group ’s
+           interim condensed consolidated financial information.
+
+     (b)   Amendments to IFRS 9 and IFRS 7 Contracts Referencing Nature-dependent Electricity
+           clarify the application of the “own-use” requirements for in-scope contracts and amend
+           the designation requirements for a hedged item in a cash flow hedging relationship for
+           in-scope contracts. The amendments also include additional disclosures that enable users
+           of financial statements to understand the effects these contracts have on an entity’s
+           financial performance and future cash flows. The amendments did not have any impact
+           on the interim condensed consolidated financial information.
+                                                 16
+     (c)   Annual Improvements to IFRS Accounting Standards – Volume 11 set out narrow scope
+           amendments to IFRS 1, IFRS 7 (and the accompanying Guidance on implementing IFRS
+           7), IFRS 9, IFRS 10 and IAS 7. The amendments include clarifications, simplifications,
+           corrections or changes to improve consistency in the corresponding IFRS Accounting
+           Standards. The amendments did not have any impact on the interim condensed
+           consolidated financial information.
+
+3.   REVENUE
+
+     An analysis of revenue from contracts with customers is as follows:
+
+     (a)   Disaggregation of revenue from contracts with customers
+
+           Revenue during the period is as follows:
+
+                                                                    Six months ended June 30,
+                                                                           2026          2025
+                                                                       USD ’000      USD ’000
+                                                                    (Unaudited)    (Unaudited)
+
+           AI-native products                                               42,644        21,223
+           Open Platform and other AI-based enterprise services             73,929         9,206
+
+           Revenue from services provided                                  116,573        30,429
+
+                                                                    Six months ended June 30,
+                                                                           2026          2025
+                                                                           ’
+                                                                       USD 000       USD ’000
+                                                                    (Unaudited)    (Unaudited)
+
+           Timing of revenue recognition
+           Services transferred at a point in time                          82,461        18,189
+           Services transferred over time                                   34,112        12,240
+
+           Total                                                           116,573        30,429
+
+
+
+
+                                                 17
+4.   LOSS BEFORE TAX
+
+     The Group’s loss before tax is arrived at after charging/(crediting):
+
+                                                                       Six months ended June 30,
+                                                                              2026          2025
+                                                                          USD ’000      USD ’000
+                                                                       (Unaudited)    (Unaudited)
+
+     Cost of services provided                                                95,760        26,744
+     Depreciation of property, plant and equipment                             2,334           394
+     Depreciation of right-of-use assets                                       1,002           978
+     Research and development costs                                          296,870       124,333
+     Listing expenses                                                          5,733         2,943
+     Fair value loss on financial liabilities                                 31,025       253,876
+     Provision/(reversal) for impairment on financial assets                   1,104            (8)
+
+5.   INCOME TAX
+
+     The Group is subject to income tax on an entity basis on profits arising in or derived from the
+     jurisdictions in which members of the Group are domiciled and operate.
+
+                                                                       Six months ended June 30,
+                                                                              2026          2025
+                                                                          USD ’000      USD ’000
+                                                                       (Unaudited)    (Unaudited)
+
+     Current tax                                                                  –               –
+     Deferred tax                                                                 –               –
+
+     Total                                                                        –               –
+
+6.   DIVIDENDS
+
+     The Board did not recommend the payment of any dividend for the period ended June 30,
+     2026.
+
+
+
+
+                                                 18
+7.   LOSS PER SHARE ATTRIBUTABLE TO ORDINARY EQUITY HOLDERS OF THE
+     PARENT
+
+     (a)   Basic loss per share
+
+           Basic loss per share during the period is calculated by dividing the loss attributable to
+           owners of the parent by the weighted average number of ordinary shares in issue during
+           the respective periods.
+
+                                                                      Six months ended June 30,
+                                                                             2026          2025
+                                                                      (Unaudited)    (Unaudited)
+
+           Loss attributable to owners of the parent (expressed
+             in USD’000)                                                  (357,997)        (402,188)
+           Weighted average number of ordinary shares in
+             issue during the period used in the basic loss per
+             share calculation                                        304,454,203      108,650,075
+
+           Basic loss per share (expressed in USD)                            (1.18)          (3.70)
+
+     (b)   Diluted loss per share
+
+           As the Group incurred losses during the period, the potential ordinary shares were
+           not included in the calculation of diluted loss per share as their inclusion would be
+           anti-dilutive. Accordingly, diluted loss per share for the six months ended June 30, 2026
+           and 2025 are the same as basic loss per share of the respective periods.
+
+8.   TRADE RECEIVABLES
+
+     An ageing analysis of the trade receivables as at June 30, 2026 and December 31, 2025,
+     based on the invoice date and net of loss allowance, is as follows:
+
+                                                                            As at        As at
+                                                                         June 30, December 31,
+                                                                            2026          2025
+                                                                        USD ’000      USD ’000
+                                                                      (Unaudited)     (Audited)
+
+     Within one year                                                        39,144           10,730
+
+
+
+
+                                                19
+9.    TRADE AND BILLS PAYABLES
+
+      An ageing analysis of the trade and bills payables as at June 30, 2026 and December 31,
+      2025, based on the invoice date, is as follows:
+
+                                                                              As at        As at
+                                                                           June 30, December 31,
+                                                                              2026          2025
+                                                                          USD ’000      USD ’000
+                                                                        (Unaudited)     (Audited)
+
+      Within one year                                                       170,121            57,677
+
+      Trade and bills payables are non-interest-bearing and normally settled on terms of 30 to 90
+      days.
+
+10.   CONTINGENT LIABILITIES
+
+      As at June 30, 2026, certain subsidiaries of the Group are respondents in several legal dispute
+      cases in relation to claims of alleged infringement of intellectual property rights. While these
+      cases remain ongoing and the outcome cannot be estimated with certainty, the directors
+      of the Company, having given due consideration to the legal advice and the relevant facts
+      and circumstances, are of the opinion that the Group is unable to predict the likelihood of
+      prevailing and the litigation damages amount that may be incurred. Therefore, no provision
+      has been made in respect of those cases as at June 30, 2026.
+
+11.   EVENTS AFTER THE REPORTING PERIOD
+
+      On July 14, 2026, the Company completed the allotment and issuance of 35,600,000 Class
+      A Ordinary Shares at the placing price of HK$268.00 per Class A Ordinary Share (the
+      “Placing”) pursuant to the general mandate granted at the annual general meeting of the
+      Company held on June 11, 2026 (the “General Mandate”). The gross proceeds from the
+      Placing were approximately HK$9,540.80 million, and the aggregate net proceeds from the
+      Placing (after deduction of the commissions and estimated expenses) were approximately
+      HK$9,443.71 million. The total number of issued Class A Ordinary Shares of the Company
+      increased from 232,532,774 Class A Ordinary Shares to 268,132,774 Class A Ordinary Shares
+      upon completion of the Placing, and the number of Class B Ordinary Shares of the Company
+      remained unchanged as 81,102,534 Class B Ordinary Shares. The number of total issued
+      shares of the Company (the “Shares”) had therefore increased from 313,635,308 Shares to
+      349,235,308 Shares.
+
+      On July 16, 2026, the Company’s wholly-owned subsidiary MiniMax Innovations Limited
+      completed the issuance of zero coupon guaranteed convertible bonds with an aggregate
+      principal amount of HK$6,500.00 million due 2027 (the “2027 Convertible Bonds”). The
+      2027 Convertible Bonds are unconditionally and irrevocably guaranteed by the Company,
+      and are convertible at the option of the holder thereof into fully paid Class A Ordinary Shares
+      of the Company with a nominal value of US$0.0001 each at the initial conversion price of
+      HK$335.00 per Class A Ordinary Share. The aggregate net proceeds (after deduction of the
+      commissions and estimated expenses) were approximately HK$6,433.3 million.
+
+
+
+                                                 20
+PUBLICATION OF THE INTERIM RESULTS ANNOUNCEMENT AND INTERIM
+REPORT
+
+This interim results announcement is published on the websites of the Stock Exchange
+(www.hkexnews.hk) and the Company (https://www.minimaxi.com). The interim report of the
+Company for the period ended June 30, 2026 will be made available for review on the same
+websites in due course.
+
+APPRECIATION
+
+The Board would like to express its sincere gratitude to the shareholders, management team,
+employees, business partners and customers of the Group for their support and contribution to the
+Group.
+
+                                                               By Order of the Board
+                                                               MiniMax Group Inc.
+                                                                   Dr. Yan Junjie
+                                                    Chairman of the Board and Executive Director
+
+Hong Kong, August 26, 2026
+
+As of the date of this announcement, the Board comprises: (i) Dr. Yan Junjie, Ms. Yun Yeyi, Mr.
+Zhao Pengyu and Mr. Zhou Yucong as executive Directors; (ii) Mr. Chen Yingjie and Mr. Liu Wei
+as non-executive Directors; and (iii) Mr. Huang Guobin, Dr. Wang Pengcheng and Dr. Li Ziqing as
+independent non-executive Directors.
+
+
+
+
+                                               21
+

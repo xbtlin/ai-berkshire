@@ -1,0 +1,6 @@
+{
+  "sample_size": 12,
+  "fact_or_current_derived": 2,
+  "future_assumption_or_arithmetic": 10,
+  "boundary": "PASS confirms sampled transcription/calculation only. Future earnings, valuation multiples, FCF, dividend and dilution are assumptions, not verified forecasts. Price was independently re-accessed on Investing plus FT/StockAnalysis; exact shares were independently re-downloaded from official issuer PDFs. Tencent exact market-cap/share copy is a prior same-day snapshot checked against new official source, not freshly retrieved in this agent run."
+}

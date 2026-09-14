@@ -1,0 +1,34 @@
+{
+  "retrieval_method": "web.run rendered text, 2026-09-06; curl returned empty body; this is an extracted value record, not raw HTML",
+  "cashflow_url": "https://www.stockopedia.com/share-prices/kuaishou-technology-HKG%3A1024/cashflow/",
+  "unit": "CNY million",
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "CFO": [
+    -5519,
+    795,
+    20781,
+    29787,
+    26716
+  ],
+  "capex": [
+    -7764,
+    -5100,
+    -4897,
+    -8063,
+    -14942
+  ],
+  "cash_and_short_term_investments": [
+    45280,
+    35406,
+    48857,
+    51502,
+    62143
+  ],
+  "provider": "Refinitiv as page footer explicitly states"
+}

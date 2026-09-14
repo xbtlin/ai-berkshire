@@ -1,0 +1,14 @@
+{
+  "id": "MiniMaxAI/MiniMax-M3",
+  "sha": "f0e1c1e04d40177e4673a22097036854f536e9c0",
+  "lastModified": "2026-07-23T04:25:20.000Z",
+  "gated": false,
+  "safetensors": {
+    "parameters": {
+      "BF16": 426993800960,
+      "F32": 46339200
+    },
+    "total": 427040140160
+  },
+  "weights_files": 59
+}

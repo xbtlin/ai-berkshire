@@ -1,0 +1,12 @@
+{
+  "repo": "MiniMaxAI/MiniMax-M2.7",
+  "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "### Inference Parameters",
+    "We recommend using the following parameters for best performance: `temperature=1.0`, `top_p = 0.95`, `top_k = 40`. Default system prompt:"
+  ],
+  "LICENSE_status": 200,
+  "license_head": "NON-COMMERCIAL LICENSE\nNon-commercial use permitted based on MIT-style terms; commercial use requires prior written authorization.\nCopyright (c) 2026 MiniMax\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software for non-commercial purposes, including without limitation the rights to use, copy, modify, merge, publish, distribute, su"
+}

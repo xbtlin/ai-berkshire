@@ -1,0 +1,11 @@
+{
+  "repo": "zai-org/GLM-4.7",
+  "url": "https://huggingface.co/zai-org/GLM-4.7",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "| BrowseComp (w/ Context Manage) |  67.5   |  57.5   |       60.2       |     67.6      |      59.2      |         -         |     -      |      -       |",
+    "### Evaluation Parameters"
+  ],
+  "LICENSE_status": 404
+}

@@ -1,0 +1,13 @@
+{
+  "id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+  "sha": "73d14711bcc77c16df3470856949c3764056b617",
+  "lastModified": "2025-05-22T23:46:12.000Z",
+  "gated": "manual",
+  "safetensors": {
+    "parameters": {
+      "BF16": 401583781376
+    },
+    "total": 401583781376
+  },
+  "weights_files": 55
+}

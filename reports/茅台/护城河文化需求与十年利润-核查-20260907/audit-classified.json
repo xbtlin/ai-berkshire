@@ -1,0 +1,90 @@
+{
+  "historical_or_derived": [
+    {
+      "id": 2,
+      "label": "营业收入 · 2026 上半年",
+      "reported_value": 907.03,
+      "unit": "亿元",
+      "line_number": 13,
+      "raw_text": "| 营业收入 | 1688.38 亿元 | 907.03 亿元 |",
+      "fetched_value": 907.0326096448,
+      "fetched_source": "https://static.cninfo.com.cn/finalpage/2026-08-15/1225475868.PDF",
+      "fetched_value2": 907.03,
+      "fetched_source2": "https://finance.sina.com.cn/stock/aiassist/yjbg/2026-08-14/doc-ininhxpi2824915.shtml",
+      "classification": "historical_fact"
+    },
+    {
+      "id": 8,
+      "label": "归母净利润同比 · 2026 上半年",
+      "reported_value": -1.95,
+      "unit": "%",
+      "line_number": 16,
+      "raw_text": "| 归母净利润同比 | -4.53% | -1.95% |",
+      "fetched_value": -1.95,
+      "fetched_source": "https://static.cninfo.com.cn/finalpage/2026-08-15/1225475868.PDF",
+      "fetched_value2": -1.95,
+      "fetched_source2": "https://finance.sina.com.cn/stock/aiassist/yjbg/2026-08-14/doc-ininhxpi2824915.shtml",
+      "classification": "historical_fact"
+    },
+    {
+      "id": 9,
+      "label": "归母利润／营业收入，本文计算 · 2025 全年",
+      "reported_value": 48.76,
+      "unit": "%",
+      "line_number": 17,
+      "raw_text": "| 归母利润／营业收入，本文计算 | 48.76% | 49.08% |",
+      "fetched_value": 48.75680659492656,
+      "fetched_source": "2025公司年报归母利润/营业收入*100，Decimal计算",
+      "fetched_value2": 48.75679645577417,
+      "fetched_source2": "中新网/东方财富报道823.20/1688.38*100，独立取数复算",
+      "classification": "derived_ratio_not_direct_disclosure"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": 15,
+      "label": "茅台酒实现吨价年均变化 · 乐观",
+      "reported_value": 5.0,
+      "unit": "%",
+      "line_number": 103,
+      "raw_text": "| 茅台酒实现吨价年均变化 | 0% | +3% | +5% |",
+      "fetched_value": null,
+      "fetched_source": "",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "classification": "assumption",
+      "model_input_matched": true,
+      "explanation": "未来增长假设无可取历史真值，保留原抽样项，不列入事实核验准出。"
+    },
+    {
+      "id": 18,
+      "label": "系列酒收入年均变化 · 乐观",
+      "reported_value": 5.0,
+      "unit": "%",
+      "line_number": 104,
+      "raw_text": "| 系列酒收入年均变化 | -2% | +3% | +5% |",
+      "fetched_value": null,
+      "fetched_source": "",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "classification": "assumption",
+      "model_input_matched": true,
+      "explanation": "未来增长假设无可取历史真值，保留原抽样项，不列入事实核验准出。"
+    },
+    {
+      "id": 16,
+      "label": "系列酒收入年均变化 · 悲观",
+      "reported_value": -2.0,
+      "unit": "%",
+      "line_number": 104,
+      "raw_text": "| 系列酒收入年均变化 | -2% | +3% | +5% |",
+      "fetched_value": null,
+      "fetched_source": "",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "classification": "assumption",
+      "model_input_matched": true,
+      "explanation": "未来增长假设无可取历史真值，保留原抽样项，不列入事实核验准出。"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "label": "2026H1总收入",
+    "reported_value": 116.573,
+    "unit": "百万美元",
+    "fetched_value": 116.573,
+    "fetched_source": "https://www.minimax.io/news/minimax-announces-first-half-2026-financial-results-1787744160",
+    "fetched_value2": 116.6,
+    "fetched_source2": "https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820"
+  },
+  {
+    "id": 2,
+    "label": "2026H1开放平台及其他企业服务收入占比",
+    "reported_value": 63.4,
+    "unit": "%",
+    "fetched_value": 63.4,
+    "fetched_source": "https://www.minimax.io/news/minimax-announces-first-half-2026-financial-results-1787744160",
+    "fetched_value2": 63.4,
+    "fetched_source2": "https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820"
+  },
+  {
+    "id": 3,
+    "label": "2026H1集团毛利率",
+    "reported_value": 17.9,
+    "unit": "%",
+    "fetched_value": 17.9,
+    "fetched_source": "https://www.minimax.io/news/minimax-announces-first-half-2026-financial-results-1787744160",
+    "fetched_value2": 17.9,
+    "fetched_source2": "https://hk.ibtimes.com/minimax-revenue-surges-283-percent-strategic-losses-1812433"
+  },
+  {
+    "id": 4,
+    "label": "2026H1研发费用",
+    "reported_value": 296.87,
+    "unit": "百万美元",
+    "fetched_value": 296.87,
+    "fetched_source": "https://www.minimax.io/news/minimax-announces-first-half-2026-financial-results-1787744160",
+    "fetched_value2": 296.9,
+    "fetched_source2": "https://hk.ibtimes.com/minimax-revenue-surges-283-percent-strategic-losses-1812433"
+  }
+]

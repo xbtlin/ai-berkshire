@@ -1,0 +1,150 @@
+{
+  "fx_cny_per_hkd": "0.86458",
+  "horizon_years": 5,
+  "companies": {
+    "快手": {
+      "price_hkd": "33.66",
+      "issued_shares_100m": "43.26961215",
+      "scenarios": {
+        "保守": {
+          "profit_expr": "1200*.07+40*(-.20)*.65-20",
+          "pe": "8",
+          "net_share_growth": ".015",
+          "annual_dps_hkd": ".3",
+          "ocf_less_capex_lease_nci_100m": [
+            "20",
+            "20",
+            "30",
+            "40",
+            "50"
+          ],
+          "gross_issuance_rate": ".015",
+          "gross_buyback_rate": "0",
+          "buyback_price_hkd": [
+            "30",
+            "25",
+            "20",
+            "15",
+            "15"
+          ]
+        },
+        "基准": {
+          "profit_expr": "1530*.12+120*.10*.60-15",
+          "pe": "12",
+          "net_share_growth": "0",
+          "annual_dps_hkd": ".8",
+          "ocf_less_capex_lease_nci_100m": [
+            "50",
+            "70",
+            "90",
+            "110",
+            "130"
+          ],
+          "gross_issuance_rate": ".01",
+          "gross_buyback_rate": ".01",
+          "buyback_price_hkd": [
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"
+          ]
+        },
+        "乐观": {
+          "profit_expr": "1900*.14+250*.20*.55-5",
+          "pe": "16",
+          "net_share_growth": "-.01",
+          "annual_dps_hkd": "1.2",
+          "ocf_less_capex_lease_nci_100m": [
+            "100",
+            "150",
+            "200",
+            "250",
+            "300"
+          ],
+          "gross_issuance_rate": ".01",
+          "gross_buyback_rate": ".02",
+          "buyback_price_hkd": [
+            "40",
+            "60",
+            "80",
+            "100",
+            "120"
+          ]
+        }
+      }
+    },
+    "美团": {
+      "price_hkd": "81.75",
+      "issued_shares_100m": "61.754848",
+      "scenarios": {
+        "保守": {
+          "profit_expr": "(3200*.08-60-120-20)*.8",
+          "pe": "12",
+          "net_share_growth": ".015",
+          "annual_dps_hkd": "0",
+          "ocf_less_capex_lease_nci_100m": [
+            "-100",
+            "-50",
+            "0",
+            "20",
+            "40"
+          ],
+          "gross_issuance_rate": ".015",
+          "gross_buyback_rate": "0",
+          "buyback_price_hkd": [
+            "70",
+            "50",
+            "30",
+            "20",
+            "15"
+          ]
+        },
+        "基准": {
+          "profit_expr": "(3600*.13-20-130-20)*.8",
+          "pe": "18",
+          "net_share_growth": ".005",
+          "annual_dps_hkd": "0",
+          "ocf_less_capex_lease_nci_100m": [
+            "40",
+            "80",
+            "120",
+            "160",
+            "200"
+          ],
+          "gross_issuance_rate": ".005",
+          "gross_buyback_rate": "0",
+          "buyback_price_hkd": [
+            "80",
+            "80",
+            "80",
+            "80",
+            "80"
+          ]
+        },
+        "乐观": {
+          "profit_expr": "(4400*.17+40-140-20)*.8",
+          "pe": "22",
+          "net_share_growth": "0",
+          "annual_dps_hkd": "0",
+          "ocf_less_capex_lease_nci_100m": [
+            "80",
+            "150",
+            "250",
+            "350",
+            "450"
+          ],
+          "gross_issuance_rate": ".005",
+          "gross_buyback_rate": ".005",
+          "buyback_price_hkd": [
+            "90",
+            "110",
+            "130",
+            "150",
+            "160"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "Qwen/Qwen3.8-2.4T-A95B",
+  "sha": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996",
+  "lastModified": "2026-08-12T10:24:04.000Z",
+  "gated": false,
+  "safetensors": {
+    "parameters": {
+      "BF16": 2446182725504
+    },
+    "total": 2446182725504
+  },
+  "weights_files": 213
+}

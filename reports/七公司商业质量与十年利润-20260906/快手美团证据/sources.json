@@ -1,0 +1,32 @@
+{
+  "cutoff": "2026-09-06",
+  "accessed_in_current_turn": true,
+  "kuaishou_2025": {
+    "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401900_c.pdf",
+    "key_locations": "PDF pp4-8 financial/operating summary; p272 income statement; cashflow and capital expenditure sections",
+    "raw_values": {"unit": "RMB million", "revenue": 142776, "parent_profit": 18617, "adjusted_group_profit": 20647, "dau_million": 410.2, "ad_arpu_yuan": 198.6, "ecommerce_gmv": 1598070.7}
+  },
+  "kuaishou_2026h1": {
+    "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+    "key_locations": "PDF pp1-2 financial summary; p23 parent profit; p30 revenue; p21 SBC reconciliation; p5 Kling revenue",
+    "raw_values": {"unit": "RMB million", "revenue": 69251, "parent_profit": 6049, "adjusted_group_profit": 7287, "sbc": 1311}
+  },
+  "kuaishou_independent_data_vendor": "https://stockanalysis.com/quote/hkg/1024/financials/",
+  "kuaishou_independent_h1_editorial": "https://www.ithome.com/0/991/705.htm",
+  "kuaishou_cashflow_vendor": "https://www.stockopedia.com/share-prices/kuaishou-technology-HKG:1024/cashflow/",
+  "kling_financing": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0702/2026070204066_c.pdf",
+  "meituan_2025": {
+    "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042400180_c.pdf",
+    "key_locations": "PDF p6 summary; pp8-9 segment data; p33 adjustment reconciliation; p219 cash flow; p313 buybacks",
+    "raw_values": {"unit": "RMB thousand", "revenue": 364854746, "parent_profit": -23355015, "adjusted_group_profit": -18648001, "core_revenue": 260826094, "core_operating_profit": -6904083, "2024_core_revenue": 250247496, "2024_core_operating_profit": 52415162}
+  },
+  "meituan_2026h1": {
+    "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082800436_c.pdf",
+    "key_locations": "PDF pp1-2 summary; p22 adjustment; p25 parent profit; p30 segment definitions",
+    "raw_values": {"unit": "RMB thousand", "revenue": 195681950, "parent_profit": -4672487, "group_profit": -4672036, "adjusted_group_profit": -2444270, "sbc": 3301589, "core_revenue": 135593841}
+  },
+  "meituan_independent_data_vendor": "https://stockanalysis.com/quote/hkg/3690/financials/",
+  "meituan_independent_h1_editorial": "https://finance.eastmoney.com/a/202608283858484115.html",
+  "meituan_h1_adjusted_profit_editorial": "https://finance.sina.com.cn/stock/relnews/hk/2026-08-28/doc-inipwnxp8987332.shtml",
+  "independence_limit": "StockAnalysis uses S&P standardized financial data. Editorial reporting is an independent publication channel but based on the same issuer report. Meituan H1 media verifies group profit, not exact parent attribution."
+}

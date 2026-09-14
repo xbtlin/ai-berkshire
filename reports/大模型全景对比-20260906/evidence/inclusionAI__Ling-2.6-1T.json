@@ -1,0 +1,12 @@
+{
+  "repo": "inclusionAI/Ling-2.6-1T",
+  "url": "https://huggingface.co/inclusionAI/Ling-2.6-1T",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "*   **Context & Constraints:** Strong performance on *MRCR (16K–256K)* and *IFBench* ensures logical consistency and precision under complex instructions and long contexts.",
+    "  --context-length 262144 \\",
+    "  --context-length 262144 \\"
+  ],
+  "LICENSE_status": 404
+}

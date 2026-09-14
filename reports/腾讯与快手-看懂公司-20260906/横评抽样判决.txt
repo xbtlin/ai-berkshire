@@ -1,0 +1,26 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：腾讯与快手对比研究-20260906.md
+======================================================================
+
+  [92m✅ 通过[0m [ 1] 收盘价（港元） · 腾讯 00700                   报告:       442.80 
+                                                    https://stockanalysis.com/quote/hkg/0700/history/ (2026-09-04): 442.80 (偏差 0.00%)  |  https://cn.investing.com/equities/tencent-holdings-hk-historical-data (2026-09-04): 442.80 (偏差 0.00%)
+  [92m✅ 通过[0m [ 4] 已发行股数（股） · 快手 01024                  报告: 4326961215.00 
+                                                    IR linked Euroland: September 3 next-day B shares + August monthly A shares; URLs in 独立来源与反方核查.md: 4326961215.00 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/1024/statistics/ (4.33 billion, rounded): 4330000000.00 (偏差 0.07%)
+  [92m✅ 通过[0m [ 9] 截至中期的 TTM 归母净利润（亿元） · 腾讯 00700       报告:      2355.08 
+                                                    Tencent FY2025 + H12026 - H12025 IFRS attributable income; primary statement values 224842,114115,103449 million CNY: 2355.08 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0700/financials/ (TTM net income 235508 million CNY): 2355.08 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 3  |  通过: [92m3[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 3,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 3,
+  "fail_items": [],
+  "warn_items": []
+}

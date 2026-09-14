@@ -1,0 +1,31 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：快手与美团底稿.md - model only
+======================================================================
+
+  [92m✅ 通过[0m [15] 快手平均日活，百万人 · 悲观                      报告:       300.00
+                                                    Model input or independent Decimal reconstruction in audit.py; not externally verified forecast: 300.00 (偏差 0.00%)
+  [92m✅ 通过[0m [18] 每位日活年度广告收入，人民币元 · 悲观                 报告:       180.00
+                                                    Model input or independent Decimal reconstruction in audit.py; not externally verified forecast: 180.00 (偏差 0.00%)
+  [92m✅ 通过[0m [29] 电商GMV · 乐观                           报告:     35000.00
+                                                    Model input or independent Decimal reconstruction in audit.py; not externally verified forecast: 35000.00 (偏差 0.00%)
+  [92m✅ 通过[0m [32] 技术佣金净收入/GMV · 乐观                     报告:         1.60 %
+                                                    Model input or independent Decimal reconstruction in audit.py; not externally verified forecast: 1.60 (偏差 0.00%)
+  [92m✅ 通过[0m [36] 传统收入合计 · 悲观                          报告:       872.00
+                                                    Model input or independent Decimal reconstruction in audit.py; not externally verified forecast: 872.00 (偏差 0.00%)
+  [92m✅ 通过[0m [55] 可灵归属快手利润 · 基准                        报告:        30.00
+                                                    Model input or independent Decimal reconstruction in audit.py; not externally verified forecast: 30.00 (偏差 0.00%)
+  [92m✅ 通过[0m [70] 核心分部经营利润 · 乐观                        报告:      1190.00
+                                                    Model input or independent Decimal reconstruction in audit.py; not externally verified forecast: 1190.00 (偏差 0.00%)
+  [92m✅ 通过[0m [76] 总部及持续股份薪酬等费用 · 乐观                    报告:      -220.00
+                                                    Model input or independent Decimal reconstruction in audit.py; not externally verified forecast: -220.00 (偏差 0.00%)
+  [92m✅ 通过[0m [82] 税前可持续利润 · 乐观                         报告:      1090.00
+                                                    Model input or independent Decimal reconstruction in audit.py; not externally verified forecast: 1090.00 (偏差 0.00%)
+  [92m✅ 通过[0m [87] 2036可持续税后归母利润 · 乐观                   报告:       872.00
+                                                    Model input or independent Decimal reconstruction in audit.py; not externally verified forecast: 872.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 10  |  通过: [92m10[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================

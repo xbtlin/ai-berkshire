@@ -1,0 +1,16 @@
+{
+  "repo": "mistralai/Mistral-Medium-3.5-128B",
+  "url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "> The Transformers config originally had an incorrect entry that caused long-context performance degradation. This has been fixed in this [commit](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/commit/c4be198050fb5789774a55b92ed697becfbf20ae). GGUFs generated using the Transformers config prior to this commit are also affected. Please use the correct config for best performance.",
+    "- **Dense 128B parameters**.",
+    "- **Large Context Window**: Supports a 256k context window.",
+    "We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**: Open-source license for both commercial and non-commercial use with exceptions for companies with large revenue.",
+    "            \"parameters\": {",
+    "            \"parameters\": {"
+  ],
+  "LICENSE_status": 200,
+  "license_head": "Modified MIT License \n\nAttribution notice: 2026 - Mistral AI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of the weights of this model and associated documentation files (the “Model”), to deal in the Model without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Model, and to permit persons to whom the Model is furnished to"
+}

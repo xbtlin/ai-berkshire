@@ -1,0 +1,42 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：/Users/linxuan/ai-berkshire/reports/腾讯/腾讯研究报告-20260906.md
+======================================================================
+
+  [92m✅ 通过[0m [ 4] 收入 · 2024                            报告:    660257.00 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040901231.pdf: 660257.00 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0700/financials/: 660257.00 (偏差 0.00%)
+  [92m✅ 通过[0m [ 5] 收入 · 2025                            报告:    751766.00 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040901231.pdf: 751766.00 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0700/financials/: 751766.00 (偏差 0.00%)
+  [92m✅ 通过[0m [15] 经营利润 · 2025                          报告:    241562.00 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040901231.pdf: 241562.00 (偏差 0.00%)  |  https://www.stcn.com/article/detail/3683975.html: 241562.00 (偏差 0.00%)
+  [92m✅ 通过[0m [14] 经营利润 · 2024                          报告:    208099.00 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040901231.pdf: 208099.00 (偏差 0.00%)  |  https://tech.cnr.cn/techph/20250321/t20250321_527108308.shtml: 208099.00 (偏差 0.00%)
+  [92m✅ 通过[0m [12] 经营利润 · 2022                          报告:    110827.00 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040901231.pdf: 110827.00 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0700/financials/: 110880.00 (偏差 0.05%)
+  [92m✅ 通过[0m [18] IFRS归母 · 2023                        报告:    115216.00 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040901231.pdf: 115216.00 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0700/financials/: 115216.00 (偏差 0.00%)
+  [92m✅ 通过[0m [29] 经营现金流 · 2024                         报告:    258521.00 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040901231.pdf: 258521.00 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0700/financials/: 258521.00 (偏差 0.00%)
+  [92m✅ 通过[0m [32] 收入 · 2025Q4                          报告:    194371.00 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040901231.pdf: 194371.00 (偏差 0.00%)  |  https://en.tmtpost.com/news/7919264: 194371.00 (偏差 0.00%)
+  [92m✅ 通过[0m [36] IFRS归母 · 2025Q4                      报告:     58260.00 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040901231.pdf: 58260.00 (偏差 0.00%)  |  https://en.tmtpost.com/news/7919264: 58260.00 (偏差 0.00%)
+  [92m✅ 通过[0m [55] 悲观 · 常态利润年增长                         报告:        -8.00 %
+                                                    估值模型.json / financial_rigor三情景与calc原输出: -8.00 (偏差 0.00%)  |  独立Decimal35位复算；若为增长/PE，则与本文件事先明确的情景输入核对，非外部事实: -8.00 (偏差 0.00%)
+  [92m✅ 通过[0m [70] 乐观 · 2029退出PE                        报告:        22.00 
+                                                    估值模型.json / financial_rigor三情景与calc原输出: 22.00 (偏差 0.00%)  |  独立Decimal35位复算；若为增长/PE，则与本文件事先明确的情景输入核对，非外部事实: 22.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 11  |  通过: [92m11[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 11,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 11,
+  "fail_items": [],
+  "warn_items": []
+}

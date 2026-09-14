@@ -1,0 +1,11 @@
+{
+  "repo": "zai-org/GLM-4.6V",
+  "url": "https://huggingface.co/zai-org/GLM-4.6V",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "GLM-4.6V scales its context window to 128k tokens in training,",
+    "We primarily use vLLM as the backend for model inference. For faster and more reliable performance on video tasks, we employ SGLang. To reproduce our leaderboard results, we recommend the following decoding parameters:"
+  ],
+  "LICENSE_status": 404
+}

@@ -1,0 +1,19 @@
+{
+  "repo": "MiniMaxAI/MiniMax-M1-80k",
+  "url": "https://huggingface.co/MiniMaxAI/MiniMax-M1-80k",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "which contains a total of 456 billion parameters with 45.9 billion parameters activated",
+    "per token. Consistent with MiniMax-Text-01, the M1 model natively supports a context length of 1",
+    "million tokens, 8x the context size of DeepSeek R1. Furthermore, the lightning attention mechanism",
+    "and long context tasks. With efficient scaling of test-time compute, MiniMax-M1 serves as a strong",
+    "  <small><em>Benchmark performance comparison of leading commercial and open-weight models across competition-level mathematics, coding, software engineering, agentic tool use, and long-context understanding tasks. We use the MiniMax-M1-80k model here for MiniMax-M1.</em></small>",
+    "| ***Long Context*** | OpenAI-MRCR *(128k)* | 73.4 | 76.1 | 27.7 | 51.5 | 35.8 | 54.3 | 48.9 | 76.8 | 56.5 |",
+    "To achieve the best results with the Minimax-M1 model, we suggest focusing on two key points: Inference Parameters and the System Prompt.",
+    "### 3.1. Inference Parameters",
+    "The MiniMax-M1 model supports function calling capabilities, enabling the model to identify when external functions need to be called and output function call parameters in a structured format. [MiniMax-M1 Function Call Guide](./docs/function_call_guide.md) provides detailed instructions on how to use the function calling feature of MiniMax-M1."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or enti"
+}

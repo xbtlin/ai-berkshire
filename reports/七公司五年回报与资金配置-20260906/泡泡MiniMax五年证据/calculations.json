@@ -1,0 +1,344 @@
+{
+  "pop_market_cap_HKD100m": {
+    "expression": "154*1331779203/100000000",
+    "decimal_result": "2050.93997262",
+    "tool_result": "2050.93997262",
+    "checked": true
+  },
+  "mini_market_cap_HKD100m": {
+    "expression": "361.4*349235308/100000000",
+    "decimal_result": "1262.136403112",
+    "tool_result": "1262.136403112",
+    "checked": true
+  },
+  "mini_conversion_potential_shares": {
+    "expression": "6500000000/335",
+    "decimal_result": "19402985.07462686567164179104477611940299",
+    "tool_result": "19402985.074626867",
+    "checked": true
+  },
+  "mini_conversion_percent": {
+    "expression": "19402985/349235308*100",
+    "decimal_result": "5.555848608526145930239104002622781772111",
+    "tool_result": "5.555848608526146",
+    "checked": true
+  },
+  "mini_liquid_net_cash_June_USDb": {
+    "expression": "(930.905+14.038+278.347-133.555-2.035-1.833)/1000",
+    "decimal_result": "1.085867",
+    "tool_result": "1.0858669999999997",
+    "checked": true
+  },
+  "mini_proforma_cash_after_debt_USDb": {
+    "expression": "(930.905+14.038+278.347-133.555-2.035-1.833)/1000+(9443.71+6433.3-6500)/(6.7787/0.86458)/1000",
+    "decimal_result": "2.281844887471049021198754923510407600277",
+    "tool_result": "2.2818448874710486",
+    "checked": true
+  },
+  "pop_normalized_PE": {
+    "expression": "154/(112*100000000/1331779203/0.86458)",
+    "decimal_result": "15.83215787078392500000000000000000000000",
+    "tool_result": "15.832157870783924",
+    "checked": true
+  },
+  "mini_TTM_equity_PS": {
+    "expression": "361.4*349235308/(6.7787/0.86458)/(79.038-30.429+116.573)/1000000",
+    "decimal_result": "97.45460009957822788951861090286252559837",
+    "tool_result": "97.45460009957823",
+    "checked": true
+  },
+  "pop_bear_profit_CNY100m": {
+    "expression": "250*(0.55-0.35)*0.75*0.98",
+    "decimal_result": "36.750000",
+    "tool_result": "36.750000000000014",
+    "checked": true
+  },
+  "pop_bear_cash_dividend_HKD": {
+    "expression": "(80+65+50+40+36.750000)*100000000*0.25/1331779203/0.86458",
+    "decimal_result": "5.900273561090673235474880594017242087439",
+    "tool_result": "5.900273561090673",
+    "checked": true
+  },
+  "pop_bear_exit_HKD": {
+    "expression": "36.750000*100000000*10/1331779203/0.86458",
+    "decimal_result": "31.91684318234881198214562823626622214732",
+    "tool_result": "31.916843182348813",
+    "checked": true
+  },
+  "pop_bear_CAGR_percent": {
+    "expression": "((31.91684318234881198214562823626622214732+5.900273561090673235474880594017242087439)/154)**(1/5)*100-100",
+    "decimal_result": "-24.48494575804598922426529195318813537534",
+    "tool_result": "-24.484945758045995",
+    "checked": true
+  },
+  "pop_base_profit_CNY100m": {
+    "expression": "550*(0.67-0.31)*0.75*0.98",
+    "decimal_result": "145.530000",
+    "tool_result": "145.53000000000003",
+    "checked": true
+  },
+  "pop_base_cash_dividend_HKD": {
+    "expression": "(105+115+125+135+145.530000)*100000000*0.25/1331779203/0.86458",
+    "decimal_result": "13.58159382030928731917792845621197955089",
+    "tool_result": "13.581593820309287",
+    "checked": true
+  },
+  "pop_base_exit_HKD": {
+    "expression": "145.530000*100000000*16/1331779203/0.86458",
+    "decimal_result": "202.2251184033620727188747005049827835254",
+    "tool_result": "202.22511840336207",
+    "checked": true
+  },
+  "pop_base_CAGR_percent": {
+    "expression": "((202.2251184033620727188747005049827835254+13.58159382030928731917792845621197955089)/154)**(1/5)*100-100",
+    "decimal_result": "6.9815400579602021808372046909580826372",
+    "tool_result": "6.981540057960217",
+    "checked": true
+  },
+  "pop_bull_profit_CNY100m": {
+    "expression": "950*(0.70-0.29)*0.75*0.98",
+    "decimal_result": "286.282500",
+    "tool_result": "286.28249999999997",
+    "checked": true
+  },
+  "pop_bull_cash_dividend_HKD": {
+    "expression": "(140+175+210+250+286.282500)*100000000*0.25/1331779203/0.86458",
+    "decimal_result": "23.04271232970823336900780115554775980004",
+    "tool_result": "23.042712329708234",
+    "checked": true
+  },
+  "pop_bull_exit_HKD": {
+    "expression": "286.282500*100000000*22/1331779203/0.86458",
+    "decimal_result": "546.9908584590939397500117767131305151608",
+    "tool_result": "546.990858459094",
+    "checked": true
+  },
+  "pop_bull_CAGR_percent": {
+    "expression": "((546.9908584590939397500117767131305151608+23.04271232970823336900780115554775980004)/154)**(1/5)*100-100",
+    "decimal_result": "29.9199792303403792095546237333976582846",
+    "tool_result": "29.919979230340374",
+    "checked": true
+  },
+  "mini_bear_pretax_USDb": {
+    "expression": "1*0.25-0.5-0.15",
+    "decimal_result": "-0.40",
+    "tool_result": "-0.4",
+    "checked": true
+  },
+  "mini_bear_profit_USDb": {
+    "expression": "-0.40*1",
+    "decimal_result": "-0.4",
+    "tool_result": "-0.4",
+    "checked": true
+  },
+  "mini_bear_profit_CNY100m": {
+    "expression": "-0.4*10*6.7787",
+    "decimal_result": "-27.11480",
+    "tool_result": "-27.1148",
+    "checked": true
+  },
+  "mini_bear_equity_USDb": {
+    "expression": "1*1",
+    "decimal_result": "1",
+    "tool_result": "1",
+    "checked": true
+  },
+  "mini_bear_exit_HKD": {
+    "expression": "1*1000000000*(6.7787/0.86458)/750000000",
+    "decimal_result": "10.45393909952423912959664422802593937712",
+    "tool_result": "10.453939099524238",
+    "checked": true
+  },
+  "mini_bear_CAGR_percent": {
+    "expression": "(10.45393909952423912959664422802593937712/361.4)**(1/5)*100-100",
+    "decimal_result": "-50.76676609679694346637497766537524641133",
+    "tool_result": "-50.76676609679694",
+    "checked": true
+  },
+  "mini_bear_share_increase_percent": {
+    "expression": "(750000000/349235308-1)*100",
+    "decimal_result": "114.7549181940103261265896975113409781579",
+    "tool_result": "114.75491819401032",
+    "checked": true
+  },
+  "mini_bear_future_cash_equity_proceeds_USDb": {
+    "expression": "(750000000-349235308-20000000)*65*0.99/(6.7787/0.86458)/1000000000",
+    "decimal_result": "3.125100525512608022187145027807691740304",
+    "tool_result": "3.125100525512608",
+    "checked": true
+  },
+  "mini_bear_residual_cash_USDb": {
+    "expression": "2.281844887471049021198754923510407600277+3.125100525512608022187145027807691740304-4.5",
+    "decimal_result": "0.906945412983657",
+    "tool_result": "0.9069454129836565",
+    "checked": true
+  },
+  "mini_base_pretax_USDb": {
+    "expression": "5*0.45-1.8-0.5",
+    "decimal_result": "-0.05",
+    "tool_result": "-0.050000000000000044",
+    "checked": true
+  },
+  "mini_base_profit_USDb": {
+    "expression": "-0.05*1",
+    "decimal_result": "-0.05",
+    "tool_result": "-0.05",
+    "checked": true
+  },
+  "mini_base_profit_CNY100m": {
+    "expression": "-0.05*10*6.7787",
+    "decimal_result": "-3.389350",
+    "tool_result": "-3.38935",
+    "checked": true
+  },
+  "mini_base_equity_USDb": {
+    "expression": "5*3",
+    "decimal_result": "15",
+    "tool_result": "15",
+    "checked": true
+  },
+  "mini_base_exit_HKD": {
+    "expression": "15*1000000000*(6.7787/0.86458)/500000000",
+    "decimal_result": "235.2136297392953804159244951305836359852",
+    "tool_result": "235.21362973929538",
+    "checked": true
+  },
+  "mini_base_CAGR_percent": {
+    "expression": "(235.2136297392953804159244951305836359852/361.4)**(1/5)*100-100",
+    "decimal_result": "-8.23123922535573228898471392384546324172",
+    "tool_result": "-8.231239225355736",
+    "checked": true
+  },
+  "mini_base_share_increase_percent": {
+    "expression": "(500000000/349235308-1)*100",
+    "decimal_result": "43.16994546267355075105979834089398543860",
+    "tool_result": "43.16994546267354",
+    "checked": true
+  },
+  "mini_base_future_cash_equity_proceeds_USDb": {
+    "expression": "(500000000-349235308-20000000)*150*0.99/(6.7787/0.86458)/1000000000",
+    "decimal_result": "2.47671320537713130836296044964373699972",
+    "tool_result": "2.4767132053771315",
+    "checked": true
+  },
+  "mini_base_residual_cash_USDb": {
+    "expression": "2.281844887471049021198754923510407600277+2.47671320537713130836296044964373699972-4",
+    "decimal_result": "0.7585580928481805",
+    "tool_result": "0.7585580928481805",
+    "checked": true
+  },
+  "mini_bull_pretax_USDb": {
+    "expression": "12*0.55-3-1.2",
+    "decimal_result": "2.40",
+    "tool_result": "2.4000000000000004",
+    "checked": true
+  },
+  "mini_bull_profit_USDb": {
+    "expression": "2.40*0.75",
+    "decimal_result": "1.800",
+    "tool_result": "1.7999999999999998",
+    "checked": true
+  },
+  "mini_bull_profit_CNY100m": {
+    "expression": "1.800*10*6.7787",
+    "decimal_result": "122.01660",
+    "tool_result": "122.0166",
+    "checked": true
+  },
+  "mini_bull_equity_USDb": {
+    "expression": "1.800*25",
+    "decimal_result": "45.0",
+    "tool_result": "45.0",
+    "checked": true
+  },
+  "mini_bull_exit_HKD": {
+    "expression": "45.0*1000000000*(6.7787/0.86458)/450000000",
+    "decimal_result": "784.0454324643179347197483171019454532838",
+    "tool_result": "784.0454324643179",
+    "checked": true
+  },
+  "mini_bull_CAGR_percent": {
+    "expression": "(784.0454324643179347197483171019454532838/361.4)**(1/5)*100-100",
+    "decimal_result": "16.7536902288193409776839126300596561927",
+    "tool_result": "16.753690228819337",
+    "checked": true
+  },
+  "mini_bull_share_increase_percent": {
+    "expression": "(450000000/349235308-1)*100",
+    "decimal_result": "28.85295091640619567595381850680458689470",
+    "tool_result": "28.852950916406208",
+    "checked": true
+  },
+  "mini_bull_future_cash_equity_proceeds_USDb": {
+    "expression": "(450000000-349235308-20000000)*400*0.99/(6.7787/0.86458)/1000000000",
+    "decimal_result": "4.079204687345148774838833404635107026421",
+    "tool_result": "4.079204687345149",
+    "checked": true
+  },
+  "mini_bull_residual_cash_USDb": {
+    "expression": "2.281844887471049021198754923510407600277+4.079204687345148774838833404635107026421-3.5",
+    "decimal_result": "2.861049574816198",
+    "tool_result": "2.8610495748161977",
+    "checked": true
+  },
+  "pop_base_PE12_CAGR_percent": {
+    "expression": "((145.530000*100000000*12/1331779203/0.86458+13.58159382030928731917792845621197955089)/154)**(1/5)*100-100",
+    "decimal_result": "1.4201799681389344120407830416475964520",
+    "tool_result": "1.4201799681389389",
+    "checked": true
+  },
+  "pop_base_PE16_CAGR_percent": {
+    "expression": "((145.530000*100000000*16/1331779203/0.86458+13.58159382030928731917792845621197955089)/154)**(1/5)*100-100",
+    "decimal_result": "6.9815400579602024504019459240100040066",
+    "tool_result": "6.981540057960217",
+    "checked": true
+  },
+  "pop_base_PE20_CAGR_percent": {
+    "expression": "((145.530000*100000000*20/1331779203/0.86458+13.58159382030928731917792845621197955089)/154)**(1/5)*100-100",
+    "decimal_result": "11.5810985077909434480343332827109814256",
+    "tool_result": "11.58109850779094",
+    "checked": true
+  },
+  "mini_base_PS2_CAGR_percent": {
+    "expression": "(5*1000000000*2*(6.7787/0.86458)/500000000/361.4)**(1/5)*100-100",
+    "decimal_result": "-15.37929966282647241665448609675224362196",
+    "tool_result": "-15.379299662826469",
+    "checked": true
+  },
+  "mini_base_PS3_CAGR_percent": {
+    "expression": "(5*1000000000*3*(6.7787/0.86458)/500000000/361.4)**(1/5)*100-100",
+    "decimal_result": "-8.23123922535573225653006787611548679206",
+    "tool_result": "-8.231239225355736",
+    "checked": true
+  },
+  "mini_base_PS4_CAGR_percent": {
+    "expression": "(5*1000000000*4*(6.7787/0.86458)/500000000/361.4)**(1/5)*100-100",
+    "decimal_result": "-2.79634072399172331665902872446628500348",
+    "tool_result": "-2.796340723991719",
+    "checked": true
+  },
+  "mini_base_PS3_2036_profit_25PE_discount15_equity_USDb": {
+    "expression": "1.125*25/(1.15**5)",
+    "decimal_result": "13.98309568026439858783163047712031506090",
+    "tool_result": "13.983095680264404",
+    "checked": true
+  },
+  "mini_15percent_required_2031_revenue_USDb_PS3": {
+    "expression": "361.4*(1.15**5)*500000000/(6.7787/0.86458)/3/1000000000",
+    "decimal_result": "15.45200608417509379871263418256204483652",
+    "tool_result": "15.452006084175089",
+    "checked": true
+  },
+  "pop_15percent_entry_HKD_base": {
+    "expression": "(202.2251184033620727188747005049827835254+13.58159382030928731917792845621197955089)/(1.15**5)",
+    "decimal_result": "107.2940766388224403826831478682848319302",
+    "tool_result": "107.29407663882247",
+    "checked": true
+  },
+  "mini_15percent_entry_HKD_base": {
+    "expression": "235.2136297392953804159244951305836359852/(1.15**5)",
+    "decimal_result": "116.9427445314435877640455146657038010560",
+    "tool_result": "116.94274453144362",
+    "checked": true
+  }
+}

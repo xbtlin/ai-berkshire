@@ -1,0 +1,112 @@
+[
+  {
+    "id": 15,
+    "label": "快手平均日活，百万人 · 悲观",
+    "reported_value": 300.0,
+    "unit": "",
+    "raw_text": "| 快手平均日活，百万人 | 300 | 400 | 450 |",
+    "line_number": 64,
+    "fetched_value": 300.0,
+    "fetched_source": "Model input or independent Decimal reconstruction in audit.py; not externally verified forecast",
+    "classification": "model_assumption_or_calculation"
+  },
+  {
+    "id": 18,
+    "label": "每位日活年度广告收入，人民币元 · 悲观",
+    "reported_value": 180.0,
+    "unit": "",
+    "raw_text": "| 每位日活年度广告收入，人民币元 | 180 | 280 | 350 |",
+    "line_number": 65,
+    "fetched_value": 180.0,
+    "fetched_source": "Model input or independent Decimal reconstruction in audit.py; not externally verified forecast",
+    "classification": "model_assumption_or_calculation"
+  },
+  {
+    "id": 29,
+    "label": "电商GMV · 乐观",
+    "reported_value": 35000.0,
+    "unit": "",
+    "raw_text": "| 电商GMV | 11000 | 23000 | 35000 |",
+    "line_number": 68,
+    "fetched_value": 35000.0,
+    "fetched_source": "Model input or independent Decimal reconstruction in audit.py; not externally verified forecast",
+    "classification": "model_assumption_or_calculation"
+  },
+  {
+    "id": 32,
+    "label": "技术佣金净收入/GMV · 乐观",
+    "reported_value": 1.6,
+    "unit": "%",
+    "raw_text": "| 技术佣金净收入/GMV | 1.2% | 1.4% | 1.6% |",
+    "line_number": 69,
+    "fetched_value": 1.6,
+    "fetched_source": "Model input or independent Decimal reconstruction in audit.py; not externally verified forecast",
+    "classification": "model_assumption_or_calculation"
+  },
+  {
+    "id": 36,
+    "label": "传统收入合计 · 悲观",
+    "reported_value": 872.0,
+    "unit": "",
+    "raw_text": "| 传统收入合计 | 872 | 1722 | 2485 |",
+    "line_number": 71,
+    "fetched_value": 872.0,
+    "fetched_source": "Model input or independent Decimal reconstruction in audit.py; not externally verified forecast",
+    "classification": "model_assumption_or_calculation"
+  },
+  {
+    "id": 55,
+    "label": "可灵归属快手利润 · 基准",
+    "reported_value": 30.0,
+    "unit": "",
+    "raw_text": "| 可灵归属快手利润 | -3.60 | 30.00 | 80.00 |",
+    "line_number": 77,
+    "fetched_value": 30.0,
+    "fetched_source": "Model input or independent Decimal reconstruction in audit.py; not externally verified forecast",
+    "classification": "model_assumption_or_calculation"
+  },
+  {
+    "id": 70,
+    "label": "核心分部经营利润 · 乐观",
+    "reported_value": 1190.0,
+    "unit": "",
+    "raw_text": "| 核心分部经营利润 | 210 | 650 | 1190 |",
+    "line_number": 95,
+    "fetched_value": 1190.0,
+    "fetched_source": "Model input or independent Decimal reconstruction in audit.py; not externally verified forecast",
+    "classification": "model_assumption_or_calculation"
+  },
+  {
+    "id": 76,
+    "label": "总部及持续股份薪酬等费用 · 乐观",
+    "reported_value": -220.0,
+    "unit": "",
+    "raw_text": "| 总部及持续股份薪酬等费用 | -180 | -180 | -220 |",
+    "line_number": 97,
+    "fetched_value": -220.0,
+    "fetched_source": "Model input or independent Decimal reconstruction in audit.py; not externally verified forecast",
+    "classification": "model_assumption_or_calculation"
+  },
+  {
+    "id": 82,
+    "label": "税前可持续利润 · 乐观",
+    "reported_value": 1090.0,
+    "unit": "",
+    "raw_text": "| 税前可持续利润 | -70 | 480 | 1090 |",
+    "line_number": 99,
+    "fetched_value": 1090.0,
+    "fetched_source": "Model input or independent Decimal reconstruction in audit.py; not externally verified forecast",
+    "classification": "model_assumption_or_calculation"
+  },
+  {
+    "id": 87,
+    "label": "2036可持续税后归母利润 · 乐观",
+    "reported_value": 872.0,
+    "unit": "",
+    "raw_text": "| **2036可持续税后归母利润** | **-70** | **384** | **872** |",
+    "line_number": 101,
+    "fetched_value": 872.0,
+    "fetched_source": "Model input or independent Decimal reconstruction in audit.py; not externally verified forecast",
+    "classification": "model_assumption_or_calculation"
+  }
+]

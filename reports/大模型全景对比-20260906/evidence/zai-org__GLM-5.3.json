@@ -1,0 +1,15 @@
+{
+  "repo": "zai-org/GLM-5.3",
+  "url": "https://huggingface.co/zai-org/GLM-5.3",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "- **HLE w/ tools**: We use sampling parameters of `temperature=1.0` and `top_p=0.95` for evaluation, with a maximum generation length of `163,840` tokens. The evaluation is conducted with a maximum context length of `300,000` tokens, using a context management strategy. We use GPT-5.6-luna (medium) as the judge model.",
+    "- **Terminal-Bench 3.0**: We evaluate Terminal-Bench-3 tasks with the Claude Code 2.1.207 harness (reasoning effort=max, 400K context, and 128K maximum output), reporting avg@3 over three rollouts per task. Each rollout runs in an isolated container built from the task's official image, and is capped at 600 agent turns with a 10-hour timeout. Tool Search is disabled, and the artifacts each agent produces are scored by the task's official separate verifier.",
+    "- **Agent's Last Exam (CLI)**: We evaluate ALE using the official evaluation protocol with the Claude Code harness (reasoning effort=max, 1M context, and 64K maximum output). Each of the 105 tasks runs in an isolated Docker container using the resources declared in its Task Card. The default timeout is 4 hours, with task-specific limits taking precedence (up to 8 hours). Tool Search is disabled, and results are scored by the official ALE evaluators.",
+    "- **FrontierSWE**: The evaluation was conducted by [Proximal](https://www.proximal.ai/) with 1M context length, max effort level, and 128K maximum output tokens. Dominance score reported as of 2026/08/14.",
+    "- **PostTrainBench**: We evaluate GLM-5.3 using Claude Code 2.1.207 with max effort level, `temperature = 1.0`, `top_p = 1.0`, `max_new_tokens = 128000`, and a 1M-token context window. We report the weighted average over 3 runs. Runs that fail to produce a score fall back to the official zero-shot base-model baseline score. For checks intended to prevent the use of third-party APIs, we removed the original pattern-matching-based checks, as they produced false positives when a local vLLM endpoint was accessed through the OpenAI SDK. Instead, we use an LLM agent to inspect solutions for external API usage."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "GLM-5.3 License\n\nCopyright (c) 2026 Z.AI\n\nPermission is hereby granted, free of charge, to any person or entity (the \"Licensee\") obtaining a copy of this software — including the model weights, parameters, configuration files, inference and training code, and associated documentation (collectively, the \"Software\") — to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribut"
+}

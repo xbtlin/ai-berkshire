@@ -1,0 +1,20 @@
+{
+  "repo": "zai-org/GLM-5.2",
+  "url": "https://huggingface.co/zai-org/GLM-5.2",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "We're introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and, for the first time, delivers that capability on a **solid 1M-token context**. GLM-5.2's new capabilities include:",
+    "- **Solid 1M Context:** A solid 1M-token context that stably sustains long-horizon work",
+    "- **Improved Architecture**: We propose [IndexShare](https://arxiv.org/abs/2603.12201), which reuses the same indexer across every four sparse attention layers, reducing per-token FLOPs by 2.9× at a 1M context length. We also improve GLM-5.2’s MTP layer for speculative decoding, increasing the acceptance length by up to 20%",
+    "* **Humanity’s Last Exam (HLE) & other reasoning tasks**: We use sampling parameters of `temperature=1.0`, `top_p=0.95` for evaluation. We evaluate with a maximum generation length of `163,840` tokens. By default, we report the text-only subset; results marked with * are from the full set. For AIME, HMMT and IMOAnswerBench, we evaluate  each question using the following system prompt: `Your response should be in the following format:\\nExplanation: {your explanation for your final answer}\\nExact Answer: {your succinct, final answer}\\nConfidence: {your confidence score between 0% and 100% for your answer}.` We use GPT-5.5 (medium) as the judge model. For HLE-with-tools, we use a maximum contex",
+    "* **DeepSWE**: We run DeepSWE with the official pier evaluation framework and the mini-swe-agent harness (`temperature=1.0`, `top_p=1.0`, `timeout=2h`, 400K context). Each task is solved in an isolated container with 2 CPUs, 8 GB RAM, and no internet access.",
+    "* **ProgramBench**: We evaluate ProgramBench (200 instances) with Claude-Code 2.1.156 using `temperature=1.0, top_p=1.0, max_tokens=64000, max_turns=2000, sample_timeout=6h, reasoning_effort=max`, with a 400K context window. Each instance runs in a (4 CPUs, 8 GB RAM) sandbox with internet access disabled.",
+    "* **Terminal-Bench 2.1 (Terminus 2)**: We evaluate Terminal-Bench 2.1 with Terminus-2 framework using `parser=json`, `timeout=4h`, `temperature=1.0`, `top_p=1.0`, `max_new_tokens=48k`, `max_episodes=500`, with a 256K context window. Resource limits are capped at 4 CPUs and 8 GB RAM.",
+    "* **FrontierSWE**: The evaluation was conducted by [Proximal](https://www.proximal.ai) with 1M context length, max effort level, and 128K maximum output tokens. Dominance score reported as of 2026/06/16.",
+    "* **PostTrainBench**: The evaluation was conducted by [PostTrainBench](https://posttrainbench.com) with 1M context length, max effort level, and 128K maximum output tokens.",
+    "* **SWE-Marathon**: The evaluation was conducted by [Abundant AI](https://www.abundant.ai) with 1M context length, max effort level, and 128K maximum output tokens."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "MIT License\n\nCopyright (c) 2026 Zhipu AI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to t"
+}

@@ -1,0 +1,50 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：reports/美团/美团研究报告-20260906.md
+======================================================================
+
+  [92m✅ 通过[0m [ 4] 参考汇率（人民币/港元） · 数值                    报告:         0.86 
+                                                    https://hzf.mofcom.gov.cn/article/zyfw/jrfw/jrfwywzn/jrfwwh/hlfxglzy/202609/7872.html: 0.86 (偏差 0.00%)  |  https://english.news.cn/20260904/790d1ee7b6864f7b96752579a210e783/c.html: 0.86 (偏差 0.00%)
+  [92m✅ 通过[0m [ 5] TTM归母净利润 · 数值                        报告:      -384.49 
+                                                    官方年度+本年半年−上年半年，Decimal复算: -384.49 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/3690/financials/: -384.49 (偏差 0.00%)
+  [92m✅ 通过[0m [15] 毛利 · 2024                            报告:      1297.85 
+                                                    annual2025.pdf：五年财务概要（已下载官方原件）: 1297.85 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/3690/financials/: 1297.85 (偏差 0.00%)
+  [92m✅ 通过[0m [14] 毛利 · 2023                            报告:       971.91 
+                                                    annual2025.pdf：五年财务概要（已下载官方原件）: 971.91 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/3690/financials/: 971.91 (偏差 0.00%)
+  [92m✅ 通过[0m [12] 毛利 · 2021                            报告:       424.74 
+                                                    annual2025.pdf：五年财务概要（已下载官方原件）: 424.74 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/3690/financials/: 424.74 (偏差 0.00%)
+  [92m✅ 通过[0m [18] 归母净利润 · 2022                         报告:       -66.86 
+                                                    annual2025.pdf：五年财务概要（已下载官方原件）: -66.86 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/3690/financials/: -66.86 (偏差 0.00%)
+  [92m✅ 通过[0m [29] 资本支出 · 2023                          报告:        68.80 
+                                                    https://stockanalysis.com/quote/hkg/3690/financials/: 68.80 (偏差 0.00%)  |  https://www.stockopedia.com/share-prices/meituan-HKG%3A3690/cashflow/: 68.80 (偏差 0.00%)
+  [92m✅ 通过[0m [36] 现金及短期投资 · 2025                       报告:      1668.34 
+                                                    https://stockanalysis.com/quote/hkg/3690/financials/balance-sheet/: 1668.34 (偏差 0.00%)  |  https://www.stockopedia.com/share-prices/meituan-HKG%3A3690/balance-sheet/: 1668.34 (偏差 0.00%)
+  [92m✅ 通过[0m [32] 现金及短期投资 · 2021                       报告:      1167.95 
+                                                    https://stockanalysis.com/quote/hkg/3690/financials/balance-sheet/: 1167.95 (偏差 0.00%)  |  https://www.stockopedia.com/share-prices/meituan-HKG%3A3690/balance-sheet/: 1167.95 (偏差 0.00%)
+  [92m✅ 通过[0m [55] 两项合计 · 数值                            报告:      1683.14 
+                                                    h12026.pdf现金等价物+短期理财，Decimal复算: 1683.14 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/3690/financials/balance-sheet/: 1683.14 (偏差 0.00%)
+  [92m✅ 通过[0m [70] 新业务经营亏损 · 悲观                         报告:        80.00 
+                                                    已披露主观假设一致性检查：model_inputs.scenarios[0][3]: 80.00 (偏差 0.00%)
+  [92m✅ 通过[0m [76] 归属股东税后经营收益 · 基准                      报告:       240.17 
+                                                    独立Decimal按显式公式重算（计算，非外部事实）: 240.17 (偏差 0.00%)  |  financial_rigor calc：300.21685600000006*0.8: 240.17 (偏差 0.00%)
+  [92m✅ 通过[0m [82] 三年累计股东现金流 · 乐观                       报告:       700.00 
+                                                    已披露主观假设一致性检查：model_inputs.scenarios[2][6]: 700.00 (偏差 0.00%)
+  [92m✅ 通过[0m [87] 战略投资估值 · 基准                          报告:       300.00 
+                                                    已披露主观假设一致性检查：model_inputs.scenarios[1][7]: 300.00 (偏差 0.00%)
+  [92m✅ 通过[0m [95] 今日价值（10%折现，港元） · 悲观                  报告:         4.57 
+                                                    独立Decimal按显式公式重算（计算，非外部事实）: 4.57 (偏差 0.06%)  |  financial_rigor calc：6.086466896469928/(1.1*1.1*1.1): 4.57 (偏差 0.06%)
+
+----------------------------------------------------------------------
+  抽检总数: 15  |  通过: [92m15[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 15,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 15,
+  "fail_items": [],
+  "warn_items": []
+}

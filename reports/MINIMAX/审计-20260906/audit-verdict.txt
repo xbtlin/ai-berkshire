@@ -1,0 +1,42 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：/Users/linxuan/ai-berkshire/reports/MINIMAX/MiniMax研究报告-20260906.md
+======================================================================
+
+  [92m✅ 通过[0m [ 4] 收入 · 2026上半年                         报告:       116.57 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf: 116.57 (偏差 0.00%)  |  https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820: 116.60 (偏差 0.02%)
+  [92m✅ 通过[0m [ 5] 毛利 · 2023                            报告:        -0.85 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf: -0.85 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0100/financials/: -0.85 (偏差 0.47%)
+  [92m✅ 通过[0m [12] 毛利率 · 2026上半年                        报告:        17.90 %
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf: 17.90 (偏差 0.00%)  |  https://www.scmp.com/tech/big-tech/article/3365341/minimax-revenue-surges-283-remains-behind-pace-meet-forecast-amid-crowded-ai-race: 17.90 (偏差 0.00%)
+  [92m✅ 通过[0m [15] IFRS净利润 · 2024                       报告:      -465.24 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf: -465.24 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0100/financials/: -465.24 (偏差 0.00%)
+  [92m✅ 通过[0m [14] IFRS净利润 · 2023                       报告:      -269.25 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf: -269.25 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0100/financials/: -269.25 (偏差 0.00%)
+  [92m✅ 通过[0m [18] 经调整净利润 · 2022                        报告:       -12.15 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf: -12.15 (偏差 0.00%)  |  https://q.futunn.com/en/feed/115769089130500 [社区转述招股书，较低可信；非第二审计意见]: -12.15 (偏差 0.00%)
+  [92m✅ 通过[0m [29] 简单自由现金流（CFO减设备资本开支） · 2024           报告:      -259.24 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf CFO -258483千美元减CAPEX759千美元: -259.24 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0100/financials/: -259.24 (偏差 0.00%)
+  [92m✅ 通过[0m [28] 简单自由现金流（CFO减设备资本开支） · 2023           报告:       -65.15 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf CFO -64455千美元减CAPEX697千美元: -65.15 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0100/financials/: -65.15 (偏差 0.00%)
+  [92m✅ 通过[0m [32] 现金及等价物 · 2023                        报告:       206.29 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf 现金流期初比较数: 206.29 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0100/financials/balance-sheet/: 206.30 (偏差 0.00%)
+  [92m✅ 通过[0m [36] AI原生产品 · 2025全年收入，百万美元               报告:        53.08 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf 业务拆分: 53.08 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/0100/financials/: 53.08 (偏差 0.00%)
+  [92m✅ 通过[0m [82] 2029毛利，亿美元 · 悲观                      报告:         1.20 
+                                                    情景数学：收入6亿美元×毛利率20%；假设而非事实: 1.20 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 11  |  通过: [92m11[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 11,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 11,
+  "fail_items": [],
+  "warn_items": []
+}

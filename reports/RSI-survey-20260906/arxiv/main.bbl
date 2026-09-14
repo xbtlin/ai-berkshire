@@ -1,0 +1,433 @@
+\begin{thebibliography}{53}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Good(1965)]{good1965}
+Irving~John Good.
+\newblock {Speculations Concerning the First Ultraintelligent Machine}.
+\newblock In \emph{Advances in Computers}, volume~6, pages 31--88. Academic
+  Press, 1965.
+\newblock \doi{10.1016/S0065-2458(08)60418-0}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0065245808604180}.
+
+\bibitem[Schmidhuber(2003)]{goedel2003}
+Juergen Schmidhuber.
+\newblock {Goedel Machines: Self-Referential Universal Problem Solvers Making
+  Provably Optimal Self-Improvements}, 2003.
+\newblock URL \url{https://arxiv.org/abs/cs/0309048}.
+\newblock arXiv preprint; version 5 consulted.
+
+\bibitem[Gao et~al.(2025)Gao, Geng, Hua, Hu, Juan, Liu, et~al.]{surveygao2025}
+Huan-ang Gao, Jiayi Geng, Wenyue Hua, Mengkang Hu, Xinzhe Juan, Hongzhang Liu,
+  et~al.
+\newblock {A Survey of Self-Evolving Agents: What, When, How, and Where to
+  Evolve on the Path to Artificial Super Intelligence}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2507.21046}.
+\newblock arXiv preprint; version 4 consulted.
+
+\bibitem[Fang et~al.(2025)Fang, Peng, Zhang, Wang, Yi, Zhang,
+  et~al.]{surveyfang2025}
+Jinyuan Fang, Yanwen Peng, Xi~Zhang, Yingxu Wang, Xinhao Yi, Guibin Zhang,
+  et~al.
+\newblock {A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm
+  Bridging Foundation Models and Lifelong Agentic Systems}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2508.07407}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Chen et~al.(2026)Chen, Wang, and Qu]{surveychen2026}
+Mingguang Chen, Licheng Wang, and Bo~Qu.
+\newblock {Recursive Self-Improvement in AI: From Bounded Self-Refinement to
+  Autonomous Research Loops}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2607.07663}.
+\newblock arXiv preprint; version 1 consulted.
+
+\bibitem[Ren et~al.(2026)Ren, Chen, Guo, Rong, Li, Xiong,
+  et~al.]{surveyren2026}
+Zhe Ren, Yimeng Chen, Dandan Guo, Guowei Rong, Tonghui Li, R.~B. Xiong, et~al.
+\newblock {Self-Improvements in Modern Agentic Systems: A Survey}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2607.13104}.
+\newblock arXiv preprint; version 1 consulted.
+
+\bibitem[Liu et~al.(2026)Liu, Lin, Zhang, Ren, Wu, Li, et~al.]{surveyliu2026}
+Shuaiqi Liu, Zhengkai Lin, Yuxiang Zhang, Yuanyi Ren, Yue Wu, Yongbin Li,
+  et~al.
+\newblock {The Path to Recursive Self-Improving Agents: Foundation, Framework,
+  and Future Directions}, 2026.
+\newblock URL \url{https://www.preprints.org/manuscript/202608.0051}.
+\newblock Preprints.org preprint, version 1.
+
+\bibitem[Zhou et~al.(2026)Zhou, Hu, Luo, Shang, Fang, Chen, Xiao, and
+  Zhang]{surveycoding2026}
+Hao Zhou, Haichuan Hu, Tianyu Luo, Ye~Shang, Chunrong Fang, Zhenyu Chen, Liang
+  Xiao, and Quanjun Zhang.
+\newblock {Self-Evolving Coding Agents}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2608.03392}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[Wang et~al.(2025)Wang, Pi{\k{e}}kos, Nanbo, Laakom, Chen, Ostaszewski,
+  Zhuge, and Schmidhuber]{hgm2025}
+Wenyi Wang, Piotr Pi{\k{e}}kos, Li~Nanbo, Firas Laakom, Yimeng Chen, Mateusz
+  Ostaszewski, Mingchen Zhuge, and J{\"{u}}rgen Schmidhuber.
+\newblock {Huxley-G\"odel Machine: Human-Level Coding Agent Development by an
+  Approximation of the Optimal Self-Improving Machine}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2510.21614}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[Zelikman et~al.(2023)Zelikman, Lorch, Mackey, and Kalai]{stop2023}
+Eric Zelikman, Eliana Lorch, Lester Mackey, and Adam~Tauman Kalai.
+\newblock {Self-Taught Optimizer (STOP): Recursively Self-Improving Code
+  Generation}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2310.02304}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[Andrychowicz et~al.(2016)Andrychowicz, Denil, Gomez, Hoffman, Pfau,
+  Schaul, Shillingford, and de~Freitas]{learnoptimizer2016}
+Marcin Andrychowicz, Misha Denil, Sergio Gomez, Matthew~W. Hoffman, David Pfau,
+  Tom Schaul, Brendan Shillingford, and Nando de~Freitas.
+\newblock {Learning to learn by gradient descent by gradient descent}, 2016.
+\newblock URL \url{https://arxiv.org/abs/1606.04474}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Real et~al.(2020)Real, Liang, So, and Le]{automlzero2020}
+Esteban Real, Chen Liang, David~R. So, and Quoc~V. Le.
+\newblock {AutoML-Zero: Evolving Machine Learning Algorithms From Scratch},
+  2020.
+\newblock URL \url{https://arxiv.org/abs/2003.03384}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Silver et~al.(2017)Silver, Hubert, Schrittwieser, Antonoglou, Lai,
+  Guez, et~al.]{alphazero2017}
+David Silver, Thomas Hubert, Julian Schrittwieser, Ioannis Antonoglou, Matthew
+  Lai, Arthur Guez, et~al.
+\newblock {Mastering Chess and Shogi by Self-Play with a General Reinforcement
+  Learning Algorithm}, 2017.
+\newblock URL \url{https://arxiv.org/abs/1712.01815}.
+\newblock arXiv preprint; version 1 consulted.
+
+\bibitem[Wang et~al.(2019)Wang, Lehman, Clune, and Stanley]{poet2019}
+Rui Wang, Joel Lehman, Jeff Clune, and Kenneth~O. Stanley.
+\newblock {Paired Open-Ended Trailblazer (POET): Endlessly Generating
+  Increasingly Complex and Diverse Learning Environments and Their Solutions},
+  2019.
+\newblock URL \url{https://arxiv.org/abs/1901.01753}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[Madaan et~al.(2023)Madaan, Tandon, Gupta, Hallinan, Gao, Wiegreffe,
+  et~al.]{selfrefine2023}
+Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah
+  Wiegreffe, et~al.
+\newblock {Self-Refine: Iterative Refinement with Self-Feedback}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2303.17651}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Shinn et~al.(2023)Shinn, Cassano, Berman, Gopinath, Narasimhan, and
+  Yao]{reflexion2023}
+Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik
+  Narasimhan, and Shunyu Yao.
+\newblock {Reflexion: Language Agents with Verbal Reinforcement Learning},
+  2023.
+\newblock URL \url{https://arxiv.org/abs/2303.11366}.
+\newblock arXiv preprint; version 4 consulted.
+
+\bibitem[Wang et~al.(2023)Wang, Xie, Jiang, Mandlekar, Xiao, Zhu, Fan, and
+  Anandkumar]{voyager2023}
+Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu,
+  Linxi Fan, and Anima Anandkumar.
+\newblock {Voyager: An Open-Ended Embodied Agent with Large Language Models},
+  2023.
+\newblock URL \url{https://arxiv.org/abs/2305.16291}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Schick et~al.(2023)Schick, Dwivedi-Yu, Dess{\`{i}}, Raileanu, Lomeli,
+  Zettlemoyer, Cancedda, and Scialom]{toolformer2023}
+Timo Schick, Jane Dwivedi-Yu, Roberto Dess{\`{i}}, Roberta Raileanu, Maria
+  Lomeli, Luke Zettlemoyer, Nicola Cancedda, and Thomas Scialom.
+\newblock {Toolformer: Language Models Can Teach Themselves to Use Tools},
+  2023.
+\newblock URL \url{https://arxiv.org/abs/2302.04761}.
+\newblock arXiv preprint; version 1 consulted.
+
+\bibitem[Huang et~al.(2023)Huang, Chen, Mishra, Zheng, Yu, Song, and
+  Zhou]{intrinsic2023}
+Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu~Steven Zheng, Adams~Wei Yu,
+  Xinying Song, and Denny Zhou.
+\newblock {Large Language Models Cannot Self-Correct Reasoning Yet}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2310.01798}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Liu et~al.(2024)Liu, Nassereldine, Yang, Xu, Hu, Li,
+  et~al.]{intrinsicpositive2024}
+Dancheng Liu, Amir Nassereldine, Ziming Yang, Chenhui Xu, Yuting Hu, Jiajie Li,
+  et~al.
+\newblock {Large Language Models have Intrinsic Self-Correction Ability}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2406.15673}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Kumar et~al.(2024)Kumar, Zhuang, Agarwal, Su, Co-Reyes, Singh,
+  et~al.]{score2024}
+Aviral Kumar, Vincent Zhuang, Rishabh Agarwal, Yi~Su, John~D Co-Reyes, Avi
+  Singh, et~al.
+\newblock {Training Language Models to Self-Correct via Reinforcement
+  Learning}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2409.12917}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Zelikman et~al.(2022)Zelikman, Wu, Mu, and Goodman]{star2022}
+Eric Zelikman, Yuhuai Wu, Jesse Mu, and Noah~D. Goodman.
+\newblock {STaR: Bootstrapping Reasoning With Reasoning}, 2022.
+\newblock URL \url{https://arxiv.org/abs/2203.14465}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Wang et~al.(2022)Wang, Kordi, Mishra, Liu, Smith, Khashabi, and
+  Hajishirzi]{selfinstruct2022}
+Yizhong Wang, Yeganeh Kordi, Swaroop Mishra, Alisa Liu, Noah~A. Smith, Daniel
+  Khashabi, and Hannaneh Hajishirzi.
+\newblock {Self-Instruct: Aligning Language Models with Self-Generated
+  Instructions}, 2022.
+\newblock URL \url{https://arxiv.org/abs/2212.10560}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Yuan et~al.(2024)Yuan, Pang, Cho, Li, Sukhbaatar, Xu, and
+  Weston]{selfreward2024}
+Weizhe Yuan, Richard~Yuanzhe Pang, Kyunghyun Cho, Xian Li, Sainbayar
+  Sukhbaatar, Jing Xu, and Jason Weston.
+\newblock {Self-Rewarding Language Models}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2401.10020}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[Chen et~al.(2024)Chen, Deng, Yuan, Ji, and Gu]{spin2024}
+Zixiang Chen, Yihe Deng, Huizhuo Yuan, Kaixuan Ji, and Quanquan Gu.
+\newblock {Self-Play Fine-Tuning Converts Weak Language Models to Strong
+  Language Models}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2401.01335}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[DeepSeek-AI et~al.(2025)DeepSeek-AI, Guo, Yang, Zhang, Song, Wang,
+  et~al.]{r12025}
+DeepSeek-AI, Daya Guo, Dejian Yang, Haowei Zhang, Junxiao Song, Peiyi Wang,
+  et~al.
+\newblock {DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via
+  Reinforcement Learning}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2501.12948}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Zhao et~al.(2025)Zhao, Wu, Yue, Wu, Xu, Yue, et~al.]{azr2025}
+Andrew Zhao, Yiran Wu, Yang Yue, Tong Wu, Quentin Xu, Yang Yue, et~al.
+\newblock {Absolute Zero: Reinforced Self-play Reasoning with Zero Data}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.03335}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[Huang et~al.(2025)Huang, Yu, Wang, Zhang, Li, Li, et~al.]{rzero2025}
+Chengsong Huang, Wenhao Yu, Xiaoyang Wang, Hongming Zhang, Zongxia Li, Ruosen
+  Li, et~al.
+\newblock {R-Zero: Self-Evolving Reasoning LLM from Zero Data}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2508.05004}.
+\newblock arXiv preprint; version 4 consulted.
+
+\bibitem[Hu et~al.(2024)Hu, Lu, and Clune]{adas2024}
+Shengran Hu, Cong Lu, and Jeff Clune.
+\newblock {Automated Design of Agentic Systems}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2408.08435}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Agrawal et~al.(2025)Agrawal, Tan, Soylu, Ziems, Khare, Opsahl-Ong,
+  et~al.]{gepa2025}
+Lakshya~A Agrawal, Shangyin Tan, Dilara Soylu, Noah Ziems, Rishi Khare, Krista
+  Opsahl-Ong, et~al.
+\newblock {GEPA: Reflective Prompt Evolution Can Outperform Reinforcement
+  Learning}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2507.19457}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Yin et~al.(2024)Yin, Wang, Pan, Lin, Wan, and Wang]{goedelagent2024}
+Xunjian Yin, Xinyi Wang, Liangming Pan, Li~Lin, Xiaojun Wan, and William~Yang
+  Wang.
+\newblock {G\"odel Agent: A Self-Referential Agent Framework for Recursive
+  Self-Improvement}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2410.04444}.
+\newblock arXiv preprint; version 4 consulted.
+
+\bibitem[Robeyns et~al.(2025)Robeyns, Szummer, and Aitchison]{sica2025}
+Maxime Robeyns, Martin Szummer, and Laurence Aitchison.
+\newblock {A Self-Improving Coding Agent}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2504.15228}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Zhang et~al.(2025)Zhang, Hu, Lu, Lange, and Clune]{dgm2025}
+Jenny Zhang, Shengran Hu, Cong Lu, Robert Lange, and Jeff Clune.
+\newblock {Darwin Godel Machine: Open-Ended Evolution of Self-Improving
+  Agents}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.22954}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[Zweiger et~al.(2025)Zweiger, Pari, Guo, Aky{\"{u}}rek, Kim, and
+  Agrawal]{seal2025}
+Adam Zweiger, Jyothish Pari, Han Guo, Ekin Aky{\"{u}}rek, Yoon Kim, and Pulkit
+  Agrawal.
+\newblock {Self-Adapting Language Models}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2506.10943}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Cheong et~al.(2026)Cheong, Cong, Yang, and Miao]{selfedit2026}
+Alistair Cheong, Haolin Cong, Tyler Yang, and Dustin Miao.
+\newblock {Search over Self-Edit Strategies for LLM Adaptation}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2601.14532}.
+\newblock arXiv preprint; version 1 consulted.
+
+\bibitem[Romera-Paredes et~al.(2024)Romera-Paredes, Barekatain, Novikov, Balog,
+  Kumar, Dupont, et~al.]{funsearch2024}
+Bernardino Romera-Paredes, Mohammadamin Barekatain, Alexander Novikov, Matej
+  Balog, M.~Pawan Kumar, Emilien Dupont, et~al.
+\newblock {Mathematical discoveries from program search with large language
+  models}.
+\newblock \emph{Nature}, 625:\penalty0 468--475, 2024.
+\newblock \doi{10.1038/s41586-023-06924-6}.
+\newblock URL \url{https://www.nature.com/articles/s41586-023-06924-6}.
+\newblock Published online 14 December 2023.
+
+\bibitem[Novikov et~al.(2025)Novikov, V{\~{u}}, Eisenberger, Dupont, Huang,
+  Wagner, et~al.]{alphaevolve2025}
+Alexander Novikov, Ng{\^{a}}n V{\~{u}}, Marvin Eisenberger, Emilien Dupont,
+  Po-Sen Huang, Adam~Zsolt Wagner, et~al.
+\newblock {AlphaEvolve: A coding agent for scientific and algorithmic
+  discovery}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2506.13131}.
+\newblock arXiv preprint; version 1 consulted.
+
+\bibitem[Lu et~al.(2024)Lu, Lu, Lange, Foerster, Clune, and Ha]{scientist2024}
+Chris Lu, Cong Lu, Robert~Tjarko Lange, Jakob Foerster, Jeff Clune, and David
+  Ha.
+\newblock {The AI Scientist: Towards Fully Automated Open-Ended Scientific
+  Discovery}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2408.06292}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[Yamada et~al.(2025)Yamada, Lange, Lu, Hu, Lu, Foerster, Clune, and
+  Ha]{scientistv22025}
+Yutaro Yamada, Robert~Tjarko Lange, Cong Lu, Shengran Hu, Chris Lu, Jakob
+  Foerster, Jeff Clune, and David Ha.
+\newblock {The AI Scientist-v2: Workshop-Level Automated Scientific Discovery
+  via Agentic Tree Search}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2504.08066}.
+\newblock arXiv preprint; version 1 consulted.
+
+\bibitem[Xue et~al.(2026)Xue, Ding, Shen, Wang, Yin, Wu, et~al.]{pastbench2026}
+Shuhan Xue, Zixin Ding, Yichen Shen, Yinjie Wang, Zhenfei Yin, Yingcheng Wu,
+  et~al.
+\newblock {PAST-Bench: Benchmarking the Foundations of Recursive
+  Self-Improvement in Personal Agents}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2608.04003}.
+\newblock arXiv preprint; version 1 consulted.
+
+\bibitem[Meng et~al.(2026)Meng, Du, Chen, Zhao, Lu, Hu, and Shieh]{rsidata2026}
+Fanqing Meng, Lingxiao Du, Qiguang Chen, Ziqi Zhao, Haocheng Lu, Mengkang Hu,
+  and Michael~Qizhe Shieh.
+\newblock {RSIBench-Data: Benchmarking Data-Centric Research for Recursive
+  Self-Improvement}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2607.25886}.
+\newblock arXiv preprint; version 1 consulted.
+
+\bibitem[Rank et~al.(2026)Rank, Bhatnagar, Prabhu, Eisenberg, Nguyen, Bethge,
+  and Andriushchenko]{posttrain2026}
+Ben Rank, Hardik Bhatnagar, Ameya Prabhu, Shira Eisenberg, Karina Nguyen,
+  Matthias Bethge, and Maksym Andriushchenko.
+\newblock {PostTrainBench: Can LLM Agents Automate LLM Post-Training?}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2603.08640}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Chi et~al.(2026)Chi, Li, Hong, Wang, Gao, Yang, et~al.]{ai4ai2026}
+Yizhe Chi, Wenyi Li, Deyao Hong, Xiaoqiu Wang, Mingju Gao, Kaisen Yang, et~al.
+\newblock {AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for
+  Recursive Self-Improvement}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2608.20318}.
+\newblock arXiv preprint; version 1 consulted.
+
+\bibitem[Jimenez et~al.(2023)Jimenez, Yang, Wettig, Yao, Pei, Press, and
+  Narasimhan]{swebench2023}
+Carlos~E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir
+  Press, and Karthik Narasimhan.
+\newblock {SWE-bench: Can Language Models Resolve Real-World GitHub Issues?},
+  2023.
+\newblock URL \url{https://arxiv.org/abs/2310.06770}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[Chan et~al.(2024)Chan, Chowdhury, Jaffe, Aung, Sherburn, Mays,
+  et~al.]{mlebench2024}
+Jun~Shern Chan, Neil Chowdhury, Oliver Jaffe, James Aung, Dane Sherburn, Evan
+  Mays, et~al.
+\newblock {MLE-bench: Evaluating Machine Learning Agents on Machine Learning
+  Engineering}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2410.07095}.
+\newblock arXiv preprint; version 6 consulted.
+
+\bibitem[Wijk et~al.(2024)Wijk, Lin, Becker, Jawhar, Parikh, Broadley,
+  et~al.]{rebench2024}
+Hjalmar Wijk, Tao Lin, Joel Becker, Sami Jawhar, Neev Parikh, Thomas Broadley,
+  et~al.
+\newblock {RE-Bench: Evaluating frontier AI R\&D capabilities of language model
+  agents against human experts}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2411.15114}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Dwork et~al.(2014)Dwork, Feldman, Hardt, Pitassi, Reingold, and
+  Roth]{adaptive2015}
+Cynthia Dwork, Vitaly Feldman, Moritz Hardt, Toniann Pitassi, Omer Reingold,
+  and Aaron Roth.
+\newblock {Preserving Statistical Validity in Adaptive Data Analysis}, 2014.
+\newblock URL \url{https://arxiv.org/abs/1411.2664}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[Liu et~al.(2023)Liu, Xia, Wang, and Zhang]{evalplus2023}
+Jiawei Liu, Chunqiu~Steven Xia, Yuyao Wang, and Lingming Zhang.
+\newblock {Is Your Code Generated by ChatGPT Really Correct? Rigorous
+  Evaluation of Large Language Models for Code Generation}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2305.01210}.
+\newblock arXiv preprint; version 3 consulted.
+
+\bibitem[Zheng et~al.(2023)Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang,
+  et~al.]{judge2023}
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao
+  Zhuang, et~al.
+\newblock {Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2306.05685}.
+\newblock arXiv preprint; version 4 consulted.
+
+\bibitem[Gao et~al.(2022)Gao, Schulman, and Hilton]{rewardoveropt2022}
+Leo Gao, John Schulman, and Jacob Hilton.
+\newblock {Scaling Laws for Reward Model Overoptimization}, 2022.
+\newblock URL \url{https://arxiv.org/abs/2210.10760}.
+\newblock arXiv preprint; version 1 consulted.
+
+\bibitem[Shumailov et~al.(2024)Shumailov, Shumaylov, Zhao, Gal, Papernot, and
+  Anderson]{collapse2023}
+Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Yarin Gal, Nicolas Papernot, and
+  Ross Anderson.
+\newblock {AI models collapse when trained on recursively generated data}.
+\newblock \emph{Nature}, 631:\penalty0 755--759, 2024.
+\newblock \doi{10.1038/s41586-024-07566-y}.
+\newblock URL \url{https://www.nature.com/articles/s41586-024-07566-y}.
+\newblock Corrected version of record consulted; correction DOI:
+  10.1038/s41586-025-08905-3.
+
+\bibitem[Gerstgrasser et~al.(2024)Gerstgrasser, Schaeffer, Dey, Rafailov,
+  Sleight, Hughes, et~al.]{accumulate2024}
+Matthias Gerstgrasser, Rylan Schaeffer, Apratim Dey, Rafael Rafailov, Henry
+  Sleight, John Hughes, et~al.
+\newblock {Is Model Collapse Inevitable? Breaking the Curse of Recursion by
+  Accumulating Real and Synthetic Data}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2404.01413}.
+\newblock arXiv preprint; version 2 consulted.
+
+\bibitem[Everitt et~al.(2019)Everitt, Hutter, Kumar, and
+  Krakovna]{tampering2019}
+Tom Everitt, Marcus Hutter, Ramana Kumar, and Victoria Krakovna.
+\newblock {Reward Tampering Problems and Solutions in Reinforcement Learning: A
+  Causal Influence Diagram Perspective}, 2019.
+\newblock URL \url{https://arxiv.org/abs/1908.04734}.
+\newblock arXiv preprint; version 5 consulted.
+
+\end{thebibliography}

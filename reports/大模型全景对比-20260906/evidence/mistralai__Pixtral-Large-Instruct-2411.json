@@ -1,0 +1,24 @@
+{
+  "repo": "mistralai/Pixtral-Large-Instruct-2411",
+  "url": "https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: other",
+    "  simplifiée registered in the Paris commercial registry under the number 952",
+    "  parameters, source code (inference code, evaluation code and, if applicable,",
+    "  non-profit and non-commercial purposes, and not directly or indirectly",
+    "  connected to any commercial activities or business operations. For",
+    "  is intended to generate revenue, nor (2) any Distribution by a commercial",
+    "  parameters.",
+    "  enforce its license. If you are affiliated with a commercial entity, we may",
+    "  I understand that I can only use the model, any derivative versions and their outputs for non-commercial research purposes: checkbox",
+    "  I understand that if I am a commercial entity, I am not permitted to use or distribute the model internally or externally, or expose it in my own offerings without a commercial license: checkbox",
+    "  I understand that if I upload the model, or any derivative version, on any platform, I must include the Mistral Research License: checkbox",
+    "  I understand that for commercial use of the model, I can contact Mistral or use the Mistral AI API on la Plateforme or any of our cloud provider partners: checkbox",
+    "  its license. If you are affiliated with a commercial entity, we may also send",
+    "- 128K context window: fits minimum of 30 high-resolution images",
+    "- **Mistral Research License:** Allows usage and modification for research and non-commercial usages.",
+    "- **Large Context:** A large 128k context window."
+  ],
+  "LICENSE_status": 404
+}

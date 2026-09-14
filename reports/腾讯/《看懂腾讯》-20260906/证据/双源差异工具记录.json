@@ -1,0 +1,65 @@
+[
+  {
+    "label": "2025revenue",
+    "official": 751766,
+    "independent": 751766,
+    "stdout": "============================================================\n交叉验证: 2025revenue (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 751,766.00 CNYmillion\n\n  ✅ official            : 751,766.00 CNYmillion  (偏差 0.00%)\n  ✅ independent_standardized: 751,766.00 CNYmillion  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 1.0%, 数据一致\n\n  共识值 (加权中位数): 751,766.00 CNYmillion\n",
+    "stderr": "",
+    "returncode": 0,
+    "note": "保留官方原值，微小差异仍明确标注。"
+  },
+  {
+    "label": "2025attributableprofit",
+    "official": 224842,
+    "independent": 224842,
+    "stdout": "============================================================\n交叉验证: 2025attributableprofit (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 224,842.00 CNYmillion\n\n  ✅ official            : 224,842.00 CNYmillion  (偏差 0.00%)\n  ✅ independent_standardized: 224,842.00 CNYmillion  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 1.0%, 数据一致\n\n  共识值 (加权中位数): 224,842.00 CNYmillion\n",
+    "stderr": "",
+    "returncode": 0,
+    "note": "保留官方原值，微小差异仍明确标注。"
+  },
+  {
+    "label": "2021grossprofit",
+    "official": 245944,
+    "independent": 245931,
+    "stdout": "============================================================\n交叉验证: 2021grossprofit (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 245,937.50 CNYmillion\n\n  ✅ official            : 245,944.00 CNYmillion  (偏差 0.00%)\n  ✅ independent_standardized: 245,931.00 CNYmillion  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 1.0%, 数据一致\n\n  共识值 (加权中位数): 245,937.50 CNYmillion\n",
+    "stderr": "",
+    "returncode": 0,
+    "note": "保留官方原值，微小差异仍明确标注。"
+  },
+  {
+    "label": "2022grossprofit",
+    "official": 238746,
+    "independent": 238887,
+    "stdout": "============================================================\n交叉验证: 2022grossprofit (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 238,816.50 CNYmillion\n\n  ✅ official            : 238,746.00 CNYmillion  (偏差 0.03%)\n  ✅ independent_standardized: 238,887.00 CNYmillion  (偏差 0.03%)\n\n  ✅ 所有来源偏差 ≤ 1.0%, 数据一致\n\n  共识值 (加权中位数): 238,816.50 CNYmillion\n",
+    "stderr": "",
+    "returncode": 0,
+    "note": "保留官方原值，微小差异仍明确标注。"
+  },
+  {
+    "label": "2025grossprofit",
+    "official": 422593,
+    "independent": 422870,
+    "stdout": "============================================================\n交叉验证: 2025grossprofit (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 422,731.50 CNYmillion\n\n  ✅ official            : 422,593.00 CNYmillion  (偏差 0.03%)\n  ✅ independent_standardized: 422,870.00 CNYmillion  (偏差 0.03%)\n\n  ✅ 所有来源偏差 ≤ 1.0%, 数据一致\n\n  共识值 (加权中位数): 422,731.50 CNYmillion\n",
+    "stderr": "",
+    "returncode": 0,
+    "note": "保留官方原值，微小差异仍明确标注。"
+  },
+  {
+    "label": "2023operatingprofit_NOT_COMPARABLE",
+    "official": 160074,
+    "independent": 162964,
+    "stdout": "============================================================\n交叉验证: 2023operatingprofit_NOT_COMPARABLE (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 161,519.00 CNYmillion\n\n  ✅ official            : 160,074.00 CNYmillion  (偏差 0.89%)\n  ✅ independent_standardized: 162,964.00 CNYmillion  (偏差 0.89%)\n\n  ✅ 所有来源偏差 ≤ 1.0%, 数据一致\n\n  共识值 (加权中位数): 161,519.00 CNYmillion\n",
+    "stderr": "",
+    "returncode": 0,
+    "note": "超1%经营利润拒用独立标准化值，不当作同口径准出。"
+  },
+  {
+    "label": "2025operatingprofit_NOT_COMPARABLE",
+    "official": 241562,
+    "independent": 245628,
+    "stdout": "============================================================\n交叉验证: 2025operatingprofit_NOT_COMPARABLE (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 243,595.00 CNYmillion\n\n  ✅ official            : 241,562.00 CNYmillion  (偏差 0.83%)\n  ✅ independent_standardized: 245,628.00 CNYmillion  (偏差 0.83%)\n\n  ✅ 所有来源偏差 ≤ 1.0%, 数据一致\n\n  共识值 (加权中位数): 243,595.00 CNYmillion\n",
+    "stderr": "",
+    "returncode": 0,
+    "note": "超1%经营利润拒用独立标准化值，不当作同口径准出。"
+  }
+]

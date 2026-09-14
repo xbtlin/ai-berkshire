@@ -1,0 +1,14 @@
+{
+  "repo": "baidu/ERNIE-4.5-300B-A47B-Base-PT",
+  "url": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-Base-PT",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "To ensure the stability of multimodal joint training, we adopt a staged training strategy. In the first and second stage, we train only the text-related parameters, enabling the model to develop strong fundamental language understanding as well as long-text processing capabilities. The final multimodal stage extends capabilities to images and videos by introducing additional parameters including a ViT for image feature extraction, an adapter for feature transformation, and visual experts for multimodal understanding. At this stage, text and visual modalities mutually enhance each other. After pretraining trillions tokens, we extracted the text-related parameters and finally obtained ERNIE-4.",
+    "ERNIE-4.5-300B-A47B-Base is a text MoE Base model, with 300B total parameters and 47B activated parameters for each token. The following are the model configuration details: ",
+    "| Context Length | 131072 |",
+    "The ERNIE 4.5 models are provided under the Apache License 2.0. This license permits commercial use, subject to its terms and conditions. Copyright (c) 2025 Baidu, Inc. All Rights Reserved."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or enti"
+}

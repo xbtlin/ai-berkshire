@@ -1,0 +1,11 @@
+{
+  "repo": "deepseek-ai/DeepSeek-V3",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+  "README.md_status": 200,
+  "excerpts": [
+    "We present DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token. ",
+    "Evaluation results on the ``Needle In A Haystack`` (NIAH) tests.  DeepSeek-V3 performs well across all context window lengths up to **128K**. ",
+    "This code repository is licensed under [the MIT License](LICENSE-CODE). The use of DeepSeek-V3 Base/Chat models is subject to [the Model License](LICENSE-MODEL). DeepSeek-V3 series (including Base and Chat) supports commercial use."
+  ],
+  "LICENSE_status": 404
+}

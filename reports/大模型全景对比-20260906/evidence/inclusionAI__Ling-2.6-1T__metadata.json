@@ -1,0 +1,15 @@
+{
+  "id": "inclusionAI/Ling-2.6-1T",
+  "sha": "07b9e26bb1f97494b4fd62eed83f22722ffd560a",
+  "lastModified": "2026-06-17T05:06:41.000Z",
+  "gated": false,
+  "safetensors": {
+    "parameters": {
+      "F32": 19712,
+      "BF16": 16163328128,
+      "F8_E4M3": 1009494523904
+    },
+    "total": 1025657871744
+  },
+  "weights_files": 161
+}

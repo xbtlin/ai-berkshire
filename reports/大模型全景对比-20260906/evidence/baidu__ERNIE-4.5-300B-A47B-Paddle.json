@@ -1,0 +1,14 @@
+{
+  "repo": "baidu/ERNIE-4.5-300B-A47B-Paddle",
+  "url": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-Paddle",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "ERNIE-4.5-300B-A47B is a text MoE Post-trained model, with 300B total parameters and 47B activated parameters for each token. The following are the model configuration details:",
+    "|Context Length|131072|",
+    "### **Sampling Parameters**",
+    "The ERNIE 4.5 models are provided under the Apache License 2.0. This license permits commercial use, subject to its terms and conditions. Copyright (c) 2025 Baidu, Inc. All Rights Reserved."
+  ],
+  "LICENSE_status": 200,
+  "license_head": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or enti"
+}

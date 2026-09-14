@@ -1,0 +1,16 @@
+{
+  "repo": "mistralai/Mistral-Large-3-675B-Instruct-2512",
+  "url": "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: apache-2.0",
+    "From our family of large models, **Mistral Large 3** is a state-of-the-art general-purpose **Multimodal granular Mixture-of-Experts** model with **41B active parameters** and **675B total parameters** trained from the ground up with 3000 H200s.",
+    "- **Apache 2.0 License**: Open-source license allowing usage and modification for both commercial and non-commercial purposes.",
+    "- **Large Context Window**: Supports a 256k context window.",
+    "With powerful long-context performance, stable and consistent cross-domain behavior, Mistral Large 3 is perfect for:",
+    "- **Sampling Parameters**: Use a temperature below 0.1 for daily-driver and production environments ; Higher temperatures may be explored for creative use cases - developers are encouraged to experiment with alternative settings.",
+    "            \"parameters\": {",
+    "            \"parameters\": {"
+  ],
+  "LICENSE_status": 404
+}

@@ -1,0 +1,15 @@
+{
+  "repo": "deepseek-ai/DeepSeek-V3.1",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+  "README.md_status": 200,
+  "excerpts": [
+    "license: mit",
+    "DeepSeek-V3.1 is post-trained on the top of DeepSeek-V3.1-Base, which is built upon the original V3 base checkpoint through a two-phase long context extension approach, following the methodology outlined in the original DeepSeek-V3 report. We have expanded our dataset by collecting additional long documents and substantially extending both training phases. The 32K extension phase has been increased 10-fold to 630B tokens, while the 128K extension phase has been extended by 3.3x to 209B tokens.",
+    "Parameters: {json.dumps(parameters)}",
+    "- `tool_call_arguments` must be valid JSON that strictly follows the tool's Parameters Schema",
+    "- Search agents are evaluated with our internal search framework, which uses a commercial search API + webpage filter + 128K context window. Seach agent results of R1-0528 are evaluated with a pre-defined workflow. ",
+    "1. **The `mlp.gate.e_score_correction_bias `parameters should be loaded and computed in FP32 precision.**"
+  ],
+  "LICENSE_status": 200,
+  "license_head": "MIT License\n\nCopyright (c) 2023 DeepSeek\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to t"
+}
