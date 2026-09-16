@@ -36,6 +36,9 @@
     # 多档 r 敏感性 + 排序稳定性检验
     python3 tools/terminal_value.py sweep --r 0.06,0.08,0.10,0.12 --g-shift -0.01 --rf 0.017
 
+    # 单公司 r±2pp：期望 IRR 能否覆盖资本成本、结论是否翻转（仓位压力测试，非买入否决）
+    python3 tools/terminal_value.py flip --name 腾讯 --r 0.10 --delta 0.02 --g-shift -0.01 --rf 0.047
+
     # 分母宽度体检（哪些格子跌破 5pct 有效性下限）
     python3 tools/terminal_value.py check --r 0.06 --g-shift -0.01
 
@@ -370,6 +373,106 @@ def cmd_sweep(args):
     return 0
 
 
+def stress_pass(mean_irr_pct, r):
+    """仓位压力测试：期望 IRR（百分点）是否覆盖资本成本 r。
+
+    返回 True/False；mean_irr_pct 为 None 时返回 None（模型失效）。
+    这是组合仓位压力测试，不是买入/回避的一票否决。
+    """
+    if mean_irr_pct is None:
+        return None
+    return mean_irr_pct >= r * 100.0
+
+
+def flip_analysis(spec, r, delta=0.02, g_shift=0.0, years=10, rf=None):
+    """在 r-delta / r / r+delta 三档上算期望 IRR 与压力测试通过与否。
+
+    返回 dict：
+      rates, means, passes, flipped, labels
+    flipped=True 表示三档的通过/未通过不完全相同（结论随 Δr 翻转）。
+    """
+    if rf is None:
+        rf = RF["CNY"]
+    if delta <= 0:
+        raise ValueError("delta 必须为正，例如 0.02 表示 ±2pp")
+    rates = (r - delta, r, r + delta)
+    labels = (f"r−{delta*100:.0f}pp", "基准 r", f"r+{delta*100:.0f}pp")
+    means, passes = [], []
+    for rate in rates:
+        if rate <= 0:
+            means.append(None)
+            passes.append(None)
+            continue
+        rows = evaluate(spec, rate, g_shift, years)
+        mean, _sd, _ratio = summarize(rows, spec["p"], rf)
+        means.append(mean)
+        passes.append(stress_pass(mean, rate))
+    known = [p for p in passes if p is not None]
+    flipped = len(set(known)) > 1 if known else False
+    return dict(rates=rates, means=means, passes=passes, flipped=flipped, labels=labels)
+
+
+def cmd_flip(args):
+    """r±delta 敏感性：结论是否随折现率翻转。
+
+    用途：在给出买入/持有/回避之前，暴露"结论买的是公司还是折现率"。
+    未通过压力测试 → 收紧仓位建议；不得单独把决策改成回避。
+    """
+    companies = load_companies(args.config)
+    if args.name not in companies:
+        print(f"未知公司：{args.name}。可选：{'、'.join(companies)}", file=sys.stderr)
+        return 1
+    spec = companies[args.name]
+    rf = args.rf if args.rf is not None else RF["CNY"]
+    try:
+        result = flip_analysis(spec, args.r, args.delta, args.g_shift, args.years, rf)
+    except ValueError as exc:
+        print(f"参数错误：{exc}", file=sys.stderr)
+        return 1
+
+    print(f"\n{args.name}  |  基准 r = {args.r:.2%}   Δr = ±{args.delta*100:.0f}pp   "
+          f"g平移 {args.g_shift:+.1%}   Rf = {rf:.2%}   持有期 {args.years} 年")
+    print(f"判定规则：期望 IRR ≥ r → 通过仓位压力测试；否则未通过。")
+    print(f"角色：十年模型 = 仓位压力测试，不是买入/持有/回避的唯一否决票。\n")
+    print(f"{'档位':<10}{'r':>8}{'期望IRR':>12}{'相对 r':>12}{'压力测试':>10}")
+    print("-" * 54)
+    for label, rate, mean, passed in zip(
+            result["labels"], result["rates"], result["means"], result["passes"]):
+        if rate <= 0:
+            print(f"{label:<10}{'≤0':>8}{'—':>12}{'—':>12}{'失效':>10}")
+            continue
+        mean_s = f"{mean:+.2f}%" if mean is not None else "—"
+        if mean is None:
+            rel = "—"
+            tag = "失效"
+        else:
+            gap = mean - rate * 100.0
+            rel = f"{gap:+.2f}pp"
+            tag = "通过" if passed else "未通过"
+        print(f"{label:<10}{rate:>8.2%}{mean_s:>12}{rel:>12}{tag:>10}")
+    print("-" * 54)
+
+    base_pass = result["passes"][1]
+    if base_pass is None:
+        print("\n【失效】基准 r 下模型不可用（分母失效等）。请先跑 audit / check。\n")
+        return 1
+
+    if result["flipped"]:
+        print(f"\n【翻转】结论随 Δr±{args.delta*100:.0f}pp 翻转。"
+              f"报告必须写明：本结论对折现率敏感；不得用单一基准 r 的未通过一票否决买入。")
+        print(f"        正确用法：收紧仓位上限，并完成与三年三情景/thesis 的「估值分歧对账」。")
+    else:
+        status = "始终通过" if base_pass else "始终未通过"
+        print(f"\n【稳定】Δr±{args.delta*100:.0f}pp 内压力测试{status}——相对折现率扰动更稳健。")
+        if not base_pass:
+            print(f"        未通过仍只约束仓位，不自动等于回避；须与其他五个维度并列决策。")
+
+    print("\n提醒：禁止为迎合买入结论而把 r 调出币种合理区间；"
+          "敏感性是为了一致性审计，不是为了「调低 r 去买」。\n")
+    # 退出码 0：工具跑通。翻转与否写在输出里，由 skill 强制写入报告。
+    return 0
+
+
 def cmd_check(args):
     companies = load_companies(args.config)
     print(f"\n分母宽度体检   r = {args.r:.1%}   g平移 {args.g_shift:+.1%}   "
@@ -556,6 +659,15 @@ def main():
     p.add_argument("--rf", type=float, help="无风险利率，缺省用人民币 1.70%%")
     add_common(p, need_r=False)
     p.set_defaults(func=cmd_sweep)
+
+    p = sub.add_parser("flip", help="r±Δ 敏感性：压力测试结论是否翻转（非买入否决）")
+    p.add_argument("--name", required=True, help="公司名（内置预设或 --config）")
+    p.add_argument("--r", type=float, required=True, help="基准资本成本，小数（如 0.10）")
+    p.add_argument("--delta", type=float, default=0.02,
+                   help="敏感性半宽，小数，默认 0.02（即 ±2pp）")
+    p.add_argument("--rf", type=float, help="无风险利率，缺省用人民币 1.70%%")
+    add_common(p, need_r=False)
+    p.set_defaults(func=cmd_flip)
 
     p = sub.add_parser("check", help="分母宽度体检")
     add_common(p)
