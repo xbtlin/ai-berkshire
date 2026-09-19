@@ -333,7 +333,22 @@ REM 可选：安装 Codex slash prompts
 .\scripts\install-codex-prompts.bat
 ```
 
-仓库同时维护三套入口：`skills/*.md` 是 Claude Code command 源文件；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 从 `skills/*.md` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层。
+Pi 用户安装（macOS / Linux）：
+
+```bash
+# 在仓库根目录执行；安装到 ~/.pi/agent/skills
+./scripts/install-pi-skills.sh
+```
+
+Pi 用户安装（Windows PowerShell / Command Prompt）：
+
+```bat
+.\scripts\install-pi-skills.bat
+```
+
+安装脚本默认使用 Pi 的全局 skill 目录 `~/.pi/agent/skills`（Windows 为 `%USERPROFILE%\.pi\agent\skills`）；可通过 `PI_SKILLS_DIR` 覆盖。Pi 重启后可使用 `/skill:investment-research 腾讯` 等 skill 命令。
+
+仓库以 `skills/*.md` 作为 Claude Code command 的 canonical workflow；`codex-skills/*/SKILL.md` 是由 `scripts/sync-codex-skills.py` 生成的 Agent Skills 包，供 Codex 和 Pi 安装；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层。
 
 ### 3. 使用
 

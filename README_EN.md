@@ -311,7 +311,22 @@ REM Optional: install Codex slash prompts
 .\scripts\install-codex-prompts.bat
 ```
 
-The repository maintains three entry points: `skills/*.md` are the Claude Code command sources; `codex-skills/*/SKILL.md` are Codex skill packages generated from `skills/*.md` by `scripts/sync-codex-skills.py`; `codex-prompts/*.md` are an optional Codex slash-prompt compatibility layer.
+For Pi users on macOS / Linux:
+
+```bash
+# Run from the repository root; installs to ~/.pi/agent/skills
+./scripts/install-pi-skills.sh
+```
+
+For Pi users on Windows PowerShell / Command Prompt:
+
+```bat
+.\scripts\install-pi-skills.bat
+```
+
+The installer defaults to Pi's global skill directory, `~/.pi/agent/skills` (or `%USERPROFILE%\.pi\agent\skills` on Windows); set `PI_SKILLS_DIR` to override it. Restart Pi, then invoke skills such as `/skill:investment-research Tencent`.
+
+The canonical workflows are `skills/*.md`, which serve as Claude Code command sources. `codex-skills/*/SKILL.md` are Agent Skills packages generated from them by `scripts/sync-codex-skills.py` and installed by both Codex and Pi; `codex-prompts/*.md` are an optional Codex slash-prompt compatibility layer.
 
 ### 3. Use
 

@@ -313,7 +313,22 @@ REM オプション：Codexスラッシュプロンプトをインストール
 .\scripts\install-codex-prompts.bat
 ```
 
-リポジトリは3つのエントリーポイントを維持しています：`skills/*.md` はClaude Codeコマンドのソース；`codex-skills/*/SKILL.md` は `scripts/sync-codex-skills.py` が `skills/*.md` から生成するCodex skillパッケージ；`codex-prompts/*.md` はオプションのCodexスラッシュプロンプト互換レイヤーです。
+PiユーザーでmacOS / Linuxの場合：
+
+```bash
+# リポジトリのルートで実行。~/.pi/agent/skills にインストールされます
+./scripts/install-pi-skills.sh
+```
+
+PiユーザーでWindows PowerShell / コマンドプロンプトの場合：
+
+```bat
+.\scripts\install-pi-skills.bat
+```
+
+インストーラーはデフォルトでPiのグローバルskillディレクトリ `~/.pi/agent/skills`（Windowsでは `%USERPROFILE%\.pi\agent\skills`）を使用します。変更するには `PI_SKILLS_DIR` を設定してください。Piを再起動後、`/skill:investment-research Tencent` のように実行できます。
+
+canonical workflow は `skills/*.md` で、Claude Codeコマンドのソースです。`codex-skills/*/SKILL.md` は `scripts/sync-codex-skills.py` が生成するAgent Skillsパッケージであり、CodexとPiの両方でインストールされます。`codex-prompts/*.md` はオプションのCodexスラッシュプロンプト互換レイヤーです。
 
 ### 3. 使い方
 
