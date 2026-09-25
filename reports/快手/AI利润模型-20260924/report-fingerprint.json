@@ -1,0 +1,5 @@
+{
+  "report": "reports/快手/快手-investment-team-AI利润与竞争格局-20260924.md",
+  "sha256": "30149b515a786a195a68ece67b2ee940bb50de514c5f4895c14f966594b5a246",
+  "audit_scope": "sample facts; separately model consistency; no forecast truth verification"
+}

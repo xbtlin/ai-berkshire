@@ -1,0 +1,140 @@
+{
+  "units": "RMB 100m; HKD values explicitly labelled",
+  "cutoff": "2026-09-24",
+  "assumptions": {
+    "tax": "0.25",
+    "attribution": "0.988",
+    "shares_100m": "13.31779203",
+    "cny_per_hkd": "0.86054"
+  },
+  "base2026": {
+    "revenue": 390,
+    "profit": 110,
+    "h2_revenue": "218.27079",
+    "h2_profit": "59.61616"
+  },
+  "ai_bridge": [
+    {
+      "year": 2027,
+      "revenue_without_incremental_ai": "430",
+      "net_margin_without_incremental_ai": "0.275",
+      "non_ai_profit": "118.250",
+      "savings": "1.720",
+      "sales_contribution": "0.860",
+      "competition": "-0.430",
+      "implementation": "-0.6450",
+      "ai_pretax": "1.5050",
+      "ai_net_parent": "1.115205000",
+      "total_profit": "119.365205000",
+      "ai_uplift": "0.009430909090909090909090909091"
+    },
+    {
+      "year": 2028,
+      "revenue_without_incremental_ai": "480",
+      "net_margin_without_incremental_ai": "0.27",
+      "non_ai_profit": "129.60",
+      "savings": "3.360",
+      "sales_contribution": "1.920",
+      "competition": "-0.7200",
+      "implementation": "-0.7200",
+      "ai_pretax": "3.8400",
+      "ai_net_parent": "2.845440000",
+      "total_profit": "132.445440000",
+      "ai_uplift": "0.02195555555555555555555555556"
+    },
+    {
+      "year": 2029,
+      "revenue_without_incremental_ai": "535",
+      "net_margin_without_incremental_ai": "0.265",
+      "non_ai_profit": "141.775",
+      "savings": "5.35",
+      "sales_contribution": "4.280",
+      "competition": "-1.3375",
+      "implementation": "-1.3375",
+      "ai_pretax": "6.9550",
+      "ai_net_parent": "5.153655000",
+      "total_profit": "146.928655000",
+      "ai_uplift": "0.03635094339622641509433962264"
+    }
+  ],
+  "ai_3year_total": "9.114300000",
+  "ai2029_sensitivity": {
+    "-.01": "-5.35",
+    ".009633": "5.153655",
+    ".02": "10.70"
+  },
+  "scenarios2036": [
+    {
+      "name": "bear",
+      "revenue": "400",
+      "all_in_net_margin": "0.15",
+      "net_profit": "60.00",
+      "embedded_ai_net": "-5",
+      "profit_without_incremental_ai": "65.00",
+      "revenue_cagr_from_2026": "0.002534988461896995424774404"
+    },
+    {
+      "name": "base",
+      "revenue": "900",
+      "all_in_net_margin": "0.25",
+      "net_profit": "225.00",
+      "embedded_ai_net": "7",
+      "profit_without_incremental_ai": "218.00",
+      "revenue_cagr_from_2026": "0.087220894624937778098272070"
+    },
+    {
+      "name": "bull",
+      "revenue": "1500",
+      "all_in_net_margin": "0.28",
+      "net_profit": "420.00",
+      "embedded_ai_net": "20",
+      "profit_without_incremental_ai": "400.00",
+      "revenue_cagr_from_2026": "0.144201901598327872675302792"
+    },
+    {
+      "name": "decline_tail",
+      "revenue": "200",
+      "all_in_net_margin": "0.10",
+      "net_profit": "20.00",
+      "embedded_ai_net": "-3",
+      "profit_without_incremental_ai": "23.00",
+      "revenue_cagr_from_2026": "-0.0646017805950775402377927102"
+    }
+  ],
+  "valuation": {
+    "market_cap_hkd": "2012.318375733",
+    "market_cap_cny": "1731.68045505327582",
+    "ttm_profit": "132.39705",
+    "ttm_revenue": "404.16697",
+    "pe_ttm": "13.07944893827525477342584295",
+    "pe_2026": "15.74254959139341654545454545",
+    "pe_2027": "14.50741407475717752086967052",
+    "ps_ttm": "4.284566982436184282946228882",
+    "pb": "7.509773419088664897525584778",
+    "fair_value_2027": {
+      "10": "104.1536411805555253900005104",
+      "12": "124.9843694166666304680006125",
+      "15": "156.2304617708332880850007657",
+      "18": "187.4765541249999457020009187",
+      "20": "208.3072823611110507800010209"
+    }
+  },
+  "stress": {
+    "one_point_net_margin": "5.35",
+    "price_down_3pct": "11.8930500",
+    "monster_down_30pct": "13.91486850000",
+    "inventory_extra_10pct": "4.521233730000"
+  },
+  "cash2026h1": {
+    "cfo": "36.37324",
+    "capex_ppe": "6.73560",
+    "capex_intangibles": "0.50579",
+    "lease_payment": "5.02889",
+    "fcf_before_lease": "29.13185",
+    "cash_after_lease": "24.10296"
+  },
+  "ratios": {
+    "roe2025": "0.7751946832097336143907207374",
+    "roa2025": "0.5540336710194276056987620674"
+  }
+}

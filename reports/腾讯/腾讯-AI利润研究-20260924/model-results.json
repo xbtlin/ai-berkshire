@@ -1,0 +1,484 @@
+{
+  "unit": "RMB 100 million",
+  "cutoff": "2026-09-24",
+  "anchor": {
+    "profit2026": "2800",
+    "new_ai_loss2026": "450",
+    "conversion": "0.8",
+    "core2026": "3160.0"
+  },
+  "near_inputs": {
+    "bear": {
+      "growth": ".03",
+      "ad": [
+        60,
+        120,
+        180
+      ],
+      "game": [
+        20,
+        40,
+        60
+      ],
+      "cloud": [
+        10,
+        20,
+        40
+      ],
+      "efficiency": [
+        20,
+        35,
+        50
+      ],
+      "infra": [
+        80,
+        160,
+        240
+      ],
+      "new_ai_loss": [
+        650,
+        750,
+        800
+      ]
+    },
+    "base": {
+      "growth": ".07",
+      "ad": [
+        130,
+        260,
+        410
+      ],
+      "game": [
+        60,
+        120,
+        190
+      ],
+      "cloud": [
+        35,
+        75,
+        140
+      ],
+      "efficiency": [
+        45,
+        80,
+        115
+      ],
+      "infra": [
+        50,
+        100,
+        150
+      ],
+      "new_ai_loss": [
+        520,
+        420,
+        250
+      ]
+    },
+    "bull": {
+      "growth": ".10",
+      "ad": [
+        180,
+        380,
+        620
+      ],
+      "game": [
+        90,
+        180,
+        300
+      ],
+      "cloud": [
+        60,
+        140,
+        260
+      ],
+      "efficiency": [
+        60,
+        110,
+        170
+      ],
+      "infra": [
+        50,
+        100,
+        150
+      ],
+      "new_ai_loss": [
+        450,
+        200,
+        -100
+      ]
+    }
+  },
+  "near": {
+    "bear": [
+      {
+        "year": 2027,
+        "core_ex_new_ai": "3254.800",
+        "frozen_ai_profit": "2894.800",
+        "benefits_pretax": "110",
+        "ai_delta_vs_frozen": "-136.000",
+        "ai_vs_core_ex_new": "-496.0",
+        "profit": "2758.800"
+      },
+      {
+        "year": 2028,
+        "core_ex_new_ai": "3352.44400",
+        "frozen_ai_profit": "2992.44400",
+        "benefits_pretax": "215",
+        "ai_delta_vs_frozen": "-196.00000",
+        "ai_vs_core_ex_new": "-556.0",
+        "profit": "2796.44400"
+      },
+      {
+        "year": 2029,
+        "core_ex_new_ai": "3453.0173200",
+        "frozen_ai_profit": "3093.0173200",
+        "benefits_pretax": "330",
+        "ai_delta_vs_frozen": "-208.0000000",
+        "ai_vs_core_ex_new": "-568.0",
+        "profit": "2885.0173200"
+      }
+    ],
+    "base": [
+      {
+        "year": 2027,
+        "core_ex_new_ai": "3381.200",
+        "frozen_ai_profit": "3021.200",
+        "benefits_pretax": "270",
+        "ai_delta_vs_frozen": "120.000",
+        "ai_vs_core_ex_new": "-240.0",
+        "profit": "3141.200"
+      },
+      {
+        "year": 2028,
+        "core_ex_new_ai": "3617.88400",
+        "frozen_ai_profit": "3257.88400",
+        "benefits_pretax": "535",
+        "ai_delta_vs_frozen": "372.00000",
+        "ai_vs_core_ex_new": "12.0",
+        "profit": "3629.88400"
+      },
+      {
+        "year": 2029,
+        "core_ex_new_ai": "3871.1358800",
+        "frozen_ai_profit": "3511.1358800",
+        "benefits_pretax": "855",
+        "ai_delta_vs_frozen": "724.0000000",
+        "ai_vs_core_ex_new": "364.0",
+        "profit": "4235.1358800"
+      }
+    ],
+    "bull": [
+      {
+        "year": 2027,
+        "core_ex_new_ai": "3476.000",
+        "frozen_ai_profit": "3116.000",
+        "benefits_pretax": "390",
+        "ai_delta_vs_frozen": "272.000",
+        "ai_vs_core_ex_new": "-88.0",
+        "profit": "3388.000"
+      },
+      {
+        "year": 2028,
+        "core_ex_new_ai": "3823.60000",
+        "frozen_ai_profit": "3463.60000",
+        "benefits_pretax": "810",
+        "ai_delta_vs_frozen": "768.00000",
+        "ai_vs_core_ex_new": "408.0",
+        "profit": "4231.60000"
+      },
+      {
+        "year": 2029,
+        "core_ex_new_ai": "4205.9600000",
+        "frozen_ai_profit": "3845.9600000",
+        "benefits_pretax": "1350",
+        "ai_delta_vs_frozen": "1400.0000000",
+        "ai_vs_core_ex_new": "1040.0",
+        "profit": "5245.9600000"
+      }
+    ]
+  },
+  "long_inputs": {
+    "bear": {
+      "revenues": [
+        2600,
+        1400,
+        1400,
+        3000,
+        2500,
+        1700,
+        150
+      ],
+      "margins": [
+        ".32",
+        ".24",
+        ".22",
+        ".32",
+        ".20",
+        ".08",
+        ".05"
+      ],
+      "central": 300,
+      "associate_net": 150
+    },
+    "base": {
+      "revenues": [
+        3800,
+        2300,
+        1800,
+        5200,
+        3500,
+        2500,
+        200
+      ],
+      "margins": [
+        ".43",
+        ".35",
+        ".30",
+        ".48",
+        ".30",
+        ".18",
+        ".10"
+      ],
+      "central": 350,
+      "associate_net": 250
+    },
+    "bull": {
+      "revenues": [
+        4800,
+        3200,
+        2100,
+        8000,
+        4300,
+        5000,
+        300
+      ],
+      "margins": [
+        ".48",
+        ".40",
+        ".34",
+        ".52",
+        ".33",
+        ".25",
+        ".10"
+      ],
+      "central": 600,
+      "associate_net": 400
+    }
+  },
+  "revenue2026_analytical_allocation": [
+    "1900",
+    "800",
+    "1300",
+    "1800",
+    "1850",
+    "600",
+    "100"
+  ],
+  "long": {
+    "bear": {
+      "segments": [
+        {
+          "segment": "domestic_games",
+          "revenue": "2600",
+          "margin": "0.32",
+          "op": "832.00",
+          "revenue_cagr": "0.0318628447835017504637417658937"
+        },
+        {
+          "segment": "international_games",
+          "revenue": "1400",
+          "margin": "0.24",
+          "op": "336.00",
+          "revenue_cagr": "0.0575570503382522810899859251856"
+        },
+        {
+          "segment": "social",
+          "revenue": "1400",
+          "margin": "0.22",
+          "op": "308.00",
+          "revenue_cagr": "0.0074383251323098972814287446395"
+        },
+        {
+          "segment": "advertising",
+          "revenue": "3000",
+          "margin": "0.32",
+          "op": "960.00",
+          "revenue_cagr": "0.0524097791489254102258635661411"
+        },
+        {
+          "segment": "fintech",
+          "revenue": "2500",
+          "margin": "0.20",
+          "op": "500.00",
+          "revenue_cagr": "0.0305684150328220422013814809048"
+        },
+        {
+          "segment": "cloud_ai",
+          "revenue": "1700",
+          "margin": "0.08",
+          "op": "136.00",
+          "revenue_cagr": "0.1097617886603236626520539444284"
+        },
+        {
+          "segment": "other",
+          "revenue": "150",
+          "margin": "0.05",
+          "op": "7.50",
+          "revenue_cagr": "0.0413797439924105868461910102311"
+        }
+      ],
+      "revenue": "12750",
+      "segment_op": "3079.50",
+      "central": "300",
+      "group_op": "2779.50",
+      "associate_net": "150",
+      "profit": "2373.600",
+      "profit_cagr": "-0.01638543678786962350543734357826",
+      "net_margin": "0.18616470588235294117647058823529",
+      "post2029_cagr": "-0.02748981495236303932909692470879"
+    },
+    "base": {
+      "segments": [
+        {
+          "segment": "domestic_games",
+          "revenue": "3800",
+          "margin": "0.43",
+          "op": "1634.00",
+          "revenue_cagr": "0.0717734625362931642130063250233"
+        },
+        {
+          "segment": "international_games",
+          "revenue": "2300",
+          "margin": "0.35",
+          "op": "805.00",
+          "revenue_cagr": "0.1113830908014028370785729777725"
+        },
+        {
+          "segment": "social",
+          "revenue": "1800",
+          "margin": "0.30",
+          "op": "540.00",
+          "revenue_cagr": "0.0330775294621110540136909222548"
+        },
+        {
+          "segment": "advertising",
+          "revenue": "5200",
+          "margin": "0.48",
+          "op": "2496.00",
+          "revenue_cagr": "0.1119188272298632347560893978865"
+        },
+        {
+          "segment": "fintech",
+          "revenue": "3500",
+          "margin": "0.30",
+          "op": "1050.00",
+          "revenue_cagr": "0.0658341509746454252414305074773"
+        },
+        {
+          "segment": "cloud_ai",
+          "revenue": "2500",
+          "margin": "0.18",
+          "op": "450.00",
+          "revenue_cagr": "0.1533971549865145454391711436302"
+        },
+        {
+          "segment": "other",
+          "revenue": "200",
+          "margin": "0.10",
+          "op": "20.00",
+          "revenue_cagr": "0.0717734625362931642130063250233"
+        }
+      ],
+      "revenue": "19300",
+      "segment_op": "6995.00",
+      "central": "350",
+      "group_op": "6645.00",
+      "associate_net": "250",
+      "profit": "5566.000",
+      "profit_cagr": "0.0711209582085997591543210731798",
+      "net_margin": "0.28839378238341968911917098445596",
+      "post2029_cagr": "0.0398092901696788888672165909029"
+    },
+    "bull": {
+      "segments": [
+        {
+          "segment": "domestic_games",
+          "revenue": "4800",
+          "margin": "0.48",
+          "op": "2304.00",
+          "revenue_cagr": "0.0971064381668459703007990600690"
+        },
+        {
+          "segment": "international_games",
+          "revenue": "3200",
+          "margin": "0.40",
+          "op": "1280.00",
+          "revenue_cagr": "0.1486983549970350067986269467779"
+        },
+        {
+          "segment": "social",
+          "revenue": "2100",
+          "margin": "0.34",
+          "op": "714.00",
+          "revenue_cagr": "0.0491258651144277812831901115494"
+        },
+        {
+          "segment": "advertising",
+          "revenue": "8000",
+          "margin": "0.52",
+          "op": "4160.00",
+          "revenue_cagr": "0.1608650821807936141577332673447"
+        },
+        {
+          "segment": "fintech",
+          "revenue": "4300",
+          "margin": "0.33",
+          "op": "1419.00",
+          "revenue_cagr": "0.0880019474425119488581130805850"
+        },
+        {
+          "segment": "cloud_ai",
+          "revenue": "5000",
+          "margin": "0.25",
+          "op": "1250.00",
+          "revenue_cagr": "0.2361804624794062675206939192007"
+        },
+        {
+          "segment": "other",
+          "revenue": "300",
+          "margin": "0.10",
+          "op": "30.00",
+          "revenue_cagr": "0.1161231740339044344426141383771"
+        }
+      ],
+      "revenue": "27700",
+      "segment_op": "11157.00",
+      "central": "600",
+      "group_op": "10557.00",
+      "associate_net": "400",
+      "profit": "8845.600",
+      "profit_cagr": "0.1219071776448946187273178493107",
+      "net_margin": "0.31933574007220216606498194945848",
+      "post2029_cagr": "0.0774933969027599719941766375795"
+    }
+  },
+  "owner_earnings_proxy": {
+    "bear": "1873.600",
+    "base": "4966.000",
+    "bull": "7945.600"
+  },
+  "sensitivity": {
+    "2029_base_ad_half": "4071.1358800",
+    "2029_new_ai_loss_600": "3955.1358800",
+    "2029_both": "3791.1358800",
+    "2036_ad_revenue_minus_20pct": "5166.6400",
+    "2036_all_segment_margin_minus_5pp": "4794.000",
+    "2036_cloud_margin_zero": "5206.000",
+    "2036_base_real_2026_rmb_at_2pct_inflation": "4566.0586371051142717707150928195"
+  },
+  "tax_conversion_sensitivity": {
+    "0.7": "4134.5089450",
+    "0.8": "4235.1358800",
+    "1": "4436.389750"
+  }
+}

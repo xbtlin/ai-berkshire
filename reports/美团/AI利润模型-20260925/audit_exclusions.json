@@ -1,0 +1,20 @@
+[
+  {
+    "id": 159,
+    "label": "资料截止",
+    "reported_value": 2026.0,
+    "unit": "",
+    "raw_text": "资料截止：2026-09-24 UTC；行情截至香港时间9月24日收市。最新财务期为2026年第二季度/上半年，尚无第三季财报。金额除注明外均为人民币亿元；未来三年指2027—2029三个完整年度；十年后指2036年。仅供学习研究。",
+    "line_number": 4,
+    "reason": "Parser captured date year or subjective score; not a financial measurement"
+  },
+  {
+    "id": 2,
+    "label": "财务与估值 · 评分（满分5）",
+    "reported_value": 3.0,
+    "unit": "",
+    "raw_text": "| 财务与估值 | 巴菲特 | 3.0 | 有净现金缓冲，但利润与自由现金流对补贴竞争高度敏感 |",
+    "line_number": 19,
+    "reason": "Parser captured date year or subjective score; not a financial measurement"
+  }
+]

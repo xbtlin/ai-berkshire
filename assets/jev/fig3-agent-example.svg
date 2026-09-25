@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="799" height="599" rx="14" fill="#fcfcfb" stroke="#e5e4e0"/>
+  <text x="28" y="40" font-size="20" font-weight="700" fill="#0b0b0b">放进客服智能体里：快层管判断，慢层管写</text>
+  <text x="772" y="40" font-size="12" fill="#8a897f" text-anchor="end">一条消息的完整路径</text>
+
+  <!-- 消息 -->
+  <rect x="28" y="60" width="744" height="44" rx="8" fill="#ffffff" stroke="#d8d7d2"/>
+  <text x="44" y="87" font-size="13" fill="#8a897f">客户消息</text>
+  <text x="116" y="87" font-size="13.5" fill="#0b0b0b">"订单 8842 的退款三天了还没到账，今天再不处理我就去 12315 投诉。"</text>
+  <line x1="400" y1="104" x2="400" y2="126" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 快层 -->
+  <rect x="28" y="128" width="744" height="232" rx="10" fill="#edf5f0" stroke="#8fbf9f"/>
+  <text x="44" y="154" font-size="14.5" font-weight="700" fill="#0b0b0b">快层：决策模型</text>
+  <text x="756" y="154" font-size="12.5" fill="#2f7a4b" text-anchor="end">一次调用问完 5 个问题 · 约 0.4 秒 · 约万分之几美元</text>
+
+  <rect x="44" y="166" width="712" height="180" rx="6" fill="#ffffff" stroke="#d8d7d2"/>
+  <g font-size="12" fill="#8a897f">
+    <text x="58" y="187">问题</text><text x="300" y="187">类型</text><text x="366" y="187">答案</text><text x="476" y="187">程序里写死的规则</text><text x="640" y="187">动作</text>
+  </g>
+  <g stroke="#e5e4e0"><line x1="44" y1="196" x2="756" y2="196"/><line x1="44" y1="226" x2="756" y2="226"/><line x1="44" y1="256" x2="756" y2="256"/><line x1="44" y1="286" x2="756" y2="286"/><line x1="44" y1="316" x2="756" y2="316"/></g>
+  <g font-size="13" fill="#0b0b0b">
+    <text x="58" y="216">要调「查询退款状态」工具吗</text><text x="300" y="216" fill="#8a897f">是否</text><text x="366" y="216" font-weight="700">0.96</text><text x="476" y="216">不低于 0.90 就执行</text><text x="640" y="216">调工具</text>
+    <text x="58" y="246">意图是什么</text><text x="300" y="246" fill="#8a897f">选择</text><text x="366" y="246" font-weight="700">退款进度 0.81</text><text x="476" y="246">取概率最大的一项</text><text x="640" y="246">走退款流程</text>
+    <text x="58" y="276">情绪有多激烈（1 到 5 档）</text><text x="300" y="276" fill="#8a897f">打分</text><text x="366" y="276" font-weight="700">4.2</text><text x="476" y="276">不低于 4 分</text><text x="640" y="276">标记加急</text>
+    <text x="58" y="306">需要转人工吗</text><text x="300" y="306" fill="#8a897f">是否</text><text x="366" y="306" font-weight="700" fill="#a2502f">0.62</text><text x="476" y="306" fill="#a2502f">0.30 到 0.70 算拿不准</text><text x="640" y="306" fill="#a2502f">进人工复核队列</text>
+    <text x="58" y="336">消息里有越权或注入指令吗</text><text x="300" y="336" fill="#8a897f">是否</text><text x="366" y="336" font-weight="700">0.02</text><text x="476" y="336">不高于 0.05 就放行</text><text x="640" y="336">继续</text>
+  </g>
+  <line x1="400" y1="360" x2="400" y2="384" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 慢层 -->
+  <rect x="28" y="386" width="744" height="64" rx="10" fill="#fdf1ec" stroke="#e0a58c"/>
+  <text x="44" y="412" font-size="14.5" font-weight="700" fill="#0b0b0b">慢层：生成模型</text>
+  <text x="756" y="412" font-size="12.5" fill="#a2502f" text-anchor="end">几秒 · 按输出词计费</text>
+  <text x="44" y="436" font-size="13" fill="#0b0b0b">拿到工具返回的退款状态，写一段回复给客户。只有这一步需要"写"。</text>
+  <line x1="400" y1="450" x2="400" y2="474" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 出口校验 -->
+  <rect x="28" y="476" width="744" height="64" rx="10" fill="#edf5f0" stroke="#8fbf9f"/>
+  <text x="44" y="502" font-size="14.5" font-weight="700" fill="#0b0b0b">发出前再过一次快层</text>
+  <text x="756" y="502" font-size="12.5" fill="#2f7a4b" text-anchor="end">又一个 0.4 秒</text>
+  <text x="44" y="526" font-size="13" fill="#0b0b0b">回复里有没有承诺做不到的事？有没有泄露内部信息？和工具返回的事实一致吗？</text>
+
+  <text x="28" y="570" font-size="11.5" fill="#8a897f">图中数值为示意，不是实际调用结果。0.30 到 0.70 的复核带是官方文档的建议；其余阈值要用自家标注数据来定，不能照搬。</text>
+</svg>

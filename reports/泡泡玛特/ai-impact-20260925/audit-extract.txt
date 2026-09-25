@@ -1,0 +1,331 @@
+======================================================================
+报告数据抽检清单
+文件：reports/泡泡玛特/泡泡玛特-investment-team-AI利润与竞争格局-20260925.md
+总提取数据点：156  |  抽样比例：15%  |  抽检数量：24
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  2     14  三年后总利润多少？ · 本报告答案                         2029.00
+  7     30  风险与治理 · 评分/5                                 3.00
+  8     31  等权综合 · 评分/5                                  3.45
+  9     50  营业收入 · 2023A                                63.01
+ 23     52  归母净利润 · 2026H1A                             50.38
+ 27     53  经调整净利润，集团口径 · 2025H1A                       47.10
+ 24     53  经调整净利润，集团口径 · 2023A                         11.91
+ 29     54  毛利率 · 2023A                                 61.30
+ 36     55  经营现金净流入 · 2025A                            108.65
+ 41     82  Bandai Namco · 可核事实/证据边界                  2026.30
+ 51    120  不计新增AI的归母利润 · 2028                         129.60
+ 58    122  含新增AI的归母利润 · 2029                          146.93
+ 56    122  含新增AI的归母利润 · 2027                          119.37
+ 57    122  含新增AI的归母利润 · 2028                          132.45
+ 60    123  相对非AI基线增厚 · 2028                             2.20  %
+ 63    133  运营与供应链税前节省 · 2028                            3.36
+ 71    135  AI竞品与价格流量侵蚀 · 2028                          -0.72
+ 72    135  AI竞品与价格流量侵蚀 · 2029                          -1.34
+109    175  授权、内容及体验等其他净外部收入 · 利润贡献                     13.80
+108    175  授权、内容及体验等其他净外部收入 · 归母贡献率                    23.00  %
+155    180  独立需求校验                                     840.00  亿元
+115    200  TTM归母利润 · 定义                              2025.00
+130    265  2025收入，亿元 · 一手/主源                          371.20
+140    268  2026H1归母，亿元 · 独立交叉源                         50.38
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 2,
+    "label": "三年后总利润多少？ · 本报告答案",
+    "reported_value": 2029.0,
+    "unit": "",
+    "line_number": 14,
+    "raw_text": "| 三年后总利润多少？ | 2029 基准归母约 **147 亿元**，其中 AI 净增量约占非 AI 利润的 **3.6%**；经营悲观/乐观场景为约75/240亿元 | 低至中；取决于需求恢复与利润率 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 7,
+    "label": "风险与治理 · 评分/5",
+    "reported_value": 3.0,
+    "unit": "",
+    "line_number": 30,
+    "raw_text": "| 风险与治理 | 李录式永久损失检验 | 3.0 | 爆款、库存、海外扩张和资本配置需持续跟踪 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "等权综合 · 评分/5",
+    "reported_value": 3.45,
+    "unit": "",
+    "line_number": 31,
+    "raw_text": "| 等权综合 | 非机械买卖信号 | **3.45** | 值得跟踪，现价安全边际尚非压倒性 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "营业收入 · 2023A",
+    "reported_value": 63.01,
+    "unit": "",
+    "line_number": 50,
+    "raw_text": "| 营业收入 | 63.01 | 130.38 | 371.20 | 138.76 | 171.73 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "归母净利润 · 2026H1A",
+    "reported_value": 50.38,
+    "unit": "",
+    "line_number": 52,
+    "raw_text": "| 归母净利润 | 10.82 | 31.25 | 127.76 | 45.74 | 50.38 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 27,
+    "label": "经调整净利润，集团口径 · 2025H1A",
+    "reported_value": 47.1,
+    "unit": "",
+    "line_number": 53,
+    "raw_text": "| 经调整净利润，集团口径 | 11.91 | 34.03 | 130.84 | 47.10 | 51.56 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "经调整净利润，集团口径 · 2023A",
+    "reported_value": 11.91,
+    "unit": "",
+    "line_number": 53,
+    "raw_text": "| 经调整净利润，集团口径 | 11.91 | 34.03 | 130.84 | 47.10 | 51.56 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "毛利率 · 2023A",
+    "reported_value": 61.3,
+    "unit": "",
+    "line_number": 54,
+    "raw_text": "| 毛利率 | 61.3 | 66.8 | 72.1 | 70.3 | 69.7 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "经营现金净流入 · 2025A",
+    "reported_value": 108.65,
+    "unit": "",
+    "line_number": 55,
+    "raw_text": "| 经营现金净流入 | 19.91 | 49.54 | 108.65 | 59.77 | 36.37 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 41,
+    "label": "Bandai Namco · 可核事实/证据边界",
+    "reported_value": 2026.3,
+    "unit": "",
+    "line_number": 82,
+    "raw_text": "| Bandai Namco | FY2026.3玩具与爱好业务连续八年创新高；Gundam全集团销售超2500亿日元 [S13] | 模型、卡牌、动画、游戏构成长期粉丝关系 | 既有世界观和粉丝可降低AI互动获客成本 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 51,
+    "label": "不计新增AI的归母利润 · 2028",
+    "reported_value": 129.6,
+    "unit": "",
+    "line_number": 120,
+    "raw_text": "| 不计新增AI的归母利润 | 118.25 | 129.60 | 141.78 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 58,
+    "label": "含新增AI的归母利润 · 2029",
+    "reported_value": 146.93,
+    "unit": "",
+    "line_number": 122,
+    "raw_text": "| 含新增AI的归母利润 | **119.37** | **132.45** | **146.93** |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "含新增AI的归母利润 · 2027",
+    "reported_value": 119.37,
+    "unit": "",
+    "line_number": 122,
+    "raw_text": "| 含新增AI的归母利润 | **119.37** | **132.45** | **146.93** |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 57,
+    "label": "含新增AI的归母利润 · 2028",
+    "reported_value": 132.45,
+    "unit": "",
+    "line_number": 122,
+    "raw_text": "| 含新增AI的归母利润 | **119.37** | **132.45** | **146.93** |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "相对非AI基线增厚 · 2028",
+    "reported_value": 2.2,
+    "unit": "%",
+    "line_number": 123,
+    "raw_text": "| 相对非AI基线增厚 | 0.94% | 2.20% | 3.64% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 63,
+    "label": "运营与供应链税前节省 · 2028",
+    "reported_value": 3.36,
+    "unit": "",
+    "line_number": 133,
+    "raw_text": "| 运营与供应链税前节省 | +1.720 | +3.360 | +5.350 | 基准收入的0.40%/0.70%/1.00% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 71,
+    "label": "AI竞品与价格流量侵蚀 · 2028",
+    "reported_value": -0.72,
+    "unit": "",
+    "line_number": 135,
+    "raw_text": "| AI竞品与价格流量侵蚀 | −0.430 | −0.720 | −1.338 | 收入的0.10%/0.15%/0.25% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 72,
+    "label": "AI竞品与价格流量侵蚀 · 2029",
+    "reported_value": -1.338,
+    "unit": "",
+    "line_number": 135,
+    "raw_text": "| AI竞品与价格流量侵蚀 | −0.430 | −0.720 | −1.338 | 收入的0.10%/0.15%/0.25% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 109,
+    "label": "授权、内容及体验等其他净外部收入 · 利润贡献",
+    "reported_value": 13.8,
+    "unit": "",
+    "line_number": 175,
+    "raw_text": "| 授权、内容及体验等其他净外部收入 | 60 | 23% | 13.8 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 108,
+    "label": "授权、内容及体验等其他净外部收入 · 归母贡献率",
+    "reported_value": 23.0,
+    "unit": "%",
+    "line_number": 175,
+    "raw_text": "| 授权、内容及体验等其他净外部收入 | 60 | 23% | 13.8 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 155,
+    "label": "独立需求校验",
+    "reported_value": 840.0,
+    "unit": "亿元",
+    "line_number": 180,
+    "raw_text": "独立需求校验：840亿元商品零售收入可由1.4亿**年度付费消费者**×每年600元实现，也可由1.05亿×800元实现。这只是数量级检查；不是公司已有活跃用户，也不是用累计会员数证明目标可达。基准需要商品池中的中国约8000万年度消费者×",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 115,
+    "label": "TTM归母利润 · 定义",
+    "reported_value": 2025.0,
+    "unit": "",
+    "line_number": 200,
+    "raw_text": "| TTM归母利润 | 132.40亿元 | 2025全年+2026H1−2025H1 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 130,
+    "label": "2025收入，亿元 · 一手/主源",
+    "reported_value": 371.20052,
+    "unit": "",
+    "line_number": 265,
+    "raw_text": "| 2025收入，亿元 | HKEX 371.20052 | StockAnalysis 371.20 | 差异远低于1% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 140,
+    "label": "2026H1归母，亿元 · 独立交叉源",
+    "reported_value": 50.38,
+    "unit": "",
+    "line_number": 268,
+    "raw_text": "| 2026H1归母，亿元 | HKEX 50.38384 | 经济通50.38 | 差异远低于1% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

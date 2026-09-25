@@ -1,0 +1,98 @@
+[
+  {
+    "id": 2,
+    "label": "Hermès 2024年 · 调价或价格贡献",
+    "reported_value": 8.0,
+    "unit": "%",
+    "line_number": 18,
+    "raw_text": "| Hermès 2024年 | 约8%—9% | 同次业绩会管理层讨论的调价安排 [S1] |",
+    "fetched_value": 8,
+    "fetched_source": "S1 管理层确认8%—9%；工具只取区间下限，人工同时确认上限9%，不将其称精确8%",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "Birkin 25／美国（美元） · 十年复合涨幅，本文计算",
+    "reported_value": 3.69,
+    "unit": "%",
+    "line_number": 26,
+    "raw_text": "| Birkin 25／美国（美元） | 9,400 | 13,500 | 3.69% |",
+    "fetched_value": 3.6861124273116994,
+    "fetched_source": "model.py Decimal: (13500/9400)^(1/10)-1，仅算术核验；输入来自S3",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "Birkin 25／欧洲（欧元） · 2016年价格",
+    "reported_value": 5900.0,
+    "unit": "",
+    "line_number": 27,
+    "raw_text": "| Birkin 25／欧洲（欧元） | 5,900 | 9,600 | 4.99% |",
+    "fetched_value": 5900,
+    "fetched_source": "S3 Sothebys Birkin历史表；第三方价格资料，非官方完整价目表",
+    "fetched_value2": 5900,
+    "fetched_source2": "PurseBlog 2016当时价格表 https://www.purseblog.com/hermes/hermes-birkin-prices-2016/"
+  },
+  {
+    "id": 16,
+    "label": "Birkin 30／欧洲（欧元） · 2026年价格",
+    "reported_value": 10600.0,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| Birkin 30／欧洲（欧元） | 7,000 | 10,600 | 4.24% |",
+    "fetched_value": 10600,
+    "fetched_source": "S3 Sothebys Birkin历史表；第三方价格资料，非官方完整价目表",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "Birkin 30／欧洲（欧元） · 2016年价格",
+    "reported_value": 7000.0,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| Birkin 30／欧洲（欧元） | 7,000 | 10,600 | 4.24% |",
+    "fetched_value": 7000,
+    "fetched_source": "S3 Sothebys Birkin历史表；第三方价格资料，非官方完整价目表",
+    "fetched_value2": 7000,
+    "fetched_source2": "PurseBlog 2016当时价格表 https://www.purseblog.com/hermes/hermes-birkin-prices-2016/"
+  },
+  {
+    "id": 18,
+    "label": "2024年实际基酒产量，吨 · 茅台酒",
+    "reported_value": 56271.99,
+    "unit": "",
+    "line_number": 43,
+    "raw_text": "| 2024年实际基酒产量，吨 | 56,271.99 | 48,112.51 | 年度产出，不是成品销量 |",
+    "fetched_value": 56271.99,
+    "fetched_source": "S6 2024官方年报p14",
+    "fetched_value2": 56271.99,
+    "fetched_source2": "新浪2024年报镜像 https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=10845840 （同一原始披露，不算独立经济来源）"
+  },
+  {
+    "id": 41,
+    "label": "茅台酒销售6.0万吨 · 2036归母净利润，亿元",
+    "reported_value": 1669.64,
+    "unit": "",
+    "line_number": 101,
+    "raw_text": "| 茅台酒销售6.0万吨 | 3,407.42 | 1,669.64 |",
+    "fetched_value": 1669.6361632504115,
+    "fetched_source": "Decimal公式复算，预测结果算术验证，不是外部未来事实",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 48,
+    "label": "茅台酒销售7.2万吨 · 2036营业收入，亿元",
+    "reported_value": 4017.28,
+    "unit": "",
+    "line_number": 105,
+    "raw_text": "| 茅台酒销售7.2万吨 | 4,017.28 | 1,968.47 |",
+    "fetched_value": 4017.2788895928443,
+    "fetched_source": "Decimal公式复算，预测结果算术验证，不是外部未来事实",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

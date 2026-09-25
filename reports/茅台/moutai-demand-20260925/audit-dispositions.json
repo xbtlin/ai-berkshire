@@ -1,0 +1,42 @@
+[
+  {
+    "id": 87,
+    "label": "口径说明",
+    "reported_value": 2025.0,
+    "unit": "",
+    "raw_text": "口径说明：2025 年 **1720.54 亿元**、2026H1 **922.78 亿元**是营业总收入，包含金融业务利息收入，不是上表的营业收入。模型统一使用营业收入，并把金融收益及少数股东影响综合包含在归母净利率中，不再重复加利息收益",
+    "line_number": 34,
+    "review_type": "parser_false_positive",
+    "disposition": "2025 is a year in prose, not financial metric. Excluded; no replacement fabricated."
+  },
+  {
+    "id": 29,
+    "label": "乐观 · 2036 行业需求指数",
+    "reported_value": 90.0,
+    "unit": "",
+    "raw_text": "| 乐观 | 90—100 | 成年迁移较强，小聚和私人消费承接大部分损失 |",
+    "line_number": 151,
+    "review_type": "analyst_assumption",
+    "disposition": "Retained with explicit hypothesis label; not an empirical claim, no fabricated external fetched value."
+  },
+  {
+    "id": 32,
+    "label": "茅台酒销量，吨 · 2028E",
+    "reported_value": 48500.0,
+    "unit": "",
+    "raw_text": "| 茅台酒销量，吨 | 48000 | 48000 | 48500 | 49000 |",
+    "line_number": 177,
+    "review_type": "analyst_assumption",
+    "disposition": "Retained with explicit hypothesis label; not an empirical claim, no fabricated external fetched value."
+  },
+  {
+    "id": 36,
+    "label": "茅台酒实现吨价，万元 · 2028E",
+    "reported_value": 324.0,
+    "unit": "",
+    "raw_text": "| 茅台酒实现吨价，万元 | 312 | 318 | 324 | 330 |",
+    "line_number": 178,
+    "review_type": "analyst_assumption",
+    "disposition": "Retained with explicit hypothesis label; not an empirical claim, no fabricated external fetched value."
+  }
+]

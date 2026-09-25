@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<rect x="0.5" y="0.5" width="879" height="559" rx="14" fill="#fcfcfb" stroke="#e5e4e0"/>
+<text x="28" y="40" font-size="20" font-weight="600" fill="#0b0b0b">四条支线，2026 年汇到一处</text>
+<text x="28" y="64" font-size="13" fill="#52514e">按 arXiv 首次提交月份排列；蓝色为精读的四篇，灰色为同期相关工作。只列每条线上的节点性工作</text>
+<line x1="150.0" y1="92" x2="150.0" y2="510" stroke="#e5e4e0"/>
+<text x="154.0" y="528" font-size="12" fill="#898781">2023</text>
+<line x1="327.6" y1="92" x2="327.6" y2="510" stroke="#e5e4e0"/>
+<text x="331.6" y="528" font-size="12" fill="#898781">2024</text>
+<line x1="505.20000000000005" y1="92" x2="505.20000000000005" y2="510" stroke="#e5e4e0"/>
+<text x="509.20000000000005" y="528" font-size="12" fill="#898781">2025</text>
+<line x1="682.8000000000001" y1="92" x2="682.8000000000001" y2="510" stroke="#e5e4e0"/>
+<text x="686.8000000000001" y="528" font-size="12" fill="#898781">2026</text>
+<text x="28" y="145" font-size="14" font-weight="600" fill="#0b0b0b">文本优化器</text>
+<line x1="150.0" y1="140" x2="830.8000000000001" y2="140" stroke="#898781" stroke-width="1"/>
+<circle cx="283.20000000000005" cy="140" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="283.20000000000005" y="126" font-size="12" fill="#52514e" text-anchor="middle">OPRO、DSPy</text>
+<circle cx="401.6" cy="140" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="401.6" y="164" font-size="12" fill="#0b0b0b" font-weight="600" text-anchor="middle">TextGrad、Trace</text>
+<circle cx="594.0" cy="140" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="594.0" y="126" font-size="12" fill="#0b0b0b" font-weight="600" text-anchor="middle">GEPA</text>
+<circle cx="668.0" cy="140" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="668.0" y="164" font-size="12" fill="#52514e" text-anchor="middle">梯度类比受质疑</text>
+<circle cx="742.0" cy="140" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="742.0" y="126" font-size="12" fill="#52514e" text-anchor="middle">optimize_anything</text>
+<text x="28" y="249" font-size="14" font-weight="600" fill="#0b0b0b">技能与记忆</text>
+<line x1="150.0" y1="244" x2="830.8000000000001" y2="244" stroke="#898781" stroke-width="1"/>
+<circle cx="209.2" cy="244" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="209.2" y="230" font-size="12" fill="#52514e" text-anchor="middle">Voyager</text>
+<circle cx="446.0" cy="244" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="446.0" y="268" font-size="12" fill="#52514e" text-anchor="middle">AWM</text>
+<circle cx="549.6" cy="244" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="549.6" y="230" font-size="12" fill="#52514e" text-anchor="middle">Dynamic Cheatsheet</text>
+<circle cx="638.4000000000001" cy="244" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="638.4000000000001" y="268" font-size="12" fill="#52514e" text-anchor="middle">Agent Skills 规范、ACE</text>
+<circle cx="697.6" cy="244" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="697.6" y="230" font-size="12" fill="#52514e" text-anchor="middle">SkillsBench</text>
+<circle cx="742.0" cy="244" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="742.0" y="268" font-size="12" fill="#0b0b0b" font-weight="600" text-anchor="middle">SkillOpt</text>
+<text x="28" y="353" font-size="14" font-weight="600" fill="#0b0b0b">运行框架</text>
+<line x1="150.0" y1="348" x2="830.8000000000001" y2="348" stroke="#898781" stroke-width="1"/>
+<circle cx="431.2" cy="348" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="431.2" y="334" font-size="12" fill="#52514e" text-anchor="middle">ADAS</text>
+<circle cx="460.8" cy="348" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="460.8" y="372" font-size="12" fill="#52514e" text-anchor="middle">AFlow</text>
+<circle cx="564.4000000000001" cy="348" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="564.4000000000001" y="334" font-size="12" fill="#52514e" text-anchor="middle">Darwin Gödel Machine</text>
+<circle cx="712.4" cy="348" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="712.4" y="372" font-size="12" fill="#52514e" text-anchor="middle">Meta-Harness</text>
+<circle cx="771.6" cy="348" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="771.6" y="334" font-size="12" fill="#52514e" text-anchor="middle">同预算评测泼冷水</text>
+<text x="28" y="457" font-size="14" font-weight="600" fill="#0b0b0b">模型侧训练</text>
+<line x1="150.0" y1="452" x2="830.8000000000001" y2="452" stroke="#898781" stroke-width="1"/>
+<circle cx="224.0" cy="452" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="224.0" y="438" font-size="12" fill="#52514e" text-anchor="middle">GKD 在策略蒸馏</text>
+<circle cx="564.4000000000001" cy="452" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="564.4000000000001" y="476" font-size="12" fill="#52514e" text-anchor="middle">Qwen3 在策略蒸馏</text>
+<circle cx="623.6" cy="452" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="623.6" y="438" font-size="12" fill="#52514e" text-anchor="middle">SCoRe</text>
+<circle cx="668.0" cy="452" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="668.0" y="476" font-size="12" fill="#52514e" text-anchor="middle">OEC</text>
+<circle cx="779.0" cy="452" r="4.5" fill="#898781" stroke="#fcfcfb" stroke-width="2"/>
+<text x="779.0" y="476" font-size="12" fill="#52514e" text-anchor="middle">Co-Harness、WHALE</text>
+<circle cx="801.2" cy="452" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="809.2" y="438" font-size="12" fill="#0b0b0b" font-weight="600" text-anchor="end">框架与模型协同进化</text>
+<text x="28" y="548" font-size="12" fill="#898781">走向：被优化的对象越来越大（一句提示词 → 一份技能 → 整套框架 → 框架加权重），每一步更新的约束越来越紧。</text>
+</svg>

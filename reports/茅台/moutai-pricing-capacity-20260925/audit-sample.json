@@ -1,0 +1,110 @@
+[
+  {
+    "id": 2,
+    "label": "Hermès 2024年 · 调价或价格贡献",
+    "reported_value": 8.0,
+    "unit": "%",
+    "line_number": 18,
+    "raw_text": "| Hermès 2024年 | 约8%—9% | 同次业绩会管理层讨论的调价安排 [S1] |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "Birkin 25／美国（美元） · 十年复合涨幅，本文计算",
+    "reported_value": 3.69,
+    "unit": "%",
+    "line_number": 26,
+    "raw_text": "| Birkin 25／美国（美元） | 9,400 | 13,500 | 3.69% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "Birkin 25／欧洲（欧元） · 2016年价格",
+    "reported_value": 5900.0,
+    "unit": "",
+    "line_number": 27,
+    "raw_text": "| Birkin 25／欧洲（欧元） | 5,900 | 9,600 | 4.99% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 16,
+    "label": "Birkin 30／欧洲（欧元） · 2026年价格",
+    "reported_value": 10600.0,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| Birkin 30／欧洲（欧元） | 7,000 | 10,600 | 4.24% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "Birkin 30／欧洲（欧元） · 2016年价格",
+    "reported_value": 7000.0,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| Birkin 30／欧洲（欧元） | 7,000 | 10,600 | 4.24% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "2024年实际基酒产量，吨 · 茅台酒",
+    "reported_value": 56271.99,
+    "unit": "",
+    "line_number": 43,
+    "raw_text": "| 2024年实际基酒产量，吨 | 56,271.99 | 48,112.51 | 年度产出，不是成品销量 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "主情景系列酒2036吨价",
+    "reported_value": 65.0,
+    "unit": "",
+    "line_number": 82,
+    "raw_text": "- 主情景系列酒2036吨价：65万元／吨，沿用原设定；销量从原4万吨改为5.5万吨。",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 41,
+    "label": "茅台酒销售6.0万吨 · 2036归母净利润，亿元",
+    "reported_value": 1669.64,
+    "unit": "",
+    "line_number": 101,
+    "raw_text": "| 茅台酒销售6.0万吨 | 3,407.42 | 1,669.64 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 48,
+    "label": "茅台酒销售7.2万吨 · 2036营业收入，亿元",
+    "reported_value": 4017.28,
+    "unit": "",
+    "line_number": 105,
+    "raw_text": "| 茅台酒销售7.2万吨 | 4,017.28 | 1,968.47 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

@@ -1,0 +1,409 @@
+======================================================================
+报告数据抽检清单
+文件：reports/快手/快手-investment-team-AI利润与竞争格局-20260924.md
+总提取数据点：230  |  抽样比例：15%  |  抽检数量：30
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  7     15  基准归母净利润 · 2029年                            222.87  
+  8     15  基准归母净利润 · 2036年                            405.60  
+  9     16  乐观归母净利润 · 2027年                            175.39  
+ 23     45  收入 · 解读                                      2.36  %
+ 24     46  IFRS归母利润 · 2025H1实际                         89.00  
+ 27     47  经调整净利润 · 2025H1实际                          101.98  
+ 29     48  毛利率 · 2025H1实际                              55.10  %
+ 36     50  经营活动现金净流入 · 解读                              23.23  %
+ 51     65  经营现金流 · 2024                               297.87  
+ 56     82  宽口径：1213减上述三类债务 · 金额                       570.18  
+ 58    106  抖音、字节 · 截止日已核实情况                             2.50  
+ 60    108  Google · 截止日已核实情况                            3.10  
+ 63    111  开源及云部署 · 截止日已核实情况                            2.20  
+ 71    129  核心业务经营利润率，不含可灵 · 2026E模型输入                  12.50  %
+109    177  悲观：可灵外部收入 · 2029E                           75.00  
+130    184  基准：经营利润 · 2029E                             20.00  
+140    188  乐观：固定费用 · 2027E                             65.00  
+144    189  乐观：经营利润 · 2028E                             13.60  
+152    205  主站AI税后贡献 · 金额（税前/税后按行标注）                    17.05  
+155    213  悲观 · 2027                                  -21.29  
+164    225  广告收入 · 悲观                                  900.00  
+167    226  直播收入 · 悲观                                  220.00  
+174    228  核心收入合计 · 基准                               1950.00  
+180    230  核心AI效率/结构经营净增益 · 基准                         45.00  
+184    231  金融及其他经常性净收益 · 乐观                            25.00  
+190    234  可灵外部收入 · 乐观                               1200.00  
+189    234  可灵外部收入 · 基准                                500.00  
+218    300  2029PE假设 · 悲观                                8.00  
+227    308  激进、可承受业绩反复 · 研究建议与条件区间（港元）                  28.00  
+228    309  稳健 · 研究建议与条件区间（港元）                          23.00  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 7,
+    "label": "基准归母净利润 · 2029年",
+    "reported_value": 222.87,
+    "unit": "",
+    "line_number": 15,
+    "raw_text": "| 基准归母净利润 | 148.97 | 183.39 | 222.87 | 405.60 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "基准归母净利润 · 2036年",
+    "reported_value": 405.6,
+    "unit": "",
+    "line_number": 15,
+    "raw_text": "| 基准归母净利润 | 148.97 | 183.39 | 222.87 | 405.60 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "乐观归母净利润 · 2027年",
+    "reported_value": 175.39,
+    "unit": "",
+    "line_number": 16,
+    "raw_text": "| 乐观归母净利润 | 175.39 | 246.66 | 342.91 | 759.19 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "收入 · 解读",
+    "reported_value": 2.36,
+    "unit": "%",
+    "line_number": 45,
+    "raw_text": "| 收入 | 676.54 | 692.51 | 增长2.36%，主平台成熟期特征明显 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "IFRS归母利润 · 2025H1实际",
+    "reported_value": 89.0,
+    "unit": "",
+    "line_number": 46,
+    "raw_text": "| IFRS归母利润 | 89.00 | 60.49 | 下降32.03%，不是AI盈利已兑现 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 27,
+    "label": "经调整净利润 · 2025H1实际",
+    "reported_value": 101.98,
+    "unit": "",
+    "line_number": 47,
+    "raw_text": "| 经调整净利润 | 101.98 | 72.87 | 口径不同，不替代归母利润 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "毛利率 · 2025H1实际",
+    "reported_value": 55.1,
+    "unit": "%",
+    "line_number": 48,
+    "raw_text": "| 毛利率 | 55.1% | 51.4% | 下降3.7个百分点 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "经营活动现金净流入 · 解读",
+    "reported_value": 23.23,
+    "unit": "%",
+    "line_number": 50,
+    "raw_text": "| 经营活动现金净流入 | 117.81 | 90.44 | 下降23.23% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 51,
+    "label": "经营现金流 · 2024",
+    "reported_value": 297.87,
+    "unit": "",
+    "line_number": 65,
+    "raw_text": "| 经营现金流 | 207.81 | 297.87 | 267.16 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "宽口径：1213减上述三类债务 · 金额",
+    "reported_value": 570.18,
+    "unit": "",
+    "line_number": 82,
+    "raw_text": "| 宽口径：1213减上述三类债务 | 570.18 | 仍含非即时可动用资产，不能视为可分红现金 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 58,
+    "label": "抖音、字节 · 截止日已核实情况",
+    "reported_value": 2.5,
+    "unit": "",
+    "line_number": 106,
+    "raw_text": "| 抖音、字节 | Seedance2.5于2026-07-31发布并进入即梦、豆包Pro，具备更长叙事与编辑能力。[S8] | 创作工具、内容分发、广告与交易能力可互相支持；快手需守住差异化社区、商家真实ROI | 高 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "Google · 截止日已核实情况",
+    "reported_value": 3.1,
+    "unit": "",
+    "line_number": 108,
+    "raw_text": "| Google | Veo3.1 Lite提供低价层级；Omni进入Gemini、Flow等产品。[S10,S11] | 云、订阅、创作与分发组合可压低独立工具付费意愿 | 高 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 63,
+    "label": "开源及云部署 · 截止日已核实情况",
+    "reported_value": 2.2,
+    "unit": "",
+    "line_number": 111,
+    "raw_text": "| 开源及云部署 | Wan2.2官方仓库提供开放权重及许可。[S14] | 大客户有自建替代，限制基础功能定价；不意味着质量等同最新可灵 | 中 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 71,
+    "label": "核心业务经营利润率，不含可灵 · 2026E模型输入",
+    "reported_value": 12.5,
+    "unit": "%",
+    "line_number": 129,
+    "raw_text": "| 核心业务经营利润率，不含可灵 | 12.5% | 不存在该正式分部披露，只作模型分拆 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 109,
+    "label": "悲观：可灵外部收入 · 2029E",
+    "reported_value": 75.0,
+    "unit": "",
+    "line_number": 177,
+    "raw_text": "| 悲观：可灵外部收入 | 45 | 60 | 75 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 130,
+    "label": "基准：经营利润 · 2029E",
+    "reported_value": 20.0,
+    "unit": "",
+    "line_number": 184,
+    "raw_text": "| 基准：经营利润 | -25.50 | -8.25 | 20.00 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 140,
+    "label": "乐观：固定费用 · 2027E",
+    "reported_value": 65.0,
+    "unit": "",
+    "line_number": 188,
+    "raw_text": "| 乐观：固定费用 | 65 | 85 | 115 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 144,
+    "label": "乐观：经营利润 · 2028E",
+    "reported_value": 13.6,
+    "unit": "",
+    "line_number": 189,
+    "raw_text": "| 乐观：经营利润 | -22.50 | 13.60 | 80.00 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 152,
+    "label": "主站AI税后贡献 · 金额（税前/税后按行标注）",
+    "reported_value": 17.05,
+    "unit": "",
+    "line_number": 205,
+    "raw_text": "| 主站AI税后贡献 | 17.05 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 155,
+    "label": "悲观 · 2027",
+    "reported_value": -21.29,
+    "unit": "",
+    "line_number": 213,
+    "raw_text": "| 悲观 | -21.29 | -22.06 | -21.82 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 164,
+    "label": "广告收入 · 悲观",
+    "reported_value": 900.0,
+    "unit": "",
+    "line_number": 225,
+    "raw_text": "| 广告收入 | 900 | 1250 | 1700 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 167,
+    "label": "直播收入 · 悲观",
+    "reported_value": 220.0,
+    "unit": "",
+    "line_number": 226,
+    "raw_text": "| 直播收入 | 220 | 300 | 350 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 174,
+    "label": "核心收入合计 · 基准",
+    "reported_value": 1950.0,
+    "unit": "",
+    "line_number": 228,
+    "raw_text": "| 核心收入合计 | 1500 | 1950 | 2600 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 180,
+    "label": "核心AI效率/结构经营净增益 · 基准",
+    "reported_value": 45.0,
+    "unit": "",
+    "line_number": 230,
+    "raw_text": "| 核心AI效率/结构经营净增益 | -30 | 45 | 80 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 184,
+    "label": "金融及其他经常性净收益 · 乐观",
+    "reported_value": 25.0,
+    "unit": "",
+    "line_number": 231,
+    "raw_text": "| 金融及其他经常性净收益 | 10 | 20 | 25 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 190,
+    "label": "可灵外部收入 · 乐观",
+    "reported_value": 1200.0,
+    "unit": "",
+    "line_number": 234,
+    "raw_text": "| 可灵外部收入 | 150 | 500 | 1200 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 189,
+    "label": "可灵外部收入 · 基准",
+    "reported_value": 500.0,
+    "unit": "",
+    "line_number": 234,
+    "raw_text": "| 可灵外部收入 | 150 | 500 | 1200 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 218,
+    "label": "2029PE假设 · 悲观",
+    "reported_value": 8.0,
+    "unit": "",
+    "line_number": 300,
+    "raw_text": "| 2029PE假设 | 8 | 12 | 16 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 227,
+    "label": "激进、可承受业绩反复 · 研究建议与条件区间（港元）",
+    "reported_value": 28.0,
+    "unit": "",
+    "line_number": 308,
+    "raw_text": "| 激进、可承受业绩反复 | 约28—32可考虑分批研究性参与；条件是可灵收入和成本路径没有继续恶化 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 228,
+    "label": "稳健 · 研究建议与条件区间（港元）",
+    "reported_value": 23.0,
+    "unit": "",
+    "line_number": 309,
+    "raw_text": "| 稳健 | 约23—28且核心盈利企稳、资本开支后现金流改善时再评估；对应基准约四至五成折扣，不代表下跌底部 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

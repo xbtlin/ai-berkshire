@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<rect x="0.5" y="0.5" width="879" height="469" rx="14" fill="#fcfcfb" stroke="#e5e4e0"/>
+<text x="28" y="40" font-size="20" font-weight="600" fill="#0b0b0b">同一批任务，七种组合的平均成功率</text>
+<text x="28" y="64" font-size="13" fill="#52514e">测试集成功率（%），三次运行平均。弱模型 = Qwen3-Coder-30B-A3B，专家 = Gemini-3.1-Pro。数据：协同进化论文表 1</text>
+<line x1="330.0" y1="94" x2="330.0" y2="394" stroke="#e5e4e0" stroke-width="1"/>
+<text x="330.0" y="412" font-size="12" fill="#898781" text-anchor="middle">0</text>
+<line x1="447.5" y1="94" x2="447.5" y2="394" stroke="#e5e4e0" stroke-width="1"/>
+<text x="447.5" y="412" font-size="12" fill="#898781" text-anchor="middle">25</text>
+<line x1="565.0" y1="94" x2="565.0" y2="394" stroke="#e5e4e0" stroke-width="1"/>
+<text x="565.0" y="412" font-size="12" fill="#898781" text-anchor="middle">50</text>
+<line x1="682.5" y1="94" x2="682.5" y2="394" stroke="#e5e4e0" stroke-width="1"/>
+<text x="682.5" y="412" font-size="12" fill="#898781" text-anchor="middle">75</text>
+<line x1="800.0" y1="94" x2="800.0" y2="394" stroke="#e5e4e0" stroke-width="1"/>
+<text x="800.0" y="412" font-size="12" fill="#898781" text-anchor="middle">100</text>
+<text x="318" y="121" font-size="13" fill="#52514e" text-anchor="end">弱模型 + 原始框架</text>
+<path d="M330,106 H463.24 Q467.24,106 467.24,110 V124 Q467.24,128 463.24,128 H330 Z" fill="#898781"/>
+<text x="475.24" y="122" font-size="13" font-weight="600" fill="#0b0b0b">29.2</text>
+<text x="318" y="163" font-size="13" fill="#52514e" text-anchor="end">弱模型 + 原始框架 + 整条模仿专家</text>
+<path d="M330,148 H492.85 Q496.85,148 496.85,152 V166 Q496.85,170 492.85,170 H330 Z" fill="#898781"/>
+<text x="504.85" y="164" font-size="13" font-weight="600" fill="#0b0b0b">35.5</text>
+<text x="318" y="205" font-size="13" fill="#52514e" text-anchor="end">弱模型 + 进化后框架</text>
+<path d="M330,190 H692.6 Q696.6,190 696.6,194 V208 Q696.6,212 692.6,212 H330 Z" fill="#2a78d6"/>
+<text x="704.6" y="206" font-size="13" font-weight="600" fill="#0b0b0b">78.0</text>
+<text x="318" y="247" font-size="13" fill="#52514e" text-anchor="end">弱模型 + 进化后框架 + 整条模仿专家</text>
+<path d="M330,232 H622.5699999999999 Q626.5699999999999,232 626.5699999999999,236 V250 Q626.5699999999999,254 622.5699999999999,254 H330 Z" fill="#eb6834"/>
+<text x="634.5699999999999" y="248" font-size="13" font-weight="600" fill="#0b0b0b">63.1</text>
+<text x="318" y="289" font-size="13" fill="#52514e" text-anchor="end">弱模型 + 进化后框架 + 只改出错那一轮</text>
+<path d="M330,274 H700.5899999999999 Q704.5899999999999,274 704.5899999999999,278 V292 Q704.5899999999999,296 700.5899999999999,296 H330 Z" fill="#2a78d6"/>
+<text x="712.5899999999999" y="290" font-size="13" font-weight="600" fill="#0b0b0b">79.7</text>
+<text x="318" y="331" font-size="13" fill="#52514e" text-anchor="end">专家 + 原始框架</text>
+<path d="M330,316 H722.6800000000001 Q726.6800000000001,316 726.6800000000001,320 V334 Q726.6800000000001,338 722.6800000000001,338 H330 Z" fill="#898781"/>
+<text x="734.6800000000001" y="332" font-size="13" font-weight="600" fill="#0b0b0b">84.4</text>
+<text x="318" y="373" font-size="13" fill="#52514e" text-anchor="end">专家 + 进化后框架</text>
+<path d="M330,358 H765.9200000000001 Q769.9200000000001,358 769.9200000000001,362 V376 Q769.9200000000001,380 765.9200000000001,380 H330 Z" fill="#898781"/>
+<text x="777.9200000000001" y="374" font-size="13" font-weight="600" fill="#0b0b0b">93.6</text>
+<text x="28" y="456" font-size="12" fill="#898781">橙色条是论文的核心反常：老师更强、方法更标准，结果比不训练低 14.9 分。蓝色为进化后框架下的可比两行。</text>
+</svg>

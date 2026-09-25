@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<defs><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="ao" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#eb6834" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#2a78d6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="0.5" y="0.5" width="879" height="559" rx="14" fill="#fcfcfb" stroke="#e5e4e0"/>
+<text x="28" y="40" font-size="20" font-weight="600" fill="#0b0b0b">SkillOpt：给文本更新装上学习率、验证集和动量</text>
+<text x="28" y="64" font-size="13" fill="#52514e">目标模型全程冻结，被训练的只有一份 300–2,000 词元的技能文档；优化器模型只在训练时出现</text>
+<rect x="28" y="96" width="186" height="104" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="121.0" y="118" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">① 执行</text>
+<text x="121.0" y="138" font-size="12" fill="#52514e" text-anchor="middle">目标模型带着当前技能</text>
+<text x="121.0" y="155" font-size="12" fill="#52514e" text-anchor="middle">跑一批训练任务（默认 40 条）</text>
+<text x="121.0" y="172" font-size="12" fill="#52514e" text-anchor="middle">记录轨迹与得分</text>
+<rect x="240" y="96" width="186" height="104" rx="10" fill="#fdebe3" stroke="#eb6834"/>
+<text x="333.0" y="118" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">② 小批量反思</text>
+<text x="333.0" y="138" font-size="12" fill="#52514e" text-anchor="middle">失败、成功轨迹分开</text>
+<text x="333.0" y="155" font-size="12" fill="#52514e" text-anchor="middle">每 8 条一组交给优化器模型</text>
+<text x="333.0" y="172" font-size="12" fill="#52514e" text-anchor="middle">各自提出增、删、改</text>
+<rect x="452" y="96" width="186" height="104" rx="10" fill="#fdebe3" stroke="#eb6834"/>
+<text x="545.0" y="118" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">③ 合并、排序、截断</text>
+<text x="545.0" y="138" font-size="12" fill="#52514e" text-anchor="middle">去重、解决冲突、失败优先</text>
+<text x="545.0" y="155" font-size="12" fill="#52514e" text-anchor="middle">只保留前 L 条编辑</text>
+<text x="545.0" y="172" font-size="12" fill="#52514e" text-anchor="middle">L 默认 4，余弦衰减到 2</text>
+<rect x="664" y="96" width="186" height="104" rx="10" fill="#e6f0fc" stroke="#2a78d6"/>
+<text x="757.0" y="118" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">④ 候选技能</text>
+<text x="757.0" y="138" font-size="12" fill="#52514e" text-anchor="middle">把 L 条编辑打到文档上</text>
+<text x="757.0" y="155" font-size="12" fill="#52514e" text-anchor="middle">慢更新保护区不可触碰</text>
+<line x1="214" y1="148.0" x2="236" y2="148.0" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<line x1="426" y1="148.0" x2="448" y2="148.0" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<line x1="638" y1="148.0" x2="660" y2="148.0" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="624" y="256" width="226" height="84" rx="10" fill="#e2f6ee" stroke="#1baf7a"/>
+<text x="737.0" y="278" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">⑤ 验证门</text>
+<text x="737.0" y="298" font-size="12" fill="#52514e" text-anchor="middle">留出选择集得分「严格大于」当前分数？</text>
+<text x="737.0" y="315" font-size="12" fill="#52514e" text-anchor="middle">打平也拒绝</text>
+<line x1="757.0" y1="200" x2="757.0" y2="252" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="300" y="256" width="250" height="84" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="425.0" y="278" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">拒绝缓冲</text>
+<text x="425.0" y="298" font-size="12" fill="#52514e" text-anchor="middle">记下被拒的编辑与造成的掉分</text>
+<text x="425.0" y="315" font-size="12" fill="#52514e" text-anchor="middle">本轮后续反思都能看到，避免重犯</text>
+<line x1="624" y1="298" x2="554" y2="298" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<text x="584" y="290" font-size="12" fill="#52514e" text-anchor="middle">否</text>
+<line x1="425" y1="256" x2="353.0" y2="204" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="28" y="256" width="200" height="84" rx="10" fill="#e6f0fc" stroke="#2a78d6"/>
+<text x="128.0" y="278" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">接受</text>
+<text x="128.0" y="298" font-size="12" fill="#52514e" text-anchor="middle">成为当前技能；若为历史最优</text>
+<text x="128.0" y="315" font-size="12" fill="#52514e" text-anchor="middle">导出 best_skill.md</text>
+<path d="M757.0,340 V368 H128 V344" fill="none" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<text x="745.0" y="362" font-size="12" fill="#52514e" text-anchor="end">是</text>
+<line x1="128" y1="256" x2="128" y2="204" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<line x1="28" y1="396" x2="852" y2="396" stroke="#e5e4e0"/>
+<text x="28" y="422" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600">每轮结束：慢更新与元技能</text>
+<rect x="28" y="436" width="400" height="92" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="228.0" y="458" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">慢更新（相当于动量）</text>
+<text x="228.0" y="478" font-size="12" fill="#52514e" text-anchor="middle">同一批 20 条任务分别用上一轮、本轮的技能各跑一遍</text>
+<text x="228.0" y="495" font-size="12" fill="#52514e" text-anchor="middle">按改进／退步／持续失败／稳定成功归类</text>
+<text x="228.0" y="512" font-size="12" fill="#52514e" text-anchor="middle">写入技能文档的受保护区，同样要过验证门</text>
+<rect x="452" y="436" width="400" height="92" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="652.0" y="458" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">元技能（只给优化器看）</text>
+<text x="652.0" y="478" font-size="12" fill="#52514e" text-anchor="middle">总结哪类编辑有用、哪类被拒、规则该写到多抽象</text>
+<text x="652.0" y="495" font-size="12" fill="#52514e" text-anchor="middle">拼进以后每次反思、合并、排序的提示词</text>
+<text x="652.0" y="512" font-size="12" fill="#52514e" text-anchor="middle">不随技能发布，部署时零额外调用</text>
+</svg>

@@ -1,0 +1,246 @@
+$ financial_rigor.py cross-validate --field 2025收入 --values {"Tencent annual": 7517.66, "Stockanalysis": 7517.66} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 2025收入 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 7,517.66 specified in label / RMB100m
+
+  ✅ Tencent annual      : 7,517.66 specified in label / RMB100m  (偏差 0.00%)
+  ✅ Stockanalysis       : 7,517.66 specified in label / RMB100m  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 7,517.66 specified in label / RMB100m
+
+$ financial_rigor.py cross-validate --field 2025 IFRS归母 --values {"Tencent annual": 2248.42, "Stockanalysis": 2248.42} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 2025 IFRS归母 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 2,248.42 specified in label / RMB100m
+
+  ✅ Tencent annual      : 2,248.42 specified in label / RMB100m  (偏差 0.00%)
+  ✅ Stockanalysis       : 2,248.42 specified in label / RMB100m  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 2,248.42 specified in label / RMB100m
+
+$ financial_rigor.py cross-validate --field 2024收入 --values {"Tencent annual comparative": 6602.57, "Stockanalysis": 6602.57} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 2024收入 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 6,602.57 specified in label / RMB100m
+
+  ✅ Tencent annual comparative: 6,602.57 specified in label / RMB100m  (偏差 0.00%)
+  ✅ Stockanalysis       : 6,602.57 specified in label / RMB100m  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 6,602.57 specified in label / RMB100m
+
+$ financial_rigor.py cross-validate --field 2024 IFRS归母 --values {"Tencent annual comparative": 1940.73, "Stockanalysis": 1940.73} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 2024 IFRS归母 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 1,940.73 specified in label / RMB100m
+
+  ✅ Tencent annual comparative: 1,940.73 specified in label / RMB100m  (偏差 0.00%)
+  ✅ Stockanalysis       : 1,940.73 specified in label / RMB100m  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 1,940.73 specified in label / RMB100m
+
+$ financial_rigor.py cross-validate --field 2025 nonIFRS归母 --values {"Tencent annual": 2596.26, "36kr": 2596.26} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 2025 nonIFRS归母 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 2,596.26 specified in label / RMB100m
+
+  ✅ Tencent annual      : 2,596.26 specified in label / RMB100m  (偏差 0.00%)
+  ✅ 36kr                : 2,596.26 specified in label / RMB100m  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 2,596.26 specified in label / RMB100m
+
+$ financial_rigor.py cross-validate --field 2026Q2收入 --values {"Tencent Q2": 2047.85, "Reuters rounded": 2048} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 2026Q2收入 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 2,047.92 specified in label / RMB100m
+
+  ✅ Tencent Q2          : 2,047.85 specified in label / RMB100m  (偏差 0.00%)
+  ✅ Reuters rounded     : 2,048.00 specified in label / RMB100m  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 2,047.92 specified in label / RMB100m
+
+$ financial_rigor.py cross-validate --field 2026Q2 IFRS归母 --values {"Tencent Q2": 560.22, "Reuters rounded": 560} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 2026Q2 IFRS归母 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 560.11 specified in label / RMB100m
+
+  ✅ Tencent Q2          : 560.22 specified in label / RMB100m  (偏差 0.02%)
+  ✅ Reuters rounded     : 560.00 specified in label / RMB100m  (偏差 0.02%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 560.11 specified in label / RMB100m
+
+$ financial_rigor.py cross-validate --field 2026Q2 nonIFRS归母 --values {"Tencent Q2": 684.15, "MarketWatch rounded": 684.2} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 2026Q2 nonIFRS归母 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 684.17 specified in label / RMB100m
+
+  ✅ Tencent Q2          : 684.15 specified in label / RMB100m  (偏差 0.00%)
+  ✅ MarketWatch rounded : 684.20 specified in label / RMB100m  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 684.17 specified in label / RMB100m
+
+$ financial_rigor.py cross-validate --field 2026Q2 Capex确认 --values {"Tencent Q2": 527.84, "Reuters rounded": 528} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 2026Q2 Capex确认 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 527.92 specified in label / RMB100m
+
+  ✅ Tencent Q2          : 527.84 specified in label / RMB100m  (偏差 0.02%)
+  ✅ Reuters rounded     : 528.00 specified in label / RMB100m  (偏差 0.02%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 527.92 specified in label / RMB100m
+
+$ financial_rigor.py cross-validate --field 2026Q2实际FCF --values {"Tencent Q2": -138, "MarketWatch": -138} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 2026Q2实际FCF (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: -138.00 specified in label / RMB100m
+
+  ✅ Tencent Q2          : -138.00 specified in label / RMB100m  (偏差 -0.00%)
+  ✅ MarketWatch         : -138.00 specified in label / RMB100m  (偏差 -0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): -138.00 specified in label / RMB100m
+
+$ financial_rigor.py cross-validate --field 20260924股价HKD --values {"Stockanalysis": 438.4, "Investing": 438.4} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 20260924股价HKD (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 438.40 specified in label / RMB100m
+
+  ✅ Stockanalysis       : 438.40 specified in label / RMB100m  (偏差 0.00%)
+  ✅ Investing           : 438.40 specified in label / RMB100m  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 438.40 specified in label / RMB100m
+
+$ financial_rigor.py cross-validate --field 20260924 HKDCNY参考 --values {"Investing": 0.8559, "ExchangeRates UK": 0.8559} --unit specified in label / RMB100m --tolerance 1
+============================================================
+交叉验证: 20260924 HKDCNY参考 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 0.86 specified in label / RMB100m
+
+  ✅ Investing           : 0.86 specified in label / RMB100m  (偏差 0.00%)
+  ✅ ExchangeRates UK    : 0.86 specified in label / RMB100m  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 0.86 specified in label / RMB100m
+
+$ financial_rigor.py verify-market-cap --price 438.4 --shares 9095133109 --reported 3.94e12 --currency HKD
+============================================================
+市值验算 (Market Cap Verification)
+============================================================
+  股价 (Price):       438.4 HKD
+  总股本 (Shares):    9.10B
+  计算市值:           3.99T HKD
+  报告市值:           3.94T HKD
+  偏差:               1.20%
+
+  ⚠️  偏差 1.2% 在可接受范围, 可能因股价波动/股本变化
+
+$ financial_rigor.py verify-valuation --price 438.4 --eps 35.96879971153045557865510756
+============================================================
+估值指标验算 (Valuation Verification)
+============================================================
+  当前股价: 438.4
+
+  PE (TTM):  438.4 / 35.96879971153046 = 12.19x
+  盈利收益率: 8.20%
+
+  ✅ 以上指标均使用精确十进制计算, 无浮点误差
+
+$ financial_rigor.py three-scenario --price 438.4 --eps 35.96879971153045557865510756 --shares 90.95133109 --growth 0.1219071776448946187273178493107 0.0711209582085997591543210731798 -0.01638543678786962350543734357826 --pe 22 16 10 --years 10 --currency HKD
+============================================================
+三情景估值模型 (Three-Scenario Valuation)
+============================================================
+  当前股价: 438.4 HKD
+  当前EPS:  35.96879971153046
+  预测期:   10年
+
+  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅
+  ------------ -------- -------- ---------- ---------- --------
+  乐观 (Bull)         12%      22x     113.63    2499.9  +470.2%
+  中性 (Base)          7%      16x      71.50    1144.0  +161.0%
+  悲观 (Bear)         -2%      10x      30.49     304.9   -30.4%
+
+  ✅ 所有计算使用精确十进制, 结果可审计复现
+
+$ financial_rigor.py calc --expr 3160*1.07+(130+60+35+45-50-520)*0.8
+============================================================
+精确计算 (Exact Calculator)
+============================================================
+  表达式: 3160*1.07+(130+60+35+45-50-520)*0.8
+  结果:   3,141.20
+  精确值: 3141.2000000000003
+
+$ financial_rigor.py calc --expr 3160*1.07**2+(260+120+75+80-100-420)*0.8
+============================================================
+精确计算 (Exact Calculator)
+============================================================
+  表达式: 3160*1.07**2+(260+120+75+80-100-420)*0.8
+  结果:   3,629.88
+  精确值: 3629.884
+
+$ financial_rigor.py calc --expr 3160*1.07**3+(410+190+140+115-150-250)*0.8
+============================================================
+精确计算 (Exact Calculator)
+============================================================
+  表达式: 3160*1.07**3+(410+190+140+115-150-250)*0.8
+  结果:   4,235.14
+  精确值: 4235.13588
+
+$ financial_rigor.py calc --expr (6995-350)*0.8+250
+============================================================
+精确计算 (Exact Calculator)
+============================================================
+  表达式: (6995-350)*0.8+250
+  结果:   5,566.00
+  精确值: 5566.0
+
+$ financial_rigor.py calc --expr (9095133109-9000000000)/9095133109*100
+============================================================
+精确计算 (Exact Calculator)
+============================================================
+  表达式: (9095133109-9000000000)/9095133109*100
+  结果:   1.05
+  精确值: 1.045978193610624

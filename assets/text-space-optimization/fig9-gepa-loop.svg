@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<defs><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="ao" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#eb6834" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#2a78d6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="0.5" y="0.5" width="879" height="559" rx="14" fill="#fcfcfb" stroke="#e5e4e0"/>
+<text x="28" y="40" font-size="20" font-weight="600" fill="#0b0b0b">GEPA：读完整轨迹写反思，在帕累托前沿上选父代</text>
+<text x="28" y="64" font-size="13" fill="#52514e">每次只改一个模块的提示词；小批上变好才进候选池；从候选池里按「在多少道题上领先」抽样下一个父代</text>
+<rect x="28" y="96" width="190" height="112" rx="10" fill="#e2f6ee" stroke="#1baf7a"/>
+<text x="123.0" y="118" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">① 选父代</text>
+<text x="123.0" y="138" font-size="12" fill="#52514e" text-anchor="middle">对每道验证题记下最高分</text>
+<text x="123.0" y="155" font-size="12" fill="#52514e" text-anchor="middle">保留至少在一道题上领先的候选</text>
+<text x="123.0" y="172" font-size="12" fill="#52514e" text-anchor="middle">按领先题数加权随机抽一个</text>
+<rect x="240" y="96" width="190" height="112" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="335.0" y="118" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">② 跑小批</text>
+<text x="335.0" y="138" font-size="12" fill="#52514e" text-anchor="middle">3 道训练题</text>
+<text x="335.0" y="155" font-size="12" fill="#52514e" text-anchor="middle">记录每个模块的输入、输出、推理</text>
+<text x="335.0" y="172" font-size="12" fill="#52514e" text-anchor="middle">评分器连同文字反馈一起返回</text>
+<rect x="452" y="96" width="190" height="112" rx="10" fill="#fdebe3" stroke="#eb6834"/>
+<text x="547.0" y="118" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">③ 反思改写</text>
+<text x="547.0" y="138" font-size="12" fill="#52514e" text-anchor="middle">轮流挑一个模块</text>
+<text x="547.0" y="155" font-size="12" fill="#52514e" text-anchor="middle">反思模型读轨迹与反馈</text>
+<text x="547.0" y="172" font-size="12" fill="#52514e" text-anchor="middle">写出该模块的新提示词</text>
+<rect x="664" y="96" width="190" height="112" rx="10" fill="#e6f0fc" stroke="#2a78d6"/>
+<text x="759.0" y="118" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">④ 小批复评</text>
+<text x="759.0" y="138" font-size="12" fill="#52514e" text-anchor="middle">同样 3 道题再跑一遍</text>
+<text x="759.0" y="155" font-size="12" fill="#52514e" text-anchor="middle">分数变好？</text>
+<line x1="218" y1="152.0" x2="236" y2="152.0" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<line x1="430" y1="152.0" x2="448" y2="152.0" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<line x1="642" y1="152.0" x2="660" y2="152.0" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="634" y="268" width="220" height="76" rx="10" fill="#e6f0fc" stroke="#2a78d6"/>
+<text x="744.0" y="290" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">进候选池</text>
+<text x="744.0" y="310" font-size="12" fill="#52514e" text-anchor="middle">在全部验证题上评一遍</text>
+<text x="744.0" y="327" font-size="12" fill="#52514e" text-anchor="middle">记下父子关系</text>
+<line x1="759.0" y1="208" x2="759.0" y2="264" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<text x="773.0" y="244" font-size="12" fill="#52514e" text-anchor="middle">是</text>
+<rect x="280" y="268" width="230" height="76" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="395.0" y="290" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">丢弃</text>
+<text x="395.0" y="310" font-size="12" fill="#52514e" text-anchor="middle">不记录、不回灌</text>
+<text x="395.0" y="327" font-size="12" fill="#52514e" text-anchor="middle">（与 SkillOpt 的拒绝缓冲不同）</text>
+<line x1="634" y1="306" x2="514" y2="306" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<text x="604" y="298" font-size="12" fill="#52514e" text-anchor="middle">否</text>
+<path d="M744.0,344 V372 H123.0 V212" fill="none" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<text x="133.0" y="368" font-size="12" fill="#52514e" text-anchor="start">预算未耗尽则继续；耗尽后返回验证集平均分最高的候选</text>
+<line x1="28" y1="398" x2="852" y2="398" stroke="#e5e4e0"/>
+<text x="28" y="424" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600">两个可选部件</text>
+<rect x="28" y="438" width="400" height="96" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="228.0" y="460" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">系统感知的合并（GEPA+Merge）</text>
+<text x="228.0" y="480" font-size="12" fill="#52514e" text-anchor="middle">两个候选有共同祖先、各自改了不同模块、都比祖先强</text>
+<text x="228.0" y="497" font-size="12" fill="#52514e" text-anchor="middle">就把各自改过的模块拼成一个新候选</text>
+<text x="228.0" y="514" font-size="12" fill="#52514e" text-anchor="middle">GPT-4.1 mini 上再 +1.1；Qwen3-8B 上反而 −2.4</text>
+<rect x="452" y="438" width="400" height="96" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="652.0" y="460" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">评价轨迹当反馈</text>
+<text x="652.0" y="480" font-size="12" fill="#52514e" text-anchor="middle">评分器在给出分数之前产生的文字：编译报错、</text>
+<text x="652.0" y="497" font-size="12" fill="#52514e" text-anchor="middle">未通过的规则、还缺哪些文档</text>
+<text x="652.0" y="514" font-size="12" fill="#52514e" text-anchor="middle">都交给反思模型，而不只给一个分数</text>
+</svg>

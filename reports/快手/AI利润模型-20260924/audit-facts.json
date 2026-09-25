@@ -1,0 +1,93 @@
+[
+  {
+    "id": 23,
+    "label": "收入 · 解读",
+    "reported_value": 2.36,
+    "unit": "%",
+    "line_number": 45,
+    "raw_text": "| 收入 | 676.54 | 692.51 | 增长2.36%，主平台成熟期特征明显 |",
+    "fetched_value": 2.36,
+    "fetched_source": "Company 2026H1: (69251/67654-1)*100",
+    "fetched_value2": 2.36,
+    "fetched_source2": "China Securities Journal 2026-09-03",
+    "type": "historical_fact_or_fact_arithmetic"
+  },
+  {
+    "id": 24,
+    "label": "IFRS归母利润 · 2025H1实际",
+    "reported_value": 89.0,
+    "unit": "",
+    "line_number": 46,
+    "raw_text": "| IFRS归母利润 | 89.00 | 60.49 | 下降32.03%，不是AI盈利已兑现 |",
+    "fetched_value": 89.0,
+    "fetched_source": "Company 2026H1 comparative equity-holder earnings RMB8900m",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "type": "historical_fact_or_fact_arithmetic"
+  },
+  {
+    "id": 27,
+    "label": "经调整净利润 · 2025H1实际",
+    "reported_value": 101.98,
+    "unit": "",
+    "line_number": 47,
+    "raw_text": "| 经调整净利润 | 101.98 | 72.87 | 口径不同，不替代归母利润 |",
+    "fetched_value": 101.98,
+    "fetched_source": "Company Q2 full announcement pp2/22: comparative RMB10198m",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "type": "historical_fact_or_fact_arithmetic"
+  },
+  {
+    "id": 29,
+    "label": "毛利率 · 2025H1实际",
+    "reported_value": 55.1,
+    "unit": "%",
+    "line_number": 48,
+    "raw_text": "| 毛利率 | 55.1% | 51.4% | 下降3.7个百分点 |",
+    "fetched_value": 55.1,
+    "fetched_source": "Company 2026H1 comparative gross margin",
+    "fetched_value2": 55.1,
+    "fetched_source2": "2025H1 statement; same issuer, not independent",
+    "type": "historical_fact_or_fact_arithmetic"
+  },
+  {
+    "id": 36,
+    "label": "经营活动现金净流入 · 解读",
+    "reported_value": 23.23,
+    "unit": "%",
+    "line_number": 50,
+    "raw_text": "| 经营活动现金净流入 | 117.81 | 90.44 | 下降23.23% |",
+    "fetched_value": 23.23,
+    "fetched_source": "Company cash flow comparative: 1-9044/11781",
+    "fetched_value2": 23.23,
+    "fetched_source2": "China Securities Journal 2026-09-03",
+    "type": "historical_fact_or_fact_arithmetic"
+  },
+  {
+    "id": 51,
+    "label": "经营现金流 · 2024",
+    "reported_value": 297.87,
+    "unit": "",
+    "line_number": 65,
+    "raw_text": "| 经营现金流 | 207.81 | 297.87 | 267.16 |",
+    "fetched_value": 297.87,
+    "fetched_source": "Company 2025 annual cash flow comparative RMB29787m",
+    "fetched_value2": 297.87,
+    "fetched_source2": "StockAnalysis cash-flow statement",
+    "type": "historical_fact_or_fact_arithmetic"
+  },
+  {
+    "id": 56,
+    "label": "宽口径：1213减上述三类债务 · 金额",
+    "reported_value": 570.18,
+    "unit": "",
+    "line_number": 82,
+    "raw_text": "| 宽口径：1213减上述三类债务 | 570.18 | 仍含非即时可动用资产，不能视为可分红现金 |",
+    "fetched_value": 570.18,
+    "fetched_source": "Arithmetic using interim notes; financing notes official single source",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "type": "historical_fact_or_fact_arithmetic"
+  }
+]

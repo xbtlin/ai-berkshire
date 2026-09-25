@@ -1,0 +1,80 @@
+{
+  "segment_reconciliation": [
+    {
+      "scenario": "bear",
+      "year": 2027,
+      "reconstructed_net": "88.90746600000",
+      "passed": true
+    },
+    {
+      "scenario": "bear",
+      "year": 2028,
+      "reconstructed_net": "79.9548493600000",
+      "passed": true
+    },
+    {
+      "scenario": "bear",
+      "year": 2029,
+      "reconstructed_net": "72.446282748400000",
+      "passed": true
+    },
+    {
+      "scenario": "bear",
+      "year": 2036,
+      "reconstructed_net": "90.2500",
+      "passed": true
+    },
+    {
+      "scenario": "base",
+      "year": 2027,
+      "reconstructed_net": "148.9746337500",
+      "passed": true
+    },
+    {
+      "scenario": "base",
+      "year": 2028,
+      "reconstructed_net": "183.3936408468750",
+      "passed": true
+    },
+    {
+      "scenario": "base",
+      "year": 2029,
+      "reconstructed_net": "222.86539195858750",
+      "passed": true
+    },
+    {
+      "scenario": "base",
+      "year": 2036,
+      "reconstructed_net": "405.60000",
+      "passed": true
+    },
+    {
+      "scenario": "bull",
+      "year": 2027,
+      "reconstructed_net": "175.3919660000",
+      "passed": true
+    },
+    {
+      "scenario": "bull",
+      "year": 2028,
+      "reconstructed_net": "246.655723840000",
+      "passed": true
+    },
+    {
+      "scenario": "bull",
+      "year": 2029,
+      "reconstructed_net": "342.91361700320000",
+      "passed": true
+    },
+    {
+      "scenario": "bull",
+      "year": 2036,
+      "reconstructed_net": "759.1904000",
+      "passed": true
+    }
+  ],
+  "sample_facts": 7,
+  "sample_model": 18,
+  "sample_nonfinancial_exclusions": 5,
+  "forecast_truth_verified": false
+}

@@ -1,0 +1,696 @@
+{
+  "cutoff": "2026-09-24",
+  "unit": "RMB 100 million",
+  "inputs": {
+    "bear": {
+      "growth": [
+        "-.01",
+        "-.08",
+        ".01"
+      ],
+      "margin": [
+        ".115",
+        ".11",
+        ".105"
+      ],
+      "uplift": [
+        ".005",
+        ".01",
+        ".015"
+      ],
+      "fee_uplift": [
+        "0",
+        ".005",
+        ".01"
+      ],
+      "savings": [
+        6,
+        10,
+        14
+      ],
+      "retain": ".40",
+      "ai_cost": [
+        16,
+        22,
+        28
+      ],
+      "k_rev": [
+        45,
+        60,
+        75
+      ],
+      "k_cm": [
+        ".30",
+        ".35",
+        ".40"
+      ],
+      "k_fixed": [
+        60,
+        65,
+        70
+      ],
+      "tax": ".20",
+      "finance": [
+        8,
+        8,
+        8
+      ],
+      "terminal": [
+        900,
+        220,
+        380,
+        ".10",
+        -30,
+        150,
+        ".30",
+        70,
+        ".55",
+        10
+      ],
+      "pe": 8
+    },
+    "base": {
+      "growth": [
+        ".03",
+        "-.04",
+        ".06"
+      ],
+      "margin": [
+        ".13",
+        ".14",
+        ".15"
+      ],
+      "uplift": [
+        ".02",
+        ".035",
+        ".05"
+      ],
+      "fee_uplift": [
+        ".02",
+        ".03",
+        ".04"
+      ],
+      "savings": [
+        10,
+        18,
+        26
+      ],
+      "retain": ".70",
+      "ai_cost": [
+        14,
+        18,
+        23
+      ],
+      "k_rev": [
+        65,
+        105,
+        160
+      ],
+      "k_cm": [
+        ".50",
+        ".55",
+        ".60"
+      ],
+      "k_fixed": [
+        58,
+        66,
+        76
+      ],
+      "tax": ".15",
+      "finance": [
+        10,
+        10,
+        10
+      ],
+      "terminal": [
+        1250,
+        300,
+        400,
+        ".18",
+        45,
+        500,
+        ".50",
+        150,
+        ".65",
+        20
+      ],
+      "pe": 12
+    },
+    "bull": {
+      "growth": [
+        ".07",
+        "0",
+        ".10"
+      ],
+      "margin": [
+        ".145",
+        ".16",
+        ".18"
+      ],
+      "uplift": [
+        ".03",
+        ".06",
+        ".09"
+      ],
+      "fee_uplift": [
+        ".03",
+        ".05",
+        ".07"
+      ],
+      "savings": [
+        15,
+        28,
+        42
+      ],
+      "retain": ".80",
+      "ai_cost": [
+        15,
+        22,
+        30
+      ],
+      "k_rev": [
+        85,
+        170,
+        300
+      ],
+      "k_cm": [
+        ".50",
+        ".58",
+        ".65"
+      ],
+      "k_fixed": [
+        65,
+        85,
+        115
+      ],
+      "tax": ".20",
+      "finance": [
+        12,
+        15,
+        18
+      ],
+      "terminal": [
+        1700,
+        350,
+        550,
+        ".23",
+        80,
+        1200,
+        ".60",
+        360,
+        ".6833",
+        25
+      ],
+      "pe": 16
+    }
+  },
+  "definitions": {
+    "net": "normalized attributable earnings; recurring SBC and depreciation retained; excludes one-off fair values, restructuring and uncertain redemption accounting",
+    "ai_counterfactual": "core AI frozen at 2026 and Kling standalone annual loss frozen at RMB3bn; future equity share same in both cases; not a world without AI",
+    "contribution_margin": "Kling after inference, delivery support, channel and usage-dependent depreciation; fixed costs include training, product, sales, admin, SBC and non-usage depreciation; no internal sales"
+  },
+  "scenarios": {
+    "bear": {
+      "annual": [
+        {
+          "year": 2027,
+          "advertising_baseline": "826.65",
+          "live": "317.40",
+          "fees_baseline": "207.05",
+          "core_baseline_revenue": "1351.10",
+          "incremental_core_ai_revenue": "4.13325",
+          "consolidated_revenue": "1400.23325",
+          "core_baseline_margin": "0.115",
+          "core_ai_operating": "-12.525355000",
+          "core_net": "120.68091600000",
+          "kling_revenue": "45",
+          "kling_contribution_margin": "0.30",
+          "kling_fixed_cost": "60",
+          "kling_operating": "-46.50",
+          "kling_net": "-46.50",
+          "kling_share": "0.6833",
+          "kling_attributable": "-31.773450",
+          "finance": "8",
+          "core_tax": "0.20",
+          "net": "88.90746600000",
+          "no_new_ai_net": "110.2022000",
+          "incremental_ai_net": "-21.29473400000",
+          "ai_bridge": {
+            "ad_revenue": "4.13325",
+            "fee_revenue": "0.00",
+            "ad_contribution": "2.6866125",
+            "fee_contribution": "0.0000",
+            "saving": "6",
+            "competitive_leakage": "5.211967500",
+            "extra_core_ai_cost": "16",
+            "ai_core_net": "-10.02028400000",
+            "kling_improvement_same_share": "-11.274450"
+          }
+        },
+        {
+          "year": 2028,
+          "advertising_baseline": "818.3835",
+          "live": "292.0080",
+          "fees_baseline": "209.1205",
+          "core_baseline_revenue": "1319.5120",
+          "incremental_core_ai_revenue": "9.2294375",
+          "consolidated_revenue": "1388.7414375",
+          "core_baseline_margin": "0.11",
+          "core_ai_operating": "-15.62125830000",
+          "core_net": "110.0200493600000",
+          "kling_revenue": "60",
+          "kling_contribution_margin": "0.35",
+          "kling_fixed_cost": "65",
+          "kling_operating": "-44.00",
+          "kling_net": "-44.00",
+          "kling_share": "0.6833",
+          "kling_attributable": "-30.065200",
+          "finance": "8",
+          "core_tax": "0.20",
+          "net": "79.9548493600000",
+          "no_new_ai_net": "102.01805600",
+          "incremental_ai_net": "-22.0632066400000",
+          "ai_bridge": {
+            "ad_revenue": "8.183835",
+            "fee_revenue": "1.0456025",
+            "ad_contribution": "5.31949275",
+            "fee_contribution": "0.627361500",
+            "saving": "10",
+            "competitive_leakage": "9.56811255000",
+            "extra_core_ai_cost": "22",
+            "ai_core_net": "-12.4970066400000",
+            "kling_improvement_same_share": "-9.566200"
+          }
+        },
+        {
+          "year": 2029,
+          "advertising_baseline": "810.199665",
+          "live": "268.647360",
+          "fees_baseline": "211.211705",
+          "core_baseline_revenue": "1290.058730",
+          "incremental_core_ai_revenue": "14.265112025",
+          "consolidated_revenue": "1379.323842025",
+          "core_baseline_margin": "0.105",
+          "core_ai_operating": "-18.7333132145000",
+          "core_net": "99.778282748400000",
+          "kling_revenue": "75",
+          "kling_contribution_margin": "0.40",
+          "kling_fixed_cost": "70",
+          "kling_operating": "-40.00",
+          "kling_net": "-40.00",
+          "kling_share": "0.6833",
+          "kling_attributable": "-27.332000",
+          "finance": "8",
+          "core_tax": "0.20",
+          "net": "72.446282748400000",
+          "no_new_ai_net": "94.26593332000",
+          "incremental_ai_net": "-21.819650571600000",
+          "ai_bridge": {
+            "ad_revenue": "12.152994975",
+            "fee_revenue": "2.11211705",
+            "ad_contribution": "7.89944673375",
+            "fee_contribution": "1.2672702300",
+            "saving": "14",
+            "competitive_leakage": "13.9000301782500",
+            "extra_core_ai_cost": "28",
+            "ai_core_net": "-14.986650571600000",
+            "kling_improvement_same_share": "-6.833000"
+          }
+        }
+      ],
+      "terminal2036": {
+        "year": 2036,
+        "advertising_baseline": "900",
+        "live": "220",
+        "fees_baseline": "380",
+        "core_baseline_revenue": "1500",
+        "incremental_core_ai_revenue": "0",
+        "consolidated_revenue": "1650",
+        "core_baseline_margin": "0.10",
+        "core_ai_operating": "-30",
+        "core_net": "104.0000",
+        "kling_revenue": "150",
+        "kling_contribution_margin": "0.30",
+        "kling_fixed_cost": "70",
+        "kling_operating": "-25.00",
+        "kling_net": "-25.00",
+        "kling_share": "0.55",
+        "kling_attributable": "-13.7500",
+        "finance": "10",
+        "core_tax": "0.20",
+        "net": "90.2500",
+        "no_new_ai_net": "111.5000",
+        "incremental_ai_net": "-21.2500",
+        "core_revenue_definition": "inclusive of AI-supported sales; terminal aiop is incremental efficiency/mix only",
+        "core_revenue_cagr10": "0.008008393850239634245120915",
+        "kling_revenue_cagr10": "0.156650956892015715648923092",
+        "net_cagr10": "-0.0325549394854938928427841304",
+        "real_net_at_2pct_inflation": "74.03643406373276374906702068"
+      },
+      "ai_increment_three_years": "-65.177591211600000",
+      "valuation": {
+        "shares_100m_assumption": 44,
+        "hkd_per_rmb_assumption": "1.10",
+        "pe": 8,
+        "price_2029": "14.48925654968000000",
+        "present_at12pct": "10.02507264898552443448654622"
+      }
+    },
+    "base": {
+      "annual": [
+        {
+          "year": 2027,
+          "advertising_baseline": "860.05",
+          "live": "331.20",
+          "fees_baseline": "217.30",
+          "core_baseline_revenue": "1408.55",
+          "incremental_core_ai_revenue": "21.5470",
+          "consolidated_revenue": "1495.0970",
+          "core_baseline_margin": "0.13",
+          "core_ai_operating": "2.65177500",
+          "core_net": "166.3987837500",
+          "kling_revenue": "65",
+          "kling_contribution_margin": "0.50",
+          "kling_fixed_cost": "58",
+          "kling_operating": "-25.50",
+          "kling_net": "-25.50",
+          "kling_share": "0.6833",
+          "kling_attributable": "-17.424150",
+          "finance": "10",
+          "core_tax": "0.15",
+          "net": "148.9746337500",
+          "no_new_ai_net": "143.645775",
+          "incremental_ai_net": "5.3288587500",
+          "ai_bridge": {
+            "ad_revenue": "17.2010",
+            "fee_revenue": "4.3460",
+            "ad_contribution": "11.180650",
+            "fee_contribution": "2.607600",
+            "saving": "10",
+            "competitive_leakage": "7.13647500",
+            "extra_core_ai_cost": "14",
+            "ai_core_net": "2.2540087500",
+            "kling_improvement_same_share": "3.074850"
+          }
+        },
+        {
+          "year": 2028,
+          "advertising_baseline": "885.8515",
+          "live": "317.9520",
+          "fees_baseline": "230.3380",
+          "core_baseline_revenue": "1434.1415",
+          "incremental_core_ai_revenue": "37.9149425",
+          "consolidated_revenue": "1577.0564425",
+          "core_baseline_margin": "0.14",
+          "core_ai_operating": "11.60944393750",
+          "core_net": "189.0308658468750",
+          "kling_revenue": "105",
+          "kling_contribution_margin": "0.55",
+          "kling_fixed_cost": "66",
+          "kling_operating": "-8.25",
+          "kling_net": "-8.25",
+          "kling_share": "0.6833",
+          "kling_attributable": "-5.637225",
+          "finance": "10",
+          "core_tax": "0.15",
+          "net": "183.3936408468750",
+          "no_new_ai_net": "158.66383850",
+          "incremental_ai_net": "24.7298023468750",
+          "ai_bridge": {
+            "ad_revenue": "31.0048025",
+            "fee_revenue": "6.910140",
+            "ad_contribution": "20.153121625",
+            "fee_contribution": "4.14608400",
+            "saving": "18",
+            "competitive_leakage": "12.68976168750",
+            "extra_core_ai_cost": "18",
+            "ai_core_net": "9.8680273468750",
+            "kling_improvement_same_share": "14.861775"
+          }
+        },
+        {
+          "year": 2029,
+          "advertising_baseline": "912.427045",
+          "live": "305.233920",
+          "fees_baseline": "244.158280",
+          "core_baseline_revenue": "1461.819245",
+          "incremental_core_ai_revenue": "55.38768345",
+          "consolidated_revenue": "1677.20692845",
+          "core_baseline_margin": "0.15",
+          "core_ai_operating": "20.059574377750",
+          "core_net": "211.93259195858750",
+          "kling_revenue": "160",
+          "kling_contribution_margin": "0.60",
+          "kling_fixed_cost": "76",
+          "kling_operating": "20.00",
+          "kling_net": "16.0000",
+          "kling_share": "0.6833",
+          "kling_attributable": "10.93280000",
+          "finance": "10",
+          "core_tax": "0.15",
+          "net": "222.86539195858750",
+          "no_new_ai_net": "174.3829537375",
+          "incremental_ai_net": "48.48243822108750",
+          "ai_bridge": {
+            "ad_revenue": "45.62135225",
+            "fee_revenue": "9.76633120",
+            "ad_contribution": "29.6538789625",
+            "fee_contribution": "5.8597987200",
+            "saving": "26",
+            "competitive_leakage": "18.454103304750",
+            "extra_core_ai_cost": "23",
+            "ai_core_net": "17.05063822108750",
+            "kling_improvement_same_share": "31.43180000"
+          }
+        }
+      ],
+      "terminal2036": {
+        "year": 2036,
+        "advertising_baseline": "1250",
+        "live": "300",
+        "fees_baseline": "400",
+        "core_baseline_revenue": "1950",
+        "incremental_core_ai_revenue": "0",
+        "consolidated_revenue": "2450",
+        "core_baseline_margin": "0.18",
+        "core_ai_operating": "45",
+        "core_net": "353.6000",
+        "kling_revenue": "500",
+        "kling_contribution_margin": "0.50",
+        "kling_fixed_cost": "150",
+        "kling_operating": "100.00",
+        "kling_net": "80.0000",
+        "kling_share": "0.65",
+        "kling_attributable": "52.000000",
+        "finance": "20",
+        "core_tax": "0.15",
+        "net": "405.600000",
+        "no_new_ai_net": "295.8500",
+        "incremental_ai_net": "109.750000",
+        "core_revenue_definition": "inclusive of AI-supported sales; terminal aiop is incremental efficiency/mix only",
+        "core_revenue_cagr10": "0.034804917343925520558552450",
+        "kling_revenue_cagr10": "0.304638516683253993838060218",
+        "net_cagr10": "0.124323751138251421360803335",
+        "real_net_at_2pct_inflation": "332.7332704293629803503776575"
+      },
+      "ai_increment_three_years": "78.54109931796250",
+      "valuation": {
+        "shares_100m_assumption": 44,
+        "hkd_per_rmb_assumption": "1.10",
+        "pe": 12,
+        "price_2029": "66.85961758757625000000000000",
+        "present_at12pct": "46.25996656906771276711878579"
+      }
+    },
+    "bull": {
+      "annual": [
+        {
+          "year": 2027,
+          "advertising_baseline": "893.45",
+          "live": "345",
+          "fees_baseline": "225.50",
+          "core_baseline_revenue": "1463.95",
+          "incremental_core_ai_revenue": "33.5685",
+          "consolidated_revenue": "1582.5185",
+          "core_baseline_margin": "0.145",
+          "core_ai_operating": "14.18502000",
+          "core_net": "190.7662160000",
+          "kling_revenue": "85",
+          "kling_contribution_margin": "0.50",
+          "kling_fixed_cost": "65",
+          "kling_operating": "-22.50",
+          "kling_net": "-22.50",
+          "kling_share": "0.6833",
+          "kling_attributable": "-15.374250",
+          "finance": "12",
+          "core_tax": "0.20",
+          "net": "175.3919660000",
+          "no_new_ai_net": "158.9192000",
+          "incremental_ai_net": "16.4727660000",
+          "ai_bridge": {
+            "ad_revenue": "26.8035",
+            "fee_revenue": "6.7650",
+            "ad_contribution": "17.422275",
+            "fee_contribution": "4.059000",
+            "saving": "15",
+            "competitive_leakage": "7.29625500",
+            "extra_core_ai_cost": "15",
+            "ai_core_net": "11.3480160000",
+            "kling_improvement_same_share": "5.124750"
+          }
+        },
+        {
+          "year": 2028,
+          "advertising_baseline": "955.9915",
+          "live": "345",
+          "fees_baseline": "248.0500",
+          "core_baseline_revenue": "1549.0415",
+          "incremental_core_ai_revenue": "69.761990",
+          "consolidated_revenue": "1788.803490",
+          "core_baseline_margin": "0.16",
+          "core_ai_operating": "36.1801348000",
+          "core_net": "239.221419840000",
+          "kling_revenue": "170",
+          "kling_contribution_margin": "0.58",
+          "kling_fixed_cost": "85",
+          "kling_operating": "13.60",
+          "kling_net": "10.8800",
+          "kling_share": "0.6833",
+          "kling_attributable": "7.43430400",
+          "finance": "15",
+          "core_tax": "0.20",
+          "net": "246.655723840000",
+          "no_new_ai_net": "189.77831200",
+          "incremental_ai_net": "56.877411840000",
+          "ai_bridge": {
+            "ad_revenue": "57.359490",
+            "fee_revenue": "12.402500",
+            "ad_contribution": "37.28366850",
+            "fee_contribution": "7.44150000",
+            "saving": "28",
+            "competitive_leakage": "14.5450337000",
+            "extra_core_ai_cost": "22",
+            "ai_core_net": "28.944107840000",
+            "kling_improvement_same_share": "27.93330400"
+          }
+        },
+        {
+          "year": 2029,
+          "advertising_baseline": "1022.910905",
+          "live": "345",
+          "fees_baseline": "272.855000",
+          "core_baseline_revenue": "1640.765905",
+          "incremental_core_ai_revenue": "111.16183145",
+          "consolidated_revenue": "2051.92773645",
+          "core_baseline_margin": "0.18",
+          "core_ai_operating": "60.640158354000",
+          "core_net": "299.18241700320000",
+          "kling_revenue": "300",
+          "kling_contribution_margin": "0.65",
+          "kling_fixed_cost": "115",
+          "kling_operating": "80.00",
+          "kling_net": "64.0000",
+          "kling_share": "0.6833",
+          "kling_attributable": "43.73120000",
+          "finance": "18",
+          "core_tax": "0.20",
+          "net": "342.91361700320000",
+          "no_new_ai_net": "230.1712903200",
+          "incremental_ai_net": "112.74232668320000",
+          "ai_bridge": {
+            "ad_revenue": "92.06198145",
+            "fee_revenue": "19.09985000",
+            "ad_contribution": "59.8402879425",
+            "fee_contribution": "11.4599100000",
+            "saving": "42",
+            "competitive_leakage": "22.660039588500",
+            "extra_core_ai_cost": "30",
+            "ai_core_net": "48.51212668320000",
+            "kling_improvement_same_share": "64.23020000"
+          }
+        }
+      ],
+      "terminal2036": {
+        "year": 2036,
+        "advertising_baseline": "1700",
+        "live": "350",
+        "fees_baseline": "550",
+        "core_baseline_revenue": "2600",
+        "incremental_core_ai_revenue": "0",
+        "consolidated_revenue": "3800",
+        "core_baseline_margin": "0.23",
+        "core_ai_operating": "80",
+        "core_net": "562.4000",
+        "kling_revenue": "1200",
+        "kling_contribution_margin": "0.60",
+        "kling_fixed_cost": "360",
+        "kling_operating": "360.00",
+        "kling_net": "288.0000",
+        "kling_share": "0.6833",
+        "kling_attributable": "196.79040000",
+        "finance": "25",
+        "core_tax": "0.20",
+        "net": "759.19040000",
+        "no_new_ai_net": "477.9010",
+        "incremental_ai_net": "281.28940000",
+        "core_revenue_definition": "inclusive of AI-supported sales; terminal aiop is incremental efficiency/mix only",
+        "core_revenue_cagr10": "0.065006742938303665995346507",
+        "kling_revenue_cagr10": "0.424004363767656743143230055",
+        "net_cagr10": "0.197062046004728523297834104",
+        "real_net_at_2pct_inflation": "622.8005539215390848062015630"
+      },
+      "ai_increment_three_years": "186.09250452320000",
+      "valuation": {
+        "shares_100m_assumption": 44,
+        "hkd_per_rmb_assumption": "1.10",
+        "pe": 16,
+        "price_2029": "137.1654468012800000000000000",
+        "present_at12pct": "94.90435650708113887745550870"
+      }
+    }
+  },
+  "anchor2026": {
+    "year": 2026,
+    "advertising_baseline": "835",
+    "live": "345",
+    "fees_baseline": "205",
+    "core_baseline_revenue": "1385",
+    "incremental_core_ai_revenue": "0",
+    "consolidated_revenue": "1420",
+    "core_baseline_margin": "0.125",
+    "core_ai_operating": "0",
+    "core_net": "155.65625",
+    "kling_revenue": "35",
+    "kling_contribution_margin": "0.45",
+    "kling_fixed_cost": "45.75",
+    "kling_operating": "-30.00",
+    "kling_net": "-30.00",
+    "kling_share": "1",
+    "kling_attributable": "-30.00",
+    "finance": "10",
+    "core_tax": "0.15",
+    "net": "125.65625",
+    "no_new_ai_net": "125.65625",
+    "incremental_ai_net": "0.00000"
+  },
+  "sensitivities": {
+    "base2036_core_margin_minus3pp": "355.875000",
+    "base2036_kling_zero_profit": "353.600000",
+    "base2036_kling_share55pct": "397.600000",
+    "base2036_kling_cm_minus10pp": "379.600000",
+    "base2029_kling_revenue_breakeven": "126.6666666666666666666666667",
+    "base2029_kling_cm_minus10pp": "214.11915195858750",
+    "base2029_kling_revenue_minus25pct": "209.19939195858750",
+    "severe2036_tail": "16.000"
+  },
+  "audit_math": {
+    "h1_fcf": "-88.97",
+    "prior_h1_fcf": "47.06",
+    "h1_attributable_yoy": "-0.3203370786516853932584269663",
+    "h1_rd_yoy": "0.224544640191101821439235593",
+    "dau_mau2026": "0.5171202809482001755926251097",
+    "dau_mau2025": "0.5720481253497481813094571908",
+    "dilution_loss_sharing_effect_not_ai": "9.5010",
+    "equity_share": "0.6833"
+  }
+}

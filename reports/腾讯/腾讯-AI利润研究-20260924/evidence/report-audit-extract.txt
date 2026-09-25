@@ -1,0 +1,331 @@
+======================================================================
+报告数据抽检清单
+文件：reports/腾讯/腾讯-AI利润研究-20260924/腾讯-investment-team-AI利润与竞争格局.md
+总提取数据点：156  |  抽样比例：15%  |  抽检数量：24
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  2     16  2027 non-IFRS归母 · 悲观E                     2759.00
+  7     17  2028 non-IFRS归母 · 乐观E                     4232.00
+  9     18  2029 non-IFRS归母 · 基准E                     4235.00
+  8     18  2029 non-IFRS归母 · 悲观E                     2885.00
+ 23     32  风险评估 · 评分（最高5）                               3.50
+ 24     44  收入 · 2024全年                               6602.57
+ 29     45  IFRS归母净利润 · 2026上半年                       1141.15
+ 27     45  IFRS归母净利润 · 2024全年                        1940.73
+ 36     55  non-IFRS经营利润 · 数值                          756.36
+ 41     59  剔除算力预付款的自由现金流 · 数值                         376.00
+ 51    105  第三方客户云基础设施贡献 · 2029                        140.00
+ 56    107  上述正贡献合计 · 2028                             535.00
+ 57    107  上述正贡献合计 · 2029                             855.00
+ 58    108  减：老业务额外推理、折旧及基础设施费用 · 2027                  50.00
+ 60    108  减：老业务额外推理、折旧及基础设施费用 · 2029                 150.00
+ 63    109  减：新AI产品经营净亏损 · 2029                        250.00
+ 71    112  相对冻结参考的归母增量 · 2028                         372.00
+ 72    112  相对冻结参考的归母增量 · 2029                         724.00
+109    186  广告和商业推荐 · 经营利润贡献                          2496.00
+108    186  广告和商业推荐 · 2036经营利润率                         48.00  %
+115    188  外部云与独立AI产品 · 2026收入基数                      600.00
+130    204  扣总部后经营利润 · 乐观                            10557.00
+140    208  再扣维持性投入超过折旧的负担假设 · 悲观                      250.00
+155    260  要求较强安全边际 · 参考价格（港元）                        360.00
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 2,
+    "label": "2027 non-IFRS归母 · 悲观E",
+    "reported_value": 2759.0,
+    "unit": "",
+    "line_number": 16,
+    "raw_text": "| 2027 non-IFRS归母 | 2,759 | 3,141 | 3,388 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 7,
+    "label": "2028 non-IFRS归母 · 乐观E",
+    "reported_value": 4232.0,
+    "unit": "",
+    "line_number": 17,
+    "raw_text": "| 2028 non-IFRS归母 | 2,796 | 3,630 | 4,232 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "2029 non-IFRS归母 · 基准E",
+    "reported_value": 4235.0,
+    "unit": "",
+    "line_number": 18,
+    "raw_text": "| 2029 non-IFRS归母 | 2,885 | 4,235 | 5,246 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "2029 non-IFRS归母 · 悲观E",
+    "reported_value": 2885.0,
+    "unit": "",
+    "line_number": 18,
+    "raw_text": "| 2029 non-IFRS归母 | 2,885 | 4,235 | 5,246 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "风险评估 · 评分（最高5）",
+    "reported_value": 3.5,
+    "unit": "",
+    "line_number": 32,
+    "raw_text": "| 风险评估 | 李录：下行和治理 | 3.5 | 新AI亏损、折旧与入口替代是主要不确定性 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "收入 · 2024全年",
+    "reported_value": 6602.57,
+    "unit": "",
+    "line_number": 44,
+    "raw_text": "| 收入 | 6,602.57 | 7,517.66 | 4,012.43 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "IFRS归母净利润 · 2026上半年",
+    "reported_value": 1141.15,
+    "unit": "",
+    "line_number": 45,
+    "raw_text": "| IFRS归母净利润 | 1,940.73 | 2,248.42 | 1,141.15 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 27,
+    "label": "IFRS归母净利润 · 2024全年",
+    "reported_value": 1940.73,
+    "unit": "",
+    "line_number": 45,
+    "raw_text": "| IFRS归母净利润 | 1,940.73 | 2,248.42 | 1,141.15 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "non-IFRS经营利润 · 数值",
+    "reported_value": 756.36,
+    "unit": "",
+    "line_number": 55,
+    "raw_text": "| non-IFRS经营利润 | 756.36 | 与归母净利润是不同口径 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 41,
+    "label": "剔除算力预付款的自由现金流 · 数值",
+    "reported_value": 376.0,
+    "unit": "",
+    "line_number": 59,
+    "raw_text": "| 剔除算力预付款的自由现金流 | 376 | 调整后分析数，不是可立即分配的现金 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 51,
+    "label": "第三方客户云基础设施贡献 · 2029",
+    "reported_value": 140.0,
+    "unit": "",
+    "line_number": 105,
+    "raw_text": "| 第三方客户云基础设施贡献 | 35 | 75 | 140 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "上述正贡献合计 · 2028",
+    "reported_value": 535.0,
+    "unit": "",
+    "line_number": 107,
+    "raw_text": "| 上述正贡献合计 | 270 | 535 | 855 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 57,
+    "label": "上述正贡献合计 · 2029",
+    "reported_value": 855.0,
+    "unit": "",
+    "line_number": 107,
+    "raw_text": "| 上述正贡献合计 | 270 | 535 | 855 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 58,
+    "label": "减：老业务额外推理、折旧及基础设施费用 · 2027",
+    "reported_value": 50.0,
+    "unit": "",
+    "line_number": 108,
+    "raw_text": "| 减：老业务额外推理、折旧及基础设施费用 | 50 | 100 | 150 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "减：老业务额外推理、折旧及基础设施费用 · 2029",
+    "reported_value": 150.0,
+    "unit": "",
+    "line_number": 108,
+    "raw_text": "| 减：老业务额外推理、折旧及基础设施费用 | 50 | 100 | 150 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 63,
+    "label": "减：新AI产品经营净亏损 · 2029",
+    "reported_value": 250.0,
+    "unit": "",
+    "line_number": 109,
+    "raw_text": "| 减：新AI产品经营净亏损 | 520 | 420 | 250 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 71,
+    "label": "相对冻结参考的归母增量 · 2028",
+    "reported_value": 372.0,
+    "unit": "",
+    "line_number": 112,
+    "raw_text": "| 相对冻结参考的归母增量 | 120 | 372 | 724 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 72,
+    "label": "相对冻结参考的归母增量 · 2029",
+    "reported_value": 724.0,
+    "unit": "",
+    "line_number": 112,
+    "raw_text": "| 相对冻结参考的归母增量 | 120 | 372 | 724 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 109,
+    "label": "广告和商业推荐 · 经营利润贡献",
+    "reported_value": 2496.0,
+    "unit": "",
+    "line_number": 186,
+    "raw_text": "| 广告和商业推荐 | 1,800 | 5,200 | 11.19% | 48% | 2,496 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 108,
+    "label": "广告和商业推荐 · 2036经营利润率",
+    "reported_value": 48.0,
+    "unit": "%",
+    "line_number": 186,
+    "raw_text": "| 广告和商业推荐 | 1,800 | 5,200 | 11.19% | 48% | 2,496 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 115,
+    "label": "外部云与独立AI产品 · 2026收入基数",
+    "reported_value": 600.0,
+    "unit": "",
+    "line_number": 188,
+    "raw_text": "| 外部云与独立AI产品 | 600 | 2,500 | 15.34% | 18% | 450 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 130,
+    "label": "扣总部后经营利润 · 乐观",
+    "reported_value": 10557.0,
+    "unit": "",
+    "line_number": 204,
+    "raw_text": "| 扣总部后经营利润 | 2,779.50 | 6,645 | 10,557 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 140,
+    "label": "再扣维持性投入超过折旧的负担假设 · 悲观",
+    "reported_value": 250.0,
+    "unit": "",
+    "line_number": 208,
+    "raw_text": "| 再扣维持性投入超过折旧的负担假设 | 250 | 300 | 450 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 155,
+    "label": "要求较强安全边际 · 参考价格（港元）",
+    "reported_value": 360.0,
+    "unit": "",
+    "line_number": 260,
+    "raw_text": "| 要求较强安全边际 | 以保守估值约450再打八折，同时确认生意未恶化 | 360以下 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

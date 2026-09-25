@@ -1,0 +1,47 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：Kuaishou20260924-model
+======================================================================
+
+  [92m✅ 通过[0m [ 7] 基准归母净利润 · 2029年                      报告:       222.87 
+                                                    model-results.json, assumption/calculation only: 222.87 (偏差 0.00%)
+  [92m✅ 通过[0m [ 8] 基准归母净利润 · 2036年                      报告:       405.60 
+                                                    model-results.json, assumption/calculation only: 405.60 (偏差 0.00%)
+  [92m✅ 通过[0m [ 9] 乐观归母净利润 · 2027年                      报告:       175.39 
+                                                    model-results.json, assumption/calculation only: 175.39 (偏差 0.00%)
+  [92m✅ 通过[0m [71] 核心业务经营利润率，不含可灵 · 2026E模型输入           报告:        12.50 %
+                                                    model-results.json, assumption/calculation only: 12.50 (偏差 0.00%)
+  [92m✅ 通过[0m [109] 悲观：可灵外部收入 · 2029E                    报告:        75.00 
+                                                    model-results.json, assumption/calculation only: 75.00 (偏差 0.00%)
+  [92m✅ 通过[0m [130] 基准：经营利润 · 2029E                      报告:        20.00 
+                                                    model-results.json, assumption/calculation only: 20.00 (偏差 0.00%)
+  [92m✅ 通过[0m [140] 乐观：固定费用 · 2027E                      报告:        65.00 
+                                                    model-results.json, assumption/calculation only: 65.00 (偏差 0.00%)
+  [92m✅ 通过[0m [144] 乐观：经营利润 · 2028E                      报告:        13.60 
+                                                    model-results.json, assumption/calculation only: 13.60 (偏差 0.00%)
+  [92m✅ 通过[0m [152] 主站AI税后贡献 · 金额（税前/税后按行标注）             报告:        17.05 
+                                                    model-results.json, assumption/calculation only: 17.05 (偏差 0.00%)
+  [92m✅ 通过[0m [155] 悲观 · 2027                            报告:       -21.29 
+                                                    model-results.json, assumption/calculation only: -21.29 (偏差 0.02%)
+  [92m✅ 通过[0m [164] 广告收入 · 悲观                            报告:       900.00 
+                                                    model-results.json, assumption/calculation only: 900.00 (偏差 0.00%)
+  [92m✅ 通过[0m [167] 直播收入 · 悲观                            报告:       220.00 
+                                                    model-results.json, assumption/calculation only: 220.00 (偏差 0.00%)
+  [92m✅ 通过[0m [174] 核心收入合计 · 基准                          报告:      1950.00 
+                                                    model-results.json, assumption/calculation only: 1950.00 (偏差 0.00%)
+  [92m✅ 通过[0m [180] 核心AI效率/结构经营净增益 · 基准                  报告:        45.00 
+                                                    model-results.json, assumption/calculation only: 45.00 (偏差 0.00%)
+  [92m✅ 通过[0m [184] 金融及其他经常性净收益 · 乐观                     报告:        25.00 
+                                                    model-results.json, assumption/calculation only: 25.00 (偏差 0.00%)
+  [92m✅ 通过[0m [190] 可灵外部收入 · 乐观                          报告:      1200.00 
+                                                    model-results.json, assumption/calculation only: 1200.00 (偏差 0.00%)
+  [92m✅ 通过[0m [189] 可灵外部收入 · 基准                          报告:       500.00 
+                                                    model-results.json, assumption/calculation only: 500.00 (偏差 0.00%)
+  [92m✅ 通过[0m [218] 2029PE假设 · 悲观                        报告:         8.00 
+                                                    model-results.json, assumption/calculation only: 8.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 18  |  通过: [92m18[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================

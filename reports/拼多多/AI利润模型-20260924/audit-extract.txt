@@ -1,0 +1,344 @@
+======================================================================
+报告数据抽检清单
+文件：reports/拼多多/拼多多-AI与三年十年利润研究-20260924.md
+总提取数据点：162  |  抽样比例：15%  |  抽检数量：25
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  7     32  经营利润 · 2023                                586.99
+  9     32  经营利润 · 2025审计                              931.02
+  8     32  经营利润 · 2024                               1084.23
+ 23     44  2026Q2归母净利润 · 数值                           271.82
+ 24     45  2026H1在线营销收入 · 数值                         1075.73
+ 27     48  同口径TTM经营利润 · 数值                            985.53
+ 29     59  现金及等价物 · 数值                               1289.18
+ 36     79  供给组织与成本效率 · 研究评分/5                           4.00
+ 51    156  毛收益合计 · 税前毛收益/扣减（亿元）                       127.67
+ 56    160  税后贡献 · 计算假设                                 78.00  %
+ 57    160  税后贡献 · 税前毛收益/扣减（亿元）                         50.21
+ 58    172  悲观 · 2027                                   -7.50
+ 60    172  悲观 · 2029                                  -18.75
+ 63    173  基准 · 2029                                   50.70
+ 71    193  交易服务年增长 · 乐观                                18.00  %
+ 72    194  2027/2028/2029基础经营利润率 · 悲观                  17.50  %
+109    220  含AI的正常化归母利润 · 2028E                       1068.05
+108    220  含AI的正常化归母利润 · 2027E                        941.53
+115    237  基础交易服务收入（亿元） · 基准                         5000.00
+130    243  正常化归母净利润（亿元） · 乐观                         3140.00
+140    297  欧盟小包关税 · 模型含义                                3.00
+144    337  悲观 · PE假设                                    8.00  倍
+152    339  乐观 · PE假设                                   16.00  倍
+155    349  商业模式与护城河 · 评分/5                              3.50
+161    376  价格超过约97美元 · 对应行动条件                          12.00  %
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 7,
+    "label": "经营利润 · 2023",
+    "reported_value": 586.99,
+    "unit": "",
+    "line_number": 32,
+    "raw_text": "| 经营利润 | 304.02 | 586.99 | 1084.23 | 931.02 | 473.30 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "经营利润 · 2025审计",
+    "reported_value": 931.02,
+    "unit": "",
+    "line_number": 32,
+    "raw_text": "| 经营利润 | 304.02 | 586.99 | 1084.23 | 931.02 | 473.30 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "经营利润 · 2024",
+    "reported_value": 1084.23,
+    "unit": "",
+    "line_number": 32,
+    "raw_text": "| 经营利润 | 304.02 | 586.99 | 1084.23 | 931.02 | 473.30 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "2026Q2归母净利润 · 数值",
+    "reported_value": 271.82,
+    "unit": "",
+    "line_number": 44,
+    "raw_text": "| 2026Q2归母净利润 | 271.82 | 官方与独立来源一致 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "2026H1在线营销收入 · 数值",
+    "reported_value": 1075.73,
+    "unit": "",
+    "line_number": 45,
+    "raw_text": "| 2026H1在线营销收入 | 1075.73 | 不是正式国内业务分部 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 27,
+    "label": "同口径TTM经营利润 · 数值",
+    "reported_value": 985.53,
+    "unit": "",
+    "line_number": 48,
+    "raw_text": "| 同口径TTM经营利润 | 985.53 | 保留股份支付费用 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "现金及等价物 · 数值",
+    "reported_value": 1289.18,
+    "unit": "",
+    "line_number": 59,
+    "raw_text": "| 现金及等价物 | 1289.18 | 不含受限现金 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "供给组织与成本效率 · 研究评分/5",
+    "reported_value": 4.0,
+    "unit": "",
+    "line_number": 79,
+    "raw_text": "| 供给组织与成本效率 | 4.0 | 订单聚合、价格反馈、组织执行 | 对手同等价质的全链条成本更低 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 51,
+    "label": "毛收益合计 · 税前毛收益/扣减（亿元）",
+    "reported_value": 127.67,
+    "unit": "",
+    "line_number": 156,
+    "raw_text": "| 毛收益合计 | 四项相加 | 127.67 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "税后贡献 · 计算假设",
+    "reported_value": 78.0,
+    "unit": "%",
+    "line_number": 160,
+    "raw_text": "| 税后贡献 | 以上乘78% | 50.21 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 57,
+    "label": "税后贡献 · 税前毛收益/扣减（亿元）",
+    "reported_value": 50.21,
+    "unit": "",
+    "line_number": 160,
+    "raw_text": "| 税后贡献 | 以上乘78% | 50.21 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 58,
+    "label": "悲观 · 2027",
+    "reported_value": -7.5,
+    "unit": "",
+    "line_number": 172,
+    "raw_text": "| 悲观 | -7.50 | -11.25 | -18.75 | 入口流失、费用与让利超过提效 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "悲观 · 2029",
+    "reported_value": -18.75,
+    "unit": "",
+    "line_number": 172,
+    "raw_text": "| 悲观 | -7.50 | -11.25 | -18.75 | 入口流失、费用与让利超过提效 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 63,
+    "label": "基准 · 2029",
+    "reported_value": 50.7,
+    "unit": "",
+    "line_number": 173,
+    "raw_text": "| 基准 | 7.80 | 27.30 | 50.70 | 渐进部署，竞争吸收部分收益 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 71,
+    "label": "交易服务年增长 · 乐观",
+    "reported_value": 18.0,
+    "unit": "%",
+    "line_number": 193,
+    "raw_text": "| 交易服务年增长 | +4% | +12% | +18% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 72,
+    "label": "2027/2028/2029基础经营利润率 · 悲观",
+    "reported_value": 17.5,
+    "unit": "%",
+    "line_number": 194,
+    "raw_text": "| 2027/2028/2029基础经营利润率 | 17.5% / 17% / 16.5% | 21% / 21.5% / 22% | 23% / 24% / 25% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 109,
+    "label": "含AI的正常化归母利润 · 2028E",
+    "reported_value": 1068.05,
+    "unit": "",
+    "line_number": 220,
+    "raw_text": "| 含AI的正常化归母利润 | 941.53 | 1068.05 | 1210.41 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 108,
+    "label": "含AI的正常化归母利润 · 2027E",
+    "reported_value": 941.53,
+    "unit": "",
+    "line_number": 220,
+    "raw_text": "| 含AI的正常化归母利润 | 941.53 | 1068.05 | 1210.41 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 115,
+    "label": "基础交易服务收入（亿元） · 基准",
+    "reported_value": 5000.0,
+    "unit": "",
+    "line_number": 237,
+    "raw_text": "| 基础交易服务收入（亿元） | 3000 | 5000 | 8000 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 130,
+    "label": "正常化归母净利润（亿元） · 乐观",
+    "reported_value": 3140.0,
+    "unit": "",
+    "line_number": 243,
+    "raw_text": "| 正常化归母净利润（亿元） | 625.50 | 1758.90 | 3140.00 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 140,
+    "label": "欧盟小包关税 · 模型含义",
+    "reported_value": 3.0,
+    "unit": "",
+    "line_number": 297,
+    "raw_text": "| 欧盟小包关税 | 2026-07-01起，对低于150欧元、直接寄消费者小包按每个不同关税子目类别征3欧元 | 不是每包统一3欧元或每件3欧元；低客单混合篮子承压 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 144,
+    "label": "悲观 · PE假设",
+    "reported_value": 8.0,
+    "unit": "倍",
+    "line_number": 337,
+    "raw_text": "| 悲观 | 690.73 | 8倍 | 53.34 | -11.5% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 152,
+    "label": "乐观 · PE假设",
+    "reported_value": 16.0,
+    "unit": "倍",
+    "line_number": 339,
+    "raw_text": "| 乐观 | 1676.04 | 16倍 | 258.85 | +44.0% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 155,
+    "label": "商业模式与护城河 · 评分/5",
+    "reported_value": 3.5,
+    "unit": "",
+    "line_number": 349,
+    "raw_text": "| 商业模式与护城河 | 段永平视角 | 3.5 | 成本和供给强，用户锁定弱 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 161,
+    "label": "价格超过约97美元 · 对应行动条件",
+    "reported_value": 12.0,
+    "unit": "%",
+    "line_number": 376,
+    "raw_text": "| 价格超过约97美元 | 相对于本文12%回报要求的基准折现值，需提高盈利、降低风险或调整回报要求才有新增依据 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

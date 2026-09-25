@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<rect x="0.5" y="0.5" width="879" height="439" rx="14" fill="#fcfcfb" stroke="#e5e4e0"/>
+<text x="28" y="40" font-size="20" font-weight="600" fill="#0b0b0b">验证门失灵的一幕：选择集在涨，测试集回到起点</text>
+<text x="28" y="64" font-size="13" fill="#52514e">SkillOpt 数学基准的训练过程。据论文图 3（c）读图重绘，数值为估读，可能有 ±0.01 的误差</text>
+<rect x="28" y="86" width="12" height="12" rx="3" fill="#eb6834"/>
+<text x="46" y="97" font-size="13" fill="#52514e">选择集上的最优分（决定接不接受编辑）</text>
+<rect x="324" y="86" width="12" height="12" rx="3" fill="#2a78d6"/>
+<text x="342" y="97" font-size="13" fill="#52514e">从未见过的测试集</text>
+<line x1="80" y1="370.0" x2="760" y2="370.0" stroke="#e5e4e0"/>
+<text x="70" y="374.0" font-size="12" fill="#898781" text-anchor="end">0.5</text>
+<line x1="80" y1="308.5" x2="760" y2="308.5" stroke="#e5e4e0"/>
+<text x="70" y="312.5" font-size="12" fill="#898781" text-anchor="end">0.6</text>
+<line x1="80" y1="247.00000000000003" x2="760" y2="247.00000000000003" stroke="#e5e4e0"/>
+<text x="70" y="251.00000000000003" font-size="12" fill="#898781" text-anchor="end">0.7</text>
+<line x1="80" y1="185.49999999999997" x2="760" y2="185.49999999999997" stroke="#e5e4e0"/>
+<text x="70" y="189.49999999999997" font-size="12" fill="#898781" text-anchor="end">0.8</text>
+<line x1="80" y1="124.0" x2="760" y2="124.0" stroke="#e5e4e0"/>
+<text x="70" y="128.0" font-size="12" fill="#898781" text-anchor="end">0.9</text>
+<text x="80.0" y="390" font-size="12" fill="#898781" text-anchor="middle">第 1 轮</text>
+<text x="216.0" y="390" font-size="12" fill="#898781" text-anchor="middle">第 2 轮</text>
+<text x="352.0" y="390" font-size="12" fill="#898781" text-anchor="middle">第 4 轮</text>
+<text x="488.0" y="390" font-size="12" fill="#898781" text-anchor="middle">第 8 轮</text>
+<text x="624.0" y="390" font-size="12" fill="#898781" text-anchor="middle">第 12 轮</text>
+<text x="760.0" y="390" font-size="12" fill="#898781" text-anchor="middle">第 16 轮</text>
+<polyline points="80.0,207.025 216.0,207.025 352.0,207.025 488.0,207.025 624.0,207.025 760.0,173.20000000000005" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="80.0" cy="207.025" r="4.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="216.0" cy="207.025" r="4.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="352.0" cy="207.025" r="4.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="488.0" cy="207.025" r="4.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="624.0" cy="207.025" r="4.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="760.0" cy="173.20000000000005" r="4.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<text x="772.0" y="177.20000000000005" font-size="13" font-weight="600" fill="#0b0b0b">0.82</text>
+<polyline points="80.0,326.95000000000005 216.0,302.35 352.0,293.125 488.0,302.35 624.0,326.95000000000005 760.0,326.95000000000005" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="80.0" cy="326.95000000000005" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="216.0" cy="302.35" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="352.0" cy="293.125" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="488.0" cy="302.35" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="624.0" cy="326.95000000000005" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="760.0" cy="326.95000000000005" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="772.0" y="330.95000000000005" font-size="13" font-weight="600" fill="#0b0b0b">0.57</text>
+<text x="352.0" y="281.125" font-size="12" fill="#52514e" text-anchor="middle">最高约 0.625</text>
+<text x="88.0" y="346.95000000000005" font-size="12" fill="#52514e">起点约 0.57</text>
+<text x="28" y="426" font-size="12" fill="#898781">数学基准每轮只有 35 道训练题，选择集更小。在一个小集合上"严格涨分才接受"，学到的是这个小集合。</text>
+</svg>

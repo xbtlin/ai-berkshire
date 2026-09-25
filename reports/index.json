@@ -1,6 +1,193 @@
 {
-  "count": 2346,
+  "count": 2364,
   "reports": [
+    {
+      "title": "茅台酒：基酒产量与 5 年后销量的关系，及 2036 年可销售吨数推导",
+      "path": "reports/茅台/茅台-基酒产量与5年后销量-2036可售量推导-20260925.md",
+      "bucket": "公司",
+      "group": "茅台",
+      "series": "",
+      "type": "研究",
+      "date": "2026-09-25",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "美团：AI 能创造多少利润，十年后还能留下多少？",
+      "path": "reports/美团/美团-investment-team-AI利润-20260925.md",
+      "bucket": "公司",
+      "group": "美团",
+      "series": "",
+      "type": "研究",
+      "date": "2026-09-25",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "审计范围",
+      "path": "reports/美团/AI利润模型-20260925/audit_scope.md",
+      "bucket": "公司",
+      "group": "美团",
+      "series": "AI利润模型-20260925",
+      "type": "研究",
+      "date": "2026-09-25",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "泡泡玛特：AI 对未来三年利润的影响与 2036 年盈利情景",
+      "path": "reports/泡泡玛特/泡泡玛特-investment-team-AI利润与竞争格局-20260925.md",
+      "bucket": "公司",
+      "group": "泡泡玛特",
+      "series": "",
+      "type": "研究",
+      "date": "2026-09-25",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "黄峥与拼多多控制权：谁在掌舵、他还能不能回来",
+      "path": "reports/拼多多/黄峥与拼多多控制权-20260925.md",
+      "bucket": "公司",
+      "group": "拼多多",
+      "series": "",
+      "type": "研究",
+      "date": "2026-09-25",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "AI 的下一个十年，押成本曲线，别押替代日期",
+      "path": "reports/AI产业研究/公众号-AI十年高概率清单-押成本曲线别押替代日期-20260925.md",
+      "bucket": "专题",
+      "group": "AI产业研究",
+      "series": "",
+      "type": "公众号",
+      "date": "2026-09-25",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "腾讯：AI如何影响未来三年利润，2036年能赚多少钱？",
+      "path": "reports/腾讯/腾讯-AI利润研究-20260924/腾讯-investment-team-AI利润与竞争格局.md",
+      "bucket": "公司",
+      "group": "腾讯",
+      "series": "腾讯-AI利润研究-20260924",
+      "type": "研究",
+      "date": "2026-09-24",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "拼多多（PDD）研究报告",
+      "path": "reports/拼多多/拼多多-AI与三年十年利润研究-20260924.md",
+      "bucket": "公司",
+      "group": "拼多多",
+      "series": "",
+      "type": "研究",
+      "date": "2026-09-24",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "拼多多AI与利润研究：审计说明",
+      "path": "reports/拼多多/AI利润模型-20260924/audit-notes.md",
+      "bucket": "公司",
+      "group": "拼多多",
+      "series": "AI利润模型-20260924",
+      "type": "研究",
+      "date": "2026-09-24",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "快手：AI对未来三年利润的影响与2036年盈利能力",
+      "path": "reports/快手/快手-investment-team-AI利润与竞争格局-20260924.md",
+      "bucket": "公司",
+      "group": "快手",
+      "series": "",
+      "type": "研究",
+      "date": "2026-09-24",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "快手与 MiniMax：护城河与五年盈利推演",
+      "path": "reports/快手与MiniMax-护城河与五年盈利推演-20260922.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "研究",
+      "date": "2026-09-22",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "不动权重的训练：文本空间优化两年演进——从 TextGrad 到技能自进化，再到运行框架与模型协同进化",
+      "path": "reports/AI产业研究/文本空间优化-从TextGrad到技能与运行框架协同进化-技术报告-20260922.md",
+      "bucket": "专题",
+      "group": "AI产业研究",
+      "series": "",
+      "type": "研究",
+      "date": "2026-09-22",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "大模型请了更强的老师，成功率从 78% 掉到 63%",
+      "path": "reports/AI产业研究/公众号-不动权重的训练-老师更强学生反而掉15分-20260922.md",
+      "bucket": "专题",
+      "group": "AI产业研究",
+      "series": "",
+      "type": "公众号",
+      "date": "2026-09-22",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "一个不说话的模型，六天里被测出了什么：拆 Jev",
+      "path": "reports/AI产业研究/公众号-Jev-一个不说话的模型六天里被测出了什么-20260921.md",
+      "bucket": "专题",
+      "group": "AI产业研究",
+      "series": "",
+      "type": "公众号",
+      "date": "2026-09-21",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "Jev 与\"决策模型\"品类：技术报告、商业评估与未来三年影响",
+      "path": "reports/AI产业研究/Jev与决策模型品类-技术报告与商业评估-20260921.md",
+      "bucket": "专题",
+      "group": "AI产业研究",
+      "series": "",
+      "type": "研究",
+      "date": "2026-09-21",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "曾鸣最新访谈：现在连浏览器都还没出现，模型公司不是终局赢家",
+      "path": "reports/曾鸣/曾鸣-公众号-20260920.md",
+      "bucket": "大师研究",
+      "group": "曾鸣",
+      "series": "",
+      "type": "公众号",
+      "date": "2026-09-20",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "基模变强之后：业务后训练的空间与算法工程师的去向",
+      "path": "reports/AI产业研究/业务后训练的剩余空间与算法工程师职能迁移-20260919.md",
+      "bucket": "专题",
+      "group": "AI产业研究",
+      "series": "",
+      "type": "研究",
+      "date": "2026-09-19",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "早期年度财务补录（用于重建长历史估值序列）",
       "path": "reports/持仓估值分位与未来盈利-20260912/早期年度财务补录.md",
@@ -1582,6 +1769,17 @@
       "series": "",
       "type": "研究",
       "date": "2026-09-04",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "曾鸣最新访谈原文整理：2026，像极了1995",
+      "path": "reports/曾鸣/曾鸣-张小珺访谈-原文整理-20260903.md",
+      "bucket": "大师研究",
+      "group": "曾鸣",
+      "series": "",
+      "type": "研究",
+      "date": "2026-09-03",
       "date_source": "文件名",
       "ticker": ""
     },

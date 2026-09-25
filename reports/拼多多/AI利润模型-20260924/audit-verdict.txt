@@ -1,0 +1,55 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：拼多多-AI与三年十年利润研究-20260924.md
+======================================================================
+
+  ✅ 通过 [ 7] 经营利润 · 2023                          报告:       586.99
+                                                    https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf: 586.99 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 586.99 (偏差 0.00%)
+  ✅ 通过 [ 9] 经营利润 · 2025审计                        报告:       931.02
+                                                    https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf: 931.02 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 931.02 (偏差 0.00%)
+  ✅ 通过 [ 8] 经营利润 · 2024                          报告:      1084.23
+                                                    https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf: 1084.23 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 1084.23 (偏差 0.00%)
+  ✅ 通过 [23] 2026Q2归母净利润 · 数值                     报告:       271.82
+                                                    https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial: 271.82 (偏差 0.00%)  |  https://www.marketscreener.com/news/pdd-holdings-inc-reports-earnings-results-for-the-second-quarter-and-six-months-ended-june-30-2026-ce7858dbda8bf527: 271.82 (偏差 0.00%)
+  ✅ 通过 [24] 2026H1在线营销收入 · 数值                    报告:      1075.73
+                                                    https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial: 1075.73 (偏差 0.00%)
+  ✅ 通过 [27] 同口径TTM经营利润 · 数值                      报告:       985.53
+                                                    Audited FY2025 931.02131 - H1 2025 418.79 + H1 2026 473.30: 985.53 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 985.53 (偏差 0.00%)
+  ✅ 通过 [29] 现金及等价物 · 数值                          报告:      1289.18
+                                                    https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial: 1289.18 (偏差 0.00%)
+  ✅ 通过 [51] 毛收益合计 · 税前毛收益/扣减（亿元）                 报告:       127.67
+                                                    model.py AI bridge, assumptions not facts: 127.67 (偏差 0.00%)
+  ✅ 通过 [56] 税后贡献 · 计算假设                          报告:        78.00 %
+                                                    Declared 1 - 22% tax assumption: 78.00 (偏差 0.00%)
+  ✅ 通过 [57] 税后贡献 · 税前毛收益/扣减（亿元）                  报告:        50.21
+                                                    model.py AI bridge: 50.21 (偏差 0.00%)
+  ✅ 通过 [58] 悲观 · 2027                            报告:        -7.50
+                                                    -10*(1-.25): -7.50 (偏差 0.00%)
+  ✅ 通过 [60] 悲观 · 2029                            报告:       -18.75
+                                                    -25*(1-.25): -18.75 (偏差 0.00%)
+  ✅ 通过 [63] 基准 · 2029                            报告:        50.70
+                                                    65*(1-.22): 50.70 (偏差 0.00%)
+  ✅ 通过 [71] 交易服务年增长 · 乐观                         报告:        18.00 %
+                                                    model.inputs.bull.growth[1]: 18.00 (偏差 0.00%)
+  ✅ 通过 [72] 2027/2028/2029基础经营利润率 · 悲观           报告:        17.50 %
+                                                    Parser reads first year; full sequence17.5/17/16.5 checked against model: 17.50 (偏差 0.00%)
+  ✅ 通过 [109] 含AI的正常化归母利润 · 2028E                  报告:      1068.05
+                                                    model.py base2028: 1068.05 (偏差 0.00%)
+  ✅ 通过 [108] 含AI的正常化归母利润 · 2027E                  报告:       941.53
+                                                    model.py base2027: 941.53 (偏差 0.00%)
+  ✅ 通过 [115] 基础交易服务收入（亿元） · 基准                    报告:      5000.00
+                                                    model.inputs.base.terminal[1]: 5000.00 (偏差 0.00%)
+  ✅ 通过 [130] 正常化归母净利润（亿元） · 乐观                    报告:      3140.00
+                                                    (13500*.25+350+200)*.8: 3140.00 (偏差 0.00%)
+  ✅ 通过 [144] 悲观 · PE假设                            报告:         8.00 倍
+                                                    model.inputs.bear.pe2029: 8.00 (偏差 0.00%)
+  ✅ 通过 [152] 乐观 · PE假设                            报告:        16.00 倍
+                                                    model.inputs.bull.pe2029: 16.00 (偏差 0.00%)
+  ✅ 通过 [161] 价格超过约97美元 · 对应行动条件                   报告:        12.00 %
+                                                    Declared discount rate12%; parser captured percentage inside action prose: 12.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 22  |  通过: 22  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================

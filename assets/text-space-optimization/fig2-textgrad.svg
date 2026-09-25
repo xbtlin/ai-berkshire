@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<defs><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="ao" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#eb6834" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#2a78d6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="0.5" y="0.5" width="879" height="519" rx="14" fill="#fcfcfb" stroke="#e5e4e0"/>
+<text x="28" y="40" font-size="20" font-weight="600" fill="#0b0b0b">TextGrad：把「批评意见」当梯度往回传</text>
+<text x="28" y="64" font-size="13" fill="#52514e">前向照常调用大模型；反向时每条边多调用一次大模型，把下游的批评翻译成对上游变量的修改建议</text>
+<rect x="28" y="100" width="170" height="70" rx="10" fill="#e6f0fc" stroke="#2a78d6"/>
+<text x="113.0" y="122" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">提示词</text>
+<text x="113.0" y="142" font-size="12" fill="#52514e" text-anchor="middle">待优化的变量</text>
+<rect x="28" y="186" width="170" height="46" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="113.0" y="214.0" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">题目</text>
+<rect x="262" y="120" width="130" height="70" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="327.0" y="142" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">执行模型</text>
+<text x="327.0" y="162" font-size="12" fill="#52514e" text-anchor="middle">gpt-3.5-turbo</text>
+<rect x="456" y="120" width="130" height="70" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="521.0" y="142" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">回答</text>
+<text x="521.0" y="162" font-size="12" fill="#52514e" text-anchor="middle">中间变量</text>
+<rect x="650" y="120" width="200" height="70" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="750.0" y="142" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">损失</text>
+<text x="750.0" y="162" font-size="12" fill="#52514e" text-anchor="middle">对照标准答案的评价</text>
+<line x1="198" y1="140" x2="258" y2="150" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<line x1="198" y1="208" x2="258" y2="170" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<line x1="392" y1="155" x2="452" y2="155" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<line x1="586" y1="155" x2="646" y2="155" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<text x="440" y="108" font-size="12" fill="#898781" text-anchor="middle">前向</text>
+<text x="736" y="258" font-size="12" fill="#898781" text-anchor="end">反向（批评由 gpt-4o 生成，此处文字为示意）</text>
+<rect x="456" y="270" width="394" height="62" rx="10" fill="#fdebe3" stroke="#eb6834"/>
+<text x="653.0" y="292" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">对「回答」的批评</text>
+<text x="653.0" y="312" font-size="12" fill="#52514e" text-anchor="middle">「漏数了一件物品，也没有逐项列出数量」</text>
+<rect x="28" y="270" width="364" height="62" rx="10" fill="#fdebe3" stroke="#eb6834"/>
+<text x="210.0" y="292" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">对「提示词」的批评</text>
+<text x="210.0" y="312" font-size="12" fill="#52514e" text-anchor="middle">「应要求先逐项列出名称与数量，再求和并复核」</text>
+<line x1="750" y1="194" x2="750" y2="266" stroke="#eb6834" stroke-width="1.6" marker-end="url(#ao)"/>
+<line x1="452" y1="301" x2="396" y2="301" stroke="#eb6834" stroke-width="1.6" marker-end="url(#ao)"/>
+<line x1="113" y1="266" x2="113" y2="236" stroke="#eb6834" stroke-width="1.6" marker-end="url(#ao)"/>
+<text x="124" y="258" font-size="12" fill="#52514e" text-anchor="start">文本梯度下降：优化器模型按批评重写提示词</text>
+<line x1="28" y1="362" x2="852" y2="362" stroke="#e5e4e0"/>
+<text x="28" y="388" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600">论文里的真实前后对比（大基准难题集的物品计数任务，12 次迭代、每批 3 题，共见 36 道训练题）</text>
+<rect x="28" y="402" width="400" height="96" rx="10" fill="#f0efec" stroke="#e5e4e0"/>
+<text x="228.0" y="424" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">优化前　准确率 77.8%</text>
+<text x="228.0" y="444" font-size="12" fill="#52514e" text-anchor="middle">「回答推理题。逐步思考。最后一行用</text>
+<text x="228.0" y="461" font-size="12" fill="#52514e" text-anchor="middle">『Answer: 数值』的格式给出答案。」</text>
+<rect x="452" y="402" width="400" height="96" rx="10" fill="#e6f0fc" stroke="#2a78d6"/>
+<text x="652.0" y="424" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">优化后　准确率 91.9%</text>
+<text x="652.0" y="444" font-size="12" fill="#52514e" text-anchor="middle">「逐项列出物品与数量；直接从清单求和；</text>
+<text x="652.0" y="461" font-size="12" fill="#52514e" text-anchor="middle">核对每项是否与问题相关；给出答案前再数一遍。」</text>
+</svg>

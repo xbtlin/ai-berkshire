@@ -1,0 +1,691 @@
+{
+  "cutoff": "2026-09-24",
+  "units": "RMB亿元 except price USD",
+  "cross_source": [
+    {
+      "field": "2022 revenue",
+      "primary": "1305.57589",
+      "secondary": "1305.58",
+      "primary_url": "https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2023-and-fiscal-year-2023",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0003148036074716422650850269608",
+      "pass_1pct": true
+    },
+    {
+      "field": "2023 revenue",
+      "primary": "2476.39205",
+      "secondary": "2476.39",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.00008278172270824403591507249428",
+      "pass_1pct": true
+    },
+    {
+      "field": "2024 revenue",
+      "primary": "3938.36097",
+      "secondary": "3938.36",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.00002462953516421832709763015958",
+      "pass_1pct": true
+    },
+    {
+      "field": "2025 revenue",
+      "primary": "4318.45713",
+      "secondary": "4318.46",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.00006645892071180523679298397944",
+      "pass_1pct": true
+    },
+    {
+      "field": "2022 operating profit",
+      "primary": "304.01921",
+      "secondary": "304.02",
+      "primary_url": "https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2023-and-fiscal-year-2023",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0002598520007995547386627312136",
+      "pass_1pct": true
+    },
+    {
+      "field": "2023 operating profit",
+      "primary": "586.98762",
+      "secondary": "586.99",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0004054599993096958331080304556",
+      "pass_1pct": true
+    },
+    {
+      "field": "2024 operating profit",
+      "primary": "1084.22862",
+      "secondary": "1084.23",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0001272794293144558386588245568",
+      "pass_1pct": true
+    },
+    {
+      "field": "2025 operating profit",
+      "primary": "931.02131",
+      "secondary": "931.02",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0001407056944808277267036991882",
+      "pass_1pct": true
+    },
+    {
+      "field": "2022 net",
+      "primary": "315.38062",
+      "secondary": "315.38",
+      "primary_url": "https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2023-and-fiscal-year-2023",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0001965878562861598788156355327",
+      "pass_1pct": true
+    },
+    {
+      "field": "2023 net",
+      "primary": "600.26544",
+      "secondary": "600.27",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0007596639246797216911238468102",
+      "pass_1pct": true
+    },
+    {
+      "field": "2024 net",
+      "primary": "1124.34512",
+      "secondary": "1124.35",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0004340304336447869316140225699",
+      "pass_1pct": true
+    },
+    {
+      "field": "2025 net",
+      "primary": "978.42539",
+      "secondary": "978.43",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0004711652055554281967273968636",
+      "pass_1pct": true
+    },
+    {
+      "field": "2022 OCF",
+      "primary": "485.07860",
+      "secondary": "485.08",
+      "primary_url": "https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2023-and-fiscal-year-2023",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0002886130206527354535945308657",
+      "pass_1pct": true
+    },
+    {
+      "field": "2023 OCF",
+      "primary": "941.62531",
+      "secondary": "941.63",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0004980749720926681548098999166",
+      "pass_1pct": true
+    },
+    {
+      "field": "2024 OCF",
+      "primary": "1219.29292",
+      "secondary": "1219.29",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0002394830603953642247016410134",
+      "pass_1pct": true
+    },
+    {
+      "field": "2025 OCF",
+      "primary": "1069.38690",
+      "secondary": "1069.39",
+      "primary_url": "https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0.0002898857279811450841599050821",
+      "pass_1pct": true
+    },
+    {
+      "field": "2026H1 revenue",
+      "primary": "2185.87",
+      "secondary": "2185.87",
+      "primary_url": "https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial",
+      "secondary_url": "https://www.marketscreener.com/news/pdd-holdings-inc-reports-earnings-results-for-the-second-quarter-and-six-months-ended-june-30-2026-ce7858dbda8bf527",
+      "difference_pct": "0",
+      "pass_1pct": true
+    },
+    {
+      "field": "2026H1 net",
+      "primary": "397.29",
+      "secondary": "397.29",
+      "primary_url": "https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial",
+      "secondary_url": "https://www.marketscreener.com/news/pdd-holdings-inc-reports-earnings-results-for-the-second-quarter-and-six-months-ended-june-30-2026-ce7858dbda8bf527",
+      "difference_pct": "0",
+      "pass_1pct": true
+    },
+    {
+      "field": "2026Q2 revenue",
+      "primary": "1123.58",
+      "secondary": "1123.58",
+      "primary_url": "https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial",
+      "secondary_url": "https://www.marketscreener.com/news/pdd-holdings-inc-reports-earnings-results-for-the-second-quarter-and-six-months-ended-june-30-2026-ce7858dbda8bf527",
+      "difference_pct": "0",
+      "pass_1pct": true
+    },
+    {
+      "field": "2026Q2 net",
+      "primary": "271.82",
+      "secondary": "271.82",
+      "primary_url": "https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial",
+      "secondary_url": "https://www.marketscreener.com/news/pdd-holdings-inc-reports-earnings-results-for-the-second-quarter-and-six-months-ended-june-30-2026-ce7858dbda8bf527",
+      "difference_pct": "0",
+      "pass_1pct": true
+    },
+    {
+      "field": "2026Q2 cash and short investments",
+      "primary": "4564.14",
+      "secondary": "4564.14",
+      "primary_url": "https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0",
+      "pass_1pct": true
+    },
+    {
+      "field": "2026Q2 cash less leases",
+      "primary": "4515.70",
+      "secondary": "4515.70",
+      "primary_url": "https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial",
+      "secondary_url": "https://stockanalysis.com/stocks/pdd/financials/",
+      "difference_pct": "0",
+      "pass_1pct": true
+    },
+    {
+      "field": "20260923 USD close",
+      "primary": "79.20",
+      "secondary": "79.20",
+      "primary_url": "https://stockanalysis.com/stocks/pdd/history/",
+      "secondary_url": "https://www.marketscreener.com/news/pdd-holdings-inc-reports-earnings-results-for-the-second-quarter-and-six-months-ended-june-30-2026-ce7858dbda8bf527",
+      "difference_pct": "0",
+      "pass_1pct": true
+    }
+  ],
+  "tools": [
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2022 revenue",
+        "--values",
+        "{\"primary\": 1305.57589, \"independent\": 1305.58}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2022 revenue (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 1,305.58 亿元 or USD\n\n  ✅ primary             : 1,305.58 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 1,305.58 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 1,305.58 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2023 revenue",
+        "--values",
+        "{\"primary\": 2476.39205, \"independent\": 2476.39}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2023 revenue (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 2,476.39 亿元 or USD\n\n  ✅ primary             : 2,476.39 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 2,476.39 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 2,476.39 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2024 revenue",
+        "--values",
+        "{\"primary\": 3938.36097, \"independent\": 3938.36}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2024 revenue (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 3,938.36 亿元 or USD\n\n  ✅ primary             : 3,938.36 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 3,938.36 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 3,938.36 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2025 revenue",
+        "--values",
+        "{\"primary\": 4318.45713, \"independent\": 4318.46}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2025 revenue (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 4,318.46 亿元 or USD\n\n  ✅ primary             : 4,318.46 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 4,318.46 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 4,318.46 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2022 operating profit",
+        "--values",
+        "{\"primary\": 304.01921, \"independent\": 304.02}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2022 operating profit (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 304.02 亿元 or USD\n\n  ✅ primary             : 304.02 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 304.02 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 304.02 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2023 operating profit",
+        "--values",
+        "{\"primary\": 586.98762, \"independent\": 586.99}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2023 operating profit (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 586.99 亿元 or USD\n\n  ✅ primary             : 586.99 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 586.99 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 586.99 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2024 operating profit",
+        "--values",
+        "{\"primary\": 1084.22862, \"independent\": 1084.23}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2024 operating profit (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 1,084.23 亿元 or USD\n\n  ✅ primary             : 1,084.23 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 1,084.23 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 1,084.23 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2025 operating profit",
+        "--values",
+        "{\"primary\": 931.02131, \"independent\": 931.02}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2025 operating profit (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 931.02 亿元 or USD\n\n  ✅ primary             : 931.02 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 931.02 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 931.02 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2022 net",
+        "--values",
+        "{\"primary\": 315.38062, \"independent\": 315.38}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2022 net (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 315.38 亿元 or USD\n\n  ✅ primary             : 315.38 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 315.38 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 315.38 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2023 net",
+        "--values",
+        "{\"primary\": 600.26544, \"independent\": 600.27}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2023 net (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 600.27 亿元 or USD\n\n  ✅ primary             : 600.27 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 600.27 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 600.27 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2024 net",
+        "--values",
+        "{\"primary\": 1124.34512, \"independent\": 1124.35}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2024 net (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 1,124.35 亿元 or USD\n\n  ✅ primary             : 1,124.35 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 1,124.35 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 1,124.35 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2025 net",
+        "--values",
+        "{\"primary\": 978.42539, \"independent\": 978.43}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2025 net (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 978.43 亿元 or USD\n\n  ✅ primary             : 978.43 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 978.43 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 978.43 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2022 OCF",
+        "--values",
+        "{\"primary\": 485.0786, \"independent\": 485.08}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2022 OCF (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 485.08 亿元 or USD\n\n  ✅ primary             : 485.08 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 485.08 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 485.08 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2023 OCF",
+        "--values",
+        "{\"primary\": 941.62531, \"independent\": 941.63}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2023 OCF (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 941.63 亿元 or USD\n\n  ✅ primary             : 941.63 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 941.63 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 941.63 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2024 OCF",
+        "--values",
+        "{\"primary\": 1219.29292, \"independent\": 1219.29}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2024 OCF (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 1,219.29 亿元 or USD\n\n  ✅ primary             : 1,219.29 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 1,219.29 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 1,219.29 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2025 OCF",
+        "--values",
+        "{\"primary\": 1069.3869, \"independent\": 1069.39}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2025 OCF (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 1,069.39 亿元 or USD\n\n  ✅ primary             : 1,069.39 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 1,069.39 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 1,069.39 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2026H1 revenue",
+        "--values",
+        "{\"primary\": 2185.87, \"independent\": 2185.87}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2026H1 revenue (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 2,185.87 亿元 or USD\n\n  ✅ primary             : 2,185.87 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 2,185.87 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 2,185.87 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2026H1 net",
+        "--values",
+        "{\"primary\": 397.29, \"independent\": 397.29}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2026H1 net (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 397.29 亿元 or USD\n\n  ✅ primary             : 397.29 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 397.29 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 397.29 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2026Q2 revenue",
+        "--values",
+        "{\"primary\": 1123.58, \"independent\": 1123.58}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2026Q2 revenue (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 1,123.58 亿元 or USD\n\n  ✅ primary             : 1,123.58 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 1,123.58 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 1,123.58 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2026Q2 net",
+        "--values",
+        "{\"primary\": 271.82, \"independent\": 271.82}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2026Q2 net (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 271.82 亿元 or USD\n\n  ✅ primary             : 271.82 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 271.82 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 271.82 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2026Q2 cash and short investments",
+        "--values",
+        "{\"primary\": 4564.14, \"independent\": 4564.14}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2026Q2 cash and short investments (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 4,564.14 亿元 or USD\n\n  ✅ primary             : 4,564.14 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 4,564.14 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 4,564.14 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "2026Q2 cash less leases",
+        "--values",
+        "{\"primary\": 4515.7, \"independent\": 4515.7}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 2026Q2 cash less leases (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 4,515.70 亿元 or USD\n\n  ✅ primary             : 4,515.70 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 4,515.70 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 4,515.70 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "cross-validate",
+        "--field",
+        "20260923 USD close",
+        "--values",
+        "{\"primary\": 79.2, \"independent\": 79.2}",
+        "--unit",
+        "亿元 or USD"
+      ],
+      "output": "============================================================\n交叉验证: 20260923 USD close (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 79.20 亿元 or USD\n\n  ✅ primary             : 79.20 亿元 or USD  (偏差 0.00%)\n  ✅ independent         : 79.20 亿元 or USD  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 79.20 亿元 or USD\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "verify-market-cap",
+        "--price",
+        "78.38",
+        "--shares",
+        "1423396462",
+        "--reported",
+        "111570000000",
+        "--currency",
+        "USD"
+      ],
+      "output": "============================================================\n市值验算 (Market Cap Verification)\n============================================================\n  股价 (Price):       78.38 USD\n  总股本 (Shares):    1.42B\n  计算市值:           111.57B USD\n  报告市值:           111.57B USD\n  偏差:               0.00%\n\n  ✅ 验证通过, 偏差仅 0.00%\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "verify-valuation",
+        "--price",
+        "79.2",
+        "--eps",
+        "8.88760028957528957528957529"
+      ],
+      "output": "============================================================\n估值指标验算 (Valuation Verification)\n============================================================\n  当前股价: 79.2\n\n  PE (TTM):  79.2 / 8.887600289575289 = 8.91x\n  盈利收益率: 11.22%\n\n  ✅ 以上指标均使用精确十进制计算, 无浮点误差\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(4798.00*0.175+(-10)+100)*(1-0.25)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (4798.00*0.175+(-10)+100)*(1-0.25)\n  结果:   697.24\n  精确值: 697.2375\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(4899.9200*0.17+(-15)+110)*(1-0.25)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (4899.9200*0.17+(-15)+110)*(1-0.25)\n  结果:   695.99\n  精确值: 695.9898000000001\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(5005.916800*0.165+(-25)+120)*(1-0.25)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (5005.916800*0.165+(-25)+120)*(1-0.25)\n  结果:   690.73\n  精确值: 690.732204\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(5600*0.14+(-50)+100)*(1-0.25)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (5600*0.14+(-50)+100)*(1-0.25)\n  结果:   625.50\n  精确值: 625.5000000000001\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(5129.00*0.21+(10)+120)*(1-0.22)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (5129.00*0.21+(10)+120)*(1-0.22)\n  结果:   941.53\n  精确值: 941.5301999999999\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(5601.3800*0.215+(35)+130)*(1-0.22)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (5601.3800*0.215+(35)+130)*(1-0.22)\n  结果:   1,068.05\n  精确值: 1068.0514260000002\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(6121.859600*0.22+(65)+140)*(1-0.22)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (6121.859600*0.22+(65)+140)*(1-0.22)\n  结果:   1,210.41\n  精确值: 1210.41110736\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(9000*0.215+(180)+140)*(1-0.22)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (9000*0.215+(180)+140)*(1-0.22)\n  结果:   1,758.90\n  精确值: 1758.9\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(5366.00*0.23+(30)+150)*(1-0.20)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (5366.00*0.23+(30)+150)*(1-0.20)\n  结果:   1,131.34\n  精确值: 1131.344\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(6133.8800*0.24+(80)+170)*(1-0.20)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (6133.8800*0.24+(80)+170)*(1-0.20)\n  结果:   1,377.70\n  精确值: 1377.70496\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(7020.178400*0.25+(150)+190)*(1-0.20)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (7020.178400*0.25+(150)+190)*(1-0.20)\n  结果:   1,676.04\n  精确值: 1676.0356800000002\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "calc",
+        "--expr",
+        "(13500*0.25+(350)+200)*(1-0.20)"
+      ],
+      "output": "============================================================\n精确计算 (Exact Calculator)\n============================================================\n  表达式: (13500*0.25+(350)+200)*(1-0.20)\n  结果:   3,140.00\n  精确值: 3140.0\n",
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "three-scenario",
+        "--price",
+        "79.2",
+        "--eps",
+        "8.183976833976833976833976834",
+        "--shares",
+        "14.8",
+        "--growth",
+        "0.255026909171978083058747379",
+        "0.125994453360035555718341727",
+        "-0.0660394779110161677706135237",
+        "--pe",
+        "16",
+        "12",
+        "8",
+        "--years",
+        "3",
+        "--currency",
+        "USD"
+      ],
+      "output": "============================================================\n三情景估值模型 (Three-Scenario Valuation)\n============================================================\n  当前股价: 79.2 USD\n  当前EPS:  8.183976833976834\n  预测期:   3年\n\n  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅\n  ------------ -------- -------- ---------- ---------- --------\n  乐观 (Bull)         26%      16x      16.18     258.8  +226.8%\n  中性 (Base)         13%      12x      11.68     140.2   +77.0%\n  悲观 (Bear)         -7%       8x       6.67      53.3   -32.7%\n\n  ✅ 所有计算使用精确十进制, 结果可审计复现\n",
+      "exit_code": 0
+    }
+  ],
+  "limitations": [
+    "Tool cross-validate uses median and 2%; our release gate uses primary denominator and 1%.",
+    "Tool calc evaluates floats; model.py separately computes with Decimal.",
+    "Historical facts and forecast assumptions are different audit categories.",
+    "Latest precise point-in-time share count and AI ROI remain unverified."
+  ],
+  "version_difference": {
+    "FY2025_audited_net": "978.42539",
+    "preliminary_net": "993.64469",
+    "difference_pct": "1.555489070045494220054939500",
+    "resolution": "Use audited annual report, do not average versions; preliminary number is not used as current annual fact."
+  },
+  "market_cap_check_scope": "20260924 12:26 EDT StockAnalysis snapshot 78.38/111.57bn vs verified legal share count; closing cap at79.20 is separately calculated, not a verified exact close capitalization.",
+  "three_scenario_scope": "Equivalent 2026E-to-2029E earnings growth for terminal price cross-check only. Actual stock return horizon is 3.25 years in the report.",
+  "reverse_required_net": {
+    "12": "988.2396273120017494117758617",
+    "8": "1482.359440968002624117663792"
+  }
+}

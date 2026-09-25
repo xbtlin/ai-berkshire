@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="799" height="439" rx="14" fill="#fcfcfb" stroke="#e5e4e0"/>
+  <text x="28" y="40" font-size="20" font-weight="700" fill="#0b0b0b">同一个判断，两种做法</text>
+  <text x="772" y="40" font-size="12" fill="#8a897f" text-anchor="end">差别在"写"这一步</text>
+
+  <!-- 大模型 -->
+  <text x="28" y="80" font-size="14.5" font-weight="700" fill="#0b0b0b">用大模型做判断</text>
+  <g font-size="13" text-anchor="middle">
+    <rect x="28" y="94" width="132" height="60" rx="8" fill="#ffffff" stroke="#d8d7d2"/>
+    <text x="94" y="119" fill="#0b0b0b">状态 + 提示词</text><text x="94" y="139" fill="#8a897f" font-size="12">一整段文字</text>
+    <rect x="181" y="94" width="132" height="60" rx="8" fill="#ffffff" stroke="#d8d7d2"/>
+    <text x="247" y="119" fill="#0b0b0b">读入</text><text x="247" y="139" fill="#8a897f" font-size="12">整段并行，很快</text>
+    <rect x="334" y="94" width="132" height="60" rx="8" fill="#fdf1ec" stroke="#e0a58c"/>
+    <text x="400" y="119" fill="#0b0b0b">写思考过程</text><text x="400" y="139" fill="#a2502f" font-size="12">一个词一个词写</text>
+    <rect x="487" y="94" width="132" height="60" rx="8" fill="#fdf1ec" stroke="#e0a58c"/>
+    <text x="553" y="119" fill="#0b0b0b">写出 JSON 答案</text><text x="553" y="139" fill="#a2502f" font-size="12">一个词一个词写</text>
+    <rect x="640" y="94" width="132" height="60" rx="8" fill="#ffffff" stroke="#d8d7d2"/>
+    <text x="706" y="119" fill="#0b0b0b">程序解析字符串</text><text x="706" y="139" fill="#8a897f" font-size="12">格式可能出错</text>
+  </g>
+  <g stroke="#52514e" stroke-width="1.5">
+    <line x1="160" y1="124" x2="179" y2="124" marker-end="url(#arrow)"/>
+    <line x1="313" y1="124" x2="332" y2="124" marker-end="url(#arrow)"/>
+    <line x1="466" y1="124" x2="485" y2="124" marker-end="url(#arrow)"/>
+    <line x1="619" y1="124" x2="638" y2="124" marker-end="url(#arrow)"/>
+  </g>
+  <rect x="334" y="166" width="285" height="5" rx="2.5" fill="#d9764f"/>
+  <text x="476" y="190" font-size="12" fill="#a2502f" text-anchor="middle">时间和钱主要花在这里：输出按词计费，单价约为输入的 5 倍</text>
+  <text x="772" y="216" font-size="13.5" font-weight="700" fill="#0b0b0b" text-anchor="end">每例 10 到 78 秒 · 0.003 到 0.18 美元</text>
+
+  <line x1="28" y1="234" x2="772" y2="234" stroke="#e5e4e0"/>
+
+  <!-- Jev -->
+  <text x="28" y="268" font-size="14.5" font-weight="700" fill="#0b0b0b">用 Jev 做判断</text>
+  <g font-size="13" text-anchor="middle">
+    <rect x="28" y="282" width="132" height="60" rx="8" fill="#ffffff" stroke="#d8d7d2"/>
+    <text x="94" y="307" fill="#0b0b0b">状态 + 一组问题</text><text x="94" y="327" fill="#8a897f" font-size="12">每个问题带类型</text>
+    <rect x="181" y="282" width="132" height="60" rx="8" fill="#ffffff" stroke="#d8d7d2"/>
+    <text x="247" y="307" fill="#0b0b0b">读入一次</text><text x="247" y="327" fill="#8a897f" font-size="12">整段并行，很快</text>
+    <rect x="334" y="282" width="285" height="60" rx="8" fill="#edf5f0" stroke="#8fbf9f"/>
+    <text x="476" y="307" fill="#0b0b0b">每个问题在给定选项上读出概率</text><text x="476" y="327" fill="#2f7a4b" font-size="12">所有问题同时算，不写任何文字</text>
+    <rect x="640" y="282" width="132" height="60" rx="8" fill="#ffffff" stroke="#d8d7d2"/>
+    <text x="706" y="307" fill="#0b0b0b">带类型的值</text><text x="706" y="327" fill="#8a897f" font-size="12">直接进条件判断</text>
+  </g>
+  <g stroke="#52514e" stroke-width="1.5">
+    <line x1="160" y1="312" x2="179" y2="312" marker-end="url(#arrow)"/>
+    <line x1="313" y1="312" x2="332" y2="312" marker-end="url(#arrow)"/>
+    <line x1="619" y1="312" x2="638" y2="312" marker-end="url(#arrow)"/>
+  </g>
+  <text x="772" y="376" font-size="13.5" font-weight="700" fill="#0b0b0b" text-anchor="end">每例 0.4 秒 · 0.0004 美元 · 输出不计费</text>
+
+  <text x="28" y="414" font-size="11.5" fill="#8a897f">数字出处：TypeSafe 官方工作流评测的四工作流均值。大模型一行是表中 OpenAI 与 Anthropic 六个模型的范围，跑默认推理档。</text>
+</svg>

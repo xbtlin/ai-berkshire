@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 530" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<defs><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="ao" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#eb6834" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#2a78d6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="0.5" y="0.5" width="879" height="529" rx="14" fill="#fcfcfb" stroke="#e5e4e0"/>
+<text x="28" y="40" font-size="20" font-weight="600" fill="#0b0b0b">同一位老师，两种教法</text>
+<text x="28" y="64" font-size="13" fill="#52514e">方块 = 智能体轨迹里的一轮（一句思路 + 一次工具调用）。灰色出自弱模型，橙色出自专家模型</text>
+<text x="28" y="96" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">A　整条模仿：训练数据是专家在进化后框架下的成功轨迹</text>
+<text x="28" y="139" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600">专家的轨迹</text>
+<rect x="190" y="112" width="52" height="42" rx="8" fill="#fdebe3" stroke="#eb6834"/>
+<text x="216" y="138" font-size="12" fill="#52514e" text-anchor="middle">第1轮</text>
+<line x1="242" y1="133" x2="252" y2="133" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="254" y="112" width="52" height="42" rx="8" fill="#fdebe3" stroke="#eb6834"/>
+<text x="280" y="138" font-size="12" fill="#52514e" text-anchor="middle">第2轮</text>
+<line x1="306" y1="133" x2="316" y2="133" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="318" y="112" width="52" height="42" rx="8" fill="#fdebe3" stroke="#eb6834"/>
+<text x="344" y="138" font-size="12" fill="#52514e" text-anchor="middle">第3轮</text>
+<line x1="370" y1="133" x2="380" y2="133" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="382" y="112" width="52" height="42" rx="8" fill="#fdebe3" stroke="#eb6834"/>
+<text x="408" y="138" font-size="12" fill="#52514e" text-anchor="middle">第4轮</text>
+<line x1="434" y1="133" x2="444" y2="133" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="446" y="112" width="52" height="42" rx="8" fill="#fdebe3" stroke="#eb6834"/>
+<text x="472" y="138" font-size="12" fill="#52514e" text-anchor="middle">第5轮</text>
+<line x1="498" y1="133" x2="508" y2="133" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="510" y="112" width="52" height="42" rx="8" fill="#fdebe3" stroke="#eb6834"/>
+<text x="536" y="138" font-size="12" fill="#52514e" text-anchor="middle">成功</text>
+<rect x="600" y="102" width="252" height="92" rx="10" fill="#fdebe3" stroke="#eb6834"/>
+<text x="726.0" y="124" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">弱模型学到了什么</text>
+<text x="726.0" y="144" font-size="12" fill="#52514e" text-anchor="middle">领域计算规则使用率 30.8% → 76.1%</text>
+<text x="726.0" y="161" font-size="12" fill="#52514e" text-anchor="middle">规划类失败占比 1.1% → 14.6%</text>
+<text x="726.0" y="178" font-size="12" fill="#52514e" text-anchor="middle">平均成功率 78.0 → 63.1</text>
+<text x="190" y="180" font-size="12" fill="#52514e" text-anchor="start">知识学到了，连专家的规划节奏也一起抄了；弱模型撑不起这种节奏，</text>
+<text x="190" y="198" font-size="12" fill="#52514e" text-anchor="start">而框架是围着它原来的节奏进化出来的。</text>
+<line x1="28" y1="228" x2="852" y2="228" stroke="#e5e4e0"/>
+<text x="28" y="252" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">B　在策略单轮纠正：从弱模型自己的失败轨迹出发</text>
+<text x="28" y="295" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600">弱模型的轨迹</text>
+<rect x="190" y="268" width="52" height="42" rx="8" fill="#f0efec" stroke="#898781"/>
+<text x="216" y="294" font-size="12" fill="#52514e" text-anchor="middle">第1轮</text>
+<line x1="242" y1="289" x2="252" y2="289" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="254" y="268" width="52" height="42" rx="8" fill="#f0efec" stroke="#898781"/>
+<text x="280" y="294" font-size="12" fill="#52514e" text-anchor="middle">第2轮</text>
+<line x1="306" y1="289" x2="316" y2="289" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="318" y="268" width="52" height="42" rx="8" fill="#f0efec" stroke="#898781"/>
+<text x="344" y="294" font-size="12" fill="#52514e" text-anchor="middle">第3轮 ✗</text>
+<line x1="370" y1="289" x2="380" y2="289" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="382" y="268" width="52" height="42" rx="8" fill="#f0efec" stroke="#898781"/>
+<text x="408" y="294" font-size="12" fill="#52514e" text-anchor="middle">第4轮</text>
+<line x1="434" y1="289" x2="444" y2="289" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="446" y="268" width="52" height="42" rx="8" fill="#f0efec" stroke="#898781"/>
+<text x="472" y="294" font-size="12" fill="#52514e" text-anchor="middle">第5轮</text>
+<line x1="498" y1="289" x2="508" y2="289" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="510" y="268" width="52" height="42" rx="8" fill="#f0efec" stroke="#898781"/>
+<text x="536" y="294" font-size="12" fill="#52514e" text-anchor="middle">失败</text>
+<text x="28" y="369" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600">训练用的轨迹</text>
+<rect x="190" y="342" width="52" height="42" rx="8" fill="#f0efec" stroke="#898781"/>
+<text x="216" y="368" font-size="12" fill="#52514e" text-anchor="middle">第1轮</text>
+<line x1="242" y1="363" x2="252" y2="363" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="254" y="342" width="52" height="42" rx="8" fill="#f0efec" stroke="#898781"/>
+<text x="280" y="368" font-size="12" fill="#52514e" text-anchor="middle">第2轮</text>
+<line x1="306" y1="363" x2="316" y2="363" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="318" y="342" width="52" height="42" rx="8" fill="#fdebe3" stroke="#eb6834"/>
+<text x="344" y="368" font-size="12" fill="#52514e" text-anchor="middle">改写</text>
+<line x1="370" y1="363" x2="380" y2="363" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="382" y="342" width="52" height="42" rx="8" fill="#f0efec" stroke="#898781"/>
+<text x="408" y="368" font-size="12" fill="#52514e" text-anchor="middle">第4轮</text>
+<line x1="434" y1="363" x2="444" y2="363" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="446" y="342" width="52" height="42" rx="8" fill="#f0efec" stroke="#898781"/>
+<text x="472" y="368" font-size="12" fill="#52514e" text-anchor="middle">第5轮</text>
+<line x1="498" y1="363" x2="508" y2="363" stroke="#52514e" stroke-width="1.6" marker-end="url(#ak)"/>
+<rect x="510" y="342" width="52" height="42" rx="8" fill="#f0efec" stroke="#898781"/>
+<text x="536" y="368" font-size="12" fill="#52514e" text-anchor="middle">结束</text>
+<line x1="344" y1="312" x2="344" y2="338" stroke="#eb6834" stroke-width="1.6" marker-end="url(#ao)"/>
+<text x="358" y="330" font-size="12" fill="#52514e" text-anchor="start">自动定位出错的那一轮，专家只改这一轮；采 3 个候选留最优</text>
+<rect x="600" y="346" width="252" height="92" rx="10" fill="#e6f0fc" stroke="#2a78d6"/>
+<text x="726.0" y="368" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="middle">弱模型学到了什么</text>
+<text x="726.0" y="388" font-size="12" fill="#52514e" text-anchor="middle">知识类失败占比 46.2% → 43.2%</text>
+<text x="726.0" y="405" font-size="12" fill="#52514e" text-anchor="middle">规划类失败占比 1.1% → 1.8%</text>
+<text x="726.0" y="422" font-size="12" fill="#52514e" text-anchor="middle">平均成功率 78.0 → 79.7</text>
+<text x="190" y="410" font-size="12" fill="#52514e" text-anchor="start">约 400 条纠正样本 + 约 50 条自己的成功样本，</text>
+<text x="190" y="428" font-size="12" fill="#52514e" text-anchor="start">LoRA 训练不到 1 小时；前后各轮仍是自己的写法。</text>
+<line x1="28" y1="460" x2="852" y2="460" stroke="#e5e4e0"/>
+<text x="28" y="484" font-size="12" fill="#52514e" text-anchor="start">案例（论文附录 D）：薪资审计任务里，模仿后的模型算对了结果却交不上去——把「核对一次就提交」变成了</text>
+<text x="28" y="502" font-size="12" fill="#52514e" text-anchor="start">无限循环：同一个查看命令发了 29 次、重读题目约 20 次，78 步没发出完成指令，得 0 分；原模型 14–20 步完成。</text>
+</svg>

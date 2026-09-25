@@ -1,0 +1,29 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：美团-investment-team-AI利润-20260925.md [external_fact]
+======================================================================
+
+  ✅ 通过 [ 7] 收入 · 2025全年                          报告:      3648.55
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042400179.pdf: 3648.55 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/3690/financials/: 3648.55 (偏差 0.00%)
+  ✅ 通过 [ 8] 收入 · 2026上半年                         报告:      1956.82
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082800435.pdf: 1956.82 (偏差 0.00%)  |  https://www.hstong.com/news/detail/26082920431659905 [AI summary; transcription check only]: 1956.82 (偏差 0.00%)
+  ✅ 通过 [ 9] 归母净利润 · 2023全年                       报告:       138.56
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042400179.pdf: 138.56 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/3690/financials/: 138.56 (偏差 0.00%)
+  ✅ 通过 [23] 核心本地商业经营利润 · 2025全年                  报告:       -69.04
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042400179.pdf: -69.04 (偏差 0.00%)
+  ✅ 通过 [24] 核心本地商业经营利润 · 2026上半年                 报告:        36.38
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082800435.pdf: 36.38 (偏差 0.01%)  |  https://www.hstong.com/news/detail/26082920431659905 [AI summary; transcription check only]: 36.38 (偏差 0.00%)
+  ✅ 通过 [27] 新业务经营利润 · 2025全年                     报告:      -100.82
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042400179.pdf: -100.82 (偏差 0.00%)
+  ✅ 通过 [29] 未分配项目净额 · 2023全年                     报告:       -51.17
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042400179.pdf: -51.17 (偏差 0.00%)
+  ✅ 通过 [36] 经营现金流 · 2026上半年                      报告:        27.19
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082800435.pdf: 27.19 (偏差 0.00%)
+  ✅ 通过 [153] 2026Q2收入 · 第二渠道值                     报告:      1046.40
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082800435.pdf: 1046.43 (偏差 0.00%)  |  https://www.wsj.com/business/earnings/meituan-returns-to-profit-as-food-delivery-competition-eases-1026a0e9: 1046.40 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 9  |  通过: 9  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================

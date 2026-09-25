@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<rect x="0.5" y="0.5" width="879" height="429" rx="14" fill="#fcfcfb" stroke="#e5e4e0"/>
+<text x="28" y="40" font-size="20" font-weight="600" fill="#0b0b0b">「采样少 35 倍」是怎么算的</text>
+<text x="28" y="64" font-size="13" fill="#52514e">Qwen3-8B。GRPO 固定 24,000 次采样；GEPA 的总预算按 MIPROv2 的用量对齐。数据：GEPA 论文表 1 与正文 4 节</text>
+<rect x="28" y="86" width="12" height="12" rx="3" fill="#2a78d6"/>
+<text x="46" y="97" font-size="13" fill="#52514e">GEPA 总预算</text>
+<rect x="154" y="86" width="12" height="12" rx="3" fill="#eb6834"/>
+<text x="172" y="97" font-size="13" fill="#52514e">GEPA 追平 GRPO 最佳验证分时已用的采样数</text>
+<line x1="170.0" y1="118" x2="170.0" y2="364" stroke="#e5e4e0"/>
+<text x="170.0" y="382" font-size="12" fill="#898781" text-anchor="middle">0</text>
+<line x1="327.5" y1="118" x2="327.5" y2="364" stroke="#e5e4e0"/>
+<text x="327.5" y="382" font-size="12" fill="#898781" text-anchor="middle">2,000</text>
+<line x1="485.0" y1="118" x2="485.0" y2="364" stroke="#e5e4e0"/>
+<text x="485.0" y="382" font-size="12" fill="#898781" text-anchor="middle">4,000</text>
+<line x1="642.5" y1="118" x2="642.5" y2="364" stroke="#e5e4e0"/>
+<text x="642.5" y="382" font-size="12" fill="#898781" text-anchor="middle">6,000</text>
+<line x1="800.0" y1="118" x2="800.0" y2="364" stroke="#e5e4e0"/>
+<text x="800.0" y="382" font-size="12" fill="#898781" text-anchor="middle">8,000</text>
+<text x="158" y="148" font-size="13" fill="#52514e" text-anchor="end">多跳问答</text>
+<path d="M170.0,128 H707.09125 Q711.09125,128 711.09125,132 V138 Q711.09125,142 707.09125,142 H170.0 Z" fill="#2a78d6"/>
+<path d="M170.0,144 H185.13625 Q189.13625,144 189.13625,148 V154 Q189.13625,158 185.13625,158 H170.0 Z" fill="#eb6834"/>
+<text x="717.09125" y="140" font-size="12" fill="#0b0b0b">6,871（GRPO 的 1/3）</text>
+<text x="195.13625" y="156" font-size="12" fill="#52514e">243</text>
+<text x="158" y="188" font-size="13" fill="#52514e" text-anchor="end">指令遵循</text>
+<path d="M170.0,168 H448.94875 Q452.94875,168 452.94875,172 V178 Q452.94875,182 448.94875,182 H170.0 Z" fill="#2a78d6"/>
+<path d="M170.0,184 H197.6575 Q201.6575,184 201.6575,188 V194 Q201.6575,198 197.6575,198 H170.0 Z" fill="#eb6834"/>
+<text x="458.94875" y="180" font-size="12" fill="#0b0b0b">3,593（GRPO 的 1/7）</text>
+<text x="207.6575" y="196" font-size="12" fill="#52514e">402</text>
+<text x="158" y="228" font-size="13" fill="#52514e" text-anchor="end">多跳事实核验</text>
+<path d="M170.0,208 H721.26625 Q725.26625,208 725.26625,212 V218 Q725.26625,222 721.26625,222 H170.0 Z" fill="#2a78d6"/>
+<path d="M170.0,224 H191.9875 Q195.9875,224 195.9875,228 V234 Q195.9875,238 191.9875,238 H170.0 Z" fill="#eb6834"/>
+<text x="731.26625" y="220" font-size="12" fill="#0b0b0b">7,051（GRPO 的 1/3）</text>
+<text x="201.9875" y="236" font-size="12" fill="#52514e">330</text>
+<text x="158" y="268" font-size="13" fill="#52514e" text-anchor="end">隐私委托</text>
+<path d="M170.0,248 H357.0475 Q361.0475,248 361.0475,252 V258 Q361.0475,262 357.0475,262 H170.0 Z" fill="#2a78d6"/>
+<path d="M170.0,264 H256.01125 Q260.01125,264 260.01125,268 V274 Q260.01125,278 256.01125,278 H170.0 Z" fill="#eb6834"/>
+<text x="367.0475" y="260" font-size="12" fill="#0b0b0b">2,426（GRPO 的 1/10）</text>
+<text x="266.01125" y="276" font-size="12" fill="#52514e">1143</text>
+<text x="158" y="308" font-size="13" fill="#52514e" text-anchor="end">AIME 2025</text>
+<path d="M170.0,288 H310.82124999999996 Q314.82124999999996,288 314.82124999999996,292 V298 Q314.82124999999996,302 310.82124999999996,302 H170.0 Z" fill="#2a78d6"/>
+<path d="M170.0,304 H258.84625 Q262.84625,304 262.84625,308 V314 Q262.84625,318 258.84625,318 H170.0 Z" fill="#eb6834"/>
+<text x="320.82124999999996" y="300" font-size="12" fill="#0b0b0b">1,839（GRPO 的 1/13）</text>
+<text x="268.84625" y="316" font-size="12" fill="#52514e">1179</text>
+<text x="158" y="348" font-size="13" fill="#52514e" text-anchor="end">LiveBench 数学</text>
+<path d="M170.0,328 H310.82124999999996 Q314.82124999999996,328 314.82124999999996,332 V338 Q314.82124999999996,342 310.82124999999996,342 H170.0 Z" fill="#2a78d6"/>
+<path d="M170.0,344 H190.0975 Q194.0975,344 194.0975,348 V354 Q194.0975,358 190.0975,358 H170.0 Z" fill="#eb6834"/>
+<text x="320.82124999999996" y="340" font-size="12" fill="#0b0b0b">1,839（GRPO 的 1/13）</text>
+<text x="200.0975" y="356" font-size="12" fill="#52514e">306</text>
+<text x="28" y="416" font-size="12" fill="#898781">总预算只是 GRPO 的 1/3 到 1/13；「35 倍」指指令遵循任务在第 678 次采样处达到最优（24,000 ÷ 678 ≈ 35）。预算大头花在验证集上而非学习上。</text>
+</svg>

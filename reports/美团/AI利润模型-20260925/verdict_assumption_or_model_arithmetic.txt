@@ -1,0 +1,37 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：美团-investment-team-AI利润-20260925.md [assumption_or_model_arithmetic]
+======================================================================
+
+  ✅ 通过 [51] 客服、研发和运营节约 · 2027                    报告:         7.00
+                                                    Explicit analyst inputs / separately expanded Decimal expression: 7.00 (偏差 0.00%)
+  ✅ 通过 [58] 履约新增净节约 · 2036                       报告:       140.00
+                                                    Explicit analyst inputs / separately expanded Decimal expression: 140.00 (偏差 0.00%)
+  ✅ 通过 [56] 履约新增净节约 · 2028                       报告:        10.00
+                                                    Explicit analyst inputs / separately expanded Decimal expression: 10.00 (偏差 0.00%)
+  ✅ 通过 [57] 履约新增净节约 · 2029                       报告:        18.00
+                                                    Explicit analyst inputs / separately expanded Decimal expression: 18.00 (偏差 0.00%)
+  ✅ 通过 [60] 额外AI研发、推理、设备折旧 · 2028                报告:       -35.00
+                                                    Explicit analyst inputs / separately expanded Decimal expression: -35.00 (偏差 0.00%)
+  ✅ 通过 [63] 入口分流、渠道费用与额外让利 · 2027                报告:        -7.00
+                                                    Explicit analyst inputs / separately expanded Decimal expression: -7.00 (偏差 0.00%)
+  ✅ 通过 [71] 正常化税后AI净增量 · 2027                    报告:        -8.00
+                                                    Explicit analyst inputs / separately expanded Decimal expression: -8.00 (偏差 0.00%)
+  ✅ 通过 [72] 正常化税后AI净增量 · 2028                    报告:         4.00
+                                                    Explicit analyst inputs / separately expanded Decimal expression: 4.00 (偏差 0.00%)
+  ✅ 通过 [109] 基准 · 2029利润                          报告:       252.17
+                                                    Explicit analyst inputs / separately expanded Decimal expression: 252.17 (偏差 0.00%)
+  ✅ 通过 [108] 基准 · 2028利润                          报告:       151.75
+                                                    Explicit analyst inputs / separately expanded Decimal expression: 151.75 (偏差 0.00%)
+  ✅ 通过 [115] 乐观 · AI在2029年贡献                      报告:        52.00
+                                                    Explicit analyst inputs / separately expanded Decimal expression: 52.00 (偏差 0.00%)
+  ✅ 通过 [130] 总部经常成本（含SBC） · 基准                    报告:      -170.00
+                                                    Explicit analyst inputs / separately expanded Decimal expression: -170.00 (偏差 0.00%)
+  ✅ 通过 [140] 新增AI税后影响 · 乐观                        报告:       200.00
+                                                    Explicit analyst inputs / separately expanded Decimal expression: 200.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 13  |  通过: 13  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================

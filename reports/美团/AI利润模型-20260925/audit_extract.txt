@@ -1,0 +1,331 @@
+======================================================================
+报告数据抽检清单
+文件：reports/美团/美团-investment-team-AI利润-20260925.md
+总提取数据点：160  |  抽样比例：15%  |  抽检数量：24
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+159      4  资料截止                                      2026.00
+  2     19  财务与估值 · 评分（满分5）                              3.00
+  7     35  收入 · 2025全年                               3648.55
+  8     35  收入 · 2026上半年                              1956.82
+  9     36  归母净利润 · 2023全年                             138.56
+ 23     39  核心本地商业经营利润 · 2025全年                        -69.04
+ 24     39  核心本地商业经营利润 · 2026上半年                        36.38
+ 27     40  新业务经营利润 · 2025全年                          -100.82
+ 29     41  未分配项目净额 · 2023全年                           -51.17
+ 36     42  经营现金流 · 2026上半年                             27.19
+ 51     94  客服、研发和运营节约 · 2027                            7.00
+ 58     95  履约新增净节约 · 2036                             140.00
+ 56     95  履约新增净节约 · 2028                              10.00
+ 57     95  履约新增净节约 · 2029                              18.00
+ 60     96  额外AI研发、推理、设备折旧 · 2028                      -35.00
+ 63     97  入口分流、渠道费用与额外让利 · 2027                       -7.00
+ 71     99  正常化税后AI净增量 · 2027                           -8.00
+ 72     99  正常化税后AI净增量 · 2028                            4.00
+109    144  基准 · 2029利润                                252.17
+108    144  基准 · 2028利润                                151.75
+115    145  乐观 · AI在2029年贡献                             52.00
+130    159  总部经常成本（含SBC） · 基准                         -170.00
+140    162  新增AI税后影响 · 乐观                              200.00
+153    246  2026Q2收入 · 第二渠道值                          1046.40
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 159,
+    "label": "资料截止",
+    "reported_value": 2026.0,
+    "unit": "",
+    "line_number": 4,
+    "raw_text": "资料截止：2026-09-24 UTC；行情截至香港时间9月24日收市。最新财务期为2026年第二季度/上半年，尚无第三季财报。金额除注明外均为人民币亿元；未来三年指2027—2029三个完整年度；十年后指2036年。仅供学习研究。",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 2,
+    "label": "财务与估值 · 评分（满分5）",
+    "reported_value": 3.0,
+    "unit": "",
+    "line_number": 19,
+    "raw_text": "| 财务与估值 | 巴菲特 | 3.0 | 有净现金缓冲，但利润与自由现金流对补贴竞争高度敏感 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 7,
+    "label": "收入 · 2025全年",
+    "reported_value": 3648.55,
+    "unit": "",
+    "line_number": 35,
+    "raw_text": "| 收入 | 2767.45 | 3375.92 | 3648.55 | 1956.82 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "收入 · 2026上半年",
+    "reported_value": 1956.82,
+    "unit": "",
+    "line_number": 35,
+    "raw_text": "| 收入 | 2767.45 | 3375.92 | 3648.55 | 1956.82 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "归母净利润 · 2023全年",
+    "reported_value": 138.56,
+    "unit": "",
+    "line_number": 36,
+    "raw_text": "| 归母净利润 | 138.56 | 358.07 | -233.55 | -46.72 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "核心本地商业经营利润 · 2025全年",
+    "reported_value": -69.04,
+    "unit": "",
+    "line_number": 39,
+    "raw_text": "| 核心本地商业经营利润 | 386.99 | 524.15 | -69.04 | 36.38 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "核心本地商业经营利润 · 2026上半年",
+    "reported_value": 36.38,
+    "unit": "",
+    "line_number": 39,
+    "raw_text": "| 核心本地商业经营利润 | 386.99 | 524.15 | -69.04 | 36.38 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 27,
+    "label": "新业务经营利润 · 2025全年",
+    "reported_value": -100.82,
+    "unit": "",
+    "line_number": 40,
+    "raw_text": "| 新业务经营利润 | -201.66 | -72.73 | -100.82 | -38.55 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "未分配项目净额 · 2023全年",
+    "reported_value": -51.17,
+    "unit": "",
+    "line_number": 41,
+    "raw_text": "| 未分配项目净额 | -51.17 | -82.97 | -80.55 | -35.62 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "经营现金流 · 2026上半年",
+    "reported_value": 27.19,
+    "unit": "",
+    "line_number": 42,
+    "raw_text": "| 经营现金流 | 405.22 | 571.47 | -138.15 | 27.19 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 51,
+    "label": "客服、研发和运营节约 · 2027",
+    "reported_value": 7.0,
+    "unit": "",
+    "line_number": 94,
+    "raw_text": "| 客服、研发和运营节约 | 7 | 12 | 18 | 80 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 58,
+    "label": "履约新增净节约 · 2036",
+    "reported_value": 140.0,
+    "unit": "",
+    "line_number": 95,
+    "raw_text": "| 履约新增净节约 | 5 | 10 | 18 | 140 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "履约新增净节约 · 2028",
+    "reported_value": 10.0,
+    "unit": "",
+    "line_number": 95,
+    "raw_text": "| 履约新增净节约 | 5 | 10 | 18 | 140 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 57,
+    "label": "履约新增净节约 · 2029",
+    "reported_value": 18.0,
+    "unit": "",
+    "line_number": 95,
+    "raw_text": "| 履约新增净节约 | 5 | 10 | 18 | 140 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "额外AI研发、推理、设备折旧 · 2028",
+    "reported_value": -35.0,
+    "unit": "",
+    "line_number": 96,
+    "raw_text": "| 额外AI研发、推理、设备折旧 | -30 | -35 | -40 | -180 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 63,
+    "label": "入口分流、渠道费用与额外让利 · 2027",
+    "reported_value": -7.0,
+    "unit": "",
+    "line_number": 97,
+    "raw_text": "| 入口分流、渠道费用与额外让利 | -7 | -10 | -13 | -120 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 71,
+    "label": "正常化税后AI净增量 · 2027",
+    "reported_value": -8.0,
+    "unit": "",
+    "line_number": 99,
+    "raw_text": "| 正常化税后AI净增量 | -8 | 4 | 20 | 80 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 72,
+    "label": "正常化税后AI净增量 · 2028",
+    "reported_value": 4.0,
+    "unit": "",
+    "line_number": 99,
+    "raw_text": "| 正常化税后AI净增量 | -8 | 4 | 20 | 80 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 109,
+    "label": "基准 · 2029利润",
+    "reported_value": 252.17,
+    "unit": "",
+    "line_number": 144,
+    "raw_text": "| 基准 | 63.68 | 151.75 | 252.17 | 20 | 核心收入年增7%，利润率10%/12%/14%，海外投入受控 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 108,
+    "label": "基准 · 2028利润",
+    "reported_value": 151.75,
+    "unit": "",
+    "line_number": 144,
+    "raw_text": "| 基准 | 63.68 | 151.75 | 252.17 | 20 | 核心收入年增7%，利润率10%/12%/14%，海外投入受控 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 115,
+    "label": "乐观 · AI在2029年贡献",
+    "reported_value": 52.0,
+    "unit": "",
+    "line_number": 145,
+    "raw_text": "| 乐观 | 192.32 | 333.66 | 484.66 | 52 | 核心收入年增10%，利润率13%/16%/18%，新业务2029转盈 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 130,
+    "label": "总部经常成本（含SBC） · 基准",
+    "reported_value": -170.0,
+    "unit": "",
+    "line_number": 159,
+    "raw_text": "| 总部经常成本（含SBC） | -190 | -170 | -200 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 140,
+    "label": "新增AI税后影响 · 乐观",
+    "reported_value": 200.0,
+    "unit": "",
+    "line_number": 162,
+    "raw_text": "| 新增AI税后影响 | -40 | 80 | 200 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 153,
+    "label": "2026Q2收入 · 第二渠道值",
+    "reported_value": 1046.4,
+    "unit": "",
+    "line_number": 246,
+    "raw_text": "| 2026Q2收入 | 1046.43044 | 1046.40 | HKEX/WSJ，一致 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

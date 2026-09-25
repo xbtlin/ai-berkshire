@@ -1,0 +1,201 @@
+======================================================================
+报告数据抽检清单
+文件：reports/茅台/贵州茅台-investment-team-年轻需求与2036利润-20260925.md
+总提取数据点：91  |  抽样比例：15%  |  抽检数量：14
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  4     28  营业收入 · 2026H1                              907.03  
+  5     29  归母净利润 · 2023A                              747.34  
+ 12     30  经营现金流净额 · 2026H1                           706.91  
+ 87     34  口径说明                                      2025.00  
+ 14     38  销量，吨 · 系列酒                               38353.48  
+ 15     39  销量同比 · 茅台酒                                   0.73  %
+ 18     40  不含增值税收入，亿元 · 系列酒                           222.75  
+ 29    151  乐观 · 2036 行业需求指数                            90.00  
+ 32    177  茅台酒销量，吨 · 2028E                          48500.00  
+ 36    178  茅台酒实现吨价，万元 · 2028E                         324.00  
+ 55    183  归母净利润，亿元 · 2027E                           834.06  
+ 70    195  营业收入，亿元 · 悲观                              1246.63  
+ 76    197  2036 单年归母净利润，亿元 · 悲观                       523.58  
+ 82    214  归母净利率仅为 45% · 2036 归母利润，亿元                1006.48  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 4,
+    "label": "营业收入 · 2026H1",
+    "reported_value": 907.03,
+    "unit": "",
+    "line_number": 28,
+    "raw_text": "| 营业收入 | 1476.94 | 1708.99 | 1688.38 | 907.03 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "归母净利润 · 2023A",
+    "reported_value": 747.34,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| 归母净利润 | 747.34 | 862.28 | 823.20 | 445.17 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 12,
+    "label": "经营现金流净额 · 2026H1",
+    "reported_value": 706.91,
+    "unit": "",
+    "line_number": 30,
+    "raw_text": "| 经营现金流净额 | 665.93 | 924.64 | 615.22 | 706.91 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 87,
+    "label": "口径说明",
+    "reported_value": 2025.0,
+    "unit": "",
+    "line_number": 34,
+    "raw_text": "口径说明：2025 年 **1720.54 亿元**、2026H1 **922.78 亿元**是营业总收入，包含金融业务利息收入，不是上表的营业收入。模型统一使用营业收入，并把金融收益及少数股东影响综合包含在归母净利率中，不再重复加利息收益",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 14,
+    "label": "销量，吨 · 系列酒",
+    "reported_value": 38353.48,
+    "unit": "",
+    "line_number": 38,
+    "raw_text": "| 销量，吨 | 46750.66 | 38353.48 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "销量同比 · 茅台酒",
+    "reported_value": 0.73,
+    "unit": "%",
+    "line_number": 39,
+    "raw_text": "| 销量同比 | +0.73% | +3.88% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "不含增值税收入，亿元 · 系列酒",
+    "reported_value": 222.75,
+    "unit": "",
+    "line_number": 40,
+    "raw_text": "| 不含增值税收入，亿元 | 1465.00 | 222.75 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "乐观 · 2036 行业需求指数",
+    "reported_value": 90.0,
+    "unit": "",
+    "line_number": 151,
+    "raw_text": "| 乐观 | 90—100 | 成年迁移较强，小聚和私人消费承接大部分损失 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 32,
+    "label": "茅台酒销量，吨 · 2028E",
+    "reported_value": 48500.0,
+    "unit": "",
+    "line_number": 177,
+    "raw_text": "| 茅台酒销量，吨 | 48000 | 48000 | 48500 | 49000 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "茅台酒实现吨价，万元 · 2028E",
+    "reported_value": 324.0,
+    "unit": "",
+    "line_number": 178,
+    "raw_text": "| 茅台酒实现吨价，万元 | 312 | 318 | 324 | 330 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 55,
+    "label": "归母净利润，亿元 · 2027E",
+    "reported_value": 834.06,
+    "unit": "",
+    "line_number": 183,
+    "raw_text": "| 归母净利润，亿元 | 821.87 | 834.06 | 864.28 | 895.13 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 70,
+    "label": "营业收入，亿元 · 悲观",
+    "reported_value": 1246.63,
+    "unit": "",
+    "line_number": 195,
+    "raw_text": "| 营业收入，亿元 | 1246.63 | 2236.63 | 3384.63 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 76,
+    "label": "2036 单年归母净利润，亿元 · 悲观",
+    "reported_value": 523.58,
+    "unit": "",
+    "line_number": 197,
+    "raw_text": "| 2036 单年归母净利润，亿元 | **523.58** | **1095.95** | **1726.16** |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 82,
+    "label": "归母净利率仅为 45% · 2036 归母利润，亿元",
+    "reported_value": 1006.48,
+    "unit": "",
+    "line_number": 214,
+    "raw_text": "| 归母净利率仅为 45% | 1006.48 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]
