@@ -37,7 +37,12 @@
     python3 tools/terminal_value.py sweep --r 0.06,0.08,0.10,0.12 --g-shift -0.01 --rf 0.017
 
     # 单公司 r±2pp：期望 IRR 能否覆盖资本成本、结论是否翻转（仓位压力测试，非买入否决）
-    python3 tools/terminal_value.py flip --name 腾讯 --r 0.10 --delta 0.02 --g-shift -0.01 --rf 0.047
+    # --currency 给出币种合理区间，区间外的档位只作参考、不参与翻转判定
+    python3 tools/terminal_value.py flip --name 腾讯 --r 0.10 --delta 0.02 --currency HKD --g-shift -0.01
+
+    # 新公司不在预设里：内联参数（或把同样的字段写进 JSON 传 --config）
+    python3 tools/terminal_value.py flip --name 某公司 --roic 0.18 --g 0.015,0.03,0.04 \
+        --p 0.35,0.50,0.15 --irr10=-2.0,8.0,14.0 --k 0.01 --r 0.10 --currency USD
 
     # 分母宽度体检（哪些格子跌破 5pct 有效性下限）
     python3 tools/terminal_value.py check --r 0.06 --g-shift -0.01
@@ -47,6 +52,11 @@
 
     # 用自己的公司配置
     python3 tools/terminal_value.py table --r 0.08 --config my_companies.json
+
+    # --config 文件格式（与内置 PRESET 字段一致，k 可省略，默认 0）：
+    #   {"某公司": {"roic": 0.18, "g": [0.015, 0.03, 0.04], "p": [0.35, 0.50, 0.15],
+    #              "irr10": [-2.0, 8.0, 14.0], "k": 0.01}}
+    #   irr10 = r=10%、原始 g 下三档的十年 IRR（百分数），可先用 irr 子命令从零算出。
 """
 
 import argparse
@@ -384,21 +394,34 @@ def stress_pass(mean_irr_pct, r):
     return mean_irr_pct >= r * 100.0
 
 
-def flip_analysis(spec, r, delta=0.02, g_shift=0.0, years=10, rf=None):
+def in_band(rate, band):
+    """r 是否落在币种合理区间（闭区间，容忍浮点误差）。band=None 表示不做区间过滤。"""
+    if band is None:
+        return None
+    lo, hi = band["r"]
+    return lo - 1e-9 <= rate <= hi + 1e-9
+
+
+def flip_analysis(spec, r, delta=0.02, g_shift=0.0, years=10, rf=None, band=None):
     """在 r-delta / r / r+delta 三档上算期望 IRR 与压力测试通过与否。
 
+    band 为 CURRENCY_BANDS 中的一项时，区间外的档位只作参考，不参与翻转判定
+    （audit C1 会拒绝区间外的 r，用它得出"翻转"等于调 r 去迎合结论）。
+
     返回 dict：
-      rates, means, passes, flipped, labels
-    flipped=True 表示三档的通过/未通过不完全相同（结论随 Δr 翻转）。
+      rates, means, passes, in_band, flipped, labels
+    in_band 每档为 True/False；band=None 时为 None（未做区间过滤）。
+    flipped=True 表示参与判定的档位中通过/未通过不完全相同（结论随 Δr 翻转）。
     """
     if rf is None:
-        rf = RF["CNY"]
+        rf = band["rf"] if band else RF["CNY"]
     if delta <= 0:
         raise ValueError("delta 必须为正，例如 0.02 表示 ±2pp")
     rates = (r - delta, r, r + delta)
-    labels = (f"r−{delta*100:.0f}pp", "基准 r", f"r+{delta*100:.0f}pp")
-    means, passes = [], []
+    labels = (f"r−{delta*100:g}pp", "基准 r", f"r+{delta*100:g}pp")
+    means, passes, flags = [], [], []
     for rate in rates:
+        flags.append(in_band(rate, band))
         if rate <= 0:
             means.append(None)
             passes.append(None)
@@ -407,9 +430,29 @@ def flip_analysis(spec, r, delta=0.02, g_shift=0.0, years=10, rf=None):
         mean, _sd, _ratio = summarize(rows, spec["p"], rf)
         means.append(mean)
         passes.append(stress_pass(mean, rate))
-    known = [p for p in passes if p is not None]
+    known = [p for p, ok in zip(passes, flags) if p is not None and ok is not False]
     flipped = len(set(known)) > 1 if known else False
-    return dict(rates=rates, means=means, passes=passes, flipped=flipped, labels=labels)
+    return dict(rates=rates, means=means, passes=passes, in_band=tuple(flags),
+                flipped=flipped, labels=labels)
+
+
+def _floats(text, n, what):
+    vals = [float(x) for x in text.split(",")]
+    if len(vals) != n:
+        raise ValueError(f"{what} 需要 {n} 个逗号分隔的数（悲观,基准,乐观），收到 {len(vals)} 个")
+    return tuple(vals)
+
+
+def inline_spec(args):
+    """从 --roic/--g/--p/--irr10/--k 组装一家公司的参数（字段同 PRESET / --config）。"""
+    missing = [f"--{k}" for k in ("roic", "g", "p", "irr10") if getattr(args, k) is None]
+    if missing:
+        raise ValueError(f"内联参数不完整，缺 {' '.join(missing)}（--roic/--g/--p/--irr10 必须同时给出）")
+    spec = dict(roic=args.roic, g=_floats(args.g, 3, "--g"), p=_floats(args.p, 3, "--p"),
+                irr10=_floats(args.irr10, 3, "--irr10"), k=args.k)
+    if abs(sum(spec["p"]) - 1.0) > 1e-6:
+        raise ValueError(f"--p 三档概率之和须为 1，当前 {sum(spec['p']):.4f}")
+    return spec
 
 
 def cmd_flip(args):
@@ -418,26 +461,46 @@ def cmd_flip(args):
     用途：在给出买入/持有/回避之前，暴露"结论买的是公司还是折现率"。
     未通过压力测试 → 收紧仓位建议；不得单独把决策改成回避。
     """
-    companies = load_companies(args.config)
-    if args.name not in companies:
-        print(f"未知公司：{args.name}。可选：{'、'.join(companies)}", file=sys.stderr)
+    band = CURRENCY_BANDS.get(args.currency.upper())
+    if band is None:
+        print(f"未知币种 {args.currency}，可选：{'、'.join(CURRENCY_BANDS)}", file=sys.stderr)
         return 1
-    spec = companies[args.name]
-    rf = args.rf if args.rf is not None else RF["CNY"]
+    inline = any(getattr(args, k) is not None for k in ("roic", "g", "p", "irr10"))
     try:
-        result = flip_analysis(spec, args.r, args.delta, args.g_shift, args.years, rf)
+        if inline:
+            if args.config:
+                raise ValueError("内联参数与 --config 二选一")
+            spec = inline_spec(args)
+        else:
+            companies = load_companies(args.config)
+            if args.name not in companies:
+                print(f"未知公司：{args.name}。可选：{'、'.join(companies)}。"
+                      f"新公司请用 --roic/--g/--p/--irr10 内联参数，或写 JSON 传 --config",
+                      file=sys.stderr)
+                return 1
+            spec = companies[args.name]
+        rf = args.rf if args.rf is not None else band["rf"]
+        result = flip_analysis(spec, args.r, args.delta, args.g_shift, args.years, rf, band)
     except ValueError as exc:
         print(f"参数错误：{exc}", file=sys.stderr)
         return 1
 
-    print(f"\n{args.name}  |  基准 r = {args.r:.2%}   Δr = ±{args.delta*100:.0f}pp   "
+    cur = args.currency.upper()
+    print(f"\n{args.name}  |  基准 r = {args.r:.2%}   Δr = ±{args.delta*100:g}pp   币种 {cur}   "
           f"g平移 {args.g_shift:+.1%}   Rf = {rf:.2%}   持有期 {args.years} 年")
+    lo, hi = band["r"]
+    print(f"币种合理区间：r ∈ [{lo:.1%}, {hi:.1%}]（同 audit C1）；区间外档位仅供参考，不参与翻转判定。")
+    if not result["in_band"][1]:
+        print(f"\n【打回】基准 r={args.r:.2%} 不在 {cur} 的 [{lo:.1%}, {hi:.1%}] 区间内，"
+              f"audit C1 同样会拒绝。先修正 r 再跑 flip。\n")
+        return 1
     print(f"判定规则：期望 IRR ≥ r → 通过仓位压力测试；否则未通过。")
     print(f"角色：十年模型 = 仓位压力测试，不是买入/持有/回避的唯一否决票。\n")
     print(f"{'档位':<10}{'r':>8}{'期望IRR':>12}{'相对 r':>12}{'压力测试':>10}")
     print("-" * 54)
-    for label, rate, mean, passed in zip(
-            result["labels"], result["rates"], result["means"], result["passes"]):
+    for label, rate, mean, passed, ok in zip(
+            result["labels"], result["rates"], result["means"], result["passes"],
+            result["in_band"]):
         if rate <= 0:
             print(f"{label:<10}{'≤0':>8}{'—':>12}{'—':>12}{'失效':>10}")
             continue
@@ -449,7 +512,9 @@ def cmd_flip(args):
             gap = mean - rate * 100.0
             rel = f"{gap:+.2f}pp"
             tag = "通过" if passed else "未通过"
-        print(f"{label:<10}{rate:>8.2%}{mean_s:>12}{rel:>12}{tag:>10}")
+        if ok is False:
+            tag += "（区间外，仅供参考）"
+        print(f"{label:<10}{rate:>8.2%}{mean_s:>12}{rel:>12}  {tag}")
     print("-" * 54)
 
     base_pass = result["passes"][1]
@@ -457,13 +522,18 @@ def cmd_flip(args):
         print("\n【失效】基准 r 下模型不可用（分母失效等）。请先跑 audit / check。\n")
         return 1
 
+    judged = sum(1 for p, ok in zip(result["passes"], result["in_band"])
+                 if p is not None and ok is not False)
     if result["flipped"]:
-        print(f"\n【翻转】结论随 Δr±{args.delta*100:.0f}pp 翻转。"
+        print(f"\n【翻转】结论在币种合理区间内随 Δr±{args.delta*100:g}pp 翻转。"
               f"报告必须写明：本结论对折现率敏感；不得用单一基准 r 的未通过一票否决买入。")
         print(f"        正确用法：收紧仓位上限，并完成与三年三情景/thesis 的「估值分歧对账」。")
     else:
         status = "始终通过" if base_pass else "始终未通过"
-        print(f"\n【稳定】Δr±{args.delta*100:.0f}pp 内压力测试{status}——相对折现率扰动更稳健。")
+        print(f"\n【稳定】Δr±{args.delta*100:g}pp 区间内压力测试{status}——相对折现率扰动更稳健。")
+        if judged < 2:
+            print(f"        注意：两侧档位都在区间外，区间内只有基准一档参与判定；"
+                  f"可用更小的 --delta 在区间内复核。")
         if not base_pass:
             print(f"        未通过仍只约束仓位，不自动等于回避；须与其他五个维度并列决策。")
 
@@ -661,11 +731,20 @@ def main():
     p.set_defaults(func=cmd_sweep)
 
     p = sub.add_parser("flip", help="r±Δ 敏感性：压力测试结论是否翻转（非买入否决）")
-    p.add_argument("--name", required=True, help="公司名（内置预设或 --config）")
+    p.add_argument("--name", required=True,
+                   help="公司名：内置预设 / --config 中的键；用内联参数时仅作标题")
     p.add_argument("--r", type=float, required=True, help="基准资本成本，小数（如 0.10）")
     p.add_argument("--delta", type=float, default=0.02,
                    help="敏感性半宽，小数，默认 0.02（即 ±2pp）")
-    p.add_argument("--rf", type=float, help="无风险利率，缺省用人民币 1.70%%")
+    p.add_argument("--currency", required=True,
+                   help="现金流币种 CNY / USD / HKD：区间外档位仅供参考、不参与翻转判定")
+    p.add_argument("--rf", type=float, help="无风险利率，缺省取 --currency 对应的 Rf")
+    p.add_argument("--roic", type=float, help="内联：2036 稳态增量 ROIC，小数")
+    p.add_argument("--g", help="内联：三档原始永续增速，逗号分隔，如 0.015,0.03,0.04")
+    p.add_argument("--p", help="内联：三档概率，逗号分隔，和为 1，如 0.35,0.50,0.15")
+    p.add_argument("--irr10", help="内联：r=10%% 且原始 g 下三档十年 IRR（百分数）。"
+                        "首项为负时用等号写法，如 --irr10=-2,8,14")
+    p.add_argument("--k", type=float, default=0.0, help="内联：股息率-稀释率，年化小数，默认 0")
     add_common(p, need_r=False)
     p.set_defaults(func=cmd_flip)
 
