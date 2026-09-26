@@ -40,6 +40,15 @@ _TOKEN_FILE = os.path.join(
 )
 
 
+def _force_utf8_stdio():
+    """Windows 控制台默认 GBK，❌/✅ 等字符会让 print() 抛 UnicodeEncodeError。"""
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
+
 def _token():
     """读取 FinMind token：环境变量优先，其次本地文件；都没有则匿名访问。"""
     t = os.environ.get("FINMIND_TOKEN", "").strip()
@@ -405,4 +414,5 @@ def main():
 
 
 if __name__ == "__main__":
+    _force_utf8_stdio()
     main()
