@@ -11,14 +11,20 @@
        偏差正常时打印 ✅（U+2705）同样会崩，但用户至少能从退出码察觉；
        而在"验算失败"时静默退出，会让人误以为脚本没跑或跑过了。
 
+  BUG  exact_calc 用 eval + float，"精确值"输出带浮点误差
+       旧版 calc --expr '0.1 + 0.2' 输出 0.30000000000000004。
+       现已重写为 AST 解析 + 全程 Decimal（见 TestExactCalcSemantics）。
+
 运行：  python tests/test_financial_rigor.py
 """
 
+import contextlib
 import io
 import os
 import subprocess
 import sys
 import unittest
+from decimal import Decimal
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'tools'))
 
@@ -112,6 +118,55 @@ class TestMarketCapMathUnaffected(unittest.TestCase):
 
     def test_gross_mismatch_returns_false(self):
         self.assertFalse(F.verify_market_cap(8.00, 500000000, 40.00, 'CNY'))
+
+
+class TestExactCalcSemantics(unittest.TestCase):
+    """exact_calc 从 eval+float 重写为 AST+Decimal 后的计算语义（#69）。"""
+
+    def _calc(self, expr):
+        with contextlib.redirect_stdout(io.StringIO()):
+            return F.exact_calc(expr)
+
+    def test_exact_calc_avoids_float_drift(self):
+        """回归核心：旧版 0.1 + 0.2 的"精确值"是 0.30000000000000004。"""
+        self.assertEqual(self._calc('0.1 + 0.2'), Decimal('0.3'))
+
+    def test_exact_calc_supports_scientific_notation_and_parentheses(self):
+        self.assertEqual(self._calc('(1.25e3 - 250) / 2'), Decimal('500'))
+
+    def test_exact_calc_rejects_non_arithmetic_input(self):
+        """去掉 eval 后，注入类输入必须被拒绝而非执行。"""
+        self.assertIsNone(self._calc("__import__('os').system('echo unsafe')"))
+        self.assertIsNone(self._calc("().__class__"))
+
+    def test_exact_calc_integer_power(self):
+        """复利常用：1.15**5 旧版可算，重写后不能回退。"""
+        self.assertEqual(self._calc('1.15**5'), Decimal('2.0113571875'))
+        self.assertEqual(self._calc('(1+0.03)**10').quantize(Decimal('1e-10')),
+                         Decimal('1.3439163793'))
+
+    def test_exact_calc_rejects_fractional_power(self):
+        self.assertIsNone(self._calc('2**0.5'))
+
+    def test_exact_calc_division_by_zero_friendly_message(self):
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            result = F.exact_calc('1/0')
+        self.assertIsNone(result)
+        self.assertIn('除数为零', buf.getvalue())
+
+    def test_cross_validate_flags_outlier(self):
+        with contextlib.redirect_stdout(io.StringIO()):
+            result = F.cross_validate(
+                "营收", {"年报": 100, "来源二": 101, "错误来源": 120}, tolerance_pct=2
+            )
+        self.assertFalse(result["all_consistent"])
+        self.assertEqual(result["consensus"], 101.0)
+
+    def test_market_cap_thresholds(self):
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertTrue(F.verify_market_cap(10, 100, 1005))
+            self.assertFalse(F.verify_market_cap(10, 100, 1060))
 
 
 if __name__ == '__main__':
