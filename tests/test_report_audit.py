@@ -122,6 +122,33 @@ class TestAbsoluteValueGuard(unittest.TestCase):
             "超过 1e15 的负值未被过滤（abs() 守卫失效）")
 
 
+class TestNarrativeTableColumns(unittest.TestCase):
+    """Issue #79：叙述性英文列中的数字不应成为待核验数据点。"""
+
+    MD = (
+        "| Metric | Value | Source | Verified |\n"
+        "|---|---|---|---|\n"
+        "| FY2026E non-GAAP EPS guidance | $1.85–$2.25 | "
+        "company guidance (raised twice in 2026) | — |\n\n"
+        "| Strategy | Recommendation |\n"
+        "|---|---|\n"
+        "| If you already hold | Check the RPO gap against the 10-K. |\n"
+    )
+
+    def setUp(self):
+        self.points = R.extract_data_points(self.MD)
+        self.labels = {point['label'] for point in self.points}
+
+    def test_keeps_the_actual_value_column(self):
+        self.assertIn('FY2026E non-GAAP EPS guidance · Value', self.labels)
+
+    def test_skips_source_narrative_years(self):
+        self.assertNotIn('FY2026E non-GAAP EPS guidance · Source', self.labels)
+
+    def test_skips_recommendation_identifiers(self):
+        self.assertNotIn('If you already hold · Recommendation', self.labels)
+
+
 class TestGbkStdoutSurvival(unittest.TestCase):
     """BUG-2：Windows GBK 控制台下含 € 的报告必须能正常 extract 而不崩溃。"""
 
