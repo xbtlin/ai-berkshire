@@ -6,10 +6,22 @@
 
 import json
 import subprocess
+import sys
 import time
 import csv
 import os
 from datetime import datetime
+
+
+def _force_utf8_stdio():
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding='utf-8', errors='replace')
+        except Exception:
+            pass
+
+
+_force_utf8_stdio()
 
 API_BASE = (
     "https://lt.morningstar.com/api/rest.svc/klr5zyak8x/security/screener"

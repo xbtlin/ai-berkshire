@@ -60,7 +60,7 @@ def _force_utf8_stdio():
         reconfigure = getattr(stream, "reconfigure", None)
         if reconfigure is not None:
             try:
-                reconfigure(encoding="utf-8")
+                reconfigure(encoding="utf-8", errors="replace")
             except Exception:
                 pass
 

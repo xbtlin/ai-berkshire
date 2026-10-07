@@ -12,6 +12,17 @@ from datetime import datetime, timedelta
 from urllib.request import urlopen, Request
 from collections import OrderedDict
 
+
+def _force_utf8_stdio():
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding='utf-8', errors='replace')
+        except Exception:
+            pass
+
+
+_force_utf8_stdio()
+
 # ============================================================
 # 第一部分：获取历史价格数据（Yahoo Finance Chart API）
 # ============================================================

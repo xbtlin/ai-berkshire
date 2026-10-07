@@ -14,6 +14,17 @@ import os
 from datetime import datetime
 from collections import OrderedDict
 
+
+def _force_utf8_stdio():
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding='utf-8', errors='replace')
+        except Exception:
+            pass
+
+
+_force_utf8_stdio()
+
 # ============================================================
 # 基本面数据（手工录入，比API更准确）
 # ============================================================
