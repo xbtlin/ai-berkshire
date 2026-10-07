@@ -381,7 +381,8 @@ def root_readme_block(items):
 def update_root_readme(items):
     if not os.path.exists(ROOT_README):
         return None, None
-    old = open(ROOT_README, encoding="utf-8").read()
+    with open(ROOT_README, encoding="utf-8") as f:
+        old = f.read()
     new = old
     for start, end, builder in (
         (BANNER_START, BANNER_END, root_banner_block),
@@ -413,7 +414,11 @@ def main():
         if root_old is not None:
             pairs.append((ROOT_README, root_new))
         for p, new in pairs:
-            old = open(p, encoding="utf-8").read() if os.path.exists(p) else ""
+            if os.path.exists(p):
+                with open(p, encoding="utf-8") as f:
+                    old = f.read()
+            else:
+                old = ""
             if old != new:
                 stale.append(os.path.basename(p))
         if stale:

@@ -32,6 +32,17 @@ import urllib.parse
 import urllib.request
 from datetime import date, timedelta
 
+
+def _force_utf8_stdio():
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding='utf-8', errors='replace')
+        except Exception:
+            pass
+
+
+_force_utf8_stdio()
+
 _API = "https://api.finmindtrade.com/api/v4/data"
 _TIMEOUT = 30
 _TOKEN_FILE = os.path.join(
