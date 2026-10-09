@@ -12,6 +12,16 @@ from datetime import datetime, timedelta
 from urllib.request import urlopen, Request
 from collections import OrderedDict
 
+
+def _force_utf8_stdio():
+    """Windows 控制台默认 GBK，❌/✅ 等字符会让 print() 抛 UnicodeEncodeError。"""
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
+
 # ============================================================
 # 第一部分：获取历史价格数据（Yahoo Finance Chart API）
 # ============================================================
@@ -329,6 +339,7 @@ def backtest_ticker(ticker):
 # ============================================================
 
 if __name__ == "__main__":
+    _force_utf8_stdio()
     print("=" * 70)
     print("  动量发现 + 价值验证 回测系统")
     print("  标的：NVDA / AMD / MU | 时间：2022-2025")
