@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>腾讯游戏业务深度研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><h1>腾讯游戏业务深度研究报告</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-04-30 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E8%85%BE%E8%AE%AF%E6%B8%B8%E6%88%8F%E4%B8%9A%E5%8A%A1%E6%B7%B1%E5%BA%A6%E6%8A%A5%E5%91%8A-20260430.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>腾讯游戏业务深度研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><div class="layout"><div><h1>腾讯游戏业务深度研究报告</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-04-30 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E8%85%BE%E8%AE%AF%E6%B8%B8%E6%88%8F%E4%B8%9A%E5%8A%A1%E6%B7%B1%E5%BA%A6%E6%8A%A5%E5%91%8A-20260430.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">一、执行摘要</a></li>
 <li><a href="#_2">二、国内游戏组合详解</a><ul>
@@ -1096,4 +1106,92 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 <hr />
 <p><strong>报告完成时间</strong>：2026-04-30
 <strong>研究框架</strong>：巴菲特护城河 + 段永平商业模式 + 李录长期主义
-<strong>下一步建议</strong>：跟踪 2026 Q1 财报（5 月中旬发布），重点验证 Valorant 手游、王者荣耀世界、AI 投入产出比三个核心信号</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/e98ba87fde5c.html">证据与审计说明</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/549a5c7c8f83.html">腾讯研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/fa1ad1445212.html">腾讯研究附录：来源、真值、算术与尚未解决的缺口</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>
+<strong>下一步建议</strong>：跟踪 2026 Q1 财报（5 月中旬发布），重点验证 Valorant 手游、王者荣耀世界、AI 投入产出比三个核心信号</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/e98ba87fde5c.html">证据与审计说明</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/549a5c7c8f83.html">腾讯研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/fa1ad1445212.html">腾讯研究附录：来源、真值、算术与尚未解决的缺口</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">一、执行摘要</a></li>
+<li><a href="#_2">二、国内游戏组合详解</a><ul>
+<li><a href="#21">2.1 王者荣耀（天美工作室群）—— 长青之王</a></li>
+<li><a href="#22">2.2 和平精英（光子工作室群）—— 流量怪兽</a></li>
+<li><a href="#23-2025">2.3 三角洲行动（光子工作室群）—— 2025 年最大爆款</a></li>
+<li><a href="#24-neople">2.4 地下城与勇士：起源（韩国 Neople 开发，腾讯发行）</a></li>
+<li><a href="#25-valorant-riot-games">2.5 无畏契约 / Valorant 系列（Riot Games）</a></li>
+<li><a href="#26-crossfire">2.6 穿越火线（CrossFire）系列</a></li>
+<li><a href="#27">2.7 其他重要国内游戏</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、国际游戏组合详解</a><ul>
+<li><a href="#31-supercell-84">3.1 Supercell（腾讯持股 ~84%）</a></li>
+<li><a href="#32-riot-games-100">3.2 Riot Games（腾讯 100% 控股）</a></li>
+<li><a href="#33-pubg-mobile-krafton">3.3 PUBG Mobile（光子 + Krafton 合作开发）</a></li>
+<li><a href="#34-epic-games-28">3.4 Epic Games（腾讯持股 ~28%）</a></li>
+<li><a href="#35">3.5 自研 + 投资买断制游戏（新增长点）</a></li>
+</ul>
+</li>
+<li><a href="#14">四、14 款长青游戏地图</a><ul>
+<li><a href="#6">财报正式确认（6 款）</a></li>
+<li><a href="#8">高度推断（剩余 8 款，行业共识）</a></li>
+</ul>
+</li>
+<li><a href="#_4">五、组织架构与工作室体系</a><ul>
+<li><a href="#51-ieg">5.1 国内自研：四大工作室群（IEG 内部赛马）</a></li>
+<li><a href="#52">5.2 精品/独立线</a></li>
+<li><a href="#53">5.3 海外控股工作室</a></li>
+<li><a href="#54">5.4 海外发行</a></li>
+</ul>
+</li>
+<li><a href="#_5">六、护城河分析（七层壁垒）</a><ul>
+<li><a href="#_6">第一层：流量入口</a></li>
+<li><a href="#_7">第二层：渠道与分发</a></li>
+<li><a href="#ip">第三层：IP 与资本布局</a></li>
+<li><a href="#_8">第四层：长青运营能力</a></li>
+<li><a href="#_9">第五层：电竞生态</a></li>
+<li><a href="#ai">第六层：AI + 技术</a></li>
+<li><a href="#_10">第七层：组织能力（赛马 + 容错）</a></li>
+</ul>
+</li>
+<li><a href="#arpu">七、ARPU 与单位经济测算（拆解）</a><ul>
+<li><a href="#_11">中国游戏行业平均水平</a></li>
+<li><a href="#arpu_1">腾讯主要游戏 ARPU 估算</a></li>
+</ul>
+</li>
+<li><a href="#ai_1">八、AI 对游戏业务的重塑（中期催化剂）</a><ul>
+<li><a href="#81">8.1 内容生产侧（成本下降）</a></li>
+<li><a href="#82">8.2 玩法侧（体验提升）</a></li>
+<li><a href="#83-ugc">8.3 UGC 生态（颠覆性）</a></li>
+<li><a href="#84">8.4 商业模式侧</a></li>
+</ul>
+</li>
+<li><a href="#_12">九、行业格局与竞争态势</a><ul>
+<li><a href="#91-2025">9.1 中国游戏市场（2025）</a></li>
+<li><a href="#92">9.2 腾讯市场份额</a></li>
+<li><a href="#93">9.3 主要竞争对手</a></li>
+</ul>
+</li>
+<li><a href="#2026-2030">十、五年展望（2026 - 2030）</a><ul>
+<li><a href="#101">10.1 收入预测（中性情景）</a></li>
+<li><a href="#102">10.2 五个关键剧本</a></li>
+<li><a href="#103-5-2030">10.3 5 年后（2030）的腾讯游戏业务画像</a></li>
+</ul>
+</li>
+<li><a href="#_13">十一、估值与投资视角</a><ul>
+<li><a href="#111">11.1 游戏业务的隐含估值</a></li>
+<li><a href="#112">11.2 横向对比</a></li>
+<li><a href="#113">11.3 价值投资视角的判断</a></li>
+</ul>
+</li>
+<li><a href="#_14">十二、风险与不确定性</a></li>
+<li><a href="#_15">十三、给投资者的最终判断</a><ul>
+<li><a href="#_16">三个核心结论</a></li>
+<li><a href="#_17">一句话定调</a></li>
+</ul>
+</li>
+<li><a href="#_18">附录：数据源</a><ul>
+<li><a href="#_19">腾讯官方</a></li>
+<li><a href="#_20">游戏数据</a></li>
+<li><a href="#_21">行业研究</a></li>
+<li><a href="#_22">战略解读</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:25 UTC</footer></body></html>
