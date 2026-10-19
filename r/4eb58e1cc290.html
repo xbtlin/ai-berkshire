@@ -1,0 +1,599 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>神火股份（000933.SZ）投资研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/神火股份/index.html">神火股份</a></div><h1>神火股份（000933.SZ）投资研究报告</h1><div class="meta"><a href="../companies/神火股份/index.html">神火股份</a> ｜ 2026-06-23 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%A5%9E%E7%81%AB%E8%82%A1%E4%BB%BD/%E7%A5%9E%E7%81%AB%E8%82%A1%E4%BB%BD%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A_20260623.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#0-ai">0. 信息丰富度评级与 AI 研究局限性</a></li>
+<li><a href="#1">1. 一句话结论</a></li>
+<li><a href="#2">2. 四维评分总表</a></li>
+<li><a href="#3">3. 核心数据速览</a><ul>
+<li><a href="#31">3.1 财务与经营指标</a></li>
+<li><a href="#32-2025">3.2 2025 年分业务结构</a></li>
+<li><a href="#33">3.3 估值快照</a></li>
+</ul>
+</li>
+<li><a href="#4">4. 各维度分析摘要</a><ul>
+<li><a href="#41">4.1 商业模式与护城河</a></li>
+<li><a href="#42">4.2 财务与估值</a></li>
+<li><a href="#43">4.3 行业与竞争</a></li>
+<li><a href="#44">4.4 风险与管理层</a></li>
+</ul>
+</li>
+<li><a href="#5-bull-vs-bear">5. 投资论点：Bull vs Bear</a><ul>
+<li><a href="#_1">🟢 看多逻辑</a></li>
+<li><a href="#_2">🔴 看空逻辑</a></li>
+</ul>
+</li>
+<li><a href="#6-checklist">6. 巴菲特买入前 Checklist</a></li>
+<li><a href="#7">7. 最终投资建议</a><ul>
+<li><a href="#71">7.1 定性判断</a></li>
+<li><a href="#72">7.2 分层操作建议</a></li>
+<li><a href="#73">7.3 加仓信号</a></li>
+<li><a href="#74">7.4 减仓信号</a></li>
+</ul>
+</li>
+<li><a href="#8">8. 数据验证记录</a><ul>
+<li><a href="#81">8.1 关键数据交叉验证</a></li>
+<li><a href="#82-financial_rigorpy">8.2 financial_rigor.py 复核摘要</a></li>
+</ul>
+</li>
+<li><a href="#9">9. 关键未决问题</a></li>
+<li><a href="#10">10. 总结段落</a></li>
+<li><a href="#11">11. 主要来源</a></li>
+</ul>
+</div>
+</details><article><p>日期：2026-06-23<br />
+研究框架：巴菲特 × 芒格 × 段永平 × 李录<br />
+研究对象：神火股份（A股，000933.SZ）<br />
+参考股价：22.99 元/股（2026-06-23 收盘/公开行情口径）<br />
+总股本：约 22.49 亿股<br />
+对应市值：约 517 亿元</p>
+<blockquote>
+<p>免责声明：本文为投资研究和学习材料，不构成任何买卖建议。神火股份属于强周期资源股，结论对铝价、氧化铝、电价、煤价、云南来水、碳政策和市场估值口径高度敏感。</p>
+</blockquote>
+<hr />
+<h2 id="0-ai">0. 信息丰富度评级与 AI 研究局限性</h2>
+<p><strong>AI 可研究性评级：A级（信息充裕）</strong>。</p>
+<p>神火股份上市多年，年报、季报、交易所公告、行情数据、财务接口、行业政策和可比公司资料较丰富。历史财务、收入结构、产能、分红等事实层面可交叉验证，置信度较高。</p>
+<p>但资料丰富不等于投资确定性高。公司核心利润来自电解铝价差，本质受铝价、氧化铝、电力、煤炭、碳成本、来水、限电和政策约束影响。最容易犯的错误是：</p>
+<ol>
+<li>把 2026Q1 高利润机械年化；</li>
+<li>把“低 PE”误认为“低风险”；</li>
+<li>把“部分煤电铝一体化”误认为“完整一体化”；</li>
+<li>把低成本周期资产误认为可无脑长期持有的复利好生意。</li>
+</ol>
+<hr />
+<h2 id="1">1. 一句话结论</h2>
+<p><strong>神火股份是一家成本位置较好的电解铝周期股，而不是段永平意义上的顶级“好生意”。公司拥有新疆煤电铝和云南绿电铝带来的成本优势，现金流和分红当前较好；但当前 22.99 元并未相对中性价值给出足够安全边际，更适合作为周期配置观察标的，等待 18 元以下或周期悲观期再重点评估。</strong></p>
+<hr />
+<h2 id="2">2. 四维评分总表</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>框架</th>
+<th style="text-align: right;">评分</th>
+<th>核心判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>商业模式与护城河</td>
+<td>段永平</td>
+<td style="text-align: right;">3.0 / 5</td>
+<td>资产位置不错，但无强品牌、无网络效应、定价权弱；更像好价格时的好资产</td>
+</tr>
+<tr>
+<td>财务质量与估值</td>
+<td>巴菲特</td>
+<td style="text-align: right;">3.2 / 5</td>
+<td>现金流强、负债修复明显；但静态 PE 不极低，安全边际不足</td>
+</tr>
+<tr>
+<td>行业格局与竞争</td>
+<td>芒格</td>
+<td style="text-align: right;">3.6 / 5</td>
+<td>电解铝供给约束利好低成本产能；神火是二线高弹性低成本标的</td>
+</tr>
+<tr>
+<td>风险与管理层</td>
+<td>李录</td>
+<td style="text-align: right;">3.0 / 5</td>
+<td>国资治理稳定、分红纪律较好；关联交易、煤矿安全、周期与碳成本需折价</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>综合评分：3.2 / 5</strong><br />
+<strong>建议：观望 / 等待更好价格；已有持仓可持有并跟踪周期信号。</strong></p>
+<hr />
+<h2 id="3">3. 核心数据速览</h2>
+<h3 id="31">3.1 财务与经营指标</h3>
+<p>单位：亿元，除特别注明外。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2026Q1</th>
+<th>关键解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td style="text-align: right;">383.73</td>
+<td style="text-align: right;">412.41</td>
+<td style="text-align: right;">124.09</td>
+<td>2025 收入增长 7.47%，2026Q1 同比 +28.83%</td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td style="text-align: right;">43.07</td>
+<td style="text-align: right;">40.05</td>
+<td style="text-align: right;">22.90</td>
+<td>2025 下滑，2026Q1 高弹性但不可机械年化</td>
+</tr>
+<tr>
+<td>扣非归母净利</td>
+<td style="text-align: right;">41.14</td>
+<td style="text-align: right;">40.75</td>
+<td style="text-align: right;">22.72</td>
+<td>2025 扣非基本稳定</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">77.19</td>
+<td style="text-align: right;">87.43</td>
+<td style="text-align: right;">40.39</td>
+<td>现金流显著好于净利润</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">21.23%</td>
+<td style="text-align: right;">23.36%</td>
+<td style="text-align: right;">33.48%</td>
+<td>2026Q1 铝价/成本剪刀差释放</td>
+</tr>
+<tr>
+<td>资产负债率</td>
+<td style="text-align: right;">48.57%</td>
+<td style="text-align: right;">42.19%</td>
+<td style="text-align: right;">40.88%</td>
+<td>资产负债表持续改善</td>
+</tr>
+<tr>
+<td>2025 简化 FCF</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">78.82</td>
+<td style="text-align: right;">-</td>
+<td>CFO 87.43 - Capex 8.61</td>
+</tr>
+<tr>
+<td>2025 分红</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">10派8元</td>
+<td style="text-align: right;">-</td>
+<td>每股 0.80 元，股息率约 3.48%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="32-2025">3.2 2025 年分业务结构</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务/产品</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">收入占比</th>
+<th style="text-align: right;">毛利率</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>电解铝</td>
+<td style="text-align: right;">289.79</td>
+<td style="text-align: right;">70.27%</td>
+<td style="text-align: right;">30.06%</td>
+<td>绝对利润核心</td>
+</tr>
+<tr>
+<td>煤炭</td>
+<td style="text-align: right;">55.96</td>
+<td style="text-align: right;">13.57%</td>
+<td style="text-align: right;">7.61%</td>
+<td>资源底盘但短期拖累</td>
+</tr>
+<tr>
+<td>铝箔</td>
+<td style="text-align: right;">28.65</td>
+<td style="text-align: right;">6.95%</td>
+<td style="text-align: right;">未完整披露</td>
+<td>下游延伸，需验证客户与良率</td>
+</tr>
+<tr>
+<td>铝箔坯料</td>
+<td style="text-align: right;">20.53</td>
+<td style="text-align: right;">4.98%</td>
+<td style="text-align: right;">未完整披露</td>
+<td>铝加工配套</td>
+</tr>
+<tr>
+<td>其他/贸易</td>
+<td style="text-align: right;">约 17.5</td>
+<td style="text-align: right;">约 4.2%</td>
+<td style="text-align: right;">口径复杂</td>
+<td>非核心</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="33">3.3 估值快照</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价</td>
+<td style="text-align: right;">22.99 元</td>
+<td>2026-06-23 公开行情口径</td>
+</tr>
+<tr>
+<td>总市值</td>
+<td style="text-align: right;">约 517 亿元</td>
+<td>股价 × 约 22.49 亿股</td>
+</tr>
+<tr>
+<td>2025 EPS</td>
+<td style="text-align: right;">约 1.81 元</td>
+<td>年报静态口径</td>
+</tr>
+<tr>
+<td>2025 静态 PE</td>
+<td style="text-align: right;">约 12.70x</td>
+<td>不算贵，但对周期股不极低</td>
+</tr>
+<tr>
+<td>TTM / 动态 PE</td>
+<td style="text-align: right;">约 5.65x-9.25x</td>
+<td>受 2026Q1 高利润和口径影响，不可直接外推</td>
+</tr>
+<tr>
+<td>PB</td>
+<td style="text-align: right;">约 2.06x-2.10x</td>
+<td>对资源周期股不低</td>
+</tr>
+<tr>
+<td>PS</td>
+<td style="text-align: right;">约 1.25x</td>
+<td>中性</td>
+</tr>
+<tr>
+<td>FCF Yield</td>
+<td style="text-align: right;">约 15.25%</td>
+<td>表面吸引，但需检验周期可持续性</td>
+</tr>
+<tr>
+<td>股息率</td>
+<td style="text-align: right;">约 3.48%</td>
+<td>以 10 派 8 元和 22.99 元计算</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="4">4. 各维度分析摘要</h2>
+<h3 id="41">4.1 商业模式与护城河</h3>
+<ol>
+<li><strong>生意本质</strong>：神火不是纯煤炭股，也不是完整一体化铝业龙头，而是“低成本电解铝利润核心 + 煤炭资源底盘 + 铝箔加工延伸”的周期资源股。</li>
+<li><strong>核心护城河</strong>：不是品牌、客户粘性或网络效应，而是合规电解铝产能稀缺、新疆煤电铝成本优势、云南绿电铝低碳与区位优势。</li>
+<li><strong>一体化需打折</strong>：新疆基地一体化较强，但云南依赖电网和来水，氧化铝仍主要外购，公司并非从铝土矿到氧化铝再到电解铝的完整闭环。</li>
+<li><strong>煤炭不是当前强护城河</strong>：2025 煤炭毛利率仅 7.61%，且煤矿资产减值较大，煤炭更像资源期权和历史底盘。</li>
+<li><strong>段永平结论</strong>：不是“用户离不开、能持续提价”的顶级好生意；更适合在价格足够便宜、周期位置合适时作为好资产候选。</li>
+</ol>
+<h3 id="42">4.2 财务与估值</h3>
+<ol>
+<li><strong>资产负债表修复明显</strong>：资产负债率从 2021 年 73.13% 降至 2025 年 42.19%，有息负债从约 263 亿元降至约 90 亿元。</li>
+<li><strong>现金流质量强</strong>：2025 经营现金流 87.43 亿元，简化自由现金流约 78.82 亿元，显著覆盖分红与回购。</li>
+<li><strong>利润强周期</strong>：2022 年归母净利润 75.78 亿元，2025 年降至 40.05 亿元；不能用景气高点估永续价值。</li>
+<li><strong>估值不贵但不够便宜</strong>：2025 静态 PE 约 12.70x，PB 约 2.1x；对资源周期股而言，缺乏足够深的折价。</li>
+<li><strong>三情景估值</strong>：以 2025 EPS 1.81 元为基准，5 年后乐观约 27.3 元，中性约 18.1 元，悲观约 9.8 元。当前价高于中性价值。</li>
+</ol>
+<h3 id="43">4.3 行业与竞争</h3>
+<ol>
+<li><strong>电解铝行业供给端较好</strong>：中国电解铝受产能置换、能耗、双碳和约 4500 万吨级产能天花板约束，存量合规产能价值提升。</li>
+<li><strong>需求端并非单边成长</strong>：新能源车、光伏、电网、包装等对冲地产下行，但总体仍是周期材料，不是高速成长赛道。</li>
+<li><strong>成本曲线是胜负手</strong>：电力和氧化铝是吨铝成本关键。神火强在电力，弱在氧化铝和全产业链完整性。</li>
+<li><strong>可比公司定位</strong>：宏桥、中铝更强在规模和全链条；云铝更强在绿电纯度；天山更强在氧化铝配套；南山更强在高端加工；神火是二线高弹性低成本标的。</li>
+<li><strong>铝箔不宜高估</strong>：铝箔/电池箔壁垒来自客户认证、良率、加工费和产能利用率，不是只靠上游原铝成本。</li>
+</ol>
+<h3 id="44">4.4 风险与管理层</h3>
+<ol>
+<li><strong>国资治理稳定但需折价</strong>：实控人为商丘市国资委，稳定性较强；但关联交易边界、地方产业责任和少数股东利益需长期跟踪。</li>
+<li><strong>现金回报较积极</strong>：2025 年 10 派 8 元，现金分红约 17.87 亿元；回购约 2.55 亿元用于股权激励。</li>
+<li><strong>关联交易整改是警示</strong>：年报披露根据河南证监局现场检查整改要求，终止与神火集团间部分关联交易；不是一票否决，但需作为治理红线跟踪。</li>
+<li><strong>核心风险变量</strong>：铝价下跌、氧化铝反弹、云南限电/电价上行、新疆煤电碳成本、煤矿继续减值、安全环保事故。</li>
+<li><strong>十年确定性有限</strong>：低成本铝产能可能长期有价值，但碳成本、再生铝、地产需求、来水和政策会持续重塑利润池。</li>
+</ol>
+<hr />
+<h2 id="5-bull-vs-bear">5. 投资论点：Bull vs Bear</h2>
+<h3 id="_1">🟢 看多逻辑</h3>
+<ol>
+<li><strong>电解铝供给端纪律较强</strong>：产能天花板和置换制度使新增供给受限，存量合规产能价值提升。</li>
+<li><strong>神火处于成本曲线偏左侧</strong>：新疆煤电铝和云南绿电铝共同构成吨铝成本优势。</li>
+<li><strong>资产负债表显著改善</strong>：过去几年持续降杠杆，财务风险远低于 2021 年。</li>
+<li><strong>现金流和分红较好</strong>：2025 FCF 约 78.82 亿元，显著覆盖 17.87 亿元现金分红。</li>
+<li><strong>2026Q1 显示利润弹性</strong>：归母净利 22.90 亿元，同比大增，说明铝价/成本改善时弹性很强。</li>
+<li><strong>周期股中具备股东回报意识</strong>：分红、回购、股权激励均体现一定资本纪律。</li>
+<li><strong>低碳铝长期有结构性机会</strong>：云南绿电铝在碳足迹和客户低碳采购中可能有增量价值。</li>
+</ol>
+<h3 id="_2">🔴 看空逻辑</h3>
+<ol>
+<li><strong>没有主动定价权</strong>：电解铝和煤炭价格主要由市场决定，公司赚的是价差，不是品牌溢价。</li>
+<li><strong>2026Q1 不可机械年化</strong>：单季利润来自铝价上涨、氧化铝下降等高景气窗口，不能作为永续利润。</li>
+<li><strong>氧化铝外购短板明显</strong>：并非完整一体化，一旦氧化铝反弹，吨铝利润会被快速压缩。</li>
+<li><strong>云南基地受来水和电价影响</strong>：绿电铝优势伴随枯水期限电、电价上行和产量波动风险。</li>
+<li><strong>新疆煤电铝有碳成本风险</strong>：低成本来自煤电，长期受双碳、CBAM、绿电认证和 ESG 折价影响。</li>
+<li><strong>煤炭业务拖累和减值风险</strong>：2025 煤炭毛利率低，多项煤矿减值暴露历史资产质量问题。</li>
+<li><strong>当前价格安全边际不足</strong>：22.99 元高于中性估值 18 元附近，风险收益比不够舒服。</li>
+</ol>
+<hr />
+<h2 id="6-checklist">6. 巴菲特买入前 Checklist</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>检查项</th>
+<th>通过?</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>生意是否简单易懂</td>
+<td>部分通过</td>
+<td>铝煤产业链可理解，但价格变量复杂</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>是否有长期定价权</td>
+<td>否</td>
+<td>铝价、煤价由市场决定</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>是否有可持续护城河</td>
+<td>部分通过</td>
+<td>有成本和产能指标护城河，但非品牌/网络效应</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td>管理层是否可信</td>
+<td>部分通过</td>
+<td>分红和回购积极，但关联交易整改需跟踪</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td>资产负债表是否安全</td>
+<td>通过</td>
+<td>负债率显著下降，但流动比率仍偏低</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td>现金流是否优秀</td>
+<td>通过</td>
+<td>2025 CFO 和 FCF 强劲</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td>是否能长期稳定复利</td>
+<td>否</td>
+<td>强周期，不是稳定复利机器</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td>当前估值是否便宜</td>
+<td>部分通过</td>
+<td>PE 不高，但 PB 和周期位置使安全边际不足</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td>下行风险是否可控</td>
+<td>部分通过</td>
+<td>成本优势可缓冲，但铝价/氧化铝/限电冲击大</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td>是否适合长期重仓</td>
+<td>否</td>
+<td>更适合周期配置或价格足够低时逆向参与</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="7">7. 最终投资建议</h2>
+<h3 id="71">7.1 定性判断</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生意质量</td>
+<td>中等偏上资产，非顶级好生意</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>成本曲线 + 产能指标型护城河</td>
+</tr>
+<tr>
+<td>管理层</td>
+<td>可投标准，需治理折价</td>
+</tr>
+<tr>
+<td>财务质量</td>
+<td>明显改善，现金流强</td>
+</tr>
+<tr>
+<td>当前估值</td>
+<td>不贵但不够便宜</td>
+</tr>
+<tr>
+<td>周期位置</td>
+<td>2026Q1 景气偏高，不宜年化</td>
+</tr>
+<tr>
+<td>综合建议</td>
+<td>观望 / 持有观察 / 等待更厚安全边际</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="72">7.2 分层操作建议</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投资者类型</th>
+<th>建议</th>
+<th style="text-align: right;">价格区间</th>
+<th>逻辑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>激进型周期投资者</td>
+<td>小仓位跟踪或波段参与</td>
+<td style="text-align: right;">20-23 元</td>
+<td>需确信铝价维持、氧化铝低位、Q2-Q4 延续高景气</td>
+</tr>
+<tr>
+<td>稳健型价值投资者</td>
+<td>等待回落再买</td>
+<td style="text-align: right;">15-18 元</td>
+<td>接近中性价值区间，风险收益更平衡</td>
+</tr>
+<tr>
+<td>保守型投资者</td>
+<td>暂不买入</td>
+<td style="text-align: right;">15 元以下或周期悲观期</td>
+<td>需要明显低估、资产负债表仍稳、分红仍可覆盖</td>
+</tr>
+<tr>
+<td>已持仓者</td>
+<td>可持有但设监控线</td>
+<td style="text-align: right;">取决于成本</td>
+<td>跟踪铝价、氧化铝、电价、分红、煤矿减值</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="73">7.3 加仓信号</h3>
+<ol>
+<li>股价回落至 18 元以下，同时资产负债表保持稳健；</li>
+<li>氧化铝价格维持低位，吨铝利润连续两个季度保持较高水平；</li>
+<li>经营现金流继续显著高于净利润，分红由 FCF 覆盖；</li>
+<li>云南来水和电价稳定，新疆碳成本未显著抬升；</li>
+<li>煤矿减值边界清晰，关联交易继续收缩并透明披露。</li>
+</ol>
+<h3 id="74">7.4 减仓信号</h3>
+<ol>
+<li>市场明显年化 2026Q1 利润并给予乐观估值；</li>
+<li>铝价下跌 15%-25%，但氧化铝、电价、碳成本不降；</li>
+<li>云南限电或电价大幅上行；</li>
+<li>煤矿继续大额减值或发生安全环保事故；</li>
+<li>分红下降且资本开支投向回报不清晰的项目；</li>
+<li>关联交易再度扩大或监管问询升级。</li>
+</ol>
+<hr />
+<h2 id="8">8. 数据验证记录</h2>
+<h3 id="81">8.1 关键数据交叉验证</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>字段</th>
+<th style="text-align: right;">来源1</th>
+<th style="text-align: right;">来源2</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 营业收入</td>
+<td style="text-align: right;">巨潮年报 412.41 亿元</td>
+<td style="text-align: right;">东方财富 412.41 亿元</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>2025 归母净利</td>
+<td style="text-align: right;">巨潮年报 40.05 亿元</td>
+<td style="text-align: right;">东方财富 40.05 亿元</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>2025 经营现金流</td>
+<td style="text-align: right;">巨潮年报 87.43 亿元</td>
+<td style="text-align: right;">东方财富 87.43 亿元</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>2025 资产负债率</td>
+<td style="text-align: right;">巨潮年报 42.19%</td>
+<td style="text-align: right;">东方财富 42.188%</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>股价</td>
+<td style="text-align: right;">东方财富 22.99 元</td>
+<td style="text-align: right;">同花顺/腾讯 22.99 元</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>总市值</td>
+<td style="text-align: right;">股价 × 股本约 517.05 亿元</td>
+<td style="text-align: right;">行情约 517 亿元</td>
+<td>一致</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="82-financial_rigorpy">8.2 financial_rigor.py 复核摘要</h3>
+<pre><code class="language-text">✅ 市值验算：22.99 × 22.49004399 亿股 ≈ 517.05 亿元，偏差约 0.0708%以内
+PE = 12.7017
+PB = 2.1046
+FCF Yield = 15.2449%
+Dividend Yield = 3.4798%
+
+三情景估值（5年）：
+- 乐观：EPS=2.0983，PE=13，目标价=27.28 元，较现价 +18.65%
+- 中性：EPS=1.81，PE=10，目标价=18.10 元，较现价 -21.27%
+- 悲观：EPS=1.4005，PE=7，目标价=9.80 元，较现价 -57.36%
+</code></pre>
+<hr />
+<h2 id="9">9. 关键未决问题</h2>
+<ol>
+<li><strong>2026Q1 利润桥接</strong>：需要拆分铝价、氧化铝、电价、煤炭、套保、少数股东损益对利润的贡献。</li>
+<li><strong>分基地成本曲线</strong>：新疆与云南分别的电价、氧化铝采购价、阳极成本、物流成本、权益口径需要更细数据。</li>
+<li><strong>煤矿减值尾部</strong>：和成、大磨岭、刘河、薛湖等矿井剩余账面价值、复产假设和未来减值空间需跟踪。</li>
+<li><strong>铝箔业务真实 ROIC</strong>：产能利用率、客户认证、良率、加工费、应收账款周转仍需验证。</li>
+<li><strong>关联交易整改闭环</strong>：需要持续跟踪与神火集团及关联方交易是否继续下降、是否市场化定价。</li>
+</ol>
+<hr />
+<h2 id="10">10. 总结段落</h2>
+<p>神火股份的吸引力在于：它不是普通高杠杆资源股，而是资产负债表修复明显、现金流强、分红积极、且拥有新疆煤电铝和云南绿电铝成本优势的电解铝周期标的。但它的核心弱点也很清楚：没有主动定价权，氧化铝外购，云南受来水和电价影响，新疆受碳成本约束，煤炭资产还可能继续拖累。当前 22.99 元不是荒谬高估，但相对中性价值 18 元附近缺乏安全边际。最合理策略是：把它放入高优先级观察池，等待周期悲观、价格回落或更明确的吨铝利润持续性证据，再决定是否买入。</p>
+<hr />
+<h2 id="11">11. 主要来源</h2>
+<ul>
+<li>巨潮资讯：神火股份 2025 年年度报告（2026-03-24）</li>
+<li>巨潮资讯：神火股份 2026 年第一季度报告（2026-04-14）</li>
+<li>巨潮资讯：神火股份 2024/2023/2022/2021 年年度报告</li>
+<li>东方财富：神火股份 F10 财务分析、经营分析、分红融资、股本结构</li>
+<li>同花顺：神火股份财务指标与行情页</li>
+<li>腾讯行情：sz000933 行情接口</li>
+<li>国际铝业协会：Primary Aluminium Production 统计入口</li>
+<li>工信部、发改委、生态环境部、应急管理部公开政策资料</li>
+<li>可比公司公告：云铝股份、天山铝业、南山铝业、中国铝业、中国宏桥等公开披露资料</li>
+</ul></article><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

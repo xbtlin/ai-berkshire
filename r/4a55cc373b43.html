@@ -1,0 +1,618 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Allin 决策研究：腾讯、PDD、美团 三选一 allin 哪个？ · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/综合与横评/index.html">综合与横评</a></div><h1>Allin 决策研究：腾讯、PDD、美团 三选一 allin 哪个？</h1><div class="meta"><a href="../topics/综合与横评/index.html">综合与横评</a> ｜ 2026-04-27 · 横评对比 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/allin%E5%86%B3%E7%AD%96%E7%A0%94%E7%A9%B6-%E8%85%BE%E8%AE%AFvsPDDvs%E7%BE%8E%E5%9B%A2-20260427.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#0">0. 两段话核心结论</a><ul>
+<li><a href="#q-allin-pdd">Q: 如果一定要 allin 一只股票，腾讯/PDD/美团选哪个？</a></li>
+</ul>
+</li>
+<li><a href="#1-github">1. 历史研究检索（拉 GitHub）</a></li>
+<li><a href="#2-2026-04-27">2. 三方最新数据矩阵（2026-04-27）</a></li>
+<li><a href="#3-allin">3. Allin 假设的尾部风险解剖</a><ul>
+<li><a href="#31-allin">3.1 Allin 腾讯的尾部风险</a></li>
+<li><a href="#32-allin-pdd">3.2 Allin PDD 的尾部风险</a></li>
+<li><a href="#33-allin">3.3 Allin 美团的尾部风险</a></li>
+</ul>
+</li>
+<li><a href="#4-3">4. 3 年期概率加权情景估值</a><ul>
+<li><a href="#_1">风险调整后回报（用 加权回报 / |下行幅度| 衡量）</a></li>
+</ul>
+</li>
+<li><a href="#5">5. 大师哲学维度的契合度评分</a><ul>
+<li><a href="#allin">思想实验：四大师"被迫选一只 allin"</a></li>
+</ul>
+</li>
+<li><a href="#6">6. 对历史研究的批判性反思</a><ul>
+<li><a href="#61-4">6.1 "美团是博反转的期权"——4 天后还成立吗？</a></li>
+<li><a href="#62-pe-11-13x">6.2 "腾讯主业 PE 11-13x"是否过于乐观？</a></li>
+<li><a href="#63-pdd">6.3 PDD 零回报——黄峥有任何回购/分红信号？</a></li>
+</ul>
+</li>
+<li><a href="#7-allin">7. Allin 命题本身的批判</a><ul>
+<li><a href="#71">7.1 概率论维度</a></li>
+<li><a href="#72">7.2 段永平的具体反例</a></li>
+<li><a href="#73">7.3 李录的具体反例</a></li>
+<li><a href="#74">7.4 行为金融学维度</a></li>
+</ul>
+</li>
+<li><a href="#8">8. 终极结论（双重答案）</a><ul>
+<li><a href="#a">答案 A：被迫选的纯数据排序</a></li>
+<li><a href="#b-allin">答案 B：你不应该 allin（哲学层）</a></li>
+<li><a href="#_2">段永平金句收尾</a></li>
+</ul>
+</li>
+<li><a href="#9">9. 五问决策框架（自测）</a></li>
+<li><a href="#10-ai">10. AI 研究局限性声明</a></li>
+<li><a href="#11-github">11. 相关研究（GitHub 链接）</a></li>
+<li><a href="#12">12. 免责声明</a></li>
+</ul>
+</div>
+</details><article><p><strong>出品</strong>：ai-berkshire 投研团队（团队批判性分析框架）
+<strong>研究日期</strong>：2026-04-27
+<strong>研究方法</strong>：拉取 GitHub 历史研究 + 2 个并行批判性 Agent（数据驱动 + 大师哲学）
+<strong>研究范式</strong>：<strong>先批判命题本身，再回答命题</strong></p>
+<hr />
+<h2 id="0">0. 两段话核心结论</h2>
+<h3 id="q-allin-pdd">Q: 如果一定要 allin 一只股票，腾讯/PDD/美团选哪个？</h3>
+<p><strong>回答 1（哲学层）</strong>：四大师（巴菲特、芒格、段永平、李录）<strong>没有一个人 allin 任何一只股票</strong>——李录最集中，单股最高也只有 22.31%；段永平历史上苹果最高也不到 55%。<strong>allin 单一标的违反了价值投资的第一性原理（谦卑+安全边际+不亏钱）</strong>。如果你对自己的判断比段永平/李录还自信，问题不在股票上，问题在心态上。</p>
+<p><strong>回答 2（数据层，被迫选）</strong>：风险调整后回报排序 <strong>腾讯（2.57）&gt; 美团（1.02）&gt; PDD（0.66）</strong>。如果思想实验非要选，<strong>答案是腾讯</strong>——四大师哲学维度全票一致、风险调整后回报最优、3 年内 &gt;50% 永久亏损概率最低（~7%）。<strong>但思想实验的答案 ≠ 行动建议</strong>。</p>
+<hr />
+<h2 id="1-github">1. 历史研究检索（拉 GitHub）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>历史报告</th>
+<th>日期</th>
+<th>与本研究的关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../r/99f9c5ec8da3.html">换仓决策研究-腾讯换PDD-茅台换美团</a></td>
+<td>2026-04-23</td>
+<td>上一轮研究"换仓"问题，腾讯→PDD 理性度 2.0/5、茅台→美团 1.25/5</td>
+</tr>
+<tr>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF">腾讯投资研究报告_20260427</a></td>
+<td>2026-04-27</td>
+<td>今日单股研究：腾讯当前价 HKD 493.4，SOTP 内在价值 HKD 543.67，3年加权目标价 HKD 779（+58%）</td>
+</tr>
+<tr>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/portfolio-latest.md">portfolio-latest</a></td>
+<td>2026-04-09</td>
+<td>组合层面分析：85% 中国单一国家风险已被识别</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>历史研究的核心遗产</strong>：
+- 段永平/李录都<strong>同时持有</strong>腾讯+PDD（不二选一）
+- 美团<strong>无任何大师重仓</strong>
+- 段永平的实际操作给了答案：他从中国神华（边缘）→ 茅台（核心），<strong>没有从核心 → 边缘</strong></p>
+<p><strong>新问题与旧问题的本质区别</strong>：
+- 旧问题（换仓）：从一个标的换到另一个 → 答案是"不换"
+- <strong>新问题（allin）：从分散押注变为单一押注 → 答案是"不 allin"</strong>
+- 这是更极端的版本——所以不是简单沿用旧结论，需要<strong>新的批判性维度</strong></p>
+<hr />
+<h2 id="2-2026-04-27">2. 三方最新数据矩阵（2026-04-27）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>腾讯 0700.HK</th>
+<th>PDD (NASDAQ)</th>
+<th>美团 3690.HK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>当前股价</strong></td>
+<td>HKD 493</td>
+<td>USD 100</td>
+<td>HKD 86.5</td>
+</tr>
+<tr>
+<td><strong>市值（USD）</strong></td>
+<td>573B</td>
+<td>140B</td>
+<td>67B</td>
+</tr>
+<tr>
+<td><strong>2025 营收（RMB 亿）</strong></td>
+<td>7,518（+14%）</td>
+<td>4,318（+10%）</td>
+<td>3,649（+8%）</td>
+</tr>
+<tr>
+<td><strong>2025 净利（RMB 亿）</strong></td>
+<td>2,596（+17%, Non-IFRS）</td>
+<td>994（<strong>-12%</strong>）</td>
+<td><strong>-234（转亏）</strong></td>
+</tr>
+<tr>
+<td><strong>2025 FCF（RMB 亿）</strong></td>
+<td>1,826（+18%）</td>
+<td>~1,019</td>
+<td>负</td>
+</tr>
+<tr>
+<td><strong>净利率</strong></td>
+<td>34.5%</td>
+<td>23.0%</td>
+<td>-6.4%</td>
+</tr>
+<tr>
+<td><strong>PE (TTM)</strong></td>
+<td>16.0x</td>
+<td>10.2x</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>PE (剔除净现金)</strong></td>
+<td>~14.5x</td>
+<td><strong>5.9x</strong></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>净现金/市值</strong></td>
+<td>~7%</td>
+<td><strong>42%</strong></td>
+<td>~19%</td>
+</tr>
+<tr>
+<td><strong>股东回报率</strong></td>
+<td><strong>~3.0%</strong></td>
+<td>~0%</td>
+<td>~0.5%</td>
+</tr>
+<tr>
+<td><strong>2025 回购</strong></td>
+<td>HKD ~850 亿</td>
+<td>$0</td>
+<td>HKD ~200 亿</td>
+</tr>
+<tr>
+<td><strong>2025 分红</strong></td>
+<td>HKD 479 亿（+18%）</td>
+<td>$0</td>
+<td>$0</td>
+</tr>
+<tr>
+<td><strong>段永平持仓</strong></td>
+<td>卖 PUT（间接看多）</td>
+<td>✅ 7.7%（核心仓位）</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><strong>李录持仓</strong></td>
+<td>✅（亚洲基金长期）</td>
+<td>✅ 14.64%（13F第四大）</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><strong>巴菲特/芒格</strong></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>观察</strong>：三家在大师持仓分布上呈现<strong>惊人的二选一互斥</strong>——
+- 段永平选 PDD 不选腾讯（但卖 PUT 显示愿在 HKD 460-480 接货）
+- 李录两家都选但都不选美团
+- <strong>美团没有任何大师重仓</strong>——这本身就是市场效率的最强信号</p>
+</blockquote>
+<hr />
+<h2 id="3-allin">3. Allin 假设的尾部风险解剖</h2>
+<h3 id="31-allin">3.1 Allin 腾讯的尾部风险</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>风险</th>
+<th>量级</th>
+<th>概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI Agent 颠覆超级 App</td>
+<td>微信时长流失、广告下滑</td>
+<td>中（30%）</td>
+</tr>
+<tr>
+<td>监管再起</td>
+<td>游戏版号/平台经济</td>
+<td>低（15%）</td>
+</tr>
+<tr>
+<td>AI Capex 拖累 FCF</td>
+<td>2026 capex 翻倍</td>
+<td>中</td>
+</tr>
+<tr>
+<td>港股流动性/地缘风险</td>
+<td>-30% beta 风险</td>
+<td>中（20%）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>3 年内 &gt;50% 永久亏损概率：~5-8%</strong></p>
+<p>支撑：FCF 1826 亿 RMB / 市值 P/FCF 22.7x；3% 股东回报；下行很难突破"PE 12x × 利润不变"约 HKD 380。</p>
+<h3 id="32-allin-pdd">3.2 Allin PDD 的尾部风险</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>风险</th>
+<th>量级</th>
+<th>概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temu 关税重击</td>
+<td>美国 145% + 欧盟取消 €150 de minimis</td>
+<td><strong>高（60%）</strong></td>
+</tr>
+<tr>
+<td>国内增速坍塌</td>
+<td>Q1 2026 净利已 -11%</td>
+<td><strong>高（已发生）</strong></td>
+</tr>
+<tr>
+<td>黄峥/陈磊治理黑箱</td>
+<td>不开会、不沟通</td>
+<td><strong>100%（已发生）</strong></td>
+</tr>
+<tr>
+<td>零回报政策延续</td>
+<td>净现金 42% 但不返还 = 死钱</td>
+<td><strong>100%</strong></td>
+</tr>
+<tr>
+<td>TikTok 式禁令</td>
+<td>美国封禁 Temu</td>
+<td>低（10%）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>3 年内 &gt;50% 永久亏损概率：~15-20%</strong></p>
+<p><strong>致命缺陷</strong>：净现金 42% 是真实的"安全垫"，<strong>前提是公司返还现金给股东</strong>。黄峥四年不动，这个前提就是空的——"便宜"等价于"永远便宜"。</p>
+<h3 id="33-allin">3.3 Allin 美团的尾部风险</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>风险</th>
+<th>量级</th>
+<th>概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阿里持续烧 800-900 亿/年</td>
+<td>蒋凡 KPI 是市占率不是利润</td>
+<td><strong>高（70%）</strong></td>
+</tr>
+<tr>
+<td>Q1-Q3 2026 OP 转正赌注</td>
+<td>公司表态 Q3 转正但市场不信</td>
+<td>中（40%）</td>
+</tr>
+<tr>
+<td>骑手社保改革</td>
+<td>一次性成本 + 持续利润率冲击</td>
+<td>中（50%）</td>
+</tr>
+<tr>
+<td>Keeta 海外烧钱期</td>
+<td>巴西/沙特/阿联酋持续投入</td>
+<td><strong>100%</strong></td>
+</tr>
+<tr>
+<td>京东/抖音三家围攻</td>
+<td>不是双寡头，是三国杀</td>
+<td>高（70%）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>3 年内 &gt;50% 永久亏损概率：~25-35%</strong></p>
+<p><strong>关键观察</strong>：美团 2025 从 +358 亿盈利转为 -234 亿亏损（593 亿摆动！）。当前股价从 2021 年高点 HKD 460 跌到 HKD 86 已经 -81%——但<strong>这恰恰说明它具备"再跌 50%"的能力</strong>。</p>
+<hr />
+<h2 id="4-3">4. 3 年期概率加权情景估值</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>标的</th>
+<th>悲观（30%）</th>
+<th>中性（45-50%）</th>
+<th>乐观（25-30%）</th>
+<th>概率加权目标价</th>
+<th>加权回报</th>
+<th>下行幅度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>腾讯</strong></td>
+<td>HKD 380（-23%）</td>
+<td>HKD 760（+54%）</td>
+<td>HKD 1100（+123%）</td>
+<td>HKD 786</td>
+<td><strong>+59%</strong></td>
+<td><strong>-23%</strong></td>
+</tr>
+<tr>
+<td><strong>PDD</strong></td>
+<td>USD 50（-50%）</td>
+<td>USD 140（+40%）</td>
+<td>USD 220（+120%）</td>
+<td>USD 133</td>
+<td>+33%</td>
+<td>-50%</td>
+</tr>
+<tr>
+<td><strong>美团</strong></td>
+<td>HKD 50（-42%）</td>
+<td>HKD 130（+50%）</td>
+<td>HKD 200（+131%）</td>
+<td>HKD 124</td>
+<td>+43%</td>
+<td>-42%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_1">风险调整后回报（用 加权回报 / |下行幅度| 衡量）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>排名</th>
+<th>标的</th>
+<th>风险调整比</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🥇</td>
+<td><strong>腾讯</strong></td>
+<td><strong>2.57</strong></td>
+<td>每承担 1 单位下行风险，获得 2.57 单位上行回报</td>
+</tr>
+<tr>
+<td>🥈</td>
+<td>美团</td>
+<td>1.02</td>
+<td>上行下行接近 1:1，弹性大但代价是不确定性</td>
+</tr>
+<tr>
+<td>🥉</td>
+<td>PDD</td>
+<td><strong>0.66</strong></td>
+<td>下行幅度 &gt; 加权回报，<strong>风险调整后是负预期</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="5">5. 大师哲学维度的契合度评分</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>腾讯</th>
+<th>PDD</th>
+<th>美团</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>巴菲特"长期 + 股东回报 + 品牌"</td>
+<td>★★★★★</td>
+<td>★★</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>芒格"少操心 + 品质 + Sit on your ass"</td>
+<td>★★★★★</td>
+<td>★★★</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>段永平"不懂不做 + 商业模式"</td>
+<td>★★★★★</td>
+<td>★★★★</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>李录"不亏钱 + 护城河"</td>
+<td>★★★★★</td>
+<td>★★★</td>
+<td>★★</td>
+</tr>
+<tr>
+<td><strong>加权总分（满分 20）</strong></td>
+<td><strong>20/20</strong></td>
+<td>12/20</td>
+<td>9/20</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>重要</strong>：评分是<strong>相对值</strong>，不代表绝对推荐。即使腾讯 20/20，<strong>allin 腾讯依然是错的</strong>（见 §6）。</p>
+</blockquote>
+<h3 id="allin">思想实验：四大师"被迫选一只 allin"</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>大师</th>
+<th>选择</th>
+<th>核心理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>巴菲特</td>
+<td><strong>腾讯</strong></td>
+<td>"我看不懂 Temu，看不懂无人机，但我看得懂 14 亿人每天用微信"</td>
+</tr>
+<tr>
+<td>芒格</td>
+<td><strong>腾讯</strong></td>
+<td>"Sit on your ass" — 睡 10 年觉它还在</td>
+</tr>
+<tr>
+<td>段永平</td>
+<td><strong>腾讯</strong>（实际持仓他都买，但卖 PUT 是底仓型操作）</td>
+<td>商业模式 &gt; 价格</td>
+</tr>
+<tr>
+<td>李录</td>
+<td><strong>腾讯</strong>（推断，类比他重仓的 GOOGL）</td>
+<td>数字基础设施 = 不可替代</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>四大师一致选腾讯</strong>。但同时——<strong>没有一个大师真的会 allin</strong>。</p>
+<hr />
+<h2 id="6">6. 对历史研究的批判性反思</h2>
+<h3 id="61-4">6.1 "美团是博反转的期权"——4 天后还成立吗？</h3>
+<p><strong>部分修正</strong>。4-23 报告把美团定位为"非对称期权（下行有限、上行巨大）"，但拉到 4-27 看：</p>
+<ul>
+<li><strong>下行其实没那么有限</strong>：净亏 234 亿是事实，2026 Q1 还在持续，Q4 OP 亏损 -16 亿尚未见底。HKD 50 的下行情景概率有 <strong>30%</strong>，不是历史报告暗示的"下行有底"。</li>
+<li><strong>期权属性的核心是"时间不站在你这边"</strong>：阿里只要继续烧，美团就持续流血。期权有到期日，allin 美团等于赌"3 年内阿里认输"——这是<strong>赌一个企业行为</strong>，不是赌商业基本面。</li>
+</ul>
+<h3 id="62-pe-11-13x">6.2 "腾讯主业 PE 11-13x"是否过于乐观？</h3>
+<p><strong>SOTP 拆分方法争议</strong>。把投资组合（约 8000 亿 RMB 按账面）和主业拆开，假设<strong>投资组合按账面价值变现</strong>——但 2025 年港股+A 股调整后，这部分账面值本身就含水分。如果投资组合打 8 折，主业 PE 11-13x 实际可能是 13-15x。</p>
+<blockquote>
+<p><strong>诚实修正</strong>：今天报告的"PE 16x"可能是更稳健的数字；HKD 543.67 的 SOTP 内在价值上限可能要打 9 折至 <strong>HKD 490</strong> —— 即<strong>当前价格已基本反映内在价值，没有显著折让</strong>。</p>
+</blockquote>
+<h3 id="63-pdd">6.3 PDD 零回报——黄峥有任何回购/分红信号？</h3>
+<p><strong>完全没有</strong>。
+- PDD 的 Buyback Yield 为 <strong>-0.22%</strong>（增发为正，回购为负）
+- TTM 分红 <strong>$0.00</strong>
+- 净现金从 2024 的 $50B+ 涨到 2025 的 <strong>$59B（4223 亿 RMB）</strong>——继续囤现金，<strong>没有返还任何</strong>给股东
+- Q1 2026 净利 -11% 的环境下，黄峥也没有任何"返利股东"的迹象</p>
+<p><strong>PDD 的结构性死结</strong>：它越赚钱，账上现金越多，股东永远拿不到。除非黄峥本人做出政策转变，否则<strong>净现金折价永远存在</strong>。</p>
+<hr />
+<h2 id="7-allin">7. Allin 命题本身的批判</h2>
+<h3 id="71">7.1 概率论维度</h3>
+<p>3 年内"&gt; 50% 永久亏损"概率：
+- 腾讯 ~7% × 美团 ~30% × PDD ~17.5%</p>
+<p>即使最稳的腾讯，allin 100% 押注也有 <strong>7% 的概率 3 年腰斩永不回来</strong>。任意三选一的"集中赌"，预期回报都比"三家平均分配"差，因为<strong>允许部分仓位被消灭</strong>。</p>
+<p>平均分配下：33%×0.59 + 33%×0.33 + 33%×0.43 = <strong>加权 +45%</strong>，且单一公司爆雷只伤 33% 本金。</p>
+<h3 id="72">7.2 段永平的具体反例</h3>
+<p>段永平 2026-04 在雪球："<strong>每天卖 1000 个腾讯 PUT 会继续</strong>"——
+- 这意味着他愿以更低价（HKD 460-480）买入腾讯
+- 但他<strong>没有 allin 腾讯</strong>，因为他还要持有 PDD、Apple、Berkshire、英伟达、谷歌等 14 只股票
+- <strong>最尊敬腾讯的人都没有 allin 腾讯，那你为什么要？</strong></p>
+<h3 id="73">7.3 李录的具体反例</h3>
+<p>李录 Himalaya 2025Q4 13F：
+- 第一大：GOOGL <strong>22.31%</strong>（最爱也只有 1/5 仓位）
+- 第四大：PDD <strong>14.64%</strong>
+- 前 5 只占 87.2%，<strong>总持仓 9 只</strong></p>
+<p>李录最集中——但单只最高也只有 <strong>22.31%</strong>。allin 等于把李录的"22% 上限"暴力提到"100%"，<strong>这不是激进的价值投资，这是反价值投资</strong>。</p>
+<h3 id="74">7.4 行为金融学维度</h3>
+<ul>
+<li>"all in" 的语言来自<strong>德州扑克</strong>，不是巴菲特</li>
+<li>真正的高确定性会带来<strong>仓位增加</strong>（如从 20% → 35%），不是 100%</li>
+<li><strong>追求"一把翻身" = 承认自己已经"翻不了身"</strong>——这是绝望者的姿势</li>
+</ul>
+<p><strong>最危险的提问</strong>：你在问"该 allin 哪只"，背后可能是"我想一把赚回来"。
+<strong>正确的提问</strong>："我应该把单股仓位从 X% 提到 Y% 吗？"</p>
+<hr />
+<h2 id="8">8. 终极结论（双重答案）</h2>
+<h3 id="a">答案 A：被迫选的纯数据排序</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>排名</th>
+<th>标的</th>
+<th>综合评估</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🥇</td>
+<td><strong>腾讯</strong></td>
+<td>大师哲学 20/20、风险调整比 2.57、&gt;50% 亏损概率 ~7%、3% 股东回报兜底</td>
+</tr>
+<tr>
+<td>🥈</td>
+<td>美团</td>
+<td>弹性最大但确定性最差、&gt;50% 亏损概率 ~30%、赌阿里 3 年内认输</td>
+</tr>
+<tr>
+<td>🥉</td>
+<td>PDD</td>
+<td>估值最便宜的"价值陷阱"、&gt;50% 亏损概率 ~17.5%、净现金股东永远拿不到</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="b-allin">答案 B：你不应该 allin（哲学层）</h3>
+<blockquote>
+<p><strong>数据说 allin 腾讯最理性。哲学说 allin 本身就不理性。</strong></p>
+</blockquote>
+<p><strong>两者结合的可执行答案</strong>：把"想 allin 腾讯的冲动"转化为<strong>单股仓位 30-40%</strong>——这是激进价值投资的边界（参考李录的 22% 上限稍微放宽）。剩下 60-70% 分散给其他高确定性标的（包括 PDD/美团或非中国资产）。</p>
+<h3 id="_2">段永平金句收尾</h3>
+<blockquote>
+<p><strong>"投资中最重要的不是一次赚多少，而是不要犯大错。allin 就是大错的定义。"</strong>
+—— @大道无形我有型</p>
+<p><strong>"30% 和 100% 的区别，不是激进度的区别，是'投资 vs 赌博'的区别。"</strong></p>
+</blockquote>
+<hr />
+<h2 id="9">9. 五问决策框架（自测）</h2>
+<p>如果你仍想 allin，自问 5 个问题——<strong>5 个全是"是"才考虑</strong>（注意是 5/5 不是 3/5）：</p>
+<ol>
+<li>你比段永平、李录、巴菲特、芒格更有把握吗？</li>
+<li>这家公司未来 10 年能在你睡觉时不出问题吗？</li>
+<li>你能承受 -50% 永久亏损（单股集中度 100% 时这是真实的尾部风险）吗？</li>
+<li>你的判断是基于商业基本面，不是基于"想一把翻身"的情绪吗？</li>
+<li>你能在错了之后承认错误，而不是用"长期投资"的话术骗自己吗？</li>
+</ol>
+<p><strong>少于 5 个"是" → 不应 allin</strong>。</p>
+<hr />
+<h2 id="10-ai">10. AI 研究局限性声明</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>局限项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>概率估算主观</td>
+<td>"3 年 &gt;50% 亏损概率"是定性估计，非精算</td>
+</tr>
+<tr>
+<td>大师持仓延后</td>
+<td>13F 数据有 45 天延迟，最新动作可能未反映</td>
+</tr>
+<tr>
+<td>美团转正时点</td>
+<td>"Q3 2026 OP 转正"是公司表态，不是事实</td>
+</tr>
+<tr>
+<td>Temu 关税演化</td>
+<td>美国关税政策不可预测，60% 概率是中位数估计</td>
+</tr>
+<tr>
+<td>黄峥治理风险</td>
+<td>"永远不返还现金"是观察推论，不是必然</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>确定性来自商业模式本身，不来自报告字数</strong>。本报告<strong>不构成投资建议</strong>。</p>
+<hr />
+<h2 id="11-github">11. 相关研究（GitHub 链接）</h2>
+<ul>
+<li><a href="../r/99f9c5ec8da3.html">换仓决策研究-腾讯换PDD-茅台换美团-20260423</a></li>
+<li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/portfolio-latest.md">组合审视与优化-portfolio-latest</a></li>
+<li><a href="../r/9e7f6b675e1a.html">选股计划-20260412</a></li>
+<li><a href="../r/b46965962e70.html">刘军宁《少即是多——集中投资的智慧》</a></li>
+</ul>
+<hr />
+<h2 id="12">12. 免责声明</h2>
+<p>本报告基于公开数据和价值投资框架的批判性分析。所有具体数字为估算。<strong>不构成投资建议</strong>。allin 决策需结合个人风险承受能力、税务、时间视角综合判断。</p>
+<p><strong>核心提醒</strong>：本报告的标题虽是"三选一 allin"，但<strong>报告本身的最强结论是"不要 allin"</strong>。如果你只记住一句话——记住这一句。</p>
+<hr />
+<p><strong>ai-berkshire 投研团队 / 2026-04-27</strong></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/0f7db0f0b448.html">研究报告索引</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/8ffcc4c8ad84.html">美股七姐妹：七份独立投资研究</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/2fd4a5ed4622.html">除了你自己，没人关心你的成本价</a><div class="meta">2026-09-28 · 公众号</div></li><li><a href="../r/05d9b0332f04.html">快手与 MiniMax：护城河与五年盈利推演</a><div class="meta">2026-09-22 · 研究</div></li><li><a href="../r/9afae466678c.html">六家公司研究与持仓判断</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/692147003320.html">技术分析冲力系统实证检验：三万次事件的证伪记录</a><div class="meta">2026-09-04 · 研究</div></li><li><a href="../r/3fffde9e8894.html">九公司凯利赔率横评：上行、下行与仓位框架</a><div class="meta">2026-09-03 · 横评对比</div></li><li><a href="../r/6a076e0af7bb.html">破净与净现金股全球筛选：美股、港股、A股</a><div class="meta">2026-08-27 · 筛选</div></li><li><a href="../r/13793d9c42cd.html">12 家公司 10 年后利润结局推演（2036 年视角）</a><div class="meta">2026-08-27 · 研究</div></li><li><a href="../r/4328f84a5552.html">巴菲特、段永平、李录 2026Q2 13F 持仓全解</a><div class="meta">2026-08-15 · 财报</div></li><li><a href="../r/be601dae083d.html">七公司十年横评：谁值得重仓，谁应该规避</a><div class="meta">2026-08-14 · 横评对比</div></li><li><a href="../r/8395b6213382.html">BNP Paribas — Income Investment</a><div class="meta">2026-07-15 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

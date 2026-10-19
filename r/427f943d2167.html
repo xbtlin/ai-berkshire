@@ -1,0 +1,1416 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>腾讯控股 3年/5年/10年利润预测模型 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><h1>腾讯控股 3年/5年/10年利润预测模型</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-05-19 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E8%85%BE%E8%AE%AF-%E5%88%A9%E6%B6%A6%E9%A2%84%E6%B5%8B%E6%A8%A1%E5%9E%8B-20260519.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">建模基础：历史财务数据</a><ul>
+<li><a href="#_2">全年业绩</a></li>
+<li><a href="#2026q1">2026Q1最新数据</a></li>
+<li><a href="#_3">关键利润率趋势</a></li>
+</ul>
+</li>
+<li><a href="#_4">预测框架</a></li>
+<li><a href="#32029">一、3年后预测（2029年）</a><ul>
+<li><a href="#_5">分业务收入预测</a></li>
+<li><a href="#_9">三情景利润预测</a></li>
+<li><a href="#3">3年预测汇总</a></li>
+</ul>
+</li>
+<li><a href="#52031">二、5年后预测（2031年）</a><ul>
+<li><a href="#_10">业务格局变化假设</a></li>
+<li><a href="#_11">三情景预测</a></li>
+<li><a href="#5">5年预测汇总</a></li>
+</ul>
+</li>
+<li><a href="#102036">三、10年后预测（2036年）</a><ul>
+<li><a href="#10">10年预测的框架</a></li>
+<li><a href="#10_1">微信护城河的10年耐久度</a></li>
+<li><a href="#_12">三情景预测</a></li>
+<li><a href="#10_2">10年预测汇总</a></li>
+</ul>
+</li>
+<li><a href="#_13">四、敏感性分析</a><ul>
+<li><a href="#ai">AI投入是最大变量</a></li>
+<li><a href="#_14">利润率对净利润的敏感度</a></li>
+<li><a href="#eps">回购注销对EPS的复利效应</a></li>
+</ul>
+</li>
+<li><a href="#_15">五、核心结论</a><ul>
+<li><a href="#_16">一句话判断</a></li>
+<li><a href="#_17">分时间段判断</a></li>
+<li><a href="#_18">与理想汽车的对比</a></li>
+<li><a href="#_19">关键追踪指标</a></li>
+</ul>
+</li>
+<li><a href="#_20">数据来源</a></li>
+<li><a href="#_21">与本仓库前次预测的差异说明</a></li>
+<li><a href="#_22">免责声明</a></li>
+</ul>
+</div>
+</details><article><p><strong>研究日期</strong>：2026年5月19日
+<strong>研究方法</strong>：自下而上分业务建模，三情景分析
+<strong>基准年份</strong>：2025年（全年实际数据）+ 2026Q1（最新季度）
+<strong>利润口径</strong>：Non-IFRS归母净利润（剔除股权激励、投资公允价值变动等）</p>
+<hr />
+<h2 id="_1">建模基础：历史财务数据</h2>
+<h3 id="_2">全年业绩</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2022年</th>
+<th>2023年</th>
+<th>2024年</th>
+<th>2025年</th>
+<th>CAGR(3年)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总营收（亿元）</td>
+<td>5,546</td>
+<td>6,090</td>
+<td>6,602</td>
+<td>7,518</td>
+<td>+10.7%</td>
+</tr>
+<tr>
+<td>增值服务</td>
+<td>2,876</td>
+<td>2,984</td>
+<td>3,178</td>
+<td>3,693</td>
+<td>+8.7%</td>
+</tr>
+<tr>
+<td>— 国内游戏</td>
+<td>1,176</td>
+<td>1,267</td>
+<td>1,388</td>
+<td>1,642</td>
+<td>+11.8%</td>
+</tr>
+<tr>
+<td>— 国际游戏</td>
+<td>468</td>
+<td>532</td>
+<td>583</td>
+<td>774</td>
+<td>+18.3%</td>
+</tr>
+<tr>
+<td>— 社交网络</td>
+<td>1,232</td>
+<td>1,185</td>
+<td>1,207</td>
+<td>1,277</td>
+<td>+1.2%</td>
+</tr>
+<tr>
+<td>网络广告</td>
+<td>827</td>
+<td>1,015</td>
+<td>1,218</td>
+<td>1,450</td>
+<td>+20.6%</td>
+</tr>
+<tr>
+<td>金融科技及企服</td>
+<td>1,771</td>
+<td>2,037</td>
+<td>2,126</td>
+<td>2,294</td>
+<td>+9.0%</td>
+</tr>
+<tr>
+<td>Non-IFRS净利润</td>
+<td>1,557</td>
+<td>1,860</td>
+<td>2,227</td>
+<td>2,596</td>
+<td>+18.6%</td>
+</tr>
+<tr>
+<td>Non-IFRS净利润率</td>
+<td>28.1%</td>
+<td>30.5%</td>
+<td>33.7%</td>
+<td>34.5%</td>
+<td>+6.4pct</td>
+</tr>
+<tr>
+<td>自由现金流</td>
+<td>815</td>
+<td>1,597</td>
+<td>1,854</td>
+<td>2,100（估）</td>
+<td>+37.3%</td>
+</tr>
+<tr>
+<td>资本开支</td>
+<td>322</td>
+<td>421</td>
+<td>731</td>
+<td>792</td>
+<td>+34.8%</td>
+</tr>
+<tr>
+<td>回购注销（港元）</td>
+<td>~340亿</td>
+<td>~490亿</td>
+<td>~1,120亿</td>
+<td>~800亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td>总股本（亿股）</td>
+<td>95.3</td>
+<td>93.7</td>
+<td>92.4</td>
+<td>~91.2</td>
+<td>-1.5%/年</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="2026q1">2026Q1最新数据</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2026Q1</th>
+<th>同比</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总营收</td>
+<td>1,965亿</td>
+<td>+9%</td>
+<td>略低于一致预期1,994亿</td>
+</tr>
+<tr>
+<td>增值服务</td>
+<td>961亿</td>
+<td>+4%</td>
+<td>游戏收入递延，Q2将释放</td>
+</tr>
+<tr>
+<td>— 国内游戏</td>
+<td>454亿</td>
+<td>+6%</td>
+<td>实际流水增长十几个百分点</td>
+</tr>
+<tr>
+<td>— 国际游戏</td>
+<td>188亿</td>
+<td>+13%</td>
+<td></td>
+</tr>
+<tr>
+<td>— 社交网络</td>
+<td>319亿</td>
+<td>-2%</td>
+<td>唯一负增长</td>
+</tr>
+<tr>
+<td>网络广告</td>
+<td>382亿</td>
+<td>+20%</td>
+<td>连续两季加速，AI驱动效率提升</td>
+</tr>
+<tr>
+<td>金融科技及企服</td>
+<td>599亿</td>
+<td>+9%</td>
+<td>企业服务+20%</td>
+</tr>
+<tr>
+<td>Non-IFRS净利润</td>
+<td>679亿</td>
+<td>+11%</td>
+<td>超一致预期678亿</td>
+</tr>
+<tr>
+<td>Non-IFRS经营利润</td>
+<td>756亿</td>
+<td>+9%</td>
+<td>经营利润率38.5%</td>
+</tr>
+<tr>
+<td>自由现金流</td>
+<td>567亿</td>
+<td>+20%</td>
+<td></td>
+</tr>
+<tr>
+<td>资本开支</td>
+<td>319亿</td>
+<td>+39%</td>
+<td>年化~1,276亿，AI为主</td>
+</tr>
+<tr>
+<td>净现金</td>
+<td>902亿</td>
+<td>+63%</td>
+<td></td>
+</tr>
+<tr>
+<td>微信MAU</td>
+<td>14.32亿</td>
+<td>+2%</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_3">关键利润率趋势</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025</th>
+<th>2026Q1</th>
+<th>趋势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Non-IFRS经营利润率</td>
+<td>30.1%</td>
+<td>33.6%</td>
+<td>36.1%</td>
+<td>37.8%</td>
+<td>38.5%</td>
+<td>持续扩张</td>
+</tr>
+<tr>
+<td>Non-IFRS净利润率</td>
+<td>28.1%</td>
+<td>30.5%</td>
+<td>33.7%</td>
+<td>34.5%</td>
+<td>34.6%</td>
+<td>持续扩张</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>43.2%</td>
+<td>48.6%</td>
+<td>52.3%</td>
+<td>53.5%</td>
+<td>53.8%</td>
+<td>持续扩张</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_4">预测框架</h2>
+<pre><code>Non-IFRS净利润 = Σ(各业务收入) × Non-IFRS净利润率
+各业务收入 = f(用户基数 × ARPU, 市场增速, 份额变化)
+利润率 = f(业务结构变化, AI投入节奏, 规模效应)
+每股利润 = 净利润 ÷ (总股本 - 累计回购注销)
+</code></pre>
+<p>核心变量拆解：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>变量</th>
+<th>权重</th>
+<th>可预测性</th>
+<th>当前方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>广告收入增速</td>
+<td>高</td>
+<td>中高</td>
+<td>加速（视频号变现率提升）</td>
+</tr>
+<tr>
+<td>游戏收入增速</td>
+<td>高</td>
+<td>中</td>
+<td>稳健（国内+海外双轮）</td>
+</tr>
+<tr>
+<td>FBS增速</td>
+<td>中</td>
+<td>中</td>
+<td>稳定（云提速+支付放缓）</td>
+</tr>
+<tr>
+<td>AI投入强度</td>
+<td>高</td>
+<td>低</td>
+<td>大幅增加（2026翻倍至360亿+）</td>
+</tr>
+<tr>
+<td>回购注销节奏</td>
+<td>中</td>
+<td>中</td>
+<td>减速（资金转向AI）</td>
+</tr>
+<tr>
+<td>利润率趋势</td>
+<td>高</td>
+<td>中高</td>
+<td>短期承压（AI投入），中长期扩张</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="32029">一、3年后预测（2029年）</h2>
+<h3 id="_5">分业务收入预测</h3>
+<h4 id="_6">增值服务（游戏+社交）</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>子业务</th>
+<th>2025年</th>
+<th>2029E CAGR</th>
+<th>2029E收入</th>
+<th>逻辑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>国内游戏</td>
+<td>1,642亿</td>
+<td>8%</td>
+<td>2,234亿</td>
+<td>王者/和平精英/DnF手游等长青游戏+AI降本提效（美术成本降50%，研发周期缩短）。但国内用户时长见顶，增速从18%回归至8%</td>
+</tr>
+<tr>
+<td>国际游戏</td>
+<td>774亿</td>
+<td>15%</td>
+<td>1,354亿</td>
+<td>Riot(LoL+Valorant)+Supercell+新游，海外渗透率32%远低于索尼任天堂70-80%。最确定的高增长业务线</td>
+</tr>
+<tr>
+<td>社交网络</td>
+<td>1,277亿</td>
+<td>2%</td>
+<td>1,383亿</td>
+<td>音乐/视频付费增长疲软，但基数稳定。QQ复苏提供小幅增量</td>
+</tr>
+<tr>
+<td><strong>小计</strong></td>
+<td><strong>3,693亿</strong></td>
+<td><strong>8.4%</strong></td>
+<td><strong>4,971亿</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键假设验证</strong>：国内游戏8%增速是否合理？2023-2025年CAGR实际为11.8%，但这包含DnF手游上线的一次性爆发。去除新游上线的基数效应，稳态增速约8-10%。中国游戏市场2025年规模约3,500亿元，行业增速约5-7%，腾讯凭借头部产品组合跑赢行业2-3个百分点合理。</p>
+<h4 id="_7">网络广告</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2025年</th>
+<th>2029E</th>
+<th>CAGR</th>
+<th>逻辑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>广告收入</td>
+<td>1,450亿</td>
+<td>3,050亿</td>
+<td>20%</td>
+<td>核心驱动：视频号广告变现率从1.8%向5%+靠拢（抖音7.2%为天花板参考）；AI提升投放效率（eCPM+30-50%）；微信小店电商广告增量</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>变现率天花板测算</strong>：
+- 微信MAU 14.3亿 × ARPU $15/年（2025）→ 如果达到Meta全球ARPU $55的50%即$28 → 14.3亿×$28×7.2汇率 = 2,871亿元
+- 这意味着广告业务天花板约2,800-3,000亿元，2029年3,050亿基本触及天花板
+- <strong>反面论据</strong>：如果视频号变现不及预期（DAU增长放缓、用户体验与商业化冲突），广告增速可能从20%回落至12-15%</p>
+<h4 id="_8">金融科技及企业服务</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>子业务</th>
+<th>2025年</th>
+<th>2029E CAGR</th>
+<th>2029E收入</th>
+<th>逻辑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>金融科技（支付为主）</td>
+<td>~1,500亿（估）</td>
+<td>5%</td>
+<td>~1,824亿</td>
+<td>微信支付59.7%市占已接近天花板，费率受监管压力。增速回归GDP+小幅</td>
+</tr>
+<tr>
+<td>企业服务（含云）</td>
+<td>~794亿（估）</td>
+<td>18%</td>
+<td>~1,553亿</td>
+<td>腾讯云在AI云+游戏云有差异化，企业微信私域生态是独特优势。但IaaS市占7.9%位居第五，难以大幅扩张</td>
+</tr>
+<tr>
+<td><strong>小计</strong></td>
+<td><strong>2,294亿</strong></td>
+<td><strong>10.5%</strong></td>
+<td><strong>3,377亿</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_9">三情景利润预测</h3>
+<h4 id="25-ai">乐观情景（概率25%）：广告超预期 + AI投入回报显现</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总营收</td>
+<td>12,500亿</td>
+</tr>
+<tr>
+<td>Non-IFRS净利润率</td>
+<td>37%</td>
+</tr>
+<tr>
+<td><strong>Non-IFRS净利润</strong></td>
+<td><strong>4,625亿</strong></td>
+</tr>
+<tr>
+<td>总股本（回购注销后）</td>
+<td>~83亿股（年均注销2%）</td>
+</tr>
+<tr>
+<td><strong>每股Non-IFRS利润</strong></td>
+<td><strong>55.7元</strong></td>
+</tr>
+<tr>
+<td>vs 2025年EPS 28.5元</td>
+<td>CAGR 18.3%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>逻辑</strong>：广告CAGR 22%+（视频号变现加速、AI广告效率超预期）；游戏国际业务爆发（Riot新游+Supercell复兴）；AI赋能推高利润率至37%（混元大模型成功变现、云服务AI收入高增长）；回购维持积极节奏。</p>
+<h4 id="50ai">基准情景（概率50%）：稳健增长，AI投入短期压利润</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>增值服务</td>
+<td>4,971亿（+8.4%）</td>
+</tr>
+<tr>
+<td>网络广告</td>
+<td>3,050亿（+20%）</td>
+</tr>
+<tr>
+<td>金融科技及企服</td>
+<td>3,377亿（+10.5%）</td>
+</tr>
+<tr>
+<td><strong>总营收</strong></td>
+<td><strong>11,398亿</strong></td>
+</tr>
+<tr>
+<td>Non-IFRS净利润率</td>
+<td>35%</td>
+</tr>
+<tr>
+<td><strong>Non-IFRS净利润</strong></td>
+<td><strong>3,989亿</strong></td>
+</tr>
+<tr>
+<td>AI新产品投入影响</td>
+<td>累计约-200亿/年</td>
+</tr>
+<tr>
+<td><strong>调整后净利润</strong></td>
+<td><strong>~3,800亿</strong></td>
+</tr>
+<tr>
+<td>总股本</td>
+<td>~85亿股（年均注销1.8%）</td>
+</tr>
+<tr>
+<td><strong>每股Non-IFRS利润</strong></td>
+<td><strong>44.7元</strong></td>
+</tr>
+<tr>
+<td>vs 2025年EPS 28.5元</td>
+<td><strong>CAGR 11.9%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>逻辑链条</strong>：
+- 营收：7,518亿 → 11,398亿（4年CAGR 11.0%），广告是主引擎
+- 利润率：从34.5%微升至35%，AI投入（年均400亿+资本开支）部分抵消了规模效应带来的利润率扩张
+- 净利润：2,596亿 → 3,800亿（4年CAGR 10.0%）
+- 每股利润：28.5元 → 44.7元（4年CAGR 11.9%），回购注销贡献~2pct加速</p>
+<p><strong>交叉验证</strong>：国信证券预测2028年净利润3,529亿，按此增速外推到2029年约3,900亿，与本模型基准情景吻合。</p>
+<h4 id="25ai">悲观情景（概率25%）：AI烧钱无果 + 监管/地缘冲击</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总营收</td>
+<td>9,500亿</td>
+</tr>
+<tr>
+<td>Non-IFRS净利润率</td>
+<td>31%</td>
+</tr>
+<tr>
+<td><strong>Non-IFRS净利润</strong></td>
+<td><strong>2,945亿</strong></td>
+</tr>
+<tr>
+<td>总股本</td>
+<td>~87亿股（回购放缓）</td>
+</tr>
+<tr>
+<td><strong>每股Non-IFRS利润</strong></td>
+<td><strong>33.9元</strong></td>
+</tr>
+<tr>
+<td>vs 2025年EPS 28.5元</td>
+<td>CAGR 4.4%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>触发条件</strong>：AI年投入超500亿但无明显回报、元宝MAU始终未过2亿、视频号变现率停滞在3%以下、美国对Riot/Epic等游戏资产实施制裁或强制出售、国内反垄断对支付费率施加上限。</p>
+<h3 id="3">3年预测汇总</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>营收</th>
+<th>Non-IFRS净利润</th>
+<th>EPS</th>
+<th>EPS CAGR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>25%</td>
+<td>12,500亿</td>
+<td>4,625亿</td>
+<td>55.7元</td>
+<td>18.3%</td>
+</tr>
+<tr>
+<td><strong>基准</strong></td>
+<td><strong>50%</strong></td>
+<td><strong>11,398亿</strong></td>
+<td><strong>3,800亿</strong></td>
+<td><strong>44.7元</strong></td>
+<td><strong>11.9%</strong></td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>25%</td>
+<td>9,500亿</td>
+<td>2,945亿</td>
+<td>33.9元</td>
+<td>4.4%</td>
+</tr>
+<tr>
+<td><strong>概率加权</strong></td>
+<td></td>
+<td><strong>10,949亿</strong></td>
+<td><strong>3,793亿</strong></td>
+<td><strong>44.7元</strong></td>
+<td><strong>~12%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="52031">二、5年后预测（2031年）</h2>
+<h3 id="_10">业务格局变化假设</h3>
+<p>到2031年，腾讯的业务结构将有以下变化：</p>
+<ol>
+<li><strong>广告可能成为第一大收入</strong>：如果视频号变现持续加速，广告收入有望超过增值服务</li>
+<li><strong>AI产品应开始贡献收入</strong>：元宝/混元/AI Agent等经过5年发展，应该能看到商业化成果</li>
+<li><strong>国际游戏占比进一步提升</strong>：从当前21%提升至30%+</li>
+<li><strong>回购累计注销效应显著</strong>：5年累计注销约9-12%股本</li>
+</ol>
+<h3 id="_11">三情景预测</h3>
+<h4 id="20">乐观情景（概率20%）</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th>2031E收入</th>
+<th>CAGR(6年)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>增值服务</td>
+<td>6,500亿</td>
+<td>9.9%</td>
+</tr>
+<tr>
+<td>网络广告</td>
+<td>4,800亿</td>
+<td>22.1%</td>
+</tr>
+<tr>
+<td>金融科技及企服</td>
+<td>4,500亿</td>
+<td>11.9%</td>
+</tr>
+<tr>
+<td>AI新产品收入</td>
+<td>300亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>总营收</strong></td>
+<td><strong>16,100亿</strong></td>
+<td><strong>13.5%</strong></td>
+</tr>
+<tr>
+<td>Non-IFRS净利润率</td>
+<td>38%</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Non-IFRS净利润</strong></td>
+<td><strong>6,118亿</strong></td>
+<td><strong>15.3%</strong></td>
+</tr>
+<tr>
+<td>总股本</td>
+<td>~80亿股</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>每股利润</strong></td>
+<td><strong>76.5元</strong></td>
+<td><strong>17.9%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>前提</strong>：视频号ARPU接近抖音水平、AI Agent成为微信生态核心入口、混元模型进入行业前三、国际游戏多款新游成功。</p>
+<h4 id="50">基准情景（概率50%）</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th>2031E收入</th>
+<th>CAGR(6年)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>增值服务</td>
+<td>5,700亿</td>
+<td>7.5%</td>
+</tr>
+<tr>
+<td>网络广告</td>
+<td>3,700亿</td>
+<td>16.9%</td>
+</tr>
+<tr>
+<td>金融科技及企服</td>
+<td>3,900亿</td>
+<td>9.3%</td>
+</tr>
+<tr>
+<td>AI新产品收入</td>
+<td>100亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>总营收</strong></td>
+<td><strong>13,400亿</strong></td>
+<td><strong>10.1%</strong></td>
+</tr>
+<tr>
+<td>Non-IFRS净利润率</td>
+<td>36%</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Non-IFRS净利润</strong></td>
+<td><strong>4,824亿</strong></td>
+<td><strong>10.9%</strong></td>
+</tr>
+<tr>
+<td>总股本</td>
+<td>~82亿股（年均注销1.8%）</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>每股利润</strong></td>
+<td><strong>58.8元</strong></td>
+<td><strong>12.8%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>逻辑</strong>：
+- 营收10%增速 = 广告17%（主引擎）+ 游戏7.5% + FBS 9.3%
+- 利润率从34.5%升至36%：规模效应+广告利润率高，部分被AI持续投入抵消
+- 净利润CAGR 10.9%，叠加回购注销1.8%/年 → EPS CAGR 12.8%
+- <strong>6年后净利润约为2025年的1.86倍</strong></p>
+<h4 id="30">悲观情景（概率30%）</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2031E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总营收</td>
+<td>10,500亿</td>
+</tr>
+<tr>
+<td>Non-IFRS净利润率</td>
+<td>30%</td>
+</tr>
+<tr>
+<td><strong>Non-IFRS净利润</strong></td>
+<td><strong>3,150亿</strong></td>
+</tr>
+<tr>
+<td>总股本</td>
+<td>~86亿股</td>
+</tr>
+<tr>
+<td><strong>每股利润</strong></td>
+<td><strong>36.6元</strong></td>
+</tr>
+<tr>
+<td>EPS CAGR</td>
+<td>4.3%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>触发条件</strong>：AI投入长期烧钱无果（年烧500亿+，连续5年无明显回报）；地缘政治冲击海外游戏资产（Riot/Epic/Supercell被迫出售或价值归零）；国内监管对游戏/支付/广告的系统性打压（类似2021年但更严厉）。</p>
+<p><strong>概率从3年的25%升至30%的原因</strong>：5年时间窗口内发生地缘政治黑天鹅的概率更高。</p>
+<h3 id="5">5年预测汇总</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>营收</th>
+<th>Non-IFRS净利润</th>
+<th>EPS</th>
+<th>EPS CAGR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>20%</td>
+<td>16,100亿</td>
+<td>6,118亿</td>
+<td>76.5元</td>
+<td>17.9%</td>
+</tr>
+<tr>
+<td><strong>基准</strong></td>
+<td><strong>50%</strong></td>
+<td><strong>13,400亿</strong></td>
+<td><strong>4,824亿</strong></td>
+<td><strong>58.8元</strong></td>
+<td><strong>12.8%</strong></td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>30%</td>
+<td>10,500亿</td>
+<td>3,150亿</td>
+<td>36.6元</td>
+<td>4.3%</td>
+</tr>
+<tr>
+<td><strong>概率加权</strong></td>
+<td></td>
+<td><strong>12,920亿</strong></td>
+<td><strong>4,579亿</strong></td>
+<td><strong>55.3元</strong></td>
+<td><strong>~12%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="102036">三、10年后预测（2036年）</h2>
+<h3 id="10">10年预测的框架</h3>
+<p>10年后腾讯的利润取决于三个核心问题：</p>
+<ol>
+<li><strong>微信是否仍是中国流量终局入口？</strong>（决定广告+生态收入天花板）</li>
+<li><strong>AI投入是否形成了新的利润来源？</strong>（决定利润增量）</li>
+<li><strong>国际业务能否成为第二增长极？</strong>（决定增长持续性）</li>
+</ol>
+<h3 id="10_1">微信护城河的10年耐久度</h3>
+<p><strong>正面证据</strong>：
+- 微信是操作系统级应用（支付+社交+内容+服务），替代成本极高
+- 类比：Facebook 2016→2026，MAU从18亿增至33亿，ARPU从$15增至$60+，至今没有被颠覆
+- AGI时代微信的位置：AI Agent大概率"在微信之上运行"而非"绕过微信"</p>
+<p><strong>反面风险</strong>：
+- 年轻用户向新平台迁移（但过去10年每次"微信杀手"都失败了）
+- 监管强制拆分（概率极低但非零）</p>
+<p><strong>判断</strong>：10年后微信仍是中国流量第一入口的概率 &gt; 90%</p>
+<h3 id="_12">三情景预测</h3>
+<h4 id="20ai">乐观情景（概率20%）：AI+全球化双轮驱动</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2036E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总营收</td>
+<td>25,000亿</td>
+</tr>
+<tr>
+<td>Non-IFRS净利润率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td><strong>Non-IFRS净利润</strong></td>
+<td><strong>10,000亿</strong></td>
+</tr>
+<tr>
+<td>总股本</td>
+<td>~72亿股（年均注销2.2%）</td>
+</tr>
+<tr>
+<td><strong>每股利润</strong></td>
+<td><strong>138.9元</strong></td>
+</tr>
+<tr>
+<td>EPS CAGR(11年)</td>
+<td>15.6%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>前提</strong>：混元大模型进入全球前五、微信AI Agent成为中国企业标配、国际游戏收入超过国内、视频号广告ARPU追平Meta的50%。这意味着腾讯成功复制了Meta过去10年的路径——平台不变，变现效率大幅提升+AI创造新收入。</p>
+<h4 id="45">基准情景（概率45%）：稳健复利，中国的微软+伯克希尔</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th>2036E收入</th>
+<th>CAGR(11年)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>增值服务</td>
+<td>7,500亿</td>
+<td>6.7%</td>
+</tr>
+<tr>
+<td>网络广告</td>
+<td>5,500亿</td>
+<td>12.9%</td>
+</tr>
+<tr>
+<td>金融科技及企服</td>
+<td>5,500亿</td>
+<td>8.3%</td>
+</tr>
+<tr>
+<td>AI新产品</td>
+<td>500亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>总营收</strong></td>
+<td><strong>19,000亿</strong></td>
+<td><strong>8.8%</strong></td>
+</tr>
+<tr>
+<td>Non-IFRS净利润率</td>
+<td>37%</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Non-IFRS净利润</strong></td>
+<td><strong>7,030亿</strong></td>
+<td><strong>9.5%</strong></td>
+</tr>
+<tr>
+<td>投资组合损益</td>
+<td>+500亿</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>含投资合计</strong></td>
+<td><strong>7,530亿</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>总股本</td>
+<td>~75亿股（年均注销1.8%）</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>每股利润</strong></td>
+<td><strong>100.4元</strong></td>
+<td><strong>12.2%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键数字验证</strong>：
+- 营收CAGR 8.8%：低于过去3年的10.7%，合理——基数变大后增速自然放缓
+- 利润率37%：从34.5%提升2.5pct，主要来自广告占比提升（广告是最高利润率业务）和规模效应，AI投入对利润率的拖累逐步消化
+- 净利润CAGR 9.5%：接近中国名义GDP增速（5-6%）+ 效率提升（3-4%），合理
+- EPS CAGR 12.2%：净利润9.5% + 回购注销1.8%/年 ≈ 11.3%，加上少量投资收益提升至12.2%</p>
+<p><strong>与之前报告的对比</strong>：
+- 之前报告（5月4日版）：2036中性净利润5,800亿（基准为2,228亿）→ CAGR 8.7%
+- 本次更新：2036中性净利润7,030亿（基准为2,596亿）→ CAGR 9.5%
+- <strong>差异来源</strong>：之前报告的2025基准偏低（2,228 vs 实际2,596），且未充分反映广告业务的加速势头。更新后的预测在CAGR上与之前接近，绝对值更高</p>
+<h4 id="35">悲观情景（概率35%）：增长停滞+资产减值</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2036E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总营收</td>
+<td>12,000亿</td>
+</tr>
+<tr>
+<td>Non-IFRS净利润率</td>
+<td>28%</td>
+</tr>
+<tr>
+<td><strong>Non-IFRS净利润</strong></td>
+<td><strong>3,360亿</strong></td>
+</tr>
+<tr>
+<td>总股本</td>
+<td>~82亿股</td>
+</tr>
+<tr>
+<td><strong>每股利润</strong></td>
+<td><strong>41.0元</strong></td>
+</tr>
+<tr>
+<td>EPS CAGR(11年)</td>
+<td>3.4%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>触发条件</strong>：地缘政治导致海外游戏资产剥离（Riot+Supercell+Epic权益合计约$500亿，被迫低价出售）；国内监管系统性压制互联网平台利润率；AI投入连续10年烧钱无果（累计烧掉4,000-5,000亿）；微信用户增长停滞、年轻用户迁移。</p>
+<p><strong>概率高达35%的原因</strong>：10年时间跨度内，地缘政治冲击和监管周期的概率不可忽视。2021年的游戏版号收紧+反垄断整治曾让腾讯利润停滞两年。一次类似冲击的概率在10年内约30-40%。</p>
+<h3 id="10_2">10年预测汇总</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>营收</th>
+<th>Non-IFRS净利润</th>
+<th>EPS</th>
+<th>EPS CAGR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>20%</td>
+<td>25,000亿</td>
+<td>10,000亿</td>
+<td>138.9元</td>
+<td>15.6%</td>
+</tr>
+<tr>
+<td><strong>基准</strong></td>
+<td><strong>45%</strong></td>
+<td><strong>19,000亿</strong></td>
+<td><strong>7,030亿</strong></td>
+<td><strong>100.4元</strong></td>
+<td><strong>12.2%</strong></td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>35%</td>
+<td>12,000亿</td>
+<td>3,360亿</td>
+<td>41.0元</td>
+<td>3.4%</td>
+</tr>
+<tr>
+<td><strong>概率加权</strong></td>
+<td></td>
+<td><strong>17,250亿</strong></td>
+<td><strong>6,341亿</strong></td>
+<td><strong>82.4元</strong></td>
+<td><strong>~10%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_13">四、敏感性分析</h2>
+<h3 id="ai">AI投入是最大变量</h3>
+<p>腾讯2026年AI投入预计超360亿（较2025年180亿翻倍），且下半年"大幅增长"。这个变量对利润的影响极大：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>AI投入情景</th>
+<th>年均投入</th>
+<th>对净利润影响</th>
+<th>回报可能性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保守投入</td>
+<td>300亿/年</td>
+<td>-200亿/年（扣除赋能收益）</td>
+<td>风险低，回报低</td>
+</tr>
+<tr>
+<td><strong>当前节奏</strong></td>
+<td><strong>400-500亿/年</strong></td>
+<td><strong>-250亿/年</strong></td>
+<td><strong>中风险中回报</strong></td>
+</tr>
+<tr>
+<td>激进投入</td>
+<td>700亿+/年</td>
+<td>-450亿/年</td>
+<td>高风险高回报</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>AI投入的两面性</strong>：
+- <strong>已经在赚钱的AI</strong>（第一层）：广告效率提升→ 2026Q1广告+20%中有~5-8pct归因AI优化。按1,450亿广告基数，AI每年额外贡献70-120亿广告收入
+- <strong>还在烧钱的AI</strong>（第二层）：元宝MAU仅5,700万（豆包3.4亿的1/6）。混元大模型在MaaS市场份额低于5%</p>
+<p><strong>核心判断</strong>：AI投入的第一层（赋能现有业务）回报已确认且持续提升；第二层（独立AI产品）需要2-3年验证。如果第二层在2028年前未见显著回报，管理层可能会调整策略。</p>
+<h3 id="_14">利润率对净利润的敏感度</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>营收 \ 净利润率</th>
+<th>30%</th>
+<th>33%</th>
+<th>35%</th>
+<th>37%</th>
+<th>40%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>10,000亿</strong></td>
+<td>3,000</td>
+<td>3,300</td>
+<td>3,500</td>
+<td>3,700</td>
+<td>4,000</td>
+</tr>
+<tr>
+<td><strong>12,000亿</strong></td>
+<td>3,600</td>
+<td>3,960</td>
+<td>4,200</td>
+<td>4,440</td>
+<td>4,800</td>
+</tr>
+<tr>
+<td><strong>15,000亿</strong></td>
+<td>4,500</td>
+<td>4,950</td>
+<td>5,250</td>
+<td>5,550</td>
+<td>6,000</td>
+</tr>
+<tr>
+<td><strong>19,000亿</strong></td>
+<td>5,700</td>
+<td>6,270</td>
+<td>6,650</td>
+<td><strong>7,030</strong></td>
+<td>7,600</td>
+</tr>
+<tr>
+<td><strong>25,000亿</strong></td>
+<td>7,500</td>
+<td>8,250</td>
+<td>8,750</td>
+<td>9,250</td>
+<td><strong>10,000</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>（单位：亿元Non-IFRS净利润）</p>
+<h3 id="eps">回购注销对EPS的复利效应</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年均注销率</th>
+<th>10年累计注销</th>
+<th>2036股本</th>
+<th>EPS加速效应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0%</td>
+<td>9.6%</td>
+<td>82.5亿</td>
+<td>+1.0%/年</td>
+</tr>
+<tr>
+<td><strong>1.8%</strong></td>
+<td><strong>16.6%</strong></td>
+<td><strong>76.1亿</strong></td>
+<td><strong>+1.8%/年</strong></td>
+</tr>
+<tr>
+<td>2.5%</td>
+<td>22.4%</td>
+<td>70.8亿</td>
+<td>+2.5%/年</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>当前问题</strong>：2026年回购骤降（Q1仅76亿港元 vs 2025年Q1 171亿港元），资金转向AI。如果这个趋势持续3-5年，EPS加速效应将从1.8%降至~1.0%。但管理层承诺2026年回购不低于800亿港元，需要跟踪Q2-Q4的实际执行。</p>
+<hr />
+<h2 id="_15">五、核心结论</h2>
+<h3 id="_16">一句话判断</h3>
+<p><strong>腾讯是中国最可预测的利润增长机器。概率加权后，3年EPS CAGR ~12%、5年~12%、10年~10%，叠加2-3%股息率，总回报约14-15%/年。核心风险不在业务，在AI投入节奏和地缘政治。</strong></p>
+<h3 id="_17">分时间段判断</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间段</th>
+<th>概率加权净利润</th>
+<th>EPS</th>
+<th>EPS CAGR</th>
+<th>置信度</th>
+<th>核心判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025（基准）</strong></td>
+<td><strong>2,596亿</strong></td>
+<td><strong>28.5元</strong></td>
+<td>—</td>
+<td>实际</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>3年后（2029）</strong></td>
+<td><strong>3,793亿</strong></td>
+<td><strong>44.7元</strong></td>
+<td><strong>~12%</strong></td>
+<td>高</td>
+<td>广告+游戏双轮驱动，AI投入短期压利润但可控</td>
+</tr>
+<tr>
+<td><strong>5年后（2031）</strong></td>
+<td><strong>4,579亿</strong></td>
+<td><strong>55.3元</strong></td>
+<td><strong>~12%</strong></td>
+<td>中高</td>
+<td>广告接近天花板，增速放缓但利润率扩张补偿</td>
+</tr>
+<tr>
+<td><strong>10年后（2036）</strong></td>
+<td><strong>6,341亿</strong></td>
+<td><strong>82.4元</strong></td>
+<td><strong>~10%</strong></td>
+<td>中</td>
+<td>取决于AI回报和地缘政治，但微信护城河支撑底线</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_18">与理想汽车的对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>腾讯</th>
+<th>理想汽车</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025净利润</td>
+<td>2,596亿</td>
+<td>11.4亿</td>
+</tr>
+<tr>
+<td>3年后概率加权净利润</td>
+<td>3,793亿</td>
+<td>~5亿</td>
+</tr>
+<tr>
+<td>5年后概率加权净利润</td>
+<td>4,579亿</td>
+<td>~13亿</td>
+</tr>
+<tr>
+<td>10年后概率加权净利润</td>
+<td>6,341亿</td>
+<td>-5至+10亿</td>
+</tr>
+<tr>
+<td>利润可预测性</td>
+<td>高</td>
+<td>极低</td>
+</tr>
+<tr>
+<td>护城河趋势</td>
+<td>稳定/加宽</td>
+<td>收窄</td>
+</tr>
+<tr>
+<td>最大风险</td>
+<td>地缘政治+AI烧钱</td>
+<td>竞争+执行力+生存</td>
+</tr>
+<tr>
+<td>10年存活概率</td>
+<td>&gt;95%</td>
+<td>~85%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_19">关键追踪指标</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>乐观信号</th>
+<th>警示信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>广告增速</td>
+<td>季度&gt;15%</td>
+<td>季度&lt;10%</td>
+</tr>
+<tr>
+<td>元宝MAU</td>
+<td>突破1亿</td>
+<td>停滞在6,000万以下</td>
+</tr>
+<tr>
+<td>视频号GMV</td>
+<td>年化&gt;1万亿</td>
+<td>增速&lt;30%</td>
+</tr>
+<tr>
+<td>回购金额</td>
+<td>年化&gt;600亿港元</td>
+<td>季度&lt;50亿港元</td>
+</tr>
+<tr>
+<td>资本开支/营收</td>
+<td>&lt;12%</td>
+<td>&gt;18%</td>
+</tr>
+<tr>
+<td>海外游戏占比</td>
+<td>&gt;30%</td>
+<td>下降</td>
+</tr>
+<tr>
+<td>Non-IFRS利润率</td>
+<td>&gt;36%</td>
+<td>&lt;32%</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_20">数据来源</h2>
+<ul>
+<li>腾讯控股2022-2025年报、2026Q1财报</li>
+<li>高盛、花旗、中金、国信证券研究报告</li>
+<li>IDC中国云市场份额数据（2025Q2）</li>
+<li>Canalys云服务报告</li>
+<li>QuestMobile/eMarketer中国广告市场预测</li>
+<li>Meta 2025年报（ARPU对标参考）</li>
+</ul>
+<hr />
+<h2 id="_21">与本仓库前次预测的差异说明</h2>
+<p>本次模型与<code>腾讯10年利润预测-team-20260504.md</code>的主要差异：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>5月4日版</th>
+<th>本次（5月19日版）</th>
+<th>差异原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025基准净利润</td>
+<td>2,228亿</td>
+<td>2,596亿</td>
+<td>前次可能使用了早期估计值，实际年报为2,596亿</td>
+</tr>
+<tr>
+<td>2036中性净利润</td>
+<td>5,800亿</td>
+<td>7,030亿</td>
+<td>基准上调+广告增速假设上调（Q1确认加速）</td>
+</tr>
+<tr>
+<td>2036中性EPS CAGR</td>
+<td>12.0%</td>
+<td>12.2%</td>
+<td>基本一致，验证了前次模型方向正确</td>
+</tr>
+<tr>
+<td>新增内容</td>
+<td>无3年/5年</td>
+<td>3年3,793亿/5年4,579亿</td>
+<td>本次增加短中期预测</td>
+</tr>
+<tr>
+<td>AI投入分析</td>
+<td>定性描述</td>
+<td>定量拆解（360亿+/第一层vs第二层）</td>
+<td>Q1数据让AI投入影响可量化</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核心结论一致</strong>：两份报告都指向<strong>EPS CAGR 12%左右</strong>的中性预期，差异主要在绝对值（基准上调带动）。</p>
+<hr />
+<h2 id="_22">免责声明</h2>
+<p>本预测模型基于公开数据和逻辑推演，存在重大不确定性。10年预测本质是"区间猜测"，置信度约65%。不构成投资建议。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/e98ba87fde5c.html">证据与审计说明</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/549a5c7c8f83.html">腾讯研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/fa1ad1445212.html">腾讯研究附录：来源、真值、算术与尚未解决的缺口</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

@@ -1,0 +1,1121 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>泡泡玛特经营证据底稿 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/泡泡玛特/index.html">泡泡玛特</a></div><h1>泡泡玛特经营证据底稿</h1><div class="meta"><a href="../companies/泡泡玛特/index.html">泡泡玛特</a> ｜ 2026-10-19 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%B3%A1%E6%B3%A1%E7%8E%9B%E7%89%B9%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261019/%E7%BB%8F%E8%90%A5%E8%AF%81%E6%8D%AE.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">证据来源</a></li>
+<li><a href="#_2">结论所需的核心边界</a></li>
+<li><a href="#2026h1">2026H1损益与现金</a></li>
+<li><a href="#_3">区域、渠道和门店</a></li>
+<li><a href="#ipip">IP与品类：多IP接力的证据和局限</a></li>
+<li><a href="#_4">存货、现金资产与会员</a></li>
+<li><a href="#_5">五年历史原始数据</a></li>
+<li><a href="#_6">仍需一手验证</a></li>
+<li><a href="#decimal">Decimal复算附录</a></li>
+<li><a href="#financial_rigorpy">financial_rigor.py双源交叉验证记录</a></li>
+</ul>
+</div>
+</details><article><p>数据截点：2026-10-19（Asia/Shanghai）。子任务：独立收集经营原始证据，不代替主报告的估值与发布审计。金额表除另注外为人民币千元；页码为报告印刷页码。已直接打开并核验2026年中报、2026H1业绩公告、2026Q1业务公告、2025年报及2025H1公告原文。完整2026中报为9月24日发布、130页；8月20日业绩公告为44页，勿混淆页码。</p>
+<h2 id="_1">证据来源</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>编号</th>
+<th>原始来源</th>
+<th>用途与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0924/2026092400544.pdf">2026中报</a></td>
+<td>全文已打开；最新完整经营数据，截至2026-06-30、未经审计</td>
+</tr>
+<tr>
+<td>B</td>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000354_c.pdf">2026H1业绩公告</a></td>
+<td>2026-08-20，中文原始公告；与A属同一发行人，不算独立二源</td>
+</tr>
+<tr>
+<td>C</td>
+<td><a href="https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2025_bd4e173872.pdf">2025年报，公司官网原文</a></td>
+<td>全文已打开；第6页五年损益摘要，第225—226页现金流</td>
+</tr>
+<tr>
+<td>D</td>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0819/2025081900626.pdf">2025H1业绩公告</a></td>
+<td>全文已打开；第4页存货、第20页会员、第32页周转天数</td>
+</tr>
+<tr>
+<td>E</td>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0512/2026051200579.pdf">2026Q1业务更新</a></td>
+<td>已打开两页原始公告；2026-05-12发布，仅增长区间，无绝对收入及利润</td>
+</tr>
+<tr>
+<td>F</td>
+<td><a href="https://stockanalysis.com/quote/hkg/9992/financials/">StockAnalysis/S&amp;P损益</a></td>
+<td>已打开；独立编辑数据，单位百万元；不把标准化经营利润强行当公司经营利润</td>
+</tr>
+<tr>
+<td>G</td>
+<td><a href="https://stockanalysis.com/quote/hkg/9992/financials/cash-flow-statement/">StockAnalysis/S&amp;P现金流</a></td>
+<td>已打开；历史CFO及设备capex复核</td>
+</tr>
+<tr>
+<td>H</td>
+<td><a href="https://stockanalysis.com/quote/hkg/9992/financials/balance-sheet/">StockAnalysis/S&amp;P资产负债表</a></td>
+<td>已打开；现金等价物复核；其Inventory口径包含预付存货款，见后文</td>
+</tr>
+<tr>
+<td>I</td>
+<td><a href="https://www.finet.hk/newscenter/news_content/6a86c2d02308290c11eadd7c">财华社2026H1报道</a></td>
+<td>已打开；归母50.38亿元、增长10.1%的独立报道</td>
+</tr>
+<tr>
+<td>J</td>
+<td><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2024/0425/2024042500730.pdf">2023年报</a></td>
+<td>本轮已打开原文；第187—188页2022/2023现金流</td>
+</tr>
+<tr>
+<td>K</td>
+<td><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2023/0421/2023042100897.pdf">2022年报</a></td>
+<td>本轮在线打开失败；读取仓库已存原PDF对应第185—186页文本，历史原始证据而非本轮在线重取</td>
+</tr>
+<tr>
+<td>L</td>
+<td><a href="https://www.businesstimes.com.sg/companies-markets/labubu-maker-pop-mart-shares-fall-it-warns-2026-growth-target-likely-be-missed">Bloomberg/Business Times，2026-08-21</a></td>
+<td>已读报道原页；管理层认为20%全年收入增长目标很可能不能完成；Q2约降10%属于分析师估计，非公司分季披露</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_2">结论所需的核心边界</h2>
+<ol>
+<li>最新完整财务期为2026H1。检索2026Q3业务更新未取得发行人已发布原文；检索出现的是Q3前瞻及分析师预测，不能写成Q3已确认收入。最终发布前应由主任务复查当日公告栏。</li>
+<li>2026Q1收入增长75%—80%，H1增长23.8%，说明增长明显减速；因公司不披露Q1收入绝对额，不能用简单减法制造精确Q2同比。</li>
+<li>2026H1“中国”包括中国内地、香港、澳门、台湾；“海外”排除整个中国口径。与更早报告“中国内地/港澳台及海外”切分不同。</li>
+<li>半年收入增长来自中国及新IP；海外与库存发出了真实警报。经营利润增速较收入慢，汇兑损失占重要位置；现金流下降主要由税款增加，但税前经营现金也没有跟上利润增长，不能只作税款解释。</li>
+<li>THE MONSTERS是IP家族收入，不等于LABUBU单个角色收入；毛绒产品占比不等于THE MONSTERS占比。</li>
+</ol>
+<h2 id="2026h1">2026H1损益与现金</h2>
+<p>来源A第5、63、65—66、69—70、87—90页。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">2026H1</th>
+<th style="text-align: right;">2025H1</th>
+<th>披露同比/解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">17,172,921</td>
+<td style="text-align: right;">13,876,276</td>
+<td>+23.8%</td>
+</tr>
+<tr>
+<td>毛利</td>
+<td style="text-align: right;">11,965,740</td>
+<td style="text-align: right;">9,761,064</td>
+<td>+22.6%</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">69.7%</td>
+<td style="text-align: right;">70.3%</td>
+<td>以报告显示口径为准，不写70.4%</td>
+</tr>
+<tr>
+<td>销售费用</td>
+<td style="text-align: right;">3,931,123</td>
+<td style="text-align: right;">3,192,590</td>
+<td>增长大致跟随收入</td>
+</tr>
+<tr>
+<td>管理费用</td>
+<td style="text-align: right;">926,526</td>
+<td style="text-align: right;">770,405</td>
+<td>增长20.3%</td>
+</tr>
+<tr>
+<td>经营溢利</td>
+<td style="text-align: right;">6,724,746</td>
+<td style="text-align: right;">6,043,741</td>
+<td>+11.3%</td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td style="text-align: right;">5,038,384</td>
+<td style="text-align: right;">4,574,368</td>
+<td>+10.1%</td>
+</tr>
+<tr>
+<td>经调整净利润</td>
+<td style="text-align: right;">5,155,777</td>
+<td style="text-align: right;">4,709,630</td>
+<td>+9.5%，不是归母口径</td>
+</tr>
+<tr>
+<td>汇兑（亏损）/收益</td>
+<td style="text-align: right;">-720,270</td>
+<td style="text-align: right;">120,130</td>
+<td>2026损失7.20270亿元；上年收益1.20130亿元</td>
+</tr>
+<tr>
+<td>其他收入</td>
+<td style="text-align: right;">302,837</td>
+<td style="text-align: right;">67,232</td>
+<td>其中政府补助239,476 / 37,810</td>
+</tr>
+<tr>
+<td>IP授权费及其他服务收入</td>
+<td style="text-align: right;">60,599</td>
+<td style="text-align: right;">25,769</td>
+<td>列于其他收入，不能据此称已转为授权模式</td>
+</tr>
+<tr>
+<td>经营所得现金（付税前）</td>
+<td style="text-align: right;">6,764,282</td>
+<td style="text-align: right;">6,975,420</td>
+<td>并非经营现金流净额</td>
+</tr>
+<tr>
+<td>已收利息</td>
+<td style="text-align: right;">92,716</td>
+<td style="text-align: right;">191,679</td>
+<td>经营现金流分类</td>
+</tr>
+<tr>
+<td>已付所得税</td>
+<td style="text-align: right;">3,219,674</td>
+<td style="text-align: right;">1,189,626</td>
+<td>是实际支付，不等于损益税费</td>
+</tr>
+<tr>
+<td>经营现金流净额CFO</td>
+<td style="text-align: right;">3,637,324</td>
+<td style="text-align: right;">5,977,473</td>
+<td>需拆税款、营运资本</td>
+</tr>
+<tr>
+<td>设备capex现金支付</td>
+<td style="text-align: right;">673,560</td>
+<td style="text-align: right;">353,623</td>
+<td>物业、厂房、设备</td>
+</tr>
+<tr>
+<td>无形资产现金支付</td>
+<td style="text-align: right;">50,579</td>
+<td style="text-align: right;">20,900</td>
+<td>广义capex应同时扣除</td>
+</tr>
+<tr>
+<td>租赁负债付款</td>
+<td style="text-align: right;">502,889</td>
+<td style="text-align: right;">263,592</td>
+<td>融资现金流分类，零售股股东现金要处理</td>
+</tr>
+<tr>
+<td>现金分红支付</td>
+<td style="text-align: right;">3,149,378</td>
+<td style="text-align: right;">1,083,288</td>
+<td>融资现金流</td>
+</tr>
+<tr>
+<td>购回自身股份现金支付</td>
+<td style="text-align: right;">1,545,689</td>
+<td style="text-align: right;">0</td>
+<td>融资现金流</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>利润解读口径</strong>：剔除“其他收入”和“其他净收益/亏损”后的集团分部业绩合计（已扣总部未分配费用）为7,110,742，对比5,797,323，见A第84页。该口径较报表经营利润更适合查看零售经营，但不是公司non-IFRS调整利润，也不是自由现金流。若只加回汇兑亏损，会保留明显增加的政府补贴，须避免把它称作完全正常化利润。</p>
+<p><strong>现金解释边界</strong>：CFO同比下降中，大部分来自所得税现金支付增加。2026年6月底应付所得税622,992，2025年底2,115,988，显示支付了期初积存负债。应付账款也从1,858,216下降至905,150，而存货继续上升，对现金形成额外压力。中报未给出完整间接法经营现金调节表，资产负债表变动包含汇兑、并购等，不宜把每项账面差额直接写成精确现金流贡献。</p>
+<h2 id="_3">区域、渠道和门店</h2>
+<p>来源A第16—24、84、86页。地区收入以2026年口径列示。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>区域收入</th>
+<th style="text-align: right;">2026H1</th>
+<th style="text-align: right;">2025H1</th>
+<th style="text-align: right;">同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国（含港澳台）</td>
+<td style="text-align: right;">12,200,509</td>
+<td style="text-align: right;">8,282,812</td>
+<td style="text-align: right;">+47.3%</td>
+</tr>
+<tr>
+<td>亚太（不含中国）</td>
+<td style="text-align: right;">2,575,045</td>
+<td style="text-align: right;">2,850,902</td>
+<td style="text-align: right;">-9.7%</td>
+</tr>
+<tr>
+<td>美洲</td>
+<td style="text-align: right;">1,891,637</td>
+<td style="text-align: right;">2,264,882</td>
+<td style="text-align: right;">-16.5%</td>
+</tr>
+<tr>
+<td>欧洲及其他</td>
+<td style="text-align: right;">505,730</td>
+<td style="text-align: right;">477,680</td>
+<td style="text-align: right;">+5.9%</td>
+</tr>
+<tr>
+<td>海外合计</td>
+<td style="text-align: right;">4,972,412</td>
+<td style="text-align: right;">5,593,464</td>
+<td style="text-align: right;">见Decimal计算附录</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>区域渠道</th>
+<th style="text-align: right;">2026H1</th>
+<th style="text-align: right;">2025H1</th>
+<th style="text-align: right;">同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国零售店</td>
+<td style="text-align: right;">6,089,686</td>
+<td style="text-align: right;">4,405,948</td>
+<td style="text-align: right;">+38.2%</td>
+</tr>
+<tr>
+<td>中国机器人商店</td>
+<td style="text-align: right;">778,953</td>
+<td style="text-align: right;">678,298</td>
+<td style="text-align: right;">+14.8%</td>
+</tr>
+<tr>
+<td>中国线上</td>
+<td style="text-align: right;">4,778,746</td>
+<td style="text-align: right;">2,937,255</td>
+<td style="text-align: right;">+62.7%</td>
+</tr>
+<tr>
+<td>中国批发及其他</td>
+<td style="text-align: right;">553,124</td>
+<td style="text-align: right;">261,311</td>
+<td style="text-align: right;">+111.7%</td>
+</tr>
+<tr>
+<td>亚太线下</td>
+<td style="text-align: right;">1,772,694</td>
+<td style="text-align: right;">1,525,588</td>
+<td style="text-align: right;">+16.2%</td>
+</tr>
+<tr>
+<td>亚太线上</td>
+<td style="text-align: right;">643,551</td>
+<td style="text-align: right;">1,069,214</td>
+<td style="text-align: right;">-39.8%</td>
+</tr>
+<tr>
+<td>美洲线下</td>
+<td style="text-align: right;">1,007,007</td>
+<td style="text-align: right;">842,390</td>
+<td style="text-align: right;">+19.5%</td>
+</tr>
+<tr>
+<td>美洲线上</td>
+<td style="text-align: right;">722,144</td>
+<td style="text-align: right;">1,326,565</td>
+<td style="text-align: right;">-45.6%</td>
+</tr>
+<tr>
+<td>欧洲及其他线下</td>
+<td style="text-align: right;">414,172</td>
+<td style="text-align: right;">276,527</td>
+<td style="text-align: right;">+49.8%</td>
+</tr>
+<tr>
+<td>欧洲及其他线上</td>
+<td style="text-align: right;">67,631</td>
+<td style="text-align: right;">164,963</td>
+<td style="text-align: right;">-59.0%</td>
+</tr>
+<tr>
+<td>海外零售店</td>
+<td style="text-align: right;">3,022,301</td>
+<td style="text-align: right;">2,502,062</td>
+<td style="text-align: right;">见计算附录</td>
+</tr>
+<tr>
+<td>海外机器人商店</td>
+<td style="text-align: right;">171,572</td>
+<td style="text-align: right;">142,443</td>
+<td style="text-align: right;">见计算附录</td>
+</tr>
+<tr>
+<td>海外线上</td>
+<td style="text-align: right;">1,433,325</td>
+<td style="text-align: right;">2,560,742</td>
+<td style="text-align: right;">见计算附录</td>
+</tr>
+<tr>
+<td>海外批发及其他</td>
+<td style="text-align: right;">345,214</td>
+<td style="text-align: right;">388,217</td>
+<td style="text-align: right;">见计算附录</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>地区分部业绩</th>
+<th style="text-align: right;">2026H1</th>
+<th style="text-align: right;">2025H1</th>
+<th>口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国分部业绩</td>
+<td style="text-align: right;">6,471,322</td>
+<td style="text-align: right;">3,986,919</td>
+<td>未扣总部未分配费用，不含other income/other gains</td>
+</tr>
+<tr>
+<td>海外分部业绩</td>
+<td style="text-align: right;">1,508,492</td>
+<td style="text-align: right;">2,464,510</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>总部未分配费用</td>
+<td style="text-align: right;">-869,072</td>
+<td style="text-align: right;">-654,106</td>
+<td>应计入集团经营判断</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>期末零售店数</th>
+<th style="text-align: right;">2026H1</th>
+<th style="text-align: right;">2025H1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内地</td>
+<td style="text-align: right;">419</td>
+<td style="text-align: right;">409</td>
+</tr>
+<tr>
+<td>港澳台</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr>
+<td>亚太（不含中国）</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">69</td>
+</tr>
+<tr>
+<td>美洲</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">41</td>
+</tr>
+<tr>
+<td>欧洲及其他</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td>全球</td>
+<td style="text-align: right;">676</td>
+<td style="text-align: right;">571</td>
+</tr>
+</tbody>
+</table></div>
+<p>2026H1相对2025年末净增46家全球门店、190台机器人商店，期末机器人商店2,827台。不能把“期末店数”当作期间平均营业店数，也不能用收入除期末店数后称为同店收入；未取得可比门店SSSG披露。</p>
+<p>海外线下仍增长、线上收缩，不意味着已证明全部流量迁移：海外总收入下降、海外分部业绩下降，显示新增线下尚未弥补线上缺口。公司A第23页明确将美洲线上下跌与核心IP热度回归常态、通用流量及获客能力仍在建设联系起来。</p>
+<h2 id="ipip">IP与品类：多IP接力的证据和局限</h2>
+<p>来源A第25—27页。艺术家IP不等于全部IP完全自有；独家授权也可能列在艺术家IP，不能据此推断无授权风险。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>IP</th>
+<th style="text-align: right;">2026H1收入</th>
+<th style="text-align: right;">2025H1收入</th>
+<th style="text-align: right;">2026H1占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>THE MONSTERS</td>
+<td style="text-align: right;">4,454,361</td>
+<td style="text-align: right;">4,814,017</td>
+<td style="text-align: right;">26.0%</td>
+</tr>
+<tr>
+<td>星星人Twinkle Twinkle</td>
+<td style="text-align: right;">2,649,969</td>
+<td style="text-align: right;">389,363</td>
+<td style="text-align: right;">15.4%</td>
+</tr>
+<tr>
+<td>CRYBABY</td>
+<td style="text-align: right;">1,632,570</td>
+<td style="text-align: right;">1,218,170</td>
+<td style="text-align: right;">9.5%</td>
+</tr>
+<tr>
+<td>DIMOO</td>
+<td style="text-align: right;">1,619,217</td>
+<td style="text-align: right;">1,105,135</td>
+<td style="text-align: right;">9.4%</td>
+</tr>
+<tr>
+<td>SKULLPANDA</td>
+<td style="text-align: right;">1,551,211</td>
+<td style="text-align: right;">1,220,504</td>
+<td style="text-align: right;">9.0%</td>
+</tr>
+<tr>
+<td>HIRONO</td>
+<td style="text-align: right;">1,008,855</td>
+<td style="text-align: right;">728,420</td>
+<td style="text-align: right;">5.9%</td>
+</tr>
+<tr>
+<td>MOLLY</td>
+<td style="text-align: right;">900,631</td>
+<td style="text-align: right;">1,357,248</td>
+<td style="text-align: right;">5.3%</td>
+</tr>
+<tr>
+<td>Zsiga</td>
+<td style="text-align: right;">298,341</td>
+<td style="text-align: right;">211,256</td>
+<td style="text-align: right;">1.7%</td>
+</tr>
+<tr>
+<td>其他艺术家IP</td>
+<td style="text-align: right;">1,174,314</td>
+<td style="text-align: right;">1,184,452</td>
+<td style="text-align: right;">6.8%</td>
+</tr>
+<tr>
+<td>授权IP</td>
+<td style="text-align: right;">1,771,199</td>
+<td style="text-align: right;">1,524,840</td>
+<td style="text-align: right;">10.3%</td>
+</tr>
+<tr>
+<td>外采及其他</td>
+<td style="text-align: right;">112,253</td>
+<td style="text-align: right;">122,871</td>
+<td style="text-align: right;">0.7%</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>品类</th>
+<th style="text-align: right;">2026H1收入</th>
+<th style="text-align: right;">2025H1收入</th>
+<th style="text-align: right;">同比</th>
+<th style="text-align: right;">2026H1占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>毛绒</td>
+<td style="text-align: right;">9,824,944</td>
+<td style="text-align: right;">6,139,236</td>
+<td style="text-align: right;">+60.0%</td>
+<td style="text-align: right;">57.2%</td>
+</tr>
+<tr>
+<td>手办</td>
+<td style="text-align: right;">5,192,493</td>
+<td style="text-align: right;">5,175,875</td>
+<td style="text-align: right;">+0.3%</td>
+<td style="text-align: right;">30.2%</td>
+</tr>
+<tr>
+<td>衍生品及其他</td>
+<td style="text-align: right;">2,155,484</td>
+<td style="text-align: right;">2,561,165</td>
+<td style="text-align: right;">-15.8%</td>
+<td style="text-align: right;">12.6%</td>
+</tr>
+</tbody>
+</table></div>
+<p>品类比较采用A自身重列比较数。2025年报另列MEGA，2026中报不再独列，不能直接用2025年报“衍生品及其他”的12.0%与2026中报12.6%判断该细分改善。</p>
+<p>THE MONSTERS占比从34.7%降至26.0%是事实，但包含其收入下滑和其他IP增长两个因素。星星人贡献大部分净增收入，说明平台具备新IP转化能力，也说明增长并非均匀来自所有IP。MOLLY老IP仍有规模，但同比下降，不能仅用IP存在多年证明盈利曲线稳定。按IP划分的地区、毛利、回购和用户留存未披露。</p>
+<p>2025全年补充基线：来源C第19、27—28页；单位仍为人民币千元。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>2025全年字段</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">占2025集团收入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国（含港澳台）</td>
+<td style="text-align: right;">20,851,717</td>
+<td style="text-align: right;">56.2%</td>
+</tr>
+<tr>
+<td>亚太（不含中国）</td>
+<td style="text-align: right;">8,011,027</td>
+<td style="text-align: right;">21.6%</td>
+</tr>
+<tr>
+<td>美洲</td>
+<td style="text-align: right;">6,806,189</td>
+<td style="text-align: right;">18.3%</td>
+</tr>
+<tr>
+<td>欧洲及其他</td>
+<td style="text-align: right;">1,451,119</td>
+<td style="text-align: right;">3.9%</td>
+</tr>
+<tr>
+<td>THE MONSTERS</td>
+<td style="text-align: right;">14,161,064</td>
+<td style="text-align: right;">38.1%</td>
+</tr>
+<tr>
+<td>SKULLPANDA</td>
+<td style="text-align: right;">3,539,542</td>
+<td style="text-align: right;">9.5%</td>
+</tr>
+<tr>
+<td>CRYBABY</td>
+<td style="text-align: right;">2,929,006</td>
+<td style="text-align: right;">7.9%</td>
+</tr>
+<tr>
+<td>MOLLY</td>
+<td style="text-align: right;">2,897,084</td>
+<td style="text-align: right;">7.8%</td>
+</tr>
+<tr>
+<td>DIMOO</td>
+<td style="text-align: right;">2,776,695</td>
+<td style="text-align: right;">7.5%</td>
+</tr>
+<tr>
+<td>星星人</td>
+<td style="text-align: right;">2,055,580</td>
+<td style="text-align: right;">5.5%</td>
+</tr>
+<tr>
+<td>HIRONO</td>
+<td style="text-align: right;">1,735,235</td>
+<td style="text-align: right;">4.7%</td>
+</tr>
+<tr>
+<td>毛绒</td>
+<td style="text-align: right;">18,708,074</td>
+<td style="text-align: right;">50.4%</td>
+</tr>
+<tr>
+<td>手办</td>
+<td style="text-align: right;">12,022,569</td>
+<td style="text-align: right;">32.4%</td>
+</tr>
+<tr>
+<td>MEGA</td>
+<td style="text-align: right;">1,916,082</td>
+<td style="text-align: right;">5.2%</td>
+</tr>
+<tr>
+<td>衍生品及其他</td>
+<td style="text-align: right;">4,473,327</td>
+<td style="text-align: right;">12.0%</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_4">存货、现金资产与会员</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">2026-06-30/2026H1</th>
+<th style="text-align: right;">2025-12-31/2025全年</th>
+<th style="text-align: right;">2025-06-30/2025H1</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>存货净额</td>
+<td style="text-align: right;">6,101,530</td>
+<td style="text-align: right;">5,472,839</td>
+<td style="text-align: right;">2,273,691</td>
+<td>A第65、107页；D第4页</td>
+</tr>
+<tr>
+<td>存货周转天数</td>
+<td style="text-align: right;">201天</td>
+<td style="text-align: right;">123天</td>
+<td style="text-align: right;">83天</td>
+<td>A第32页；D第32页</td>
+</tr>
+<tr>
+<td>存货毛额</td>
+<td style="text-align: right;">6,177,039</td>
+<td style="text-align: right;">5,525,542</td>
+<td style="text-align: right;">—</td>
+<td>A第107页</td>
+</tr>
+<tr>
+<td>存货减值准备余额</td>
+<td style="text-align: right;">75,509</td>
+<td style="text-align: right;">52,703</td>
+<td style="text-align: right;">—</td>
+<td>A第107页</td>
+</tr>
+<tr>
+<td>本期存货减值费用</td>
+<td style="text-align: right;">22,806</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">4,302</td>
+<td>A第87、107页</td>
+</tr>
+<tr>
+<td>现金等价物</td>
+<td style="text-align: right;">12,442,065</td>
+<td style="text-align: right;">13,775,087</td>
+<td style="text-align: right;">11,922,694</td>
+<td>A第65、70页；D第4页</td>
+</tr>
+<tr>
+<td>三个月以上一年内定存</td>
+<td style="text-align: right;">1,520,187</td>
+<td style="text-align: right;">3,449,922</td>
+<td style="text-align: right;">1,843,017</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>一年以上定存</td>
+<td style="text-align: right;">201,773</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">—</td>
+<td>A第65页</td>
+</tr>
+<tr>
+<td>租赁负债合计</td>
+<td style="text-align: right;">3,727,572</td>
+<td style="text-align: right;">2,861,575</td>
+<td style="text-align: right;">1,411,199</td>
+<td>A第66页；D第5页</td>
+</tr>
+<tr>
+<td>内地注册会员（万人）</td>
+<td style="text-align: right;">8,244</td>
+<td style="text-align: right;">7,258</td>
+<td style="text-align: right;">5,912</td>
+<td>A第13页；C第17页；D第20页</td>
+</tr>
+<tr>
+<td>会员复购率</td>
+<td style="text-align: right;">51.6%</td>
+<td style="text-align: right;">55.7%</td>
+<td style="text-align: right;">50.8%</td>
+<td>同上；观察窗不同</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>复购率的准确解释</strong>：2026H1定义为半年内购买至少两次的会员人数/同期有购买行为的会员人数；不是全部注册会员中的复购比例，也不是上一年用户今年仍在的留存率。同比应以51.6%对50.8%；不能拿半年51.6%直接对全年55.7%称恶化。2026H1内地会员贡献内地收入92.9%；全球累计注册会员超一亿，但累计注册不是活跃或付费用户。</p>
+<p><strong>库存的准确解释</strong>：同比201天对83天显著变慢，年末123天只作补充；即便有海外备货的合理需求，海外收入负增长与库存同比大增同时发生，构成需求预测偏差的警报。公司未披露SKU账龄、IP库存、海外库存分布、降价比例、售罄率，因此无法验证“全部只是前置备货”，也不能断言减值不充分。</p>
+<p><strong>资产口径差异</strong>：StockAnalysis的2026H1 Inventory约6,213百万元，并非公司净库存6,101.530百万元；它将预付存货111.676百万元并入：6,101.530 + 111.676 = 6,213.206百万元。2025同理，5,472.839 + 141.800 = 5,614.639百万元。差异超过1%有口径解释，采用公司法定库存。</p>
+<p><strong>估值使用现金的口径</strong>：若主模型自由现金流已逐年扣租赁付款，应避免再将租赁负债全部从净现金扣除造成重复扣减；本底稿同时给出现金与扣租赁两种余额，仅供口径对照，不规定主模型的价值。长期定存可列现金类资产，但须单列期限；受限现金不并入可分配余额。</p>
+<h2 id="_5">五年历史原始数据</h2>
+<p>损益来源C第6页；2024/2025 CFO和capex来源C第225页；2022/2023来源J第187页；2021来源K第185页。单位人民币千元。所有损益已对StockAnalysis/S&amp;P表格复核显示精度；公司原报经营利润与S&amp;P标准化operating income不同，以下保留法定口径。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年度</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">归母净利润</th>
+<th style="text-align: right;">毛利率</th>
+<th style="text-align: right;">经营溢利</th>
+<th style="text-align: right;">CFO</th>
+<th style="text-align: right;">设备capex</th>
+<th style="text-align: right;">期末现金等价物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td style="text-align: right;">4,490,651</td>
+<td style="text-align: right;">854,339</td>
+<td style="text-align: right;">61.4%</td>
+<td style="text-align: right;">1,149,812</td>
+<td style="text-align: right;">779,097</td>
+<td style="text-align: right;">287,502</td>
+<td style="text-align: right;">5,264,710</td>
+</tr>
+<tr>
+<td>2022</td>
+<td style="text-align: right;">4,617,324</td>
+<td style="text-align: right;">475,660</td>
+<td style="text-align: right;">57.5%</td>
+<td style="text-align: right;">583,380</td>
+<td style="text-align: right;">891,022</td>
+<td style="text-align: right;">266,132</td>
+<td style="text-align: right;">685,314</td>
+</tr>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">6,301,002</td>
+<td style="text-align: right;">1,082,344</td>
+<td style="text-align: right;">61.3%</td>
+<td style="text-align: right;">1,230,646</td>
+<td style="text-align: right;">1,990,596</td>
+<td style="text-align: right;">324,179</td>
+<td style="text-align: right;">2,077,927</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">13,037,749</td>
+<td style="text-align: right;">3,125,473</td>
+<td style="text-align: right;">66.8%</td>
+<td style="text-align: right;">4,154,272</td>
+<td style="text-align: right;">4,954,220</td>
+<td style="text-align: right;">372,668</td>
+<td style="text-align: right;">6,109,017</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">37,120,052</td>
+<td style="text-align: right;">12,775,689</td>
+<td style="text-align: right;">72.1%</td>
+<td style="text-align: right;">16,890,474</td>
+<td style="text-align: right;">10,865,152</td>
+<td style="text-align: right;">985,250</td>
+<td style="text-align: right;">13,775,087</td>
+</tr>
+</tbody>
+</table></div>
+<p>历史提醒：2022年收入小幅增长、利润明显下降，证明潮玩公司的经营曲线可以显著波动；2022年现金等价物下降伴随大额转入定存，不是同额现金烧损。简单FCF=CFO-设备capex与股东可取现金不同，后者还需扣无形资产、租赁等。</p>
+<h2 id="_6">仍需一手验证</h2>
+<ul>
+<li>新老会员cohort、两年/三年留存、每人购买频次和实际消费额；海外复购。</li>
+<li>各IP与各地区的库存龄、退货、折扣和毛利；THE MONSTERS终端销量与补库存分开。</li>
+<li>新店成熟曲线、可比店收入和店铺级经营现金流；现有海外店需要多长时间稳定。</li>
+<li>2026Q3是否在报告发布前已有正式公告；截至本子任务检索未取得。</li>
+<li>2026H1之后库存拐点的管理层口头说法，尚不能替代9月底或年末资产负债表。</li>
+</ul>
+<h2 id="decimal">Decimal复算附录</h2>
+<p>本附录使用Python Decimal，输入直接采用上表原报人民币千元；先计算后舍入，六位小数仅便于核查，主报告通常保留一至两位。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>公式</th>
+<th style="text-align: right;">计算值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>海外收入同比%</td>
+<td><code>(4972412/5593464-1)*100</code></td>
+<td style="text-align: right;">-11.103173</td>
+</tr>
+<tr>
+<td>中国分部2026H1利润率%</td>
+<td><code>6471322/12200509*100</code></td>
+<td style="text-align: right;">53.041410</td>
+</tr>
+<tr>
+<td>中国分部2025H1利润率%</td>
+<td><code>3986919/8282812*100</code></td>
+<td style="text-align: right;">48.134848</td>
+</tr>
+<tr>
+<td>海外分部2026H1利润率%</td>
+<td><code>1508492/4972412*100</code></td>
+<td style="text-align: right;">30.337229</td>
+</tr>
+<tr>
+<td>海外分部2025H1利润率%</td>
+<td><code>2464510/5593464*100</code></td>
+<td style="text-align: right;">44.060532</td>
+</tr>
+<tr>
+<td>集团剔其他收入和净收益2026H1经营率%</td>
+<td><code>7110742/17172921*100</code></td>
+<td style="text-align: right;">41.406712</td>
+</tr>
+<tr>
+<td>集团剔其他收入和净收益2025H1经营率%</td>
+<td><code>5797323/13876276*100</code></td>
+<td style="text-align: right;">41.778666</td>
+</tr>
+<tr>
+<td>报表经营利润率2026H1%</td>
+<td><code>6724746/17172921*100</code></td>
+<td style="text-align: right;">39.159011</td>
+</tr>
+<tr>
+<td>报表经营利润率2025H1%</td>
+<td><code>6043741/13876276*100</code></td>
+<td style="text-align: right;">43.554488</td>
+</tr>
+<tr>
+<td>海外分部业绩同比%</td>
+<td><code>(1508492/2464510-1)*100</code></td>
+<td style="text-align: right;">-38.791403</td>
+</tr>
+<tr>
+<td>集团剔其他收入和净收益业绩同比%</td>
+<td><code>(7110742/5797323-1)*100</code></td>
+<td style="text-align: right;">22.655612</td>
+</tr>
+<tr>
+<td>海外线下总额同比%</td>
+<td><code>(3193873/2644505-1)*100</code></td>
+<td style="text-align: right;">20.773944</td>
+</tr>
+<tr>
+<td>海外线上同比%</td>
+<td><code>(1433325/2560742-1)*100</code></td>
+<td style="text-align: right;">-44.026966</td>
+</tr>
+<tr>
+<td>海外零售店同比%</td>
+<td><code>(3022301/2502062-1)*100</code></td>
+<td style="text-align: right;">20.792410</td>
+</tr>
+<tr>
+<td>海外机器人同比%</td>
+<td><code>(171572/142443-1)*100</code></td>
+<td style="text-align: right;">20.449583</td>
+</tr>
+<tr>
+<td>海外批发同比%</td>
+<td><code>(345214/388217-1)*100</code></td>
+<td style="text-align: right;">-11.077052</td>
+</tr>
+<tr>
+<td>库存同比%</td>
+<td><code>(6101530/2273691-1)*100</code></td>
+<td style="text-align: right;">168.353527</td>
+</tr>
+<tr>
+<td>库存较年末%</td>
+<td><code>(6101530/5472839-1)*100</code></td>
+<td style="text-align: right;">11.487475</td>
+</tr>
+<tr>
+<td>经营现金净额同比%</td>
+<td><code>(3637324/5977473-1)*100</code></td>
+<td style="text-align: right;">-39.149470</td>
+</tr>
+<tr>
+<td>付税前经营所得现金同比%</td>
+<td><code>(6764282/6975420-1)*100</code></td>
+<td style="text-align: right;">-3.026886</td>
+</tr>
+<tr>
+<td>CFO同比下降额千元</td>
+<td><code>5977473-3637324</code></td>
+<td style="text-align: right;">2340149.000000</td>
+</tr>
+<tr>
+<td>税款支付增加千元</td>
+<td><code>3219674-1189626</code></td>
+<td style="text-align: right;">2030048.000000</td>
+</tr>
+<tr>
+<td>税款增加占CFO降幅%</td>
+<td><code>(3219674-1189626)/(5977473-3637324)*100</code></td>
+<td style="text-align: right;">86.748664</td>
+</tr>
+<tr>
+<td>2026H1自由现金扣设备+无形+租赁，亿元</td>
+<td><code>(3637324-673560-50579-502889)/100000</code></td>
+<td style="text-align: right;">24.102960</td>
+</tr>
+<tr>
+<td>2025H1自由现金扣设备+无形+租赁，亿元</td>
+<td><code>(5977473-353623-20900-263592)/100000</code></td>
+<td style="text-align: right;">53.393580</td>
+</tr>
+<tr>
+<td>现等+短定存+长定存亿元</td>
+<td><code>(12442065+1520187+201773)/100000</code></td>
+<td style="text-align: right;">141.640250</td>
+</tr>
+<tr>
+<td>上项扣租赁负债后亿元</td>
+<td><code>(12442065+1520187+201773-3727572)/100000</code></td>
+<td style="text-align: right;">104.364530</td>
+</tr>
+<tr>
+<td>存货减值余额/毛额%</td>
+<td><code>75509/6177039*100</code></td>
+<td style="text-align: right;">1.222414</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>IP</th>
+<th style="text-align: right;">收入同比%</th>
+<th style="text-align: right;">收入增量亿元</th>
+<th style="text-align: right;">占集团净增收入比例%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>THE MONSTERS</td>
+<td style="text-align: right;">-7.47</td>
+<td style="text-align: right;">-3.59656</td>
+<td style="text-align: right;">-10.91</td>
+</tr>
+<tr>
+<td>星星人</td>
+<td style="text-align: right;">580.59</td>
+<td style="text-align: right;">22.60606</td>
+<td style="text-align: right;">68.57</td>
+</tr>
+<tr>
+<td>CRYBABY</td>
+<td style="text-align: right;">34.02</td>
+<td style="text-align: right;">4.14400</td>
+<td style="text-align: right;">12.57</td>
+</tr>
+<tr>
+<td>DIMOO</td>
+<td style="text-align: right;">46.52</td>
+<td style="text-align: right;">5.14082</td>
+<td style="text-align: right;">15.59</td>
+</tr>
+<tr>
+<td>SKULLPANDA</td>
+<td style="text-align: right;">27.10</td>
+<td style="text-align: right;">3.30707</td>
+<td style="text-align: right;">10.03</td>
+</tr>
+<tr>
+<td>HIRONO</td>
+<td style="text-align: right;">38.50</td>
+<td style="text-align: right;">2.80435</td>
+<td style="text-align: right;">8.51</td>
+</tr>
+<tr>
+<td>MOLLY</td>
+<td style="text-align: right;">-33.64</td>
+<td style="text-align: right;">-4.56617</td>
+<td style="text-align: right;">-13.85</td>
+</tr>
+<tr>
+<td>Zsiga</td>
+<td style="text-align: right;">41.22</td>
+<td style="text-align: right;">0.87085</td>
+<td style="text-align: right;">2.64</td>
+</tr>
+<tr>
+<td>其他艺术家IP</td>
+<td style="text-align: right;">-0.86</td>
+<td style="text-align: right;">-0.10138</td>
+<td style="text-align: right;">-0.31</td>
+</tr>
+<tr>
+<td>授权IP</td>
+<td style="text-align: right;">16.16</td>
+<td style="text-align: right;">2.46359</td>
+<td style="text-align: right;">7.47</td>
+</tr>
+<tr>
+<td>外采及其他</td>
+<td style="text-align: right;">-8.64</td>
+<td style="text-align: right;">-0.10618</td>
+<td style="text-align: right;">-0.32</td>
+</tr>
+</tbody>
+</table></div>
+<p>IP增量是收入差额，不是净利润贡献；正负项合计为集团净增收入。星星人贡献净增量较多，不等于排除星星人后其他IP都不增长。</p>
+<h2 id="financial_rigorpy">financial_rigor.py双源交叉验证记录</h2>
+<p>以下为本轮实际执行的共享工具原始输出。公司PDF和公司官网镜像不充当两个独立来源。独立二源采用S&amp;P Global经StockAnalysis标准化发布数据。</p>
+<pre><code class="language-text">============================================================
+交叉验证: 2025收入 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 37,120.03 人民币百万元
+
+  ✅ annual_report       : 37,120.05 人民币百万元  (偏差 0.00%)
+  ✅ StockAnalysis_SandP : 37,120.00 人民币百万元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 37,120.03 人民币百万元
+</code></pre>
+<pre><code class="language-text">============================================================
+交叉验证: 2025归母净利 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 12,775.84 人民币百万元
+
+  ✅ annual_report       : 12,775.69 人民币百万元  (偏差 0.00%)
+  ✅ StockAnalysis_SandP : 12,776.00 人民币百万元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 12,775.84 人民币百万元
+</code></pre>
+<pre><code class="language-text">============================================================
+交叉验证: 2025经营现金流 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 10,865.08 人民币百万元
+
+  ✅ annual_report       : 10,865.15 人民币百万元  (偏差 0.00%)
+  ✅ StockAnalysis_SandP : 10,865.00 人民币百万元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 10,865.08 人民币百万元
+</code></pre>
+<pre><code class="language-text">============================================================
+交叉验证: 2026H1现金等价物 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 12,442.03 人民币百万元
+
+  ✅ interim_report      : 12,442.07 人民币百万元  (偏差 0.00%)
+  ✅ StockAnalysis_SandP : 12,442.00 人民币百万元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 12,442.03 人民币百万元
+</code></pre>
+<pre><code class="language-text">============================================================
+交叉验证: 2026H1归母净利 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 5,038.19 人民币百万元
+
+  ✅ interim_report      : 5,038.38 人民币百万元  (偏差 0.00%)
+  ✅ Finet               : 5,038.00 人民币百万元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 5,038.19 人民币百万元
+</code></pre></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/8b16ef0a924e.html">泡泡玛特：情绪需求、爆款接力与十年持久性证据</a><div class="meta">2026-10-19 · 深度系列</div></li><li><a href="../r/d38c1b4aea2a.html">泡泡玛特（09992.HK）研究报告</a><div class="meta">2026-10-19 · 深度系列</div></li><li><a href="../r/c96808539fe0.html">泡泡玛特市场、现金流与治理证据</a><div class="meta">2026-10-19 · 深度系列</div></li><li><a href="../r/71c4d1db3188.html">审计说明</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/f5ad08c9c4be.html">泡泡玛特（9992.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/227f94311404.html">泡泡玛特：AI 对未来三年利润的影响与 2036 年盈利情景</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/29b8de52b967.html">泡泡玛特AI研究模型与抽检记录</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/c9801c9765e3.html">泡泡玛特（9992.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/5efadbb72153.html">研究审计说明（2026-09-06）</a><div class="meta">2026-09-06 · 导读</div></li><li><a href="../r/d4c2d06f883c.html">泡泡玛特(9992.HK)三大报表逐项解析——2026年中期业绩</a><div class="meta">2026-08-24 · 研究</div></li><li><a href="../r/158d7a44ffd7.html">泡泡玛特深度研究：护城河、生命周期与增长点（2026-08-11）</a><div class="meta">2026-08-11 · 深度系列</div></li><li><a href="../r/f5ac4ce01288.html">泡泡玛特（Pop Mart, 09992.HK）2030 年净利润深度研究</a><div class="meta">2026-08-10 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
