@@ -1,0 +1,64 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：05-Meta-META-研究报告.md
+======================================================================
+
+  ✅ 通过 [ 7] 集团收入/营业利润 · 意义                       报告:        60.80
+                                                    https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm: 60.80 (偏差 0.00%)
+  ✅ 通过 [ 9] 营业收入 · FY 2024                       报告:       164.50
+                                                    https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm: 164.50 (偏差 0.00%)  |  https://stockanalysis.com/stocks/meta/financials/: 164.50 (偏差 0.00%)
+  ✅ 通过 [ 8] 营业收入 · FY 2023                       报告:       134.90
+                                                    https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm: 134.90 (偏差 0.00%)  |  https://stockanalysis.com/stocks/meta/financials/: 134.90 (偏差 0.00%)
+  ✅ 通过 [23] 归属普通股净利润 · TTM                       报告:        68.10
+                                                    https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm ; latest annual + YTD current - YTD prior: 68.10 (偏差 0.00%)  |  https://stockanalysis.com/stocks/meta/financials/: 68.10 (偏差 0.00%)
+  ✅ 通过 [27] 经营现金流 CFO · TTM                      报告:       130.30
+                                                    https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm ; latest annual + YTD current - YTD prior: 130.30 (偏差 0.00%)  |  https://stockanalysis.com/stocks/meta/financials/: 130.30 (偏差 0.00%)
+  ✅ 通过 [24] 经营现金流 CFO · FY 2023                  报告:        71.11
+                                                    https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm: 71.11 (偏差 0.00%)  |  https://stockanalysis.com/stocks/meta/financials/: 71.11 (偏差 0.00%)
+  ✅ 通过 [29] 现金资本开支 · FY 2024                     报告:        37.26
+                                                    https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm: 37.26 (偏差 0.00%)  |  https://stockanalysis.com/stocks/meta/financials/: 37.26 (偏差 0.00%)
+  ✅ 通过 [36] 股权薪酬 SBC · FY 2023                   报告:        14.03
+                                                    https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm: 14.03 (偏差 0.00%)  |  https://stockanalysis.com/stocks/meta/financials/: 14.03 (偏差 0.00%)
+  ✅ 通过 [51] 现金CapEx/CFO · 本报告复算                  报告:        68.60 %
+                                                    现金CapEx/CFO; 原始输入见 financial-verification.json: 68.60 (偏差 0.00%)
+  ✅ 通过 [56] 减：融资租赁及其他融资本金 · 金额                   报告:         3.10
+                                                    https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm; cash bridge: 3.10 (偏差 0.00%)
+  ✅ 通过 [57] 减：SBC经济成本代理 · 金额                     报告:        25.14
+                                                    https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm; cash bridge: 25.14 (偏差 0.00%)
+  ✅ 通过 [58] 研究现金代理 · 金额                          报告:        12.74
+                                                    https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm; cash bridge: 12.74 (偏差 0.00%)
+  ✅ 通过 [60] 公开已发行股数（十亿） · 复算结果                   报告:         2.55
+                                                    shares-assets-review.md: 2.55 (偏差 0.00%)
+  ✅ 通过 [63] 总市值/TTM归属利润 · 复算结果                   报告:        26.54 倍
+                                                    价格×公开股数/归属利润; 原始输入见 financial-verification.json: 26.54 (偏差 0.00%)
+  ✅ 通过 [71] FY 2024 · PS（倍）                      报告:         8.99
+                                                    https://stockanalysis.com/stocks/meta/financials/: 8.99 (偏差 0.00%)
+  ✅ 通过 [76] AAPL · GAAP PE                       报告:        39.39
+                                                    同组表按各公司原始输入重算: 39.39 (偏差 0.00%)
+  ✅ 通过 [109] 基准 · 后五年收入CAGR                       报告:         8.00 %
+                                                    valuation-assumptions.json: 8.00 (偏差 0.00%)
+  ✅ 通过 [108] 基准 · 前五年收入CAGR                       报告:        18.00 %
+                                                    valuation-assumptions.json: 18.00 (偏差 0.00%)
+  ✅ 通过 [115] 乐观 · 后五年收入CAGR                       报告:        10.00 %
+                                                    valuation-assumptions.json: 10.00 (偏差 0.00%)
+  ✅ 通过 [130] 中性 · 退出EV/NOPAT                      报告:        22.00
+                                                    (TTM营业利润×80%×增长因子×退出倍数+净金融资产)/情景股份: 22.00 (偏差 0.00%)
+  ✅ 通过 [140] 风险稳健性 · 评分/5                         报告:         3.00
+                                                    风险角色主观评分: 3.00 (偏差 0.00%)
+  ✅ 通过 [143] 尚未持有、偏现金流价值 · 行动规则                   报告:       475.00
+                                                    核心基准×执行折价，向下取整5美元档: 475.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 22  |  通过: 22  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 22,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 22,
+  "fail_items": [],
+  "warn_items": []
+}
