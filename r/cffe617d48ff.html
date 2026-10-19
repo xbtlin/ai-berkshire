@@ -1,0 +1,922 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>PDD 大师持仓研究笔记 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script></head><body data-root="../" data-page="r/cffe617d48ff.html" data-title="PDD 大师持仓研究笔记"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/拼多多/index.html">拼多多</a></div><div class="layout"><div><h1>PDD 大师持仓研究笔记</h1><div class="meta"><a href="../companies/拼多多/index.html">拼多多</a> ｜ 2026-04-13 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/PDD%E5%A4%A7%E5%B8%88%E6%8C%81%E4%BB%93%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-20260413.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#pdd">一、李录的PDD持仓</a><ul>
+<li><a href="#11">1.1 操作时间线</a></li>
+<li><a href="#12">1.2 为什么亏损卖出，又以更高价买回？</a></li>
+</ul>
+</li>
+<li><a href="#pdd_1">二、段永平的PDD持仓</a><ul>
+<li><a href="#21-hh-international-13f">2.1 操作时间线（H&amp;H International 13F数据）</a></li>
+<li><a href="#22-hh-international">2.2 关于H&amp;H International的说明</a></li>
+<li><a href="#23-put">2.3 段永平的卖Put策略</a></li>
+</ul>
+</li>
+<li><a href="#pdd_2">三、两人PDD成本对比</a></li>
+<li><a href="#_1">四、李录历史全部投资记录</a><ul>
+<li><a href="#41">4.1 基本概况</a></li>
+<li><a href="#42-2025q420251231">4.2 当前持仓（2025年Q4，截至2025年12月31日）</a></li>
+<li><a href="#43">4.3 历史已退出的美股仓位</a></li>
+<li><a href="#44-13f">4.4 港股持仓（不在13F范围）</a></li>
+<li><a href="#45">4.5 投资阶段演变</a></li>
+<li><a href="#46">4.6 全历史投资业绩汇总（含当时仓位占比）</a></li>
+</ul>
+</li>
+<li><a href="#_2">五、数据来源</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>整理日期：2026-04-13
+内容：李录与段永平的PDD持仓分析 + 李录历史全部投资记录</p>
+</blockquote>
+<hr />
+<h2 id="pdd">一、李录的PDD持仓</h2>
+<h3 id="11">1.1 操作时间线</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>操作</th>
+<th>股数</th>
+<th>均价</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 Q4</td>
+<td>首次买入</td>
+<td>363,165股</td>
+<td>~$120/股</td>
+<td>价格区间$71.40–$179.11</td>
+</tr>
+<tr>
+<td>2021 Q4</td>
+<td>完全清仓</td>
+<td>-363,165股</td>
+<td>~$78.86/股</td>
+<td>亏损约34%离场</td>
+</tr>
+<tr>
+<td>2025 Q2</td>
+<td>重新大举建仓</td>
+<td>4,608,000股</td>
+<td>~$104.95/股</td>
+<td>价格区间$88.35–$122.19</td>
+</tr>
+<tr>
+<td>2025 Q3–Q4</td>
+<td>持仓不变</td>
+<td>4,608,000股</td>
+<td>—</td>
+<td>一股未动</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>第二次仓位是第一次的 <strong>12.7倍</strong></li>
+<li>当前持仓占13F组合比例：<strong>14.64%</strong></li>
+<li>数据来源：SEC 13F、StockCircle、AInvest</li>
+</ul>
+<h3 id="12">1.2 为什么亏损卖出，又以更高价买回？</h3>
+<p><strong>2021年Q4卖出时的背景：</strong>
+- 2021年7月：滴滴IPO后3天被强制下架整改
+- 2021年8月：教育双减出台，新东方、好未来股价跌90%+
+- 中国互联网平台遭全面监管审查，阿里、腾讯、PDD均大幅下跌
+- 2021年3月：黄峥辞任CEO，放弃大部分财富，原因未公开
+- 当时PDD基本面：收入增长快但几乎不盈利，商业模式仍在验证</p>
+<p><strong>2025年Q2买回时的背景：</strong>
+- PDD 2024年全年收入3,938亿元（2021年约900亿，增长约4倍）
+- 2024年净利润1,123亿元（2021年接近亏损）
+- Temu已在全球主要市场建立规模（2021年时根本不存在）
+- PE约9–10x，2021年PDD几乎无利润可算PE
+- 中国科技监管风暴基本平息</p>
+<p><strong>逻辑：</strong> 绝对股价$104.95高于卖出价$78.86，但买到的是截然不同的公司——盈利从无到年赚千亿，PE反而更便宜（盈利涨得比股价快得多）。</p>
+<hr />
+<h2 id="pdd_1">二、段永平的PDD持仓</h2>
+<h3 id="21-hh-international-13f">2.1 操作时间线（H&amp;H International 13F数据）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>季度</th>
+<th>持股数</th>
+<th>变动</th>
+<th>当季PDD价格区间</th>
+<th>推算均价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023 Q3</td>
+<td>~15万股</td>
+<td>新建仓</td>
+<td>~$80–100</td>
+<td>~$85–95</td>
+</tr>
+<tr>
+<td>2023 Q4</td>
+<td>0</td>
+<td>清仓获利</td>
+<td>~$100–146</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024 Q1</td>
+<td>小仓位</td>
+<td>重新买入</td>
+<td>~$100–130</td>
+<td>~$100–120</td>
+</tr>
+<tr>
+<td>2024 Q2</td>
+<td>略减</td>
+<td>小幅卖出</td>
+<td>~$130–155</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024 Q3</td>
+<td>大幅加仓</td>
+<td>8月暴跌时增持</td>
+<td>~$88–155</td>
+<td>~$95–110</td>
+</tr>
+<tr>
+<td>2024 Q4</td>
+<td><strong>723万股</strong></td>
+<td>大幅加仓</td>
+<td>~$88–115</td>
+<td>~$95–110</td>
+</tr>
+<tr>
+<td>2025 Q1</td>
+<td><strong>775万股</strong></td>
+<td>+52.5万（+7.3%）</td>
+<td>~$95–130</td>
+<td>~$100–120</td>
+</tr>
+<tr>
+<td>2025 Q2</td>
+<td><strong>866万股</strong></td>
+<td>+90万（+11.7%）</td>
+<td>~$88–122</td>
+<td>~$100–110</td>
+</tr>
+<tr>
+<td>2025 Q4</td>
+<td><strong>~1,156万股</strong></td>
+<td>+约300万（+35%）</td>
+<td>~$95–139</td>
+<td>~$100–120</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>加权综合成本：~$100–110/股</strong>（大量使用卖Put策略，实际成本可能更低）</li>
+<li>占H&amp;H组合比例：<strong>7.5%</strong>（2025年Q4）</li>
+<li>雪球原话（2024-08-27）："开始卖点put，虽然对PDD的商业模式还不是完全懂，但这些年看来看去还是觉得蛮有意思的。"</li>
+</ul>
+<h3 id="22-hh-international">2.2 关于H&amp;H International的说明</h3>
+<ul>
+<li>H&amp;H里有多少是段永平个人资金、多少是外部LP，<strong>从未公开披露</strong></li>
+<li>13F只披露持仓，不披露基金结构和出资比例</li>
+<li>港股（腾讯）、A股（茅台）通过其他实体持有，不在13F范围</li>
+</ul>
+<h3 id="23-put">2.3 段永平的卖Put策略</h3>
+<ul>
+<li>若股价跌破行权价，被动以行权价接货（实际成本 = 行权价 - 期权金）</li>
+<li>若未跌至行权价，收取期权金不接货</li>
+<li>实际持仓成本通常<strong>低于市场均价</strong></li>
+</ul>
+<hr />
+<h2 id="pdd_2">三、两人PDD成本对比</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投资者</th>
+<th>当前持股</th>
+<th>推算综合成本</th>
+<th>买入方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>李录</strong></td>
+<td>460.8万股</td>
+<td>~$104.95/股</td>
+<td>2025 Q2一次性建仓</td>
+</tr>
+<tr>
+<td><strong>段永平</strong></td>
+<td>~1,156万股</td>
+<td>~$100–110/股</td>
+<td>2023–2025年逐步加仓+卖Put</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_1">四、李录历史全部投资记录</h2>
+<h3 id="41">4.1 基本概况</h3>
+<ul>
+<li><strong>机构</strong>：Himalaya Capital Management LLC（喜马拉雅资本）</li>
+<li><strong>创立</strong>：1997年，总部西雅图</li>
+<li><strong>SEC CIK</strong>：1709323（13F申报自2016年Q4起，共约34份）</li>
+<li><strong>管理规模</strong>：2016年约$1.1亿 → 2025年Q4约$35.7亿</li>
+<li><strong>历史业绩</strong>：1998–2010年年化复利约26.4%，同期标普500约2.25%</li>
+</ul>
+<h3 id="42-2025q420251231">4.2 当前持仓（2025年Q4，截至2025年12月31日）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>股票</th>
+<th>代码</th>
+<th>持股数</th>
+<th>投入成本</th>
+<th>当前市值</th>
+<th>回报</th>
+<th>首次买入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alphabet A</td>
+<td>GOOGL</td>
+<td>254.3万</td>
+<td>~$2.63亿（$103.50×254.3万）</td>
+<td>~$8.07亿</td>
+<td><strong>+207%</strong></td>
+<td>Q2 2022</td>
+</tr>
+<tr>
+<td>Alphabet C</td>
+<td>GOOG</td>
+<td>245.1万</td>
+<td>~$2.19亿（$89.55×245.1万）</td>
+<td>~$7.74亿</td>
+<td><strong>+253%</strong></td>
+<td>Q2 2020</td>
+</tr>
+<tr>
+<td>美国银行</td>
+<td>BAC</td>
+<td>1,043万</td>
+<td>~$3.39亿（$32.48×1,043万）</td>
+<td>~$5.48亿</td>
+<td><strong>+62%</strong></td>
+<td>Q1 2020</td>
+</tr>
+<tr>
+<td>拼多多</td>
+<td>PDD</td>
+<td>460.8万</td>
+<td>~$4.84亿（$104.95×460.8万）</td>
+<td>~$4.62亿</td>
+<td><strong>-5%</strong></td>
+<td>Q2 2025</td>
+</tr>
+<tr>
+<td>伯克希尔B</td>
+<td>BRK.B</td>
+<td>89.8万</td>
+<td>~$2.52亿（$280.86×89.8万）</td>
+<td>~$3.64亿</td>
+<td><strong>+45%</strong></td>
+<td>Q3 2021</td>
+</tr>
+<tr>
+<td>华美银行</td>
+<td>EWBC</td>
+<td>277.6万</td>
+<td>~$1.83亿（$65.86×277.6万）</td>
+<td>~$3.21亿</td>
+<td><strong>+75%</strong></td>
+<td>Q1 2023</td>
+</tr>
+<tr>
+<td>西方石油</td>
+<td>OXY</td>
+<td>146.7万</td>
+<td>~$0.94亿（$64.13×146.7万）</td>
+<td>~$0.85亿</td>
+<td><strong>-10%</strong></td>
+<td>Q2 2024</td>
+</tr>
+<tr>
+<td>卡骆驰</td>
+<td>CROX</td>
+<td>62.8万</td>
+<td>~$0.53亿（$83.66×62.8万）</td>
+<td>~$0.63亿</td>
+<td><strong>+19%</strong></td>
+<td>Q4 2025</td>
+</tr>
+<tr>
+<td>苹果</td>
+<td>AAPL</td>
+<td>11.1万</td>
+<td>~$0.13亿（$120.28×11.1万）</td>
+<td>~$0.29亿</td>
+<td><strong>+117%</strong></td>
+<td>Q4 2020</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td></td>
+<td></td>
+<td><strong>~$18.0亿</strong></td>
+<td><strong>~$34.5亿</strong></td>
+<td><strong>+92%</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="43">4.3 历史已退出的美股仓位</h3>
+<h4 id="alphabetgooggoogl">Alphabet（GOOG/GOOGL）——部分减持，仍持有</h4>
+<p><strong>GOOG：</strong>
+- Q2 2020建仓172万股（$67.48）→ 投入~$1.16亿
+- Q2 2022加仓133万股（$118.16）→ 追加~$1.57亿
+- Q1 2025减持59.3万股（~$183.61）→ 收回~$1.09亿
+- 综合投入~$1.64亿，当前市值~$7.74亿，<strong>浮盈~$6.1亿（+372%，含减持回收）</strong></p>
+<p><strong>GOOGL：</strong>
+- Q2 2022建仓94.8万股（$117.73）→ 投入~$1.12亿
+- Q4 2022加仓160万股（$95.03）→ 追加~$1.52亿
+- 合计投入~$2.64亿，当前市值~$8.07亿，<strong>浮盈~$5.43亿（+206%）</strong></p>
+<h4 id="mu">美光科技（MU）——已完全清仓 ✅</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>操作</th>
+<th>股数</th>
+<th>均价</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2019 Q4</td>
+<td>新建仓</td>
+<td>+781万</td>
+<td>$47.75</td>
+<td>投入~$3.73亿</td>
+</tr>
+<tr>
+<td>2020 Q1</td>
+<td>加仓</td>
+<td>+210万</td>
+<td>$52.00</td>
+<td>追加~$1.09亿</td>
+</tr>
+<tr>
+<td>2020 Q3</td>
+<td>加仓</td>
+<td>+157万</td>
+<td>$48.40</td>
+<td>追加~$0.76亿</td>
+</tr>
+<tr>
+<td>2023 Q1</td>
+<td>减持</td>
+<td>-465万</td>
+<td>$58.60</td>
+<td>收回~$2.73亿</td>
+</tr>
+<tr>
+<td>2023 Q2</td>
+<td><strong>清仓</strong></td>
+<td>-683万</td>
+<td>$64.28</td>
+<td>收回~$4.39亿</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>总投入：~$5.58亿；总收回：~$7.12亿；<strong>净盈利约$1.54亿（+28%）</strong></li>
+<li>注：持有至2023年清仓，未持到后续MU冲高$140+（若持有到峰值约再多赚$9亿）</li>
+</ul>
+<h4 id="metafacebook">Meta（原Facebook）——已完全清仓 ✅</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>操作</th>
+<th>股数</th>
+<th>均价</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 Q2</td>
+<td>新建仓</td>
+<td>+60.9万</td>
+<td>$208.78</td>
+<td>投入~$1.27亿</td>
+</tr>
+<tr>
+<td>2020 Q3</td>
+<td>加仓</td>
+<td>+72.2万</td>
+<td>$257.89</td>
+<td>追加~$1.86亿</td>
+</tr>
+<tr>
+<td>2020 Q4</td>
+<td>减持</td>
+<td>-37.1万</td>
+<td>$274.14</td>
+<td>收回~$1.02亿</td>
+</tr>
+<tr>
+<td>2021 Q1</td>
+<td>减持</td>
+<td>-38.8万</td>
+<td>$269.26</td>
+<td>收回~$1.04亿</td>
+</tr>
+<tr>
+<td>2021 Q4</td>
+<td>加仓</td>
+<td>+30.4万</td>
+<td>$332.00</td>
+<td>追加~$1.01亿</td>
+</tr>
+<tr>
+<td>2022 Q2</td>
+<td><strong>清仓</strong></td>
+<td>-87.6万</td>
+<td>$192.92</td>
+<td>收回~$1.69亿</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>总投入：~$5.16亿；总收回：~$4.75亿；<strong>净亏损约$0.41亿（-8%）</strong></li>
+<li>注：错过Meta后续从$90涨至$600+的大行情</li>
+</ul>
+<h4 id="baba">阿里巴巴（BABA）——两进两出 ✅</h4>
+<ul>
+<li>第一次：2018 Q1投入~$1,000万（5.3万股×$188.29）→ 2019 Q4清仓收回~$995万；<strong>亏损约$5万（≈0）</strong></li>
+<li>第二次：2020 Q1投入~$3,650万（17.5万股×$208.72）→ 2020 Q2清仓收回~$3,644万；<strong>亏损约$6万（≈0）</strong></li>
+<li>两次合计投入~$4,650万，几乎原进原出</li>
+</ul>
+<h4 id="sina">新浪（SINA）——已清仓 ✅</h4>
+<ul>
+<li>约2017年投入~$375万（5.23万股×$71.67）</li>
+<li>2018 Q2清仓收回~$226万（$43.26）；<strong>亏损约$149万（-40%）</strong></li>
+</ul>
+<h4 id="wb">微博（WB）——已清仓 ✅</h4>
+<ul>
+<li>2017 Q2投入~$35万（5,230股×$66.54）</li>
+<li>2018 Q2清仓收回~$4.6万（$8.81）；<strong>亏损约$30万（-87%）</strong></li>
+<li>仓位极小，绝对亏损有限</li>
+</ul>
+<h4 id="bidu">百度（BIDU）——已清仓 ✅</h4>
+<ul>
+<li>约2018年投入~$105万（5,800股×$181）</li>
+<li>2019 Q4清仓收回~$63万（$108）；<strong>亏损约$42万（-40%）</strong></li>
+</ul>
+<h4 id="pdd_3">拼多多第一次（PDD）——已清仓后重新买入</h4>
+<ul>
+<li>2020 Q4投入~$4,340万（36.3万股×$119.57）</li>
+<li>2021 Q4清仓收回~$2,863万（$78.86）；<strong>亏损约$1,477万（-34%）</strong></li>
+<li>2025 Q2以12.7倍仓位重新建仓，投入~$4.84亿（详见第一章）</li>
+</ul>
+<h4 id="sable-offshoresoc">Sable Offshore（SOC）——已清仓 ✅</h4>
+<ul>
+<li>2024 Q3投入~$3,170万（134.3万股×$23.63）</li>
+<li>退出价约$13–17；收回约$1,745万–$2,283万；<strong>亏损约$887万–$1,425万（-28%至-45%）</strong></li>
+</ul>
+<h3 id="44-13f">4.4 港股持仓（不在13F范围）</h3>
+<h4 id="1211hk23">比亚迪（1211.HK）——持仓约23年，最成功投资</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+<th>价格</th>
+<th>股数</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2002年秋</td>
+<td>IPO后首次买入</td>
+<td>~3港元（复权后）</td>
+<td>~1.7%股份</td>
+<td>投入约数千万港元</td>
+</tr>
+<tr>
+<td>2008年</td>
+<td>增持</td>
+<td>~8–15港元</td>
+<td>5,220万股（2.55%）</td>
+<td>累计投入约6–8亿港元</td>
+</tr>
+<tr>
+<td>2020年底</td>
+<td>峰值持股</td>
+<td>—</td>
+<td>7,539万股（2.76%）</td>
+<td>总成本估计~10–12亿港元</td>
+</tr>
+<tr>
+<td>2021年7月</td>
+<td><strong>减持</strong></td>
+<td>~225港元/股</td>
+<td>-1,077万股</td>
+<td><strong>套现24.39亿港元</strong></td>
+</tr>
+<tr>
+<td>2026年4月</td>
+<td>确认仍持有</td>
+<td>—</td>
+<td>低于5%，不强制披露</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>总投入：估计~10–12亿港元</li>
+<li>已套现：24.39亿港元（仅2021年7月一次）</li>
+<li>剩余持仓按2026年4月约25港元计：仍有~160亿港元市值（估算）</li>
+<li><strong>综合总回报估计超180亿港元，约40倍+</strong></li>
+</ul>
+<h4 id="1658hk">邮储银行（1658.HK）——仍持有</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>操作</th>
+<th>价格</th>
+<th>股数</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020年12月</td>
+<td>建仓</td>
+<td>4.23港元</td>
+<td>+10.06亿股</td>
+<td>投入~42.6亿港元</td>
+</tr>
+<tr>
+<td>2021年1月</td>
+<td>加仓</td>
+<td>5.35港元</td>
+<td>+2.68亿股</td>
+<td>追加~14.3亿港元</td>
+</tr>
+<tr>
+<td>2024年下半年</td>
+<td>小幅减持</td>
+<td>~5港元（估）</td>
+<td>-9,620万股</td>
+<td>收回~4.8亿港元（估）</td>
+</tr>
+<tr>
+<td>当前</td>
+<td>仍持有</td>
+<td>—</td>
+<td>~11.78亿股（~5.93%）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>总投入：~56.9亿港元（均价~4.67港元）</li>
+<li>收回：~4.8亿港元（2024年减持）</li>
+<li>当前市值：按5港元估约58.9亿港元</li>
+<li><strong>净浮盈约6.8亿港元（+12%），2022年高峰时浮盈曾超26亿港元（+46%）</strong></li>
+</ul>
+<h4 id="1766hk">中国中车（1766.HK）</h4>
+<ul>
+<li>约2024年前后建仓，未达5%披露线，规模未知</li>
+</ul>
+<h3 id="45">4.5 投资阶段演变</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>时间</th>
+<th>核心策略</th>
+<th>主要标的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期</td>
+<td>2016–2019</td>
+<td>中国科技ADR</td>
+<td>BABA、SINA、WB、BIDU</td>
+</tr>
+<tr>
+<td>转型</td>
+<td>2019–2021</td>
+<td>切换至美股核心资产</td>
+<td>MU、BAC、META、AAPL</td>
+</tr>
+<tr>
+<td>科技+金融</td>
+<td>2021–2023</td>
+<td>大型科技+银行</td>
+<td>GOOG/GOOGL、BAC、BRK.B</td>
+</tr>
+<tr>
+<td>当前</td>
+<td>2023–2025</td>
+<td>高度集中</td>
+<td>GOOGL/GOOG（43%）、BAC、PDD、BRK.B</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="46">4.6 全历史投资业绩汇总（含当时仓位占比）</h3>
+<blockquote>
+<p>说明：下列"当时仓位占比"为该标的在<strong>买入或持有期间对应季度13F组合市值</strong>中的占比（港股持仓不进13F，单独说明）。数据源：StockCircle、13f.info、WhaleWisdom 的 Himalaya Capital 季度13F快照。</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>等级</th>
+<th>标的</th>
+<th>投入规模</th>
+<th>建仓时占13F</th>
+<th>峰值占13F</th>
+<th>回报率</th>
+<th>绝对盈亏</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最佳</td>
+<td>比亚迪（港股）</td>
+<td>~10–12亿港元</td>
+<td>—</td>
+<td>港股长期占李录<strong>港股+总资产</strong>约40–50%（非13F）</td>
+<td><strong>约40倍+</strong></td>
+<td><strong>逾180亿港元</strong></td>
+<td>持仓23年</td>
+</tr>
+<tr>
+<td>优秀</td>
+<td>GOOG</td>
+<td>~$1.64亿</td>
+<td>2020 Q2 约<strong>12%</strong></td>
+<td>2024年前后约<strong>22–25%</strong>（GOOG单独）</td>
+<td><strong>+372%（含减持）</strong></td>
+<td><strong>浮盈~$6.1亿</strong></td>
+<td>2020建仓</td>
+</tr>
+<tr>
+<td>优秀</td>
+<td>GOOGL</td>
+<td>~$2.64亿</td>
+<td>2022 Q2 约<strong>8–9%</strong></td>
+<td>2025 Q4约<strong>23%</strong>（GOOGL单独）</td>
+<td><strong>+206%</strong></td>
+<td><strong>浮盈~$5.43亿</strong></td>
+<td>GOOG+GOOGL合计长期占13F <strong>40–45%</strong></td>
+</tr>
+<tr>
+<td>良好</td>
+<td>BAC</td>
+<td>~$3.39亿</td>
+<td>2020 Q1 约<strong>14%</strong></td>
+<td>2021–2022年约<strong>25–30%</strong>（曾为第一大仓）</td>
+<td><strong>+62%</strong></td>
+<td><strong>浮盈~$2.09亿</strong></td>
+<td>2020疫情低点建仓</td>
+</tr>
+<tr>
+<td>良好</td>
+<td>BRK.B</td>
+<td>~$2.52亿</td>
+<td>2021 Q3 约<strong>8–10%</strong></td>
+<td>约<strong>12%</strong></td>
+<td><strong>+45%</strong></td>
+<td><strong>浮盈~$1.12亿</strong></td>
+<td>2021建仓</td>
+</tr>
+<tr>
+<td>良好</td>
+<td>EWBC</td>
+<td>~$1.83亿</td>
+<td>2023 Q1 约<strong>5–6%</strong></td>
+<td>约<strong>9–10%</strong></td>
+<td><strong>+75%</strong></td>
+<td><strong>浮盈~$1.38亿</strong></td>
+<td>2023区域银行危机抄底</td>
+</tr>
+<tr>
+<td>良好</td>
+<td>AAPL</td>
+<td>~$0.13亿</td>
+<td>2020 Q4 约<strong>2–3%</strong></td>
+<td>2021年约<strong>4%</strong></td>
+<td><strong>+117%</strong></td>
+<td><strong>浮盈~$0.16亿</strong></td>
+<td>大幅减持后剩余小仓</td>
+</tr>
+<tr>
+<td>一般</td>
+<td>MU</td>
+<td>~$5.58亿</td>
+<td>2019 Q4 约<strong>32%</strong>（建仓即重仓）</td>
+<td>2020–2021年约<strong>40%+</strong>（长期第一大仓）</td>
+<td><strong>+28%</strong></td>
+<td><strong>净盈利~$1.54亿</strong></td>
+<td>持有3.5年，未持到高点</td>
+</tr>
+<tr>
+<td>失误</td>
+<td>META</td>
+<td>~$5.16亿</td>
+<td>2020 Q2 约<strong>13%</strong></td>
+<td>2020 Q3–Q4约<strong>22–25%</strong></td>
+<td><strong>-8%</strong></td>
+<td><strong>净亏损~$0.41亿</strong></td>
+<td>低点清仓，错过$90→$600</td>
+</tr>
+<tr>
+<td>失误</td>
+<td>PDD第一次</td>
+<td>~$4,340万</td>
+<td>2020 Q4 约<strong>4–5%</strong></td>
+<td>同期峰值<strong>约5%</strong></td>
+<td><strong>-34%</strong></td>
+<td><strong>净亏损~$1,477万</strong></td>
+<td>12.7倍仓位重新买入</td>
+</tr>
+<tr>
+<td>重仓</td>
+<td>PDD第二次</td>
+<td>~$4.84亿</td>
+<td>2025 Q2 约<strong>14–15%</strong>（建仓即第三大仓）</td>
+<td>当前<strong>14.64%</strong></td>
+<td><strong>-5%（当前）</strong></td>
+<td>浮亏~$0.22亿</td>
+<td>2025 Q2一次性重仓</td>
+</tr>
+<tr>
+<td>失误</td>
+<td>SOC</td>
+<td>~$3,170万</td>
+<td>2024 Q3 约<strong>1–2%</strong></td>
+<td>约<strong>2%</strong></td>
+<td><strong>-28%至-45%</strong></td>
+<td><strong>净亏损~$900–1,400万</strong></td>
+<td>短期仓位</td>
+</tr>
+<tr>
+<td>失误</td>
+<td>BABA（两次）</td>
+<td>~$4,650万</td>
+<td>2018 Q1约<strong>3–4%</strong>；2020 Q1约<strong>2–3%</strong></td>
+<td>约<strong>3–4%</strong></td>
+<td><strong>≈0</strong></td>
+<td><strong>亏损约$11万</strong></td>
+<td>两进两出，原进原出</td>
+</tr>
+<tr>
+<td>失误</td>
+<td>SINA</td>
+<td>~$375万</td>
+<td>2017年约<strong>2%</strong>（早期组合规模小）</td>
+<td>约<strong>2%</strong></td>
+<td><strong>-40%</strong></td>
+<td><strong>净亏损~$149万</strong></td>
+<td>早期中概股</td>
+</tr>
+<tr>
+<td>失误</td>
+<td>WB</td>
+<td>~$35万</td>
+<td>2017 Q2 <strong>&lt;0.5%</strong></td>
+<td><strong>&lt;0.5%</strong></td>
+<td><strong>-87%</strong></td>
+<td><strong>净亏损~$30万</strong></td>
+<td>试探性仓位</td>
+</tr>
+<tr>
+<td>失误</td>
+<td>BIDU</td>
+<td>~$105万</td>
+<td>2018年约<strong>&lt;1%</strong></td>
+<td>约<strong>1%</strong></td>
+<td><strong>-40%</strong></td>
+<td><strong>净亏损~$42万</strong></td>
+<td>小仓位</td>
+</tr>
+<tr>
+<td>持有</td>
+<td>OXY</td>
+<td>~$0.94亿</td>
+<td>2024 Q2 约<strong>3%</strong></td>
+<td>约<strong>3–4%</strong></td>
+<td><strong>-10%（当前）</strong></td>
+<td>浮亏~$0.09亿</td>
+<td>2024建仓</td>
+</tr>
+<tr>
+<td>持有</td>
+<td>CROX</td>
+<td>~$0.53亿</td>
+<td>2025 Q4 约<strong>1.5–2%</strong></td>
+<td><strong>~1.8%</strong></td>
+<td><strong>+19%（当前）</strong></td>
+<td>浮盈~$0.10亿</td>
+<td>最新建仓</td>
+</tr>
+<tr>
+<td>港股</td>
+<td>邮储银行（1658.HK）</td>
+<td>~56.9亿港元</td>
+<td>一次性5.93%法定举牌（<strong>占公司股本</strong>，非13F口径）</td>
+<td>同上</td>
+<td><strong>+12%（当前）</strong></td>
+<td><strong>浮盈~6.8亿港元</strong></td>
+<td>2020–2021建仓</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键观察：</strong></p>
+<ol>
+<li><strong>李录建仓即重仓</strong>：MU（32%→40%+）、BAC（14%→25%+）、META（13%→25%）、PDD二次（14%建仓），建仓时通常已占组合10%以上，属于"想清楚才下注"的风格。</li>
+<li><strong>集中度极高</strong>：13F组合历史上经常由单一或两只股票占30–50%（MU时期、GOOG+GOOGL时期、BAC时期）。</li>
+<li><strong>试探性仓位极少</strong>：WB/BIDU等&lt;1%仓位是罕见例外，绝大多数建仓就占5%以上。</li>
+<li><strong>比亚迪是真正的"压舱石"</strong>：虽不计入13F，但在李录"总资产+港股组合"中占比长期约40–50%，是他财富核心。</li>
+</ol>
+<hr />
+<h2 id="_2">五、数据来源</h2>
+<ul>
+<li>SEC 13F：Himalaya Capital（StockCircle、13f.info、WhaleWisdom、HedgeFollow）</li>
+<li>SEC 13F：H&amp;H International（ValuSider、13Radar）</li>
+<li>李录比亚迪投资复盘：新浪财经、证券时报</li>
+<li>邮储银行持仓：东方财富、新浪财经</li>
+<li>段永平雪球发言：腾讯新闻、新浪财经等媒体转载</li>
+<li>PDD Holdings官方财报：GlobalNewswire</li>
+</ul></article><div class="wx"><img src="../files/assets/wechat-qr.png" alt="公众号复利炼丹炉二维码"><div><b>公众号「复利炼丹炉」</b><span>站上是全部成品报告；值得深研的公司和报告之外的判断与取舍，精选发在公众号。微信扫码关注。</span></div></div><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/add3b8034f65.html">拼多多控股（PDD Holdings，PDD.US）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/581cb36c9940.html">拼多多2036：活下来没有悬念，多赚要看两个变量</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/a4afe86cabe3.html">黄峥与拼多多控制权：谁在掌舵、他还能不能回来</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/2ef823d3a551.html">拼多多（PDD Holdings）投资研究 — 2026.04.07</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/9da20c690247.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/b870b0a0d5b4.html">拼多多2026年中报解读</a><div class="meta">2026-08-25 · 公众号</div></li><li><a href="../r/7a2822470350.html">拼多多三大报表解析：从交易所原件到逐项含义</a><div class="meta">2026-08-24 · 财报</div></li><li><a href="../r/7b0e339dcb86.html">拼多多（PDD Holdings, NASDAQ: PDD）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/0e96a7d52297.html">PDD Holdings（拼多多）四大师综合投资研究</a><div class="meta">2026-07-02 · 研究</div></li><li><a href="../r/ea08984766d5.html">黄峥公众号：如创业的投资和如投资的创业</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/4e9d63b6e354.html">PDD研究覆盖度评估：信息缺口分析</a><div class="meta">2026-06-27 · 研究</div></li><li><a href="../r/20ae084f0438.html">核心中概股与美股 P/FCF 对比</a><div class="meta">2026-06-26 · 横评对比</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#pdd">一、李录的PDD持仓</a><ul>
+<li><a href="#11">1.1 操作时间线</a></li>
+<li><a href="#12">1.2 为什么亏损卖出，又以更高价买回？</a></li>
+</ul>
+</li>
+<li><a href="#pdd_1">二、段永平的PDD持仓</a><ul>
+<li><a href="#21-hh-international-13f">2.1 操作时间线（H&amp;H International 13F数据）</a></li>
+<li><a href="#22-hh-international">2.2 关于H&amp;H International的说明</a></li>
+<li><a href="#23-put">2.3 段永平的卖Put策略</a></li>
+</ul>
+</li>
+<li><a href="#pdd_2">三、两人PDD成本对比</a></li>
+<li><a href="#_1">四、李录历史全部投资记录</a><ul>
+<li><a href="#41">4.1 基本概况</a></li>
+<li><a href="#42-2025q420251231">4.2 当前持仓（2025年Q4，截至2025年12月31日）</a></li>
+<li><a href="#43">4.3 历史已退出的美股仓位</a></li>
+<li><a href="#44-13f">4.4 港股持仓（不在13F范围）</a></li>
+<li><a href="#45">4.5 投资阶段演变</a></li>
+<li><a href="#46">4.6 全历史投资业绩汇总（含当时仓位占比）</a></li>
+</ul>
+</li>
+<li><a href="#_2">五、数据来源</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 08:05 UTC</footer></body></html>

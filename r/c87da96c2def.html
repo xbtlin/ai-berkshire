@@ -11,7 +11,30 @@ document.addEventListener('DOMContentLoaded',function(){var sel=document.getElem
 if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
 if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
 addEventListener('scroll',f,{passive:true});f()}});})();
-</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../screens/港股召回池/index.html">港股召回池</a></div><div class="layout"><div><h1>03 新能源与智能制造</h1><div class="meta"><a href="../screens/港股召回池/index.html">港股召回池</a> ｜ 2026-05-16 · 筛选 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%B8%AF%E8%82%A1%E5%8F%AC%E5%9B%9E%E6%B1%A0/03-%E6%96%B0%E8%83%BD%E6%BA%90%E4%B8%8E%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script></head><body data-root="../" data-page="r/c87da96c2def.html" data-title="03 新能源与智能制造"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../screens/港股召回池/index.html">港股召回池</a></div><div class="layout"><div><h1>03 新能源与智能制造</h1><div class="meta"><a href="../screens/港股召回池/index.html">港股召回池</a> ｜ 2026-05-16 · 筛选 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%B8%AF%E8%82%A1%E5%8F%AC%E5%9B%9E%E6%B1%A0/03-%E6%96%B0%E8%83%BD%E6%BA%90%E4%B8%8E%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#1211hk">比亚迪股份（1211.HK）</a><ul>
 <li><a href="#_1">核心业务</a></li>
@@ -872,7 +895,7 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 <blockquote>
 <p><strong>整体板块观察：</strong></p>
 <p>10家公司中，生意质量最高的是宁德时代和创科实业（高毛利率、高ROE、强现金流），最值得关注的低估标的是吉利汽车（PE不到6倍）和海尔智家（PE不到10倍+6%股息率）。新势力车企（理想、小鹏、蔚来、零跑）整体盈利能力薄弱，更适合成长型投资者。美的集团是成熟期价值股的代表，稳健但增长空间有限。比亚迪是行业王者但净利率说明汽车制造的生意本质。</p>
-</blockquote></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/30a3fbecb7c0.html">中国太保（2601.HK）— 投资研究最终报告</a><div class="meta">2026-07-13 · 筛选</div></li><li><a href="../r/e5d22405f005.html">阿里健康（0241.HK）— 投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/0c394791d3ce.html">长江基建（1038.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/42909e6d9416.html">长实集团（1113.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/3dc604efe5e3.html">长和（0001.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/e287d883b3ab.html">电能实业（0006.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/1b21213692d7.html">新鸿基地产（0016.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/51d438db06fe.html">地平线机器人（9660.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/3cea21379ee8.html">国药控股（1099.HK）— 投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/9b121e76a91e.html">商汤集团（0020.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/556a1b5d8056.html">去劣指标压力测试报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/0c632e7d2f7a.html">众安在线（6060.HK）— 投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+</blockquote></article><div class="wx"><img src="../files/assets/wechat-qr.png" alt="公众号复利炼丹炉二维码"><div><b>公众号「复利炼丹炉」</b><span>站上是全部成品报告；值得深研的公司和报告之外的判断与取舍，精选发在公众号。微信扫码关注。</span></div></div><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/30a3fbecb7c0.html">中国太保（2601.HK）— 投资研究最终报告</a><div class="meta">2026-07-13 · 筛选</div></li><li><a href="../r/e5d22405f005.html">阿里健康（0241.HK）— 投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/0c394791d3ce.html">长江基建（1038.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/42909e6d9416.html">长实集团（1113.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/3dc604efe5e3.html">长和（0001.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/e287d883b3ab.html">电能实业（0006.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/1b21213692d7.html">新鸿基地产（0016.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/51d438db06fe.html">地平线机器人（9660.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/3cea21379ee8.html">国药控股（1099.HK）— 投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/9b121e76a91e.html">商汤集团（0020.HK）投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/556a1b5d8056.html">去劣指标压力测试报告</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/0c632e7d2f7a.html">众安在线（6060.HK）— 投资研究最终报告</a><div class="meta">2026-05-17 · 筛选</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
 <ul>
 <li><a href="#1211hk">比亚迪股份（1211.HK）</a><ul>
 <li><a href="#_1">核心业务</a></li>
@@ -966,4 +989,4 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 </li>
 </ul>
 </div>
-</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 08:05 UTC</footer></body></html>
