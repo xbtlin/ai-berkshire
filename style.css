@@ -1,0 +1,34 @@
+
+html{font-size:20px;-webkit-text-size-adjust:100%}
+body{margin:0 auto;padding:0 1rem 3rem;max-width:44rem;color:#000;background:#fff;
+font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",sans-serif;line-height:1.75}
+html.s1{font-size:17px}html.s3{font-size:24px}html.s4{font-size:28px}
+a{color:#000;text-decoration:underline;text-underline-offset:3px}
+nav.top{padding:.7rem 0;border-bottom:3px solid #000;font-size:.95rem;line-height:2.2}
+nav.top a{margin-right:.9rem;white-space:nowrap}
+nav.top .size{float:right}nav.top .size a{margin:0 0 0 .4rem;text-decoration:none;border:1px solid #000;padding:0 .4rem}
+.crumb{font-size:.85rem;color:#333;margin:.8rem 0 0}
+h1{font-size:1.55rem;line-height:1.35;margin:.8rem 0 .4rem}
+h2{font-size:1.25rem;line-height:1.4;border-bottom:1px solid #777;padding-bottom:.15rem;margin-top:1.8rem}
+h3{font-size:1.08rem;margin-top:1.4rem}
+.meta{color:#333;font-size:.85rem;margin:.2rem 0 1rem}
+ul.list{list-style:none;padding:0;margin:0}
+ul.list li{padding:.65rem 0;border-bottom:1px solid #bbb}
+ul.list li a{display:block}
+ul.list .meta{margin:0}
+.grid a.btn{display:inline-block;border:2px solid #000;padding:.45rem .9rem;margin:.3rem .6rem .3rem 0;text-decoration:none;font-weight:600}
+.table-wrap{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;font-size:.82rem;line-height:1.45}
+th,td{border:1px solid #555;padding:.3rem .5rem;vertical-align:top;text-align:left}
+th{background:#e8e8e8}
+blockquote{border-left:4px solid #000;margin:1rem 0;padding:.1rem 1rem;color:#111}
+pre{overflow-x:auto;border:1px solid #888;padding:.6rem;font-size:.8rem;line-height:1.4}
+code{font-size:.9em}
+img{max-width:100%;height:auto}
+hr{border:0;border-top:1px solid #888}
+.idx{columns:2;column-gap:2rem}
+.idx li{break-inside:avoid}
+details{margin:.6rem 0}summary{cursor:pointer;padding:.4rem 0;font-weight:600}
+footer{margin-top:3rem;border-top:3px solid #000;padding-top:.8rem;font-size:.85rem;color:#333}
+input.q{font-size:1.1rem;width:100%;padding:.5rem;border:2px solid #000;box-sizing:border-box}
+@media (max-width:600px){html{font-size:18px}.idx{columns:1}}
