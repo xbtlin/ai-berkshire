@@ -1,0 +1,435 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>风险与判断——芯片限制、监管与长期价值 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/DeepSeek/index.html">DeepSeek</a></div><h1>风险与判断——芯片限制、监管与长期价值</h1><div class="meta"><a href="../companies/DeepSeek/index.html">DeepSeek</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/DeepSeek/%E3%80%8A%E7%9C%8B%E6%87%82DeepSeek%E3%80%8B/04-%E9%A3%8E%E9%99%A9%E4%B8%8E%E5%88%A4%E6%96%AD-%E8%8A%AF%E7%89%87%E9%99%90%E5%88%B6%E3%80%81%E7%9B%91%E7%AE%A1%E4%B8%8E%E9%95%BF%E6%9C%9F%E4%BB%B7%E5%80%BC.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">写在前面</a></li>
+<li><a href="#_2">风险一：芯片断供——最大的结构性威胁</a><ul>
+<li><a href="#_3">现状</a></li>
+<li><a href="#_4">华为昇腾：备份路线，但不是完美替代</a></li>
+<li><a href="#_5">芯片风险的判断</a></li>
+</ul>
+</li>
+<li><a href="#_6">风险二：内容审查与全球化天花板</a><ul>
+<li><a href="#_7">中国国内审查</a></li>
+<li><a href="#_8">海外封禁</a></li>
+<li><a href="#_9">这意味着什么？</a></li>
+</ul>
+</li>
+<li><a href="#270">风险三：人才流失——270人团队的脆弱性</a></li>
+<li><a href="#_10">风险四：母公司风险与估值泡沫</a><ul>
+<li><a href="#_11">幻方量化的风险</a></li>
+<li><a href="#_12">估值是否合理？</a></li>
+</ul>
+</li>
+<li><a href="#_13">五种可能的未来</a></li>
+<li><a href="#_14">最终判断：这家实验室值不值得关注？</a><ul>
+<li><a href="#deepseek">你应该关注DeepSeek，如果：</a></li>
+<li><a href="#deepseek_1">你不应该盲目看多DeepSeek，因为：</a></li>
+<li><a href="#deepseek_2">你也不应该盲目看空DeepSeek，因为：</a></li>
+</ul>
+</li>
+<li><a href="#_15">与上一个系列的对照</a></li>
+<li><a href="#_16">系列总结</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂DeepSeek》系列 · 第 04 篇 · 终章
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">写在前面</h2>
+<p>技术是真实的，商业化是空白的，竞争格局是混乱的。前三篇把这些摆清楚了。但还剩一个问题没有正面回答：<strong>这家实验室的风险到底有多大，以及它是否值得长期关注？</strong></p>
+<p>DeepSeek是未上市公司，信息透明度远低于上市公司。以下分析基于公开信息，不确定的地方会明确标注。</p>
+<hr />
+<h2 id="_2">风险一：芯片断供——最大的结构性威胁</h2>
+<h3 id="_3">现状</h3>
+<p>美国对华AI芯片出口限制持续升级：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间线</th>
+<th>事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022年10月</td>
+<td>美国禁止向中国出口A100/H100</td>
+</tr>
+<tr>
+<td>2023年10月</td>
+<td>禁令扩大至H800等"阉割版"芯片</td>
+</tr>
+<tr>
+<td>2025年4月</td>
+<td>NVIDIA H20也被要求出口许可</td>
+</tr>
+<tr>
+<td>2025-2026年</td>
+<td>美国调查DeepSeek是否通过新加坡中间商获取约<strong>60,000张</strong>NVIDIA芯片（其中<strong>20,000张</strong>为受限型号）（来源：美中经济与安全审查委员会）</td>
+</tr>
+</tbody>
+</table></div>
+<p>DeepSeek目前拥有的算力基础：约<strong>10,000张</strong>NVIDIA A100（2023年禁令前采购，来源：Bloomberg），加上可能的额外采购。</p>
+<p><strong>核心问题</strong>：现有的NVIDIA芯片够用多久？国产替代能接上吗？</p>
+<h3 id="_4">华为昇腾：备份路线，但不是完美替代</h3>
+<p>V4已适配华为昇腾950芯片，技术上实现了从训练到推理的全栈部署。但：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>NVIDIA H200</th>
+<th>华为昇腾950</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工艺制程</td>
+<td>4nm</td>
+<td>7nm</td>
+</tr>
+<tr>
+<td>HBM带宽</td>
+<td>4.8 TB/s</td>
+<td>未公开（预估较低）</td>
+</tr>
+<tr>
+<td>生态成熟度</td>
+<td>CUDA（全球标准）</td>
+<td>CANN（起步阶段）</td>
+</tr>
+<tr>
+<td>量产时间</td>
+<td>已量产</td>
+<td>2026年下半年开始爬坡</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：华为官方、VOA中文、电子工程专辑）</p>
+<p><strong>一个关键事实</strong>：昇腾950的量产要到2026年下半年才开始爬坡。在此之前，DeepSeek的V4-Pro高端推理服务因算力受限，API价格无法大幅下降。</p>
+<p><strong>看多观点</strong>：DeepSeek的核心竞争力是算法效率——即使芯片性能有差距，算法优化可以弥补。V3用H800训练出了全球前沿模型，说明"不是最好的芯片也能做出最好的模型"。</p>
+<p><strong>看空观点</strong>：前沿模型的训练越来越吃算力。如果下一代模型（V5或更远）需要10倍算力，昇腾与NVIDIA的差距就不再是"可以用算法弥补"的量级了。算法创新有天花板，物理层面的差距最终会显现。</p>
+<h3 id="_5">芯片风险的判断</h3>
+<p><strong>短期（1-2年）</strong>：可控。现有NVIDIA库存+昇腾适配+算法效率优势，足以支撑V4和V4.1的迭代。</p>
+<p><strong>中期（3-5年）</strong>：不确定性大。取决于华为昇腾的量产进度、7nm工艺能否追赶5nm/4nm、以及美国制裁是否进一步收紧。</p>
+<hr />
+<h2 id="_6">风险二：内容审查与全球化天花板</h2>
+<h3 id="_7">中国国内审查</h3>
+<p>DeepSeek的模型遵守中国法律要求，在政治敏感话题上有明确的审查机制（来源：多个独立测试报告、RFA）：</p>
+<ul>
+<li>涉及天安门、台湾等话题时拒绝作答或删除回答</li>
+<li>审查发生在应用层面——先生成文字再迅速删除</li>
+<li>中文和英文交互的审查最严格，其他语言的过滤不一致</li>
+</ul>
+<h3 id="_8">海外封禁</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>国家/地区</th>
+<th>措施</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美国</td>
+<td>政府机构禁用；考虑更广泛封禁</td>
+</tr>
+<tr>
+<td>意大利</td>
+<td>一度下架</td>
+</tr>
+<tr>
+<td>爱尔兰、比利时</td>
+<td>数据安全调查</td>
+</tr>
+<tr>
+<td>韩国、日本</td>
+<td>限制性措施</td>
+</tr>
+<tr>
+<td>澳大利亚</td>
+<td>政府设备禁用</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：安全内参、CNBC、各国政府公告）</p>
+<h3 id="_9">这意味着什么？</h3>
+<p><strong>DeepSeek的全球化存在一个结构性矛盾</strong>：</p>
+<ul>
+<li>开源模型可以全球下载使用（无法被封禁）</li>
+<li>但DeepSeek的云端API服务在多个国家受限</li>
+<li>企业客户（尤其是政企客户）不会使用一个被本国政府明确点名的AI服务</li>
+</ul>
+<p><strong>看多观点</strong>：开源是最好的"反封禁武器"。任何人都可以下载模型权重在本地运行，政府封不住代码。DeepSeek的真正影响力不在云端API，而在全球开发者社区。</p>
+<p><strong>看空观点</strong>：有影响力不等于能赚钱。全球开发者免费用你的开源模型，不意味着他们会付费用你的API。而政企市场——AI变现的最大蛋糕——DeepSeek在中国以外几乎无法触达。</p>
+<hr />
+<h2 id="270">风险三：人才流失——270人团队的脆弱性</h2>
+<p>DeepSeek的团队特征：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>特征</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总人数</td>
+<td>约<strong>270人</strong></td>
+</tr>
+<tr>
+<td>平均年龄</td>
+<td><strong>28岁</strong></td>
+</tr>
+<tr>
+<td>学历</td>
+<td>85%以上硕士，40%以上博士</td>
+</tr>
+<tr>
+<td>来源</td>
+<td>清华、北大、浙大、复旦为主</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：知乎、36氪）</p>
+<p>2025年底至2026年初的已知离职：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>离职时间</th>
+<th>去向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>罗福莉</td>
+<td>2025年11月</td>
+<td>小米</td>
+</tr>
+<tr>
+<td>王炳宣</td>
+<td>2025年底</td>
+<td>腾讯</td>
+</tr>
+<tr>
+<td>阮翀</td>
+<td>2026年1月</td>
+<td>元戎启行</td>
+</tr>
+<tr>
+<td>郭达雅</td>
+<td>2026年4月</td>
+<td>字节跳动</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：36氪）</p>
+<p><strong>核心问题</strong>：DeepSeek没有股权激励。一家未上市公司、没有期权计划的实验室，靠什么留住中国最顶尖的AI研究者？</p>
+<p><strong>看多观点</strong>：梁文锋的领导力和"纯研究"的使命感是DeepSeek最大的人才磁铁。全球顶级AI研究者中，有一批人的动力不是钱而是"做真正的前沿研究"。DeepSeek提供了这种机会。首轮融资完成后，也可能推出股权激励计划。</p>
+<p><strong>看空观点</strong>：使命感无法量化、无法对冲。字节跳动、腾讯开出的薪资可能是DeepSeek的3-5倍以上，外加期权。4个核心成员在半年内离职，这个比例对270人的团队来说不低。如果V4之后迭代速度放缓，人才流失可能加速。</p>
+<hr />
+<h2 id="_10">风险四：母公司风险与估值泡沫</h2>
+<h3 id="_11">幻方量化的风险</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>风险点</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收益波动</td>
+<td>量化基金收益率年度波动可达30-50个百分点</td>
+</tr>
+<tr>
+<td>监管风险</td>
+<td>中国对量化交易的监管持续收紧</td>
+</tr>
+<tr>
+<td>利益冲突</td>
+<td>幻方用DeepSeek技术做交易，是否与开源精神矛盾？</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_12">估值是否合理？</h3>
+<p>3,500亿元估值对应什么？</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>对标</th>
+<th>估值</th>
+<th>年收入</th>
+<th>估值/收入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI</td>
+<td>~$3,000亿</td>
+<td>~$100亿+</td>
+<td>~30倍</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>~$600亿</td>
+<td>数十亿</td>
+<td>~30-60倍</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td>~$450亿（3,500亿元）</td>
+<td><strong>近乎零</strong></td>
+<td><strong>无穷大</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>DeepSeek的估值，本质上不是在为当前收入定价，而是在为"未来可能的商业化"和"技术战略价值"定价。</strong></p>
+<p>这和2000年互联网泡沫的逻辑类似吗？有相似之处，也有不同——不同在于DeepSeek的技术成果是实打实的，模型性能可以被第三方独立验证。</p>
+<hr />
+<h2 id="_13">五种可能的未来</h2>
+<p>基于前三篇的分析，给出五种情景。声明：<strong>概率分配是主观判断，不是精确计算。读者应根据自己的判断调整权重。</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>描述</th>
+<th>关键假设</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"AI界的Linux"</td>
+<td>技术影响力巨大，开源生态不可撼动，但自身商业价值有限</td>
+<td>开源路线不变、算法持续领先</td>
+</tr>
+<tr>
+<td>商业化突破</td>
+<td>找到可持续变现模式，成为中国版Anthropic</td>
+<td>首轮融资后转向商业、产品能力补齐</td>
+</tr>
+<tr>
+<td>被大厂收购/合并</td>
+<td>技术价值被认可，但独立运营难以为继</td>
+<td>幻方利润下滑或梁文锋意志转变</td>
+</tr>
+<tr>
+<td>国家战略资产</td>
+<td>成为中国AI国家队核心力量，获得持续国家资源</td>
+<td>大基金深度参与、芯片供应保障</td>
+</tr>
+<tr>
+<td>逐渐边缘化</td>
+<td>技术领先被追平，人才流失加速，幻方断血</td>
+<td>芯片差距拉大+核心团队离散</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>每种情景都有真实的证据支撑，也都有明显的反面论据。</strong> 这正是DeepSeek估值困难的根本原因——它不是一个可以用DCF模型定价的"公司"，而是一个多种可能性叠加的"期权组合"。</p>
+<hr />
+<h2 id="_14">最终判断：这家实验室值不值得关注？</h2>
+<p>不给结论，给框架。</p>
+<h3 id="deepseek">你应该关注DeepSeek，如果：</h3>
+<ol>
+<li>你在AI行业工作或投资AI相关公司——DeepSeek的技术路线和成本结构对整个行业有结构性影响</li>
+<li>你关注中美科技竞争——DeepSeek是中国AI能力的最佳证明案例</li>
+<li>你使用AI工具——DeepSeek V4的性价比意味着你可能以1/10的成本获得接近一线的能力</li>
+<li>你关注开源软件的演进——DeepSeek正在重新定义"开源AI"的可能性边界</li>
+</ol>
+<h3 id="deepseek_1">你不应该盲目看多DeepSeek，因为：</h3>
+<ol>
+<li><strong>零收入+3,500亿估值</strong>——无论技术多好，这个估值的隐含假设需要多年高增长来兑现</li>
+<li><strong>芯片风险是真实的</strong>——算法效率有天花板，物理层面的差距最终会显现</li>
+<li><strong>团队脆弱性</strong>——270人的精英团队没有股权锁定，已出现人才外流</li>
+<li><strong>母公司风险</strong>——量化基金利润不是稳定现金流</li>
+<li><strong>内容审查</strong>——限制了全球化的政企市场天花板</li>
+</ol>
+<h3 id="deepseek_2">你也不应该盲目看空DeepSeek，因为：</h3>
+<ol>
+<li><strong>技术成果经过第三方验证</strong>——V4在多项基准上与GPT-5.4、Claude Opus 4.6并列前沿</li>
+<li><strong>成本优势有复利效应</strong>——训练便宜→迭代快→成本更低，这是一个正向飞轮</li>
+<li><strong>开源生态壁垒已经建立</strong>——38%的AI新论文引用、GitHub 7万+星、Hugging Face月下载80万+</li>
+<li><strong>华为适配降低了芯片风险</strong>——不是消除，但有了备份路线</li>
+<li><strong>首轮融资引入国家资源</strong>——资金和芯片供应的保障都在升级</li>
+</ol>
+<hr />
+<h2 id="_15">与上一个系列的对照</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>拼多多</th>
+<th>DeepSeek</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>性质</td>
+<td>上市公司，有公开财报</td>
+<td>未上市，信息有限</td>
+</tr>
+<tr>
+<td>收入</td>
+<td><strong>4,318亿元</strong></td>
+<td><strong>近乎零</strong></td>
+</tr>
+<tr>
+<td>核心矛盾</td>
+<td>赚很多钱但不分给股东</td>
+<td>技术很好但不赚钱</td>
+</tr>
+<tr>
+<td>估值困难点</td>
+<td>现金拿不回来的折价</td>
+<td>未来变现的不确定性</td>
+</tr>
+<tr>
+<td>适合的关注者</td>
+<td>能接受高不确定性的价值投资者</td>
+<td>AI从业者和关注前沿技术的观察者</td>
+</tr>
+</tbody>
+</table></div>
+<p>两个系列最大的共同点是：<strong>两家公司都很难用传统框架估值——但原因完全不同。</strong> 拼多多的难在于"已有的价值能不能变现给股东"；DeepSeek的难在于"未有的价值能不能被创造出来"。</p>
+<hr />
+<h2 id="_16">系列总结</h2>
+<p>四篇文章，试图回答四个问题：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>篇</th>
+<th>核心问题</th>
+<th>回答</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>DeepSeek是什么？</td>
+<td>一个由量化基金供养的AI实验室，用极少的资源做出了全球前沿成果</td>
+</tr>
+<tr>
+<td>02</td>
+<td>技术护城河有多深？</td>
+<td>MoE+MLA+FP8+开源生态构成了中度护城河，但不是不可复制</td>
+</tr>
+<tr>
+<td>03</td>
+<td>商业模式能走多远？</td>
+<td>目前几乎零收入，首轮融资是转折信号，变现路径待验证</td>
+</tr>
+<tr>
+<td>04</td>
+<td>风险到底有多大？</td>
+<td>芯片、人才、母公司、审查四重风险叠加，但技术成果和开源生态是真实资产</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>这个系列刻意不给"买入"或"看空"的结论——因为对一个未上市、零收入、多种可能性叠加的实体，任何确定性结论都是伪精确。</strong></p>
+<p>我们能做的是：把"是什么"说清楚，把"风险在哪"说清楚，然后让你自己判断。</p>
+<hr />
+<p><em>本文是《看懂DeepSeek》系列第 04 篇（终章）。</em>
+<em>本系列不构成任何投资建议。所有数据来源已在文中标注，如有错误欢迎指正。</em>
+<em>DeepSeek是未上市公司，公开信息有限。本系列中标注"估"或"预估"的数据均为基于公开来源的推算，非官方口径。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/4e65e30ed7d1.html">看懂 DeepSeek Harness：一切皆插件的开源智能体框架</a><div class="meta">2026-08-14 · 深度系列</div></li><li><a href="../r/1964cb748b0c.html">技术路线——MoE架构、开源策略与训练效率突破</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/1a480b33e957.html">商业与竞争——幻方背景、变现路径与全球对手</a><div class="meta">2026-05-21 · 深度系列</div></li><li><a href="../r/44b462040375.html">DeepSeek（深度求索）深度研究报告</a><div class="meta">2026-04-10 · 研究</div></li><li><a href="../r/e2b9d96009d9.html">DeepSeek——震动全球AI行业的中国实验室</a><div class="meta">2025-01-27 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

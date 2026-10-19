@@ -1,0 +1,378 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DeepSeek-V3.1 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a></div><h1>DeepSeek-V3.1</h1><div class="meta"><a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/deepseek-ai__DeepSeek-V3.1__README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#model-downloads">Model Downloads</a></li>
+<li><a href="#chat-template">Chat Template</a><ul>
+<li><a href="#non-thinking">Non-Thinking</a></li>
+<li><a href="#thinking">Thinking</a></li>
+<li><a href="#toolcall">ToolCall</a></li>
+<li><a href="#code-agent">Code-Agent</a></li>
+<li><a href="#search-agent">Search-Agent</a></li>
+</ul>
+</li>
+<li><a href="#evaluation">Evaluation</a><ul>
+<li><a href="#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li><a href="#how-to-run-locally">How to Run Locally</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#citation">Citation</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</details><article><!-- markdownlint-disable first-line-h1 -->
+<!-- markdownlint-disable html -->
+<!-- markdownlint-disable no-duplicate-header -->
+
+<div align="center">
+  <img src="https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/logo.svg?raw=true" width="60%" alt="DeepSeek-V3" />
+</div>
+<hr>
+<div align="center" style="line-height: 1;">
+  <a href="https://www.deepseek.com/" target="_blank" style="margin: 2px;">
+    <img alt="Homepage" src="https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/badge.svg?raw=true" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+  <a href="https://chat.deepseek.com/" target="_blank" style="margin: 2px;">
+    <img alt="Chat" src="https://img.shields.io/badge/🤖%20Chat-DeepSeek%20V3-536af5?color=536af5&logoColor=white" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+  <a href="https://huggingface.co/deepseek-ai" target="_blank" style="margin: 2px;">
+    <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DeepSeek%20AI-ffc107?color=ffc107&logoColor=white" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+</div>
+
+<div align="center" style="line-height: 1;">
+  <a href="https://discord.gg/Tc7c45Zzu5" target="_blank" style="margin: 2px;">
+    <img alt="Discord" src="https://img.shields.io/badge/Discord-DeepSeek%20AI-7289da?logo=discord&logoColor=white&color=7289da" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+  <a href="https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/qr.jpeg?raw=true" target="_blank" style="margin: 2px;">
+    <img alt="Wechat" src="https://img.shields.io/badge/WeChat-DeepSeek%20AI-brightgreen?logo=wechat&logoColor=white" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+  <a href="https://twitter.com/deepseek_ai" target="_blank" style="margin: 2px;">
+    <img alt="Twitter Follow" src="https://img.shields.io/badge/Twitter-deepseek_ai-white?logo=x&logoColor=white" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+</div>
+
+<div align="center" style="line-height: 1;">
+  <a href="LICENSE" style="margin: 2px;">
+    <img alt="License" src="https://img.shields.io/badge/License-MIT-f5de53?&color=f5de53" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+</div>
+
+<h2 id="introduction">Introduction</h2>
+<p>DeepSeek-V3.1 is a hybrid model that supports both thinking mode and non-thinking mode. Compared to the previous version, this upgrade brings improvements in multiple aspects:</p>
+<ul>
+<li>
+<p><strong>Hybrid thinking mode</strong>: One model supports both thinking mode and non-thinking mode by changing the chat template. </p>
+</li>
+<li>
+<p><strong>Smarter tool calling</strong>: Through post-training optimization, the model's performance in tool usage and agent tasks has significantly improved.</p>
+</li>
+<li>
+<p><strong>Higher thinking efficiency</strong>: DeepSeek-V3.1-Think achieves comparable answer quality to DeepSeek-R1-0528, while responding more quickly.</p>
+</li>
+</ul>
+<p>DeepSeek-V3.1 is post-trained on the top of DeepSeek-V3.1-Base, which is built upon the original V3 base checkpoint through a two-phase long context extension approach, following the methodology outlined in the original DeepSeek-V3 report. We have expanded our dataset by collecting additional long documents and substantially extending both training phases. The 32K extension phase has been increased 10-fold to 630B tokens, while the 128K extension phase has been extended by 3.3x to 209B tokens.</p>
+<p>Additionally, DeepSeek-V3.1 is trained using the <strong>UE8M0 FP8 scale data format on both model weights and activations</strong> to ensure compatibility with microscaling data formats. Please refer to <a href="https://github.com/deepseek-ai/DeepGEMM">DeepGEMM</a> for more details.</p>
+<h2 id="model-downloads">Model Downloads</h2>
+<div align="center">
+
+| **Model** | **#Total Params** | **#Activated Params** | **Context Length** | **Download** |
+| :------------: | :------------: | :------------: | :------------: | :------------: |
+| DeepSeek-V3.1-Base | 671B | 37B | 128K | [HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Base) \| [ModelScope](https://modelscope.cn/models/deepseek-ai/DeepSeek-V3.1-Base) |
+| DeepSeek-V3.1 | 671B | 37B | 128K | [HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-V3.1) \| [ModelScope](https://modelscope.cn/models/deepseek-ai/DeepSeek-V3.1) |
+
+</div>
+
+<h2 id="chat-template">Chat Template</h2>
+<p>The details of our chat template is described in <code>tokenizer_config.json</code> and <code>assets/chat_template.jinja</code>. Here is a brief description.</p>
+<h3 id="non-thinking">Non-Thinking</h3>
+<h4 id="first-turn">First-Turn</h4>
+<p>Prefix:
+<code>&lt;｜begin▁of▁sentence｜&gt;{system prompt}&lt;｜User｜&gt;{query}&lt;｜Assistant｜&gt;&lt;/think&gt;</code></p>
+<p>With the given prefix, DeepSeek V3.1 generates responses to queries in non-thinking mode. Unlike DeepSeek V3,  it introduces an additional token <code>&lt;/think&gt;</code>.</p>
+<h4 id="multi-turn">Multi-Turn</h4>
+<p>Context:
+<code>&lt;｜begin▁of▁sentence｜&gt;{system prompt}&lt;｜User｜&gt;{query}&lt;｜Assistant｜&gt;&lt;/think&gt;{response}&lt;｜end▁of▁sentence｜&gt;...&lt;｜User｜&gt;{query}&lt;｜Assistant｜&gt;&lt;/think&gt;{response}&lt;｜end▁of▁sentence｜&gt;</code></p>
+<p>Prefix:
+<code>&lt;｜User｜&gt;{query}&lt;｜Assistant｜&gt;&lt;/think&gt;</code></p>
+<p>By concatenating the context and the prefix, we obtain the correct prompt for the query.</p>
+<h3 id="thinking">Thinking</h3>
+<h4 id="first-turn_1">First-Turn</h4>
+<p>Prefix:
+<code>&lt;｜begin▁of▁sentence｜&gt;{system prompt}&lt;｜User｜&gt;{query}&lt;｜Assistant｜&gt;&lt;think&gt;</code></p>
+<p>The prefix of thinking mode is similar to DeepSeek-R1. </p>
+<h4 id="multi-turn_1">Multi-Turn</h4>
+<p>Context:
+<code>&lt;｜begin▁of▁sentence｜&gt;{system prompt}&lt;｜User｜&gt;{query}&lt;｜Assistant｜&gt;&lt;/think&gt;{response}&lt;｜end▁of▁sentence｜&gt;...&lt;｜User｜&gt;{query}&lt;｜Assistant｜&gt;&lt;/think&gt;{response}&lt;｜end▁of▁sentence｜&gt;</code></p>
+<p>Prefix:
+<code>&lt;｜User｜&gt;{query}&lt;｜Assistant｜&gt;&lt;think&gt;</code></p>
+<p>The multi-turn template is the same with non-thinking multi-turn chat template. It means the thinking token in the last turn will be dropped but the <code>&lt;/think&gt;</code> is retained in every turn of context. </p>
+<h3 id="toolcall">ToolCall</h3>
+<p>Toolcall is supported in non-thinking mode. The format is: </p>
+<p><code>&lt;｜begin▁of▁sentence｜&gt;{system prompt}\n\n{tool_description}&lt;｜User｜&gt;{query}&lt;｜Assistant｜&gt;&lt;/think&gt;</code> where the tool_description is </p>
+<pre><code>## Tools
+You have access to the following tools:
+
+### {tool_name1}
+Description: {description}
+
+Parameters: {json.dumps(parameters)}
+
+IMPORTANT: ALWAYS adhere to this exact format for tool use:
+&lt;｜tool▁calls▁begin｜&gt;&lt;｜tool▁call▁begin｜&gt;tool_call_name&lt;｜tool▁sep｜&gt;tool_call_arguments&lt;｜tool▁call▁end｜&gt;{additional_tool_calls}&lt;｜tool▁calls▁end｜&gt;
+
+Where:
+- `tool_call_name` must be an exact match to one of the available tools
+- `tool_call_arguments` must be valid JSON that strictly follows the tool's Parameters Schema
+- For multiple tool calls, chain them directly without separators or spaces
+</code></pre>
+<h3 id="code-agent">Code-Agent</h3>
+<p>We support various code agent frameworks. Please refer to the above toolcall format to create your own code agents. An example is shown in <code>assets/code_agent_trajectory.html</code>.</p>
+<h3 id="search-agent">Search-Agent</h3>
+<p>We design a specific format for searching toolcall in thinking mode, to support search agent. </p>
+<p>For complex questions that require accessing external or up-to-date information, DeepSeek-V3.1 can leverage a user-provided search tool through a multi-turn tool-calling process.</p>
+<p>Please refer to the <code>assets/search_tool_trajectory.html</code> and <code>assets/search_python_tool_trajectory.html</code> for the detailed template.</p>
+<h2 id="evaluation">Evaluation</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Benchmark (Metric)</th>
+<th>DeepSeek V3.1-NonThinking</th>
+<th>DeepSeek V3 0324</th>
+<th>DeepSeek V3.1-Thinking</th>
+<th>DeepSeek R1 0528</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>MMLU-Redux (EM)</td>
+<td>91.8</td>
+<td>90.5</td>
+<td>93.7</td>
+<td>93.4</td>
+</tr>
+<tr>
+<td></td>
+<td>MMLU-Pro (EM)</td>
+<td>83.7</td>
+<td>81.2</td>
+<td>84.8</td>
+<td>85.0</td>
+</tr>
+<tr>
+<td></td>
+<td>GPQA-Diamond (Pass@1)</td>
+<td>74.9</td>
+<td>68.4</td>
+<td>80.1</td>
+<td>81.0</td>
+</tr>
+<tr>
+<td></td>
+<td>Humanity's Last Exam (Pass@1)</td>
+<td>-</td>
+<td>-</td>
+<td>15.9</td>
+<td>17.7</td>
+</tr>
+<tr>
+<td>Search Agent</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>BrowseComp</td>
+<td>-</td>
+<td>-</td>
+<td>30.0</td>
+<td>8.9</td>
+</tr>
+<tr>
+<td></td>
+<td>BrowseComp_zh</td>
+<td>-</td>
+<td>-</td>
+<td>49.2</td>
+<td>35.7</td>
+</tr>
+<tr>
+<td></td>
+<td>Humanity's Last Exam (Python + Search)</td>
+<td>-</td>
+<td>-</td>
+<td>29.8</td>
+<td>24.8</td>
+</tr>
+<tr>
+<td></td>
+<td>SimpleQA</td>
+<td>-</td>
+<td>-</td>
+<td>93.4</td>
+<td>92.3</td>
+</tr>
+<tr>
+<td>Code</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>LiveCodeBench (2408-2505) (Pass@1)</td>
+<td>56.4</td>
+<td>43.0</td>
+<td>74.8</td>
+<td>73.3</td>
+</tr>
+<tr>
+<td></td>
+<td>Codeforces-Div1 (Rating)</td>
+<td>-</td>
+<td>-</td>
+<td>2091</td>
+<td>1930</td>
+</tr>
+<tr>
+<td></td>
+<td>Aider-Polyglot (Acc.)</td>
+<td>68.4</td>
+<td>55.1</td>
+<td>76.3</td>
+<td>71.6</td>
+</tr>
+<tr>
+<td>Code Agent</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>SWE Verified (Agent mode)</td>
+<td>66.0</td>
+<td>45.4</td>
+<td>-</td>
+<td>44.6</td>
+</tr>
+<tr>
+<td></td>
+<td>SWE-bench Multilingual (Agent mode)</td>
+<td>54.5</td>
+<td>29.3</td>
+<td>-</td>
+<td>30.5</td>
+</tr>
+<tr>
+<td></td>
+<td>Terminal-bench (Terminus 1 framework)</td>
+<td>31.3</td>
+<td>13.3</td>
+<td>-</td>
+<td>5.7</td>
+</tr>
+<tr>
+<td>Math</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>AIME 2024 (Pass@1)</td>
+<td>66.3</td>
+<td>59.4</td>
+<td>93.1</td>
+<td>91.4</td>
+</tr>
+<tr>
+<td></td>
+<td>AIME 2025 (Pass@1)</td>
+<td>49.8</td>
+<td>51.3</td>
+<td>88.4</td>
+<td>87.5</td>
+</tr>
+<tr>
+<td></td>
+<td>HMMT 2025 (Pass@1)</td>
+<td>33.5</td>
+<td>29.2</td>
+<td>84.2</td>
+<td>79.4</td>
+</tr>
+</tbody>
+</table></div>
+<p>Note: 
+- Search agents are evaluated with our internal search framework, which uses a commercial search API + webpage filter + 128K context window. Seach agent results of R1-0528 are evaluated with a pre-defined workflow. </p>
+<ul>
+<li>
+<p>SWE-bench is evaluated with our internal code agent framework.</p>
+</li>
+<li>
+<p>HLE is evaluated with the text-only subset.</p>
+</li>
+</ul>
+<h3 id="usage-example">Usage Example</h3>
+<pre><code class="language-python">import transformers
+
+tokenizer = transformers.AutoTokenizer.from_pretrained(&quot;deepseek-ai/DeepSeek-V3.1&quot;)
+
+messages = [
+    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are a helpful assistant&quot;},
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Who are you?&quot;},
+    {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;&lt;think&gt;Hmm&lt;/think&gt;I am DeepSeek&quot;},
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;1+1=?&quot;}
+]
+
+tokenizer.apply_chat_template(messages, tokenize=False, thinking=True, add_generation_prompt=True)
+# '&lt;｜begin▁of▁sentence｜&gt;You are a helpful assistant&lt;｜User｜&gt;Who are you?&lt;｜Assistant｜&gt;&lt;/think&gt;I am DeepSeek&lt;｜end▁of▁sentence｜&gt;&lt;｜User｜&gt;1+1=?&lt;｜Assistant｜&gt;&lt;think&gt;'
+
+tokenizer.apply_chat_template(messages, tokenize=False, thinking=False, add_generation_prompt=True)
+# '&lt;｜begin▁of▁sentence｜&gt;You are a helpful assistant&lt;｜User｜&gt;Who are you?&lt;｜Assistant｜&gt;&lt;/think&gt;I am DeepSeek&lt;｜end▁of▁sentence｜&gt;&lt;｜User｜&gt;1+1=?&lt;｜Assistant｜&gt;&lt;/think&gt;'
+</code></pre>
+<h2 id="how-to-run-locally">How to Run Locally</h2>
+<p>The model structure of DeepSeek-V3.1 is the same as DeepSeek-V3. Please visit <a href="https://github.com/deepseek-ai/DeepSeek-V3">DeepSeek-V3</a> repo for more information about running this model locally.</p>
+<p><strong>Usage Recommendations:</strong></p>
+<ol>
+<li><strong>The <code>mlp.gate.e_score_correction_bias</code>parameters should be loaded and computed in FP32 precision.</strong></li>
+<li><strong>Ensure that FP8 model weights and activations are formatted using the UE8M0 scale format.</strong></li>
+</ol>
+<h2 id="license">License</h2>
+<p>This repository and the model weights are licensed under the <a href="LICENSE">MIT License</a>.</p>
+<h2 id="citation">Citation</h2>
+<pre><code>@misc{deepseekai2024deepseekv3technicalreport,
+      title={DeepSeek-V3 Technical Report}, 
+      author={DeepSeek-AI},
+      year={2024},
+      eprint={2412.19437},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2412.19437}, 
+}
+</code></pre>
+<h2 id="contact">Contact</h2>
+<p>If you have any questions, please raise an issue or contact us at <a href="service@deepseek.com">service@deepseek.com</a>.</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/94b63c16f6b1.html">GLM-5</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/224a0c39bab5.html">GLM-5.3</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/22905c393a9c.html">GLM-5.3-Flash</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d060129a14be.html">GLM-5.2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f90617223e31.html">GLM-4.7</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/0edcfc955787.html">GLM-4.6V</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8cf89aee725c.html">GLM-4.5-Air</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/10aa23c70e91.html">Grok 2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/652b9a513303.html">Grok-1</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4224b4932376.html">Solar Open</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/32e837241209.html">tencent__Hy3__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/e9c250974ef4.html">tencent__Hunyuan-Large__README</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

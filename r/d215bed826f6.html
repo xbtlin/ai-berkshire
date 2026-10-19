@@ -1,0 +1,323 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数据中心&quot;管道工&quot;的四块业务 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/Marvell/index.html">Marvell</a></div><h1>数据中心&quot;管道工&quot;的四块业务</h1><div class="meta"><a href="../companies/Marvell/index.html">Marvell</a> ｜ 2026-07-13 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Marvell/%E3%80%8A%E7%9C%8B%E6%87%82%E8%BF%88%E5%A8%81%E5%B0%94%E3%80%8B/02-%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F-%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E7%AE%A1%E9%81%93%E5%B7%A5%E7%9A%84%E5%9B%9B%E5%9D%97%E4%B8%9A%E5%8A%A1.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">先看收入全景</a></li>
+<li><a href="#asiccustom-xpu">产品线一：定制 ASIC（Custom XPU）</a><ul>
+<li><a href="#_2">这是什么</a></li>
+<li><a href="#_3">迈威尔在里面做什么</a></li>
+<li><a href="#_4">核心数据</a></li>
+<li><a href="#_5">关键判断</a></li>
+</ul>
+</li>
+<li><a href="#optical-dsp">产品线二：光学互连（Optical DSP）</a><ul>
+<li><a href="#_6">这是什么</a></li>
+<li><a href="#_7">核心数据</a></li>
+<li><a href="#_8">关键判断</a></li>
+</ul>
+</li>
+<li><a href="#dpu">产品线三：网络交换与 DPU</a><ul>
+<li><a href="#_9">这是什么</a></li>
+<li><a href="#_10">关键判断</a></li>
+</ul>
+</li>
+<li><a href="#_11">传统业务：正在被主动缩减</a></li>
+<li><a href="#_12">毛利率告诉你的真相</a></li>
+<li><a href="#_13">迈威尔的生意本质：一句话定义</a></li>
+<li><a href="#_14">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂迈威尔》系列 · 第 02 篇 · 商业模式
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">先看收入全景</h2>
+<p>很多人看迈威尔只看"AI 芯片公司"这四个字，但这家公司的钱究竟从哪里来、哪块在增长、哪块在萎缩——大多数人说不清楚。这篇把四块业务逐一拆开，搞清楚迈威尔到底是怎么赚钱的。</p>
+<p>迈威尔 FY2026 收入 <strong>81.95 亿美元</strong>，拆开看是这样的：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>收入</th>
+<th>占比</th>
+<th>同比增速</th>
+<th>性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据中心</td>
+<td><strong>~60 亿</strong></td>
+<td><strong>74%</strong></td>
+<td>+46%</td>
+<td>绝对核心</td>
+</tr>
+<tr>
+<td>企业网络</td>
+<td>~6.3 亿</td>
+<td>8%</td>
+<td>触底回升</td>
+<td>传统业务</td>
+</tr>
+<tr>
+<td>运营商基础设施</td>
+<td>~3.4 亿</td>
+<td>4%</td>
+<td>5G 放缓</td>
+<td>萎缩中</td>
+</tr>
+<tr>
+<td>消费者</td>
+<td>~3.2 亿</td>
+<td>4%</td>
+<td>稳定</td>
+<td>边缘业务</td>
+</tr>
+<tr>
+<td>汽车/工业</td>
+<td>~3.2 亿</td>
+<td>4%</td>
+<td>已出售</td>
+<td>剥离完毕</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>81.95 亿</strong></td>
+<td><strong>100%</strong></td>
+<td><strong>+42%</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>数据来源：Marvell FY2026 年报、Futurum Group</p>
+<p>一眼就能看出：<strong>迈威尔的故事就是数据中心的故事，其他四块加起来只占四分之一。</strong></p>
+<p>而数据中心内部，又可以拆成三条产品线。这三条线决定了迈威尔到底是什么样的公司。</p>
+<hr />
+<h2 id="asiccustom-xpu">产品线一：定制 ASIC（Custom XPU）</h2>
+<h3 id="_2">这是什么</h3>
+<p>ASIC = Application-Specific Integrated Circuit，专用集成电路。翻译成大白话：<strong>按客户需求定制设计的 AI 芯片</strong>。</p>
+<p>英伟达的 GPU 是"通用菜刀"——什么都能切，但不是最高效；定制 ASIC 是"专用手术刀"——只干一件事，但效率极高、功耗极低。</p>
+<p>超大规模云厂商为什么要定制芯片？三个原因：</p>
+<ol>
+<li><strong>降低对英伟达的依赖</strong>——不想被一家供应商卡脖子</li>
+<li><strong>提升特定工作负载的效率</strong>——推理场景下 ASIC 的性能功耗比可以比 GPU 高 3-5 倍</li>
+<li><strong>降低总体拥有成本（TCO）</strong>——大规模部署时，每瓦每美元的效率差异会被放大</li>
+</ol>
+<h3 id="_3">迈威尔在里面做什么</h3>
+<p>迈威尔不是从零开始设计整颗芯片——它提供<strong>关键 IP 模块</strong>（SerDes 高速接口、互连逻辑、封装方案等），跟客户的自研设计团队协作，最终整合成一颗完整的芯片。</p>
+<p>可以类比为：AWS 是建筑设计师，迈威尔是提供钢结构和管道系统的专业承包商。房子是 AWS 的，但核心骨架来自迈威尔。</p>
+<h3 id="_4">核心数据</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2026 定制 ASIC 年化收入</td>
+<td><strong>~15 亿美元</strong></td>
+</tr>
+<tr>
+<td>起步时间</td>
+<td>FY2025 接近零</td>
+</tr>
+<tr>
+<td>一年增速</td>
+<td><strong>从零到 15 亿</strong></td>
+</tr>
+<tr>
+<td>核心客户</td>
+<td>AWS（Trainium）、微软（Maia）、Google</td>
+</tr>
+<tr>
+<td>设计周期</td>
+<td><strong>3-4 年</strong>（一旦选定极难更换）</td>
+</tr>
+</tbody>
+</table></div>
+<p>数据来源：Marvell FY2026 Q4 财报电话会、Futurum Group</p>
+<h3 id="_5">关键判断</h3>
+<p><strong>好消息：</strong> 定制 ASIC 是迈威尔增速最快的业务，设计周期 3-4 年意味着客户一旦选定就被"锁定"——转换成本是真实的护城河。管理层预测这块业务到 FY2028 将产生 <strong>90-110 亿美元</strong>的年收入（来源：Marvell 管理层指引）。</p>
+<p><strong>坏消息：</strong> 这也是一门"看甲方脸色"的生意。AWS、Google 的年收入都在 <strong>1,000 亿美元</strong>以上，迈威尔 82 亿——议价能力不对等。毛利率 <strong>~61%</strong> 比英伟达的 <strong>75%+</strong> 低 15 个百分点，部分原因就是客户压价。</p>
+<p><strong>反方观点：</strong> 定制 ASIC 的"锁定"是双向的——客户锁定供应商，但供应商也被锁定在客户的技术路线上。如果 AWS 下一代芯片换了架构方向，迈威尔前几年的投入可能白费。而且 Google 已经有部分 TPU 自研经验，"客户变竞争对手"的风险始终存在。</p>
+<hr />
+<h2 id="optical-dsp">产品线二：光学互连（Optical DSP）</h2>
+<h3 id="_6">这是什么</h3>
+<p>AI 训练和推理需要成千上万颗芯片并行工作。这些芯片之间的数据传输速度，决定了整个系统的效率上限。光学互连就是<strong>连接这些芯片的"高速公路"</strong>。</p>
+<p>迈威尔的核心产品是 PAM4 光学 DSP 芯片——把电信号转换成光信号，在光纤中高速传输，再转回电信号。当前主流是 <strong>800G</strong>，下一代 <strong>1.6T</strong> 正在量产爬坡。</p>
+<h3 id="_7">核心数据</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>光学 DSP 全球市占率</td>
+<td><strong>60%+</strong></td>
+</tr>
+<tr>
+<td>技术代差</td>
+<td>领先竞争对手 <strong>1-2 代</strong></td>
+</tr>
+<tr>
+<td>当前产品</td>
+<td>800G PAM4（量产）、1.6T（送样）</td>
+</tr>
+<tr>
+<td>与英伟达合作</td>
+<td>1.6T 光互连集成 Rubin 架构，预计 2026 Q3 交付参考设计</td>
+</tr>
+</tbody>
+</table></div>
+<p>数据来源：Marvell IR、NVIDIA 公告</p>
+<h3 id="_8">关键判断</h3>
+<p><strong>好消息：</strong> 光学互连是迈威尔护城河最深的业务。<strong>60%+ 市占率 + 1-2 代技术领先</strong>——在半导体行业，这种组合意味着竞争对手很难在 3-5 年内追赶。英伟达选择跟迈威尔合作而不是自研，本身就是对这个壁垒的验证。</p>
+<p><strong>坏消息：</strong> 光学互连的 TAM（可寻址市场规模）远小于定制 ASIC。当前约 <strong>50 亿美元</strong>，即使到 2028 年增长到 <strong>150 亿+</strong>（来源：行业预测），也只是定制 ASIC 市场 <strong>408 亿美元</strong>的三分之一。</p>
+<p><strong>反方观点：</strong> 市占率 60% 听起来很美，但要注意两件事。第一，Coherent、Broadcom 等竞争对手正在加速追赶 1.6T 技术；第二，如果硅光子（Silicon Photonics）路线最终胜出，传统光学 DSP 的优势可能被绕过。迈威尔花 <strong>32.5 亿美元</strong>收购 Celestial AI 就是为了对冲这个风险——但 Celestial AI 的 Photonic Fabric 技术尚未商业化，FY2028 下半年才有收入（来源：Marvell 官方公告）。</p>
+<hr />
+<h2 id="dpu">产品线三：网络交换与 DPU</h2>
+<h3 id="_9">这是什么</h3>
+<p>除了定制 ASIC 和光学互连，迈威尔在数据中心还有两块产品：</p>
+<ol>
+<li><strong>网络交换芯片</strong>——数据中心内部的"交通指挥"，决定数据包怎么走</li>
+<li><strong>DPU（数据处理单元）</strong>——从 CPU 手中接管网络、存储、安全等"杂活"，让 CPU 专心做计算</li>
+</ol>
+<p>这两块业务是 2017-2021 年间通过收购 Cavium（<strong>60 亿美元</strong>）和 Innovium（<strong>11 亿美元</strong>）获得的。</p>
+<h3 id="_10">关键判断</h3>
+<p><strong>位置尴尬：</strong> 网络交换领域，博通是绝对霸主；DPU 领域，英伟达（BlueField）和 AMD 都在抢。迈威尔在这两个子领域都不是领导者。</p>
+<p><strong>价值在于组合：</strong> 单独看没什么了不起，但跟定制 ASIC + 光学互连打包卖给同一个客户时，"一站式方案"的整合价值就显现了。这也是迈威尔跟纯 ASIC 设计公司（如 Alchip、GUC）的差异所在。</p>
+<hr />
+<h2 id="_11">传统业务：正在被主动缩减</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>板块</th>
+<th>现状</th>
+<th>战略定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>企业网络</td>
+<td>~6.3 亿，触底回升</td>
+<td>维持现金流</td>
+</tr>
+<tr>
+<td>运营商基础设施</td>
+<td>~3.4 亿，5G 放缓</td>
+<td>自然萎缩</td>
+</tr>
+<tr>
+<td>消费者</td>
+<td>~3.2 亿，稳定</td>
+<td>不投入不退出</td>
+</tr>
+<tr>
+<td>汽车以太网</td>
+<td>已出售给英飞凌</td>
+<td><strong>25 亿美元现金到手</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>2025 年 8 月，迈威尔以 <strong>25 亿美元</strong>将汽车以太网业务卖给英飞凌（Infineon），税前收益 <strong>18 亿美元</strong>（来源：Marvell IR 公告）。这笔交易说明管理层的战略意图非常明确：<strong>砍掉一切非数据中心业务，All in AI 基础设施。</strong></p>
+<p><strong>反方观点：</strong> 砍掉传统业务的风险在于——如果 AI 数据中心支出出现周期性下滑（历史上半导体行业平均每 3-4 年一次下行周期），迈威尔没有"缓冲垫"。2024 年 FY2024 收入同比下降 <strong>7%</strong> 就是前车之鉴——当时数据中心还没起来，传统业务又在萎缩，两头吃亏。</p>
+<hr />
+<h2 id="_12">毛利率告诉你的真相</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>Non-GAAP 毛利率</th>
+<th>GAAP 毛利率</th>
+<th>差距来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>英伟达</td>
+<td><strong>75%+</strong></td>
+<td>~73%</td>
+<td>差距小（有机增长为主）</td>
+</tr>
+<tr>
+<td>博通</td>
+<td><strong>70%+</strong></td>
+<td>~60%</td>
+<td>大量收购摊销</td>
+</tr>
+<tr>
+<td>迈威尔</td>
+<td><strong>~61%</strong></td>
+<td><strong>~41%</strong></td>
+<td><strong>差距 20 个百分点</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>数据来源：各公司最新年报</p>
+<p>迈威尔 Non-GAAP 和 GAAP 毛利率之间 <strong>20 个百分点的差距</strong>，来自过去 10 年累计超过 <strong>200 亿美元</strong>的收购带来的无形资产摊销——Inphi（100 亿）、Cavium（60 亿）、Innovium（11 亿）、Celestial AI（32.5 亿）等。</p>
+<p>这意味着什么？</p>
+<ol>
+<li><strong>Non-GAAP 毛利率 61%</strong> 反映的是"芯片设计生意"的真实盈利能力——是 Fabless 半导体的正常水平，但不算突出</li>
+<li><strong>GAAP 毛利率 41%</strong> 反映的是"收购驱动增长"的代价——你可以说摊销是"非现金"的，但收购时花的真金白银是实打实的</li>
+<li><strong>跟英伟达 75% 的差距</strong>说明迈威尔不是"平台型"公司——它没有 CUDA 那样的软件生态护城河，定价权受制于大客户</li>
+</ol>
+<p><strong>反方观点：</strong> 有人会说"Non-GAAP 才是真实盈利能力"。但如果一家公司需要持续通过大额收购获取技术和客户，那收购成本就是这门生意的一部分。只看 Non-GAAP 就像只看"经常性利润"而忽略"经常性收购支出"——长期看两者不可分割。</p>
+<hr />
+<h2 id="_13">迈威尔的生意本质：一句话定义</h2>
+<p>把上面的拆解放在一起：</p>
+<blockquote>
+<p><strong>迈威尔 = AI 数据中心的"高级管道工"——帮超大规模云厂商设计定制芯片、提供芯片之间的高速光互连、整合网络和存储功能。不做最贵的活（GPU），做最关键但最不被注意的活（互连 + 定制设计）。</strong></p>
+</blockquote>
+<p>这门生意的特点是：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>优势</th>
+<th>劣势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>客户一旦选定难以更换（转换成本高）</td>
+<td>客户极度集中（3-4 家云厂商）</td>
+</tr>
+<tr>
+<td>AI 需求驱动结构性增长</td>
+<td>增长依赖客户资本支出周期</td>
+</tr>
+<tr>
+<td>光学互连技术领先 1-2 代</td>
+<td>毛利率受限于大客户议价能力</td>
+</tr>
+<tr>
+<td>管理层收购整合能力一流</td>
+<td>GAAP 与 Non-GAAP 利润差距巨大</td>
+</tr>
+<tr>
+<td>英伟达 20 亿投资验证生态价值</td>
+<td>在定制 ASIC 市场份额远低于博通</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>如果用段永平的框架——这是不是"对的生意"？</strong></p>
+<p>答案偏向"中上"：有真实的技术壁垒和客户锁定，但本质上是 <strong>"大客户外包设计"</strong>，议价能力有限，自主权不如拥有自研生态的英伟达或有广泛客户基础的博通。</p>
+<hr />
+<h2 id="_14">下期预告</h2>
+<p>下一篇，我们聚焦迈威尔最核心的增长引擎——<strong>AI 定制芯片</strong>。</p>
+<p>要回答的几个尖锐问题：</p>
+<ul>
+<li>定制 ASIC 市场真有 400 亿美元那么大吗？谁的数据可信？</li>
+<li>迈威尔 15% 市占率对比博通 55-70%——差距能缩小吗？</li>
+<li>AWS、微软、Google 三大客户——哪个最稳、哪个最危险？</li>
+<li>管理层说 FY2028 收入 150 亿——需要什么条件才能兑现？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂迈威尔》系列第 02 篇。后续 2 篇将陆续推出。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/d514405aeff0.html">迈威尔科技（NASDAQ: MRVL）投资研究报告</a><div class="meta">2026-06-24 · 研究</div></li><li><a href="../r/547aa4e64604.html">Marvell Technology (NASDAQ: MRVL) — 综合数据收集</a><div class="meta">2026-06-23 · 底稿</div></li><li><a href="../r/671702127561.html">58 倍 PE 在赌什么</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/e6b056a6ae64.html">定制芯片的黄金时代与博通之战</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/d35fc1832e19.html">迈威尔——定制芯片赛道的关键玩家</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/a1eb3639c2c7.html">Marvell Technology (MRVL) 投资研究报告</a><div class="meta">2026-05-16 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

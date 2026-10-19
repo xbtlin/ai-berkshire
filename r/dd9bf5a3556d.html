@@ -1,0 +1,1201 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>短剧与AI短剧深度研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/短剧与AI短剧研究-20261019/index.html">短剧与AI短剧研究-20261019</a></div><h1>短剧与AI短剧深度研究报告</h1><div class="meta"><a href="../topics/短剧与AI短剧研究-20261019/index.html">短剧与AI短剧研究-20261019</a> ｜ 2026-10-19 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%9F%AD%E5%89%A7%E4%B8%8EAI%E7%9F%AD%E5%89%A7%E7%A0%94%E7%A9%B6-20261019/%E7%9F%AD%E5%89%A7%E4%B8%8EAI%E7%9F%AD%E5%89%A7%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261019.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">研究边界与偏误自查</a></li>
+<li><a href="#_2">第一步：我们研究的究竟是什么</a></li>
+<li><a href="#_3">第二步：短剧发展到哪一步了</a><ul>
+<li><a href="#_4">国内：大众化已得到验证，市场规模仍有统计分歧</a></li>
+<li><a href="#_5">用户规模比“千亿市场”更能证明需求，但仍要看分母</a></li>
+<li><a href="#_6">海外：扩张真实，新增下载与新增收入开始分化</a></li>
+</ul>
+</li>
+<li><a href="#_7">第三步：钱怎么来，又流向哪里</a><ul>
+<li><a href="#_8">三种模式，三种盈利条件</a></li>
+<li><a href="#_9">一组完整成本模型：制作成本降七成，利润仍可能下降</a></li>
+<li><a href="#_10">要看项目组合，不能只看爆款</a></li>
+</ul>
+</li>
+<li><a href="#ai">第四步：AI短剧走到了哪一步</a><ul>
+<li><a href="#_11">三层应用的成熟度不同</a></li>
+<li><a href="#_12">证据要按离现金的远近排列</a></li>
+<li><a href="#_13">具体案例：成功与失败都要进入样本</a></li>
+<li><a href="#_14">技术进步的经济价值，在于可控和可用</a></li>
+<li><a href="#_15">激励会推动供给，不能替代需求验证</a></li>
+</ul>
+</li>
+<li><a href="#_16">第五步：产业链中谁可能留住利润</a><ul>
+<li><a href="#_17">主要主体及受益纯度</a></li>
+<li><a href="#_18">护城河要看能否检验</a></li>
+<li><a href="#_19">四家上市公司的财务验证</a></li>
+<li><a href="#_20">管理层要用资金去向评价</a></li>
+</ul>
+</li>
+<li><a href="#_21">第六步：已经发生的影响，和暂时不能确认的影响</a></li>
+<li><a href="#_22">第七步：未来十年，最可能改变什么</a><ul>
+<li><a href="#20262028">2026—2028年：从拼生成能力，转向拼可交付内容</a></li>
+<li><a href="#20292031">2029—2031年：更小的受众也可能支持完整作品</a></li>
+<li><a href="#20322036">2032—2036年：短剧、动画和互动娱乐的边界可能变模糊</a></li>
+<li><a href="#_23">一个可复算的十年情景框架</a></li>
+<li><a href="#_24">各环节的十年可能结果</a></li>
+</ul>
+</li>
+<li><a href="#_25">第八步：最强反方论证与风险</a></li>
+<li><a href="#_26">第九步：怎样把研究变成投资判断</a><ul>
+<li><a href="#_27">先问现金流归谁，再问价格是否划算</a></li>
+<li><a href="#_28">用反向估值约束想象</a></li>
+<li><a href="#_29">空仓与已有持仓，行动不同</a></li>
+<li><a href="#_30">建议每季度更新的指标</a></li>
+</ul>
+</li>
+<li><a href="#_31">数据来源与审计说明</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>研究日与信息截止：2026年10月19日，北京时间。财务主要采用2025年年报、2026年中报；用户与市场数据逐项注明统计期。2026全年数字均保留预测标签。范围：中国市场为主，兼及海外竖屏剧、AI漫剧及相关上市公司；未来推演覆盖2026—2036年。本文为行业研究，不以未经核验的当日股价给出买入价格。来源编号集中列于文末，模型和审计材料随报告保存。</p>
+</blockquote>
+<p>短剧已经成为规模可观的日常娱乐消费。AI又把它推向供给更丰富、测试更快、题材更广的新阶段。但制作成本下降之后，最重要的投资问题变成：观众是否继续看，谁能以合理成本找到观众，以及消费者和广告主付的钱最终留在谁的账上。</p>
+<p><strong>本文的核心判断：短剧的需求成立，AI的生产力价值也成立；普通内容生产者因此获得长期超额利润，尚未成立。</strong> 更值得追踪的是自有分发、持续可开发的IP、内容经营体系，以及能在竞争中保住毛利的工具服务。下文先呈现证据，再讨论十年影响和投资取舍。</p>
+<h2 id="_1">研究边界与偏误自查</h2>
+<p>行业公开信息的强项是用户、播放、供给和平台增长，弱项是扣除投流后的利润、现金回款与失败项目。本文将数据分为四类：法规与财报、第三方监测与估算、企业自报案例、本文情景假设。来源可靠程度与经济结论可靠程度分开评价：财报可以证明收入发生，未必能证明新增业务赚钱。</p>
+<p>全文遵守四条边界：同一机构被多家媒体转载不算多份独立测量；上线量不代表观看份额；播放与充值不代表净收入；平台采购、制片收入与广告支出不能层层相加后称为终端市场。对于缺乏公开数据的变量，列出缺口，不用小数点制造确定性。</p>
+<hr />
+<h2 id="_2">第一步：我们研究的究竟是什么</h2>
+<p>短剧的商业本质，是通过连续叙事和高频情节反馈，把观众的注意力转化为直接付费、广告收入或品牌营销效果。它既是内容商品，也是获客和留存工具。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>概念</th>
+<th>本文定义</th>
+<th>最容易发生的误读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>微短剧</td>
+<td>有连续故事的短篇剧集；国内新规法律定义为单集少于20分钟</td>
+<td>把所有几秒钟短视频都列入短剧</td>
+</tr>
+<tr>
+<td>竖屏短剧</td>
+<td>适合手机纵向观看的连续剧，是微短剧的重要形态</td>
+<td>认为微短剧只能竖屏、只能一分钟</td>
+</tr>
+<tr>
+<td>AI辅助真人剧</td>
+<td>实拍为主体，AI用于剧本辅助、分镜、特效、配音、翻译、营销素材</td>
+<td>把使用过AI的剧都算“全AI制作”</td>
+</tr>
+<tr>
+<td>AI漫剧</td>
+<td>利用生成图像、动画、语音制作叙事作品，动态程度差异很大</td>
+<td>把动态漫画与高质量真人拟真剧的成本直接比较</td>
+</tr>
+<tr>
+<td>AI真人拟真剧</td>
+<td>主体角色、表演与镜头主要由生成模型形成</td>
+<td>把少数高质量片段等同于全剧稳定交付</td>
+</tr>
+<tr>
+<td>互动、个性化剧</td>
+<td>观众可以影响情节、角色或版本；可能与游戏、陪伴产品融合</td>
+<td>把技术演示当成熟订阅生意</td>
+</tr>
+</tbody>
+</table></div>
+<p>监管定义来自已生效的《微短剧发展管理办法》；经营统计则各有边界。因此“AI短剧份额”必须进一步问：是作品数量、分钟数、观看时长、收入，还是利润的份额。[S24]</p>
+<hr />
+<h2 id="_3">第二步：短剧发展到哪一步了</h2>
+<h3 id="_4">国内：大众化已得到验证，市场规模仍有统计分歧</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>统计期与机构</th>
+<th style="text-align: right;">披露规模，人民币</th>
+<th>数据性质</th>
+<th>可以怎样使用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>艾媒，2022年</td>
+<td style="text-align: right;">101.7亿元</td>
+<td>历史市场估算</td>
+<td>判断早期市场量级</td>
+</tr>
+<tr>
+<td>艾媒，2023年</td>
+<td style="text-align: right;">373.9亿元</td>
+<td>当年报告估算</td>
+<td>与同一机构序列观察扩张</td>
+</tr>
+<tr>
+<td>艾媒，2024年</td>
+<td style="text-align: right;">504.4亿元</td>
+<td>市场估算</td>
+<td>不能理解为全行业审计收入</td>
+</tr>
+<tr>
+<td>艾媒，2025年</td>
+<td style="text-align: right;">677.9亿元</td>
+<td>2025年12月1日发布的全年估算</td>
+<td>保留当时预测性质</td>
+</tr>
+<tr>
+<td>DataEye，2025年</td>
+<td style="text-align: right;">1000亿元</td>
+<td>微短剧与漫剧合计产值估算</td>
+<td>产品与资金流边界不同</td>
+</tr>
+<tr>
+<td>DataEye，2026年</td>
+<td style="text-align: right;">1210亿元</td>
+<td>全年预测</td>
+<td>不能称为已经实现</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：[S01—S03]。艾媒2025页面的中文使用“达”，但英文明确为预测，且发布日期早于年底。本文采取更谨慎的表述。</p>
+<p>最值得注意的脚注在DataEye报告：其2025年免费短剧市场估算为533亿元，<strong>统计中除广告收入，还纳入平台资本投入</strong>。[S03] 这意味着一些“市场规模”描述的是产业活动和投入，并不等于消费者与外部广告主创造的最终收入。不能拿这类规模直接乘一个净利率，给整个行业估值。</p>
+<p>本文认可国内已经是数百亿至千亿元量级的产业，但不把不同口径拼成一条高增长曲线。677.9亿元和1000亿元之间的差额，也没有证据全部归因于AI。短剧规模超过电影票房的流行比较，同样受到广告、资本投入与售票收入不同口径的影响。</p>
+<h3 id="_5">用户规模比“千亿市场”更能证明需求，但仍要看分母</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">已核实数值</th>
+<th>统计期与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNNIC微短剧用户</td>
+<td style="text-align: right;">6.26亿人，网民占比55.8%</td>
+<td>2025年6月，调查口径</td>
+</tr>
+<tr>
+<td>QuestMobile短剧行业去重用户</td>
+<td style="text-align: right;">8.51亿</td>
+<td>2026年5月，渠道监测口径</td>
+</tr>
+<tr>
+<td>短剧独立App用户</td>
+<td style="text-align: right;">4.02亿</td>
+<td>同月；与小程序、内容平台用户重合</td>
+</tr>
+<tr>
+<td>红果免费短剧App月活</td>
+<td style="text-align: right;">3.56亿</td>
+<td>同月；不是付费人数或收入份额</td>
+</tr>
+<tr>
+<td>短剧App月人均使用时长</td>
+<td style="text-align: right;">26.9小时</td>
+<td>同月；按月活用户统计</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：[S04、S05]。CNNIC与QuestMobile方法不同，不能直接计算两组用户数据的同比。CNNIC原PDF是6.26亿，部分转载写成6.62亿；本文使用原文。月活用户可以跨App，渠道用户不可简单相加。</p>
+<p>这些数据及产品机制支持三个判断。第一，短剧已超出少数人尝鲜，用户需求不再需要靠个别爆款证明。第二，免费App为连续观看和反复回访提供了条件，独立入口可以积累用户关系；这是机制判断，尚非因果实验。第三，成熟市场的人口渗透不可能永久维持初期增速，未来要看时长、留存、变现和海外扩展。</p>
+<p>不要把用户规模理解为独占时间：一个人可以同时看红果、抖音、快手、长视频和直播。争夺的是同一天中的可支配时间，以及同一广告预算中的份额。</p>
+<h3 id="_6">海外：扩张真实，新增下载与新增收入开始分化</h3>
+<p>Sensor Tower的2026年报告估计，第一季度短剧App下载超过8.5亿次，同比增长约140%；应用内购买收入约7.5亿美元，同比增长约20%。DramaBox和ReelShort分别接近1.4亿美元；东南亚、拉美和印度分别贡献32%、23%、22%的下载。[S06]</p>
+<p>下载增速显著快于IAP收入，说明扩张越来越依靠新地区和新产品，不能继续默认每一个新增用户都拥有美国早期付费用户的价值。但收入是存量用户与新用户共同贡献、下载是流量指标，直接用两者相除并称为ARPU也不成立。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>机构与范围</th>
+<th style="text-align: right;">数字</th>
+<th>研究处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Omdia，全球微短剧</td>
+<td style="text-align: right;">2026年约140亿美元；2031年接近250亿美元</td>
+<td>2026年10月13日更新的预测，非全年实绩</td>
+</tr>
+<tr>
+<td>Deloitte，全球应用内微短剧收入</td>
+<td style="text-align: right;">2026年78亿美元</td>
+<td>较早发布的预测，与Omdia和Sensor Tower边界不同</td>
+</tr>
+<tr>
+<td>Sensor Tower，应用商店IAP</td>
+<td style="text-align: right;">2026年第一季度约7.5亿美元</td>
+<td>监测估算，不覆盖全部广告、网页支付与第三方安卓渠道</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：[S06—S08]。本文不把三个数字平均，也不把中国“产值”与海外IAP相加。Deloitte的预测明显高于当季商店IAP简单年化，但差异可能包含覆盖和模型假设，不能仅凭一个季度宣布预测实现或失败。</p>
+<p>Omdia对2025年第四季度美国手机端的分析显示，ReelShort每用户每天35.7分钟，高于Netflix的24.8分钟；但其手机月活约110万，Netflix约1200万。[S10] 这证明部分用户的观看强度，不证明短剧总观看量已经超过Netflix，更没有涵盖电视端。</p>
+<p>用户也不再能用“中年女性看霸总”概括。Omdia在2026年4月的市场调查中，美国微短剧用户男性占50%，英国为54%，巴西为29%。[S07] 它提示题材扩展与地域差异，不能拿某一市场画像指导所有地区。</p>
+<blockquote>
+<p>投资追问：如果下载继续高增长，但付费、广告单价和留存不增长，买到的到底是用户资产，还是不断重买的流量？</p>
+</blockquote>
+<hr />
+<h2 id="_7">第三步：钱怎么来，又流向哪里</h2>
+<h3 id="_8">三种模式，三种盈利条件</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>模式</th>
+<th>谁付钱</th>
+<th>制作或发行方收入</th>
+<th>决定利润的变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IAP、订阅</td>
+<td>观众</td>
+<td>解锁、会员与订阅收入，扣渠道费、退款等</td>
+<td>净付费转化、续费、获客成本、内容命中率</td>
+</tr>
+<tr>
+<td>IAA免费</td>
+<td>广告主</td>
+<td>平台广告收入，内容方取得采购款或分账</td>
+<td>有效观看、广告填充、净广告单价、分账规则</td>
+</tr>
+<tr>
+<td>品牌定制、IP授权</td>
+<td>品牌、平台或其他版权买方</td>
+<td>定制制作费、授权费及约定分成</td>
+<td>客户复购、授权边界、交付和回款</td>
+</tr>
+</tbody>
+</table></div>
+<p>国内免费化使内容方更依赖平台广告变现与采购结算：平台控制推荐、有效观看定义、广告销售与分账，议价权进一步增强。制片方可以获得保底，降低单片风险，也可能丧失客户数据和定价权。</p>
+<p>海外付费App则往往要先通过社交媒体买来用户，再用剧集和订阅收回成本。Sensor Tower对2024年的研究显示，ReelShort约70%的下载、DramaBox与ShortMax超过60%的下载来自付费渠道。[S09] 这是历史观察，不是对2026所有App的恒定比例，但足以说明“制作便宜”不是盈利充分条件。</p>
+<p><strong>正确的资金流检查：外部用户支付和广告主支出，先减退款、渠道费与获客，再减内容、运营、税费和必要再投资，最终才是可归属现金流。</strong> 同一个制作费可以同时是平台成本和工作室收入，不应在行业总收入里重复计算。平台给自己的App导流，也存在机会成本。</p>
+<h3 id="_9">一组完整成本模型：制作成本降七成，利润仍可能下降</h3>
+<p>下面是解释机制的假设模型，以原先一组用户创造100元终端收入为基准。渠道费率、获客费及各项成本均为假设，不代表行业平均，也不是任何公司的真实账本。三列保持同一项目规模；最后一列加入降价与竞价变化。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目，元</th>
+<th style="text-align: right;">原模式</th>
+<th style="text-align: right;">AI降本、其他不变</th>
+<th style="text-align: right;">AI降本后竞争加剧</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>终端收入</td>
+<td style="text-align: right;">100.00</td>
+<td style="text-align: right;">100.00</td>
+<td style="text-align: right;">90.00</td>
+</tr>
+<tr>
+<td>渠道费用，假设收入的15%</td>
+<td style="text-align: right;">15.00</td>
+<td style="text-align: right;">15.00</td>
+<td style="text-align: right;">13.50</td>
+</tr>
+<tr>
+<td>获客投放</td>
+<td style="text-align: right;">55.00</td>
+<td style="text-align: right;">55.00</td>
+<td style="text-align: right;">60.00</td>
+</tr>
+<tr>
+<td>内容制作</td>
+<td style="text-align: right;">15.00</td>
+<td style="text-align: right;">4.50</td>
+<td style="text-align: right;">4.50</td>
+</tr>
+<tr>
+<td>其他成本</td>
+<td style="text-align: right;">10.00</td>
+<td style="text-align: right;">10.00</td>
+<td style="text-align: right;">10.00</td>
+</tr>
+<tr>
+<td><strong>税前项目利润</strong></td>
+<td style="text-align: right;"><strong>5.00</strong></td>
+<td style="text-align: right;"><strong>15.50</strong></td>
+<td style="text-align: right;"><strong>2.00</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>制作成本下降70%，原总成本从95降至84.5，实际下降11.05%。如果竞争进一步带来收入下降10%、获客开支增加5元，利润反而从5元降至2元。模型证明的是利润传导条件，不能拿来预测每家公司的利润率。[M01]</p>
+<p>降本的第一阶段，先使用AI的工作室可能赚取技术差价。第二阶段，其他工作室跟进，平台降低采购价，广告竞价上升，观众享受更多免费内容。最终谁留住降本收益，取决于独占内容、品牌、自有用户和成本优势能否维持。</p>
+<p>免费模式也有清楚的上限。假设一名用户整月30天每天贡献6次广告机会，填充率80%，净eCPM为20元，则月广告收入仅2.88元；净eCPM降至10元则为1.44元。这里的eCPM按平台实际可取得收入定义，尚未扣内容与获客支出。这说明大量活跃用户也需要足够留存和低获客成本才能盈利，不能把“每月看很久”直接转换成高额收入。[M01]</p>
+<h3 id="_10">要看项目组合，不能只看爆款</h3>
+<p>内容项目存在失败率和现金时间差。采购IP、制作、投流通常先花钱，平台结算在后；被下架、退款或观众流失后，现金未必收得回来。一个成功项目回本，可能还没覆盖同期失败项目。</p>
+<p>应要求公司按同一批上线内容披露：总投入、最终上线数、付费回款、投流、退款、平台扣款、授权期限和回收期。若只披露最好的剧或流水榜，没有失败样本，无法估计可复制回报率。内容会计摊销、预付款和应收款也必须和经营现金流一起看。</p>
+<blockquote>
+<p>投资追问：如果停止买量、停止补贴，这家公司还剩多少观众、多少可重复收入？</p>
+</blockquote>
+<hr />
+<h2 id="ai">第四步：AI短剧走到了哪一步</h2>
+<h3 id="_11">三层应用的成熟度不同</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>应用层</th>
+<th>已经有用的环节</th>
+<th>仍需解决的问题</th>
+<th>本文判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>辅助真人制作</td>
+<td>脚本版本、预演、素材、翻译和局部特效</td>
+<td>审美把关、权利授权、跨镜头一致性</td>
+<td>最容易成为常规工作流，较少依赖观众是否接受全AI</td>
+</tr>
+<tr>
+<td>AI漫剧与风格化角色</td>
+<td>低成本测试题材，呈现奇幻、动作、异世界场景</td>
+<td>同质化、叙事、配音和人物持续性</td>
+<td>已有规模收入，盈利分布高度不均</td>
+</tr>
+<tr>
+<td>拟真真人和长叙事</td>
+<td>可生成越来越完整的镜头、对白和场面</td>
+<td>复杂交互、长期角色一致、可控修改与交付稳定</td>
+<td>商业案例扩大，但不能仅凭演示推断全行业替代</td>
+</tr>
+</tbody>
+</table></div>
+<p>这是经营成熟度判断，不是对模型性能的永久排序。字幕、审查、编辑、剪辑、配乐和权利处理不会因视频生成能力增强而自动消失。</p>
+<h3 id="_12">证据要按离现金的远近排列</h3>
+<ol>
+<li>技术演示证明能生成某个片段。</li>
+<li>上线和播放证明能够分发、有人接触。</li>
+<li>付费转化、广告回款或采购收入证明存在变现。</li>
+<li>扣除投流、失败项目、人工和权利费用后持续盈利，才证明商业模型可以复利。</li>
+</ol>
+<p>目前AI短剧已跨过前两级，部分公司和作品达到第三级。第四级缺少统一、透明且足够长的公开记录，不能因为有收入便宣布整个行业盈利模式已被验证。</p>
+<h3 id="_13">具体案例：成功与失败都要进入样本</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>案例</th>
+<th>可核实事实</th>
+<th>证明了什么</th>
+<th>仍不能证明什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《三星堆·未来启示录》</td>
+<td>2024年7月上线的机构制作AIGC科幻短剧</td>
+<td>早期连续叙事已进入公开发行</td>
+<td>未取得完整项目收入和成本</td>
+</tr>
+<tr>
+<td>《斩仙台真人AI版》</td>
+<td>2026年2月供应商受访称81集、12人约30天，算力约10万元</td>
+<td>已可组织完成较长连续剧</td>
+<td>算力支出不是全成本；采访自报未获独立审计</td>
+</tr>
+<tr>
+<td>阅文AI漫剧</td>
+<td>2025年下半年收入超过1亿元，年报披露</td>
+<td>正规公司已有商业收入</td>
+<td>未披露独立利润及完整现金回款</td>
+</tr>
+<tr>
+<td>阅文短剧与AI漫剧</td>
+<td>2026年上半年合计收入超过4.3亿元</td>
+<td>内容与IP变现继续扩大</td>
+<td>合计数字不能全算AI，也不等于分部净利润</td>
+</tr>
+<tr>
+<td>HOLYWATER的My Muse</td>
+<td>公司报告AI应用付费转化23.6%，真人My Drama为23.9%</td>
+<td>特定产品内，AI可以获得接近真人的付费转化</td>
+<td>用户与题材未随机分组，不能推出所有人无偏好或LTV相同</td>
+</tr>
+<tr>
+<td>《霍去病》成本宣传</td>
+<td>导演澄清3000元主要指算力，传播中“80集”及播放描述存在失真</td>
+<td>单片算力低不等于全剧总成本低</td>
+<td>不能据此得出3000元交付商业长剧</td>
+</tr>
+<tr>
+<td>爱奇艺《灵魂摆渡·浮生梦》系列</td>
+<td>官方称前两部首周收回制作成本，首月分账票房800万元</td>
+<td>既有IP与AI结合已有回收制作投入的案例</td>
+<td>这是邻接的AI网络电影案例；非短剧，也未证明扣除全部营销后的项目利润</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：[S13、S14、S18、S20、S21、S39、S40]。HOLYWATER为运营商自报；爱奇艺为平台自报，不等于第三方审计。后者用于观察技术向更长叙事扩展，不计入本文短剧市场规模。</p>
+<p>另一面，记者对AI漫剧创业者的采访记录了投入20万元、推出11部作品，上线一个月后仅取得几百元收益的个案，数字为受访者自报，不是银行到账证明。[S19] 它不能代表行业平均亏损率，但足以否定“只要会生成就能赚钱”。在成熟平台上，增加可供观看的分钟数与增加有价值的观看分钟数，是两件事。</p>
+<h3 id="_14">技术进步的经济价值，在于可控和可用</h3>
+<p>字节2026年7月发布的Seedance 2.5，官方介绍单次最长30秒生成、较丰富的参考输入及时间戳编辑，同时承认复杂物理和多人交互仍有不足。[S22] 单次时长增长能减少镜头拼接；局部修改可减少整段重做；角色参考能减少人物走样。这些能力比单纯分辨率更直接影响交付成本。</p>
+<p>截至本报告日，可灵也已推出4.0。官方英文公告称模型10月15日上线，支持单次最长30秒、组合参考和关键帧控制；同一公告把两分钟续写和企业API写为即将提供，本文不将预告当现成功能。[S23]</p>
+<p>上述是厂商技术说明，本文未进行统一盲测，不把厂商案例当跨模型客观排名。模型版本更新很快；对十年投资更有意义的问题是：同样质量下可用率提升多少、修改要付多少成本、角色资产是否可迁移、能否形成稳定交付。</p>
+<p>可用率的影响可以计算。设生成价格为每秒1元，生成素材中最终可采用比例为25%，则每分钟成片的纯生成成本为240元；可采用比例降到10%，成本变成600元。该计算已分摊失败生成支出，再加尚未包含的剧本、分镜、剪辑、配音、审核、权利和人工返工，才接近全成本。此处价格和可用率均为假设。[M01]</p>
+<p>因此，应比较“每分钟合格成片的全成本”，同时记录工作时长和质量，而不只比较API每秒报价。即使低质量素材的生成报价很低，也不代表观众愿意付费的连续叙事总成本同样低。</p>
+<h3 id="_15">激励会推动供给，不能替代需求验证</h3>
+<p>阅文火种计划中的1亿元是拟投入的专项股权投资安排，制作合约与资金扶持还有各自条件。[S28] 它不是每个创作者都能得到的无条件补贴。平台奖励可以帮助早期创作者试错，也会短期抬高收入和供给；分析项目是否能长久经营，要单独剔除一次性激励。</p>
+<blockquote>
+<p>投资追问：如果所有竞争者下个月也能用相同模型，这项技术优势还能持续多久？</p>
+</blockquote>
+<hr />
+<h2 id="_16">第五步：产业链中谁可能留住利润</h2>
+<pre><code class="language-text">故事、IP与角色权利
+        ↓ 授权与改编
+策划、编剧、实拍或AI生成、后期与合规
+        ↓ 内容采购、保底或分账
+发行App、短视频平台、长视频平台
+        ↓ 推荐、搜索、社交传播与买量
+观众注意力 → 用户支付／广告主支付／品牌定制
+
+共同支撑：视频模型、编辑工具、云算力、支付、版权与审核
+利润检验：每个环节的收入，扣除向其他环节支付的费用及再投资
+</code></pre>
+<h3 id="_17">主要主体及受益纯度</h3>
+<p>下表是代表性主体扫描，不是所有沾边公司的罗列，也不意味着表中公司已披露独立短剧利润。上市身份与“短剧业务可否单独购买”分开判断。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>环节</th>
+<th>代表主体</th>
+<th>能获得什么</th>
+<th>壁垒与投资边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>国内内容入口和广告</td>
+<td>字节：抖音、红果；快手1024.HK；腾讯0700.HK生态</td>
+<td>用户时间、广告、内容采购议价权</td>
+<td>分发和广告系统强；字节未直接上市，腾讯和快手均非纯短剧公司</td>
+</tr>
+<tr>
+<td>IP、改编与运营</td>
+<td>阅文0772.HK、掌阅603533.SH、中文在线300364.SZ</td>
+<td>授权、发行、分账与衍生</td>
+<td>独占且被观众认可的IP更有价值；库存数量不等于壁垒</td>
+</tr>
+<tr>
+<td>海外垂直App</td>
+<td>ReelShort/CMS、DramaBox/点众、My Drama/HOLYWATER</td>
+<td>订阅、IAP、广告和用户关系</td>
+<td>有自然回访才可能摆脱持续买量；多数缺少公开完整利润表</td>
+</tr>
+<tr>
+<td>长视频与专业制作</td>
+<td>爱奇艺IQ、腾讯视频、FOX/FOXA等</td>
+<td>片库复用、会员与广告、制作订单</td>
+<td>可以进入短剧，也面临原有观看时长被转移</td>
+</tr>
+<tr>
+<td>模型和制作工具</td>
+<td>可灵、Seedance、Google/Veo、Adobe、Runway等</td>
+<td>订阅、按量收费、企业服务</td>
+<td>技术快速迭代、模型可替换；上市母公司收入纯度差异大</td>
+</tr>
+<tr>
+<td>获客媒体</td>
+<td>Meta、Alphabet/YouTube、TikTok等</td>
+<td>广告预算和营销素材需求</td>
+<td>短剧是其广告主之一，不能以此重估整个集团</td>
+</tr>
+</tbody>
+</table></div>
+<p>主体关系与商业动作见[S11—S18、S29、S30]。FOX在2025年10月投资HOLYWATER，并承诺两年制作超过200个竖屏项目。[S17] 它说明传统影视集团已正式参与，但合同承诺不是已完成作品或已确认收入。</p>
+<h3 id="_18">护城河要看能否检验</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>潜在壁垒</th>
+<th>为什么可能成立</th>
+<th>什么会使它失效</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>自有分发与广告能力</td>
+<td>内容增加后，更容易把合适作品匹配给观众并卖出广告</td>
+<td>用户被新平台迁走；推荐被同质内容污染；获客依赖越来越高</td>
+</tr>
+<tr>
+<td>独占IP与角色品牌</td>
+<td>降低陌生内容的尝试成本，续作可复用已有受众</td>
+<td>改编没有留住用户；观众只认题材而不认IP；权利链有争议</td>
+</tr>
+<tr>
+<td>工业化内容组织</td>
+<td>能管理题材测试、制作、审核、发行和复盘</td>
+<td>流程被工具自动化复制；依靠少数人员或短期补贴</td>
+</tr>
+<tr>
+<td>模型与工作流</td>
+<td>更高成片率、更低修改成本、资产和协作体系</td>
+<td>能力趋同、价格战、开放模型替代、用户随时换模型</td>
+</tr>
+<tr>
+<td>跨市场经营</td>
+<td>本地语言、文化适配、支付、合规和营销经验</td>
+<td>仅翻译国内爽剧、没有本地用户洞察；平台直接进入</td>
+</tr>
+</tbody>
+</table></div>
+<p>Adobe已把可灵接入其产品体系。[S30] 这提供了一个双面信号：模型能扩大触达，客户入口也可能被编辑和工作流平台掌握。模型使用量上升不自动意味着模型方拥有长期定价权。</p>
+<h3 id="_19">四家上市公司的财务验证</h3>
+<p>表内均为人民币亿元。快手利润为集团经调整利润净额，阅文为Non-IFRS归母，掌阅为归母；<strong>不同利润口径不用于横向排名</strong>。全年与半年分列，也不将半年机械翻倍。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司与指标</th>
+<th style="text-align: right;">2024全年</th>
+<th style="text-align: right;">2025全年</th>
+<th style="text-align: right;">2025上半年</th>
+<th style="text-align: right;">2026上半年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>快手：集团收入</td>
+<td style="text-align: right;">1268.98</td>
+<td style="text-align: right;">1427.76</td>
+<td style="text-align: right;">676.54</td>
+<td style="text-align: right;">692.51</td>
+</tr>
+<tr>
+<td>快手：经调整利润净额</td>
+<td style="text-align: right;">177.16</td>
+<td style="text-align: right;">206.47</td>
+<td style="text-align: right;">101.98</td>
+<td style="text-align: right;">72.87</td>
+</tr>
+<tr>
+<td>掌阅：集团收入</td>
+<td style="text-align: right;">25.8330</td>
+<td style="text-align: right;">32.4274</td>
+<td style="text-align: right;">15.2607</td>
+<td style="text-align: right;">17.8379</td>
+</tr>
+<tr>
+<td>掌阅：归母净利润</td>
+<td style="text-align: right;">0.4929</td>
+<td style="text-align: right;">-1.7645</td>
+<td style="text-align: right;">-1.6014</td>
+<td style="text-align: right;">-0.5014</td>
+</tr>
+<tr>
+<td>掌阅：经营现金流</td>
+<td style="text-align: right;">-0.7502</td>
+<td style="text-align: right;">-2.3254</td>
+<td style="text-align: right;">-2.2718</td>
+<td style="text-align: right;">-1.1653</td>
+</tr>
+<tr>
+<td>阅文：集团收入</td>
+<td style="text-align: right;">81.2108</td>
+<td style="text-align: right;">73.6618</td>
+<td style="text-align: right;">31.9058</td>
+<td style="text-align: right;">35.3139</td>
+</tr>
+<tr>
+<td>阅文：Non-IFRS归母净利润</td>
+<td style="text-align: right;">11.4166</td>
+<td style="text-align: right;">8.5849</td>
+<td style="text-align: right;">5.0781</td>
+<td style="text-align: right;">2.5884</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：公司原始财报[S11—S14、S31、S32]；外部转录核对[S33—S35]。这些外部平台帮助发现抄录错误，财务底层仍是公司披露，不伪装为两套独立审计。</p>
+<p><strong>快手：同时拥有流量和工具，但股东收益不能只看可灵收入。</strong> 2026年6月，平台真人与AI短剧供给较1月增长超过5倍；第二季度短剧营销投放消耗同比增长超过100%。同季整个线上营销收入只增长4.4%。供给和投放扩张已发生，但它没有让集团广告同步翻倍。[S11]</p>
+<p>可灵第二季度收入超过8.5亿元，第一季度超过6.5亿元，两个季度披露下限合计超过15亿元。[S11、S36] 这是全用途视频工具收入，不是纯AI短剧收入。与此同时，快手上半年经调整利润下降28.5%。现有数据不支持用一个高速增长分项掩盖集团投入和利润压力。</p>
+<p>资本分配上，要把平台广告和可灵模型分别估值，再核对融资、员工激励、少数股权和持续资本支出。媒体援引2026年7月融资方案所述的充分摊薄持股约68.33%，有完成条件；本次未取得该融资原始PDF，因此仅作交易结构提示，不以此计算买入价。[S16] 任何将可灵全部价值加给快手、同时再加融资现金的算法都需排查重复计算。</p>
+<p><strong>掌阅：业务转型已经体现在收入，盈利仍受获客约束。</strong> 2025年短剧等衍生收入18.5494亿元，占收入57.20%；2026上半年为11.8510亿元，占66.44%。这是“短剧等衍生”合计，不能写成AI占比。[S12、S32]</p>
+<p>2026上半年公司毛利率约65.63%，销售费用率约62.17%，毛利扣销售费后只剩收入的约3.47%，尚未覆盖管理、研发等。这些是合并口径计算，销售费包含阅读和短剧推广，不能据此倒算短剧净利率。[M01、S12] 收入增长、亏损收窄与现金流仍负可以同时成立。改善投资判断需要看到现金回收，不只是题材增长。</p>
+<p><strong>阅文：拥有可开发的故事，但新媒介也替代旧收入。</strong> 2026上半年短剧与AI漫剧合计收入超过4.3亿元，而在线业务收入由同期19.854亿元降至18.400亿元。公司将部分变化归于免费内容及微信渠道从阅读向短剧、漫剧迁移。[S13] 因此不能把新业务收入全部视为净增量，也不能在传统IP估值中已计入改编收益后，再重复加一份“AI资产”。</p>
+<p>利润同比还受税务等因素影响：上半年Non-IFRS归母2.5884亿元仍包含约3亿元补税及滞纳金事项，并非已剔除后的结果。本文不把税务现金支出忽略，也不把净利下降全部归因于短剧竞争。独立短剧利润未披露，验证重点应是作者分成、改编与获客之后的归属现金流。[S13、S35]</p>
+<p><strong>中文在线：ReelShort与上市公司之间存在股权和会计边界。</strong> 2026中报列CMS间接持股49.24%，采用权益法；CMS收入不并入中文在线营业收入。中报披露的CMS经营数据只覆盖2026年1—3月，不是整个上半年。[S15] 所以“ReelShort全球流水×中文在线高净利率”并非有效估值方法。需要核对归属利润、现金分配、投资条款与争议结果。公司合并口径上半年归母亏损约0.43亿元，也不能反过来证明ReelShort单独亏损。[S15、S37]</p>
+<p>最后一个提醒来自欢瑞世纪：公司2026年10月披露，上半年AI短剧收入占未经审计收入不足1%，尚未形成规模效应。[S38] “开展AI短剧业务”与“AI足以改变公司价值”之间存在很长距离。</p>
+<h3 id="_20">管理层要用资金去向评价</h3>
+<p>对于快手，检验新增算力、研发和融资是否带来持续毛利及归属现金流；对于阅文，检验IP开发是否增加整体回报，而非只转移原有阅读收入；对于掌阅，检验推广预算扩大后能否形成留存资产；对于中文在线，检验参股收益能否变成上市股东可得现金。现有公开资料不足以给出全面管理层评级，本文不以创始人的AI表态替代资本配置证据。</p>
+<blockquote>
+<p>投资追问：我们究竟拥有最终消费者、独占权利，还是仅拥有随时可以被替代的生产环节？</p>
+</blockquote>
+<hr />
+<h2 id="_21">第六步：已经发生的影响，和暂时不能确认的影响</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>影响对象</th>
+<th>已有事实基础</th>
+<th>合理的经济解释</th>
+<th>暂不能确认</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>观众</td>
+<td>数亿用户、独立App和海外使用增加</td>
+<td>更多低门槛、细分题材内容；广告负担与时间占用也增加</td>
+<td>人均幸福改善多少、对其他娱乐净替代多少</td>
+</tr>
+<tr>
+<td>工作室与内容商</td>
+<td>AI项目上线、亿元级收入与低收益个案并存</td>
+<td>单次试错更便宜，竞争可能更密集</td>
+<td>行业平均利润率、存活率及AI造成的净变化</td>
+</tr>
+<tr>
+<td>流量平台</td>
+<td>快手短剧投放消耗增长</td>
+<td>更多发行商竞逐同一批注意力</td>
+<td>增量广告利润及对原有广告的挤出比例</td>
+</tr>
+<tr>
+<td>模型与工具</td>
+<td>可灵已确认营收增长</td>
+<td>视频生成已从演示走向商业服务</td>
+<td>短剧专属收入、长期净利润率和资本回报</td>
+</tr>
+<tr>
+<td>阅读与长视频</td>
+<td>阅文披露渠道迁移，传统影视机构进入</td>
+<td>新媒介同时带来IP复用和旧业务替代</td>
+<td>短剧单独导致电影、长视频收入下降多少</td>
+</tr>
+<tr>
+<td>劳动力与拍摄基地</td>
+<td>项目流程由实拍向混合制作演变</td>
+<td>每分钟需要的摄影、场地与执行劳动可能下降</td>
+<td>全国净失业或净新增岗位的可靠数字</td>
+</tr>
+</tbody>
+</table></div>
+<p>证据来自[S05、S11—S14、S17、S19]；表中因果解释属于本文推断。没有匹配对照和完整投入产出数据，就不能把同期长视频、电影或就业变化全部归到AI短剧。</p>
+<p>劳动问题尤其要区分岗位结构与总量。假设同质量每分钟所需劳动下降80%，成片总产量增加5倍，总劳动量仍可能不变；若产量只增加2倍，总劳动量则降至原来的40%。这些是假设计算，不是就业预测。[M01] 即使总工时不变，摄影、群演、场地工作人员和AI后期人员的收入也可能发生很大重新分配，转岗并不即时、也不无成本。</p>
+<p>对社会总经济的影响同样不能用短剧流水直接表示。部分支出从长视频、游戏或其他广告转移过来；消费者可能因价格降低而得到更多娱乐，这种福利增加也不必全部表现为行业收入。AI带来的生产率改进是真实机会，新增GDP、净就业和股东回报需要分别核算。</p>
+<hr />
+<h2 id="_22">第七步：未来十年，最可能改变什么</h2>
+<h3 id="20262028">2026—2028年：从拼生成能力，转向拼可交付内容</h3>
+<p>较高置信度的方向是：AI辅助成为更多团队的日常流程，漫剧与混合制作继续扩大；更丰富参考、局部编辑和声音控制降低返工。精品真人剧仍有位置。六家重点平台在2026年承诺至少60亿元支持优秀真人微短剧，其中抖音集团真人保底预算超过15亿元，两者不能相加，也不能当已支付金额。[S27]</p>
+<p>这说明当前经营选择并非全面放弃真人。平台会比较不同内容的留存和广告回报，资金可以同时流向AI供给和真人精品。近期投资最需要警惕的，是把平台早期补贴形成的订单视为永久需求。</p>
+<h3 id="20292031">2029—2031年：更小的受众也可能支持完整作品</h3>
+<p>这是中等置信度的推演：如果同质量交付成本继续下降，以前无法摊薄制作固定成本的地方语言、小众文化、专业兴趣和中腰部IP，会获得更多开发机会。内容测试可以从“完整拍完再发行”，向先验证角色、开篇和小规模受众、再追加投入演化。</p>
+<p>同时，低成本不是文化适配。欧美、拉美、印度与东南亚的语言、审美、支付和广告单价各异。一套国内剧本自动翻译，并不能保证海外获客回收。能反复验证本地内容与商业模型的团队，可能比单纯拥有生成能力的团队更有价值。</p>
+<p>Omdia预测2031年全球微短剧收入接近250亿美元。[S07] 它可以作为外部情景参照，不是未来已经确定的事实，更不意味着每家公司的收入按同样速度增长。</p>
+<h3 id="20322036">2032—2036年：短剧、动画和互动娱乐的边界可能变模糊</h3>
+<p>如果生成延迟下降、角色长期记忆可靠、审核和权利体系成熟，产品可能从固定剧集变成可选择剧情、可持续互动的角色体验。此时收费对象不再只是某一集，而可能是角色关系、互动时间、定制版本和社群身份。</p>
+<p>这条路径的上行空间大，置信度也低。它必须同时满足：用户反复回来、每次互动毛利为正、长程故事不崩、权利链清晰、风险能够控制。本文不给尚未验证的个性化剧加入确定性现金流；其商业归类也可能逐渐接近游戏或陪伴服务，届时需要重划市场边界。</p>
+<p>“所有人看不同版本”也有成本：共同讨论、明星认同和全民话题会减少。共享体验有自身价值，因此个性化和标准化大作品可能共存，而非单向替代。</p>
+<h3 id="_23">一个可复算的十年情景框架</h3>
+<p>先固定经济口径：终端用户净支付与外部广告收入，避免重复计入产业链交易。把2026收入指数设为100，近似写成：</p>
+<p><code>2036收入倍数 = 观看人群倍数 × 每人年度观看时长倍数 × 每观看小时变现倍数</code></p>
+<p>对于订阅，最后一个变量是把收入分摊到观看小时后的有效值，不表示平台一定按小时收费。下表所有乘数及AI份额都是本文假设；它们用于讨论条件，没有统计置信区间，也未赋予伪精确的发生概率。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设与结果</th>
+<th style="text-align: right;">受约束情景</th>
+<th style="text-align: right;">基准情景</th>
+<th style="text-align: right;">扩展情景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2036观看人群／2026</td>
+<td style="text-align: right;">1.25倍</td>
+<td style="text-align: right;">1.60倍</td>
+<td style="text-align: right;">2.00倍</td>
+</tr>
+<tr>
+<td>每人观看时长倍数</td>
+<td style="text-align: right;">1.20倍</td>
+<td style="text-align: right;">1.35倍</td>
+<td style="text-align: right;">1.60倍</td>
+</tr>
+<tr>
+<td>每小时变现倍数</td>
+<td style="text-align: right;">0.90倍</td>
+<td style="text-align: right;">1.00倍</td>
+<td style="text-align: right;">1.10倍</td>
+</tr>
+<tr>
+<td><strong>十年收入倍数</strong></td>
+<td style="text-align: right;"><strong>1.35倍</strong></td>
+<td style="text-align: right;"><strong>2.16倍</strong></td>
+<td style="text-align: right;"><strong>3.52倍</strong></td>
+</tr>
+<tr>
+<td>隐含名义年复合增长</td>
+<td style="text-align: right;">+3.05%</td>
+<td style="text-align: right;">+8.01%</td>
+<td style="text-align: right;">+13.41%</td>
+</tr>
+<tr>
+<td>若仅以Omdia的2026预测140亿美元校准，2036金额</td>
+<td style="text-align: right;">189亿美元</td>
+<td style="text-align: right;">302.4亿美元</td>
+<td style="text-align: right;">492.8亿美元</td>
+</tr>
+<tr>
+<td>AI为主体作品的产量份额假设</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">75%</td>
+<td style="text-align: right;">90%</td>
+</tr>
+<tr>
+<td>AI为主体作品的观看时长份额假设</td>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">45%</td>
+<td style="text-align: right;">70%</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：[M01]。金额行是对外部预测的条件换算：Omdia完整核算边界未完全公开，因此它不是对本文终端口径的精确测量。更稳健的是比较倍数；基期每下修10%，三个金额会同比例下修。AI份额指AI为主体制作，排除仅使用AI字幕等辅助的真人作品，并非可引用的行业预测。</p>
+<p>基准情景表达的是：全球观众拓展、每人观看小幅增加，但免费化和竞争使每小时变现没有提升。它仍意味着十年市场约翻一倍；<strong>不需要把早期翻倍增速延续十年，也不需要假设所有娱乐时间都被短剧夺走。</strong></p>
+<p>三个情景与公司利润没有一一对应关系。即使行业收入达到扩展情景，普通制作方也可能因采购压价而利润下降；在受约束情景中，具有品牌、低获客成本的头部公司仍可能通过抢份额增长。因此估值不能只选一个TAM，再指定市场份额和高利润率。</p>
+<h3 id="_24">各环节的十年可能结果</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>环节</th>
+<th>基准推演</th>
+<th>最重要的反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>普通可复制制作</td>
+<td>单位价格承压，规模不一定增加回报</td>
+<td>团队形成独特风格和客户复购，摆脱同质竞争</td>
+</tr>
+<tr>
+<td>顶级创意与角色品牌</td>
+<td>更多低成本试错和跨媒介变现机会</td>
+<td>大量生成内容降低受众忠诚，品牌无法持续</td>
+</tr>
+<tr>
+<td>分发平台</td>
+<td>在供给过剩中匹配与结算价值更突出</td>
+<td>新生成原生产品直接获得用户，旧平台入口被绕过</td>
+</tr>
+<tr>
+<td>视频模型</td>
+<td>用量增长，单价及技术优势受竞争侵蚀</td>
+<td>专有数据、工作流与可控性维持显著溢价</td>
+</tr>
+<tr>
+<td>传统影视</td>
+<td>混合制作降本，部分中低端项目被替代</td>
+<td>真人表演、明星与共享事件保有付费溢价</td>
+</tr>
+<tr>
+<td>算力基础设施</td>
+<td>总生成量增加可能带来需求</td>
+<td>模型效率提高快于需求增长，单位内容算力大幅下降</td>
+</tr>
+</tbody>
+</table></div>
+<p>最后一行尤其重要：每分钟算力成本下降与整个行业算力支出增长可以并存，但谁增长更快需观察。不能从短剧数量增加直接推导某一GPU公司的利润确定上涨。</p>
+<hr />
+<h2 id="_25">第八步：最强反方论证与风险</h2>
+<p>最强的反方不是“没人看短剧”，而是：“这是一个需求强、进入容易、内容寿命短、获客昂贵的行业。AI把供给再放大，平台和观众拿走大部分收益，投资者却按科技平台的倍数买入普通内容生意。”掌阅的合并费用结构、个别工作室收益远低于投入和模型持续投入，都使这个反方值得认真对待。</p>
+<p>同时，过度悲观也可能错过变化：AI已经获得收入，特定产品的付费转化接近真人；若低成本试错持续产生可复用IP，自然回访提高，内容经营就可能从一次性项目转为更稳定的系列资产。这一正方论点最终也要用现金证明。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>风险</th>
+<th>传导机制</th>
+<th>观察指标与应对</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容过剩、采购降价</td>
+<td>供给扩张快于有效需求</td>
+<td>每分钟报价、有效分账、自然流量；淘汰只靠补贴的模型</td>
+</tr>
+<tr>
+<td>获客竞价</td>
+<td>制作节省的预算被广告平台吸收</td>
+<td>同批用户LTV/CAC与回收期；不要只看流水</td>
+</tr>
+<tr>
+<td>广告周期与用户厌倦</td>
+<td>免费内容依赖广告单价、填充和耐受度</td>
+<td>净eCPM、留存、广告负担和退款</td>
+</tr>
+<tr>
+<td>模型替换与资本开支</td>
+<td>新模型降低旧供应商定价权，训练投入前置</td>
+<td>留存后毛利、资本开支、现金流和稀释</td>
+</tr>
+<tr>
+<td>权利与监管</td>
+<td>内容下架、重做、赔偿、算法或收费调整</td>
+<td>授权链、审核损失、标识、退款和投诉</td>
+</tr>
+<tr>
+<td>出海失误</td>
+<td>文化适配不足，高收入市场买量贵</td>
+<td>分地区贡献利润与留存，避免合并数字掩盖亏损</td>
+</tr>
+<tr>
+<td>会计与股权错配</td>
+<td>流水误作收入、参股误作并表、融资估值误作现金</td>
+<td>审阅财报附注与权益归属，核对可分配现金</td>
+</tr>
+</tbody>
+</table></div>
+<p>国内新规已于2026年9月1日施行：第34条要求AI制作剧集逐集明显提示，第37条限制诱导沉迷、过度消费的算法，第40条要求告知付费信息；三类作品有不同审核机制。本文不照搬旧规则投资阈值，也不把AI制作视为监管豁免。[S24]</p>
+<p>美国版权局强调人的作者贡献，纯模型产出与人的选择、编排、修改需区别；这不能直接套用到中国裁判，但会影响出海版权安排。[S25] SAG-AFTRA为竖屏项目设立专门协议，也说明低预算新形态仍需面对劳动与AI使用条件。[S26] 合规既可能帮助组织能力强的公司，也会增加这些公司的成本，不能笼统称为“只利好龙头”。</p>
+<hr />
+<h2 id="_26">第九步：怎样把研究变成投资判断</h2>
+<h3 id="_27">先问现金流归谁，再问价格是否划算</h3>
+<p>行业层面，本报告对需求成立给出较高信心，对AI继续改善制作效率给出较高信心，对未来利润集中到哪些公司给出中等信心，对2036年的具体金额及新交互产品给出较低信心。</p>
+<p>公司层面，研究优先级是：先研究有分发或独占IP、且能验证现金回报的公司；再研究已具收入规模但盈利尚未成熟的发行商；最后才考虑收入占比很低、主要靠概念解释估值的公司。这个顺序是尽调优先级，不是依据本报告日股价的买入排序。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>对象</th>
+<th>本期判断</th>
+<th>使判断改善的证据</th>
+<th>使判断恶化的证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>快手</td>
+<td>优先深入估值；平台与工具需分别核算</td>
+<td>可灵增长伴随毛利和归属现金改善；短剧拉动有绝对额披露</td>
+<td>投入、稀释和核心平台利润压力超过新增价值</td>
+</tr>
+<tr>
+<td>阅文</td>
+<td>优先跟踪IP净变现</td>
+<td>短剧增加全集团可分配现金，抵消阅读迁移</td>
+<td>授权和推广成本抬升，新业务仅替代旧收入</td>
+</tr>
+<tr>
+<td>掌阅</td>
+<td>盈利兑现观察名单</td>
+<td>连续现金流改善、留存提升且获客强度下降</td>
+<td>收入增长仍依赖高额投放，减值与现金流恶化</td>
+</tr>
+<tr>
+<td>中文在线</td>
+<td>权益与现金分配核查优先</td>
+<td>CMS及自有业务的归属利润和实际分红更透明</td>
+<td>股权争议、数据滞后、投资收益无法兑现</td>
+</tr>
+<tr>
+<td>海外纯App与初创工作室</td>
+<td>单独尽调，不以下载榜替代账本</td>
+<td>可审计收入、用户批次回收、自然流量与续费</td>
+<td>缺少失败项目数据、退款或获客支出失控</td>
+</tr>
+<tr>
+<td>AI短剧贡献极小的概念公司</td>
+<td>不因宣布入局提高内在价值</td>
+<td>业务达到可观察的收入和现金利润规模</td>
+<td>只更新合作和上线数量，长期不披露经济性</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_28">用反向估值约束想象</h3>
+<p>假设给一项成熟新增业务20倍可持续、归属于上市股东的年度自由现金流。表中先按业务100%归属计算，现金流率假设为15%，即扣除税费、营运资金占用和必要再投资后的股权自由现金流占收入的比例。这是研究用门槛，隐含5%的当期现金流收益率，不代表市场合理倍数已被证明。维持增长所需内容投入、算力和资本支出必须已扣除。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>为短剧或AI叙事额外支付的股权价值</th>
+<th style="text-align: right;">需要新增年度归属自由现金流</th>
+<th style="text-align: right;">在15%现金流率下需要新增收入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10亿元</td>
+<td style="text-align: right;">0.50亿元</td>
+<td style="text-align: right;">3.33亿元</td>
+</tr>
+<tr>
+<td>30亿元</td>
+<td style="text-align: right;">1.50亿元</td>
+<td style="text-align: right;">10.00亿元</td>
+</tr>
+<tr>
+<td>100亿元</td>
+<td style="text-align: right;">5.00亿元</td>
+<td style="text-align: right;">33.33亿元</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：[M01]。如果一家公司的AI收入只有几千万元，单凭“赛道千亿”难以解释几十亿元增量价值；参股业务应先算完整业务现金流，再核对持股、分红和其他权益条件，已经是归属口径的数据不得重复乘持股比例。对于低利润、不可持续业务，20倍假设也可能过高。</p>
+<p>这里估的是成熟当期现金流的价值。若收入和利润要到未来某年才实现，应对匹配币种、期限和风险的现金流折现，并计入达到该状态前的资金投入；不能把未来价值直接当今天价值。风险可以通过情景现金流处理，也可以通过适配折现率处理，但不能在多个位置重复惩罚同一风险。</p>
+<p>本轮没有完成各股票同一时点股价、股本、净债务和全业务估值的完整核对，因此不发布具体目标股价，也不声称某只股票现在便宜。这是行业研究的估值边界，不妨碍明确拒绝“市场规模大所以任何价格都可以买”的结论。</p>
+<h3 id="_29">空仓与已有持仓，行动不同</h3>
+<p>空仓者不必因技术更新而立即建立主题仓位。先取得公司全业务估值，再检验短剧带来的增量现金是否足以覆盖价格中的预期。尚无持续正现金流的纯制作或纯发行项目，更适合作为需要严控损失的试验投资，而不是用行业增长替代本金安全判断。</p>
+<p>已有快手、腾讯、阅文或其他相关持仓者，不应把行业研究直接转换为整个仓位的买卖决定。先把原有主业、新短剧业务和AI工具分开；记录新增利润是否抵消原业务被替代和额外投入。持有参股型标的，更要看钱何时到达上市主体。</p>
+<p>本文不在缺乏个人组合与现价估值的情况下给出固定主题仓位。可执行的纪律是：未经验证的AI短剧利润不作为重仓依据；每次增加主题溢价，都对应一条可复核的现金流证据。</p>
+<h3 id="_30">建议每季度更新的指标</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>层级</th>
+<th>应追踪的数据</th>
+<th>为什么优先</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求</td>
+<td>去重活跃、回访、完播与有效时长</td>
+<td>排除空下载、刷量和仅靠广告触达</td>
+</tr>
+<tr>
+<td>付费</td>
+<td>净付费率、续费、退款、不同用户批次LTV</td>
+<td>区分短期充值与长期价值</td>
+</tr>
+<tr>
+<td>免费变现</td>
+<td>净eCPM、填充、内容分账、补贴占比</td>
+<td>检验观看时长能否产生净收入</td>
+</tr>
+<tr>
+<td>获客</td>
+<td>同地区同渠道CAC、自然用户占比、回收期</td>
+<td>判断是否在反复购买同一批注意力</td>
+</tr>
+<tr>
+<td>制作</td>
+<td>合格成片全成本、人工时、返工、失败项目</td>
+<td>检验AI降本是否真实、可复制</td>
+</tr>
+<tr>
+<td>股东回报</td>
+<td>经营现金流、必要再投资、权益归属、稀释</td>
+<td>将行业景气连接到投资结果</td>
+</tr>
+</tbody>
+</table></div>
+<p>一条真正有分量的改善信号是：多个季度中，收入、自然回访与归属现金流同时改善，投放强度和补贴依赖下降。一条需要降低估值的信号是：供给和收入继续增加，现金回收却变慢，获客和再投资持续吞掉毛利。这比“又上线多少部AI剧”更接近投资者真正拥有的资产。</p>
+<hr />
+<h2 id="_31">数据来源与审计说明</h2>
+<p>来源编号用于定位证据。财报数字保留公司口径；机构预测不升级为事实；采访不外推为行业均值。模型统一以Decimal复算，并调用项目财务工具作辅助校验。随机抽检与重点复核材料见同目录<code>audit/</code>；审计检验来源、抄录、定义和算术，不认证预测、因果或投资回报。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>编号</th>
+<th>来源与时间</th>
+<th>主要用途和边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S01</td>
+<td><a href="https://www.iimedia.cn/c400/97005.html">艾媒2023年微短剧报告，2023-11-22</a></td>
+<td>早期规模估算；同源转载不算独立测量</td>
+</tr>
+<tr>
+<td>S02</td>
+<td><a href="https://www.iimedia.cn/c400/108129.html">艾媒2025消费调查，2025-12-01</a></td>
+<td>2024—2025规模；英文明确2025为预测</td>
+</tr>
+<tr>
+<td>S03</td>
+<td><a href="https://pdf.dfcfw.com/pdf/H3_AP202601211818183880_1.pdf">DataEye《2025年微短剧行业数据报告》，2026年1月，PDF第3—4页</a></td>
+<td>千亿产值、2026预测；免费市场含平台资本投入</td>
+</tr>
+<tr>
+<td>S04</td>
+<td><a href="https://cnnic.cn/NMediaFile/2025/0730/MAIN1753846666507QEK67ZS9DH.pdf">CNNIC第56次报告，2025年7月发布</a></td>
+<td>2025年6月6.26亿用户、55.8%</td>
+</tr>
+<tr>
+<td>S05</td>
+<td><a href="https://eu.36kr.com/zh/p/3914660062450823">QuestMobile署名《2026短剧营销行业报告》，2026-07-28</a></td>
+<td>2026年5月用户、渠道和时长监测；<a href="https://disc.static.szse.cn/disc/disk03/finalpage/2026-08-18/287edda1-b060-4aba-8f33-346f50dbd8d1.PDF">上市公司中报转引核对，第14页</a></td>
+</tr>
+<tr>
+<td>S06</td>
+<td><a href="https://sensortower.com/blog/state-of-short-drama-apps-2026-report">Sensor Tower：State of Short Drama Apps 2026，2026年6月</a></td>
+<td>第一季度下载、IAP、地区结构；商店监测估计</td>
+</tr>
+<tr>
+<td>S07</td>
+<td><a href="https://omdia.tech.informa.com/pr/2026/oct/men-account-for-54percent-of-uk-microdrama-users-challenging-industry-assumptions">Omdia：受众结构及全球规模更新，2026-10-13</a></td>
+<td>2026/2031收入预测；2026年4月用户调查</td>
+</tr>
+<tr>
+<td>S08</td>
+<td><a href="https://www.deloitte.com/global/en/about/press-room/2026-tmt-predictions.html">Deloitte：2026 TMT Predictions</a></td>
+<td>应用内微短剧收入预测，不能当实绩</td>
+</tr>
+<tr>
+<td>S09</td>
+<td><a href="https://sensortower.com/blog/short-drama-redefines-mobile-entertainment-and-challenges-games">Sensor Tower：Short-Drama Redefines Mobile Entertainment and Challenges Games，2025年</a></td>
+<td>2024年付费获客占比</td>
+</tr>
+<tr>
+<td>S10</td>
+<td><a href="https://omdia.tech.informa.com/pr/2026/feb/microdramas-overtake-streamers-on-mobile-engagement-says-omdia">Omdia：手机观看参与度，2026-02-23</a></td>
+<td>美国2025Q4手机使用，不能外推所有终端</td>
+</tr>
+<tr>
+<td>S11</td>
+<td><a href="https://ir.kuaishou.com/zh-hant/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji">快手2026Q2及中期官方业绩，2026-08-19</a>；<a href="https://ir.kuaishou.com/static-files/f1aadb37-caa1-4c1d-8294-15008c09067c">原始PDF</a></td>
+<td>集团财务、可灵、短剧营销消耗；收入与消耗分开</td>
+</tr>
+<tr>
+<td>S12</td>
+<td><a href="https://static.cninfo.com.cn/finalpage/2026-08-27/1225510832.PDF">掌阅2026半年报，2026-08-27</a></td>
+<td>收入、净利、现金流、销售费和衍生业务</td>
+</tr>
+<tr>
+<td>S13</td>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0811/2026081100262_c.pdf">阅文2026中期业绩，2026-08-11</a></td>
+<td>收入、利润口径、税务与渠道迁移</td>
+</tr>
+<tr>
+<td>S14</td>
+<td><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0423/2026042300391_c.pdf">阅文2025年报，2026-04-23，第8页</a></td>
+<td>下半年AI漫剧收入超过1亿元</td>
+</tr>
+<tr>
+<td>S15</td>
+<td><a href="https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF">中文在线2026半年报，2026-08-26，第6、8、26、157页</a></td>
+<td>CMS参股、49.24%、权益法及经营数据仅覆盖Q1</td>
+</tr>
+<tr>
+<td>S16</td>
+<td><a href="https://yuanchuang.caijing.com.cn/2026/0703/5168951.shtml">财经对可灵融资方案的报道，2026-07-03</a>；<a href="https://news.futunn.com/en/notice/307656482/1-discloseable-transactions-and-connectedtransactions-in-relation-to-the-subscription">富途公告页面</a></td>
+<td>次级证据；仅提示稀释结构，未据此给内在价值</td>
+</tr>
+<tr>
+<td>S17</td>
+<td><a href="https://www.foxcorporation.com/news/business/2025/fox-entertainment-deepens-creative-content-portfolio-and-audience-reach-with-strategic-investment-in-vertical-video-technology-platform-holywater/">FOX官方投资HOLYWATER公告，2025-10-09</a></td>
+<td>真实投资和两年制作承诺，非完成额</td>
+</tr>
+<tr>
+<td>S18</td>
+<td><a href="https://www.globenewswire.com/news-release/2026/07/23/3332522/0/en/holywater-tech-and-owl-co-publish-first-industry-report-on-the-vertical-series-audience.html">HOLYWATER与Owl &amp; Co官方新闻稿，2026-07-23</a></td>
+<td>产品付费转化自报；非随机对照实验</td>
+</tr>
+<tr>
+<td>S19</td>
+<td><a href="https://www.chinanews.com/cul/2026/06-17/10642242.shtml">中国新闻周刊原访，中新网，2026-06-17</a></td>
+<td>工作室低收益个案，非行业平均或银行回款证明</td>
+</tr>
+<tr>
+<td>S20</td>
+<td><a href="https://ep.ycwb.com/epaper/ycwb/resfile/2026-03-14/A07/ycwb20260314A07.pdf">羊城晚报《霍去病》澄清报道，2026-03-14，A07</a></td>
+<td>3000元仅算力、集数和播放传播失真</td>
+</tr>
+<tr>
+<td>S21</td>
+<td><a href="https://pages.iqiyi.com/p/scpr/63x0c1v6.html">爱奇艺官方《浮生梦》分账说明，2026-10-03</a></td>
+<td>网络电影邻接案例，平台自报制作成本回收</td>
+</tr>
+<tr>
+<td>S22</td>
+<td><a href="https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5">ByteDance Seed：Seedance 2.5，2026-07-31</a></td>
+<td>功能与厂商自认局限，非独立性能测试</td>
+</tr>
+<tr>
+<td>S23</td>
+<td><a href="https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-officially-launches-next-generation-kling-40-raising">快手官方Kling 4.0英文公告，2026-10-17刊载</a></td>
+<td>正文美国日期10月16日；称10月15日上线，预告功能单列</td>
+</tr>
+<tr>
+<td>S24</td>
+<td><a href="https://www.nrta.gov.cn/art/2026/7/31/art_113_73785.html">广电总局令第16号《微短剧发展管理办法》，2026-07-31</a></td>
+<td>2026-09-01实施；第2、5、17、34、37、40条</td>
+</tr>
+<tr>
+<td>S25</td>
+<td><a href="https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf">美国版权局AI版权适格报告，2025-01</a></td>
+<td>人的创作贡献与AI产出；不直接套用中国法</td>
+</tr>
+<tr>
+<td>S26</td>
+<td><a href="https://www.sagaftra.org/turning-industry-its-side-sag-aftra-goes-vertical-new-agreement">SAG-AFTRA竖屏协议介绍，2025-10-13</a>；<a href="https://www.sagaftra.org/sites/default/files/2026-06/Contract%20Bulletin%20-%20Verticals%20Agreement.pdf">2026年6月合同要点</a></td>
+<td>劳动协议与AI保护要求</td>
+</tr>
+<tr>
+<td>S27</td>
+<td><a href="https://www.cnsa.cn/art/2026/5/15/art_1955_48814.html">协会：六平台真人扶持计划，2026-05-15</a>；<a href="https://www.xinhuanet.com/tech/20260513/062380fa3e6c4e77963e587152e41e0e/c.html">新华社：抖音真人预算，2026-05-13</a></td>
+<td>60亿与15亿存在包含关系，均为预算承诺</td>
+</tr>
+<tr>
+<td>S28</td>
+<td><a href="https://aicomic.yuewen.com/activity/ai_animated_drama">阅文官方火种计划，2026-10-19访问</a></td>
+<td>专项股权投资与制作合约安排，不是普惠现金补贴</td>
+</tr>
+<tr>
+<td>S29</td>
+<td><a href="https://www.dramaboxdb.com/zhHans/business">DramaBox官方合作与法律主体页面，2026-10-19访问</a></td>
+<td>经营主体与业务介绍，不是合并财务审计</td>
+</tr>
+<tr>
+<td>S30</td>
+<td><a href="https://www.adobe.com/in/products/firefly/partner-models/kling-ai.html">Adobe官方可灵模型集成页，2026-10-19访问</a></td>
+<td>模型与制作工作流关系</td>
+</tr>
+<tr>
+<td>S31</td>
+<td><a href="https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-technology-announces-fourth-quarter-and-full-year-2025/">快手2025全年官方业绩，2026年3月</a></td>
+<td>2024—2025财务对比</td>
+</tr>
+<tr>
+<td>S32</td>
+<td><a href="https://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260424/94528c26874e441bb95c8f655a96a349.PDF">掌阅2025年报，2026-04-24</a>；<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0317/2026031700357_c.pdf">阅文2025业绩公告，2026-03-17</a></td>
+<td>年度收入、净利与现金流序列</td>
+</tr>
+<tr>
+<td>S33</td>
+<td><a href="https://companies.caixin.com/2026-08-20/102475879.html">财新：快手2026H1，2026-08-20</a>；<a href="https://www.itiger.com/news/1131665525">老虎转录2025业绩</a></td>
+<td>独立平台转录校验，底层仍为公司披露</td>
+</tr>
+<tr>
+<td>S34</td>
+<td><a href="https://www.yicai.com/news/103151687.html">第一财经：掌阅2025全年</a>；<a href="https://finance.sina.com.cn/stock/aiassist/yjbg/2026-08-26/doc-iniprytq2336500.shtml">新浪鹰眼2026H1</a>；<a href="https://www.ithome.com/0/994/653.htm">IT之家中期现金流</a></td>
+<td>财务数字交叉核对，不采用自动摘要的业务归类</td>
+</tr>
+<tr>
+<td>S35</td>
+<td><a href="https://stockpage.10jqka.com.cn/basicweb/176/HK0772/">同花顺阅文财务序列</a>；<a href="https://www.nbd.com.cn/articles/2026-08-12/4540090.html">每经中期报道，2026-08-12</a></td>
+<td>数值核对；调整利润以原始对账表为准</td>
+</tr>
+<tr>
+<td>S36</td>
+<td><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0527/2026052700437_c.pdf">快手2026Q1业绩公告，2026-05-27</a></td>
+<td>可灵第一季度收入下限</td>
+</tr>
+<tr>
+<td>S37</td>
+<td><a href="https://finance.sina.com.cn/stock/aiassist/yjbg/2026-08-25/doc-inippvuq2231764.shtml">新浪鹰眼：中文在线2026中报，2026-08-25</a></td>
+<td>合并亏损的交叉核对</td>
+</tr>
+<tr>
+<td>S38</td>
+<td><a href="https://static.cninfo.com.cn/finalpage/2026-10-13/1225601914.PDF">欢瑞世纪异常波动公告，2026-10-13披露</a></td>
+<td>AI短剧收入贡献不足1%，公司自述尚无规模效应</td>
+</tr>
+<tr>
+<td>S39</td>
+<td><a href="https://finance.sina.com.cn/stock/t/2026-02-12/doc-inhmpusi6914629.shtml">蓝鲸采访可梦AI，2026-02-12，新浪转载</a></td>
+<td>《斩仙台》集数、人员、周期及算力；供应商自报</td>
+</tr>
+<tr>
+<td>S40</td>
+<td><a href="https://paper.people.com.cn/hwbwap/html/2024-08/02/content_26072484.htm">人民日报海外版，2024-08-02</a></td>
+<td>《三星堆·未来启示录》公开上线</td>
+</tr>
+<tr>
+<td>M01</td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%9F%AD%E5%89%A7%E4%B8%8EAI%E7%9F%AD%E5%89%A7%E7%A0%94%E7%A9%B6-20261019/model.py">本报告模型</a>、<a href="../files/reports/%E7%9F%AD%E5%89%A7%E4%B8%8EAI%E7%9F%AD%E5%89%A7%E7%A0%94%E7%A9%B6-20261019/audit/model-results.json">计算结果</a></td>
+<td>全成本、IAA、生成可用率、十年情景与反向估值；均明确假设</td>
+</tr>
+</tbody>
+</table></div>
+<p>截至截止日，本文尚未取得行业完整净收入桥接、统一AI观看份额、全行业利润分布，以及所有公司的独立短剧现金流。上述缺口限制精确估值，但不改变已由需求、项目和财报验证的产业变化。本文供学习与研究使用。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/cc6fc5a60608.html">短剧与AI短剧研究</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/bc886716db84.html">数据与模型审计</a><div class="meta">2026-10-19 · 导读</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

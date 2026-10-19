@@ -1,0 +1,269 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>泡泡玛特与 MiniMax：五年回报与配置底稿 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/七公司五年回报与资金配置-20260906/index.html">七公司五年回报与资金配置-20260906</a></div><h1>泡泡玛特与 MiniMax：五年回报与配置底稿</h1><div class="meta"><a href="../topics/七公司五年回报与资金配置-20260906/index.html">七公司五年回报与资金配置-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E4%B8%83%E5%85%AC%E5%8F%B8%E4%BA%94%E5%B9%B4%E5%9B%9E%E6%8A%A5%E4%B8%8E%E8%B5%84%E9%87%91%E9%85%8D%E7%BD%AE-20260906/%E6%B3%A1%E6%B3%A1%E7%8E%9B%E7%89%B9%E4%B8%8EMiniMax%E4%BA%94%E5%B9%B4%E5%BA%95%E7%A8%BF.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">事实基点与最新定价</a></li>
+<li><a href="#ip">泡泡玛特：从 IP 接力推股东收益</a></li>
+<li><a href="#minimax">MiniMax：先检验盈利约束，再讨论估值</a><ul>
+<li><a href="#_2">资金跑道与融资稀释</a></li>
+</ul>
+</li>
+<li><a href="#_3">核验与使用边界</a></li>
+</ul>
+</div>
+</details><article><p>研究与资料截止：2026-09-06；已执行系统 date。起始价为 2026-09-04 正规收盘；五年持有期用 2031 年全年经营能力估计退出价值，不等于在 2031 年 9 月已经实现该全年利润。股息按未来五个年度末简化收取，留作现金、不再投资，未扣个人税费。汇率冻结为 2026-09-04 中间价 1 港元 = 0.86458 元人民币、1 美元 = 6.7787 元人民币；中间价不是收盘成交汇率。固定汇率是横向比較假设，不是汇率预测。</p>
+<p><strong>泡泡玛特适合有上限的观察或卫星仓；MiniMax目前难以用可预测股东现金流支持核心仓位。</strong> 长期持有能降低择时的重要性，却不能消除 IP 周期、持续研发和融资稀释。以下三情景无可验证概率，不计算虚假的“期望回报 × 确定性”。</p>
+<h2 id="_1">事实基点与最新定价</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>字段</th>
+<th style="text-align: right;">泡泡玛特</th>
+<th style="text-align: right;">MiniMax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9 月 4 日收盘，港元</td>
+<td style="text-align: right;">154.00</td>
+<td style="text-align: right;">361.40</td>
+</tr>
+<tr>
+<td>8 月末已发行总股数</td>
+<td style="text-align: right;">1,331,779,203</td>
+<td style="text-align: right;">349,235,308</td>
+</tr>
+<tr>
+<td>股价乘法定股数，亿港元</td>
+<td style="text-align: right;">2,050.94</td>
+<td style="text-align: right;">1,262.14</td>
+</tr>
+<tr>
+<td>已确认 2026H1 收入</td>
+<td style="text-align: right;">171.72921 亿元人民币</td>
+<td style="text-align: right;">1.16573 亿美元</td>
+</tr>
+<tr>
+<td>已确认 2026H1 归母利润</td>
+<td style="text-align: right;">50.38384 亿元人民币</td>
+<td style="text-align: right;">-3.57997 亿美元</td>
+</tr>
+<tr>
+<td>经营估值起点</td>
+<td style="text-align: right;">正常化利润 112 亿元为假设，对应 15.83 倍 PE</td>
+<td style="text-align: right;">TTM 已确认收入 1.65182 亿美元，对应股权 PS 97.45 倍</td>
+</tr>
+</tbody>
+</table></div>
+<p>价格本轮 live 双源：<a href="https://stockanalysis.com/quote/hkg/9992/history/">泡泡 StockAnalysis</a>、<a href="https://ca.investing.com/equities/pop-mart-international-group-historical-data">Investing</a>；<a href="https://stockanalysis.com/quote/hkg/0100/history/">MiniMax StockAnalysis</a>、<a href="https://markets.ft.markitdigital.com/data/equities/tearsheet/historical?s=100%3AHKG">FT</a>。法定股数取<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0901/2026090102631.pdf">泡泡八月月报</a>及<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0903/2026090301230.pdf">MiniMax八月月报</a>，本地已有原件，本轮检查股数表；交叉：<a href="https://www.itiger.com/hans/news/1176616877">泡泡公告整理</a>、<a href="https://stockanalysis.com/quote/hkg/0100/statistics/">MiniMax股数</a>。第三方泡泡较小股本未解释，不用于抬高每股价值。</p>
+<p>最新财务事实沿用本线程已核验<a href="../r/c4eb2457117b.html">两公司十年底稿</a>；本轮再核<a href="https://www.minimax.io/news/minimax-announces-first-half-2026-financial-results-1787744160">MiniMax官方半年财务页面</a>。泡泡库存、海外销售与新品接力决定正常化利润是否保得住。MiniMax半年毛利率17.9%、研发2.96870亿美元，收入高速增长还没有覆盖持续研发。</p>
+<h2 id="ip">泡泡玛特：从 IP 接力推股东收益</h2>
+<p>所有下列数值是模型假设，金额为亿元人民币。税率25%、归母经济比例98%；毛利与费用率的定义承接十年底稿，持续设计研发、股份薪酬、租金、折旧、正常存货损耗按所属项目保留，不重复加回。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>2031 情景</th>
+<th style="text-align: right;">悲观</th>
+<th style="text-align: right;">基准</th>
+<th style="text-align: right;">乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: right;">550</td>
+<td style="text-align: right;">950</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">55%</td>
+<td style="text-align: right;">67%</td>
+<td style="text-align: right;">70%</td>
+</tr>
+<tr>
+<td>销售管理及持续产品费用率</td>
+<td style="text-align: right;">35%</td>
+<td style="text-align: right;">31%</td>
+<td style="text-align: right;">29%</td>
+</tr>
+<tr>
+<td>税后归母经济利润</td>
+<td style="text-align: right;">36.75</td>
+<td style="text-align: right;">145.53</td>
+<td style="text-align: right;">286.28</td>
+</tr>
+<tr>
+<td>退出 PE</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr>
+<td>2031 总股数，亿股</td>
+<td style="text-align: right;">13.31779203</td>
+<td style="text-align: right;">13.31779203</td>
+<td style="text-align: right;">13.31779203</td>
+</tr>
+<tr>
+<td>五年现金股息合计，港元/股</td>
+<td style="text-align: right;">5.90</td>
+<td style="text-align: right;">13.58</td>
+<td style="text-align: right;">23.04</td>
+</tr>
+<tr>
+<td>退出股价，港元</td>
+<td style="text-align: right;">31.92</td>
+<td style="text-align: right;">202.23</td>
+<td style="text-align: right;">546.99</td>
+</tr>
+<tr>
+<td><strong>含息五年年化</strong></td>
+<td style="text-align: right;"><strong>-24.5%</strong></td>
+<td style="text-align: right;"><strong>+7.0%</strong></td>
+<td style="text-align: right;"><strong>+29.9%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>利润公式：<code>收入 × (毛利率－费用率) × 75% × 98%</code>。2027—2031归母利润路径分别为：悲观80、65、50、40、36.75；基准105、115、125、135、145.53；乐观140、175、210、250、286.2825。各年假设派息25%，其余用于库存、增长及资本支出。股本净变化为零是假设，代表回购与员工获股大致抵销，<strong>不再加一项回购收益率</strong>。净现金亦不另外加回PE估值。</p>
+<p>基准收入需要国内与新品温和增长、海外恢复复购，费用纪律把归母率维持在26.46%。2031利润145.53亿元到原2036基准206.388亿元，尚需再增长；并没有把十年成熟利润提前搬到五年。悲观允许收入与利润都显著低于目前，乐观要求成为更稳健的全球IP组合。10/16/22倍PE为投资者要求的退出估值，不是市场承诺：产品偏好更脆弱取10倍，延续但未证明跨代IP取16倍，只有复购和多IP接力验证才考虑22倍。</p>
+<p><strong>基准约7%的年化，尚不足以补偿把它作为大核心仓位的IP风险。</strong> 其他经营假设不变，把退出PE改成12/16/20倍，对应回报见计算文件（约1%/7%/12%）；基准模型要求15%年化时，入场价约107港元，不能将此当机械买点。现实应同时检验存货、折扣、海外成熟店表现和跨年复购。若保留，建议研究性目标区间为长期投资资金的5%—8%，绝非必须持有。</p>
+<h2 id="minimax">MiniMax：先检验盈利约束，再讨论估值</h2>
+<p>金额为亿美元。亏损不计算利润CAGR、不给所得税收益；正利润按25%税率。持续研发和销售管理包括股份薪酬，推理算力进入毛利，训练算力留在研发。净融资收益按零，净融资成本增加时应再下修。母公司业务经济归属按100%，原股东稀释通过股数处理。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>2031 情景</th>
+<th style="text-align: right;">悲观</th>
+<th style="text-align: right;">基准</th>
+<th style="text-align: right;">乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>已确认年度收入假设</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">120</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">45%</td>
+<td style="text-align: right;">55%</td>
+</tr>
+<tr>
+<td>持续研发</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td>销售管理</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td>税后经济利润，亿美元</td>
+<td style="text-align: right;">-4</td>
+<td style="text-align: right;">-0.5</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td>税后经济利润，亿元人民币</td>
+<td style="text-align: right;">-27.11</td>
+<td style="text-align: right;">-3.39</td>
+<td style="text-align: right;">122.02</td>
+</tr>
+<tr>
+<td>退出估值方法</td>
+<td style="text-align: right;">1倍股权PS</td>
+<td style="text-align: right;">3倍股权PS</td>
+<td style="text-align: right;">25倍PE</td>
+</tr>
+<tr>
+<td>2031总股数，亿股</td>
+<td style="text-align: right;">7.5</td>
+<td style="text-align: right;">5.0</td>
+<td style="text-align: right;">4.5</td>
+</tr>
+<tr>
+<td>较现有总股数增加</td>
+<td style="text-align: right;">114.75%</td>
+<td style="text-align: right;">43.17%</td>
+<td style="text-align: right;">28.85%</td>
+</tr>
+<tr>
+<td>五年股息</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>退出股价，港元</td>
+<td style="text-align: right;">10.45</td>
+<td style="text-align: right;">235.21</td>
+<td style="text-align: right;">784.05</td>
+</tr>
+<tr>
+<td><strong>五年年化</strong></td>
+<td style="text-align: right;"><strong>-50.8%</strong></td>
+<td style="text-align: right;"><strong>-8.2%</strong></td>
+<td style="text-align: right;"><strong>+16.8%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>未盈利公司的PS只描述届时融资市场愿意给的股权估值，不能当成已经兑现的价值投资收益。基准50亿美元收入已经要求大规模成功，但45%毛利仍无法覆盖23亿美元持续费用。3倍PS对应150亿美元股权价值；若2036最终实现原基准11.25亿美元净利、给予25倍PE，再以15%折回2031，约为139.83亿美元，说明3倍PS仍需要后续利润路径大致兑现，并非保守现金保障。乐观按18亿美元利润与25倍PE，才进入可以用盈利讨论的框架。原2036乐观净利为60亿美元，不与五年18亿美元混用。</p>
+<p>同样50亿美元收入、5亿股，2/3/4倍PS对应五年年化约-15%/-8%/-3%；若要求现价取得15%年化、仍给3倍PS，则2031收入需约155亿美元，超过本表120亿美元乐观收入。相对同行PS低、ARR快速增加、模型性能领先，均不能单独证明入场价存在安全边际。</p>
+<h3 id="_2">资金跑道与融资稀释</h3>
+<p>MiniMax<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0716/2026071601147.pdf">七月融资完成公告</a>本轮live读取：配售35,600,000新股，净筹94.4371亿港元；65亿港元零息可转债，净筹64.333亿港元，2027年到期，初始转股价335港元。全额转换可能增加19,402,985股，约现有股数的5.56%。<strong>不能既不还本金、又不增加股份。</strong> 本表统一假设2027年现金偿债；若实际转股，应同时减少偿债支出并更新股数，不能只拿一个有利影响。</p>
+<p>六月末仅选现金等价物、短期定存和流动金融资产，扣银行及租赁负债，合计约10.859亿美元；加七月净融资、预留可转债本金后，约22.82亿美元。这是六月末加融资的压力预算起点，<strong>不是9月真实现金或可直接分配的现金</strong>。完整半年现金流量表仍未取得，不把经调整亏损当成经营现金消耗。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>六月末以后至2031的预算假设，亿美元</th>
+<th style="text-align: right;">悲观</th>
+<th style="text-align: right;">基准</th>
+<th style="text-align: right;">乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净现金消耗预算（经营、算力、设备及营运资金，含现金回流）</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr>
+<td>新增股份中预留员工获股，百万股</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>其余新增股平均融资价，港元</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr>
+<td>按1%发行成本后新股净筹资</td>
+<td style="text-align: right;">31.25</td>
+<td style="text-align: right;">24.77</td>
+<td style="text-align: right;">40.79</td>
+</tr>
+<tr>
+<td>偿债与消耗后剩余资金</td>
+<td style="text-align: right;">9.07</td>
+<td style="text-align: right;">7.59</td>
+<td style="text-align: right;">28.61</td>
+</tr>
+</tbody>
+</table></div>
+<p>全部未来发行价格和消耗预算是假设，非公司安排或资金保证；员工获股不产生现金，已从融资股数扣除。费用中保留股份薪酬反映未来持续劳动成本，股数则反映已经授出和后续授股的分母变化，未再把股份薪酬额从估值扣一次。PS是股权倍数，残余资金不另加；盈利PE亦未另加净现金。悲观融资若失败，或者最后一轮发行折价更深，现有股东可以损失全部投资，10.45港元不是下限。</p>
+<p><strong>符合长期价值投资取向的配置建议是MiniMax核心仓0%，若保留学习仓则0%—2%。</strong> 这表达的是利润与每股价值尚不足以估计，不是否定模型或团队。值得提高仓位的证据是实际付费续费、单位毛利、研发对新增毛利的回报、现金消耗和稀释后成果一起改善。</p>
+<h2 id="_3">核验与使用边界</h2>
+<p>泡泡公开信息丰富度A、五年经营/估值判断置信度中等偏低；MiniMax公开信息丰富度B、五年股东回报置信度低。置信度不是胜率，也不是年度波动预测。所有情景均不能覆盖尾部，五年期末亏损不等于最大期间回撤。</p>
+<p>公式为 <code>((退出每股价值＋期间每股现金股息)/入场价)^(1/5)－1</code>。市场价值、双源价格/股数、估值和全部情景已通过financial_rigor.py，计算又经Decimal复核。见<a href="../files/reports/%E4%B8%83%E5%85%AC%E5%8F%B8%E4%BA%94%E5%B9%B4%E5%9B%9E%E6%8A%A5%E4%B8%8E%E8%B5%84%E9%87%91%E9%85%8D%E7%BD%AE-20260906/%E6%B3%A1%E6%B3%A1MiniMax%E4%BA%94%E5%B9%B4%E8%AF%81%E6%8D%AE/model-summary.json">输入与逐项结果</a>、<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E4%B8%83%E5%85%AC%E5%8F%B8%E4%BA%94%E5%B9%B4%E5%9B%9E%E6%8A%A5%E4%B8%8E%E8%B5%84%E9%87%91%E9%85%8D%E7%BD%AE-20260906/%E6%B3%A1%E6%B3%A1MiniMax%E4%BA%94%E5%B9%B4%E8%AF%81%E6%8D%AE/%E5%A4%8D%E7%AE%97.py">复算脚本</a>、<a href="../files/reports/%E4%B8%83%E5%85%AC%E5%8F%B8%E4%BA%94%E5%B9%B4%E5%9B%9E%E6%8A%A5%E4%B8%8E%E8%B5%84%E9%87%91%E9%85%8D%E7%BD%AE-20260906/%E6%B3%A1%E6%B3%A1MiniMax%E4%BA%94%E5%B9%B4%E8%AF%81%E6%8D%AE/financial-rigor.txt">计算日志</a>。模型参数只能验证单位、定义和算术，不能验证为未来事实。配置区间供母报告组合约束下统一取舍，未修改实盘文件，未执行任何交易。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/8771edcb528a.html">阿里巴巴五年股东回报底稿</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f31b0d9632f1.html">本轮实时核验记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/b07a18313680.html">腾讯与拼多多：五年回报与确定性底稿</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/3dff0e4365ec.html">本轮来源与复用边界</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/0ce7adc1da7f.html">快手与美团：从当前价格到2031年的股东回报</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/679376fd9fa5.html">复核范围与限制</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4f2bdd24daa9.html">七家公司：五年股东回报、确定性与资金配置</a><div class="meta">2026-09-06 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

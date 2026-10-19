@@ -1,0 +1,499 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>中国平安：财务估值分析——价值投资视角 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../screens/港股召回池/index.html">港股召回池</a></div><h1>中国平安：财务估值分析——价值投资视角</h1><div class="meta"><a href="../screens/港股召回池/index.html">港股召回池</a> ｜ 2026-05-16 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%B8%AF%E8%82%A1%E5%8F%AC%E5%9B%9E%E6%B1%A0/%E4%B8%AD%E5%9B%BD%E5%B9%B3%E5%AE%89/02-%E8%B4%A2%E5%8A%A1%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90-%E5%B7%B4%E8%8F%B2%E7%89%B9%E8%A7%86%E8%A7%92.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、关键财务指标</a><ul>
+<li><a href="#2025">2025年核心数据一览</a></li>
+<li><a href="#roe">ROE分析</a></li>
+<li><a href="#_2">资产负债分析</a></li>
+</ul>
+</li>
+<li><a href="#10">二、10年财务趋势</a><ul>
+<li><a href="#_3">利润增长轨迹</a></li>
+<li><a href="#nbv">NBV增长趋势（关键指标）</a></li>
+</ul>
+</li>
+<li><a href="#_4">三、内在价值估算</a><ul>
+<li><a href="#pev">方法一：内含价值法（P/EV）</a></li>
+<li><a href="#sotp">方法二：分部估值法（SOTP）</a></li>
+<li><a href="#ddm">方法三：股息贴现模型（DDM）</a></li>
+<li><a href="#pe">方法四：简单PE估值</a></li>
+</ul>
+</li>
+<li><a href="#_5">四、安全边际判断</a><ul>
+<li><a href="#_6">多维度安全边际检验</a></li>
+<li><a href="#_7">正面论据（支持安全边际充足）：</a></li>
+<li><a href="#_8">负面论据（安全边际可能不如看上去那么大）：</a></li>
+</ul>
+</li>
+<li><a href="#_9">五、财务估值总结</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>核心问题：当前价格是否提供了足够的安全边际？内在价值几何？</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、关键财务指标</h2>
+<h3 id="2025">2025年核心数据一览</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2025年</th>
+<th>同比变化</th>
+<th>评价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td>10,505亿元人民币</td>
+<td>+2.1%</td>
+<td>重回万亿，稳定增长</td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td>1,348亿元人民币</td>
+<td>+6.5%</td>
+<td>利润修复继续</td>
+</tr>
+<tr>
+<td>归母营运利润</td>
+<td>1,344亿元人民币</td>
+<td>+10.3%</td>
+<td>剔除波动后的真实盈利能力</td>
+</tr>
+<tr>
+<td>扣非归母净利润</td>
+<td>1,438亿元人民币</td>
+<td>+23%</td>
+<td>核心盈利能力强劲</td>
+</tr>
+<tr>
+<td>归母权益（净资产）</td>
+<td>10,004亿元人民币</td>
+<td>+7.7%</td>
+<td>首破万亿</td>
+</tr>
+<tr>
+<td>总资产</td>
+<td>~13.7万亿元人民币</td>
+<td>-</td>
+<td>2026Q1突破14万亿</td>
+</tr>
+<tr>
+<td>每股分红</td>
+<td>2.70元人民币</td>
+<td>+5.9%</td>
+<td>连续14年增长</td>
+</tr>
+<tr>
+<td>现金分红总额</td>
+<td>489亿元人民币</td>
+<td>-</td>
+<td>分红率36.4%（占营运利润）</td>
+</tr>
+<tr>
+<td>综合投资收益率</td>
+<td>6.3%</td>
+<td>+0.5pct</td>
+<td>创近5年新高</td>
+</tr>
+<tr>
+<td>NBV（新业务价值）</td>
+<td>369亿元人民币</td>
+<td>+29.3%</td>
+<td>改革红利加速兑现</td>
+</tr>
+<tr>
+<td>NBV率（标准保费）</td>
+<td>28.5%</td>
+<td>+5.8pct</td>
+<td>结构持续优化</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="roe">ROE分析</h3>
+<p>中国平安的ROE长期维持在较高水平：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>估算ROE</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016-2018</td>
+<td>18%-22%</td>
+<td>行业景气高峰期</td>
+</tr>
+<tr>
+<td>2019-2020</td>
+<td>16%-20%</td>
+<td>疫情前维持高位</td>
+</tr>
+<tr>
+<td>2021-2022</td>
+<td>10%-13%</td>
+<td>华夏幸福减值+疫情冲击</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>~14%</td>
+<td>开始修复</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>~16%</td>
+<td>持续改善</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>~14%</td>
+<td>归母净利润1,348亿/归母权益10,004亿</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>评价：</strong> 即使在最困难的2021-2022年（华夏幸福减值+疫情），ROE仍在10%以上。2025年ROE约14%，考虑到净资产首破万亿的高基数，这个水平相当不错。券商预测2026-2031年平均ROE大概率在13.5%-16.5%区间。</p>
+<h3 id="_2">资产负债分析</h3>
+<p>保险公司的资产负债结构与一般企业截然不同——高杠杆是行业特征，关键看偿付能力和资产质量：</p>
+<ul>
+<li><strong>保险资金投资规模：</strong> 6.49万亿元人民币，较年初增长13.2%</li>
+<li><strong>偿付能力充足率：</strong> 满足监管要求（具体数字需查年报详细披露）</li>
+<li><strong>华夏幸福风险敞口：</strong> 累计约540亿元人民币，已减值约432亿元人民币，剩余敞口约108亿元人民币——这颗"雷"已基本消化</li>
+</ul>
+<hr />
+<h2 id="10">二、10年财务趋势</h2>
+<h3 id="_3">利润增长轨迹</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>时期</th>
+<th>特征</th>
+<th>驱动力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>高速增长期</td>
+<td>2015-2018</td>
+<td>净利润从542亿增至1,074亿元人民币</td>
+<td>代理人扩张+投资牛市</td>
+</tr>
+<tr>
+<td>见顶回落期</td>
+<td>2019-2020</td>
+<td>净利润维持在1,400-1,600亿元人民币</td>
+<td>代理人红利见顶</td>
+</tr>
+<tr>
+<td>阵痛调整期</td>
+<td>2021-2022</td>
+<td>净利润降至700-1,000亿元人民币</td>
+<td>华夏幸福减值+寿险改革+疫情</td>
+</tr>
+<tr>
+<td>修复回升期</td>
+<td>2023-2025</td>
+<td>净利润从856亿回升至1,348亿元人民币</td>
+<td>改革红利+投资收益改善</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键转折点：</strong> 2021年是分水岭。华夏幸福爆雷导致约540亿元人民币减值，叠加行业代理人大规模出清（平安代理人从120万+降至约35万），利润大幅下滑。但从2023年开始，"减员增效"的效果开始显现——代理人人均产能大幅提升，NBV重回增长轨道。</p>
+<h3 id="nbv">NBV增长趋势（关键指标）</h3>
+<p>NBV（新业务价值）是衡量寿险公司未来盈利能力的领先指标：</p>
+<ul>
+<li>2020年：NBV 495亿元人民币（高点）</li>
+<li>2021-2022年：持续下滑</li>
+<li>2023年：触底回升</li>
+<li>2024年：NBV 286亿元人民币，+28.8%</li>
+<li>2025年：NBV 369亿元人民币，+29.3%</li>
+<li>2026Q1：NBV 156亿元人民币，+20.8%</li>
+</ul>
+<p><strong>评价：</strong> NBV已连续两年以接近30%的速度增长，2026Q1保持20%以上增速。这是寿险改革成效最硬核的证据。</p>
+<hr />
+<h2 id="_4">三、内在价值估算</h2>
+<h3 id="pev">方法一：内含价值法（P/EV）</h3>
+<p>内含价值（Embedded Value, EV）是保险公司最核心的估值锚点。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025年集团EV</td>
+<td>约1.5万亿元人民币（EV同比+5.7%，寿险EV同比+11.2%）</td>
+</tr>
+<tr>
+<td>当前市值（港股）</td>
+<td>约8,400亿元人民币</td>
+</tr>
+<tr>
+<td>P/EV</td>
+<td>约0.56-0.60倍</td>
+</tr>
+<tr>
+<td>历史P/EV中枢</td>
+<td>1.0-1.2倍（近5年）</td>
+</tr>
+<tr>
+<td>如果回归0.8倍P/EV</td>
+<td>对应市值约1.2万亿元人民币，较当前上涨约43%</td>
+</tr>
+<tr>
+<td>如果回归1.0倍P/EV</td>
+<td>对应市值约1.5万亿元人民币，较当前上涨约79%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键假设风险：</strong> EV的计算依赖精算假设。2025年平安已审慎下调长期投资回报率假设至4.5%、风险贴现率至9.5%。假设下调后的EV更加可靠——这反而是利好，因为说明当前EV的"水分"已被挤出。</p>
+<h3 id="sotp">方法二：分部估值法（SOTP）</h3>
+<p>将中国平安拆分为各业务板块单独估值：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>估值依据</th>
+<th>保守估值</th>
+<th>合理估值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寿险及健康险</td>
+<td>0.6-0.8倍寿险EV</td>
+<td>~6,000亿元</td>
+<td>~8,000亿元</td>
+</tr>
+<tr>
+<td>财产保险</td>
+<td>10-12倍净利润</td>
+<td>~1,500亿元</td>
+<td>~2,000亿元</td>
+</tr>
+<tr>
+<td>平安银行</td>
+<td>0.5-0.6倍PB</td>
+<td>~1,500亿元</td>
+<td>~1,800亿元</td>
+</tr>
+<tr>
+<td>资管+科技+其他</td>
+<td>参考可比公司</td>
+<td>~500亿元</td>
+<td>~1,000亿元</td>
+</tr>
+<tr>
+<td><strong>集团合计</strong></td>
+<td></td>
+<td><strong>~9,500亿元</strong></td>
+<td><strong>~12,800亿元</strong></td>
+</tr>
+<tr>
+<td>减：集团折价（10-15%）</td>
+<td></td>
+<td><strong>~8,100亿元</strong></td>
+<td><strong>~11,500亿元</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><em>注：以上为人民币估值，均为粗略估算</em></p>
+<p><strong>对比当前市值约8,400亿元人民币：</strong> 保守情景下接近当前市值，合理情景下有37%上行空间。</p>
+<h3 id="ddm">方法三：股息贴现模型（DDM）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025年每股分红</td>
+<td>2.70元人民币</td>
+</tr>
+<tr>
+<td>未来5年分红增速假设</td>
+<td>5%（保守）</td>
+</tr>
+<tr>
+<td>之后永续增速</td>
+<td>3%</td>
+</tr>
+<tr>
+<td>贴现率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>每股内在价值</td>
+<td>约38-42元人民币（A股）</td>
+</tr>
+<tr>
+<td>对应港股（按0.9折算）</td>
+<td>约34-38港币</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>对比当前港股股价（约46港币）：</strong> DDM方法下，当前股价略高于纯股息价值——但这是极保守的假设（仅5%分红增速），如果分红增速达到8%，内在价值将显著提升。</p>
+<h3 id="pe">方法四：简单PE估值</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025年归母净利润</td>
+<td>1,348亿元人民币</td>
+</tr>
+<tr>
+<td>2025年营运利润</td>
+<td>1,344亿元人民币</td>
+</tr>
+<tr>
+<td>当前港股市值</td>
+<td>~8,400亿元人民币</td>
+</tr>
+<tr>
+<td>静态PE（净利润）</td>
+<td>~6.2倍</td>
+</tr>
+<tr>
+<td>静态PE（营运利润）</td>
+<td>~6.3倍</td>
+</tr>
+<tr>
+<td>A股上市险企平均PE</td>
+<td>8-12倍</td>
+</tr>
+<tr>
+<td>历史PE中枢</td>
+<td>8-10倍</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_5">四、安全边际判断</h2>
+<h3 id="_6">多维度安全边际检验</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>当前值</th>
+<th>历史均值</th>
+<th>安全边际</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P/EV</td>
+<td>0.56-0.60x</td>
+<td>1.0-1.2x</td>
+<td>有较大安全边际</td>
+</tr>
+<tr>
+<td>PE</td>
+<td>6-9x</td>
+<td>8-10x</td>
+<td>有一定安全边际</td>
+</tr>
+<tr>
+<td>PB</td>
+<td>~0.75x</td>
+<td>1.2-1.5x</td>
+<td>有较大安全边际</td>
+</tr>
+<tr>
+<td>股息率</td>
+<td>~6%+</td>
+<td>3-4%</td>
+<td>高股息提供下行保护</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_7">正面论据（支持安全边际充足）：</h3>
+<ol>
+<li>
+<p><strong>P/EV处于历史极值区域。</strong> 0.6倍P/EV意味着市场认为平安的内含价值要打6折才值得买——这隐含了"永久性价值毁灭"的预期。只要这个预期不成真，估值就有修复空间。</p>
+</li>
+<li>
+<p><strong>6%+的股息率提供了"安全垫"。</strong> 即使股价不涨，6%以上的股息率也远超存款利率和国债收益率。在中国资产荒的大背景下，这个收益率具有吸引力。</p>
+</li>
+<li>
+<p><strong>NBV高增长尚未在估值中体现。</strong> NBV连续两年增长近30%，说明公司"新增的"价值创造能力在快速恢复，但P/EV仍在历史低位——这是错配。</p>
+</li>
+<li>
+<p><strong>华夏幸福减值已基本消化。</strong> 540亿元人民币的减值中已完成432亿元人民币，剩余108亿元人民币对万亿级净资产的影响已经可控。</p>
+</li>
+</ol>
+<h3 id="_8">负面论据（安全边际可能不如看上去那么大）：</h3>
+<ol>
+<li>
+<p><strong>低利率可能是"永久性"的。</strong> 如果中国长期利率持续走低（类似日本），保险公司的投资收益率将长期承压。2026Q1综合投资收益率已降至0.2%（非年化），同比大幅下降1.1个百分点。</p>
+</li>
+<li>
+<p><strong>EV的可信度本身有争议。</strong> 内含价值的计算依赖大量精算假设，如果实际投资收益率长期低于4.5%的假设，EV就需要下调——P/EV的"安全边际"就是镜花水月。</p>
+</li>
+<li>
+<p><strong>银行子公司拖累估值。</strong> 平安银行净利润已连续下降，如果银行业务持续恶化，可能需要从集团层面补充资本，稀释股东回报。</p>
+</li>
+<li>
+<p><strong>净利润vs营运利润的差异。</strong> 2026Q1净利润下降7.4%但营运利润增长7.6%——短期无碍，但如果投资端长期承压，两者最终会趋同。</p>
+</li>
+</ol>
+<hr />
+<h2 id="_9">五、财务估值总结</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>评分</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>盈利能力</td>
+<td>★★★★</td>
+<td>ROE 14%，营运利润双位数增长</td>
+</tr>
+<tr>
+<td>成长性</td>
+<td>★★★★</td>
+<td>NBV增速近30%，改革红利持续</td>
+</tr>
+<tr>
+<td>资产质量</td>
+<td>★★★</td>
+<td>华夏幸福基本消化，但低利率风险持续</td>
+</tr>
+<tr>
+<td>估值水平</td>
+<td>★★★★★</td>
+<td>P/EV 0.6倍、PE 6倍，处于历史极值</td>
+</tr>
+<tr>
+<td>股东回报</td>
+<td>★★★★★</td>
+<td>股息率6%+，连续14年增长</td>
+</tr>
+<tr>
+<td><strong>综合评分</strong></td>
+<td><strong>★★★★</strong></td>
+<td><strong>估值具有较大安全边际，但需关注利率风险</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核心判断：</strong> 用巴菲特的话说，"以合理的价格买入优秀的公司，远好于以优秀的价格买入合理的公司。" 中国平安当前的情况是——以优秀的价格买入优秀的公司。0.6倍P/EV、6倍PE、6%+股息率，这个价格已经为大部分风险买了单。关键变量是：低利率环境是否会长期化到足以实质性侵蚀内含价值的程度。</p>
+<hr />
+<p><em>数据来源：中国平安2025年年报、2026年一季报、中金公司研报、东吴证券研报、新浪财经、东方财富网</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c9ff9fd8bb35.html">零跑汽车（9863.HK）财务估值分析</a><div class="meta">2026-07-13 · 估值仓位</div></li><li><a href="../r/e4b48af2c22f.html">金蝶国际（0268.HK）风险与管理层评估</a><div class="meta">2026-07-13 · 组织管理</div></li><li><a href="../r/f85e70570ff4.html">金蝶国际（0268.HK）行业竞争分析</a><div class="meta">2026-07-13 · 筛选</div></li><li><a href="../r/dc828800040b.html">美的集团：风险与管理层评估</a><div class="meta">2026-07-13 · 组织管理</div></li><li><a href="../r/eb45c4a5a989.html">美的集团：商业模式分析</a><div class="meta">2026-07-13 · 筛选</div></li><li><a href="../r/7208c3529a2b.html">紫金矿业（2899.HK）商业模式分析</a><div class="meta">2026-07-13 · 筛选</div></li><li><a href="../r/d297168fa766.html">海底捞（6862.HK）行业竞争分析</a><div class="meta">2026-07-13 · 筛选</div></li><li><a href="../r/aafc1311ea5c.html">海底捞（6862.HK）商业模式分析</a><div class="meta">2026-07-13 · 筛选</div></li><li><a href="../r/e0c971432d1f.html">汇丰控股（0005.HK）— 行业竞争分析</a><div class="meta">2026-07-13 · 筛选</div></li><li><a href="../r/1e2cd4d89879.html">比亚迪（1211.HK）风险与管理层评估</a><div class="meta">2026-07-13 · 组织管理</div></li><li><a href="../r/52d1b5fc167a.html">比亚迪（1211.HK）行业与竞争分析</a><div class="meta">2026-07-13 · 筛选</div></li><li><a href="../r/95e21dfb2d5e.html">比亚迪（1211.HK）商业模式分析</a><div class="meta">2026-07-13 · 筛选</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>
