@@ -1,0 +1,91 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数据准确性审计记录（2026-08-22） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/快手/index.html">快手</a></div><h1>数据准确性审计记录（2026-08-22）</h1><div class="meta"><a href="../companies/快手/index.html">快手</a> ｜ 2026-08-22 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E3%80%8A%E7%9C%8B%E6%87%82%E5%BF%AB%E6%89%8B%E3%80%8B-20260822/research/%E5%AE%A1%E8%AE%A1%E8%AE%B0%E5%BD%95-20260822.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">方法</a></li>
+<li><a href="#_2">硬错误（已修正）</a></li>
+<li><a href="#_3">措辞/口径级（已修正）</a></li>
+<li><a href="#_4">核查确认无误的关键数据（抽样）</a></li>
+<li><a href="#_5">遗留未能核实（文中已标注或规避）</a></li>
+</ul>
+</div>
+</details><article><h2 id="_1">方法</h2>
+<ol>
+<li>算术审计：全系列 48 项推导数字用脚本重算（市值链/TTM/SOTP/三情景/对赌本息/净现金三口径/板块增量/黏性/倍数表），全部通过。</li>
+<li>编辑通读：逐篇挑无来源主张与口径问题。</li>
+<li>对抗性核查：两个 Agent 共约 47 组外部主张逐条证伪（170+ 次检索/抓取，双行情源交叉、AA 榜与 TapTap 实查、报告 PDF 原文验证）。</li>
+</ol>
+<h2 id="_2">硬错误（已修正）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>原文</th>
+<th>修正</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>三国望神州"TapTap 9.2 分口碑好"</td>
+<td>口碑分化（现约 7.6 分）</td>
+<td>TapTap 页面 8/22 实查，9.2 无来源</td>
+</tr>
+<tr>
+<td>2</td>
+<td>微博市值"约为快手十二分之一"</td>
+<td>约十一分之一（17 亿 vs 191 亿美元，8/21）</td>
+<td>旧市值口径过期；Google Finance+stockanalysis</td>
+</tr>
+<tr>
+<td>3</td>
+<td>"2020 年竞标 LOL 版权败给 B 站"</td>
+<td>2019 年底（覆盖 2020-2022 届）</td>
+<td>新京报 2019-12</td>
+</tr>
+<tr>
+<td>4</td>
+<td>TTM 经调整 177.5 亿</td>
+<td>177.4 亿（2025Q2 精确值 56.18 亿）</td>
+<td>快手 2026 中期新闻稿同比口径 RMB 5,618M</td>
+</tr>
+<tr>
+<td>5</td>
+<td>《House of David》S2"400 组可灵镜头"</td>
+<td>约 400 组 AI 镜头（S1 约 70 组），可灵为主要工具之一非全部</td>
+<td>制片方口径+行业报道（多工具混用）</td>
+</tr>
+<tr>
+<td>6</td>
+<td>《诡秘之主》"12 亿超过之前所有项目之和"</td>
+<td>迄今最大单项赌注（"之和"无据）</td>
+<td>编辑判断</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_3">措辞/口径级（已修正）</h2>
+<ul>
+<li>EWC 和平精英"官方独家转播平台"→"短视频及直播战略合作平台 + 独家签约两支战队"（"独家转播"查无实据）</li>
+<li>西行纪"投入数亿"→"投入不菲（媒体称大概率未回本）"；"iOS 最高 89 名"补"畅销榜"、跌出时长改"约半月"</li>
+<li>可灵 API 域名：klingai.com → 补国内入口 klingai.kuaishou.com</li>
+<li>微博广告主 80 万补"2021 前三季度"口径</li>
+<li>可灵亏损"按 16.67% 分担"→"由少数股东按持股分担一部分"（员工池 15% 亦摊薄）</li>
+<li>Sora 迪士尼退出出处 TechCrunch→Variety；MiniMax 市值改区间 130-140 亿美元、ARR 加"媒体转述"；Veo Lite $0.05 补"720p 档"</li>
+<li>平均目标价 50.63→"约 50"（8/22 实查已降至 50.04，仍在下修）</li>
+<li>"首次跑输大盘"删"首次"（无 Q1 大盘对照）；"上市以来最低定价"→"52 周低点附近"（2022-10 低点约 31-32 港元更低）</li>
+<li>字节游戏"2020 成军 vs 八年折腾"矛盾删"八年"；"第二次输掉出圈作战"→"又一次"（游戏内已两败）</li>
+<li>"亏 1.8 元"统一为 1.7 元（19/11=1.73）；"约三分之一用户每天看游戏"→"看游戏直播"</li>
+</ul>
+<h2 id="_4">核查确认无误的关键数据（抽样）</h2>
+<p>股价 8/19-8/21 全序列（双源）；Q2 财务全套（收入 355.35/经调整 39.13/毛利率 51.6/DAU 4.123/MAU 7.973）；可灵收入曲线与 ARR 全序列；7-02 公告条款全套（150 亿投前/190.47 亿/68.33%/程一笑 1%/盖坤 3%+23.62%/8% 单利/2031-10-30）；AA 榜 8/22 实查（万相 3.0 第 1、可灵第 9）；腾讯减持全要素；大和/里昂/富瑞目标价；游戏工委三组数；小游戏双寡头 98.3%（报告 PDF 原文）；快手小游戏日耗 1200 万/分账 1800 万；诡秘之主 624 人/12 亿/8-21 公测/免费榜登顶；沐瞳超 60 亿美元；虎牙斗鱼财报；IDC 三组数；StreamLake 全套（于冰/凌川/CyberCut/KAT 73.4%）；监管四件套；广告大盘双口径；QM 四组数；618 星图；腾讯 Q2；微博聆讯资料；管理层薪酬/投票权。</p>
+<h2 id="_5">遗留未能核实（文中已标注或规避）</h2>
+<ol>
+<li>《诡秘之主》畅销榜表现（公测仅 1 天，无数据——文中已写"待观察"）</li>
+<li>北京可灵净资产 −900 万、9 个月三项重组、连带责任细节（此前一手 PDF 核查确认，本轮二手源未覆盖，维持采信）</li>
+<li>游戏打赏占直播收入比例、游戏广告主占广告收入比例（文中明写"算不出来"）</li>
+<li>MiniMax ARR 4.3 亿美元为媒体转述（已加限定）</li>
+<li>Q2 末借款/物业设备净值（中报未刊发，文中已标注期间错配）</li>
+<li>快手视频云未进 IDC 前五为旁证性确认（无完整前五名单可枚举）</li>
+</ol></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2f73e86f63d4.html">快手与可灵：创始人、技术选型、赛道与十年推演</a><div class="meta">2026-10-17 · 研究</div></li><li><a href="../r/b78ea6a95236.html">可灵与快手十年推演（2026-10-17）</a><div class="meta">2026-10-17 · 导读</div></li><li><a href="../r/f80334f8f914.html">快手与可灵：财务与经营证据底稿</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/722f16789334.html">可灵技术与竞争证据：从模型领先到经济护城河</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/8ab3cb0a66e9.html">快手与可灵深度研究报告</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/948672d4f2d6.html">审计说明</a><div class="meta">2026-10-16 · 底稿</div></li><li><a href="../r/1ac5b5717c6b.html">快手与可灵：创始人、组织与治理证据</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/7661a5d37927.html">快手与可灵深度研究 · 2026-10-16</a><div class="meta">2026-10-16 · 导读</div></li><li><a href="../r/29d256651108.html">快手科技（1024.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/207317a7a1f4.html">快手十年后：生态还在不在、为什么还去快手、可灵结局、还能赚多少</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/16ff30b4d9f0.html">快手AI利润模型与核验记录</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/4ac8125172ef.html">快手：AI对未来三年利润的影响与2036年盈利能力</a><div class="meta">2026-09-24 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

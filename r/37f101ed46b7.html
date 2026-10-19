@@ -1,0 +1,704 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>腾讯&quot;买错了&quot;的安全垫研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><h1>腾讯&quot;买错了&quot;的安全垫研究报告</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-05-01 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E8%85%BE%E8%AE%AF%E5%AE%89%E5%85%A8%E5%9E%AB%E7%A0%94%E7%A9%B6-team-20260501.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#1">1. 一句话结论</a></li>
+<li><a href="#2">2. 四道安全垫总览（按厚度倒排）</a></li>
+<li><a href="#3">3. 量化每道安全垫</a><ul>
+<li><a href="#31">3.1 现金流安全垫（最厚实）</a></li>
+<li><a href="#32-sotp">3.2 SOTP折价安全垫</a></li>
+<li><a href="#33">3.3 硬资产安全垫</a></li>
+<li><a href="#34-pb">3.4 历史PB地板</a></li>
+</ul>
+</li>
+<li><a href="#4-5">4. 极端压力测试：5个黑天鹅情景</a></li>
+<li><a href="#5">5. 综合下行空间（核心）</a></li>
+<li><a href="#6">6. "时间安全垫"——最被低估的安全垫</a></li>
+<li><a href="#7">7. 与可比标的下行空间对比</a></li>
+<li><a href="#8">8. "买错了"的具体含义</a></li>
+<li><a href="#9">9. 关键监控信号（季度跟踪）</a><ul>
+<li><a href="#_1">🚨 安全垫被穿透的预警信号</a></li>
+<li><a href="#_2">💎 加仓信号</a></li>
+</ul>
+</li>
+<li><a href="#10">10. 用户问题的精确回答</a><ul>
+<li><a href="#q">Q：买入腾讯如果判断错误，安全垫有哪些？</a></li>
+<li><a href="#q_1">Q：最坏能跌多少？</a></li>
+<li><a href="#q_2">Q：持有时间多长能消化"买错了"？</a></li>
+</ul>
+</li>
+<li><a href="#11">11. 总结：腾讯是"足够好的标的"还是"完美的标的"？</a></li>
+<li><a href="#12">12. 报告免责声明</a></li>
+<li><a href="#sources">Sources（精选一手数据）</a><ul>
+<li><a href="#_3">财报与公告</a></li>
+<li><a href="#_4">估值与可比公司</a></li>
+<li><a href="#_5">媒体报道</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>核心问题</strong>：如果买入腾讯判断错误，最坏情况下能跌多少？保护下行的硬资产+硬现金流分别是多少？
+<strong>研究框架</strong>：四角色并行投研团队（巴菲特资产负债表 + 段永平现金流 + 芒格SOTP + 李录极端压力测试）
+<strong>数据时点</strong>：2026-05-01
+<strong>当前股价</strong>：HKD 467.80 / 总市值 ≈ HKD 4.21万亿 ≈ USD 5,400亿
+<strong>数据置信度</strong>：A级（4位分析师合计55次WebSearch，主体数据来自2025年报和HKEX一手披露）</p>
+</blockquote>
+<hr />
+<h2 id="1">1. 一句话结论</h2>
+<p><strong>腾讯当前买入的"数学期望最坏跌幅"约-15~-18%（HKD 383-398），单一黑天鹅最坏-47%（HKD 248），极端联合情景5年内&lt;5%概率才能跌到-57%（HKD 200-230）。10年持有期下，仅靠回购+分红就能消化-50%的账面浮亏。这是一个"地板较硬、不会让你瞬间破产"的标的。</strong></p>
+<hr />
+<h2 id="2">2. 四道安全垫总览（按厚度倒排）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>安全垫</th>
+<th>厚度（占当前市值）</th>
+<th>触发条件</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🥇 <strong>现金流安全垫</strong></td>
+<td><strong>每年2.7-2.9%股东回报+18% FCF增长</strong></td>
+<td>长期持有</td>
+<td>A级</td>
+<td></td>
+</tr>
+<tr>
+<td>🥈 <strong>SOTP折价安全垫</strong></td>
+<td><strong>当前+22%中位折价（vs SOTP 6,605亿）</strong></td>
+<td>估值修复</td>
+<td>B+级</td>
+<td></td>
+</tr>
+<tr>
+<td>🥉 <strong>硬资产安全垫</strong></td>
+<td><strong>净现金+投资组合×70% = 22%市值</strong></td>
+<td>极端清算</td>
+<td>A级</td>
+<td></td>
+</tr>
+<tr>
+<td>4️⃣ <strong>历史PB地板</strong></td>
+<td><strong>当前PB 3.36x vs 历史最低2.7x = 仅20%下行</strong></td>
+<td>重演2022级熊市</td>
+<td>B级</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>四道叠加效果</strong>：
+- 短期(1-2年)：SOTP折价+历史PB地板限制下行约 <strong>-20%</strong>
+- 中期(5年)：现金流安全垫累计股东回报约15%覆盖部分下跌
+- 长期(10年)：股东回报+EPS增长<strong>完全消化-50%浮亏</strong>
+- 极端：硬资产清算地板HKD 103 = -78%（理论极限）</p>
+<hr />
+<h2 id="3">3. 量化每道安全垫</h2>
+<h3 id="31">3.1 现金流安全垫（最厚实）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2024</th>
+<th>2025</th>
+<th>2026E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>自由现金流(亿RMB)</td>
+<td>1,553</td>
+<td><strong>1,826(+18%)</strong></td>
+<td>1,950E</td>
+</tr>
+<tr>
+<td>回购金额(亿HKD)</td>
+<td>1,120(港股回购王)</td>
+<td>800</td>
+<td>≥800(已承诺)</td>
+</tr>
+<tr>
+<td>分红(亿HKD)</td>
+<td>320</td>
+<td>410</td>
+<td>485(每股5.30)</td>
+</tr>
+<tr>
+<td><strong>股东总回报(亿HKD)</strong></td>
+<td><strong>1,440</strong></td>
+<td><strong>1,210</strong></td>
+<td><strong>≥1,285</strong></td>
+</tr>
+<tr>
+<td>FCF Yield</td>
+<td>~3.8%</td>
+<td><strong>4.4%</strong></td>
+<td>~4.5%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键事实</strong>：
+- 整体毛利率2025年<strong>56.4%（创历史新高）</strong>——三大业务齐升：游戏61%、广告57%、FBS 50%
+- <strong>回购与PE负相关-0.65</strong>（机会主义回购）：跌得越凶、买得越凶
+- 即使股价跌一半，单年股东回报率自动从2.7%升至5.4%，激活管理层"加大回购"反射</p>
+<p><strong>零增长压力测试（段永平式）</strong>：假设主业完全零增长
+| 当前情景 | 5年累计股东回报 | 占当前市值 |
+|---------|--------------|-----------|
+| 不跌 | 6,000-6,500亿HKD | <strong>14%</strong> |
+| 跌30% | 6,000-6,500亿HKD | <strong>20%</strong> |
+| 跌50% | 6,000-6,500亿HKD | <strong>28%</strong> |</p>
+<h3 id="32-sotp">3.2 SOTP折价安全垫</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>板块</th>
+<th>保守(USD亿)</th>
+<th><strong>中位(USD亿)</strong></th>
+<th>乐观(USD亿)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>游戏</td>
+<td>1,600</td>
+<td><strong>2,050</strong></td>
+<td>2,500</td>
+</tr>
+<tr>
+<td>广告</td>
+<td>1,250</td>
+<td><strong>1,650</strong></td>
+<td>2,075</td>
+</tr>
+<tr>
+<td>微信生态</td>
+<td>0</td>
+<td><strong>375</strong></td>
+<td>750</td>
+</tr>
+<tr>
+<td>FBS(金融+云)</td>
+<td>950</td>
+<td><strong>1,150</strong></td>
+<td>1,650</td>
+</tr>
+<tr>
+<td>投资组合</td>
+<td>863</td>
+<td><strong>1,080</strong></td>
+<td>1,295</td>
+</tr>
+<tr>
+<td>净现金</td>
+<td>300</td>
+<td><strong>300</strong></td>
+<td>300</td>
+</tr>
+<tr>
+<td><strong>SOTP合计</strong></td>
+<td><strong>4,963</strong></td>
+<td><strong>6,605</strong></td>
+<td><strong>8,570</strong></td>
+</tr>
+<tr>
+<td><strong>vs当前市值5,400</strong></td>
+<td><strong>-8%溢价</strong></td>
+<td><strong>+22%折价</strong></td>
+<td><strong>+59%深度折价</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>历史SOTP分位</strong>：
+| 时点 | 隐含安全垫 |
+|------|----------|
+| 2018-10 熊市底 | +27% 深度折价 |
+| 2021-02 高点 | -24% 泡沫溢价 |
+| <strong>2022-10 监管底</strong> | <strong>+52% 极度低估</strong> |
+| <strong>2026-05 当前</strong> | <strong>+22% 中度折价</strong> |</p>
+<p>⚠️ <strong>当前不是"闭眼买"位置</strong>——比2018/2022极端低估贵，但比2021高点便宜得多。</p>
+<p><strong>最被低估的两块</strong>：
+- 🎯 <strong>FBS（云+金融）</strong>：隐含PS 2x vs 蚂蚁 3.6x（市场对中国云的悲观情绪过度）
+- 🎯 <strong>游戏</strong>：隐含PE 12-14x vs 全球同行 18-22x（监管折价已过度）</p>
+<h3 id="33">3.3 硬资产安全垫</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2025-12-31</th>
+<th>USD等值</th>
+<th>占市值比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净现金</td>
+<td>RMB 1,071亿</td>
+<td>$157B</td>
+<td><strong>2.9%</strong></td>
+</tr>
+<tr>
+<td>投资组合(上市+非上市)</td>
+<td>RMB 10,158亿</td>
+<td><strong>$1,488B</strong></td>
+<td><strong>27.6%</strong></td>
+</tr>
+<tr>
+<td>(净现金+投资组合×70%)</td>
+<td>RMB 8,182亿</td>
+<td><strong>$1,193B</strong></td>
+<td><strong>22.0%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>每股清算价值：<strong>HKD 103/股</strong>（即股价跌到HKD 103，仅靠"硬可变现资产×70%折价"就能完全支撑）</p>
+<p><strong>这22%硬地板优于美股科技七姐妹（通常&lt;15%）</strong>——但仍不足以构成格雷厄姆式"深度安全垫"，必须靠主业现金流DCF支撑。</p>
+<p><strong>关键洞察</strong>：投资组合是被市场"半折扣"对待的隐藏金矿——非上市部分（Riot/Epic/Supercell按账面计）实际可能多30-50%。</p>
+<h3 id="34-pb">3.4 历史PB地板</h3>
+<pre><code>HKD 467.80 ── 当前股价（PB 3.36x）
+   ↓ -20%
+HKD 375    ── 历史PB最低地板（2022年式熊市，PB 2.7x）
+   ↓ -45%
+HKD 260    ── BVPS地板（PB=1.0x极端假设）
+   ↓ -22%
+HKD 103    ── 硬资产清算地板（主业归零的极端假设）
+</code></pre>
+<hr />
+<h2 id="4-5">4. 极端压力测试：5个黑天鹅情景</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>5年发生概率</th>
+<th>触发后下跌</th>
+<th>概率加权</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A. 地缘政治极端化</strong></td>
+<td>中美脱钩+TikTok剥离+H100禁运升级</td>
+<td><strong>35%</strong></td>
+<td><strong>-37%</strong></td>
+<td>-12.95%</td>
+</tr>
+<tr>
+<td>B. 游戏版号冻结</td>
+<td>类似2018年9月停发</td>
+<td>15%</td>
+<td>-22%</td>
+<td>-3.30%</td>
+</tr>
+<tr>
+<td>C. 反垄断互联互通</td>
+<td>阿里/抖音强制可在微信打开</td>
+<td>20%</td>
+<td>-17%</td>
+<td>-3.40%</td>
+</tr>
+<tr>
+<td><strong>D. AI竞争失败</strong></td>
+<td>豆包反超元宝+视频号停滞+AI Capex拖累</td>
+<td><strong>30%</strong></td>
+<td><strong>-27%</strong></td>
+<td>-8.10%</td>
+</tr>
+<tr>
+<td><strong>E. 宏观硬着陆</strong></td>
+<td>中国经济硬着陆+地产暴雷+消费断崖</td>
+<td>20%</td>
+<td><strong>-47%</strong></td>
+<td>-9.40%</td>
+</tr>
+<tr>
+<td><strong>加权综合（独立假设）</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>-15~-20%</td>
+</tr>
+<tr>
+<td><strong>最坏联合（A+E共振）</strong></td>
+<td>&lt;5%</td>
+<td>—</td>
+<td>-55~-57%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>⚠️ <strong>A+E高度相关</strong>，独立加权高估总下行；真实期望下行约 <strong>-15~-18%</strong>。</p>
+<hr />
+<h2 id="5">5. 综合下行空间（核心）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>测算口径</th>
+<th>跌幅</th>
+<th>对应HKD价位</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>概率加权期望下行（基线）</strong></td>
+<td><strong>-15~-18%</strong></td>
+<td><strong>HKD 383-398</strong></td>
+<td>高</td>
+</tr>
+<tr>
+<td>历史PB最低（重演2022）</td>
+<td>-20%</td>
+<td>HKD 375</td>
+<td>高</td>
+</tr>
+<tr>
+<td>单一黑天鹅最严重(E情景)</td>
+<td>-47%</td>
+<td>HKD 248</td>
+<td>中</td>
+</tr>
+<tr>
+<td>极端联合情景(A+D+E共振，5年内&lt;5%概率)</td>
+<td>-55~-57%</td>
+<td>HKD 200-230</td>
+<td>中</td>
+</tr>
+<tr>
+<td>理论物理地板（清算价值）</td>
+<td>-72~-78%</td>
+<td>HKD 100-130</td>
+<td>高</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>李录式结论</strong>：
+- 最可能的最坏：<strong>-18%</strong>（数学期望）
+- 5年内可信最坏：<strong>-47%</strong>（单一宏观硬着陆）
+- 理论极端地板：<strong>-57%</strong>（联合黑天鹅）</p>
+<hr />
+<h2 id="6">6. "时间安全垫"——最被低估的安全垫</h2>
+<p>基于2.9-5%/年的股东回报率（回购+分红+EPS增长复合）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>持有年限</th>
+<th>累计股东回报(保守4%/年复利)</th>
+<th>能否覆盖30%下跌</th>
+<th>能否覆盖50%下跌</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5年</td>
+<td>21.7%</td>
+<td>部分覆盖</td>
+<td>不能覆盖</td>
+</tr>
+<tr>
+<td>10年</td>
+<td>48%</td>
+<td><strong>完全覆盖</strong></td>
+<td>接近覆盖</td>
+</tr>
+<tr>
+<td>15年</td>
+<td>80%</td>
+<td>完全覆盖</td>
+<td><strong>完全覆盖</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核心洞察</strong>：以10年持有期看，<strong>即使买入后第二天股价跌50%</strong>，10年累计股东回报+EPS增长（保守6%/年）也能将"账面浮亏"在第10年抹平。</p>
+<blockquote>
+<p>这是"时间作为安全垫"的具体含义——李录"长期持有"哲学的数学基础。</p>
+</blockquote>
+<hr />
+<h2 id="7">7. 与可比标的下行空间对比</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>标的</th>
+<th>历史最大回撤</th>
+<th>当前估值</th>
+<th>相对腾讯下行风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阿里巴巴(9988)</td>
+<td>-80.5%(2020-2022)</td>
+<td>PE 13x</td>
+<td><strong>更脆弱</strong>(无微信级护城河)</td>
+</tr>
+<tr>
+<td>Meta(META)</td>
+<td>-76%(2021-2022)</td>
+<td>PE 25x</td>
+<td>当年AI反转2年内全收复，<strong>示范"下杀-修复"速度</strong></td>
+</tr>
+<tr>
+<td>茅台(600519)</td>
+<td>-55%(2021-2024)</td>
+<td>PE 20x</td>
+<td>防御性更强但成长性弱</td>
+</tr>
+<tr>
+<td>中国神华(601088)</td>
+<td>-45%</td>
+<td>PE 11x、股息率7%</td>
+<td><strong>下行小但天花板低</strong></td>
+</tr>
+<tr>
+<td><strong>腾讯(0700)</strong></td>
+<td><strong>-74%(2022-)</strong></td>
+<td><strong>PE 17.8x</strong></td>
+<td><strong>下行-30~-50%, 向上弹性显著强于防御股</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论</strong>：腾讯下行空间<strong>小于阿里、Meta，大于茅台、神华</strong>；向上弹性显著超过防御性蓝筹——这是<strong>李录式"非对称收益"的来源</strong>。</p>
+<hr />
+<h2 id="8">8. "买错了"的具体含义</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>5年后股价</th>
+<th>跌幅</th>
+<th>对应PE(假设EPS年增长5%)</th>
+<th>历史定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HKD 327</td>
+<td>-30%</td>
+<td>约10x</td>
+<td>接近2022年中底部水平</td>
+</tr>
+<tr>
+<td>HKD 234</td>
+<td>-50%</td>
+<td>约7x</td>
+<td><strong>比2022年10月底部还低</strong>（2008级+2022级叠加）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>触发-50%需同时满足</strong>：
+1. 中美彻底脱钩（A情景）
+2. 中国宏观硬着陆（E情景）
+3. AI叙事破灭（D情景）
+4. 港股流动性枯竭（外资完全撤出）</p>
+<p><strong>四条件同时发生概率</strong>：基于条件概率近似计算 ≈ 2-5%</p>
+<hr />
+<h2 id="9">9. 关键监控信号（季度跟踪）</h2>
+<h3 id="_1">🚨 安全垫被穿透的预警信号</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>信号</th>
+<th>阈值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现金流</td>
+<td>FCF同比下滑</td>
+<td>连续2季度负增长</td>
+</tr>
+<tr>
+<td>现金流</td>
+<td>回购金额骤降</td>
+<td>单季&lt;100亿HKD</td>
+</tr>
+<tr>
+<td>分红</td>
+<td>分红停止增长</td>
+<td>派息率&lt;10%</td>
+</tr>
+<tr>
+<td>资产负债</td>
+<td>投资组合公允价值下滑</td>
+<td>单季-15%+</td>
+</tr>
+<tr>
+<td>业务</td>
+<td>游戏国内+海外双双下滑</td>
+<td>连续2季</td>
+</tr>
+<tr>
+<td>业务</td>
+<td>整体毛利率回落</td>
+<td>跌破54%</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>PB跌破2.7x（历史最低）</td>
+<td>警报</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_2">💎 加仓信号</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PB</td>
+<td>&lt;2.7x（历史最低）= 强烈加仓</td>
+</tr>
+<tr>
+<td>FCF Yield</td>
+<td>&gt;6%（无风险利率3倍）= 加仓</td>
+</tr>
+<tr>
+<td>单年股东回报率</td>
+<td>&gt;5%（市值4万亿对应回购+分红&gt;2000亿HKD）</td>
+</tr>
+<tr>
+<td>极端事件</td>
+<td>类似2022年9月跌破200元的恐慌时刻</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="10">10. 用户问题的精确回答</h2>
+<h3 id="q">Q：买入腾讯如果判断错误，安全垫有哪些？</h3>
+<p><strong>A：四道安全垫，按厚度倒排</strong>：</p>
+<ol>
+<li>
+<p><strong>🥇 现金流安全垫（最厚）</strong>
+   - FCF Yield 4.4%、股东回报率2.9-5%/年
+   - 主业三业务毛利齐升至56.4%（历史新高）
+   - 即使主业零增长，5年回购+分红就能回收14-28%市值
+   - <strong>核心保护</strong>：长期持有期下，时间会自动消化下跌</p>
+</li>
+<li>
+<p><strong>🥈 SOTP折价安全垫（中度）</strong>
+   - 当前市值$5,400亿 vs SOTP中位$6,605亿，约<strong>22%折价</strong>
+   - 游戏+FBS被系统性低估
+   - <strong>核心保护</strong>：估值修复</p>
+</li>
+<li>
+<p><strong>🥉 硬资产安全垫（22%市值）</strong>
+   - 净现金$157B + 投资组合$1,488B
+   - 优于美股科技七姐妹（通常&lt;15%）
+   - <strong>核心保护</strong>：极端清算情景下托底</p>
+</li>
+<li>
+<p><strong>4️⃣ 历史PB地板</strong>
+   - 当前PB 3.36x vs 历史最低2.7x
+   - 重演2022级熊市仅~20%下行空间
+   - <strong>核心保护</strong>：估值已不在泡沫区</p>
+</li>
+</ol>
+<h3 id="q_1">Q：最坏能跌多少？</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>概率</th>
+<th>跌幅</th>
+<th>HKD价位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>大概率（数学期望）</strong></td>
+<td><strong>-15~-18%</strong></td>
+<td><strong>HKD 383-398</strong></td>
+</tr>
+<tr>
+<td>中概率（5年内可信最坏）</td>
+<td>-47%</td>
+<td>HKD 248</td>
+</tr>
+<tr>
+<td>极小概率（5年内&lt;5%）</td>
+<td>-57%</td>
+<td>HKD 200-230</td>
+</tr>
+<tr>
+<td>理论极限（清算价值）</td>
+<td>-78%</td>
+<td>HKD 103</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="q_2">Q：持有时间多长能消化"买错了"？</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>持有年限</th>
+<th>能消化跌幅</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5年</td>
+<td>-22%</td>
+</tr>
+<tr>
+<td>10年</td>
+<td><strong>-48%</strong></td>
+</tr>
+<tr>
+<td>15年</td>
+<td>-80%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>实操建议</strong>：
+- 持有期&lt;5年：不建议重仓，下跌空间可能跑不过分红
+- 持有期5-10年：可以中等仓位，时间安全垫开始生效
+- 持有期≥10年：<strong>安全垫足以吸收-50%浮亏</strong>，可以重仓</p>
+<hr />
+<h2 id="11">11. 总结：腾讯是"足够好的标的"还是"完美的标的"？</h2>
+<p>腾讯不是格雷厄姆式"烟蒂股"——硬资产/市值仅22%，必须靠主业护城河支撑。</p>
+<p>腾讯也不是"闭眼买"位置——SOTP仅22%中位折价，远不及2022年的52%深度低估。</p>
+<p><strong>但腾讯是"安全垫足够厚 + 上行弹性足够大"的少数蓝筹</strong>：
+- 数学期望最坏跌幅-18%
+- 5年内可信最坏跌幅-47%（vs 阿里-80%、Meta -76%）
+- 10年时间能消化-48%浮亏
+- 向上空间显著超过防御性蓝筹</p>
+<blockquote>
+<p><strong>段永平式收尾</strong>：投资最重要的是"先想想最坏会怎样"。腾讯当前买入的最坏情景是什么？答案是：<strong>-18%是大概率底线，-47%是5年内可信底线，-57%是极端联合事件底线，-78%是理论物理地板</strong>。在这4层地板的保护下，加上每年2.9-5%的股东回报和Non-IFRS+18%的成长性，<strong>这是一个"先求不输再求赢"的合格标的</strong>——不完美，但足够好。</p>
+</blockquote>
+<hr />
+<h2 id="12">12. 报告免责声明</h2>
+<ol>
+<li>本报告基于公开信息和AI研究框架，不构成投资建议</li>
+<li>概率估算为主观判断，敏感性较高</li>
+<li>数据时点为2026-05-01，建议每季度复盘最新财报</li>
+<li>"10年消化-50%"假设股东回报政策不变，需持续监控</li>
+<li>极端联合事件（A+D+E）发生时，几乎所有中国资产都受影响，不是腾讯独有风险</li>
+</ol>
+<hr />
+<h2 id="sources">Sources（精选一手数据）</h2>
+<h3 id="_3">财报与公告</h3>
+<ul>
+<li>腾讯2024、2025年度业绩报告</li>
+<li>HKEX逐日回购披露</li>
+<li>Tencent Investor Relations 2025 Annual Results PDF</li>
+<li>2025Q4业绩演示</li>
+</ul>
+<h3 id="_4">估值与可比公司</h3>
+<ul>
+<li>GuruFocus、理杏仁、雪球、东方财富</li>
+<li>StockAnalysis、Macrotrends、Simply Wall St</li>
+<li>PitchBook（蚂蚁集团估值）</li>
+<li>Special Sits Research（SOTP框架）</li>
+</ul>
+<h3 id="_5">媒体报道</h3>
+<ul>
+<li>新浪财经、证券时报、Yicai、Fortune Asia</li>
+<li>CNBC、Bloomberg、Reuters</li>
+<li>36氪、GameLook、华尔街见闻</li>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/e98ba87fde5c.html">证据与审计说明</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/549a5c7c8f83.html">腾讯研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/fa1ad1445212.html">腾讯研究附录：来源、真值、算术与尚未解决的缺口</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

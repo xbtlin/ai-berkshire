@@ -1,0 +1,348 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GLM大模型的真实水位 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/智谱/index.html">智谱</a></div><h1>GLM大模型的真实水位</h1><div class="meta"><a href="../companies/智谱/index.html">智谱</a> ｜ 2026-04-08 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%99%BA%E8%B0%B1/%E3%80%8A%E7%9C%8B%E6%87%82%E6%99%BA%E8%B0%B1AI%E3%80%8B/02-%E6%8A%80%E6%9C%AF%E4%B8%8E%E4%BA%A7%E5%93%81-GLM%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9C%9F%E5%AE%9E%E6%B0%B4%E4%BD%8D.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#glm-51">GLM-5.1：真的对齐了全球顶尖？</a><ul>
+<li><a href="#_1">硬指标摆出来</a></li>
+<li><a href="#_2">技术架构拆解</a></li>
+</ul>
+</li>
+<li><a href="#_3">产品矩阵：一个亮点、一个短板、两个潜力股</a><ul>
+<li><a href="#c">智谱清言：C端的失守</a></li>
+<li><a href="#maasapi">MaaS/API平台：真正的增长引擎</a></li>
+<li><a href="#autoglmai-agent">AutoGLM：AI Agent的先手棋</a></li>
+<li><a href="#cogvideoxai">CogVideoX：AI视频生成</a></li>
+</ul>
+</li>
+<li><a href="#_4">开源策略：聪明但有代价</a></li>
+<li><a href="#_5">本篇小结：技术第一梯队，产品参差不齐</a></li>
+<li><a href="#_6">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂智谱AI》系列 · 第 02 篇 · 技术与产品
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="glm-51">GLM-5.1：真的对齐了全球顶尖？</h2>
+<p>评测排行榜上"全球最佳"是可以刷出来的，还是真实的技术水位？这是看懂智谱的关键问题。</p>
+<p>2026年4月8日，智谱发布GLM-5.1，距前代GLM-5仅两个月。官方宣称"与Claude Opus 4.6全面对齐"，这话含金量到底多高？</p>
+<h3 id="_1">硬指标摆出来</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>评测基准</th>
+<th>GLM-5.1成绩</th>
+<th>对比对象</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SWE-bench Pro</td>
+<td><strong>全球最佳</strong></td>
+<td>超越Claude Opus 4.6</td>
+<td>代码工程能力确实顶尖</td>
+</tr>
+<tr>
+<td>SWE-bench Verified</td>
+<td><strong>77.8</strong></td>
+<td>开源模型最高分</td>
+<td>工程实操能力强</td>
+</tr>
+<tr>
+<td>Terminal Bench 2.0</td>
+<td><strong>56.2</strong></td>
+<td>开源模型最高分</td>
+<td>终端操作能力领先</td>
+</tr>
+<tr>
+<td>Artificial Analysis v4.0</td>
+<td><strong>50分</strong></td>
+<td>开放权重模型首次达此分数</td>
+<td>综合能力新标杆</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：智谱技术报告、Artificial Analysis、SWE-bench官方排行榜）</p>
+<p>这组数据说明一件事：<strong>在代码和工程能力这个维度，GLM-5.1确实站在了全球前列</strong>。</p>
+<p><strong>但要清醒看到两个限制</strong>：</p>
+<p>第一，评测基准不等于真实使用体验。SWE-bench测的是"给一个GitHub issue，能不能自动生成正确的代码补丁"——这是AI编程的核心场景，但不代表通用智能。在创意写作、复杂推理、多轮对话等维度，GLM-5.1与Claude、GPT-5的差距尚未有权威第三方评测。</p>
+<p>第二，模型代际优势窗口极短。GLM-5.1发布于4月8日，但Anthropic、OpenAI、Google的新模型也在密集迭代。在大模型领域，<strong>技术领先的半衰期大约是3-6个月</strong>。</p>
+<h3 id="_2">技术架构拆解</h3>
+<p>GLM-5的几个关键技术选择：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>技术维度</th>
+<th>GLM-5/5.1方案</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数规模</td>
+<td><strong>744B</strong>（上代355B）</td>
+<td>参数翻倍</td>
+</tr>
+<tr>
+<td>架构</td>
+<td>稀疏MoE（混合专家）</td>
+<td>每次推理只激活约<strong>400亿参数</strong></td>
+</tr>
+<tr>
+<td>预训练数据</td>
+<td><strong>28.5T</strong>（上代23T）</td>
+<td>数据量+24%</td>
+</tr>
+<tr>
+<td>上下文窗口</td>
+<td><strong>200K tokens</strong></td>
+<td>长文本处理能力强</td>
+</tr>
+<tr>
+<td>强化学习</td>
+<td>自研"Slime"异步RL框架</td>
+<td>支撑更复杂的RL训练</td>
+</tr>
+<tr>
+<td>注意力机制</td>
+<td>集成DeepSeek Sparse Attention</td>
+<td>降低部署成本</td>
+</tr>
+<tr>
+<td>国产芯片适配</td>
+<td>华为昇腾、摩尔线程、寒武纪</td>
+<td><strong>自主可控叙事</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：GLM-5技术报告、智谱官方文档）</p>
+<p>几个值得注意的点：</p>
+<p><strong>MoE架构</strong>是一个聪明的选择。744B（约7440亿）参数但每次推理只激活约400亿，意味着推理成本远低于同参数规模的Dense模型。这与DeepSeek的技术路线一致——用架构创新换性价比。</p>
+<p><strong>集成DeepSeek的稀疏注意力</strong>——这说明智谱在技术上足够务实，不排斥采纳竞争对手的优秀方案。</p>
+<p><strong>国产芯片适配</strong>——在中美科技博弈的大背景下，能跑在华为昇腾上是一个政策加分项，但也意味着在硬件性能上可能受限于国产芯片与英伟达的差距。</p>
+<p><strong>反方观点</strong>：744B参数的MoE模型训练成本极高，智谱一年研发烧<strong>31.8亿元</strong>，这个投入在全球AI公司中只是中等偏下。Anthropic 2025年融资<strong>80亿美元</strong>，OpenAI更是百亿级别。长期看，算力军备竞赛中智谱的弹药是否充足是个大问号。</p>
+<hr />
+<h2 id="_3">产品矩阵：一个亮点、一个短板、两个潜力股</h2>
+<h3 id="c">智谱清言：C端的失守</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>智谱清言</th>
+<th>豆包（字节）</th>
+<th>DeepSeek</th>
+<th>通义千问（阿里）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MAU（2025年中）</td>
+<td><strong>~838万</strong></td>
+<td><strong>2.27亿</strong></td>
+<td>快速增长中</td>
+<td>快速增长中</td>
+</tr>
+<tr>
+<td>注册用户</td>
+<td>2,500万</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>流量入口</td>
+<td>无</td>
+<td>抖音生态</td>
+<td>口碑传播</td>
+<td>淘宝/钉钉生态</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：Sensor Tower、量子位、各公司公开数据）</p>
+<p>数据残酷得不需要分析：<strong>智谱清言在C端已经被大厂甩开一个量级</strong>。</p>
+<p>核心原因不是模型不好——而是<strong>没有流量入口</strong>。</p>
+<ul>
+<li>字节有抖音（日活7亿+），豆包可以嵌入短视频、搜索、电商全场景</li>
+<li>阿里有淘宝、钉钉，通义千问可以直接服务数亿用户</li>
+<li>百度有搜索引擎，文心一言天然获取搜索流量</li>
+<li>智谱有什么？<strong>没有</strong>。它是一家纯粹的AI技术公司，没有任何消费级流量池</li>
+</ul>
+<p>DeepSeek同样没有流量入口，但它靠"极致性价比+开源社区口碑"实现了病毒式传播。智谱在这一点上也没有做到——它的传播主要依赖技术圈和B端客户，缺乏大众话题性。</p>
+<p><strong>反方观点</strong>：C端可能本来就不是智谱该打的仗。Anthropic也不做C端产品（Claude更多面向开发者和企业），但Anthropic估值超过600亿美元。智谱的正确路径可能是放弃C端、全力ToB+API。</p>
+<h3 id="maasapi">MaaS/API平台：真正的增长引擎</h3>
+<p>这是智谱最亮眼的业务线：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台注册用户</td>
+<td><strong>400万+</strong></td>
+<td>智谱2025年财报</td>
+</tr>
+<tr>
+<td>付费用户</td>
+<td><strong>22万</strong></td>
+<td>招股书</td>
+</tr>
+<tr>
+<td>企业客户</td>
+<td><strong>1.2万</strong></td>
+<td>招股书</td>
+</tr>
+<tr>
+<td>覆盖国家</td>
+<td><strong>218个</strong></td>
+<td>智谱财报</td>
+</tr>
+<tr>
+<td>MaaS ARR</td>
+<td><strong>~17亿元（约2.5亿美元）</strong></td>
+<td>证券时报</td>
+</tr>
+<tr>
+<td>ARR同比增长</td>
+<td><strong>60倍</strong></td>
+<td>证券时报</td>
+</tr>
+<tr>
+<td>2026年Q1 API调用量增长</td>
+<td><strong>400%</strong></td>
+<td>智谱业绩会</td>
+</tr>
+<tr>
+<td>2026年Q1 API定价提升</td>
+<td><strong>83%</strong></td>
+<td>智谱业绩会</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：智谱财报、招股书、证券时报报道）</p>
+<p><strong>量价齐升</strong>是一个非常好的信号——说明需求不是靠降价"买"来的，而是真实的市场拉动。</p>
+<p>CEO张鹏在业绩会上明确将2026年战略总结为一个词："<strong>Token量</strong>"。这和Anthropic的思路高度一致——先用API把开发者生态做大，再靠规模效应实现盈利。</p>
+<p><strong>反方观点</strong>：17亿ARR听起来唬人，但实际确认收入只有1.9亿（云端部分）。ARR是年化数字，包含了大量还未到账的合同金额。而且API市场正在经历惨烈价格战——DeepSeek的API定价比智谱低一个量级。如果DeepSeek继续降价，智谱83%的提价能否持续，要打个大问号。</p>
+<h3 id="autoglmai-agent">AutoGLM：AI Agent的先手棋</h3>
+<p>AutoGLM是智谱在AI Agent领域的布局，定位"能操作手机的AI"：</p>
+<ul>
+<li><strong>全球首个</strong>具备"Phone Use"能力的AI Agent框架</li>
+<li>能自主操作微信、淘宝、抖音、美团等<strong>50+高频应用</strong></li>
+<li>可完成外卖点单、机票预订等<strong>数十步复杂操作</strong></li>
+<li>2025年12月上线</li>
+</ul>
+<p>（来源：智谱官网、电子工程专辑）</p>
+<p>AI Agent被视为大模型最有商业前景的落地方向之一。如果AutoGLM能成为手机端的"通用AI助手"，其商业价值将远超API调用。</p>
+<p><strong>但现实挑战</strong>：蚂蚁灵光、字节豆包、苹果Apple Intelligence都在做类似的事情。智谱在手机端没有硬件入口，只能靠与三星、荣耀等厂商的合作预装，渠道受制于人。</p>
+<h3 id="cogvideoxai">CogVideoX：AI视频生成</h3>
+<ul>
+<li>ICLR 2025收录论文（学术认可）</li>
+<li>3D因果VAE架构</li>
+<li>可生成10秒、768x1360分辨率视频</li>
+<li>与Sora、Kling（快手）、Vidu（生数科技）竞争</li>
+</ul>
+<p>（来源：ICLR 2025、智谱技术报告）</p>
+<p>视频生成是一个还没有跑出明确商业模式的赛道。CogVideoX学术水平不错，但距离大规模商业化还有距离。</p>
+<hr />
+<h2 id="_4">开源策略：聪明但有代价</h2>
+<p>智谱采用<strong>MIT协议全开源</strong>——这是最宽松的开源许可证，意味着任何人都可以免费使用、修改、商业化智谱的模型。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>开源策略对比</th>
+<th>智谱</th>
+<th>DeepSeek</th>
+<th>Meta（Llama）</th>
+<th>通义千问</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>许可证</td>
+<td>MIT（完全开放）</td>
+<td>MIT</td>
+<td>Llama License（有限制）</td>
+<td>Apache 2.0</td>
+</tr>
+<tr>
+<td>开源范围</td>
+<td>全模型+代码</td>
+<td>全模型+代码</td>
+<td>模型权重</td>
+<td>全模型+代码</td>
+</tr>
+<tr>
+<td>商业化限制</td>
+<td>无</td>
+<td>无</td>
+<td>月活7亿以上需授权</td>
+<td>无</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：各模型官方GitHub仓库）</p>
+<p>开源策略的好处显而易见：快速建立开发者生态、提升品牌影响力、吸引企业客户试用后转付费。</p>
+<p><strong>但代价也很明确</strong>：你把最核心的技术免费给了所有人——包括你的竞争对手。DeepSeek和通义千问同样全开源，三方之间的技术差异正在被快速拉平。</p>
+<p>开源竞争的终局，不是"谁的模型最好"——而是<strong>谁能围绕开源模型建立起最强的商业生态</strong>（API平台、企业服务、应用集成）。这一点上，智谱目前排在DeepSeek和通义千问之后。</p>
+<hr />
+<h2 id="_5">本篇小结：技术第一梯队，产品参差不齐</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>评价</th>
+<th>风险点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型技术</td>
+<td>GLM-5.1确实第一梯队</td>
+<td>代际优势窗口短（3-6个月）</td>
+</tr>
+<tr>
+<td>C端产品</td>
+<td>已被大厂甩开27倍</td>
+<td>无流量入口，短期无解</td>
+</tr>
+<tr>
+<td>API/MaaS</td>
+<td>增长极快，量价齐升</td>
+<td>ARR与确认收入差距大，价格战威胁</td>
+</tr>
+<tr>
+<td>AI Agent</td>
+<td>先发优势，但渠道受制于人</td>
+<td>巨头都在做</td>
+</tr>
+<tr>
+<td>视频生成</td>
+<td>学术领先，商业化待验证</td>
+<td>赛道本身不成熟</td>
+</tr>
+<tr>
+<td>开源生态</td>
+<td>MIT全开源，开发者友好</td>
+<td>竞对同样开源，差异化减弱</td>
+</tr>
+</tbody>
+</table></div>
+<p>一句话：<strong>智谱的技术确实能打，但"技术强"到"赚到钱"之间，还有很长的路</strong>。</p>
+<hr />
+<h2 id="_6">下期预告</h2>
+<p>下一篇，我们把视角拉到整个中国大模型赛道——</p>
+<ul>
+<li>智谱的真正对手是谁？DeepSeek、百度文心、MiniMax、月之暗面，各自什么打法？</li>
+<li>"大模型五强"格局稳定吗？谁可能掉队？</li>
+<li>大厂（字节、阿里、腾讯）vs 创业公司——这场仗怎么打？</li>
+<li>智谱在竞争中的生态位到底是什么？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂智谱AI》系列第 02 篇。后续 2 篇将陆续推出。</em>
+<em>本系列基于公开信息撰写，不构成任何投资建议。AI行业变化极快，文中数据截至2026年5月，请以最新公告为准。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/86d8914f6111.html">智谱（02513.HK）三大报表解析 · 2026年中期</a><div class="meta">2026-09-01 · 研究</div></li><li><a href="../r/3b7460fa6dbd.html">930 倍市销率，与 2027 年 1 月的大考</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/230778d43384.html">收 1 元烧 4 元的生意怎么读</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/70b80cfcae88.html">全球第六的模型，和一份&quot;租来的&quot;定价权</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/da809ec85068.html">半年二十倍的公司，你以为你看懂了智谱，其实没有</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/0612bdf686ec.html">《看懂智谱AI》系列说明（2026-07-14 版）</a><div class="meta">2026-07-14 · 底稿</div></li><li><a href="../r/50be50f38aac.html">烧钱机器的终局推演</a><div class="meta">2026-07-06 · 深度系列</div></li><li><a href="../r/a612f69dc5e2.html">五强争霸与大厂围猎</a><div class="meta">2026-07-06 · 深度系列</div></li><li><a href="../r/21a36274b78d.html">智谱（Z.ai，02513.HK）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/68025819dc91.html">智谱AI（Zhipu AI）深度研究报告</a><div class="meta">2026-04-10 · 研究</div></li><li><a href="../r/d34b0bbfeac7.html">清华实验室走出的大模型独角兽</a><div class="meta">2026-01-08 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

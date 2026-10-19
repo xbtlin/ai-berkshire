@@ -1,0 +1,1099 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>腾讯游戏业务深度研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><h1>腾讯游戏业务深度研究报告</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-04-30 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E8%85%BE%E8%AE%AF%E6%B8%B8%E6%88%8F%E4%B8%9A%E5%8A%A1%E6%B7%B1%E5%BA%A6%E6%8A%A5%E5%91%8A-20260430.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、执行摘要</a></li>
+<li><a href="#_2">二、国内游戏组合详解</a><ul>
+<li><a href="#21">2.1 王者荣耀（天美工作室群）—— 长青之王</a></li>
+<li><a href="#22">2.2 和平精英（光子工作室群）—— 流量怪兽</a></li>
+<li><a href="#23-2025">2.3 三角洲行动（光子工作室群）—— 2025 年最大爆款</a></li>
+<li><a href="#24-neople">2.4 地下城与勇士：起源（韩国 Neople 开发，腾讯发行）</a></li>
+<li><a href="#25-valorant-riot-games">2.5 无畏契约 / Valorant 系列（Riot Games）</a></li>
+<li><a href="#26-crossfire">2.6 穿越火线（CrossFire）系列</a></li>
+<li><a href="#27">2.7 其他重要国内游戏</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、国际游戏组合详解</a><ul>
+<li><a href="#31-supercell-84">3.1 Supercell（腾讯持股 ~84%）</a></li>
+<li><a href="#32-riot-games-100">3.2 Riot Games（腾讯 100% 控股）</a></li>
+<li><a href="#33-pubg-mobile-krafton">3.3 PUBG Mobile（光子 + Krafton 合作开发）</a></li>
+<li><a href="#34-epic-games-28">3.4 Epic Games（腾讯持股 ~28%）</a></li>
+<li><a href="#35">3.5 自研 + 投资买断制游戏（新增长点）</a></li>
+</ul>
+</li>
+<li><a href="#14">四、14 款长青游戏地图</a><ul>
+<li><a href="#6">财报正式确认（6 款）</a></li>
+<li><a href="#8">高度推断（剩余 8 款，行业共识）</a></li>
+</ul>
+</li>
+<li><a href="#_4">五、组织架构与工作室体系</a><ul>
+<li><a href="#51-ieg">5.1 国内自研：四大工作室群（IEG 内部赛马）</a></li>
+<li><a href="#52">5.2 精品/独立线</a></li>
+<li><a href="#53">5.3 海外控股工作室</a></li>
+<li><a href="#54">5.4 海外发行</a></li>
+</ul>
+</li>
+<li><a href="#_5">六、护城河分析（七层壁垒）</a><ul>
+<li><a href="#_6">第一层：流量入口</a></li>
+<li><a href="#_7">第二层：渠道与分发</a></li>
+<li><a href="#ip">第三层：IP 与资本布局</a></li>
+<li><a href="#_8">第四层：长青运营能力</a></li>
+<li><a href="#_9">第五层：电竞生态</a></li>
+<li><a href="#ai">第六层：AI + 技术</a></li>
+<li><a href="#_10">第七层：组织能力（赛马 + 容错）</a></li>
+</ul>
+</li>
+<li><a href="#arpu">七、ARPU 与单位经济测算（拆解）</a><ul>
+<li><a href="#_11">中国游戏行业平均水平</a></li>
+<li><a href="#arpu_1">腾讯主要游戏 ARPU 估算</a></li>
+</ul>
+</li>
+<li><a href="#ai_1">八、AI 对游戏业务的重塑（中期催化剂）</a><ul>
+<li><a href="#81">8.1 内容生产侧（成本下降）</a></li>
+<li><a href="#82">8.2 玩法侧（体验提升）</a></li>
+<li><a href="#83-ugc">8.3 UGC 生态（颠覆性）</a></li>
+<li><a href="#84">8.4 商业模式侧</a></li>
+</ul>
+</li>
+<li><a href="#_12">九、行业格局与竞争态势</a><ul>
+<li><a href="#91-2025">9.1 中国游戏市场（2025）</a></li>
+<li><a href="#92">9.2 腾讯市场份额</a></li>
+<li><a href="#93">9.3 主要竞争对手</a></li>
+</ul>
+</li>
+<li><a href="#2026-2030">十、五年展望（2026 - 2030）</a><ul>
+<li><a href="#101">10.1 收入预测（中性情景）</a></li>
+<li><a href="#102">10.2 五个关键剧本</a></li>
+<li><a href="#103-5-2030">10.3 5 年后（2030）的腾讯游戏业务画像</a></li>
+</ul>
+</li>
+<li><a href="#_13">十一、估值与投资视角</a><ul>
+<li><a href="#111">11.1 游戏业务的隐含估值</a></li>
+<li><a href="#112">11.2 横向对比</a></li>
+<li><a href="#113">11.3 价值投资视角的判断</a></li>
+</ul>
+</li>
+<li><a href="#_14">十二、风险与不确定性</a></li>
+<li><a href="#_15">十三、给投资者的最终判断</a><ul>
+<li><a href="#_16">三个核心结论</a></li>
+<li><a href="#_17">一句话定调</a></li>
+</ul>
+</li>
+<li><a href="#_18">附录：数据源</a><ul>
+<li><a href="#_19">腾讯官方</a></li>
+<li><a href="#_20">游戏数据</a></li>
+<li><a href="#_21">行业研究</a></li>
+<li><a href="#_22">战略解读</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>报告日期</strong>：2026-04-30
+<strong>数据基准</strong>：腾讯 2025 年报（2026-03-18 发布）
+<strong>研究维度</strong>：游戏组合 / 用户与营收 / 工作室体系 / 护城河 / 5 年展望
+<strong>研究目的</strong>：通过游戏业务这把"显微镜"，理解腾讯主营护城河的真实质地与未来重估空间</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、执行摘要</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>关键事实</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 年游戏总收入</td>
+<td><strong>2,416 亿元</strong>（YoY +22%）</td>
+</tr>
+<tr>
+<td>国内游戏收入</td>
+<td>1,642 亿元（YoY +18%）占 67.9%</td>
+</tr>
+<tr>
+<td>国际游戏收入</td>
+<td>774 亿元（YoY +33%）占 32.1%，<strong>首破 100 亿美元</strong></td>
+</tr>
+<tr>
+<td>长青游戏数量</td>
+<td>从 2024 年的 12 款增至 <strong>14 款</strong>（年流水 40 亿+ 标准）</td>
+</tr>
+<tr>
+<td>国内 DAU TOP3</td>
+<td>王者荣耀（1.39 亿）、和平精英（春节 8000 万）、三角洲行动（2000 万）</td>
+</tr>
+<tr>
+<td>全球 MAU 第一</td>
+<td>王者荣耀全球 MAU <strong>2.6 亿</strong>，创全球游戏纪录</td>
+</tr>
+<tr>
+<td>主要外部资产</td>
+<td>Riot 100%、Supercell ~84%、Epic ~28%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一句话定性</strong>：腾讯游戏业务已从"靠王者+和平双爆款扛大旗"过渡到"14 款长青组合 + 海外大爆发 + AI 改造"的新阶段，是腾讯主营业务里<strong>护城河最深、现金流最稳、估值最被低估</strong>的一块。</p>
+<hr />
+<h2 id="_2">二、国内游戏组合详解</h2>
+<h3 id="21">2.1 王者荣耀（天美工作室群）—— 长青之王</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上线时间</td>
+<td>2015 年</td>
+</tr>
+<tr>
+<td>国服 DAU</td>
+<td><strong>1.39 亿</strong>（2025 年，全球游戏 DAU 纪录）</td>
+</tr>
+<tr>
+<td>全球 MAU</td>
+<td><strong>2.6 亿</strong>（全球月活第一）</td>
+</tr>
+<tr>
+<td>2025 全球收入</td>
+<td>Sensor Tower 口径 <strong>20+ 亿美元</strong>（约 140 亿元）；AppMagic 口径 16 亿美元（112 亿元）</td>
+</tr>
+<tr>
+<td>ARPU 估算</td>
+<td>全球年 ARPU ≈ 53 元/年；国服活跃用户 ARPU 估计 80-100 元/年</td>
+</tr>
+<tr>
+<td>2025 年表现</td>
+<td>全年 8 个月登顶全球手游收入榜，1 月单月收入 1.8 亿美元</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键洞察</strong>：
+- 11 年长青，DAU 还在创纪录——这在游戏行业是<strong>几乎反常识</strong>的现象
+- 2025 年 KPL 职业联赛商业化升级，年度 IP 联动持续输出
+- 已开始全球化扩张（东南亚、拉美），是腾讯下一个海外亿美元产品候选</p>
+<h3 id="22">2.2 和平精英（光子工作室群）—— 流量怪兽</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上线时间</td>
+<td>2019 年</td>
+</tr>
+<tr>
+<td>春节峰值 DAU</td>
+<td><strong>8,000 万+</strong>（2025 年除夕）</td>
+</tr>
+<tr>
+<td>"地铁逃生"模式 DAU</td>
+<td>五一期间 <strong>3,700 万</strong></td>
+</tr>
+<tr>
+<td>"绿洲启元" UGC 模式 DAU</td>
+<td>Q3 突破 <strong>3,300 万</strong></td>
+</tr>
+<tr>
+<td>2025 同比</td>
+<td>Sensor Tower 口径 1 月全球收入同比 +267%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键洞察</strong>：
+- <strong>UGC（绿洲启元）是质变信号</strong>——和平精英从"射击游戏"变成了"罗布乐思+射击"的混合形态
+- UGC 一旦跑通，意味着内容生产成本接近零，长青年限再延 5-10 年
+- 这是腾讯所有游戏里<strong>最像"超级 App"的产品</strong></p>
+<h3 id="23-2025">2.3 三角洲行动（光子工作室群）—— 2025 年最大爆款</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上线时间</td>
+<td>2024 年底</td>
+</tr>
+<tr>
+<td>2025 年 7 月 DAU</td>
+<td><strong>2,000 万+</strong>（国内 TOP5）</td>
+</tr>
+<tr>
+<td>国内流水</td>
+<td>TOP3（与王者、和平精英并列第一梯队）</td>
+</tr>
+<tr>
+<td>累计流水</td>
+<td>5 亿美元+</td>
+</tr>
+<tr>
+<td>同比增速</td>
+<td><strong>+29 倍</strong>（2025 年最大增长黑马）</td>
+</tr>
+<tr>
+<td>海外表现</td>
+<td>4 月全球上线，4 天注册破 1,000 万，169 国 App Store 免费榜登顶</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键洞察</strong>：
+- 这是腾讯<strong>自研买断制 + 免费抽卡混合付费模型</strong>的成功验证
+- "Extraction Shooter"（撤离射击）品类是国内空白市场，腾讯一击中的
+- 是马化腾在 2025 年内部讲话中<strong>点名表扬的产品</strong></p>
+<h3 id="24-neople">2.4 地下城与勇士：起源（韩国 Neople 开发，腾讯发行）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上线时间</td>
+<td>2024-05-21</td>
+</tr>
+<tr>
+<td>首月 iOS 收入</td>
+<td><strong>27 亿美元</strong>（约 197 亿元，破游戏史纪录）</td>
+</tr>
+<tr>
+<td>6 个月 iOS 收入</td>
+<td>100+ 亿美元（含安卓约 50+ 亿美元）</td>
+</tr>
+<tr>
+<td>上线后表现</td>
+<td>一年内仅 3 天掉出畅销 TOP10</td>
+</tr>
+<tr>
+<td>2025 状态</td>
+<td>Q1 环比下降，DAU 逐渐恢复至上年水平</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键洞察</strong>：
+- 这是 IP（DnF 端游 20 年积累）+ 渠道（腾讯发行）协同的极致案例
+- 重氪金游戏的典型代表，留存依赖版本更新节奏
+- 不是腾讯 100% 自研，需向 Nexon/Neople 支付分成，毛利率低于王者</p>
+<h3 id="25-valorant-riot-games">2.5 无畏契约 / Valorant 系列（Riot Games）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PC 端</td>
+<td>Q3 2024 起成为腾讯国内 PC 收入第一的产品</td>
+</tr>
+<tr>
+<td>手游版上线</td>
+<td>2025-08-19 国服公测</td>
+</tr>
+<tr>
+<td>手游收入预期</td>
+<td>大摩预测年收入 <strong>50-60 亿元</strong>（人民币）</td>
+</tr>
+<tr>
+<td>全球地位</td>
+<td>全球最活跃 PC 射击游戏社区</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="26-crossfire">2.6 穿越火线（CrossFire）系列</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>端游上线</td>
+<td>2008 年（已 18 年）</td>
+</tr>
+<tr>
+<td>端游累计流水</td>
+<td><strong>800 亿+ 元</strong>（中国所有游戏 TOP5）</td>
+</tr>
+<tr>
+<td>累计注册用户</td>
+<td>5 亿+（FPS 第一）</td>
+</tr>
+<tr>
+<td>端游年流水</td>
+<td>稳定 50 亿+ 元</td>
+</tr>
+<tr>
+<td>手游 2025 H1 iOS 收入</td>
+<td>1.81 亿美元（约 13 亿元）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键洞察</strong>：CF 是腾讯"长青运营能力"的活教材——18 年仍每年贡献 50+ 亿端游流水，是中国游戏长青化运营的天花板。</p>
+<h3 id="27">2.7 其他重要国内游戏</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>游戏</th>
+<th>工作室/IP</th>
+<th>关键数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>英雄联盟手游</td>
+<td>Riot + 天美</td>
+<td>长青游戏，年流水 40 亿+</td>
+</tr>
+<tr>
+<td>金铲铲之战</td>
+<td>Riot 中国</td>
+<td>长青游戏，自走棋 TFT 中国版</td>
+</tr>
+<tr>
+<td>火影忍者手游</td>
+<td>万代南梦宫 IP + 腾讯</td>
+<td>长青游戏，2024 上线 9 年仍稳定</td>
+</tr>
+<tr>
+<td>英雄联盟（PC）</td>
+<td>Riot</td>
+<td>长青游戏，端游基本盘</td>
+</tr>
+<tr>
+<td>QQ 飞车 / 飞车手游</td>
+<td>北极光</td>
+<td>长期稳定贡献</td>
+</tr>
+<tr>
+<td>元梦之星</td>
+<td>天美</td>
+<td>派对游戏，UGC 平台试水</td>
+</tr>
+<tr>
+<td>王者荣耀世界</td>
+<td>天美</td>
+<td>开放世界 MMO，2026 上线</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_3">三、国际游戏组合详解</h2>
+<h3 id="31-supercell-84">3.1 Supercell（腾讯持股 ~84%）</h3>
+<p><strong>2025 年全年收入约 11.2 亿美元</strong>（Q1-Q3 数据，全年估计 14-15 亿美元，较 2024 年 30 亿美元有所回落）</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>游戏</th>
+<th>2025 年全球收入</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clash Royale 部落冲突皇室战争</td>
+<td><strong>4.52 亿美元</strong></td>
+<td>2025 年最大爆款回归</td>
+</tr>
+<tr>
+<td>Brawl Stars 荒野乱斗</td>
+<td>2.73 亿美元</td>
+<td>长青</td>
+</tr>
+<tr>
+<td>Clash of Clans 部落冲突</td>
+<td>2.54 亿美元</td>
+<td>13 年长青</td>
+</tr>
+<tr>
+<td>Hay Day 卡通农场</td>
+<td>1.19 亿美元</td>
+<td>模拟经营长青</td>
+</tr>
+<tr>
+<td>Boom Beach / Squad Busters / Mo.co</td>
+<td>合计 ~1,000 万美元</td>
+<td>新品孵化</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键动作</strong>：Supercell 经典游戏陆续作为微信小游戏上线（2025 年 6 月起），打开中国市场。</p>
+<h3 id="32-riot-games-100">3.2 Riot Games（腾讯 100% 控股）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2025 关键数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>League of Legends（PC）</strong></td>
+<td>全球收入约 15 亿欧元（推测，2023 已达 15.5 亿欧元）</td>
+</tr>
+<tr>
+<td><strong>Valorant（PC）</strong></td>
+<td>全球 PC 射击第一，电竞分成 1.05 亿美元（2025 VCT）</td>
+</tr>
+<tr>
+<td><strong>Wild Rift（手游）</strong></td>
+<td>累计流水超 5 亿美元</td>
+</tr>
+<tr>
+<td><strong>Teamfight Tactics（自走棋）</strong></td>
+<td>持续稳定</td>
+</tr>
+<tr>
+<td>Riot Games Korea</td>
+<td>2025 年 3.34 亿美元（YoY +10.8%）</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="33-pubg-mobile-krafton">3.3 PUBG Mobile（光子 + Krafton 合作开发）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全球 DAU（不含中国版）</td>
+<td>2025 年初 30M → 6 月 24.3M</td>
+</tr>
+<tr>
+<td>全球 MAU</td>
+<td>1 月 ~146M → 6 月 113M</td>
+</tr>
+<tr>
+<td>2025 年收入</td>
+<td>约 16 亿美元</td>
+</tr>
+<tr>
+<td>加上和平精英 + BGMI 合计日活</td>
+<td>90M+</td>
+</tr>
+<tr>
+<td>中国玩家消费占比（合计口径）</td>
+<td><strong>69%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="34-epic-games-28">3.4 Epic Games（腾讯持股 ~28%）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fortnite 累计活跃账户</td>
+<td><strong>6.5 亿+</strong></td>
+</tr>
+<tr>
+<td>Fortnite 累计收入</td>
+<td><strong>200 亿美元+</strong></td>
+</tr>
+<tr>
+<td>Epic 2025 净利润</td>
+<td>约 7 亿美元</td>
+</tr>
+<tr>
+<td>Epic 估值（迪士尼 2024 入股口径）</td>
+<td>225 亿美元</td>
+</tr>
+<tr>
+<td>腾讯权益对应价值</td>
+<td>~63 亿美元（账面成本远低于此）</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>隐藏价值提醒</strong>：Epic 在腾讯账上按"非上市投资公允价值"计，实际真实价值大概率远高于账面成本。这部分是上一份估值报告里"非上市投资 3,631 亿元"中的重要组成部分。</p>
+</blockquote>
+<h3 id="35">3.5 自研 + 投资买断制游戏（新增长点）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>游戏</th>
+<th>工作室</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dying Light: The Beast</td>
+<td>Techland（腾讯持股）</td>
+<td>2025 年贡献海外增长</td>
+</tr>
+<tr>
+<td>Dune: Awakening</td>
+<td>Funcom（腾讯持股）</td>
+<td>2025 年新游表现优异</td>
+</tr>
+<tr>
+<td>The Finals</td>
+<td>Embark（腾讯持股）</td>
+<td>FPS 新品</td>
+</tr>
+<tr>
+<td>DUST</td>
+<td>Photon 自研</td>
+<td>单机买断制</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="14">四、14 款长青游戏地图</h2>
+<p><strong>腾讯定义</strong>：手游年流水 ≥ 40 亿元 且 季度日均 DAU ≥ 500 万 / 端游 DAU ≥ 200 万</p>
+<h3 id="6">财报正式确认（6 款）</h3>
+<ol>
+<li>王者荣耀</li>
+<li>和平精英</li>
+<li>穿越火线手游</li>
+<li>火影忍者手游</li>
+<li>无畏契约</li>
+<li>荒野乱斗（Brawl Stars）</li>
+</ol>
+<h3 id="8">高度推断（剩余 8 款，行业共识）</h3>
+<ol start="7">
+<li>地下城与勇士：起源</li>
+<li>金铲铲之战</li>
+<li>英雄联盟手游</li>
+<li>英雄联盟（PC 端游）</li>
+<li>穿越火线（PC 端游）</li>
+<li>Clash Royale</li>
+<li>Clash of Clans</li>
+<li>PUBG Mobile</li>
+</ol>
+<p><strong>洞察</strong>：14 款长青游戏 × 平均 50 亿+ 流水 = <strong>700-1000 亿稳定基本盘</strong>，剩下的部分由新游和长尾产品组成。这是<strong>腾讯游戏业务现金流稳定性的核心来源</strong>。</p>
+<hr />
+<h2 id="_4">五、组织架构与工作室体系</h2>
+<h3 id="51-ieg">5.1 国内自研：四大工作室群（IEG 内部赛马）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>工作室</th>
+<th>负责人</th>
+<th>代表作</th>
+<th>风格定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>天美 Timi</strong></td>
+<td>姚晓光</td>
+<td>王者荣耀、英雄联盟手游、王者荣耀世界</td>
+<td>MOBA、IP 大作</td>
+</tr>
+<tr>
+<td><strong>光子 Photon</strong></td>
+<td>陈宇</td>
+<td>和平精英、三角洲行动、PUBG Mobile</td>
+<td>FPS、射击</td>
+</tr>
+<tr>
+<td><strong>北极光 Aurora</strong></td>
+<td>于海鹏</td>
+<td>天涯明月刀、QQ 飞车</td>
+<td>MMO、休闲</td>
+</tr>
+<tr>
+<td><strong>魔方 Morefun</strong></td>
+<td>张晗劲</td>
+<td>火影忍者手游、洛克王国</td>
+<td>IP 改编、二次元</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="52">5.2 精品/独立线</h3>
+<ul>
+<li><strong>NExT Studios</strong>：尼山萨满、三竹里等买断制独立游戏</li>
+<li><strong>极光计划</strong>：第三方代理发行小众精品</li>
+</ul>
+<h3 id="53">5.3 海外控股工作室</h3>
+<ul>
+<li><strong>Riot Games</strong>（100%）：洛杉矶</li>
+<li><strong>Supercell</strong>（~84%）：芬兰赫尔辛基</li>
+<li><strong>Epic Games</strong>（~28%）：北卡罗来纳</li>
+<li><strong>Funcom / Techland / Embark / Klei / Sharkmob 等</strong>：少数股权或全资</li>
+</ul>
+<h3 id="54">5.4 海外发行</h3>
+<ul>
+<li><strong>Level Infinite</strong>：腾讯海外游戏发行品牌（2022 年成立）</li>
+</ul>
+<p><strong>赛马机制的价值</strong>：四大工作室在相同品类（如 FPS）会同时立项，内部竞争最终选出市场化版本。三角洲行动 vs 无畏契约源能行动就是赛马的产物——<strong>保证腾讯不会错过任何主流品类</strong>。</p>
+<hr />
+<h2 id="_5">六、护城河分析（七层壁垒）</h2>
+<h3 id="_6">第一层：流量入口</h3>
+<ul>
+<li><strong>微信 14 亿日活 + QQ 5+ 亿月活</strong></li>
+<li>任何新游可以在 24 小时内触达全国玩家</li>
+<li>这是网易、米哈游、字节都买不来的资产</li>
+</ul>
+<h3 id="_7">第二层：渠道与分发</h3>
+<ul>
+<li>应用宝（Android 渠道）+ 微信小游戏 + WeGame（PC）</li>
+<li>微信小游戏 2025 年与苹果分成谈到 <strong>15%</strong>（vs 一般 30%）</li>
+<li>渠道议价能力业内第一</li>
+</ul>
+<h3 id="ip">第三层：IP 与资本布局</h3>
+<ul>
+<li>全球 100+ 笔游戏公司投资 / 收购</li>
+<li>Riot（LoL、Valorant）+ Supercell（Clash）+ Epic（Fortnite）三巨头</li>
+<li>这是 <strong>20 年资本积累的不可复制性</strong></li>
+</ul>
+<h3 id="_8">第四层：长青运营能力</h3>
+<ul>
+<li>14 款长青游戏的运营 SOP 已被验证</li>
+<li>数据驱动的版本节奏 / 活动设计 / 付费节点设计</li>
+<li><strong>CF 18 年、王者 11 年都还在新高，行业唯一</strong></li>
+</ul>
+<h3 id="_9">第五层：电竞生态</h3>
+<ul>
+<li>KPL（王者职业联赛）+ LPL（英雄联盟）+ VCT（无畏契约）+ PEL（和平精英）</li>
+<li>电竞 = 游戏的"职业体育"，延长产品生命周期 10 年+</li>
+<li>是网易最薄弱的领域</li>
+</ul>
+<h3 id="ai">第六层：AI + 技术</h3>
+<ul>
+<li><strong>混元大模型</strong>（自研 LLM）</li>
+<li><strong>混元 3D Studio</strong>（3D 资产生成，效率提升 100 倍）</li>
+<li>AI NPC、AI 队友（和平精英已落地 DeepSeek 集成）</li>
+<li>内部 AI 引擎服务于所有工作室</li>
+</ul>
+<h3 id="_10">第七层：组织能力（赛马 + 容错）</h3>
+<ul>
+<li>四大工作室赛马 + NExT 试错 + 海外控股自治</li>
+<li>战略冗余：相同品类多重押注</li>
+<li>这是字节"赢家通吃"模式做不到的——字节 Nuverse 持续撤退就是反例</li>
+</ul>
+<hr />
+<h2 id="arpu">七、ARPU 与单位经济测算（拆解）</h2>
+<h3 id="_11">中国游戏行业平均水平</h3>
+<ul>
+<li>2025 年中国游戏用户 6.83 亿</li>
+<li>移动游戏市场销售额 2,571 亿</li>
+<li>行业 <strong>年人均付费 ≈ 376 元</strong></li>
+</ul>
+<h3 id="arpu_1">腾讯主要游戏 ARPU 估算</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>游戏</th>
+<th>全球 MAU</th>
+<th>估算年收入（人民币）</th>
+<th>年 ARPU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>王者荣耀</td>
+<td>2.6 亿</td>
+<td>140 亿</td>
+<td><strong>~54 元</strong></td>
+</tr>
+<tr>
+<td>和平精英</td>
+<td>~2 亿</td>
+<td>~80-100 亿</td>
+<td>~40-50 元</td>
+</tr>
+<tr>
+<td>Clash Royale</td>
+<td>~1 亿</td>
+<td>32 亿（4.5 亿美元）</td>
+<td>~32 元</td>
+</tr>
+<tr>
+<td>PUBG Mobile</td>
+<td>1.2 亿</td>
+<td>115 亿（16 亿美元）</td>
+<td>~95 元</td>
+</tr>
+<tr>
+<td>三角洲行动</td>
+<td>~6 千万</td>
+<td>~50-70 亿</td>
+<td>~80-120 元</td>
+</tr>
+<tr>
+<td>DnF Mobile</td>
+<td>~3 千万</td>
+<td>~200 亿（首年）→ 100 亿（稳态）</td>
+<td><strong>&gt;3,000 元/付费用户</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>核心洞察</strong>：王者荣耀这种"国民级游戏"ARPU 偏低（54 元/年），但<strong>靠规模赚大钱</strong>；DnF 这种"重氪金游戏"ARPU 极高，但用户基数小。腾讯的厉害之处在于<strong>两种模型都吃</strong>。</p>
+</blockquote>
+<hr />
+<h2 id="ai_1">八、AI 对游戏业务的重塑（中期催化剂）</h2>
+<h3 id="81">8.1 内容生产侧（成本下降）</h3>
+<ul>
+<li>美术资产：混元 3D Studio 让 3D 资产生成效率提升 <strong>100 倍</strong></li>
+<li>关卡设计：AI 自动生成关卡、剧情、对话</li>
+<li>本地化：AI 自动多语言翻译，加速出海</li>
+<li><strong>预期影响</strong>：游戏研发成本下降 30-50%，单位时间内容产能提升 5-10 倍</li>
+</ul>
+<h3 id="82">8.2 玩法侧（体验提升）</h3>
+<ul>
+<li>AI NPC：千人千面的 NPC 行为</li>
+<li>AI 队友：填补人少时的对局体验（和平精英已用 DeepSeek）</li>
+<li>AI 教练：根据玩家水平动态调整难度</li>
+<li>动态剧情：根据玩家选择实时生成内容</li>
+</ul>
+<h3 id="83-ugc">8.3 UGC 生态（颠覆性）</h3>
+<ul>
+<li>元梦之星 + 绿洲启元（和平精英 UGC）</li>
+<li>让玩家用 AI 工具自己创作关卡 / 玩法</li>
+<li><strong>目标</strong>：复刻 Roblox / Fortnite Creative 模式</li>
+<li>一旦跑通，UGC 内容创作成本接近零，长青年限可再延 10 年</li>
+</ul>
+<h3 id="84">8.4 商业模式侧</h3>
+<ul>
+<li>AI 个性化推送：付费转化率提升</li>
+<li>AI 驱动的玩家关怀系统：流失预警 + 召回</li>
+</ul>
+<hr />
+<h2 id="_12">九、行业格局与竞争态势</h2>
+<h3 id="91-2025">9.1 中国游戏市场（2025）</h3>
+<ul>
+<li>总规模 <strong>3,508 亿</strong>（YoY +7.68%）</li>
+<li>用户 <strong>6.83 亿</strong></li>
+<li>移动游戏 2,571 亿（占 73%）</li>
+<li>出海收入 1,474 亿元（204.55 亿美元，YoY +10%）</li>
+</ul>
+<h3 id="92">9.2 腾讯市场份额</h3>
+<ul>
+<li>国内：<strong>~47%</strong>（按腾讯 1,642 亿 / 行业 3,508 亿）</li>
+<li>海外：~7%（中国厂商海外份额）</li>
+<li>全球：<strong>全球第一大游戏发行商</strong>（按收入）</li>
+</ul>
+<h3 id="93">9.3 主要竞争对手</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>对手</th>
+<th>优势</th>
+<th>短板</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>网易</strong></td>
+<td>自研 MMO 强（梦幻、阴阳师）；魔兽世界回归</td>
+<td>海外弱、护城河浅</td>
+</tr>
+<tr>
+<td><strong>米哈游</strong></td>
+<td>二次元开放世界天花板（原神、绝区零）</td>
+<td>单一品类、海外依赖度高</td>
+</tr>
+<tr>
+<td><strong>字节 Nuverse</strong></td>
+<td>持续战略收缩中</td>
+<td>没找到 PMF</td>
+</tr>
+<tr>
+<td><strong>Krafton</strong></td>
+<td>PUBG IP；与腾讯既合作又竞争</td>
+<td>单点产品</td>
+</tr>
+<tr>
+<td><strong>Epic Games</strong>（独立看）</td>
+<td>Fortnite + UE 引擎</td>
+<td>财务表现一般，腾讯持股 28%</td>
+</tr>
+<tr>
+<td><strong>Sony / Microsoft</strong></td>
+<td>主机生态</td>
+<td>与中国市场距离</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论</strong>：腾讯在国内是<strong>绝对统治地位</strong>，海外正从"投资人"转向"自研发行商"角色，<strong>没有真正的全球级对手</strong>。</p>
+<hr />
+<h2 id="2026-2030">十、五年展望（2026 - 2030）</h2>
+<h3 id="101">10.1 收入预测（中性情景）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>国内（亿元）</th>
+<th>海外（亿元）</th>
+<th>总计（亿元）</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 (实)</td>
+<td>1,642</td>
+<td>774</td>
+<td>2,416</td>
+<td>基准</td>
+</tr>
+<tr>
+<td>2026 (E)</td>
+<td>1,800</td>
+<td>1,000</td>
+<td>2,800</td>
+<td>王者荣耀世界、Valorant 手游放量</td>
+</tr>
+<tr>
+<td>2027 (E)</td>
+<td>1,950</td>
+<td>1,300</td>
+<td>3,250</td>
+<td>海外 Level Infinite 体系成熟</td>
+</tr>
+<tr>
+<td>2028 (E)</td>
+<td>2,100</td>
+<td>1,650</td>
+<td>3,750</td>
+<td>AI 内容生产规模化降本</td>
+</tr>
+<tr>
+<td>2029 (E)</td>
+<td>2,250</td>
+<td>2,000</td>
+<td>4,250</td>
+<td>UGC 生态贡献新流水</td>
+</tr>
+<tr>
+<td>2030 (E)</td>
+<td><strong>2,400</strong></td>
+<td><strong>2,400</strong></td>
+<td><strong>4,800</strong></td>
+<td><strong>海外占比首次达 50%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核心假设</strong>：
+- 国内增速从 18% 降至 5-8%（接近成熟市场）
+- 海外保持 25-30% 复合增速
+- AI 提升毛利率 3-5 个百分点</p>
+<h3 id="102">10.2 五个关键剧本</h3>
+<p><strong>剧本 A：王者荣耀世界（开放世界 MMO）成功</strong>
+- 概率：50%
+- 影响：再造一个王者荣耀，年流水 100 亿+
+- 时间窗：2026-2027 年上线</p>
+<p><strong>剧本 B：UGC 生态（绿洲启元 + 元梦之星）跑通</strong>
+- 概率：40%
+- 影响：成为中国版 Roblox，未来 10 年最大创新
+- 时间窗：2027-2028 年验证</p>
+<p><strong>剧本 C：AI Agent 重塑游戏体验</strong>
+- 概率：60%
+- 影响：每款长青游戏 ARPU 提升 20-30%
+- 时间窗：2026-2028 年逐步落地</p>
+<p><strong>剧本 D：海外自研 3A 大作（如 The Finals、王者世界全球版）爆发</strong>
+- 概率：35%
+- 影响：腾讯获得"全球游戏文化输出"地位
+- 时间窗：2027-2030 年</p>
+<p><strong>剧本 E：监管 / 地缘风险</strong>（下行）
+- 概率：30%
+- 影响：美国强制腾讯出售 Epic / Riot 股权（已有传闻）
+- 时间窗：2026-2027 年</p>
+<h3 id="103-5-2030">10.3 5 年后（2030）的腾讯游戏业务画像</h3>
+<pre><code>2030 年腾讯游戏业务（预期）：
+├── 营收：4,500-5,000 亿（约为 2025 的 2 倍）
+├── 利润率：30-35%（AI 降本 + 长青沉淀）
+├── 海外占比：50%（vs 2025 的 32%）
+├── 长青游戏：20-25 款（vs 2025 的 14 款）
+├── 新形态：
+│   ├── UGC 平台（元梦之星 / 绿洲启元）
+│   ├── AI 驱动的动态游戏世界
+│   └── 跨游戏的腾讯账号生态
+├── 全球地位：仍是第一大游戏发行商
+└── 战略价值：从&quot;现金牛&quot;变成&quot;AI 应用最大场景&quot;
+</code></pre>
+<hr />
+<h2 id="_13">十一、估值与投资视角</h2>
+<h3 id="111">11.1 游戏业务的隐含估值</h3>
+<p>按当前腾讯总市值 <strong>3.71 万亿人民币</strong>反推（参考前一份分析）：
+- 主营业务隐含估值 ≈ 2.57 万亿
+- 游戏业务在主营中贡献约 <strong>40-50%</strong> 收入和 <strong>45-55%</strong> 利润
+- <strong>游戏业务隐含估值 ≈ 1.2-1.4 万亿人民币</strong></p>
+<h3 id="112">11.2 横向对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>2025 游戏收入</th>
+<th>市值</th>
+<th>PS（游戏业务）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯（游戏部分）</td>
+<td>2,416 亿</td>
+<td>~1.3 万亿（隐含）</td>
+<td><strong>5.4×</strong></td>
+</tr>
+<tr>
+<td>网易</td>
+<td>~850 亿</td>
+<td>~5,500 亿港元（约 5,000 亿人民币）</td>
+<td>~5.9×</td>
+</tr>
+<tr>
+<td>任天堂</td>
+<td>~1,200 亿日元 ≈ 580 亿人民币</td>
+<td>~12 万亿日元 ≈ 5,800 亿人民币</td>
+<td>~10×</td>
+</tr>
+<tr>
+<td>EA</td>
+<td>~570 亿人民币</td>
+<td>~3,000 亿人民币</td>
+<td>~5.3×</td>
+</tr>
+<tr>
+<td>Take-Two</td>
+<td>~400 亿人民币</td>
+<td>~2,300 亿人民币</td>
+<td>~5.8×</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论</strong>：腾讯游戏业务的隐含估值倍数在全球游戏龙头中<strong>处于偏低水平</strong>——考虑到其规模、护城河、AI 期权，<strong>应该享受溢价而非折价</strong>。</p>
+<h3 id="113">11.3 价值投资视角的判断</h3>
+<p><strong>段永平/李录视角的"好生意特征"checklist</strong>：
+- ✅ 强大的品牌/IP（王者、LoL、CF、Clash）
+- ✅ 网络效应（社交+游戏）
+- ✅ 转换成本（账号、好友、装备沉没）
+- ✅ 规模经济（运营成本边际递减）
+- ✅ 长期需求（游戏是永恒娱乐方式）
+- ✅ 现金流极佳（游戏是最好的商业模式之一）
+- ✅ 管理层资本配置能力（持续证明）
+- ⚠️ 监管风险（中国 + 美国双重）
+- ⚠️ 创新周期不确定（AI 是机会也是变数）</p>
+<p><strong>总评：8/9，是腾讯主营业务里最优质的一块。</strong></p>
+<hr />
+<h2 id="_14">十二、风险与不确定性</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>风险维度</th>
+<th>描述</th>
+<th>概率</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>监管（中国）</strong></td>
+<td>版号、未成年保护、防沉迷</td>
+<td>中</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>监管（美国）</strong></td>
+<td>强制出售 Epic / Riot 股权</td>
+<td>中-低</td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>创新失败</strong></td>
+<td>王者荣耀世界 / 三角洲衰退</td>
+<td>中</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>AI 投资回报不及预期</strong></td>
+<td>360 亿/年 AI 投入回报慢</td>
+<td>中</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>海外竞争加剧</strong></td>
+<td>中国厂商海外内卷（米哈游、莉莉丝）</td>
+<td>高</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>长青游戏老化</strong></td>
+<td>DnF/CF 用户老龄化</td>
+<td>低</td>
+<td>中</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_15">十三、给投资者的最终判断</h2>
+<h3 id="_16">三个核心结论</h3>
+<p><strong>1. 游戏业务是腾讯主营业务里最稳的现金牛 + 最大的 AI 期权</strong>
+- 14 款长青游戏 = 稳定 700-1000 亿现金流基本盘
+- AI 改造 + 海外大爆发 = 未来 5 年增长引擎
+- 这两件事<strong>叠加在一起</strong>，是其他任何游戏公司都做不到的</p>
+<p><strong>2. 当前市场对游戏业务严重低估</strong>
+- AI 投入翻倍被解读为"利空"，但 AI 的最大变现场景之一就是游戏
+- 海外 +33% 的增速没有被市场充分定价
+- 三角洲行动 +29 倍的增长说明腾讯做新品的能力没有衰退</p>
+<p><strong>3. 5 年后游戏业务收入翻倍是大概率事件</strong>
+- 国内 1,642 亿 → 2,400 亿（5% 复合）
+- 海外 774 亿 → 2,400 亿（25% 复合）
+- 总收入 2,416 亿 → 4,800 亿
+- 利润随毛利率提升、AI 降本，可能增长 2.5-3 倍</p>
+<h3 id="_17">一句话定调</h3>
+<blockquote>
+<p><strong>当 12 倍 PE 买腾讯时，你不仅几乎免费获得了 1 万亿的投资组合，还几乎免费获得了一个未来 5 年大概率翻倍、护城河全球第一的游戏巨无霸。</strong></p>
+</blockquote>
+<hr />
+<h2 id="_18">附录：数据源</h2>
+<h3 id="_19">腾讯官方</h3>
+<ul>
+<li><a href="https://static.www.tencent.com/uploads/2026/03/18/559e5d480a4411165e6c7367d61fefbd.pdf">腾讯 2025 年度业绩公告（中文）</a></li>
+<li><a href="https://static.www.tencent.com/uploads/2026/03/18/e6a646796d0d869acc76271c9ee1a6a5.pdf">Tencent 2025 Annual Results (English)</a></li>
+<li><a href="https://36kr.com/p/3728291911613317">腾讯 2025 全年财报解读 - 36氪</a></li>
+</ul>
+<h3 id="_20">游戏数据</h3>
+<ul>
+<li><a href="https://www.guancha.cn/economy/2025_10_27_794743.shtml">王者荣耀 1.39 亿日活 - 观察者网</a></li>
+<li><a href="https://finance.sina.cn/tech/2026-01-06/detail-inhfiver1416360.d.html">Sensor Tower：王者荣耀 2025 年收入超 20 亿美元</a></li>
+<li><a href="https://www.youxituoluo.com/533729.html">腾讯游戏 Q2 财报：三角洲行动流水 TOP3</a></li>
+<li><a href="https://www.youxituoluo.com/532937.html">DNF 手游 6 个月收入超 10 亿美元</a></li>
+<li><a href="https://finance.sina.com.cn/stock/hkstock/hkgg/2025-08-05/doc-infixcsw9400737.shtml">大摩：无畏契约手游年收入预期 50-60 亿元</a></li>
+<li><a href="https://news.bittopup.com/news/pubg-mobile-player-count-2025-30m-daily-users-comeback">PUBG Mobile Player Count 2025</a></li>
+<li><a href="https://x.com/BrawlSource/status/1984936354069774690">Supercell 2025 Revenue - Brawl Source</a></li>
+<li><a href="https://technode.com/2025/02/12/tencents-supercell-earned-nearly-3-billion-in-2024-up-77-y-o-y/">Tencent's Supercell earned $3 billion in 2024 - TechNode</a></li>
+</ul>
+<h3 id="_21">行业研究</h3>
+<ul>
+<li><a href="https://www.youxituoluo.com/533304.html">腾讯 14 款长青游戏分析 - 游戏陀螺</a></li>
+<li><a href="https://m.mp.oeeee.com/a/BAAFRD0000202512191496303.html">2025 中国游戏产业销售破 3500 亿元 - 南方都市报</a></li>
+<li><a href="https://www.tmtpost.com/7544526.html">腾讯游戏 2025 年全球战略 - 钛媒体</a></li>
+<li><a href="https://www.21jingji.com/article/20250519/herald/68075536b0996cafc1bf96db17d2704e.html">腾讯游戏出海 - 21 经济网</a></li>
+</ul>
+<h3 id="_22">战略解读</h3>
+<ul>
+<li><a href="https://www.bloomberg.com/news/articles/2026-03-18/tencent-s-sales-rise-13-in-boost-for-broader-ai-ambitions">Tencent's Shares Dive After Agentic AI Vision Fails to Impress - Bloomberg</a></li>
+<li><a href="https://www.chinaventure.com.cn/news/78-20250515-386306.html">腾讯，开始新一轮谨慎扩张 - 投中网</a></li>
+<li><a href="https://36kr.com/p/3121775738654721">腾讯四大工作室共识 - 36 氪</a></li>
+</ul>
+<hr />
+<p><strong>报告完成时间</strong>：2026-04-30
+<strong>研究框架</strong>：巴菲特护城河 + 段永平商业模式 + 李录长期主义
+<strong>下一步建议</strong>：跟踪 2026 Q1 财报（5 月中旬发布），重点验证 Valorant 手游、王者荣耀世界、AI 投入产出比三个核心信号</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/e98ba87fde5c.html">证据与审计说明</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/549a5c7c8f83.html">腾讯研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/fa1ad1445212.html">腾讯研究附录：来源、真值、算术与尚未解决的缺口</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

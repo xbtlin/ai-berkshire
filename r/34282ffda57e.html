@@ -1,0 +1,519 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI对腾讯各业务影响 · 投研团队报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><h1>AI对腾讯各业务影响 · 投研团队报告</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-04-30 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/AI%E5%AF%B9%E8%85%BE%E8%AE%AF%E5%90%84%E4%B8%9A%E5%8A%A1%E5%BD%B1%E5%93%8D-team-20260430.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#1">1. 一句话结论</a></li>
+<li><a href="#2">2. 四维评分总表</a></li>
+<li><a href="#3-ai">3. AI对各业务板块影响汇总</a><ul>
+<li><a href="#31">3.1 业务板块护城河变化矩阵</a></li>
+<li><a href="#32-2025-2026">3.2 关键数据速览（2025-2026）</a></li>
+</ul>
+</li>
+<li><a href="#4-vs">4. 看多 vs 看空逻辑</a><ul>
+<li><a href="#7">🟢 看多逻辑（7条）</a></li>
+<li><a href="#5">🔴 看空逻辑（5条）</a></li>
+</ul>
+</li>
+<li><a href="#5-54">5. 5情景估值（综合4位分析师）</a></li>
+<li><a href="#6-checklistai">6. 价值投资Checklist（AI视角）</a></li>
+<li><a href="#7_1">7. 投资建议</a><ul>
+<li><a href="#_1">定性判断</a></li>
+<li><a href="#_2">操作建议</a></li>
+<li><a href="#_3">关键监控指标（季度跟踪）</a></li>
+</ul>
+</li>
+<li><a href="#8">8. 总结</a></li>
+<li><a href="#9">9. 方法论复盘</a></li>
+<li><a href="#10">10. 报告免责声明</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>研究框架</strong>：四角色并行投研团队（巴菲特护城河 + 段永平用户价值 + 芒格竞争格局 + 李录长期确定性）
+<strong>分析时点</strong>：2026-04-30
+<strong>核心问题</strong>：AI浪潮对腾讯各业务板块是Net Positive还是Net Negative？
+<strong>研究结论</strong>：<strong>AI对腾讯整体是Net Positive，但板块严重分化</strong>——游戏/广告/微信入口/阅文显著受益，腾讯云/腾讯音乐/腾讯视频结构性受损</p>
+</blockquote>
+<hr />
+<h2 id="1">1. 一句话结论</h2>
+<p><strong>腾讯是AI时代的"稳健受益者"，不是"最大赢家"。AI对腾讯整体是Net Positive（5年期望估值+50%），但分化严重：游戏护城河增强、广告和微信入口是AI红利兑现速度最快的板块、阅文是最大隐藏受益者；腾讯云结构性掉队（从BAT之一沦为中等玩家）、腾讯音乐版权稀缺性被AI日产700万首稀释。</strong></p>
+<hr />
+<h2 id="2">2. 四维评分总表</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>框架</th>
+<th>AI影响</th>
+<th>核心判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>游戏与内容生态</td>
+<td>巴菲特"护城河变化"</td>
+<td><strong>正面（增强为主）</strong></td>
+<td>游戏+阅文是赢家；视频号不变；音乐/长视频是输家</td>
+</tr>
+<tr>
+<td>广告与微信入口</td>
+<td>段永平"用户价值"</td>
+<td><strong>强正面</strong></td>
+<td>广告eCPM驱动19%增长、妙思渗透65%、微信搜一搜日搜10亿次</td>
+</tr>
+<tr>
+<td>企业服务与云</td>
+<td>芒格"竞争格局"</td>
+<td><strong>负面/中性</strong></td>
+<td>腾讯云双线失守、混元是负担但不能放弃、To B护城河转移到企业微信</td>
+</tr>
+<tr>
+<td>战略与长期确定性</td>
+<td>李录"长期确定性"</td>
+<td><strong>正面</strong></td>
+<td>Capex克制是优势、10年核心商业模式存活85%+概率、不对称回报</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>综合评分：4.0 / 5</strong>（<strong>AI是腾讯的乘数应用，不是新增长曲线</strong>）</p>
+<hr />
+<h2 id="3-ai">3. AI对各业务板块影响汇总</h2>
+<h3 id="31">3.1 业务板块护城河变化矩阵</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>AI前护城河</th>
+<th>AI后护城河变化</th>
+<th>评级</th>
+<th>关键驱动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>国内游戏</td>
+<td>发行+IP+玩家粘性</td>
+<td>增强</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>混元游戏视觉平台、AI NPC（王者灵宝）、反作弊数据壁垒</td>
+</tr>
+<tr>
+<td>海外游戏</td>
+<td>Supercell/Riot/Epic</td>
+<td>增强</td>
+<td>⭐⭐⭐⭐</td>
+<td>工业级AI管线规模复用</td>
+</tr>
+<tr>
+<td>微信入口</td>
+<td>14亿MAU+社交链</td>
+<td><strong>大幅增强</strong></td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>公众号+视频号+小程序+搜一搜+支付构成"Agent最后一公里"闭环</td>
+</tr>
+<tr>
+<td>视频号</td>
+<td>微信流量+社交链</td>
+<td><strong>不变</strong></td>
+<td>⭐⭐⭐</td>
+<td>算法落后抖音1.5-2年，但社交链是AI偷不走的</td>
+</tr>
+<tr>
+<td>网络广告</td>
+<td>微信流量+精准度</td>
+<td><strong>大幅增强</strong></td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>妙思AIGC渗透65%、AIM+操作量降80%、视频号货币化率仅1.8%还有2-3倍空间</td>
+</tr>
+<tr>
+<td>微信搜一搜</td>
+<td>公众号8年沉淀语料</td>
+<td><strong>革命性增强</strong></td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>日搜索量3.33亿→10亿+(+200%)，AI搜索MAU 1.6亿</td>
+</tr>
+<tr>
+<td>小程序生态</td>
+<td>4.5亿日活+430万小程序</td>
+<td>显著增强</td>
+<td>⭐⭐⭐⭐</td>
+<td>微信小店GMV 2024年+192%、AI客服/AI导购加速</td>
+</tr>
+<tr>
+<td>阅文</td>
+<td>作者+IP矩阵</td>
+<td><strong>大幅增强</strong> ⭐</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>AI漫剧近千部、收入破1亿、IP+AI让网文裂变多形态</td>
+</tr>
+<tr>
+<td>腾讯视频</td>
+<td>版权采购规模</td>
+<td><strong>削弱</strong></td>
+<td>⭐⭐</td>
+<td>AI不解决"好故事"稀缺性，被短剧/短视频持续分流</td>
+</tr>
+<tr>
+<td>腾讯音乐</td>
+<td>三大唱片版权</td>
+<td><strong>明显削弱</strong> ⚠️</td>
+<td>⭐⭐</td>
+<td>Suno日产700万首、Deezer 4月新增44%是AI、买断价仅真人歌1/10</td>
+</tr>
+<tr>
+<td>腾讯云IaaS</td>
+<td>综合云服务能力</td>
+<td><strong>结构性掉队</strong></td>
+<td>⭐⭐</td>
+<td>通用云第五(7.9%)、AI云第四(7%)、MaaS前五开外</td>
+</tr>
+<tr>
+<td>混元大模型</td>
+<td>自研基座模型</td>
+<td>中性</td>
+<td>⭐⭐</td>
+<td>第一梯队陪跑、未跑出杀手级应用、年烧180亿+</td>
+</tr>
+<tr>
+<td>企业微信</td>
+<td>5亿DAU+私域生态</td>
+<td><strong>显著增强</strong></td>
+<td>⭐⭐⭐⭐</td>
+<td>13亿C端连接5000万+商家是阿里/字节都没有的非对称优势</td>
+</tr>
+<tr>
+<td>金融AI风控</td>
+<td>微粒贷+腾讯云天御</td>
+<td>显著增强</td>
+<td>⭐⭐⭐⭐</td>
+<td>牵头IEEE 3410-2025国际标准</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="32-2025-2026">3.2 关键数据速览（2025-2026）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025游戏收入</td>
+<td>2416亿(+22%)，本土+18%、海外+33%</td>
+<td>2025年报</td>
+</tr>
+<tr>
+<td>2025营销服务收入</td>
+<td>1450亿(+19%)，Q3单季364亿(+21%)</td>
+<td>2025年报</td>
+</tr>
+<tr>
+<td>2025视频号广告收入</td>
+<td>约373亿(+48%)</td>
+<td>第三方测算</td>
+</tr>
+<tr>
+<td>视频号货币化率</td>
+<td>1.8% vs 抖音6.1%</td>
+<td>CBNData</td>
+</tr>
+<tr>
+<td>妙思AIGC渗透率</td>
+<td>客户65%、日均300万创意、小店广告47%来自妙思</td>
+<td>观潮新消费</td>
+</tr>
+<tr>
+<td>微信MAU</td>
+<td>14.02亿（全球第三大入口）</td>
+<td>2025年报</td>
+</tr>
+<tr>
+<td>元宝 vs 豆包</td>
+<td>元宝MAU 1.14亿 vs 豆包2.26亿（<strong>断档差距</strong>）</td>
+<td>各家公开数据</td>
+</tr>
+<tr>
+<td>微信搜一搜</td>
+<td>日搜索3.33亿→10亿+(+200%)，AI搜索MAU 1.6亿</td>
+<td>澎湃新闻</td>
+</tr>
+<tr>
+<td>微信小店</td>
+<td>2024年GMV+192%、订单+125%</td>
+<td>微信公开课</td>
+</tr>
+<tr>
+<td>通用云IaaS市占</td>
+<td>阿里26.8% vs <strong>腾讯云7.9%（第五）</strong></td>
+<td>IDC 2025Q2</td>
+</tr>
+<tr>
+<td>AI云市占</td>
+<td>阿里35.8%、火山14.8%、华为13.1%、<strong>腾讯云7.0%</strong></td>
+<td>Omdia 2025H1</td>
+</tr>
+<tr>
+<td>MaaS市占</td>
+<td>火山49.2%、阿里27%、<strong>腾讯前五开外</strong></td>
+<td>2025H1</td>
+</tr>
+<tr>
+<td>腾讯AI Capex(2026E)</td>
+<td>1100-1300亿 vs 字节2000亿 vs 阿里1200亿</td>
+<td>财报口径</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="4-vs">4. 看多 vs 看空逻辑</h2>
+<h3 id="7">🟢 看多逻辑（7条）</h3>
+<ol>
+<li><strong>微信"履约闭环"无法被复制</strong>：公众号(语料)+视频号(内容)+小程序(动作)+搜一搜(入口)+支付(收钱)——豆包/Kimi/文心都缺最后两环</li>
+<li><strong>广告业务是AI红利兑现最快、确定性最高的板块</strong>：eCPM驱动19%增长 + 妙思渗透65% + 视频号还有2-3倍变现空间</li>
+<li><strong>游戏护城河被AI增强</strong>：AIGC加速内容更新、AI陪玩解决夜间空房间问题、TiG框架反超DeepSeek-R1</li>
+<li><strong>阅文是被严重低估的AI最大受益者</strong>：唯一一个AI明显增厚护城河的内容资产</li>
+<li><strong>管理层资本纪律</strong>：腾讯Capex仅字节55-65%，"AI in All"是符合腾讯禀赋的最优解</li>
+<li><strong>当前估值price in了悲观预期</strong>：PE 15-18x，AI Upside未充分定价</li>
+<li><strong>不对称回报</strong>：上行+50~100%，下行-20~-30%，且下行概率更低</li>
+</ol>
+<h3 id="5">🔴 看空逻辑（5条）</h3>
+<ol>
+<li><strong>腾讯云结构性掉队</strong>：BAT之一变中等玩家，5年内难翻身；阿里和字节已形成"模型-场景飞轮"</li>
+<li><strong>元宝在C端Agent竞争被压制</strong>：豆包MAU是元宝2倍，年轻人习惯已形成</li>
+<li><strong>腾讯音乐版权护城河松动</strong>：AI日产700万首正在稀释稀缺性</li>
+<li><strong>视频号追不上抖音的算法</strong>：AI能力栈落后1.5-2年，AIGC工具被字节剪映完全压制</li>
+<li><strong>5-10年Agent经济成熟可能绕过微信</strong>：用户在Agent里直接下单，绕过微信支付（概率10%但是真实威胁）</li>
+</ol>
+<hr />
+<h2 id="5-54">5. 5情景估值（综合4位分析师）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>5年股价变化</th>
+<th>关键触发条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. AI赋能型增长</td>
+<td>30%</td>
+<td>+100%</td>
+<td>微信成超级Agent入口 + 视频号追平抖音 + 腾讯云AI收入大爆发</td>
+</tr>
+<tr>
+<td><strong>B. 温和正面（基准）</strong></td>
+<td><strong>35%</strong></td>
+<td><strong>+50~70%</strong></td>
+<td>AI带来10-15%效率提升和增量收入；游戏/广告毛利温和提升</td>
+</tr>
+<tr>
+<td>C. AI中性</td>
+<td>20%</td>
+<td>+20-30%</td>
+<td>Capex拉高但回报不及预期、元宝二线产品、AI化进展慢</td>
+</tr>
+<tr>
+<td>D. AI竞争失败</td>
+<td>10%</td>
+<td>-20~30%</td>
+<td>字节豆包蚕食微信 + Agent绕过腾讯生态</td>
+</tr>
+<tr>
+<td>E. AGI颠覆</td>
+<td>5%</td>
+<td>极端两端</td>
+<td>2028-2030 AGI出现，转型成功5-10x，失败-50%+</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>期望估值变化（5年）</strong>：30%×100% + 35%×60% + 20%×25% + 10%×(-25%) + 5%×0 ≈ <strong>+50%</strong></p>
+<hr />
+<h2 id="6-checklistai">6. 价值投资Checklist（AI视角）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>检查项</th>
+<th>通过?</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>在能力圈内？（理解AI对腾讯影响）</td>
+<td>⚠️</td>
+<td>需持续跟踪AI技术演进</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AI是否增强护城河？</td>
+<td>✅</td>
+<td>整体增强（游戏+广告+入口+阅文）大于削弱（云+音乐+长视频）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>长期需求确定？</td>
+<td>✅</td>
+<td>14亿微信用户基本盘+游戏IP矩阵确定性极高</td>
+</tr>
+<tr>
+<td>4</td>
+<td>当前估值安全边际？</td>
+<td>✅</td>
+<td>PE 15-18x对AI风险定价偏保守</td>
+</tr>
+<tr>
+<td>5</td>
+<td>长期回报跑赢通胀？</td>
+<td>✅</td>
+<td>5年期望+50%、年化8.4%显著跑赢</td>
+</tr>
+<tr>
+<td>6</td>
+<td>是否存在重大政策/技术风险？</td>
+<td>⚠️</td>
+<td>AGI颠覆(5%) + Agent经济绕过(10%) + 算力管制</td>
+</tr>
+<tr>
+<td>7</td>
+<td>流动性充足？</td>
+<td>✅</td>
+<td>港股蓝筹流动性优秀</td>
+</tr>
+<tr>
+<td>8</td>
+<td>管理层资本纪律？</td>
+<td>✅</td>
+<td>Capex克制+回购+务实拥抱DeepSeek是Pony式克制</td>
+</tr>
+<tr>
+<td>9</td>
+<td>持有10年仍能创造价值？</td>
+<td>✅</td>
+<td>核心商业模式存活85%+概率</td>
+</tr>
+<tr>
+<td>10</td>
+<td>是否会让你睡得着？</td>
+<td>✅</td>
+<td>不对称回报+大蓝筹</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>通过率：8/10 + 2警告</strong>——<strong>符合李录"长期确定性+安全边际"标准买入框架</strong></p>
+<hr />
+<h2 id="7_1">7. 投资建议</h2>
+<h3 id="_1">定性判断</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>判断维度</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI对腾讯整体影响</td>
+<td><strong>Net Positive</strong>，期望+50%估值（5年）</td>
+</tr>
+<tr>
+<td>业务分化判断</td>
+<td>游戏/广告/微信入口/阅文显著受益；云/音乐/长视频结构性受损</td>
+</tr>
+<tr>
+<td>当前估值定价</td>
+<td><strong>偏保守</strong>，AI Upside未充分price in</td>
+</tr>
+<tr>
+<td>管理层执行力</td>
+<td><strong>A级</strong>，资本纪律+务实主义</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_2">操作建议</h3>
+<ul>
+<li><strong>持有/增持腾讯</strong>：核心仓位级别，5年期望+50%估值变化</li>
+<li><strong>不必恐慌豆包威胁</strong>：履约闭环锁定腾讯护城河，但需持续跟踪元宝在C端Agent的位置</li>
+<li><strong>关注阅文单独配置</strong>：作为腾讯系AI最大隐藏受益者</li>
+<li><strong>腾讯云不要给独立估值</strong>：作为"自用+生态"看待，不要按独立云公司估值</li>
+</ul>
+<h3 id="_3">关键监控指标（季度跟踪）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>指标</th>
+<th>阈值警报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>微信入口</td>
+<td>元宝MAU vs 豆包MAU比值</td>
+<td>&lt;1:3警报，&lt;1:5严重警报</td>
+</tr>
+<tr>
+<td>视频号</td>
+<td>货币化率（vs 抖音6.1%）</td>
+<td>5年内未达4%警报</td>
+</tr>
+<tr>
+<td>广告</td>
+<td>妙思渗透率 + AIM+使用率</td>
+<td>渗透下降警报</td>
+</tr>
+<tr>
+<td>游戏</td>
+<td>海外收入占比 + AI辅助开发降本数据</td>
+<td>海外占比停滞警报</td>
+</tr>
+<tr>
+<td>云</td>
+<td>腾讯云AI收入增速 vs 火山引擎</td>
+<td>差距持续拉大警报</td>
+</tr>
+<tr>
+<td>资本支出</td>
+<td>AI Capex/营收比</td>
+<td>&gt;15%警报（追字节烧钱信号）</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="8">8. 总结</h2>
+<p>腾讯在AI时代的最大资产<strong>不是混元大模型，而是14亿微信用户构成的"已建成入口+履约网络"</strong>。当通用大模型同质化后，真正稀缺的是"分发+支付+履约"三件套——这恰好是微信独有的。腾讯管理层的"AI in All"战略是符合自身禀赋的最优解：拒绝军备竞赛、务实接入DeepSeek、把AI变成现有业务的乘数。</p>
+<p><strong>业务严重分化</strong>是这次研究最重要的发现：游戏靠AI加深护城河、广告业务是兑现速度最快的红利曲线、阅文是被严重低估的AI最大受益者；但腾讯云已结构性掉队、腾讯音乐面临版权稀缺性被稀释的风险、视频号在算法竞争上追不上抖音。这种分化要求投资者<strong>不要把腾讯当成"一个AI概念股"，而要拆解成"AI赢家板块（游戏+广告+入口+阅文）+ AI输家板块（云+音乐+长视频）"分别评估</strong>。</p>
+<p>从投资角度看，腾讯符合李录"长期确定性+安全边际"框架：核心商业模式10年存活概率85%+，AI Net Positive期望+50%估值（5年），当前PE 15-18x对AI风险定价偏保守，下行风险有限上行空间充足。<strong>腾讯不是AI时代的最大赢家，但可能是最稳健的赢家</strong>——这本身就是符合巴菲特/李录式投资哲学的优质标的。</p>
+<blockquote>
+<p><strong>段永平式收尾</strong>：买股票就是买公司。腾讯在AI时代展示的最珍贵的特质，不是某项技术领先，而是<strong>Pony的克制和决断力</strong>——该烧钱的地方烧（微信生态AI化），该放手的地方放手（混元接入DeepSeek），该坚守的地方坚守（游戏长青策略）。这种"不为AI而AI"的务实主义，恰恰是穿越AI泡沫周期最重要的能力。</p>
+</blockquote>
+<hr />
+<h2 id="9">9. 方法论复盘</h2>
+<p>本次研究是四角色并行投研框架的"主题专项"应用——不是完整的公司估值分析，而是聚焦"AI影响"这一主题。验证了几点：</p>
+<ol>
+<li><strong>主题专项研究的价值</strong>：4个分析师从不同业务板块切入，最终汇总出"业务严重分化"的核心洞察——这个结论无法从单一全景报告中得出</li>
+<li><strong>AI维度需要"业务级颗粒度"</strong>：把腾讯当成"一个AI股"会丢失关键信息，必须拆到游戏/广告/云/音乐每个板块单独评估</li>
+<li><strong>AI影响 ≠ AI能力</strong>：腾讯AI技术能力（混元）不是国内第一，但腾讯AI业务受益度可能是BAT中最高的——因为它有最强的应用场景</li>
+<li><strong>数据来源要分级</strong>：4位分析师中3位拿到真实2025-2026年数据（财报+第三方），1位仅凭公开认知。汇总时要明确标注数据置信度</li>
+</ol>
+<hr />
+<h2 id="10">10. 报告免责声明</h2>
+<ol>
+<li>本报告基于公开信息和AI研究框架，不构成投资建议</li>
+<li>AGI出现的5%概率是主观判断，发生时几乎所有公司都受影响</li>
+<li>5年/10年情景概率为主观估算，建议每季度复盘</li>
+<li>数据时点为2026年4月，建议结合最新财报动态更新</li>
+<li>战略与长期价值章节部分数据基于公开认知推算（无WebSearch），其他三个板块数据基于WebSearch实时检索</li>
+</ol>
+<hr />
+<p><strong>Sources汇总</strong>（精选）：
+- 腾讯2025年报、2025Q3财报
+- IDC 2025Q2中国云市场数据、Omdia 2025H1中国AI云市场数据
+- 36氪、新浪财经、澎湃新闻、CBNData等
+- SuperCLUE中文大模型评测榜</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/e98ba87fde5c.html">证据与审计说明</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/549a5c7c8f83.html">腾讯研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/fa1ad1445212.html">腾讯研究附录：来源、真值、算术与尚未解决的缺口</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

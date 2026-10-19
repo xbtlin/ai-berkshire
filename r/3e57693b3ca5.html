@@ -1,0 +1,363 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>在线音乐——一台正在加速的订阅机器 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯音乐/index.html">腾讯音乐</a></div><h1>在线音乐——一台正在加速的订阅机器</h1><div class="meta"><a href="../companies/腾讯音乐/index.html">腾讯音乐</a> ｜ 2026-05-19 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF%E9%9F%B3%E4%B9%90/%E3%80%8A%E7%9C%8B%E6%87%82TME%E3%80%8B/02-%E5%9C%A8%E7%BA%BF%E9%9F%B3%E4%B9%90-%E4%B8%80%E5%8F%B0%E6%AD%A3%E5%9C%A8%E5%8A%A0%E9%80%9F%E7%9A%84%E8%AE%A2%E9%98%85%E6%9C%BA%E5%99%A8.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一组让你重新认识腾讯音乐赚钱方式的数字</a></li>
+<li><a href="#_2">一、超级会员：正在发生的关键变量</a><ul>
+<li><a href="#_3">超会是什么？</a></li>
+<li><a href="#_4">为什么超会这么重要？</a></li>
+<li><a href="#_5">超会能走多远？</a></li>
+</ul>
+</li>
+<li><a href="#2440">二、付费率：24%到40%的路有多远？</a><ul>
+<li><a href="#_6">现状</a></li>
+<li><a href="#_7">付费率提升的驱动力</a></li>
+<li><a href="#_8">付费率的天花板在哪？</a></li>
+</ul>
+</li>
+<li><a href="#arppu">三、ARPPU：每个用户每月愿意付多少钱？</a><ul>
+<li><a href="#_9">现状</a></li>
+<li><a href="#arppu_1">ARPPU提升的路径</a></li>
+<li><a href="#arppu_2">ARPPU的天花板</a></li>
+</ul>
+</li>
+<li><a href="#_10">四、增长模型：把三个变量放在一起</a></li>
+<li><a href="#_11">五、一个被忽略的事实：版权成本在下降</a></li>
+<li><a href="#_12">六、小结：订阅机器的成色</a></li>
+<li><a href="#_13">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂TME》系列 · 第 02 篇 · 核心业务
+阅读时间约 9 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">一组让你重新认识腾讯音乐赚钱方式的数字</h2>
+<p>先看一张收入结构变迁表：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>在线音乐收入（亿元）</th>
+<th>占比</th>
+<th>社交娱乐收入（亿元）</th>
+<th>占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2019年</td>
+<td>~80（估）</td>
+<td>~30%</td>
+<td>~190（估）</td>
+<td>~70%</td>
+</tr>
+<tr>
+<td>2021年</td>
+<td>~120（估）</td>
+<td>~38%</td>
+<td>~192</td>
+<td>~62%</td>
+</tr>
+<tr>
+<td>2023年</td>
+<td>177</td>
+<td>~58%</td>
+<td>129</td>
+<td>~42%</td>
+</tr>
+<tr>
+<td>2024年</td>
+<td>217</td>
+<td>76%</td>
+<td>67</td>
+<td>24%</td>
+</tr>
+<tr>
+<td>2025年</td>
+<td><strong>267</strong></td>
+<td><strong>81%</strong></td>
+<td><strong>62</strong></td>
+<td><strong>19%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>6年时间，在线音乐从三成变成八成。这不是"一块业务增长了"——这是<strong>整家公司换了一台发动机</strong>。</p>
+<p>更重要的是利润率的变化。社交娱乐本质是直播打赏分成——用户打赏100块，平台拿30-40块，主播拿60-70块，毛利率天然低。在线音乐订阅则不同——用户付18块月费，版权成本约占50-55%，剩下的几乎是纯利润。</p>
+<p>这解释了为什么总收入只涨了15.8%，但毛利率从2021年的30%一路爬升到了2025年的44.2%——<strong>赚钱的质量在变好</strong>。</p>
+<hr />
+<h2 id="_2">一、超级会员：正在发生的关键变量</h2>
+<p>如果只能关注腾讯音乐的一个指标，不是月活，不是总收入，而是<strong>超级会员</strong>（以下简称"超会"）。</p>
+<h3 id="_3">超会是什么？</h3>
+<p>腾讯音乐的会员体系分两档：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>月费</th>
+<th>核心权益</th>
+<th>用户规模</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>普通会员</td>
+<td>15-18元/月</td>
+<td>无损音质、免广告、下载</td>
+<td>1.274亿总付费用户</td>
+</tr>
+<tr>
+<td><strong>超级会员</strong></td>
+<td><strong>28-30元/月</strong></td>
+<td>普通权益 + 杜比全景声 + 车载 + 多设备 + 专属内容</td>
+<td><strong>2000万+</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>超会用户月付28-30元，是普通会员的1.5-2倍。目前2000万+用户，渗透率约16%（占总付费用户）。</p>
+<h3 id="_4">为什么超会这么重要？</h3>
+<p>算一笔账。</p>
+<p>目前1.274亿付费用户，平均每月付11.9元（ARPPU）。如果超会渗透率从16%提升到25%：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>超会用户数</th>
+<th>对ARPPU的拉动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前（16%渗透率）</td>
+<td>2000万</td>
+<td>ARPPU 11.9元/月</td>
+</tr>
+<tr>
+<td>目标（25%渗透率）</td>
+<td>3200万</td>
+<td>ARPPU预计提升至13-14元/月（估）</td>
+</tr>
+</tbody>
+</table></div>
+<p>超会渗透率每提升1个百分点，对应增加约127万超会用户，每人每月多付约12-15元。<strong>这相当于一个不需要新增用户、纯靠"让现有用户多花钱"的增长引擎。</strong></p>
+<h3 id="_5">超会能走多远？</h3>
+<p>支撑超会扩张的逻辑是清晰的：</p>
+<ol>
+<li><strong>车载场景</strong>——中国汽车保有量超3亿辆，车载音乐是刚需，超会的多设备权益直接对接这个场景</li>
+<li><strong>智能音箱/耳机场景</strong>——杜比全景声、空间音频这些功能需要超会才能用，硬件渗透率在提升</li>
+<li><strong>内容独占</strong>——部分独家内容和早期收听权只给超会用户，制造差异化</li>
+</ol>
+<p><strong>反方观点</strong>：超会28-30元/月的定价在中国市场已经不算便宜——爱奇艺连续会员25元/月、哔哩哔哩大会员25元/月、汽水音乐月卡只要8元。在经济环境偏弱的背景下，愿意为音乐付28元以上的用户群体可能比预期更小。超会渗透率可能在20-25%附近就会遇到天花板。</p>
+<hr />
+<h2 id="2440">二、付费率：24%到40%的路有多远？</h2>
+<h3 id="_6">现状</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>地区/平台</th>
+<th>付费率</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯音乐（中国）</td>
+<td><strong>24%</strong></td>
+<td>2025年数据，逐年提升中</td>
+</tr>
+<tr>
+<td>Spotify（全球）</td>
+<td>~39%</td>
+<td>全球平均</td>
+</tr>
+<tr>
+<td>海外成熟市场平均</td>
+<td>40-50%</td>
+<td>欧美日韩</td>
+</tr>
+</tbody>
+</table></div>
+<p>中国在线音乐付费率24%，只有全球成熟市场的一半。这是看多派最爱引用的数据——"还有翻倍空间"。</p>
+<h3 id="_7">付费率提升的驱动力</h3>
+<p><strong>第一，习惯已经养成。</strong> 2019年中国在线音乐付费率不到10%。从10%到24%，只用了6年。这说明用户付费意愿正在系统性提升，而不是昙花一现。</p>
+<p><strong>第二，免费内容在减少。</strong> 2021年独家版权反垄断之后，版权方反而更倾向于让所有平台都执行正版化。免费听歌的空间在缩小——随机播放、限时试听、低音质等限制把免费用户"推"向付费。</p>
+<p><strong>第三，年轻用户付费意愿更高。</strong> 95后、00后对"为内容付费"的接受度显著高于80后。随着用户代际更替，付费率自然上行。</p>
+<h3 id="_8">付费率的天花板在哪？</h3>
+<p>数据表明24%→35%这段路是大概率能走到的。但35%→40%以上开始变难。</p>
+<p>原因有两个：</p>
+<ol>
+<li>
+<p><strong>中国市场的特殊性</strong>——免费替代品永远存在。短视频平台（抖音、快手）提供海量音乐内容消费场景，用户不一定需要付费订阅音乐平台。这是Spotify在海外不面临的竞争。</p>
+</li>
+<li>
+<p><strong>汽水音乐的低价策略</strong>——8元月卡 vs 18元月卡，对价格敏感用户的分流效应是真实的。</p>
+</li>
+</ol>
+<p><strong>合理预期</strong>：付费率在3-5年内达到30-35%是大概率事件。达到40%需要更长时间，且前提是汽水音乐没有大规模抢走付费用户。</p>
+<hr />
+<h2 id="arppu">三、ARPPU：每个用户每月愿意付多少钱？</h2>
+<h3 id="_9">现状</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>ARPPU（月）</th>
+<th>折合人民币</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯音乐</td>
+<td>11.9元</td>
+<td>11.9元</td>
+</tr>
+<tr>
+<td>Spotify</td>
+<td>~$5.3</td>
+<td>~38元</td>
+</tr>
+<tr>
+<td>爱奇艺</td>
+<td>~20元（估）</td>
+<td>20元</td>
+</tr>
+<tr>
+<td>哔哩哔哩</td>
+<td>~15元（估）</td>
+<td>15元</td>
+</tr>
+</tbody>
+</table></div>
+<p>腾讯音乐的ARPPU只有Spotify的约三分之一。但直接对标Spotify不合理——两者的经济水平、消费能力、竞争格局完全不同。</p>
+<p><strong>更有意义的对标是国内同类平台</strong>。爱奇艺视频会员约20元/月，哔哩哔哩大会员约15元/月。腾讯音乐11.9元/月，在国内内容订阅里属于偏低水平。</p>
+<h3 id="arppu_1">ARPPU提升的路径</h3>
+<p><strong>路径一：超会渗透率提升。</strong> 这是最清晰的路——不需要涨价，只需要更多人升级超会。每多一个超会用户，混合ARPPU就往上走一点。</p>
+<p><strong>路径二：基础会员提价。</strong> 腾讯音乐在2023年将基础会员从13元提至15元，部分套餐到18元。对标爱奇艺的25元，理论上还有提价空间。但提价节奏要看竞争环境——汽水音乐8元月卡在那里摆着，贸然大幅提价可能把用户推向对手。</p>
+<p><strong>路径三：广告收入增加。</strong> 免费用户不付费，但可以贡献广告收入。目前腾讯音乐的广告变现效率偏低，有提升空间。</p>
+<h3 id="arppu_2">ARPPU的天花板</h3>
+<p>综合国内消费能力和竞争格局，ARPPU的合理天花板大概在<strong>20-25元/月</strong>。</p>
+<p>推导逻辑：假设3-5年后超会渗透率25%（月付28-30元）、普通会员ARPPU约15元（小幅提价后）→ 混合ARPPU约18-19元。如果普通会员也有一轮提价周期，可以到20-22元。</p>
+<p>这个天花板意味着：<strong>从当前11.9元到天花板20-25元，还有70-110%的空间。</strong> 但这不会一步到位——可能需要5-8年逐步实现。</p>
+<p><strong>反方观点</strong>：ARPPU提升的前提是竞争格局稳定。如果汽水音乐在未来2-3年大幅扩张付费用户（目前以8元低价月卡为主），腾讯音乐可能被迫"卷价格"而不是"提价格"。在这种情景下，ARPPU的提升速度会比预期慢得多。</p>
+<hr />
+<h2 id="_10">四、增长模型：把三个变量放在一起</h2>
+<p>订阅收入 = 付费用户数 × ARPPU</p>
+<p>把前面分析的三个变量组合起来：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>付费用户（亿）</th>
+<th>ARPPU（元/月）</th>
+<th>年化订阅收入（亿元）</th>
+<th>vs 2025年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025年实际</strong></td>
+<td>1.274</td>
+<td>11.9</td>
+<td>~182</td>
+<td>基准</td>
+</tr>
+<tr>
+<td>中性（3年后）</td>
+<td>1.5（付费率30%+）</td>
+<td>14-15</td>
+<td>~252-270</td>
+<td><strong>+39-48%</strong></td>
+</tr>
+<tr>
+<td>乐观（5年后）</td>
+<td>1.8（付费率35%+）</td>
+<td>18-20</td>
+<td>~389-432</td>
+<td><strong>+114-137%</strong></td>
+</tr>
+<tr>
+<td>悲观（3年后）</td>
+<td>1.2（汽水分流）</td>
+<td>12-13</td>
+<td>~173-187</td>
+<td><strong>-5%至+3%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>中性情景下，纯订阅收入3年内有40-50%的增长空间。</strong> 这不需要任何奇迹——只需要付费率和ARPPU按目前的趋势继续走。</p>
+<p>乐观情景翻倍以上，但需要超会大规模渗透 + 竞争格局保持有利。</p>
+<p>悲观情景是汽水音乐大规模抢走付费用户——在这种情况下，腾讯音乐的订阅收入可能停滞甚至小幅下降。</p>
+<hr />
+<h2 id="_11">五、一个被忽略的事实：版权成本在下降</h2>
+<p>2021年，国家市场监管总局要求腾讯音乐放弃独家版权。当时市场恐慌——"没了独家版权，腾讯音乐的护城河不就塌了吗？"</p>
+<p>但事后发生了一件反直觉的事：<strong>独家版权取消后，腾讯音乐的版权成本反而下降了。</strong></p>
+<p>原因是：独家版权时代，唱片公司知道你必须买——价格自然越谈越贵。非独家之后，腾讯音乐可以对每首歌进行"值不值得买"的精算——不划算的就不要了，反正竞争对手也在买同样的歌。版权采购从"军备竞赛"变成了"精打细算"。</p>
+<p>结果：毛利率从2021年的30%一路升至2025年的44.2%，Q1 2026继续升至44.9%。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>毛利率</th>
+<th>趋势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td>30.0%</td>
+<td>独家版权时代末期</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>33.5%</td>
+<td>非独家化第一年</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>38.4%</td>
+<td>持续改善</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>42.3%</td>
+<td>加速改善</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>44.2%</td>
+<td>新高</td>
+</tr>
+<tr>
+<td>Q1 2026</td>
+<td>44.9%</td>
+<td>继续新高</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>反方观点</strong>：版权成本下降有一部分是阶段性的——独家合约到期后的"红利期"。如果唱片公司未来联合提价（类似Spotify在海外面临的局面），毛利率可能回吐一部分。但至少目前，趋势仍然是向好的。</p>
+<hr />
+<h2 id="_12">六、小结：订阅机器的成色</h2>
+<p>把这一篇的分析总结成几句话：</p>
+<ol>
+<li><strong>收入结构已经完成转型</strong>——在线音乐占81%，社交娱乐的拖累接近消除</li>
+<li><strong>超会是最清晰的增长引擎</strong>——2000万用户、16%渗透率，每提升1个百分点就是实打实的收入增量</li>
+<li><strong>付费率从24%到30-35%是大概率事件</strong>，到40%需要更长时间</li>
+<li><strong>ARPPU天花板在20-25元</strong>——距当前11.9元还有70-110%的空间，但需要5-8年逐步实现</li>
+<li><strong>版权成本在下降</strong>——毛利率连续四年提升，这是结构性的而非偶然的</li>
+</ol>
+<p><strong>如果没有竞争对手搅局</strong>，腾讯音乐就是一台缓慢但确定的订阅增长机器——付费用户在增加、单用户收入在提升、成本在下降。三者叠加，利润增长可以维持很多年。</p>
+<p>但问题是——<strong>有人在搅局</strong>。</p>
+<p>下一篇要回答的就是这个问题：汽水音乐到底是多大的威胁？</p>
+<hr />
+<h2 id="_13">下期预告</h2>
+<p>下一篇拆腾讯音乐面临的最大变量——来自字节跳动的汽水音乐。要回答几个尖锐问题：</p>
+<ul>
+<li>1.56亿月活、日活4431万——汽水音乐凭什么这么快？</li>
+<li>82%的用户来自抖音——这意味着什么？</li>
+<li>2100万"徘徊用户"——他们会永久离开腾讯音乐吗？</li>
+<li>腾讯音乐的防线到底在哪？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂TME》系列第02篇。后续3篇将陆续推出。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/edbfca056a9b.html">腾讯音乐：利润涨25%，股价跌68%</a><div class="meta">2026-07-13 · 公众号</div></li><li><a href="../r/f777b4f63fb4.html">腾讯音乐（TME）投资研究报告</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/cf30944dae49.html">腾讯音乐 — 风险与管理层评估</a><div class="meta">2026-06-20 · 组织管理</div></li><li><a href="../r/6756d6c23ef3.html">在线音乐行业 — 竞争格局与趋势分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/1bd99e2e57d4.html">腾讯音乐 — 财务与估值分析</a><div class="meta">2026-06-20 · 估值仓位</div></li><li><a href="../r/76cdb38d7bcd.html">腾讯音乐 — 商业模式与护城河分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/b218133948a8.html">$8.47的腾讯音乐，是黄金坑还是价值陷阱</a><div class="meta">2026-05-21 · 公众号</div></li><li><a href="../r/9e8706deb5af.html">汽水音乐与三波暴跌：市场在恐惧什么</a><div class="meta">2026-05-21 · 公众号</div></li><li><a href="../r/b545eabbce8b.html">腾讯音乐（TME）深度投研报告</a><div class="meta">2026-05-19 · 深度系列</div></li><li><a href="../r/57a4782f277d.html">价格判断——$8.47买入的真问题</a><div class="meta">2026-05-19 · 深度系列</div></li><li><a href="../r/712ba9c0364c.html">汽水音乐——来自抖音的致命威胁</a><div class="meta">2026-05-19 · 深度系列</div></li><li><a href="../r/d0489fa3a8f0.html">一家被市场抛弃的好公司</a><div class="meta">2026-05-19 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

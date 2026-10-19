@@ -1,0 +1,627 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>晨星宽护城河筛选：两期对比与前瞻回测 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../screens/晨星估值筛选/index.html">晨星估值筛选</a></div><h1>晨星宽护城河筛选：两期对比与前瞻回测</h1><div class="meta"><a href="../screens/晨星估值筛选/index.html">晨星估值筛选</a> ｜ 2026-06-07 · 横评对比 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%99%A8%E6%98%9F%E4%BC%B0%E5%80%BC%E7%AD%9B%E9%80%89/%E4%B8%A4%E6%9C%9F%E5%AF%B9%E6%AF%94-202606vs202608.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、两期口径差异（不可直接比较总数）</a></li>
+<li><a href="#6-24">二、前瞻回测：6 月那份名单，2.4 个月后表现如何</a><ul>
+<li><a href="#6">按 6 月低估程度分组</a></li>
+<li><a href="#6_1">明细（按 6 月低估程度排序）</a></li>
+</ul>
+</li>
+<li><a href="#moat">三、这个结果与 MOAT 十年实盘方向相反</a></li>
+<li><a href="#_2">四、晨星公允价值的变动（两期可直接对照）</a><ul>
+<li><a href="#_3">一处重要的外部印证</a></li>
+<li><a href="#_4">公允价值的"黏性"再次得到验证</a></li>
+</ul>
+</li>
+<li><a href="#6-8">五、6 月入选、8 月已不在名单的公司</a></li>
+<li><a href="#_5">六、结论</a></li>
+</ul>
+</div>
+</details><article><p><strong>对比对象</strong>：<code>晨星宽护城河全球低估筛选-20260607.md</code>（2026-06-07）与 <code>晨星宽护城河深度折价全球筛选-20260817.md</code>（2026-08-17）</p>
+<p><strong>回测区间</strong>：2026-06-08 → 2026-08-20（2.4 个月）</p>
+<hr />
+<h2 id="_1">一、两期口径差异（不可直接比较总数）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>6 月版</th>
+<th>8 月版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>门槛</td>
+<td>FV/Price ≥ <strong>1.30</strong>（+30%）</td>
+<td>FV/Price ≥ <strong>1.74</strong>（+74%）</td>
+</tr>
+<tr>
+<td>入选家数</td>
+<td>约 40 家</td>
+<td>10 家</td>
+</tr>
+<tr>
+<td>数据来源</td>
+<td>晨星公开页面 + 第三方</td>
+<td>晨星筛选器 API 实测 + 分析师报告原件</td>
+</tr>
+<tr>
+<td>是否含量化 FV</td>
+<td>否</td>
+<td>是（双口径对照）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>8 月版门槛严得多</strong>，故家数少不代表机会变少。若把 8 月版门槛放宽到 1.30，可比家数会显著增加。</p>
+<hr />
+<h2 id="6-24">二、前瞻回测：6 月那份名单，2.4 个月后表现如何</h2>
+<p>取 6 月名单中<strong>美国上市</strong>的 34 只（港股/A股/欧股因数据源限制未纳入），用 2026-06-08 与 2026-08-20 的含股息调整收盘价计算。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>样本</td>
+<td>34 只</td>
+</tr>
+<tr>
+<td>平均涨跌</td>
+<td><strong>+9.4%</strong></td>
+</tr>
+<tr>
+<td>中位数</td>
+<td><strong>+12.7%</strong></td>
+</tr>
+<tr>
+<td>基准（SPY）</td>
+<td>+3.4%</td>
+</tr>
+<tr>
+<td><strong>平均超额</strong></td>
+<td><strong>+6.0 个百分点</strong></td>
+</tr>
+<tr>
+<td><strong>跑赢基准</strong></td>
+<td><strong>26/34（76%）</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="6">按 6 月低估程度分组</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>分组</th>
+<th>平均涨跌</th>
+<th>超额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>低估最深的一半（17 只）</td>
+<td>+10.3%</td>
+<td><strong>+6.8pp</strong></td>
+</tr>
+<tr>
+<td>低估较浅的一半（17 只）</td>
+<td>+8.6%</td>
+<td>+5.2pp</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>折价越深、后续表现越好</strong>，方向与筛选逻辑一致，但两组差距仅 1.6pp，在 34 只样本、2.4 个月窗口下不具统计显著性。</p>
+<h3 id="6_1">明细（按 6 月低估程度排序）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>代码</th>
+<th>6月FV</th>
+<th>6月价</th>
+<th>现价</th>
+<th>涨跌</th>
+<th>超额</th>
+<th>6月FV/P</th>
+<th>现FV/P</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPB</td>
+<td>60.0</td>
+<td>21.13</td>
+<td>23.77</td>
+<td>+12.5%</td>
+<td>+9.1%</td>
+<td>2.84</td>
+<td>2.52</td>
+</tr>
+<tr>
+<td>ADBE</td>
+<td>560.0</td>
+<td>244.99</td>
+<td>272.22</td>
+<td>+11.1%</td>
+<td>+7.7%</td>
+<td>2.29</td>
+<td>2.06</td>
+</tr>
+<tr>
+<td>NKE</td>
+<td>94.0</td>
+<td>43.23</td>
+<td>40.21</td>
+<td><strong>−7.0%</strong></td>
+<td>−10.4%</td>
+<td>2.17</td>
+<td>2.34</td>
+</tr>
+<tr>
+<td>BABA</td>
+<td>258.0</td>
+<td>119.00</td>
+<td>130.53</td>
+<td>+9.7%</td>
+<td>+6.3%</td>
+<td>2.17</td>
+<td>1.98</td>
+</tr>
+<tr>
+<td>YUMC</td>
+<td>76.0</td>
+<td>42.33</td>
+<td>48.88</td>
+<td>+15.5%</td>
+<td>+12.0%</td>
+<td>1.80</td>
+<td>1.55</td>
+</tr>
+<tr>
+<td>NOW</td>
+<td>200.0</td>
+<td>114.19</td>
+<td>129.75</td>
+<td>+13.6%</td>
+<td>+10.2%</td>
+<td>1.75</td>
+<td>1.54</td>
+</tr>
+<tr>
+<td>SAP</td>
+<td>317.0</td>
+<td>181.92</td>
+<td>217.09</td>
+<td>+19.3%</td>
+<td>+15.9%</td>
+<td>1.74</td>
+<td>1.46</td>
+</tr>
+<tr>
+<td>CLX</td>
+<td>163.0</td>
+<td>94.06</td>
+<td>106.04</td>
+<td>+12.7%</td>
+<td>+9.3%</td>
+<td>1.73</td>
+<td>1.54</td>
+</tr>
+<tr>
+<td>GWRE</td>
+<td>220.0</td>
+<td>127.19</td>
+<td>181.79</td>
+<td><strong>+42.9%</strong></td>
+<td>+39.5%</td>
+<td>1.73</td>
+<td>1.21</td>
+</tr>
+<tr>
+<td>BR</td>
+<td>255.0</td>
+<td>147.98</td>
+<td>178.50</td>
+<td>+20.6%</td>
+<td>+17.2%</td>
+<td>1.72</td>
+<td>1.43</td>
+</tr>
+<tr>
+<td>SNPS</td>
+<td>789.0</td>
+<td>473.48</td>
+<td>397.92</td>
+<td><strong>−16.0%</strong></td>
+<td>−19.4%</td>
+<td>1.67</td>
+<td>1.98</td>
+</tr>
+<tr>
+<td>ABEV</td>
+<td>5.0</td>
+<td>3.06</td>
+<td>2.83</td>
+<td>−7.7%</td>
+<td>−11.1%</td>
+<td>1.63</td>
+<td>1.77</td>
+</tr>
+<tr>
+<td>PHG</td>
+<td>41.0</td>
+<td>25.82</td>
+<td>27.50</td>
+<td>+6.5%</td>
+<td>+3.1%</td>
+<td>1.59</td>
+<td>1.49</td>
+</tr>
+<tr>
+<td>STZ</td>
+<td>220.0</td>
+<td>139.75</td>
+<td>134.14</td>
+<td>−4.0%</td>
+<td>−7.4%</td>
+<td>1.57</td>
+<td>1.64</td>
+</tr>
+<tr>
+<td>CRM</td>
+<td>280.0</td>
+<td>182.08</td>
+<td>205.43</td>
+<td>+12.8%</td>
+<td>+9.4%</td>
+<td>1.54</td>
+<td>1.36</td>
+</tr>
+<tr>
+<td>ZBH</td>
+<td>130.0</td>
+<td>87.04</td>
+<td>98.97</td>
+<td>+13.7%</td>
+<td>+10.3%</td>
+<td>1.49</td>
+<td>1.31</td>
+</tr>
+<tr>
+<td>DHR</td>
+<td>270.0</td>
+<td>183.15</td>
+<td>215.91</td>
+<td>+17.9%</td>
+<td>+14.5%</td>
+<td>1.47</td>
+<td>1.25</td>
+</tr>
+<tr>
+<td>SONY</td>
+<td>32.5</td>
+<td>22.15</td>
+<td>23.58</td>
+<td>+6.5%</td>
+<td>+3.0%</td>
+<td>1.47</td>
+<td>1.38</td>
+</tr>
+<tr>
+<td>MSFT</td>
+<td>600.0</td>
+<td>410.97</td>
+<td>481.15</td>
+<td>+17.1%</td>
+<td>+13.7%</td>
+<td>1.46</td>
+<td>1.25</td>
+</tr>
+<tr>
+<td>META</td>
+<td>850.0</td>
+<td>584.85</td>
+<td>545.83</td>
+<td>−6.7%</td>
+<td>−10.1%</td>
+<td>1.45</td>
+<td>1.56</td>
+</tr>
+<tr>
+<td>EL</td>
+<td>120.0</td>
+<td>84.64</td>
+<td>96.15</td>
+<td>+13.6%</td>
+<td>+10.2%</td>
+<td>1.42</td>
+<td>1.25</td>
+</tr>
+<tr>
+<td>AVGO</td>
+<td>550.0</td>
+<td>395.97</td>
+<td>364.03</td>
+<td>−8.1%</td>
+<td>−11.5%</td>
+<td>1.39</td>
+<td>1.51</td>
+</tr>
+<tr>
+<td>MKC</td>
+<td>65.0</td>
+<td>47.18</td>
+<td>55.22</td>
+<td>+17.0%</td>
+<td>+13.6%</td>
+<td>1.38</td>
+<td>1.18</td>
+</tr>
+<tr>
+<td>MAS</td>
+<td>95.0</td>
+<td>68.96</td>
+<td>73.33</td>
+<td>+6.3%</td>
+<td>+2.9%</td>
+<td>1.38</td>
+<td>1.30</td>
+</tr>
+<tr>
+<td>MDT</td>
+<td>110.0</td>
+<td>79.97</td>
+<td>92.30</td>
+<td>+15.4%</td>
+<td>+12.0%</td>
+<td>1.38</td>
+<td>1.19</td>
+</tr>
+<tr>
+<td>GOOGL</td>
+<td>496.0</td>
+<td>363.31</td>
+<td>340.67</td>
+<td>−6.2%</td>
+<td>−9.7%</td>
+<td>1.37</td>
+<td>1.46</td>
+</tr>
+<tr>
+<td>GEHC</td>
+<td>88.0</td>
+<td>64.63</td>
+<td>74.06</td>
+<td>+14.6%</td>
+<td>+11.2%</td>
+<td>1.36</td>
+<td>1.19</td>
+</tr>
+<tr>
+<td>NVDA</td>
+<td>280.0</td>
+<td>208.64</td>
+<td>216.85</td>
+<td>+3.9%</td>
+<td>+0.5%</td>
+<td>1.34</td>
+<td>1.29</td>
+</tr>
+<tr>
+<td>APH</td>
+<td>190.0</td>
+<td>143.38</td>
+<td>153.11</td>
+<td>+6.8%</td>
+<td>+3.4%</td>
+<td>1.33</td>
+<td>1.24</td>
+</tr>
+<tr>
+<td>SCHW</td>
+<td>114.0</td>
+<td>87.82</td>
+<td>109.79</td>
+<td>+25.0%</td>
+<td>+21.6%</td>
+<td>1.30</td>
+<td>1.04</td>
+</tr>
+<tr>
+<td>ANET</td>
+<td>190.0</td>
+<td>156.40</td>
+<td>183.75</td>
+<td>+17.5%</td>
+<td>+14.1%</td>
+<td>1.21</td>
+<td>1.03</td>
+</tr>
+<tr>
+<td>DELL</td>
+<td>460.0</td>
+<td>400.15</td>
+<td>434.78</td>
+<td>+8.7%</td>
+<td>+5.2%</td>
+<td>1.15</td>
+<td>1.06</td>
+</tr>
+<tr>
+<td>VRT</td>
+<td>344.0</td>
+<td>300.51</td>
+<td>264.63</td>
+<td>−11.9%</td>
+<td>−15.4%</td>
+<td>1.14</td>
+<td>1.30</td>
+</tr>
+<tr>
+<td>PLTR</td>
+<td>150.0</td>
+<td>136.47</td>
+<td>173.96</td>
+<td><strong>+27.5%</strong></td>
+<td>+24.0%</td>
+<td>1.10</td>
+<td>0.86</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="moat">三、这个结果与 MOAT 十年实盘方向相反</h2>
+<p>8 月版报告第十五节用 MOAT / MOTI 两只 ETF 做了十年检验，结论是<strong>跑输基准</strong>（MOAT 年化落后标普 1.12pp，MOTI 落后 3.27pp）。而本次 2.4 个月的前瞻回测<strong>大幅跑赢</strong>（+6.0pp，胜率 76%）。</p>
+<p><strong>两者不矛盾，但必须理解各自的证据等级</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>MOAT 十年实盘</th>
+<th>本次 2.4 个月回测</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>样本长度</td>
+<td>9.8 年</td>
+<td><strong>0.2 年</strong></td>
+</tr>
+<tr>
+<td>是否真金白银</td>
+<td>是（含费用与换手成本）</td>
+<td>否（纸面组合，等权、无成本）</td>
+</tr>
+<tr>
+<td>是否可能有选择偏差</td>
+<td>否（指数规则公开、机械执行）</td>
+<td><strong>是</strong>（名单由人工整理，无法排除事后视角）</td>
+</tr>
+<tr>
+<td>证据等级</td>
+<td><strong>高</strong></td>
+<td><strong>低</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>2.4 个月是噪音，不是证据。</strong> 34 只等权组合在两个半月里跑赢 6 个百分点，用任何随机选股都有相当概率复现。这份回测的价值不在于"证明筛选有效"，而在于<strong>它记录了一个可复核的时点，将来可以持续追踪</strong>。</p>
+<p><strong>建议的正确用法</strong>：把 6 月版当作一个已封存的样本，每季度重算一次，积累到 3 年以上再看有没有稳定超额。单次窗口不构成任何结论。</p>
+<hr />
+<h2 id="_2">四、晨星公允价值的变动（两期可直接对照）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>6月 FV</th>
+<th>8月 FV</th>
+<th>变动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阿里巴巴（ADR）</td>
+<td><strong>$258</strong></td>
+<td><strong>$241</strong></td>
+<td><strong>−6.6%</strong></td>
+</tr>
+<tr>
+<td>Campbell's</td>
+<td>$60</td>
+<td>$56</td>
+<td>−6.7%</td>
+</tr>
+<tr>
+<td>腾讯（港股）</td>
+<td>HK$800</td>
+<td>HK$780</td>
+<td>−2.5%</td>
+</tr>
+<tr>
+<td>Prosus</td>
+<td>€74</td>
+<td>€72</td>
+<td>−2.7%</td>
+</tr>
+<tr>
+<td>高乐氏 Clorox</td>
+<td>$163</td>
+<td>$155</td>
+<td>−4.9%</td>
+</tr>
+<tr>
+<td>耐克</td>
+<td>$94</td>
+<td>$94</td>
+<td><strong>0%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_3">一处重要的外部印证</h3>
+<p>6 月版报告独立记录的阿里公允价值是 <strong>$258</strong>。这与 8 月版第 12.4 节的更正完全吻合——晨星阿里的公允价值序列为 $258（2025-11-18 设定）→ $241（2026-07-06 设定、07-08 道琼斯见报），<strong>是下调 7%，而非初版误写的"由 $219 上调"</strong>。</p>
+<p><strong>$219 这个数字在两期报告中都不存在</strong>，进一步确认它是笔者由指数 P/FV 反推的产物。这条外部印证独立于 8 月版所依据的 24 份分析师报告原件，构成第二条证据链。</p>
+<h3 id="_4">公允价值的"黏性"再次得到验证</h3>
+<p>两个多月里，六家公司的公允价值变动幅度都在 <strong>0% 到 −6.7%</strong> 之间，而同期股价波动远大于此（GWRE +42.9%、SNPS −16.0%）。这与 8 月版 15.3 节的结论一致：<strong>晨星公允价值的特征是"黏"</strong>，深度折价主要由股价崩塌制造，而非估值下调制造。</p>
+<hr />
+<h2 id="6-8">五、6 月入选、8 月已不在名单的公司</h2>
+<p>这些公司多数并非基本面恶化，而是<strong>股价涨上去了</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>6月 FV/P</th>
+<th>现 FV/P</th>
+<th>主因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guidewire</td>
+<td>1.73</td>
+<td>1.21</td>
+<td>股价 <strong>+42.9%</strong></td>
+</tr>
+<tr>
+<td>嘉信理财</td>
+<td>1.30</td>
+<td>1.04</td>
+<td>股价 +25.0%</td>
+</tr>
+<tr>
+<td>Palantir</td>
+<td>1.10</td>
+<td>0.86</td>
+<td>股价 +27.5%，已转为高估</td>
+</tr>
+<tr>
+<td>Broadridge</td>
+<td>1.72</td>
+<td>1.43</td>
+<td>股价 +20.6%</td>
+</tr>
+<tr>
+<td>SAP</td>
+<td>1.74</td>
+<td>1.46</td>
+<td>股价 +19.3%</td>
+</tr>
+<tr>
+<td>百胜中国</td>
+<td>1.80</td>
+<td>1.55</td>
+<td>股价 +15.5%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>名单周转很快，这本身是使用这类筛选的关键约束</strong>：入选不是买入信号的长期有效凭证，需要按最新价格重算。</p>
+<hr />
+<h2 id="_5">六、结论</h2>
+<ol>
+<li><strong>两期口径不同，家数不可直接比较。</strong> 8 月版门槛 +74% 远严于 6 月版的 +30%。</li>
+<li><strong>6 月名单在随后 2.4 个月大幅跑赢基准（+6.0pp，胜率 76%），但这是噪音级证据</strong>，与 MOAT 十年跑输的高等级证据不矛盾。正确做法是持续追踪而非据此下结论。</li>
+<li><strong>晨星公允价值两个多月内变动幅度均在 7% 以内</strong>，"黏性"特征再次确认。</li>
+<li><strong>阿里 $258 → $241 的下调获两期报告独立互证</strong>，8 月版第 12.4 节的更正成立。</li>
+<li><strong>名单周转快</strong>，掉出者多因股价上涨而非基本面恶化。</li>
+</ol></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/298bb77e05d2.html">晨星宽护城河 × 深度折价全球筛选</a><div class="meta">2026-08-17 · 估值仓位</div></li><li><a href="../r/4aff0db5ec0a.html">晨星宽护城河 + 低估30%以上：全球市场筛选</a><div class="meta">2026-06-07 · 估值仓位</div></li><li><a href="../r/b9ca046c0fd7.html">晨星宽护城河 + 低估30%以上：全市场筛选</a><div class="meta">2026-06-07 · 估值仓位</div></li><li><a href="../r/03f35831826b.html">AI五层蛋糕50家公司：公允价值/股价倒排</a><div class="meta">2026-06-06 · 估值仓位</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

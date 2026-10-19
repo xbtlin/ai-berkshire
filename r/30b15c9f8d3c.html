@@ -1,0 +1,785 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>蚂蚁数科 IPO 概率团队研究 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/蚂蚁数科/index.html">蚂蚁数科</a></div><h1>蚂蚁数科 IPO 概率团队研究</h1><div class="meta"><a href="../companies/蚂蚁数科/index.html">蚂蚁数科</a> ｜ 2026-04-17 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%9A%82%E8%9A%81%E6%95%B0%E7%A7%91-team-20260417/06-IPO%E6%A6%82%E7%8E%87%E5%88%86%E6%9E%90.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">〇、执行摘要</a></li>
+<li><a href="#_2">一、四维度并行研究结论</a><ul>
+<li><a href="#11">1.1 监管路径分析师 → 监管端条件概率</a></li>
+<li><a href="#12">1.2 母公司+股东动态分析师 → 母公司放行概率</a></li>
+<li><a href="#13">1.3 业务+财务成熟度分析师 → 业务达标概率</a></li>
+<li><a href="#14">1.4 资本市场窗口+对标分析师 → 市场窗口概率</a></li>
+</ul>
+</li>
+<li><a href="#_3">二、四维度联合概率合成</a><ul>
+<li><a href="#21">2.1 各维度概率对比</a></li>
+<li><a href="#22-midpoint">2.2 联合概率粗算（取midpoint）</a></li>
+<li><a href="#23">2.3 情景分析框架（更可靠的合成方式）</a></li>
+<li><a href="#24">2.4 关键修正：与"完全成功率"的差距</a></li>
+</ul>
+</li>
+<li><a href="#_4">三、按时间轴的最可能路径预演</a><ul>
+<li><a href="#31-2026-8">3.1 2026年（剩余 8 个月）</a></li>
+<li><a href="#32-2027">3.2 2027年</a></li>
+<li><a href="#33-2028">3.3 2028年（甜蜜窗口）</a></li>
+<li><a href="#34-2029">3.4 2029年（基线窗口）</a></li>
+<li><a href="#35-2030">3.5 2030+（兜底窗口）</a></li>
+</ul>
+</li>
+<li><a href="#_5">四、十大关键变量与跟踪信号</a></li>
+<li><a href="#_6">五、最终判断</a><ul>
+<li><a href="#51">5.1 一句话结论</a></li>
+<li><a href="#52">5.2 三种"心智模型"</a></li>
+<li><a href="#53">5.3 与历史对标的对比</a></li>
+<li><a href="#54">5.4 三个核心结论</a></li>
+</ul>
+</li>
+<li><a href="#4">六、附录：4位分析师详细报告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>研究日期</strong>：2026-04-19
+<strong>研究方法</strong>：4维度并行分析（监管路径 / 母公司动态 / 业务成熟度 / 市场窗口对标）+ 联合概率合成
+<strong>核心问题</strong>：蚂蚁数科在2026-2032年区间，独立IPO的概率分布是多少？</p>
+</blockquote>
+<hr />
+<h2 id="_1">〇、执行摘要</h2>
+<p>蚂蚁数科 IPO 是一个 <strong>"四把锁同时开"</strong> 的多变量问题：监管端（金控+稳定币）、母公司端（蚂蚁集团本体IPO+优先级）、业务端（关联交易+独立性）、市场端（窗口+对标）任何一把锁打不开都会卡住整体进程。</p>
+<p><strong>核心结论</strong>：
+1. <strong>2026-2027年独立IPO概率极低（综合&lt;10%）</strong>：四把锁中至少3把没解开
+2. <strong>2028-2029是甜蜜窗口（综合35-45%）</strong>：但要求蚂蚁国际先成功上市破冰
+3. <strong>5年内任何形式上市的累计概率约65-75%</strong>（含独立IPO、作为集团分部、合并打包）
+4. <strong>5年内"完全独立IPO"成功概率约35-45%</strong>
+5. <strong>永远不独立IPO（被回购整合）概率15-25%</strong>
+6. <strong>历史上分拆型金融科技子公司"完全成功"案例为零</strong>（8/8 部分成功或失败）</p>
+<hr />
+<h2 id="_2">一、四维度并行研究结论</h2>
+<h3 id="11">1.1 监管路径分析师 → 监管端条件概率</h3>
+<p><strong>核心瓶颈</strong>：
+1. <strong>金控牌照锁</strong>：央行2020年要求蚂蚁集团整体申设金控公司，至今未发牌（2026.4）→ 母公司金控未拿，子公司分拆"血缘合法性"存瑕疵
+2. <strong>Web3/RWA锁</strong>：2025.9证监会非正式叫停中资券商在港RWA业务；<strong>2026.4.10 香港首批稳定币牌照仅发汇丰、碇点2张，蚂蚁数科未入首批</strong></p>
+<p><strong>重大更新</strong>：之前预期"蚂蚁可能入围首批稳定币牌照"已被否定。蚂蚁数科最早第二批（2026Q4-2027）。</p>
+<p><strong>监管放行条件概率</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>监管放行概率</th>
+<th>关键前提</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026</td>
+<td>5-10%</td>
+<td>几乎不可能</td>
+</tr>
+<tr>
+<td>2027</td>
+<td>20-30%</td>
+<td>金控落地+稳定币第二批+证监会涉Web3备案明确</td>
+</tr>
+<tr>
+<td>2028</td>
+<td>45-55%</td>
+<td>业务"去金融化"或金控落地</td>
+</tr>
+<tr>
+<td>2029</td>
+<td>60-70%</td>
+<td>三大牌照齐备+常态化监管满5年</td>
+</tr>
+<tr>
+<td>2030+</td>
+<td>75-85%</td>
+<td>监管端基本无障碍</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>最不可控变量</strong>：人民币稳定币战略定位（央行+外管局+港府+顶层共同决策）</p>
+<hr />
+<h3 id="12">1.2 母公司+股东动态分析师 → 母公司放行概率</h3>
+<p><strong>核心瓶颈</strong>：
+1. <strong>母公司本体IPO是数科IPO的"前置必要条件"</strong>——港交所历史上未批准过未上市母公司分拆子公司单独IPO
+2. <strong>数科是三家子公司中"老三"</strong>：蚂蚁国际（2026目标$300-400亿）+ OceanBase（"水到渠成"）优先级更高
+3. <strong>韩歆毅CFO型CEO偏好"集团整体IPO最大化估值"</strong>——数科可能被作为"科技服务分部"披露而非独立IPO
+4. <strong>股东无强动力推数科独立IPO</strong>：杭州君瀚（马云方）表决权降至6.21%，杭州阿里巴巴33%财务投资人化，杭州君澳20.66%（员工持股平台）发声权弱</p>
+<p><strong>母公司放行概率</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>母公司放行概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026</td>
+<td>&lt;5%</td>
+</tr>
+<tr>
+<td>2027</td>
+<td>10-15%</td>
+</tr>
+<tr>
+<td>2028</td>
+<td>25-30%</td>
+</tr>
+<tr>
+<td>2029</td>
+<td>35-45%</td>
+</tr>
+<tr>
+<td>2030+</td>
+<td>40-50%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>四种情景</strong>（互斥）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>对数科IPO含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蚂蚁国际先 → 数科后</td>
+<td><strong>45%</strong></td>
+<td>数科2029-2030独立IPO</td>
+</tr>
+<tr>
+<td>蚂蚁集团整体IPO，数科作分部</td>
+<td>25%</td>
+<td>数科被无限期推迟独立IPO</td>
+</tr>
+<tr>
+<td>数科+OceanBase合并打包</td>
+<td>15%</td>
+<td>2028-2029合并IPO</td>
+</tr>
+<tr>
+<td>长期不上市/被回购整合</td>
+<td>15%</td>
+<td>数科IPO永远不发生</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h3 id="13">1.3 业务+财务成熟度分析师 → 业务达标概率</h3>
+<p><strong>核心瓶颈</strong>：不是规模，是<strong>结构</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>港股要求</th>
+<th>蚂蚁数科现状</th>
+<th>达标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营收规模</td>
+<td>主板≥5亿港币</td>
+<td>第三方60-90亿</td>
+<td>✅ 已达标</td>
+</tr>
+<tr>
+<td>盈利能力</td>
+<td>3年累计≥8000万港币</td>
+<td>2024盈亏平衡</td>
+<td>🟡 2026-2027达标</td>
+</tr>
+<tr>
+<td>关联交易占比</td>
+<td>软门槛&lt;30%</td>
+<td><strong>30-40%</strong></td>
+<td>🔴 2027-2028降至30%下</td>
+</tr>
+<tr>
+<td><strong>资产独立性</strong></td>
+<td>"五独立"中最关键</td>
+<td>蚂蚁链IP/Agentar模型权属与集团交叉</td>
+<td>🔴 <strong>最大隐患</strong></td>
+</tr>
+<tr>
+<td>3年完整审计</td>
+<td>必须</td>
+<td>2024才独立，最早2026完成</td>
+<td>🟡 2027上半年具备</td>
+</tr>
+<tr>
+<td>业务故事</td>
+<td>招股书清晰</td>
+<td>"ABC"+RWA+稳定币条线繁多</td>
+<td>🟡 需2027后聚焦</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>业务达标累计概率</strong>（按递交时间）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>业务达标累计概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2027前递交</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>2028前累计递交</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>2029前累计递交</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>永远不上市</td>
+<td>5-10%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>三种业务路径</strong>：
+- 情景A（聚焦+剥离非核心）：2027-2028 IPO，估值300-450亿（PS 4-5x），概率30%
+- <strong>情景B（维持现状自然增长）：2028-2029 IPO，估值450-700亿（PS 5-7x），概率50%</strong>
+- 情景C（扩张+并购）：2030+ IPO，估值1000-2000亿，概率20%</p>
+<p><strong>关键警示</strong>：CEO公开口径"100-150亿管理口径"不会进招股书，市场对真实第三方收入的认知会重新校准估值。<strong>平安壹账通是最值得警惕的镜子</strong>（上市6年股价跌89%），证明母公司光环不能解决关联交易折价。</p>
+<hr />
+<h3 id="14">1.4 资本市场窗口+对标分析师 → 市场窗口概率</h3>
+<p><strong>核心发现</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>港股窗口</th>
+<th>A股窗口</th>
+<th>综合窗口概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026</td>
+<td>🟢 高（开闸）</td>
+<td>🔴 关闭</td>
+<td><strong>35-40%</strong></td>
+</tr>
+<tr>
+<td>2027</td>
+<td>🟢 高（蚂蚁国际示范）</td>
+<td>🔴 关闭</td>
+<td><strong>45-55%（峰值）</strong></td>
+</tr>
+<tr>
+<td>2028</td>
+<td>🟡 中（窗口收窄）</td>
+<td>🔴 关闭</td>
+<td><strong>30-40%</strong></td>
+</tr>
+<tr>
+<td>2029</td>
+<td>🟡 中低</td>
+<td>🔴 关闭</td>
+<td><strong>20-30%</strong></td>
+</tr>
+<tr>
+<td>2030+</td>
+<td>🔴 不确定</td>
+<td>🔴 关闭</td>
+<td><strong>15-25%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A股科创板事实性禁入</strong>（京东数科撤回的教训）→ 港股是唯一现实路径</p>
+<p><strong>8家分拆型金融科技子公司IPO历史样本</strong>（2019-2025）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平安壹账通</td>
+<td>失败（2025/3 私有化退市，跌89%）</td>
+</tr>
+<tr>
+<td>京东数科</td>
+<td>失败（2021撤回科创板）</td>
+</tr>
+<tr>
+<td>陆金所</td>
+<td>失败（2025审计危机被并表）</td>
+</tr>
+<tr>
+<td>奇富科技</td>
+<td>部分成功（PS 3-4x极低）</td>
+</tr>
+<tr>
+<td>第四范式</td>
+<td>部分成功（IPO后股价横盘）</td>
+</tr>
+<tr>
+<td>众安在线</td>
+<td>部分成功（破发持续）</td>
+</tr>
+<tr>
+<td>微盟</td>
+<td>部分成功（股价腰斩）</td>
+</tr>
+<tr>
+<td>明源云</td>
+<td>部分成功（股价腰斩）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>统计结果</strong>：
+- 完全失败/退市/撤回：3/8 = <strong>37.5%</strong>
+- 部分成功（上市但估值压制）：5/8 = <strong>62.5%</strong>
+- <strong>完全成功（上市+估值维持+市值增长）：0/8 = 0%</strong></p>
+<p><strong>对蚂蚁数科基础概率定位</strong>：完全成功5-10% / 部分成功45-55% / 失败35-45%</p>
+<hr />
+<h2 id="_3">二、四维度联合概率合成</h2>
+<h3 id="21">2.1 各维度概率对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>监管放行</th>
+<th>母公司放行</th>
+<th>业务达标</th>
+<th>市场窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026</td>
+<td>5-10%</td>
+<td>&lt;5%</td>
+<td>5%</td>
+<td>35-40%</td>
+</tr>
+<tr>
+<td>2027</td>
+<td>20-30%</td>
+<td>10-15%</td>
+<td>25%</td>
+<td>45-55%</td>
+</tr>
+<tr>
+<td>2028</td>
+<td>45-55%</td>
+<td>25-30%</td>
+<td>60% (累计)</td>
+<td>30-40%</td>
+</tr>
+<tr>
+<td>2029</td>
+<td>60-70%</td>
+<td>35-45%</td>
+<td>85% (累计)</td>
+<td>20-30%</td>
+</tr>
+<tr>
+<td>2030+</td>
+<td>75-85%</td>
+<td>40-50%</td>
+<td>—</td>
+<td>15-25%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="22-midpoint">2.2 联合概率粗算（取midpoint）</h3>
+<p>P(年内独立IPO) ≈ P(监管) × P(母公司) × P(业务) × P(市场)（假设条件独立）</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>监管</th>
+<th>母公司</th>
+<th>业务（年增量）</th>
+<th>市场</th>
+<th><strong>联合概率（年增量）</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026</td>
+<td>7.5%</td>
+<td>5%</td>
+<td>5%</td>
+<td>37.5%</td>
+<td><strong>~0.07%</strong></td>
+</tr>
+<tr>
+<td>2027</td>
+<td>25%</td>
+<td>12.5%</td>
+<td>20%（25%-5%累计增量）</td>
+<td>50%</td>
+<td><strong>~0.31%</strong></td>
+</tr>
+<tr>
+<td>2028</td>
+<td>50%</td>
+<td>27.5%</td>
+<td>35%（60%-25%累计增量）</td>
+<td>35%</td>
+<td><strong>~1.69%</strong></td>
+</tr>
+<tr>
+<td>2029</td>
+<td>65%</td>
+<td>40%</td>
+<td>25%（85%-60%累计增量）</td>
+<td>25%</td>
+<td><strong>~1.63%</strong></td>
+</tr>
+<tr>
+<td>2030+</td>
+<td>80%</td>
+<td>45%</td>
+<td>10%</td>
+<td>20%</td>
+<td><strong>~0.72%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>⚠️ <strong>粗算结果异常低</strong>——因为4个维度并非真正独立，且这是"年内挂牌"的窄义概率。需要换情景分析框架。</p>
+<h3 id="23">2.3 情景分析框架（更可靠的合成方式）</h3>
+<p><strong>核心情景及其概率</strong>（互斥+穷举）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>情景</th>
+<th>概率</th>
+<th>触发条件</th>
+<th>对应估值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>2027 H2 - 2028年独立IPO</strong></td>
+<td>12%</td>
+<td>蚂蚁国际2026年成功+稳定币第二批入围+关联交易快速降至30%下</td>
+<td>350-500亿</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>2028 H2 - 2029年独立IPO（基线）</strong></td>
+<td>25%</td>
+<td>蚂蚁国际已成功+业务/独立性整改完成+RWA叙事保留</td>
+<td>450-700亿</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>2030-2031年独立IPO（推迟）</strong></td>
+<td>15%</td>
+<td>监管/业务延期，但仍走独立路径</td>
+<td>600-900亿</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>作为蚂蚁集团整体IPO的"科技分部"</strong></td>
+<td>20%</td>
+<td>韩歆毅推集团整体IPO，数科被打包</td>
+<td>数科隐含估值300-500亿</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>与OceanBase合并打包港股IPO</strong></td>
+<td>10%</td>
+<td>两家业务边界整合</td>
+<td>合并估值800-1500亿</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>5年内不IPO，被母公司回购整合</strong></td>
+<td>15%</td>
+<td>业务增速放缓、监管不放行、内部资源调整</td>
+<td>大幅缩水至80-150亿</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>海外营收激增 → 美股/海外二次上市</strong></td>
+<td>3%</td>
+<td>海外占比超50%且监管允许</td>
+<td>不确定</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>累计概率分布</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>退出形态</th>
+<th>累计概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>5年内任何形式挂牌相关退出</strong>（含独立、分部、合并）</td>
+<td><strong>70%</strong></td>
+</tr>
+<tr>
+<td>5年内<strong>独立IPO挂牌</strong>（情景1+2+3，不含分部/合并）</td>
+<td><strong>52%</strong></td>
+</tr>
+<tr>
+<td><strong>3年内（2026-2028）独立挂牌</strong></td>
+<td>12%</td>
+</tr>
+<tr>
+<td><strong>5年内（2026-2030）独立挂牌</strong></td>
+<td>52%</td>
+</tr>
+<tr>
+<td>5年内不IPO/被回购整合</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>永远不独立IPO（被分部/回购）</td>
+<td>35%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="24">2.4 关键修正：与"完全成功率"的差距</h3>
+<p>即使成功IPO，按历史对标：
+- <strong>完全成功（上市+估值维持+市值增长）</strong>：5-10%
+- <strong>部分成功（上市但估值压制/破发/横盘）</strong>：50-60%
+- <strong>失败（撤回/退市）</strong>：30-40%</p>
+<p><strong>因此真正"投资意义上的成功"</strong>：
+- 5年内独立IPO 52% × 完全成功率 7.5% = <strong>真正赢得超额回报概率约 4%</strong>
+- 5年内独立IPO 52% × 部分成功率 55% = 上市但估值压制概率约 28%
+- 5年内独立IPO 52% × 失败率 35% = 上市后失败概率约 18%</p>
+<hr />
+<h2 id="_4">三、按时间轴的最可能路径预演</h2>
+<h3 id="31-2026-8">3.1 2026年（剩余 8 个月）</h3>
+<ul>
+<li>9月外滩大会：CEO赵闻飙大概率仍说"再等一年"（与2025年口径一致）</li>
+<li>监管端：金控牌照大概率年内不下，稳定币第二批名单可能Q4公布</li>
+<li>业务端：第三方营收增至100亿+（管理口径150亿+）</li>
+<li>母公司端：蚂蚁国际可能在Q3-Q4递表（投行已聘）</li>
+<li><strong>数科IPO动作概率</strong>：递表概率&lt;5%，宣布Pre-IPO轮可能性30%</li>
+</ul>
+<h3 id="32-2027">3.2 2027年</h3>
+<ul>
+<li>蚂蚁国际可能Q1-Q2挂牌（破冰事件）</li>
+<li>数科最可能动作：完成Pre-IPO轮融资（外部投资人首次定价）</li>
+<li>监管端：金控牌照有40%概率落地</li>
+<li><strong>数科IPO动作概率</strong>：递表概率15-25%，挂牌概率&lt;5%</li>
+</ul>
+<h3 id="33-2028">3.3 2028年（甜蜜窗口）</h3>
+<ul>
+<li>业务端：3年完整审计完成、关联交易降至30%以下</li>
+<li>监管端：金控牌照应已落地（70%概率）</li>
+<li>母公司端：蚂蚁国际已挂牌1年，集团本体可能递表</li>
+<li><strong>数科IPO动作概率</strong>：递表概率35-45%，年内挂牌概率15-20%</li>
+</ul>
+<h3 id="34-2029">3.4 2029年（基线窗口）</h3>
+<ul>
+<li>蚂蚁国际、母公司本体均已挂牌</li>
+<li>数科与OceanBase完成业务边界划分</li>
+<li>港股窗口可能收窄</li>
+<li><strong>数科IPO动作概率</strong>：年内挂牌概率20-30%</li>
+</ul>
+<h3 id="35-2030">3.5 2030+（兜底窗口）</h3>
+<ul>
+<li>若前期未推进，可能被回购整合</li>
+<li>若推进则采取"H股小规模发行+海外双重上市"</li>
+<li><strong>数科IPO动作概率</strong>：累计挂牌概率10-15%（边际）</li>
+</ul>
+<hr />
+<h2 id="_5">四、十大关键变量与跟踪信号</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>变量</th>
+<th>当前状态</th>
+<th>何时知道答案</th>
+<th>信号意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>蚂蚁集团金控牌照</strong></td>
+<td>未发</td>
+<td>2026 H2-2027 H1</td>
+<td>数科IPO的前置条件</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>香港稳定币第二批牌照</strong></td>
+<td>蚂蚁未入首批</td>
+<td>2026 Q4-2027 H1</td>
+<td>RWA叙事生死线</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>蚂蚁国际港股递表</strong></td>
+<td>投行已聘</td>
+<td>2026 Q3-Q4</td>
+<td>兄弟先行的破冰事件</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>数科Pre-IPO轮融资</strong></td>
+<td>无外部融资</td>
+<td>2026-2027</td>
+<td>首次外部定价锚</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>CEO赵闻飙2026外滩大会发言</strong></td>
+<td>待定</td>
+<td>2026/9</td>
+<td>时间表的官方口径</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>蚂蚁数科核心高管动态</strong></td>
+<td>倪行军任董事长</td>
+<td>持续</td>
+<td>团队稳定性</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>关联交易占比</strong></td>
+<td>30-40%</td>
+<td>招股书披露</td>
+<td>估值折价幅度决定因素</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>第三方营收占比</strong></td>
+<td>60-70%</td>
+<td>半年期</td>
+<td>独立性证据</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>DeepSeek/通义对Agentar商业化的冲击</strong></td>
+<td>持续</td>
+<td>季度</td>
+<td>业务故事可持续性</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>蚂蚁国际IPO定价/后市表现</strong></td>
+<td>待定</td>
+<td>2026 H2-2027</td>
+<td>姊妹估值锚</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_6">五、最终判断</h2>
+<h3 id="51">5.1 一句话结论</h3>
+<p><strong>蚂蚁数科5年内独立IPO的概率约 50%（区间35-55%），但其中"上市后估值维持/超额回报"的概率仅 5-10%；最可能的路径是 2028-2029 年港股IPO，估值落在 450-700 亿区间。</strong></p>
+<h3 id="52">5.2 三种"心智模型"</h3>
+<p><strong>乐观心智（25%概率）</strong>：
+- 蚂蚁国际2026 H2成功上市破冰 → 数科紧随，2028 H1递表，2028 H2-2029 H1挂牌
+- 估值600-800亿，上市后稳定在500-1000亿区间
+- 触发条件：稳定币第二批入围 + 金控牌照2027年落地 + 关联交易降至25%以下</p>
+<p><strong>基线心智（50%概率）</strong>：
+- 数科按"维持现状自然增长"路径，2029 H1-H2递表
+- 估值450-700亿，上市后估值压制（PS 5-7x）
+- 触发条件：蚂蚁国际+母公司本体2027-2028先后挂牌，数科作为"老三"压轴</p>
+<p><strong>悲观心智（25%概率）</strong>：
+- 数科被作为蚂蚁集团整体IPO的"科技分部"披露，永远不独立挂牌
+- 或被OceanBase吸收合并、或被母公司回购整合
+- 触发条件：监管延宕 + 韩歆毅偏好集团整体IPO + RWA叙事坍塌</p>
+<h3 id="53">5.3 与历史对标的对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>母公司分拆</th>
+<th>关联交易</th>
+<th>上市结果</th>
+<th>上市后估值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平安壹账通</td>
+<td>✅</td>
+<td>&gt;50%</td>
+<td>上市6年后退市</td>
+<td>跌89%</td>
+</tr>
+<tr>
+<td>京东数科</td>
+<td>✅</td>
+<td>~40%</td>
+<td>撤回IPO</td>
+<td>—</td>
+</tr>
+<tr>
+<td>陆金所</td>
+<td>✅</td>
+<td>38亿</td>
+<td>上市后审计危机被并表</td>
+<td>暴跌</td>
+</tr>
+<tr>
+<td>奇富科技</td>
+<td>✅</td>
+<td>中</td>
+<td>已上市</td>
+<td>PS 3-4x（极低）</td>
+</tr>
+<tr>
+<td><strong>蚂蚁数科</strong></td>
+<td>✅</td>
+<td><strong>30-40%</strong></td>
+<td><strong>待定</strong></td>
+<td><strong>预期受关联交易折价</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结构性教训</strong>：分拆型金融科技子公司<strong>没有一家实现"上市+估值维持"</strong>。蚂蚁数科即使IPO，也面临"平安壹账通式估值压制"的高风险。</p>
+<h3 id="54">5.4 三个核心结论</h3>
+<p><strong>结论1</strong>：<strong>最早递表窗口是2027年（25%概率），最现实窗口是2028-2029年（累计60%概率）</strong>
+- 2026年内挂牌概率&lt;5%
+- 5年内独立IPO累计概率约52%</p>
+<p><strong>结论2</strong>：<strong>5年内任何形式"挂牌相关退出"概率约70%，但其中只有35-45%是"独立IPO"路径</strong>
+- 25%概率被作为蚂蚁集团整体IPO的分部
+- 10%概率与OceanBase合并打包
+- 15%概率永远不独立IPO（被回购整合）</p>
+<p><strong>结论3</strong>：<strong>即使IPO成功，"完全成功"概率仅5-10%——历史上分拆型金融科技子公司无成功先例</strong>
+- 平安壹账通跌89%、陆金所被并表、京东数科撤回是结构性教训
+- 蚂蚁数科最可能的结局是"上市破发或横盘"，估值压制在500-1000亿区间
+- 真正的alpha来自"稳定币牌照+RWA叙事"的非共识兑现，但这恰恰是最不可控的变量</p>
+<hr />
+<h2 id="4">六、附录：4位分析师详细报告</h2>
+<p>本研究包含4份详细子报告：
+- <strong>业务+财务成熟度分析师</strong> → 已写入 <code>06-业务财务成熟度详细.md</code>
+- 监管路径分析师、母公司动态分析师、市场窗口分析师 → 详细数据已嵌入本综合分析</p>
+<p>主要 Sources（关键参考）：</p>
+<p><strong>监管路径</strong>：
+- <a href="https://www.eeo.com.cn/2023/0707/597404.shtml">蚂蚁集团71.23亿罚单落地</a>
+- <a href="https://finance.sina.com.cn/roll/2025-09-23/doc-infrnzqa0329237.shtml">证监会建议券商暂停香港RWA业务</a>
+- <a href="https://www.chinanews.com/cj/2026/04-10/10601798.shtml">香港金管局发出首批稳定币发行人牌照</a>
+- <a href="https://www.21jingji.com/article/20260411/herald/6c59592fc1556c8c1caf39de8385a913.html">汇丰、渣打系斩获首批稳定币牌照</a></p>
+<p><strong>母公司动态</strong>：
+- <a href="https://wenews.caixin.com/2025-05-03/102316128.html">蚂蚁已过港股上市等待期</a>
+- <a href="https://m.thepaper.cn/newsDetail_forward_32460421">韩歆毅详解蚂蚁新十年战略</a>
+- <a href="https://caifuhao.eastmoney.com/news/20251126105548555611970">蚂蚁集团2026年存在申请上市的可能性</a></p>
+<p><strong>业务成熟度</strong>：
+- <a href="https://finance.sina.com.cn/stock/hkstock/hkstocknews/2025-05-26/doc-inexwxkx7718343.shtml">港交所小百科：第18C章特专科技公司的主要上市规则</a>
+- <a href="https://stockn.xueqiu.com/06682/20230918698403.pdf">第四范式 IPO 招股书</a>
+- <a href="https://finance.sina.com.cn/money/insurance/bxyx/2025-05-19/doc-inexcfvu2690075.shtml">金融壹账通私有化报道</a></p>
+<p><strong>市场窗口</strong>：
+- <a href="https://finance.sina.com.cn/chanjing/gsnews/2025-05-03/doc-inevhhzy3865722.shtml">蚂蚁国际港股IPO进展</a>
+- <a href="https://finance.sina.com.cn/jjxw/2025-05-08/doc-inevvwyy0189551.shtml">陆金所被中国平安并表</a></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/a4b607ef8ab2.html">《看懂蚂蚁数科》系列说明</a><div class="meta">2026-07-13 · 底稿</div></li><li><a href="../r/4fd49db56b96.html">估值迷雾与三重不确定性</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/c26d0abf0436.html">小赛道的龙头，大赛道的追赶者</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/fd0499790777.html">一台金融科技的瑞士军刀</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/90fd78b7bbf2.html">从蚂蚁集团到蚂蚁数科</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/e21f53620456.html">蚂蚁数科（Ant Digital Technologies）5年估值预测（2026-2031）</a><div class="meta">2026-05-15 · 估值仓位</div></li><li><a href="../r/b58abd71a910.html">蚂蚁数科竞争全景研究报告</a><div class="meta">2026-05-12 · 研究</div></li><li><a href="../r/b97fb6c3e1d9.html">蚂蚁数科（Ant Digital Technologies）未上市公司深度研究报告</a><div class="meta">2026-05-11 · 研究</div></li><li><a href="../r/ff45906737fd.html">蚂蚁数科投资研究最终报告</a><div class="meta">2026-05-08 · 研究</div></li><li><a href="../r/590bd8094fa5.html">蚂蚁数科风险与管理层评估</a><div class="meta">2026-05-08 · 组织管理</div></li><li><a href="../r/05dbfa24d3bb.html">蚂蚁数科行业与竞争格局分析</a><div class="meta">2026-05-08 · 研究</div></li><li><a href="../r/e987c19e90c4.html">蚂蚁数科财务与估值深度分析</a><div class="meta">2026-05-08 · 估值仓位</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>
