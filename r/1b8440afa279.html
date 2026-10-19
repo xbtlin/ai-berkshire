@@ -1,0 +1,470 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MiniMaxAI__MiniMax-M2__README · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a></div><h1>MiniMaxAI__MiniMax-M2__README</h1><div class="meta"><a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/MiniMaxAI__MiniMax-M2__README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#highlights">Highlights</a></li>
+<li><a href="#coding-agentic-benchmarks">Coding &amp; Agentic Benchmarks</a></li>
+<li><a href="#intelligence-benchmarks">Intelligence Benchmarks</a></li>
+<li><a href="#why-activation-size-matters">Why activation size matters</a></li>
+<li><a href="#at-a-glance">At a glance</a></li>
+<li><a href="#how-to-use">How to Use</a></li>
+<li><a href="#local-deployment-guide">Local Deployment Guide</a><ul>
+<li><a href="#sglang">SGLang</a></li>
+<li><a href="#vllm">vLLM</a></li>
+<li><a href="#mlx">MLX</a></li>
+<li><a href="#transformers">Transformers</a></li>
+<li><a href="#inference-parameters">Inference Parameters</a></li>
+</ul>
+</li>
+<li><a href="#tool-calling-guide">Tool Calling Guide</a></li>
+</ul>
+</div>
+</details><article><div align="center">
+
+<svg width="60%" height="auto" viewBox="0 0 144 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.6782 7.96523C26.6782 7.02436 25.913 6.26087 24.9739 6.26087C24.0348 6.26087 23.2695 7.0261 23.2695 7.96523V36.2139C23.2695 38.4 21.4904 40.1791 19.3043 40.1791C17.1183 40.1791 15.3391 38.4 15.3391 36.2139V18.0904C15.3391 17.1496 14.5739 16.3861 13.6348 16.3861C12.6956 16.3861 11.9304 17.1513 11.9304 18.0904V25.7722C11.9304 27.9583 10.1513 29.7374 7.96518 29.7374C5.7791 29.7374 4 27.9583 4 25.7722V22.9878C4 22.3635 4.50609 21.8574 5.13043 21.8574C5.75478 21.8574 6.26087 22.3635 6.26087 22.9878V25.7722C6.26087 26.713 7.02605 27.4765 7.96518 27.4765C8.90431 27.4765 9.66954 26.7113 9.66954 25.7722V18.0904C9.66954 15.9044 11.4487 14.1252 13.6348 14.1252C15.8209 14.1252 17.6 15.9044 17.6 18.0904V36.2139C17.6 37.1548 18.3652 37.9183 19.3043 37.9183C20.2435 37.9183 21.0087 37.153 21.0087 36.2139V25.1322V7.96523C21.0087 5.77914 22.7878 4 24.9739 4C27.16 4 28.9391 5.77914 28.9391 7.96523V31.3565C28.9391 31.9809 28.433 32.487 27.8087 32.487C27.1843 32.487 26.6782 31.9809 26.6782 31.3565V7.96523ZM47.6539 14.1252C45.4678 14.1252 43.6887 15.9044 43.6887 18.0904V33.2296C43.6887 34.1704 42.9235 34.9339 41.9843 34.9339C41.0452 34.9339 40.28 34.1687 40.28 33.2296V7.96523C40.28 5.77914 38.5008 4 36.3148 4C34.1287 4 32.3496 5.77914 32.3496 7.96523V40.0348C32.3496 40.9756 31.5843 41.7391 30.6452 41.7391C29.7061 41.7391 28.9409 40.9739 28.9409 40.0348V36.0643C28.9409 35.44 28.4348 34.9339 27.8104 34.9339C27.1861 34.9339 26.68 35.44 26.68 36.0643V40.0348C26.68 42.2209 28.4591 44 30.6452 44C32.8313 44 34.6104 42.2209 34.6104 40.0348V7.96523C34.6104 7.02436 35.3756 6.26087 36.3148 6.26087C37.2539 6.26087 38.0191 7.0261 38.0191 7.96523V33.2296C38.0191 35.4156 39.7982 37.1948 41.9843 37.1948C44.1704 37.1948 45.9496 35.4156 45.9496 33.2296V18.0904C45.9496 17.1496 46.7148 16.3861 47.6539 16.3861C48.593 16.3861 49.3582 17.1513 49.3582 18.0904V31.3565C49.3582 31.9809 49.8643 32.487 50.4887 32.487C51.113 32.487 51.6191 31.9809 51.6191 31.3565V18.0904C51.6191 15.9044 49.84 14.1252 47.6539 14.1252Z" fill="url(#paint0_linear_17_483)"/>
+<path d="M68.7671 16.5615H71.2541C71.3254 16.5615 71.3845 16.5859 71.435 16.6363C71.4836 16.6868 71.5097 16.7459 71.5097 16.8172V31.1824C71.5097 31.2537 71.4854 31.3128 71.435 31.3633C71.3845 31.4137 71.3254 31.4381 71.2541 31.4381H68.7671C68.6958 31.4381 68.6367 31.4137 68.5862 31.3633C68.5358 31.3146 68.5115 31.2537 68.5115 31.1824V21.812C68.5115 21.7563 68.4976 21.7268 68.4697 21.7268C68.4419 21.7268 68.4123 21.7476 68.3845 21.7911L66.1323 25.318C66.061 25.4311 65.9619 25.4885 65.8349 25.4885H64.581C64.4541 25.4885 64.3549 25.4328 64.2836 25.318L62.0315 21.7911C62.0036 21.7494 61.9741 21.7302 61.9462 21.7372C61.9184 21.7441 61.9045 21.7772 61.9045 21.8328V31.1824C61.9045 31.2537 61.8802 31.3128 61.8297 31.3633C61.7793 31.4137 61.7202 31.4381 61.6489 31.4381H59.1619C59.0906 31.4381 59.0315 31.4137 58.981 31.3633C58.9306 31.3146 58.9062 31.2537 58.9062 31.1824V16.8172C58.9062 16.7459 58.9306 16.6868 58.981 16.6363C59.0315 16.5859 59.0906 16.5615 59.1619 16.5615H61.6489C61.7758 16.5615 61.8749 16.6189 61.9462 16.732L65.1341 21.6833C65.1758 21.7685 65.2193 21.7685 65.261 21.6833L68.4697 16.732C68.541 16.6189 68.6402 16.5615 68.7671 16.5615Z" fill="currentColor"/>
+<path d="M74.1764 31.3633C74.1259 31.3146 74.1016 31.2537 74.1016 31.1824V16.8172C74.1016 16.7459 74.1259 16.6868 74.1764 16.6363C74.2268 16.5859 74.2859 16.5615 74.3572 16.5615H76.8442C76.9155 16.5615 76.9746 16.5859 77.0251 16.6363C77.0737 16.6868 77.0998 16.7459 77.0998 16.8172V31.1824C77.0998 31.2537 77.0755 31.3128 77.0251 31.3633C76.9746 31.4137 76.9155 31.4381 76.8442 31.4381H74.3572C74.2859 31.4381 74.2268 31.4137 74.1764 31.3633Z" fill="currentColor"/>
+<path d="M88.3066 16.6361C88.3553 16.5874 88.4162 16.5613 88.4875 16.5613H90.9744C91.0457 16.5613 91.1049 16.5857 91.1553 16.6361C91.204 16.6865 91.2301 16.7457 91.2301 16.817V31.1822C91.2301 31.2535 91.2057 31.3126 91.1553 31.363C91.1049 31.4135 91.0457 31.4378 90.9744 31.4378H88.5727C88.4301 31.4378 88.331 31.3822 88.2753 31.2674L82.771 22.1717C82.7431 22.13 82.7136 22.1109 82.6858 22.1178C82.6579 22.1248 82.644 22.1578 82.644 22.2135L82.6858 31.1805C82.6858 31.2518 82.6614 31.3109 82.611 31.3613C82.5606 31.4117 82.5014 31.4361 82.4301 31.4361H79.9431C79.8718 31.4361 79.8127 31.4117 79.7623 31.3613C79.7118 31.3126 79.6875 31.2518 79.6875 31.1805V16.8152C79.6875 16.7439 79.7118 16.6848 79.7623 16.6344C79.8127 16.5839 79.8718 16.5596 79.9431 16.5596H82.3449C82.4858 16.5596 82.5849 16.617 82.6423 16.73L88.124 25.7822C88.1518 25.8239 88.1797 25.8431 88.2092 25.8361C88.2371 25.8292 88.251 25.7978 88.251 25.7404L88.2301 16.8152C88.2301 16.7439 88.2545 16.6848 88.3049 16.6344L88.3066 16.6361Z" fill="currentColor"/>
+<path d="M93.8951 31.3633C93.8446 31.3146 93.8203 31.2537 93.8203 31.1824V16.8172C93.8203 16.7459 93.8446 16.6868 93.8951 16.6363C93.9455 16.5859 94.0047 16.5615 94.076 16.5615H96.5629C96.6342 16.5615 96.6934 16.5859 96.7438 16.6363C96.7925 16.6868 96.8186 16.7459 96.8186 16.8172V31.1824C96.8186 31.2537 96.7942 31.3128 96.7438 31.3633C96.6934 31.4137 96.6342 31.4381 96.5629 31.4381H94.076C94.0047 31.4381 93.9455 31.4137 93.8951 31.3633Z" fill="currentColor"/>
+<path d="M109.267 16.5615H111.754C111.825 16.5615 111.885 16.5859 111.935 16.6363C111.984 16.6868 112.01 16.7459 112.01 16.8172V31.1824C112.01 31.2537 111.985 31.3128 111.935 31.3633C111.885 31.4137 111.825 31.4381 111.754 31.4381H109.267C109.196 31.4381 109.137 31.4137 109.086 31.3633C109.036 31.3146 109.011 31.2537 109.011 31.1824V21.812C109.011 21.7563 108.998 21.7268 108.97 21.7268C108.942 21.7268 108.912 21.7476 108.885 21.7911L106.632 25.318C106.561 25.4311 106.462 25.4885 106.335 25.4885H105.081C104.954 25.4885 104.855 25.4328 104.784 25.318L102.531 21.7911C102.504 21.7494 102.474 21.7302 102.446 21.7372C102.418 21.7441 102.405 21.7772 102.405 21.8328V31.1824C102.405 31.2537 102.38 31.3128 102.33 31.3633C102.279 31.4137 102.22 31.4381 102.149 31.4381H99.6619C99.5906 31.4381 99.5315 31.4137 99.481 31.3633C99.4306 31.3146 99.4062 31.2537 99.4062 31.1824V16.8172C99.4062 16.7459 99.4306 16.6868 99.481 16.6363C99.5315 16.5859 99.5906 16.5615 99.6619 16.5615H102.149C102.276 16.5615 102.375 16.6189 102.446 16.732L105.634 21.6833C105.676 21.7685 105.719 21.7685 105.761 21.6833L108.97 16.732C109.041 16.6189 109.14 16.5615 109.267 16.5615Z" fill="currentColor"/>
+<path d="M123.782 31.2241L123.144 29.1424C123.116 29.0867 123.079 29.0572 123.038 29.0572H117.81C117.768 29.0572 117.732 29.085 117.704 29.1424L117.088 31.2241C117.046 31.3668 116.954 31.4363 116.812 31.4363H114.112C114.027 31.4363 113.963 31.412 113.921 31.3615C113.879 31.3128 113.871 31.2381 113.9 31.1389L118.49 16.7737C118.532 16.6328 118.624 16.5615 118.766 16.5615H122.102C122.243 16.5615 122.335 16.6328 122.379 16.7737L126.968 31.1389C126.982 31.1668 126.989 31.2033 126.989 31.245C126.989 31.372 126.911 31.4363 126.756 31.4363H124.057C123.916 31.4363 123.824 31.365 123.78 31.2241H123.782ZM118.554 26.7407H122.295C122.38 26.7407 122.408 26.6989 122.38 26.6137L120.467 20.3024C120.453 20.2467 120.432 20.2207 120.403 20.2276C120.375 20.2346 120.352 20.2589 120.339 20.3024L118.469 26.6137C118.455 26.6989 118.483 26.7407 118.554 26.7407Z" fill="currentColor"/>
+<path d="M128.222 31.353C128.18 31.2974 128.187 31.2261 128.243 31.1409L132.365 24.0643C132.393 24.0226 132.393 23.9791 132.365 23.9374L128.243 16.8609L128.201 16.7339C128.201 16.6209 128.28 16.5635 128.434 16.5635H131.133C131.274 16.5635 131.38 16.6209 131.452 16.7339L134.213 21.6C134.255 21.6852 134.299 21.6852 134.34 21.6L137.102 16.7339C137.173 16.6209 137.28 16.5635 137.42 16.5635H140.099C140.198 16.5635 140.269 16.5913 140.311 16.6487C140.353 16.7061 140.346 16.7756 140.29 16.8609L136.168 23.9374C136.154 23.9791 136.154 24.0226 136.168 24.0643L140.29 31.1409L140.332 31.2678C140.332 31.3809 140.253 31.4383 140.099 31.4383H137.42C137.278 31.4383 137.172 31.3826 137.102 31.2678L134.34 26.4226C134.299 26.3374 134.255 26.3374 134.213 26.4226L131.429 31.2678C131.358 31.3809 131.252 31.4383 131.111 31.4383H128.433C128.333 31.4383 128.262 31.4104 128.22 31.353H128.222Z" fill="currentColor"/>
+<defs>
+<linearGradient id="paint0_linear_17_483" x1="3.99826" y1="24" x2="51.6208" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E21680"/>
+<stop offset="1" stop-color="#FF633A"/>
+</linearGradient>
+</defs>
+</svg>
+
+</div>
+<hr>
+
+<div align="center" style="line-height: 1.4; font-size:16px; margin-top: 30px;">
+  Join Our 
+  <a href="https://github.com/MiniMax-AI/MiniMax-AI.github.io/blob/main/images/wechat-qrcode.jpeg" target="_blank" style="font-size:17px; margin: 2px;">
+    💬 WeChat
+  </a> | 
+  <a href="https://discord.com/invite/hvvt8hAye6" target="_blank" style="font-size:17px; margin: 2px;">
+    🧩 Discord
+  </a> 
+  community.
+</div>
+<div align="center" style="line-height: 1.2; font-size:16px;">
+  <a href="https://agent.minimax.io/" target="_blank" style="display: inline-block; margin: 4px;">
+    MiniMax Agent
+  </a> | 
+  <a href="https://platform.minimax.io/docs/guides/text-generation" target="_blank" style="display: inline-block; margin: 4px;">
+    ⚡️ API (Now Free for a limited time!)
+  </a> | 
+  <a href="https://github.com/MiniMax-AI/MiniMax-MCP" style="display: inline-block; margin: 4px;">
+    MCP
+  </a> |
+  <a href="https://www.minimax.io" target="_blank" style="display: inline-block; margin: 4px;">
+    MiniMax Website
+  </a> 
+</div>
+<div align="center" style="line-height: 1.2; font-size:16px; margin-bottom: 30px;">
+  <a href="https://huggingface.co/MiniMaxAI" target="_blank" style="margin: 2px;">
+    🤗 Hugging Face 
+  </a> | 
+  <a href="https://github.com/MiniMax-AI/MiniMax-M2" target="_blank" style="margin: 2px;">
+    🐙 GitHub
+  </a> | 
+  <a href="https://www.modelscope.cn/organization/MiniMax" target="_blank" style="margin: 2px;">
+    🤖️ ModelScope
+  </a> | 
+  <a href="https://github.com/MiniMax-AI/MiniMax-M2/blob/main/LICENSE" style="margin: 2px;">
+    📄 License: MIT
+  </a>
+</div>
+
+<h1 id="meet-minimax-m2">Meet MiniMax-M2</h1>
+<p>Today, we release and open source MiniMax-M2, a <strong>Mini</strong> model built for <strong>Max</strong> coding &amp; agentic workflows.</p>
+<p><strong>MiniMax-M2</strong> redefines efficiency for agents. It's a compact, fast, and cost-effective MoE model (230 billion total parameters with 10 billion active parameters) built for elite performance in coding and agentic tasks, all while maintaining powerful general intelligence. With just 10 billion activated parameters, MiniMax-M2 provides the sophisticated, end-to-end tool use performance expected from today's leading models, but in a streamlined form factor that makes deployment and scaling easier than ever.</p>
+<p align="center">
+  <img width="100%" src="figures/Bench.png">
+</p>
+
+<hr />
+<h2 id="highlights">Highlights</h2>
+<p><strong>Superior Intelligence</strong>. According to benchmarks from Artificial Analysis, MiniMax-M2 demonstrates highly competitive general intelligence across mathematics, science, instruction following, coding, and agentic tool use. <strong>Its composite score ranks #1 among open-source models globally</strong>.</p>
+<p><strong>Advanced Coding</strong>. Engineered for end-to-end developer workflows, MiniMax-M2 excels at multi-file edits, coding-run-fix loops, and test-validated repairs. Strong performance on Terminal-Bench and (Multi-)SWE-Bench–style tasks demonstrates practical effectiveness in terminals, IDEs, and CI across languages.</p>
+<p><strong>Agent Performance</strong>. MiniMax-M2 plans and executes complex, long-horizon toolchains across shell, browser, retrieval, and code runners. In BrowseComp-style evaluations, it consistently locates hard-to-surface sources, maintains evidence traceable, and gracefully recovers from flaky steps.</p>
+<p><strong>Efficient Design</strong>. With 10 billion activated parameters (230 billion in total), MiniMax-M2 delivers lower latency, lower cost, and higher throughput for interactive agents and batched sampling—perfectly aligned with the shift toward highly deployable models that still shine on coding and agentic tasks.</p>
+<hr />
+<h2 id="coding-agentic-benchmarks">Coding &amp; Agentic Benchmarks</h2>
+<p>These comprehensive evaluations test real-world end-to-end coding and agentic tool use: editing real repos, executing commands, browsing the web, and delivering functional solutions. Performance on this suite correlates with day-to-day developer experience in terminals, IDEs, and CI.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>Benchmark</strong></th>
+<th><strong>MiniMax-M2</strong></th>
+<th><strong>Claude Sonnet 4</strong></th>
+<th><strong>Claude Sonnet 4.5</strong></th>
+<th><strong>Gemini 2.5 Pro</strong></th>
+<th><strong>GPT-5 (thinking)</strong></th>
+<th><strong>GLM-4.6</strong></th>
+<th><strong>Kimi K2 0905</strong></th>
+<th><strong>DeepSeek-V3.2</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SWE-bench Verified</strong></td>
+<td>69.4</td>
+<td>72.7 *</td>
+<td>77.2 *</td>
+<td>63.8 *</td>
+<td>74.9 *</td>
+<td>68 *</td>
+<td>69.2 *</td>
+<td>67.8 *</td>
+</tr>
+<tr>
+<td><strong>Multi-SWE-Bench</strong></td>
+<td>36.2</td>
+<td>35.7 *</td>
+<td>44.3</td>
+<td>/</td>
+<td>/</td>
+<td>30</td>
+<td>33.5</td>
+<td>30.6</td>
+</tr>
+<tr>
+<td><strong>SWE-bench Multilingual</strong></td>
+<td>56.5</td>
+<td>56.9 *</td>
+<td>68</td>
+<td>/</td>
+<td>/</td>
+<td>53.8</td>
+<td>55.9 *</td>
+<td>57.9 *</td>
+</tr>
+<tr>
+<td><strong>Terminal-Bench</strong></td>
+<td>46.3</td>
+<td>36.4 *</td>
+<td>50 *</td>
+<td>25.3 *</td>
+<td>43.8 *</td>
+<td>40.5 *</td>
+<td>44.5 *</td>
+<td>37.7 *</td>
+</tr>
+<tr>
+<td><strong>ArtifactsBench</strong></td>
+<td>66.8</td>
+<td>57.3*</td>
+<td>61.5</td>
+<td>57.7*</td>
+<td>73*</td>
+<td>59.8</td>
+<td>54.2</td>
+<td>55.8</td>
+</tr>
+<tr>
+<td><strong>BrowseComp</strong></td>
+<td>44</td>
+<td>12.2</td>
+<td>19.6</td>
+<td>9.9</td>
+<td>54.9*</td>
+<td>45.1*</td>
+<td>14.1</td>
+<td>40.1*</td>
+</tr>
+<tr>
+<td><strong>BrowseComp-zh</strong></td>
+<td>48.5</td>
+<td>29.1</td>
+<td>40.8</td>
+<td>32.2</td>
+<td>65</td>
+<td>49.5</td>
+<td>28.8</td>
+<td>47.9*</td>
+</tr>
+<tr>
+<td><strong>GAIA (text only)</strong></td>
+<td>75.7</td>
+<td>68.3</td>
+<td>71.2</td>
+<td>60.2</td>
+<td>76.4</td>
+<td>71.9</td>
+<td>60.2</td>
+<td>63.5</td>
+</tr>
+<tr>
+<td><strong>xbench-DeepSearch</strong></td>
+<td>72</td>
+<td>64.6</td>
+<td>66</td>
+<td>56</td>
+<td>77.8</td>
+<td>70</td>
+<td>61</td>
+<td>71</td>
+</tr>
+<tr>
+<td><strong>HLE (w/ tools)</strong></td>
+<td>31.8</td>
+<td>20.3</td>
+<td>24.5</td>
+<td>28.4 *</td>
+<td>35.2 *</td>
+<td>30.4 *</td>
+<td>26.9 *</td>
+<td>27.2 *</td>
+</tr>
+<tr>
+<td><strong>τ²-Bench</strong></td>
+<td>77.2</td>
+<td>65.5*</td>
+<td>84.7*</td>
+<td>59.2</td>
+<td>80.1*</td>
+<td>75.9*</td>
+<td>70.3</td>
+<td>66.7</td>
+</tr>
+<tr>
+<td><strong>FinSearchComp-global</strong></td>
+<td>65.5</td>
+<td>42</td>
+<td>60.8</td>
+<td>42.6*</td>
+<td>63.9*</td>
+<td>29.2</td>
+<td>29.5*</td>
+<td>26.2</td>
+</tr>
+<tr>
+<td><strong>AgentCompany</strong></td>
+<td>36</td>
+<td>37</td>
+<td>41</td>
+<td>39.3*</td>
+<td>/</td>
+<td>35</td>
+<td>30</td>
+<td>34</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>Notes: Data points marked with an asterisk (*) are taken directly from the model's official tech report or blog. All other metrics were obtained using the evaluation methods described below.
+- SWE-bench Verified:  We use the same scaffold as <a href="https://arxiv.org/pdf/2504.07164">R2E-Gym</a> (Jain et al. 2025) on top of OpenHands to test with agents on SWE tasks. All scores are validated on our internal infrastructure with 128k context length, 100 max steps, and no test-time scaling. All git-related content is removed to ensure agent sees only the code at the issue point. 
+- Multi-SWE-Bench &amp; SWE-bench Multilingual: All scores are averaged across 8 runs using the <a href="https://github.com/anthropics/claude-code">claude-code</a> CLI (300 max steps) as the evaluation scaffold.
+- Terminal-Bench: All scores are evaluated with the official claude-code from the original <a href="https://www.tbench.ai/">Terminal-Bench</a> repository(commit <code>94bf692</code>), averaged over 8 runs to report the mean pass rate.
+- ArtifactsBench: All Scores are computed by averaging three runs with the official implementation of <a href="https://github.com/Tencent-Hunyuan/ArtifactsBenchmark">ArtifactsBench</a>, using the stable Gemini-2.5-Pro as the judge model.
+- BrowseComp &amp; BrowseComp-zh &amp; GAIA (text only) &amp; xbench-DeepSearch: All scores reported use the same agent framework as <a href="https://arxiv.org/pdf/2509.06501">WebExplorer</a> (Liu et al. 2025), with minor tools description adjustment. We use the 103-sample text-only GAIA validation subset following <a href="https://arxiv.org/pdf/2509.06501">WebExplorer</a> (Liu et al. 2025).
+- HLE (w/ tools): All reported scores are obtained using search tools and a Python tool. The search tools employ the same agent framework as <a href="https://arxiv.org/pdf/2509.06501">WebExplorer</a> (Liu et al. 2025), and the Python tool runs in a Jupyter environment. We use the text-only HLE subset.
+- τ²-Bench: All scores reported use "extended thinking with tool use", and employ GPT-4.1 as the user simulator.
+- FinSearchComp-global: Official results are reported for GPT-5-Thinking, Gemini 2.5 Pro, and Kimi-K2. Other models are evaluated using the open-source <a href="https://arxiv.org/pdf/2509.13160">FinSearchComp</a> (Hu et al. 2025) framework using both  search and Python tools, launched simultaneously for consistency.
+- AgentCompany: All scores reported use OpenHands 0.42 agent framework.</p>
+</blockquote>
+<hr />
+<h2 id="intelligence-benchmarks">Intelligence Benchmarks</h2>
+<p>We align with <strong>Artificial Analysis</strong>, which aggregates challenging benchmarks using a consistent methodology to reflect a model’s broader <strong>intelligence profile</strong> across math, science, instruction following, coding, and agentic tool use.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>Metric (AA)</strong></th>
+<th><strong>MiniMax-M2</strong></th>
+<th><strong>Claude Sonnet 4</strong></th>
+<th><strong>Claude Sonnet 4.5</strong></th>
+<th><strong>Gemini 2.5 Pro</strong></th>
+<th><strong>GPT-5 (thinking)</strong></th>
+<th><strong>GLM-4.6</strong></th>
+<th><strong>Kimi K2 0905</strong></th>
+<th><strong>DeepSeek-V3.2</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AIME25</td>
+<td>78</td>
+<td>74</td>
+<td>88</td>
+<td>88</td>
+<td>94</td>
+<td>86</td>
+<td>57</td>
+<td>88</td>
+</tr>
+<tr>
+<td>MMLU-Pro</td>
+<td>82</td>
+<td>84</td>
+<td>88</td>
+<td>86</td>
+<td>87</td>
+<td>83</td>
+<td>82</td>
+<td>85</td>
+</tr>
+<tr>
+<td>GPQA-Diamond</td>
+<td>78</td>
+<td>78</td>
+<td>83</td>
+<td>84</td>
+<td>85</td>
+<td>78</td>
+<td>77</td>
+<td>80</td>
+</tr>
+<tr>
+<td>HLE (w/o tools)</td>
+<td>12.5</td>
+<td>9.6</td>
+<td>17.3</td>
+<td>21.1</td>
+<td>26.5</td>
+<td>13.3</td>
+<td>6.3</td>
+<td>13.8</td>
+</tr>
+<tr>
+<td>LiveCodeBench (LCB)</td>
+<td>83</td>
+<td>66</td>
+<td>71</td>
+<td>80</td>
+<td>85</td>
+<td>70</td>
+<td>61</td>
+<td>79</td>
+</tr>
+<tr>
+<td>SciCode</td>
+<td>36</td>
+<td>40</td>
+<td>45</td>
+<td>43</td>
+<td>43</td>
+<td>38</td>
+<td>31</td>
+<td>38</td>
+</tr>
+<tr>
+<td>IFBench</td>
+<td>72</td>
+<td>55</td>
+<td>57</td>
+<td>49</td>
+<td>73</td>
+<td>43</td>
+<td>42</td>
+<td>54</td>
+</tr>
+<tr>
+<td>AA-LCR</td>
+<td>61</td>
+<td>65</td>
+<td>66</td>
+<td>66</td>
+<td>76</td>
+<td>54</td>
+<td>52</td>
+<td>69</td>
+</tr>
+<tr>
+<td>τ²-Bench-Telecom</td>
+<td>87</td>
+<td>65</td>
+<td>78</td>
+<td>54</td>
+<td>85</td>
+<td>71</td>
+<td>73</td>
+<td>34</td>
+</tr>
+<tr>
+<td>Terminal-Bench-Hard</td>
+<td>24</td>
+<td>30</td>
+<td>33</td>
+<td>25</td>
+<td>31</td>
+<td>23</td>
+<td>23</td>
+<td>29</td>
+</tr>
+<tr>
+<td><strong>AA Intelligence</strong></td>
+<td>61</td>
+<td>57</td>
+<td>63</td>
+<td>60</td>
+<td>69</td>
+<td>56</td>
+<td>50</td>
+<td>57</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>AA: All scores of MiniMax-M2 aligned with Artificial Analysis Intelligence Benchmarking Methodology (https://artificialanalysis.ai/methodology/intelligence-benchmarking). All scores of other models reported from https://artificialanalysis.ai/.</p>
+</blockquote>
+<hr />
+<h2 id="why-activation-size-matters">Why activation size matters</h2>
+<p>By maintaining activations around <strong>10B</strong> , the plan → act → verify loop in the agentic workflow is streamlined, improving responsiveness and reducing compute overhead:</p>
+<ul>
+<li>
+<p><strong>Faster feedback cycles</strong> in compile-run-test and browse-retrieve-cite chains.</p>
+</li>
+<li>
+<p><strong>More concurrent runs</strong> on the same budget for regression suites and multi-seed explorations.</p>
+</li>
+<li>
+<p><strong>Simpler capacity planning</strong> with smaller per-request memory and steadier tail latency.</p>
+</li>
+</ul>
+<p>In short: <strong>10B activations = responsive agent loops + better unit economics</strong>.</p>
+<h2 id="at-a-glance">At a glance</h2>
+<p>If you need frontier-style coding and agents without frontier-scale costs, <strong>MiniMax-M2</strong> hits the sweet spot: fast inference speeds, robust tool-use capabilities, and a deployment-friendly footprint.</p>
+<p>We look forward to your feedback and to collaborating with developers and researchers to bring the future of intelligent collaboration one step closer.</p>
+<h2 id="how-to-use">How to Use</h2>
+<ul>
+<li>
+<p>Our product <strong>MiniMax Agent</strong>, built on MiniMax-M2, is now <strong>publicly available and free</strong> for a limited time: https://agent.minimax.io/</p>
+</li>
+<li>
+<p>The MiniMax-M2 API is now live on the <strong>MiniMax Open Platform</strong> and is <strong>free</strong> for a limited time: https://platform.minimax.io/docs/guides/text-generation</p>
+</li>
+<li>
+<p>The MiniMax-M2 model weights are now <strong>open-source</strong>, allowing for local deployment and use: https://huggingface.co/MiniMaxAI/MiniMax-M2. </p>
+</li>
+</ul>
+<h2 id="local-deployment-guide">Local Deployment Guide</h2>
+<p>Download the model from HuggingFace repository: https://huggingface.co/MiniMaxAI/MiniMax-M2. We recommend using the following inference frameworks (listed alphabetically) to serve the model:</p>
+<h3 id="sglang">SGLang</h3>
+<p>We recommend using <a href="https://docs.sglang.ai/">SGLang</a> to serve MiniMax-M2. SGLang provides solid day-0 support for MiniMax-M2 model. Please refer to our <a href="https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/sglang_deploy_guide.md">SGLang Deployment Guide</a> for more details, and thanks so much for our collaboration with the SGLang team.</p>
+<h3 id="vllm">vLLM</h3>
+<p>We recommend using <a href="https://docs.vllm.ai/en/stable/">vLLM</a> to serve MiniMax-M2. vLLM provides efficient day-0 support of MiniMax-M2 model, check https://docs.vllm.ai/projects/recipes/en/latest/MiniMax/MiniMax-M2.html for latest deployment guide. We also provide our <a href="https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/vllm_deploy_guide.md">vLLM Deployment Guide</a>.</p>
+<h3 id="mlx">MLX</h3>
+<p>We recommend using <a href="https://github.com/ml-explore/mlx-lm">MLX-LM</a> to serve MiniMax-M2.  Please refer to our <a href="https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/mlx_deploy_guide.md">MLX Deployment Guide</a> for more details.</p>
+<h3 id="transformers">Transformers</h3>
+<p>We recommend using <a href="https://github.com/huggingface/transformers">Transformers</a> to serve MiniMax-M2.  Please refer to our <a href="https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/transformers_deploy_guide.md">Transformers Deployment Guide</a> for more details.</p>
+<h3 id="inference-parameters">Inference Parameters</h3>
+<p>We recommend using the following parameters for best performance: <code>temperature=1.0</code>, <code>top_p = 0.95</code>, <code>top_k = 40</code>.</p>
+<p><strong>IMPORTANT:</strong> MiniMax-M2 is an interleaved thinking model. Therefore, when using it, it is important to retain the thinking content from the assistant's turns within the historical messages. In the model's output content, we use the <code>&lt;think&gt;...&lt;/think&gt;</code> format to wrap the assistant's thinking content. When using the model, you must ensure that the historical content is passed back in its original format. Do not remove the <code>&lt;think&gt;...&lt;/think&gt;</code> part, otherwise, the model's performance will be negatively affected.</p>
+<h2 id="tool-calling-guide">Tool Calling Guide</h2>
+<p>Please refer to our <a href="https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/tool_calling_guide.md">Tool Calling Guide</a>.</p>
+<h1 id="community-showcases">Community Showcases</h1>
+<blockquote>
+<p>The projects below are built and maintained by the community/partners. They are not official MiniMax products, and results may vary.</p>
+</blockquote>
+<ul>
+<li><strong>AnyCoder</strong> — a web IDE–style coding assistant Space on Hugging Face, <strong>uses MiniMax-M2 as the default model</strong>: https://huggingface.co/spaces/akhaliq/anycoder<br />
+<em>Maintainer:</em> @akhaliq (Hugging Face)</li>
+</ul>
+<h1 id="contact-us">Contact Us</h1>
+<p>Contact us at <a href="mailto:model@minimax.io">model@minimax.io</a> | <a href="https://github.com/MiniMax-AI/MiniMax-AI.github.io/blob/main/images/wechat-qrcode.jpeg">WeChat</a>.</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/94b63c16f6b1.html">GLM-5</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/224a0c39bab5.html">GLM-5.3</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/22905c393a9c.html">GLM-5.3-Flash</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d060129a14be.html">GLM-5.2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f90617223e31.html">GLM-4.7</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/0edcfc955787.html">GLM-4.6V</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8cf89aee725c.html">GLM-4.5-Air</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/10aa23c70e91.html">Grok 2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/652b9a513303.html">Grok-1</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4224b4932376.html">Solar Open</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/32e837241209.html">tencent__Hy3__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/e9c250974ef4.html">tencent__Hunyuan-Large__README</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

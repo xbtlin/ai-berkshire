@@ -1,0 +1,386 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>中国大模型六强横向深度研究：字节Seed、阿里Qwen、DeepSeek、MiniMax、月之暗面、智谱 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/中国大模型六强横向研究-20260721/index.html">中国大模型六强横向研究-20260721</a></div><h1>中国大模型六强横向深度研究：字节Seed、阿里Qwen、DeepSeek、MiniMax、月之暗面、智谱</h1><div class="meta"><a href="../topics/中国大模型六强横向研究-20260721/index.html">中国大模型六强横向研究-20260721</a> ｜ 2026-07-21 · 横评对比 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%AD%E5%BC%BA%E6%A8%AA%E5%90%91%E7%A0%94%E7%A9%B6-20260721/00-%E6%80%BB%E6%8A%A5%E5%91%8A-%E5%85%AD%E5%BC%BA%E6%A8%AA%E5%90%91%E5%AF%B9%E6%AF%94.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、一段话结论</a></li>
+<li><a href="#_2">二、六强速览对比表</a><ul>
+<li><a href="#_3">五维评分矩阵（各分析单元原始评分）</a></li>
+</ul>
+</li>
+<li><a href="#_4">三、交叉验证与数据冲突仲裁</a></li>
+<li><a href="#_5">四、五个维度的横向判断</a><ul>
+<li><a href="#1">1. 实力：三个层次</a></li>
+<li><a href="#2-2026">2. 估值：一二级市场的温差是2026年中最大信号</a></li>
+<li><a href="#3">3. 团队：人才环流的终点是字节，源头是所有人</a></li>
+<li><a href="#4">4. 护城河：真护城河只有四条</a></li>
+<li><a href="#5">5. 企业文化：两种范式的对决</a></li>
+</ul>
+</li>
+<li><a href="#_6">五、投资视角的综合排序与结论</a></li>
+<li><a href="#_7">六、整体信息盲区</a></li>
+</ul>
+</div>
+</details><article><p><strong>研究日期：2026年7月21日</strong>
+<strong>研究方法：7个研究单元并行检索（六家公司各一 + 行业横向底座），每单元12次以上中英文检索与原文抓取，关键数据跨报告交叉验证。置信度标注：🟢官方/财报/招股书、🟡可信媒体、🔴推算/传闻</strong>。</p>
+<p>分报告目录：<a href="../r/ac4261aa7298.html">01-字节Seed</a> | <a href="../r/d1d4703d6ee5.html">02-阿里Qwen</a> | <a href="../r/a7175d653339.html">03-DeepSeek</a> | <a href="../r/9b7f91e0f6aa.html">04-MiniMax</a> | <a href="../r/14369cdce58f.html">05-月之暗面</a> | <a href="../r/6e815cdd4f12.html">06-智谱GLM</a> | <a href="../r/706d5cd000c5.html">07-行业横向格局</a></p>
+<hr />
+<h2 id="_1">一、一段话结论</h2>
+<p>2026年年中的中国大模型行业，格局已从"百模大战"收敛为 <strong>2大厂 + 1鲶鱼 + 3上市/准上市创业者</strong>：字节以算力和分发做成规模双第一，阿里以开源生态和云做成B端底座，DeepSeek放弃"不融资"人设后成为国资加持的效率标杆，月之暗面靠K3和ARR完成绝地翻盘，智谱和MiniMax抢先上市却在7月遭遇市值腰斩式挤泡沫。六家的模型能力都已进入"落后美国前沿约3-6个月"区间，能力差距不再是主要矛盾；<strong>真正的分水岭在商业化兑现度与估值合理性</strong>——按这个标准排序，生意质量最好的是字节和阿里（有母体输血且已有真实收入），性价比最差的是仍在百倍市销率上的三家创业公司（月之暗面、智谱、MiniMax），DeepSeek介于两者之间：现金流已自证、但估值同样透支了战略溢价。</p>
+<hr />
+<h2 id="_2">二、六强速览对比表</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>字节Seed</th>
+<th>阿里Qwen</th>
+<th>DeepSeek</th>
+<th>月之暗面</th>
+<th>智谱</th>
+<th>MiniMax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最新旗舰模型</td>
+<td>Doubao-Seed-2.0（2026-02）</td>
+<td>Qwen3.7-Max（闭源）/ Qwen3.6（开源）</td>
+<td>V4-Pro / V4-Flash（MIT开源）</td>
+<td>Kimi K3（2.8T，最大开源模型）</td>
+<td>GLM-5.2（开源）</td>
+<td>M3（428B MoE）</td>
+</tr>
+<tr>
+<td>模型江湖地位</td>
+<td>国内综合第一，视频全球第一</td>
+<td>开源生态全球第一</td>
+<td>开源旗舰+OpenRouter份额第一</td>
+<td>开源能力榜第一（K3登顶Code Arena）</td>
+<td>开源第一梯队，7月被K3反超</td>
+<td>全模态覆盖最全，单项无第一</td>
+</tr>
+<tr>
+<td>C端MAU（2026Q1，QuestMobile口径）</td>
+<td>豆包3.45亿（7月约3.8亿）</td>
+<td>千问1.66亿</td>
+<td>1.27亿</td>
+<td>约834万</td>
+<td>未进TOP20（清言口径缺失）</td>
+<td>未进国内TOP20（海外为主）</td>
+</tr>
+<tr>
+<td>收入体量（最新可得）</td>
+<td>AI直接收入约150-250亿元/年🔴推算；MaaS 2026目标150亿元</td>
+<td>AI相关ARR 358亿元🟢（占云外部收入30%+）</td>
+<td>年化营收4-5亿美元🟡，毛利70-80%</td>
+<td>ARR 3亿美元（2026-06）🟡</td>
+<td>2025年收入7.24亿元🟢；MaaS ARR约17亿元</td>
+<td>2025年收入7904万美元🟢</td>
+</tr>
+<tr>
+<td>估值/市值（2026-07）</td>
+<td>集团6000亿美元（老股口径）🟡</td>
+<td>集团约2万亿港元（上市）</td>
+<td>投后约3510亿元，二轮谈约700亿美元🟡</td>
+<td>目标投后300亿美元🟡</td>
+<td>约4500-5150亿港元（暴跌后）</td>
+<td>约680亿港元（高点跌80%+）</td>
+</tr>
+<tr>
+<td>隐含市销率</td>
+<td>不适用（AI占集团收入1-2%）</td>
+<td>不适用（集团整体约2.5倍PS）</td>
+<td>约100-120倍</td>
+<td>约100倍</td>
+<td>按2025收入约650倍</td>
+<td>约百倍量级</td>
+</tr>
+<tr>
+<td>盈利状态</td>
+<td>集团年利润数百亿美元级</td>
+<td>集团净利1021亿元/年</td>
+<td>毛利为正、整体推测微利或平衡🔴</td>
+<td>亏损（额度未披露）</td>
+<td>净亏47.18亿元（2025）</td>
+<td>经调整净亏2.5亿美元（2025）</td>
+</tr>
+<tr>
+<td>上市状态</td>
+<td>未上市</td>
+<td>已上市（BABA/9988）</td>
+<td>未上市，2027年IPO筹备中</td>
+<td>计划6个月内港股IPO</td>
+<td>港股02513 + 科创板辅导验收</td>
+<td>港股0100 + A股辅导</td>
+</tr>
+<tr>
+<td>现金/弹药</td>
+<td>年利润自我造血+2000亿capex</td>
+<td>3800亿capex"上不封顶"</td>
+<td>500亿元融资到账+自身造血</td>
+<td>现金100亿元+，半年融资39亿美元</td>
+<td>半年两次股权融资363亿港元</td>
+<td>现金10.5亿美元+配售94亿港元</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_3">五维评分矩阵（各分析单元原始评分）</h3>
+<blockquote>
+<p>口径说明：实力/团队/护城河/文化四列为"绝对水平"评分；估值列各单元口径略有差异——字节、阿里侧重"兑现度与体量"，其余四家侧重"当前价格的安全边际"，故创业公司普遍低分不代表公司差，而是价格贵。</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>实力</th>
+<th>估值</th>
+<th>团队</th>
+<th>护城河</th>
+<th>企业文化</th>
+<th>简评</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>字节Seed</td>
+<td>4.5</td>
+<td>4</td>
+<td>3.5</td>
+<td>4</td>
+<td>3</td>
+<td>全能冠军，但组织摩擦真实存在</td>
+</tr>
+<tr>
+<td>阿里Qwen</td>
+<td>4.5</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>B端兑现最实，核心团队刚经历换血</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>4.5</td>
+<td>效率与文化标杆，算力是唯一一等瓶颈</td>
+</tr>
+<tr>
+<td>月之暗面</td>
+<td>4.5</td>
+<td>2</td>
+<td>4.5</td>
+<td>3</td>
+<td>4</td>
+<td>技术动能最强，估值透支最狠</td>
+</tr>
+<tr>
+<td>智谱</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>3.5</td>
+<td>3</td>
+<td>治理最完整、信创卡位独特，市值仍撕裂</td>
+</tr>
+<tr>
+<td>MiniMax</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2.5</td>
+<td>4</td>
+<td>全模态+出海先驱，护城河被证伪最多</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_4">三、交叉验证与数据冲突仲裁</h2>
+<p>7份报告独立检索，以下为跨报告一致性检验结果：</p>
+<p><strong>互相印证的关键信号</strong>（可信度升级）</p>
+<ol>
+<li>C端格局"豆包3.45亿 &gt; 千问1.66亿 &gt; DeepSeek 1.27亿 &gt; 元宝5734万 &gt; Kimi 834万"：字节、阿里、DeepSeek、月之暗面、行业五份报告引用的QuestMobile 2026Q1数据完全吻合 ✅</li>
+<li>Kimi K3（2026-07-16发布）引发行业震动：月之暗面报告（美股半导体抛售）、智谱报告（Code Arena被反超+7·17暴跌导火索）、行业报告三方互证 ✅</li>
+<li>人才向字节Seed单向净流入：阿里报告（周畅、林俊旸、郁博文流出）、DeepSeek报告（郭达雅流出）、字节报告（周畅、蒋路等流入+自身也年流失近70人）、行业报告互相咬合，构成完整的人才环流图 ✅</li>
+<li>智谱、MiniMax 2026年1月同周港股上市、7月同步深度回调：两份公司报告+行业报告一致 ✅</li>
+<li>DeepSeek首轮500亿元融资、梁文锋个人出资200亿、投后约3510亿元：DeepSeek报告与行业报告多源一致 ✅</li>
+</ol>
+<p><strong>冲突数据仲裁</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>冲突项</th>
+<th>口径A</th>
+<th>口径B</th>
+<th>仲裁</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>智谱最新市值</td>
+<td>7/17收盘约5154亿港元</td>
+<td>7/20约4484亿港元；另有2668.92亿港元报道</td>
+<td>采信"7月中下旬约4500-5150亿港元区间"；2668亿疑为仅H股流通市值口径</td>
+</tr>
+<tr>
+<td>MiniMax市值</td>
+<td>5/29约2666亿港元（行业报告）</td>
+<td>7/20约680亿港元（公司报告）</td>
+<td>两者时点不同均属实，最新为约680亿港元——6-7月跌幅极大本身就是关键事实</td>
+</tr>
+<tr>
+<td>DeepSeek旗舰命名</td>
+<td>V4.5已发布（行业报告）</td>
+<td>V4-Pro/V4-Flash，无V4.5（公司报告，逐条核实官方文档）</td>
+<td>采信公司报告：现役旗舰为V4系列，R2从未发布</td>
+</tr>
+<tr>
+<td>字节2025年净利</td>
+<td>约500亿美元创新高</td>
+<td>同比下滑超70%</td>
+<td>无法裁决（未上市无财报），倾向"经营利润高位、会计净利被AI投入压低"的调和解释🔴</td>
+</tr>
+<tr>
+<td>字节Seed团队规模</td>
+<td>超300人（研究核心）</td>
+<td>约1500人（含工程数据）</td>
+<td>两口径并存：研究核心数百人、大Seed逾千人</td>
+</tr>
+<tr>
+<td>Kimi 2026Q1数据</td>
+<td>MAU 833.8万</td>
+<td>同数字亦见于下载量口径</td>
+<td>取"800-900万区间"，标注口径混用风险</td>
+</tr>
+<tr>
+<td>月之暗面最新估值</td>
+<td>300亿美元（投前，融资中）</td>
+<td>315亿美元（ARR破3亿后）</td>
+<td>采信"约300亿美元量级、尚未完成交割"</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>信号一致性检验</strong>（叙事 vs 硬数据）</p>
+<ul>
+<li>字节"AI收入拐点"叙事 vs 招聘/投入信号：一致——MaaS目标上调10倍、capex上调25%、期权连发18个月，投入行为支持叙事。</li>
+<li>月之暗面"ARR爆发"叙事 vs 融资行为：基本一致但需警惕——ARR数字主要出自投资人之口（利益相关方），且半年四轮融资+火速IPO的节奏显示叙事有资本运作成分。</li>
+<li>智谱"商业化最快"叙事 vs 报表：撕裂——ARR增60倍与报表收入7.24亿、亏47亿并存，两者都真，说明ARR是前瞻指标而非当期现金。</li>
+<li>MiniMax"技术领先"叙事 vs 第三方榜单：多次落差（官方榜强、Arena弱），是六家中叙事折价最大的一家。</li>
+<li>DeepSeek"人才崩塌"舆论 vs 定量核查：证伪——核心离职率仅4-6.4%。</li>
+</ul>
+<hr />
+<h2 id="_5">四、五个维度的横向判断</h2>
+<h3 id="1">1. 实力：三个层次</h3>
+<ul>
+<li><strong>第一层</strong>（全能）：字节（唯一C端+B端+模型+视频四线第一）、阿里（开源生态+云底座+闭源准前沿）。</li>
+<li><strong>第二层</strong>（单点尖峰）：DeepSeek（效率与开源旗舰，SWE-bench距世界最强0.2分、价格1/7）、月之暗面（K3为最大开源模型，Agent与代码榜登顶）。</li>
+<li><strong>第三层</strong>（有强项无霸权）：智谱（代码/Agent开源强，被K3反超）、MiniMax（全模态最全，视频被字节/快手反超）。</li>
+<li>共同天花板：LMArena总榜前十仍无中国模型，塔尖（Claude/GPT/Gemini）未破；国产的武器是性价比、开源和智能体工程，不是绝对智能。</li>
+</ul>
+<h3 id="2-2026">2. 估值：一二级市场的温差是2026年中最大信号</h3>
+<ul>
+<li>二级市场7月已开始暴力挤泡沫：智谱峰值1.33万亿港元→约5000亿，MiniMax峰值4100亿港元→680亿。挤泡沫的触发器都是"解禁+供给+被竞品反超"，证明<strong>开源模型的榜单领先构不成定价权</strong>。</li>
+<li>一级市场仍在加价：月之暗面半年43亿→300亿美元，DeepSeek两个月100亿→450亿美元并洽谈700亿。一级的钱主要来自国资和战略方，定价逻辑含大量非财务因素（自主可控、生态卡位）。</li>
+<li>温差的含义：要么二级错杀，要么一级接刀。以ARR倍数看，六家创业系全部在100倍上下，而同期OpenAI/Anthropic约30-60倍——中国大模型资产整体存在约2-3倍的估值溢价，且由流动性稀缺与政策叙事支撑，不是由现金流支撑。</li>
+</ul>
+<h3 id="3">3. 团队：人才环流的终点是字节，源头是所有人</h3>
+<ul>
+<li>字节Seed是唯一的"人才净输入方"（周畅、林俊旸系、郭达雅、蒋路……），但它自己也一年流失近70人（腾讯挖走近30人）——顶级研究员的忠诚周期已缩短到18-24个月，没有任何公司锁得住人。</li>
+<li>创始人稳定性排序：DeepSeek（梁文锋84%控制权+全部身家投入）&gt; 月之暗面/MiniMax（创始人即技术一号位）&gt; 智谱（三驾马车分工制）&gt; 阿里（职业经理人+空降）&gt; 字节Seed（三年三换主导者）。</li>
+<li>值得注意的治理事件：闫俊杰"零薪酬至AGI+捐股5%"、梁文锋自掏200亿参与本公司融资、张予彤从丑闻主角转正总裁——创始人用真金白银表态的公司，与用组织手术表态的公司，长期结果可能很不一样。</li>
+</ul>
+<h3 id="4">4. 护城河：真护城河只有四条</h3>
+<p>逐项检验六家后，真正经得起推敲的护城河只有：</p>
+<ol>
+<li><strong>算力与资金</strong>（字节、阿里独有）：2000亿/3800亿级capex+H200配额+自研芯片，创业公司无法复制。</li>
+<li><strong>分发与场景</strong>（字节抖音、阿里电商/夸克独有）：豆包3.8亿MAU的获客成本是全行业最低。</li>
+<li><strong>信创/G端渠道</strong>（智谱独有）：7大国产芯片全栈适配+实体清单反向背书，大厂反而做不了"中立第三方"。</li>
+<li><strong>效率工程文化</strong>（DeepSeek最强，Kimi次之）：29.4万美元训练R1登Nature封面，这是被算力封锁逼出来的、组织层面的能力。</li>
+</ol>
+<p>以下常被当作护城河的东西被本轮研究证伪：模型榜单领先（窗口2-4个月）、C端流量（Kimi从3600万跌到834万、DeepSeek从峰值回落、MiniMax陪伴产品月活跌60%）、开源生态本身（权重公开=任何云都能托管）。</p>
+<h3 id="5">5. 企业文化：两种范式的对决</h3>
+<ul>
+<li><strong>研究院范式</strong>（DeepSeek、月之暗面、MiniMax）：小团队、高人才密度、创始人技术信仰、低内耗。优点是人效和原创性（170人做出V4、数百人做出2.8T的K3），风险是规模化与上市合规会稀释文化——DeepSeek翻倍扩招、Kimi火速IPO都在测试这条边界。</li>
+<li><strong>大厂改造范式</strong>（字节、阿里）：用组织手术适配研究——字节为Seed设6个月至3年考核期、请吴永辉当一号位；阿里CEO直管模型、三个月建三个AI事业部。优点是资源碾压，风险是"研究长期主义 vs 季度问责"的结构性张力（字节顾全全告别信风波、阿里林俊旸出走、《置身钉内》都是症状）。</li>
+<li>智谱介于两者之间：学院派底色+国家队定位，但突击裁员和股权原价回购暴露了商业化组织的粗糙。</li>
+</ul>
+<hr />
+<h2 id="_6">五、投资视角的综合排序与结论</h2>
+<blockquote>
+<p>以下为研究观点，不构成投资建议。可投性 = 生意质量 × 价格合理性 × 可参与度。</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>排序</th>
+<th>标的</th>
+<th>参与方式</th>
+<th>核心逻辑</th>
+<th>主要风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>阿里巴巴（9988.HK）</td>
+<td>二级市场直接可买</td>
+<td>六家中唯一"AI收入真实兑现（ARR 358亿元、11个季度三位数增长）+估值未按AI资产定价（集团约2.5倍PS）"的标的；AI在阿里是免费期权</td>
+<td>capex吞噬自由现金流；Qwen团队换血后迭代失速</td>
+</tr>
+<tr>
+<td>2</td>
+<td>字节跳动（老股/Pre-IPO）</td>
+<td>老股交易，门槛高</td>
+<td>全能冠军+自我造血，6000亿美元对1860亿美元收入约3.2倍PS，估值并不离谱</td>
+<td>流动性差；TikTok地缘；净利被AI投入压低的持续期未知</td>
+</tr>
+<tr>
+<td>3</td>
+<td>DeepSeek（一级，实际不可参与）</td>
+<td>无投票权LP份额、门槛50亿元</td>
+<td>生意模式已自证（毛利70-80%），战略地位独一档</td>
+<td>100倍+PS、算力天花板、极端关键人风险</td>
+</tr>
+<tr>
+<td>4</td>
+<td>智谱（02513.HK）</td>
+<td>二级可买</td>
+<td>信创渠道是真稀缺资产，A股IPO是确定性催化；但650倍PS需要连续三年收入翻倍消化</td>
+<td>继续挤泡沫、摊薄、开源军备竞赛无终点</td>
+</tr>
+<tr>
+<td>5</td>
+<td>月之暗面（IPO时再评估）</td>
+<td>等待港股IPO</td>
+<td>技术与ARR动能最强，但300亿美元/3亿ARR=100倍，且ARR质量未经审计披露验证</td>
+<td>一次模型迭代失手即估值坍塌；仲裁与治理历史</td>
+</tr>
+<tr>
+<td>6</td>
+<td>MiniMax（0100.HK）</td>
+<td>二级可买</td>
+<td>跌80%后情绪释放较充分、现金极厚，是六家中唯一"深度价值化"的博弈标的；但基本面三引擎（陪伴/视频/B端）尚未见底回升信号</td>
+<td>好莱坞诉讼、月活未企稳、后续解禁</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>三条横向判断收尾</strong>：</p>
+<ol>
+<li><strong>能力收敛，兑现分化</strong>。2026年下半年起，评判这六家的正确指标不再是榜单，而是三个数字：ARR增速、毛利率、单位算力产出。目前这三个数字最健康的组合出现在阿里（规模+增速）和DeepSeek（毛利+效率）。</li>
+<li><strong>二级市场的挤泡沫尚未结束</strong>。智谱、MiniMax的7月暴跌+月之暗面IPO在即+DeepSeek 2027年IPO排队，未来12个月中国大模型资产的供给将大幅增加，百倍PS难以为继；对二级投资者，耐心等待比追逐叙事划算。</li>
+<li><strong>终局猜想</strong>：这个行业最可能的稳态是"字节、阿里两个全栈巨头 + DeepSeek一个受政策保护的效率型实验室"长期共存，创业公司中至多再存活1-2家——胜出条件是要么像Kimi一样把开源-API飞轮转到海外（脱离国内内卷定价），要么像智谱一样把信创渠道做成排他资产。纯C端和纯模型能力的故事，已经在2025-2026年被证伪了两轮。</li>
+</ol>
+<hr />
+<h2 id="_7">六、整体信息盲区</h2>
+<ul>
+<li>字节与DeepSeek均无审计财务，收入/利润全部依赖媒体转述，两家恰好是六家中生意质量判断最关键的。</li>
+<li>三家创业公司的ARR均无审计口径（构成、留存、毛利缺失），而ARR恰是当前所有估值的锚。</li>
+<li>六家真实算力家底（GPU保有量、国产芯片实际占比）全部为推算，而算力是决定2027年迭代速度的第一变量。</li>
+<li>政企/B端中标的六家分项对比数据缺失（仅知科大讯飞总量领先）。</li>
+<li>本报告全部基于公开信息，未包含任何一手渠道核实。</li>
+</ul>
+<p><strong>数据来源汇总</strong>：IDC、QuestMobile、SuperCLUE、Artificial Analysis、LMArena、OpenRouter、HuggingFace、斯坦福AI Index 2026、Epoch AI、Nature、各公司财报/招股书/公告、36氪、晚点系、The Information、路透、彭博、FT、证券时报、财联社、量子位、钛媒体、蓝鲸财经、每日经济新闻等（详见各分报告脚注）。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/706d5cd000c5.html">中国大模型行业横向格局研究报告（2026年7月）</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/6e815cdd4f12.html">智谱（Zhipu AI / 北京智谱华章，02513.HK）深度研究报告</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/14369cdce58f.html">月之暗面（Moonshot AI / Kimi）深度研究报告</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/9b7f91e0f6aa.html">MiniMax（稀宇科技）深度研究报告</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/a7175d653339.html">DeepSeek（深度求索）深度研究分报告</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/d1d4703d6ee5.html">阿里巴巴通义千问 Qwen 深度研究分报告</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/ac4261aa7298.html">字节跳动 Seed（豆包大模型团队）深度研究报告</a><div class="meta">2026-07-21 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

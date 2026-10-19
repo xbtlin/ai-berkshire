@@ -1,0 +1,276 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>技术路线——MoE架构、开源策略与训练效率突破 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/DeepSeek/index.html">DeepSeek</a></div><h1>技术路线——MoE架构、开源策略与训练效率突破</h1><div class="meta"><a href="../companies/DeepSeek/index.html">DeepSeek</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/DeepSeek/%E3%80%8A%E7%9C%8B%E6%87%82DeepSeek%E3%80%8B/02-%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF-MoE%E6%9E%B6%E6%9E%84%E3%80%81%E5%BC%80%E6%BA%90%E7%AD%96%E7%95%A5%E4%B8%8E%E8%AE%AD%E7%BB%83%E6%95%88%E7%8E%87%E7%AA%81%E7%A0%B4.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">为什么要先讲技术？</a></li>
+<li><a href="#moe110">创新一：MoE架构——用1/10的电费做同等量级的计算</a><ul>
+<li><a href="#moe">什么是MoE？</a></li>
+<li><a href="#moe_1">MoE的关键优势</a></li>
+</ul>
+</li>
+<li><a href="#mla">创新二：MLA注意力机制——解决长文本的内存瓶颈</a></li>
+<li><a href="#fp8r1-zero">创新三：FP8混合精度训练与R1-Zero</a><ul>
+<li><a href="#fp8">FP8训练</a></li>
+<li><a href="#r1-zero">R1-Zero：纯强化学习的里程碑</a></li>
+</ul>
+</li>
+<li><a href="#mit">创新四：全MIT开源——护城河还是自掘坟墓？</a><ul>
+<li><a href="#_2">开源策略的利与弊</a></li>
+</ul>
+</li>
+<li><a href="#v4">V4适配华为昇腾：一个关键转折</a></li>
+<li><a href="#_3">技术领先能持续多久？</a><ul>
+<li><a href="#_4">看多的理由</a></li>
+<li><a href="#_5">看空的理由</a></li>
+</ul>
+</li>
+<li><a href="#_6">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂DeepSeek》系列 · 第 02 篇
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">为什么要先讲技术？</h2>
+<p>一家270人的团队，用560万美元训练出全球前沿大模型。这件事如果只是运气，就没有研究价值；如果是结构性的——它就改变了整个AI行业的竞争逻辑。</p>
+<p>判断这件事，只有一条路：把技术路线看懂。这篇会尽量用非技术语言把四个核心创新说清楚。</p>
+<hr />
+<h2 id="moe110">创新一：MoE架构——用1/10的电费做同等量级的计算</h2>
+<h3 id="moe">什么是MoE？</h3>
+<p>传统大模型（如早期GPT-4）是"稠密模型"——每次推理，<strong>所有参数</strong>都参与计算。1万亿参数的模型，每个问题都要动用全部1万亿参数。</p>
+<p>MoE（Mixture of Experts，混合专家）的思路完全不同：把模型拆成<strong>多个"专家模块"</strong>，每次推理只激活其中一小部分。</p>
+<p>类比：一家有500个律师的律所，客户来了不是500人一起上，而是根据案件类型只派5个最相关的专家。</p>
+<p>DeepSeek V3的数据：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总参数</td>
+<td><strong>6,710亿</strong>（671B）</td>
+</tr>
+<tr>
+<td>每次激活参数</td>
+<td><strong>370亿</strong>（37B）</td>
+</tr>
+<tr>
+<td>激活比例</td>
+<td>约<strong>5.5%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>V4-Pro更进一步：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总参数</td>
+<td><strong>1.6万亿</strong>（1.6T）</td>
+</tr>
+<tr>
+<td>每次激活参数</td>
+<td><strong>490亿</strong>（49B）</td>
+</tr>
+<tr>
+<td>激活比例</td>
+<td>约<strong>3%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：DeepSeek技术论文、Hugging Face模型页面）</p>
+<p><strong>这意味着什么？</strong> V4-Pro拥有1.6万亿参数的"知识容量"，但每次计算只消耗490亿参数的算力成本。知识的广度和推理的效率，两者兼得。</p>
+<p><strong>反方观点</strong>：MoE并非DeepSeek的发明——Google的Switch Transformer（2021年）、Mixtral（2024年）都在用MoE。DeepSeek的贡献在于<strong>把MoE在超大规模上做到了工程极致</strong>，但这并不意味着其他公司无法复制。事实上，V4发布后数周内，多个实验室已经在研究类似架构。</p>
+<h3 id="moe_1">MoE的关键优势</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>优势</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>训练成本低</td>
+<td>V3训练仅<strong>560万美元</strong>，同等性能的稠密模型需要上亿美元</td>
+</tr>
+<tr>
+<td>推理成本低</td>
+<td>每次只激活3-5%参数，单次推理电费大幅降低</td>
+</tr>
+<tr>
+<td>扩展性好</td>
+<td>可以不断加"专家"而不等比增加推理成本</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="mla">创新二：MLA注意力机制——解决长文本的内存瓶颈</h2>
+<p>大模型在处理长文本时有一个技术瓶颈：<strong>KV-cache</strong>（键值缓存）会随上下文长度线性增长，消耗大量GPU显存。</p>
+<p>DeepSeek的<strong>MLA（Multi-head Latent Attention）</strong> 通过对注意力头进行低秩压缩，大幅降低KV-cache的内存占用。</p>
+<p>V4在此基础上进一步引入<strong>CSA（压缩稀疏注意力）</strong> 和 <strong>HCA（重度压缩注意力）</strong> 混合机制：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>对比V3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单token推理计算量</td>
+<td>仅为V3的<strong>27%</strong></td>
+</tr>
+<tr>
+<td>KV-cache占用</td>
+<td>仅为V3的<strong>10%</strong></td>
+</tr>
+<tr>
+<td>上下文窗口</td>
+<td>从128K扩展到<strong>100万tokens</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：DeepSeek V4技术论文）</p>
+<p><strong>为什么这很重要？</strong> 100万tokens的上下文窗口意味着可以一次读入一整本书、一整个代码库。而KV-cache的压缩意味着这个能力的硬件成本大幅降低——不是靠堆更贵的GPU，而是靠更聪明的算法。</p>
+<hr />
+<h2 id="fp8r1-zero">创新三：FP8混合精度训练与R1-Zero</h2>
+<h3 id="fp8">FP8训练</h3>
+<p>传统大模型用FP16（16位浮点数）或BF16进行训练。DeepSeek V3是<strong>第一个成功用FP8（8位浮点数）完成完整训练的开源大模型</strong>。</p>
+<p>位数减半，直接的效果：</p>
+<ul>
+<li>内存占用减半</li>
+<li>计算吞吐量几乎翻倍</li>
+<li>训练总成本进一步降低</li>
+</ul>
+<p>（来源：DeepSeek V3 arXiv论文）</p>
+<p><strong>反方观点</strong>：FP8训练在学术界已有讨论多年，NVIDIA的H100/H200本身就支持FP8算力。DeepSeek的贡献是<strong>第一个在超大规模模型上跑通了FP8训练的完整流水线</strong>，但这项技术会迅速被行业跟进。</p>
+<h3 id="r1-zero">R1-Zero：纯强化学习的里程碑</h3>
+<p>2025年1月，DeepSeek R1发布时附带了一个研究成果——<strong>R1-Zero</strong>。</p>
+<p>传统训练大模型的推理能力，需要先用人工标注的"思维链"数据做监督微调（SFT），再做强化学习（RL）。这个过程依赖大量人工标注。</p>
+<p>R1-Zero的突破是：<strong>完全跳过监督微调，仅用强化学习，模型就自发涌现出了推理链</strong>。</p>
+<p>这被学术界视为一个标志性事件——它暗示：<strong>推理能力可能不需要人类手把手教，AI可以通过自我博弈学会"思考"。</strong></p>
+<p><strong>反方观点</strong>：R1-Zero在实际性能上不如经过SFT+RL完整流程的R1。它的学术意义大于工程意义。但它验证了一条理论路径，这条路径的长期影响可能远超短期基准测试分数。</p>
+<hr />
+<h2 id="mit">创新四：全MIT开源——护城河还是自掘坟墓？</h2>
+<p>DeepSeek的所有核心模型——V3、R1、V4——全部以<strong>MIT协议</strong>开源。这是最宽松的开源协议之一，意味着：</p>
+<ul>
+<li>任何人可以免费下载模型权重</li>
+<li>可以用于商业用途</li>
+<li>不要求对修改版本也开源</li>
+<li>训练代码和工具也全部公开</li>
+</ul>
+<p><strong>38%的2025年Q1新AI论文引用了DeepSeek的工具或数据集</strong>（来源：DemandSage统计）。Hugging Face上，DeepSeek模型月下载量超过<strong>80万次</strong>。</p>
+<h3 id="_2">开源策略的利与弊</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>看多（护城河说）</th>
+<th>看空（自毁说）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生态</td>
+<td>开发者生态一旦建成极难迁移</td>
+<td>别人拿走代码训自己的模型</td>
+</tr>
+<tr>
+<td>人才吸引</td>
+<td>全球顶级研究者愿意为开源项目贡献</td>
+<td>核心知识产权免费送出</td>
+</tr>
+<tr>
+<td>品牌</td>
+<td>"AI界的Linux"——影响力巨大</td>
+<td>Linux基金会不赚钱</td>
+</tr>
+<tr>
+<td>商业</td>
+<td>API低价+开源=占领开发者市场</td>
+<td>竞争对手用你的模型做出竞品</td>
+</tr>
+<tr>
+<td>安全</td>
+<td>代码透明→安全审计更充分</td>
+<td>恶意使用者可以去除安全限制</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一个不可忽视的事实</strong>：截至2026年5月，DeepSeek在开源大模型领域排名<strong>全球第一</strong>，GitHub仓库累计超过<strong>7万星</strong>（来源：GitHub）。在"开源AI"这条赛道上，DeepSeek已经建立了显著的先发优势。</p>
+<p><strong>但另一个事实同样不可忽视</strong>：Anthropic（Claude）和OpenAI走的是完全相反的闭源路线，两者在商业化上都远远领先于DeepSeek。开源的影响力能否转化为可持续的竞争优势，至今没有定论。</p>
+<hr />
+<h2 id="v4">V4适配华为昇腾：一个关键转折</h2>
+<p>2026年4月24日，DeepSeek V4发布时有一个容易被忽略的细节：<strong>同步宣布全面支持华为昇腾950芯片</strong>。</p>
+<p>这意味着：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>变化</th>
+<th>之前</th>
+<th>之后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>训练依赖</td>
+<td>主要依赖NVIDIA H800</td>
+<td>开始适配华为昇腾</td>
+</tr>
+<tr>
+<td>推理部署</td>
+<td>CUDA生态（NVIDIA）</td>
+<td>CANN框架（华为）</td>
+</tr>
+<tr>
+<td>供应链风险</td>
+<td>极高（美国芯片禁令）</td>
+<td>有备份路线</td>
+</tr>
+</tbody>
+</table></div>
+<p>华为昇腾950超级节点在V4-Pro上实现了单卡解码吞吐<strong>4,700 TPS</strong>、首token延迟约<strong>20ms</strong>（来源：华为计算、科学网）。</p>
+<p><strong>这是第一次一个世界级开源大模型在国产芯片上实现了从训练到推理的全栈部署</strong>，不依赖任何NVIDIA硬件。</p>
+<p><strong>反方观点</strong>：昇腾芯片与NVIDIA最新的H200/B100相比仍有性能差距。华为自身产能爬坡需要时间——V4-Pro的高端推理服务目前因算力受限，价格预计要到2026年下半年昇腾950量产后才能大幅下降。"去美化"是方向，但远未完成。</p>
+<hr />
+<h2 id="_3">技术领先能持续多久？</h2>
+<p>这是最难回答的问题。直接给出正反两面：</p>
+<h3 id="_4">看多的理由</h3>
+<ol>
+<li><strong>算法创新的组织能力</strong>：270人团队持续产出V3→R1→V4三代突破性成果，说明团队的"研究密度"极高</li>
+<li><strong>成本优势有复利效应</strong>：训练成本低→迭代速度快→成本进一步降低</li>
+<li><strong>开源生态壁垒</strong>：全球38%新论文引用，开发者生态一旦锁定很难迁移</li>
+<li><strong>国产芯片适配先行</strong>：在昇腾上的经验会成为后续国产替代的标杆</li>
+</ol>
+<h3 id="_5">看空的理由</h3>
+<ol>
+<li><strong>MoE架构不是秘密</strong>：技术论文全部公开，竞对可以快速跟进</li>
+<li><strong>人才流失已在发生</strong>：2025年底至2026年初，多名核心成员离职加入小米、腾讯、字节跳动（来源：36氪）</li>
+<li><strong>无股权激励</strong>：270人的精英团队没有上市公司的股权锁定机制</li>
+<li><strong>芯片差距</strong>：昇腾适配降低了供应链风险，但训练前沿模型的效率仍可能受限</li>
+</ol>
+<p><strong>一个比较审慎的判断是</strong>：技术领先大概率能维持<strong>1-2年</strong>。3年以上的领先取决于团队稳定性、芯片供应和对手的追赶速度——这些都有很大不确定性。</p>
+<hr />
+<h2 id="_6">下期预告</h2>
+<p>技术只是起点。下一篇，我们要回答一个更尖锐的问题——<strong>这个实验室的钱从哪来？能走多远？</strong></p>
+<p>要拆解的问题：</p>
+<ul>
+<li>幻方量化到底是什么？它的利润能支撑DeepSeek多久？</li>
+<li>首轮融资500亿元意味着什么？"理想主义"还在吗？</li>
+<li>与OpenAI、Anthropic、Google的竞争，DeepSeek处于什么位置？</li>
+<li>"不商业化"是战略还是无奈？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂DeepSeek》系列第 02 篇。</em>
+<em>本系列不构成任何投资建议。所有数据来源已在文中标注，如有错误欢迎指正。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/4e65e30ed7d1.html">看懂 DeepSeek Harness：一切皆插件的开源智能体框架</a><div class="meta">2026-08-14 · 深度系列</div></li><li><a href="../r/dadd8d7ba47b.html">风险与判断——芯片限制、监管与长期价值</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/1a480b33e957.html">商业与竞争——幻方背景、变现路径与全球对手</a><div class="meta">2026-05-21 · 深度系列</div></li><li><a href="../r/44b462040375.html">DeepSeek（深度求索）深度研究报告</a><div class="meta">2026-04-10 · 研究</div></li><li><a href="../r/e2b9d96009d9.html">DeepSeek——震动全球AI行业的中国实验室</a><div class="meta">2025-01-27 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

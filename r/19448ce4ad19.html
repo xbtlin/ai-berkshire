@@ -1,0 +1,492 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>腾讯控股（0700.HK）财务与估值分析——巴菲特视角的验算与反面检验 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><h1>腾讯控股（0700.HK）财务与估值分析——巴菲特视角的验算与反面检验</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-07-04 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/02-%E8%B4%A2%E5%8A%A1%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90-%E5%B7%B4%E8%8F%B2%E7%89%B9%E8%A7%86%E8%A7%92.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">〇、先说验算发现：本地底稿的四处数据问题（反面检验成果）</a></li>
+<li><a href="#5">一、近5年营收与利润趋势</a></li>
+<li><a href="#roeroic">二、盈利能力：ROE、ROIC、毛利率、经营利润率</a></li>
+<li><a href="#aifcf">三、现金流：AI资本开支对FCF的侵蚀有多大？</a></li>
+<li><a href="#20267">四、资产负债表与"投资组合安全垫"（2026年7月最新数值）</a></li>
+<li><a href="#2026">五、股东回报：回购砍半是2026年最大的负面边际变化</a></li>
+<li><a href="#pepe">六、估值：当前PE、核心业务PE、历史与同业对比</a></li>
+<li><a href="#_2">七、安全边际：三情景估值与当前股价隐含预期</a></li>
+<li><a href="#_3">总体结论</a></li>
+</ul>
+</div>
+</details><article><p><strong>分析师角色</strong>：投研团队·财务分析师 | <strong>报告日期</strong>：2026年7月4日
+<strong>当前股价</strong>：431.20港元（2026-07-03收盘，<a href="https://finance.yahoo.com/quote/0700.HK/">Yahoo Finance</a>）| <strong>52周区间</strong>：411.0–677.7港元
+<strong>总股本</strong>：91.08亿股（截至2026-06-16回购公告口径）| <strong>市值</strong>：约3.93万亿港元
+<strong>汇率</strong>：1 RMB ≈ 1.1523 HKD（<a href="https://cn.investing.com/currencies/cny-hkd">Investing.com</a>，2026年7月）
+<strong>定位声明</strong>：腾讯是A级信息充裕标的。本报告不复述共识，重点做三件事：①所有关键数据两源验证并用工具验算；②检验本地底稿（4-5月）与官方披露的出入；③反推当前股价隐含预期，检验市场担忧是否过度。</p>
+<hr />
+<h2 id="_1">〇、先说验算发现：本地底稿的四处数据问题（反面检验成果）</h2>
+<p>在照搬底稿之前先核对官方一手数据（<a href="https://static.www.tencent.com/uploads/2026/05/13/47382ae415a209fd161bc19a1f9b3704.pdf">腾讯2026Q1业绩公告PDF</a>，已下载全文解析），发现以下问题，<strong>本报告全部按官方数据修正</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>底稿</th>
+<th>底稿数据</th>
+<th>官方/两源验证后</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>利润预测模型(20260519)</td>
+<td>2022年Non-IFRS净利1,557亿、2023年1,860亿</td>
+<td><strong>2022年1,156亿、2023年1,577亿</strong>（<a href="https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html">腾讯2023年报公告</a>）</td>
+<td>底稿疑似把年份错位；真实3年CAGR是<strong>30.9%</strong> 而非18.6%，2022利润率低点比底稿呈现的更低，即近三年利润修复斜率<strong>更陡</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>估值报告(20260413)</td>
+<td>"2025年报上市投资公允值8,008亿"</td>
+<td>官方：<strong>2025-12-31为6,727亿</strong>；8,008亿是2025-09-30数字</td>
+<td>安全垫被底稿高估约1,300亿RMB</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Q1研究底稿</td>
+<td>"Q1资本开支319亿，+39%"</td>
+<td>官方：<strong>319.4亿，+16%</strong>（2025Q1基数为274.8亿非230亿）</td>
+<td>底稿夸大了capex增速，AI开支上升斜率没那么陡</td>
+</tr>
+<tr>
+<td>4</td>
+<td>估值报告(20260413)</td>
+<td>2025年FCF 1,826亿 vs stockanalysis 2,156亿</td>
+<td>两源差18%（&gt;1%，<strong>标记</strong>）：口径差异——腾讯官方FCF扣除媒体内容等支出，第三方仅扣capex</td>
+<td>本报告统一用<strong>官方口径</strong>（2025年1,826亿）</td>
+</tr>
+</tbody>
+</table></div>
+<p>工具交叉验证输出（差异&gt;2%自动标红）：</p>
+<pre><code>交叉验证: 2025自由现金流
+  ❌ 腾讯官方口径    : 1,826.00 亿RMB  (偏差 8.29%)
+  ❌ stockanalysis  : 2,156.00 亿RMB  (偏差 8.29%)
+  ⚠️ 存在来源偏差 &gt; 2.0% → 口径不同，采用公司披露口径
+交叉验证: 2025营收
+  ✅ 腾讯年报 7,517.70 vs stockanalysis 7,517.66  (偏差 0.00%)
+</code></pre>
+<blockquote>
+<p>巴菲特："会计数字是估值的起点，不是终点。但起点错了，终点一定错。"</p>
+</blockquote>
+<hr />
+<h2 id="5">一、近5年营收与利润趋势</h2>
+<p>数据来源：腾讯各年度业绩公告 + <a href="https://stockanalysis.com/quote/hkg/0700/financials/">stockanalysis.com</a> 两源核对，除注明外一致（偏差&lt;1%）。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>亿元RMB</th>
+<th>2021</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025</th>
+<th>TTM(至2026Q1)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总营收</td>
+<td>5,601</td>
+<td>5,546</td>
+<td>6,090</td>
+<td>6,603</td>
+<td>7,518</td>
+<td><strong>7,682</strong></td>
+</tr>
+<tr>
+<td>YoY</td>
+<td>+16%</td>
+<td>-1%</td>
+<td>+10%</td>
+<td>+8%</td>
+<td>+14%</td>
+<td>Q1 +9%</td>
+</tr>
+<tr>
+<td>GAAP经营利润</td>
+<td>1,239*</td>
+<td>1,109</td>
+<td>1,630</td>
+<td>2,080</td>
+<td>2,456</td>
+<td>2,514</td>
+</tr>
+<tr>
+<td>GAAP归母净利</td>
+<td>2,248**</td>
+<td>1,882</td>
+<td>1,152</td>
+<td>1,941</td>
+<td>2,248</td>
+<td><strong>2,351</strong></td>
+</tr>
+<tr>
+<td>Non-IFRS归母净利</td>
+<td>1,238</td>
+<td>1,156</td>
+<td>1,577</td>
+<td>2,227</td>
+<td>2,596</td>
+<td><strong>2,662</strong></td>
+</tr>
+<tr>
+<td>Non-IFRS净利率</td>
+<td>22.1%</td>
+<td>20.8%</td>
+<td>25.9%</td>
+<td>33.7%</td>
+<td>34.5%</td>
+<td>34.7%</td>
+</tr>
+</tbody>
+</table></div>
+<p>* stockanalysis口径；** 2021年GAAP净利含京东股权处置一次性收益，不可比。</p>
+<p><strong>工具验算的CAGR</strong>：</p>
+<pre><code>营收2021→2025 CAGR: 7.63%
+Non-IFRS净利2021→2025 CAGR: 20.33%
+Non-IFRS净利2022→2025 CAGR: 30.94%（修正底稿的18.6%）
+</code></pre>
+<p><strong>2026Q1最新</strong>（官方公告）：营收1,965亿(+9%)；GAAP经营利润674亿(+17%)、归母净利581亿(+21%)；Non-IFRS经营利润756亿(+9%)、归母净利679亿(+11%)；<strong>剔除AI新产品（混元/元宝/CodeBuddy/WorkBuddy等）后Non-IFRS经营利润844亿(+17%)，利润率43.0%</strong>。</p>
+<p><strong>正面</strong>：利润增速持续快于营收（2022年以来利润率修复14个百分点），"高质量增长"战略仍在兑现。<strong>反面</strong>：①营收增速已从2025年的14%回落至Q1的9%，其中有春节递延的会计噪音（国内游戏流水实际两位数增长），但趋势上14%难以为继；②利润+9%（Non-IFRS）与"剔除AI后+17%"之间8个百分点的差距就是AI新产品的当期烧钱，管理层创造这个新口径本身说明烧钱压力已到需要"解释"的程度。</p>
+<p><strong>结论</strong>：营收步入高个位数~10%的稳态，利润增长引擎从"利润率修复"切换到"AI投入回收"，可预测性略降。<strong>评分：★4</strong></p>
+<hr />
+<h2 id="roeroic">二、盈利能力：ROE、ROIC、毛利率、经营利润率</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025</th>
+<th>2026Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>毛利率</td>
+<td>43.2%</td>
+<td>48.6%</td>
+<td>52.9%</td>
+<td>56.2%</td>
+<td><strong>56.6%</strong>（111.3/196.5，官方）</td>
+</tr>
+<tr>
+<td>GAAP经营利润率</td>
+<td>20.0%</td>
+<td>26.8%</td>
+<td>31.5%</td>
+<td>32.7%</td>
+<td><strong>34.3%</strong>（vs 去年32.0%）</td>
+</tr>
+<tr>
+<td>Non-IFRS经营利润率</td>
+<td>30.1%</td>
+<td>33.6%</td>
+<td>36.1%</td>
+<td>37.8%</td>
+<td><strong>38.5%</strong>（剔AI后43.0%）</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>毛利率提升趋势延续但斜率放缓</strong>：本季+0.9pct（去年同期55.8%→56.6%），vs 2024年全年+330bp。驱动仍是结构改善（广告+20%为最高毛利业务、云提价、AI提升广告单价）。<strong>反面</strong>：AI服务器折旧正在进入成本项，Q1毛利率环比仅+0.6pct左右；若2026-2027年capex高峰期折旧集中释放，毛利率扩张周期可能在57-58%附近见顶（Meta在capex高峰期毛利率同样承压）。</li>
+<li><strong>ROE</strong>（自算，官方资产负债表）：Q1末归母权益11,276.5亿RMB（较年末11,541.5亿<strong>下降</strong>——FVOCI投资公允价值缩水约829亿计入其他储备所致）。GAAP TTM ROE = 2,351/均值11,409 ≈ <strong>20.6%</strong>；Non-IFRS口径约<strong>23.3%</strong>。工具输出：<code>ROE: 33.06/142.7 = 23.17%</code>（每股口径，互相印证）。</li>
+<li><strong>ROIC</strong>（估算，标注方法）：全公司口径 NOPAT(TTM Non-IFRS经营利润2,905亿×(1-16%税)≈2,440亿) ÷ 投入资本(权益12,116+有息负债~3,900-总现金5,337) ≈ <strong>23%</strong>；若剔除净现金与约7,200亿账面投资资产，<strong>核心经营业务ROIC&gt;50%</strong>（轻资产平台特征）。<strong>反面</strong>：AI capex正在把腾讯从"极端轻资产"推向"半重资产"——PP&amp;E已从2023年630亿升至2025年1,150亿，边际ROIC必然低于存量业务，这是全公司ROIC未来2-3年的下拉力量。</li>
+</ul>
+<p><strong>结论</strong>：盈利能力处于公司历史最佳区间且仍在改善，但"毛利率持续提升"的叙事已进入下半场，AI折旧是2027年前最大的反向变量。<strong>评分：★5</strong></p>
+<hr />
+<h2 id="aifcf">三、现金流：AI资本开支对FCF的侵蚀有多大？</h2>
+<p>官方口径（亿元RMB）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025</th>
+<th>2026Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经营现金流</td>
+<td>2,163</td>
+<td>2,220</td>
+<td>2,586</td>
+<td>3,030</td>
+<td>769（同比持平）</td>
+</tr>
+<tr>
+<td>资本开支</td>
+<td>322</td>
+<td>421</td>
+<td>769</td>
+<td>792</td>
+<td><strong>319（+16%）</strong></td>
+</tr>
+<tr>
+<td>自由现金流（官方口径）</td>
+<td>815</td>
+<td>1,597</td>
+<td>1,548*</td>
+<td>1,826</td>
+<td><strong>567（+20%）</strong></td>
+</tr>
+<tr>
+<td>capex/经营现金流</td>
+<td>15%</td>
+<td>19%</td>
+<td>30%</td>
+<td>26%</td>
+<td>41%</td>
+</tr>
+</tbody>
+</table></div>
+<p>* 2024年FCF两源有1,548/1,854两个数字（底稿内部亦不一致），差异来自是否含媒体内容支出，已标记；不影响趋势判断。</p>
+<p><strong>工具验算（嵌入输出）</strong>：</p>
+<pre><code>2025官方: capex/OCF = 792/3030.5 = 26.13%
+2026E: capex取1,350亿（Q1年化1,276亿+下半年管理层指引加速）, OCF按+9%=3,300亿
+  → capex/OCF = 40.91%；FCF ≈ 3300-1350 = 1,950亿
+</code></pre>
+<p><strong>市场担心是否过度？数据上看：过度了。</strong>
+1. Q1事实：capex +16%的同时<strong>FCF反而+20%至567亿</strong>（<a href="https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-first-quarter-results-302770779.html">官方公告</a>），经营现金流的增长完全覆盖了capex增量；
+2. 即便2026全年capex升至~1,350亿（vs 2025年792亿，+70%），FCF估算仍有~1,900-2,000亿，与2025年1,826亿<strong>基本持平或略增</strong>，AI转型完全自融资（净现金Q1还在+63%）；
+3. AI投入分两层：capex（算力，2026E约1,300亿级）+ AI新产品运营亏损（年化约360亿，<a href="https://www.ainvest.com/news/tencent-signals-ai-spending-surge-shifting-capital-allocation-buybacks-2603/">管理层指引</a>较2025年180亿翻倍）。两层合计约占经营现金流50%，<strong>这是真实的重注</strong>，但对比Meta/谷歌capex占OCF 55-70%，腾讯激进程度仍属同业偏低。</p>
+<p><strong>反面论据（必须列出）</strong>：①"Q1侵蚀不明显"部分因为capex付款有滞后，下半年管理层明示"大幅增长"，2027年才是折旧和现金流压力的真正检验年；②FCF没跌的代价是回购砍半（见第五节）——现金流表没恶化，但<strong>股东拿到的现金确实变少了</strong>；③若AI第二层（元宝等独立产品）2028年前无成效，这~360亿/年就是纯损耗，相当于每年烧掉Non-IFRS净利的14%。</p>
+<p><strong>结论</strong>：FCF侵蚀可控、市场担忧程度大于实际数字，但资本开支高峰未过，判断"侵蚀不重"的最终确认要到2027年。<strong>评分：★4</strong></p>
+<hr />
+<h2 id="20267">四、资产负债表与"投资组合安全垫"（2026年7月最新数值）</h2>
+<p>官方Q1资产负债表：总资产20,514亿RMB、总负债8,398亿、总权益12,116亿（归母11,277亿）；总现金5,337亿(+12%)、<strong>净现金1,469亿RMB(+63%)</strong>（官方定义：现金+定期存款+高流动性理财-借款-应付票据）。</p>
+<p><strong>投资组合（官方披露+最新市值估算）</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2025-12-31（官方）</th>
+<th>2026-03-31（官方）</th>
+<th>2026-07估算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上市投资公允价值（除子公司）</td>
+<td>6,727亿RMB</td>
+<td><strong>5,471亿RMB</strong>（单季-18.7%）</td>
+<td><strong>~4,650-5,050亿（估计）</strong></td>
+</tr>
+<tr>
+<td>非上市投资账面值</td>
+<td>3,631亿RMB</td>
+<td>3,651亿RMB</td>
+<td>~3,650亿</td>
+</tr>
+<tr>
+<td>净现金</td>
+<td>1,071亿RMB</td>
+<td>1,469亿RMB</td>
+<td>~1,500亿</td>
+</tr>
+</tbody>
+</table></div>
+<p>7月估算依据：Q2中概持续下挫——快手41.6港元（52周低点39.72附近，<a href="https://www.google.com/finance/beta/quote/1024:HKG">Google Finance</a>）、PDD $82.5（年内-27%，<a href="https://finance.yahoo.com/quote/PDD/">Yahoo</a>）、Sea $102.3、美团71.4港元（<a href="https://sg.finance.yahoo.com/quote/3690.HK/">Yahoo</a>）。按主要持仓加权估算Q2再跌8-15%，取中值<strong>4,900亿</strong>，明确标注为估计值。</p>
+<p><strong>安全垫工具验算（嵌入输出）</strong>：</p>
+<pre><code>净现金:            1469×1.1523/91.08 = 18.59 HKD/股
+上市投资(~4,900亿): 4900×1.1523/91.08 = 61.99 HKD/股
+非上市(账面3,651亿): 3651×1.1523/91.08 = 46.19 HKD/股
+─────────────────────────────────────────────
+未打折合计:  126.77 HKD/股 = 股价的29.40%
+保守打折（上市75折/非上市7折）: 97.41 HKD/股 = 股价的22.59%
+</code></pre>
+<p><strong>正反两面</strong>：安全垫逻辑依然成立（打折后仍占股价近23%），且这是市场最悲观时点的市价——安全垫本身也在低位。<strong>但反面必须直说</strong>：这层垫子2026年上半年缩水了约27%（上市部分6,727→约4,900亿），"安全垫"是顺周期的，股价下跌时它同步变薄，<strong>不能把它当成固定的底</strong>；非上市部分3,651亿账面值中含字节跳动（&lt;2%）、Epic等，估值不确定性大（本地清单底稿自查曾发现初版50%的条目有误）。</p>
+<p><strong>结论</strong>：净现金+投资组合约1.0-1.15万亿RMB，财务结构在中美大型科技公司中最稳健之列（净现金为正+资产负债率41%）。<strong>评分：★5</strong></p>
+<hr />
+<h2 id="2026">五、股东回报：回购砍半是2026年最大的负面边际变化</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年度</th>
+<th>回购（港元）</th>
+<th>分红（港元）</th>
+<th>股本变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td>~338亿</td>
+<td>~2.4/股</td>
+<td>95.3亿股</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>~494亿</td>
+<td>3.40/股</td>
+<td>93.7亿股</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>~1,120亿</td>
+<td>4.50/股+美团实物</td>
+<td>92.4亿股</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>~800亿</td>
+<td>~410亿（约4.50/股）</td>
+<td>~91.2亿股</td>
+</tr>
+<tr>
+<td><strong>2026上半年</strong></td>
+<td><strong>约130-150亿（Q1官方76亿+Q2按每日~5亿港元估算）</strong></td>
+<td>TTM每股5.32港元、股息率1.24%（<a href="https://www.investing.com/equities/tencent-holdings-hk">Investing.com</a>）</td>
+<td>91.08亿股（6月16日公告口径）</td>
+</tr>
+</tbody>
+</table></div>
+<p>两源标记：①2026累计回购——<a href="https://www.pai.com.cn/p/01kj1f90rxj1cc40ez8wn0cfh8">电商派</a>报"年内超63亿"（2月时点）、券商中国报"5月20日累计116.6亿"、6月起每日约5.01亿持续回购（<a href="https://www.stcn.com/article/detail/3921089.html">证券时报</a>、<a href="https://24h.jrj.com.cn/2026/07/02173057671624.jhtml">金融界</a>），H1合计约130-150亿为推算区间；②FY2025分红总额底稿记410亿（4.50/股）与行情商TTM股息5.32港元/股有口径出入（TTM含2025年5月支付的FY2024末期息+可能的时点差），<strong>已标记待年报核实</strong>。</p>
+<p><strong>关键事实链</strong>：2026年回购年化约300亿港元，仅为2025年的~37%；同时官方对2026年未再给出"至少XX亿"的硬承诺（2024年报曾承诺2025年至少800亿）。Q1回购12.7M股/76亿港元 vs 去年同期171亿。<strong>但注意两个缓和因素</strong>：①6月下旬股价跌至430附近后回购频率明显加密（连续每日5亿），保留了"越跌越买"的机会主义特征；②总股本仍在净缩减（95.3→91.08亿，四年-4.4%）。</p>
+<p><strong>反面框架</strong>（引用底稿《股东回报与内在价值》的正确逻辑）：回购砍半本身不毁灭价值，关键看置换出的AI capex的ROIC。目前AI第一层（广告效率）已确认赚钱（Q1广告+20%），第二层（元宝/独立产品）尚无证据。<strong>在证据出来前，股东回报确定性下降是事实，EPS增速要扣掉约1个百分点的回购贡献损失。</strong></p>
+<p><strong>结论</strong>：从"800-1,100亿/年的确定回报"变成"300亿回购+AI期权"，对巴菲特式投资者这是扣分项，但回购价格纪律仍在。<strong>评分：★3</strong></p>
+<hr />
+<h2 id="pepe">六、估值：当前PE、核心业务PE、历史与同业对比</h2>
+<p><strong>市值验算（工具输出，强制项）</strong>：</p>
+<pre><code>市值验算 #1: 431.2 HKD × 91.08亿股 = 3.93T HKD vs 报告3.92T → 偏差0.19% ✅
+市值验算 #2: 429.8 HKD(6/30收盘) × 91.08亿 = 3.91T vs 富途报39,078亿 → 偏差0.17% ✅
+</code></pre>
+<p><strong>PE验算（工具输出）</strong>：TTM Non-IFRS归母净利 = 2,596.3+679.1-613.3 = <strong>2,662亿RMB</strong>；TTM每股≈28.69 RMB≈33.06 HKD。GAAP TTM稀释EPS 25.33 RMB（stockanalysis）≈29.19 HKD。</p>
+<pre><code>PE (TTM, Non-IFRS): 431.2/33.06 = 13.04x   盈利收益率7.67%
+PE (TTM, GAAP):     431.2/29.19 = 14.77x   PB: 431.2/142.7 = 3.02x
+</code></pre>
+<p>（第三方交叉验证：富途/腾讯自选股静态PE 15.7x，为GAAP基本EPS口径，与本报告14.8x稀释口径偏差约6%——口径差异，已标记。）
+<strong>Forward PE</strong>：2026E一致预期Non-IFRS EPS约31.15 RMB（<a href="https://www.investing.com/equities/tencent-holdings-hk-consensus-estimates">Investing.com一致预期</a>）≈35.9 HKD → <strong>forward PE ≈ 12.0x</strong>。</p>
+<p><strong>剔除投资组合后的核心业务PE（工具输出）</strong>：</p>
+<pre><code>(39,274亿市值 − 1,693亿净现金 − 9,853亿投资组合未打折)/3,067亿TTM利润 = 9.04x
+(同上，投资组合按75折/7折保守处理)                                  = 9.91x
+</code></pre>
+<p><strong>历史与同业对比</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>标的</th>
+<th>PE(TTM)</th>
+<th>Forward PE</th>
+<th>备注（来源）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>腾讯</strong></td>
+<td><strong>13.0x（Non-IFRS）/14.8x（GAAP）</strong></td>
+<td><strong>~12x</strong></td>
+<td>核心业务9-10x</td>
+</tr>
+<tr>
+<td>腾讯自身历史</td>
+<td>2018-2021常态25-40x；2022年10月低点~10x；2024-2025中枢15-20x</td>
+<td>—</td>
+<td>当前处于<strong>历史区间约10-15分位</strong></td>
+</tr>
+<tr>
+<td>阿里巴巴</td>
+<td>15.1x</td>
+<td>14.8x</td>
+<td><a href="https://stockanalysis.com/stocks/baba/statistics/">GuruFocus/stockanalysis</a></td>
+</tr>
+<tr>
+<td>Meta</td>
+<td>22.3x</td>
+<td>18.4x</td>
+<td><a href="https://stockanalysis.com/stocks/meta/statistics/">financecharts/stockanalysis</a></td>
+</tr>
+<tr>
+<td>谷歌</td>
+<td>27.3x</td>
+<td>21.9x</td>
+<td><a href="https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/pe-ratio">macrotrends/GuruFocus</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>腾讯以更高的净利率（34.7% vs Meta ~39%、谷歌~32%、阿里~13%）、相当的增长（EPS一致预期+9~12%）、更强的资产负债表，交易在<strong>Meta的6折、谷歌的一半、甚至低于阿里</strong>。<strong>反面论据</strong>：这个折价不是白给的——含中国监管折价、地缘政治折价（美方对腾讯海外游戏投资审查悬而未决）、AI落后叙事折价（元宝MAU 5,700万 vs 豆包3.4亿）。折价能否收敛不取决于财务报表，取决于这三件事的演变。</p>
+<p><strong>结论</strong>：绝对与相对估值均处于腾讯自身历史低位区；核心业务个位数PE对一个ROIC&gt;50%、利润率仍在扩张的业务组合，定价明显偏冷。<strong>评分：★4</strong></p>
+<hr />
+<h2 id="_2">七、安全边际：三情景估值与当前股价隐含预期</h2>
+<p><strong>三情景估值（工具输出，强制项）</strong>。基准EPS=TTM Non-IFRS 33.06 HKD/股；增速取自利润预测模型（已按修正后历史数据校准）；PE取历史区间三档：</p>
+<pre><code>三情景估值模型 (3年期, 当前股价431.2 HKD)
+  情景          年增速   目标PE   目标EPS    目标股价    涨跌幅
+  乐观 (Bull)    15%     20x     50.28    1005.6   +133.2%
+  中性 (Base)    11%     16x     45.21     723.4    +67.8%
+  悲观 (Bear)     4%     11x     37.19     409.1     -5.1%
+</code></pre>
+<p>概率加权（乐观25%/中性50%/悲观25%）：目标价 ≈ 1005.6×0.25 + 723.4×0.5 + 409.1×0.25 ≈ <strong>715港元</strong>，对应3年隐含空间约+66%（年化~18%，另有~1.2%股息）。此结果与卖方一致目标价700-708港元（<a href="https://www.tipranks.com/stocks/hk:0700/forecast">TipRanks</a>，31-42位分析师）<strong>独立收敛</strong>——注意这是巧合级别的一致，不是引用。</p>
+<p><strong>当前股价隐含了什么预期（反推验算，工具输出）</strong>：</p>
+<pre><code>3年后退出PE=16x → 隐含EPS年增速 = -6.58%/年（未来三年利润每年衰退6.6%）
+3年后退出PE=13x（维持现估值）→ 隐含EPS年增速 = +0.11%/年（零增长）
+</code></pre>
+<p><strong>这就是结论的核心</strong>：431港元的定价等价于"腾讯未来三年利润零增长且估值永远停在13倍"。要让这个定价成立，需要同时发生：广告从+20%失速、游戏长青组合衰退、AI投入全打水漂、回购完全停止。而仅Q1一个季度的事实（剔AI核心利润+17%、FCF+20%）已与"零增长"假设矛盾。<strong>反面（诚实列出悲观情形的杀伤路径）</strong>：悲观情景-5.1%看似跌幅有限，但它假设PE=11x是底——2022年10月恐慌底曾到过~10x，若地缘黑天鹅（海外游戏资产被迫剥离）落地，EPS与PE双杀可至300-350港元区间（约-20~-30%），投资组合安全垫在该情形下同步缩水，不能完全对冲。</p>
+<p><strong>结论</strong>：当前价格下，中性情景年化~18%、悲观情景大致保本、极端情景-25%，赔率结构符合"以明显偏低的价格买优秀公司"。<strong>评分：★4</strong></p>
+<hr />
+<h2 id="_3">总体结论</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>评分</th>
+<th>一句话</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 营收利润趋势</td>
+<td>★4</td>
+<td>营收降档至~9%，利润引擎切换中，剔AI核心+17%仍强</td>
+</tr>
+<tr>
+<td>2. 盈利能力</td>
+<td>★5</td>
+<td>毛利率56.6%续创新高、ROE~23%、核心ROIC&gt;50%，但扩张进入下半场</td>
+</tr>
+<tr>
+<td>3. 现金流</td>
+<td>★4</td>
+<td>capex+70%的年份FCF预计仍持平~1,950亿，"FCF被AI吞噬"的担忧被Q1数据证伪，终检在2027</td>
+</tr>
+<tr>
+<td>4. 资产负债表/安全垫</td>
+<td>★5</td>
+<td>净现金1,469亿RMB+投资组合~8,550亿，打折后每股97港元（股价23%），但垫子是顺周期的</td>
+</tr>
+<tr>
+<td>5. 股东回报</td>
+<td>★3</td>
+<td>回购年化砍至~300亿港元、无硬承诺，确定性换期权，2026年最大负面边际变化</td>
+</tr>
+<tr>
+<td>6. 估值</td>
+<td>★4</td>
+<td>Non-IFRS TTM 13.0x / forward ~12x / 核心业务9-10x，历史低分位，较Meta/谷歌深度折价</td>
+</tr>
+<tr>
+<td>7. 安全边际</td>
+<td>★4</td>
+<td>概率加权目标~715港元；当前价隐含"三年零增长"，悲观情景-5%~-25%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>综合：★4（431港元处于"买入区间下沿"）</strong></p>
+<p>三点非共识判断（均由本次验算直接支撑）：
+1. <strong>市场对AI capex侵蚀FCF的担忧大于事实一个数量级</strong>——Q1 FCF+20%、全年FCF估算持平，真正被侵蚀的不是自由现金流，而是<strong>回购</strong>。担忧的对象搞错了科目。
+2. <strong>股价从4月490跌到431的三个月里，基本面数据在变好</strong>（核心利润+17%、净现金+63%、广告提速），下跌主要由投资组合市值缩水（上半年-27%）和中概beta贡献——核心业务PE已压到9-10倍，这一层的定价比整体PE显示的更极端。
+3. <strong>最需要跟踪的不是财报，而是两个非财务变量</strong>：2026下半年回购是否回到硬承诺轨道（管理层资本配置纪律的试金石）、元宝/WorkBuddy用户数（AI第二层360亿/年烧钱的回收证据）。若2026年报回购&lt;400亿港元且元宝MAU仍&lt;1亿，应将股东回报评分下调至★2并重估中性情景增速。</p>
+<blockquote>
+<p>巴菲特1989年股东信："以合理的价格买一家优秀的公司，远胜以便宜的价格买一家平庸的公司。"当前的腾讯是前者叠加了后者的价格。</p>
+</blockquote>
+<p><strong>免责声明</strong>：本报告基于公开信息与工具验算，估计值均已标注；不构成投资建议。</p>
+<p><strong>Sources</strong>: <a href="https://static.www.tencent.com/uploads/2026/05/13/47382ae415a209fd161bc19a1f9b3704.pdf">腾讯2026Q1业绩公告(官方PDF)</a> · <a href="https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-first-quarter-results-302770779.html">PRNewswire Q1公告</a> · <a href="https://finance.yahoo.com/quote/0700.HK/">Yahoo Finance 0700.HK</a> · <a href="https://stockanalysis.com/quote/hkg/0700/financials/">stockanalysis 0700财务</a> · <a href="https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html">腾讯2023年报公告(PRNewswire)</a> · <a href="https://www.stcn.com/article/detail/3921089.html">证券时报·回购</a> · <a href="https://24h.jrj.com.cn/2026/07/02173057671624.jhtml">金融界·7月2日回购</a> · <a href="https://www.pai.com.cn/p/01kj1f90rxj1cc40ez8wn0cfh8">电商派·年内累计回购</a> · <a href="https://www.investing.com/equities/tencent-holdings-hk">Investing.com 0700行情/一致预期</a> · <a href="https://www.tipranks.com/stocks/hk:0700/forecast">TipRanks目标价</a> · <a href="https://stockanalysis.com/stocks/baba/statistics/">stockanalysis BABA</a> · <a href="https://stockanalysis.com/stocks/meta/statistics/">stockanalysis META</a> · <a href="https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/pe-ratio">macrotrends GOOGL PE</a> · <a href="https://sg.finance.yahoo.com/quote/3690.HK/">Yahoo 美团</a> · <a href="https://finance.yahoo.com/quote/PDD/">Yahoo PDD</a> · <a href="https://www.google.com/finance/beta/quote/1024:HKG">Google Finance 快手</a> · <a href="https://finance.yahoo.com/quote/SE/">Yahoo Sea</a> · <a href="https://www.ainvest.com/news/tencent-signals-ai-spending-surge-shifting-capital-allocation-buybacks-2603/">ainvest·AI开支与回购</a> · <a href="https://cn.investing.com/currencies/cny-hkd">Investing.com CNY/HKD</a></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/e98ba87fde5c.html">证据与审计说明</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/549a5c7c8f83.html">腾讯研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/fa1ad1445212.html">腾讯研究附录：来源、真值、算术与尚未解决的缺口</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

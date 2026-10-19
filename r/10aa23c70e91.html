@@ -1,0 +1,26 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Grok 2 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a></div><h1>Grok 2</h1><div class="meta"><a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/xai-org__grok-2__README.md">GitHub 原文</a></div><article><p>This repository contains the weights of Grok 2, a model trained and used at xAI in 2024.</p>
+<h2 id="usage-serving-with-sglang">Usage: Serving with SGLang</h2>
+<ul>
+<li>Download the weights. You can replace <code>/local/grok-2</code> with any other folder name you prefer.</li>
+</ul>
+<p><code>hf download xai-org/grok-2 --local-dir /local/grok-2</code></p>
+<p>You might encounter some errors during the download. Please retry until the download is successful.<br />
+  If the download succeeds, the folder should contain <strong>42 files</strong> and be approximately 500 GB.</p>
+<ul>
+<li>Launch a server.</li>
+</ul>
+<p>Install the latest SGLang inference engine (&gt;= v0.5.1) from https://github.com/sgl-project/sglang/</p>
+<p>Use the command below to launch an inference server. This checkpoint is TP=8, so you will need 8 GPUs (each with &gt; 40GB of memory).
+  <code>python3 -m sglang.launch_server --model /local/grok-2 --tokenizer-path /local/grok-2/tokenizer.tok.json --tp 8 --quantization fp8 --attention-backend triton</code></p>
+<ul>
+<li>Send a request.</li>
+</ul>
+<p>This is a post-trained model, so please use the correct <a href="https://github.com/sgl-project/sglang/blob/97a38ee85ba62e268bde6388f1bf8edfe2ca9d76/python/sglang/srt/tokenizer/tiktoken_tokenizer.py#L106">chat template</a>.</p>
+<p><code>python3 -m sglang.test.send_one --prompt "Human: What is your name?&lt;|separator|&gt;\n\nAssistant:"</code></p>
+<p>You should be able to see the model output its name, Grok.</p>
+<p>Learn more about other ways to send requests <a href="https://docs.sglang.ai/basic_usage/send_request.html">here</a>.</p>
+<h2 id="license">License</h2>
+<p>The weights are licensed under the <a href="https://huggingface.co/xai-org/grok-2/blob/main/LICENSE">Grok 2 Community License Agreement</a>.</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/94b63c16f6b1.html">GLM-5</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/224a0c39bab5.html">GLM-5.3</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/22905c393a9c.html">GLM-5.3-Flash</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d060129a14be.html">GLM-5.2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f90617223e31.html">GLM-4.7</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/0edcfc955787.html">GLM-4.6V</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8cf89aee725c.html">GLM-4.5-Air</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/652b9a513303.html">Grok-1</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4224b4932376.html">Solar Open</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/32e837241209.html">tencent__Hy3__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/e9c250974ef4.html">tencent__Hunyuan-Large__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/b78c7d9e66fc.html">stepfun-ai__step3__README</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

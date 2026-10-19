@@ -1,0 +1,370 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>网约车平台的赚钱逻辑 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/滴滴/index.html">滴滴</a></div><h1>网约车平台的赚钱逻辑</h1><div class="meta"><a href="../companies/滴滴/index.html">滴滴</a> ｜ 2026-07-13 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%BB%B4%E6%BB%B4/%E3%80%8A%E7%9C%8B%E6%87%82%E6%BB%B4%E6%BB%B4%E3%80%8B/02-%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F-%E7%BD%91%E7%BA%A6%E8%BD%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%B5%9A%E9%92%B1%E9%80%BB%E8%BE%91.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">滴滴到底怎么赚钱？</a></li>
+<li><a href="#_2">一笔典型订单的钱是怎么分的</a></li>
+<li><a href="#_3">双边网络效应：滴滴的核心护城河</a></li>
+<li><a href="#_4">国际业务：第二增长曲线还是烧钱黑洞？</a></li>
+<li><a href="#50">自动驾驶：50 亿美元的期权</a></li>
+<li><a href="#_5">电动化：被忽视的结构性红利</a></li>
+<li><a href="#_6">商业模式的总判断</a><ul>
+<li><a href="#_7">优势（护城河）</a></li>
+<li><a href="#_8">劣势（脆弱点）</a></li>
+</ul>
+</li>
+<li><a href="#_9">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂滴滴》系列 · 第 02 篇 · 商业模式
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">滴滴到底怎么赚钱？</h2>
+<p>"滴滴抽成 20%"是中国互联网世界流传最广的误解之一。真实数字是：每 100 元车费，滴滴到手约 <strong>4 元</strong>。剩下的钱，被司机、补贴、税费分走了。</p>
+<p>这个 4% 的数字，是理解滴滴整个商业模式的钥匙——它决定了滴滴的利润天花板在哪里，定价空间有多窄，以及为什么一家年营收 2,267 亿的公司，GAAP 净利润只有区区 9.9 亿元。下面把这台机器拆开来看。</p>
+<p>滴滴 2025 年 <strong>2,267 亿元</strong>营收来自三个板块：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>板块</th>
+<th>营收（亿元）</th>
+<th>占比</th>
+<th>核心指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>中国出行</strong></td>
+<td><strong>2,019</strong></td>
+<td><strong>89%</strong></td>
+<td>日均 ~4,000 万单，GTV 3,338 亿</td>
+</tr>
+<tr>
+<td><strong>国际业务</strong></td>
+<td><strong>149.5</strong></td>
+<td><strong>6.6%</strong></td>
+<td>14 国运营，订单 +24.7%</td>
+</tr>
+<tr>
+<td><strong>其他/创新</strong></td>
+<td><strong>98.4</strong></td>
+<td>4.4%</td>
+<td>货运 + 自动驾驶 + 加油充电</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：滴滴 2025 年 20-F 年报）</p>
+<p><strong>89% 的收入来自中国出行</strong>。要看懂滴滴，首先要看懂这块现金牛。</p>
+<hr />
+<h2 id="_2">一笔典型订单的钱是怎么分的</h2>
+<p>假设你叫了一辆快车，支付 <strong>100 元</strong>。这 100 元的流向：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>金额（元）</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>司机到手</td>
+<td><strong>~79</strong></td>
+<td>官方口径：平均抽成 <strong>14-15%</strong></td>
+</tr>
+<tr>
+<td>政府税费 + 支付通道</td>
+<td>~4</td>
+<td>增值税 + 微信/支付宝手续费</td>
+</tr>
+<tr>
+<td>乘客补贴/优惠券</td>
+<td>~5-7</td>
+<td>拉新、促活</td>
+</tr>
+<tr>
+<td>司机激励/冲单奖</td>
+<td>~7</td>
+<td>高峰时段、恶劣天气补贴</td>
+</tr>
+<tr>
+<td><strong>滴滴净收入</strong></td>
+<td><strong>~4-4.3</strong></td>
+<td><strong>净 take rate 约 4%</strong></td>
+</tr>
+<tr>
+<td><strong>滴滴 EBITA</strong></td>
+<td><strong>~1.8-2.0</strong></td>
+<td>扣除研发、运营、合规成本</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：滴滴 20-F、行业估算。注：各城市、各车型差异较大，此为全国平均近似值）</p>
+<p><strong>关键发现</strong>：</p>
+<ol>
+<li><strong>"抽成 20%" 是毛数字，净 take rate 只有 4%</strong>——中间 16 个百分点全是补贴和激励</li>
+<li><strong>每 100 元 GTV，滴滴真正赚到手的只有 4 块钱</strong>——这是一门极其"薄利"的生意</li>
+<li><strong>几乎没有提价空间</strong>——监管要求 2024 年 8 月起行业抽成上限降至 <strong>27%</strong>（此前部分订单达 29%），社会舆论持续关注司机收入</li>
+</ol>
+<p><strong>反方观点</strong>：净 take rate 4% 虽然看起来薄，但基数是 <strong>4,508 亿元 GTV</strong>——4% 的绝对值是 ~180 亿元。而且平台模式下，边际成本极低，每多一单几乎不增加额外成本。</p>
+<hr />
+<h2 id="_3">双边网络效应：滴滴的核心护城河</h2>
+<p>网约车是典型的<strong>双边网络效应</strong>生意：</p>
+<pre><code>更多乘客 → 更多订单 → 更多司机愿意开 → 等待时间更短 → 更多乘客
+</code></pre>
+<p>这个飞轮的强度，直接决定了护城河深度。几个衡量指标：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>滴滴（2025）</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>日均订单</td>
+<td><strong>~4,000-4,500 万</strong></td>
+<td>全球最大单一市场网约车平台</td>
+</tr>
+<tr>
+<td>年活跃用户</td>
+<td><strong>7.49 亿</strong></td>
+<td>接近中国移动互联网总用户</td>
+</tr>
+<tr>
+<td>司机等单时间</td>
+<td><strong>&lt; 2 分钟</strong>（一线城市）</td>
+<td>网络密度的直接结果</td>
+</tr>
+<tr>
+<td>乘客等车时间</td>
+<td><strong>~3-5 分钟</strong>（一线城市）</td>
+<td>体验壁垒</td>
+</tr>
+<tr>
+<td>ETA 预测准确度</td>
+<td>12 年数据积累</td>
+<td>算法壁垒</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：滴滴 20-F、行业报告）</p>
+<p><strong>网络效应的核心逻辑</strong>：在一个城市，当一个平台的司机密度达到临界点后，后来者几乎不可能用补贴翻盘——因为用户打开 App 就能叫到车，没有理由切换。</p>
+<p>这解释了一个反直觉的现象：<strong>2021-2023 年滴滴 App 被下架两年，市场份额从 90%+ 降到 ~70%——但 App 恢复后，份额稳住了，没有继续下滑</strong>。</p>
+<p><strong>反方观点</strong>：网络效应是真的，但强度在下降。高德聚合模式不需要自建司机池，只需要接入中小运力就能提供"一键全网叫车"体验。聚合平台订单从 2019 年占全行业 <strong>7%</strong> 增长到 2024 年的 <strong>31%</strong>（数据来源：行业报告）。这个趋势如果持续，滴滴的网络效应会被"稀释"。</p>
+<hr />
+<h2 id="_4">国际业务：第二增长曲线还是烧钱黑洞？</h2>
+<p>滴滴的国际业务覆盖 <strong>14 个国家</strong>，2025 年数据：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2025</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营收</td>
+<td><strong>149.5 亿元</strong></td>
+<td>+24.7%</td>
+</tr>
+<tr>
+<td>订单量</td>
+<td><strong>45.05 亿单</strong></td>
+<td>+24.7%</td>
+</tr>
+<tr>
+<td>GTV</td>
+<td><strong>1,170 亿元</strong></td>
+<td>+28.2%</td>
+</tr>
+<tr>
+<td>EBITA</td>
+<td>前三季度盈利，<strong>Q4 单季亏损 34.4 亿</strong>（巴西外卖扩张+墨西哥补贴）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：滴滴 2025 年 20-F 年报）</p>
+<p>核心市场：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>市场</th>
+<th>品牌</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>巴西</strong></td>
+<td><strong>99</strong></td>
+<td>用户 5,500 万+，2024 年已盈利，外卖业务上线 30+ 城</td>
+</tr>
+<tr>
+<td><strong>墨西哥</strong></td>
+<td>DiDi</td>
+<td>"出行+外卖+金融"三件套，补贴期</td>
+</tr>
+<tr>
+<td>哥伦比亚、智利、秘鲁</td>
+<td>DiDi</td>
+<td>拉美扩张</td>
+</tr>
+<tr>
+<td>日本、澳大利亚、新西兰</td>
+<td>DiDi</td>
+<td>亚太布局</td>
+</tr>
+<tr>
+<td>埃及</td>
+<td>DiDi</td>
+<td>非洲桥头堡</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>看多逻辑</strong>：巴西 99 是滴滴国际化最成功的案例——已经盈利，且正在从出行扩展到外卖和金融。如果墨西哥也走通，国际业务可以成为滴滴的"第二条腿"。</p>
+<p><strong>看空逻辑</strong>：2025 Q4 国际 EBITA 亏损 <strong>34.4 亿元</strong>——全年利润集中在前三季度，第四季度因巴西外卖扩张和墨西哥补贴战而大幅亏损。国际化的核心问题是<strong>补贴是否可持续</strong>——Uber 在拉美和东南亚的经验表明，本地竞争对手（如 99 的竞争对手 iFood）不会轻易让出市场。</p>
+<hr />
+<h2 id="50">自动驾驶：50 亿美元的期权</h2>
+<p>滴滴自动驾驶（Didi Autonomous Driving）是一个独立的故事：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>关键节点</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023 年 8 月</td>
+<td>将智能车+达芬奇团队以 <strong>74.4 亿元</strong>卖给小鹏，保留 L4 Robotaxi</td>
+</tr>
+<tr>
+<td>2025 年 3 月</td>
+<td>完成新一轮融资，估值约 <strong>50 亿美元</strong></td>
+</tr>
+<tr>
+<td>2026 年 1 月</td>
+<td>与广汽埃安合作的 R2 Robotaxi 在广州开始路测</td>
+</tr>
+<tr>
+<td>2026 年 3 月</td>
+<td>R2 获得北京智能网联汽车道路测试牌照</td>
+</tr>
+<tr>
+<td>2026 年（计划）</td>
+<td>阿联酋首次海外 Robotaxi 测试</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：滴滴公告、Gasgoo、electrive.com、CNBC）</p>
+<p><strong>核心逻辑</strong>：滴滴做自动驾驶的独特优势在于——它本身就拥有全中国最大的出行网络。Robotaxi 不需要重建需求端，直接接入滴滴 App 就有订单。这是百度 Apollo、小马智行、文远知行都不具备的。</p>
+<p><strong>反方观点</strong>：L4 自动驾驶的商业化时间表一再推迟。50 亿美元估值是一级市场融资定价，流动性折价巨大。而且，即使 Robotaxi 技术成熟，它可能<strong>颠覆滴滴自身的商业模式</strong>——如果不需要司机了，抽成模式的经济学完全改变。</p>
+<hr />
+<h2 id="_5">电动化：被忽视的结构性红利</h2>
+<p>滴滴 2025 年报披露了一个容易被忽略的数据：</p>
+<blockquote>
+<p><strong>注册电动车 510 万辆，电动车月度里程占比 68%</strong></p>
+</blockquote>
+<p>（数据来源：滴滴 2025 年 20-F 年报）</p>
+<p>这意味着什么？</p>
+<ul>
+<li>电动车的<strong>能源成本</strong>是燃油车的<strong>三分之一到四分之一</strong></li>
+<li>对司机而言，每公里成本降低 → 净收入提升 → 更愿意留在平台</li>
+<li>对滴滴而言，司机成本降低 → 补贴压力减轻 → 净 take rate 有提升空间</li>
+</ul>
+<p><strong>这是一个正在静悄悄发生的结构性变化</strong>：中国网约车的电动化率远超全球其他市场，滴滴是最大受益者。</p>
+<p><strong>反方观点</strong>：电动化红利是全行业共享的，不是滴滴独有的。高德聚合平台上的中小运力公司同样在电动化。</p>
+<hr />
+<h2 id="_6">商业模式的总判断</h2>
+<p>把上面的拆解汇总：</p>
+<h3 id="_7">优势（护城河）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>强度</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>双边网络效应</td>
+<td><strong>强</strong></td>
+<td>4,000 万日单的密度壁垒</td>
+</tr>
+<tr>
+<td>品牌即动词</td>
+<td><strong>强</strong></td>
+<td>"滴滴一下" = 打车</td>
+</tr>
+<tr>
+<td>12 年数据+算法</td>
+<td><strong>中强</strong></td>
+<td>ETA、派单、定价模型</td>
+</tr>
+<tr>
+<td>电动化先发</td>
+<td><strong>中</strong></td>
+<td>68% 里程电动化</td>
+</tr>
+<tr>
+<td>股东结构</td>
+<td><strong>中</strong></td>
+<td>腾讯+阿里+软银+Uber 联合背书</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_8">劣势（脆弱点）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>严重性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净 take rate 仅 4%</td>
+<td><strong>高</strong></td>
+<td>薄利，几乎无提价空间</td>
+</tr>
+<tr>
+<td>聚合模式侵蚀</td>
+<td><strong>中高</strong></td>
+<td>高德从 7% 涨到 31% 订单</td>
+</tr>
+<tr>
+<td>监管敏感性</td>
+<td><strong>高</strong></td>
+<td>数据安全是"心脏病"</td>
+</tr>
+<tr>
+<td>国际业务盈利不稳</td>
+<td><strong>中</strong></td>
+<td>Q4 单季亏 34 亿</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一句话总结</strong>：滴滴的商业模式是 <strong>"强网络效应+弱定价权"的组合</strong>——护城河在需求端（用户习惯+司机密度），脆弱点在供给端（抽成被压+补贴不能停）。它不是拼多多那种"算法广告机器"（毛利 60%+），而是更接近 Uber——一台规模巨大但利润率很薄的撮合机器。</p>
+<hr />
+<h2 id="_9">下期预告</h2>
+<p>下一篇，我们进入滴滴面临的<strong>竞争与监管</strong>——这是决定滴滴未来五年命运的核心变量。</p>
+<p>要回答的几个尖锐问题：</p>
+<ul>
+<li>高德聚合模式到底能不能颠覆滴滴？</li>
+<li>美团打车为什么收缩了？腾讯出行地图为什么没起来？</li>
+<li>2021 年那场监管风暴的本质是什么？滴滴真的"过关"了吗？</li>
+<li>小马智行、百度 Apollo、文远知行——自动驾驶什么时候真正威胁滴滴？</li>
+</ul>
+<p>下周见。</p>
+<hr />
+<p><em>本文是《看懂滴滴》系列第 02 篇。后续 2 篇将陆续推出。</em>
+<em>本系列不构成任何投资建议。滴滴在 OTC 粉单市场交易，流动性差、信息不对称严重，投资决策需极度谨慎。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/e19b4332b893.html">竞争与监管——决定命运的外部变量</a><div class="meta">2026-07-13 · 深度系列</div></li><li><a href="../r/464d3dbf9b7c.html">风险与判断——上市前景与投资价值</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/e68f1d134f7a.html">从退市到OTC的中国出行巨头</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/0c0104c592a6.html">滴滴出行（Didi Global）投资研究专题</a><div class="meta">2026-04-24 · 研究</div></li><li><a href="../r/86e0a762cfbc.html">雪球发言整理：用户 1247347556</a><div class="meta">2026-04-13 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
