@@ -11,7 +11,30 @@ document.addEventListener('DOMContentLoaded',function(){var sel=document.getElem
 if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
 if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
 addEventListener('scroll',f,{passive:true});f()}});})();
-</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/综合/index.html">综合</a></div><div class="layout"><div><h1>李录谈AI与投资：技术浪潮中的边界与纪律</h1><div class="meta"><a href="../companies/综合/index.html">综合</a> ｜ 2026-10-09 · 公众号 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/%E6%8A%95%E8%B5%84%E7%82%BC%E4%B8%B9/%E7%BB%BC%E5%90%88/20261009-%E6%9D%8E%E5%BD%95%E8%B0%88AI%E4%B8%8E%E6%8A%95%E8%B5%84-%E6%8A%80%E6%9C%AF%E6%B5%AA%E6%BD%AE%E4%B8%AD%E7%9A%84%E8%BE%B9%E7%95%8C%E4%B8%8E%E7%BA%AA%E5%BE%8B.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script></head><body data-root="../" data-page="r/338efb7ba841.html" data-title="李录谈AI与投资：技术浪潮中的边界与纪律"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/综合/index.html">综合</a></div><div class="layout"><div><h1>李录谈AI与投资：技术浪潮中的边界与纪律</h1><div class="meta"><a href="../companies/综合/index.html">综合</a> ｜ 2026-10-09 · 公众号 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/%E6%8A%95%E8%B5%84%E7%82%BC%E4%B8%B9/%E7%BB%BC%E5%90%88/20261009-%E6%9D%8E%E5%BD%95%E8%B0%88AI%E4%B8%8E%E6%8A%95%E8%B5%84-%E6%8A%80%E6%9C%AF%E6%B5%AA%E6%BD%AE%E4%B8%AD%E7%9A%84%E8%BE%B9%E7%95%8C%E4%B8%8E%E7%BA%AA%E5%BE%8B.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">一、投资的起点，是企业所有权</a></li>
 <li><a href="#_2">二、市场里有四种人，你想成为哪一种？</a></li>
@@ -90,7 +113,7 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 <p>对谈最后，他把选择交还给学生与年轻从业者：市场同时提供创造价值和参与零和交易的空间，你希望自己的工作对社会产生怎样的影响？</p>
 <p>关于技术，他也回到同一个立场：包括AI在内的技术应当服务于人类，社会需要对它的发展方向承担责任。</p>
 <hr />
-<p><strong>作者分析｜</strong> 将这次讨论与李录此前的公开论述放在一起，可以看到一条持续的思路。2015年北大演讲，他已把企业所有权、市场先生、安全边际和能力圈作为投资的四个基础，特别强调能力圈的边界；2024年，他又完整列出六条原则，将去有鱼的地方钓鱼、保持和增加购买力纳入其中。因此，这次关于AI和市场集中的讨论，可以理解为将既有投资框架应用到新的技术环境：技术是否有用、企业能否创造价值、投资价格是否合适，需要分别判断。对部分融资叙事的质疑，不能直接推导为对全部AI企业的否定；发现市场分化，也不等于任何冷门资产都值得买入。在我看来，这套框架对投资者的要求始终具体：理解自己持有的企业，知道判断的边界，并让买入价格为不确定性留下余地。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/136491fb59cf.html">除了你自己，没人关心你的成本价</a><div class="meta">2026-09-28 · 公众号</div></li><li><a href="../r/00f535bf9af3.html">十家中概，七家在历史最低5%：市场押它们越赚越少，对吗</a><div class="meta">2026-09-19 · 公众号</div></li><li><a href="../r/a8c21e460043.html">巴菲特、段永平、李录 2026Q2 13F 持仓全解</a><div class="meta">2026-08-16 · 公众号</div></li><li><a href="../r/df9a4270cec7.html">一个公式，解决&quot;该买多少&quot;的问题</a><div class="meta">2026-06-21 · 公众号</div></li><li><a href="../r/df0fa850e73b.html">看懂AI产业链：五层蛋糕，钱从哪来到哪去</a><div class="meta">2026-06-07 · 公众号</div></li><li><a href="../r/e969652be79d.html">AI把大厂的城墙炸开了一个口子，小公司的时代来了</a><div class="meta">2026-05-24 · 公众号</div></li><li><a href="../r/01a7fade2e06.html">富途337万人的股票账户，只能卖不能买了</a><div class="meta">2026-05-22 · 公众号</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<p><strong>作者分析｜</strong> 将这次讨论与李录此前的公开论述放在一起，可以看到一条持续的思路。2015年北大演讲，他已把企业所有权、市场先生、安全边际和能力圈作为投资的四个基础，特别强调能力圈的边界；2024年，他又完整列出六条原则，将去有鱼的地方钓鱼、保持和增加购买力纳入其中。因此，这次关于AI和市场集中的讨论，可以理解为将既有投资框架应用到新的技术环境：技术是否有用、企业能否创造价值、投资价格是否合适，需要分别判断。对部分融资叙事的质疑，不能直接推导为对全部AI企业的否定；发现市场分化，也不等于任何冷门资产都值得买入。在我看来，这套框架对投资者的要求始终具体：理解自己持有的企业，知道判断的边界，并让买入价格为不确定性留下余地。</p></article><div class="wx"><img src="../files/assets/wechat-qr.png" alt="公众号复利炼丹炉二维码"><div><b>公众号「复利炼丹炉」</b><span>站上是全部成品报告；值得深研的公司和报告之外的判断与取舍，精选发在公众号。微信扫码关注。</span></div></div><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/136491fb59cf.html">除了你自己，没人关心你的成本价</a><div class="meta">2026-09-28 · 公众号</div></li><li><a href="../r/00f535bf9af3.html">十家中概，七家在历史最低5%：市场押它们越赚越少，对吗</a><div class="meta">2026-09-19 · 公众号</div></li><li><a href="../r/a8c21e460043.html">巴菲特、段永平、李录 2026Q2 13F 持仓全解</a><div class="meta">2026-08-16 · 公众号</div></li><li><a href="../r/df9a4270cec7.html">一个公式，解决&quot;该买多少&quot;的问题</a><div class="meta">2026-06-21 · 公众号</div></li><li><a href="../r/df0fa850e73b.html">看懂AI产业链：五层蛋糕，钱从哪来到哪去</a><div class="meta">2026-06-07 · 公众号</div></li><li><a href="../r/e969652be79d.html">AI把大厂的城墙炸开了一个口子，小公司的时代来了</a><div class="meta">2026-05-24 · 公众号</div></li><li><a href="../r/01a7fade2e06.html">富途337万人的股票账户，只能卖不能买了</a><div class="meta">2026-05-22 · 公众号</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
 <ul>
 <li><a href="#_1">一、投资的起点，是企业所有权</a></li>
 <li><a href="#_2">二、市场里有四种人，你想成为哪一种？</a></li>
@@ -100,4 +123,4 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 <li><a href="#_5">六、世界在变化，全球投资仍以购买力为尺度</a></li>
 </ul>
 </div>
-</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 08:04 UTC</footer></body></html>
