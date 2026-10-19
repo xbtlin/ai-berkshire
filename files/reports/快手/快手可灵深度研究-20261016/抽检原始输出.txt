@@ -1,0 +1,318 @@
+======================================================================
+报告数据抽检清单
+文件：reports/快手/快手可灵深度研究-20261016/快手与可灵深度研究报告-20261016.md
+总提取数据点：147  |  抽样比例：15%  |  抽检数量：23
+随机种子：20261016（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+144      3  研究与检索截止                                   2026.00
+  1     48  2026上半年 · 总收入                              692.51
+ 14     58  其他服务，含可灵 · 2025Q3                           58.78
+ 16     58  其他服务，含可灵 · 2026Q1                           55.81
+ 26     92  业务负责人 · 已核实信息及边界                             7.00
+ 35    197  单次达到指定交付标准的概率 · 模型A                         40.00  %
+ 43    210  字节Seedance · 截至本次可核实的信息                      2.50
+ 45    212  阿里Wan · 对可灵的主要压力                             3.00
+ 60    291  主业收入合计 · 2031                             1750.00
+ 69    294  可灵外部收入 · 2031                              120.00
+ 76    296  可灵独立净利润 · 2036                              60.00
+ 83    299  额外集团税后成本 · 2029                              4.00
+ 86    300  快手归母净利润 · 2029                             222.41
+ 92    322  悲观 · 2036可灵收入／净利率                           60.00
+105    324  乐观 · 2036快手归母                              773.00
+106    338  现金及等价物 · 人民币亿元                             116.96
+114    344  减：经营与压力缓冲 · 人民币亿元                         -150.00
+121    358  加回税后银行／供应商融资成本 · 2036                       15.00
+122    359  非现金折旧等净回加，已扣租赁现金付款 · 2029                   90.00
+132    362  归属经营现金流，取整 · 2031                          150.00
+135    376  悲观 · 折现率／永续增速                               15.00  %
+136    376  悲观 · 每股价值，港元                                 8.55
+141    378  乐观 · 折现率／永续增速                               11.00  %
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 144,
+    "label": "研究与检索截止",
+    "reported_value": 2026.0,
+    "unit": "",
+    "line_number": 3,
+    "raw_text": "**研究与检索截止：2026年10月16日（北京时间）；财务截至2026年6月30日；股价采用10月15日收盘。**",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 1,
+    "label": "2026上半年 · 总收入",
+    "reported_value": 692.51,
+    "unit": "",
+    "line_number": 48,
+    "raw_text": "| 2026上半年 | 692.51 | 60.49 | 90.44 | 179.41 | -88.97 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 14,
+    "label": "其他服务，含可灵 · 2025Q3",
+    "reported_value": 58.78,
+    "unit": "",
+    "line_number": 58,
+    "raw_text": "| 其他服务，含可灵 | 58.78 | 62.95 | 55.81 | 62.06 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 16,
+    "label": "其他服务，含可灵 · 2026Q1",
+    "reported_value": 55.81,
+    "unit": "",
+    "line_number": 58,
+    "raw_text": "| 其他服务，含可灵 | 58.78 | 62.95 | 55.81 | 62.06 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 26,
+    "label": "业务负责人 · 已核实信息及边界",
+    "reported_value": 7.0,
+    "unit": "",
+    "line_number": 92,
+    "raw_text": "| 业务负责人 | 7月2日公告已称盖坤为可灵CEO；9月30日内部调整的媒体报道强调其专职负责可灵，程一笑接手社区科学线 | 组织开始为新业务单独配置责任；仍需验证团队独立经营能力 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 35,
+    "label": "单次达到指定交付标准的概率 · 模型A",
+    "reported_value": 40.0,
+    "unit": "%",
+    "line_number": 197,
+    "raw_text": "| 单次达到指定交付标准的概率 | 40% | 15% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 43,
+    "label": "字节Seedance · 截至本次可核实的信息",
+    "reported_value": 2.5,
+    "unit": "",
+    "line_number": 210,
+    "raw_text": "| 字节Seedance | 2.5于7月31日发布，强化长片段、参考及编辑能力 | 视频模型、工具、广告分发可以一起竞争，是最直接的综合对手 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 45,
+    "label": "阿里Wan · 对可灵的主要压力",
+    "reported_value": 3.0,
+    "unit": "",
+    "line_number": 212,
+    "raw_text": "| 阿里Wan | 3.0官方文档于9月仍标预览；此前版本存在开放权重生态 | 自部署和云端低成本替代；不能把3.0预览等同所有能力开源 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "主业收入合计 · 2031",
+    "reported_value": 1750.0,
+    "unit": "",
+    "line_number": 291,
+    "raw_text": "| 主业收入合计 | 1,590 | 1,750 | 2,140 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 69,
+    "label": "可灵外部收入 · 2031",
+    "reported_value": 120.0,
+    "unit": "",
+    "line_number": 294,
+    "raw_text": "| 可灵外部收入 | 70 | 120 | 300 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 76,
+    "label": "可灵独立净利润 · 2036",
+    "reported_value": 60.0,
+    "unit": "",
+    "line_number": 296,
+    "raw_text": "| 可灵独立净利润 | 5.60 | 14.40 | 60.00 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 83,
+    "label": "额外集团税后成本 · 2029",
+    "reported_value": 4.0,
+    "unit": "",
+    "line_number": 299,
+    "raw_text": "| 额外集团税后成本 | 4 | 5 | 10 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 86,
+    "label": "快手归母净利润 · 2029",
+    "reported_value": 222.41,
+    "unit": "",
+    "line_number": 300,
+    "raw_text": "| **快手归母净利润** | **222.41** | **266.86** | **368.40** |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 92,
+    "label": "悲观 · 2036可灵收入／净利率",
+    "reported_value": 60.0,
+    "unit": "",
+    "line_number": 322,
+    "raw_text": "| 悲观 | 112.80 | 82.10 | 1,000／7% | 60／0% | 0 | 67.00 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 105,
+    "label": "乐观 · 2036快手归母",
+    "reported_value": 773.0,
+    "unit": "",
+    "line_number": 324,
+    "raw_text": "| 乐观 | 323.44 | 451.86 | 3,100／20% | 1,000／28% | 280 | 773.00 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 106,
+    "label": "现金及等价物 · 人民币亿元",
+    "reported_value": 116.96,
+    "unit": "",
+    "line_number": 338,
+    "raw_text": "| 现金及等价物 | 116.96 | 纳入流动资金池 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 114,
+    "label": "减：经营与压力缓冲 · 人民币亿元",
+    "reported_value": -150.0,
+    "unit": "",
+    "line_number": 344,
+    "raw_text": "| 减：经营与压力缓冲 | -150.00 | 研究假设，并非公司披露的受限资金 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 121,
+    "label": "加回税后银行／供应商融资成本 · 2036",
+    "reported_value": 15.0,
+    "unit": "",
+    "line_number": 358,
+    "raw_text": "| 加回税后银行／供应商融资成本 | 15 | 15 | 15 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 122,
+    "label": "非现金折旧等净回加，已扣租赁现金付款 · 2029",
+    "reported_value": 90.0,
+    "unit": "",
+    "line_number": 359,
+    "raw_text": "| 非现金折旧等净回加，已扣租赁现金付款 | 90 | 105 | 120 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 132,
+    "label": "归属经营现金流，取整 · 2031",
+    "reported_value": 150.0,
+    "unit": "",
+    "line_number": 362,
+    "raw_text": "| 归属经营现金流，取整 | 90 | 150 | 275 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 135,
+    "label": "悲观 · 折现率／永续增速",
+    "reported_value": 15.0,
+    "unit": "%",
+    "line_number": 376,
+    "raw_text": "| 悲观 | 20、20、25、30、35、35、38、40、40、40 | 15%／0% | 8.55 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 136,
+    "label": "悲观 · 每股价值，港元",
+    "reported_value": 8.55,
+    "unit": "",
+    "line_number": 376,
+    "raw_text": "| 悲观 | 20、20、25、30、35、35、38、40、40、40 | 15%／0% | 8.55 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 141,
+    "label": "乐观 · 折现率／永续增速",
+    "reported_value": 11.0,
+    "unit": "%",
+    "line_number": 378,
+    "raw_text": "| 乐观 | 30、80、160、230、310、380、450、510、570、620 | 11%／3% | 123.08 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

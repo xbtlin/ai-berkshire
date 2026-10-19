@@ -1,0 +1,68 @@
+[
+  {
+    "id": 2,
+    "label": "[腾讯](腾讯/腾讯研究报告-20261002.md) · 主估值",
+    "reported_value": 468.97,
+    "unit": "",
+    "line_number": 15,
+    "raw_text": "| [腾讯](腾讯/腾讯研究报告-20261002.md) | 港元/股 | 421.20 | 468.97 | 350.00 | 质量优先，等更大折价 |",
+    "fetched_value": 468.97113311910533,
+    "fetched_source": "独立复算.py: independently rebuild scenario arithmetic; does not validate forecast",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "classification": "calculation"
+  },
+  {
+    "id": 8,
+    "label": "[拼多多](拼多多/拼多多研究报告-20261002.md) · 主估值",
+    "reported_value": 109.09,
+    "unit": "",
+    "line_number": 17,
+    "raw_text": "| [拼多多](拼多多/拼多多研究报告-20261002.md) | 美元/ADS | 76.50 | 109.09 | 75.00 | 最接近买入研究区 |",
+    "fetched_value": 109.0915535541588,
+    "fetched_source": "独立复算.py: independently rebuild scenario arithmetic; does not validate forecast",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "classification": "calculation"
+  },
+  {
+    "id": 16,
+    "label": "[茅台](茅台/茅台研究报告-20261002.md) · 参考价格",
+    "reported_value": 1258.62,
+    "unit": "",
+    "line_number": 20,
+    "raw_text": "| [茅台](茅台/茅台研究报告-20261002.md) | 人民币/股 | 1,258.62 | 974.77 | 780.00 | 按10%回报要求继续等待 |",
+    "fetched_value": 1258.62,
+    "fetched_source": "https://hk.finance.yahoo.com/quote/600519.SS/history/ (2026-09-30)",
+    "fetched_value2": 1258.62,
+    "fetched_source2": "https://cn.investing.com/equities/moutai-historical-data (2026-09-30)",
+    "classification": "historical_quote",
+    "note": "Sources already retrieved in Moutai research; this is not an additional independent retrieval"
+  },
+  {
+    "id": 41,
+    "label": "泡泡玛特 · 乐观现值",
+    "reported_value": 225.15,
+    "unit": "",
+    "line_number": 69,
+    "raw_text": "| 泡泡玛特 | 港元/股 | 45.87 | 121.50 | 225.15 | 11% |",
+    "fetched_value": 225.147178114779,
+    "fetched_source": "独立复算.py: independently rebuild scenario arithmetic; does not validate forecast",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "classification": "calculation"
+  },
+  {
+    "id": 48,
+    "label": "MiniMax · 基准现值",
+    "reported_value": 101.43,
+    "unit": "",
+    "line_number": 71,
+    "raw_text": "| MiniMax | 港元/股 | 6.40 | 101.43 | 382.63 | 15% |",
+    "fetched_value": 101.43090202753541,
+    "fetched_source": "独立复算.py: independently rebuild scenario arithmetic; does not validate forecast",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "classification": "calculation"
+  }
+]

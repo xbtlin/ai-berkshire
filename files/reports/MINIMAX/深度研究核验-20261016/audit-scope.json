@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-16",
+  "report_sha256": "c8925928f5c8fd57e08b1abfdc2d0f5a289c29ae58b12cf48a0a741bfbcbfa25",
+  "sample_total": 20,
+  "fact_samples": 8,
+  "facts_independent_or_ttm": 6,
+  "facts_primary_only": 2,
+  "arithmetic_samples": 7,
+  "unverified_assumptions": 5,
+  "boundary": "PASS is numerical agreement only; no empirical validation of moat, forecasts, probabilities or valuations.",
+  "primary_urls": {
+    "interim": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf",
+    "annual": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf"
+  },
+  "crosscheck_urls": {
+    "financials": "https://stockanalysis.com/quote/hkg/0100/financials/",
+    "income": "https://stockanalysis.com/quote/hkg/0100/financials/income-statement/",
+    "cashflow": "https://stockanalysis.com/quote/hkg/0100/financials/cash-flow-statement/",
+    "reuters": "https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820"
+  }
+}

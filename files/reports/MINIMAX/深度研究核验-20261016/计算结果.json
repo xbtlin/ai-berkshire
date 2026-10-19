@@ -1,0 +1,421 @@
+{
+  "cutoff": "2026-10-16 Asia/Shanghai",
+  "reference_price_date": "2026-10-15",
+  "facts": {
+    "price_hkd_20261015": "179.50",
+    "shares_20260930": "352480183",
+    "revenue_2025_musd": "79.038",
+    "revenue_h12025_musd": "30.429",
+    "revenue_h12026_musd": "116.573",
+    "platform_h12026_musd": "73.929",
+    "native_h12026_musd": "42.644",
+    "gross_profit_h12026_musd": "20.813",
+    "rd_h12026_musd": "296.870",
+    "sales_h12026_musd": "26.973",
+    "admin_h12026_musd": "30.230",
+    "loss_h12026_musd": "-357.997",
+    "adjusted_loss_h12026_musd": "-293.031",
+    "cfo_h12026_musd": "-318.106",
+    "ppe_purchase_h12026_musd": "187.626",
+    "cash_equivalents_h12026_musd": "930.905",
+    "time_deposits_h12026_musd": "14.038",
+    "current_fvtpl_h12026_musd": "278.347",
+    "bank_debt_h12026_musd": "133.555",
+    "july_placement_net_mhkd": "9443.71",
+    "july_cb_net_mhkd": "6433.3",
+    "cb_principal_mhkd": "6500",
+    "cb_redemption_factor": "1.0275",
+    "cb_conversion_hkd": "335"
+  },
+  "model_fx_not_spot_quotes": {
+    "hkd_per_usd_model_only": "7.8",
+    "rmb_per_usd_model_only": "7"
+  },
+  "segments_2036_assumptions": [
+    {
+      "segment": "external_api",
+      "paying_accounts": "100000",
+      "annual_net_revenue_usd": "20000",
+      "revenue_busd": "2.000000000",
+      "gross_margin": "0.40",
+      "gross_profit_busd": "0.80000000000"
+    },
+    {
+      "segment": "enterprise_agent",
+      "paying_accounts": "40000",
+      "annual_net_revenue_usd": "60000",
+      "revenue_busd": "2.400000000",
+      "gross_margin": "0.65",
+      "gross_profit_busd": "1.56000000000"
+    },
+    {
+      "segment": "professional_creation",
+      "paying_accounts": "8000000",
+      "annual_net_revenue_usd": "300",
+      "revenue_busd": "2.400000000",
+      "gross_margin": "0.60",
+      "gross_profit_busd": "1.44000000000"
+    },
+    {
+      "segment": "consumer_entertainment",
+      "paying_accounts": "20000000",
+      "annual_net_revenue_usd": "60",
+      "revenue_busd": "1.200000000",
+      "gross_margin": "0.50",
+      "gross_profit_busd": "0.60000000000"
+    }
+  ],
+  "base_path_assumptions": [
+    {
+      "year": 2026,
+      "revenue_busd": "0.35",
+      "gross_margin": "0.25",
+      "rd_busd": "0.85",
+      "sga_rate": "0.20",
+      "ebit_busd": "-0.8325",
+      "normalized_net_profit_busd": "-0.8325",
+      "capex_busd": "0.35",
+      "da_busd": "0.02",
+      "dwc_busd": "0.05",
+      "owner_fcf_busd": "-1.2125"
+    },
+    {
+      "year": 2027,
+      "revenue_busd": "0.65",
+      "gross_margin": "0.30",
+      "rd_busd": "1.50",
+      "sga_rate": "0.17",
+      "ebit_busd": "-1.4155",
+      "normalized_net_profit_busd": "-1.4155",
+      "capex_busd": "0.30",
+      "da_busd": "0.05",
+      "dwc_busd": "0.03",
+      "owner_fcf_busd": "-1.6955"
+    },
+    {
+      "year": 2028,
+      "revenue_busd": "1.05",
+      "gross_margin": "0.36",
+      "rd_busd": "1.55",
+      "sga_rate": "0.16",
+      "ebit_busd": "-1.3400",
+      "normalized_net_profit_busd": "-1.3400",
+      "capex_busd": "0.25",
+      "da_busd": "0.07",
+      "dwc_busd": "0.04",
+      "owner_fcf_busd": "-1.5600"
+    },
+    {
+      "year": 2029,
+      "revenue_busd": "1.50",
+      "gross_margin": "0.42",
+      "rd_busd": "1.50",
+      "sga_rate": "0.15",
+      "ebit_busd": "-1.0950",
+      "normalized_net_profit_busd": "-1.0950",
+      "capex_busd": "0.20",
+      "da_busd": "0.09",
+      "dwc_busd": "0.04",
+      "owner_fcf_busd": "-1.2450"
+    },
+    {
+      "year": 2030,
+      "revenue_busd": "2.10",
+      "gross_margin": "0.46",
+      "rd_busd": "1.50",
+      "sga_rate": "0.14",
+      "ebit_busd": "-0.8280",
+      "normalized_net_profit_busd": "-0.8280",
+      "capex_busd": "0.20",
+      "da_busd": "0.11",
+      "dwc_busd": "0.05",
+      "owner_fcf_busd": "-0.9680"
+    },
+    {
+      "year": 2031,
+      "revenue_busd": "2.80",
+      "gross_margin": "0.49",
+      "rd_busd": "1.50",
+      "sga_rate": "0.13",
+      "ebit_busd": "-0.4920",
+      "normalized_net_profit_busd": "-0.4920",
+      "capex_busd": "0.22",
+      "da_busd": "0.14",
+      "dwc_busd": "0.06",
+      "owner_fcf_busd": "-0.6320"
+    },
+    {
+      "year": 2032,
+      "revenue_busd": "3.60",
+      "gross_margin": "0.51",
+      "rd_busd": "1.55",
+      "sga_rate": "0.13",
+      "ebit_busd": "-0.1820",
+      "normalized_net_profit_busd": "-0.1820",
+      "capex_busd": "0.25",
+      "da_busd": "0.18",
+      "dwc_busd": "0.06",
+      "owner_fcf_busd": "-0.3120"
+    },
+    {
+      "year": 2033,
+      "revenue_busd": "4.50",
+      "gross_margin": "0.53",
+      "rd_busd": "1.60",
+      "sga_rate": "0.13",
+      "ebit_busd": "0.2000",
+      "normalized_net_profit_busd": "0.160000",
+      "capex_busd": "0.28",
+      "da_busd": "0.22",
+      "dwc_busd": "0.07",
+      "owner_fcf_busd": "0.030000"
+    },
+    {
+      "year": 2034,
+      "revenue_busd": "5.60",
+      "gross_margin": "0.54",
+      "rd_busd": "1.66",
+      "sga_rate": "0.13",
+      "ebit_busd": "0.6360",
+      "normalized_net_profit_busd": "0.508800",
+      "capex_busd": "0.32",
+      "da_busd": "0.26",
+      "dwc_busd": "0.08",
+      "owner_fcf_busd": "0.368800"
+    },
+    {
+      "year": 2035,
+      "revenue_busd": "6.80",
+      "gross_margin": "0.55",
+      "rd_busd": "1.70",
+      "sga_rate": "0.13",
+      "ebit_busd": "1.1560",
+      "normalized_net_profit_busd": "0.924800",
+      "capex_busd": "0.37",
+      "da_busd": "0.30",
+      "dwc_busd": "0.09",
+      "owner_fcf_busd": "0.764800"
+    },
+    {
+      "year": 2036,
+      "revenue_busd": "8.00",
+      "gross_margin": "0.55",
+      "rd_busd": "1.76",
+      "sga_rate": "0.13",
+      "ebit_busd": "1.6000",
+      "normalized_net_profit_busd": "1.280000",
+      "capex_busd": "0.40",
+      "da_busd": "0.32",
+      "dwc_busd": "0.08",
+      "owner_fcf_busd": "1.120000"
+    }
+  ],
+  "scenarios_assumptions": [
+    {
+      "name": "exit_or_failure",
+      "probability": "0.25",
+      "revenue": "0",
+      "gm": "0",
+      "rd": "0",
+      "sales": "0",
+      "admin": "0",
+      "pe": "0",
+      "retained": "0",
+      "ebit_margin": "0",
+      "net_margin": "0.0",
+      "profit_busd": "0.0",
+      "profit_rmb_100m": "0.0",
+      "terminal_equity_busd": "0.0",
+      "current_holders_terminal_busd": "0.0",
+      "hurdle_present_value_busd": "0E+19",
+      "price_equivalent_hkd": "0E+27",
+      "irr_at_reference_market_cap": "-1"
+    },
+    {
+      "name": "commoditized_specialist",
+      "probability": "0.25",
+      "revenue": "2",
+      "gm": "0.35",
+      "rd": "0.18",
+      "sales": "0.07",
+      "admin": "0.04",
+      "pe": "15",
+      "retained": "0.60",
+      "ebit_margin": "0.06",
+      "net_margin": "0.048",
+      "profit_busd": "0.096",
+      "profit_rmb_100m": "6.720",
+      "terminal_equity_busd": "1.440",
+      "current_holders_terminal_busd": "0.86400",
+      "hurdle_present_value_busd": "0.1395408236168267032464563328760859625057",
+      "price_equivalent_hkd": "3.087885437835375514777122651554769839483",
+      "irr_at_reference_market_cap": "-0.2006427492190311561172980616337202756752"
+    },
+    {
+      "name": "base_professional_platform",
+      "probability": "0.40",
+      "revenue": "8",
+      "gm": "0.55",
+      "rd": "0.22",
+      "sales": "0.08",
+      "admin": "0.05",
+      "pe": "25",
+      "retained": "0.70",
+      "ebit_margin": "0.20",
+      "net_margin": "0.160",
+      "profit_busd": "1.280",
+      "profit_rmb_100m": "89.600",
+      "terminal_equity_busd": "32.000",
+      "current_holders_terminal_busd": "22.40000",
+      "hurdle_present_value_busd": "3.617725056732544158241460481972599027926",
+      "price_equivalent_hkd": "80.05628912906529112385132800327181065331",
+      "irr_at_reference_market_cap": "0.106915187578418197770280665375843766199"
+    },
+    {
+      "name": "global_platform",
+      "probability": "0.10",
+      "revenue": "20",
+      "gm": "0.65",
+      "rd": "0.16",
+      "sales": "0.07",
+      "admin": "0.045",
+      "pe": "30",
+      "retained": "0.80",
+      "ebit_margin": "0.375",
+      "net_margin": "0.3000",
+      "profit_busd": "6.0000",
+      "profit_rmb_100m": "420.0000",
+      "terminal_equity_busd": "180.0000",
+      "current_holders_terminal_busd": "144.000000",
+      "hurdle_present_value_busd": "23.25680393613778387440938881268099375095",
+      "price_equivalent_hkd": "514.6475729725625857961871085924616399141",
+      "irr_at_reference_market_cap": "0.333293597602143164536100254472373337504"
+    }
+  ],
+  "derived_checks": {
+    "market_cap_hkd": "63270192848.50",
+    "market_cap_busd_model_fx": "8.111563185705128205128205128205128205128",
+    "ttm_revenue_musd": "165.182",
+    "price_to_ttm_sales": "49.10682269076005984385832068993672558225",
+    "h12026_revenue_yoy_pct": "283.0983601169936573663281737815899306583",
+    "h12026_platform_share_pct": "63.41863038610999116433479450644660427372",
+    "h12026_gm_pct": "17.85404853611042008012146895078620263697",
+    "h12026_rd_revenue_multiple": "2.546644591800845821931322004237687972344",
+    "h12026_gross_profit_covers_rd_pct": "7.010812813689493717788931181998854717553",
+    "h12026_simple_fcf_musd": "-505.732",
+    "h12026_ppe_to_sales_pct": "160.9515067811585873229650090501230988308",
+    "h12026_current_liquid_assets_musd": "1223.290",
+    "cb_redemption_mhkd": "6678.7500",
+    "cb_conversion_shares": "19402985.07462686567164179104477611940299",
+    "cb_extra_shares_vs_current_pct": "5.504702394751896072308210031988130068291",
+    "rd_h12026_from_vendor_ttm_musd": "296.873",
+    "cfo_h12026_from_vendor_ttm_musd": "-318.108",
+    "capex_h12026_from_vendor_ttm_musd": "187.623",
+    "base_revenue_2026_2036_cagr": "0.367420839499288997932841000541114932897",
+    "base_revenue_2025_2036_cagr": "0.521583612495995135760677263590007764638",
+    "base_revenue_2029_2036_cagr": "0.270155698893840187433990561587039902571",
+    "base_revenue_2031_2036_cagr": "0.233634172516720890805580799764343815145",
+    "base_economic_funding_consumption_2027_2032_busd": "6.4125",
+    "base_break_even_profit_year": 2033,
+    "base_break_even_fcf_year": 2033,
+    "subjective_weighted_profit_busd": "1.136000",
+    "subjective_weighted_value_busd": "3.807655622211002726549137157276160476891",
+    "base_profit_required_for_20pct_irr_busd": "2.869980641115966704808791208791208791209",
+    "base_revenue_required_at_16pct_margin_busd": "17.93737900697479190505494505494505494505"
+  },
+  "profit_sensitivity_assumptions": [
+    {
+      "gm": "0.45",
+      "rd": "0.18",
+      "profit_busd": "0.896"
+    },
+    {
+      "gm": "0.45",
+      "rd": "0.22",
+      "profit_busd": "0.640"
+    },
+    {
+      "gm": "0.45",
+      "rd": "0.30",
+      "profit_busd": "0.128"
+    },
+    {
+      "gm": "0.55",
+      "rd": "0.18",
+      "profit_busd": "1.536"
+    },
+    {
+      "gm": "0.55",
+      "rd": "0.22",
+      "profit_busd": "1.280"
+    },
+    {
+      "gm": "0.55",
+      "rd": "0.30",
+      "profit_busd": "0.768"
+    },
+    {
+      "gm": "0.65",
+      "rd": "0.18",
+      "profit_busd": "2.176"
+    },
+    {
+      "gm": "0.65",
+      "rd": "0.22",
+      "profit_busd": "1.920"
+    },
+    {
+      "gm": "0.65",
+      "rd": "0.30",
+      "profit_busd": "1.408"
+    }
+  ],
+  "valuation_sensitivity_assumptions": [
+    {
+      "hurdle": "0.15",
+      "retained": "0.5",
+      "base_value_busd": "3.954955297949850412174764350521186089640"
+    },
+    {
+      "hurdle": "0.15",
+      "retained": "0.7",
+      "base_value_busd": "5.536937417129790577044670090729660525495"
+    },
+    {
+      "hurdle": "0.15",
+      "retained": "1",
+      "base_value_busd": "7.909910595899700824349528701042372179279"
+    },
+    {
+      "hurdle": "0.20",
+      "retained": "0.5",
+      "base_value_busd": "2.584089326237531541601043201408999305661"
+    },
+    {
+      "hurdle": "0.20",
+      "retained": "0.7",
+      "base_value_busd": "3.617725056732544158241460481972599027926"
+    },
+    {
+      "hurdle": "0.20",
+      "retained": "1",
+      "base_value_busd": "5.168178652475063083202086402817998611323"
+    },
+    {
+      "hurdle": "0.25",
+      "retained": "0.5",
+      "base_value_busd": "1.7179869184"
+    },
+    {
+      "hurdle": "0.25",
+      "retained": "0.7",
+      "base_value_busd": "2.40518168576"
+    },
+    {
+      "hurdle": "0.25",
+      "retained": "1",
+      "base_value_busd": "3.4359738368"
+    }
+  ],
+  "boundary": "Arithmetic only. SBC economic cost is not added back: owner_fcf and cumulative consumption are economic proxies, not actual funding requirements. The 70% retained share is a separate financing assumption. No forecast, fair value, probability or moat has been empirically validated."
+}

@@ -1,0 +1,111 @@
+[
+  {
+    "id": 2,
+    "label": "[腾讯](腾讯/腾讯研究报告-20260906.md) · 悲观退出价",
+    "reported_value": 270.2,
+    "unit": "",
+    "raw_text": "| [腾讯](腾讯/腾讯研究报告-20260906.md) | 442.8 HKD | 270.20 | 655.66 | 893.74 | +15.0% | 核心持有，新增资金等待更好安全边际 |",
+    "line_number": 15,
+    "fetched_value": 270.1963959379121,
+    "fetched_source": "Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt",
+    "verification_type": "conditional_model_arithmetic",
+    "scope": "Numeric reproduction and displayed rounding only. Forecast assumptions are not externally verified future facts."
+  },
+  {
+    "id": 8,
+    "label": "[PDD](拼多多/拼多多研究报告-20260906.md) · 基准退出价",
+    "reported_value": 117.7,
+    "unit": "",
+    "raw_text": "| [PDD](拼多多/拼多多研究报告-20260906.md) | 82.21 USD | 49.41 | 117.70 | 190.45 | +12.7% | 持有、暂停追加，重审第一大仓位的证据 |",
+    "line_number": 16,
+    "fetched_value": 117.69552202267917,
+    "fetched_source": "Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt",
+    "verification_type": "conditional_model_arithmetic",
+    "scope": "Numeric reproduction and displayed rounding only. Forecast assumptions are not externally verified future facts."
+  },
+  {
+    "id": 9,
+    "label": "[PDD](拼多多/拼多多研究报告-20260906.md) · 乐观退出价",
+    "reported_value": 190.45,
+    "unit": "",
+    "raw_text": "| [PDD](拼多多/拼多多研究报告-20260906.md) | 82.21 USD | 49.41 | 117.70 | 190.45 | +12.7% | 持有、暂停追加，重审第一大仓位的证据 |",
+    "line_number": 16,
+    "fetched_value": 190.45169706860008,
+    "fetched_source": "Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt",
+    "verification_type": "conditional_model_arithmetic",
+    "scope": "Numeric reproduction and displayed rounding only. Forecast assumptions are not externally verified future facts."
+  },
+  {
+    "id": 7,
+    "label": "[PDD](拼多多/拼多多研究报告-20260906.md) · 悲观退出价",
+    "reported_value": 49.41,
+    "unit": "",
+    "raw_text": "| [PDD](拼多多/拼多多研究报告-20260906.md) | 82.21 USD | 49.41 | 117.70 | 190.45 | +12.7% | 持有、暂停追加，重审第一大仓位的证据 |",
+    "line_number": 16,
+    "fetched_value": 49.4115311115621,
+    "fetched_source": "Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt",
+    "verification_type": "conditional_model_arithmetic",
+    "scope": "Numeric reproduction and displayed rounding only. Forecast assumptions are not externally verified future facts."
+  },
+  {
+    "id": 15,
+    "label": "[快手](快手/快手研究报告-20260906.md) · 基准等效年化",
+    "reported_value": 24.3,
+    "unit": "%",
+    "raw_text": "| [快手](快手/快手研究报告-20260906.md) | 33.66 HKD | 20.95 | 63.08 | 106.93 | +24.3% | 价格有吸引力；现有大仓位先核风险预算 |",
+    "line_number": 17,
+    "fetched_value": 24.26104962427317,
+    "fetched_source": "Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt",
+    "verification_type": "conditional_model_arithmetic",
+    "scope": "Numeric reproduction and displayed rounding only. Forecast assumptions are not externally verified future facts."
+  },
+  {
+    "id": 18,
+    "label": "[美团](美团/美团研究报告-20260906.md) · 基准退出价",
+    "reported_value": 90.23,
+    "unit": "",
+    "raw_text": "| [美团](美团/美团研究报告-20260906.md) | 81.75 HKD | 6.09 | 90.23 | 191.57 | +3.3% | 观望或降低，恢复路径尚未提供足够基准回报 |",
+    "line_number": 18,
+    "fetched_value": 90.23344043566097,
+    "fetched_source": "Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt",
+    "verification_type": "conditional_model_arithmetic",
+    "scope": "Numeric reproduction and displayed rounding only. Forecast assumptions are not externally verified future facts."
+  },
+  {
+    "id": 16,
+    "label": "[美团](美团/美团研究报告-20260906.md) · 正规收盘价",
+    "reported_value": 81.75,
+    "unit": "",
+    "raw_text": "| [美团](美团/美团研究报告-20260906.md) | 81.75 HKD | 6.09 | 90.23 | 191.57 | +3.3% | 观望或降低，恢复路径尚未提供足够基准回报 |",
+    "line_number": 18,
+    "fetched_value": 81.75,
+    "fetched_source": "Tencent quote regular close 2026-09-04; market-snapshot.json",
+    "fetched_value2": 81.75,
+    "fetched_source2": "https://stockanalysis.com/quote/hkg/3690/history/",
+    "verification_type": "external_fact"
+  },
+  {
+    "id": 41,
+    "label": "PDD · 原三年基准年化",
+    "reported_value": 12.7,
+    "unit": "%",
+    "raw_text": "| PDD | +12.7% | +4.6% | +7.4% |",
+    "line_number": 44,
+    "fetched_value": 12.705496645229207,
+    "fetched_source": "Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt",
+    "verification_type": "conditional_model_arithmetic",
+    "scope": "Numeric reproduction and displayed rounding only. Forecast assumptions are not externally verified future facts."
+  },
+  {
+    "id": 48,
+    "label": "美团 · 退出价值低20%的三年年化",
+    "reported_value": -4.1,
+    "unit": "%",
+    "raw_text": "| 美团 | +3.3% | -4.1% | +2.0% |",
+    "line_number": 46,
+    "fetched_value": -4.062164908013538,
+    "fetched_source": "Independent Decimal calculation and financial_rigor logs; comparison-results.json / comparison-financial-rigor.txt",
+    "verification_type": "conditional_model_arithmetic",
+    "scope": "Numeric reproduction and displayed rounding only. Forecast assumptions are not externally verified future facts."
+  }
+]

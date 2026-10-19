@@ -1,0 +1,64 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：04-亚马逊-AMZN-研究报告.md
+======================================================================
+
+  ✅ 通过 [ 7] 其他 · 十亿美元                            报告:         1.83
+                                                    https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm: 1.83 (偏差 0.00%)
+  ✅ 通过 [ 9] 营业收入 · FY 2024                       报告:       637.96
+                                                    https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm: 637.96 (偏差 0.00%)  |  https://stockanalysis.com/stocks/amzn/financials/: 637.96 (偏差 0.00%)
+  ✅ 通过 [ 8] 营业收入 · FY 2023                       报告:       574.78
+                                                    https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm: 574.78 (偏差 0.00%)  |  https://stockanalysis.com/stocks/amzn/financials/: 574.78 (偏差 0.00%)
+  ✅ 通过 [23] 归属普通股净利润 · TTM                       报告:       135.28
+                                                    https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm ; latest annual + YTD current - YTD prior: 135.28 (偏差 0.00%)  |  https://stockanalysis.com/stocks/amzn/financials/: 135.28 (偏差 0.00%)
+  ✅ 通过 [27] 经营现金流 CFO · TTM                      报告:       161.40
+                                                    https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm ; latest annual + YTD current - YTD prior: 161.40 (偏差 0.00%)  |  https://stockanalysis.com/stocks/amzn/financials/: 161.40 (偏差 0.00%)
+  ✅ 通过 [24] 经营现金流 CFO · FY 2023                  报告:        84.95
+                                                    https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm: 84.95 (偏差 0.00%)  |  https://stockanalysis.com/stocks/amzn/financials/: 84.95 (偏差 0.00%)
+  ✅ 通过 [29] 现金资本开支 · FY 2024                     报告:        83.00
+                                                    https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm: 83.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/amzn/financials/: 83.00 (偏差 0.00%)
+  ✅ 通过 [36] 股权薪酬 SBC · FY 2023                   报告:        24.02
+                                                    https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm: 24.02 (偏差 0.00%)  |  https://stockanalysis.com/stocks/amzn/financials/: 24.02 (偏差 0.00%)
+  ✅ 通过 [51] 现金CapEx/CFO · 本报告复算                  报告:       107.20 %
+                                                    现金CapEx/CFO; 原始输入见 financial-verification.json: 107.20 (偏差 0.00%)
+  ✅ 通过 [56] 减：融资租赁及其他融资本金 · 金额                   报告:         1.91
+                                                    https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm; cash bridge: 1.91 (偏差 0.00%)
+  ✅ 通过 [57] 减：SBC经济成本代理 · 金额                     报告:        19.31
+                                                    https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm; cash bridge: 19.31 (偏差 0.00%)
+  ✅ 通过 [58] 研究现金代理 · 金额                          报告:       -32.85
+                                                    https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm; cash bridge: -32.85 (偏差 0.00%)
+  ✅ 通过 [60] 公开已发行股数（十亿） · 复算结果                   报告:        10.79
+                                                    shares-assets-review.md: 10.79 (偏差 0.00%)
+  ✅ 通过 [63] 总市值/TTM归属利润 · 复算结果                   报告:        19.93 倍
+                                                    价格×公开股数/归属利润; 原始输入见 financial-verification.json: 19.93 (偏差 0.00%)
+  ✅ 通过 [71] FY 2024 · PS（倍）                      报告:         3.62
+                                                    https://stockanalysis.com/stocks/amzn/financials/: 3.62 (偏差 0.00%)
+  ✅ 通过 [72] FY 2025 · PE（倍）                      报告:        31.77
+                                                    https://stockanalysis.com/stocks/amzn/financials/: 31.77 (偏差 0.00%)
+  ✅ 通过 [104] 悲观 · 前五年现金率逐年路径                      报告:        -4.00 %
+                                                    valuation-assumptions.json: -4.00 (偏差 0.00%)
+  ✅ 通过 [109] 基准 · 后五年收入CAGR                       报告:         8.00 %
+                                                    valuation-assumptions.json: 8.00 (偏差 0.00%)
+  ✅ 通过 [108] 基准 · 前五年收入CAGR                       报告:        14.00 %
+                                                    valuation-assumptions.json: 14.00 (偏差 0.00%)
+  ✅ 通过 [115] 乐观 · 后五年收入CAGR                       报告:        10.00 %
+                                                    valuation-assumptions.json: 10.00 (偏差 0.00%)
+  ✅ 通过 [130] 中性 · 第五年条件价格USD                      报告:       363.64
+                                                    (TTM营业利润×80%×增长因子×退出倍数+净金融资产)/情景股份: 363.64 (偏差 0.00%)
+  ✅ 通过 [140] 简单平均 · 评分/5                          报告:         3.70
+                                                    四项主观评分简单平均: 3.70 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 22  |  通过: 22  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 22,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 22,
+  "fail_items": [],
+  "warn_items": []
+}

@@ -1,0 +1,411 @@
+{
+  "AAPL": {
+    "name": "苹果",
+    "shares": "14594.180000",
+    "model_shares": "14594.180000",
+    "debt": "84344",
+    "premium": ".035",
+    "leases": "0",
+    "lease_note": "融资租赁本金未在所取数据中单列；此处0是未作额外调整，并非确认无租赁。",
+    "bear": {
+      "growth_1_5": "0.02",
+      "growth_6_10": "0.01",
+      "economic_cash_margins": [
+        "0.22",
+        "0.22",
+        "0.22",
+        "0.22",
+        "0.22"
+      ],
+      "terminal_growth": "0.02"
+    },
+    "base": {
+      "growth_1_5": "0.07",
+      "growth_6_10": "0.04",
+      "economic_cash_margins": [
+        "0.25",
+        "0.25",
+        "0.25",
+        "0.25",
+        "0.25"
+      ],
+      "terminal_growth": "0.025"
+    },
+    "bull": {
+      "growth_1_5": "0.1",
+      "growth_6_10": "0.05",
+      "economic_cash_margins": [
+        "0.27",
+        "0.27",
+        "0.27",
+        "0.27",
+        "0.27"
+      ],
+      "terminal_growth": "0.03"
+    },
+    "eps_growth": [
+      ".12",
+      ".07",
+      ".02"
+    ],
+    "exit_pe": [
+      "30",
+      "25",
+      "18"
+    ],
+    "cash_override": "145423",
+    "investment_asset_book": "1094"
+  },
+  "MSFT": {
+    "name": "微软",
+    "shares": "7425.545491",
+    "model_shares": "7425.545491",
+    "debt": "40294",
+    "premium": ".035",
+    "leases": "3101",
+    "lease_note": "FY2026融资租赁本金；前瞻租赁付款在现金率中承担，不再扣融资租赁负债。",
+    "bear": {
+      "growth_1_5": "0.1",
+      "growth_6_10": "0.05",
+      "economic_cash_margins": [
+        "0.09",
+        "0.1",
+        "0.12",
+        "0.14",
+        "0.16"
+      ],
+      "terminal_growth": "0.02"
+    },
+    "base": {
+      "growth_1_5": "0.16",
+      "growth_6_10": "0.08",
+      "economic_cash_margins": [
+        "0.12",
+        "0.16",
+        "0.2",
+        "0.24",
+        "0.27"
+      ],
+      "terminal_growth": "0.03"
+    },
+    "bull": {
+      "growth_1_5": "0.2",
+      "growth_6_10": "0.1",
+      "economic_cash_margins": [
+        "0.16",
+        "0.21",
+        "0.26",
+        "0.29",
+        "0.31"
+      ],
+      "terminal_growth": "0.03"
+    },
+    "eps_growth": [
+      ".20",
+      ".15",
+      ".08"
+    ],
+    "exit_pe": [
+      "30",
+      "25",
+      "18"
+    ],
+    "cash_override": "73043",
+    "investment_asset_book": "28848"
+  },
+  "GOOGL": {
+    "name": "谷歌",
+    "shares": "12230",
+    "model_shares": "12285",
+    "debt": "100164",
+    "premium": ".04",
+    "leases": "0",
+    "lease_note": "融资租赁本金未单列，0不代表没有租赁；经营租赁已进入CFO。",
+    "preferred_dividend": "1203.125",
+    "bear": {
+      "growth_1_5": "0.08",
+      "growth_6_10": "0.03",
+      "economic_cash_margins": [
+        "0.0",
+        "0.01",
+        "0.03",
+        "0.06",
+        "0.09"
+      ],
+      "terminal_growth": "0.02"
+    },
+    "base": {
+      "growth_1_5": "0.18",
+      "growth_6_10": "0.08",
+      "economic_cash_margins": [
+        "0.03",
+        "0.07",
+        "0.12",
+        "0.17",
+        "0.2"
+      ],
+      "terminal_growth": "0.03"
+    },
+    "bull": {
+      "growth_1_5": "0.24",
+      "growth_6_10": "0.1",
+      "economic_cash_margins": [
+        "0.06",
+        "0.12",
+        "0.19",
+        "0.25",
+        "0.29"
+      ],
+      "terminal_growth": "0.03"
+    },
+    "eps_growth": [
+      ".22",
+      ".15",
+      ".05"
+    ],
+    "exit_pe": [
+      "28",
+      "22",
+      "16"
+    ],
+    "cash_override": "155411",
+    "book_equity_override": "622457",
+    "investment_asset_book": "232650"
+  },
+  "AMZN": {
+    "name": "亚马逊",
+    "shares": "10786.313572",
+    "model_shares": "10786.313572",
+    "debt": "132549",
+    "premium": ".045",
+    "leases": "1599",
+    "other_financing": "308",
+    "lease_note": "以下为百万美元：TTM融资租赁本金1599、融资义务本金308；资产处置/激励4021未冲减本表毛资本开支。",
+    "bear": {
+      "growth_1_5": "0.08",
+      "growth_6_10": "0.04",
+      "economic_cash_margins": [
+        "-0.04",
+        "-0.02",
+        "0.0",
+        "0.02",
+        "0.04"
+      ],
+      "terminal_growth": "0.02"
+    },
+    "base": {
+      "growth_1_5": "0.14",
+      "growth_6_10": "0.08",
+      "economic_cash_margins": [
+        "-0.03",
+        "0.0",
+        "0.03",
+        "0.06",
+        "0.09"
+      ],
+      "terminal_growth": "0.03"
+    },
+    "bull": {
+      "growth_1_5": "0.18",
+      "growth_6_10": "0.1",
+      "economic_cash_margins": [
+        "0.0",
+        "0.03",
+        "0.07",
+        "0.11",
+        "0.14"
+      ],
+      "terminal_growth": "0.03"
+    },
+    "eps_growth": [
+      ".22",
+      ".16",
+      ".05"
+    ],
+    "exit_pe": [
+      "32",
+      "25",
+      "18"
+    ],
+    "cash_override": "118301",
+    "investment_asset_book": "229582"
+  },
+  "META": {
+    "name": "Meta",
+    "shares": "2547.506225",
+    "model_shares": "2547.506225",
+    "debt": "83664",
+    "premium": ".045",
+    "leases": "3104",
+    "lease_note": "以下为百万美元：TTM融资租赁本金=2524+1805−1225=3104。",
+    "bear": {
+      "growth_1_5": "0.1",
+      "growth_6_10": "0.04",
+      "economic_cash_margins": [
+        "-0.06",
+        "-0.02",
+        "0.02",
+        "0.06",
+        "0.1"
+      ],
+      "terminal_growth": "0.02"
+    },
+    "base": {
+      "growth_1_5": "0.18",
+      "growth_6_10": "0.08",
+      "economic_cash_margins": [
+        "-0.03",
+        "0.03",
+        "0.1",
+        "0.17",
+        "0.23"
+      ],
+      "terminal_growth": "0.03"
+    },
+    "bull": {
+      "growth_1_5": "0.22",
+      "growth_6_10": "0.1",
+      "economic_cash_margins": [
+        "0.01",
+        "0.08",
+        "0.16",
+        "0.24",
+        "0.28"
+      ],
+      "terminal_growth": "0.03"
+    },
+    "eps_growth": [
+      ".22",
+      ".16",
+      ".05"
+    ],
+    "exit_pe": [
+      "28",
+      "22",
+      "16"
+    ],
+    "cash_override": "86717",
+    "investment_asset_book": "33700"
+  },
+  "NVDA": {
+    "name": "英伟达",
+    "shares": "24147",
+    "model_shares": "24147",
+    "debt": "33366",
+    "premium": ".05",
+    "leases": "0",
+    "other_financing": "120",
+    "lease_note": "TTM设备和无形资产融资本金为101+92−73=120百万美元，已扣除；未来云采购及租赁支出由现金率承担，附条件担保另设压力。",
+    "bear": {
+      "growth_1_5": "0.1",
+      "growth_6_10": "0.02",
+      "economic_cash_margins": [
+        "0.3",
+        "0.29",
+        "0.28",
+        "0.28",
+        "0.28"
+      ],
+      "terminal_growth": "0.02",
+      "margin_year10": ".20"
+    },
+    "base": {
+      "growth_1_5": "0.25",
+      "growth_6_10": "0.06",
+      "economic_cash_margins": [
+        "0.42",
+        "0.43",
+        "0.44",
+        "0.43",
+        "0.42"
+      ],
+      "terminal_growth": "0.03",
+      "margin_year10": ".32"
+    },
+    "bull": {
+      "growth_1_5": "0.32",
+      "growth_6_10": "0.08",
+      "economic_cash_margins": [
+        "0.44",
+        "0.46",
+        "0.48",
+        "0.47",
+        "0.46"
+      ],
+      "terminal_growth": "0.03",
+      "margin_year10": ".38"
+    },
+    "eps_growth": [
+      ".30",
+      ".22",
+      ".05"
+    ],
+    "exit_pe": [
+      "28",
+      "22",
+      "15"
+    ],
+    "cash_override": "56586",
+    "investment_asset_book": "98897"
+  },
+  "TSLA": {
+    "name": "特斯拉",
+    "shares": "3949.547394",
+    "model_shares": "3525.847394",
+    "debt": "9061",
+    "premium": ".06",
+    "leases": "74",
+    "lease_note": "以下为百万美元：TTM融资租赁本金=104+37−67=74；市值股数使用含已发行受限股的封面总数。",
+    "bear": {
+      "growth_1_5": "0.05",
+      "growth_6_10": "0.03",
+      "economic_cash_margins": [
+        "-0.05",
+        "-0.03",
+        "-0.01",
+        "0.01",
+        "0.03"
+      ],
+      "terminal_growth": "0.02"
+    },
+    "base": {
+      "growth_1_5": "0.14",
+      "growth_6_10": "0.1",
+      "economic_cash_margins": [
+        "-0.03",
+        "-0.01",
+        "0.02",
+        "0.05",
+        "0.08"
+      ],
+      "terminal_growth": "0.025"
+    },
+    "bull": {
+      "growth_1_5": "0.35",
+      "growth_6_10": "0.12",
+      "economic_cash_margins": [
+        "-0.01",
+        "0.03",
+        "0.08",
+        "0.15",
+        "0.23"
+      ],
+      "terminal_growth": "0.03"
+    },
+    "eps_growth": [
+      ".60",
+      ".25",
+      ".00"
+    ],
+    "exit_pe": [
+      "60",
+      "30",
+      "15"
+    ],
+    "cash_override": "43238",
+    "book_equity_override": "86858",
+    "investment_asset_book": "3681",
+    "minority_interest": "661",
+    "bull_model_shares": "3949.547394"
+  }
+}

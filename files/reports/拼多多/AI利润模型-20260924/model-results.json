@@ -1,0 +1,454 @@
+{
+  "cutoff": "2026-09-24",
+  "units": "RMB亿元; valuation USD/ADS",
+  "definitions": {
+    "revenue": "counterfactual baseline revenue excluding incremental AI commercialization",
+    "profit_ratios": "AI-inclusive profits divided by counterfactual baseline revenue, not GAAP margins",
+    "ai_cost_pools": "baseline volume only; incremental sales variable costs included in contribution rate; separate AI operating expenses deducted once",
+    "net": "normalized attributable earnings with recurring SBC and depreciation retained; not exact future GAAP"
+  },
+  "inputs": {
+    "bear": {
+      "growth": [
+        "0",
+        ".04"
+      ],
+      "margins": [
+        ".175",
+        ".17",
+        ".165"
+      ],
+      "ai": [
+        -10,
+        -15,
+        -25
+      ],
+      "finance": [
+        100,
+        110,
+        120
+      ],
+      "tax": ".25",
+      "pe2029": 8,
+      "terminal": [
+        2600,
+        3000,
+        ".14",
+        -50,
+        100
+      ]
+    },
+    "base": {
+      "growth": [
+        ".06",
+        ".12"
+      ],
+      "margins": [
+        ".21",
+        ".215",
+        ".22"
+      ],
+      "ai": [
+        10,
+        35,
+        65
+      ],
+      "finance": [
+        120,
+        130,
+        140
+      ],
+      "tax": ".22",
+      "pe2029": 12,
+      "terminal": [
+        4000,
+        5000,
+        ".215",
+        180,
+        140
+      ]
+    },
+    "bull": {
+      "growth": [
+        ".10",
+        ".18"
+      ],
+      "margins": [
+        ".23",
+        ".24",
+        ".25"
+      ],
+      "ai": [
+        30,
+        80,
+        150
+      ],
+      "finance": [
+        150,
+        170,
+        190
+      ],
+      "tax": ".20",
+      "pe2029": 16,
+      "terminal": [
+        5500,
+        8000,
+        ".25",
+        350,
+        200
+      ]
+    }
+  },
+  "scenarios": {
+    "bear": {
+      "annual": [
+        {
+          "year": 2027,
+          "marketing": "2250",
+          "transaction": "2548.00",
+          "revenue": "4798.00",
+          "pre_ai_op_margin": "0.175",
+          "ai_op": "-10",
+          "op": "829.65000",
+          "op_profit_over_base_revenue": "0.1729157982492705293872446853",
+          "finance_pre_tax": "100",
+          "tax": "0.25",
+          "net_no_ai": "704.7375000",
+          "ai_net": "-7.50",
+          "net": "697.2375000",
+          "net_profit_over_base_revenue": "0.1453183618174239266360983743"
+        },
+        {
+          "year": 2028,
+          "marketing": "2250",
+          "transaction": "2649.9200",
+          "revenue": "4899.9200",
+          "pre_ai_op_margin": "0.17",
+          "ai_op": "-15",
+          "op": "817.986400",
+          "op_profit_over_base_revenue": "0.1669387255302127381671537494",
+          "finance_pre_tax": "110",
+          "tax": "0.25",
+          "net_no_ai": "707.23980000",
+          "ai_net": "-11.25",
+          "net": "695.98980000",
+          "net_profit_over_base_revenue": "0.1420410537314894937060196901"
+        },
+        {
+          "year": 2029,
+          "marketing": "2250",
+          "transaction": "2755.916800",
+          "revenue": "5005.916800",
+          "pre_ai_op_margin": "0.165",
+          "ai_op": "-25",
+          "op": "800.976272000",
+          "op_profit_over_base_revenue": "0.1600059098065712957914122744",
+          "finance_pre_tax": "120",
+          "tax": "0.25",
+          "net_no_ai": "709.48220400000",
+          "ai_net": "-18.75",
+          "net": "690.73220400000",
+          "net_profit_over_base_revenue": "0.1379831570512718069944750180"
+        }
+      ],
+      "2036": {
+        "year": 2036,
+        "marketing": "2600",
+        "transaction": "3000",
+        "revenue": "5600",
+        "pre_ai_op_margin": "0.14",
+        "ai_op": "-50",
+        "op": "734.00",
+        "op_profit_over_base_revenue": "0.1310714285714285714285714286",
+        "finance_pre_tax": "100",
+        "tax": "0.25",
+        "net_no_ai": "663.0000",
+        "ai_net": "-37.50",
+        "net": "625.5000",
+        "net_profit_over_base_revenue": "0.1116964285714285714285714286",
+        "revenue_cagr_2026_2036": "0.017674791564427616161426846",
+        "net_cagr_2026_2036": "-0.0299584950497156707239766962",
+        "marketing_cagr_2029_2036": "0.020869240813662676547542211",
+        "transaction_cagr_2029_2036": "0.012196944037864685537352426"
+      },
+      "valuation": {
+        "ads_100m": "14.8",
+        "rmb_per_usd": "7",
+        "pe": 8,
+        "price_2029": "53.33839413127413127413127413",
+        "price_only_annual_return_3_25yr": "-0.1145301653589863520959328804",
+        "present_value_at_12pct": "36.90467308055607593784218173"
+      }
+    },
+    "base": {
+      "annual": [
+        {
+          "year": 2027,
+          "marketing": "2385.00",
+          "transaction": "2744.00",
+          "revenue": "5129.00",
+          "pre_ai_op_margin": "0.21",
+          "ai_op": "10",
+          "op": "1087.0900",
+          "op_profit_over_base_revenue": "0.2119496977968414895691167869",
+          "finance_pre_tax": "120",
+          "tax": "0.22",
+          "net_no_ai": "933.730200",
+          "ai_net": "7.80",
+          "net": "941.530200",
+          "net_profit_over_base_revenue": "0.1835699356599727042308442191"
+        },
+        {
+          "year": 2028,
+          "marketing": "2528.1000",
+          "transaction": "3073.2800",
+          "revenue": "5601.3800",
+          "pre_ai_op_margin": "0.215",
+          "ai_op": "35",
+          "op": "1239.2967000",
+          "op_profit_over_base_revenue": "0.2212484602008790690865465296",
+          "finance_pre_tax": "130",
+          "tax": "0.22",
+          "net_no_ai": "1040.751426000",
+          "ai_net": "27.30",
+          "net": "1068.051426000",
+          "net_profit_over_base_revenue": "0.1906764807958038911839582389"
+        },
+        {
+          "year": 2029,
+          "marketing": "2679.786000",
+          "transaction": "3442.073600",
+          "revenue": "6121.859600",
+          "pre_ai_op_margin": "0.22",
+          "ai_op": "65",
+          "op": "1411.80911200",
+          "op_profit_over_base_revenue": "0.2306176887820164970787634529",
+          "finance_pre_tax": "140",
+          "tax": "0.22",
+          "net_no_ai": "1159.7111073600",
+          "ai_net": "50.70",
+          "net": "1210.4111073600",
+          "net_profit_over_base_revenue": "0.1977195144037605828137580940"
+        }
+      ],
+      "2036": {
+        "year": 2036,
+        "marketing": "4000",
+        "transaction": "5000",
+        "revenue": "9000",
+        "pre_ai_op_margin": "0.215",
+        "ai_op": "180",
+        "op": "2115.000",
+        "op_profit_over_base_revenue": "0.235",
+        "finance_pre_tax": "140",
+        "tax": "0.22",
+        "net_no_ai": "1618.50000",
+        "ai_net": "140.40",
+        "net": "1758.90000",
+        "net_profit_over_base_revenue": "0.1954333333333333333333333333",
+        "revenue_cagr_2026_2036": "0.067122962341363926187265403",
+        "net_cagr_2026_2036": "0.075701316685288134789345282",
+        "marketing_cagr_2029_2036": "0.058891375499101012576162633",
+        "transaction_cagr_2029_2036": "0.054785775888487814639730001"
+      },
+      "valuation": {
+        "ads_100m": "14.8",
+        "rmb_per_usd": "7",
+        "pe": 12,
+        "price_2029": "140.2020587675675675675675676",
+        "price_only_annual_return_3_25yr": "0.192110957289278572656706110",
+        "present_value_at_12pct": "97.00537911403359664514745660"
+      }
+    },
+    "bull": {
+      "annual": [
+        {
+          "year": 2027,
+          "marketing": "2475.00",
+          "transaction": "2891.00",
+          "revenue": "5366.00",
+          "pre_ai_op_margin": "0.23",
+          "ai_op": "30",
+          "op": "1264.1800",
+          "op_profit_over_base_revenue": "0.2355907566157286619455833023",
+          "finance_pre_tax": "150",
+          "tax": "0.20",
+          "net_no_ai": "1107.344000",
+          "ai_net": "24.00",
+          "net": "1131.344000",
+          "net_profit_over_base_revenue": "0.2108356317554975773387998509"
+        },
+        {
+          "year": 2028,
+          "marketing": "2722.5000",
+          "transaction": "3411.3800",
+          "revenue": "6133.8800",
+          "pre_ai_op_margin": "0.24",
+          "ai_op": "80",
+          "op": "1552.131200",
+          "op_profit_over_base_revenue": "0.2530423157935923102506080980",
+          "finance_pre_tax": "170",
+          "tax": "0.20",
+          "net_no_ai": "1313.70496000",
+          "ai_net": "64.00",
+          "net": "1377.70496000",
+          "net_profit_over_base_revenue": "0.2246057894839807756265202449"
+        },
+        {
+          "year": 2029,
+          "marketing": "2994.750000",
+          "transaction": "4025.428400",
+          "revenue": "7020.178400",
+          "pre_ai_op_margin": "0.25",
+          "ai_op": "150",
+          "op": "1905.04460000",
+          "op_profit_over_base_revenue": "0.2713669783662477865234877792",
+          "finance_pre_tax": "190",
+          "tax": "0.20",
+          "net_no_ai": "1556.0356800000",
+          "ai_net": "120.00",
+          "net": "1676.0356800000",
+          "net_profit_over_base_revenue": "0.2387454541041293195625911729"
+        }
+      ],
+      "2036": {
+        "year": 2036,
+        "marketing": "5500",
+        "transaction": "8000",
+        "revenue": "13500",
+        "pre_ai_op_margin": "0.25",
+        "ai_op": "350",
+        "op": "3725.00",
+        "op_profit_over_base_revenue": "0.2759259259259259259259259259",
+        "finance_pre_tax": "200",
+        "tax": "0.20",
+        "net_no_ai": "2860.0000",
+        "ai_net": "280.00",
+        "net": "3140.0000",
+        "net_profit_over_base_revenue": "0.2325925925925925925925925926",
+        "revenue_cagr_2026_2036": "0.111280237331472369016604179",
+        "net_cagr_2026_2036": "0.139883717610699533362291162",
+        "marketing_cagr_2029_2036": "0.090723293384579948245945361",
+        "transaction_cagr_2029_2036": "0.103090452827126977207409074"
+      },
+      "valuation": {
+        "ads_100m": "14.8",
+        "rmb_per_usd": "7",
+        "pe": 16,
+        "price_2029": "258.8472092664092664092664094",
+        "price_only_annual_return_3_25yr": "0.439632977059406472246028824",
+        "present_value_at_12pct": "179.0955987966285629057276699"
+      }
+    }
+  },
+  "anchor_2026E": {
+    "year": 2026,
+    "marketing": "2250",
+    "transaction": "2450",
+    "revenue": "4700",
+    "pre_ai_op_margin": "0.21",
+    "ai_op": "0",
+    "op": "987.00",
+    "op_profit_over_base_revenue": "0.21",
+    "finance_pre_tax": "100",
+    "tax": "0.22",
+    "net_no_ai": "847.8600",
+    "ai_net": "0.00",
+    "net": "847.8600",
+    "net_profit_over_base_revenue": "0.1803957446808510638297872340"
+  },
+  "ai_bridge_2029": {
+    "marketing_basis": "2679.786000",
+    "marketing_uplift": "69.6744360000",
+    "support_saving": "27.00",
+    "creative_saving": "15.00",
+    "fulfillment_saving": "16.00",
+    "gross": "127.6744360000",
+    "competitive_leakage": "38.302330800000",
+    "new_ai_cost": "25",
+    "net_operating": "64.372105200000",
+    "net_after_tax": "50.21024205600000",
+    "model_rounded_ai_operating": "65"
+  },
+  "base_ai_net_three_year_sum": "85.80",
+  "sensitivity_2036": [
+    {
+      "revenue": "7500",
+      "net_margin": "0.16",
+      "net": "1200.00"
+    },
+    {
+      "revenue": "7500",
+      "net_margin": "0.20",
+      "net": "1500.00"
+    },
+    {
+      "revenue": "7500",
+      "net_margin": "0.24",
+      "net": "1800.00"
+    },
+    {
+      "revenue": "9000",
+      "net_margin": "0.16",
+      "net": "1440.00"
+    },
+    {
+      "revenue": "9000",
+      "net_margin": "0.20",
+      "net": "1800.00"
+    },
+    {
+      "revenue": "9000",
+      "net_margin": "0.24",
+      "net": "2160.00"
+    },
+    {
+      "revenue": "10500",
+      "net_margin": "0.16",
+      "net": "1680.00"
+    },
+    {
+      "revenue": "10500",
+      "net_margin": "0.20",
+      "net": "2100.00"
+    },
+    {
+      "revenue": "10500",
+      "net_margin": "0.24",
+      "net": "2520.00"
+    }
+  ],
+  "ai_sensitivity_2036": [
+    {
+      "ai_op": "0",
+      "net": "1618.50000"
+    },
+    {
+      "ai_op": "90",
+      "net": "1688.70000"
+    },
+    {
+      "ai_op": "180",
+      "net": "1758.90000"
+    },
+    {
+      "ai_op": "270",
+      "net": "1829.10000"
+    }
+  ],
+  "audit_math": {
+    "2025_net_adjustment": "15.21930",
+    "ads_issued_100m": "14.23396462",
+    "closing_market_cap_usd_100m": "1127.329997904",
+    "cash_short_investments": "4564.14",
+    "cash_less_leases": "4515.70",
+    "cash_less_all_liabilities": "2407.94",
+    "ttm_net": "920.75539",
+    "ttm_op": "985.53131",
+    "ttm_revenue": "4507.75713",
+    "2029_base_margin_1pp_aftertax": "47.7505048800",
+    "2036_base_margin_1pp_aftertax": "70.2000",
+    "2036_base_real_net_2026RMB_at_2pct_inflation": "1442.910624650410616711733880",
+    "2036_base_2pct_dilution_relative_eps": "0.8203482998751552769979725284"
+  }
+}

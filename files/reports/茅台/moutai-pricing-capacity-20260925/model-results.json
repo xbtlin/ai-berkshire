@@ -1,0 +1,168 @@
+{
+  "period": "2026E to 2036; 10 compounding periods",
+  "price_factor": "1.62889462677744140625",
+  "mature_base_liquor_supply_proxy_tonnes": "76071.99",
+  "central_sales_to_supply_proxy": "0.893890116454164009644022721109307118",
+  "volume_sensitivity": {
+    "48000": {
+      "moutai_volume_tonnes": 48000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "2797.56259306189625000000",
+      "attributable_profit_yi": "1370.8056706003291625000000"
+    },
+    "52000": {
+      "moutai_volume_tonnes": 52000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "3000.84864248372093750000",
+      "attributable_profit_yi": "1470.4158348170232593750000"
+    },
+    "60000": {
+      "moutai_volume_tonnes": 60000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "3407.42074132737031250000",
+      "attributable_profit_yi": "1669.6361632504114531250000"
+    },
+    "63000": {
+      "moutai_volume_tonnes": 63000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "3559.88527839373882812500",
+      "attributable_profit_yi": "1744.3437864129320257812500"
+    },
+    "65000": {
+      "moutai_volume_tonnes": 65000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "3661.52830310465117187500",
+      "attributable_profit_yi": "1794.1488685212790742187500"
+    },
+    "68000": {
+      "moutai_volume_tonnes": 68000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "3813.99284017101968750000",
+      "attributable_profit_yi": "1868.8564916837996468750000"
+    },
+    "70000": {
+      "moutai_volume_tonnes": 70000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "3915.63586488193203125000",
+      "attributable_profit_yi": "1918.6615737921466953125000"
+    },
+    "72000": {
+      "moutai_volume_tonnes": 72000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "4017.27888959284437500000",
+      "attributable_profit_yi": "1968.4666559004937437500000"
+    }
+  },
+  "price_sensitivity": {
+    "0.02": {
+      "moutai_volume_tonnes": 68000,
+      "moutai_asp_wan": "380.32625903836422463488",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "2944.348561460876727517184",
+      "attributable_profit_yi": "1442.73079511582959648342016"
+    },
+    "0.03": {
+      "moutai_volume_tonnes": 68000,
+      "moutai_asp_wan": "419.30191035536603919288",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "3209.382990416489066511584",
+      "attributable_profit_yi": "1572.59766530407964259067616"
+    },
+    "0.05": {
+      "moutai_volume_tonnes": 68000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "3813.99284017101968750000",
+      "attributable_profit_yi": "1868.8564916837996468750000"
+    }
+  },
+  "margin_sensitivity": {
+    "0.45": {
+      "moutai_volume_tonnes": 68000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.45",
+      "revenue_yi": "3813.99284017101968750000",
+      "attributable_profit_yi": "1716.2967780769588593750000"
+    },
+    "0.49": {
+      "moutai_volume_tonnes": 68000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "revenue_yi": "3813.99284017101968750000",
+      "attributable_profit_yi": "1868.8564916837996468750000"
+    },
+    "0.52": {
+      "moutai_volume_tonnes": 68000,
+      "moutai_asp_wan": "508.21512355456171875000",
+      "series_volume_tonnes": 55000,
+      "series_asp_wan": "65",
+      "attributable_margin": "0.52",
+      "revenue_yi": "3813.99284017101968750000",
+      "attributable_profit_yi": "1983.2762768889302375000000"
+    }
+  },
+  "bridge": {
+    "previous": "1095.9487",
+    "price_only": "1422.6408348170232593750000",
+    "moutai_volume_step": "1821.0814916837996468750000",
+    "series_volume_step": "1868.8564916837996468750000",
+    "price_delta": "326.6921348170232593750000",
+    "moutai_volume_delta": "398.4406568667763875000000",
+    "series_volume_delta": "47.7750000000000000000000"
+  },
+  "both_categories_5pct": {
+    "moutai_volume_tonnes": 68000,
+    "moutai_asp_wan": "508.21512355456171875000",
+    "series_volume_tonnes": 55000,
+    "series_asp_wan": "87.145862532593115234375",
+    "attributable_margin": "0.49",
+    "revenue_yi": "3935.7950841002818212890625",
+    "attributable_profit_yi": "1928.539591209138092431640625"
+  },
+  "central_profit_cagr_from_2026E": "0.08561856470625953117541652638171189",
+  "central_profit_in_2026_money_at_2pct_inflation": "1533.11324566345230681970173845145842",
+  "volume_growth_from_2026E": "0.41666666666666666666666666666666667",
+  "volume_cagr_from_2026E": "0.03544436156698002811790280080731153",
+  "moutai_revenue_multiple_from_2026E": "2.30760072126804199218750000000000001",
+  "required_share_multiple_if_category_volume_falls_20pct": "1.77083333333333333333333333333333334",
+  "luxury_ten_year_cagr": {
+    "Birkin25_USD": "0.03686112427311699553045948386795041",
+    "Birkin25_EUR": "0.04988546236365401774941926840863562",
+    "Birkin30_USD": "0.03175356235112150445078732613769693",
+    "Birkin30_EUR": "0.04236730915761166376152296519774305"
+  }
+}

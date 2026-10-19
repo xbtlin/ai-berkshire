@@ -1,0 +1,60 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：02-微软-MSFT-研究报告.md
+======================================================================
+
+  ✅ 通过 [ 7] 营业收入 · FY 2026                       报告:       331.84
+                                                    https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast: 331.84 (偏差 0.00%)  |  https://stockanalysis.com/stocks/msft/financials/: 331.84 (偏差 0.00%)
+  ✅ 通过 [ 8] 营业收入 · TTM                           报告:       331.84
+                                                    https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast ; latest annual + YTD current - YTD prior: 331.84 (偏差 0.00%)  |  https://stockanalysis.com/stocks/msft/financials/: 331.84 (偏差 0.00%)
+  ✅ 通过 [ 9] 毛利 · FY 2024                         报告:       171.01
+                                                    https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast: 171.01 (偏差 0.00%)  |  https://stockanalysis.com/stocks/msft/financials/: 171.01 (偏差 0.00%)
+  ✅ 通过 [23] 经营现金流 CFO · FY 2026                  报告:       182.94
+                                                    https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast: 182.94 (偏差 0.00%)  |  https://stockanalysis.com/stocks/msft/financials/: 182.94 (偏差 0.00%)
+  ✅ 通过 [24] 经营现金流 CFO · TTM                      报告:       182.94
+                                                    https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast ; latest annual + YTD current - YTD prior: 182.94 (偏差 0.00%)  |  https://stockanalysis.com/stocks/msft/financials/: 182.94 (偏差 0.00%)
+  ✅ 通过 [27] 现金资本开支 · FY 2026                     报告:       115.95
+                                                    https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast: 115.95 (偏差 0.00%)  |  https://stockanalysis.com/stocks/msft/financials/: 115.95 (偏差 0.00%)
+  ✅ 通过 [29] 基础FCF（CFO−现金CapEx） · FY 2024         报告:        74.07
+                                                    https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast: 74.07 (偏差 0.00%)  |  https://stockanalysis.com/stocks/msft/financials/: 74.07 (偏差 0.00%)
+  ✅ 通过 [36] 股权薪酬 SBC · TTM                       报告:        12.40
+                                                    https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast ; latest annual + YTD current - YTD prior: 12.40 (偏差 0.00%)  |  https://stockanalysis.com/stocks/msft/financials/: 12.40 (偏差 0.00%)
+  ✅ 通过 [51] 减：现金资本开支 · 金额                        报告:       115.95
+                                                    https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast; cash bridge: 115.95 (偏差 0.00%)
+  ✅ 通过 [56] 正常收盘价（美元） · 复算结果                     报告:       529.05
+                                                    price-and-calendar-review.md: 529.05 (偏差 0.00%)
+  ✅ 通过 [57] 公开已发行股数（十亿） · 复算结果                   报告:         7.43
+                                                    shares-assets-review.md: 7.43 (偏差 0.00%)
+  ✅ 通过 [58] 估算总市值（万亿美元） · 复算结果                   报告:         3.93
+                                                    价格×公开股数; 原始输入见 financial-verification.json: 3.93 (偏差 0.00%)
+  ✅ 通过 [60] 总市值/TTM归属利润 · 复算结果                   报告:        29.37 倍
+                                                    价格×公开股数/归属利润; 原始输入见 financial-verification.json: 29.37 (偏差 0.00%)
+  ✅ 通过 [63] 基础FCF收益率 · 复算结果                      报告:         1.70 %
+                                                    (CFO−CapEx)/市值; 原始输入见 financial-verification.json: 1.70 (偏差 0.00%)
+  ✅ 通过 [71] AAPL · PS                            报告:        10.74
+                                                    同组表按各公司原始输入重算: 10.74 (偏差 0.00%)
+  ✅ 通过 [76] MSFT · 营业利润率                         报告:        46.78 %
+                                                    同组表按各公司原始输入重算: 46.78 (偏差 0.00%)
+  ✅ 通过 [109] 基准 · 终值增长                            报告:         3.00 %
+                                                    valuation-assumptions.json: 3.00 (偏差 0.00%)
+  ✅ 通过 [108] 基准 · 第十年现金率                          报告:        27.00 %
+                                                    valuation-assumptions.json: 27.00 (偏差 0.00%)
+  ✅ 通过 [130] 悲观 · 经营利润CAGR                        报告:         8.00 %
+                                                    (TTM营业利润×80%×增长因子×退出倍数+净金融资产)/情景股份: 8.00 (偏差 0.00%)
+  ✅ 通过 [140] 尚未持有、偏现金流价值 · 行动规则                   报告:       350.00
+                                                    核心基准×执行折价，向下取整5美元档: 350.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 20  |  通过: 20  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 20,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 20,
+  "fail_items": [],
+  "warn_items": []
+}

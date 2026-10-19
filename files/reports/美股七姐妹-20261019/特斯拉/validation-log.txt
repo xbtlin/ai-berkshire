@@ -1,0 +1,398 @@
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py verify-market-cap --price 354.72 --shares 3949547394 --reported 1400983000000 --currency USD
+============================================================
+市值验算 (Market Cap Verification)
+============================================================
+  股价 (Price):       354.72 USD
+  总股本 (Shares):    3.95B
+  计算市值:           1.40T USD
+  报告市值:           1.40T USD
+  偏差:               0.00%
+
+  ✅ 验证通过, 偏差仅 0.00%
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field FY2025 revenue --values {"SEC/Tesla": 94827, "StockAnalysis": 94827} --unit USD_m_or_shares
+============================================================
+交叉验证: FY2025 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 94,827.00 USD_m_or_shares
+
+  ✅ SEC/Tesla           : 94,827.00 USD_m_or_shares  (偏差 0.00%)
+  ✅ StockAnalysis       : 94,827.00 USD_m_or_shares  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 94,827.00 USD_m_or_shares
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field FY2025 NI common --values {"SEC/Tesla": 3794, "StockAnalysis": 3794} --unit USD_m_or_shares
+============================================================
+交叉验证: FY2025 NI common (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 3,794.00 USD_m_or_shares
+
+  ✅ SEC/Tesla           : 3,794.00 USD_m_or_shares  (偏差 0.00%)
+  ✅ StockAnalysis       : 3,794.00 USD_m_or_shares  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 3,794.00 USD_m_or_shares
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field FY2025 cash+ST --values {"SEC/Tesla": 44059, "StockAnalysis": 44059} --unit USD_m_or_shares
+============================================================
+交叉验证: FY2025 cash+ST (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 44,059.00 USD_m_or_shares
+
+  ✅ SEC/Tesla           : 44,059.00 USD_m_or_shares  (偏差 0.00%)
+  ✅ StockAnalysis       : 44,059.00 USD_m_or_shares  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 44,059.00 USD_m_or_shares
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field Q2 cash+ST --values {"SEC/Tesla": 43524, "StockAnalysis": 43524} --unit USD_m_or_shares
+============================================================
+交叉验证: Q2 cash+ST (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 43,524.00 USD_m_or_shares
+
+  ✅ SEC/Tesla           : 43,524.00 USD_m_or_shares  (偏差 0.00%)
+  ✅ StockAnalysis       : 43,524.00 USD_m_or_shares  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 43,524.00 USD_m_or_shares
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field TTM NI common vs EPS numerator --values {"SEC/Tesla": 3804, "StockAnalysis": 3806} --unit USD_m_or_shares
+============================================================
+交叉验证: TTM NI common vs EPS numerator (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 3,805.00 USD_m_or_shares
+
+  ✅ SEC/Tesla           : 3,804.00 USD_m_or_shares  (偏差 0.03%)
+  ✅ StockAnalysis       : 3,806.00 USD_m_or_shares  (偏差 0.03%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 3,805.00 USD_m_or_shares
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field shares SEC vs SA rounded --values {"SEC/Tesla": 3949547394, "StockAnalysis": 3950000000} --unit USD_m_or_shares
+============================================================
+交叉验证: shares SEC vs SA rounded (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 3.95B USD_m_or_shares
+
+  ✅ SEC/Tesla           : 3.95B USD_m_or_shares  (偏差 0.01%)
+  ✅ StockAnalysis       : 3.95B USD_m_or_shares  (偏差 0.01%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 3.95B USD_m_or_shares
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field debt including leases reconciled --values {"SEC/Tesla": 16080, "StockAnalysis": 16080} --unit USD_m_or_shares
+============================================================
+交叉验证: debt including leases reconciled (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 16,080.00 USD_m_or_shares
+
+  ✅ SEC/Tesla           : 16,080.00 USD_m_or_shares  (偏差 0.00%)
+  ✅ StockAnalysis       : 16,080.00 USD_m_or_shares  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 16,080.00 USD_m_or_shares
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field FY2024 EBIT official vs standardized --values {"SEC": 7076, "StockAnalysis": 7659} --unit USD_m
+============================================================
+交叉验证: FY2024 EBIT official vs standardized (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 7,367.50 USD_m
+
+  ❌ SEC                 : 7,076.00 USD_m  (偏差 3.96%)
+  ❌ StockAnalysis       : 7,659.00 USD_m  (偏差 3.96%)
+
+  ⚠️  存在来源偏差 > 2.0%, 请核实差异原因
+     建议: 优先采用公司年报/交易所数据
+
+  共识值 (加权中位数): 7,367.50 USD_m
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field 2025Q3 EBIT official vs standardized --values {"Tesla": 1624, "StockAnalysis": 1862} --unit USD_m
+============================================================
+交叉验证: 2025Q3 EBIT official vs standardized (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 1,743.00 USD_m
+
+  ❌ Tesla               : 1,624.00 USD_m  (偏差 6.83%)
+  ❌ StockAnalysis       : 1,862.00 USD_m  (偏差 6.83%)
+
+  ⚠️  存在来源偏差 > 2.0%, 请核实差异原因
+     建议: 优先采用公司年报/交易所数据
+
+  共识值 (加权中位数): 1,743.00 USD_m
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py verify-valuation --price 354.72 --eps 0.963148335877394461771585972263433484 --bvps 21.9918870025338402104512130333483979 --fcf-per-share 1.45890134367127941344055688017400203 --dividend 0
+============================================================
+估值指标验算 (Valuation Verification)
+============================================================
+  当前股价: 354.72
+
+  PE (TTM):  354.72 / 0.9631483358773945 = 368.29x
+  盈利收益率: 0.27%
+  PB:        354.72 / 21.99188700253384 = 16.13x
+  ROE:       0.9631483358773945 / 21.99188700253384 = 4.38%
+  P/FCF:     354.72 / 1.4589013436712794 = 243.14x
+  FCF Yield: 0.41%
+  股息率:    0.0 / 354.72 = 0.00%
+
+  ✅ 以上指标均使用精确十进制计算, 无浮点误差
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py three-scenario --price 354.72 --eps 0.963148335877394461771585972263433484 --shares 39.49547394 --growth 1.09544296940870476682565263068876628 0.57985386481776866712807892298869023 0.09540948899782345446321440447837321 --pe 70 45 25 --years 3 --currency USD
+============================================================
+三情景估值模型 (Three-Scenario Valuation)
+============================================================
+  当前股价: 354.72 USD
+  当前EPS:  0.9631483358773945
+  预测期:   3年
+
+  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅
+  ------------ -------- -------- ---------- ---------- --------
+  乐观 (Bull)        110%      70x       8.86     620.3   +74.9%
+  中性 (Base)         58%      45x       3.80     170.9   -51.8%
+  悲观 (Bear)         10%      25x       1.27      31.6   -91.1%
+
+  ✅ 所有计算使用精确十进制, 结果可审计复现
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/terminal_value.py audit --currency USD --r .10 --roic .20 --g .01,.025,.04 --rf .051 --beta 1 --discrete-risks 自动驾驶禁运或停运:情景,严重事故赔偿:未建模,关联交易价值转移:未建模
+
+========================================================================
+估值口径准出检查   币种=USD   r=10.00%   ROIC=20%   g=1.0%/2.5%/4.0%
+========================================================================
+
+【C1】币种一致性 — r 与 g 必须用同一个币种
+     USD 口径基准：美国10年期国债 4.70% + 中国总ERP 5.18%（含1.01%国别溢价）
+     r 合理区间 [9.0%, 11.5%]   g 上限 4.0%   Rf 4.70%
+     → ✓ 通过
+
+【C2】分母宽度 — r-g 至少 5 个百分点
+     悲观  g= 1.0%  r-g= 9.0pct  PE=     10.6x  g+0.5pct → 10.9x (+3%)
+     基准  g= 2.5%  r-g= 7.5pct  PE=     11.7x  g+0.5pct → 12.1x (+4%)
+     乐观  g= 4.0%  r-g= 6.0pct  PE=     13.3x  g+0.5pct → 14.1x (+6%)
+     → ✓ 通过
+
+【C3】离散风险归属 — 退市/VIE/地缘/监管必须归情景，不得进 r 或 β
+     ✓ 自动驾驶禁运或停运 → 情景
+     ⚠ 严重事故赔偿 → 未建模
+     ⚠ 关联交易价值转移 → 未建模
+     β = 1.0（默认值，无需理由）
+     → ✓ 通过
+
+========================================================================
+⚠ C3: 「严重事故赔偿」未建模，必须写进报告的「限制」章节
+⚠ C3: 「关联交易价值转移」未建模，必须写进报告的「限制」章节
+
+【准出】三条硬约束全部通过，可以把估值写进报告。
+       但上述 2 条警告必须在报告里显式写出。
+
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/terminal_value.py pe --roic .20 --g 0.01 --r .10
+
+PE(终值) = (1 - g/ROIC) / (r - g)
+
+  ROIC = 20.0%   g = 1.00%   r = 10.00%
+
+  留存率 g/ROIC   = 0.0100 / 0.20 = 0.0500  (5.0%)
+  分子 1 - 留存率 = 0.9500                    （即派息率 95.0%）
+  分母 r - g      = 0.1000 - 0.0100 = 0.0900  (9.0pct)
+
+  退出 PE = 0.9500 / 0.0900 = 10.6x
+
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/terminal_value.py irr --profit 6000.00 --mcap 1400983.45159968 --pe 10.5555555555555555555555555555555556 --years 10 --payout -.01
+
+IRR = (2036市值 / 今日市值)^(1/10) - 1 + 股息率 - 稀释率
+
+  2036 市值 = 6,000 x 10.6x = 63,333
+  今日市值 = 1,400,983
+  总倍数   = 0.0452
+  几何年化 = -26.63%
+  股息-稀释 = -1.00%
+
+  IRR = -27.63%
+
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/terminal_value.py pe --roic .20 --g 0.025 --r .10
+
+PE(终值) = (1 - g/ROIC) / (r - g)
+
+  ROIC = 20.0%   g = 2.50%   r = 10.00%
+
+  留存率 g/ROIC   = 0.0250 / 0.20 = 0.1250  (12.5%)
+  分子 1 - 留存率 = 0.8750                    （即派息率 87.5%）
+  分母 r - g      = 0.1000 - 0.0250 = 0.0750  (7.5pct)
+
+  退出 PE = 0.8750 / 0.0750 = 11.7x
+
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/terminal_value.py irr --profit 35000.00 --mcap 1400983.45159968 --pe 11.6666666666666666666666666666666667 --years 10 --payout -.01
+
+IRR = (2036市值 / 今日市值)^(1/10) - 1 + 股息率 - 稀释率
+
+  2036 市值 = 35,000 x 11.7x = 408,333
+  今日市值 = 1,400,983
+  总倍数   = 0.2915
+  几何年化 = -11.60%
+  股息-稀释 = -1.00%
+
+  IRR = -12.60%
+
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/terminal_value.py pe --roic .20 --g 0.04 --r .10
+
+PE(终值) = (1 - g/ROIC) / (r - g)
+
+  ROIC = 20.0%   g = 4.00%   r = 10.00%
+
+  留存率 g/ROIC   = 0.0400 / 0.20 = 0.2000  (20.0%)
+  分子 1 - 留存率 = 0.8000                    （即派息率 80.0%）
+  分母 r - g      = 0.1000 - 0.0400 = 0.0600  (6.0pct)
+
+  退出 PE = 0.8000 / 0.0600 = 13.3x
+
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/terminal_value.py irr --profit 120000.00 --mcap 1400983.45159968 --pe 13.3333333333333333333333333333333333 --years 10 --payout -.01
+
+IRR = (2036市值 / 今日市值)^(1/10) - 1 + 股息率 - 稀释率
+
+  2036 市值 = 120,000 x 13.3x = 1,600,000
+  今日市值 = 1,400,983
+  总倍数   = 1.1421
+  几何年化 = +1.34%
+  股息-稀释 = -1.00%
+
+  IRR = +0.34%
+
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/terminal_value.py flip --config /workspace/scratch/351726a27bf6/ai-berkshire/reports/美股七姐妹-20261019/特斯拉/terminal-config.json --name Tesla --r .10 --delta .02 --currency USD --g-shift 0 --rf .051
+
+Tesla  |  基准 r = 10.00%   Δr = ±2pp   币种 USD   g平移 +0.0%   Rf = 5.10%   持有期 10 年
+币种合理区间：r ∈ [9.0%, 11.5%]（同 audit C1）；区间外档位仅供参考，不参与翻转判定。
+判定规则：期望 IRR ≥ r → 通过仓位压力测试；否则未通过。
+角色：十年模型 = 仓位压力测试，不是买入/持有/回避的唯一否决票。
+
+档位               r       期望IRR        相对 r      压力测试
+------------------------------------------------------
+r−2pp        8.00%     -12.53%    -20.53pp  未通过（区间外，仅供参考）
+基准 r        10.00%     -15.27%    -25.27pp  未通过
+r+2pp       12.00%     -17.29%    -29.29pp  未通过（区间外，仅供参考）
+------------------------------------------------------
+
+【稳定】Δr±2pp 区间内压力测试始终未通过——相对折现率扰动更稳健。
+        注意：两侧档位都在区间外，区间内只有基准一档参与判定；可用更小的 --delta 在区间内复核。
+        未通过仍只约束仓位，不自动等于回避；须与其他五个维度并列决策。
+
+提醒：禁止为迎合买入结论而把 r 调出币种合理区间；敏感性是为了一致性审计，不是为了「调低 r 去买」。
+
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/terminal_value.py flip --config /workspace/scratch/351726a27bf6/ai-berkshire/reports/美股七姐妹-20261019/特斯拉/terminal-config.json --name Tesla --r .10 --delta .01 --currency USD --g-shift 0 --rf .051
+
+Tesla  |  基准 r = 10.00%   Δr = ±1pp   币种 USD   g平移 +0.0%   Rf = 5.10%   持有期 10 年
+币种合理区间：r ∈ [9.0%, 11.5%]（同 audit C1）；区间外档位仅供参考，不参与翻转判定。
+判定规则：期望 IRR ≥ r → 通过仓位压力测试；否则未通过。
+角色：十年模型 = 仓位压力测试，不是买入/持有/回避的唯一否决票。
+
+档位               r       期望IRR        相对 r      压力测试
+------------------------------------------------------
+r−1pp        9.00%     -14.02%    -23.02pp  未通过
+基准 r        10.00%     -15.27%    -25.27pp  未通过
+r+1pp       11.00%     -16.35%    -27.35pp  未通过
+------------------------------------------------------
+
+【稳定】Δr±1pp 区间内压力测试始终未通过——相对折现率扰动更稳健。
+        未通过仍只约束仓位，不自动等于回避；须与其他五个维度并列决策。
+
+提醒：禁止为迎合买入结论而把 r 调出币种合理区间；敏感性是为了一致性审计，不是为了「调低 r 去买」。
+
+
+exit=0
+
+$ /workspace/scratch/351726a27bf6/ai-berkshire/tools/terminal_value.py audit --currency USD --r .10 --roic .20 --g .01,.025,.04 --rf .051 --beta 1 --discrete-risks 自动驾驶禁运或停运:情景,严重事故赔偿:未建模,关联交易价值转移:未建模
+
+========================================================================
+估值口径准出检查   币种=USD   r=10.00%   ROIC=20%   g=1.0%/2.5%/4.0%
+========================================================================
+
+【C1】币种一致性 — r 与 g 必须用同一个币种
+     USD 口径基准：美国10年期国债 4.70% + 中国总ERP 5.18%（含1.01%国别溢价）
+     r 合理区间 [9.0%, 11.5%]   g 上限 4.0%   Rf 4.70%
+     → ✓ 通过
+
+【C2】分母宽度 — r-g 至少 5 个百分点
+     悲观  g= 1.0%  r-g= 9.0pct  PE=     10.6x  g+0.5pct → 10.9x (+3%)
+     基准  g= 2.5%  r-g= 7.5pct  PE=     11.7x  g+0.5pct → 12.1x (+4%)
+     乐观  g= 4.0%  r-g= 6.0pct  PE=     13.3x  g+0.5pct → 14.1x (+6%)
+     → ✓ 通过
+
+【C3】离散风险归属 — 退市/VIE/地缘/监管必须归情景，不得进 r 或 β
+     ✓ 自动驾驶禁运或停运 → 情景
+     ⚠ 严重事故赔偿 → 未建模
+     ⚠ 关联交易价值转移 → 未建模
+     β = 1.0（默认值，无需理由）
+     → ✓ 通过
+
+========================================================================
+⚠ C3: 「严重事故赔偿」未建模，必须写进报告的「限制」章节
+⚠ C3: 「关联交易价值转移」未建模，必须写进报告的「限制」章节
+
+【准出】三条硬约束全部通过，可以把估值写进报告。
+       但上述 2 条警告必须在报告里显式写出。
+
+
+exit=0

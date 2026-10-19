@@ -1,0 +1,11 @@
+{
+  "price_hkd": "28.58",
+  "price_date": "2026-10-15 close; Investing historical and StockAnalysis 16:08 HKT",
+  "shares_yi": "43.04151598",
+  "shares_date": "2026-09-30 issued A+B, HKEX monthly return 2026-10-07; includes 3,922,000 repurchased awaiting cancellation",
+  "rmb_per_hkd": "0.85702",
+  "fx_note": "SAFE central parity 2026-10-15: HKD100=RMB85.702; not an executable FX quote",
+  "ttm_parent_profit_yi": "157.66",
+  "excess_cash_yi": "102.08",
+  "source_note": "Conservative June 30 cash bridge: 116.96+123.58+563.53-273.62-252.48-0.05-25.84-150. Excludes later Kling subscription proceeds, long-term deposits/assets and later cash movements; not a current spot net-cash estimate. TTM parent profit=FY2025 186.17-H1 2025 89.00+H1 2026 60.49. See financial evidence for live verification."
+}

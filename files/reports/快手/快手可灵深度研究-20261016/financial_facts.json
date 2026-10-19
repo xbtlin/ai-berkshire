@@ -1,0 +1,100 @@
+{
+  "as_of": "2026-10-16",
+  "financial_period_end": "2026-06-30",
+  "currency": "CNY",
+  "financial_unit": "million",
+  "source_status": "2025 audited annual report; 2026H1 unaudited reviewed interim report; explicit gaps retained",
+  "sources": {
+    "annual_2025": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf",
+    "interim_2026": "https://ir.kuaishou.com/system/files-encrypted/nasdaq_kms/assets/2026/09/08/10-47-47/Interim%202026.pdf",
+    "annual_2023": "https://ir.kuaishou.com/system/files-encrypted/nasdaq_kms/assets/2024/04/22/19-26-33/2023%20AR_EN.pdf",
+    "quarter_2026_q1_pdf": "https://ir.kuaishou.com/node/11461/pdf",
+    "share_return": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1007/2026100700815_c.pdf",
+    "secondary_income": "https://stockanalysis.com/quote/hkg/1024/financials/income-statement/",
+    "secondary_cashflow": "https://stockanalysis.com/quote/hkg/1024/financials/cash-flow-statement/",
+    "secondary_balance": "https://stockanalysis.com/quote/hkg/1024/financials/balance-sheet/",
+    "price_1": "https://www.investing.com/equities/kuaishou-technology-historical-data",
+    "price_2": "https://stockanalysis.com/quote/hkg/1024/",
+    "fx_primary": "https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do",
+    "fx_secondary": "https://www.tradingview.com/news/fx168%3A8dd12f00be3f9%3A0/",
+    "kling_financing_update": "https://cdn.financialreports.eu/financialreports/media/filings/10204/2026/RNS/10204_rns_2026-08-31_001e5903-2a04-46b4-b084-42b6e800e0e9.pdf"
+  },
+  "annual": [
+    {"period": "2021", "revenue": 81082, "net_income_attributable": -78074, "adjusted_net_income": -18851.769, "cfo": -5519, "capex": 7764, "cfo_capex_status": "secondary_source_only"},
+    {"period": "2022", "revenue": 94183, "net_income_attributable": -13690, "adjusted_net_income": -5751, "cfo": 795, "capex": 5100, "cashflow_status": "restated_in_2023_annual"},
+    {"period": "2023", "revenue": 113470, "net_income_attributable": 6396, "adjusted_net_income": 10271, "cfo": 20781, "capex": 4897},
+    {"period": "2024", "revenue": 126898, "net_income_attributable": 15335, "adjusted_net_income": 17716, "cfo": 29787, "capex": 8063},
+    {"period": "2025", "revenue": 142776, "net_income_attributable": 18617, "adjusted_net_income": 20647, "cfo": 26716, "capex": 14942, "lease_cash_payments": 3823}
+  ],
+  "interim_and_ttm": [
+    {"period": "2025H1", "revenue": 67654, "net_income_attributable": 8900, "net_income_total": 8901, "adjusted_net_income": 10198, "cfo": 11781, "capex": 7075, "lease_cash_payments": 1733},
+    {"period": "2026H1", "revenue": 69251, "net_income_attributable": 6049, "net_income_total": 6057, "adjusted_net_income": 7287, "cfo": 9044, "capex": 17941, "lease_cash_payments": 1919},
+    {"period": "TTM_2026H1", "status": "calculated_as_FY2025_minus_H12025_plus_H12026", "revenue": 144373, "net_income_attributable": 15766, "adjusted_net_income": 17736, "cfo": 23979, "capex": 25808, "lease_cash_payments": 4009, "fcf_before_lease": -1829, "fcf_after_lease": -5838}
+  ],
+  "quarters": [
+    {"period": "2025Q3", "advertising": 20102, "live": 9574, "other": 5878, "revenue": 35554, "net_income_attributable": 4488, "adjusted_net_income": 4986, "kling_revenue": {"comparator": ">", "amount": 300}},
+    {"period": "2025Q4", "advertising": 23618, "live": 9655, "other": 6295, "revenue": 39568, "net_income_attributable": 5229, "adjusted_net_income": 5463, "kling_revenue": {"comparator": "=", "amount": 340}},
+    {"period": "2026Q1", "advertising": 19643, "live": 8492, "other": 5581, "revenue": 33716, "net_income_attributable": 2903, "adjusted_net_income": 3374, "kling_revenue": {"comparator": ">", "amount": 650}},
+    {"period": "2026Q2", "advertising": 20639, "live": 8690, "other": 6206, "revenue": 35535, "net_income_attributable": 3146, "adjusted_net_income": 3913, "kling_revenue": {"comparator": ">", "amount": 850}}
+  ],
+  "balance_2026_06_30": {
+    "cash_equivalents": 11696,
+    "short_term_deposits": 12358,
+    "current_fvpl": 56353,
+    "current_fvpl_listed_equity": 719,
+    "current_fvpl_wealth_management_other": 55634,
+    "current_pool": 80407,
+    "long_term_deposits": 14291,
+    "noncurrent_fvpl": 29618,
+    "restricted_cash": 220,
+    "company_available_funds_approx": 121300,
+    "borrowings_including_accrued_interest": 27362,
+    "supplier_notes": 25248,
+    "supplier_arrangement_total_liability": 25253,
+    "lease_liabilities": 11672,
+    "dividends_payable": 2584,
+    "refundable_customer_deposits": 8657,
+    "capital_commitments": 4880,
+    "note": "Not current-date cash. FCF after lease payments implies no second lease-debt deduction. No post-June Kling funding cash added. An operating buffer is an analyst assumption, not a company-reported restricted asset."
+  },
+  "market": {
+    "close_date": "2026-10-15",
+    "close_hkd": "28.58",
+    "share_count_date": "2026-09-30",
+    "class_a": 659348952,
+    "class_b": 3644802646,
+    "issued_total": 4304151598,
+    "treasury": 0,
+    "repurchased_pending_cancellation": 3922000,
+    "economic_outstanding_after_pending_cancellation": 4300229598,
+    "valuation_denominator": "issued_total",
+    "fx_date": "2026-10-15",
+    "hkd_cny_midpoint": "0.85702",
+    "usd_cny_midpoint": "6.7253",
+    "market_cap_hkd_units": "123012652670.84",
+    "market_cap_cny_units": "105424303591.9632968"
+  },
+  "kling_run_rate": {
+    "date": "2026-03",
+    "amount_usd_million_approx": 500,
+    "definition": "Annualized revenue run rate, not contracted annual recurring revenue or trailing twelve-month recognized revenue",
+    "source": "quarter_2026_q1_pdf",
+    "source_location": "Page 2, AI business section",
+    "verification": "Direct company disclosure verified; no independent audit of standalone Kling economics"
+  },
+  "kling_financing": {
+    "announcement_date": "2026-08-31",
+    "total_subscription_commitment_cny_million": "20447.10",
+    "confirmed_all_cash_received": false,
+    "kuaishou_controlled_economic_interest_fully_funded_and_incentivized_pct": "68.33",
+    "note": "Conditional fully used financing and incentive-plan cap; not 100 percent attributable economics; redemption and other preferred rights need consideration."
+  },
+  "validation_notes": [
+    "Annual revenue and attributable net income and 2022-2025 CFO/capex crosschecked to independent S&P extraction at displayed precision.",
+    "Company adjusted earnings and Kling revenue lack complete independent standardized verification.",
+    "StockAnalysis TTM capex 14942 is stale, rejected; correctly rolled capex is 25808 and FCF is -1829.",
+    "StockAnalysis quote headline financials are HKD; accounting tables are CNY.",
+    "2021 CFO and capex only independently sourced this pass, not rechecked to original report.",
+    "2022 cash flow restatement is material; use CFO 795, not original 2198."
+  ]
+}

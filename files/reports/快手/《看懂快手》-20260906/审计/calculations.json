@@ -1,0 +1,253 @@
+{
+  "shares": {
+    "expression": "3664102236+662858979",
+    "tool_calculated_value": "4326961215"
+  },
+  "mcap_hkd_yi": {
+    "expression": "33.66*4326961215/1e8",
+    "tool_calculated_value": "1456.455144969"
+  },
+  "mcap_cny_yi": {
+    "expression": "33.66*4326961215/1e8*0.8559",
+    "tool_calculated_value": "1246.579958578967"
+  },
+  "ttm_revenue": {
+    "expression": "(142776-67654+69251)/100",
+    "tool_calculated_value": "1443.73"
+  },
+  "ttm_net_parent": {
+    "expression": "(18617-8900+6049)/100",
+    "tool_calculated_value": "157.66"
+  },
+  "ttm_adjusted": {
+    "expression": "(20647-10198+7287)/100",
+    "tool_calculated_value": "177.36"
+  },
+  "ttm_sbc": {
+    "expression": "(2640-1320+1311)/100",
+    "tool_calculated_value": "26.31"
+  },
+  "ttm_adjusted_less_sbc": {
+    "expression": "(20647-10198+7287-2640+1320-1311)/100",
+    "tool_calculated_value": "151.05"
+  },
+  "ocf_2025": {
+    "expression": "26716/100",
+    "tool_calculated_value": "267.16"
+  },
+  "fcf_2025": {
+    "expression": "(26716-14942)/100",
+    "tool_calculated_value": "117.74"
+  },
+  "fcf_2025_after_lease": {
+    "expression": "(26716-14942-3823)/100",
+    "tool_calculated_value": "79.51"
+  },
+  "fcf_2025_after_lease_sbc": {
+    "expression": "(26716-14942-3823-2640)/100",
+    "tool_calculated_value": "53.11"
+  },
+  "ttm_ocf": {
+    "expression": "(26716-11781+9044)/100",
+    "tool_calculated_value": "239.79"
+  },
+  "h12026_capex_estimate": {
+    "expression": "121+59",
+    "tool_calculated_value": "180"
+  },
+  "h12026_fcf_estimate": {
+    "expression": "90.44-121-59",
+    "tool_calculated_value": "-89.56"
+  },
+  "ttm_capex_estimate": {
+    "expression": "149.42-70.75+121+59",
+    "tool_calculated_value": "258.66999999999996"
+  },
+  "ttm_fcf_estimate": {
+    "expression": "(26716-11781+9044)/100-(149.42-70.75+121+59)",
+    "tool_calculated_value": "-18.879999999999967"
+  },
+  "cash_current_investment": {
+    "expression": "(11696+12358+56353)/100",
+    "tool_calculated_value": "804.07"
+  },
+  "total_borrowing": {
+    "expression": "(14792+12570)/100",
+    "tool_calculated_value": "273.62"
+  },
+  "total_lease": {
+    "expression": "(7920+3752)/100",
+    "tool_calculated_value": "116.72"
+  },
+  "netcash_current_includinglease": {
+    "expression": "(11696+12358+56353-14792-12570-7920-3752)/100",
+    "tool_calculated_value": "413.73"
+  },
+  "example_contributions": {
+    "expression": "100-25-15",
+    "tool_calculated_value": "60"
+  },
+  "example_contributions_mid": {
+    "expression": "100-45-15",
+    "tool_calculated_value": "40"
+  },
+  "example_contributions_low": {
+    "expression": "100-65-15",
+    "tool_calculated_value": "20"
+  },
+  "tenor_simple_example": {
+    "expression": "30*(1+0.08*5)",
+    "tool_calculated_value": "42.0"
+  },
+  "rev2025_structure_sum": {
+    "expression": "814.62+390.87+222.27",
+    "tool_calculated_value": "1427.76"
+  },
+  "revenue_CAGR_2021_2025": {
+    "expression": "(142776/81082)**(1/4)-1",
+    "tool_calculated_value": "0.15194750777690036"
+  },
+  "grossprofit_CAGR": {
+    "expression": "(78549/34030)**(1/4)-1",
+    "tool_calculated_value": "0.23259294559739807"
+  },
+  "marketing_ratio2021": {
+    "expression": "44175.898/81081.513*100",
+    "tool_calculated_value": "54.48331730070207"
+  },
+  "marketing_ratio2025": {
+    "expression": "42229/142776*100",
+    "tool_calculated_value": "29.577099792682244"
+  },
+  "q2_ads_perDAU": {
+    "expression": "20639/412.3",
+    "tool_calculated_value": "50.05821004123211"
+  },
+  "h1rev_yoy": {
+    "expression": "(69251/67654-1)*100",
+    "tool_calculated_value": "2.3605403967245087"
+  },
+  "h1net_yoy": {
+    "expression": "(6049/8900-1)*100",
+    "tool_calculated_value": "-32.03370786516854"
+  },
+  "q2rd_yoy": {
+    "expression": "(4581/3400-1)*100",
+    "tool_calculated_value": "34.735294117647065"
+  },
+  "PE_ttm_IFRS": {
+    "expression": "33.66*4326961215*0.8559/(18617-8900+6049)/1e6",
+    "tool_calculated_value": "7.906761122535627"
+  },
+  "PE_ttm_adjusted": {
+    "expression": "33.66*4326961215*0.8559/(20647-10198+7287)/1e6",
+    "tool_calculated_value": "7.028529310887274"
+  },
+  "PE_ttm_adjusted_lesssbc": {
+    "expression": "33.66*4326961215*0.8559/(20647-10198+7287-2640+1320-1311)/1e6",
+    "tool_calculated_value": "8.25276371121461"
+  },
+  "PE_forward_low": {
+    "expression": "33.66*4326961215*0.8559/9e9",
+    "tool_calculated_value": "13.850888428655189"
+  },
+  "PE_forward_high": {
+    "expression": "33.66*4326961215*0.8559/8.5e9",
+    "tool_calculated_value": "14.665646571517259"
+  },
+  "PE2025": {
+    "expression": "33.66*4326961215*0.8559/18617e6",
+    "tool_calculated_value": "6.695922858564575"
+  },
+  "FCFyield2025": {
+    "expression": "(26716-14942)*1e6/(33.66*4326961215*0.8559)*100",
+    "tool_calculated_value": "9.445041947747754"
+  },
+  "FCFyield2025_lease": {
+    "expression": "(26716-14942-3823)*1e6/(33.66*4326961215*0.8559)*100",
+    "tool_calculated_value": "6.378251106382062"
+  },
+  "FCFyield2025_lease_sbc": {
+    "expression": "(26716-14942-3823-2640)*1e6/(33.66*4326961215*0.8559)*100",
+    "tool_calculated_value": "4.260456750848337"
+  },
+  "PB": {
+    "expression": "33.66*4326961215*0.8559/82239e6",
+    "tool_calculated_value": "1.5158014550018446"
+  },
+  "reverse_cash9": {
+    "expression": "(33.66*4326961215/1e8*0.8559-150)*0.09",
+    "tool_calculated_value": "98.69219627210704"
+  },
+  "reverse_cash8": {
+    "expression": "(33.66*4326961215/1e8*0.8559-150)*0.08",
+    "tool_calculated_value": "87.72639668631737"
+  },
+  "q2_revenueshare_rise": {
+    "expression": "(12323-10542)/100",
+    "tool_calculated_value": "17.81"
+  },
+  "adjusted_bridge2025": {
+    "expression": "18624+2640-617",
+    "tool_calculated_value": "20647"
+  },
+  "adjusted_bridgeh12026": {
+    "expression": "6057+1311-81",
+    "tool_calculated_value": "7287"
+  },
+  "h12025_fcf": {
+    "expression": "11781-7075",
+    "tool_calculated_value": "4706"
+  },
+  "adjusted_less_sbc_2025": {
+    "expression": "20647-2640",
+    "tool_calculated_value": "18007"
+  },
+  "adjusted_less_sbc_h12025": {
+    "expression": "10198-1320",
+    "tool_calculated_value": "8878"
+  },
+  "adjusted_less_sbc_h12026": {
+    "expression": "7287-1311",
+    "tool_calculated_value": "5976"
+  },
+  "q12026_parent": {
+    "expression": "6049-3146",
+    "tool_calculated_value": "2903"
+  },
+  "kling_conditional_economic": {
+    "expression": "66.33+2",
+    "tool_calculated_value": "68.33"
+  },
+  "kling_conditional_vote": {
+    "expression": "52.23+1.57",
+    "tool_calculated_value": "53.8"
+  },
+  "kling_fullcap_postmoney_usd_bn": {
+    "expression": "15+3",
+    "tool_calculated_value": "18"
+  },
+  "fcf_2021": {
+    "expression": "(-5519-7764)/100",
+    "tool_calculated_value": "-132.83"
+  },
+  "fcf_2022": {
+    "expression": "(795-5100)/100",
+    "tool_calculated_value": "-43.05"
+  },
+  "fcf_2023": {
+    "expression": "(20781-4897)/100",
+    "tool_calculated_value": "158.84"
+  },
+  "fcf_2024": {
+    "expression": "(29787-8063)/100",
+    "tool_calculated_value": "217.24"
+  },
+  "exact_decimal_market": {
+    "price_hkd": "33.66",
+    "shares": "4326961215",
+    "CNY_per_HKD": "0.8559",
+    "market_cap_hkd_yi": "1456.4551449690",
+    "market_cap_cny_yi": "1246.57995857896710"
+  }
+}

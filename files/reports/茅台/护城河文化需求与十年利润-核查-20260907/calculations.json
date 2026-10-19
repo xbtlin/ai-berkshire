@@ -1,0 +1,192 @@
+{
+  "as_of": "2026-09-07",
+  "base_year": 2025,
+  "target_year": 2036,
+  "periods": 11,
+  "units": "RMB 100 million except explicitly stated",
+  "source_checks": [
+    {
+      "field": "2025营业收入",
+      "primary": "1688.3810251479",
+      "secondary": "1688.38",
+      "unit": "亿元",
+      "deviation_percent": "0.00006071780508846919588391809007020113512506",
+      "primary_url": "https://www.moutaichina.com/mtgf/articleFileDir/2026-04/17/07cf01cc11a14ea18cfadf9ebe2a4eb3.pdf",
+      "secondary_url": "https://finance.eastmoney.com/a/202604173708539018.html"
+    },
+    {
+      "field": "2025归母净利润",
+      "primary": "823.2006710168",
+      "secondary": "823.20",
+      "unit": "亿元",
+      "deviation_percent": "0.00008151315027126669953290492330981979640344",
+      "primary_url": "https://www.moutaichina.com/mtgf/articleFileDir/2026-04/17/07cf01cc11a14ea18cfadf9ebe2a4eb3.pdf",
+      "secondary_url": "https://finance.eastmoney.com/a/202604173708539018.html"
+    },
+    {
+      "field": "2025茅台酒收入",
+      "primary": "1464.9990648049",
+      "secondary": "1465",
+      "unit": "亿元",
+      "deviation_percent": "0.00006383588375358750206460024030991685778616",
+      "primary_url": "https://www.moutaichina.com/mtgf/articleFileDir/2026-04/17/07cf01cc11a14ea18cfadf9ebe2a4eb3.pdf",
+      "secondary_url": "https://www.nbd.com.cn/articles/2026-04-16/4343145.html"
+    },
+    {
+      "field": "2025系列酒收入",
+      "primary": "222.7467870716",
+      "secondary": "222.75",
+      "unit": "亿元",
+      "deviation_percent": "0.001442412904015191186899195592069382332360",
+      "primary_url": "https://www.moutaichina.com/mtgf/articleFileDir/2026-04/17/07cf01cc11a14ea18cfadf9ebe2a4eb3.pdf",
+      "secondary_url": "https://www.nbd.com.cn/articles/2026-04-16/4343145.html"
+    },
+    {
+      "field": "2025茅台酒销量",
+      "primary": "4.675066",
+      "secondary": "4.68",
+      "unit": "万吨",
+      "deviation_percent": "0.1055386169949258470361701845492662563480",
+      "primary_url": "https://www.moutaichina.com/mtgf/articleFileDir/2026-04/17/07cf01cc11a14ea18cfadf9ebe2a4eb3.pdf",
+      "secondary_url": "https://www.nbd.com.cn/articles/2026-04-16/4343145.html"
+    },
+    {
+      "field": "2026H1营业收入",
+      "primary": "907.0326096448",
+      "secondary": "907.03",
+      "unit": "亿元",
+      "deviation_percent": "0.0002877123459786031566071255599364294067546",
+      "primary_url": "https://static.cninfo.com.cn/finalpage/2026-08-15/1225475868.PDF",
+      "secondary_url": "https://finance.sina.com.cn/stock/aiassist/yjbg/2026-08-14/doc-ininhxpi2824915.shtml"
+    },
+    {
+      "field": "2026H1归母净利润",
+      "primary": "445.1688042186",
+      "secondary": "445.17",
+      "unit": "亿元",
+      "deviation_percent": "0.0002686130269390601599997142859634487260441",
+      "primary_url": "https://static.cninfo.com.cn/finalpage/2026-08-15/1225475868.PDF",
+      "secondary_url": "https://finance.sina.com.cn/stock/aiassist/yjbg/2026-08-14/doc-ininhxpi2824915.shtml"
+    }
+  ],
+  "base_other_revenue": "0.6351732714",
+  "scenarios": {
+    "悲观": {
+      "volume_cagr": "-0.01",
+      "realized_price_cagr": "0",
+      "series_revenue_cagr": "-0.02",
+      "attributable_profit_to_operating_revenue": "0.43",
+      "2036_mt_sales_tonnes": "41857.654309842804561741597534",
+      "2036_mt_revenue": "1311.66970517307136678025174380255851",
+      "2036_series_revenue": "178.36033568701945402423101589676032",
+      "2036_revenue": "1490.66521413149082080448275969931883",
+      "2036_profit": "640.9860420765410529459275866707070969",
+      "profit_cagr_from_2025": "-0.0224880442000003522539075122656899156849",
+      "expression": "(1464.9990648049*((1+(-0.01))*(1+(0)))**11+222.7467870716*(1+(-0.02))**11+0.6351732714)*0.43"
+    },
+    "中性": {
+      "volume_cagr": "0.02",
+      "realized_price_cagr": "0.03",
+      "series_revenue_cagr": "0.03",
+      "attributable_profit_to_operating_revenue": "0.49",
+      "2036_mt_sales_tonnes": "58128.569544493534225994477568",
+      "2036_mt_revenue": "2521.440408810525648825344351491944946567",
+      "2036_series_revenue": "308.33364725955476002304977799119652",
+      "2036_revenue": "2830.409229341480408848394129483141466567",
+      "2036_profit": "1386.900522377325400335713123446739318618",
+      "profit_cagr_from_2025": "0.048562951132509688344857501109062793843",
+      "expression": "(1464.9990648049*((1+(0.02))*(1+(0.03)))**11+222.7467870716*(1+(0.03))**11+0.6351732714)*0.49"
+    },
+    "乐观": {
+      "volume_cagr": "0.03",
+      "realized_price_cagr": "0.05",
+      "series_revenue_cagr": "0.05",
+      "attributable_profit_to_operating_revenue": "0.51",
+      "2036_mt_sales_tonnes": "64713.847050722508910476274102",
+      "2036_mt_revenue": "3468.399452375300129440043533282939959561",
+      "2036_series_revenue": "380.97259682251149723022472460937500",
+      "2036_revenue": "3850.007222469211626670268257892314959561",
+      "2036_profit": "1963.503683459297929601836811525080629376",
+      "profit_cagr_from_2025": "0.082232435184816587132309108982182388391",
+      "expression": "(1464.9990648049*((1+(0.03))*(1+(0.05)))**11+222.7467870716*(1+(0.05))**11+0.6351732714)*0.51"
+    }
+  },
+  "sensitivity": [
+    {
+      "price_cagr": "0.01",
+      "margin": "0.45",
+      "2036_profit": "1053.542607331979099765976656771332287881"
+    },
+    {
+      "price_cagr": "0.01",
+      "margin": "0.49",
+      "2036_profit": "1147.190839094821686411841248484339602359"
+    },
+    {
+      "price_cagr": "0.01",
+      "margin": "0.51",
+      "2036_profit": "1194.014954976242979734773544340843259598"
+    },
+    {
+      "price_cagr": "0.02",
+      "margin": "0.45",
+      "2036_profit": "1158.222416591252673889579037430897082856"
+    },
+    {
+      "price_cagr": "0.02",
+      "margin": "0.49",
+      "2036_profit": "1261.175520288252911568652729646976823554"
+    },
+    {
+      "price_cagr": "0.02",
+      "margin": "0.51",
+      "2036_profit": "1312.652072136753030408189575755016693903"
+    },
+    {
+      "price_cagr": "0.03",
+      "margin": "0.45",
+      "2036_profit": "1273.684153203666183981777358267413659955"
+    },
+    {
+      "price_cagr": "0.03",
+      "margin": "0.49",
+      "2036_profit": "1386.900522377325400335713123446739318618"
+    },
+    {
+      "price_cagr": "0.03",
+      "margin": "0.51",
+      "2036_profit": "1443.508706964155008512681006036402147949"
+    },
+    {
+      "price_cagr": "0.04",
+      "margin": "0.45",
+      "2036_profit": "1400.917206389185088908552573407919246365"
+    },
+    {
+      "price_cagr": "0.04",
+      "margin": "0.49",
+      "2036_profit": "1525.443180290445985700423913266400957153"
+    },
+    {
+      "price_cagr": "0.04",
+      "margin": "0.51",
+      "2036_profit": "1587.706167241076434096359583195641812548"
+    }
+  ],
+  "metrics": {
+    "2025_attributable_margin": "48.75680659492656185508265914184464061536",
+    "2026H1_attributable_margin": "49.07969123545966701994901123288818556361",
+    "2025_mt_price_wan_per_tonne": "313.3643599480520702809329322837367429679",
+    "2025_mt_operating_revenue_share": "86.76945801831479192268892163996826989302",
+    "2025_core_yoy_realized_price_pct_from_rounded_changes": "-0.3375359872927628313312816439988086965200",
+    "2025_foreign_share_alcohol_revenue": "2.873739738294973370006794844841271257551",
+    "2026H1_imoutai_share_operating_revenue": "44.39042628882712322525139881090857015343",
+    "2026H1_direct_share_alcohol_revenue": "57.31616527814865013548562071497744896293",
+    "2025_to_2036_zero_volume_3pct_price_profit": "1145.0663718406318444416254047261500795",
+    "2025_to_2036_double_profit_cagr": "0.065041089439962678190592595398204490092",
+    "2025_to_2036_3000_profit_cagr": "0.124749886693506780021142513382736793746",
+    "base_2036_1pp_margin_profit_effect": "28.30409229341480408848394129483141466567",
+    "base_2036_profit_2026_purchasing_power_at_2pct_inflation": "1137.741485628203639164657297536798939592"
+  },
+  "scope": "conditional scenarios, not statistical confidence intervals or investment recommendations"
+}

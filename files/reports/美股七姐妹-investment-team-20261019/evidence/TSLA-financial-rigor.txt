@@ -1,0 +1,205 @@
+$ python3 tools/financial_rigor.py verify-market-cap --price 354.72 --shares 3949547394.000000 --reported 1388000000000 --currency USD
+============================================================
+市值验算 (Market Cap Verification)
+============================================================
+  股价 (Price):       354.72 USD
+  总股本 (Shares):    3.95B
+  计算市值:           1.40T USD
+  报告市值:           1.39T USD
+  偏差:               0.94%
+
+  ✅ 验证通过, 偏差仅 0.94%
+
+$ python3 tools/financial_rigor.py verify-valuation --price 354.72 --eps 1.08 --bvps 21.9918870025338402104512130333483979 --revenue-per-share 26.2356644099052935684305906571936683 --fcf-per-share 1.45890134367127941344055688017400203
+============================================================
+估值指标验算 (Valuation Verification)
+============================================================
+  当前股价: 354.72
+
+  PE (TTM):  354.72 / 1.08 = 328.44x
+  盈利收益率: 0.30%
+  PB:        354.72 / 21.99188700253384 = 16.13x
+  ROE:       1.08 / 21.99188700253384 = 4.91%
+  P/FCF:     354.72 / 1.4589013436712794 = 243.14x
+  FCF Yield: 0.41%
+  PS:        354.72 / 26.235664409905294 = 13.52x
+
+  ✅ 以上指标均使用精确十进制计算, 无浮点误差
+
+$ python3 tools/financial_rigor.py cross-validate --field TSLA TTM revenue --values {"primary_or_TTM_bridge": 103619.0, "StockAnalysis": 103619.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: TSLA TTM revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 103,619.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 103,619.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 103,619.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 103,619.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field TSLA TTM operating_income --values {"primary_or_TTM_bridge": 4278.0, "StockAnalysis": 4278.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: TSLA TTM operating_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 4,278.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 4,278.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 4,278.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 4,278.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field TSLA TTM net_income --values {"primary_or_TTM_bridge": 3804.0, "StockAnalysis": 3806.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: TSLA TTM net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 3,805.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 3,804.00 百万美元  (偏差 0.03%)
+  ✅ StockAnalysis       : 3,806.00 百万美元  (偏差 0.03%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 3,805.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field TSLA TTM cfo --values {"primary_or_TTM_bridge": 18685.0, "StockAnalysis": 18685.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: TSLA TTM cfo (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 18,685.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 18,685.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 18,685.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 18,685.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field TSLA TTM capex --values {"primary_or_TTM_bridge": 12923.0, "StockAnalysis": 12923.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: TSLA TTM capex (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 12,923.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 12,923.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 12,923.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 12,923.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field TSLA FY 2025 revenue --values {"Macrotrends": 94827.0, "StockAnalysis": 94827.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: TSLA FY 2025 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 94,827.00 百万美元
+
+  ✅ Macrotrends         : 94,827.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 94,827.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 94,827.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field TSLA FY 2024 revenue --values {"Macrotrends": 97690.0, "StockAnalysis": 97690.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: TSLA FY 2024 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 97,690.00 百万美元
+
+  ✅ Macrotrends         : 97,690.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 97,690.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 97,690.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field TSLA FY 2023 revenue --values {"Macrotrends": 96773.0, "StockAnalysis": 96773.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: TSLA FY 2023 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 96,773.00 百万美元
+
+  ✅ Macrotrends         : 96,773.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 96,773.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 96,773.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field TSLA FY 2025 net_income --values {"Macrotrends": 3794.0, "StockAnalysis": 3794.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: TSLA FY 2025 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 3,794.00 百万美元
+
+  ✅ Macrotrends         : 3,794.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 3,794.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 3,794.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field TSLA FY 2024 net_income --values {"Macrotrends": 7091.0, "StockAnalysis": 7130.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: TSLA FY 2024 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 7,110.50 百万美元
+
+  ✅ Macrotrends         : 7,091.00 百万美元  (偏差 0.27%)
+  ✅ StockAnalysis       : 7,130.00 百万美元  (偏差 0.27%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 7,110.50 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field TSLA FY 2023 net_income --values {"Macrotrends": 14997.0, "StockAnalysis": 14999.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: TSLA FY 2023 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 14,998.00 百万美元
+
+  ✅ Macrotrends         : 14,997.00 百万美元  (偏差 0.01%)
+  ✅ StockAnalysis       : 14,999.00 百万美元  (偏差 0.01%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 14,998.00 百万美元
+
+$ python3 tools/financial_rigor.py three-scenario --price 354.72 --eps 0.970660274697073290291133910601690664 --shares 39.49547394 --growth .60 .25 .00 --pe 60 30 15 --years 5 --currency USD
+============================================================
+三情景估值模型 (Three-Scenario Valuation)
+============================================================
+  当前股价: 354.72 USD
+  当前EPS:  0.9706602746970733
+  预测期:   5年
+
+  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅
+  ------------ -------- -------- ---------- ---------- --------
+  乐观 (Bull)         60%      60x      10.18     610.7   +72.2%
+  中性 (Base)         25%      30x       2.96      88.9   -74.9%
+  悲观 (Bear)          0%      15x       0.97      14.6   -95.9%
+
+  ✅ 所有计算使用精确十进制, 结果可审计复现
+
+$ python3 tools/financial_rigor.py calc --expr 18685 - 12923 - 74 - 0 - 3798
+============================================================
+精确计算 (Exact Calculator)
+============================================================
+  表达式: 18685 - 12923 - 74 - 0 - 3798
+  结果:   1,890.00
+  精确值: 1890

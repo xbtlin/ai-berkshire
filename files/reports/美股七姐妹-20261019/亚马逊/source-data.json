@@ -1,0 +1,173 @@
+{
+  "retrieval_date": "2026-10-19 Asia/Shanghai",
+  "price_date": "2026-10-16 US close",
+  "price": 250,
+  "shares_asof": "2026-07-22",
+  "shares": 10786313572,
+  "annual": {
+    "2021": {
+      "revenue": 469822,
+      "net_income": 33364,
+      "gross_profit": 197478,
+      "operating_income": 24879,
+      "ocf": 46327,
+      "capex_gross": 61053,
+      "asset_sales": 5657,
+      "cash_and_securities": 96049
+    },
+    "2022": {
+      "revenue": 513983,
+      "net_income": -2722,
+      "gross_profit": 225152,
+      "operating_income": 13348,
+      "ocf": 46752,
+      "capex_gross": 63645,
+      "asset_sales": 5324,
+      "cash_and_securities": 70026
+    },
+    "2023": {
+      "revenue": 574785,
+      "net_income": 30425,
+      "gross_profit": 270046,
+      "operating_income": 36852,
+      "ocf": 84946,
+      "capex_gross": 52729,
+      "asset_sales": 4596,
+      "cash_and_securities": 86780
+    },
+    "2024": {
+      "revenue": 637959,
+      "net_income": 59248,
+      "gross_profit": 311671,
+      "operating_income": 68593,
+      "ocf": 115877,
+      "capex_gross": 82999,
+      "asset_sales": 5341,
+      "cash_and_securities": 101202
+    },
+    "2025": {
+      "revenue": 716924,
+      "net_income": 77670,
+      "gross_profit": 360510,
+      "operating_income": 79975,
+      "ocf": 139514,
+      "capex_gross": 131819,
+      "asset_sales": 3499,
+      "cash_and_securities": 123029
+    }
+  },
+  "annual_unit": "USD million",
+  "quarters": {
+    "2025Q3": {
+      "NA": [
+        106267,
+        4789,
+        11
+      ],
+      "International": [
+        40896,
+        1199,
+        10
+      ],
+      "AWS": [
+        33006,
+        11434,
+        20
+      ]
+    },
+    "2025Q4": {
+      "NA": [
+        127083,
+        11472,
+        10
+      ],
+      "International": [
+        50724,
+        1040,
+        11
+      ],
+      "AWS": [
+        35579,
+        12465,
+        24
+      ]
+    },
+    "2026Q1": {
+      "NA": [
+        104143,
+        8267,
+        12
+      ],
+      "International": [
+        39789,
+        1424,
+        11
+      ],
+      "AWS": [
+        37587,
+        14161,
+        28
+      ]
+    },
+    "2026Q2": {
+      "NA": [
+        116177,
+        9123,
+        16
+      ],
+      "International": [
+        42197,
+        1717,
+        15
+      ],
+      "AWS": [
+        42232,
+        16621,
+        37
+      ]
+    }
+  },
+  "quarter_units": [
+    "revenue USD million",
+    "operating_income USD million",
+    "FX-neutral YoY % rounded by issuer"
+  ],
+  "ttm": {
+    "revenue": 775680,
+    "net_income": 135281,
+    "operating_income": 93712,
+    "ocf": 161403,
+    "capex_net": 169007,
+    "fcf": -7604,
+    "eps": 12.44
+  },
+  "balance_20260630": {
+    "cash": 78213,
+    "marketable_securities": 44775,
+    "long_term_debt": 128894,
+    "current_long_term_debt": 3330,
+    "short_term_debt": 325,
+    "third_party_debt_including_leases_and_financing": 251635,
+    "equity": 551620
+  },
+  "sources": {
+    "annual_primary": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+    "older_primary": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+    "fy2021_balance_primary": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000005/R7.htm",
+    "quarter_primary": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+    "quarter_filing": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+    "income_secondary": "https://stockanalysis.com/stocks/amzn/financials/",
+    "cashflow_secondary": "https://stockanalysis.com/stocks/amzn/financials/cash-flow-statement/",
+    "balance_secondary": "https://stockanalysis.com/stocks/amzn/financials/balance-sheet/",
+    "quote_secondary": "https://stockanalysis.com/stocks/amzn/statistics/",
+    "price_second_source": "https://finance.yahoo.co.jp/quote/AMZN/history",
+    "macrotrends_revenue": "https://www.macrotrends.net/stocks/charts/AMZN/amazon/revenue/Amazon",
+    "macrotrends_income": "https://www.macrotrends.net/stocks/charts/AMZN/amazon/net-income/"
+  },
+  "gaps": [
+    "Macrotrends body HTTP403: only FY2025 revenue and profit search extracts corroborated; not a complete independent five-year read.",
+    "Quarter segment values issuer source only; no claim of independent quarterly double verification.",
+    "Current exact shares unknown: latest 10-Q cover as of July22 used; third-party rounded 10.79bn agrees.",
+    "Management ownership SEC proxy snapshot; no second independent full voting/economic reconciliation."
+  ]
+}

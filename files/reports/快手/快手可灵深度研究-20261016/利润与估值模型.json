@@ -1,0 +1,333 @@
+{
+  "disclaimer": "All future numbers are conditional assumptions; arithmetic verification is not forecast validation.",
+  "units": "RMB 100 million unless otherwise labeled",
+  "market": {
+    "price_hkd": "28.58",
+    "price_date": "2026-10-15 close; Investing historical and StockAnalysis 16:08 HKT",
+    "shares_yi": "43.04151598",
+    "shares_date": "2026-09-30 issued A+B, HKEX monthly return 2026-10-07; includes 3,922,000 repurchased awaiting cancellation",
+    "rmb_per_hkd": "0.85702",
+    "fx_note": "SAFE central parity 2026-10-15: HKD100=RMB85.702; not an executable FX quote",
+    "ttm_parent_profit_yi": "157.66",
+    "excess_cash_yi": "102.08",
+    "source_note": "Conservative June 30 cash bridge: 116.96+123.58+563.53-273.62-252.48-0.05-25.84-150. Excludes later Kling subscription proceeds, long-term deposits/assets and later cash movements; not a current spot net-cash estimate. TTM parent profit=FY2025 186.17-H1 2025 89.00+H1 2026 60.49. See financial evidence for live verification."
+  },
+  "market_cap_hkd_yi": "1230.1265267084",
+  "market_cap_rmb_yi": "1054.243035919632968",
+  "ttm_pe": "6.68681362374497632880882912596727134",
+  "profit_scenarios": {
+    "bear": {
+      "2029": {
+        "ad_revenue": "750",
+        "live_revenue": "260",
+        "other_ex_kling_revenue": "200",
+        "core_revenue": "1210",
+        "core_margin": "0.10",
+        "core_profit": "121.00",
+        "kling_external_revenue": "40",
+        "kling_net_margin": "-0.20",
+        "kling_standalone_profit": "-8.00",
+        "parent_kling_share": "0.65",
+        "kling_parent_profit": "-5.2000",
+        "unallocated_after_tax_cost": "3",
+        "attributable_profit": "112.8000",
+        "business_revenue_sum_before_control_assessment": "1250"
+      },
+      "2031": {
+        "ad_revenue": "700",
+        "live_revenue": "220",
+        "other_ex_kling_revenue": "190",
+        "core_revenue": "1110",
+        "core_margin": "0.08",
+        "core_profit": "88.80",
+        "kling_external_revenue": "45",
+        "kling_net_margin": "-0.10",
+        "kling_standalone_profit": "-4.50",
+        "parent_kling_share": "0.60",
+        "kling_parent_profit": "-2.7000",
+        "unallocated_after_tax_cost": "4",
+        "attributable_profit": "82.1000",
+        "business_revenue_sum_before_control_assessment": "1155"
+      },
+      "2036": {
+        "ad_revenue": "650",
+        "live_revenue": "150",
+        "other_ex_kling_revenue": "200",
+        "core_revenue": "1000",
+        "core_margin": "0.07",
+        "core_profit": "70.00",
+        "kling_external_revenue": "60",
+        "kling_net_margin": "0",
+        "kling_standalone_profit": "0",
+        "parent_kling_share": "0.50",
+        "kling_parent_profit": "0.00",
+        "unallocated_after_tax_cost": "3",
+        "attributable_profit": "67.00",
+        "business_revenue_sum_before_control_assessment": "1060"
+      }
+    },
+    "base": {
+      "2029": {
+        "ad_revenue": "950",
+        "live_revenue": "310",
+        "other_ex_kling_revenue": "330",
+        "core_revenue": "1590",
+        "core_margin": "0.14",
+        "core_profit": "222.60",
+        "kling_external_revenue": "70",
+        "kling_net_margin": "0.08",
+        "kling_standalone_profit": "5.60",
+        "parent_kling_share": "0.68",
+        "kling_parent_profit": "3.8080",
+        "unallocated_after_tax_cost": "4",
+        "attributable_profit": "222.4080",
+        "business_revenue_sum_before_control_assessment": "1660"
+      },
+      "2031": {
+        "ad_revenue": "1050",
+        "live_revenue": "290",
+        "other_ex_kling_revenue": "410",
+        "core_revenue": "1750",
+        "core_margin": "0.15",
+        "core_profit": "262.50",
+        "kling_external_revenue": "120",
+        "kling_net_margin": "0.12",
+        "kling_standalone_profit": "14.40",
+        "parent_kling_share": "0.65",
+        "kling_parent_profit": "9.3600",
+        "unallocated_after_tax_cost": "5",
+        "attributable_profit": "266.8600",
+        "business_revenue_sum_before_control_assessment": "1870"
+      },
+      "2036": {
+        "ad_revenue": "1300",
+        "live_revenue": "250",
+        "other_ex_kling_revenue": "590",
+        "core_revenue": "2140",
+        "core_margin": "0.16",
+        "core_profit": "342.40",
+        "kling_external_revenue": "300",
+        "kling_net_margin": "0.20",
+        "kling_standalone_profit": "60.00",
+        "parent_kling_share": "0.60",
+        "kling_parent_profit": "36.0000",
+        "unallocated_after_tax_cost": "10",
+        "attributable_profit": "368.4000",
+        "business_revenue_sum_before_control_assessment": "2440"
+      }
+    },
+    "bull": {
+      "2029": {
+        "ad_revenue": "1100",
+        "live_revenue": "360",
+        "other_ex_kling_revenue": "400",
+        "core_revenue": "1860",
+        "core_margin": "0.17",
+        "core_profit": "316.20",
+        "kling_external_revenue": "120",
+        "kling_net_margin": "0.15",
+        "kling_standalone_profit": "18.00",
+        "parent_kling_share": "0.68",
+        "kling_parent_profit": "12.2400",
+        "unallocated_after_tax_cost": "5",
+        "attributable_profit": "323.4400",
+        "business_revenue_sum_before_control_assessment": "1980"
+      },
+      "2031": {
+        "ad_revenue": "1300",
+        "live_revenue": "370",
+        "other_ex_kling_revenue": "530",
+        "core_revenue": "2200",
+        "core_margin": "0.19",
+        "core_profit": "418.00",
+        "kling_external_revenue": "280",
+        "kling_net_margin": "0.23",
+        "kling_standalone_profit": "64.40",
+        "parent_kling_share": "0.65",
+        "kling_parent_profit": "41.8600",
+        "unallocated_after_tax_cost": "8",
+        "attributable_profit": "451.8600",
+        "business_revenue_sum_before_control_assessment": "2480"
+      },
+      "2036": {
+        "ad_revenue": "1800",
+        "live_revenue": "400",
+        "other_ex_kling_revenue": "900",
+        "core_revenue": "3100",
+        "core_margin": "0.20",
+        "core_profit": "620.00",
+        "kling_external_revenue": "1000",
+        "kling_net_margin": "0.28",
+        "kling_standalone_profit": "280.00",
+        "parent_kling_share": "0.60",
+        "kling_parent_profit": "168.0000",
+        "unallocated_after_tax_cost": "15",
+        "attributable_profit": "773.0000",
+        "business_revenue_sum_before_control_assessment": "4100"
+      }
+    }
+  },
+  "dcf_cash_assumptions": {
+    "bear": {
+      "discount": ".15",
+      "terminal_growth": "0",
+      "flows": [
+        20,
+        20,
+        25,
+        30,
+        35,
+        35,
+        38,
+        40,
+        40,
+        40
+      ]
+    },
+    "base": {
+      "discount": ".12",
+      "terminal_growth": ".02",
+      "flows": [
+        -20,
+        30,
+        90,
+        120,
+        150,
+        180,
+        210,
+        235,
+        255,
+        275
+      ]
+    },
+    "bull": {
+      "discount": ".11",
+      "terminal_growth": ".03",
+      "flows": [
+        30,
+        80,
+        160,
+        230,
+        310,
+        380,
+        450,
+        510,
+        570,
+        620
+      ]
+    }
+  },
+  "valuations": {
+    "bear": {
+      "explicit_pv": "147.256895662101775809399389200254637",
+      "terminal_pv": "65.9159216324975068695794058420197682",
+      "equity_rmb_yi": "315.252817294599282678978795042274405",
+      "price_hkd": "8.54634577729996211569240557094734440",
+      "terminal_fraction": "0.309213540774307164889796214928922809"
+    },
+    "base": {
+      "explicit_pv": "693.092785579525934733344645511755971",
+      "terminal_pv": "903.134928636902876878846319846061982",
+      "equity_rmb_yi": "1698.30771421642881161219096535781795",
+      "price_hkd": "46.0402704296409080787933441924143573",
+      "terminal_fraction": "0.565793289136219638204415705718885172"
+    },
+    "bull": {
+      "explicit_pv": "1626.81929073357495610561054375184657",
+      "terminal_pv": "2811.31260181718450415665382186987258",
+      "equity_rmb_yi": "4540.21189255075946026226436562171915",
+      "price_hkd": "123.082867486916470486667071647033163",
+      "terminal_fraction": "0.633445032703031859297281018033885937"
+    }
+  },
+  "sensitivity": {
+    ".10": {
+      "0": "52.7231167004526080513398640383332985",
+      ".02": "60.6273549027257348312512331403821360",
+      ".03": "66.2732393329208253883307824989884483"
+    },
+    ".12": {
+      "0": "41.5596235029253876050637876602079928",
+      ".02": "46.0402704296409080787933441924143573",
+      ".03": "49.0273683807845883946130485472186005"
+    },
+    ".14": {
+      "0": "33.8348585196957243142466267583408693",
+      ".02": "36.5640325455084839452649362972859364",
+      ".03": "38.3007796528438764377311332766146156"
+    }
+  },
+  "second_half_2026_net_cash_change_assumed_yi": "0 excluding dividend already deducted; unmodeled funding/operating/investing/buyback changes",
+  "price_effect_per_100_yi_net_cash": "2.71094984991475058066069497582906173",
+  "reverse_dcf_flat_perpetual_cash_yi": "114.25956431035595616",
+  "terminal_pe_comparison": {
+    "bear": {
+      "pe": 8,
+      "price_hkd": "14.5306911955430631123413250704437709",
+      "price_only_cagr": "-0.065407256080611146371448665739926560"
+    },
+    "base": {
+      "pe": 12,
+      "price_hkd": "119.845670965031293669848003491451161",
+      "price_only_cagr": "0.15413340854425166869067921470352732"
+    },
+    "bull": {
+      "pe": 18,
+      "price_hkd": "377.201562117138395793129098936855649",
+      "price_only_cagr": "0.29434820515145547721634606048711659"
+    }
+  },
+  "unit_economics": {
+    "illustration_only": true,
+    "model_A_delivered_cost": "15",
+    "model_B_delivered_cost": "30.6666666666666666666666666666666667",
+    "contribution_before": "40",
+    "contribution_after_gpu_half_price_cut_40pct": "20"
+  },
+  "kling_bottom_up": {
+    "direct_seats": 3000000,
+    "annual_direct_arpu_rmb": 3600,
+    "enterprise_equivalent_accounts": 128000,
+    "enterprise_annual_arpu_rmb": 150000,
+    "direct_revenue_yi": "108",
+    "enterprise_revenue_yi": "192"
+  },
+  "profit_to_cash_bridge": {
+    "description": "Illustrative attributable profit to operating cash bridge, rounded inputs; lease cash netted in noncash_addback. Training R&D and SBC remain expensed.",
+    "2029": {
+      "net_profit": "222.4080",
+      "after_tax_finance_addback": "15",
+      "noncash_addback_net_leases": "90",
+      "capex": "200",
+      "working_capital_other_retention": "37",
+      "operating_cash": "90.4080"
+    },
+    "2031": {
+      "net_profit": "266.8600",
+      "after_tax_finance_addback": "15",
+      "noncash_addback_net_leases": "105",
+      "capex": "195",
+      "working_capital_other_retention": "42",
+      "operating_cash": "149.8600"
+    },
+    "2036": {
+      "net_profit": "368.4000",
+      "after_tax_finance_addback": "15",
+      "noncash_addback_net_leases": "120",
+      "capex": "190",
+      "working_capital_other_retention": "38",
+      "operating_cash": "275.4000"
+    }
+  },
+  "private_round_hurdle": {
+    "assumptions": "Same-rights ordinary-equity comparison only; no dilution, no distributions, unchanged FX, 25x 2036 P/E. Not a preferred-stock valuation.",
+    "postmoney_usd_yi": "180",
+    "postmoney_rmb_yi": "1210.5540",
+    "base_terminal_value_rmb_yi": "1500",
+    "base_10y_price_cagr": "0.02167016024557134533873294155586952",
+    "profit_needed_for_15pct_cagr": "195.894643967686138851562500",
+    "revenue_needed_at_20pct_margin": "979.4732198384306942578125"
+  },
+  "core_2036_margin_1pp_profit_effect_yi": "21.40",
+  "kling_2036_share_10pp_profit_effect_yi": "6.00"
+}

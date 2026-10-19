@@ -1,0 +1,58 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：07-特斯拉-TSLA-研究报告.md
+======================================================================
+
+  ✅ 通过 [ 7] 营业收入 · TTM                           报告:       103.62
+                                                    https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm ; latest annual + YTD current - YTD prior: 103.62 (偏差 0.00%)  |  https://stockanalysis.com/stocks/tsla/financials/: 103.62 (偏差 0.00%)
+  ✅ 通过 [ 9] 毛利 · FY 2024                         报告:        17.45
+                                                    https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm: 17.45 (偏差 0.00%)  |  https://stockanalysis.com/stocks/tsla/financials/: 17.45 (偏差 0.00%)
+  ✅ 通过 [ 8] 毛利 · FY 2023                         报告:        17.66
+                                                    https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm: 17.66 (偏差 0.00%)  |  https://stockanalysis.com/stocks/tsla/financials/: 17.66 (偏差 0.00%)
+  ✅ 通过 [23] 经营现金流 CFO · TTM                      报告:        18.68
+                                                    https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm ; latest annual + YTD current - YTD prior: 18.68 (偏差 0.00%)  |  https://stockanalysis.com/stocks/tsla/financials/: 18.68 (偏差 0.00%)
+  ✅ 通过 [27] 现金资本开支 · TTM                         报告:        12.92
+                                                    https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm ; latest annual + YTD current - YTD prior: 12.92 (偏差 0.00%)  |  https://stockanalysis.com/stocks/tsla/financials/: 12.92 (偏差 0.00%)
+  ✅ 通过 [24] 现金资本开支 · FY 2023                     报告:         8.90
+                                                    https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm: 8.90 (偏差 0.00%)  |  https://stockanalysis.com/stocks/tsla/financials/: 8.90 (偏差 0.00%)
+  ✅ 通过 [29] 基础FCF（CFO−现金CapEx） · FY 2024         报告:         3.58
+                                                    https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm: 3.58 (偏差 0.00%)  |  https://stockanalysis.com/stocks/tsla/financials/: 3.58 (偏差 0.00%)
+  ✅ 通过 [36] 稀释EPS（美元） · FY 2023                  报告:         4.30
+                                                    https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm: 4.30 (偏差 0.00%)  |  https://stockanalysis.com/stocks/tsla/financials/: 4.30 (偏差 0.00%)
+  ✅ 通过 [51] 基础FCF · 金额                           报告:         5.76
+                                                    https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm; cash bridge: 5.76 (偏差 0.00%)
+  ✅ 通过 [56] 公开已发行股数（十亿） · 复算结果                   报告:         3.95
+                                                    shares-assets-review.md: 3.95 (偏差 0.00%)
+  ✅ 通过 [58] 价格/TTM稀释EPS · 复算结果                   报告:       328.44 倍
+                                                    价格/稀释EPS; 原始输入见 financial-verification.json: 328.44 (偏差 0.00%)
+  ✅ 通过 [60] PS · 复算结果                            报告:        13.52 倍
+                                                    市值/收入; 原始输入见 financial-verification.json: 13.52 (偏差 0.00%)
+  ✅ 通过 [63] 研究现金代理收益率 · 复算结果                     报告:         0.10 %
+                                                    现金桥/市值; 原始输入见 financial-verification.json: 0.10 (偏差 0.00%)
+  ✅ 通过 [71] AAPL · 营业利润率                         报告:        33.17 %
+                                                    同组表按各公司原始输入重算: 33.17 (偏差 0.00%)
+  ✅ 通过 [76] MSFT · GAAP PE                       报告:        29.47
+                                                    同组表按各公司原始输入重算: 29.47 (偏差 0.00%)
+  ✅ 通过 [109] 基准 · 今天每股价值USD                       报告:        56.61
+                                                    独立Decimal逐年现值+终值+净资产/情景股份: 56.61 (偏差 0.00%)
+  ✅ 通过 [108] 基准 · 终值增长                            报告:         2.50 %
+                                                    valuation-assumptions.json: 2.50 (偏差 0.00%)
+  ✅ 通过 [130] 悲观 · 退出EV/NOPAT                      报告:        15.00
+                                                    (TTM营业利润×80%×增长因子×退出倍数+净金融资产)/情景股份: 15.00 (偏差 0.00%)
+  ✅ 通过 [140] 已持有且高度集中 · 行动规则                      报告:        57.00
+                                                    独立DCF基准值取整: 57.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 19  |  通过: 19  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 19,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 19,
+  "fail_items": [],
+  "warn_items": []
+}

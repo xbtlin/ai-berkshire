@@ -1,0 +1,100 @@
+{
+  "cutoff": "2026-10-19 Asia/Shanghai",
+  "model_status": "Illustrative assumptions, not predictions or observations",
+  "unit_economics_per_original_100_cash_spend": [
+    {
+      "name": "original",
+      "gross": "100.000000",
+      "channel": "15.000000",
+      "acquisition": "55.000000",
+      "production": "15.000000",
+      "other": "10",
+      "pretax_profit": "5.000000"
+    },
+    {
+      "name": "ai_static",
+      "gross": "100.000000",
+      "channel": "15.000000",
+      "acquisition": "55.000000",
+      "production": "4.500000",
+      "other": "10",
+      "pretax_profit": "15.500000"
+    },
+    {
+      "name": "ai_competition",
+      "gross": "90.000000",
+      "channel": "13.500000",
+      "acquisition": "60.000000",
+      "production": "4.500000",
+      "other": "10",
+      "pretax_profit": "2.000000"
+    }
+  ],
+  "production_cost_decline_pct": "70.000000",
+  "total_cost_decline_pct": "11.052632",
+  "iaa_monthly_revenue_rmb": "2.880000",
+  "iaa_monthly_revenue_rmb_low_ecpm": "1.440000",
+  "generation_rmb_per_finished_minute_p25": "240.000000",
+  "generation_rmb_per_finished_minute_p10": "600.000000",
+  "global_scenarios": [
+    {
+      "name": "bear",
+      "reach_factor": "1.25",
+      "hours_factor": "1.20",
+      "revenue_per_hour_factor": "0.90",
+      "revenue_factor": "1.350000",
+      "cagr": "0.030465",
+      "year2036_usd_bn": "18.900000",
+      "ai_output_share": "0.50",
+      "ai_watch_time_share": "0.20"
+    },
+    {
+      "name": "base",
+      "reach_factor": "1.60",
+      "hours_factor": "1.35",
+      "revenue_per_hour_factor": "1.00",
+      "revenue_factor": "2.160000",
+      "cagr": "0.080054",
+      "year2036_usd_bn": "30.240000",
+      "ai_output_share": "0.75",
+      "ai_watch_time_share": "0.45"
+    },
+    {
+      "name": "bull",
+      "reach_factor": "2.00",
+      "hours_factor": "1.60",
+      "revenue_per_hour_factor": "1.10",
+      "revenue_factor": "3.520000",
+      "cagr": "0.134108",
+      "year2036_usd_bn": "49.280000",
+      "ai_output_share": "0.90",
+      "ai_watch_time_share": "0.70"
+    }
+  ],
+  "scenario_anchor_note": "USD14bn is Omdia's 2026 forecast, not actual full-year revenue. Scenarios do not validate the anchor.",
+  "incremental_value_thresholds_rmb_100m": [
+    {
+      "valuation_premium": "10",
+      "required_annual_owner_fcf_at_20x": "0.500000",
+      "required_revenue_at_15pct_cash_margin": "3.333333"
+    },
+    {
+      "valuation_premium": "30",
+      "required_annual_owner_fcf_at_20x": "1.500000",
+      "required_revenue_at_15pct_cash_margin": "10.000000"
+    },
+    {
+      "valuation_premium": "100",
+      "required_annual_owner_fcf_at_20x": "5.000000",
+      "required_revenue_at_15pct_cash_margin": "33.333333"
+    }
+  ],
+  "employment_output_5x_labor_down80pct": "1.000000",
+  "employment_output_2x_labor_down80pct": "0.400000",
+  "derived_company_metrics_pct": {
+    "ireader_2026h1_gross_margin": "65.634924",
+    "ireader_2026h1_selling_ratio": "62.165090",
+    "ireader_2026h1_gross_less_selling_ratio": "3.469833",
+    "ireader_2026h1_derivatives_ratio_rounded_inputs": "66.437193"
+  }
+}

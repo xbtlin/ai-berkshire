@@ -1,0 +1,205 @@
+$ python3 tools/financial_rigor.py verify-market-cap --price 214.13 --shares 24147000000 --reported 5161000000000 --currency USD
+============================================================
+市值验算 (Market Cap Verification)
+============================================================
+  股价 (Price):       214.13 USD
+  总股本 (Shares):    24.15B
+  计算市值:           5.17T USD
+  报告市值:           5.16T USD
+  偏差:               0.19%
+
+  ✅ 验证通过, 偏差仅 0.19%
+
+$ python3 tools/financial_rigor.py verify-valuation --price 214.13 --eps 7.91 --bvps 9.48291713256305131072182879860852280 --revenue-per-share 12.5469002360541682196546154801838738 --fcf-per-share 5.25970099805358843748705843375988736
+============================================================
+估值指标验算 (Valuation Verification)
+============================================================
+  当前股价: 214.13
+
+  PE (TTM):  214.13 / 7.91 = 27.07x
+  盈利收益率: 3.69%
+  PB:        214.13 / 9.48291713256305 = 22.58x
+  ROE:       7.91 / 9.48291713256305 = 83.41%
+  P/FCF:     214.13 / 5.259700998053589 = 40.71x
+  FCF Yield: 2.46%
+  PS:        214.13 / 12.546900236054169 = 17.07x
+
+  ✅ 以上指标均使用精确十进制计算, 无浮点误差
+
+$ python3 tools/financial_rigor.py cross-validate --field NVDA TTM revenue --values {"primary_or_TTM_bridge": 302970.0, "StockAnalysis": 302970.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: NVDA TTM revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 302,970.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 302,970.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 302,970.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 302,970.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field NVDA TTM operating_income --values {"primary_or_TTM_bridge": 197579.0, "StockAnalysis": 197579.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: NVDA TTM operating_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 197,579.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 197,579.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 197,579.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 197,579.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field NVDA TTM net_income --values {"primary_or_TTM_bridge": 192880.0, "StockAnalysis": 192880.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: NVDA TTM net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 192,880.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 192,880.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 192,880.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 192,880.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field NVDA TTM cfo --values {"primary_or_TTM_bridge": 134360.0, "StockAnalysis": 134360.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: NVDA TTM cfo (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 134,360.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 134,360.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 134,360.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 134,360.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field NVDA TTM capex --values {"primary_or_TTM_bridge": 7354.0, "StockAnalysis": 7354.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: NVDA TTM capex (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 7,354.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 7,354.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 7,354.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 7,354.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field NVDA FY 2026 revenue --values {"Macrotrends": 215938.0, "StockAnalysis": 215938.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: NVDA FY 2026 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 215,938.00 百万美元
+
+  ✅ Macrotrends         : 215,938.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 215,938.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 215,938.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field NVDA FY 2025 revenue --values {"Macrotrends": 130497.0, "StockAnalysis": 130497.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: NVDA FY 2025 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 130,497.00 百万美元
+
+  ✅ Macrotrends         : 130,497.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 130,497.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 130,497.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field NVDA FY 2024 revenue --values {"Macrotrends": 60922.0, "StockAnalysis": 60922.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: NVDA FY 2024 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 60,922.00 百万美元
+
+  ✅ Macrotrends         : 60,922.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 60,922.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 60,922.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field NVDA FY 2026 net_income --values {"Macrotrends": 120067.0, "StockAnalysis": 120067.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: NVDA FY 2026 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 120,067.00 百万美元
+
+  ✅ Macrotrends         : 120,067.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 120,067.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 120,067.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field NVDA FY 2025 net_income --values {"Macrotrends": 72880.0, "StockAnalysis": 72880.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: NVDA FY 2025 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 72,880.00 百万美元
+
+  ✅ Macrotrends         : 72,880.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 72,880.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 72,880.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field NVDA FY 2024 net_income --values {"Macrotrends": 29760.0, "StockAnalysis": 29760.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: NVDA FY 2024 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 29,760.00 百万美元
+
+  ✅ Macrotrends         : 29,760.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 29,760.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 29,760.00 百万美元
+
+$ python3 tools/financial_rigor.py three-scenario --price 214.13 --eps 6.54587319335735288027498239946991345 --shares 241.47 --growth .30 .22 .05 --pe 28 22 15 --years 5 --currency USD
+============================================================
+三情景估值模型 (Three-Scenario Valuation)
+============================================================
+  当前股价: 214.13 USD
+  当前EPS:  6.545873193357353
+  预测期:   5年
+
+  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅
+  ------------ -------- -------- ---------- ---------- --------
+  乐观 (Bull)         30%      28x      24.30     680.5  +217.8%
+  中性 (Base)         22%      22x      17.69     389.2   +81.8%
+  悲观 (Bear)          5%      15x       8.35     125.3   -41.5%
+
+  ✅ 所有计算使用精确十进制, 结果可审计复现
+
+$ python3 tools/financial_rigor.py calc --expr 134360 - 7354 - 0 - 120 - 7241
+============================================================
+精确计算 (Exact Calculator)
+============================================================
+  表达式: 134360 - 7354 - 0 - 120 - 7241
+  结果:   119,645.00
+  精确值: 119645

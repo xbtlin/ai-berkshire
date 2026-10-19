@@ -1,0 +1,159 @@
+{
+  "retrieved": "2026-10-19 Asia/Shanghai",
+  "method": "web search/open/find; excerpts reviewed in agent session, structured selected facts retained in data.json; no complete raw page archive claimed",
+  "sources": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/meta/financials/?p=ttm",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/meta/financials/cash-flow-statement/",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://investor.atmeta.com/files/doc_financials/2025/q3/Meta-09-30-2025-Exhibit-99-1-Final.pdf",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-12312025xexhibit991.htm",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://investor.atmeta.com/stock-info/",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/meta/history/",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/meta/statistics/",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/meta/market-cap/",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/META/meta-platforms/market-cap",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://www.reuters.com/sustainability/sustainable-finance-reporting/metas-18-billion-lesson-ignoring-shareholders-2026-09-02/",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://www.iab.com/news/digital-ad-revenue-climbs-to-nearly-300b-as-iab-celebrates-30-year-anniversary/",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Third-Quarter-2026-Results/default.aspx",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+      "status": "read_or_search_excerpt",
+      "note": "Company stock-info and Macrotrends market-cap observed in search excerpt; other listed sources read using open/find where available."
+    },
+    {
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2022/Meta-Reports-Fourth-Quarter-and-Full-Year-2021-Results/default.aspx",
+      "status": "open_and_find",
+      "facts": {
+        "cash": 16601,
+        "marketable": 31397
+      }
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/meta/financials/balance-sheet/",
+      "status": "open_and_find",
+      "facts": {
+        "Q2_long_term_debt": 83664,
+        "Q2_current_operating_lease": 2425,
+        "Q2_noncurrent_operating_lease": 26229,
+        "Q2_equity": 261221
+      }
+    }
+  ],
+  "failed": [
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/META/meta-platforms/revenue",
+      "error": "Internal Error on web open"
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/META/meta-platforms/net-income",
+      "error": "Internal Error on web open"
+    }
+  ],
+  "explicit_conflicts": {
+    "2022_operating_income": {
+      "SEC_GAAP": 28944,
+      "StockAnalysis": 33555
+    },
+    "2022_gross_margin": {
+      "SEC_derived": 78.3472973784,
+      "StockAnalysis": 79.63
+    },
+    "2025_FCF": {
+      "company": 43585,
+      "StockAnalysis_ex_finance_leases": 46109
+    },
+    "2026Q1_revenue": {
+      "Q1_release": 56311,
+      "Q2_H1_minus_Q2": 56310
+    }
+  },
+  "not_retrieved": [
+    "Macrotrends full financial series",
+    "same-date management ownership independently verified",
+    "standalone Muse unit economics",
+    "complete peer same-date valuation",
+    "masters original quotations"
+  ]
+}

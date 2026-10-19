@@ -1,0 +1,205 @@
+$ python3 tools/financial_rigor.py verify-market-cap --price 343.46 --shares 14594180000.000000 --reported 5014000000000 --currency USD
+============================================================
+市值验算 (Market Cap Verification)
+============================================================
+  股价 (Price):       343.46 USD
+  总股本 (Shares):    14.59B
+  计算市值:           5.01T USD
+  报告市值:           5.01T USD
+  偏差:               0.03%
+
+  ✅ 验证通过, 偏差仅 0.03%
+
+$ python3 tools/financial_rigor.py verify-valuation --price 343.46 --eps 8.72 --bvps 7.36732039758314615826308843662336630 --revenue-per-share 31.9869290360952105565369208821598747 --fcf-per-share 9.36558271859056144298617668138943058
+============================================================
+估值指标验算 (Valuation Verification)
+============================================================
+  当前股价: 343.46
+
+  PE (TTM):  343.46 / 8.72 = 39.39x
+  盈利收益率: 2.54%
+  PB:        343.46 / 7.367320397583146 = 46.62x
+  ROE:       8.72 / 7.367320397583146 = 118.36%
+  P/FCF:     343.46 / 9.365582718590561 = 36.67x
+  FCF Yield: 2.73%
+  PS:        343.46 / 31.986929036095212 = 10.74x
+
+  ✅ 以上指标均使用精确十进制计算, 无浮点误差
+
+$ python3 tools/financial_rigor.py cross-validate --field AAPL TTM revenue --values {"primary_or_TTM_bridge": 466823.0, "StockAnalysis": 466823.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: AAPL TTM revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 466,823.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 466,823.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 466,823.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 466,823.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field AAPL TTM operating_income --values {"primary_or_TTM_bridge": 154859.0, "StockAnalysis": 154859.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: AAPL TTM operating_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 154,859.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 154,859.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 154,859.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 154,859.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field AAPL TTM net_income --values {"primary_or_TTM_bridge": 128930.0, "StockAnalysis": 128930.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: AAPL TTM net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 128,930.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 128,930.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 128,930.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 128,930.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field AAPL TTM cfo --values {"primary_or_TTM_bridge": 146724.0, "StockAnalysis": 146724.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: AAPL TTM cfo (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 146,724.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 146,724.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 146,724.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 146,724.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field AAPL TTM capex --values {"primary_or_TTM_bridge": 10041.0, "StockAnalysis": 10041.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: AAPL TTM capex (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 10,041.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 10,041.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 10,041.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 10,041.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field AAPL FY 2025 revenue --values {"Macrotrends": 416161.0, "StockAnalysis": 416161.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: AAPL FY 2025 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 416,161.00 百万美元
+
+  ✅ Macrotrends         : 416,161.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 416,161.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 416,161.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field AAPL FY 2024 revenue --values {"Macrotrends": 391035.0, "StockAnalysis": 391035.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: AAPL FY 2024 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 391,035.00 百万美元
+
+  ✅ Macrotrends         : 391,035.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 391,035.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 391,035.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field AAPL FY 2023 revenue --values {"Macrotrends": 383285.0, "StockAnalysis": 383285.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: AAPL FY 2023 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 383,285.00 百万美元
+
+  ✅ Macrotrends         : 383,285.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 383,285.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 383,285.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field AAPL FY 2025 net_income --values {"Macrotrends": 112010.0, "StockAnalysis": 112010.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: AAPL FY 2025 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 112,010.00 百万美元
+
+  ✅ Macrotrends         : 112,010.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 112,010.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 112,010.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field AAPL FY 2024 net_income --values {"Macrotrends": 93736.0, "StockAnalysis": 93736.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: AAPL FY 2024 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 93,736.00 百万美元
+
+  ✅ Macrotrends         : 93,736.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 93,736.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 93,736.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field AAPL FY 2023 net_income --values {"Macrotrends": 96995.0, "StockAnalysis": 96995.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: AAPL FY 2023 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 96,995.00 百万美元
+
+  ✅ Macrotrends         : 96,995.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 96,995.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 96,995.00 百万美元
+
+$ python3 tools/financial_rigor.py three-scenario --price 343.46 --eps 8.48880855245036034912547330511203781 --shares 145.941800 --growth .12 .07 .02 --pe 30 25 18 --years 5 --currency USD
+============================================================
+三情景估值模型 (Three-Scenario Valuation)
+============================================================
+  当前股价: 343.46 USD
+  当前EPS:  8.48880855245036
+  预测期:   5年
+
+  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅
+  ------------ -------- -------- ---------- ---------- --------
+  乐观 (Bull)         12%      30x      14.96     448.8   +30.7%
+  中性 (Base)          7%      25x      11.91     297.6   -13.3%
+  悲观 (Bear)          2%      18x       9.37     168.7   -50.9%
+
+  ✅ 所有计算使用精确十进制, 结果可审计复现
+
+$ python3 tools/financial_rigor.py calc --expr 146724 - 10041 - 0 - 0 - 13706
+============================================================
+精确计算 (Exact Calculator)
+============================================================
+  表达式: 146724 - 10041 - 0 - 0 - 13706
+  结果:   122,977.00
+  精确值: 122977

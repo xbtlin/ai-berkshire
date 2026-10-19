@@ -1,0 +1,383 @@
+{
+  "scope": "Arithmetic only; assumptions are not validated",
+  "checks": [
+    {
+      "company": "腾讯",
+      "scenario": "悲观",
+      "type": "DCF",
+      "recomputed": "195.607257438847387581617046359182151939050595",
+      "reported": "195.607257438847387581617046359182152",
+      "absolute_difference": "6.0949405E-35",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "腾讯",
+      "scenario": "中性",
+      "type": "DCF",
+      "recomputed": "468.971133119105336750170272791409486562616170",
+      "reported": "468.971133119105336750170272791409486",
+      "absolute_difference": "5.62616170E-34",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "腾讯",
+      "scenario": "乐观",
+      "type": "DCF",
+      "recomputed": "820.508532760152472340081487505677353330581647",
+      "reported": "820.508532760152472340081487505677354",
+      "absolute_difference": "6.69418353E-34",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "腾讯",
+      "scenario": "悲观",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "265.311837268086629059440727080736854086818322",
+      "reported": "265.311837268086629059440727080736855",
+      "absolute_difference": "9.13181678E-34",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "腾讯",
+      "scenario": "中性",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "480.638562778030981771045439815336304968616141",
+      "reported": "480.638562778030981771045439815336305",
+      "absolute_difference": "3.1383859E-35",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "腾讯",
+      "scenario": "乐观",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "716.044191917660266968557945580694080675844860",
+      "reported": "716.044191917660266968557945580694081",
+      "absolute_difference": "3.24155140E-34",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "拼多多",
+      "scenario": "悲观",
+      "type": "DCF",
+      "recomputed": "39.7996991417733573666465401788626119978348785",
+      "reported": "39.7996991417733573666465401788626119",
+      "absolute_difference": "9.78348785E-35",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "拼多多",
+      "scenario": "中性",
+      "type": "DCF",
+      "recomputed": "109.091553554158804868181892438301395434858851",
+      "reported": "109.091553554158804868181892438301395",
+      "absolute_difference": "4.34858851E-34",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "拼多多",
+      "scenario": "乐观",
+      "type": "DCF",
+      "recomputed": "194.333623857140124962192476523752940127558796",
+      "reported": "194.333623857140124962192476523752940",
+      "absolute_difference": "1.27558796E-34",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "拼多多",
+      "scenario": "悲观",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "33.5515185204013864421918602893750149091110422",
+      "reported": "33.5515185204013864421918602893750149",
+      "absolute_difference": "9.1110422E-36",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "拼多多",
+      "scenario": "中性",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "83.7234651967423485756546884072830233148650550",
+      "reported": "83.7234651967423485756546884072830230",
+      "absolute_difference": "3.148650550E-34",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "拼多多",
+      "scenario": "乐观",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "138.558106442770367582174385339891419595025156",
+      "reported": "138.558106442770367582174385339891419",
+      "absolute_difference": "5.95025156E-34",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "快手",
+      "scenario": "bear",
+      "type": "DCF",
+      "recomputed": "5.25744594027862798177342370313514863689437789",
+      "reported": "5.2574459402786279817734237031351486368",
+      "absolute_difference": "9.437789E-38",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "快手",
+      "scenario": "bear",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "5.20276095408844154078149125833642394661059328",
+      "reported": "5.2027609540884415407814912583364239467",
+      "absolute_difference": "8.940672E-38",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "快手",
+      "scenario": "base",
+      "type": "DCF",
+      "recomputed": "28.1824573390858701335186194415843073611605017",
+      "reported": "28.182457339085870133518619441584307360",
+      "absolute_difference": "1.1605017E-36",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "快手",
+      "scenario": "base",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "27.3206783846926965259292796226751136864899781",
+      "reported": "27.320678384692696525929279622675113685",
+      "absolute_difference": "1.4899781E-36",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "快手",
+      "scenario": "bull",
+      "type": "DCF",
+      "recomputed": "70.4860885383143424417008433880739375463604563",
+      "reported": "70.486088538314342441700843388073937547",
+      "absolute_difference": "6.395437E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "快手",
+      "scenario": "bull",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "69.1099074163253390644696873433888898414366652",
+      "reported": "69.109907416325339064469687343388889842",
+      "absolute_difference": "5.633348E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "美团",
+      "scenario": "bear",
+      "type": "DCF",
+      "recomputed": "14.8133670062397554525039081802121201477291377",
+      "reported": "14.813367006239755452503908180212120147",
+      "absolute_difference": "7.291377E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "美团",
+      "scenario": "bear",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "12.9442561633687049053240773073797895224758426",
+      "reported": "12.944256163368704905324077307379789522",
+      "absolute_difference": "4.758426E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "美团",
+      "scenario": "base",
+      "type": "DCF",
+      "recomputed": "65.9591601786914554817298504590375664140843806",
+      "reported": "65.959160178691455481729850459037566413",
+      "absolute_difference": "1.0843806E-36",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "美团",
+      "scenario": "base",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "61.7880713216927569336508905419517785491098499",
+      "reported": "61.788071321692756933650890541951778549",
+      "absolute_difference": "1.098499E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "美团",
+      "scenario": "bull",
+      "type": "DCF",
+      "recomputed": "155.874783023277657268739562987266134270243059",
+      "reported": "155.87478302327765726873956298726613427",
+      "absolute_difference": "2.43059E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "美团",
+      "scenario": "bull",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "150.781132639970034807782580831657823693492476",
+      "reported": "150.78113263997003480778258083165782369",
+      "absolute_difference": "3.492476E-36",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "茅台",
+      "scenario": "悲观",
+      "type": "DCF",
+      "recomputed": "506.894453850507481896163604941475755273704516",
+      "reported": "506.8944538505074818961636049414757552736",
+      "absolute_difference": "1.04516E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "茅台",
+      "scenario": "中性",
+      "type": "DCF",
+      "recomputed": "974.768453788539500430918126636743377991383468",
+      "reported": "974.7684537885395004309181266367433779917",
+      "absolute_difference": "3.16532E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "茅台",
+      "scenario": "乐观",
+      "type": "DCF",
+      "recomputed": "1587.66994196285239475187368658742778990633132",
+      "reported": "1587.669941962852394751873686587427789906",
+      "absolute_difference": "3.3132E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "茅台",
+      "scenario": "悲观",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "761.759366707054065655093532782276446542354118",
+      "reported": "761.7593667070540656550935327822764465422",
+      "absolute_difference": "1.54118E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "茅台",
+      "scenario": "中性",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "1122.12842237492370795193110062203671580055941",
+      "reported": "1122.128422374923707951931100622036715800",
+      "absolute_difference": "5.5941E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "茅台",
+      "scenario": "乐观",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "1559.34568393572174131781729869048914854559343",
+      "reported": "1559.345683935721741317817298690489148545",
+      "absolute_difference": "5.9343E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "泡泡玛特",
+      "scenario": "bear",
+      "type": "DCF",
+      "recomputed": "45.8651017951435591066392834586664058970168097",
+      "reported": "45.86510179514355910663928345866640589701",
+      "absolute_difference": "6.8097E-39",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "泡泡玛特",
+      "scenario": "base",
+      "type": "DCF",
+      "recomputed": "121.499495812909159386753828879788771839204265",
+      "reported": "121.4994958129091593867538288797887718392",
+      "absolute_difference": "4.265E-39",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "泡泡玛特",
+      "scenario": "bull",
+      "type": "DCF",
+      "recomputed": "225.147178114778986118078688425329898252718796",
+      "reported": "225.1471781147789861180786884253298982527",
+      "absolute_difference": "1.8796E-38",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "泡泡玛特",
+      "scenario": "bear",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "57.0817889408335760533295767629604425167488205",
+      "reported": "57.08178894083357605332957676296044251676",
+      "absolute_difference": "1.11795E-38",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "泡泡玛特",
+      "scenario": "base",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "138.035197394228067145806324383517474863591966",
+      "reported": "138.0351973942280671458063243835174748636",
+      "absolute_difference": "8.034E-39",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "泡泡玛特",
+      "scenario": "bull",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "232.097641180705516818258316214072323465160452",
+      "reported": "232.0976411807055168182583162140723234653",
+      "absolute_difference": "1.39548E-37",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "MiniMax",
+      "scenario": "bear",
+      "type": "DCF",
+      "recomputed": "6.39860750993779592919674993763487253752355718",
+      "reported": "6.398607509937795929196749937634872537516",
+      "absolute_difference": "7.55718E-39",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "MiniMax",
+      "scenario": "base",
+      "type": "DCF",
+      "recomputed": "101.430902027535403967093834708009246107103410",
+      "reported": "101.4309020275354039670938347080092461071",
+      "absolute_difference": "3.410E-39",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "MiniMax",
+      "scenario": "bull",
+      "type": "DCF",
+      "recomputed": "382.633743673150107225899136649506561797788635",
+      "reported": "382.6337436731501072258991366495065617978",
+      "absolute_difference": "1.1365E-38",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "MiniMax",
+      "scenario": "bear",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "22.5112313847776154742998687315031486174725375",
+      "reported": "22.51123138477761547429986873150314861747",
+      "absolute_difference": "2.5375E-39",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "MiniMax",
+      "scenario": "base",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "187.593594873146795619165572762526238478937812",
+      "reported": "187.5935948731467956191655727625262384789",
+      "absolute_difference": "3.7812E-38",
+      "status": "ARITHMETIC_PASS"
+    },
+    {
+      "company": "MiniMax",
+      "scenario": "bull",
+      "type": "THREE_YEAR_PV",
+      "recomputed": "619.058863081384425543246390116336586980494781",
+      "reported": "619.0588630813844255432463901163365869805",
+      "absolute_difference": "5.219E-39",
+      "status": "ARITHMETIC_PASS"
+    }
+  ]
+}

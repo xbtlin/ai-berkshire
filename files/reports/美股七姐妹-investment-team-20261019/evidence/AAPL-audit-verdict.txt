@@ -1,0 +1,60 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：01-苹果-AAPL-研究报告.md
+======================================================================
+
+  ✅ 通过 [ 7] 营业收入 · FY 2024                       报告:       391.04
+                                                    https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm: 391.04 (偏差 0.00%)  |  https://stockanalysis.com/stocks/aapl/financials/: 391.04 (偏差 0.00%)
+  ✅ 通过 [ 9] 营业收入 · TTM                           报告:       466.82
+                                                    https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm ; latest annual + YTD current - YTD prior: 466.82 (偏差 0.00%)  |  https://stockanalysis.com/stocks/aapl/financials/: 466.82 (偏差 0.00%)
+  ✅ 通过 [ 8] 营业收入 · FY 2025                       报告:       416.16
+                                                    https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm: 416.16 (偏差 0.00%)  |  https://stockanalysis.com/stocks/aapl/financials/: 416.16 (偏差 0.00%)
+  ✅ 通过 [23] 经营现金流 CFO · FY 2024                  报告:       118.25
+                                                    https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm: 118.25 (偏差 0.00%)  |  https://stockanalysis.com/stocks/aapl/financials/: 118.25 (偏差 0.00%)
+  ✅ 通过 [24] 经营现金流 CFO · FY 2025                  报告:       111.48
+                                                    https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm: 111.48 (偏差 0.00%)  |  https://stockanalysis.com/stocks/aapl/financials/: 111.48 (偏差 0.00%)
+  ✅ 通过 [29] 现金资本开支 · TTM                         报告:        10.04
+                                                    https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm ; latest annual + YTD current - YTD prior: 10.04 (偏差 0.00%)  |  https://stockanalysis.com/stocks/aapl/financials/: 10.04 (偏差 0.00%)
+  ✅ 通过 [27] 现金资本开支 · FY 2024                     报告:         9.45
+                                                    https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm: 9.45 (偏差 0.00%)  |  https://stockanalysis.com/stocks/aapl/financials/: 9.45 (偏差 0.00%)
+  ✅ 通过 [36] 股权薪酬 SBC · FY 2025                   报告:        12.86
+                                                    https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm: 12.86 (偏差 0.00%)  |  https://stockanalysis.com/stocks/aapl/financials/: 12.86 (偏差 0.00%)
+  ✅ 通过 [51] CFO · 金额                             报告:       146.72
+                                                    https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm; cash bridge: 146.72 (偏差 0.00%)
+  ✅ 通过 [56] 正常收盘价（美元） · 复算结果                     报告:       343.46
+                                                    price-and-calendar-review.md: 343.46 (偏差 0.00%)
+  ✅ 通过 [57] 公开已发行股数（十亿） · 复算结果                   报告:        14.59
+                                                    shares-assets-review.md: 14.59 (偏差 0.00%)
+  ✅ 通过 [58] 估算总市值（万亿美元） · 复算结果                   报告:         5.01
+                                                    价格×公开股数; 原始输入见 financial-verification.json: 5.01 (偏差 0.00%)
+  ✅ 通过 [60] 总市值/TTM归属利润 · 复算结果                   报告:        38.88 倍
+                                                    价格×公开股数/归属利润; 原始输入见 financial-verification.json: 38.88 (偏差 0.00%)
+  ✅ 通过 [63] 基础FCF收益率 · 复算结果                      报告:         2.70 %
+                                                    (CFO−CapEx)/市值; 原始输入见 financial-verification.json: 2.70 (偏差 0.00%)
+  ✅ 通过 [71] AAPL · PS                            报告:        10.74
+                                                    同组表按各公司原始输入重算: 10.74 (偏差 0.00%)
+  ✅ 通过 [76] MSFT · 营业利润率                         报告:        46.78 %
+                                                    同组表按各公司原始输入重算: 46.78 (偏差 0.00%)
+  ✅ 通过 [109] 基准 · 终值增长                            报告:         2.50 %
+                                                    valuation-assumptions.json: 2.50 (偏差 0.00%)
+  ✅ 通过 [108] 基准 · 第十年现金率                          报告:        25.00 %
+                                                    valuation-assumptions.json: 25.00 (偏差 0.00%)
+  ✅ 通过 [130] 悲观 · 经营利润CAGR                        报告:         2.00 %
+                                                    (TTM营业利润×80%×增长因子×退出倍数+净金融资产)/情景股份: 2.00 (偏差 0.00%)
+  ✅ 通过 [140] 尚未持有、偏现金流价值 · 行动规则                   报告:       130.00
+                                                    核心基准×执行折价，向下取整5美元档: 130.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 20  |  通过: 20  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 20,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 20,
+  "fail_items": [],
+  "warn_items": []
+}

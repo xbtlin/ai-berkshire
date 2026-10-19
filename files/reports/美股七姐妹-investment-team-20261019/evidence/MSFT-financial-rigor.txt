@@ -1,0 +1,205 @@
+$ python3 tools/financial_rigor.py verify-market-cap --price 529.05 --shares 7425545491.000000 --reported 3902000000000 --currency USD
+============================================================
+市值验算 (Market Cap Verification)
+============================================================
+  股价 (Price):       529.05 USD
+  总股本 (Shares):    7.43B
+  计算市值:           3.93T USD
+  报告市值:           3.90T USD
+  偏差:               0.68%
+
+  ✅ 验证通过, 偏差仅 0.68%
+
+$ python3 tools/financial_rigor.py verify-valuation --price 529.05 --eps 17.95 --bvps 59.5763638558523780781723582063501225 --revenue-per-share 44.6888380661325881842880490946547216 --fcf-per-share 9.02115542638455300522513491393005594
+============================================================
+估值指标验算 (Valuation Verification)
+============================================================
+  当前股价: 529.05
+
+  PE (TTM):  529.05 / 17.95 = 29.47x
+  盈利收益率: 3.39%
+  PB:        529.05 / 59.57636385585238 = 8.88x
+  ROE:       17.95 / 59.57636385585238 = 30.13%
+  P/FCF:     529.05 / 9.021155426384553 = 58.65x
+  FCF Yield: 1.71%
+  PS:        529.05 / 44.68883806613259 = 11.84x
+
+  ✅ 以上指标均使用精确十进制计算, 无浮点误差
+
+$ python3 tools/financial_rigor.py cross-validate --field MSFT TTM revenue --values {"primary_or_TTM_bridge": 331839.0, "StockAnalysis": 331839.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: MSFT TTM revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 331,839.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 331,839.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 331,839.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 331,839.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field MSFT TTM operating_income --values {"primary_or_TTM_bridge": 155237.0, "StockAnalysis": 155237.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: MSFT TTM operating_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 155,237.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 155,237.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 155,237.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 155,237.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field MSFT TTM net_income --values {"primary_or_TTM_bridge": 133749.0, "StockAnalysis": 133749.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: MSFT TTM net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 133,749.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 133,749.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 133,749.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 133,749.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field MSFT TTM cfo --values {"primary_or_TTM_bridge": 182935.0, "StockAnalysis": 182935.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: MSFT TTM cfo (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 182,935.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 182,935.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 182,935.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 182,935.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field MSFT TTM capex --values {"primary_or_TTM_bridge": 115948.0, "StockAnalysis": 115948.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: MSFT TTM capex (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 115,948.00 百万美元
+
+  ✅ primary_or_TTM_bridge: 115,948.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 115,948.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 115,948.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field MSFT FY 2026 revenue --values {"Macrotrends": 331839.0, "StockAnalysis": 331839.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: MSFT FY 2026 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 331,839.00 百万美元
+
+  ✅ Macrotrends         : 331,839.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 331,839.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 331,839.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field MSFT FY 2025 revenue --values {"Macrotrends": 281724.0, "StockAnalysis": 281724.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: MSFT FY 2025 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 281,724.00 百万美元
+
+  ✅ Macrotrends         : 281,724.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 281,724.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 281,724.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field MSFT FY 2024 revenue --values {"Macrotrends": 245122.0, "StockAnalysis": 245122.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: MSFT FY 2024 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 245,122.00 百万美元
+
+  ✅ Macrotrends         : 245,122.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 245,122.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 245,122.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field MSFT FY 2026 net_income --values {"Macrotrends": 133749.0, "StockAnalysis": 133749.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: MSFT FY 2026 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 133,749.00 百万美元
+
+  ✅ Macrotrends         : 133,749.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 133,749.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 133,749.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field MSFT FY 2025 net_income --values {"Macrotrends": 101832.0, "StockAnalysis": 101832.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: MSFT FY 2025 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 101,832.00 百万美元
+
+  ✅ Macrotrends         : 101,832.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 101,832.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 101,832.00 百万美元
+
+$ python3 tools/financial_rigor.py cross-validate --field MSFT FY 2024 net_income --values {"Macrotrends": 88136.0, "StockAnalysis": 88136.0} --unit 百万美元 --tolerance 1
+============================================================
+交叉验证: MSFT FY 2024 net_income (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 88,136.00 百万美元
+
+  ✅ Macrotrends         : 88,136.00 百万美元  (偏差 0.00%)
+  ✅ StockAnalysis       : 88,136.00 百万美元  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 88,136.00 百万美元
+
+$ python3 tools/financial_rigor.py three-scenario --price 529.05 --eps 16.7246433478216233582293193441564494 --shares 74.25545491 --growth .20 .15 .08 --pe 30 25 18 --years 5 --currency USD
+============================================================
+三情景估值模型 (Three-Scenario Valuation)
+============================================================
+  当前股价: 529.05 USD
+  当前EPS:  16.724643347821623
+  预测期:   5年
+
+  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅
+  ------------ -------- -------- ---------- ---------- --------
+  乐观 (Bull)         20%      30x      41.62    1248.5  +136.0%
+  中性 (Base)         15%      25x      33.64     841.0   +59.0%
+  悲观 (Bear)          8%      18x      24.57     442.3   -16.4%
+
+  ✅ 所有计算使用精确十进制, 结果可审计复现
+
+$ python3 tools/financial_rigor.py calc --expr 182935 - 115948 - 3101 - 0 - 12405
+============================================================
+精确计算 (Exact Calculator)
+============================================================
+  表达式: 182935 - 115948 - 3101 - 0 - 12405
+  结果:   51,481.00
+  精确值: 51481

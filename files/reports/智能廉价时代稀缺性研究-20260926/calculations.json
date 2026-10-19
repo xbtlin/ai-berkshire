@@ -1,0 +1,89 @@
+{
+  "scope": "Conditional arithmetic only. Inputs are user premise or illustrative assumptions.",
+  "precision": "Python Decimal, 40 significant digits; powers may be rounded at that precision.",
+  "ten_year_price_ratio": "0.001",
+  "annual_price_decline_pct": "49.88127663727277149984458131150542319395",
+  "annual_efficiency_multiple": "1.995262314968879601352455396739535557986",
+  "total_cost": [
+    {
+      "ai_cost_share_pct": "10.0",
+      "new_total_cost_pct": "90.0100",
+      "cost_reduction_pct": "9.9900",
+      "purchasing_power_multiple": "1.110987668036884790578824575047216975892"
+    },
+    {
+      "ai_cost_share_pct": "50.0",
+      "new_total_cost_pct": "50.0500",
+      "cost_reduction_pct": "49.9500",
+      "purchasing_power_multiple": "1.998001998001998001998001998001998001998"
+    },
+    {
+      "ai_cost_share_pct": "90.0",
+      "new_total_cost_pct": "10.0900",
+      "cost_reduction_pct": "89.9100",
+      "purchasing_power_multiple": "9.910802775024777006937561942517343904856"
+    },
+    {
+      "ai_cost_share_pct": "99.00",
+      "new_total_cost_pct": "1.09900",
+      "cost_reduction_pct": "98.90100",
+      "purchasing_power_multiple": "90.99181073703366696997270245677888989991"
+    },
+    {
+      "ai_cost_share_pct": "99.900",
+      "new_total_cost_pct": "0.199900",
+      "cost_reduction_pct": "99.800100",
+      "purchasing_power_multiple": "500.2501250625312656328164082041020510255"
+    }
+  ],
+  "demand": [
+    {
+      "elasticity": "0.5",
+      "quantity_multiple": "31.62277660168379331998893544432718533720",
+      "revenue_multiple": "0.0316227766016837933199889354443271853372"
+    },
+    {
+      "elasticity": "1",
+      "quantity_multiple": "1000",
+      "revenue_multiple": "1"
+    },
+    {
+      "elasticity": "1.5",
+      "quantity_multiple": "31622.77660168379331998893544432718533720",
+      "revenue_multiple": "31.6227766016837933199889354443271853372"
+    }
+  ],
+  "energy_example": {
+    "tasks_multiple": "1000",
+    "energy_per_task_reduction_factor": "100",
+    "total_energy_multiple": "10"
+  },
+  "serial_reliability": [
+    {
+      "per_step_success_pct": "99.00",
+      "all_100_steps_success_pct": "36.60323412732295049306160265725173861897"
+    },
+    {
+      "per_step_success_pct": "99.900",
+      "all_100_steps_success_pct": "90.47921471137090420322146062399503478005"
+    },
+    {
+      "per_step_success_pct": "99.9900",
+      "all_100_steps_success_pct": "99.00493386913708152535028984408072973080"
+    }
+  ],
+  "independent_retry_example": {
+    "success_per_attempt": "0.9",
+    "attempts": 5,
+    "at_least_one_success_pct": "99.99900",
+    "limitation": "Requires independent errors and a reliable verifier to select the correct result."
+  },
+  "scarcity_rent_pv": {
+    "year_end_annual_extra_cashflow": "10",
+    "discount_rate_pct": "10",
+    "terminal_rent": "0",
+    "five_years": "37.90786769408448255521542865303537388778",
+    "ten_years": "61.44567105704682526355963555211415879924",
+    "value_loss_if_five_years_instead_of_ten_pct": "38.30669102972216156996142516213306978328"
+  }
+}

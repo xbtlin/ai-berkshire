@@ -1,0 +1,47 @@
+{
+  "inputs": {
+    "as_of": "2026-09-06",
+    "market_date": "2026-09-04",
+    "fx_cny_per_hkd": "0.8559",
+    "tencent": {
+      "price_hkd": "442.80",
+      "issued_shares": "9103153877",
+      "shares_date": "2026-09-04",
+      "reported_mcap_hkd": "4030877000000"
+    },
+    "kuaishou": {
+      "price_hkd": "33.66",
+      "issued_shares": "4326961215",
+      "shares_date": "2026-09-03 (Class A confirmed by August monthly return)",
+      "reported_mcap_hkd": "145645000000"
+    }
+  },
+  "decimal_results": {
+    "tencent": {
+      "market_cap_hkd": "4030876536735.60",
+      "market_cap_cny": "3450027227792.000040",
+      "market_cap_hkd_100m": "40308.765367356",
+      "market_cap_cny_100m": "34500.2722779200004",
+      "pe_ifrs": "14.64929950486607690609236204290300117193",
+      "pe_adjusted": "12.70424107595603277300093900171229724007"
+    },
+    "kuaishou": {
+      "market_cap_hkd": "145645514496.90",
+      "market_cap_cny": "124657995857.896710",
+      "market_cap_hkd_100m": "1456.455144969",
+      "market_cap_cny_100m": "1246.5799585789671",
+      "pe_ifrs": "7.906761122535627933527844729164023848789",
+      "pe_adjusted": "7.028529310887275033829499323410013531800"
+    }
+  },
+  "ttm_cny_100m": {
+    "tencent": {
+      "ifrs": "2355.08",
+      "adjusted": "2715.65"
+    },
+    "kuaishou": {
+      "ifrs": "157.66",
+      "adjusted": "177.36"
+    }
+  }
+}

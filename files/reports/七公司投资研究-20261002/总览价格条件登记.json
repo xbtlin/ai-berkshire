@@ -1,0 +1,47 @@
+[
+  {
+    "id": 9,
+    "label": "[拼多多](拼多多/拼多多研究报告-20261002.md) · 条件买入研究线",
+    "reported_value": 75.0,
+    "unit": "",
+    "line_number": 17,
+    "raw_text": "| [拼多多](拼多多/拼多多研究报告-20261002.md) | 美元/ADS | 76.50 | 109.09 | 75.00 | 最接近买入研究区 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "classification": "decision_threshold",
+    "recorded_assumption": "75",
+    "note": "Researcher price condition; not externally verifiable factual claim"
+  },
+  {
+    "id": 15,
+    "label": "[泡泡玛特](泡泡玛特/泡泡玛特研究报告-20261002.md) · 条件买入研究线",
+    "reported_value": 91.0,
+    "unit": "",
+    "line_number": 19,
+    "raw_text": "| [泡泡玛特](泡泡玛特/泡泡玛特研究报告-20261002.md) | 港元/股 | 149.20 | 121.50 | 91.00 | 等库存、复购和价格改善 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "classification": "decision_threshold",
+    "recorded_assumption": "91",
+    "note": "Researcher price condition; not externally verifiable factual claim"
+  },
+  {
+    "id": 18,
+    "label": "[茅台](茅台/茅台研究报告-20261002.md) · 条件买入研究线",
+    "reported_value": 780.0,
+    "unit": "",
+    "line_number": 20,
+    "raw_text": "| [茅台](茅台/茅台研究报告-20261002.md) | 人民币/股 | 1,258.62 | 974.77 | 780.00 | 按10%回报要求继续等待 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "classification": "decision_threshold",
+    "recorded_assumption": "780",
+    "note": "Researcher price condition; not externally verifiable factual claim"
+  }
+]

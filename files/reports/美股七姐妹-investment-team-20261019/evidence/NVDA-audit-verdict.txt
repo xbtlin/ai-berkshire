@@ -1,0 +1,64 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：06-英伟达-NVDA-研究报告.md
+======================================================================
+
+  ✅ 通过 [ 7] 营业收入 · FY 2024                       报告:        60.92
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 60.92 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 60.92 (偏差 0.00%)
+  ✅ 通过 [ 9] 营业收入 · FY 2026                       报告:       215.94
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 215.94 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 215.94 (偏差 0.00%)
+  ✅ 通过 [ 8] 营业收入 · FY 2025                       报告:       130.50
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 130.50 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 130.50 (偏差 0.00%)
+  ✅ 通过 [23] 经营现金流 CFO · FY 2024                  报告:        28.09
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 28.09 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 28.09 (偏差 0.00%)
+  ✅ 通过 [24] 经营现金流 CFO · FY 2025                  报告:        64.09
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 64.09 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 64.09 (偏差 0.00%)
+  ✅ 通过 [29] 现金资本开支 · FY 2026                     报告:         6.04
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 6.04 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 6.04 (偏差 0.00%)
+  ✅ 通过 [27] 现金资本开支 · FY 2024                     报告:         1.07
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 1.07 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 1.07 (偏差 0.00%)
+  ✅ 通过 [36] 股权薪酬 SBC · FY 2025                   报告:         4.74
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm: 4.74 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 4.74 (偏差 0.00%)
+  ✅ 通过 [51] SBC/收入 · 本报告复算                       报告:         2.40 %
+                                                    SBC/收入; 原始输入见 financial-verification.json: 2.40 (偏差 0.00%)
+  ✅ 通过 [56] 减：SBC经济成本代理 · 金额                     报告:         7.24
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm; cash bridge: 7.24 (偏差 0.00%)
+  ✅ 通过 [57] 研究现金代理 · 金额                          报告:       119.64
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm; cash bridge: 119.64 (偏差 0.00%)
+  ✅ 通过 [58] 正常收盘价（美元） · 复算结果                     报告:       214.13
+                                                    price-and-calendar-review.md: 214.13 (偏差 0.00%)
+  ✅ 通过 [60] 估算总市值（万亿美元） · 复算结果                   报告:         5.17
+                                                    价格×公开股数; 原始输入见 financial-verification.json: 5.17 (偏差 0.00%)
+  ✅ 通过 [63] PS · 复算结果                            报告:        17.07 倍
+                                                    市值/收入; 原始输入见 financial-verification.json: 17.07 (偏差 0.00%)
+  ✅ 通过 [71] FY 2026 · PE（倍）                      报告:        37.98
+                                                    https://stockanalysis.com/stocks/nvda/financials/: 37.98 (偏差 0.00%)
+  ✅ 通过 [72] FY 2026 · PS（倍）                      报告:        21.12
+                                                    https://stockanalysis.com/stocks/nvda/financials/: 21.12 (偏差 0.00%)
+  ✅ 通过 [104] 悲观 · 第十年现金率                          报告:        20.00 %
+                                                    valuation-assumptions.json: 20.00 (偏差 0.00%)
+  ✅ 通过 [109] 基准 · 前五年现金率逐年路径                      报告:        42.00 %
+                                                    valuation-assumptions.json: 42.00 (偏差 0.00%)
+  ✅ 通过 [108] 基准 · 后五年收入CAGR                       报告:         6.00 %
+                                                    valuation-assumptions.json: 6.00 (偏差 0.00%)
+  ✅ 通过 [115] 乐观 · 前五年现金率逐年路径                      报告:        44.00 %
+                                                    valuation-assumptions.json: 44.00 (偏差 0.00%)
+  ✅ 通过 [130] 中性 · 第五年条件价格USD                      报告:       390.18
+                                                    (TTM营业利润×80%×增长因子×退出倍数+净金融资产)/情景股份: 390.18 (偏差 0.00%)
+  ✅ 通过 [140] 简单平均 · 评分/5                          报告:         3.98
+                                                    四项主观评分简单平均: 3.98 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 22  |  通过: 22  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 22,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 22,
+  "fail_items": [],
+  "warn_items": []
+}

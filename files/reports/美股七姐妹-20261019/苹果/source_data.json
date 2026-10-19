@@ -1,0 +1,242 @@
+{
+  "unit": "USD million except share/market-cap variables explicitly USD billion",
+  "price": "343.46",
+  "shares_billion": "14.59418",
+  "marketcap_billion": "5012.5170628",
+  "annual": {
+    "2021": [
+      365817,
+      94680,
+      152836,
+      108949,
+      104038,
+      11085,
+      190516
+    ],
+    "2022": [
+      394328,
+      99803,
+      170782,
+      119437,
+      122151,
+      10708,
+      169109
+    ],
+    "2023": [
+      383285,
+      96995,
+      169148,
+      114301,
+      110543,
+      10959,
+      162099
+    ],
+    "2024": [
+      391035,
+      93736,
+      180683,
+      123216,
+      118254,
+      9447,
+      156650
+    ],
+    "2025": [
+      416161,
+      112010,
+      195201,
+      133050,
+      111482,
+      12715,
+      132420
+    ]
+  },
+  "annual_columns": [
+    "revenue",
+    "net_income",
+    "gross_profit",
+    "operating_profit",
+    "cfo",
+    "capex",
+    "cash_all_marketable"
+  ],
+  "quarters": {
+    "FY25Q4": {
+      "sales": [
+        49025,
+        8726,
+        6952,
+        9013,
+        28750
+      ],
+      "prior": [
+        46222,
+        7744,
+        6950,
+        9042,
+        24972
+      ],
+      "cost": [
+        47019,
+        7106
+      ],
+      "regions": [
+        44192,
+        28703,
+        14493,
+        6636,
+        8442
+      ]
+    },
+    "FY26Q1": {
+      "sales": [
+        85269,
+        8386,
+        8595,
+        11493,
+        30013
+      ],
+      "prior": [
+        69138,
+        8987,
+        8088,
+        11747,
+        26340
+      ],
+      "cost": [
+        67478,
+        7047
+      ],
+      "regions": [
+        58529,
+        38146,
+        25526,
+        9413,
+        12142
+      ]
+    },
+    "FY26Q2": {
+      "sales": [
+        56994,
+        8399,
+        6914,
+        7901,
+        30976
+      ],
+      "prior": [
+        46841,
+        7949,
+        6402,
+        7522,
+        26645
+      ],
+      "cost": [
+        49179,
+        7224
+      ],
+      "regions": [
+        45093,
+        28055,
+        20497,
+        8401,
+        9138
+      ]
+    },
+    "FY26Q3": {
+      "sales": [
+        54252,
+        10352,
+        6191,
+        7883,
+        30739
+      ],
+      "prior": [
+        44582,
+        8046,
+        6581,
+        7404,
+        27423
+      ],
+      "cost": [
+        47153,
+        7494
+      ],
+      "regions": [
+        45781,
+        29395,
+        18816,
+        6554,
+        8871
+      ]
+    }
+  },
+  "quarter_categories": [
+    "iPhone",
+    "Mac",
+    "iPad",
+    "Wearables",
+    "Services"
+  ],
+  "quarter_regions": [
+    "Americas",
+    "Europe",
+    "Greater China",
+    "Japan",
+    "Rest APAC"
+  ],
+  "cash_billion": "146.517",
+  "debt_billion": "84.344",
+  "netcash_billion": "62.173",
+  "normalized_profit_billion": "127.31138564",
+  "normalized_eps": "8.61",
+  "ttm_bridge": {
+    "unit": "USD million",
+    "formula": "FY2025 full year + FY2026 first 9 months - FY2025 first 9 months",
+    "periods": {
+      "FY2025_full_year_end": "2025-09-27",
+      "FY2026_9m_end": "2026-06-27",
+      "FY2025_9m_end": "2025-06-28"
+    },
+    "inputs": {
+      "revenue": [
+        416161,
+        364357,
+        313695
+      ],
+      "net_income": [
+        112010,
+        101464,
+        84544
+      ],
+      "operating_cash_flow": [
+        111482,
+        116996,
+        81754
+      ],
+      "cash_capex": [
+        12715,
+        6799,
+        9473
+      ]
+    },
+    "sources": {
+      "full_year": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "nine_month_comparison": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "third_party_ttm": "https://stockanalysis.com/stocks/aapl/financials/",
+      "retrieved": "2026-10-19 Asia/Shanghai"
+    },
+    "ttm_result": {
+      "revenue": 466823,
+      "net_income": 128930,
+      "operating_cash_flow": 146724,
+      "cash_capex": 10041,
+      "free_cash_flow": 136683
+    },
+    "third_party_ttm_values": {
+      "revenue": 466823,
+      "net_income": 128930,
+      "operating_cash_flow": 146724,
+      "cash_capex": 10041,
+      "free_cash_flow": 136683
+    }
+  }
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "label": "利润、现金、股权与价格应当如何一起判断 · 对应篇章",
+    "reported_value": 3.0,
+    "unit": "示例金额",
+    "raw_text": "| 利润、现金、股权与价格应当如何一起判断 | [第三篇：便宜的市盈率与昂贵的再投资](03-便宜的市盈率与昂贵的再投资.md) |",
+    "line_number": 199,
+    "classification": "目录链接误识别，非数据事实",
+    "fetched_value": null,
+    "fetched_source": "人工排除目录序号"
+  },
+  {
+    "id": 101,
+    "label": "人工重点抽检：2026Q2收入",
+    "reported_value": 355.35,
+    "unit": "亿元人民币",
+    "fetched_value": 355.35,
+    "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+    "fetched_value2": 355.4,
+    "fetched_source2": "https://finance.sina.com.cn/stock/relnews/hk/2026-08-20/doc-ininxzps2010469.shtml",
+    "classification": "事实；独立摘要四舍五入",
+    "independent_external_sources": 2
+  },
+  {
+    "id": 102,
+    "label": "人工重点抽检：2026Q2调整后净利润",
+    "reported_value": 39.13,
+    "unit": "亿元人民币",
+    "fetched_value": 39.13,
+    "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf",
+    "fetched_value2": 39.1,
+    "fetched_source2": "https://finance.sina.com.cn/stock/relnews/hk/2026-08-20/doc-ininxzps2010469.shtml",
+    "classification": "事实；独立摘要四舍五入",
+    "independent_external_sources": 2
+  },
+  {
+    "id": 103,
+    "label": "人工重点抽检：2025营销收入",
+    "reported_value": 814.62,
+    "unit": "亿元人民币",
+    "fetched_value": 814.62,
+    "fetched_source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf",
+    "classification": "事实；原始年报 p18/p322，单一发行人来源",
+    "independent_external_sources": 1,
+    "source_gap": "未取得独立第二源相同精度数"
+  }
+]

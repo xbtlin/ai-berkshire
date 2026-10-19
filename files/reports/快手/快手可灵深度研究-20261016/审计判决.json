@@ -1,0 +1,34 @@
+{
+  "sample_total": 23,
+  "excluded_nonfinancial": 4,
+  "scopes": {
+    "随机抽样事实": {
+      "verdict": "PASS",
+      "pass_count": 4,
+      "warn_count": 0,
+      "fail_count": 0,
+      "total": 4,
+      "fail_items": [],
+      "warn_items": []
+    },
+    "假设和算式一致性": {
+      "verdict": "PASS",
+      "pass_count": 15,
+      "warn_count": 0,
+      "fail_count": 0,
+      "total": 15,
+      "fail_items": [],
+      "warn_items": []
+    },
+    "重点事实与桥梁": {
+      "verdict": "PASS",
+      "pass_count": 13,
+      "warn_count": 0,
+      "fail_count": 0,
+      "total": 13,
+      "fail_items": [],
+      "warn_items": []
+    }
+  },
+  "warning": "PASS only within declared fact/formula scopes; not prediction validation; single-source gaps remain"
+}

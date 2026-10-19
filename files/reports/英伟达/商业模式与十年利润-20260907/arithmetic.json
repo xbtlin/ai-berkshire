@@ -1,0 +1,474 @@
+{
+  "cutoff": "2026-09-07",
+  "annual_columns": [
+    "revenue",
+    "GAAP_net_income",
+    "gross_margin_pct",
+    "OCF",
+    "NVIDIA_FCF",
+    "StockAnalysis_FCF",
+    "equipment_principal"
+  ],
+  "annual_USD_million": {
+    "FY2022": [
+      26914,
+      9752,
+      64.9,
+      9108,
+      8049,
+      8132,
+      83
+    ],
+    "FY2023": [
+      26974,
+      4368,
+      56.9,
+      5641,
+      3750,
+      3808,
+      58
+    ],
+    "FY2024": [
+      60922,
+      29760,
+      72.7,
+      28090,
+      26947,
+      27021,
+      74
+    ],
+    "FY2025": [
+      130497,
+      72880,
+      75.0,
+      64089,
+      60724,
+      60853,
+      129
+    ],
+    "FY2026": [
+      215938,
+      120067,
+      71.1,
+      102718,
+      96575,
+      96676,
+      101
+    ]
+  },
+  "cross_checks": [
+    {
+      "field": "FY2022_revenue",
+      "values": {
+        "NVIDIA_SEC": 26914,
+        "StockAnalysis": 26914
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2022_GAAP_net_income",
+      "values": {
+        "NVIDIA_SEC": 9752,
+        "StockAnalysis": 9752
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2022_operating_cash_flow",
+      "values": {
+        "NVIDIA_SEC": 9108,
+        "StockAnalysis": 9108
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2022_FCF_after_principal_reconciliation",
+      "values": {
+        "NVIDIA_SEC": 8049,
+        "StockAnalysis_reconciled": 8049
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2023_revenue",
+      "values": {
+        "NVIDIA_SEC": 26974,
+        "StockAnalysis": 26974
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2023_GAAP_net_income",
+      "values": {
+        "NVIDIA_SEC": 4368,
+        "StockAnalysis": 4368
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2023_operating_cash_flow",
+      "values": {
+        "NVIDIA_SEC": 5641,
+        "StockAnalysis": 5641
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2023_FCF_after_principal_reconciliation",
+      "values": {
+        "NVIDIA_SEC": 3750,
+        "StockAnalysis_reconciled": 3750
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2024_revenue",
+      "values": {
+        "NVIDIA_SEC": 60922,
+        "StockAnalysis": 60922
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2024_GAAP_net_income",
+      "values": {
+        "NVIDIA_SEC": 29760,
+        "StockAnalysis": 29760
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2024_operating_cash_flow",
+      "values": {
+        "NVIDIA_SEC": 28090,
+        "StockAnalysis": 28090
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2024_FCF_after_principal_reconciliation",
+      "values": {
+        "NVIDIA_SEC": 26947,
+        "StockAnalysis_reconciled": 26947
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2025_revenue",
+      "values": {
+        "NVIDIA_SEC": 130497,
+        "StockAnalysis": 130497
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2025_GAAP_net_income",
+      "values": {
+        "NVIDIA_SEC": 72880,
+        "StockAnalysis": 72880
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2025_operating_cash_flow",
+      "values": {
+        "NVIDIA_SEC": 64089,
+        "StockAnalysis": 64089
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2025_FCF_after_principal_reconciliation",
+      "values": {
+        "NVIDIA_SEC": 60724,
+        "StockAnalysis_reconciled": 60724
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2026_revenue",
+      "values": {
+        "NVIDIA_SEC": 215938,
+        "StockAnalysis": 215938
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2026_GAAP_net_income",
+      "values": {
+        "NVIDIA_SEC": 120067,
+        "StockAnalysis": 120067
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2026_operating_cash_flow",
+      "values": {
+        "NVIDIA_SEC": 102718,
+        "StockAnalysis": 102718
+      },
+      "deviation_pct": "0"
+    },
+    {
+      "field": "FY2026_FCF_after_principal_reconciliation",
+      "values": {
+        "NVIDIA_SEC": 96575,
+        "StockAnalysis_reconciled": 96575
+      },
+      "deviation_pct": "0"
+    }
+  ],
+  "calculations": {
+    "TTM_revenue_USD_million": {
+      "expression": "215938 + 177837 - 90805",
+      "financial_rigor": "302970",
+      "independent_decimal": "302970"
+    },
+    "TTM_GAAP_profit_USD_million": {
+      "expression": "120067 + 118010 - 45197",
+      "financial_rigor": "192880",
+      "independent_decimal": "192880"
+    },
+    "Q2_Data_Center_pct": {
+      "expression": "89023 / 96221 * 100",
+      "financial_rigor": "92.51930451772482",
+      "independent_decimal": "92.5193045177248209850240591970567755"
+    },
+    "Q2_operating_margin_pct": {
+      "expression": "63734 / 96221 * 100",
+      "financial_rigor": "66.23710000935347",
+      "independent_decimal": "66.2371000093534675382712713440932852"
+    },
+    "TTM_tax_after_operating_profit_USD_bn": {
+      "expression": "197.579 * (1 - 0.17)",
+      "financial_rigor": "163.99057",
+      "independent_decimal": "163.99057"
+    },
+    "Q2_annualized_revenue_USD_bn": {
+      "expression": "96.221 * 4",
+      "financial_rigor": "384.884",
+      "independent_decimal": "384.884"
+    },
+    "Q2_annualized_tax_after_operating_profit_USD_bn": {
+      "expression": "63.734 * 4 * (1 - 0.17)",
+      "financial_rigor": "211.59688",
+      "independent_decimal": "211.59688"
+    },
+    "Q2_tax_after_operating_margin_pct": {
+      "expression": "63.734 * (1 - 0.17) / 96.221 * 100",
+      "financial_rigor": "54.97679300776338",
+      "independent_decimal": "54.9767930077633780567651552155974268"
+    },
+    "bear_revenue_USD_bn": {
+      "expression": "1000 * 0.30 + 50",
+      "financial_rigor": "350.0",
+      "independent_decimal": "350.00"
+    },
+    "bear_profit_USD_bn": {
+      "expression": "(1000 * 0.30 + 50) * 0.25",
+      "financial_rigor": "87.5",
+      "independent_decimal": "87.5000"
+    },
+    "base_revenue_USD_bn": {
+      "expression": "2000 * 0.45 + 100",
+      "financial_rigor": "1000.0",
+      "independent_decimal": "1000.00"
+    },
+    "base_profit_USD_bn": {
+      "expression": "(2000 * 0.45 + 100) * 0.40",
+      "financial_rigor": "400.0",
+      "independent_decimal": "400.0000"
+    },
+    "bull_revenue_USD_bn": {
+      "expression": "3000 * 0.60 + 200",
+      "financial_rigor": "2000.0",
+      "independent_decimal": "2000.00"
+    },
+    "bull_profit_USD_bn": {
+      "expression": "(3000 * 0.60 + 200) * 0.45",
+      "financial_rigor": "900.0",
+      "independent_decimal": "900.0000"
+    },
+    "base_revenue_CAGR_pct": {
+      "expression": "((1000 / (96.221 * 4)) ** (1 / 10) - 1) * 100",
+      "financial_rigor": "10.018828009423974",
+      "independent_decimal": "10.0188280094239780835758956285345550"
+    },
+    "base_profit_CAGR_pct": {
+      "expression": "((400 / (63.734 * 4 * 0.83)) ** (1 / 10) - 1) * 100",
+      "financial_rigor": "6.574934194244575",
+      "independent_decimal": "6.57493419424457212641643756249911900"
+    },
+    "base_share_minus_10pp_profit_USD_bn": {
+      "expression": "(2000 * 0.35 + 100) * 0.40",
+      "financial_rigor": "320.0",
+      "independent_decimal": "320.0000"
+    },
+    "base_margin_minus_10pp_profit_USD_bn": {
+      "expression": "(2000 * 0.45 + 100) * 0.30",
+      "financial_rigor": "300.0",
+      "independent_decimal": "300.0000"
+    },
+    "base_both_minus_10pp_profit_USD_bn": {
+      "expression": "(2000 * 0.35 + 100) * 0.30",
+      "financial_rigor": "240.0",
+      "independent_decimal": "240.0000"
+    },
+    "FY2022_revenue_USD_100million": {
+      "expression": "26914 / 100",
+      "financial_rigor": "269.14",
+      "independent_decimal": "269.14"
+    },
+    "FY2022_net_income_USD_100million": {
+      "expression": "9752 / 100",
+      "financial_rigor": "97.52",
+      "independent_decimal": "97.52"
+    },
+    "FY2022_OCF_USD_100million": {
+      "expression": "9108 / 100",
+      "financial_rigor": "91.08",
+      "independent_decimal": "91.08"
+    },
+    "FY2022_FCF_USD_100million": {
+      "expression": "8049 / 100",
+      "financial_rigor": "80.49",
+      "independent_decimal": "80.49"
+    },
+    "FY2023_revenue_USD_100million": {
+      "expression": "26974 / 100",
+      "financial_rigor": "269.74",
+      "independent_decimal": "269.74"
+    },
+    "FY2023_net_income_USD_100million": {
+      "expression": "4368 / 100",
+      "financial_rigor": "43.68",
+      "independent_decimal": "43.68"
+    },
+    "FY2023_OCF_USD_100million": {
+      "expression": "5641 / 100",
+      "financial_rigor": "56.41",
+      "independent_decimal": "56.41"
+    },
+    "FY2023_FCF_USD_100million": {
+      "expression": "3750 / 100",
+      "financial_rigor": "37.5",
+      "independent_decimal": "37.5"
+    },
+    "FY2024_revenue_USD_100million": {
+      "expression": "60922 / 100",
+      "financial_rigor": "609.22",
+      "independent_decimal": "609.22"
+    },
+    "FY2024_net_income_USD_100million": {
+      "expression": "29760 / 100",
+      "financial_rigor": "297.6",
+      "independent_decimal": "297.6"
+    },
+    "FY2024_OCF_USD_100million": {
+      "expression": "28090 / 100",
+      "financial_rigor": "280.9",
+      "independent_decimal": "280.9"
+    },
+    "FY2024_FCF_USD_100million": {
+      "expression": "26947 / 100",
+      "financial_rigor": "269.47",
+      "independent_decimal": "269.47"
+    },
+    "FY2025_revenue_USD_100million": {
+      "expression": "130497 / 100",
+      "financial_rigor": "1304.97",
+      "independent_decimal": "1304.97"
+    },
+    "FY2025_net_income_USD_100million": {
+      "expression": "72880 / 100",
+      "financial_rigor": "728.8",
+      "independent_decimal": "728.8"
+    },
+    "FY2025_OCF_USD_100million": {
+      "expression": "64089 / 100",
+      "financial_rigor": "640.89",
+      "independent_decimal": "640.89"
+    },
+    "FY2025_FCF_USD_100million": {
+      "expression": "60724 / 100",
+      "financial_rigor": "607.24",
+      "independent_decimal": "607.24"
+    },
+    "FY2026_revenue_USD_100million": {
+      "expression": "215938 / 100",
+      "financial_rigor": "2159.38",
+      "independent_decimal": "2159.38"
+    },
+    "FY2026_net_income_USD_100million": {
+      "expression": "120067 / 100",
+      "financial_rigor": "1200.67",
+      "independent_decimal": "1200.67"
+    },
+    "FY2026_OCF_USD_100million": {
+      "expression": "102718 / 100",
+      "financial_rigor": "1027.18",
+      "independent_decimal": "1027.18"
+    },
+    "FY2026_FCF_USD_100million": {
+      "expression": "96575 / 100",
+      "financial_rigor": "965.75",
+      "independent_decimal": "965.75"
+    },
+    "Q2_revenue_USD_100million": {
+      "expression": "96221 / 100",
+      "financial_rigor": "962.21",
+      "independent_decimal": "962.21"
+    },
+    "Q2_net_income_USD_100million": {
+      "expression": "59688 / 100",
+      "financial_rigor": "596.88",
+      "independent_decimal": "596.88"
+    },
+    "Q2_operating_income_USD_100million": {
+      "expression": "63734 / 100",
+      "financial_rigor": "637.34",
+      "independent_decimal": "637.34"
+    },
+    "Q2_FCF_USD_100million": {
+      "expression": "21341 / 100",
+      "financial_rigor": "213.41",
+      "independent_decimal": "213.41"
+    },
+    "TTM_FCF_USD_100million": {
+      "expression": "126886 / 100",
+      "financial_rigor": "1268.86",
+      "independent_decimal": "1268.86"
+    },
+    "TTM_revenue_USD_100million": {
+      "expression": "302970 / 100",
+      "financial_rigor": "3029.7",
+      "independent_decimal": "3029.7"
+    },
+    "TTM_net_income_USD_100million": {
+      "expression": "192880 / 100",
+      "financial_rigor": "1928.8",
+      "independent_decimal": "1928.8"
+    },
+    "TTM_operating_income_USD_100million": {
+      "expression": "197579 / 100",
+      "financial_rigor": "1975.79",
+      "independent_decimal": "1975.79"
+    },
+    "Data_Center_USD_100million": {
+      "expression": "89023 / 100",
+      "financial_rigor": "890.23",
+      "independent_decimal": "890.23"
+    },
+    "Edge_USD_100million": {
+      "expression": "7198 / 100",
+      "financial_rigor": "71.98",
+      "independent_decimal": "71.98"
+    },
+    "TTM_equity_gain_USD_100million": {
+      "expression": "30552 / 100",
+      "financial_rigor": "305.52",
+      "independent_decimal": "305.52"
+    }
+  },
+  "audit_boundary": "Inputs for 2036 are author assumptions, not observed facts or externally validated forecasts. Source agreement is not independent economic truth."
+}

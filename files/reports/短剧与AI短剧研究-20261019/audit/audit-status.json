@@ -1,0 +1,52 @@
+{
+  "report": "短剧与AI短剧深度研究报告-20261019.md",
+  "sha256": "83acc4da62fbcb76ae3d481df2a193c5c3a7a4f4bc053a7e53b4a2c0967bae54",
+  "total_extracted": 158,
+  "seed": 42,
+  "sampled": 24,
+  "facts": 12,
+  "model_checks": 5,
+  "excluded_metadata": 7,
+  "critical_checks": 16,
+  "scenario_checks": 3,
+  "status": "PASS_WITH_EXPLICIT_SCOPE",
+  "outcomes": {
+    "facts": {
+      "verdict": "PASS",
+      "pass_count": 12,
+      "warn_count": 0,
+      "fail_count": 0,
+      "total": 12,
+      "fail_items": [],
+      "warn_items": []
+    },
+    "assumptions": {
+      "verdict": "PASS",
+      "pass_count": 5,
+      "warn_count": 0,
+      "fail_count": 0,
+      "total": 5,
+      "fail_items": [],
+      "warn_items": []
+    },
+    "critical": {
+      "verdict": "PASS",
+      "pass_count": 16,
+      "warn_count": 0,
+      "fail_count": 0,
+      "total": 16,
+      "fail_items": [],
+      "warn_items": []
+    },
+    "scenarios": {
+      "verdict": "PASS",
+      "pass_count": 3,
+      "warn_count": 0,
+      "fail_count": 0,
+      "total": 3,
+      "fail_items": [],
+      "warn_items": []
+    }
+  },
+  "limitation": "No automatic source retrieval; manual evidence and arithmetic only. Forecasts, interviews, causality, and company investment value are not certified."
+}

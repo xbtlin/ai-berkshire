@@ -1,0 +1,53 @@
+[
+  {
+    "id": 16,
+    "label": "腾讯 · 基准情景",
+    "reported_value": 4600.0,
+    "unit": "",
+    "line_number": 79,
+    "raw_text": "| 腾讯 | 1700 | 4600 | 6600 | 相对最高，仍有AI资本回报风险 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "type": "forecast_arithmetic_only",
+    "expression": "3900*1.06**10*0.32+1650*1.09**10*0.35+2400*1.06**10*0.18+250-50",
+    "exact_model_value": "4575.7766522689417871975750",
+    "rounded_model_value": "4600",
+    "verified": true
+  },
+  {
+    "id": 15,
+    "label": "腾讯 · 保守情景",
+    "reported_value": 1700.0,
+    "unit": "",
+    "line_number": 79,
+    "raw_text": "| 腾讯 | 1700 | 4600 | 6600 | 相对最高，仍有AI资本回报风险 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "type": "forecast_arithmetic_only",
+    "expression": "3900*1**10*0.25+1650*1.02**10*0.25+2400*1**10*0.12+50-100",
+    "exact_model_value": "1715.8351982478373162240000",
+    "rounded_model_value": "1700",
+    "verified": true
+  },
+  {
+    "id": 18,
+    "label": "拼多多 · 保守情景",
+    "reported_value": 530.0,
+    "unit": "",
+    "line_number": 80,
+    "raw_text": "| 拼多多 | 530 | 1600 | 3000 | 中等，国内与Temu需拆开 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "type": "forecast_arithmetic_only",
+    "expression": "2200*1**10*0.25+2350*0.98**10*(-0.03)+40",
+    "exact_model_value": "532.3963671144279442380800",
+    "rounded_model_value": "530",
+    "verified": true
+  }
+]

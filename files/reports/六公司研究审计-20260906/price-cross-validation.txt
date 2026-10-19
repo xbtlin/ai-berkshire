@@ -1,0 +1,83 @@
+StockAnalysis: https://stockanalysis.com/quote/hkg/0700/history/
+============================================================
+交叉验证: 腾讯2026-09-04正规收盘价 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 442.80 HKD
+
+  ✅ Tencent quote       : 442.80 HKD  (偏差 0.00%)
+  ✅ StockAnalysis historical: 442.80 HKD  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 442.80 HKD
+
+StockAnalysis: https://stockanalysis.com/quote/hkg/1024/history/
+============================================================
+交叉验证: 快手2026-09-04正规收盘价 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 33.66 HKD
+
+  ✅ Tencent quote       : 33.66 HKD  (偏差 0.00%)
+  ✅ StockAnalysis historical: 33.66 HKD  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 33.66 HKD
+
+StockAnalysis: https://stockanalysis.com/quote/hkg/3690/history/
+============================================================
+交叉验证: 美团2026-09-04正规收盘价 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 81.75 HKD
+
+  ✅ Tencent quote       : 81.75 HKD  (偏差 0.00%)
+  ✅ StockAnalysis historical: 81.75 HKD  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 81.75 HKD
+
+StockAnalysis: https://stockanalysis.com/quote/hkg/9992/history/
+============================================================
+交叉验证: 泡泡玛特2026-09-04正规收盘价 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 154.00 HKD
+
+  ✅ Tencent quote       : 154.00 HKD  (偏差 0.00%)
+  ✅ StockAnalysis historical: 154.00 HKD  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 154.00 HKD
+
+StockAnalysis: https://stockanalysis.com/quote/hkg/0100/history/
+============================================================
+交叉验证: MiniMax2026-09-04正规收盘价 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 361.40 HKD
+
+  ✅ Tencent quote       : 361.40 HKD  (偏差 0.00%)
+  ✅ StockAnalysis historical: 361.40 HKD  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 361.40 HKD
+
+StockAnalysis: https://stockanalysis.com/stocks/pdd/history/
+============================================================
+交叉验证: PDD2026-09-04正规收盘价 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 82.21 USD
+
+  ✅ Tencent quote       : 82.21 USD  (偏差 0.00%)
+  ✅ StockAnalysis historical: 82.21 USD  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 1.0%, 数据一致
+
+  共识值 (加权中位数): 82.21 USD

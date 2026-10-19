@@ -1,0 +1,205 @@
+{
+  "scope": "2036 annual attributable net profit; 2026E is an assumption, not annualised H1",
+  "inputs": {
+    "2026E": [
+      48000,
+      312,
+      40000,
+      "53.5",
+      ".48"
+    ],
+    "2027E": [
+      48000,
+      318,
+      39000,
+      54,
+      ".48"
+    ],
+    "2028E": [
+      48500,
+      324,
+      39500,
+      "55.5",
+      ".4825"
+    ],
+    "2029E": [
+      49000,
+      330,
+      40000,
+      57,
+      ".485"
+    ],
+    "2036_bear": [
+      40000,
+      280,
+      28000,
+      45,
+      ".42"
+    ],
+    "2036_base": [
+      52000,
+      380,
+      40000,
+      65,
+      ".49"
+    ],
+    "2036_bull": [
+      62000,
+      480,
+      48000,
+      85,
+      ".51"
+    ]
+  },
+  "results": {
+    "2026E": {
+      "moutai_tonnes": "48000",
+      "moutai_asp_wan": "312",
+      "series_tonnes": "40000",
+      "series_asp_wan": "53.5",
+      "attributable_margin": "0.48",
+      "moutai_revenue": "1497.6",
+      "series_revenue": "214.0",
+      "other_revenue": "0.63",
+      "revenue": "1712.23",
+      "attributable_profit": "821.8704",
+      "eps": "65.74534009160254811237718553"
+    },
+    "2027E": {
+      "moutai_tonnes": "48000",
+      "moutai_asp_wan": "318",
+      "series_tonnes": "39000",
+      "series_asp_wan": "54",
+      "attributable_margin": "0.48",
+      "moutai_revenue": "1526.4",
+      "series_revenue": "210.6",
+      "other_revenue": "0.63",
+      "revenue": "1737.63",
+      "attributable_profit": "834.0624",
+      "eps": "66.72063642347776623263812040"
+    },
+    "2028E": {
+      "moutai_tonnes": "48500",
+      "moutai_asp_wan": "324",
+      "series_tonnes": "39500",
+      "series_asp_wan": "55.5",
+      "attributable_margin": "0.4825",
+      "moutai_revenue": "1571.4",
+      "series_revenue": "219.225",
+      "other_revenue": "0.63",
+      "revenue": "1791.255",
+      "attributable_profit": "864.2805375",
+      "eps": "69.13792962064402066181598012"
+    },
+    "2029E": {
+      "moutai_tonnes": "49000",
+      "moutai_asp_wan": "330",
+      "series_tonnes": "40000",
+      "series_asp_wan": "57",
+      "attributable_margin": "0.485",
+      "moutai_revenue": "1617",
+      "series_revenue": "228",
+      "other_revenue": "0.63",
+      "revenue": "1845.63",
+      "attributable_profit": "895.13055",
+      "eps": "71.60576951808124404192394797"
+    },
+    "2036_bear": {
+      "moutai_tonnes": "40000",
+      "moutai_asp_wan": "280",
+      "series_tonnes": "28000",
+      "series_asp_wan": "45",
+      "attributable_margin": "0.42",
+      "moutai_revenue": "1120",
+      "series_revenue": "126",
+      "other_revenue": "0.63",
+      "revenue": "1246.63",
+      "attributable_profit": "523.5846",
+      "eps": "41.88403377676782557493220797",
+      "profit_cagr_2026_2036": "-0.0440870338387560905525733664",
+      "real_profit_2026_purchasing_power_at_2pct_inflation": "429.5217364508132256448726471",
+      "moutai_volume_share_multiplier_if_industry_75": "1.111111111111111111111111111"
+    },
+    "2036_base": {
+      "moutai_tonnes": "52000",
+      "moutai_asp_wan": "380",
+      "series_tonnes": "40000",
+      "series_asp_wan": "65",
+      "attributable_margin": "0.49",
+      "moutai_revenue": "1976",
+      "series_revenue": "260",
+      "other_revenue": "0.63",
+      "revenue": "2236.63",
+      "attributable_profit": "1095.9487",
+      "eps": "87.67017282098210803120203671",
+      "profit_cagr_2026_2036": "0.029197419510282748701683845",
+      "real_profit_2026_purchasing_power_at_2pct_inflation": "899.0596527953865881240678951",
+      "moutai_volume_share_multiplier_if_industry_75": "1.444444444444444444444444444"
+    },
+    "2036_bull": {
+      "moutai_tonnes": "62000",
+      "moutai_asp_wan": "480",
+      "series_tonnes": "48000",
+      "series_asp_wan": "85",
+      "attributable_margin": "0.51",
+      "moutai_revenue": "2976",
+      "series_revenue": "408",
+      "other_revenue": "0.63",
+      "revenue": "3384.63",
+      "attributable_profit": "1726.1613",
+      "eps": "138.0838897732084931310016137",
+      "profit_cagr_2026_2036": "0.077030007814954104541620501",
+      "real_profit_2026_purchasing_power_at_2pct_inflation": "1416.053487765287870644680357",
+      "moutai_volume_share_multiplier_if_industry_75": "1.722222222222222222222222223"
+    }
+  },
+  "sensitivity": {
+    "base_price_minus_10pct": "999.1247",
+    "base_volume_minus_10pct": "999.1247",
+    "base_margin_45pct": "1006.4835",
+    "base_moutai_asp_frozen_at_2026": "922.6847"
+  },
+  "valuation": [
+    {
+      "price": "900",
+      "cap_yi": "11250.73440900",
+      "pe_2026E": "13.68918312303253651670628362",
+      "yield_at_assumed_75pct_payout": "0.05478778340966879009364765461"
+    },
+    {
+      "price": "1000",
+      "cap_yi": "12500.81601000",
+      "pe_2026E": "15.21020347003615168522920402",
+      "yield_at_assumed_75pct_payout": "0.04930900506870191108428288915"
+    },
+    {
+      "price": "1100",
+      "cap_yi": "13750.89761100",
+      "pe_2026E": "16.73122381703976685375212442",
+      "yield_at_assumed_75pct_payout": "0.04482636824427446462207535377"
+    },
+    {
+      "price": "1200",
+      "cap_yi": "15000.97921200",
+      "pe_2026E": "18.25224416404338202227504482",
+      "yield_at_assumed_75pct_payout": "0.04109083755725159257023574095"
+    },
+    {
+      "price": "1237",
+      "cap_yi": "15463.50940437",
+      "pe_2026E": "18.81502169243471963462852537",
+      "yield_at_assumed_75pct_payout": "0.03986176642578974218616240028"
+    },
+    {
+      "price": "1300",
+      "cap_yi": "16251.06081300",
+      "pe_2026E": "19.77326451104699719079796523",
+      "yield_at_assumed_75pct_payout": "0.03793000389900147006483299165"
+    }
+  ],
+  "comparison_20260907": {
+    "old_base_profit_recomputed": "1386.897987474339400335713124",
+    "volume_change_profit_impact": "-130.2609590981431491851493251",
+    "new_base_profit": "1095.9487"
+  }
+}

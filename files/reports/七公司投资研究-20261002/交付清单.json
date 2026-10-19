@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-02",
+  "company_reports": 7,
+  "overview_reports": 1,
+  "local_links_checked": 28,
+  "json_files_parsed": 39,
+  "python_files_syntax_checked": 19,
+  "reports": [
+    {
+      "file": "七公司研究总览-20261002.md",
+      "bytes": 12077,
+      "sha256": "238580a66dd51c39a4bc0184afd573601f2e5ed8d83aa093d91ba5a9ac793175"
+    },
+    {
+      "file": "腾讯/腾讯研究报告-20261002.md",
+      "bytes": 22941,
+      "sha256": "48d9a9c1d654ac6ffc73bcecbe09b72384c2b0f225b9f043bcf04b97b0724ee2"
+    },
+    {
+      "file": "快手/快手研究报告-20261002.md",
+      "bytes": 25294,
+      "sha256": "81598020044f3774f56e3e698135f038e385e2b133dabad6cdb0da6a30d87679"
+    },
+    {
+      "file": "拼多多/拼多多研究报告-20261002.md",
+      "bytes": 23677,
+      "sha256": "41a900d01777792e1583295492093d9df9c0648f823bae6c592fb4b3211344ec"
+    },
+    {
+      "file": "美团/美团研究报告-20261002.md",
+      "bytes": 25847,
+      "sha256": "adb710a6a830eeeb0177a91110c169b5afb7b31cf3d6d64ecdb94fe07e32dead"
+    },
+    {
+      "file": "泡泡玛特/泡泡玛特研究报告-20261002.md",
+      "bytes": 21965,
+      "sha256": "69b68f5f862468a11cc8764f734c201d7a9ae07b7cae38fc075439102e31229b"
+    },
+    {
+      "file": "茅台/茅台研究报告-20261002.md",
+      "bytes": 24832,
+      "sha256": "8a1eea903cad23aab16dd398c11e786dae3d55b7ab290305607c2c75adc3a001"
+    },
+    {
+      "file": "MiniMax/MiniMax研究报告-20261002.md",
+      "bytes": 25171,
+      "sha256": "0fa7002379239ca8cedc0edc60cf640b95b8b23805978afc1e5d8096d1626092"
+    }
+  ],
+  "caveat": "Completeness and arithmetic checks are not independent validation of all financial data or forecasts."
+}
