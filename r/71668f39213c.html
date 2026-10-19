@@ -1,0 +1,547 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>阿里外卖 vs 淘宝协同效应专题（四角色并行研究） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/美团/index.html">美团</a></div><h1>阿里外卖 vs 淘宝协同效应专题（四角色并行研究）</h1><div class="meta"><a href="../companies/美团/index.html">美团</a> ｜ 2026-04-20 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E5%9B%A2/%E9%98%BF%E9%87%8C%E5%A4%96%E5%8D%96%E5%8D%8F%E5%90%8C%E6%95%88%E5%BA%94%E4%B8%93%E9%A2%98-20260420.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#0">0. 核心问题与三句话结论</a><ul>
+<li><a href="#_1">用户核心问题</a></li>
+<li><a href="#_2">三句话回答</a></li>
+</ul>
+</li>
+<li><a href="#1">1. 实际花了多少钱</a><ul>
+<li><a href="#11-fy2026-800-900-ebita">1.1 FY2026 单年烧钱 800-900 亿（即时零售经调整 EBITA 口径）</a></li>
+<li><a href="#12">1.2 阿里历史对比：这是饿了么收购以来最激进的一次</a></li>
+<li><a href="#13">1.3 集团层面的财务代价</a></li>
+<li><a href="#14">1.4 与美团烧钱规模对比</a></li>
+</ul>
+</li>
+<li><a href="#2">2. 协同效应真伪验证（最关键）</a><ul>
+<li><a href="#21-partial-synergy">2.1 核心判断：部分协同（Partial Synergy）</a></li>
+<li><a href="#22">2.2 三个维度的判断</a></li>
+<li><a href="#23">2.3 最犀利的一句话</a></li>
+</ul>
+</li>
+<li><a href="#3">3. 蒋凡战略解读</a><ul>
+<li><a href="#31-20-20">3.1 核心洞察：这不是饿了么 2.0，是淘天 2.0 保卫战</a></li>
+<li><a href="#32-2018">3.2 与 2018 饿了么战略的根本差异</a></li>
+<li><a href="#33">3.3 对"未来是否继续投入"的关键判断</a></li>
+</ul>
+</li>
+<li><a href="#4">4. 对美团的实际冲击</a><ul>
+<li><a href="#41">4.1 份额之战：美团从绝对霸主 → 双寡头之一</a></li>
+<li><a href="#42-op-593">4.2 财务冲击：OP 蒸发 593 亿</a></li>
+<li><a href="#43">4.3 市值冲击</a></li>
+<li><a href="#44">4.4 但美团基本盘未穿</a></li>
+<li><a href="#45">4.5 卖方目标价共识</a></li>
+</ul>
+</li>
+<li><a href="#5-2026-2029">5. 三年推演（2026-2029）</a></li>
+<li><a href="#6">6. 关键长期结论（段永平式）</a><ul>
+<li><a href="#61">6.1 "整个赛道是净负和"</a></li>
+<li><a href="#62">6.2 段永平"补贴规律"</a></li>
+<li><a href="#63">6.3 商业规律角度：阿里"非核心电商"终局</a></li>
+<li><a href="#64">6.4 最终判断：对美团是分批建仓的价位</a></li>
+</ul>
+</li>
+<li><a href="#7">7. 关键监控信号（投资者应每季盯）</a><ul>
+<li><a href="#71">7.1 美团关键信号</a></li>
+<li><a href="#72">7.2 阿里关键信号（决定美团命运）</a></li>
+<li><a href="#73">7.3 行业信号</a></li>
+</ul>
+</li>
+<li><a href="#8-ai">8. AI 研究局限性声明</a><ul>
+<li><a href="#81">8.1 关键数据缺口</a></li>
+<li><a href="#82">8.2 研究方法透明度</a></li>
+<li><a href="#83">8.3 短板</a></li>
+</ul>
+</li>
+<li><a href="#9">9. 相关子报告</a></li>
+<li><a href="#10">10. 免责声明</a></li>
+</ul>
+</div>
+</details><article><p><strong>出品</strong>：ai-berkshire 投研团队
+<strong>研究日期</strong>：2026-04-20
+<strong>研究主题</strong>：阿里巴巴淘宝闪购战役对淘宝主站的协同效应验证 + 实际投入金额测算 + 对美团的冲击分析
+<strong>研究方法</strong>：4 个 Agent 并行（烧钱金额专员 / 淘宝协同专员 / 美团冲击专员 / 蒋凡战略专员）</p>
+<hr />
+<h2 id="0">0. 核心问题与三句话结论</h2>
+<h3 id="_1">用户核心问题</h3>
+<ol>
+<li>阿里这次做外卖，真的和淘宝产生正向协同效应了吗？</li>
+<li>实际花了多少钱？</li>
+<li>从商业规律看，未来还会重投入吗？</li>
+</ol>
+<h3 id="_2">三句话回答</h3>
+<ol>
+<li><strong>协同是"半真半伪"</strong>：流量协同真（淘宝 DAU +20%、MAU 9.83 亿创新高、88VIP 4900→5300 万），但<strong>变现协同在补贴退坡 1-3 个月后塌方</strong>（FY26Q3 淘天 CMR 从 +10% 暴跌到 +1%），长期留存仍需 2026 全年验证</li>
+<li><strong>烧钱 FY2026 单年 800-900 亿</strong>（≈ 阿里 2018-2024 六年本地生活累计亏损 450 亿的 1.8 倍），阿里已明确承诺"三年不担心亏损"（到 FY2029 才整体盈利），累计 3 年可能 1,200-1,500 亿</li>
+<li><strong>会继续烧 2-3 年，但补贴强度已过峰</strong>（CFO 徐宏明确 FY26Q2 是投入峰值）；<strong>真正的收手信号不是"外卖亏损"，而是"淘天 CMR 恢复 mid-single-digit+"——如果 2026 年 CMR 持续 +1-3%，本战略将被市场重新定价为"昂贵的防御战"而非"增长战"</strong></li>
+</ol>
+<hr />
+<h2 id="1">1. 实际花了多少钱</h2>
+<h3 id="11-fy2026-800-900-ebita">1.1 FY2026 单年烧钱 800-900 亿（即时零售经调整 EBITA 口径）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>季度</th>
+<th>即时零售/本地生活 EBITA</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY26Q1（2025.04-06）</td>
+<td><strong>-100 亿</strong></td>
+<td>淘宝闪购 4 月底上线，百亿补贴启动</td>
+</tr>
+<tr>
+<td>FY26Q2（2025.07-09）</td>
+<td><strong>-360 亿</strong></td>
+<td>峰值。500 亿补贴 3 个月烧过半；7 月单月补贴超 100 亿</td>
+</tr>
+<tr>
+<td>FY26Q3（2025.10-12）</td>
+<td><strong>-350 亿</strong></td>
+<td>双十一叠加；Q3 单位经济亏损较 7-8 月降 50%</td>
+</tr>
+<tr>
+<td>FY26Q4（2026.01-03 估算）</td>
+<td>-100 ~ -150 亿</td>
+<td>管理层指引"显著收缩"</td>
+</tr>
+<tr>
+<td><strong>FY2026 合计</strong></td>
+<td><strong>-800 至 -900 亿</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="12">1.2 阿里历史对比：这是饿了么收购以来最激进的一次</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>周期</th>
+<th>累计投入</th>
+<th>年均强度</th>
+<th>获得份额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2018-2021（王磊时代，补贴战 1.0）</td>
+<td>收购对价 95 亿美元 + 3 年累计亏 400-500 亿</td>
+<td>100-150 亿/年</td>
+<td>份额 40% → 23%（<strong>失败</strong>）</td>
+</tr>
+<tr>
+<td><strong>2025-2026（蒋凡时代，闪购战役）</strong></td>
+<td><strong>单年 800-900 亿</strong></td>
+<td><strong>单季峰值 350 亿</strong></td>
+<td>份额 27% → 42.8%（<strong>已扭转</strong>）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>单年烧钱强度提升 3-4 倍，份额在 7-8 个月内从 27% 冲到 42.8%——这是中国互联网史上罕见速度</strong>。</p>
+<h3 id="13">1.3 集团层面的财务代价</h3>
+<ul>
+<li>FY26Q2：集团 EBITA <strong>同比 -78%</strong>（中国电商板块利润 -77%）</li>
+<li>FY26Q3：集团经营利润 <strong>同比 -74%</strong>，自由现金流 <strong>同比 -71%</strong></li>
+<li>FY2025 集团 FCF 已腰斩至 738 亿（-53%），FY2026 将<strong>接近零甚至为负</strong>（AI Capex + 外卖补贴双重挤压）</li>
+</ul>
+<h3 id="14">1.4 与美团烧钱规模对比</h3>
+<ul>
+<li>阿里 FY26Q2 单季销售费用 <strong>665 亿（同比 +105%）</strong>，占收入 26.8%</li>
+<li>是美团同期补贴+营销的 <strong>2 倍</strong></li>
+<li>阿里 FY2026 单年烧钱 ≈ 美团全年亏损的 3-4 倍</li>
+</ul>
+<hr />
+<h2 id="2">2. 协同效应真伪验证（最关键）</h2>
+<h3 id="21-partial-synergy">2.1 核心判断：部分协同（Partial Synergy）</h3>
+<p><strong>硬证据（真协同）</strong>：
+| 指标 | 2024 基准 | 2025 峰值 | 变化 |
+|------|----------|----------|------|
+| 淘宝 APP DAU 同比 | 低个位数 | +20%（8 月） | 结构性跃升 |
+| 淘宝 APP MAU（亿） | ~9.2 | <strong>9.83</strong>（9 月历史新高） | +6-7% |
+| 月人均时长（分钟） | ~244 | <strong>267</strong>（+9.2%） | 用户粘性上升 |
+| 双 11 当日 DAU（亿） | 4.87 | <strong>5.08</strong>（+4.2%） | 破纪录 |
+| 88VIP 会员（万） | 3,500 | <strong>5,300+</strong> | +50% |</p>
+<p><strong>反证（伪协同）</strong>：
+| 指标 | 补贴期 | 补贴退坡后 | 塌方时间 |
+|------|-------|-----------|---------|
+| <strong>淘天 CMR 同比</strong> | FY25Q4 +12% / FY26Q1 +10% / FY26Q2 +10% | <strong>FY26Q3 +1%</strong> | 补贴退坡 1-3 月 |
+| 88VIP 季度净增 | ~200 万 | （vs DAU +20% 的背离） | 增量流量中高价值用户占比有限 |
+| 淘天 vs 拼多多 GMV 差距 | 2.4-2.6 万亿 | 稳定未缩小 | 闪购未改变电商格局 |
+| 抖音电商 GMV 同比 | — | 2025 前 10 月 <strong>+30%+</strong> | 继续抢份额 |</p>
+<h3 id="22">2.2 三个维度的判断</h3>
+<p><strong>维度一（流量协同）</strong>：<strong>真</strong> ✓
+- 日均增量 6,000-9,000 万 DAU（≈一个京东 APP 规模）
+- MAU、DAU、时长三重指标全部提升</p>
+<p><strong>维度二（变现协同）</strong>：<strong>半真 → 衰减</strong> ⚠️
+- FY25Q4-FY26Q2 CMR +12%/+10%/+10% 确实显著超前期
+- 但 <strong>FY26Q3 暴跌到 +1%</strong>，<strong>时间点恰好对应补贴开始退坡</strong>——如果协同是结构性的，补贴退坡后不应立刻塌方</p>
+<p><strong>维度三（长期留存）</strong>：<strong>未知</strong> ❓
+- 日订单从 1.2 亿峰值回落至 8,000 万稳态（33% 订单是补贴拉动）
+- 2026-03 配送费恢复收取后，部分场景价格已高于美团
+- 2026 全年是决定性窗口</p>
+<h3 id="23">2.3 最犀利的一句话</h3>
+<blockquote>
+<p><strong>"500 亿营销费 + 258 亿 EBITA 蒸发 = 换来 CMR 从 +10% 回到 +1%。如果 2026 年无法证明'补贴退潮后 CMR 仍维持 mid-single-digit+'，这场协同战略将被市场重新定价为'昂贵的防御战'而非'增长战'。"</strong></p>
+</blockquote>
+<hr />
+<h2 id="3">3. 蒋凡战略解读</h2>
+<h3 id="31-20-20">3.1 核心洞察：这不是饿了么 2.0，是<strong>淘天 2.0 保卫战</strong></h3>
+<p><strong>战略意图权重</strong>（蒋凡战略专员判断）：
+- <strong>B（防御淘天 DAU 被抖音/拼多多侵蚀）：40%</strong>
+- <strong>C（生态协同做大淘宝主站）：40%</strong>
+- A（真打外卖抢美团份额）：20%</p>
+<p><strong>外卖是手段，淘天主站才是目的</strong>。每烧 1 元补贴同时买到：外卖份额 + 淘宝 DAU + 88VIP 增长 + 即时零售入口（四重收益）。</p>
+<h3 id="32-2018">3.2 与 2018 饿了么战略的根本差异</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>2018 王磊</th>
+<th>2025 蒋凡</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>战略层级</td>
+<td>事业群总裁（张勇旁支）</td>
+<td>淘天 CEO + 集团 CEO 背书</td>
+</tr>
+<tr>
+<td>流量入口</td>
+<td>饿了么独立 APP（冷启动）</td>
+<td>淘宝主站嵌入（6-7 亿 MAU）</td>
+</tr>
+<tr>
+<td>战略位置</td>
+<td>边缘战场</td>
+<td>阿里三大战略主线之一</td>
+</tr>
+<tr>
+<td>组织整合</td>
+<td>菜鸟/口碑/饿了么分立</td>
+<td>统一 88VIP 会员、菜鸟、盒马协同</td>
+</tr>
+<tr>
+<td><strong>结果</strong></td>
+<td>份额 40% → 23%（五年失败）</td>
+<td>份额 27% → 42.8%（一年已扭转）</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="33">3.3 对"未来是否继续投入"的关键判断</h3>
+<p><strong>会继续投入 2-3 年的原因</strong>：
+1. 防御性投入的惯性：<strong>只要抖音/拼多多仍威胁淘宝</strong>，补贴就停不下来
+2. 蒋凡 KPI 绑定：他的政治生命绑在"淘天 AR+DAU 双指标"上
+3. 战略承诺已公开：2026-01 内部会议"三年不担心亏损"、FY2029 才整体盈利
+4. 沉没成本：烧了 800 亿后收手等于承认战略失败</p>
+<p><strong>会快速收手的触发条件</strong>：
+1. <strong>淘天 CMR 持续低迷</strong>（如 2026 年都保持 +1-3%）→ 协同战略破产
+2. <strong>AI 资本开支被迫翻倍</strong>（资源抽水）
+3. <strong>监管硬性干预</strong>（2026-03 市监总局转发《外卖大战该结束了》反内卷号角）
+4. 拼多多/抖音电商增速明显放缓 → 防御动机消失</p>
+<hr />
+<h2 id="4">4. 对美团的实际冲击</h2>
+<h3 id="41">4.1 份额之战：美团从绝对霸主 → 双寡头之一</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>2024Q1</th>
+<th>2025Q3</th>
+<th>2025Q4</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美团外卖</td>
+<td><strong>~75%</strong></td>
+<td>~50%</td>
+<td><strong>~50%</strong></td>
+<td><strong>-25 pct</strong></td>
+</tr>
+<tr>
+<td>阿里系（饿+淘闪）</td>
+<td>~23%</td>
+<td><strong>42.8%</strong></td>
+<td>~40%</td>
+<td>+17 pct</td>
+</tr>
+<tr>
+<td>京东外卖</td>
+<td>0%</td>
+<td>~8%</td>
+<td>~8%</td>
+<td>+8 pct</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>即时零售 GTV（2025Q4）</strong>：淘宝闪购 45.2% vs 美团闪购 45.0% —— 阿里一度反超 0.2 pct。</p>
+<h3 id="42-op-593">4.2 财务冲击：OP 蒸发 593 亿</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2024</th>
+<th><strong>2025</strong></th>
+<th>2026E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心本地商业 OP（亿）</td>
+<td><strong>524</strong></td>
+<td><strong>(69)</strong></td>
+<td>100-250</td>
+</tr>
+<tr>
+<td>核心本地商业 OPM</td>
+<td>+20.9%</td>
+<td><strong>-2.6%</strong></td>
+<td>4-9%</td>
+</tr>
+<tr>
+<td>销售费用（亿）</td>
+<td>640</td>
+<td><strong>1,029（+48.7%）</strong></td>
+<td>850-950</td>
+</tr>
+<tr>
+<td>集团净利润（亿）</td>
+<td>358</td>
+<td><strong>(234)</strong></td>
+<td>(80) ~ +50</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>单年 OP 蒸发 593 亿，OPM 下跌 23.5 个百分点</strong>。</p>
+<h3 id="43">4.3 市值冲击</h3>
+<ul>
+<li>2025-02-26 高点 168 HKD → 2026-02-13 低点 80 HKD（<strong>跌 52%</strong>）</li>
+<li>市值从 1.2 万亿港币 → 最低 5,000 亿港币</li>
+<li><strong>蒸发 6,700 亿港元市值</strong></li>
+</ul>
+<h3 id="44">4.4 但美团基本盘未穿</h3>
+<p><strong>守住的三样东西</strong>：
+1. <strong>订单份额守住 50%+</strong>（2025-07-12 即时配送峰值 <strong>1.5 亿日单</strong>反创新高）
+2. <strong>745 万骑手网络、1,450 万活跃商家</strong>（10 年积累的网络效应）
+3. <strong>现金 1,669 亿</strong>（财务弹药仍充足）</p>
+<p><strong>防御动作</strong>：
+- 销售费用 +48.7%（337 亿增量全砸外卖闪购）
+- KeeTa 国际化：香港 2025-10 首个盈利月、沙特 20 城/1.5 万骑手、巴西 10 亿美元 5 年计划
+- 闪电仓 2027 目标 10 万个、2,000 亿规模
+- 2026-02 收购叮咚买菜（7.17 亿美元）
+- <strong>2026-04-13 授出 7,931 万股 RSU（公允价值 68.57 亿港元，6 年最大单笔）</strong>——董事会在低位留人+博反弹</p>
+<h3 id="45">4.5 卖方目标价共识</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>机构</th>
+<th>2026 目标价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>摩根士丹利</td>
+<td>215 HKD（牛市 300）</td>
+</tr>
+<tr>
+<td>野村</td>
+<td>224 HKD</td>
+</tr>
+<tr>
+<td>高盛</td>
+<td>144-193 HKD</td>
+</tr>
+<tr>
+<td><strong>共识中枢</strong></td>
+<td><strong>170-200 HKD</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>当前 85 HKD 隐含 +100% 至 +150% 上行空间</strong>。</p>
+<hr />
+<h2 id="5-2026-2029">5. 三年推演（2026-2029）</h2>
+<p>综合四位专员判断，2029 年格局概率：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>阿里结局</th>
+<th>美团结局</th>
+<th>美团股价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观（阿里逆袭）</td>
+<td>15%</td>
+<td>份额 35%+，2028 转正</td>
+<td>份额 45-50%，腰斩</td>
+<td>60-75 HKD</td>
+</tr>
+<tr>
+<td><strong>中性（双寡头共存）</strong></td>
+<td><strong>55%</strong></td>
+<td>份额 28-32%，累计烧 1,000-1,200 亿，2028 平衡</td>
+<td>份额 55-60%，OPM 10-13%</td>
+<td>130-150 HKD</td>
+</tr>
+<tr>
+<td>悲观（阿里再败北）</td>
+<td>30%</td>
+<td>份额 22-25%，500 亿后收手</td>
+<td>份额 60-65%，OPM 修复到 15%+</td>
+<td>180-220 HKD</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>加权中枢：美团 125 HKD（当前 85 HKD）</strong>。</p>
+<hr />
+<h2 id="6">6. 关键长期结论（段永平式）</h2>
+<h3 id="61">6.1 "整个赛道是净负和"</h3>
+<p><strong>蒋凡赢了战略（淘天保卫战有效），但整个赛道回报率永久降档</strong>：
+- 美团长期净利率天花板从 15-18% → <strong>下调到 10-13%</strong>
+- 阿里估值锚：从"淘天 PE" → "云+淘天+本地生活 SOTP"
+- 两家合计蒸发数千亿市值</p>
+<h3 id="62">6.2 段永平"补贴规律"</h3>
+<blockquote>
+<p><strong>"凡是用补贴获得的用户，用补贴也会失去"</strong></p>
+</blockquote>
+<p>这是本次战役的底层物理学。<strong>33% 订单是补贴拉动</strong>、配送费恢复后部分场景价格高于美团——这些用户是否留存，2026 全年见分晓。</p>
+<h3 id="63">6.3 商业规律角度：阿里"非核心电商"终局</h3>
+<p>阿里历史上"除了核心电商都做不成"：
+- 本地生活（饿了么 2018-2022 失败）
+- 大文娱（优酷从老大到边缘）
+- 新零售（盒马反复重启）
+- 高德本地生活（始终赔钱）</p>
+<p><strong>这次蒋凡的改进是本质性的（战略层级 + 流量入口 + 组织整合），但"外卖是规模+网络效应+密度三位一体的生意"，纯靠补贴买不到美团 10 年积累的骑手密度和商家深度</strong>。全面击败美团的概率 &lt; 15%。</p>
+<h3 id="64">6.4 最终判断：对美团是分批建仓的价位</h3>
+<p>当前 85 HKD 处于"悲观-中性摇摆区"：
+- <strong>买入区：70-85 HKD</strong>（当前即在下沿）
+- <strong>目标中枢：125 HKD</strong>（+47%）
+- <strong>卖出区：150 HKD 以上</strong></p>
+<p><strong>但必须承担 2026 年阿里继续烧钱+监管不落地的情景风险</strong>。</p>
+<hr />
+<h2 id="7">7. 关键监控信号（投资者应每季盯）</h2>
+<h3 id="71">7.1 美团关键信号</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>当前</th>
+<th>确认/警戒线</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心本地商业 OP</td>
+<td>Q4 -100 亿</td>
+<td><strong>2026Q2 转正 = 拐点</strong></td>
+</tr>
+<tr>
+<td>外卖单量份额</td>
+<td>~50%</td>
+<td><strong>破 45% = 护城河受损</strong></td>
+</tr>
+<tr>
+<td>销售费用率</td>
+<td>28.2%</td>
+<td><strong>降至 22% = 压力缓和</strong></td>
+</tr>
+<tr>
+<td>现金储备</td>
+<td>1,669 亿</td>
+<td>破 1,200 亿 = 警示</td>
+</tr>
+<tr>
+<td>2026 回购恢复</td>
+<td>2025 停摆</td>
+<td>恢复 50 亿+ = 董事会信心</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="72">7.2 阿里关键信号（决定美团命运）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>当前</th>
+<th>解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>淘天 CMR 增速</strong></td>
+<td><strong>FY26Q3 +1%</strong>（暴跌）</td>
+<td><strong>mid-to-high single digit = 真协同 / 持续 low single = 协同破产</strong></td>
+</tr>
+<tr>
+<td>88VIP 季度净增</td>
+<td>~200 万/季</td>
+<td>+300 万/季 = 高价值用户锁定</td>
+</tr>
+<tr>
+<td>闪购非餐占比</td>
+<td>N/A</td>
+<td>&gt;75% = 健康 UE</td>
+</tr>
+<tr>
+<td>单均补贴</td>
+<td>N/A</td>
+<td>≤3 元 = 退烧</td>
+</tr>
+<tr>
+<td>蒋凡职位</td>
+<td>淘天 CEO</td>
+<td>2027 Q2 观察是否仍在任</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="73">7.3 行业信号</h3>
+<ul>
+<li>2026-03-25 市监总局《外卖大战该结束了》发文后的后续动作</li>
+<li>反垄断调查是否立案</li>
+<li>三家补贴强度是否同步下降</li>
+</ul>
+<hr />
+<h2 id="8-ai">8. AI 研究局限性声明</h2>
+<h3 id="81">8.1 关键数据缺口</h3>
+<ol>
+<li><strong>闪购用户→电商 30/60/90 天转化率</strong>（阿里从未披露，是协同真伪的最关键数据）</li>
+<li><strong>88VIP 季度净增明细</strong></li>
+<li><strong>FY26Q4 完整数据未发布</strong>（2026-05 后财报才出）</li>
+<li><strong>闪购 UE 拆分</strong>（补贴/配送/技术成本）</li>
+<li><strong>蒋凡 2025 Q4 内部信原文</strong>（转述自二手媒体）</li>
+</ol>
+<h3 id="82">8.2 研究方法透明度</h3>
+<ul>
+<li>4 个 Agent 并行，其中烧钱金额 Agent、美团冲击 Agent 使用 WebSearch 7-12 次</li>
+<li>淘宝协同 Agent 做了较完整的交叉验证</li>
+<li>蒋凡战略 Agent 主要基于训练知识 + 本地报告，时间线数据精度中等</li>
+<li>所有量化数据已标注置信度（高/中/低）和来源</li>
+</ul>
+<h3 id="83">8.3 短板</h3>
+<ul>
+<li>无法访问 Wind/Bloomberg 等付费终端的分析师一致预期数据</li>
+<li>未锁定 2026-04-20 当日股价</li>
+<li>FY26Q3 亏损 350 亿为媒体倒推口径（非公司直接披露）</li>
+</ul>
+<hr />
+<h2 id="9">9. 相关子报告</h2>
+<ul>
+<li><a href="../r/544a54f8a1ef.html">烧钱金额测算</a> — FY2024-FY2026 逐季拆分</li>
+<li><a href="../r/b17da0a535e8.html">淘宝协同效应专题</a> — 真伪判断三个维度</li>
+<li><a href="../r/e3a29ab7fa68.html">蒋凡战略判断</a> — 战略解读 + 3 年推演</li>
+<li><a href="../r/22a59a6a962a.html">美团冲击量化</a> — 份额/财务/市值/估值</li>
+</ul>
+<hr />
+<h2 id="10">10. 免责声明</h2>
+<p>本报告仅为投资研究参考，不构成任何投资建议。所有数据来自公开 WebSearch，未经一手财报逐项核对。股票投资有风险。作者不承担因使用本报告信息造成的任何损失。</p>
+<hr />
+<p><strong>ai-berkshire 投研团队 / 2026-04-20</strong></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/46875cd48cf3.html">美团（3690.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/faeed57c9604.html">美团：AI 能创造多少利润，十年后还能留下多少？</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/0f5eec4b44dd.html">审计范围</a><div class="meta">2026-09-25 · 底稿</div></li><li><a href="../r/b9902ea4a5b8.html">美团（03690.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/14f7d53fcf1f.html">audit_scope</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/5c818f86a8c3.html">美团这27亿利润，有35亿不是主业赚的</a><div class="meta">2026-08-29 · 财报</div></li><li><a href="../r/c0f90d479cfd.html">美团扭亏为盈了</a><div class="meta">2026-08-29 · 公众号</div></li><li><a href="../r/5974385e15ed.html">AI 会不会绕过美团？</a><div class="meta">2026-07-01 · 公众号</div></li><li><a href="../r/f18ab8ccf860.html">全球最赚钱的外卖平台，为什么反而最便宜？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/636f49fa1105.html">抖音、京东和骑手成本，谁才是美团真正的威胁？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/a349d6ac557c.html">AI 会不会绕过美团？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/c24146600d5e.html">全球本地生活投资地图：美团之外，谁更像好生意？</a><div class="meta">2026-06-28 · 公众号</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

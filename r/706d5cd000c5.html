@@ -1,0 +1,309 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>中国大模型行业横向格局研究报告（2026年7月） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/中国大模型六强横向研究-20260721/index.html">中国大模型六强横向研究-20260721</a></div><h1>中国大模型行业横向格局研究报告（2026年7月）</h1><div class="meta"><a href="../topics/中国大模型六强横向研究-20260721/index.html">中国大模型六强横向研究-20260721</a> ｜ 2026-07-21 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%AD%E5%BC%BA%E6%A8%AA%E5%90%91%E7%A0%94%E7%A9%B6-20260721/07-%E8%A1%8C%E4%B8%9A%E6%A8%AA%E5%90%91%E6%A0%BC%E5%B1%80.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、格局演变：从"百模大战"到"收敛与分野"</a></li>
+<li><a href="#_2">二、模型能力横向对比</a></li>
+<li><a href="#_3">三、商业化对比</a></li>
+<li><a href="#20267">四、资本对比（2026年7月）</a></li>
+<li><a href="#_4">五、人才流动</a></li>
+<li><a href="#_5">六、算力与政策</a></li>
+<li><a href="#_6">七、开源生态对比</a></li>
+<li><a href="#_7">核心结论（供六家对比使用）</a></li>
+</ul>
+</div>
+</details><article><p><strong>研究范围</strong>：字节Seed/豆包、阿里Qwen、MiniMax、月之暗面Kimi、智谱GLM、DeepSeek 六家对比的行业底座数据
+<strong>数据截至</strong>：2026年7月21日 | 置信度标注：🟢官方/权威机构 🟡可信媒体 🔴推算/传闻</p>
+<hr />
+<h2 id="_1">一、格局演变：从"百模大战"到"收敛与分野"</h2>
+<p><strong>叙事变迁三阶段</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>主叙事</th>
+<th>标志事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024年</td>
+<td>百模大战、"六小虎"（智谱/MiniMax/月之暗面/百川/零一/阶跃）</td>
+<td>创业公司融资竞赛、C端投流大战</td>
+</tr>
+<tr>
+<td>2025年</td>
+<td>DeepSeek冲击、大厂反攻</td>
+<td>R1爆发；零一、百川相继收缩；大厂（字节/阿里）全力入场</td>
+</tr>
+<tr>
+<td>2026年</td>
+<td>格局收敛、资本分野</td>
+<td>智谱、MiniMax上市；DeepSeek首次融资；Kimi估值半年翻数倍</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>明确掉队的两家</strong>（🟢多方交叉证实）：
+- <strong>零一万物</strong>：2025年1月将大部分预训练与AI Infra团队并入阿里云，放弃基座模型预训练，全面转向政企AI定制（对标Palantir）；2025年全年订单5亿元、收入2.5亿元，截至2026年5月订单总额突破15亿元。李开复内部信自称"别叫我们六小虎，该叫金钱豹"（36氪、虎嗅）。
+- <strong>百川智能</strong>：弃金融、保医疗，2026年5月26日发布医疗大模型Baichuan-M4与"百小医"，基座迭代明显放缓，账上尚有约30亿元现金（36氪）。</p>
+<p><strong>当前第一梯队共识</strong>（🟡媒体综合）：大厂两极（字节Seed/豆包、阿里Qwen）+ DeepSeek + 创业三强（月之暗面、智谱、MiniMax），阶跃星辰以多模态+终端路线仍在"新六小虎"叙事内但体量偏小（量子位、投中网）。本报告六家即为市场公认核心玩家。</p>
+<hr />
+<h2 id="_2">二、模型能力横向对比</h2>
+<p><strong>中美差距总体评估</strong>：
+- 🟢 斯坦福AI Index 2026：中美最佳模型基准差距收窄至 <strong>2.7%</strong>（2023年5月为17.5–31.6个百分点）（TNW）
+- 🟢 Epoch AI：2023年以来中国模型平均落后美国前沿 <strong>约7个月</strong>（Epoch AI）
+- 🟡 LMArena（2026年6-7月）：总榜前五为Claude Opus 4.8、GPT-5.5 Pro、Gemini 3.1 Pro等，<strong>最佳中国模型约列第14位，与第1名差约36 Elo</strong>（llm-stats等榜单聚合、scaling01分析）
+- 🟡 SuperCLUE（2026年5月）：海外Gemini/GPT/Claude占综合塔尖，国内外差距收窄至 <strong>5分以内</strong>（百分制）；DeepSeek、Qwen、豆包、Kimi进入全球前十，数学推理与代码个别项国产登顶（SuperCLUE）</p>
+<p><strong>六家旗舰模型现状</strong>（2026年7月）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>最新旗舰</th>
+<th>亮点</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>字节Seed</td>
+<td>Doubao-Seed-2.0（2026-02）</td>
+<td>IMO/CMO/ICPC金牌级，Putnam超Gemini 3 Pro；定价3.2元/百万输入tokens</td>
+<td>🟢官方发布</td>
+</tr>
+<tr>
+<td>阿里</td>
+<td>Qwen3.6 / 3.6 Plus</td>
+<td>唯一支持1M上下文的开源系，最强开源基座生态</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td>V4（2026-04）/V4.5</td>
+<td>1T参数MoE，全面适配昇腾；V4.5以MIT协议开源</td>
+<td>🟢/🟡</td>
+</tr>
+<tr>
+<td>月之暗面</td>
+<td>Kimi K3（2026-07-16）</td>
+<td>2.8T参数，史上最大开源权重模型（约为V4两倍）；K2.5智能体表现突出</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>智谱</td>
+<td>GLM-5.1（2026-04）</td>
+<td>754B参数，代码/智能体任务对标闭源前沿，成本远低</td>
+<td>🟡（含路透报道）</td>
+</tr>
+<tr>
+<td>MiniMax</td>
+<td>M2.7 + 海螺2.3/语音/音乐</td>
+<td>10B激活参数SWE-Bench Pro达56.22%，多模态矩阵最全</td>
+<td>🟡</td>
+</tr>
+</tbody>
+</table></div>
+<p>（注：与各公司分报告的型号口径存在差异——DeepSeek分报告核实旗舰为V4-Pro/V4-Flash、无V4.5独立发布；智谱分报告核实最新为GLM-5.2（2026-06）；MiniMax分报告核实旗舰为M3（2026-06）。以分报告的逐条核实为准，此表保留行业研究单元的原始口径以供对照。）</p>
+<p><strong>结论</strong>：文本智能上六家已进入"前沿减3-6个月"区间，但综合榜塔尖（Claude/GPT/Gemini）仍未被触及；国产优势集中在性价比（API价格为美国同级5-30倍之差）、开源与智能体工程。</p>
+<hr />
+<h2 id="_3">三、商业化对比</h2>
+<p><strong>一、API/云上调用量份额</strong>（🟢 IDC，注意两期口径）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>厂商</th>
+<th>2024年（总量114.2万亿tokens）</th>
+<th>2025年（总量1944万亿tokens）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>火山引擎（字节）</td>
+<td>46.4%</td>
+<td><strong>49.5%</strong></td>
+</tr>
+<tr>
+<td>阿里云</td>
+<td>紧随其后</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>百度智能云</td>
+<td>紧随其后</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>其他（腾讯云/运营商等）</td>
+<td>约15%</td>
+<td>前三合计近90%</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：IDC经证券时报、DOIT、新浪财经。注：DeepSeek/Kimi/智谱的第一方API未计入此公有云口径，为数据局限。2025年全年调用量同比增长约16倍，火山与阿里"两朵云"格局固化。</p>
+<p><strong>二、C端AI助手MAU</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>产品</th>
+<th>2026年Q1国内MAU（每经/QuestMobile口径）🟡</th>
+<th>2026年4月全球MAU（AICPB）🟡</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>豆包</td>
+<td><strong>3.45亿</strong>（环比+44.2%）</td>
+<td>3.36亿（全球第1）</td>
+</tr>
+<tr>
+<td>千问（阿里）</td>
+<td>1.66亿（环比+969%，升至第2）</td>
+<td>2.20亿（全球第2）</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td>1.27亿（连续四个季度下滑）</td>
+<td>1.39亿</td>
+</tr>
+<tr>
+<td>腾讯元宝</td>
+<td>5734.6万（跌出前三）</td>
+<td>1.11亿</td>
+</tr>
+<tr>
+<td>Kimi</td>
+<td>833.8万（连续四个季度下滑）</td>
+<td>2533万</td>
+</tr>
+<tr>
+<td>智谱清言/MiniMax</td>
+<td>未进国内TOP20</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：每经网、AICPB。数据冲突：Kimi国内833.8万与AICPB全球2533万差异大（统计口径+海外用户），并列存疑。C端结论：<strong>豆包+千问双寡头</strong>，DeepSeek流量红利消退，Kimi主动放弃投流转向订阅/API（ARR 2026年3月破1亿美元、4月超2亿美元 🟡投资人披露，新浪）。</p>
+<p><strong>三、B端政企中标</strong>（🟡智慧城市行业分析）：2026年上半年大模型应用中标项目共 <strong>2770个</strong>，集中于政务/通信/教科/能源/金融；科大讯飞中标数量与金额明显领先（六家均非第一）；智谱单笔大单突出——深圳智慧城市集团9390万元、中国气象局1090万元、联通979万元（智慧城市行业分析、网易）。六家分项中标数量对比：数据缺失。</p>
+<hr />
+<h2 id="20267">四、资本对比（2026年7月）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>最新估值/市值</th>
+<th>关键事件</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>字节（Seed）</td>
+<td>不独立估值（集团内）</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>阿里（Qwen）</td>
+<td>上市公司体内</td>
+<td>阿里云目标拿下2026年AI云增量80%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td>投前约3000亿元，投后或超3500亿元人民币</td>
+<td>首轮融资500亿元（梁文锋个人出资200亿），机构起投门槛50亿元</td>
+<td>🟡多家媒体（量子位、证券时报）</td>
+</tr>
+<tr>
+<td>MiniMax</td>
+<td>2026-05-29约2666亿港元市值（7月20日已跌至约680亿港元，见分报告）</td>
+<td>2026-01-09港股上市（发行价165港元，公开发售超购1837倍，首日+109%破千亿市值）；5月启动A股辅导</td>
+<td>🟢港交所（量子位、财新）</td>
+</tr>
+<tr>
+<td>智谱</td>
+<td>7月20日约4484亿港元（6月22日峰值1.33万亿，一个月内暴跌）</td>
+<td>2026-01-08港股上市（02513）；拟科创板募150亿元（120亿投基座模型），6月17日辅导验收</td>
+<td>🟢（新浪科技、21经济网）；注：另有7/17市值2668.92亿港元的报道与之冲突，7月股价单日跌28%波动极大</td>
+</tr>
+<tr>
+<td>月之暗面</td>
+<td>新一轮目标投后300亿美元</td>
+<td>半年四级跳：2025-12 IDG领投5亿美元@43亿→2026-02 逾7亿美元@100亿→2026-05 美团龙珠领投20亿美元@200亿→2026-06 再启20亿美元@300亿美元</td>
+<td>🟡（新浪、钛媒体）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一级市场态度</strong>（🟡）：从"找中国OpenAI"转向"看谁是AI时代富士康"；融资极度头部化（2026年2月两个月内17家/540亿元），估值锚从参数转向ARR；顶级大模型融资均由国家大基金、地方国资领投，"大模型头部玩家吸干一级市场"（21经济网、投资界）。智谱7月暴跌亦提示二级市场对大模型定价开始挤泡沫。</p>
+<hr />
+<h2 id="_4">五、人才流动</h2>
+<ul>
+<li><strong>标志性事件</strong>（🟡广泛报道、当事方部分否认）：2026年4月，DeepSeek核心研究员<strong>郭达雅</strong>（V3/R1/Coder/Math核心作者）加入字节Seed任智能体方向负责人（L8），传闻年薪近亿元，字节否认具体数额但称"不排除四年后收益数亿元"（21经济网、腾讯新闻）。</li>
+<li><strong>字节Seed的进与出</strong>（🟡界面新闻）：进——周畅（原通义千问大模型负责人）、蒋路（Google）、秦禹嘉（面壁）、黄文灏（零一）、丁铭（智谱）等；出——一年流失近70名技术人才，其中腾讯挖走近30人做AI Infra，阿里Qwen与DeepSeek亦有吸纳（界面）。</li>
+<li><strong>趋势</strong>：人才环流常态化（DeepSeek一号员工即来自字节搜索团队）；字节Top Seed校招计划全球招募100名顶尖AI人才；智能体方向是2026年抢人焦点。</li>
+</ul>
+<hr />
+<h2 id="_5">六、算力与政策</h2>
+<p><strong>出口管制时间线与差异化影响</strong>：
+- 🟢 2025年4月H20纳入出口管制；此前腾讯/阿里/字节曾大规模囤货（H20服务器从约100万元涨至近140万元）。
+- 🟡 2026年5月，美方批准H200对华出口，10家大厂各限购7.5万块、共75万块（阿里、腾讯、字节在列），Blackwell/Rubin仍禁售（新浪科技）。算力储备结论：字节、阿里（自有云+采购配额+囤货）优势最大；创业公司依赖租赁与国产芯片。
+- 🟡 <strong>国产芯片里程碑</strong>：DeepSeek V4研发-训练-推理全链条以华为昇腾为核心支撑，推理主力为昇腾950PR（FP4、1.56 PFLOPS、112GB显存，单卡推理性能称超H20约2.87倍）；寒武纪、昆仑芯、平头哥等多家宣布适配；业界称2026年为"国产AI芯片训练元年"（每经、中新网）。（注：DeepSeek分报告核实为"英伟达训练+昇腾推理"两线并行，"全链条昇腾"说法存在夸大成分。）DeepSeek由此成为"全国产化叙事"最大受益者。
+- 🟢 <strong>政策</strong>：2025年8月27日国务院印发《关于深入实施"人工智能+"行动的意见》——2027年六大领域AI渗透率超70%、2030年超90%、2035年全面进入智能经济阶段；配套长期资本、政府采购倾斜（中央网信办）。政策红利直接利好B端中标市场与国产算力适配者。</p>
+<hr />
+<h2 id="_6">七、开源生态对比</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Qwen累计HF下载</td>
+<td>约7亿次（2026年1月），全球第一开源家族，超越Llama</td>
+<td>🟡（Sean Kim整理HF数据）</td>
+</tr>
+<tr>
+<td>Qwen衍生模型</td>
+<td>11.3万+（2026年4月，超Google+Meta之和），含标签口径超20万；新上传语言模型近50%为Qwen衍生（Llama降至约12%）</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td>与Qwen共同推动中国开源模型在HF反超美国；V4系列采用MIT协议</td>
+<td>🟡（HF官方博客、Interconnects）</td>
+</tr>
+<tr>
+<td>Kimi</td>
+<td>K2/K2.5/K2.6/K3全系开源（改良版MIT）；K3为最大开源权重模型</td>
+<td>🟢HF页面</td>
+</tr>
+<tr>
+<td>GLM</td>
+<td>GLM-5系列开源，代码方向口碑最强</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>MiniMax</td>
+<td>M系列开源但生态规模明显小于前四家</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>六家HF精确下载量横向对比</td>
+<td>数据缺失（仅Qwen有权威累计数）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>开源对格局的影响</strong>：国产已跑通"开源引流+低价API变现"闭环（开源系API定价约为闭源1/10）；2026年2月国产模型在OpenRouter类平台单月token占比首次过半（🟡）；硅谷开发者大规模采用中国开源模型，成为美国政策层关注点（USCC报告）。开源是六家中Qwen/DeepSeek/Kimi/GLM的全球影响力放大器，也是压制闭源创业公司毛利的结构性力量。</p>
+<hr />
+<h2 id="_7">核心结论（供六家对比使用）</h2>
+<ol>
+<li><strong>格局已收敛为"2大厂+1鲶鱼+3上市/准上市创业者</strong>"：字节（调用量49.5%+C端3.45亿MAU）与阿里（开源生态第一+云第二）占据规模两极；DeepSeek以全国产算力+极致性价比+国民品牌占据特殊生态位但C端流量退潮；Kimi靠ARR叙事、智谱靠A+H资本运作与政企、MiniMax靠多模态+最早上市各自求生。</li>
+<li><strong>能力差距收窄至2.7%-半年，但塔尖未破</strong>：六家均未进入LMArena总榜前十，竞争重心转向智能体、多模态与成本。</li>
+<li><strong>资本极度头部化且国资化</strong>，二级市场7月已开始对智谱暴力挤泡沫，估值锚全面转向ARR与中标收入。</li>
+<li><strong>主要数据缺口</strong>：六家B端中标数量分项对比、六家HF下载量精确横向数据、DeepSeek官方收入——均无权威披露。</li>
+</ol></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/6e815cdd4f12.html">智谱（Zhipu AI / 北京智谱华章，02513.HK）深度研究报告</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/14369cdce58f.html">月之暗面（Moonshot AI / Kimi）深度研究报告</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/9b7f91e0f6aa.html">MiniMax（稀宇科技）深度研究报告</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/a7175d653339.html">DeepSeek（深度求索）深度研究分报告</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/d1d4703d6ee5.html">阿里巴巴通义千问 Qwen 深度研究分报告</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/ac4261aa7298.html">字节跳动 Seed（豆包大模型团队）深度研究报告</a><div class="meta">2026-07-21 · 研究</div></li><li><a href="../r/164f0d38d716.html">中国大模型六强横向深度研究：字节Seed、阿里Qwen、DeepSeek、MiniMax、月之暗面、智谱</a><div class="meta">2026-07-21 · 横评对比</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

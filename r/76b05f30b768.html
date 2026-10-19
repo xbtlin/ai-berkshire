@@ -1,0 +1,596 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>腾讯 / 美团 / 拼多多 5 年股价相关性分析 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/综合与横评/index.html">综合与横评</a></div><h1>腾讯 / 美团 / 拼多多 5 年股价相关性分析</h1><div class="meta"><a href="../topics/综合与横评/index.html">综合与横评</a> ｜ 2026-05-01 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF-%E7%BE%8E%E5%9B%A2-PDD-5%E5%B9%B4%E8%82%A1%E4%BB%B7%E7%9B%B8%E5%85%B3%E6%80%A7%E5%88%86%E6%9E%90-20260501.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、核心结论（速读）</a></li>
+<li><a href="#5">二、5 年高低点拆解</a><ul>
+<li><a href="#21-0700hk">2.1 腾讯（0700.HK）</a></li>
+<li><a href="#22-3690hk">2.2 美团（3690.HK）</a></li>
+<li><a href="#23-pdd">2.3 拼多多（PDD）</a></li>
+</ul>
+</li>
+<li><a href="#_2">三、高低点时间差（关键洞察）</a><ul>
+<li><a href="#_3">高点时间差表</a></li>
+<li><a href="#_4">低点时间差表</a></li>
+</ul>
+</li>
+<li><a href="#_5">四、相关性分析</a><ul>
+<li><a href="#41">4.1 价格水平相关性（长期共动度）</a></li>
+<li><a href="#42">4.2 周收益率相关性（短期共动度，更核心）</a></li>
+<li><a href="#43">4.3 分阶段周收益率相关性（看相关性如何变化）</a></li>
+</ul>
+</li>
+<li><a href="#_6">五、为什么高低点完全不同步？</a><ul>
+<li><a href="#51-2021">5.1 美团 2021 年高点 → 一路下跌的逻辑</a></li>
+<li><a href="#52-pdd-2024-05">5.2 PDD 2024-05 高点 → 之后下跌的逻辑</a></li>
+<li><a href="#53-2025-09">5.3 腾讯 2025-09 高点 → 之后下跌的逻辑</a></li>
+<li><a href="#54">5.4 三家"基本面驱动因素"完全不同</a></li>
+</ul>
+</li>
+<li><a href="#_7">六、对投资决策的启示</a><ul>
+<li><a href="#61">6.1 三家不是"替代品"，是"补充品"</a></li>
+<li><a href="#62">6.2 "三选一"该怎么选？</a></li>
+<li><a href="#63">6.3 关键启示：等"全部一起跌"的时候</a></li>
+</ul>
+</li>
+<li><a href="#_8">七、统计学补充</a><ul>
+<li><a href="#71">7.1 数据完整度</a></li>
+<li><a href="#72">7.2 局限性说明</a></li>
+<li><a href="#73">7.3 进一步可做的分析</a></li>
+</ul>
+</li>
+<li><a href="#_9">八、结论</a></li>
+<li><a href="#261">附：数据明细（共 261 行，节选）</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>报告日期</strong>：2026-05-01
+<strong>数据区间</strong>：2021-05-03 ~ 2026-04-30（共 261 周）
+<strong>数据来源</strong>：Yahoo Finance 周线收盘价（0700.HK / 3690.HK / PDD）
+<strong>方法</strong>：ISO 周对齐、Pearson 相关性（价格水平 + 周对数收益率）、滚动分阶段相关性、高低点时间差</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、核心结论（速读）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>高低点是否同时段？</strong></td>
+<td><strong>❌ 完全不同步</strong></td>
+</tr>
+<tr>
+<td>三家高点最大时间差</td>
+<td><strong>1,561 天</strong>（腾讯 2025-09 vs 美团 2021-06，相差 4.3 年）</td>
+</tr>
+<tr>
+<td>三家低点最大时间差</td>
+<td><strong>693 天</strong>（美团 2024-01 vs PDD 2022-03，相差 1.9 年）</td>
+</tr>
+<tr>
+<td>周收益率相关性</td>
+<td>中等偏强（<strong>0.48 ~ 0.68</strong>）</td>
+</tr>
+<tr>
+<td>价格水平相关性</td>
+<td><strong>几乎不相关</strong>（-0.30 ~ +0.36）</td>
+</tr>
+<tr>
+<td>5 年累计涨跌</td>
+<td>腾讯 <strong>-15%</strong> / 美团 <strong>-71%</strong> / PDD <strong>-26%</strong></td>
+</tr>
+<tr>
+<td>2025 年后相关性变化</td>
+<td><strong>大幅下降</strong>（最低降至 +0.17）→ 市场开始按基本面分别定价</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一句话总结</strong>：<strong>三家公司被同一个"中概股情绪"短期联动（周相关性 0.5-0.7），但长周期各自有独立的命运曲线，高低点完全错开</strong>。</p>
+<hr />
+<h2 id="5">二、5 年高低点拆解</h2>
+<h3 id="21-0700hk">2.1 腾讯（0700.HK）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>极值</th>
+<th>日期</th>
+<th>价格（港元）</th>
+<th>当时核心叙事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最高</td>
+<td><strong>2025-09-29</strong></td>
+<td>673.50</td>
+<td>AI 叙事高点 + 持续大额回购 + 港股科技股反弹尾段</td>
+</tr>
+<tr>
+<td>最低</td>
+<td><strong>2022-10-24</strong></td>
+<td>190.72</td>
+<td>美联储加息顶峰 + 中美关系底 + 二十大监管担忧最重</td>
+</tr>
+<tr>
+<td>跌幅（高→低）</td>
+<td></td>
+<td></td>
+<td><strong>-71.7%</strong></td>
+</tr>
+<tr>
+<td>5 年累计</td>
+<td>2021-05-03: 553 → 2026-04-30: 468</td>
+<td></td>
+<td><strong>-15.4%</strong>（三家中最抗跌）</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="22-3690hk">2.2 美团（3690.HK）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>极值</th>
+<th>日期</th>
+<th>价格（港元）</th>
+<th>当时核心叙事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最高</td>
+<td><strong>2021-06-21</strong></td>
+<td>330.00</td>
+<td><strong>平台经济顶峰</strong>——监管反垄断风暴前夕（4月份反垄断罚单刚开始）</td>
+</tr>
+<tr>
+<td>最低</td>
+<td><strong>2024-01-29</strong></td>
+<td>63.25</td>
+<td>外卖份额被抖音挤压 + 港股流动性枯竭 + 海外业务投入未见回报</td>
+</tr>
+<tr>
+<td>跌幅（高→低）</td>
+<td></td>
+<td></td>
+<td><strong>-80.8%</strong>（三家中最惨）</td>
+</tr>
+<tr>
+<td>5 年累计</td>
+<td>2021-05-03: 283 → 2026-04-30: 83</td>
+<td></td>
+<td><strong>-70.6%</strong>（三家中最差）</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="23-pdd">2.3 拼多多（PDD）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>极值</th>
+<th>日期</th>
+<th>价格（美元）</th>
+<th>当时核心叙事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最高</td>
+<td><strong>2024-05-20</strong></td>
+<td>157.57</td>
+<td>Temu 全球爆发 + 国内增长继续 + 一季度财报极超预期</td>
+</tr>
+<tr>
+<td>最低</td>
+<td><strong>2022-03-07</strong></td>
+<td>32.13</td>
+<td>俄乌战争开战 + SEC 退市风险 + 反垄断 + 中概股最惨时刻</td>
+</tr>
+<tr>
+<td>跌幅（高→低）</td>
+<td></td>
+<td></td>
+<td><strong>-79.6%</strong></td>
+</tr>
+<tr>
+<td>5 年累计</td>
+<td>2021-05-03: 134 → 2026-04-30: 99</td>
+<td></td>
+<td><strong>-26.2%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_2">三、高低点时间差（关键洞察）</h2>
+<h3 id="_3">高点时间差表</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>配对</th>
+<th>时间差</th>
+<th>解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯（2025-09）vs 美团（2021-06）</td>
+<td><strong>1,561 天</strong></td>
+<td>跨越整个监管周期，叙事完全不同</td>
+</tr>
+<tr>
+<td>腾讯（2025-09）vs PDD（2024-05）</td>
+<td><strong>497 天</strong></td>
+<td>腾讯靠 AI、PDD 靠 Temu 错峰冲高</td>
+</tr>
+<tr>
+<td>美团（2021-06）vs PDD（2024-05）</td>
+<td><strong>1,064 天</strong></td>
+<td>美团 2021 已封顶时，PDD 还在涨 3 年</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_4">低点时间差表</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>配对</th>
+<th>时间差</th>
+<th>解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯（2022-10）vs PDD（2022-03）</td>
+<td><strong>231 天</strong></td>
+<td><strong>唯一接近的低点配对</strong>（都在 2022）</td>
+</tr>
+<tr>
+<td>腾讯（2022-10）vs 美团（2024-01）</td>
+<td>462 天</td>
+<td>美团比腾讯晚见底 1 年 3 个月</td>
+</tr>
+<tr>
+<td>美团（2024-01）vs PDD（2022-03）</td>
+<td>693 天</td>
+<td>美团比 PDD 晚见底 2 年</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键发现</strong>：
+- <strong>三家公司的"最高点"出现在三个完全不同的年份</strong>（2021、2024、2025）
+- <strong>三家公司的"最低点"也出现在三个不同的年份</strong>（2022、2022、2024）
+- <strong>唯一接近的是腾讯与 PDD 的低点（都在 2022）</strong>——因为这是中概股整体黑暗期，它们一起被砸；但美团比它们晚 1 年 3 个月触底</p>
+<hr />
+<h2 id="_5">四、相关性分析</h2>
+<h3 id="41">4.1 价格水平相关性（长期共动度）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>配对</th>
+<th>Pearson r</th>
+<th>解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯 vs 美团</td>
+<td><strong>+0.09</strong></td>
+<td><strong>几乎不相关</strong></td>
+</tr>
+<tr>
+<td>腾讯 vs PDD</td>
+<td>+0.36</td>
+<td>弱相关</td>
+</tr>
+<tr>
+<td>美团 vs PDD</td>
+<td><strong>-0.30</strong></td>
+<td><strong>负相关</strong>（反向走）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>含义</strong>：长期来看，三家公司的"价格水平"几乎独立。这是因为 5 年里各自有完全不同的成长曲线——腾讯先跌后修复，美团一路下行，PDD 倒 V 形。</p>
+<blockquote>
+<p><strong>不要被"价格相关性"误导</strong>：这个数字主要由长期趋势主导，不能反映短期联动。看下面的"收益率相关性"才更准确。</p>
+</blockquote>
+<h3 id="42">4.2 周收益率相关性（短期共动度，更核心）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>配对</th>
+<th>Pearson r</th>
+<th>解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>腾讯 vs 美团</strong></td>
+<td><strong>+0.68</strong></td>
+<td><strong>强相关</strong>——同为港股大盘股，被同一资金池操作</td>
+</tr>
+<tr>
+<td>腾讯 vs PDD</td>
+<td>+0.53</td>
+<td>中等相关</td>
+</tr>
+<tr>
+<td>美团 vs PDD</td>
+<td>+0.48</td>
+<td>中等相关</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>含义</strong>：周线层面，三家股票确实有显著共动——这是"中概股β"的体现。当宏观风险（美联储、中美关系、监管）来时，它们一起跌；当情绪好转时，它们一起涨。但腾讯和美团（<strong>同为港股</strong>）的相关性明显高于跨市场配对。</p>
+<h3 id="43">4.3 分阶段周收益率相关性（看相关性如何变化）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>时间</th>
+<th>腾讯-美团</th>
+<th>腾讯-PDD</th>
+<th>美团-PDD</th>
+<th>解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>阶段 1</strong></td>
+<td>2021-05 ~ 2022-05</td>
+<td><strong>+0.81</strong></td>
+<td>+0.65</td>
+<td>+0.68</td>
+<td><strong>共同被监管砸</strong>——相关性最高</td>
+</tr>
+<tr>
+<td>阶段 2</td>
+<td>2022-05 ~ 2023-05</td>
+<td>+0.70</td>
+<td>+0.52</td>
+<td>+0.57</td>
+<td>中概股整体修复</td>
+</tr>
+<tr>
+<td>阶段 3</td>
+<td>2023-05 ~ 2024-05</td>
+<td>+0.66</td>
+<td>+0.43</td>
+<td>+0.22</td>
+<td>PDD 因 Temu 走出独立行情</td>
+</tr>
+<tr>
+<td>阶段 4</td>
+<td>2024-05 ~ 2025-05</td>
+<td>+0.71</td>
+<td>+0.55</td>
+<td>+0.37</td>
+<td>港股 vs 美股分化</td>
+</tr>
+<tr>
+<td><strong>阶段 5</strong></td>
+<td>2025-05 ~ 2026-04</td>
+<td><strong>+0.32</strong></td>
+<td>+0.37</td>
+<td><strong>+0.17</strong></td>
+<td><strong>相关性大幅下降，独立定价</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键趋势</strong>：<strong>5 年来相关性在持续下降</strong>——尤其美团-PDD 从 +0.68 降到 +0.17，几乎独立。
+- 早期：被同一个"监管恐慌"驱动 → 高相关
+- 后期：各自的基本面开始主导 → 低相关
+- 这是<strong>基本面投资人最希望看到的转变</strong></p>
+<hr />
+<h2 id="_6">五、为什么高低点完全不同步？</h2>
+<h3 id="51-2021">5.1 美团 2021 年高点 → 一路下跌的逻辑</h3>
+<pre><code>2021-06: 平台经济反垄断风暴启动 → 直接砸最猛
+2022:    社区团购烧钱 + 餐饮 lockdown 双杀
+2023:    抖音生活服务全面进攻外卖
+2024-01: 海外 Keeta 投入未见回报 → 创最低
+2024-2026: 缓慢修复，但没有新成长故事
+</code></pre>
+<p>美团的核心矛盾：<strong>主营外卖/到店增长见顶 + 抖音抢饭碗 + 海外故事未跑通</strong>。这是基本面恶化叠加竞争升级，<strong>没有任何"双击"催化剂</strong>。</p>
+<h3 id="52-pdd-2024-05">5.2 PDD 2024-05 高点 → 之后下跌的逻辑</h3>
+<pre><code>2022-03: 中概股最低点（俄乌+SEC退市）→ 32 美元
+2022-2024: Temu 全球爆发 + 国内继续增长 → 一路涨到 158
+2024-05: Q1 财报超预期 → 顶点
+2024-08: Q2 财报管理层警告利润率下滑 → 单日 -28%
+2025-2026: 川普关税 + 800 美元免税额取消 → Temu 模式受冲击
+</code></pre>
+<p>PDD 的核心矛盾：<strong>Temu 太成功 → 招致美国关税打击 → 商业模式被监管化</strong>。</p>
+<h3 id="53-2025-09">5.3 腾讯 2025-09 高点 → 之后下跌的逻辑</h3>
+<pre><code>2022-10: 中概股最低 + 港股流动性枯竭 → 191 港元
+2023-2024: 大额回购 + 视频号变现 + 游戏复苏 → 缓慢修复
+2025-09: AI 叙事高点 + DeepSeek 热度溢出 → 673 港元
+2025-Q4: AI 投入翻倍 + 回购缩减担忧 → 跌
+2026-Q1: 加税谣言 + Agentic AI 不及预期 → 继续阴跌
+</code></pre>
+<p>腾讯的核心矛盾：<strong>AI 投入太大 + 回购缩减 → 短期市场担心资本配置</strong>，但基本面（微信、游戏、广告）没有变差。</p>
+<h3 id="54">5.4 三家"基本面驱动因素"完全不同</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>主要驱动因素</th>
+<th>当前位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯</td>
+<td>微信生态、游戏、AI</td>
+<td>AI 投入消化期</td>
+</tr>
+<tr>
+<td>美团</td>
+<td>外卖竞争、海外、利润率</td>
+<td>主营业务防守阶段</td>
+</tr>
+<tr>
+<td>PDD</td>
+<td>Temu 全球扩张、关税</td>
+<td>关税不确定性</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>这就是为什么高低点不同步</strong>：当美团被监管砸时（2021），腾讯还没那么差；当 PDD 被 SEC 砸时（2022），美团还在百元以上；当腾讯靠 AI 涨时（2025），美团已经在底部躺平。</p>
+<hr />
+<h2 id="_7">六、对投资决策的启示</h2>
+<h3 id="61">6.1 三家不是"替代品"，是"补充品"</h3>
+<p>如果你买三家做组合：
+- <strong>不会获得分散化收益</strong>（因为周收益率相关 0.5-0.7）
+- <strong>但会获得不同基本面的覆盖</strong>（高低点完全不同步说明各自有独立故事）
+- <strong>本质是"中概股β + 三个独立α"的组合</strong></p>
+<h3 id="62">6.2 "三选一"该怎么选？</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>腾讯</th>
+<th>美团</th>
+<th>PDD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5年累计跌幅</td>
+<td>-15%</td>
+<td>-71%</td>
+<td>-26%</td>
+</tr>
+<tr>
+<td>当前距高点</td>
+<td>-30%</td>
+<td>-75%</td>
+<td>-37%</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>最深</td>
+<td>中等（受抖音威胁）</td>
+<td>浅但增长快</td>
+</tr>
+<tr>
+<td>基本面方向</td>
+<td>稳 + AI 期权</td>
+<td>防守、寻找新故事</td>
+<td>关税不确定性</td>
+</tr>
+<tr>
+<td>估值（参考）</td>
+<td>主营 PE ~12</td>
+<td>PE ~15</td>
+<td>PE ~10</td>
+</tr>
+<tr>
+<td><strong>价值投资视角</strong></td>
+<td><strong>首选</strong></td>
+<td>困境反转</td>
+<td>高赔率高风险</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="63">6.3 关键启示：等"全部一起跌"的时候</h3>
+<p><strong>最好的买点是三家相关性 = 0.9 的时候</strong>——那意味着市场不分基本面恐慌抛售（如 2022-10）。当前阶段 5（相关性降到 0.17-0.37），说明市场已经在分化定价，<strong>不是恐慌时刻，需要选基本面优秀的那家</strong>。</p>
+<hr />
+<h2 id="_8">七、统计学补充</h2>
+<h3 id="71">7.1 数据完整度</h3>
+<ul>
+<li>共同观测周数：<strong>261 周</strong></li>
+<li>涵盖 5 个完整年份</li>
+<li>数据来源：Yahoo Finance 公开周线 API</li>
+<li>对齐方式：ISO 周（解决港股/美股 timestamp 偏移）</li>
+</ul>
+<h3 id="72">7.2 局限性说明</h3>
+<ol>
+<li><strong>价格水平相关性会被长期趋势主导</strong>，所以低数值不代表"短期不联动"</li>
+<li><strong>Pearson 假设线性关系</strong>，对极端事件（黑天鹅）的捕捉可能不足</li>
+<li><strong>未做汇率调整</strong>：腾讯/美团是港元，PDD 是美元——但因为算的是收益率，汇率影响有限</li>
+<li><strong>5 年区间正好涵盖完整的"监管→修复→分化"周期</strong>，结论对其他周期未必适用</li>
+</ol>
+<h3 id="73">7.3 进一步可做的分析</h3>
+<ul>
+<li>滚动 12 周相关性（看动态变化）</li>
+<li>与恒生科技指数 / 中概股 ETF 的回归（提取 β 和 α）</li>
+<li>事件驱动分析（监管节点、财报、AI 事件的影响）</li>
+</ul>
+<hr />
+<h2 id="_9">八、结论</h2>
+<blockquote>
+<p><strong>三家公司被同一个"中概股情绪"短期联动（周收益率相关 0.48-0.68），但长周期完全独立——5 年高点跨越 4.3 年，5 年低点跨越 1.9 年，5 年累计涨跌差距高达 55 个百分点。</strong></p>
+<p><strong>这意味着：</strong>
+- <strong>不能把三家当"同一个东西"看</strong>——它们有完全不同的基本面驱动因素
+- <strong>想分散中概股β风险，三家组合用处不大</strong>（β 一致）
+- <strong>但想覆盖中国互联网的不同细分赛道，三家组合是合理的</strong>（α 独立）
+- <strong>当前阶段（2025-2026）相关性显著下降</strong>，是基本面投资者的好窗口——市场不再"无脑联动"</p>
+</blockquote>
+<hr />
+<h2 id="261">附：数据明细（共 261 行，节选）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>腾讯（HKD）</th>
+<th>美团（HKD）</th>
+<th>PDD（USD）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-05-03</td>
+<td>553.11</td>
+<td>282.80</td>
+<td>133.79</td>
+</tr>
+<tr>
+<td>2021-06-21</td>
+<td>633.50</td>
+<td><strong>330.00</strong> ← 美团高点</td>
+<td>130.04</td>
+</tr>
+<tr>
+<td>2022-03-07</td>
+<td>367.00</td>
+<td>165.50</td>
+<td><strong>32.13</strong> ← PDD 低点</td>
+</tr>
+<tr>
+<td>2022-10-24</td>
+<td><strong>190.72</strong> ← 腾讯低点</td>
+<td>119.10</td>
+<td>64.91</td>
+</tr>
+<tr>
+<td>2024-01-29</td>
+<td>287.40</td>
+<td><strong>63.25</strong> ← 美团低点</td>
+<td>144.92</td>
+</tr>
+<tr>
+<td>2024-05-20</td>
+<td>393.20</td>
+<td>116.10</td>
+<td><strong>157.57</strong> ← PDD 高点</td>
+</tr>
+<tr>
+<td>2025-09-29</td>
+<td><strong>673.50</strong> ← 腾讯高点</td>
+<td>122.00</td>
+<td>122.66</td>
+</tr>
+<tr>
+<td>2026-04-30</td>
+<td>467.80</td>
+<td>83.25</td>
+<td>98.68</td>
+</tr>
+</tbody>
+</table></div>
+<p>完整 261 周数据：见仓库内 <code>data/correlation_3stocks_2021-2026.csv</code></p>
+<hr />
+<p><strong>报告完成时间</strong>：2026-05-01
+<strong>研究框架</strong>：Pearson 相关性 + 极值分析 + 滚动窗口 + 基本面定性叙事</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/0f7db0f0b448.html">研究报告索引</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/8ffcc4c8ad84.html">美股七姐妹：七份独立投资研究</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/2fd4a5ed4622.html">除了你自己，没人关心你的成本价</a><div class="meta">2026-09-28 · 公众号</div></li><li><a href="../r/05d9b0332f04.html">快手与 MiniMax：护城河与五年盈利推演</a><div class="meta">2026-09-22 · 研究</div></li><li><a href="../r/9afae466678c.html">六家公司研究与持仓判断</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/692147003320.html">技术分析冲力系统实证检验：三万次事件的证伪记录</a><div class="meta">2026-09-04 · 研究</div></li><li><a href="../r/3fffde9e8894.html">九公司凯利赔率横评：上行、下行与仓位框架</a><div class="meta">2026-09-03 · 横评对比</div></li><li><a href="../r/6a076e0af7bb.html">破净与净现金股全球筛选：美股、港股、A股</a><div class="meta">2026-08-27 · 筛选</div></li><li><a href="../r/13793d9c42cd.html">12 家公司 10 年后利润结局推演（2036 年视角）</a><div class="meta">2026-08-27 · 研究</div></li><li><a href="../r/4328f84a5552.html">巴菲特、段永平、李录 2026Q2 13F 持仓全解</a><div class="meta">2026-08-15 · 财报</div></li><li><a href="../r/be601dae083d.html">七公司十年横评：谁值得重仓，谁应该规避</a><div class="meta">2026-08-14 · 横评对比</div></li><li><a href="../r/8395b6213382.html">BNP Paribas — Income Investment</a><div class="meta">2026-07-15 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

@@ -1,0 +1,296 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>自动驾驶——机遇还是威胁 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/Uber/index.html">Uber</a></div><h1>自动驾驶——机遇还是威胁</h1><div class="meta"><a href="../companies/Uber/index.html">Uber</a> ｜ 2026-07-13 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Uber/%E3%80%8A%E7%9C%8B%E6%87%82Uber%E3%80%8B/03-%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6-%E6%9C%BA%E9%81%87%E8%BF%98%E6%98%AF%E5%A8%81%E8%83%81.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">为什么这一篇最重要</a></li>
+<li><a href="#_2">自动驾驶的现状：不再是科幻</a><ul>
+<li><a href="#waymoalphabet">Waymo（Alphabet 旗下）</a></li>
+<li><a href="#_3">特斯拉</a></li>
+<li><a href="#_4">其他玩家</a></li>
+</ul>
+</li>
+<li><a href="#_5">两种截然相反的未来</a><ul>
+<li><a href="#uber">乐观叙事："Uber 成为自动驾驶的安卓"</a></li>
+<li><a href="#uber_1">悲观叙事："Uber 被绕过"</a></li>
+</ul>
+</li>
+<li><a href="#_6">冷静分析：概率和时间线</a><ul>
+<li><a href="#2026-2028">短期（2026-2028）：影响有限</a></li>
+<li><a href="#2028-2032">中期（2028-2032）：竞合并存</a></li>
+<li><a href="#2032">长期（2032+）：格局重塑</a></li>
+</ul>
+</li>
+<li><a href="#uber_2">Uber 的应对策略</a><ul>
+<li><a href="#1-20-av">1. 与 20+ 家 AV 公司合作</a></li>
+<li><a href="#2-100">2. 投入 100 亿+自建车队</a></li>
+<li><a href="#3">3. 投资充电基础设施</a></li>
+<li><a href="#4-ceo">4. CEO 的公开表态</a></li>
+</ul>
+</li>
+<li><a href="#_7">关键变量：谁拥有"需求"，谁拥有"供给"</a></li>
+<li><a href="#_8">一个类比：帮你建立直觉</a></li>
+<li><a href="#_9">给投资者的冷静判断</a><ul>
+<li><a href="#_10">确定的事</a></li>
+<li><a href="#_11">不确定的事</a></li>
+<li><a href="#_12">一个思考框架</a></li>
+</ul>
+</li>
+<li><a href="#_13">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂Uber》系列 · 第 03 篇
+阅读时间约 14 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">为什么这一篇最重要</h2>
+<p>前两篇把 Uber 的账算清楚了：年产 <strong>98 亿美元</strong> 现金，出行市场 76% 份额，护城河真实且可量化。按这个基本面，13 倍 PE 在任何正常的估值框架下都算低估——一家增速 18%、FCF 收益率 6.4% 的平台，正常应该交易在 20-25 倍。</p>
+<p><strong>但市场不傻。</strong> 华尔街给 Uber 打了 35-45% 的折扣，不是因为没看见这些数字，而是因为它在对一个问题定价：<strong>如果自动驾驶成熟，Uber 的"中间人"角色还有存在的必要吗？</strong> 这不是遥远的哲学问题——Waymo 已经在旧金山、凤凰城等多个城市商业运营，有自己的打车 App，不需要 Uber 一分钱。</p>
+<p>这一篇要做的，是把这个问题拆清楚，而不是给你一个假装确定的结论。</p>
+<hr />
+<h2 id="_2">自动驾驶的现状：不再是科幻</h2>
+<p>先看事实。2026 年 5 月的自动驾驶行业，已经不是"概念"阶段：</p>
+<h3 id="waymoalphabet">Waymo（Alphabet 旗下）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每周付费出行次数</td>
+<td><strong>超 45 万次</strong></td>
+<td>Waymo 官方数据</td>
+</tr>
+<tr>
+<td>运营城市</td>
+<td>旧金山、凤凰城、洛杉矶、奥斯丁、达拉斯、休斯顿等</td>
+<td>公开报道</td>
+</tr>
+<tr>
+<td>2026 年目标</td>
+<td>每周 <strong>100 万次</strong> 出行</td>
+<td>Waymo CEO 公开表态</td>
+</tr>
+<tr>
+<td>商业模式</td>
+<td>自有车队 + 自有 App，直接面向消费者</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>Waymo 是目前自动驾驶商业化走得最远的公司。关键事实：<strong>Waymo 有自己的打车 App，不依赖 Uber 获客。</strong></p>
+<h3 id="_3">特斯拉</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>状况</th>
+<th>评估</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Robotaxi 进展</td>
+<td>2025 年在奥斯丁推出限量 Robotaxi 服务</td>
+<td>进展慢于预期</td>
+</tr>
+<tr>
+<td>数据优势</td>
+<td>全球数百万辆特斯拉提供实路数据</td>
+<td>数据量是 Waymo 的数百倍</td>
+</tr>
+<tr>
+<td>商业模式</td>
+<td>计划自建出行网络，不通过 Uber</td>
+<td>明确是 Uber 的竞争对手</td>
+</tr>
+</tbody>
+</table></div>
+<p>特斯拉的自动驾驶进展一直慢于马斯克的承诺，但其数据优势不可忽视。</p>
+<h3 id="_4">其他玩家</h3>
+<ul>
+<li><strong>百度 Apollo</strong>：中国市场领先，在武汉等城市大规模运营</li>
+<li><strong>小马智行</strong>：中国 + 中东市场布局</li>
+<li><strong>Cruise（通用旗下）</strong>：2023 年因安全事故暂停，前景不明</li>
+</ul>
+<hr />
+<h2 id="_5">两种截然相反的未来</h2>
+<p>关于自动驾驶对 Uber 的影响，市场存在两种完全对立的叙事。</p>
+<h3 id="uber">乐观叙事："Uber 成为自动驾驶的安卓"</h3>
+<p>这个逻辑是：</p>
+<ol>
+<li>自动驾驶汽车造出来了，但需要有人帮它找到乘客</li>
+<li>Uber 拥有全球最大的出行需求网络（每天 <strong>2,800 万+</strong> 次出行）</li>
+<li>大多数自动驾驶公司（除了 Waymo 和特斯拉）没有消费者品牌和获客能力</li>
+<li>因此，自动驾驶公司需要 Uber 作为分发渠道——就像 App 开发者需要安卓/iOS</li>
+</ol>
+<p>支撑这个叙事的事实：
+- Uber 已与 <strong>20 多家</strong> 自动驾驶公司签署合作协议
+- 计划 2026 年底在 <strong>15 个城市</strong> 提供自动驾驶出行服务
+- Q1 2026 自动驾驶出行次数同比增长 <strong>10 倍</strong>（但绝对数字仍很小）
+- Uber 目标 2029 年成为"全球最大的自动驾驶出行促成者"</p>
+<p>如果这个叙事成真，自动驾驶反而是 Uber 的<strong>重大利好</strong>：不需要付司机 72% 的费用了，平台抽成率可以从 28% 大幅提升，利润率翻倍甚至更多。</p>
+<h3 id="uber_1">悲观叙事："Uber 被绕过"</h3>
+<p>这个逻辑是：</p>
+<ol>
+<li>最强的自动驾驶公司（Waymo、特斯拉）都有自己的打车 App</li>
+<li>它们不需要 Uber——它们有技术、有车、有品牌、有资金</li>
+<li>一旦自动驾驶大规模普及，消费者会直接用 Waymo App 或特斯拉 App 叫车</li>
+<li>Uber 的"中间人"角色被彻底取消——就像实体书店被亚马逊取消一样</li>
+</ol>
+<p>支撑这个叙事的事实：
+- Waymo 已开发并运营自有打车 App，用户体验良好
+- 特斯拉明确表示不会通过 Uber 运营 Robotaxi
+- Uber 最近公开批评前合作伙伴 Waymo，同时投入 <strong>100 亿美元以上</strong> 与 Rivian、Lucid、Nuro 合作自建自动驾驶车队——这种"翻脸+巨额投入"本身就说明管理层也在担心被绕过
+- CEO Dara 在财报电话会上说 AV 大规模普及可能需要 <strong>10-20 年</strong>——但 Waymo 的进度似乎比这快</p>
+<hr />
+<h2 id="_6">冷静分析：概率和时间线</h2>
+<p>两种叙事都有事实支撑，但都犯了一个错误：<strong>把一个复杂的、渐进的过程简化成了非黑即白的结论。</strong></p>
+<p>更接近现实的判断是分层的：</p>
+<h3 id="2026-2028">短期（2026-2028）：影响有限</h3>
+<ul>
+<li>自动驾驶目前只在少数城市、特定区域、特定天气条件下运营</li>
+<li>Waymo 每周 45 万次出行，听起来很多，但 Uber 每天就有 <strong>2,800 万次</strong>——Waymo 的量不到 Uber 一天量的 <strong>2.5%</strong></li>
+<li>短期内，自动驾驶对 Uber 的业务冲击几乎可以忽略</li>
+<li>Uber 的 98 亿美元 FCF 在这个阶段完全不受影响</li>
+</ul>
+<h3 id="2028-2032">中期（2028-2032）：竞合并存</h3>
+<ul>
+<li>自动驾驶可能在 10-20 个主要城市大规模运营</li>
+<li>Uber 可能同时面临两种情况：</li>
+<li>与部分 AV 公司合作（提供流量换取车辆供给）</li>
+<li>与 Waymo/特斯拉直接竞争</li>
+<li>Uber 的 100 亿+自建车队投入开始产生回报（或亏损）</li>
+<li>关键变量：<strong>Uber 自有 AV 车队的竞争力如何</strong></li>
+</ul>
+<h3 id="2032">长期（2032+）：格局重塑</h3>
+<ul>
+<li>如果自动驾驶真正成熟（成本低于人类司机、覆盖大多数场景），出行行业将被彻底重构</li>
+<li>届时的竞争格局取决于：<strong>谁拥有最大的需求网络 + 谁拥有最低成本的车队</strong></li>
+<li>Uber 有需求网络的优势，但不一定有车队成本的优势</li>
+<li>这是一个目前无法精确预判的问题</li>
+</ul>
+<hr />
+<h2 id="uber_2">Uber 的应对策略</h2>
+<p>Uber 目前的自动驾驶策略可以概括为 <strong>"多方下注 + 自建保险"</strong>：</p>
+<h3 id="1-20-av">1. 与 20+ 家 AV 公司合作</h3>
+<p>合作伙伴包括 Waymo（关系正在恶化）、百度 Apollo（迪拜）、Wayve（伦敦）、Avride（达拉斯）等。逻辑是：不把鸡蛋放在一个篮子里。</p>
+<h3 id="2-100">2. 投入 100 亿+自建车队</h3>
+<p>与 Rivian、Lucid、Nuro 合作，购买/定制自动驾驶车辆。这是一个重大的战略转向——Uber 在 2020 年卖掉了自己的自动驾驶研发部门 ATG，现在又重新投入 100 亿建设自有车队。</p>
+<p><strong>这到底是明智之举还是恐慌之举？</strong></p>
+<p><strong>支持者说</strong>：不自建车队就等于把命运交给别人。Waymo 已经在开发自己的打车 App，如果 Uber 不掌握供给端，未来会完全被动。</p>
+<p><strong>反对者说</strong>：100 亿美元投入一个技术路线和商业模式都不确定的领域，本身就是在赌博。Uber 的核心优势是轻资产平台模式，自建车队是"反初心"的。而且 Uber 并不擅长硬件和自动驾驶技术——它曾经试过（ATG），失败后卖掉了。</p>
+<h3 id="3">3. 投资充电基础设施</h3>
+<p>投入 <strong>1 亿美元</strong> 建设专门为自动驾驶车辆服务的快充站。这是一个相对小但聪明的赌注。</p>
+<h3 id="4-ceo">4. CEO 的公开表态</h3>
+<p>Dara 近期公开批评 Waymo 的定价策略，同时宣称 Uber 将在自动驾驶时代保持"不可或缺"的地位。这种从"合作伙伴"到"竞争对手"的态度转变，说明 Uber 管理层对自动驾驶威胁的认知在快速升级。</p>
+<hr />
+<h2 id="_7">关键变量：谁拥有"需求"，谁拥有"供给"</h2>
+<p>理解自动驾驶对 Uber 的影响，最核心的框架是 <strong>"需求 vs 供给"</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>当前（人类司机时代）</th>
+<th>未来（自动驾驶时代）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>需求端</strong></td>
+<td>Uber 掌控（用户打开 Uber 叫车）</td>
+<td>Uber 仍有优势，但 Waymo/特斯拉 App 在抢</td>
+</tr>
+<tr>
+<td><strong>供给端</strong></td>
+<td>分散（数百万独立司机）</td>
+<td>集中（少数 AV 公司拥有车队）</td>
+</tr>
+<tr>
+<td><strong>Uber 的角色</strong></td>
+<td>撮合平台（抽 28%）</td>
+<td>？？？</td>
+</tr>
+</tbody>
+</table></div>
+<p>在人类司机时代，供给端高度分散——没有一个司机有议价能力，Uber 可以稳稳抽 28%。</p>
+<p>在自动驾驶时代，供给端高度集中——Waymo、特斯拉各自拥有数万甚至数十万辆车，它们有能力和动力绕过 Uber。</p>
+<p><strong>这就是 Uber 面临的核心结构性风险：供给端从"分散"变为"集中"，平台的议价能力被削弱。</strong></p>
+<p>Uber 投 100 亿自建车队，本质上就是在对冲这个风险——如果不能继续做"撮合者"，那就自己拥有供给。</p>
+<hr />
+<h2 id="_8">一个类比：帮你建立直觉</h2>
+<p>想象一下出租车行业的历史：</p>
+<ul>
+<li><strong>1990 年代</strong>：出租车公司拥有车辆和司机，控制供给</li>
+<li><strong>2010 年代</strong>：Uber 出现，用算法把供给（司机）和需求（乘客）连起来，干掉了出租车公司</li>
+<li><strong>2030 年代</strong>：自动驾驶公司拥有车辆，不需要人类司机——那 Uber 的角色是什么？</li>
+</ul>
+<p>两种可能：
+1. Uber 成为"新时代的出租车调度中心"——自动驾驶车辆通过 Uber 获取订单
+2. 自动驾驶公司自己做调度——Uber 变成"上一个时代的出租车公司"</p>
+<p><strong>这两种结果，目前谁都说不准。</strong> 说得准的人在撒谎。</p>
+<hr />
+<h2 id="_9">给投资者的冷静判断</h2>
+<p>关于自动驾驶对 Uber 投资价值的影响，以下判断尽量客观：</p>
+<h3 id="_10">确定的事</h3>
+<ol>
+<li><strong>短期（3 年内）自动驾驶不会对 Uber 的业绩产生实质影响</strong>——规模太小</li>
+<li><strong>Uber 的管理层在认真应对这个威胁</strong>——100 亿+投入、20+合作伙伴、公开表态</li>
+<li><strong>市场已经在为自动驾驶风险定价</strong>——这就是 Uber 只有 13 倍 PE 的原因</li>
+</ol>
+<h3 id="_11">不确定的事</h3>
+<ol>
+<li><strong>自动驾驶大规模普及的时间线</strong>——CEO 说 10-20 年，Waymo 的进度暗示可能更快</li>
+<li><strong>Uber 在自动驾驶时代的角色</strong>——平台？车队运营商？两者兼有？被淘汰？</li>
+<li><strong>100 亿+自建车队投入的回报</strong>——可能是天才之举，也可能是昂贵的错误</li>
+</ol>
+<h3 id="_12">一个思考框架</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>你的投资时间框架</th>
+<th>自动驾驶影响</th>
+<th>建议的思考方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-3 年</td>
+<td>几乎不影响</td>
+<td>关注业绩增长和估值修复</td>
+</tr>
+<tr>
+<td>3-5 年</td>
+<td>开始出现竞争，但可控</td>
+<td>关注 Uber AV 策略执行情况</td>
+</tr>
+<tr>
+<td>5-10 年</td>
+<td>可能是决定性因素</td>
+<td>需要持续跟踪，随时准备修正判断</td>
+</tr>
+<tr>
+<td>10 年以上</td>
+<td>高度不确定</td>
+<td>如果你需要"确定性"，Uber 不适合你</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_13">下期预告</h2>
+<p>下一篇是终章，我们把所有因素放在一起：<strong>监管风险、竞争格局、估值判断——Uber 到底值不值这个价？</strong></p>
+<p>要回答的几个尖锐问题：</p>
+<ul>
+<li>新泽西州通过的司机分类新规意味着什么？如果全美推广，Uber 的利润率会缩水多少？</li>
+<li>13 倍 PE、0.72 PEG——市场给 Uber 的"自动驾驶折扣"打得合理吗？</li>
+<li>200 亿美元回购 vs 100 亿美元 AV 投入——管理层的资本配置合理吗？</li>
+<li>综合所有因素，Uber 适合什么样的投资者？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂Uber》系列第 03 篇。终章将于下期推出。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/6be88ad17600.html">Uber 风险与管理层评估</a><div class="meta">2026-06-20 · 组织管理</div></li><li><a href="../r/5cb114ed9260.html">Uber 行业竞争分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/19a26a1b6852.html">Uber 财务估值分析</a><div class="meta">2026-06-20 · 估值仓位</div></li><li><a href="../r/f4ce65752a5c.html">Uber 商业模式分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/1dc680058999.html">风险与估值（终章）</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/f6ed32b9d2e6.html">出行加外卖的双飞轮</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/633b82c8d5ac.html">从亏损之王到盈利机器</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/ead856364209.html">《看懂Uber》系列说明</a><div class="meta">2026-05-22 · 底稿</div></li><li><a href="../r/0da4cc4f1425.html">Uber Technologies (UBER) 投资研究最终报告</a><div class="meta">2026-05-16 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

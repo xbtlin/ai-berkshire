@@ -1,0 +1,286 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>净现金折价股扫描 v2 修正报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../screens/净现金折价股-全市场-20260417/index.html">净现金折价股-全市场-20260417</a></div><h1>净现金折价股扫描 v2 修正报告</h1><div class="meta"><a href="../screens/净现金折价股-全市场-20260417/index.html">净现金折价股-全市场-20260417</a> ｜ 2026-04-17 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%87%80%E7%8E%B0%E9%87%91%E6%8A%98%E4%BB%B7%E8%82%A1-%E5%85%A8%E5%B8%82%E5%9C%BA-20260417/v2-%E4%BF%AE%E6%AD%A3%E6%8A%A5%E5%91%8A.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#0">0. 一句话总结</a></li>
+<li><a href="#1-tier-1">1. Tier 1 四家的证伪汇总</a></li>
+<li><a href="#2">2. 方法论教训（本轮最重要的产出）</a><ul>
+<li><a href="#1">教训 1：净现金定义必须严格化（硬约束）</a></li>
+<li><a href="#2_1">教训 2：第三方整理名单的"数据时效性"可能致命</a></li>
+<li><a href="#3">教训 3：基本事实必须核实，不能靠"标签"推断</a></li>
+<li><a href="#4">教训 4：管理层资本配置的"历史证据链"比"当期动作"更重要</a></li>
+<li><a href="#5biotech">教训 5：Biotech 的"现金折价"几乎都是陷阱（除非已商业化放量）</a></li>
+<li><a href="#6">教训 6：主题股窗口关闭速度极快</a></li>
+</ul>
+</li>
+<li><a href="#3_1">3. 修正后的筛选流程（未来扫描用）</a><ul>
+<li><a href="#0_1">第 0 步：数据时效性闸门</a></li>
+<li><a href="#1_1">第 1 步：严格净现金测算（上述公式）</a></li>
+<li><a href="#2_2">第 2 步：控股股东性质核实（硬项）</a></li>
+<li><a href="#3_2">第 3 步：管理层资本配置证据链（三条以上）</a></li>
+<li><a href="#4_1">第 4 步：商业质量初筛</a></li>
+<li><a href="#5-vs">第 5 步：事件驱动 vs 价值投资分类</a></li>
+</ul>
+</li>
+<li><a href="#4-tier-1">4. 本轮的"一个可能的 Tier 1 漏网之鱼"</a></li>
+<li><a href="#5">5. 对"全市场净现金折价股"这类策略的元判断</a><ul>
+<li><a href="#51">5.1 策略有效性的边界条件</a></li>
+<li><a href="#52">5.2 个人投资者的执行障碍</a></li>
+<li><a href="#53">5.3 投研组织层面的建议</a></li>
+</ul>
+</li>
+<li><a href="#6-v2">6. 最终可投资短名单（v2）</a></li>
+<li><a href="#7">7. 相关文件</a></li>
+<li><a href="#8">8. 免责声明</a></li>
+</ul>
+</div>
+</details><article><p><strong>ai-berkshire 投研团队 | 2026-04-19</strong>
+<strong>修正对象</strong>：本目录下 2026-04-17 首版"全市场净现金折价股扫描报告"</p>
+<hr />
+<h2 id="0">0. 一句话总结</h2>
+<blockquote>
+<p><strong>v1 的 Tier 1 短名单（4 家）在深度核实后 4/4 全部被证伪。</strong> 没有一家真正符合"严格净现金 ≥ 市值"的标准；3 家存在严重的方法论瑕疵（筛选口径宽松 / 数据过期 / 忽略 biotech 特有的营收权益融资负债），1 家连"家族控股"的基本事实都搞错了（实际为央企子公司）。<strong>这是第一轮 AI 扫描的方法论失败，不是个案问题。</strong></p>
+</blockquote>
+<hr />
+<h2 id="1-tier-1">1. Tier 1 四家的证伪汇总</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>v1 Tier 1 假设</th>
+<th>v2 核实结论</th>
+<th>推翻 v1 假设的关键事实</th>
+<th>最终判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>恒天立信 00641.HK</strong></td>
+<td>历史派息率 43% + 净现金折价 + 家族控股</td>
+<td><strong>v1 三条全错</strong></td>
+<td>2025 年末净负债 HK$9 亿 / 2025 中期停派 / 实际是央企国机集团子公司 / 姊妹公司经纬纺机 2023-08 主动退市</td>
+<td><strong>回避</strong></td>
+</tr>
+<tr>
+<td><strong>力劲科技 00558.HK</strong></td>
+<td>现金 6.29 亿 + 流动资产 36.5 亿 vs 市值 7.7 亿</td>
+<td><strong>筛选口径错误</strong></td>
+<td>混用"流动资产"与"净现金"概念；真实净现金仅 0-6 亿（vs 当时有息借款 17 亿）；市值已从 7.7 亿 → 40 亿（+415%），窗口关闭</td>
+<td><strong>观望</strong>（等 1.80-2.20 港币）</td>
+</tr>
+<tr>
+<td><strong>PHAT (Phathom)</strong></td>
+<td>现金 &gt; $400M vs 市值 &lt; $500M</td>
+<td><strong>扫描忽略了关键负债</strong></td>
+<td>实际净负债 $450M（现金 $130M − Hercules 贷款 $207M − Sagard/NovaQuest 营收权益融资 $373M）；专利 2032 年到期</td>
+<td><strong>观望</strong>（等 &lt; $7）</td>
+</tr>
+<tr>
+<td><strong>九毛九 09922.HK</strong></td>
+<td>净现金充裕 + 有分红+回购</td>
+<td><strong>管理层资本配置反向指标</strong></td>
+<td>2022-12 创始人减持套现 HK$8.88 亿 / 2026-01 超 100x PE 收购 Big Way Hot Pot / 2 亿港元回购授权仅执行 7.7% / 太二同店 -19% / 租赁负债并入后净现金消失</td>
+<td><strong>观望偏回避</strong>（等 &lt; 1.5 港币）</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="2">2. 方法论教训（本轮最重要的产出）</h2>
+<h3 id="1">教训 1：净现金定义必须严格化（硬约束）</h3>
+<p><strong>v1 宽松口径（错误）</strong>：</p>
+<pre><code>任何&quot;账上现金多 vs 市值低&quot;的公司都进入 Tier 1
+</code></pre>
+<p><strong>v2 严格口径（修正）</strong>：</p>
+<pre><code>净现金 = 现金 + 短期投资 + 理财
+       − 有息银行借款（长短期）
+       − 应付债券
+       − 可转债
+       − biotech 的 Revenue Interest Financing（营收权益融资）
+       − 营收抵押/特许权抵押的准债务
+       − 融资租赁负债（制造业按情况）
+
+筛选条件：净现金 / 市值 ≥ 1.0
+
+对餐饮/重资产公司另加一列：
+严格口径 2 = 上述净现金 − IFRS 16 租赁负债
+</code></pre>
+<p><strong>应用于四家</strong>：按 v2 严格口径，<strong>没有一家 Tier 1 候选仍然成立</strong>。</p>
+<h3 id="2_1">教训 2：第三方整理名单的"数据时效性"可能致命</h3>
+<p><strong>恒天立信案例</strong>：v1 引用的"现金 5.97 亿 / 流动资产 22.25 亿 / 市值 10.23 亿"是 <strong>2018 年数据</strong>。到 2025 年末，现金掉到 1.99 亿、借款涨到 11 亿——<strong>结构性反转了 7 年</strong>。</p>
+<p><strong>启示</strong>：凡是扫描输出的候选，必须<strong>以最新一期财报（T-2 季度内）</strong> 重新核对。超过 2 年的数据一律作废。</p>
+<h3 id="3">教训 3：基本事实必须核实，不能靠"标签"推断</h3>
+<p><strong>恒天立信案例</strong>：v1 把它归为"家族控股"，实际是央企国机集团子公司（持股 55.94%）。这个错误直接影响了"股东回报动机"的判断——央企上市平台的动机和家族企业完全不同。</p>
+<p><strong>启示</strong>：控股股东性质（家族 / 央企 / 地方国企 / 机构 / 管理层）是<strong>决策前的硬核实项</strong>，不能从行业或股价推测。</p>
+<h3 id="4">教训 4：管理层资本配置的"历史证据链"比"当期动作"更重要</h3>
+<p><strong>九毛九案例</strong>：表面有分红+回购，但：
+- 2022-12 创始人减持套现 8.88 亿港币（高位）
+- 2026-01 以超 100x PE 收购 Big Way Hot Pot（不理性）
+- 2 亿港元回购授权只执行 7.7%（象征性）
+- 回馈股东 : 烧在扩张 = 1:7</p>
+<p><strong>启示</strong>：不能只看"有没有分红有没有回购"，要看：
+- 回购的<strong>规模</strong> vs 扩张的规模
+- 管理层是否<strong>高位减持过</strong>
+- 收购估值是否<strong>理性</strong>
+- 派息率高的数字是否靠<strong>分子小</strong>堆出来</p>
+<h3 id="5biotech">教训 5：Biotech 的"现金折价"几乎都是陷阱（除非已商业化放量）</h3>
+<p><strong>PHAT 案例</strong>：商业化基本面确实好（Voquezna 2025 +217%，2026 指引 +90%，Q3 2026 运营盈亏平衡可期），但：
+- Revenue Interest Financing 抽走净销售 10%（封顶 $600M 总抽成）
+- 专利悬崖 2032 年，只有 6 年变现窗口
+- 单药公司</p>
+<p><strong>启示</strong>：biotech 的"现金多"本质是"未来被抽成的未实现收入折现"，不是巴菲特式的"自由现金"。即使技术和商业化成功，股东权益也被三层榨取（授权方 + Revenue Interest 投资人 + 债权人）。</p>
+<h3 id="6">教训 6：主题股窗口关闭速度极快</h3>
+<p><strong>力劲科技案例</strong>：从 2023 年底的 7.7 亿市值到 2025 年 8 月最高 107 亿市值（+1290%），仅用 2 年不到。当 AI 基于 2023 年数据做扫描时，窗口<strong>早已关闭</strong>。</p>
+<p><strong>启示</strong>：
+- 扫描频率必须更高（月度 vs 年度）
+- 对"历史低位数据"要警惕——往往是窗口关闭后的回溯
+- 应当以"过去 30 天成交日均价"锁定市值，而非用旧数据</p>
+<hr />
+<h2 id="3_1">3. 修正后的筛选流程（未来扫描用）</h2>
+<h3 id="0_1">第 0 步：数据时效性闸门</h3>
+<ul>
+<li>财务数据必须是 <strong>T-2 季度内</strong>的披露</li>
+<li>超过 2 年的数据一律作废</li>
+<li>市值以过去 30 天成交日均价锁定</li>
+</ul>
+<h3 id="1_1">第 1 步：严格净现金测算（上述公式）</h3>
+<ul>
+<li>必须扣除所有形式的有息/准有息负债</li>
+<li>Biotech 必须单独列出 Revenue Interest Financing 负债</li>
+<li>餐饮/重资产公司标注"含/不含 IFRS 16"两套口径</li>
+</ul>
+<h3 id="2_2">第 2 步：控股股东性质核实（硬项）</h3>
+<ul>
+<li>家族 / 央企 / 地方国企 / 管理层 / 财务投资人</li>
+<li>实控人个人背景与历史减持记录</li>
+</ul>
+<h3 id="3_2">第 3 步：管理层资本配置证据链（三条以上）</h3>
+<ul>
+<li>过去 5 年分红总额 vs 新建/收购总资本开支</li>
+<li>过去 5 年创始人/高管是否有高位减持</li>
+<li>过去 5 年供股/配股/稀释性融资次数</li>
+<li>回购授权执行率（授权额度 vs 实际执行）</li>
+</ul>
+<h3 id="4_1">第 4 步：商业质量初筛</h3>
+<ul>
+<li>主业 5 年 ROE 均值（扣非）</li>
+<li>护城河类型识别（网络效应 / 品牌 / 规模 / 专利 / 转换成本）</li>
+<li>爆品型餐饮 / 单药 biotech / 周期商品 → 默认降级</li>
+</ul>
+<h3 id="5-vs">第 5 步：事件驱动 vs 价值投资分类</h3>
+<ul>
+<li>私有化套利 / 重组事件 → 独立分类</li>
+<li>清算价值套利 → 独立分类</li>
+<li>长期价值持有 → Tier 1/2/3 分级</li>
+</ul>
+<hr />
+<h2 id="4-tier-1">4. 本轮的"一个可能的 Tier 1 漏网之鱼"</h2>
+<p>v1 扫描的 Tier 2 和剔除池中，以下标的<strong>可能值得用 v2 口径重新审视</strong>：</p>
+<ul>
+<li>
+<p><strong>Sohu.com (SOHU)</strong>：12 亿美元现金 vs 4.5 亿市值，净现金/市值 2.67x（表面极端）。v1 标 Tier 2 因为"张朝阳长期回购但不分红"。v2 需要核实：（1）12 亿现金是否有重大长期债务对冲？（2）张朝阥的资本配置历史是否有证据支持"终将私有化溢价退出"的博弈？——这是<strong>事件驱动</strong>而非价值持有。</p>
+</li>
+<li>
+<p><strong>DQ (Daqo New Energy)</strong>：21.5 亿净现金 vs 14 亿市值。v1 标 Tier 2 因为"光伏周期烧钱"。v2 需要核实：（1）净现金是否扣尽所有负债？（2）周期见底时点估算。——这是<strong>周期底部博弈</strong>。</p>
+</li>
+<li>
+<p><strong>VASO Corp</strong>：$25M 现金 vs $23M 市值。v1 列 Tier 2 因为"流动性极差"。v2 值得单独研究，但仓位极小（微盘不适合任何规模化资金）。</p>
+</li>
+</ul>
+<p><strong>下一步可考虑</strong>：对这 3 家按 v2 口径做深度分析，看能否产生真正的 Tier 1 候选。</p>
+<hr />
+<h2 id="5">5. 对"全市场净现金折价股"这类策略的元判断</h2>
+<h3 id="51">5.1 策略有效性的边界条件</h3>
+<p><strong>巴菲特/格雷厄姆 Net-Net 策略在 2026 年的可行性</strong>：
+- <strong>A 股</strong>：2025 年上涨侵蚀了大部分池子，严格口径候选 &lt; 5 家，国资沉睡现金占主要——<strong>不是好猎场</strong>
+- <strong>港股</strong>：系统性富矿（20% 非金融非地产股现金 &gt; 市值），但老千股密度极高，干净可投估计 &lt; 20%——<strong>是猎场但需要老猎人</strong>
+- <strong>美股</strong>：集中在临床 biotech 和微盘，前者是"期权"后者流动性差——<strong>不是好猎场</strong></p>
+<h3 id="52">5.2 个人投资者的执行障碍</h3>
+<ol>
+<li><strong>信息不对称</strong>：付费终端（Wind / 乌龟量化 / Bloomberg）才能看到完整名单，公开数据源严重滞后</li>
+<li><strong>老千股识别</strong>：港股小盘需要多年行业经验和业内人脉</li>
+<li><strong>流动性约束</strong>：微盘股+港股小盘建仓/退出都难</li>
+<li><strong>事件驱动的时间成本</strong>：私有化套利往往等 2-3 年</li>
+</ol>
+<h3 id="53">5.3 投研组织层面的建议</h3>
+<ol>
+<li><strong>不要再启动单一"全市场净现金折价"扫描</strong>——产出的是一张伪名单</li>
+<li><strong>改为专项扫描</strong>：
+   - "港股非金融非地产 + 有息负债 &lt; 10% + 过去 5 年分红率 ≥ 20% + 市值 &gt; 20 亿港币" → 交集池
+   - "A 股国企市值管理推进中 + 净现金 &gt; 市值" → 事件驱动池
+   - "美股 biotech 商业化放量（收入 YoY &gt; 100% 且加速）+ 现金跑道 ≥ 3 年" → 成长型 net-net 池</li>
+<li><strong>每个专项独立建立口径和尽调流程</strong>，不再混为一谈</li>
+</ol>
+<hr />
+<h2 id="6-v2">6. 最终可投资短名单（v2）</h2>
+<blockquote>
+<p>经过 4 家深度核实后全部证伪，当前<strong>没有一家标的达到"可直接建仓"的标准</strong>。</p>
+</blockquote>
+<p><strong>Watchlist（价格触发买入清单）</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>代码</th>
+<th>当前价</th>
+<th>触发买入价</th>
+<th>仓位上限</th>
+<th>主要博弈逻辑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>九毛九</td>
+<td>09922.HK</td>
+<td>~2.20 港币</td>
+<td>≤ 1.50 港币</td>
+<td>0.5%</td>
+<td>困境反转 + 太二 5.0 同店转正</td>
+</tr>
+<tr>
+<td>力劲科技</td>
+<td>00558.HK</td>
+<td>~2.91 港币</td>
+<td>1.80-2.20 港币</td>
+<td>1-2%</td>
+<td>周期低点 + 机器人订单落地（二元事件）</td>
+</tr>
+<tr>
+<td>Phathom</td>
+<td>PHAT</td>
+<td>~$11</td>
+<td>≤ $7</td>
+<td>2-3%</td>
+<td>Voquezna Q3 2026 EBITDA 转正</td>
+</tr>
+<tr>
+<td>恒天立信</td>
+<td>00641.HK</td>
+<td>~0.35 港币</td>
+<td><strong>不建议</strong></td>
+<td>0%</td>
+<td>治理风险过高，完全回避</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>下一步工作</strong>：
+- 月度跟踪 Watchlist 三家的关键指标
+- 启动 SOHU / DQ / VASO 的 v2 深度核实（见本报告第 4 节）
+- 建立"修正后的专项扫描"（见本报告第 5.3 节）</p>
+<hr />
+<h2 id="7">7. 相关文件</h2>
+<ul>
+<li><a href="../r/cef92c085956.html">v1 原始扫描汇总报告</a></li>
+<li><a href="../r/3be37753fffa.html">A 股扫描报告</a></li>
+<li><a href="../r/a0cce11d17d1.html">港股扫描报告</a></li>
+<li><a href="../r/e71bb0d6dab7.html">美股扫描报告</a></li>
+<li><a href="../r/600638d152c3.html">恒天立信 v2 深度分析</a></li>
+<li><a href="../r/c54a3e16c34c.html">力劲科技 v2 深度分析</a></li>
+<li><a href="../r/e4e9f24c8e40.html">九毛九 v2 深度分析</a></li>
+<li><a href="../r/14c61b283761.html">Phathom (PHAT) v2 深度分析</a></li>
+</ul>
+<hr />
+<h2 id="8">8. 免责声明</h2>
+<p>本报告所有数据均来自公开 WebSearch，未经一手财报逐项核对。所有判断不构成投资建议。股票投资有风险，本报告列出的任何标的都可能面临价值陷阱、退市、造假、基本面恶化等风险。作者不承担因使用本报告信息造成的任何损失。</p>
+<hr />
+<p><strong>ai-berkshire 投研团队 / 2026-04-19 / v2</strong></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/cef92c085956.html">全市场净现金折价股扫描报告</a><div class="meta">2026-04-19 · 导读</div></li><li><a href="../r/e71bb0d6dab7.html">美股烟蒂股（Net-Cash ≥ Market Cap）扫描报告</a><div class="meta">2026-04-17 · 研究</div></li><li><a href="../r/a0cce11d17d1.html">港股净现金折价股扫描报告</a><div class="meta">2026-04-17 · 研究</div></li><li><a href="../r/600638d152c3.html">恒天立信（00641.HK）深度分析报告</a><div class="meta">2026-04-17 · 研究</div></li><li><a href="../r/c54a3e16c34c.html">力劲科技（00558.HK）深度分析报告</a><div class="meta">2026-04-17 · 研究</div></li><li><a href="../r/e4e9f24c8e40.html">九毛九（09922.HK）深度分析报告</a><div class="meta">2026-04-17 · 研究</div></li><li><a href="../r/14c61b283761.html">Phathom Pharmaceuticals (PHAT) 深度分析</a><div class="meta">2026-04-17 · 研究</div></li><li><a href="../r/3be37753fffa.html">A股净现金折价股扫描报告</a><div class="meta">2026-04-17 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

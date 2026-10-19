@@ -1,0 +1,464 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>快手赔率表更新：净现金三档口径与凯利符号的临界点 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/快手/index.html">快手</a></div><h1>快手赔率表更新：净现金三档口径与凯利符号的临界点</h1><div class="meta"><a href="../companies/快手/index.html">快手</a> ｜ 2026-09-03 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B-%E8%B5%94%E7%8E%87%E8%A1%A8%E6%9B%B4%E6%96%B0%E4%B8%8E%E5%87%AF%E5%88%A9%E7%AC%A6%E5%8F%B7%E4%B8%B4%E7%95%8C%E7%82%B9-20260903.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">零、本文定位</a></li>
+<li><a href="#_2">一、起点与交叉验证</a></li>
+<li><a href="#_3">二、净现金：三档口径</a></li>
+<li><a href="#92">三、五情景赔率表（按 9/2 价格重算）</a></li>
+<li><a href="#_4">四、口径三压力测试</a></li>
+<li><a href="#_5">五、凯利：两个维度的敏感性</a><ul>
+<li><a href="#51">5.1 基准输出</a></li>
+<li><a href="#52">5.2 维度一：下行幅度（前作已做，此处按新价格更新）</a></li>
+<li><a href="#53">5.3 维度二：概率（本次新增）</a></li>
+</ul>
+</li>
+<li><a href="#_6">六、前作勘误</a></li>
+<li><a href="#_7">七、结论</a></li>
+<li><a href="#_8">数据缺口</a></li>
+<li><a href="#_9">数据来源</a></li>
+</ul>
+</div>
+</details><article><p><strong>基准日：2026-09-03 ｜ 股价与市值基准：2026-09-02 收盘 33.64 港元、1,455.6 亿港元（43.27 亿股）</strong></p>
+<p><strong>汇率：1 HKD = 0.857 CNY ｜ 1 USD = 7.84 HKD ｜ 1 USD = 6.72 CNY</strong></p>
+<p><strong>一句话结论：赔率结构仍然有利，但"凯利符号恒为正"这个印象是错的——当增资交割告吹与牌照死线未办结这两档的合计概率越过约 57%，符号由正转负。这个临界点，而不是期望值，才是本次更新真正的产出。</strong></p>
+<hr />
+<h2 id="_1">零、本文定位</h2>
+<p>本目录《快手赔率表与分批建仓框架》（20260827）已完成五情景推演与凯利失效论证，全部条款由港交所公告原文核对。本文不重复推演，只做三件事：</p>
+<ol>
+<li><strong>把基准价从 8/24 的 33.02 港元更新到 9/2 的 33.64 港元</strong>，重算全表</li>
+<li><strong>新增净现金的三档口径压力测试</strong> —— 前作统一采用最宽口径（可动用资金减有息借款），本文补上扣租赁负债与长期投资打折后的两档</li>
+<li><strong>新增概率维度的敏感性</strong> —— 前作只测了下行幅度对凯利的影响（4.7 倍），未测概率。本文找出符号翻负的临界条件</li>
+</ol>
+<p>另附一处前作数字勘误。</p>
+<hr />
+<h2 id="_2">一、起点与交叉验证</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">数值</th>
+<th>来源与验证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价</td>
+<td style="text-align: right;">33.64 港元</td>
+<td>✅ 富途／stockanalysis 一致，误差 0%</td>
+</tr>
+<tr>
+<td>总股本</td>
+<td style="text-align: right;">43.27 亿股</td>
+<td>富途</td>
+</tr>
+<tr>
+<td>市值</td>
+<td style="text-align: right;"><strong>1,455.6 亿港元 ＝ 1,247.4 亿人民币</strong></td>
+<td>⚠️ 见下</td>
+</tr>
+<tr>
+<td>汇率 HKD/CNY</td>
+<td style="text-align: right;">0.857</td>
+<td>✅ xe.com 0.857006 ／ waihui999 0.857613，误差 0.07%</td>
+</tr>
+<tr>
+<td>可动用资金总额（6/30）</td>
+<td style="text-align: right;">1,213 亿人民币</td>
+<td>一手：中期业绩公告</td>
+</tr>
+<tr>
+<td>有息借款</td>
+<td style="text-align: right;">273.62 亿人民币（短 125.70 ＋ 长 147.92）</td>
+<td>一手</td>
+</tr>
+<tr>
+<td>租赁负债</td>
+<td style="text-align: right;">116.72 亿人民币（短 37.52 ＋ 长 79.20）</td>
+<td>一手</td>
+</tr>
+<tr>
+<td>归母净资产</td>
+<td style="text-align: right;">822.39 亿人民币</td>
+<td>一手</td>
+</tr>
+<tr>
+<td>近十二个月净利润</td>
+<td style="text-align: right;">157.7 亿人民币 → 市盈率 7.9</td>
+<td>推算，与富途 8.02、stockanalysis 8.40 互证</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>⚠️ <strong>市值口径差异</strong>：富途 1,455.59 亿港元（43.27 亿股）对 stockanalysis 1,498.8 亿港元（隐含 44.56 亿股），误差 2.97%，源于股本口径。取富途——它与「股价 × 股本」自洽。</p>
+</blockquote>
+<p><strong>相对 8/24 基准（33.02 港元、1,428.7 亿港元）上涨 1.9%。</strong> 折价水平与前作基本一致，第一批建仓的价格前提未被破坏。</p>
+<hr />
+<h2 id="_3">二、净现金：三档口径</h2>
+<p>前作全程使用口径一。但「可动用资金」不等于「可自由支配的净现金」，有两项扣减此前未做：</p>
+<pre><code>口径一（最宽，前作口径）
+  可动用资金 1,213 − 有息借款 273.62                          = 939.4 亿人民币 = 1,096 亿港元
+
+口径二（扣租赁负债）
+  口径一 − 租赁负债 116.72                                     = 822.7 亿人民币 =   960 亿港元
+
+口径三（最严，非流动金融资产打七折）
+  口径二 − 非流动金融资产 296.18 × 30%                         = 733.8 亿人民币 =   856 亿港元
+</code></pre>
+<p>三档极差 240 亿港元，<strong>相当于当前市值的 16.5%</strong>。</p>
+<p>口径三的理由：296.18 亿非流动金融资产是对外股权投资，既不能随时变现，也不该按面值计入托底资产；租赁负债是刚性支出义务，与有息借款同性质。</p>
+<p>同时必须说明：<strong>不能在口径三之上再叠加控股折价</strong> —— 那是同一件事罚两次。下表的折价系数已经承担了「市场不给现金全额估值」这层含义，因此主表仍用口径一，口径三单列为压力测试。</p>
+<hr />
+<h2 id="92">三、五情景赔率表（按 9/2 价格重算）</h2>
+<p>情景定义、可灵归属价值、主业倍数、280 亿美元门槛的推导全部沿用前作，此处只换分母。单位：亿港元。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th style="text-align: right;">可灵归属</th>
+<th style="text-align: right;">主业</th>
+<th style="text-align: right;">净现金</th>
+<th style="text-align: right;">折价</th>
+<th style="text-align: right;">合计</th>
+<th style="text-align: right;"><strong>回报</strong></th>
+<th style="text-align: right;">概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 真赌赢</strong></td>
+<td>上市定价 ≥ 280 亿美元</td>
+<td style="text-align: right;">1,361</td>
+<td style="text-align: right;">1,434（6 倍）</td>
+<td style="text-align: right;">1,096</td>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">3,113</td>
+<td style="text-align: right;"><strong>+113.8%</strong></td>
+<td style="text-align: right;">25%</td>
+</tr>
+<tr>
+<td><strong>B 灰色地带</strong></td>
+<td>上市定价 180–280 亿美元，触发回购博弈</td>
+<td style="text-align: right;">1,118</td>
+<td style="text-align: right;">1,434</td>
+<td style="text-align: right;">1,096</td>
+<td style="text-align: right;">30%</td>
+<td style="text-align: right;">2,554</td>
+<td style="text-align: right;"><strong>+75.4%</strong></td>
+<td style="text-align: right;">20%</td>
+</tr>
+<tr>
+<td><strong>C 折价不收敛</strong></td>
+<td>上市延后，主业分母持续收缩</td>
+<td style="text-align: right;">819</td>
+<td style="text-align: right;">1,195（5 倍）</td>
+<td style="text-align: right;">1,096</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">1,555</td>
+<td style="text-align: right;"><strong>+6.8%</strong></td>
+<td style="text-align: right;">30%</td>
+</tr>
+<tr>
+<td><strong>D 回购触发</strong></td>
+<td>牌照死线未办结，快速止损</td>
+<td style="text-align: right;">321</td>
+<td style="text-align: right;">1,195</td>
+<td style="text-align: right;">766</td>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">1,369</td>
+<td style="text-align: right;"><strong>−5.9%</strong></td>
+<td style="text-align: right;">15%</td>
+</tr>
+<tr>
+<td><strong>E 拖延止损</strong></td>
+<td>持续投入三年叠加回购触发</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">900</td>
+<td style="text-align: right;">−142</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">758</td>
+<td style="text-align: right;"><strong>−47.9%</strong></td>
+<td style="text-align: right;">10%</td>
+</tr>
+</tbody>
+</table></div>
+<pre><code>期望回报 = 0.25×113.8 + 0.20×75.4 + 0.30×6.8 + 0.15×(−5.9) + 0.10×(−47.9) = +39.9%
+</code></pre>
+<p><strong>概率分配为主观判断，是全表最薄弱的一环。</strong> 请代入自己的概率重算——第五节会说明它有多要紧。</p>
+<p>年化折算：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>兑现时点</th>
+<th style="text-align: right;">A 档 +113.8%</th>
+<th style="text-align: right;">期望 +39.9%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 年</td>
+<td style="text-align: right;">28.8%</td>
+<td style="text-align: right;">11.8%</td>
+</tr>
+<tr>
+<td>5 年</td>
+<td style="text-align: right;">16.4%</td>
+<td style="text-align: right;">6.9%</td>
+</tr>
+<tr>
+<td>5.3 年（按 2031-10-30 死线）</td>
+<td style="text-align: right;">15.4%</td>
+<td style="text-align: right;">6.5%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>期望值在 5 年期折算后只剩 6.5%–6.9% 年化。</strong> 这个数字低于持有一只内生复利标的的门槛，是仓位不能放大的核心理由，与凯利算出多少无关。</p>
+<hr />
+<h2 id="_4">四、口径三压力测试</h2>
+<p>把净现金从 1,096 换成 856 亿港元，其余不变：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: right;">合计</th>
+<th style="text-align: right;">回报（口径三）</th>
+<th style="text-align: right;">回报（口径一）</th>
+<th style="text-align: right;">差</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td style="text-align: right;">2,921</td>
+<td style="text-align: right;"><strong>+100.7%</strong></td>
+<td style="text-align: right;">+113.8%</td>
+<td style="text-align: right;">−13.2pp</td>
+</tr>
+<tr>
+<td>B</td>
+<td style="text-align: right;">2,386</td>
+<td style="text-align: right;"><strong>+63.9%</strong></td>
+<td style="text-align: right;">+75.4%</td>
+<td style="text-align: right;">−11.5pp</td>
+</tr>
+<tr>
+<td>C</td>
+<td style="text-align: right;">1,435</td>
+<td style="text-align: right;"><strong>−1.4%</strong></td>
+<td style="text-align: right;">+6.8%</td>
+<td style="text-align: right;">−8.2pp</td>
+</tr>
+<tr>
+<td>D</td>
+<td style="text-align: right;">1,225</td>
+<td style="text-align: right;"><strong>−15.8%</strong></td>
+<td style="text-align: right;">−5.9%</td>
+<td style="text-align: right;">−9.9pp</td>
+</tr>
+<tr>
+<td>E</td>
+<td style="text-align: right;">518</td>
+<td style="text-align: right;"><strong>−64.4%</strong></td>
+<td style="text-align: right;">−47.9%</td>
+<td style="text-align: right;">−16.5pp</td>
+</tr>
+</tbody>
+</table></div>
+<pre><code>期望回报 = +28.7%（口径一为 +39.9%）
+</code></pre>
+<p><strong>关键变化在 C 档：从 +6.8% 翻成 −1.4%。</strong> C 档是概率最高的单一情景（30%），它由正转负意味着「上市延后但一切照旧」这个最可能的剧本不再是小赚，而是小亏。</p>
+<p>这不是细节。<strong>前作「下行有净现金实际垫底」的表述，在口径三下要改成「下行有净现金部分垫底」</strong> —— 1,096 与 856 之间那 240 亿港元，是租赁义务和不可变现的股权投资，垫不住。</p>
+<hr />
+<h2 id="_5">五、凯利：两个维度的敏感性</h2>
+<h3 id="51">5.1 基准输出</h3>
+<pre><code>胜方（A＋B＋C）  p = 75%，平均赢幅 b = 60.8%
+负方（D＋E）      q = 25%，平均输幅 a = 22.7%
+
+f* = 0.75/0.227 − 0.25/0.608 = 3.304 − 0.411 = +2.89
+</code></pre>
+<p>输出 289%，即近三倍杠杆满仓。<strong>与前作 313% 同性质：净现金把下行压浅，凯利就把浅下行翻译成高杠杆。数值不可用，符号可用。</strong></p>
+<h3 id="52">5.2 维度一：下行幅度（前作已做，此处按新价格更新）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: right;">假设的真实下行</th>
+<th style="text-align: right;">凯利仓位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">−20%</td>
+<td style="text-align: right;">334%</td>
+</tr>
+<tr>
+<td style="text-align: right;">−30%</td>
+<td style="text-align: right;">209%</td>
+</tr>
+<tr>
+<td style="text-align: right;">−40%</td>
+<td style="text-align: right;">146%</td>
+</tr>
+<tr>
+<td style="text-align: right;">−50%</td>
+<td style="text-align: right;">109%</td>
+</tr>
+<tr>
+<td style="text-align: right;">−60%</td>
+<td style="text-align: right;">84%</td>
+</tr>
+<tr>
+<td style="text-align: right;">−70%</td>
+<td style="text-align: right;">66%</td>
+</tr>
+</tbody>
+</table></div>
+<p>极差 5.1 倍，远超 3 倍红线。<strong>这两个端点之间没有可靠的事前分辨手段。</strong></p>
+<h3 id="53">5.3 维度二：概率（本次新增）</h3>
+<p>前作没测这个维度，而它比下行幅度更要紧——因为概率是可以被消息面改变的，下行幅度不能。</p>
+<p>逐步调低「上市成功」两档（A、B）的权重：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情形</th>
+<th>A/B/C/D/E</th>
+<th style="text-align: right;">期望回报</th>
+<th style="text-align: right;">f*</th>
+<th style="text-align: center;">符号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基准</td>
+<td>25/20/30/15/10</td>
+<td style="text-align: right;">+39.9%</td>
+<td style="text-align: right;"><strong>+2.89</strong></td>
+<td style="text-align: center;">正</td>
+</tr>
+<tr>
+<td>上市推迟为主线</td>
+<td>15/15/35/20/15</td>
+<td style="text-align: right;">+22.4%</td>
+<td style="text-align: right;"><strong>+1.98</strong></td>
+<td style="text-align: center;">正</td>
+</tr>
+<tr>
+<td>回购博弈为主线</td>
+<td>10/10/30/25/25</td>
+<td style="text-align: right;">+7.5%</td>
+<td style="text-align: right;"><strong>+0.66</strong></td>
+<td style="text-align: center;">正</td>
+</tr>
+<tr>
+<td><strong>临界</strong></td>
+<td><strong>7/8/28/27/30</strong></td>
+<td style="text-align: right;"><strong>−0.1%</strong></td>
+<td style="text-align: right;"><strong>−0.01</strong></td>
+<td style="text-align: center;"><strong>临界</strong></td>
+</tr>
+<tr>
+<td>交割告吹为主线</td>
+<td>5/5/25/30/35</td>
+<td style="text-align: right;">−7.4%</td>
+<td style="text-align: right;"><strong>−0.81</strong></td>
+<td style="text-align: center;">负</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>符号翻负的临界条件：D＋E 合计概率越过约 57%。</strong></p>
+<p>翻译成可观察的语言：</p>
+<blockquote>
+<p>只要「增资交割告吹或牌照三项未办结」这条路径的可能性不超过六成，赔率结构就仍然有利；一旦越过，无论主业多便宜、净现金多厚，当前价格上都不该买。</p>
+</blockquote>
+<p>这个条件是<strong>可跟踪的</strong>，而且第一个观察点很近：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>死线</th>
+<th>日期</th>
+<th style="text-align: right;">距今</th>
+<th>越过后的含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>增资交割</td>
+<td>2026-12-29</td>
+<td style="text-align: right;">约 3.9 个月</td>
+<td>交割完成即把 D＋E 的概率显著压低</td>
+</tr>
+<tr>
+<td>牌照三项</td>
+<td>约 2027 年年中</td>
+<td style="text-align: right;">约 9 个月</td>
+<td>办结后 D 档基本出局</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>换句话说：本文测出的临界点，在未来 9 个月内会被现实揭晓，而不需要提前猜。这正是分批建仓框架把第二、三批绑在这两个日期上的原因。</strong></p>
+<hr />
+<h2 id="_6">六、前作勘误</h2>
+<p>本目录 8/27《赔率表与分批建仓框架》与仓库根目录 9/3《9公司凯利赔率横评》第 3.3 节，印的是同一张五情景表（回报 +117/+78/+9/−4/−47，概率 25/20/30/15/10）。按该组数字重算：</p>
+<pre><code>期望回报 = 0.25×117 + 0.20×78 + 0.30×9 + 0.15×(−4) + 0.10×(−47) = +42.3%
+f*      = 0.75/0.212 − 0.25/0.634 = +3.14
+</code></pre>
+<ul>
+<li>8/27 报告给出 +41.1%、3.13 —— 与重算基本一致 ✅</li>
+<li>9/3 横评汇总表第 29 行给出 <strong>+35.8%、1.20</strong> —— 两个数字均无法由其自身第 3.3 节的表格复算 ⚠️（同行的上行 +117%、下行 −47%、赔率比 2.5 则与表格一致，故问题定位在期望与凯利两列）</li>
+</ul>
+<p><strong>建议以表格重算值为准，修正横评的汇总行。</strong> 该行同时影响横评第 44–45 行的期望排序与凯利排序（快手在凯利排序中的位置应显著前移）。</p>
+<hr />
+<h2 id="_7">七、结论</h2>
+<p><strong>赔率结构判断（客观推导）</strong></p>
+<ol>
+<li>按 9/2 价格，期望回报 <strong>+39.9%</strong>（口径一）／<strong>+28.7%</strong>（口径三），凯利符号为正</li>
+<li>符号的稳健区间已经量化：<strong>D＋E 合计概率低于约 57% 时为正，越过即为负</strong></li>
+<li>5 年期折算后期望年化仅 6.5%–6.9%，这是仓位约束的真实来源</li>
+<li>口径三下，概率最高的 C 档由 +6.8% 翻为 −1.4%，「净现金完全垫底」的说法需要收窄</li>
+</ol>
+<p><strong>仓位意见（主观）</strong></p>
+<p>沿用前作：<strong>总仓位上限 8%–12%，分三批，与 2026-12-29、约 2027 年年中两个节点绑定。</strong> 本次更新不改变节奏，但增加一条：</p>
+<blockquote>
+<p><strong>若在 2026-12-29 前出现交割受阻的实质信号，第一批亦应减出，而不是等第二批不加。</strong> 因为临界点测算显示，D＋E 概率一旦系统性抬升，正的赔率结构会整体消失，届时「已建的三分之一仓位」不再享有安全边际。</p>
+</blockquote>
+<p><strong>红线清单</strong>沿用前作五条，本次新增两条观察项：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>新增</th>
+<th>观察项</th>
+<th>为什么要看</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>租赁负债与非流动金融资产的季度变化</td>
+<td>决定净现金真实在口径一还是口径三</td>
+</tr>
+<tr>
+<td>7</td>
+<td>「最迟上市日期」是否在后续公告中披露</td>
+<td>一旦披露，全部年化测算须重算</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_8">数据缺口</h2>
+<ol>
+<li>⚠️ <strong>可灵单独的分部损益从不披露</strong>，主业经调整净利 205 亿人民币为剔除可灵亏损后的倒推估算</li>
+<li>⚠️ <strong>「最迟上市日期」的具体日期公告未予披露</strong>，本文按 2031-10-30 折算属偏乐观口径</li>
+<li>电商 GMV 自 2026 年起停止披露，电商健康度只能由「其他服务」收入（Q2 +18.5%）侧面推断</li>
+<li>2026 上半年经营现金流与实际资本开支，业绩公告未列示，需查中期报告全文</li>
+<li>增资交割状态截至本文基准日无公开进展披露</li>
+</ol>
+<h2 id="_9">数据来源</h2>
+<ol>
+<li>快手科技《有关认购、授予回购权及采纳附属公司股份参与计划的须予披露交易及关连交易》（港交所，2026-07-02）：<code>https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0702/2026070204066_c.pdf</code></li>
+<li>快手科技 2026 年中期业绩公告（港交所，2026-08-19）：<code>https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf</code></li>
+<li>股价、股本、市值：2026-09-02 收盘，富途与 stockanalysis 交叉验证</li>
+<li>汇率：xe.com 与 waihui999 交叉验证，2026-09-02</li>
+</ol>
+<p><strong>方法说明</strong>：情景定义、可灵归属价值、主业倍数、280 亿美元门槛沿用本目录 20260827 报告由一手公告重算的结果，本文只更新分母与新增两项敏感性测试。<strong>五情景概率分配为主观判断，第五节已量化它对结论的决定性影响。</strong> 仓位上限与分批节奏属主观意见，可能是错的，不构成投资建议。</p>
+<p><strong>相关文档</strong>：本目录《快手赔率表与分批建仓框架》（20260827）、《快手 AI 赌注双向推演》（20260827）、《快手现在是否值得买：可灵折价的三个前提》（20260825）、《快手值多少钱：五年利润推演与下行风险全清单》（20260822）；仓库根目录《9公司凯利赔率横评》（20260903）。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2f73e86f63d4.html">快手与可灵：创始人、技术选型、赛道与十年推演</a><div class="meta">2026-10-17 · 研究</div></li><li><a href="../r/b78ea6a95236.html">可灵与快手十年推演（2026-10-17）</a><div class="meta">2026-10-17 · 导读</div></li><li><a href="../r/f80334f8f914.html">快手与可灵：财务与经营证据底稿</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/722f16789334.html">可灵技术与竞争证据：从模型领先到经济护城河</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/8ab3cb0a66e9.html">快手与可灵深度研究报告</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/948672d4f2d6.html">审计说明</a><div class="meta">2026-10-16 · 底稿</div></li><li><a href="../r/1ac5b5717c6b.html">快手与可灵：创始人、组织与治理证据</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/7661a5d37927.html">快手与可灵深度研究 · 2026-10-16</a><div class="meta">2026-10-16 · 导读</div></li><li><a href="../r/29d256651108.html">快手科技（1024.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/207317a7a1f4.html">快手十年后：生态还在不在、为什么还去快手、可灵结局、还能赚多少</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/16ff30b4d9f0.html">快手AI利润模型与核验记录</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/4ac8125172ef.html">快手：AI对未来三年利润的影响与2036年盈利能力</a><div class="meta">2026-09-24 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

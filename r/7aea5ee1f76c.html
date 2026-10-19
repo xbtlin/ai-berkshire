@@ -1,0 +1,840 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Alphabet（谷歌）独立投资研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/美股七姐妹-20261019/index.html">美股七姐妹-20261019</a></div><h1>Alphabet（谷歌）独立投资研究报告</h1><div class="meta"><a href="../topics/美股七姐妹-20261019/index.html">美股七姐妹-20261019</a> ｜ 2026-10-19 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E8%B0%B7%E6%AD%8C/%E8%B0%B7%E6%AD%8C%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261019.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">第一步：数据收集与口径校准</a><ul>
+<li><a href="#_2">五年经营与现金流</a></li>
+<li><a href="#_3">最近四季收入结构</a></li>
+<li><a href="#_4">资产负债、股本及会计陷阱</a></li>
+</ul>
+</li>
+<li><a href="#_5">第二步：生意本质——帮助客户获得意图、注意力与算力</a></li>
+<li><a href="#_6">第三步：护城河与竞争格局</a></li>
+<li><a href="#_7">第四步：逆向思考与风险</a></li>
+<li><a href="#_8">第五步：管理层与资本配置</a></li>
+<li><a href="#_9">第六步：行业、文明趋势与利润路径</a></li>
+<li><a href="#_10">第七步：估值、安全边际与压力测试</a><ul>
+<li><a href="#_11">当前价格究竟买到什么</a></li>
+<li><a href="#_12">三年三情景：回答“贵不贵”</a></li>
+<li><a href="#dcf">反向 DCF：现价隐含什么</a></li>
+<li><a href="#_13">十年折现：只用于仓位压力测试</a></li>
+<li><a href="#_14">估值分歧对账</a></li>
+</ul>
+</li>
+<li><a href="#_15">第八步：综合决策备忘录</a></li>
+<li><a href="#_16">审计与研究限制</a></li>
+<li><a href="#2026-10-19">来源索引（均于 2026-10-19 读取/检索）</a></li>
+<li><a href="#_17">附录：关键数据交叉验证记录与实际准出状态</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>研究日：2026-10-19（北京时间）；已运行系统 date 核实。行情截止：2026-10-16 美股正常交易收盘。财务截止：2026-06-30；最近完整财年：FY2025。对象：Alphabet 全集团，A/B/C 三类普通股全部纳入；价格决策以 GOOGL 为基准。除每股数字和特别说明，财务表格单位均为<strong>十亿美元（USD billion）</strong>，1 十亿美元等于 10 亿美元。执行框架：仓库 <code>skills/investment-research.md</code> 最新八步骤版本。</p>
+</blockquote>
+<p><strong>核心判断：优质但已不便宜；现价以持有为主，新增资金等待更好的安全边际。</strong> 搜索入口和云基础设施的竞争力仍强，AI 已带来可见增长，但重资本化、投资收益污染净利润和融资扩张使旧式“轻资产现金牛”估值失真。三年基准现值约 <strong>339 美元</strong>，现价 <strong>340.59 美元</strong>接近合理价值；<strong>250—280 美元</strong>是更有吸引力的分批买入区，<strong>300—360 美元</strong>是合理持有区，<strong>420 美元以上</strong>需更强经营证据。十年模型用于限制集中仓位，不作为买卖唯一否决票。</p>
+<p>信息丰富度评级：<strong>A 级</strong>。AI 研究局限性声明：可公开检索的信息多，不等于未来确定性高。公开信息不能直接回答单次 AI 搜索的边际毛利、TPU 外售与租赁的回报差异、云客户真实终端盈利、数据中心经济寿命。本报告没有供应链访谈或内部数据，不把产品使用量直接等同利润。事实、工具计算和研究假设分别注明；不会把未取得第二来源的项目伪装成双源核验。</p>
+<p>偏见检查：本报告不以“搜索份额接近九成”推导“AI 时代份额不变”；不以“云增速八成”无限外推；不以账面投资收益把公司误判成低 PE。若资料减少一半，仍需验证搜索商业意图、算力单位回报、普通股现金回报三件事。</p>
+<h2 id="_1">第一步：数据收集与口径校准</h2>
+<h3 id="_2">五年经营与现金流</h3>
+<p>| 财年 | 收入 | GAAP 净利 | 毛利率 | 经营利润率 | 经营现金流 | 资本支出 | 自由现金流 | 现金及可交易证券 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2021 | 257.637 | 76.033 | 56.94% | 30.55% | 91.652 | 24.640 | 67.012 | 139.649 |
+| 2022 | 282.836 | 59.972 | 55.38% | 26.46% | 91.495 | 31.485 | 60.010 | 113.762 |
+| 2023 | 307.394 | 73.795 | 56.63% | 27.42% | 101.746 | 32.251 | 69.495 | 110.916 |
+| 2024 | 350.018 | 100.118 | 58.20% | 32.11% | 125.299 | 52.535 | 72.764 | 95.657 |
+| 2025 | 402.836 | 132.170 | 59.65% | 32.03% | 164.713 | 91.447 | 73.266 | 126.843 |</p>
+<p>来源：[S1][S2][S3][S4][S5]。自由现金流统一为经营现金流减购置固定资产，不减并购；因此不等于全部可分配现金。现金列包含证券投资，不等于银行存款。2025 收入、净利、现金证券、经营利润、经营现金流和 FCF 在 SEC、StockAnalysis 与 Macrotrends 可见搜索摘要之间一致；Macrotrends 正文访问报 Internal Error，核验级别只是可见检索摘要，不声称下载了完整表。2021—2023 用 2023 年 10-K、2024—2025 用 2025 年 10-K 对照第三方财务表；部分历史资产负债细项的两源逐项审计未全部完成。</p>
+<p>读数：收入与利润增长并没有同步转化为 FCF 增长。资本支出从 2021 年 24.640 上升到 2025 年 91.447，而同期 FCF 从 67.012 到 73.266。2025 年经营利润率是 <strong>32.03%</strong>，不是税前利润率 39.43%。旧仓库 2026-06-23 报告误列了这个指标及部分历史分部数字，本报告以重新读取的 SEC 原文为准，不修改旧文件。</p>
+<h3 id="_3">最近四季收入结构</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>季度</th>
+<th style="text-align: right;">搜索及其他</th>
+<th style="text-align: right;">YouTube 广告</th>
+<th style="text-align: right;">广告联盟</th>
+<th style="text-align: right;">订阅/平台/设备</th>
+<th style="text-align: right;">云</th>
+<th style="text-align: right;">Other Bets</th>
+<th style="text-align: right;">汇兑对冲</th>
+<th style="text-align: right;">集团收入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025Q3</td>
+<td style="text-align: right;">56.567</td>
+<td style="text-align: right;">10.261</td>
+<td style="text-align: right;">7.354</td>
+<td style="text-align: right;">12.870</td>
+<td style="text-align: right;">15.157</td>
+<td style="text-align: right;">0.344</td>
+<td style="text-align: right;">-0.207</td>
+<td style="text-align: right;">102.346</td>
+</tr>
+<tr>
+<td>2025Q4</td>
+<td style="text-align: right;">63.073</td>
+<td style="text-align: right;">11.383</td>
+<td style="text-align: right;">7.828</td>
+<td style="text-align: right;">13.578</td>
+<td style="text-align: right;">17.664</td>
+<td style="text-align: right;">0.370</td>
+<td style="text-align: right;">-0.068</td>
+<td style="text-align: right;">113.828</td>
+</tr>
+<tr>
+<td>2026Q1</td>
+<td style="text-align: right;">60.399</td>
+<td style="text-align: right;">9.883</td>
+<td style="text-align: right;">6.971</td>
+<td style="text-align: right;">12.384</td>
+<td style="text-align: right;">20.028</td>
+<td style="text-align: right;">0.411</td>
+<td style="text-align: right;">-0.180</td>
+<td style="text-align: right;">109.896</td>
+</tr>
+<tr>
+<td>2026Q2</td>
+<td style="text-align: right;">63.271</td>
+<td style="text-align: right;">11.055</td>
+<td style="text-align: right;">7.303</td>
+<td style="text-align: right;">12.911</td>
+<td style="text-align: right;">24.768</td>
+<td style="text-align: right;">0.382</td>
+<td style="text-align: right;">0.106</td>
+<td style="text-align: right;">119.796</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>季度</th>
+<th style="text-align: right;">Services 收入</th>
+<th style="text-align: right;">同比</th>
+<th style="text-align: right;">Services 经营利</th>
+<th style="text-align: right;">经营利润率</th>
+<th style="text-align: right;">云收入同比</th>
+<th style="text-align: right;">云经营利</th>
+<th style="text-align: right;">云经营利润率</th>
+<th style="text-align: right;">Bets 经营亏损</th>
+<th style="text-align: right;">总部活动亏损</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025Q3</td>
+<td style="text-align: right;">87.052</td>
+<td style="text-align: right;">13.78%</td>
+<td style="text-align: right;">33.527</td>
+<td style="text-align: right;">38.51%</td>
+<td style="text-align: right;">33.51%</td>
+<td style="text-align: right;">3.594</td>
+<td style="text-align: right;">23.71%</td>
+<td style="text-align: right;">-1.426</td>
+<td style="text-align: right;">-4.467</td>
+</tr>
+<tr>
+<td>2025Q4</td>
+<td style="text-align: right;">95.862</td>
+<td style="text-align: right;">13.99%</td>
+<td style="text-align: right;">40.132</td>
+<td style="text-align: right;">41.86%</td>
+<td style="text-align: right;">47.75%</td>
+<td style="text-align: right;">5.313</td>
+<td style="text-align: right;">30.08%</td>
+<td style="text-align: right;">-3.617</td>
+<td style="text-align: right;">-5.894</td>
+</tr>
+<tr>
+<td>2026Q1</td>
+<td style="text-align: right;">89.637</td>
+<td style="text-align: right;">16.01%</td>
+<td style="text-align: right;">40.589</td>
+<td style="text-align: right;">45.28%</td>
+<td style="text-align: right;">63.36%</td>
+<td style="text-align: right;">6.598</td>
+<td style="text-align: right;">32.94%</td>
+<td style="text-align: right;">-2.100</td>
+<td style="text-align: right;">-5.391</td>
+</tr>
+<tr>
+<td>2026Q2</td>
+<td style="text-align: right;">94.540</td>
+<td style="text-align: right;">14.53%</td>
+<td style="text-align: right;">39.544</td>
+<td style="text-align: right;">41.83%</td>
+<td style="text-align: right;">81.80%</td>
+<td style="text-align: right;">8.814</td>
+<td style="text-align: right;">35.59%</td>
+<td style="text-align: right;">-1.799</td>
+<td style="text-align: right;">-5.789</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：[S6][S7][S8][S9]；同比和利润率由 <code>recalculate.py</code> 计算，历史同期分母保存在 JSON。集团<strong>未披露各业务分部毛利率</strong>；上表是经营利润率，不拿它冒充毛利率。总部 AI 研究费用不完全分摊至 Cloud，不能只取云利润率代表全集团 AI 回报。季度收入中最新季度在 StockAnalysis 分部页有第二来源，历史各季分部主要靠 SEC 原文，尚未取得每格独立第三方复核，明确保留这一缺口。</p>
+<h3 id="_4">资产负债、股本及会计陷阱</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">数值</th>
+<th>口径与判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现金及现金等价物</td>
+<td style="text-align: right;">55.911</td>
+<td>真正现金类起点</td>
+</tr>
+<tr>
+<td>流动可交易证券</td>
+<td style="text-align: right;">186.563</td>
+<td>其中股票 87.063，不能全部视为现金</td>
+</tr>
+<tr>
+<td>现金加流动证券</td>
+<td style="text-align: right;">242.474</td>
+<td>第三方所谓 cash and investments</td>
+</tr>
+<tr>
+<td>非流动上市股权</td>
+<td style="text-align: right;">14.126</td>
+<td>主要为有限售限制的 SpaceX 股份</td>
+</tr>
+<tr>
+<td>非上市证券</td>
+<td style="text-align: right;">131.461</td>
+<td>估值和流动性均需折价</td>
+</tr>
+<tr>
+<td>有息债务，不含租赁</td>
+<td style="text-align: right;">100.164</td>
+<td>长债 98.165 加当期到期 1.999</td>
+</tr>
+<tr>
+<td>第三方含租赁总债务</td>
+<td style="text-align: right;">120.791</td>
+<td>与上一行不同，不能无说明混用</td>
+</tr>
+<tr>
+<td>排除流动股票后的净现金</td>
+<td style="text-align: right;">55.247</td>
+<td>55.911+186.563−87.063−100.164</td>
+</tr>
+<tr>
+<td>强制可转优先股账面权益</td>
+<td style="text-align: right;">18.023</td>
+<td>普通股之外的权利，不算普通股股本</td>
+</tr>
+<tr>
+<td>采购及其他合同承诺</td>
+<td style="text-align: right;">811.000</td>
+<td>不等于已到期债务，含长期基础设施、能源与内容义务</td>
+</tr>
+<tr>
+<td>其中短期合同承诺</td>
+<td style="text-align: right;">200.700</td>
+<td>应结合现金流及交付期评估</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：[S10][S4]。10-Q 明确流动证券含 <strong>80.0</strong> 的 SpaceX 股票有短期限售，另 <strong>14.1</strong> 有限制到 2027 年第三季度；这些是股权资产，不是随时可提现现金。非上市证券主要集中于一家未具名私营公司，不能因为媒体推测就把整项确认为某一公司。</p>
+<p>Q2 归普通股净利润 <strong>112.107</strong>，集团总净利润 <strong>112.193</strong>，差额 <strong>0.086</strong> 是优先股股息。TTM 普通股净利润为 <strong>244.119</strong>；Q2 股权投资收益 <strong>99.031</strong> 是主要异常来源。EPS、普通股净利与现金流表总净利不同，不能混着比较。[S9][S10]</p>
+<p>全类别股本以 2026-07-15 10-Q 封面为最新已核实快照：A 类 <strong>58.68 亿股</strong>、B 类 <strong>8.35 亿股</strong>、C 类 <strong>55.27 亿股</strong>，合计 <strong>122.30 亿股</strong>；StockAnalysis 同为 12.23 billion。不是把 GOOGL 的 A 类 58.68 亿股当集团全部股本。[S10][S11]</p>
+<p>10 月 16 日收盘 GOOGL <strong>340.59 美元</strong>（StockAnalysis、Investing 一致），GOOG <strong>336.91 美元</strong>（WSJ、TwelveData 一致）。B 类非上市，经济价值以 A 类近似。按各类价格加权市值 <strong>4.145076 万亿美元</strong>；统一用 GOOGL 价格乘全类别股本为 <strong>4.165416 万亿美元</strong>，与第三方四舍五入 <strong>4.17 万亿美元</strong>的偏差很小。后续模型统一使用后者，避免 A/C 价差使每股比较失配。股本不是 10 月 16 日逐日实时快照，后续发行与归属会造成轻微偏差。另在后续检索发现 Macrotrends 股数页将 2026Q2 写作 13.144 billion，与 SEC 期末 12.230 billion 相差约 7.47%；该数也不同于 SEC 当季稀释加权股数 12.309 billion。无法确认供应商具体汇总错误原因，故排除此条第三方股数，保留异常日志，采用 SEC 和 StockAnalysis 一致的期末全类别口径。[S11][S12][S13]</p>
+<p>优先股在 2029 年强制转股，具体转换区间见 10-Q；本报告以扣除优先股账面权利作为现值桥接近似，不同时把其全部加入普通股分母，避免重复扣减；这不是完整可转证券定价，未来股息和稀释仍需更新。2026 上半年公司没有回购，不能继续默认历史回购速度。[S10]</p>
+<p>管理层在 Q2 电话会将 2026 年 CapEx 指引上修至 <strong>195—205 十亿美元</strong>，并表示 2027 年仍将显著增加；Cloud backlog 为 <strong>514 十亿美元</strong>，预计超过一半在未来两年转为收入。这是管理层展望，不是已收现金或不可撤销利润。Q2 经营现金流 <strong>39.069</strong> 减 CapEx <strong>44.924</strong>，得到季度 FCF <strong>−5.855</strong>。[S9][S24] 因此应优先关注未来现金转化，而不是只看报表利润。</p>
+<p>追问：今天看到的利润增长，有多少来自顾客付款，有多少来自资产重估？</p>
+<h2 id="_5">第二步：生意本质——帮助客户获得意图、注意力与算力</h2>
+<p>一句话：<strong>用搜索和视频把高价值需求与商业供给匹配，再把规模化计算能力卖给企业。</strong> 搜索广告靠商业意图转化，YouTube 靠内容供给和观看时长，云靠真实计算、存储和开发需求。用户免费与企业付费共存；广告不是订阅，但广告主只要持续赚到钱就有重复购买需求。</p>
+<p>FY2025 搜索收入 224.532、YouTube 广告 40.367、广告联盟 29.792、订阅平台设备 48.030、Cloud 58.705、Other Bets 1.537，另汇兑对冲 −0.127。[S2][S3] 搜索仍是核心现金来源，云已成为真实的第二利润引擎。订阅可降低广告周期依赖，但设备与内容成本使其不能套用纯软件毛利率。</p>
+<p>经营杠杆分两层：索引、广告竞价与分发网络能共享成本，支持规模利润；而 AI 答案推理、服务器、电力、数据中心折旧更接近按用量增加的成本。2026Q2 Services 利润率较 Q1 回落，不能仅凭收入增速就认定 AI 一定提升边际利润。</p>
+<p>技术能力来自 TPU、数据中心、DeepMind/Gemini、搜索索引、广告测量和视频基础设施的协同。FY2025 研发费用 <strong>61.087</strong>，但研发投入高不等于研发回报高。[S2][S17] 对算法团队的关键问题是：模型领先能否降低每个成功任务的总成本，能否改善广告转化和用户留存；参数规模或榜单名次只是中间指标。</p>
+<p>追问：好生意的依据是广告主持续获得可衡量回报，以及企业获得可靠计算，而不是“拥有最强模型”这一未经持续验证的标签。</p>
+<h2 id="_6">第三步：护城河与竞争格局</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>现有证据</th>
+<th>趋势判断</th>
+<th>失效条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>品牌/入口</td>
+<td>全球搜索份额在 Statcounter 2026 年 9 月口径为 89.94%</td>
+<td>搜索仍强，AI 原生入口分流构成压力</td>
+<td>用户将商业决策迁往其他助手</td>
+</tr>
+<tr>
+<td>转换成本</td>
+<td>广告测量、投放流程、企业数据与云应用迁移成本</td>
+<td>企业侧强于消费者搜索侧</td>
+<td>多云与代理自动迁移大幅降低成本</td>
+</tr>
+<tr>
+<td>网络效应</td>
+<td>YouTube 创作者—观众—广告主循环；广告反馈改善匹配</td>
+<td>视频生态较稳；搜索数据垄断优势可能削弱</td>
+<td>数据共享规则、内容供给迁移、垃圾内容泛滥</td>
+</tr>
+<tr>
+<td>规模效应</td>
+<td>自研芯片、采购、电力和全球部署</td>
+<td>云规模扩大，但资本密集度上升</td>
+<td>利用率低、硬件过时、推理价格快速下跌</td>
+</tr>
+<tr>
+<td>技术壁垒</td>
+<td>TPU 与模型/系统联合设计、工程人才和分发</td>
+<td>系统优势强，单模型领先未必持久</td>
+<td>开源模型和替代芯片快速追平</td>
+</tr>
+</tbody>
+</table></div>
+<p>市场份额来源：[S14]。Statcounter 是其采样网站转介/页面浏览口径，不是全世界所有信息请求；ChatGPT 等站内回答可能不在同一分母，所以不能据此断言 Google 保有全部 AI 信息入口的九成份额。</p>
+<p>云竞争方面，Synergy 报告 2026Q2 基础设施市场 143 十亿美元，AWS、Microsoft、Google 份额分别 <strong>28%、20%、15%</strong>；Google Cloud 披露还含 Workspace 及其他业务，不能用其全部收入直接除行业市场规模。[S15] AWS 有生态与规模，微软有企业身份/办公入口，Google 有数据分析、TPU 与模型能力；OpenAI/Anthropic 同时可能是客户、投资标的、入口对手，关系不是简单敌我。</p>
+<p>未来三年 AI 的正向路径是：长尾问题提高搜索使用量；企业 AI 工作负载增加；TPU 降低单位计算成本；视频和广告生成提升投放效率。负向路径是：低商业意图查询增长摊薄收入；直接答案减少外链生态；推理成本超过广告增量；硬件销售拉高收入却降低资本回报；客户融资耗尽。必须同时跟踪“收入/单位投入”和现金回收。</p>
+<p>追问：十年后较有把握留存的是分发、客户关系与系统工程；最不该永久资本化的是当前某个模型的能力领先。</p>
+<h2 id="_7">第四步：逆向思考与风险</h2>
+<p>下表概率是研究判断，不是统计测量，且事件重叠不可相加；三情景概率见估值章节。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>失败路径</th>
+<th>主观风险等级/发生可能性</th>
+<th>利润影响</th>
+<th>可观察证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>商业查询迁向 AI 助手或电商</td>
+<td>中高</td>
+<td>搜索量仍增但单次价值下降</td>
+<td>搜索收入连续显著落后数字广告总盘</td>
+</tr>
+<tr>
+<td>AI 资本开支回报不及预期</td>
+<td>高</td>
+<td>折旧和能源长期压利润、FCF</td>
+<td>云增速下降而合同承诺/折旧持续上升</td>
+</tr>
+<tr>
+<td>反垄断削弱分发与广告联营</td>
+<td>高，部分已发生</td>
+<td>流量采购条件、费率和数据优势改变</td>
+<td>判决执行后的份额与有效获客成本恶化</td>
+</tr>
+<tr>
+<td>云收入集中于少数高融资客户</td>
+<td>中</td>
+<td>订单不转现金、信用损失/担保触发</td>
+<td>应收、信用支持、客户违约上升</td>
+</tr>
+<tr>
+<td>芯片/电力供应制约</td>
+<td>中</td>
+<td>延迟收入、成本上涨</td>
+<td>交付延后、闲置与预付款同时增加</td>
+</tr>
+<tr>
+<td>巨额投资资产估值回落</td>
+<td>中高</td>
+<td>GAAP 利润逆转，普通股净值下降</td>
+<td>后续融资折价或上市资产下跌</td>
+</tr>
+<tr>
+<td>重大网络安全或系统性事故</td>
+<td>低频、未量化</td>
+<td>可能出现超出普通悲观档的损失</td>
+<td>事故/诉讼；未建模尾部风险</td>
+</tr>
+</tbody>
+</table></div>
+<p>监管已有实质变化：DOJ 的搜索救济材料要求限制排他分发、开放部分搜索数据和提供搜索/广告联合服务；2026 年广告技术救济强调互操作、透明度和竞争对手接入。[S16][S18] 不把“没有立即拆分”解读为监管影响归零，也不把尚未发生的全面拆分当既定事实。</p>
+<p>合同承诺 811.0 不应机械加到财务债务上，但说明资产负债表外现金使用刚性显著提高。另有财务担保最大潜在支付 7.6、信用衍生安排 43.8，合计 51.4；它们是最大潜在敞口，不是预期损失，也可能带有使用/转租基础设施的追索权。[S10]</p>
+<p>历史类比只作为问题来源：成熟信息入口可能像早期门户一样丢失入口，也可能像企业基础软件一样适应平台变化。Google 拥有自己的芯片、模型和分发，不能机械类比 Yahoo；另一方面，大规模网络投资成功也不保证投资者取得超额收益，产能可能让利于客户。最大的认知错误是将“AI 总需求增长”直接等同“Alphabet 每股自由现金流增长”。</p>
+<p>追问：聪明人不买的理由可能是价格已包含高增速、未来资本强度不可逆，而不是否认公司能力。</p>
+<h2 id="_8">第五步：管理层与资本配置</h2>
+<p>Sundar Pichai 于 2004 年加入 Google、2015 年出任 Google CEO、2019 年兼任 Alphabet CEO；这来自 2026 代理声明，不依赖旧记忆。[S19] 组织已有成熟分部经营能力，但前沿研究人才竞争和产品发布节奏仍可能成为瓶颈。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>决策</th>
+<th>可核实结果</th>
+<th>研究评价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>长期建设云及 TPU</td>
+<td>Cloud 收入与经营利润快速增长</td>
+<td>战略方向得到验证，完整投资回报仍待观察</td>
+</tr>
+<tr>
+<td>持续加大 AI 投入</td>
+<td>2025 研发 61.087；2026 资本支出指引继续上修</td>
+<td>有防御必要，但不能免除资本纪律</td>
+</tr>
+<tr>
+<td>2026 年收购 Wiz</td>
+<td>3 月完成，调整后购买价 29.467，商誉 22.705</td>
+<td>提升安全能力；高商誉意味着未来需要验证协同</td>
+</tr>
+<tr>
+<td>投资非上市公司</td>
+<td>带来显著账面收益</td>
+<td>证明早期判断可能有价值，未实现收益不是可持续经营利润</td>
+</tr>
+<tr>
+<td>暂停回购并新增融资</td>
+<td>2026 上半年零回购</td>
+<td>有利于建设产能，但普通股持有人需承担资本配置风险</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：[S10][S19]。2026 年 4 月代理声明显示 Larry Page 与 Sergey Brin 投票权约 <strong>27.4%</strong> 和 <strong>25.3%</strong>，合计 <strong>52.7%</strong>；B 股十票、A 股一票、C 股无常规投票权。这个比例不是经济持股比例。已读取的所有权表主要展示有投票权股票，未完成两位创始人全部 A/B/C 股及信托归属的独立双源经济权益核算，因此<strong>不报告一个假装精确的经济持股比例</strong>。SBC 是真实股东成本；估值起点使用已扣 SBC 的经营利润，不把 SBC 再无条件加回。</p>
+<p>追问：CEO 退休后公司大概率仍有强业务与研发体系，但小股东能否约束无回报投资，与公司技术实力是两回事。</p>
+<h2 id="_9">第六步：行业、文明趋势与利润路径</h2>
+<p>AI 降低信息生产和处理成本，会提高计算需求，同时可能压低单位模型服务价格。价值未必留在模型层，也可能被芯片、电力、企业流程、分发和最终用户获得。Google 具备多环节参与条件，但资本跨环节配置错误会抵消优势。</p>
+<p>TAM 使用可观察市场而不将所有行业 GDP 加总：云基础设施 2026Q2 市场 143 十亿美元是已实现规模，不能简单年化后再无限按当季 43% 增长；广告预算最终受到广告主毛利与可归因销售限制；AI 订阅需要支付意愿；自动驾驶可另有机会但当前不以宏大 TAM 给核心模型加价。[S15]</p>
+<p>下列均为自建情景，不是公司指引，也不是市场一致预期。三年 EPS 模型考虑净股本变化与经营增长的综合结果；十年利润不包括未实现投资收益。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: right;">2036 年收入假设</th>
+<th style="text-align: right;">2036 年经营性税后利润</th>
+<th style="text-align: right;">隐含税后利润率</th>
+<th>实现条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">20.00%</td>
+<td>搜索成熟/份额下降，云竞争与折旧侵蚀利润</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">1300</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">30.77%</td>
+<td>搜索适应 AI，云与订阅扩张，基础设施回报逐步改善</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: right;">37.50%</td>
+<td>AI 入口、企业平台和 TPU 多线成功，规模效率显著</td>
+</tr>
+</tbody>
+</table></div>
+<p>预测中心不是“十年后净利润必然 4000 亿美元”，而是“要支撑这个结果，公司必须获得约 1.3 万亿美元收入并维持很高盈利能力”。未来三年基准经营性每股盈利年增 16%，从 9.90 到 15.45；能否实现取决于服务业务增长、云利润和新增折旧的净结果。客户层面广告较分散，但云和算力建设的实际风险可能集中于少数大客户；供应侧电力、先进制造和封装更加集中，尚未取得完整供应商采购占比，不补造数值。</p>
+<p>追问：20 年后仍存在信息分发与计算需求，不等于今天任何价格购买该需求的供应商都会获得高回报。</p>
+<h2 id="_10">第七步：估值、安全边际与压力测试</h2>
+<h3 id="_11">当前价格究竟买到什么</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">数值</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GOOGL 收盘价，美元</td>
+<td style="text-align: right;">340.59</td>
+<td>正常收盘，不取盘后 339.60</td>
+</tr>
+<tr>
+<td>GOOGL 等价集团市值，万亿美元</td>
+<td style="text-align: right;">4.165416</td>
+<td>统一 A 类价格乘全类别普通股</td>
+</tr>
+<tr>
+<td>TTM GAAP PE</td>
+<td style="text-align: right;">17.09</td>
+<td>投资重估严重抬高分母</td>
+</tr>
+<tr>
+<td>自建经营税后盈利代理，十亿美元</td>
+<td style="text-align: right;">121.055</td>
+<td>TTM 经营利润 147.628 乘假设税后比例 82%</td>
+</tr>
+<tr>
+<td>自建经营税后每股盈利，美元</td>
+<td style="text-align: right;">9.8982</td>
+<td>经营盈利除 122.30 亿股；不是公司调整后 EPS</td>
+</tr>
+<tr>
+<td>股价/经营税后每股盈利</td>
+<td style="text-align: right;">34.41</td>
+<td>不能拿 17 倍直接声称便宜</td>
+</tr>
+<tr>
+<td>市销率</td>
+<td style="text-align: right;">9.34</td>
+<td>TTM 收入 445.866</td>
+</tr>
+<tr>
+<td>TTM FCF 收益率</td>
+<td style="text-align: right;">1.28%</td>
+<td>TTM FCF 53.273</td>
+</tr>
+<tr>
+<td>EV/收入，排租赁且扣非股权现金证券</td>
+<td style="text-align: right;">9.26</td>
+<td>另加优先股；不同于第三方标准化 EV 口径</td>
+</tr>
+<tr>
+<td>年化普通股股息，美元</td>
+<td style="text-align: right;">0.88</td>
+<td>最近季度 0.22 乘四，不保证不变</td>
+</tr>
+</tbody>
+</table></div>
+<p>本报告的 18% 税率是平滑假设，经营税后盈利是无杠杆近似，用于剔除股权重估；净金融资产在桥接中另计，因此不再给其投资收益乘经营倍数。它仍不是公司公布的经调整净利润；未来融资成本、税率和优先股股息可能带来差异。</p>
+<p>净金融资产桥接：排除股票后的净现金 55.247，减优先股权利 18.023，加上市股权 101.189 的七折及非上市证券 131.461 的五折，得到 <strong>173.7868 十亿美元、每股 14.21 美元</strong>。折价是本报告用于限售、税费、波动与流动性风险的综合判断，不是评估师估值；不额外为 Waymo 加价。贷款、租赁与经营利润口径需要一致，本模型不重复扣除已通过经营租赁费用反映的租赁债务。</p>
+<p>历史参考：StockAnalysis 年末 GAAP PE 在 2021—2025 年分别约 25.28、19.09、23.79、23.21、28.61；当前 17.09 受一次性投资收益污染，历史横比意义有限。[S3] 同日第三方显示 Microsoft GAAP/forward PE 为 29.47/26.75，Meta 为 26.73/22.19，Alphabet 为 17.09/25.56、PEG 为 1.86。[S11][S20][S21] 这些只作市场报价参考，未在本公司报告中重建同行所有会计调整，不能据此宣称 Google 明显最便宜；PEG 的增长分母受机构预测影响，不作核心定价输入。</p>
+<h3 id="_12">三年三情景：回答“贵不贵”</h3>
+<p>基期经营性每股盈利取 9.8982；三年经营 EPS 增速与退出倍数分别为乐观 25%/35 倍、基准 16%/28 倍、悲观 5%/20 倍。三年倍数是对仍处增长期业务的研究判断，不是十年永续倍数。现值为三年末经营目标价除以 1.1 的三次方，再加一次净金融资产现值 14.21；未额外计普通股股息。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: right;">三年 EPS CAGR</th>
+<th style="text-align: right;">三年经营盈利倍数</th>
+<th style="text-align: right;">第三年 EPS</th>
+<th style="text-align: right;">第三年经营目标价</th>
+<th style="text-align: right;">今日合理价值含金融资产</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">19.33</td>
+<td style="text-align: right;">676.63</td>
+<td style="text-align: right;">522.58</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">16%</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">15.45</td>
+<td style="text-align: right;">432.60</td>
+<td style="text-align: right;">339.23</td>
+</tr>
+<tr>
+<td>悲观</td>
+<td style="text-align: right;">5%</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">11.46</td>
+<td style="text-align: right;">229.17</td>
+<td style="text-align: right;">186.39</td>
+</tr>
+</tbody>
+</table></div>
+<p>因此现价接近基准，拥有高质量业务但安全边际有限。区间不是精确点预测：合理持有区 300—360，分批买入区 250—280，强安全边际关注区低于 230；高于 420 若基本面未相应上修，应考虑减小风险暴露。GOOG 的经济价值框架相近，当前折价约一个百分点；不因为 A 类投票权就自动认为更划算。</p>
+<h3 id="dcf">反向 DCF：现价隐含什么</h3>
+<p>现金流模型独立于三年倍数：以 OCF−CapEx 作为付息后的股权现金流近似，十年年度现金流逐年折现，终值用第十年 FCF×1.03÷(0.10−0.03)，直接与 A 股价格折算的全类别普通股市值 <strong>4,165.416</strong> 对照，<strong>不再另外加净金融资产或扣债务</strong>。OCF 包含利息及投资现金收益，未取得完整剔除调整，故不能将这一近似当作无杠杆企业自由现金流；它也没有完整建模净举债、优先股分配和股票薪酬稀释，不等同于精确的可分配普通股 FCFE。以当前 TTM FCF <strong>53.273</strong> 为基期，需要未来十年 FCF 复合增速约 <strong>25.69%</strong>；若假设资本开支周期正常化后基期 FCF 已达 <strong>100</strong>，仍需要约 <strong>17.04%</strong>。后一基期是研究假设，不能冒称当前现金流。[计算：model-results.json]</p>
+<p>保持终值增长率 3% 和十年期限，股权折现率按 9%、10%、11% 变化时，53.273 基期对应的隐含 FCF 增速分别为 <strong>23.02%、25.69%、28.16%</strong>；100 基期对应 <strong>14.60%、17.04%、19.30%</strong>。现价需要高增长及现金转化改善；该辅助检验的口径修正不改变以经营利润单独估值、再加折价金融资产的三年主模型，也不改变基准现值 <strong>339.23 美元</strong>。[计算：recalculate.py；model-results.json 的 reverse_dcf_sensitivity]</p>
+<h3 id="_13">十年折现：只用于仓位压力测试</h3>
+<p>参数固定为美元资本成本 <strong>r=10%</strong>，研究锚定无风险利率约 <strong>5.10%</strong> 加 ERP <strong>4.90%</strong>、β=1。5.10% 来自 Fed H.15 在 10 月 16 日发布、最后观测日为 10 月 15 日的十年期国债数据；它不是 10 月 16 日的实时收盘值；不随愿望调低折现率。工具的币种模板可能打印旧静态 Rf/ERP 文案，采用本报告显式参数及命令日志，而不是模板里的“中国 ERP”字样。</p>
+<p>稳态增量 ROIC 取 <strong>24%</strong>：基于平台仍有无形资产优势，但新算力投资回报不能等同历史搜索回报；接近第三方现存 ROIC 不构成其验证，未来增量 ROIC 仍是判断。g 分别为 <strong>2%/3%/4%</strong>，均为美元名义永久增速，与未来十年增长不同。终值倍数唯一来自 <code>(1−g/ROIC)/(r−g)</code>；三档分母分别 8、7、6 个百分点，通过硬约束。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: right;">主观概率</th>
+<th style="text-align: right;">2036 年经营性税后利润</th>
+<th style="text-align: right;">永续 g</th>
+<th style="text-align: right;">r−g</th>
+<th style="text-align: right;">终值盈利倍数</th>
+<th style="text-align: right;">工具十年年化压力结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">2%</td>
+<td style="text-align: right;">8pp</td>
+<td style="text-align: right;">11.4583</td>
+<td style="text-align: right;">-8.47%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">3%</td>
+<td style="text-align: right;">7pp</td>
+<td style="text-align: right;">12.5000</td>
+<td style="text-align: right;">1.84%</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: right;">4%</td>
+<td style="text-align: right;">6pp</td>
+<td style="text-align: right;">13.8889</td>
+<td style="text-align: right;">9.60%</td>
+</tr>
+</tbody>
+</table></div>
+<p>表中工具 IRR 是终值倍数的几何年化近似，k（股息率减净稀释率）设零，作为回购停滞、SBC 与股息互抵的保守压力假设；没有预测十年逐年实际分红，也未给金融资产额外终值，<strong>不能称为完整股东现金流 IRR</strong>。其概率加权年化值 <strong>1.20%</strong> 是情景回报的算术加权，不是随机资产组合的保证回报，也不是加权现金流再求 IRR。过于保守的股东分配假设会压低结果，必须与完整反向 DCF、三年定价并读。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>折现率档位</th>
+<th style="text-align: right;">加权年化压力结果</th>
+<th>覆盖本档资本成本？</th>
+<th>有效性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8%</td>
+<td style="text-align: right;">4.75%</td>
+<td>否</td>
+<td>区间外，仅供参考；乐观分母仅 4pp</td>
+</tr>
+<tr>
+<td>9%</td>
+<td style="text-align: right;">2.81%</td>
+<td>否</td>
+<td>美元合理区间内，乐观分母 5pp</td>
+</tr>
+<tr>
+<td>10%</td>
+<td style="text-align: right;">1.20%</td>
+<td>否</td>
+<td>基准</td>
+</tr>
+<tr>
+<td>11%</td>
+<td style="text-align: right;">−0.16%</td>
+<td>否</td>
+<td>美元合理区间内</td>
+</tr>
+<tr>
+<td>12%</td>
+<td style="text-align: right;">−1.34%</td>
+<td>否</td>
+<td>区间外，仅供参考</td>
+</tr>
+</tbody>
+</table></div>
+<p>已实际运行 <code>flip --delta 0.02</code>，因两侧都超出美元合理区间，再运行 <code>--delta 0.01</code>。<strong>区间内没有随折现率变化而翻转，均未覆盖资本成本。</strong> 这意味着不宜仅因短期基准价值接近现价就集中重仓；不是买卖的自动否决规则。</p>
+<h3 id="_14">估值分歧对账</h3>
+<p>三年定价给出约 339 美元现值，支持现价合理持有；十年压力测试给出的低回报来自：成熟期退出倍数收敛至约 12.5、k=0 不给期间净派息额外收益、金融资产未另计终值。两者回答不同问题。不能拿三年 28 倍直接当十年永续倍数，也不能将保守终值模型的低 IRR 说成公司一定毁灭价值。</p>
+<p>综合处理：维持“优质公司、当前持有”的判断；新增资金要求约两成安全边际；示意组合仓位从潜在核心重仓降至 <strong>3%—5%</strong> 范围，不能据此给不知道资产负债与风险承受能力的个人自动配仓。若未来 FCF 正常化、单位算力回报及资本分配得到持续验证，再重估集中程度；不是先降低 r 让估值通过。</p>
+<p>追问：如果市场关闭五年，在目前价位可以持有适度仓位，但不愿把组合主要风险押在尚未验证的 AI 投资回报上。</p>
+<h2 id="_15">第八步：综合决策备忘录</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结论</th>
+<th>信心度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生意质量</td>
+<td>搜索商业意图、视频生态与云计算需求是真实价值，重资本化降低轻资产属性</td>
+<td>高</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>入口和工程规模仍强，AI 与数据开放削弱部分旧壁垒</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>管理层</td>
+<td>技术战略能力较强，巨额资本配置和控制权集中需要约束</td>
+<td>中</td>
+</tr>
+<tr>
+<td>最大风险</td>
+<td>搜索收益结构变化与 AI 资本投入回收慢同时发生</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>文明趋势</td>
+<td>信息与算力需求长期增长，公司参与面广，价值捕获不保证</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>三年基准接近现价；十年压力未覆盖资本成本且区间内不翻转，限制重仓</td>
+<td>中低</td>
+</tr>
+</tbody>
+</table></div>
+<p>估值解除语：估值不是唯一裁决。十年未通过只压低仓位上限，本报告的新增资金等待来自三年安全边际不足、资本回收不确定和监管/竞争风险共同作用，不能把它解释成十年模型一票否决。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>策略</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓者</td>
+<td>现价不追大仓；250—280 美元分批布局，先核实搜索与云经营趋势仍在</td>
+</tr>
+<tr>
+<td>持仓者</td>
+<td>300—360 美元以持有为主；集中度过高可分散，避免因 GAAP 低 PE 加仓</td>
+</tr>
+<tr>
+<td>加仓信号</td>
+<td>价格给安全边际，同时经营现金转化改善、合同承诺可消化、每股盈利真正增长</td>
+</tr>
+<tr>
+<td>卖出/减仓信号</td>
+<td>商业查询持续迁移、云增长靠不可持续融资、投入高而单位回报恶化；或价格显著超前于盈利修订</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>四位大师模拟点评：巴菲特、芒格、段永平、李录均“资料不足，不模拟代言”。</strong> 本次虽检查了仓库相关文件，但没有完成每位大师与本公司/本议题有关的一手原文读取及短引核验，旧报告的拟人化点评不能替代原始出处。全文中的方法论追问是研究框架，不是四位大师的原话或当前持仓表态。</p>
+<h2 id="_16">审计与研究限制</h2>
+<ol>
+<li>所有市场、财务与预测计算可重算：<code>python3 reports/美股七姐妹-20261019/谷歌/recalculate.py</code>。输入 <code>research-data.json</code>；输出 <code>model-results.json</code>、<code>terminal-config.json</code>、<code>financial-validation.log</code>。市值、核心关键数据双源、估值、三情景、audit/pe/irr/flip 已实际运行；审计日志保留工具完整输出。</li>
+<li>独立来源不是独立会计系统：Macrotrends 与 StockAnalysis 最终可能都读 SEC，双源用于发现转录和口径错误，不能消除原始报表风险。Macrotrends 本文只有搜索可见摘要，正文访问失败已记录。</li>
+<li>行业份额不能跨口径拼接；季度分部毛利率未披露；历史各季分部未完成逐格独立双源；创始人全部经济权益未完成双源。同行估值为单平台对照参考，不能当独立同行深度研究。</li>
+<li>尚未量化灾难性网络安全事件、跨司法辖区极端资产冻结、严重电力中断等尾部损失。监管和搜索替代在经营情景中处理，没有重复加到 r 或 β。</li>
+<li>report_audit 的随机抽检与判决在独立日志和 JSON 留痕。模型假设只能核对计算与参数来源，不可当成从外部取得的未来事实；工具若因跳过缺失值打印 PASS，不等于缺口已完成双源核验。</li>
+<li>本报告是投资研究与学习材料。<strong>AI 分析置信度：历史合并财务与行情较高，机制推理中等，十年预测低到中等；实际投资确定性：中等。</strong> 信息充分不能消除技术转移、回报竞争和资本配置的不确定性。</li>
+</ol>
+<h2 id="2026-10-19">来源索引（均于 2026-10-19 读取/检索）</h2>
+<ul>
+<li>[S1] <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/goog-20231231.htm">Alphabet FY2023 10-K，含 2021—2023 财务</a></li>
+<li>[S2] <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm">Alphabet FY2025 10-K</a></li>
+<li>[S3] <a href="https://stockanalysis.com/stocks/googl/financials/">StockAnalysis 年度财务</a></li>
+<li>[S4] <a href="https://stockanalysis.com/stocks/googl/financials/balance-sheet/">StockAnalysis 资产负债</a></li>
+<li>[S5] <a href="https://stockanalysis.com/stocks/googl/financials/cash-flow-statement/">StockAnalysis 现金流</a></li>
+<li>[S6] <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204425000087/googexhibit991q32025.htm">2025Q3 SEC 业绩公告</a></li>
+<li>[S7] <a href="https://s206.q4cdn.com/479360582/files/doc_news/2026/Feb/04/attachments/2025q4-alphabet-earnings-release.pdf">2025Q4 官方业绩公告</a></li>
+<li>[S8] <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm">2026Q1 SEC 业绩公告</a></li>
+<li>[S9] <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">2026Q2 SEC 业绩公告</a></li>
+<li>[S10] <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm">2026Q2 10-Q：股本、投资、债务、优先股与承诺</a></li>
+<li>[S11] <a href="https://stockanalysis.com/stocks/googl/statistics/">StockAnalysis 行情与统计</a></li>
+<li>[S12] <a href="https://www.investing.com/equities/google-inc-historical-data">Investing GOOGL 历史收盘</a></li>
+<li>[S13] <a href="https://www.wsj.com/market-data/quotes/GOOG/historical-prices">WSJ GOOG 历史行情</a>；<a href="https://twelvedata.com/markets/880619/stock/nasdaq/goog/historical-data">TwelveData GOOG</a></li>
+<li>[S14] <a href="https://gs.statcounter.com/search-engine-market-share">Statcounter 全球搜索份额</a></li>
+<li>[S15] <a href="https://www.srgresearch.com/articles/q2-cloud-market-passes-143-billion-highest-growth-rate-in-eight-years">Synergy 2026Q2 云市场</a></li>
+<li>[S16] <a href="https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google">DOJ 搜索救济</a></li>
+<li>[S17] Macrotrends 搜索摘要：<a href="https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/revenue">收入</a>、<a href="https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/net-income">净利</a>、<a href="https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/cash-on-hand">现金证券</a>、<a href="https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/operating-income">经营利润</a>、<a href="https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/research-development-expenses">研发</a>、<a href="https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/cash-flow-from-operating-activities">经营现金流</a>、<a href="https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/free-cash-flow">FCF</a>。正文访问失败；非完整页面归档。</li>
+<li>[S18] <a href="https://www.justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google">DOJ 2026-09 广告技术救济</a></li>
+<li>[S19] <a href="https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm">2026 代理声明</a></li>
+<li>[S20] <a href="https://stockanalysis.com/stocks/msft/statistics/">Microsoft 市场指标</a></li>
+<li>[S21] <a href="https://stockanalysis.com/stocks/meta/statistics/">Meta 市场指标</a></li>
+<li>[S22] <a href="https://www.federalreserve.gov/releases/H15/">Fed H.15，10 月 16 日发布的国债数据</a></li>
+<li>
+<p>[S23] <a href="https://stockanalysis.com/stocks/googl/financials/metrics/?p=quarterly">StockAnalysis 季度分部</a></p>
+</li>
+<li>
+<p>[S24] <a href="https://stockanalysis.com/stocks/googl/transcripts/657320-q2-2026/">Q2 2026 管理层电话会实录：资本支出、云订单与 TPU 销售</a></p>
+</li>
+<li>[S25] <a href="https://news.bloombergtax.com/financial-accounting/alphabets-future-spending-commitments-soar-to-811-billion">Bloomberg Tax：合同承诺及短期部分复核</a></li>
+<li>[S26] <a href="https://www.gurufocus.com/term/book-value-per-share/GOOGL">GuruFocus：优先股权益及全类别股本复核</a></li>
+</ul>
+<h2 id="_17">附录：关键数据交叉验证记录与实际准出状态</h2>
+<p>以下为实际工具输出节选，完整命令和输出见 <code>financial-validation.log</code>。工具交叉验证默认容差是百分之二，但本次关键输入差异为零，市值差异为百分之零点一一，均低于研究规范的百分之一。</p>
+<pre><code class="language-text">============================================================
+市值验算 (Market Cap Verification)
+============================================================
+  股价 (Price):       340.59 USD
+  总股本 (Shares):    12.23B
+  计算市值:           4.17T USD
+  报告市值:           4.17T USD
+  偏差:               0.11%
+
+  ✅ 验证通过, 偏差仅 0.11%
+
+exit=0
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field FY2025 revenue --values {&quot;SEC&quot;: 402836, &quot;StockAnalysis&quot;: 402836, &quot;Macrotrends_search_excerpt&quot;: 402836} --unit USD_million
+============================================================
+交叉验证: FY2025 revenue (Cross-Validation)
+============================================================
+  数据来源数: 3
+  参考中位数: 402,836.00 USD_million
+
+  ✅ SEC                 : 402,836.00 USD_million  (偏差 0.00%)
+  ✅ StockAnalysis       : 402,836.00 USD_million  (偏差 0.00%)
+  ✅ Macrotrends_search_excerpt: 402,836.00 USD_million  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 402,836.00 USD_million
+
+exit=0
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field FY2025 net income --values {&quot;SEC&quot;: 132170, &quot;StockAnalysis&quot;: 132170, &quot;Macrotrends_search_excerpt&quot;: 132170} --unit USD_million
+============================================================
+交叉验证: FY2025 net income (Cross-Validation)
+============================================================
+  数据来源数: 3
+  参考中位数: 132,170.00 USD_million
+
+  ✅ SEC                 : 132,170.00 USD_million  (偏差 0.00%)
+  ✅ StockAnalysis       : 132,170.00 USD_million  (偏差 0.00%)
+  ✅ Macrotrends_search_excerpt: 132,170.00 USD_million  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 132,170.00 USD_million
+
+exit=0
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field FY2025 cash investments --values {&quot;SEC&quot;: 126843, &quot;StockAnalysis&quot;: 126843, &quot;Macrotrends_search_excerpt&quot;: 126843} --unit USD_million
+============================================================
+交叉验证: FY2025 cash investments (Cross-Validation)
+============================================================
+  数据来源数: 3
+  参考中位数: 126,843.00 USD_million
+
+  ✅ SEC                 : 126,843.00 USD_million  (偏差 0.00%)
+  ✅ StockAnalysis       : 126,843.00 USD_million  (偏差 0.00%)
+  ✅ Macrotrends_search_excerpt: 126,843.00 USD_million  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 126,843.00 USD_million
+
+exit=0
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/351726a27bf6/ai-berkshire/tools/financial_rigor.py cross-validate --field all_class_shares_20260715 --values {&quot;SEC_10Q&quot;: 12230, &quot;StockAnalysis&quot;: 12230} --unit million_shares
+============================================================
+交叉验证: all_class_shares_20260715 (Cross-Validation)
+============================================================
+</code></pre>
+<p>随机种子固定为四十二，按百分之十五抽检，共抽出十二项：两项是年份误提取，原样保留并排除；七项是事实或计算核验，三项是模型假设/决策区间核验。事实中“非流动上市股权”的精确数仅由 SEC 确认；WSJ 独立报道主要 SpaceX 持仓四舍五入为 14.1，与 14.126 差异不到百分之一；小额尾数仍依赖原文。其余取得的来源见 <code>audit-results.json</code>。实际工具判决打印 PASS，但<strong>严格双源全量准出未完成</strong>；这是披露限制的研究报告，不是无缺口的数据认证。详细分类见 <code>audit-summary.json</code>，不可把模型参数核验解释为外部预测一致。</p>
+<pre><code class="language-text">report_audit verdict: PASS
+checked numeric items: 10; skipped calendar-year artifacts: 2
+fail: 0; rounded independent secondary (exact remainder relies on SEC): 1
+terminal_value audit C1/C2/C3: PASS
+remaining unmodelled risk: catastrophic_cyber_event
+</code></pre>
+<ul>
+<li>[S27] <a href="https://www.wsj.com/tech/google-discloses-94-1-billion-in-spacex-stock-marking-6-stake-91655d7c">WSJ：SpaceX 受限持股取整复核</a></li>
+<li>[S28] <a href="https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/shares-outstanding">Macrotrends 股数异常页，数值未采用</a></li>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/8153127dfc87.html">苹果（AAPL）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/ca12b2c8a684.html">英伟达（NVIDIA / NASDAQ: NVDA）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/24093aff5cf4.html">特斯拉（TSLA）独立投资研究：产品进步能否变成普通股东的现金回报？</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/27be57d77638.html">数据抽检覆盖说明</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/1c2a8830b881.html">微软（MSFT）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/6e6703913bcd.html">亚马逊（AMZN）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/8e373454044e.html">抽检审计说明</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/0ae80772a066.html">Meta 审计覆盖说明</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/759fb4f3ee98.html">Meta Platforms（META）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
