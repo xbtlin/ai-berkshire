@@ -69,13 +69,78 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <p>偏见检查：本报告不以“搜索份额接近九成”推导“AI 时代份额不变”；不以“云增速八成”无限外推；不以账面投资收益把公司误判成低 PE。若资料减少一半，仍需验证搜索商业意图、算力单位回报、普通股现金回报三件事。</p>
 <h2 id="_1">第一步：数据收集与口径校准</h2>
 <h3 id="_2">五年经营与现金流</h3>
-<p>| 财年 | 收入 | GAAP 净利 | 毛利率 | 经营利润率 | 经营现金流 | 资本支出 | 自由现金流 | 现金及可交易证券 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2021 | 257.637 | 76.033 | 56.94% | 30.55% | 91.652 | 24.640 | 67.012 | 139.649 |
-| 2022 | 282.836 | 59.972 | 55.38% | 26.46% | 91.495 | 31.485 | 60.010 | 113.762 |
-| 2023 | 307.394 | 73.795 | 56.63% | 27.42% | 101.746 | 32.251 | 69.495 | 110.916 |
-| 2024 | 350.018 | 100.118 | 58.20% | 32.11% | 125.299 | 52.535 | 72.764 | 95.657 |
-| 2025 | 402.836 | 132.170 | 59.65% | 32.03% | 164.713 | 91.447 | 73.266 | 126.843 |</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">GAAP 净利</th>
+<th style="text-align: right;">毛利率</th>
+<th style="text-align: right;">经营利润率</th>
+<th style="text-align: right;">经营现金流</th>
+<th style="text-align: right;">资本支出</th>
+<th style="text-align: right;">自由现金流</th>
+<th style="text-align: right;">现金及可交易证券</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td style="text-align: right;">257.637</td>
+<td style="text-align: right;">76.033</td>
+<td style="text-align: right;">56.94%</td>
+<td style="text-align: right;">30.55%</td>
+<td style="text-align: right;">91.652</td>
+<td style="text-align: right;">24.640</td>
+<td style="text-align: right;">67.012</td>
+<td style="text-align: right;">139.649</td>
+</tr>
+<tr>
+<td>2022</td>
+<td style="text-align: right;">282.836</td>
+<td style="text-align: right;">59.972</td>
+<td style="text-align: right;">55.38%</td>
+<td style="text-align: right;">26.46%</td>
+<td style="text-align: right;">91.495</td>
+<td style="text-align: right;">31.485</td>
+<td style="text-align: right;">60.010</td>
+<td style="text-align: right;">113.762</td>
+</tr>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">307.394</td>
+<td style="text-align: right;">73.795</td>
+<td style="text-align: right;">56.63%</td>
+<td style="text-align: right;">27.42%</td>
+<td style="text-align: right;">101.746</td>
+<td style="text-align: right;">32.251</td>
+<td style="text-align: right;">69.495</td>
+<td style="text-align: right;">110.916</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">350.018</td>
+<td style="text-align: right;">100.118</td>
+<td style="text-align: right;">58.20%</td>
+<td style="text-align: right;">32.11%</td>
+<td style="text-align: right;">125.299</td>
+<td style="text-align: right;">52.535</td>
+<td style="text-align: right;">72.764</td>
+<td style="text-align: right;">95.657</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">402.836</td>
+<td style="text-align: right;">132.170</td>
+<td style="text-align: right;">59.65%</td>
+<td style="text-align: right;">32.03%</td>
+<td style="text-align: right;">164.713</td>
+<td style="text-align: right;">91.447</td>
+<td style="text-align: right;">73.266</td>
+<td style="text-align: right;">126.843</td>
+</tr>
+</tbody>
+</table></div>
 <p>来源：[S1][S2][S3][S4][S5]。自由现金流统一为经营现金流减购置固定资产，不减并购；因此不等于全部可分配现金。现金列包含证券投资，不等于银行存款。2025 收入、净利、现金证券、经营利润、经营现金流和 FCF 在 SEC、StockAnalysis 与 Macrotrends 可见搜索摘要之间一致；Macrotrends 正文访问报 Internal Error，核验级别只是可见检索摘要，不声称下载了完整表。2021—2023 用 2023 年 10-K、2024—2025 用 2025 年 10-K 对照第三方财务表；部分历史资产负债细项的两源逐项审计未全部完成。</p>
 <p>读数：收入与利润增长并没有同步转化为 FCF 增长。资本支出从 2021 年 24.640 上升到 2025 年 91.447，而同期 FCF 从 67.012 到 73.266。2025 年经营利润率是 <strong>32.03%</strong>，不是税前利润率 39.43%。旧仓库 2026-06-23 报告误列了这个指标及部分历史分部数字，本报告以重新读取的 SEC 原文为准，不修改旧文件。</p>
 <h3 id="_3">最近四季收入结构</h3>
@@ -897,4 +962,4 @@ remaining unmodelled risk: catastrophic_cyber_event
 <li><a href="#_17">附录：关键数据交叉验证记录与实际准出状态</a></li>
 </ul>
 </div>
-</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 11:31 UTC</footer></body></html>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 17:14 UTC</footer></body></html>
