@@ -1,0 +1,341 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>一台高毛利但不赚钱的SaaS机器 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/群核科技/index.html">群核科技</a></div><h1>一台高毛利但不赚钱的SaaS机器</h1><div class="meta"><a href="../companies/群核科技/index.html">群核科技</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%A4%E6%A0%B8%E7%A7%91%E6%8A%80-team-20260409/%E3%80%8A%E7%9C%8B%E6%87%82%E7%BE%A4%E6%A0%B8%E7%A7%91%E6%8A%80%E3%80%8B/02-%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F-%E4%B8%80%E5%8F%B0%E9%AB%98%E6%AF%9B%E5%88%A9%E4%BD%86%E4%B8%8D%E8%B5%9A%E9%92%B1%E7%9A%84SaaS%E6%9C%BA%E5%99%A8.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">酷家乐的赚钱逻辑</a><ul>
+<li><a href="#_2">第一层：设计师入口</a></li>
+<li><a href="#_3">第二层：付费转化</a></li>
+<li><a href="#_4">第三层：企业客户（核心利润来源）</a></li>
+<li><a href="#_5">第四层：品牌商生态</a></li>
+</ul>
+</li>
+<li><a href="#82">82%毛利率的真实含金量</a></li>
+<li><a href="#_6">两个关键的先行指标</a><ul>
+<li><a href="#nrr">先行指标一：净收入留存率（NRR）</a></li>
+<li><a href="#_7">先行指标二：递延收入</a></li>
+</ul>
+</li>
+<li><a href="#_8">护城河到底有多深</a></li>
+<li><a href="#5400gpu">5400台GPU：壁垒还是包袱？</a></li>
+<li><a href="#_9">本篇小结</a></li>
+<li><a href="#_10">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂群核科技》系列 · 第 02 篇 · 商业模式
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">酷家乐的赚钱逻辑</h2>
+<p>82%的毛利率，在SaaS行业算得上一流。但同一家公司，经营现金流是负的，累计亏损超过40亿。这中间发生了什么？</p>
+<p>酷家乐的商业模式可以用一句话概括：<strong>免费吸引设计师 → 付费版提效 → 企业客户大额订阅 → 品牌商入驻形成生态闭环。</strong></p>
+<p>这是经典的产品驱动增长模式。具体来看：</p>
+<h3 id="_2">第一层：设计师入口</h3>
+<p>酷家乐对个人设计师提供免费版，基本功能够用。截至2025年，平台月均非付费活跃用户约<strong>200万</strong>。这些人是整个生态的<strong>流量入口</strong>——他们用酷家乐画图、出方案，自然就把品牌商的产品带进了方案里。</p>
+<p><strong>但这个入口在缩小。</strong> 月活非付费用户已从2023年的约250万降至2025年的约200万，两年少了约50万人。</p>
+<p>（数据来源：群核科技招股书）</p>
+<h3 id="_3">第二层：付费转化</h3>
+<p>免费用户中，一部分会升级到付费版（更快渲染、更多功能、更大素材库）。2025年付费转化率从6.8%提升至<strong>9.6%</strong>——看起来是好消息。</p>
+<p>但要注意分母在缩小。转化率提升的同时，如果漏斗顶端的免费用户在减少，最终付费用户的绝对增量可能是停滞的。</p>
+<h3 id="_4">第三层：企业客户（核心利润来源）</h3>
+<p>收入结构非常清楚：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>客户类型</th>
+<th style="text-align: center;">收入占比</th>
+<th style="text-align: center;">客户数</th>
+<th style="text-align: center;">年均收入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>企业客户（大客户）</td>
+<td style="text-align: center;">~85%</td>
+<td style="text-align: center;"><strong>424家</strong></td>
+<td style="text-align: center;"><strong>85.6万元/年</strong></td>
+</tr>
+<tr>
+<td>企业客户（一般）</td>
+<td style="text-align: center;">含上</td>
+<td style="text-align: center;"><strong>47,416家</strong></td>
+<td style="text-align: center;">~0.7万元/年（估计）</td>
+</tr>
+<tr>
+<td>个人用户</td>
+<td style="text-align: center;">~12%</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">小额订阅</td>
+</tr>
+<tr>
+<td>其他</td>
+<td style="text-align: center;">~3%</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：群核科技招股书；一般企业客户年均收入为估算值）</p>
+<p><strong>核心发现：424家大客户贡献了绝大部分企业订阅收入</strong>。大客户年均贡献<strong>85.6万元</strong>，是这台机器真正的利润引擎。</p>
+<p>这些大客户是谁？主要是定制家居品牌（欧派、索菲亚、尚品宅配等）、大型装修公司、建材品牌商。他们购买酷家乐的企业版，用于方案设计、客户展示、导购促单。</p>
+<h3 id="_5">第四层：品牌商生态</h3>
+<p>品牌商把自家产品的3D模型上传到酷家乐平台，设计师在做方案时可以直接调用。这形成了一个三角网络——设计师越多，品牌商越愿意上传模型；模型越丰富，设计师越离不开。</p>
+<p>平台上已有<strong>4.8亿个3D模型</strong>，其中约6000万个可公开调用。这个素材库的规模是竞争对手短期内很难复制的。</p>
+<hr />
+<h2 id="82">82%毛利率的真实含金量</h2>
+<p>82.2%的毛利率，放在全球SaaS行业里是什么水平？</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th style="text-align: center;">毛利率</th>
+<th style="text-align: center;">净利率</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Autodesk</td>
+<td style="text-align: center;">~89%</td>
+<td style="text-align: center;">~22%</td>
+<td>全球设计软件龙头</td>
+</tr>
+<tr>
+<td>Adobe</td>
+<td style="text-align: center;">~88%</td>
+<td style="text-align: center;">~25%</td>
+<td>创意软件</td>
+</tr>
+<tr>
+<td>金山办公</td>
+<td style="text-align: center;">~85%</td>
+<td style="text-align: center;">~30%</td>
+<td>国内SaaS</td>
+</tr>
+<tr>
+<td><strong>群核科技</strong></td>
+<td style="text-align: center;"><strong>82%</strong></td>
+<td style="text-align: center;"><strong>7%</strong>（经调整）</td>
+<td>空间设计SaaS</td>
+</tr>
+<tr>
+<td>广联达</td>
+<td style="text-align: center;">~70%</td>
+<td style="text-align: center;">~15%</td>
+<td>建筑信息化</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：各公司公开财报；群核数据来自招股书）</p>
+<p><strong>群核的毛利率不输一流SaaS公司，但净利率是最低的。</strong> 82%毛利率 → 7%经调整净利率（IFRS口径仍亏损），中间75个百分点去了哪里？</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>费用项</th>
+<th style="text-align: center;">占收入比</th>
+<th style="text-align: center;">绝对值（亿元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>销售费用</td>
+<td style="text-align: center;"><strong>33.4%</strong></td>
+<td style="text-align: center;">2.74</td>
+</tr>
+<tr>
+<td>研发费用</td>
+<td style="text-align: center;"><strong>35.5%</strong></td>
+<td style="text-align: center;">2.91</td>
+</tr>
+<tr>
+<td>管理费用</td>
+<td style="text-align: center;">~13%</td>
+<td style="text-align: center;">~1.1</td>
+</tr>
+<tr>
+<td><strong>费用合计</strong></td>
+<td style="text-align: center;"><strong>~82%</strong></td>
+<td style="text-align: center;"><strong>~6.75</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：群核科技招股书，2025年数据）</p>
+<p><strong>销售+研发两项就吃掉了69%的收入。</strong> 这意味着：</p>
+<ol>
+<li>公司还在大量投入获客——33%的销售费用率说明客户不是"自己来的"</li>
+<li>研发投入35%——技术壁垒需要持续维护，5400台GPU的运维成本也在这里面</li>
+<li><strong>在收入增速只有8.6%的情况下，这种费用结构很难自然收敛到盈利</strong></li>
+</ol>
+<p>反方观点：SaaS公司的经典路径是"先亏损跑规模，后收割利润"。Salesforce亏了十几年才持续盈利。群核可能正处在盈亏平衡点附近，只要收入继续增长、费用率下降，利润弹性会很大。</p>
+<p><strong>但关键问题是：收入增速从14%降到了9%，而且还在减速。</strong> 在增速放缓的背景下，"先亏后赚"的逻辑是否还成立？</p>
+<hr />
+<h2 id="_6">两个关键的先行指标</h2>
+<h3 id="nrr">先行指标一：净收入留存率（NRR）</h3>
+<p>NRR衡量的是"去年的客户今年花了多少钱"。高于100%意味着老客户在扩大付费，低于100%意味着老客户在缩减。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>客户类型</th>
+<th style="text-align: center;">2023年NRR</th>
+<th style="text-align: center;">2024年NRR</th>
+<th style="text-align: center;">2025年NRR</th>
+<th style="text-align: center;">趋势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>企业客户</td>
+<td style="text-align: center;">106.1%</td>
+<td style="text-align: center;">104.2%</td>
+<td style="text-align: center;"><strong>100.7%</strong></td>
+<td style="text-align: center;">接近临界值</td>
+</tr>
+<tr>
+<td>个人客户</td>
+<td style="text-align: center;">106.5%</td>
+<td style="text-align: center;">96.6%</td>
+<td style="text-align: center;"><strong>86.4%</strong></td>
+<td style="text-align: center;">严重恶化</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：群核科技招股书）</p>
+<p><strong>企业客户NRR还勉强在100%以上，但个人客户NRR已经跌到86.4%。</strong> 这意味着个人设计师要么在降级套餐，要么在流失。</p>
+<p>个人客户虽然只占收入的12%，但它是整个生态的<strong>流量入口</strong>。如果设计师不用酷家乐了，品牌商上传模型的动力也会减弱，三角网络效应可能从边缘开始松动。</p>
+<p>为什么个人客户在流失？几个可能的原因：</p>
+<ol>
+<li>独立设计师收入受房地产下行影响，缩减工具开支</li>
+<li>AI出图工具（Midjourney等）提供了更便宜甚至免费的替代</li>
+<li>酷家乐免费版已经够用，没有付费升级的动力</li>
+</ol>
+<h3 id="_7">先行指标二：递延收入</h3>
+<p>递延收入是客户预付的会员费中尚未确认的部分，可以理解为"已经收到但还没赚完的钱"。它是SaaS公司未来收入的蓄水池。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th style="text-align: center;">递延收入（亿元）</th>
+<th style="text-align: center;">变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td style="text-align: center;"><strong>6.17</strong></td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: center;"><strong>5.42</strong></td>
+<td style="text-align: center;">-12%</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: center;"><strong>5.10</strong></td>
+<td style="text-align: center;">-6%</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：群核科技招股书）</p>
+<p><strong>递延收入连续两年下滑</strong>，从6.17亿降至5.10亿，跌幅<strong>17%</strong>。这说明客户从多年订阅转向一年一签，或者干脆缩减了订阅规模。</p>
+<p>递延收入下滑是一个比当期收入增速放缓更前瞻的危险信号——它意味着<strong>未来几个季度的收入增长可能进一步承压</strong>。</p>
+<hr />
+<h2 id="_8">护城河到底有多深</h2>
+<p>总结一下群核科技的护城河结构：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>护城河类型</th>
+<th style="text-align: center;">深度</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三角网络效应</td>
+<td style="text-align: center;"><strong>强</strong></td>
+<td>6500万用户 + 4.8亿3D模型 + 47000家企业客户，竞争对手难以同时撬动三方</td>
+</tr>
+<tr>
+<td>转换成本</td>
+<td style="text-align: center;"><strong>中强</strong></td>
+<td>设计师的方案库、企业的工作流都嵌入了酷家乐，迁移成本高</td>
+</tr>
+<tr>
+<td>GPU渲染技术</td>
+<td style="text-align: center;"><strong>中</strong></td>
+<td>5400台GPU集群实现1.2秒2K渲染，但云计算成本在下降，技术壁垒在缩窄</td>
+</tr>
+<tr>
+<td>数据积累</td>
+<td style="text-align: center;"><strong>中</strong></td>
+<td>4.8亿3D模型是训练空间AI的独家数据集，但通用大模型可能绕过这个壁垒</td>
+</tr>
+<tr>
+<td>品牌认知</td>
+<td style="text-align: center;"><strong>中弱</strong></td>
+<td>家装设计领域第一品牌，但出了这个垂直领域没人知道</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>护城河存在，但不是不可逾越的那种。</strong> 最核心的壁垒是三角网络效应和转换成本，而不是技术本身。</p>
+<p>反方：三维家在工厂端（定制家具对接生产系统）有群核短期内难以复制的优势。Autodesk在高端专业市场的品牌和生态根基深厚。<strong>群核的护城河是在中间地带的——上不去、下不来。</strong></p>
+<hr />
+<h2 id="5400gpu">5400台GPU：壁垒还是包袱？</h2>
+<p>群核自建了<strong>5400台高性能GPU</strong>的云渲染集群，这是它相对三维家等竞争对手的核心技术差异——2K效果图渲染时间从<strong>53秒降到1.2秒</strong>。</p>
+<p><strong>正面看</strong>：自建GPU集群让群核在渲染速度上遥遥领先，这是用户体验的关键差异化。</p>
+<p><strong>反面看</strong>：</p>
+<ol>
+<li>云计算成本每年在下降——几年后竞争对手用第三方云也能达到类似速度</li>
+<li>GPU芯片在快速迭代——今天的5400台过两年可能就落伍了，面临资产减值</li>
+<li>这是重资产投入——20亿融资中有相当一部分花在了这里，拖累了资本回报率</li>
+</ol>
+<p>群核在招股书里把GPU集群包装成"空间智能基础设施"，但目前这些GPU的主要用途还是渲染效果图——和"空间智能"的宏大叙事之间有不小的距离。</p>
+<hr />
+<h2 id="_9">本篇小结</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SaaS模式</td>
+<td>优秀——97%订阅收入、82%毛利率</td>
+</tr>
+<tr>
+<td>盈利质量</td>
+<td>脆弱——经调整利润0.57亿、IFRS仍亏损、经营现金流为负</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>存在但不够深——网络效应是核心，技术壁垒在缩窄</td>
+</tr>
+<tr>
+<td>增长动能</td>
+<td>放缓——收入增速从14%降至9%，个人客户NRR暴跌，递延收入连续下滑</td>
+</tr>
+<tr>
+<td>费用结构</td>
+<td>偏高——销售+研发69%，短期内难以大幅压缩</td>
+</tr>
+</tbody>
+</table></div>
+<p>一句话：<strong>群核科技有一台好引擎（82%毛利率的SaaS模式），但这台引擎的燃油消耗太大（69%费用率），跑在一条正在变窄的赛道上（家装市场承压），还没有真正开始赚钱。</strong></p>
+<hr />
+<h2 id="_10">下期预告</h2>
+<p>下一篇讨论竞争格局和增长空间——群核面对的行业到底有多大？33亿元的天花板能突破吗？AI到底是帮酷家乐还是要它的命？</p>
+<p>几个尖锐问题：</p>
+<ul>
+<li>中国空间设计软件市场只有33亿，群核已经拿了23%——增长空间在哪里？</li>
+<li>三维家、Autodesk、飞路AI——谁对群核的威胁最大？</li>
+<li>AI生成效果图的技术进步，会不会让酷家乐的核心功能贬值？</li>
+<li>海外版Coohom增长28%——这是第二曲线还是一厢情愿？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂群核科技》系列第 02 篇。后续 2 篇将陆续推出。</em>
+<em>本系列基于群核科技港股招股书、弗若斯特沙利文行业报告、公开媒体报道等公开信息撰写。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/598365b26a79.html">风险、估值与最终判断</a><div class="meta">2026-07-13 · 深度系列</div></li><li><a href="../r/b7eff4478e60.html">33亿的池塘和AI这条鲶鱼</a><div class="meta">2026-07-13 · 深度系列</div></li><li><a href="../r/ccd4ba82aa94.html">家居设计SaaS的隐形冠军</a><div class="meta">2026-04-17 · 深度系列</div></li><li><a href="../r/ef01153edf81.html">群核科技（00068.HK，酷家乐）IPO 投研框架概览</a><div class="meta">2026-04-10 · 导读</div></li><li><a href="../r/98b6e1df7a01.html">群核科技（00068.HK）四大师框架综合分析报告</a><div class="meta">2026-04-09 · 研究</div></li><li><a href="../r/f61befcc8946.html">04 风险管理层评估 — 李录视角</a><div class="meta">2026-04-09 · 组织管理</div></li><li><a href="../r/109e2a9d3aa3.html">03 行业竞争分析 — 芒格视角</a><div class="meta">2026-04-09 · 研究</div></li><li><a href="../r/5dd6bfea21ed.html">02 财务估值分析 — 巴菲特视角</a><div class="meta">2026-04-09 · 估值仓位</div></li><li><a href="../r/f9204ae9b950.html">01 商业模式分析 — 段永平视角</a><div class="meta">2026-04-09 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

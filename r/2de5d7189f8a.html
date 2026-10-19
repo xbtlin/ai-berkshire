@@ -1,0 +1,1560 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI算力产业链全景研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/综合与横评/index.html">综合与横评</a></div><h1>AI算力产业链全景研究报告</h1><div class="meta"><a href="../topics/综合与横评/index.html">综合与横评</a> ｜ 2026-05-09 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/AI%E7%AE%97%E5%8A%9B%E4%BA%A7%E4%B8%9A%E9%93%BE%E5%85%A8%E6%99%AF%E7%A0%94%E7%A9%B6-20260509.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">产业链全景图</a></li>
+<li><a href="#_2">投资逻辑链</a><ul>
+<li><a href="#_3">逻辑链验证</a></li>
+</ul>
+</li>
+<li><a href="#_4">第一部分：各环节深度分析</a><ul>
+<li><a href="#ip">一、最上游——设计工具与IP（产业链的"收租公"）</a></li>
+<li><a href="#_5">二、上游——芯片设计（产业链利润的最大捕获者）</a></li>
+<li><a href="#_6">三、上游——半导体制造与封装</a></li>
+<li><a href="#hbm">四、中游——HBM、服务器、网络</a></li>
+<li><a href="#ai">五、下游——云计算与AI应用</a></li>
+</ul>
+</li>
+<li><a href="#_7">第二部分：产业链利润分配——核心发现</a><ul>
+<li><a href="#1ai">每1美元AI算力支出的利润去向</a></li>
+<li><a href="#_8">各环节毛利率/可替代性/定价权对比</a></li>
+<li><a href="#_9">关键洞察</a></li>
+</ul>
+</li>
+<li><a href="#_10">第三部分：卡脖子环节分析</a><ul>
+<li><a href="#15">最不可替代的环节（可替代性1/5）</a></li>
+<li><a href="#_11">中国"卡脖子"堵点</a></li>
+</ul>
+</li>
+<li><a href="#_12">第四部分：系统性风险评估（芒格"检查清单"）</a><ul>
+<li><a href="#_13">历史类比</a></li>
+</ul>
+</li>
+<li><a href="#_14">第五部分：文明趋势判断（李录框架）</a></li>
+<li><a href="#_15">第六部分：投资组合配置建议</a><ul>
+<li><a href="#_16">推荐组合</a></li>
+<li><a href="#_17">不推荐/谨慎的标的</a></li>
+<li><a href="#_18">买入/卖出信号</a></li>
+<li><a href="#_19">主题仓位上限建议</a></li>
+</ul>
+</li>
+<li><a href="#_20">第七部分：综合决策备忘录</a><ul>
+<li><a href="#_21">行业总评表</a></li>
+<li><a href="#_22">四位大师模拟点评</a></li>
+</ul>
+</li>
+<li><a href="#_23">数据来源</a></li>
+</ul>
+</div>
+</details><article><p><strong>日期：</strong> 2026-05-09
+<strong>研究范围：</strong> AI算力全产业链——从上游芯片设计/制造/材料，到中游服务器/网络/存储，到下游云计算/应用，全球视角
+<strong>研究方法：</strong> 四组研究团队并行（上游芯片设计、上游制造封装、中游设备网络、下游云与应用），数据交叉验证</p>
+<blockquote>
+<p>投研原则：先摆数据再推逻辑，所有判断附反面论据。估计值标"估计"。</p>
+</blockquote>
+<hr />
+<h2 id="_1">产业链全景图</h2>
+<pre><code>┌─────────────────────────────────────────────────────────────────────────────────┐
+│                        AI 算 力 产 业 链 全 景 图                                │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  ╔══════════════════════════════════════════════════════════════════════════╗     │
+│  ║                     最 上 游 · 设 计 工 具 与 IP                        ║     │
+│  ╠══════════════════════════════════════════════════════════════════════════╣     │
+│  ║  EDA工具 ◄──── 三巨头垄断85%+                                          ║     │
+│  ║  ┌──────────┐  ┌──────────┐  ┌──────────┐                              ║     │
+│  ║  │ Synopsys │  │ Cadence  │  │Siemens   │   毛利率: 76-86%             ║     │
+│  ║  │ 31%份额  │  │ 30%份额  │  │EDA 13%   │   可替代性: ★☆☆☆☆           ║     │
+│  ║  └──────────┘  └──────────┘  └──────────┘   定价权: 极强               ║     │
+│  ║                                                                        ║     │
+│  ║  IP授权                                                                ║     │
+│  ║  ┌──────────┐  ┌──────────┐                                            ║     │
+│  ║  │   ARM    │  │ RISC-V   │   ARM毛利率: 97%  &quot;收租&quot;模式               ║     │
+│  ║  │移动99%   │  │ 新兴替代 │   可替代性: ★☆☆☆☆                         ║     │
+│  ║  │云CPU 20% │  │ IoT/边缘 │   定价权: 极强                            ║     │
+│  ║  └──────────┘  └──────────┘                                            ║     │
+│  ╚══════════════════════════════════════════════════════════════════════════╝     │
+│          │                                                                       │
+│          ▼                                                                       │
+│  ╔══════════════════════════════════════════════════════════════════════════╗     │
+│  ║                  上 游 · 芯 片 设 计 (Fabless)                         ║     │
+│  ╠══════════════════════════════════════════════════════════════════════════╣     │
+│  ║                                                                        ║     │
+│  ║  GPU / AI加速芯片                          定制ASIC                    ║     │
+│  ║  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐               ║     │
+│  ║  │ NVIDIA   │  │  AMD     │  │  Intel   │  │ Broadcom │               ║     │
+│  ║  │ 80-92%   │  │  5-7%    │  │  &lt;3%     │  │ASIC 70%+ │               ║     │
+│  ║  │毛利73-75%│  │ 毛利54%  │  │ Gaudi3   │  │ 毛利73%  │               ║     │
+│  ║  │CUDA生态锁│  │ ROCm追赶 │  │ 掉队     │  │Google/Meta│              ║     │
+│  ║  └──────────┘  └──────────┘  └──────────┘  └──────────┘               ║     │
+│  ║  可替代性: ★☆☆☆☆             ┌──────────┐                             ║     │
+│  ║  定价权: 极强                 │ Marvell  │                             ║     │
+│  ║                               │ASIC 10-15%│                            ║     │
+│  ║  中国AI芯片                   │AWS/MSFT  │                             ║     │
+│  ║  ┌──────────┐  ┌──────────┐  └──────────┘                             ║     │
+│  ║  │华为昇腾  │  │ 寒武纪   │                                            ║     │
+│  ║  │国内23%   │  │国家智算  │  自研芯片: Google TPU / AWS Trainium       ║     │
+│  ║  │全栈自研  │  │专用加速  │  Meta MTIA / Microsoft Maia               ║     │
+│  ║  └──────────┘  └──────────┘                                            ║     │
+│  ╚══════════════════════════════════════════════════════════════════════════╝     │
+│          │                                                                       │
+│          ▼                                                                       │
+│  ╔══════════════════════════════════════════════════════════════════════════╗     │
+│  ║              上 游 · 半 导 体 制 造 与 封 装                            ║     │
+│  ╠══════════════════════════════════════════════════════════════════════════╣     │
+│  ║                                                                        ║     │
+│  ║  晶圆代工                      半导体设备                              ║     │
+│  ║  ┌──────────┐                  ┌──────────┐                            ║     │
+│  ║  │  台积电  │ 70%份额          │  ASML    │ EUV 100%垄断              ║     │
+│  ║  │毛利56%   │ 先进制程唯一     │毛利51-53%│ 不可替代性: ★☆☆☆☆        ║     │
+│  ║  │CoWoS卡脖│ 可替代: ★☆☆☆☆   │单台$2-4亿│ 定价权: 极强              ║     │
+│  ║  └──────────┘                  └──────────┘                            ║     │
+│  ║  ┌──────────┐  ┌──────────┐   ┌──────────┐  ┌──────────┐             ║     │
+│  ║  │三星代工  │  │Intel代工 │   │应用材料  │  │泛林半导体│             ║     │
+│  ║  │ 6.8%     │  │ 3-4%     │   │PVD 80%   │  │刻蚀 28%  │             ║     │
+│  ║  │良率50%   │  │18A追赶   │   │毛利48.8% │  │毛利50.6% │             ║     │
+│  ║  └──────────┘  └──────────┘   └──────────┘  └──────────┘             ║     │
+│  ║  ┌──────────┐                 ┌──────────┐  ┌──────────┐             ║     │
+│  ║  │中芯国际  │                 │东京电子  │  │  KLA     │             ║     │
+│  ║  │ 5%国产首 │                 │涂显90%   │  │检测55-63%│             ║     │
+│  ║  └──────────┘                 └──────────┘  │毛利62.3% │             ║     │
+│  ║                                              └──────────┘             ║     │
+│  ║  先进封装                      半导体材料                              ║     │
+│  ║  ┌──────────┐                 ┌──────────┐  ┌──────────┐             ║     │
+│  ║  │台积电    │ CoWoS满产       │信越化学  │  │日本光刻胶│             ║     │
+│  ║  │CoWoS独占 │ NVIDIA锁60%    │硅晶圆18% │  │TOK/JSR   │             ║     │
+│  ║  └──────────┘                 └──────────┘  │EUV胶90%  │             ║     │
+│  ║  ┌──────────┐  ┌──────────┐                 └──────────┘             ║     │
+│  ║  │日月光ASE │  │ Amkor    │                                           ║     │
+│  ║  │OSAT 44.6%│  │OSAT 15.2%│                                           ║     │
+│  ║  └──────────┘  └──────────┘                                           ║     │
+│  ╚══════════════════════════════════════════════════════════════════════════╝     │
+│          │                                                                       │
+│          ▼                                                                       │
+│  ╔══════════════════════════════════════════════════════════════════════════╗     │
+│  ║                     中 游 · 关 键 零 部 件                              ║     │
+│  ╠══════════════════════════════════════════════════════════════════════════╣     │
+│  ║                                                                        ║     │
+│  ║  HBM高带宽内存 ◄── 三家寡头，供不应求         网络芯片/交换机          ║     │
+│  ║  ┌──────────┐  ┌──────────┐  ┌──────────┐    ┌──────────┐             ║     │
+│  ║  │SK海力士  │  │  三星    │  │  美光    │    │ Broadcom │             ║     │
+│  ║  │ HBM 62%  │  │ HBM 17% │  │ HBM 21% │    │交换芯片  │             ║     │
+│  ║  │毛利率79% │  │Google TPU│  │产能售罄  │    │  90%     │             ║     │
+│  ║  │定价权极强│  │ 主供应商 │  │          │    │毛利77%   │             ║     │
+│  ║  └──────────┘  └──────────┘  └──────────┘    └──────────┘             ║     │
+│  ║  可替代性: ★☆☆☆☆  涨价20%/年                ┌──────────┐             ║     │
+│  ║  市场规模: $350亿→$1000亿(2028)              │  Arista  │             ║     │
+│  ║                                               │数据中心  │             ║     │
+│  ║  光模块                                       │交换21.5% │             ║     │
+│  ║  ┌──────────┐  ┌──────────┐                  │毛利64.6% │             ║     │
+│  ║  │中际旭创  │  │ 新易盛   │                  └──────────┘             ║     │
+│  ║  │全球23-30%│  │全球25-30%│                  ┌──────────┐             ║     │
+│  ║  │净利108亿 │  │增速231%+ │                  │  NVIDIA  │             ║     │
+│  ║  └──────────┘  └──────────┘                  │InfiniBand│             ║     │
+│  ║  可替代性: ★★★☆☆  毛利率偏低                │网络$50亿 │             ║     │
+│  ║                                               └──────────┘             ║     │
+│  ╚══════════════════════════════════════════════════════════════════════════╝     │
+│          │                                                                       │
+│          ▼                                                                       │
+│  ╔══════════════════════════════════════════════════════════════════════════╗     │
+│  ║                 中 游 · 系 统 集 成 与 基 础 设 施                      ║     │
+│  ╠══════════════════════════════════════════════════════════════════════════╣     │
+│  ║                                                                        ║     │
+│  ║  AI服务器 ◄── 增长快但毛利低，&quot;组装&quot;属性                               ║     │
+│  ║  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐              ║     │
+│  ║  │  Dell    │  │ Foxconn  │  │Supermicro│  │  HPE     │              ║     │
+│  ║  │AI服务器  │  │AI服务器  │  │  SMCI    │  │AI系统    │              ║     │
+│  ║  │ 20%份额  │  │ 40%+份额 │  │ 7-9%份额 │  │$16亿/季  │              ║     │
+│  ║  │毛利~20%  │  │毛利4-11% │  │毛利10-14%│  │          │              ║     │
+│  ║  └──────────┘  └──────────┘  └──────────┘  └──────────┘              ║     │
+│  ║  可替代性: ★★★★☆  定价权: 弱  &quot;赚辛苦钱&quot;                             ║     │
+│  ║                                                                        ║     │
+│  ║  散热/液冷 ◄── AI功耗飙升，液冷从可选变刚需                            ║     │
+│  ║  ┌──────────┐  ┌──────────┐   GB200单机架132kW                        ║     │
+│  ║  │  Vertiv  │  │Schneider │   传统风冷极限30-40kW                     ║     │
+│  ║  │积压$95亿 │  │ 双寡头   │   液冷CAGR: 31.7%(全球) 45%(中国)        ║     │
+│  ║  └──────────┘  └──────────┘                                           ║     │
+│  ║                                                                        ║     │
+│  ║  电力基础设施 ◄── 数据中心用电2030年翻倍至122GW                        ║     │
+│  ║  ┌──────────┐  ┌──────────┐                                           ║     │
+│  ║  │  Eaton   │  │  Vertiv  │   核电+AI: 微软重启三里岛核电站           ║     │
+│  ║  │订单增200%│  │ 电力+散热│   SMR购电协议: 25GW→45GW                 ║     │
+│  ║  └──────────┘  └──────────┘                                           ║     │
+│  ╚══════════════════════════════════════════════════════════════════════════╝     │
+│          │                                                                       │
+│          ▼                                                                       │
+│  ╔══════════════════════════════════════════════════════════════════════════╗     │
+│  ║                  下 游 · 云 计 算 与 算 力 服 务                        ║     │
+│  ╠══════════════════════════════════════════════════════════════════════════╣     │
+│  ║                                                                        ║     │
+│  ║  超大规模云 ◄── 2026年合计资本开支$6600-6900亿                         ║     │
+│  ║  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐              ║     │
+│  ║  │   AWS    │  │  Azure   │  │Google    │  │   Meta   │              ║     │
+│  ║  │份额29-30%│  │份额~20%  │  │Cloud     │  │非云，最大 │              ║     │
+│  ║  │收入$1290亿│ │AI年化$130│  │份额13%   │  │GPU买家   │              ║     │
+│  ║  │Trainium  │  │亿+OpenAI │  │TPU自研   │  │130万张GPU│              ║     │
+│  ║  │自研芯片  │  │合作绑定  │  │增速34%   │  │Llama 10亿│              ║     │
+│  ║  └──────────┘  └──────────┘  └──────────┘  └──────────┘              ║     │
+│  ║  传统云毛利: 77%+  AI云毛利: 50-60%(被GPU成本挤压)                    ║     │
+│  ║                                                                        ║     │
+│  ║  ┌──────────┐  ┌──────────┐  ┌──────────┐                            ║     │
+│  ║  │  Oracle  │  │ 阿里云   │  │ 华为云   │                            ║     │
+│  ║  │AI云毛利  │  │3800亿投资│  │昇腾生态  │                            ║     │
+│  ║  │仅14%!    │  │AI收入    │  │国产替代  │                            ║     │
+│  ║  │给NVIDIA  │  │八季度三位│  │主力      │                            ║     │
+│  ║  │打工      │  │数增长    │  │          │                            ║     │
+│  ║  └──────────┘  └──────────┘  └──────────┘                            ║     │
+│  ║                                                                        ║     │
+│  ║  GPU租赁/算力中介                                                      ║     │
+│  ║  ┌──────────┐  ┌──────────┐                                           ║     │
+│  ║  │CoreWeave │  │ Lambda   │   高增长但高杠杆                          ║     │
+│  ║  │收入$51.3亿│ │年化$7.6亿│   CoreWeave负债$300亿                     ║     │
+│  ║  │增168%    │  │NVIDIA投资│                                           ║     │
+│  ║  └──────────┘  └──────────┘                                           ║     │
+│  ╚══════════════════════════════════════════════════════════════════════════╝     │
+│          │                                                                       │
+│          ▼                                                                       │
+│  ╔══════════════════════════════════════════════════════════════════════════╗     │
+│  ║                    终 端 · AI 模 型 与 应 用                            ║     │
+│  ╠══════════════════════════════════════════════════════════════════════════╣     │
+│  ║                                                                        ║     │
+│  ║  全球AI公司                                                            ║     │
+│  ║  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐              ║     │
+│  ║  │ OpenAI   │  │Anthropic │  │   xAI    │  │Google    │              ║     │
+│  ║  │收入$200亿│  │年化$400亿│  │23万颗GPU │  │DeepMind  │              ║     │
+│  ║  │周活9.1亿 │  │估值$3800亿│ │55.5万颗  │  │Gemini    │              ║     │
+│  ║  │2026年烧  │  │毛利38→70%│  │(2025底)  │  │月活7.5亿 │              ║     │
+│  ║  │$500亿算力│  │Claude Code│ │          │  │          │              ║     │
+│  ║  └──────────┘  └──────────┘  └──────────┘  └──────────┘              ║     │
+│  ║                                                                        ║     │
+│  ║  中国AI公司                                                            ║     │
+│  ║  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐              ║     │
+│  ║  │ DeepSeek │  │ 智谱AI   │  │ MiniMax  │  │月之暗面  │              ║     │
+│  ║  │估值$450亿│  │港股4347亿│  │港股2573亿│  │估值$200亿│              ║     │
+│  ║  │国家大基金│  │收入7.24亿│  │收入5.6亿 │  │Kimi      │              ║     │
+│  ║  └──────────┘  └──────────┘  └──────────┘  └──────────┘              ║     │
+│  ╚══════════════════════════════════════════════════════════════════════════╝     │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2 id="_2">投资逻辑链</h2>
+<pre><code>AI模型规模持续扩大（训练+推理需求爆发）
+    → GPU/AI芯片需求暴增（NVIDIA数据中心收入FY26达$1973亿）
+        → 先进制程产能紧张（台积电CoWoS满产、HBM供不应求）
+            → 上游设备/材料受益（ASML订单积压€388亿、SK海力士毛利79%）
+    → 超大规模云厂商军备竞赛（2026合计资本开支$6600-6900亿）
+        → 服务器/网络/散热/电力全链条受益
+            → 但利润分配极不均匀：芯片设计&gt;制造&gt;存储&gt;网络&gt;&gt;服务器组装
+</code></pre>
+<h3 id="_3">逻辑链验证</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>环节</th>
+<th>核心假设</th>
+<th>验证事件</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI需求→芯片需求</td>
+<td>AI训练/推理持续扩张</td>
+<td>NVIDIA FY26数据中心$1973亿(+65%)；超大规模资本开支$6600亿+</td>
+<td>✅ 强验证</td>
+</tr>
+<tr>
+<td>芯片需求→产能紧张</td>
+<td>先进制程/封装/HBM供不应求</td>
+<td>台积电CoWoS满产至2027；SK海力士/美光2026产能全部售罄</td>
+<td>✅ 强验证</td>
+</tr>
+<tr>
+<td>产能紧张→上游提价</td>
+<td>卡脖子环节有定价权</td>
+<td>台积电2026提价5-10%；HBM涨价20%/年；ASML EUV单台$2-4亿</td>
+<td>✅ 强验证</td>
+</tr>
+<tr>
+<td>云厂商军备赛→全链受益</td>
+<td>资本开支持续增长</td>
+<td>2026年六大厂合计$6600-6900亿，Goldman预计2025-2027累计$1.15万亿</td>
+<td>✅ 强验证</td>
+</tr>
+<tr>
+<td>自研芯片→蚕食NVIDIA</td>
+<td>长期去NVIDIA化趋势</td>
+<td>Google TPU v7、AWS Trainium 140万颗、2026定制ASIC增44.6% vs GPU 16.1%</td>
+<td>⚠️ 趋势确认但进度缓慢</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_4">第一部分：各环节深度分析</h2>
+<h3 id="ip">一、最上游——设计工具与IP（产业链的"收租公"）</h3>
+<h4 id="11-eda">1.1 EDA工具：全球最强寡头垄断之一</h4>
+<p><strong>核心结论：EDA可能是整个半导体产业链中护城河最深、最不可替代的环节。</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>市场份额</th>
+<th>毛利率</th>
+<th>营业利润率</th>
+<th>定价权</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Synopsys (SNPS)</td>
+<td>31%</td>
+<td>76-80%</td>
+<td>~35%</td>
+<td>极强</td>
+</tr>
+<tr>
+<td>Cadence (CDNS)</td>
+<td>30%</td>
+<td><strong>86%</strong></td>
+<td>35%</td>
+<td>极强</td>
+</tr>
+<tr>
+<td>Siemens EDA</td>
+<td>13%</td>
+<td>N/A (集团内)</td>
+<td>N/A</td>
+<td>强</td>
+</tr>
+<tr>
+<td><strong>三者合计</strong></td>
+<td><strong>74-85%+</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>为什么不可替代（可替代性: 1/5）：</strong>
+- 客户留存率接近<strong>100%</strong>——EDA行业几乎不存在"客户流失"
+- 80-85%<strong>经常性收入</strong>（订阅制）
+- 切换EDA平台意味着：巨额成本、生产力骤降、数据迁移噩梦、芯片设计失败风险
+- 大客户通常<strong>同时采购</strong>Synopsys和Cadence——连客户都无法在二者间做选择
+- 芯片越复杂，对EDA的依赖越深——AI芯片大爆发直接利好EDA</p>
+<p><strong>中国国产EDA（华大九天等）：</strong> 模拟芯片EDA国产化率超30%，但数字芯片EDA不足15%，高端环节（硬件仿真、形式验证、时序分析）几乎空白。</p>
+<p><strong>段永平追问——这是一门好生意吗？</strong></p>
+<blockquote>
+<p>极好的生意。86%毛利率、100%客户留存、85%经常性收入、寡头垄断、芯片越复杂越离不开它们。唯一的问题是估值一直很贵（PE通常40-60x），但好生意从来不便宜。</p>
+</blockquote>
+<hr />
+<h4 id="12-arm97">1.2 ARM：97%毛利率的"收租"模式</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>移动芯片IP份额</td>
+<td>&gt;99%</td>
+</tr>
+<tr>
+<td>云计算CPU IP份额</td>
+<td>从9%增至<strong>20%</strong>，预计2029年AI ASIC中占<strong>90%</strong></td>
+</tr>
+<tr>
+<td>FY2025收入</td>
+<td>$46.71亿（授权$18.39亿 + 版税$21.68亿）</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td><strong>~97.5%</strong></td>
+</tr>
+<tr>
+<td>营业利润率</td>
+<td>超45%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>定价权来源：</strong> Armv9架构版税率约为Armv8的<strong>2倍</strong>；CSS（计算子系统）授权版税率超<strong>10%/芯片</strong>。无论是AWS Graviton、Google Axion、Microsoft Cobalt还是NVIDIA Grace——全部基于ARM架构，ARM"无论谁赢都收版税"。</p>
+<p><strong>RISC-V威胁评估：</strong> 短期（2-3年）威胁有限，主要在低端MCU/IoT。中国大力推动RISC-V以减少ARM依赖，但数据中心场景5年内难以替代ARM。</p>
+<hr />
+<h3 id="_5">二、上游——芯片设计（产业链利润的最大捕获者）</h3>
+<h4 id="21-nvidiaai">2.1 NVIDIA：AI时代的"标准石油"</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据中心GPU市场份额</td>
+<td><strong>80-92%</strong></td>
+</tr>
+<tr>
+<td>FY2026营收</td>
+<td>$2,159亿（+65%），数据中心$1,973亿</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>GAAP <strong>73.4%</strong>，Non-GAAP 73.6%</td>
+</tr>
+<tr>
+<td>H100单卡价格</td>
+<td>$2.5-4万</td>
+</tr>
+<tr>
+<td>B200单卡价格</td>
+<td>$3-5万</td>
+</tr>
+<tr>
+<td>GB200 NVL72机架</td>
+<td>72颗B200+36颗Grace，$310-390万/机架</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>CUDA生态锁定——真正的护城河：</strong>
+- 超<strong>400万</strong>开发者
+- CUDA Toolkit下载超<strong>4,000万次</strong>
+- 所有主流ML框架首先为CUDA优化
+- 生态构建历时<strong>20年</strong>，切换成本极高</p>
+<p><strong>可替代性: 1/5 | 定价权: 极强</strong></p>
+<p><strong>芒格反面论证：</strong>
+- 毛利率从巅峰78%已降至73%——自定义ASIC在侵蚀溢价
+- 2026年定制ASIC出货增长<strong>44.6%</strong> vs GPU <strong>16.1%</strong>——长期"去NVIDIA化"趋势确认
+- Google TPU在LLM训练上性价比较H100高<strong>4倍</strong>；Midjourney迁移到TPU后推理成本降<strong>67%</strong>
+- NVIDIA份额预计从86%逐步降至~75%——仍是霸主，但不再是唯一选择</p>
+<hr />
+<h4 id="22-amd">2.2 AMD：最有力的追赶者</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI加速器市场份额</td>
+<td>约5-7%</td>
+</tr>
+<tr>
+<td>数据中心收入</td>
+<td>Q3 2025创纪录$43亿（+22%）</td>
+</tr>
+<tr>
+<td>AI加速器年收入</td>
+<td>2024年约$50亿</td>
+</tr>
+<tr>
+<td>MI300X优势</td>
+<td>192GB HBM3（H100的2.4倍），5.3TB/s带宽</td>
+</tr>
+</tbody>
+</table></div>
+<p>ROCm生态正在成熟但与CUDA差距仍大。Azure和Oracle已采用MI300X。</p>
+<hr />
+<h4 id="23-asicbroadcom-vs-marvell">2.3 定制ASIC：Broadcom vs Marvell</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>定制ASIC份额</th>
+<th>AI收入</th>
+<th>毛利率</th>
+<th>核心客户</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Broadcom</strong></td>
+<td><strong>70%+</strong></td>
+<td>Q1 FY26 $84亿（+106%）</td>
+<td>73%</td>
+<td>Google TPU(占78%)、Meta MTIA</td>
+</tr>
+<tr>
+<td><strong>Marvell</strong></td>
+<td>10-15%</td>
+<td>数据中心$15.2亿/季（+78%）</td>
+<td>60-65%</td>
+<td>AWS Trainium、Microsoft Maia</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键趋势：</strong> 超大规模客户自研芯片是对NVIDIA最大的结构性威胁。Google TPU单价约$13,000/颗（远低于NVIDIA GPU），Anthropic签下Google历史最大TPU订单。</p>
+<hr />
+<h4 id="24-ai">2.4 中国AI芯片</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>地位</th>
+<th>差距</th>
+<th>不可替代性(国内)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>华为昇腾</strong></td>
+<td>国产第一，23%国内份额，64万片出货</td>
+<td>910C超H20但落后H200，全栈自研(CANN+MindSpore)</td>
+<td>高</td>
+</tr>
+<tr>
+<td>寒武纪</td>
+<td>国家智算中心大量采用</td>
+<td>特定领域强，但市值泡沫争议大</td>
+<td>中</td>
+</tr>
+<tr>
+<td>壁仞/摩尔线程/海光</td>
+<td>各有路线</td>
+<td>被制裁/代工受限，与NVIDIA差1-2代</td>
+<td>低-中</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核心瓶颈：</strong> CUDA生态垄断+各家软件栈碎片化；先进封装/HBM供应受限；制程代工受美国管制。</p>
+<hr />
+<h3 id="_6">三、上游——半导体制造与封装</h3>
+<h4 id="31">3.1 台积电：先进制程的唯一选择</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全球晶圆代工份额</td>
+<td><strong>70-71%</strong>（2025 Q3）</td>
+</tr>
+<tr>
+<td>2025年营收</td>
+<td>~$1,225亿（+36.1%）</td>
+</tr>
+<tr>
+<td>7nm以下先进制程收入占比</td>
+<td><strong>69%</strong></td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td><strong>56.1%</strong>（2024年），2025年预计维持53%+</td>
+</tr>
+<tr>
+<td>3nm晶圆单价</td>
+<td>~$2万/片</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>NVIDIA/AMD对台积电的依赖：</strong>
+- NVIDIA消耗全球AI处理器用晶圆的<strong>77%</strong>（53.5万片300mm晶圆）
+- NVIDIA锁定台积电CoWoS产能的<strong>60%以上</strong>
+- 两家公司<strong>100%依赖台积电</strong>进行先进制程代工，<strong>无备选方案</strong></p>
+<p><strong>CoWoS先进封装——当前最紧张的卡脖子环节：</strong>
+- 2025年底月产能7.5-8万片，2026年底目标12-13万片
+- 2026年产能将是2023年的<strong>10倍</strong>，但仍供不应求
+- 定价权极强：2025年CoWoS提价<strong>15-20%</strong></p>
+<p><strong>可替代性: 1/5 | 定价权: 极强</strong></p>
+<p><strong>对比竞争者：</strong>
+| 代工厂 | 份额 | 3nm良率 | 差距 |
+|--------|------|---------|------|
+| 台积电 | 70%+ | <strong>90%+</strong> | - |
+| 三星代工 | 6.8%(下滑中) | 50% | 良率差40个百分点，客户持续流失 |
+| Intel代工 | 3-4% | 18A良率55% | 追赶中，微软Maia是关键客户 |
+| 中芯国际 | ~5% | 等效5nm(DUV多曝光)，良率~33% | 无EUV，成本高50% |</p>
+<hr />
+<h4 id="32-asml">3.2 ASML：半导体产业链中最不可替代的单一公司</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EUV光刻机市场份额</td>
+<td><strong>100%</strong>（全球唯一）</td>
+</tr>
+<tr>
+<td>整体光刻设备份额</td>
+<td><strong>62%</strong></td>
+</tr>
+<tr>
+<td>2024年营收</td>
+<td>&gt;€280亿</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>51-53%，2030年目标56-60%</td>
+</tr>
+<tr>
+<td>订单积压</td>
+<td><strong>€388亿</strong></td>
+</tr>
+<tr>
+<td>Low-NA EUV单价</td>
+<td>~$2亿</td>
+</tr>
+<tr>
+<td>High-NA EUV单价</td>
+<td><strong>~$3.7-4亿</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>可替代性: 1/5（完全不可替代）</strong></p>
+<blockquote>
+<p>即使中国投入万亿资金，短期内也无法复制EUV光刻机。这是整个半导体产业链中最硬的"卡脖子"。</p>
+</blockquote>
+<hr />
+<h4 id="33">3.3 其他关键设备</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>核心领域</th>
+<th>市场份额</th>
+<th>毛利率</th>
+<th>可替代性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KLA</strong></td>
+<td>检测量测</td>
+<td><strong>55-63%</strong></td>
+<td><strong>62.3%</strong>(行业最高)</td>
+<td>1-2/5</td>
+</tr>
+<tr>
+<td><strong>应用材料</strong></td>
+<td>PVD/CVD/CMP</td>
+<td>PVD <strong>80%</strong></td>
+<td>48.8%</td>
+<td>2/5</td>
+</tr>
+<tr>
+<td><strong>泛林半导体</strong></td>
+<td>刻蚀</td>
+<td>28%</td>
+<td>50.6%</td>
+<td>2/5</td>
+</tr>
+<tr>
+<td><strong>东京电子</strong></td>
+<td>涂胶显影</td>
+<td><strong>90%</strong></td>
+<td>~45%</td>
+<td>1-2/5</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>被低估的公司：KLA</strong>——62.3%毛利率是五大设备公司中最高的，检测市场份额从2010年的50%增至63%，近乎垄断。</p>
+<hr />
+<h4 id="34">3.4 半导体材料：日本的隐形控制力</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>材料</th>
+<th>关键公司</th>
+<th>份额</th>
+<th>可替代性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>硅晶圆</td>
+<td>信越化学(18%) + SUMCO(17%)</td>
+<td>日本两家占300mm产能<strong>50%+</strong></td>
+<td>2/5</td>
+</tr>
+<tr>
+<td>EUV光刻胶</td>
+<td>TOK + JSR + 信越</td>
+<td>三者合计<strong>~90%</strong></td>
+<td>1-2/5</td>
+</tr>
+<tr>
+<td>涂胶显影设备</td>
+<td>东京电子</td>
+<td><strong>90%</strong></td>
+<td>1-2/5</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论：</strong> 日本在材料环节的控制力被严重低估——硅晶圆+光刻胶+涂显设备构成三重卡脖子。</p>
+<hr />
+<h3 id="hbm">四、中游——HBM、服务器、网络</h3>
+<h4 id="41-hbm">4.1 HBM高带宽内存：异军突起的利润中心</h4>
+<p><strong>为什么HBM是AI芯片的命脉：</strong> 传统DDR5带宽约50-60 GB/s，HBM3E单颗<strong>1.2 TB/s</strong>（20倍差距）。没有HBM，GPU的实际性能将大打折扣。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>HBM份额</th>
+<th>毛利率</th>
+<th>定价权</th>
+<th>2026展望</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SK海力士</strong></td>
+<td><strong>62%</strong></td>
+<td>全年<strong>79%</strong></td>
+<td>极强，2026涨价20%</td>
+<td>产能全部售罄</td>
+</tr>
+<tr>
+<td><strong>美光</strong></td>
+<td><strong>21%</strong></td>
+<td>高于公司平均</td>
+<td>强</td>
+<td>产能全部售罄</td>
+</tr>
+<tr>
+<td><strong>三星</strong></td>
+<td>~17%</td>
+<td>低于SK海力士</td>
+<td>弱（HBM3E认证延迟18个月）</td>
+<td>Google TPU主供(60%+)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键数据：</strong>
+- 单颗HBM3E售价$60-100，同容量DDR5仅$5-10（溢价<strong>10-20倍</strong>）
+- HBM占全球DRAM晶圆产能的<strong>23%</strong>
+- 市场规模：2025年$350亿 → 2028年$1,000亿（CAGR ~40%）</p>
+<p><strong>可替代性: 1/5 | 定价权: 极强</strong></p>
+<p><strong>段永平追问：</strong> SK海力士的HBM地位有多持久？</p>
+<blockquote>
+<p>至少3-5年内非常持久。HBM需要TSV（硅通孔）技术 + CoWoS先进封装能力，产能扩张周期长（18-24个月），三星追了18个月才通过NVIDIA认证。但HBM4可能重塑格局，需关注。</p>
+</blockquote>
+<hr />
+<h4 id="42-ai">4.2 AI服务器：增长快但利润薄</h4>
+<p><strong>一个GB200 NVL72机架：</strong> 72颗Blackwell GPU + 36颗Grace CPU，1.44 ExaFLOPS，单机架<strong>132kW</strong>功耗（115kW液冷），售价<strong>$310-390万</strong>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>市场份额</th>
+<th>毛利率</th>
+<th>可替代性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Foxconn/鸿海</td>
+<td>AI服务器<strong>40%+</strong></td>
+<td>4-11%</td>
+<td>4/5</td>
+</tr>
+<tr>
+<td>Dell</td>
+<td>AI服务器<strong>20%</strong></td>
+<td>~20%</td>
+<td>4/5</td>
+</tr>
+<tr>
+<td>Supermicro</td>
+<td>7-9%(下降)</td>
+<td>10-14%</td>
+<td>4/5</td>
+</tr>
+<tr>
+<td>HPE</td>
+<td>企业级</td>
+<td>高于SMCI</td>
+<td>4/5</td>
+</tr>
+<tr>
+<td>浪潮信息</td>
+<td>中国AI服务器<strong>50%+</strong></td>
+<td>受制裁恶化</td>
+<td>3/5(国内)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核心结论：</strong> 服务器是"赚辛苦钱"的生意。核心利润被NVIDIA（芯片）和SK海力士（HBM）拿走，服务器OEM只是"搬运工"。</p>
+<hr />
+<h4 id="43">4.3 网络设备</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>核心产品</th>
+<th>市场份额</th>
+<th>毛利率</th>
+<th>可替代性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Broadcom</strong></td>
+<td>交换芯片</td>
+<td>云数据中心<strong>~90%</strong></td>
+<td><strong>77%</strong></td>
+<td>1/5</td>
+</tr>
+<tr>
+<td><strong>Arista</strong></td>
+<td>数据中心交换机</td>
+<td><strong>21.5%</strong>(第一)</td>
+<td><strong>64.6%</strong></td>
+<td>2/5</td>
+</tr>
+<tr>
+<td>NVIDIA网络</td>
+<td>InfiniBand/Spectrum</td>
+<td>InfiniBand垄断</td>
+<td>70%+</td>
+<td>2/5</td>
+</tr>
+<tr>
+<td>Cisco</td>
+<td>传统网络</td>
+<td>领导者但AI落后</td>
+<td>~60%+</td>
+<td>3/5</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>InfiniBand vs Ethernet：</strong> 2023年InfiniBand占AI网络80%，到2025年中Ethernet已反超占2/3以上。UEC 1.0标准缩小延迟差距，Ethernet生态更开放、成本更低。</p>
+<p><strong>光模块：</strong> 中国厂商全球领先——中际旭创(23-30%份额)、新易盛(25-30%)。市场增速60%+，但毛利率偏低(25-30%)。</p>
+<hr />
+<h4 id="44">4.4 散热/液冷与电力</h4>
+<p><strong>液冷从"可选"变"必选"：</strong> GB200单机架132kW，传统风冷极限30-40kW。Vertiv和Schneider双寡头，积压订单提供多年可见性。</p>
+<p><strong>电力需求：</strong> 数据中心用电2025年55GW → 2030年122GW（翻倍）。微软签约重启三里岛核电站。Eaton数据中心订单增200%。</p>
+<hr />
+<h3 id="ai">五、下游——云计算与AI应用</h3>
+<h4 id="51">5.1 超大规模云厂商资本开支军备竞赛</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>2024年资本开支</th>
+<th>2025年资本开支</th>
+<th>2026年计划</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amazon</td>
+<td>~$550亿</td>
+<td>~$1,000亿</td>
+<td>~$2,000亿</td>
+</tr>
+<tr>
+<td>Microsoft</td>
+<td>~$440亿</td>
+<td>~$800亿</td>
+<td>~$1,500-1,900亿</td>
+</tr>
+<tr>
+<td>Google</td>
+<td>~$520亿</td>
+<td>~$750亿</td>
+<td>~$1,750-1,850亿</td>
+</tr>
+<tr>
+<td>Meta</td>
+<td>~$390亿</td>
+<td>~$700-720亿</td>
+<td>&gt;$720亿</td>
+</tr>
+<tr>
+<td>Oracle</td>
+<td>-</td>
+<td>-</td>
+<td>~$500亿</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>~$2,000亿</strong></td>
+<td><strong>~$4,480亿</strong></td>
+<td><strong>~$6,600-6,900亿</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Goldman Sachs预计2025-2027年累计资本开支<strong>$1.15万亿</strong>，其中约75%用于AI基础设施。</p>
+<p><strong>AWS自研芯片成果突出：</strong> Trainium系列收入超$100亿，三位数增长。已部署<strong>140万颗</strong>Trainium2芯片。这验证了"去NVIDIA化"的可行性。</p>
+<p><strong>Oracle的警示：</strong> AI云服务毛利率仅<strong>14%</strong>——每获$9亿GPU租赁收入，毛利仅$1.25亿。这暴露了"帮NVIDIA打工"的本质。</p>
+<hr />
+<h4 id="52-ai">5.2 中国云与AI生态</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>AI收入趋势</th>
+<th>资本开支/投资</th>
+<th>核心战略</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>阿里云</strong></td>
+<td>连续八季度三位数增长</td>
+<td>三年投入<strong>3,800亿元</strong></td>
+<td>"AI驱动、公共云优先"，通义千问下载6亿+</td>
+</tr>
+<tr>
+<td><strong>腾讯云</strong></td>
+<td>企业服务双位数增长</td>
+<td>2025年资本开支<strong>792亿元</strong></td>
+<td>混元3.0，为90%+头部大模型供算力</td>
+</tr>
+<tr>
+<td><strong>百度智能云</strong></td>
+<td>AI公有云市场份额<strong>24.6%</strong>(六年第一)</td>
+<td>昆仑芯三代万卡集群</td>
+<td>文心日均调用16.5亿次</td>
+</tr>
+<tr>
+<td><strong>字节跳动</strong></td>
+<td>豆包月活7100万</td>
+<td>AI投入超<strong>$120亿</strong>/年</td>
+<td>国内60%用华为/寒武纪，海外用NVIDIA</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h4 id="53-ai">5.3 AI应用层</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>收入</th>
+<th>算力消耗</th>
+<th>关键指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OpenAI</strong></td>
+<td>2025年$200亿</td>
+<td>2026年预计烧$500亿</td>
+<td>周活9.1亿，承诺Azure消费$2,500亿</td>
+</tr>
+<tr>
+<td><strong>Anthropic</strong></td>
+<td>年化~$400亿(2026中)</td>
+<td>签下Google历史最大TPU订单</td>
+<td>毛利率38%→<strong>70%+</strong>，估值$3,800亿</td>
+</tr>
+<tr>
+<td><strong>xAI</strong></td>
+<td>非公开</td>
+<td>23万颗GPU，2025底55.5万颗</td>
+<td>全球最大单站点AI训练设施</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>中国AI公司估值飞涨但收入仍小：</strong> DeepSeek估值$450亿、智谱港股市值4347亿港元（收入7.24亿元）、MiniMax港股2573亿港元（收入5.6亿元）。四家合计估值超万亿元人民币。</p>
+<hr />
+<h2 id="_7">第二部分：产业链利润分配——核心发现</h2>
+<h3 id="1ai">每1美元AI算力支出的利润去向</h3>
+<pre><code>$1 AI算力支出
+├── NVIDIA（芯片设计）     ████████████████████ ~15-20¢ 利润  毛利73-75%
+├── 台积电（代工+封装）    █████████████        ~10-12¢ 利润  毛利56%
+├── SK海力士/HBM（存储）   ████████████         ~8-10¢ 利润  毛利79%
+├── Broadcom（网络芯片）   █████████            ~6-8¢ 利润   毛利77%
+├── EDA/ARM（设计工具/IP）  ████                ~2-3¢ 利润   毛利86-97%
+├── 光模块/散热/电力       ███                  ~3-5¢ 利润   毛利25-35%
+├── 服务器OEM（组装）      █                    ~2-3¢ 利润   毛利4-20%
+└── 云服务商（AI云利润）   ████████             ~10-15¢ 利润  毛利50-60%
+</code></pre>
+<h3 id="_8">各环节毛利率/可替代性/定价权对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>排名</th>
+<th>环节</th>
+<th>代表公司</th>
+<th>毛利率</th>
+<th>可替代性</th>
+<th>定价权</th>
+<th>投资确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>EDA工具</strong></td>
+<td>Synopsys/Cadence</td>
+<td><strong>76-86%</strong></td>
+<td>★☆☆☆☆</td>
+<td>极强</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>IP授权</strong></td>
+<td>ARM</td>
+<td><strong>97%</strong></td>
+<td>★☆☆☆☆</td>
+<td>极强</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>GPU芯片设计</strong></td>
+<td>NVIDIA</td>
+<td><strong>73-75%</strong></td>
+<td>★☆☆☆☆</td>
+<td>极强</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>EUV光刻</strong></td>
+<td>ASML</td>
+<td><strong>51-53%</strong></td>
+<td>★☆☆☆☆</td>
+<td>极强</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>HBM存储</strong></td>
+<td>SK海力士</td>
+<td><strong>79%</strong></td>
+<td>★☆☆☆☆</td>
+<td>极强</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>网络芯片</strong></td>
+<td>Broadcom</td>
+<td><strong>77%</strong></td>
+<td>★☆☆☆☆</td>
+<td>极强</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>晶圆代工</strong></td>
+<td>台积电</td>
+<td><strong>56%</strong></td>
+<td>★☆☆☆☆</td>
+<td>极强</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>检测设备</strong></td>
+<td>KLA</td>
+<td><strong>62.3%</strong></td>
+<td>★☆☆☆☆</td>
+<td>极强</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>数据中心交换</strong></td>
+<td>Arista</td>
+<td><strong>64.6%</strong></td>
+<td>★★☆☆☆</td>
+<td>强</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>散热/电力</strong></td>
+<td>Vertiv/Eaton</td>
+<td><strong>22-35%</strong></td>
+<td>★★☆☆☆</td>
+<td>中强</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>光模块</strong></td>
+<td>中际旭创/新易盛</td>
+<td><strong>25-30%</strong></td>
+<td>★★★☆☆</td>
+<td>中</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>AI服务器</strong></td>
+<td>Dell/Foxconn/SMCI</td>
+<td><strong>4-20%</strong></td>
+<td>★★★★☆</td>
+<td>弱</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>AI云服务</strong></td>
+<td>AWS/Azure/GCP</td>
+<td><strong>50-60%</strong></td>
+<td>★★☆☆☆</td>
+<td>中强</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>GPU租赁</strong></td>
+<td>CoreWeave</td>
+<td><strong>~40-50%</strong></td>
+<td>★★★☆☆</td>
+<td>中</td>
+<td>★★☆☆☆</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_9">关键洞察</h3>
+<p><strong>1. "卖铲子的人"赢了——而且铲子之间差距巨大</strong></p>
+<p>利润极度集中在拥有垄断地位的上游环节。NVIDIA、台积电、ASML、SK海力士四家公司，加起来可能捕获了每1美元AI算力支出中超过<strong>40美分</strong>的利润。</p>
+<p><strong>2. 毛利率是"好生意"的终极试金石</strong></p>
+<ul>
+<li>97%毛利率（ARM）和86%毛利率（Cadence）= "印钞机"</li>
+<li>73%毛利率（NVIDIA）和79%毛利率（SK海力士）= "超级生意"</li>
+<li>56%毛利率（台积电）= "好生意，但资本密集"</li>
+<li>4-20%毛利率（服务器OEM）= "辛苦钱"，增长再快也不是好生意</li>
+</ul>
+<p><strong>3. Oracle是"反面教材"</strong></p>
+<p>Oracle AI云毛利率仅<strong>14%</strong>——帮NVIDIA卖算力，利润全被上游拿走。这警示投资者：不是所有"AI概念股"都能赚钱。</p>
+<p><strong>4. 利润正在从上游向下游迁移</strong></p>
+<p>Anthropic推理毛利率从38%提升至<strong>70%+</strong>，随着推理成本下降和Agent AI兴起，下游应用公司的经济模型在2025年底出现拐点。但这个拐点能否持续仍需观察。</p>
+<hr />
+<h2 id="_10">第三部分：卡脖子环节分析</h2>
+<h3 id="15">最不可替代的环节（可替代性1/5）</h3>
+<pre><code>不可替代性排序（1=完全不可替代）
+
+1. ASML EUV光刻    ████████████████████ 100%垄断，无任何替代
+2. 台积电先进制程   ████████████████████ 70%+份额，良率碾压竞争者
+3. EDA三巨头        ████████████████████ 85%份额，100%客户留存
+4. ARM IP           ████████████████████ 移动99%，云20%且在扩张
+5. NVIDIA CUDA生态  ███████████████████  400万开发者，20年积累
+6. SK海力士 HBM     ██████████████████   62%份额，18个月产能扩张周期
+7. 台积电 CoWoS     ██████████████████   AI封装满产，NVIDIA锁60%
+8. Broadcom交换芯片 █████████████████    云数据中心90%份额
+9. KLA检测设备      ████████████████     55-63%份额，62.3%毛利率
+10.东京电子涂显     ████████████████     90%份额，近乎垄断
+11.日本光刻胶       ███████████████      EUV光刻胶90%
+</code></pre>
+<h3 id="_11">中国"卡脖子"堵点</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>环节</th>
+<th>国际水平</th>
+<th>中国水平</th>
+<th>差距</th>
+<th>短期可突破性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EUV光刻机</td>
+<td>ASML 100%垄断</td>
+<td>上海微电子（DUV 90nm）</td>
+<td><strong>10+代</strong></td>
+<td>极低</td>
+</tr>
+<tr>
+<td>先进制程代工</td>
+<td>台积电3nm/2nm</td>
+<td>中芯国际等效5nm(DUV多曝光)</td>
+<td><strong>2-3代</strong></td>
+<td>低</td>
+</tr>
+<tr>
+<td>EDA工具</td>
+<td>Synopsys/Cadence 85%</td>
+<td>华大九天 国内6%</td>
+<td><strong>代际差距</strong></td>
+<td>低</td>
+</tr>
+<tr>
+<td>HBM</td>
+<td>SK海力士/三星/美光</td>
+<td>几乎空白</td>
+<td><strong>整代</strong></td>
+<td>极低</td>
+</tr>
+<tr>
+<td>CUDA生态</td>
+<td>NVIDIA 400万开发者</td>
+<td>各家碎片化</td>
+<td><strong>巨大</strong></td>
+<td>中（可绕过）</td>
+</tr>
+<tr>
+<td>GPU性能</td>
+<td>NVIDIA B200</td>
+<td>华为910C(超H20但落后H200)</td>
+<td><strong>1-2代</strong></td>
+<td>中</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_12">第四部分：系统性风险评估（芒格"检查清单"）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>风险</th>
+<th>概率</th>
+<th>影响</th>
+<th>具体情景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI资本开支周期性回调</td>
+<td>中</td>
+<td>高</td>
+<td>若AI应用变现不及预期，超大规模厂商削减资本开支（参考2022年云计算减速）</td>
+</tr>
+<tr>
+<td>自定义ASIC加速替代NVIDIA</td>
+<td>中高</td>
+<td>中</td>
+<td>Google/AWS/Meta自研芯片成熟，NVIDIA份额从80%降至60%以下</td>
+</tr>
+<tr>
+<td>估值泡沫破裂</td>
+<td>中</td>
+<td>高</td>
+<td>NVIDIA 30x+ PE、寒武纪/摩尔线程PE数百倍，若增速放缓将面临估值压缩</td>
+</tr>
+<tr>
+<td>中美技术脱钩加深</td>
+<td>中高</td>
+<td>中</td>
+<td>进一步制裁切断台积电/ASML对中国的供应</td>
+</tr>
+<tr>
+<td>替代技术出现</td>
+<td>低</td>
+<td>高</td>
+<td>量子计算、光子计算等颠覆性技术（10年内概率低）</td>
+</tr>
+<tr>
+<td>能源/电力约束</td>
+<td>中</td>
+<td>中</td>
+<td>数据中心用电增长过快，电网负荷不足制约扩张速度</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_13">历史类比</h3>
+<p><strong>最接近的类比：1990年代互联网基础设施投资潮</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>1990年代互联网</th>
+<th>2024-2026年AI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基础设施军备赛</td>
+<td>思科/Nortel/光纤公司</td>
+<td>NVIDIA/台积电/超大规模云</td>
+</tr>
+<tr>
+<td>最终赢家</td>
+<td>应用层（Google/Amazon/Facebook）</td>
+<td>待定</td>
+</tr>
+<tr>
+<td>基础设施公司结局</td>
+<td>思科仍在但从未回到2000年市值；多数光纤公司破产</td>
+<td>？</td>
+</tr>
+<tr>
+<td>启示</td>
+<td>"卖铲子"短期确定性高，但长期最大赢家可能在应用层</td>
+<td>当前"卖铲子"公司估值已反映大量乐观预期</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键区别：</strong> NVIDIA/台积电/ASML的垄断程度远超当年的思科——思科交换机有替代品，但EUV光刻机、CoWoS封装、CUDA生态目前没有。</p>
+<hr />
+<h2 id="_14">第五部分：文明趋势判断（李录框架）</h2>
+<p><strong>问题：AI算力是"文明级范式转移"还是"阶段性热潮"？</strong></p>
+<p><strong>判断：文明级范式转移。</strong> 理由：
+1. AI正在改变知识工作的本质——类比工业革命对体力劳动的影响
+2. 全球前五大公司（苹果、微软、NVIDIA、Google、亚马逊）全部深度投入AI
+3. 2025-2027年$1.15万亿资本开支不是投机——这是经过商业验证的企业级需求
+4. Anthropic毛利率从38%提升至70%+，AI应用的经济模型在2025年底出现拐点</p>
+<p><strong>10-20年终局：</strong>
+- <strong>赢家通吃概率最高的环节：</strong> 芯片设计（NVIDIA或其继任者）、晶圆代工（台积电）
+- <strong>最可能被颠覆的环节：</strong> 服务器OEM（差异化最低）、GPU租赁中介（依赖NVIDIA定价）
+- <strong>最大变数：</strong> 自研芯片 vs 通用GPU的平衡点在哪里</p>
+<hr />
+<h2 id="_15">第六部分：投资组合配置建议</h2>
+<h3 id="_16">推荐组合</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>层级</th>
+<th>标的</th>
+<th>所属环节</th>
+<th>核心逻辑</th>
+<th>推荐度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>核心仓位(50-60%)</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>台积电 (TSM)</td>
+<td>晶圆代工+封装</td>
+<td>先进制程唯一选择，CoWoS卡脖子，70%份额，确定性最高</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td></td>
+<td>ASML (ASML)</td>
+<td>EUV光刻设备</td>
+<td>100%EUV垄断，€388亿订单积压，不可替代性最强</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td></td>
+<td>NVIDIA (NVDA)</td>
+<td>AI芯片设计</td>
+<td>80%+份额+CUDA锁定，但需关注自研芯片蚕食</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td><strong>卫星仓位(25-35%)</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Broadcom (AVGO)</td>
+<td>网络芯片+定制ASIC</td>
+<td>交换芯片90%+ASIC 70%，双重护城河</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td></td>
+<td>SK海力士 (000660.KS)</td>
+<td>HBM存储</td>
+<td>62%份额，79%毛利率，但存储周期性风险</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td></td>
+<td>Cadence (CDNS)</td>
+<td>EDA工具</td>
+<td>86%毛利率，100%客户留存，最好的商业模式之一</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td></td>
+<td>ARM (ARM)</td>
+<td>IP授权</td>
+<td>97%毛利率，"无论谁赢都收租"，但估值极贵</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td></td>
+<td>Arista (ANET)</td>
+<td>数据中心交换机</td>
+<td>AI数据中心以太网第一，64.6%毛利率</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td><strong>期权仓位(5-15%)</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>KLA (KLAC)</td>
+<td>检测设备</td>
+<td>62.3%毛利率行业最高，被低估的隐形冠军</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td></td>
+<td>Vertiv (VRT)</td>
+<td>散热+电力</td>
+<td>液冷刚需，$95亿积压，但估值已不便宜</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td></td>
+<td>中际旭创 (300308.SZ)</td>
+<td>光模块</td>
+<td>全球龙头，1.6T硅光，但毛利率偏低</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td><strong>ETF替代</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>SMH (VanEck半导体ETF)</td>
+<td>综合</td>
+<td>涵盖NVIDIA/台积电/ASML/Broadcom，"懒人方案"</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td></td>
+<td>SOXX (iShares半导体ETF)</td>
+<td>综合</td>
+<td>更均衡的半导体敞口</td>
+<td>★★★☆☆</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_17">不推荐/谨慎的标的</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>标的</th>
+<th>原因</th>
+<th>推荐度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI服务器OEM (SMCI/Dell)</td>
+<td>毛利率低，"组装"属性，SMCI有会计问题</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>CoreWeave (CRWV)</td>
+<td>高增长但$300亿债务，商业模式脆弱</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>Oracle AI云</td>
+<td>14%毛利率暴露"帮NVIDIA打工"本质</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>寒武纪 (688256.SH)</td>
+<td>市值泡沫严重，收入规模与估值不匹配</td>
+<td>★☆☆☆☆</td>
+</tr>
+<tr>
+<td>中国AI应用公司(智谱/MiniMax)</td>
+<td>估值万亿但收入仅数亿，泡沫风险极高</td>
+<td>★☆☆☆☆</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_18">买入/卖出信号</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>信号类型</th>
+<th>具体条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>加仓信号</strong></td>
+<td>超大规模资本开支继续上调；HBM/CoWoS供不应求持续；AI应用收入加速变现</td>
+</tr>
+<tr>
+<td><strong>减仓信号</strong></td>
+<td>超大规模资本开支增速放缓至个位数；NVIDIA毛利率跌破65%（自研ASIC大规模替代）；AI应用变现不及预期导致"AI寒冬"叙事</td>
+</tr>
+<tr>
+<td><strong>清仓信号</strong></td>
+<td>超大规模资本开支同比下降；出现NVIDIA GPU大规模折价抛售（类似2022年矿卡潮）；宏观衰退导致企业IT预算大幅削减</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_19">主题仓位上限建议</h3>
+<p><strong>建议AI算力主题占总仓位上限：25-35%</strong></p>
+<p>理由：投资逻辑链每个环节都已强验证，但估值普遍偏高（NVIDIA 30x+ PE、ASML 30x+ PE、台积电 25x+ PE），且存在资本开支周期性回调风险。</p>
+<hr />
+<h2 id="_20">第七部分：综合决策备忘录</h2>
+<h3 id="_21">行业总评表</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结论</th>
+<th>信心度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>投资逻辑链</td>
+<td>每个环节均已强验证，$1.15万亿资本开支实锤</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>最佳环节（段永平"对的生意"）</td>
+<td>EDA/ARM(毛利最高) &gt; NVIDIA/HBM(利润最大) &gt; 台积电/ASML(确定性最强)</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>最宽护城河（巴菲特）</td>
+<td>ASML(100%垄断) ≈ EDA(85%寡头) &gt; NVIDIA(CUDA锁定) &gt; 台积电(良率碾压)</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>最大风险（芒格）</td>
+<td>资本开支周期性回调 + 自研芯片蚕食NVIDIA + 估值泡沫</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>文明趋势（李录）</td>
+<td>文明级范式转移，非阶段性热潮</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>整体估值水平</td>
+<td>普遍偏贵，需要高增长持续兑现</td>
+<td>★★★☆☆</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_22">四位大师模拟点评</h3>
+<blockquote>
+<p><strong>巴菲特：</strong> "在AI算力这条产业链里，我最看得懂的是台积电和ASML——它们的护城河清晰可见，十年后几乎确定还在。NVIDIA很伟大，但CUDA生态能否永远锁定客户，我没有100%把握。我不会碰服务器组装商——那种4%毛利率的生意，再怎么增长也不是好生意。"</p>
+<p><strong>芒格：</strong> "聪明人为什么不买NVIDIA？因为30倍PE意味着市场已经定价了至少3-5年的高增长，而自研芯片趋势正在加速——Google TPU性价比是H100的4倍，AWS的Trainium已经部署了140万颗。我不是说NVIDIA会输，但它的份额从80%降到60%是完全可能的。这意味着什么？意味着当前的估值没有容错空间。"</p>
+<p><strong>段永平：</strong> "看这条产业链，最好的生意模式是EDA和ARM——86%和97%的毛利率，100%的客户留存，经常性收入，这种生意打着灯笼难找。问题是这两家公司的PE太高了，你必须等到它们因为某些原因被市场错杀时才值得买入。投资不是要找好公司，是要找好价格的好公司。"</p>
+<p><strong>李录：</strong> "AI确实是文明级的范式转移——它正在做知识领域中工业革命对体力劳动所做的事情。但历史告诉我们，在技术革命的早期，'卖铲子的人'（基础设施提供者）先赚钱，但终局赢家往往在应用层。1990年代投资思科很赚钱，但长期来看Google和Amazon创造了更多价值。今天的NVIDIA就是当年的思科——但有一个关键区别：NVIDIA的垄断程度远超当年的思科。这让它更安全，但也让它的估值更高。"</p>
+</blockquote>
+<hr />
+<h2 id="_23">数据来源</h2>
+<p>本报告数据基于以下信息源交叉验证：
+- 各公司最新季度/年度财报（NVIDIA FY2026、台积电2025年报、SK Hynix 2025年报等）
+- Goldman Sachs、Morgan Stanley、TrendForce、IDC、Gartner等机构研报
+- CNBC、Bloomberg、Financial Times等财经媒体报道
+- 中国市场数据参考21经济网、证券时报、新京报、知乎专栏等
+- SemiAnalysis、TrendForce、Dell'Oro Group等半导体行业专业分析机构</p>
+<p><strong>免责声明：</strong> 本报告仅为个人投资研究使用，不构成投资建议。所有数据力求准确但可能存在时效性问题。投资有风险，入市需谨慎。</p>
+<hr />
+<p><em>报告完成日期：2026年5月9日</em>
+<em>研究方法：四组AI研究团队并行研究，覆盖上游芯片设计、上游制造封装、中游设备网络、下游云与应用</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/0f7db0f0b448.html">研究报告索引</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/8ffcc4c8ad84.html">美股七姐妹：七份独立投资研究</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/2fd4a5ed4622.html">除了你自己，没人关心你的成本价</a><div class="meta">2026-09-28 · 公众号</div></li><li><a href="../r/05d9b0332f04.html">快手与 MiniMax：护城河与五年盈利推演</a><div class="meta">2026-09-22 · 研究</div></li><li><a href="../r/9afae466678c.html">六家公司研究与持仓判断</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/692147003320.html">技术分析冲力系统实证检验：三万次事件的证伪记录</a><div class="meta">2026-09-04 · 研究</div></li><li><a href="../r/3fffde9e8894.html">九公司凯利赔率横评：上行、下行与仓位框架</a><div class="meta">2026-09-03 · 横评对比</div></li><li><a href="../r/6a076e0af7bb.html">破净与净现金股全球筛选：美股、港股、A股</a><div class="meta">2026-08-27 · 筛选</div></li><li><a href="../r/13793d9c42cd.html">12 家公司 10 年后利润结局推演（2036 年视角）</a><div class="meta">2026-08-27 · 研究</div></li><li><a href="../r/4328f84a5552.html">巴菲特、段永平、李录 2026Q2 13F 持仓全解</a><div class="meta">2026-08-15 · 财报</div></li><li><a href="../r/be601dae083d.html">七公司十年横评：谁值得重仓，谁应该规避</a><div class="meta">2026-08-14 · 横评对比</div></li><li><a href="../r/8395b6213382.html">BNP Paribas — Income Investment</a><div class="meta">2026-07-15 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

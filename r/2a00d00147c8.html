@@ -1,0 +1,375 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 与元宇宙——1,450 亿美元的豪赌与 836 亿美元的沉没成本 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/Meta/index.html">Meta</a></div><h1>AI 与元宇宙——1,450 亿美元的豪赌与 836 亿美元的沉没成本</h1><div class="meta"><a href="../companies/Meta/index.html">Meta</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Meta/%E3%80%8A%E7%9C%8B%E6%87%82Meta%E3%80%8B/03-AI%E4%B8%8E%E5%85%83%E5%AE%87%E5%AE%99-1450%E4%BA%BF%E7%BE%8E%E5%85%83%E7%9A%84%E8%B1%AA%E8%B5%8C%E4%B8%8E836%E4%BA%BF%E7%BE%8E%E5%85%83%E7%9A%84%E6%B2%89%E6%B2%A1%E6%88%90%E6%9C%AC.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#meta">两笔账，决定了 Meta 的未来</a></li>
+<li><a href="#ai">第一笔账：AI 资本开支</a><ul>
+<li><a href="#_1">钱花在哪里？</a></li>
+<li><a href="#ai_1">AI 投入已经有回报吗？</a></li>
+<li><a href="#_2">那问题在哪里？</a></li>
+</ul>
+</li>
+<li><a href="#llama">Llama 开源：送钱给对手还是锁定生态？</a><ul>
+<li><a href="#llama_1">Llama 的发展历程</a></li>
+<li><a href="#_3">开源的商业逻辑</a></li>
+<li><a href="#_4">闭源的新动向</a></li>
+</ul>
+</li>
+<li><a href="#143-scale-ai">143 亿美元收购 Scale AI 股份</a></li>
+<li><a href="#reality-labs-836">第二笔账：Reality Labs 的 836 亿美元</a><ul>
+<li><a href="#_5">一部简短的元宇宙失败史</a></li>
+<li><a href="#_6">累计亏损明细</a></li>
+<li><a href="#_7">元宇宙还没死透</a></li>
+</ul>
+</li>
+<li><a href="#_8">扎克伯格的资本配置哲学</a></li>
+<li><a href="#ai_2">关键问题：AI 投入的天花板在哪里？</a></li>
+<li><a href="#_9">本篇小结</a></li>
+<li><a href="#_10">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂Meta》系列 · 第 03 篇
+阅读时间约 12 分钟</p>
+</blockquote>
+<hr />
+<h2 id="meta">两笔账，决定了 Meta 的未来</h2>
+<p>836 亿美元。这是 Meta 在元宇宙上的累计净亏损，从 2020 年烧到 2025 年，换来了一个关闭了 VR 版的 Horizon Worlds 和销量下滑的 Quest 头显。还没完——2026 年预计再亏约 190 亿。</p>
+<p>同期，扎克伯格又启动了另一笔更大的赌注：2026 年 AI 资本开支 1,250-1,450 亿美元，占预计收入的 54%-63%，相当于三年前全年资本开支的五倍。</p>
+<p>这两笔账压在一起，是 Meta 估值被折价的核心原因——广告业务数据好得无可挑剔，但市场对"扎克伯格花钱方式"的不信任，把远期市盈率压到了 18.4 倍，同业平均是 29 倍。</p>
+<p>这一篇要做的，是把这两笔账各自拆清楚。</p>
+<hr />
+<h2 id="ai">第一笔账：AI 资本开支</h2>
+<h3 id="_1">钱花在哪里？</h3>
+<p>1,250-1,450 亿美元的资本开支主要投向三个方向：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>方向</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GPU 算力</strong></td>
+<td>大规模采购 NVIDIA GPU，用于 AI 模型训练和推理</td>
+</tr>
+<tr>
+<td><strong>数据中心</strong></td>
+<td>新建和扩建数据中心，包括土地、建筑、电力基础设施</td>
+</tr>
+<tr>
+<td><strong>自研芯片</strong></td>
+<td>MTIA 系列定制 AI 芯片，降低对 NVIDIA 的长期依赖</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：Meta Q1 2026 财报电话会）</p>
+<p>资本开支的增长速度是惊人的：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>资本开支</th>
+<th>同比</th>
+<th>占营收比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td><strong>~281 亿</strong></td>
+<td>—</td>
+<td>21%</td>
+</tr>
+<tr>
+<td>2024</td>
+<td><strong>~392 亿</strong></td>
+<td>+40%</td>
+<td>24%</td>
+</tr>
+<tr>
+<td>2025</td>
+<td><strong>~722 亿</strong></td>
+<td>+84%</td>
+<td>36%</td>
+</tr>
+<tr>
+<td>2026E</td>
+<td><strong>1,250-1,450 亿</strong></td>
+<td>+73%~+101%</td>
+<td><strong>54%-63%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：Meta 各年度财报）</p>
+<p><strong>2026 年资本开支占营收比例超过一半</strong>。这个数字在大型科技公司的历史上几乎前所未有。</p>
+<h3 id="ai_1">AI 投入已经有回报吗？</h3>
+<p>有，而且回报相当明确：</p>
+<ol>
+<li><strong>Advantage+ 自动化广告</strong>：年化处理超过 <strong>600 亿美元</strong> 广告支出，直接推动广告效率提升和单价上涨（来源：Meta Q1 2026 财报）</li>
+<li><strong>内容推荐升级</strong>：AI 模型改进使用户停留时长增加，带动广告展示量增长 19%</li>
+<li><strong>Q1 收入增速 33%</strong>：远超费用增速，说明 AI 投入的产出正在加速</li>
+</ol>
+<p>如果只看短期数据，AI 投入的回报是正的——每一美元投入带来了超过一美元的价值增长。</p>
+<h3 id="_2">那问题在哪里？</h3>
+<p>问题在于<strong>规模和可持续性</strong>。</p>
+<p><strong>规模问题</strong>：2026 年资本开支 1,250-1,450 亿美元，即使 Meta 全年营收达到 2,300 亿美元（按 Q2 指引推算），资本开支仍占收入的 54%-63%。自由现金流虽然预计仍超千亿，但空间被大幅压缩。</p>
+<p><strong>可持续性问题</strong>：AI 竞赛是一场军备竞赛。Google、微软、亚马逊都在大规模投入 AI 基础设施。如果竞争对手持续加码，Meta 能停下来吗？扎克伯格的历史表现暗示——他不太可能主动减速。</p>
+<p><strong>透明度问题</strong>：当被问到 1,450 亿美元投入的投资回报率时，扎克伯格说"这是一个非常技术性的问题"（来源：Fortune, 2026 年 4 月 29 日）。管理层承诺 2026 年营业利润绝对值将超过 2025 年，但也警告费用增速将"显著快于"收入增速。</p>
+<p>反方观点：<strong>"看不清回报"不等于"没有回报"</strong>。亚马逊在 AWS 早期也无法证明投资回报率，但事后来看那是公司历史上最好的投资。如果 AI 真的是像互联网一样的范式转移，早期过度投入好过投入不足。</p>
+<p>回应：亚马逊的类比有一定道理，但有一个关键区别——AWS 是一项有独立收入的新业务，投入产出可以独立衡量。Meta 的 AI 投入主要是增强现有广告业务，很难精确分离出 AI 的独立贡献。这使得"投入是否过度"的判断更加困难。</p>
+<hr />
+<h2 id="llama">Llama 开源：送钱给对手还是锁定生态？</h2>
+<p>Meta 的 AI 战略中最引人注目的是<strong>Llama 模型的开源策略</strong>。</p>
+<h3 id="llama_1">Llama 的发展历程</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>模型</th>
+<th>发布时间</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Llama 1</td>
+<td>2023 年 2 月</td>
+<td>首个开源大模型，引发行业轰动</td>
+</tr>
+<tr>
+<td>Llama 2</td>
+<td>2023 年 7 月</td>
+<td>可商用，生态开始形成</td>
+</tr>
+<tr>
+<td>Llama 3</td>
+<td>2024 年 4 月</td>
+<td>性能大幅提升，追赶 GPT-4</td>
+</tr>
+<tr>
+<td>Llama 4 Scout / Maverick</td>
+<td>2025 年 4 月</td>
+<td>首批原生多模态开源模型</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：Meta 官方发布信息）</p>
+<p>Llama 系列已有超过 <strong>25 家</strong> 主要合作伙伴（AWS、NVIDIA、Google Cloud 等），形成了围绕 Meta 模型的 AI 生态系统。</p>
+<h3 id="_3">开源的商业逻辑</h3>
+<p>为什么要把花了数百亿美元训练的模型免费公开？</p>
+<ol>
+<li><strong>降低自身研发成本</strong>：外部开发者帮助发现 bug、优化性能、扩展应用场景</li>
+<li><strong>建立行业标准</strong>：当 Llama 成为 AI 行业的"通用底座"，所有基于 Llama 的应用和数据最终都有可能回流到 Meta 的生态</li>
+<li><strong>削弱 OpenAI 的定价权</strong>：如果开源模型足够好，OpenAI 的闭源模型就很难收高价</li>
+<li><strong>吸引人才</strong>：AI 研究者更愿意加入一个对开源友好的公司</li>
+</ol>
+<h3 id="_4">闭源的新动向</h3>
+<p>值得注意的是，Meta 在 2026 年开始了<strong>双轨策略</strong>：
+- <strong>开源</strong>：继续推进 Llama 系列
+- <strong>闭源</strong>：发布首个商业闭源模型 <strong>Muse Spark</strong>（来源：CNBC, 2026 年 4 月 28 日）</p>
+<p>这说明 Meta 的开源策略不是"无条件共享"，而是有选择地开源基础模型、闭源最赚钱的应用层模型。</p>
+<p>反方观点：开源模型让竞争对手（包括 TikTok/字节跳动）免费获得了先进 AI 技术，Meta 实际上是在用自己的钱武装对手。而且 Llama 的下载量和社区活跃度虽然高，但这些并不直接转化为 Meta 的收入。</p>
+<p>回应：这个担忧不无道理。但目前来看，Llama 的最大受益者是中小企业和云计算平台，而不是 Meta 的直接竞争对手。字节跳动和 Google 有自己的 AI 研发能力，不太依赖 Llama。而中小企业使用 Llama 构建应用时，很可能最终通过 Meta 的广告平台获客——这是一个间接但有价值的正循环。</p>
+<hr />
+<h2 id="143-scale-ai">143 亿美元收购 Scale AI 股份</h2>
+<p>2026 年，Meta 以 <strong>143 亿美元</strong> 收购了 Scale AI 的股份，并聘请 Scale AI CEO 亚历山大·王担任 Meta 超级智能实验室负责人（来源：CNBC / 247 Wall St）。</p>
+<p>这笔交易的意义：
+- <strong>数据标注能力</strong>：Scale AI 是全球最大的 AI 数据标注公司，高质量数据是 AI 模型的核心燃料
+- <strong>人才获取</strong>：亚历山大·王被视为 AI 行业最优秀的年轻领导者之一
+- <strong>信号意义</strong>：Meta 不满足于只做"应用层 AI"，开始布局"基础层 AI 研究"</p>
+<p>反方观点：143 亿美元是一笔巨额交易，如果超级智能的时间线比预期更长，这笔投入可能变成另一个"元宇宙式"的昂贵实验。</p>
+<hr />
+<h2 id="reality-labs-836">第二笔账：Reality Labs 的 836 亿美元</h2>
+<h3 id="_5">一部简短的元宇宙失败史</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021 年 10 月</td>
+<td>Facebook 改名 Meta，宣布 全押 元宇宙</td>
+</tr>
+<tr>
+<td>2022-2023 年</td>
+<td>Reality Labs 每年亏损超过 <strong>130-160 亿美元</strong></td>
+</tr>
+<tr>
+<td>2023 年</td>
+<td>扎克伯格宣布"效率之年"，开始裁员和成本控制</td>
+</tr>
+<tr>
+<td>2024 年</td>
+<td>Reality Labs 亏损 <strong>177.2 亿美元</strong>，Quest 头显销量下滑 16%</td>
+</tr>
+<tr>
+<td>2025 年</td>
+<td>Reality Labs 亏损 <strong>191.9 亿美元</strong>，Q4 单季亏损 <strong>60.2 亿</strong></td>
+</tr>
+<tr>
+<td>2026 年 1 月</td>
+<td>裁减 Reality Labs 员工</td>
+</tr>
+<tr>
+<td>2026 年 3 月</td>
+<td>关闭 Horizon Worlds VR 版</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：Meta 各年度财报、CNBC）</p>
+<h3 id="_6">累计亏损明细</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>Reality Labs 亏损</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020</td>
+<td><strong>66.2 亿美元</strong></td>
+</tr>
+<tr>
+<td>2021</td>
+<td><strong>101.9 亿美元</strong></td>
+</tr>
+<tr>
+<td>2022</td>
+<td><strong>137.1 亿美元</strong></td>
+</tr>
+<tr>
+<td>2023</td>
+<td><strong>161.2 亿美元</strong></td>
+</tr>
+<tr>
+<td>2024</td>
+<td><strong>177.2 亿美元</strong></td>
+</tr>
+<tr>
+<td>2025</td>
+<td><strong>191.9 亿美元</strong></td>
+</tr>
+<tr>
+<td><strong>累计</strong></td>
+<td><strong>约 835.5 亿美元</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：Meta 各年度财报汇总）</p>
+<p><strong>836 亿美元是什么概念？</strong> 接近英特尔当前的整体市值。Meta 用这笔钱得到了什么？一个已经关闭 VR 版的 Horizon Worlds、销量下滑的 Quest 头显、以及一些 AR 眼镜原型。</p>
+<h3 id="_7">元宇宙还没死透</h3>
+<p>虽然 Meta 已大幅收缩 VR/元宇宙投入，但 Reality Labs 并没有完全关闭：
+- <strong>AR 眼镜</strong>：与 Ray-Ban 合作的智能眼镜仍在销售，且获得了正面评价
+- <strong>2026 年亏损预期</strong>：管理层说"水平类似"2025 年（即约 190 亿美元），但暗示可能是峰值
+- <strong>长期愿景</strong>：扎克伯格从未正式放弃"虚实融合"的长期愿景，只是优先级从第一降到了第三</p>
+<p>反方观点：每年继续亏损 190 亿美元在一个没有清晰商业前景的业务上，这不是"保持选择权"，而是"扔钱进大海"。</p>
+<p>回应：如果单看 Reality Labs，这笔投入确实缺乏正当性。但 Meta 广告业务 2025 年的家族应用部门营业利润超过 <strong>700 亿美元</strong>——190 亿的 Reality Labs 亏损约占其 27%。这是一个沉重但不致命的拖累。问题是，如果 Reality Labs 在 2027-2028 年开始显著缩减亏损，这部分利润将直接释放到底线。</p>
+<hr />
+<h2 id="_8">扎克伯格的资本配置哲学</h2>
+<p>把 AI 投入和元宇宙亏损放在一起看，可以看出扎克伯格的资本配置哲学：</p>
+<p><strong>特点一：敢下大赌注</strong>
+- 2012 年 10 亿买 Instagram——赌对了
+- 2014 年 190 亿买 WhatsApp——赌对了
+- 2021 年 全押 元宇宙——赌错了
+- 2024-2026 年 全押 AI——目前方向正确，规模待验证</p>
+<p><strong>特点二：错了会认，但纠偏不够快</strong>
+- 元宇宙从 2021 年到 2026 年，花了将近五年和 836 亿美元才实质性收缩
+- 在外界批评了近两年之后才开始裁员和调整</p>
+<p><strong>特点三：双层股权 = 无人能拦</strong>
+扎克伯格持有约 <strong>60% 投票权</strong>。这意味着即使所有外部股东都反对，他仍然可以推行自己的决策。</p>
+<p><strong>Meta 的投资风险，本质上就是"相不相信扎克伯格"的问题。</strong> 他过去二十年的决策记录总体优秀（Instagram、WhatsApp 的收购是科技史上最好的并购案例之一），但元宇宙的 836 亿美元亏损证明他也会犯大错。</p>
+<hr />
+<h2 id="ai_2">关键问题：AI 投入的天花板在哪里？</h2>
+<p>市场最关心的问题不是"AI 有没有回报"——Q1 数据已经证明有。而是"AI 投入会不会无限膨胀"。</p>
+<p>几个参照系：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>2026 年资本开支指引</th>
+<th>占营收比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Meta</td>
+<td><strong>1,250-1,450 亿</strong></td>
+<td>54%-63%</td>
+</tr>
+<tr>
+<td>Google（Alphabet）</td>
+<td><strong>~750 亿</strong></td>
+<td>~19%</td>
+</tr>
+<tr>
+<td>微软</td>
+<td><strong>~800 亿</strong></td>
+<td>~30%</td>
+</tr>
+<tr>
+<td>亚马逊</td>
+<td><strong>~1,000 亿</strong></td>
+<td>~15%</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：各公司财报指引，部分为分析师估计）</p>
+<p>Meta 的资本开支占营收比远高于同业，这是市场给 Meta 估值折价的直接原因。</p>
+<p>但也要看到：Meta 的 AI 投入与其广告业务高度耦合——这不是一笔"赌未来新业务"的投入，而是"强化现有核心业务"的投入。如果广告收入持续以 20%+ 的速度增长，资本开支占营收比会自然下降。</p>
+<p>管理层也给出了一些安慰：CFO Susan Li 明确表示"精简运营模式将让我们更快行动，同时也能部分抵消基础设施投资"。2026 年 5 月宣布裁员 <strong>8,000 人</strong>，部分目的就是用 AI 替代人力成本。</p>
+<hr />
+<h2 id="_9">本篇小结</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>事实</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 投入回报</td>
+<td>Q1 收入 +33%，量价齐升</td>
+<td><strong>方向正确，规模存疑</strong></td>
+</tr>
+<tr>
+<td>资本开支规模</td>
+<td>1,250-1,450 亿，占收入 54%-63%</td>
+<td><strong>远超同业，是估值折价的核心原因</strong></td>
+</tr>
+<tr>
+<td>Llama 开源</td>
+<td>25+ 合作伙伴，生态初成</td>
+<td><strong>战略合理，但间接收益难量化</strong></td>
+</tr>
+<tr>
+<td>Reality Labs</td>
+<td>累计亏损 836 亿，年亏约 190 亿</td>
+<td><strong>正在收缩，但尾巴还长</strong></td>
+</tr>
+<tr>
+<td>扎克伯格</td>
+<td>赌对过（Instagram/WhatsApp），也赌错过（元宇宙）</td>
+<td><strong>优秀但激进的资本配置者</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_10">下期预告</h2>
+<p>下一篇，我们看 Meta 面临的<strong>外部战场</strong>——竞争对手和监管风险。</p>
+<p>核心问题：
+- TikTok 到底是不是 Meta 的致命威胁？美国的 TikTok 禁令进展如何？
+- FTC 反垄断诉讼输了——但上诉了。这对 Meta 意味着什么？
+- 苹果的隐私政策曾经重创 Meta——Meta 是怎么反击的？
+- 欧盟《数字市场法案》对 Meta 的影响有多大？</p>
+<p>下周见。</p>
+<hr />
+<p><em>本文是《看懂Meta》系列第 03 篇。后续 2 篇将陆续推出。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/f0933918b086.html">Meta Platforms (META) 投资研究 — 最终报告</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/77bebeeae630.html">Meta Platforms 风险与管理层评估</a><div class="meta">2026-06-20 · 组织管理</div></li><li><a href="../r/d72b75889ccb.html">Meta Platforms 行业竞争分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/9b4c8098f793.html">Meta Platforms 财务与估值分析</a><div class="meta">2026-06-20 · 估值仓位</div></li><li><a href="../r/f48154295e30.html">Meta Platforms 商业模式分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/9ecc605a91c1.html">估值判断——一道关于信任的数学题</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/ba7e3d012015.html">竞争与监管——护城河的实战检验</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/dbcf014a92a5.html">广告机器——AI 驱动的注意力变现引擎</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/ca1d4db6238f.html">社交广告帝国的关键数据</a><div class="meta">2026-05-22 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

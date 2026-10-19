@@ -1,0 +1,260 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GLM-5.3 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a></div><h1>GLM-5.3</h1><div class="meta"><a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/zai-org__GLM-5.3__README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#benchmark">Benchmark</a><ul>
+<li><a href="#serve-glm-53-locally">Serve GLM-5.3 Locally</a></li>
+<li><a href="#note">Note</a></li>
+</ul>
+</li>
+<li><a href="#footnotes">Footnotes</a></li>
+<li><a href="#citation">Citation</a></li>
+</ul>
+</div>
+</details><article><p>GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks:</p>
+<ul>
+<li>Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench. It also achieve open-source SOTA on public benchmarks including Terminal Bench 3.0 and Agents' Last Exam.</li>
+<li>Emergent Cyber Capability: As we scaled post-training, cyber capability developed faster than we expected. GLM-5.3 is state of the art on CyberGym for vulnerability discovery, and its gains are largest further up the exploitation chain, where it more than doubles GLM-5.2 on exploitation benchmarks.</li>
+</ul>
+<p><img alt="bench_53" src="https://raw.githubusercontent.com/zai-org/GLM-5/refs/heads/main/resources/bench_53_2.png" /></p>
+<h2 id="benchmark">Benchmark</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Benchmark</th>
+<th>GLM-5.3</th>
+<th>GLM-5.2</th>
+<th>Kimi K3</th>
+<th>DeepSeek-V4 Pro-0813</th>
+<th>Qwen3.8-Max</th>
+<th>Opus 4.8</th>
+<th>Fable 5 (w/ fallback)</th>
+<th>GPT-5.6 Sol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Terminal Bench 2.1</td>
+<td>88.2</td>
+<td>81.0</td>
+<td>88.3</td>
+<td>87.9</td>
+<td>86.6</td>
+<td>85.0</td>
+<td>88.0</td>
+<td><strong>88.8</strong></td>
+</tr>
+<tr>
+<td>Terminal Bench 3.0</td>
+<td>28.3</td>
+<td>4.6</td>
+<td>17.4</td>
+<td>–</td>
+<td>–</td>
+<td>21.1</td>
+<td>33.7</td>
+<td><strong>34.6</strong></td>
+</tr>
+<tr>
+<td>DeepSWE (v1.1)</td>
+<td>66.9</td>
+<td>46.2</td>
+<td>67.5</td>
+<td>62.7</td>
+<td>56.6</td>
+<td>58.0</td>
+<td>69.7</td>
+<td><strong>72.7</strong></td>
+</tr>
+<tr>
+<td>NL2Repo</td>
+<td>58.0</td>
+<td>48.9</td>
+<td>58.0</td>
+<td>61.1</td>
+<td>55.9</td>
+<td><strong>69.7</strong></td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>ProgramBench (Almost Solved)</td>
+<td>19.0</td>
+<td>9.5</td>
+<td>17.5</td>
+<td>–</td>
+<td>10.5</td>
+<td>15.5</td>
+<td><strong>33.0</strong></td>
+<td>23.0</td>
+</tr>
+<tr>
+<td>FrontierSWE</td>
+<td>78.1</td>
+<td>67.5</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>66.5</td>
+<td><strong>88.2</strong></td>
+<td>–</td>
+</tr>
+<tr>
+<td>SWE-Marathon (v1.1)</td>
+<td>42.5</td>
+<td>19.4</td>
+<td>48.1</td>
+<td>–</td>
+<td>–</td>
+<td><strong>48.8</strong></td>
+<td>33.1</td>
+<td>42.5</td>
+</tr>
+<tr>
+<td>PostTrainBench</td>
+<td>39.8</td>
+<td>31.7</td>
+<td>32.0</td>
+<td>–</td>
+<td>–</td>
+<td>32.9</td>
+<td><strong>41.8</strong></td>
+<td>36.2</td>
+</tr>
+<tr>
+<td>CyberGym</td>
+<td><strong>84.5</strong></td>
+<td>77.2</td>
+<td>80.0</td>
+<td>83.3</td>
+<td>78.5</td>
+<td>78.1</td>
+<td>83.8</td>
+<td>83.6</td>
+</tr>
+<tr>
+<td>ExploitGym (2h / 6h)</td>
+<td>105 / 130</td>
+<td>29 / 39</td>
+<td>36 / 70</td>
+<td>–</td>
+<td>14 / 26</td>
+<td>80 / 120</td>
+<td>181 / 247</td>
+<td><strong>216 / 293</strong></td>
+</tr>
+<tr>
+<td>ExploitBench</td>
+<td>54.4</td>
+<td>24.4</td>
+<td>32.2</td>
+<td>–</td>
+<td>28.8</td>
+<td>40.0</td>
+<td><strong>78.0</strong></td>
+<td>76.5</td>
+</tr>
+<tr>
+<td>Toolathlon Verified</td>
+<td>73.0</td>
+<td>59.9</td>
+<td><strong>76.5</strong></td>
+<td>74.1</td>
+<td>72.5</td>
+<td>76.2</td>
+<td>74.7</td>
+<td>74.9</td>
+</tr>
+<tr>
+<td>AutomationBench (v1.0.6)</td>
+<td><strong>48.2</strong></td>
+<td>26.2</td>
+<td>46.7</td>
+<td>43.2</td>
+<td>39.8</td>
+<td>41.0</td>
+<td>46.2</td>
+<td>45.8</td>
+</tr>
+<tr>
+<td>Agents' Last Exam (ALE-CLI)</td>
+<td>28.5</td>
+<td>23.8</td>
+<td>27.6</td>
+<td>25.7</td>
+<td>27.0</td>
+<td>25.7</td>
+<td>23.8</td>
+<td><strong>28.6</strong></td>
+</tr>
+<tr>
+<td>HLE w/ Tools</td>
+<td>62.5</td>
+<td>54.7</td>
+<td>59.8</td>
+<td>60.0</td>
+<td>56.2</td>
+<td>57.9</td>
+<td>63.9</td>
+<td><strong>64.5</strong></td>
+</tr>
+<tr>
+<td>GDPval-AA v2</td>
+<td><strong>1769</strong></td>
+<td>1508</td>
+<td>1682</td>
+<td>1590</td>
+<td>1739</td>
+<td>1588</td>
+<td>1743</td>
+<td>1730</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="serve-glm-53-locally">Serve GLM-5.3 Locally</h3>
+<p>GLM-5.3 supports deployment with the following frameworks. Feel free to try them out:</p>
+<ul>
+<li><a href="https://github.com/sgl-project/sglang">SGLang</a> — see <a href="https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3">cookbook</a></li>
+<li><a href="https://github.com/vllm-project/vllm">vLLM</a> — see <a href="https://recipes.vllm.ai/zai-org/GLM-5.3">recipes</a></li>
+<li><a href="https://github.com/lightseekorg/tokenspeed">TokenSpeed</a> — see <a href="https://lightseek.org/tokenspeed/recipes/models#glm-5-3">here</a></li>
+<li><a href="https://github.com/huggingface/transformers">Transformers</a> — see <a href="https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/glm_moe_dsa.md">transformers docs</a></li>
+<li><a href="https://github.com/kvcache-ai/ktransformers">KTransformers</a> — see <a href="https://github.com/kvcache-ai/ktransformers/blob/main/doc/en/kt-kernel/GLM-5.2-Tutorial.md">tutorial</a></li>
+<li><a href="https://github.com/unslothai/unsloth">Unsloth</a> — see <a href="https://unsloth.ai/docs/models/GLM-5.3">guide</a></li>
+<li>For deployment on the <code>Ascend NPU</code> platform, inference frameworks such as vLLM-Ascend, xLLM and SGLang are supported — see <a href="https://github.com/zai-org/GLM-5/blob/main/example/ascend.md">here</a>.</li>
+</ul>
+<h3 id="note">Note</h3>
+<ul>
+<li>GLM-5.3 supports controlling the thinking budget through the <code>reasoning_effort</code> parameter, which accepts three levels: <code>low</code>, <code>high</code>, and <code>max</code>. It defaults to <code>max</code> if not passed (or if set to any other value). To use <code>low</code> or <code>high</code>, pass them explicitly. For benchmark and leaderboard reproduction, keep the default <code>max</code>.</li>
+<li>In the chat template for GLM-5.3, <code>clear_thinking</code> defaults to <code>false</code> if not passed. For chat scenarios, explicitly pass <code>clear_thinking=true</code>.</li>
+</ul>
+<h2 id="footnotes">Footnotes</h2>
+<ul>
+<li><strong>HLE w/ tools</strong>: We use sampling parameters of <code>temperature=1.0</code> and <code>top_p=0.95</code> for evaluation, with a maximum generation length of <code>163,840</code> tokens. The evaluation is conducted with a maximum context length of <code>300,000</code> tokens, using a context management strategy. We use GPT-5.6-luna (medium) as the judge model.</li>
+<li><strong>NL2Repo</strong>: We evaluated NL2Repo with <code>temperature=1.0</code>, <code>top_p=1.0</code>, and <code>max_new_tokens=64k</code> under 1M context. To prevent hacking, we use rule-based and a LLM-based judgement to prevent malicious behaviors (e.g., unauthorized pip or curl operations).</li>
+<li><strong>DeepSWE</strong>: We run DeepSWE using the mini-swe-agent harness with <code>temperature=0.95</code>, <code>top_p=1.0</code>, <code>timeout=6h</code> and 400K context.</li>
+<li><strong>Terminal-Bench 2.1</strong>: We evaluate in Claude Code 2.1.207 with <code>temperature=1.0</code>, <code>top_p=1</code>, <code>max_new_tokens=65536</code> with 6h timeout.</li>
+<li><strong>Terminal-Bench 3.0</strong>: We evaluate Terminal-Bench-3 tasks with the Claude Code 2.1.207 harness (reasoning effort=max, 400K context, and 128K maximum output), reporting avg@3 over three rollouts per task. Each rollout runs in an isolated container built from the task's official image, and is capped at 600 agent turns with a 10-hour timeout. Tool Search is disabled, and the artifacts each agent produces are scored by the task's official separate verifier.</li>
+<li><strong>Agent's Last Exam (CLI)</strong>: We evaluate ALE using the official evaluation protocol with the Claude Code harness (reasoning effort=max, 1M context, and 64K maximum output). Each of the 105 tasks runs in an isolated Docker container using the resources declared in its Task Card. The default timeout is 4 hours, with task-specific limits taking precedence (up to 8 hours). Tool Search is disabled, and results are scored by the official ALE evaluators.</li>
+<li><strong>Toolathlon Verified</strong>: We obtain all results via the official evaluation service and report pass@1 averaged over 3 independent runs.</li>
+<li><strong>AutomationBench</strong>: We evaluate on AutomationBench <strong>v1.0.6</strong>, incorporating the fix for the <code>null</code>-type handling issue introduced in <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/%5B">PR #13</a>.</li>
+<li><strong>GDPval-AA v2</strong>: Models are evaluated by Artificial Analysis.</li>
+<li><strong>CyberGym</strong>: We evaluate GLM-5.3 in Claude Code 2.1.207 (max reasoning effort, no web tools with <code>temperature=1.0</code>, <code>top_p=1.0</code>, <code>max_new_tokens=128000</code>). All evaluations are under unlimited timeout per task and results are single-run Pass@1 over 1,507 tasks. To simulate real-world usage scenarios, we place the agent inside the task container. We also remove all Git-related information and apply a domain whitelist (allowing only essential domains such as pypi.org and deb.debian.org for basic tool installation) to prevent the agent from cheating.</li>
+<li><strong>ExploitGym</strong>: We evaluate GLM-5.3, Kimi-K3 and Qwen3.8 Max in Claude Code 2.1.207 (max reasoning effort, no web tools with <code>temperature=1.0</code>, <code>top_p=1.0</code>, <code>max_new_tokens=128000</code>). The reported results are single-run Pass@1 on 869 tasks under two timeout budgets: 2 hours and 6 hours, which are calculated as the API inference time rescaled by per-model tokens per second rate (per-model TPS sourced from Artificial Analysis; that is, we rescale GLM-5.3's results by 115 TPS, Kimi K3's results by 40 TPS and Qwen3.8 Max's results by 47 TPS), plus the non-API overhead. We also apply a domain whitelist (allowing only essential domains such as pypi.org and deb.debian.org for basic tool installation) to prevent the agent from cheating.</li>
+<li><strong>ExploitBench</strong>: We evaluate GLM-5.3 in Claude Code 2.1.207 (max reasoning effort, no web tools with <code>temperature=1.0</code>, <code>top_p=1.0</code>, <code>max_new_tokens=128000</code>). Following the official evaluation settings, we limit the maximum number of interaction rounds between the agent and the environment to 300, and compute the average coverage score over all 41 tasks across 3 revisions. The coverage result of a task is determined by taking the union of capabilities achieved across all revisions, and the average score is obtained by averaging the results. We also apply a domain whitelist (allowing only essential domains such as pypi.org and deb.debian.org for basic tool installation) to prevent the agent from cheating.</li>
+<li><strong>FrontierSWE</strong>: The evaluation was conducted by <a href="https://www.proximal.ai/">Proximal</a> with 1M context length, max effort level, and 128K maximum output tokens. Dominance score reported as of 2026/08/14.</li>
+<li><strong>PostTrainBench</strong>: We evaluate GLM-5.3 using Claude Code 2.1.207 with max effort level, <code>temperature = 1.0</code>, <code>top_p = 1.0</code>, <code>max_new_tokens = 128000</code>, and a 1M-token context window. We report the weighted average over 3 runs. Runs that fail to produce a score fall back to the official zero-shot base-model baseline score. For checks intended to prevent the use of third-party APIs, we removed the original pattern-matching-based checks, as they produced false positives when a local vLLM endpoint was accessed through the OpenAI SDK. Instead, we use an LLM agent to inspect solutions for external API usage.</li>
+<li><strong>SWE-Marathon</strong>: We evaluate GLM-5.3 using Claude Code 2.1.207 with maximum effort level, <code>temperature = 1.0</code>, <code>top_p = 0.95</code>, <code>max_new_tokens = 128000</code>, and a 1M-token context window. For <code>strip-clone</code>, the original anti-cheat checks used overly broad import detection that could reject valid implementations. We removed the affected checks and performed llm-based inspection instead to avoid false positives. For <code>parameter-golf</code> and <code>trimul-cuda</code>, changes to the NVIDIA wheels caused the Docker image builds to fail, so we added <code>--extra-index-url https://pypi.org/simple</code> to restore successful builds.</li>
+</ul>
+<h2 id="citation">Citation</h2>
+<p>If you find GLM-5.3 useful in your research, please cite our technical report:</p>
+<pre><code class="language-bibtex">@misc{glm5team2026glm5vibecodingagentic,
+      title={GLM-5: from Vibe Coding to Agentic Engineering},
+      author={GLM-5-Team and : and Aohan Zeng and Xin Lv and Zhenyu Hou and Zhengxiao Du and Qinkai Zheng and Bin Chen and Da Yin and Chendi Ge and Chenghua Huang and Chengxing Xie and Chenzheng Zhu and Congfeng Yin and Cunxiang Wang and Gengzheng Pan and Hao Zeng and Haoke Zhang and Haoran Wang and Huilong Chen and Jiajie Zhang and Jian Jiao and Jiaqi Guo and Jingsen Wang and Jingzhao Du and Jinzhu Wu and Kedong Wang and Lei Li and Lin Fan and Lucen Zhong and Mingdao Liu and Mingming Zhao and Pengfan Du and Qian Dong and Rui Lu and Shuang-Li and Shulin Cao and Song Liu and Ting Jiang and Xiaodong Chen and Xiaohan Zhang and Xuancheng Huang and Xuezhen Dong and Yabo Xu and Yao Wei and Yifan An and Yilin Niu and Yitong Zhu and Yuanhao Wen and Yukuo Cen and Yushi Bai and Zhongpei Qiao and Zihan Wang and Zikang Wang and Zilin Zhu and Ziqiang Liu and Zixuan Li and Bojie Wang and Bosi Wen and Can Huang and Changpeng Cai and Chao Yu and Chen Li and Chengwei Hu and Chenhui Zhang and Dan Zhang and Daoyan Lin and Dayong Yang and Di Wang and Ding Ai and Erle Zhu and Fangzhou Yi and Feiyu Chen and Guohong Wen and Hailong Sun and Haisha Zhao and Haiyi Hu and Hanchen Zhang and Hanrui Liu and Hanyu Zhang and Hao Peng and Hao Tai and Haobo Zhang and He Liu and Hongwei Wang and Hongxi Yan and Hongyu Ge and Huan Liu and Huanpeng Chu and Jia'ni Zhao and Jiachen Wang and Jiajing Zhao and Jiamin Ren and Jiapeng Wang and Jiaxin Zhang and Jiayi Gui and Jiayue Zhao and Jijie Li and Jing An and Jing Li and Jingwei Yuan and Jinhua Du and Jinxin Liu and Junkai Zhi and Junwen Duan and Kaiyue Zhou and Kangjian Wei and Ke Wang and Keyun Luo and Laiqiang Zhang and Leigang Sha and Liang Xu and Lindong Wu and Lintao Ding and Lu Chen and Minghao Li and Nianyi Lin and Pan Ta and Qiang Zou and Rongjun Song and Ruiqi Yang and Shangqing Tu and Shangtong Yang and Shaoxiang Wu and Shengyan Zhang and Shijie Li and Shuang Li and Shuyi Fan and Wei Qin and Wei Tian and Weining Zhang and Wenbo Yu and Wenjie Liang and Xiang Kuang and Xiangmeng Cheng and Xiangyang Li and Xiaoquan Yan and Xiaowei Hu and Xiaoying Ling and Xing Fan and Xingye Xia and Xinyuan Zhang and Xinze Zhang and Xirui Pan and Xu Zou and Xunkai Zhang and Yadi Liu and Yandong Wu and Yanfu Li and Yidong Wang and Yifan Zhu and Yijun Tan and Yilin Zhou and Yiming Pan and Ying Zhang and Yinpei Su and Yipeng Geng and Yong Yan and Yonglin Tan and Yuean Bi and Yuhan Shen and Yuhao Yang and Yujiang Li and Yunan Liu and Yunqing Wang and Yuntao Li and Yurong Wu and Yutao Zhang and Yuxi Duan and Yuxuan Zhang and Zezhen Liu and Zhengtao Jiang and Zhenhe Yan and Zheyu Zhang and Zhixiang Wei and Zhuo Chen and Zhuoer Feng and Zijun Yao and Ziwei Chai and Ziyuan Wang and Zuzhou Zhang and Bin Xu and Minlie Huang and Hongning Wang and Juanzi Li and Yuxiao Dong and Jie Tang},
+      year={2026},
+      eprint={2602.15763},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2602.15763},
+}
+</code></pre></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/94b63c16f6b1.html">GLM-5</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/22905c393a9c.html">GLM-5.3-Flash</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d060129a14be.html">GLM-5.2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f90617223e31.html">GLM-4.7</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/0edcfc955787.html">GLM-4.6V</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8cf89aee725c.html">GLM-4.5-Air</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/10aa23c70e91.html">Grok 2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/652b9a513303.html">Grok-1</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4224b4932376.html">Solar Open</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/32e837241209.html">tencent__Hy3__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/e9c250974ef4.html">tencent__Hunyuan-Large__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/b78c7d9e66fc.html">stepfun-ai__step3__README</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

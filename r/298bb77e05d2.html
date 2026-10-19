@@ -1,0 +1,2124 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>晨星宽护城河 × 深度折价全球筛选 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../screens/晨星估值筛选/index.html">晨星估值筛选</a></div><h1>晨星宽护城河 × 深度折价全球筛选</h1><div class="meta"><a href="../screens/晨星估值筛选/index.html">晨星估值筛选</a> ｜ 2026-08-17 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%99%A8%E6%98%9F%E4%BC%B0%E5%80%BC%E7%AD%9B%E9%80%89/%E6%99%A8%E6%98%9F%E5%AE%BD%E6%8A%A4%E5%9F%8E%E6%B2%B3%E6%B7%B1%E5%BA%A6%E6%8A%98%E4%BB%B7%E5%85%A8%E7%90%83%E7%AD%9B%E9%80%89-20260817.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、口径换算</a></li>
+<li><a href="#_2">二、数据来源与付费墙边界</a><ul>
+<li><a href="#_3">为什么指数重构报告是最硬的来源</a></li>
+</ul>
+</li>
+<li><a href="#_4">三、反推法的误差验证</a></li>
+<li><a href="#9">四、最终名单（9 家）</a></li>
+<li><a href="#_5">五、逐家简介与护城河理由</a><ul>
+<li><a href="#1-wisetech-globalasxwtc-208">1. WiseTech Global（ASX:WTC）— +208%</a></li>
+<li><a href="#2-b-nysenke-131">2. 耐克 B 类（NYSE:NKE）— +131%</a></li>
+<li><a href="#3-prosusamsprx-88105">3. Prosus（AMS:PRX）— +88~105%</a></li>
+<li><a href="#4-etrrhm-97">4. 莱茵金属（ETR:RHM）— +97%</a></li>
+<li><a href="#5-nysebaba-hk9988-95">5. 阿里巴巴（NYSE:BABA / HK:9988）— +95%</a></li>
+<li><a href="#6-elekta-b-stoekta-b-84101">6. Elekta B 类（STO:EKTA B）— +84~101%</a></li>
+<li><a href="#7-campbellsnysecpb-1417">7. Campbell's（NYSE:CPB）— +141.7%</a></li>
+<li><a href="#8-sz002304-922">8. 洋河股份（SZ:002304）— +92.2%</a></li>
+<li><a href="#9-hk6936-828">9. 顺丰控股（HK:6936）— +82.8%</a></li>
+<li><a href="#10-hk0700-773">10. 腾讯控股（HK:0700）— +77.3%</a></li>
+</ul>
+</li>
+<li><a href="#_6">六、两个月内掉出名单的公司</a></li>
+<li><a href="#_7">七、副产品发现：七家公司被下调宽护城河</a></li>
+<li><a href="#_8">八、覆盖范围与局限</a><ul>
+<li><a href="#81">8.1 已完整覆盖的部分</a></li>
+<li><a href="#82">8.2 尚未覆盖的部分</a></li>
+<li><a href="#83">8.3 数据时点差异</a></li>
+</ul>
+</li>
+<li><a href="#6-pfv-pfv-070">九、6 月官方 P/FV 全表（P/FV ≤ 0.70 部分）</a><ul>
+<li><a href="#moat">美国（MOAT）</a></li>
+<li><a href="#moti">美国以外（MOTI）</a></li>
+</ul>
+</li>
+<li><a href="#_9">十、数据源清单</a></li>
+<li><a href="#_10">十一、使用提示</a></li>
+<li><a href="#2026-08-17">十二、更正记录（2026-08-17）</a><ul>
+<li><a href="#121-zoetis">12.1 删除一家：硕腾 Zoetis</a></li>
+<li><a href="#122">12.2 新增两家</a></li>
+<li><a href="#123">12.3 六家公允价值修正</a></li>
+<li><a href="#124">12.4 阿里巴巴：方向搞反了</a></li>
+<li><a href="#125">12.5 方法论教训：反推法的失效场景</a></li>
+</ul>
+</li>
+<li><a href="#vs">十三、分析师公允价值 vs 量化公允价值</a><ul>
+<li><a href="#131">13.1 分歧有多普遍</a></li>
+<li><a href="#132">13.2 本名单各家双口径对照</a></li>
+<li><a href="#133">13.3 三条值得注意的读数</a></li>
+</ul>
+</li>
+<li><a href="#_11">十四、深度研究结论汇总</a><ul>
+<li><a href="#141">14.1 三处对晨星护城河评级的异议</a></li>
+<li><a href="#141b">14.1b 洋河：一个已被红队推翻的结论（保留原文以留痕）</a></li>
+<li><a href="#141c">14.1c 更正：上一节的分母选错了，结论应当反转</a></li>
+<li><a href="#141d">14.1d 护城河异议也被推翻，且证据具有普遍意义</a></li>
+<li><a href="#141e">14.1e 合同负债拆分：数据准确，会计推论错误</a></li>
+<li><a href="#142-142b">14.2 一个跨报告互证的发现（结论已被推翻，见 14.2b）</a></li>
+<li><a href="#142b-142">14.2b 更正：框架转固定合同确实在发生，14.2 节读反了</a></li>
+<li><a href="#142c">14.2c 更正：护城河异议的核心证据也不成立</a></li>
+<li><a href="#143">14.3 晨星在自己的体系内也是异常值</a></li>
+<li><a href="#144">14.4 同业股价证伪了"停火杀估值"的解释</a></li>
+<li><a href="#145">14.5 一处已撤回的推论，以及一处已更正的表述</a></li>
+</ul>
+</li>
+<li><a href="#_12">十五、晨星公允价值的可信度：十年实盘检验</a><ul>
+<li><a href="#151">15.1 最直接的检验对象</a></li>
+<li><a href="#152">15.2 但超额收益的分布有明确结构</a></li>
+<li><a href="#153">15.3 公允价值本身的稳定性</a></li>
+<li><a href="#154">15.4 分用途的可信度判断</a></li>
+<li><a href="#155">15.5 本节未能做到的部分</a></li>
+</ul>
+</li>
+<li><a href="#_13">十六、这份筛选的正确用法</a></li>
+<li><a href="#_14">十七、多头红队轮：五份对抗性检验</a><ul>
+<li><a href="#171">17.1 为什么要跑这一轮</a></li>
+<li><a href="#172">17.2 结果总览</a></li>
+<li><a href="#173">17.3 五家各自最重要的一处推翻</a></li>
+<li><a href="#174">17.4 红队主动加重的看空证据</a></li>
+<li><a href="#175">17.5 贯穿五份的元发现</a></li>
+<li><a href="#176">17.6 经两轮对撞后的仓位判断</a></li>
+<li><a href="#177">17.7 这一轮仍然没有解决的问题</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><p><strong>筛选条件</strong>：晨星经济护城河评级为"宽"（Wide Moat），且公允价值相对现价的上涨空间 ≥ +74%</p>
+<p><strong>数据截止</strong>：2026-08-17（美股价格为 2026-08-14 收盘）</p>
+<p><strong>覆盖市场</strong>：美股、港股、A股、欧洲、日本、澳洲、加拿大、巴西、台湾、新西兰</p>
+<hr />
+<h2 id="_1">一、口径换算</h2>
+<p>"公允价值比现价高 +74% 以上"换算成晨星的 Price/Fair Value 口径：</p>
+<pre><code>上涨空间 = 公允价值 / 现价 - 1 ≥ 0.74
+        → 现价 / 公允价值 ≤ 1 / 1.74 = 0.575
+        → 折价 ≥ 42.5%
+</code></pre>
+<p>即 <strong>P/FV ≤ 0.575</strong> 。</p>
+<p>这个门槛比晨星"五星"更严。晨星五星只要求折价到不确定性评级对应的档位，高不确定性股票折价 30%–40% 即可获五星，因此五星股中相当一部分够不到本次门槛。</p>
+<hr />
+<h2 id="_2">二、数据来源与付费墙边界</h2>
+<p>晨星官网个股页的公允价值对非订阅用户加密（页面源码中直接显示 <code>LOCK|</code> 乱码），完整筛选器为付费功能（Morningstar Investor 美国区约 $34.95/月或 $249/年）。</p>
+<p>本报告通过四条公开路径绕过付费墙，并互相交叉验证：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>路径</th>
+<th>获得数据</th>
+<th>时点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>VanEck MOAT / MOTI / MOTG 三只 ETF 的<strong>指数重构报告 PDF</strong></td>
+<td>晨星官方 P/FV，精确到两位小数，覆盖全球</td>
+<td>P/FV 截至 2026-06-05</td>
+</tr>
+<tr>
+<td>2</td>
+<td>晨星"宽护城河+低估"筛选器页面的服务端渲染数据</td>
+<td>公允价值、股价、星级、不确定性评级<strong>明文</strong>（仅公司名加密）</td>
+<td>股价截至 2026-08-14</td>
+</tr>
+<tr>
+<td>3</td>
+<td>晨星各区域站（.com.au / global.morningstar.com）公开文章</td>
+<td>单只个股的最新公允价值原值与护城河论述</td>
+<td>2026-02 至 2026-08</td>
+</tr>
+<tr>
+<td>4</td>
+<td>反推法：本币价格 ÷ 官方 P/FV</td>
+<td>未公开发布的公允价值（尤其 A股）</td>
+<td>基于 2026-06 初</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_3">为什么指数重构报告是最硬的来源</h3>
+<p>晨星宽护城河指数的成分股规则本身就是"在宽护城河公司中，选 P/FV 最低的一批"。换言之，晨星已经替我们按折价程度排好序了——这正是本次筛选需要的排序。</p>
+<p>三只 ETF 分别覆盖：</p>
+<ul>
+<li><strong>MOAT</strong>：美国宽护城河</li>
+<li><strong>MOTI</strong>：美国以外（Global Markets ex-US）</li>
+<li><strong>MOTG</strong>：全球</li>
+</ul>
+<hr />
+<h2 id="_4">三、反推法的误差验证</h2>
+<p>对两家同时拥有"公开发布公允价值"和"官方 P/FV"的公司做对照：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>反推公允价值</th>
+<th>独立来源公布值</th>
+<th>误差</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>莱茵金属</td>
+<td>€1,199.80 ÷ 0.51 = €2,352</td>
+<td>€2,380</td>
+<td>1.2%</td>
+</tr>
+<tr>
+<td>WiseTech Global</td>
+<td>A$38.00 ÷ 0.29 = A$131</td>
+<td>A$130（2026-07）</td>
+<td>0.8%</td>
+</tr>
+</tbody>
+</table></div>
+<p>误差均在 1% 出头，方法可用。</p>
+<p>另有一次双路径互证：腾讯用 ADR 口径（公允价值 $102）与用港股口径反推（HK$795）算出的上涨空间同为 +77% 。</p>
+<p><strong>反推法的前提</strong>：晨星自 2026-06-05 以来未调整该股公允价值。对已知期间有调整的（如阿里巴巴于 2026-07-08 下调至 $241），一律采用公布值而非反推值。</p>
+<blockquote>
+<p><strong>勘误（2026-08-17）</strong>：本报告初版称阿里公允价值"于 2026-07-06 上调（此前约 $219）"，该说法错误，现已更正。$219 是笔者由 6 月指数 P/FV 反推的推断值，并非晨星发布数据。经核对 24 份晨星股票分析师报告原件确认：晨星是<strong>下调</strong>——道琼斯 2026-07-08 原标题为"Fair-Value Estimate Cut by 7% to $241"，前值 $258（2025-11-18 设定）。$219 在晨星 ADR 序列中从未出现。详见 <code>reports/Alibaba/阿里巴巴-晨星估值视角-20260817.md</code> 。</p>
+<p>这一更正同时暴露了反推法的一个失效场景：当指数 P/FV 与个股公允价值的口径或时点不一致时，反推会得出根本不存在的数值。阿里当时反推得 0.566 而晨星实际为 0.514，笔者已察觉不一致但误判为"公允价值上调所致"，方向判断反了。<strong>凡是反推值与公布值冲突的，一律以公布值为准，且不得据反推值倒推变动方向。</strong></p>
+</blockquote>
+<hr />
+<h2 id="9">四、最终名单（9 家）</h2>
+<p>按上涨空间排序。</p>
+<blockquote>
+<p><strong>本节已于 2026-08-17 全面更正</strong>。初版基于指数 P/FV + 反推法，现已改用晨星筛选器 API 的实测值（覆盖 33 个交易所、28,938 只有公允价值的标的）。变动：删除硕腾，新增 Campbell's 与顺丰控股，六家公允价值修正。详见第十二节更正记录。</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>公司</th>
+<th>市场 / 代码</th>
+<th>晨星公允价值</th>
+<th>现价</th>
+<th>P/FV</th>
+<th>上涨空间</th>
+<th>星级</th>
+<th>不确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>WiseTech Global</td>
+<td>澳洲 ASX:WTC</td>
+<td>A$130</td>
+<td>A$43.38</td>
+<td>0.334</td>
+<td><strong>+199.7%</strong></td>
+<td>5</td>
+<td>High</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Campbell's</td>
+<td>美股 NYSE:CPB</td>
+<td>$56</td>
+<td>$23.165</td>
+<td>0.414</td>
+<td><strong>+141.7%</strong></td>
+<td>5</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>3</td>
+<td>耐克 B 类</td>
+<td>美股 NYSE:NKE</td>
+<td>$94</td>
+<td>$40.73</td>
+<td>0.433</td>
+<td><strong>+130.8%</strong></td>
+<td>5</td>
+<td>High</td>
+</tr>
+<tr>
+<td>4</td>
+<td>莱茵金属</td>
+<td>德国 ETR:RHM</td>
+<td>€2,380</td>
+<td>€1,202</td>
+<td>0.505</td>
+<td><strong>+98.0%</strong></td>
+<td>5</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>5</td>
+<td>阿里巴巴</td>
+<td>美股 BABA</td>
+<td>$241</td>
+<td>$123.81</td>
+<td>0.514</td>
+<td><strong>+94.7%</strong></td>
+<td>5</td>
+<td>High</td>
+</tr>
+<tr>
+<td>—</td>
+<td>阿里巴巴（港股线）</td>
+<td>港股 9988</td>
+<td>HK$235</td>
+<td>HK$119.90</td>
+<td>0.510</td>
+<td>+96.0%</td>
+<td>5</td>
+<td>High</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Prosus</td>
+<td>荷兰 AMS:PRX</td>
+<td>€72</td>
+<td>€37.395</td>
+<td>0.519</td>
+<td><strong>+92.5%</strong></td>
+<td>5</td>
+<td>High</td>
+</tr>
+<tr>
+<td>7</td>
+<td>洋河股份</td>
+<td>A股 SZ:002304</td>
+<td>¥78</td>
+<td>¥40.58</td>
+<td>0.520</td>
+<td><strong>+92.2%</strong></td>
+<td>5</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Elekta B 类</td>
+<td>瑞典 STO:EKTA B</td>
+<td>SEK 100</td>
+<td>SEK 53.80</td>
+<td>0.538</td>
+<td><strong>+85.9%</strong></td>
+<td>5</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>9</td>
+<td>顺丰控股</td>
+<td>港股 HK:6936</td>
+<td>HK$58.9</td>
+<td>HK$32.22</td>
+<td>0.547</td>
+<td><strong>+82.8%</strong></td>
+<td>5</td>
+<td>High</td>
+</tr>
+<tr>
+<td>10</td>
+<td>腾讯控股</td>
+<td>港股 HK:0700</td>
+<td>HK$780</td>
+<td>HK$440</td>
+<td>0.564</td>
+<td><strong>+77.3%</strong></td>
+<td>5</td>
+<td>High</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>去重说明</strong>：阿里巴巴同时以 ADR（BABA）和港股（9988）两条线满足条件，上表按公司计为一家。<strong>若名单用于配置，必须按公司去重而非按上市地，否则会高估名单的分散度。</strong></p>
+<p><strong>边界样本</strong>：五粮液（000858.SZ）现价 ¥73.75、公允价值 ¥128、P/FV 0.5762、上涨 +73.56% —— 距 +74% 门槛仅差 0.44 个百分点，P/FV 距 0.575 只差 0.0012 。任何取数或时点的微小变动都会让它翻面，使用者应自行决定是否纳入。</p>
+<p>全部十家均为五星。<strong>不确定性评级分两档</strong>：High 六家（WiseTech、耐克、阿里、Prosus、顺丰、腾讯），Medium 四家（Campbell's、莱茵金属、洋河、Elekta）。</p>
+<blockquote>
+<p><strong>勘误</strong>：初版称"只有阿里巴巴拿到晨星完整评级三件套""阿里是名单中唯一被标注高不确定性的"，两句均错误。前者是因为初版只有阿里取到了完整字段，不代表其他家没有；后者在全球口径下不成立，六家都是 High。</p>
+</blockquote>
+<p><strong>这个区分比原始上涨空间更重要。</strong> 按晨星方法论，High 不确定性要折价 40% 才给五星（P/FV ≤ 0.60），Medium 只需 30%（P/FV ≤ 0.70）。所以同样是五星，Medium 档标的在<strong>自身风险档位下的超额安全边际</strong>更厚：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>不确定性</th>
+<th>五星门槛</th>
+<th>实际 P/FV</th>
+<th>超额安全边际</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Campbell's</td>
+<td>Medium</td>
+<td>0.70</td>
+<td>0.414</td>
+<td><strong>0.286</strong></td>
+</tr>
+<tr>
+<td>莱茵金属</td>
+<td>Medium</td>
+<td>0.70</td>
+<td>0.505</td>
+<td><strong>0.195</strong></td>
+</tr>
+<tr>
+<td>洋河股份</td>
+<td>Medium</td>
+<td>0.70</td>
+<td>0.520</td>
+<td><strong>0.180</strong></td>
+</tr>
+<tr>
+<td>Elekta</td>
+<td>Medium</td>
+<td>0.70</td>
+<td>0.538</td>
+<td><strong>0.162</strong></td>
+</tr>
+<tr>
+<td>WiseTech</td>
+<td>High</td>
+<td>0.60</td>
+<td>0.334</td>
+<td>0.266</td>
+</tr>
+<tr>
+<td>耐克</td>
+<td>High</td>
+<td>0.60</td>
+<td>0.433</td>
+<td>0.167</td>
+</tr>
+<tr>
+<td>阿里巴巴</td>
+<td>High</td>
+<td>0.60</td>
+<td>0.514</td>
+<td>0.086</td>
+</tr>
+<tr>
+<td>Prosus</td>
+<td>High</td>
+<td>0.60</td>
+<td>0.519</td>
+<td>0.081</td>
+</tr>
+<tr>
+<td>顺丰控股</td>
+<td>High</td>
+<td>0.60</td>
+<td>0.547</td>
+<td>0.053</td>
+</tr>
+<tr>
+<td>腾讯控股</td>
+<td>High</td>
+<td>0.60</td>
+<td>0.564</td>
+<td>0.036</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>若按风险调整口径排序，阿里从第 5 位降到第 7 位，腾讯垫底。</strong> 只看原始上涨空间会系统性地把高不确定性标的排到前面——这是本名单最容易被误用的地方。</p>
+<hr />
+<h2 id="_5">五、逐家简介与护城河理由</h2>
+<h3 id="1-wisetech-globalasxwtc-208">1. WiseTech Global（ASX:WTC）— +208%</h3>
+<p>澳洲物流软件公司，核心产品 CargoWise 是国际货代（海运空运、报关合规）的操作系统。</p>
+<p><strong>晨星护城河理由</strong>：转换成本 + 网络效应。货代一旦把全球操作跑在 CargoWise 上就极难迁移；物流业当前数字化率很低，而物流服务市场天然选择低成本供应商，数字化作为降本核心手段是必然趋势——要么企业主动数字化以保持竞争力，要么被数字化领先者夺走份额。</p>
+<p><strong>为什么折价这么深</strong>：股价一年跌约 70% 。创始人 Richard White 因涉嫌签证欺诈与人口贩运被澳大利亚联邦警察调查，2026 年 7 月卸任执行主席（保留董事与首席创新官职务），叠加市场对 AI 冲击软件公司的普遍恐慌。晨星因领导层变动把公允价值下调 6% 至 A$130，未来十年收入复合增速预测从 21% 降至 20% 。</p>
+<p><strong>关键点</strong>：下调之后，它仍然是全球折价最深的宽护城河股。晨星明确表态"尽管股价反弹，股票因 AI 恐慌仍显著低估"。</p>
+<hr />
+<h3 id="2-b-nysenke-131">2. 耐克 B 类（NYSE:NKE）— +131%</h3>
+<p>全球运动鞋服龙头。</p>
+<p><strong>晨星护城河理由</strong>：品牌无形资产与长期定价权。晨星明确表态，直营转型失误和运动休闲趋势降温"并未实质损害"全球品牌无形资产或长期定价权。</p>
+<p><strong>估值路径</strong>：公允价值从 $112 → $102 → $94 逐级下调，但同期股价跌得更快。现价 $40.73，52 周区间 40.00–80.17，处于多年低位附近。晨星 DCF 模型假设三年内随运动科技创新推出、渠道库存折扣正常化，恢复至中个位数收入增长和十几个点的营业利润率。</p>
+<hr />
+<h3 id="3-prosusamsprx-88105">3. Prosus（AMS:PRX）— +88~105%</h3>
+<p>荷兰上市的科技投资控股公司，净资产值约 2,110 亿美元。</p>
+<p><strong>晨星护城河理由</strong>：初次覆盖即给宽护城河，公允价值 €77 。其超过 80% 的净资产值来自持有腾讯 23% 的股权——护城河实质上是穿透过来的。</p>
+<p><strong>投资含义</strong>：本质是"折价买腾讯"，同时享受腾讯自身折价与控股公司折价的双重叠加。这也是它和腾讯同时出现在本名单的原因。若持有腾讯，需注意这两个标的高度相关，不构成分散。</p>
+<hr />
+<h3 id="4-etrrhm-97">4. 莱茵金属（ETR:RHM）— +97%</h3>
+<p>德国国防承包商。</p>
+<p><strong>晨星护城河理由</strong>：初次覆盖即给宽护城河（初始公允价值 €343，后经多次上调）。</p>
+<p><strong>基本面</strong>：2025 年国防收入增长 29% 至 99 亿欧元，营业利润增长 33% 至 18.4 亿欧元，利润率扩张至 18.5% 。现有订单覆盖 2026 年指引收入约 91%，2027 年覆盖 50%–66%，收入可见度高。晨星因德国采购从框架合同转向固定合同、现金流假设改善，将公允价值上调至 €2,380 。</p>
+<p><strong>注意</strong>：股价已从 52 周高点 €2,008 回落至 €1,210 。这个折价是股价腰斩打出来的，不是估值上调打出来的——需要判断市场在定价什么风险。</p>
+<hr />
+<h3 id="5-nysebaba-hk9988-95">5. 阿里巴巴（NYSE:BABA / HK:9988）— +95%</h3>
+<p>淘天电商网络效应 + 阿里云。</p>
+<p><strong>晨星评级</strong>：五星，<strong>高不确定性评级</strong> 。公允价值 $241 —— 注意这是<strong>下调后</strong>的数字：2026-07-08 由 $258 下调 7%，完整轨迹为 $100 → 128 → 163 → 150 → 156 → 153 → 179 → 267 → 258 → 241 。港股 9988 现价 HK$122.80 。</p>
+<p><strong>需要注意的两点</strong>：其一，晨星模型以人民币计价，同期人民币升值 4.56%，掩盖了真实降幅——按人民币口径实际下调约 10.7%，而非表面的 6.6% 。其二，"五星"只隔 0.014：高不确定性档的五星门槛是 P/FV ≤ 0.60，阿里为 0.5137；若不确定性评级升至"极高"（门槛 0.50），公允价值一分不改，星级当天就掉到四星。</p>
+<p><strong>风险信号</strong>：高不确定性评级是本名单中唯一被晨星明确标注的——意味着晨星自己认为其估值区间很宽，DCF 结果对假设高度敏感。</p>
+<hr />
+<h3 id="6-elekta-b-stoekta-b-84101">6. Elekta B 类（STO:EKTA B）— +84~101%</h3>
+<p>瑞典放疗设备商。</p>
+<p><strong>晨星护城河理由</strong>：设备转换成本 + 技术无形资产。与西门子医疗形成双寡头，晨星预计未来十年全球放疗设备装机中两家合计约 95% 。</p>
+<p><strong>投资论文核心</strong>：押在 Unity 平台（磁共振引导放疗）上。晨星认为在数据有限的情况下，Unity 正在兑现疗效承诺。成败取决于三点——Unity 持续放量、改版产品与软件的成功、抵御西门子医疗竞争的能力。</p>
+<p><strong>估值</strong>：公允价值 SEK 108（2026-02 口径，当时折价约 50%），反推值 SEK 99 。现价 SEK 53.60 。</p>
+<hr />
+<h3 id="7-campbellsnysecpb-1417">7. Campbell's（NYSE:CPB）— +141.7%</h3>
+<p>美国包装食品公司，罐头汤、Pepperidge Farm 饼干、V8 果蔬汁、Rao's 意面酱等品牌的持有者。</p>
+<p><strong>晨星数据</strong>：公允价值 $56（2026-03-20 设定，分析师 Erin Lash），现价 $23.165，P/FV 0.414，<strong>五星、Medium 不确定性、宽护城河</strong> 。</p>
+<p><strong>为什么重要</strong>：这是全球折价第二深的宽护城河五星股，仅次于 WiseTech，比耐克还便宜。而且它是 Medium 不确定性——按晨星方法论 Medium 档只需 30% 折价即给五星（P/FV ≤ 0.70），Campbell's 实际 0.414，<strong>在自身风险档位下的超额安全边际是全表最厚的</strong> 。</p>
+<p><strong>注意</strong>：本报告初版遗漏了这家公司，属数据源覆盖问题而非口径问题。它完全满足筛选条件，且其量化公允价值 $41.51 与分析师口径分歧达 −25.9%（量化星级仅三星），使用前建议自行深入研究。</p>
+<hr />
+<h3 id="8-sz002304-922">8. 洋河股份（SZ:002304）— +92.2%</h3>
+<p>A股白酒。<strong>本名单中唯一符合条件的 A股标的</strong> 。</p>
+<p><strong>晨星数据</strong>：公允价值 <strong>¥78</strong>（2026-04-28 设定，分析师 Jennifer Song），现价 ¥40.58，P/FV 0.520，<strong>五星、Medium 不确定性、宽护城河</strong> 。</p>
+<p><strong>数据更正</strong>：初版使用的 ¥75.4 是反推值，实测值为 ¥78，反推偏低 3.3% —— 即洋河实际比初版所写更便宜。</p>
+<p><strong>为什么值得注意</strong>：洋河是 Medium 不确定性，而名单里阿里、腾讯、WiseTech、耐克、Prosus、顺丰都是 High。Medium 档只需 30% 折价即给五星，洋河实际折价 48% ，<strong>在自身风险档位下的超额安全边际比那批高不确定性标的更厚</strong> 。这对"洋河 vs 茅台谁更值得买"的判断很关键——不能只看原始上涨空间。</p>
+<p><strong>同板块对照</strong>（P/FV 为 2026-06-05 指数口径，未重新定价）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>代码</th>
+<th>上涨空间</th>
+<th>是否符合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>五粮液</td>
+<td>000858</td>
+<td>+73.56%（实测口径）</td>
+<td>差 0.44 个百分点</td>
+</tr>
+<tr>
+<td>泸州老窖</td>
+<td>000568</td>
+<td>+68%</td>
+<td>否</td>
+</tr>
+<tr>
+<td>山西汾酒</td>
+<td>600809</td>
+<td>+65%</td>
+<td>否</td>
+</tr>
+<tr>
+<td>贵州茅台</td>
+<td>600519</td>
+<td>+32%</td>
+<td>否</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h3 id="9-hk6936-828">9. 顺丰控股（HK:6936）— +82.8%</h3>
+<p>中国快递物流龙头，港股上市线。</p>
+<p><strong>晨星数据</strong>：公允价值 HK$58.9，现价 HK$32.22，P/FV 0.547，<strong>五星、High 不确定性、宽护城河</strong>，分析师 Chelsey Tam（与阿里同一位）。</p>
+<p><strong>重要提示：数据新鲜度是全表最差的。</strong> 公允价值设定日为 <strong>2026-01-19</strong>，距今已七个月未更新，而同期中国快递行业价格战与业务量结构都有变化。<strong>使用前必须自行核实晨星是否仍维持该估值</strong> 。</p>
+<p><strong>注意</strong>：本报告初版遗漏了这家公司。A股线（002352）在 2026-06-05 指数口径下 P/FV 为 0.66（+52%），不符合条件；符合条件的是港股线。</p>
+<hr />
+<h3 id="10-hk0700-773">10. 腾讯控股（HK:0700）— +77.3%</h3>
+<p>微信社交网络效应 + 游戏。</p>
+<p><strong>晨星数据</strong>：公允价值 <strong>HK$780</strong>（2026-08-12 设定，分析师 Ivan Su，是全表最新的一条），现价 HK$440，P/FV 0.5641，<strong>五星、High 不确定性、宽护城河</strong> 。52 周区间 HK$411–683，处于低位。</p>
+<p><strong>数据更正</strong>：初版使用的 HK$795 是反推值，实测值为 HK$780，反推偏高 1.9% 。</p>
+<p><strong>一个值得留意的口径分歧</strong>：腾讯的晨星<strong>量化模型</strong>公允价值为 HK$683.21，与分析师口径分歧 12.4% 。按量化口径计，上涨空间从 +77.3% 降至 +55.3% 。详见第十三节。</p>
+<p><strong>与 Prosus 的关系</strong>：Prosus 也在本名单内，其超过 80% 的净资产值来自持有腾讯约 23% 股权。<strong>同时持有两者不构成分散，而是加倍集中</strong> 。详见第五节第 6 条。</p>
+<hr />
+<h2 id="_6">六、两个月内掉出名单的公司</h2>
+<p>本名单周转很快。以下为 2026-06-05 时符合或接近条件、现已不符合的：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>6月初上涨空间</th>
+<th>当前</th>
+<th>变化原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adyen</td>
+<td>+100%</td>
+<td>+61%</td>
+<td>股价涨 24%</td>
+</tr>
+<tr>
+<td>Guidewire</td>
+<td>+61%</td>
+<td>−1%</td>
+<td>股价涨 63%</td>
+</tr>
+<tr>
+<td>Veeva Systems</td>
+<td>+67%</td>
+<td>+5%</td>
+<td>股价涨 59%</td>
+</tr>
+<tr>
+<td>LPL Financial</td>
+<td>+89%</td>
+<td>~+50%</td>
+<td>股价涨 26%</td>
+</tr>
+<tr>
+<td>Endeavour Group</td>
+<td>+82%</td>
+<td>+73%</td>
+<td>公允价值 A$6.10，仅差 1 个百分点</td>
+</tr>
+<tr>
+<td>泸州老窖</td>
+<td>+72%</td>
+<td>+68%</td>
+<td>股价上涨</td>
+</tr>
+<tr>
+<td>山西汾酒</td>
+<td>+67%</td>
+<td>+65%</td>
+<td>股价上涨</td>
+</tr>
+<tr>
+<td>百胜中国</td>
+<td>+79%</td>
+<td>+62%</td>
+<td>公允价值 $77</td>
+</tr>
+<tr>
+<td>博通</td>
+<td>+69%</td>
+<td>+65%</td>
+<td>公允价值 $650，四星</td>
+</tr>
+<tr>
+<td>高乐氏 Clorox</td>
+<td>+72%</td>
+<td>+47%</td>
+<td>公允价值 $155</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_7">七、副产品发现：七家公司被下调宽护城河</h2>
+<p>2026 年 6 月 MOAT 指数重构中，以下七家因<strong>未通过护城河筛选</strong>被剔出指数，意味着晨星已将其从宽护城河下调：</p>
+<p>Adobe、Equifax、甲骨文（Oracle）、Salesforce、ServiceNow、Workday、TransUnion</p>
+<p>另有五家因<strong>估值筛选</strong>（Price/Fair Value，即涨得太贵）被剔出，护城河评级未变：</p>
+<p>波音、NXP、IDEX、UPS、Fortinet</p>
+<p>两类剔除原因性质完全不同，已核对剔除表的列对齐确认。若持仓涉及前七家，建议单独复核。</p>
+<hr />
+<h2 id="_8">八、覆盖范围与局限</h2>
+<h3 id="81">8.1 已完整覆盖的部分</h3>
+<p><strong>美股 A–C 字母段完整</strong>。2026-08-14 的晨星筛选器快照按公司名升序排列，第 1 页覆盖 A 到 C，25 行 P/FV 从 0.514 排至 0.947 。其中<strong>仅阿里巴巴一家 ≤ 0.575</strong> 。该字母段结论确定。</p>
+<p><strong>美股 3 月/9 月子组合已排查</strong>。用 MOAT 完整持仓 55 只减去 6 月重构的 40 只，定位出另一半子组合独有的 15 只：</p>
+<p>Datadog、Fortinet、Palo Alto Networks、NXP、应用材料、West Pharmaceutical、安捷伦、亚马逊、Entegris、美国合众银行、黑石、TransUnion、赛默飞、CoStar、MarketAxess</p>
+<p>抽查其中最可能深度折价的两家：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>晨星公允价值</th>
+<th>折价</th>
+<th>上涨空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>赛默飞世尔</td>
+<td>$630</td>
+<td>35%</td>
+<td>+54%</td>
+</tr>
+<tr>
+<td>安捷伦</td>
+<td>$151</td>
+<td>14%</td>
+<td>+16%</td>
+</tr>
+</tbody>
+</table></div>
+<p>均不达标。其余要么是高估值科技股（Datadog、Palo Alto、亚马逊），要么本就是因涨太贵被剔除的（Fortinet、NXP）。基本可排除漏网。</p>
+<h3 id="82">8.2 尚未覆盖的部分</h3>
+<p><strong>非美市场另一半子组合的 P/FV 缺失</strong>。晨星宽护城河指数采用错开重构机制：每只指数分为两个子组合，6 月只重构其中一半。3 月版指数报告已被 6 月版覆盖（VanEck 仅保留最新一份），且 Wayback Machine 在本次研究期间整站不可用（CDX 接口 503、可用性接口 502、SSL 握手失败），无法取得历史快照。需等 2026 年 9 月重构后的新 PDF，该文件免费公开。</p>
+<p><strong>实际影响有限</strong>：MOTI 与 MOTG 两份报告的国际部分重合度很高（阿里、腾讯、Prosus、Elekta、洋河等核心标的同时出现在两份中），说明全球折价最深的一批已被捞出。</p>
+<p><strong>指数存在额外筛选门槛</strong>。进入指数还需通过流动性、动量、国家权重上限等筛选。可能存在"晨星给了宽护城河 + 折价很深，但因流动性不达标而不在指数中"的公司，此类无法通过本方法捕获。</p>
+<h3 id="83">8.3 数据时点差异</h3>
+<p>需特别注意 VanEck 报告附注的原文表述：</p>
+<blockquote>
+<p>Holdings as of June 19, 2026. <strong>Price/Fair Value as of June 5, 2026.</strong> Weights as of June 8, 2026.</p>
+</blockquote>
+<p>即 P/FV 的时点是 <strong>2026-06-05</strong> ，而非持仓日 2026-06-19 。引用时请使用正确日期。</p>
+<hr />
+<h2 id="6-pfv-pfv-070">九、6 月官方 P/FV 全表（P/FV ≤ 0.70 部分）</h2>
+<p>以下为晨星官方数据，截至 2026-06-05，未经重新定价。</p>
+<h3 id="moat">美国（MOAT）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>排名</th>
+<th>公司</th>
+<th>代码</th>
+<th>P/FV</th>
+<th>对应上涨空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Nike</td>
+<td>NKE</td>
+<td>0.44</td>
+<td>+127%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>LPL Financial</td>
+<td>LPLA</td>
+<td>0.53</td>
+<td>+89%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Zoetis</td>
+<td>ZTS</td>
+<td>0.57</td>
+<td>+75%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Clorox</td>
+<td>CLX</td>
+<td>0.58</td>
+<td>+72%</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Broadcom</td>
+<td>AVGO</td>
+<td>0.59</td>
+<td>+69%</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Broadridge Financial</td>
+<td>BR</td>
+<td>0.59</td>
+<td>+69%</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Veeva Systems</td>
+<td>VEEV</td>
+<td>0.60</td>
+<td>+67%</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Guidewire Software</td>
+<td>GWRE</td>
+<td>0.62</td>
+<td>+61%</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Tractor Supply</td>
+<td>TSCO</td>
+<td>0.62</td>
+<td>+61%</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Tyler Technologies</td>
+<td>TYL</td>
+<td>0.62</td>
+<td>+61%</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Otis Worldwide</td>
+<td>OTIS</td>
+<td>0.67</td>
+<td>+49%</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Zimmer Biomet</td>
+<td>ZBH</td>
+<td>0.67</td>
+<td>+49%</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Jack Henry</td>
+<td>JKHY</td>
+<td>0.68</td>
+<td>+47%</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Danaher</td>
+<td>DHR</td>
+<td>0.68</td>
+<td>+47%</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Microsoft</td>
+<td>MSFT</td>
+<td>0.69</td>
+<td>+45%</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Estee Lauder</td>
+<td>EL</td>
+<td>0.70</td>
+<td>+43%</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Meta Platforms</td>
+<td>META</td>
+<td>0.70</td>
+<td>+43%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="moti">美国以外（MOTI）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>排名</th>
+<th>公司</th>
+<th>代码</th>
+<th>国家</th>
+<th>P/FV</th>
+<th>对应上涨空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>WiseTech Global</td>
+<td>WTC</td>
+<td>澳洲</td>
+<td>0.29</td>
+<td>+245%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>阿里巴巴</td>
+<td>9988</td>
+<td>中国</td>
+<td>0.49</td>
+<td>+104%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Adyen</td>
+<td>ADYEN</td>
+<td>荷兰</td>
+<td>0.50</td>
+<td>+100%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>莱茵金属</td>
+<td>RHM</td>
+<td>德国</td>
+<td>0.51</td>
+<td>+96%</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Endeavour Group</td>
+<td>EDV</td>
+<td>澳洲</td>
+<td>0.55</td>
+<td>+82%</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Elekta</td>
+<td>EKTA B</td>
+<td>瑞典</td>
+<td>0.55</td>
+<td>+82%</td>
+</tr>
+<tr>
+<td>7</td>
+<td>洋河股份</td>
+<td>002304</td>
+<td>中国</td>
+<td>0.56</td>
+<td>+79%</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Prosus</td>
+<td>PRX</td>
+<td>荷兰</td>
+<td>0.56</td>
+<td>+79%</td>
+</tr>
+<tr>
+<td>9</td>
+<td>百胜中国</td>
+<td>YUMC</td>
+<td>中国</td>
+<td>0.56</td>
+<td>+79%</td>
+</tr>
+<tr>
+<td>10</td>
+<td>腾讯控股</td>
+<td>700</td>
+<td>中国</td>
+<td>0.57</td>
+<td>+75%</td>
+</tr>
+<tr>
+<td>11</td>
+<td>泸州老窖</td>
+<td>000568</td>
+<td>中国</td>
+<td>0.58</td>
+<td>+72%</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Melrose Industries</td>
+<td>MRO</td>
+<td>英国</td>
+<td>0.58</td>
+<td>+72%</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Edenred</td>
+<td>EDEN</td>
+<td>法国</td>
+<td>0.59</td>
+<td>+69%</td>
+</tr>
+<tr>
+<td>14</td>
+<td>山西汾酒</td>
+<td>600809</td>
+<td>中国</td>
+<td>0.60</td>
+<td>+67%</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Universal Music Group</td>
+<td>UMG</td>
+<td>荷兰</td>
+<td>0.60</td>
+<td>+67%</td>
+</tr>
+<tr>
+<td>16</td>
+<td>SAP</td>
+<td>SAP</td>
+<td>德国</td>
+<td>0.61</td>
+<td>+64%</td>
+</tr>
+<tr>
+<td>17</td>
+<td>尤妮佳 Unicharm</td>
+<td>8113</td>
+<td>日本</td>
+<td>0.61</td>
+<td>+64%</td>
+</tr>
+<tr>
+<td>18</td>
+<td>RELX</td>
+<td>REL</td>
+<td>英国</td>
+<td>0.62</td>
+<td>+61%</td>
+</tr>
+<tr>
+<td>19</td>
+<td>五粮液</td>
+<td>000858</td>
+<td>中国</td>
+<td>0.63</td>
+<td>+59%</td>
+</tr>
+<tr>
+<td>20</td>
+<td>保乐力加 Pernod Ricard</td>
+<td>RI</td>
+<td>法国</td>
+<td>0.65</td>
+<td>+54%</td>
+</tr>
+<tr>
+<td>21</td>
+<td>飞利浦</td>
+<td>PHIA</td>
+<td>荷兰</td>
+<td>0.65</td>
+<td>+54%</td>
+</tr>
+<tr>
+<td>22</td>
+<td>DSM-Firmenich</td>
+<td>DSFIR</td>
+<td>荷兰</td>
+<td>0.66</td>
+<td>+52%</td>
+</tr>
+<tr>
+<td>23</td>
+<td>顺丰控股</td>
+<td>002352</td>
+<td>中国</td>
+<td>0.66</td>
+<td>+52%</td>
+</tr>
+<tr>
+<td>24</td>
+<td>利洁时 Reckitt</td>
+<td>RKT</td>
+<td>英国</td>
+<td>0.67</td>
+<td>+49%</td>
+</tr>
+<tr>
+<td>25</td>
+<td>西门子医疗</td>
+<td>SHL</td>
+<td>德国</td>
+<td>0.67</td>
+<td>+49%</td>
+</tr>
+<tr>
+<td>26</td>
+<td>MTU Aero Engines</td>
+<td>MTX</td>
+<td>德国</td>
+<td>0.67</td>
+<td>+49%</td>
+</tr>
+<tr>
+<td>27</td>
+<td>京东</td>
+<td>9618</td>
+<td>中国</td>
+<td>0.67</td>
+<td>+49%</td>
+</tr>
+<tr>
+<td>28</td>
+<td>任天堂</td>
+<td>7974</td>
+<td>日本</td>
+<td>0.68</td>
+<td>+47%</td>
+</tr>
+</tbody>
+</table></div>
+<p>其余国际标的（P/FV 0.71–0.90）包括：Zozo、澳交所 ASX、Symrise、Hensoldt、东方乐园、BAE Systems、Spirax、泰雷兹、伊利股份、贵州茅台、星崎、爱德万测试、海天味业、达索系统、帝亚吉欧、必维国际、索尼、Ferrovial、Brambles、Aristocrat Leisure、LVMH、喜力、安博福、英伟达、GE HealthCare、百威英博 Ambev、罗氏、台积电、GSK、美国合众银行、奥克兰机场等。</p>
+<hr />
+<h2 id="_9">十、数据源清单</h2>
+<p><strong>指数重构报告（免费公开）</strong></p>
+<ul>
+<li>MOAT 美国宽护城河指数重构报告：https://www.vaneck.com/us/en/investments/morningstar-wide-moat-etf-moat/moat-reconstitution.pdf</li>
+<li>MOTI 国际宽护城河指数重构报告：https://www.vaneck.com/us/en/investments/morningstar-international-moat-etf-moti/moti-reconstitution.pdf</li>
+<li>MOTG 全球宽护城河指数重构报告：https://www.vaneck.com/us/en/investments/morningstar-global-wide-moat-etf-motg/motg-reconstitution.pdf</li>
+</ul>
+<p><strong>晨星官网（部分免费）</strong></p>
+<ul>
+<li>宽护城河与低估股票筛选器：https://www.morningstar.com/best-investments/wide-moat-undervalued-stocks</li>
+<li>最值得买的中国股票：https://www.morningstar.com/stocks/best-chinese-stocks-buy</li>
+<li>硕腾护城河仍宽但下调公允价值：https://www.morningstar.com/company-reports/1482475-zoetis-wide-moat-remains-intact-but-weve-lowered-our-fair-value-estimate</li>
+<li>Prosus 初次覆盖，宽护城河，公允价值 €77：https://www.morningstar.com/company-reports/1347341-prosus-nv-initiating-coverage-with-a-wide-moat-and-eur-77-fair-value-estimate</li>
+<li>耐克财报分析：https://www.morningstar.com/stocks/nike-earnings-china-weakness-tariffs-overshadow-progress</li>
+<li>百胜中国投资者日：https://www.morningstar.com/stocks/yum-china-investor-day-offered-upbeat-financial-targets-shares-undervalued</li>
+</ul>
+<p><strong>晨星区域站</strong></p>
+<ul>
+<li>晨星澳洲：WiseTech 股价能否反弹（2026-07-09）：https://www.morningstar.com.au/stocks/chart-week-can-wisetech-shares-finally-bounce-back</li>
+<li>晨星欧洲：莱茵金属财报，公允价值上调：https://global.morningstar.com/en-eu/stocks/rheinmetall-earnings-order-delays-mask-record-backlog-structural-growth-fair-value-raised-7</li>
+<li>晨星北欧：最低估的 9 只北欧股票：https://global.morningstar.com/en-nd/stocks/9-most-undervalued-nordic-stocks</li>
+</ul>
+<p><strong>价格数据</strong></p>
+<ul>
+<li>stockanalysis.com（本币收盘价，用于反推与重新定价）</li>
+</ul>
+<hr />
+<h2 id="_10">十一、使用提示</h2>
+<ol>
+<li>
+<p><strong>名单周转快</strong>。两个月内有 4 只因股价上涨掉出门槛（Adyen、Guidewire、Veeva、LPL Financial），使用前请按最新价格重算。</p>
+</li>
+<li>
+<p><strong>深度折价必有原因</strong>。本名单每一家都有明确的市场担忧：WiseTech 是创始人刑事调查 + AI 恐慌，耐克是转型迟滞，莱茵金属是股价从高位腰斩，Campbell's 是包装食品需求结构性下行，顺丰是快递价格战。折价本身不是买入理由，需要独立判断这些担忧是否被过度定价。</p>
+</li>
+<li>
+<p><strong>注意相关性</strong>。Prosus 超过 80% 净资产值来自腾讯，与腾讯高度相关，同时持有不构成分散。</p>
+</li>
+<li>
+<p><strong>优先用风险调整口径排序</strong>，不要只看原始上涨空间，理由见第四节的超额安全边际表。</p>
+</li>
+<li>
+<p><strong>晨星公允价值不是价格目标</strong>。它是分析师 DCF 模型的输出，会随假设修正而变动——耐克两年内从 $112 降到 $94，硕腾五个月内从 $171 降到 $102（跌 40%）。买入后需持续跟踪公允价值本身的变化方向。</p>
+</li>
+<li>
+<p><strong>注意公允价值的新鲜度</strong>。全表设定日跨度从 2026-01-19（顺丰）到 2026-08-12（腾讯），相差近七个月。陈旧的公允价值配上下跌的股价，会制造出虚假的折价。</p>
+</li>
+</ol>
+<hr />
+<h2 id="2026-08-17">十二、更正记录（2026-08-17）</h2>
+<p>初版发布后，对名单内每家公司分别执行了独立的深度投资研究，过程中获取到晨星筛选器 API 的实测数据（覆盖 33 个交易所、28,938 只有公允价值的标的），并通过券商镜像取得晨星股票分析师报告原件。据此对初版做如下更正。</p>
+<h3 id="121-zoetis">12.1 删除一家：硕腾 Zoetis</h3>
+<p><strong>初版数据错误。</strong> 初版记为公允价值 $140、P/FV 0.53、上涨 +90% 。实测为：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>实测值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>晨星公允价值</td>
+<td><strong>$102</strong></td>
+</tr>
+<tr>
+<td>设定时间戳</td>
+<td><strong>2026-08-07 03:56 UTC</strong></td>
+</tr>
+<tr>
+<td>星级</td>
+<td><strong>四星</strong>（非五星）</td>
+</tr>
+<tr>
+<td>P/FV</td>
+<td>0.723</td>
+</tr>
+<tr>
+<td>上涨空间</td>
+<td><strong>+38.2%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>证据</strong>：晨星分析师报告原件 <code>0P0000XYO2_20260806_RT.pdf</code> 第 1 页页眉逐字为 <code>Fair Value Estimate 102.00 USD / 7 Aug 2026 03:56, UTC / Moat Wide / Uncertainty High</code>，星级字段 <code>QQQQ</code>（四星）。分析师笔记标题为 "Zoetis Earnings: Full Force of Heightened Competition on Display; <strong>Cutting Our Fair Value Estimate</strong>"（Debbie S. Wang，2026-08-07），正文原文："We've lowered our fair value estimate to <strong>$102</strong> per share, <strong>down from $140</strong>"。</p>
+<p><strong>错误成因值得记录</strong>：初版依据的是同一份报告里"down from $140"这半句，取了旧值而非新值。凡遇到 "cutting/raising ... to X, down/up from Y" 句式，必须回到第 1 页页眉核对。</p>
+<p>硕腾距门槛差距很大，且按晨星自身规则（High 不确定性需 P/FV ≤ 0.60 才够五星）也已不满足，予以删除。</p>
+<h3 id="122">12.2 新增两家</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>代码</th>
+<th>公允价值</th>
+<th>现价</th>
+<th>P/FV</th>
+<th>上涨空间</th>
+<th>遗漏原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Campbell's</td>
+<td>NYSE:CPB</td>
+<td>$56</td>
+<td>$23.165</td>
+<td>0.414</td>
+<td><strong>+141.7%</strong></td>
+<td>数据源覆盖不足</td>
+</tr>
+<tr>
+<td>顺丰控股</td>
+<td>HK:6936</td>
+<td>HK$58.9</td>
+<td>HK$32.22</td>
+<td>0.547</td>
+<td><strong>+82.8%</strong></td>
+<td>只查了 A股线（002352，P/FV 0.66 不达标），漏了港股线</td>
+</tr>
+</tbody>
+</table></div>
+<p>Campbell's 是全球折价第二深的宽护城河五星股，比耐克还便宜，初版完全遗漏，这是本次最严重的覆盖缺口。</p>
+<h3 id="123">12.3 六家公允价值修正</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>初版</th>
+<th>实测</th>
+<th>偏差</th>
+<th>初版口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>洋河股份</td>
+<td>¥75.4</td>
+<td><strong>¥78.00</strong></td>
+<td>−3.3%</td>
+<td>反推</td>
+</tr>
+<tr>
+<td>腾讯控股</td>
+<td>HK$795</td>
+<td><strong>HK$780.00</strong></td>
+<td>+1.9%</td>
+<td>反推</td>
+</tr>
+<tr>
+<td>Prosus</td>
+<td>€70.6–77</td>
+<td><strong>€72.00</strong></td>
+<td>—</td>
+<td>公布值误用</td>
+</tr>
+<tr>
+<td>Elekta</td>
+<td>SEK 99–108</td>
+<td><strong>SEK 100</strong></td>
+<td>—</td>
+<td>公布值已过期</td>
+</tr>
+<tr>
+<td>阿里巴巴（港股线）</td>
+<td>未列</td>
+<td><strong>HK$235</strong></td>
+<td>—</td>
+<td>未取到</td>
+</tr>
+<tr>
+<td>硕腾</td>
+<td>$140</td>
+<td><strong>$102</strong></td>
+<td>−27.1%</td>
+<td>读错句子</td>
+</tr>
+</tbody>
+</table></div>
+<p>Prosus 的 €77 经查并非当前公允价值。实测为 €72（2026-03-27 设定，分析师 Verushka Shetty）。<strong>但需诚实说明：无法证实 €77 → €72 的下调是否真实发生过</strong>，因券商镜像只收录美股报告，Prosus 报告原件取不到。独立研究给出的解释更可能成立——<strong>€77 是 bull case 被误标为 fair value</strong>，反推显示 €77 要求腾讯涨到 HK$602 且控股折价归零，而折价归零在 Prosus/Naspers 历史上从未发生。</p>
+<h3 id="124">12.4 阿里巴巴：方向搞反了</h3>
+<p>初版称"公允价值 $241 于 2026-07-06 上调（此前约 $219）"。<strong>实际是下调</strong>：</p>
+<ul>
+<li>完整轨迹：$100 → 128 → 163 → 150 → 156 → 153 → 179 → <strong>267</strong> → <strong>258</strong> → <strong>241</strong></li>
+<li>$258 于 2025-11-18 12:58 UTC 设定，连续 7 份报告维持</li>
+<li>$241 于 <strong>2026-07-06 04:26:16 设定</strong>，<strong>2026-07-08 08:37 道琼斯见报</strong>，标题 "Alibaba ADR Fair-Value Estimate <strong>Cut by 7%</strong> to $241 by Morningstar"</li>
+<li><strong>$219 在晨星 ADR 序列中从未出现过</strong>，系笔者由指数 P/FV 反推的产物</li>
+</ul>
+<p>初版的日期 2026-07-06 本身是对的（那是 FV 设定日），错的只有方向。</p>
+<p><strong>美元降幅低估了真实变化</strong>：$258 → $241 按美元算是 −6.59%，但晨星模型的报告币种是人民币，同期人民币从 7.1104 升到 6.8002（升值 4.56%）。<strong>人民币口径的真实下调是 −10.66%</strong>，约合 5,276 亿元内在价值蒸发。</p>
+<h3 id="125">12.5 方法论教训：反推法的失效场景</h3>
+<p>初版大量使用"本币价格 ÷ 官方 P/FV"反推公允价值。经实测校验，该方法在洋河（−3.3%）、腾讯（+1.9%）上误差可接受，但存在一个致命失效场景：</p>
+<p><strong>当反推值与公布值冲突时，不能据反推值倒推变动方向。</strong> 阿里当时反推得 P/FV 0.566 而晨星实际 0.514，笔者已察觉不一致，却误判为"公允价值上调所致"——方向完全反了。</p>
+<p><strong>修订后的规则</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>用途</th>
+<th>数据源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公允价值、星级、不确定性、护城河、<strong>FV 设定日</strong>、分析师姓名</td>
+<td>晨星筛选器 API（<code>FairValueEstimate</code> / <code>StarRating</code> / <code>FairValueDate</code>）</td>
+</tr>
+<tr>
+<td>调整的<strong>理由</strong>、DCF 分解、十年预测、评级方法论</td>
+<td>分析师报告原件 PDF（API 不携带这些）</td>
+</tr>
+<tr>
+<td>交叉校验</td>
+<td>用 API 的 <code>FairValueDate</code> 比对 PDF 页眉时间戳，不一致即说明 PDF 已过期</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>API 与 PDF 没有口径差异，只有时效差异</strong>——硕腾的 API 字段 <code>FairValueDate = 2026-08-07 03:56:23</code> 与 PDF 页眉 <code>7 Aug 2026 03:56, UTC</code> 精确到秒完全一致，证明两者读的是同一字段。风险全在 PDF 一侧：券商镜像只在有人请求时生成，不是每日归档，任意一份都可能已被后续修订取代。</p>
+<p><strong>反推法自此降级为校验手段，不再作为取数手段。</strong></p>
+<hr />
+<h2 id="vs">十三、分析师公允价值 vs 量化公允价值</h2>
+<p>深度研究中发现，晨星对同一只股票同时维护两套估值：<strong>分析师公允价值</strong>（<code>FairValueEstimate</code>，由具名人类分析师用三阶段 DCF 得出，<strong>星级由它驱动</strong>，也是公开页面展示的那个）与<strong>量化公允价值</strong>（<code>QuantitativeFairValue</code>，纯统计模型输出，对应独立的量化星级）。</p>
+<p>晨星的官方定位是：有分析师覆盖时以分析师口径为准，量化口径用于覆盖分析师够不到的长尾标的。<strong>所以本报告用分析师口径筛选是正确的，不需要改。</strong> 但两套口径的分歧值得单列。</p>
+<h3 id="131">13.1 分歧有多普遍</h3>
+<p>美股样本中同时具备两个口径的 470 只标的统计：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>量化相对分析师的中位偏离</td>
+<td>−1.2%（量化系统性略低）</td>
+</tr>
+<tr>
+<td>绝对偏离中位数</td>
+<td><strong>7.1%</strong></td>
+</tr>
+<tr>
+<td>绝对偏离 &gt; 5% 占比</td>
+<td>63.0%</td>
+</tr>
+<tr>
+<td>绝对偏离 &gt; 10% 占比</td>
+<td>36.0%</td>
+</tr>
+<tr>
+<td>绝对偏离 &gt; 20% 占比</td>
+<td>6.4%</td>
+</tr>
+<tr>
+<td><strong>两套星级不一致占比</strong></td>
+<td><strong>50.9%</strong>（239/470）</td>
+</tr>
+</tbody>
+</table></div>
+<p>两套星级有一半对不上，这是<strong>设计使然，不是数据错误</strong>，不应解读为"晨星内部矛盾"。</p>
+<h3 id="132">13.2 本名单各家双口径对照</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>分析师 FV</th>
+<th>量化 FV</th>
+<th>分歧</th>
+<th>星级 / 量化星</th>
+<th>FV 设定日</th>
+<th>分析师</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WiseTech</td>
+<td>A$130</td>
+<td>未取到</td>
+<td>—</td>
+<td>5 / —</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Campbell's</td>
+<td>$56</td>
+<td>$41.51</td>
+<td>−25.9%</td>
+<td>5 / <strong>3</strong></td>
+<td>2026-03-20</td>
+<td>Erin Lash</td>
+</tr>
+<tr>
+<td>耐克</td>
+<td>$94</td>
+<td>$72.46</td>
+<td>−22.9%</td>
+<td>5 / <strong>3</strong></td>
+<td>2026-07-06</td>
+<td>David Swartz</td>
+</tr>
+<tr>
+<td>莱茵金属</td>
+<td>€2,380</td>
+<td>€1,904.07</td>
+<td>−20.0%</td>
+<td>5 / <strong>3</strong></td>
+<td>2026-03-12</td>
+<td>Loredana Muharremi</td>
+</tr>
+<tr>
+<td>阿里（港股）</td>
+<td>HK$235</td>
+<td>HK$200.90</td>
+<td>−14.5%</td>
+<td>5 / <strong>5</strong></td>
+<td>2026-07-06</td>
+<td>Chelsey Tam</td>
+</tr>
+<tr>
+<td>阿里（ADR）</td>
+<td>$241</td>
+<td>$208.39</td>
+<td>−13.5%</td>
+<td>5 / <strong>5</strong></td>
+<td>2026-07-06</td>
+<td>Chelsey Tam</td>
+</tr>
+<tr>
+<td>Prosus</td>
+<td>€72</td>
+<td>€62.34</td>
+<td>−13.4%</td>
+<td>5 / 5</td>
+<td>2026-03-27</td>
+<td>Verushka Shetty</td>
+</tr>
+<tr>
+<td>洋河股份</td>
+<td>¥78</td>
+<td>¥65.77</td>
+<td>−15.7%</td>
+<td>5 / <strong>3</strong></td>
+<td>2026-04-28</td>
+<td>Jennifer Song</td>
+</tr>
+<tr>
+<td>Elekta</td>
+<td>SEK 100</td>
+<td>SEK 77.55</td>
+<td>−22.5%</td>
+<td>5 / <strong>3</strong></td>
+<td>2026-03-11</td>
+<td>Alex Morozov</td>
+</tr>
+<tr>
+<td>顺丰控股</td>
+<td>HK$58.9</td>
+<td>HK$48.42</td>
+<td>−17.8%</td>
+<td>5 / <strong>3</strong></td>
+<td>2026-01-19</td>
+<td>Chelsey Tam</td>
+</tr>
+<tr>
+<td>腾讯控股</td>
+<td>HK$780</td>
+<td>HK$683.21</td>
+<td>−12.4%</td>
+<td>5 / <strong>5</strong></td>
+<td>2026-08-12</td>
+<td>Ivan Su</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="133">13.3 三条值得注意的读数</h3>
+<p><strong>其一，分析师系统性比量化乐观。</strong> 本名单十家无一例外，量化 FV 全部低于分析师 FV，跨越美、欧、中、澳四个市场和九位不同分析师。若按量化口径重算，多家会跌出 +74% 门槛。</p>
+<p><strong>其二，阿里是少数两套口径互相印证的。</strong> 美股宽护城河 + 分析师五星的样本中，量化模型把 5/7 只降到三星，<strong>阿里是量化也给五星的那一只</strong>。按量化 FV $208.39 算，P/FV = 0.594，仍在 High 不确定性的 0.60 五星门槛之内（很险，但过了）。这是一条独立于分析师叙事的有利证据——量化模型不读故事，只看财务与波动。</p>
+<p><strong>其三，晨星存在一处可验证的内部不一致。</strong> 用晨星自己的腾讯公允价值 HK$780 去重估 Prosus，每股 NAV 应为 €96.89，而晨星给 Prosus 的公允价值只有 €72（隐含 25.7% 控股折价）。反过来，从晨星的 Prosus 公允价值 €72 反解，隐含的腾讯股价是 <strong>HK$546.69</strong> —— 而独立 SOTP 估值的中性值是 HK$544.23，<strong>两者偏差仅 0.5%</strong> 。</p>
+<blockquote>
+<p>换句话说：<strong>HK$780 是叙事，HK$547 才是晨星自己模型的重心。</strong> 晨星在给腾讯单独定价时用了乐观假设，但在给 Prosus 定价时，那套乐观假设并没有被一致地传导过去。</p>
+</blockquote>
+<hr />
+<h2 id="_11">十四、深度研究结论汇总</h2>
+<p>名单内每家公司均已执行完整的四大师框架投资研究（报告见 <code>reports/{公司名}/</code>）。九次独立复核的结论分布值得单独说明：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>独立研究结论</th>
+<th>独立估值中枢</th>
+<th>晨星公允价值</th>
+<th>差异</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WiseTech</td>
+<td><strong>回避</strong></td>
+<td>A$33</td>
+<td>A$130</td>
+<td>晨星高 294%</td>
+</tr>
+<tr>
+<td>Elekta</td>
+<td><strong>回避</strong></td>
+<td>SEK 60.5（概率加权）</td>
+<td>SEK 100</td>
+<td>晨星高 65%</td>
+</tr>
+<tr>
+<td>耐克</td>
+<td><strong>观望</strong></td>
+<td>$45</td>
+<td>$94</td>
+<td>晨星高 109%</td>
+</tr>
+<tr>
+<td>莱茵金属</td>
+<td><strong>观望</strong></td>
+<td>€1,405（概率加权）</td>
+<td>€2,380</td>
+<td>晨星高 69%</td>
+</tr>
+<tr>
+<td>洋河股份</td>
+<td><strong>观望</strong>（不如泸州老窖）</td>
+<td>¥53.42（概率加权）</td>
+<td>¥78</td>
+<td>晨星高 46%</td>
+</tr>
+<tr>
+<td>阿里巴巴</td>
+<td>接近合理定价</td>
+<td>$117–131</td>
+<td>$241</td>
+<td>晨星高 84%</td>
+</tr>
+<tr>
+<td>Prosus</td>
+<td>套利工具非投资</td>
+<td>€56.10（概率加权）</td>
+<td>€72</td>
+<td>晨星高 28%</td>
+</tr>
+<tr>
+<td>腾讯控股</td>
+<td>低估但不到晨星的程度</td>
+<td>HK$544</td>
+<td>HK$780</td>
+<td>晨星高 43%</td>
+</tr>
+<tr>
+<td>硕腾</td>
+<td>小仓位买入</td>
+<td>$95.8</td>
+<td>$102（已删除出名单）</td>
+<td>晨星高 6%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>没有一家给出重仓买入的建议。</strong></p>
+<h3 id="141">14.1 三处对晨星护城河评级的异议</h3>
+<p>独立研究在多数案例中认可了晨星的护城河判断，但有三家提出明确异议：</p>
+<p><strong>莱茵金属：应为 Narrow 而非 Wide。</strong> 理由是其 18.5% 的营业利润率有明确起始日（2022 年 2 月俄乌战争爆发），而同业五十年常态是 9–11%——洛克希德 10.89%、BAE 9.91%、Thales 10.40%、Leonardo 9.00%、Hensoldt 9.45%，且莱茵金属自己 2021 年就是 10.5% 。<strong>收入的故事大概率是真的，利润率的故事大概率是假的，而估值主要建立在利润率上。</strong></p>
+<p><strong>洋河股份：应为 Narrow，且不确定性应为 High 而非 Medium。</strong> 三条理由：定价权检验直接失败（梦6+ 终端 593 元长期倒挂，同期茅台仍能提价、青花汾20 四连涨）；2025 年加权 ROE 仅 <strong>4.62%</strong>，宽护城河不该在一轮正常下行中掉到低于无风险利率；晨星<strong>自家量化护城河得分 0.774，是五家 Wide Moat 白酒里最低</strong>（茅台 0.933 / 汾酒 0.853 / 五粮液 0.848 / 老窖 0.835）——分析师比自家模型激进了一档。</p>
+<p><strong>WiseTech：护城河成立，但估值起点错了。</strong> 独立研究完全同意宽护城河评级，问题出在公司披露的"经营现金流"口径中不含所得税与利息——真实 FY25 自由现金流为 US$217.5m 而非宣称的 US$287.0m，<strong>高估 32%</strong> 。按真实口径，自由现金流收益率仅 2.10%，低于澳洲国债。</p>
+<h3 id="141b">14.1b 洋河：一个已被红队推翻的结论（保留原文以留痕）</h3>
+<blockquote>
+<p><strong>本节结论已于多头论证轮被推翻，请直接看 14.1c 的更正。</strong> 原文保留不删，因为它演示了一个具体的分析错误是如何产生的。</p>
+</blockquote>
+<p>以下为原文——</p>
+<p>晨星给洋河 ¥78、给茅台 ¥1,680，前者折价 48%、后者仅 32% 。但拆开看：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>洋河</th>
+<th>茅台</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公允价值 / 当期利润</td>
+<td><strong>53.3 倍</strong></td>
+<td><strong>25.5 倍</strong></td>
+</tr>
+<tr>
+<td>公允价值 / 五年均值利润</td>
+<td>16.4 倍</td>
+<td>—</td>
+</tr>
+<tr>
+<td>价值构成</td>
+<td><strong>几乎全部来自恢复假设</strong></td>
+<td>几乎不含恢复假设</td>
+</tr>
+</tbody>
+</table></div>
+<p>精算拆解：晨星 ¥78 对应市值 1,175 亿，扣净现金 258.84 亿得经营价值 916 亿，隐含中周期净利润 <strong>45.8–57.3 亿</strong> —— 是 2025 年实际（22.06 亿）的 <strong>2.1–2.7 倍</strong> 。而晨星自己的 Forward P/E 29.15 倍反推出的 2026 年预测利润只有 <strong>20.97 亿</strong> 。</p>
+<blockquote>
+<p><strong>晨星一边预测今年不恢复，一边用一个需要 2.2 倍恢复的数字做公允价值。</strong></p>
+</blockquote>
+<p><strong>结论：折价深度 ≈ 假设的恢复幅度。</strong> 在同一套筛选里，一家"折价 48%"的公司可能只是分析师对它的恢复假设更激进，而不是它更便宜。这个陷阱对本名单里所有处于业绩低谷的标的都适用。</p>
+<p>另有一处独立发现纠正了市场普遍误读：年报第 129 页附注显示，被广泛引用的"合同负债 75.29 亿"中，<strong>44.65 亿是应付经销商未结算折扣（即欠经销商的钱，占收入 23.24%）</strong>，真实预收货款仅 30.64 亿、同比 <strong>−48.78%</strong>，而表观跌幅只有 −27.21% 。2026Q1 合同负债仍同比 −22.91% —— <strong>利润表跌幅在收窄，渠道领先指标没有收窄。</strong></p>
+<p>以及高股息安全垫已经消失：2026-01-24《现金分红回报规划（2025-2027）》取消了旧规划"每年不低于 70 亿元"的绝对下限，改为"不低于净利润 100%"。2025 年度实际分红 22.14 亿，比旧规划应付的少 <strong>47.86 亿</strong>，每股派息从 4.647 元降至 1.47 元（<strong>−68.4%</strong>）。股息率 3.69% 为白酒板块垫底（老窖 6.65%、五粮液 6.99%）。真正的安全垫在资产负债表——每股净现金 ¥17.18，占股价 43.1% 。</p>
+<hr />
+<h3 id="141c">14.1c 更正：上一节的分母选错了，结论应当反转</h3>
+<p>多头红队指出，14.1b 的核心论证"晨星 FV = 53.3 倍当期利润，价值全部来自恢复假设"<strong>使用了 2025 年这个灾难年做分母</strong>。周期股在盈利底部 PE 必然畸高，这是周期股估值的常识性陷阱，而非发现。</p>
+<p>换用周期中性口径后，<strong>结论完全反转</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>口径</th>
+<th>洋河</th>
+<th>茅台</th>
+<th>谁更便宜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>晨星公允价值 / <strong>当期</strong>利润</td>
+<td>53.3x</td>
+<td>25.5x</td>
+<td>茅台（14.1b 的结论）</td>
+</tr>
+<tr>
+<td>晨星公允价值 / <strong>五年均值</strong>利润</td>
+<td><strong>16.42x</strong></td>
+<td><strong>29.29x</strong></td>
+<td><strong>洋河，便宜 43.9%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>现价口径下的 EV / 五年均值利润：<strong>洋河 4.77x</strong>、五粮液 6.50x、泸州老窖 8.98x、山西汾酒 13.71x、贵州茅台 21.87x —— <strong>洋河是板块最便宜的</strong>。EV/五年均值收入 1.25x、PB 1.22 同样是板块最低。</p>
+<p><strong>14.1b 的"折价深度 ≈ 假设的恢复幅度"这一推论，作废。</strong></p>
+<h3 id="141d">14.1d 护城河异议也被推翻，且证据具有普遍意义</h3>
+<p>14.1 节曾据"2025 年加权 ROE 仅 4.62%"主张洋河护城河应降为 Narrow。红队用历史数据证明<strong>该证据没有判别力</strong>：</p>
+<ul>
+<li>洋河 <strong>2011–2023 连续 13 年加权 ROE ≥ 18.55%</strong>，15 年均值 24.87%、10 年均值 19.21%</li>
+<li>上一轮行业危机（2013–2015）中，<strong>洋河 ROE 均值 27.11%、从未跌破 24.53%；同期泸州老窖跌到 8.65%、山西汾酒跌到 9.28%</strong> —— 而这两家今天都是晨星 Wide Moat</li>
+</ul>
+<blockquote>
+<p><strong>用单年谷底 ROE 判护城河，会判掉已知的宽护城河公司。</strong></p>
+</blockquote>
+<p>ROE 还被现金山压低：净现金占归母净资产 52.6%，剔除后五年平均经营性资本回报率约 50%（2023 年 67.94%）。</p>
+<p>"梦6+ 终端倒挂"同理无判别力：普五出厂价 1,019 元 vs 批价 730–830 元、倒挂 19–28%，五粮液已把开票价下调至 900 元（实质降价 12%），茅台1935 打款价从 798 元砍到 668 元。<strong>该测试会同时判掉五粮液。</strong></p>
+<p>另需更正一处事实错误：14.1b 引用的"2025Q4 单季收入仅 11.21 亿"属实，但衍生的"断崖式下滑"表述有误——<strong>2024Q4 为 13.60 亿，同比 −17.6%</strong>；2025Q4 归母 −17.69 亿，较 2024Q4 的 −19.06 亿<strong>减亏 1.37 亿</strong>。洋河 Q4 自 2023 年起连续三年亏损，是结构性季节特征而非新增恶化。</p>
+<h3 id="141e">14.1e 合同负债拆分：数据准确，会计推论错误</h3>
+<p>14.1b 引用的"合同负债 75.29 亿中 44.65 亿为应付经销商未结算折扣"这一发现，经红队独立下载年报 PDF（3.71MB / 166 页）并以 pdftotext 提取全文核对，<strong>附注 24 的六个数字零偏差，拆分完全准确</strong>。</p>
+<p><strong>但其会计推论不成立。</strong> 年报第 114 页收入政策原文："对当期已经发生期末尚未结算的折扣<strong>从销售收入中计提</strong>，计入合同负债核算"—— 该 44.65 亿<strong>已从 192.11 亿收入中扣除</strong>，未来结算只走资产负债表，不会对利润表造成第二次打击。原文"将在未来年度冲减收入"的表述错误。</p>
+<p>真实预收货款 30.64 亿、同比 −48.78% 这一条<strong>仍然成立</strong>，且是渠道端最硬的负面证据。</p>
+<h3 id="142-142b">14.2 一个跨报告互证的发现（<strong>结论已被推翻，见 14.2b</strong>）</h3>
+<p>莱茵金属与其国防预算专项研究<strong>各自独立地</strong>发现了同一处矛盾：</p>
+<p>晨星上调公允价值的核心理由是"德国采购正从框架合同转向带 20–30% 预付款的固定合同"。但——</p>
+<ul>
+<li>固定合同的财务标志是预付款流入，而莱茵金属 H1 2026 经营性自由现金流为 <strong>−€16.16 亿</strong>（去年同期 −€6.31 亿），公司自己归因为"预付款的时点变化"</li>
+<li>2026 年德国实际签署的大单仍以框架合同为主：FV-014 巡飞弹 €24 亿框架仅提取 €3 亿（12.5%），155mm 炮弹 €8.8 亿为框架扩容</li>
+<li>公司半年报原文承认，其 €805 亿订单储备"<strong>包含来自现有框架协议的预期提取量</strong>"</li>
+</ul>
+<p><strong>晨星论点的方向是对的（BwPBBG 已于 2026-01-15 立法通过），但"已完成转换"的表述与可观察的合同与现金流事实冲突。</strong></p>
+<h3 id="142b-142">14.2b 更正：框架转固定合同确实在发生，14.2 节读反了</h3>
+<p>多头红队回到莱茵金属半年报的<strong>原始分部与订单结构数据</strong>，推翻了 14.2 节的结论：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>订单结构</th>
+<th>上年</th>
+<th>本期</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>固定订单</strong></td>
+<td>€32,266m</td>
+<td><strong>€56,342m</strong></td>
+<td><strong>+74.6%</strong></td>
+</tr>
+<tr>
+<td>框架协议</td>
+<td>—</td>
+<td>—</td>
+<td>+1.8%</td>
+</tr>
+<tr>
+<td>固定订单占比</td>
+<td>58%</td>
+<td><strong>70%</strong></td>
+<td><strong>+12pp</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>这正是"框架转固定"正在发生的证据。</strong> 14.2 节据"2026 年大单仍以框架为主"判定该论点未获验证，是只看了个别合同、没看订单簿的结构变化。</p>
+<p>现金流那条同样读反了。半年报 p14 的推导表拆开：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>金额</th>
+<th>占 −€16.16 亿的比重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营运资本占用</td>
+<td>−€1,918m</td>
+<td>118.7%</td>
+</tr>
+<tr>
+<td>资本开支</td>
+<td>−€374m</td>
+<td>23.1%</td>
+</tr>
+<tr>
+<td><strong>经营引擎</strong></td>
+<td><strong>+€688m</strong></td>
+<td>同比多 €250M</td>
+</tr>
+</tbody>
+</table></div>
+<p>资本开支占销售比<strong>从 9.8% 降到 7.7%</strong>；<strong>合同负债（即预付款余额）增加 €623M</strong>。预付款没有消失，是营运资本扩张吃掉了现金——这是高速扩产期的正常特征，不是"预付款叙事被证伪"。</p>
+<p><strong>14.2 节"晨星论点与可观察事实冲突"的结论，作废。</strong></p>
+<h3 id="142c">14.2c 更正：护城河异议的核心证据也不成立</h3>
+<p>14.1 节据"同业五十年常态 9–11%，公司自己 2021 年也是 10.5%"主张莱茵金属护城河应降为 Narrow。两条证据均被推翻：</p>
+<p><strong>其一，"9–11% 是行业常态"混淆了合同机制。</strong> 通用动力 FY2025 10-K 的内部分部对照——同一家公司、同一批政府客户，差别只在合同结构：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>通用动力分部</th>
+<th>合同结构</th>
+<th>营业利润率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Combat Systems（装甲车 + 弹药）</td>
+<td><strong>87.94% 固定价格</strong></td>
+<td><strong>14.40%</strong></td>
+</tr>
+<tr>
+<td>Technologies</td>
+<td>58.6% 非固定价格</td>
+<td>9.48%</td>
+</tr>
+<tr>
+<td>Marine Systems</td>
+<td><strong>52.17% 成本报销</strong></td>
+<td><strong>7.30%</strong></td>
+</tr>
+<tr>
+<td>集团加权</td>
+<td>—</td>
+<td>10.31%</td>
+</tr>
+</tbody>
+</table></div>
+<p>洛克希德 39.77% 收入为成本报销合同，其 10-K 原文明确费率设有上限。<strong>所谓"行业常态 9–11%"是混入成本加成合同后的集团加权数；产品型固定价格防务制造的常态在 14% 以上。</strong></p>
+<p><strong>其二，"公司自己 2021 年也是 10.5%"用错了口径。</strong> 那是<strong>含汽车业务的集团数</strong>。FY2021 年报原始分部表：汽车两分部（€1,966m 销售）利润率 7.83%，<strong>弹药分部 17.68%</strong>（2020 年 15.35%），防务三分部 12.13% 。<strong>战前基线是 15–18%，不是 10.5%。</strong></p>
+<p><strong>14.1 节对莱茵金属的护城河异议，撤回。</strong></p>
+<h3 id="143">14.3 晨星在自己的体系内也是异常值</h3>
+<p>通过晨星筛选器 API 实时拉取其覆盖的防务股 P/FV：RTX 1.042、Kongsberg 1.023、通用动力 0.972、Hensoldt 0.961、洛克希德 0.936、诺斯罗普 0.930、Leonardo 0.881 —— <strong>全部落在 0.88–1.04 区间，唯独莱茵金属在 0.505</strong> 。</p>
+<p>同时其量化模型给 €1,904.07、分析师给 €2,380，分歧 <strong>25.0%</strong>，而其他防务股两模型分歧只有 2–10% 。</p>
+<p><strong>一家公司同时是板块内唯一的深度折价股、且是内部分歧最大的一只，这本身就是需要解释的现象。</strong></p>
+<h3 id="144">14.4 同业股价证伪了"停火杀估值"的解释</h3>
+<p>莱茵金属股价腰斩常被解释为"市场在给欧洲防务周期结束定价"。同期同业表现直接证伪：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>同期涨跌</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>洛克希德</td>
+<td><strong>+37.5%</strong></td>
+</tr>
+<tr>
+<td>BAE Systems</td>
+<td><strong>+28.4%</strong></td>
+</tr>
+<tr>
+<td>Leonardo</td>
+<td><strong>+25.0%</strong></td>
+</tr>
+<tr>
+<td>Thales</td>
+<td><strong>+13.9%</strong></td>
+</tr>
+<tr>
+<td>Hensoldt</td>
+<td><strong>+10.9%</strong></td>
+</tr>
+<tr>
+<td><strong>莱茵金属</strong></td>
+<td><strong>−25.1%</strong></td>
+</tr>
+<tr>
+<td>RENK</td>
+<td>−15.2%</td>
+</tr>
+</tbody>
+</table></div>
+<p>下跌是个股原因：从 9.5 倍市销率的极端估值回归、H1 自由现金流 −€16.16 亿、六个月净债务恶化 €31.33 亿、Q1 每股收益低于预期 59%、F126 项目被单方面取消（证伪了"订单储备 = 确定性"）。</p>
+<p>用统一折现口径反推：现价 €1,210.80 隐含 2030 年收入 €383 亿（公司目标的 77%），卖方共识 €1,677 隐含 €512 亿（102%），晨星 €2,380 隐含 <strong>€705 亿 —— 超额完成公司自己目标的 41%</strong> 。</p>
+<blockquote>
+<p><strong>市场在说"你的五年计划我信四分之三"，不是"这家公司完了"。</strong></p>
+</blockquote>
+<h3 id="145">14.5 一处已撤回的推论，以及一处已更正的表述</h3>
+<p><strong>撤回的推论</strong>：本报告曾据"晨星公允价值 ≈ 各 agent 的乐观情景"推断晨星系统性偏乐观。<strong>该推论是循环论证，现予撤回。</strong></p>
+<p>原因是各 agent 的研究任务由笔者拟定，而九份任务描述中有七份把"质疑晨星"直接写进了目标（例如"晨星是不是错了""重点做反面检验——聪明人为什么不买""是否价值陷阱""认真论证这次不一样是否成立"），且 investment-research 框架本身又叠加了一层芒格反向思考。<strong>在双重看空框架下，用 agent 自己定义的"乐观情景"当标尺去衡量晨星，是同一个偏差测量了两遍，不构成独立证据。</strong> 此外，全程没有任何一个 agent 被要求做多头论证。</p>
+<p><strong>更正的表述</strong>：本报告曾以"没有一家值得重仓"概括九份研究。<strong>该概括不准确。</strong> 用各 agent 自己的概率加权中枢对比现价：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>独立中枢</th>
+<th>现价</th>
+<th>独立口径上涨空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prosus</td>
+<td>€56.10</td>
+<td>€37.395</td>
+<td><strong>+50.0%</strong></td>
+</tr>
+<tr>
+<td>洋河股份</td>
+<td>¥53.42</td>
+<td>¥39.82</td>
+<td><strong>+34.2%</strong></td>
+</tr>
+<tr>
+<td>硕腾（已出名单）</td>
+<td>$97.05</td>
+<td>$73.79</td>
+<td><strong>+31.5%</strong>（含三年股息 +40.1%）</td>
+</tr>
+<tr>
+<td>莱茵金属</td>
+<td>€1,489（含息）</td>
+<td>€1,202</td>
+<td><strong>+23.9%</strong></td>
+</tr>
+<tr>
+<td>腾讯控股</td>
+<td>HK$544.23</td>
+<td>HK$440</td>
+<td><strong>+23.7%</strong></td>
+</tr>
+<tr>
+<td>Elekta</td>
+<td>SEK 60.5</td>
+<td>SEK 53.80</td>
+<td>+12.5%</td>
+</tr>
+<tr>
+<td>耐克</td>
+<td>$45</td>
+<td>$40.73</td>
+<td>+10.5%</td>
+</tr>
+<tr>
+<td>阿里巴巴</td>
+<td>$117–131</td>
+<td>$123.81</td>
+<td>−5.5% ~ +5.8%</td>
+</tr>
+<tr>
+<td>WiseTech</td>
+<td>A$33</td>
+<td>A$42.27</td>
+<td><strong>−21.9%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>五家有 24%–50% 的独立口径上涨空间。</strong> 各 agent 给出"观望"，多数是因为在自己的中枢之上还要求 30% 安全边际——那是<strong>仓位规则</strong>，不是"这门生意不好"的判断。耐克那份写得最清楚：中枢 $45，要求买入价 ≤ $31.5。把这类结论转述为"不值得重仓"属于偷换。</p>
+<p><strong>经此更正，真正站得住的只有两条</strong>：WiseTech 是九家中唯一被独立研究认定为绝对高估的（证据为公司口径现金流不含税与利息，真实自由现金流收益率 2.10% 低于澳洲国债）；阿里接近合理定价。其余七家的负面表述均过头。</p>
+<hr />
+<h2 id="_12">十五、晨星公允价值的可信度：十年实盘检验</h2>
+<p>上一节撤回了基于 agent 内部对照的推断。本节改用<strong>外部的、不依赖本报告任何主观判断的证据</strong>。</p>
+<h3 id="151">15.1 最直接的检验对象</h3>
+<p>VanEck MOAT ETF 跟踪的正是"美国宽护城河中 P/FV 最低的一批"——<strong>与本报告的筛选逻辑完全一致</strong>。它是这套方法的真金白银实盘记录。MOTI 是其国际版。</p>
+<p>数据口径：月度调整收盘价（含股息再投资），2016-10 至 2026-08，约 9.8 年。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>累计回报</th>
+<th>年化</th>
+<th>最大回撤</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MOAT</strong>（美国宽护城河最低 P/FV）</td>
+<td>+287.9%</td>
+<td><strong>+14.78%</strong></td>
+<td>−21.2%</td>
+</tr>
+<tr>
+<td>标普500（SPY）</td>
+<td>+326.9%</td>
+<td><strong>+15.91%</strong></td>
+<td>−23.9%</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><strong>年化落后 1.12pp</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>MOTI</strong>（国际宽护城河最低 P/FV）</td>
+<td>+86.0%</td>
+<td><strong>+6.46%</strong></td>
+<td>−30.2%</td>
+</tr>
+<tr>
+<td>全球除美（ACWX）</td>
+<td>+149.3%</td>
+<td><strong>+9.73%</strong></td>
+<td>−28.3%</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><strong>年化落后 3.27pp</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>逐年胜率：MOAT 跑赢标普 <strong>5/9 年（56%）</strong>，接近抛硬币；MOTI 跑赢基准 <strong>3/9 年（33%）</strong>。</p>
+<h3 id="152">15.2 但超额收益的分布有明确结构</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>MOAT 相对标普超额</th>
+<th>市场环境</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2018</td>
+<td><strong>+3.3pp</strong></td>
+<td>下跌年</td>
+</tr>
+<tr>
+<td>2022</td>
+<td><strong>+4.5pp</strong></td>
+<td>下跌年</td>
+</tr>
+<tr>
+<td>2023</td>
+<td><strong>+5.7pp</strong></td>
+<td>反弹年</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>+1.5pp</td>
+<td>普涨</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>+3.6pp</td>
+<td>普涨</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>−3.5pp</td>
+<td>科技股狂欢</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>−4.6pp</td>
+<td>科技股狂欢</td>
+</tr>
+<tr>
+<td><strong>2024</strong></td>
+<td><strong>−14.2pp</strong></td>
+<td>大型科技股垄断涨幅</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>−4.5pp</td>
+<td>同上</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>该策略在下跌年跑赢，在少数龙头垄断涨幅的年份被碾压。</strong> 这符合其构造逻辑——P/FV 筛选天然剔除最贵的赢家，而过去十年恰恰是"最贵的赢家继续赢"的十年。美股口径的最大回撤还略优于标普。</p>
+<p>准确的表述不是"晨星公允价值没用"，而是：<strong>它是一套均值回归工具，而过去十年是均值回归最不灵的十年。</strong></p>
+<h3 id="153">15.3 公允价值本身的稳定性</h3>
+<p>阿里巴巴的晨星公允价值轨迹（经 24 份分析师报告原件页眉逐份核对）：</p>
+<pre><code>$100 (2024-08) → 128 → 163 → 150 → 156 → 153 → 179 → $267 (2025-09) → 258 → $241 (2026-07)
+</code></pre>
+<p><strong>13 个月内从 $100 到 $267，区间 2.67 倍。</strong> 一家成熟公司的内在价值不会在 13 个月内变动 2.67 倍——该数列中相当一部分是在跟踪情绪与新闻，而非测量内在价值。</p>
+<p>硕腾：五个月从 $171 砍到 $102（−40.4%），同期股价 $125.64 → $77.27（−38.5%），<strong>几乎 1:1 跟随股价</strong>。</p>
+<p>但需注意反例：阿里同期公允价值 −9.7% 而股价 −29.4%，耐克公允价值 −16.1% 而股价约 −49%，WiseTech 公允价值 −5.8% 而股价约 −70% 。<strong>四家里三家，晨星在股价崩塌时基本没动公允价值。</strong> 深度折价恰恰是这种"不动"制造出来的。</p>
+<p><strong>所以晨星公允价值的特征是"黏"，不是"追涨杀跌"。</strong> 而黏本身是中性的——可能是有定力（市场错了它对），也可能是锚定不放（现实变了它没跟上）。本报告的证据不足以区分这两者。</p>
+<h3 id="154">15.4 分用途的可信度判断</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>用途</th>
+<th>可信度</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>护城河评级</strong></td>
+<td>较高</td>
+<td>九次独立复核仅两次提出异议（莱茵金属、洋河）</td>
+</tr>
+<tr>
+<td><strong>当"筛选线索"用</strong></td>
+<td>有用</td>
+<td>它确实能把统计意义上便宜的东西捞出来</td>
+</tr>
+<tr>
+<td><strong>当"合理价值"用，据此计算安全边际</strong></td>
+<td><strong>不可靠</strong></td>
+<td>修订频繁、幅度大，阿里 13 个月区间 2.67 倍</td>
+</tr>
+<tr>
+<td><strong>按折价排序直接建仓</strong></td>
+<td><strong>十年实盘不如买指数</strong></td>
+<td>MOAT 年化落后 1.12pp，MOTI 落后 3.27pp</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="155">15.5 本节未能做到的部分</h3>
+<p><strong>MOAT 的业绩测的是"护城河评级 + 公允价值 + 指数规则"的组合，无法把公允价值的准确性单独剥离。</strong> 指数还含约 0.46% 管理费与换手成本，也会拖累业绩。</p>
+<p><strong>样本窗口仅十年</strong>（stockanalysis 历史数据上限），而 MOAT 实际 2012 年 4 月上市，2012–2016 段未纳入检验。</p>
+<p><strong>真正干净的检验尚未进行</strong>：取晨星历史公允价值全库，测算"设定后 1/3/5 年，股价相对当时公允价值的实际收敛程度"——系统性够不到即为偏乐观，超过即为偏保守。该检验需要晨星历史数据库权限，本次未能完成。</p>
+<p><strong>因此本节的结论应严格限定为</strong>：这套方法在过去十年的实盘中未能战胜指数，且公允价值数值本身不够稳定，故不适合当作精确的价值锚。<strong>它不构成"晨星公允价值系统性偏高"的证明。</strong></p>
+<hr />
+<h2 id="_13">十六、这份筛选的正确用法</h2>
+<p><strong>当线索用，不当答案用。</strong></p>
+<p>十家公司在深度复核后，估值中枢全部低于晨星公允价值，差异从 28% 到 294% 不等。但同时，五家仍有 24%–50% 的独立口径上涨空间。这两句话不矛盾——<strong>它说明晨星的折价幅度需要自己重算，但折价本身往往是真的</strong>。</p>
+<p>统计意义上的便宜，与生意意义上的便宜，是两回事。这份名单只回答第一个问题。</p>
+<hr />
+<h2 id="_14">十七、多头红队轮：五份对抗性检验</h2>
+<h3 id="171">17.1 为什么要跑这一轮</h3>
+<p>第十四节 14.5 已说明：九份深度研究的任务描述由笔者拟定，其中七份把"质疑晨星"直接写进目标，且无一份要求多头论证，构成系统性偏差。承认偏差不等于修正偏差，故对独立口径上涨空间 &gt;23% 的四家（Prosus、洋河、腾讯、莱茵金属）、以及唯一被判绝对高估的 WiseTech，各派一个红队做对抗性检验。</p>
+<p><strong>红队的任务定义刻意不是"论证买入"，而是</strong>：攻击既有看空报告的每一条论断，并被明确告知——"若某条看空论据经检验站得住，你必须明说它站得住，不许为了立场硬拗；一份攻击 8 条、推翻 3 条、承认 5 条的报告，比全面翻案的报告有价值得多。"</p>
+<p>每份红队报告均须产出<strong>逐条裁决表</strong>（推翻 / 部分成立 / 完全成立 + 证据），并同样通过 <code>report_audit.py</code> 15% 抽样准出。</p>
+<h3 id="172">17.2 结果总览</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>看空中枢</th>
+<th><strong>红队中枢</strong></th>
+<th>晨星</th>
+<th>现价</th>
+<th>红队口径上涨空间</th>
+<th>结论是否改变</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prosus</td>
+<td>€56.10</td>
+<td><strong>€55</strong></td>
+<td>€72</td>
+<td>€37.395</td>
+<td>+47%</td>
+<td>否（仓位建议改变）</td>
+</tr>
+<tr>
+<td>洋河股份</td>
+<td>¥53.42</td>
+<td><strong>¥64.86</strong></td>
+<td>¥78</td>
+<td>¥39.82</td>
+<td><strong>+62.9%</strong></td>
+<td><strong>是</strong></td>
+</tr>
+<tr>
+<td>腾讯控股</td>
+<td>HK$544</td>
+<td><strong>HK$640.61</strong></td>
+<td>HK$780</td>
+<td>HK$445.60</td>
+<td><strong>+43.8%</strong></td>
+<td><strong>是</strong></td>
+</tr>
+<tr>
+<td>莱茵金属</td>
+<td>€1,405</td>
+<td><strong>€1,553.57</strong></td>
+<td>€2,380</td>
+<td>€1,202</td>
+<td>+36.7%（四年年化 8.14%）</td>
+<td>否</td>
+</tr>
+<tr>
+<td>WiseTech</td>
+<td>A$33</td>
+<td><strong>A$31.09</strong></td>
+<td>A$130</td>
+<td>A$42.27</td>
+<td><strong>−26%</strong></td>
+<td>否（回避获双重确认）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>五次里只有两次改变了结论。</strong> 红队推翻了大量具体论据，但在 Prosus、莱茵金属、WiseTech 三家维持原判——其中 Prosus 与 WiseTech 的红队中枢<strong>比看空方还低</strong>。</p>
+<blockquote>
+<p>这个分布比"全部翻案"或"全部维持"都更可信：说明这套对抗机制确实在筛真伪，而不是在切换立场。</p>
+</blockquote>
+<h3 id="173">17.3 五家各自最重要的一处推翻</h3>
+<p><strong>Prosus —「套利不是投资」被数学推翻。</strong> 折价<strong>恒定不变</strong>时，每股 NAV 仍以 <code>a = f·d/(1−f)</code> = 2.16%/年 增厚。压力测试：折价永久锁死 38.29% 且全部资产零回报，五年仍 +11.3%；折价锁死 + 腾讯年涨 8%，五年 +66.9% 优于直接持腾讯的 +46.9% 。<strong>回报不依赖折价收敛。</strong> 另发现看空方模型把增厚率符号设反——折价越阔，同样美元买到的股份占比越高、增厚越快，而看空方在悲观情景里设了最低增厚率。</p>
+<p><strong>洋河 —「折价更深是模型伪像」的分母选错了。</strong> 详见 14.1c。换五年均值利润口径后结论反转：晨星 FV/五年均利，洋河 16.42x vs 茅台 29.29x 。</p>
+<p><strong>腾讯 — 看空方的"中性"其实是深度看空。</strong> 把其 SOTP 从 EV/Sales 换算成 EV/非IFRS经营盈利：悲观 8.14x / 中性 <strong>11.78x</strong> / 乐观 15.83x，而晨星 HK$780 对应 17.43x 。看空方自己写"17.4 倍并不离谱"，却给了一个比"不离谱"低 32.4% 的中枢且从未解释差额来源——因为 EV/Sales 口径把它藏住了。另查出方法论硬伤：用网易 <strong>P/S 4.76</strong> 去锚定 <strong>EV/Sales</strong>，而网易 EV/Sales 实为 3.42（净现金占市值 29%），凭空多给自己 39% 的"保守空间"。</p>
+<p><strong>莱茵金属 — cost-plus 论证坐实。</strong> 详见 14.2c 的通用动力内部分部对照。</p>
+<p><strong>WiseTech — 看空方混淆了两件不相干的事。</strong> 现金流口径造假<strong>完全成立且更严重</strong>（红队找到零误差路径：797.8 − 361.3 = 436.50 精确等于公司口径，436.50 − 69.5 = 367.00 精确等于法定 OCF；四个报告期全部吻合，1H26 高估已达 <strong>42.1%</strong>）。<strong>但这条完全不能解释 A$33 与 A$130 的差距</strong>——用税后口径干净的模型，仅凭晨星的 20% 收入增速即可推出 A$135。<strong>分歧 100% 来自增速假设，0% 来自现金流口径。</strong> 看空方把"公司披露不老实"与"晨星模型算错了"混为一谈，两者没有因果关系。</p>
+<h3 id="174">17.4 红队主动加重的看空证据</h3>
+<p>红队并非单向翻案，三份主动补强了对多头不利的证据：</p>
+<ul>
+<li><strong>腾讯</strong>：权益变动表显示 H1'26 回购 RMB 214.49 亿 vs H1'25 的 336.47 亿，<strong>同比 −36.25%</strong>；Q2 摊薄股数同比仅降 1.02%（历史 2%+）。回购减速不是 8 月 12 日电话会之后才发生，<strong>上半年就在发生</strong>。</li>
+<li><strong>Prosus</strong>：腾讯自身回购被错误计入 Prosus 超额收益（属共享收益，应从多头论据中删除）；净债务 −$64 亿可能意味着 $50 亿回购是<strong>能力上限而非主动选择</strong>。</li>
+<li><strong>WiseTech</strong>：1H26 演示第 23 页同一张幻灯片，左侧写"CargoWise +14%~21%"，右侧写"1H/2H skew 与 FY25 一致"——后者反推 FY26 仅 <strong>+12.27%</strong>，低于自身指引下沿。</li>
+</ul>
+<h3 id="175">17.5 贯穿五份的元发现</h3>
+<p><strong>看空报告的数据基本都是对的，错的是推论与方法。</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>数据</th>
+<th>推论/方法错误</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prosus</td>
+<td>€37.395 &lt; €46.92 与回购数据都算对了</td>
+<td>从未把两者连起来</td>
+</tr>
+<tr>
+<td>洋河</td>
+<td>合同负债拆分经年报 PDF 逐字核实 100% 准确</td>
+<td>用灾难年做 PE 分母；会计推论错（该项已从收入计提扣除）</td>
+</tr>
+<tr>
+<td>腾讯</td>
+<td>分部收入加总与 stockanalysis 零偏差</td>
+<td>把网易 P/S 当 EV/Sales 用</td>
+</tr>
+<tr>
+<td>莱茵金属</td>
+<td>H1 现金流 −€16.16 亿属实</td>
+<td>未拆解构成，把营运资本扩张读成经营恶化</td>
+</tr>
+<tr>
+<td>WiseTech</td>
+<td>现金流口径造假完全属实</td>
+<td>把它当成晨星差距的解释，实则无因果关系</td>
+</tr>
+</tbody>
+</table></div>
+<p>这与笔者自身犯的错误同构：<strong>拿到了对的数字，在从数字到结论那一步跳偏了。</strong></p>
+<h3 id="176">17.6 经两轮对撞后的仓位判断</h3>
+<p>红队给出的仓位建议远比"重仓/不重仓"细致，且全部附可证伪条件：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>仓位建议</th>
+<th>关键触发条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>腾讯</strong></td>
+<td><strong>10–12%</strong>（四分之一 Kelly 16.6%，前提 2–6 联合概率 30%）</td>
+<td>升至 &gt;15% 需：2027 年报资本开支指引确认回落 / 国际游戏止跌 / 股价跌至 HK$411（52 周低点，核心 PE 9.47x），现价距此仅 7.8%</td>
+</tr>
+<tr>
+<td><strong>洋河</strong></td>
+<td><strong>中报前不重仓</strong>；三条全中可建至 10–15%</td>
+<td>2026 半年报（<strong>8 月 27 日</strong>）：Q2 收入 ≥37.30 亿转正 + 预收货款环比回升 + 经销商净减 &lt;150 家</td>
+</tr>
+<tr>
+<td><strong>Prosus</strong></td>
+<td>独立新仓 &gt;10% <strong>不成立</strong>（联合概率 30–35%）；作为<strong>已有腾讯仓位的替代</strong>成立（55–60%），上限为腾讯仓位的 50%</td>
+<td>折价三年内不超 <strong>42.1%</strong>（42% 在 2026-03 刚被触及，是论文最薄处）；注销率维持 ≥5%（每周可验证）</td>
+</tr>
+<tr>
+<td><strong>莱茵金属</strong></td>
+<td><strong>3–5% 观察仓</strong>（联合概率 13–18%）</td>
+<td>加至 10%+ 门槛 €1,045，满仓门槛 €940（仍低于现价 21.8%）</td>
+</tr>
+<tr>
+<td><strong>WiseTech</strong></td>
+<td><strong>任何价格都不建议 &gt;10%</strong></td>
+<td>赔率 A$42.27 = 0.20:1；A$28 时首次转正为 1.07:1。3.2× 杠杆 + 未了结刑事调查 + 临时 CFO 与该仓位不匹配</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>没有一家的红队给出无条件重仓。</strong> 但也没有一家的红队认为该名单毫无价值——五份全部给出了明确的、可验证的入场条件与价位。</p>
+<h3 id="177">17.7 这一轮仍然没有解决的问题</h3>
+<p><strong>红队的独立性有限。</strong> Prosus 红队自陈：本次抽检大量数据转引自已通过抽检的看空报告，"验证的主要是有没有转引错"。腾讯红队同样标注：30 个抽检点中仅 17 个是外部可验证事实，抽检没有也不可能核验其最关键的四个输入（倍数、两条增速、十条前提概率）。</p>
+<p><strong>两轮都没有做的</strong>：晨星历史公允价值的收敛度回测（见 15.5 节）。在那之前，"晨星偏乐观"仍然只是观察，不是结论。</p>
+<p><strong>近期存在两个高价值验证窗口</strong>：洋河 2026 半年报（8 月 27 日）、WiseTech FY26 全年业绩（8 月 26 日）。两者都可能显著推翻本报告的假设。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/4aff0db5ec0a.html">晨星宽护城河 + 低估30%以上：全球市场筛选</a><div class="meta">2026-06-07 · 估值仓位</div></li><li><a href="../r/b9ca046c0fd7.html">晨星宽护城河 + 低估30%以上：全市场筛选</a><div class="meta">2026-06-07 · 估值仓位</div></li><li><a href="../r/363c442cb175.html">晨星宽护城河筛选：两期对比与前瞻回测</a><div class="meta">2026-06-07 · 横评对比</div></li><li><a href="../r/03f35831826b.html">AI五层蛋糕50家公司：公允价值/股价倒排</a><div class="meta">2026-06-06 · 估值仓位</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

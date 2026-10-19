@@ -1,0 +1,392 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Temu深度估值：一个黑箱的估值方法论 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/拼多多/index.html">拼多多</a></div><h1>Temu深度估值：一个黑箱的估值方法论</h1><div class="meta"><a href="../companies/拼多多/index.html">拼多多</a> ｜ 2026-04-13 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/Temu%E6%B7%B1%E5%BA%A6%E4%BC%B0%E5%80%BC-20260413.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、我们实际知道什么（硬事实）</a><ul>
+<li><a href="#11-pdd">1.1 PDD合并层面的事实</a></li>
+<li><a href="#12-2026-03-27">1.2 管理层2026-03-27表态</a></li>
+<li><a href="#13">1.3 关税政策硬事实</a></li>
+<li><a href="#14">1.4 第三方监测（单一来源，参考价值有限）</a></li>
+</ul>
+</li>
+<li><a href="#_2">二、我们不知道的东西（需诚实承认）</a></li>
+<li><a href="#_3">三、外部推算（有多可靠？）</a><ul>
+<li><a href="#31-temu-2024">3.1 Temu 2024年估算（市场共识）</a></li>
+<li><a href="#32-temu-2025">3.2 Temu 2025年估算（摆幅极大）</a></li>
+<li><a href="#33-temupdd">3.3 推算Temu占PDD利润拖累</a></li>
+</ul>
+</li>
+<li><a href="#temu">四、Temu估值：三情景 + 明确假设</a><ul>
+<li><a href="#_4">方法论取舍</a></li>
+<li><a href="#shein">对标数据（SHEIN、速卖通、亚马逊海外）</a></li>
+<li><a href="#_5">三情景估值</a></li>
+<li><a href="#_6">三情景加权（修正版）</a></li>
+</ul>
+</li>
+<li><a href="#pdd">五、对PDD整体估值的影响</a><ul>
+<li><a href="#_7">修正后的分部估值</a></li>
+<li><a href="#0">更激进保守估（打平给$0）</a></li>
+</ul>
+</li>
+<li><a href="#temu_1">六、Temu估值的核心判断</a><ul>
+<li><a href="#temu_2">为什么Temu估值摆幅这么大？</a></li>
+<li><a href="#_8">段永平式视角</a></li>
+<li><a href="#_9">对用户的建议</a></li>
+</ul>
+</li>
+<li><a href="#pdd_1">七、对PDD估值结论的修正</a><ul>
+<li><a href="#_10">修正后的目标价区间</a></li>
+<li><a href="#_11">买入价建议（修正）</a></li>
+</ul>
+</li>
+<li><a href="#_12">附：关键不确定性</a></li>
+</ul>
+</div>
+</details><article><p><strong>日期：2026-04-13</strong>
+<strong>核心事实：PDD从未在财报中单独披露Temu数据，任何Temu估值都是外部推算</strong></p>
+<blockquote>
+<p><strong>诚实声明</strong>：本报告写作时，外部可验证的Temu GMV/收入/利润数据极度有限。PDD管理层刻意不披露是战略选择（避免给竞对对标）。本文不编造数字，对每个推算标注来源和不确定性。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、我们实际知道什么（硬事实）</h2>
+<h3 id="11-pdd">1.1 PDD合并层面的事实</h3>
+<ul>
+<li>PDD FY2025 <strong>总营收4,318亿RMB</strong>（+10%）</li>
+<li>其中<strong>交易服务收入2,141亿RMB</strong>（+9%）——这块含Temu佣金+主站佣金+多多买菜</li>
+<li><strong>在线营销（广告）收入2,178亿RMB</strong>（+10%）——基本全是主站</li>
+<li>PDD FY2025 GAAP净利 <strong>994亿RMB</strong>（-12%）</li>
+<li>经营现金流 <strong>1,069亿RMB</strong>（-11%）</li>
+<li>成本+23%（远超收入+10%）——利润率承压</li>
+<li><a href="https://investor.pddholdings.com/news-releases">来源：PDD Q4 2025财报</a></li>
+</ul>
+<h3 id="12-2026-03-27">1.2 管理层2026-03-27表态</h3>
+<blockquote>
+<p>"对供应链投资的重大投入，这些投资是坚定的、长期的，必然影响财务表现"
+（CFO原话，翻译）</p>
+</blockquote>
+<p><strong>这句话隐含</strong>：
+- 利润下滑是<strong>主动选择</strong>，不是被动受损
+- "供应链投资"≠ Temu补贴，范围更广（含主站新拼姆、农业基建、物流）
+- 不给出具体拆分</p>
+<h3 id="13">1.3 关税政策硬事实</h3>
+<ul>
+<li>2025年5月：美国取消对中国$800以下包裹的De minimis豁免</li>
+<li>加征税率：2025年生效145%关税（具体品类）</li>
+<li>Temu响应：将直发模式切换至<strong>本土仓发货</strong>（美国境内）</li>
+<li>本土仓模式：规避关税但履约成本上升~10-15%</li>
+</ul>
+<h3 id="14">1.4 第三方监测（单一来源，参考价值有限）</h3>
+<ul>
+<li>Similarweb 2026-03 数据：Temu在Marketplace类别全球排名 <strong>#4</strong></li>
+<li>此前的"Temu美国DAU下跌58%"：单一来源传闻，<strong>未经多方交叉验证</strong></li>
+</ul>
+<hr />
+<h2 id="_2">二、我们不知道的东西（需诚实承认）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>现状</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temu 2025年GMV多少？</td>
+<td>❌ 无官方数据</td>
+</tr>
+<tr>
+<td>Temu 2025年收入多少？</td>
+<td>❌ 无拆分，只能推算</td>
+</tr>
+<tr>
+<td>Temu 2025年亏损多少？</td>
+<td>❌ 完全黑箱</td>
+</tr>
+<tr>
+<td>Temu各区域（美欧日等）贡献？</td>
+<td>❌ 无披露</td>
+</tr>
+<tr>
+<td>半托管占比、毛利率？</td>
+<td>❌ 无披露</td>
+</tr>
+<tr>
+<td>盈亏平衡时间表？</td>
+<td>❌ 管理层拒绝指引</td>
+</tr>
+<tr>
+<td>SHEIN最新估值？</td>
+<td>⚠️ 2024年报道$500-700亿，2025-26未更新</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_3">三、外部推算（有多可靠？）</h2>
+<h3 id="31-temu-2024">3.1 Temu 2024年估算（市场共识）</h3>
+<p>基于多家投行2024-2025年研报的<strong>区间估算</strong>：
+- 2024年GMV：<strong>$400-500亿</strong>（美国占~40%，欧洲~30%，其他~30%）
+- 2024年收入（Temu take rate ~25-30%）：<strong>$100-150亿</strong>
+- 2024年亏损：<strong>$30-50亿</strong>（烧钱期）</p>
+<p><strong>来源</strong>：高盛、摩根士丹利、中金公司2024-2025年电话会纪要摘录（第三方媒体转述）。<strong>这些数据本身就是推算，不是官方</strong>。</p>
+<h3 id="32-temu-2025">3.2 Temu 2025年估算（摆幅极大）</h3>
+<p>关税冲击后，市场预测分化严重：
+- <strong>乐观派</strong>：GMV $550-600亿（本土仓对冲关税，欧洲加速增长）
+- <strong>悲观派</strong>：GMV $350-400亿（美国市场萎缩30-40%）
+- <strong>中位估</strong>：<strong>$450-500亿</strong>（美国下滑但其他市场补足）</p>
+<p><strong>亏损情况</strong>：
+- 乐观派：2025年亏损$20-30亿（减亏，接近盈亏平衡）
+- 悲观派：2025年亏损$50-70亿（本土仓转型成本拖累）</p>
+<p><strong>这些全是推算，误差带±30%</strong></p>
+<h3 id="33-temupdd">3.3 推算Temu占PDD利润拖累</h3>
+<ul>
+<li>PDD 2024→2025 GAAP净利降130亿RMB（≈$18亿）</li>
+<li>成本增加：+23% vs 收入+10%，差距~13pct × 营收4,318亿RMB ≈ <strong>560亿RMB额外成本</strong></li>
+<li>这560亿RMB分给：Temu亏损 + 主站千亿投资 + 其他</li>
+<li><strong>如果Temu占一半（约$40亿）</strong>，主站千亿投资占另一半（~$40亿）</li>
+<li><strong>但这只是推测，实际拆分完全不可知</strong></li>
+</ul>
+<hr />
+<h2 id="temu">四、Temu估值：三情景 + 明确假设</h2>
+<h3 id="_4">方法论取舍</h3>
+<p>给亏损或打平的业务估值，业界通常三种方法：
+1. <strong>DCF（折现未来利润）</strong>——不适用，因为未来利润无法预测
+2. <strong>EV/GMV倍数</strong>——用跨境电商可比公司倍数
+3. <strong>战略期权价值</strong>——把Temu看成"未来盈利的期权"，用Black-Scholes式思维</p>
+<p><strong>本报告采用：EV/GMV倍数 + 期权调整</strong></p>
+<h3 id="shein">对标数据（SHEIN、速卖通、亚马逊海外）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>2024 GMV</th>
+<th>估值</th>
+<th>EV/GMV</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SHEIN</strong>（一级市场）</td>
+<td>~$450亿</td>
+<td>$500-700亿</td>
+<td>1.1-1.6x</td>
+<td>盈利中但亏损</td>
+</tr>
+<tr>
+<td><strong>速卖通</strong>（阿里AIDC）</td>
+<td>~$500亿（含Lazada）</td>
+<td>阿里未单独估值</td>
+<td>~0.5-1.0x</td>
+<td>增速放缓</td>
+</tr>
+<tr>
+<td><strong>Amazon国际</strong></td>
+<td>$1,500亿+</td>
+<td>按PE折算~1.5x</td>
+<td>1.5x</td>
+<td>已盈利</td>
+</tr>
+<tr>
+<td><strong>Temu</strong>（本报告估）</td>
+<td>$400-500亿</td>
+<td>待定</td>
+<td>0.5-1.5x?</td>
+<td>亏损中</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键判断</strong>：打平/小亏的Temu合理EV/GMV倍数应在 <strong>0.5-1.0x</strong>（低于盈利中的SHEIN）。</p>
+<h3 id="_5">三情景估值</h3>
+<h4 id="a25">情景A：盈利情景（概率25%）</h4>
+<p><strong>触发条件</strong>：
+- 2026年关税政策不再升级
+- Temu本土仓+半托管模式跑通
+- 2027-2028年达成 <strong>净利率 3-5%</strong></p>
+<p><strong>2028E数字</strong>：
+- GMV $700亿
+- 收入 $180亿（take rate 26%）
+- 净利 $5.4-9亿</p>
+<p><strong>估值</strong>：
+- 用 PE 20x（对标SHEIN）：<strong>$108-180亿</strong>
+- 或 EV/GMV 1.0x：<strong>$700亿</strong>（显然过高）
+- <strong>取保守值：$150亿</strong></p>
+<h4 id="b50">情景B：打平/持续小亏（概率50%）</h4>
+<p><strong>触发条件</strong>：
+- 关税压力持续但可管理
+- GMV 维持 $400-500亿，不再大幅增长
+- 2027-2028年在盈亏平衡附近徘徊</p>
+<p><strong>估值</strong>：
+- <strong>这才是真正的关键问题</strong>
+- 如果Temu永远打平，DCF值 = <strong>$0</strong>（没有未来现金流）
+- 但作为"战略期权"（可能转盈利），给一定溢价
+- EV/GMV 0.3-0.5x × $450亿 = <strong>$135-225亿</strong>
+- <strong>取中值：$180亿</strong></p>
+<blockquote>
+<p><strong>注意</strong>：上一份报告里这个情景给了$600亿，那是过于乐观的假设。如果业务打平没现金流，$600亿是无法支撑的。</p>
+</blockquote>
+<h4 id="c25">情景C：崩溃情景（概率25%）</h4>
+<p><strong>触发条件</strong>：
+- 关税政策持续升级（&gt;200%）
+- 本土仓模式毛利率转负
+- PDD被迫大幅收缩Temu，GMV腰斩至$200亿以下</p>
+<p><strong>估值</strong>：
+- Temu业务估值 = <strong>$0</strong>
+- <strong>但</strong>PDD利润反增（不再补贴）：年省$30-50亿亏损 → PE 12x → <strong>+$360-600亿给母公司</strong>
+- <strong>净效应：+$400亿左右给PDD整体</strong></p>
+<h3 id="_6">三情景加权（修正版）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>Temu独立估值</th>
+<th>对PDD的贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A盈利</td>
+<td>25%</td>
+<td>$150亿</td>
+<td>+$150亿</td>
+</tr>
+<tr>
+<td>B打平</td>
+<td>50%</td>
+<td>$180亿</td>
+<td>+$180亿</td>
+</tr>
+<tr>
+<td>C崩溃</td>
+<td>25%</td>
+<td>$0</td>
+<td>+$400亿（利润反弹）</td>
+</tr>
+<tr>
+<td><strong>加权</strong></td>
+<td></td>
+<td></td>
+<td><strong>+$228亿</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="pdd">五、对PDD整体估值的影响</h2>
+<h3 id="_7">修正后的分部估值</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th>估值</th>
+<th>vs 上份报告</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>国内主站</td>
+<td>$146亿</td>
+<td>不变</td>
+</tr>
+<tr>
+<td><strong>Temu（本报告保守估）</strong></td>
+<td><strong>$228亿</strong></td>
+<td><strong>从$587亿降到$228亿（-61%）</strong></td>
+</tr>
+<tr>
+<td>多多买菜+其他</td>
+<td>$9亿</td>
+<td>不变</td>
+</tr>
+<tr>
+<td>净现金</td>
+<td>$604亿</td>
+<td>不变</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>$987亿</strong></td>
+<td>vs $1,346亿</td>
+</tr>
+<tr>
+<td><strong>每股</strong></td>
+<td><strong>$69.5</strong></td>
+<td>vs $94.8</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="0">更激进保守估（打平给$0）</h3>
+<p>如果把情景B的Temu也给$0（即只有盈利才值钱）：
+- 加权：25% × $150亿 + 0 + 25% × $400亿 = <strong>$137亿</strong>
+- 合计：$896亿 / 14.2亿股 = <strong>$63/ADS</strong></p>
+<hr />
+<h2 id="temu_1">六、Temu估值的核心判断</h2>
+<h3 id="temu_2">为什么Temu估值摆幅这么大？</h3>
+<p>因为Temu是一个<strong>期权式资产</strong>：
+- 期权价值高度依赖波动率和到期时间
+- 关税政策、半托管成败、竞争格局都是不确定因素
+- 合理估值区间宽到失去意义（$0 到 $1,000亿都有分析师说过）</p>
+<h3 id="_8">段永平式视角</h3>
+<p>段永平在2025-2026年的发言里<strong>很少单独谈Temu估值</strong>。他的投资逻辑主要建立在：
+1. 主站现金流够强
+2. 黄峥值得信任
+3. 10年后看新拼姆成败</p>
+<p>换句话说，<strong>段永平根本没把Temu当成主要价值来源</strong>。他是在"国内主站+现金"的基础上，把Temu当成免费期权。</p>
+<h3 id="_9">对用户的建议</h3>
+<p><strong>估值PDD时应该</strong>：
+1. <strong>用最保守的Temu估值</strong>（$0-200亿区间）
+2. <strong>把Temu期权价值看成"买入的赠品"</strong>
+3. <strong>如果$100出头的价格已经包含合理的Temu期权溢价，那当前价并不便宜</strong></p>
+<hr />
+<h2 id="pdd_1">七、对PDD估值结论的修正</h2>
+<h3 id="_10">修正后的目标价区间</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>每股</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>严格保守</strong>（Temu打平=0）</td>
+<td><strong>$63</strong></td>
+<td>只认现金流的价值</td>
+</tr>
+<tr>
+<td><strong>温和保守</strong>（本报告）</td>
+<td><strong>$69.5</strong></td>
+<td>Temu给合理期权价值</td>
+</tr>
+<tr>
+<td><strong>中性</strong>（Temu=$400亿）</td>
+<td><strong>$85</strong></td>
+<td>市场共识假设</td>
+</tr>
+<tr>
+<td><strong>乐观</strong>（Temu=$700亿）</td>
+<td><strong>$105</strong></td>
+<td>接近当前价</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论</strong>：<strong>当前$100.87 ≈ 市场隐含的"Temu值$600-700亿"的假设</strong>。这个假设需要相信Temu未来盈利，是买入PDD时押的最大宝。</p>
+<h3 id="_11">买入价建议（修正）</h3>
+<ul>
+<li><strong>严格段永平标准（50%安全边际）</strong>：$35-40（基于严格保守$63打5折）——基本不可能等到</li>
+<li><strong>合理段永平标准（30%安全边际）</strong>：$49（温和保守$69.5打7折）</li>
+<li><strong>实操买入区间</strong>：<strong>$60-80</strong>（Temu给合理期权价值）</li>
+<li><strong>当前$100.87</strong>：偏贵，如果买入必须相信Temu能盈利</li>
+</ul>
+<hr />
+<h2 id="_12">附：关键不确定性</h2>
+<p><strong>这份报告最可能错的地方</strong>：
+1. Temu 2025 GMV真实数字可能远高于$500亿（如果PDD刻意不披露是因为很大而不是很小）
+2. 本土仓模式的真实利润率未知（可能比推测的好）
+3. 欧洲+拉美+东南亚的增长可能超预期
+4. 黄峥/管理层对Temu的真实战略意图无法外部判断</p>
+<p><strong>建议的决策依据</strong>：
+- 不要用单点估值做决策，看估值<strong>区间</strong>
+- 当前$100在我的保守区间上沿——<strong>不急买，等更好的价</strong>
+- 如果股价回到<strong>$75-85</strong>（基本面未恶化的前提下），安全边际显著改善，可以开始建仓</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/add3b8034f65.html">拼多多控股（PDD Holdings，PDD.US）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/581cb36c9940.html">拼多多2036：活下来没有悬念，多赚要看两个变量</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/a4afe86cabe3.html">黄峥与拼多多控制权：谁在掌舵、他还能不能回来</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/2ef823d3a551.html">拼多多（PDD Holdings）投资研究 — 2026.04.07</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/9da20c690247.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/ea06217eed0b.html">拼多多AI与利润研究：审计说明</a><div class="meta">2026-09-24 · 底稿</div></li><li><a href="../r/eec9a3d4deca.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/6c5fe33f9647.html">PDD研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/a07290b67941.html">拼多多2026Q2：6-K原件逐行核对底稿</a><div class="meta">2026-08-26 · 底稿</div></li><li><a href="../r/4fc48a244b16.html">拼多多2026年二季报深度解读：一笔找不到科目的投入</a><div class="meta">2026-08-25 · 财报</div></li><li><a href="../r/b870b0a0d5b4.html">拼多多2026年中报解读</a><div class="meta">2026-08-25 · 公众号</div></li><li><a href="../r/7a2822470350.html">拼多多三大报表解析：从交易所原件到逐项含义</a><div class="meta">2026-08-24 · 财报</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

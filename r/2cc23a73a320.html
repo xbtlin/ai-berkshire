@@ -1,0 +1,382 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>XiaomiMiMo__MiMo-V2.5__README · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a></div><h1>XiaomiMiMo__MiMo-V2.5__README</h1><div class="meta"><a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/XiaomiMiMo__MiMo-V2.5__README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#1-introduction">1. Introduction</a></li>
+<li><a href="#model-summary">Model Summary</a></li>
+<li><a href="#2-downloads">2. Downloads</a></li>
+<li><a href="#3-evaluation-results">3. Evaluation Results</a><ul>
+<li><a href="#multimodal-benchmarks">Multimodal Benchmarks</a></li>
+<li><a href="#coding-agent-benchmarks">Coding &amp; Agent Benchmarks</a></li>
+<li><a href="#long-context-benchmarks">Long Context Benchmarks</a></li>
+</ul>
+</li>
+<li><a href="#4-model-architecture">4. Model Architecture</a><ul>
+<li><a href="#llm-backbone">LLM Backbone</a></li>
+<li><a href="#vision-encoder">Vision Encoder</a></li>
+<li><a href="#audio-encoder">Audio Encoder</a></li>
+</ul>
+</li>
+<li><a href="#5-training-process">5. Training Process</a></li>
+<li><a href="#6-deployment">6. Deployment</a><ul>
+<li><a href="#sglang-deployment">SGLang Deployment</a></li>
+<li><a href="#vllm-deployment">vLLM Deployment</a></li>
+</ul>
+</li>
+<li><a href="#citation">Citation</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</details><article><p><br/><br/></p>
+<div align="center">
+  <picture>
+    <source srcset="https://github.com/XiaomiMiMo/MiMo/raw/main/figures/Xiaomi_MiMo_darkmode.png?raw=true" media="(prefers-color-scheme: dark)">
+    <img src="https://github.com/XiaomiMiMo/MiMo/raw/main/figures/Xiaomi_MiMo.png?raw=true" width="60%" alt="Xiaomi-MiMo" />
+  </picture>
+</div>
+
+<p><br/></p>
+<div align="center" style="line-height: 1;">
+  |
+  <a href="https://huggingface.co/XiaomiMiMo" target="_blank">🤗 HuggingFace</a>
+  &nbsp;|
+  <a href="https://mimo.xiaomi.com/mimo-v2-5" target="_blank">📰 Blog </a>
+  &nbsp;|
+  <a href="https://platform.xiaomimimo.com" target="_blank">🎨 Xiaomi MiMo API Platform </a>
+  &nbsp;|
+  <a href="https://aistudio.xiaomimimo.com" target="_blank">🗨️ Xiaomi MiMo Studio </a>
+  &nbsp;|
+</div>
+
+<p><br/></p>
+<div align="center" style="line-height: 1.2;">
+  <strong>Community</strong><br/>
+  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/main/assets/wechat.jpg" target="_blank">WeChat Group</a>
+  &nbsp;|&nbsp;
+  <a href="https://discord.gg/kKC2kNnQEX" target="_blank">Discord</a>
+  &nbsp;|&nbsp;
+  <a href="https://t.me/+3T-I0pekOVIyNDBl" target="_blank">Telegram</a>
+  &nbsp;|&nbsp;
+  <a href="https://www.reddit.com/r/XiaomiMiMo_Official/" target="_blank">Reddit</a>
+</div>
+
+<p><br/></p>
+<div style="background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 12px 16px;">
+  <b>⚠️ Important: Config Update Notice</b><br/><br/>
+  The <code>config.json</code> and <code>tokenizer_config.json</code> files in this repository have been updated since the initial release. If you downloaded MiMo-V2.5 before this <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/commit/4da2748fc0a0123d817280b1b0cd3682a487a161">commit (4da2748)</a>, please re-pull or manually update these two files to ensure correct model behavior. Using the outdated config may lead to degraded model performance. We apologize for any inconvenience.<br/><br/>
+  <b>Quick fix:</b>
+<pre><code>hf download XiaomiMiMo/MiMo-V2.5 config.json tokenizer_config.json --local-dir ./MiMo-V2.5</code></pre>
+</div>
+
+<p><br/></p>
+<h1 id="mimo-v25">MiMo-V2.5</h1>
+<h2 id="1-introduction">1. Introduction</h2>
+<p>MiMo-V2.5 is a native omnimodal model with strong agentic capabilities, supporting text, image, video, and audio understanding within a unified architecture. Built upon the MiMo-V2-Flash backbone and extended with dedicated vision and audio encoders, it delivers robust performance across multimodal perception, long-context reasoning, and agentic workflows. Key features include:</p>
+<ul>
+<li>
+<p><strong>Hybrid Attention Architecture</strong>: Inherits the hybrid design from MiMo-V2-Flash, interleaving Sliding Window Attention (SWA) and Global Attention (GA) with a 5:1 ratio and 128 sliding window. This reduces KV-cache storage by nearly 6× while maintaining long-context performance via learnable attention sink bias.</p>
+</li>
+<li>
+<p><strong>Native Omnimodal Encoders</strong>: Equipped with a 729M-param Vision Transformer (ViT) featuring hybrid window attention and a dedicated audio encoder initialized from the weights of MiMo-Audio, enabling high-quality image, video, and audio understanding.</p>
+</li>
+<li>
+<p><strong>Multi-Token Prediction (MTP)</strong>: Three lightweight MTP modules with dense FFNs accelerate inference via speculative decoding and improve RL training efficiency.</p>
+</li>
+<li>
+<p><strong>Efficient Pre-Training</strong>: Trained on a total of ~48T tokens using FP8 mixed precision. The context window supports up to 1M tokens.</p>
+</li>
+<li>
+<p><strong>Agentic Capabilities</strong>: Post-training incorporates SFT, large-scale agentic RL, and Multi-Teacher On-Policy Distillation (MOPD), achieving strong performance on agentic tasks and multimodal understanding benchmarks.</p>
+</li>
+</ul>
+<div align="center">
+  <img src="assets/architecture.svg" width="80%" alt="MiMo-V2.5 Architecture" />
+</div>
+
+<h2 id="model-summary">Model Summary</h2>
+<ul>
+<li><strong>Architecture</strong>: Sparse MoE (Mixture of Experts), 310B total / 15B activated parameters</li>
+<li><strong>Context Length</strong>: Up to 1M tokens</li>
+<li><strong>Modalities</strong>: Text, Image, Video, Audio</li>
+<li><strong>Vision Encoder</strong>: 729M-param ViT (28 layers: 24 SWA + 4 Full)</li>
+<li><strong>Audio Encoder</strong>: 261M-param Audio Transformer (24 layers: 12 SWA + 12 Full)</li>
+<li><strong>Multi-Token Prediction (MTP)</strong>: 329M parameters, 3 layers</li>
+</ul>
+<h2 id="2-downloads">2. Downloads</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Model</th>
+<th style="text-align: center;">Context Length</th>
+<th style="text-align: center;">Download</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>MiMo-V2.5-Base</strong></td>
+<td style="text-align: center;">256K</td>
+<td style="text-align: center;"><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Base">🤗 HuggingFace</a> <br> <a href="https://modelscope.cn/models/XiaomiMiMo/MiMo-V2.5-Base">🤖 ModelScope</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MiMo-V2.5</strong></td>
+<td style="text-align: center;">1M</td>
+<td style="text-align: center;"><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5">🤗 HuggingFace</a> <br> <a href="https://modelscope.cn/models/XiaomiMiMo/MiMo-V2.5">🤖 ModelScope</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3-evaluation-results">3. Evaluation Results</h2>
+<h3 id="multimodal-benchmarks">Multimodal Benchmarks</h3>
+<div align="center">
+  <img src="assets/mimo-v2.5-multimodal-bench.png" width="80%" alt="MiMo-V2.5 Multimodal Benchmark Results" />
+</div>
+
+<h3 id="coding-agent-benchmarks">Coding &amp; Agent Benchmarks</h3>
+<div align="center">
+  <img src="assets/mimo-v2.5-coding-bench.png" width="80%" alt="MiMo-V2.5 Coding and Agentic Benchmark Results" />
+</div>
+
+<h3 id="long-context-benchmarks">Long Context Benchmarks</h3>
+<div align="center">
+  <img src="assets/mimo-v2.5-graphwalks.jpeg" width="80%" alt="MiMo-V2.5 Graphwalks" />
+</div>
+
+<h2 id="4-model-architecture">4. Model Architecture</h2>
+<h3 id="llm-backbone">LLM Backbone</h3>
+<p>MiMo-V2.5's core language backbone inherits from the <a href="https://github.com/XiaomiMiMo/MiMo-V2-Flash">MiMo-V2-Flash</a> architecture, a sparse MoE model with hybrid sliding window attention.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Component</th>
+<th style="text-align: center;">MiMo-V2.5-Pro</th>
+<th style="text-align: center;">MiMo-V2.5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Total Parameters</strong></td>
+<td style="text-align: center;">1.02T</td>
+<td style="text-align: center;">310B</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Activated Parameters</strong></td>
+<td style="text-align: center;">42B</td>
+<td style="text-align: center;">15B</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hidden Size</strong></td>
+<td style="text-align: center;">6144</td>
+<td style="text-align: center;">4096</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Num Layers</strong></td>
+<td style="text-align: center;">70 (1 dense + 69 MoE)</td>
+<td style="text-align: center;">48 (1 dense + 47 MoE)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Full Attention Layers</strong></td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SWA Layers</strong></td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">39</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Num Attention Heads</strong></td>
+<td style="text-align: center;">128</td>
+<td style="text-align: center;">64</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Num KV Heads</strong></td>
+<td style="text-align: center;">8 (GQA)</td>
+<td style="text-align: center;">8 (GA) / 4 (SWA)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Head Dim (QK / V)</strong></td>
+<td style="text-align: center;">192 / 128</td>
+<td style="text-align: center;">192 / 128</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Routed Experts</strong></td>
+<td style="text-align: center;">384</td>
+<td style="text-align: center;">256</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Experts per Token</strong></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MoE Intermediate Size</strong></td>
+<td style="text-align: center;">2048</td>
+<td style="text-align: center;">2048</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Dense Intermediate Size</strong></td>
+<td style="text-align: center;">16384 (layer 0 only)</td>
+<td style="text-align: center;">16384 (layer 0 only)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SWA Window Size</strong></td>
+<td style="text-align: center;">128</td>
+<td style="text-align: center;">128</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Max Context Length</strong></td>
+<td style="text-align: center;">1M</td>
+<td style="text-align: center;">1M</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MTP Layers</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="vision-encoder">Vision Encoder</h3>
+<p>We train a dedicated MiMo ViT that adopts sliding-window attention to enable efficient visual encoding.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Configuration</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Total Layers</td>
+<td style="text-align: left;">28</td>
+</tr>
+<tr>
+<td style="text-align: left;">SWA Layers</td>
+<td style="text-align: left;">24</td>
+</tr>
+<tr>
+<td style="text-align: left;">Full Attention Layers</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Window-Attention Pattern</td>
+<td style="text-align: left;">[-1] + [0,0,0,0,1,1,1,1,-1] × 3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Attention Heads (Q / KV)</td>
+<td style="text-align: left;">32 / 8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Head Dimensions (QK / V)</td>
+<td style="text-align: left;">64 / 64</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sliding Window Size (L / R)</td>
+<td style="text-align: left;">64 / 64</td>
+</tr>
+</tbody>
+</table></div>
+<p>Window pattern notation: <code>-1</code> = full attention, <code>0</code> = 1-D row window, <code>1</code> = 1-D column window.</p>
+<h3 id="audio-encoder">Audio Encoder</h3>
+<p>Our audio encoder is initialized from the weights of <a href="https://huggingface.co/XiaomiMiMo/MiMo-Audio-Tokenizer">MiMo-Audio-Tokenizer</a> and further finetuned to support high-quality audio understanding.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Configuration</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Total Layers</td>
+<td style="text-align: left;">24</td>
+</tr>
+<tr>
+<td style="text-align: left;">SWA Layers</td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;">Full Attention Layers</td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sliding Window Size</td>
+<td style="text-align: left;">128</td>
+</tr>
+<tr>
+<td style="text-align: left;">Attention Heads (Q / KV)</td>
+<td style="text-align: left;">16 / 16</td>
+</tr>
+<tr>
+<td style="text-align: left;">Head Dimensions (QK / V)</td>
+<td style="text-align: left;">64 / 64</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-training-process">5. Training Process</h2>
+<p>MiMo-V2.5 is trained on a total of ~48T tokens.</p>
+<ol>
+<li><strong>Text Pre-training</strong>: We collect diverse text data for pre-training the LLM backbone.</li>
+<li><strong>Projector Warmup</strong>: Short-duration warmup of multimodal projectors (audio and visual MLP projectors).</li>
+<li><strong>Multimodal Pre-training</strong>: High-quality multimodal data collected for large-scale pretraining.</li>
+<li><strong>SFT &amp; Agentic Post Training</strong>: Supervised fine-tuning with diverse agentic data. During this stage, the context window is progressively extended from 32K → 256K → 1M.</li>
+<li><strong>RL &amp; MOPD Training</strong>: Reinforcement learning for improving perception, reasoning, and agentic capabilities.</li>
+</ol>
+<h2 id="6-deployment">6. Deployment</h2>
+<p>Since inference engines are continuously being updated and optimized, this guide only provides deployment examples for reference. For the best performance, we strongly recommend following our referenced approach to get the latest best practices and optimal performance.</p>
+<h3 id="sglang-deployment">SGLang Deployment</h3>
+<p>For the best performance, we strongly recommend deploying using this approach, which is officially supported by the SGLang community. Please refer to <a href="https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.5">SGLang MiMo-V2.5 Cookbook</a> for the latest deployment guide.</p>
+<p>The following is an example of running the model with SGLang, referenced from <a href="https://github.com/sgl-project/sglang/pull/23811">sgl-project/sglang#23811</a>:</p>
+<pre><code class="language-bash">python3 -m sglang.launch_server \
+    --model-path XiaomiMiMo/MiMo-V2.5 \
+    --served-model-name mimo-v2.5 \
+    --log-level-http warning \
+    --enable-cache-report \
+    --pp-size 1 \
+    --dp-size 2 \
+    --tp-size 8 \
+    --enable-dp-attention \
+    --moe-a2a-backend deepep \
+    --deepep-mode auto \
+    --decode-log-interval 1 \
+    --page-size 1 \
+    --host 0.0.0.0 \
+    --port 9001 \
+    --trust-remote-code \
+    --watchdog-timeout 1000000 \
+    --mem-fraction-static 0.65 \
+    --chunked-prefill-size 16384 \
+    --reasoning-parser qwen3 \
+    --tool-call-parser mimo \
+    --context-length 262144 \
+    --collect-tokens-histogram \
+    --enable-metrics \
+    --load-balance-method round_robin \
+    --allow-auto-truncate \
+    --enable-metrics-for-all-schedulers \
+    --quantization fp8 \
+    --skip-server-warmup \
+    --moe-dense-tp-size 1 \
+    --enable-dp-lm-head \
+    --disable-tokenizer-batch-decode \
+    --mm-enable-dp-encoder \
+    --attention-backend fa3 \
+    --mm-attention-backend fa3
+</code></pre>
+<h3 id="vllm-deployment">vLLM Deployment</h3>
+<p>For the best performance, we strongly recommend deploying using this approach, which is officially supported by the vLLM community. Please refer to <a href="https://recipes.vllm.ai/XiaomiMiMo/MiMo-V2-Flash">vLLM MiMo-V2-Flash Cookbook</a> for the latest deployment guide.</p>
+<p>For local deployment, we recommend setting the sampling parameters to <code>temperature=1.0</code>, <code>top_p=0.95</code>.</p>
+<h2 id="citation">Citation</h2>
+<pre><code class="language-bibtex">@misc{mimov25,
+  title={MiMo-V2.5},
+  year={2026},
+  howpublished={\url{https://huggingface.co/collections/XiaomiMiMo/mimo-v25}},
+}
+</code></pre>
+<h2 id="contact">Contact</h2>
+<p>For questions or feedback, reach us at <a href="mailto:mimo@xiaomi.com">mimo@xiaomi.com</a> or join our community:</p>
+<ul>
+<li><a href="https://work.weixin.qq.com/apph5/external_room/join/group_mng?plg_id=c417f99bd9014b5dd894daa8bfe19790&amp;">WeChat Group</a></li>
+<li><a href="https://discord.gg/WX2R2uNp">Discord</a></li>
+<li><a href="https://t.me/+3T-I0pekOVIyNDBl">Telegram</a></li>
+<li><a href="https://www.reddit.com/r/XiaomiMiMo_Official/">Reddit</a></li>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/94b63c16f6b1.html">GLM-5</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/224a0c39bab5.html">GLM-5.3</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/22905c393a9c.html">GLM-5.3-Flash</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d060129a14be.html">GLM-5.2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f90617223e31.html">GLM-4.7</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/0edcfc955787.html">GLM-4.6V</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8cf89aee725c.html">GLM-4.5-Air</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/10aa23c70e91.html">Grok 2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/652b9a513303.html">Grok-1</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4224b4932376.html">Solar Open</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/32e837241209.html">tencent__Hy3__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/e9c250974ef4.html">tencent__Hunyuan-Large__README</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
