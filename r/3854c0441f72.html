@@ -925,17 +925,17 @@ addEventListener('scroll',f,{passive:true});f()}});})();
   ✅ 验证通过, 偏差仅 0.03%
 </code></pre>
 <p>模型输入、每年现金、折现率和敏感性均保存在<a href="../files/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-investment-team-20261019/evidence/valuation-assumptions.json">估值假设</a>、<a href="../files/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-investment-team-20261019/evidence/valuation-results.json">估值结果</a>，可运行<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-investment-team-20261019/evidence/build_model.py">Decimal模型</a>重建。五年工具的EPS/PE字段仅复用乘法接口，实际解释为每股NOPAT与EV/NOPAT，再加净现金；不采用工具默认的股权EPS标签。</p>
-<p>本篇已完成固定种子的百分之十五抽样核验，事实、算术、假设一致性与提取噪声分列。参见<a href="../files/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-investment-team-20261019/evidence/AAPL-audit-results.json">逐条核验</a>、<a href="../files/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-investment-team-20261019/evidence/AAPL-audit-verdict.txt">工具判决</a>和<a href="../r/8e787fdf654f.html">审计范围与缺口</a>。抽样一致不等于预测或买入结论被证明。</p>
+<p>本篇已完成固定种子的百分之十五抽样核验，事实、算术、假设一致性与提取噪声分列。参见<a href="../files/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-investment-team-20261019/evidence/AAPL-audit-results.json">逐条核验</a>、<a href="../files/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-investment-team-20261019/evidence/AAPL-audit-verdict.txt">工具判决</a>和<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-investment-team-20261019/evidence/audit-summary.md">审计范围与缺口</a>。抽样一致不等于预测或买入结论被证明。</p>
 <h2 id="_19">集中来源</h2>
 <ul>
 <li>[F1] <a href="https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm">最新原始财务披露</a>；使用期间见报告头，访问2026-10-19。</li>
 <li>[F2] <a href="https://stockanalysis.com/stocks/aapl/financials/">StockAnalysis财务</a>、<a href="https://stockanalysis.com/stocks/aapl/financials/cash-flow-statement/">现金流</a>、<a href="https://stockanalysis.com/stocks/aapl/financials/balance-sheet/">资产负债表</a>、<a href="https://stockanalysis.com/stocks/aapl/statistics/">估值</a>；访问2026-10-19。保存的是提取数据，非网页全文。</li>
 <li>[F3] <a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/revenue">Macrotrends收入</a>、<a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/net-income">归属利润</a>；年度交叉，部分最新季度滞后，不冒充最新TTM。</li>
-<li>[F4] <a href="https://www.financecharts.com/compare/AAPL,GOOGL,TSLA,AMZN,MSFT,NVDA,META/summary/price">FinanceCharts同组价格</a>；另见<a href="../r/c29b63e45699.html">价格与财报日期独立核验</a>中的逐公司行情入口。</li>
+<li>[F4] <a href="https://www.financecharts.com/compare/AAPL,GOOGL,TSLA,AMZN,MSFT,NVDA,META/summary/price">FinanceCharts同组价格</a>；另见<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-investment-team-20261019/evidence/price-and-calendar-review.md">价格与财报日期独立核验</a>中的逐公司行情入口。</li>
 <li>[F5] <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&amp;type=daily_treasury_yield_curve">美国财政部2026收益率表</a>；10月16日10年5.09%、30年5.43%，是名义par/CMT参照而非股票资本成本。</li>
 <li>[F6] <a href="https://investor.apple.com/investor-relations/default.aspx">下一次财报/电话会公司来源</a>；仅用于日历，不用于预测已经发生的利润。</li>
 <li>
-<p>[F7] <a href="../r/da37ffbf8ac5.html">股份、资产与特殊损益复核</a>；记录税项、受限资金、投资分类和原始链接。</p>
+<p>[F7] <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-investment-team-20261019/evidence/shares-assets-review.md">股份、资产与特殊损益复核</a>；记录税项、受限资金、投资分类和原始链接。</p>
 </li>
 <li>
 <p><a href="https://www.apple.com/newsroom/pdfs/fy2026q3/FY26_Q3_Consolidated_Financial_Statements.pdf">B1 苹果FY26Q3财务表</a>：截至2026-06-27，2026-07-30发布；分品类收入、成本。分品类数据为公司原始口径，未取得独立重算。</p>
@@ -963,7 +963,7 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 <li><a href="https://www.supremecourt.gov/docket/docketfiles/html/public/25-1311.html">R4 美国最高院 Apple v. Epic 案卷</a></li>
 <li><a href="https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_25_1085/IP_25_1085_EN.pdf">R5 欧委会 DMA 决定，2025-04-23</a></li>
 <li><a href="https://www.justice.gov/atr/case/us-and-plaintiff-states-v-apple-inc">R6 DOJ 智能手机案件目录</a></li>
-</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/da37ffbf8ac5.html">七姐妹股份、非经常损益与净现金桥接复核</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/c29b63e45699.html">美股七姐妹财务口径独立复核</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/8e787fdf654f.html">发布前审计与证据边界</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/82694e84fe2e.html">特斯拉（TSLA）独立投资研究：特斯拉已有汽车、储能和有限无人运营业务，但当前市值主要依靠尚未完整证明的自动驾驶与新业务现金</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/5f2ae49af9a0.html">英伟达（NVDA）独立投资研究：英伟达仍拥有最强的AI计算系统优势之一，但不能再按完全不承担客户资本风险的供应商估值</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/5d7f2f55b07a.html">Meta（META）独立投资研究：Meta的AI广告回报证据比许多纯AI叙事更直接，但前沿模型、数据中心和硬件投入远超已证明的收益范围</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/4e32cdda886b.html">亚马逊（AMZN）独立投资研究：亚马逊同时拥有购物闭环与云平台优势，但经营增长尚未等比例变成股东现金</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/47de0ee840f4.html">谷歌（GOOGL）独立投资研究：谷歌的搜索、YouTube和云依然拥有强大变现基础；真正的估值分歧是AI改变每次交互利润后的长期现金</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/5910c21f367a.html">微软（MSFT）独立投资研究：微软的企业客户基础和工作流优势最扎实，但云增长正在消耗更多资本</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/918c8e9c0fa0.html">美股七姐妹：七份独立投研报告</a><div class="meta">2026-10-19 · 导读</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/82694e84fe2e.html">特斯拉（TSLA）独立投资研究：特斯拉已有汽车、储能和有限无人运营业务，但当前市值主要依靠尚未完整证明的自动驾驶与新业务现金</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/5f2ae49af9a0.html">英伟达（NVDA）独立投资研究：英伟达仍拥有最强的AI计算系统优势之一，但不能再按完全不承担客户资本风险的供应商估值</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/4e32cdda886b.html">亚马逊（AMZN）独立投资研究：亚马逊同时拥有购物闭环与云平台优势，但经营增长尚未等比例变成股东现金</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/47de0ee840f4.html">谷歌（GOOGL）独立投资研究：谷歌的搜索、YouTube和云依然拥有强大变现基础；真正的估值分歧是AI改变每次交互利润后的长期现金</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/5910c21f367a.html">微软（MSFT）独立投资研究：微软的企业客户基础和工作流优势最扎实，但云增长正在消耗更多资本</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/918c8e9c0fa0.html">美股七姐妹：七份独立投研报告</a><div class="meta">2026-10-19 · 导读</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
 <ul>
 <li><a href="#_1">生意与护城河</a><ul>
 <li><a href="#_2">经营地图</a></li>
@@ -993,4 +993,4 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 <li><a href="#_19">集中来源</a></li>
 </ul>
 </div>
-</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:24 UTC</footer></body></html>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
