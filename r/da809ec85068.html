@@ -11,7 +11,30 @@ document.addEventListener('DOMContentLoaded',function(){var sel=document.getElem
 if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
 if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
 addEventListener('scroll',f,{passive:true});f()}});})();
-</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/智谱/index.html">智谱</a></div><div class="layout"><div><h1>半年二十倍的公司，你以为你看懂了智谱，其实没有</h1><div class="meta"><a href="../companies/智谱/index.html">智谱</a> ｜ 2026-07-14 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%99%BA%E8%B0%B1/%E3%80%8A%E7%9C%8B%E6%87%82%E6%99%BA%E8%B0%B1AI%E3%80%8B-20260714/01-%E5%BC%80%E7%AF%87-%E5%8D%8A%E5%B9%B4%E4%BA%8C%E5%8D%81%E5%80%8D%E7%9A%84%E5%85%AC%E5%8F%B8%2C%E4%BD%A0%E4%BB%A5%E4%B8%BA%E4%BD%A0%E7%9C%8B%E6%87%82%E4%BA%86.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script></head><body data-root="../" data-page="r/da809ec85068.html" data-title="半年二十倍的公司，你以为你看懂了智谱，其实没有"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/智谱/index.html">智谱</a></div><div class="layout"><div><h1>半年二十倍的公司，你以为你看懂了智谱，其实没有</h1><div class="meta"><a href="../companies/智谱/index.html">智谱</a> ｜ 2026-07-14 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%99%BA%E8%B0%B1/%E3%80%8A%E7%9C%8B%E6%87%82%E6%99%BA%E8%B0%B1AI%E3%80%8B-20260714/01-%E5%BC%80%E7%AF%87-%E5%8D%8A%E5%B9%B4%E4%BA%8C%E5%8D%81%E5%80%8D%E7%9A%84%E5%85%AC%E5%8F%B8%2C%E4%BD%A0%E4%BB%A5%E4%B8%BA%E4%BD%A0%E7%9C%8B%E6%87%82%E4%BA%86.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">一组互相打架的数字</a></li>
 <li><a href="#_2">上市半年，市场把它重新定价了四次</a></li>
@@ -179,7 +202,7 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 </ul>
 <hr />
 <p><em>本文是《看懂智谱AI》系列第 01 篇。</em>
-<em>本系列基于公开信息和价值投资框架研究，不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/86d8914f6111.html">智谱（02513.HK）三大报表解析 · 2026年中期</a><div class="meta">2026-09-01 · 研究</div></li><li><a href="../r/3b7460fa6dbd.html">930 倍市销率，与 2027 年 1 月的大考</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/230778d43384.html">收 1 元烧 4 元的生意怎么读</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/70b80cfcae88.html">全球第六的模型，和一份&quot;租来的&quot;定价权</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/0612bdf686ec.html">《看懂智谱AI》系列说明（2026-07-14 版）</a><div class="meta">2026-07-14 · 导读</div></li><li><a href="../r/50be50f38aac.html">烧钱机器的终局推演</a><div class="meta">2026-07-06 · 深度系列</div></li><li><a href="../r/a612f69dc5e2.html">五强争霸与大厂围猎</a><div class="meta">2026-07-06 · 深度系列</div></li><li><a href="../r/21a36274b78d.html">智谱（Z.ai，02513.HK）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/68025819dc91.html">智谱AI（Zhipu AI）深度研究报告</a><div class="meta">2026-04-10 · 研究</div></li><li><a href="../r/3ca2f60012de.html">GLM大模型的真实水位</a><div class="meta">2026-04-08 · 深度系列</div></li><li><a href="../r/d34b0bbfeac7.html">清华实验室走出的大模型独角兽</a><div class="meta">2026-01-08 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<em>本系列基于公开信息和价值投资框架研究，不构成任何投资建议。</em></p></article><div class="wx"><img src="../files/assets/wechat-qr.png" alt="公众号复利炼丹炉二维码"><div><b>公众号「复利炼丹炉」</b><span>站上是全部成品报告；值得深研的公司和报告之外的判断与取舍，精选发在公众号。微信扫码关注。</span></div></div><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/86d8914f6111.html">智谱（02513.HK）三大报表解析 · 2026年中期</a><div class="meta">2026-09-01 · 研究</div></li><li><a href="../r/3b7460fa6dbd.html">930 倍市销率，与 2027 年 1 月的大考</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/230778d43384.html">收 1 元烧 4 元的生意怎么读</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/70b80cfcae88.html">全球第六的模型，和一份&quot;租来的&quot;定价权</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/0612bdf686ec.html">《看懂智谱AI》系列说明（2026-07-14 版）</a><div class="meta">2026-07-14 · 导读</div></li><li><a href="../r/50be50f38aac.html">烧钱机器的终局推演</a><div class="meta">2026-07-06 · 深度系列</div></li><li><a href="../r/a612f69dc5e2.html">五强争霸与大厂围猎</a><div class="meta">2026-07-06 · 深度系列</div></li><li><a href="../r/21a36274b78d.html">智谱（Z.ai，02513.HK）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/68025819dc91.html">智谱AI（Zhipu AI）深度研究报告</a><div class="meta">2026-04-10 · 研究</div></li><li><a href="../r/3ca2f60012de.html">GLM大模型的真实水位</a><div class="meta">2026-04-08 · 深度系列</div></li><li><a href="../r/d34b0bbfeac7.html">清华实验室走出的大模型独角兽</a><div class="meta">2026-01-08 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
 <ul>
 <li><a href="#_1">一组互相打架的数字</a></li>
 <li><a href="#_2">上市半年，市场把它重新定价了四次</a></li>
@@ -195,4 +218,4 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 <li><a href="#_9">下期预告</a></li>
 </ul>
 </div>
-</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 08:05 UTC</footer></body></html>
