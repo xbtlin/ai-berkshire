@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Alphabet（谷歌）独立投资研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/美股七姐妹-20261019/index.html">美股七姐妹-20261019</a></div><h1>Alphabet（谷歌）独立投资研究报告</h1><div class="meta"><a href="../topics/美股七姐妹-20261019/index.html">美股七姐妹-20261019</a> ｜ 2026-10-19 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E8%B0%B7%E6%AD%8C/%E8%B0%B7%E6%AD%8C%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261019.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>Alphabet（谷歌）独立投资研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/美股七姐妹-20261019/index.html">美股七姐妹-20261019</a></div><div class="layout"><div><h1>Alphabet（谷歌）独立投资研究报告</h1><div class="meta"><a href="../topics/美股七姐妹-20261019/index.html">美股七姐妹-20261019</a> ｜ 2026-10-19 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E8%B0%B7%E6%AD%8C/%E8%B0%B7%E6%AD%8C%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261019.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">第一步：数据收集与口径校准</a><ul>
 <li><a href="#_2">五年经营与现金流</a></li>
@@ -837,4 +847,31 @@ remaining unmodelled risk: catastrophic_cyber_event
 <ul>
 <li>[S27] <a href="https://www.wsj.com/tech/google-discloses-94-1-billion-in-spacex-stock-marking-6-stake-91655d7c">WSJ：SpaceX 受限持股取整复核</a></li>
 <li>[S28] <a href="https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/shares-outstanding">Macrotrends 股数异常页，数值未采用</a></li>
-</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/8153127dfc87.html">苹果（AAPL）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/ca12b2c8a684.html">英伟达（NVIDIA / NASDAQ: NVDA）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/24093aff5cf4.html">特斯拉（TSLA）独立投资研究：产品进步能否变成普通股东的现金回报？</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/27be57d77638.html">数据抽检覆盖说明</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/1c2a8830b881.html">微软（MSFT）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/6e6703913bcd.html">亚马逊（AMZN）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/8e373454044e.html">抽检审计说明</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/0ae80772a066.html">Meta 审计覆盖说明</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/759fb4f3ee98.html">Meta Platforms（META）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/8153127dfc87.html">苹果（AAPL）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/ca12b2c8a684.html">英伟达（NVIDIA / NASDAQ: NVDA）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/24093aff5cf4.html">特斯拉（TSLA）独立投资研究：产品进步能否变成普通股东的现金回报？</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/1c2a8830b881.html">微软（MSFT）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/6e6703913bcd.html">亚马逊（AMZN）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/759fb4f3ee98.html">Meta Platforms（META）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">第一步：数据收集与口径校准</a><ul>
+<li><a href="#_2">五年经营与现金流</a></li>
+<li><a href="#_3">最近四季收入结构</a></li>
+<li><a href="#_4">资产负债、股本及会计陷阱</a></li>
+</ul>
+</li>
+<li><a href="#_5">第二步：生意本质——帮助客户获得意图、注意力与算力</a></li>
+<li><a href="#_6">第三步：护城河与竞争格局</a></li>
+<li><a href="#_7">第四步：逆向思考与风险</a></li>
+<li><a href="#_8">第五步：管理层与资本配置</a></li>
+<li><a href="#_9">第六步：行业、文明趋势与利润路径</a></li>
+<li><a href="#_10">第七步：估值、安全边际与压力测试</a><ul>
+<li><a href="#_11">当前价格究竟买到什么</a></li>
+<li><a href="#_12">三年三情景：回答“贵不贵”</a></li>
+<li><a href="#dcf">反向 DCF：现价隐含什么</a></li>
+<li><a href="#_13">十年折现：只用于仓位压力测试</a></li>
+<li><a href="#_14">估值分歧对账</a></li>
+</ul>
+</li>
+<li><a href="#_15">第八步：综合决策备忘录</a></li>
+<li><a href="#_16">审计与研究限制</a></li>
+<li><a href="#2026-10-19">来源索引（均于 2026-10-19 读取/检索）</a></li>
+<li><a href="#_17">附录：关键数据交叉验证记录与实际准出状态</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

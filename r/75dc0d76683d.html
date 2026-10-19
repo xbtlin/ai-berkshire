@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>02 财务估值分析 —— 巴菲特视角（核心） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/阿里巴巴/index.html">阿里巴巴</a></div><h1>02 财务估值分析 —— 巴菲特视角（核心）</h1><div class="meta"><a href="../companies/阿里巴巴/index.html">阿里巴巴</a> ｜ 2026-05-04 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/10%E5%B9%B4%E5%88%A9%E6%B6%A6%E6%8E%A8%E6%BC%94-20260504/02-%E8%B4%A2%E5%8A%A1%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90-%E5%B7%B4%E8%8F%B2%E7%89%B9%E8%A7%86%E8%A7%92.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>02 财务估值分析 —— 巴菲特视角（核心） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/阿里巴巴/index.html">阿里巴巴</a></div><div class="layout"><div><h1>02 财务估值分析 —— 巴菲特视角（核心）</h1><div class="meta"><a href="../companies/阿里巴巴/index.html">阿里巴巴</a> ｜ 2026-05-04 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/10%E5%B9%B4%E5%88%A9%E6%B6%A6%E6%8E%A8%E6%BC%94-20260504/02-%E8%B4%A2%E5%8A%A1%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90-%E5%B7%B4%E8%8F%B2%E7%89%B9%E8%A7%86%E8%A7%92.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#0">0. 一句话核心判断</a></li>
 <li><a href="#1-fy26-q1q3-2025-12-31">1. 财务现状画像（FY26 Q1–Q3，截至 2025-12-31）</a><ul>
@@ -928,4 +938,60 @@ FY36 Non-GAAP 净利润 4,591 亿 × 合理 PE 14x = 64,274 亿 RMB（FY36 时�
 <li><a href="https://www.yicai.com/news/102927778.html">阿里三季度收入增长，利润下滑 - 第一财经</a></li>
 <li><a href="https://wallstreetcn.com/articles/3754524">阿里Q2 Non-Gaap净利润同比下降18%，云业务收入增26% - 华尔街见闻</a></li>
 <li><a href="https://seekingalpha.com/article/4851953-alibaba-group-holding-limited-baba-q2-2026-results-earnings-call-transcript">Alibaba (BABA) Q2 2026 Earnings Call Transcript - Seeking Alpha</a></li>
-</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/5eacdfc62656.html">用巴菲特的方式，拆一份利润暴跌 62% 的财报</a><div class="meta">2026-08-18 · 公众号</div></li><li><a href="../r/3e9c0540f78d.html">阿里巴巴（NYSE:BABA / HK:9988）——晨星估值视角的增量分析</a><div class="meta">2026-08-17 · 估值仓位</div></li><li><a href="../r/0c979d59c8de.html">阿里巴巴集团（BABA / 9988.HK）投资研究报告——三场烧钱战</a><div class="meta">2026-08-17 · 研究</div></li><li><a href="../r/eb69737f826c.html">AI 时代，阿里是中国的亚马逊，还是下一个 IBM</a><div class="meta">2026-08-08 · 公众号</div></li><li><a href="../r/e5061154438c.html">淘天：一年被烧掉数百亿利润的现金牛</a><div class="meta">2026-08-05 · 公众号</div></li><li><a href="../r/9376fe7e65ec.html">马云回来了，方向盘在吴泳铭手里——以及多少钱值得买</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/dc7daff890e2.html">用巴菲特的方式，拆一份利润暴跌 62% 的财报</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/12b4efbd3c28.html">AI 时代，阿里是中国的亚马逊，还是下一个 IBM</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4ff68eaf9ecd.html">一年被烧掉数百亿利润的现金牛——淘天</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/1edee4f2eb1e.html">你以为你看懂了阿里巴巴，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/8c30a23aa8b0.html">《看懂阿里巴巴》系列说明</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/bc7c11a33df1.html">你以为你看懂了阿里巴巴，其实没有</a><div class="meta">2026-08-01 · 公众号</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/5eacdfc62656.html">用巴菲特的方式，拆一份利润暴跌 62% 的财报</a><div class="meta">2026-08-18 · 公众号</div></li><li><a href="../r/3e9c0540f78d.html">阿里巴巴（NYSE:BABA / HK:9988）——晨星估值视角的增量分析</a><div class="meta">2026-08-17 · 估值仓位</div></li><li><a href="../r/0c979d59c8de.html">阿里巴巴集团（BABA / 9988.HK）投资研究报告——三场烧钱战</a><div class="meta">2026-08-17 · 研究</div></li><li><a href="../r/eb69737f826c.html">AI 时代，阿里是中国的亚马逊，还是下一个 IBM</a><div class="meta">2026-08-08 · 公众号</div></li><li><a href="../r/e5061154438c.html">淘天：一年被烧掉数百亿利润的现金牛</a><div class="meta">2026-08-05 · 公众号</div></li><li><a href="../r/9376fe7e65ec.html">马云回来了，方向盘在吴泳铭手里——以及多少钱值得买</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/8c30a23aa8b0.html">《看懂阿里巴巴》系列说明</a><div class="meta">2026-08-01 · 导读</div></li><li><a href="../r/bc7c11a33df1.html">你以为你看懂了阿里巴巴，其实没有</a><div class="meta">2026-08-01 · 公众号</div></li><li><a href="../r/222942adafa0.html">阿里三周暴跌25%又暴涨10%：市场把一个工地看成了废墟</a><div class="meta">2026-07-10 · 公众号</div></li><li><a href="../r/f299ce8992f7.html">阿里巴巴集团（BABA / 9988.HK）投资研究报告</a><div class="meta">2026-07-09 · 研究</div></li><li><a href="../r/34a723ff542f.html">风险、治理与估值判断（终章）</a><div class="meta">2026-06-24 · 深度系列</div></li><li><a href="../r/130787e2c060.html">帝国的边疆——国际电商、即时零售与其他</a><div class="meta">2026-06-24 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#0">0. 一句话核心判断</a></li>
+<li><a href="#1-fy26-q1q3-2025-12-31">1. 财务现状画像（FY26 Q1–Q3，截至 2025-12-31）</a><ul>
+<li><a href="#11-ttm-fy26-fy25-q4">1.1 集团 TTM 营收（FY26 前三季度 + FY25 Q4 推算）</a></li>
+<li><a href="#12-fy26-q3-2025-12">1.2 FY26 Q3 关键损益指标（最新季度，2025-12）</a></li>
+<li><a href="#13-fy26-q3">1.3 各业务板块 FY26 Q3 表现</a></li>
+<li><a href="#14-2025-12-31">1.4 资产负债表（截至 2025-12-31）</a></li>
+<li><a href="#15-2026-05-04">1.5 当前股价、市值、估值（2026-05-04）</a></li>
+<li><a href="#16-fy25-ttm">1.6 当前估值倍数（基于 FY25 年报 + TTM 推算）</a></li>
+</ul>
+</li>
+<li><a href="#2-10">2. 10 年营收推演（按板块）</a><ul>
+<li><a href="#21">2.1 淘天集团（中国电商）</a></li>
+<li><a href="#22-ai">2.2 云智能集团（核心 AI 故事）</a></li>
+<li><a href="#23-aidc">2.3 AIDC（国际数字商业）</a></li>
+<li><a href="#24">2.4 本地生活（饿了么 + 闪购 + 高德合并）</a></li>
+<li><a href="#25">2.5 菜鸟 / 大文娱 / 其他</a></li>
+<li><a href="#26-fy36">2.6 集团合并营收推演（FY36）</a></li>
+</ul>
+</li>
+<li><a href="#3-10">3. 10 年利润率推演</a><ul>
+<li><a href="#31">3.1 阿里云稳态营业利润率（关键问题）</a></li>
+<li><a href="#32">3.2 淘天稳态利润率</a></li>
+<li><a href="#33-aidc">3.3 AIDC 何时盈利</a></li>
+<li><a href="#34">3.4 本地生活/即时零售</a></li>
+<li><a href="#35-10-ebita-non-gaap">3.5 集团 10 年后利润率（混合 EBITA → Non-GAAP 净利率）</a></li>
+</ul>
+</li>
+<li><a href="#4-fy2036">4. FY2036 利润三情景推演（核心输出）</a><ul>
+<li><a href="#fy2036">概率加权期望值（FY2036 年利润）</a></li>
+</ul>
+</li>
+<li><a href="#5">5. 与市场共识对比</a><ul>
+<li><a href="#51-fy27-fy28-2026-q1">5.1 主要投行 FY27-FY28 共识（基于 2026 Q1 更新）</a></li>
+<li><a href="#52-vs">5.2 简单线性外推 vs 本报告中性预测</a></li>
+</ul>
+</li>
+<li><a href="#6-vs-10-dcf">6. 当前估值 vs 10 年内在价值（DCF 反推）</a><ul>
+<li><a href="#61">6.1 反推内在价值</a></li>
+<li><a href="#62">6.2 安全边际判断</a></li>
+<li><a href="#63">6.3 触发买入的关键变量</a></li>
+</ul>
+</li>
+<li><a href="#7">7. 数据可信度声明</a><ul>
+<li><a href="#71">7.1 一手数据（高置信度）</a></li>
+<li><a href="#72">7.2 推算数据（中置信度）</a></li>
+<li><a href="#73">7.3 假设数据（低置信度，需持续追踪）</a></li>
+<li><a href="#74">7.4 交叉验证记录</a></li>
+</ul>
+</li>
+<li><a href="#8">8. 数字逻辑自检表</a></li>
+<li><a href="#_2">核心结论与投资建议</a></li>
+<li><a href="#sources">Sources</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

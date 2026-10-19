@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>自动驾驶——机遇还是威胁 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/Uber/index.html">Uber</a></div><h1>自动驾驶——机遇还是威胁</h1><div class="meta"><a href="../companies/Uber/index.html">Uber</a> ｜ 2026-07-13 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Uber/%E3%80%8A%E7%9C%8B%E6%87%82Uber%E3%80%8B/03-%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6-%E6%9C%BA%E9%81%87%E8%BF%98%E6%98%AF%E5%A8%81%E8%83%81.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>自动驾驶——机遇还是威胁 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/Uber/index.html">Uber</a></div><div class="layout"><div><h1>自动驾驶——机遇还是威胁</h1><div class="meta"><a href="../companies/Uber/index.html">Uber</a> ｜ 2026-07-13 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Uber/%E3%80%8A%E7%9C%8B%E6%87%82Uber%E3%80%8B/03-%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6-%E6%9C%BA%E9%81%87%E8%BF%98%E6%98%AF%E5%A8%81%E8%83%81.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">为什么这一篇最重要</a></li>
 <li><a href="#_2">自动驾驶的现状：不再是科幻</a><ul>
@@ -293,4 +303,42 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 </ul>
 <hr />
 <p><em>本文是《看懂Uber》系列第 03 篇。终章将于下期推出。</em>
-<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/6be88ad17600.html">Uber 风险与管理层评估</a><div class="meta">2026-06-20 · 组织管理</div></li><li><a href="../r/5cb114ed9260.html">Uber 行业竞争分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/19a26a1b6852.html">Uber 财务估值分析</a><div class="meta">2026-06-20 · 估值仓位</div></li><li><a href="../r/f4ce65752a5c.html">Uber 商业模式分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/1dc680058999.html">风险与估值（终章）</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/f6ed32b9d2e6.html">出行加外卖的双飞轮</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/633b82c8d5ac.html">从亏损之王到盈利机器</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/ead856364209.html">《看懂Uber》系列说明</a><div class="meta">2026-05-22 · 底稿</div></li><li><a href="../r/0da4cc4f1425.html">Uber Technologies (UBER) 投资研究最终报告</a><div class="meta">2026-05-16 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/6be88ad17600.html">Uber 风险与管理层评估</a><div class="meta">2026-06-20 · 组织管理</div></li><li><a href="../r/5cb114ed9260.html">Uber 行业竞争分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/19a26a1b6852.html">Uber 财务估值分析</a><div class="meta">2026-06-20 · 估值仓位</div></li><li><a href="../r/f4ce65752a5c.html">Uber 商业模式分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/1dc680058999.html">风险与估值（终章）</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/f6ed32b9d2e6.html">出行加外卖的双飞轮</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/633b82c8d5ac.html">从亏损之王到盈利机器</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/ead856364209.html">《看懂Uber》系列说明</a><div class="meta">2026-05-22 · 导读</div></li><li><a href="../r/0da4cc4f1425.html">Uber Technologies (UBER) 投资研究最终报告</a><div class="meta">2026-05-16 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">为什么这一篇最重要</a></li>
+<li><a href="#_2">自动驾驶的现状：不再是科幻</a><ul>
+<li><a href="#waymoalphabet">Waymo（Alphabet 旗下）</a></li>
+<li><a href="#_3">特斯拉</a></li>
+<li><a href="#_4">其他玩家</a></li>
+</ul>
+</li>
+<li><a href="#_5">两种截然相反的未来</a><ul>
+<li><a href="#uber">乐观叙事："Uber 成为自动驾驶的安卓"</a></li>
+<li><a href="#uber_1">悲观叙事："Uber 被绕过"</a></li>
+</ul>
+</li>
+<li><a href="#_6">冷静分析：概率和时间线</a><ul>
+<li><a href="#2026-2028">短期（2026-2028）：影响有限</a></li>
+<li><a href="#2028-2032">中期（2028-2032）：竞合并存</a></li>
+<li><a href="#2032">长期（2032+）：格局重塑</a></li>
+</ul>
+</li>
+<li><a href="#uber_2">Uber 的应对策略</a><ul>
+<li><a href="#1-20-av">1. 与 20+ 家 AV 公司合作</a></li>
+<li><a href="#2-100">2. 投入 100 亿+自建车队</a></li>
+<li><a href="#3">3. 投资充电基础设施</a></li>
+<li><a href="#4-ceo">4. CEO 的公开表态</a></li>
+</ul>
+</li>
+<li><a href="#_7">关键变量：谁拥有"需求"，谁拥有"供给"</a></li>
+<li><a href="#_8">一个类比：帮你建立直觉</a></li>
+<li><a href="#_9">给投资者的冷静判断</a><ul>
+<li><a href="#_10">确定的事</a></li>
+<li><a href="#_11">不确定的事</a></li>
+<li><a href="#_12">一个思考框架</a></li>
+</ul>
+</li>
+<li><a href="#_13">下期预告</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
