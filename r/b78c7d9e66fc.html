@@ -1,0 +1,200 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>stepfun-ai__step3__README · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a></div><h1>stepfun-ai__step3__README</h1><div class="meta"><a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/stepfun-ai__step3__README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a><ul>
+<li><a href="#step3-model-card">Step3 model card:</a></li>
+</ul>
+</li>
+<li><a href="#evaluation-results">Evaluation Results</a></li>
+<li><a href="#deployment">Deployment</a><ul>
+<li><a href="#inference-with-hugging-face-transformers">Inference with Hugging Face Transformers</a></li>
+<li><a href="#inference-with-vllm-and-sglang">Inference with vLLM and SGLang</a></li>
+</ul>
+</li>
+<li><a href="#contact-us">Contact Us</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#citation">Citation</a></li>
+</ul>
+</div>
+</details><article><div align="center">
+  <picture>
+      <img src="https://github.com/stepfun-ai/Step3/blob/main/figures/stepfun-logo.png?raw=true" width="30%" alt="StepFun: Cost-Effective Multimodal Intelligence">
+  </picture>
+</div>
+
+<hr>
+
+<div align="center" style="line-height:1">
+  <a href="https://stepfun.com/" target="_blank"><img alt="Chat" src="https://img.shields.io/badge/Chat-StepFun-ff6b6b?color=1783ff&logoColor=white"/></a>
+  <a href="https://stepfun.com/" target="_blank"><img alt="Homepage" src="https://img.shields.io/badge/Homepage-StepFun-white?logo=StepFun&logoColor=white"/></a>
+</div>
+
+<div align="center" style="line-height: 1;">
+  <a href="https://github.com/stepfun-ai/Step3" target="_blank"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-StepFun-white?logo=github&logoColor=white"/></a>
+  <a href="https://www.modelscope.cn/models/stepfun-ai/step3" target="_blank"><img alt="ModelScope" src="https://img.shields.io/badge/🤖ModelScope-StepFun-ffc107?color=7963eb&logoColor=white"/></a>
+  <a href="https://x.com/StepFun_ai" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/badge/Twitter-StepFun-white?logo=x&logoColor=white"/></a>
+</div>
+
+<div align="center" style="line-height: 1;">
+<a href="https://discord.com/invite/XHheP5Fn" target="_blank"><img alt="Discord" src="https://img.shields.io/badge/Discord-StepFun-white?logo=discord&logoColor=white"/></a>
+  <a href="https://huggingface.co/stepfun-ai/step3/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue?&color=blue"/></a>
+</div>
+
+<div align="center">
+<b>📰&nbsp;&nbsp;<a href="https://stepfun.ai/research/step3">Step3 Model Blog</a></b> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; <b>📄&nbsp;&nbsp;<a href="https://arxiv.org/abs/2507.19427">Step3 System Blog</a></b>
+</div>
+
+<h2 id="introduction">Introduction</h2>
+<p>Step3 is our cutting-edge multimodal reasoning model—built on a Mixture-of-Experts architecture with 321B total parameters and 38B active. 
+It is designed end-to-end to minimize decoding costs while delivering top-tier performance in vision–language reasoning. 
+Through the co-design of Multi-Matrix Factorization Attention (MFA) and Attention-FFN Disaggregation (AFD), 
+Step3 maintains exceptional efficiency across both flagship and low-end accelerators.</p>
+<h3 id="step3-model-card">Step3 model card:</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Config</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Number of Layers (Dense layer included)</strong></td>
+<td>61</td>
+</tr>
+<tr>
+<td><strong>Number of Dense Layers</strong></td>
+<td>5</td>
+</tr>
+<tr>
+<td><strong>Hidden Dimension</strong></td>
+<td>7168</td>
+</tr>
+<tr>
+<td><strong>Attention Mechanism</strong></td>
+<td>MFA</td>
+</tr>
+<tr>
+<td><strong>Low-rank Query Dimension</strong></td>
+<td>2048</td>
+</tr>
+<tr>
+<td><strong>Number of Query Heads</strong></td>
+<td>64</td>
+</tr>
+<tr>
+<td><strong>Head Dimension</strong></td>
+<td>256</td>
+</tr>
+<tr>
+<td><strong>Number of Experts</strong></td>
+<td>48</td>
+</tr>
+<tr>
+<td><strong>Selected Experts per Token</strong></td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Number of Shared Experts</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Max Context Length</strong></td>
+<td>65536</td>
+</tr>
+<tr>
+<td><strong>Tokenizer</strong></td>
+<td>Deepseek V3</td>
+</tr>
+<tr>
+<td><strong>Total Parameters (LLM)</strong></td>
+<td>316B</td>
+</tr>
+<tr>
+<td><strong>Activated Params per Token</strong></td>
+<td>38B</td>
+</tr>
+<tr>
+<td><strong>Total Parameters (VLM)</strong></td>
+<td>321B</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="evaluation-results">Evaluation Results</h2>
+<p><img alt="" src="figures/step3_bmk.jpeg" /></p>
+<h2 id="deployment">Deployment</h2>
+<blockquote>
+<p>[!Note]
+Step3's API is accessible at https://platform.stepfun.com/, where we offer OpenAI-compatible API for you.</p>
+</blockquote>
+<h3 id="inference-with-hugging-face-transformers">Inference with Hugging Face Transformers</h3>
+<p>We introduce how to use our model at inference stage using transformers library. It is recommended to use python=3.10, torch&gt;=2.1.0, and transformers=4.54.0 as the development environment.We currently only support bf16 inference, and multi-patch for image preprocessing is supported by default. This behavior is aligned with vllm and sglang.</p>
+<pre><code class="language-python">from transformers import AutoProcessor, AutoModelForCausalLM
+
+key_mapping = {
+    &quot;^vision_model&quot;: &quot;model.vision_model&quot;,
+    r&quot;^model(?!\.(language_model|vision_model))&quot;: &quot;model.language_model&quot;,
+    &quot;vit_downsampler&quot;: &quot;model.vit_downsampler&quot;,
+    &quot;vit_downsampler2&quot;: &quot;model.vit_downsampler2&quot;,
+    &quot;vit_large_projector&quot;: &quot;model.vit_large_projector&quot;,
+}
+
+model_path = &quot;stepfun-ai/step3&quot;
+
+processor = AutoProcessor.from_pretrained(model_path, trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained(model_path, 
+                device_map=&quot;auto&quot;, torch_dtype=&quot;auto&quot;,trust_remote_code=True, 
+                key_mapping=key_mapping)
+
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: [
+            {&quot;type&quot;: &quot;image&quot;, &quot;image&quot;: &quot;https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/bee.jpg&quot;},
+            {&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;What's in this picture?&quot;}
+        ]
+    },
+]
+
+inputs = processor.apply_chat_template(
+    messages, add_generation_prompt=True, tokenize=True,
+    return_dict=True, return_tensors=&quot;pt&quot;
+).to(model.device)
+
+generate_ids = model.generate(**inputs, max_new_tokens=32768, do_sample=False)
+decoded = processor.decode(generate_ids[0, inputs[&quot;input_ids&quot;].shape[-1] :], skip_special_tokens=True)
+
+print(decoded)
+
+</code></pre>
+<h3 id="inference-with-vllm-and-sglang">Inference with vLLM and SGLang</h3>
+<p>Our model checkpoints are stored in bf16 and block-fp8 format, you can find it on <a href="https://huggingface.co/collections/stepfun-ai/step3-688a3d652dbb45d868f9d42d">Huggingface</a>.</p>
+<p>Currently, it is recommended to run Step3 on the following inference engines:</p>
+<ul>
+<li>vLLM</li>
+<li>SGLang</li>
+</ul>
+<p>Deployment and Request examples for vLLM and SGLang can be found in the <a href="docs/deploy_guidance.md">Model Deployment Guide</a>.</p>
+<h2 id="contact-us">Contact Us</h2>
+<p>If you have any questions, please reach out at <a href="mailto:contact@stepfun.com">contact@stepfun.com</a> .</p>
+<h2 id="license">License</h2>
+<p>Both the code repository and the model weights are released under the <a href="./LICENSE">Apache License (Version 2.0)</a>.</p>
+<h2 id="citation">Citation</h2>
+<pre><code>@misc{step3system,
+      title={Step-3 is Large yet Affordable: Model-system Co-design for Cost-effective Decoding}, 
+      author={StepFun Team},
+      year={2025},
+      eprint={2507.19427},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2507.19427}, 
+}
+
+@misc{step3blog,
+      title={Step3: Cost-Effective Multimodal Intelligence}, 
+      author={StepFun Team},
+      url={https://stepfun.ai/research/step3}, 
+}
+</code></pre></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/94b63c16f6b1.html">GLM-5</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/224a0c39bab5.html">GLM-5.3</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/22905c393a9c.html">GLM-5.3-Flash</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d060129a14be.html">GLM-5.2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f90617223e31.html">GLM-4.7</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/0edcfc955787.html">GLM-4.6V</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8cf89aee725c.html">GLM-4.5-Air</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/10aa23c70e91.html">Grok 2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/652b9a513303.html">Grok-1</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4224b4932376.html">Solar Open</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/32e837241209.html">tencent__Hy3__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/e9c250974ef4.html">tencent__Hunyuan-Large__README</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

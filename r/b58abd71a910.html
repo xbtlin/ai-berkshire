@@ -1,0 +1,589 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>蚂蚁数科竞争全景研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/蚂蚁数科/index.html">蚂蚁数科</a></div><h1>蚂蚁数科竞争全景研究报告</h1><div class="meta"><a href="../companies/蚂蚁数科/index.html">蚂蚁数科</a> ｜ 2026-05-12 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%9A%82%E8%9A%81%E6%95%B0%E7%A7%91/%E8%9A%82%E8%9A%81%E6%95%B0%E7%A7%91-%E7%AB%9E%E4%BA%89%E5%85%A8%E6%99%AF-20260512.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、核心结论</a></li>
+<li><a href="#_2">二、五条产品线竞争格局总览</a></li>
+<li><a href="#_3">三、各赛道关键竞争对手</a><ul>
+<li><a href="#31-baasrwa">3.1 蚂蚁链（区块链BaaS/RWA）</a></li>
+<li><a href="#32">3.2 摩斯（隐私计算）</a></li>
+<li><a href="#33-sofastackmpaas-zolozekyc">3.3 SOFAStack/mPaaS（金融中间件）+ ZOLOZ（eKYC）</a></li>
+<li><a href="#34-agentarai">3.4 Agentar（AI智能体）</a></li>
+<li><a href="#35">3.5 蚁盾（安全风控）</a></li>
+</ul>
+</li>
+<li><a href="#_4">四、云服务商威胁评估</a></li>
+<li><a href="#_5">五、大模型厂商威胁评估</a></li>
+<li><a href="#_6">六、竞争格局的终极判断</a><ul>
+<li><a href="#_7">蚂蚁数科真正的竞争优势是什么？</a></li>
+<li><a href="#_8">最大的三个竞争风险</a></li>
+<li><a href="#_9">蚂蚁数科的最佳战略定位</a></li>
+</ul>
+</li>
+<li><a href="#_10">七、对蚂蚁数科估值的影响</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>研究日期</strong>：2026年5月12日
+<strong>研究方法</strong>：7个Agent并行研究（5条产品线竞争对手 + 云服务商威胁 + 大模型厂商威胁）
+<strong>研究对象</strong>：蚂蚁数科（不含OceanBase、不含百灵大模型）</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、核心结论</h2>
+<p>蚂蚁数科的竞争处境可以用一句话概括：<strong>"小赛道的龙头，大赛道的追赶者，两面夹击中的生存者"</strong>。</p>
+<ul>
+<li>在区块链BaaS（26.5%第一）、隐私计算（36.7%第一）、金融反欺诈（亚太第一）等细分赛道占据龙头，但这些赛道合计市场规模不到40亿元</li>
+<li>在AI智能体这个高增长大赛道（2030年预计193亿），面临百度/腾讯/华为/恒生电子的四面围攻</li>
+<li>结构性威胁来自两个方向：华为云从IaaS向PaaS全栈向上侵蚀，大模型厂商从模型层向应用层向下挤压</li>
+</ul>
+<hr />
+<h2 id="_2">二、五条产品线竞争格局总览</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>产品线</th>
+<th>市场规模</th>
+<th>蚂蚁数科地位</th>
+<th>最大威胁</th>
+<th>护城河深度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蚂蚁链（BaaS/RWA）</td>
+<td>BaaS~19亿</td>
+<td>26.5%第一（连续4年）</td>
+<td>国内：长安链（国家队）；海外：R3 Corda（170亿美元RWA）</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>摩斯（隐私计算）</td>
+<td>~10亿</td>
+<td>36.7%第一（连续3年）</td>
+<td>华控清交（MPC专精+大行客户）、FATE（开源生态）</td>
+<td>高</td>
+</tr>
+<tr>
+<td>SOFAStack/mPaaS（中间件）</td>
+<td>金融PaaS百亿级</td>
+<td>金融级中间件领先，130+金融机构</td>
+<td>中电金信（银行IT七连冠600+客户）、华为云（全栈向上）</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>Agentar（AI智能体）</td>
+<td>~9亿（2024），2030年193亿</td>
+<td>IDC"领导者"</td>
+<td>百度智能云（金融大模型份额第一）、恒生电子（金融IT垄断+LightGPT）</td>
+<td>中</td>
+</tr>
+<tr>
+<td>蚁盾（安全风控）</td>
+<td>中国零售信贷风控654亿</td>
+<td>IDC份额15.7%第一，Forrester亚太第一</td>
+<td>同盾科技（10,000+客户、纯独立第三方）</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>ZOLOZ（海外eKYC）</td>
+<td>全球eKYC~9.5亿美元</td>
+<td>东南亚头部，2000+客户</td>
+<td>Advance.ai（东南亚本土）、Sumsub（全球增长最快）</td>
+<td>中高</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_3">三、各赛道关键竞争对手</h2>
+<h3 id="31-baasrwa">3.1 蚂蚁链（区块链BaaS/RWA）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>竞争对手</th>
+<th>BaaS份额</th>
+<th>核心优势</th>
+<th>威胁等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯TBaaS</td>
+<td>18.8%（第2）</td>
+<td>政务区块链23.3%第一，万级金融客户基数</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>长安链ChainMaker</td>
+<td>使用率第1（信通院）</td>
+<td>国家队+专用芯片+完全自主可控</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>微众FISCO BCOS</td>
+<td>开源生态第1</td>
+<td>5000+机构/10万+开发者，完全开源</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>BSN</td>
+<td>基础设施层</td>
+<td>国家级基础设施，降低区块链使用门槛</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>R3 Corda</td>
+<td>RWA全球第1</td>
+<td>170亿美元链上资产，已与Solana合作</td>
+<td>★★★（海外）</td>
+</tr>
+<tr>
+<td>趣链科技</td>
+<td>前三外</td>
+<td>首家区块链独角兽，但大规模裁员（1200→400人）</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>百度超级链</td>
+<td>前三外</td>
+<td>2553项专利，但战略重心已转向AI</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>京东智臻链</td>
+<td>前三外</td>
+<td>供应链溯源深度绑定京东生态，但优先级下降</td>
+<td>★</td>
+</tr>
+<tr>
+<td>Hyperledger Fabric</td>
+<td>全球许可链80%</td>
+<td>企业级区块链事实标准，但被中国国产化替代</td>
+<td>★★</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键判断</strong>：蚂蚁链BaaS商业化第一的位置短期稳固，但面临"国内被长安链挤压（政务/央国企），海外与R3 Corda赛跑（RWA）"的格局。</p>
+<h3 id="32">3.2 摩斯（隐私计算）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>竞争对手</th>
+<th>份额/排名</th>
+<th>核心优势</th>
+<th>威胁等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蓝象智联</td>
+<td>IDC第2</td>
+<td>增速84.1%最快，潜在独角兽</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>华控清交</td>
+<td>IDC前5</td>
+<td>唯一在大行上线MPC生产系统，清华学术壁垒，估值45亿</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>富数科技</td>
+<td>IDC第3</td>
+<td>Avatar MPC平台，国标牵头，数交所首批数商</td>
+<td>★★★½</td>
+</tr>
+<tr>
+<td>微众FATE</td>
+<td>生态影响力第1</td>
+<td>全球最大联邦学习开源框架（5600+ Stars），55%产品基于FATE</td>
+<td>★★★½</td>
+</tr>
+<tr>
+<td>洞见科技</td>
+<td>前10</td>
+<td>政务招标能力突出</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>翼方健数</td>
+<td>前10</td>
+<td>医疗健康垂直壁垒</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>同盾科技</td>
+<td>风控为主</td>
+<td>万余客户，但创始人被起诉</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>数牍科技</td>
+<td>前10</td>
+<td>"隐私工程"理念，运营商先发</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>百度PaddleFL</td>
+<td>未进前列</td>
+<td>战略重心转向大模型，隐私计算优先级降低</td>
+<td>★</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键判断</strong>：摩斯36.7%份额遥遥领先，但最大威胁不是竞争对手，而是<strong>市场本身太小</strong>（仅10亿元）。2024年全年仅1笔行业融资、4家新注册企业，行业正在残酷洗牌。能否借大模型时代的联邦训练需求和数据要素市场化政策突破天花板，是摩斯面临的存亡性问题。</p>
+<h3 id="33-sofastackmpaas-zolozekyc">3.3 SOFAStack/mPaaS（金融中间件）+ ZOLOZ（eKYC）</h3>
+<p><strong>金融中间件</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>竞争对手</th>
+<th>营收/规模</th>
+<th>核心优势</th>
+<th>威胁等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中电金信</td>
+<td>600+金融机构</td>
+<td>银行IT解决方案七连冠，核心系统全覆盖</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>华为云</td>
+<td>300+金融机构</td>
+<td>全栈自主可控+信创+金融云基础设施第一</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>腾讯云</td>
+<td>10,000+金融客户</td>
+<td>TDSQL+金融PaaS第二</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>神州信息</td>
+<td>100亿营收</td>
+<td>核心系统+渠道十三连冠</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>东方通</td>
+<td>7.58亿营收</td>
+<td>信创中间件龙头（21.9%份额）</td>
+<td>★★½</td>
+</tr>
+<tr>
+<td>阿里云</td>
+<td>约1200亿</td>
+<td>SOFAStack渠道合作方，协作为主</td>
+<td>★★</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>海外eKYC</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>竞争对手</th>
+<th>营收</th>
+<th>核心优势</th>
+<th>威胁等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sumsub</td>
+<td>8560万美元</td>
+<td>KYC+AML+KYB全链条，增长最快</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>Advance.ai</td>
+<td>5250万美元</td>
+<td>东南亚本地化最深，500+客户</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>Veriff</td>
+<td>4160万美元</td>
+<td>12,500+证件类型，6秒验证</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>Onfido</td>
+<td>1.09亿美元</td>
+<td>被Entrust收购，整合中</td>
+<td>★★½</td>
+</tr>
+<tr>
+<td>Jumio</td>
+<td>1800万美元</td>
+<td>全球领导者，但营收下滑</td>
+<td>★★</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="34-agentarai">3.4 Agentar（AI智能体）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>竞争对手</th>
+<th>金融AI布局</th>
+<th>自研大模型</th>
+<th>威胁等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>百度智能云</td>
+<td>IDC金融大模型份额12.2%第一，千帆慧金</td>
+<td>文心4.5（全球第二）</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>腾讯云</td>
+<td>10,000+金融客户，七大金融智能体</td>
+<td>混元大模型</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>恒生电子</td>
+<td>金融IT系统垄断+LightGPT（4000亿token金融数据）</td>
+<td>LightGPT</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>华为云</td>
+<td>沙利文金融大模型第一，六大行客户</td>
+<td>盘古5.5</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>科大讯飞</td>
+<td>大模型中标金额全行业第一</td>
+<td>星火</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>第四范式</td>
+<td>先知平台，前三季度收入44亿</td>
+<td>无自研基础模型</td>
+<td>★★½</td>
+</tr>
+<tr>
+<td>同花顺</td>
+<td>C端金融数据垄断，60亿营收</td>
+<td>HithinkGPT</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>达观数据</td>
+<td>金融文档AI专精</td>
+<td>曹植</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>Coze/Dify</td>
+<td>通用智能体平台</td>
+<td>无/调用第三方</td>
+<td>★½</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键判断</strong>：AI智能体是蚂蚁数科竞争最激烈的产品线。Agentar在"金融智能体开发平台"细分赛道IDC领导者，但面临两面夹击——云厂商从基础设施延伸到应用层，恒生电子从IT系统延伸到智能体。没有自研基础大模型短期不致命（Fin-R1基于Qwen3微调已超越DeepSeek-R1同尺寸），但长期有隐忧。</p>
+<h3 id="35">3.5 蚁盾（安全风控）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>竞争对手</th>
+<th>营收/规模</th>
+<th>核心优势</th>
+<th>威胁等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>同盾科技</td>
+<td>估计10亿级/估值92亿</td>
+<td>纯独立第三方+10,000+客户+DeepSeek融合，但创始人被起诉</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>FICO</td>
+<td>19.9亿美元/市值300亿</td>
+<td>全球信用评分标准，但中国市场几乎无存在感</td>
+<td>★</td>
+</tr>
+<tr>
+<td>SAS</td>
+<td>33亿美元</td>
+<td>全球分析巨头，但大模型融合滞后</td>
+<td>★</td>
+</tr>
+<tr>
+<td>LexisNexis</td>
+<td>33亿美元</td>
+<td>全球身份数据网络，但中国数据生态缺失</td>
+<td>★</td>
+</tr>
+<tr>
+<td>邦盛科技</td>
+<td>2.7亿</td>
+<td>流立方实时计算引擎，正二次冲击IPO</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>冰鉴科技</td>
+<td>数亿级/融资近7亿</td>
+<td>企业征信+海外拓展</td>
+<td>★★½</td>
+</tr>
+<tr>
+<td>DataVisor</td>
+<td>约2600万美元</td>
+<td>无监督学习反欺诈（独特技术壁垒）</td>
+<td>★★</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键判断</strong>：蚁盾可能是蚂蚁数科被低估的核心资产——Forrester亚太第一+IDC中国零售信贷风控15.7%第一，估计贡献蚂蚁数科30-40%收入。大模型正在"进化式重构"而非颠覆风控赛道，数据和场景壁垒反而更高，利好蚁盾。</p>
+<hr />
+<h2 id="_4">四、云服务商威胁评估</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>云厂商</th>
+<th>威胁评级</th>
+<th>核心理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>华为云</strong></td>
+<td>★★★★</td>
+<td>金融自建云份额28.9%第一，六大行+全部股份行均是客户，正从IaaS向PaaS全栈延伸。品牌信任度（"国产安全可控"）在金融行业极强</td>
+</tr>
+<tr>
+<td><strong>腾讯云</strong></td>
+<td>★★★</td>
+<td>BaaS第二（18.8%）、政务区块链第一（23.3%），万级金融客户，但金融中间件/隐私计算深度不如蚂蚁</td>
+</tr>
+<tr>
+<td><strong>阿里云</strong></td>
+<td>★★</td>
+<td>同属阿里生态，SOFAStack通过阿里云渠道销售。主要风险在百炼与Agentar的内部重叠（阿里集团内竟有6个智能体平台）</td>
+</tr>
+<tr>
+<td><strong>AWS</strong></td>
+<td>★</td>
+<td>中国金融市场存在感持续下降，大中华区"大客户飘摇"</td>
+</tr>
+<tr>
+<td><strong>Azure</strong></td>
+<td>★★</td>
+<td>全球企业级AI领先，但中国金融市场受限于数据主权和国产替代</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核心判断</strong>：蚂蚁数科面临的最大威胁不是任何单一云厂商的正面竞争，而是两种结构性风险——（1）华为云全栈向上侵蚀PaaS层；（2）金融机构客户在"一站式云方案"vs"Best-of-Breed最佳组合"之间的选择。目前大型银行仍倾向Best-of-Breed（利好蚂蚁数科），但中小银行可能更倾向一站式（华为云有优势）。</p>
+<hr />
+<h2 id="_5">五、大模型厂商威胁评估</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>大模型厂商</th>
+<th>威胁评级</th>
+<th>核心理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>阿里云百炼</strong></td>
+<td>★★★★</td>
+<td>同生态内部竞争最危险——百炼定位通用但向金融渗透，与Agentar争同一批客户</td>
+</tr>
+<tr>
+<td><strong>DeepSeek</strong></td>
+<td>★★★★½</td>
+<td>不直接竞争但<strong>从底层瓦解AI应用层价值</strong>——20+银行已部署，大行基于开源模型自建，绕过Agentar</td>
+</tr>
+<tr>
+<td><strong>智谱AI</strong></td>
+<td>★★★½</td>
+<td>直接对标（上市后市值3470亿、金融智能体收入增248.8%），有自研基础模型优势</td>
+</tr>
+<tr>
+<td><strong>百川智能</strong></td>
+<td>★</td>
+<td>已退出金融赛道，转向医疗AI</td>
+</tr>
+<tr>
+<td><strong>月之暗面/MiniMax</strong></td>
+<td>★½</td>
+<td>重心在C端，金融行业缺乏合规体系</td>
+</tr>
+<tr>
+<td><strong>OpenAI/Anthropic</strong></td>
+<td>★★（对ZOLOZ出海）</td>
+<td>不进入中国金融市场，但赋能海外本土竞争者</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核心判断</strong>：蚂蚁数科面临的不是"大模型碾压"，而是 <strong>"价值层被挤压"</strong>——向上被大模型厂商（百炼/智谱）从模型层延伸到应用层，向下被开源模型（DeepSeek）让大行自建绕过中间层。"模型即平台"趋势在标准化场景成立、在深度金融场景不成立。Agentar的价值取决于金融场景是否足够特殊、足够复杂，让通用方案永远无法完全替代。</p>
+<hr />
+<h2 id="_6">六、竞争格局的终极判断</h2>
+<h3 id="_7">蚂蚁数科真正的竞争优势是什么？</h3>
+<p><strong>不是技术，是"金融场景的脏活累活"。</strong></p>
+<ul>
+<li>技术壁垒（专利/算法）可以被追赶——华为有全栈能力，智谱有自研大模型</li>
+<li>客户关系可以被抢——华为已占据六大行基础设施，腾讯有万级金融客户</li>
+<li>蚂蚁数科真正难以复制的是：支付宝体系十余年积累的<strong>金融场景工程化能力</strong>——66类金融智能体场景分类、信通院5级认证、金融推理大模型的行业数据训练、以及在高并发/高可用/资金安全等极端场景下的实战验证</li>
+</ul>
+<h3 id="_8">最大的三个竞争风险</h3>
+<ol>
+<li><strong>华为云全栈向上</strong>（概率高/影响高）：华为云已占金融IaaS制高点，若持续向PaaS/应用层延伸，凭"一朵云"策略和客户关系可逐步蚕食蚂蚁数科市场</li>
+<li><strong>DeepSeek开源瓦解AI应用层价值</strong>（概率高/影响中高）：大行基于开源模型自建能力，Agentar的"金融AI平台"定位可能被挤压为"集成服务商"</li>
+<li><strong>核心赛道天花板</strong>（概率高/影响中）：BaaS~19亿+隐私计算~10亿+安全风控中蚁盾份额=合计不到40亿的核心市场，支撑不了高估值叙事</li>
+</ol>
+<h3 id="_9">蚂蚁数科的最佳战略定位</h3>
+<p><strong>不做通用平台（打不过阿里云/华为云/智谱），做金融行业最深的垂直解决方案提供商。</strong> 核心赌注是：金融行业足够特殊、足够复杂，通用方案永远无法完全替代。RWA/Web3是跳出"小赛道龙头"困境的唯一方向——如果香港稳定币+Jovay公链生态成型，蚂蚁数科有机会从"小赛道第一"跃升为新兴大赛道的先行者。</p>
+<hr />
+<h2 id="_10">七、对蚂蚁数科估值的影响</h2>
+<p>本次竞争研究对此前报告（蚂蚁数科-private-20260511.md）估值判断的修正：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>此前判断</th>
+<th>竞争研究后修正</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>护城河</td>
+<td>中等</td>
+<td><strong>维持中等</strong>——小赛道第一有真壁垒，但大赛道（AI）壁垒不深</td>
+</tr>
+<tr>
+<td>估值区间</td>
+<td>300-500亿</td>
+<td><strong>维持</strong>——核心赛道天花板限制了上行空间，RWA期权价值是变量</td>
+</tr>
+<tr>
+<td>最大风险</td>
+<td>关联交易/退出路径</td>
+<td><strong>新增</strong>：华为云全栈侵蚀、DeepSeek瓦解AI应用层价值、核心赛道天花板</td>
+</tr>
+<tr>
+<td>被低估资产</td>
+<td>RWA/Web3</td>
+<td><strong>确认</strong>：蚁盾（安全风控）也是被低估的核心资产，估计贡献30-40%收入</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<blockquote>
+<p><strong>免责声明</strong>：本报告基于公开信息研究，竞争对手数据来自IDC、Forrester、Gartner等第三方报告及媒体报道，部分营收/份额数据为推算值（已标注置信度）。报告不构成投资建议。</p>
+</blockquote></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/a4b607ef8ab2.html">《看懂蚂蚁数科》系列说明</a><div class="meta">2026-07-13 · 底稿</div></li><li><a href="../r/4fd49db56b96.html">估值迷雾与三重不确定性</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/c26d0abf0436.html">小赛道的龙头，大赛道的追赶者</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/fd0499790777.html">一台金融科技的瑞士军刀</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/90fd78b7bbf2.html">从蚂蚁集团到蚂蚁数科</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/e21f53620456.html">蚂蚁数科（Ant Digital Technologies）5年估值预测（2026-2031）</a><div class="meta">2026-05-15 · 估值仓位</div></li><li><a href="../r/b97fb6c3e1d9.html">蚂蚁数科（Ant Digital Technologies）未上市公司深度研究报告</a><div class="meta">2026-05-11 · 研究</div></li><li><a href="../r/ff45906737fd.html">蚂蚁数科投资研究最终报告</a><div class="meta">2026-05-08 · 研究</div></li><li><a href="../r/590bd8094fa5.html">蚂蚁数科风险与管理层评估</a><div class="meta">2026-05-08 · 组织管理</div></li><li><a href="../r/05dbfa24d3bb.html">蚂蚁数科行业与竞争格局分析</a><div class="meta">2026-05-08 · 研究</div></li><li><a href="../r/e987c19e90c4.html">蚂蚁数科财务与估值深度分析</a><div class="meta">2026-05-08 · 估值仓位</div></li><li><a href="../r/fcb50356ab0d.html">蚂蚁数科商业模式深度分析</a><div class="meta">2026-05-08 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

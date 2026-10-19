@@ -1,0 +1,799 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>蚂蚁数科 财务数据拼凑与估值推演 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/蚂蚁数科/index.html">蚂蚁数科</a></div><h1>蚂蚁数科 财务数据拼凑与估值推演</h1><div class="meta"><a href="../companies/蚂蚁数科/index.html">蚂蚁数科</a> ｜ 2026-04-17 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%9A%82%E8%9A%81%E6%95%B0%E7%A7%91-team-20260417/02-%E8%B4%A2%E5%8A%A1%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#0">0. 执行摘要</a></li>
+<li><a href="#1">1. 数据来源矩阵</a></li>
+<li><a href="#2">2. 关键财务指标推算</a><ul>
+<li><a href="#21">2.1 收入规模（核心难点：双口径并存）</a></li>
+<li><a href="#22">2.2 收入结构（按业务线）</a></li>
+<li><a href="#23">2.3 海外营收核验</a></li>
+<li><a href="#24">2.4 毛利率（无披露，全部对标推算）</a></li>
+<li><a href="#25">2.5 经营利润 / 亏损</a></li>
+<li><a href="#26">2.6 经营现金流</a></li>
+<li><a href="#27">2.7 员工人数与人效</a></li>
+</ul>
+</li>
+<li><a href="#3">3. 融资历史与估值演变</a><ul>
+<li><a href="#31">3.1 蚂蚁数科融资史</a></li>
+<li><a href="#32">3.2 母公司蚂蚁集团估值演变（提供分部估值的"上限锚"）</a></li>
+<li><a href="#33-2024">3.3 2024年蚂蚁集团整体业绩</a></li>
+</ul>
+</li>
+<li><a href="#4">4. 员工股权激励价格深度核验 🟢</a><ul>
+<li><a href="#41-20253">4.1 「一拆四」映射事件（2025年3月披露）</a></li>
+<li><a href="#42">4.2 关键政策细节</a></li>
+<li><a href="#43">4.3 员工股价反推估值（核心）</a></li>
+<li><a href="#44-vs">4.4 蚂蚁集团 vs 蚂蚁数科股权定价差异</a></li>
+</ul>
+</li>
+<li><a href="#5-ipo">5. IPO进展</a><ul>
+<li><a href="#51">5.1 蚂蚁集团整体</a></li>
+<li><a href="#52">5.2 三大子公司分拆上市路线</a></li>
+<li><a href="#53-ipo">5.3 蚂蚁数科IPO关键节点</a></li>
+</ul>
+</li>
+<li><a href="#6">6. 估值分析（多方法交叉）</a><ul>
+<li><a href="#1public-comparables">方法1：可比公司法（Public Comparables）</a></li>
+<li><a href="#2dcf">方法2：分部DCF（极简版）</a></li>
+<li><a href="#3_1">方法3：员工股权口径反推</a></li>
+<li><a href="#4-vs">方法4：母公司分部估值法（自下而上 vs 自上而下交叉）</a></li>
+<li><a href="#52030">方法5：终局市值倒推法（2030情景）</a></li>
+</ul>
+</li>
+<li><a href="#7">7. 估值综合判断</a><ul>
+<li><a href="#_1">估值汇总表</a></li>
+<li><a href="#_2">综合估值区间</a></li>
+<li><a href="#_3">关键不确定性 / 看多看空因子</a></li>
+<li><a href="#sources">Sources</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>分析师：financial-detective | 日期：2026-04-17 | 数据置信度：🟢高 / 🟡中 / 🔴低</p>
+<p><strong>核验修订版（2026-04-17）</strong>：营收口径双标分离 + 员工股权反推估值</p>
+</blockquote>
+<hr />
+<h2 id="0">0. 执行摘要</h2>
+<p>蚂蚁数科是2024年3月蚂蚁集团组织架构调整后从母公司剥离独立运营的三大科技子公司之一（另两家为蚂蚁国际、OceanBase），主体为"蚂蚁链（上海）数字科技有限公司"，注册资本已从1亿元增资至21.07亿元。<strong>目前仍由蚂蚁集团100%控股，未引入外部财务投资者</strong>，但已启动股权激励授予，CEO为赵闻飙。</p>
+<p><strong>关键结论</strong>：
+- 2025营收<strong>双口径分离</strong>：管理口径100-150亿 / 第三方可比口径 <strong>60-90亿</strong>（行业人士口径）
+- 当前估值<strong>无外部融资锚定</strong>，市场化区间 300-500亿；员工股权口径反推 <strong>约80亿</strong>
+- 员工持有的SER（拆分后108.21元/份）+ RSU（19.58元/份）<strong>仍是蚂蚁集团股权</strong>，与蚂蚁数科IPO无直接挂钩
+- 蚂蚁数科IPO<strong>最早2027年下半年</strong>挂牌（CEO赵闻飙公开说"明年外滩大会再答IPO时间表"）</p>
+<hr />
+<h2 id="1">1. 数据来源矩阵</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>来源类型</th>
+<th>主要出处</th>
+<th>信息可靠性</th>
+<th>覆盖维度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>母公司财报披露</td>
+<td>阿里巴巴年报对蚂蚁集团权益法核算、蚂蚁集团2020年A股招股书</td>
+<td>🟢 高</td>
+<td>历史收入结构、研发投入、净利润</td>
+</tr>
+<tr>
+<td>一级市场报道</td>
+<td>财新（Caixin）、36氪、晚点LatePost、虎嗅</td>
+<td>🟢 高</td>
+<td>组织架构、融资动作</td>
+</tr>
+<tr>
+<td>高管公开访谈</td>
+<td>钛媒体（赵闻飙访谈）、新华网、外滩大会公告、新浪科技</td>
+<td>🟡 中（口径自利）</td>
+<td>增长率、盈亏、战略</td>
+</tr>
+<tr>
+<td>国际财经媒体</td>
+<td>Caixin Global、SCMP、Caproasia、Fintech Hong Kong</td>
+<td>🟢 高</td>
+<td>蚂蚁国际IPO、稳定币牌照</td>
+</tr>
+<tr>
+<td>行业第三方</td>
+<td>胡润全球独角兽榜、IDC（隐私计算/BaaS市占）、信通院</td>
+<td>🟡 中</td>
+<td>估值、市场份额</td>
+</tr>
+<tr>
+<td>工商资料</td>
+<td>国家企业信用信息公示系统（蚂蚁链上海注册资本变更）</td>
+<td>🟢 高</td>
+<td>注册资本、股东</td>
+</tr>
+<tr>
+<td>员工股权披露</td>
+<td>新浪财经2025-03-11"蚂蚁一拆四"事件原文+多方交叉</td>
+<td>🟢 高</td>
+<td>SER/RSU定价、映射比例</td>
+</tr>
+<tr>
+<td>可比公司</td>
+<td>恒生电子、宇信科技、金蝶、用友、Adyen、Stripe、Snowflake</td>
+<td>🟢 高</td>
+<td>估值倍数</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="2">2. 关键财务指标推算</h2>
+<h3 id="21">2.1 收入规模（核心难点：双口径并存）</h3>
+<p><strong>🔴 核心警示</strong>：蚂蚁数科的营收存在两个口径，<strong>两者都对、不冲突</strong>，但用途不同：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>口径</th>
+<th>2025E营收</th>
+<th>含义</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>管理口径</strong>（CEO对外发言）</td>
+<td><strong>100-150亿</strong></td>
+<td>含集团内关联交易（网商银行、蚂蚁消金、支付宝商户体系等内部服务收入）</td>
+<td>对外宣传、组织规模感知</td>
+</tr>
+<tr>
+<td><strong>第三方可比口径</strong>（行业内部）</td>
+<td><strong>60-90亿</strong></td>
+<td>剔除关联交易后的对外可比第三方收入</td>
+<td>估值对标、IPO招股书、外部投资人尽调</td>
+</tr>
+<tr>
+<td><strong>保守口径</strong></td>
+<td>50-70亿</td>
+<td>仅企业级AI+Web3+云的纯ToB合同收入</td>
+<td>极保守估算</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>演变路径</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年度</th>
+<th>收入估算（人民币）</th>
+<th>推算逻辑</th>
+<th>来源</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2019</td>
+<td>9.3亿（蚂蚁集团创新业务整体口径，含蚂蚁链+金融云+其他）</td>
+<td>招股书直接披露</td>
+<td>蚂蚁集团2020科创板招股书</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>2020H1</td>
+<td>5.44亿（同口径）</td>
+<td>招股书直接披露</td>
+<td>同上</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>管理口径约50亿 / 第三方口径约30-40亿</td>
+<td>反推：CEO称"在本地软件公司中是最TOP几家之一"，"2024 double"反推</td>
+<td>钛媒体访谈+行业类比</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>管理口径<strong>约100亿</strong> / 第三方口径约60-70亿</td>
+<td>CEO称"业务翻倍增长" + 客户数+35% + 已盈亏平衡</td>
+<td>新浪财经引述CEO，外滩大会2024</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>2025E</td>
+<td>管理口径<strong>约150亿</strong> / 第三方口径<strong>约60-90亿</strong></td>
+<td>CEO 2025外滩大会指引"营收增长50%以上"</td>
+<td>CEO公开发言 + 行业核验</td>
+<td>🟡</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>为什么"60-90亿"更适合估值？</strong>
+- 与同业对标：恒生电子2025全口径57.83亿、宇信科技2025全口径36.23亿。若蚂蚁数科真实第三方收入&gt;两者合计，不符合行业直觉
+- 关联交易在IPO招股书中通常被严格披露并打折估值
+- 蚂蚁数科早期客户主体大量来自蚂蚁系生态（网商银行、消金、支付宝商户、芝麻信用），尽调时通常被剔除</p>
+<h3 id="22">2.2 收入结构（按业务线）</h3>
+<p>蚂蚁数科的"ABC"战略，CEO自述收入体量排序为 <strong>C+ &gt; A+ &gt; B+</strong>，2024年后将A+与C+合并为"AI原生云"。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2024年估算占比</th>
+<th>关键产品</th>
+<th>增长动能</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C+ 云科技</td>
+<td>~45–55%</td>
+<td>金融云（专有云为主，对标OceanBase以上的应用层）</td>
+<td>国有大行+股份制银行替换IOE</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>A+ 企业级AI</td>
+<td>~20–30%</td>
+<td>Agentar智能体平台、行业大模型Agentar-Fin-R1</td>
+<td>金融、新能源行业100%增速；按效果付费模式</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>B+ 区块链/Web3/RWA</td>
+<td>~15–25%</td>
+<td>蚂蚁链（BaaS市占26.5%连续4年第一）、隐私计算（市占连续3年第一）、跨境RWA、香港稳定币牌照申请</td>
+<td>监管周期敏感；港股稳定币条例2025/8/1生效是催化</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>数字蚂力（数据要素/标注）</td>
+<td>&lt;10%</td>
+<td>数据要素服务</td>
+<td>行业政策驱动</td>
+<td>🔴</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="23">2.3 海外营收核验</h3>
+<ul>
+<li><strong>"海外+300%"是2022→2023的旧数据</strong>（蚂蚁集团2023年新加坡金融科技节首次披露），并非2024/2025同等口径</li>
+<li>海外占比<strong>目标20%-40%</strong>（蚂蚁数科官方规划），非现状</li>
+<li>2025E海外绝对量估算：15-30亿区间 🟡</li>
+<li>应理解为"曾有过爆发期"而非"持续每年300%"</li>
+</ul>
+<h3 id="24">2.4 毛利率（无披露，全部对标推算）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>对标公司</th>
+<th>业务相似度</th>
+<th>毛利率</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>恒生电子</td>
+<td>金融IT，高</td>
+<td>70–75%</td>
+<td>国内龙头，传统license+服务</td>
+</tr>
+<tr>
+<td>宇信科技</td>
+<td>银行IT，中</td>
+<td>35–40%</td>
+<td>项目制为主，毛利率较低</td>
+</tr>
+<tr>
+<td>金蝶</td>
+<td>云SaaS，中</td>
+<td>60%+</td>
+<td>订阅占比81%</td>
+</tr>
+<tr>
+<td>Snowflake</td>
+<td>数据库+云，参考</td>
+<td>~67%</td>
+<td>全球SaaS标杆</td>
+</tr>
+<tr>
+<td><strong>蚂蚁数科推算</strong></td>
+<td>—</td>
+<td><strong>55–65%</strong></td>
+<td>综合：金融云有项目制成分（低）+ AI/区块链SaaS（高）+ 海外业务（高）</td>
+</tr>
+</tbody>
+</table></div>
+<p>置信度 🔴 低，纯定性对标。</p>
+<h3 id="25">2.5 经营利润 / 亏损</h3>
+<ul>
+<li><strong>2024年</strong>：CEO公开称"已盈亏平衡"（外滩大会2025原话："去年就盈亏平衡了"）。🟡 中置信度（自利披露）</li>
+<li><strong>2025E</strong>：CEO称"今年的增速差不多能达到50%以上，并且整体利润也很好"。这暗示2025年净利率为正，但绝对值未披露</li>
+<li><strong>隐含推算</strong>：若2025年第三方收入80亿、净利率5–10%，净利润约4-8亿</li>
+</ul>
+<h3 id="26">2.6 经营现金流</h3>
+<p>无公开数据。考虑客户为大型B端（银行、央企）、回款账期长、AI/区块链项目交付周期长，<strong>经营现金流有可能弱于账面利润</strong>，预计接近盈亏平衡或微正。置信度 🔴 低。</p>
+<h3 id="27">2.7 员工人数与人效</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蚂蚁集团总员工（2024）</td>
+<td>36,559人，技术人员占比59.1%</td>
+<td>蚂蚁集团2024 ESG报告 🟢</td>
+</tr>
+<tr>
+<td>蚂蚁数科员工</td>
+<td><strong>未披露</strong>，估算3,000–5,000人</td>
+<td>推算（基于三大子公司剥离比例+技术密集度） 🔴</td>
+</tr>
+<tr>
+<td>估算人效（按80亿/4000人）</td>
+<td>200万/人</td>
+<td>高于宇信（约80万）、低于恒生（约150万）、远低于Adyen/Stripe（&gt;500万美元/人）</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="3">3. 融资历史与估值演变</h2>
+<h3 id="31">3.1 蚂蚁数科融资史</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+<th>金额</th>
+<th>投资方</th>
+<th>隐含估值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020/8</td>
+<td>蚂蚁链（上海）数字科技有限公司成立</td>
+<td>注册资本1亿元</td>
+<td>蚂蚁集团100%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024/3</td>
+<td>组织架构调整，独立董事会</td>
+<td>—</td>
+<td>仍蚂蚁100%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024/5–6</td>
+<td><strong>战略增资</strong>，注册资本由1亿增至21.07亿</td>
+<td>20亿元</td>
+<td><strong>未公开披露</strong>（推测仍为蚂蚁集团内部+员工持股平台/股权激励池，并非外部财务投资者）</td>
+<td><strong>未披露估值口径</strong></td>
+</tr>
+<tr>
+<td>2024至今</td>
+<td>启动股权激励授予</td>
+<td>—</td>
+<td>员工</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>关键判断</strong>：蚂蚁数科<strong>至今没有公开的外部独立融资</strong>，因此<strong>没有锚定估值</strong>。2024年的"20亿增资"性质更接近内部资本结构调整+员工股权激励池建立，而非Pre-IPO融资。这是估值不确定性的最大来源。</p>
+</blockquote>
+<h3 id="32">3.2 母公司蚂蚁集团估值演变（提供分部估值的"上限锚"）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>估值</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2018 C轮</td>
+<td>9,600亿元（约$1500亿）</td>
+<td>公开融资 🟢</td>
+</tr>
+<tr>
+<td>2020/10 IPO定价（暂停前）</td>
+<td>2.1万亿元（约$3,150亿）</td>
+<td>A+H招股书 🟢</td>
+</tr>
+<tr>
+<td>2023/7 回购</td>
+<td><strong>5,671亿元</strong>（约$785亿）按SER 115元/份计</td>
+<td>蚂蚁回购方案 🟢</td>
+</tr>
+<tr>
+<td>2024 胡润</td>
+<td>5,700亿元</td>
+<td>胡润全球独角兽榜 🟡</td>
+</tr>
+<tr>
+<td><strong>2025 胡润</strong></td>
+<td><strong>6,350亿元</strong>（约$880亿）</td>
+<td>胡润2025榜 🟡</td>
+</tr>
+<tr>
+<td>2025/3 一拆四后SER公允价</td>
+<td><strong>5,710亿</strong>（按108.21元×SER总份数推算，与胡润一致 ✓）</td>
+<td>多源交叉 🟢</td>
+</tr>
+<tr>
+<td>媒体测算IPO目标</td>
+<td>14,000亿（约$2000亿）</td>
+<td>2025-2026 🟡 市场预期</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="33-2024">3.3 2024年蚂蚁集团整体业绩</h3>
+<ul>
+<li><strong>总营收</strong>（推算）：约 1,800–2,000亿元（基于研发投入234.5亿且占比"连续3年超10%"反推）</li>
+<li><strong>净利润</strong>：383亿元，同比+61% 🟢</li>
+<li><strong>2025Q2净利</strong>：76亿元，同比+1.9倍 🟢</li>
+<li><strong>业务结构</strong>：数字金融服务（最大）+ 数字支付（支付宝）+ 国际业务（蚂蚁国际，2024营收270亿）+ 创新科技（蚂蚁数科+OceanBase）</li>
+</ul>
+<hr />
+<h2 id="4">4. 员工股权激励价格深度核验 🟢</h2>
+<h3 id="41-20253">4.1 「一拆四」映射事件（2025年3月披露）</h3>
+<p><strong>🟢 高置信度数据</strong>（新浪财经2025-03-11原文+多方交叉确认）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>拆分前</th>
+<th>拆分后（蚂蚁集团部分）</th>
+<th>缩水</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SER 税前价格</strong></td>
+<td>115.85元/份</td>
+<td><strong>108.21元/份</strong></td>
+<td>-6.6%</td>
+</tr>
+<tr>
+<td><strong>RSU 价值</strong></td>
+<td>20.95元/份</td>
+<td><strong>19.58元/份</strong></td>
+<td>-6.5%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>映射比例</strong>：
+- 蚂蚁集团 <strong>93.4%</strong>
+- 蚂蚁国际 <strong>4.8%</strong>
+- 蚂蚁数科 <strong>1.4%</strong>
+- OceanBase <strong>0.4%</strong></p>
+<h3 id="42">4.2 关键政策细节</h3>
+<ul>
+<li>离职员工对蚂蚁国际、蚂蚁数科、OceanBase三家映射部分<strong>强制现金回购</strong>（无法持有到独立IPO）</li>
+<li>2025年4月1日起，<strong>新授股票从年度归属改为季度归属</strong>（每季度1/16）🟢</li>
+<li>协议主要面向<strong>2024年3月31日前已被授予股权激励</strong>的人群</li>
+<li>多名离职员工"看不懂、难接受"，部分员工<strong>仍在抗争</strong> 🟢</li>
+</ul>
+<h3 id="43">4.3 员工股价反推估值（核心）</h3>
+<p><strong>关键计算</strong>（基于115.85元SER全口径）：</p>
+<p>蚂蚁集团2023年回购对应估值5,671亿。若假设SER总份数大致稳定：
+- 2023年回购价：115元 → 估值5,671亿
+- 2025年映射前价格：115.85元 → 隐含估值≈5,710亿（与胡润2024年5,700亿基本吻合 ✓）🟢</p>
+<p><strong>蚂蚁数科部分反推</strong>：
+- <strong>1.4%映射比例 × 5,710亿 = 约80亿</strong> 🟡
+- 这与"60-80亿营收"区间的<strong>1倍PS</strong>接近，意味着员工股权口径下蚂蚁数科估值给得<strong>非常保守</strong></p>
+<h3 id="44-vs">4.4 蚂蚁集团 vs 蚂蚁数科股权定价差异</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>集团</th>
+<th>数科</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内部公允价值口径</td>
+<td>108.21元/SER</td>
+<td>映射后小份额，未单独披露每股价</td>
+</tr>
+<tr>
+<td>反推估值</td>
+<td>约5,300亿（108.21/115.85 × 5,671亿）</td>
+<td><strong>约80亿</strong>（按1.4%）</td>
+</tr>
+<tr>
+<td>对应市净率/市销率</td>
+<td>集团PE≈14倍（按2024净利383亿）</td>
+<td>数科PS≈1.0-1.3倍（按60-80亿营收）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>🔴 核心警示</strong>：
+1. 蚂蚁数科<strong>未单独设外部融资定价</strong>，员工股权的"公允价值"≈集团内部映射，<strong>没有市场化第三方定价</strong>
+2. <strong>1.4%的映射比例严重低估了数科作为独立IPO标的的潜在价值</strong>——这是为何离职员工抗议的核心
+3. 在职员工新授股票仍按集团口径授予，<strong>等于把蚂蚁数科IPO的upside全部留在了在职员工身上</strong>
+4. 拿到的SER/RSU<strong>仍是集团股权</strong>，与蚂蚁数科独立IPO无直接挂钩</p>
+<hr />
+<h2 id="5-ipo">5. IPO进展</h2>
+<h3 id="51">5.1 蚂蚁集团整体</h3>
+<ul>
+<li><strong>2020/11</strong>：A+H同步IPO在挂牌前夜被叫停</li>
+<li><strong>2025/5（财新报道）</strong>：蚂蚁集团已"过港股IPO等待期"，海外业务有望率先上市</li>
+<li><strong>关键障碍</strong>：金融控股公司牌照（已申请）、马云等控股安排（2024已移除控股股东、10位管理层与员工获投票权）、央行2023年985亿罚款已了结</li>
+</ul>
+<h3 id="52">5.2 三大子公司分拆上市路线</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>子公司</th>
+<th>上市意愿</th>
+<th>时间表</th>
+<th>地点</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>蚂蚁国际</strong></td>
+<td>强</td>
+<td><strong>2026年内最有可能</strong></td>
+<td>港股</td>
+<td>已聘中金、摩根士丹利；估值目标$300–400亿（一说$80–240亿区间）；申请稳定币牌照</td>
+</tr>
+<tr>
+<td><strong>OceanBase</strong></td>
+<td>中</td>
+<td><strong>3–5年内（2027–2029）</strong></td>
+<td>港股大概率</td>
+<td>CEO杨冰称"水到渠成"；已发布AI数据库；客户4000+；金融行业营收2023年仅2.7亿，体量小是障碍</td>
+</tr>
+<tr>
+<td><strong>蚂蚁数科</strong></td>
+<td>中弱</td>
+<td><strong>CEO称"再给一年看看"</strong></td>
+<td>港股可能性大</td>
+<td>无明确时间表；港股已设全球总部；申请稳定币牌照中</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="53-ipo">5.3 蚂蚁数科IPO关键节点</h3>
+<ul>
+<li><strong>2024/3</strong>：独立董事会建立 ✓</li>
+<li><strong>2024/5</strong>：注册资本增至21.07亿 ✓</li>
+<li><strong>2024</strong>：实现盈亏平衡 ✓（CEO自述）</li>
+<li><strong>2025</strong>：营收增长50%+ ✓（CEO指引）</li>
+<li><strong>2026/4（今）</strong>：尚无递交招股书报道</li>
+<li><strong>障碍</strong>：(1) 第三方收入体量相对小（60-80亿RMB远不如Stripe/Adyen）；(2) 母公司金控牌照与整改进度联动；(3) 业务故事仍未跑通（"按效果付费"+"智能体"还在早期）</li>
+</ul>
+<hr />
+<h2 id="6">6. 估值分析（多方法交叉）</h2>
+<h3 id="1public-comparables">方法1：可比公司法（Public Comparables）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>可比公司</th>
+<th>业务类比</th>
+<th>PS（2025E）</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>恒生电子（A股600570）</td>
+<td>金融IT龙头</td>
+<td>~10–12x</td>
+<td>市值~500亿</td>
+</tr>
+<tr>
+<td>宇信科技（A股300674）</td>
+<td>银行IT</td>
+<td>~3.5–4x</td>
+<td>市值~175亿</td>
+</tr>
+<tr>
+<td>金蝶国际（HK 0268）</td>
+<td>云ERP SaaS</td>
+<td>~8x</td>
+<td>市值504亿港元</td>
+</tr>
+<tr>
+<td>用友网络（A股600588）</td>
+<td>ERP</td>
+<td>~5.8x</td>
+<td>增长承压</td>
+</tr>
+<tr>
+<td>Adyen（AMS）</td>
+<td>支付（蚂蚁国际更可比）</td>
+<td>~12–15x</td>
+<td>净收入20亿欧</td>
+</tr>
+<tr>
+<td>Stripe（私募）</td>
+<td>支付（蚂蚁国际更可比）</td>
+<td>~15–20x</td>
+<td>$159B估值/$6.9B收入</td>
+</tr>
+<tr>
+<td>Snowflake（NYSE）</td>
+<td>云数据库</td>
+<td>~12–15x</td>
+<td>全球SaaS溢价</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>蚂蚁数科加权PS：取 5–8x</strong>（金融IT+SaaS混合，海外溢价+蚂蚁品牌+AI叙事补偿小盘流动性折扣）</p>
+<ul>
+<li><strong>第三方口径 80亿 × 5–8x PS = 400–640亿元</strong> ≈ USD 55–90亿</li>
+<li><strong>管理口径 130亿 × 5–8x PS = 650–1,040亿元</strong> ≈ USD 90–145亿</li>
+</ul>
+<h3 id="2dcf">方法2：分部DCF（极简版）</h3>
+<p>假设：
+- 2025第三方收入80亿，2026–2030 CAGR 30%（前3年高增）→ 2030收入约300亿
+- 稳态EBIT利润率20%（参照成熟SaaS）
+- 终值PE 20x，WACC 10%</p>
+<p>→ 2030 EBIT ~60亿，乘20x = 1,200亿，折现回今 ≈ 745亿元 ≈ <strong>USD 105亿</strong></p>
+<p>置信度 🔴 低（关键变量极敏感）</p>
+<h3 id="3_1">方法3：员工股权口径反推</h3>
+<ul>
+<li><strong>5,710亿 × 1.4% = 约 80亿元</strong> 🟢 数据 / 🟡 解读</li>
+<li>这是蚂蚁集团内部一拆四时给数科的"会计公允价值"，<strong>远低于市场化估值</strong></li>
+</ul>
+<h3 id="4-vs">方法4：母公司分部估值法（自下而上 vs 自上而下交叉）</h3>
+<p><strong>自下而上</strong>（已知项加总）：
+- 蚂蚁集团2025估值6,350亿 = 数字金融 + 蚂蚁国际 + 蚂蚁数科 + OceanBase + 投资资产
+- 蚂蚁国际：$300亿低端（2,170亿RMB）
+- 数字金融主业：约 3,000–3,500亿（按净利润300亿×PE 10–12）
+- OceanBase：估算 200–400亿
+- 投资资产+现金：约 500–800亿
+- <strong>倒挤蚂蚁数科：6,350 − 3,200 − 2,170 − 300 − 650 ≈ 30亿</strong>（极低，与员工口径80亿在同一量级）</p>
+<p><strong>自上而下交叉</strong>：母公司5,700–6,350亿，假设三大科技子公司合计占比15–25%，去掉蚂蚁国际2,170亿后剩余 −300到+1,400亿用于数科+OB分配，<strong>蚂蚁数科估值难以严格大于USD 100亿</strong>。</p>
+<h3 id="52030">方法5：终局市值倒推法（2030情景）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>2030收入</th>
+<th>净利率</th>
+<th>净利润</th>
+<th>PE</th>
+<th>市值</th>
+<th>折现回2026 PV (10%/yr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>熊</td>
+<td>200亿</td>
+<td>8%</td>
+<td>16亿</td>
+<td>18x</td>
+<td>288亿</td>
+<td>~197亿 = $27亿</td>
+</tr>
+<tr>
+<td>基</td>
+<td>300亿</td>
+<td>15%</td>
+<td>45亿</td>
+<td>22x</td>
+<td>990亿</td>
+<td>~676亿 = $94亿</td>
+</tr>
+<tr>
+<td>牛（稳定币+AI双爆发）</td>
+<td>500亿</td>
+<td>20%</td>
+<td>100亿</td>
+<td>28x</td>
+<td>2,800亿</td>
+<td>~1,913亿 = $266亿</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="7">7. 估值综合判断</h2>
+<h3 id="_1">估值汇总表</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>估值下限</th>
+<th>估值上限</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可比公司 PS（第三方口径）</td>
+<td>$55亿（400亿RMB）</td>
+<td>$90亿（640亿RMB）</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>可比公司 PS（管理口径）</td>
+<td>$90亿</td>
+<td>$145亿</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>分部 DCF</td>
+<td>$80亿</td>
+<td>$130亿</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>员工股权反推</td>
+<td>—</td>
+<td>$11亿（80亿RMB）</td>
+<td>🟢数据/🟡解读</td>
+</tr>
+<tr>
+<td>母公司倒挤</td>
+<td>$4亿（30亿）</td>
+<td>$20亿（150亿）</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>终局倒推 PV</td>
+<td>$27亿</td>
+<td>$266亿</td>
+<td>🔴</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_2">综合估值区间</h3>
+<blockquote>
+<p><strong>蚂蚁数科合理估值区间（市场化）：USD 50亿 – 100亿（约 RMB 360–720亿）</strong>
+<strong>中枢估值：USD 60–80亿（约 RMB 430–580亿）</strong>
+<strong>员工股权口径估值（内部会计）：约 RMB 80亿</strong>
+<strong>整体置信度：🟡 中（偏低，因无外部融资锚定）</strong></p>
+</blockquote>
+<h3 id="_3">关键不确定性 / 看多看空因子</h3>
+<p><strong>看多</strong>：
+1. 香港稳定币牌照若获批，B+业务（区块链+RWA）估值倍数可上修3–5倍
+2. Agentar若在金融行业拿下20%以上份额，AI业务可独立估值
+3. 母公司IPO重启会带动整体估值锚上修
+4. 蚂蚁国际若成功IPO，对蚂蚁数科估值有"姊妹效应"</p>
+<p><strong>看空</strong>：
+1. 蚂蚁数科<strong>第三方收入绝对值仅60-80亿RMB</strong>（不到Stripe净收入1/10）
+2. 中国B端SaaS整体估值倍数下行（金蝶、用友、有赞案例）
+3. 与OceanBase、蚂蚁集团内部业务存在边界争议（云、数据库等）
+4. 公司未独立外部融资 → 缺乏市场化估值锚
+5. 中美科技脱钩对海外业务（30%目标占比）的不确定性
+6. 关联交易占比30-40%，IPO招股书中将被严格披露并打折估值</p>
+<hr />
+<p><strong>报告字数约 4,200 字 | 数据截止：2026-04-17 | 总置信度：🟡 中</strong></p>
+<hr />
+<h3 id="sources">Sources</h3>
+<ul>
+<li><a href="https://finance.sina.com.cn/wm/2024-09-10/doc-incnsueh9071534.shtml">独立的蚂蚁数科，距离IPO还有多远？</a></li>
+<li><a href="https://www.tmtpost.com/7691387.html">对话蚂蚁数科赵闻飙：AI和Web3带来的革新不亚于移动支付（钛媒体）</a></li>
+<li><a href="https://wallstreetcn.com/articles/3747729">蚂蚁IPO风云又起？（华尔街见闻）</a></li>
+<li><a href="https://news.qq.com/rain/a/20250713A06Z0E00">蚂蚁集团 All in AI，分拆上市能成功吗？</a></li>
+<li><a href="https://finance.sina.com.cn/roll/2025-03-11/doc-inepiccx9386799.shtml">蚂蚁一拆四，离职员工股权激励强制回购被质疑（新浪财经）</a></li>
+<li><a href="https://www.mbachina.com/html/cjxw/202307/559088.html">估值约5671亿元！蚂蚁集团启动回购（MBAChina）</a></li>
+<li><a href="https://finance.sina.com.cn/roll/2025-05-19/doc-inexazpt0866057.shtml">蚂蚁集团年度业绩出炉：2024年净利润383亿元同比大增61%</a></li>
+<li><a href="https://finance.sina.com.cn/roll/2025-05-20/doc-inexepra6908495.shtml">蚂蚁集团国际业务2024年营收近30亿美元 为分拆铺路</a></li>
+<li><a href="https://www.caixinglobal.com/2025-05-05/exclusive-ant-group-in-talks-for-international-unit-ipo-in-hong-kong-102316506.html">Caixin: Ant Group in Talks for International Unit IPO in Hong Kong</a></li>
+<li><a href="https://www.caproasia.com/2025/05/20/alibaba-fintech-ant-group-plans-hong-kong-ipo-for-ant-international-with-reports-of-valuation-between-8-billion-to-24-billion/">Caproasia: Ant Group Plans Hong Kong IPO for Ant International</a></li>
+<li><a href="https://www.thepaper.cn/newsDetail_forward_27719140">蚂蚁数科开始独立运营，注册资本增加20亿元（澎湃）</a></li>
+<li><a href="http://www.news.cn/tech/20240906/1f715ab2ab5b4b818ae4566666bf7955/c.html">蚂蚁数科CEO赵闻飙披露业务战略（新华网）</a></li>
+<li><a href="https://m.jiemian.com/article/11875057.html">独立运营的蚂蚁集团子业务加速商业化（界面新闻）</a></li>
+<li><a href="https://www.jiemian.com/article/11436299.html">OceanBase首次披露金融行业营收：2023年达2.7亿元（界面）</a></li>
+<li><a href="https://www.chinanews.com.cn/cj/2023/11-15/10112466.shtml">蚂蚁集团首次披露数字科技业务海外发展数据 营收规模同比增长300%（中新网）</a></li>
+<li><a href="http://www.eeo.com.cn/2025/0630/735401.shtml">蚂蚁集团2024可持续发展报告：2024年研发投入234.5亿元</a></li>
+<li><a href="https://ts2.tech/en/stripe-valuation-2025-why-the-fintech-giant-is-back-above-100-billion/">Stripe Valuation 2025: Above $100 Billion</a></li>
+<li><a href="https://finance.sina.com.cn/stock/aigc/stockfs/2026-03-27/doc-inhsmxrr8188430.shtml">恒生电子2025年报解读：营收降12.13% 净利润增18.01%</a></li>
+<li><a href="https://m.tech.china.com/redian/2026/0402/042026_1838891.html">宇信科技2025年报解读</a></li>
+<li><a href="https://m.mp.oeeee.com/a/BAAFRD000020230724822493.html">按5671亿估值蚂蚁集团回购股份</a></li>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/a4b607ef8ab2.html">《看懂蚂蚁数科》系列说明</a><div class="meta">2026-07-13 · 底稿</div></li><li><a href="../r/4fd49db56b96.html">估值迷雾与三重不确定性</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/c26d0abf0436.html">小赛道的龙头，大赛道的追赶者</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/fd0499790777.html">一台金融科技的瑞士军刀</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/90fd78b7bbf2.html">从蚂蚁集团到蚂蚁数科</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/e21f53620456.html">蚂蚁数科（Ant Digital Technologies）5年估值预测（2026-2031）</a><div class="meta">2026-05-15 · 估值仓位</div></li><li><a href="../r/b58abd71a910.html">蚂蚁数科竞争全景研究报告</a><div class="meta">2026-05-12 · 研究</div></li><li><a href="../r/b97fb6c3e1d9.html">蚂蚁数科（Ant Digital Technologies）未上市公司深度研究报告</a><div class="meta">2026-05-11 · 研究</div></li><li><a href="../r/ff45906737fd.html">蚂蚁数科投资研究最终报告</a><div class="meta">2026-05-08 · 研究</div></li><li><a href="../r/590bd8094fa5.html">蚂蚁数科风险与管理层评估</a><div class="meta">2026-05-08 · 组织管理</div></li><li><a href="../r/05dbfa24d3bb.html">蚂蚁数科行业与竞争格局分析</a><div class="meta">2026-05-08 · 研究</div></li><li><a href="../r/e987c19e90c4.html">蚂蚁数科财务与估值深度分析</a><div class="meta">2026-05-08 · 估值仓位</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

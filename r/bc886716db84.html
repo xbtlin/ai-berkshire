@@ -1,0 +1,46 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数据与模型审计 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/短剧与AI短剧研究-20261019/index.html">短剧与AI短剧研究-20261019</a></div><h1>数据与模型审计</h1><div class="meta"><a href="../topics/短剧与AI短剧研究-20261019/index.html">短剧与AI短剧研究-20261019</a> ｜ 2026-10-19 · 导读 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%9F%AD%E5%89%A7%E4%B8%8EAI%E7%9F%AD%E5%89%A7%E7%A0%94%E7%A9%B6-20261019/audit/README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">随机抽检</a></li>
+<li><a href="#_2">双来源与精度</a></li>
+<li><a href="#_3">重点人工复核</a></li>
+<li><a href="#_4">复现与限制</a></li>
+</ul>
+</div>
+</details><article><p>审计对象为主报告。最终内容指纹保存在 <code>audit-status.json</code>；来源索引位于报告末尾。审计材料不含完整转载文章或未获许可的研究报告副本。</p>
+<h2 id="_1">随机抽检</h2>
+<p>使用项目 <code>report_audit.py extract</code>，比例15%、种子42。从158个可识别项目中抽取24项，其中：</p>
+<ul>
+<li>12项事实或对机构估算/预测的引用，与原始来源核对。</li>
+<li>5项模型假设或算术，按假设表和Decimal复算；不称为现实事实验证。</li>
+<li>7项为来源索引中的年份、标题，被提取器误识别。逐项保留于 <code>audit-dispositions.json</code>，未删除或重抽样。</li>
+</ul>
+<p>另外重点核查16项容易影响结论的数据和口径，包括最新月活、全球规模预测、可灵收入边界、掌阅费用、阅文税务、CMS股权及AI转化率，并独立复算3个十年情景金额。</p>
+<p>数值核对与模型检验均通过，无未解释数值警告。对于“超过”数值，核的是原披露下限及方向，不将下限改写为精确实绩。对于估算或预测，核的是引用是否正确，不是实际结果已经发生。</p>
+<h2 id="_2">双来源与精度</h2>
+<p>抽中的8项企业财务指标均有原始财报和外部平台转录或记者报道核对，误差在1%内。外部报道通常仅保留两位小数，结论是“在来源显示精度内一致”，不是精确到财报末位的独立双核。</p>
+<p>财务数据底层仍来自同一公司披露，不能称为两套独立审计。市场总量没有可比较的独立完整账本；DataEye、艾媒、Omdia和Sensor Tower覆盖不同，不进行虚假的平均或强行误差匹配。CNNIC调查采用原始PDF，未把错误转载当第二真值。</p>
+<h2 id="_3">重点人工复核</h2>
+<ol>
+<li>DataEye免费市场含平台资本投入，不等同广告实收；2026市场总量保留预测标签。</li>
+<li>CNNIC原报告为6.26亿用户；调查人口与QuestMobile去重渠道用户不拼接增速。</li>
+<li>观看、下载、付费转换、充值流水、会计收入、现金回款和利润分别处理。</li>
+<li>2026年新监管办法、最新视频模型的已上线和预告功能分别核实。</li>
+<li>AI失败个案是受访者自报收益，不写成银行回款；网络电影案例不列入短剧市场规模。</li>
+<li>生成可用率已分摊失败生成成本，后续不再重复加同一废片费用。</li>
+<li>快手可灵全用途收入不当作短剧专属；广告消耗不当作已确认收入；融资结构仅为次级证据提示。</li>
+<li>掌阅衍生收入不当作纯AI收入，销售费用和毛利比率明确为集团合并口径。</li>
+<li>阅文Non-IFRS仍含税务事项，不重复调整；新短剧收入与旧阅读迁移同时考察。</li>
+<li>CMS持股49.24%、权益法，已披露经营数据只覆盖第一季度；不把ReelShort流水并入中文在线收入。</li>
+<li>反向估值以100%权益示例说明，参股只调整一次；税、营运资金和必要投资已包含在现金流定义内。</li>
+<li>未核验同一时点全业务股票估值，不发布伪精确目标价或固定仓位。</li>
+</ol>
+<h2 id="_4">复现与限制</h2>
+<p>从仓库根目录依次运行：</p>
+<pre><code class="language-bash">python3 reports/短剧与AI短剧研究-20261019/model.py
+python3 reports/短剧与AI短剧研究-20261019/audit.py
+</code></pre>
+<p><code>model-results.json</code>采用Decimal直接计算，为算术权威版本。<code>financial-rigor.txt</code>保留项目工具辅助计算；现有工具的 <code>calc</code> 内部求值并非全程Decimal，因此不依赖其浮点末位。</p>
+<p><code>audit.py</code>保留人工查证输入和来源链接，调用项目判决工具，并额外禁止缺失核验值、遗漏样本和未解释警告。它没有重新抓取网页，也不能检验受访者陈述真伪、商业因果、十年预测发生概率或股票投资回报。来源网页后续可能更新，重做研究需要重新读取原文。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/dd9bf5a3556d.html">短剧与AI短剧深度研究报告</a><div class="meta">2026-10-19 · 深度系列</div></li><li><a href="../r/cc6fc5a60608.html">短剧与AI短剧研究</a><div class="meta">2026-10-19 · 导读</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

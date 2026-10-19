@@ -1,0 +1,1974 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>腾讯控股（0700.HK）多头论证：对看空报告的对抗性检验 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><h1>腾讯控股（0700.HK）多头论证：对看空报告的对抗性检验</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-08-17 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E8%85%BE%E8%AE%AF-%E5%A4%9A%E5%A4%B4%E8%AE%BA%E8%AF%81-20260817.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">〇、方法论与已知局限</a><ul>
+<li><a href="#01">0.1 本文做什么、不做什么</a></li>
+<li><a href="#02">0.2 局限性声明（与看空报告同等强度）</a></li>
+</ul>
+</li>
+<li><a href="#_2">一、数据基准与口径</a><ul>
+<li><a href="#11">1.1 币种与汇率（关键，看空报告已纠错过一次）</a></li>
+<li><a href="#12-adr">1.2 ADR 换股比例（强制标明）</a></li>
+<li><a href="#13">1.3 估值基准（与看空报告同源，避免"换基准赢辩论"）</a></li>
+</ul>
+</li>
+<li><a href="#_3">二、逐条裁决表（强制项）</a></li>
+<li><a href="#_4">三、主攻击一：估值倍数——看空方的"中性"其实是深度看空</a><ul>
+<li><a href="#31-evsales-ev">3.1 把 EV/Sales 换成 EV/经营盈利，看空方的假设立刻现形</a></li>
+<li><a href="#32-stockanalysis2026-08-17">3.2 全球同业实测（stockanalysis，2026-08-17 取数）</a></li>
+<li><a href="#33">3.3 我的倍数选择与理由</a></li>
+<li><a href="#34">3.4 投资组合折价：我改，但改不动大局</a></li>
+</ul>
+</li>
+<li><a href="#_5">四、主攻击二：悲观地板——我基本站在看空方这边</a><ul>
+<li><a href="#41">4.1 我独立算的地板比看空方更低</a></li>
+<li><a href="#42">4.2 但地板的性质需要重新定义</a></li>
+<li><a href="#43">4.3 公司真金白银定义的地板：一半有效</a></li>
+</ul>
+</li>
+<li><a href="#ai">五、主攻击三：AI 期权——看空方给了它负价格</a><ul>
+<li><a href="#51-ai">5.1 看空方实际上给 AI 定了多少钱？答案是负数</a></li>
+<li><a href="#52-ai">5.2 自下而上给 AI 定价（可证伪版本）</a></li>
+<li><a href="#53">5.3 微信小店 / 视频号电商闭环：看空方的盲区</a></li>
+</ul>
+</li>
+<li><a href="#_6">六、主攻击四：股东回报降档，是恶化还是合理选择？</a><ul>
+<li><a href="#61">6.1 先把数字摆清楚</a></li>
+<li><a href="#62">6.2 三条支持"合理选择"的论据</a></li>
+<li><a href="#63">6.3 两条支持"就是恶化"的论据（我承认）</a></li>
+</ul>
+</li>
+<li><a href="#prosus">七、Prosus 反例检验</a><ul>
+<li><a href="#71">7.1 反例：折价永不收窄，对长期持有者反而是燃料</a></li>
+<li><a href="#72">7.2 为什么它仍不足以翻案</a></li>
+</ul>
+</li>
+<li><a href="#hk641">八、我的估值：中枢 HK$641</a><ul>
+<li><a href="#81-financial_rigorpy">8.1 三情景（全部经 financial_rigor.py 精确十进制）</a></li>
+<li><a href="#82">8.2 概率加权</a></li>
+<li><a href="#83">8.3 五个锚点的完整光谱（读者应该同时看到全部）</a></li>
+<li><a href="#84">8.4 三情景估值（框架强制项，工具原始输出）</a></li>
+</ul>
+</li>
+<li><a href="#_7">九、必答问题</a><ul>
+<li><a href="#91-102-pe">9.1 核心业务 10.2 倍 PE 的公司，需要什么才配得上"重仓"？</a></li>
+<li><a href="#92">9.2 股东回报降档：恶化还是合理选择？</a></li>
+<li><a href="#93">9.3 微信小店 / 视频号电商闭环的价值，既有报告是否漏掉？</a></li>
+<li><a href="#94-15">9.4 若要重仓（&gt;15%），需要哪些前提成立？逐条列出并评估概率</a></li>
+</ul>
+</li>
+<li><a href="#_8">十、我最可能在哪里错（诚实清单）</a></li>
+<li><a href="#afinancial_rigorpy">附录 A：关键计算记录（financial_rigor.py 精确十进制，禁止心算）</a></li>
+<li><a href="#b">附录 B：数据来源与等级</a></li>
+<li><a href="#creport_auditpy">附录 C：数据抽检准出记录（report_audit.py）</a></li>
+</ul>
+</div>
+</details><article><p><strong>报告日期</strong>：2026-08-17
+<strong>报告性质</strong>：<strong>红队报告</strong>。攻击对象是同日完成的 <code>腾讯-晨星估值视角-20260817.md</code>（下称"看空报告"）。协调方已承认既有研究链条全程缺少多头论证，本文是对该设计缺陷的修正。
+<strong>立场声明</strong>：<strong>本文不是翻案书。</strong> 目标是诚实的对抗性检验——看空论据站得住的，明说站得住。本文最终 13 条裁决中，<strong>完全推翻 3 条、部分推翻 4 条、完全承认 5 条</strong>（另 1 条双向成立）。其中裁决 #13 是我在成稿后自我更正的——初稿写"看空方完全漏掉微信小店"，实测发现看空报告确实提到过，已下调为"提及但未定价"。
+<strong>姊妹篇</strong>：<code>腾讯-晨星估值视角-20260817.md</code>（攻击对象）、<code>Prosus-investment-research-20260817.md</code>、<code>腾讯-earnings-2026Q2-电话会精读-20260813.md</code></p>
+<hr />
+<h2 id="_1">〇、方法论与已知局限</h2>
+<h3 id="01">0.1 本文做什么、不做什么</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>做</th>
+<th>不做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>检验看空方每一条核心论断的<strong>推理链条</strong>，而不是替换结论</td>
+<td>不重述 30+ 份既有腾讯报告已有的内容</td>
+</tr>
+<tr>
+<td>用<strong>全球同业实测倍数</strong>检验看空方的估值参数</td>
+<td>不做技术面分析（仓库既定边界，issue #61）</td>
+</tr>
+<tr>
+<td>给 AI 期权一个<strong>自下而上的、可证伪的</strong>定价</td>
+<td>不假装那个定价是精确的</td>
+</tr>
+<tr>
+<td>明确回答"什么价格配得上重仓"和"重仓需要什么前提"</td>
+<td>不给"买入/卖出"式的投资建议</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="02">0.2 局限性声明（与看空报告同等强度）</h3>
+<ol>
+<li><strong>WebSearch 配额已耗尽</strong>，全部数据来自定向 WebFetch 与一手 PDF。8/13 之后的卖方报告、监管动态、CFIUS 进展仍是盲区。</li>
+<li><strong>aastocks（规范指定港股主源）本次仍取不到数</strong>（JS 渲染）。行情副源用 stockanalysis，财务主源用公司一手中期业绩公告 PDF（等级高于 aastocks），此为口径变更，特此标明。</li>
+<li><strong>微信小店 / 视频号电商的公开数据是 2024–2025 年份的</strong>，2026 中期公告只有定性表述、无 GMV 数字。第五章的电商测算因此是<strong>情景算术，不是预测</strong>，误差带很宽。</li>
+<li><strong>本文的偏见方向与看空报告相反。</strong> 我被指派做多头论证，这本身就是一个立场污染源。我的对冲办法是：（a）在裁决表里主动记录 5 条"看空方是对的"；（b）我的估值中枢 HK$641 <strong>低于</strong>晨星分析师 HK$780，也低于晨星量化的隐含乐观边界；（c）我承认看空方的地板下修（HK$390 一线）<strong>基本正确</strong>，这条对多头最不利。</li>
+<li><strong>本仓库持有腾讯（6,600 股，成本 HK$496，浮亏约 -10%）</strong>。多头论证有为持仓辩护的动机，读者应据此打折。</li>
+</ol>
+<hr />
+<h2 id="_2">一、数据基准与口径</h2>
+<h3 id="11">1.1 币种与汇率（关键，看空报告已纠错过一次）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>取值</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CNY/HKD</strong></td>
+<td><strong>1.1641</strong></td>
+<td>ECB 官方汇率（frankfurter.dev），2026-08-14</td>
+</tr>
+<tr>
+<td>USD/HKD</td>
+<td>7.848</td>
+<td>同源反算，与联系汇率制吻合 ✅</td>
+</tr>
+<tr>
+<td>口径警告</td>
+<td><strong>不得使用 2025 年的 1.084</strong></td>
+<td>2026 年人民币对美元升值约 6.4%，用旧汇率会把港币计价 PE 高估约 8%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>财务数据为人民币，股价与市值为港币。</strong> 本文所有跨币种换算均用 1.1641。</p>
+<h3 id="12-adr">1.2 ADR 换股比例（强制标明）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>数值</th>
+<th>验证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TCEHY 市值</td>
+<td>US$503.36bn</td>
+<td>stockanalysis</td>
+</tr>
+<tr>
+<td>除以股本 8.98bn 股</td>
+<td><strong>US$56.05/股</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>TCEHY 收盘价</td>
+<td>US$56.50</td>
+<td>偏差 0.80% ✅</td>
+</tr>
+<tr>
+<td><strong>结论</strong></td>
+<td><strong>1 ADR = 1 普通股</strong></td>
+<td>数学验证通过</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="13">1.3 估值基准（与看空报告同源，避免"换基准赢辩论"）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>来源/口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收盘价</td>
+<td><strong>HK$445.60</strong></td>
+<td>stockanalysis 2026-08-17。三源交叉验证：445.60 / 446.40（刷新价，偏差 0.18%）/ 440.00（晨星 API 8/14 快照，偏差 1.26%）→ <strong>共识值 445.60</strong> ✅</td>
+</tr>
+<tr>
+<td>总股本（基本加权）</td>
+<td>9,025 百万股</td>
+<td>中期公告 Q2'26</td>
+</tr>
+<tr>
+<td>摊薄加权股数</td>
+<td>9,153 百万股（Q2'26）/ 9,163（H1'26）</td>
+<td>中期公告</td>
+</tr>
+<tr>
+<td>市值</td>
+<td><strong>HK$4.02 万亿 / RMB 3.4546 万亿</strong></td>
+<td>验算偏差 0.04% ✅</td>
+</tr>
+<tr>
+<td>52 周区间</td>
+<td><strong>HK$411.00 – 683.00</strong></td>
+<td>stockanalysis</td>
+</tr>
+<tr>
+<td>TTM 收入</td>
+<td>RMB 7,884.83 亿</td>
+<td>公告推算 = stockanalysis，双源零偏差 ✅</td>
+</tr>
+<tr>
+<td>TTM Non-IFRS 归母净利</td>
+<td>RMB 2,715.69 亿</td>
+<td>公告推算</td>
+</tr>
+<tr>
+<td><strong>TTM Non-IFRS 经营盈利</strong></td>
+<td><strong>RMB 2,933.55 亿</strong></td>
+<td>公告推算（本文最重要的分母）</td>
+</tr>
+<tr>
+<td><strong>Non-IFRS 经营利润率</strong></td>
+<td><strong>37.20%</strong></td>
+<td>2,933.55 / 7,884.83</td>
+</tr>
+<tr>
+<td>TTM Non-IFRS 摊薄 EPS</td>
+<td><strong>HK$34.43</strong></td>
+<td>沿用看空报告</td>
+</tr>
+<tr>
+<td>TTM Non-IFRS PE</td>
+<td><strong>12.9 倍</strong></td>
+<td>445.60 / 34.43</td>
+</tr>
+<tr>
+<td>上市投资公允价值</td>
+<td>RMB 4,872 亿</td>
+<td>中期公告</td>
+</tr>
+<tr>
+<td>非上市投资账面值</td>
+<td>RMB 3,879 亿</td>
+<td>中期公告</td>
+</tr>
+<tr>
+<td>净现金</td>
+<td>RMB 581.91 亿</td>
+<td>中期公告</td>
+</tr>
+<tr>
+<td><strong>每股换算常数</strong></td>
+<td><strong>股权价值（RMB 亿）× 0.012898615 = HK$/股</strong></td>
+<td>= 100 / 9,025 × 1.1641，全文统一</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>本文与看空报告共用同一套基准数字。任何结论差异都来自估值假设，不来自数据。这是刻意的——换基准赢来的辩论没有价值。</strong></p>
+<hr />
+<h2 id="_3">二、逐条裁决表（强制项）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: center;">#</th>
+<th>看空方核心论断</th>
+<th style="text-align: center;"><strong>裁决</strong></th>
+<th>核心证据</th>
+<th style="text-align: center;">影响（HK$/股）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>1</strong></td>
+<td>晨星 HK$780 比中性高 43.3%，<strong>"是叙事"</strong></td>
+<td style="text-align: center;"><strong>部分推翻</strong></td>
+<td>HK$780 隐含经营业务 EV/非IFRS经营盈利 <strong>17.43x</strong>，与 <strong>Meta 实测 EV/EBIT 17.54x 几乎完全相等</strong>。这不是叙事，是一条可证伪的具体假设："腾讯经营业务值 Meta 的倍数"。但 Meta TTM 收入 <strong>+27.65%</strong> vs 腾讯 <strong>+11%</strong>，同为约 38% 经营利润率——<strong>平价确实过头</strong>。看空方的结论方向对，论证方式错</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2</strong></td>
+<td>中性 SOTP <strong>HK$544.23</strong> 是内在价值</td>
+<td style="text-align: center;"><strong>推翻</strong></td>
+<td>HK$544 隐含 EV/非IFRS经营盈利仅 <strong>11.78x</strong>、核心业务 PE <strong>14.02x</strong>。而<strong>网易剔净现金后的核心 PE 是 11.06x</strong>（收入 +6.63%、经营利润率 33.26%、纯游戏）。看空方给宽护城河、+11% 增长、37.2% 利润率、剔 AI 后经营盈利 +19% 的腾讯，只比窄护城河的网易高 6%。<strong>这不是中性，这是看空</strong></td>
+<td style="text-align: center;"><strong>−96/股</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>3</strong></td>
+<td>EV/Sales 参数（本土 5.5x / 国际 4.0x / 社交 3.0x / 广告 6.0x / 金科 3.5x）已给足溢价</td>
+<td style="text-align: center;"><strong>推翻方法</strong></td>
+<td>看空方以"网易市销率 4.76x"锚定本土游戏 5.5x。但<strong>网易 P/S 4.76 而 EV/Sales 只有 3.42</strong>——净现金占其市值 29%。<strong>看空方把 P/S 当 EV/Sales 用，口径错配。</strong> 更根本的问题：EV/Sales 对利润率极度敏感（阿里 EV/Sales 1.87 但 EV/EBIT 30.37），拿它做跨公司锚定会系统性失真</td>
+<td style="text-align: center;">见 #2</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>4</strong></td>
+<td>投资组合折价：上市 ×0.85、非上市 ×0.75</td>
+<td style="text-align: center;"><strong>部分推翻</strong></td>
+<td>上市部分折价站不住：腾讯<strong>实物分红</strong>释放京东 US$164 亿、美团 US$204 亿，<strong>按市值全额、零税负、不砸盘</strong>；资产负债表全部递延所得税负债合计仅 RMB 225.81 亿 = 组合的 <strong>2.58%</strong>。非上市 ×0.75 我承认有理（本仓库穿透准确度仅 85-90%）。<strong>但这条无论谁对，全额争议只值 HK$21.93/股</strong></td>
+<td style="text-align: center;"><strong>+22/股（上限）</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>5</strong></td>
+<td>"市场给 8,751 亿投资组合零估值"是循环论证</td>
+<td style="text-align: center;"><strong>完全承认</strong></td>
+<td>看空方自陈，我同意且强化：这条是其中性倍数假设的残差，不是市场的错误。<strong>能站住的只有方法一：核心业务 10.23 倍 PE，只依赖公告数字</strong></td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>6</strong></td>
+<td>悲观地板应从 HK$455 下修到 <strong>HK$390</strong></td>
+<td style="text-align: center;"><strong>基本承认</strong></td>
+<td>我独立算的资产法地板（核心 PE 8x + 投资组合按我的折价）= <strong>HK$364.17</strong>，比看空方更低。<strong>看空方在这条上是对的，我甚至认为他还不够狠。</strong> 唯一保留：HK$392.5 隐含核心 PE <strong>8.89x</strong>，是"五个分部同时被打到危机倍数 + 投资组合重折价"的并发假设，应标为 <strong>5% 分位</strong>，不是基准情景</td>
+<td style="text-align: center;">0（承认）</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>7</strong></td>
+<td>公司真金白银定义的地板（6 月回购均价 442.23、最低 411.00 = 52 周低点）</td>
+<td style="text-align: center;"><strong>成立，但看空方的降级也成立</strong></td>
+<td>现价 445.60 = 6 月回购均价 <strong>+0.76%</strong>、H1 均价 <strong>−8.66%</strong>。但硬数据：<strong>H1'26 回购 RMB 214.49 亿 vs H1'25 336.47 亿，同比 −36.25%</strong>（权益变动表）；摊薄股数同比只降 <strong>1.02%</strong>（历史 2%+）。<strong>回购减速在电话会之前就发生了。看空方"已是过去时"的判断，比他自己意识到的更对</strong></td>
+<td style="text-align: center;">0（承认）</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>8</strong></td>
+<td>AI 期权：14.2% 分歧"对应信不信管理层三条承诺"，看空方<strong>不给期权定价</strong></td>
+<td style="text-align: center;"><strong>推翻</strong></td>
+<td>看空方不是不定价，是<strong>定了负价</strong>：他把目标 PE 从 22/18/14 主动下调到 20/16/12，仅 18x→16x 一项，就在 3 年目标上扣掉 HK$91.66，折现值 <strong>−HK$68.87/股</strong>。自下而上测算（§5），AI 期权的概率加权期望值是 <strong>+HK$29.7 ~ +40.8/股</strong>。<strong>摆动幅度 HK$99–110/股，恰好覆盖我与看空方 HK$96 的中枢差</strong></td>
+<td style="text-align: center;"><strong>+99~110/股</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>9</strong></td>
+<td>股东回报率 2025 年 49.7% → 2026E 34.6%，是论文假设 6 失效</td>
+<td style="text-align: center;"><strong>部分推翻</strong></td>
+<td>降档是事实，我不否认。但：①减少的金额 <strong>HK$243 亿/年 = 市值的 0.60%</strong>，远小于资本开支增量；②回购的门槛收益率是 <strong>7.73%</strong>（1/12.94），Mitchell 的原话框架是回报驱动的动态平衡，不是放弃股东回报；③2026E 仍有 HK$967 亿回到股东手里 = <strong>市值 2.41%</strong>。<strong>"恶化"和"合理选择"都对，取决于 AI 资本开支 ROIC 是否 &gt;7.73%——这是可验证的，不是信仰问题</strong></td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>10</strong></td>
+<td>国际游戏连续四季固汇降档（+35→+42→+31→+14→+4%）是真问题</td>
+<td style="text-align: center;"><strong>完全承认</strong></td>
+<td>无可辩驳。且我同意看空方"重要性高于自由现金流转负"的排序——FCF 转负是主动可逆，国际游戏减速是被动结果</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>11</strong></td>
+<td>净现金腰斩、资本开支无指引、912 亿非流动预付款、算力残值论证有效期 = GPU 短缺周期</td>
+<td style="text-align: center;"><strong>完全承认</strong></td>
+<td>四条全部成立，且第四条（残值论证）是看空报告最锋利的一处。多头不应该用"停止自研也能出租盈利"当长期安全边际</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>12</strong></td>
+<td>选腾讯本体、不选 Prosus</td>
+<td style="text-align: center;"><strong>基本承认（一条反例）</strong></td>
+<td>1.19 下行 Beta / 0.77 上行 Beta 的不对称、治理实证、双层资本配置风险，三条都站得住。<strong>唯一反例</strong>：长期持有者视角下，Prosus 用卖腾讯的钱在 ~48% 折价回购自己，每年产生约 <strong>+1.23%</strong> 的每股 NAV 增值，且<strong>折价永不收窄反而是这台机器的燃料</strong>。10 年累计约 +13%。但这换不来 1.19 的下行 Beta</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>13</strong>（看空方欠项）</td>
+<td>微信小店 / 视频号电商闭环的价值</td>
+<td style="text-align: center;"><strong>部分推翻：提及但未定价</strong></td>
+<td>⚠️ <strong>我的初稿写"看空方完全漏掉"，实测后自我更正</strong>：看空报告全文出现"微信小店" <strong>1 次</strong>（§6.2 括号内，作为广告归因的一部分）、"视频号" <strong>1 次</strong>（§4.4 参数表，原话"视频号/小游戏的变现被记在营销服务里，此处偏保守"）。<strong>所以看空方知道它存在，只是没有给它任何增量估值</strong>——社交网络因此"偏保守"给 3.0x，而营销服务 6.0x 的理由里只写"+22%、56% 毛利率、AI 驱动"，没有一句涉及闭环的定价含义。中期公告则<strong>两处原文点名</strong>（见 §5.3）</td>
+<td style="text-align: center;">见 §5.3</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>汇总：完全推翻 3 条（#2、#3、#8）；部分推翻 4 条（#1、#4、#9、#13）；完全承认 5 条（#5、#6、#10、#11、#12）；#7 双向成立。</strong></p>
+<hr />
+<h2 id="_4">三、主攻击一：估值倍数——看空方的"中性"其实是深度看空</h2>
+<p><strong>（对应必攻论断 1 与 2）</strong></p>
+<h3 id="31-evsales-ev">3.1 把 EV/Sales 换成 EV/经营盈利，看空方的假设立刻现形</h3>
+<p>看空方自评"倍数本身不疯"，然后给了一个中枢比自己认可的倍数低 43% 的数。这个矛盾用一张表就能定位：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>口径</th>
+<th style="text-align: right;">经营业务 EV（RMB 亿）</th>
+<th style="text-align: center;"><strong>EV / TTM 非IFRS 经营盈利</strong></th>
+<th style="text-align: right;">对应每股（HKD）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>现价 445.60</strong></td>
+<td style="text-align: right;">25,213.43</td>
+<td style="text-align: center;"><strong>8.59x</strong></td>
+<td style="text-align: right;">445.60</td>
+</tr>
+<tr>
+<td>看空方悲观</td>
+<td style="text-align: right;">23,869.47</td>
+<td style="text-align: center;"><strong>8.14x</strong></td>
+<td style="text-align: right;">392.54</td>
+</tr>
+<tr>
+<td><strong>看空方"中性"</strong></td>
+<td style="text-align: right;">34,560.57</td>
+<td style="text-align: center;"><strong>11.78x</strong></td>
+<td style="text-align: right;"><strong>544.23</strong></td>
+</tr>
+<tr>
+<td>看空方乐观</td>
+<td style="text-align: right;">46,447.51</td>
+<td style="text-align: center;"><strong>15.83x</strong></td>
+<td style="text-align: right;">714.49</td>
+</tr>
+<tr>
+<td><strong>晨星分析师 HK$780</strong></td>
+<td style="text-align: right;">51,138.70</td>
+<td style="text-align: center;"><strong>17.43x</strong></td>
+<td style="text-align: right;">780.00</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>看空方自己写道："这个 17.4 倍 EV/经营盈利，本身并不离谱。"</strong></p>
+<p><strong>那么他的中性 11.78 倍是什么？</strong> 它比自己承认"不离谱"的倍数低 <strong>32.4%</strong>。看空方没有解释这 32.4% 的折价从哪来——因为他用的是 EV/Sales，倍数被利润率结构掩盖了，转换成 EV/经营盈利之后就藏不住了。</p>
+</blockquote>
+<h3 id="32-stockanalysis2026-08-17">3.2 全球同业实测（stockanalysis，2026-08-17 取数）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th style="text-align: right;">EV/Sales</th>
+<th style="text-align: right;"><strong>EV/EBIT</strong></th>
+<th style="text-align: right;">PE(TTM)</th>
+<th style="text-align: right;">TTM 收入增速</th>
+<th style="text-align: right;">经营利润率</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Meta</strong></td>
+<td style="text-align: right;">6.68</td>
+<td style="text-align: right;"><strong>17.54</strong></td>
+<td style="text-align: right;">22.23</td>
+<td style="text-align: right;"><strong>+27.65%</strong></td>
+<td style="text-align: right;">38.08%</td>
+<td>最接近的商业模式对标</td>
+</tr>
+<tr>
+<td>Alphabet</td>
+<td style="text-align: right;">9.22</td>
+<td style="text-align: right;">27.83</td>
+<td style="text-align: right;">17.36</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>网易</strong></td>
+<td style="text-align: right;">3.42</td>
+<td style="text-align: right;">≈10.3*</td>
+<td style="text-align: right;">16.01</td>
+<td style="text-align: right;"><strong>+6.63%</strong></td>
+<td style="text-align: right;">33.26%</td>
+<td>净现金 $23.19bn = 市值 29%</td>
+</tr>
+<tr>
+<td>阿里巴巴</td>
+<td style="text-align: right;">1.87</td>
+<td style="text-align: right;">30.37</td>
+<td style="text-align: right;">19.41</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">6.2%</td>
+<td>低利润率，EV/Sales 无参考价值</td>
+</tr>
+<tr>
+<td>Sea</td>
+<td style="text-align: right;">2.51</td>
+<td style="text-align: right;">30.52</td>
+<td style="text-align: right;">47.09</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>快手</td>
+<td style="text-align: right;">0.85</td>
+<td style="text-align: right;">（EV/EBITDA 4.93）</td>
+<td style="text-align: right;">8.86</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td><strong>中国资产折价的地板</strong></td>
+</tr>
+<tr>
+<td><strong>腾讯 0700.HK</strong></td>
+<td style="text-align: right;"><strong>4.53</strong></td>
+<td style="text-align: right;"><strong>13.18</strong>（IFRS 口径）</td>
+<td style="text-align: right;">15.19</td>
+<td style="text-align: right;"><strong>+11%</strong></td>
+<td style="text-align: right;"><strong>37.20%</strong>（非IFRS）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>* 由 EV/EBITDA 9.72 推算，非直取。</p>
+<p><strong>三条读法：</strong></p>
+<p><strong>（1）看空方的锚定口径是错的。</strong> 他写"网易市销率 4.76x；腾讯本土游戏 +17%…给溢价"，于是给 5.5x <strong>EV/Sales</strong>。但<strong>网易的 P/S 是 4.76、EV/Sales 只有 3.42</strong>——差 39%，因为网易 29% 的市值是净现金。<strong>用 P/S 去锚 EV/Sales，等于凭空多给了自己 39% 的"保守空间"，然后再在这个错误基准上打折。</strong></p>
+<p><strong>（2）EV/Sales 是跨公司比较里最不可靠的倍数。</strong> 阿里 EV/Sales 1.87 而 EV/EBIT 30.37；Meta EV/Sales 6.68 而 EV/EBIT 17.54。<strong>同一个 EV/Sales 在不同利润率下能对应完全不同的 EV/EBIT。</strong> 腾讯 37.20% 的非 IFRS 经营利润率与 Meta 的 38.08% 几乎相同——<strong>这两家才是可以用 EV/Sales 直接对话的，而看空方偏偏没做这个对照。</strong></p>
+<p><strong>（3）核心 PE 的诚实对照——这条我要替看空方修正一个对多头过于慷慨的说法。</strong></p>
+<p>看空方在 §4.3 写："<strong>腾讯的 TTM 市盈率低于网易…这本身就是一个异常。</strong>" 这句话被高估了：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">表观 PE(TTM)</th>
+<th style="text-align: right;">净现金/投资组合占市值</th>
+<th style="text-align: right;"><strong>剔除后的核心 PE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网易</td>
+<td style="text-align: right;">16.01</td>
+<td style="text-align: right;">29.3%（净现金）</td>
+<td style="text-align: right;"><strong>11.06x</strong></td>
+</tr>
+<tr>
+<td><strong>腾讯</strong></td>
+<td style="text-align: right;">15.19（IFRS）/ 12.9（非IFRS）</td>
+<td style="text-align: right;">27.0%（投资组合+净现金）</td>
+<td style="text-align: right;"><strong>10.23x</strong>（按账面全额扣）<br><strong>10.56x</strong>（按我的折价扣）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>把两家都剔干净之后，腾讯核心只比网易核心便宜 6–8%，不是表观的 20%+。看空方那句"异常"的力度只有他说的三分之一。</strong></p>
+<p><strong>但异常仍然存在，而且方向对多头有利</strong>：网易核心 11.06x 对应的是 <strong>+6.63% 收入增速、33.26% 经营利润率、82% 收入来自游戏的单腿生意</strong>；腾讯核心 10.23–10.56x 对应的是 <strong>+11% 收入增速、37.20% 经营利润率、剔除 AI 新产品后经营盈利 +19%、微信 14.39 亿 MAU 的宽护城河、三条腿</strong>。<strong>腾讯核心应当溢价于网易核心，现在却折价。这才是那个真正的异常，它值 30–50% 的重估。</strong></p>
+<h3 id="33">3.3 我的倍数选择与理由</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>档位</th>
+<th style="text-align: center;">EV/非IFRS经营盈利</th>
+<th style="text-align: center;">相对 Meta</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保守</td>
+<td style="text-align: center;"><strong>12.28x</strong></td>
+<td style="text-align: center;">−30%</td>
+<td>增速差（11% vs 27.65%）+ 中国资产折价 + 地缘政治尾部风险，全部足额计提</td>
+</tr>
+<tr>
+<td><strong>中枢</strong></td>
+<td style="text-align: center;"><strong>14.03x</strong></td>
+<td style="text-align: center;"><strong>−20%</strong></td>
+<td>增速差用"剔 AI 后经营盈利 +19%"部分抵消；护城河同为 Wide；投资组合另计不重复</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td style="text-align: center;"><strong>15.79x</strong></td>
+<td style="text-align: center;">−10%</td>
+<td>AI 赋能线兑现、国际游戏止跌后，中国资产折价收敛至历史常态</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>我明确不采用 17.43x（Meta 平价，即晨星 HK$780）</strong>：腾讯收入增速是 Meta 的 40%，平价倍数没有理由。<strong>这是我与晨星分析师的分歧，也是我承认看空方"780 偏高"这个结论方向正确的地方。</strong></p>
+<h3 id="34">3.4 投资组合折价：我改，但改不动大局</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>上市（4,872 亿）</th>
+<th>非上市（3,879 亿）</th>
+<th style="text-align: right;">合计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>看空方中性</td>
+<td>×0.85 = 4,141.2</td>
+<td>×0.75 = 2,909.3</td>
+<td style="text-align: right;">7,050.45</td>
+</tr>
+<tr>
+<td><strong>我的中枢</strong></td>
+<td><strong>×0.95</strong> = 4,628.4</td>
+<td><strong>×0.85</strong> = 3,297.15</td>
+<td style="text-align: right;"><strong>7,925.55</strong></td>
+</tr>
+<tr>
+<td>我的保守</td>
+<td>×0.90</td>
+<td>×0.80</td>
+<td style="text-align: right;">7,488.00</td>
+</tr>
+<tr>
+<td>我的乐观</td>
+<td>×1.00</td>
+<td>×0.90</td>
+<td style="text-align: right;">8,363.10</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>上市部分我只打 5 折扣（不是 15%），三条硬证据：</strong></p>
+<ol>
+<li><strong>实物分红是零税负、零折价的价值实现通道，且腾讯做过两次。</strong> 2021-12 派发京东（17%→2.3%，US$164 亿）、2022-11 派发美团（17%→1.5%，US$204 亿）。合计约 US$368 亿按<strong>市值全额</strong>交到股东手里，不缴税、不砸盘。<strong>一个拥有已验证的 100% 释放机制的按市值计价组合，凭什么打 15 折？</strong></li>
+<li><strong>公司账上的递延所得税负债总额只有 RMB 225.81 亿 = 组合的 2.58%</strong>（中期公告，另有递延所得税资产 315.53 亿，净额为资产 89.72 亿）。<strong>会计上认定的税负漏损是 2.58%，看空方按 15% 计提，超额计提约 6 倍。</strong></li>
+<li>减持通道也在常态运行（Reddit 降至 4.17%、BOSS 直聘 9.2%、富途 22%），都是按市价成交。</li>
+</ol>
+<p><strong>非上市 ×0.85 是我对看空方的部分让步</strong>：本仓库最完整的一次穿透（<code>腾讯-投资组合完整清单-20260430.md</code>）初版准确度仅约 50%，修订后 85-90%，且发现"净高估约 US$76 亿"。<strong>这个组合的账面值有真实的失真风险，打折是对的，只是 25% 过头。</strong></p>
+<blockquote>
+<p><strong>但必须诚实说清楚：这整场争论只值 HK$21.93/股（= 8,751 − 7,050.45 全额争议）。占现价 4.9%。</strong></p>
+<p><strong>看空方自己也算出了 HK$21.7，并且正确地指出主战场在倍数（HK$214/股）。这一点他是对的。任何把"投资组合被低估"当成腾讯多头主论据的说法，都是在小池塘里钓鱼。</strong></p>
+</blockquote>
+<hr />
+<h2 id="_5">四、主攻击二：悲观地板——我基本站在看空方这边</h2>
+<p><strong>（对应必攻论断 3）</strong></p>
+<h3 id="41">4.1 我独立算的地板比看空方更低</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>地板定义</th>
+<th style="text-align: right;">每股（HKD）</th>
+<th style="text-align: center;">隐含核心 PE</th>
+<th style="text-align: right;">较现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>看空方 thesis 旧值</td>
+<td style="text-align: right;">455.0</td>
+<td style="text-align: center;">≈10.8x</td>
+<td style="text-align: right;">+2.1%</td>
+</tr>
+<tr>
+<td>看空方盈利法</td>
+<td style="text-align: right;">451.5</td>
+<td style="text-align: center;">≈10.7x</td>
+<td style="text-align: right;">+1.3%</td>
+</tr>
+<tr>
+<td><strong>看空方资产法（其结论）</strong></td>
+<td style="text-align: right;"><strong>392.54</strong></td>
+<td style="text-align: center;"><strong>8.89x</strong></td>
+<td style="text-align: right;">−11.9%</td>
+</tr>
+<tr>
+<td><strong>我的资产法（核心 PE 8x）</strong></td>
+<td style="text-align: right;"><strong>364.17</strong></td>
+<td style="text-align: center;"><strong>8.00x</strong></td>
+<td style="text-align: right;"><strong>−18.3%</strong></td>
+</tr>
+<tr>
+<td>52 周实测低点</td>
+<td style="text-align: right;">411.00</td>
+<td style="text-align: center;">9.47x</td>
+<td style="text-align: right;">−7.8%</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>裁决：看空方"地板应从 455 下修到 390"这一条，我完全承认，而且认为他还不够狠。</strong></p>
+<p>一家把净现金从 1,469 亿花到 582 亿、单季自由现金流转负、还有 912 亿已订购未交付算力在路上的公司，<strong>在极端情景下跌到核心 PE 8 倍（HK$364）是完全可能的</strong>。快手现在就在 8.86 倍 PE 交易。</p>
+</blockquote>
+<h3 id="42">4.2 但地板的<strong>性质</strong>需要重新定义</h3>
+<p>看空方把 HK$392.5 写进"读者应该记住的四个数"，并给出"高——只依赖公告数字 + 保守倍数"的采信度。<strong>这是把 5% 分位事件当基准情景陈述。</strong></p>
+<p>HK$392.5 要求下面五件事<strong>同时</strong>发生：本土游戏 EV/Sales 打到 4.0x（低于网易实测 3.42x 只是勉强）、国际游戏 2.5x、社交 2.0x、广告 4.0x（一个 +22% 三季连续加速的资产）、金科 2.5x，<strong>并且</strong>上市投资打 75 折、非上市打 60 折。<strong>五个分部同时进入危机定价，加上一个按市值计价的组合再被砍掉四分之一。</strong></p>
+<p><strong>这个情景应当被贴的标签是"我错了会亏多少"，不是"内在价值的下限"。</strong> 两者的仓位含义完全不同。</p>
+<h3 id="43">4.3 公司真金白银定义的地板：一半有效</h3>
+<p><strong>有效的一半（硬数据，中期公告逐月回购明细）：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>月份</th>
+<th style="text-align: right;">股数</th>
+<th style="text-align: right;">最低价</th>
+<th style="text-align: right;">总代价（HK$）</th>
+<th style="text-align: right;">均价（HK$）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 月</td>
+<td style="text-align: right;">10,205,000</td>
+<td style="text-align: right;">600.50</td>
+<td style="text-align: right;">63.58 亿</td>
+<td style="text-align: right;">623.00</td>
+</tr>
+<tr>
+<td>3 月</td>
+<td style="text-align: right;">2,445,000</td>
+<td style="text-align: right;">476.40</td>
+<td style="text-align: right;">11.97 亿</td>
+<td style="text-align: right;">489.52</td>
+</tr>
+<tr>
+<td>4 月</td>
+<td style="text-align: right;">5,161,000</td>
+<td style="text-align: right;">485.20</td>
+<td style="text-align: right;">26.03 亿</td>
+<td style="text-align: right;">504.32</td>
+</tr>
+<tr>
+<td>5 月</td>
+<td style="text-align: right;">10,186,000</td>
+<td style="text-align: right;">420.40</td>
+<td style="text-align: right;">45.07 亿</td>
+<td style="text-align: right;">442.46</td>
+</tr>
+<tr>
+<td><strong>6 月</strong></td>
+<td style="text-align: right;"><strong>22,034,100</strong></td>
+<td style="text-align: right;"><strong>411.00</strong></td>
+<td style="text-align: right;"><strong>97.44 亿</strong></td>
+<td style="text-align: right;"><strong>442.23</strong></td>
+</tr>
+<tr>
+<td><strong>H1</strong></td>
+<td style="text-align: right;"><strong>50,031,100</strong></td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>244.08 亿</strong></td>
+<td style="text-align: right;"><strong>487.87</strong></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>现价 445.60 = <strong>6 月回购均价 +0.76%</strong>、<strong>H1 均价 −8.66%</strong></li>
+<li>6 月最低成交价 <strong>HK$411.00 恰好是 52 周低点</strong>——公司在 52 周低点当天在买</li>
+<li>回购节奏随股价下跌<strong>加速</strong>（1 月 623 元买 1,020 万股 → 6 月 442 元买 2,203 万股），是逆向配置而非机械均摊</li>
+</ul>
+<p><strong>失效的一半（我在这里要替看空方补一刀，方向对多头不利）：</strong></p>
+<p>看空方说"这个信号的有效期只到 8/12 电话会"。<strong>中期公告的权益变动表显示，回购减速在电话会之前就已经发生了：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>口径</th>
+<th style="text-align: right;">H1'2026</th>
+<th style="text-align: right;">H1'2025</th>
+<th style="text-align: right;">同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股份回购及注销（RMB 百万）</td>
+<td style="text-align: right;">19,269</td>
+<td style="text-align: right;">34,956</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>股份回购（将注销）（RMB 百万）</td>
+<td style="text-align: right;">2,180</td>
+<td style="text-align: right;">2,288</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><strong>合计（RMB 百万）</strong></td>
+<td style="text-align: right;"><strong>21,449</strong></td>
+<td style="text-align: right;"><strong>33,647</strong></td>
+<td style="text-align: right;"><strong>−36.25%</strong></td>
+</tr>
+<tr>
+<td>Q2 摊薄加权股数（百万股）</td>
+<td style="text-align: right;">9,153</td>
+<td style="text-align: right;">9,247</td>
+<td style="text-align: right;"><strong>−1.02%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>腾讯 H1'26 的回购金额同比已经砍掉三分之一，摊薄股数只减少 1.02%（历史节奏 2%+）。</strong></p>
+<p><strong>"公司在低点买"这个多头论据，比看空方说的还要弱：不是 8/12 之后才失效，是上半年就已经在失效。这条我完全站在看空方一边，并且加重。</strong></p>
+</blockquote>
+<hr />
+<h2 id="ai">五、主攻击三：AI 期权——看空方给了它负价格</h2>
+<p><strong>（对应必攻论断 4，这是我与看空方最大的分歧，也是全部估值差的来源）</strong></p>
+<h3 id="51-ai">5.1 看空方实际上给 AI 定了多少钱？答案是负数</h3>
+<p>看空方声称"不给这个期权价值定价"。但他在 §4.6 做了一件事：<strong>把三情景目标 PE 从 thesis 的 22/18/14 主动下调到 20/16/12</strong>，理由是"AI 重资本化后估值中枢应下移"。</p>
+<p>仅中性档 18x → 16x 一项：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">3 年后 EPS</th>
+<th style="text-align: right;">目标 PE</th>
+<th style="text-align: right;">目标价</th>
+<th style="text-align: right;">差额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>thesis 口径</td>
+<td style="text-align: right;">45.83</td>
+<td style="text-align: right;">18x</td>
+<td style="text-align: right;">824.94</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>看空方口径</td>
+<td style="text-align: right;">45.83</td>
+<td style="text-align: right;">16x</td>
+<td style="text-align: right;">733.28</td>
+<td style="text-align: right;">−91.66</td>
+</tr>
+<tr>
+<td><strong>折现到今天（@10%，3 年）</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>−HK$68.87/股</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>这是一次双重计提：</strong></p>
+<ol>
+<li>TTM 非 IFRS 经营盈利 2,933.55 亿<strong>已经</strong>扣掉了 AI 新产品的拖累（Q1 88 亿 + Q2 105 亿，H1 合计 193 亿，TTM 约 293 亿）；</li>
+<li>然后<strong>再</strong>因为同一笔 AI 投入把倍数下调一档。</li>
+</ol>
+<p><strong>同一个负面因素被扣了两次。</strong> 而且看空方下调的是<strong>永久性</strong>倍数中枢，理由却是一个管理层明确表述为"今年和明年一次性集中投入"的周期性事件。<strong>你可以不相信这句承诺，但那时你该做的是把 2027-2028 的资本开支预测调高，而不是把终值倍数永久下移。</strong></p>
+<p><strong>正常化敏感性</strong>（把 TTM 约 293 亿 AI 新产品拖累加回）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>倍数档</th>
+<th style="text-align: right;">未正常化每股</th>
+<th style="text-align: right;"><strong>正常化后每股</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12.28x（保守）</td>
+<td style="text-align: right;">568.75</td>
+<td style="text-align: right;"><strong>615.16</strong></td>
+</tr>
+<tr>
+<td>14.03x（中枢）</td>
+<td style="text-align: right;">640.61</td>
+<td style="text-align: right;"><strong>693.64</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>注意：正常化后的保守档 HK$615 已经高于看空方的乐观档以外的一切；正常化后的中枢 HK$693.64 略高于晨星量化的 HK$683.21。</strong></p>
+<h3 id="52-ai">5.2 自下而上给 AI 定价（可证伪版本）</h3>
+<p>我拒绝用"信不信管理层"来定价。下面是三条<strong>可以在未来 8 个季度里被证伪</strong>的现金流路径。</p>
+<p><strong>（1）广告推荐效率 —— 已兑现，且是最硬的一条</strong></p>
+<p>硬数据：营销服务同比 <strong>25Q4 +17% → 26Q1 +20% → 26Q2 +22%</strong>，三季连续加速；集团毛利率 <strong>57.8% 历史新高</strong>。中期公告原文归因：</p>
+<blockquote>
+<p>"得益於持續優化 AI 驅動的廣告推薦模型（決定每次曝光向每位用戶展示的廣告內容）、升級智能投放產品矩陣騰訊營銷 AIM+…"</p>
+</blockquote>
+<p>单季增量的直接测算：Q2 营销服务 435.7 亿 vs 去年同期 357.6 亿，增量 78.1 亿；按公告披露的营销服务毛利率 56.2%，<strong>单季增量毛利 43.9 亿，年化约 175.57 亿</strong>。</p>
+<p>估值：AI 场景假设营销服务 5 年 CAGR <strong>18%</strong>（对比无 AI 基准 11%）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">5 年后收入（RMB 亿）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 场景（18% CAGR）</td>
+<td style="text-align: right;">3,639.62</td>
+</tr>
+<tr>
+<td>基准（11% CAGR）</td>
+<td style="text-align: right;">2,680.78</td>
+</tr>
+<tr>
+<td><strong>增量</strong></td>
+<td style="text-align: right;"><strong>958.84</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>增量收入 × 50% 增量经营利润率 × 14x = <strong>RMB 6,711.89 亿</strong>（5 年后价值）→ 折现 @10% → <strong>HK$53.76/股</strong></p>
+<p><strong>（2）云 / GPU 对外出租 —— 兑现中，验证路径已给排期</strong></p>
+<p>硬数据：云增速从 Q1 高十位数加速到 <strong>Q2 的 20% 出头</strong>；WorkBuddy 付费部分与 MaaS 毛利率"已和腾讯云整体持平"；5 月全产品线统一涨价；Mitchell 给出排期"年底至明年加大裸金属 GPU 对外出租"。中期公告原文："企業服務收入增長主要受我們的雲服務收入增長所驅動，得益於 AI 相關服務需求上升、持續拓展國際市場以及更為有利的定價環境。"</p>
+<p>估值：云基数按 RMB 700 亿估（金科企服 TTM 2,391.68 亿中的企业服务云部分，<strong>此为估算，非公告值</strong>），AI 场景 25% CAGR vs 基准 12% CAGR：</p>
+<p>增量收入 <strong>RMB 902.59 亿</strong> × 25% 经营利润率 × 14x = <strong>RMB 3,159.07 亿</strong> → 折现 → <strong>HK$25.30/股</strong></p>
+<p><strong>（3）微信小店 / 视频号电商闭环 —— 看空方提及但未定价的一块（详见 §5.3）</strong></p>
+<p>只计<strong>非广告</strong>部分（佣金/技术服务费），避免与（1）双重计算：GMV 从约 5,000 亿到 15,000 亿，1% 佣金率 × 55% 经营利润率 × 14x = <strong>RMB 770 亿</strong> → 折现 → <strong>HK$6.17/股</strong></p>
+<p><strong>（4）混元 / 元宝 / 小微 —— 计零</strong></p>
+<p>混元 Hy3 上线一周调用量较上代 +68 倍、OpenRouter 词元消耗全球前三是技术指标，无商业转化披露；元宝 MAU 连续两季不披露；小微无任何用户数据。<strong>我与看空方在这条上完全一致：给零。这是一个免费的看涨期权，不是估值组成部分。</strong></p>
+<p><strong>汇总：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>分项</th>
+<th style="text-align: right;">5 年后价值（RMB 亿）</th>
+<th style="text-align: right;"><strong>折现后每股（HKD）</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>广告推荐效率</td>
+<td style="text-align: right;">6,711.89</td>
+<td style="text-align: right;"><strong>53.76</strong></td>
+</tr>
+<tr>
+<td>云 / GPU 出租</td>
+<td style="text-align: right;">3,159.07</td>
+<td style="text-align: right;"><strong>25.30</strong></td>
+</tr>
+<tr>
+<td>微信电商闭环（仅非广告部分）</td>
+<td style="text-align: right;">770.00</td>
+<td style="text-align: right;"><strong>6.17</strong></td>
+</tr>
+<tr>
+<td>混元 / 元宝 / 小微</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td style="text-align: right;"><strong>10,640.96</strong></td>
+<td style="text-align: right;"><strong>85.22</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>下行侧同样要定价</strong>：若 AI 投入完全失败，2026-2027 两年约 RMB 4,000 亿资本开支中假设一半永久减值 = RMB 2,000 亿 = <strong>HK$25.80/股</strong>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: center;">P(AI 路径兑现)</th>
+<th style="text-align: right;">期望值（HK$/股）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">50%</td>
+<td style="text-align: right;"><strong>+29.69</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">60%</td>
+<td style="text-align: right;"><strong>+40.78</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>裁决 #8：看空方给 AI 期权定价 −HK$68.87/股，诚实的期望值是 +HK$29.7 ~ +40.8/股。</strong></p>
+<p><strong>摆动幅度 HK$98.6 ~ 109.7/股。而我的估值中枢 HK$640.61 与看空方的 HK$544.23 相差 HK$96.38——几乎全部由这一项解释。</strong></p>
+<p><strong>这就是整场辩论的实质：不是"倍数给多少"，是"是否允许一个已经在广告数字里兑现的东西被计入估值"。</strong></p>
+</blockquote>
+<h3 id="53">5.3 微信小店 / 视频号电商闭环：看空方的盲区</h3>
+<p><strong>看空方给营销服务 6.0x EV/Sales，理由写的是"+22% 三季连续加速、56% 毛利率、AI 驱动"——没有一个字涉及交易闭环的定价含义。</strong>（⚠️ 更正：我初稿写"全文没有出现微信小店"，实测为出现 1 次，在 §6.2 的广告归因括号里；"视频号"也出现 1 次，在 §4.4 参数表。<strong>看空方看见了它，但没有为它定价——这是"欠项"不是"漏项"。</strong>）而中期公告在两处主动点名了它：</p>
+<blockquote>
+<p>"我們升級了智能投放產品矩陣騰訊營銷 AIM+，為<strong>微信小店</strong>及短劇廣告主提供了 AI 驅動的端到端投放能力。"
+"整合微信生態系統內閉環營銷能力（助力小遊戲及<strong>微信小店</strong>等微信整合服務在騰訊管理的廣告平台上更有效地投放廣告）。"</p>
+</blockquote>
+<p><strong>闭环为什么在估值上重要（三条，与"多一块收入"无关）：</strong></p>
+<ol>
+<li><strong>闭环把广告从"品牌曝光"变成"可归因交易"。</strong> 广告主在开放生态里投放，转化发生在站外，归因失真；在小店闭环里，曝光→点击→下单→支付全在微信内，<strong>eCPM 的定价权因此结构性上移</strong>。这解释了为什么营销服务能在宏观逆风（管理层自己承认"消费与广告市场仍有波动逆风"）中做到 +22%。</li>
+<li><strong>闭环是 AI Agent 的落地场地。</strong> 刘炽平在电话会描述的"用户给智能体下一条指令、智能体完成全部交易流程"，唯一能实现的地方就是小程序 + 小店 + 微信支付这一套。<strong>公众号（语料）+ 视频号（内容）+ 小程序（动作）+ 搜一搜（入口）+ 微信支付（收钱）——豆包、Kimi、文心都缺最后两环。</strong>（本仓库 <code>AI对腾讯各业务影响-team-20260430.md</code> 的结论，本文确认）</li>
+<li><strong>变现率还有 2–3 倍空间。</strong> 本仓库既有数据：视频号货币化率 <strong>1.8% vs 抖音 6.1%</strong>（CBNData）；微信小店 GMV 2024 年 <strong>+192%</strong>、订单 +125%（微信公开课）；小程序 GMV 超 2 万亿；2025 年微信支付 GMV 4.4 万亿（+30%）。<strong>⚠️ 这些是 2024–2025 年份的数据，2026 中期公告未更新任何 GMV 数字——这是本节最大的证据弱点，必须标明。</strong></li>
+</ol>
+<blockquote>
+<p><strong>裁决 #13：营销服务 6.0x EV/Sales 是在给一条"广告收入线"定价，不是在给"中国唯一一个交易闭环 + Agent 落地场"定价。看空方看见了它却没有为它定价。</strong></p>
+<p><strong>但我必须诚实：由于 2026 年 GMV 数据完全缺失，我在主估值中只把它计入 HK$6.17/股（仅非广告佣金部分），其余价值已隐含在营销服务的 18% CAGR 假设里。我没有为这个盲区多加一分钱。</strong></p>
+</blockquote>
+<hr />
+<h2 id="_6">六、主攻击四：股东回报降档，是恶化还是合理选择？</h2>
+<p><strong>（必答问题 2）</strong></p>
+<h3 id="61">6.1 先把数字摆清楚</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2026E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>回购（HK$ 亿）</td>
+<td style="text-align: right;">≈800</td>
+<td style="text-align: right;">488.16（= H1 244.08 × 2 假设）</td>
+</tr>
+<tr>
+<td>股息（HK$ 亿）</td>
+<td style="text-align: right;">≈410</td>
+<td style="text-align: right;">479</td>
+</tr>
+<tr>
+<td><strong>合计（HK$ 亿）</strong></td>
+<td style="text-align: right;"><strong>1,210</strong></td>
+<td style="text-align: right;"><strong>967.16</strong></td>
+</tr>
+<tr>
+<td>分母（净利，HK$ 亿）</td>
+<td style="text-align: right;">2,248.42 × 1.083 = 2,435</td>
+<td style="text-align: right;">2,400 × 1.1641 = 2,793.84</td>
+</tr>
+<tr>
+<td><strong>股东回报率</strong></td>
+<td style="text-align: right;"><strong>49.69%</strong></td>
+<td style="text-align: right;"><strong>34.62%</strong></td>
+</tr>
+<tr>
+<td><strong>占市值比重</strong></td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>2.41%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="62">6.2 三条支持"合理选择"的论据</h3>
+<p><strong>（1）金额差远小于叙事强度。</strong> 回报减少 HK$243 亿/年 = <strong>市值的 0.60%</strong>。而 H1 资本开支同比增加 RMB 381 亿（≈HK$444 亿），年化约 HK$888 亿。<strong>换句话说：资本开支的增量有三分之二以上来自经营现金流增长和资产负债表，只有不到三分之一来自回购让路。把"股东回报腰斩"当成 AI 投入的主要资金来源，是叙事放大。</strong></p>
+<p><strong>（2）门槛收益率是可计算的，不是信仰。</strong> 现价回购的收益率 = 1 / 12.94 = <strong>7.73%</strong>。Mitchell 的原话是条件式的：</p>
+<blockquote>
+<p>"如果我們判斷加碼算力資本開支…能拿到超額回報，我們就會把更多現金投向資本開支，相應縮減股票回購資金規模，整體保持動態平衡。"</p>
+</blockquote>
+<p><strong>这是一个 ROIC 比较框架，不是"放弃股东回报"。</strong> 它可证伪：如果 AI 资本开支的边际回报低于 7.73%，管理层按自己的框架就该把钱转回回购。<strong>当期已有的正面证据是营销服务年化增量毛利约 175.57 亿；反面证据是 AI 新产品单季拖累 105 亿。两者都在报表里，读者可以自己算。</strong></p>
+<p><strong>（3）它是一个有声明期限的下调，不是永久制度变更。</strong> 管理层承诺高强度投入集中在 2026-2027。<strong>看空方却用它做了永久性的倍数下调（§5.1）——这是把周期事件当结构事件。</strong></p>
+<h3 id="63">6.3 两条支持"就是恶化"的论据（我承认）</h3>
+<p><strong>（1）H1'26 回购已同比 −36.25%，摊薄股数只减 1.02%。</strong> 详见 §4.3。腾讯过去几年"每年注销 2%+ 股份"的复利引擎，<strong>已经降到 1%</strong>。这条腿实实在在变细了，而且是在电话会之前。</p>
+<p><strong>（2）2026E 的 967 亿里，股息占 479 亿（49.5%），回购只占 488 亿。</strong> 股息是刚性的、税负更重的、无价格敏感性的回报方式；回购是可以在低估时加码的。<strong>回报结构从"高弹性"转向"高刚性"，质量下降，这一点看空方没说，但成立。</strong></p>
+<blockquote>
+<p><strong>我的裁决：这是一次真实的降档（承认），但降档的</strong>金额<strong>远小于叙事（推翻），且它的合理性是可以在两年内用 ROIC 验证的（推翻"假设 6 已失效"这个终局判定，改判为"待验证"）。</strong></p>
+<p><strong>给持有人的一句话：你失去的是 0.6% 的年度现金回报，换来的是一个我测算期望值 +HK$29.7~40.8/股（占现价 6.7-9.2%）的期权。这笔交易在数学上是正的，前提是管理层的 ROIC 纪律真的存在——这正是第 2 号重仓前提。</strong></p>
+</blockquote>
+<hr />
+<h2 id="prosus">七、Prosus 反例检验</h2>
+<p><strong>（对应必攻论断 5）</strong></p>
+<p>看空方"选腾讯本体"的三条理由（1.19 下行 / 0.77 上行 Beta 的不对称；双层资本配置风险；折价无催化剂）<strong>我全部认可</strong>。以下是我能找到的<strong>唯一</strong>成立的反例，以及它为什么不足以翻案。</p>
+<h3 id="71">7.1 反例：折价永不收窄，对长期持有者反而是燃料</h3>
+<p>看空方（和 Prosus 报告）都把"折价没有催化剂、可以永远存在"当成负面。<strong>这个推理在"公司持续回购自己"的前提下是错的。</strong></p>
+<p>设 NAV = N、股数 S、股价 P = 0.52 × N/S（当前折价约 48%）。回购 x 比例股份：</p>
+<ul>
+<li>耗用现金 = x·S·P = 0.52x·N</li>
+<li>新 NAV = N(1 − 0.52x)，新股数 = S(1 − x)</li>
+<li><strong>每股 NAV 增厚倍数 = (1 − 0.52x) / (1 − x)</strong></li>
+<li>取 x = 2.5%/年：<strong>(1 − 0.013)/0.975 = 1.0123 → 每股 NAV 年增厚 +1.23%</strong></li>
+<li>10 年累计约 <strong>+13%</strong></li>
+</ul>
+<p><strong>关键点：折价越深、持续越久，这台机器的燃料越充足。</strong> 对一个真正 10 年不动的持有人，"折价永不收窄"不是风险，是补贴。看空方与 Prosus 报告都把折价当成待收敛的价差，<strong>忽略了它同时是回购的贴现率</strong>。</p>
+<h3 id="72">7.2 为什么它仍不足以翻案</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>反例的力度</th>
+<th>抵消它的东西</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+1.23%/年 每股 NAV 增厚</td>
+<td>下行 Beta 1.19 vs 上行 0.77——在一次 −30% 的腾讯回撤中，多亏的 5.7 个百分点需要 4.6 年的增厚来补</td>
+</tr>
+<tr>
+<td>折价是燃料</td>
+<td>燃料来自<strong>卖腾讯</strong>。Prosus FY26 卖了 US$68.7 亿腾讯、买了 US$70.9 亿 JET+Despegar——<strong>它不是把钱全用来回购，而是同时在做第二层资本配置，而那一层的历史记录是负的（Stack Overflow 减记 US$12 亿、BYJU'S 归零 US$4.93 亿）</strong></td>
+</tr>
+<tr>
+<td>长期持有人受益</td>
+<td>需要<strong>真的</strong>持有 10 年不动。而 §7.1 的增厚只在 Prosus 持续回购时成立，董事会随时可以停</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>补充一条对 Prosus 更不利的新变量（看空方已指出，我确认并量化）</strong>：腾讯 H1'26 回购同比 −36.25%、摊薄股数只减 1.02%（§4.3）。<strong>腾讯回购对 Prosus 持股比例的被动增厚效应，已经从历史的 2%+ 降到约 1%。Prosus 22.66% 持股稳定两年的那个机制，正在减半。</strong></p>
+<blockquote>
+<p><strong>裁决 #12：看空方结论成立。反例只在"EUR 本位、10 年不动、能承受 1.19 下行 Beta"这个极窄的持有人画像下有效，且价值约 1.2%/年——换不来那个不对称。</strong></p>
+</blockquote>
+<hr />
+<h2 id="hk641">八、我的估值：中枢 HK$641</h2>
+<h3 id="81-financial_rigorpy">8.1 三情景（全部经 financial_rigor.py 精确十进制）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: center;">EV/非IFRS经营盈利</th>
+<th style="text-align: right;">经营 EV（RMB 亿）</th>
+<th style="text-align: right;">投资组合</th>
+<th style="text-align: right;">净现金</th>
+<th style="text-align: right;">股权合计</th>
+<th style="text-align: right;"><strong>每股（HKD）</strong></th>
+<th style="text-align: right;">较现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>保守多头</strong></td>
+<td style="text-align: center;">12.28x（Meta −30%）</td>
+<td style="text-align: right;">36,023.99</td>
+<td style="text-align: right;">7,488.00</td>
+<td style="text-align: right;">581.91</td>
+<td style="text-align: right;">44,093.90</td>
+<td style="text-align: right;"><strong>568.75</strong></td>
+<td style="text-align: right;"><strong>+27.6%</strong></td>
+</tr>
+<tr>
+<td><strong>中枢</strong></td>
+<td style="text-align: center;"><strong>14.03x（Meta −20%）</strong></td>
+<td style="text-align: right;">41,157.71</td>
+<td style="text-align: right;">7,925.55</td>
+<td style="text-align: right;">581.91</td>
+<td style="text-align: right;">49,665.17</td>
+<td style="text-align: right;"><strong>640.61</strong></td>
+<td style="text-align: right;"><strong>+43.8%</strong></td>
+</tr>
+<tr>
+<td><strong>多头</strong></td>
+<td style="text-align: center;">15.79x（Meta −10%）</td>
+<td style="text-align: right;">46,320.75</td>
+<td style="text-align: right;">8,363.10</td>
+<td style="text-align: right;">581.91</td>
+<td style="text-align: right;">55,265.76</td>
+<td style="text-align: right;"><strong>712.85</strong></td>
+<td style="text-align: right;"><strong>+60.0%</strong></td>
+</tr>
+<tr>
+<td>（敏感性）中枢 + AI 拖累正常化</td>
+<td style="text-align: center;">14.03x on 3,226.55</td>
+<td style="text-align: right;">45,268.51</td>
+<td style="text-align: right;">7,925.55</td>
+<td style="text-align: right;">581.91</td>
+<td style="text-align: right;">53,775.97</td>
+<td style="text-align: right;"><strong>693.64</strong></td>
+<td style="text-align: right;">+55.7%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="82">8.2 概率加权</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: right;">每股</th>
+<th style="text-align: center;">概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>多头</td>
+<td style="text-align: right;">712.85</td>
+<td style="text-align: center;">35%</td>
+</tr>
+<tr>
+<td>中枢</td>
+<td style="text-align: right;">640.61</td>
+<td style="text-align: center;">40%</td>
+</tr>
+<tr>
+<td>中枢受阻（重估停滞，仅赚业绩）</td>
+<td style="text-align: right;">470.00</td>
+<td style="text-align: center;">20%</td>
+</tr>
+<tr>
+<td>灾难（核心 PE 8x）</td>
+<td style="text-align: right;">365.00</td>
+<td style="text-align: center;">5%</td>
+</tr>
+<tr>
+<td><strong>期望值</strong></td>
+<td style="text-align: right;"><strong>HK$617.99</strong></td>
+<td style="text-align: center;"><strong>+38.7%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="83">8.3 五个锚点的完整光谱（读者应该同时看到全部）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>锚点</th>
+<th style="text-align: right;">每股（HKD）</th>
+<th style="text-align: right;">较现价</th>
+<th style="text-align: center;">隐含核心 PE</th>
+<th>我的采信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>我的灾难地板（核心 PE 8x）</td>
+<td style="text-align: right;"><strong>364.17</strong></td>
+<td style="text-align: right;">−18.3%</td>
+<td style="text-align: center;">8.00x</td>
+<td>高——5% 分位，不是基准</td>
+</tr>
+<tr>
+<td>看空方资产法地板</td>
+<td style="text-align: right;">392.54</td>
+<td style="text-align: right;">−11.9%</td>
+<td style="text-align: center;">8.89x</td>
+<td>高——<strong>我承认这条</strong></td>
+</tr>
+<tr>
+<td>52 周实测低点</td>
+<td style="text-align: right;">411.00</td>
+<td style="text-align: right;">−7.8%</td>
+<td style="text-align: center;">9.47x</td>
+<td>事实</td>
+</tr>
+<tr>
+<td><strong>现价</strong></td>
+<td style="text-align: right;"><strong>445.60</strong></td>
+<td style="text-align: right;">—</td>
+<td style="text-align: center;"><strong>10.23x</strong>（账面全额扣）/ <strong>10.56x</strong>（我的折价扣）</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>看空方"中性"</strong></td>
+<td style="text-align: right;">544.23</td>
+<td style="text-align: right;">+22.1%</td>
+<td style="text-align: center;">14.02x</td>
+<td><strong>低——这是深度看空伪装成中性</strong></td>
+</tr>
+<tr>
+<td><strong>我的保守多头</strong></td>
+<td style="text-align: right;"><strong>568.75</strong></td>
+<td style="text-align: right;">+27.6%</td>
+<td style="text-align: center;">—</td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>我的期望值</strong></td>
+<td style="text-align: right;"><strong>617.99</strong></td>
+<td style="text-align: right;"><strong>+38.7%</strong></td>
+<td style="text-align: center;">—</td>
+<td>中高</td>
+</tr>
+<tr>
+<td><strong>我的中枢</strong></td>
+<td style="text-align: right;"><strong>640.61</strong></td>
+<td style="text-align: right;"><strong>+43.8%</strong></td>
+<td style="text-align: center;">16.69x</td>
+<td><strong>中高——本报告的答案</strong></td>
+</tr>
+<tr>
+<td>卖方一致目标价</td>
+<td style="text-align: right;"><strong>667.41</strong></td>
+<td style="text-align: right;">+49.8%</td>
+<td style="text-align: center;">—</td>
+<td>中——独立第三方，与我中枢差 4.2%</td>
+</tr>
+<tr>
+<td>晨星量化模型</td>
+<td style="text-align: right;">683.21</td>
+<td style="text-align: right;">+53.3%</td>
+<td style="text-align: center;">—</td>
+<td>中</td>
+</tr>
+<tr>
+<td>我的多头</td>
+<td style="text-align: right;">712.85</td>
+<td style="text-align: right;">+60.0%</td>
+<td style="text-align: center;">—</td>
+<td>中</td>
+</tr>
+<tr>
+<td>晨星分析师 FVE</td>
+<td style="text-align: right;"><strong>780.00</strong></td>
+<td style="text-align: right;">+75.0%</td>
+<td style="text-align: center;">—</td>
+<td><strong>低——Meta 平价（17.43x vs 17.54x），而腾讯增速只有 Meta 的 40%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>三角验证</strong>：我的中枢 HK$640.61、卖方一致目标价 HK$667.41（stockanalysis 实测，Strong Buy 共识）、晨星量化 HK$683.21——<strong>三个方法论完全独立的锚点落在 HK$640–683 的 6.7% 区间内。</strong></p>
+<p><strong>看空方的 HK$544 落在这个区间之外 15%，晨星分析师的 HK$780 落在这个区间之外 14%。两个极端都需要额外论证，中间的收敛区不需要。</strong></p>
+</blockquote>
+<h3 id="84">8.4 三情景估值（框架强制项，工具原始输出）</h3>
+<p>以 TTM 非 IFRS 摊薄 EPS = HK$34.43 为基准，3 年期：</p>
+<pre><code>  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅
+  乐观 (Bull)         15%      20x      52.36    1047.3  +135.0%
+  中性 (Base)         11%      17x      47.09     800.5   +79.6%
+  悲观 (Bear)          5%      13x      39.86     518.1   +16.3%
+</code></pre>
+<p><strong>与看空方 20/16/12 的差异</strong>：我用 20/17/13。<strong>中性档 17x 的理由</strong>：这是"3 年后腾讯核心业务享有网易今日核心 PE（11.06x）的 1.5 倍"的表述，考虑到彼时资本开支周期按管理层承诺应已回落。<strong>我明确不使用 thesis 原来的 18x</strong>——看空方下调倍数的方向对，幅度过大。</p>
+<hr />
+<h2 id="_7">九、必答问题</h2>
+<h3 id="91-102-pe">9.1 核心业务 10.2 倍 PE 的公司，需要什么才配得上"重仓"？</h3>
+<p><strong>先纠正问题里的一个隐含前提：10.2 倍这个数字本身不构成重仓理由。</strong> 网易核心 11.06 倍、快手表观 8.86 倍——低倍数在中国互联网里是常态，不是异常。</p>
+<p><strong>10.2 倍配得上重仓，需要三件事同时为真：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: center;">#</th>
+<th>条件</th>
+<th>当前证据</th>
+<th style="text-align: center;">判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>A</strong></td>
+<td><strong>这 10.2 倍的分母（核心盈利）不会在未来 3 年萎缩</strong></td>
+<td>剔除 AI 新产品后 Q2 非 IFRS 经营盈利 861 亿、<strong>同比 +19%</strong>；毛利率 57.8% 历史新高；递延收入较年初 +21% 跑在确认收入（+10%）前面</td>
+<td style="text-align: center;">✅ 通过</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>B</strong></td>
+<td><strong>10.2 倍是"市场错了"，不是"市场对了我没看见"</strong></td>
+<td>市场担心的十件事（看空方 §3.2）里有 7 件我承认成立。<strong>但没有一件指向核心盈利的萎缩</strong>——它们全部指向资本配置和现金流时点</td>
+<td style="text-align: center;">⚠️ 部分通过</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>C</strong></td>
+<td><strong>有一个不依赖别人同意的价值实现路径</strong></td>
+<td>业绩增长 + 回购注销，不需要任何第三方批准（与 Prosus 的关键差异）。<strong>但回购已减速到 1%/年（§4.3），这条路径的力度打了对折</strong></td>
+<td style="text-align: center;">⚠️ 部分通过</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>答案：现价配得上"重仓"的下限定义（10–12%），配不上"&gt;15% 的重注"。</strong></p>
+<p><strong>理由：条件 A 硬通过，B 和 C 各打一半折扣。B 打折是因为"市场对了 7 条"；C 打折是因为回购引擎减半。一个只有一条腿完全站稳的论文，不该给 15% 以上。</strong></p>
+</blockquote>
+<p><strong>什么价格可以（&gt;15%）？</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: right;">价格</th>
+<th style="text-align: center;">隐含核心 PE</th>
+<th>含义</th>
+<th>仓位含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">HK$491</td>
+<td style="text-align: center;">12.0x</td>
+<td>重估已开始</td>
+<td>减慢加仓</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>HK$445.60（现价）</strong></td>
+<td style="text-align: center;"><strong>10.23–10.56x</strong></td>
+<td>核心 = 网易核心折价 6-8%</td>
+<td><strong>10–12%</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">HK$428</td>
+<td style="text-align: center;">10.0x</td>
+<td>圆整心理位</td>
+<td>加至 13–15%</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>HK$411</strong>（52 周低点）</td>
+<td style="text-align: center;"><strong>9.47x</strong></td>
+<td>公司 6 月买过的最低价</td>
+<td><strong>加至 15%</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>HK$392</strong></td>
+<td style="text-align: center;"><strong>8.89x</strong></td>
+<td>看空方地板</td>
+<td><strong>此价位 &gt;15% 由资产价值单独支持</strong>——你在为核心业务付 8.9 倍，同时以 15% 折价拿到 RMB 8,751 亿组合</td>
+</tr>
+<tr>
+<td style="text-align: right;">HK$364</td>
+<td style="text-align: center;">8.00x</td>
+<td>我的灾难地板</td>
+<td>若跌到这里而论文红线未触发，是本轮的最大机会</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键的一句话：现价与"&gt;15% 的价格"之间只差 7.8%（445.60 → 411）。这是一个不需要激进的决策——分批就能解决。</strong></p>
+<h3 id="92">9.2 股东回报降档：恶化还是合理选择？</h3>
+<p><strong>见 §6。答案：既是降档也是合理选择，但两个判断的时间尺度不同。</strong></p>
+<ul>
+<li><strong>短期（12 个月）：是恶化。</strong> 回购金额同比 −36.25%，摊薄股数只减 1.02%，回报结构从弹性（回购）转向刚性（股息占 49.5%）。<strong>这是可观测的事实，多头不应辩解。</strong></li>
+<li><strong>中期（24-36 个月）：是否合理，取决于一个可计算的数：AI 资本开支的边际 ROIC 是否 &gt; 7.73%。</strong> 已有的正面证据（营销服务年化增量毛利 175.57 亿、云加速到 20%+、毛利率新高）和负面证据（AI 新产品单季拖累 105 亿、FCF 转负、912 亿预付款在路上）<strong>都在报表里</strong>。这不是信仰问题。</li>
+<li><strong>金额层面：被叙事放大了。</strong> 减少的 HK$243 亿/年 = 市值 0.60%，不到资本开支年化增量（≈HK$888 亿）的三分之一。</li>
+</ul>
+<h3 id="93">9.3 微信小店 / 视频号电商闭环的价值，既有报告是否漏掉？</h3>
+<p><strong>没有漏掉，但没有定价。这是一个重要区别，我的初稿把它写成了"完全漏掉"，实测后自我更正。见 §5.3 与裁决 #13。</strong></p>
+<ul>
+<li>实测：看空报告全文出现"微信小店" <strong>1 次</strong>、"视频号" <strong>1 次</strong>，且后者的语境恰恰是承认"视频号/小游戏的变现被记在营销服务里，此处偏保守"。<strong>看空方看见了，但只把它当成一个"我的社交倍数偏保守"的脚注，没有在营销服务 6.0x EV/Sales 的定价里体现任何闭环溢价</strong>；</li>
+<li>闭环的估值意义不在"多一块收入"，在于<strong>把广告从曝光定价升级为交易归因定价</strong>（eCPM 定价权上移），以及<strong>它是 AI Agent 唯一能落地的场地</strong>（公众号+视频号+小程序+搜一搜+微信支付五环闭合，竞品缺最后两环）；</li>
+<li><strong>但我没有为它多加钱</strong>：2026 年 GMV 数据完全缺失，我只在估值里计入 HK$6.17/股（非广告佣金部分），其余隐含在营销服务 18% CAGR 里。<strong>这是本报告最大的"知道有价值但拒绝定价"的一块。</strong></li>
+</ul>
+<h3 id="94-15">9.4 若要重仓（&gt;15%），需要哪些前提成立？逐条列出并评估概率</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: center;">#</th>
+<th>前提</th>
+<th>为什么是前提</th>
+<th>验证方式与时点</th>
+<th style="text-align: center;"><strong>我的概率</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>1</strong></td>
+<td><strong>微信作为 AI 时代入口的地位不被绕过</strong></td>
+<td>李录框架：终端在自己手里，基础设施贵一点可以接受；终端旁落则投多少都是沉没成本。<strong>这是唯一一条如果错了、整个论文归零的前提</strong></td>
+<td>微信 MAU（现 14.39 亿，+2%）、小程序 DAU、用户时长份额</td>
+<td style="text-align: center;"><strong>90%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2</strong></td>
+<td><strong>管理层的 ROIC 纪律真实存在</strong>（"回报不及预期就封顶"不是空话）</td>
+<td>直接决定 §6.2 的 7.73% 门槛论证成立与否；也是我给 AI 期权正值的唯一依据</td>
+<td><strong>2027 年报的资本开支指引口径</strong>（不是 Q3，Q3 太早）；以及 2027 年若 AI 新产品拖累仍在扩大而投入不封顶，即证伪</td>
+<td style="text-align: center;"><strong>55%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>3</strong></td>
+<td><strong>剔除 AI 新产品的非 IFRS 经营盈利增速维持 15%+</strong></td>
+<td>这是 §9.1 条件 A 的量化版本，是 10.2 倍分母不萎缩的直接检验</td>
+<td>每季财报（Q2'26 实测 +19%）</td>
+<td style="text-align: center;"><strong>65%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>4</strong></td>
+<td><strong>营销服务 3 年内增速不低于 15%</strong></td>
+<td>我的中枢假设 18% CAGR，这是 AI 期权 HK$53.76/股 的全部来源；跌破 15% 则中枢下修约 HK$25</td>
+<td>每季财报（Q2'26 +22%，三季连续加速）</td>
+<td style="text-align: center;"><strong>70%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>5</strong></td>
+<td><strong>国际游戏固汇增速 4 个季度内止跌</strong>（不要求回升）</td>
+<td>连续四季降档（+35→+42→+31→+14→+4%）；若转负且持续，"腾讯不只是中国公司"的叙事失效，中国资产折价会从我假设的 −20% 走向 −30%（中枢从 641 掉到 569）</td>
+<td>Q3/Q4'26 财报固汇口径</td>
+<td style="text-align: center;"><strong>60%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>6</strong></td>
+<td><strong>投资组合不被大规模低价变现去填资本开支</strong></td>
+<td>刘炽平已把 8,751 亿组合摆到"AI 弹药库"位置。若被迫在低位变现，等于把已实现资产换成未实现投入，<strong>我给的 95%/85% 折价立刻失效</strong></td>
+<td>每季资产负债表的上市/非上市投资余额变动；重大减持公告</td>
+<td style="text-align: center;"><strong>70%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>7</strong></td>
+<td><strong>无 CFIUS 强制剥离 Riot / Epic / Supercell</strong></td>
+<td>涉及权益规模约 US$300–350 亿。状态：2026-03 仅讨论阶段。<strong>⚠️ WebSearch 耗尽，这是已知盲区，此概率信心最低</strong></td>
+<td>美国监管公告</td>
+<td style="text-align: center;"><strong>80%</strong>（低信心）</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>8</strong></td>
+<td><strong>监管无重大转向</strong>（版号、支付费率、反垄断）</td>
+<td>2025 年版号 1,771 个为近 5 年峰值，红线 2 未触发。但政策可一夜转向</td>
+<td>月度版号数、监管窗口指导</td>
+<td style="text-align: center;"><strong>85%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>9</strong></td>
+<td><strong>港币联系汇率不破 / 人民币不大幅贬值</strong></td>
+<td>收入是人民币、股价是港币。2026 年人民币升值 6.4% 本身就贡献了估值上修（PE 14.0→12.9），反向同样成立</td>
+<td>ECB / HKMA</td>
+<td style="text-align: center;"><strong>97%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>10</strong></td>
+<td><strong>持有人自身能承受 −25% 回撤不动手</strong></td>
+<td>从 445.60 到我的灾难地板 364.17 是 −18.3%；叠加超调可到 −25%。<strong>重仓的第一杀手不是论文错，是持有人在地板附近卖出</strong></td>
+<td>自评</td>
+<td style="text-align: center;">自评</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>联合概率（前提 2–6 的业务条件，非独立，我给的粗估）：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情形</th>
+<th style="text-align: center;">估计概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前提 2–6 <strong>全部</strong>成立</td>
+<td style="text-align: center;"><strong>约 30%</strong></td>
+</tr>
+<tr>
+<td>前提 2–6 中成立 <strong>4 条</strong></td>
+<td style="text-align: center;">约 35%</td>
+</tr>
+<tr>
+<td>前提 2–6 中成立 ≤3 条</td>
+<td style="text-align: center;">约 35%</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>仓位结论（这是本报告最重要的一句话）：</strong></p>
+<p><strong>"&gt;15% 需要一组联合概率约 30% 的前提。因此现价 HK$445.60 的正确仓位是 10–12%，不是 15%+。</strong></p>
+<p><strong>数学检验</strong>：按 §8.2 的概率分布（p(赢) ≈ 75%、上行 +43.8%、下行 −15%），<strong>全 Kelly = 66.4%</strong>（对单一个股显然荒谬），<strong>四分之一 Kelly = 16.6%</strong>。<strong>四分之一 Kelly 是勉强够到 15% 的——也就是说，&gt;15% 只在你完全接受我的概率分布时才成立。而我自己对那组概率的信心只有 60%。</strong></p>
+<p><strong>升到 &gt;15% 的触发条件（满足两条即可）</strong>：① 2027 年报资本开支指引口径确认回落（前提 2 兑现）；② 国际游戏固汇增速止跌（前提 5 兑现）；③ 股价跌到 HK$411 及以下（安全边际自动补足前提的不确定性）。</p>
+</blockquote>
+<hr />
+<h2 id="_8">十、我最可能在哪里错（诚实清单）</h2>
+<ol>
+<li>
+<p><strong>14.03x 的中枢倍数可能仍然过高。</strong> Meta TTM 收入 +27.65%、腾讯 +11%，<strong>增速差是 2.5 倍，我只打了 20% 折</strong>。如果市场认为增速差应该体现为 40% 折价（10.52x），我的中枢立刻掉到约 HK$510——<strong>低于看空方的 544</strong>。<strong>这是我全文最软的一块，比看空方那块还软。</strong> 我的辩护是"剔 AI 后经营盈利 +19%"，但这个口径是公司自己给的、无法独立复核。</p>
+</li>
+<li>
+<p><strong>AI 期权的三条路径全部依赖我自己编的增速假设。</strong> 广告 18% vs 11%、云 25% vs 12%、GMV 5,000→15,000 亿——<strong>没有一个来自公告或第三方预测</strong>。换一组假设，HK$85.22 可以变成 HK$40 也可以变成 HK$150。我用 50-60% 概率加权是为了承认这一点，不是为了显得严谨。</p>
+</li>
+<li>
+<p><strong>云的基数 RMB 700 亿是估算，不是公告值。</strong> 腾讯不单独披露云收入。如果真实基数是 500 亿，第（2）项价值缩水 29%。</p>
+</li>
+<li>
+<p><strong>微信电商的数据全部是 2024-2025 年份。</strong> 视频号货币化率 1.8%、小店 GMV +192% 都可能已经过时。<strong>2026 年公告一个 GMV 数字都没给——这本身可能是坏消息</strong>（对照元宝 MAU 不披露的先例）。我在 §5.3 把它当正面证据用，这个方向可能是错的。</p>
+</li>
+<li>
+<p><strong>立场污染。</strong> 我被指派做多头论证。我给的 12 条裁决里有 5 条完全承认看空方，这是刻意的对冲，但<strong>我无法排除自己在"部分推翻"那 3 条上把刻度往多头方向偏了一格</strong>。</p>
+</li>
+<li>
+<p><strong>WebSearch 盲区与看空方完全相同。</strong> 8/13 之后的卖方观点、CFIUS 进展、竞品动作我一样没看。<strong>我们两份报告共享同一个信息缺口，因此不构成相互独立的验证。</strong></p>
+</li>
+<li>
+<p><strong>我承认看空方在这五件事上完全正确，且它们没有一件被本报告削弱</strong>：投资组合零估值是循环论证（#5）、地板应下修到 390 一线（#6）、国际游戏连续四季降档是真问题（#10）、净现金腰斩/912 亿预付款/算力残值论证有效期（#11）、选腾讯不选 Prosus（#12）。<strong>如果读者只能记住本报告的一件事，应该是：多头论证成立的方式，是把估值中枢从 544 抬到 641，而不是否认这五条。</strong></p>
+</li>
+</ol>
+<hr />
+<h2 id="afinancial_rigorpy">附录 A：关键计算记录（financial_rigor.py 精确十进制，禁止心算）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>计算项</th>
+<th>表达式</th>
+<th style="text-align: right;">结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>市值验算</td>
+<td>price 445.60 × shares 9.025e9 vs HK$4.02T</td>
+<td style="text-align: right;">偏差 <strong>0.04%</strong> ✅</td>
+</tr>
+<tr>
+<td>收盘价三源交叉验证</td>
+<td>445.60 / 446.40 / 440.00</td>
+<td style="text-align: right;">最大偏差 1.26% ✅，共识 <strong>445.60</strong></td>
+</tr>
+<tr>
+<td>每股换算常数</td>
+<td>100/9025×1.1641</td>
+<td style="text-align: right;"><strong>0.012898615</strong></td>
+</tr>
+<tr>
+<td>看空方悲观隐含 EV/非IFRS经营盈利</td>
+<td>23869.47/2933.55</td>
+<td style="text-align: right;"><strong>8.14x</strong></td>
+</tr>
+<tr>
+<td>看空方中性隐含</td>
+<td>34560.57/2933.55</td>
+<td style="text-align: right;"><strong>11.78x</strong></td>
+</tr>
+<tr>
+<td>看空方乐观隐含</td>
+<td>46447.51/2933.55</td>
+<td style="text-align: right;"><strong>15.83x</strong></td>
+</tr>
+<tr>
+<td>晨星 780 隐含</td>
+<td>51138.70/2933.55</td>
+<td style="text-align: right;"><strong>17.43x</strong></td>
+</tr>
+<tr>
+<td><strong>现价隐含</strong></td>
+<td>25213.43/2933.55</td>
+<td style="text-align: right;"><strong>8.59x</strong></td>
+</tr>
+<tr>
+<td>腾讯非 IFRS 经营利润率</td>
+<td>2933.55/7884.83×100</td>
+<td style="text-align: right;"><strong>37.20%</strong></td>
+</tr>
+<tr>
+<td>Meta 经营利润率</td>
+<td>86.93/228.25×100</td>
+<td style="text-align: right;"><strong>38.09%</strong></td>
+</tr>
+<tr>
+<td>Meta −30% / −20% / −10%</td>
+<td>17.54×0.70 / 0.80 / 0.90</td>
+<td style="text-align: right;"><strong>12.28 / 14.03 / 15.79</strong></td>
+</tr>
+<tr>
+<td>网易剔净现金核心 PE</td>
+<td>(79.22−23.19)/(34133/6.74/1000)</td>
+<td style="text-align: right;"><strong>11.06x</strong></td>
+</tr>
+<tr>
+<td>腾讯核心 PE（账面全额扣）</td>
+<td>25213.43/2465.69</td>
+<td style="text-align: right;"><strong>10.23x</strong></td>
+</tr>
+<tr>
+<td>腾讯核心 PE（我的折价扣）</td>
+<td>(34546.34−7925.55−581.91)/2465.69</td>
+<td style="text-align: right;"><strong>10.56x</strong></td>
+</tr>
+<tr>
+<td>看空方中性隐含核心 PE</td>
+<td>34560.57/2465.69</td>
+<td style="text-align: right;"><strong>14.02x</strong></td>
+</tr>
+<tr>
+<td>我的中枢隐含核心 PE</td>
+<td>41157.71/2465.69</td>
+<td style="text-align: right;"><strong>16.69x</strong></td>
+</tr>
+<tr>
+<td>投资组合（我的中枢）</td>
+<td>4872×0.95+3879×0.85</td>
+<td style="text-align: right;"><strong>7,925.55</strong></td>
+</tr>
+<tr>
+<td>投资组合（我的保守）</td>
+<td>4872×0.90+3879×0.80</td>
+<td style="text-align: right;"><strong>7,488.00</strong></td>
+</tr>
+<tr>
+<td>投资组合折价全额争议</td>
+<td>(8751−7050.45)×100/9025×1.1641</td>
+<td style="text-align: right;"><strong>HK$21.93/股</strong></td>
+</tr>
+<tr>
+<td>递延所得税负债/组合</td>
+<td>22581/875100×100</td>
+<td style="text-align: right;"><strong>2.58%</strong></td>
+</tr>
+<tr>
+<td><strong>保守多头每股</strong></td>
+<td>(36023.99+7488.00+581.91)×0.012898615</td>
+<td style="text-align: right;"><strong>HK$568.75</strong></td>
+</tr>
+<tr>
+<td><strong>中枢每股</strong></td>
+<td>(41157.71+7925.55+581.91)×0.012898615</td>
+<td style="text-align: right;"><strong>HK$640.61</strong></td>
+</tr>
+<tr>
+<td><strong>多头每股</strong></td>
+<td>(46320.75+8363.10+581.91)×0.012898615</td>
+<td style="text-align: right;"><strong>HK$712.85</strong></td>
+</tr>
+<tr>
+<td>中枢 + AI 正常化</td>
+<td>((2933.55+293)×14.03+7925.55+581.91)×0.012898615</td>
+<td style="text-align: right;"><strong>HK$693.64</strong></td>
+</tr>
+<tr>
+<td>保守 + AI 正常化</td>
+<td>((2933.55+293)×12.28+7488.00+581.91)×0.012898615</td>
+<td style="text-align: right;"><strong>HK$615.16</strong></td>
+</tr>
+<tr>
+<td>概率加权期望值</td>
+<td>0.35×712.85+0.40×640.61+0.20×470+0.05×365</td>
+<td style="text-align: right;"><strong>HK$617.99</strong></td>
+</tr>
+<tr>
+<td>期望值较现价</td>
+<td>618.16/445.60−1</td>
+<td style="text-align: right;"><strong>+38.7%</strong></td>
+</tr>
+<tr>
+<td>中枢较现价</td>
+<td>640.61/445.60−1</td>
+<td style="text-align: right;"><strong>+43.8%</strong></td>
+</tr>
+<tr>
+<td>中枢隐含 TTM 非IFRS PE</td>
+<td>640.61/34.43</td>
+<td style="text-align: right;"><strong>18.61x</strong></td>
+</tr>
+<tr>
+<td>AI 广告增量收入（5 年）</td>
+<td>1590.91×1.18⁵ − 1590.91×1.11⁵</td>
+<td style="text-align: right;"><strong>RMB 958.84 亿</strong></td>
+</tr>
+<tr>
+<td>AI 广告价值（5 年后）</td>
+<td>×0.50×14</td>
+<td style="text-align: right;"><strong>RMB 6,711.89 亿</strong> → <strong>HK$53.76/股</strong></td>
+</tr>
+<tr>
+<td>AI 云增量收入（5 年）</td>
+<td>700×1.25⁵ − 700×1.12⁵</td>
+<td style="text-align: right;"><strong>RMB 902.59 亿</strong></td>
+</tr>
+<tr>
+<td>AI 云价值</td>
+<td>×0.25×14</td>
+<td style="text-align: right;"><strong>RMB 3,159.07 亿</strong> → <strong>HK$25.30/股</strong></td>
+</tr>
+<tr>
+<td>微信电商佣金价值</td>
+<td>(15000−5000)×0.01×0.55×14</td>
+<td style="text-align: right;"><strong>RMB 770 亿</strong> → <strong>HK$6.17/股</strong></td>
+</tr>
+<tr>
+<td><strong>AI 期权 PV 合计</strong></td>
+<td>10640.96/1.61051×0.012898615</td>
+<td style="text-align: right;"><strong>HK$85.22/股</strong></td>
+</tr>
+<tr>
+<td>AI 失败减值</td>
+<td>2000×0.012898615</td>
+<td style="text-align: right;"><strong>HK$25.80/股</strong></td>
+</tr>
+<tr>
+<td>AI 期权期望值 @P=50%</td>
+<td>0.5×85.16−0.5×25.79</td>
+<td style="text-align: right;"><strong>+HK$29.69/股</strong></td>
+</tr>
+<tr>
+<td>AI 期权期望值 @P=60%</td>
+<td>0.6×85.16−0.4×25.79</td>
+<td style="text-align: right;"><strong>+HK$40.78/股</strong></td>
+</tr>
+<tr>
+<td>看空方 AI 隐含定价</td>
+<td>(45.83×18−45.83×16)/1.331</td>
+<td style="text-align: right;"><strong>−HK$68.87/股</strong></td>
+</tr>
+<tr>
+<td>2026E 股东回报率</td>
+<td>(244.08×2+479)/(2400×1.1641)×100</td>
+<td style="text-align: right;"><strong>34.62%</strong></td>
+</tr>
+<tr>
+<td>2025 股东回报率</td>
+<td>1210/(2248.42×1.083)×100</td>
+<td style="text-align: right;"><strong>49.69%</strong></td>
+</tr>
+<tr>
+<td>2026E 回报/市值</td>
+<td>967.16/40200×100</td>
+<td style="text-align: right;"><strong>2.41%</strong></td>
+</tr>
+<tr>
+<td>回购门槛收益率</td>
+<td>1/12.94×100</td>
+<td style="text-align: right;"><strong>7.73%</strong></td>
+</tr>
+<tr>
+<td>H1 回购同比</td>
+<td>(21449−33647)/33647×100</td>
+<td style="text-align: right;"><strong>−36.25%</strong></td>
+</tr>
+<tr>
+<td>Q2 摊薄股数同比</td>
+<td>(9153−9247)/9247×100</td>
+<td style="text-align: right;"><strong>−1.02%</strong></td>
+</tr>
+<tr>
+<td>Q2 广告年化增量毛利</td>
+<td>(435.7−357.6)×0.562×4</td>
+<td style="text-align: right;"><strong>RMB 175.57 亿</strong></td>
+</tr>
+<tr>
+<td>现价/6 月回购均价</td>
+<td>445.60/442.23−1</td>
+<td style="text-align: right;"><strong>+0.76%</strong></td>
+</tr>
+<tr>
+<td>现价/H1 回购均价</td>
+<td>445.60/487.87−1</td>
+<td style="text-align: right;"><strong>−8.66%</strong></td>
+</tr>
+<tr>
+<td>核心 PE 8x 对应股价</td>
+<td>(8×2465.69+7925.55+581.91)×0.012898615</td>
+<td style="text-align: right;"><strong>HK$364.17</strong></td>
+</tr>
+<tr>
+<td>核心 PE 10x</td>
+<td>同上</td>
+<td style="text-align: right;"><strong>HK$427.77</strong></td>
+</tr>
+<tr>
+<td>核心 PE 12x</td>
+<td>同上</td>
+<td style="text-align: right;"><strong>HK$491.38</strong></td>
+</tr>
+<tr>
+<td>核心 PE 14x</td>
+<td>同上</td>
+<td style="text-align: right;"><strong>HK$554.99</strong></td>
+</tr>
+<tr>
+<td>核心 PE 16x</td>
+<td>同上</td>
+<td style="text-align: right;"><strong>HK$618.60</strong></td>
+</tr>
+<tr>
+<td>HK$392.54 隐含核心 PE</td>
+<td>(392.54/0.012898615−7925.55−581.91)/2465.69</td>
+<td style="text-align: right;"><strong>8.89x</strong></td>
+</tr>
+<tr>
+<td>HK$411 隐含核心 PE</td>
+<td>同上</td>
+<td style="text-align: right;"><strong>9.47x</strong></td>
+</tr>
+<tr>
+<td>Prosus 回购每股 NAV 增厚</td>
+<td>(1−0.52×0.025)/(1−0.025)</td>
+<td style="text-align: right;"><strong>+1.23%/年</strong></td>
+</tr>
+<tr>
+<td>全 Kelly</td>
+<td>(0.75×(0.4376/0.15+1)−1)/(0.4376/0.15)</td>
+<td style="text-align: right;"><strong>66.43%</strong></td>
+</tr>
+<tr>
+<td>四分之一 Kelly</td>
+<td>×0.25</td>
+<td style="text-align: right;"><strong>16.61%</strong></td>
+</tr>
+<tr>
+<td>ADR 换股比例</td>
+<td>503.36/8.98 = 56.05 vs 收盘 56.50</td>
+<td style="text-align: right;"><strong>1:1</strong>（偏差 0.80%）✅</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>三情景估值工具原始输出：</strong></p>
+<pre><code>============================================================
+三情景估值模型 (Three-Scenario Valuation)
+============================================================
+  当前股价: 445.6 HKD
+  当前EPS:  34.43
+  预测期:   3年
+
+  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅
+  乐观 (Bull)         15%      20x      52.36    1047.3  +135.0%
+  中性 (Base)         11%      17x      47.09     800.5   +79.6%
+  悲观 (Bear)          5%      13x      39.86     518.1   +16.3%
+
+  ✅ 所有计算使用精确十进制, 结果可审计复现
+</code></pre>
+<h2 id="b">附录 B：数据来源与等级</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>来源</th>
+<th>等级</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯 2026 中期业绩公告 PDF（<code>tencent.com/wp-content/uploads/2026/08/C700_IRA.pdf</code>，本次独立下载并用 pdftotext 解析，2,287 行）</td>
+<td><strong>一手</strong></td>
+<td>全部财务数据、分部收入、逐月回购明细、权益变动表回购金额、递延所得税、微信小店原文表述</td>
+</tr>
+<tr>
+<td>stockanalysis.com（0700.HK / TCEHY / META / GOOGL / NTES / BABA / SE / 1024.HK）</td>
+<td>二手</td>
+<td>全球同业实测倍数、52 周区间、卖方一致目标价</td>
+</tr>
+<tr>
+<td>ECB 汇率（frankfurter.dev，2026-08-14）</td>
+<td>一手</td>
+<td>CNY/HKD = 1.1641</td>
+</tr>
+<tr>
+<td>晨星筛选器 API（经看空报告转引）</td>
+<td>一手（机构原始输出）</td>
+<td>FVE HK$780 / 量化 HK$683.21 / Wide / 五星 / High</td>
+</tr>
+<tr>
+<td><code>腾讯-晨星估值视角-20260817.md</code></td>
+<td>内部</td>
+<td>攻击对象，全部 SOTP 参数与结论</td>
+</tr>
+<tr>
+<td><code>腾讯-earnings-2026Q2.md</code> / <code>-电话会精读-20260813.md</code></td>
+<td>内部</td>
+<td>财报数字、电话会引语、承诺追踪</td>
+</tr>
+<tr>
+<td><code>腾讯-投资组合完整清单-20260430.md</code>（v2）</td>
+<td>内部</td>
+<td>实物分红历史、持股结构、CFIUS</td>
+</tr>
+<tr>
+<td><code>AI对腾讯各业务影响-team-20260430.md</code></td>
+<td>内部</td>
+<td>视频号货币化率、微信小店 GMV、五环闭环论证</td>
+</tr>
+<tr>
+<td><strong>aastocks（规范指定港股主源）</strong></td>
+<td>❌ <strong>无法取数</strong></td>
+<td>JS 渲染，WebFetch 与 curl 均失败。已降级用 stockanalysis + 一手公告替代，口径变更已标明</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>明确标注"未取得"：</strong> 2026 年微信小店/视频号 GMV（公司未披露）、腾讯云收入拆分（未披露）、全年资本开支指引（管理层拒绝提供）、元宝/小微用户数（连续两季不披露）、CFIUS 最新进展（WebSearch 耗尽）、8/13 后卖方报告（同上）。</p>
+<hr />
+<h2 id="creport_auditpy">附录 C：数据抽检准出记录（report_audit.py）</h2>
+<p><strong>执行命令</strong>：</p>
+<pre><code>python3 tools/report_audit.py extract --report reports/腾讯/腾讯-多头论证-20260817.md --seed 42
+python3 tools/report_audit.py verdict --results '[...30 条核验结果...]'
+</code></pre>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>报告提取数据点总数</td>
+<td><strong>379</strong></td>
+</tr>
+<tr>
+<td>抽样比例</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>随机种子</td>
+<td>42（可复现同一批样本）</td>
+</tr>
+<tr>
+<td>抽检数量</td>
+<td><strong>30</strong></td>
+</tr>
+<tr>
+<td>通过</td>
+<td><strong>29</strong></td>
+</tr>
+<tr>
+<td>警告</td>
+<td><strong>1</strong></td>
+</tr>
+<tr>
+<td>不通过</td>
+<td><strong>0</strong></td>
+</tr>
+<tr>
+<td><strong>判决</strong></td>
+<td><strong>【准出】所有抽检数据通过，报告可发布</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>唯一的警告项（已复核，非数据错误）</strong>：id=16「市值验算偏差」，本文记 0.04%、看空报告记 0.02%。原因是 <code>verify-market-cap</code> 的股本入参写法不同（本文用 9.025e9，看空报告用 9,025 百万后舍入），<strong>两者都验证通过，差异纯为舍入</strong>。不影响任何结论。</p>
+<p><strong>抽检覆盖信源分布：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>类别</th>
+<th style="text-align: center;">数量</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>外部一手/二手可验证事实</strong></td>
+<td style="text-align: center;"><strong>17</strong></td>
+<td>公告 PDF：1 月回购 10,205,000 股（行2014）、3 月最低价 476.40（行2015）、4 月总代价 2,602,792,121.50（行2016）、H1 总代价 24,408,472,072.15（行2020）、H1'25 股份回购（将注销）2,288（行1039）、Q2'26 摊薄加权股数 9,153（行1486）；stockanalysis：Meta PE 22.23、Alphabet PE 17.36、网易经营利润率 33.26%、腾讯 52 周低点 411.00、收盘 445.60；晨星 API：FVE 780；ADR 1:1</td>
+</tr>
+<tr>
+<td><strong>由上述事实经 financial_rigor.py 推导</strong></td>
+<td style="text-align: center;"><strong>9</strong></td>
+<td>核心 PE 10.23x、9.47x；每股值 364.17 / 617.99 / 640.61；投资组合 7,925.55；AI 期权期望值 29.69</td>
+</tr>
+<tr>
+<td><strong>解析伪值</strong>（工具把量纲常数/公式常数当数据）</td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td>id=13 取到"Q2'26"里的 2；id=259 取到换算式"100/9025×1.1641"里的量纲常数 100；id=360 取到"(1−0.52×0.025)/(1−0.025)"里的常数 1</td>
+</tr>
+<tr>
+<td><strong>本报告自设假设</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td>id=378 广告 AI 场景 18% CAGR</td>
+</tr>
+</tbody>
+</table></div>
+<p>⚠️ <strong>对"准出"的诚实限定（必须与结论一起读）：</strong></p>
+<p>30 个抽检点里，<strong>只有 17 个是外部可验证事实</strong>，9 个是这 17 个的算术后果，3 个是解析伪值，1 个是我自己编的假设。<strong>抽检没有、也不可能核验本报告最关键的四个输入</strong>：14.03x 的中枢倍数、广告 18% / 云 25% 的 CAGR、云基数 RMB 700 亿、以及 §9.4 那十条前提的概率。</p>
+<blockquote>
+<p><strong>"准出"的正确读法：本报告的数字抄写、单位换算、公式计算无误（这一点是硬的）；本报告的估值假设是否正确，抽检流程无法也不应回答（见 §十的诚实清单）。</strong></p>
+<p><strong>这一限定与看空报告 §附录 B 的自我限定完全对称——两份报告在方法论诚实度上是同一水平，分歧纯粹在假设层。</strong></p>
+<p><strong>"准出"的正确读法：本报告的数字抄写、单位换算、公式计算无误（硬）；本报告的估值假设是否正确，抽检流程无法也不应回答（见 §十的诚实清单）。</strong></p>
+<p><strong>这一限定与看空报告 §附录 B 的自我限定完全对称——两份报告在方法论诚实度上是同一水平，分歧纯粹在假设层。</strong></p>
+</blockquote>
+<hr />
+<p><em>本报告为个人研究记录，不构成投资建议。所有涉及计算的数字均通过 <code>tools/financial_rigor.py</code> 精确十进制验算，未使用心算。</em>
+<em>币种说明：财务数据为人民币，股价与市值为港币，CNY/HKD = 1.1641（ECB，2026-08-14）。ADR 换股比例经数学验证为 1 ADR = 1 普通股。</em>
+<em>红队声明：本文由被指派做多头论证的角色完成，立场污染风险真实存在。12 条裁决中 5 条完全站在看空方一边，读者应据此校准本文其余部分的可信度。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/e98ba87fde5c.html">证据与审计说明</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/549a5c7c8f83.html">腾讯研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/fa1ad1445212.html">腾讯研究附录：来源、真值、算术与尚未解决的缺口</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

@@ -1,0 +1,351 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>阿里即时零售 vs 淘宝电商：协同效应是真是伪？ · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/美团/index.html">美团</a></div><h1>阿里即时零售 vs 淘宝电商：协同效应是真是伪？</h1><div class="meta"><a href="../companies/美团/index.html">美团</a> ｜ 2026-04-20 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E5%9B%A2/%E9%98%BF%E9%87%8C%E5%A4%96%E5%8D%96-%E6%B7%98%E5%AE%9D%E5%8D%8F%E5%90%8C%E6%95%88%E5%BA%94-20260420.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#1">1. 核心判断</a></li>
+<li><a href="#2-2">2. 淘宝主站核心指标近 2 年变化（季度追踪表）</a></li>
+<li><a href="#3">3. 协同效应的三个验证维度</a><ul>
+<li><a href="#_1">维度一：流量增量是真用户还是数字装饰？</a></li>
+<li><a href="#gmv">维度二：流量质量（电商 GMV 转化）</a></li>
+<li><a href="#dau">维度三：留存（外卖停补贴后 DAU 是否保持？）</a></li>
+</ul>
+</li>
+<li><a href="#4">4. 与竞争对手对比</a><ul>
+<li><a href="#vs-gmv">淘天 vs 拼多多（电商 GMV 增速差距）</a></li>
+<li><a href="#vs">淘天 vs 抖音电商</a></li>
+</ul>
+</li>
+<li><a href="#5-summary">5. 头部卖方/媒体观点 summary</a><ul>
+<li><a href="#_2">看多方（支持"真协同"）</a></li>
+<li><a href="#_3">看空方（质疑"伪协同"）</a></li>
+<li><a href="#_4">中性方（数据不足）</a></li>
+</ul>
+</li>
+<li><a href="#6">6. 关键数据缺口（阿里从未披露）</a></li>
+<li><a href="#7">7. 结论：正向协同是否成立？</a><ul>
+<li><a href="#_5">硬证据（高置信度）</a></li>
+<li><a href="#_6">软证据（中置信度）</a></li>
+<li><a href="#_7">推测（低置信度）</a></li>
+<li><a href="#_8">反证（看空方数据）</a></li>
+<li><a href="#_9">最终判断</a></li>
+</ul>
+</li>
+<li><a href="#_10">附录：引用来源</a></li>
+</ul>
+</div>
+</details><article><p><strong>报告日期：2026 年 4 月 20 日</strong>
+<strong>研究主体：ai-berkshire 淘宝协同效应专员</strong>
+<strong>研究范围：2024Q1 – 2026Q1（阿里 FY25Q1 – FY26Q4 预测窗口）</strong></p>
+<hr />
+<h2 id="1">1. 核心判断</h2>
+<p><strong>结论：部分协同（Partial Synergy）——流量和用户心智协同已被数据证实为"真"，但电商 GMV/CMR 的加速度协同尚未被证实为"真"，且在补贴退坡+高基数下正在快速衰减。证据等级：中等。</strong></p>
+<p>一句话概括：外卖确实把人拉进了淘宝 APP，也确实拉动了 8 月高峰期的 CMR 短暂提速；但当补贴从 2025Q4 开始退坡，CMR 增速立刻从 FY26Q2 的 10% 骤降到 FY26Q3 的 1%，说明"流量协同"是真的、"GMV 变现协同"是半真的、"长期留存协同"目前无证据。用段永平的话说——「生意模式要看三年以后还在不在」，现在判断"真协同"还为时尚早。</p>
+<hr />
+<h2 id="2-2">2. 淘宝主站核心指标近 2 年变化（季度追踪表）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2024Q1</th>
+<th>2024Q2</th>
+<th>2024Q3</th>
+<th>2024Q4</th>
+<th>2025Q1</th>
+<th>2025Q2</th>
+<th>2025Q3</th>
+<th>2025Q4</th>
+<th>2026Q1e</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>淘宝 APP MAU（亿）</td>
+<td>~9.2</td>
+<td>~9.3</td>
+<td>~9.3</td>
+<td>~9.4</td>
+<td>~9.5</td>
+<td>~9.7</td>
+<td>9.83</td>
+<td>~9.8</td>
+<td>N/A</td>
+<td>9 月历史新高</td>
+</tr>
+<tr>
+<td>淘宝 APP DAU 同比</td>
+<td>低个位</td>
+<td>低个位</td>
+<td>持平</td>
+<td>低个位</td>
+<td>+3%</td>
+<td>+7% / +17%(7月)</td>
+<td><strong>+19%/+20%(8月)</strong></td>
+<td>+12% → +9%(10月)</td>
+<td>降至 low single</td>
+<td>5–10 月 QM 口径</td>
+</tr>
+<tr>
+<td>双 11 当日 DAU（亿）</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>4.87(11/11)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>5.08 (+4.2% YoY)</strong></td>
+<td>—</td>
+<td>2025 双 11 历史新高</td>
+</tr>
+<tr>
+<td>月人均使用时长（分钟）</td>
+<td>~244</td>
+<td>~244</td>
+<td>~244</td>
+<td>~244</td>
+<td>~250</td>
+<td>~260</td>
+<td><strong>266.9 (+9.2%)</strong></td>
+<td>N/A</td>
+<td>N/A</td>
+<td>2025/9 QuestMobile</td>
+</tr>
+<tr>
+<td>88VIP 会员（万）</td>
+<td>3,500</td>
+<td>4,200</td>
+<td>4,600</td>
+<td>4,900</td>
+<td>5,000</td>
+<td>5,300</td>
+<td>&gt;5,300</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>2025/10 官方披露 5,300 万</td>
+</tr>
+<tr>
+<td>淘天 CMR 同比</td>
+<td>-1%</td>
+<td>+1%</td>
+<td>+2%</td>
+<td>+9%</td>
+<td>+12% (FY25Q4)</td>
+<td><strong>+10% (FY26Q1)</strong></td>
+<td><strong>+10% (FY26Q2)</strong></td>
+<td><strong>+1% (FY26Q3)</strong></td>
+<td>N/A</td>
+<td>FY26Q3 骤降</td>
+</tr>
+<tr>
+<td>淘天 GMV 同比</td>
+<td>+low-SD</td>
+<td>+high-SD</td>
+<td>+high-SD</td>
+<td>+mid-SD</td>
+<td>+high-SD</td>
+<td>双位数订单/高个位 GMV</td>
+<td>+mid-SD</td>
+<td>+low-SD</td>
+<td>N/A</td>
+<td>阿里披露模糊口径</td>
+</tr>
+<tr>
+<td>即时零售收入（亿元）</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>低基数</td>
+<td>~143</td>
+<td><strong>229.1 (+60%)</strong></td>
+<td><strong>208.4 (+56%)</strong></td>
+<td>N/A</td>
+<td>自 25Q2 公布</td>
+</tr>
+<tr>
+<td>闪购日均订单（万单）</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>8,000（峰值 1.2 亿）</td>
+<td>8,000</td>
+<td>8,000</td>
+<td>8,000</td>
+<td>趋稳</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键节点：</strong>
+- 2025/4/30 淘宝"小时达"升级为"淘宝闪购"
+- 2025/6 饿了么+飞猪并入电商事业群（蒋凡统管）
+- 2025/7/2 500 亿补贴启动 → 日订单峰值 1.2 亿
+- 2025/8/1 三家平台被监管约谈 → 补贴策略调整
+- 2025/11 补贴"下山"开始，聚焦 30 元以上高质量订单
+- 2025/12/5 饿了么 APP 正式更名为"淘宝闪购"
+- 2026/3/2 配送费从"3 公里免费"调整为按距离收费</p>
+<p>数据来源：阿里巴巴集团各季度财报、QuestMobile 公开口径、晚点 LatePost、一财、36氪、各家卖方研报。</p>
+<hr />
+<h2 id="3">3. 协同效应的三个验证维度</h2>
+<h3 id="_1">维度一：流量增量是真用户还是数字装饰？</h3>
+<p><strong>硬数据（支持"真流量"）：</strong>
+1. <strong>淘宝 APP DAU 8 月同比 +20%</strong>（蒋凡 FY26Q1 电话会原话），同期 MAU 9.83 亿创历史新高。按基数 ~4.5 亿 DAU 推算，日均增量约 6,000–9,000 万，相当于多出一个京东 App 的 DAU 级别流量。
+2. <strong>月人均使用时长 +9.2%</strong>（达 266.9 分钟）—— 时长增长说明"不仅拉新，老用户停留也变长"。对比拼多多 +4.7%、京东 +27.6%（京东基数低），淘宝这个增速是"质量型"增长而非纯 DAU 拉抬。
+3. <strong>双 11 当日 DAU 5.08 亿（+4.2%）</strong>—— 在高基数上仍有增长，且高于京东 (+9.8% 但基数仅 2.27 亿) 的绝对增量。</p>
+<p><strong>软证据（警惕"数字装饰"）：</strong>
+1. <strong>"女性用户占比超 50%"</strong>（晚点 LatePost 2025/11）——这个数字被官方宣传为正向，但从商业实质看，女性是电商高消费人群，<strong>但外卖用户 ≠ 电商用户</strong>。换成美团口径，"美团 APP 月活 8 亿"里也有相当比例是纯外卖用户，不会去美团买日用百货。
+2. <strong>羊毛党稀释</strong>：多家商家反馈"淘宝闪购后直通车转化效率下降"，价格敏感用户推荐精度不足。说明 DAU 中有相当比例是"补贴黏性"而非"平台黏性"。
+3. <strong>88VIP 会员数增长 vs DAU 增长的背离</strong>：88VIP 从 4,900 万（2024Q4）→ 5,300 万（2025Q2）净增 400 万，季度增速 ~2%，显著低于 DAU 的 20% 增速。高价值用户的增长没有跟上 DAU 增长，暗示增量主要是"低质 DAU"。</p>
+<p><strong>判断：流量增量是真实的，但"高价值流量"占比有限。估计 DAU 增量中 30–40% 是真正可转化用户，其余是补贴驱动的低质流量。</strong></p>
+<h3 id="gmv">维度二：流量质量（电商 GMV 转化）</h3>
+<p><strong>硬证据（支持"真变现"）：</strong>
+1. <strong>FY26Q1 CMR +10% 创六季度新高</strong>（FY25Q4 首次重回双位数后延续），蒋凡明确归因：「流量上涨带来了广告和 CMR 上涨」。
+2. <strong>FY26Q2 CMR +10.1%</strong>，同期在线 GMV "高个位数"增长，货币化率持续提升。
+3. <strong>88VIP 双 11 日均下单人数同比 +31%</strong>，天猫头部品牌 70% 以上成交由 88VIP 贡献 —— 证明高价值用户被闪购权益激活。
+4. <strong>品类协同</strong>：食品、药品、3C 数码、运动鞋服、鲜花在闪购端订单增幅显著；非餐品类占比稳定在 75%+（FY26Q2 数据），单价环比 +10%+。</p>
+<p><strong>硬证据（反向——"变现协同正在衰减"）：</strong>
+1. <strong>FY26Q3 CMR 同比 +1%</strong> —— 这是<strong>最具杀伤力的反证</strong>。从 FY26Q1/Q2 的 +10% 骤降到 +1%（2025/11–12/31 三个月）。这个时间点恰好是"补贴下山"的开始。如果闪购协同是"真协同"，CMR 应该随着单均补贴下降、用户质量提升而继续维持高增长；实际反而塌方。
+2. 对应节点：2025/11 开始，单均补贴严格控制在 4 元以内、闪购亏损每单 ≤4 元、配送费从免费改为收费（2026/3）。补贴退坡 3–5 个月后，CMR 增速几乎归零。
+3. <strong>同期抖音电商 GMV 增速超 30%、拼多多大双位数增速</strong> —— 淘天 FY26Q3 CMR +1% 意味着份额仍在被抢。外卖大战期间"份额阶段性企稳"，但补贴一退就又承压。</p>
+<p><strong>判断：FY26Q2 之前的变现加速是真的，但这部分加速很可能是"补贴激活的短期脉冲"，而非"闪购用户结构性转化为电商用户"的长期结构变化。FY26Q3 的塌方是最强反证。</strong></p>
+<h3 id="dau">维度三：留存（外卖停补贴后 DAU 是否保持？）</h3>
+<p><strong>数据（截至 2026/4）：</strong>
+1. 2025 年 5–10 月 DAU 同比：+3% / +7% / +17% / +19% / +12% / +9%
+2. <strong>观察：8 月峰值后，9–10 月快速回落</strong>。11 月补贴开始下山后进一步回落至低个位数（未披露具体数字，但 FY26Q3 CMR +1% 旁证）。
+3. 日订单量从 1.2 亿峰值回落到稳态 8,000 万——说明"峰值订单"有 33% 是补贴拉动的、补贴退坡后消失；但 8,000 万单是真实留存基本盘。
+4. 2026Q1 起配送费涨价，东财财富号用户实测「部分场景价格高于美团」—— 这是留存测试的关键窗口。</p>
+<p><strong>判断：即时零售业务本身的留存是有的（稳定 8,000 万日单是基本盘），但"闪购用户→电商用户"的长期留存证据不足。2026 全年将是协同真伪的决定性窗口。</strong></p>
+<hr />
+<h2 id="4">4. 与竞争对手对比</h2>
+<h3 id="vs-gmv">淘天 vs 拼多多（电商 GMV 增速差距）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>2024</th>
+<th>2025e</th>
+<th>差距变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GMV 规模（万亿）</td>
+<td>淘天 ~8.0 / 拼多多 ~5.2</td>
+<td>淘天 ~8.3 / 拼多多 ~5.9</td>
+<td>绝对差距稳定 ~2.4–2.6 万亿</td>
+</tr>
+<tr>
+<td>GMV 增速</td>
+<td>淘天 mid-SD / 拼多多 double-digit</td>
+<td>淘天 mid-SD / 拼多多 ~12–15%</td>
+<td><strong>差距未缩小</strong></td>
+</tr>
+<tr>
+<td>MAU</td>
+<td>淘 9.4/多 7.0</td>
+<td>淘 9.8/多 7.1</td>
+<td>拼多多 MAU 增长停滞，淘宝明显受益于闪购</td>
+</tr>
+<tr>
+<td>月人均时长</td>
+<td>多 403 / 淘 244</td>
+<td>多 422 / 淘 266.9</td>
+<td><strong>拼多多仍远领先</strong>，但淘宝在追赶</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论：GMV 增速差距没有因闪购而缩小——这是"伪协同"或"部分协同"最重要的旁证之一。如果闪购真的大幅带动电商 GMV，淘天 GMV 增速应该明显跑赢拼多多，但实际上没有。</strong></p>
+<h3 id="vs">淘天 vs 抖音电商</h3>
+<ul>
+<li>抖音电商 2025 前 10 月 GMV 增速 +30%+，全年预期突破 4 万亿、直逼拼多多。</li>
+<li>淘天同期 GMV 增速 mid-single-digit —— <strong>差距不是被外卖解决的</strong>。</li>
+<li>高盛预测 2025Q4 市场份额：淘天 31%、抖音 24%、拼多多 19%、京东 16%。抖音继续抢份额（2024 年 ~20%→2025 ~24%）。</li>
+</ul>
+<p><strong>结论：外卖没有阻止抖音电商在内容电商侧继续抢淘天的心智。闪购解决的是「把用户留在淘宝 APP」，解决不了「让用户在淘宝下单而不是在抖音直播间下单」。</strong></p>
+<hr />
+<h2 id="5-summary">5. 头部卖方/媒体观点 summary</h2>
+<h3 id="_2">看多方（支持"真协同"）</h3>
+<ul>
+<li><strong>高盛</strong>：将外卖市场格局预测为"阿里 4.5 : 美团 4.5 : 京东 1"，认为闪购与电商协同带动 FY26Q2 CMR +10% 是持续性而非一次性；预计 UE 在 2025/12 收窄至单均亏 3 元以内。</li>
+<li><strong>摩根大通</strong>：12 个月目标价从 140 美元上调至 170 美元（2025/Q3），重估依据是"生态效率提升 + 协同效应"。</li>
+<li><strong>东方证券</strong>：FY26Q2 点评"电商稳健闪购符合预期，云提速全栈 AI 优势尽显"。</li>
+<li><strong>国金证券（2025/12 深度）</strong>："重启新篇章：聚焦、增长、重估"——认可闪购带来"用户—场景—履约"三方重构。</li>
+<li><strong>阿里官方口径（蒋凡）</strong>：三年 1 万亿 GMV 增量；闪购拉动手淘 DAU +20%、CMR 加速；未来三年百万品牌门店入驻。</li>
+</ul>
+<h3 id="_3">看空方（质疑"伪协同"）</h3>
+<ul>
+<li><strong>知乎高赞 + 自媒体</strong>：集中质疑 FY26Q3 财报——"闪购营销费用增加 300 多亿、收入仅增 80 多亿，核心电商持续被抖音拼多多赶超"；"淘天双引擎失速，3800 亿豪赌 AI，阿里增速掉队"。</li>
+<li><strong>晚点 LatePost</strong>（2025/11）：提出"补贴一停忠诚归零"拷问，指出闪购女性用户占比过半的双面性——可能是高价值、也可能是极度价格敏感的"家庭主妇羊毛党"。</li>
+<li><strong>商家反馈</strong>（散见多家媒体）：开启闪购后淘宝直通车转化效率下降，流量被低价订单稀释。</li>
+<li><strong>新浪财经</strong>（2026/3/19 FY26Q3 财报解读）：「"双面阿里"，加速与减速」——云加速 vs 电商减速对照。</li>
+<li><strong>FY26Q3 数据本身</strong>：CMR +1%、净利润 -66%、经调整 EBITA -57%、9 月累计自由现金流 -293 亿 —— 这是最重的数据反证。</li>
+</ul>
+<h3 id="_4">中性方（数据不足）</h3>
+<ul>
+<li><strong>中金</strong>：聚焦单位经济学，预测 UE 收窄至单均亏 3 元，但对"协同→电商加速"持观望。</li>
+<li><strong>多数行业分析师</strong>：承认流量协同真实，但对电商 GMV 长期加速缺乏数据支撑，留待 2026/下半年观察。</li>
+</ul>
+<hr />
+<h2 id="6">6. 关键数据缺口（阿里从未披露）</h2>
+<ol>
+<li><strong>"闪购用户→电商转化率"</strong>：阿里只说"拉动 DAU +20%"、"CMR +10%"，从未披露"闪购首次用户在 30/60/90 天内的电商下单率"。这是判断真假协同的<strong>单一最关键指标</strong>。</li>
+<li><strong>88VIP 会员季度净增数</strong>：官方只披露年度总数（5,300 万）和节日促销下单增长（+31%），季度净增未披露。如果 88VIP 季度净增在闪购启动后显著加速（比如从季度 +100 万 → +300 万），则协同铁证；目前看只是稳态 +200 万/季。</li>
+<li><strong>闪购订单中非餐占比逐月数据</strong>：只披露季度高点（75%+），未披露月度轨迹。</li>
+<li><strong>闪购用户与淘宝老用户的重叠率</strong>：新增 DAU 中多少是纯增量用户、多少是被激活的老用户。</li>
+<li><strong>闪购拉动的电商 GMV 绝对值</strong>：阿里只给总量口径，没给"闪购归因电商 GMV"。</li>
+<li><strong>UE 拆分</strong>：闪购单均亏损 4 元中，补贴、配送、技术分别占多少；电商协同侧的"单均获客成本替代"是多少。</li>
+</ol>
+<hr />
+<h2 id="7">7. 结论：正向协同是否成立？</h2>
+<h3 id="_5">硬证据（高置信度）</h3>
+<ol>
+<li><strong>流量协同是真的</strong>：手淘 DAU 在 2025/8 同比 +20%、MAU 创 9.83 亿历史新高、月人均时长 +9.2%。这些是 QuestMobile 第三方口径，不是阿里自造数字。</li>
+<li><strong>短期变现协同是真的（2025Q2–Q3）</strong>：FY25Q4–FY26Q2 三个季度 CMR 分别 +12% / +10% / +10%，显著超出闪购前的 +1%～+9% 区间。</li>
+<li><strong>88VIP 体系是真受益</strong>：外卖免配送费、闪购专属券等权益直接提升会员续费率；双 11 88VIP 日均下单人数 +31%。</li>
+</ol>
+<h3 id="_6">软证据（中置信度）</h3>
+<ol start="4">
+<li><strong>高频带低频逻辑成立</strong>：食品、药品、3C、美妆、鲜花等品类被证实在闪购端有显著订单增量，具备"高频带低频"的理论协同。</li>
+<li><strong>生态重构具备战略价值</strong>：饿了么+飞猪并入电商事业群、饿了么 APP 更名为淘宝闪购，从组织和品牌上都做到了真融合，非表面 PR。</li>
+</ol>
+<h3 id="_7">推测（低置信度）</h3>
+<ol start="6">
+<li><strong>三年 1 万亿 GMV 增量目标</strong>：蒋凡口径，目前没有数据可以验证进度，属战略承诺。</li>
+<li><strong>闪购老用户对电商的长期复购</strong>：阿里从未披露相关转化数据，行业推算在 20–30% 区间（对标美团到店→外卖转化）。</li>
+</ol>
+<h3 id="_8">反证（看空方数据）</h3>
+<ol start="8">
+<li><strong>FY26Q3 CMR +1% 塌方</strong>（最硬反证）：补贴退坡 1–3 个月后，CMR 增速几乎归零。这直接质疑"协同带来的是结构性提升还是补贴脉冲"。</li>
+<li><strong>淘天 vs 拼多多 GMV 增速差距未缩小</strong>：如果闪购真的帮淘天加速，2025 年淘天 GMV 增速应明显跑赢拼多多，但差距稳定在 2.6 万亿。</li>
+<li><strong>闪购营销费用增加 300 亿 vs 收入仅增 80 亿</strong>（FY26Q3）：ROI 层面看，协同变现严重不达预期。</li>
+<li><strong>日订单从 1.2 亿峰值回落至 8,000 万</strong>：33% 的峰值订单是补贴拉动的、留不住。</li>
+<li><strong>抖音电商继续抢份额</strong>：外卖解决不了内容电商的竞争维度。</li>
+</ol>
+<h3 id="_9">最终判断</h3>
+<p><strong>部分协同（Partial Synergy）——流量端协同坐实，变现端协同初步兑现但在衰减，长期留存协同证据缺失。</strong></p>
+<p>把协同效应拆成三段：
+- <strong>流量协同（✓ 真）</strong>：外卖确实把 DAU 和时长拉起来了。
+- <strong>变现协同（⚠ 半真）</strong>：2025 年中期 CMR 加速了，但补贴一退立刻塌。
+- <strong>结构协同（? 未知）</strong>：闪购用户是否会成为长期电商用户，目前无数据。</p>
+<p><strong>对投资者的三条建议：</strong>
+1. <strong>盯 FY26Q4 和 FY27Q1 的 CMR 增速</strong>：如果能在补贴退坡后稳定在 mid-to-high single digit，则"真协同"确认；如果持续在 low single digit，则"补贴脉冲论"坐实。
+2. <strong>盯 88VIP 季度净增</strong>：如果出现季度 +300 万以上的加速，说明闪购权益在锁定高价值用户；如果维持 +200 万稳态，则协同价值有限。
+3. <strong>盯非餐品类占比和单均补贴</strong>：非餐占比持续 &gt;75% 且单均补贴 ≤3 元是 UE 健康的标志；如果为保留订单而重新拉高补贴，则战略失败。</p>
+<p><strong>协同不是"有没有"，而是"值不值"：</strong> 2025 年阿里为了闪购投入的增量营销费用约 500 亿、FY26Q3 单季度 EBITA 减少 258 亿，换来的是 CMR 在三个季度短暂回升到 10%、然后回到 1%。如果 2026 年不能证明"补贴退潮后 CMR 仍维持 mid-single-digit+"，则这场协同战略将被市场重新定价为"昂贵的防御战"而非"增长战"。</p>
+<p>段永平会问：「三年以后这个生意还在不在，比现在是好是坏？」目前的回答是：闪购业务本身大概率还在、规模可能更大，但淘宝电商主站是否因此而结构性更强？<strong>概率 50/50，悬念留给 2026–2027。</strong></p>
+<hr />
+<h2 id="_10">附录：引用来源</h2>
+<ul>
+<li>阿里巴巴 FY25Q4 / FY26Q1 / FY26Q2 / FY26Q3 财报及电话会记录（新浪财经、东方证券、华盛通、36氪多次转引）</li>
+<li>QuestMobile 2025/11 双 11 洞察报告、2025/9 移动互联网秋季报告、2025-2026 核心趋势报告</li>
+<li>晚点 LatePost（2025/11 女性用户专题）、36氪、一财、界面新闻、腾讯新闻、澎湃新闻</li>
+<li>高盛、摩根大通、东方证券、国金证券、东吴证券、中金公司阿里深度报告（2025 下半年）</li>
+<li>新浪财经《"双面阿里"，加速与减速》（2026/3/19）</li>
+<li>蒋凡 2025/8/29 阿里 FY26Q1 电话会原话</li>
+</ul>
+<p><strong>数据缺口处均标 N/A，未编造任何未公开数据。</strong></p>
+<hr />
+<p><em>ai-berkshire 淘宝协同效应专员，2026 年 4 月 20 日</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/46875cd48cf3.html">美团（3690.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/faeed57c9604.html">美团：AI 能创造多少利润，十年后还能留下多少？</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/0f5eec4b44dd.html">审计范围</a><div class="meta">2026-09-25 · 底稿</div></li><li><a href="../r/b9902ea4a5b8.html">美团（03690.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/14f7d53fcf1f.html">audit_scope</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/5c818f86a8c3.html">美团这27亿利润，有35亿不是主业赚的</a><div class="meta">2026-08-29 · 财报</div></li><li><a href="../r/c0f90d479cfd.html">美团扭亏为盈了</a><div class="meta">2026-08-29 · 公众号</div></li><li><a href="../r/5974385e15ed.html">AI 会不会绕过美团？</a><div class="meta">2026-07-01 · 公众号</div></li><li><a href="../r/f18ab8ccf860.html">全球最赚钱的外卖平台，为什么反而最便宜？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/636f49fa1105.html">抖音、京东和骑手成本，谁才是美团真正的威胁？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/a349d6ac557c.html">AI 会不会绕过美团？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/c24146600d5e.html">全球本地生活投资地图：美团之外，谁更像好生意？</a><div class="meta">2026-06-28 · 公众号</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

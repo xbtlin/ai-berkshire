@@ -1,0 +1,354 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lululemon 财务估值分析 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/lululemon/index.html">lululemon</a></div><h1>Lululemon 财务估值分析</h1><div class="meta"><a href="../companies/lululemon/index.html">lululemon</a> ｜ 2026-05-16 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/lululemon/02-%E8%B4%A2%E5%8A%A1%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90-%E5%B7%B4%E8%8F%B2%E7%89%B9%E8%A7%86%E8%A7%92.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#5">5年财务趋势</a><ul>
+<li><a href="#1">收入与利润（财年以1月底为截止）</a></li>
+<li><a href="#_1">毛利率趋势</a></li>
+<li><a href="#roic">ROIC趋势</a></li>
+</ul>
+</li>
+<li><a href="#vs">当前估值 vs 历史估值</a><ul>
+<li><a href="#_2">市盈率对比</a></li>
+<li><a href="#_3">股价历史</a></li>
+</ul>
+</li>
+<li><a href="#_4">三情景估值</a><ul>
+<li><a href="#_5">基本假设</a></li>
+<li><a href="#ceo">情景一：乐观（新CEO成功扭转，国际增速回升）</a></li>
+<li><a href="#_6">情景二：中性（维持现状，低速增长）</a></li>
+<li><a href="#_7">情景三：悲观（竞争恶化，品牌失势）</a></li>
+<li><a href="#_8">分析师共识</a></li>
+</ul>
+</li>
+<li><a href="#_9">安全边际判断</a><ul>
+<li><a href="#_10">有利因素</a></li>
+<li><a href="#_11">不利因素</a></li>
+<li><a href="#_12">巴菲特框架下的结论</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>分析日期：2026年5月16日 | 股价：$119 | 市值：约150亿美元</p>
+</blockquote>
+<hr />
+<h2 id="5">5年财务趋势</h2>
+<h3 id="1">收入与利润（财年以1月底为截止）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>收入（亿美元）</th>
+<th>同比增长</th>
+<th>净利润（亿美元）</th>
+<th>净利率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2021（截至2022.1）</td>
+<td>62.6</td>
+<td>42.1%</td>
+<td>9.75</td>
+<td>15.6%</td>
+</tr>
+<tr>
+<td>FY2022（截至2023.1）</td>
+<td>81.1</td>
+<td>29.6%</td>
+<td>8.55</td>
+<td>10.5%</td>
+</tr>
+<tr>
+<td>FY2023（截至2024.1）</td>
+<td>96.0</td>
+<td>18.4%</td>
+<td>15.5</td>
+<td>16.2%</td>
+</tr>
+<tr>
+<td>FY2024（截至2025.1）</td>
+<td>105.9</td>
+<td>10.1%</td>
+<td>18.2</td>
+<td>17.2%</td>
+</tr>
+<tr>
+<td>FY2025（截至2026.2）</td>
+<td>110.7</td>
+<td>4.5%</td>
+<td>15.7</td>
+<td>14.2%</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>来源：<a href="https://www.macrotrends.net/stocks/charts/LULU/lululemon-athletica-inc/revenue">MacroTrends LULU Revenue</a>；<a href="https://www.macrotrends.net/stocks/charts/LULU/lululemon-athletica-inc/net-income">MacroTrends LULU Net Income</a>；<a href="https://corporate.lululemon.com/media/press-releases/2026/03-17-2026-200620717">Lululemon FY2025 Q4业绩公告</a></p>
+</blockquote>
+<p><strong>趋势解读</strong>：
+- 收入增速从42%逐年放缓至4.5%，典型的高增长公司进入成熟期曲线
+- FY2025净利率14.2%，较FY2024的17.2%明显下滑，原因包括关税影响（~2.4亿美元利润损失）和折扣加大
+- 3年收入CAGR约11%，5年CAGR约15%</p>
+<h3 id="_1">毛利率趋势</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>毛利率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2021</td>
+<td>57.7%</td>
+</tr>
+<tr>
+<td>FY2022</td>
+<td>55.4%</td>
+</tr>
+<tr>
+<td>FY2023</td>
+<td>58.3%</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td>59.4%</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td>58.4%</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>来源：<a href="https://www.macrotrends.net/stocks/charts/LULU/lululemon-athletica-inc/gross-profit">MacroTrends LULU Gross Profit</a>；<a href="https://stockanalysis.com/stocks/lulu/financials/ratios/">StockAnalysis LULU Ratios</a></p>
+</blockquote>
+<p>毛利率整体稳定在55%-59%区间，FY2025微降1个百分点，主要受Q3关税影响（毛利率降至55.6%，同比下降290个基点）。</p>
+<h3 id="roic">ROIC趋势</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>ROIC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2021</td>
+<td>26.6%</td>
+</tr>
+<tr>
+<td>FY2022</td>
+<td>20.6%</td>
+</tr>
+<tr>
+<td>FY2023</td>
+<td>27.1%</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td>29.6%</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td>30.6%</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>来源：<a href="https://www.gurufocus.com/term/roic/LULU">GuruFocus LULU ROIC</a>；<a href="https://www.financecharts.com/stocks/LULU/value/roic">FinanceCharts LULU ROIC</a></p>
+</blockquote>
+<p>ROIC持续在20%-30%以上，5年平均约32%。巴菲特的标准是长期ROIC&gt;15%即为优秀，Lululemon远超这一门槛。30%的ROIC意味着每投入1美元资本，公司能创造0.30美元的回报——这是消费品公司中的顶级水平。</p>
+<hr />
+<h2 id="vs">当前估值 vs 历史估值</h2>
+<h3 id="_2">市盈率对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>当前</th>
+<th>10年均值</th>
+<th>5年均值</th>
+<th>历史最低</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>滚动PE</td>
+<td>8.98x</td>
+<td>41.2x</td>
+<td>~35x</td>
+<td>~8.5x（当前附近）</td>
+</tr>
+<tr>
+<td>远期PE</td>
+<td>12.9x</td>
+<td>~30x</td>
+<td>~28x</td>
+<td>~10x</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>来源：<a href="https://www.gurufocus.com/term/pettm/LULU">GuruFocus LULU PE</a>；<a href="https://www.macrotrends.net/stocks/charts/LULU/lululemon-athletica-inc/pe-ratio">MacroTrends LULU PE Ratio</a></p>
+</blockquote>
+<p><strong>关键发现</strong>：当前PE 8.98倍，比10年均值41.2倍低了78%。这意味着市场对Lululemon的定价已经从"高增长科技消费股"转变为"增长见顶的传统零售股"。</p>
+<h3 id="_3">股价历史</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>节点</th>
+<th>股价</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>历史最高</td>
+<td>$511（2023.12）</td>
+<td>"Power of Three x2"叙事巅峰</td>
+</tr>
+<tr>
+<td>52周高点</td>
+<td>$340（2025年中）</td>
+<td>CEO离任前</td>
+</tr>
+<tr>
+<td>当前价</td>
+<td>$119（2026.5）</td>
+<td>从最高点下跌77%</td>
+</tr>
+<tr>
+<td>52周低点</td>
+<td>$119（2026.3）</td>
+<td>接近当前价</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>来源：<a href="https://www.macrotrends.net/stocks/charts/LULU/lululemon-athletica-inc/stock-price-history">MacroTrends LULU Stock Price History</a>；<a href="https://finance.yahoo.com/quote/LULU/">Yahoo Finance LULU</a></p>
+</blockquote>
+<p>从$511跌到$119，跌幅77%。这不是一般的"回调"，而是市场对这家公司的根本性重新定价。</p>
+<hr />
+<h2 id="_4">三情景估值</h2>
+<h3 id="_5">基本假设</h3>
+<ul>
+<li>FY2025 EPS：$13.27（实际）</li>
+<li>FY2026E EPS指引：$12.10-$12.30</li>
+<li>当前股价：$119</li>
+<li>流通股：约1.17亿股</li>
+</ul>
+<h3 id="ceo">情景一：乐观（新CEO成功扭转，国际增速回升）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2028E EPS</td>
+<td>$16-$17</td>
+</tr>
+<tr>
+<td>给予PE</td>
+<td>20x（增长恢复预期）</td>
+</tr>
+<tr>
+<td>目标价</td>
+<td>$320-$340</td>
+</tr>
+<tr>
+<td>潜在涨幅</td>
+<td>170%-185%</td>
+</tr>
+</tbody>
+</table></div>
+<p>触发条件：Heidi O'Neill上任后成功重振北美业务，中国继续20%+增长，毛利率恢复至59%以上。</p>
+<h3 id="_6">情景二：中性（维持现状，低速增长）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2028E EPS</td>
+<td>$13-$14</td>
+</tr>
+<tr>
+<td>给予PE</td>
+<td>15x（稳态消费品估值）</td>
+</tr>
+<tr>
+<td>目标价</td>
+<td>$195-$210</td>
+</tr>
+<tr>
+<td>潜在涨幅</td>
+<td>65%-75%</td>
+</tr>
+</tbody>
+</table></div>
+<p>触发条件：收入增长3%-5%，利润率基本持平，无重大正面或负面催化剂。</p>
+<h3 id="_7">情景三：悲观（竞争恶化，品牌失势）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2028E EPS</td>
+<td>$10-$11</td>
+</tr>
+<tr>
+<td>给予PE</td>
+<td>10x（零售行业底部估值）</td>
+</tr>
+<tr>
+<td>目标价</td>
+<td>$100-$110</td>
+</tr>
+<tr>
+<td>潜在跌幅</td>
+<td>-8%至-16%</td>
+</tr>
+</tbody>
+</table></div>
+<p>触发条件：Alo/Vuori持续抢夺份额，北美出现负增长，被迫大幅折扣导致利润率恶化。</p>
+<h3 id="_8">分析师共识</h3>
+<p>华尔街平均目标价$190.26，评级"持有"。</p>
+<blockquote>
+<p>来源：<a href="https://stockanalysis.com/stocks/lulu/statistics/">StockAnalysis LULU Statistics</a></p>
+</blockquote>
+<hr />
+<h2 id="_9">安全边际判断</h2>
+<h3 id="_10">有利因素</h3>
+<ol>
+<li><strong>估值极度压缩</strong>：PE从40倍压到9倍，大量悲观预期已被Price in</li>
+<li><strong>ROIC仍然强劲</strong>：30%的ROIC在当前估值下意味着极高的资本回报率</li>
+<li><strong>无负债压力</strong>：资产负债表健康，没有偿债风险</li>
+<li><strong>回购能力</strong>：公司持续回购股票，在低估时效果更佳</li>
+</ol>
+<h3 id="_11">不利因素</h3>
+<ol>
+<li><strong>增长放缓是事实</strong>：FY2026指引仅2%-4%收入增长，EPS还要下滑</li>
+<li><strong>管理层真空期</strong>：新CEO 9月才上任，短期缺乏战略清晰度</li>
+<li><strong>关税不确定性</strong>：对利润率的持续影响难以量化</li>
+</ol>
+<h3 id="_12">巴菲特框架下的结论</h3>
+<p>用巴菲特"10年后这家公司会比现在更好还是更差"的标准来看：</p>
+<ul>
+<li><strong>品牌</strong>：Lululemon品牌在全球运动生活方式领域仍有深厚根基，10年后大概率更强</li>
+<li><strong>行业</strong>：运动休闲渗透率仍在提升的长期趋势确定性高</li>
+<li><strong>当前估值</strong>：9倍PE买一家ROIC 30%、毛利率58%的消费品公司，即使增长降速，安全边际也相当充足</li>
+</ul>
+<p><strong>巴菲特视角的核心判断</strong>：以当前价格买入，中性情景下的风险回报比非常有吸引力。关键是要有耐心等待管理层换届完成和增长重新加速。即使最悲观的情景，下行空间也有限（~15%），而乐观情景的上行空间巨大（170%+）。这是一个<strong>不对称的赌注</strong>。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/0f9e2512795e.html">风险、管理层与估值判断</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/4e4caa764c6b.html">增长引擎与中国市场</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/1c31633c2210.html">品牌护城河的真实深度</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/05100e268847.html">不只是瑜伽裤</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/ae291d86dd14.html">《看懂lululemon》系列说明</a><div class="meta">2026-05-22 · 底稿</div></li><li><a href="../r/ed4e362fb8d7.html">Lululemon (LULU) 投资研究最终报告</a><div class="meta">2026-05-16 · 研究</div></li><li><a href="../r/267885a8dc30.html">Lululemon（LULU）深度研究报告</a><div class="meta">2026-05-16 · 研究</div></li><li><a href="../r/fcf81e6dee54.html">Lululemon 风险与管理层评估</a><div class="meta">2026-05-16 · 组织管理</div></li><li><a href="../r/cdaab68e734b.html">Lululemon 行业竞争分析</a><div class="meta">2026-05-16 · 研究</div></li><li><a href="../r/e567f7324491.html">Lululemon 商业模式分析</a><div class="meta">2026-05-16 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>
