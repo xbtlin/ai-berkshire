@@ -1,0 +1,912 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>蚂蚁集团一手数据核查：哪些数字站得住，哪些站不住 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script></head><body data-root="../" data-page="r/91ee2cf584fe.html" data-title="蚂蚁集团一手数据核查：哪些数字站得住，哪些站不住"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/蚂蚁集团/index.html">蚂蚁集团</a></div><div class="layout"><div><h1>蚂蚁集团一手数据核查：哪些数字站得住，哪些站不住</h1><div class="meta"><a href="../companies/蚂蚁集团/index.html">蚂蚁集团</a> ｜ 2026-08-15 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2-%E4%B8%80%E6%89%8B%E6%95%B0%E6%8D%AE%E6%A0%B8%E6%9F%A5-20260815.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">关于本备忘录的置信度标注约定</a></li>
+<li><a href="#_2">一、金控牌照：官方口径里的信息真空，不是"已解决"</a><ul>
+<li><a href="#_3">结论</a></li>
+<li><a href="#_4">支撑证据</a></li>
+<li><a href="#_5">本节最重要的方法论提醒</a></li>
+</ul>
+</li>
+<li><a href="#_6">二、估值锚：唯一硬锚是阿里权益法，媒体口径的两个大数需要区别对待</a><ul>
+<li><a href="#_7">结论</a></li>
+<li><a href="#a">锚点A：权益法反推（最硬）</a></li>
+<li><a href="#b">锚点B：季度斜率（最可证伪的拐点信号）</a></li>
+<li><a href="#c">锚点C：现金回报</a></li>
+<li><a href="#d">锚点D：期权激励侧的估值痕迹（间接但硬）</a></li>
+<li><a href="#e">锚点E：初始计价</a></li>
+<li><a href="#2023">2023年回购的完整事实链（【单一来源】，全部源自阿里单一发行人申报）</a></li>
+<li><a href="#_8">回购定价的一手原文（已逐字复核）</a></li>
+<li><a href="#20242026">2024—2026年是否有第二次回购</a></li>
+<li><a href="#a1">蚂蚁国际赴港：截至时点无A1记录（【已证实】）</a></li>
+</ul>
+</li>
+<li><a href="#_9">三、支付份额与信贷全量口径：份额侧全线落空，信贷侧拿到真数</a><ul>
+<li><a href="#_10">结论</a></li>
+<li><a href="#31">3.1 央行行业总量（【单一来源】，一手源完整可复现）</a></li>
+<li><a href="#32">3.2 支付宝交易笔数下限（【单一来源】，且为二手媒体+推算，最弱的一条）</a></li>
+<li><a href="#33">3.3 蚂蚁消费金融：本轮质量最高的一组数据（【已证实】）</a></li>
+<li><a href="#34-2025">3.4 蚂蚁消金2025年上半年（【单一来源】）</a></li>
+<li><a href="#35">3.5 本轮拿到但无可引用原文 的信贷线索（按未核验处理）</a></li>
+</ul>
+</li>
+<li><a href="#ai">四、AI投入产出：模型侧数据极密，应用侧与投入侧完全空白</a><ul>
+<li><a href="#_11">结论</a></li>
+<li><a href="#41-ling-30-flash">4.1 当前旗舰：Ling-3.0-flash（【已证实】）</a></li>
+<li><a href="#42-ling-30-tiny">4.2 端侧小模型：Ling-3.0-tiny（【已证实】）</a></li>
+<li><a href="#43-ring-26-1t">4.3 万亿参数旗舰：Ring-2.6-1T（【单一来源】）</a></li>
+<li><a href="#44-ling-25-1t">4.4 训练算力的唯一代理指标：Ling-2.5-1T语料规模（【单一来源】）</a></li>
+<li><a href="#45-app-store">4.5 应用侧：本轮最有信息量的发现来自App Store元数据</a></li>
+</ul>
+</li>
+<li><a href="#_12">五、不可用清单：为什么这些数字本轮不能写进材料</a></li>
+<li><a href="#_13">六、仍未查清的问题：查了什么渠道，返回了什么</a><ul>
+<li><a href="#61">6.1 金控牌照线</a></li>
+<li><a href="#62">6.2 估值锚线</a></li>
+<li><a href="#63">6.3 支付与信贷线</a></li>
+<li><a href="#64-ai">6.4 AI线</a></li>
+</ul>
+</li>
+<li><a href="#_14">七、对估值的含义</a><ul>
+<li><a href="#71">7.1 现在站得住的估值输入</a></li>
+<li><a href="#72">7.2 现在站不住的估值输入</a></li>
+<li><a href="#73">7.3 为什么本备忘录不给估值区间</a></li>
+<li><a href="#74">7.4 要把估值算出来，最少需要补哪些数据</a></li>
+<li><a href="#75">7.5 一个不涉及数字、但对判断最重要的结论</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><p><strong>数据截止</strong>：2026年8月15日
+<strong>核查范围</strong>：金控牌照状态、估值锚点、支付份额与消费信贷全量口径、AI投入产出</p>
+<p>蚂蚁集团自2020年上半年招股书之后再未公开完整审计财务。市面上流传的蚂蚁数字，绝大多数是媒体转述、层层引用、无法回溯到原始文件。这份备忘录做的事很简单：<strong>把每一个数字追回一手出处，追不到的就明确说追不到</strong> 。</p>
+<p>方法上做了两件事。一是所有论断都必须附原文逐字摘录，摘不到原文的不予收录；二是判定分三档，把"没能独立复核"和"已被证伪"严格区分开——前者是取证受阻，后者才是证据被推翻。本轮<strong>无一条论断被证伪</strong> ，不可用清单里的条目全部属于"无法追溯"或"来源互相矛盾"。</p>
+<p>第六节列出了每个查不到的渠道分别返回了什么。这节看似是失败记录，但对判断蚂蚁这家公司的信息可得性本身有价值——<strong>信息不可得性是一个应当计入折价的估值输入，而不是可以用"缺数据所以给中性假设"抹平的空白</strong> 。</p>
+<hr />
+<h2 id="_1">关于本备忘录的置信度标注约定</h2>
+<p>所有事实性陈述分三档标注，引用时请严格保留标签：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>标签</th>
+<th>含义</th>
+<th>可否对外表述为事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>【已证实】</td>
+<td>一手原文逐字命中 <strong>且</strong> 取得机构独立的第二来源交叉印证</td>
+<td>可</td>
+</tr>
+<tr>
+<td>【单一来源】</td>
+<td>一手原文逐字命中，但未取得独立第二来源佐证（多因本轮检索通道受阻，非证伪）</td>
+<td>需带"据某某披露"限定</td>
+</tr>
+<tr>
+<td>【不可用】</td>
+<td>无法追溯到可核验原文，或多个来源互相矛盾</td>
+<td>不可，见第五节</td>
+</tr>
+</tbody>
+</table></div>
+<p>一个必须先说明的本轮硬约束：<strong>本轮全部核查会话的网页搜索配额在开工前即已耗尽（200/200）</strong> ，Bing、DuckDuckGo、Mojeek、Ecosia、Brave、360、搜狗、百度经直连抓取分别返回结果错配、Socket closed、403、429、302、验证码。因此大量"单一来源"的成因是取证通道受限，而不是证据本身弱。这一点本身对判断"蚂蚁信息可得性"有价值，详见第六节。</p>
+<hr />
+<h2 id="_2">一、金控牌照：官方口径里的信息真空，不是"已解决"</h2>
+<h3 id="_3">结论</h3>
+<p>截至2026年8月15日，<strong>没有任何一份央行或金融监管总局的公开文件显示"蚂蚁金融控股公司"获批设立</strong> 。同时也没有任何官方文件显示该申请被驳回、中止或撤回。这条线在官方口径里是<strong>静默消失</strong> ，既无批准文号，也无正式终止公告。在IPO前置条件评估中，这应标注为"信息真空"，而非"已完成整改"。</p>
+<h3 id="_4">支撑证据</h3>
+<p><strong>1. 监管要求本身有明确出处</strong>（【单一来源】）</p>
+<p>2021年4月12日，中国人民银行副行长潘功胜就金融管理部门（人民银行、银保监会、证监会、外汇局四部门）再次约谈蚂蚁集团答记者问，公布的五项整改内容之三为：</p>
+<blockquote>
+<p>"三是蚂蚁集团整体申设为金融控股公司，所有从事金融活动的机构全部纳入金融控股公司接受监管，健全风险隔离措施，规范关联交易。"</p>
+</blockquote>
+<p>来源：https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212551563271/index.html</p>
+<p><strong>修正提示</strong>：不要写成"这是官方唯一一次点名"——该页原文自述"自去年12月份四部门联合监管约谈以来"，即2020年12月已有一次公开表述。也不要写"此后再无央行公告更新审批进度"这种全称否定，应改为"截至2026年8月未检索到央行公开发布蚂蚁金控设立获批的公告"。</p>
+<p><strong>2. 央行金控设立许可公示表：3家，无蚂蚁、无财付通</strong>（【单一来源】）</p>
+<p>央行政务公开"金融控股公司设立审批"栏目下唯一一份《金融控股公司设立行政许可信息公示表（截至2022年8月）》，列示3张许可：</p>
+<ul>
+<li>中国中信金融控股有限公司（筹），银许准予决字〔2022〕第55号</li>
+<li>北京金融控股集团有限公司，第56号</li>
+<li>深圳市招融投资控股有限公司，第143号（已更名为招商局金融控股有限公司）</li>
+</ul>
+<p>来源：https://www.pbc.gov.cn/zhengwugongkai/4081330/4081344/4081407/4081702/4510696/4510699/2025080819051558158/index.html</p>
+<p><strong>口径修正（重要）</strong>：不要写成"这张表自2022年3月起四年半从未更新"。表内第143号事项的实际获批时间在2022年8月底至9月初，晚于页面标注的发布日期2022-03-18；URL中的"2025080819..."是央行官网2025年8月站点迁移的重编号。准确表述是：<strong>该栏目下至今仅此一份公示表（页面显示"共：1条"），收录范围截至2022年8月，此后未见更新版本</strong> 。</p>
+<p><strong>3. 变更事项台账同样冻结在2022年</strong>（【单一来源】）</p>
+<p>《金融控股公司变更事项行政许可信息公示表》（发布时间2022-07-08）栏目"共：1条"，表内仅1条记录：北京金融控股集团有限公司，银许准予决字〔2022〕第115号，事项为"变更公司章程"。</p>
+<p>来源：https://www.pbc.gov.cn/zhengwugongkai/4081330/4081344/4081407/4081702/4510696/4510701/2025080819054049721/index.html</p>
+<p><strong>4. 央行"新闻发布"栏目全量翻页核验</strong>（【单一来源】）</p>
+<p>核查员实测该栏目共409页、6121条，逐页抓取第1—151页（覆盖2020-01-16至2026-08-14），对全部标题做"金融控股/金控/许可/批准/核准/牌照"关键词扫描。结果：该栏目中唯一一条金控设立许可<strong>批准公告</strong> 是2022年3月17日《人民银行批准两家金融控股公司设立许可》（中信金控〔筹〕、北京金控），原文全文未提及蚂蚁，仅称：</p>
+<blockquote>
+<p>"依法依规开展已受理企业的审批工作，稳妥有序推动其他符合条件的企业申设金融控股公司。"</p>
+</blockquote>
+<p>来源：https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212552492569/index.html</p>
+<p><strong>必须补的修正</strong>：<strong>不能据此说"央行只批过两家"</strong> 。招商局金融控股的设立许可于2022年9月2日另行批准，该公告不在"新闻发布"栏目内（核查员核对了覆盖2022-08-24至2022-09-20的第83页，确无该条）。央行时期已批金控为<strong>三家</strong> ：中信金控、北京金控、招商金控。</p>
+<p><strong>5. 2023年7月7日整改收官通稿：全文零次提及"金融控股"</strong>（【已证实】）</p>
+<p>这是本节唯一取得独立第二来源交叉印证的一条。央行官网稿件《金融管理部门善始善终推进平台企业金融业务整改 着力提升平台企业常态化金融监管水平》（2023-07-07，全文三段约500字）：</p>
+<blockquote>
+<p>"目前，平台企业金融业务存在的大部分突出问题已完成整改。金融管理部门工作重点从推动平台企业金融业务的集中整改转入常态化监管。……对蚂蚁集团及旗下机构处以罚款（含没收违法所得）71.23亿元。"</p>
+</blockquote>
+<p>对全文做关键词检索，<strong>"金融控股""金控"零命中</strong> 。同稿要求关停"相互宝"，并称"近期也对邮储银行、平安银行、人保财险和财付通公司等实施了行政处罚"。</p>
+<p>来源：https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553350317/index.html
+独立佐证：CNBC 2023-07-07 报道罚没金额（7.123 billion yuan / $985 million），日期与金额一致。</p>
+<p><strong>口径边界</strong>：71.23亿元是罚款+没收违法所得的合计，主体为"蚂蚁集团及旗下机构"合并口径，不可拆成母公司单体，也不可与整改成本混用。同稿中财付通被罚金额并未列出，市场常引的29.93亿元不出自本稿。</p>
+<p><strong>6. 财付通同样不在金控公示表内</strong>（【单一来源】）</p>
+<p>需要收紧的表述：通稿把财付通与邮储、平安、人保财险并列在"以往执法检查"一句，与蚂蚁处罚<strong>分列两句</strong> ，属同日同稿披露、非同一份处罚决定，不宜写成"财付通与蚂蚁一并被处罚"。且蚂蚁同样不在公示表内，因此"不在公示表内"这一点<strong>对财付通并无相对于蚂蚁的差异化含义</strong> ，不能用作腾讯比蚂蚁领先或落后的证据。</p>
+<h3 id="_5">本节最重要的方法论提醒</h3>
+<p>上述第2、3、4条全部是<strong>消极证据（absence of evidence）</strong> ，且存在一个致命的时间断档：<strong>2023年机构改革后，金融控股公司的日常监管与行政许可职责已从人民银行划归国家金融监督管理总局</strong> 。此后的金控审批不在央行网站发布。因此仅凭央行台账<strong>不足以覆盖2023年之后</strong> 。核查员尝试在金融监管总局侧检索，全部失败（见第六节），这是本节最大的取证缺口。</p>
+<hr />
+<h2 id="_6">二、估值锚：唯一硬锚是阿里权益法，媒体口径的两个大数需要区别对待</h2>
+<h3 id="_7">结论</h3>
+<p>蚂蚁自2020年上半年后未再公开完整审计财务，唯一可持续追踪的一手估值锚是<strong>阿里巴巴按权益法确认的蚂蚁损益序列</strong> 。按可证伪强度重排，能用的锚点有五个（A—E），其中B（季度斜率）是目前最可证伪的基本面拐点信号。</p>
+<p>关于两个媒体常引的大数，本轮结论<strong>不同</strong> ，请勿混为一谈：</p>
+<ul>
+<li><strong>"回购对应5671亿元估值"——已逐字复核，可用</strong>。这个数字<strong>不在20-F里</strong> （对FY2024与FY2026两份20-F全文检索"567"与"7.6%"，价格与估值均零命中，20-F只写授权比例不写价格），因此只grep 20-F的做法会误判为"查不到"。真正的出处是阿里向SEC报送的6-K附件EX-99.1《Ant Group Proposes Share Repurchase》，落款<strong>2023年7月9日</strong> （7月10日为报送日），原文见本节末"回购定价的一手原文"。</li>
+<li><strong>"IPO时约2.35万亿估值"——本轮完全无法追溯，不予采信</strong>。港交所披露易上蚂蚁2020年申请文件已归入Inactive，文档链接字段为"#"、明确声明不可访问；上交所科创板688688发行公告在无搜索通道情况下未能定位。建议后续用A股发行价68.80元/股×发行后总股本自行核算，而非沿用媒体口径。</li>
+</ul>
+<h3 id="a">锚点A：权益法反推（最硬）</h3>
+<p>阿里滞后一个季度、按33%全稀释口径确认蚂蚁损益（【单一来源】，源自阿里FY2026 20-F原文，核查员已下载全文11,745,163字节；该组数字未单独走双源核验）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>阿里财年</th>
+<th>对应蚂蚁自然年</th>
+<th>确认损益（人民币百万元）</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2026（截至2026-03-31）</td>
+<td>2025年1—12月</td>
+<td>5,048</td>
+<td>−60%</td>
+</tr>
+<tr>
+<td>FY2025（截至2025-03-31）</td>
+<td>2024年1—12月</td>
+<td>12,648</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>按33%线性反推：蚂蚁2025自然年归母净利约<strong>153亿元</strong> ，2024自然年约<strong>383亿元</strong> 。</p>
+<p><strong>必须加的会计口径但书</strong>：20-F原文写明"For accounting purposes, the Company will take into consideration a proportionate share of equity interest held by the employee incentive plans of Ant Group to account for its share of results"。即2023年那次约7%回购后，阿里在权益法下<strong>实际确认份额高于33%</strong> （量级约33%/(1−7%)≈35.5%）。若改用35.5%反推，2025年约<strong>142亿元</strong> 、2024年约<strong>356亿元</strong> 。<strong>本备忘录建议用142—153亿（2025年）、356—383亿（2024年）的区间，而非单点值。</strong></p>
+<p>阿里另在表内把basis difference、股权激励费用、视同处置损益单列在"Others"行，故"— Ant Group"这一行接近纯比例份额；但阿里从未披露蚂蚁自身净利原值，上述均为估算而非披露值。</p>
+<h3 id="b">锚点B：季度斜率（最可证伪的拐点信号）</h3>
+<p>阿里各季确认额（人民币百万元）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>阿里季度</th>
+<th>对应蚂蚁自然季</th>
+<th>确认额</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>截至2025-09-30</td>
+<td>2025年4—6月</td>
+<td>2,733</td>
+<td>—</td>
+</tr>
+<tr>
+<td>截至2025-12-31</td>
+<td>2025年7—9月</td>
+<td>393</td>
+<td>−91%</td>
+</tr>
+<tr>
+<td>截至2026-03-31</td>
+<td>2025年10—12月</td>
+<td>375</td>
+<td>−79%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>本备忘录测算（非披露值）</strong>：以FY2026全年5,048减去上述三季，残差1,547百万对应蚂蚁2025年1—3月。按33%/35.5%双口径反推蚂蚁2025年分季归母净利：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>蚂蚁自然季</th>
+<th>按33%</th>
+<th>按35.5%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 Q1</td>
+<td>46.9亿</td>
+<td>43.6亿</td>
+</tr>
+<tr>
+<td>2025 Q2</td>
+<td>82.8亿</td>
+<td>77.0亿</td>
+</tr>
+<tr>
+<td>2025 Q3</td>
+<td>11.9亿</td>
+<td>11.1亿</td>
+</tr>
+<tr>
+<td>2025 Q4</td>
+<td>11.4亿</td>
+<td>10.6亿</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>残差法假设阿里各季该行口径一致、全年数等于四季之和，此假设未经验证。</strong></p>
+<p>阿里原文对断崖的归因是"新增长业务（含用户增长）与技术投入增加"以及"部分投资公允价值下降"。即：蚂蚁2025年下半年利润从单季80亿量级掉到11亿量级，跌幅八成以上，且连续两季维持在低位。这是本轮最重要的基本面信号，且<strong>方向与第四节的AI投入加码相互印证</strong> 。</p>
+<h3 id="c">锚点C：现金回报</h3>
+<p>FY2026阿里自蚂蚁收到分红人民币3,293百万元。按33%反推蚂蚁全年分红总额约<strong>100亿元</strong> （按35.5%则约93亿元）。</p>
+<h3 id="d">锚点D：期权激励侧的估值痕迹（间接但硬）</h3>
+<p>阿里对与蚂蚁挂钩的股权激励按衍生品逐期重估，计入合并利润表：</p>
+<ul>
+<li>FY2024（截至2024-03-31）：净转回人民币6,691百万元</li>
+<li>FY2025：净费用人民币4百万元</li>
+<li>FY2026：净转回人民币16百万元</li>
+</ul>
+<p>FY2024那笔66.91亿元的巨额转回，是蚂蚁估值被大幅下调在阿里表内留下的痕迹；FY2025/FY2026金额趋近于零，指向<strong>蚂蚁内部估值自2024年后基本走平</strong> 。</p>
+<p>引用口径警告：FY2026集团总股权激励14,821百万元中，"Others"行5,675百万元是子公司加蚂蚁合计，蚂蚁单项只有净转回16百万元，不可整笔算作蚂蚁。</p>
+<h3 id="e">锚点E：初始计价</h3>
+<p>2019年9月阿里取得33%股权时的初始账面价值人民币90.7 billion（含basis difference）。</p>
+<h3 id="2023">2023年回购的完整事实链（【单一来源】，全部源自阿里单一发行人申报）</h3>
+<ul>
+<li>2023-07-23蚂蚁股东会通过向全体股东回购<strong>至多7.6%</strong> 股权的提案（授权上限），阿里明确未参与：<em>"In July 2023, we received notice from Ant Group that a shareholder meeting held on July 23, 2023 had approved... a proposal by Ant Group to repurchase from all of its shareholders up to 7.6% of its equity interest. We did not participate in such share repurchase."</em></li>
+<li>实际执行发生在<strong>截至2023年9月30日的单季度</strong> ，回购约<strong>7%</strong> 总股权：<em>"During the quarter ended September 30, 2023, Ant Group repurchased approximately 7% equity interest from its existing shareholders and the shares repurchased were allocated to the employee incentive plans of Ant Group."</em></li>
+<li>阿里FY2024 20-F首次以完成时确认去向：<em>"We understand the repurchased shares were transferred into Ant Group's equity incentive pool."</em>（该句在FY2026 20-F中已被删除）</li>
+<li>截至2026-03-31股权结构：君瀚约32%、君澳约22%、阿里33%。</li>
+</ul>
+<h3 id="_8">回购定价的一手原文（已逐字复核）</h3>
+<p>2026-08-17直接向SEC EDGAR拉取该附件全文（3,301字节），核心句逐字如下：</p>
+<blockquote>
+<p>"…a proposal by Ant Group to repurchase from all of its shareholders <strong>up to 7.6% of its equity interest at a price that represents a valuation of Ant Group of approximately RMB567.1 billion (approximately US$78.48 billion*)</strong>. We understand that the repurchased shares will be transferred into Ant Group's employee incentive plans. Alibaba Group is considering whether or not to participate in the proposed share repurchase."</p>
+<p>"*The translation of Renminbi to U.S. dollars was made at RMB7.2258 to US$1, the Central Parity Rate published by China Foreign Exchange Trade System &amp; National Interbank Funding Center of the People's Bank of China on June 30, 2023."</p>
+</blockquote>
+<p>来源：https://www.sec.gov/Archives/edgar/data/1577552/000110465923079258/tm2320934d1_ex99-1.htm
+（注：SEC对无User-Agent的请求返回403，抓取时需声明身份。）</p>
+<p><strong>复核后新增的四点</strong>：</p>
+<ol>
+<li>文件落款日为<strong>2023年7月9日</strong> ，早于股东会决议日2023年7月23日。即5671亿元是<strong>提案阶段的定价</strong> ，不是决议后或执行后的成交价。</li>
+<li>原文措辞是"at a price that represents a valuation of…"，即<strong>由回购单价倒推出的整体估值</strong> ，属阿里的换算表述，蚂蚁本身从未发布过估值公告。</li>
+<li>该文写"Alibaba Group is considering whether or not to participate"（尚在考虑）；阿里最终未参与，这一结论出自后续20-F的"We did not participate in such share repurchase"。<strong>两份文件时点不同，不可混引</strong> 。</li>
+<li>美元数应为<strong>784.8亿美元</strong> ，由5671亿÷7.2258得出，汇率锚定2023-06-30央行中间价。任何按当期汇率重算美元值的做法都会偏离原文口径。</li>
+</ol>
+<p>来源：https://www.sec.gov/Archives/edgar/data/1577552/000119312526231755/baba-20260331.htm （FY2026 20-F，2026-05-20报送）；https://www.sec.gov/Archives/edgar/data/1577552/000095017024063767/baba-20240331.htm （FY2024 20-F）</p>
+<p><strong>7.6%与7%不可互换</strong> ：前者是授权上限，后者是实际执行；两者基数均为蚂蚁总股权，不是阿里持股33%的比例。</p>
+<h3 id="20242026">2024—2026年是否有第二次回购</h3>
+<p>阿里FY2026 20-F载："During the years ended March 31, 2024, 2025 and 2026, there was no material change in the equity interest held by the employee incentive plans of Ant Group."（【单一来源】）</p>
+<p><strong>推理强度必须下调</strong> 。这句话只能支撑"阿里一手披露中查不到第二次规模化回购"，属"未见披露"而非"已证否"，理由有三：（一）阿里FY2024财年（2023-04至2024-03）本身就包含那次7%回购，字面读会自相矛盾，应表述为"该笔划入之后无重大变化"；（二）该句只覆盖"员工激励计划持有的股权比例"一个指标，不覆盖回购后注销/作库存股、由君瀚/君澳等股东层面实施、以及"回购老份额+重新授予"的池内对冲循环；（三）"material"是阿里按33%权益法做的重要性判断，不等于零。</p>
+<h3 id="a1">蚂蚁国际赴港：截至时点无A1记录（【已证实】）</h3>
+<p>核查员从港交所前端脚本 app_common.js 反解出JSON数据端点规则，下载并解析了40个数据集（Active仅申请版本/Active申请版本+PHIP/Inactive/Listed/Returned × 主板+GEM × 中英文，加2023—2026年度表），合计<strong>12,432条记录</strong> ，全部数据生成时点 genDate=1786788010001，即<strong>2026-08-15 10:00:10 UTC</strong> 。</p>
+<ul>
+<li>检索 Ant International / 蚂蚁国际 / 螞蟻國際：<strong>零命中</strong></li>
+<li>蚂蚁系唯一记录：Ant Group Co., Ltd.（螞蟻科技集團股份有限公司），编号102484，申请版本首次提交2020-08-25、PHIP首次提交2020-10-21，状态码 s="LP"（按港交所前端 replaceStatusForInapp() 定义即 Lapsed／失效），归入 Inactive</li>
+<li>时效性最关键的一点：Active表与2026年度表的 uDate 已到 2026-08-14，即数据刷新到昨日，因此"截至2026-08-15无A1"在时点上扎实</li>
+</ul>
+<p>独立第二来源（机构互不相同、非同稿转载）：Reuters（2026-06-10）"Ant International aims to raise $1 billion in private funding round"、Bloomberg（2026-06-10）、Caixin Global（2026-07-21）"Ant International Bags $1.2 Billion <strong>Ahead of Potential Hong Kong IPO</strong>"、Nikkei Asia（2026-07-21）。媒体口径截至2026-07-30仍称 potential IPO，与披露易一手数据互相印证。</p>
+<p><strong>三个使用边界</strong>：（一）披露易只收录已公开的A1与PHIP，不覆盖保密提交、预沟通阶段、介绍上市与De-SPAC部分环节，"无记录"只能推出"未公开递交A1"，<strong>不能推出蚂蚁国际没有推进港股上市</strong> ——路透/彭博/财新报道其正在做上市前私募融资；（二）若最终以另一名称（如开曼控股平台名）递表，按名称检索会漏；（三）LP=失效是程序性状态（A1递交后6个月内未上市自动失效），<strong>不等于被拒绝（RJ）或被发回（RN）</strong> ，叙事上不要写成"被港交所拒绝"。</p>
+<p>另：阿里FY2026 20-F全文<strong>0次</strong> 提及"Ant International"。</p>
+<hr />
+<h2 id="_9">三、支付份额与信贷全量口径：份额侧全线落空，信贷侧拿到真数</h2>
+<h3 id="_10">结论</h3>
+<p><strong>支付份额一侧本轮完全落空</strong> ——网上流传的所有具体百分比无一可核验，且互相矛盾，全部不予采信（见第五节）。真正拿到硬数字的是三块：央行行业总量口径、蚂蚁消金单体财务、以及一条媒体反推的支付宝交易笔数下限。</p>
+<h3 id="31">3.1 央行行业总量（【单一来源】，一手源完整可复现）</h3>
+<p>据央行《2026年第一季度支付体系运行总体情况》（2026-05-15发布）：</p>
+<ul>
+<li><strong>非银行支付机构处理网络支付业务：3,048.70亿笔，金额84.79万亿元</strong></li>
+<li>银行处理电子支付业务：778.94亿笔，金额1,000.45万亿元</li>
+<li>其中网上支付181.79亿笔，金额816.69万亿元</li>
+<li>其中移动支付561.54亿笔，金额167.15万亿元</li>
+<li>网联清算平台处理2,985.91亿笔，金额149.34万亿元</li>
+</ul>
+<p>来源：https://www.pbc.gov.cn/zhifujiesuansi/128525/128545/128643/2026051517583881711/2026051517575586652.pdf</p>
+<p>对全文grep"支付宝|财付通|微信|市场份额|份额"：<strong>零命中</strong> 。央行只披露全行业合计，不按机构拆分。</p>
+<p>口径定义（脚注7）："非银行支付机构处理网络支付业务量包含支付机构发起的涉及银行账户的网络支付业务量，以及支付账户的网络支付业务量。"
+银行侧定义（脚注6）：移动支付指"客户使用手机等移动设备通过银行结算账户发起的业务笔数和金额"。</p>
+<p><strong>四条不可越界的使用规则</strong>：</p>
+<ol>
+<li><strong>不能用来推算支付宝或蚂蚁的份额</strong> 。这是行业分母的规模参照，不能当分母去算蚂蚁的分子。</li>
+<li><strong>银行侧与非银侧不可相加、不可直接比较</strong> 。前者是"设备+银行结算账户"口径，后者是"机构+渠道"口径且含不经银行账户的支付账户内部记账。真正对等的银行侧口径是电子支付合计778.94亿笔/1,000.45万亿元，而非单取移动支付一条。单笔均值：银行移动支付约2,976元/笔，非银网络支付约278元/笔，相差约10.7倍，成因是业务结构差异（银行侧含大额转账与对公划转），而非口径矛盾。</li>
+<li><strong>网联数据不能当作非银网络支付的金额子项</strong> 。网联金额149.34万亿元反而大于非银总额84.79万亿元，因清算侧存在轧差前处理量与多腿计量，相除会得出荒谬结果。</li>
+<li><strong>存在统计断点</strong>：2023年1月起实施修订后的《非银行支付机构支付业务数据统计口径（试行）》，转账业务统一纳入统计并对机构间合作业务去重，2023年前后不可跨期直接比较。</li>
+</ol>
+<h3 id="32">3.2 支付宝交易笔数下限（【单一来源】，且为二手媒体+推算，最弱的一条）</h3>
+<p>据"支付之家"2026-02-03报道（网易号转载，https://m.163.com/dy/article/KKQ8QU8L0519BND1.html ），支付宝支付科技有限公司《关于2025年客户投诉及风险事件处理的公告》披露：</p>
+<ul>
+<li>2025年交易类客户投诉事件<strong>29,336件</strong> ，涉及交易笔数占比<strong>小于千万分之一</strong></li>
+<li>资金损失类风险事件513件（2024年为779件）</li>
+</ul>
+<p>媒体据此反推：29,336 × 10⁷ = <strong>2,933.6亿笔</strong> 为支付宝2025年交易总笔数下限。</p>
+<p><strong>四层折扣必须同时标注</strong>：（一）这是从阈值型表述反推的下限，非披露值；（二）反推假设"1件投诉=1笔交易"，若一件投诉牵涉多笔，真实下限更高，故2,933.6亿是"下限的下限"；（三）原文是严格不等式"小于"，只能说"严格大于约2,933.6亿笔"，不能说"约等于"；（四）口径限于持牌主体支付宝支付科技有限公司的<strong>支付交易笔数</strong> ，不等于蚂蚁集团整体业务量、不等于交易金额（TPV）、不含支付宝App内理财与信贷交易。支付宝官网公告原文本轮未取得，信源为"支付之家"单家（网易号与腾讯企鹅号为同稿转载）。</p>
+<p>一处存疑未解：搜索摘要中出现搜狐2025-03-28一篇"电诉宝"稿提到"支付宝交易类客户投诉事件29,185件"，而本方法反推的2024年基数应为约28,906件，相差279件，无法确认可比，仅作存疑标注。</p>
+<h3 id="33">3.3 蚂蚁消费金融：本轮质量最高的一组数据（【已证实】）</h3>
+<p>重庆蚂蚁消费金融有限公司2025年年报：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>科目</th>
+<th>2025年</th>
+<th>2024年</th>
+<th>变动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>资产总额（期末）</td>
+<td>3,122.90亿元</td>
+<td>约3,137.5亿元</td>
+<td>−0.5%</td>
+</tr>
+<tr>
+<td>负债总额（期末）</td>
+<td>2,837.83亿元</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>所有者权益（期末）</td>
+<td>285.07亿元</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>营业收入（全年）</td>
+<td>215.60亿元</td>
+<td>152.13亿元</td>
+<td><strong>+41.7%</strong></td>
+</tr>
+<tr>
+<td>净利润（全年）</td>
+<td>31.11亿元</td>
+<td>30.51亿元</td>
+<td><strong>+2.0%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：中证网 https://www.cs.com.cn/yh/04/2026/04/20/detail_2026042010005278.html （2026-04-20）
+独立第二来源：证券时报·人民财讯（stcn.com，2026-04-20，补充披露所有者权益285.0亿元）、证券日报网（zqrb.cn，2026-04-20）、网易财经（2026-04-23），行文各异非同稿转载。</p>
+<p>内部勾稽自洽：3,122.90 − 2,837.83 = 285.07亿元。</p>
+<p><strong>这组数据最重要的解读是"缩表增利、但利润几乎没涨"</strong> ：资产微降0.5%，营收猛增41.7%，净利润只增2.0%。原报道"两大核心指标均实现同比增长"的表述容易误导——两者增速相差近40个百分点，指向拨备计提或成本端的显著加压。</p>
+<p><strong>不良率：年报未披露具体数字</strong> ，原文仅有定性表述"报告期内公司不良率保持在行业良好水平"。任何具体不良率百分比都不能挂在这份年报名下。</p>
+<p><strong>主体口径警告（最容易被误用的一点）</strong>：3,122.90亿元是蚂蚁消金这一持牌法人主体的<strong>单体报表</strong> ，不等于蚂蚁集团整体消费信贷体量——花呗/借呗中通过助贷、联合贷落在合作银行表内的部分<strong>不计入</strong> 此数。用它衡量蚂蚁消费信贷规模会严重低估。</p>
+<h3 id="34-2025">3.4 蚂蚁消金2025年上半年（【单一来源】）</h3>
+<p>据参股股东传化智联（002010.SZ）2025年半年报披露：</p>
+<ul>
+<li>2025年上半年营业收入100.41亿元，同比+67.77%</li>
+<li>净利润14.60亿元，同比+57.84%</li>
+<li>截至2025年6月末资产总额3,064.70亿元</li>
+</ul>
+<p>来源：新浪财经 https://finance.sina.com.cn/jjxw/2026-03-20/doc-inhrrvns3912391.shtml （2026-03-20）</p>
+<p>内部一致性可自洽：100.41/1.6777≈59.85亿元、14.60/1.5784≈9.25亿元，与市场此前报道的2024年上半年基数吻合，说明同比基数是同期而非全年。</p>
+<p><strong>四条限定</strong>：属参股股东对参股公司的披露，通常未经审计；为单体口径；100.41亿/14.60亿是上半年当期流量，3,064.70亿是6月末时点存量，不可混用或年化外推；高增速有2022—2024年增资扩表的低基数因素。</p>
+<p><strong>注意与全年数的张力</strong>：上半年净利14.60亿，全年31.11亿，下半年16.51亿——利润节奏尚属平稳；但上半年营收100.41亿，全年215.60亿，下半年115.19亿。上半年同比+67.77%而全年同比+41.7%，说明下半年营收增速已明显放缓。</p>
+<h3 id="35">3.5 本轮拿到但<strong>无可引用原文</strong> 的信贷线索（按未核验处理）</h3>
+<p>以下三项在核查过程中出现，但因银登中心官网全程无法访问、转让公告付费墙、cn-abs.com为纯前端SPA，<strong>均未取得原始文件，不得作为可引用数据</strong> ：</p>
+<ul>
+<li>新世纪评级2026年上半年消费贷ABS专题：所谓"蚂蚁消金系列"占消费贷ABN发行<strong>52.86%</strong></li>
+<li>2026年前5期个人不良贷款批量转让合计<strong>64.8亿元／171万户</strong></li>
+<li>折扣率参照2025年可比期数约<strong>8.4%—10.6%</strong> （2025年第5期约8.4%、第8期10.58%）</li>
+<li>资本充足率12.15%/11.66%/11.57%、杠杆率8.94%/8.65%/8.32%（新浪财经转述蚂蚁消金《资本信息披露报告》，未取得PDF）</li>
+</ul>
+<hr />
+<h2 id="ai">四、AI投入产出：模型侧数据极密，应用侧与投入侧完全空白</h2>
+<h3 id="_11">结论</h3>
+<p>蚂蚁AI呈现极端的<strong>披露不对称</strong> ：模型侧（百灵Ling/Ring开源矩阵）有大量可逐字核验的一手技术数据；应用侧（AQ/支小宝/蚂蚁财富）的用户与收入口径几乎全部无法从一手渠道验证；<strong>资本开支、算力采购、研发费用、研发人数、人事变动本轮完全无法追溯</strong> 。</p>
+<p>必须先说清一件事：<strong>模型规格不是投入强度指标</strong> 。参数量、训练环境数、语料token数是训练配方与工程披露，不能与财报口径的资本开支或研发费用混排为"AI投入"。本节所有数字都只能证明"蚂蚁在做什么"，不能证明"蚂蚁花了多少钱"。</p>
+<h3 id="41-ling-30-flash">4.1 当前旗舰：Ling-3.0-flash（【已证实】）</h3>
+<p>HuggingFace仓库 inclusionAI/Ling-3.0-flash，createdAt=2026-08-02T16:14:41Z，lastModified=2026-08-06T15:09:42Z：</p>
+<blockquote>
+<p>"Operating with <strong>124B</strong> total and <strong>5.1B</strong> active parameters (~12.4% and ~8.1% of our previous 1T-class flagship Ring-2.6-1T), Ling-3.0-flash matches or outperforms its predecessor across key benchmarks."</p>
+</blockquote>
+<p>来源：https://huggingface.co/inclusionAI/Ling-3.0-flash/raw/main/README.md
+独立第二来源：OpenRouter（第三方模型路由平台）API 描述 ling-3.0-flash 为"124B-parameter Mixture-of-Experts (MoE) model, with approximately 5.1B parameters activated per token"，并独立佐证 ring-2.6-1t 为"1T-parameter-scale thinking model with 63B active parameters"。</p>
+<p><strong>百分比分母不同，不可合并</strong> ：12.4% = 124B/1T（总参对总参），8.1% = 5.1B/63B（激活对激活）。不要写成"只有前代的8%"。</p>
+<p>补充：HF safetensors 实测张量参数 127,486,405,600（约127.5B），124B为官方标称口径。</p>
+<p><strong>这条是本节最有商业含义的技术事实</strong>：蚂蚁用12.4%的参数量做到"持平或超过"1T级前代，若属实，意味着单位推理成本大幅下降。但"matches or outperforms across key benchmarks"是<strong>厂商自评</strong> ，未经第三方独立评测（Artificial Analysis / LMArena）验证。</p>
+<p><strong>架构细节</strong>（【单一来源】，全部源自同一官方仓库）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>架构</td>
+<td>Hybrid-linear MoE</td>
+</tr>
+<tr>
+<td>层数构成</td>
+<td>35层KDA + 7层Gated MLA（5:1堆叠），共42层，前2层为dense</td>
+</tr>
+<tr>
+<td>专家</td>
+<td>512个路由专家 + 1个共享专家，每token激活8个路由专家</td>
+</tr>
+<tr>
+<td>上下文训练课程</td>
+<td>8K → 32K → 256K（config.json max_position_embeddings=262144）</td>
+</tr>
+</tbody>
+</table></div>
+<p>config.json交叉自洽：num_hidden_layers=42（=35+7）、num_experts=512、num_experts_per_tok=8、first_k_dense_replace=2，并含 kda_lower_bound / kda_safe_gate / mtp_use_kda 等KDA专有字段。</p>
+<p><strong>训练与推理工程披露</strong>（【单一来源】）：</p>
+<blockquote>
+<p>"the model incorporates <strong>10,000+ interactive training environments</strong> to achieve end-to-end closed-loop execution across Coding, General, and Deep Research Agent tasks. It natively integrates the SGLang HiCache + Mooncake hierarchical caching architecture (featuring physical dual-pools and a cluster-shared L3 cache), ... reducing Time to First Token (TTFT) by <strong>60% to over 80%</strong> in long-input scenarios."</p>
+</blockquote>
+<p><strong>必须删掉的定性</strong>：原论断称这是"蚂蚁少数公开的AI投入强度量化指标之一"——<strong>这句要删</strong> 。"1万+"是下限表述（原文10,000+），未披露自建/开源构成与去重口径，不能换算成人力、算力或资金。TTFT降幅60%—80%+ 严格限定在"长输入 + 长程多轮交互且分层缓存命中"，是推理服务侧的缓存复用收益，不是模型架构通用提速，也不是端到端时延或吞吐改善，未公开硬件、并发与测试方法，不可用于成本测算。</p>
+<h3 id="42-ling-30-tiny">4.2 端侧小模型：Ling-3.0-tiny（【已证实】）</h3>
+<p>HuggingFace createdAt=2026-08-10T02:44:06Z，MIT协议：</p>
+<ul>
+<li>总参数 <strong>7.9B</strong> （safetensors实测7,893,392,800），每token激活 <strong>1.3B</strong> （128个路由专家中激活8个+1个共享专家）</li>
+<li>FP8下：NVIDIA DGX Spark 约 <strong>100—105 tokens/s</strong> ；M4 Pro MacBook 约 <strong>86—90 tokens/s</strong></li>
+<li>8K上下文峰值内存约 <strong>8.34 GiB</strong></li>
+</ul>
+<p>来源：https://huggingface.co/inclusionAI/Ling-3.0-tiny/raw/main/README.md
+独立第二来源：第三方模型追踪库 startakovsky/llm-model-tracker（标注"Org: inclusionAI (Ant Group)"、Release date 2026-08-10）；sgl-project/sglang（LMSYS推理框架）官方cookbook已收录该模型，含H200实测benchmark（FP8单并发TPOT 2.82ms、GSM8K 94.69%）；BuilderPulse独立日报2026-08-13。</p>
+<p><strong>速度与显存三个数字未被第三方复现，属厂商自测</strong> ，且是单流（batch=1）本地解码口径，与服务端并发吞吐完全不可比。8.34 GiB是8K上下文占用，不是权重体积（BF16权重约15.8GB），config中max_position_embeddings=131072，上下文拉长后KV cache会显著上升，不可外推。<strong>切勿与社区实测的"Ling-3.0-flash INT4在DGX Spark上38.7 tok/s"并列</strong> ——那是不同模型、不同量化。</p>
+<p>该模型发布仅5天、HF月下载约4.8k、likes 247，属早期发布，不宜据此推导端侧战略成效。</p>
+<h3 id="43-ring-26-1t">4.3 万亿参数旗舰：Ring-2.6-1T（【单一来源】）</h3>
+<p>HuggingFace createdAt=2026-05-14T08:10:02Z，lastModified=2026-06-17：</p>
+<blockquote>
+<p>"Introducing Ring-2.6-1T: a trillion-parameter flagship reasoning model designed for real-world complex task scenarios... Leveraging an Async RL architecture combined with the IcePop algorithm"</p>
+</blockquote>
+<p>架构：BailingMoeV2_5ForCausalLM，safetensors约1.025T总参数，256专家/每token激活8个，Linear层FP8动态量化，MIT许可。官方定位覆盖 agent工作流、工程开发、科研分析、复杂业务系统、企业自动化流程。</p>
+<p><strong>一处必须修正的措辞</strong> ：不能称"上一代"。核查员拉取HF inclusionAI全量Ring模型按创建时间倒序，Ring-2.6-1T（2026-05-14）是截至2026-08-15<strong>最新的Ring模型</strong> ，前序为Ring-2.5-1T（2026-02-10）、Ring-1T（2025-10-10），之后无新版本。同期上线的Ling-3.0-flash/tiny属Ling主线且无1T级旗舰。正确表述是"当前旗舰"。</p>
+<p>"生产级""企业自动化"是官方自我定位与营销口径，<strong>禁止转述为"已在企业生产环境规模化落地"</strong> 。</p>
+<h3 id="44-ling-25-1t">4.4 训练算力的唯一代理指标：Ling-2.5-1T语料规模（【单一来源】）</h3>
+<blockquote>
+<p>"Ling-2.5-1T features 1T total parameters (with 63B active parameters). Its pre-training corpus has expanded from <strong>20T to 29T tokens</strong> compared to the previous generation... processing context lengths of up to 1M tokens."</p>
+</blockquote>
+<p>来源：https://raw.githubusercontent.com/inclusionAI/Ling-V2.5/main/README.md （对应HF createdAt=2026-02-14）</p>
+<p><strong>三处口径修正</strong> ：（一）29T是<strong>预训练语料规模</strong> ，不等于训练实际消耗token数，更不等于算力；（二）20T基线是上一代Ling-1T自述的"20T+"（下限表述），所以"扩了45%"是上界口径，不宜作精确增幅引用；（三）1M上下文是YaRN外推上限，随权重发布的config.json中 max_position_embeddings <strong>仅131072（128K）</strong> ，README自述为"256K → 1M (YaRN)"，<strong>必须带"经YaRN外推"限定</strong> 。</p>
+<p>若强行落到算力量级，按 C≈6·N_active·D：6×63e9×29e12 ≈ <strong>1.1×10²⁵ FLOPs</strong> 。<strong>这只是数量级参考</strong> ，假设激活参数全程恒定为63B，而MoE的dense冷启动、多阶段课程与MTP头会让偏差达数十个百分点。这是本轮能拿到的、最接近"训练投入"的唯一代理指标——<strong>但它仍然不是钱</strong> 。</p>
+<h3 id="45-app-store">4.5 应用侧：本轮最有信息量的发现来自App Store元数据</h3>
+<p>以下两条来自核查者对Apple App Store元数据的直接观察，<strong>未走双源核验流程，按线索处理</strong> ：</p>
+<ul>
+<li><strong>支小宝独立App已停更约17个月</strong></li>
+<li><strong>AQ在中国区商店的挂牌名已变更为"蚂蚁阿福"</strong></li>
+<li>可取得的仅有评分条数：AQ/蚂蚁阿福 49,762条、支小宝 284条——<strong>这是评分数，不是用户数</strong></li>
+</ul>
+<p>AQ的DAU、MAU、注册用户、付费用户、收入：官方渠道<strong>零披露</strong> 。支小宝的用户规模与收入：<strong>零一手数据</strong> 。蚂蚁财富AI（蚂小财）的用户规模、AUM影响、是否收费：App描述只讲功能不给数字。</p>
+<p>支小宝停更17个月这一条，若属实，指向蚂蚁AI应用侧的产品重心已从独立App转向支付宝主App内嵌与AQ品牌统一——但这是推论，不是证据。</p>
+<hr />
+<h2 id="_12">五、不可用清单：为什么这些数字本轮不能写进材料</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>流传数据</th>
+<th>出处</th>
+<th>不可用的理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>支付宝49.1%／微信支付36.7%（2025年）</td>
+<td>雪球用户帖 xueqiu.com/4631817224/342318700</td>
+<td>四组数字互不相容，无一能追溯到易观/艾瑞原始报告</td>
+</tr>
+<tr>
+<td>微信支付59.7%／支付宝36.2%（2025Q1）</td>
+<td>雪球 xueqiu.com/3384330352/342584350</td>
+<td>同上，且与前一条方向完全相反</td>
+</tr>
+<tr>
+<td>支付宝54%／微信38%</td>
+<td>雪球 xueqiu.com/8315851674/333217078</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>艾瑞2025年末：支付宝45.2%／微信41.3%</td>
+<td>雪球 xueqiu.com/9216592857/394759264</td>
+<td>同上，标称艾瑞但无法追溯原报告</td>
+</tr>
+<tr>
+<td>蚂蚁消金2025年6月末不良率1.65%</td>
+<td>自媒体《31家消金公司的底色》（腾讯新闻2026-03-04）</td>
+<td>该文把3,064.7亿元（实为资产总额）写成"贷款余额"，内部数据自相矛盾</td>
+</tr>
+<tr>
+<td>蚂蚁消金2025年末贷款余额3,100亿元</td>
+<td>同上</td>
+<td>同上，同源自相矛盾</td>
+</tr>
+<tr>
+<td>IPO时约2.35万亿元估值</td>
+<td>媒体转述</td>
+<td>港交所披露易2020年文件已归Inactive不可访问；上交所688688发行公告未定位。建议用发行价68.80元/股×发行后总股本自行核算</td>
+</tr>
+<tr>
+<td>Ling-3.0-flash的SWE-Bench Pro 56.6、MathArena AIME 2026 93.2等分数</td>
+<td>WebFetch渲染版模型卡</td>
+<td>raw README中所有benchmark以图片形式（alipay.com托管png）呈现，正文无机器可读分数表，无法逐字核实</td>
+</tr>
+<tr>
+<td>支付宝"服务全球超10亿用户"</td>
+<td>2019年支付宝可持续发展报告</td>
+<td>数据已过时七年，不可作为最新数字</td>
+</tr>
+<tr>
+<td>蚂蚁消金系列占消费贷ABN发行52.86%</td>
+<td>新世纪评级2026H1专题（转述）</td>
+<td>cn-abs.com为纯前端SPA无数据，评级报告原文未取得</td>
+</tr>
+<tr>
+<td>2026年前5期不良转让64.8亿元/171万户、折扣率8.4%—10.6%</td>
+<td>媒体转述银登公告</td>
+<td>银登中心官网全程无法访问，招标站点正文付费墙，原始公告未取得</td>
+</tr>
+<tr>
+<td>蚂蚁消金资本充足率12.15%/11.66%/11.57%、杠杆率8.94%/8.65%/8.32%</td>
+<td>新浪财经转述</td>
+<td>未取得《资本信息披露报告》PDF逐字核对</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>说明</strong>：本轮无一条被判定为 REFUTED（证伪）。上表全部属于"无法追溯"或"来源互相矛盾"，性质是不可用而非已被推翻。</p>
+<hr />
+<h2 id="_13">六、仍未查清的问题：查了什么渠道，返回了什么</h2>
+<p>这一节的价值在于：<strong>蚂蚁的信息不可得性本身，就是一个需要计入折价的估值输入。</strong></p>
+<h3 id="61">6.1 金控牌照线</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>渠道</th>
+<th>尝试内容</th>
+<th>返回结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>金融监管总局行政许可库</td>
+<td>itemId=930"批复"库，共1,407,351条</td>
+<td>接口不支持关键词过滤（试过 &amp;docTitle= 与 &amp;keyword=，返回与不加参数完全一致）；全文检索端点 /SelectDocByTitle、/SelectDocByTitleOrContent、/searchweb/outerSearch <strong>全部404</strong></td>
+</tr>
+<tr>
+<td>金融监管总局新闻公告</td>
+<td>itemId=925，共1,703条，逐页抓86页</td>
+<td>成功800条（2012-05-16至2026-07-24），<strong>46页被限流失败</strong> ；已取回的800条标题中无"金融控股/蚂蚁/财付通/腾讯/金控"字样，但缺失约53%样本，只能作弱证据</td>
+</tr>
+<tr>
+<td>总局是否接续维护金控台账</td>
+<td>逐个试探 itemId 861/925/926/928/929/930/4109/4113/4114/4115/4116</td>
+<td>官网导航为纯JS渲染，ItemList.html无服务端内容；<strong>只定位到政策法规、行政处罚、批复三类，未找到央行那张公示表的替代页面</strong></td>
+</tr>
+<tr>
+<td>光大集团等第4家及以后是否获批</td>
+<td>央行公示表+总局检索+媒体</td>
+<td>三条路径全断，<strong>本轮不对"现行已批金控名单"给出结论</strong></td>
+</tr>
+<tr>
+<td>蚂蚁金控申请的当前程序状态</td>
+<td>全渠道</td>
+<td>2021-04-12之后既无批准公告，也无不予受理或撤回公告，<strong>纯信息真空，不做推测</strong></td>
+</tr>
+<tr>
+<td>蚂蚁集团官网</td>
+<td>antgroup.com/news</td>
+<td>返回35KB纯JS外壳（window.injectInfo/appName:antfin），服务端无新闻列表；下载主bundle umi.6601991f.js（552KB）grep 'api'/'news'/'list' 未找到内容接口；sitemap.xml全部条目 lastmod=2021-05-25，属废弃状态</td>
+</tr>
+<tr>
+<td>财新/路透/彭博/证券时报</td>
+<td>search.caixin.com、s.stcn.com、yicai.com/search</td>
+<td>分别返回301跳转、连接失败（000）、4.5KB的JS外壳无结果数据</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="62">6.2 估值锚线</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>渠道</th>
+<th>尝试内容</th>
+<th>返回结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蚂蚁官网新闻中心</td>
+<td>antgroup.com/en/news-media/press-releases 与中文版</td>
+<td>curl HTTP 200但仅35,272字节JS单页壳，无正文；WebFetch返回空</td>
+</tr>
+<tr>
+<td>Wayback存档</td>
+<td>antgroup.com/en/news-media/press-releases* 在2023-07-06至2023-08-15区间</td>
+<td>仅3条存档明细页（epoch 1689943003000≈2023-07-21、1690784493000≈2023-07-31），抓取后正文同样为空（SPA未被渲染）</td>
+</tr>
+<tr>
+<td>阿里20-F全文grep</td>
+<td>FY2024（9,018,030字节）与FY2026（11,745,163字节）</td>
+<td>"567"在FY2024命中4次全部无关（分部间抵消−10,567、回购注销−8,567）；"7.6%"各命中1次均为授权比例句，<strong>上下文无价格</strong> 。即20-F从未披露蚂蚁回购价</td>
+</tr>
+<tr>
+<td>阿里2026年6月季度财报</td>
+<td>EDGAR阿里6-K列表（CIK 0001577552）</td>
+<td>截至2026-08-14最新6-K为阿里健康可交换债换股价调整公告，<strong>非业绩</strong> 。权益法反推的最新可查时点为蚂蚁2025年10—12月，再往后需等阿里2026年8月底的财报</td>
+</tr>
+<tr>
+<td>蚂蚁员工期权行权价</td>
+<td>阿里20-F</td>
+<td>按"届时蚂蚁公允市场价值"定价、会计上按衍生品逐期重估，<strong>不存在可公开追踪的行权价数字</strong> ；蚂蚁内部估值绝对值未在任何可及一手文件中披露</td>
+</tr>
+<tr>
+<td>搜索绕行</td>
+<td>duckduckgo/html→302；lite.duckduckgo→超时120秒；mojeek→403；html.duckduckgo经WebFetch→Socket is closed；search.brave→429；bing→结果完全跑偏（中文query返回知乎7-Zip问答，英文query返回APK结果）</td>
+<td>无法定位Reuters/SCMP/CNBC一手转载URL；对5个猜测URL做Wayback availability API校验，archived_snapshots全为空</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="63">6.3 支付与信贷线</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>渠道</th>
+<th>尝试内容</th>
+<th>返回结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>银登中心</td>
+<td>www.chinacreb.com 及 /cjy/blzcxx/index.html、/xxpl/blzr/</td>
+<td>WebFetch返回"Socket is closed"，curl返回HTTP 000（连接失败）。<strong>所有不良转让数据均为媒体转述，无原始公告PDF</strong></td>
+</tr>
+<tr>
+<td>不良转让公告原文</td>
+<td>chongqing.zhaobiao.cn、rl.zhaobiao.cn、okcis.cn、cq.bidizhaobiao.com、chinabidding.cn</td>
+<td>收录了标题，正文均需登录/付费，抓取后只有导航骨架。<strong>2026年各期起始价与折扣率未取得</strong></td>
+</tr>
+<tr>
+<td>ABS存续规模</td>
+<td>cn-abs.com</td>
+<td>纯前端SPA，首页HTML仅2.5KB无数据；/notelist.html返回2019年列表，无蚂蚁/花呗/借呗条目；/Market/DealList?keyword=花呗 返回空</td>
+</tr>
+<tr>
+<td>易观分析</td>
+<td>analysys.cn 首页、/search?keyword=支付、/article/list</td>
+<td>首页报告列表中无任何第三方支付份额报告（仅智算云、AI主题）；两个检索路径均302。网易转载的《2025中国第三方支付行业年度分析报告》正文为<strong>纯图片</strong> ，抓取后只有"打开网易新闻 查看精彩图片"</td>
+</tr>
+<tr>
+<td>艾瑞咨询</td>
+<td>iresearch.com.cn/Search.shtml?keyword=第三方支付</td>
+<td>HTTP 200但页面为"很抱歉，没有启用JavaScript, 项目无法正常工作"</td>
+</tr>
+<tr>
+<td>支付宝MAU/年活</td>
+<td>全渠道</td>
+<td>未找到2024年以后由蚂蚁或支付宝官方发布的任何MAU/年活数字</td>
+</tr>
+<tr>
+<td>蚂蚁消金2026年跟踪评级</td>
+<td>360搜索多组关键词</td>
+<td>未检索到联合资信或中诚信国际的蚂蚁消金评级报告，只返回同业（苏银凯基、招联）。蚂蚁消金2025年8月首发金融债（首期20亿元3年期，获批150亿元额度），理论上应有主体评级报告。<strong>建议直接查中国货币网/交易商协会债券信息披露页面</strong></td>
+</tr>
+<tr>
+<td>助贷/联合贷银行表内规模</td>
+<td>全渠道</td>
+<td><strong>完全未取得任何2025或2026年可核验数字</strong> ，检索只返回2020—2021年旧文。2026年监管已要求"助贷业务规模及占比不得超过2025年12月末水平"，但该基数本身未公开披露</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="64-ai">6.4 AI线</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>渠道</th>
+<th>尝试内容</th>
+<th>返回结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蚂蚁资本开支/算力采购/研发费用/研发人数</td>
+<td>官网+阿里财报</td>
+<td><strong>零一手数字</strong> 。蚂蚁为非上市公司无强制披露义务；阿里财报只按权益法披露投资收益，不拆蚂蚁资本开支</td>
+</tr>
+<tr>
+<td>蚂蚁AI组织架构与关键人事变动</td>
+<td>bing.com/search、html.duckduckgo.com、curl duckduckgo</td>
+<td>分别返回完全不相关的Windows帮助类结果、Socket is closed、超时（http=000）。<strong>零一手来源，不提交任何人事claim</strong></td>
+</tr>
+<tr>
+<td>OpenRouter百灵模型实际调用量</td>
+<td>/api/frontend/stats/endpoint、/api/frontend/model-author</td>
+<td>均只返回Next.js的HTML外壳，拿不到JSON统计。<strong>只拿到定价，未拿到用量</strong></td>
+</tr>
+<tr>
+<td>ling.tbox.cn（百灵C端对话产品）</td>
+<td>WebFetch</td>
+<td>返回空内容（前端渲染页），无法核实模型列表、定价或用户数</td>
+</tr>
+<tr>
+<td>蚂蚁灵波科技（具身智能子公司）</td>
+<td>全渠道</td>
+<td>未能验证该法人主体的存在、注册资本、融资或产品进展。能抓到的只有署名"Ant Group"的UME外骨骼论文与开源仓库，<strong>论文署名单位是Ant Group而非灵波科技，二者关系无一手源可证</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_14">七、对估值的含义</h2>
+<h3 id="71">7.1 现在站得住的估值输入</h3>
+<p><strong>（一）阿里权益法确认的蚂蚁损益序列——唯一可持续追踪的盈利锚</strong></p>
+<p>这是本轮最有价值的资产。它来自阿里经审计的合并报表科目，虽属单一发行人披露，但有会计师背书、逐季更新、口径连续四年未变。可用结论：</p>
+<ul>
+<li>蚂蚁2024自然年归母净利约<strong>356—383亿元</strong></li>
+<li>蚂蚁2025自然年归母净利约<strong>142—153亿元</strong> ，同比<strong>−60%</strong></li>
+<li>2025年下半年是断崖点：Q3约11.1—11.9亿、Q4约10.6—11.4亿，较Q2的77.0—82.8亿下降约86%</li>
+<li>阿里对断崖的官方归因：新增长业务（含用户增长）与技术投入增加、部分投资公允价值下降</li>
+<li>蚂蚁2025年分红总额约93—100亿元</li>
+</ul>
+<p><strong>（二）蚂蚁消金单体财务——唯一经双源验证的持牌主体报表</strong></p>
+<p>2025年末资产3,122.90亿元、净利31.11亿元、营收215.60亿元（+41.7%）、所有者权益285.07亿元。缩表增利、营收增速远高于利润增速。</p>
+<p><strong>（三）两个时点性的否定证据</strong></p>
+<ul>
+<li>截至2026-08-15 10:00:10 UTC，港交所披露易全库12,432条记录中无蚂蚁国际A1（【已证实】）</li>
+<li>截至可查的央行公示，蚂蚁不在金控设立许可名单中（【单一来源】，且不覆盖2023年后总局口径）</li>
+</ul>
+<p><strong>（四）2023年回购定价——待复核后可升级为硬锚</strong></p>
+<p>5671亿元人民币（约784.8亿美元，汇率7.2258）出自阿里6-K附件EX-99.1，<strong>已逐字复核通过</strong> （原文见第二节末）。这是2020年以来唯一一个有一手文件支撑的交易性估值点。</p>
+<h3 id="72">7.2 现在站不住的估值输入</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>输入项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蚂蚁集团合并口径的营收、利润、资产、净资产</td>
+<td><strong>完全没有</strong> 。2020年上半年后再无公开审计财务</td>
+</tr>
+<tr>
+<td>IPO时2.35万亿元估值</td>
+<td>无法追溯到一手原文，不可作为回撤幅度的基准</td>
+</tr>
+<tr>
+<td>支付宝市场份额（任何百分比）</td>
+<td>四组流传数字互相矛盾，全部不可用</td>
+</tr>
+<tr>
+<td>支付业务的TPV与take rate</td>
+<td>央行不按机构拆分，蚂蚁不披露，<strong>零数据</strong></td>
+</tr>
+<tr>
+<td>助贷/联合贷落在银行表内的余额与出表结构</td>
+<td><strong>完全空白</strong> 。这直接决定蚂蚁信贷业务的真实体量与风险敞口</td>
+</tr>
+<tr>
+<td>蚂蚁消金不良率、拨备、拨备覆盖率（2025年）</td>
+<td>年报只有定性表述，具体数字无</td>
+</tr>
+<tr>
+<td>AI的资本开支、算力采购、研发费用、研发人数</td>
+<td><strong>零一手数字</strong></td>
+</tr>
+<tr>
+<td>AI应用（AQ/支小宝/蚂蚁财富）的用户数与收入</td>
+<td><strong>零一手数字</strong> ，只有App Store评分条数</td>
+</tr>
+<tr>
+<td>金控牌照的程序状态（受理/中止/退回/撤回）</td>
+<td>纯信息真空</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="73">7.3 为什么本备忘录不给估值区间</h3>
+<p><strong>证据不足以支撑任何形式的估值区间。</strong> 理由有三层：</p>
+<p><strong>第一层：分子不可靠。</strong> 权益法反推的142—153亿元（2025年）是估算而非披露值，且33%与35.5%两个口径就带来约7%的差异。更严重的是，这个数字在一年内从356—383亿掉到142—153亿，跌幅60%，而下半年单季已掉到11亿量级——<strong>用哪一年、哪个季度做锚，结果差几倍</strong> 。举例说明这个问题有多严重：若拿2023年7月的回购定价5671亿去对2024年利润383亿，静态市盈率约14.8倍；对2025年利润153亿，约37.1倍；对2025年下半年年化约23亿，则超过240倍。<strong>同一个价格锚，配不同年份的利润，得出的倍数跨越一个数量级</strong> ——这本身就说明单一年度利润不足以支撑估值。</p>
+<p><strong>第二层：口径本身有时间错位。</strong> 5671亿是2023年7月的定价，对应的是2022年至2023年上半年的经营状况；而利润序列最新只到蚂蚁2025年10—12月。用2023年的价格锚去乘2025年的利润，是把两个不同时点的信息强行相乘。</p>
+<p><strong>第三层：分部结构完全不可见。</strong> 蚂蚁至少有支付、信贷、理财、保险、国际、AI/技术六条线。本轮唯一能看到单体报表的只有蚂蚁消金（资产3,122.90亿、净利31.11亿），而蚂蚁消金的净利只占反推集团净利的约20%（31.11/153）——<strong>剩下80%的利润来自哪里、增速如何、监管敞口多大，完全是黑箱</strong> 。在分部结构不可见的情况下做分部加总（SOTP）估值，等于凭空编造。</p>
+<h3 id="74">7.4 要把估值算出来，最少需要补哪些数据</h3>
+<p>按优先级排序，每一条都注明可能的获取路径：</p>
+<ol>
+<li><strong>蚂蚁集团合并口径的经审计财务报表（至少利润表与资产负债表主表）</strong>。这是一切的前提。可能路径：蚂蚁若发行境内债券，需在中国货币网/交易商协会披露主体财务；蚂蚁消金2025年8月已发金融债（获批150亿元额度），母公司层面是否有类似债项值得追查。</li>
+<li><strong>助贷/联合贷落在合作银行表内的余额</strong>。可能路径：主要合作银行（中小银行为主）的年报"互联网贷款"或"合作机构"披露；监管2026年"助贷规模不超过2025年12月末水平"的执行文件。</li>
+<li><strong>金融监管总局侧的金控行政许可台账</strong>。本轮三条路径全断（接口不支持过滤、全文检索404、栏目定位失败）。可能路径：总局官网的静态公示PDF、《中国金融年鉴》、或直接以政府信息公开申请方式查询。</li>
+<li><strong>支付宝的TPV与实际费率</strong>。可能路径：付费数据库（Wind/易观千帆/艾瑞订阅）；或从蚂蚁消金以外的持牌主体（支付宝支付科技有限公司）年度报告入手——2025年那份《关于客户投诉及风险事件处理的公告》说明该主体确有年度公开披露义务，值得系统性追踪其历年公告。</li>
+<li><strong>蚂蚁消金的不良率、拨备覆盖率、拨备余额（2025年末）</strong>。可能路径：联合资信或中诚信国际的2026年跟踪评级报告（本轮未检索到，建议直接查中国货币网债券信息披露页面）；银登中心的不良转让公告原文（本轮官网完全不可访问，需换网络环境或换用银登中心公众号存档）。</li>
+<li><strong>阿里2026年6月季度财报</strong>。预计2026年8月底发布，将带来蚂蚁2026年1—3月的权益法数据——这是判断"2025年下半年断崖是一次性投入还是趋势性恶化"的<strong>最近一个检验点</strong> ，建议列为日程项。</li>
+<li><strong>蚂蚁的AI资本开支</strong>。若始终无法从一手渠道取得，退而求其次的代理指标只有语料规模（29T tokens，约1.1×10²⁵ FLOPs量级）与阿里对利润下滑的归因（"技术投入增加"）。这两条<strong>都不能换算成金额</strong> ，只能作为定性判断"投入在加码"的佐证。</li>
+</ol>
+<h3 id="75">7.5 一个不涉及数字、但对判断最重要的结论</h3>
+<p>本轮四个方向，取证难度呈现清晰的梯度：<strong>AI模型侧（开源，极密）&gt; 消金持牌主体（监管强制，有真数）&gt; 阿里权益法（间接，滞后一季）&gt; 支付份额（完全不可得）&gt; 蚂蚁集团合并财务与资本开支（零披露）</strong>。</p>
+<p>这个梯度本身就是信息：蚂蚁在<strong>技术能力上主动披露、在商业数据上系统性沉默</strong> 。对投资人的含义是——任何关于蚂蚁估值的对外材料，其数字来源要么是阿里的间接确认，要么是媒体转述，要么是持牌子公司的局部报表。<strong>在蚂蚁自身恢复完整财务披露之前，"蚂蚁估值"这个命题本质上是在给一个只能看到约20%利润来源的黑箱定价</strong> 。这一点应当直接体现为估值折价，而不是被"缺乏数据所以给中性假设"的方式抹平。</p></article><div class="wx"><img src="../files/assets/wechat-qr.png" alt="公众号复利炼丹炉二维码"><div><b>公众号「复利炼丹炉」</b><span>站上是全部成品报告；值得深研的公司和报告之外的判断与取舍，精选发在公众号。微信扫码关注。</span></div></div><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/7d9951b5b82b.html">未上市估值、风险与机会</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/3d85fa29836b.html">三条战线的攻守——微信支付、出海、AI 转型</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/a468cd4a68b9.html">监管重塑——从外滩演讲到新蚂蚁</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/e59d4c5f961c.html">六大引擎拆解——蚂蚁的钱到底怎么赚的</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/12ab0df78391.html">从 2 万亿到整改后的新蚂蚁</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/016e51db8855.html">《看懂蚂蚁集团》系列说明</a><div class="meta">2026-05-22 · 导读</div></li><li><a href="../r/09ea43381939.html">蚂蚁集团（Ant Group）5年估值预测（2026-2031）</a><div class="meta">2026-05-15 · 估值仓位</div></li><li><a href="../r/c6e235a320a1.html">蚂蚁集团 10 年（2026→2036）净利润预测</a><div class="meta">2026-05-04 · 研究</div></li><li><a href="../r/97568c849da0.html">蚂蚁集团&quot;上调员工期权价值&quot;传闻 - 三轮深度事实核查</a><div class="meta">2026-05-03 · 研究</div></li><li><a href="../r/e08fa18aa245.html">蚂蚁集团（Ant Group）投资研究报告</a><div class="meta">2026-04-10 · 研究</div></li><li><a href="../r/f1c26f076958.html">蚂蚁集团各业务线未来3-5年发展展望</a><div class="meta">2026-04-10 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">关于本备忘录的置信度标注约定</a></li>
+<li><a href="#_2">一、金控牌照：官方口径里的信息真空，不是"已解决"</a><ul>
+<li><a href="#_3">结论</a></li>
+<li><a href="#_4">支撑证据</a></li>
+<li><a href="#_5">本节最重要的方法论提醒</a></li>
+</ul>
+</li>
+<li><a href="#_6">二、估值锚：唯一硬锚是阿里权益法，媒体口径的两个大数需要区别对待</a><ul>
+<li><a href="#_7">结论</a></li>
+<li><a href="#a">锚点A：权益法反推（最硬）</a></li>
+<li><a href="#b">锚点B：季度斜率（最可证伪的拐点信号）</a></li>
+<li><a href="#c">锚点C：现金回报</a></li>
+<li><a href="#d">锚点D：期权激励侧的估值痕迹（间接但硬）</a></li>
+<li><a href="#e">锚点E：初始计价</a></li>
+<li><a href="#2023">2023年回购的完整事实链（【单一来源】，全部源自阿里单一发行人申报）</a></li>
+<li><a href="#_8">回购定价的一手原文（已逐字复核）</a></li>
+<li><a href="#20242026">2024—2026年是否有第二次回购</a></li>
+<li><a href="#a1">蚂蚁国际赴港：截至时点无A1记录（【已证实】）</a></li>
+</ul>
+</li>
+<li><a href="#_9">三、支付份额与信贷全量口径：份额侧全线落空，信贷侧拿到真数</a><ul>
+<li><a href="#_10">结论</a></li>
+<li><a href="#31">3.1 央行行业总量（【单一来源】，一手源完整可复现）</a></li>
+<li><a href="#32">3.2 支付宝交易笔数下限（【单一来源】，且为二手媒体+推算，最弱的一条）</a></li>
+<li><a href="#33">3.3 蚂蚁消费金融：本轮质量最高的一组数据（【已证实】）</a></li>
+<li><a href="#34-2025">3.4 蚂蚁消金2025年上半年（【单一来源】）</a></li>
+<li><a href="#35">3.5 本轮拿到但无可引用原文 的信贷线索（按未核验处理）</a></li>
+</ul>
+</li>
+<li><a href="#ai">四、AI投入产出：模型侧数据极密，应用侧与投入侧完全空白</a><ul>
+<li><a href="#_11">结论</a></li>
+<li><a href="#41-ling-30-flash">4.1 当前旗舰：Ling-3.0-flash（【已证实】）</a></li>
+<li><a href="#42-ling-30-tiny">4.2 端侧小模型：Ling-3.0-tiny（【已证实】）</a></li>
+<li><a href="#43-ring-26-1t">4.3 万亿参数旗舰：Ring-2.6-1T（【单一来源】）</a></li>
+<li><a href="#44-ling-25-1t">4.4 训练算力的唯一代理指标：Ling-2.5-1T语料规模（【单一来源】）</a></li>
+<li><a href="#45-app-store">4.5 应用侧：本轮最有信息量的发现来自App Store元数据</a></li>
+</ul>
+</li>
+<li><a href="#_12">五、不可用清单：为什么这些数字本轮不能写进材料</a></li>
+<li><a href="#_13">六、仍未查清的问题：查了什么渠道，返回了什么</a><ul>
+<li><a href="#61">6.1 金控牌照线</a></li>
+<li><a href="#62">6.2 估值锚线</a></li>
+<li><a href="#63">6.3 支付与信贷线</a></li>
+<li><a href="#64-ai">6.4 AI线</a></li>
+</ul>
+</li>
+<li><a href="#_14">七、对估值的含义</a><ul>
+<li><a href="#71">7.1 现在站得住的估值输入</a></li>
+<li><a href="#72">7.2 现在站不住的估值输入</a></li>
+<li><a href="#73">7.3 为什么本备忘录不给估值区间</a></li>
+<li><a href="#74">7.4 要把估值算出来，最少需要补哪些数据</a></li>
+<li><a href="#75">7.5 一个不涉及数字、但对判断最重要的结论</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 08:05 UTC</footer></body></html>
