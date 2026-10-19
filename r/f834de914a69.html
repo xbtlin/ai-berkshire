@@ -1,0 +1,171 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>拼多多研究笔记 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script></head><body data-root="../" data-page="r/f834de914a69.html" data-title="拼多多研究笔记"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/拼多多/index.html">拼多多</a></div><div class="layout"><div><h1>拼多多研究笔记</h1><div class="meta"><a href="../companies/拼多多/index.html">拼多多</a> ｜ 2026-04-12 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/%E6%8B%BC%E5%A4%9A%E5%A4%9A-%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-20260412.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#pdddisneycostco">一、段永平的类比：PDD像Disney+Costco</a></li>
+<li><a href="#pdd">二、PDD的差异化服务（事实层面）</a></li>
+<li><a href="#_1">三、竞争对手模仿情况</a></li>
+<li><a href="#_2">四、淘特为什么失败</a></li>
+<li><a href="#pdd_1">五、PDD护城河的真实情况</a></li>
+<li><a href="#temu">六、Temu现状</a></li>
+<li><a href="#_3">七、千亿扶持与新拼姆</a></li>
+<li><a href="#vs">八、新拼姆 vs 黄峥"匹配原则"——是否相悖？</a></li>
+</ul>
+</div>
+</details><article><p><strong>日期：2026年4月12日</strong>
+<strong>性质：研究对话整理，非正式报告</strong></p>
+<hr />
+<h2 id="pdddisneycostco">一、段永平的类比：PDD像Disney+Costco</h2>
+<p>段永平说拼多多像Disney和Costco的结合。</p>
+<p><strong>Disney的商业模式</strong>：IP飞轮——创作IP→院线→主题乐园→周边授权→流媒体，循环强化。护城河是IP本身：跨代际的情感连接，不可复制，不会过期。本质是<strong>卖情感和不可替代的体验</strong>。</p>
+<p><strong>Costco的商业模式</strong>：会员费才是利润，商品几乎不赚钱（毛利率~11%）。会员费占营业利润70%+，续费率93%。靠精选SKU（~3,700种）和极低价格建立用户信任。本质是<strong>替用户省钱，然后向用户收固定费</strong>。</p>
+<p><strong>段永平类比的核心</strong>：这两家公司的共同点是"真正站在用户一边"。他希望PDD走到的终局是：用户相信拼多多的东西是最便宜且可靠的——不只是低价，而是"低价+信任"的组合，类似Costco。</p>
+<hr />
+<h2 id="pdd">二、PDD的差异化服务（事实层面）</h2>
+<ol>
+<li><strong>拼团模式</strong>：用户发起拼团，凑人数后以更低价格成交。需求聚合后平台向商家下大单，商家因量大给出更低出厂价。</li>
+<li><strong>社交裂变分发</strong>：通过微信分享链接触达新用户，砍价/拼团需邀请朋友。平台不依赖搜索广告获客，依赖用户主动传播。</li>
+<li><strong>农产品产地直发</strong>：与全国农产区直接合作，跳过批发商和经销商环节。2025年入驻产区超100个。</li>
+<li><strong>百亿补贴</strong>：2019年起设立专项补贴，对品牌商品（iPhone、戴森等）直接补差价，保证正品全网最低价。</li>
+<li><strong>微信小游戏平台</strong>：通过微信生态触达用户，无需独立App安装，月活超5亿。</li>
+<li><strong>Temu</strong>：2022年上线，全托管模式（商家只负责供货，平台负责定价、物流、售后），面向海外消费者销售中国商品。</li>
+</ol>
+<hr />
+<h2 id="_1">三、竞争对手模仿情况</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>模仿什么</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>淘宝特价版（淘特）</td>
+<td>模仿拼团低价</td>
+<td><strong>失败</strong>，已边缘化，商家迁回淘宝主站</td>
+</tr>
+<tr>
+<td>京东百亿补贴</td>
+<td>模仿百亿补贴</td>
+<td>价格追平，但未超越</td>
+</tr>
+<tr>
+<td>抖音电商</td>
+<td>没有直接模仿，走内容电商路线</td>
+<td>GMV快速增长（预计突破4万亿），是最大变量</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>PDD的差异化服务，竞争对手基本都能且已经模仿。</strong> 功能层面的差异化本身不构成持久壁垒。</p>
+<hr />
+<h2 id="_2">四、淘特为什么失败</h2>
+<p>体量曾达3亿用户，但最终失败，原因：</p>
+<ol>
+<li><strong>用户靠补贴来，补贴停了就走</strong>：没有做到让用户因为平台长期低价留下来，复购率低。</li>
+<li><strong>商品质量控制差</strong>：对入驻商家审核宽松，假货和低质商品投诉量高，用户体验差。</li>
+<li><strong>商家体验不好</strong>：资源分配依赖人工审核，公平性差，大量工厂商家拿不到流量，陆续放弃。</li>
+<li><strong>内部战略摇摆</strong>：淘特独立成功会蚕食淘宝，阿里内部始终没有下决心真正独立运营。</li>
+<li><strong>没有微信流量</strong>：只能靠广告买量，获客成本远高于早期PDD。</li>
+</ol>
+<hr />
+<h2 id="pdd_1">五、PDD护城河的真实情况</h2>
+<p><strong>实际存在的护城河：</strong>
+- 微信社交关系链：通过微信分享获客，获客成本远低于竞争对手（但微信属于腾讯，不属于PDD）
+- 农产品产地直连：已建立的产地关系和冷链网络，需要时间积累
+- 低价心智：用户心中"PDD=最便宜"的认知是真实资产</p>
+<p><strong>护城河的缺陷：</strong>
+- 最深的那道护城河（微信关系链）属于腾讯，不属于PDD
+- 低价可以被跟进（京东、淘宝都已跟进百亿补贴）
+- 用户忠诚度弱：PDD用户是"哪里便宜去哪里"，切换成本低
+- Temu海外没有微信，社交裂变模式不成立，靠纯广告买量</p>
+<hr />
+<h2 id="temu">六、Temu现状</h2>
+<p><strong>盈利状况：</strong>
+- 2024年经营亏损约320亿元，2025年约500亿元（瑞银估算）
+- 欧洲市场2025年已局部盈利（净利润约1.1亿美元，毛利率37%）
+- 美国市场接近盈亏平衡，但关税后又恶化</p>
+<p><strong>关税影响：</strong>
+- 2025年5月美国取消800美元以下小包裹免税
+- 空运直邮模式从根本上失去经济性
+- Temu应对：空运占比从85%降至2%改为船运备货，半托管模式扩展至75%，广告重心转向欧洲</p>
+<p><strong>盈利路径：</strong>
+- 瑞银预测：2026年底实现季度性盈亏平衡，2029年经营利润率约6%</p>
+<hr />
+<h2 id="_3">七、千亿扶持与新拼姆</h2>
+<p><strong>千亿扶持</strong>：三年1000亿，三大方向：
+1. 农业供应链（多多好特产）：产地直发、冷链、标准化，2025年农产品销量+47%
+2. 物流下沉（电商西进）：包邮区覆盖偏远行政村，免除西部中转费
+3. 商家生态（百亿回馈）：减免费用、降保证金</p>
+<p><strong>新拼姆</strong>：2026年3月成立，上海，一期注资150亿，三年计划1000亿。定位是整合"PDD+Temu"供应链资源，孵化面向全球市场的中国自营品牌。目标是从"卖白牌低价货"升级为"卖有品牌的中国制造"，提升定价权，增强抗关税能力。</p>
+<p><strong>能做成的条件：</strong> 供应链工厂配合转型、渠道认知重建、海外品牌建立需要时间、关税环境稳定。</p>
+<p><strong>做不成的风险：</strong> 中国制造品牌化出海失败案例远多于成功；PDD基因是平台非品牌；渠道冲突；150亿分散后不够用；品牌建设至少需要5-10年。</p>
+<hr />
+<hr />
+<h2 id="vs">八、新拼姆 vs 黄峥"匹配原则"——是否相悖？</h2>
+<p><strong>黄峥原话：</strong></p>
+<blockquote>
+<p>全品类扩张还是传统的流量逻辑，升级也是，升级是一个五环内人群俯视的视角。我不认为拼多多要品牌升级、要全品类，这是不对的，我们要做事情永远是匹配，让合适的人在合适的场景下买到合适的东西。</p>
+</blockquote>
+<p><strong>表面矛盾：</strong> 新拼姆明确要孵化品牌，而黄峥说"不要品牌升级"，字面上直接打脸。</p>
+<p><strong>深挖：精神上可能并不矛盾</strong></p>
+<p>黄峥反对的是平台自身为讨好高端用户而追求品牌调性（即"五环内俯视视角"）。新拼姆的逻辑不同：
+- 帮<strong>供应链端</strong>建品牌，不是重新定位PDD平台本身
+- 目标用户仍是<strong>全球价格敏感型消费者</strong>（Temu核心人群）
+- 本质还是"匹配"——让工厂做出有信任度的产品，卖给适合的人</p>
+<p>从这个角度，新拼姆是匹配原则的路径升级：从"撮合"进化为"自建"，但服务人群的定位没有变。</p>
+<p><strong>真正的张力：</strong></p>
+<p>黄峥2021年已退出，当前管理层面临不同的现实压力：
+1. Temu海外遭遇白牌信任危机，品牌化是防御手段
+2. 关税冲击让"低价直邮"模式失去经济性，品牌化能提升定价权
+3. "帮中国制造出海"是政治正确的战略框架，便于国内融资和合规</p>
+<p><strong>结论：</strong> 精神上有延续（服务价格敏感用户），路径上偏离了黄峥"不做品牌"的原则。黄峥反对的是"为升级而升级"，新拼姆是"为生存而升级"——动机不同，但结果都叫造品牌。这是现实倒逼的战略调整，不是对黄峥哲学的继承。</p>
+<hr />
+<p><em>本文为研究对话整理，数据来源见各条具体引用。</em></p></article><div class="wx"><img src="../files/assets/wechat-qr.png" alt="公众号复利炼丹炉二维码"><div><b>公众号「复利炼丹炉」</b><span>站上是全部成品报告；值得深研的公司和报告之外的判断与取舍，精选发在公众号。微信扫码关注。</span></div></div><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/add3b8034f65.html">拼多多控股（PDD Holdings，PDD.US）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/581cb36c9940.html">拼多多2036：活下来没有悬念，多赚要看两个变量</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/a4afe86cabe3.html">黄峥与拼多多控制权：谁在掌舵、他还能不能回来</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/2ef823d3a551.html">拼多多（PDD Holdings）投资研究 — 2026.04.07</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/9da20c690247.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/b870b0a0d5b4.html">拼多多2026年中报解读</a><div class="meta">2026-08-25 · 公众号</div></li><li><a href="../r/7a2822470350.html">拼多多三大报表解析：从交易所原件到逐项含义</a><div class="meta">2026-08-24 · 财报</div></li><li><a href="../r/7b0e339dcb86.html">拼多多（PDD Holdings, NASDAQ: PDD）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/0e96a7d52297.html">PDD Holdings（拼多多）四大师综合投资研究</a><div class="meta">2026-07-02 · 研究</div></li><li><a href="../r/ea08984766d5.html">黄峥公众号：如创业的投资和如投资的创业</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/4e9d63b6e354.html">PDD研究覆盖度评估：信息缺口分析</a><div class="meta">2026-06-27 · 研究</div></li><li><a href="../r/20ae084f0438.html">核心中概股与美股 P/FCF 对比</a><div class="meta">2026-06-26 · 横评对比</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#pdddisneycostco">一、段永平的类比：PDD像Disney+Costco</a></li>
+<li><a href="#pdd">二、PDD的差异化服务（事实层面）</a></li>
+<li><a href="#_1">三、竞争对手模仿情况</a></li>
+<li><a href="#_2">四、淘特为什么失败</a></li>
+<li><a href="#pdd_1">五、PDD护城河的真实情况</a></li>
+<li><a href="#temu">六、Temu现状</a></li>
+<li><a href="#_3">七、千亿扶持与新拼姆</a></li>
+<li><a href="#vs">八、新拼姆 vs 黄峥"匹配原则"——是否相悖？</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 08:05 UTC</footer></body></html>

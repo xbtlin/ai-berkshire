@@ -11,7 +11,30 @@ document.addEventListener('DOMContentLoaded',function(){var sel=document.getElem
 if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
 if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
 addEventListener('scroll',f,{passive:true});f()}});})();
-</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><div class="layout"><div><h1>腾讯混元 Hy3 发布核实与真实水平评估</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-07-07 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E6%B7%B7%E5%85%83Hy3%E5%8F%91%E5%B8%83%E6%A0%B8%E5%AE%9E%E4%B8%8E%E6%B0%B4%E5%B9%B3%E8%AF%84%E4%BC%B0-20260707.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script></head><body data-root="../" data-page="r/febbb01d49f1.html" data-title="腾讯混元 Hy3 发布核实与真实水平评估"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><div class="layout"><div><h1>腾讯混元 Hy3 发布核实与真实水平评估</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-07-07 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E6%B7%B7%E5%85%83Hy3%E5%8F%91%E5%B8%83%E6%A0%B8%E5%AE%9E%E4%B8%8E%E6%B0%B4%E5%B9%B3%E8%AF%84%E4%BC%B0-20260707.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">一、结论摘要</a></li>
 <li><a href="#_2">二、发布事实核实（置信度：高）</a></li>
@@ -197,7 +220,7 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 <li>Hugging Face 官方模型卡：huggingface.co/tencent/Hy3、huggingface.co/tencent/Hy3-preview</li>
 <li>GitHub 官方仓库：github.com/Tencent-Hunyuan/Hy3-preview</li>
 <li>第三方评测：artificialanalysis.ai/models/hy3（2026-07-07 在线核实）</li>
-</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/6832de236773.html">02｜微信的护城河，保护了什么，又漏掉了什么</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/375b83017c63.html">01｜腾讯值得研究，但“微信还在”不能替你判断买价</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/4352cd405a4d.html">《看懂腾讯》系列说明</a><div class="meta">2026-09-06 · 导读</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+</ul></article><div class="wx"><img src="../files/assets/wechat-qr.png" alt="公众号复利炼丹炉二维码"><div><b>公众号「复利炼丹炉」</b><span>站上是全部成品报告；值得深研的公司和报告之外的判断与取舍，精选发在公众号。微信扫码关注。</span></div></div><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/6832de236773.html">02｜微信的护城河，保护了什么，又漏掉了什么</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/375b83017c63.html">01｜腾讯值得研究，但“微信还在”不能替你判断买价</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/4352cd405a4d.html">《看懂腾讯》系列说明</a><div class="meta">2026-09-06 · 导读</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
 <ul>
 <li><a href="#_1">一、结论摘要</a></li>
 <li><a href="#_2">二、发布事实核实（置信度：高）</a></li>
@@ -220,4 +243,4 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 </li>
 </ul>
 </div>
-</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 08:05 UTC</footer></body></html>

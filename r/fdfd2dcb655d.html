@@ -11,7 +11,30 @@ document.addEventListener('DOMContentLoaded',function(){var sel=document.getElem
 if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
 if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
 addEventListener('scroll',f,{passive:true});f()}});})();
-</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/存储/index.html">存储</a></div><div class="layout"><div><h1>长鑫存储（长鑫科技，688825.SH）投资研究报告</h1><div class="meta"><a href="../topics/存储/index.html">存储</a> ｜ 2026-07-30 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%AD%98%E5%82%A8/%E9%95%BF%E9%91%AB%E5%AD%98%E5%82%A8-%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20260730.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script></head><body data-root="../" data-page="r/fdfd2dcb655d.html" data-title="长鑫存储（长鑫科技，688825.SH）投资研究报告"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/存储/index.html">存储</a></div><div class="layout"><div><h1>长鑫存储（长鑫科技，688825.SH）投资研究报告</h1><div class="meta"><a href="../topics/存储/index.html">存储</a> ｜ 2026-07-30 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%AD%98%E5%82%A8/%E9%95%BF%E9%91%AB%E5%AD%98%E5%82%A8-%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20260730.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">评级与声明</a></li>
 <li><a href="#2026-07-30">一、公司速览（截至 2026-07-30）</a></li>
@@ -764,7 +787,7 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 <p><strong>AI 分析置信度：中高（约 75%）</strong>。事实层（IPO 数据、股权、节点拆解、制裁时间线）经多信源交叉验证，置信度高；运营层（良率、成本、HBM 进度）依赖第三方估算，置信度中；判断层（周期时点、制裁概率、三情景权重）为主观概率，置信度中低。最脆弱的三个假设：2026H1 预告利润的年化外推（周期顶部利润不可线性外推，本报告已在情景中折减，但折减幅度可能仍不足）；SemiAnalysis 的 25% HBM 良率与 30% 成本差（单一机构，无对照信源）；实体清单 40-50% 概率（纯主观）。</p>
 <p><strong>投资确定性：低</strong>。这是一家上市 3 天、处于史上最强行业周期顶部、头顶悬置制裁、核心期权（HBM）尚未证实的公司，任何方向的重仓都缺乏依据。确定性较高的只有三件事：公司会活下去；份额会继续上升；当前价格没有安全边际。投资动作上，这三件事共同指向同一个词——等待。</p>
 <hr />
-<p><em>数据来源汇总：招股书及上交所披露文件（经证券时报/财联社/中国基金报等转述）、TechInsights（G4 拆解、FMS2025）、SemiAnalysis（CXMT 深度报告、昇腾产能报告）、TrendForce、Counterpoint（经 CNBC）、Digitimes、Tom's Hardware、TechPowerUp、财新、Caixin Global、Federal Register、CNBC、The Register、WilmerHale/Jones Day 律所通告、美光 FQ3 2026 财报、MSI 官方公告等。关键计算经 financial_rigor.py 验算（市值、发行市值、年化市盈率、三情景），比率类数字均为推算值。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/d975930c44d0.html">长江存储（YMTC）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/b32f456eb86c.html">美光科技（Micron, MU）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/25d1040aa2a7.html">存储行业产业链投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/bdf3ad41df76.html">兆易创新（603986）投资研究报告：NOR 龙头与长鑫棋局</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/fd4b02361838.html">三星电子（Samsung Electronics, KRX: 005930 / GDR: SMSN）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/b3f9a69f7272.html">SK海力士（SK hynix, KRX: 000660 / NASDAQ: SKHY）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<p><em>数据来源汇总：招股书及上交所披露文件（经证券时报/财联社/中国基金报等转述）、TechInsights（G4 拆解、FMS2025）、SemiAnalysis（CXMT 深度报告、昇腾产能报告）、TrendForce、Counterpoint（经 CNBC）、Digitimes、Tom's Hardware、TechPowerUp、财新、Caixin Global、Federal Register、CNBC、The Register、WilmerHale/Jones Day 律所通告、美光 FQ3 2026 财报、MSI 官方公告等。关键计算经 financial_rigor.py 验算（市值、发行市值、年化市盈率、三情景），比率类数字均为推算值。</em></p></article><div class="wx"><img src="../files/assets/wechat-qr.png" alt="公众号复利炼丹炉二维码"><div><b>公众号「复利炼丹炉」</b><span>站上是全部成品报告；值得深研的公司和报告之外的判断与取舍，精选发在公众号。微信扫码关注。</span></div></div><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/d975930c44d0.html">长江存储（YMTC）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/b32f456eb86c.html">美光科技（Micron, MU）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/25d1040aa2a7.html">存储行业产业链投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/bdf3ad41df76.html">兆易创新（603986）投资研究报告：NOR 龙头与长鑫棋局</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/fd4b02361838.html">三星电子（Samsung Electronics, KRX: 005930 / GDR: SMSN）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/b3f9a69f7272.html">SK海力士（SK hynix, KRX: 000660 / NASDAQ: SKHY）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
 <ul>
 <li><a href="#_1">评级与声明</a></li>
 <li><a href="#2026-07-30">一、公司速览（截至 2026-07-30）</a></li>
@@ -830,4 +853,4 @@ addEventListener('scroll',f,{passive:true});f()}});})();
 <li><a href="#ai">十四、AI 分析置信度与投资确定性（两者必须分开）</a></li>
 </ul>
 </div>
-</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 08:05 UTC</footer></body></html>
