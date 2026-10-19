@@ -1,0 +1,390 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mistral Large 3 675B Instruct 2512 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a></div><h1>Mistral Large 3 675B Instruct 2512</h1><div class="meta"><a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/mistralai__Mistral-Large-3-675B-Instruct-2512__README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#key-features">Key Features</a></li>
+<li><a href="#use-cases">Use Cases</a></li>
+<li><a href="#recommended-settings">Recommended Settings</a><ul>
+<li><a href="#known-issues-limitations">Known Issues / Limitations</a></li>
+</ul>
+</li>
+<li><a href="#benchmark-results">Benchmark Results</a></li>
+<li><a href="#usage">Usage</a><ul>
+<li><a href="#vllm">vLLM</a></li>
+</ul>
+</li>
+<li><a href="#license">License</a></li>
+</ul>
+</div>
+</details><article><p>From our family of large models, <strong>Mistral Large 3</strong> is a state-of-the-art general-purpose <strong>Multimodal granular Mixture-of-Experts</strong> model with <strong>41B active parameters</strong> and <strong>675B total parameters</strong> trained from the ground up with 3000 H200s.</p>
+<p>This model is the instruct post-trained version in <strong>FP8</strong>, fine-tuned for instruction tasks, making it ideal for chat, agentic and instruction based use cases.<br />
+Designed for reliability and long-context comprehension - It is engineered for production-grade assistants, retrieval-augmented systems, scientific workloads, and complex enterprise workflows.</p>
+<p>Learn more in our blog post <a href="https://mistral.ai/news/mistral-3">here</a>.</p>
+<p>Mistral Large 3 is deployable on-premises in:
+- <strong>FP8</strong> on a single node of B200s or H200s.
+- <a href="https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512-NVFP4">NVFP4</a> on a single node of H100s or A100s.</p>
+<p>We provide a <a href="https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512-BF16">BF16</a> version if needed.</p>
+<h2 id="key-features">Key Features</h2>
+<p>Mistral Large 3 consists of two main architectural components:
+- <strong>A Granular MoE Language Model with 673B params and 39B active</strong>
+- <strong>A 2.5B Vision Encoder</strong></p>
+<p>The Mistral Large 3 Instruct model offers the following capabilities:
+- <strong>Vision</strong>: Enables the model to analyze images and provide insights based on visual content, in addition to text.
+- <strong>Multilingual</strong>: Supports dozens of languages, including English, French, Spanish, German, Italian, Portuguese, Dutch, Chinese, Japanese, Korean, Arabic.
+- <strong>System Prompt</strong>: Maintains strong adherence and support for system prompts.
+- <strong>Agentic</strong>: Offers best-in-class agentic capabilities with native function calling and JSON outputting.
+- <strong>Frontier</strong>: Delivers best-in-class performance.
+- <strong>Apache 2.0 License</strong>: Open-source license allowing usage and modification for both commercial and non-commercial purposes.
+- <strong>Large Context Window</strong>: Supports a 256k context window.</p>
+<h2 id="use-cases">Use Cases</h2>
+<p>With powerful long-context performance, stable and consistent cross-domain behavior, Mistral Large 3 is perfect for:
+- Long Document Understanding
+- Powerful Daily-Driver AI Assistants
+- State-of-the-Art Agentic and Tool-Use Capabilities
+- Enterprise Knowledge Work
+- General Coding Assistant</p>
+<p>And enterprise-grade use cases requiring frontier capabilities.</p>
+<h2 id="recommended-settings">Recommended Settings</h2>
+<p>We recommend deploying Large 3 in a client-server configuration with the following best practices:</p>
+<ul>
+<li><strong>System Prompt</strong>: Define a clear environment and use case, including guidance on how to effectively leverage tools in agentic systems.</li>
+<li><strong>Sampling Parameters</strong>: Use a temperature below 0.1 for daily-driver and production environments ; Higher temperatures may be explored for creative use cases - developers are encouraged to experiment with alternative settings.</li>
+<li><strong>Tools</strong>: Keep the set of tools well-defined and limit their number to the minimum required for the use case - Avoiding overloading the model with an excessive number of tools.</li>
+<li><strong>Vision</strong>: When deploying with vision capabilities, we recommend maintaining an aspect ratio close to 1:1 (width-to-height) for images. Avoiding the use of overly thin or wide images - crop them as needed to ensure optimal performance.</li>
+</ul>
+<h3 id="known-issues-limitations">Known Issues / Limitations</h3>
+<ul>
+<li><strong>Not a dedicated reasoning model</strong>: Dedicated reasoning models can outperform Mistral Large 3 in strict reasoning use cases.</li>
+<li><strong>Behind vision-first models in multimodal tasks</strong>: Mistral Large 3 can lag behind models optimized for vision tasks and use cases.</li>
+<li><strong>Complex deployment</strong>: Due to its large size and architecture, the model can be challenging to deploy efficiently with constrained resources or at scale.</li>
+</ul>
+<h2 id="benchmark-results">Benchmark Results</h2>
+<p>We compare Mistral Large 3 to similar sized models.</p>
+<p><img alt="image" src="https://cdn-uploads.huggingface.co/production/uploads/64161701107962562e9b1006/IrPlvUUD-5-Phwi9QSevh.png" /></p>
+<p><img alt="image" src="https://cdn-uploads.huggingface.co/production/uploads/64161701107962562e9b1006/fDFEymz4HZNsqFARB4u9Y.png" /></p>
+<p><img alt="image" src="https://cdn-uploads.huggingface.co/production/uploads/64161701107962562e9b1006/eMdaAPcjOo8VyoGyFKxrE.png" /></p>
+<h2 id="usage">Usage</h2>
+<p>The model can be used with the following frameworks;
+- <a href="https://github.com/vllm-project/vllm"><code>vllm</code></a>: See <a href="#vllm">here</a></p>
+<blockquote>
+<p>[!Note]
+We sadly didn't have enough time to add Mistral Large 3 to transformers, but we would be very happy for a community contribution by opening a PR to <a href="https://github.com/huggingface/transformers">huggingface/transformers</a>.</p>
+</blockquote>
+<h3 id="vllm">vLLM</h3>
+<p>We recommend using this model with <a href="https://github.com/vllm-project/vllm">vLLM</a>.</p>
+<h4 id="installation">Installation</h4>
+<p>Make sure to install <strong>vllm &gt;= 1.12.0</strong>:</p>
+<pre><code>pip install vllm --upgrade
+</code></pre>
+<p>Doing so should automatically install <a href="https://github.com/mistralai/mistral-common/releases/tag/v1.8.6"><code>mistral_common &gt;= 1.8.6</code></a>.</p>
+<p>To check:</p>
+<pre><code>python -c &quot;import mistral_common; print(mistral_common.__version__)&quot;
+</code></pre>
+<p>You can also make use of a ready-to-go <a href="https://github.com/vllm-project/vllm/blob/main/docker/Dockerfile">docker image</a> or on the <a href="https://hub.docker.com/layers/vllm/vllm-openai/latest">docker hub</a>.</p>
+<h4 id="serve">Serve</h4>
+<p>The Mistral Large 3 Instruct FP8 format can be used on one 8xH200 node. We recommend to use this format if you plan to fine-tuning as it can be more precise than NVFP4 in some situations.</p>
+<p><strong>Simple</strong></p>
+<p>A simple launch command is:</p>
+<pre><code class="language-bash">vllm serve mistralai/Mistral-Large-3-675B-Instruct-2512 \
+  --max-model-len 262144 --tensor-parallel-size 8 \
+  --tokenizer_mode mistral --config_format mistral --load_format mistral \
+  --enable-auto-tool-choice --tool-call-parser mistral
+</code></pre>
+<p>Key parameter notes:</p>
+<ul>
+<li>enable-auto-tool-choice: Required when enabling tool usage.</li>
+<li>tool-call-parser mistral: Required when enabling tool usage.</li>
+</ul>
+<p>Additional flags:</p>
+<ul>
+<li>You can set <code>--max-model-len</code> to preserve memory. By default it is set to <code>262144</code> which is quite large but not necessary for most scenarios.</li>
+<li>You can set <code>--max-num-batched-tokens</code> to balance throughput and latency, higher means higher throughput but higher latency.</li>
+</ul>
+<p><strong>Accelerated with speculative decoding</strong></p>
+<p>For maximum performance we recommend serving the checkpoint with its customized draft model <a href="https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512-Eagle">Mistral-Large-3-675B-Instruct-2512-Eagle</a>:</p>
+<pre><code class="language-bash">vllm serve mistralai/Mistral-Large-3-675B-Instruct-2512 \
+  --tensor-parallel-size 8 \
+  --load-format mistral \
+  --tokenizer-mode mistral \
+  --config-format mistral \
+  --enable-auto-tool-choice \
+  --tool-call-parser mistral \
+  --limit-mm-per-prompt '{&quot;image&quot;: 10}' \
+  --speculative_config '{
+    &quot;model&quot;: &quot;mistralai/Mistral-Large-3-675B-Instruct-2512-Eagle&quot;,
+    &quot;num_speculative_tokens&quot;: 3,
+    &quot;method&quot;: &quot;eagle&quot;,
+    &quot;max_model_len&quot;: &quot;16384&quot;
+  }'
+</code></pre>
+<p>For more information on the draft model, please have a look at <a href="https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512-Eagle">Mistral-Large-3-675B-Instruct-2512-Eagle</a>.</p>
+<h4 id="usage-of-the-model">Usage of the model</h4>
+<p>Here we asumme that the model <code>mistralai/Mistral-Large-3-675B-Instruct-2512</code> is served and you can ping it to the domain <code>localhost</code> with the port <code>8000</code> which is the default for vLLM.</p>
+<details>
+  <summary>Vision Reasoning</summary>
+
+Let's see if Mistral Large 3 knows when to pick a fight !
+
+
+<pre><code class="language-python">from datetime import datetime, timedelta
+
+from openai import OpenAI
+from huggingface_hub import hf_hub_download
+
+# Modify OpenAI's API key and API base to use vLLM's API server.
+openai_api_key = &quot;EMPTY&quot;
+openai_api_base = &quot;http://localhost:8000/v1&quot;
+
+TEMP = 0.15
+MAX_TOK = 262144
+
+client = OpenAI(
+    api_key=openai_api_key,
+    base_url=openai_api_base,
+)
+
+models = client.models.list()
+model = models.data[0].id
+
+
+def load_system_prompt(repo_id: str, filename: str) -&gt; str:
+    file_path = hf_hub_download(repo_id=repo_id, filename=filename)
+    with open(file_path, &quot;r&quot;) as file:
+        system_prompt = file.read()
+    today = datetime.today().strftime(&quot;%Y-%m-%d&quot;)
+    yesterday = (datetime.today() - timedelta(days=1)).strftime(&quot;%Y-%m-%d&quot;)
+    model_name = repo_id.split(&quot;/&quot;)[-1]
+    return system_prompt.format(name=model_name, today=today, yesterday=yesterday)
+
+
+SYSTEM_PROMPT = load_system_prompt(model, &quot;SYSTEM_PROMPT.txt&quot;)
+image_url = &quot;https://static.wikia.nocookie.net/essentialsdocs/images/7/70/Battle.png/revision/latest?cb=20220523172438&quot;
+
+messages = [
+    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: SYSTEM_PROMPT},
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: [
+            {
+                &quot;type&quot;: &quot;text&quot;,
+                &quot;text&quot;: &quot;What action do you think I should take in this situation? List all the possible actions and explain why you think they are good or bad.&quot;,
+            },
+            {&quot;type&quot;: &quot;image_url&quot;, &quot;image_url&quot;: {&quot;url&quot;: image_url}},
+        ],
+    },
+]
+
+
+response = client.chat.completions.create(
+    model=model,
+    messages=messages,
+    temperature=TEMP,
+    max_tokens=MAX_TOK,
+)
+
+print(response.choices[0].message.content)
+</code></pre>
+
+</details>
+
+<details>
+  <summary>Function Calling</summary>
+
+Let's solve some equations thanks to our simple Python calculator tool.
+
+
+<pre><code class="language-python">import json
+from openai import OpenAI
+from huggingface_hub import hf_hub_download
+
+# Modify OpenAI's API key and API base to use vLLM's API server.
+openai_api_key = &quot;EMPTY&quot;
+openai_api_base = &quot;http://localhost:8000/v1&quot;
+
+TEMP = 0.15
+MAX_TOK = 262144
+
+client = OpenAI(
+    api_key=openai_api_key,
+    base_url=openai_api_base,
+)
+
+models = client.models.list()
+model = models.data[0].id
+
+
+def load_system_prompt(repo_id: str, filename: str) -&gt; str:
+    file_path = hf_hub_download(repo_id=repo_id, filename=filename)
+    with open(file_path, &quot;r&quot;) as file:
+        system_prompt = file.read()
+    return system_prompt
+
+
+SYSTEM_PROMPT = load_system_prompt(model, &quot;SYSTEM_PROMPT.txt&quot;)
+
+image_url = &quot;https://math-coaching.com/img/fiche/46/expressions-mathematiques.jpg&quot;
+
+
+def my_calculator(expression: str) -&gt; str:
+    return str(eval(expression))
+
+
+tools = [
+    {
+        &quot;type&quot;: &quot;function&quot;,
+        &quot;function&quot;: {
+            &quot;name&quot;: &quot;my_calculator&quot;,
+            &quot;description&quot;: &quot;A calculator that can evaluate a mathematical equation and compute its results.&quot;,
+            &quot;parameters&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;properties&quot;: {
+                    &quot;expression&quot;: {
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;description&quot;: &quot;The mathematical expression to evaluate.&quot;,
+                    },
+                },
+                &quot;required&quot;: [&quot;expression&quot;],
+            },
+        },
+    },
+    {
+        &quot;type&quot;: &quot;function&quot;,
+        &quot;function&quot;: {
+            &quot;name&quot;: &quot;rewrite&quot;,
+            &quot;description&quot;: &quot;Rewrite a given text for improved clarity&quot;,
+            &quot;parameters&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;properties&quot;: {
+                    &quot;text&quot;: {
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;description&quot;: &quot;The input text to rewrite&quot;,
+                    }
+                },
+            },
+        },
+    },
+]
+
+messages = [
+    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: SYSTEM_PROMPT},
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: [
+            {
+                &quot;type&quot;: &quot;text&quot;,
+                &quot;text&quot;: &quot;Thanks to your calculator, compute the results for the equations that involve numbers displayed in the image.&quot;,
+            },
+            {
+                &quot;type&quot;: &quot;image_url&quot;,
+                &quot;image_url&quot;: {
+                    &quot;url&quot;: image_url,
+                },
+            },
+        ],
+    },
+]
+
+response = client.chat.completions.create(
+    model=model,
+    messages=messages,
+    temperature=TEMP,
+    max_tokens=MAX_TOK,
+    tools=tools,
+    tool_choice=&quot;auto&quot;,
+)
+
+tool_calls = response.choices[0].message.tool_calls
+
+results = []
+for tool_call in tool_calls:
+    function_name = tool_call.function.name
+    function_args = tool_call.function.arguments
+    if function_name == &quot;my_calculator&quot;:
+        result = my_calculator(**json.loads(function_args))
+        results.append(result)
+
+messages.append({&quot;role&quot;: &quot;assistant&quot;, &quot;tool_calls&quot;: tool_calls})
+for tool_call, result in zip(tool_calls, results):
+    messages.append(
+        {
+            &quot;role&quot;: &quot;tool&quot;,
+            &quot;tool_call_id&quot;: tool_call.id,
+            &quot;name&quot;: tool_call.function.name,
+            &quot;content&quot;: result,
+        }
+    )
+
+
+response = client.chat.completions.create(
+    model=model,
+    messages=messages,
+    temperature=TEMP,
+    max_tokens=MAX_TOK,
+)
+
+print(response.choices[0].message.content)
+</code></pre>
+
+
+</details>
+
+<details>
+  <summary>Text-Only Request</summary>
+
+Mistral Large 3 can follow your instructions down to the letter.
+
+
+<pre><code class="language-python">from openai import OpenAI
+from huggingface_hub import hf_hub_download
+
+# Modify OpenAI's API key and API base to use vLLM's API server.
+openai_api_key = &quot;EMPTY&quot;
+openai_api_base = &quot;http://localhost:8000/v1&quot;
+
+TEMP = 0.15
+MAX_TOK = 262144
+
+client = OpenAI(
+    api_key=openai_api_key,
+    base_url=openai_api_base,
+)
+
+models = client.models.list()
+model = models.data[0].id
+
+
+def load_system_prompt(repo_id: str, filename: str) -&gt; str:
+    file_path = hf_hub_download(repo_id=repo_id, filename=filename)
+    with open(file_path, &quot;r&quot;) as file:
+        system_prompt = file.read()
+    return system_prompt
+
+
+SYSTEM_PROMPT = load_system_prompt(model, &quot;SYSTEM_PROMPT.txt&quot;)
+
+messages = [
+    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: SYSTEM_PROMPT},
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: &quot;Write me a sentence where every word starts with the next letter in the alphabet - start with 'a' and end with 'z'.&quot;,
+    },
+]
+
+response = client.chat.completions.create(
+    model=model,
+    messages=messages,
+    temperature=TEMP,
+    max_tokens=MAX_TOK,
+)
+
+assistant_message = response.choices[0].message.content
+print(assistant_message)
+</code></pre>
+
+
+</details>
+
+<h2 id="license">License</h2>
+<p>This model is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0 License</a>.</p>
+<p><em>You must not use this model in a manner that infringes, misappropriates, or otherwise violates any third party’s rights, including intellectual property rights.</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/94b63c16f6b1.html">GLM-5</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/224a0c39bab5.html">GLM-5.3</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/22905c393a9c.html">GLM-5.3-Flash</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d060129a14be.html">GLM-5.2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f90617223e31.html">GLM-4.7</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/0edcfc955787.html">GLM-4.6V</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8cf89aee725c.html">GLM-4.5-Air</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/10aa23c70e91.html">Grok 2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/652b9a513303.html">Grok-1</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4224b4932376.html">Solar Open</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/32e837241209.html">tencent__Hy3__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/e9c250974ef4.html">tencent__Hunyuan-Large__README</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

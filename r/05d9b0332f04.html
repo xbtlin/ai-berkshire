@@ -1,0 +1,440 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>快手与 MiniMax：护城河与五年盈利推演 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/综合与横评/index.html">综合与横评</a></div><h1>快手与 MiniMax：护城河与五年盈利推演</h1><div class="meta"><a href="../topics/综合与横评/index.html">综合与横评</a> ｜ 2026-09-22 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B%E4%B8%8EMiniMax-%E6%8A%A4%E5%9F%8E%E6%B2%B3%E4%B8%8E%E4%BA%94%E5%B9%B4%E7%9B%88%E5%88%A9%E6%8E%A8%E6%BC%94-20260922.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">阅读前必看：这份报告能回答什么，不能回答什么</a></li>
+<li><a href="#_2">一、快手：护城河还在，但已经不带来增长</a><ul>
+<li><a href="#11">1.1 事实：主业收入增长接近停滞</a></li>
+<li><a href="#12">1.2 事实：盈利明显承压</a></li>
+<li><a href="#13">1.3 事实：可灵是唯一的高增长资产，但体量还很小</a></li>
+<li><a href="#14-180">1.4 事实：可灵已分拆融资，估值 180 亿美元</a></li>
+<li><a href="#15">1.5 事实：正在用当期利润换算力</a></li>
+<li><a href="#16">1.6 【推演】护城河与五年利润</a></li>
+</ul>
+</li>
+<li><a href="#minimax">二、MiniMax：只有增速，还看不到护城河</a><ul>
+<li><a href="#21">2.1 事实：收入基数小，增速极高</a></li>
+<li><a href="#22-c-b">2.2 事实：收入结构半年内从 C 端切向 B 端</a></li>
+<li><a href="#23">2.3 事实：单位经济尚未跑通</a></li>
+<li><a href="#24">2.4 【推演】护城河与五年盈利</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、两家对照</a></li>
+<li><a href="#_4">四、最近的检验点</a></li>
+<li><a href="#_5">五、尚未回答的问题</a></li>
+<li><a href="#_6">六、方法与局限</a><ul>
+<li><a href="#_7">主要来源</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>研究日期：2026-09-22｜数据截止：2026-08-26
+方法：6 个检索角度并行 → 抓取 27 个来源 → 提取 129 条可证伪主张 → 每条 3 票对抗验证（2/3 反驳即淘汰）→ 合成
+验证结果：25 条进入验证，24 条通过，1 条被 0-3 否决，合并去重后 11 条结论</p>
+</blockquote>
+<h2 id="_1">阅读前必看：这份报告能回答什么，不能回答什么</h2>
+<p><strong>通过验证的 24 条主张，几乎全部是财务事实</strong>（快手 2026Q2 业绩、MiniMax 2025 年报与 2026 中报）。没有任何一条来源直接回答"护城河是什么"或"五年后赚多少钱"。</p>
+<p>因此本报告分成两层，请分开对待：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>层次</th>
+<th>内容</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一层：事实</td>
+<td>两家公司的收入、利润、毛利率、资本开支、融资估值</td>
+<td>高（公司法定披露 + 多源交叉）</td>
+</tr>
+<tr>
+<td>第二层：推演</td>
+<td>护城河判断、五年利润区间</td>
+<td>低（本报告的分析，非来源结论）</td>
+</tr>
+</tbody>
+</table></div>
+<p>凡标注「推演」的段落，都是从第一层事实外推的观点，不是事实。</p>
+<hr />
+<h2 id="_2">一、快手：护城河还在，但已经不带来增长</h2>
+<h3 id="11">1.1 事实：主业收入增长接近停滞</h3>
+<p>2026 年第二季度总收入 355.35 亿元，同比仅增 <strong>1.4%</strong> 。分部拆开：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>分部</th>
+<th>收入</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>线上营销服务</td>
+<td>206 亿元</td>
+<td>+4.4%</td>
+</tr>
+<tr>
+<td>直播</td>
+<td>87 亿元</td>
+<td><strong>-13.5%</strong></td>
+</tr>
+<tr>
+<td>其他服务（电商 + 可灵）</td>
+<td>62 亿元</td>
+<td>+18.5%</td>
+</tr>
+<tr>
+<td>合计</td>
+<td>355 亿元</td>
+<td>+1.4%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>但另一方面</strong>：核心商业收入（线上营销 + 其他服务）仍增长 7.4%，拖累全部来自直播。"停滞"只适用于总收入口径，不应外推为全部业务停滞。</p>
+<p>来源：快手 2026Q2 业绩公告（<a href="https://money.udn.com/money/story/123828/9701633">udn 转载</a>）、<a href="https://www.21jingji.com/article/20260820/herald/8f97852fcb2c7ded770ae50a1d9aca2a.html">21 世纪经济报道</a>、<a href="https://emwap.eastmoney.com/a/202608193846670074.html">东方财富</a>。三项分部合计自洽。</p>
+<h3 id="12">1.2 事实：盈利明显承压</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2026Q2</th>
+<th>去年同期</th>
+<th>变动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经调整净利润</td>
+<td>39 亿元</td>
+<td>56 亿元</td>
+<td>-30%</td>
+</tr>
+<tr>
+<td>经调整净利率</td>
+<td>11.0%</td>
+<td>16.0%</td>
+<td>-5.0pct</td>
+</tr>
+<tr>
+<td>经营利润</td>
+<td>38 亿元</td>
+<td>53 亿元</td>
+<td>-28%</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>51.6%</td>
+<td>55.7%</td>
+<td>-4.1pct</td>
+</tr>
+<tr>
+<td>经调整 EBITDA</td>
+<td>71.22 亿元</td>
+<td>—</td>
+<td>-7.7%</td>
+</tr>
+</tbody>
+</table></div>
+<p>2026 上半年经调整净利润 73 亿元（去年 102 亿元，-28.5%）。<strong>当前盈利体量约单季 39 亿元、年化 150-160 亿元</strong> ，低于 2025 年水平。</p>
+<p>利润下滑的原因是复合的，不能简单归结为"AI 投入"：</p>
+<ul>
+<li>研发开支同比 +34.7% 至 46 亿元（公司自述主要为 AI 训练投入）</li>
+<li>带宽及服务器托管成本 +19.5%</li>
+<li>直播收入下滑 13.5%</li>
+<li>收入分成成本 +16.9%</li>
+<li>营业成本整体 +10.7%，远超收入 +1.4%</li>
+</ul>
+<h3 id="13">1.3 事实：可灵是唯一的高增长资产，但体量还很小</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>期间</th>
+<th>可灵收入</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026Q1</td>
+<td>超 6.5 亿元</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2026Q2</td>
+<td>超 8.5 亿元</td>
+<td>增逾 200%</td>
+</tr>
+<tr>
+<td>2026H1 累计</td>
+<td>超 15 亿元</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>截至 6 月，全球用户破 1 亿、企业客户近 5 万家（均较 2025 年底增约 67%）。</p>
+<p><strong>关键限定</strong>：</p>
+<ul>
+<li>可灵 Q2 收入仅占集团总收入约 <strong>2.4%</strong></li>
+<li>数字是公司自报口径且为下限（"超"），非审计分部数据</li>
+<li>公告未给年化收入或前瞻指引（Q1 电话会曾披露 3 月 ARR 近 5 亿美元）</li>
+<li>用户数为公司自报</li>
+<li>媒体（虎嗅）称可灵 2025 年亏损约 19 亿元，<strong>此数未经独立核实</strong></li>
+<li>面临字节 Seedance 及开源模型的价格竞争</li>
+</ul>
+<h3 id="14-180">1.4 事实：可灵已分拆融资，估值 180 亿美元</h3>
+<p>2026 年 7 月 2 日公告：以 150 亿美元投前估值引入上限 30 亿美元外部增资，投后约 <strong>180 亿美元</strong> ，腾讯、阿里、百度均参与。快手持股由 100% 降至约 <strong>68.33%</strong>（全面摊薄口径），对应约 120 亿美元归属上市公司。</p>
+<p><strong>重要限定</strong>（置信度中等，验证者未直接打开港交所公告原件，依赖财联社、界面、澎湃等多家媒体引用交叉核实）：</p>
+<ul>
+<li>180 亿美元是一级市场定价，<strong>附带五年上市对赌</strong>（腾讯新闻报道），不等于市场价值</li>
+<li>较 5 月传闻的 200 亿美元已<strong>下调</strong></li>
+<li>快手 8 月 19 日市值约 1635 亿港元，次日财报后跌约 10% 至约 1460-1470 亿港元</li>
+</ul>
+<h3 id="15">1.5 事实：正在用当期利润换算力</h3>
+<p>CFO 金秉在 2026 年 3 月年报会及 5 月 27 日 Q1 电话会给出：2026 年资本开支指引约 <strong>260 亿元</strong> ，较 2025 年约 150 亿元增加约 110 亿元，主要投向可灵及其他基础大模型的算力、服务器采购与数据中心建设，大部分在上半年发生。</p>
+<p>管理层全年目标是集团层面自由现金流为正，Q2 自由现金流已为正；可灵独立融资后将更多以租赁方式满足算力需求。</p>
+<p>限定：2025 年 150 亿元是由 260-110 倒推的近似值，非年报披露数；260 亿是指引而非实际支出；自由现金流为正是目标而非已实现的全年结果。</p>
+<p>来源：<a href="https://www.guandian.cn/article/20260528/563688.html">观点网</a>，与新浪科技 Q1 业绩会实录原话一致。</p>
+<h3 id="16">1.6 【推演】护城河与五年利润</h3>
+<p><strong>护城河性质</strong>：短视频内容生态 + 直播电商闭环形成的成熟流量与商业化体系。这条护城河是真实的——它支撑着年化 150 亿以上的利润——但它已经进入存量博弈，直播在萎缩，总收入增速掉到 1.4%。可灵是在视频生成赛道上以先发 + 用户规模建立的<strong>第二条护城河，尚未验证</strong>。</p>
+<p><strong>五年后利润区间（推演，无任何来源直接支撑）</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>条件</th>
+<th>年利润量级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基准</td>
+<td>主业维持现状、AI 投入回落</td>
+<td>150-250 亿元</td>
+</tr>
+<tr>
+<td>上沿</td>
+<td>可灵接近卖方乐观预测并转化为正常利润率</td>
+<td>基准之上再加数十亿至百亿级</td>
+</tr>
+<tr>
+<td>下沿</td>
+<td>视频生成被 Seedance 及开源模型价格战压制</td>
+<td>可灵持续亏损并拖累集团</td>
+</tr>
+</tbody>
+</table></div>
+<p>上沿所依据的卖方预测（中信证券 2026-08-06 研报，<strong>单一卖方的乐观情景，非公司指引，非市场一致预期</strong>）：可灵收入 2025 年 11 亿元 → 2026 年 35 亿元 → 2027 年 88 亿元 → 2028 年 171 亿元 → 2030 年约 396 亿元，2025-2030 复合增速 104%；假设 2030 年全球月活超 6000 万、付费率 20%。</p>
+<p>该预测的 2026 年 35 亿元与上半年 15 亿元的运行率大致相符，但它是<strong>收入口径而非利润口径</strong>，且依赖渗透率与 20% 付费率两个强假设。</p>
+<hr />
+<h2 id="minimax">二、MiniMax：只有增速，还看不到护城河</h2>
+<h3 id="21">2.1 事实：收入基数小，增速极高</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>期间</th>
+<th>收入</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023 年</td>
+<td>346 万美元</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024 年</td>
+<td>3052 万美元</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2025 年</td>
+<td>7903.8 万美元</td>
+<td>+158.9%</td>
+</tr>
+<tr>
+<td>2026 年上半年</td>
+<td><strong>1.166 亿美元</strong></td>
+<td><strong>+283.1%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>2026 年上半年半年收入已超 2025 年全年。2025 年超过 70%（约 73%）收入来自国际市场。</p>
+<p>来源：港交所招股书（2025-12-31）、<a href="https://www.minimaxi.com/news/minimax%E5%8F%91%E5%B8%83-2025-%E5%B9%B4%E5%85%A8%E5%B9%B4%E4%B8%9A%E7%BB%A9">2026-03-02 经审计年度业绩公告</a>、<a href="https://www.prnasia.com/story/545325-1.shtml">2026-08-26 中期业绩公告</a>、<a href="https://www.jiemian.com/article/14058847.html">界面新闻</a>。</p>
+<h3 id="22-c-b">2.2 事实：收入结构半年内从 C 端切向 B 端</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>分部</th>
+<th>2026H1</th>
+<th>占比</th>
+<th>去年同期占比</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开放平台及企业服务</td>
+<td>7390 万美元</td>
+<td><strong>63.4%</strong></td>
+<td>30.3%</td>
+<td>+703.1%</td>
+</tr>
+<tr>
+<td>AI 原生产品</td>
+<td>4260 万美元</td>
+<td>36.6%</td>
+<td>69.7%</td>
+<td>+100.9%</td>
+</tr>
+</tbody>
+</table></div>
+<p>限定：703% 增速有低基数因素（去年同期 920 万美元）。"转向 B 端"含 Token Plan 订阅，虎嗅称约 80% 来自企业用户但单价低，<strong>并非纯大客户合同</strong>。</p>
+<p>⚠️ 一条流传的主张——"2025 年前 9 个月约七成收入来自 C 端 AI 原生应用（Talkie/星野 35.1%、海螺 32.6%）"——在本次验证中被 <strong>0-3 否决，不予采纳</strong>。收入结构在半年内切换如此剧烈，说明历史数据的外推价值有限。</p>
+<h3 id="23">2.3 事实：单位经济尚未跑通</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2024 年</th>
+<th>2025 年</th>
+<th>2026H1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>毛利率</td>
+<td>12.2%</td>
+<td>25.4%</td>
+<td><strong>17.9%</strong></td>
+</tr>
+<tr>
+<td>经调整净亏损</td>
+<td>2.442 亿美元</td>
+<td>2.509 亿美元</td>
+<td>2.93 亿美元</td>
+</tr>
+<tr>
+<td>研发开支</td>
+<td>—</td>
+<td>2.528 亿美元（+33.8%）</td>
+<td>2.969 亿美元（+138.8%）</td>
+</tr>
+</tbody>
+</table></div>
+<p>2026 上半年关键比值：</p>
+<ul>
+<li>销售成本吞掉 <strong>82.1%</strong> 的收入，主要为推理算力（未逐项拆分，"推理算力"为二手报道口径）</li>
+<li>经调整净亏损约为收入的 <strong>2.5 倍</strong> ；IFRS 期内亏损 3.58 亿美元，约为收入 3.1 倍</li>
+<li>研发开支约为收入的 <strong>2.5 倍</strong></li>
+</ul>
+<p>2025 年 IFRS 亏损 18.72 亿美元，其中约 15.9 亿美元为优先股公允价值变动等非现金项目，看经调整口径更有意义。值得注意的是 2025 年收入增长 1.6 倍，但经调整亏损与 2024 年基本持平——同时销售及分销开支降 40.3% 至 5190 万美元，即亏损没有扩大部分来自收缩获客投入。</p>
+<p><strong>关键限定</strong>：管理层在中期业绩会称上半年毛利率下滑系 M3 改价后的 Token 补偿一次性因素，预期下半年回升，下一代 M3.1 目标把推理成本降到约三分之一。<strong>此说法仅见于搜索摘要，未打开原文核实。</strong> 因此 17.9% 不宜外推为稳态毛利率；但同样地，也没有证据表明其毛利率能达到软件公司水平。</p>
+<h3 id="24">2.4 【推演】护城河与五年盈利</h3>
+<p><strong>护城河判断</strong>：目前<strong>没有可验证的护城河</strong>。</p>
+<ul>
+<li>B 端 API 是同质化最严重、价格战最激烈的环节</li>
+<li>海外 C 端应用依赖渠道获客，可替代性强</li>
+<li>毛利率不到 20%，直接说明没有定价权</li>
+</ul>
+<p><strong>但另一方面</strong>：283% 的收入增速、B 端占比半年从 30% 升到 63%，说明产品有真实需求；毛利率若确如管理层所说含一次性因素，稳态水平可能高于 17.9%。</p>
+<p><strong>五年推演</strong>：能否赚钱取决于两件事——毛利率能否从不到 20% 升到软件公司常见的 50% 以上；研发开支增速能否低于收入增速。</p>
+<p>若 2026 年收入约 2.5-3 亿美元并维持 50% 复合增速，2031 年收入量级在 15-25 亿美元。<strong>但在毛利率结构改变之前，"五年后赚多少钱"没有依据</strong>——亏损收窄是比转为盈利更可能的路径。没有任何来源给出 MiniMax 的远期盈利预测或管理层盈亏平衡时间表。</p>
+<hr />
+<h2 id="_3">三、两家对照</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>快手</th>
+<th>MiniMax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>护城河性质</td>
+<td>成熟流量与商业化体系，真实但已停止提供增长</td>
+<td>尚无可验证护城河，只有增速</td>
+</tr>
+<tr>
+<td>当前盈利</td>
+<td>年化 150-160 亿元</td>
+<td>半年亏 2.93 亿美元</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>51.6%</td>
+<td>17.9%</td>
+</tr>
+<tr>
+<td>增长来源</td>
+<td>全押可灵（占收入 2.4%）</td>
+<td>全押 B 端 API（占收入 63.4%）</td>
+</tr>
+<tr>
+<td>五年后的核心变量</td>
+<td>可灵能否跑出单位经济、扛住价格战</td>
+<td>毛利率能否结构性抬升</td>
+</tr>
+<tr>
+<td>判断可信度</td>
+<td>低（推演）</td>
+<td>低（推演）</td>
+</tr>
+</tbody>
+</table></div>
+<p>一句话概括：<strong>快手是在用一门正在变慢但仍在赚钱的生意，赌一门还没证明能赚钱的新生意；MiniMax 是还没有旧生意可赌，直接在赌新生意。</strong></p>
+<hr />
+<h2 id="_4">四、最近的检验点</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>检验什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026 年 11 月（快手 Q3）</td>
+<td>直播收入能否止跌；经调整净利润能否企稳；260 亿资本开支实际执行；全年自由现金流是否为正</td>
+</tr>
+<tr>
+<td>MiniMax 下半年业绩</td>
+<td>毛利率是否如管理层所说回升；M3.1 能否把推理成本降到三分之一</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_5">五、尚未回答的问题</h2>
+<ol>
+<li>可灵的单位经济到底如何？2025 年亏损约 19 亿元的媒体说法是否准确？单季 8.5 亿元收入对应的推理算力成本与毛利率是多少？何时自身盈亏平衡？</li>
+<li>MiniMax 的 B 端 Token Plan 客户留存率和单客户收入是多少？</li>
+<li>快手主业（线上营销 + 电商）在总收入停滞下的五年增速假设应该是多少？直播下滑会持续多久？</li>
+<li>字节 Seedance 及开源视频模型的价格战，对可灵定价和份额的实际影响有多大？可灵海外收入占比与竞争格局如何？</li>
+</ol>
+<h2 id="_6">六、方法与局限</h2>
+<ul>
+<li>6 个检索角度：快手一手财务与分部盈利、MiniMax 一手财务与商业模式、护城河正反证据与竞争格局、视频生成与基模竞争、质疑视角（大模型独立厂商能否赚钱）、远期盈利预测与行业空间</li>
+<li>抓取 27 个来源（其中 1 个标记为不可靠来源，未采用其独有数据），提取 129 条主张，25 条进入 3 票对抗验证，24 条通过，1 条被否</li>
+<li><strong>部分验证者未直接打开港交所原始公告或原引用页面</strong>（东方财富正文抓取失败），依赖多家媒体交叉一致</li>
+<li>所有数据截至 2026-08-26；快手市值数据为 8 月 19 日快照，次日已跌约 10%</li>
+<li>第二层（护城河判断、五年利润区间）为本报告推演，不是来源结论，置信度低</li>
+</ul>
+<h3 id="_7">主要来源</h3>
+<p><strong>快手</strong>
+- 快手 2026Q2 业绩公告：https://money.udn.com/money/story/123828/9701633
+- 21 世纪经济报道：https://www.21jingji.com/article/20260820/herald/8f97852fcb2c7ded770ae50a1d9aca2a.html
+- 东方财富（可灵分拆融资与中信预测）：https://emwap.eastmoney.com/a/202608193846670074.html
+- 观点网（CFO 资本开支口径）：https://www.guandian.cn/article/20260528/563688.html
+- 观察者网：https://www.guancha.cn/economy/2026_08_20_827997.shtml</p>
+<p><strong>MiniMax</strong>
+- 2026 中期业绩公告（美通社转发港交所披露）：https://www.prnasia.com/story/545325-1.shtml
+- 2025 年全年业绩（公司官网）：https://www.minimaxi.com/news/minimax发布-2025-年全年业绩
+- 界面新闻：https://www.jiemian.com/article/14058847.html</p>
+<p><strong>行业与质疑视角</strong>
+- 虎嗅（大模型厂商盈利质疑）：https://www.huxiu.com/article/4886381.html
+- 钛媒体：https://www.tmtpost.com/8121654.html
+- 财联社：https://www.cls.cn/detail/2324868</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/0f7db0f0b448.html">研究报告索引</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/8ffcc4c8ad84.html">美股七姐妹：七份独立投资研究</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/2fd4a5ed4622.html">除了你自己，没人关心你的成本价</a><div class="meta">2026-09-28 · 公众号</div></li><li><a href="../r/9afae466678c.html">六家公司研究与持仓判断</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/692147003320.html">技术分析冲力系统实证检验：三万次事件的证伪记录</a><div class="meta">2026-09-04 · 研究</div></li><li><a href="../r/3fffde9e8894.html">九公司凯利赔率横评：上行、下行与仓位框架</a><div class="meta">2026-09-03 · 横评对比</div></li><li><a href="../r/6a076e0af7bb.html">破净与净现金股全球筛选：美股、港股、A股</a><div class="meta">2026-08-27 · 筛选</div></li><li><a href="../r/13793d9c42cd.html">12 家公司 10 年后利润结局推演（2036 年视角）</a><div class="meta">2026-08-27 · 研究</div></li><li><a href="../r/4328f84a5552.html">巴菲特、段永平、李录 2026Q2 13F 持仓全解</a><div class="meta">2026-08-15 · 财报</div></li><li><a href="../r/be601dae083d.html">七公司十年横评：谁值得重仓，谁应该规避</a><div class="meta">2026-08-14 · 横评对比</div></li><li><a href="../r/8395b6213382.html">BNP Paribas — Income Investment</a><div class="meta">2026-07-15 · 研究</div></li><li><a href="../r/4e1b35597fc2.html">社区研究报告 / Community Reports</a><div class="meta">2026-07-04 · 导读</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

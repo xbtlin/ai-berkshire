@@ -1,0 +1,421 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LiblibAI 估值分析 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/liblibAI/index.html">liblibAI</a></div><h1>LiblibAI 估值分析</h1><div class="meta"><a href="../companies/liblibAI/index.html">liblibAI</a> ｜ 2026-06-02 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/liblibAI/liblibAI-%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90-20260602.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#10">一、当前估值：约10亿美元</a><ul>
+<li><a href="#_1">最后一轮融资</a></li>
+<li><a href="#_2">推算逻辑</a></li>
+</ul>
+</li>
+<li><a href="#_3">二、收入拆解：两条业务线、两种逻辑</a><ul>
+<li><a href="#1liblibai">业务线1：LiblibAI平台（国内）</a></li>
+<li><a href="#2lovartagent">业务线2：Lovart（海外设计Agent）</a></li>
+<li><a href="#_4">合并收入估算</a></li>
+</ul>
+</li>
+<li><a href="#_5">三、可比公司估值对标</a><ul>
+<li><a href="#ai">全球AI创作/设计工具公司</a></li>
+<li><a href="#_6">关键发现</a></li>
+</ul>
+</li>
+<li><a href="#_7">四、估值判断：三种情景</a><ul>
+<li><a href="#_8">核心假设</a></li>
+<li><a href="#_9">情景分析</a></li>
+<li><a href="#_10">乐观情景假设</a></li>
+<li><a href="#_11">中性情景假设</a></li>
+<li><a href="#_12">悲观情景假设</a></li>
+</ul>
+</li>
+<li><a href="#_13">五、核心风险因素</a><ul>
+<li><a href="#1">1. 护城河深度存疑（最大风险）</a></li>
+<li><a href="#2">2. 盈利路径不清晰</a></li>
+<li><a href="#3">3. 国内外市场割裂</a></li>
+<li><a href="#4">4. 创始人风格风险</a></li>
+<li><a href="#5">5. 一级市场流动性风险</a></li>
+</ul>
+</li>
+<li><a href="#_14">六、结论</a><ul>
+<li><a href="#b10">当前估值（B轮投后）：约10亿美元</a></li>
+<li><a href="#_15">合理估值区间</a></li>
+<li><a href="#_16">核心判断</a></li>
+</ul>
+</li>
+<li><a href="#_17">数据来源</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>分析日期：2026年6月2日
+声明：本文基于公开信息推算，不构成任何投资建议。</p>
+</blockquote>
+<hr />
+<h2 id="10">一、当前估值：约10亿美元</h2>
+<h3 id="_1">最后一轮融资</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最近融资</td>
+<td>B轮，1.3亿美元</td>
+</tr>
+<tr>
+<td>时间</td>
+<td>2025年10月</td>
+</tr>
+<tr>
+<td>领投方</td>
+<td>红杉中国、CMC资本</td>
+</tr>
+<tr>
+<td>战略投资方</td>
+<td>蚂蚁集团</td>
+</tr>
+<tr>
+<td>跟投方</td>
+<td>顺为资本、源码资本、明势资本、联想创投等</td>
+</tr>
+<tr>
+<td>投后估值</td>
+<td><strong>约10亿美元</strong>（综合多方信息推断）</td>
+</tr>
+<tr>
+<td>累计融资</td>
+<td>约1.8-2亿美元（5轮）</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_2">推算逻辑</h3>
+<p>B轮融资1.3亿美元，按一级市场惯例稀释10-15%股权，对应投后估值约8.7-13亿美元。结合36氪、证券时报等多方报道中"估值约10亿美金"的口径，<strong>B轮投后估值约10亿美元</strong>是可信数字。</p>
+<hr />
+<h2 id="_3">二、收入拆解：两条业务线、两种逻辑</h2>
+<p>LiblibAI不是一家单一产品公司，而是<strong>国内社区 + 海外Agent</strong>双引擎结构：</p>
+<h3 id="1liblibai">业务线1：LiblibAI平台（国内）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用户数</td>
+<td>2,500万+</td>
+<td>官方披露</td>
+</tr>
+<tr>
+<td>DAU</td>
+<td>约400万</td>
+<td>新浪财经</td>
+</tr>
+<tr>
+<td>日生成图片</td>
+<td>500万+</td>
+<td>官方披露</td>
+</tr>
+<tr>
+<td>原创模型数</td>
+<td>50万+</td>
+<td>官方披露</td>
+</tr>
+<tr>
+<td>2025年收入</td>
+<td><strong>约150万美元</strong>（估）</td>
+<td>CBInsights</td>
+</tr>
+</tbody>
+</table></div>
+<p>国内平台的问题很明显：<strong>用户巨大但变现极弱</strong>。2,500万用户对应仅约150万美元年收入，ARPU不到0.1美元。这是典型的「社区先行、商业化滞后」模式——平台价值在于生态粘性和数据壁垒，但短期几乎不贡献收入。</p>
+<h3 id="2lovartagent">业务线2：Lovart（海外设计Agent）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上线时间</td>
+<td>2025年5月内测，7月公测</td>
+<td></td>
+</tr>
+<tr>
+<td>DAU</td>
+<td>15-20万</td>
+<td>多方报道</td>
+</tr>
+<tr>
+<td>ARR</td>
+<td><strong>3,000万美元</strong>（截至2025年9月）</td>
+<td>知乎/腾讯新闻</td>
+</tr>
+<tr>
+<td>月访问量</td>
+<td>323万（2025年8月）</td>
+<td>Similarweb</td>
+</tr>
+<tr>
+<td>定价</td>
+<td>$15/月起</td>
+<td>官网</td>
+</tr>
+<tr>
+<td>国内版</td>
+<td>星流Agent，49元/月起</td>
+<td>2026年1月上线</td>
+</tr>
+</tbody>
+</table></div>
+<p>Lovart是真正的收入引擎。<strong>4个月从0做到3,000万美元ARR</strong>，这个速度在全球AI应用中属于顶尖水平（对比Midjourney用了约1年达到类似规模）。</p>
+<h3 id="_4">合并收入估算</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>LiblibAI平台</th>
+<th>Lovart</th>
+<th>合计ARR（估）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025年Q3</td>
+<td>~150万</td>
+<td>~3,000万</td>
+<td><strong>~3,200万美元</strong></td>
+</tr>
+<tr>
+<td>2025年底（估）</td>
+<td>~300万</td>
+<td>~5,000万</td>
+<td><strong>~5,300万美元</strong></td>
+</tr>
+<tr>
+<td>2026年中（估）</td>
+<td>~600万</td>
+<td>~8,000-12,000万</td>
+<td><strong>~9,000-13,000万美元</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>注：2026年预测假设Lovart保持60-140%年增长率（考虑星流Agent国内版贡献），LiblibAI平台商业化提速。增长率区间较大，反映不确定性。</p>
+<hr />
+<h2 id="_5">三、可比公司估值对标</h2>
+<h3 id="ai">全球AI创作/设计工具公司</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>估值</th>
+<th>ARR</th>
+<th>PS倍数</th>
+<th>盈利</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Midjourney</td>
+<td>~100亿美元</td>
+<td>~6.3亿美元</td>
+<td><strong>~16倍</strong></td>
+<td>已盈利</td>
+<td>107人，效率极致</td>
+</tr>
+<tr>
+<td>Canva</td>
+<td>~440-480亿美元（隐含）</td>
+<td>~40亿美元</td>
+<td><strong>~11倍</strong></td>
+<td>已盈利</td>
+<td>2.65亿MAU</td>
+</tr>
+<tr>
+<td>Figma</td>
+<td>~110-120亿美元（市值）</td>
+<td>~10亿美元</td>
+<td><strong>~11倍</strong></td>
+<td>接近盈亏平衡</td>
+<td>2025年IPO后回调</td>
+</tr>
+<tr>
+<td>Runway</td>
+<td>~30亿美元</td>
+<td>未披露（估~5,000万）</td>
+<td><strong>~60倍</strong></td>
+<td>未盈利</td>
+<td>AI视频，高估值</td>
+</tr>
+<tr>
+<td><strong>LiblibAI</strong></td>
+<td><strong>~10亿美元</strong></td>
+<td><strong>~5,300万（2025年底估）</strong></td>
+<td><strong>~19倍</strong></td>
+<td><strong>未盈利</strong></td>
+<td>双产品线</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_6">关键发现</h3>
+<ol>
+<li><strong>按2025年底ARR计算，LiblibAI的PS约19倍</strong>——高于已盈利的Midjourney（16倍）和Canva/Figma（11倍），但远低于Runway（60倍）</li>
+<li><strong>如果2026年ARR能达到1亿美元，PS降至10倍</strong>——低于所有可比公司，意味着当前估值偏便宜</li>
+<li><strong>关键变量是Lovart的增长持续性</strong>——如果增速放缓，PS会显得偏高</li>
+</ol>
+<hr />
+<h2 id="_7">四、估值判断：三种情景</h2>
+<h3 id="_8">核心假设</h3>
+<ul>
+<li>估值方法：PS倍数法（未盈利AI公司的标准方法）</li>
+<li>基准：2026年底预计ARR</li>
+<li>合理PS区间：12-25倍（参考可比公司中位数约16倍）</li>
+</ul>
+<h3 id="_9">情景分析</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>2026年底ARR（估）</th>
+<th>合理PS</th>
+<th>合理估值</th>
+<th>对应当前10亿美元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>乐观</strong></td>
+<td>1.5亿美元</td>
+<td>20-25倍</td>
+<td><strong>30-37.5亿美元</strong></td>
+<td>低估2-3倍</td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>1亿美元</td>
+<td>15-20倍</td>
+<td><strong>15-20亿美元</strong></td>
+<td>低估50-100%</td>
+</tr>
+<tr>
+<td><strong>悲观</strong></td>
+<td>6,000万美元</td>
+<td>10-15倍</td>
+<td><strong>6-9亿美元</strong></td>
+<td>合理偏贵</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_10">乐观情景假设</h3>
+<ul>
+<li>Lovart ARR从3,000万→1.2亿美元（4倍增长，考虑基数低+全球扩张+星流Agent）</li>
+<li>LiblibAI平台商业化发力，贡献3,000万美元</li>
+<li>合计约1.5亿美元</li>
+<li>给予20-25倍PS（高增长+赛道龙头溢价）</li>
+<li><strong>合理估值：30-37.5亿美元</strong></li>
+</ul>
+<h3 id="_11">中性情景假设</h3>
+<ul>
+<li>Lovart ARR从3,000万→8,000万美元（竞争加剧，增速回落至160%）</li>
+<li>LiblibAI平台贡献2,000万美元</li>
+<li>合计约1亿美元</li>
+<li>给予15-20倍PS（中等增速，未盈利折价）</li>
+<li><strong>合理估值：15-20亿美元</strong></li>
+</ul>
+<h3 id="_12">悲观情景假设</h3>
+<ul>
+<li>Lovart增长遇瓶颈，ARR停留在5,000万美元</li>
+<li>LiblibAI平台变现困难，贡献1,000万美元</li>
+<li>合计约6,000万美元</li>
+<li>给予10-15倍PS（增速下降，护城河存疑）</li>
+<li><strong>合理估值：6-9亿美元</strong></li>
+</ul>
+<hr />
+<h2 id="_13">五、核心风险因素</h2>
+<h3 id="1">1. 护城河深度存疑（最大风险）</h3>
+<p>AI设计工具的技术壁垒正在快速消解：
+- Adobe Firefly、Canva AI、Figma AI都在加速追赶
+- 字节跳动的即梦AI月访问量已接近千万
+- 模型层快速迭代意味着「工具差异化」窗口期可能很短
+- LiblibAI的护城河到底是<strong>社区生态</strong>还是<strong>产品体验</strong>？如果是后者，大厂追平只是时间问题</p>
+<h3 id="2">2. 盈利路径不清晰</h3>
+<ul>
+<li>Lovart的3,000万ARR背后，GPU推理成本、获客成本、团队成本是多少？</li>
+<li>AI应用的毛利率通常在40-60%（大量算力消耗），远低于传统SaaS的70-80%</li>
+<li>规模越大，亏损可能越大——除非有定价权</li>
+</ul>
+<h3 id="3">3. 国内外市场割裂</h3>
+<ul>
+<li>Lovart海外成功不等于星流Agent国内成功——国内设计市场付费意愿更低</li>
+<li>两个市场需要两套运营体系，管理复杂度翻倍</li>
+</ul>
+<h3 id="4">4. 创始人风格风险</h3>
+<ul>
+<li>陈冕十年换六家公司，长期经营能力待检验</li>
+<li>从「闪电式创业者」到「长期主义经营者」的转变尚未被证明</li>
+</ul>
+<h3 id="5">5. 一级市场流动性风险</h3>
+<ul>
+<li>10亿美元估值的未上市公司，退出渠道有限</li>
+<li>如果C轮融资或IPO不顺利，早期投资者可能面临流动性困境</li>
+</ul>
+<hr />
+<h2 id="_14">六、结论</h2>
+<h3 id="b10">当前估值（B轮投后）：约10亿美元</h3>
+<h3 id="_15">合理估值区间</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>视角</th>
+<th>估值区间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>静态（按2025年底ARR）</td>
+<td>8-15亿美元</td>
+</tr>
+<tr>
+<td>动态（按2026年底ARR预期）</td>
+<td><strong>15-20亿美元</strong>（中性）</td>
+</tr>
+<tr>
+<td>乐观上限</td>
+<td>30-37.5亿美元</td>
+</tr>
+<tr>
+<td>悲观下限</td>
+<td>6-9亿美元</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_16">核心判断</h3>
+<p><strong>当前10亿美元估值，在中性假设下偏便宜，但不算极度低估。</strong></p>
+<p>理由：
+1. Lovart的增长速度确实出色（4个月0→3,000万ARR），证明了产品市场匹配
+2. 双产品线（社区+Agent）的组合在AI创作赛道中是差异化优势
+3. 红杉、CMC、蚂蚁的背书提供了一定的信用溢价
+4. 但AI工具赛道技术迭代极快，今天的领先不保证明天的壁垒
+5. 未盈利+高GPU成本意味着"越大越亏"的风险真实存在</p>
+<p><strong>一句话</strong>：如果Lovart能在2026年证明持续增长能力（ARR破1亿美元），10亿美元就是捡便宜；如果增速放缓、竞争加剧，10亿美元就是高位接盘。</p>
+<hr />
+<h2 id="_17">数据来源</h2>
+<ul>
+<li><a href="https://www.stcn.com/article/detail/3399513.html">LiblibAI完成1.3亿美元B轮（证券时报）</a></li>
+<li><a href="https://finance.sina.com.cn/stock/t/2025-10-23/doc-infuvrat2626622.shtml">400万日活，2500万用户（新浪财经）</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/1960289646727636053">Lovart上线4个月ARR突破3000万美元（知乎）</a></li>
+<li><a href="https://www.36kr.com/p/3531918453234569">LiblibAI融资1.3亿美金（36氪）</a></li>
+<li><a href="https://news.pedaily.cn/202510/556210.shtml">蚂蚁投了LiblibAI（投资界）</a></li>
+<li><a href="https://www.saastr.com/canva-crosses-a-stunning-4b-arr-but-what-would-it-be-worth-today/">Canva ARR突破40亿美元（SaaStr）</a></li>
+<li><a href="https://tech-insider.org/figma-vs-canva-2026-2/">Figma IPO及市值（Tech Insider）</a></li>
+<li><a href="https://finance.sina.com.cn/money/fund/jjzl/2025-02-06/doc-ineiphxm1149964.shtml">Midjourney估值100亿/ARR 6.3亿（新浪财经）</a></li>
+<li><a href="https://www.cbinsights.com/company/liblibai/financials">CBInsights LiblibAI财务数据</a></li>
+</ul>
+<p><em>本文不构成任何投资建议。AI应用公司估值波动极大，以上分析基于公开信息推算，实际情况可能有重大偏差。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/92b59462aa75.html">LiblibAI（演语科技）投资研究报告</a><div class="meta">2026-06-21 · 研究</div></li><li><a href="../r/655813545385.html">演语科技（Evoken）B+ 轮后估值更新</a><div class="meta">2026-06-19 · 估值仓位</div></li><li><a href="../r/b3995b45ceca.html">LiblibAI 投资研究报告</a><div class="meta">2026-06-15 · 研究</div></li><li><a href="../r/41bddb93c9f2.html">LiblibAI 3年5年前瞻推演</a><div class="meta">2026-05-23 · 研究</div></li><li><a href="../r/6ae21636f078.html">LiblibAI 竞争威胁与应对策略深度分析</a><div class="meta">2026-05-23 · 研究</div></li><li><a href="../r/ab1c991c6f4b.html">LiblibAI 竞争地位与护城河深度分析</a><div class="meta">2026-05-23 · 研究</div></li><li><a href="../r/38ddc85cd7cc.html">LiblibAI 市场增长前景深度分析</a><div class="meta">2026-05-23 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

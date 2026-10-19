@@ -1,0 +1,784 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Step 3.5 Flash · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a></div><h1>Step 3.5 Flash</h1><div class="meta"><a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/stepfun-ai__Step-3.5-Flash__README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#1-introduction">1. Introduction</a></li>
+<li><a href="#2-key-capabilities">2. Key Capabilities</a></li>
+<li><a href="#3-performance">3. Performance</a><ul>
+<li><a href="#detailed-benchmarks">Detailed Benchmarks</a></li>
+<li><a href="#recommended-inference-parameters">Recommended Inference Parameters</a></li>
+</ul>
+</li>
+<li><a href="#4-architecture-details">4. Architecture Details</a><ul>
+<li><a href="#41-technical-specifications">4.1 Technical Specifications</a></li>
+<li><a href="#42-mixture-of-experts-moe-routing">4.2 Mixture of Experts (MoE) Routing</a></li>
+<li><a href="#43-multi-token-prediction-mtp">4.3 Multi-Token Prediction (MTP)</a></li>
+</ul>
+</li>
+<li><a href="#5-quick-start">5. Quick Start</a><ul>
+<li><a href="#51-get-your-api-key">5.1 Get Your API Key.</a></li>
+<li><a href="#52-setup">5.2 Setup</a></li>
+<li><a href="#53-implementation-example">5.3 Implementation Example</a></li>
+</ul>
+</li>
+<li><a href="#6-local-deployment">6. Local Deployment</a><ul>
+<li><a href="#61-vllm">6.1 vLLM</a></li>
+<li><a href="#62-sglang">6.2 SGLang</a></li>
+<li><a href="#63-transformers-debug-verification">6.3 Transformers (Debug / Verification)</a></li>
+<li><a href="#64-llamacpp">6.4 llama.cpp</a></li>
+</ul>
+</li>
+<li><a href="#7-using-step-35-flash-on-agent-platforms">7. Using Step 3.5 Flash on Agent Platforms</a><ul>
+<li><a href="#71-claude-code-codex">7.1 Claude Code &amp; Codex</a></li>
+</ul>
+</li>
+<li><a href="#8-known-issues-and-future-directions">8. Known Issues and Future Directions</a></li>
+<li><a href="#9-co-developing-the-future">9. Co-Developing the Future</a></li>
+<li><a href="#citation">📜 Citation</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+</div>
+</details><article><div align="center">
+
+<div align="center" style="display: flex; justify-content: center; align-items: center;">
+  <img src="stepfun.svg" width="25" style="margin-right: 10px;"/>
+  <h1 style="margin: 0; border-bottom: none;">Step 3.5 Flash</h1>
+</div>
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/stepfun-ai/Step-3.5-Flash)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20HF-StepFun/STEP3p5-preview)](https://huggingface.co/stepfun-ai/Step-3.5-Flash)
+[![ModelScope](https://img.shields.io/badge/ModelScope-StepFun/STEP3p5-preview)](https://modelscope.cn/models/stepfun-ai/Step-3.5-Flash)
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white)](https://discord.gg/RcMJhNVAQc)
+[![Webpage](https://img.shields.io/badge/Webpage-Blog-blue)](https://static.stepfun.com/blog/step-3.5-flash/)
+[![Paper](https://img.shields.io/badge/Arxiv-TechReport-red)](https://arxiv.org/abs/2602.10604)
+[![License](https://img.shields.io/badge/License-Apache%202.0-green)]()
+[![Chat with the model on OpenRouter](https://img.shields.io/badge/Chat%20with%20the%20model-OpenRouter-5B3DF5?logo=chatbot&logoColor=white)](https://openrouter.ai/chat?models=stepfun/step-3.5-flash:free)
+[![Chat with the model on HuggingfaceSpace](https://img.shields.io/badge/Chat%20with%20the%20model-HuggingfaceSpace-5B3DF5?logo=chatbot&logoColor=white)](https://huggingface.co/spaces/stepfun-ai/Step-3.5-Flash)
+</div>
+
+<h2 id="1-introduction">1. Introduction</h2>
+<p><strong>Step 3.5 Flash</strong> (<a href="https://static.stepfun.com/blog/step-3.5-flash/">visit website</a>) is our most capable open-source foundation model, engineered to deliver frontier reasoning and agentic capabilities with exceptional efficiency. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token. This "intelligence density" allows it to rival the reasoning depth of top-tier proprietary models, while maintaining the agility required for real-time interaction.</p>
+<h2 id="2-key-capabilities">2. Key Capabilities</h2>
+<ul>
+<li>
+<p><strong>Deep Reasoning at Speed</strong>: While chatbots are built for reading, agents must reason fast. Powered by 3-way Multi-Token Prediction (MTP-3), Step 3.5 Flash achieves a generation throughput of <strong>100–300 tok/s</strong> in typical usage (peaking at <strong>350 tok/s</strong> for single-stream coding tasks). This allows for complex, multi-step reasoning chains with immediate responsiveness.</p>
+</li>
+<li>
+<p><strong>A Robust Engine for Coding &amp; Agents</strong>: Step 3.5 Flash is purpose-built for agentic tasks, integrating a scalable RL framework that drives consistent self-improvement. It achieves <strong>74.4% on SWE-bench Verified</strong> and <strong>51.0% on Terminal-Bench 2.0</strong>, proving its ability to handle sophisticated, long-horizon tasks with unwavering stability.</p>
+</li>
+<li>
+<p><strong>Efficient Long Context</strong>: The model supports a cost-efficient <strong>256K context window</strong> by employing a 3:1 Sliding Window Attention (SWA) ratio—integrating three SWA layers for every full-attention layer. This hybrid approach ensures consistent performance across massive datasets or long codebases while significantly reducing the computational overhead typical of standard long-context models.</p>
+</li>
+<li>
+<p><strong>Accessible Local Deployment</strong>: Optimized for accessibility, Step 3.5 Flash brings elite-level intelligence to local environments. It runs securely on high-end consumer hardware (e.g., Mac Studio M4 Max, NVIDIA DGX Spark), ensuring data privacy without sacrificing performance.</p>
+</li>
+</ul>
+<h2 id="3-performance">3. Performance</h2>
+<p>Step 3.5 Flash delivers performance parity with leading closed-source systems while remaining open and efficient.</p>
+<p><img alt="" src="step-bar-chart.png" /></p>
+<p>Performance of Step 3.5 Flash measured across <strong>Reasoning</strong>, <strong>Coding</strong>, and <strong>Agentic Abilities</strong>. Open-source models (left) are sorted by their total parameter count, while top-tier proprietary models are shown on the right. xbench-DeepSearch scores are sourced from <a href="https://xbench.org/agi/aisearch">official publications</a> for consistency. The shadowed bars represent the enhanced performance of Step 3.5 Flash using <a href="https://arxiv.org/pdf/2601.05593">Parallel Thinking</a>.</p>
+<h3 id="detailed-benchmarks">Detailed Benchmarks</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Benchmark</th>
+<th>Step 3.5 Flash</th>
+<th>DeepSeek V3.2</th>
+<th>Kimi K2 Thinking / K2.5</th>
+<th>GLM-4.7</th>
+<th>MiniMax M2.1</th>
+<th>MiMo-V2 Flash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td># Activated Params</td>
+<td>11B</td>
+<td>37B</td>
+<td>32B</td>
+<td>32B</td>
+<td>10B</td>
+<td>15B</td>
+</tr>
+<tr>
+<td># Total Params (MoE)</td>
+<td>196B</td>
+<td>671B</td>
+<td>1T</td>
+<td>355B</td>
+<td>230B</td>
+<td>309B</td>
+</tr>
+<tr>
+<td>Est. decoding cost @ 128K context, Hopper GPU**</td>
+<td><strong>1.0x</strong><br>100 tok/s, MTP-3, EP8</td>
+<td><strong>6.0x</strong><br>33 tok/s, MTP-1, EP32</td>
+<td><strong>18.9x</strong><br>33 tok/s, no MTP, EP32</td>
+<td><strong>18.9x</strong><br>100 tok/s, MTP-3, EP8</td>
+<td><strong>3.9x</strong><br>100 tok/s, MTP-3, EP8</td>
+<td><strong>1.2x</strong><br>100 tok/s, MTP-3, EP8</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>Agent</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>τ²-Bench</td>
+<td>88.2</td>
+<td>80.3 (85.2*)</td>
+<td>74.3<em>/85.4</em></td>
+<td>87.4</td>
+<td>86.6*</td>
+<td>80.3 (84.1*)</td>
+</tr>
+<tr>
+<td>BrowseComp</td>
+<td>51.6</td>
+<td>51.4</td>
+<td>41.5* / 60.6</td>
+<td>52.0</td>
+<td>47.4</td>
+<td>45.4</td>
+</tr>
+<tr>
+<td>BrowseComp (w/ Context Manager)</td>
+<td>69.0</td>
+<td>67.6</td>
+<td>60.2/74.9</td>
+<td>67.5</td>
+<td>62.0</td>
+<td>58.3</td>
+</tr>
+<tr>
+<td>BrowseComp-ZH</td>
+<td>66.9</td>
+<td>65.0</td>
+<td>62.3 / 62.3*</td>
+<td>66.6</td>
+<td>47.8*</td>
+<td>51.2*</td>
+</tr>
+<tr>
+<td>BrowseComp-ZH (w/ Context Manager)</td>
+<td>73.7</td>
+<td>—</td>
+<td>—/—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>GAIA (no file)</td>
+<td>84.5</td>
+<td>75.1*</td>
+<td>75.6<em>/75.9</em></td>
+<td>61.9*</td>
+<td>64.3*</td>
+<td>78.2*</td>
+</tr>
+<tr>
+<td>xbench-DeepSearch (2025.05)</td>
+<td>83.7</td>
+<td>78.0*</td>
+<td>76.0<em>/76.7</em></td>
+<td>72.0*</td>
+<td>68.7*</td>
+<td>69.3*</td>
+</tr>
+<tr>
+<td>xbench-DeepSearch (2025.10)</td>
+<td>56.3</td>
+<td>55.7*</td>
+<td>—/40+</td>
+<td>52.3*</td>
+<td>43.0*</td>
+<td>44.0*</td>
+</tr>
+<tr>
+<td>ResearchRubrics</td>
+<td>65.3</td>
+<td>55.8*</td>
+<td>56.2<em>/59.5</em></td>
+<td>62.0*</td>
+<td>60.2*</td>
+<td>54.3*</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>Reasoning</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AIME 2025</td>
+<td>97.3</td>
+<td>93.1</td>
+<td>94.5/96.1</td>
+<td>95.7</td>
+<td>83.0</td>
+<td>94.1 (95.1*)</td>
+</tr>
+<tr>
+<td>HMMT 2025 (Feb.)</td>
+<td>98.4</td>
+<td>92.5</td>
+<td>89.4/95.4</td>
+<td>97.1</td>
+<td>71.0*</td>
+<td>84.4 (95.4*)</td>
+</tr>
+<tr>
+<td>HMMT 2025 (Nov.)</td>
+<td>94.0</td>
+<td>90.2</td>
+<td>89.2*/—</td>
+<td>93.5</td>
+<td>74.3*</td>
+<td>91.0*</td>
+</tr>
+<tr>
+<td>IMOAnswerBench</td>
+<td>85.4</td>
+<td>78.3</td>
+<td>78.6/81.8</td>
+<td>82.0</td>
+<td>60.4*</td>
+<td>80.9*</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>Coding</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LiveCodeBench-V6</td>
+<td>86.4</td>
+<td>83.3</td>
+<td>83.1/85.0</td>
+<td>84.9</td>
+<td>—</td>
+<td>80.6 (81.6*)</td>
+</tr>
+<tr>
+<td>SWE-bench Verified</td>
+<td>74.4</td>
+<td>73.1</td>
+<td>71.3/76.8</td>
+<td>73.8</td>
+<td>74.0</td>
+<td>73.4</td>
+</tr>
+<tr>
+<td>Terminal-Bench 2.0</td>
+<td>51.0</td>
+<td>46.4</td>
+<td>35.7*/50.8</td>
+<td>41.0</td>
+<td>47.9</td>
+<td>38.5</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Notes</strong>:
+1. "—" indicates the score is not publicly available or not tested.
+2. "<em>" indicates the original score was inaccessible or lower than our reproduced, so we report the evaluation under the same test conditions as Step 3.5 Flash to ensure fair comparability.
+3. </em><em>BrowseComp (with Context Manager)</em><em>: When the effective context length exceeds a predefined threshold, the agent resets the context and restarts the agent loop. By contrast, Kimi K2.5 and DeepSeek-V3.2 used a "discard-all" strategy.
+4. </em><em>Decoding Cost</em>*: Estimates are based on a methodology similar to, but more accurate than, the approach described arxiv.org/abs/2507.19427</p>
+<h3 id="recommended-inference-parameters">Recommended Inference Parameters</h3>
+<ol>
+<li>For general chat domain, we suggest: <code>temperature=0.6, top_p=0.95</code></li>
+<li>For reasoning / agent scenario, we recommend: <code>temperature=1.0, top_p=0.95</code>.</li>
+</ol>
+<h2 id="4-architecture-details">4. Architecture Details</h2>
+<p>Step 3.5 Flash is built on a <strong>Sparse Mixture-of-Experts (MoE)</strong> transformer architecture, optimized for high throughput and low VRAM usage during inference.</p>
+<h3 id="41-technical-specifications">4.1 Technical Specifications</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Backbone</strong></td>
+<td style="text-align: left;">45-layer Transformer (4,096 hidden dim)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Context Window</strong></td>
+<td style="text-align: left;">256K</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Vocabulary</strong></td>
+<td style="text-align: left;">128,896 tokens</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total Parameters</strong></td>
+<td style="text-align: left;"><strong>196.81B</strong> (196B Backbone + 0.81B Head)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Active Parameters</strong></td>
+<td style="text-align: left;"><strong>~11B</strong> (per token generation)</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="42-mixture-of-experts-moe-routing">4.2 Mixture of Experts (MoE) Routing</h3>
+<p>Unlike traditional dense models, Step 3.5 Flash uses a fine-grained routing strategy to maximize efficiency:
+- <strong>Fine-Grained Experts</strong>: 288 routed experts per layer + 1 shared expert (always active).
+- <strong>Sparse Activation</strong>: Only the Top-8 experts are selected per token.
+- <strong>Result</strong>: The model retains the "memory" of a 196B parameter model but executes with the speed of an 11B model. </p>
+<h3 id="43-multi-token-prediction-mtp">4.3 Multi-Token Prediction (MTP)</h3>
+<p>To improve inference speed, we utilize a specialized MTP Head consisting of a sliding-window attention mechanism and a dense Feed-Forward Network (FFN). This module predicts 4 tokens simultaneously in a single forward pass, significantly accelerating inference without degrading quality.</p>
+<h2 id="5-quick-start">5. Quick Start</h2>
+<p>You can get started with Step 3.5 Flash in minutes using Cloud API via our supported providers.</p>
+<h3 id="51-get-your-api-key">5.1 Get Your API Key.</h3>
+<p>Sign up at <a href="https://openrouter.ai">OpenRouter</a> or <a href="https://platform.stepfun.ai">platform.stepfun.ai</a>, and grab your API key. </p>
+<blockquote>
+<p>OpenRouter now offers free trial for Step 3.5 Flash.</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Provider</th>
+<th style="text-align: left;">Website</th>
+<th style="text-align: left;">Base URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">OpenRouter</td>
+<td style="text-align: left;">https://openrouter.ai</td>
+<td style="text-align: left;">https://openrouter.ai/api/v1</td>
+</tr>
+<tr>
+<td style="text-align: left;">StepFun</td>
+<td style="text-align: left;">https://platform.stepfun.ai</td>
+<td style="text-align: left;">https://api.stepfun.ai/v1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="52-setup">5.2 Setup</h3>
+<p>Install the standard OpenAI SDK (compatible with both platforms).</p>
+<pre><code class="language-bash">pip install --upgrade &quot;openai&gt;=1.0&quot;
+</code></pre>
+<p>Note: OpenRouter supports multiple SDKs. Learn more <a href="https://openrouter.ai/docs/quickstart">here</a>.</p>
+<h3 id="53-implementation-example">5.3 Implementation Example</h3>
+<p>This example shows starting a chat with Step 3.5 Flash.</p>
+<pre><code class="language-python">from openai import OpenAI
+
+client = OpenAI(
+    api_key=&quot;YOUR_API_KEY&quot;,
+    base_url=&quot;https://api.stepfun.ai/v1&quot;, # or &quot;https://openrouter.ai/api/v1&quot;
+    # Optional: OpenRouter headers for app rankings
+    default_headers={
+        &quot;HTTP-Referer&quot;: &quot;&lt;YOUR_SITE_URL&gt;&quot;, 
+        &quot;X-Title&quot;: &quot;&lt;YOUR_SITE_NAME&gt;&quot;,
+    }
+)
+
+completion = client.chat.completions.create(
+    model=&quot;step-3.5-flash&quot;, # Use &quot;stepfun/step-3.5-flash&quot; for OpenRouter
+    messages=[
+        {
+            &quot;role&quot;: &quot;system&quot;,
+            &quot;content&quot;: &quot;You are an AI chat assistant provided by StepFun. You are good at Chinese, English, and many other languages.&quot;,
+        },
+        {
+            &quot;role&quot;: &quot;user&quot;,
+            &quot;content&quot;: &quot;Introduce StepFun's artificial intelligence capabilities.&quot;
+        },
+    ],
+)
+
+print(completion.choices[0].message.content)
+</code></pre>
+<h2 id="6-local-deployment">6. Local Deployment</h2>
+<p>Step 3.5 Flash is optimized for local inference and supports industry-standard backends including vLLM, SGLang, Hugging Face Transformers and llama.cpp.</p>
+<h3 id="61-vllm">6.1 vLLM</h3>
+<p>We recommend using the latest nightly build of vLLM.
+1. Install vLLM.</p>
+<pre><code class="language-bash"># via Docker
+docker pull vllm/vllm-openai:nightly
+
+# or via pip (nightly wheels)
+pip install -U vllm --pre \
+  --index-url https://pypi.org/simple \
+  --extra-index-url https://wheels.vllm.ai/nightly
+</code></pre>
+<ol start="2">
+<li>Launch the server.</li>
+</ol>
+<p><strong>Note</strong>: Full MTP3 support is not yet available in vLLM. We are actively working on a Pull Request to integrate this feature, which is expected to significantly enhance decoding performance.</p>
+<ul>
+<li>For fp8 model</li>
+</ul>
+<pre><code class="language-bash">vllm serve &lt;MODEL_PATH_OR_HF_ID&gt; \
+  --served-model-name step3p5-flash \
+  --tensor-parallel-size 8 \
+  --enable-expert-parallel \
+  --disable-cascade-attn \
+  --reasoning-parser step3p5 \
+  --enable-auto-tool-choice \
+  --tool-call-parser step3p5 \
+  --hf-overrides '{&quot;num_nextn_predict_layers&quot;: 1}' \
+  --speculative_config '{&quot;method&quot;: &quot;step3p5_mtp&quot;, &quot;num_speculative_tokens&quot;: 1}' \
+  --trust-remote-code \
+  --quantization fp8
+</code></pre>
+<ul>
+<li>For bf16 model</li>
+</ul>
+<pre><code class="language-bash">vllm serve &lt;MODEL_PATH_OR_HF_ID&gt; \
+  --served-model-name step3p5-flash \
+  --tensor-parallel-size 8 \
+  --enable-expert-parallel \
+  --disable-cascade-attn \
+  --reasoning-parser step3p5 \
+  --enable-auto-tool-choice \
+  --tool-call-parser step3p5 \
+  --hf-overrides '{&quot;num_nextn_predict_layers&quot;: 1}' \
+  --speculative_config '{&quot;method&quot;: &quot;step3p5_mtp&quot;, &quot;num_speculative_tokens&quot;: 1}' \
+  --trust-remote-code    
+</code></pre>
+<p>You can also refer to the <a href="https://github.com/vllm-project/recipes/blob/main/StepFun/Step-3.5-Flash.md">Step-3.5-Flash</a> recipe.</p>
+<h3 id="62-sglang">6.2 SGLang</h3>
+<ol>
+<li>Install SGLang.</li>
+</ol>
+<pre><code class="language-bash"># via Docker
+docker pull lmsysorg/sglang:dev-pr-18084
+# or from source (pip)
+pip install &quot;sglang[all] @ git+https://github.com/sgl-project/sglang.git&quot;
+</code></pre>
+<ol start="2">
+<li>Launch the server.
+  - For bf16 model</li>
+</ol>
+<pre><code class="language-bash">sglang serve --model-path &lt;MODEL_PATH_OR_HF_ID&gt; \
+  --served-model-name step3p5-flash \
+  --tp-size 8 \
+  --tool-call-parser step3p5 \
+  --reasoning-parser step3p5 \
+  --speculative-algorithm EAGLE \
+  --speculative-num-steps 3 \
+  --speculative-eagle-topk 1 \
+  --speculative-num-draft-tokens 4 \
+  --enable-multi-layer-eagle \
+  --host 0.0.0.0 \
+  --port 8000
+</code></pre>
+<ul>
+<li>For fp8 model</li>
+</ul>
+<pre><code class="language-bash">sglang serve --model-path &lt;MODEL_PATH_OR_HF_ID&gt; \
+  --served-model-name step3p5-flash \
+  --tp-size 8 \
+  --ep-size 8 \
+  --tool-call-parser step3p5 \
+  --reasoning-parser step3p5 \
+  --speculative-algorithm EAGLE \
+  --speculative-num-steps 3 \
+  --speculative-eagle-topk 1 \
+  --speculative-num-draft-tokens 4 \
+  --enable-multi-layer-eagle \
+  --host 0.0.0.0 \
+  --port 8000
+</code></pre>
+<h3 id="63-transformers-debug-verification">6.3 Transformers (Debug / Verification)</h3>
+<p>Use this snippet for quick functional verification. For high-throughput serving, use vLLM or SGLang.</p>
+<pre><code class="language-python">from transformers import AutoModelForCausalLM, AutoTokenizer
+
+MODEL_PATH = &quot;&lt;MODEL_PATH_OR_HF_ID&gt;&quot;
+
+# 1. Setup
+tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+model = AutoModelForCausalLM.from_pretrained(
+    MODEL_PATH,
+    trust_remote_code=True,
+    torch_dtype=&quot;auto&quot;,
+    device_map=&quot;auto&quot;,
+)
+
+# 2. Prepare Input
+messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Explain the significance of the number 42.&quot;}]
+inputs = tokenizer.apply_chat_template(
+    messages,
+    tokenize=True,
+    add_generation_prompt=True,
+    return_dict=True,
+    return_tensors=&quot;pt&quot;,
+).to(model.device)
+
+# 3. Generate
+generated_ids = model.generate(**inputs, max_new_tokens=128, do_sample=False)
+output_text = tokenizer.decode(generated_ids[0][inputs.input_ids.shape[1]:], skip_special_tokens=True)
+
+print(output_text)
+</code></pre>
+<h3 id="64-llamacpp">6.4 llama.cpp</h3>
+<h4 id="system-requirements">System Requirements</h4>
+<ul>
+<li>GGUF Model Weights(int4): 111.5 GB</li>
+<li>Runtime Overhead: ~7 GB</li>
+<li>Minimum VRAM: 120 GB (e.g., Mac studio, DGX-Spark, AMD Ryzen AI Max+ 395)</li>
+<li>Recommended: 128GB unified memory</li>
+</ul>
+<h4 id="steps">Steps</h4>
+<ol>
+<li>Use official llama.cpp:<blockquote>
+<p>the folder <code>Step-3.5-Flash/tree/main/llama.cpp</code> is <strong>obsolete</strong></p>
+</blockquote>
+</li>
+</ol>
+<pre><code class="language-bash">git clone https://github.com/ggml-org/llama.cpp
+cd llama.cpp
+</code></pre>
+<ol start="2">
+<li>Build llama.cpp on Mac:</li>
+</ol>
+<pre><code class="language-bash">cmake -S . -B build-macos \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DGGML_METAL=ON \
+  -DGGML_ACCELERATE=ON \
+  -DLLAMA_BUILD_EXAMPLES=ON \
+  -DLLAMA_BUILD_COMMON=ON \
+  -DGGML_LTO=ON
+cmake --build build-macos -j8
+</code></pre>
+<ol start="3">
+<li>Build llama.cpp on DGX-Spark:</li>
+</ol>
+<pre><code class="language-bash">cmake -S . -B build-cuda \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DGGML_CUDA=ON \
+  -DGGML_CUDA_GRAPHS=ON \
+  -DLLAMA_CURL=OFF \
+  -DLLAMA_BUILD_EXAMPLES=ON \
+  -DLLAMA_BUILD_COMMON=ON
+cmake --build build-cuda -j8
+</code></pre>
+<ol start="4">
+<li>Build llama.cpp on AMD Windows:</li>
+</ol>
+<pre><code class="language-bash">cmake -S . -B build-vulkan \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DLLAMA_CURL=OFF \
+  -DGGML_OPENMP=ON \
+  -DGGML_VULKAN=ON
+cmake --build build-vulkan -j8
+</code></pre>
+<ol start="5">
+<li>Run with llama-cli</li>
+</ol>
+<pre><code class="language-bash">./llama-cli -m step3.5_flash_Q4_K_S.gguf -c 16384 -b 2048 -ub 2048 -fa on --temp 1.0 -p &quot;What's your name?&quot;
+</code></pre>
+<ol start="6">
+<li>Test performance with llama-batched-bench:</li>
+</ol>
+<pre><code class="language-bash">./llama-batched-bench -m step3.5_flash_Q4_K_S.gguf -c 32768 -b 2048 -ub 2048 -npp 0,2048,8192,16384,32768 -ntg 128 -npl 1
+</code></pre>
+<h2 id="7-using-step-35-flash-on-agent-platforms">7. Using Step 3.5 Flash on Agent Platforms</h2>
+<h3 id="71-claude-code-codex">7.1 Claude Code &amp; Codex</h3>
+<p>It's straightforward to add Step 3.5 Flash to the list of models in most coding environments. See below for the instructions for configuring Claude Code and Codex to use Step 3.5 Flash.</p>
+<h4 id="711-prerequisites">7.1.1 Prerequisites</h4>
+<p>Sign up at StepFun.ai or OpenRouter and grab an API key, as mentioned in the Quick Start.</p>
+<h4 id="712-environment-setup">7.1.2 Environment setup</h4>
+<p>Claude Code and Codex rely on Node.js. We recommend installing Node.js version &gt; v20. You can install Node via nvm.</p>
+<p><strong>Mac/Linux</strong>:</p>
+<pre><code class="language-bash"># Install nvm on Mac/Linux via curl：
+# Step 1
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
+# Copy the full command
+export NVM_DIR=&quot;$HOME/.nvm&quot;
+[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm
+[ -s &quot;$NVM_DIR/bash_completion&quot; ] &amp;&amp; \. &quot;$NVM_DIR/bash_completion&quot;
+
+# Users in China can set up npm mirror
+config set registry https://registry.npmmirror.com
+
+# Step 2
+nvm install v22
+
+# Make sure Node.js is installed
+node --version
+
+npm --version
+</code></pre>
+<p><strong>Windows</strong>:
+You can download the installation file (<code>nvm-setup.exe</code>) from <a href="https://github.com/coreybutler/nvm-windows/releases">https://github.com/coreybutler/nvm-windows/releases</a>. Follow the instructions to install nvm. Run nvm commands to make sure it is installed.</p>
+<h4 id="713-use-step-35-flash-on-claude-code">7.1.3 Use Step 3.5 Flash on Claude Code</h4>
+<ol>
+<li>Install Claude Code.</li>
+</ol>
+<pre><code class="language-bash"># install claude code via npm
+npm install -g @anthropic-ai/claude-code
+
+# test if the installation is successful
+claude --version 
+</code></pre>
+<ol start="2">
+<li>Configure Claude Code.</li>
+</ol>
+<p>To accommodate diverse workflows in Claude Code, we support both <strong>Anthropic-style</strong> and <strong>OpenAI-style</strong> APIs. </p>
+<p><strong>Option A: Anthropic API style</strong>:</p>
+<blockquote>
+<p>If you intend to use the <strong>OpenRouter</strong> API, refer to the OpenRouter integration guide.  </p>
+</blockquote>
+<p>Step 1: Edit Claude Settings. Update <code>~/.claude/settings.json</code>.</p>
+<blockquote>
+<p>You only need to modify the fields shown below. Leave the rest of the file unchanged.</p>
+</blockquote>
+<p><code>json
+  {
+  "env": {
+    "ANTHROPIC_API_KEY": "API_KEY_from_StepFun",
+    "ANTHROPIC_BASE_URL": "https://api.stepfun.ai/"
+  },
+  "model": "step-3.5-flash"
+  }</code>
+  Step 2: Start Claude Code.</p>
+<p>Save the file, and then start Claude Code. Run <code>/status</code> to confirm the model and base URL.</p>
+<p>```txt
+  ❯ /status
+  ─────────────────────────────────────────────────────────────────────────────────
+  Settings:  Status   Config   Usage  (←/→ or tab to cycle)</p>
+<p>Version: 2.1.1
+  Session name: /rename to add a name
+  Session ID: 676dae61-259d-4eef-8c2f-0f1641600553
+  cwd: /Users/step-test/
+  Auth token: none
+  API key: ANTHROPIC_API_KEY
+  Anthropic base URL: https://api.stepfun.ai/</p>
+<p>Model: step-3.5-flash
+  Setting sources: User settings
+  ```</p>
+<p><strong>Option B: OpenAI API style</strong></p>
+<blockquote>
+<p>Note: OpenAI API style here refers to the <code>chat/completions/</code> format.</p>
+<p>We recommend using <code>claude-code-router</code>. For details, see <a href="https://github.com/musistudio/claude-code-router">https://github.com/musistudio/claude-code-router</a>.</p>
+</blockquote>
+<p>After Claude Code is installed, install <code>claude-code-router</code> :</p>
+<p>```bash
+  # install ccr via npm
+  npm install -g @musistudio/claude-code-router</p>
+<p># validate it is installed
+  ccr -v
+  ```</p>
+<p>Add the following configurations to <code>~/.claude-code-router/config.json</code>.</p>
+<p><code>json
+  {
+  "PORT": 3456,
+  "Providers": [
+    {
+      "name": "stepfun-api",
+      "api_base_url": "https://api.stepfun.com/v1/chat/completions",
+      "api_key": "StepFun_API_KEY",
+      "models": ["step-3.5-flash"],
+      "transformer":{
+           "step-3.5-flash": { "use": ["OpenAI"]}
+      }
+    }
+  ],
+  "Router": {
+    "default": "stepfun-api,step-3.5-flash",
+    "background": "stepfun-api,step-3.5-flash",
+    "think": "stepfun-api,step-3.5-flash",
+    "longContext": "stepfun-api,step-3.5-flash",
+    "webSearch": "stepfun-api,step-3.5-flash"
+  }
+  }</code>
+  You can now start Claude Code:</p>
+<p>```bash
+  # Start Claude
+  ccr code </p>
+<p># restart ccr if configs are changed
+  ccr restart 
+  ```</p>
+<h4 id="714-use-step-35-flash-on-codex">7.1.4 Use Step 3.5 Flash on Codex</h4>
+<ol>
+<li>Install Codex</li>
+</ol>
+<pre><code class="language-bash"># Install codex via npm
+npm install -g @openai/codex
+
+# Test if it is installed
+codex --version
+</code></pre>
+<ol start="2">
+<li>Configure Codex
+Add the following settings to <code>~/.codex/config.toml</code>, keeping the rest of the settings as they are.</li>
+</ol>
+<pre><code class="language-json">model=&quot;step-3.5-flash&quot;
+model_provider = &quot;stepfun-chat&quot;
+preferred_auth_method = &quot;apikey&quot;
+
+# configure the provider
+[model_providers.stepfun-chat]
+name = &quot;OpenAI using response&quot;
+base_url = &quot;https://api.stepfun.com/v1&quot;
+env_key = &quot;OPENAI_API_KEY&quot;
+wire_api = &quot;chat&quot;
+query_params = {}
+</code></pre>
+<p>For Codex, <code>wire_api</code> only supports <code>chat</code> . If you use the <code>responses</code> mode, you'll need to change to <code>chat</code>. Please also switch <code>model_provider</code> to the newly configured <code>stepfun-chat</code>.</p>
+<p>When finishing the configuration, run codex in a new Terminal window to start Codex. Run <code>/status</code> to check the configuration.</p>
+<pre><code class="language-bash">/status
+📂 Workspace
+  • Path: /Users/step-test/
+  • Approval Mode: on-request
+  • Sandbox: workspace-write
+  • AGENTS files: (none)
+
+🧠 Model
+  • Name: step-3.5-flash
+  • Provider: Stepfun-chat
+
+💻 Client
+  • CLI Version: 0.40.0
+</code></pre>
+<h4 id="715-use-step-35-flash-on-step-deepresearch-deepresearch">7.1.5 Use Step 3.5 Flash on Step-DeepResearch (DeepResearch)</h4>
+<ol>
+<li>Use the reference environment setup below and configure <code>MODEL_NAME</code> to <code>Step-3.5-Flash</code>. <a href="https://github.com/stepfun-ai/StepDeepResearch?tab=readme-ov-file#1-environment-setup">https://github.com/stepfun-ai/StepDeepResearch?tab=readme-ov-file#1-environment-setup</a></li>
+</ol>
+<h2 id="8-known-issues-and-future-directions">8. Known Issues and Future Directions</h2>
+<ol>
+<li><strong>Token Efficiency</strong>. Step 3.5 Flash achieves frontier-level agentic intelligence but currently relies on longer generation trajectories than Gemini 3.0 Pro to reach comparable quality.</li>
+<li><strong>Efficient Universal Mastery</strong>. We aim to unify generalist versatility with deep domain expertise. To achieve this efficiently, we are advancing variants of on-policy distillation, allowing the model to internalize expert behaviors with higher sample efficiency.</li>
+<li><strong>RL for More Agentic Tasks</strong>. While Step 3.5 Flash demonstrates competitive performance on academic agentic benchmarks, the next frontier of agentic AI necessitates the application of RL to intricate, expert-level tasks found in professional work, engineering, and research.</li>
+<li><strong>Operational Scope and Constraints</strong>. Step 3.5 Flash is tailored for coding and work-centric tasks, but may experience reduced stability during distribution shifts. This typically occurs in highly specialized domains or long-horizon, multi-turn dialogues, where the model may exhibit repetitive reasoning, mixed-language outputs, or inconsistencies in time and identity awareness.</li>
+</ol>
+<h2 id="9-co-developing-the-future">9. Co-Developing the Future</h2>
+<p>We view our roadmap as a living document, evolving continuously based on real-world usage and developer feedback.
+As we work to shape the future of AGI by expanding broad model capabilities, we want to ensure we are solving the right problems. We invite you to be part of this continuous feedback loop—your insights directly influence our priorities.</p>
+<ul>
+<li><strong>Join the Conversation</strong>: Our Discord community is the primary hub for brainstorming future architectures, proposing capabilities, and getting early access updates 🚀</li>
+<li><strong>Report Friction</strong>: Encountering limitations? You can open an issue on GitHub or flag it directly in our Discord support channels.</li>
+</ul>
+<h2 id="citation">📜 Citation</h2>
+<p>If you find this project useful in your research, please cite our technical report:</p>
+<pre><code class="language-tex">@misc{huang2026step35flashopen,
+      title={Step 3.5 Flash: Open Frontier-Level Intelligence with 11B Active Parameters}, 
+      author={Ailin Huang and Ang Li and Aobo Kong and Bin Wang and Binxing Jiao and Bo Dong and Bojun Wang and Boyu Chen and Brian Li and Buyun Ma and Chang Su and Changxin Miao and Changyi Wan and Chao Lou and Chen Hu and Chen Xu and Chenfeng Yu and Chengting Feng and Chengyuan Yao and Chunrui Han and Dan Ma and Dapeng Shi and Daxin Jiang and Dehua Ma and Deshan Sun and Di Qi and Enle Liu and Fajie Zhang and Fanqi Wan and Guanzhe Huang and Gulin Yan and Guoliang Cao and Guopeng Li and Han Cheng and Hangyu Guo and Hanshan Zhang and Hao Nie and Haonan Jia and Haoran Lv and Hebin Zhou and Hekun Lv and Heng Wang and Heung-Yeung Shum and Hongbo Huang and Hongbo Peng and Hongyu Zhou and Hongyuan Wang and Houyong Chen and Huangxi Zhu and Huimin Wu and Huiyong Guo and Jia Wang and Jian Zhou and Jianjian Sun and Jiaoren Wu and Jiaran Zhang and Jiashu Lv and Jiashuo Liu and Jiayi Fu and Jiayu Liu and Jie Cheng and Jie Luo and Jie Yang and Jie Zhou and Jieyi Hou and Jing Bai and Jingcheng Hu and Jingjing Xie and Jingwei Wu and Jingyang Zhang and Jishi Zhou and Junfeng Liu and Junzhe Lin and Ka Man Lo and Kai Liang and Kaibo Liu and Kaijun Tan and Kaiwen Yan and Kaixiang Li and Kang An and Kangheng Lin and Lei Yang and Liang Lv and Liang Zhao and Liangyu Chen and Lieyu Shi and Liguo Tan and Lin Lin and Lina Chen and Luck Ma and Mengqiang Ren and Michael Li and Ming Li and Mingliang Li and Mingming Zhang and Mingrui Chen and Mitt Huang and Na Wang and Peng Liu and Qi Han and Qian Zhao and Qinglin He and Qinxin Du and Qiuping Wu and Quan Sun and Rongqiu Yang and Ruihang Miao and Ruixin Han and Ruosi Wan and Ruyan Guo and Shan Wang and Shaoliang Pang and Shaowen Yang and Shengjie Fan and Shijie Shang and Shiliang Yang and Shiwei Li and Shuangshuang Tian and Siqi Liu and Siye Wu and Siyu Chen and Song Yuan and Tiancheng Cao and Tianchi Yue and Tianhao Cheng and Tianning Li and Tingdan Luo and Wang You and Wei Ji and Wei Yuan and Wei Zhang and Weibo Wu and Weihao Xie and Wen Sun and Wenjin Deng and Wenzhen Zheng and Wuxun Xie and Xiangfeng Wang and Xiangwen Kong and Xiangyu Liu and Xiangyu Zhang and Xiaobo Yang and Xiaojia Liu and Xiaolan Yuan and Xiaoran Jiao and Xiaoxiao Ren and Xiaoyun Zhang and Xin Li and Xin Liu and Xin Wu and Xing Chen and Xingping Yang and Xinran Wang and Xu Zhao and Xuan He and Xuanti Feng and Xuedan Cai and Xuqiang Zhou and Yanbo Yu and Yang Li and Yang Xu and Yanlin Lai and Yanming Xu and Yaoyu Wang and Yeqing Shen and Yibo Zhu and Yichen Lv and Yicheng Cao and Yifeng Gong and Yijing Yang and Yikun Yang and Yin Zhao and Yingxiu Zhao and Yinmin Zhang and Yitong Zhang and Yixuan Zhang and Yiyang Chen and Yongchi Zhao and Yongshen Long and Yongyao Wang and Yousong Guan and Yu Zhou and Yuang Peng and Yuanhao Ding and Yuantao Fan and Yuanzhen Yang and Yuchu Luo and Yudi Zhao and Yue Peng and Yueqiang Lin and Yufan Lu and Yuling Zhao and Yunzhou Ju and Yurong Zhang and Yusheng Li and Yuxiang Yang and Yuyang Chen and Yuzhu Cai and Zejia Weng and Zetao Hong and Zexi Li and Zhe Xie and Zheng Ge and Zheng Gong and Zheng Zeng and Zhenyi Lu and Zhewei Huang and Zhichao Chang and Zhiguo Huang and Zhiheng Hu and Zidong Yang and Zili Wang and Ziqi Ren and Zixin Zhang and Zixuan Wang},
+      year={2026},
+      eprint={2602.10604},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2602.10604}, 
+}
+</code></pre>
+<h2 id="license">License</h2>
+<p>This project is open-sourced under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>.</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/94b63c16f6b1.html">GLM-5</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/224a0c39bab5.html">GLM-5.3</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/22905c393a9c.html">GLM-5.3-Flash</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d060129a14be.html">GLM-5.2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f90617223e31.html">GLM-4.7</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/0edcfc955787.html">GLM-4.6V</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8cf89aee725c.html">GLM-4.5-Air</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/10aa23c70e91.html">Grok 2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/652b9a513303.html">Grok-1</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4224b4932376.html">Solar Open</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/32e837241209.html">tencent__Hy3__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/e9c250974ef4.html">tencent__Hunyuan-Large__README</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

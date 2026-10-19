@@ -1,0 +1,371 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 时代的卖铲人 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><h1>AI 时代的卖铲人</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E3%80%8A%E7%9C%8B%E6%87%82%E8%8B%B1%E4%BC%9F%E8%BE%BE%E3%80%8B/01-%E5%BC%80%E7%AF%87-AI%E6%97%B6%E4%BB%A3%E7%9A%84%E5%8D%96%E9%93%B2%E4%BA%BA.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#27-54">三年翻 27 倍的公司，值 5.4 万亿吗</a></li>
+<li><a href="#_1">英伟达到底是一家什么公司</a></li>
+<li><a href="#_2">三个关于英伟达的常见误解</a><ul>
+<li><a href="#_3">误解一：英伟达的护城河是"芯片性能领先"</a></li>
+<li><a href="#_4">误解二：英伟达是"垄断企业"</a></li>
+<li><a href="#2000">误解三：英伟达 = 思科 2000 年</a></li>
+</ul>
+</li>
+<li><a href="#4">看懂英伟达，需要回答的 4 个问题</a></li>
+<li><a href="#_5">英伟达目前贵不贵</a></li>
+<li><a href="#_6">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂英伟达》系列 · 第 01 篇 · 开篇
+阅读时间约 8 分钟</p>
+</blockquote>
+<hr />
+<h2 id="27-54">三年翻 27 倍的公司，值 5.4 万亿吗</h2>
+<p>2026 年 5 月，英伟达净利润 $583 亿——这是<strong>一个季度</strong>的数字。三年前同期是 $21 亿。</p>
+<p>全球市值第一、$5.4 万亿美元。但比起市值本身，下面这张表更值得看：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>FY2023（低谷）</th>
+<th>FY2026（最新全年）</th>
+<th>Q1 FY2027（2026年5月）</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营收</td>
+<td>$270 亿</td>
+<td><strong>$2,159 亿</strong></td>
+<td><strong>$816 亿</strong>（单季）</td>
+<td>3 年 8 倍</td>
+</tr>
+<tr>
+<td>净利润</td>
+<td>$44 亿</td>
+<td><strong>$1,201 亿</strong></td>
+<td><strong>$583 亿</strong>（单季）</td>
+<td>3 年 27 倍</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>56.9%</td>
+<td>71.1%</td>
+<td><strong>74.9%</strong></td>
+<td>+18pp</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>17.9%</td>
+<td><strong>124.4%</strong></td>
+<td>—</td>
+<td>7 倍</td>
+</tr>
+<tr>
+<td>自由现金流</td>
+<td>—</td>
+<td><strong>$967 亿</strong></td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>数据中心占比</td>
+<td>55.6%</td>
+<td>89.7%</td>
+<td><strong>92.2%</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>股价（拆股后）</td>
+<td>~$15</td>
+<td>~$110（年初低点）</td>
+<td><strong>~$221</strong></td>
+<td>3 年 15 倍</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：英伟达 FY2026 年报、Q1 FY2027 财报新闻稿、Yahoo Finance</p>
+</blockquote>
+<p><strong>三年，营收翻 8 倍，净利翻 27 倍，股价翻 15 倍。</strong> 大市值公司里史无前例。</p>
+<p>但真正的问题不是"涨了多少"，而是：<strong>这种增速能持续多久？$5.4 万亿的市值，需要什么样的未来才能支撑？</strong></p>
+<hr />
+<h2 id="_1">英伟达到底是一家什么公司</h2>
+<p>很多人说英伟达是"芯片公司"。这不准确。</p>
+<p><strong>英伟达是 AI 时代的"卖铲人"——它卖的不是芯片，是算力基础设施。</strong></p>
+<p>具体来说，英伟达做三件事：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th>本质</th>
+<th>FY2026 收入</th>
+<th>占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据中心 GPU + 网络</td>
+<td>AI 训练和推理的核心引擎</td>
+<td><strong>$1,937 亿</strong></td>
+<td>89.7%</td>
+</tr>
+<tr>
+<td>游戏 GPU</td>
+<td>消费者图形处理</td>
+<td>$160 亿</td>
+<td>7.4%</td>
+</tr>
+<tr>
+<td>汽车 + 机器人</td>
+<td>自动驾驶/工业 AI</td>
+<td>$23 亿</td>
+<td>1.1%</td>
+</tr>
+<tr>
+<td>专业可视化 + 其他</td>
+<td>设计/渲染</td>
+<td>$38 亿</td>
+<td>1.8%</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：英伟达 FY2026 年报</p>
+</blockquote>
+<p>看清楚了——<strong>英伟达 90% 的收入来自数据中心</strong>，游戏业务已经变成了配角。</p>
+<p>英伟达不自己造芯片——设计交给台积电代工，是一家无工厂模式公司。这意味着：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>资产负债率</td>
+<td>D/E 仅 5.4%，几乎零杠杆</td>
+</tr>
+<tr>
+<td>利润率</td>
+<td>毛利率 71-75%，净利率 56%</td>
+</tr>
+<tr>
+<td>现金流</td>
+<td>年自由现金流 $967 亿，FCF/净利润 &gt; 80%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>财务质感更接近奢侈品公司（高毛利、高 ROE、轻资产），而非传统半导体公司。</strong></p>
+<hr />
+<h2 id="_2">三个关于英伟达的常见误解</h2>
+<h3 id="_3">误解一：英伟达的护城河是"芯片性能领先"</h3>
+<p>这是最常见的认知，也是最不完整的。</p>
+<p>芯片性能领先确实重要——英伟达 B200 的 FP8 算力是 AMD MI300X 的 3.4 倍。但性能领先只是护城河的<strong>一层</strong>。</p>
+<p>真正的护城河是 <strong>CUDA 生态系统</strong>——一个 19 年（2006-2026）积累的五层软件壁垒：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>层次</th>
+<th>内容</th>
+<th>AMD 对标差距</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>硬件抽象层</td>
+<td>CUDA Driver / Runtime</td>
+<td>ROCm 落后 30%+</td>
+</tr>
+<tr>
+<td>核心数学库</td>
+<td>cuDNN / cuBLAS / NCCL / TensorRT</td>
+<td>MIOpen 差 30-50%</td>
+</tr>
+<tr>
+<td>领域库</td>
+<td>cuDF / cuML / RAPIDS / Modulus</td>
+<td>AMD 几乎零覆盖</td>
+</tr>
+<tr>
+<td>框架层</td>
+<td>PyTorch / JAX 默认 CUDA 优先</td>
+<td>ROCm 是二等公民</td>
+</tr>
+<tr>
+<td>应用层</td>
+<td>HuggingFace / vLLM / ComfyUI</td>
+<td>80% 主流模型部分支持</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>CUDA 不是一个产品，是一整套生态。</strong> 全球有 <strong>500 万 CUDA 开发者</strong>，互联网上 99% 的 GPU 代码都是 CUDA 写的。这就像 Windows 对 PC 的锁定——你可以造出更好的操作系统，但你搬不动上面的百万个应用。</p>
+<p><strong>反方观点</strong>：AI 编程工具（Claude Code、GPT-5）已经能在 30 分钟内将简单 CUDA 代码移植到 AMD 的 ROCm 平台，迁移门槛正在快速下降。CUDA 的代码锁定层正在被侵蚀。</p>
+<p>这一点我们在第 02 篇详细展开。</p>
+<h3 id="_4">误解二：英伟达是"垄断企业"</h3>
+<p>从数据看，英伟达在 AI 训练芯片市场确实占 <strong>90%+</strong> 份额。但这个"垄断"有一个致命弱点——<strong>它最大的 4 个客户，全部在自己造芯片。</strong></p>
+<p>英伟达 10-Q 披露（FY2026 Q3）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>客户</th>
+<th>营收占比</th>
+<th>自研芯片</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Customer A</td>
+<td><strong>22%</strong></td>
+<td>全部在自研</td>
+</tr>
+<tr>
+<td>Customer B</td>
+<td>15%</td>
+<td>全部在自研</td>
+</tr>
+<tr>
+<td>Customer C</td>
+<td>13%</td>
+<td>全部在自研</td>
+</tr>
+<tr>
+<td>Customer D</td>
+<td>11%</td>
+<td>全部在自研</td>
+</tr>
+<tr>
+<td><strong>前 4 大合计</strong></td>
+<td><strong>61%</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：英伟达 10-Q（FY2026 Q3，2025 年 10 月 26 日提交），SEC</p>
+</blockquote>
+<p>这 4 家终端客户就是 AWS、微软 Azure、Google Cloud 和 Meta。它们占了英伟达 61% 的收入——<strong>同时也在造 Trainium、Maia、TPU 和 MTIA 来替代英伟达的芯片</strong>。</p>
+<p><strong>你最大的客户就是你最大的潜在竞争对手。</strong> 这在商业史上极为罕见。</p>
+<p><strong>反方观点</strong>：Google 做了 10 年 TPU，仍然是英伟达的大客户——自研替代的速度可能比想象中慢。而且 AI 算力总盘子在快速扩大，即使份额下降，绝对收入仍可能增长。</p>
+<h3 id="2000">误解三：英伟达 = 思科 2000 年</h3>
+<p>这是看空派最爱用的类比。2000 年互联网泡沫顶峰，思科市值 $5,000 亿，PE 超过 200 倍。之后股价跌了 <strong>88%</strong>，用了 <strong>25 年</strong>才回到前高。</p>
+<p>对比一下：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>思科 2000 年</th>
+<th>英伟达 2026 年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PE</td>
+<td>&gt;200x</td>
+<td>~23x（Q1 FY2027 年化）</td>
+</tr>
+<tr>
+<td>EV/Sales</td>
+<td>31x</td>
+<td>~25x</td>
+</tr>
+<tr>
+<td>毛利率趋势</td>
+<td>收缩</td>
+<td>扩张（71% → 75%）</td>
+</tr>
+<tr>
+<td>实际付费需求</td>
+<td>互联网用户不付费</td>
+<td>Anthropic <strong>$300 亿</strong> ARR</td>
+</tr>
+<tr>
+<td>市值</td>
+<td>$5,000 亿</td>
+<td>$5.4 万亿（10 倍）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>英伟达不是思科的翻版——它有真实的付费需求、远更健康的估值倍数、仍在扩张的利润率。</strong></p>
+<p><strong>但也别轻易排除类比</strong>：英伟达的 EV/Sales（~25x）已逼近思科顶部（31x）。$5.4 万亿市值意味着市场已经为"AI 永续繁荣"定了价——任何一点裂缝都可能引发估值重置。</p>
+<hr />
+<h2 id="4">看懂英伟达，需要回答的 4 个问题</h2>
+<p>一句话定义英伟达：</p>
+<blockquote>
+<p><strong>全球 AI 算力的事实标准（90%+ 训练份额）+ 19 年积累但正在被侵蚀的 CUDA 护城河 + $5.4 万亿市值下"不容出错"的估值。</strong></p>
+</blockquote>
+<p>三件事拆开看都有人写过，放在一起评估的很少。这正是接下来 4 篇要做的事。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>对应篇目</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CUDA 护城河到底有多深？正在被什么侵蚀？</td>
+<td>第 02 篇</td>
+</tr>
+<tr>
+<td>训练 vs 推理市场分化，英伟达怎么应对？</td>
+<td>第 03 篇</td>
+</tr>
+<tr>
+<td>四大客户自研芯片到了什么阶段？AMD 呢？</td>
+<td>第 04 篇</td>
+</tr>
+<tr>
+<td>周期风险有多大？当前估值合理吗？</td>
+<td>第 05 篇 · 终章</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_5">英伟达目前贵不贵</h2>
+<p>留一组估值数字，第 05 篇详细展开，先记住量级：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PE（Q1 FY2027 年化）</td>
+<td><strong>~23x</strong>（对 85% 增速不算贵）</td>
+</tr>
+<tr>
+<td>PE（FY2026 全年）</td>
+<td><strong>~45x</strong>（增速正在减速）</td>
+</tr>
+<tr>
+<td>自由现金流（FY2026）</td>
+<td><strong>$967 亿</strong></td>
+</tr>
+<tr>
+<td>净现金</td>
+<td><strong>~$520 亿</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>两种 PE 给出截然不同的信号——23x 看着便宜，45x 看着贵。差别在于：<strong>85% 的增速能维持几个季度？</strong></p>
+<p>同时别忘了结构性风险：90% 收入来自单一业务、61% 来自 4 个客户、这 4 个客户全在自研替代芯片。$5.4 万亿市值需要 AI 算力需求<strong>持续多年高速增长</strong>才能支撑。</p>
+<p><strong>同样的数据，看多者和看空者读出完全不同的结论。</strong> 接下来 4 篇拆开看。</p>
+<hr />
+<h2 id="_6">下期预告</h2>
+<p>下一篇拆 CUDA 护城河——19 年来没人攻破，为什么<strong>现在开始出现裂缝</strong>？</p>
+<p>四个尖锐问题：</p>
+<ul>
+<li>黄仁勋说"别人的芯片白给都比英伟达贵"——凭什么？</li>
+<li>500 万 CUDA 开发者被锁住了什么？</li>
+<li>AI 编程工具 30 分钟移植 CUDA 代码——护城河真在崩塌吗？</li>
+<li>护城河正在从"软件锁定"变成什么新形态？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂英伟达》系列第 01 篇。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/12be4daf50fb.html">审计说明</a><div class="meta">2026-09-07 · 底稿</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/fc0dae7fdd42.html">英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</a><div class="meta">2026-08-28 · 财报</div></li><li><a href="../r/5e4b7e854e9f.html">07 增量更新底稿（2026-07-14 → 2026-08-01）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/6e56cabdf58e.html">《看懂英伟达》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/6601b82f2d5a.html">06 管理层评估 + 当前估值与卖方观点（研究底稿）</a><div class="meta">2026-07-14 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

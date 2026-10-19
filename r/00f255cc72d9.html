@@ -1,0 +1,188 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>训练大模型，成本降10倍效果反而更好——怎么做到的？ · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/AI产业研究/index.html">AI产业研究</a></div><h1>训练大模型，成本降10倍效果反而更好——怎么做到的？</h1><div class="meta"><a href="../topics/AI产业研究/index.html">AI产业研究</a> ｜ 2026-06-15 · 公众号 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/AI%E4%BA%A7%E4%B8%9A%E7%A0%94%E7%A9%B6/%E5%85%AC%E4%BC%97%E5%8F%B7-On-Policy-Distillation-%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%90%8E%E8%AE%AD%E7%BB%83%E7%9A%84%E5%85%8D%E8%B4%B9%E5%8D%88%E9%A4%90-20260615.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">大模型后训练的两难困境</a></li>
+<li><a href="#_2">核心思想：学生自己做题，教师逐步批改</a></li>
+<li><a href="#_3">教师应该怎么"打分"？</a></li>
+<li><a href="#gkd-opd">GKD：一个旋钮，从传统蒸馏到 OPD</a></li>
+<li><a href="#_4">实验结果：数据说话</a></li>
+<li><a href="#_5">工业落地：从论文到生产</a></li>
+<li><a href="#opd">OPD 的局限与未来</a></li>
+<li><a href="#_6">结语</a></li>
+</ul>
+</div>
+</details><article><p>2025年，训练一个对标 GPT-4 水平的模型，强化学习阶段的算力账单大约是几百万美元。而最近半年，Qwen3、Gemma 2、MiMo 等一线模型不约而同地切换到了一种新方法——同样的效果，算力成本直接砍掉90%。</p>
+<p>这不是标题党。Thinking Machines Lab 在数学竞赛（AIME 2024）上给出了实测数据：新方法用1,800个 GPU 小时拿到74.4%的正确率，传统强化学习用了17,920个 GPU 小时只拿到67.6%。</p>
+<p><strong>成本降低十倍，性能反而更好。</strong> 在机器学习里，这几乎可以称为"免费午餐"。</p>
+<p>这个方法叫 On-Policy Distillation（在策略蒸馏），下文简称 OPD。它源自 Google DeepMind 2024年初发表在 ICLR 的一篇论文——《On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes》。</p>
+<p>下面拆解三件事：OPD 到底做了什么，为什么效果这么好，以及哪些公司已经在用。</p>
+<hr />
+<h2 id="_1">大模型后训练的两难困境</h2>
+<p>要理解 OPD，先要理解它试图解决什么问题。</p>
+<p>大模型的训练分两个阶段：预训练和后训练。预训练是在海量文本上学习语言的基本规律，后训练是让模型变得更聪明、更听话。我们今天讨论的是后训练。</p>
+<p>后训练目前有两种主流方法，各有致命短板。</p>
+<p><strong>第一种：监督微调（Supervised Fine-Tuning，简称 SFT）</strong></p>
+<p>准备一批高质量的"问题-答案"对，让模型照着学。比如给模型看100道数学题的标准解题过程，让它模仿。</p>
+<p>问题在于：模型学的是教师的文本，但推理时生成的是自己的文本。这两个分布不一样。就像你读了100篇满分作文，但写出来的东西和满分作文完全不同——你容易犯的错误，满分作文里压根没出现过。术语叫"训练-推理分布不匹配"，是监督微调最根本的瓶颈。</p>
+<p><strong>第二种：强化学习（Reinforcement Learning，简称 RL）</strong></p>
+<p>模型自己生成答案，然后只告诉它最终结果对不对。</p>
+<p>优势很明显：模型在自己生成的文本上学习，不存在分布不匹配的问题。但劣势也很明显——一道数学题做了50步，你只说"错了"，模型得自己猜是哪一步出了问题。这叫"稀疏奖励"。为了从这么少的信息里学到东西，需要巨量的采样和极复杂的优化算法，训练成本和不稳定性都很高。</p>
+<p><img alt="GKD 在三个任务上全面超越传统方法" src="../files/assets/opd/fig1-gkd-performance.png" /></p>
+<p>把两种方法的特点列成表，空白区域一目了然：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>采样方式</th>
+<th>奖励信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>监督微调（SFT）</td>
+<td>离策略（文本来自教师/专家）</td>
+<td>密集（逐词监督）</td>
+</tr>
+<tr>
+<td>强化学习（RL）</td>
+<td>在策略（文本由学生自己生成）</td>
+<td>稀疏（仅最终结果反馈）</td>
+</tr>
+<tr>
+<td><strong>OPD（本文主角）</strong></td>
+<td><strong>在策略（文本由学生自己生成）</strong></td>
+<td><strong>密集（教师逐词反馈）</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>OPD 的做法是：让模型在自己的文本上学习，同时给每一步都提供精确的反馈。听起来像在同时吃两块蛋糕？没错，这就是它被称为"免费午餐"的原因。</p>
+<hr />
+<h2 id="_2">核心思想：学生自己做题，教师逐步批改</h2>
+<p>回到一个更直觉的类比。</p>
+<p>假设你是一个刚入职的新人，公司给你安排了一位资深导师。传统的培训方式（SFT）是：导师写好标准答案，你照着抄一遍。强化学习是：让你自己做一遍，做完只告诉你"及格了"或"不及格"。</p>
+<p>OPD 的做法完全不同：<strong>让你按自己的理解做一遍，然后导师拿着你的作业逐行批注</strong>——"这步想法对"、"这步开始跑偏了"、"这个地方的选择直接导致了后面的错误"。</p>
+<p>关键的区别在于：教师批注的是学生自己写的东西，而不是一份学生永远不会写出来的标准答案。</p>
+<p>具体到训练流程，分四步：</p>
+<p><strong>第一步：学生自己生成文本。</strong> 给学生模型一个问题，让它按照自己当前的能力写出完整的回答。这些回答带着学生自己的"口音"和"毛病"——这正是我们想要的。</p>
+<p><strong>第二步：教师逐词打分。</strong> 把学生的回答交给教师模型，教师在学生写的每一个词上给出自己的概率分布。这一步的计算成本很低——只需要做一次前向传播，不需要采样。这也是 OPD 比强化学习便宜的关键原因之一：强化学习需要反复采样和评估，而教师只需要"读一遍"学生的答案就够了。</p>
+<p><strong>第三步：计算逐词的差距。</strong> 在每一个词的位置上，比较教师和学生的概率分布差异。这个差异就是密集奖励信号——它能精确地告诉学生：你在第37个词的位置做了一个糟糕的选择，教师在这个位置会选完全不同的方向。</p>
+<p><strong>第四步：更新学生模型。</strong> 用这些逐词的信号来更新学生的参数，让学生下次在类似位置做出更好的选择。</p>
+<hr />
+<h2 id="_3">教师应该怎么"打分"？</h2>
+<p>这一节稍微深入技术细节。如果你想跳过公式，直接看每个公式后面的"大白话翻译"即可，不影响理解后文。</p>
+<p>OPD 用来衡量"教师和学生差距"的指标叫 KL 散度。但 KL 散度有两个方向，选哪个方向影响巨大。</p>
+<p><strong>正向 KL 散度</strong>（传统蒸馏使用）：</p>
+<p>$$D_{KL}(P_{teacher} | P_{student}) = \sum_x P_{teacher}(x) \cdot \log \frac{P_{teacher}(x)}{P_{student}(x)}$$</p>
+<p>大白话：老师出的所有考点，你都必须复习到。教师认为可能出现的每个词，学生一个都不能漏掉。</p>
+<p>效果：学生的输出会比较分散、保守——什么都沾一点但什么都不精。术语叫"模式覆盖"。</p>
+<p><strong>逆向 KL 散度</strong>（OPD 使用）：</p>
+<p>$$D_{KL}(P_{student} | P_{teacher}) = \sum_x P_{student}(x) \cdot \log \frac{P_{student}(x)}{P_{teacher}(x)}$$</p>
+<p>大白话：你复习的每一个考点必须是对的，但可以不覆盖所有考点。学生选中的每个方向，必须确保教师也认可。</p>
+<p>效果：学生会集中力量学好一种最优策略，而不是分散地覆盖所有可能。术语叫"模式寻找"。</p>
+<p><img alt="正向 KL vs 逆向 KL 的质量-多样性权衡" src="../files/assets/opd/fig2-kl-tradeoff.png" /></p>
+<p>为什么逆向 KL 更适合大模型蒸馏？因为我们不需要小模型学会大模型所有的能力（那是不可能的），我们需要的是小模型把它能做的事情做到最好。逆向 KL 正好鼓励这种"专精"而非"全面"的学习策略。</p>
+<p>这里还有一个漂亮的巧合（其实是必然）：逆向 KL 的计算需要在学生自己的样本上进行——它在数学上天然要求"学生自己做题"。而正向 KL 用教师的样本就行，所以传统蒸馏从来不需要学生自己生成文本。</p>
+<p>"学生在自己的作业上学习"这个核心设计，不仅在直觉上合理，在数学上也是损失函数的内在要求。形式和目标完美自洽。</p>
+<p><strong>从信息量的角度看：</strong> 在强化学习中，模型生成一个几百个词的回答，最终只得到一个分数——每次迭代只获得 O(1) 比特的信息。而在 OPD 中，教师在每一个词上都给出完整的概率分布——如果回答有 N 个词，每次迭代获得的信息是 O(N) 比特。就像考试改卷，强化学习只在试卷最后写一个总分，OPD 在每道题旁边都写了批注。信息量差了两到三个数量级。</p>
+<p>这就是 OPD 数据效率极高的根本原因。</p>
+<hr />
+<h2 id="gkd-opd">GKD：一个旋钮，从传统蒸馏到 OPD</h2>
+<p>论文提出的具体算法叫 GKD（Generalized Knowledge Distillation，广义知识蒸馏），是一个统一框架。它的核心是一个参数 λ：</p>
+<ul>
+<li><strong>λ = 0</strong>：完全在教师的文本上学习 → 退化为传统蒸馏</li>
+<li><strong>λ = 1</strong>：完全在学生自己的文本上学习 → 纯 OPD</li>
+<li><strong>0 &lt; λ &lt; 1</strong>：混合使用两种数据</li>
+</ul>
+<p><img alt="GKD 算法伪代码" src="../files/assets/opd/fig3-algorithm1.png" /></p>
+<p>工程上的实现非常直觉：每次训练时，用当前学生模型自己生成回答，然后拿教师模型在这个回答上逐词打分，算出差距后更新学生参数。整个流程和普通的微调训练几乎一样简单，唯一的额外开销是多了一步"学生采样"。</p>
+<p>论文发现，λ 越接近1效果越好——也就是说，学生在自己的文本上学习效果远好于在教师的文本上学习。</p>
+<hr />
+<h2 id="_4">实验结果：数据说话</h2>
+<p>论文在三个差异很大的任务上做了实验，GKD 相比传统蒸馏的提升幅度在 1.7 到 2.1 倍之间——不是提升了百分之几，是提升了一倍多。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>任务</th>
+<th>数据集</th>
+<th>相比传统蒸馏提升</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>摘要生成</td>
+<td>XSum</td>
+<td>2.1倍</td>
+</tr>
+<tr>
+<td>机器翻译</td>
+<td>WMT</td>
+<td>1.7倍</td>
+</tr>
+<tr>
+<td>数学推理</td>
+<td>GSM8K</td>
+<td>1.9倍</td>
+</tr>
+</tbody>
+</table></div>
+<p><img alt="GSM8K 数学推理对比，OPD 全面超越所有方法" src="../files/assets/opd/fig4-gsm8k.png" /></p>
+<p>但最震撼的发现是关于数据效率的：</p>
+<p><img alt="数据效率对比——5%数据的 GKD 超过100%数据的传统蒸馏" src="../files/assets/opd/fig5-data-efficiency.png" /></p>
+<blockquote>
+<p><strong>仅使用 5% 数据的 GKD，就超过了使用 100% 数据的传统蒸馏。</strong></p>
+</blockquote>
+<p>如果你有10万条训练数据，用传统方法全部跑完的效果，还不如用 GKD 只跑5,000条。</p>
+<p>论文还有一个重磅实验：一个只有 7,700 万参数的小模型，通过 GKD 蒸馏，在多个任务上打败了 5,400 亿参数的 PaLM——体量差了 7,000 倍，效果反而更好。</p>
+<p><img alt="MMLU/BBH 通用能力对比" src="../files/assets/opd/fig6-mmlu-bbh.png" /></p>
+<p>不是小模型学不会，而是之前的教学方法不够好。</p>
+<hr />
+<h2 id="_5">工业落地：从论文到生产</h2>
+<p>先看一组实战数据：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>GPU 小时</th>
+<th>AIME'24 正确率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>传统强化学习</td>
+<td>17,920</td>
+<td>67.6%</td>
+</tr>
+<tr>
+<td>OPD</td>
+<td>1,800</td>
+<td>74.4%</td>
+</tr>
+</tbody>
+</table></div>
+<p>这是 Thinking Machines Lab（2025年10月）在美国数学邀请赛上的实测。成本降低近十倍，准确率提升近7个百分点。</p>
+<p>各家的跟进非常迅速：</p>
+<p><strong>Google Gemma 2（2024年8月）：</strong> 论文作者的"自产自销"，Google 自家的开源模型直接应用了这套方法。</p>
+<p><strong>Qwen3（2025年5月）：</strong> 阿里通义千问在技术报告中首次系统阐述了 OPD 的工业级实践。明确表示 OPD 仅需强化学习全流程十分之一的 GPU 时间，就能达到可比甚至更好的效果。</p>
+<p><strong>MiMo-V2-Flash（2026年1月）：</strong> 在多模态场景下验证了 OPD 的有效性，说明这套方法不限于纯文本。</p>
+<p><strong>GLM-5：</strong> 智谱在新一代模型中也采用了类似的在策略蒸馏技术。</p>
+<p>从2024年的学术论文到2026年成为主流后训练范式，OPD 的工业化速度堪称飞快。</p>
+<hr />
+<h2 id="opd">OPD 的局限与未来</h2>
+<p>OPD 有一个结构性前提：<strong>你必须有一个足够好的教师模型。</strong> 在强化学习中，奖励信号可以来自规则验证器（比如数学题直接判断对错），不一定需要更大的语言模型。但在 OPD 中，教师必须是一个在目标任务上明显强于学生的模型。</p>
+<p>这引出了两个最值得关注的演进方向：</p>
+<p><strong>OPD + RL 的混合训练。</strong> Qwen3 的实践已经暗示了这个路径——先用 OPD 快速提升基础能力（因为便宜且稳定），再用 RL 在特定维度上精细调优。这可能成为未来后训练的标准流程。</p>
+<p><strong>推理模型的蒸馏。</strong> 随着 o1/o3 这类推理模型的出现，如何把长链推理能力高效蒸馏到小模型上，OPD 提供了非常有前景的框架。DeepSeek-R1 已经展示了从大推理模型向小模型蒸馏的巨大潜力。</p>
+<p>此外，自蒸馏（让模型做自己的教师）和多教师融合也是值得关注的方向，但目前仍处于早期探索。</p>
+<hr />
+<h2 id="_6">结语</h2>
+<p>OPD 的核心洞见其实很朴素：让学生从自己的错误中学习，比让学生抄别人的正确答案有效得多。只不过，"从自己的错误中学习"需要一位好教师的逐步指导，而不是仅仅告诉学生一个最终成绩。</p>
+<p>当我们把这个朴素的洞见放进严格的数学框架（逆向 KL 散度 + 在策略采样），就得到了一个成本降低一个数量级、效果反而更好的方法。</p>
+<blockquote>
+<p>大模型竞赛的下半场，可能不再是比谁砸的钱多，而是比谁的训练方法更聪明。OPD 是这个转变的第一枪——但肯定不是最后一枪。</p>
+</blockquote>
+<hr />
+<p><strong>论文原文：</strong>
+- arXiv: https://arxiv.org/abs/2306.13649</p>
+<p><em>参考文献：Agarwal, R. et al. "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes." ICLR 2024.</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/86aa7f89b307.html">AI便宜一千倍后，最贵的是电表、入口和签字的人</a><div class="meta">2026-09-26 · 公众号</div></li><li><a href="../r/59f6a96928ab.html">押成本曲线别押替代日期，一份 AI 十年概率清单</a><div class="meta">2026-09-25 · 公众号</div></li><li><a href="../r/c9ac4d8b634b.html">不动权重的训练：文本空间优化两年演进——从 TextGrad 到技能自进化，再到运行框架与模型协同进化</a><div class="meta">2026-09-22 · 研究</div></li><li><a href="../r/7b5d0b0d6282.html">harness 自进化的几篇论文</a><div class="meta">2026-09-22 · 公众号</div></li><li><a href="../r/661bae32d996.html">一个不说话的模型，六天里被测出了什么：拆 Jev</a><div class="meta">2026-09-21 · 公众号</div></li><li><a href="../r/f219cd690dc8.html">Jev 与&quot;决策模型&quot;品类：技术报告、商业评估与未来三年影响</a><div class="meta">2026-09-21 · 研究</div></li><li><a href="../r/39ac642ec328.html">基模变强之后：业务后训练的空间与算法工程师的去向</a><div class="meta">2026-09-19 · 研究</div></li><li><a href="../r/f004fc3549f9.html">1.9亿次请求要的不是答案，是思路：拆Anthropic蒸馏报告</a><div class="meta">2026-09-12 · 公众号</div></li><li><a href="../r/b3e152831cdc.html">中美基模公司终局与 MiniMax 差异化研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/6f12291edfb3.html">核查边界</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8e50c1e62b76.html">大模型算法人才市场供需研究：裁员与高价抢人为何并存（2026年8月）</a><div class="meta">2026-08-17 · 研究</div></li><li><a href="../r/9d12d4dab893.html">AI 经济回报格局：25 条流行断言的对抗验证</a><div class="meta">2026-08-14 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

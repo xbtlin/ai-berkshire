@@ -1,0 +1,462 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 三条赛道：大模型、自动驾驶、AI 云 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/百度/index.html">百度</a></div><h1>AI 三条赛道：大模型、自动驾驶、AI 云</h1><div class="meta"><a href="../companies/百度/index.html">百度</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%99%BE%E5%BA%A6-deepseek%E5%88%86%E6%9E%90/%E3%80%8A%E7%9C%8B%E6%87%82%E7%99%BE%E5%BA%A6%E3%80%8B/03-AI%E4%B8%89%E6%9D%A1%E8%B5%9B%E9%81%93-%E5%A4%A7%E6%A8%A1%E5%9E%8B-%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6-AI%E4%BA%91.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#ai">百度 AI 的全景图</a></li>
+<li><a href="#_1">赛道一：文心大模型——技术领先，用户落后</a><ul>
+<li><a href="#_2">技术进展</a></li>
+<li><a href="#c">C 端困境：为什么技术强但用户少？</a></li>
+</ul>
+</li>
+<li><a href="#apollo-go">赛道二：Apollo Go 自动驾驶——全球第一的规模，看不清的利润</a><ul>
+<li><a href="#_3">运营数据</a></li>
+<li><a href="#_4">利润黑箱</a></li>
+<li><a href="#_5">国际化：真实的催化剂</a></li>
+</ul>
+</li>
+<li><a href="#_6">赛道三：百度智能云——份额小但增长快</a><ul>
+<li><a href="#_7">市场位置</a></li>
+<li><a href="#ai_1">AI 云的盈利性</a></li>
+</ul>
+</li>
+<li><a href="#_8">隐藏资产：昆仑芯</a></li>
+<li><a href="#ai_2">AI 三条赛道的综合评估</a></li>
+<li><a href="#_9">本篇小结</a></li>
+<li><a href="#_10">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂百度》系列 · 第 03 篇
+阅读时间约 12 分钟</p>
+</blockquote>
+<hr />
+<h2 id="ai">百度 AI 的全景图</h2>
+<p><strong>文心大模型技术超 GPT-5，C 端月活只有豆包的 1/72。Apollo Go 全球规模第一，从没披露过完整利润表。AI 云增速 34%，份额只有 6%。</strong> 这就是百度 AI 三条赛道的真实状态：技术够强，但没有一条被完整验证过。</p>
+<p>百度是中国唯一一家覆盖"芯片→框架→模型→应用"全栈的 AI 公司，看它的技术栈：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>层级</th>
+<th>百度产品</th>
+<th>竞品对标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 芯片</td>
+<td>昆仑芯（P800）</td>
+<td>华为昇腾 / 英伟达</td>
+</tr>
+<tr>
+<td>深度学习框架</td>
+<td>飞桨（PaddlePaddle）</td>
+<td>PyTorch / TensorFlow</td>
+</tr>
+<tr>
+<td>基础大模型</td>
+<td>文心 5.0 / 5.1</td>
+<td>GPT-5 / DeepSeek / 千问</td>
+</tr>
+<tr>
+<td>AI 云平台</td>
+<td>百度智能云千帆</td>
+<td>阿里云 / 火山引擎</td>
+</tr>
+<tr>
+<td>C 端应用</td>
+<td>文心助手 / 百度搜索 AI 化</td>
+<td>豆包 / 元宝 / DeepSeek</td>
+</tr>
+<tr>
+<td>自动驾驶</td>
+<td>Apollo Go（萝卜快跑）</td>
+<td>Waymo / 特斯拉 FSD</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>在中国，没有第二家公司同时做芯片、框架、模型、云和自动驾驶。</strong> 阿里有云和模型但没有芯片量产和自动驾驶；字节有模型和云但没有芯片和框架；华为有芯片但没有 C 端应用生态。</p>
+<p>但"全栈"是优势还是负担？这取决于每条赛道能否单独跑通。逐条拆解。</p>
+<hr />
+<h2 id="_1">赛道一：文心大模型——技术领先，用户落后</h2>
+<h3 id="_2">技术进展</h3>
+<p>文心大模型的迭代速度不慢：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>版本</th>
+<th>发布时间</th>
+<th>关键参数</th>
+<th>亮点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文心一言（3.5）</td>
+<td>2023 年 3 月</td>
+<td>—</td>
+<td>国内首个对话式 AI</td>
+</tr>
+<tr>
+<td>文心 4.0</td>
+<td>2024 年 4 月</td>
+<td>—</td>
+<td>多模态能力提升</td>
+</tr>
+<tr>
+<td>文心 5.0 正式版</td>
+<td>2026 年 1 月</td>
+<td><strong>2.4 万亿参数</strong></td>
+<td>原生全模态，综合评测超 Gemini-2.5-Pro、GPT-5-High</td>
+</tr>
+<tr>
+<td>文心 5.1</td>
+<td>2026 年 5 月</td>
+<td>—</td>
+<td>预训练成本仅为业界 <strong>6%</strong>，搜索能力国内登顶，Agent 能力超 DeepSeek-V4-Pro</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：百度官方发布、量子位、光明网。</p>
+</blockquote>
+<p><strong>文心 5.0 在 40 余项权威基准中综合能力超越 Gemini-2.5-Pro 和 GPT-5-High</strong>，这是实打实的技术突破。5.1 版本用 6% 的预训练成本达到同等效果，说明百度在模型训练效率上有真本事。</p>
+<h3 id="c">C 端困境：为什么技术强但用户少？</h3>
+<p>然而，技术领先没有转化为用户规模。这是百度 AI 最让人困惑的地方：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>AI 应用</th>
+<th>月活（2026 年 3 月）</th>
+<th>背后公司</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>豆包</td>
+<td><strong>3.45 亿</strong></td>
+<td>字节跳动</td>
+</tr>
+<tr>
+<td>千问</td>
+<td><strong>~1.7 亿</strong></td>
+<td>阿里巴巴</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td><strong>1.27 亿</strong></td>
+<td>DeepSeek</td>
+</tr>
+<tr>
+<td>元宝</td>
+<td><strong>~1 亿+</strong></td>
+<td>腾讯</td>
+</tr>
+<tr>
+<td><strong>文心助手</strong></td>
+<td><strong>479 万</strong></td>
+<td><strong>百度</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：QuestMobile（2026 年 3 月）。</p>
+</blockquote>
+<p><strong>百度的 C 端 AI 应用排名第 11，月活只有豆包的 1/72。</strong> 这个差距不是"落后一点"，是"不在同一个量级"。</p>
+<p>原因是什么？</p>
+<ol>
+<li><strong>分发能力差距</strong>：字节靠抖音 7 亿日活往豆包导流，腾讯靠微信往元宝导流——百度没有社交或短视频的"超级流量入口"</li>
+<li><strong>产品策略失误</strong>：百度把 AI 能力分散到"文心一言 APP""百度搜索 AI 化""文心助手"等多个入口，用户心智分裂</li>
+<li><strong>用户心智固化</strong>：用户把百度 = 搜索引擎，不会主动去百度"聊天"</li>
+</ol>
+<p><strong>反方观点</strong>："C 端 AI 应用的竞争刚开始，MAU 排名会持续变化。百度的优势是搜索 + AI 的结合——文心 5.1 搜索能力国内登顶，如果能把百度搜索变成'最好的 AI 搜索'，6.79 亿月活自然转化，不需要单独做一个聊天 APP。"</p>
+<p><strong>正方观点</strong>："'搜索 + AI'的逻辑听起来合理，但用户行为不会自动迁移。Google 有全球最强的搜索 AI（SGE），但 ChatGPT 仍然是用户首选的 AI 工具。'搜索'和'AI 助手'是两种不同的用户需求，不能简单等同。"</p>
+<hr />
+<h2 id="apollo-go">赛道二：Apollo Go 自动驾驶——全球第一的规模，看不清的利润</h2>
+<h3 id="_3">运营数据</h3>
+<p>Apollo Go（萝卜快跑）是百度 AI 故事里<strong>最有想象力</strong>的部分：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>累计订单量</td>
+<td><strong>2,000 万+单</strong></td>
+<td>百度年报</td>
+</tr>
+<tr>
+<td>累计行驶里程</td>
+<td><strong>2.4 亿公里</strong></td>
+<td>百度年报</td>
+</tr>
+<tr>
+<td>周订单量</td>
+<td><strong>25 万单</strong>（追平 Waymo）</td>
+<td>华尔街见闻</td>
+</tr>
+<tr>
+<td>运营城市</td>
+<td>武汉、北京、上海、重庆等</td>
+<td>百度官网</td>
+</tr>
+<tr>
+<td>国际化</td>
+<td>伦敦（2026H1 试点）、迪拜、香港</td>
+<td>华龙证券、百度公告</td>
+</tr>
+<tr>
+<td>第七代无人车</td>
+<td>续航 600km，成本较上代降 30%</td>
+<td>百度 Apollo 官网</td>
+</tr>
+<tr>
+<td>RT6 成本</td>
+<td>约 <strong>25 万元</strong>（Waymo 单车 &gt; 100 万元）</td>
+<td>百度披露</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：百度年报、Apollo 官网、华尔街见闻、华龙证券。</p>
+</blockquote>
+<p><strong>全球 Robotaxi 规模第一，单车成本仅 Waymo 的 1/7，已经追平 Waymo 的周订单量。</strong> 这些都是事实。</p>
+<h3 id="_4">利润黑箱</h3>
+<p>但百度从未单独披露 Apollo Go 的完整损益表。我们知道的是：</p>
+<ul>
+<li>百度声称"单城 UE（Unit Economics）已经打平"</li>
+<li>但"打平"的口径<strong>不含研发摊销和总部管理费</strong>——如果算上这些，很可能仍在大幅亏损</li>
+<li>Apollo Go 的收入包含在"非在线营销收入"中，无法独立验证</li>
+</ul>
+<p><strong>反方观点</strong>："自动驾驶是一个需要巨额前期投入的业务，现在看利润没有意义。Waymo 也不赚钱。关键是百度在成本控制上的优势——RT6 单车 25 万元 vs Waymo 100 万+，这意味着百度更有可能率先盈利。"</p>
+<p><strong>正方观点</strong>："单车成本低 ≠ 总成本低。百度需要同时投入感知系统研发、高精地图维护、运营团队、安全员薪资、政府关系等。'单城 UE 打平'如果不含研发，那就不是真正的打平。投资者需要看到完整的损益表，而不是选择性披露的指标。"</p>
+<h3 id="_5">国际化：真实的催化剂</h3>
+<p>2026 年上半年进入伦敦（与 Uber 合作），加上已有的迪拜和香港布局——这是百度自动驾驶故事从"中国故事"升级为"全球故事"的关键一步。</p>
+<p>如果伦敦试点成功，对百度估值的影响可能是跳跃式的——因为市场目前完全没有为 Apollo Go 的海外潜力定价。</p>
+<p>但风险同样巨大：<strong>自动驾驶的国际化不只是技术问题，还涉及当地法规、保险、公众接受度、地缘政治等多重不确定性。</strong></p>
+<hr />
+<h2 id="_6">赛道三：百度智能云——份额小但增长快</h2>
+<h3 id="_7">市场位置</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>云厂商</th>
+<th>中国 AI 云市场份额（Omdia 2025H1）</th>
+<th>增速</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阿里云</td>
+<td><strong>36%</strong></td>
+<td>+20%+</td>
+</tr>
+<tr>
+<td>华为云</td>
+<td><strong>19%</strong></td>
+<td>+30%+</td>
+</tr>
+<tr>
+<td>腾讯云</td>
+<td><strong>16%</strong></td>
+<td>+15%+</td>
+</tr>
+<tr>
+<td>火山引擎（字节）</td>
+<td><strong>14.8%</strong></td>
+<td>+60%+</td>
+</tr>
+<tr>
+<td><strong>百度智能云</strong></td>
+<td><strong>6.1%</strong></td>
+<td><strong>+34%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：Omdia 2025H1 报告。</p>
+</blockquote>
+<p><strong>份额只有 6.1%，排第五。</strong> 在云市场这种强者恒强的领域，这个位置不太舒服。</p>
+<p>但百度智能云有一个差异化优势：<strong>全栈自研 + 大模型能力 + 行业深度</strong>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>优势</th>
+<th>具体表现</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大模型招投标</td>
+<td>连续两年<strong>双料第一</strong></td>
+</tr>
+<tr>
+<td>政企客户</td>
+<td>服务 <strong>65% 央企</strong> + 所有系统重要性银行</td>
+</tr>
+<tr>
+<td>AI 算力订阅</td>
+<td>2025Q4 同比增长 <strong>143%</strong>（加速）</td>
+</tr>
+<tr>
+<td>全年 AI 云收入</td>
+<td>~<strong>200 亿元</strong>（同比 +34%）</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：百度年报、华尔街见闻。</p>
+</blockquote>
+<h3 id="ai_1">AI 云的盈利性</h3>
+<p>这是最大的未知数。百度从未单独披露 AI 云的毛利率。</p>
+<p><strong>反方观点</strong>："AI 云的高增长可能是以亏损为代价。字节的火山引擎以 14.8% 份额和 60% 增速在追赶，而且字节有内部业务消化算力的能力（抖音推荐、豆包）。百度的 6% 份额在火山引擎面前很脆弱。"</p>
+<p><strong>正方观点</strong>："百度 AI 云的客户结构偏政企，这类客户粘性高、付费能力强、不太会因为价格战而迁移。65% 央企覆盖率 + 全部系统重要性银行——这是安全审查和信任壁垒，不是简单的价格竞争。"</p>
+<hr />
+<h2 id="_8">隐藏资产：昆仑芯</h2>
+<p>昆仑芯不是百度 AI 的"赛道"，而是一个独立的<strong>价值释放事件</strong>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>百度持股</td>
+<td><strong>57.67%</strong>（上市后仍为附属公司）</td>
+</tr>
+<tr>
+<td>最新估值</td>
+<td><strong>210 亿元</strong>（2025 年 7 月轮次）</td>
+</tr>
+<tr>
+<td>摩根大通预测 2026 年估值</td>
+<td><strong>800 亿元</strong></td>
+</tr>
+<tr>
+<td>预测 2026 年收入</td>
+<td><strong>83 亿元</strong>（vs 2025 年 13 亿）</td>
+</tr>
+<tr>
+<td>上市进程</td>
+<td>港交所保密交表（2026 年 1 月）+ 科创板 IPO 辅导（2026 年 5 月）</td>
+</tr>
+<tr>
+<td>市场地位</td>
+<td>中国 GPU 第三（英伟达 70% &gt; 华为昇腾 23% &gt; 昆仑芯）</td>
+</tr>
+<tr>
+<td>标杆客户</td>
+<td>中国移动十亿级集采、招商银行、南方电网</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：IT 之家、36 氪、新浪财经、澎湃新闻。</p>
+</blockquote>
+<p><strong>如果按摩根大通的 800 亿估值计算，百度持有的 57.67% 股份价值约 461 亿元（约 63 亿美元）——相当于百度当前市值的 ~13%。</strong></p>
+<p>但要注意：</p>
+<ol>
+<li>800 亿估值是基于 2026 年收入 83 亿的预测——这意味着约 10x PS，并不便宜</li>
+<li>收入从 13 亿跳到 83 亿（6 倍增长）能否实现，高度依赖国产 AI 芯片替代的节奏</li>
+<li>昆仑芯 IPO 本身有不确定性——科创板审核趋严、港股打新环境冷淡</li>
+</ol>
+<p><strong>昆仑芯是百度手中一张确定的"期权"——它的价值不是零，但也不应该按最乐观情景定价。</strong></p>
+<hr />
+<h2 id="ai_2">AI 三条赛道的综合评估</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>赛道</th>
+<th>收入规模（2025）</th>
+<th>增速</th>
+<th>盈利性</th>
+<th>竞争位置</th>
+<th>评级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文心大模型（C 端）</td>
+<td>AI 应用 ~100 亿</td>
+<td>+5%</td>
+<td>未知</td>
+<td><strong>第 11 位</strong>（MAU）</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>Apollo Go</td>
+<td>未独立披露</td>
+<td>—</td>
+<td><strong>未知</strong></td>
+<td><strong>全球第一</strong>（规模）</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>百度智能云</td>
+<td>~200 亿</td>
+<td>+34%</td>
+<td><strong>未知</strong></td>
+<td><strong>第 5 位</strong>（份额 6.1%）</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>昆仑芯（IPO 期权）</td>
+<td>13 亿（2025）</td>
+<td>—</td>
+<td>未知</td>
+<td><strong>第 3 位</strong>（国产 GPU）</td>
+<td>★★★</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一个残酷的事实：百度 AI 三条赛道 + 昆仑芯，没有任何一条的盈利性被完整验证过。</strong></p>
+<p>AI 收入 400 亿、增速 48%——这些数字很好看。但如果毛利率很低（甚至为负），增长越快亏损越大。在百度披露 AI 业务的完整利润表之前，"AI 转型成功"这个结论无法下。</p>
+<p><strong>反方观点</strong>："百度不披露 AI 毛利率，可能恰恰是因为毛利率不好看。如果 AI 云赚钱、Apollo 赚钱，百度有什么理由不大声告诉投资者？"</p>
+<p><strong>正方观点</strong>："百度 2025 年 Non-GAAP 净利润仍有 189 亿——说明 AI 投入虽然大，但整体仍在赚钱。2026Q1 核心净利润 76 亿（+48%），利润回暖已经在发生。市场对百度的悲观已经被股价充分反映了。"</p>
+<hr />
+<h2 id="_9">本篇小结</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>赛道</th>
+<th>核心判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文心大模型</td>
+<td>技术领先但 C 端入口已输，需要靠"搜索 AI 化"而非独立 APP 突围</td>
+</tr>
+<tr>
+<td>Apollo Go</td>
+<td>全球规模第一 + 成本优势，但盈利性不透明，国际化是最大催化剂</td>
+</tr>
+<tr>
+<td>百度智能云</td>
+<td>政企客户粘性高，增速快，但份额仅 6%，面临火山引擎追赶</td>
+</tr>
+<tr>
+<td>昆仑芯</td>
+<td>确定的 IPO 期权，但估值预期可能过于乐观</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一句话：百度的 AI 新引擎确实在点火，但没有任何一条赛道已经"跑通"。投资百度，本质上是在赌这些引擎中至少有一条能在旧引擎熄火前达到逃逸速度。</strong></p>
+<hr />
+<h2 id="_10">下期预告</h2>
+<p>下一篇，我们看百度面临的<strong>竞争格局和核心风险</strong>。</p>
+<p>要回答的几个尖锐问题：</p>
+<ul>
+<li>百度搜索被抖音/微信/小红书/DeepSeek 四面围攻——还有翻盘机会吗？</li>
+<li>AI 投入巨大但回报不确定——"赢了技术、输了投资"的风险有多大？</li>
+<li>李彦宏的执行力是硬伤吗？O2O 烧 200 亿元、91 无线亏 19 亿美元、极越汽车倒闭——历史会重演吗？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂百度》系列第 03 篇。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/50dcc063983a.html">估值判断：期权还是陷阱？</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/e685c94b7dee.html">竞争与风险：四面楚歌与管理层执行力</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/673893cea294.html">搜索广告：正在熄火的旧引擎</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/fbefdaa0bf2a.html">搜索巨头的 AI 转型赌注</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/0af7a53f5e61.html">《看懂百度》系列说明</a><div class="meta">2026-05-22 · 底稿</div></li><li><a href="../r/06f4a67f21f0.html">百度（BIDU/9888.HK）投资研究报告</a><div class="meta">2026-04-28 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

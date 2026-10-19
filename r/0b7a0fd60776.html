@@ -1,0 +1,559 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>中概股轮动估值分析：腾讯涨完之后，美团/PDD 是否有低估机会？ · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/综合与横评/index.html">综合与横评</a></div><h1>中概股轮动估值分析：腾讯涨完之后，美团/PDD 是否有低估机会？</h1><div class="meta"><a href="../topics/综合与横评/index.html">综合与横评</a> ｜ 2026-05-01 · 横评对比 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF-%E7%BE%8E%E5%9B%A2-PDD-%E8%BD%AE%E5%8A%A8%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90-20260501.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、最关键结论（先说答案）</a><ul>
+<li><a href="#_2">❌ "轮动假设"在历史数据里几乎不成立</a></li>
+<li><a href="#_3">✅ 但有一个反向规律成立——这才是真正的轮动信号</a></li>
+</ul>
+</li>
+<li><a href="#2026-04-30">二、当前位置（2026-04-30）—— 罕见的极端分化</a></li>
+<li><a href="#pdd">三、历史回测：腾讯涨入高位后，美团/PDD 真的会反弹吗？</a><ul>
+<li><a href="#31-80-8-pdd">3.1 腾讯首次进入 80% 百分位的 8 次事件 + 美团/PDD 后续表现</a></li>
+<li><a href="#32-20">3.2 反向案例：腾讯进入 20% 低位后</a></li>
+</ul>
+</li>
+<li><a href="#lead-lag">四、Lead-Lag 分析：没有明显的滞后效应</a></li>
+<li><a href="#70-pdd-30">五、"金叉机会"的特殊扫描：腾讯 ≥70% + 美团/PDD ≤30%</a><ul>
+<li><a href="#51-36">5.1 腾讯高位 + 美团低位（共出现 36 周）</a></li>
+<li><a href="#52-pdd-1">5.2 腾讯高位 + PDD 低位（共出现 1 周）</a></li>
+</ul>
+</li>
+<li><a href="#_4">六、为什么"轮动假设"不成立？深层原因</a><ul>
+<li><a href="#61">6.1 三家公司的下跌驱动力完全不同</a></li>
+<li><a href="#62">6.2 中概股资金不是"内部轮动"，是"外部进出"</a></li>
+<li><a href="#63">6.3 三家估值锚不同</a></li>
+</ul>
+</li>
+<li><a href="#_5">七、那当下到底该怎么办？</a><ul>
+<li><a href="#71">7.1 当前状态再确认</a></li>
+<li><a href="#72">7.2 两条不同的判断路径</a></li>
+<li><a href="#73">7.3 三种实战策略</a></li>
+</ul>
+</li>
+<li><a href="#_6">八、给用户的具体回答</a><ul>
+<li><a href="#_7">你的原始假设</a></li>
+<li><a href="#_8">数据给出的诚实回答</a></li>
+</ul>
+</li>
+<li><a href="#_9">九、最终建议（非投资意见）</a><ul>
+<li><a href="#3-6">短期（3-6 个月）</a></li>
+<li><a href="#1-2">中长期（1-2 年）</a></li>
+<li><a href="#_10">一句话定调</a></li>
+</ul>
+</li>
+<li><a href="#_11">附：数据明细</a><ul>
+<li><a href="#4-70">腾讯 4 个高位窗口（百分位 ≥70%）</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>报告日期</strong>：2026-05-01
+<strong>数据区间</strong>：2021-05-03 ~ 2026-04-30（261 周）
+<strong>核心问题</strong>：当腾讯股价进入合理/高估区间时，资金是否会"溢出"到美团/PDD，从而创造低估买点？
+<strong>方法</strong>：5 年百分位对比 + 腾讯高位事件后美团/PDD 12W/26W/52W 表现 + Lead-Lag 滞后分析 + 金叉事件回测</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、最关键结论（先说答案）</h2>
+<h3 id="_2">❌ "轮动假设"在历史数据里几乎不成立</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设</th>
+<th>数据答案</th>
+<th>证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯涨完后资金溢出到美团/PDD？</td>
+<td><strong>❌ 不成立</strong></td>
+<td>8 次腾讯进入高位后，美团 12W 平均 <strong>-19%</strong>，PDD 12W 平均 <strong>0%</strong></td>
+</tr>
+<tr>
+<td>腾讯领先美团/PDD 涨跌？</td>
+<td><strong>❌ 没有滞后</strong></td>
+<td>Lead-Lag 分析显示 lag=0 时相关性最高（0.68/0.53），其他 lag 全部接近 0</td>
+</tr>
+<tr>
+<td>腾讯高位+美团低位是好买点？</td>
+<td><strong>❌ 至少历史上不是</strong></td>
+<td>最近 36 周这种状态后，美团又跌了 7-21%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_3">✅ 但有一个<strong>反向规律</strong>成立——这才是真正的轮动信号</h3>
+<blockquote>
+<p><strong>腾讯进入低位（百分位 ≤ 20%）时，是买入 PDD 的最佳时机</strong>：
+- 2022-07-11 腾讯触底事件后，<strong>PDD 12W +16%、26W +77%、52W +45%</strong>
+- 2022-07-25 同样事件后，<strong>PDD 12W +20%、26W +114%、52W +82%</strong></p>
+</blockquote>
+<p><strong>正确的轮动逻辑应该是反过来的</strong>：当中概股代表（腾讯）被砸到底时，整个板块一起反弹，<strong>反弹弹性最大的是 PDD（成长性最强）</strong>。</p>
+<hr />
+<h2 id="2026-04-30">二、当前位置（2026-04-30）—— 罕见的极端分化</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>当前价</th>
+<th>5 年区间</th>
+<th><strong>百分位</strong></th>
+<th>距高点</th>
+<th>距低点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>腾讯</strong> (0700.HK)</td>
+<td>467.80 港元</td>
+<td>[190.72, 673.50]</td>
+<td><strong>71%</strong> ⚠️ 偏高</td>
+<td>-30.5%</td>
+<td>+145%</td>
+</tr>
+<tr>
+<td><strong>美团</strong> (3690.HK)</td>
+<td>83.25 港元</td>
+<td>[63.25, 330.00]</td>
+<td><strong>7%</strong> 🔥 极低</td>
+<td>-74.8%</td>
+<td>+31.6%</td>
+</tr>
+<tr>
+<td><strong>PDD</strong></td>
+<td>98.68 美元</td>
+<td>[32.13, 157.57]</td>
+<td><strong>46%</strong> 中位</td>
+<td>-37.4%</td>
+<td>+207%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>这是 5 年来从未出现过的极端分化</strong>：腾讯依然偏高位，美团已贴着 5 年最低点，PDD 在中位。</p>
+<blockquote>
+<p>用户的问题正好对应<strong>这个时刻</strong>：腾讯偏高、美团极低——是不是机会？</p>
+</blockquote>
+<hr />
+<h2 id="pdd">三、历史回测：腾讯涨入高位后，美团/PDD 真的会反弹吗？</h2>
+<h3 id="31-80-8-pdd">3.1 腾讯首次进入 80% 百分位的 8 次事件 + 美团/PDD 后续表现</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>入场日</th>
+<th>腾讯价</th>
+<th>美团（百分位）</th>
+<th>PDD（百分位）</th>
+<th>美团 12W</th>
+<th>美团 26W</th>
+<th>美团 52W</th>
+<th>PDD 12W</th>
+<th>PDD 26W</th>
+<th>PDD 52W</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-07-12</td>
+<td>520</td>
+<td>291（98%）</td>
+<td>107（61%）</td>
+<td><strong>-12.0%</strong></td>
+<td>-24.1%</td>
+<td><strong>-38.4%</strong></td>
+<td>-10.5%</td>
+<td>-43.8%</td>
+<td>-49.1%</td>
+</tr>
+<tr>
+<td>2025-02-17</td>
+<td>517</td>
+<td>163（66%）</td>
+<td>131（87%）</td>
+<td>-19.3%</td>
+<td>-27.3%</td>
+<td>-50.4%</td>
+<td>-10.5%</td>
+<td>-3.2%</td>
+<td>-20.1%</td>
+</tr>
+<tr>
+<td>2025-03-03</td>
+<td>534</td>
+<td>184（79%）</td>
+<td>120（75%）</td>
+<td>-24.8%</td>
+<td>-43.9%</td>
+<td>-58.1%</td>
+<td>-19.5%</td>
+<td>+4.0%</td>
+<td>-15.0%</td>
+</tr>
+<tr>
+<td>2025-05-19</td>
+<td>518</td>
+<td>137（50%）</td>
+<td>119（74%）</td>
+<td>-11.1%</td>
+<td>-30.2%</td>
+<td>N/A</td>
+<td>-0.2%</td>
+<td>-5.0%</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>2025-06-02</td>
+<td>515</td>
+<td>142（54%）</td>
+<td>101（51%）</td>
+<td>-27.5%</td>
+<td>-30.1%</td>
+<td>N/A</td>
+<td><strong>+19.5%</strong></td>
+<td>+16.9%</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>2025-06-23</td>
+<td>513</td>
+<td>129（43%）</td>
+<td>105（58%）</td>
+<td>-17.9%</td>
+<td>-20.3%</td>
+<td>N/A</td>
+<td>+23.1%</td>
+<td>+9.4%</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>2025-07-14</td>
+<td>519</td>
+<td>127（40%）</td>
+<td>109（62%）</td>
+<td>-20.1%</td>
+<td>-21.4%</td>
+<td>N/A</td>
+<td>+14.0%</td>
+<td>-2.1%</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>2026-04-13</td>
+<td>510</td>
+<td>86（9%）</td>
+<td>105（57%）</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>平均</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>-19%</strong></td>
+<td><strong>-28%</strong></td>
+<td><strong>-49%</strong></td>
+<td><strong>+0.4%</strong></td>
+<td><strong>-3.5%</strong></td>
+<td><strong>-28%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>残酷的事实</strong>：
+- <strong>美团</strong>：腾讯进入高位后，美团 12 周平均跌 -19%，52 周跌 -49%——<strong>反向运动，越跌越多</strong>
+- <strong>PDD</strong>：基本震荡（12 周 +0.4%），但 52 周也跌 -28%——<strong>没有明显的"接力上涨"</strong></p>
+<h3 id="32-20">3.2 反向案例：腾讯进入 20% 低位后</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>入场日</th>
+<th>腾讯价</th>
+<th>美团 12W/26W/52W</th>
+<th>PDD 12W/26W/52W</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022-07-11</td>
+<td>309</td>
+<td>-3.5% / -4.5% / -26%</td>
+<td><strong>+16% / +77% / +45%</strong> ⭐</td>
+</tr>
+<tr>
+<td>2022-07-25</td>
+<td>291</td>
+<td>-19.7% / -0.8% / -19%</td>
+<td><strong>+20% / +114% / +82%</strong> ⭐</td>
+</tr>
+<tr>
+<td>2023-09-18</td>
+<td>314</td>
+<td>-29.7% / -26.9% / +12.5%</td>
+<td>+54.6% / +28.2% / +4.1%</td>
+</tr>
+<tr>
+<td>2023-12-04</td>
+<td>306</td>
+<td>+2.0% / +27.4% / <strong>+87.4%</strong> ⭐</td>
+<td>-8.7% / +3.6% / -28.1%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>惊人的发现</strong>：
+- 腾讯触底后，<strong>PDD 平均 26 周回报 +56%、52 周 +26%</strong> —— 极强反弹
+- 美团 26 周平均 -1%，但有一次（2023-12 触底后）出现 52 周 <strong>+87%</strong> 的强反弹
+- <strong>腾讯触底是真正的"中概股黄金买点"</strong>，但买的应该是<strong>最便宜+成长性最强</strong>的标的</p>
+<hr />
+<h2 id="lead-lag">四、Lead-Lag 分析：没有明显的滞后效应</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Lag（周）</th>
+<th>腾讯-美团</th>
+<th>腾讯-PDD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-4</td>
+<td>+0.08</td>
+<td>-0.06</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>-0.01</td>
+<td>+0.07</td>
+</tr>
+<tr>
+<td><strong>0</strong></td>
+<td><strong>+0.68</strong> ⭐</td>
+<td><strong>+0.53</strong> ⭐</td>
+</tr>
+<tr>
+<td>+2</td>
+<td>+0.02</td>
+<td>+0.01</td>
+</tr>
+<tr>
+<td>+4</td>
+<td>-0.05</td>
+<td>-0.10</td>
+</tr>
+<tr>
+<td>+8</td>
+<td>-0.03</td>
+<td>-0.07</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>含义</strong>：腾讯涨/跌<strong>当周</strong>就传导给美团/PDD，没有 1-8 周的滞后效应。
+- 这意味着：<strong>等"腾讯涨完，美团跟着涨"是不可能的——它们同时反应</strong>
+- 真正的差异是"涨跌幅度"和"长期方向"的分歧，不是"时间差"</p>
+<hr />
+<h2 id="70-pdd-30">五、"金叉机会"的特殊扫描：腾讯 ≥70% + 美团/PDD ≤30%</h2>
+<h3 id="51-36">5.1 腾讯高位 + 美团低位（共出现 36 周）</h3>
+<p><strong>唯一一段</strong>：<strong>2025-08-25 ~ 2026-04-30</strong>（持续 36 周，至今）
+- 腾讯均价 583（高位），美团均价 94（低位）
+- 入点（2025-08-25）后表现：<strong>美团 12W -7.0%，26W -21.0%</strong>
+- 也就是说，过去 8 个月这种"金叉"状态没有带来美团反弹，<strong>反而继续阴跌</strong></p>
+<h3 id="52-pdd-1">5.2 腾讯高位 + PDD 低位（共出现 1 周）</h3>
+<p><strong>仅 2021-11-15 一周出现过</strong>：
+- 腾讯高位、PDD 仅在 30% 百分位
+- 入点后 PDD 12W -27%、26W -50%、52W -14%——<strong>直接被砸</strong></p>
+<p><strong>核心教训</strong>：</p>
+<blockquote>
+<p>"腾讯高位+美团/PDD 低位"这种组合在历史上<strong>几乎从来没有兑现过反弹</strong>。</p>
+</blockquote>
+<hr />
+<h2 id="_4">六、为什么"轮动假设"不成立？深层原因</h2>
+<h3 id="61">6.1 三家公司的下跌驱动力完全不同</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>下跌主因</th>
+<th>这种问题靠"资金轮动"能解决吗？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>美团</strong></td>
+<td>抖音抢外卖份额、海外烧钱无回报、利润率下滑</td>
+<td>❌ 这是<strong>基本面</strong>问题，靠估值切换治不好</td>
+</tr>
+<tr>
+<td><strong>PDD</strong></td>
+<td>美国关税威胁、Temu 模式不确定、利润率管理</td>
+<td>❌ 这是<strong>地缘+商业模式</strong>问题</td>
+</tr>
+<tr>
+<td><strong>腾讯</strong></td>
+<td>AI 投入翻倍、回购缩减担忧</td>
+<td>✅ 短期情绪，<strong>可以靠估值切换修复</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键洞察</strong>：美团和 PDD 的低位是<strong>基本面恶化的低位</strong>，不是<strong>情绪超跌的低位</strong>。这两种低位的反弹机制完全不同：
+- 情绪低位：靠"风险偏好回升"修复 → 适合估值切换/资金轮动
+- 基本面低位：必须等<strong>基本面拐点</strong>（外卖份额止跌、关税明朗）</p>
+<h3 id="62">6.2 中概股资金不是"内部轮动"，是"外部进出"</h3>
+<p>中概股的资金流是 <strong>南向资金（港股通）+ 全球新兴市场基金 + 中概股 ETF</strong>。这些钱要么一起进来（板块上涨），要么一起出去（板块下跌），<strong>没有内部轮动机制</strong>。</p>
+<p>→ 这就是为什么 Lag=0 相关性高、Lag≠0 相关性几乎为零。</p>
+<h3 id="63">6.3 三家估值锚不同</h3>
+<ul>
+<li><strong>腾讯</strong>：稳定盈利大盘，靠 PE 估值（当前主营 PE ~12 倍）</li>
+<li><strong>美团</strong>：困境反转股，靠 PS 和外卖单位经济估值</li>
+<li><strong>PDD</strong>：成长股，靠收入增速和 Temu 故事估值</li>
+</ul>
+<p>→ <strong>不同估值锚 → 不可能用同一个"低估"标准套</strong></p>
+<hr />
+<h2 id="_5">七、那当下到底该怎么办？</h2>
+<h3 id="71">7.1 当前状态再确认</h3>
+<pre><code>腾讯：百分位 71%，但已从 98% 高位回落（已跌 30%）→ 估值合理，不算高估
+美团：百分位 7%，5 年最低附近 → 估值便宜，但基本面未见拐点
+PDD：百分位 46%，中位 → 估值中性，等关税明朗
+</code></pre>
+<h3 id="72">7.2 两条不同的判断路径</h3>
+<h4 id="a">路径 A：基本面判断（推荐）</h4>
+<ul>
+<li><strong>美团</strong>：估值非常便宜（PE ~15、PS ~1.6），但需要等<strong>外卖份额止跌</strong>或<strong>Keeta 海外盈利</strong>信号。在此之前不是"低估"，是"便宜陷阱"</li>
+<li><strong>PDD</strong>：估值合理（PE ~10），但需要等<strong>美国关税明朗</strong>。Temu 商业模式如果被迫调整，估值锚会重设</li>
+<li><strong>腾讯</strong>：合理偏便宜（主营 PE ~12），AI 投入是期权但已被市场充分讨论</li>
+</ul>
+<h4 id="b">路径 B：基于历史轮动数据的判断</h4>
+<ul>
+<li><strong>不要等"腾讯涨完去抄美团"</strong> —— 历史从来没成功过</li>
+<li><strong>要等"腾讯触底"才去抄 PDD/美团</strong> —— 这才是真正的中概股黄金买点</li>
+<li>当前腾讯 71% 百分位，<strong>还不是黄金买点</strong></li>
+</ul>
+<h3 id="73">7.3 三种实战策略</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>策略</th>
+<th>触发条件</th>
+<th>标的</th>
+<th>历史验证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>错误的轮动</strong></td>
+<td>腾讯到高位 → 买美团</td>
+<td>美团</td>
+<td>❌ 8 次回测全失败</td>
+</tr>
+<tr>
+<td><strong>正确的反向</strong></td>
+<td>腾讯到低位 → 买 PDD</td>
+<td>PDD</td>
+<td>✅ 2 次回测成功（+77%/+114%）</td>
+</tr>
+<tr>
+<td><strong>基本面拐点</strong></td>
+<td>等美团外卖份额回升 / PDD 关税明朗</td>
+<td>各自</td>
+<td>✅ 不依赖股价位置，看基本面</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_6">八、给用户的具体回答</h2>
+<h3 id="_7">你的原始假设</h3>
+<blockquote>
+<p>"腾讯涨完之后处于合理或者高估区间的时候，去看美团和 PDD 的股价是否有低估机会"</p>
+</blockquote>
+<h3 id="_8">数据给出的诚实回答</h3>
+<p><strong>1. 腾讯当前（71% 百分位）不是高估，是合理偏高</strong>
+- 距离高点已跌 30%
+- 主营 PE ~12 倍是合理偏低水平
+- 所以"腾讯涨完"这个前提，当下不完全成立</p>
+<p><strong>2. 美团确实在 7% 极低位，但历史上"腾讯高+美团低"36 周窗口已发生（2025-08~2026-04），美团没有反弹反而继续跌</strong>
+- 美团的低位是<strong>基本面问题</strong>，不是估值切换能解决的
+- 想抄美团：必须等<strong>外卖份额止跌信号</strong>，不能等"腾讯到高位"</p>
+<p><strong>3. PDD 在 46% 中位，没有明显低估机会</strong>
+- 真正的 PDD 黄金买点是<strong>腾讯触底时</strong>（如 2022-07）
+- 当前等关税明朗，不是估值低估时刻</p>
+<p><strong>4. 真正可操作的轮动信号是反过来的</strong></p>
+<blockquote>
+<p>等腾讯进入 ≤20% 百分位时（约 &lt; 280 港元），重仓 PDD —— 这是历史唯一被反复验证的模式</p>
+</blockquote>
+<hr />
+<h2 id="_9">九、最终建议（非投资意见）</h2>
+<h3 id="3-6">短期（3-6 个月）</h3>
+<ul>
+<li><strong>不要</strong>因为"腾讯涨了所以美团便宜"而买美团 → 数据不支持</li>
+<li><strong>可以</strong>单独评估每家的基本面定价：</li>
+<li>腾讯当前：合理偏便宜，主营业务隐含 PE 12 倍</li>
+<li>美团：便宜但有外卖份额风险，需要看 Q1 财报数据</li>
+<li>PDD：中性，等关税明朗</li>
+</ul>
+<h3 id="1-2">中长期（1-2 年）</h3>
+<ul>
+<li>构建中概股组合时：<strong>接受三家相关性中等</strong>，但<strong>用基本面分散</strong>而不是估值轮动</li>
+<li>真正的"加仓时刻"应该是<strong>全板块恐慌</strong>（如 2022-10、2024-01 中概股 ETF 跌停），不是"内部轮动"</li>
+</ul>
+<h3 id="_10">一句话定调</h3>
+<blockquote>
+<p><strong>"腾讯涨完去找美团/PDD 低估机会"是直觉但被数据否定的策略；
+"腾讯跌透了去找 PDD 反弹"才是历史反复验证的真正轮动信号。</strong></p>
+</blockquote>
+<hr />
+<h2 id="_11">附：数据明细</h2>
+<p>完整数据见同一仓库 <code>data/correlation_3stocks_2021-2026.csv</code></p>
+<h3 id="4-70">腾讯 4 个高位窗口（百分位 ≥70%）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>窗口</th>
+<th>周数</th>
+<th>腾讯均价</th>
+<th>美团状态</th>
+<th>PDD 状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-05 ~ 2021-07</td>
+<td>12</td>
+<td>549</td>
+<td>顶位 100%</td>
+<td>高位 77%</td>
+</tr>
+<tr>
+<td>2021-10 ~ 2021-11</td>
+<td>6</td>
+<td>443</td>
+<td>高位 94%</td>
+<td>中低 34%</td>
+</tr>
+<tr>
+<td>2024-09-30（一周）</td>
+<td>1</td>
+<td>478</td>
+<td>高位 85%</td>
+<td><strong>顶位 100%</strong></td>
+</tr>
+<tr>
+<td><strong>2025-02 ~ 2026-04</strong>（当前）</td>
+<td><strong>64</strong></td>
+<td>642</td>
+<td><strong>低位 23%</strong></td>
+<td>高位 85%</td>
+</tr>
+</tbody>
+</table></div>
+<p>注意：当前最长的高位窗口（64 周）里，PDD 大部分时间也在高位（85%），美团确实在低位（23%）但持续阴跌——<strong>没有出现轮动反弹</strong>。</p>
+<hr />
+<p><strong>报告完成时间</strong>：2026-05-01
+<strong>研究框架</strong>：百分位回测 + Lead-Lag + 金叉事件分析 + 基本面分类
+<strong>数据来源</strong>：Yahoo Finance 周线
+<strong>配套文件</strong>：
+- <code>reports/腾讯-美团-PDD-5年股价相关性分析-20260501.md</code>（基础相关性）
+- <code>reports/腾讯-美团-PDD-轮动估值分析-20260501.md</code>（本报告）
+- <code>data/correlation_3stocks_2021-2026.csv</code>（原始数据）</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/0f7db0f0b448.html">研究报告索引</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/8ffcc4c8ad84.html">美股七姐妹：七份独立投资研究</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/2fd4a5ed4622.html">除了你自己，没人关心你的成本价</a><div class="meta">2026-09-28 · 公众号</div></li><li><a href="../r/05d9b0332f04.html">快手与 MiniMax：护城河与五年盈利推演</a><div class="meta">2026-09-22 · 研究</div></li><li><a href="../r/9afae466678c.html">六家公司研究与持仓判断</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/692147003320.html">技术分析冲力系统实证检验：三万次事件的证伪记录</a><div class="meta">2026-09-04 · 研究</div></li><li><a href="../r/3fffde9e8894.html">九公司凯利赔率横评：上行、下行与仓位框架</a><div class="meta">2026-09-03 · 横评对比</div></li><li><a href="../r/6a076e0af7bb.html">破净与净现金股全球筛选：美股、港股、A股</a><div class="meta">2026-08-27 · 筛选</div></li><li><a href="../r/13793d9c42cd.html">12 家公司 10 年后利润结局推演（2036 年视角）</a><div class="meta">2026-08-27 · 研究</div></li><li><a href="../r/4328f84a5552.html">巴菲特、段永平、李录 2026Q2 13F 持仓全解</a><div class="meta">2026-08-15 · 财报</div></li><li><a href="../r/be601dae083d.html">七公司十年横评：谁值得重仓，谁应该规避</a><div class="meta">2026-08-14 · 横评对比</div></li><li><a href="../r/8395b6213382.html">BNP Paribas — Income Investment</a><div class="meta">2026-07-15 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

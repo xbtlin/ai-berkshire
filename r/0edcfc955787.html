@@ -1,0 +1,142 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GLM-4.6V · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a></div><h1>GLM-4.6V</h1><div class="meta"><a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/zai-org__GLM-4.6V__README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#usage">Usage</a><ul>
+<li><a href="#environment-installation">Environment Installation</a></li>
+<li><a href="#quick-start-with-transformers">Quick Start with Transformers</a></li>
+</ul>
+</li>
+<li><a href="#evaluation-settings">Evaluation Settings</a></li>
+<li><a href="#fixed-and-remaining-issues">Fixed and Remaining Issues</a></li>
+<li><a href="#citation">Citation</a></li>
+</ul>
+</div>
+</details><article><div align="center">
+<img src=https://raw.githubusercontent.com/zai-org/GLM-V/refs/heads/main/resources/logo.svg width="40%"/>
+</div>
+
+<p>This model is part of the GLM-V family of models, introduced in the paper <a href="https://huggingface.co/papers/2507.01006">GLM-4.1V-Thinking and GLM-4.5V: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning</a>.</p>
+<ul>
+<li><strong>GLM-4.6V Blog</strong>: <a href="https://z.ai/blog/glm-4.6v">https://z.ai/blog/glm-4.6v</a></li>
+<li><strong>Paper</strong>: <a href="https://huggingface.co/papers/2507.01006">https://huggingface.co/papers/2507.01006</a></li>
+<li><strong>GitHub Repository</strong>: <a href="https://github.com/zai-org/GLM-V">https://github.com/zai-org/GLM-V</a></li>
+<li><strong>Online Demo</strong>: <a href="https://chat.z.ai/">https://chat.z.ai/</a></li>
+<li><strong>API Access</strong>: <a href="https://docs.z.ai/guides/vlm/glm-4.6v">Z.ai Open Platform</a></li>
+<li><strong>Desktop Assistant App</strong>: <a href="https://huggingface.co/spaces/zai-org/GLM-4.5V-Demo-App">https://huggingface.co/spaces/zai-org/GLM-4.5V-Demo-App</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>GLM-4.6V series model includes two versions: GLM-4.6V (106B), a foundation model designed for cloud and high-performance
+cluster scenarios,
+and GLM-4.6V-Flash (9B), a lightweight model optimized for local deployment and low-latency applications.
+GLM-4.6V scales its context window to 128k tokens in training,
+and achieves SoTA performance in visual understanding among models of similar parameter scales.
+Crucially, we integrate native Function Calling capabilities for the first time.
+This effectively bridges the gap between "visual perception" and "executable action"
+providing a unified technical foundation for multimodal agents in real-world business scenarios.</p>
+<p><img alt="GLM-4.6V Benchmarks" src="https://raw.githubusercontent.com/zai-org/GLM-V/refs/heads/main/resources/bench_46v.jpeg" /></p>
+<p>Beyond achieves SoTA performance across major multimodal benchmarks at comparable model scales. GLM-4.6V introduces
+several key features:</p>
+<ul>
+<li>
+<p><strong>Native Multimodal Function Calling</strong> 
+Enables native vision-driven tool use. Images, screenshots, and document pages can be passed directly as tool inputs without text conversion, while visual outputs (charts, search images, rendered pages) are interpreted and integrated into the reasoning chain. This closes the loop from perception to understanding to execution.</p>
+</li>
+<li>
+<p><strong>Interleaved Image-Text Content Generation</strong>
+Supports high-quality mixed media creation from complex multimodal inputs. GLM-4.6V takes a multimodal context—spanning documents, user inputs, and tool-retrieved images—and synthesizes coherent, interleaved image-text content tailored to the task. During generation it can actively call search and retrieval tools to gather and curate additional text and visuals, producing rich, visually grounded content.</p>
+</li>
+<li>
+<p><strong>Multimodal Document Understanding</strong>
+GLM-4.6V can process up to 128K tokens of multi-document or long-document input, directly interpreting richly formatted pages as images. It understands text, layout, charts, tables, and figures jointly, enabling accurate comprehension of complex, image-heavy documents without requiring prior conversion to plain text.</p>
+</li>
+<li>
+<p><strong>Frontend Replication &amp; Visual Editing</strong> 
+Reconstructs pixel-accurate HTML/CSS from UI screenshots and supports natural-language-driven edits. It detects layout, components, and styles visually, generates clean code, and applies iterative visual modifications through simple user instructions.</p>
+</li>
+</ul>
+<p><strong>This Hugging Face repository hosts the <code>GLM-4.6V</code> model, part of the <code>GLM-V</code> series.</strong></p>
+<h2 id="usage">Usage</h2>
+<h3 id="environment-installation">Environment Installation</h3>
+<p>For <code>SGLang</code>:</p>
+<pre><code class="language-bash">pip install sglang&gt;=0.5.6.post1
+pip install nvidia-cudnn-cu12==9.16.0.29
+sudo apt update
+sudo apt install ffmpeg
+</code></pre>
+<p>For <code>vLLM</code>:</p>
+<pre><code class="language-bash">pip install vllm&gt;=0.12.0
+pip install transformers&gt;=5.0.0rc0
+</code></pre>
+<h3 id="quick-start-with-transformers">Quick Start with Transformers</h3>
+<pre><code class="language-python">from transformers import AutoProcessor, Glm4vMoeForConditionalGeneration
+import torch
+
+MODEL_PATH = &quot;zai-org/GLM-4.6V&quot;
+messages = [
+    {
+        &quot;role&quot;: &quot;user&quot;,
+        &quot;content&quot;: [
+            {
+                &quot;type&quot;: &quot;image&quot;,
+                &quot;url&quot;: &quot;https://upload.wikimedia.org/wikipedia/commons/f/fa/Grayscale_8bits_palette_sample_image.png&quot;
+            },
+            {
+                &quot;type&quot;: &quot;text&quot;,
+                &quot;text&quot;: &quot;describe this image&quot;
+            }
+        ],
+    }
+]
+processor = AutoProcessor.from_pretrained(MODEL_PATH)
+model = Glm4vMoeForConditionalGeneration.from_pretrained(
+    pretrained_model_name_or_path=MODEL_PATH,
+    torch_dtype=&quot;auto&quot;,
+    device_map=&quot;auto&quot;,
+)
+inputs = processor.apply_chat_template(
+    messages,
+    tokenize=True,
+    add_generation_prompt=True,
+    return_dict=True,
+    return_tensors=&quot;pt&quot;
+).to(model.device)
+inputs.pop(&quot;token_type_ids&quot;, None)
+generated_ids = model.generate(**inputs, max_new_tokens=8192)
+output_text = processor.decode(generated_ids[0][inputs[&quot;input_ids&quot;].shape[1]:], skip_special_tokens=False)
+print(output_text)
+</code></pre>
+<h2 id="evaluation-settings">Evaluation Settings</h2>
+<p>We primarily use vLLM as the backend for model inference. For faster and more reliable performance on video tasks, we employ SGLang. To reproduce our leaderboard results, we recommend the following decoding parameters:</p>
+<ul>
+<li>top_p: 0.6</li>
+<li>top_k: 2</li>
+<li>temperature: 0.8</li>
+<li>repetition_penalty: 1.1</li>
+<li>max_generate_tokens: 16K</li>
+</ul>
+<p>For more usage details, please refer to Our <a href="https://github.com/zai-org/GLM-V">Github</a>.</p>
+<h2 id="fixed-and-remaining-issues">Fixed and Remaining Issues</h2>
+<p>Since the open-sourcing of GLM-4.1V, we have received extensive feedback from the community and are well aware that the model still has many shortcomings. In subsequent iterations, we attempted to address several common issues — such as repetitive thinking outputs and formatting errors — which have been mitigated to some extent in this new version.</p>
+<p>However, the model still has several limitations and issues that we will fix as soon as possible:</p>
+<ol>
+<li>Pure text QA capabilities still have significant room for improvement. In this development cycle, our primary focus was on visual multimodal scenarios, and we will enhance pure text abilities in upcoming updates.</li>
+<li>The model may still overthink or even repeat itself in certain cases, especially when dealing with complex prompts.</li>
+<li>In some situations, the model may restate the answer again at the end.</li>
+<li>There remain certain perception limitations, such as counting accuracy and identifying specific individuals, which still require improvement.</li>
+</ol>
+<p>Thank you for your patience and understanding. We also welcome feedback and suggestions in the issue section — we will respond and improve as much as we can!</p>
+<h2 id="citation">Citation</h2>
+<p>If you use this model, please cite the following paper:</p>
+<pre><code class="language-bibtex">@misc{vteam2025glm45vglm41vthinkingversatilemultimodal,
+      title={GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning}, 
+      author={V Team and Wenyi Hong and Wenmeng Yu and Xiaotao Gu and Guo Wang and Guobing Gan and Haomiao Tang and Jiale Cheng and Ji Qi and Junhui Ji and Lihang Pan and Shuaiqi Duan and Weihan Wang and Yan Wang and Yean Cheng and Zehai He and Zhe Su and Zhen Yang and Ziyang Pan and Aohan Zeng and Baoxu Wang and Bin Chen and Boyan Shi and Changyu Pang and Chenhui Zhang and Da Yin and Fan Yang and Guoqing Chen and Jiazheng Xu and Jiale Zhu and Jiali Chen and Jing Chen and Jinhao Chen and Jinghao Lin and Jinjiang Wang and Junjie Chen and Leqi Lei and Letian Gong and Leyi Pan and Mingdao Liu and Mingde Xu and Mingzhi Zhang and Qinkai Zheng and Sheng Yang and Shi Zhong and Shiyu Huang and Shuyuan Zhao and Siyan Xue and Shangqin Tu and Shengbiao Meng and Tianshu Zhang and Tianwei Luo and Tianxiang Hao and Tianyu Tong and Wenkai Li and Wei Jia and Xiao Liu and Xiaohan Zhang and Xin Lyu and Xinyue Fan and Xuancheng Huang and Yanling Wang and Yadong Xue and Yanfeng Wang and Yanzi Wang and Yifan An and Yifan Du and Yiming Shi and Yiheng Huang and Yilin Niu and Yuan Wang and Yuanchang Yue and Yuchen Li and Yutao Zhang and Yuting Wang and Yu Wang and Yuxuan Zhang and Zhao Xue and Zhenyu Hou and Zhengxiao Du and Zihan Wang and Peng Zhang and Debing Liu and Bin Xu and Juanzi Li and Minlie Huang and Yuxiao Dong and Jie Tang},
+      year={2025},
+      eprint={2507.01006},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.01006}, 
+}
+</code></pre></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/94b63c16f6b1.html">GLM-5</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/224a0c39bab5.html">GLM-5.3</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/22905c393a9c.html">GLM-5.3-Flash</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d060129a14be.html">GLM-5.2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f90617223e31.html">GLM-4.7</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8cf89aee725c.html">GLM-4.5-Air</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/10aa23c70e91.html">Grok 2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/652b9a513303.html">Grok-1</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4224b4932376.html">Solar Open</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/32e837241209.html">tencent__Hy3__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/e9c250974ef4.html">tencent__Hunyuan-Large__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/b78c7d9e66fc.html">stepfun-ai__step3__README</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
