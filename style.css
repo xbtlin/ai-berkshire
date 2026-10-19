@@ -74,6 +74,7 @@ ul.work li>a{font-weight:400;font-size:.95rem}
 .wx{display:flex;gap:1rem;align-items:center;margin:2.4rem 0 1rem;padding:1rem;background:var(--card);
 border:1px solid var(--line);border-radius:var(--radius)}.wx img{width:92px;height:92px;border-radius:6px;flex-shrink:0}
 .wx b{display:block;font-size:1rem}.wx span{color:var(--muted);font-size:.86rem}
+.wxline{margin:2.4rem 0 .6rem;padding-top:.8rem;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
 .intro{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.2rem;margin:1rem 0 1.4rem}
 .intro p{margin:.3rem 0}
 .layers{display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:.8rem;margin:1rem 0}
