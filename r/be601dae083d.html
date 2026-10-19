@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>七公司十年横评：谁值得重仓，谁应该规避 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/综合与横评/index.html">综合与横评</a></div><h1>七公司十年横评：谁值得重仓，谁应该规避</h1><div class="meta"><a href="../topics/综合与横评/index.html">综合与横评</a> ｜ 2026-08-14 · 横评对比 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/7%E5%85%AC%E5%8F%B810%E5%B9%B4%E6%8A%95%E8%B5%84%E4%BB%B7%E5%80%BC%E6%A8%AA%E8%AF%84-%E7%A1%AE%E5%AE%9A%E6%80%A7%E8%B0%83%E6%95%B4%E5%90%8E%E5%9B%9E%E6%8A%A5-20260814.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>七公司十年横评：谁值得重仓，谁应该规避 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/综合与横评/index.html">综合与横评</a></div><div class="layout"><div><h1>七公司十年横评：谁值得重仓，谁应该规避</h1><div class="meta"><a href="../topics/综合与横评/index.html">综合与横评</a> ｜ 2026-08-14 · 横评对比 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/7%E5%85%AC%E5%8F%B810%E5%B9%B4%E6%8A%95%E8%B5%84%E4%BB%B7%E5%80%BC%E6%A8%AA%E8%AF%84-%E7%A1%AE%E5%AE%9A%E6%80%A7%E8%B0%83%E6%95%B4%E5%90%8E%E5%9B%9E%E6%8A%A5-20260814.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">结论先行</a><ul>
 <li><a href="#_2">这张表最重要的一行不是排名，是"修正版"那一列全线下移</a></li>
@@ -1927,4 +1937,55 @@ python3 tools/terminal_value.py pe --roic 0.20 --g 0.02 --r 0.06
 <p><strong>校验</strong>：用同一组参数反算初版的 r=10% 与 r=8% 两张表，退出倍数与三档 IRR 逐项吻合、期望IRR 与标准差差异在 0.02pct 以内——<strong>这也顺带验证了初版那两张表本身没有算错，问题只在参数取值。</strong></p>
 <p><strong>工具内置三条纪律</strong>：(1) <code>--g-shift</code> 强制显式声明币种换算，不允许 r 与 g 隐式混用；(2) 每一格自动做分母宽度体检，低于 5pct 打 ⚠、分母为负直接判失效；(3) 文档头写明离散风险（退市/VIE/地缘）不得放进 r 或 β。</p>
 <hr />
-<p><em>本报告为投资研究记录，不构成任何投资建议。所有前瞻性推演均为情景框架，不是预测。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/0f7db0f0b448.html">研究报告索引</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/8ffcc4c8ad84.html">美股七姐妹：七份独立投资研究</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/2fd4a5ed4622.html">除了你自己，没人关心你的成本价</a><div class="meta">2026-09-28 · 公众号</div></li><li><a href="../r/05d9b0332f04.html">快手与 MiniMax：护城河与五年盈利推演</a><div class="meta">2026-09-22 · 研究</div></li><li><a href="../r/9afae466678c.html">六家公司研究与持仓判断</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/692147003320.html">技术分析冲力系统实证检验：三万次事件的证伪记录</a><div class="meta">2026-09-04 · 研究</div></li><li><a href="../r/3fffde9e8894.html">九公司凯利赔率横评：上行、下行与仓位框架</a><div class="meta">2026-09-03 · 横评对比</div></li><li><a href="../r/6a076e0af7bb.html">破净与净现金股全球筛选：美股、港股、A股</a><div class="meta">2026-08-27 · 筛选</div></li><li><a href="../r/13793d9c42cd.html">12 家公司 10 年后利润结局推演（2036 年视角）</a><div class="meta">2026-08-27 · 研究</div></li><li><a href="../r/4328f84a5552.html">巴菲特、段永平、李录 2026Q2 13F 持仓全解</a><div class="meta">2026-08-15 · 财报</div></li><li><a href="../r/8395b6213382.html">BNP Paribas — Income Investment</a><div class="meta">2026-07-15 · 研究</div></li><li><a href="../r/4e1b35597fc2.html">社区研究报告 / Community Reports</a><div class="meta">2026-07-04 · 导读</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<p><em>本报告为投资研究记录，不构成任何投资建议。所有前瞻性推演均为情景框架，不是预测。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/8ffcc4c8ad84.html">美股七姐妹：七份独立投资研究</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/05d9b0332f04.html">快手与 MiniMax：护城河与五年盈利推演</a><div class="meta">2026-09-22 · 研究</div></li><li><a href="../r/9afae466678c.html">六家公司研究与持仓判断</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/692147003320.html">技术分析冲力系统实证检验：三万次事件的证伪记录</a><div class="meta">2026-09-04 · 研究</div></li><li><a href="../r/3fffde9e8894.html">九公司凯利赔率横评：上行、下行与仓位框架</a><div class="meta">2026-09-03 · 横评对比</div></li><li><a href="../r/6a076e0af7bb.html">破净与净现金股全球筛选：美股、港股、A股</a><div class="meta">2026-08-27 · 筛选</div></li><li><a href="../r/13793d9c42cd.html">12 家公司 10 年后利润结局推演（2036 年视角）</a><div class="meta">2026-08-27 · 研究</div></li><li><a href="../r/8395b6213382.html">BNP Paribas — Income Investment</a><div class="meta">2026-07-15 · 研究</div></li><li><a href="../r/4e1b35597fc2.html">社区研究报告 / Community Reports</a><div class="meta">2026-07-04 · 导读</div></li><li><a href="../r/33abba7475bb.html">九方智投控股（9636.HK）研究报告</a><div class="meta">2026-06-30 · 研究</div></li><li><a href="../r/abcc410a7ac5.html">美光与SK海力士护城河利润预测对比-20260628</a><div class="meta">2026-06-28 · 横评对比</div></li><li><a href="../r/07a07e9c09fd.html">全球AI赛道10家核心标的筛选-20260628</a><div class="meta">2026-06-28 · 筛选</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">结论先行</a><ul>
+<li><a href="#_2">这张表最重要的一行不是排名，是"修正版"那一列全线下移</a></li>
+</ul>
+</li>
+<li><a href="#_3">一、横跨四家的系统性发现：净现金里的浮存</a></li>
+<li><a href="#2026-08-13">二、估值起点（全部为 2026-08-13 收盘）</a><ul>
+<li><a href="#_4">三个把"便宜"看错的地方</a></li>
+</ul>
+</li>
+<li><a href="#pe">三、估值框架：退出PE 是怎么定的</a><ul>
+<li><a href="#31">3.1 为什么不能用同业类比定终值倍数</a></li>
+<li><a href="#32-roic-1040">3.2 ROIC 怎么算：两种算法差 10–40 倍，而这个差距就是答案</a></li>
+<li><a href="#33">3.3 一个把问题压缩掉的诊断</a></li>
+<li><a href="#34-r-2026-08-17">3.4 r 怎么定（2026-08-17 重写：初版四个组件里有两个是估计值，已全部取到实测）</a></li>
+<li><a href="#35-r">3.5 为什么 r 必须钉死，不能跟着国债跑</a></li>
+<li><a href="#36">3.6 四套口径下的完整推导结果</a></li>
+<li><a href="#37">3.7 从这四张表读出的五件事</a></li>
+</ul>
+</li>
+<li><a href="#_5">四、逐公司：对抗验证版的三档推演</a><ul>
+<li><a href="#_6">腾讯：优势从"高回报"降级为"相对确定"</a></li>
+<li><a href="#_7">阿里巴巴：赌的是执行，而且价格不便宜</a></li>
+<li><a href="#_8">拼多多：最便宜，但悲观档最深</a></li>
+<li><a href="#_9">贵州茅台：不是会崩，是不涨——而且分红已经超过自由现金流</a></li>
+<li><a href="#_10">泡泡玛特：分母是峰值利润，而且峰值里还有一次性税收收益</a></li>
+<li><a href="#_11">美团：修正后期望回报转负</a></li>
+<li><a href="#minimax">MiniMax：坐标系是歪的</a></li>
+</ul>
+</li>
+<li><a href="#_12">五、排序方法与两个可能推翻它的分歧点</a><ul>
+<li><a href="#irr">为什么用风险调整后回报而不是期望IRR</a></li>
+<li><a href="#_13">关于凯利公式：为什么这里不能直接用</a></li>
+<li><a href="#_14">两个可能推翻排序的分歧点</a></li>
+</ul>
+</li>
+<li><a href="#_15">六、最值得重仓的：腾讯（但理由变了）</a></li>
+<li><a href="#minimax_1">七、应该规避的：MiniMax（当前价格）</a></li>
+<li><a href="#a">附录 A：数据可信度分级（对抗验证后）</a></li>
+<li><a href="#b">附录 B：被对抗验证否决、不可引用的说法</a></li>
+<li><a href="#c">附录 C：会改变结论的跟踪清单</a></li>
+<li><a href="#_16">方法论与限制</a></li>
+<li><a href="#_17">修订记录</a><ul>
+<li><a href="#2026-08-17">2026-08-17：资本成本口径修订</a></li>
+<li><a href="#2026-08-17_1">资本成本参数数据来源（2026-08-17 取数）</a></li>
+<li><a href="#_18">复现方式</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

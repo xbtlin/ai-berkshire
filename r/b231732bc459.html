@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>腾讯控股（0700.HK）多头论证：对看空报告的对抗性检验 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><h1>腾讯控股（0700.HK）多头论证：对看空报告的对抗性检验</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-08-17 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E8%85%BE%E8%AE%AF-%E5%A4%9A%E5%A4%B4%E8%AE%BA%E8%AF%81-20260817.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>腾讯控股（0700.HK）多头论证：对看空报告的对抗性检验 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><div class="layout"><div><h1>腾讯控股（0700.HK）多头论证：对看空报告的对抗性检验</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-08-17 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E8%85%BE%E8%AE%AF-%E5%A4%9A%E5%A4%B4%E8%AE%BA%E8%AF%81-20260817.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">〇、方法论与已知局限</a><ul>
 <li><a href="#01">0.1 本文做什么、不做什么</a></li>
@@ -1971,4 +1981,68 @@ python3 tools/report_audit.py verdict --results '[...30 条核验结果...]'
 <hr />
 <p><em>本报告为个人研究记录，不构成投资建议。所有涉及计算的数字均通过 <code>tools/financial_rigor.py</code> 精确十进制验算，未使用心算。</em>
 <em>币种说明：财务数据为人民币，股价与市值为港币，CNY/HKD = 1.1641（ECB，2026-08-14）。ADR 换股比例经数学验证为 1 ADR = 1 普通股。</em>
-<em>红队声明：本文由被指派做多头论证的角色完成，立场污染风险真实存在。12 条裁决中 5 条完全站在看空方一边，读者应据此校准本文其余部分的可信度。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/e98ba87fde5c.html">证据与审计说明</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/549a5c7c8f83.html">腾讯研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/fa1ad1445212.html">腾讯研究附录：来源、真值、算术与尚未解决的缺口</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<em>红队声明：本文由被指派做多头论证的角色完成，立场污染风险真实存在。12 条裁决中 5 条完全站在看空方一边，读者应据此校准本文其余部分的可信度。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/6832de236773.html">02｜微信的护城河，保护了什么，又漏掉了什么</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/375b83017c63.html">01｜腾讯值得研究，但“微信还在”不能替你判断买价</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/4352cd405a4d.html">《看懂腾讯》系列说明</a><div class="meta">2026-09-06 · 导读</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">〇、方法论与已知局限</a><ul>
+<li><a href="#01">0.1 本文做什么、不做什么</a></li>
+<li><a href="#02">0.2 局限性声明（与看空报告同等强度）</a></li>
+</ul>
+</li>
+<li><a href="#_2">一、数据基准与口径</a><ul>
+<li><a href="#11">1.1 币种与汇率（关键，看空报告已纠错过一次）</a></li>
+<li><a href="#12-adr">1.2 ADR 换股比例（强制标明）</a></li>
+<li><a href="#13">1.3 估值基准（与看空报告同源，避免"换基准赢辩论"）</a></li>
+</ul>
+</li>
+<li><a href="#_3">二、逐条裁决表（强制项）</a></li>
+<li><a href="#_4">三、主攻击一：估值倍数——看空方的"中性"其实是深度看空</a><ul>
+<li><a href="#31-evsales-ev">3.1 把 EV/Sales 换成 EV/经营盈利，看空方的假设立刻现形</a></li>
+<li><a href="#32-stockanalysis2026-08-17">3.2 全球同业实测（stockanalysis，2026-08-17 取数）</a></li>
+<li><a href="#33">3.3 我的倍数选择与理由</a></li>
+<li><a href="#34">3.4 投资组合折价：我改，但改不动大局</a></li>
+</ul>
+</li>
+<li><a href="#_5">四、主攻击二：悲观地板——我基本站在看空方这边</a><ul>
+<li><a href="#41">4.1 我独立算的地板比看空方更低</a></li>
+<li><a href="#42">4.2 但地板的性质需要重新定义</a></li>
+<li><a href="#43">4.3 公司真金白银定义的地板：一半有效</a></li>
+</ul>
+</li>
+<li><a href="#ai">五、主攻击三：AI 期权——看空方给了它负价格</a><ul>
+<li><a href="#51-ai">5.1 看空方实际上给 AI 定了多少钱？答案是负数</a></li>
+<li><a href="#52-ai">5.2 自下而上给 AI 定价（可证伪版本）</a></li>
+<li><a href="#53">5.3 微信小店 / 视频号电商闭环：看空方的盲区</a></li>
+</ul>
+</li>
+<li><a href="#_6">六、主攻击四：股东回报降档，是恶化还是合理选择？</a><ul>
+<li><a href="#61">6.1 先把数字摆清楚</a></li>
+<li><a href="#62">6.2 三条支持"合理选择"的论据</a></li>
+<li><a href="#63">6.3 两条支持"就是恶化"的论据（我承认）</a></li>
+</ul>
+</li>
+<li><a href="#prosus">七、Prosus 反例检验</a><ul>
+<li><a href="#71">7.1 反例：折价永不收窄，对长期持有者反而是燃料</a></li>
+<li><a href="#72">7.2 为什么它仍不足以翻案</a></li>
+</ul>
+</li>
+<li><a href="#hk641">八、我的估值：中枢 HK$641</a><ul>
+<li><a href="#81-financial_rigorpy">8.1 三情景（全部经 financial_rigor.py 精确十进制）</a></li>
+<li><a href="#82">8.2 概率加权</a></li>
+<li><a href="#83">8.3 五个锚点的完整光谱（读者应该同时看到全部）</a></li>
+<li><a href="#84">8.4 三情景估值（框架强制项，工具原始输出）</a></li>
+</ul>
+</li>
+<li><a href="#_7">九、必答问题</a><ul>
+<li><a href="#91-102-pe">9.1 核心业务 10.2 倍 PE 的公司，需要什么才配得上"重仓"？</a></li>
+<li><a href="#92">9.2 股东回报降档：恶化还是合理选择？</a></li>
+<li><a href="#93">9.3 微信小店 / 视频号电商闭环的价值，既有报告是否漏掉？</a></li>
+<li><a href="#94-15">9.4 若要重仓（&gt;15%），需要哪些前提成立？逐条列出并评估概率</a></li>
+</ul>
+</li>
+<li><a href="#_8">十、我最可能在哪里错（诚实清单）</a></li>
+<li><a href="#afinancial_rigorpy">附录 A：关键计算记录（financial_rigor.py 精确十进制，禁止心算）</a></li>
+<li><a href="#b">附录 B：数据来源与等级</a></li>
+<li><a href="#creport_auditpy">附录 C：数据抽检准出记录（report_audit.py）</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

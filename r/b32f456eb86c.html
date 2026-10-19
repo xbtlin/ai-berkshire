@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>美光科技（Micron, MU）投资研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/存储/index.html">存储</a></div><h1>美光科技（Micron, MU）投资研究报告</h1><div class="meta"><a href="../topics/存储/index.html">存储</a> ｜ 2026-07-30 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%AD%98%E5%82%A8/%E7%BE%8E%E5%85%89%E7%A7%91%E6%8A%80-%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20260730.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>美光科技（Micron, MU）投资研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/存储/index.html">存储</a></div><div class="layout"><div><h1>美光科技（Micron, MU）投资研究报告</h1><div class="meta"><a href="../topics/存储/index.html">存储</a> ｜ 2026-07-30 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%AD%98%E5%82%A8/%E7%BE%8E%E5%85%89%E7%A7%91%E6%8A%80-%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20260730.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#ai">前置声明：信息丰富度评级与 AI 研究局限性</a></li>
 <li><a href="#_1">先给结论</a></li>
@@ -1075,4 +1085,70 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 <blockquote>
 <p>最后重申：本报告为 AI 辅助研究，训练数据截至 2026 年 1 月，其后信息依赖联网检索。所有结论是研究框架的输出，不构成投资建议。</p>
 </blockquote>
-<p><em>报告完成于 2026-07-30。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/fdfd2dcb655d.html">长鑫存储（长鑫科技，688825.SH）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/d975930c44d0.html">长江存储（YMTC）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/25d1040aa2a7.html">存储行业产业链投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/bdf3ad41df76.html">兆易创新（603986）投资研究报告：NOR 龙头与长鑫棋局</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/fd4b02361838.html">三星电子（Samsung Electronics, KRX: 005930 / GDR: SMSN）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/b3f9a69f7272.html">SK海力士（SK hynix, KRX: 000660 / NASDAQ: SKHY）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<p><em>报告完成于 2026-07-30。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/fdfd2dcb655d.html">长鑫存储（长鑫科技，688825.SH）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/d975930c44d0.html">长江存储（YMTC）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/25d1040aa2a7.html">存储行业产业链投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/bdf3ad41df76.html">兆易创新（603986）投资研究报告：NOR 龙头与长鑫棋局</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/fd4b02361838.html">三星电子（Samsung Electronics, KRX: 005930 / GDR: SMSN）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li><li><a href="../r/b3f9a69f7272.html">SK海力士（SK hynix, KRX: 000660 / NASDAQ: SKHY）投资研究报告</a><div class="meta">2026-07-30 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#ai">前置声明：信息丰富度评级与 AI 研究局限性</a></li>
+<li><a href="#_1">先给结论</a></li>
+<li><a href="#_2">第一部分：公司与数据总览</a><ul>
+<li><a href="#11">1.1 一句话定义这门生意</a></li>
+<li><a href="#12-4-9-fy2026-2025-9-2026-8">1.2 最近 4 个财季（美光财年 9 月初截止，FY2026 = 2025 年 9 月至 2026 年 8 月）</a></li>
+<li><a href="#13-fy2026-q3">1.3 收入结构（FY2026 Q3）</a></li>
+<li><a href="#14-6">1.4 近 6 个财年全景（单位：亿美元）</a></li>
+<li><a href="#15-2026-07-29">1.5 当前估值快照（2026-07-29）</a></li>
+</ul>
+</li>
+<li><a href="#_3">第二部分：三大研究焦点</a><ul>
+<li><a href="#hbm-2-21">焦点一：HBM 追赶进度——从 2% 到 21%，追赶已基本完成，但天花板也已写明</a></li>
+<li><a href="#2028">焦点二：美国本土建厂——政策红利真实存在，资本回报的账却要到 2028 年后才能算清</a></li>
+<li><a href="#_4">焦点三：对华限制的双向影响——中国市场基本"清零"完毕，中国对手才是真正的长期变量</a></li>
+</ul>
+</li>
+<li><a href="#_5">第三部分：生意本质分析</a><ul>
+<li><a href="#31">3.1 这门生意好在哪？追问三层</a></li>
+<li><a href="#32">3.2 最小玩家的生存逻辑</a></li>
+</ul>
+</li>
+<li><a href="#_6">第四部分：护城河评估</a><ul>
+<li><a href="#41">4.1 五类护城河逐一验证</a></li>
+<li><a href="#42">4.2 美光相对三星/海力士的独特壁垒</a></li>
+<li><a href="#43">4.3 十年后护城河还在吗？</a></li>
+</ul>
+</li>
+<li><a href="#_7">第五部分：逆向思考与风险清单</a><ul>
+<li><a href="#51">5.1 失败路径表</a></li>
+<li><a href="#52">5.2 历史类比：这家公司离死亡曾经有多近</a></li>
+<li><a href="#53">5.3 聪明人为什么不买？</a></li>
+</ul>
+</li>
+<li><a href="#_8">第六部分：管理层评估</a><ul>
+<li><a href="#61-sanjay-mehrotra">6.1 Sanjay Mehrotra 关键决策复盘</a></li>
+<li><a href="#62">6.2 资本配置记录</a></li>
+<li><a href="#63">6.3 管理层换人公司还行吗？</a></li>
+</ul>
+</li>
+<li><a href="#_9">第七部分：行业与长期趋势</a><ul>
+<li><a href="#71-ai">7.1 AI 内存需求：结构性还是周期性？</a></li>
+<li><a href="#72">7.2 美国半导体制造回流：机会还是资本陷阱？</a></li>
+<li><a href="#73-3com">7.3 二十年后回看：标准石油还是 3Com？</a></li>
+</ul>
+</li>
+<li><a href="#_10">第八部分：估值与安全边际</a><ul>
+<li><a href="#81-dcf">8.1 反向 DCF：当前市值隐含什么假设？</a></li>
+<li><a href="#82-3">8.2 三情景估值（工具验算，3 年期）</a></li>
+<li><a href="#83">8.3 周期股的估值锚</a></li>
+<li><a href="#84">8.4 价格区间与操作含义</a></li>
+<li><a href="#85">8.5 追问：股市关闭五年你愿意持有吗？</a></li>
+</ul>
+</li>
+<li><a href="#_11">第九部分：综合决策备忘录</a><ul>
+<li><a href="#91">9.1 六维度汇总表</a></li>
+<li><a href="#92">9.2 最终决策表</a></li>
+<li><a href="#93">9.3 多视角综合点评</a></li>
+</ul>
+</li>
+<li><a href="#_12">附录一：关键数据交叉验证记录</a></li>
+<li><a href="#_13">附录二：主要数据来源</a></li>
+<li><a href="#ai-vs">附录三：AI 分析置信度 vs 投资确定性</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
