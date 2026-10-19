@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>科创板市值前100公司：去劣筛选报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../screens/科创板股召回池/index.html">科创板股召回池</a></div><h1>科创板市值前100公司：去劣筛选报告</h1><div class="meta"><a href="../screens/科创板股召回池/index.html">科创板股召回池</a> ｜ 2026-05-17 · 筛选 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/%E7%AD%9B%E9%80%89%E5%85%AC%E5%8F%B8/%E7%A7%91%E5%88%9B%E6%9D%BF%E8%82%A1%E5%8F%AC%E5%9B%9E%E6%B1%A0/%E7%A7%91%E5%88%9B%E6%9D%BF100-%E5%8E%BB%E5%8A%A3%E7%AD%9B%E9%80%89-20260517.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>科创板市值前100公司：去劣筛选报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../screens/科创板股召回池/index.html">科创板股召回池</a></div><div class="layout"><div><h1>科创板市值前100公司：去劣筛选报告</h1><div class="meta"><a href="../screens/科创板股召回池/index.html">科创板股召回池</a> ｜ 2026-05-17 · 筛选 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/%E7%AD%9B%E9%80%89%E5%85%AC%E5%8F%B8/%E7%A7%91%E5%88%9B%E6%9D%BF%E8%82%A1%E5%8F%AC%E5%9B%9E%E6%B1%A0/%E7%A7%91%E5%88%9B%E6%9D%BF100-%E5%8E%BB%E5%8A%A3%E7%AD%9B%E9%80%89-20260517.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">指标体系</a></li>
 <li><a href="#_2">筛选总结</a></li>
@@ -1169,4 +1179,25 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 - <strong>半导体设备是最大赢家</strong>——7家通过，占比26%，体现了"卖铲人"商业模式的优越性
 - <strong>亏损是最大杀手</strong>——56%的公司因亏损或刚扭亏被淘汰，科创板整体盈利质量堪忧
 - <strong>高毛利=高通过率</strong>——通过的27家公司毛利率中位数约45%，远高于被淘汰公司</p>
-<p>这与巴菲特的判断高度一致：<strong>真正的好生意，是那些已经证明了自己能持续赚钱的生意，而不是"未来可能赚钱"的故事。</strong></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/91f10a7b13ab.html">科创板召回池：去劣筛选结果</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/ff8d9135739f.html">中国通号（688009.SH）深度投资研究</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/15c382099d6e.html">科创板去劣通过：27家公司投资价值排序</a><div class="meta">2026-05-17 · 筛选</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>
+<p>这与巴菲特的判断高度一致：<strong>真正的好生意，是那些已经证明了自己能持续赚钱的生意，而不是"未来可能赚钱"的故事。</strong></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/91f10a7b13ab.html">科创板召回池：去劣筛选结果</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/ff8d9135739f.html">中国通号（688009.SH）深度投资研究</a><div class="meta">2026-05-17 · 筛选</div></li><li><a href="../r/15c382099d6e.html">科创板去劣通过：27家公司投资价值排序</a><div class="meta">2026-05-17 · 筛选</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">指标体系</a></li>
+<li><a href="#_2">筛选总结</a></li>
+<li><a href="#part-156">Part 1：淘汰名单（56家）</a><ul>
+<li><a href="#a-2025231roe2fcf6">A. 2025年仍在亏损（23家）——触犯①ROE、②FCF、⑥净利率</a></li>
+<li><a href="#b-5fcf132fcf">B. 刚扭亏但5年累计FCF明显为负（13家）——触犯②FCF</a></li>
+<li><a href="#c-5126">C. 长期净利率明确&lt;5%且无法豁免（12家）——触犯⑥净利率</a></li>
+<li><a href="#_3">淘汰汇总</a></li>
+</ul>
+</li>
+<li><a href="#part-227">Part 2：通过去劣筛选的公司（27家）</a></li>
+<li><a href="#part-317">Part 3：边界观察（17家）</a></li>
+<li><a href="#part-4">Part 4：通过公司的特征画像</a><ul>
+<li><a href="#_4">行业分布</a></li>
+<li><a href="#_5">财务质量排序（按净利率从高到低）</a></li>
+</ul>
+</li>
+<li><a href="#_6">核心结论</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:25 UTC</footer></body></html>

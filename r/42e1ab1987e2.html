@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>洋河股份（SZ:002304）红队报告：对既有看空论文的对抗性检验 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/洋河股份/index.html">洋河股份</a></div><h1>洋河股份（SZ:002304）红队报告：对既有看空论文的对抗性检验</h1><div class="meta"><a href="../companies/洋河股份/index.html">洋河股份</a> ｜ 2026-08-17 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%B4%8B%E6%B2%B3%E8%82%A1%E4%BB%BD/%E6%B4%8B%E6%B2%B3%E8%82%A1%E4%BB%BD-%E5%A4%9A%E5%A4%B4%E8%AE%BA%E8%AF%81-20260817.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>洋河股份（SZ:002304）红队报告：对既有看空论文的对抗性检验 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/洋河股份/index.html">洋河股份</a></div><div class="layout"><div><h1>洋河股份（SZ:002304）红队报告：对既有看空论文的对抗性检验</h1><div class="meta"><a href="../companies/洋河股份/index.html">洋河股份</a> ｜ 2026-08-17 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%B4%8B%E6%B2%B3%E8%82%A1%E4%BB%BD/%E6%B4%8B%E6%B2%B3%E8%82%A1%E4%BB%BD-%E5%A4%9A%E5%A4%B4%E8%AE%BA%E8%AF%81-20260817.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">〇、红队立场声明（先说清楚我不做什么）</a></li>
 <li><a href="#_2">一、逐条裁决表（本报告的核心交付物）</a></li>
@@ -1752,4 +1762,37 @@ Q4 单季归母(亿)  2021: +2.95  2022: +3.06  2023: -1.87  2024: -19.06  2025:
 </tbody>
 </table></div>
 <hr />
-<p><em>本报告为红队对抗性检验，立场是主动的多头论证，读者应当据此对其结论打折。所有财务数据经 <code>tools/financial_rigor.py</code> 精确十进制验算，年报关键附注经一手 PDF 原文核对。不构成投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/ae1878da1ce3.html">洋河股份（002304.SZ）投资研究报告</a><div class="meta">2026-08-19 · 研究</div></li><li><a href="../r/4dc79f7c6829.html">洋河股份（SZ:002304）投资研究报告</a><div class="meta">2026-08-17 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<p><em>本报告为红队对抗性检验，立场是主动的多头论证，读者应当据此对其结论打折。所有财务数据经 <code>tools/financial_rigor.py</code> 精确十进制验算，年报关键附注经一手 PDF 原文核对。不构成投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/ae1878da1ce3.html">洋河股份（002304.SZ）投资研究报告</a><div class="meta">2026-08-19 · 研究</div></li><li><a href="../r/4dc79f7c6829.html">洋河股份（SZ:002304）投资研究报告</a><div class="meta">2026-08-17 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">〇、红队立场声明（先说清楚我不做什么）</a></li>
+<li><a href="#_2">一、逐条裁决表（本报告的核心交付物）</a></li>
+<li><a href="#_3">二、逐条攻击详述</a><ul>
+<li><a href="#21-3-129">2.1 攻击论断 3：年报第 129 页原文核实（协调方指定必做项）</a></li>
+<li><a href="#22-1roe-462">2.2 攻击论断 1：ROE 4.62% 是周期底部的单年数字，不是结构性证据</a></li>
+<li><a href="#23-2">2.3 攻击论断 2：用灾难年做分母，是估值错误，不是发现</a></li>
+<li><a href="#24-4100">2.4 攻击论断 4：100% 派息率是更强的承诺，不是更弱的</a></li>
+<li><a href="#25-5">2.5 攻击论断 5：与泸州老窖的比较用错了时点</a></li>
+<li><a href="#26-67">2.6 两条看空方没写对的事实（论断 6、7）</a></li>
+</ul>
+</li>
+<li><a href="#_7">三、必答核心问题</a><ul>
+<li><a href="#31-3982">3.1 下行保护到底有多硬？股价 ¥39.82 里有多少是"白拿"的</a></li>
+<li><a href="#32-2026-2026-08-27">3.2 2026 年中报（已确认披露日：2026-08-27）的可验证观察清单</a></li>
+<li><a href="#33-10">3.3 若要重仓（&gt;10%），需要哪些前提成立？逐条概率评估</a></li>
+</ul>
+</li>
+<li><a href="#5342-6486">四、修正后的估值：只改一处方法，中枢从 ¥53.42 移到 ¥64.86</a><ul>
+<li><a href="#41">4.1 看空方三情景模型的方法错误</a></li>
+<li><a href="#42">4.2 修正计算（不改任何一个盈利假设、不改任何一个概率权重）</a></li>
+<li><a href="#43">4.3 交叉校验：中周期利润法</a></li>
+<li><a href="#44">4.4 三个估值中枢的对照</a></li>
+</ul>
+</li>
+<li><a href="#_10">五、本报告完全承认的看空论据（不打折的部分）</a></li>
+<li><a href="#_11">六、红队最终立场</a></li>
+<li><a href="#atoolsfinancial_rigorpy">附录 A：关键计算记录（tools/financial_rigor.py 精确十进制，禁止心算）</a></li>
+<li><a href="#b">附录 B：数据来源与核实路径</a></li>
+<li><a href="#c">附录 C：数据抽检准出记录</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:25 UTC</footer></body></html>
