@@ -1,0 +1,718 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>拼多多剔除 Temu 后的国内主业利润拆分（FY2024 vs FY2025） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/拼多多/index.html">拼多多</a></div><h1>拼多多剔除 Temu 后的国内主业利润拆分（FY2024 vs FY2025）</h1><div class="meta"><a href="../companies/拼多多/index.html">拼多多</a> ｜ 2026-05-15 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/%E6%8B%BC%E5%A4%9A%E5%A4%9A-%E5%89%94%E9%99%A4Temu%E5%9B%BD%E5%86%85%E4%B8%BB%E4%B8%9A%E5%88%A9%E6%B6%A6%E6%8B%86%E5%88%86-20260515.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#gaap">一、合并报表基础数据（GAAP）</a></li>
+<li><a href="#vs-temu">二、收入拆分：国内 vs Temu</a><ul>
+<li><a href="#_1">拆分逻辑</a></li>
+<li><a href="#temu">Temu 收入估算</a></li>
+<li><a href="#_2">收入拆分结果</a></li>
+</ul>
+</li>
+<li><a href="#temu_1">三、Temu 独立损益估算</a><ul>
+<li><a href="#temu_2">Temu 亏损的多源交叉验证</a></li>
+<li><a href="#temu-fy2024">Temu 成本结构（FY2024 估算）</a></li>
+</ul>
+</li>
+<li><a href="#_3">四、国内主业独立损益推算</a><ul>
+<li><a href="#temu_3">方法一：合并利润 + Temu 亏损加回</a></li>
+<li><a href="#non-gaap">方法二：Non-GAAP 口径</a></li>
+<li><a href="#_4">方法三：与分析师模型交叉验证</a></li>
+<li><a href="#_5">方法四：历史基线法验证</a></li>
+</ul>
+</li>
+<li><a href="#_6">五、从经营利润到净利润的桥接</a></li>
+<li><a href="#_7">六、核心结论</a><ul>
+<li><a href="#_8">一张表看清全貌</a></li>
+<li><a href="#_9">三个关键发现</a></li>
+</ul>
+</li>
+<li><a href="#_10">七、估值含义</a></li>
+<li><a href="#_11">重要说明</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>核心问题：如果 Temu 不存在，拼多多国内主业每年赚多少钱？
+数据截止：2026 年 5 月 15 日</p>
+</blockquote>
+<hr />
+<h2 id="gaap">一、合并报表基础数据（GAAP）</h2>
+<p>所有数据来自 PDD Holdings 官方业绩公告及 SEC 20-F 文件。单位：亿元人民币。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>FY2024</th>
+<th>FY2025</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>总营收</strong></td>
+<td><strong>3,938</strong></td>
+<td><strong>4,319</strong></td>
+<td>+10%</td>
+</tr>
+<tr>
+<td>　在线营销服务（广告）</td>
+<td>1,979</td>
+<td>2,178</td>
+<td>+10%</td>
+</tr>
+<tr>
+<td>　交易服务（佣金 + Temu）</td>
+<td>1,959</td>
+<td>2,141</td>
+<td>+9%</td>
+</tr>
+<tr>
+<td>营业成本</td>
+<td>(1,539)</td>
+<td>(1,888)</td>
+<td>+23%</td>
+</tr>
+<tr>
+<td><strong>毛利润</strong></td>
+<td><strong>2,399</strong></td>
+<td><strong>2,430</strong></td>
+<td>+1%</td>
+</tr>
+<tr>
+<td><strong>毛利率</strong></td>
+<td><strong>60.9%</strong></td>
+<td><strong>56.3%</strong></td>
+<td>-4.6pp</td>
+</tr>
+<tr>
+<td>销售及营销费用</td>
+<td>(1,113)</td>
+<td>(1,253)</td>
+<td>+13%</td>
+</tr>
+<tr>
+<td>一般及行政费用</td>
+<td>(76)</td>
+<td>(66)</td>
+<td>-12%</td>
+</tr>
+<tr>
+<td>研发费用</td>
+<td>(127)</td>
+<td>(165)</td>
+<td>+30%</td>
+</tr>
+<tr>
+<td><strong>SBC 合计</strong></td>
+<td><strong>(99)</strong></td>
+<td><strong>(79)</strong></td>
+<td>-20%</td>
+</tr>
+<tr>
+<td><strong>GAAP 经营利润</strong></td>
+<td><strong>1,084</strong></td>
+<td><strong>946</strong></td>
+<td>-13%</td>
+</tr>
+<tr>
+<td><strong>经营利润率</strong></td>
+<td><strong>27.5%</strong></td>
+<td><strong>21.9%</strong></td>
+<td>-5.6pp</td>
+</tr>
+<tr>
+<td>利息及投资收益</td>
+<td>206</td>
+<td>256</td>
+<td>+24%</td>
+</tr>
+<tr>
+<td>外汇及其他</td>
+<td>37</td>
+<td>8</td>
+<td>-78%</td>
+</tr>
+<tr>
+<td>所得税</td>
+<td>(203)</td>
+<td>(217)</td>
+<td>+7%</td>
+</tr>
+<tr>
+<td><strong>GAAP 净利润</strong></td>
+<td><strong>1,124</strong></td>
+<td><strong>994</strong></td>
+<td>-12%</td>
+</tr>
+<tr>
+<td><strong>净利率</strong></td>
+<td><strong>28.5%</strong></td>
+<td><strong>23.0%</strong></td>
+<td>-5.5pp</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Non-GAAP（加回 SBC）：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>FY2024</th>
+<th>FY2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Non-GAAP 经营利润</td>
+<td>1,183</td>
+<td>1,026</td>
+</tr>
+<tr>
+<td>Non-GAAP 经营利润率</td>
+<td>30.0%</td>
+<td>23.7%</td>
+</tr>
+<tr>
+<td>Non-GAAP 净利润</td>
+<td>1,223</td>
+<td>1,073</td>
+</tr>
+</tbody>
+</table></div>
+<p>数据来源：PDD Holdings FY2024/FY2025 业绩公告（GlobeNewsWire）、SEC 20-F、StockAnalysis.com。</p>
+<hr />
+<h2 id="vs-temu">二、收入拆分：国内 vs Temu</h2>
+<h3 id="_1">拆分逻辑</h3>
+<ul>
+<li><strong>在线营销服务（广告）</strong>：几乎 100% 来自国内主站。Temu 的商家不通过竞价广告获取流量，而是由平台算法分配</li>
+<li><strong>交易服务</strong>：混合了国内主站佣金 + Temu 平台收入。这是拆分的关键</li>
+</ul>
+<h3 id="temu">Temu 收入估算</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>数据源</th>
+<th>FY2024 Temu 收入估算</th>
+<th>方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bernstein（2024.07）</td>
+<td>~1,200 亿</td>
+<td>GMV $540 亿 × 30% 货币化率</td>
+</tr>
+<tr>
+<td>HSBC（2024.02）</td>
+<td>~1,694 亿</td>
+<td>占 PDD 总收入 43%</td>
+</tr>
+<tr>
+<td>华尔街见闻</td>
+<td>~1,496 亿</td>
+<td>交易服务中超半数</td>
+</tr>
+<tr>
+<td><strong>本报告取值</strong></td>
+<td><strong>~1,200 亿</strong></td>
+<td>取偏保守的 Bernstein 估算</td>
+</tr>
+</tbody>
+</table></div>
+<p>FY2025：Temu GMV 增至约 $760-800 亿，但半托管模式下货币化率可能降至 25%，估算 Temu 收入约 <strong>1,250-1,350 亿</strong>，本报告取 <strong>1,300 亿</strong>。</p>
+<h3 id="_2">收入拆分结果</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>FY2024</th>
+<th>FY2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>在线营销（全部归国内）</td>
+<td>1,979</td>
+<td>2,178</td>
+</tr>
+<tr>
+<td>交易服务（合计）</td>
+<td>1,959</td>
+<td>2,141</td>
+</tr>
+<tr>
+<td>　其中：Temu 收入（估）</td>
+<td>~1,200</td>
+<td>~1,300</td>
+</tr>
+<tr>
+<td>　其中：国内佣金（估）</td>
+<td>~759</td>
+<td>~841</td>
+</tr>
+<tr>
+<td><strong>国内主业总收入（估）</strong></td>
+<td><strong>~2,738</strong></td>
+<td><strong>~3,019</strong></td>
+</tr>
+<tr>
+<td><strong>Temu 总收入（估）</strong></td>
+<td><strong>~1,200</strong></td>
+<td><strong>~1,300</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="temu_1">三、Temu 独立损益估算</h2>
+<h3 id="temu_2">Temu 亏损的多源交叉验证</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>数据源</th>
+<th>FY2024 Temu 经营亏损</th>
+<th>FY2025 Temu 经营亏损</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>浙商证券模型</td>
+<td>~$50 亿（~350 亿元）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>雪球分析师共识</td>
+<td>~250 亿</td>
+<td>~220-240 亿</td>
+</tr>
+<tr>
+<td>TechBuzz China</td>
+<td>接近盈亏平衡（美国已盈利）</td>
+<td>关税冲击后恶化</td>
+</tr>
+<tr>
+<td>高盛 2026E 参考</td>
+<td>—</td>
+<td>Temu 2026 年预亏 77 亿</td>
+</tr>
+<tr>
+<td><strong>本报告取值</strong></td>
+<td><strong>~250 亿</strong></td>
+<td><strong>~230 亿</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>取值逻辑：
+- FY2024：多数分析师指向 250 亿（~$35 亿）区间。美国市场 Q1-Q2 已盈利，但全球其他市场仍大幅亏损，全年合并约亏 250 亿
+- FY2025：关税战冲击 + 营销大幅缩减（从 $4B 降至 ~$2B），亏损小幅收窄至 ~230 亿。高盛预计 2026 年进一步收窄至 77 亿，2027 年转正</p>
+<h3 id="temu-fy2024">Temu 成本结构（FY2024 估算）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>成本项</th>
+<th>金额（估，亿元）</th>
+<th>占 Temu 收入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>商品/履约成本（COGS）</td>
+<td>~840</td>
+<td>~70%</td>
+</tr>
+<tr>
+<td>营销/获客</td>
+<td>~290</td>
+<td>~24%</td>
+</tr>
+<tr>
+<td>技术/平台</td>
+<td>~70</td>
+<td>~6%</td>
+</tr>
+<tr>
+<td>其他运营</td>
+<td>~50</td>
+<td>~4%</td>
+</tr>
+<tr>
+<td><strong>Temu 总成本</strong></td>
+<td><strong>~1,250</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Temu 收入</strong></td>
+<td><strong>~1,200</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Temu 经营亏损</strong></td>
+<td><strong>~(250)</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_3">四、国内主业独立损益推算</h2>
+<h3 id="temu_3">方法一：合并利润 + Temu 亏损加回</h3>
+<p>最直接的方法——合并经营利润加回 Temu 的亏损，即为国内独立利润。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>FY2024</th>
+<th>FY2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>合并 GAAP 经营利润</td>
+<td>1,084</td>
+<td>946</td>
+</tr>
+<tr>
+<td>(+) Temu 经营亏损（估）</td>
+<td>250</td>
+<td>230</td>
+</tr>
+<tr>
+<td><strong>= 国内 GAAP 经营利润（估）</strong></td>
+<td><strong>~1,334</strong></td>
+<td><strong>~1,176</strong></td>
+</tr>
+<tr>
+<td>国内收入（估）</td>
+<td>2,738</td>
+<td>3,019</td>
+</tr>
+<tr>
+<td><strong>国内经营利润率</strong></td>
+<td><strong>~48.7%</strong></td>
+<td><strong>~38.9%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="non-gaap">方法二：Non-GAAP 口径</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>FY2024</th>
+<th>FY2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>合并 Non-GAAP 经营利润</td>
+<td>1,183</td>
+<td>1,026</td>
+</tr>
+<tr>
+<td>(+) Temu 经营亏损（估）</td>
+<td>250</td>
+<td>230</td>
+</tr>
+<tr>
+<td><strong>= 国内 Non-GAAP 经营利润（估）</strong></td>
+<td><strong>~1,433</strong></td>
+<td><strong>~1,256</strong></td>
+</tr>
+<tr>
+<td><strong>国内 Non-GAAP 经营利润率</strong></td>
+<td><strong>~52.3%</strong></td>
+<td><strong>~41.6%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_4">方法三：与分析师模型交叉验证</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>来源</th>
+<th>FY2024 国内经营利润</th>
+<th>FY2025/2026 国内经营利润</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>高盛 SOTP</td>
+<td>—</td>
+<td>2026E: 1,140 亿（含百亿减免）</td>
+</tr>
+<tr>
+<td>晨星</td>
+<td>稳态利润率 ~28%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>中金/招银</td>
+<td>—</td>
+<td>2026E: 1,200 亿（保守）</td>
+</tr>
+<tr>
+<td><strong>本报告方法一</strong></td>
+<td><strong>~1,334 亿</strong></td>
+<td><strong>~1,176 亿</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>本报告 FY2024 估算（1,334 亿）高于高盛 2026E 的 1,140 亿，原因是：
+1. 高盛 2026E 包含了拼多多主动推行的"百亿减免"（降低商家佣金、加大补贴）的影响
+2. FY2024 是让利政策实施前的峰值年份</p>
+<p>本报告 FY2025 估算（1,176 亿）与高盛 2026E（1,140 亿）接近，说明"百亿减免"效果已开始体现。</p>
+<h3 id="_5">方法四：历史基线法验证</h3>
+<p>2022 年是 Temu 上线前的最后一个"近乎纯国内"年份：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>FY2022（纯国内）</th>
+<th>FY2024 国内（估）</th>
+<th>FY2025 国内（估）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td>1,306</td>
+<td>2,738</td>
+<td>3,019</td>
+</tr>
+<tr>
+<td>GAAP 经营利润</td>
+<td>304</td>
+<td>1,334</td>
+<td>1,176</td>
+</tr>
+<tr>
+<td>经营利润率</td>
+<td>23.3%</td>
+<td>48.7%</td>
+<td>38.9%</td>
+</tr>
+</tbody>
+</table></div>
+<p>FY2024 国内利润率（48.7%）远高于 2022 年（23.3%），原因是：
+- 2022 年仍处于"从亏损到盈利"的转折期，营销费率高（41.6%）
+- 到 2024 年，国内主站的规模效应已充分释放，营销费率大幅下降</p>
+<p>FY2025 回落至 38.9%，主要因为"百亿减免"让利。</p>
+<hr />
+<h2 id="_6">五、从经营利润到净利润的桥接</h2>
+<p>国内主业独立净利润需要分配利息收入和所得税：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>FY2024</th>
+<th>FY2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>国内经营利润（GAAP，估）</td>
+<td>1,334</td>
+<td>1,176</td>
+</tr>
+<tr>
+<td>(+) 利息收入（全额归属，现金为集团持有）</td>
+<td>206</td>
+<td>256</td>
+</tr>
+<tr>
+<td>(+) 其他收入</td>
+<td>37</td>
+<td>8</td>
+</tr>
+<tr>
+<td><strong>= 国内税前利润（估）</strong></td>
+<td><strong>1,577</strong></td>
+<td><strong>1,440</strong></td>
+</tr>
+<tr>
+<td>(-) 所得税（有效税率 ~15-18%）</td>
+<td>~(253)</td>
+<td>~(245)</td>
+</tr>
+<tr>
+<td><strong>= 国内净利润（估）</strong></td>
+<td><strong>~1,324</strong></td>
+<td><strong>~1,195</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>注意：利息收入全额归属国内是因为 4,200 亿现金主要由集团层面（包括国内 VIE 实体）持有，不属于 Temu 运营资产。税率按合并有效税率估算（FY2024: 15.3%，FY2025: 18.0%），但国内实体可能享受更低税率（高新技术企业 15%）。</p>
+<hr />
+<h2 id="_7">六、核心结论</h2>
+<h3 id="_8">一张表看清全貌</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>FY2024</th>
+<th>FY2025</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>国内收入（估）</strong></td>
+<td><strong>2,738</strong></td>
+<td><strong>3,019</strong></td>
+<td>+10%</td>
+</tr>
+<tr>
+<td><strong>国内 GAAP 经营利润（估）</strong></td>
+<td><strong>~1,334</strong></td>
+<td><strong>~1,176</strong></td>
+<td><strong>-12%</strong></td>
+</tr>
+<tr>
+<td><strong>国内经营利润率</strong></td>
+<td><strong>~48.7%</strong></td>
+<td><strong>~38.9%</strong></td>
+<td>-9.8pp</td>
+</tr>
+<tr>
+<td><strong>国内净利润（估）</strong></td>
+<td><strong>~1,324</strong></td>
+<td><strong>~1,195</strong></td>
+<td><strong>-10%</strong></td>
+</tr>
+<tr>
+<td>Temu 收入（估）</td>
+<td>~1,200</td>
+<td>~1,300</td>
+<td>+8%</td>
+</tr>
+<tr>
+<td>Temu 经营亏损（估）</td>
+<td>~(250)</td>
+<td>~(230)</td>
+<td>收窄</td>
+</tr>
+<tr>
+<td>合并 GAAP 净利润</td>
+<td>1,124</td>
+<td>994</td>
+<td>-12%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_9">三个关键发现</h3>
+<p><strong>1. 国内主业仍是超级印钞机</strong></p>
+<p>FY2024 国内经营利润约 1,334 亿、FY2025 约 1,176 亿。即使剔除利息收入，国内净利润仍在 1,100-1,300 亿级别——这是全球电商行业利润率最高的资产之一。</p>
+<p><strong>2. FY2025 利润下降主要来自两件事</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>下降因素</th>
+<th>利润影响（估）</th>
+<th>性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"百亿减免"让利商家</td>
+<td>~(100-150) 亿</td>
+<td>主动战略选择</td>
+</tr>
+<tr>
+<td>抖音/淘宝低价竞争加剧</td>
+<td>~(50-80) 亿</td>
+<td>被动结构性</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>~(158)</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>实际下降</td>
+<td>1,334 → 1,176 = (158)</td>
+<td>吻合</td>
+</tr>
+</tbody>
+</table></div>
+<p>"百亿减免"是拼多多主动降低商家佣金率、加大消费者补贴的政策，是管理层对 2024 年"商家炸店"事件的回应——不是竞争力丧失，而是利润再分配。</p>
+<p><strong>3. Temu 对合并利润的拖累正在收窄</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>Temu 亏损（估）</th>
+<th>占合并经营利润的比重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2024</td>
+<td>~250 亿</td>
+<td>拖累 23%（1,334 → 1,084）</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td>~230 亿</td>
+<td>拖累 20%（1,176 → 946）</td>
+</tr>
+<tr>
+<td>2026E（高盛）</td>
+<td>~77 亿</td>
+<td>拖累降至 ~7%</td>
+</tr>
+<tr>
+<td>2027E（高盛）</td>
+<td>+32 亿</td>
+<td><strong>首次贡献正利润</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>如果高盛预测准确，2027 年 Temu 转正后，合并利润将获得 Temu 的正向增量——这是当前估值中尚未反映的上行空间。</p>
+<hr />
+<h2 id="_10">七、估值含义</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>估值维度</th>
+<th>基于合并报表</th>
+<th>基于国内主业（剔除 Temu）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2025 净利润</td>
+<td>994 亿</td>
+<td>~1,195 亿</td>
+</tr>
+<tr>
+<td>当前市值</td>
+<td>~10,300 亿</td>
+<td>~10,300 亿</td>
+</tr>
+<tr>
+<td>净现金</td>
+<td>~4,169 亿</td>
+<td>~4,169 亿</td>
+</tr>
+<tr>
+<td>PE</td>
+<td>10.4x</td>
+<td><strong>8.6x</strong></td>
+</tr>
+<tr>
+<td>扣现金 PE</td>
+<td>6.2x</td>
+<td><strong>5.1x</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>国内主业扣现金 PE 仅 5.1 倍</strong>——对一个经营利润率 39%+、ROE 30%+ 的资产来说，这个定价意味着市场要么认为国内主业将持续恶化，要么不信任现金能还给股东。</p>
+<hr />
+<h2 id="_11">重要说明</h2>
+<ol>
+<li><strong>Temu 收入和亏损均为估算</strong>——PDD 从未单独披露 Temu 财务数据。本报告综合 Bernstein、HSBC、高盛、浙商证券、雪球分析师等多源估算取中位值</li>
+<li><strong>成本分摊存在模糊地带</strong>——研发、G&amp;A 等共享成本在国内和 Temu 之间的分配无法精确，本报告采用"总利润 + Temu 亏损加回"的方法回避了这一问题，但可能低估共享成本</li>
+<li><strong>所有数字均为量级参考</strong>——误差范围约 ±15%</li>
+</ol>
+<p>数据来源：PDD Holdings 官方业绩公告、SEC 20-F、StockAnalysis.com、Bernstein Research、Goldman Sachs SOTP 模型、HSBC Research、Morningstar、浙商证券、TechBuzz China、华尔街见闻、雪球分析师共识。</p>
+<hr />
+<p><em>本报告基于公开信息研究，不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/add3b8034f65.html">拼多多控股（PDD Holdings，PDD.US）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/581cb36c9940.html">拼多多2036：活下来没有悬念，多赚要看两个变量</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/a4afe86cabe3.html">黄峥与拼多多控制权：谁在掌舵、他还能不能回来</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/2ef823d3a551.html">拼多多（PDD Holdings）投资研究 — 2026.04.07</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/9da20c690247.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/ea06217eed0b.html">拼多多AI与利润研究：审计说明</a><div class="meta">2026-09-24 · 底稿</div></li><li><a href="../r/eec9a3d4deca.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/6c5fe33f9647.html">PDD研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/a07290b67941.html">拼多多2026Q2：6-K原件逐行核对底稿</a><div class="meta">2026-08-26 · 底稿</div></li><li><a href="../r/4fc48a244b16.html">拼多多2026年二季报深度解读：一笔找不到科目的投入</a><div class="meta">2026-08-25 · 财报</div></li><li><a href="../r/b870b0a0d5b4.html">拼多多2026年中报解读</a><div class="meta">2026-08-25 · 公众号</div></li><li><a href="../r/7a2822470350.html">拼多多三大报表解析：从交易所原件到逐项含义</a><div class="meta">2026-08-24 · 财报</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

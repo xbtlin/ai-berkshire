@@ -1,0 +1,78 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>六家公司研究的统一核验口径 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/六公司研究审计-20260906/index.html">六公司研究审计-20260906</a></div><h1>六家公司研究的统一核验口径</h1><div class="meta"><a href="../topics/六公司研究审计-20260906/index.html">六公司研究审计-20260906</a> ｜ 2026-09-06 · 导读 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%85%AD%E5%85%AC%E5%8F%B8%E7%A0%94%E7%A9%B6%E5%AE%A1%E8%AE%A1-20260906/README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">行情与换算</a></li>
+<li><a href="#_2">估值审查</a></li>
+<li><a href="#_3">审计边界</a></li>
+</ul>
+</div>
+</details><article><p>研究日期：2026-09-06。价格统一采用2026-09-04各上市地正规收盘；港股与美股收盘时刻不同，不是同一瞬间的全球报价。未来情景比较采用约三年持有期，不代表这些事件必然按期兑现。</p>
+<h2 id="_1">行情与换算</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th style="text-align: right;">正规收盘价</th>
+<th>币种</th>
+<th>独立历史行情来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯</td>
+<td style="text-align: right;">442.80</td>
+<td>HKD</td>
+<td><a href="https://stockanalysis.com/quote/hkg/0700/history/">StockAnalysis</a></td>
+</tr>
+<tr>
+<td>PDD</td>
+<td style="text-align: right;">82.21</td>
+<td>USD</td>
+<td><a href="https://stockanalysis.com/stocks/pdd/history/">StockAnalysis</a></td>
+</tr>
+<tr>
+<td>快手</td>
+<td style="text-align: right;">33.66</td>
+<td>HKD</td>
+<td><a href="https://stockanalysis.com/quote/hkg/1024/history/">StockAnalysis</a></td>
+</tr>
+<tr>
+<td>美团</td>
+<td style="text-align: right;">81.75</td>
+<td>HKD</td>
+<td><a href="https://stockanalysis.com/quote/hkg/3690/history/">StockAnalysis</a></td>
+</tr>
+<tr>
+<td>泡泡玛特</td>
+<td style="text-align: right;">154.00</td>
+<td>HKD</td>
+<td><a href="https://stockanalysis.com/quote/hkg/9992/history/">StockAnalysis</a></td>
+</tr>
+<tr>
+<td>MiniMax</td>
+<td style="text-align: right;">361.40</td>
+<td>HKD</td>
+<td><a href="https://stockanalysis.com/quote/hkg/0100/history/">StockAnalysis</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>六个价格均与腾讯行情交叉一致。<a href="../files/reports/%E5%85%AD%E5%85%AC%E5%8F%B8%E7%A0%94%E7%A9%B6%E5%AE%A1%E8%AE%A1-20260906/tencent-quotes.txt">原始响应</a>、<a href="../files/reports/%E5%85%AD%E5%85%AC%E5%8F%B8%E7%A0%94%E7%A9%B6%E5%AE%A1%E8%AE%A1-20260906/market-snapshot.json">结构化快照</a>、<a href="../files/reports/%E5%85%AD%E5%85%AC%E5%8F%B8%E7%A0%94%E7%A9%B6%E5%AE%A1%E8%AE%A1-20260906/price-cross-validation.txt">逐项财务工具验证</a>。PDD原公开记录所列82.30美元是盘后价格，应与正规收盘82.21美元区分。</p>
+<p>市值必须用总股本而非流通股本。行情市值除以价格所得股数只用于一致性检查，不能当作独立第二股本来源。港股以交易所股本披露为主要依据；PDD普通股与ADS按披露比例换算，加权平均稀释股数与期末已发行股数分别处理。</p>
+<p>估值换算统一采用9月4日官方中间价：1美元兑6.7787元人民币，1港元兑0.86458元人民币；美元兑港元以两者相除计算。它是可复核的估值参考汇率，并非市场收盘成交汇率。参考<a href="https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760">国家外汇管理局</a>、<a href="https://english.news.cn/20260904/790d1ee7b6864f7b96752579a210e783/c.html">新华社发布</a>。两个发布者采用同一官方基准，不能解释为两个独立市场成交样本。</p>
+<h2 id="_2">估值审查</h2>
+<ul>
+<li>区分已披露历史数据、正常化调整与未来假设。正常化盈利必须有可追溯桥接，不能把希望实现的利润当作已实现利润。</li>
+<li>三年目标价是未来情景价值；今天的价值需要折现，并考虑期间现金分红。不能用未折现目标价直接宣布当前安全边际。</li>
+<li>报告中的含分红年化若按末期汇总计算，属于终值财富的等效年化，不是逐笔分红现金流IRR；期间分红不预设再投资回报。</li>
+<li>整体PE模型与经营价值加富余净现金的分部估值是交叉校核方法，不能相加。既给利息收入估值又全额加入同一现金，需要剔除重复。</li>
+<li>回购提升每股收益后，不再加一次回购收益率；股份薪酬、融资与可转债需在费用、股数或债务中一致反映，不能遗漏或重复扣减。</li>
+<li>AI运行率收入不等于已实现全年收入，AI融资金额不等于经营创造现金。亏损公司不使用负PE推断便宜。</li>
+<li>悲观情景允许盈利下降、估值压缩及融资困难，不是只把乐观增速调低。基准情景的利润率恢复、收入增长与股本变化都必须说明经济条件。</li>
+<li>情景价格和主观概率不能直接输出“最优仓位”。公司研究先判断价格吸引力，账户现金、期权、资金期限与可承受损失决定实际仓位。</li>
+</ul>
+<h2 id="_3">审计边界</h2>
+<p>各公司的原始财报、输入、财务工具日志和抽检结果存放于对应公司目录的“审计-20260906”。抽检PASS只证明所检数字与注明来源或公式一致，不能证明未来假设、法律解释、投资结论或报告中未抽取项目必然正确。任何单源或不可取得项目仍应在正文保留缺口，不用审计标签掩盖。</p>
+<p>汇总报告另做固定seed42抽检：<a href="../files/reports/%E5%85%AD%E5%85%AC%E5%8F%B8%E7%A0%94%E7%A9%B6%E5%AE%A1%E8%AE%A1-20260906/summary-audit-sample.json">9项核验记录</a>、<a href="../files/reports/%E5%85%AD%E5%85%AC%E5%8F%B8%E7%A0%94%E7%A9%B6%E5%AE%A1%E8%AE%A1-20260906/summary-audit-verdict.json">判决及范围</a>。其中1项为双源收盘价格，8项为独立复算过的条件模型结果；后者只验证计算和显示精度，不声称未来目标价已被外部事实核实。</p>
+<p>本目录不含私人账本，不记录实际交易或账户金额。本轮仅形成研究文件，没有提交或发布到外部。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2e55d56506d5.html">同行参考数据</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

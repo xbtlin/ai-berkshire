@@ -1,0 +1,384 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>估值判断：期权还是陷阱？ · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/百度/index.html">百度</a></div><h1>估值判断：期权还是陷阱？</h1><div class="meta"><a href="../companies/百度/index.html">百度</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%99%BE%E5%BA%A6-deepseek%E5%88%86%E6%9E%90/%E3%80%8A%E7%9C%8B%E6%87%82%E7%99%BE%E5%BA%A6%E3%80%8B/05-%E4%BC%B0%E5%80%BC%E5%88%A4%E6%96%AD-%E6%9C%9F%E6%9D%83%E8%BF%98%E6%98%AF%E9%99%B7%E9%98%B1%EF%BC%88%E7%BB%88%E7%AB%A0%EF%BC%89.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">先回顾：四篇看到了什么</a></li>
+<li><a href="#_2">分部估值</a><ul>
+<li><a href="#_3">估值拆解</a></li>
+</ul>
+</li>
+<li><a href="#_4">硬地板在哪？</a></li>
+<li><a href="#_5">三个关键催化剂</a><ul>
+<li><a href="#_6">催化剂一：自由现金流转正</a></li>
+<li><a href="#ai-50">催化剂二：AI 收入占比超 50%</a></li>
+<li><a href="#ipo">催化剂三：昆仑芯 IPO</a></li>
+</ul>
+</li>
+<li><a href="#_7">三个减仓/离场信号</a><ul>
+<li><a href="#_8">信号一：搜索广告下滑加速</a></li>
+<li><a href="#ai">信号二：AI 云增速骤降</a></li>
+<li><a href="#_9">信号三：又一次能力圈外冒险</a></li>
+</ul>
+</li>
+<li><a href="#_10">对不同投资者意味着什么</a><ul>
+<li><a href="#_11">激进型投资者</a></li>
+<li><a href="#_12">稳健型投资者</a></li>
+<li><a href="#_13">保守型投资者</a></li>
+</ul>
+</li>
+<li><a href="#vs-vs">百度 vs 腾讯 vs 阿里：中概互联网的三种命运</a></li>
+<li><a href="#_14">总结</a></li>
+<li><a href="#_15">附：关键数据汇总</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂百度》系列 · 第 05 篇 · 终章
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">先回顾：四篇看到了什么</h2>
+<p><strong>百度是一家净现金 2,394 亿（占市值 ~70%）、PB 仅 1.16x 的公司。旧引擎（搜索广告）以每年 14% 的速度衰退，新引擎（AI 云 +34%、AI 应用 +48%）正在加速，但没有任何一条 AI 赛道的盈利性被完整验证。2025 年自由现金流首次转负（-151 亿），2026Q1 利润大幅回暖（+48%）。C 端 AI 入口已输（文心助手 479 万 vs 豆包 3.45 亿），但 B 端 AI 云和自动驾驶有真实竞争力。管理层技术前瞻优秀，执行力历史令人担忧。</strong></p>
+<p>现在回答最核心的问题：<strong>百度到底值多少钱？</strong></p>
+<hr />
+<h2 id="_2">分部估值</h2>
+<p>百度不能用单一 PE 估值——因为它不是一个业务，而是"旧业务 + 新业务 + 现金 + 期权"的组合体。必须拆开算。</p>
+<h3 id="_3">估值拆解</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>资产</th>
+<th>估值方法</th>
+<th>估值区间（亿元）</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>搜索广告</strong></td>
+<td>衰退期业务，8-10x 利润</td>
+<td>500-700</td>
+<td>2025 年约 630 亿收入，假设经营利润 ~70 亿，给 8-10x</td>
+</tr>
+<tr>
+<td><strong>AI 云</strong></td>
+<td>高增长业务，3-5x PS</td>
+<td>600-1,000</td>
+<td>2025 年 ~200 亿收入，增速 34%，参照同业</td>
+</tr>
+<tr>
+<td><strong>Apollo Go</strong></td>
+<td>期权定价</td>
+<td>0-500</td>
+<td>盈利性未验证，范围极宽</td>
+</tr>
+<tr>
+<td><strong>昆仑芯（57.67%）</strong></td>
+<td>参照 IPO 估值</td>
+<td>120-460</td>
+<td>210 亿（已融资）到 800 亿（摩根大通预测）的 57.67%</td>
+</tr>
+<tr>
+<td><strong>爱奇艺（持有 ~70%+）</strong></td>
+<td>参照市值</td>
+<td>100-150</td>
+<td>爱奇艺市值约 200 亿元</td>
+</tr>
+<tr>
+<td><strong>净现金</strong></td>
+<td>面值</td>
+<td><strong>2,394</strong></td>
+<td>这是确定的</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td>—</td>
+<td><strong>3,714-5,204</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>注：以上估值为粗略区间估算，各分部均存在重大不确定性。来源：百度年报、Omdia、摩根大通、公开市场数据。</p>
+</blockquote>
+<p>百度当前市值约 <strong>3,400 亿元</strong>（~$466 亿，基于 2026 年 5 月 ~$141/ADS × 3.40 亿 ADS）。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>分部估值合计</th>
+<th>vs 当前市值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观（搜索继续恶化 + AI 不赚钱 + Apollo 归零）</td>
+<td>~3,714 亿</td>
+<td>+9%</td>
+</tr>
+<tr>
+<td>中性（搜索企稳 + AI 云持续增长 + 昆仑芯 IPO）</td>
+<td>~4,400 亿</td>
+<td>+29%</td>
+</tr>
+<tr>
+<td>乐观（AI 全面变现 + Apollo 国际化成功 + 昆仑芯高估值）</td>
+<td>~5,204 亿</td>
+<td>+53%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键发现：即使在悲观情景下，百度的分部估值也略高于当前市值。</strong> 这主要是因为 <strong>2,394 亿净现金</strong>提供了硬地板——它占了悲观情景估值的 65%。</p>
+<hr />
+<h2 id="_4">硬地板在哪？</h2>
+<p>百度的估值底部由三个"硬资产"决定：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>硬资产</th>
+<th>金额（亿元）</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净现金</td>
+<td><strong>2,394</strong></td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>昆仑芯持股（按已融资估值）</td>
+<td><strong>~120</strong></td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>爱奇艺持股</td>
+<td><strong>~100-150</strong></td>
+<td>★★★</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>~2,614-2,664</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>约 2,600 亿元的硬资产底部</strong>，对应 ADS 价格约 <strong>$107-110</strong>。</p>
+<p>这意味着：<strong>当前股价 $141 仅比"只算现金和可变现资产、完全不给搜索和 AI 业务估值"的硬底价高约 28%。</strong></p>
+<p>但注意两个风险：
+1. 如果自由现金流持续为负（-151 亿/年），硬底价每年缩水约 6%
+2. 50 亿美元回购 + 分红也会消耗现金——如果不赚钱却在分钱，本质是"左手倒右手"</p>
+<hr />
+<h2 id="_5">三个关键催化剂</h2>
+<p>什么事件可能让百度的估值上台阶？</p>
+<h3 id="_6">催化剂一：自由现金流转正</h3>
+<p>2025 年 FCF -151 亿是百度估值的最大拖累。如果 2026 年 FCF 转正，意味着：
+- "现金消耗"叙事逆转
+- 50 亿美元回购变成真实的股东回报（而非消耗储备）
+- 市场愿意重新给业务估值</p>
+<p><strong>观察指标</strong>：连续 2 个季度经营性现金流为正。2026Q1 核心净利润 76 亿（+48%）是好兆头，但需要持续验证。</p>
+<h3 id="ai-50">催化剂二：AI 收入占比超 50%</h3>
+<p>2025Q4 AI 收入占比已达 <strong>43%</strong>，按当前增速，2026 年有望突破 50%。一旦越过这条线，百度从"搜索广告公司"变成"AI 公司"——估值逻辑会根本改变。</p>
+<p><strong>反方观点</strong>："占比超 50% 不代表赚钱。如果 AI 收入的毛利率远低于搜索广告，占比越高利润越低。需要看的是 AI 业务的利润占比，而不是收入占比。"</p>
+<h3 id="ipo">催化剂三：昆仑芯 IPO</h3>
+<p>昆仑芯已保密交表港交所 + 启动科创板辅导——"A+H"两地上市是明确的计划。</p>
+<p>IPO 的价值在于：
+1. 给昆仑芯一个市场定价（验证 / 否证 800 亿估值）
+2. 百度持有的 57.67% 变成"可变现资产"
+3. 释放百度"全栈 AI"故事中最具独立价值的一环</p>
+<hr />
+<h2 id="_7">三个减仓/离场信号</h2>
+<p>什么情况下应该重新评估？</p>
+<h3 id="_8">信号一：搜索广告下滑加速</h3>
+<p>如果单季在线营销收入同比下滑超过 <strong>20%</strong>（2025 年全年 -14%），意味着旧引擎熄火速度超预期，"青黄不接"窗口期会拉长。</p>
+<h3 id="ai">信号二：AI 云增速骤降</h3>
+<p>如果百度 AI 云季度增速从 34% 降至个位数，意味着火山引擎的追赶生效、百度 B 端护城河不牢。</p>
+<h3 id="_9">信号三：又一次能力圈外冒险</h3>
+<p>如果管理层启动新的大型非 AI 投资（类似当年的 O2O、极越），意味着资本配置纪律没有改善——这是最危险的信号。</p>
+<hr />
+<h2 id="_10">对不同投资者意味着什么</h2>
+<p>百度不是一只适合所有人的股票。根据你的风险偏好：</p>
+<h3 id="_11">激进型投资者</h3>
+<p><strong>态度</strong>：可以持有，作为 AI 期权。</p>
+<p><strong>逻辑</strong>：硬底价 $107-110 提供安全垫（当前 $141 仅高 28%），三条 AI 赛道中任何一条跑通都意味着显著上行。50 亿美元回购 + 昆仑芯 IPO 是近期催化剂。</p>
+<p><strong>风险</strong>：如果 FCF 持续为负，安全垫会缩水。这不是"买了就睡得着"的股票。</p>
+<h3 id="_12">稳健型投资者</h3>
+<p><strong>态度</strong>：观望，等两个信号。</p>
+<p><strong>逻辑</strong>：等 FCF 连续 2 季转正 + AI 收入占比超 50%。在这两个条件满足之前，百度的估值锚定不稳。"便宜"不等于"安全"——负 FCF + 利润断崖的组合，不满足传统价值投资标准。</p>
+<h3 id="_13">保守型投资者</h3>
+<p><strong>态度</strong>：回避。</p>
+<p><strong>逻辑</strong>：巴菲特买入前 Checklist 通过率 <strong>1.5/10</strong>。ROE 仅 7.2%、FCF 为负、利润不可预测、管理层执行力存疑——不符合"好公司、好价格、好管理层"的任何一条。即使 PB 1.16x 看起来便宜，但"低 PB + 负 FCF + 衰退主业"的组合，历史上更多是价值陷阱而非价值低估。</p>
+<hr />
+<h2 id="vs-vs">百度 vs 腾讯 vs 阿里：中概互联网的三种命运</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>腾讯</th>
+<th>百度</th>
+<th>阿里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心资产</td>
+<td>微信（不可替代）+ 游戏</td>
+<td>搜索（正在被替代）+ AI</td>
+<td>电商（被拼多多/抖音挤压）+ 云</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>~18x PE，合理偏便宜</td>
+<td>~16x PE，便宜但不确定</td>
+<td>~12x PE，便宜但增长乏力</td>
+</tr>
+<tr>
+<td>现金流</td>
+<td>极强（FCF 1,900 亿+）</td>
+<td><strong>转负</strong>（-151 亿）</td>
+<td>正但波动大</td>
+</tr>
+<tr>
+<td>管理层</td>
+<td>高透明 + 大方回购</td>
+<td>低透明 + 刚开始回购</td>
+<td>高透明 + 大方回购</td>
+</tr>
+<tr>
+<td>适合谁</td>
+<td>"睡得着觉"的稳健型</td>
+<td>愿赌 AI 期权的激进型</td>
+<td>看好电商复苏的均值回归型</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>腾讯像一辆正在高速公路上平稳行驶的奔驰——你为确定性付出合理价格。</strong>
+<strong>百度像一辆正在换发动机的赛车——旧发动机还在跑但在冒烟，新发动机装了一半还没点着火。</strong> 如果换成功了，这辆车会比任何人预期的都快；如果换失败了，它会停在路边。</p>
+<p><strong>你愿不愿意坐在这辆正在换发动机的车上？这是投资百度的真问题。</strong></p>
+<hr />
+<h2 id="_14">总结</h2>
+<p>回到系列开篇的问题：<strong>百度到底是"有底部的期权"还是"价值陷阱"？</strong></p>
+<p>答案取决于你怎么看以下三件事：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>乐观看法</th>
+<th>悲观看法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 能变现吗？</td>
+<td>2026Q1 利润 +48%，拐点已现</td>
+<td>AI 毛利率未披露，可能增收不增利</td>
+</tr>
+<tr>
+<td>现金安全吗？</td>
+<td>2,394 亿 + 50 亿美元回购</td>
+<td>FCF 为负，回购是消耗储备</td>
+</tr>
+<tr>
+<td>管理层能执行吗？</td>
+<td>AI 是核心能力圈，这次不同</td>
+<td>历史反复证明"看到但做不到"</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>如果三个问题你的回答都偏乐观——百度当前估值确实便宜，$141 有 30-50% 上行空间。</strong>
+<strong>如果三个问题你的回答都偏悲观——百度可能是一个"2,394 亿现金慢慢被烧掉"的故事，最终沦为"AI 时代的雅虎"。</strong>
+<strong>如果你不确定——那就等。等 FCF 转正、等 AI 占比过半、等昆仑芯 IPO 定价。</strong> 这些信号会在未来 6-12 个月内陆续出现。</p>
+<p>投资百度最大的风险不是 AI 失败——AI 能力已是事实。<strong>最大的风险是：即使 AI 技术成功，利润也可能被竞争和商业化困难所侵蚀，最终"赢了技术、输了投资"。</strong></p>
+<p>这是一个没有标准答案的开放问题。</p>
+<hr />
+<h2 id="_15">附：关键数据汇总</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>~$141/ADS（2026 年 5 月）</td>
+<td>纳斯达克</td>
+</tr>
+<tr>
+<td>当前市值</td>
+<td>~$466 亿（~3,400 亿元）</td>
+<td>计算：$141 × 3.40 亿 ADS</td>
+</tr>
+<tr>
+<td>2025 年总营收</td>
+<td>1,291 亿元（-3%）</td>
+<td>百度年报</td>
+</tr>
+<tr>
+<td>2025 年归属净利润</td>
+<td>56 亿元（-76%）</td>
+<td>百度年报</td>
+</tr>
+<tr>
+<td>2025 年 Non-GAAP 净利润</td>
+<td>189 亿元（-30%）</td>
+<td>百度年报</td>
+</tr>
+<tr>
+<td>2025 年自由现金流</td>
+<td>-151 亿元</td>
+<td>百度年报</td>
+</tr>
+<tr>
+<td>净现金</td>
+<td>2,394 亿元</td>
+<td>百度年报</td>
+</tr>
+<tr>
+<td>AI 新业务收入</td>
+<td>~400 亿元（+48%）</td>
+<td>百度年报</td>
+</tr>
+<tr>
+<td>AI 收入占比（Q4）</td>
+<td>43%</td>
+<td>百度年报</td>
+</tr>
+<tr>
+<td>搜索市占率</td>
+<td>~56%（综合）/ ~65%（移动）</td>
+<td>Statista</td>
+</tr>
+<tr>
+<td>文心助手 MAU</td>
+<td>479 万（排名第 11）</td>
+<td>QuestMobile</td>
+</tr>
+<tr>
+<td>Apollo Go 累计订单</td>
+<td>2,000 万+单</td>
+<td>百度年报</td>
+</tr>
+<tr>
+<td>昆仑芯估值</td>
+<td>210-800 亿元</td>
+<td>融资轮 / 摩根大通预测</td>
+</tr>
+<tr>
+<td>50 亿美元回购</td>
+<td>2026 年 2 月宣布，有效期至 2028 年底</td>
+<td>百度公告</td>
+</tr>
+<tr>
+<td>2026Q1 核心净利润</td>
+<td>76.3 亿元（+48%）</td>
+<td>百度 2026Q1 财报</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<p><em>本文是《看懂百度》系列第 05 篇（终章）。</em></p>
+<p><em>本系列基于百度公开财报、SEC 6-K 文件、第三方数据及公开报道，所有数据标注来源。估算数据均注明"估"。</em></p>
+<p><em>本系列不构成任何投资建议。所有投资决策请基于独立判断。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/e685c94b7dee.html">竞争与风险：四面楚歌与管理层执行力</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/0688f1a0da93.html">AI 三条赛道：大模型、自动驾驶、AI 云</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/673893cea294.html">搜索广告：正在熄火的旧引擎</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/fbefdaa0bf2a.html">搜索巨头的 AI 转型赌注</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/0af7a53f5e61.html">《看懂百度》系列说明</a><div class="meta">2026-05-22 · 底稿</div></li><li><a href="../r/06f4a67f21f0.html">百度（BIDU/9888.HK）投资研究报告</a><div class="meta">2026-04-28 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

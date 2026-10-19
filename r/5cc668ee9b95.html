@@ -1,0 +1,208 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>扩散语言模型（diffusion LLM）技术路线综述：与自回归（AR）路线的对比 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型技术/index.html">大模型技术</a></div><h1>扩散语言模型（diffusion LLM）技术路线综述：与自回归（AR）路线的对比</h1><div class="meta"><a href="../topics/大模型技术/index.html">大模型技术</a> ｜ 2026-07-06 · 横评对比 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF/diffusion-LLM%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF%E7%BB%BC%E8%BF%B0-%E4%B8%8EAR%E5%AF%B9%E6%AF%94-20260706.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一句话结论</a></li>
+<li><a href="#_2">一、技术原理对比</a><ul>
+<li><a href="#ar">自回归（AR）路线</a></li>
+<li><a href="#diffusion">扩散（diffusion）路线</a></li>
+<li><a href="#_3">核心机制差异</a></li>
+</ul>
+</li>
+<li><a href="#_4">二、优劣势实测：速度、质量、成本</a><ul>
+<li><a href="#_5">速度：商业模型的优势是真的，但要打引号</a></li>
+<li><a href="#_6">质量：仍系统性落后，且有理论天花板</a></li>
+<li><a href="#_7">成本：训练侧没有定论，但有一条捷径</a></li>
+<li><a href="#_8">扩散独有的两个真优势</a></li>
+</ul>
+</li>
+<li><a href="#_9">三、全球做得最好的团队盘点</a><ul>
+<li><a href="#_10">第一梯队（商业验证）</a></li>
+<li><a href="#_11">第二梯队（开源与学术，中国团队为主力）</a></li>
+</ul>
+</li>
+<li><a href="#ar_1">四、能否取代 AR？判断框架</a><ul>
+<li><a href="#_12">业界主流判断：互补而非替代</a></li>
+<li><a href="#_13">看多方的核心论据</a></li>
+<li><a href="#_14">看空方的核心论据</a></li>
+<li><a href="#_15">关键观察指标（判断路线拐点用）</a></li>
+<li><a href="#_16">我的综合判断</a></li>
+</ul>
+</li>
+<li><a href="#_17">附录一：被对抗验证证伪的三个流行说法</a></li>
+<li><a href="#_18">附录二：主要参考来源</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>研究日期：2026-07-06
+方法说明：本报告基于多路并行网络检索（5 个角度、23 个来源），对 25 条关键论断做了三票对抗验证（22 条确认、3 条被证伪并在文末列出）。所有结论截至 2026 年 7 月初；该领域月度级快速演进，结论有时效性。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一句话结论</h2>
+<p>扩散语言模型已经从学术玩具走到商业验证阶段（速度是真优势），但在综合能力上仍系统性落后于同规模自回归模型，且并行解码存在信息论层面的质量下界。<strong>短中期内两条路线是互补而非替代关系，"取代 AR 成为主流"目前缺乏证据支持</strong>——扩散路线的真实机会在极致低延迟推理、可调"质量-速度"权衡、生成中纠错和多约束规划这几个缝隙市场。</p>
+<hr />
+<h2 id="_2">一、技术原理对比</h2>
+<h3 id="ar">自回归（AR）路线</h3>
+<p>从左到右逐个 token 生成，每个 token 以之前所有 token 为条件。这是 GPT、Claude、Gemini、DeepSeek 等所有主流大模型的路线。优点是完美建模了 token 之间的依赖关系（链式法则无损分解联合概率）；缺点是生成本质上是串行的，速度受限于逐 token 解码，且写出去的 token 无法回头修改。</p>
+<h3 id="diffusion">扩散（diffusion）路线</h3>
+<p>借鉴图像生成的思路：从全掩码（或噪声）状态出发，经过若干去噪步骤"由粗到细"地并行细化出整段文本，而非从左到右逐个生成。当前主流实现是<strong>掩码扩散语言模型（MDLM）</strong>。</p>
+<p>一个重要的技术谱系认知：<strong>扩散语言模型在原理上与 BERT 式掩码语言建模直接相通</strong>。NeurIPS 2024 的 MDLM 论文证明，简化后的扩散训练目标（Rao-Blackwell 化）就是经典 MLM 损失的加权混合——可以粗略理解为"会迭代生成的 BERT"。这条路线的困惑度已接近 AR 模型（且扩散的困惑度是上界估计，实际可能更接近）。</p>
+<h3 id="_3">核心机制差异</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>自回归（AR）</th>
+<th>扩散（diffusion）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生成方式</td>
+<td>从左到右逐 token</td>
+<td>全局并行、迭代去噪</td>
+</tr>
+<tr>
+<td>依赖建模</td>
+<td>完整（链式法则）</td>
+<td>块内条件独立（有损）</td>
+</tr>
+<tr>
+<td>纠错能力</td>
+<td>写出即定，无法回改</td>
+<td>生成过程中可修改已出内容</td>
+</tr>
+<tr>
+<td>速度-质量权衡</td>
+<td>基本固定</td>
+<td>可通过去噪步数连续调节</td>
+</tr>
+<tr>
+<td>推理优化生态</td>
+<td>KV 缓存、投机解码等非常成熟</td>
+<td>缺标准 KV 缓存，生态早期</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_4">二、优劣势实测：速度、质量、成本</h2>
+<h3 id="_5">速度：商业模型的优势是真的，但要打引号</h3>
+<ul>
+<li><strong>Mercury Coder</strong>（Inception Labs）：经第三方 Artificial Analysis 在 H100 上独立实测，Mini/Small 分别达 <strong>1109 / 737 tokens/秒</strong>；官方称对比约 200 tok/s 的速度优化型 AR 模型快约 5 倍。2026 年的 Mercury 2 实测 711-1196 tok/s，在 132 个模型中速度第一。（置信度：高，有第三方独立实测）</li>
+<li><strong>Gemini Diffusion</strong>（Google DeepMind）：官方自报 <strong>1479 tokens/秒</strong>（不含约 0.84 秒启动开销）；独立上手实测约 857 tok/s。（注意：自报值）</li>
+<li>合理表述是"约 700-1500 tok/s、比速度优化型 AR 快 5-10 倍"，而不是网上流传的"每秒数千 token"。</li>
+</ul>
+<p><strong>重要澄清（对抗验证中被证伪的流行说法）</strong>："扩散模型推理速度普遍显著快于 AR"这一说法被 3-0 否决。实际情况是：速度优势高度依赖工程和解码配置，开源扩散模型在缺标准 KV 缓存的情况下，通用场景中实际推理常常<strong>慢于</strong> AR。商业模型的速度是"扩散架构 + 大量专有工程优化"的综合结果，不是架构本身的免费午餐。</p>
+<h3 id="_6">质量：仍系统性落后，且有理论天花板</h3>
+<p>这是本次研究最重要的发现，两条证据链：</p>
+<p><strong>1. 大规模实证：58 基准评测（arXiv 2601.15593，512 GPU 实证研究）</strong>
+覆盖知识、数学、推理、语言理解、智能体、编程六大维度 58 个基准，评测 8 个主流掩码扩散模型（含 100B 参数的 LLaDA2-flash），结论：<strong>MDLM 仍系统性落后于同规模 AR 模型</strong>，主因是并行概率建模削弱了 token 间依赖关系。这是截至 2026 年中最全面的实证证据。</p>
+<p><strong>2. 信息论下界：并行解码的质量损失是架构性的，不是容量不足</strong>
+块内并行解码假设 token 条件独立，由此产生的 KL 散度被"条件总相关（CTC）"从下方约束——即使模型学到每个位置的最优边缘分布也无法消除，且块越大误差下界越高。</p>
+<p>实践中的直接后果非常说明问题：<strong>为达最高精度，当前最先进的扩散模型（OpenPangu-Diffusion、SDAR、Trado）实际采用块尺寸 4、每步只解一个 token 的保守配置——接近退化为自回归，等于放弃了并行性这个核心卖点</strong>。华为 openPangu 官方也只宣称最多 2.5 倍加速。</p>
+<p>限定：该下界针对"块内一次性条件独立采样"，先生成再编辑（Generate-then-Edit）类迭代修正解码理论上可以绕开，所以这是对"朴素并行解码"的判决，还不是对扩散路线的终审。</p>
+<h3 id="_7">成本：训练侧没有定论，但有一条捷径</h3>
+<ul>
+<li>"扩散训练成本与 AR 基本持平"的说法在对抗验证中被 3-0 否决（依据的实验是玩具规模）。</li>
+<li>但有一条已验证的降本路径：<strong>用 AR 模型权重初始化扩散模型</strong>。Dream 7B 用 Qwen2.5-7B 权重初始化，只用 5800 亿 tokens（约为从零训练的 LLaDA 的 1/4 数据量）就全面超过了 LLaDA-8B，且有受控消融实验支持。这也意味着一个略带讽刺的事实：目前最强的开源扩散模型是"站在 AR 肩膀上"练出来的。</li>
+<li>推理成本：现有对比多为扩散阵营自报，在 AR 侧推理优化（KV 缓存、批处理、投机解码）全部拉满的公平对比下，扩散的单 token 成本优势还剩多少，缺乏中立研究。</li>
+</ul>
+<h3 id="_8">扩散独有的两个真优势</h3>
+<ol>
+<li><strong>多约束规划任务显著占优</strong>：Dream 7B 在 Countdown 数字游戏上 16.0 对 Qwen2.5-7B 的 6.2、数独 81.0 对 21.0、行程规划 17.8 对 3.6，部分场景甚至超过大两个数量级的 DeepSeek-V3-671B。双向注意力 + 全局迭代细化在"需要同时满足多个约束"的任务上有结构性优势。（作者自报，任务高度结构化，置信度中等）</li>
+<li><strong>可调质量-速度权衡</strong>：通过去噪步数在速度和质量之间连续折中，AR 没有这个旋钮。</li>
+<li>（较弱证据）小规模受控实验显示扩散输出的<strong>结构多样性显著更高</strong>（93.4% 对 3.3% 的唯一五词开头比例），且在数据受限场景下更不易过拟合——方向获 CMU 同行评审工作佐证，但实验是玩具规模，不可外推为范式级结论。</li>
+</ol>
+<hr />
+<h2 id="_9">三、全球做得最好的团队盘点</h2>
+<h3 id="_10">第一梯队（商业验证）</h3>
+<p><strong>1. Inception Labs（美国，斯坦福 Stefano Ermon 等创立）—— Mercury 系列</strong>
+首个商业规模扩散 LLM。Mercury Coder 代码质量达到 GPT-4o Mini / Claude 3.5 Haiku 级（HumanEval 88-90、MBPP 77 左右），Copilot Arena 独立排名速度第一、质量第二。2026 年已迭代到 Mercury 2。这是目前扩散路线商业化最坚决、验证最充分的团队。</p>
+<p><strong>2. Google DeepMind —— Gemini Diffusion / DiffusionGemma</strong>
+2025 年 5 月 I/O 发布，官方定位"最先进的实验性文本扩散模型"。注意：截至 2026 年 7 月，它<strong>仍然只是实验性演示</strong>，不是可调用的正式产品（开发者文档模型列表中没有它）；但 DeepMind 已衍生出 DiffusionGemma，说明方向仍在推进。Google 是大厂中对这条路线下注最明确的。</p>
+<h3 id="_11">第二梯队（开源与学术，中国团队为主力）</h3>
+<p><strong>3. 蚂蚁集团 + 人民大学高瓴 —— LLaDA 系列（开源扩散路线的旗手）</strong>
+- LLaDA-8B（2025 年初）：首个证明"从零训练的 8B 扩散模型可与 LLaMA3-8B 相当"的工作。
+- LLaDA2.0（2025 年 12 月）：<strong>业内首个 100B 参数量级扩散语言模型</strong>（16B mini / 100B flash，MoE 架构，100B 版激活约 61 亿参数），权重和训练代码已开源；自报推理 535 tok/s、比同级 AR 快约 2.1 倍。
+- dInfer（2025 年 10 月开源）：自称业界首个高性能扩散 LLM 推理框架，8 卡 H800 上自报比英伟达 Fast-dLLM 平均快 10.7 倍。
+- （注：LLaDA2.0 与 dInfer 的性能数字为蚂蚁自报，来自媒体报道，未经本次对抗验证流程独立核实。）</p>
+<p><strong>4. 香港大学 NLP 组 + 华为诺亚方舟实验室 —— Dream 7B</strong>
+发布时最强开源扩散 LLM，通用/数学/代码全面超越 LLaDA-8B，可匹敌同规模顶级 AR 模型；其"AR 权重初始化 + 上下文自适应噪声重调度"是重要方法论贡献。</p>
+<p><strong>5. 华为 —— openPangu-Diffusion</strong>
+7B 级扩散模型，官方宣称最多 2.5 倍加速；其保守解码配置（块尺寸 4）恰好成为"理论下界在实践中真实存在"的例证。</p>
+<p><strong>6. 其他值得关注</strong>：SDAR、Trado 等混合式（半自回归/块扩散）模型代表了两条路线融合的方向；学术奠基工作是 Cornell 等的 MDLM（NeurIPS 2024）。</p>
+<p>一个值得注意的格局特征：<strong>开源扩散 LLM 的主力几乎全是中国团队</strong>（蚂蚁、人大、港大、华为），美国的力量集中在闭源商业化（Inception Labs）和大厂实验（Google）。</p>
+<hr />
+<h2 id="ar_1">四、能否取代 AR？判断框架</h2>
+<h3 id="_12">业界主流判断：互补而非替代</h3>
+<ul>
+<li><strong>AR 继续主导</strong>：流畅性与连贯性优先的主流场景（对话、翻译、摘要、长文写作、复杂推理）。</li>
+<li><strong>扩散的缝隙机会</strong>：极致低延迟推理（代码补全、实时交互）、需要在速度和质量间灵活折中的场景、多约束规划/结构化生成、需要多样性的生成（创意、数据增强）。</li>
+<li>Gemini Diffusion 发布一年多仍停留在实验性演示，本身就是一个信号：连最有资源的下注者也还没把它推到生产级。</li>
+</ul>
+<h3 id="_13">看多方的核心论据</h3>
+<ol>
+<li>商业模型已证明"GPT-4o Mini 级质量 + 5-10 倍速度"是可实现的组合，推理成本在 AI 应用大规模落地时代是核心竞争维度。</li>
+<li>AR 初始化把扩散模型的训练成本砍到 1/4，追赶曲线可能比想象中陡。</li>
+<li>规划/纠错/多样性是 AR 的结构性弱点，不是工程可弥补的。</li>
+<li>参数规模仍在快速爬坡（8B → 100B 只用了一年）。</li>
+</ol>
+<h3 id="_14">看空方的核心论据</h3>
+<ol>
+<li>58 基准大规模评测显示质量差距是系统性的，且 100B 级仍未收敛。</li>
+<li>CTC 信息论下界意味着"并行度"和"质量"存在架构级的对偶：想要质量就得退化成准自回归，想要并行就得掉质量——目前最强的扩散模型全都选择了前者，等于自己承认了这一点。</li>
+<li>速度优势严重依赖专有工程，开源模型在公平配置下常慢于 AR。</li>
+<li>最强开源扩散模型靠 AR 权重初始化，说明这条路线尚未证明独立的规模定律。</li>
+</ol>
+<h3 id="_15">关键观察指标（判断路线拐点用）</h3>
+<ol>
+<li><strong>能否在块尺寸远大于 4 的真并行配置下，于前沿规模保持与 AR 相当的质量</strong>——这是唯一的胜负手。Generate-then-Edit 类迭代修正解码能否实用化绕开 CTC 下界，是核心技术悬念。</li>
+<li>扩散 LLM 的规模定律是否成立：500B-1T 规模下与 AR 的差距是扩大还是缩小（目前无公开证据）。</li>
+<li>Google 是否将 Gemini Diffusion / DiffusionGemma 产品化开放 API。</li>
+<li>中立第三方在 AR 推理优化拉满条件下的端到端成本对比。</li>
+</ol>
+<h3 id="_16">我的综合判断</h3>
+<p>未来 2-3 年内，扩散路线<strong>不会</strong>取代 AR 成为主流，但会在低延迟推理市场（尤其代码补全、端侧、实时应用）拿下一块真实份额；更可能的终局是<strong>混合架构</strong>——块扩散、半自回归、AR 骨干 + 扩散加速头等融合方案（SDAR、Trado 已是雏形），而不是纯扩散对纯 AR 的路线胜利。对这条路线的正确态度：当作"推理加速技术 + 特定任务特化架构"来跟踪，而不是当作下一代范式来押注。</p>
+<hr />
+<h2 id="_17">附录一：被对抗验证证伪的三个流行说法</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>流行说法</th>
+<th>验证结果</th>
+<th>实际情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"扩散通过并行生成在推理速度上普遍显著优于 AR"</td>
+<td>0-3 否决</td>
+<td>速度优势高度依赖工程与解码配置；开源扩散模型缺 KV 缓存时常慢于 AR</td>
+</tr>
+<tr>
+<td>"扩散训练成本与 AR 基本持平"</td>
+<td>0-3 否决</td>
+<td>依据实验为玩具规模，不足以支撑该结论</td>
+</tr>
+<tr>
+<td>"Gemini Diffusion 质量与 Gemini 2.0 Flash-Lite 大体相当"</td>
+<td>1-2 否决</td>
+<td>官方自报基准，独立验证不足，不宜引用</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_18">附录二：主要参考来源</h2>
+<p><strong>一手来源（论文/官方）</strong>
+- Mercury 技术报告：arXiv 2506.17298
+- 扩散语言模型综述：arXiv 2508.10875
+- Dream 7B 论文：arXiv 2508.15487
+- 58 基准大规模评测与 CTC 理论下界：arXiv 2601.15593
+- MDLM（NeurIPS 2024）：arXiv 2406.07524
+- AR 与 MDLM 受控对比：arXiv 2603.22075；CMU 数据受限场景研究：arXiv 2507.15857
+- Gemini Diffusion 官方页：deepmind.google/models/gemini-diffusion
+- Inception Labs 官方博客：inceptionlabs.ai/blog/introducing-mercury</p>
+<p><strong>二手来源（媒体，主要覆盖中国团队进展）</strong>
+- IT之家：蚂蚁开源 LLaDA2.0（业内首个 100B 扩散语言模型）
+- 量子位：蚂蚁开源 dInfer 推理框架
+- The New Stack：Mercury 2 实测报道</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/9cc58197589d.html">看懂 Kimi K3：2.8 万亿参数的开源前沿模型</a><div class="meta">2026-07-20 · 研究</div></li><li><a href="../r/558d98e7ee09.html">2025-2026年基础大模型训练方法论综述：从DeepSeek V4到Kimi K2.5</a><div class="meta">2026-07-13 · 研究</div></li><li><a href="../r/b48c4181ab3e.html">2025-2026年基础大模型训练方法论综述：从DeepSeek V4到Kimi K2.5</a><div class="meta">2026-07-13 · 研究</div></li><li><a href="../r/e7623dd944a2.html">Mid-train 技术综述与落地手册：面向有 post-train 经验的基模团队</a><div class="meta">2026-06-29 · 研究</div></li><li><a href="../r/eadd05c9ea81.html">Mid-train 技术综述与落地手册：面向有 post-train 经验的基模团队</a><div class="meta">2026-06-29 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

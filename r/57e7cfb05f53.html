@@ -1,0 +1,286 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>产品与技术——AI保险的全栈故事 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/暖哇科技/index.html">暖哇科技</a></div><h1>产品与技术——AI保险的全栈故事</h1><div class="meta"><a href="../companies/暖哇科技/index.html">暖哇科技</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%9A%96%E5%93%87%E7%A7%91%E6%8A%80/%E3%80%8A%E7%9C%8B%E6%87%82%E6%9A%96%E5%93%87%E7%A7%91%E6%8A%80%E3%80%8B/02-%E4%BA%A7%E5%93%81%E4%B8%8E%E6%8A%80%E6%9C%AF-AI%E4%BF%9D%E9%99%A9%E7%9A%84%E5%85%A8%E6%A0%88%E6%95%85%E4%BA%8B.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">暖哇到底在做什么？</a><ul>
+<li><a href="#_2">两大产品线</a></li>
+</ul>
+</li>
+<li><a href="#_3">七大技术产品拆解</a></li>
+<li><a href="#_4">核心技术壁垒：到底有多深？</a><ul>
+<li><a href="#_5">壁垒一：数据积累</a></li>
+<li><a href="#_6">壁垒二：系统切换成本</a></li>
+<li><a href="#_7">壁垒三：行业理解</a></li>
+</ul>
+</li>
+<li><a href="#_8">通用大模型会颠覆暖哇吗？</a></li>
+<li><a href="#_9">客户画像：谁在买单？</a></li>
+<li><a href="#_10">本篇核心结论</a></li>
+<li><a href="#_11">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂暖哇科技》系列 · 第 02 篇
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">暖哇到底在做什么？</h2>
+<p>一家保险公司每天要处理的事：判断一个陌生人该不该卖保险给他、卖什么价格、他出险了申请理赔是否在骗你、该赔多少。这些决策过去靠人工，现在暖哇科技要用AI来替代——或者至少，大幅提升效率。</p>
+<p>把保险业务拆成最简单的两个环节：<strong>承保</strong>（卖保险前的事）和<strong>理赔</strong>（卖保险后的事）。暖哇科技就围绕这两个环节，给保险公司提供AI工具。</p>
+<h3 id="_2">两大产品线</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>产品线</th>
+<th>占营收比例</th>
+<th>核心功能</th>
+<th>代表系统</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI承保解决方案</strong></td>
+<td>~<strong>75%</strong></td>
+<td>产品设计、精准营销、智能核保、用户运营</td>
+<td>"阿拉莫斯"承保系统</td>
+</tr>
+<tr>
+<td><strong>AI理赔解决方案</strong></td>
+<td>~<strong>25%</strong></td>
+<td>智能理赔审核、反欺诈检测、健康管理</td>
+<td>"罗布泊"理赔系统</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：暖哇科技招股书</p>
+<p>翻译成大白话：</p>
+<ul>
+<li><strong>承保端</strong>：帮保险公司设计保险产品、找到合适的客户、判断该不该承保。比如一个人来买健康险，暖哇的系统帮保险公司快速判断这个人的健康风险，该不该卖给他、卖什么价格。</li>
+<li><strong>理赔端</strong>：客户出险了来理赔，暖哇的系统帮保险公司审核理赔申请、检测是否有欺诈行为、自动化处理简单案件。</li>
+</ul>
+<hr />
+<h2 id="_3">七大技术产品拆解</h2>
+<p>暖哇在招股书中列出了七大技术产品，下面逐一解读：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>产品</th>
+<th>做什么</th>
+<th>壁垒判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>医学知识库</strong></td>
+<td>把医学文献、疾病诊断规则、药品目录等结构化，作为AI判断的"知识底座"</td>
+<td>中等——需要大量医学专家标注，但不是不可复制</td>
+</tr>
+<tr>
+<td><strong>医疗数据平台（MDP）</strong></td>
+<td>整合多源医疗数据，为风控模型提供训练数据</td>
+<td>中高——数据量级和清洗质量是壁垒</td>
+</tr>
+<tr>
+<td><strong>商保风控</strong></td>
+<td>对投保人进行风险评分，辅助核保决策</td>
+<td>中等——模型有效性取决于历史数据积累</td>
+</tr>
+<tr>
+<td><strong>商保反欺诈平台</strong></td>
+<td>识别理赔欺诈行为（骗保、过度医疗等）</td>
+<td>中高——反欺诈规则和异常检测模型需要大量真实案例训练</td>
+</tr>
+<tr>
+<td><strong>医疗服务平台</strong></td>
+<td>连接医疗机构，提供就医引导和健康管理服务</td>
+<td>低——平台模式，竞争者众多</td>
+</tr>
+<tr>
+<td><strong>定制化保险服务平台</strong></td>
+<td>为保险公司定制产品方案</td>
+<td>低——本质是咨询+开发，可替代性高</td>
+</tr>
+<tr>
+<td><strong>AI医疗服务平台</strong></td>
+<td>AI辅助诊疗建议、慢病管理</td>
+<td>中等——技术门槛中等，但监管约束大</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一句话总结</strong>：暖哇的技术核心在<strong>医学知识库 + 医疗数据平台 + 风控/反欺诈模型</strong>这三块。其他四块更偏服务和平台，壁垒不高。</p>
+<hr />
+<h2 id="_4">核心技术壁垒：到底有多深？</h2>
+<p>这是最值得认真讨论的问题。暖哇宣称自己是"中国保险业最大的独立AI科技公司"，这个壁垒经得起检验吗？</p>
+<h3 id="_5">壁垒一：数据积累</h3>
+<p>截至 2025 年底，暖哇的系统累计处理了超 <strong>2.21 亿</strong> 保险案件、服务超 <strong>4,400 万</strong> 保险消费者、累计促成首年保费 <strong>130 亿元</strong>。</p>
+<p>这个数据量级在行业内确实领先。AI模型的有效性高度依赖训练数据——处理过 2 亿案件的模型，理论上比处理过 2,000 万案件的模型更精准。</p>
+<p><strong>但有一个致命问题：数据归谁？</strong></p>
+<p>保险案件数据的原始所有权属于<strong>保险公司</strong>，不属于暖哇。暖哇能做的是在处理过程中积累<strong>模型训练经验</strong>和<strong>脱敏后的统计特征</strong>，但原始数据带不走。</p>
+<p><strong>反方观点</strong>：即便原始数据归保险公司，暖哇从 2.21 亿案件中提炼出的风控规则、反欺诈模型、医学知识图谱——这些"经验资产"是有价值的，且很难被竞争对手快速复制。类比：埃森哲不拥有客户的数据，但它的行业经验和方法论就是壁垒。</p>
+<h3 id="_6">壁垒二：系统切换成本</h3>
+<p>保险公司一旦接入暖哇的承保或理赔系统，要切换到其他供应商，成本是很高的——系统对接、数据迁移、人员培训、业务中断风险。这是典型的 <strong>B2B SaaS 粘性</strong>。</p>
+<p>暖哇的数据可以佐证这一点：
+- 2025 年保单续保率 <strong>98.4%</strong>
+- 交叉销售率 <strong>65.0%</strong>（行业平均 15%-25%，来源：招股书引用弗若斯特沙利文）</p>
+<p><strong>但矛盾在于</strong>：如果系统粘性真的这么高，为什么客户留存率只有 <strong>69.6%</strong>、而且在下降？</p>
+<p>一个可能的解释是：大客户粘性高（系统深度嵌入，不会轻易换），但<strong>小客户和试用客户流失率高</strong>（试用后觉得不值得长期付费）。暖哇 245 家客户中，真正贡献核心收入的可能只是头部那几十家。</p>
+<h3 id="_7">壁垒三：行业理解</h3>
+<p>保险不是一个通用技术能轻松切入的行业。核保规则、医学诊断逻辑、理赔审核标准——这些需要<strong>深度的行业知识</strong>。暖哇从众安保险健康业务部孵化而来，创始团队出身保险和保险科技行业，这种"基因"确实是优势。</p>
+<p>CEO 卢旻的履历：易保网络（保险核心系统）-&gt; 阿里云 -&gt; 上海保交所信息技术事业部总经理 -&gt; 暖哇科技创始人。二十年保险科技从业经验。</p>
+<p><strong>但反过来想</strong>：大型保险公司（平安、太保、人保）都有自己的科技子公司，人才储备和资金实力远超暖哇。它们不用暖哇，可能只是暂时觉得"外包比自建划算"——一旦AI技术进一步成熟、门槛进一步降低，自建的性价比就会反转。</p>
+<hr />
+<h2 id="_8">通用大模型会颠覆暖哇吗？</h2>
+<p>这是 2025-2026 年保险科技领域最热门的争论。</p>
+<p>随着 GPT、文心一言、通义千问等通用大模型的能力飞速提升，一个问题变得越来越尖锐：<strong>保险公司还需要暖哇这样的垂直AI供应商吗？直接用通用大模型不行吗？</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>通用大模型</th>
+<th>暖哇这类垂直AI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>语言理解</td>
+<td>强</td>
+<td>中等</td>
+</tr>
+<tr>
+<td>医学知识</td>
+<td>宽但不深</td>
+<td>窄但更深</td>
+</tr>
+<tr>
+<td>保险业务逻辑</td>
+<td>弱（需要大量定制）</td>
+<td>强（原生嵌入）</td>
+</tr>
+<tr>
+<td>合规审核</td>
+<td>弱</td>
+<td>强</td>
+</tr>
+<tr>
+<td>部署方式</td>
+<td>云端为主</td>
+<td>可私有化部署</td>
+</tr>
+<tr>
+<td>数据安全</td>
+<td>保险公司顾虑大</td>
+<td>已建立信任</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>短期（1-2年）</strong>：通用大模型还无法替代暖哇。保险业务的复杂度、合规要求、数据安全敏感性，决定了保险公司不会简单地"用 ChatGPT 做核保"。</p>
+<p><strong>中期（3-5年）</strong>：风险加大。通用大模型 + 保险行业微调 的路径越来越成熟，大型险企的科技子公司可能基于大模型自建能力，挤压暖哇的生存空间。</p>
+<p><strong>反方观点</strong>：大模型反而可能帮暖哇。暖哇可以在自己的垂直产品中集成大模型能力，增强产品力。"基础模型 + 垂直行业数据 + 行业经验" 的组合，可能比纯通用模型或纯垂直模型都更有竞争力。</p>
+<hr />
+<h2 id="_9">客户画像：谁在买单？</h2>
+<p>截至 2025 年底，暖哇科技的客户画像：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>客户类型</th>
+<th>数量</th>
+<th>特征</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保险公司</td>
+<td><strong>115 家</strong></td>
+<td>覆盖前十大险企中 9 家</td>
+</tr>
+<tr>
+<td>互联网平台及其他</td>
+<td><strong>130 家</strong></td>
+<td>流量平台、健康管理公司等</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>245 家</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：暖哇科技 2026 年更新版招股书</p>
+<p><strong>前五大客户营收占比变化</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025H1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前五大客户占比</td>
+<td>92.3%</td>
+<td>82.9%</td>
+<td>78.9%</td>
+<td>73.6%</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：暖哇科技招股书</p>
+<p>客户集中度在下降，但 <strong>73.6%</strong> 仍然很高。作为对比，一般上市的 SaaS 公司前五大客户占比通常在 <strong>20%-40%</strong> 之间。暖哇的客户集中度是行业正常水平的 <strong>2-3 倍</strong>。</p>
+<p><strong>关键判断</strong>：暖哇的客户基础在扩大，但核心收入仍然高度集中在少数大客户手中。这不是一个"广泛被市场接受"的产品，更像是"几个大客户深度使用 + 大量小客户浅尝辄止"的格局。</p>
+<hr />
+<h2 id="_10">本篇核心结论</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>判断</th>
+<th>信心度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>技术壁垒</td>
+<td>有，但不深——核心壁垒在数据积累和行业经验，而非不可替代的技术</td>
+<td>中等</td>
+</tr>
+<tr>
+<td>产品能力</td>
+<td>全栈覆盖是差异化优势，但单点能力不突出</td>
+<td>中等</td>
+</tr>
+<tr>
+<td>客户粘性</td>
+<td>大客户粘性高、小客户流失快——两极分化</td>
+<td>较高</td>
+</tr>
+<tr>
+<td>大模型冲击</td>
+<td>短期影响有限，中长期是真实威胁</td>
+<td>中等</td>
+</tr>
+<tr>
+<td>数据资产</td>
+<td>有经验价值，但原始数据不属于暖哇</td>
+<td>较高</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一句话总结</strong>：暖哇的技术壁垒不是"高不可攀"，而是"有一定门槛、但会被时间侵蚀"。它的真正壁垒不在技术本身，而在于<strong>保险行业的复杂性带来的切换成本</strong>。但这个壁垒正在被两股力量侵蚀：一是通用大模型降低技术门槛，二是大型险企自建能力的意愿在增强。</p>
+<hr />
+<h2 id="_11">下期预告</h2>
+<p>下一篇，我们会拆暖哇科技的<strong>竞争格局和商业化逻辑</strong>——10 亿营收到底是怎么赚来的？增长靠什么驱动？众安依赖到底是"关联交易"还是"战略协同"？</p>
+<p>要回答的几个尖锐问题：</p>
+<ul>
+<li>保险科技赛道有多大？暖哇能吃到多少？</li>
+<li>镁信健康、思派健康、保险极客——竞争对手活得怎么样？</li>
+<li>毛利率为什么三年下滑 11 个百分点？</li>
+<li>众安和暖哇的关系，到底是"蜜月"还是"捆绑"？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂暖哇科技》系列第 02 篇。后续 2 篇将陆续推出。</em>
+<em>本系列不构成任何投资建议。暖哇科技截至本文发布日尚未完成港交所上市。</em>
+<em>数据来源：暖哇科技港交所招股书（2025年9月/2026年4月）、弗若斯特沙利文、36氪、新浪财经、艾瑞咨询。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/607a5e569f4f.html">风险与判断——&quot;保险AI第一股&quot;值得关注吗？</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/8ae97ebcec98.html">竞争与商业化——10亿营收背后的真问题</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/04932545c8d2.html">暖哇科技——一家矛盾的公司</a><div class="meta">2026-05-21 · 深度系列</div></li><li><a href="../r/804756ae34d1.html">《看懂暖哇科技》系列说明</a><div class="meta">2026-05-21 · 底稿</div></li><li><a href="../r/de8cd55784cd.html">暖哇科技（NuanWa Technology）投资研究报告</a><div class="meta">2026-04-10 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

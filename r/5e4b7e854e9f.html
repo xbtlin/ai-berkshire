@@ -1,0 +1,209 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>07 增量更新底稿（2026-07-14 → 2026-08-01） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><h1>07 增量更新底稿（2026-07-14 → 2026-08-01）</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-08-01 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E3%80%8A%E7%9C%8B%E6%87%82%E8%8B%B1%E4%BC%9F%E8%BE%BE%E3%80%8B-20260801/research/07-%E5%A2%9E%E9%87%8F%E6%9B%B4%E6%96%B0-20260801.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">〇、全系列价格基准（锁定）</a></li>
+<li><a href="#_2">一、公司层面增量</a></li>
+<li><a href="#amd-advancing-ai-20267-2223">二、竞争层面增量（AMD Advancing AI 2026，7-22/23）</a></li>
+<li><a href="#7-22-7-30capex">三、云厂商财报季（7-22 至 7-30）：capex 全线上调</a><ul>
+<li><a href="#20260714-05">九盏信号灯读数更新（对照 20260714 版 05 底稿）</a></li>
+</ul>
+</li>
+<li><a href="#_3">四、市场情绪增量</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂英伟达》20260801 版研究底稿。本文件只记录 7 月 14 日之后的增量事实；存量事实沿用 20260714 版 research/01-06 六份底稿。
+标注体系沿用：【官方】= 公司披露/SEC/管理层原话；【报道】= 权威媒体报道；【分析师估计】= 第三方测算。</p>
+</blockquote>
+<hr />
+<h2 id="_1">〇、全系列价格基准（锁定）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">数值</th>
+<th>来源与校验</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价</td>
+<td style="text-align: right;"><strong>197.71 美元</strong>（2026-07-31 收盘）</td>
+<td>stockanalysis.com；investing.com 报 197.86，差 0.1%，取前者</td>
+</tr>
+<tr>
+<td>市值</td>
+<td style="text-align: right;"><strong>约 4.80 万亿美元</strong>（全球第一）</td>
+<td>companiesmarketcap；自校验 197.71 × 约 243 亿股 ≈ 4.80 万亿 ✅</td>
+</tr>
+<tr>
+<td>较峰值回撤</td>
+<td style="text-align: right;">约 <strong>-16%</strong>（收盘峰值 235.47，2026-05-14）</td>
+<td>自算 197.71/235.47</td>
+</tr>
+<tr>
+<td>Trailing PE</td>
+<td style="text-align: right;">约 <strong>30</strong>（GAAP TTM EPS 6.53 美元）</td>
+<td>自算；TTM EPS 含 FY27 Q1 约 159 亿投资重估，剔除后约 33</td>
+</tr>
+<tr>
+<td>Forward PE</td>
+<td style="text-align: right;">约 <strong>21-23</strong>（FY2027 共识 Non-GAAP EPS 8.69-9.34 美元，口径不一）</td>
+<td>20260714 版底稿 06 + finviz 区间，未见 7 月内大幅修订</td>
+</tr>
+<tr>
+<td>7 月区间</td>
+<td style="text-align: right;">收盘 190.01（7-29）— 203.53（7-13）</td>
+<td>stockanalysis/investing 历史表</td>
+</tr>
+</tbody>
+</table></div>
+<p>7 月末周波动主因：7-26 WSJ 曝 OpenAI 担保谈判 → 7-27 单日跌约 4-5% → 7-30/31 随亚马逊财报回稳。</p>
+<hr />
+<h2 id="_2">一、公司层面增量</h2>
+<ol>
+<li><strong>SK 集团 5000 亿美元意向书（2026-07-25）</strong>【官方】：①SK Telecom 建 2GW AI 数据中心（Vera Rubin 平台，一期 2027 年投运）；②与 SK 海力士深化 HBM4 共同开发、锁定长期内存供应。性质是 <strong>LOI（意向书）非合同</strong>——写作时必须与"1 万亿订单可见度"同样标注性质。来源：NVIDIA IR 新闻稿；CNBC 2026-07-25。</li>
+<li><strong>OpenAI 约 2500 亿美元财务担保谈判（2026-07-26 首报，谈判中）</strong>【报道】：WSJ 首报、Axios 跟进——英伟达洽谈为 OpenAI 租用软银在俄亥俄州开发的 10GW 数据中心算力提供约 2500 亿美元财务担保。<strong>未官宣、未签约</strong>。市场反应：7-27 股价跌约 4-5%。这是"五种循环结构"之外可能出现的<strong>第六种结构（信用担保）</strong>，量级远超此前 63 亿 CoreWeave 兜底 + 35 亿担保之和，是 03 篇最重要的增量素材。</li>
+<li><strong>Vera Rubin 爬坡</strong>：【官方】2026-05-31 宣布全面投产、量产出货"今年秋季开始"；【报道】wccftech：首批 7 月出货北美大客户；【分析师估计】KeyBanc 渠道调研（2026-07-14）：散热问题已解决、7 月起爬坡，2026 年出货预估 Rubin 170-180 万片 + Blackwell 550-600 万片（此前 Introl 曾估 Rubin 仅 20-30 万，两口径差 6-9 倍，<strong>引用时并列标注分歧</strong>）。</li>
+<li><strong>对华 H200 首批发货（2026-07-14）</strong>【官方（国会证词）】：美贸易官员作证称已有"极少量（trivial）"H200 在许可下发货至中国大陆和香港——2025-12 放行后的首批实际交付；约 10 家中企获批（含腾讯、字节）。【报道】techtimes：中企 2026 年累计订购超 200 万片 H200，而英伟达库存仅约 70 万片。→ 04 底稿"实际交付为零"的表述<strong>已过期</strong>，改为"首批极少量交付，杯水车薪"。</li>
+<li>回购：7 月内无新披露；授权余额约 1,185 亿（截至 5 月）。监管：7 月内无新增反垄断/调查动向。</li>
+</ol>
+<h2 id="amd-advancing-ai-20267-2223">二、竞争层面增量（AMD Advancing AI 2026，7-22/23）</h2>
+<ul>
+<li>【官方】MI400 系列（旗舰 MI455X）、Helios 机架、EPYC Venice、ROCm 7 正式发布；AMD 否认 MI455X 延迟，称 Helios "on target for 2H 2026"。【报道】Helios 单机架约 525 万美元（tech-insider.org，单一来源）。</li>
+<li>【官方】<strong>Anthropic 新客户</strong>：部署最高 <strong>2GW MI450</strong>（首 GW 2027 上半年）；<strong>AMD 反向投资 Anthropic 最高 50 亿美元</strong>——AMD 也开始用"股权换订单"，说明认股权证/入股换单已成行业通行做法，不是英伟达独有。</li>
+<li>【官方/报道】Oracle：5 万片 MI450 2026 Q3 起部署；OpenAI 6GW 进入技术执行阶段；Meta 6GW、Azure、HUMAIN 500MW 可见性重申。</li>
+<li>结论：20260714 版 04 底稿"2H2026 是替代方案第一次实战检验"的判断<strong>维持不变</strong>，AMD 大会没有提前量产惊喜，但客户名单又厚了一层（Anthropic 现在同时锚定 TPU 3.5GW + Trainium 5GW + 英伟达 300 亿 Azure + AMD 2GW——四线并进）。</li>
+<li>谷歌 TPU / AWS Trainium / OpenAI-博通 Jalapeño：7 月内无新公告。</li>
+</ul>
+<h2 id="7-22-7-30capex">三、云厂商财报季（7-22 至 7-30）：capex 全线上调</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th style="text-align: right;">当季 capex</th>
+<th>2026 全年口径</th>
+<th>关键增量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>微软（FY26Q4，7-29）</td>
+<td style="text-align: right;">410 亿（纪录）</td>
+<td>FY27 指引"同比继续增长"；FY27Q1 含融资租赁将超 500 亿</td>
+<td>Azure +43%、年收入首破 1000 亿；<strong>数据中心/办公楼折旧 15→25 年</strong>（会计变更）；股价 +8%</td>
+</tr>
+<tr>
+<td>Alphabet（Q2，7-22）</td>
+<td style="text-align: right;">449 亿</td>
+<td><strong>再上调至 1950-2050 亿</strong>（原 1800-1900 亿）</td>
+<td>谷歌云 +82%（含 TPU 系统对外销售起量）、backlog 5140 亿；2027"大幅增加"；<strong>当季 FCF 为负</strong>；股价 -5%</td>
+</tr>
+<tr>
+<td>Meta（Q2，7-29/30）</td>
+<td style="text-align: right;">311 亿</td>
+<td>收窄至 1300-1450 亿（下限上调）</td>
+<td>EPS 6.18 vs 预期 7.14 <strong>miss</strong>；2027 不给指引、"最大化 26/27 算力"；股价 -7~9%</td>
+</tr>
+<tr>
+<td>亚马逊（Q2，7-30）</td>
+<td style="text-align: right;">542 亿</td>
+<td><strong>上调至约 2200 亿</strong>（原约 2000 亿，归因内存涨价）</td>
+<td>AWS +36.7% 连续 5 季加速、backlog 4960 亿；<strong>当季 FCF 转负</strong>；"产能仍不够"</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>四大 2026 合计约 <strong>7350-7600 亿美元</strong>（自算加总，微软自然年为媒体测算约 1900 亿）；Morgan Stanley 含 Oracle 五家口径 <strong>8050 亿</strong>（2026-05 上调）；2027 年 MS/高盛口径约 <strong>1.1 万亿</strong>。</li>
+<li>Oracle（6-10，FY26Q4）：FY2026 capex 557 亿（+162%）；FY2027 净现金 capex 约 700 亿（含客户预付款总口径 900-950 亿）；RPO <strong>6380 亿</strong>（+363%）；拟再融资约 400 亿。</li>
+<li>CoreWeave【报道，Bloomberg 7-16/7-29】：7 月发 26 亿杠杆贷款（为 Anthropic、Jane Street 扩容），<strong>定价被迫上调至基准利率 +5.5 个百分点、按 96-97 美分折价</strong>——AI 债需求转弱的首个明确价格信号；年内已累计募资超 200 亿（含 85 亿首笔投资级 GPU 抵押贷）。</li>
+<li>【报道，来源较弱】Cryptopolitan：Oracle/xAI/Meta/CoreWeave 经 SPV 移至表外的 AI 基建债务合计约 1200 亿——引用需谨慎标注。</li>
+</ul>
+<h3 id="20260714-05">九盏信号灯读数更新（对照 20260714 版 05 底稿）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>信号</th>
+<th>7-14 读数</th>
+<th><strong>8-01 读数</strong></th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>OpenAI 融资链</td>
+<td>绿（软银过桥贷 2027-03 硬时钟）</td>
+<td>绿，<strong>新增变量</strong>：英伟达 2500 亿担保若落地=链条更粗也更绑死</td>
+<td>观察升级</td>
+</tr>
+<tr>
+<td>2</td>
+<td>云厂 capex 指引</td>
+<td>绿（全部上调）</td>
+<td><strong>绿（财报季四家再度全部上调/维持）</strong></td>
+<td>不变</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GPU 租价</td>
+<td>绿（H100 合约价 +40% 回升）</td>
+<td>7 月无新数据，沿用</td>
+<td>不变</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Token 量价</td>
+<td>绿中带黄</td>
+<td>7 月无新数据，沿用</td>
+<td>不变</td>
+</tr>
+<tr>
+<td>5</td>
+<td>算力云信用</td>
+<td>黄（CRWV 股价 -46%、债 350 亿）</td>
+<td><strong>黄加深：7 月发债利差 +5.5pct、96-97 折价</strong></td>
+<td>恶化</td>
+</tr>
+<tr>
+<td>6</td>
+<td>英伟达库存/应收</td>
+<td>绿</td>
+<td>待 8 月下旬 Q2 财报</td>
+<td>待更新</td>
+</tr>
+<tr>
+<td>7</td>
+<td>折旧年限</td>
+<td>黄（仅亚马逊缩短）</td>
+<td>黄；注意微软把<strong>建筑物</strong>折旧拉长到 25 年（非服务器，口径要分清，不能当成 GPU 折旧证据）</td>
+<td>微调</td>
+</tr>
+<tr>
+<td>8</td>
+<td>AI 债利差</td>
+<td>绿（Meta A+ 225bp、认购踊跃）</td>
+<td><strong>绿转黄：高杠杆端（CoreWeave）定价明显走弱；投资级端未见恶化</strong></td>
+<td>恶化（分层）</td>
+</tr>
+<tr>
+<td>9</td>
+<td>电力交付</td>
+<td>绿（瓶颈期）</td>
+<td>7 月无新数据，沿用</td>
+<td>不变</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一句话判断</strong>：需求侧指标（capex 指引、云收入增速、backlog）7 月又变强了；资金侧指标（高杠杆算力云的融资成本、FCF 转负的家数）又变弱了——"实体需求扩张 + 资金结构恶化"的剪刀差在 7 月同时加宽。</p>
+<h2 id="_3">四、市场情绪增量</h2>
+<ul>
+<li>空头：Michael Burry 7 月初经 Substack 披露加仓 NVDA 看跌期权（2026-12-18 到期、行权价低 100 美元区间），并做空美光/AMD/AMAT/SOXX；NVDA 总空头约 <strong>3.24 亿股，2023 年 4 月以来最高</strong>（S3 Partners/moomoo）。</li>
+<li>卖方 7 月动向：Morgan Stanley 维持增持 288 美元（7-13）；KeyBanc 310→<strong>330 美元</strong>（7-14，Rubin 供应链调研）；美银 7-27 下跌后重申买入；共识（MarketBeat，7-21，53 位）平均目标价 <strong>304 美元</strong>、区间 218-500。</li>
+<li>下一个硬节点：<strong>Q2 FY2027 财报预计 2026 年 8 月下旬发布</strong>（指引 910 亿 ±2%）；届时首次检验对华 H200 是否录入收入、库存/应收哨兵科目、以及黄仁勋是否新设 10b5-1。</li>
+</ul>
+<hr />
+<p><em>本底稿为内部研究资料，不构成投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/12be4daf50fb.html">审计说明</a><div class="meta">2026-09-07 · 底稿</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/fc0dae7fdd42.html">英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</a><div class="meta">2026-08-28 · 财报</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/6e56cabdf58e.html">《看懂英伟达》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/6601b82f2d5a.html">06 管理层评估 + 当前估值与卖方观点（研究底稿）</a><div class="meta">2026-07-14 · 底稿</div></li><li><a href="../r/e370c5a80872.html">05 - AI资本开支周期的可持续性：这次是不是2000年的思科？</a><div class="meta">2026-07-14 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

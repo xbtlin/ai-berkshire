@@ -1,0 +1,423 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Llama-3.1-Nemotron-Ultra-253B-v1 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a></div><h1>Llama-3.1-Nemotron-Ultra-253B-v1</h1><div class="meta"><a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/nvidia__Llama-3_1-Nemotron-Ultra-253B-v1__README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#model-overview">Model Overview</a></li>
+<li><a href="#feature-voting">Feature Voting</a></li>
+<li><a href="#licenseterms-of-use">License/Terms of Use</a><ul>
+<li><a href="#use-case">Use Case:</a></li>
+<li><a href="#release-date">Release Date:</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+<li><a href="#model-architecture">Model Architecture</a></li>
+<li><a href="#intended-use">Intended use</a></li>
+<li><a href="#input">Input</a></li>
+<li><a href="#output">Output</a></li>
+<li><a href="#software-integration">Software Integration</a></li>
+<li><a href="#model-version">Model Version</a></li>
+<li><a href="#quick-start-and-usage-recommendations">Quick Start and Usage Recommendations:</a><ul>
+<li><a href="#use-it-with-transformers">Use It with Transformers</a></li>
+<li><a href="#use-it-with-vllm">Use It with vLLM</a></li>
+</ul>
+</li>
+<li><a href="#inference">Inference:</a></li>
+<li><a href="#training-and-evaluation-datasets">Training and Evaluation Datasets</a></li>
+<li><a href="#training-datasets">Training Datasets</a></li>
+<li><a href="#evaluation-datasets">Evaluation Datasets</a></li>
+<li><a href="#evaluation-results">Evaluation Results</a><ul>
+<li><a href="#gpqa">GPQA</a></li>
+<li><a href="#aime25">AIME25</a></li>
+<li><a href="#bfcl-v2-live">BFCL V2 Live</a></li>
+<li><a href="#livecodebench-20240801-20250201">LiveCodeBench (20240801-20250201)</a></li>
+<li><a href="#ifeval">IFEval</a></li>
+<li><a href="#math500">MATH500</a></li>
+<li><a href="#judgebench">JudgeBench</a></li>
+</ul>
+</li>
+<li><a href="#ethical-considerations">Ethical Considerations:</a></li>
+<li><a href="#citation">Citation</a></li>
+</ul>
+</div>
+</details><article><h2 id="model-overview">Model Overview</h2>
+<p><img alt="Accuracy Plot" src="./accuracy_plot.png" /></p>
+<p>Llama-3.1-Nemotron-Ultra-253B-v1 is a large language model (LLM) which is a derivative of <a href="https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct">Meta Llama-3.1-405B-Instruct</a> (AKA the <em>reference model</em>). It is a reasoning model that is post trained for reasoning, human chat preferences, and tasks, such as RAG and tool calling. The model supports a context length of 128K tokens. This model fits on a single 8xH100 node for inference.</p>
+<p>Llama-3.1-Nemotron-Ultra-253B-v1 is a model which offers a great tradeoff between model accuracy and efficiency. Efficiency (throughput) directly translates to savings. Using a novel Neural Architecture Search (NAS) approach, we greatly reduce the model’s memory footprint, enabling larger workloads, as well as reducing the number of GPUs required to run the model in a data center environment. This NAS approach enables the selection of a desired point in the accuracy-efficiency tradeoff. Furthermore, by using a novel method to vertically compress the model (see details <a href="https://arxiv.org/abs/2503.18908">here</a>), it also offers a significant improvement in latency.</p>
+<p>The model underwent a multi-phase post-training process to enhance both its reasoning and non-reasoning capabilities. This includes a supervised fine-tuning stage for Math, Code, Reasoning, Chat, and Tool Calling as well as multiple reinforcement learning (RL) stages using Group Relative Policy Optimization (GRPO) algorithms for reasoning, chat, and instruction-following. </p>
+<p>This model is ready for commercial use. </p>
+<p>For more details on how the model was trained, please see our <a href="https://arxiv.org/abs/2505.00949">technical report</a> and <a href="https://developer.nvidia.com/blog/build-enterprise-ai-agents-with-advanced-open-nvidia-llama-nemotron-reasoning-models/">blog</a>.</p>
+<p><img alt="Training Flow" src="./training_flowchart.png" /></p>
+<p>This model is part of the Llama Nemotron Collection. You can find the other model(s) in this family here: </p>
+<ul>
+<li><a href="https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-8B-v1">Llama-3.1-Nemotron-Nano-8B-v1</a>  </li>
+<li><a href="https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1">Llama-3.3-Nemotron-Super-49B-v1</a></li>
+</ul>
+<h2 id="feature-voting">Feature Voting</h2>
+<p>We want to hear from you! Share your ideas, vote on what matters, and help <a href="https://nemotron.ideas.nvidia.com/">shape the future of Nemotron</a>.</p>
+<h2 id="licenseterms-of-use">License/Terms of Use</h2>
+<p>GOVERNING TERMS: Your use of this model is governed by the <a href="https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/">NVIDIA Open Model License.</a> Additional Information: <a href="https://www.llama.com/llama3_1/license/">Llama 3.1 Community License Agreement</a>. Built with Llama.</p>
+<p><strong>Model Developer:</strong> NVIDIA</p>
+<p><strong>Model Dates:</strong> Trained between November 2024 and April 2025</p>
+<p><strong>Data Freshness:</strong>  The pretraining data has a cutoff of 2023 per Llama-3.1-405B-Instruct</p>
+<h3 id="use-case">Use Case:</h3>
+<p>Developers designing AI Agent systems, chatbots, RAG systems, and other AI-powered applications. Also suitable for typical instruction-following tasks. </p>
+<h3 id="release-date">Release Date:</h3>
+<p>2025-04-07</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://arxiv.org/abs/2505.00949">[2505.00949] Llama-Nemotron: Efficient Reasoning Models</a></li>
+<li><a href="https://arxiv.org/abs/2502.00203">[2502.00203] Reward-aware Preference Optimization: A Unified Mathematical Framework for Model Alignment</a>  </li>
+<li><a href="https://arxiv.org/abs/2411.19146">[2411.19146]Puzzle: Distillation-Based NAS for Inference-Optimized LLMs</a>  </li>
+<li><a href="https://arxiv.org/abs/2503.18908">[2503.18908]FFN Fusion: Rethinking Sequential Computation in Large Language Models</a></li>
+</ul>
+<h2 id="model-architecture">Model Architecture</h2>
+<p><strong>Architecture Type:</strong> Dense decoder-only Transformer model<br />
+<strong>Network Architecture:</strong> Llama-3.1-405B-Instruct, customized through Neural Architecture Search (NAS)</p>
+<p>**This model was developed based on Llama-3.1-405B-Instruct <br> 
+** This model has 253B model parameters. <br> </p>
+<p>The model is a derivative of Llama 3.1-405B-Instruct, using Neural Architecture Search (NAS). The NAS algorithm results in non-standard and non-repetitive blocks. This includes the following: </p>
+<ul>
+<li>Skip attention: In some blocks, the attention is skipped entirely, or replaced with a single linear layer.  </li>
+<li>Variable FFN: The expansion/compression ratio in the FFN layer is different between blocks.   </li>
+<li>FFN Fusion: When several consecutive attention layers are skipped, which can result in a sequence of multiple FFNs, that sequence of FFNs are fused into a smaller number of wider FFN layers.</li>
+</ul>
+<p>For each block of the reference model, we create multiple variants providing different tradeoffs of quality vs. computational complexity, discussed in more depth below. We then search over the blocks to create a model which meets the required throughput and memory while minimizing the quality degradation. To recover performance, the model initially undergoes knowledge distillation (KD) for 65 billion tokens. This is followed by a continual pretraining (CPT) phase for 88 billion tokens.</p>
+<h2 id="intended-use">Intended use</h2>
+<p>Llama-3.1-Nemotron-Ultra-253B-v1 is a general purpose reasoning and chat model intended to be used in English and coding languages. Other non-English languages (German, French, Italian, Portuguese, Hindi, Spanish, and Thai) are also supported. </p>
+<h2 id="input">Input</h2>
+<ul>
+<li><strong>Input Type:</strong> Text  </li>
+<li><strong>Input Format:</strong> String  </li>
+<li><strong>Input Parameters:</strong> One-Dimensional (1D)  </li>
+<li><strong>Other Properties Related to Input:</strong> Context length up to 131,072 tokens</li>
+</ul>
+<h2 id="output">Output</h2>
+<ul>
+<li><strong>Output Type:</strong> Text  </li>
+<li><strong>Output Format:</strong> String  </li>
+<li><strong>Output Parameters:</strong> One-Dimensional (1D)  </li>
+<li><strong>Other Properties Related to Output:</strong> Context length up to 131,072 tokens</li>
+</ul>
+<h2 id="software-integration">Software Integration</h2>
+<ul>
+<li><strong>Runtime Engine:</strong> Transformers  </li>
+<li><strong>Recommended Hardware Microarchitecture Compatibility:</strong>   </li>
+<li>NVIDIA Hopper  </li>
+<li>NVIDIA Ampere  </li>
+<li><strong>Preferred Operating System(s):</strong> Linux </li>
+</ul>
+<h2 id="model-version">Model Version</h2>
+<p>1.0 (4/7/2025)</p>
+<h2 id="quick-start-and-usage-recommendations">Quick Start and Usage Recommendations:</h2>
+<ol>
+<li>Reasoning mode (ON/OFF) is controlled via the system prompt, which must be set as shown in the example below. All instructions should be contained within the user prompt  </li>
+<li>We recommend setting temperature to `0.6`, and Top P to `0.95` for Reasoning ON mode  </li>
+<li>We recommend using greedy decoding (temperature 0) for Reasoning OFF mode  </li>
+<li>We do not recommend to add additional system prompts besides the control prompt, all instructions should be put into user query  </li>
+<li>We have provided a list of prompts to use for evaluation for each benchmark where a specific template is required</li>
+<li>The model will include <code>&lt;think&gt;&lt;/think&gt;</code> if no reasoning was necessary in Reasoning ON model, this is expected behaviour</li>
+</ol>
+<p>You can try this model out through the preview API, using this link: <a href="https://build.nvidia.com/nvidia/llama-3_1-nemotron-ultra-253b-v1">Llama-3_1-Nemotron-Ultra-253B-v1</a>.</p>
+<h3 id="use-it-with-transformers">Use It with Transformers</h3>
+<p>See the snippet below for usage with <a href="https://huggingface.co/docs/transformers/main/en/index">Hugging Face Transformers</a> library. Reasoning mode (ON/OFF) is controlled via system prompt. Please see the example below</p>
+<p>We recommend using the <em>transformers</em> package with version 4.48.3. <br />
+Example of reasoning on:</p>
+<pre><code class="language-py">import torch
+import transformers
+
+model_id = &quot;nvidia/Llama-3_1-Nemotron-Ultra-253B-v1&quot;
+model_kwargs = {&quot;torch_dtype&quot;: torch.bfloat16, &quot;trust_remote_code&quot;: True, &quot;device_map&quot;: &quot;auto&quot;}
+tokenizer = transformers.AutoTokenizer.from_pretrained(model_id)
+tokenizer.pad_token_id = tokenizer.eos_token_id
+
+pipeline = transformers.pipeline(
+   &quot;text-generation&quot;,
+   model=model_id,
+   tokenizer=tokenizer,
+   max_new_tokens=32768,
+   temperature=0.6,
+   top_p=0.95,
+   **model_kwargs
+)
+
+thinking = &quot;on&quot;
+
+
+print(pipeline([{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: f&quot;detailed thinking {thinking}&quot;},{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Solve x*(sin(x)+2)=0&quot;}]))
+</code></pre>
+<p>Example of reasoning off:</p>
+<pre><code class="language-py">import torch
+import transformers
+
+model_id = &quot;nvidia/Llama-3_1-Nemotron-ULtra-253B-v1&quot;
+model_kwargs = {&quot;torch_dtype&quot;: torch.bfloat16, &quot;trust_remote_code&quot;: True, &quot;device_map&quot;: &quot;auto&quot;}
+tokenizer = transformers.AutoTokenizer.from_pretrained(model_id)
+tokenizer.pad_token_id = tokenizer.eos_token_id
+
+pipeline = transformers.pipeline(
+   &quot;text-generation&quot;,
+   model=model_id,
+   tokenizer=tokenizer,
+   max_new_tokens=32768,
+   do_sample=False,
+   **model_kwargs
+)
+
+thinking = &quot;off&quot;
+
+
+print(pipeline([{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: f&quot;detailed thinking {thinking}&quot;},{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Solve x*(sin(x)+2)=0&quot;}]))
+</code></pre>
+<h3 id="use-it-with-vllm">Use It with vLLM</h3>
+<pre><code>pip install vllm==0.8.3
+</code></pre>
+<p>An example on how to serve with vLLM:</p>
+<pre><code>python3 -m vllm.entrypoints.openai.api_server \
+  --model &quot;nvidia/Llama-3_1-Nemotron-Ultra-253B-v1&quot; \
+  --trust-remote-code \
+  --seed=1 \
+  --host=&quot;0.0.0.0&quot; \
+  --port=5000 \
+  --served-model-name &quot;nvidia/Llama-3_1-Nemotron-Ultra-253B-v1&quot; \
+  --tensor-parallel-size=8 \
+  --max-model-len=32768 \
+  --gpu-memory-utilization 0.95 \
+  --enforce-eager
+</code></pre>
+<h2 id="inference">Inference:</h2>
+<p><strong>Engine:</strong></p>
+<ul>
+<li>Transformers</li>
+</ul>
+<p><strong>Test Hardware:</strong><br />
+- BF16: <br />
+  - 8x NVIDIA H100-80GB <br />
+  - 4x NVIDIA B100<br />
+- FP 8<br />
+  - 4x NVIDIA H100-80GB  </p>
+<h2 id="training-and-evaluation-datasets">Training and Evaluation Datasets</h2>
+<h2 id="training-datasets">Training Datasets</h2>
+<p>A large variety of training data was used for the knowledge distillation phase before post-training pipeline, 3 of which included: FineWeb, Buzz-V1.2, and Dolma.</p>
+<p>The data for the multi-stage post-training phases is a compilation of SFT and RL data that supports improvements of math, code, general reasoning, and instruction following capabilities of the original Llama instruct model.</p>
+<p>Prompts have been sourced from either public and open corpus or synthetically generated. Responses were synthetically generated by a variety of models, with some prompts containing responses for both reasoning on and off modes, to train the model to distinguish between two modes. This model was improved with Qwen.</p>
+<p>We have released our <a href="https://huggingface.co/datasets/nvidia/Llama-Nemotron-Post-Training-Dataset">Llama-Nemotron-Post-Training-Dataset</a> to promote openness and transparency in model development and improvement.</p>
+<p><strong>Data Collection for Training Datasets:</strong></p>
+<ul>
+<li>Hybrid: Automated, Human, Synthetic</li>
+</ul>
+<p><strong>Data Labeling for Training Datasets:</strong></p>
+<ul>
+<li>Hybrid: Automated, Human, Synthetic</li>
+</ul>
+<h2 id="evaluation-datasets">Evaluation Datasets</h2>
+<p>We used the datasets listed in the next section to evaluate Llama-3.1-Nemotron-Ultra-253B-v1. </p>
+<p>Data Collection for Evaluation Datasets:</p>
+<ul>
+<li>Hybrid: Human/Synthetic</li>
+</ul>
+<p>Data Labeling for Evaluation Datasets:</p>
+<ul>
+<li>Hybrid: Human/Synthetic/Automatic</li>
+</ul>
+<h2 id="evaluation-results">Evaluation Results</h2>
+<p><em>These results contain both Reasoning On, and Reasoning Off. We recommend using temperature=`0.6`, top_p=`0.95` for Reasoning On mode, and greedy decoding for Reasoning Off mode. All evaluations are done with 32k sequence length. We run the benchmarks up to 16 times and average the scores to be more accurate.</em>  </p>
+<blockquote>
+<p>NOTE: Where applicable, a Prompt Template will be provided. While completing benchmarks, please ensure that you are parsing for the correct output format as per the provided prompt in order to reproduce the benchmarks seen below. </p>
+</blockquote>
+<h3 id="gpqa">GPQA</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Reasoning Mode</th>
+<th>pass@1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reasoning Off</td>
+<td>56.60</td>
+</tr>
+<tr>
+<td>Reasoning On</td>
+<td>76.01</td>
+</tr>
+</tbody>
+</table></div>
+<p>User Prompt Template: </p>
+<pre><code>&quot;What is the correct answer to this question: {question}\nChoices:\nA. {option_A}\nB. {option_B}\nC. {option_C}\nD. {option_D}\nLet's think step by step, and put the final answer (should be a single letter A, B, C, or D) into a \boxed{}&quot;
+</code></pre>
+<h3 id="aime25">AIME25</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Reasoning Mode</th>
+<th>pass@1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reasoning Off</td>
+<td>16.67</td>
+</tr>
+<tr>
+<td>Reasoning On</td>
+<td>72.50</td>
+</tr>
+</tbody>
+</table></div>
+<p>User Prompt Template: </p>
+<pre><code>&quot;Below is a math question. I want you to reason through the steps and then give a final answer. Your final answer should be in \boxed{}.\nQuestion: {question}&quot;
+</code></pre>
+<h3 id="bfcl-v2-live">BFCL V2 Live</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Reasoning Mode</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reasoning Off</td>
+<td>73.62</td>
+</tr>
+<tr>
+<td>Reasoning On</td>
+<td>74.10</td>
+</tr>
+</tbody>
+</table></div>
+<p>User Prompt Template:</p>
+<pre><code>You are an expert in composing functions. You are given a question and a set of possible functions. 
+Based on the question, you will need to make one or more function/tool calls to achieve the purpose. 
+If none of the function can be used, point it out. If the given question lacks the parameters required by the function,
+also point it out. You should only return the function call in tools call sections.
+
+If you decide to invoke any of the function(s), you MUST put it in the format of &lt;TOOLCALL&gt;[func_name1(params_name1=params_value1, params_name2=params_value2...), func_name2(params)]&lt;/TOOLCALL&gt;
+
+You SHOULD NOT include any other text in the response.
+Here is a list of functions in JSON format that you can invoke.
+
+&lt;AVAILABLE_TOOLS&gt;{functions}&lt;/AVAILABLE_TOOLS&gt;
+
+{user_prompt}
+</code></pre>
+<h3 id="livecodebench-20240801-20250201">LiveCodeBench (20240801-20250201)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Reasoning Mode</th>
+<th>pass@1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reasoning Off</td>
+<td>29.03</td>
+</tr>
+<tr>
+<td>Reasoning On</td>
+<td>66.31</td>
+</tr>
+</tbody>
+</table></div>
+<p>User Prompt Template (without starter code):</p>
+<pre><code>&quot;You will be given a question (problem specification) and will generate a correct Python program that matches the specification and passes all tests.
+
+Question: {prompt}
+
+Read the inputs from stdin solve the problem and write the answer to stdout (do not directly test on the sample inputs). Enclose your code within delimiters as follows. Ensure that when the python program runs, it reads the inputs, runs the algorithm and writes output to STDOUT.
+```python
+# YOUR CODE HERE
+```
+</code></pre>
+<p>User Prompt Template (with starter code):</p>
+<pre><code>You will be given a question (problem specification) and will generate a correct Python program that matches the specification and passes all tests.
+
+Question: {prompt}
+
+You will use the following starter code to write the solution to the problem and enclose your code within delimiters.
+```python
+{starter_code}
+```
+</code></pre>
+<h3 id="ifeval">IFEval</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Reasoning Mode</th>
+<th>Strict:Instruction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reasoning Off</td>
+<td>88.85</td>
+</tr>
+<tr>
+<td>Reasoning On</td>
+<td>89.45</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="math500">MATH500</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Reasoning Mode</th>
+<th>pass@1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reasoning Off</td>
+<td>80.40</td>
+</tr>
+<tr>
+<td>Reasoning On</td>
+<td>97.00</td>
+</tr>
+</tbody>
+</table></div>
+<p>User Prompt Template: </p>
+<pre><code>&quot;Below is a math question. I want you to reason through the steps and then give a final answer. Your final answer should be in \boxed{}.\nQuestion: {question}&quot;
+</code></pre>
+<h3 id="judgebench">JudgeBench</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Reasoning Mode</th>
+<th>Knowledge Score</th>
+<th>Reasoning Score</th>
+<th>Math Score</th>
+<th>Coding Score</th>
+<th>Overall Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reasoning On</td>
+<td>70.13</td>
+<td>81.63</td>
+<td>89.29</td>
+<td>92.86</td>
+<td>79.14</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="ethical-considerations">Ethical Considerations:</h2>
+<p>NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse. </p>
+<p>For more detailed information on ethical considerations for this model, please see the Model Card++ <a href="./EXPLAINABILITY.md">Explainability</a>, <a href="./BIAS.md">Bias</a>, <a href="./SAFETY_and_SECURITY.md">Safety &amp; Security</a>, and <a href="./PRIVACY.md">Privacy</a> Subcards.</p>
+<p>Please report security vulnerabilities or NVIDIA AI Concerns <a href="https://www.nvidia.com/en-us/support/submit-security-vulnerability/">here</a>.</p>
+<h2 id="citation">Citation</h2>
+<pre><code>@misc{bercovich2025llamanemotronefficientreasoningmodels,
+      title={Llama-Nemotron: Efficient Reasoning Models}, 
+      author={Akhiad Bercovich and Itay Levy and Izik Golan and Mohammad Dabbah and Ran El-Yaniv and Omri Puny and Ido Galil and Zach Moshe and Tomer Ronen and Najeeb Nabwani and Ido Shahaf and Oren Tropp and Ehud Karpas and Ran Zilberstein and Jiaqi Zeng and Soumye Singhal and Alexander Bukharin and Yian Zhang and Tugrul Konuk and Gerald Shen and Ameya Sunil Mahabaleshwarkar and Bilal Kartal and Yoshi Suhara and Olivier Delalleau and Zijia Chen and Zhilin Wang and David Mosallanezhad and Adi Renduchintala and Haifeng Qian and Dima Rekesh and Fei Jia and Somshubra Majumdar and Vahid Noroozi and Wasi Uddin Ahmad and Sean Narenthiran and Aleksander Ficek and Mehrzad Samadi and Jocelyn Huang and Siddhartha Jain and Igor Gitman and Ivan Moshkov and Wei Du and Shubham Toshniwal and George Armstrong and Branislav Kisacanin and Matvei Novikov and Daria Gitman and Evelina Bakhturina and Jane Polak Scowcroft and John Kamalu and Dan Su and Kezhi Kong and Markus Kliegl and Rabeeh Karimi and Ying Lin and Sanjeev Satheesh and Jupinder Parmar and Pritam Gundecha and Brandon Norick and Joseph Jennings and Shrimai Prabhumoye and Syeda Nahida Akter and Mostofa Patwary and Abhinav Khattar and Deepak Narayanan and Roger Waleffe and Jimmy Zhang and Bor-Yiing Su and Guyue Huang and Terry Kong and Parth Chadha and Sahil Jain and Christine Harvey and Elad Segal and Jining Huang and Sergey Kashirsky and Robert McQueen and Izzy Putterman and George Lam and Arun Venkatesan and Sherry Wu and Vinh Nguyen and Manoj Kilaru and Andrew Wang and Anna Warno and Abhilash Somasamudramath and Sandip Bhaskar and Maka Dong and Nave Assaf and Shahar Mor and Omer Ullman Argov and Scot Junkin and Oleksandr Romanenko and Pedro Larroy and Monika Katariya and Marco Rovinelli and Viji Balas and Nicholas Edelman and Anahita Bhiwandiwalla and Muthu Subramaniam and Smita Ithape and Karthik Ramamoorthy and Yuting Wu and Suguna Varshini Velury and Omri Almog and Joyjit Daw and Denys Fridman and Erick Galinkin and Michael Evans and Katherine Luna and Leon Derczynski and Nikki Pope and Eileen Long and Seth Schneider and Guillermo Siman and Tomasz Grzegorzek and Pablo Ribalta and Monika Katariya and Joey Conway and Trisha Saar and Ann Guan and Krzysztof Pawelec and Shyamala Prayaga and Oleksii Kuchaiev and Boris Ginsburg and Oluwatobi Olabiyi and Kari Briski and Jonathan Cohen and Bryan Catanzaro and Jonah Alben and Yonatan Geifman and Eric Chung and Chris Alexiuk},
+      year={2025},
+      eprint={2505.00949},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.00949}, 
+}
+</code></pre></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/94b63c16f6b1.html">GLM-5</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/224a0c39bab5.html">GLM-5.3</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/22905c393a9c.html">GLM-5.3-Flash</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d060129a14be.html">GLM-5.2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f90617223e31.html">GLM-4.7</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/0edcfc955787.html">GLM-4.6V</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8cf89aee725c.html">GLM-4.5-Air</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/10aa23c70e91.html">Grok 2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/652b9a513303.html">Grok-1</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4224b4932376.html">Solar Open</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/32e837241209.html">tencent__Hy3__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/e9c250974ef4.html">tencent__Hunyuan-Large__README</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

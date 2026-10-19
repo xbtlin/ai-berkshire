@@ -1,0 +1,389 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>烧钱机器的终局推演 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/智谱/index.html">智谱</a></div><h1>烧钱机器的终局推演</h1><div class="meta"><a href="../companies/智谱/index.html">智谱</a> ｜ 2026-07-06 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%99%BA%E8%B0%B1/%E3%80%8A%E7%9C%8B%E6%87%82%E6%99%BA%E8%B0%B1AI%E3%80%8B/04-%E5%95%86%E4%B8%9A%E5%8C%96%E4%B8%8E%E9%A3%8E%E9%99%A9-%E7%83%A7%E9%92%B1%E6%9C%BA%E5%99%A8%E7%9A%84%E7%BB%88%E5%B1%80%E6%8E%A8%E6%BC%94.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#747">核心矛盾：收入7亿，亏损47亿</a><ul>
+<li><a href="#2025">2025年财务全景</a></li>
+<li><a href="#_1">钱够烧多久？</a></li>
+</ul>
+</li>
+<li><a href="#_2">商业化路径：三条路，走哪条？</a><ul>
+<li><a href="#tob">路径一：ToB本地部署（当前主力）</a></li>
+<li><a href="#maasapi">路径二：MaaS/API平台（增长最快）</a></li>
+<li><a href="#ai-agent">路径三：AI Agent/应用层（未来想象）</a></li>
+</ul>
+</li>
+<li><a href="#560">560倍市销率：市场在给什么定价？</a><ul>
+<li><a href="#_3">反推法：市场假设了什么？</a></li>
+</ul>
+</li>
+<li><a href="#_4">三种情景推演</a><ul>
+<li><a href="#anthropic-25">情景一：中国版Anthropic（概率 ~25%）</a></li>
+<li><a href="#ai-50">情景二：稳定的二线AI公司（概率 ~50%）</a></li>
+<li><a href="#25">情景三：边缘化或被收购（概率 ~25%）</a></li>
+</ul>
+</li>
+<li><a href="#_5">六大核心风险清单</a></li>
+<li><a href="#ai-vs">智谱AI vs 历史类比</a></li>
+<li><a href="#_6">本篇小结：不预设立场的几条事实</a></li>
+<li><a href="#_7">数据来源汇总</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂智谱AI》系列 · 第 04 篇 · 商业化与风险（终章）
+阅读时间约 12 分钟</p>
+</blockquote>
+<hr />
+<h2 id="747">核心矛盾：收入7亿，亏损47亿</h2>
+<p>一家公司每年烧掉47亿元，但市值高达4000亿港元以上——这是信仰，还是有数据支撑的理性预期？要回答这个问题，先得把财务真相摊开看。</p>
+<h3 id="2025">2025年财务全景</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2024年</th>
+<th>2025年</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总收入</td>
+<td>3.12亿元</td>
+<td><strong>7.24亿元</strong></td>
+<td><strong>+131.9%</strong></td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>—</td>
+<td><strong>41.0%</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>研发支出</td>
+<td>—</td>
+<td><strong>31.80亿元</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>净亏损</td>
+<td>—</td>
+<td><strong>47.18亿元</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>收入/研发比</td>
+<td>—</td>
+<td><strong>1:4.4</strong></td>
+<td>收入只够覆盖研发的23%</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：智谱AI 2025年财报）</p>
+<p><strong>收入7.24亿，亏损47.18亿</strong>。每赚1块钱，要亏6.5块。</p>
+<p>这不是一般的"投入期亏损"——这是收入和成本之间存在<strong>巨大的结构性鸿沟</strong>。</p>
+<p>为什么亏这么多？拆开看：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>成本项</th>
+<th>金额（亿元）</th>
+<th>占收入比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>研发支出</td>
+<td><strong>31.80</strong></td>
+<td>439%</td>
+</tr>
+<tr>
+<td>其他经营支出（估）</td>
+<td><strong>~22</strong></td>
+<td>~300%</td>
+</tr>
+<tr>
+<td><strong>总成本</strong></td>
+<td><strong>~54</strong></td>
+<td><strong>~746%</strong></td>
+</tr>
+<tr>
+<td>收入</td>
+<td>7.24</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：智谱2025年财报推算）</p>
+<p><strong>研发支出一项就是收入的4.4倍</strong>。这说明智谱目前本质上是一家"研发机构"，而不是一家"商业公司"——收入只是副产品，主要精力和资金都在训练模型。</p>
+<h3 id="_1">钱够烧多久？</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>资金项</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IPO融资</td>
+<td><strong>52.3亿港元（约48亿元人民币）</strong></td>
+</tr>
+<tr>
+<td>2025年净亏损</td>
+<td><strong>47.18亿元</strong></td>
+</tr>
+<tr>
+<td>粗略计算</td>
+<td>IPO融的钱<strong>约够烧1年</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：招股书、财报）</p>
+<p>当然，这是最粗暴的计算。实际上智谱上市前还有账面现金（IPO前累计融资83亿元，扣除历年亏损后仍有结余），加上收入增长带来的现金流入，实际可用资金可能支撑<strong>1.5-2年</strong>。</p>
+<p>但这也意味着：<strong>如果2027年前智谱无法大幅提升收入或进行新一轮融资，将面临严峻的资金压力。</strong></p>
+<p><strong>反方观点</strong>：智谱背后有大量国资和政策资本，北京市AI产业基金、杭州城投等都是股东。在"国产AI自主可控"的大背景下，智谱不太可能被"断粮"。但国资续命和商业化盈利是两件事——靠国资输血活着和靠自身造血活着，估值逻辑完全不同。</p>
+<hr />
+<h2 id="_2">商业化路径：三条路，走哪条？</h2>
+<p>智谱的商业化有三条可能的路径：</p>
+<h3 id="tob">路径一：ToB本地部署（当前主力）</h3>
+<ul>
+<li>2025年收入<strong>5.34亿</strong>，占比<strong>74%</strong>，增速<strong>+102%</strong></li>
+<li>本质是"项目制交付"——为政企客户部署私有化大模型</li>
+<li>优点：单价高、客户粘性强、符合数据安全需求</li>
+<li>缺点：<strong>不可规模化</strong>。每个客户都需要定制化部署，人力成本高，毛利率受限</li>
+</ul>
+<p>（来源：智谱2025年财报）</p>
+<p>这条路的天花板清晰可见：中国做政企IT项目制交付的公司很多（华为、中兴、科大讯飞等），最终都面临"收入增长但利润不增长"的困境。如果智谱只走这条路，天花板就是<strong>年收入几十亿、微利或微亏</strong>——撑不起4,500亿港元的市值。</p>
+<h3 id="maasapi">路径二：MaaS/API平台（增长最快）</h3>
+<ul>
+<li>2025年收入<strong>1.90亿</strong>，占比<strong>26%</strong>，增速<strong>+293%</strong></li>
+<li>MaaS ARR约<strong>17亿元</strong></li>
+<li>2026年Q1调用量增长<strong>400%</strong>，定价提升<strong>83%</strong></li>
+</ul>
+<p>（来源：智谱财报、证券时报）</p>
+<p>这是智谱最值得期待的方向。API平台的商业模式是"卖Token"——每次API调用按Token数量收费。这个模式的核心优势是<strong>边际成本递减</strong>：模型训好之后，每增加一个API调用的成本极低，毛利率会随规模增大而快速提升。</p>
+<p>Anthropic走的就是这条路——2025年ARR达<strong>10亿美元+</strong>，预计2026年更高。如果智谱能在这条路上跑出来，确实有可能成为"中国版Anthropic"。</p>
+<p><strong>但有一个残酷的现实</strong>：API市场正在经历价格战。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>API定价对比（每百万Token输出价格，人民币）</th>
+<th>智谱GLM-5.1</th>
+<th>DeepSeek-V4</th>
+<th>通义千问Qwen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大致量级</td>
+<td>中等</td>
+<td><strong>极低</strong></td>
+<td>低</td>
+</tr>
+</tbody>
+</table></div>
+<p>DeepSeek的定价策略是"极致低价抢市场"。如果价格战持续，智谱的API毛利率会被严重压缩，"量价齐升"的美好局面可能无法持续。</p>
+<h3 id="ai-agent">路径三：AI Agent/应用层（未来想象）</h3>
+<p>AutoGLM（手机Agent）和CogVideoX（视频生成）代表了智谱向应用层延伸的尝试。如果AI Agent真的成为下一个平台级入口，智谱的先发优势有可能转化为商业价值。</p>
+<p><strong>但这条路最不确定</strong>。AI Agent赛道还在非常早期，没有跑出成熟的商业模式。而且巨头们（苹果、Google、字节）在这个方向上的投入远超智谱。</p>
+<hr />
+<h2 id="560">560倍市销率：市场在给什么定价？</h2>
+<p>智谱当前市值约<strong>4,500亿港元（~4,100亿人民币）</strong>，2025年收入<strong>7.24亿元</strong>，隐含市销率约<strong>560倍</strong>。</p>
+<p>这个数字在传统估值框架下完全不可理解。但AI公司的估值逻辑不是看当前收入，而是<strong>对未来收入增速和终局规模的预期</strong>。</p>
+<h3 id="_3">反推法：市场假设了什么？</h3>
+<p>如果我们反推当前市值隐含的假设：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前市值</td>
+<td>~4,100亿人民币</td>
+</tr>
+<tr>
+<td>假设5年后（2031年）给予20倍市销率</td>
+<td>需要年收入<strong>205亿元</strong></td>
+</tr>
+<tr>
+<td>假设5年后给予10倍市销率</td>
+<td>需要年收入<strong>410亿元</strong></td>
+</tr>
+<tr>
+<td>假设5年后给予30倍市销率（成长期溢价）</td>
+<td>需要年收入<strong>137亿元</strong></td>
+</tr>
+<tr>
+<td>2025年收入基数</td>
+<td>7.24亿元</td>
+</tr>
+<tr>
+<td>从7.24亿到137亿（5年）</td>
+<td>年复合增长率需要<strong>~80%</strong></td>
+</tr>
+<tr>
+<td>从7.24亿到205亿（5年）</td>
+<td>年复合增长率需要<strong>~96%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>即使取最乐观的假设（30倍市销率），智谱也需要在未来5年保持<strong>年均80%的收入增长率</strong>——从7.24亿增长到137亿。</p>
+<p>2025年增速是132%，看起来有希望。但基数效应意味着增速会逐年放缓——从3亿到7亿容易，从70亿到140亿就难得多。</p>
+<p><strong>反方观点</strong>：如果MaaS ARR真的能从17亿元快速增长到百亿级别，加上ToB收入，5年内达到100-200亿收入并非不可能。Anthropic用了不到3年ARR就从0到10亿美元。但Anthropic面对的是全球市场（英语为主），智谱面对的是以中国为主的市场，天花板不同。</p>
+<hr />
+<h2 id="_4">三种情景推演</h2>
+<h3 id="anthropic-25">情景一：中国版Anthropic（概率 ~25%）</h3>
+<p><strong>假设条件</strong>：
+- GLM模型持续保持第一梯队
+- MaaS/API收入保持100%+增速3年
+- 开源生态成为中国开发者的首选
+- AI Agent落地带来新增长曲线</p>
+<p><strong>5年后画像</strong>：
+- 年收入<strong>100-200亿元</strong>
+- MaaS毛利率提升至<strong>60%+</strong>
+- 实现盈亏平衡或微利
+- 合理市值<strong>2,000-4,000亿港元</strong></p>
+<p>这个情景下，当前市值"勉强能接受"——但前提是所有假设都要兑现。</p>
+<h3 id="ai-50">情景二：稳定的二线AI公司（概率 ~50%）</h3>
+<p><strong>假设条件</strong>：
+- 技术保持但不领先，被DeepSeek和大厂逐步追平
+- ToB收入稳定增长，MaaS增速放缓
+- C端继续边缘化
+- 靠政企客户和国资支持维持运营</p>
+<p><strong>5年后画像</strong>：
+- 年收入<strong>30-60亿元</strong>
+- 仍在亏损或微利
+- 市值回落至<strong>500-1,500亿港元</strong></p>
+<p>这是最可能的情景——智谱不会消失，但也不会成为Anthropic。</p>
+<h3 id="25">情景三：边缘化或被收购（概率 ~25%）</h3>
+<p><strong>假设条件</strong>：
+- 大模型代际更迭中掉队（比如DeepSeek或通义千问的下一代模型大幅超越）
+- API价格战导致收入增长停滞
+- 持续巨额亏损，融资困难
+- 核心人才流失（452人持股的锁定期到期后套现离开）</p>
+<p><strong>5年后画像</strong>：
+- 年收入<strong>&lt;30亿元</strong>
+- 被大厂（阿里/腾讯/华为）收购或战略合并
+- 类似商汤科技的轨迹
+- 市值<strong>&lt;500亿港元</strong></p>
+<hr />
+<h2 id="_5">六大核心风险清单</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>风险</th>
+<th>等级</th>
+<th>具体说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>烧钱速度</strong></td>
+<td>极高</td>
+<td>年亏47亿，IPO融资仅够1-2年；如果2027年前无法显著缩窄亏损或融到新钱，将面临资金危机</td>
+</tr>
+<tr>
+<td><strong>大厂碾压</strong></td>
+<td>高</td>
+<td>C端已出局；ToB和API面临阿里（Qwen+阿里云）、华为（盘古+昇腾）的正面竞争</td>
+</tr>
+<tr>
+<td><strong>估值泡沫</strong></td>
+<td>高</td>
+<td>560倍市销率需要5年80%以上年均增速才能撑住；一旦增速不及预期，估值将剧烈调整</td>
+</tr>
+<tr>
+<td><strong>DeepSeek价格战</strong></td>
+<td>高</td>
+<td>API市场价格战可能严重压缩智谱的毛利率，破坏"量价齐升"的叙事</td>
+</tr>
+<tr>
+<td><strong>客户集中度</strong></td>
+<td>中高</td>
+<td>前五大客户占营收超40%（来源：招股书）；大客户流失会造成显著收入波动</td>
+</tr>
+<tr>
+<td><strong>人才流失</strong></td>
+<td>中</td>
+<td>452名持股员工锁定期到期后可能套现离开；清华同质化团队的替补池有限</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="ai-vs">智谱AI vs 历史类比</h2>
+<p>把智谱放到历史坐标系中，有几个可能的类比：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>类比公司</th>
+<th>相似点</th>
+<th>不同点</th>
+<th>结局</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anthropic</strong></td>
+<td>API为核心、技术驱动、不做C端</td>
+<td>Anthropic面向全球英语市场，资金更充裕</td>
+<td>目前估值600亿美元+，尚未上市</td>
+</tr>
+<tr>
+<td><strong>商汤科技</strong></td>
+<td>港股上市、AI概念、学术团队、巨额亏损</td>
+<td>商汤缺乏核心技术护城河</td>
+<td>上市后市值从2,800亿港元跌至~300亿</td>
+</tr>
+<tr>
+<td><strong>科大讯飞</strong></td>
+<td>清华背景、ToB为主、政企客户</td>
+<td>讯飞产品化能力更强，已实现盈利</td>
+<td>市值~1,200亿元，稳定但增长放缓</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>最值得警惕的类比是商汤</strong>——同样是港股AI概念股、学术团队背景、巨额亏损、上市后市值暴涨。商汤的教训是：<strong>当叙事退潮，没有利润支撑的市值会极速萎缩</strong>。</p>
+<p><strong>但智谱和商汤有一个关键不同</strong>：智谱的GLM-5.1确实在全球评测中排名前列，而商汤在核心技术上从未达到全球第一梯队。技术实力的差异可能让智谱避开商汤的轨迹——但这不是必然的。</p>
+<hr />
+<h2 id="_6">本篇小结：不预设立场的几条事实</h2>
+<p><strong>利好的事实</strong>：
+1. GLM-5.1技术水平确实全球第一梯队
+2. MaaS ARR增长60倍，量价齐升
+3. 清华+国资背景提供短期资金安全垫和政策红利
+4. 中国政企AI市场规模巨大，智谱有先发优势
+5. 开源策略正确，开发者生态在快速建立</p>
+<p><strong>不利的事实</strong>：
+1. 年亏47亿，收入仅为研发的23%，距盈利遥远
+2. C端已被大厂甩开27倍，无流量入口，短期无解
+3. API价格战下，"量价齐升"的可持续性存疑
+4. 560倍市销率需要连续5年80%+增速才能合理化
+5. 创始团队清华同质化，商业化基因不足
+6. 与商汤早期轨迹有相似之处</p>
+<p><strong>把这些事实放在一起，你会发现智谱AI是一家典型的"高风险高回报"标的</strong>——技术确实强，但商业化验证远未完成；增长确实快，但亏损缺口同样巨大；叙事确实好，但估值对叙事的依赖程度极高。</p>
+<p>你怎么看这家公司，取决于你对以下问题的回答：
+- 你相信中国大模型赛道能跑出一个Anthropic级别的公司吗？
+- 你认为智谱是那个公司吗？还是DeepSeek更有可能？
+- 你能承受市值从4,500亿港元回撤到1,000亿甚至更低的风险吗？
+- 你相信"清华系+国资背景"在长期竞争中是优势还是包袱？</p>
+<p><strong>这些问题没有标准答案。</strong> 但如果你看完这四篇之后，能更清楚地回答这些问题——这个系列就达到目的了。</p>
+<hr />
+<h2 id="_7">数据来源汇总</h2>
+<p>本系列引用的核心数据来源：
+- 智谱AI招股书（2025年12月）
+- 智谱AI 2025年年度财报
+- 智谱AI业绩发布会（2026年3月）
+- 证券时报、36氪、量子位、虎嗅、品玩等科技媒体报道
+- Artificial Analysis Intelligence Index v4.0
+- SWE-bench官方排行榜
+- Digital Applied中国AI模型Q2 2026报告
+- OpenRouter全球Token消耗数据
+- CNBC、华尔街见闻等财经媒体报道</p>
+<p>所有第三方数据已标注来源；未经证实的推算均标注"估"或"推算"。</p>
+<hr />
+<p><em>本文是《看懂智谱AI》系列第 04 篇（终章）。</em>
+<em>本系列基于公开信息撰写，不构成任何投资建议。AI行业变化极快，文中数据截至2026年5月，请以最新公告为准。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/86d8914f6111.html">智谱（02513.HK）三大报表解析 · 2026年中期</a><div class="meta">2026-09-01 · 研究</div></li><li><a href="../r/3b7460fa6dbd.html">930 倍市销率，与 2027 年 1 月的大考</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/230778d43384.html">收 1 元烧 4 元的生意怎么读</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/70b80cfcae88.html">全球第六的模型，和一份&quot;租来的&quot;定价权</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/da809ec85068.html">半年二十倍的公司，你以为你看懂了智谱，其实没有</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/0612bdf686ec.html">《看懂智谱AI》系列说明（2026-07-14 版）</a><div class="meta">2026-07-14 · 底稿</div></li><li><a href="../r/a612f69dc5e2.html">五强争霸与大厂围猎</a><div class="meta">2026-07-06 · 深度系列</div></li><li><a href="../r/21a36274b78d.html">智谱（Z.ai，02513.HK）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/68025819dc91.html">智谱AI（Zhipu AI）深度研究报告</a><div class="meta">2026-04-10 · 研究</div></li><li><a href="../r/3ca2f60012de.html">GLM大模型的真实水位</a><div class="meta">2026-04-08 · 深度系列</div></li><li><a href="../r/d34b0bbfeac7.html">清华实验室走出的大模型独角兽</a><div class="meta">2026-01-08 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

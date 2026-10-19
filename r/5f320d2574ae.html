@@ -1,0 +1,1001 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MiniMax（00100.HK）研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/MiniMax/index.html">MiniMax</a></div><h1>MiniMax（00100.HK）研究报告</h1><div class="meta"><a href="../companies/MiniMax/index.html">MiniMax</a> ｜ 2026-10-16 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/MINIMAX/MiniMax%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261016.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、先看它现在究竟是一门什么生意</a><ul>
+<li><a href="#_2">财务底座：需求已经形成，利润机制尚未形成</a></li>
+<li><a href="#_3">收入重心已经改变</a></li>
+</ul>
+</li>
+<li><a href="#_4">二、创始人与团队：为什么这个组织有机会</a><ul>
+<li><a href="#_5">闫俊杰：研究判断与工程经验是优势，权力集中也是风险</a></li>
+<li><a href="#_6">组织已不只是创始人一个人</a></li>
+<li><a href="#_7">控制权与资本配置</a></li>
+</ul>
+</li>
+<li><a href="#_8">三、技术选型：有实质能力，但不能把架构名称当护城河</a><ul>
+<li><a href="#_9">这条路线的共同目标是降低有效智能的成本</a></li>
+<li><a href="#moe">MoE、长上下文和稀疏注意力分别解决什么</a></li>
+<li><a href="#_10">真正可能难复制的是训练与工程系统</a></li>
+<li><a href="#_11">视频、语音、音乐：组合优势成立，但协同不能预设</a></li>
+<li><a href="#_12">开放权重有商业边界</a></li>
+<li><a href="#_13">技术水平的判断边界</a></li>
+</ul>
+</li>
+<li><a href="#_14">四、赛道与差异化：市场很大，利润未必留在模型公司</a><ul>
+<li><a href="#_15">四条业务线，要按四种经济机制判断</a></li>
+<li><a href="#_16">与竞争对手相比，它差异化在哪里</a></li>
+<li><a href="#_17">哪一段最容易留下利润</a></li>
+</ul>
+</li>
+<li><a href="#_18">五、今天的护城河是什么</a></li>
+<li><a href="#2029">六、三年后：2029年的护城河应当长成什么样</a></li>
+<li><a href="#_19">七、五年与十年后的公司形态</a><ul>
+<li><a href="#2031">2031年：更可能成为有选择的专业平台</a></li>
+<li><a href="#2036">2036年：真正成功时，模型成为内部发动机</a></li>
+</ul>
+</li>
+<li><a href="#90">八、十年后的利润：主情景约90亿元人民币，但有明确前提</a><ul>
+<li><a href="#_20">先从谁付钱推收入</a></li>
+<li><a href="#_21">再从毛利扣完整费用</a></li>
+<li><a href="#_22">利润不是自由现金流</a></li>
+<li><a href="#_23">四种结局放在同一张表</a></li>
+<li><a href="#_24">最关键的敏感性不是小数点增长率</a></li>
+</ul>
+</li>
+<li><a href="#_25">九、走到十年利润之前，先要穿过资金需求</a><ul>
+<li><a href="#_26">主路径显式保留前期亏损</a></li>
+</ul>
+</li>
+<li><a href="#_27">十、用一级市场方法看价格：主利润成立，也未必值得按任何价格买</a></li>
+<li><a href="#_28">十一、最强反方与必须面对的风险</a></li>
+<li><a href="#_29">十二、最终判断与下一步尽调</a></li>
+<li><a href="#_30">研究偏见、来源与核验边界</a><ul>
+<li><a href="#_31">主要来源索引</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><p>创始团队、技术路线、护城河与2036年利润推演</p>
+<p><strong>研究截止：2026年10月16日，北京时间。</strong> 最新财务期为2026年上半年；使用9月30日披露的中报及截止日可核实的后续公告。参考股价为10月15日收盘179.50港元；按9月底已发行352,480,183股计算，总市值632.70亿港元。美元换算采用模型汇率7.8港元/美元，对应约81.12亿美元；TTM市销率约49.1倍，亏损阶段不使用市盈率。价格经腾讯行情、StockAnalysis及Investing核对，股本经港交所月报核对。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1002/2026100200077.pdf">行情与股本</a></p>
+<p><strong>核心判断：MiniMax值得下注的资产，是持续把模型研究变成低成本可用产品的组织能力；十年利润则取决于它能否进一步掌握客户工作流、合法内容资产和交付责任。今天已有差异化，长期经济护城河尚未被充分证明。</strong></p>
+<p>MiniMax于2026年1月9日在港交所上市。本报告采用一级市场的技术与组织尽调视角，但按上市公司披露核对经营与资本结构，不把它继续当作未上市公司。全文“事实”指可追溯的公开披露，“公司口径”指管理层或产品团队主张，“判断”指研究推论，“假设”指用于推演的参数。历史财务的高置信度，不等于十年预测的高确定性。</p>
+<hr />
+<h2 id="_1">一、先看它现在究竟是一门什么生意</h2>
+<p>MiniMax向开发者、企业和个人出售模型推理，以及用这些模型完成编程、创作、语音和互动任务的产品。客户会反复付费，是因为新的工作不断出现；公司能否赚钱，则取决于完成这些工作的收费，能否同时覆盖推理、研发、获客和资本投入。</p>
+<p><strong>它今天更接近“模型驱动的全球AI服务商”，还没有证明自己已经成为拥有稳定收费权的工作平台。</strong></p>
+<h3 id="_2">财务底座：需求已经形成，利润机制尚未形成</h3>
+<p>单位：百万美元。2023—2025为年度，最后两列为半年，不能直接作环比。中期财务未经年度审计，已附独立审阅报告。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2025H1</th>
+<th style="text-align: right;">2026H1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">3.460</td>
+<td style="text-align: right;">30.523</td>
+<td style="text-align: right;">79.038</td>
+<td style="text-align: right;">30.429</td>
+<td style="text-align: right;">116.573</td>
+</tr>
+<tr>
+<td>毛利</td>
+<td style="text-align: right;">-0.854</td>
+<td style="text-align: right;">3.738</td>
+<td style="text-align: right;">20.079</td>
+<td style="text-align: right;">3.685</td>
+<td style="text-align: right;">20.813</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">-24.7%</td>
+<td style="text-align: right;">12.2%</td>
+<td style="text-align: right;">25.4%</td>
+<td style="text-align: right;">12.1%</td>
+<td style="text-align: right;">17.9%</td>
+</tr>
+<tr>
+<td>研发费用</td>
+<td style="text-align: right;">70.002</td>
+<td style="text-align: right;">188.979</td>
+<td style="text-align: right;">252.771</td>
+<td style="text-align: right;">124.333</td>
+<td style="text-align: right;">296.870</td>
+</tr>
+<tr>
+<td>IFRS净利润</td>
+<td style="text-align: right;">-269.246</td>
+<td style="text-align: right;">-465.238</td>
+<td style="text-align: right;">-1,871.617</td>
+<td style="text-align: right;">-402.188</td>
+<td style="text-align: right;">-357.997</td>
+</tr>
+<tr>
+<td>调整后净利润</td>
+<td style="text-align: right;">-89.074</td>
+<td style="text-align: right;">-244.243</td>
+<td style="text-align: right;">-250.856</td>
+<td style="text-align: right;">-138.735</td>
+<td style="text-align: right;">-293.031</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">-64.455</td>
+<td style="text-align: right;">-258.483</td>
+<td style="text-align: right;">-279.641</td>
+<td style="text-align: right;">-168.538</td>
+<td style="text-align: right;">-318.106</td>
+</tr>
+</tbody>
+</table></div>
+<p>历史数值来自招股书、年报与中报。年度收入、毛利、研发及现金流与StockAnalysis核对；半年收入、业务拆分和净亏损与路透核对；部分半年数据只能借第三方TTM反推核对。发行人官网与港交所刊载的同一份文件不是两个独立来源。完整口径与数据缺口见<a href="../r/c1e706739223.html">核验记录</a>。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf">年度披露</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf">中期披露</a>、<a href="https://stockanalysis.com/quote/hkg/0100/financials/">第三方财务</a></p>
+<p>几个比增长率更重要的结论：</p>
+<ol>
+<li>2026H1收入同比增长283.1%，但毛利只有2,081.3万美元，相当于研发费用的7.0%。公司尚不能用当前毛利反哺前沿研发。</li>
+<li>毛利率较上年同期改善，但低于2025全年。产品结构、负载和投入发生变化，既不能用全年与半年差异直接断言恶化，也不能只凭同比改善推断高毛利时代已经到来。</li>
+<li>IFRS亏损收窄不等于经营亏损改善。优先股等金融负债公允价值损失下降影响很大；调整后亏损反而从1.387亿美元扩大至2.930亿美元。股份支付被调整剔除，也仍是股东的经济成本。</li>
+<li>收入、ARR与调用量不能混用。TTM确认收入为1.65182亿美元；单月运行率即使增长很快，也不是已经实现的全年收入，更不是合同锁定的未来收入。</li>
+</ol>
+<h3 id="_3">收入重心已经改变</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>2026H1业务</th>
+<th style="text-align: right;">收入，百万美元</th>
+<th style="text-align: right;">占比</th>
+<th>关键口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开放平台及其他基于AI的企业服务</td>
+<td style="text-align: right;">73.929</td>
+<td style="text-align: right;">63.4%</td>
+<td>包含个人开发者、API与Token Plan，不全是大企业合同</td>
+</tr>
+<tr>
+<td>AI原生产品</td>
+<td style="text-align: right;">42.644</td>
+<td style="text-align: right;">36.6%</td>
+<td>多种应用合计，不能当作海螺单项收入</td>
+</tr>
+<tr>
+<td>合计</td>
+<td style="text-align: right;">116.573</td>
+<td style="text-align: right;">100.0%</td>
+<td>外部确认收入</td>
+</tr>
+</tbody>
+</table></div>
+<p>境外收入占60.8%。全球化是已经发生的商业化能力，但境外收入不能等同于美国收入或欧美大企业收入。公司称销售费用下降与自然增长策略有关；尚无同期分产品获客成本、客户队列、净收入留存率或分部毛利充分验证其质量。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf">中报业务与收入口径</a></p>
+<p><strong>最容易犯的错误，是把开放平台的高增长自动当成企业软件的高留存。</strong> 如果流量主要来自价格敏感的开发者、订阅套餐或模型路由平台，需求可以增长得很快，也可以迁移得很快。</p>
+<hr />
+<h2 id="_4">二、创始人与团队：为什么这个组织有机会</h2>
+<h3 id="_5">闫俊杰：研究判断与工程经验是优势，权力集中也是风险</h3>
+<p>闫俊杰是创始人、董事长、CEO兼CTO。他有数学与人工智能研究背景，获中科院自动化所博士学位，曾在清华从事博士后研究，并在商汤工作逾六年、担任高级技术管理职务。履历能够支持“懂研究、懂规模化技术组织”的判断，不能单凭履历证明商业资本配置能力。<a href="https://ir.minimax.io/corporate-information/management">官方管理层资料</a></p>
+<p>对一级市场投资人，真正有价值的不是创始人是否总能提前说对，而是遇到证据时是否能改判断。闫俊杰在2025年《晚点聊》访谈中反思过追求用户增长的逻辑，并讨论模型、基础设施、工程和人才协同。结合后续从长上下文到编程Agent、从单个产品到模型与应用联动的选择，我认为他的优势是持续学习和纠错。访谈仍是本人陈述，必须用后续资源配置与结果验证。<a href="https://podcast.latepost.com/99">本人访谈</a></p>
+<p>我的评估是：<strong>技术方向判断与组织学习能力偏强，商业回报和资本纪律仍在考试中。</strong> 最重要的反面是，CEO、CTO、董事长集于一人，技术判断、预算与治理监督高度相连。一个善于纠错的创始人可能长期创造价值，一个不愿纠错的强控制创始人也可能长期消耗资本。</p>
+<h3 id="_6">组织已不只是创始人一个人</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>人物</th>
+<th>已披露职责与背景</th>
+<th>我看重什么</th>
+<th>还要验证什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>贠烨祎</td>
+<td>联合创始人、总裁；工程教育背景及商汤战略、投资、创新业务经历</td>
+<td>技术与产品商业化、融资及组织之间的连接</td>
+<td>全球产品经营能力能否转成稳定毛利与现金</td>
+</tr>
+<tr>
+<td>赵鹏宇</td>
+<td>语言模型研究与工程负责人；北大计算机背景，曾在Hulu，2023年加入</td>
+<td>有新加入者成长为核心负责人的机制</td>
+<td>第二梯队和完整训练项目能否独立运行</td>
+</tr>
+<tr>
+<td>周彧聪</td>
+<td>视觉模型研究与工程负责人；北航背景，曾在商汤、华为，2022年加入</td>
+<td>视觉路线有明确责任人，多模态并非仅靠采购拼装</td>
+<td>视频质量、交付可靠性与单位经济能否一起提升</td>
+</tr>
+</tbody>
+</table></div>
+<p>贠烨祎在2026年3月已由COO转任总裁，官网部分页面仍保留旧职务，本报告采信更新后的年报。2026年8月独董发生变更，李子青接替朱华星；独董资源不能算成新增全职研发产能。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf">年报管理层章节</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0821/2026082101455.pdf">董事变更公告</a></p>
+<p>2025年9月全职385人，其中研发284人；2025年末415人，2026年6月底568人。研发约74%、平均年龄低于30岁及CEO以下不超过三层，是招股书对应时点的历史口径，不能直接套到最新人员规模。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf">招股书</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf">年报</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf">中报</a></p>
+<p>这支团队的优势可能来自高密度协作：懂训练的人能够与推理工程、产品和商业化负责人快速讨论同一个问题。但当公司同时运行语言、视频、语音、消费应用和企业平台时，扁平化也可能成为创始人的决策瓶颈。年轻、学历高、层级少都不是护城河的充分条件。</p>
+<p><strong>团队护城河的检验，是关键人员离开或技术路线变化后，组织能否继续交付。</strong> 需要看到可复现的实验记录、稳定的数据与评测系统、训练故障处理、独立负责人和预算约束。公开资料不足以确认核心人才留存率，也不足以确认每条模型线的投入产出；本报告不编造这两项指标。</p>
+<h3 id="_7">控制权与资本配置</h3>
+<p>截至中报最新可行日2026年9月21日，闫俊杰经济权益约22.65%、普通事项表决权约69.13%；B类股有加权表决权，特定保留事项例外。这有助于保持长期研究方向，也削弱少数股东对错误战略的纠偏能力。不能把这个披露时点的比例冒充9月底增股后的精确比例。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf">中报治理章节</a></p>
+<p>9月29日授出约209.22万份股份奖励，主要为长期归属的员工奖励，本次不设业绩目标。它有利于人才稳定，但股东要用未来经营结果判断激励是否值得。模型不能永远剔除股份支付，再把调整后利润全部视为可分配收益。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092901775.pdf">股权激励公告</a></p>
+<p>一级市场投资人应该持续追问的不是“还能融多少钱”，而是：<strong>每增加一美元研发投入，是在创造客户愿意付费的新能力，还是仅仅在购买继续留在牌桌上的资格？</strong></p>
+<hr />
+<h2 id="_8">三、技术选型：有实质能力，但不能把架构名称当护城河</h2>
+<h3 id="_9">这条路线的共同目标是降低有效智能的成本</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>一手资料支持的选择</th>
+<th>对投资判断的意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MiniMax-01，2025年1月</td>
+<td>Lightning Attention与MoE，456B总参数、45.9B激活；长上下文</td>
+<td>愿意为长任务承担架构和工程适配成本</td>
+</tr>
+<tr>
+<td>M1，2025年6月</td>
+<td>混合注意力、强化学习与长思考</td>
+<td>从“装得下更多内容”走向“更好地推理”</td>
+</tr>
+<tr>
+<td>M2，2025年10月</td>
+<td>230B总参数、10B激活，聚焦编程和Agent</td>
+<td>关注高频生产任务与实际部署效率</td>
+</tr>
+<tr>
+<td>M2.5/M2.7，2026年</td>
+<td>扩大Agent强化学习系统，内部研究工作流应用</td>
+<td>训练环境、评测和反馈成为重要竞争点</td>
+</tr>
+<tr>
+<td>M3，2026年6月</td>
+<td>428B总参数、约23B激活，MSA，原生图文视频理解、1M上下文</td>
+<td>重新扩大能力，但保持稀疏计算思路</td>
+</tr>
+<tr>
+<td>截止日产品状态</td>
+<td>M3.1-Flash-Preview已出现在官方接口说明，仅M Plan及MiniMax Code可用</td>
+<td>是已可见的预览产品，不能写成全面开放正式版</td>
+</tr>
+</tbody>
+</table></div>
+<p>技术事实分别见<a href="https://arxiv.org/abs/2501.08313">01论文</a>、<a href="https://github.com/MiniMax-AI/MiniMax-M1">M1仓库</a>、<a href="https://github.com/MiniMax-AI/MiniMax-M2">M2仓库</a>、<a href="https://huggingface.co/MiniMaxAI/MiniMax-M3">M3模型卡</a>、<a href="https://platform.minimax.io/docs/api-reference/api-overview">官方接口状态</a>。参数是模型规模，不能直接换算GPU账单；模型输入多模态也不等于同一个模型统一生成所有模态。</p>
+<p>这条路线最值得肯定的地方，是团队没有把自己锁死在某一种注意力算法上。长期优势若存在，应该是选问题、做实验、优化系统的能力，而不是坚持早期技术叙事。</p>
+<h3 id="moe">MoE、长上下文和稀疏注意力分别解决什么</h3>
+<p>MoE让每次计算只激活部分专家，降低运算量；但所有权重仍需储存、调度和通信。小激活参数不等于小显存、不等于低集群成本，也不等于任意低并发场景都更便宜。</p>
+<p>长上下文使代码库、资料和多轮任务更容易装进模型，但没有消除“忘记目标”“遗漏关键证据”或工具执行错误。对企业来说，能放进一百万token的意义，取决于最后能否可靠完成任务。</p>
+<p>MSA用轻量索引选出重要KV块，再对选中的内容执行注意力计算。它的价值在于减少长序列的无效计算，同时保留可实现的注意力机制。论文在109B实验模型相关配置、1M上下文、H800硬件上，相对同头配置dense GQA的attention实现，报告prefill与decode分别加速14.2倍、7.6倍。这是长上下文局部实现的结果；实验模型、量产M3和发布稿比较基线并不完全相同，不能把这些数字拼成“公司推理成本下降十几倍”。<a href="https://arxiv.org/html/2606.13392v2">MSA论文</a></p>
+<p><strong>算法局部加速必须经过四道转换，才成为股东利润：局部计算提速→整套服务降本→客户任务全成本下降→公司保留部分收益。</strong> 显存、通信、空闲容量、失败重试、外部工具和人工复核都可能吃掉理论优势；竞争性降价则可能把收益继续转给客户。</p>
+<p>MSA内核已按MIT许可证公开。公开成果有助于生态采用、工程验证和人才吸引，但无法作为独占十年的技术资产。<a href="https://github.com/MiniMax-AI/MSA">MSA代码与许可</a></p>
+<h3 id="_10">真正可能难复制的是训练与工程系统</h3>
+<p>Forge描述了Agent环境、轨迹、调度、前缀复用和时间奖励等训练机制。M2.7材料也讨论了模型参与内部研发。它们表明MiniMax在建设一种“更便宜地产生有效实验与反馈”的系统；训练规模和提效仍主要是公司口径，不能据此确认全部训练成本或自主研发程度。<a href="https://www.minimax.io/blog/forge-scalable-agent-rl-en-1779896141">Forge</a>、<a href="https://www.minimax.io/blog/minimax-m27">M2.7技术说明</a></p>
+<p>我的技术判断是，未来竞争会越来越依赖三项隐性知识：知道真实任务在哪里失败；知道哪些反馈值得训练；知道一次改动是否提高了真实交付而没有损坏其他能力。这些知识可以积累，却需要数据使用权、结果标签和严格评测。大量提示词本身通常不是稀缺资产。</p>
+<h3 id="_11">视频、语音、音乐：组合优势成立，但协同不能预设</h3>
+<p>H3支持多种参考输入及音视频生成。云端完整服务与开放权重不是同一个可复现对象：官方模型卡披露，Base本地原生输出768p，Context-IR与2K再生成模块尚未全部开放，初始版本也不包含完整稀疏注意力实现。因此不能说下载权重就能完整复现云端2K效果与成本。<a href="https://huggingface.co/MiniMaxAI/MiniMax-H3">H3发布与模型卡</a></p>
+<p>Speech 2.8沿着音色、情绪、口语表现和多语言方向发展，适合配音、角色和交互；真正价值需用低延迟、一致性与授权条件验证。Music 3.0也复用了外部基础组件，说明公司并非每一层都从零自研。自8月20日起，付费音乐与歌词API不再向新用户开放，既有付费用户可继续；免费音乐API停用，并引导至Audio或开放权重。音乐业务并未因此全部停止，但不能继续把每条API产品线都按全面扩张建模。<a href="https://www.minimax.io/news/minimax-speech-28">语音发布</a>、<a href="https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model">音乐技术稿</a>、<a href="https://platform.minimax.io/docs/api-reference/api-overview">接口现状</a></p>
+<p>多模态协同有三种可能：共用训练基础设施；语言能力改善视频控制和编辑；一个客户同时购买代码、设计、音频和视频。前两项能降低研发或交付成本，后一项能降低获客成本。若这些收益不够抵消多线研发开支，“全栈”也可能成为资本负担。</p>
+<h3 id="_12">开放权重有商业边界</h3>
+<p>M3、H3采用有条件的社区许可证，并非无条件MIT开放。相关商业产品或服务的年收入超过2,000万美元，需要事先取得单独书面授权；M3低于该门槛也要求一次邮件通知及相应标识。H3另有地域条件：社区许可默认排除美国、英国、欧盟及韩国，允许申请单独授权；规则也约束基于该许可的第三方托管服务。<a href="https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE">M3许可</a>、<a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE">H3许可</a></p>
+<p><strong>这不能被解释为MiniMax官方API禁止向这些地区提供服务。</strong> 官方FAQ区分受控API与权重部署，官方API适用独立服务安排。投资上更相关的问题是：额外许可是否提高采购摩擦，保留的授权权利又能否带来收入。<a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/QA-about-License.md">H3官方FAQ</a></p>
+<h3 id="_13">技术水平的判断边界</h3>
+<p>独立测试可以支持“有竞争力”，不能支持“永远领先”。Artificial Analysis六月原始评测显示M3相较前代整体提高，也指出不同任务有进退；同行研究团队LHTB的任务测试支持其成本效率，但平均奖励并不等于完整任务成功率，同行测试也有自己的利益与方法边界。<a href="https://artificialanalysis.ai/articles/minimax-m3/">独立模型评测</a>、<a href="https://zli12321.github.io/LHTB/index.html">LHTB原始研究</a></p>
+<p>本研究没有自行租用算力复测全部模型，因此不对截止日全球排行榜作无条件排名。对投资真正关键的测试，应是固定客户任务篮子的验收率、总耗时、人工接管、失败重试和每个合格结果的全部成本。</p>
+<hr />
+<h2 id="_14">四、赛道与差异化：市场很大，利润未必留在模型公司</h2>
+<h3 id="_15">四条业务线，要按四种经济机制判断</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>客户付费原因</th>
+<th>最可能积累的资产</th>
+<th>最主要风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API、Code与开发者订阅</td>
+<td>编程、分析、执行任务的质量与成本</td>
+<td>生产部署、可靠性、评测、服务信任</td>
+<td>API兼容、路由比价、云商议价</td>
+</tr>
+<tr>
+<td>Hailuo/H3及创作服务</td>
+<td>更快获得可用镜头和成片</td>
+<td>项目资产、角色一致性、编辑流程、授权</td>
+<td>质量领先短暂、多平台订阅、版权分成</td>
+</tr>
+<tr>
+<td>语音与音频</td>
+<td>多语言、稳定音色和实时交互</td>
+<td>品牌声音、低延迟集成、合法声音资产</td>
+<td>基础合成同质化、声音权利和渠道成本</td>
+</tr>
+<tr>
+<td>Talkie/星野</td>
+<td>陪伴、角色与持续互动</td>
+<td>用户记忆、创作者供给、社区关系</td>
+<td>长时使用低变现、内容治理、用户流失</td>
+</tr>
+</tbody>
+</table></div>
+<p>公示API价格可以说明市场切入策略，却不是实际实现单价。截止日M3标准短档输入/输出报价分别为每百万token 0.30/1.20美元，H3报价则按时长与规格区分。决定客户选择的应是成功任务成本；决定公司价值的则是扣推理、支持和长期研发后还剩多少。<a href="https://platform.minimax.io/docs/pricing/overview">官方价格</a></p>
+<p>Talkie尤须避免把活跃度直接当成赚钱能力。招股书2025年前三季Talkie/星野平均MAU约2,005万，期间付费用户约139万，每付费用户期间订阅和充值收入约5美元；这是期间口径，不是月ARPPU，期间付费人数也不能直接除以平均MAU称月付费率。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf">历史用户定义</a></p>
+<h3 id="_16">与竞争对手相比，它差异化在哪里</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>对手类型</th>
+<th>对方更有利的位置</th>
+<th>MiniMax可以争取的位置</th>
+<th>不能自欺的地方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI、Anthropic</td>
+<td>用户入口、企业客户、Agent产品与组织集成</td>
+<td>成本敏感任务、开放部署、多模态细分</td>
+<td>兼容接口有助进入生态，也可能让客户关系属于别人</td>
+</tr>
+<tr>
+<td>Google</td>
+<td>办公文档、身份、协作和云基础设施</td>
+<td>独立、跨平台、特殊创作与交付体验</td>
+<td>客户数据和工作入口原本就在其产品中</td>
+</tr>
+<tr>
+<td>阿里/Qwen、字节</td>
+<td>云资源、销售渠道、应用分发与集团预算</td>
+<td>全球独立供应商、不同平台之间的中立服务</td>
+<td>战略投资不等于不竞争；模型可成为大厂其他生意的获客工具</td>
+</tr>
+<tr>
+<td>DeepSeek及开放生态</td>
+<td>持续提高低价或可自部署的能力基线</td>
+<td>同任务可靠性、低延迟、服务和工作流</td>
+<td>必须持续证明自研与托管值得付费</td>
+</tr>
+<tr>
+<td>快手可灵及视频平台</td>
+<td>内容、广告、电商反馈与可持续现金来源</td>
+<td>独立创作工具、跨媒介、国际客户</td>
+<td>多模态和视频控制已是共同研发方向</td>
+</tr>
+</tbody>
+</table></div>
+<p>以上比较依据竞争者官方产品、开放项目及业务披露，用于判断价值链位置，不表示历史发布的某个版本就是截止日最新版本，也不据不一致的分部口径计算市场份额。<a href="../r/c1e706739223.html">竞争资料组</a></p>
+<p>MiniMax的差异化是一个组合：<strong>独立模型公司、多模态研发、全球产品化、推理工程、自有应用与兼容接口同时存在。</strong> 单项都不是独有，组合是否构成优势取决于协同能否被经营结果证实。</p>
+<h3 id="_17">哪一段最容易留下利润</h3>
+<p>上游算力掌握稀缺产能；下游入口掌握客户、权限和预算；IP方掌握内容权利。MiniMax处于中间，必须防止成为“承担研发、向上付算力、向下被比价”的供应商。</p>
+<p>我更看好它争取专业创作和可验证Agent任务，因为这两类业务可以从卖一次生成，走向卖持续工作成果。单纯卖token可以形成大收入，但如果模型始终容易替换，收入规模与股东回报可能分离。</p>
+<p>不宜把全球工资、软件支出、广告投放和娱乐消费相加当作TAM。视频生成首先竞争的是制作与素材预算，不是广告主全部投放；Agent能收费的范围取决于可可靠交付的任务及客户愿意分享的节约。API与应用还可能对应同一笔终端支出，不能重复计算。</p>
+<hr />
+<h2 id="_18">五、今天的护城河是什么</h2>
+<p>评分为研究判断，五分最强，不是统计测量；这里只给证据支持的强度。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>来源</th>
+<th>今日强度</th>
+<th>已有证据</th>
+<th>尚未证明</th>
+<th>持久性判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>研究与工程组织</td>
+<td>四分</td>
+<td>连续多代模型、跨模态交付、架构调整</td>
+<td>核心人员变化后仍稳定高效</td>
+<td>当前最可信，但需持续投入</td>
+</tr>
+<tr>
+<td>推理成本优势</td>
+<td>三分</td>
+<td>稀疏计算、工程实现、低报价</td>
+<td>同质量全成本持续领先且利润留存</td>
+<td>有潜力，公开算法和竞争会侵蚀</td>
+</tr>
+<tr>
+<td>全球产品与开发者触达</td>
+<td>三分</td>
+<td>海外收入、自有产品、开放接口</td>
+<td>直接客户控制力和稳定自然留存</td>
+<td>优于从零起步，弱于入口型巨头</td>
+</tr>
+<tr>
+<td>客户转换成本</td>
+<td>二分</td>
+<td>部署、评测与项目可能沉淀</td>
+<td>企业NRR、迁移成本、提价后留存</td>
+<td>API层较弱，工作流层可增强</td>
+</tr>
+<tr>
+<td>独占数据与网络效应</td>
+<td>二分</td>
+<td>有真实使用与创作者互动</td>
+<td>合法独占反馈、跨用户增益、训练消融</td>
+<td>潜在资产，尚不能按宽护城河估值</td>
+</tr>
+<tr>
+<td>品牌与定价权</td>
+<td>二分</td>
+<td>开发者与创作领域已有识别度</td>
+<td>持续溢价、竞争降价下仍留存</td>
+<td>技术品牌存在，经济租金未证明</td>
+</tr>
+<tr>
+<td>版权与合规资产</td>
+<td>一分</td>
+<td>开始建设授权与权利管理合作</td>
+<td>有经济意义的独家权利与收入</td>
+<td>仍是建设期，也带来成本</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>总体判断：今天是窄至中等的能力壁垒，尚未形成已验证的宽经济护城河。</strong> 技术强度和商业护城河不是同一条评分轴。</p>
+<p>三个常被误判的机制需要分开：</p>
+<ul>
+<li>规模经济：更多调用提高利用率、摊薄成本；如果降价更快，股东未必受益。</li>
+<li>数据反馈：更多使用带来改进线索；如果没有合法使用权和可靠结果标签，就未必能提升模型。</li>
+<li>网络效应：一个用户或创作者加入，会提高其他人的价值；纯API调用增长通常不满足这个定义。</li>
+</ul>
+<p>个人长期记忆主要是转换成本；角色创作者与用户相互吸引才可能形成跨边网络效应。二者都还要面对多平台使用、导出和可复制性。</p>
+<hr />
+<h2 id="2029">六、三年后：2029年的护城河应当长成什么样</h2>
+<p>我的主判断是：三年后MSA、长上下文和今天的榜单名次大概率不再稀缺；最有价值的部分应转为<strong>低成本交付系统、获授权的任务反馈、生产工作流与客户信任</strong>。如果仍然主要依靠每次发布更便宜的新模型吸引流量，护城河可能并未变宽。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>未来资产</th>
+<th>如何积累</th>
+<th>自设验证门槛</th>
+<th>反证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>低成本可靠交付</td>
+<td>模型、系统、工具与验收联合优化</td>
+<td>固定真实任务集的成功交付全成本持续下降，优势跨两代版本存在</td>
+<td>token更便宜，但人工复核和重试变多</td>
+</tr>
+<tr>
+<td>工作流与组织记忆</td>
+<td>权限、连接器、项目状态、资产、审计</td>
+<td>企业净收入留存至少120%、毛收入留存至少90%，连续两年且定义稳定</td>
+<td>主要靠新客户补旧客户，客户只是换API地址</td>
+</tr>
+<tr>
+<td>经营规模效应</td>
+<td>资源利用、直接渠道、产品协同</td>
+<td>综合毛利率至少40%，主要产品扣直接费用后贡献为正</td>
+<td>调用量增长，毛利和贡献利润不增长</td>
+</tr>
+<tr>
+<td>消费队列价值</td>
+<td>习惯、记忆、创作者与持续内容</td>
+<td>自设付费队列12个月收入留存60%以上，获客回收不超过12个月</td>
+<td>促销过后流失，长期时长不能变现</td>
+</tr>
+<tr>
+<td>合法内容资产</td>
+<td>授权、规则、报告、结算和商用保障</td>
+<td>披露续约、权利范围与真实收入，出现多年优先或独家资源</td>
+<td>合作很多，权利非独家且收入很小</td>
+</tr>
+<tr>
+<td>可复制的组织</td>
+<td>负责人、评测、实验与资本纪律</td>
+<td>关键人物更替后多个模态仍可交付</td>
+<td>每次训练都依赖创始人救火</td>
+</tr>
+</tbody>
+</table></div>
+<p>这些数值是研究者设置的验收线，不是管理层承诺或行业定律。消费收入留存与企业NRR不能混用。达到40%毛利也不意味着已经覆盖全部前沿研发，不能自动判定公司盈利。</p>
+<p>截止日有两个值得跟踪的信号。第一，Token Plan停止新购，M Plan整合Code、模型及部分视频能力，表明公司在争取订阅入口；但套餐捆绑可能同时降低单位毛利，促销价格不能当长期ARPU。第二，10月13日公布日本IP合作及H3 IP Edition方向，超过60家公司表达兴趣，但没有据此确认合同、独家权利或收入；公告内《足球小将》案例属于PixVerse，不能记到MiniMax账上。<a href="https://platform.minimax.io/docs/m-plan/token-plan-notice">套餐迁移</a>、<a href="https://www.minimax.io/news/minimax-japanese-ip-ready-for-the-global-ai-era">日本IP合作</a></p>
+<p>这两项信号指向正确的商业问题：让客户停留在产品和工作流程里。但“在做”与“已经形成壁垒”仍有很长距离。</p>
+<hr />
+<h2 id="_19">七、五年与十年后的公司形态</h2>
+<h3 id="2031">2031年：更可能成为有选择的专业平台</h3>
+<p>如果发展顺利，我认为它会把更多资源集中到编程与Agent、专业内容生产等少数高价值任务，形成模型、工具、项目和订阅相连的产品。消费陪伴可以保留，但需要证明自身贡献，不宜仅因用户多而无限补贴。</p>
+<p>届时它不需要所有模态全球第一，也不需要所有底层模型都自研。聪明的资本配置可能是：关键能力自研，其他能力通过开放生态或外部服务补齐；让客户持续依赖MiniMax的交付系统，而不必依赖每一块自研组件。</p>
+<p>我的主路径假设2031年收入28亿美元、毛利率49%，但仍保留15亿美元年度研发费用，因此正常化净利润约为负4.92亿美元。<strong>五年后业务已相当大、仍未盈利，是完全可能的结果。</strong> 若它提前放弃部分前沿竞赛、聚焦高回报细分市场，可以更早盈利，却可能获得较低的长期增长上限。</p>
+<h3 id="2036">2036年：真正成功时，模型成为内部发动机</h3>
+<p>十年后的成功形态，更像一个能够持续完成专业工作和内容生产的平台：客户保留项目、权限、品牌素材、角色、声音、验收规则与协作记录；底层模型可以持续替换，客户仍愿意付费给MiniMax。</p>
+<p>另一条可行道路是成为高效率的专业模型供应商。它可以是不错的生意，但如果入口和客户关系属于别人，通常需要更低估值和更强成本纪律。</p>
+<p>失败也不必表现为模型消失。它可能继续有收入、有用户、有不错的技术，却始终无法覆盖研发、被持续稀释，最终收缩、出售业务或被整合。<strong>公司活下来、技术被采用和原始股东赚到钱，是三个不同结果。</strong></p>
+<hr />
+<h2 id="90">八、十年后的利润：主情景约90亿元人民币，但有明确前提</h2>
+<p><strong>我给出的主情景是：2036年正常化年净利润12.8亿美元，按7元人民币/美元的模型汇率约合89.6亿元人民币，可概括为约90亿元。</strong> 这是成功转向专业平台后的条件性结果，不是公司指引，也不是把今天增长率延长十年。</p>
+<p>这里“正常化净利润”的定义是：扣除持续研发、销售、管理和股份支付经济成本，按20%有效税率计算；假设2036年净融资损益、非经营损益、少数股东损益净额为零。若这些项目不为零，实际归母净利润必须调整。美元和人民币均为2036年名义金额，汇率是展示参数，未预测未来汇率或购买力。</p>
+<h3 id="_20">先从谁付钱推收入</h3>
+<p>下表全部为2036年研究假设。客户数是平均全年付费账户或付费当量，净单价扣除折扣及相关净额调整。四项只记录外部收入；自有应用内部调用不再计一份API收入，捆绑套餐也只分配一次。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>收入引擎</th>
+<th style="text-align: right;">客户/用户假设</th>
+<th style="text-align: right;">年度净收入单价</th>
+<th style="text-align: right;">收入，亿美元</th>
+<th style="text-align: right;">毛利率假设</th>
+<th style="text-align: right;">毛利，亿美元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>外部生产API与模型服务</td>
+<td style="text-align: right;">10万个付费账户</td>
+<td style="text-align: right;">2万美元</td>
+<td style="text-align: right;">20.0</td>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">8.0</td>
+</tr>
+<tr>
+<td>企业Agent与工作流</td>
+<td style="text-align: right;">4万家组织</td>
+<td style="text-align: right;">6万美元</td>
+<td style="text-align: right;">24.0</td>
+<td style="text-align: right;">65%</td>
+<td style="text-align: right;">15.6</td>
+</tr>
+<tr>
+<td>专业创作订阅与工具</td>
+<td style="text-align: right;">800万付费当量</td>
+<td style="text-align: right;">300美元</td>
+<td style="text-align: right;">24.0</td>
+<td style="text-align: right;">60%</td>
+<td style="text-align: right;">14.4</td>
+</tr>
+<tr>
+<td>消费互动与娱乐</td>
+<td style="text-align: right;">2,000万付费当量</td>
+<td style="text-align: right;">60美元</td>
+<td style="text-align: right;">12.0</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">6.0</td>
+</tr>
+<tr>
+<td>合计</td>
+<td style="text-align: right;">外部收入去重</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>80.0</strong></td>
+<td style="text-align: right;"><strong>55%</strong></td>
+<td style="text-align: right;"><strong>44.0</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>这些不是已经存在的客户资产。企业部分需要能进入团队预算的可靠交付；创作部分需要长期有商业用途的专业用户；消费部分需要远高于当前历史披露规模的稳定付费基础。按今天产品分部机械拆分，并不能证明未来能得到这四组客户。</p>
+<p>客户可能同时买多项服务，关键是支出不能重复：企业工作流若已经包含推理，不能再计入外部API；个人创作若来自M Plan套餐，应按收入分摊，而不是每项产品各算一份完整订阅。</p>
+<p>80亿美元比2025实际收入高约百倍，要求2025—2036年复合增长约52.2%。相对2026年3.5亿美元的全年建模假设，十年复合增长仍需约36.7%。<strong>因此这不是低增长、低难度的“保守预测”，而是商业转型成功的主情景。</strong> 2026全年收入尚未公布；3.5亿美元只用于展示路径，不是最新事实或ARR。</p>
+<h3 id="_21">再从毛利扣完整费用</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>2036年主情景损益</th>
+<th style="text-align: right;">亿美元</th>
+<th style="text-align: right;">占收入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">80.0</td>
+<td style="text-align: right;">100%</td>
+</tr>
+<tr>
+<td>推理、交付、版权及其他销售成本</td>
+<td style="text-align: right;">-36.0</td>
+<td style="text-align: right;">-45%</td>
+</tr>
+<tr>
+<td>毛利</td>
+<td style="text-align: right;">44.0</td>
+<td style="text-align: right;">55%</td>
+</tr>
+<tr>
+<td>持续研发</td>
+<td style="text-align: right;">-17.6</td>
+<td style="text-align: right;">-22%</td>
+</tr>
+<tr>
+<td>销售费用</td>
+<td style="text-align: right;">-6.4</td>
+<td style="text-align: right;">-8%</td>
+</tr>
+<tr>
+<td>管理费用</td>
+<td style="text-align: right;">-4.0</td>
+<td style="text-align: right;">-5%</td>
+</tr>
+<tr>
+<td>经营利润</td>
+<td style="text-align: right;">16.0</td>
+<td style="text-align: right;">20%</td>
+</tr>
+<tr>
+<td>正常化税费</td>
+<td style="text-align: right;">-3.2</td>
+<td style="text-align: right;">-4%</td>
+</tr>
+<tr>
+<td><strong>正常化净利润</strong></td>
+<td style="text-align: right;"><strong>12.8</strong></td>
+<td style="text-align: right;"><strong>16%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>研发假设为每年17.6亿美元，绝对金额仍很大；它隐含MiniMax能够有选择地保持前沿、提高研发效率，而非在所有模态上永远追逐最大训练规模。销售费率8%又隐含较强自然分发和续费；如果全球大企业销售需要重实施、重售后，这一费率会偏低。</p>
+<p>55%毛利率尤其关键。它来自应用与工作流占比提升、同任务效率和服务溢价，不能只靠“GPU会更便宜”解释。版权、支持和客户交付成本已放入成本假设，不能留在表外。</p>
+<h3 id="_22">利润不是自由现金流</h3>
+<p>主情景2036年再假设折旧摊销3.2亿美元、资本开支4.0亿美元、新增经营营运资金0.8亿美元，则股东经济口径的现金流代理为：</p>
+<p><code>12.8 + 3.2 - 4.0 - 0.8 = 11.2亿美元，约78.4亿元人民币。</code></p>
+<p>这仍是正常化、近似无净融资负担的情景现金流，不是严格预测的会计经营现金流。股份支付按经济成本保留、不再加回；如持续发生净利息、少数股东分配或更高算力资本开支，可分配现金会更低。</p>
+<h3 id="_23">四种结局放在同一张表</h3>
+<p>概率是我的主观研究权重，用于强迫自己承认失败与尾部，不是统计频率。收缩/退出状态的零利润表示“不再作为独立盈利主体”，并不表示退出前没有亏损或债权人一定无损。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>2036年状态</th>
+<th style="text-align: right;">主观权重</th>
+<th style="text-align: right;">收入，亿美元</th>
+<th style="text-align: right;">正常化净利率</th>
+<th style="text-align: right;">正常化净利润，亿美元</th>
+<th style="text-align: right;">约合人民币亿元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>退出、出售或严重收缩</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">不单独预测</td>
+<td style="text-align: right;">不适用</td>
+<td style="text-align: right;">0，独立主体口径</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>商品化的专业供应商</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4.8%</td>
+<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">6.72</td>
+</tr>
+<tr>
+<td><strong>专业工作与创作平台，主情景</strong></td>
+<td style="text-align: right;"><strong>40%</strong></td>
+<td style="text-align: right;"><strong>80</strong></td>
+<td style="text-align: right;"><strong>16%</strong></td>
+<td style="text-align: right;"><strong>12.8</strong></td>
+<td style="text-align: right;"><strong>89.6</strong></td>
+</tr>
+<tr>
+<td>少数全球平台之一</td>
+<td style="text-align: right;">10%</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">30%</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">420</td>
+</tr>
+</tbody>
+</table></div>
+<p>专业供应商情景采用35%毛利、18%研发、7%销售、4%管理及20%税率；全球平台情景采用65%毛利、16%研发、7%销售、4.5%管理及20%税率。全球平台必须具备今天尚未证明的强分发、留存与规模优势，不能看作收入翻倍就自动发生的利润率。</p>
+<p>以上权重得到的利润均值约11.36亿美元，但它明显受到小概率上行情景影响，不比主情景更“准确”。如果只问一个数，我仍选约90亿元人民币；如果问资本保障，则必须同时接受低利润、退出以及持续融资的可能。</p>
+<h3 id="_24">最关键的敏感性不是小数点增长率</h3>
+<p>保持80亿美元收入、销售管理合计13%、税率20%，不同毛利率与研发率得到如下年净利润，单位亿美元，全部为假设：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>毛利率 \ 研发费用率</th>
+<th style="text-align: right;">18%</th>
+<th style="text-align: right;">22%</th>
+<th style="text-align: right;">30%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>45%</td>
+<td style="text-align: right;">8.96</td>
+<td style="text-align: right;">6.40</td>
+<td style="text-align: right;">1.28</td>
+</tr>
+<tr>
+<td>55%</td>
+<td style="text-align: right;">15.36</td>
+<td style="text-align: right;"><strong>12.80</strong></td>
+<td style="text-align: right;">7.68</td>
+</tr>
+<tr>
+<td>65%</td>
+<td style="text-align: right;">21.76</td>
+<td style="text-align: right;">19.20</td>
+<td style="text-align: right;">14.08</td>
+</tr>
+</tbody>
+</table></div>
+<p>若毛利只有35%，研发仍22%、销售管理13%，经营利润恰好归零。即便实现80亿美元收入，也可能没有利润。反过来，55%毛利成立但研发升至30%，主情景利润就降至7.68亿美元。未来最应跟踪的是价值分配与持续研发负担，而不是只跟踪收入。</p>
+<hr />
+<h2 id="_25">九、走到十年利润之前，先要穿过资金需求</h2>
+<p>上半年经营现金净流出3.18106亿美元，购置设备等PPE现金支出1.87626亿美元，简化自由现金流为负5.05732亿美元。后者明显高于过去年度设备支出；资产负债表PPE账面余额不是现金采购额，不能拿两者互相替代，也不能把全部金额直接解释为已投入运行的GPU。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf">中报现金流</a></p>
+<p>7月配售净募94.4371亿港元，可转债净募64.333亿港元。两项融资增强资金实力，但可转债不是净权益。未转换时约2027年7月到期，按本金102.75%赎回，对65亿港元本金对应66.7875亿港元；零票息不等于零融资成本。初始转股价335港元，高于本报告参考价格，不能假定一定转股。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0716/2026071601147.pdf">融资完成</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0710/2026071000027.pdf">债券条款</a></p>
+<p>8月公告计划把7月融资净额约80%、约16.207亿美元，在2027年底前投入AI基础设施和模型研发。这是未来资金用途计划，不是全部已支出，也不全部等于损益表研发费用；阿里云采购上限不是最低采购承诺。它们足以说明，用上半年历史亏损率机械算“还能安全活几年”并不可靠。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082601949.pdf">资金用途与关联采购</a></p>
+<h3 id="_26">主路径显式保留前期亏损</h3>
+<p>下表单位亿美元，除年份外全部为假设。研发金额包含股份支付经济成本；正利润年份按20%税率，不预先兑现历史亏损税盾；现金流加回折旧，扣资本开支与营运资金，但不计融资流入。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">毛利率</th>
+<th style="text-align: right;">研发费用</th>
+<th style="text-align: right;">正常化净利润</th>
+<th style="text-align: right;">经济口径现金流代理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026E</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">8.5</td>
+<td style="text-align: right;">-8.33</td>
+<td style="text-align: right;">-12.13</td>
+</tr>
+<tr>
+<td>2027E</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">30%</td>
+<td style="text-align: right;">15.0</td>
+<td style="text-align: right;">-14.16</td>
+<td style="text-align: right;">-16.96</td>
+</tr>
+<tr>
+<td>2029E</td>
+<td style="text-align: right;">15.0</td>
+<td style="text-align: right;">42%</td>
+<td style="text-align: right;">15.0</td>
+<td style="text-align: right;">-10.95</td>
+<td style="text-align: right;">-12.45</td>
+</tr>
+<tr>
+<td>2031E</td>
+<td style="text-align: right;">28.0</td>
+<td style="text-align: right;">49%</td>
+<td style="text-align: right;">15.0</td>
+<td style="text-align: right;">-4.92</td>
+<td style="text-align: right;">-6.32</td>
+</tr>
+<tr>
+<td>2033E</td>
+<td style="text-align: right;">45.0</td>
+<td style="text-align: right;">53%</td>
+<td style="text-align: right;">16.0</td>
+<td style="text-align: right;">1.60</td>
+<td style="text-align: right;">0.30</td>
+</tr>
+<tr>
+<td>2036E</td>
+<td style="text-align: right;">80.0</td>
+<td style="text-align: right;">55%</td>
+<td style="text-align: right;">17.6</td>
+<td style="text-align: right;">12.80</td>
+<td style="text-align: right;">11.20</td>
+</tr>
+</tbody>
+</table></div>
+<p>这条路径在2033年转为正利润与正经济现金流；2027—2032年累计股东经济资金消耗代理约64.13亿美元。它保留股份支付经济成本，尚未拆分未来非现金激励、已有资金及到期债务，不能直接称为新增融资缺口。若用现金激励或回购完全抵消未来股份支付，才近似对应这部分模拟现金支出；若以新增股份支付，则现金需求较低、股份稀释较高。它是对高投入战略的压力显式化，不是管理层烧钱指引。公司收窄研发范围可降低这一负担，全面追逐最强前沿也可能提高负担。</p>
+<p>6月底现金等价物、定期存款及流动FVTPL资产合计约12.23亿美元，再机械加7月两项净融资约20.35亿美元，得到约32.59亿美元的期后融资演示额。<strong>这个数既不是10月现金余额，也不是净现金</strong>：尚未扣后续烧钱、银行债务、可转债赎回和其他义务；部分金融资产也不等于随时无损可用现金。</p>
+<p>因此，在激励现金化等假设下，主路径仍指向数十亿美元的额外资金压力；实际融资额须另核股份支付结算、现金余额与债务安排，不能由64.13亿美元直接得出。真正的风险不是“账上今天没钱”，而是下一轮资金在什么价格、以什么条款取得。十年后的公司总利润不能直接等同于今天一股所对应的利润。</p>
+<hr />
+<h2 id="_27">十、用一级市场方法看价格：主利润成立，也未必值得按任何价格买</h2>
+<p>本报告不把十年现金流折现包装成稳定公允价值。近期研发规模、客户留存、终态毛利和融资安排都缺乏足够确定性，更适合做<strong>有明确条件的退出价值反推</strong>。</p>
+<p>主情景假设2036年正常化净利润12.8亿美元、退出市盈率25倍，得到320亿美元公司权益价值；假设今天股东届时保留70%的经济份额，其对应价值为224亿美元。要求十年年化20%，则今天可接受的权益投入约为：</p>
+<p><code>12.8 × 25 × 70% ÷ 1.20^10 = 36.18亿美元，约80港元/当前已发行股。</code></p>
+<p>25倍是成功平台仍有增长的估值假设，不是当前可比公司统计；70%是独立设置的未来融资后经济份额假设，并非由前表自动推导，也不是已签融资条款。模型已将股份支付作为经济费用，额外份额折减用于融资及债券处理，不再机械重复叠加一轮“同额股份支付折价”。实际每股估值仍需完整激励台账与融资计划。</p>
+<p>资金压力说明70%保留份额可能偏乐观。例如若未来需额外筹集50亿美元，单轮融资要让原股东保留70%，对应投前估值约116.7亿美元，已高于目前模型换算市值；若融资时估值低，持股被稀释得会更多。此例只展示融资数学，不预测未来轮次。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>十年要求回报率 \ 原股东保留份额</th>
+<th style="text-align: right;">50%</th>
+<th style="text-align: right;">70%</th>
+<th style="text-align: right;">100%，不再融资的上限示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15%</td>
+<td style="text-align: right;">39.55亿美元</td>
+<td style="text-align: right;">55.37亿美元</td>
+<td style="text-align: right;">79.10亿美元</td>
+</tr>
+<tr>
+<td>20%</td>
+<td style="text-align: right;">25.84亿美元</td>
+<td style="text-align: right;"><strong>36.18亿美元</strong></td>
+<td style="text-align: right;">51.68亿美元</td>
+</tr>
+<tr>
+<td>25%</td>
+<td style="text-align: right;">17.18亿美元</td>
+<td style="text-align: right;">24.05亿美元</td>
+<td style="text-align: right;">34.36亿美元</td>
+</tr>
+</tbody>
+</table></div>
+<p>没有把当前现金再加一次：此方法假设现金用于到达退出状态、未来融资已反映在经济份额中；没有中途分红，退出值也不另外加未建模的净现金。可转债若转换，应反映股份变化；若偿还，应反映资金消耗，不能一边全额加融资现金，一边既不扣债又不稀释。</p>
+<p>按四种经营状态分别使用退出倍数零/15/25/30倍、股东保留份额零/60%/70%/80%、统一20%回报门槛，再用前述主观权重加权，得到约38.08亿美元，即约84港元/当前股。上行情景贡献了其中约61%，说明这个结果仍很依赖小概率平台成功，不能称价值底线。</p>
+<p><strong>我的估值判断：按这些一级市场回报要求，研究参考权益价值约38亿美元；25亿美元以下才进入有条件的安全边际观察区，约合55港元/当前股。</strong> 这些不是短期目标价，更不是跌到该价格就自动买入。资本需求、留存、费用和许可条件变化，都应先改模型再改估值。</p>
+<p>参考市值约81.12亿美元，主情景对应原股东十年年化回报约10.7%，未达到20%的一级市场门槛。若坚持20%回报、25倍退出PE及70%经济份额，2036年需要净利润约28.70亿美元；以16%净利率计，需要收入约179.37亿美元，显著高于主情景80亿美元。</p>
+<p>这回答了一个关键问题：<strong>“十年后利润约90亿元人民币”与“今天便宜”并不是同一个判断。</strong> 对愿意接受较低回报、相信更高成功概率或更强终态利润的投资人，价格结论会不同；这些差异必须明确写成假设。</p>
+<hr />
+<h2 id="_28">十一、最强反方与必须面对的风险</h2>
+<p>最强空头论点是：MiniMax持续投入最昂贵的研发，做出越来越便宜的智能，却让算力商、客户入口、版权方和用户获得大部分经济收益。它可能长期技术不错、收入高增，但始终没有足够的自由现金流。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>风险路径</th>
+<th>主观发生可能性</th>
+<th>影响</th>
+<th>最有价值的观察信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型商品化、价格下降快于全成本</td>
+<td>高</td>
+<td>高</td>
+<td>固定任务的售价、成本、贡献利润同时跟踪</td>
+</tr>
+<tr>
+<td>前沿研发升级吞掉毛利</td>
+<td>高</td>
+<td>高</td>
+<td>新增研发换来的毛利，模型线完整损益</td>
+</tr>
+<tr>
+<td>路由平台与云商掌握客户</td>
+<td>中高</td>
+<td>高</td>
+<td>直签收入、渠道集中度、可迁移客户比例</td>
+</tr>
+<tr>
+<td>多模态业务分散资本</td>
+<td>中</td>
+<td>高</td>
+<td>关闭某模态后其他业务是否真受损，协同是否可测</td>
+</tr>
+<tr>
+<td>版权、声音和数据权利成本上升</td>
+<td>中，具体损失不可量化</td>
+<td>高</td>
+<td>法院进展、授权费用、企业赔偿条款与产品限制</td>
+</tr>
+<tr>
+<td>融资时点不利、债务与稀释</td>
+<td>中高</td>
+<td>高</td>
+<td>现金支出、可转债处理、融资估值及资本承诺</td>
+</tr>
+<tr>
+<td>关键人才与创始人依赖</td>
+<td>中</td>
+<td>高</td>
+<td>第二梯队、离职后交付、预算与实验可复现性</td>
+</tr>
+<tr>
+<td>海外交付及供应条件变化</td>
+<td>中</td>
+<td>高</td>
+<td>地区准入、云与硬件获取、授权及客户采购周期</td>
+</tr>
+</tbody>
+</table></div>
+<p>版权风险不能简化成“只是被告”。2025年影视公司提起诉讼；2026年5月22日可核实的法院裁定拒绝相关撤诉动议，案件可继续推进，但这不是最终侵权责任或赔偿判决。中报仍披露相关知识产权纠纷未决，无法估计损失、未作拨备。未拨备不是零风险。本次没有取得截至10月16日的完整法院案卷，不能断言后续没有其他程序进展。<a href="https://www.motionpictures.org/press/mpa-statement-on-copyright-infringement-lawsuit-filed-today-against-minimax/">原告官方声明</a>、<a href="https://lexsummary.com/wp-content/uploads/2026/05/disney-v-minimax-mtd-denied.pdf">法院裁定镜像</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf">公司未决披露</a></p>
+<p>我的分析最可能犯的错误，是把今天优秀的研究组织，直接推成十年后能够保留租金的平台；其次是低估达到2036年收入目标之前的资金需求和股东稀释。相反，也要防止因当前亏损而否认非线性增长：若工作流产品真正成为默认入口，今天的小收入可能严重低估未来规模。两边都需要经营证据，而非立场。</p>
+<hr />
+<h2 id="_29">十二、最终判断与下一步尽调</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>判断</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>创始人与核心团队</td>
+<td>值得认真下注的研究与工程组织</td>
+<td>中高，资本回报尚待兑现</td>
+</tr>
+<tr>
+<td>技术能力</td>
+<td>能持续交付有竞争力的多模态模型</td>
+<td>中高，未自行复测全部能力</td>
+</tr>
+<tr>
+<td>今日护城河</td>
+<td>能力壁垒较强，长期定价权与锁定较弱</td>
+<td>中</td>
+</tr>
+<tr>
+<td>三年护城河</td>
+<td>最有希望来自工作流、反馈、成本与信任</td>
+<td>中低，仍需客户队列证据</td>
+</tr>
+<tr>
+<td>五年公司形态</td>
+<td>有选择的专业工作与创作平台；仍可能亏损</td>
+<td>低至中</td>
+</tr>
+<tr>
+<td>十年利润主情景</td>
+<td>正常化年净利润约12.8亿美元、约90亿元人民币</td>
+<td>低，条件性推演</td>
+</tr>
+<tr>
+<td>当前价格</td>
+<td>已要求相当程度的成功，未达本模型一级市场回报门槛</td>
+<td>低至中，依赖假设</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>作为一级市场投资人，我愿意为团队与组织能力支付期权价值，但不会在缺乏客户留存和全成本证据时，把它按已经形成的宽护城河平台定价。</strong> 目前更合适的决策是持续跟踪，等待价格或经营证据改善。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投资情境</th>
+<th>当前行动</th>
+<th>改变判断的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>尚未持有</td>
+<td>按本回报要求不追价；保留研究名单</td>
+<td>实际融资约束减轻，客户队列与毛利支持平台化；或估值进入有条件观察区</td>
+</tr>
+<tr>
+<td>已经持有</td>
+<td>按高波动、需再融资的成长权益审视仓位</td>
+<td>两次模型进步后留存与贡献利润仍不改善，应下调论文；更强工作流证据才支持加码</td>
+</tr>
+<tr>
+<td>参与未来配售或战略投资</td>
+<td>先看本轮资金用途、后续融资与经济权利，再讨论技术溢价</td>
+<td>有具体客户、完整单位经济与资金计划；保护条款只能以实际文件为准</td>
+</tr>
+</tbody>
+</table></div>
+<p>下一轮管理层尽调最值得拿到六组资料：</p>
+<ol>
+<li>按API、套餐、企业直签和应用区分的收入、贡献毛利，以及至少两年客户队列。</li>
+<li>生产客户的净收入留存、毛收入留存、渠道集中度，剔除促销和试用的口径。</li>
+<li>同一批客户真实任务的成功率、全成本、人工接管率和重试；自研与外部最优模型组合的对照。</li>
+<li>按模态分配的完整研发与基础设施预算，包括失败实验、股份支付、预付款和资本承诺。</li>
+<li>客户反馈可训练权、版权与声音许可、企业责任条款，以及独家资源的实际商业价值。</li>
+<li>可转债到期处理、未来融资计划和完整稀释台账，判断公司利润能有多少留给今天股东。</li>
+</ol>
+<p><strong>最终回答：今天的MiniMax以团队学习、系统工程和全球产品化形成差异化；2029年要靠真实交付与工作流把它转成护城河；2031年有机会成为重要的专业平台；2036年的主利润约90亿元人民币，但前提是完成商业模式升级、守住研发效率，并穿过数十亿美元的资金需求。</strong> 如果这三个条件不能同时成立，它可能仍是一家技术优秀的公司，却不是高回报的投资。</p>
+<h2 id="_30">研究偏见、来源与核验边界</h2>
+<p>公开财务信息较充分，客户留存、分产品经济性、训练总成本和授权数据优势仍不足。报告没有实地访谈、未披露数据库访问或完整模型复测；公司自测、合作意向与招聘信号均未当成独立经营成果。技术资料以一手论文、模型卡、代码与官方文档为主，法律部分区分程序裁定与实体判决。</p>
+<p>精确计算使用Decimal及仓库financial_rigor工具；报告审计将历史事实、推导和假设分开。算术通过只证明计算一致，不验证未来收入、利润、概率、估值或护城河。发布前逐项状态见<a href="../r/c1e706739223.html">来源与核验</a>，模型见<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/MINIMAX/%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%A0%B8%E9%AA%8C-20261016/%E6%A8%A1%E5%9E%8B%E5%A4%8D%E7%AE%97.py">复算脚本</a>及<a href="../files/reports/MINIMAX/%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%A0%B8%E9%AA%8C-20261016/%E8%AE%A1%E7%AE%97%E7%BB%93%E6%9E%9C.json">计算结果</a>。本研究用于学习与讨论，不构成投资建议。</p>
+<h3 id="_31">主要来源索引</h3>
+<ul>
+<li>财务、资本与治理：<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf">2026中报</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf">2025年报</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf">招股书</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1002/2026100200077.pdf">股份月报</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0716/2026071601147.pdf">7月融资完成</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0710/2026071000027.pdf">债券条款</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082601949.pdf">资金用途公告</a>。</li>
+<li>独立信息处理渠道：<a href="https://stockanalysis.com/quote/hkg/0100/financials/">StockAnalysis财务</a>、<a href="https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820">路透半年业绩报道</a>、<a href="https://hk.investing.com/equities/minimax-group-inc-historical-data">Investing历史行情</a>。新闻复述不等于独立审计。</li>
+<li>创始人与组织：<a href="https://ir.minimax.io/corporate-information/management">管理层资料</a>、<a href="https://podcast.latepost.com/99">创始人原始访谈</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0821/2026082101455.pdf">董事变更</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092901775.pdf">股权奖励</a>。</li>
+<li>技术：<a href="https://arxiv.org/abs/2501.08313">01论文</a>、<a href="https://github.com/MiniMax-AI/MiniMax-M1">M1</a>、<a href="https://github.com/MiniMax-AI/MiniMax-M2">M2</a>、<a href="https://huggingface.co/MiniMaxAI/MiniMax-M3">M3</a>、<a href="https://platform.minimax.io/docs/api-reference/api-overview">API状态</a>、<a href="https://arxiv.org/html/2606.13392v2">MSA论文</a>、<a href="https://github.com/MiniMax-AI/MSA">MSA代码</a>、<a href="https://www.minimax.io/blog/forge-scalable-agent-rl-en-1779896141">Forge</a>、<a href="https://www.minimax.io/blog/minimax-m27">M2.7</a>、<a href="https://huggingface.co/MiniMaxAI/MiniMax-H3">H3</a>、<a href="https://www.minimax.io/news/minimax-speech-28">Speech</a>、<a href="https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model">Music</a>、<a href="https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE">M3许可</a>、<a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE">H3许可</a>、<a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/QA-about-License.md">H3 FAQ</a>、<a href="https://artificialanalysis.ai/articles/minimax-m3/">AA评测</a>、<a href="https://zli12321.github.io/LHTB/index.html">LHTB</a>。</li>
+<li>商业与风险：<a href="https://platform.minimax.io/docs/pricing/overview">价格</a>、<a href="https://platform.minimax.io/docs/m-plan/token-plan-notice">套餐迁移</a>、<a href="https://www.minimax.io/news/minimax-japanese-ip-ready-for-the-global-ai-era">日本IP</a>、<a href="https://www.motionpictures.org/press/mpa-statement-on-copyright-infringement-lawsuit-filed-today-against-minimax/">原告声明</a>、<a href="https://lexsummary.com/wp-content/uploads/2026/05/disney-v-minimax-mtd-denied.pdf">已核实法院裁定</a>。更多竞争资料与口径冲突记录集中在核验附件，正文不重复铺设外链。</li>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/4587c8c773a2.html">MiniMax 创始人访谈研究与结论复核</a><div class="meta">2026-10-18 · 研究</div></li><li><a href="../r/8a072c27bb1d.html">收入增 283%、毛利率 17.9%：MiniMax 卖的是便宜的智能</a><div class="meta">2026-10-18 · 公众号</div></li><li><a href="../r/cf9c268d3d6d.html">MiniMax 深度研究：创始人、技术路线、赛道与十年推演</a><div class="meta">2026-10-17 · 深度系列</div></li><li><a href="../r/c1e706739223.html">MiniMax研究报告：来源、冲突与核验边界</a><div class="meta">2026-10-16 · 底稿</div></li><li><a href="../r/f1f5a85ec474.html">MiniMax（稀宇科技）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/1f005b032732.html">MiniMax（0100.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/1c170ddf04db.html">MiniMax差异化与护城河研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/af1d6c9b551f.html">研究审计说明（2026-09-06）</a><div class="meta">2026-09-06 · 导读</div></li><li><a href="../r/bcf3b1df7e7e.html">MiniMax差异化与护城河研究核验记录</a><div class="meta">2026-09-06 · 导读</div></li><li><a href="../r/111c8837b826.html">智谱和 MiniMax，半年烧掉了几乎一样多的钱</a><div class="meta">2026-09-01 · 公众号</div></li><li><a href="../r/deb6de91ddf8.html">MiniMax（0100.HK）麦肯锡 7S 组织诊断</a><div class="meta">2026-08-28 · 组织管理</div></li><li><a href="../r/c83f83eef645.html">MiniMax（0100.HK）：给定「8月ARR = 8亿美元」，合理估值是多少</a><div class="meta">2026-08-27 · 估值仓位</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
