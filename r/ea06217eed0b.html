@@ -1,0 +1,57 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>拼多多AI与利润研究：审计说明 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/拼多多/index.html">拼多多</a></div><h1>拼多多AI与利润研究：审计说明</h1><div class="meta"><a href="../companies/拼多多/index.html">拼多多</a> ｜ 2026-09-24 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/AI%E5%88%A9%E6%B6%A6%E6%A8%A1%E5%9E%8B-20260924/audit-notes.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">范围与结论</a></li>
+<li><a href="#_2">已处理的实质差异</a></li>
+<li><a href="#_3">验证边界</a></li>
+<li><a href="#_4">附件与复现</a></li>
+</ul>
+</div>
+</details><article><p>资料截止与核验日期：2026-09-24 UTC。</p>
+<h2 id="_1">范围与结论</h2>
+<p>主报告为<a href="../r/9da20c690247.html">拼多多AI与三年十年利润研究</a>。历史数据核验、预测输入一致性和算术复算分开处理，不能把工具显示PASS解释为未来利润已获证实。</p>
+<ul>
+<li>对23项历史/行情及衍生口径进行了双源数值比对。以原始值为分母、差异不超过1%为准，均通过；数据来源和数值见<code>validation.json</code>。</li>
+<li><code>report_audit.py extract</code>按固定种子42、15%比例，从162个可识别数字中抽取25项。</li>
+<li>其中22项进入数值核验：7项历史或历史衍生数字（2项只有原始来源）、8项模型算术、7项声明的输入假设；均无超限差异。</li>
+<li>排除3项：两项主观评分；一项解析器从“不是每包统一3欧元或每件3欧元”中抽出的3。后者按欧盟原文核对语义，而非把否定句误作正向事实。</li>
+<li>财务角色独立用Decimal核对三年及十年净利、估值、反向所需利润；商业角色复核AI收益去重；风险角色复核关税、DSA及FSR程序状态。未发现影响结论的计算错误。</li>
+</ul>
+<p>判决：<strong>已核验数据和算术通过，附披露限制准出；不对预测实现率作保证。</strong></p>
+<h2 id="_2">已处理的实质差异</h2>
+<ol>
+<li>2025初步归母993.64469亿元与审计归母978.42539亿元差异超过1%，使用审计值，未取平均；经营利润亦使用审计后值。</li>
+<li><code>financial_rigor.py cross-validate</code>默认中位数基准及2%阈值，与skill的一手分母/1%要求不同。本次附加Decimal差异检查，不依赖工具默认绿色标记。</li>
+<li>现有<code>financial_rigor.py calc</code>内部表达式会经过浮点求值。本研究仍按项目要求调用，同时由<code>model.py</code>全程Decimal独立复算，模型结果以Decimal文件为准。没有为本次报告改动共享工具。</li>
+<li>2029AI详细桥接经营贡献64.3721052亿元，主情景近似65亿元；税后50.210242056与50.70的差异在正文解释。</li>
+<li>JSON含AI利润除反事实基础收入的字段已改名为<code>op_profit_over_base_revenue</code>和<code>net_profit_over_base_revenue</code>，避免误认作会计利润率。</li>
+<li>AI成本池限定为基线业务量，新增订单变动成本在贡献率中扣除；新增AI费用另扣一次，防止重复节约或重复扣成本。</li>
+</ol>
+<h2 id="_3">验证边界</h2>
+<ul>
+<li>2026年中集团财务披露仍未经审计。</li>
+<li>2026H1在线营销收入和现金及等价物抽样仅取得原始口径核对，没有将同一公告转载冒充独立来源。</li>
+<li>最新精确时点股本未核实。收盘市值按最近核实法定发行股本估计；EPS使用加权/摊薄股本，二者分开。</li>
+<li>市值工具用2026-09-24 12:26 EDT同页报价78.38美元和1115.7亿美元快照校验股本数量级；报告估值价格另锁9月23日79.20美元，两者未混合冒充同一时点。</li>
+<li>股权PE约8.6倍基于法定发行股数；工具按14.8亿ADS假设计算的摊薄PE约8.9倍，差异是分母口径，不是利润变动。</li>
+<li>三情景工具按2026E至2029E三个年度的等值盈利增速验证终值；报告股价回报按研究日至2029年末约3.25年计算。</li>
+<li>公司没有披露足以验证的国内/Temu独立利润和新增AI利润贡献。模型是可修改假设，不是从报表识别出的因果结果。</li>
+<li>抽样不能覆盖全部文字。监管规则、来源版本、利润定义和关键模型进行了额外人工审读；法律环境可能继续变化。</li>
+</ul>
+<h2 id="_4">附件与复现</h2>
+<ul>
+<li><code>model.py</code>：所有情景公式、AI桥接和敏感性，金额单位为人民币亿元。</li>
+<li><code>model-results.json</code>：完整模型输入、口径定义和Decimal结果。</li>
+<li><code>validate.py</code>：保存于截止日的外部核验值、工具调用、模型复算和抽样分类。不联网刷新资料。</li>
+<li><code>validation.json</code>：23项双源比对、工具输出和版本差异。</li>
+<li><code>audit-extract.txt</code>、<code>audit-sample.json</code>：固定种子抽样。</li>
+<li><code>audit-results.json</code>、<code>audit-verdict.txt</code>：分类核验及判决。</li>
+</ul>
+<p>在仓库根目录依次运行：</p>
+<pre><code class="language-bash">python3 reports/拼多多/AI利润模型-20260924/model.py
+python3 reports/拼多多/AI利润模型-20260924/validate.py
+python3 tools/report_audit.py extract --report reports/拼多多/拼多多-AI与三年十年利润研究-20260924.md --seed 42
+</code></pre>
+<p>调整主报告表格或模型后，应重新核对抽样映射；映射不匹配会停止，而非自动把新数字当正确值。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/add3b8034f65.html">拼多多控股（PDD Holdings，PDD.US）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/581cb36c9940.html">拼多多2036：活下来没有悬念，多赚要看两个变量</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/a4afe86cabe3.html">黄峥与拼多多控制权：谁在掌舵、他还能不能回来</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/2ef823d3a551.html">拼多多（PDD Holdings）投资研究 — 2026.04.07</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/9da20c690247.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/eec9a3d4deca.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/6c5fe33f9647.html">PDD研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/a07290b67941.html">拼多多2026Q2：6-K原件逐行核对底稿</a><div class="meta">2026-08-26 · 底稿</div></li><li><a href="../r/4fc48a244b16.html">拼多多2026年二季报深度解读：一笔找不到科目的投入</a><div class="meta">2026-08-25 · 财报</div></li><li><a href="../r/b870b0a0d5b4.html">拼多多2026年中报解读</a><div class="meta">2026-08-25 · 公众号</div></li><li><a href="../r/7a2822470350.html">拼多多三大报表解析：从交易所原件到逐项含义</a><div class="meta">2026-08-24 · 财报</div></li><li><a href="../r/582e3d2622ed.html">Temu——一个估值 0 到 700 亿美元的政治期权</a><div class="meta">2026-07-13 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

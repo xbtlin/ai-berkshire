@@ -1,0 +1,398 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 与新业务——豆包大模型与千亿豪赌 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/字节跳动/index.html">字节跳动</a></div><h1>AI 与新业务——豆包大模型与千亿豪赌</h1><div class="meta"><a href="../companies/字节跳动/index.html">字节跳动</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8/%E3%80%8A%E7%9C%8B%E6%87%82%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E3%80%8B/04-AI%E4%B8%8E%E6%96%B0%E4%B8%9A%E5%8A%A1-%E8%B1%86%E5%8C%85%E5%A4%A7%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%8D%83%E4%BA%BF%E8%B1%AA%E8%B5%8C.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#ai">字节做 AI 的底层逻辑</a></li>
+<li><a href="#ai_1">豆包：中国最大的 AI 应用</a><ul>
+<li><a href="#_1">从零到日活过亿</a></li>
+<li><a href="#_2">豆包为什么能做到第一</a></li>
+</ul>
+</li>
+<li><a href="#20">豆包大模型 2.0：技术到底什么水平</a><ul>
+<li><a href="#_3">产品矩阵</a></li>
+<li><a href="#_4">技术水平的客观评估</a></li>
+</ul>
+</li>
+<li><a href="#aws">火山引擎：中国版 AWS 的野心</a></li>
+<li><a href="#_5">其他业务：飞书、游戏与剪映</a><ul>
+<li><a href="#_6">飞书：远未成功</a></li>
+<li><a href="#_7">游戏：战略收缩</a></li>
+<li><a href="#capcut">剪映/CapCut：全球视频编辑第一</a></li>
+</ul>
+</li>
+<li><a href="#ai_2">AI 豪赌的风险与回报</a><ul>
+<li><a href="#ai_3">字节 AI 投入的回报周期</a></li>
+</ul>
+</li>
+<li><a href="#_8">关键数字总结</a></li>
+<li><a href="#_9">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂字节跳动》系列 · 第 04 篇
+阅读时间约 9 分钟</p>
+</blockquote>
+<hr />
+<h2 id="ai">字节做 AI 的底层逻辑</h2>
+<p>2025 年，字节跳动净利润同比下滑超 70%。不是因为业务恶化，而是因为一个主动的选择：把利润换算法、换算力、换 AI 的未来。</p>
+<p>这一年字节资本支出约 1500 亿元人民币，2026 年 AI 预算进一步升至约 230 亿美元。一家年营收 1860 亿美元的公司，在 AI 上以这种力度下注，在全球范围内没有几个先例。</p>
+<p>理解这个选择，要从字节的基因说起。今日头条 2012 年上线时的核心卖点是"算法推荐新闻"，抖音的崛起靠的也是推荐算法。<strong>字节跳动本质上是一家用算法分发内容并从中变现的公司。</strong> 大模型时代的到来，不过是把"算法"从推荐系统升级到了通用智能。</p>
+<p>2024-2025 年，字节在 AI 上的投入从"正常研发"升级到了"战略豪赌"：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 年资本支出</td>
+<td>~<strong>1500 亿元人民币</strong></td>
+</tr>
+<tr>
+<td>2026 年 AI 预算</td>
+<td>~<strong>$230 亿</strong>（~1650 亿元人民币）</td>
+</tr>
+<tr>
+<td>其中 AI 芯片采购</td>
+<td>~<strong>850 亿元人民币</strong></td>
+</tr>
+<tr>
+<td>2025 年净利润下滑</td>
+<td><strong>超过 70%</strong>（主因 AI 投入）</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：新浪财经、证券时报、36 氪）</p>
+<hr />
+<h2 id="ai_1">豆包：中国最大的 AI 应用</h2>
+<h3 id="_1">从零到日活过亿</h3>
+<p>豆包（Doubao）是字节跳动的 AI 对话产品，2024 年 5 月正式发布。它的成长速度令人震惊：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>里程碑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024 年 5 月</td>
+<td>豆包正式上线</td>
+</tr>
+<tr>
+<td>2025 年 10 月</td>
+<td>接入抖音商城</td>
+</tr>
+<tr>
+<td>2025 年 12 月</td>
+<td>日活约 <strong>7000 万</strong>（仅 APP 渠道）</td>
+</tr>
+<tr>
+<td>2026 年 1 月</td>
+<td><strong>日活突破 1 亿</strong>——中国首个亿级日活 AI 应用</td>
+</tr>
+<tr>
+<td>2026 年 2 月（春节）</td>
+<td>日活峰值达 <strong>1.45 亿</strong></td>
+</tr>
+<tr>
+<td>2026 年 2 月</td>
+<td>月活达 <strong>3.15 亿</strong>，环比增长 87%</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：新浪科技、钛媒体、PC Home）</p>
+<p><strong>3.15 亿月活是什么概念？</strong> 它等于 DeepSeek、元宝、蚂蚁阿福、千问（第 2-5 名 AI 应用）的月活<strong>总和</strong>（来源：新浪科技）。</p>
+<h3 id="_2">豆包为什么能做到第一</h3>
+<p>三个原因：</p>
+<p><strong>1. 字节的流量分发能力</strong></p>
+<p>抖音 <strong>7 亿+</strong> 日活是豆包最大的获客渠道。字节可以在抖音信息流里"免费"推广豆包——其他 AI 公司要花真金白银买流量，字节只需要"在自家 App 里放个入口"。</p>
+<p>2026 年春节期间，豆包与央视春晚合作，实现了用户规模的爆发式增长。</p>
+<p><strong>2. 多场景整合</strong></p>
+<p>豆包不只是聊天机器人。字节把它整合进了：
+- 抖音（视频生成、搜索增强）
+- 剪映/CapCut（AI 视频编辑）
+- 飞书（AI 办公助手）
+- 抖音商城（AI 购物推荐）
+- 联合中兴推出豆包 AI 手机</p>
+<p><strong>3. 激进的定价策略</strong></p>
+<p>豆包大模型 2.0 的定价：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>版本</th>
+<th>输入价格</th>
+<th>输出价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pro 版</td>
+<td><strong>3.2 元/百万 tokens</strong></td>
+<td><strong>16 元/百万 tokens</strong></td>
+</tr>
+<tr>
+<td>Lite 版</td>
+<td><strong>0.6 元/百万 tokens</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>字节声称推理成本降至行业标杆的 <strong>1/10</strong>，降幅达 <strong>90%</strong>（来源：财新、新华网）。这种"以价换量"策略和字节做抖音电商时的打法一脉相承——先用低价占市场，再谈盈利。</p>
+<p>反方观点：用户规模大不等于商业价值大。豆包的月活有多少来自"免费流量灌注"？一旦字节减少推广投入，留存率会不会骤降？目前中国 AI 应用市场高度同质化，豆包的用户粘性和付费转化率都未经验证。</p>
+<hr />
+<h2 id="20">豆包大模型 2.0：技术到底什么水平</h2>
+<p>2026 年 2 月 14 日，字节发布了豆包大模型 2.0（Doubao-Seed-2.0），这是 2024 年发布以来的首次大版本升级。</p>
+<h3 id="_3">产品矩阵</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>模型</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Doubao-Seed-2.0 <strong>Pro</strong></td>
+<td>旗舰通用模型</td>
+</tr>
+<tr>
+<td>Doubao-Seed-2.0 <strong>Lite</strong></td>
+<td>轻量级，全模态理解（视频+图像+音频+文本）</td>
+</tr>
+<tr>
+<td>Doubao-Seed-2.0 <strong>Mini</strong></td>
+<td>端侧部署</td>
+</tr>
+<tr>
+<td>Doubao-Seed-2.0 <strong>Code</strong></td>
+<td>编程优化</td>
+</tr>
+</tbody>
+</table></div>
+<p>2026 年 5 月 6 日，字节进一步发布了<strong>首款全模态理解模型</strong> Doubao-Seed-2.0-lite，支持视频、图像、音频、文本四种模态的原生统一理解（来源：IT 之家、火山引擎）。</p>
+<h3 id="_4">技术水平的客观评估</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>评估</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中文理解</td>
+<td>第一梯队（与 DeepSeek、千问并列）</td>
+</tr>
+<tr>
+<td>英文/多语言</td>
+<td>第二梯队（落后于 GPT-4、Claude）</td>
+</tr>
+<tr>
+<td>代码生成</td>
+<td>中上</td>
+</tr>
+<tr>
+<td>多模态</td>
+<td>进步显著，但与 GPT-4o 仍有差距</td>
+</tr>
+<tr>
+<td>推理成本</td>
+<td><strong>行业最低档之一</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>字节在大模型上的策略不是"做最强"，而是"做最便宜+最容易用"。</strong> 这与 OpenAI 追求 AGI 的路径完全不同。</p>
+<p>反方观点：大模型的竞争终局尚不明确。如果未来赢家通吃（类似搜索引擎），那么"第二梯队"的模型可能没有价值。字节在基础研究上的积累远不如 Google DeepMind、OpenAI 和 Anthropic，"应用层创新"能否弥补"基础层差距"是个未知数。</p>
+<hr />
+<h2 id="aws">火山引擎：中国版 AWS 的野心</h2>
+<p>火山引擎是字节的云计算和 AI 基础设施平台，对标 AWS/Azure。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024 年收入（估）</td>
+<td><strong>110-120 亿元</strong></td>
+</tr>
+<tr>
+<td>大模型调用市场份额</td>
+<td><strong>49.2%</strong>（第 1，来源：IDC）</td>
+</tr>
+<tr>
+<td>研究底稿预测的 2031 年收入</td>
+<td><strong>1200 亿元</strong></td>
+</tr>
+<tr>
+<td>预测年均增速</td>
+<td><strong>50-70%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：研究底稿、IDC）</p>
+<p>火山引擎的优势在于——<strong>豆包大模型 + 字节自己的业务（抖音、TikTok）= 巨大的内部需求</strong>。这和 AWS 早期靠亚马逊自身电商业务驱动增长的逻辑一样。</p>
+<p>但火山引擎在中国云计算市场的份额仍远落后于阿里云、华为云和腾讯云。<strong>云计算是个"强者愈强"的生意，后发者追赶的难度极大。</strong></p>
+<p>反方观点：火山引擎的核心竞争力不在传统 IaaS（基础设施即服务），而在<strong>模型即服务（MaaS）</strong>。在大模型调用市场拿到 49.2% 份额，说明它在"AI 时代的云计算"赛道上已经领先。这可能比传统云计算的市占率更有意义。</p>
+<hr />
+<h2 id="_5">其他业务：飞书、游戏与剪映</h2>
+<h3 id="_6">飞书：远未成功</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ARR（年度经常性收入）</td>
+<td>~<strong>$3 亿</strong>（2024 年估算）</td>
+</tr>
+<tr>
+<td>中国企业协作市场排名</td>
+<td><strong>第 3</strong>（远落后于钉钉、企业微信）</td>
+</tr>
+<tr>
+<td>研究底稿预测 2031 年 ARR</td>
+<td>~$7 亿</td>
+</tr>
+</tbody>
+</table></div>
+<p>飞书是字节跳动在 B 端最大的投入之一，但进展不及预期。企业协作市场的网络效应极强——你的合作伙伴用钉钉，你就不得不用钉钉。飞书要突围很难。</p>
+<h3 id="_7">游戏：战略收缩</h3>
+<p>字节曾大举进军游戏行业，2021-2022 年疯狂收购工作室。但 2023 年开始大幅裁撤游戏业务（朝夕光年），目前处于<strong>边缘化</strong>状态。</p>
+<p><strong>这是字节跳动少有的"大投入、低回报"案例。</strong> 它说明一件事——字节的算法分发能力并不能复制到所有领域。游戏需要内容创意和长线运营，不是算法能解决的。</p>
+<h3 id="capcut">剪映/CapCut：全球视频编辑第一</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024 年收入（估）</td>
+<td>~<strong>$13 亿</strong></td>
+</tr>
+<tr>
+<td>研究底稿预测 2031 年收入</td>
+<td>~<strong>$40 亿</strong></td>
+</tr>
+<tr>
+<td>全球市场地位</td>
+<td><strong>视频编辑 App 第 1</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>剪映/CapCut 是字节跳动最被低估的资产之一。随着 AI 视频编辑需求爆发，它的增长空间可能超出预期。<strong>但 CapCut 美国业务已划入 USDS 合资公司</strong>，字节对这部分增长的经济利益被稀释了。</p>
+<hr />
+<h2 id="ai_2">AI 豪赌的风险与回报</h2>
+<h3 id="ai_3">字节 AI 投入的回报周期</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>时间线</th>
+<th>预期回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>当前（2025-2026）</strong></td>
+<td>大规模投入期</td>
+<td>负——利润被大幅侵蚀</td>
+</tr>
+<tr>
+<td>中期（2027-2028）</td>
+<td>AI 应用商业化</td>
+<td>火山引擎+豆包开始贡献营收</td>
+</tr>
+<tr>
+<td>长期（2029-2031）</td>
+<td>AI 融入所有业务</td>
+<td>广告效率提升、电商转化率提升、新收入来源</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核心问题：字节能等得起吗？</strong></p>
+<p>答案是——<strong>大概率能</strong>。原因：</p>
+<ol>
+<li><strong>字节不上市</strong>，没有季度财报压力。管理层可以牺牲短期利润而不必面对股东逼宫</li>
+<li><strong>主营业务（抖音广告+电商）现金流极强</strong>，即使利润下滑 70%，公司仍不缺现金</li>
+<li><strong>张一鸣仍是绝对控制人</strong>，不会被董事会换掉</li>
+</ol>
+<p>但反方观点同样有力：<strong>历史上，"用利润换未来"的大赌注失败率远高于成功率。</strong> 雅虎砸钱做搜索、微软砸钱做手机、Meta 砸钱做元宇宙——大公司的"战略性亏损"往往是"战略性浪费"的美名。字节的 AI 投入能否产生足够回报，5 年内见分晓。</p>
+<hr />
+<h2 id="_8">关键数字总结</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>豆包月活</td>
+<td><strong>3.15 亿</strong>（2026.2）</td>
+</tr>
+<tr>
+<td>豆包日活峰值</td>
+<td><strong>1.45 亿</strong>（2026 春节）</td>
+</tr>
+<tr>
+<td>大模型调用市场份额</td>
+<td><strong>49.2%</strong>（第 1）</td>
+</tr>
+<tr>
+<td>2025 年资本支出</td>
+<td>~<strong>1500 亿元</strong></td>
+</tr>
+<tr>
+<td>2026 年 AI 预算</td>
+<td>~<strong>$230 亿</strong></td>
+</tr>
+<tr>
+<td>AI 芯片采购</td>
+<td>~<strong>850 亿元</strong></td>
+</tr>
+<tr>
+<td>火山引擎收入（2024 估）</td>
+<td><strong>110-120 亿元</strong></td>
+</tr>
+<tr>
+<td>豆包 Pro 输入定价</td>
+<td><strong>3.2 元/百万 tokens</strong></td>
+</tr>
+<tr>
+<td>推理成本降幅</td>
+<td><strong>90%</strong>（对比行业标杆）</td>
+</tr>
+<tr>
+<td>净利润受 AI 影响</td>
+<td><strong>下滑超 70%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_9">下期预告</h2>
+<p>最后一篇，我们回答最核心的问题——<strong>字节跳动值不值 $5500 亿？普通投资者有没有参与的方式？它会上市吗？</strong></p>
+<p>要回答的问题：</p>
+<ul>
+<li>$5500 亿估值对应什么样的盈利预期？贵了还是便宜了？</li>
+<li>字节为什么迟迟不上市？未来 3 年上市的概率有多大？</li>
+<li>普通投资者有哪些间接参与的方式？</li>
+<li>如果你只能做一个判断——字节跳动 5 年后会更值钱还是更不值钱？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂字节跳动》系列第 04 篇。后续 1 篇将陆续推出。</em>
+<em>本系列基于公开信息和媒体报道撰写，字节跳动为未上市公司，所有财务数据均为媒体报道和分析师估算，非经审计数据。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/698bb58b3ac3.html">估值与判断——5500 亿美元的迷雾</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/cc05a63decb0.html">TikTok 困局——全球化的代价</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/d46deee0b3fd.html">抖音帝国——广告、电商、本地生活三级火箭</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/f81e7e05a0c5.html">字节跳动——全球最大的未上市科技公司</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/5ae669a853cf.html">字节跳动各业务线未来3-5年发展展望</a><div class="meta">2026-04-10 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

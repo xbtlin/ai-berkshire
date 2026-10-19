@@ -1,0 +1,117 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>证据与审计说明 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><h1>证据与审计说明</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-09-25 · 导读 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E8%85%BE%E8%AE%AF-AI%E5%88%A9%E6%B6%A6%E7%A0%94%E7%A9%B6-20260924/evidence/README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">实际执行</a></li>
+<li><a href="#_2">复现</a></li>
+<li><a href="#_3">来源定位和交叉核对</a></li>
+<li><a href="#_4">未被工具绿色标识解决的问题</a></li>
+<li><a href="#_5">研究假设的证据边界</a></li>
+</ul>
+</div>
+</details><article><p>资料截止2026-09-24。报告的三个层次必须分开：历史事实、研究假设、由假设计算的结果。财务核对没有也不能证明2036预测正确。</p>
+<h2 id="_1">实际执行</h2>
+<ul>
+<li>使用investment-team的四个并行角色完成商业、财务、行业、风险研究；主报告由组长整合。风险角色在报告写成后再次读取主文与model.py，未发现必须修订的口径/算术问题。</li>
+<li><code>financial-rigor.txt</code>：12项跨来源核对、官方股数市值核算、估值和三情景终值、关键公式核算。模型另用Decimal实现，消除工具calc浮点尾差。</li>
+<li><code>report-audit-extract.txt</code>：原报告提取156个数据点、随机种子42、15%抽样得到24项。</li>
+<li><code>audit-results.json</code>及<code>audit-verdict.txt</code>：24项匹配，其中5项历史事实、11项公式重算、8项假设一致性。后三类中的公式和假设检查不属于外部事实验证；不能将24/24解释为24项预测已获外部证明。</li>
+<li>5项历史样本里，2024营收及IFRS归母有公司原文和Stockanalysis两来源；2026H1归母、Q2精确non-IFRS经营利润、剔预付FCF只有本轮取得的发行人精确口径，独立第二来源不足。已保留缺口，没有用同一公司不同网址冒充独立来源。</li>
+<li><code>decimal-valuation.json</code>：同日股价、股本及参考汇率的Decimal复算。</li>
+</ul>
+<h2 id="_2">复现</h2>
+<p>在项目根目录执行：</p>
+<pre><code class="language-bash">python3 reports/腾讯/腾讯-AI利润研究-20260924/model.py
+python3 tools/report_audit.py extract --report reports/腾讯/腾讯-AI利润研究-20260924/腾讯-investment-team-AI利润与竞争格局.md --seed 42
+python3 reports/腾讯/腾讯-AI利润研究-20260924/evidence/validation.py
+</code></pre>
+<p>validation.py中的历史取值是本次联网读取后登记的证据，不会在复现时自动重新联网；复现只能重算，更新财报需要重新取数。</p>
+<h2 id="_3">来源定位和交叉核对</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>信息</th>
+<th>主来源</th>
+<th>第二来源 / 限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023—2025营收、IFRS归母</td>
+<td>腾讯2023/2025全年业绩原文及比较列</td>
+<td>Stockanalysis年度表，一致</td>
+</tr>
+<tr>
+<td>2025 non-IFRS归母</td>
+<td>腾讯2025业绩原文</td>
+<td>36氪2026-03-18报道，一致</td>
+</tr>
+<tr>
+<td>2024 non-IFRS归母</td>
+<td>腾讯2025原文比较列</td>
+<td>本轮未取得独立二源；不能因历史已广为引用而自动标双源</td>
+</tr>
+<tr>
+<td>2026Q2收入、IFRS归母、确认资本开支</td>
+<td>腾讯Q2原文</td>
+<td>Reuters，四舍五入误差低于1%</td>
+</tr>
+<tr>
+<td>Q2 non-IFRS归母、实际FCF</td>
+<td>腾讯Q2原文</td>
+<td>MarketWatch，四舍五入误差低于1%</td>
+</tr>
+<tr>
+<td>H1归母</td>
+<td>港交所H1业绩公告页2</td>
+<td>Q1+Q2可重算，但同一发行人，并非独立验证</td>
+</tr>
+<tr>
+<td>H1现金流及SBC</td>
+<td>腾讯完整版中报、2025/2026利润调节表</td>
+<td>无独立同口径全覆盖，参考而非双源认证</td>
+</tr>
+<tr>
+<td>9月24日股价438.40港元</td>
+<td>Stockanalysis历史表</td>
+<td>Investing历史表，一致；未采用曾出现的过时搜索摘要437.80</td>
+</tr>
+<tr>
+<td>当日股数9,095,133,109</td>
+<td>腾讯翌日披露报表第一页</td>
+<td>平台约90亿股相差1.046%，原始披露优先</td>
+</tr>
+<tr>
+<td>每港元0.8559人民币</td>
+<td>Investing港元人民币历史表</td>
+<td>ExchangeRates UK同日参考值；时间截点未必相同</td>
+</tr>
+</tbody>
+</table></div>
+<p>主要原始网址：</p>
+<ul>
+<li><a href="https://static.www.tencent.com/uploads/2026/03/18/e6a646796d0d869acc76271c9ee1a6a5.pdf">2025业绩原文</a></li>
+<li><a href="https://static.www.tencent.com/uploads/2024/03/20/ebbe5a148484d3a0911109cdc82d1430.pdf">2023业绩原文</a></li>
+<li><a href="https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf">2026Q2业绩原文</a></li>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0812/2026081200296.pdf">港交所中期业绩公告</a></li>
+<li><a href="https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf">腾讯完整中报</a>：浏览解析超时，下载及pdftotext成功。Q2及中期公告已另行打开；中报未伪装成浏览工具成功解析。</li>
+<li><a href="https://static.www.tencent.com/website-2026-upload/e_Next-Day-Disclosure-Return_20260924-9bc5db.pdf">当日股份披露</a>：网页解析空，直接下载并提取文字核得股本。未把Q2加权股数当作9月期末股数。</li>
+<li><a href="https://stockanalysis.com/quote/hkg/0700/financials/">Stockanalysis损益</a>、<a href="https://stockanalysis.com/quote/hkg/0700/financials/cash-flow-statement/">现金流</a>、<a href="https://stockanalysis.com/quote/hkg/0700/statistics/">统计</a></li>
+<li><a href="https://www.reuters.com/business/retail-consumer/chinas-tencent-posts-11-second-quarter-revenue-rise-profit-misses-estimates-2026-08-12/">Reuters Q2报道</a></li>
+<li><a href="https://www.marketwatch.com/story/another-ai-lab-is-burning-through-cash-as-tencent-earnings-rise-1251b4c6">MarketWatch Q2报道</a></li>
+<li><a href="https://www.36kr.com/p/3728291911613317">36氪2025年度结果</a></li>
+<li><a href="https://stockanalysis.com/quote/hkg/0700/history/">Stockanalysis行情</a>、<a href="https://www.investing.com/equities/tencent-holdings-hk-historical-data">Investing行情</a></li>
+<li><a href="https://www.investing.com/currencies/hkd-cny-historical-data">Investing汇率</a>、<a href="https://www.exchangerates.org.uk/HKD-CNY-spot-exchange-rates-history-2026.html">ExchangeRates UK汇率</a></li>
+</ul>
+<h2 id="_4">未被工具绿色标识解决的问题</h2>
+<ol>
+<li><code>cross-validate</code>以中位数为分母；项目规范以主来源为分母。本报告股本差异按官方主来源计算为1.046%，尽管前者可能判一致，仍标差异。</li>
+<li>公司FCF与平台FCF相差18.06%，确认资本开支与付款相差10.46%；属于口径问题，没有把两者平均，也未强行塞入“通过”事实样本。</li>
+<li>9月法定股数与平台经济股数差异可能涉及奖励计划持股、回购、更新时点，不保证全部由四舍五入导致；官方股数市值相对平台相差约1.20%。</li>
+<li>股权薪酬：2025 non-IFRS归母调节加回347.11亿；2026H1为149.49亿。300亿年度经济成本假设参照H1年化量级，不是可忽略股权薪酬。2036金额仍是情景假设。</li>
+<li>Aastocks基本财务页及Macrotrends未能取得可用数据；Aastocks报价缓存为8月26日，不能充当9月24日价。改用公司原文、Stockanalysis及独立新闻报道，并保留覆盖缺口。</li>
+<li>2036三情景终值工具固定股数、汇率及PE，未加入回购或分红，也没有给出折现内在价值；不要把其终值年化价格回报视为完整股东总回报。</li>
+</ol>
+<h2 id="_5">研究假设的证据边界</h2>
+<p>新AI亏损、业务自然增速、AI带来的额外收入、贡献率、2036分部收入/利润率、税后归母转化及经济成本扣减均由研究者设定。公司尚未披露足以逐项估计AI净贡献的分部账目。模型目的是使观点可复算、可检验，非给不可观测的反事实贴上精确事实标签。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/549a5c7c8f83.html">腾讯研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/fa1ad1445212.html">腾讯研究附录：来源、真值、算术与尚未解决的缺口</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/6832de236773.html">02｜微信的护城河，保护了什么，又漏掉了什么</a><div class="meta">2026-09-06 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

@@ -1,0 +1,1352 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>拼多多国内主站 10年利润预测模型 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/拼多多/index.html">拼多多</a></div><h1>拼多多国内主站 10年利润预测模型</h1><div class="meta"><a href="../companies/拼多多/index.html">拼多多</a> ｜ 2026-05-15 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E4%B8%BB%E7%AB%99-10%E5%B9%B4%E5%88%A9%E6%B6%A6%E9%A2%84%E6%B5%8B-20260515.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一句话结论</a></li>
+<li><a href="#_2">第一部分：主站收入利润拆分（推算）</a><ul>
+<li><a href="#11-pdd">1.1 PDD整体财务数据（已知）</a></li>
+<li><a href="#12-vs-temu-vs">1.2 主站 vs Temu vs 多多买菜 收入拆分（推算）</a></li>
+</ul>
+</li>
+<li><a href="#_3">第二部分：主站利润率趋势分析</a><ul>
+<li><a href="#21-take-rate">2.1 Take Rate（货币化率）历史趋势</a></li>
+<li><a href="#22-vs">2.2 广告收入 vs 佣金收入利润率差异</a></li>
+<li><a href="#23">2.3 运营成本结构趋势</a></li>
+<li><a href="#24">2.4 对标淘天利润率</a></li>
+</ul>
+</li>
+<li><a href="#102026-2036">第三部分：10年利润模型（2026-2036）</a><ul>
+<li><a href="#31">3.1 关键假设</a></li>
+<li><a href="#32">3.2 三情景详细预测表（逐年）</a></li>
+<li><a href="#33">3.3 三情景汇总对比</a></li>
+<li><a href="#34-2025">3.4 核心结论：比2025年高还是低？</a></li>
+</ul>
+</li>
+<li><a href="#_8">第四部分：对标分析</a><ul>
+<li><a href="#41">4.1 淘天（阿里国内电商）——成熟电商的利润天花板</a></li>
+<li><a href="#42-amazon-marketplace20">4.2 Amazon Marketplace——20年利润率演变</a></li>
+<li><a href="#43-coupang">4.3 亚洲电商对标：Coupang（韩国）、乐天（日本）</a></li>
+</ul>
+</li>
+<li><a href="#_9">第五部分：敏感性分析与风险</a><ul>
+<li><a href="#51-2036">5.1 关键变量敏感性（2036年主站净利润）</a></li>
+<li><a href="#52">5.2 上行风险（可能使预测偏保守的因素）</a></li>
+<li><a href="#53">5.3 下行风险（可能使预测偏乐观的因素）</a></li>
+<li><a href="#54">5.4 最大的"已知的未知"</a></li>
+</ul>
+</li>
+<li><a href="#_10">第六部分：总结</a><ul>
+<li><a href="#_11">核心数字</a></li>
+<li><a href="#_12">关键判断</a></li>
+<li><a href="#202654">与此前报告（2026年5月4日）的对比</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><p><strong>研究日期</strong>：2026年5月15日
+<strong>研究范围</strong>：仅拼多多国内主站（不含Temu、不含多多买菜）
+<strong>核心问题</strong>：2036年主站净利润会比2025年高还是低？具体是多少？
+<strong>数据来源</strong>：PDD Holdings财报、华尔街见闻、券商研报拆分、淘天/Amazon/Coupang/乐天财报
+<strong>置信度</strong>：中等（主站比Temu可预测性强得多，但10年仍有较大不确定性）</p>
+<hr />
+<h2 id="_1">一句话结论</h2>
+<blockquote>
+<p><strong>2036年拼多多主站净利润三情景预测：悲观900亿、中性1,350亿、乐观1,850亿。对比2025年主站净利润约1,050亿（估算），中性情景下十年增长约29%，年化仅2.6%。主站是一台成熟的印钞机，但增长空间有限——核心矛盾是GMV增速放缓至低个位数、take rate已近天花板、利润率受"千亿扶持"持续压制。</strong></p>
+</blockquote>
+<hr />
+<h2 id="_2">第一部分：主站收入利润拆分（推算）</h2>
+<h3 id="11-pdd">1.1 PDD整体财务数据（已知）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2024年</th>
+<th>2025年</th>
+<th>YoY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总营收</td>
+<td>3,938亿</td>
+<td>4,318亿</td>
+<td>+10%</td>
+</tr>
+<tr>
+<td>在线营销服务收入</td>
+<td>1,979亿</td>
+<td>2,178亿</td>
+<td>+10%</td>
+</tr>
+<tr>
+<td>交易服务收入</td>
+<td>1,959亿</td>
+<td>2,141亿</td>
+<td>+9%</td>
+</tr>
+<tr>
+<td>GAAP净利润</td>
+<td>1,124亿</td>
+<td>993亿</td>
+<td>-12%</td>
+</tr>
+<tr>
+<td>Non-GAAP净利润</td>
+<td>1,223亿</td>
+<td>1,073亿</td>
+<td>-12%</td>
+</tr>
+<tr>
+<td>营业成本</td>
+<td>1,539亿</td>
+<td>1,888亿</td>
+<td>+23%</td>
+</tr>
+<tr>
+<td>销售及营销费用</td>
+<td>1,113亿</td>
+<td>估约1,407亿</td>
+<td>+26%</td>
+</tr>
+<tr>
+<td>研发费用</td>
+<td>127亿</td>
+<td>估约178亿</td>
+<td>+41%</td>
+</tr>
+<tr>
+<td>管理费用</td>
+<td>76亿</td>
+<td>估约83亿</td>
+<td>+10%</td>
+</tr>
+<tr>
+<td>经营利润</td>
+<td>1,084亿</td>
+<td>946亿</td>
+<td>-13%</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>数据来源：PDD Holdings 2024年报、2025年各季度财报</em></p>
+<h3 id="12-vs-temu-vs">1.2 主站 vs Temu vs 多多买菜 收入拆分（推算）</h3>
+<p><strong>拆分方法论</strong>：基于华尔街见闻深度分析、开源证券/汇丰研报、Temu GMV及货币化率推算。PDD不单独披露各业务线数据，以下为市场共识估算。</p>
+<h4 id="2024">2024年拆分</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th>营收（估算）</th>
+<th>占比</th>
+<th>经营利润（估算）</th>
+<th>经营利润率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>主站（广告+佣金）</strong></td>
+<td><strong>约2,442亿</strong></td>
+<td><strong>62%</strong></td>
+<td><strong>约1,590-1,710亿</strong></td>
+<td><strong>65-70%</strong></td>
+</tr>
+<tr>
+<td>Temu</td>
+<td>约1,196亿</td>
+<td>30%</td>
+<td>约-253亿（亏损35亿美元）</td>
+<td>-21%</td>
+</tr>
+<tr>
+<td>多多买菜</td>
+<td>约300亿</td>
+<td>8%</td>
+<td>约-20~-30亿</td>
+<td>约-8%</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>3,938亿</strong></td>
+<td><strong>100%</strong></td>
+<td><strong>约1,084亿</strong></td>
+<td><strong>27.5%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><em>数据来源：华尔街见闻2024Q4财报深度解读；Temu GMV约550亿美元，货币化率约30%（全托管净额法）</em></p>
+<p><strong>主站净利润推算（2024年）</strong>：
+- 主站经营利润约1,650亿（取中值）
+- 扣除所得税（有效税率约12-15%，因海外业务低税率）、少量利息等
+- 主站净利润估算：<strong>约1,400-1,500亿</strong></p>
+<h4 id="2025">2025年拆分</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th>营收（估算）</th>
+<th>占比</th>
+<th>经营利润（估算）</th>
+<th>经营利润率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>主站（广告+佣金）</strong></td>
+<td><strong>约2,500-2,600亿</strong></td>
+<td><strong>58-60%</strong></td>
+<td><strong>约1,350-1,450亿</strong></td>
+<td><strong>54-56%</strong></td>
+</tr>
+<tr>
+<td>Temu</td>
+<td>约1,450-1,550亿</td>
+<td>34-36%</td>
+<td>约-100~-200亿</td>
+<td>-7%~-14%</td>
+</tr>
+<tr>
+<td>多多买菜</td>
+<td>约280-300亿</td>
+<td>6-7%</td>
+<td>约0~-20亿</td>
+<td>接近盈亏平衡</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>4,318亿</strong></td>
+<td><strong>100%</strong></td>
+<td><strong>946亿</strong></td>
+<td><strong>21.9%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>2025年主站变化的关键说明</strong>：
+- 主站营收增长约3-7%（广告收入增速放缓至5%左右，佣金受"百亿减免"压制）
+- 主站经营利润率从65-70%降至54-56%，原因是：
+  1. "千亿扶持"政策：降佣、流量补贴、物流基建投入（2025年承诺三年投1,000亿）
+  2. 研发费用分摊增加（+41% YoY）
+  3. 营销费用增加以抵御抖音竞争
+- Temu亏损大幅收窄（从-253亿到-100~-200亿），得益于半托管占比提升至34%+
+- <strong>主站净利润估算（2025年）：约1,050-1,150亿</strong>（扣税后）</p>
+<p><strong>重要提示</strong>：以上拆分均为市场推算，PDD从未官方确认。不同券商估算存在较大差异。主站经营利润率区间（35-40% vs 65-70%）的差异主要取决于费用分摊方式——若将集团层面的营销/研发/管理费用大部分归给主站，利润率降至35-40%；若仅计算主站直接经营成本，利润率可达65-70%。</p>
+<p><strong>本报告采用的口径</strong>：主站经营利润率35-40%（含费用分摊），即2025年主站经营利润约900-1,040亿，净利润约<strong>800-950亿</strong>。考虑到此前已有分析采用65-70%的口径，我们取两种方法的中间值，以<strong>主站2025年净利润约1,050亿</strong>作为基准进行预测。</p>
+<hr />
+<h2 id="_3">第二部分：主站利润率趋势分析</h2>
+<h3 id="21-take-rate">2.1 Take Rate（货币化率）历史趋势</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>主站广告货币化率</th>
+<th>主站佣金货币化率</th>
+<th>主站综合Take Rate</th>
+<th>GMV（估算）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020</td>
+<td>约2.5%</td>
+<td>约0.6%</td>
+<td>约3.1%</td>
+<td>约1.7万亿</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>约3.0%</td>
+<td>约0.7%</td>
+<td>约3.7%</td>
+<td>约2.4万亿</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>约3.4%</td>
+<td>约0.8%</td>
+<td>约4.2%</td>
+<td>约3.3万亿</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>约4.1%</td>
+<td>约0.9%</td>
+<td>约5.0%</td>
+<td>约4.0万亿</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>约4.5%</td>
+<td>约1.0%</td>
+<td>约5.5%</td>
+<td>约4.7万亿（部分来源称5.2万亿）</td>
+</tr>
+<tr>
+<td>2025E</td>
+<td>约4.6%</td>
+<td>约1.0%</td>
+<td>约5.6%</td>
+<td>约5.0万亿</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>数据来源：开源证券、华创证券、未来智库研报；GMV为推算值（部分来源含多多买菜GMV）</em></p>
+<p><strong>趋势判断</strong>：
+- 广告货币化率从2020年的2.5%升至2024年的4.5%，四年翻倍，主要驱动力是"全站推"（全站推广）工具的渗透
+- 佣金率相对稳定，约1.0%
+- <strong>综合Take Rate 5.5%已接近天花板</strong>。对比：淘天综合约3.9%（但含佣金后约5.5-6%），抖音约8-10%（直播佣金较高）
+- 未来1-1.5个百分点上行空间（开源证券预计2026年达5.5-6.0%），但"千亿扶持"降佣政策正在反向压制</p>
+<h3 id="22-vs">2.2 广告收入 vs 佣金收入利润率差异</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>收入类型</th>
+<th>毛利率</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>在线营销（广告）</td>
+<td><strong>约85-90%</strong></td>
+<td>纯平台流量分发，几乎无边际成本</td>
+</tr>
+<tr>
+<td>交易服务（佣金）</td>
+<td><strong>约60-70%</strong></td>
+<td>含支付通道成本(约0.6%)、部分履约成本</td>
+</tr>
+</tbody>
+</table></div>
+<p>广告收入是主站最核心的利润引擎。2024年在线营销收入占主站收入约81%（1,979亿/2,442亿），佣金仅约19%。这解释了主站超高利润率的来源。</p>
+<h3 id="23">2.3 运营成本结构趋势</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>费用项</th>
+<th>2024年（整体）</th>
+<th>占营收比</th>
+<th>2025年（整体）</th>
+<th>占营收比</th>
+<th>趋势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业成本</td>
+<td>1,539亿</td>
+<td>39.1%</td>
+<td>1,888亿</td>
+<td>43.7%</td>
+<td>上升（Temu履约成本）</td>
+</tr>
+<tr>
+<td>销售及营销</td>
+<td>1,113亿</td>
+<td>28.3%</td>
+<td>约1,407亿</td>
+<td>32.6%</td>
+<td>上升（竞争加剧+Temu获客）</td>
+</tr>
+<tr>
+<td>研发</td>
+<td>127亿</td>
+<td>3.2%</td>
+<td>约178亿</td>
+<td>4.1%</td>
+<td>上升（AI+基础设施）</td>
+</tr>
+<tr>
+<td>管理</td>
+<td>76亿</td>
+<td>1.9%</td>
+<td>约83亿</td>
+<td>1.9%</td>
+<td>稳定</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>主站单独的费用率显著低于集团整体</strong>。主站作为轻资产广告平台，主要成本是：
+1. 服务器/带宽（约营收3-5%）
+2. 支付通道费（约营收2-3%）
+3. 分摊的营销费用（约营收10-15%）
+4. 分摊的研发/管理费用（约营收3-5%）
+5. <strong>主站总费用率估计约20-25%</strong>，对应经营利润率约35-40%</p>
+<h3 id="24">2.4 对标淘天利润率</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>淘天集团（FY2025）</th>
+<th>拼多多主站（2025E估算）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td>4,498亿</td>
+<td>约2,500-2,600亿</td>
+</tr>
+<tr>
+<td>经调整EBITA</td>
+<td>1,962亿</td>
+<td>约900-1,400亿（取决于费用分摊）</td>
+</tr>
+<tr>
+<td>经调整EBITA利润率</td>
+<td><strong>43.6%</strong></td>
+<td><strong>约35-55%</strong></td>
+</tr>
+<tr>
+<td>GMV</td>
+<td>约8.3万亿</td>
+<td>约4.7-5.0万亿</td>
+</tr>
+<tr>
+<td>综合Take Rate</td>
+<td>约5.4%（客户管理/GMV）</td>
+<td>约5.5%</td>
+</tr>
+<tr>
+<td>收入增速</td>
+<td>+3%</td>
+<td>约+5%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>对标结论</strong>：
+- 淘天经调整EBITA利润率约44%，是成熟电商平台的利润率锚
+- 拼多多主站当前利润率可能已略低于或接近淘天（受"千亿扶持"压制）
+- <strong>长期来看，拼多多主站利润率将向淘天的40-45%区间收敛</strong>——这是成熟平台电商的"自然均衡利润率"
+- 淘天2025财年收入增速仅3%，EBITA增速仅1%——这是拼多多主站5-10年后的镜像</p>
+<hr />
+<h2 id="102026-2036">第三部分：10年利润模型（2026-2036）</h2>
+<h3 id="31">3.1 关键假设</h3>
+<h4 id="_4">中国电商大盘假设</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2025年</th>
+<th>2030年</th>
+<th>2036年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国网络零售额</td>
+<td>约15.5万亿</td>
+<td>约20-22万亿</td>
+<td>约25-28万亿</td>
+</tr>
+<tr>
+<td>年化增速</td>
+<td>7.2%</td>
+<td>5-6%</td>
+<td>3-4%</td>
+</tr>
+<tr>
+<td>电商渗透率</td>
+<td>约30%</td>
+<td>约38%</td>
+<td>约42-45%</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>假设依据：2024年中国网络零售额15.5万亿，增速7.2%，逐步向GDP增速收敛</em></p>
+<h4 id="_5">三情景核心假设表</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设项</th>
+<th>悲观</th>
+<th>中性</th>
+<th>乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GMV增速（2026-2030）</strong></td>
+<td>2-3%/年</td>
+<td>5-6%/年</td>
+<td>8-10%/年</td>
+</tr>
+<tr>
+<td><strong>GMV增速（2031-2036）</strong></td>
+<td>0-1%/年</td>
+<td>2-3%/年</td>
+<td>4-5%/年</td>
+</tr>
+<tr>
+<td><strong>2036年主站GMV</strong></td>
+<td>5.5万亿</td>
+<td>6.8万亿</td>
+<td>8.5万亿</td>
+</tr>
+<tr>
+<td><strong>2036年主站市占率</strong></td>
+<td>15%（丢失份额）</td>
+<td>19-20%（维持）</td>
+<td>23-25%（提升）</td>
+</tr>
+<tr>
+<td><strong>2036年综合Take Rate</strong></td>
+<td>5.0%（降佣压制）</td>
+<td>5.8%</td>
+<td>6.5%（广告深化）</td>
+</tr>
+<tr>
+<td><strong>2036年主站营收</strong></td>
+<td>2,750亿</td>
+<td>3,950亿</td>
+<td>5,525亿</td>
+</tr>
+<tr>
+<td><strong>2036年经营利润率</strong></td>
+<td>33%（竞争+投入）</td>
+<td>38%（成熟态）</td>
+<td>40%（规模效应）</td>
+</tr>
+<tr>
+<td><strong>2036年主站经营利润</strong></td>
+<td>908亿</td>
+<td>1,501亿</td>
+<td>2,210亿</td>
+</tr>
+<tr>
+<td><strong>有效税率</strong></td>
+<td>12%</td>
+<td>10%</td>
+<td>8%（税收优惠）</td>
+</tr>
+<tr>
+<td><strong>2036年主站净利润</strong></td>
+<td><strong>约900亿</strong></td>
+<td><strong>约1,350亿</strong></td>
+<td><strong>约1,850亿</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="32">3.2 三情景详细预测表（逐年）</h3>
+<h4 id="_6">悲观情景：国内丢份额 + 持续高投入</h4>
+<p><strong>假设逻辑</strong>：抖音电商持续侵蚀低价心智（GMV预计4.3万亿且30%+增速），AI Agent颠覆推荐算法削弱PDD流量护城河，"千亿扶持"降佣效果不如预期导致商家流失。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>主站GMV（万亿）</th>
+<th>Take Rate</th>
+<th>主站营收（亿）</th>
+<th>经营利润率</th>
+<th>经营利润（亿）</th>
+<th>净利润（亿）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025（基准）</strong></td>
+<td><strong>5.0</strong></td>
+<td><strong>5.5%</strong></td>
+<td><strong>2,550</strong></td>
+<td><strong>37%</strong></td>
+<td><strong>944</strong></td>
+<td><strong>~1,050</strong></td>
+</tr>
+<tr>
+<td>2026</td>
+<td>5.1</td>
+<td>5.4%</td>
+<td>2,754</td>
+<td>36%</td>
+<td>991</td>
+<td>872</td>
+</tr>
+<tr>
+<td>2027</td>
+<td>5.2</td>
+<td>5.3%</td>
+<td>2,756</td>
+<td>35%</td>
+<td>965</td>
+<td>849</td>
+</tr>
+<tr>
+<td>2028</td>
+<td>5.3</td>
+<td>5.2%</td>
+<td>2,756</td>
+<td>35%</td>
+<td>965</td>
+<td>849</td>
+</tr>
+<tr>
+<td>2029</td>
+<td>5.3</td>
+<td>5.2%</td>
+<td>2,756</td>
+<td>34%</td>
+<td>937</td>
+<td>825</td>
+</tr>
+<tr>
+<td>2030</td>
+<td>5.4</td>
+<td>5.1%</td>
+<td>2,754</td>
+<td>34%</td>
+<td>936</td>
+<td>824</td>
+</tr>
+<tr>
+<td>2031</td>
+<td>5.4</td>
+<td>5.1%</td>
+<td>2,754</td>
+<td>33%</td>
+<td>909</td>
+<td>800</td>
+</tr>
+<tr>
+<td>2032</td>
+<td>5.4</td>
+<td>5.0%</td>
+<td>2,700</td>
+<td>33%</td>
+<td>891</td>
+<td>784</td>
+</tr>
+<tr>
+<td>2033</td>
+<td>5.4</td>
+<td>5.0%</td>
+<td>2,700</td>
+<td>33%</td>
+<td>891</td>
+<td>784</td>
+</tr>
+<tr>
+<td>2034</td>
+<td>5.5</td>
+<td>5.0%</td>
+<td>2,750</td>
+<td>33%</td>
+<td>908</td>
+<td>799</td>
+</tr>
+<tr>
+<td>2035</td>
+<td>5.5</td>
+<td>5.0%</td>
+<td>2,750</td>
+<td>33%</td>
+<td>908</td>
+<td>799</td>
+</tr>
+<tr>
+<td><strong>2036</strong></td>
+<td><strong>5.5</strong></td>
+<td><strong>5.0%</strong></td>
+<td><strong>2,750</strong></td>
+<td><strong>33%</strong></td>
+<td><strong>908</strong></td>
+<td><strong>~900</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>悲观情景叙事</strong>：抖音电商2030年GMV追平拼多多（约6万亿），低价心智被"直播间秒杀+内容种草"持续分流。AI购物Agent从2028年开始实质影响流量分发，PDD沦为"履约通道"之一。"千亿扶持"三年结束后商家并未回流，反而加速分散到抖音和即时零售平台。Take rate被迫下调以挽留商家。</p>
+<h4 id="_7">中性情景：国内守成 + 利润率温和扩张</h4>
+<p><strong>假设逻辑</strong>：拼多多维持国内约20%市占率，与淘天、抖音三分天下，"白牌+农产品+性价比"心智稳固。Take rate温和提升（全站推渗透+新广告产品），利润率向淘天的成熟态靠拢。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>主站GMV（万亿）</th>
+<th>Take Rate</th>
+<th>主站营收（亿）</th>
+<th>经营利润率</th>
+<th>经营利润（亿）</th>
+<th>净利润（亿）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025（基准）</strong></td>
+<td><strong>5.0</strong></td>
+<td><strong>5.5%</strong></td>
+<td><strong>2,550</strong></td>
+<td><strong>37%</strong></td>
+<td><strong>944</strong></td>
+<td><strong>~1,050</strong></td>
+</tr>
+<tr>
+<td>2026</td>
+<td>5.3</td>
+<td>5.6%</td>
+<td>2,968</td>
+<td>36%</td>
+<td>1,068</td>
+<td>961</td>
+</tr>
+<tr>
+<td>2027</td>
+<td>5.6</td>
+<td>5.6%</td>
+<td>3,136</td>
+<td>36%</td>
+<td>1,129</td>
+<td>1,016</td>
+</tr>
+<tr>
+<td>2028</td>
+<td>5.9</td>
+<td>5.7%</td>
+<td>3,363</td>
+<td>37%</td>
+<td>1,244</td>
+<td>1,120</td>
+</tr>
+<tr>
+<td>2029</td>
+<td>6.2</td>
+<td>5.7%</td>
+<td>3,534</td>
+<td>37%</td>
+<td>1,308</td>
+<td>1,177</td>
+</tr>
+<tr>
+<td>2030</td>
+<td>6.5</td>
+<td>5.8%</td>
+<td>3,770</td>
+<td>38%</td>
+<td>1,433</td>
+<td>1,289</td>
+</tr>
+<tr>
+<td>2031</td>
+<td>6.6</td>
+<td>5.8%</td>
+<td>3,828</td>
+<td>38%</td>
+<td>1,455</td>
+<td>1,309</td>
+</tr>
+<tr>
+<td>2032</td>
+<td>6.7</td>
+<td>5.8%</td>
+<td>3,886</td>
+<td>38%</td>
+<td>1,477</td>
+<td>1,329</td>
+</tr>
+<tr>
+<td>2033</td>
+<td>6.7</td>
+<td>5.8%</td>
+<td>3,886</td>
+<td>38%</td>
+<td>1,477</td>
+<td>1,329</td>
+</tr>
+<tr>
+<td>2034</td>
+<td>6.8</td>
+<td>5.8%</td>
+<td>3,944</td>
+<td>38%</td>
+<td>1,499</td>
+<td>1,349</td>
+</tr>
+<tr>
+<td>2035</td>
+<td>6.8</td>
+<td>5.8%</td>
+<td>3,944</td>
+<td>38%</td>
+<td>1,499</td>
+<td>1,349</td>
+</tr>
+<tr>
+<td><strong>2036</strong></td>
+<td><strong>6.8</strong></td>
+<td><strong>5.8%</strong></td>
+<td><strong>3,950</strong></td>
+<td><strong>38%</strong></td>
+<td><strong>1,501</strong></td>
+<td><strong>~1,350</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>中性情景叙事</strong>：三强格局稳定（淘天约30%、抖音约25%、PDD约20%），总盘子从22万亿增长至27万亿。PDD依靠白牌C2M供应链和下沉市场深耕保住基本盘。全站推渗透率从40%提升至60%，推动广告货币化率稳步提升。"千亿扶持"2028年到期后利润率回升，2030年后进入稳态。AI Agent虽改变流量入口但PDD通过API接入保住"最低价履约"角色。</p>
+<h4 id="take-rate">乐观情景：份额提升 + Take Rate深化 + 成本效率</h4>
+<p><strong>假设逻辑</strong>：拼多多在AI电商时代凭借"绝对低价+极致供应链效率"成为AI Agent首选采购平台（类似Google搜索在SEO时代的地位），份额从20%提升至25%。广告产品创新（视频流广告、AI智能投放）推动Take rate持续提升。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>主站GMV（万亿）</th>
+<th>Take Rate</th>
+<th>主站营收（亿）</th>
+<th>经营利润率</th>
+<th>经营利润（亿）</th>
+<th>净利润（亿）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025（基准）</strong></td>
+<td><strong>5.0</strong></td>
+<td><strong>5.5%</strong></td>
+<td><strong>2,550</strong></td>
+<td><strong>37%</strong></td>
+<td><strong>944</strong></td>
+<td><strong>~1,050</strong></td>
+</tr>
+<tr>
+<td>2026</td>
+<td>5.5</td>
+<td>5.7%</td>
+<td>3,135</td>
+<td>37%</td>
+<td>1,160</td>
+<td>1,067</td>
+</tr>
+<tr>
+<td>2027</td>
+<td>6.0</td>
+<td>5.8%</td>
+<td>3,480</td>
+<td>37%</td>
+<td>1,288</td>
+<td>1,185</td>
+</tr>
+<tr>
+<td>2028</td>
+<td>6.5</td>
+<td>5.9%</td>
+<td>3,835</td>
+<td>38%</td>
+<td>1,457</td>
+<td>1,341</td>
+</tr>
+<tr>
+<td>2029</td>
+<td>7.0</td>
+<td>6.0%</td>
+<td>4,200</td>
+<td>38%</td>
+<td>1,596</td>
+<td>1,468</td>
+</tr>
+<tr>
+<td>2030</td>
+<td>7.5</td>
+<td>6.1%</td>
+<td>4,575</td>
+<td>39%</td>
+<td>1,784</td>
+<td>1,641</td>
+</tr>
+<tr>
+<td>2031</td>
+<td>7.7</td>
+<td>6.2%</td>
+<td>4,774</td>
+<td>39%</td>
+<td>1,862</td>
+<td>1,713</td>
+</tr>
+<tr>
+<td>2032</td>
+<td>7.9</td>
+<td>6.3%</td>
+<td>4,977</td>
+<td>39%</td>
+<td>1,941</td>
+<td>1,786</td>
+</tr>
+<tr>
+<td>2033</td>
+<td>8.1</td>
+<td>6.3%</td>
+<td>5,103</td>
+<td>40%</td>
+<td>2,041</td>
+<td>1,878</td>
+</tr>
+<tr>
+<td>2034</td>
+<td>8.3</td>
+<td>6.4%</td>
+<td>5,312</td>
+<td>40%</td>
+<td>2,125</td>
+<td>1,955</td>
+</tr>
+<tr>
+<td>2035</td>
+<td>8.4</td>
+<td>6.4%</td>
+<td>5,376</td>
+<td>40%</td>
+<td>2,150</td>
+<td>1,978</td>
+</tr>
+<tr>
+<td><strong>2036</strong></td>
+<td><strong>8.5</strong></td>
+<td><strong>6.5%</strong></td>
+<td><strong>5,525</strong></td>
+<td><strong>40%</strong></td>
+<td><strong>2,210</strong></td>
+<td><strong>~1,850</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>乐观情景叙事</strong>：PDD证明"绝对低价"在AI时代反而是最强护城河——当AI Agent帮消费者比价时，PDD因为价格永远最低而获得最高转化率。抖音电商增速放缓至个位数（直播疲劳+监管），PDD从中收回份额。农村电商、产业带直发、C2M定制等持续深化，GMV渗透率在下沉市场从55%提升至70%。</p>
+<h3 id="33">3.3 三情景汇总对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>悲观</th>
+<th>中性</th>
+<th>乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>概率权重</strong></td>
+<td><strong>25%</strong></td>
+<td><strong>50%</strong></td>
+<td><strong>25%</strong></td>
+</tr>
+<tr>
+<td>2036年主站GMV</td>
+<td>5.5万亿</td>
+<td>6.8万亿</td>
+<td>8.5万亿</td>
+</tr>
+<tr>
+<td>2036年Take Rate</td>
+<td>5.0%</td>
+<td>5.8%</td>
+<td>6.5%</td>
+</tr>
+<tr>
+<td>2036年主站营收</td>
+<td>2,750亿</td>
+<td>3,950亿</td>
+<td>5,525亿</td>
+</tr>
+<tr>
+<td>2036年经营利润率</td>
+<td>33%</td>
+<td>38%</td>
+<td>40%</td>
+</tr>
+<tr>
+<td><strong>2036年主站净利润</strong></td>
+<td><strong>约900亿</strong></td>
+<td><strong>约1,350亿</strong></td>
+<td><strong>约1,850亿</strong></td>
+</tr>
+<tr>
+<td>vs 2025年（约1,050亿）</td>
+<td><strong>-14%</strong></td>
+<td><strong>+29%</strong></td>
+<td><strong>+76%</strong></td>
+</tr>
+<tr>
+<td>10年年化增速</td>
+<td><strong>-1.4%</strong></td>
+<td><strong>+2.3%</strong></td>
+<td><strong>+5.3%</strong></td>
+</tr>
+<tr>
+<td><strong>概率加权预期</strong></td>
+<td></td>
+<td><strong>约1,340亿</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="34-2025">3.4 核心结论：比2025年高还是低？</h3>
+<p><strong>概率加权答案：2036年主站净利润约1,340亿，比2025年约1,050亿高约28%，但10年年化增速仅2.3%。</strong></p>
+<p>具体来说：
+- <strong>悲观情景（25%概率）</strong>：2036年约900亿，比2025年<strong>低14%</strong>
+- <strong>中性情景（50%概率）</strong>：2036年约1,350亿，比2025年<strong>高29%</strong>
+- <strong>乐观情景（25%概率）</strong>：2036年约1,850亿，比2025年<strong>高76%</strong></p>
+<p><strong>白话翻译</strong>：主站是一台已经在最大功率运转的印钞机。未来十年，这台机器不会坏（大概率），但也很难跑得更快。最可能的结果是十年后利润比现在高20-30%，但不会翻倍。</p>
+<hr />
+<h2 id="_8">第四部分：对标分析</h2>
+<h3 id="41">4.1 淘天（阿里国内电商）——成熟电商的利润天花板</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>淘天FY2023</th>
+<th>淘天FY2024</th>
+<th>淘天FY2025</th>
+<th>趋势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td>4,349亿</td>
+<td>4,349亿</td>
+<td>4,498亿</td>
+<td>两年仅增3.4%</td>
+</tr>
+<tr>
+<td>经调整EBITA</td>
+<td>1,936亿</td>
+<td>1,948亿</td>
+<td>1,962亿</td>
+<td>三年几乎持平</td>
+</tr>
+<tr>
+<td>EBITA利润率</td>
+<td>44.5%</td>
+<td>44.8%</td>
+<td>43.6%</td>
+<td>稳定在43-45%</td>
+</tr>
+<tr>
+<td>GMV增速</td>
+<td>个位数</td>
+<td>中个位数</td>
+<td>中个位数</td>
+<td>已进入稳态</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>数据来源：阿里巴巴集团财报，FY2025截至2025年3月31日</em></p>
+<p><strong>对标启示</strong>：
+1. 淘天是拼多多主站5-10年后的镜像——收入增速降至低个位数，利润率稳定在43-45%
+2. 淘天经调整EBITA约1,962亿，<strong>这是中国平台电商年利润的"天花板参照"</strong>
+3. 淘天GMV 8万亿对应收入4,498亿，take rate约5.4%——与PDD主站5.5%接近
+4. <strong>关键差异</strong>：淘天有天猫品牌溢价（高客单价广告），PDD主站以白牌为主（低客单价但高频），长期take rate提升空间PDD可能更小</p>
+<h3 id="42-amazon-marketplace20">4.2 Amazon Marketplace——20年利润率演变</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时期</th>
+<th>Amazon北美经营利润率</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2015-2019</td>
+<td>3-5%</td>
+<td>早期规模扩张，利润率低</td>
+</tr>
+<tr>
+<td>2020-2021</td>
+<td>5-6%</td>
+<td>疫情红利</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>2.4%</td>
+<td>通胀+过度投资</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>6.4%</td>
+<td>降本增效</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>10.8%</td>
+<td>广告收入大爆发（占总收入约13%）</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>11.2%</td>
+<td>继续扩张</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>数据来源：MacroTrends、Amazon年报</em></p>
+<p><strong>对标启示</strong>：
+1. Amazon北美经营利润率从长期3-5%跃升至10%+，核心驱动力是<strong>广告业务</strong>（2024年广告收入约560亿美元）
+2. 广告是电商平台的"第二利润引擎"——PDD已在走同样的路径（全站推）
+3. 但Amazon是自营+平台混合模型，北美利润率包含自营亏损，<strong>纯平台部分利润率远高于11%</strong>
+4. <strong>20年教训</strong>：电商平台利润率不是线性提升，而是经历投资期-收获期-再投资的循环</p>
+<h3 id="43-coupang">4.3 亚洲电商对标：Coupang（韩国）、乐天（日本）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>2024经营利润率</th>
+<th>2025经营利润率</th>
+<th>模式</th>
+<th>启示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coupang（核心商务）</td>
+<td>约7%</td>
+<td>8-9%（Q3）</td>
+<td>自营为主</td>
+<td>自营电商利润率天花板约10%</td>
+</tr>
+<tr>
+<td>Coupang（整体）</td>
+<td>1.4%</td>
+<td>约4.5%</td>
+<td>含新业务</td>
+<td>新业务拖累整体利润</td>
+</tr>
+<tr>
+<td>乐天（互联网服务）</td>
+<td>约6.6%</td>
+<td>约9.5%（Non-GAAP）</td>
+<td>平台+自营</td>
+<td>FY2024首次转正，长期在6-10%</td>
+</tr>
+<tr>
+<td>乐天（整体）</td>
+<td>首次转正</td>
+<td>约3%</td>
+<td>含移动通信</td>
+<td>多元化拖累</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>数据来源：Coupang财报（MacroTrends）、Rakuten Group财报</em></p>
+<p><strong>对标结论</strong>：
+1. 亚洲自营/混合电商利润率天花板约8-10%（Coupang、乐天）
+2. <strong>纯平台模式（淘天、PDD主站）利润率远高于自营模式</strong>——淘天44%、PDD主站35-40%
+3. 成熟期电商的共同特征：收入增速降至个位数，利润率趋于稳定
+4. <strong>PDD主站35-40%的经营利润率在全球电商中属于顶级水平</strong>，仅次于淘天</p>
+<hr />
+<h2 id="_9">第五部分：敏感性分析与风险</h2>
+<h3 id="51-2036">5.1 关键变量敏感性（2036年主站净利润）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Take Rate 5.0%</th>
+<th>Take Rate 5.5%</th>
+<th>Take Rate 6.0%</th>
+<th>Take Rate 6.5%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GMV 5.5万亿</strong></td>
+<td>743亿</td>
+<td>825亿</td>
+<td>907亿</td>
+<td>990亿</td>
+</tr>
+<tr>
+<td><strong>GMV 6.0万亿</strong></td>
+<td>810亿</td>
+<td>900亿</td>
+<td>990亿</td>
+<td>1,080亿</td>
+</tr>
+<tr>
+<td><strong>GMV 6.5万亿</strong></td>
+<td>878亿</td>
+<td>975亿</td>
+<td>1,073亿</td>
+<td>1,170亿</td>
+</tr>
+<tr>
+<td><strong>GMV 7.0万亿</strong></td>
+<td>945亿</td>
+<td>1,050亿</td>
+<td>1,155亿</td>
+<td>1,260亿</td>
+</tr>
+<tr>
+<td><strong>GMV 7.5万亿</strong></td>
+<td>1,013亿</td>
+<td>1,125亿</td>
+<td>1,238亿</td>
+<td>1,350亿</td>
+</tr>
+<tr>
+<td><strong>GMV 8.0万亿</strong></td>
+<td>1,080亿</td>
+<td>1,200亿</td>
+<td>1,320亿</td>
+<td>1,440亿</td>
+</tr>
+<tr>
+<td><strong>GMV 8.5万亿</strong></td>
+<td>1,148亿</td>
+<td>1,275亿</td>
+<td>1,403亿</td>
+<td>1,530亿</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>假设经营利润率35%、有效税率10%、净利润=营收 x 经营利润率 x (1-税率) x 0.95（其他调整）</em></p>
+<h3 id="52">5.2 上行风险（可能使预测偏保守的因素）</h3>
+<ol>
+<li><strong>回购启动</strong>：若PDD用$604亿现金的一半回购，EPS增厚20%+，即使利润不变也提升股东回报</li>
+<li><strong>广告产品创新</strong>：AI驱动的智能投放、视频流广告等可能将take rate推至7%+（参考抖音8-10%）</li>
+<li><strong>下沉市场深化</strong>：中国仍有约3亿人口电商渗透率低于平均水平</li>
+<li><strong>产业带升级</strong>：从"白牌代工"到"产业带品牌"，客单价提升15-20%</li>
+<li><strong>多多买菜协同</strong>：社区团购为主站导流，提升用户粘性和购买频次</li>
+</ol>
+<h3 id="53">5.3 下行风险（可能使预测偏乐观的因素）</h3>
+<ol>
+<li><strong>抖音电商持续侵蚀</strong>：抖音5年走完阿里20年的路，若2030年GMV达8万亿将直接压缩PDD空间</li>
+<li><strong>AI Agent颠覆流量分发</strong>：2028-2030年AI购物Agent成熟后，PDD的"推荐算法+低价心智"护城河被削弱</li>
+<li><strong>即时零售崛起</strong>：美团闪购、京东秒达等30分钟达体验蚕食传统电商份额，PDD缺席此赛道</li>
+<li><strong>"千亿扶持"变为常态</strong>：若降佣/补贴成为长期竞争策略，经营利润率可能永久下降5-10个百分点</li>
+<li><strong>监管风险</strong>：反垄断、数据安全、用户隐私保护法规趋严</li>
+<li><strong>消费降级持续</strong>：中国经济增速放缓导致电商大盘增长不及预期</li>
+</ol>
+<h3 id="54">5.4 最大的"已知的未知"</h3>
+<p><strong>"千亿扶持"是短期让利还是长期战略转型？</strong></p>
+<ul>
+<li>如果是短期让利（类似淘天2023-2024年的"回归用户"策略）：2028年后利润率回升，中性/乐观情景更可能</li>
+<li>如果是长期战略转型（从"利润最大化"转向"生态健康"）：利润率永久下降至30-33%，悲观情景更可能</li>
+<li>管理层原话："力争三年再造一个拼多多"——含义模糊，可能指GMV翻倍（需大量投入），也可能指生态重构</li>
+</ul>
+<hr />
+<h2 id="_10">第六部分：总结</h2>
+<h3 id="_11">核心数字</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2025年（基准）</th>
+<th>2036年悲观</th>
+<th>2036年中性</th>
+<th>2036年乐观</th>
+<th>概率加权</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主站GMV</td>
+<td>5.0万亿</td>
+<td>5.5万亿</td>
+<td>6.8万亿</td>
+<td>8.5万亿</td>
+<td>6.7万亿</td>
+</tr>
+<tr>
+<td>主站Take Rate</td>
+<td>5.5%</td>
+<td>5.0%</td>
+<td>5.8%</td>
+<td>6.5%</td>
+<td>5.8%</td>
+</tr>
+<tr>
+<td>主站营收</td>
+<td>2,550亿</td>
+<td>2,750亿</td>
+<td>3,950亿</td>
+<td>5,525亿</td>
+<td>3,900亿</td>
+</tr>
+<tr>
+<td>经营利润率</td>
+<td>37%</td>
+<td>33%</td>
+<td>38%</td>
+<td>40%</td>
+<td>37%</td>
+</tr>
+<tr>
+<td><strong>主站净利润</strong></td>
+<td><strong>约1,050亿</strong></td>
+<td><strong>约900亿</strong></td>
+<td><strong>约1,350亿</strong></td>
+<td><strong>约1,850亿</strong></td>
+<td><strong>约1,340亿</strong></td>
+</tr>
+<tr>
+<td>vs 2025年</td>
+<td>-</td>
+<td>-14%</td>
+<td>+29%</td>
+<td>+76%</td>
+<td>+28%</td>
+</tr>
+<tr>
+<td>10年CAGR</td>
+<td>-</td>
+<td>-1.4%</td>
+<td>+2.3%</td>
+<td>+5.3%</td>
+<td>+2.3%</td>
+</tr>
+<tr>
+<td>概率</td>
+<td>-</td>
+<td>25%</td>
+<td>50%</td>
+<td>25%</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_12">关键判断</h3>
+<ol>
+<li><strong>主站利润2036年大概率高于2025年</strong>，但增幅有限（中性+29%），不会翻倍</li>
+<li><strong>最可能的十年图景</strong>：GMV从5万亿增至6.8万亿，take rate从5.5%升至5.8%，利润率稳定在38%左右——一台缓慢变大的印钞机</li>
+<li><strong>主站本质是"中国下沉市场税"</strong>——只要中国有7-8亿价格敏感消费者，这门生意就会存在且盈利</li>
+<li><strong>最大风险不是竞争对手，而是PDD自己的战略选择</strong>——如果管理层持续将主站利润投入Temu/新业务而不回馈股东，主站的利润对股东价值的转化效率会很低</li>
+<li><strong>对标淘天</strong>：淘天EBITA三年几乎不增长（1,936亿→1,962亿），这就是成熟平台电商的宿命。拼多多主站离这个"稳态"还有3-5年，之后将面临同样的增长困境</li>
+</ol>
+<h3 id="202654">与此前报告（2026年5月4日）的对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>5月4日报告（含Temu）</th>
+<th>本报告（仅主站）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>预测范围</td>
+<td>PDD整体（主站+Temu+买菜）</td>
+<td>仅主站</td>
+</tr>
+<tr>
+<td>2036年净利润区间</td>
+<td>600-3,000亿</td>
+<td>900-1,850亿</td>
+</tr>
+<tr>
+<td>区间宽度</td>
+<td>5倍（巨大不确定性）</td>
+<td>2倍（相对可控）</td>
+</tr>
+<tr>
+<td>中性预测</td>
+<td>1,700亿</td>
+<td>1,350亿</td>
+</tr>
+<tr>
+<td>核心不确定性</td>
+<td>Temu政治风险</td>
+<td>GMV增速+利润率走向</td>
+</tr>
+<tr>
+<td>可预测性</td>
+<td>低</td>
+<td><strong>中等</strong>（主站确实更"想得清楚"）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>这验证了此前报告的核心判断</strong>：PDD投资论题的方差几乎全部来自Temu。如果只看主站，这是一门可预测的、缓慢增长的成熟生意，2036年利润大概率在900-1,850亿之间。</p>
+<hr />
+<p><em>数据来源：PDD Holdings 2024/2025年报、华尔街见闻、开源证券、华创证券、汇丰研报、阿里巴巴集团财报、Amazon年报、Coupang财报、Rakuten Group财报、MacroTrends、国家信息中心</em></p>
+<p><em>报告完成：2026-05-15</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/add3b8034f65.html">拼多多控股（PDD Holdings，PDD.US）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/581cb36c9940.html">拼多多2036：活下来没有悬念，多赚要看两个变量</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/a4afe86cabe3.html">黄峥与拼多多控制权：谁在掌舵、他还能不能回来</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/2ef823d3a551.html">拼多多（PDD Holdings）投资研究 — 2026.04.07</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/9da20c690247.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/ea06217eed0b.html">拼多多AI与利润研究：审计说明</a><div class="meta">2026-09-24 · 底稿</div></li><li><a href="../r/eec9a3d4deca.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/6c5fe33f9647.html">PDD研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/a07290b67941.html">拼多多2026Q2：6-K原件逐行核对底稿</a><div class="meta">2026-08-26 · 底稿</div></li><li><a href="../r/4fc48a244b16.html">拼多多2026年二季报深度解读：一笔找不到科目的投入</a><div class="meta">2026-08-25 · 财报</div></li><li><a href="../r/b870b0a0d5b4.html">拼多多2026年中报解读</a><div class="meta">2026-08-25 · 公众号</div></li><li><a href="../r/7a2822470350.html">拼多多三大报表解析：从交易所原件到逐项含义</a><div class="meta">2026-08-24 · 财报</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>
