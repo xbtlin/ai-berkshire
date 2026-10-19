@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>快手与可灵深度研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/快手/index.html">快手</a></div><h1>快手与可灵深度研究报告</h1><div class="meta"><a href="../companies/快手/index.html">快手</a> ｜ 2026-10-16 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E5%BF%AB%E6%89%8B%E4%B8%8E%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261016.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>快手与可灵深度研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/快手/index.html">快手</a></div><div class="layout"><div><h1>快手与可灵深度研究报告</h1><div class="meta"><a href="../companies/快手/index.html">快手</a> ｜ 2026-10-16 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E5%BF%AB%E6%89%8B%E4%B8%8E%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261016.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">研究边界</a></li>
 <li><a href="#_2">一、先分清买的是哪两门生意</a><ul>
@@ -174,7 +184,7 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 </tr>
 </tbody>
 </table></div>
-<p>2021年大额亏损包含上市前优先股相关非现金影响，不能用来外推成熟经营亏损。该年CFO和资本支出本次仅取得数据库值，原件未逐项复核，只用于背景；其余年度按已核验口径列示。2022年采用之后年报重分类数，不能拼入旧现金流分类。详细来源与缺口见<a href="../r/f80334f8f914.html">财务证据</a>。[S1–S3]</p>
+<p>2021年大额亏损包含上市前优先股相关非现金影响，不能用来外推成熟经营亏损。该年CFO和资本支出本次仅取得数据库值，原件未逐项复核，只用于背景；其余年度按已核验口径列示。2022年采用之后年报重分类数，不能拼入旧现金流分类。详细来源与缺口见<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E8%B4%A2%E5%8A%A1%E4%B8%8E%E7%BB%8F%E8%90%A5%E8%AF%81%E6%8D%AE.md">财务证据</a>。[S1–S3]</p>
 <p>2025年收入构成为：线上营销约815亿元、直播约391亿元、其他服务约222亿元。最新季度更值得警惕：2026年第二季度广告收入同比仅增长4.4%，直播下降13.5%，可灵收入则超过8.5亿元。同期平均DAU为4.123亿，同比增长0.8%。新业务增长不能遮住主业成熟的事实。[S1、S2]</p>
 <div class="table-wrap"><table>
 <thead>
@@ -306,7 +316,7 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 </tr>
 </tbody>
 </table></div>
-<p>完整条款与定位见<a href="../r/1ac5b5717c6b.html">创始人与治理证据</a>。这里不把私募股份理解为与上市普通股拥有完全相同的权利，也不把68.33%当作十年不变的比例。</p>
+<p>完整条款与定位见<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E5%88%9B%E5%A7%8B%E4%BA%BA%E4%B8%8E%E6%B2%BB%E7%90%86%E8%AF%81%E6%8D%AE.md">创始人与治理证据</a>。这里不把私募股份理解为与上市普通股拥有完全相同的权利，也不把68.33%当作十年不变的比例。</p>
 <p>有两个细节值得提高权重。第一，母公司在上述假设结构中的投票权约53.8%，明显低于经济权益；若盖坤额外1%期权行使并取得特殊投票权、不发生其他资本变化，条件推算母公司票权约50.25%，控制余量有限。</p>
 <p>第二，未能在约定最迟上市日期或2031年10月30日两者较早者前完成上市，以及特定重组事项逾期，可能触发回购；已递表另有缓冲条件。回购价格包含8%年单利等调整，义务主体为北京可灵及其集团公司，不能直接称为上市母公司全额担保或已经形成的无条件债务。新融资、上市期限和人才安排必须放在同一张资本结构表中分析。[S9、S10]</p>
 <p>我对管理层的评价是：<strong>产品判断和工程组织能力值得认真研究，资本配置的最后成绩仍要看归属于上市股东的自由现金流。</strong> 最值得盯的冲突，是母公司承担算力、客户和品牌资源，而新业务的权益与控制权逐渐向员工或外部投资者转移。发生这种转移未必不合理，但应有透明的交易价格、费用分摊与资金安排。</p>
@@ -506,7 +516,7 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 </tr>
 </tbody>
 </table></div>
-<p>产品状态与原始链接集中于<a href="../r/722f16789334.html">技术证据</a>。以上不声称已经穷尽全球竞争者，也不以不同任务、不同时间的榜单给出一个虚假的综合第一名。</p>
+<p>产品状态与原始链接集中于<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E6%8A%80%E6%9C%AF%E4%B8%8E%E7%AB%9E%E4%BA%89%E8%AF%81%E6%8D%AE.md">技术证据</a>。以上不声称已经穷尽全球竞争者，也不以不同任务、不同时间的榜单给出一个虚假的综合第一名。</p>
 <p>Adobe接入尤其具有两面性：扩大可灵触达，但也使客户可能留在Adobe、把底层模型随时切换。Adobe对部分合作模型的企业版权补充保障有专门条件与名单，不能将Firefly品牌等同于可灵自动获得相同赔偿承诺。[S14]</p>
 <blockquote>
 <p>李录式追问：视频生产效率提升所创造的价值，最后是被模型公司留下，还是被客户、算力商、工作流入口拿走？这个问题比总生成量更重要。</p>
@@ -1054,17 +1064,73 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 <ul>
 <li>S1：<a href="https://ir.kuaishou.com/system/files-encrypted/nasdaq_kms/assets/2026/09/08/10-47-47/Interim%202026.pdf">2026中报原件</a>、<a href="https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-technology-announces-second-quarter-and-interim-2026">二季度官方业绩</a>。</li>
 <li>S2：<a href="https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-technology-announces-fourth-quarter-and-full-year-2025">2025年度官方业绩</a>。</li>
-<li>S3：<a href="https://stockanalysis.com/quote/hkg/1024/financials/">StockAnalysis财务</a>、<a href="../r/f80334f8f914.html">财务与经营证据</a>，区分数据库标准化口径与公司原始口径。</li>
+<li>S3：<a href="https://stockanalysis.com/quote/hkg/1024/financials/">StockAnalysis财务</a>、<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E8%B4%A2%E5%8A%A1%E4%B8%8E%E7%BB%8F%E8%90%A5%E8%AF%81%E6%8D%AE.md">财务与经营证据</a>，区分数据库标准化口径与公司原始口径。</li>
 <li>S4：<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/1007/2026100700815_c.pdf">9月股本月报</a>、<a href="https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do">国家外汇管理局中间价</a>；行情来源详见财务证据。</li>
 <li>S5：<a href="https://ir.kuaishou.com/node/11461/pdf">2026一季度官方业绩</a>。</li>
-<li>S6：<a href="https://ir.kuaishou.com/corporate-governance/board-of-directors">公司董事资料</a>、<a href="../r/1ac5b5717c6b.html">创始人与治理证据</a>。</li>
+<li>S6：<a href="https://ir.kuaishou.com/corporate-governance/board-of-directors">公司董事资料</a>、<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E5%88%9B%E5%A7%8B%E4%BA%BA%E4%B8%8E%E6%B2%BB%E7%90%86%E8%AF%81%E6%8D%AE.md">创始人与治理证据</a>。</li>
 <li>S7：<a href="https://magicwpf.github.io/">万鹏飞学术主页</a>、<a href="https://qcon.infoq.cn/2026/beijing/speaker/10176">QCon北京2026李岩讲师资料</a>。</li>
 <li>S8：<a href="https://finance.sina.com.cn/jjxw/2026-09-30/doc-initrftc2485377.shtml">9月30日组织调整报道</a>，这是媒体报道，不伪称公司公告。</li>
 <li>S9：<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0702/2026070204065.pdf">7月2日可灵融资与激励公告</a>。</li>
 <li>S10：<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0831/2026083102335.pdf">8月31日认购进展公告</a>。</li>
-<li>S11：<a href="../r/722f16789334.html">技术路线、竞品与版本证据</a>，含早期官方说明、论文、竞品官方产品文档及不确定事项。</li>
+<li>S11：<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E6%8A%80%E6%9C%AF%E4%B8%8E%E7%AB%9E%E4%BA%89%E8%AF%81%E6%8D%AE.md">技术路线、竞品与版本证据</a>，含早期官方说明、论文、竞品官方产品文档及不确定事项。</li>
 <li>S12：<a href="https://kling.ai/blog/kling40-kling-visual-realism-creative-control-introducing-storytelling?tab=all">9月30日可灵4.0官方说明</a>。</li>
 <li>S13：<a href="https://arxiv.org/abs/2506.13695">OneRec技术报告</a>、<a href="https://arxiv.org/abs/2508.20900">OneRec-V2技术报告</a>，线上实验为作者报告。</li>
 <li>S14：<a href="https://helpx.adobe.com/co/legal/product-descriptions/partner-model.html">Adobe合作模型保障范围</a>、<a href="https://helpx.adobe.com/firefly/web/work-with-enterprise-features/creative-production/partner-models-in-firefly-creative-production-for-enterprise.html">企业创作合作模型说明</a>。</li>
 </ul>
-<p>计算与审计附件：<a href="../files/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E5%88%A9%E6%B6%A6%E4%B8%8E%E4%BC%B0%E5%80%BC%E6%A8%A1%E5%9E%8B.json">利润与估值模型</a>、<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E5%88%A9%E6%B6%A6%E4%B8%8E%E4%BC%B0%E5%80%BC%E6%A8%A1%E5%9E%8B.py">可复算脚本</a>、<a href="../files/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E6%A8%A1%E5%9E%8B%E5%B8%82%E5%9C%BA%E8%BE%93%E5%85%A5.json">市场输入与现金口径</a>、<a href="../r/948672d4f2d6.html">审计说明</a>。所有未来假设单独标记，任何PASS只代表对应数字或算式通过核对。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2f73e86f63d4.html">快手与可灵：创始人、技术选型、赛道与十年推演</a><div class="meta">2026-10-17 · 研究</div></li><li><a href="../r/b78ea6a95236.html">可灵与快手十年推演（2026-10-17）</a><div class="meta">2026-10-17 · 导读</div></li><li><a href="../r/f80334f8f914.html">快手与可灵：财务与经营证据底稿</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/722f16789334.html">可灵技术与竞争证据：从模型领先到经济护城河</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/948672d4f2d6.html">审计说明</a><div class="meta">2026-10-16 · 底稿</div></li><li><a href="../r/1ac5b5717c6b.html">快手与可灵：创始人、组织与治理证据</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/7661a5d37927.html">快手与可灵深度研究 · 2026-10-16</a><div class="meta">2026-10-16 · 导读</div></li><li><a href="../r/29d256651108.html">快手科技（1024.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/207317a7a1f4.html">快手十年后：生态还在不在、为什么还去快手、可灵结局、还能赚多少</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/16ff30b4d9f0.html">快手AI利润模型与核验记录</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/4ac8125172ef.html">快手：AI对未来三年利润的影响与2036年盈利能力</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/10599f815158.html">藏在快手账上的另一家公司——可灵、180 亿美元与一纸对赌</a><div class="meta">2026-09-08 · 公众号</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<p>计算与审计附件：<a href="../files/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E5%88%A9%E6%B6%A6%E4%B8%8E%E4%BC%B0%E5%80%BC%E6%A8%A1%E5%9E%8B.json">利润与估值模型</a>、<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E5%88%A9%E6%B6%A6%E4%B8%8E%E4%BC%B0%E5%80%BC%E6%A8%A1%E5%9E%8B.py">可复算脚本</a>、<a href="../files/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E6%A8%A1%E5%9E%8B%E5%B8%82%E5%9C%BA%E8%BE%93%E5%85%A5.json">市场输入与现金口径</a>、<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E5%AE%A1%E8%AE%A1%E8%AF%B4%E6%98%8E.md">审计说明</a>。所有未来假设单独标记，任何PASS只代表对应数字或算式通过核对。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2f73e86f63d4.html">快手与可灵：创始人、技术选型、赛道与十年推演</a><div class="meta">2026-10-17 · 研究</div></li><li><a href="../r/7661a5d37927.html">快手与可灵深度研究 · 2026-10-16</a><div class="meta">2026-10-16 · 导读</div></li><li><a href="../r/29d256651108.html">快手科技（1024.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/207317a7a1f4.html">快手十年后：生态还在不在、为什么还去快手、可灵结局、还能赚多少</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/4ac8125172ef.html">快手：AI对未来三年利润的影响与2036年盈利能力</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/10599f815158.html">藏在快手账上的另一家公司——可灵、180 亿美元与一纸对赌</a><div class="meta">2026-09-08 · 公众号</div></li><li><a href="../r/2a50c3bd07f0.html">快手（01024.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/26ace3ca9427.html">快手与可灵：差异化与护城河研究</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/59171a329556.html">看懂快手③：不到八倍市盈率，为什么还要看现金</a><div class="meta">2026-09-06 · 公众号</div></li><li><a href="../r/09e117072e53.html">看懂快手②：藏在账上的另一家公司，和一纸对赌</a><div class="meta">2026-09-06 · 公众号</div></li><li><a href="../r/720b4c67e325.html">看懂快手③：便宜的市盈率，与昂贵的再投资</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/eee1686eba56.html">看懂快手②：可灵值多少钱，先问谁付成本</a><div class="meta">2026-09-06 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">研究边界</a></li>
+<li><a href="#_2">一、先分清买的是哪两门生意</a><ul>
+<li><a href="#_3">盈利改善是真实的，现金投资加速也是真实的</a></li>
+</ul>
+</li>
+<li><a href="#_4">二、创始人、团队与组织：有能力，不等于激励天然一致</a><ul>
+<li><a href="#_5">程一笑：产品与组织能力是主要资产</a></li>
+<li><a href="#_6">宿华：技术创业背景重要，当前分工更重要</a></li>
+<li><a href="#_7">可灵是多层团队的成果，不能围绕一位“明星科学家”估值</a></li>
+<li><a href="#_8">融资不是白送给快手股东的高估值</a></li>
+</ul>
+</li>
+<li><a href="#_9">三、技术选型：可灵的优势具体在哪里</a><ul>
+<li><a href="#_10">视频生成的难点不只是增加几个画面</a></li>
+<li><a href="#40">截至研究日，已经进入4.0阶段，但可用性不能混写</a></li>
+<li><a href="#_11">快手更难复制的技术资产，可能是推荐和成交反馈</a></li>
+</ul>
+</li>
+<li><a href="#_12">四、赛道：需求很大，利润可能流向别人</a><ul>
+<li><a href="#_13">从“生成视频”到“完成一次商业创作”</a></li>
+<li><a href="#_14">真正要比较的是有效交付成本</a></li>
+<li><a href="#_15">当前竞争格局应更新，不能照抄旧名单</a></li>
+</ul>
+</li>
+<li><a href="#_16">五、护城河：今天、三年后，分别是什么</a><ul>
+<li><a href="#ai">今天的护城河不是一个统一的“AI壁垒”</a></li>
+<li><a href="#_17">三年后的护城河：看谁把“作品”变成“生产系统”</a></li>
+</ul>
+</li>
+<li><a href="#_18">六、五年和十年后，公司可能变成什么</a></li>
+<li><a href="#370">七、十年后的利润：基准370亿元，如何算出来</a><ul>
+<li><a href="#_19">基准路径</a></li>
+<li><a href="#_20">这些数字需要哪些现实条件</a></li>
+<li><a href="#_21">三种结果，而非一个看似精确的十年预测</a></li>
+</ul>
+</li>
+<li><a href="#_22">八、利润要变成股东现金，还需要跨过什么</a><ul>
+<li><a href="#_23">基准利润与现金回报之间保留了明显差额</a></li>
+</ul>
+</li>
+<li><a href="#_24">九、估值与一级市场视角：好技术也可能买贵</a><ul>
+<li><a href="#46pe">主估值约46港元，条件比低PE更重要</a></li>
+<li><a href="#150">私募150亿美元投前估值，需要更高门槛</a></li>
+<li><a href="#_25">行动框架</a></li>
+</ul>
+</li>
+<li><a href="#_26">十、最强反对意见与可证伪清单</a><ul>
+<li><a href="#_27">下一步需要一手验证的十个问题</a></li>
+</ul>
+</li>
+<li><a href="#_28">最终判断</a></li>
+<li><a href="#_29">来源与复核材料</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

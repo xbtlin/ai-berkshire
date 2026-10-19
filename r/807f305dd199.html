@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Recursive Self-Improvement in AI: A Critical Survey of Mechanisms, Evidence, and Evaluation · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/RSI-survey-20260906/index.html">RSI-survey-20260906</a></div><h1>Recursive Self-Improvement in AI: A Critical Survey of Mechanisms, Evidence, and Evaluation</h1><div class="meta"><a href="../topics/RSI-survey-20260906/index.html">RSI-survey-20260906</a> ｜ 2026-09-06 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/RSI-survey-20260906/manuscript-en.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>Recursive Self-Improvement in AI: A Critical Survey of Mechanisms, Evidence, and Evaluation · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/RSI-survey-20260906/index.html">RSI-survey-20260906</a></div><div class="layout"><div><h1>Recursive Self-Improvement in AI: A Critical Survey of Mechanisms, Evidence, and Evaluation</h1><div class="meta"><a href="../topics/RSI-survey-20260906/index.html">RSI-survey-20260906</a> ｜ 2026-09-06 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/RSI-survey-20260906/manuscript-en.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#a-system-boundary-and-two-coupled-loops">A system boundary and two coupled loops</a></li>
 <li><a href="#three-distinctions-and-a-stronger-hypothesis">Three distinctions and a stronger hypothesis</a></li>
@@ -289,4 +299,26 @@ $$</p>
 <td style="text-align: left;">Evidence or constraints supplied by an environment, specification, or independent reference</td>
 </tr>
 </tbody>
-</table></div></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/924413c2f550.html">Validation report</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f5e85e29fae4.html">Verified source register</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f4d7da04d94e.html">Search method record</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/cb20bb1402be.html">Claim and evidence ledger</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/ace25e84f3ad.html">人工智能递归自我改进：机制、证据与评估的批判性综述</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/a67ca47ca37d.html">RSI 中英文综述工作稿</a><div class="meta">2026-09-06 · 导读</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+</table></div></article></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#a-system-boundary-and-two-coupled-loops">A system boundary and two coupled loops</a></li>
+<li><a href="#three-distinctions-and-a-stronger-hypothesis">Three distinctions and a stronger hypothesis</a></li>
+<li><a href="#mechanisms-and-evidence-should-be-reported-separately">Mechanisms and evidence should be reported separately</a></li>
+<li><a href="#formal-self-modification-meta-learning-and-open-ended-search">Formal self-modification, meta-learning, and open-ended search</a></li>
+<li><a href="#output-revision-memory-and-reusable-tools">Output revision, memory, and reusable tools</a></li>
+<li><a href="#synthetic-supervision-and-co-evolving-curricula">Synthetic supervision and co-evolving curricula</a></li>
+<li><a href="#evolving-prompts-scaffolds-and-improvers">Evolving prompts, scaffolds, and improvers</a></li>
+<li><a href="#self-directed-weight-adaptation">Self-directed weight adaptation</a></li>
+<li><a href="#algorithm-discovery-and-automated-research">Algorithm discovery and automated research</a></li>
+<li><a href="#what-existing-benchmarks-measure">What existing benchmarks measure</a></li>
+<li><a href="#a-matched-operator-comparison">A matched-operator comparison</a></li>
+<li><a href="#factorial-controls-and-coupled-systems">Factorial controls and coupled systems</a></li>
+<li><a href="#separating-development-feedback-from-audit-evidence">Separating development feedback from audit evidence</a></li>
+<li><a href="#lineages-selection-and-statistical-uncertainty">Lineages, selection, and statistical uncertainty</a></li>
+<li><a href="#costs-persistence-and-acceleration">Costs, persistence, and acceleration</a></li>
+<li><a href="#feedback-quality-and-evaluator-co-adaptation">Feedback quality and evaluator co-adaptation</a></li>
+<li><a href="#collapse-forgetting-and-loss-of-diversity">Collapse, forgetting, and loss of diversity</a></li>
+<li><a href="#self-modification-and-control-integrity">Self-modification and control integrity</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
