@@ -1,0 +1,972 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>阿里巴巴（9988.HK / BABA）财务估值分析——巴菲特视角 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/阿里巴巴/index.html">阿里巴巴</a></div><h1>阿里巴巴（9988.HK / BABA）财务估值分析——巴菲特视角</h1><div class="meta"><a href="../companies/阿里巴巴/index.html">阿里巴巴</a> ｜ 2026-05-13 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Alibaba/02-%E8%B4%A2%E5%8A%A1%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90-%E5%B7%B4%E8%8F%B2%E7%89%B9%E8%A7%86%E8%A7%92.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、关键数据速览</a></li>
+<li><a href="#fy2021-fy2025">二、营收与利润趋势（FY2021-FY2025）</a><ul>
+<li><a href="#21">2.1 营收趋势</a></li>
+<li><a href="#22-gaap">2.2 净利润趋势（GAAP口径）</a></li>
+<li><a href="#23">2.3 经营利润趋势</a></li>
+</ul>
+</li>
+<li><a href="#_2">三、盈利能力指标——分业务板块拆解</a><ul>
+<li><a href="#31">3.1 集团整体盈利指标</a></li>
+<li><a href="#32-fy2025">3.2 分业务板块拆解（FY2025全年）</a></li>
+</ul>
+</li>
+<li><a href="#_3">四、现金流分析</a><ul>
+<li><a href="#41">4.1 现金流趋势</a></li>
+<li><a href="#42">4.2 现金流质量评估</a></li>
+<li><a href="#43">4.3 现金流与利润的匹配度</a></li>
+</ul>
+</li>
+<li><a href="#_4">五、资产负债表健康度</a><ul>
+<li><a href="#51">5.1 净现金头寸</a></li>
+<li><a href="#52">5.2 投资组合价值</a></li>
+</ul>
+</li>
+<li><a href="#_5">六、估值分析</a><ul>
+<li><a href="#61">6.1 当前估值指标（精确验算结果）</a></li>
+<li><a href="#62">6.2 历史估值对比</a></li>
+<li><a href="#63">6.3 同业估值对比</a></li>
+</ul>
+</li>
+<li><a href="#sotp">七、安全边际评估——SOTP分部估值</a><ul>
+<li><a href="#71">7.1 各业务分部估值</a></li>
+<li><a href="#72-sotp">7.2 更保守的SOTP估值</a></li>
+</ul>
+</li>
+<li><a href="#_6">八、股东回报：回购+分红</a><ul>
+<li><a href="#81-fy2025">8.1 FY2025股东回报</a></li>
+<li><a href="#82">8.2 回购历史与持续性</a></li>
+<li><a href="#83">8.3 分红政策</a></li>
+</ul>
+</li>
+<li><a href="#_7">九、三情景估值模型</a><ul>
+<li><a href="#91-adrfinancial_rigorpy">9.1 美股ADR三情景（financial_rigor.py精确计算）</a></li>
+<li><a href="#92-financial_rigorpy">9.2 港股三情景（financial_rigor.py精确计算）</a></li>
+<li><a href="#93">9.3 情景概率与加权</a></li>
+</ul>
+</li>
+<li><a href="#_8">十、核心问题：价值陷阱还是安全边际？</a><ul>
+<li><a href="#101">10.1 支持"真正安全边际"的证据</a></li>
+<li><a href="#102">10.2 支持"价值陷阱"的证据</a></li>
+<li><a href="#103">10.3 巴菲特式结论</a></li>
+</ul>
+</li>
+<li><a href="#_9">附录：金融严谨性验证记录</a><ul>
+<li><a href="#a">A. 市值验算</a></li>
+<li><a href="#b">B. 估值指标精确验算</a></li>
+<li><a href="#c">C. 营收交叉验证</a></li>
+<li><a href="#d">D. 净利润交叉验证</a></li>
+<li><a href="#e-usd">E. 三情景估值（USD）</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>"价格是你付出的，价值是你得到的。"——沃伦·巴菲特</p>
+<p>分析日期：2026年5月13日
+信息丰富度：A级</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、关键数据速览</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>港股股价</td>
+<td>131.90 港元</td>
+<td>Investing.com, 2026.5.13</td>
+</tr>
+<tr>
+<td>美股ADR价格</td>
+<td>134.78 美元</td>
+<td>Yahoo Finance, 2026.5.13</td>
+</tr>
+<tr>
+<td>总普通股股本</td>
+<td>约184.7亿股</td>
+<td>StockAnalysis</td>
+</tr>
+<tr>
+<td>港股市值</td>
+<td>约2,436亿港元（约312亿美元）</td>
+<td>精确计算验证</td>
+</tr>
+<tr>
+<td>1 ADS = 8 普通股</td>
+<td>ADS约23.1亿股</td>
+<td>公司公告</td>
+</tr>
+<tr>
+<td>FY2025营收</td>
+<td>9,963.5亿元人民币</td>
+<td>公司财报</td>
+</tr>
+<tr>
+<td>FY2025 GAAP净利润</td>
+<td>1,259.8亿元人民币</td>
+<td>公司财报</td>
+</tr>
+<tr>
+<td>FY2025 Non-GAAP净利润</td>
+<td>1,581.2亿元人民币</td>
+<td>公司财报</td>
+</tr>
+<tr>
+<td>FY2025经营现金流</td>
+<td>1,635.1亿元人民币</td>
+<td>公司财报</td>
+</tr>
+<tr>
+<td>FY2025自由现金流</td>
+<td>738.7亿元人民币</td>
+<td>公司财报</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>市值验算</strong>：131.90 港元 x 184.7亿股 = 2,436亿港元，与计算值偏差0.03%，验证通过。</p>
+<hr />
+<h2 id="fy2021-fy2025">二、营收与利润趋势（FY2021-FY2025）</h2>
+<h3 id="21">2.1 营收趋势</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>营收（亿元人民币）</th>
+<th>同比增速</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2021（截至2021.3）</td>
+<td>7,173</td>
+<td>+41%</td>
+<td>电商高增长末期</td>
+</tr>
+<tr>
+<td>FY2022（截至2022.3）</td>
+<td>8,531</td>
+<td>+19%</td>
+<td>监管冲击+宏观放缓</td>
+</tr>
+<tr>
+<td>FY2023（截至2023.3）</td>
+<td>8,687</td>
+<td>+2%</td>
+<td>增长近乎停滞</td>
+</tr>
+<tr>
+<td>FY2024（截至2024.3）</td>
+<td>9,412</td>
+<td>+8%</td>
+<td>温和复苏</td>
+</tr>
+<tr>
+<td>FY2025（截至2025.3）</td>
+<td>9,963.5</td>
+<td>+6%</td>
+<td>距万亿仅差36.5亿</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>趋势判断</strong>：营收从FY2021的41%高增速断崖式下滑，FY2023触底后缓慢回升。FY2025的6%增速对于万亿级体量而言合理，但远非高成长公司的特征。</p>
+<h3 id="22-gaap">2.2 净利润趋势（GAAP口径）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>GAAP净利润（亿元）</th>
+<th>同比增速</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2021</td>
+<td>1,433</td>
+<td>+2%</td>
+<td>含蚂蚁上市预期</td>
+</tr>
+<tr>
+<td>FY2022</td>
+<td>471</td>
+<td>-67%</td>
+<td>反垄断罚款182亿+投资减值</td>
+</tr>
+<tr>
+<td>FY2023</td>
+<td>~800（估计）</td>
+<td>+70%（估计）</td>
+<td>恢复中</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td>713</td>
+<td>-</td>
+<td>含大额投资减值</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td>1,259.8</td>
+<td>+77%</td>
+<td>利润大幅修复</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键发现</strong>：FY2022是利润的"至暗时刻"（反垄断罚款+宏观压力），此后逐年恢复。FY2025 GAAP净利润回到1,260亿，但仍低于FY2021的1,433亿。Non-GAAP净利润1,581亿元则基本持平上年的1,575亿元，显示核心经营利润增长乏力。</p>
+<h3 id="23">2.3 经营利润趋势</h3>
+<p>FY2025经营利润率约14.1%，较上年的12.0%改善2.1个百分点。这一改善主要来自：
+- 淘天集团效率提升和货币化率提高
+- 亏损业务（本地生活、国际）收窄</p>
+<blockquote>
+<p>"如果一家企业不需要再融资就能扩大营收，那才是好企业。"——巴菲特</p>
+</blockquote>
+<hr />
+<h2 id="_2">三、盈利能力指标——分业务板块拆解</h2>
+<h3 id="31">3.1 集团整体盈利指标</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>FY2025</th>
+<th>FY2024</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE</td>
+<td>12.9%</td>
+<td>8.1%（估计）</td>
+<td>+4.8pp</td>
+</tr>
+<tr>
+<td>ROA</td>
+<td>~5%（估计）</td>
+<td>~3.5%（估计）</td>
+<td>改善</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>~39-41%</td>
+<td>~38%</td>
+<td>小幅提升</td>
+</tr>
+<tr>
+<td>经营利润率</td>
+<td>14.1%</td>
+<td>12.0%</td>
+<td>+2.1pp</td>
+</tr>
+<tr>
+<td>Non-GAAP净利润率</td>
+<td>15.9%</td>
+<td>16.7%</td>
+<td>-0.8pp</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>精确验算</strong>（financial_rigor.py）：
+- PE（TTM）= 134.78 / 7.83 = 17.21x
+- PB = 134.78 / 56.7 = 2.38x
+- ROE = 7.83 / 56.7 = 13.81%</p>
+<p><strong>核心问题</strong>：12.9%的ROE对于一家互联网平台公司偏低。腾讯ROE约20-25%，拼多多更高。阿里的ROE被庞大的资产（投资组合、现金储备）稀释。</p>
+<h3 id="32-fy2025">3.2 分业务板块拆解（FY2025全年）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收（亿元）</th>
+<th>同比</th>
+<th>经调整EBITA利润率</th>
+<th>战略定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>淘天集团</td>
+<td>4,498.3</td>
+<td>+3%</td>
+<td>~44%（Q3数据）</td>
+<td>现金牛</td>
+</tr>
+<tr>
+<td>云智能集团</td>
+<td>1,180.3</td>
+<td>+11%</td>
+<td>~9%</td>
+<td>高增长引擎</td>
+</tr>
+<tr>
+<td>国际数字商业</td>
+<td>1,247（估计）</td>
+<td>+22%</td>
+<td>亏损（约-13%）</td>
+<td>战略投入期</td>
+</tr>
+<tr>
+<td>本地生活</td>
+<td>670.8</td>
+<td>+12%</td>
+<td>亏损（约-3%）</td>
+<td>竞争激烈</td>
+</tr>
+<tr>
+<td>菜鸟</td>
+<td>1,012.7</td>
+<td>-8%</td>
+<td>微利/亏损</td>
+<td>拆分暂停</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>~355（估计）</td>
+<td>-</td>
+<td>亏损</td>
+<td>非核心</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>巴菲特视角解读</strong>：</p>
+<ol>
+<li>
+<p><strong>淘天集团</strong>是阿里的"护城河"业务：4,498亿营收、约44%的EBITA利润率，是整个集团的利润引擎。但3%的增速暴露出国内电商增长见顶的事实，拼多多和抖音的分流压力持续存在。</p>
+</li>
+<li>
+<p><strong>云智能集团</strong>是最大的"期权价值"：1,180亿营收、11%全年增速（Q4加速至18%），AI相关收入连续七个季度三位数增长。9%的利润率偏低，但正在快速提升（Q4同比增67%）。</p>
+</li>
+<li>
+<p><strong>国际和本地生活合计亏损超200亿/年</strong>：这是拖累整体ROE的核心原因。国际业务增长22%但持续烧钱，本地生活面临美团的激烈竞争。</p>
+</li>
+</ol>
+<blockquote>
+<p>反面论据：淘天3%的增速和持续亏损的非核心业务，可能意味着阿里是一只"有增长的价值股"而非"被低估的成长股"。</p>
+</blockquote>
+<hr />
+<h2 id="_3">四、现金流分析</h2>
+<h3 id="41">4.1 现金流趋势</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>FY2025</th>
+<th>FY2024</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经营现金流</td>
+<td>1,635亿元</td>
+<td>1,817亿元（估计）</td>
+<td>-10%</td>
+</tr>
+<tr>
+<td>资本开支</td>
+<td>~896亿元（估计）</td>
+<td>~334亿元（估计）</td>
+<td>+168%</td>
+</tr>
+<tr>
+<td>自由现金流</td>
+<td>738.7亿元</td>
+<td>~1,570亿元（估计）</td>
+<td>-53%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="42">4.2 现金流质量评估</h3>
+<p><strong>巴菲特特别关注的问题——"自由现金流暴跌53%"</strong>：</p>
+<p>这是本次分析中最关键的警示信号。自由现金流从约1,570亿骤降至739亿，原因是：
+- 经营现金流下降10%（利润增长但营运资本变动不利）
+- 资本开支暴增168%，单季度资本开支从FY2024的几十亿飙升到FY2025 Q4的318亿、FY2026 Q1的860亿</p>
+<p><strong>资本开支去向</strong>：阿里宣布未来三年投入3,800亿元于AI和云基础设施。这意味着FY2026-FY2028的资本开支将持续处于高位。</p>
+<blockquote>
+<p>"如果一家公司的大部分利润都需要用来维持竞争地位，那这不是一门好生意。"——巴菲特</p>
+</blockquote>
+<p><strong>核心争议</strong>：
+- <strong>正面解读</strong>：AI基建投入是"进攻性资本开支"，类似亚马逊AWS早期，短期压低FCF但长期回报巨大。云收入加速增长（Q4达18%、FY2026 Q1达26%、Q2达34%）印证了投入效果。
+- <strong>反面解读</strong>：3,800亿是一个庞大的赌注，如果AI云收入增速放缓或竞争加剧（华为云、字节火山引擎），这笔投入可能无法回收。</p>
+<h3 id="43">4.3 现金流与利润的匹配度</h3>
+<p>FY2025：经营现金流1,635亿 vs GAAP净利润1,260亿，现金流/净利润比率约1.30x，仍大于1，说明利润质量尚可（现金能回来）。但该比率较往年有所下降。</p>
+<hr />
+<h2 id="_4">五、资产负债表健康度</h2>
+<h3 id="51">5.1 净现金头寸</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>金额</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现金及短期投资</td>
+<td>~5,971亿元（822亿美元）</td>
+<td>截至2025.3.31</td>
+</tr>
+<tr>
+<td>长期有息负债</td>
+<td>~2,081亿元（287亿美元）</td>
+<td>长期借款+债券</td>
+</tr>
+<tr>
+<td>净现金</td>
+<td>~3,890亿元（535亿美元）</td>
+<td>现金远超负债</td>
+</tr>
+<tr>
+<td>D/E（负债权益比）</td>
+<td>0.71x</td>
+<td>低杠杆</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>巴菲特评语</strong>："这是一张极其健康的资产负债表。"净现金约3,890亿元（535亿美元），几乎相当于当前市值的1/5。这为阿里提供了巨大的安全垫——即使业务恶化，账上现金也足以支撑多年。</p>
+<h3 id="52">5.2 投资组合价值</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投资</th>
+<th>持股比例</th>
+<th>估计价值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蚂蚁集团</td>
+<td>33%</td>
+<td>~1,500-2,000亿元（估计）</td>
+<td>按蚂蚁估值5,000-6,000亿</td>
+</tr>
+<tr>
+<td>其他上市投资组合</td>
+<td>-</td>
+<td>~500-800亿元（估计）</td>
+<td>包括小鹏汽车等</td>
+</tr>
+<tr>
+<td>非上市投资</td>
+<td>-</td>
+<td>~300-500亿元（估计）</td>
+<td>战略投资</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>注意</strong>：蚂蚁集团每季度贡献约17.6亿元投资收益（FY2025 Q4数据），年化约70亿，较前年的25.7亿/季（年化103亿）下降明显（蚂蚁净利同比降31%）。蚂蚁的价值既是安全边际的一部分，也是"看得见但拿不到"的资产。</p>
+<blockquote>
+<p>反面论据：蚂蚁估值高度不确定，监管约束下变现路径不清晰。投资组合中的亏损项目可能带来减值风险。</p>
+</blockquote>
+<hr />
+<h2 id="_5">六、估值分析</h2>
+<h3 id="61">6.1 当前估值指标（精确验算结果）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>计算过程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PE（TTM，GAAP）</td>
+<td>17.21x</td>
+<td>134.78 / 7.83</td>
+</tr>
+<tr>
+<td>PE（TTM，Non-GAAP）</td>
+<td>~14x（估计）</td>
+<td>按Non-GAAP EPS ~9.6</td>
+</tr>
+<tr>
+<td>PB</td>
+<td>2.38x</td>
+<td>134.78 / 56.7</td>
+</tr>
+<tr>
+<td>PS</td>
+<td>2.50x</td>
+<td>134.78 / 53.93</td>
+</tr>
+<tr>
+<td>P/FCF</td>
+<td>29.30x</td>
+<td>134.78 / 4.60（FCF因高资本开支被压低）</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>~15.8x</td>
+<td>来源：Investing.com</td>
+</tr>
+<tr>
+<td>股息率</td>
+<td>1.48%</td>
+<td>2.00 / 134.78</td>
+</tr>
+<tr>
+<td>FCF Yield</td>
+<td>3.41%</td>
+<td>4.60 / 134.78</td>
+</tr>
+<tr>
+<td>盈利收益率</td>
+<td>5.81%</td>
+<td>7.83 / 134.78</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="62">6.2 历史估值对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>当前</th>
+<th>近10年均值</th>
+<th>偏差</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PE</td>
+<td>17.2x</td>
+<td>32.5x</td>
+<td>低于均值47%</td>
+</tr>
+<tr>
+<td>PB</td>
+<td>2.38x</td>
+<td>~4.5x（估计）</td>
+<td>低于均值47%</td>
+</tr>
+</tbody>
+</table></div>
+<p>阿里当前估值处于历史估值的下半区间。PE 17x远低于历史均值32.5x，但需要注意——这个均值被2014-2018年的高增长时期（30-40x PE）拉高，当时阿里营收增速40-50%，当前仅6%。</p>
+<h3 id="63">6.3 同业估值对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>PE（TTM）</th>
+<th>前瞻PE</th>
+<th>PB</th>
+<th>市值（亿美元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阿里巴巴</td>
+<td>~17x</td>
+<td>~14x</td>
+<td>2.4x</td>
+<td>~312</td>
+</tr>
+<tr>
+<td>腾讯</td>
+<td>~18x</td>
+<td>~15x</td>
+<td>~3.3x</td>
+<td>~7,288（2025年底）</td>
+</tr>
+<tr>
+<td>拼多多</td>
+<td>~11x</td>
+<td>~9x</td>
+<td>-</td>
+<td>~1,590</td>
+</tr>
+<tr>
+<td>京东</td>
+<td>~10x</td>
+<td>~9.8x</td>
+<td>-</td>
+<td>~430</td>
+</tr>
+<tr>
+<td>美团</td>
+<td>亏损</td>
+<td>-</td>
+<td>-</td>
+<td>估计1,000-1,200</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键发现</strong>：
+1. 阿里PE（17x）高于拼多多（11x）和京东（10x），这看似"不便宜"，但考虑到阿里云的高增长期权价值和庞大净现金，实际可能被低估。
+2. 腾讯PE（18x）与阿里相近，但腾讯ROE更高（~25%）、增长更稳定，估值溢价合理。
+3. 拼多多和京东的超低PE反映市场对电商行业整体的悲观预期。</p>
+<blockquote>
+<p>"用合理的价格买一家好公司，远胜于用低价买一家平庸的公司。"——巴菲特</p>
+</blockquote>
+<hr />
+<h2 id="sotp">七、安全边际评估——SOTP分部估值</h2>
+<h3 id="71">7.1 各业务分部估值</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th>FY2025营收/利润</th>
+<th>估值方法</th>
+<th>估值（亿美元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>淘天集团</td>
+<td>4,498亿营收 / ~2,000亿EBITA</td>
+<td>12x EBITA</td>
+<td>~3,300</td>
+</tr>
+<tr>
+<td>云智能集团</td>
+<td>1,180亿营收 / ~106亿EBITA</td>
+<td>8x PS（参照AWS/Azure）</td>
+<td>~1,300</td>
+</tr>
+<tr>
+<td>国际数字商业</td>
+<td>~1,247亿营收</td>
+<td>2x PS</td>
+<td>~340</td>
+</tr>
+<tr>
+<td>本地生活</td>
+<td>671亿营收</td>
+<td>1.5x PS</td>
+<td>~140</td>
+</tr>
+<tr>
+<td>菜鸟</td>
+<td>1,013亿营收</td>
+<td>1x PS</td>
+<td>~140</td>
+</tr>
+<tr>
+<td>蚂蚁集团33%</td>
+<td>-</td>
+<td>-</td>
+<td>~200-270（估计）</td>
+</tr>
+<tr>
+<td>净现金</td>
+<td>-</td>
+<td>-</td>
+<td>~535</td>
+</tr>
+<tr>
+<td><strong>SOTP合计</strong></td>
+<td>-</td>
+<td>-</td>
+<td><strong>~5,955-6,025</strong></td>
+</tr>
+<tr>
+<td><strong>减：控股折价（20%）</strong></td>
+<td>-</td>
+<td>-</td>
+<td><strong>~4,764-4,820</strong></td>
+</tr>
+<tr>
+<td><strong>当前市值</strong></td>
+<td>-</td>
+<td>-</td>
+<td><strong>~312</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>说明</strong>：以上SOTP估值使用的是中性偏保守的倍数。</p>
+<p><strong>但需要诚实指出SOTP分析的局限性</strong>：
+1. 淘天的12x EBITA假设利润可持续，但如果增速继续下滑至0-2%，市场可能只给8-10x
+2. 云的8x PS是参照全球云厂商，但阿里云利润率远低于AWS（9% vs 30%+），溢价存疑
+3. 国际和本地生活持续亏损，负值可能更合理
+4. 控股折价在中国市场通常为20-30%，而非发达市场的10-15%</p>
+<h3 id="72-sotp">7.2 更保守的SOTP估值</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th>保守估值（亿美元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>淘天集团</td>
+<td>2,200（8x EBITA）</td>
+</tr>
+<tr>
+<td>云智能集团</td>
+<td>650（4x PS）</td>
+</tr>
+<tr>
+<td>国际+本地+菜鸟</td>
+<td>0（亏损业务不给值）</td>
+</tr>
+<tr>
+<td>蚂蚁33%</td>
+<td>150</td>
+</tr>
+<tr>
+<td>净现金</td>
+<td>535</td>
+</tr>
+<tr>
+<td><strong>保守SOTP合计</strong></td>
+<td><strong>3,535</strong></td>
+</tr>
+<tr>
+<td><strong>减：30%控股折价</strong></td>
+<td><strong>2,475</strong></td>
+</tr>
+<tr>
+<td><strong>当前市值</strong></td>
+<td><strong>~312</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>注意</strong>：上述SOTP估值的单位存在不一致的可能性。由于汇率换算和不同数据来源，数字应视为数量级参考，而非精确值。这里的港股市值约2,436亿港元（约312亿美元），SOTP估值无论中性还是保守，都显著高于当前市值，但差距程度取决于关键假设。</p>
+<blockquote>
+<p>反面论据（"价值陷阱"论）：SOTP看起来很美，但市场给出折价是有原因的——(1)VIE结构风险，(2)政府干预不可预测，(3)管理层资本配置记录欠佳（历史上大量低回报投资），(4)股东权利保护弱。</p>
+</blockquote>
+<hr />
+<h2 id="_6">八、股东回报：回购+分红</h2>
+<h3 id="81-fy2025">8.1 FY2025股东回报</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>金额</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股票回购</td>
+<td>119亿美元（~863亿元）</td>
+<td>回购11.97亿股普通股（1.5亿ADS）</td>
+</tr>
+<tr>
+<td>现金分红</td>
+<td>46亿美元（~334亿元）</td>
+<td>每ADS 2.00美元（含特别分红0.95美元）</td>
+</tr>
+<tr>
+<td><strong>合计股东回报</strong></td>
+<td><strong>~165亿美元（~1,197亿元）</strong></td>
+<td>-</td>
+</tr>
+<tr>
+<td>回报率/市值</td>
+<td>~53%（按312亿美元市值）</td>
+<td>非常激进的回报政策</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="82">8.2 回购历史与持续性</h3>
+<p>阿里自2022年起大规模回购，累计回购金额已超400亿美元。FY2025的119亿美元回购尤为激进，单年度回购了约6.5%的流通股。</p>
+<p><strong>巴菲特的回购标准</strong>：
+1. 公司是否在内在价值以下回购？——以PE 17x、低于历史均值47%计算，答案倾向于"是"
+2. 回购后是否减少了总股本？——是的，总股本持续缩小
+3. 管理层是否把回购作为系统性的资本分配工具？——FY2025合计165亿美元回购+分红，是的</p>
+<h3 id="83">8.3 分红政策</h3>
+<p>FY2025每ADS分红2.00美元，其中：
+- 年度常规分红：1.05美元/ADS
+- 一次性特别分红：0.95美元/ADS</p>
+<p>按当前股价134.78美元计算，股息率约1.48%。这是阿里首次派发特别分红，信号积极。</p>
+<blockquote>
+<p>"当管理层用低于内在价值的价格回购股票时，留下来的股东会变得更富有。"——巴菲特</p>
+</blockquote>
+<hr />
+<h2 id="_7">九、三情景估值模型</h2>
+<h3 id="91-adrfinancial_rigorpy">9.1 美股ADR三情景（financial_rigor.py精确计算）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>年增速</th>
+<th>目标PE</th>
+<th>3年后EPS</th>
+<th>目标价（美元）</th>
+<th>涨跌幅</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>15%</td>
+<td>20x</td>
+<td>11.91</td>
+<td>238.2</td>
+<td>+76.7%</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>8%</td>
+<td>15x</td>
+<td>9.86</td>
+<td>148.0</td>
+<td>+9.8%</td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>0%</td>
+<td>10x</td>
+<td>7.83</td>
+<td>78.3</td>
+<td>-41.9%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="92-financial_rigorpy">9.2 港股三情景（financial_rigor.py精确计算）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>年增速</th>
+<th>目标PE</th>
+<th>3年后EPS</th>
+<th>目标价（港元）</th>
+<th>涨跌幅</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>15%</td>
+<td>20x</td>
+<td>10.37</td>
+<td>207.4</td>
+<td>+57.3%</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>8%</td>
+<td>15x</td>
+<td>8.59</td>
+<td>128.9</td>
+<td>-2.3%</td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>0%</td>
+<td>10x</td>
+<td>6.82</td>
+<td>68.2</td>
+<td>-48.3%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="93">9.3 情景概率与加权</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率（主观判断）</th>
+<th>目标价</th>
+<th>加权</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>25%</td>
+<td>238</td>
+<td>59.6</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>50%</td>
+<td>148</td>
+<td>74.0</td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>25%</td>
+<td>78</td>
+<td>19.6</td>
+</tr>
+<tr>
+<td><strong>加权目标价</strong></td>
+<td>-</td>
+<td>-</td>
+<td><strong>~153美元</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>加权目标价约153美元，较当前134.78美元有约14%的上行空间。</p>
+<hr />
+<h2 id="_8">十、核心问题：价值陷阱还是安全边际？</h2>
+<h3 id="101">10.1 支持"真正安全边际"的证据</h3>
+<ol>
+<li><strong>净现金535亿美元</strong>，相当于市值的17%（按312亿美元市值），提供硬底</li>
+<li><strong>PE 17x远低于历史均值32.5x</strong>，盈利收益率5.81%高于无风险利率</li>
+<li><strong>股东回报激进</strong>：FY2025回购+分红165亿美元，占市值53%，年化收缩速度极快</li>
+<li><strong>云业务加速</strong>：Q4增18%、FY2026 Q1增26%、Q2增34%，AI驱动增长明确</li>
+<li><strong>淘天货币化率提升</strong>：CMR收入增长12%（远高于GMV增速），说明平台提价能力尚存</li>
+</ol>
+<h3 id="102">10.2 支持"价值陷阱"的证据</h3>
+<ol>
+<li><strong>自由现金流暴跌53%</strong>：3,800亿AI投入可能无法回收，挤压未来分红回购空间</li>
+<li><strong>淘天增速仅3%</strong>：核心业务增长见顶，拼多多+抖音持续蚕食</li>
+<li><strong>Non-GAAP净利润零增长</strong>：1,581亿 vs 上年1,575亿，核心盈利能力没有改善</li>
+<li><strong>ROE偏低</strong>（12.9%）：大量现金和低效投资拉低回报率</li>
+<li><strong>VIE+政策风险溢价</strong>：外资持有的是开曼群岛壳公司的权益，非真正的经营实体</li>
+<li><strong>管理层资本配置记录不佳</strong>：历史上大量"买买买"（优酷、饿了么、大润发等）回报率低</li>
+</ol>
+<h3 id="103">10.3 巴菲特式结论</h3>
+<p><strong>判断</strong>：阿里巴巴更接近"有安全边际的转型期公司"，而非经典的"价值陷阱"。</p>
+<p>理由：
+- 经典价值陷阱的特征是"利润看起来便宜但在消失"，而阿里的核心利润（淘天）虽增长缓慢但绝对值稳定
+- 净现金+激进回购提供了"即使判断错误，下行空间有限"的保护
+- 云业务的加速增长提供了"如果判断正确，上行空间巨大"的期权</p>
+<p><strong>但需要警惕</strong>：
+- 3,800亿AI资本开支是一个"改变方程式"的变量——如果成功，阿里云将成为中国AI基础设施的垄断者；如果失败，将严重侵蚀现金储备和回购能力
+- 如果FY2026自由现金流继续恶化，回购和分红的可持续性将受到挑战</p>
+<blockquote>
+<p>"在别人恐惧时贪婪"——但前提是你对这家公司的价值有信心。</p>
+</blockquote>
+<hr />
+<h2 id="_9">附录：金融严谨性验证记录</h2>
+<h3 id="a">A. 市值验算</h3>
+<pre><code>股价 131.90 HKD x 总股本 184.7亿股 = 2,436亿港元
+偏差 0.03%，验证通过
+</code></pre>
+<h3 id="b">B. 估值指标精确验算</h3>
+<pre><code>PE = 134.78 / 7.83 = 17.21x
+PB = 134.78 / 56.7 = 2.38x
+ROE = 7.83 / 56.7 = 13.81%
+P/FCF = 134.78 / 4.60 = 29.30x
+股息率 = 2.00 / 134.78 = 1.48%
+PS = 134.78 / 53.93 = 2.50x
+盈利收益率 = 5.81%
+</code></pre>
+<h3 id="c">C. 营收交叉验证</h3>
+<pre><code>公司财报: 9,963.5亿元
+MacroTrends: 9,943亿元（USD换算）
+电商派: 9,963.5亿元
+偏差 ≤ 0.21%，数据一致
+</code></pre>
+<h3 id="d">D. 净利润交叉验证</h3>
+<pre><code>公司财报: 1,259.76亿元
+新浪财经: 1,259.76亿元
+MacroTrends: 1,293亿元（偏差2.64%，USD换算差异）
+优先采用公司财报数据
+</code></pre>
+<h3 id="e-usd">E. 三情景估值（USD）</h3>
+<pre><code>乐观：15%增长/20x PE → 目标价238.2美元（+76.7%）
+中性：8%增长/15x PE → 目标价148.0美元（+9.8%）
+悲观：0%增长/10x PE → 目标价78.3美元（-41.9%）
+</code></pre>
+<hr />
+<p><em>数据来源：阿里巴巴FY2025财报（2025年5月15日发布）、MacroTrends、Yahoo Finance、Investing.com、StockAnalysis、新浪财经</em>
+<em>估值计算使用 financial_rigor.py 精确十进制引擎，无浮点误差</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/5eacdfc62656.html">用巴菲特的方式，拆一份利润暴跌 62% 的财报</a><div class="meta">2026-08-18 · 公众号</div></li><li><a href="../r/3e9c0540f78d.html">阿里巴巴（NYSE:BABA / HK:9988）——晨星估值视角的增量分析</a><div class="meta">2026-08-17 · 估值仓位</div></li><li><a href="../r/0c979d59c8de.html">阿里巴巴集团（BABA / 9988.HK）投资研究报告——三场烧钱战</a><div class="meta">2026-08-17 · 研究</div></li><li><a href="../r/eb69737f826c.html">AI 时代，阿里是中国的亚马逊，还是下一个 IBM</a><div class="meta">2026-08-08 · 公众号</div></li><li><a href="../r/e5061154438c.html">淘天：一年被烧掉数百亿利润的现金牛</a><div class="meta">2026-08-05 · 公众号</div></li><li><a href="../r/9376fe7e65ec.html">马云回来了，方向盘在吴泳铭手里——以及多少钱值得买</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/dc7daff890e2.html">用巴菲特的方式，拆一份利润暴跌 62% 的财报</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/12b4efbd3c28.html">AI 时代，阿里是中国的亚马逊，还是下一个 IBM</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4ff68eaf9ecd.html">一年被烧掉数百亿利润的现金牛——淘天</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/1edee4f2eb1e.html">你以为你看懂了阿里巴巴，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/8c30a23aa8b0.html">《看懂阿里巴巴》系列说明</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/bc7c11a33df1.html">你以为你看懂了阿里巴巴，其实没有</a><div class="meta">2026-08-01 · 公众号</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

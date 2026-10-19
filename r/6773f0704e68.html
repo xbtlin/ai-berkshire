@@ -1,0 +1,355 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>一座 19 年建成的软件城堡 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><h1>一座 19 年建成的软件城堡</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E3%80%8A%E7%9C%8B%E6%87%82%E8%8B%B1%E4%BC%9F%E8%BE%BE%E3%80%8B/02-%E5%95%86%E4%B8%9A%E6%9C%AC%E8%B4%A8-%E4%B8%80%E5%BA%A719%E5%B9%B4%E5%BB%BA%E6%88%90%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%9F%8E%E5%A0%A1.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">英伟达真正卖的是什么</a></li>
+<li><a href="#cuda">CUDA 护城河具体是什么</a><ul>
+<li><a href="#_2">一个不准确但有用的类比</a></li>
+<li><a href="#_3">三条最深的护城河</a></li>
+</ul>
+</li>
+<li><a href="#_4">黄仁勋为什么说"别人的芯片白给都比英伟达贵"</a></li>
+<li><a href="#_5">护城河正在出现裂缝——但没有崩塌</a><ul>
+<li><a href="#1ai">裂缝 1：AI 编程工具让代码迁移成本暴跌</a></li>
+<li><a href="#2rocm-3-30">裂缝 2：ROCm 差距从 3 倍缩窄到 30%</a></li>
+<li><a href="#3triton">裂缝 3：Triton 编译器构建"逃逸通道"</a></li>
+<li><a href="#_6">但护城河远未崩塌</a></li>
+</ul>
+</li>
+<li><a href="#_7">护城河正在变形——从"软件锁定"到"全栈工厂"</a></li>
+<li><a href="#_8">一个来自段永平的核心追问</a></li>
+<li><a href="#_9">本篇结论</a></li>
+<li><a href="#_10">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂英伟达》系列 · 第 02 篇 · 商业本质
+阅读时间约 12 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">英伟达真正卖的是什么</h2>
+<p>有一个细节很能说明问题：加州理工学院的数据中心管理员说，<strong>"教授们宁愿等 18 个月拿到英伟达的芯片，也不愿意换成别的供应商。"</strong> 等一年半，而不是转向现货充足、价格更低的竞品。</p>
+<p>这不是品牌忠诚，是迁移成本高到无法承受。英伟达卖的不是铲子，<strong>是一整套挖矿系统：铲子 + 矿车 + 矿道 + 操作手册 + 培训学校</strong>——用行业术语说：<strong>GPU 芯片 + NVLink 互连网络 + CUDA 软件生态 + AI 框架集成 + 企业服务。</strong> 你可以只换掉铲子，但你搬不走剩下那四样。</p>
+<p>这套系统的核心，是 CUDA。</p>
+<hr />
+<h2 id="cuda">CUDA 护城河具体是什么</h2>
+<h3 id="_2">一个不准确但有用的类比</h3>
+<p>把 CUDA 理解成"GPU 世界的 Windows"。</p>
+<p>微软 Windows 的护城河不在操作系统本身——Linux 早就比 Windows 好用。Windows 的护城河在于：几十年积累的上百万个应用、几十亿用户的使用习惯、全球企业 IT 体系的深度绑定。你可以造出更好的操作系统，但你搬不动上面的生态。</p>
+<p>CUDA 也是一样。它的护城河不在某个单一技术点，而在 <strong>19 年（2006-2026）系统性投入构建的五层叠加生态</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>层次</th>
+<th>具体内容</th>
+<th>关键数字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第 1 层：硬件抽象</td>
+<td>CUDA Driver / Runtime（与英伟达芯片同源开发）</td>
+<td>每代 GPU 专属优化</td>
+</tr>
+<tr>
+<td>第 2 层：核心数学库</td>
+<td>cuDNN（<strong>10 万行</strong>手工优化代码）、cuBLAS、NCCL、TensorRT</td>
+<td>AMD MIOpen 差 <strong>30-50%</strong></td>
+</tr>
+<tr>
+<td>第 3 层：领域库</td>
+<td>cuDF、cuML、cuQuantum、RAPIDS、Modulus、Isaac</td>
+<td>AMD <strong>几乎零覆盖</strong></td>
+</tr>
+<tr>
+<td>第 4 层：框架层</td>
+<td>PyTorch / JAX / vLLM 默认 CUDA 优先</td>
+<td>ROCm 是二等公民，落后 <strong>6-12 个月</strong></td>
+</tr>
+<tr>
+<td>第 5 层：应用层</td>
+<td>HuggingFace、TensorRT-LLM、Stable Diffusion、ComfyUI</td>
+<td><strong>80%</strong> 主流模型部分支持 AMD</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：英伟达官网、ThunderCompute 2026 年评测、PyTorch 社区</p>
+</blockquote>
+<p><strong>护城河 = 5 层乘积，而非 5 层叠加。</strong> 攻破任何一层都不够——要同时攻破 5 层才能真正替代 CUDA。这就是为什么 AMD 做了 10 年 ROCm，至今仍是"CUDA 的替代品"而非"CUDA 的替代者"。</p>
+<h3 id="_3">三条最深的护城河</h3>
+<p>在 5 层之中，有 3 条最难突破：</p>
+<p><strong>1. TensorRT-LLM（推理优化引擎）</strong></p>
+<p>英伟达的推理优化引擎，能让同一块 GPU 跑出比裸跑快 <strong>3-10 倍</strong>的推理性能。AMD 没有任何对位产品。</p>
+<p>实测数据：H100 上用 NIM 容器（基于 TensorRT-LLM）跑 Llama 3.1 8B，吞吐量 <strong>1,201 tokens/s</strong>，裸跑 PyTorch 仅 613 tokens/s——<strong>同一块硬件，软件差 2 倍</strong>。</p>
+<p><strong>2. NCCL（万卡集群通信库）</strong></p>
+<p>训练 GPT-5、Claude 4 级别的前沿大模型需要数万块 GPU 协同工作。NCCL 是英伟达的集群通信库，配合 NVLink 和 InfiniBand 网络，在万卡 all-reduce 通信上比 AMD 的 RCCL 快 <strong>30%+</strong>。</p>
+<p>这不是一个可以"快速追赶"的差距——Meta 的论文显示，10 万卡级训练集群的故障检测和恢复需要 3 分钟级响应时间，这种系统级优化需要多年的工程积累。</p>
+<p><strong>3. cuDNN（深度学习核心原语）</strong></p>
+<p>每一代 GPU 发布时，cuDNN 团队会为该芯片的缓存层级、warp 调度器、tensor core 做<strong>逐一手工优化</strong>，把硬件利用率推到 90%+ 极限。FlashAttention v2/v3 的英伟达版本通常比 AMD 版本<strong>早 6-12 个月</strong>集成。</p>
+<hr />
+<h2 id="_4">黄仁勋为什么说"别人的芯片白给都比英伟达贵"</h2>
+<p>这句话听起来狂妄，但有数据支撑。</p>
+<p><strong>核心逻辑</strong>：芯片成本只是 AI 基础设施总成本的一部分。更大的成本在于：软件适配、集群调优、人员培训、迁移风险。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>成本项</th>
+<th>买英伟达</th>
+<th>买 AMD（举例）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>芯片价格</td>
+<td>$30-50K/块（B200）</td>
+<td>$10-15K/块（MI300X）</td>
+</tr>
+<tr>
+<td>软件适配</td>
+<td>零成本（CUDA 原生）</td>
+<td>数月工程师时间</td>
+</tr>
+<tr>
+<td>性能损失</td>
+<td>基准 100%</td>
+<td>裸跑约 70-85%（需额外优化）</td>
+</tr>
+<tr>
+<td>集群通信</td>
+<td>NCCL + NVLink（万卡验证）</td>
+<td>RCCL + Infinity Fabric（千卡级验证）</td>
+</tr>
+<tr>
+<td>运维风险</td>
+<td>行业标准，容错成熟</td>
+<td>新平台，生产环境案例少</td>
+</tr>
+<tr>
+<td><strong>TCO（总拥有成本）</strong></td>
+<td><strong>基准</strong></td>
+<td><strong>可能更高</strong>（省芯片但费人）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>反方观点</strong>：这个逻辑对大学和创业公司成立，但对 AWS、Google、微软这种有几千名芯片工程师的公司<strong>不一定成立</strong>。它们有能力、有动机、也有资金自己造芯片——而且已经在造了。TCO 的天平正在向自研芯片倾斜，尤其在推理场景。</p>
+<hr />
+<h2 id="_5">护城河正在出现裂缝——但没有崩塌</h2>
+<h3 id="1ai">裂缝 1：AI 编程工具让代码迁移成本暴跌</h3>
+<p>2026 年 1 月，一位开发者用 Claude Code <strong>在 30 分钟内将 CUDA 后端移植到 AMD 的 ROCm 平台</strong>，不依赖任何中间翻译工具，性能损失不到 10%。</p>
+<p>这在 2023 年是不可能的。当时 CUDA 到 ROCm 的迁移需要一个工程师团队花几个月。</p>
+<p>AI 编程工具的进步正在把 CUDA 的"代码锁定"层快速削弱：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>AI 编程能力</th>
+<th>CUDA 迁移成本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023 年</td>
+<td>只能写基础代码</td>
+<td>团队 + 数月</td>
+</tr>
+<tr>
+<td>2025 年</td>
+<td>能写含 tensor core 的 kernel</td>
+<td>1-2 人 + 数周</td>
+</tr>
+<tr>
+<td>2026 年</td>
+<td>能端到端移植 CUDA 后端</td>
+<td><strong>1 人 + 数小时</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：Techstrong.ai、CASS 论文（95% 源码翻译准确率）、ThunderCompute 评测</p>
+</blockquote>
+<p><strong>但护城河不会瞬间崩塌</strong>——30 分钟移植的是简单 kernel。复杂的集群通信代码、极致优化的推理引擎、万卡级系统调优，AI 工具目前还攻不下来。</p>
+<h3 id="2rocm-3-30">裂缝 2：ROCm 差距从 3 倍缩窄到 30%</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>ROCm vs CUDA 性能差距（计算密集型任务）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023 年</td>
+<td><strong>2-3 倍</strong></td>
+</tr>
+<tr>
+<td>2026 年</td>
+<td><strong>10-30%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：ThunderCompute 独立评测，2026 年 4 月</p>
+</blockquote>
+<p>AMD 的 ROCm 7.0 战略明确写着"与 CUDA 语义更紧密对齐"——它在系统性地缩小差距。</p>
+<h3 id="3triton">裂缝 3：Triton 编译器构建"逃逸通道"</h3>
+<p>OpenAI 开源的 Triton 编译器（3.6.0 版本，2026 年 1 月发布）已经支持 AMD 后端。PyTorch 的 TorchInductor 编译器也在推动"后端无关"的编程范式——开发者写一次代码，自动适配不同芯片。</p>
+<p><strong>这意味着</strong>：未来的 AI 开发者可能不再需要直接写 CUDA——他们写 Python / Triton，编译器自动生成底层代码。如果这条路走通，CUDA 的"代码锁定"将从根本上被绕过。</p>
+<h3 id="_6">但护城河远未崩塌</h3>
+<p><strong>仍然坚固的部分</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>护城河层次</th>
+<th>状态</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TensorRT-LLM 极致推理优化</td>
+<td><strong>坚固</strong></td>
+<td>3-10 倍性能，AMD 无对位产品</td>
+</tr>
+<tr>
+<td>NCCL 万卡集群通信</td>
+<td><strong>坚固</strong></td>
+<td>10 万卡级训练无替代</td>
+</tr>
+<tr>
+<td>cuDNN 每代手工优化</td>
+<td><strong>坚固</strong></td>
+<td>需要与硬件同步，AMD 落后 6-12 月</td>
+</tr>
+<tr>
+<td>NVLink / NVSwitch 互连</td>
+<td><strong>坚固</strong></td>
+<td>72 GPU 全互连（NVL72），竞品无对位</td>
+</tr>
+<tr>
+<td>新算法首发</td>
+<td><strong>坚固</strong></td>
+<td>FlashAttention 等英伟达通常最先支持</td>
+</tr>
+<tr>
+<td>AI 编程的反向飞轮</td>
+<td><strong>坚固</strong></td>
+<td>互联网 99% GPU 代码是 CUDA，AI 写 CUDA 比写 ROCm 更容易</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>正在被侵蚀的部分</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>护城河层次</th>
+<th>状态</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基础 CUDA 代码迁移门槛</td>
+<td><strong>已被大幅削弱</strong></td>
+<td>AI 工具 + Triton + HIPIFY</td>
+</tr>
+<tr>
+<td>PyTorch 对 CUDA 的默认依赖</td>
+<td><strong>正在松动</strong></td>
+<td>TorchInductor 支持多后端</td>
+</tr>
+<tr>
+<td>简单推理场景的 CUDA 锁定</td>
+<td><strong>已基本消失</strong></td>
+<td>AMD MI355X TCO 已在部分场景反超</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_7">护城河正在变形——从"软件锁定"到"全栈工厂"</h2>
+<p>一个更精准的判断是：CUDA 护城河不是在"消失"，而是在<strong>变形</strong>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时期</th>
+<th>护城河形态</th>
+<th>核心壁垒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2006-2020</td>
+<td>CUDA 软件锁定</td>
+<td>代码迁移成本极高</td>
+</tr>
+<tr>
+<td>2020-2025</td>
+<td>CUDA + 全栈整合</td>
+<td>GPU + NVLink + 软件 + 网络</td>
+</tr>
+<tr>
+<td>2025-2030（预测）</td>
+<td>全栈 AI 工厂</td>
+<td>硬件代际领先 + NVL72/576 系统级销售 + 服务</td>
+</tr>
+</tbody>
+</table></div>
+<p>以前英伟达靠"你的代码被 CUDA 锁死了，想走也走不了"赚钱。未来靠"我的整套系统比你自己拼凑的好 2-3 倍，你不想走"赚钱。</p>
+<p>前者是<strong>锁定</strong>，后者是<strong>竞争力</strong>。后者更健康，但定价权会被压缩——客户有了选择，你不能再随便开价。</p>
+<p><strong>反方观点</strong>：全栈 AI 工厂的策略意味着英伟达需要持续每年投入 $150 亿+ 研发来维持代际领先。一旦某一代产品（比如 Rubin Ultra）出现延迟或性能不达预期，护城河可能迅速收窄。这是一场需要"每年都赢"的战斗——不像茅台，放着不动护城河也不会变浅。</p>
+<hr />
+<h2 id="_8">一个来自段永平的核心追问</h2>
+<p>段永平在 2024 年 4 月的雪球发言中说了一段很关键的话：</p>
+<blockquote>
+<p>"目前我没能明白的东西是：<strong>他们的这种垄断到底能持续多久？对英伟达芯片的需求到底能持续多久？</strong> 如果整不明白就很难下重手。下不了重手说啥都没啥意义。"</p>
+</blockquote>
+<p>两年后（2025 年 Q4），段永平把英伟达加到了组合的 <strong>7.7%</strong>（第三大重仓），但始终没有超过 10%。他后来解释：</p>
+<blockquote>
+<p>"不能说完全看懂了，但确实觉得 NVDA 的护城河有点厉害。看着这肯定是个不错的公司啊，买点大概率也是会赚钱的。"</p>
+<p>"我接受黄说的 DeepSeek 的创新不会减少对算力需求的观点，也大致理解他认为 NVDA 在算力上的地位不会受到威胁的意思。"</p>
+</blockquote>
+<p><strong>段永平的态度是：好公司、护城河有一定深度、但看不懂 10 年——所以下中等仓位，不下重手。</strong></p>
+<p>这是一个非常有纪律的决策框架：<strong>承认不完全懂，但愿意用仓位管理来参与。</strong></p>
+<hr />
+<h2 id="_9">本篇结论</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>判断</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CUDA 护城河深不深？</td>
+<td><strong>深，但正在从顶部被侵蚀</strong></td>
+</tr>
+<tr>
+<td>侵蚀速度？</td>
+<td>代码锁定层 <strong>2-3 年内显著削弱</strong>；系统级（万卡通信 + 极致优化）<strong>5-10 年仍坚固</strong></td>
+</tr>
+<tr>
+<td>护城河会消失吗？</td>
+<td><strong>不会消失，但会变形</strong>——从"软件锁定"变成"全栈竞争力"</td>
+</tr>
+<tr>
+<td>对估值的影响？</td>
+<td><strong>毛利率结构性下移</strong>（75% → 65-70%）的概率正在增大</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_10">下期预告</h2>
+<p>下一篇，我们进入 AI 算力市场最大的结构性变化——<strong>训练 vs 推理的分化</strong>。</p>
+<p>2026 年，推理算力已占 AI 总算力的 2/3。推理市场和训练市场的游戏规则完全不同——训练买"性能极致"，推理买"性价比"。这对英伟达意味着什么？</p>
+<p>要回答的几个问题：</p>
+<ul>
+<li>为什么推理市场是英伟达最脆弱的战场？</li>
+<li>Groq、Cerebras 这些专用推理芯片为什么重要？</li>
+<li>英伟达收购 Groq 意味着什么？</li>
+<li>推理份额从 75% 降到 50%——英伟达还能赚多少钱？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂英伟达》系列第 02 篇。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/12be4daf50fb.html">审计说明</a><div class="meta">2026-09-07 · 底稿</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/fc0dae7fdd42.html">英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</a><div class="meta">2026-08-28 · 财报</div></li><li><a href="../r/5e4b7e854e9f.html">07 增量更新底稿（2026-07-14 → 2026-08-01）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/6e56cabdf58e.html">《看懂英伟达》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/6601b82f2d5a.html">06 管理层评估 + 当前估值与卖方观点（研究底稿）</a><div class="meta">2026-07-14 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

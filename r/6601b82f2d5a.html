@@ -1,0 +1,721 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>06 管理层评估 + 当前估值与卖方观点（研究底稿） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><h1>06 管理层评估 + 当前估值与卖方观点（研究底稿）</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-07-14 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E3%80%8A%E7%9C%8B%E6%87%82%E8%8B%B1%E4%BC%9F%E8%BE%BE%E3%80%8B-20260714/research/06-%E7%AE%A1%E7%90%86%E5%B1%82%E4%B8%8E%E4%BC%B0%E5%80%BC.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#1">1. 黄仁勋关键决策史</a><ul>
+<li><a href="#11-1993-1996">1.1 创业与第一次濒死（1993-1996）</a></li>
+<li><a href="#12-riva-1281997">1.2 RIVA 128豪赌（1997）</a></li>
+<li><a href="#13-cuda2006-2016">1.3 CUDA：十年不被理解（2006-2016）</a></li>
+<li><a href="#14-bumpgate2008-2010">1.4 bumpgate封装缺陷危机（2008-2010）——诚信记录上最大的污点</a></li>
+<li><a href="#15-2018-2019">1.5 加密货币崩盘库存危机（2018-2019）</a></li>
+<li><a href="#16-2022">1.6 游戏库存减记与数据中心转型（2022）</a></li>
+<li><a href="#17-2022-2026">1.7 对华出口管制的周旋（2022-2026）</a></li>
+</ul>
+</li>
+<li><a href="#2">2. 危机诚信检验（两案）</a><ul>
+<li><a href="#2018-2019">案例一：2018-2019加密危机</a></li>
+<li><a href="#2022">案例二：2022游戏库存危机</a></li>
+</ul>
+</li>
+<li><a href="#3-5-8">3. 承诺兑现率盘点（近5-8年）</a><ul>
+<li><a href="#_2">兑现了的</a></li>
+<li><a href="#_3">延迟的</a></li>
+<li><a href="#_4">没兑现/悄悄不提的</a></li>
+<li><a href="#_5">一句话画像（供正文用）</a></li>
+</ul>
+</li>
+<li><a href="#4">4. 持股与减持</a><ul>
+<li><a href="#fy2026">持股（以FY2026委托书为准）</a></li>
+<li><a href="#10b5-1">10b5-1减持节奏</a></li>
+<li><a href="#_6">慈善捐赠</a></li>
+</ul>
+</li>
+<li><a href="#5-fy2026-def-14a">5. 薪酬（FY2026 DEF 14A汇总薪酬表精确数）</a></li>
+<li><a href="#6">6. 核心团队与接班人</a><ul>
+<li><a href="#_7">核心团队</a></li>
+<li><a href="#_8">接班人问题（管理层维度最大扣分项）</a></li>
+</ul>
+</li>
+<li><a href="#7">7. 资本配置纪律</a><ul>
+<li><a href="#_9">回购与分红（公司文件口径）</a></li>
+<li><a href="#_10">收购</a></li>
+<li><a href="#2025-2026">对外生态投资与"循环交易"争议（2025-2026）</a></li>
+<li><a href="#_11">现金留存</a></li>
+</ul>
+</li>
+<li><a href="#1-2026-07-1307-14">1. 当前估值快照（截至2026-07-13收盘/07-14盘前）</a></li>
+<li><a href="#2_1">2. 与自身历史估值对比</a></li>
+<li><a href="#3-mag72026-07-14finviz">3. Mag7对比表（截至2026-07-14，来源：finviz各股页面）</a></li>
+<li><a href="#4-2026-07-14">4. 卖方目标价与评级（截至2026-07-14）</a></li>
+<li><a href="#5">5. 知名投资人动向</a><ul>
+<li><a href="#nvda">伯克希尔：从未持有NVDA；建仓谷歌作对照</a></li>
+<li><a href="#openai">软银：清仓换OpenAI</a></li>
+<li><a href="#michael-burry">Michael Burry：做空+折旧论</a></li>
+<li><a href="#_13">段永平：从"看不懂"到第三大重仓（本节最大看点）</a></li>
+<li><a href="#_14">其他</a></li>
+</ul>
+</li>
+<li><a href="#6-20267">6. 持仓结构与指数权重（截至2026年7月）</a></li>
+<li><a href="#7-20267">7. 多空论点小结（2026年7月市场共识图景）</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>底稿日期：2026-07-14
+用途：《看懂英伟达》系列（20260714版）正文素材，非成文
+方法：三路并行网络调研（决策史与诚信 / 持股薪酬团队资本配置 / 估值与卖方）+ 本仓库已有素材（段永平雪球发言60条整理、旧系列5篇）
+规则：每条标来源；估值数据标截至日期；未双源核实的标"待核实"
+财年口径：FY2026 = 截至2026年1月25日财年；FY2027 Q1 = 截至2026年4月26日季度</p>
+</blockquote>
+<hr />
+<h1 id="_1">第一部分：管理层评估</h1>
+<h2 id="1">1. 黄仁勋关键决策史</h2>
+<h3 id="11-1993-1996">1.1 创业与第一次濒死（1993-1996）</h3>
+<ul>
+<li><strong>1993年</strong>：黄仁勋（30岁，前LSI Logic、AMD工程师）与Chris Malachowsky、Curtis Priem（均来自Sun）在圣何塞东区Berryessa路一家Denny's餐厅敲定创业，启动资金<strong>4万美元</strong>。该卡座后来被Denny's挂牌"The NVIDIA Booth — The booth that launched a trillion-dollar company"。
+  来源：https://en.wikipedia.org/wiki/Nvidia ；https://quartr.com/insights/edge/the-story-of-jensen-huang-and-nvidia ；https://www.cnbc.com/2025/10/30/how-jensen-huang-turned-nvidia-into-the-first-5-trillion-company.html</li>
+<li><strong>1995年NV1失败</strong>：押注"二次曲面"渲染，与行业转向的三角形多边形标准（DirectX/OpenGL）背道而驰。合作方Diamond Multimedia 1996年为积压的Edge 3D库存减记500万美元；英伟达1996年初停售NV1。
+  来源：https://en.wikipedia.org/wiki/NV1 ；https://www.computer.org/publications/tech-news/chasing-pixels/nvidias-quadratic-processor-the-nv1</li>
+<li><strong>1996年世嘉救命钱</strong>：为世嘉主机开发NV2一年后，黄仁勋意识到架构方向错了。他亲自找世嘉高管入交昭一郎（Shoichiro Irimajiri）承认无法交付，但请求世嘉仍支付约定的<strong>500万美元</strong>——否则英伟达倒闭。入交同意，这笔钱给了公司约6个月存活时间。（世嘉1999年NVDA上市后持股，2000年以1500万美元卖出。）
+  来源：https://www.tomshardware.com/tech-industry/nvidia-nearly-went-out-of-business-in-1996-trying-to-make-segas-dreamcast-gpu-instead-sega-americas-ceo-offered-the-company-a-dollar5-million-lifeline ；https://www.timeextension.com/features/flashback-how-the-kindness-of-sega-saved-nvidia-from-going-under</li>
+<li><strong>他本人如何讲这段</strong>（2023-05-27台湾大学毕业演讲原话）：<blockquote>
+<p>"Confronting our mistake, and with humility asking for help, saved Nvidia."
+（直面我们的错误、谦卑地求助，救了英伟达。）
+  来源：https://interconnected.blog/jensen-huang-ntu-commencement-speech-2023/ ；https://blogs.nvidia.com/blog/huang-ntu-commencement/</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="12-riva-1281997">1.2 RIVA 128豪赌（1997）</h3>
+<ul>
+<li>拿到世嘉的钱后仍只够活几个月。黄仁勋<strong>裁掉一半员工</strong>，剩余资金全押RIVA 128，买昂贵仿真设备在无实体芯片情况下完成验证、直接流片——只赌一次。1997年8月出货时账上只剩约一个月工资。<strong>RIVA 128头四个月卖出约100万片</strong>，救活公司。
+  来源：https://finance.yahoo.com/markets/stocks/articles/well-business-jensen-huang-bet-204500810.html ；https://howardyu.substack.com/p/our-company-is-30-days-from-going</li>
+<li>此后多年他在公司内部会议的固定开场白：<blockquote>
+<p>"Our company is thirty days from going out of business."（我们公司离倒闭还有三十天。）
+  来源：https://en.wikipedia.org/wiki/Jensen_Huang</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="13-cuda2006-2016">1.3 CUDA：十年不被理解（2006-2016）</h3>
+<ul>
+<li>CUDA 2006年发布测试版、2007年正式推出。据SEC文件汇总，<strong>2006-2017年累计研发投入近120亿美元</strong>，而同期年营收仅个位数十亿美元；华尔街花了约10年才开始认可。
+  来源：https://investinginai.substack.com/p/the-cuda-backstory-lessons-for-investors</li>
+<li>代价：CUDA使每颗游戏芯片背上额外成本，叠加2008年金融危机与bumpgate，市值从高点约120亿美元跌到约20-40亿美元区间（精确低点<strong>待核实</strong>）；2008-2013年股价长期横盘跑输大盘。
+  来源：https://www.thecloser.fm/the-nvidia-doctrine/</li>
+<li>他2023年台大演讲复盘（大意）："CUDA带来的额外成本非常高，英伟达的利润多年受到重创"；股东质疑，公司坚持办GTC推广CUDA，直到科学计算应用出现。2024年他称CUDA战略曾是"existential threat"（生存级威胁）级别的赌注。
+  来源：https://interconnected.blog/jensen-huang-ntu-commencement-speech-2023/ ；https://wccftech.com/nvidia-ceo-reveals-how-the-company-survived-an-existential-threat-after-forcing-cuda-on-gaming-gpus/</li>
+</ul>
+<h3 id="14-bumpgate2008-2010">1.4 bumpgate封装缺陷危机（2008-2010）——诚信记录上最大的污点</h3>
+<ul>
+<li>2008年7月（FY2009 Q2）计提<strong>1.96亿美元</strong>（笔记本MCP/GPU封装材料缺陷的保修维修成本）；FY2010追加9,580万美元；FY2011 Q2再计提净额1.939亿美元（含集体诉讼和解相关1,270万美元）。<strong>累计净计提4.759亿美元</strong>。
+  来源：https://www.sec.gov/Archives/edgar/data/0001045810/000104581010000006/fy2010form10k.htm ；https://www.tomshardware.com/news/gpu-g84-g86-defect-die,10856.html</li>
+<li>波及苹果2007-2008年产MacBook Pro、惠普dv系列、戴尔多系列；苹果、惠普被迫推延保/免费维修。2010年集体诉讼和解：200万美元赔付托管+约1,300万美元原告律师费+免费维修。
+  来源：https://m.hexus.net/business/news/legal/26700-nvidia-settles-gpu-class-action-suit/</li>
+<li><strong>批评方观点</strong>（The Inquirer/SemiAccurate记者Charlie Demerjian等）：英伟达最初坚称只是"一小批"芯片有问题，随后波及面不断扩大，公司持续否认、淡化，甚至攻击爆料记者。对外口径与最终4.76亿美元累计损失形成鲜明对比。<strong>这是黄仁勋履历中最不坦诚的一次危机处理</strong>——财务上如实计提，对外沟通上挤牙膏式承认。
+  来源：https://en.everybodywiki.com/Bumpgate ；https://www.semiaccurate.com/2010/07/11/what-nvidia-should-do-now/</li>
+</ul>
+<h3 id="15-2018-2019">1.5 加密货币崩盘库存危机（2018-2019）</h3>
+<ul>
+<li><strong>2018-11-15（Q3 FY2019财报）</strong>：Q4指引27亿美元（±2%），比市场预期34亿低约20%；当季对Pascal计提<strong>5,700万美元库存减值</strong>（当季库存拨备总额7,000万，前九个月累计1.24亿）；股价当日暴跌17-19%。
+  来源：https://www.eetimes.com/nvidia-hit-by-crypto-hangover/ ；https://fortune.com/2018/11/15/nvidia-stock-plunges-crypto-hangover-weighs-revenue-growth/</li>
+<li>黄仁勋电话会原话（2018-11-15）：<blockquote>
+<p>"The crypto hangover lasted longer than we expected."（加密货币的宿醉比我们预期的更久。）
+"It will take one or two quarters to work through it. This is an unexpected near-term setback and it doesn't change the fundamental dynamics of our company."（消化它需要一到两个季度。这是意料之外的短期挫折，不改变公司基本面。）
+"We were surprised, obviously… I wish we had seen it earlier."（我们显然措手不及……真希望能更早看到。）
+  来源：https://www.fool.com/earnings/call-transcripts/2018/11/16/nvidia-corporation-nvda-q3-2019-earnings-conferenc.aspx</p>
+</blockquote>
+</li>
+<li><strong>2019-01-28二次下修</strong>：Q4指引从27亿再砍到22亿（-18.5%），理由是中国宏观恶化+Turing高端卡不及预期；股价再跌约14%。公告中他说：<blockquote>
+<p>"The foundation of our business is strong and more evident than ever…"（我们业务的根基坚实且前所未有地清晰……）
+  来源：https://nvidianews.nvidia.com/news/nvidia-updates-financial-guidance-for-fourth-quarter-of-fiscal-year-2019-6747502 ；https://www.cnbc.com/2019/01/28/nvidia-shares-tank-after-chipmaker-cuts-guidance.html</p>
+</blockquote>
+</li>
+<li><strong>股价</strong>：从2018年10月初高点292.76美元（拆前）到12月低点，<strong>跌幅约54-56%</strong>，当季标普500最差成分股；约16个月后（2020年初）重回新高。
+  来源：https://www.cnbc.com/2018/12/21/nvidia-is-the-worst-performing-sp-500-stock-this-quarter.html</li>
+<li><strong>事后追责（关键负面事实）</strong>：2022年5月SEC认定英伟达FY2018的Q2/Q3季报<strong>未披露挖矿是当期游戏收入大增（同比+52%、+25%）的重大因素</strong>，罚款<strong>550万美元</strong>（不认不否）。他还曾说"We never had plans for cryptocurrency"（我们从来没有针对加密货币的计划，2019-03）。
+  来源：https://www.cnn.com/2022/05/06/tech/nvidia-sec-settlement-crypto-mining/index.html ；https://www.calcalistech.com/ctech/articles/0,7340,L-3759108,00.html</li>
+</ul>
+<h3 id="16-2022">1.6 游戏库存减记与数据中心转型（2022）</h3>
+<ul>
+<li>2022-08-08盘前预警：Q2 FY2023营收67亿（此前指引81亿）；正式财报计提<strong>13.4亿美元库存及采购承诺减记</strong>；游戏营收20.4亿，<strong>环比-44%、同比-33%</strong>。
+  来源：https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2023</li>
+<li>黄仁勋（新闻稿）："Our gaming product sell-through projections declined significantly as the quarter progressed… we took actions with our Gaming partners to adjust channel prices and inventory."（游戏终端销售预测随季度推进大幅下滑……我们与渠道伙伴调整了价格和库存。）</li>
+<li>CFO Colette Kress的处理：主动"少发货"（undership）两个季度挤干渠道水分（Q2+Q3终端售罄约50亿美元而出货显著低于此）。
+  来源：https://www.stockinsights.ai/us/NVDA/earnings-transcript/fy23-q2-1615</li>
+<li>结果：FY2023全年营收270亿（同比持平）；随后AI爆发，<strong>FY2024营收609亿（+126%），数据中心475亿</strong>——一边减记一边把产能转向数据中心。
+  来源：https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023</li>
+</ul>
+<h3 id="17-2022-2026">1.7 对华出口管制的周旋（2022-2026）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022.8-9</td>
+<td>拜登政府限制A100/H100对华出口 → 英伟达推降速版A800（2022.11）、H800（2023.3）</td>
+</tr>
+<tr>
+<td>2023.10.17</td>
+<td>新规封堵，A800/H800被禁且即时生效 → 年底设计第三代特供芯片H20，2024年起出货</td>
+</tr>
+<tr>
+<td>2025.4</td>
+<td>特朗普政府要求H20出口许可证；预告最高55亿美元减记，Q1 FY2026实际计提<strong>45亿美元</strong>，当季25亿H20收入无法发货，Q2预计损失约80亿收入</td>
+</tr>
+<tr>
+<td>2025.7.14-16</td>
+<td>美国政府保证发证，H20恢复对华销售；黄仁勋当周现身北京链博会（2025年内至少三次访华）</td>
+</tr>
+<tr>
+<td>2025.8.11</td>
+<td>史无前例的"分成协议"：对华H20销售收入<strong>15%上缴美国政府</strong>换许可；特朗普称最初要20%，被黄砍到15%</td>
+</tr>
+<tr>
+<td>2025.9起</td>
+<td>中方反手抵制：监管约谈大厂、实质禁购H20；Q2 FY2026对华H20销售为零；Q3仅5,000万美元。Kress："Sizable purchase orders never materialized in the quarter due to geopolitical issues and the increasingly competitive market in China."</td>
+</tr>
+<tr>
+<td>2025.8.22</td>
+<td>黄仁勋证实在谈B30A（Blackwell降配对华版），审批悬而未决</td>
+</tr>
+<tr>
+<td>2025.12.8</td>
+<td>特朗普宣布允许对华售H200，抽成<strong>25%</strong>；2026年3月GTC黄宣布已收到中国客户H200订单（美中双方均放行）。有报道称设约7.5万颗配额（来源权威性一般，<strong>待核实</strong>）</td>
+</tr>
+<tr>
+<td>2026.1.23-27</td>
+<td>黄仁勋年内首访华（上海→北京→深圳，逛菜市场吃火锅）</td>
+</tr>
+<tr>
+<td>2026.5.13-15</td>
+<td>随特朗普国事访问团访华——最初名单没有他，媒体炒作"被冷落"后特朗普亲自打电话邀请："President Trump asked me to come"</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：https://www.cnbc.com/2025/04/15/nvidia-says-it-will-record-5point5-billion-quarterly-charge-tied-to-h20-processors-exported-to-china.html ；https://www.npr.org/2025/08/11/nx-s1-5498689/trump-nvidia-h20-chip-sales-china ；https://www.cnbc.com/2025/12/08/trump-nvidia-h200-sales-china.html ；https://www.cnbc.com/2026/05/13/nvidia-says-ceo-jensen-huang-is-joining-trumps-china-trip.html ；https://www.globaltimes.cn/page/202601/1354122.shtml</p>
+<ul>
+<li>他对出口管制的公开批评原话（2025-05-21 Computex）：<blockquote>
+<p>"export control was a failure"（出口管制是一场失败）；管制"gave Chinese companies the spirit, the energy, and the government support to accelerate their development"（给了中国公司志气、干劲和政府支持）。并称在华份额从约95%腰斩至约50%（其后自述已归零）。
+  来源：https://www.cnbc.com/2025/05/21/nvidia-ceo-jensen-huang-slams-us-chip-restrictions-as-a-failure.html
+"China is right behind us. We are very close."（中国紧跟在我们身后，差距非常小。）
+  来源：https://www.cnbc.com/2025/05/22/nvidias-jensen-huang-semiconductor-experts-think-us-chip-curbs-failed.html</p>
+</blockquote>
+</li>
+<li>2025年11月FT峰会脱口而出"China is going to win the AI race"，数小时后公司官方软化为中国"nanoseconds behind"——说真话又马上找补的典型样本。
+  来源：https://www.forbes.com/sites/drewbernstein/2026/05/29/jensen-and-dario-square-off-on-ai-chip-exports/</li>
+<li>财务结果：FY2026全年营收<strong>2,159.38亿美元（+65%）</strong>、净利润<strong>1,200.67亿美元</strong>、数据中心1,973亿；但业绩指引长期把对华数据中心计算收入按零处理——中国重开是"期权"而非基本盘。
+  来源：https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026</li>
+</ul>
+<h2 id="2">2. 危机诚信检验（两案）</h2>
+<h3 id="2018-2019">案例一：2018-2019加密危机</h3>
+<ul>
+<li><strong>当时说的</strong>："消化库存需要一到两个季度"（2018-11电话会）。</li>
+<li><strong>事后</strong>：2019-01-28公告确认渠道库存去化基本符合预期，渠道约两个季度后（FY2020 Q1）恢复正常（管理层2019年5月电话会表述<strong>待核实</strong>）；但需求判断偏乐观，两个月后被迫二次砍指引5亿美元。</li>
+<li><strong>判定</strong>：库存时间表兑现；需求误判但认错快（"I wish we had seen it earlier"）。<strong>真正的污点在事前而非事后</strong>——FY2018挖矿收入披露不足，2022年吃SEC 550万美元罚单。</li>
+</ul>
+<h3 id="2022">案例二：2022游戏库存危机</h3>
+<ul>
+<li><strong>当时说的</strong>：通过"少发货+降渠道价"两三个季度出清（Kress，Q2 FY2023电话会）。</li>
+<li><strong>事后</strong>：游戏营收FY2024 Q2（2023年7月季度）恢复同比+22%；按承诺时间表出清，同时13.4亿美元一次性减记、产能转向数据中心。
+  来源：https://www.sec.gov/Archives/edgar/data/1045810/000104581023000171/q2fy24pr.htm</li>
+<li><strong>判定</strong>：兑现，教科书级的"一次出清"。</li>
+</ul>
+<p>（FY2019、FY2023年报致股东信原文关键句：SEC对自动抓取返回403，<strong>待核实</strong>，正文写作前需人工取原文。）</p>
+<h2 id="3-5-8">3. 承诺兑现率盘点（近5-8年）</h2>
+<h3 id="_2">兑现了的</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>承诺</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一年一代产品节奏（2023.10宣布）</td>
+<td>Hopper 2022 → Blackwell 2024（因掩膜设计缺陷延迟约一个季度，黄公开说延迟"was 100% Nvidia's fault"）→ Blackwell Ultra 2025下半年 → Vera Rubin 2026 Q3首批出货、Q4放量（Q4 FY2026电话会确认在轨）→ Rubin Ultra排2027。整体兑现</td>
+</tr>
+<tr>
+<td>"数据中心是最大机会"（2019年前后）</td>
+<td>FY2021 Q2数据中心营收首超游戏；FY2026达1,973亿、占总营收91%。超额兑现，且事前有真金白银佐证（2019年宣布69亿美元收购Mellanox）</td>
+</tr>
+<tr>
+<td>Grace CPU</td>
+<td>以GB200/GB300 Grace Blackwell超级芯片形态大规模出货（独立CPU叙事弱化）</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：https://www.techspot.com/news/105271-nvidia-resolves-design-flaw-blackwell-ai-chips-production.html ；https://wccftech.com/nvidia-confirms-vera-rubin-launch-in-q3-volume-ramp-q4-blackwell-continues-to-see-massive-demand/ ；https://www.datacenterdynamics.com/en/news/nvidias-data-center-business-outperforms-gaming-sales-first-time/</p>
+<h3 id="_3">延迟的</h3>
+<ul>
+<li><strong>自动驾驶</strong>：2017年他说"It will take no more than four years to have fully autonomous cars on the road"（最多四年全自动驾驶上路，即2021年——没发生）；2022年5月宣布"未来六年超110亿美元汽车设计中标管道"。实际汽车营收：FY2024约11亿、FY2025约17亿、FY2026约23亿美元——在增长，但与当年吹的规模差距大（FY2026 Q4汽车营收6.04亿还低于预期）。<strong>方向没错、时间表严重乐观</strong>。
+  来源：https://www.entrepreneur.com/business-news/nvidia-ceo-says-this-is-the-decade-of-autonomous-vehicles/493149 ；https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm</li>
+</ul>
+<h3 id="_4">没兑现/悄悄不提的</h3>
+<ul>
+<li><strong>Omniverse/元宇宙</strong>：2021年11月他说"the economy of Omniverse will be larger than the economy in the physical world"（Omniverse里的经济规模将超过实体世界），甚至说虚拟设计市场可能是实体的"100倍"。2026年现状：Omniverse作为独立收入故事已从财报叙事中消失，被并入"工业数字孪生/物理AI"框架，从不单独披露收入。
+  来源：https://www.digitaltrends.com/computing/nvidia-ceo-metaverse-larger-than-real-world/ ；https://www.cnbc.com/2021/11/19/nvidia-ceo-says-the-metaverse-could-save-companies-billions.html</li>
+<li><strong>加密口径</strong>："We never had plans for cryptocurrency"（2019）vs SEC认定的披露不足。</li>
+<li><strong>DGX Cloud</strong>：2023年3月高调推出（"再造一个云业务"的暗示），从未单独披露收入，明显低调化；是否实质收缩<strong>待核实</strong>。
+  来源：https://en.wikipedia.org/wiki/Nvidia_DGX</li>
+</ul>
+<h3 id="_5">一句话画像（供正文用）</h3>
+<p><strong>对"已发生的错误"异常坦诚，对"未来的故事"习惯性超卖</strong>——他的产品工程类承诺可信度高，终端需求与新市场规模类预言需要打对折。段永平2026年的评价可作对照："这个人我也很欣赏，他十多年前讲的东西和今天讲的东西是一样的。"（https://finance.sina.com.cn/tech/roll/2026-06-12/doc-iniceccp0253963.shtml ）</p>
+<h2 id="4">4. 持股与减持</h2>
+<h3 id="fy2026">持股（以FY2026委托书为准）</h3>
+<ul>
+<li>截至2026-03-23，实益持有<strong>870,604,104股，占总股本3.58%</strong>（总股本243.12亿股）。约7,480万股直接持有，其余约7.8亿股通过家族信托、合伙企业和有限责任公司间接持有。
+  来源：FY2026 DEF 14A（2026年5月提交）https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000036/nvda-20260512.htm ；Form 4结构 https://www.stocktitan.net/sec-filings/NVDA/form-4-nvidia-corp-insider-trading-activity-8095b2595117.html</li>
+<li>按2026-07-13收盘价约203.5美元折算，持股市值约<strong>1,770亿美元</strong>。</li>
+<li>净资产：2026-05-14首次突破<strong>2,000亿美元</strong>（福布斯实时榜当日全球第7）；福布斯2026年度榜第8位；7月股价回落后约1,700-1,900亿美元区间。
+  来源：https://www.forbes.com/sites/zacharyfolk/2026/05/14/jensen-huang-joins-200-billion-club-as-nvidia-soars-over-potential-china-deals/ ；https://www.bloomberg.com/billionaires/profiles/jenhsun-huang/</li>
+</ul>
+<h3 id="10b5-1">10b5-1减持节奏</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>计划</th>
+<th>规模</th>
+<th>执行</th>
+<th>套现</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024年3月计划</td>
+<td>600万股（拆股后口径）</td>
+<td>2024.6.13-9.12提前卖完</td>
+<td><strong>约7.13亿美元</strong>（均价约118.83美元）</td>
+</tr>
+<tr>
+<td>2025年3月20日计划</td>
+<td>600万股（采纳时约值8.65亿）</td>
+<td>2025.6.24首笔，2025.10.31/11.1卖完</td>
+<td>因股价上涨<strong>总套现超10亿美元</strong></td>
+</tr>
+<tr>
+<td>2026年</td>
+<td><strong>截至最新披露无新计划</strong>：FY2026 10-K第9B项与FY2027 Q1 10-Q第5项披露的10b5-1计划（Kress、董事Dabiri、董事Coxe）均无黄仁勋；2026年5月后是否新设，等约2026年8月的Q2 10-Q（<strong>待核实</strong>）</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：https://www.cnbc.com/2024/09/24/nvidia-shares-pop-as-ceo-may-be-done-selling-shares-after-hitting-preset-plan-limit.html ；https://www.bloomberg.com/news/articles/2025-10-31/nvidia-ceo-jensen-huang-completes-1-billion-share-sale ；10-K https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm ；10-Q https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000052/nvda-20260426.htm</p>
+<ul>
+<li>节奏评估：每年600万股约占其持股<strong>0.7%</strong>；2024年中以来通过10b5-1累计套现约29亿美元，约为持仓市值的1.6%——减持极少。2018、2022年危机期间无低位抛售记录（Form 4逐笔核对<strong>待核实</strong>）。
+  来源：https://www.techi.com/nvidia-insider-selling/</li>
+</ul>
+<h3 id="_6">慈善捐赠</h3>
+<ul>
+<li>Jen-Hsun &amp; Lori Huang Foundation：资产从5年前8.28亿美元增至<strong>2024年底92亿美元</strong>、<strong>2025年末超120亿美元</strong>（超过麦克阿瑟基金会，进入美国前15大私人基金会）；据报道约107亿美元已预留未来捐赠（<strong>待核实</strong>）。
+  来源：https://www.cnbc.com/2025/06/12/nvidia-stock-jensen-huang-charitable-foundation.html ；https://www.bloomberg.com/news/articles/2025-11-26/nvidia-s-rally-means-ceo-s-foundation-must-double-giving-again</li>
+<li>主要捐赠：俄勒冈州立大学（夫妇母校）<strong>5,000万美元</strong>（共建2亿美元Huang协同创新综合体，2026年启用）；斯坦福3,000万美元（黄氏工程中心）；2025年2月救急捐加州艺术学院<strong>2,250万美元</strong>；最新一笔约<strong>1.083亿美元</strong>用于向CoreWeave购买AI算力捐给大学科研机构。（注意：加州理工未查到大额捐赠记录，只有2024年6月毕业演讲——网传"捐加州理工"疑与斯坦福混淆。）
+  来源：https://news.oregonstate.edu/news/50-million-gift-nvidia-founder-and-spouse-helps-launch-oregon-state-university-research-center ；https://www.bloomberg.com/news/articles/2025-02-28/nvidia-nvda-ceo-huang-gives-22-5-million-to-save-unsung-arts-college</li>
+<li><strong>税务争议</strong>：纽约时报2024年12月报道其通过2012年不可撤销信托（放入58.4万股，当时值700万美元、2024年底约值30亿）、2016年4个GRAT（放入300万股）及向基金会/DAF捐股组合，未来可规避约<strong>80亿美元遗产税</strong>；基金会2023年支出的77%流向其控制的施瓦布DAF"GeForce基金"——DAF无强制支出要求是争议核心。另一面：2026年1月他公开表示若开征亿万富翁税、自己缴约80亿美元"完全没问题"（"perfectly fine"）。
+  来源：https://www.tomshardware.com/tech-industry/nvidia-ceo-jensen-huang-accused-of-usd8-billion-tax-dodge-by-u-s-newspaper-his-remaining-family-would-be-the-beneficiaries-of-this-estate-tax-avoidance ；https://www.cnbc.com/2026/01/07/nvidia-ceo-jensen-huang-perfectly-fine-with-proposed-billionaire-tax.html</li>
+</ul>
+<h2 id="5-fy2026-def-14a">5. 薪酬（FY2026 DEF 14A汇总薪酬表精确数）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>工资</th>
+<th>股票奖励</th>
+<th>现金激励</th>
+<th>其他（主要为安保）</th>
+<th>总计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2024</td>
+<td>$996,514</td>
+<td>$26,676,415</td>
+<td>$4,000,000</td>
+<td>$2,494,973</td>
+<td><strong>$34,167,902</strong></td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td>$1,486,199</td>
+<td>$38,811,306</td>
+<td>$6,000,000</td>
+<td>$3,568,746</td>
+<td><strong>$49,866,251</strong></td>
+</tr>
+<tr>
+<td>FY2026</td>
+<td>$1,497,627</td>
+<td>$24,800,511</td>
+<td>$6,000,000</td>
+<td>$4,045,691</td>
+<td><strong>$36,343,830</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：FY2026 DEF 14A https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000036/nvda-20260512.htm ；https://www.bloomberg.com/news/articles/2026-05-12/nvidia-ceo-pay-package-shrinks-27-on-smaller-stock-awards</p>
+<ul>
+<li><strong>FY2026总薪酬3,634万美元，同比降27%</strong>（股票奖励会计口径下降所致；目标薪酬其实上调11%至3,550万，现金激励因营收超"冲刺目标"按200%兑付600万）。</li>
+<li><strong>占净利润比例</strong>：FY2026净利润1,200.67亿美元，CEO薪酬占约<strong>0.03%</strong>（万分之三）。</li>
+<li>Mag7对比一句话：低于纳德拉（FY2025约9,640万）和库克（2025年约7,430万），高于基本只拿工资的皮查伊（2025年1,090万，无股票授予年份）和贾西（2025年206万）；<strong>他的真正激励是3.58%的股权，不是工资单</strong>。
+  来源：https://fortune.com/2026/03/12/jensen-huang-nvidia-4-million-bonus-compensation/</li>
+</ul>
+<h2 id="6">6. 核心团队与接班人</h2>
+<h3 id="_7">核心团队</h3>
+<ul>
+<li><strong>CFO Colette Kress</strong>：2013年9月加入，任职约12.8年；此前微软13年、思科3年。FY2026总薪酬1,434万美元。2025年7月因持股升值成为十亿美元级富豪。
+  来源：https://nvidianews.nvidia.com/bios/colette-kress ；https://fortune.com/2025/07/30/nvidia-billionaires-colette-kress-jay-puri-jensen-huang/</li>
+<li><strong>Jay (Ajay) Puri</strong>（EVP全球业务，2005年加入，任职约21年）：<strong>2026年7月2日披露退休</strong>（非跳槽），过渡期留任高级顾问；继任者为从微软挖来的<strong>Nicholas Parker</strong>（2026-08-24生效，薪酬包超4,000万美元）。
+  来源：https://www.theinformation.com/briefings/nvidias-longtime-sales-chief-retires ；https://www.geekwire.com/2026/nvidia-recruits-longtime-microsoft-sales-leader-nick-parker-with-40m-pay-package/</li>
+<li>长任期核心层：Debora Shoquist（EVP运营，2007）、Tim Teter（EVP法务，2017）、Bill Dally（首席科学家，2009，斯坦福前系主任）、Ian Buck（"CUDA之父"，2004）、Jonah Alben（SVP GPU工程，1990年代末加入）。五名列名高管平均任职约<strong>19年</strong>（黄33、Puri 21、Shoquist 19、Kress 13、Teter 9）。</li>
+<li><strong>管理方式</strong>：约<strong>60个直接汇报对象</strong>、不做定期一对一（"一对一等于剥夺了其他人同样的学习机会"）；靠<strong>"Top 5 Things"邮件</strong>获取一手信号（他每天抽样读约100封，自己不发T5T以免员工模仿其优先级）。原话（2024）：<blockquote>
+<p>"I don't do one-on-ones... almost everything I say, I say to everybody at the same time."
+  来源：https://fortune.com/2024/12/13/jensen-huang-email-nvidia-management-leadership-top-5-things-t5t/ ；Stanford GSB View From The Top 2024</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_8">接班人问题（管理层维度最大扣分项）</h3>
+<ul>
+<li>1963年2月17日生，2026年<strong>63岁</strong>，掌舵33年，Mag7中任职最久的创始人CEO。</li>
+<li><strong>本人明确表示不打算制定继任计划</strong>，希望干到"until the last day of my life"（生命的最后一天）；理由是60人直接汇报的扁平结构+信息全透明，"公司不是一个人的演出"，出事时任何一位高管都能接手运营。董事会层面无公开继任安排披露。
+  来源：https://wccftech.com/nvidia-ceo-doesnt-believe-in-succession-plans/ ；https://news.futunn.com/en/post/70573120/jensen-huang-no-plans-to-establish-a-succession-plan-nvidia</li>
+<li>外部评估：高管多与黄同龄或只管自己条线，"没有一个像储备CEO的人"；连续性风险集中在三处——产品路线图（Vera Rubin）、CUDA开发者生态布道、元首级主权AI关系。（ISS/Glass Lewis正式意见原文<strong>待核实</strong>。）10-K风险因素明确列示对黄仁勋的依赖。
+  来源：https://finance.yahoo.com/markets/stocks/articles/happens-nvidia-jensen-huang-steps-112512625.html ；https://www.tipranks.com/news/nvidia-needs-a-successor-after-jensen-huang-could-anyone-actually-fill-his-shoes</li>
+<li>子女（均从实习生做起）：Madison Huang（2020年加入，仿真/Omniverse方向产品营销高级总监，FY2025薪酬约110万美元）；Spencer Huang（2022年加入，机器人产品线经理，FY2025约53万美元）。有"裙带"质疑报道，但两人层级距高管层尚远。
+  来源：https://www.ynetnews.com/business/article/b1zh117500xx</li>
+</ul>
+<h2 id="7">7. 资本配置纪律</h2>
+<h3 id="_9">回购与分红（公司文件口径）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>回购</th>
+<th>均价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2023</td>
+<td>6,300万股 / 100.4亿美元</td>
+<td></td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td>2.10亿股 / 97亿美元</td>
+<td></td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td>3.10亿股 / 340亿美元</td>
+<td></td>
+</tr>
+<tr>
+<td>FY2026</td>
+<td>2.82亿股 / <strong>404亿美元</strong></td>
+<td>约143美元</td>
+</tr>
+<tr>
+<td>FY2027 Q1</td>
+<td>1.08亿股 / <strong>202亿美元</strong></td>
+<td>约185美元</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>授权节奏：2024年8月+500亿 → 2025年8月26日+600亿 → <strong>2026年5月18日再+800亿美元</strong>（无到期日）；截至2026-04-26剩余385亿+新授权800亿。</li>
+<li>"高位回购"批评：在30-50倍市盈率、股价屡创新高时回购不如分红或投资划算；但事后看FY2026均价143、FY2027 Q1均价185均低于当前203美元，至今回购是赚的。</li>
+<li><strong>分红转向</strong>：FY2026仍是每季0.01美元（全年共付9.74亿）；<strong>2026年5月18日季度股息从0.01上调至0.25美元（25倍）</strong>，年化约243亿美元——股息政策已实质转向。
+  来源：FY2025/FY2026 10-K；Q1 FY2027 10-Q https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000052/nvda-20260426.htm</li>
+</ul>
+<h3 id="_10">收购</h3>
+<ul>
+<li><strong>Mellanox（2020-04-27交割，实际对价71.3亿美元）</strong>：收购时Mellanox 2019年营收13.3亿美元。英伟达网络业务收入：FY2024 85.75亿 → FY2025 129.9亿 → <strong>FY2026 313.76亿美元</strong>；FY2027 Q1单季<strong>148亿（年化约590亿）</strong>，同比+199%。71亿美元买来的业务6年后年化营收约为收购时的45倍，NVLink/InfiniBand/Spectrum-X成为AI数据中心横向扩展的护城河——<strong>大概率是半导体史上回报最高的收购之一</strong>。
+  来源：https://nvidianews.nvidia.com/news/nvidia-completes-acquisition-of-mellanox-creating-major-force-driving-next-gen-data-centers ；Q1 FY2027 CFO评论 https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27cfocommentary.htm</li>
+<li><strong>Arm（2020年9月宣布，400亿美元；2022-02-08终止）</strong>：因FTC、英国、欧盟监管阻力放弃；FY2023 Q1计提<strong>13.5亿美元预付款减值</strong>（软银确认12.5亿分手费收益）。事后看：Arm独立上市市值远超400亿，"没买成"账面是错过；但若买成大概率被强加行为救济，且英伟达靠Arm授权自研Grace CPU照样达成目标——13.5亿学费不改变资本配置总体评价。
+  来源：https://www.ftc.gov/news-events/news/press-releases/2022/02/statement-regarding-termination-nvidia-corps-attempted-acquisition-arm-ltd ；FY2023 10-K</li>
+<li>小型收购/人才交易：Run:ai约7亿美元（2024年底交割）；Lepton AI数亿美元（2025年4月，未披露）；Enfabrica CEO及团队"雇佣+技术授权"超<strong>9亿美元</strong>（2025年9月）。另FY2026 10-K显示一笔"130亿美元交割+40亿一年内应付"的技术授权交易致商誉增156亿美元，标的名称<strong>待核实</strong>。
+  来源：https://www.cnbc.com/2025/09/18/nvidia-spent-over-900-million-on-enfabrica-ceo-ai-startup-technology.html</li>
+</ul>
+<h3 id="2025-2026">对外生态投资与"循环交易"争议（2025-2026）</h3>
+<ul>
+<li><strong>OpenAI</strong>：2025-09-22宣布最高<strong>1,000亿美元</strong>分阶段投资（随每GW部署推进，首期100亿）→ <strong>2026年2月框架缩水为敲定300亿美元投资</strong>。</li>
+<li><strong>Anthropic</strong>：2025-11-18宣布最高100亿美元投资（后双方因对华芯片出口立场公开交恶）。</li>
+<li><strong>Intel</strong>：2025年9月协议、12月29日FTC放行后以每股23.28美元买入2.174亿股（<strong>50亿美元、约4%</strong>），到2025年底浮盈约25亿。</li>
+<li><strong>2026年3月黄仁勋表态：对OpenAI/Anthropic的投资到此为止、收缩新投。</strong></li>
+<li>另持有CoreWeave股权并给予采购兜底、参与xAI融资等；2026年累计向AI公司投出逾400亿美元股权。
+  来源：https://fortune.com/2025/09/28/nvidia-openai-circular-financing-ai-bubble/ ；https://tech-ish.com/2026/02/03/nvidia-openai-oracle-circular-financing-loop/ ；https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/ ；https://www.cnbc.com/2025/12/29/nvidia-takes-5-billion-stake-in-intel-under-september-agreement.html ；https://www.bloomberg.com/graphics/2026-ai-circular-deals/</li>
+<li><strong>空头</strong>（Chanos、Burry等）：投资客户→客户买芯片→确认收入，"vendor financing"式自我循环，类比2000年思科/朗讯，下行时收入端和资产端双重受损。<strong>多头</strong>：投资锁定生态与长期需求；金额相对每年千亿级FCF可承受；多为分阶段可撤回承诺、少数股权而非应收账款融资。2026年3月的主动收缩本身可作为"纪律仍在"的证据。</li>
+</ul>
+<h3 id="_11">现金留存</h3>
+<ul>
+<li>FY2026年末现金+有价证券<strong>625.56亿美元</strong>；FY2027 Q1末降至<strong>503亿美元</strong>（大额回购+对外投资所致）；长期债务约80-90亿美元量级（<strong>待核实</strong>精确数），净现金约400亿美元以上。
+  来源：https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027</li>
+</ul>
+<hr />
+<h1 id="_12">第二部分：当前估值与卖方观点</h1>
+<h2 id="1-2026-07-1307-14">1. 当前估值快照（截至2026-07-13收盘/07-14盘前）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价</td>
+<td><strong>$203.53</strong>（07-13收盘）</td>
+<td>52周区间 $162.02-236.54</td>
+</tr>
+<tr>
+<td>市值</td>
+<td>约<strong>$4.93-4.95万亿</strong>，全球第一（与GOOGL/AAPL胶着）</td>
+<td>历史收盘峰值$235.47（2026-05-14，约$5.7万亿），当前较峰值<strong>回撤约13%</strong>（6月末一度-18%）</td>
+</tr>
+<tr>
+<td>Trailing PE</td>
+<td><strong>31.3x</strong></td>
+<td>TTM GAAP EPS $6.53（含投资公允价值收益，口径注意）</td>
+</tr>
+<tr>
+<td>Forward PE</td>
+<td>约<strong>23.5x</strong>（FY2027共识EPS $8.69，non-GAAP）；NTM口径约18.7x；finviz下一财年（FY2028 EPS $12.66）口径16.2x</td>
+<td><strong>三个口径差异大，引用必须注明</strong></td>
+</tr>
+<tr>
+<td>PS（TTM）</td>
+<td><strong>19.5x</strong></td>
+<td>TTM营收约$2,500亿（推算值）</td>
+</tr>
+<tr>
+<td>FCF（TTM）</td>
+<td>约<strong>$1,191亿</strong></td>
+<td>Q1 FY2027单季FCF $486亿</td>
+</tr>
+<tr>
+<td>FCF yield</td>
+<td>约<strong>2.4%</strong></td>
+<td>1,191/49,500（推算）</td>
+</tr>
+<tr>
+<td>PEG</td>
+<td>finviz口径<strong>0.34</strong>（forward PE 16.2÷未来5年增速47.6%）；trailing口径约0.77（31.3÷未来1年增速40.9%）</td>
+<td></td>
+</tr>
+<tr>
+<td>2026年YTD</td>
+<td>约+5%~+9%，<strong>跑输标普500</strong>（+8.8%~10.2%）</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：https://finviz.com/quote.ashx?t=NVDA （2026-07-14）；https://companiesmarketcap.com/nvidia/marketcap/ （2026-07-13）；https://www.gurufocus.com/term/total-free-cash-flow/NVDA ；https://www.fool.com/investing/2026/07/12/nvidia-stock-is-losing-to-the-market-in-2026-time/</p>
+<p><strong>最新财报（FY2027 Q1，截至2026-04-26，2026-05-20发布）</strong>：营收<strong>816亿美元（同比+85%、环比+20%）</strong>；数据中心752亿（+92%：超大规模379亿、AI云/工业/企业374亿、边缘64亿）；GAAP EPS $2.39、non-GAAP $1.87（超共识$1.77）；毛利率约75%；同时宣布<strong>新增800亿美元回购授权+股息上调25倍至每季$0.25</strong>。
+来源：https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm</p>
+<h2 id="2_1">2. 与自身历史估值对比</h2>
+<ul>
+<li>过去5年trailing PE区间：<strong>最低32.1x — 最高247.9x</strong>，均值77.1x；10年均值约53.7x；过去12个月区间33.7x-59.1x。</li>
+<li><strong>当前31.3x低于5年区间下沿，处于5年约0-5%分位</strong>——历史最低分位区。</li>
+<li>NTM PE约18.7x vs 历史均值36.9x，约为均值一半。</li>
+<li>PS：财年末口径FY2021 20.4x → FY2022 24.7x → FY2023 21.3x → FY2024 27.7x → FY2026 22.0x；当前TTM 19.5x低于近5年各财年末水平。</li>
+<li><strong>关键理解：分位低不是股价跌出来的，是盈利追上来的</strong>——Q1 FY2027 EPS同比近翻倍而股价滞涨；"以史上最强业绩换来史上最低估值分位"。</li>
+<li>市值里程碑：$1T（2023-05-30）→ $2T（2024-02-23）→ $3T（2024-06-05）→ <strong>$4T（2025-07-09，史上首家）</strong> → <strong>$5T（2025-10-29，史上首家，仅隔3个月）</strong> → 峰值约$5.7T（2026-05-14）→ 当前约$4.93T。
+  来源：https://www.tikr.com/blog/nvidias-p-e-ratio-current-levels-historical-trends-and-outlook ；https://www.cnbc.com/2026/07/08/magnificent-seven-stocks-are-the-cheapest-in-a-decade-by-one-measure.html ；https://www.cnbc.com/2025/10/29/nvidia-on-track-to-hit-historic-5-trillion-valuation-amid-ai-rally.html</li>
+</ul>
+<h2 id="3-mag72026-07-14finviz">3. Mag7对比表（截至2026-07-14，来源：finviz各股页面）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>市值</th>
+<th>Trailing PE</th>
+<th>Forward PE（下一财年）</th>
+<th>EPS增速（未来1年）</th>
+<th>EPS增速（未来5年年化）</th>
+<th>PEG</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NVDA</strong></td>
+<td>$4.95万亿</td>
+<td>31.3</td>
+<td>16.2</td>
+<td>+40.9%</td>
+<td>+47.6%</td>
+<td><strong>0.34</strong></td>
+</tr>
+<tr>
+<td>AAPL</td>
+<td>$4.60万亿</td>
+<td>37.9</td>
+<td>32.5</td>
+<td>+10.1%</td>
+<td>+12.8%</td>
+<td>2.54</td>
+</tr>
+<tr>
+<td>GOOGL</td>
+<td>$4.26万亿</td>
+<td>26.8</td>
+<td>23.7</td>
+<td>+3.7%</td>
+<td>+16.7%</td>
+<td>1.42</td>
+</tr>
+<tr>
+<td>MSFT</td>
+<td>$2.88万亿</td>
+<td>23.1</td>
+<td>19.9</td>
+<td>+15.7%</td>
+<td>+18.6%</td>
+<td>1.07</td>
+</tr>
+<tr>
+<td>AMZN</td>
+<td>$2.65万亿</td>
+<td>29.4</td>
+<td>24.4</td>
+<td>+14.2%</td>
+<td>+22.1%</td>
+<td>1.11</td>
+</tr>
+<tr>
+<td>META</td>
+<td>$1.65万亿</td>
+<td>23.7</td>
+<td>18.6</td>
+<td>+6.3%</td>
+<td>+19.6%</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>TSLA</td>
+<td>$1.48万亿</td>
+<td>360.8</td>
+<td>160.5</td>
+<td>+25.9%</td>
+<td>+25.1%</td>
+<td>6.40</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>NVDA在Mag7中：增速最高、forward PE最低、PEG最低。</strong></li>
+<li>背景：2026年Mag7除Alphabet（YTD +14.5%）外均跑输标普500；Mag7整体NTM估值为十年来最低。
+  来源：https://finviz.com/quote.ashx?t=NVDA 等各股页面；https://www.cnbc.com/2026/07/08/magnificent-seven-stocks-are-the-cheapest-in-a-decade-by-one-measure.html</li>
+</ul>
+<h2 id="4-2026-07-14">4. 卖方目标价与评级（截至2026-07-14）</h2>
+<p><strong>共识</strong>（各家统计口径不同）：
+- TipRanks（37位，近3月）：平均目标价<strong>$309.33</strong>；stockanalysis.com（32位）：$309.13，"强烈买入"；S&amp;P Global（61位）：$301.62；MarketBeat（约79位）：$316.79，评级分布<strong>2强烈买入/58买入/16持有/3卖出</strong>。
+- 区间：<strong>最低$100-140（Seaport），最高$500</strong>（2026-05-21财报后一批上调中的最高值）。
+- 对$203.5股价隐含上行约50%——卖方与股价的分歧处于高位。
+  来源：https://www.tipranks.com/stocks/nvda/forecast ；https://www.marketbeat.com/stocks/NASDAQ/NVDA/forecast/ ；https://stockanalysis.com/stocks/nvda/forecast/</p>
+<p><strong>代表性多头</strong>：
+1. <strong>Loop Capital（Ananda Baruah）买入，$350</strong>（街最高档之一，对应约$8.5万亿市值）：AI算力"黄金浪潮"、Blackwell/Rubin产品周期。
+2. <strong>美银（Vivek Arya）买入，$320→$350</strong>（2026年5月）："前所未有"的代理式AI芯片周期；AI数据中心系统TAM 2030年达$1.7万亿（原估$1.4万亿）；上调FY28/29盈测约7%。
+3. <strong>Melius Research（Ben Reitzes）买入，2026-05-20上调至$400</strong>：类比iPhone后的苹果生态复利；"不含中国就值$320"，中国重开是额外期权。
+4. <strong>摩根士丹利增持，$288</strong>（2026-07-13），牛市$330/熊市$150。
+  来源：https://www.thestreet.com/investing/stocks/top-analyst-drops-jaw-dropping-price-target-on-nvidia-stock ；https://247wallst.com/investing/2026/05/25/bofas-vivek-arya-sees-nvidia-at-350-as-agentic-ai-drives-an-unprecedented-chip-cycle/ ；https://www.streetinsider.com/Analyst+Comments/NVIDIA+(NVDA)+PT+Raised+to+$400+at+Melius/26530344.html ；https://www.gurufocus.com/news/8955458/morgan-stanley-upgrades-nvidia-nvda-with-a-288-target-price</p>
+<p><strong>代表性谨慎/空头</strong>：
+1. <strong>Seaport Research Partners（Jay Goldberg）卖出，$140</strong>（2025-04-30以$100初始覆盖，当时全街唯一卖出，2026年上调至$140但仍维持卖出、街最低）：大客户全在自研芯片；"AI预算很可能在2026年放缓"；英伟达预付云算力承诺与客户融资安排"未充分反映在报表中但已属重大且明年将显著增长"。
+  来源：https://www.bloomberg.com/news/articles/2025-04-30/nvidia-gets-rare-sell-rating-as-seaport-says-ai-fully-priced-in ；https://finance.yahoo.com/news/seaport-global-maintains-sell-nvidia-100208141.html
+2. <strong>DA Davidson（Gil Luria）</strong>：街上最著名的长期谨慎派（2025年2月中性$135），<strong>但2026-06-01已转买入、$300</strong>——著名空头倒戈是2026年的标志性事件；不过他6月底仍提醒"美光和英伟达的股价表现得像AI周期正在见顶"。
+  来源：https://news.futunn.com/en/post/73939735/da-davidson-maintains-nvidia-nvdaus-with-buy-rating-maintains-target ；https://www.cnbc.com/video/2026/06/29/micron-and-nvidia-are-trading-like-the-ai-cycle-is-peaking-now-says-da-davidsons-gil-luria.html
+3. <strong>New Street Research（Pierre Ferragu）</strong>：2024-07-11以估值为由从买入降至中性（"我们首次认为英伟达可能不会超预期"）；2026年最新评级<strong>待核实</strong>，仅作历史谨慎案例。
+  来源：https://www.benzinga.com/markets/equities/24/07/39658354/nvidia-downgrade-by-pierre-ferragus-newstreet-countered-by-dan-ives-cannot-disagree-more</p>
+<p>空头共同点：不否认当前业绩，质疑<strong>2027年后capex可持续性</strong>与<strong>循环交易对需求信号的污染</strong>。</p>
+<h2 id="5">5. 知名投资人动向</h2>
+<h3 id="nvda">伯克希尔：从未持有NVDA；建仓谷歌作对照</h3>
+<ul>
+<li>13F历史确认<strong>从未持有NVDA</strong>（仅通过标普500 ETF微量间接敞口）。</li>
+<li>2025年Q3建仓<strong>Alphabet 1,785万股、约43亿美元</strong>（2025-11-14披露，巴菲特谢幕/Abel接棒前的信号）；此后持续加仓——2026年Q1清仓亚马逊，Alphabet升至前五大持仓（媒体估约410亿美元，二手汇总，谨慎采用）。市场解读：伯克希尔认可AI，但选"估值最低、商业模式最可理解"的入口，而非芯片。</li>
+<li>2026年5月年会（Abel首次主持）：Abel称伯克希尔"不会为了AI而做AI"，任何技术投入必须"对我们的业务有增益"；巴菲特称当前投资环境"并不理想"、市场有"赌博"氛围。
+  来源：https://www.cnbc.com/2025/11/15/berkshire-hathaways-surprising-new-tech-stake.html ；https://247wallst.com/investing/2026/05/20/for-60-years-buffett-avoided-big-tech-greg-abel-just-made-an-ai-stock-a-top-5-berkshire-holding/ ；https://www.cnbc.com/2026/05/02/warren-buffett-berkshire-hathaway-annual-meeting-2026-live-updates.html</li>
+</ul>
+<h3 id="openai">软银：清仓换OpenAI</h3>
+<ul>
+<li>2025-11-11披露于10月<strong>清仓全部3,210万股、套现58.3亿美元</strong>，同时卖T-Mobile 91.7亿，为对OpenAI追加225亿美元投资（持股4%→11%）筹资；消息当日NVDA跌约2-3%。截至最新披露未回补。
+  来源：https://www.cnbc.com/2025/11/11/softbank-sells-its-entire-stake-in-nvidia-for-5point83-billion.html</li>
+</ul>
+<h3 id="michael-burry">Michael Burry：做空+折旧论</h3>
+<ul>
+<li>2025年Q3 13F：<strong>NVDA看跌期权名义约1.87亿美元（对应100万股）+ PLTR看跌期权名义约9.12亿美元</strong>，合计占披露组合近80%。</li>
+<li>核心论点：超大规模云厂商拉长GPU折旧年限低估折旧，<strong>2026-2028年合计低估约1,760亿美元</strong>，人为抬高账面利润。反方：GAAP和审计师接受5-6年折旧；老一代GPU（A100）仍满负荷服役。</li>
+<li>2025年10月关闭基金退还资本、11月注销SEC注册（此后无强制披露）；2025-11-25上线Substack《Cassandra Unchained》；据其2026年自愿披露，最大仓位仍为NVDA+PLTR puts——<strong>无监管验证</strong>。
+  来源：https://www.bloomberg.com/news/articles/2025-11-04/burry-discloses-puts-on-nvidia-and-palantir-after-bubble-warning ；https://www.fool.com/investing/2025/11/16/michael-burry-bets-against-nvidia-and-palantir-but/ ；https://michaeljburry.substack.com/</li>
+<li>另：<strong>Peter Thiel</strong>（Thiel Macro）2025年Q3清仓全部53.77万股（原占组合约40%），同期新建苹果、微软仓位——从"卖铲人"转向"AI应用受益者"。
+  来源：https://www.bloomberg.com/news/articles/2025-11-17/peter-thiel-s-fund-sold-off-entire-nvidia-stake-in-third-quarter</li>
+</ul>
+<h3 id="_13">段永平：从"看不懂"到第三大重仓（本节最大看点）</h3>
+<p>态度演变（雪球原文见本仓库 reports/英伟达/段永平雪球发言-NVDA相关.md，60条整理）：
+- 2024-04-20："以前没看懂，现在再看也还是没懂。搞不清楚这家公司10年后会是更好还是不如现在。"（https://xueqiu.com/1247347556/286894886 ）
+- 2025-02-27："尽管没完全看懂NVDA，但我还是准备开始卖点NVDA的put了。ai值得关注，NVDA其实是个很不错的公司。"（https://xueqiu.com/1247347556/325196615 ）
+- 2025-03-19："92.5买入NVDA了，不过要延迟一年交货。"（卖put实质建仓，https://xueqiu.com/1247347556/327920881 ）；"29.7%的年回报率我完全可以接受"（https://xueqiu.com/1247347556/328728914 ）
+- 2025-11-22："我不觉得nvda是泡沫，我会一直卖put的。我很开心那些大空头成了我的客户。"（https://xueqiu.com/1247347556/362793225 ）
+- 2025年11月："五年前看懂英伟达的话，也愿意拿茅台换。"（https://www.21jingji.com/article/20251115/herald/54af4aa14249db01f31c8ae126fac6a6.html ）
+- 2025-12-05："NVDA供不应求应该还会持续一段时间，几年内似乎还没有真的替代品。……TPU这种隐性替代已经开始了，只是威胁不大而已。"（https://xueqiu.com/1247347556/364590976 ）
+- 2026-03-21/23：晒"英伟达保险公司"操作（卖170 put/190 call宽跨式1,000张，获利约280万美元），"年化20%我就很开心了""我没有直接卖过一股nvda（正股），这些都是我的保险公司的筹码"。（https://xueqiu.com/1247347556/380471881 ；https://xueqiu.com/1247347556/380589970 ）</p>
+<p>13F实证（H&amp;H International Investment）：
+- 2025年Q4：<strong>增持663.9万股（+1110%）至723.7万股，市值13.5亿美元</strong>。（https://www.chnfund.com/article/AR13b66d7e-9cd4-2371-b072-3a1f836dc6f7 ）
+- <strong>2026年Q1末：NVDA持仓约24.14亿美元、占组合12.07%、第三大重仓股</strong>（同期连续五季减持苹果）。（https://finance.sina.com.cn/roll/2026-05-20/doc-inhypaen2711821.shtml ；https://www.tmtpost.com/7995477.html ）
+- 他对黄仁勋的评价："英伟达确实厉害……这个人我也很欣赏，他十多年前讲的东西和今天讲的东西是一样的。"（https://finance.sina.com.cn/tech/roll/2026-06-12/doc-iniceccp0253963.shtml ）</p>
+<h3 id="_14">其他</h3>
+<ul>
+<li><strong>Druckenmiller</strong>：2022年底约$22-24（拆后）建仓，2024年中约$73.5清仓；2024年10月对彭博承认"big mistake"（卖出约6.55亿美元，若持有至今约17亿）；<strong>截至2026年5月仍未回补</strong>，转买博通。
+  来源：https://www.cnbc.com/2024/10/16/stanley-druckenmiller-regrets-nvidia-sale-after-stock-tripled-in-2023.html ；https://www.fool.com/investing/2026/05/24/why-billionaire-stanley-druckenmiller-dumped-nvidi/</li>
+<li><strong>David Tepper（Appaloosa）</strong>：2023年中1,020万股（拆后）→2025-03-31减至30万股（-97%）→2025年Q3增持533%→<strong>2025年Q4又卖至170万股（跌出前五大）</strong>→2026年初继续减持。高抛低吸的交易型参与，非长期持有者。
+  来源：https://www.fool.com/investing/2026/02/19/nvidia-not-top-5-holding-billionaire-david-tepper/</li>
+</ul>
+<h2 id="6-20267">6. 持仓结构与指数权重（截至2026年7月）</h2>
+<ul>
+<li><strong>机构持股66.6%~70.5%</strong>（两家口径）；内部人约4.0%（黄仁勋为最大个人股东，3.58%）；<strong>散户约29.4%</strong>——长期是Robinhood持仓人数第一梯队股票。
+  来源：https://www.wallstreetzen.com/stocks/us/nasdaq/nvda/ownership ；https://finviz.com/quote.ashx?t=NVDA</li>
+<li><strong>标普500权重7.32%，第一大</strong>（7月早些时候曾达7.58%）。来源：https://www.slickcharts.com/sp500 （2026-07）</li>
+<li><strong>纳指100权重7.72%，第一大</strong>（苹果7.31%次之）。来源：https://www.slickcharts.com/nasdaq100</li>
+<li>占全球股市总市值约3.5-3.7%（按全球约135-140万亿美元估算，<strong>估算值</strong>）。</li>
+</ul>
+<h2 id="7-20267">7. 多空论点小结（2026年7月市场共识图景）</h2>
+<p><strong>空头五大担忧</strong>：
+1. <strong>AI资本开支可持续性</strong>：2026年大型科技公司AI资本开支预计增70%、超<strong>7,000亿美元</strong>，侵蚀自由现金流；OpenAI 2026年预亏约140亿美元（约为2025年3倍），"2029年千亿收入"高度前置。
+2. <strong>循环交易</strong>：英伟达2026年已向AI公司投出逾400亿美元股权，"投资对象即客户"，被类比1990年代末思科/朗讯vendor financing。
+3. <strong>云厂商自研芯片</strong>：Google TPU、AWS Trainium 3（宣称对标Blackwell NVL72、TCO低约50%）、微软Maia 200、Meta MTIA；2026年定制ASIC出货预计+44.6% vs 商用GPU +16.1%。
+4. <strong>中国市场</strong>：先进AI加速器在华份额从95%到归零（黄自述）；H200重开设配额+25%分成，弹性有限——中国是期权不是基本盘。
+5. <strong>折旧争议</strong>：Burry的1,760亿美元"低估折旧"论；若GPU经济寿命实为2-3年而非账面5-6年，云厂商真实回报率不足以支撑当前采购强度。</p>
+<p><strong>多头反驳</strong>：
+1. 需求有实证：Q1 FY2027营收+85%、数据中心+92%仍在加速；服务器GPU份额约97%；黄仁勋称Blackwell+Rubin在手可见收入约<strong>5,000亿美元</strong>（2025年10月）。
+2. 估值在历史最低分位：trailing PE 31x vs 10年均值54x；NTM 18.7x vs 均值36.9x；PEG&lt;1。
+3. 自研芯片主要消化内部负载，CUDA+全栈系统（NVLink/网络/软件）构成迁移壁垒；份额下降但市场扩张更快。
+4. 现金流与股东回报：TTM FCF约1,191亿、单季486亿；新增800亿回购+股息上调25倍；400亿级对外投资相对现金产生能力可控，且2026年3月已主动收缩。
+  来源：https://www.cnbc.com/2026/07/08/magnificent-seven-stocks-are-the-cheapest-in-a-decade-by-one-measure.html ；https://www.bloomberg.com/graphics/2026-ai-circular-deals/ ；https://www.cnbc.com/2025/11/21/nvidia-gpus-google-tpus-aws-trainium-comparing-the-top-ai-chips.html ；https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm</p>
+<hr />
+<h1 id="_15">附一：数据质量说明</h1>
+<ol>
+<li>stockanalysis/macrotrends/slickcharts/WSJ直接抓取被反爬拦截，相关数据经搜索摘要转引；核心估值数字以可直接访问的finviz（2026-07-14）和companiesmarketcap（2026-07-13）为准。</li>
+<li>Forward PE有三个口径（FY2027共识约23.5x / NTM约18.7x / FY2028口径16.2x），正文引用必须注明口径。</li>
+<li>TTM营收约2,500亿美元、占全球股市3.5-3.7%均为推算/估算值。</li>
+<li>Burry 2026年仓位来自其Substack自愿披露，无监管验证。</li>
+<li>TTM GAAP EPS $6.53含投资组合公允价值收益（推断），计算trailing PE时finviz采用GAAP口径。</li>
+</ol>
+<h1 id="_16">附二：待核实清单（正文写作前逐条落实）</h1>
+<ol>
+<li>FY2019、FY2023年报致股东信原文关键句（SEC抓取403，需人工取）</li>
+<li>黄仁勋2026年5月后是否新设10b5-1计划（等2026年8月Q2 10-Q）</li>
+<li>2018、2022年危机期间"零减持"说法的Form 4逐笔核对</li>
+<li>FY2026 10-K中"130亿美元技术授权交易"（商誉+156亿）的标的名称</li>
+<li>H200对华配额细节（7.5万颗+25%分成）来源权威性一般，需二次核实</li>
+<li>ISS/Glass Lewis对关键人风险的正式意见原文</li>
+<li>New Street Research 2026年最新评级与目标价</li>
+<li>2008年CUDA时期市值精确低点</li>
+<li>长期债务精确数（10-Q）；基金会"107亿美元预留"口径</li>
+<li>7月14日当天精确收盘价与市值（写作当日更新）</li>
+</ol>
+<hr />
+<p><em>本底稿为内部研究资料，不构成投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/12be4daf50fb.html">审计说明</a><div class="meta">2026-09-07 · 底稿</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/fc0dae7fdd42.html">英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</a><div class="meta">2026-08-28 · 财报</div></li><li><a href="../r/5e4b7e854e9f.html">07 增量更新底稿（2026-07-14 → 2026-08-01）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/6e56cabdf58e.html">《看懂英伟达》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/e370c5a80872.html">05 - AI资本开支周期的可持续性：这次是不是2000年的思科？</a><div class="meta">2026-07-14 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

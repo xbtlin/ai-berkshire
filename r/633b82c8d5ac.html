@@ -1,0 +1,365 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>从亏损之王到盈利机器 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/Uber/index.html">Uber</a></div><h1>从亏损之王到盈利机器</h1><div class="meta"><a href="../companies/Uber/index.html">Uber</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Uber/%E3%80%8A%E7%9C%8B%E6%87%82Uber%E3%80%8B/01-%E5%BC%80%E7%AF%87-%E4%BB%8E%E4%BA%8F%E6%8D%9F%E4%B9%8B%E7%8E%8B%E5%88%B0%E7%9B%88%E5%88%A9%E6%9C%BA%E5%99%A8.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#uber">一组让你重新审视 Uber 的事实</a></li>
+<li><a href="#uber_1">Uber 到底是一门什么生意？</a></li>
+<li><a href="#_1">从亏损到盈利：发生了什么？</a><ul>
+<li><a href="#1-ceo">1. 换了一个 CEO</a></li>
+<li><a href="#2">2. 运营杠杆释放</a></li>
+<li><a href="#3">3. 广告业务起飞</a></li>
+</ul>
+</li>
+<li><a href="#uber_2">现在的 Uber：一张财务快照</a></li>
+<li><a href="#_2">市场在担心什么？</a></li>
+<li><a href="#uber_3">看懂 Uber，需要回答这几个问题</a></li>
+<li><a href="#uber_4">一个小预告：Uber 和其他科技巨头的对比</a></li>
+<li><a href="#_3">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂Uber》系列 · 第 01 篇 · 开篇
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="uber">一组让你重新审视 Uber 的事实</h2>
+<p>2019 年 Uber 上市那天，没有人鼓掌。首日跌 7.6%，创下当时美股最大 IPO 首日亏损纪录，华尔街媒体集体嘲讽——年亏 <strong>30-40 亿美元</strong>、靠补贴买流量、永远不会盈利。那一年，"Uber"几乎成了"科技公司乱烧钱"的代名词。</p>
+<p>7 年后，这台"烧钱机器"年产自由现金流 <strong>98 亿美元</strong>，在全球 70+ 个国家拥有 76% 的美国出行市场份额，回购计划高达 200 亿美元。市场叙事翻转了 4 次，而 Uber 的生意本身，比任何一次叙事都要简单。</p>
+<p>7 年里的股价记录：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间节点</th>
+<th>股价</th>
+<th>发生了什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2019 年 5 月 IPO</td>
+<td><strong>$45</strong></td>
+<td>首日跌 7.6%，"最不被看好的大型 IPO"</td>
+</tr>
+<tr>
+<td>2020 年 3 月</td>
+<td><strong>~$14</strong></td>
+<td>疫情击溃出行需求，历史最低</td>
+</tr>
+<tr>
+<td>2021 年 2 月</td>
+<td><strong>~$64</strong></td>
+<td>疫情后反弹 + 外卖爆发</td>
+</tr>
+<tr>
+<td>2024 年 10 月</td>
+<td><strong>~$82</strong></td>
+<td>首次连续盈利，市场重新定价</td>
+</tr>
+<tr>
+<td>2025 年 10 月</td>
+<td><strong>$102</strong>（52 周高点）</td>
+<td>FCF 近 100 亿，回购启动</td>
+</tr>
+<tr>
+<td>2026 年 5 月</td>
+<td><strong>~$75</strong></td>
+<td>自动驾驶恐慌 + 回调</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>7 年里，市场对 Uber 的叙事翻转了至少 4 次</strong>：烧钱机器 → 疫情受害者 → 外卖救星 → 盈利机器 → 被自动驾驶颠覆？</p>
+<hr />
+<h2 id="uber_1">Uber 到底是一门什么生意？</h2>
+<p>打开 Uber FY2025 年报，<strong>520 亿美元</strong>收入来自三条线：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>FY2025 收入</th>
+<th>占比</th>
+<th>同比增长</th>
+<th>核心逻辑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>出行（Mobility）</td>
+<td><strong>297 亿美元</strong></td>
+<td>57%</td>
+<td>+18%</td>
+<td>全球网约车，美国份额 76%</td>
+</tr>
+<tr>
+<td>外卖配送（Delivery）</td>
+<td><strong>173 亿美元</strong></td>
+<td>33%</td>
+<td>+25%</td>
+<td>Uber Eats，美国份额约 23%</td>
+</tr>
+<tr>
+<td>货运（Freight）</td>
+<td><strong>51 亿美元</strong></td>
+<td>10%</td>
+<td>-1%</td>
+<td>货运撮合，刚盈亏平衡</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：Uber FY2025 年报 / SEC 10-K）</p>
+<p><strong>第一个关键认知：Uber 不是一家出租车公司，也不是一家外卖公司——它是一个连接供需的双边网络平台。</strong></p>
+<p>Uber 不拥有一辆车、不雇佣一个司机、不做一份饭。它做的事情只有一件：<strong>用算法把"想出门的人"和"想赚钱的司机"匹配起来，从每笔交易中抽取约 28% 的佣金</strong>。</p>
+<p>这意味着什么？</p>
+<ul>
+<li><strong>轻资产</strong>：没有车辆折旧、没有库存、固定成本极低</li>
+<li><strong>高运营杠杆</strong>：收入增长 18%，但自由现金流增长 42%——利润增速远快于收入</li>
+<li><strong>平台经济</strong>：规模越大，单位成本越低，网络效应越强</li>
+</ul>
+<p>把 Uber 理解为"出租车公司"的人，永远算不清楚它为什么能赚钱。把它理解为"算法撮合平台"，一切就清楚了。</p>
+<hr />
+<h2 id="_1">从亏损到盈利：发生了什么？</h2>
+<p>Uber 在 2019-2022 年累计亏损超过 <strong>300 亿美元</strong>（包含 IPO 前）。然后在 2023 年，突然盈利了。</p>
+<p>这不是魔术，而是三件事同时发生：</p>
+<h3 id="1-ceo">1. 换了一个 CEO</h3>
+<p>2017 年，创始人 Travis Kalanick 因一系列丑闻被逐出公司。接手的是前 Expedia CEO <strong>Dara Khosrowshahi</strong>。</p>
+<p>Dara 做了三件关键的事：
+- <strong>砍掉亏损业务</strong>：退出中国（卖给滴滴）、退出东南亚（卖给 Grab）、剥离自动驾驶研发部门 ATG（卖给 Aurora）
+- <strong>停止"不惜代价增长"</strong>：不再烧钱补贴抢市场，转而追求单位经济效益
+- <strong>重塑企业文化</strong>：从"赢者通吃"的侵略性文化转向成熟企业管理</p>
+<h3 id="2">2. 运营杠杆释放</h3>
+<p>当 Uber 停止烧钱扩张后，平台经济的规模效应开始显现：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>FY2023</th>
+<th>FY2024</th>
+<th>FY2025</th>
+<th>3 年变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总收入</td>
+<td><strong>372 亿</strong></td>
+<td><strong>440 亿</strong></td>
+<td><strong>520 亿</strong></td>
+<td>+40%</td>
+</tr>
+<tr>
+<td>调整后 EBITDA</td>
+<td><strong>47 亿</strong></td>
+<td><strong>64 亿</strong></td>
+<td><strong>87 亿</strong></td>
+<td>+85%</td>
+</tr>
+<tr>
+<td>自由现金流</td>
+<td><strong>39 亿</strong></td>
+<td><strong>69 亿</strong></td>
+<td><strong>98 亿</strong></td>
+<td><strong>+151%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：Uber FY2023-2025 年报）</p>
+<p>收入增长 40%，自由现金流增长 <strong>151%</strong>。这就是平台经济的运营杠杆——当规模足够大、不再烧钱时，每多赚一美元收入，其中大部分直接变成利润。</p>
+<h3 id="3">3. 广告业务起飞</h3>
+<p>Uber 的广告业务年化收入已超过 <strong>20 亿美元</strong>，同比增速超 <strong>50%</strong>。这是一门几乎零边际成本的生意——商家在 Uber Eats 上打广告，Uber 从中抽成，利润率接近 100%。</p>
+<p>参考美团和亚马逊的先例，广告业务可能成为 Uber 未来利润增长最大的引擎之一。</p>
+<hr />
+<h2 id="uber_2">现在的 Uber：一张财务快照</h2>
+<p>截至 2026 年 5 月，Uber 的核心财务指标：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>量级判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价</td>
+<td><strong>~$75</strong></td>
+<td>较 52 周高点 $102 回落 27%</td>
+</tr>
+<tr>
+<td>市值</td>
+<td><strong>~$1,520 亿</strong></td>
+<td>全球第 60 大上市公司左右</td>
+</tr>
+<tr>
+<td>FY2025 总收入</td>
+<td><strong>520 亿美元</strong>（+18%）</td>
+<td>3 年 CAGR 约 18%</td>
+</tr>
+<tr>
+<td>FY2025 总预订额</td>
+<td><strong>1,935 亿美元</strong>（+19%）</td>
+<td>平台交易总额</td>
+</tr>
+<tr>
+<td>FY2025 调整后 EBITDA</td>
+<td><strong>87 亿美元</strong>（+35%）</td>
+<td>利润率持续改善</td>
+</tr>
+<tr>
+<td>FY2025 自由现金流</td>
+<td><strong>98 亿美元</strong>（+42%）</td>
+<td>真金白银的现金创造</td>
+</tr>
+<tr>
+<td>FY2025 GAAP 净利润</td>
+<td><strong>101 亿美元</strong></td>
+<td>含股权投资重估收益</td>
+</tr>
+<tr>
+<td>Q1 2026 总预订额</td>
+<td><strong>537 亿美元</strong>（+25%）</td>
+<td>加速增长</td>
+</tr>
+<tr>
+<td>Q1 2026 Non-GAAP 净利润</td>
+<td><strong>15 亿美元</strong>（+39%）</td>
+<td>盈利加速</td>
+</tr>
+<tr>
+<td>PE（Non-GAAP）</td>
+<td><strong>~13 倍</strong></td>
+<td>对 18% 增长的平台，偏低</td>
+</tr>
+<tr>
+<td>P/FCF</td>
+<td><strong>~15.6 倍</strong></td>
+<td>自由现金流角度看，不贵</td>
+</tr>
+<tr>
+<td>股东回报</td>
+<td><strong>200 亿美元回购计划</strong>已启动</td>
+<td>与拼多多的"零回购"截然不同</td>
+</tr>
+<tr>
+<td>Uber One 会员</td>
+<td><strong>5,000 万</strong>（同比 +67%）</td>
+<td>贡献超 50% 平台预订额</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：Uber Q1 2026 财报、FY2025 年报）</p>
+<p>把这些数字放一起，你看到的是：</p>
+<ul>
+<li>一家从"年亏 30 亿"变成"年赚 98 亿现金"的公司</li>
+<li>收入增速 18%，但估值只有 13 倍 PE</li>
+<li>管理层在积极回购（200 亿美元计划），激励与股东对齐</li>
+<li>但股价较高点回落了 27%——市场在担心什么？</li>
+</ul>
+<p><strong>答案是两个字：自动驾驶。</strong></p>
+<hr />
+<h2 id="_2">市场在担心什么？</h2>
+<p>2025 年下半年以来，Uber 股价从 $102 的高点跌至 $75 左右，回调约 27%。</p>
+<p>核心原因不是业绩——Q1 2026 的业绩超出预期——而是市场对<strong>自动驾驶</strong>的恐惧：</p>
+<ul>
+<li><strong>Waymo</strong>（Alphabet 旗下）每周已完成超 <strong>45 万次</strong> 付费自动驾驶出行</li>
+<li><strong>特斯拉</strong> 正在推进 Robotaxi 计划</li>
+<li>如果自动驾驶成熟，Waymo 和特斯拉可以绕过 Uber 直接面对消费者——Uber 的"中间人"角色可能被取消</li>
+</ul>
+<p>这就是 Uber 估值只有 13 倍 PE 的核心原因：<strong>市场给了一个"盈利机器"的现在，但打了一个"可能被颠覆"的折扣。</strong></p>
+<p>这个折扣打得合理吗？这正是本系列第 03 篇要深入讨论的问题。</p>
+<hr />
+<h2 id="uber_3">看懂 Uber，需要回答这几个问题</h2>
+<p>如果非要用一句话定义今天的 Uber：</p>
+<blockquote>
+<p><strong>Uber = 全球最大的出行网络平台（76% 美国份额）+ 第二大外卖平台 + 一个正在转型的自动驾驶参与者 + 一台年产 98 亿美元现金的机器。</strong></p>
+</blockquote>
+<p>要看懂这家公司，至少需要回答以下问题：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>展开篇目</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uber 的护城河到底有多宽？网络效应能持续吗？</td>
+<td>第 02 篇</td>
+</tr>
+<tr>
+<td>自动驾驶到底是威胁还是机遇？</td>
+<td>第 03 篇</td>
+</tr>
+<tr>
+<td>监管、竞争、估值——综合判断</td>
+<td>第 04 篇（终章）</td>
+</tr>
+</tbody>
+</table></div>
+<p>每个问题单独看，都有人写过；但很少有人把它们放在一起、正反两面拆给你看。</p>
+<hr />
+<h2 id="uber_4">一个小预告：Uber 和其他科技巨头的对比</h2>
+<p>留一组对比数字，帮你建立量级感。这些数字会在后面几篇详细拆解：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>Uber</th>
+<th>亚马逊</th>
+<th>Meta</th>
+<th>DoorDash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2025 收入</td>
+<td>520 亿</td>
+<td>~6,380 亿</td>
+<td>~1,640 亿</td>
+<td>~137 亿</td>
+</tr>
+<tr>
+<td>FY2025 FCF</td>
+<td>98 亿</td>
+<td>~400 亿</td>
+<td>~520 亿</td>
+<td>~20 亿</td>
+</tr>
+<tr>
+<td>PE（Non-GAAP）</td>
+<td>~13 倍</td>
+<td>~30 倍</td>
+<td>~22 倍</td>
+<td>~80 倍</td>
+</tr>
+<tr>
+<td>收入增速</td>
+<td>18%</td>
+<td>~11%</td>
+<td>~22%</td>
+<td>~28%</td>
+</tr>
+<tr>
+<td>PEG</td>
+<td>~0.72</td>
+<td>~2.7</td>
+<td>~1.0</td>
+<td>~2.9</td>
+</tr>
+</tbody>
+</table></div>
+<p>（数据来源：各公司最新财报，部分为估算值）</p>
+<p>Uber 的 PEG 只有 <strong>0.72</strong>——在所有大型科技平台公司中，这是最低的。</p>
+<p>但低 PEG 不一定意味着"便宜"——也可能意味着市场看到了你没看到的风险。到底是哪种情况？这正是接下来三篇要回答的问题。</p>
+<hr />
+<h2 id="_3">下期预告</h2>
+<p>下一篇，我们深入拆解 Uber 的<strong>护城河到底有多宽</strong>。</p>
+<p>要回答的几个尖锐问题：</p>
+<ul>
+<li>网络效应是 Uber 的核心护城河——但网络效应是本地化的，这意味着什么？</li>
+<li>Uber One 会员为什么是"被低估的护城河"？5,000 万会员意味着什么？</li>
+<li>出行市场 76% 份额 vs 外卖市场 23% 份额——为什么差距这么大？</li>
+<li>广告业务会成为 Uber 的"第二增长曲线"吗？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂Uber》系列第 01 篇。后续 3 篇将陆续推出。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/70a75aef28a3.html">自动驾驶——机遇还是威胁</a><div class="meta">2026-07-13 · 深度系列</div></li><li><a href="../r/6be88ad17600.html">Uber 风险与管理层评估</a><div class="meta">2026-06-20 · 组织管理</div></li><li><a href="../r/5cb114ed9260.html">Uber 行业竞争分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/19a26a1b6852.html">Uber 财务估值分析</a><div class="meta">2026-06-20 · 估值仓位</div></li><li><a href="../r/f4ce65752a5c.html">Uber 商业模式分析</a><div class="meta">2026-06-20 · 研究</div></li><li><a href="../r/1dc680058999.html">风险与估值（终章）</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/f6ed32b9d2e6.html">出行加外卖的双飞轮</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/ead856364209.html">《看懂Uber》系列说明</a><div class="meta">2026-05-22 · 底稿</div></li><li><a href="../r/0da4cc4f1425.html">Uber Technologies (UBER) 投资研究最终报告</a><div class="meta">2026-05-16 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
