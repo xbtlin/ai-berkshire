@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><h1>英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-08-28 · 财报 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E8%8B%B1%E4%BC%9F%E8%BE%BE-%E4%B8%89%E5%A4%A7%E6%8A%A5%E8%A1%A8%E8%A7%A3%E6%9E%90-FY2027Q2-20260828.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><div class="layout"><div><h1>英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-08-28 · 财报 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E8%8B%B1%E4%BC%9F%E8%BE%BE-%E4%B8%89%E5%A4%A7%E6%8A%A5%E8%A1%A8%E8%A7%A3%E6%9E%90-FY2027Q2-20260828.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">摘要</a></li>
 <li><a href="#_2">一、交叉验证与勾稽校验</a></li>
@@ -1597,4 +1607,48 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 <li><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm">NVIDIA Form 8-K 附件 99.2 CFO 评论（2026-08-26）</a></li>
 <li><a href="https://data.sec.gov/submissions/CIK0001045810.json">SEC EDGAR 英伟达申报索引</a></li>
 <li><a href="https://stockanalysis.com/stocks/nvda/financials/?p=quarterly">stockanalysis.com NVDA 季度财务数据（交叉验证用）</a></li>
-</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/12be4daf50fb.html">审计说明</a><div class="meta">2026-09-07 · 底稿</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/5e4b7e854e9f.html">07 增量更新底稿（2026-07-14 → 2026-08-01）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/6e56cabdf58e.html">《看懂英伟达》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/6601b82f2d5a.html">06 管理层评估 + 当前估值与卖方观点（研究底稿）</a><div class="meta">2026-07-14 · 底稿</div></li><li><a href="../r/e370c5a80872.html">05 - AI资本开支周期的可持续性：这次是不是2000年的思科？</a><div class="meta">2026-07-14 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/6e56cabdf58e.html">《看懂英伟达》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 导读</div></li><li><a href="../r/876768f83b1f.html">多少钱值得买，什么信号必须卖（系列终章）</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/80e643b685e3.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-07-14 · 财报</div></li><li><a href="../r/96dc8aa5b048.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/e821b2581881.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-07-14 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">摘要</a></li>
+<li><a href="#_2">一、交叉验证与勾稽校验</a></li>
+<li><a href="#_3">二、利润表逐项</a><ul>
+<li><a href="#21">2.1 主表（百万美元）</a></li>
+<li><a href="#22">2.2 收入拆分：增长的重心在往下沉</a></li>
+<li><a href="#23">2.3 成本与毛利：剪刀差来自结构，不是省钱</a></li>
+<li><a href="#24">2.4 三费：钱从销管省下来，投进了自己的算力</a></li>
+<li><a href="#25">2.5 其他收入净额：本季利润表里水分最大的一行</a></li>
+<li><a href="#26">2.6 税率</a></li>
+<li><a href="#27-vs-gaap-gaap">2.7 净利 vs 经调整净利：这季 GAAP 比非 GAAP 还高</a></li>
+<li><a href="#28">2.8 每股盈利与股数</a></li>
+</ul>
+</li>
+<li><a href="#vs">三、资产负债表逐项（期末 vs 期初）</a><ul>
+<li><a href="#31-10">3.1 变动全景（百万美元，仅列变动 &gt;10% 或绝对额显著者）</a></li>
+<li><a href="#32">3.2 变动最大的三个科目告诉我们公司形态在变什么</a></li>
+</ul>
+</li>
+<li><a href="#_4">四、现金流量表逐项（上半年口径，百万美元）</a><ul>
+<li><a href="#41-vs-63">4.1 经营现金流 vs 净利润：盈利含金量掉到 63%</a></li>
+<li><a href="#42">4.2 投资现金流拆解：本质是一支私募基金的现金流</a></li>
+<li><a href="#43">4.3 融资现金流拆解</a></li>
+<li><a href="#44">4.4 自由现金流</a></li>
+<li><a href="#45">4.5 三张表串一句话</a></li>
+</ul>
+</li>
+<li><a href="#_5">五、期后事项（本季报表中最重要的部分）</a><ul>
+<li><a href="#51-sb-energy-1050-openai">5.1 SB Energy 担保：1,050 亿美元，为 OpenAI 的租约背书</a></li>
+<li><a href="#52-5000">5.2 5,000 亿美元第三方资本平台（谅解备忘录阶段）</a></li>
+<li><a href="#53-2026-07-26">5.3 承诺总盘（截至 2026-07-26，不含上述期后事项）</a></li>
+</ul>
+</li>
+<li><a href="#_6">六、总体分析</a><ul>
+<li><a href="#61">6.1 一句话定性</a></li>
+<li><a href="#62">6.2 多空对照</a></li>
+<li><a href="#63-fy2027-q3">6.3 检验点：下一份财报（FY2027 Q3）要盯的四个数字</a></li>
+</ul>
+</li>
+<li><a href="#_7">说明</a></li>
+<li><a href="#_8">来源</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

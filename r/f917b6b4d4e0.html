@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PDD分析逻辑两处重大修订：用户挑战后的纠错 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/拼多多/index.html">拼多多</a></div><h1>PDD分析逻辑两处重大修订：用户挑战后的纠错</h1><div class="meta"><a href="../companies/拼多多/index.html">拼多多</a> ｜ 2026-04-22 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/PDD%E5%88%86%E6%9E%90%E9%80%BB%E8%BE%91%E4%BF%AE%E8%AE%A2-%E5%86%85%E5%9C%A8%E4%BB%B7%E5%80%BC%E8%A7%86%E8%A7%92-20260422.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>PDD分析逻辑两处重大修订：用户挑战后的纠错 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/拼多多/index.html">拼多多</a></div><div class="layout"><div><h1>PDD分析逻辑两处重大修订：用户挑战后的纠错</h1><div class="meta"><a href="../companies/拼多多/index.html">拼多多</a> ｜ 2026-04-22 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/PDD%E5%88%86%E6%9E%90%E9%80%BB%E8%BE%91%E4%BF%AE%E8%AE%A2-%E5%86%85%E5%9C%A8%E4%BB%B7%E5%80%BC%E8%A7%86%E8%A7%92-20260422.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">〇、修订摘要</a></li>
 <li><a href="#_2">一、之前的错误逻辑</a></li>
@@ -501,4 +511,73 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 <li>Temu从0到覆盖90+国家</li>
 <li>中国用户9亿+</li>
 <li>经营现金流2024年437亿</li>
-</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/add3b8034f65.html">拼多多控股（PDD Holdings，PDD.US）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/581cb36c9940.html">拼多多2036：活下来没有悬念，多赚要看两个变量</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/a4afe86cabe3.html">黄峥与拼多多控制权：谁在掌舵、他还能不能回来</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/2ef823d3a551.html">拼多多（PDD Holdings）投资研究 — 2026.04.07</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/9da20c690247.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/ea06217eed0b.html">拼多多AI与利润研究：审计说明</a><div class="meta">2026-09-24 · 底稿</div></li><li><a href="../r/eec9a3d4deca.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/6c5fe33f9647.html">PDD研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/a07290b67941.html">拼多多2026Q2：6-K原件逐行核对底稿</a><div class="meta">2026-08-26 · 底稿</div></li><li><a href="../r/4fc48a244b16.html">拼多多2026年二季报深度解读：一笔找不到科目的投入</a><div class="meta">2026-08-25 · 财报</div></li><li><a href="../r/b870b0a0d5b4.html">拼多多2026年中报解读</a><div class="meta">2026-08-25 · 公众号</div></li><li><a href="../r/7a2822470350.html">拼多多三大报表解析：从交易所原件到逐项含义</a><div class="meta">2026-08-24 · 财报</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/add3b8034f65.html">拼多多控股（PDD Holdings，PDD.US）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/581cb36c9940.html">拼多多2036：活下来没有悬念，多赚要看两个变量</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/a4afe86cabe3.html">黄峥与拼多多控制权：谁在掌舵、他还能不能回来</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/2ef823d3a551.html">拼多多（PDD Holdings）投资研究 — 2026.04.07</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/9da20c690247.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/b870b0a0d5b4.html">拼多多2026年中报解读</a><div class="meta">2026-08-25 · 公众号</div></li><li><a href="../r/7a2822470350.html">拼多多三大报表解析：从交易所原件到逐项含义</a><div class="meta">2026-08-24 · 财报</div></li><li><a href="../r/7b0e339dcb86.html">拼多多（PDD Holdings, NASDAQ: PDD）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/0e96a7d52297.html">PDD Holdings（拼多多）四大师综合投资研究</a><div class="meta">2026-07-02 · 研究</div></li><li><a href="../r/ea08984766d5.html">黄峥公众号：如创业的投资和如投资的创业</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/4e9d63b6e354.html">PDD研究覆盖度评估：信息缺口分析</a><div class="meta">2026-06-27 · 研究</div></li><li><a href="../r/20ae084f0438.html">核心中概股与美股 P/FCF 对比</a><div class="meta">2026-06-26 · 横评对比</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">〇、修订摘要</a></li>
+<li><a href="#_2">一、之前的错误逻辑</a></li>
+<li><a href="#_3">二、用户的精准批评</a></li>
+<li><a href="#_4">三、正确的逻辑：两件事必须严格分开</a><ul>
+<li><a href="#_5">关键推论</a></li>
+</ul>
+</li>
+<li><a href="#pdd">四、这暴露的更深问题：PDD的"不分红"反而是违反本分的</a><ul>
+<li><a href="#5">段永平的本分原文（5条之一）</a></li>
+<li><a href="#pdd_1">应用到PDD现金问题</a></li>
+<li><a href="#_6">真正的本分应该是</a></li>
+<li><a href="#_7">对比正确的做法（巴菲特模式）</a></li>
+</ul>
+</li>
+<li><a href="#_8">五、修正后的"段永平赌的是什么"</a><ul>
+<li><a href="#_9">之前错误判断</a></li>
+<li><a href="#_10">修正后真实判断</a></li>
+</ul>
+</li>
+<li><a href="#_11">一、之前的错误逻辑</a></li>
+<li><a href="#_12">二、用户的精准批评</a></li>
+<li><a href="#1">三、修正：用内在价值重做"1美元测试"</a><ul>
+<li><a href="#1_1">巴菲特"1美元测试"的真正定义</a></li>
+<li><a href="#pdd2020-2025">PDD的内在价值变化（2020-2025）</a></li>
+<li><a href="#vs">市值 vs 内在价值的背离</a></li>
+</ul>
+</li>
+<li><a href="#pdd_2">四、那PDD的资本配置真的"成功"了吗？</a><ul>
+<li><a href="#pdd_3">拆解PDD现金的去向（推算）</a></li>
+<li><a href="#_13">修正后的判断</a></li>
+<li><a href="#300">这部分趴账上的$300亿+是什么？</a></li>
+</ul>
+</li>
+<li><a href="#pdd_4">一、PDD的真实状态（修正后）</a></li>
+<li><a href="#_15">二、段永平赌注的最终修正版</a><ul>
+<li><a href="#_16">第一次（错）</a></li>
+<li><a href="#_17">第二次（部分对）</a></li>
+<li><a href="#_18">最终修正版</a></li>
+</ul>
+</li>
+<li><a href="#_19">三、真正的争议焦点（修正后）</a><ul>
+<li><a href="#300_1">$300亿+闲置现金的机会成本</a></li>
+<li><a href="#_20">关键治理透明度问题</a></li>
+</ul>
+</li>
+<li><a href="#_21">四、伯克希尔的真实情况（修正之前的另一处不准确）</a><ul>
+<li><a href="#_22">分红</a></li>
+<li><a href="#_23">回购</a></li>
+<li><a href="#_24">关键启示</a></li>
+</ul>
+</li>
+<li><a href="#1_2">修订1的方法论收获：分清"个人钱"和"公司钱"</a></li>
+<li><a href="#2">修订2的方法论收获：警惕"市值崇拜"陷阱</a></li>
+<li><a href="#_26">综合方法论收获</a></li>
+<li><a href="#_27">修订前</a></li>
+<li><a href="#_28">修订后</a></li>
+<li><a href="#_29">投资判断</a></li>
+<li><a href="#_30">结语：错误的价值</a></li>
+<li><a href="#_31">信息来源</a><ul>
+<li><a href="#_32">原报告（被修订的对象）</a></li>
+<li><a href="#_33">用户挑战的两次对话</a></li>
+<li><a href="#_34">巴菲特/伯克希尔事实核查</a></li>
+<li><a href="#pdd2020-2025_1">PDD内在价值变化（2020-2025）</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

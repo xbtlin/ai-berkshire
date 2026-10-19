@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>千问 App 三年展望（2029）综合研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/阿里巴巴/index.html">阿里巴巴</a></div><h1>千问 App 三年展望（2029）综合研究报告</h1><div class="meta"><a href="../companies/阿里巴巴/index.html">阿里巴巴</a> ｜ 2026-04-28 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/%E5%8D%83%E9%97%AEapp%E4%B8%89%E5%B9%B4%E5%B1%95%E6%9C%9B-20260428.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>千问 App 三年展望（2029）综合研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/阿里巴巴/index.html">阿里巴巴</a></div><div class="layout"><div><h1>千问 App 三年展望（2029）综合研究报告</h1><div class="meta"><a href="../companies/阿里巴巴/index.html">阿里巴巴</a> ｜ 2026-04-28 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/%E5%8D%83%E9%97%AEapp%E4%B8%89%E5%B9%B4%E5%B1%95%E6%9C%9B-20260428.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#0">0. 一句话核心结论</a></li>
 <li><a href="#05">0.5 信息源声明与可研究性局限</a></li>
@@ -905,4 +915,54 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 3. 行业研究员（芒格视角，基于公开信息记忆）
 4. 风险与管理层评估员（李录视角，使用 WebSearch）</p>
 <p>三年是 AI 行业极长的预测周期，建议本报告每 6 个月校准一次。</p>
-<p><strong>最后修订</strong>：2026-04-28</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/5eacdfc62656.html">用巴菲特的方式，拆一份利润暴跌 62% 的财报</a><div class="meta">2026-08-18 · 公众号</div></li><li><a href="../r/3e9c0540f78d.html">阿里巴巴（NYSE:BABA / HK:9988）——晨星估值视角的增量分析</a><div class="meta">2026-08-17 · 估值仓位</div></li><li><a href="../r/0c979d59c8de.html">阿里巴巴集团（BABA / 9988.HK）投资研究报告——三场烧钱战</a><div class="meta">2026-08-17 · 研究</div></li><li><a href="../r/eb69737f826c.html">AI 时代，阿里是中国的亚马逊，还是下一个 IBM</a><div class="meta">2026-08-08 · 公众号</div></li><li><a href="../r/e5061154438c.html">淘天：一年被烧掉数百亿利润的现金牛</a><div class="meta">2026-08-05 · 公众号</div></li><li><a href="../r/9376fe7e65ec.html">马云回来了，方向盘在吴泳铭手里——以及多少钱值得买</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/dc7daff890e2.html">用巴菲特的方式，拆一份利润暴跌 62% 的财报</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/12b4efbd3c28.html">AI 时代，阿里是中国的亚马逊，还是下一个 IBM</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4ff68eaf9ecd.html">一年被烧掉数百亿利润的现金牛——淘天</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/1edee4f2eb1e.html">你以为你看懂了阿里巴巴，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/8c30a23aa8b0.html">《看懂阿里巴巴》系列说明</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/bc7c11a33df1.html">你以为你看懂了阿里巴巴，其实没有</a><div class="meta">2026-08-01 · 公众号</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>
+<p><strong>最后修订</strong>：2026-04-28</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/5eacdfc62656.html">用巴菲特的方式，拆一份利润暴跌 62% 的财报</a><div class="meta">2026-08-18 · 公众号</div></li><li><a href="../r/3e9c0540f78d.html">阿里巴巴（NYSE:BABA / HK:9988）——晨星估值视角的增量分析</a><div class="meta">2026-08-17 · 估值仓位</div></li><li><a href="../r/0c979d59c8de.html">阿里巴巴集团（BABA / 9988.HK）投资研究报告——三场烧钱战</a><div class="meta">2026-08-17 · 研究</div></li><li><a href="../r/eb69737f826c.html">AI 时代，阿里是中国的亚马逊，还是下一个 IBM</a><div class="meta">2026-08-08 · 公众号</div></li><li><a href="../r/e5061154438c.html">淘天：一年被烧掉数百亿利润的现金牛</a><div class="meta">2026-08-05 · 公众号</div></li><li><a href="../r/9376fe7e65ec.html">马云回来了，方向盘在吴泳铭手里——以及多少钱值得买</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/8c30a23aa8b0.html">《看懂阿里巴巴》系列说明</a><div class="meta">2026-08-01 · 导读</div></li><li><a href="../r/bc7c11a33df1.html">你以为你看懂了阿里巴巴，其实没有</a><div class="meta">2026-08-01 · 公众号</div></li><li><a href="../r/222942adafa0.html">阿里三周暴跌25%又暴涨10%：市场把一个工地看成了废墟</a><div class="meta">2026-07-10 · 公众号</div></li><li><a href="../r/f299ce8992f7.html">阿里巴巴集团（BABA / 9988.HK）投资研究报告</a><div class="meta">2026-07-09 · 研究</div></li><li><a href="../r/34a723ff542f.html">风险、治理与估值判断（终章）</a><div class="meta">2026-06-24 · 深度系列</div></li><li><a href="../r/130787e2c060.html">帝国的边疆——国际电商、即时零售与其他</a><div class="meta">2026-06-24 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#0">0. 一句话核心结论</a></li>
+<li><a href="#05">0.5 信息源声明与可研究性局限</a></li>
+<li><a href="#1-app">1. 千问 App 是什么</a><ul>
+<li><a href="#11">1.1 三层定位</a></li>
+<li><a href="#12-ai-202604">1.2 在阿里 AI 矩阵的位置（2026.04 现状）</a></li>
+<li><a href="#13-ai">1.3 与阿里其他 AI 产品的关系</a></li>
+</ul>
+</li>
+<li><a href="#2-2026q1">2. 当前数据画像（2026Q1 快照）</a><ul>
+<li><a href="#21">2.1 关键运营数据</a></li>
+<li><a href="#22-ai-fy26q3-2025-12-31">2.2 阿里 AI 业务财务画像（FY26Q3，截至 2025-12-31）</a></li>
+</ul>
+</li>
+<li><a href="#3">3. 四维综合评分总表</a></li>
+<li><a href="#4">4. 各维度核心发现</a><ul>
+<li><a href="#41">4.1 商业模式（段永平视角）</a></li>
+<li><a href="#42">4.2 财务/资源（巴菲特视角）</a></li>
+<li><a href="#43">4.3 行业格局（芒格视角）</a></li>
+<li><a href="#44">4.4 风险与管理层（李录视角）</a></li>
+</ul>
+</li>
+<li><a href="#5">5. 关键事件时间线 + 三年关键拐点预测</a><ul>
+<li><a href="#51-2024-202604">5.1 历史复盘（2024 - 2026.04）</a></li>
+<li><a href="#52">5.2 三年关键拐点预测（决定千问命运的事件）</a></li>
+</ul>
+</li>
+<li><a href="#6_1">6. 三年情景推演（综合）</a><ul>
+<li><a href="#61-2029">6.1 综合三情景表（2029 年）</a></li>
+<li><a href="#62">6.2 期望值估算</a></li>
+</ul>
+</li>
+<li><a href="#7-bull-vs-bear">7. 投资论点（Bull vs Bear）</a><ul>
+<li><a href="#7">🟢 看多逻辑（7 条）</a></li>
+<li><a href="#7_1">🔴 看空逻辑（7 条）</a></li>
+</ul>
+</li>
+<li><a href="#8">8. 关键不确定性清单（拿不准但显著影响结论）</a></li>
+<li><a href="#9">9. 阿里集团股票视角（千问的"投资意义"）</a></li>
+<li><a href="#10">10. 总结</a></li>
+<li><a href="#_7">附录：信息来源汇总</a><ul>
+<li><a href="#_8">高置信度（财报披露 / 官方口径）</a></li>
+<li><a href="#_9">中置信度（第三方数据 / 媒体推算）</a></li>
+<li><a href="#_10">低置信度（推算 / 主观判断）</a></li>
+<li><a href="#_11">主要参考资料（链接见各子代理报告）</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
