@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>腾讯与快手对比研究 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/腾讯与快手-看懂公司-20260906/index.html">腾讯与快手-看懂公司-20260906</a></div><h1>腾讯与快手对比研究</h1><div class="meta"><a href="../topics/腾讯与快手-看懂公司-20260906/index.html">腾讯与快手-看懂公司-20260906</a> ｜ 2026-09-06 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF%E4%B8%8E%E5%BF%AB%E6%89%8B-%E7%9C%8B%E6%87%82%E5%85%AC%E5%8F%B8-20260906/%E8%85%BE%E8%AE%AF%E4%B8%8E%E5%BF%AB%E6%89%8B%E5%AF%B9%E6%AF%94%E7%A0%94%E7%A9%B6-20260906.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>腾讯与快手对比研究 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/腾讯与快手-看懂公司-20260906/index.html">腾讯与快手-看懂公司-20260906</a></div><div class="layout"><div><h1>腾讯与快手对比研究</h1><div class="meta"><a href="../topics/腾讯与快手-看懂公司-20260906/index.html">腾讯与快手-看懂公司-20260906</a> ｜ 2026-09-06 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF%E4%B8%8E%E5%BF%AB%E6%89%8B-%E7%9C%8B%E6%87%82%E5%85%AC%E5%8F%B8-20260906/%E8%85%BE%E8%AE%AF%E4%B8%8E%E5%BF%AB%E6%89%8B%E5%AF%B9%E6%AF%94%E7%A0%94%E7%A9%B6-20260906.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">阅读入口</a></li>
 <li><a href="#_2">第一步：先看付钱的人，再看使用产品的人</a></li>
@@ -71,13 +81,13 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 </tr>
 </tbody>
 </table></div>
-<p>腾讯股数采用 9 月 4 日翌日披露，快手 B 类股份采用 9 月 3 日翌日披露、A 类股份核至 8 月月报；均不以加权平均每股收益分母代替实际发行数。汇率采用 1 港元兑换 0.8559 元人民币的同日即期行情。价格与股数日期的细小差异如实保留；未来激励造成的潜在稀释另在估值中处理。<a href="https://stockanalysis.com/quote/hkg/0700/history/">同日腾讯行情</a>、<a href="https://stockanalysis.com/quote/hkg/1024/history/">快手行情</a>、<a href="https://www.investing.com/currencies/hkd-cny-historical-data">汇率历史</a>。原始股本公告、独立市值比对与差异说明见<a href="../r/c6461674ea49.html">独立核查</a>，乘法见<a href="../files/reports/%E8%85%BE%E8%AE%AF%E4%B8%8E%E5%BF%AB%E6%89%8B-%E7%9C%8B%E6%87%82%E5%85%AC%E5%8F%B8-20260906/%E7%BB%9F%E4%B8%80%E8%A1%8C%E6%83%85%E8%AE%A1%E7%AE%97.json">统一行情计算</a>。</p>
+<p>腾讯股数采用 9 月 4 日翌日披露，快手 B 类股份采用 9 月 3 日翌日披露、A 类股份核至 8 月月报；均不以加权平均每股收益分母代替实际发行数。汇率采用 1 港元兑换 0.8559 元人民币的同日即期行情。价格与股数日期的细小差异如实保留；未来激励造成的潜在稀释另在估值中处理。<a href="https://stockanalysis.com/quote/hkg/0700/history/">同日腾讯行情</a>、<a href="https://stockanalysis.com/quote/hkg/1024/history/">快手行情</a>、<a href="https://www.investing.com/currencies/hkd-cny-historical-data">汇率历史</a>。原始股本公告、独立市值比对与差异说明见<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF%E4%B8%8E%E5%BF%AB%E6%89%8B-%E7%9C%8B%E6%87%82%E5%85%AC%E5%8F%B8-20260906/%E7%8B%AC%E7%AB%8B%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%8F%8D%E6%96%B9%E6%A0%B8%E6%9F%A5.md">独立核查</a>，乘法见<a href="../files/reports/%E8%85%BE%E8%AE%AF%E4%B8%8E%E5%BF%AB%E6%89%8B-%E7%9C%8B%E6%87%82%E5%85%AC%E5%8F%B8-20260906/%E7%BB%9F%E4%B8%80%E8%A1%8C%E6%83%85%E8%AE%A1%E7%AE%97.json">统一行情计算</a>。</p>
 <p>TTM 指截至 2026 年 6 月的过去十二个月，按“2025 全年＋2026 上半年－2025 上半年”计算，并非把半年利润乘二；此表使用 IFRS 归母口径。两家公司利润中投资及非现金项目仍有差异，市盈率只能作为进入现金流分析的起点。具体利润原数和来源见各公司系列财务篇及证据附录。</p>
 <h2 id="_1">阅读入口</h2>
 <ul>
 <li><a href="../r/4352cd405a4d.html">《看懂腾讯》八篇目录</a></li>
 <li><a href="../r/3b260f9b8283.html">《看懂快手》三篇目录</a></li>
-<li><a href="../r/c6461674ea49.html">独立来源与反方核查</a></li>
+<li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF%E4%B8%8E%E5%BF%AB%E6%89%8B-%E7%9C%8B%E6%87%82%E5%85%AC%E5%8F%B8-20260906/%E7%8B%AC%E7%AB%8B%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%8F%8D%E6%96%B9%E6%A0%B8%E6%9F%A5.md">独立来源与反方核查</a></li>
 </ul>
 <p>两家公司公开资料都较丰富，但可灵的独立训练成本、客户留存和完全摊薄经济权益等问题，不能凭材料丰富就假定已经看清。本横评提供框架和相对取舍，逐项数据、公司估值模型和缺口见各自系列。</p>
 <hr />
@@ -395,5 +405,28 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 <h2 id="ai_1">AI 分析置信度与投资确定性</h2>
 <p>对已披露收入、利润和现金流，可以通过原文和独立来源提高数据置信度；对模型竞争、用户入口变化和未来资本回报，仍然只能建立有条件的推演。两者不会因为写成很长的系列就变成同一种确定性。</p>
 <p>本研究的价值，是把下一步必须验证的事实与愿意支付的价格联系起来。腾讯的条件是好生意继续兑现为股东现金；快手的条件是主业和可灵共同创造、并让普通股股东保留足够的价值。</p>
-<p>复核资料见<a href="../r/dc6bd19e28bb.html">独立审查记录</a>与<a href="../r/5fc28eec93ab.html">审计范围与交付说明</a>。这些记录区分历史事实、计算和假设，并说明尚未取得独立第二来源的部分。</p>
-<p><em>本报告基于公开信息和价值投资框架研究，不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c6461674ea49.html">腾讯与快手：独立来源与反方核查</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/dc6bd19e28bb.html">独立审查记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/5fc28eec93ab.html">审计范围与交付说明</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/c87543103ebb.html">看懂腾讯与快手</a><div class="meta">2026-09-06 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<p>复核资料见<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF%E4%B8%8E%E5%BF%AB%E6%89%8B-%E7%9C%8B%E6%87%82%E5%85%AC%E5%8F%B8-20260906/%E7%8B%AC%E7%AB%8B%E5%AE%A1%E6%9F%A5%E8%AE%B0%E5%BD%95.md">独立审查记录</a>与<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF%E4%B8%8E%E5%BF%AB%E6%89%8B-%E7%9C%8B%E6%87%82%E5%85%AC%E5%8F%B8-20260906/%E5%AE%A1%E8%AE%A1%E8%8C%83%E5%9B%B4%E4%B8%8E%E4%BA%A4%E4%BB%98%E8%AF%B4%E6%98%8E.md">审计范围与交付说明</a>。这些记录区分历史事实、计算和假设，并说明尚未取得独立第二来源的部分。</p>
+<p><em>本报告基于公开信息和价值投资框架研究，不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c87543103ebb.html">看懂腾讯与快手</a><div class="meta">2026-09-06 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">阅读入口</a></li>
+<li><a href="#_2">第一步：先看付钱的人，再看使用产品的人</a></li>
+<li><a href="#2026">第二步：2026 年中期，增长质量比增长标签更重要</a></li>
+<li><a href="#ai">第三步：AI 的价值，取决于省下的钱最终留给谁</a><ul>
+<li><a href="#_3">可灵应计算“合格交付成本”</a></li>
+<li><a href="#_4">共同的风险是技术竞赛变成固定成本竞赛</a></li>
+</ul>
+</li>
+<li><a href="#_5">第四步：两张现金表，决定安全边际是否真实</a></li>
+<li><a href="#_6">第五步：把最强的反方摆到同一张桌上</a></li>
+<li><a href="#_7">第六步：持有两家公司，并没有分散掉全部风险</a></li>
+<li><a href="#_8">第七步：用价格和证据共同决定行动</a><ul>
+<li><a href="#_9">每一个价值区间，都有经营前提</a></li>
+<li><a href="#_10">折现参数提高后，便宜程度会变化</a></li>
+<li><a href="#_11">空仓者与持有人，应等待不同的证据</a></li>
+</ul>
+</li>
+<li><a href="#_12">持续验证清单</a></li>
+<li><a href="#ai_1">AI 分析置信度与投资确定性</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

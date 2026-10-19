@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>不动权重的训练：文本空间优化两年演进——从 TextGrad 到技能自进化，再到运行框架与模型协同进化 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/AI产业研究/index.html">AI产业研究</a></div><h1>不动权重的训练：文本空间优化两年演进——从 TextGrad 到技能自进化，再到运行框架与模型协同进化</h1><div class="meta"><a href="../topics/AI产业研究/index.html">AI产业研究</a> ｜ 2026-09-22 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/AI%E4%BA%A7%E4%B8%9A%E7%A0%94%E7%A9%B6/%E6%96%87%E6%9C%AC%E7%A9%BA%E9%97%B4%E4%BC%98%E5%8C%96-%E4%BB%8ETextGrad%E5%88%B0%E6%8A%80%E8%83%BD%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%A1%86%E6%9E%B6%E5%8D%8F%E5%90%8C%E8%BF%9B%E5%8C%96-%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A-20260922.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>不动权重的训练：文本空间优化两年演进——从 TextGrad 到技能自进化，再到运行框架与模型协同进化 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/AI产业研究/index.html">AI产业研究</a></div><div class="layout"><div><h1>不动权重的训练：文本空间优化两年演进——从 TextGrad 到技能自进化，再到运行框架与模型协同进化</h1><div class="meta"><a href="../topics/AI产业研究/index.html">AI产业研究</a> ｜ 2026-09-22 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/AI%E4%BA%A7%E4%B8%9A%E7%A0%94%E7%A9%B6/%E6%96%87%E6%9C%AC%E7%A9%BA%E9%97%B4%E4%BC%98%E5%8C%96-%E4%BB%8ETextGrad%E5%88%B0%E6%8A%80%E8%83%BD%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%A1%86%E6%9E%B6%E5%8D%8F%E5%90%8C%E8%BF%9B%E5%8C%96-%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A-20260922.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">一、核心结论</a></li>
 <li><a href="#_2">二、这个领域在解决什么问题</a><ul>
@@ -1645,4 +1655,67 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 <p><strong>文本优化器</strong>：2211.01910（APE）、2305.03495（ProTeGi）、2309.03409（OPRO）、2310.03714（DSPy）、2406.11695（MIPROv2）、2406.16218（Trace）、2412.03092（REVOLVE）、2412.03624（语义反向传播）、2412.09722（GReaTer）、2501.16673（LLM-AutoDiff）、2505.18524（metaTextGrad）、2506.00400（带动量的文本梯度）、2507.19457（GEPA）、2507.03041（Optimas）、2511.07919（Feedback Descent）、2512.13598（梯度类比质疑）、2602.08306（TextResNet）、2603.23994（迭代生成式优化的挑战）、2604.08801（p1）、2604.14585（抛硬币）、2605.19633（optimize_anything）、2605.26046（多目标文本梯度）、2608.10471（RLMOpt）、2609.04197（ESPO）；Decagon 工程博客 Optimizing GEPA for production（2026-03）。</p>
 <p><strong>技能与记忆</strong>：2303.11366（Reflexion）、2305.16291（Voyager）、2308.10144（ExpeL）、2409.07429（AWM）、2502.12110（A-MEM）、2504.07079（SkillWeaver）、2504.07952（Dynamic Cheatsheet）、2507.06229（Agent KB）、2508.06433（Memp）、2508.16153（Memento）、2509.25140（ReasoningBank）、2510.04618（ACE）、2510.08191（Training-Free GRPO）、2602.08234（SkillRL）、2602.12670（SkillsBench）、2603.01145（AutoSkill）、2603.02766（EvoSkill）、2603.18743（Memento-Skills）、2603.25158（Trace2Skill）、2604.01687（CoEvoSkills）、2604.02268（Skill0）、2604.04804（SkillX）、2604.08377（SkillClaw）、2604.20087（SkillLearnBench）、2605.06614（SkillOS）、2606.01139（SkillRevise）、2606.08755（技能生成与策略共同进化）、2606.14239（SkillAudit）、2607.05297（MetaSkill-Evolve）；安全：2510.26328、2601.10338、2602.20156、2607.03238；Anthropic 工程博客 Equipping agents for the real world with Agent Skills（2025-10-16）。</p>
 <p><strong>运行框架</strong>：2408.08435（ADAS）、2410.04444（Gödel Agent）、2410.10762（AFlow）、2504.15228（SICA）、2505.22954（Darwin Gödel Machine）、2506.13131（AlphaEvolve）、2509.19349（ShinkaEvolve）、2510.21614（Huxley-Gödel Machine）、2603.03329（AutoHarness）、2603.19461（Hyperagents）、2603.28052（Meta-Harness）、2604.25850（AHE）、2605.22166（运行时框架适配）、2605.23950（披露框架）、2605.30621（更新力与受益力）、2606.09498（Self-Harness）、2607.08938（Better Harnesses, Smaller Models）、2607.12227（同预算评测）；综述：2507.21046、2508.07407、2606.20683、2608.03392；博客：LangChain，Improving Deep Agents with harness engineering（2026-02）；Anthropic，Harness design for long-running application development（2026-03）；Lilian Weng，Harness Engineering for Self-Improvement（2026-07）。</p>
-<p><strong>模型侧</strong>：Ross 等 2011（DAgger）、2306.13649（GKD）、2306.08543（MiniLLM）、2407.10930（BetterTogether）、2501.01702（AgentRefine）、2501.11425（Agent-R）、2501.17161（SFT Memorizes, RL Generalizes）、2502.12143（小模型学不动强教师）、2505.09388（Qwen3）、2505.20023（STeP）、2506.10943（SEAL）、2508.04660（mmGRPO）、2509.04259（RL's Razor）、2509.14257（SCoRe）、2510.18874（Retaining by Doing）、2512.14895（OEC）、2601.18734（OPSD）、2601.19897（SDFT）、2601.20802（SDPO）、2603.21877（P²O）、2604.13016（Rethinking OPD）、2605.12913（Revisiting DAgger）、2605.13643（Prefix Teach, Suffix Fade）、2606.15912（Guided-OPD）、2607.04574（少量教师步）；协同进化：2605.27276（SIA）、2606.01779（HarnessForge）、2606.14249（HarnessX）、2607.03935（HASE）、2607.22688（Co-Harness）、2608.13951（HELIX）、2609.00196（WHALE）；Thinking Machines Lab 博客 On-Policy Distillation（2025-10-27）。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/86aa7f89b307.html">AI便宜一千倍后，最贵的是电表、入口和签字的人</a><div class="meta">2026-09-26 · 公众号</div></li><li><a href="../r/59f6a96928ab.html">押成本曲线别押替代日期，一份 AI 十年概率清单</a><div class="meta">2026-09-25 · 公众号</div></li><li><a href="../r/7b5d0b0d6282.html">harness 自进化的几篇论文</a><div class="meta">2026-09-22 · 公众号</div></li><li><a href="../r/661bae32d996.html">一个不说话的模型，六天里被测出了什么：拆 Jev</a><div class="meta">2026-09-21 · 公众号</div></li><li><a href="../r/f219cd690dc8.html">Jev 与&quot;决策模型&quot;品类：技术报告、商业评估与未来三年影响</a><div class="meta">2026-09-21 · 研究</div></li><li><a href="../r/39ac642ec328.html">基模变强之后：业务后训练的空间与算法工程师的去向</a><div class="meta">2026-09-19 · 研究</div></li><li><a href="../r/f004fc3549f9.html">1.9亿次请求要的不是答案，是思路：拆Anthropic蒸馏报告</a><div class="meta">2026-09-12 · 公众号</div></li><li><a href="../r/b3e152831cdc.html">中美基模公司终局与 MiniMax 差异化研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/6f12291edfb3.html">核查边界</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8e50c1e62b76.html">大模型算法人才市场供需研究：裁员与高价抢人为何并存（2026年8月）</a><div class="meta">2026-08-17 · 研究</div></li><li><a href="../r/9d12d4dab893.html">AI 经济回报格局：25 条流行断言的对抗验证</a><div class="meta">2026-08-14 · 研究</div></li><li><a href="../r/6dd56467e1a3.html">Agent自进化：近一年证据综述（2025-08 ~ 2026-08）</a><div class="meta">2026-08-11 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<p><strong>模型侧</strong>：Ross 等 2011（DAgger）、2306.13649（GKD）、2306.08543（MiniLLM）、2407.10930（BetterTogether）、2501.01702（AgentRefine）、2501.11425（Agent-R）、2501.17161（SFT Memorizes, RL Generalizes）、2502.12143（小模型学不动强教师）、2505.09388（Qwen3）、2505.20023（STeP）、2506.10943（SEAL）、2508.04660（mmGRPO）、2509.04259（RL's Razor）、2509.14257（SCoRe）、2510.18874（Retaining by Doing）、2512.14895（OEC）、2601.18734（OPSD）、2601.19897（SDFT）、2601.20802（SDPO）、2603.21877（P²O）、2604.13016（Rethinking OPD）、2605.12913（Revisiting DAgger）、2605.13643（Prefix Teach, Suffix Fade）、2606.15912（Guided-OPD）、2607.04574（少量教师步）；协同进化：2605.27276（SIA）、2606.01779（HarnessForge）、2606.14249（HarnessX）、2607.03935（HASE）、2607.22688（Co-Harness）、2608.13951（HELIX）、2609.00196（WHALE）；Thinking Machines Lab 博客 On-Policy Distillation（2025-10-27）。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/86aa7f89b307.html">AI便宜一千倍后，最贵的是电表、入口和签字的人</a><div class="meta">2026-09-26 · 公众号</div></li><li><a href="../r/59f6a96928ab.html">押成本曲线别押替代日期，一份 AI 十年概率清单</a><div class="meta">2026-09-25 · 公众号</div></li><li><a href="../r/7b5d0b0d6282.html">harness 自进化的几篇论文</a><div class="meta">2026-09-22 · 公众号</div></li><li><a href="../r/661bae32d996.html">一个不说话的模型，六天里被测出了什么：拆 Jev</a><div class="meta">2026-09-21 · 公众号</div></li><li><a href="../r/f219cd690dc8.html">Jev 与&quot;决策模型&quot;品类：技术报告、商业评估与未来三年影响</a><div class="meta">2026-09-21 · 研究</div></li><li><a href="../r/39ac642ec328.html">基模变强之后：业务后训练的空间与算法工程师的去向</a><div class="meta">2026-09-19 · 研究</div></li><li><a href="../r/f004fc3549f9.html">1.9亿次请求要的不是答案，是思路：拆Anthropic蒸馏报告</a><div class="meta">2026-09-12 · 公众号</div></li><li><a href="../r/b3e152831cdc.html">中美基模公司终局与 MiniMax 差异化研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/8e50c1e62b76.html">大模型算法人才市场供需研究：裁员与高价抢人为何并存（2026年8月）</a><div class="meta">2026-08-17 · 研究</div></li><li><a href="../r/9d12d4dab893.html">AI 经济回报格局：25 条流行断言的对抗验证</a><div class="meta">2026-08-14 · 研究</div></li><li><a href="../r/0b343d83fd0a.html">大模型公司格局：国内外赢家推演（3年 / 5年 / 10年）</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/00f255cc72d9.html">训练大模型，成本降10倍效果反而更好——怎么做到的？</a><div class="meta">2026-06-15 · 公众号</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">一、核心结论</a></li>
+<li><a href="#_2">二、这个领域在解决什么问题</a><ul>
+<li><a href="#21">2.1 一句话定义</a></li>
+<li><a href="#22-2026">2.2 为什么 2026 年这个方向变热</a></li>
+<li><a href="#23">2.3 时间线</a></li>
+<li><a href="#24">2.4 贯穿全文的一个例子</a></li>
+</ul>
+</li>
+<li><a href="#textgrad">三、论文一：TextGrad——把批评当梯度</a><ul>
+<li><a href="#31">3.1 机制</a></li>
+<li><a href="#32">3.2 实验数字</a></li>
+<li><a href="#33">3.3 一个真实的前后对比</a></li>
+<li><a href="#34">3.4 后来被证实的局限</a></li>
+</ul>
+</li>
+<li><a href="#gepa">四、论文二：GEPA——不做反向传播，做反思加进化</a><ul>
+<li><a href="#41">4.1 问题设定与主张</a></li>
+<li><a href="#42">4.2 机制</a></li>
+<li><a href="#43">4.3 一条真实的进化路径</a></li>
+<li><a href="#44">4.4 主要结果</a></li>
+<li><a href="#45">4.5 本报告核对：三处需要打折</a></li>
+<li><a href="#46-gepa">4.6 之后一年：GEPA 成了被修补的对象</a></li>
+</ul>
+</li>
+<li><a href="#skillopt">五、论文三：SkillOpt——给文本更新装上学习率、验证集和动量</a><ul>
+<li><a href="#51">5.1 问题设定</a></li>
+<li><a href="#52">5.2 训练循环</a></li>
+<li><a href="#53">5.3 主要结果</a></li>
+<li><a href="#54">5.4 学到的东西长什么样</a></li>
+<li><a href="#55">5.5 消融与迁移</a></li>
+<li><a href="#56">5.6 本报告核对：五处需要打折</a></li>
+</ul>
+</li>
+<li><a href="#_3">六、论文四：运行框架与模型协同进化——模仿失败，单轮纠正不伤</a><ul>
+<li><a href="#61">6.1 设定</a></li>
+<li><a href="#62">6.2 结果</a></li>
+<li><a href="#63">6.3 机理：学到了知识，丢了节奏</a></li>
+<li><a href="#64">6.4 解法：在策略单轮纠正</a></li>
+<li><a href="#65">6.5 本报告核对：五处需要打折</a></li>
+</ul>
+</li>
+<li><a href="#_4">七、同领域近两年热点论文：四条支线</a><ul>
+<li><a href="#71">7.1 支线一：文本优化器——从"类比"到"搜索"，再到"清算"</a></li>
+<li><a href="#72">7.2 支线二：技能、记忆与上下文的自我进化</a></li>
+<li><a href="#73">7.3 支线三：运行框架的自动设计与自我改进</a></li>
+<li><a href="#74">7.4 支线四：模型侧——监督信号加在谁的状态上</a></li>
+</ul>
+</li>
+<li><a href="#_5">八、把四条线放在一起看</a><ul>
+<li><a href="#81">8.1 四篇论文的并排对照</a></li>
+<li><a href="#82">8.2 一条共同的工程规律</a></li>
+<li><a href="#83">8.3 "匹配"是新出现的核心概念</a></li>
+<li><a href="#84">8.4 尚无定论的五个问题</a></li>
+</ul>
+</li>
+<li><a href="#_6">九、对工程实践的含义</a></li>
+<li><a href="#_7">十、检验点</a></li>
+<li><a href="#_8">十一、信息局限</a></li>
+<li><a href="#_9">参考文献</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
