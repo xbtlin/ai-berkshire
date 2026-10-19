@@ -1,0 +1,698 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MiniMax（0100.HK）研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/七公司投资研究-20261002/index.html">七公司投资研究-20261002</a></div><h1>MiniMax（0100.HK）研究报告</h1><div class="meta"><a href="../topics/七公司投资研究-20261002/index.html">七公司投资研究-20261002</a> ｜ 2026-10-02 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E4%B8%83%E5%85%AC%E5%8F%B8%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-20261002/MiniMax/MiniMax%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#ai">AI研究偏见自觉</a></li>
+<li><a href="#_1">第一步：核心数据总览</a><ul>
+<li><a href="#_2">可得四年历史与最新半年</a></li>
+<li><a href="#_3">按实际披露周期看增长</a></li>
+<li><a href="#_4">现金、债务与融资续航</a></li>
+</ul>
+</li>
+<li><a href="#_5">第二步：生意本质分析</a></li>
+<li><a href="#_6">第三步：护城河评估</a></li>
+<li><a href="#_7">第四步：逆向思考与风险清单</a></li>
+<li><a href="#_8">第五步：管理层评估</a></li>
+<li><a href="#_9">第六步：行业与文明趋势</a></li>
+<li><a href="#_10">第七步：估值与安全边际</a><ul>
+<li><a href="#_11">当前价格隐含很大商业成功</a></li>
+<li><a href="#dcf101">十年条件DCF：主估值101港元，可信度低</a></li>
+<li><a href="#ps">三年股权PS情景：退出价格与今天价值分开</a></li>
+</ul>
+</li>
+<li><a href="#_12">第八步：最终决策与行动清单</a></li>
+<li><a href="#ai_1">AI分析置信度与投资确定性</a></li>
+<li><a href="#_13">数据来源与审计记录</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>研究与资料截止：2026-10-02｜已核实2026年1月9日在港交所上市，现简称MINIMAX-W｜财务截至2026-06-30，完整中报9月30日发布｜参考股价：10月2日收盘242.80港元，腾讯16:08:16 HKT及香港01收市报道交叉确认｜9月末总股本352,480,183股，含全部A/B股｜总市值855.82亿港元，约109.08亿美元｜TTM股权PS 66.04倍。汇率使用9月30日中间价交叉换算1美元=7.845926港元。</p>
+</blockquote>
+<p>MiniMax的商业价值在于把模型能力转成全球用户和企业愿意付费的产品。当前投资问题是收入高速增长后，能否留下足以覆盖训练、推理、设备和融资稀释的每股现金流。</p>
+<h2 id="ai">AI研究偏见自觉</h2>
+<p>信息丰富度评级：B，客户经济性接近C。已上市、有年度与半年度报表，收入、融资和股本可以核查；但分部毛利、企业净收入留存、单位推理成本、重大客户贡献和模型真实生产成功率披露不足。AI研究局限：技术发布数量和评测成绩容易被误读为经济护城河；估值高度依赖尚未发生的现金转正。</p>
+<ul>
+<li>[x] 先核验上市状态，不再按“私营AI公司估值”处理。</li>
+<li>[x] ARR与已确认收入分开；优先股公允价值变动与经营亏损分开。</li>
+<li>[x] 读取9月30日新发布中报，使用真实经营现金流及设备现金支出。</li>
+<li>[x] 区分经济权益和投票权，并更新9月员工股份增发。</li>
+<li>[x] 不把算术PASS写成盈利路径已验证。</li>
+</ul>
+<hr />
+<h2 id="_1">第一步：核心数据总览</h2>
+<h3 id="_2">可得四年历史与最新半年</h3>
+<p>单位：百万美元。公司没有可比的五年营收历史，2022年尚无收入，不补造2021年。历史经调整净亏损排除了股权激励等项目，不能代替现金消耗。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">2022</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2026上半年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3.460</td>
+<td style="text-align: right;">30.523</td>
+<td style="text-align: right;">79.038</td>
+<td style="text-align: right;">116.573</td>
+</tr>
+<tr>
+<td>毛利</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">-0.854</td>
+<td style="text-align: right;">3.738</td>
+<td style="text-align: right;">20.079</td>
+<td style="text-align: right;">20.813</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">不适用</td>
+<td style="text-align: right;">-24.7%</td>
+<td style="text-align: right;">12.2%</td>
+<td style="text-align: right;">25.4%</td>
+<td style="text-align: right;">17.9%</td>
+</tr>
+<tr>
+<td>IFRS净利润</td>
+<td style="text-align: right;">-73.728</td>
+<td style="text-align: right;">-269.246</td>
+<td style="text-align: right;">-465.238</td>
+<td style="text-align: right;">-1871.617</td>
+<td style="text-align: right;">-357.997</td>
+</tr>
+<tr>
+<td>经调整净利润</td>
+<td style="text-align: right;">-12.150</td>
+<td style="text-align: right;">-89.074</td>
+<td style="text-align: right;">-244.243</td>
+<td style="text-align: right;">-250.856</td>
+<td style="text-align: right;">-293.031</td>
+</tr>
+<tr>
+<td>CFO</td>
+<td style="text-align: right;">-11.019</td>
+<td style="text-align: right;">-64.455</td>
+<td style="text-align: right;">-258.483</td>
+<td style="text-align: right;">-279.641</td>
+<td style="text-align: right;">-318.106</td>
+</tr>
+<tr>
+<td>设备资本支出</td>
+<td style="text-align: right;">0.256</td>
+<td style="text-align: right;">0.697</td>
+<td style="text-align: right;">0.759</td>
+<td style="text-align: right;">0.920</td>
+<td style="text-align: right;">187.626</td>
+</tr>
+<tr>
+<td>简单FCF</td>
+<td style="text-align: right;">-11.275</td>
+<td style="text-align: right;">-65.152</td>
+<td style="text-align: right;">-259.242</td>
+<td style="text-align: right;">-280.561</td>
+<td style="text-align: right;">-505.732</td>
+</tr>
+<tr>
+<td>现金及等价物</td>
+<td style="text-align: right;">4.691</td>
+<td style="text-align: right;">206.295</td>
+<td style="text-align: right;">288.912</td>
+<td style="text-align: right;">507.621</td>
+<td style="text-align: right;">930.905</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf">2025年报</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf">招股书历史财务</a>、<a href="https://stockanalysis.com/quote/hkg/0100/financials/">StockAnalysis损益</a>、<a href="https://stockanalysis.com/quote/hkg/0100/financials/cash-flow-statement/">现金流</a>、<a href="https://m.etnet.com.hk/www/eng/stocks/realtime/quote_ci_cashflow.php?code=100">经济通现金流</a>。2026H1现金流和设备支出来自9月30日完整中报，第三方现金流页仍为空，属于已取得原件、尚缺独立第二源的关键缺口。</p>
+<p>2026H1 IFRS净亏损有所收窄，但研发开支296.870百万美元高于毛利20.813百万美元，经营经济性离盈利仍远。2025巨额优先股重估损失主要是非现金；它应从分析经营表现时剥离，但不能因此忽略真实研发、推理费、股权激励及设备投入。本期经调整净亏损比上年同期138.735百万美元扩大。<a href="https://www.minimax.io/news/minimax-announces-first-half-2026-financial-results-1787744160">官方半年业绩</a></p>
+<h3 id="_3">按实际披露周期看增长</h3>
+<p>公司没有披露完整四季度分部损益，因此下表使用年度及半年度实绩，2025下半年由全年减上半年推算；未将ARR填成季度收入。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目，百万美元</th>
+<th style="text-align: right;">2025上半年</th>
+<th style="text-align: right;">2025下半年，推算</th>
+<th style="text-align: right;">2026上半年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI原生产品收入</td>
+<td style="text-align: right;">21.223</td>
+<td style="text-align: right;">31.857</td>
+<td style="text-align: right;">42.644</td>
+</tr>
+<tr>
+<td>开放平台及企业服务收入</td>
+<td style="text-align: right;">9.206</td>
+<td style="text-align: right;">16.752</td>
+<td style="text-align: right;">73.929</td>
+</tr>
+<tr>
+<td>总收入</td>
+<td style="text-align: right;">30.429</td>
+<td style="text-align: right;">48.609</td>
+<td style="text-align: right;">116.573</td>
+</tr>
+<tr>
+<td>毛利</td>
+<td style="text-align: right;">3.685</td>
+<td style="text-align: right;">16.394</td>
+<td style="text-align: right;">20.813</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">12.11%</td>
+<td style="text-align: right;">33.73%</td>
+<td style="text-align: right;">17.85%</td>
+</tr>
+</tbody>
+</table></div>
+<p>开放平台/企业收入成为主要来源，占本期63.4%；中国大陆外收入占60.8%。增长主要由调用量、付费用户和Token套餐驱动。平台兼有个人开发者和企业客户，不能把整项收入都称“大企业合同收入”。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf">中期公告</a>、<a href="https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820">路透社交叉核验</a></p>
+<p>半年毛利率同比改善，环比却从33.73%下降到17.85%。二者并不矛盾。公司未披露足够的分部成本，不能据此计算API真实毛利率；价格变化、扩容、服务结构均可能影响结果。真正需要跟踪的是新增收入带来的毛利是否能覆盖新增训练和履约投入。</p>
+<p>八月业绩会披露ARR超过8亿美元。ARR是当期收入速度年化或公司定义的运行率，既不是2026年已实现收入，也不是同等稳定性的一年合同。按量API、套餐额度、折扣和用户迁移都会影响下月兑现。本报告只把ARR当需求领先信号，不拿它替代TTM165.182百万美元收入。<a href="https://www.webull.com/news/15472214899246080">业绩会报道</a></p>
+<h3 id="_4">现金、债务与融资续航</h3>
+<p>最新现金流改变了研究重点：上半年CFO流出318.106百万美元，设备现金支出187.626百万美元，简单FCF流出505.732百万美元。还有租赁本金及利息0.673百万美元；不应把经调整亏损293.031百万美元当作全部资金消耗。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf">完整中报现金流</a></p>
+<p>资产负债表设备净额74.913百万美元与购置现金187.626百万美元并不相等；预付款、资本支出结算时点、折旧和其他变动都可能造成差别，未取得设备与预付款逐项勾稽前，不把现金支出机械视为当期新增可用GPU价值。经营现金流中预付及其他应收增加135.241百万美元，应付增加112.444百万美元，后者提供短期供应商融资。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>流动性项目</th>
+<th style="text-align: right;">百万美元</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6月末现金等价物</td>
+<td style="text-align: right;">930.905</td>
+<td>报表事实</td>
+</tr>
+<tr>
+<td>一年内定存</td>
+<td style="text-align: right;">14.038</td>
+<td>报表事实</td>
+</tr>
+<tr>
+<td>流动公允价值金融资产</td>
+<td style="text-align: right;">278.347</td>
+<td>并非全部银行活期现金</td>
+</tr>
+<tr>
+<td>银行借款</td>
+<td style="text-align: right;">133.555</td>
+<td>需扣除</td>
+</tr>
+<tr>
+<td>租赁负债</td>
+<td style="text-align: right;">3.868</td>
+<td>诊断披露；现金流已扣租赁，DCF现金调整不再扣本金</td>
+</tr>
+<tr>
+<td>6月末净流动金融资产</td>
+<td style="text-align: right;">1089.735</td>
+<td>现金+定存+流动金融资产-银行借款；租赁作经营成本</td>
+</tr>
+<tr>
+<td>七月融资增量净现金</td>
+<td style="text-align: right;">1195.144</td>
+<td>配售净款+可转债净款-债券本金，统一汇率换算</td>
+</tr>
+<tr>
+<td>估计第三季度现金消耗</td>
+<td style="text-align: right;">252.866</td>
+<td>假设按上半年简单FCF一半，非实际三季报</td>
+</tr>
+<tr>
+<td>10月初模型净现金</td>
+<td style="text-align: right;">2032.013</td>
+<td>估计值，不是公司披露余额</td>
+</tr>
+</tbody>
+</table></div>
+<p>公司6月末所称现金结余1322.8百万美元还含长期金融资产、受限现金等，本报告未全额视作可自由动用资金。七月配售净款94.4371亿港元、可转债净款64.333亿港元，但债券本金65亿港元依旧要偿还。将两项融资全部加成净现金会夸大股东价值。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0716/2026071601147.pdf">融资完成公告</a></p>
+<p>按上半年资金消耗速度简单压力测试，模型净现金约可覆盖2.01年消耗；这是静态预算测试，不是经营预测。未来训练投入和设备采购可能更快，现金账户中也可能有受交易条件限制的资产。公司可能早于耗尽资金时再融资。将可转债按现金偿还处理后，其本金已从净现金扣除；若转股必须同时取消该扣款并增加股份，不能只计其中有利的一面。</p>
+<blockquote>
+<p>段永平式追问：用户每多付一美元，公司最终多留下多少可分配现金？</p>
+</blockquote>
+<hr />
+<h2 id="_5">第二步：生意本质分析</h2>
+<p>这门生意是：个人和企业为更便宜、更快、更好用的文字、语音和视频能力付钱，公司需要不断训练模型并购买推理算力来履约。</p>
+<p>AI原生产品可以形成界面习惯、角色资产和创作流程；开放平台的收入来自API调用及套餐，其复购更依赖任务完成质量、成本和稳定性。客户转换模型接口的表面成本可很低，真正迁移成本来自重新评测、提示和工具适配、监控、安全审核与生产风险。这些成本属于客户工作流，MiniMax能否独占尚未证明。</p>
+<p>利润不是“收入减一次训练费”。每次调用有推理成本，模型迭代持续消耗训练与研发，服务全球客户还需可靠性、合规和售后。三项决定性变量是每单位任务毛利、研发投入相对收入的下降速度、达到正现金流前的融资价格和股份数量。</p>
+<pre><code class="language-mermaid">flowchart LR
+ A[训练和研发投入] --&gt; B[模型能力与单位成本]
+ B --&gt; C[API及原生产品]
+ C --&gt; D[付费使用和客户留存]
+ D --&gt; E[毛利]
+ E --&gt; A
+ F[推理算力与服务费用] --&gt; C
+ G[融资与股权稀释] --&gt; A
+</code></pre>
+<blockquote>
+<p>段永平式追问：如果竞争者价格再下降，公司靠什么留住客户并让毛利增长？</p>
+</blockquote>
+<hr />
+<h2 id="_6">第三步：护城河评估</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>来源</th>
+<th>判断</th>
+<th>可检验条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>品牌/定价权</td>
+<td>中弱</td>
+<td>用户愿意为可靠完成任务付溢价，才是定价权；模型发布热度不是</td>
+</tr>
+<tr>
+<td>转换成本</td>
+<td>API较弱，应用端中等</td>
+<td>企业真实迁移/重评测成本、续费、净收入留存</td>
+</tr>
+<tr>
+<td>网络效应</td>
+<td>未证明强网络效应</td>
+<td>更多用户能否产生合法可复用反馈，并显著改善其他用户体验</td>
+</tr>
+<tr>
+<td>规模经济</td>
+<td>潜在存在</td>
+<td>调度、推理利用率和多模态基础设施复用，须落到毛利而非Token总量</td>
+</tr>
+<tr>
+<td>技术领先</td>
+<td>真实能力有积累，持续性不确定</td>
+<td>同成本真实任务表现与连续版本迭代，不用单一榜单代替</td>
+</tr>
+<tr>
+<td>分发与生态</td>
+<td>正在形成</td>
+<td>外部开发者、工作流集成和原生产品是否降低获客开支并留存</td>
+</tr>
+</tbody>
+</table></div>
+<p>过去几年，公司从研究团队变成具备全球产品与收费平台的组织，经济护城河在建设中。开放模型可扩大使用和开发者基础，同时也降低接口绑定；模型开源或开放权重不意味着所有版本都无限制商业使用。本报告未重新核查每个最新版本的许可证全文，不依据“开源”标签推导永久分发优势。</p>
+<p>十年竞争优势应来自“同等可靠性下更低的总任务成本”，包括调用失败、工具使用和人工复核，而非只比单Token价格。大厂可用其他业务补贴模型，客户也会多模型路由。技术能领先一个发布周期，未必能积累十年的超额利润。</p>
+<blockquote>
+<p>巴菲特式追问：如果对手拿到同类算力和研究人才，这家公司仍拥有什么不易复制的客户资产？</p>
+</blockquote>
+<hr />
+<h2 id="_7">第四步：逆向思考与风险清单</h2>
+<p>最强空方观点：MiniMax可能是一家增长很快、技术不错，但经济利润持续归属于GPU、云平台和分发入口的公司。收入增长并不等于技术投资回报，因为每次迭代都要重新追赶；目前毛利不足覆盖研发，再融资又不断分摊现有股东的未来收益。相对股价高点便宜，不等于相对可实现现金流便宜。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>失败路径</th>
+<th>主观概率等级</th>
+<th>后果</th>
+<th>观察指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型能力被追平，API价格持续下降</td>
+<td>高</td>
+<td>使用增长但毛利不增长</td>
+<td>单位任务净收入、毛利率、续费</td>
+</tr>
+<tr>
+<td>训练和推理投入失控</td>
+<td>中高</td>
+<td>现金转正推迟</td>
+<td>研发、资本开支、预付款与净现金消耗</td>
+</tr>
+<tr>
+<td>大厂渠道/多模型路由挤压</td>
+<td>中高</td>
+<td>客户迁移或失去议价权</td>
+<td>集成入口份额、关键客户留存</td>
+</tr>
+<tr>
+<td>融资窗口关闭</td>
+<td>中</td>
+<td>被迫缩减研发、低价融资或价值归零</td>
+<td>净现金、短债到期与融资条款</td>
+</tr>
+<tr>
+<td>版权、数据和跨境规则</td>
+<td>中</td>
+<td>赔偿、禁令、产品调整</td>
+<td>诉讼进展、律师意见与准备金</td>
+</tr>
+<tr>
+<td>核心人才流失</td>
+<td>中</td>
+<td>迭代质量和速度下降</td>
+<td>核心团队稳定性、持续研发产出</td>
+</tr>
+</tbody>
+</table></div>
+<p>概率仅为定性判断。中报披露存在知识产权争议，仍在进行且未确认准备，并不能据此判定最终无损失；本报告没有对诉讼胜负作法律判断。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf">中报或有事项</a></p>
+<p>历史上基础技术进步常产生大量消费者剩余，但供应商股东回报取决于竞争结构。可用通信设备/互联网基础设施的价格下降机制作类比，不能据此断言AI模型公司必定失败。最可能的分析错误是高估“便宜模型”的永久稀缺性，或低估高质量企业部署产生的真实迁移成本。</p>
+<blockquote>
+<p>芒格式追问：即使AI需求判断正确，我会不会仍因利润归属和稀释判断错误而亏钱？</p>
+</blockquote>
+<hr />
+<h2 id="_8">第五步：管理层评估</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>决策</th>
+<th>已知结果</th>
+<th>评价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>同时做基础模型与原生应用</td>
+<td>获得应用反馈和全球付费用户</td>
+<td>有助快速验证，但多线研发分散资源</td>
+</tr>
+<tr>
+<td>扩大开放平台与Token套餐</td>
+<td>企业/平台收入快速增长</td>
+<td>需求验证较强，毛利和留存验证不足</td>
+</tr>
+<tr>
+<td>2026年上市及七月配售/可转债融资</td>
+<td>显著延长资金续航</td>
+<td>融资执行能力强，必须同时计稀释与偿债</td>
+</tr>
+<tr>
+<td>股权激励</td>
+<td>9月新增3,244,875股，另授新奖励</td>
+<td>能留人才，也是真实每股成本</td>
+</tr>
+</tbody>
+</table></div>
+<p>中报最新可行日期列示闫俊杰经济受益22.65%、控制投票权69.13%；B股通常每股十票。9月末员工新股发行后，若其持股不变，机械更新约22.44%经济权益、68.92%投票权。这是根据已披露股数重算，不代替最新权益申报。创始人兼任主席与CEO，研发战略能保持连续性，小股东难以直接改变资源配置。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf">中报治理章节</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1002/2026100200077.pdf">九月法定月报</a></p>
+<p>员工激励不能只因非现金就全部加回、同时又不计股数增长。现金流模型保留真实研发成本，以未来股份稀释反映权益奖励；若改用含完整SBC的现金等价成本，应避免再扣同一笔稀释。管理层判断力的后续评分应看：相同投入能否创造更高毛利、是否披露客户经济性、资本配置是否改善每股价值。</p>
+<blockquote>
+<p>段永平式追问：如果创始人暂时离开，研究方向、产品节奏和资本纪律是否仍能自行运转？</p>
+</blockquote>
+<hr />
+<h2 id="_9">第六步：行业与文明趋势</h2>
+<p>智能服务成本下降会扩大软件、内容和自动化需求，这是合理长期方向。但便宜智能供给越多，利润越可能集中到有分发、私有工作流、客户授权和责任承担能力的环节。模型厂需要证明自己能在价值链上保留差异化，而不是仅做可随时替代的调用供应商。</p>
+<p>不用咨询机构的大TAM直接估值。作为条件算术，十万家企业每年支付一万美元，可形成十亿美元年收入；它仍需客户获取、留存、实际调用量和价格支持。AI原生产品还受娱乐与创作预算约束，API受企业实际生产回报约束。收入空间不等于利润空间。</p>
+<p>云服务供应商及高性能芯片的价格和可得性影响成本。公司扩大阿里云关联交易上限，说明董事会规划了更高的服务采购需求，但交易上限不是已发生开支，也不是供应商占比。关键客户和供应商本期集中度缺少足够独立数据，不写具体占比。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082601949.pdf">关联交易公告</a></p>
+<blockquote>
+<p>李录式追问：站在十年后，MiniMax是企业生产系统的稳定供应商，还是客户随时替换的价格竞争者？</p>
+</blockquote>
+<hr />
+<h2 id="_10">第七步：估值与安全边际</h2>
+<h3 id="_11">当前价格隐含很大商业成功</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">数值</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>市值，亿港元</td>
+<td style="text-align: right;">855.82</td>
+<td>全部A/B股乘收盘价</td>
+</tr>
+<tr>
+<td>市值，亿美元</td>
+<td style="text-align: right;">109.08</td>
+<td>同一汇率换算</td>
+</tr>
+<tr>
+<td>TTM确认收入，亿美元</td>
+<td style="text-align: right;">1.65182</td>
+<td>全年减上年半年加最新半年</td>
+</tr>
+<tr>
+<td>TTM股权PS</td>
+<td style="text-align: right;">66.04</td>
+<td>不用ARR替代收入</td>
+</tr>
+<tr>
+<td>模型EV/TTM收入</td>
+<td style="text-align: right;">53.73</td>
+<td>减模型净现金，包含Q3烧钱假设，非已披露EV</td>
+</tr>
+<tr>
+<td>PE、PEG、股息收益率</td>
+<td style="text-align: right;">不适用</td>
+<td>亏损，未分红</td>
+</tr>
+</tbody>
+</table></div>
+<p>上市价格165港元不能视为价值锚；公司刚上市，尚无完整估值周期。第三方统计页仍显示313.64百万股，比九月法定352.48百万股少，属于滞后口径，不能用旧股份数抬高每股价值。智谱等同业的PS也受运行率、收入确认、融资与研发模式影响；未建立同期可比经济利润，不因“同行更贵”判定便宜。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0108/2026010801342.pdf">上市分配公告</a>、<a href="https://stockanalysis.com/quote/hkg/0100/statistics/">StockAnalysis统计</a></p>
+<h3 id="dcf101">十年条件DCF：主估值101港元，可信度低</h3>
+<p>亏损公司强行用PE没有意义。采用未来十个12个月周期的现金流路径，以DCF检验当前市值需要多大成熟现金流。现金流已扣真实推理、训练研发、销售管理、税、设备及营运资金，股权激励的经济成本通过股份增加体现，正负现金流均未另扣SBC现金替代费用。预测视为无金融债务的经营现金流，不含借款利息；银行债务和债券本金在起始净现金扣除。租赁租金保留在经营现金支出，资产调整不再扣其本金。训练投入即使会计上可以调整，也不会从现金预算消失。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>未来年度</th>
+<th style="text-align: right;">第1年</th>
+<th style="text-align: right;">第2年</th>
+<th style="text-align: right;">第3年</th>
+<th style="text-align: right;">第4年</th>
+<th style="text-align: right;">第5年</th>
+<th style="text-align: right;">第6年</th>
+<th style="text-align: right;">第7年</th>
+<th style="text-align: right;">第8年</th>
+<th style="text-align: right;">第9年</th>
+<th style="text-align: right;">第10年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基准收入，十亿美元，假设</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">1.35</td>
+<td style="text-align: right;">2.0</td>
+<td style="text-align: right;">2.75</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">4.3</td>
+<td style="text-align: right;">5.2</td>
+<td style="text-align: right;">6.2</td>
+<td style="text-align: right;">7.3</td>
+<td style="text-align: right;">8.5</td>
+</tr>
+<tr>
+<td>基准自由现金流，十亿美元，假设</td>
+<td style="text-align: right;">-0.70</td>
+<td style="text-align: right;">-0.55</td>
+<td style="text-align: right;">-0.25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.75</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.25</td>
+<td style="text-align: right;">1.50</td>
+</tr>
+</tbody>
+</table></div>
+<p>第十年现金率约17.65%，意味着成熟后推理毛利足够高、训练研发和资本支出占比大幅下降。这已经是明显改善路径，不能称为保守延续当前报表。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设/结果</th>
+<th style="text-align: right;">悲观</th>
+<th style="text-align: right;">基准</th>
+<th style="text-align: right;">乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第十年现金流，十亿美元</td>
+<td style="text-align: right;">0.4</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: right;">4.0</td>
+</tr>
+<tr>
+<td>折现率</td>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">15%</td>
+<td style="text-align: right;">13%</td>
+</tr>
+<tr>
+<td>永续增长</td>
+<td style="text-align: right;">2%</td>
+<td style="text-align: right;">3%</td>
+<td style="text-align: right;">3.5%</td>
+</tr>
+<tr>
+<td>每年员工等非现金股份稀释</td>
+<td style="text-align: right;">4%</td>
+<td style="text-align: right;">2%</td>
+<td style="text-align: right;">1.5%</td>
+</tr>
+<tr>
+<td>第十年股数，百万股</td>
+<td style="text-align: right;">521.76</td>
+<td style="text-align: right;">429.67</td>
+<td style="text-align: right;">409.07</td>
+</tr>
+<tr>
+<td>每股现值，港元</td>
+<td style="text-align: right;">6.40</td>
+<td style="text-align: right;">101.43</td>
+<td style="text-align: right;">382.63</td>
+</tr>
+</tbody>
+</table></div>
+<p>表内年度稀释只代表SBC及其他非现金员工奖励，不包含外部现金募资。终值期第十年后假设无净股份增加，后续员工报酬由成熟现金率覆盖；若未来长期仍持续净稀释，应降低终值。模型将每年现金流按当年稀释股数分摊；留存期初净现金按第十年股数保守分摊，避免假装现金今天会分给股东。基准前三年累计现金亏损15亿美元，模型期初净现金约20.32亿美元可以覆盖但余量有限。悲观累计负现金流超过模型起始净现金，必须缩减投入或完成额外融资；表中6.40港元只是在持续经营条件下的算术值，融资失败可接近零。未来外部募资不作为免费流入加入DCF；另有三年融资稀释压力测试。</p>
+<p>基准经营价值约90.34%来自终值，说明所谓“101港元”并不精确，主要是远期盈利假设的压缩表达。主估值取整101港元，用于价格纪律，不能当作确定价值。保留相同亏损期、折现率和稀释，将正现金流按比例放大，当前242.80港元要求第十年现金流约38.57亿美元；若保持基准成熟现金率，需要约218.58亿美元年收入。这里是反向模型要求，不是公司经营目标或预测。</p>
+<h3 id="ps">三年股权PS情景：退出价格与今天价值分开</h3>
+<p>以下为市场可能如何给未来收入定价的压力测试，主估值仍采用现金流。股权PS包含整个权益，不能再加净现金；不派股息。未来股数同时反映员工激励及可能外部融资，均为假设。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">悲观</th>
+<th style="text-align: right;">基准</th>
+<th style="text-align: right;">乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三年后收入，十亿美元</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">2.0</td>
+<td style="text-align: right;">4.0</td>
+</tr>
+<tr>
+<td>退出股权PS</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td>未来股份，百万股</td>
+<td style="text-align: right;">550</td>
+<td style="text-align: right;">440</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr>
+<td>三年后退出股价，港元</td>
+<td style="text-align: right;">34.24</td>
+<td style="text-align: right;">285.31</td>
+<td style="text-align: right;">941.51</td>
+</tr>
+<tr>
+<td>按15%要求回报折为今天价值，港元</td>
+<td style="text-align: right;">22.51</td>
+<td style="text-align: right;">187.59</td>
+<td style="text-align: right;">619.06</td>
+</tr>
+<tr>
+<td>参考价起算三年总回报</td>
+<td style="text-align: right;">-85.90%</td>
+<td style="text-align: right;">+17.51%</td>
+<td style="text-align: right;">+287.77%</td>
+</tr>
+<tr>
+<td>年化回报</td>
+<td style="text-align: right;">-47.95%</td>
+<td style="text-align: right;">+5.52%</td>
+<td style="text-align: right;">+57.11%</td>
+</tr>
+</tbody>
+</table></div>
+<p>基准PS现值187.59港元显著高于DCF101.43港元，差额体现市场愿意为尚未兑现现金流的增长付费。不能把这两个模型平均后掩盖争议。更激进的收入和更高退出倍数能产生很大上行，但目前尚无足够证据把乐观情景当最可能情景。即使股价低于前高，当前价格下基准三年年化约5.52%，仍低于本报告15%的要求回报。</p>
+<blockquote>
+<p>巴菲特式追问：如果五年不能卖，我能承受期间持续烧钱、再次融资，并等待尚未证实的现金转正吗？</p>
+</blockquote>
+<hr />
+<h2 id="_12">第八步：最终决策与行动清单</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结论</th>
+<th>信心</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生意质量</td>
+<td>已有真实付费需求，盈利模型仍在验证</td>
+<td>中</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>模型研发和全球产品化有价值，稳定超额利润未证实</td>
+<td>中低</td>
+</tr>
+<tr>
+<td>管理层</td>
+<td>产品和融资执行强，每股资本回报仍待观察</td>
+<td>中</td>
+</tr>
+<tr>
+<td>最大风险</td>
+<td>低毛利增长与持续资本消耗被ARR叙事掩盖</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>长期趋势</td>
+<td>需求空间大，价值捕获不确定</td>
+<td>中</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>当前242.80港元高于101港元主估值</td>
+<td>低，模型敏感</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论：对以可预测现金流为标准的长期资金，当前价格回避新增。主估值约101港元，条件研究/买入线约66港元。</strong> 66港元来自主估值35%折价；它只有在留存、毛利和资金安全同时改善时才有意义，不是“跌到就买”。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>策略</th>
+<th>行动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓者</td>
+<td>等实际收入兑现、毛利增长和现金转正路径更明确；股价约66港元及以下才重新评估安全边际</td>
+</tr>
+<tr>
+<td>持仓者</td>
+<td>按高波动、可能再融资的成长投资管理，不能当稳定复利资产；是否减持取决于成本、资金与风险预算</td>
+</tr>
+<tr>
+<td>加仓信号</td>
+<td>可验证的企业留存，毛利增长持续快于新增研发/资本开支，融资后每股价值改善，价格达到要求</td>
+</tr>
+<tr>
+<td>减持/退出信号</td>
+<td>ARR上升但确认收入或毛利停滞、资金消耗加速、低价大规模稀释、核心技术/客户优势衰减</td>
+</tr>
+<tr>
+<td>能推翻谨慎结论的证据</td>
+<td>连续披露周期显示单位任务贡献毛利和客户留存稳定，并产生可重复正自由现金流</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>以下为框架模拟，非本人原话。段永平：知道用户为何长期付费，比知道模型多强更重要。巴菲特：可替代供给的价格下降未必惠及股东。芒格：扣掉持续研发、算力和股份稀释再讨论利润。李录：AI改变世界，仍要证明这家公司能留下经济价值。</p>
+</blockquote>
+<h2 id="ai_1">AI分析置信度与投资确定性</h2>
+<p>上市状态、已确认收入、净亏损、融资条款及最新股本置信度高；客户留存、毛利结构、未来现金转正与估值置信度低。技术进步确定性高于单一股票回报确定性。本报告用于学习研究，不构成收益保证。</p>
+<p>需一手验证：企业净收入留存与取消率；平台毛利及单任务成本；Token套餐使用强度；算力预付与187.626百万美元设备现金的勾稽；版权争议进展；员工激励和融资后的每股权益；模型在真实工作流中的稳定性。这些问题对投资判断的重要性高于再增加一份榜单。</p>
+<h2 id="_13">数据来源与审计记录</h2>
+<p>官方上市、年报、中报及九月月报均已live复核，主要PDF及提取文本保存在“证据”。财务用原件加StockAnalysis/经济通/路透交叉；AAStocks相关页抓取失败，无适用Macrotrends ADR财务替代，未假称完成指定站点验证。汇率来自<a href="https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760">SAFE</a>及<a href="https://finance.sina.com.cn/jjxw/2026-09-30/doc-initqkpm5764738.shtml">同日央行授权公告转载</a>。<a href="https://qt.gtimg.cn/q=hk00100">腾讯行情</a>与<a href="https://global.hk01.com/财经快讯/60395691/港股第4季开局无北水-全日泻640点失两万四-金融股重伤多泻逾5">香港01收市报道</a>核验242.80港元。</p>
+<p>关键双源：2025收入79.038/79.04百万美元；IFRS亏损1871.617/1872百万美元；2026H1收入116.573/116.6百万美元、净亏损357.997/358百万美元；现金930.905/930.91百万美元；九月股本352,480,183/352,480,183股，误差均小于1%。市值工具原始摘要：计算85.58B HKD，报告85.58B HKD，偏差0.00%，通过。金融工具的默认交叉验证阈值2%，本研究另按1%检查。原始输出见<a href="../files/reports/%E4%B8%83%E5%85%AC%E5%8F%B8%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-20261002/MiniMax/financial-rigor.txt">financial-rigor.txt</a>。</p>
+<p>最新H1现金流、设备支出、管理层权益等仍有独立第二源缺口，明确保留研究草稿的来源限制。Decimal模型与report_audit抽检不代表已确认完整准出；详见<a href="../r/bed84dd399fd.html">审计状态.md</a>。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/757a1bf24e42.html">财务表</a><div class="meta">2026-10-18 · 底稿</div></li><li><a href="../r/60185b012dc8.html">美团研究报告审计说明</a><div class="meta">2026-10-18 · 底稿</div></li><li><a href="../r/9481670cb96a.html">财务表</a><div class="meta">2026-10-18 · 底稿</div></li><li><a href="../r/af0c558fc32c.html">快手研究报告审计说明</a><div class="meta">2026-10-18 · 底稿</div></li><li><a href="../r/bd228947ea8c.html">贵州茅台（600519.SH）研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/99a28d2b4dd0.html">茅台核查边界</a><div class="meta">2026-10-02 · 底稿</div></li><li><a href="../r/92482cf26772.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/f8e97ab370cf.html">审计边界与复算记录</a><div class="meta">2026-10-02 · 底稿</div></li><li><a href="../r/245b47c4d8af.html">美团（03690.HK）研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/88eef679e251.html">来源登记</a><div class="meta">2026-10-02 · 底稿</div></li><li><a href="../r/c01896f92762.html">泡泡玛特（9992.HK）研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/2949ea349931.html">泡泡玛特研究核验状态</a><div class="meta">2026-10-02 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

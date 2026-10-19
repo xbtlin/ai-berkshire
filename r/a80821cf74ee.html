@@ -1,0 +1,256 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>快手：五情景赔率表与分批建仓框架 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/快手/index.html">快手</a></div><h1>快手：五情景赔率表与分批建仓框架</h1><div class="meta"><a href="../companies/快手/index.html">快手</a> ｜ 2026-08-27 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B-%E8%B5%94%E7%8E%87%E8%A1%A8%E4%B8%8E%E5%88%86%E6%89%B9%E5%BB%BA%E4%BB%93%E6%A1%86%E6%9E%B6-20260827.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">零、本文的定位</a></li>
+<li><a href="#_2">一、五情景赔率表</a></li>
+<li><a href="#_3">二、凯利公式：输出与失效</a></li>
+<li><a href="#_4">三、时间：赔率表之外的第四个变量</a></li>
+<li><a href="#_5">四、分批建仓框架</a></li>
+<li><a href="#_6">五、红线清单</a><ul>
+<li><a href="#_7">辅助观察项</a></li>
+</ul>
+</li>
+<li><a href="#_8">六、立场</a></li>
+<li><a href="#_9">数据来源</a></li>
+</ul>
+</div>
+</details><article><p><strong>基准日：2026-08-27 | 股价与市值基准：2026-08-24 收盘 33.02 港元、1,428.7 亿港元（43.3 亿股）| 汇率：1 HKD = 0.8573 CNY，1 USD = 7.8 HKD</strong></p>
+<p><strong>一句话结论：期望回报 +41.1%，但凯利公式在此给出 313% 的荒谬输出——那是净现金托底制造的数学幻觉，不是可执行的仓位。真实的约束有三条：赢的门槛比一级市场价高 55%、赢的时点不由公司控制、下行深度取决于一个无法事前分辨的假设。因此结论是按期权分三批建仓、总仓位设上限，而不是按低市盈率重仓。</strong></p>
+<hr />
+<h2 id="_1">零、本文的定位</h2>
+<p>本目录《可灵折价的三个前提》（20260825）解决"减数是否成立"，《AI 赌注双向推演》（20260827）解决"两端各值多少钱"。<strong>本文是决策输出：把前两份的推演结果收敛成赔率表、检验凯利公式在此处是否可用、并给出与可证伪节点绑定的建仓节奏。</strong></p>
+<p>推演过程不在此重复，相关数据的一手出处见文末。</p>
+<hr />
+<h2 id="_2">一、五情景赔率表</h2>
+<p>估值构件（单位：亿港元）：净现金 1,095.7（可动用资金 1,213 亿人民币减有息借款 273.62 亿人民币）｜主业经调整净利 239（剔除可灵亏损后约 205 亿人民币）｜可灵按普通股口径计入。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th style="text-align: right;">可灵归属</th>
+<th style="text-align: right;">主业</th>
+<th style="text-align: right;">净现金</th>
+<th style="text-align: right;">折价</th>
+<th style="text-align: right;">合计</th>
+<th style="text-align: right;"><strong>回报</strong></th>
+<th style="text-align: right;">概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 真赌赢</strong></td>
+<td>IPO 定价 ≥ 280 亿美元</td>
+<td style="text-align: right;">1,354</td>
+<td style="text-align: right;">1,434（6 倍）</td>
+<td style="text-align: right;">1,095.7</td>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">3,107</td>
+<td style="text-align: right;"><strong>+117%</strong></td>
+<td style="text-align: right;">25%</td>
+</tr>
+<tr>
+<td><strong>B 灰色地带</strong></td>
+<td>IPO 定价 180–280 亿美元，触发回购博弈</td>
+<td style="text-align: right;">1,112</td>
+<td style="text-align: right;">1,434</td>
+<td style="text-align: right;">1,095.7</td>
+<td style="text-align: right;">30%</td>
+<td style="text-align: right;">2,549</td>
+<td style="text-align: right;"><strong>+78%</strong></td>
+<td style="text-align: right;">20%</td>
+</tr>
+<tr>
+<td><strong>C 折价不收敛</strong></td>
+<td>上市延后，主业分母持续收缩</td>
+<td style="text-align: right;">815</td>
+<td style="text-align: right;">1,195（5 倍）</td>
+<td style="text-align: right;">1,095.7</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">1,553</td>
+<td style="text-align: right;"><strong>+9%</strong></td>
+<td style="text-align: right;">30%</td>
+</tr>
+<tr>
+<td><strong>D 回购触发</strong></td>
+<td>牌照死线未办结，快速止损</td>
+<td style="text-align: right;">319</td>
+<td style="text-align: right;">1,195</td>
+<td style="text-align: right;">767.7（扣 328 回购）</td>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">1,369</td>
+<td style="text-align: right;"><strong>−4%</strong></td>
+<td style="text-align: right;">15%</td>
+</tr>
+<tr>
+<td><strong>E 拖延止损</strong></td>
+<td>持续投入三年叠加回购触发</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">900</td>
+<td style="text-align: right;">−142（转为净负债）</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">758</td>
+<td style="text-align: right;"><strong>−47%</strong></td>
+<td style="text-align: right;">10%</td>
+</tr>
+</tbody>
+</table></div>
+<pre><code>期望回报 = 0.25×117 + 0.20×78 + 0.30×9 + 0.15×(−4) + 0.10×(−47) = +41.1%
+</code></pre>
+<p><strong>关于 A 档的 280 亿美元门槛</strong>：投资者投入 30 亿美元，按回购条款（原始投资价格加年化 8% 单利）五年可得 42 亿美元；对应 IPO 后约 15% 持股，需 280 亿美元估值方使上市优于回购。叠加"持有超 50% 认购金额的投资者对重大事宜拥有惯常同意权"，该门槛具备执行力。<strong>因此 B 档虽名义上市，实为回购博弈的灰色地带，不能计为胜局。</strong></p>
+<hr />
+<h2 id="_3">二、凯利公式：输出与失效</h2>
+<pre><code>胜方（A+B+C）  p = 75%，平均赢幅 b = 61.8%
+负方（D+E）    q = 25%，平均输幅 a = 21.2%
+
+f* = p/a − q/b = 0.75/0.212 − 0.25/0.618 = 3.13
+</code></pre>
+<p><strong>输出为 313%，即三倍杠杆满仓。这个数字本身就是公式在此失效的证据。</strong></p>
+<p>失效根源在于下行被净现金压得过浅。凯利对下行假设极度敏感：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设的真实下行</th>
+<th style="text-align: right;">凯利仓位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>−21%（净现金完全托底）</td>
+<td style="text-align: right;"><strong>313%</strong></td>
+</tr>
+<tr>
+<td>−35%（账面净资产 822.73 亿人民币构成地板）</td>
+<td style="text-align: right;">174%</td>
+</tr>
+<tr>
+<td>−50%（净现金部分不可动用）</td>
+<td style="text-align: right;">110%</td>
+</tr>
+<tr>
+<td>−70%（拖延止损叠加主业塌陷）</td>
+<td style="text-align: right;">67%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>从 −21% 到 −70%，仓位相差 4.7 倍，而这两个数字之间没有可靠的事前分辨手段。凯利不是在给出答案，而是把假设放大成一个看起来精确的数字。</strong></p>
+<p>其三项前提在本案中均不成立：</p>
+<ol>
+<li><strong>概率估不准</strong> —— 280 亿美元门槛能否达到属于纯粹未知，而非可估计的频率</li>
+<li><strong>不可重复</strong> —— 一次性下注、五年见分晓，无法依靠大数定律收敛</li>
+<li><strong>结果不独立</strong> —— AI 板块系统性回调时，可灵估值、主业广告、IPO 窗口三个假设会同时失效</li>
+</ol>
+<p><strong>结论：凯利可用于检验赔率结构是否有利（此处结论为有利），不可用于确定仓位。</strong></p>
+<hr />
+<h2 id="_4">三、时间：赔率表之外的第四个变量</h2>
+<pre><code>+117% 兑现于 3 年    → 年化 29.3%
++117% 兑现于 5 年    → 年化 16.8%
++117% 兑现于 5.3 年  → 年化 15.9%（按 2031-10-30 死线）
++78%  兑现于 5 年    → 年化 12.2%
+</code></pre>
+<p><strong>同一个判断、同样正确，兑现时点从 3 年推到 5 年，年化折损接近一半。</strong></p>
+<p>更需注意的是：公告条款为"最迟上市日期前或 2031 年 10 月 30 日（以较早者为准）"，而<strong>"最迟上市日期"的具体日期公告未予披露</strong>。因此上表按 2031 年折算的年化数据属于偏乐观口径，真实时点可能更早（有利），但当前不可测。</p>
+<p><strong>任何以年化收益率为目标的持仓，都必须把这个不可测性计入。</strong></p>
+<hr />
+<h2 id="_5">四、分批建仓框架</h2>
+<p><strong>总仓位上限 8%–12%，分三批，与可证伪节点绑定。</strong></p>
+<p>设置上限的理由不是下行深，而是：<strong>未来 12 个月内有两个决定性节点会依次揭晓，而等待期间的持有成本仅为约 4% 的股东回报率。用时间换信息，优于当前一次性押注。</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>批次</th>
+<th>触发条件</th>
+<th>建仓比例</th>
+<th>该节点消除的不确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>第一批</strong></td>
+<td>即期</td>
+<td>上限的 1/3</td>
+<td>锁定当前 53%–54% 折价的安全边际</td>
+</tr>
+<tr>
+<td><strong>第二批</strong></td>
+<td>2026-12-29 增资交割完成</td>
+<td>再加 1/3</td>
+<td>可灵这个减数由"一份合同"转为"一笔资产"</td>
+</tr>
+<tr>
+<td><strong>第三批</strong></td>
+<td>约 2027 年年中，牌照三项办结</td>
+<td>补足至上限</td>
+<td><strong>解除唯一同时打击资产端与负债端的风险</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>第三批的节点最为关键</strong>：海外运营公司 100% 股权收购、增值电信业务经营许可证、AI 大模型及／或算法备案——三项均为行政审批，不完全由公司控制，且未在最迟付款日起九个月内办结即触发回购权。</p>
+<hr />
+<h2 id="_6">五、红线清单</h2>
+<p>按杀伤力排序。触发即减仓或清仓，不参考当期估值：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>红线</th>
+<th>后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>增资交割告吹或大幅缩水</strong>（2026-12-29 前）</td>
+<td>减数直接蒸发，全部推演失效</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>九个月牌照死线未办结</strong>（约 2027 年年中）</td>
+<td>快手承担约 42 亿美元连带责任，可灵估值锚归零重来</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>可灵年化收入运行率增速跌破 100%</strong></td>
+<td>280 亿美元门槛无望，A 档出局，赔率结构塌陷一半</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>资本开支不降反升且上市无进展</strong></td>
+<td>止损纪律失效，这是通往 E 档的唯一路径</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>线上营销服务收入转负</strong>（当前 +4.4%，上季 +9.3%）</td>
+<td>主业分母开始塌，C 档向 E 档滑落</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_7">辅助观察项</h3>
+<ul>
+<li>收入分成成本占收入比是否首次回落（当前 34.7%，已连升五季）</li>
+<li>可灵是否被单列为可呈报分部（愿披露成本毛利即说明单位经济性经得起看）</li>
+<li>一级市场后续定价（Pre-IPO 轮或老股转让）相对 280 亿美元门槛的位置</li>
+<li>折旧兑现节奏（年折旧由年化约 62 亿升至 90–110 亿人民币，2027–28 年充分体现）</li>
+<li>"最迟上市日期"的具体日期一旦披露，须据此重算全部年化测算</li>
+</ul>
+<hr />
+<h2 id="_8">六、立场</h2>
+<p><strong>这不是一只 2 倍市盈率的便宜货，而是一份有明确到期日、有行权门槛、有对手方博弈的期权。</strong></p>
+<p>三句话概括：</p>
+<ol>
+<li><strong>赔率结构是有利的</strong> —— 期望回报 +41.1%，下行有 1,095.7 亿港元净现金实际垫底</li>
+<li><strong>但赢的门槛高于一级市场价 55%，且赢的时点不由公司控制</strong></li>
+<li><strong>凯利算出的 313% 是净现金制造的数学幻觉</strong>，其对下行假设的敏感度（4.7 倍）远超判断能力</li>
+</ol>
+<p><strong>因此：按期权买入，设仓位上限，分三批跟随节点推进；不因主业隐含 2 倍市盈率而按价值股重仓——那是把期权当债券买。</strong></p>
+<hr />
+<h2 id="_9">数据来源</h2>
+<ol>
+<li>快手科技《有关认购、授予回购权及采纳附属公司股份参与计划的须予披露交易及关连交易》（港交所，2026-07-02）：<code>https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0702/2026070204066_c.pdf</code> —— 回购金额条款（原始投资价格加年化 8% 单利、可灵集团连带责任）、投资者同意权、上市死线（最迟上市日期或 2031-10-30 以较早者为准）、九个月牌照死线三项内容、68.33% 持股与 15% 股份激励、可灵 2025 年收入 11 亿元及净亏损 19 亿元、2026 年 3 月年化收入运行率 5.00 亿美元</li>
+<li>快手科技 2026 年中期业绩公告（港交所，2026-08-19）：<code>https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0819/2026081900315_c.pdf</code> —— 三大报表、分部数据、借款附注、其他应付款项</li>
+<li>股价与市值：2026-08-24 收盘，与本目录《可灵折价的三个前提》同基准</li>
+</ol>
+<p><strong>方法说明</strong>：净现金 939.4 亿人民币、有息借款 273.62 亿人民币沿用本目录《可灵折价的三个前提》（20260825）由一手公告重算的结果；可灵普通股口径折让 15%–25%、280 亿美元 IPO 门槛的推导见《AI 赌注双向推演》（20260827）。<strong>本文五情景的概率分配为主观判断，是全文最薄弱的一环</strong>——凯利公式的输出对此高度敏感，读者应代入自己的概率重算，而非直接采用。仓位上限与分批节奏属主观意见，可能是错的，不构成投资建议。</p>
+<p><strong>相关文档</strong>：本目录《快手 AI 赌注双向推演：赌赢与赌输的完整路径》（20260827）、《快手现在是否值得买：可灵折价的三个前提》（20260825）、《快手值多少钱：五年利润推演与下行风险全清单》（20260822）、《快手-资产负债表逐项拆解》（20260822）、《快手 2026Q2 财报深度解读》（20260820）。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2f73e86f63d4.html">快手与可灵：创始人、技术选型、赛道与十年推演</a><div class="meta">2026-10-17 · 研究</div></li><li><a href="../r/b78ea6a95236.html">可灵与快手十年推演（2026-10-17）</a><div class="meta">2026-10-17 · 导读</div></li><li><a href="../r/f80334f8f914.html">快手与可灵：财务与经营证据底稿</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/722f16789334.html">可灵技术与竞争证据：从模型领先到经济护城河</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/8ab3cb0a66e9.html">快手与可灵深度研究报告</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/948672d4f2d6.html">审计说明</a><div class="meta">2026-10-16 · 底稿</div></li><li><a href="../r/1ac5b5717c6b.html">快手与可灵：创始人、组织与治理证据</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/7661a5d37927.html">快手与可灵深度研究 · 2026-10-16</a><div class="meta">2026-10-16 · 导读</div></li><li><a href="../r/29d256651108.html">快手科技（1024.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/207317a7a1f4.html">快手十年后：生态还在不在、为什么还去快手、可灵结局、还能赚多少</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/16ff30b4d9f0.html">快手AI利润模型与核验记录</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/4ac8125172ef.html">快手：AI对未来三年利润的影响与2036年盈利能力</a><div class="meta">2026-09-24 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

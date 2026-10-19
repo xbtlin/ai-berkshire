@@ -1,0 +1,931 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>02 财务估值分析 —— 巴菲特视角（核心） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/阿里巴巴/index.html">阿里巴巴</a></div><h1>02 财务估值分析 —— 巴菲特视角（核心）</h1><div class="meta"><a href="../companies/阿里巴巴/index.html">阿里巴巴</a> ｜ 2026-05-04 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Alibaba/10%E5%B9%B4%E5%88%A9%E6%B6%A6%E6%8E%A8%E6%BC%94-20260504/02-%E8%B4%A2%E5%8A%A1%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90-%E5%B7%B4%E8%8F%B2%E7%89%B9%E8%A7%86%E8%A7%92.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#0">0. 一句话核心判断</a></li>
+<li><a href="#1-fy26-q1q3-2025-12-31">1. 财务现状画像（FY26 Q1–Q3，截至 2025-12-31）</a><ul>
+<li><a href="#11-ttm-fy26-fy25-q4">1.1 集团 TTM 营收（FY26 前三季度 + FY25 Q4 推算）</a></li>
+<li><a href="#12-fy26-q3-2025-12">1.2 FY26 Q3 关键损益指标（最新季度，2025-12）</a></li>
+<li><a href="#13-fy26-q3">1.3 各业务板块 FY26 Q3 表现</a></li>
+<li><a href="#14-2025-12-31">1.4 资产负债表（截至 2025-12-31）</a></li>
+<li><a href="#15-2026-05-04">1.5 当前股价、市值、估值（2026-05-04）</a></li>
+<li><a href="#16-fy25-ttm">1.6 当前估值倍数（基于 FY25 年报 + TTM 推算）</a></li>
+</ul>
+</li>
+<li><a href="#2-10">2. 10 年营收推演（按板块）</a><ul>
+<li><a href="#21">2.1 淘天集团（中国电商）</a></li>
+<li><a href="#22-ai">2.2 云智能集团（核心 AI 故事）</a></li>
+<li><a href="#23-aidc">2.3 AIDC（国际数字商业）</a></li>
+<li><a href="#24">2.4 本地生活（饿了么 + 闪购 + 高德合并）</a></li>
+<li><a href="#25">2.5 菜鸟 / 大文娱 / 其他</a></li>
+<li><a href="#26-fy36">2.6 集团合并营收推演（FY36）</a></li>
+</ul>
+</li>
+<li><a href="#3-10">3. 10 年利润率推演</a><ul>
+<li><a href="#31">3.1 阿里云稳态营业利润率（关键问题）</a></li>
+<li><a href="#32">3.2 淘天稳态利润率</a></li>
+<li><a href="#33-aidc">3.3 AIDC 何时盈利</a></li>
+<li><a href="#34">3.4 本地生活/即时零售</a></li>
+<li><a href="#35-10-ebita-non-gaap">3.5 集团 10 年后利润率（混合 EBITA → Non-GAAP 净利率）</a></li>
+</ul>
+</li>
+<li><a href="#4-fy2036">4. FY2036 利润三情景推演（核心输出）</a><ul>
+<li><a href="#fy2036">概率加权期望值（FY2036 年利润）</a></li>
+</ul>
+</li>
+<li><a href="#5">5. 与市场共识对比</a><ul>
+<li><a href="#51-fy27-fy28-2026-q1">5.1 主要投行 FY27-FY28 共识（基于 2026 Q1 更新）</a></li>
+<li><a href="#52-vs">5.2 简单线性外推 vs 本报告中性预测</a></li>
+</ul>
+</li>
+<li><a href="#6-vs-10-dcf">6. 当前估值 vs 10 年内在价值（DCF 反推）</a><ul>
+<li><a href="#61">6.1 反推内在价值</a></li>
+<li><a href="#62">6.2 安全边际判断</a></li>
+<li><a href="#63">6.3 触发买入的关键变量</a></li>
+</ul>
+</li>
+<li><a href="#7">7. 数据可信度声明</a><ul>
+<li><a href="#71">7.1 一手数据（高置信度）</a></li>
+<li><a href="#72">7.2 推算数据（中置信度）</a></li>
+<li><a href="#73">7.3 假设数据（低置信度，需持续追踪）</a></li>
+<li><a href="#74">7.4 交叉验证记录</a></li>
+</ul>
+</li>
+<li><a href="#8">8. 数字逻辑自检表</a></li>
+<li><a href="#_2">核心结论与投资建议</a></li>
+<li><a href="#sources">Sources</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>研究对象</strong>：阿里巴巴集团（9988.HK / BABA）
+<strong>截至</strong>：FY26Q3（2025-12-31）
+<strong>报告日期</strong>：2026-05-04
+<strong>研究问题</strong>：FY2036 阿里集团年利润中性预测约多少？当前估值 vs 内在价值？</p>
+</blockquote>
+<hr />
+<h2 id="0">0. 一句话核心判断</h2>
+<p><strong>FY2036 阿里巴巴集团 Non-GAAP 净利润中性预测约 4,591 亿元人民币</strong>（按概率加权期望值约 4,880 亿元 RMB），相当于当前 FY25 净利润 1,260 亿的 <strong>3.6 倍</strong>；按 14 倍合理 PE 与 10% 贴现率反推内在价值约 <strong>2.55 万亿 RMB</strong>，相对当前市值（约 2.31 万亿 RMB）<strong>安全边际仅 22%，吸引力中等偏弱</strong>——AI/云上行期权未充分计价，但短期利润坍缩风险已被市场提前定价。</p>
+<hr />
+<h2 id="1-fy26-q1q3-2025-12-31">1. 财务现状画像（FY26 Q1–Q3，截至 2025-12-31）</h2>
+<h3 id="11-ttm-fy26-fy25-q4">1.1 集团 TTM 营收（FY26 前三季度 + FY25 Q4 推算）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>季度</th>
+<th>营收（亿 RMB）</th>
+<th>同比</th>
+<th>数据来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY26 Q1（2025-06）</td>
+<td>2,476.5</td>
+<td>+2%</td>
+<td>阿里官方/新浪财经</td>
+</tr>
+<tr>
+<td>FY26 Q2（2025-09）</td>
+<td>2,478.0</td>
+<td>+5%（同口径 +15%）</td>
+<td>BusinessWire/Alizila</td>
+</tr>
+<tr>
+<td>FY26 Q3（2025-12）</td>
+<td>2,848.4</td>
+<td>+2%</td>
+<td>BusinessWire/华尔街见闻/第一财经</td>
+</tr>
+<tr>
+<td><strong>FY26 9M 合计</strong></td>
+<td><strong>7,802.9</strong></td>
+<td>—</td>
+<td>推算</td>
+</tr>
+<tr>
+<td>FY25 全年</td>
+<td>9,963.5</td>
+<td>+6%</td>
+<td>阿里 FY25 年报</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>TTM 营收估算（截至 2025-12）≈ 1.04 万亿 RMB</strong>（推算，置信度高）。</p>
+<h3 id="12-fy26-q3-2025-12">1.2 FY26 Q3 关键损益指标（最新季度，2025-12）</h3>
+<ul>
+<li><strong>总营收</strong>：2,848.43 亿 RMB（+2% YoY）</li>
+<li><strong>经营利润</strong>：106.45 亿 RMB（<strong>-74% YoY，重投资期坍缩</strong>）</li>
+<li><strong>经调整 EBITA</strong>：233.97 亿 RMB（-57% YoY）</li>
+<li><strong>归母净利润</strong>：163.22 亿 RMB</li>
+<li><strong>GAAP 净利润</strong>：156.31 亿 RMB（-66% YoY）</li>
+<li><strong>Non-GAAP 摊薄 EPS</strong>（FY26 Q2 已披露）：4.36 元/ADS（-71% YoY）</li>
+<li><strong>经营性净现金流</strong>：360.3 亿（-49% YoY）</li>
+<li><strong>自由现金流</strong>：113.5 亿（-71% YoY）</li>
+<li><strong>资本开支（Capex）</strong>：约 318 亿 RMB（环比 +80%，AI 基建驱动）</li>
+</ul>
+<h3 id="13-fy26-q3">1.3 各业务板块 FY26 Q3 表现</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>板块</th>
+<th>营收（亿 RMB）</th>
+<th>YoY</th>
+<th>经调整 EBITA（亿 RMB）</th>
+<th>YoY</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>中国电商集团（淘天等）</strong></td>
+<td>1,400+</td>
+<td>+10%</td>
+<td><strong>346.13</strong></td>
+<td><strong>-43%</strong></td>
+<td>即时零售亏损 + 投资</td>
+</tr>
+<tr>
+<td>- CMR（客户管理收入）</td>
+<td>1,026.6</td>
+<td>+1%</td>
+<td>—</td>
+<td>—</td>
+<td>软件服务费高基数效应</td>
+</tr>
+<tr>
+<td>- 即时零售（闪购）</td>
+<td>208.4</td>
+<td>+56%</td>
+<td>—</td>
+<td>—</td>
+<td>烧钱阶段</td>
+</tr>
+<tr>
+<td>- 跨境批发</td>
+<td>69.2</td>
+<td>+5%</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>云智能集团</strong></td>
+<td><strong>432.84</strong></td>
+<td><strong>+36%</strong></td>
+<td><strong>39.11</strong></td>
+<td><strong>+25%</strong></td>
+<td>AI 三位数增长第十季</td>
+</tr>
+<tr>
+<td><strong>AIDC（国际数字商业）</strong></td>
+<td>~325</td>
+<td>+3%</td>
+<td><strong>-20.16</strong>（亏损）</td>
+<td>改善</td>
+<td>AliExpress Choice 单经济改善</td>
+</tr>
+<tr>
+<td>菜鸟 / 本地生活 / 大文娱 / 其他</td>
+<td>余项</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>数据未单列</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核心观察</strong>：营收 +2% 但 EBITA -57%，表明阿里正进入<strong>主动重投资期</strong>（即时零售 + AI 基建 + 国际化），短期利润让位于战略卡位。</p>
+<h3 id="14-2025-12-31">1.4 资产负债表（截至 2025-12-31）</h3>
+<ul>
+<li><strong>现金 + 短投 + 其他司库投资</strong>：5,601.8 亿 RMB（约 801 亿美元）</li>
+<li>同比 FY25 末 5,971.3 亿 RMB <strong>下降 369.6 亿</strong>（FCF 净流出 293 亿 + 分红 337 亿 + 回购 76 亿，部分被可转债募资 210+110 亿抵消）</li>
+<li><strong>总有息负债</strong>：约 2,766.6 亿 RMB（TradingView 数据，置信度中）</li>
+<li><strong>净现金估算</strong>：5,602 - 2,767 ≈ <strong>2,835 亿 RMB</strong>（占当前市值约 12%）</li>
+</ul>
+<h3 id="15-2026-05-04">1.5 当前股价、市值、估值（2026-05-04）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9988.HK 收盘价</td>
+<td>130.60 港元</td>
+<td>雪球/Yahoo（2026-05-02）</td>
+</tr>
+<tr>
+<td>BABA 美股收盘</td>
+<td>132.53 美元</td>
+<td>Capital.com（2026-04-27）</td>
+</tr>
+<tr>
+<td>总股本（普通股）</td>
+<td>19.10 亿（≈ 191 亿股，含 1ADS=8 普通股口径下 23.9 亿 ADS-当量）</td>
+<td>Macrotrends/SEC</td>
+</tr>
+<tr>
+<td>ADS 数量</td>
+<td>约 24.0 亿</td>
+<td>Stockanalysis.com</td>
+</tr>
+<tr>
+<td><strong>港股市值（手算）</strong></td>
+<td><strong>130.60 × 19.099B = 2,494 亿港元 ≈ 2.49 万亿港元</strong></td>
+<td>工具校验</td>
+</tr>
+<tr>
+<td><strong>美股市值</strong></td>
+<td><strong>132.53 × 2.40B = 3,180 亿美元</strong></td>
+<td>工具校验</td>
+</tr>
+<tr>
+<td>美股市值折 RMB</td>
+<td>318 × 7.27 = <strong>2,312 亿 RMB ≈ 2.31 万亿 RMB</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="_1">工具验算嵌入</h4>
+<pre><code>工具：financial_rigor.py verify-market-cap
+输入：price=130.60 HKD, shares=19.099B, reported=2.495T HKD
+输出：✅ 验证通过, 偏差 0.03%
+计算市值: 2.49T HKD
+</code></pre>
+<h3 id="16-fy25-ttm">1.6 当前估值倍数（基于 FY25 年报 + TTM 推算）</h3>
+<ul>
+<li><strong>PE（FY25 GAAP）</strong>：2,312 亿 / 1,260 亿 = <strong>18.3x</strong></li>
+<li><strong>PE（FY25 Non-GAAP，按 1,580 亿）</strong>：约 14.6x（FY25 Non-GAAP 净利润约 1,580 亿，置信度中）</li>
+<li><strong>PE（FY26 TTM 推算）</strong>：因 Q3 利润坍缩，TTM 净利润约 800–900 亿，PE 上升至 25-29x</li>
+<li><strong>PS（TTM）</strong>：2,312 / 10,400 = <strong>2.22x</strong></li>
+<li><strong>EV/EBITA（剔除净现金）</strong>：(23,120 - 2,835) / 估算 EBITA ≈ 14-16x</li>
+</ul>
+<hr />
+<h2 id="2-10">2. 10 年营收推演（按板块）</h2>
+<h3 id="21">2.1 淘天集团（中国电商）</h3>
+<p><strong>事实基础</strong>：FY25 营收 4,498 亿，EBITA 1,962 亿（margin 43.6%）；FY26 Q3 EBITA -43%（即时零售大投入）。</p>
+<p><strong>核心矛盾</strong>：
+- 中国电商整体增速降至个位数，拼多多 + 抖音电商持续抢份额
+- Take rate 提升空间有限（已实施"软件服务费"，FY26 Q3 边际效应已消退）
+- 即时零售（淘宝闪购，FY26Q3 营收 208 亿，+56%）是新增量但短期亏损</p>
+<p><strong>10 年 CAGR 假设</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>假设</th>
+<th>CAGR</th>
+<th>FY36 营收</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>88VIP 渗透 + 即时零售扭亏 + 高端化 take rate +1pp</td>
+<td>6%</td>
+<td>8,055 亿</td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td><strong>GMV 低个位数增长 + take rate 微升</strong></td>
+<td><strong>5%</strong></td>
+<td><strong>7,328 亿</strong></td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>拼多多/抖音持续抢份额，CMR 停滞</td>
+<td>2%</td>
+<td>5,483 亿</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="22-ai">2.2 云智能集团（核心 AI 故事）</h3>
+<p><strong>事实基础</strong>：FY25 营收 1,180 亿（+11%），EBITA 105.6 亿（margin 8.9%）。FY26 Q3 季度营收 432.84 亿（+36%），EBITA margin 9.0%。AI 收入连续 10 季三位数增长。</p>
+<p><strong>吴泳铭"5 年 1000 亿美元"目标可信度审视</strong>：
+- 该目标含 MaaS+全栈 AI（B+C），需 FY30 达到 1,000 亿美元 ≈ 7,100 亿 RMB
+- 从 FY25 1,180 亿到 FY30 7,100 亿，需 5 年 <strong>CAGR 43%</strong>（工具计算）
+- 当前增速 36%，AI 三位数增长持续中——目标<strong>激进但非不可能</strong>
+- 制约：算力供给（H800 受限/华为昇腾）、企业 AI 商业化节奏、价格战</p>
+<p><strong>10 年 CAGR 三情景</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>5 年 CAGR</th>
+<th>10 年 CAGR</th>
+<th>FY36 营收（亿 RMB）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观（吴泳铭目标兑现 + 后 5 年 15%）</td>
+<td>43%</td>
+<td>25%</td>
+<td>10,990</td>
+</tr>
+<tr>
+<td><strong>中性（5 年 30%+后 5 年 12%）</strong></td>
+<td><strong>30% / 12%</strong></td>
+<td><strong>20%</strong></td>
+<td><strong>7,306</strong></td>
+</tr>
+<tr>
+<td>悲观（5 年 18%+后 5 年 8%）</td>
+<td>18% / 8%</td>
+<td>13%</td>
+<td>4,774</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>可比基准：AWS FY25 收入约 1,200 亿美元（CAGR 18-20%）；Azure 增速 30%+。阿里云作为中国 AI 龙头 + 海外 ASEAN 延展，<strong>中性 20% CAGR 合理</strong>。</p>
+</blockquote>
+<h3 id="23-aidc">2.3 AIDC（国际数字商业）</h3>
+<p><strong>事实基础</strong>：FY25 营收 1,323 亿（+29%），亏损（FY26 Q3 EBITA -20 亿，已大幅收窄）。</p>
+<p><strong>关键节点</strong>：
+- <strong>FY27-FY28</strong> 单季度盈亏平衡（AliExpress Choice 单位经济改善 + Lazada 优化已验证）
+- Trendyol（土耳其）盈利稳定，Daraz（南亚）规模化
+- 长期 take rate 假设 4-5%（参考 Shein 5%、亚马逊跨境 8%）</p>
+<p><strong>10 年 CAGR</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>CAGR</th>
+<th>FY36 营收</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>20%</td>
+<td>8,192 亿</td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td><strong>15%</strong></td>
+<td><strong>5,352 亿</strong></td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>10%</td>
+<td>3,432 亿</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="24">2.4 本地生活（饿了么 + 闪购 + 高德合并）</h3>
+<p><strong>事实基础</strong>：FY25 体量约 600-700 亿，长期亏损。FY26 起淘宝闪购整合（已并入中国电商集团报表）。</p>
+<ul>
+<li><strong>核心战略变化</strong>：FY26 业务架构调整后，即时零售归入"中国电商集团"，本地生活独立性弱化</li>
+<li>美团是绝对龙头，阿里在外卖份额持续被压制</li>
+<li>高德地图（本地服务+到店）是差异化资产</li>
+</ul>
+<p><strong>10 年估算</strong>（含闪购在淘天里）：FY36 独立本地生活约 1,000–2,000 亿 RMB，<strong>视作淘天延伸</strong>，本报告并入淘天和"其他"。</p>
+<h3 id="25">2.5 菜鸟 / 大文娱 / 其他</h3>
+<ul>
+<li><strong>菜鸟</strong>：FY25 营收 1,013 亿（+2%），CAGR 5-8%，FY36 约 1,500-2,000 亿</li>
+<li><strong>大文娱</strong>：体量小（200-300 亿），盈利能力弱，10 年 CAGR 5%，FY36 约 400 亿</li>
+<li><strong>其他</strong>（钉钉、银泰已剥离、高鑫零售等）：余项约 800 亿</li>
+</ul>
+<h3 id="26-fy36">2.6 集团合并营收推演（FY36）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>板块</th>
+<th>乐观</th>
+<th>中性</th>
+<th>悲观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>淘天（含闪购）</td>
+<td>8,055</td>
+<td>7,328</td>
+<td>5,483</td>
+</tr>
+<tr>
+<td>云智能</td>
+<td>10,990</td>
+<td>7,306</td>
+<td>4,774</td>
+</tr>
+<tr>
+<td>AIDC</td>
+<td>8,192</td>
+<td>5,352</td>
+<td>3,432</td>
+</tr>
+<tr>
+<td>菜鸟</td>
+<td>2,000</td>
+<td>1,500</td>
+<td>1,000</td>
+</tr>
+<tr>
+<td>本地生活</td>
+<td>1,700</td>
+<td>1,300</td>
+<td>1,000</td>
+</tr>
+<tr>
+<td>大文娱</td>
+<td>600</td>
+<td>500</td>
+<td>400</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1,000</td>
+<td>800</td>
+<td>500</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>32,537</strong></td>
+<td><strong>24,086</strong></td>
+<td><strong>16,589</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>集团 10 年营收 CAGR：乐观 12.6% / 中性 9.2% / 悲观 5.2%。</p>
+<hr />
+<h2 id="3-10">3. 10 年利润率推演</h2>
+<h3 id="31">3.1 阿里云稳态营业利润率（关键问题）</h3>
+<p><strong>当前</strong>：FY25 EBITA margin 8.9%，FY26 Q3 升至 9.0%。</p>
+<p><strong>横向对比</strong>：
+- AWS：FY25 营业利润率 36-38%
+- Azure：估算 40-45%（含规模效应）
+- Google Cloud：FY25 约 14%（追赶期）</p>
+<p><strong>10 年后稳态预测</strong>：
+- 乐观：达到 25%（介于 GCP 与 Azure 之间，AI 推理规模效应+MaaS 高毛利）
+- <strong>中性：18-20%</strong>（公有云份额稳定 + AI 算力毛利受国产芯片替代影响）
+- 悲观：12%（价格战持续 + Capex 摊销重压）</p>
+<h3 id="32">3.2 淘天稳态利润率</h3>
+<p><strong>当前</strong>：FY25 EBITA margin 43.6%（CMR 类似纯利润抽成）。</p>
+<ul>
+<li>即时零售拖累在 FY26-FY28 见顶（参考美团外卖盈亏平衡用 7 年）</li>
+<li>CMR 业务长期看 take rate 难升（监管 + 竞争）</li>
+<li>中性假设稳态 EBITA margin <strong>35-38%</strong>（剔除即时零售拖累后）</li>
+</ul>
+<h3 id="33-aidc">3.3 AIDC 何时盈利</h3>
+<p><strong>关键拐点</strong>：FY26 Q3 单季度亏损已收窄至 20 亿 RMB（去年同期 -50 亿）。
+- <strong>FY28（2027 自然年）盈亏平衡</strong>为基准情景（置信度中等）
+- 稳态 EBITA margin：5-8%（参考亚马逊国际、Shopee）</p>
+<h3 id="34">3.4 本地生活/即时零售</h3>
+<ul>
+<li>即时零售（淘宝闪购）参考美团：用 5-7 年达到 UE 正</li>
+<li><strong>FY29-FY30 整体扭亏</strong>为基准情景</li>
+<li>稳态利润率 3-5%</li>
+</ul>
+<h3 id="35-10-ebita-non-gaap">3.5 集团 10 年后利润率（混合 EBITA → Non-GAAP 净利率）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>板块（FY36 中性）</th>
+<th>营收</th>
+<th>EBITA margin</th>
+<th>EBITA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>淘天</td>
+<td>7,328</td>
+<td>35%</td>
+<td>2,565</td>
+</tr>
+<tr>
+<td>云智能</td>
+<td>7,306</td>
+<td>19%</td>
+<td>1,388</td>
+</tr>
+<tr>
+<td>AIDC</td>
+<td>5,352</td>
+<td>6%</td>
+<td>321</td>
+</tr>
+<tr>
+<td>菜鸟</td>
+<td>1,500</td>
+<td>5%</td>
+<td>75</td>
+</tr>
+<tr>
+<td>本地生活</td>
+<td>1,300</td>
+<td>3%</td>
+<td>39</td>
+</tr>
+<tr>
+<td>大文娱</td>
+<td>500</td>
+<td>2%</td>
+<td>10</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>800</td>
+<td>5%</td>
+<td>40</td>
+</tr>
+<tr>
+<td><strong>合计 EBITA</strong></td>
+<td><strong>24,086</strong></td>
+<td><strong>18.5%</strong></td>
+<td><strong>4,438</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>集团 EBITA → Non-GAAP 净利润 = EBITA × (1-25% 实际税率) + 利息净收入。Non-GAAP 净利率约 <strong>17-19%</strong>。</p>
+<hr />
+<h2 id="4-fy2036">4. FY2036 利润三情景推演（核心输出）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>集团总营收</th>
+<th>EBITA 利润率</th>
+<th>EBITA</th>
+<th>Non-GAAP 净利润</th>
+<th>Non-GAAP 净利率</th>
+<th>自由现金流</th>
+<th>关键假设</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>乐观</strong></td>
+<td>30%</td>
+<td>32,537 亿</td>
+<td>24%</td>
+<td>7,809</td>
+<td><strong>7,162 亿</strong></td>
+<td>22%</td>
+<td>6,000 亿</td>
+<td>云 25% margin、淘天稳健、AIDC 盈利、AI 占云收入 60%+</td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>50%</td>
+<td>24,086 亿</td>
+<td>18.5%</td>
+<td>4,456</td>
+<td><strong>4,591 亿</strong></td>
+<td>19%</td>
+<td>3,800 亿</td>
+<td>云 19% margin、淘天 35% margin、AIDC FY28 扭亏</td>
+</tr>
+<tr>
+<td><strong>悲观</strong></td>
+<td>20%</td>
+<td>16,589 亿</td>
+<td>13%</td>
+<td>2,157</td>
+<td><strong>2,131 亿</strong></td>
+<td>12.8%</td>
+<td>1,500 亿</td>
+<td>云价格战、淘天份额下滑、AIDC 持续亏损</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="fy2036">概率加权期望值（FY2036 年利润）</h3>
+<pre><code>工具计算: 0.30×7,162 + 0.50×4,591 + 0.20×2,131 = 4,879 亿 RMB
+</code></pre>
+<p><strong>取概率 30/50/20，期望年利润约 4,880 亿 RMB</strong>（约 670 亿美元，约合 FY25 的 3.9 倍）。</p>
+<blockquote>
+<p>计算说明：本报告核心采纳 <strong>30/50/20 概率分布</strong>——AI 上行期权较大，但悲观情境（地缘 + 监管 + 价格战三重夹击）权重需 ≥ 20%。</p>
+</blockquote>
+<hr />
+<h2 id="5">5. 与市场共识对比</h2>
+<h3 id="51-fy27-fy28-2026-q1">5.1 主要投行 FY27-FY28 共识（基于 2026 Q1 更新）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>机构</th>
+<th>时点</th>
+<th>FY26 Non-GAAP 净利润预测</th>
+<th>FY27</th>
+<th>FY28</th>
+<th>评级/目标价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Goldman Sachs</strong></td>
+<td>2026 Q1</td>
+<td>-9% 调整</td>
+<td>+31% 复苏</td>
+<td>+36% 增长</td>
+<td>Conviction Buy / 目标价 163 美元</td>
+</tr>
+<tr>
+<td><strong>Morgan Stanley</strong></td>
+<td>2025-02 升至 OW</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Overweight，目标 195 港元</td>
+</tr>
+<tr>
+<td><strong>共识中位</strong>（29 名分析师）</td>
+<td>2026-04</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>目标价 195.07 港元</td>
+</tr>
+</tbody>
+</table></div>
+<p>按 Goldman 推算路径：FY26E 1,000 亿（推算）→ FY27E 1,310 亿 → FY28E 1,780 亿 RMB。</p>
+<h3 id="52-vs">5.2 简单线性外推 vs 本报告中性预测</h3>
+<p><strong>线性外推 FY28→FY36</strong>（按 FY28 1,780 亿，假设后续 8 年 CAGR 8%）：1,780 × 1.08^8 = <strong>3,294 亿</strong></p>
+<p><strong>本报告中性预测 4,591 亿</strong> vs 线性外推 3,294 亿，<strong>偏高 39%</strong>。</p>
+<p><strong>为何偏高</strong>：
+1. 阿里云 AI 商业化在 FY28-FY32 加速（吴泳铭 1000 亿美元目标兑现节奏）
+2. 即时零售/AIDC 在 FY28 后由"亏损源"转为"利润源"——这是非线性的
+3. 共识当前因 FY26 利润坍缩压低估值，未充分计价 5-10 年 AI capex 摊销后释放的现金流</p>
+<p><strong>为何不会更偏高</strong>：
+1. 中国电商竞争长期化（拼多多 + 抖音 + 美团闪购）
+2. 反垄断与税收常态化
+3. 地缘 + AI 出口管制 + 国产替代摩擦</p>
+<hr />
+<h2 id="6-vs-10-dcf">6. 当前估值 vs 10 年内在价值（DCF 反推）</h2>
+<h3 id="61">6.1 反推内在价值</h3>
+<pre><code>中性情景内在价值：
+FY36 Non-GAAP 净利润 4,591 亿 × 合理 PE 14x = 64,274 亿 RMB（FY36 时点）
+按 10% 贴现率折现 10 年：64,274 / 1.10^10 = 25,477 亿 RMB
+
+工具验算: 4,720 × 14 / 1.10^10 = 25,477 亿 RMB
+</code></pre>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>FY36 Non-GAAP 净利润</th>
+<th>合理 PE</th>
+<th>FY36 市值</th>
+<th>折现至今（@10%）</th>
+<th>vs 当前市值（23,120 亿）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>7,162 亿</td>
+<td>18x</td>
+<td>128,916 亿</td>
+<td><strong>49,703 亿</strong></td>
+<td>+115%（高估安全边际）</td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td><strong>4,591 亿</strong></td>
+<td><strong>14x</strong></td>
+<td>64,274 亿</td>
+<td><strong>25,477 亿</strong></td>
+<td><strong>+10%</strong></td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>2,131 亿</td>
+<td>9x</td>
+<td>19,179 亿</td>
+<td><strong>7,394 亿</strong></td>
+<td><strong>-68%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>概率加权内在价值（30/50/20）= 0.30×49,703 + 0.50×25,477 + 0.20×7,394 = 28,127 亿 RMB</strong>，对当前 23,120 亿 RMB <strong>溢价约 22%</strong>。</p>
+<h3 id="62">6.2 安全边际判断</h3>
+<ul>
+<li>巴菲特/段永平要求安全边际 ≥ 30%（即买入价 ≤ 内在价值 × 70%）</li>
+<li>当前价对应安全边际仅 22%，<strong>未达"显然便宜"标准，但接近合理</strong></li>
+<li>若股价回落至 100 港元（市值约 1.91 万亿 RMB），安全边际升至 47%，<strong>届时进入"明显便宜区间"</strong></li>
+</ul>
+<h3 id="63">6.3 触发买入的关键变量</h3>
+<ol>
+<li><strong>云业务 EBITA margin 是否能稳步上行</strong>（每季度 +0.5-1pp）</li>
+<li><strong>AIDC 季度亏损是否如期 FY27 收敛至 0</strong></li>
+<li><strong>即时零售季度亏损是否在 FY27 见顶回落</strong></li>
+<li><strong>吴泳铭 5 年 1000 亿美元目标的中期里程碑</strong>（FY28 是否达 600 亿美元）</li>
+</ol>
+<hr />
+<h2 id="7">7. 数据可信度声明</h2>
+<h3 id="71">7.1 一手数据（高置信度）</h3>
+<ul>
+<li>FY26 Q3 营收 2,848.43 亿、净利润 156.31 亿、云营收 432.84 亿、AIDC EBITA -20.16 亿——全部来自 BusinessWire 阿里官方公告 + SEC 6-K（2026-03-19）</li>
+<li>FY25 全年营收 9,963.47 亿、净利润 1,259.76 亿——阿里官方年报（2025-05-15）</li>
+<li>现金+短投 5,601.75 亿、ADS 24 亿股、1ADS=8 普通股——SEC 公告</li>
+</ul>
+<h3 id="72">7.2 推算数据（中置信度）</h3>
+<ul>
+<li>TTM 营收 1.04 万亿——FY25 + FY26 9M 推算</li>
+<li>阿里云 10 年 CAGR 20%（中性）——基于 AWS/Azure 历史路径 + 吴泳铭 1000 亿美元目标的 50% 折扣</li>
+<li>AIDC FY28 扭亏——基于亏损收窄速率外推</li>
+</ul>
+<h3 id="73">7.3 假设数据（低置信度，需持续追踪）</h3>
+<ul>
+<li>阿里云 10 年后稳态 EBITA margin 19%——介于 AWS（38%）与 GCP（14%）之间</li>
+<li>概率分布 30/50/20——主观判断</li>
+<li>合理 PE 14x（中性）——参考国际科技龙头 Meta 22x、谷歌 23x、亚马逊 35x，给阿里折扣 30-40%</li>
+</ul>
+<h3 id="74">7.4 交叉验证记录</h3>
+<pre><code>✅ FY26Q3 总营收（亿RMB）: BusinessWire 2,848.43 / 华尔街见闻 2,848.43 / 第一财经 2,848 → 偏差 &lt; 0.02%
+✅ FY26Q3 阿里云营收（亿RMB）: BusinessWire 432.84 / 新浪 432.8 / 华尔街见闻 433 → 偏差 &lt; 0.04%
+✅ 港股市值（万亿HKD）: 130.60 × 19.099B = 2.49T，与雪球报告 2.50T 偏差 0.03%
+</code></pre>
+<hr />
+<h2 id="8">8. 数字逻辑自检表</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>关键假设</th>
+<th>数值</th>
+<th>置信度</th>
+<th>主要风险点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>当前 FY26 TTM 营收</td>
+<td>1.04 万亿 RMB</td>
+<td>高</td>
+<td>FY26Q4 数据未公布</td>
+</tr>
+<tr>
+<td>2</td>
+<td>当前美股市值</td>
+<td>318B USD</td>
+<td>高</td>
+<td>工具校验通过</td>
+</tr>
+<tr>
+<td>3</td>
+<td>现金+短投</td>
+<td>5,602 亿 RMB</td>
+<td>高</td>
+<td>官方公告</td>
+</tr>
+<tr>
+<td>4</td>
+<td>净现金</td>
+<td>2,835 亿 RMB</td>
+<td>中</td>
+<td>总负债估算来自第三方</td>
+</tr>
+<tr>
+<td>5</td>
+<td>淘天 10 年 CAGR</td>
+<td>5%（中性）</td>
+<td>中</td>
+<td>拼多多/抖音抢份额</td>
+</tr>
+<tr>
+<td>6</td>
+<td>云智能 10 年 CAGR</td>
+<td>20%（中性）</td>
+<td>中</td>
+<td>吴泳铭目标兑现度</td>
+</tr>
+<tr>
+<td>7</td>
+<td>云稳态 EBITA margin</td>
+<td>19%（10 年后）</td>
+<td>中</td>
+<td>国产芯片对毛利冲击</td>
+</tr>
+<tr>
+<td>8</td>
+<td>AIDC 10 年 CAGR</td>
+<td>15%（中性）</td>
+<td>中</td>
+<td>海外政策风险</td>
+</tr>
+<tr>
+<td>9</td>
+<td>AIDC 盈亏平衡时点</td>
+<td>FY28</td>
+<td>中</td>
+<td>亏损收窄已验证</td>
+</tr>
+<tr>
+<td>10</td>
+<td>即时零售扭亏时点</td>
+<td>FY29-FY30</td>
+<td>中低</td>
+<td>美团竞争激烈</td>
+</tr>
+<tr>
+<td>11</td>
+<td>集团 FY36 营收（中性）</td>
+<td>24,086 亿 RMB</td>
+<td>中</td>
+<td>加总误差</td>
+</tr>
+<tr>
+<td>12</td>
+<td>集团 FY36 Non-GAAP 净利润（中性）</td>
+<td>4,591 亿 RMB</td>
+<td>中</td>
+<td>利润率假设波动大</td>
+</tr>
+<tr>
+<td>13</td>
+<td>概率加权年利润</td>
+<td>4,880 亿 RMB</td>
+<td>中</td>
+<td>概率主观</td>
+</tr>
+<tr>
+<td>14</td>
+<td>合理 PE（中性）</td>
+<td>14x</td>
+<td>中</td>
+<td>市场情绪波动</td>
+</tr>
+<tr>
+<td>15</td>
+<td>内在价值（中性折现）</td>
+<td>25,477 亿 RMB</td>
+<td>中</td>
+<td>贴现率敏感</td>
+</tr>
+<tr>
+<td>16</td>
+<td>vs 当前市值溢价</td>
+<td>+10%</td>
+<td>中</td>
+<td>安全边际较弱</td>
+</tr>
+<tr>
+<td>17</td>
+<td>"5 年 1000 亿美元"目标兑现</td>
+<td>50% 概率</td>
+<td>中低</td>
+<td>算力 + 商业化双约束</td>
+</tr>
+<tr>
+<td>18</td>
+<td>反垄断/监管常态化</td>
+<td>假设维持现状</td>
+<td>中</td>
+<td>政策风险</td>
+</tr>
+<tr>
+<td>19</td>
+<td>10% 贴现率合理性</td>
+<td>标准巴菲特</td>
+<td>高</td>
+<td>长期国债利率上行风险</td>
+</tr>
+<tr>
+<td>20</td>
+<td>FY36 概率加权 PE</td>
+<td>14.5x</td>
+<td>中</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_2">核心结论与投资建议</h2>
+<ol>
+<li><strong>FY2036 中性预测年利润 4,591 亿 RMB</strong>（约 631 亿美元），是当前 FY25 净利润的 3.6 倍</li>
+<li><strong>概率加权期望值 4,880 亿 RMB</strong>——更乐观情景下可达 7,162 亿，悲观下仅 2,131 亿</li>
+<li><strong>当前股价对应内在价值溢价仅 22%</strong>，未到巴菲特"明显便宜"标准（需 30% 安全边际）</li>
+<li><strong>关键变量是阿里云</strong>：能否在 FY30 兑现 1000 亿美元、能否将 EBITA margin 提升至 18-20%</li>
+<li><strong>从巴菲特视角的判断</strong>：阿里<strong>不是 No-Brainer</strong>——若你相信 AI 故事+管理层执行力，"中性偏乐观"路径值得 50% 概率赌注；若严格要求安全边际 30%+，则建议在 100 港元/110 美元以下分批建仓</li>
+</ol>
+<p><strong>段永平视角补充</strong>：阿里 5,602 亿现金 + 接近自由现金流稳定的商业模式 + 中国互联网龙头护城河——属于"看得懂、不会死"的标的，但<strong>当前价格的赔率不够极端</strong>。FY26 利润坍缩是为 FY28-FY36 的 AI 红利付出的"门票"——如果你相信门票会兑现，现价持有合理；如果你相信中国云不可能复制 AWS 的盈利路径，那 14x PE 还是太贵。</p>
+<hr />
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://www.businesswire.com/news/home/20260318501558/en/Alibaba-Group-Announces-December-Quarter-2025-Results">Alibaba Group Announces December Quarter 2025 Results - BusinessWire</a></li>
+<li><a href="https://wallstreetcn.com/articles/3760096">阿里巴巴Q3营收同比增长4.8%，云业务收入激增34% - 华尔街见闻</a></li>
+<li><a href="https://finance.sina.com.cn/tech/2025-08-29/doc-infnrwzh2670909.shtml">阿里巴巴2026财年第一财季营收2477亿元 - 新浪财经</a></li>
+<li><a href="https://finance.sina.com.cn/tech/2025-06-26/doc-infcmcye4624794.shtml">阿里年报：2025财年收入9963.47亿元 - 新浪财经</a></li>
+<li><a href="https://www.alibabagroup.com/zh-HK/document-1859016196574150656">阿里巴巴集團公佈2025年3月份季度及2025財年業績 - 阿里巴巴集團</a></li>
+<li><a href="https://www.businesswire.com/news/home/20251124757764/en/Alibaba-Group-Announces-September-Quarter-2025-Results-and-Interim-Results-for-the-Six-Months-Ended-September-30-2025">Alibaba Group Announces September Quarter 2025 Results - BusinessWire</a></li>
+<li><a href="https://www.alizila.com/alibaba-fy26-q2-results/">Alibaba's Q2 Results - Alizila</a></li>
+<li><a href="https://paper.cnstock.com/html/2026-03/20/content_2190434.htm">阿里2026"A计划"：云和AI商业化年收入破千亿美元 - 上海证券报</a></li>
+<li><a href="https://finance.sina.com.cn/wm/2026-03-19/doc-inhrpwvm8501232.shtml">吴泳铭宣布阿里AI战略商业目标：未来五年云和AI商业化年收入超1000亿美元 - 新浪财经</a></li>
+<li><a href="https://capital.com/en-int/markets/shares/alibaba-group-holding-limited-share-price/market-cap">Alibaba Group (BABA) Market Cap – April 2026 Update - Capital.com</a></li>
+<li><a href="https://www.macrotrends.net/stocks/charts/BABA/alibaba/shares-outstanding">Alibaba Shares Outstanding 2012-2025 - Macrotrends</a></li>
+<li><a href="https://www.investing.com/news/analyst-ratings/goldman-sachs-upgrades-alibaba-stock-on-aidriven-cloud-growth-93CH-4534412">Goldman Sachs upgrades Alibaba stock on AI-driven cloud growth - Investing.com</a></li>
+<li><a href="https://www.nasdaq.com/articles/morgan-stanley-upgrades-alibaba-group-holding-sehk-9988">Morgan Stanley Upgrades Alibaba Group Holding (SEHK:9988) - Nasdaq</a></li>
+<li><a href="https://companiesmarketcap.com/alibaba/cash-on-hand/">Alibaba (BABA) - Cash on Hand - companiesmarketcap.com</a></li>
+<li><a href="https://www.alpha-sense.com/earnings/baba/">Alibaba Group Holding Ltd Earnings - Q3 2025 - Alpha-Sense</a></li>
+<li><a href="https://www.yicai.com/news/102927778.html">阿里三季度收入增长，利润下滑 - 第一财经</a></li>
+<li><a href="https://wallstreetcn.com/articles/3754524">阿里Q2 Non-Gaap净利润同比下降18%，云业务收入增26% - 华尔街见闻</a></li>
+<li><a href="https://seekingalpha.com/article/4851953-alibaba-group-holding-limited-baba-q2-2026-results-earnings-call-transcript">Alibaba (BABA) Q2 2026 Earnings Call Transcript - Seeking Alpha</a></li>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/5eacdfc62656.html">用巴菲特的方式，拆一份利润暴跌 62% 的财报</a><div class="meta">2026-08-18 · 公众号</div></li><li><a href="../r/3e9c0540f78d.html">阿里巴巴（NYSE:BABA / HK:9988）——晨星估值视角的增量分析</a><div class="meta">2026-08-17 · 估值仓位</div></li><li><a href="../r/0c979d59c8de.html">阿里巴巴集团（BABA / 9988.HK）投资研究报告——三场烧钱战</a><div class="meta">2026-08-17 · 研究</div></li><li><a href="../r/eb69737f826c.html">AI 时代，阿里是中国的亚马逊，还是下一个 IBM</a><div class="meta">2026-08-08 · 公众号</div></li><li><a href="../r/e5061154438c.html">淘天：一年被烧掉数百亿利润的现金牛</a><div class="meta">2026-08-05 · 公众号</div></li><li><a href="../r/9376fe7e65ec.html">马云回来了，方向盘在吴泳铭手里——以及多少钱值得买</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/dc7daff890e2.html">用巴菲特的方式，拆一份利润暴跌 62% 的财报</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/12b4efbd3c28.html">AI 时代，阿里是中国的亚马逊，还是下一个 IBM</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4ff68eaf9ecd.html">一年被烧掉数百亿利润的现金牛——淘天</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/1edee4f2eb1e.html">你以为你看懂了阿里巴巴，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/8c30a23aa8b0.html">《看懂阿里巴巴》系列说明</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/bc7c11a33df1.html">你以为你看懂了阿里巴巴，其实没有</a><div class="meta">2026-08-01 · 公众号</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

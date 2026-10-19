@@ -1,0 +1,32 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>研究审计说明（2026-09-06） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/MiniMax/index.html">MiniMax</a></div><h1>研究审计说明（2026-09-06）</h1><div class="meta"><a href="../companies/MiniMax/index.html">MiniMax</a> ｜ 2026-09-06 · 导读 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/MINIMAX/%E5%AE%A1%E8%AE%A1-20260906/README.md">GitHub 原文</a></div><article><p>本目录保存原件、复算与随机抽检。报告是研究情景，不是收益承诺。原件PDF与pdftotext文本按文件同名对应。所有取得日期为2026-09-06；价格时点为2026-09-04收盘。汇率是官方中间价，非收盘成交汇率。</p>
+<ul>
+<li><code>financial-rigor.txt</code>：市值、双源收入/归母利润/现金、股本、估值和情景计算。</li>
+<li><code>模型结果.json</code>：完整表达式与工具输出数值；<code>comparison_summary.json</code>：用Decimal独立复算三情景退出价和逐年股息。</li>
+<li><code>基础模型脚本.py</code>、<code>补充模型脚本.py</code>：从仓库根目录运行后者，可复算两家公司（会更新两家本日期审计计算文件）。calc原工具先评估表达式，重要每股估值另以Decimal独立实现复核，未将浮点输出包装为无限精度。</li>
+<li><code>audit-extract.txt</code>：实际运行report_audit extract，seed42；<code>audit-results.json</code>只含可观测事实或可复算数学；<code>audit-assumptions.json</code>记录被抽中的预测输入，未伪造fetched字段。</li>
+<li><code>audit-verdict.txt</code>：工具对11项事实/计算判PASS、零差异警告。此PASS只表示样本数值误差合格，不是事实全覆盖、所有第二源质量一致、未来假设已证实或监管意义的审计。未利用工具对空值跳过仍PASS的行为来掩盖缺口。</li>
+<li><code>抽检脚本.py</code>保存真实读数和来源URL、数学独立实现；不会从报告数值自动填入核验数。模型输入单独核对定义，不假装是外部事实。</li>
+<li>六公司共用行情与同行源见<code>../../六公司研究审计-20260906/market-snapshot.json</code>、<code>tencent-quotes.txt</code>、<code>peer-reference.md</code>和对应工具日志。</li>
+</ul>
+<h2 id="_1">来源与口径</h2>
+<p>原件：</p>
+<ul>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf">2025年报</a>：2022—2025收入毛利、IFRS与调整利润，2024—2025现金流、股东经济及投票结构。</li>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf">招股书</a>：2022—2024现金流与资本开支；正文早期FCF为CFO减设备开支计算，不是官方名为FCF的指标。</li>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf">中期公告</a>：最新收入116.573、净亏损357.997、现金等价物930.905百万美元。完整H1现金流量表未取得。</li>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0903/2026090301230.pdf">8月股本月报</a>：349235308股，A/B分开。已发行总股数不是流通股数。</li>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0716/2026071601147.pdf">7月融资完成</a>：配售及债券净融资。</li>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082601949.pdf">关联交易</a>：云服务额度、融资用途与阿里权益。年度上限不是实际成本。</li>
+</ul>
+<p>第二源：</p>
+<ul>
+<li><a href="https://stockanalysis.com/quote/hkg/0100/financials/">StockAnalysis财务</a>：2025收入79.04、IFRS净亏损1872百万美元；2023毛利-0.85、2023/24亏损-269.25/-465.24；年度CFO及简单FCF。S&amp;P Global数据为独立转录，不是独立审计。</li>
+<li><a href="https://stockanalysis.com/quote/hkg/0100/financials/balance-sheet/">StockAnalysis资产负债</a>：2025现金507.62、最新930.91、2023现金206.3百万美元；股本349.24百万。</li>
+<li><a href="https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820">Reuters独立报道</a>：最新收入116.6、亏损358百万美元，业务拆分。</li>
+<li><a href="https://www.scmp.com/tech/big-tech/article/3365341/minimax-revenue-surges-283-remains-behind-pace-meet-forecast-amid-crowded-ai-race">SCMP</a>：H1毛利率17.9%。</li>
+<li><a href="https://www.webull.com/news/15472214899246080">智通业绩会转述</a>：8月ARR8亿美元；ARR是当时运行率，不是已实现年度收入。</li>
+</ul>
+<p>抽样16项：10项历史/最新事实，1项情景毛利计算，5项模型输入。2022调整亏损12.15百万美元第二源仅找到<a href="https://q.futunn.com/en/feed/115769089130500">富途社区转述</a>，可信度低于Reuters/专业数据商，标记来源质量缺口；不因此否定已取得年报原件，也不称完整高质量双源覆盖。创始人融资后持股/投票比例是保持旧持股数量的参考计算，未获得截至9月的最终受益链重建。H1完整现金流缺口限制资金消耗判断。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/4587c8c773a2.html">MiniMax 创始人访谈研究与结论复核</a><div class="meta">2026-10-18 · 研究</div></li><li><a href="../r/8a072c27bb1d.html">收入增 283%、毛利率 17.9%：MiniMax 卖的是便宜的智能</a><div class="meta">2026-10-18 · 公众号</div></li><li><a href="../r/cf9c268d3d6d.html">MiniMax 深度研究：创始人、技术路线、赛道与十年推演</a><div class="meta">2026-10-17 · 深度系列</div></li><li><a href="../r/c1e706739223.html">MiniMax研究报告：来源、冲突与核验边界</a><div class="meta">2026-10-16 · 底稿</div></li><li><a href="../r/5f320d2574ae.html">MiniMax（00100.HK）研究报告</a><div class="meta">2026-10-16 · 研究</div></li><li><a href="../r/f1f5a85ec474.html">MiniMax（稀宇科技）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/1f005b032732.html">MiniMax（0100.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/1c170ddf04db.html">MiniMax差异化与护城河研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/bcf3b1df7e7e.html">MiniMax差异化与护城河研究核验记录</a><div class="meta">2026-09-06 · 导读</div></li><li><a href="../r/111c8837b826.html">智谱和 MiniMax，半年烧掉了几乎一样多的钱</a><div class="meta">2026-09-01 · 公众号</div></li><li><a href="../r/deb6de91ddf8.html">MiniMax（0100.HK）麦肯锡 7S 组织诊断</a><div class="meta">2026-08-28 · 组织管理</div></li><li><a href="../r/c83f83eef645.html">MiniMax（0100.HK）：给定「8月ARR = 8亿美元」，合理估值是多少</a><div class="meta">2026-08-27 · 估值仓位</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

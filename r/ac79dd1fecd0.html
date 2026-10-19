@@ -1,0 +1,521 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>理想汽车人形机器人能力研究：芯片架构 + 充分条件 + 竞争对比 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/理想汽车/index.html">理想汽车</a></div><h1>理想汽车人形机器人能力研究：芯片架构 + 充分条件 + 竞争对比</h1><div class="meta"><a href="../companies/理想汽车/index.html">理想汽车</a> ｜ 2026-05-19 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%90%86%E6%83%B3%E6%B1%BD%E8%BD%A6/%E7%90%86%E6%83%B3%E6%B1%BD%E8%BD%A6-%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%83%BD%E5%8A%9B%E7%A0%94%E7%A9%B6-20260519.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、动态数据流架构：理想的芯片野心</a><ul>
+<li><a href="#_2">什么是动态数据流架构？</a></li>
+<li><a href="#m100">理想汽车的M100芯片</a></li>
+<li><a href="#_3">芯片主流架构全景</a></li>
+</ul>
+</li>
+<li><a href="#_4">二、人形机器人的充分条件清单</a><ul>
+<li><a href="#_5">核心框架：四层条件体系</a></li>
+<li><a href="#_10">一句话总结</a></li>
+</ul>
+</li>
+<li><a href="#_11">三、四家公司能力对比</a><ul>
+<li><a href="#_12">公司概况</a></li>
+<li><a href="#_17">十维能力对比表</a></li>
+<li><a href="#_18">综合评级</a></li>
+<li><a href="#_19">充分条件达标统计</a></li>
+</ul>
+</li>
+<li><a href="#_20">四、关键发现</a></li>
+<li><a href="#_21">数据来源</a></li>
+</ul>
+</div>
+</details><article><p><strong>研究日期</strong>：2026年5月19日
+<strong>研究方法</strong>：多Agent并行研究（芯片架构 / 人形机器人充分条件 / 四家公司能力对比）</p>
+<hr />
+<h2 id="_1">一、动态数据流架构：理想的芯片野心</h2>
+<h3 id="_2">什么是动态数据流架构？</h3>
+<p>数据流架构（Dataflow Architecture）是一种以<strong>数据可用性驱动计算执行</strong>的处理器架构，与传统冯·诺依曼（Von Neumann）控制流架构形成根本性对立。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>冯·诺依曼架构（控制流）</th>
+<th>数据流架构</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>执行驱动</td>
+<td>程序计数器按顺序取指令</td>
+<td>数据就绪即触发执行，无程序计数器</td>
+</tr>
+<tr>
+<td>并行性</td>
+<td>需编译器/硬件显式发现并行性</td>
+<td>天然暴露并行性，数据依赖关系直接编码</td>
+</tr>
+<tr>
+<td>内存模型</td>
+<td>指令和数据存储在同一内存中</td>
+<td>数据在计算单元之间直接流动</td>
+</tr>
+<tr>
+<td>计算密度</td>
+<td>约98%硅面积用于调度开销</td>
+<td>大部分面积用于实际计算单元</td>
+</tr>
+</tbody>
+</table></div>
+<p>"动态"数据流特指使用内容寻址存储器（CAM）的数据流机器，允许同一指令的多个实例同时存在于执行流水线中。</p>
+<p><strong>核心优势</strong>：天然高并行性、极高计算密度、能效优异、低延迟、天然适合AI数据流模式。</p>
+<p><strong>核心劣势</strong>：可编程性挑战大、通用性不足、软件生态薄弱、调试困难。</p>
+<h3 id="m100">理想汽车的M100芯片</h3>
+<p>值得注意的是，理想汽车在2026年发布了M100芯片，采用"编排式数据流架构"（Orchestrated Dataflow），面向边缘AI推理。这表明理想不仅在造车，还在布局AI芯片——李想提出要成为"全球不超过3家同时布局基座模型、芯片、操作系统、具身智能的公司之一"。</p>
+<h3 id="_3">芯片主流架构全景</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>架构</th>
+<th>计算效率</th>
+<th>能效比</th>
+<th>通用性</th>
+<th>软件生态</th>
+<th>成熟度</th>
+<th>代表</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU</td>
+<td>高</td>
+<td>中</td>
+<td>极高</td>
+<td>极强（CUDA）</td>
+<td>成熟</td>
+<td>NVIDIA Blackwell</td>
+</tr>
+<tr>
+<td>CPU (x86)</td>
+<td>中</td>
+<td>低</td>
+<td>极高</td>
+<td>极强</td>
+<td>成熟</td>
+<td>Intel/AMD</td>
+</tr>
+<tr>
+<td>CPU (ARM)</td>
+<td>中</td>
+<td>高</td>
+<td>高</td>
+<td>强</td>
+<td>成熟</td>
+<td>Apple/高通/AWS</td>
+</tr>
+<tr>
+<td>CPU (RISC-V)</td>
+<td>中高</td>
+<td>高</td>
+<td>高</td>
+<td>弱</td>
+<td>成长期</td>
+<td>Tenstorrent/平头哥</td>
+</tr>
+<tr>
+<td>TPU/专用ASIC</td>
+<td>极高</td>
+<td>极高</td>
+<td>低</td>
+<td>中</td>
+<td>成熟</td>
+<td>Google TPU v7</td>
+</tr>
+<tr>
+<td>数据流</td>
+<td>极高</td>
+<td>极高</td>
+<td>中</td>
+<td>弱</td>
+<td>早期</td>
+<td>SambaNova/Groq/NextSilicon</td>
+</tr>
+<tr>
+<td>存内计算</td>
+<td>理论极高</td>
+<td>理论极高</td>
+<td>低</td>
+<td>极弱</td>
+<td>研究期</td>
+<td>Axelera</td>
+</tr>
+<tr>
+<td>神经形态</td>
+<td>特定场景高</td>
+<td>极高</td>
+<td>极低</td>
+<td>极弱</td>
+<td>早期</td>
+<td>Intel Loihi 2</td>
+</tr>
+<tr>
+<td>晶圆级</td>
+<td>极高</td>
+<td>高</td>
+<td>低</td>
+<td>弱</td>
+<td>早期</td>
+<td>Cerebras WSE-3</td>
+</tr>
+<tr>
+<td>FPGA</td>
+<td>中高</td>
+<td>中高</td>
+<td>高</td>
+<td>中</td>
+<td>成熟</td>
+<td>AMD/Xilinx</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>数据流架构的代表公司</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>产品</th>
+<th>核心特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SambaNova</td>
+<td>RDU（SN50）</td>
+<td>可重构数据流，PyTorch/TF自动映射</td>
+</tr>
+<tr>
+<td>NextSilicon</td>
+<td>Maverick-2</td>
+<td>比Blackwell GPU能效比高4倍，兼容CUDA</td>
+</tr>
+<tr>
+<td>Groq</td>
+<td>LPU（Groq 3）</td>
+<td>确定性数据流，推理能效比约150 tokens/watt（H100的35倍）</td>
+</tr>
+<tr>
+<td>Tenstorrent</td>
+<td>Tensix核心</td>
+<td>RISC-V + 数据流混合，Jim Keller领导</td>
+</tr>
+<tr>
+<td><strong>理想汽车</strong></td>
+<td><strong>M100</strong></td>
+<td><strong>编排式数据流，面向边缘AI推理</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_4">二、人形机器人的充分条件清单</h2>
+<h3 id="_5">核心框架：四层条件体系</h3>
+<h4 id="_6">第一层：不可替代的核心条件（缺一则必败）</h4>
+<p><strong>1. 具身智能/AI大模型能力</strong></p>
+<p>这是人形机器人与传统工业机器人的本质分界线。大模型决定了机器人的通用性——能做多少种任务、能适应多少种环境。更关键的是，AI能力直接驱动数据飞轮：更强的模型 → 更多场景 → 更多数据 → 更强的模型。这是一个"赢者通吃"的正反馈循环。</p>
+<p><strong>2. 场景落地能力（有真实付费客户）</strong></p>
+<p>没有场景就没有数据，没有数据就没有飞轮。Figure能在宝马工厂部署10个月生产3万辆车，这个"场景验证"比任何技术演示都有说服力。</p>
+<p><strong>3. 充足且持续的资金</strong></p>
+<p>人形机器人研发周期长、技术风险高、商业化回报慢。特斯拉有410亿美元现金，Apptronik融了9.35亿美元——入场券就是天量资金。</p>
+<h4 id="_7">第二层：决定竞争优势的关键条件</h4>
+<p><strong>4. 数据飞轮闭环能力</strong></p>
+<p>部署 → 采集数据 → 训练模型 → 提升能力 → 更多部署。特斯拉用Cortex 2.0 + FSD数据 + 工厂部署构建的飞轮，是纯机器人创业公司难以复制的。</p>
+<p><strong>5. 硬件系统集成能力</strong></p>
+<p>不是每个零部件都自研，而是将执行器、传感器、灵巧手、电池等整合为高性能系统。整机良率低于80%的行业现实说明，系统集成是被严重低估的硬能力。</p>
+<p><strong>6. 运动控制 + 感知系统</strong></p>
+<p>端到端延迟低于30毫秒、动态任务完成率超90%是硬指标。</p>
+<h4 id="_8">第三层：决定规模化速度的条件</h4>
+<p><strong>7. 供应链掌控力与量产能力</strong> — 前200台到1000台是建立标准体系最难的阶段。</p>
+<p><strong>8. 能源/续航解决方案</strong> — 当前2-4小时续航远不够，8-12小时是商业化门槛。</p>
+<p><strong>9. 成本控制能力</strong> — 从10-50万美元降至2-5万美元。</p>
+<h4 id="_9">第四层：加速器条件</h4>
+<p><strong>10. 安全认证与标准合规</strong></p>
+<p><strong>11. 产业生态借力能力</strong> — 汽车产业链、AI大模型生态、政策红利。</p>
+<p><strong>12. 跨学科团队深度</strong> — 机械 + 电气 + AI + 制造 + 商业。</p>
+<h3 id="_10">一句话总结</h3>
+<blockquote>
+<p>做人形机器人的充分条件，本质上是"AI能力 × 场景落地 × 资金耐力"三者的乘积，再乘以"数据飞轮"的加速系数。</p>
+</blockquote>
+<hr />
+<h2 id="_11">三、四家公司能力对比</h2>
+<h3 id="_12">公司概况</h3>
+<h4 id="_13">理想汽车 — 起步布局期</h4>
+<ul>
+<li><strong>组织</strong>：2026年1月成立人形机器人团队（郎咸朋负责）和软件本体团队（勾晓菲负责），原自动驾驶的AI评测、数据标注团队转入</li>
+<li><strong>产品</strong>：规划双轮机器人（面向工厂，预计2026年年中发布）+ 双足人形机器人（时间表不明确）</li>
+<li><strong>技术</strong>：核心优势来自自动驾驶技术迁移（AI大模型、感知算法、仿真体系），但机器人专用硬件从零开始</li>
+<li><strong>芯片</strong>：M100芯片采用编排式数据流架构，面向边缘AI推理</li>
+<li><strong>资金</strong>：现金1012亿元，2025年研发投入113亿元（AI占50%），2026年预计120亿元</li>
+<li><strong>战略</strong>：李想定位"全球不超过3家同时布局基座模型、芯片、操作系统、具身智能的公司之一"</li>
+</ul>
+<h4 id="_14">小鹏汽车 — 产品发布、冲刺量产期</h4>
+<ul>
+<li><strong>产品</strong>：IRON人形机器人，身高178cm，82个自由度，手部22个自由度</li>
+<li><strong>硬件</strong>：42组3D打印晶格执行器、全固态电池（重量降30%/能量密度升30%）、1:1还原人手灵巧手</li>
+<li><strong>AI</strong>：3颗自研图灵芯片（总算力2250 TOPS）、720亿参数物理世界大模型、万卡智算集群（10 EFLOPS）</li>
+<li><strong>量产</strong>：2026年底规模量产，首批合作宝钢（工业巡检）</li>
+<li><strong>资金</strong>：现金476.6亿元，2026年物理AI专项70亿元</li>
+</ul>
+<h4 id="_15">小米 — 技术积累、静默迭代期</h4>
+<ul>
+<li><strong>产品</strong>：CyberOne 2022年发布，第三代2025年10月注册著作权但未正式发布</li>
+<li><strong>硬件</strong>：自研300Nm电机、灵巧手重大升级（从特斯拉Optimus团队招募工程师，体积缩小60%）</li>
+<li><strong>AI</strong>：MiMo-Embodied开源，业界首个统一自动驾驶与具身智能的跨具身基座模型，29项Benchmark达SOTA</li>
+<li><strong>量产</strong>：2025年3月官方否认量产消息，已在亦庄工厂做工业场景测试</li>
+<li><strong>资金</strong>：五年研发2000亿元，AI三年600亿元以上</li>
+</ul>
+<h4 id="_16">宇树科技 — 规模商业化、冲刺上市期</h4>
+<ul>
+<li><strong>产品</strong>：H1（高性能）、G1（售价8.5万，贡献60%营收）、R1（3.99万元起）</li>
+<li><strong>硬件</strong>：自研M107电机（扭矩密度120Nm/kg，成本仅海外1/5-1/10），步态调整0.3秒（优于波士顿动力0.5秒）</li>
+<li><strong>商业化</strong>：2025年营收17.08亿（+335%）、扣非净利6亿（+674%）、人形机器人出货5500+台（全球第一，32.4%份额）</li>
+<li><strong>上市</strong>：2026年3月递交科创板IPO，拟募资42亿元，投后估值127亿元</li>
+</ul>
+<h3 id="_17">十维能力对比表</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>能力维度</th>
+<th>理想汽车</th>
+<th>小鹏汽车</th>
+<th>小米</th>
+<th>宇树科技</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 电机/执行器自研</td>
+<td>✗ 起步招聘中</td>
+<td>✓ 晶格执行器+最小谐波关节</td>
+<td>△ 有300Nm电机但迭代慢</td>
+<td>✓ M107电机，业界领先</td>
+</tr>
+<tr>
+<td>2. 灵巧手技术</td>
+<td>✗ 尚在招聘</td>
+<td>✓ 22自由度，1:1人手</td>
+<td>✓ 1:1还原，15万次测试</td>
+<td>△ 项目刚启动</td>
+</tr>
+<tr>
+<td>3. 传感器体系</td>
+<td>△ 自驾传感器可复用</td>
+<td>✓ 自研芯片+全套感知</td>
+<td>△ 有基础</td>
+<td>✓ 激光雷达+多模态</td>
+</tr>
+<tr>
+<td>4. 运动控制算法</td>
+<td>✗ 无公开成果</td>
+<td>✓ 强化学习，应用级控制</td>
+<td>△ 全身协调已验证</td>
+<td>✓ 0.3秒步态，业界最快</td>
+</tr>
+<tr>
+<td>5. 具身智能/大模型</td>
+<td>△ 自驾AI可迁移</td>
+<td>✓ 720亿参数物理大模型</td>
+<td>✓ MiMo-Embodied 29项SOTA</td>
+<td>△ 依赖外部合作</td>
+</tr>
+<tr>
+<td>6. 仿真训练能力</td>
+<td>△ 自驾仿真可迁移</td>
+<td>✓ 万卡集群+数据工厂</td>
+<td>△ 有能力但验证不足</td>
+<td>△ BeamDojo+英伟达合作</td>
+</tr>
+<tr>
+<td>7. 量产制造能力</td>
+<td>✓ 成熟汽车产线</td>
+<td>✓ 汽车产线+机器人专线</td>
+<td>✓ 亦庄工厂已整合</td>
+<td>△ 产能扩建中</td>
+</tr>
+<tr>
+<td>8. 资金实力</td>
+<td>✓ 1012亿，极充裕</td>
+<td>✓ 476亿，充裕</td>
+<td>✓ 五年2000亿研发</td>
+<td>△ IPO募资42亿</td>
+</tr>
+<tr>
+<td>9. 应用场景明确度</td>
+<td>△ 工厂（双轮优先）</td>
+<td>✓ 工业巡检（宝钢）</td>
+<td>△ 工业测试中</td>
+<td>✓ 工业/商业/消费多层</td>
+</tr>
+<tr>
+<td>10. 跨学科团队</td>
+<td>△ 团队在建</td>
+<td>✓ 自驾+机器人+芯片齐备</td>
+<td>✓ 完整团队</td>
+<td>✓ 机器人原生团队</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_18">综合评级</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>综合评级</th>
+<th>核心优势</th>
+<th>核心短板</th>
+<th>阶段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>宇树科技</strong></td>
+<td>最强</td>
+<td>电机自研+成本控制+已规模出货+盈利</td>
+<td>灵巧手起步、AI依赖外部、资金相对小</td>
+<td>商业化领跑，冲刺IPO</td>
+</tr>
+<tr>
+<td><strong>小鹏汽车</strong></td>
+<td>强</td>
+<td>全栈自研（芯片+模型+硬件），仿真最完整</td>
+<td>尚未量产交付，资金不如理想/小米</td>
+<td>技术最全面，量产在即</td>
+</tr>
+<tr>
+<td><strong>小米</strong></td>
+<td>中强</td>
+<td>AI大模型领先（MiMo SOTA）、资金雄厚</td>
+<td>产品迭代慢（4年才三代）、量产推迟</td>
+<td>储备深厚但落地缓慢</td>
+</tr>
+<tr>
+<td><strong>理想汽车</strong></td>
+<td>起步</td>
+<td>资金最充裕（1012亿）、自驾AI底座</td>
+<td>硬件从零、无产品、团队刚组建</td>
+<td>决心明确但执行刚起步</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_19">充分条件达标统计</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>充分条件</th>
+<th>理想</th>
+<th>小鹏</th>
+<th>小米</th>
+<th>宇树</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 具身智能/AI大模型</td>
+<td>△ 可迁移但未验证</td>
+<td>✓</td>
+<td>✓</td>
+<td>△</td>
+</tr>
+<tr>
+<td>2. 场景落地（真实客户）</td>
+<td>✗</td>
+<td>△ 宝钢签约</td>
+<td>✗</td>
+<td>✓ 营收17亿</td>
+</tr>
+<tr>
+<td>3. 充足资金</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>△</td>
+</tr>
+<tr>
+<td>4. 数据飞轮</td>
+<td>✗</td>
+<td>△ 数据工厂在建</td>
+<td>✗</td>
+<td>△ 出货数据回流</td>
+</tr>
+<tr>
+<td>5. 硬件系统集成</td>
+<td>✗</td>
+<td>✓</td>
+<td>△</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>6. 运动控制+感知</td>
+<td>✗</td>
+<td>✓</td>
+<td>△</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>7. 供应链与量产</td>
+<td>△ 汽车产线可借</td>
+<td>△</td>
+<td>△</td>
+<td>△ 扩产中</td>
+</tr>
+<tr>
+<td>8. 续航方案</td>
+<td>△</td>
+<td>✓ 固态电池</td>
+<td>△</td>
+<td>△</td>
+</tr>
+<tr>
+<td>9. 成本控制</td>
+<td>✗</td>
+<td>△</td>
+<td>△</td>
+<td>✓ 成本海外1/5</td>
+</tr>
+<tr>
+<td><strong>达标数（✓）</strong></td>
+<td><strong>1/9</strong></td>
+<td><strong>5/9</strong></td>
+<td><strong>2/9</strong></td>
+<td><strong>5/9</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_20">四、关键发现</h2>
+<ol>
+<li>
+<p><strong>宇树科技是目前唯一实现规模盈利的人形机器人公司</strong>——2025年营收17亿、净利6亿、出货5500台，商业化验证最扎实。</p>
+</li>
+<li>
+<p><strong>小鹏是车企中技术全栈能力最强的</strong>——自研芯片+自研大模型+自研执行器+自建数据工厂，2026年底量产是关键验证节点。</p>
+</li>
+<li>
+<p><strong>小米的"慢"值得警惕</strong>——CyberOne四年未迭代到量产阶段，但MiMo-Embodied模型技术水平极高，一旦落地制造和渠道优势不可忽视。</p>
+</li>
+<li>
+<p><strong>理想汽车入局最晚，差距最大</strong>——2026年初才成立团队，充分条件仅达标1/9。1012亿现金是最大筹码，但机器人硬件（电机、灵巧手、双足控制）不是有钱就能速成的。M100芯片展示了AI芯片野心，但从芯片到完整机器人系统的跨越非常大。</p>
+</li>
+<li>
+<p><strong>灵巧手是各家共同短板</strong>——小鹏和小米相对领先，宇树和理想都还在起步。灵巧手是决定从"能走"到"能干活"的关键瓶颈。</p>
+</li>
+<li>
+<p><strong>理想的核心矛盾</strong>：李想的战略野心（基座模型+芯片+操作系统+具身智能）与执行现实（团队刚建、硬件为零、无产品发布）之间的巨大鸿沟。资金可以缩短时间，但不能消除物理规律——电机设计需要迭代、运动控制需要实测数据、量产需要踩坑。</p>
+</li>
+</ol>
+<hr />
+<h2 id="_21">数据来源</h2>
+<ul>
+<li>理想汽车2025年报、研发体系重组公告</li>
+<li>小鹏2025科技日发布会、2025年报</li>
+<li>小米MiMo-Embodied开源发布、CyberOne著作权注册</li>
+<li>宇树科技IPO招股书、营收数据</li>
+<li>麦肯锡《Humanoid Robots: Crossing the Chasm》</li>
+<li>工信部《人形机器人与具身智能标准体系（2026版）》</li>
+<li>IDC 2026年具身智能十大趋势</li>
+<li>理想汽车M100芯片论文（arXiv: 2604.17862）</li>
+<li>NextSilicon/SambaNova/Groq/Tenstorrent官方资料</li>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/b2f20013a890.html">理想汽车 2026Q2 电话会精读</a><div class="meta">2026-08-27 · 财报</div></li><li><a href="../r/c79e3778d375.html">理想汽车 2026 年中期业绩三大报表解析</a><div class="meta">2026-08-26 · 财报</div></li><li><a href="../r/0a827264beb9.html">理想汽车：Q2 财报前瞻与 8 月增量事实</a><div class="meta">2026-08-24 · 财报</div></li><li><a href="../r/924fda47e4be.html">理想汽车数据底稿（2026-08-01，内部文件不发表不推送）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/5318af96f639.html">李想值不值得托付，多少钱值得买（系列终章）</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/c03a831e4e76.html">用巴菲特方式拆理想的财报</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/bbaab090656f.html">两场豪赌——纯电转型与 AI</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/7440a0c043e8.html">你以为你看懂了理想汽车，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/70fc511c8076.html">《看懂理想汽车》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/98fa6a657d7e.html">理想汽车（Li Auto）投资研究报告</a><div class="meta">2026-06-24 · 研究</div></li><li><a href="../r/012275d6ea94.html">风险、管理层与估值判断</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/029ccc8a62a8.html">三面夹击——华为、比亚迪、小米</a><div class="meta">2026-05-22 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

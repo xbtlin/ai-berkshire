@@ -1,0 +1,361 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>五强争霸与大厂围猎 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/智谱/index.html">智谱</a></div><h1>五强争霸与大厂围猎</h1><div class="meta"><a href="../companies/智谱/index.html">智谱</a> ｜ 2026-07-06 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%99%BA%E8%B0%B1/%E3%80%8A%E7%9C%8B%E6%87%82%E6%99%BA%E8%B0%B1AI%E3%80%8B/03-%E7%AB%9E%E4%BA%89%E6%A0%BC%E5%B1%80-%E4%BA%94%E5%BC%BA%E4%BA%89%E9%9C%B8%E4%B8%8E%E5%A4%A7%E5%8E%82%E5%9B%B4%E7%8C%8E.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">中国大模型赛道的残酷现实</a></li>
+<li><a href="#_2">创业五强：智谱排在什么位置？</a><ul>
+<li><a href="#deepseek">DeepSeek：智谱的头号威胁</a></li>
+<li><a href="#minimax">MiniMax：同赛道的港股竞争</a></li>
+<li><a href="#kimic">月之暗面/Kimi：C端的赢家</a></li>
+</ul>
+</li>
+<li><a href="#_3">大厂围猎：智谱面对的降维打击</a><ul>
+<li><a href="#_4">字节跳动/豆包：流量碾压</a></li>
+<li><a href="#_5">阿里巴巴/通义千问：开源生态的正面对撞</a></li>
+<li><a href="#tob">百度/文心一言：ToB的老对手</a></li>
+</ul>
+</li>
+<li><a href="#token">全球Token消耗份额：智谱在哪里？</a></li>
+<li><a href="#_6">智谱的生态位到底是什么？</a></li>
+<li><a href="#_7">竞争格局的三个判断</a></li>
+<li><a href="#_8">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂智谱AI》系列 · 第 03 篇 · 竞争格局
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">中国大模型赛道的残酷现实</h2>
+<p>大模型是目前中国竞争最惨烈的赛道之一：头上有四座大山压着，旁边有四个估值千亿以上的创业公司虎视眈眈。智谱AI能在哪里杀出来？</p>
+<p>2026年5月，中国大模型赛道已经形成了两个阵营：</p>
+<p><strong>第一阵营：大厂军团</strong>
+- 字节跳动（豆包）、阿里巴巴（通义千问/Qwen）、百度（文心一言）、腾讯（混元）
+- 特点：有钱、有数据、有流量、有场景</p>
+<p><strong>第二阵营：创业五强</strong>
+- DeepSeek、智谱AI、MiniMax、月之暗面（Moonshot/Kimi）、阶跃星辰（StepFun）
+- 特点：技术锐利、估值暴涨、但缺场景和流量</p>
+<p>（来源：36氪、新浪财经、21经济网）</p>
+<hr />
+<h2 id="_2">创业五强：智谱排在什么位置？</h2>
+<p>截至2026年5月，五家创业公司的最新估值和核心数据：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>估值/市值</th>
+<th>核心产品</th>
+<th>技术路线</th>
+<th>商业化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DeepSeek</strong></td>
+<td><strong>~515亿美元</strong></td>
+<td>DeepSeek-V4</td>
+<td>极致性价比、开源</td>
+<td>API为主，价格极低</td>
+</tr>
+<tr>
+<td><strong>智谱AI</strong></td>
+<td><strong>~4,500亿港元（~580亿美元）</strong></td>
+<td>GLM-5.1</td>
+<td>全栈、开源、国产芯片</td>
+<td>ToB+API，ARR 17亿元</td>
+</tr>
+<tr>
+<td><strong>MiniMax</strong></td>
+<td><strong>~3,042亿港元</strong></td>
+<td>MiniMax模型</td>
+<td>成本效率优先</td>
+<td>海内外API+产品</td>
+</tr>
+<tr>
+<td><strong>月之暗面</strong></td>
+<td><strong>~1,000亿+</strong></td>
+<td>Kimi</td>
+<td>长文本、C端产品</td>
+<td>C端+API</td>
+</tr>
+<tr>
+<td><strong>阶跃星辰</strong></td>
+<td>未公开</td>
+<td>Step系列</td>
+<td>多模态</td>
+<td>早期阶段</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：36氪、品玩、新浪财经、各公司公开信息）</p>
+<h3 id="deepseek">DeepSeek：智谱的头号威胁</h3>
+<p>如果只能选一个最值得警惕的对手，答案是<strong>DeepSeek</strong>。</p>
+<p>DeepSeek与智谱的直接对比：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>智谱</th>
+<th>DeepSeek</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>技术水平</td>
+<td>GLM-5.1，第一梯队</td>
+<td>DeepSeek-V4，第一梯队</td>
+</tr>
+<tr>
+<td>开源策略</td>
+<td>MIT全开源</td>
+<td>MIT全开源</td>
+</tr>
+<tr>
+<td>API定价</td>
+<td>中等</td>
+<td><strong>极低</strong>（行业最低档）</td>
+</tr>
+<tr>
+<td>商业化收入</td>
+<td>7.24亿元（2025年）</td>
+<td>预计2026年突破50亿元</td>
+</tr>
+<tr>
+<td>C端产品</td>
+<td>智谱清言（MAU ~838万）</td>
+<td>DeepSeek App（现象级增长）</td>
+</tr>
+<tr>
+<td>融资</td>
+<td>上市融资52亿港元</td>
+<td>长期自有资金，2026年首次传出融资</td>
+</tr>
+<tr>
+<td>团队背景</td>
+<td>清华学术派</td>
+<td>量化基金幻方，工程+算法</td>
+</tr>
+<tr>
+<td>成本控制</td>
+<td>一般</td>
+<td><strong>极致</strong>（"用更少的钱训更强的模型"）</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：各公司公开信息、CNBC、证券时报）</p>
+<p>DeepSeek对智谱构成的威胁是<strong>全方位的</strong>：</p>
+<ol>
+<li><strong>技术上不落后</strong>——DeepSeek-V4的综合能力与GLM-5.1在同一量级</li>
+<li><strong>成本上碾压</strong>——DeepSeek的API定价比智谱低得多，这直接威胁智谱的API收入</li>
+<li><strong>品牌上更强</strong>——DeepSeek在2025年初的"DeepSeek时刻"让它获得了全球关注度，品牌声量远超智谱</li>
+<li><strong>财务上更健康</strong>——DeepSeek背靠量化基金幻方，现金充裕，不急着上市融资</li>
+</ol>
+<p><strong>反方观点</strong>：DeepSeek的优势是"便宜"，但便宜不是永远的护城河。智谱在国产芯片适配（华为昇腾）和政企客户方面有DeepSeek没有的优势——很多政府和国企客户不会选择一家量化基金背景的AI公司，更倾向选择"清华系+国资背景"的智谱。</p>
+<h3 id="minimax">MiniMax：同赛道的港股竞争</h3>
+<p>MiniMax与智谱几乎同期上市港股，市值也在3,000亿港元量级。两者的差异：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>智谱</th>
+<th>MiniMax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型定位</td>
+<td>全栈旗舰</td>
+<td>成本效率优先</td>
+</tr>
+<tr>
+<td>收入结构</td>
+<td>ToB为主（74%）</td>
+<td>ToC和API并重</td>
+</tr>
+<tr>
+<td>海外布局</td>
+<td>218个国家API覆盖</td>
+<td>海外产品（Talkie等）有真实用户</td>
+</tr>
+<tr>
+<td>团队基因</td>
+<td>清华学术</td>
+<td>商汤出身，商业化更强</td>
+</tr>
+</tbody>
+</table></div>
+<p>MiniMax的C端产品（Talkie等）在海外有真实的用户基础，这是智谱不具备的。但在ToB企业服务方面，智谱的客户质量更高（互联网前10中9家选用）。</p>
+<h3 id="kimic">月之暗面/Kimi：C端的赢家</h3>
+<p>Kimi在C端的表现远好于智谱清言——它靠"长文本处理"这个差异化功能切入市场，获得了大量学生和知识工作者。但Kimi在ToB方面远不如智谱。</p>
+<p>两者的竞争重叠度其实不高——<strong>智谱打ToB，Kimi打ToC</strong>，短期内不是直接对手。</p>
+<hr />
+<h2 id="_3">大厂围猎：智谱面对的降维打击</h2>
+<p>创业公司之间的竞争是"同量级拼技术"，大厂的竞争则是<strong>降维打击</strong>。</p>
+<h3 id="_4">字节跳动/豆包：流量碾压</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>智谱清言</th>
+<th>豆包</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MAU</td>
+<td>~838万</td>
+<td><strong>2.27亿</strong></td>
+</tr>
+<tr>
+<td>流量来源</td>
+<td>独立App</td>
+<td>抖音生态（日活7亿+）</td>
+</tr>
+<tr>
+<td>场景</td>
+<td>独立对话</td>
+<td>嵌入短视频、搜索、电商、办公</td>
+</tr>
+<tr>
+<td>模型能力</td>
+<td>GLM-5.1（顶尖）</td>
+<td>字节自研（快速迭代）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>差距是27倍</strong>。这不是智谱"做得不好"——而是在C端，没有流量入口的AI公司几乎不可能赢。</p>
+<h3 id="_5">阿里巴巴/通义千问：开源生态的正面对撞</h3>
+<p>通义千问（Qwen）是智谱在开源领域的最大竞争对手：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>智谱GLM</th>
+<th>通义千问Qwen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开源协议</td>
+<td>MIT</td>
+<td>Apache 2.0</td>
+</tr>
+<tr>
+<td>模型矩阵</td>
+<td>GLM系列</td>
+<td>Qwen系列（更丰富）</td>
+</tr>
+<tr>
+<td>全球Token份额</td>
+<td>与Qwen竞争中</td>
+<td><strong>2.6%</strong>（且快速增长）</td>
+</tr>
+<tr>
+<td>背后资源</td>
+<td>清华+国资</td>
+<td>阿里云（全球第三大云）</td>
+</tr>
+</tbody>
+</table></div>
+<p>通义千问的优势在于：阿里云的全球基础设施可以直接为Qwen提供部署和分发渠道。智谱没有自己的云平台，API需要依赖第三方。</p>
+<h3 id="tob">百度/文心一言：ToB的老对手</h3>
+<p>百度在AI领域布局最早，文心大模型在搜索、自动驾驶（Apollo）、云服务等场景已深度集成。百度的ToB能力和政企关系是智谱的直接竞争。</p>
+<p>但百度近年的市场份额在被侵蚀——"百度掉队"的声音越来越多。智谱在技术代际上（GLM-5.1 vs 文心4.5）可能已经反超百度。</p>
+<hr />
+<h2 id="token">全球Token消耗份额：智谱在哪里？</h2>
+<p>一组来自OpenRouter的全球数据（2026年Q2）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司/模型</th>
+<th>全球周Token消耗份额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>月之暗面/Moonshot</td>
+<td><strong>14.5%</strong></td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td><strong>9.0%</strong></td>
+</tr>
+<tr>
+<td>MiniMax</td>
+<td><strong>4.2%</strong></td>
+</tr>
+<tr>
+<td>通义千问/Qwen</td>
+<td><strong>2.6%</strong></td>
+</tr>
+<tr>
+<td>智谱/GLM</td>
+<td>未单独披露，与上述竞争中</td>
+</tr>
+</tbody>
+</table></div>
+<p>（来源：Digital Applied中国AI模型Q2 2026报告）</p>
+<p><strong>注意</strong>：OpenRouter主要反映全球开发者市场，不包含中国国内的企业私有部署。智谱74%的收入来自本地部署，这部分不会体现在OpenRouter数据中。</p>
+<p>但这组数据仍然说明一个问题：<strong>在全球API市场上，智谱的份额落后于DeepSeek和MiniMax</strong>。</p>
+<hr />
+<h2 id="_6">智谱的生态位到底是什么？</h2>
+<p>把竞争格局拉通看，智谱的定位逐渐清晰：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>智谱的位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C端</td>
+<td>已出局（大厂碾压）</td>
+</tr>
+<tr>
+<td>全球API市场</td>
+<td>第二梯队（DeepSeek领先）</td>
+</tr>
+<tr>
+<td>中国政企ToB</td>
+<td><strong>第一梯队</strong>（清华+国资背景加分）</td>
+</tr>
+<tr>
+<td>开源生态</td>
+<td>第一梯队（与Qwen、DeepSeek并列）</td>
+</tr>
+<tr>
+<td>AI Agent</td>
+<td>先发但未确立优势</td>
+</tr>
+<tr>
+<td>国产芯片适配</td>
+<td><strong>独特优势</strong>（华为昇腾深度适配）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>智谱的生态位是"中国政企市场的首选AI基座模型提供商"</strong>——靠的不只是技术，还有清华品牌、国资背景、国产芯片适配这些非技术因素。</p>
+<p>这个生态位有多大？好消息是中国政企市场规模巨大，坏消息是竞争者同样在涌入（百度、阿里、华为自身的盘古模型）。</p>
+<p><strong>反方观点</strong>：如果智谱只能在"政企ToB"这个赛道上赢，那它的天花板就是一家传统IT服务商，而不是"中国版Anthropic"。Anthropic之所以值600亿美元，是因为它的API被全球开发者使用。智谱如果无法在全球开放API市场上占据一席之地，4,500亿港元的估值就很难站住脚。</p>
+<hr />
+<h2 id="_7">竞争格局的三个判断</h2>
+<p><strong>判断一：创业五强格局不稳定，未来2年大概率会有掉队者</strong></p>
+<p>五家公司的估值都在千亿以上，但大多数还在巨额亏损。一旦融资环境收紧或技术路线出现重大分叉，排名靠后的公司可能被边缘化或被收购。</p>
+<p><strong>判断二：大厂的终局优势会越来越明显</strong></p>
+<p>AI模型的训练成本会持续下降，但<strong>分发渠道和场景优势</strong>是创业公司无法复制的。字节的抖音、阿里的淘宝+钉钉、腾讯的微信——这些流量入口决定了C端的终局。创业公司只能在ToB和API市场寻找空间。</p>
+<p><strong>判断三：智谱最大的护城河可能不是技术，而是"身份"</strong></p>
+<p>清华系+国资背景+国产芯片适配——在中国特色的产业环境中，这种"身份"带来的信任和政策红利，可能比模型评测分数更有商业价值。</p>
+<p><strong>反方观点</strong>：身份牌不是永久有效的。如果DeepSeek在纯商业竞争中持续胜出，政企客户最终也会用脚投票。技术和产品的竞争力才是长期壁垒。</p>
+<hr />
+<h2 id="_8">下期预告</h2>
+<p>最后一篇，我们回到最核心的问题——</p>
+<ul>
+<li>智谱一年亏<strong>47亿</strong>，IPO融了<strong>52亿</strong>，这笔钱够烧多久？</li>
+<li><strong>560倍市销率</strong>——市场到底在给什么定价？</li>
+<li>"中国版Anthropic"的故事能讲多远？</li>
+<li>作为投资标的，智谱AI的风险收益比到底怎么样？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂智谱AI》系列第 03 篇。最后 1 篇将于近期推出。</em>
+<em>本系列基于公开信息撰写，不构成任何投资建议。AI行业变化极快，文中数据截至2026年5月，请以最新公告为准。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/86d8914f6111.html">智谱（02513.HK）三大报表解析 · 2026年中期</a><div class="meta">2026-09-01 · 研究</div></li><li><a href="../r/3b7460fa6dbd.html">930 倍市销率，与 2027 年 1 月的大考</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/230778d43384.html">收 1 元烧 4 元的生意怎么读</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/70b80cfcae88.html">全球第六的模型，和一份&quot;租来的&quot;定价权</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/da809ec85068.html">半年二十倍的公司，你以为你看懂了智谱，其实没有</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/0612bdf686ec.html">《看懂智谱AI》系列说明（2026-07-14 版）</a><div class="meta">2026-07-14 · 底稿</div></li><li><a href="../r/50be50f38aac.html">烧钱机器的终局推演</a><div class="meta">2026-07-06 · 深度系列</div></li><li><a href="../r/21a36274b78d.html">智谱（Z.ai，02513.HK）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/68025819dc91.html">智谱AI（Zhipu AI）深度研究报告</a><div class="meta">2026-04-10 · 研究</div></li><li><a href="../r/3ca2f60012de.html">GLM大模型的真实水位</a><div class="meta">2026-04-08 · 深度系列</div></li><li><a href="../r/d34b0bbfeac7.html">清华实验室走出的大模型独角兽</a><div class="meta">2026-01-08 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

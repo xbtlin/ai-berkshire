@@ -1,0 +1,66 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RSI 中英文综述工作稿 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/RSI-survey-20260906/index.html">RSI-survey-20260906</a></div><h1>RSI 中英文综述工作稿</h1><div class="meta"><a href="../topics/RSI-survey-20260906/index.html">RSI-survey-20260906</a> ｜ 2026-09-06 · 导读 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/RSI-survey-20260906/README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">阅读与修改</a></li>
+<li><a href="#_2">论文定位</a></li>
+<li><a href="#_3">值得保留的关键限定</a></li>
+<li><a href="#_4">编译</a></li>
+<li><a href="#arxiv">提交 arXiv 前的定稿步骤</a></li>
+</ul>
+</div>
+</details><article><p>文献截止：<strong>2026-09-06</strong>。这里的 RSI 指 Recursive Self-Improvement（递归自我改进）。</p>
+<p>已完成一篇约 6,500 英文词的批判性叙述综述，以及约 11,300 汉字的对应中文版。两版使用相同的 53 条参考文献、同一组关键事实和相同的核心公式。中文末尾另附术语对照。未添加未经确认的作者、单位或邮箱，未提交到 arXiv。</p>
+<h2 id="_1">阅读与修改</h2>
+<ul>
+<li>英文 PDF：<code>../../output/pdf/rsi-survey-en-20260906.pdf</code></li>
+<li>中文 PDF：<code>../../output/pdf/rsi-survey-zh-20260906.pdf</code></li>
+<li>英文编辑稿：<code>manuscript-en.md</code></li>
+<li>中文编辑稿：<code>manuscript-zh.md</code></li>
+<li>英文 LaTeX 主文件：<code>arxiv/main.tex</code></li>
+<li>中文 LaTeX 主文件：<code>arxiv/main-zh.tex</code></li>
+<li>参考文献：<code>arxiv/references.bib</code></li>
+<li>英文 arXiv 源码压缩包：<code>rsi-survey-arxiv-source.zip</code></li>
+<li>逐条证据与数值限定：<code>research/evidence-ledger.md</code></li>
+<li>来源登记：<code>research/source_register.md</code></li>
+<li>检索方式记录：<code>research/search-log.md</code></li>
+<li>检查结果：<code>research/validation-report.md</code></li>
+</ul>
+<h2 id="_2">论文定位</h2>
+<p>英文题目：<strong>Recursive Self-Improvement in AI: A Critical Survey of Mechanisms, Evidence, and Evaluation</strong></p>
+<p>中文题目：<strong>人工智能递归自我改进：机制、证据与评估的批判性综述</strong></p>
+<p>论文主线是：区分改好一个答案、持久改变一个系统，以及改善下一轮改进的方法。对于自修改编程智能体、模型自编辑、自训练和自动化科研，分别考察修改对象、反馈、继承关系和实验边界。</p>
+<p>已有综述已覆盖“什么进化、何时进化、如何进化”和改进机制可修改等主题；HGM 也已提出当前表现与后代产出能力的区别。本文明确引用这些工作，不声称首次提出 RSI 分类、可修改改进机制或 metaproductivity。较集中的写作切口是把这些问题与 2026 年出现的新评估基准、匹配改进者对照和资源核算联系起来。</p>
+<p>提出的算子产出度量和评估协议属于综合性方法建议，尚未开展实验验证。稿件属于叙述综述，不是穷尽式系统综述，不报告虚构的筛选总数、统计元分析或复现实验。</p>
+<h2 id="_3">值得保留的关键限定</h2>
+<ol>
+<li>当前所选文献支持多种有边界的自我改进，不能据此宣称已实现通用、持续、成本校正后的递归加速。</li>
+<li>权重变化既不是 RSI 的必要条件，也不是充分条件；需要说明复合系统的边界。</li>
+<li>“零数据”描述特定后训练输入条件，并不抹去预训练、环境和人类设计的监督结构。</li>
+<li>DGM 的 20%→50% 是论文特定 SWE-bench 子集的结果，不能改写为完整官方成绩。</li>
+<li>自我改进的历史最佳曲线按定义不会下降；需要检查当前系统、合法验证选优结果和事后审计最优值。</li>
+<li>2026 年的新预印本按照作者报告处理；核对书目信息不等于独立复现。</li>
+</ol>
+<h2 id="_4">编译</h2>
+<p>在本目录执行：</p>
+<pre><code class="language-bash">python3 research/build_bibliography.py
+python3 build.py
+</code></pre>
+<p>需要 Pandoc、pdfLaTeX、XeLaTeX、BibTeX。英文稿使用标准 TeX 字体；中文稿的 <code>arxiv/preamble-zh.tex</code> 当前使用本机 macOS 宋体路径，换电脑时可改为已安装的中文字体。英文 arXiv 包不依赖这些中文字体，也不包含中文稿或其字体路径。</p>
+<p>只编译英文提交包时，在 <code>arxiv/</code> 中执行：</p>
+<pre><code class="language-bash">pdflatex main.tex
+bibtex main
+pdflatex main.tex
+pdflatex main.tex
+</code></pre>
+<p>压缩包只有 <code>main.tex</code>、<code>main.bbl</code>、<code>references.bib</code> 和 <code>figure-loop.tex</code>，不包含参考论文缓存或临时编译文件。正文中的书目键通过 Pandoc 转换为正式引用。</p>
+<h2 id="arxiv">提交 arXiv 前的定稿步骤</h2>
+<ol>
+<li>补充真实英文署名、单位、邮箱；明确每位作者同意署名，并审阅全文。当前没有代填任何个人身份。</li>
+<li>人工复核证据台账中与论点最相关的原文段落，尤其是新预印本的评估设置和局限；结合个人判断重写核心论证。若希望获得更强原创贡献，可实施第 6 节的匹配算子实验，再把结果加入稿件；综述稿本身没有把该实验写成已完成。</li>
+<li>编辑 Markdown 后运行 <code>build.py</code>；若直接编辑 <code>arxiv/main.tex</code>，不要再运行会覆盖它的生成步骤。作者修改与文字修改应保存在同一源文件流程中。</li>
+<li>使用英文源码包创建投稿，选择与内容匹配的类别（可先考虑 cs.AI，是否交叉到 cs.LG/cs.CL 取决于最终稿重点），填写标题和摘要，按账户状态完成必要步骤，再检查平台重新编译的 PDF。</li>
+<li>工作稿带有真实的 AI 辅助说明。最终作者需要根据实际工作流程确认其表述，并对文稿内容负责。</li>
+</ol>
+<p>arXiv 官方要求提交与主文对应的源文件和所需参考文献文件，并要求投稿者检查重新编译的 PDF，详见<a href="https://info.arxiv.org/help/submit_tex.html">TeX 投稿说明</a>和<a href="https://info.arxiv.org/help/submit/index.html">投稿总览</a>。如果还计划将中文版一并提交，应先查看<a href="https://info.arxiv.org/help/translations.html">译本说明</a>，按同一作品的译本处理。本交付没有为两种语言创建重复投稿，也不保证平台收录或学术同行评审结果。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/924413c2f550.html">Validation report</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f5e85e29fae4.html">Verified source register</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f4d7da04d94e.html">Search method record</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/cb20bb1402be.html">Claim and evidence ledger</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/ace25e84f3ad.html">人工智能递归自我改进：机制、证据与评估的批判性综述</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/807f305dd199.html">Recursive Self-Improvement in AI: A Critical Survey of Mechanisms, Evidence, and Evaluation</a><div class="meta">2026-09-06 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
