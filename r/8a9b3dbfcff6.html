@@ -1,0 +1,318 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>腾讯（0700.HK）投资组合 IFRS 会计处理深度研究 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><h1>腾讯（0700.HK）投资组合 IFRS 会计处理深度研究</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-04-22 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E8%85%BE%E8%AE%AF-%E6%8A%95%E8%B5%84%E4%BC%9A%E8%AE%A1%E5%A4%84%E7%90%86-20260422.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#1">1. 核心结论</a></li>
+<li><a href="#2-ifrs-9-4">2. IFRS 9 金融资产的 4 种分类</a><ul>
+<li><a href="#a">A. 按摊余成本计量</a></li>
+<li><a href="#b-fvoci">B. 公允价值计入其他综合收益（FVOCI）</a></li>
+<li><a href="#c-fvtpl">C. 公允价值计入损益（FVTPL）</a></li>
+<li><a href="#d-ias-28">D. 权益法核算（IAS 28）</a></li>
+</ul>
+</li>
+<li><a href="#3">3. 腾讯投资组合的分类框架</a></li>
+<li><a href="#4">4. 权益法的具体处理</a><ul>
+<li><a href="#17-19">快手案例（腾讯持股 ~17-19%）</a></li>
+<li><a href="#2021-12-17">京东案例（2021-12 宣布派息前，持股 17%）</a></li>
+</ul>
+</li>
+<li><a href="#5-fvtpl">5. FVTPL 的具体处理</a><ul>
+<li><a href="#14fvtpl">拼多多案例（持股 ~14%，FVTPL）</a></li>
+<li><a href="#fvtpl">非上市投资的 FVTPL 估值</a></li>
+</ul>
+</li>
+<li><a href="#6">6. 公允价值变动的历史损益影响</a><ul>
+<li><a href="#2021">2021 年：投资拐点元年</a></li>
+<li><a href="#2022">2022 年：深度亏损</a></li>
+<li><a href="#2023">2023 年：投资回补</a></li>
+<li><a href="#2024">2024 年：修复 + 派息减持</a></li>
+<li><a href="#2025">2025 年</a></li>
+</ul>
+</li>
+<li><a href="#7">7. 派息减持的会计处理</a><ul>
+<li><a href="#2021-12-a">2021-12 派发京东 A 股实物股息</a></li>
+<li><a href="#2022-11">2022-11 派发美团股息</a></li>
+</ul>
+</li>
+<li><a href="#8">8. 子公司全额合并</a></li>
+<li><a href="#9-vs-gaap">9. "经营利润" vs "GAAP 净利润"</a><ul>
+<li><a href="#_1">为什么区分</a></li>
+<li><a href="#2024_1">2024 数字对比</a></li>
+</ul>
+</li>
+<li><a href="#10">10. 投资者应看哪个？</a></li>
+<li><a href="#11">11. 数据置信度</a></li>
+</ul>
+</div>
+</details><article><p><strong>ai-berkshire 腾讯投资会计处理专员 | 2026-04-22</strong></p>
+<h2 id="1">1. 核心结论</h2>
+<p>腾讯投资组合的会计处理<strong>极其复杂且高度分散</strong>——控股子公司（Riot、Supercell）全额合并，联营企业（快手、B站、BOSS直聘等）按权益法按持股比例确认净利润份额而不反映市值波动，绝大部分非联营上市投资（拼多多、Spotify、Snap 等）按 <strong>FVTPL</strong> 使公允价值变动直接冲击利润表，少数战略性股权指定为 <strong>FVOCI</strong> 隔离于损益表。<strong>这种结构导致腾讯 GAAP 净利润波动极大</strong>（2021 同比暴跌约 47%、2022 再度下滑、2023-2024 显著回升），但经调整净利润（Non-GAAP）相对稳定，<strong>这是理解腾讯利润表的第一性原理</strong>。</p>
+<h2 id="2-ifrs-9-4">2. IFRS 9 金融资产的 4 种分类</h2>
+<h3 id="a">A. 按摊余成本计量</h3>
+<ul>
+<li>条件：业务模式为"持有以收取合同现金流"+ SPPI 通过</li>
+<li>典型：应收账款、债券持有至到期</li>
+<li><strong>持有期间不反映市值波动</strong></li>
+<li><strong>腾讯应用</strong>：大额现金管理、结构性存款</li>
+</ul>
+<h3 id="b-fvoci">B. 公允价值计入其他综合收益（FVOCI）</h3>
+<p><strong>权益工具版（不可撤销指定）</strong>：
+- 公允价值变动全部计入 OCI，<strong>永不回转到利润表</strong>
+- 处置时累计 OCI 变动只能结转到留存收益
+- <strong>腾讯应用</strong>：少数长期战略性股权</p>
+<h3 id="c-fvtpl">C. 公允价值计入损益（FVTPL）</h3>
+<ul>
+<li>条件：不满足上述条件的默认分类</li>
+<li>公允价值变动<strong>全额直接进入当期利润表</strong></li>
+<li><strong>腾讯应用</strong>：<strong>投资组合主体</strong>——拼多多、快手、Sea、Spotify、Snap、特斯拉等上市；大部分非上市投资</li>
+</ul>
+<h3 id="d-ias-28">D. 权益法核算（IAS 28）</h3>
+<ul>
+<li>条件：重大影响（20-50% 持股 + 董事席位）</li>
+<li>按<strong>持股比例 × 被投资方净利润</strong>确认投资收益</li>
+<li><strong>完全不反映市值波动</strong></li>
+<li>减值测试按 IAS 36（可收回金额 &lt; 账面值时）</li>
+<li><strong>腾讯应用</strong>：快手、B站、BOSS直聘、众安、微众银行（30%）、富途等</li>
+</ul>
+<h2 id="3">3. 腾讯投资组合的分类框架</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投资类型</th>
+<th>会计分类</th>
+<th>资产负债表位置</th>
+<th>损益影响</th>
+<th>市值波动是否反映</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>控股子公司（Riot、Supercell 合并、Miniclip、Funcom）</td>
+<td>合并报表</td>
+<td>营收/成本全额合并</td>
+<td>直接影响</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>联营企业（快手、B站、BOSS、微众、富途）</td>
+<td>权益法（IAS 28）</td>
+<td>"于联营公司的投资"</td>
+<td>分占损益按比例</td>
+<td><strong>否</strong></td>
+</tr>
+<tr>
+<td>合营企业</td>
+<td>权益法</td>
+<td>"于合营公司的投资"</td>
+<td>分占损益</td>
+<td><strong>否</strong></td>
+</tr>
+<tr>
+<td>非联营上市投资（拼多多、Spotify、Snap、Sea 残余）</td>
+<td>FVTPL</td>
+<td>金融资产</td>
+<td>公允价值变动 + 股息全额进 PL</td>
+<td><strong>是（直接）</strong></td>
+</tr>
+<tr>
+<td>非上市少数股权（大量 VC/PE）</td>
+<td>FVTPL 为主</td>
+<td>长期金融资产</td>
+<td>估值重估进 PL</td>
+<td><strong>是（间接）</strong></td>
+</tr>
+<tr>
+<td>少数战略性股权</td>
+<td>FVOCI</td>
+<td>其他金融资产</td>
+<td>仅股息进 PL</td>
+<td><strong>是但不进 PL</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键洞察</strong>：腾讯披露的"投资组合公允价值"约 10,358 亿（2025 年末），<strong>联营企业按账面而非市值列示</strong>，账面口径严重低估真实市值。</p>
+<h2 id="4">4. 权益法的具体处理</h2>
+<h3 id="17-19">快手案例（腾讯持股 ~17-19%）</h3>
+<p><strong>年度流程</strong>：
+1. 年初账面 X 亿
+2. 分占快手当年净利润：18% × 快手净利润 → 腾讯"分占联营公司损益"
+3. 快手派息：腾讯收到现金 → 减少账面
+4. 快手股价变动：<strong>不反映在腾讯报表</strong>
+5. 减值测试：若市值持续显著低于账面（30%+ 跌超 12 月），需减值</p>
+<p><strong>美团案例（2022 派息前，持股 17%）</strong>：
+- 2021-2022 美团股价 460 → 60（-87%），但腾讯报表<strong>仅反映分占亏损</strong>，不反映市值崩塌
+- 账面 vs 市值差异达数千亿
+- 这就是 2022-11 派息触发<strong>一次性重大损益</strong>的原因（公允价值 - 权益法账面）</p>
+<h3 id="2021-12-17">京东案例（2021-12 宣布派息前，持股 17%）</h3>
+<ul>
+<li>2022-03 派发 9.58 亿股（164 亿美元）完成后，持股 17% → 2.3%</li>
+<li><strong>丧失重大影响 → 从联营重分类至 FVTPL</strong></li>
+<li>按终止日公允价值重新计量，<strong>差额一次性进利润表</strong></li>
+</ul>
+<h2 id="5-fvtpl">5. FVTPL 的具体处理</h2>
+<h3 id="14fvtpl">拼多多案例（持股 ~14%，FVTPL）</h3>
+<p><strong>年度流程</strong>：
+1. 年初公允价值 X 亿（上年末收盘价）
+2. 期间股价变动：按季度/年度重估，变动额直接进"其他收益净额"
+3. 收到股息：确认"投资收益"
+4. 年末公允价值：按资产负债表日收盘价</p>
+<p><strong>数字直觉</strong>：
+- 拼多多涨 50% → 腾讯利润表 +0.5X 亿
+- 拼多多跌 50% → 腾讯利润表 -0.5X 亿</p>
+<p><strong>这是腾讯 2021-2022 净利润剧烈波动的主因</strong></p>
+<h3 id="fvtpl">非上市投资的 FVTPL 估值</h3>
+<ul>
+<li>按最近一轮融资估值（Level 2）或 DCF/可比（Level 3）</li>
+<li>2022-2023 一级市场估值冷却直接冲击腾讯利润表</li>
+</ul>
+<h2 id="6">6. 公允价值变动的历史损益影响</h2>
+<h3 id="2021">2021 年：投资拐点元年</h3>
+<ul>
+<li>"其他收益净额"含大量 FVTPL 减值与重估</li>
+<li><strong>GAAP 股东应占净利润 2,248 亿</strong>（含出售京东股票一次性大额收益）</li>
+<li><strong>Non-GAAP 净利润 1,237 亿</strong>（个位数增长）</li>
+<li>差异基本全在"投资公允价值变动 + 减值"</li>
+</ul>
+<h3 id="2022">2022 年：深度亏损</h3>
+<ul>
+<li>中概股危机 + 美团股价跌 80%（但按权益法不直接体现）+ FVTPL 普跌</li>
+<li><strong>GAAP 净利润 1,882 亿</strong>（含 Sea 减持 160 亿美元一次性利得）</li>
+<li><strong>Non-GAAP 净利润 1,156 亿</strong>（同比 -7%）</li>
+</ul>
+<h3 id="2023">2023 年：投资回补</h3>
+<ul>
+<li><strong>GAAP 净利润 1,152 亿</strong>（同比 -39%，因 2022 基数高）</li>
+<li><strong>Non-GAAP 净利润 1,577 亿</strong>（同比 +36%）</li>
+</ul>
+<h3 id="2024">2024 年：修复 + 派息减持</h3>
+<ul>
+<li>京东/美团派息触发重分类损益（已完成）</li>
+<li>FVTPL 组合整体修复（PDD、Spotify 表现强劲）</li>
+<li><strong>GAAP 净利润 1,940 亿（+68%）</strong></li>
+<li><strong>Non-GAAP 净利润 2,227 亿（+41%）</strong></li>
+</ul>
+<h3 id="2025">2025 年</h3>
+<ul>
+<li><strong>GAAP 净利润 2,248 亿</strong></li>
+<li><strong>Non-GAAP 净利润约 2,500 亿</strong>（估）</li>
+</ul>
+<h2 id="7">7. 派息减持的会计处理</h2>
+<h3 id="2021-12-a">2021-12 派发京东 A 股实物股息</h3>
+<p><strong>结构</strong>：腾讯将 9.58 亿股京东（USD 164 亿）按比例派发给股东。</p>
+<p><strong>会计步骤</strong>：
+1. <strong>宣派时点</strong>：按公允价值计量应付股息（IFRIC 17）
+2. <strong>差额</strong>：公允价值 - 权益法账面 = <strong>一次性处置收益进利润表</strong>
+3. <strong>实际派发</strong>：冲减应付股息+股东权益
+4. <strong>剩余持股重分类</strong>：2.3% 持股失去重大影响 → 权益法转 FVTPL，差额进 PL
+5. <strong>后续</strong>：剩余京东按 FVTPL，股价变动直接进 PL</p>
+<h3 id="2022-11">2022-11 派发美团股息</h3>
+<ul>
+<li>类似机制</li>
+<li>派发 9.58 亿股（USD 204 亿）</li>
+<li>持股 17% → ~1.5%</li>
+</ul>
+<p><strong>两次派息是腾讯 2024 GAAP 净利润跳升的重要贡献</strong></p>
+<h2 id="8">8. 子公司全额合并</h2>
+<p><strong>Riot Games、Miniclip、Funcom、Techland（2024 新收）等</strong>：
+- 不是"投资"而是<strong>子公司</strong>
+- 按 IFRS 10 全额合并
+- 非控股权益单独列示</p>
+<p><strong>Supercell（Halti S.A. 51.2% 控股）</strong>：
+- 腾讯通过 Halti 对 Supercell 实际经济权益约 43%
+- 2023 年 Halti 并表
+- Supercell 营收/利润全额合并入腾讯报表</p>
+<h2 id="9-vs-gaap">9. "经营利润" vs "GAAP 净利润"</h2>
+<p><strong>腾讯的三层利润口径</strong>：</p>
+<ol>
+<li><strong>经营利润</strong>：营收 - 营业成本 - 销售/管理/研发费用 ± 其他经营收益。<strong>剔除投资公允价值变动</strong></li>
+<li><strong>GAAP 股东应占净利润</strong>：完整 IFRS 净利润，含投资公允价值变动、联营分占损益、处置损益、减值、股权激励、无形资产摊销</li>
+<li><strong>Non-GAAP（经调整）净利润</strong>：GAAP 基础上剔除：
+   - 投资公允价值变动净额
+   - 投资处置损益
+   - 减值准备
+   - 股权激励费用（SBC）
+   - 无形资产摊销
+   - 所得税影响</li>
+</ol>
+<h3 id="_1">为什么区分</h3>
+<ul>
+<li><strong>GAAP 波动剧烈</strong>：投资占大比重</li>
+<li><strong>Non-GAAP 反映经营状况</strong></li>
+<li>腾讯管理层和卖方均以 Non-GAAP 为核心指标</li>
+</ul>
+<h3 id="2024_1">2024 数字对比</h3>
+<ul>
+<li>GAAP 净利润：1,940 亿</li>
+<li>Non-GAAP 净利润：2,227 亿</li>
+<li>差异：股权激励 300+ 亿 + 无形资产摊销 + 部分减值</li>
+</ul>
+<h2 id="10">10. 投资者应看哪个？</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>视角</th>
+<th>应看指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经营质量</td>
+<td>Non-GAAP 净利润 + 经营利润</td>
+</tr>
+<tr>
+<td>完整回报</td>
+<td>GAAP 净利润 + OCI + 联营企业真实市值</td>
+</tr>
+<tr>
+<td>巴菲特"look-through earnings"</td>
+<td>经营利润 + 主要联营/FVTPL 按比例归属净利润</td>
+</tr>
+<tr>
+<td>现金流视角</td>
+<td>经营活动现金流 + 投资处置现金流入</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>ai-berkshire 倾向</strong>：
+- <strong>主业估值</strong>：Non-GAAP 经营利润 × 合理倍数
+- <strong>投资组合估值</strong>：单独 SOTP（联营按市值、FVTPL 按公允、非上市按账面 × 折扣）
+- <strong>两者相加</strong>得出 NAV
+- <strong>规避"GAAP 净利润 × PE"</strong> 的简单估值，因 GAAP 严重被投资波动扭曲</p>
+<h2 id="11">11. 数据置信度</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IFRS 9 / IAS 28 会计准则框架</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>腾讯分类框架（权益法/FVTPL/FVOCI）</td>
+<td><strong>高</strong>（年报附注披露）</td>
+</tr>
+<tr>
+<td>单个标的的具体分类</td>
+<td><strong>中</strong>（除主要联营外未逐一披露）</td>
+</tr>
+<tr>
+<td>2021-2024 历史损益影响</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>派息减持会计路径</td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td>2025 全年净利润预测</td>
+<td><strong>低</strong>（依赖市场波动）</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<p><strong>ai-berkshire 腾讯投资会计处理专员 · 2026-04-22</strong></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/e98ba87fde5c.html">证据与审计说明</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/549a5c7c8f83.html">腾讯研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/fa1ad1445212.html">腾讯研究附录：来源、真值、算术与尚未解决的缺口</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

@@ -1,0 +1,658 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>蚂蚁数科 每股价值推算 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/蚂蚁数科/index.html">蚂蚁数科</a></div><h1>蚂蚁数科 每股价值推算</h1><div class="meta"><a href="../companies/蚂蚁数科/index.html">蚂蚁数科</a> ｜ 2026-04-28 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%9A%82%E8%9A%81%E6%95%B0%E7%A7%91/%E4%BC%B0%E5%80%BC%E8%81%9A%E7%84%A6-20260428/04-%E6%AF%8F%E8%82%A1%E4%BB%B7%E5%80%BC.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#0">0. 执行摘要</a></li>
+<li><a href="#1">1. 概念分层：先讲清楚"哪个每股"</a><ul>
+<li><a href="#11">1.1 三层含义对照表</a></li>
+<li><a href="#12">1.2 为什么这三层必须分开</a></li>
+</ul>
+</li>
+<li><a href="#2-a">2. A层：每元注册资本对应的市场价值</a><ul>
+<li><a href="#21">2.1 已知事实</a></li>
+<li><a href="#22">2.2 推算</a></li>
+<li><a href="#23">2.3 重要警示</a></li>
+</ul>
+</li>
+<li><a href="#3-bser">3. B层：员工激励SER隐含的"数科部分"价值</a><ul>
+<li><a href="#31">3.1 一拆四的会计公允价值</a></li>
+<li><a href="#32-ser">3.2 隐含的"每份SER中数科部分"</a></li>
+<li><a href="#33">3.3 用市场化估值反推（核心修正）</a></li>
+<li><a href="#34-b">3.4 但要小心：B层不等于"数科股票"</a></li>
+</ul>
+</li>
+<li><a href="#4-cipo">4. C层：IPO后预测每股价值</a><ul>
+<li><a href="#41-ipo">4.1 IPO股本结构假设</a></li>
+<li><a href="#42-ipo">4.2 IPO招股价区间</a></li>
+<li><a href="#43">4.3 港股科技/金融科技可比标的横向对比</a></li>
+</ul>
+</li>
+<li><a href="#5">5. 三层之间的桥梁</a><ul>
+<li><a href="#51">5.1 价值乘数关系图</a></li>
+<li><a href="#52">5.2 差距来源拆解</a></li>
+<li><a href="#53">5.3 核心问答</a></li>
+</ul>
+</li>
+<li><a href="#6">6. 场景分析表</a><ul>
+<li><a href="#61">6.1 整合场景</a></li>
+<li><a href="#62">6.2 横向对比锚定</a></li>
+</ul>
+</li>
+<li><a href="#7">7. 流动性折价与时间价值讨论</a><ul>
+<li><a href="#71">7.1 流动性折价层次</a></li>
+<li><a href="#72">7.2 时间价值折扣</a></li>
+<li><a href="#73">7.3 港股小盘流动性折价案例</a></li>
+</ul>
+</li>
+<li><a href="#8">8. 核心不确定性清单</a><ul>
+<li><a href="#81">8.1 已知项 🟢</a></li>
+<li><a href="#82">8.2 估算项 🟡</a></li>
+<li><a href="#83">8.3 未知项 🔴</a></li>
+</ul>
+</li>
+<li><a href="#9">9. 综合结论</a><ul>
+<li><a href="#91">9.1 三层每股价值锚定</a></li>
+<li><a href="#92-vsipo">9.2 当下"账面"vs"IPO预期"的乘数关系</a></li>
+<li><a href="#93">9.3 给读者的判断框架</a></li>
+<li><a href="#sources">Sources</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>估值分析师 | 日期：2026-04-28 | 数据置信度：🟢高 / 🟡中 / 🔴低</p>
+<p><strong>本报告聚焦：蚂蚁数科"每股价值"的多层次推算与桥梁打通</strong></p>
+</blockquote>
+<hr />
+<h2 id="0">0. 执行摘要</h2>
+<p>蚂蚁数科目前是一家<strong>有限责任公司</strong>，注册资本21.07亿元人民币（2024年5月由1亿元增资完成），尚未完成股份制改造，<strong>没有真正意义上的"每股"概念</strong>——只有"每元注册资本对应的市场价值"。员工股权激励工具（SER/RSU）的标的是<strong>蚂蚁集团</strong>而非蚂蚁数科，2025年3月"一拆四"映射后蚂蚁数科只占其中<strong>1.4%</strong> 的隐含权益。</p>
+<p>本报告把"每股价值"拆解为三层：
+- <strong>A层（当下口径）</strong>：每元注册资本对应市场价值 → <strong>21.4 ~ 35.6元</strong>
+- <strong>B层（员工激励隐含口径）</strong>：每份SER中的"数科部分"会计公允价 → <strong>1.51元/SER</strong>（市场化修正后约1.51 ~ 1.69元）
+- <strong>C层（IPO后预测）</strong>：参考可比公司，IPO招股价区间 → <strong>港币6 ~ 30元/股</strong>（取决于上市总股本与估值组合）</p>
+<p>三层之间的差距主要由<strong>会计保守 + 关联交易折价 + 流动性折价 + IPO倍数扩张</strong>构成，乘数关系约为 <strong>B → A 约14-24倍，A → C 约0.5-3倍</strong>（取决于上市后股本设计）。</p>
+<hr />
+<h2 id="1">1. 概念分层：先讲清楚"哪个每股"</h2>
+<p>很多坊间讨论把"蚂蚁数科每股值多少"作为一个单一问题在讨论，<strong>这是错误的</strong>。现阶段蚂蚁数科的"每股"至少要分三个层次：</p>
+<h3 id="11">1.1 三层含义对照表</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>层次</th>
+<th>标的物</th>
+<th>单位</th>
+<th>是否市场化</th>
+<th>当下是否存在</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A层 / 当下出资份额</strong></td>
+<td>蚂蚁数科本身</td>
+<td>每"元"注册资本对应的市场估值</td>
+<td>否（无外部融资锚）</td>
+<td>✅ 已存在</td>
+</tr>
+<tr>
+<td><strong>B层 / 员工激励隐含</strong></td>
+<td>蚂蚁集团股权（含1.4%数科映射）</td>
+<td>每份SER（拆分后108.21元）中的数科部分</td>
+<td>半市场化（基于母公司公允价）</td>
+<td>✅ 已存在</td>
+</tr>
+<tr>
+<td><strong>C层 / IPO后股票</strong></td>
+<td>蚂蚁数科上市股份</td>
+<td>每股股票（拟港币计价）</td>
+<td>是（公开市场）</td>
+<td>❌ 暂未存在</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="12">1.2 为什么这三层必须分开</h3>
+<ol>
+<li><strong>法律实体不同</strong>：A层是"蚂蚁链（上海）数字科技有限公司"的出资权益；B层标的是"蚂蚁科技集团股份有限公司"的股权；C层是未来重组后的IPO主体（大概率是新设港股控股公司）。</li>
+<li><strong>流动性不同</strong>：A层完全无流动性（有限责任公司股权转让需股东会批准）；B层是公司内部映射，离职员工被强制现金回购；C层若上市则港股二级市场可自由交易。</li>
+<li><strong>价值来源不同</strong>：A层反映"今天蚂蚁数科作为一家公司值多少"；B层反映"蚂蚁集团内部会计上把数科算作多少"；C层则反映"未来上市市场愿意给多少倍数"。</li>
+<li><strong>持有人不同</strong>：A层股东仅为蚂蚁集团及其控股平台；B层是历史在职/离职员工；C层未来是公开市场投资者。</li>
+</ol>
+<blockquote>
+<p><strong>核心提醒</strong>：B层（SER中的数科部分）不等于"持有蚂蚁数科股票"。这是2025年3月"一拆四"事件中部分员工与公司争议的根本来源——SER的标的物始终是蚂蚁集团，数科只是会计映射。</p>
+</blockquote>
+<hr />
+<h2 id="2-a">2. A层：每元注册资本对应的市场价值</h2>
+<h3 id="21">2.1 已知事实</h3>
+<ul>
+<li>蚂蚁数科主体注册资本：<strong>21.07亿元</strong>（2024年5月增资后，未再变动）</li>
+<li>4/17已有研究估值区间：<strong>450-750亿RMB</strong>（中位数550亿）</li>
+<li>截至2026-04-28，<strong>无外部独立融资定价</strong>（增资性质属于内部资本结构调整）</li>
+</ul>
+<h3 id="22">2.2 推算</h3>
+<p><strong>公式</strong>：每元注册资本对应市场价值 = 公司估值 / 注册资本总额</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>估值假设</th>
+<th>估值（RMB）</th>
+<th>每元注册资本对应价值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保守</td>
+<td>300亿</td>
+<td><strong>14.2元</strong></td>
+</tr>
+<tr>
+<td>4/17下限</td>
+<td>450亿</td>
+<td><strong>21.4元</strong></td>
+</tr>
+<tr>
+<td>4/17中性</td>
+<td>550亿</td>
+<td><strong>26.1元</strong></td>
+</tr>
+<tr>
+<td>4/17上限</td>
+<td>750亿</td>
+<td><strong>35.6元</strong></td>
+</tr>
+<tr>
+<td>乐观</td>
+<td>1,500亿</td>
+<td><strong>71.2元</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="23">2.3 重要警示</h3>
+<ul>
+<li>这个数字是"虚拟的市场价值"，<strong>没有可交易性</strong>——蚂蚁集团目前100%持股，外部投资者无法按这个价格买入。</li>
+<li>21.07亿"注册资本"不等于"21.07亿股"。中国《公司法》下有限责任公司只有出资额而无股票概念。一旦未来股改并完成IPO，会按"1元注册资本拆为N股"的方式重新设计股本结构。</li>
+<li>增资到21.07亿的实际"出资来源"未公开披露，业内推测含部分员工持股平台对蚂蚁数科的认购。</li>
+</ul>
+<hr />
+<h2 id="3-bser">3. B层：员工激励SER隐含的"数科部分"价值</h2>
+<h3 id="31">3.1 一拆四的会计公允价值</h3>
+<p><strong>核心数据</strong>（来源：新浪财经2025-03-11原文，已多方交叉确认 🟢）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>拆分前</th>
+<th>拆分后（仅蚂蚁集团部分）</th>
+<th>缩水幅度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SER 税前公允价</td>
+<td>115.85元/份</td>
+<td><strong>108.21元/份</strong></td>
+<td>-6.6%</td>
+</tr>
+<tr>
+<td>RSU 公允价</td>
+<td>20.95元/份</td>
+<td><strong>19.58元/份</strong></td>
+<td>-6.5%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>映射比例</strong>：蚂蚁集团 <strong>93.4%</strong> / 蚂蚁国际 <strong>4.8%</strong> / 蚂蚁数科 <strong>1.4%</strong> / OceanBase <strong>0.4%</strong></p>
+<h3 id="32-ser">3.2 隐含的"每份SER中数科部分"</h3>
+<p><strong>会计口径</strong>（基于一拆四公允价）：</p>
+<pre><code>SER中数科部分 = (115.85 − 108.21) × (1.4% ÷ 6.6%) ≈ 1.62元/SER
+</code></pre>
+<p>或等价地用映射比例反算：</p>
+<pre><code>SER中数科部分 ≈ 108.21 × (1.4% ÷ 93.4%) ≈ 1.62元/SER
+</code></pre>
+<blockquote>
+<p>取整后约 <strong>1.5 ~ 1.7元/SER</strong> 是会计意义上"每一份SER背后映射的数科价值"。</p>
+</blockquote>
+<h3 id="33">3.3 用市场化估值反推（核心修正）</h3>
+<p>会计公允价的局限：<strong>(1)</strong> 没有外部融资锚定；<strong>(2)</strong> 关联交易未剔除；<strong>(3)</strong> 内部分配可能保守。</p>
+<p>参考蚂蚁集团2025年胡润估值6,350亿（经5,710亿一拆四公允价对接验证）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>蚂蚁数科估值假设</th>
+<th>占集团比例</th>
+<th>每份SER中数科部分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>80亿（员工激励隐含口径）</td>
+<td>1.40%</td>
+<td>1.51元/SER</td>
+</tr>
+<tr>
+<td>300亿（保守市场化）</td>
+<td>5.25%</td>
+<td>5.69元/SER</td>
+</tr>
+<tr>
+<td>550亿（中性，4/17中位数）</td>
+<td>9.63%</td>
+<td>10.42元/SER</td>
+</tr>
+<tr>
+<td>750亿（4/17上限）</td>
+<td>13.13%</td>
+<td>14.21元/SER</td>
+</tr>
+<tr>
+<td>1,500亿（乐观）</td>
+<td>26.27%</td>
+<td>28.42元/SER</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>注</strong>：占集团比例 = 蚂蚁数科估值 / (集团5,710亿 + (蚂蚁数科估值 − 80亿) × 1)。简化算法：直接用蚂蚁数科估值 ÷ 5,710亿 × 108.21。</p>
+<blockquote>
+<p><strong>关键发现</strong>：当前会计映射下，<strong>每份SER的"数科部分"仅1.51-1.62元</strong>；但若按市场化中性估值（550亿）反推，应当对应<strong>约10.4元/SER</strong>——会计口径较市场化口径<strong>低估约6-7倍</strong>。这是离职员工抗议"强制回购"的核心商业逻辑。</p>
+</blockquote>
+<h3 id="34-b">3.4 但要小心：B层不等于"数科股票"</h3>
+<p>即便按市场化反推到10元/SER，员工拿到的依然是<strong>蚂蚁集团</strong>SER的现金流权——除非蚂蚁数科独立IPO并执行"分发"机制（目前协议中<strong>未授予在职员工此类权利</strong>）。1.4%的映射只在内部回购定价时使用。</p>
+<hr />
+<h2 id="4-cipo">4. C层：IPO后预测每股价值</h2>
+<h3 id="41-ipo">4.1 IPO股本结构假设</h3>
+<p><strong>蚂蚁数科至今未递交招股书</strong>（截至2026-04-28），股本设计完全未定。参考港股IPO惯例和分拆案例：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设场景</th>
+<th>上市前总股本</th>
+<th>IPO新发比例</th>
+<th>上市后总股本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>紧凑型（小盘）</td>
+<td>10亿股</td>
+<td>15%</td>
+<td>11.5亿股</td>
+</tr>
+<tr>
+<td>中型</td>
+<td>20亿股</td>
+<td>15%</td>
+<td>23亿股</td>
+</tr>
+<tr>
+<td>大型（参考蚂蚁集团300亿股）</td>
+<td>30亿股</td>
+<td>10%</td>
+<td>33亿股</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>注</strong>：港股惯例新发比例10-25%；蚂蚁集团2020年A+H规划过30亿新股发行后总股本300亿股的"大型"方案，子公司分拆通常股本比母公司小一个量级。</p>
+<h3 id="42-ipo">4.2 IPO招股价区间</h3>
+<p><strong>公式</strong>：每股招股价 = IPO估值 / 上市后总股本</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>IPO估值</th>
+<th>紧凑型11.5亿股</th>
+<th>中型23亿股</th>
+<th>大型33亿股</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>300亿RMB（≈325亿HKD）</td>
+<td>28.3 HKD</td>
+<td>14.1 HKD</td>
+<td>9.8 HKD</td>
+</tr>
+<tr>
+<td>550亿RMB（≈597亿HKD）</td>
+<td>51.9 HKD</td>
+<td>26.0 HKD</td>
+<td>18.1 HKD</td>
+</tr>
+<tr>
+<td>750亿RMB（≈814亿HKD）</td>
+<td>70.8 HKD</td>
+<td>35.4 HKD</td>
+<td>24.7 HKD</td>
+</tr>
+<tr>
+<td>1,500亿RMB（≈1,629亿HKD）</td>
+<td>141.6 HKD</td>
+<td>70.8 HKD</td>
+<td>49.4 HKD</td>
+</tr>
+</tbody>
+</table></div>
+<p>汇率假设：1 RMB ≈ 1.086 HKD（2026年4月汇率）。</p>
+<h3 id="43">4.3 港股科技/金融科技可比标的横向对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>代码</th>
+<th>业务类比</th>
+<th>每股价格（2026/4）</th>
+<th>总市值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>恒生电子</td>
+<td>A股600570</td>
+<td>金融IT龙头</td>
+<td>26.42元 RMB</td>
+<td>500亿 RMB</td>
+<td>与蚂蚁数科第三方收入口径同量级</td>
+</tr>
+<tr>
+<td>金山办公</td>
+<td>A股688111</td>
+<td>SaaS国内龙头</td>
+<td>251元 RMB</td>
+<td>1,165亿 RMB</td>
+<td>估值倍数高，有AI溢价</td>
+</tr>
+<tr>
+<td>金蝶国际</td>
+<td>HK 0268</td>
+<td>云ERP SaaS</td>
+<td>~13港元</td>
+<td>504亿港元</td>
+<td>港股SaaS重要锚</td>
+</tr>
+<tr>
+<td>金融壹账通</td>
+<td>NYSE OCFT / HK 6638</td>
+<td>金融科技云</td>
+<td>7.89美元（OCFT）</td>
+<td>约30亿RMB</td>
+<td><strong>反例</strong>：第三方拓展失败案例</td>
+</tr>
+<tr>
+<td>蚂蚁集团（拆分前2020）</td>
+<td>拟688688</td>
+<td>母公司</td>
+<td>招股价68.80元 RMB</td>
+<td>2.1万亿 RMB（拟）</td>
+<td>A股发行价参考</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论</strong>：
+- 若蚂蚁数科以"金融IT+云科技"逻辑挂牌，每股价位最有可能落在<strong>港币15-30元区间</strong>（中型股本+中性估值组合）。
+- 若以"AI+稳定币+全球化"故事讲出溢价，理论上能冲击<strong>港币50元以上</strong>（参考金山办公的高倍数案例）。
+- 如果业务故事踩雷（参考壹账通从美股退到港股仅约8美元/股、第三方收入未跑通），招股价可能跌到<strong>港币8-12元区间</strong>。</p>
+<hr />
+<h2 id="5">5. 三层之间的桥梁</h2>
+<h3 id="51">5.1 价值乘数关系图</h3>
+<pre><code>B层会计口径(1.51-1.62元/SER中数科部分)
+        ↓ × 6.5x（会计保守 + 关联交易剔除）
+B层市场化口径(约10.4元/SER中数科部分)
+        ↓ 单位转换（每份SER → 蚂蚁数科估值）
+A层中性估值(550亿RMB / 21.07亿元注册资本 = 26.1元/元注册资本)
+        ↓ 股本拆细 + 流动性溢价
+C层IPO中性招股价(约18-26 HKD/股，中型股本)
+</code></pre>
+<h3 id="52">5.2 差距来源拆解</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>差距</th>
+<th>幅度</th>
+<th>主要来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B层会计 vs B层市场化</td>
+<td>~6.5倍</td>
+<td>会计公允价采用集团内部口径，未引入市场倍数；关联交易未剔除</td>
+</tr>
+<tr>
+<td>B层 vs A层</td>
+<td>由口径决定</td>
+<td>1.4%映射比例可能严重低估数科作为独立IPO标的的价值（见4/17报告）</td>
+</tr>
+<tr>
+<td>A层 vs C层</td>
+<td>0.5-3倍</td>
+<td>一级到二级流动性溢价（IPO折价反向算），股本设计</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="53">5.3 核心问答</h3>
+<p><strong>问：当下持股的"账面每股"vs"IPO预期每股"差距是多少倍？</strong></p>
+<ul>
+<li>会计口径每份SER中数科部分 ≈ 1.51元</li>
+<li>中性IPO场景下"每份SER最终能换回的数科上市流通价值"≈ 取决于是否有独立换股机制</li>
+<li>若假设上市时按比例分发：1.51元 → 中性约10元（市场化估值修正）→ IPO上市再溢价30-50% → 约13-15元/SER的数科部分流通价值</li>
+<li><strong>乘数 ≈ 8-10倍</strong>（仅当数科按550亿估值IPO并允许员工分享时）</li>
+</ul>
+<p>但<strong>前提条件极为严苛</strong>：
+1. 数科必须完成上市（CEO公开称"明年外滩大会再答IPO时间表"，最早2027下半年）
+2. 集团必须设计在职员工分享数科上市收益的机制（截至4/17未公开此类承诺）
+3. 上市估值必须达到中性550亿以上</p>
+<hr />
+<h2 id="6">6. 场景分析表</h2>
+<h3 id="61">6.1 整合场景</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>蚂蚁数科估值</th>
+<th>A层（每元注册资本）</th>
+<th>B层（市场化每份SER中数科部分）</th>
+<th>C层（IPO招股价，中型23亿股本）</th>
+<th>C层（紧凑11.5亿股本）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>极端悲观（不上市/失败）</td>
+<td>0</td>
+<td>0元</td>
+<td>0元（强制回购按会计价）</td>
+<td>不适用</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>保守</td>
+<td>300亿RMB</td>
+<td>14.2元</td>
+<td>5.69元/SER</td>
+<td>14.1 HKD</td>
+<td>28.3 HKD</td>
+</tr>
+<tr>
+<td>中性（4/17中位数）</td>
+<td>550亿RMB</td>
+<td>26.1元</td>
+<td>10.42元/SER</td>
+<td>26.0 HKD</td>
+<td>51.9 HKD</td>
+</tr>
+<tr>
+<td>4/17上限</td>
+<td>750亿RMB</td>
+<td>35.6元</td>
+<td>14.21元/SER</td>
+<td>35.4 HKD</td>
+<td>70.8 HKD</td>
+</tr>
+<tr>
+<td>乐观（稳定币+AI双爆发）</td>
+<td>1,500亿RMB</td>
+<td>71.2元</td>
+<td>28.42元/SER</td>
+<td>70.8 HKD</td>
+<td>141.6 HKD</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="62">6.2 横向对比锚定</h3>
+<ul>
+<li><strong>保守情景14 HKD/股</strong> ≈ 当前金蝶国际（13港元）水平，符合"中等规模金融IT公司"定位</li>
+<li><strong>中性情景26 HKD/股</strong> ≈ 当前恒生电子（26.42元RMB）水平，符合"国内金融IT龙头"对标</li>
+<li><strong>乐观情景70 HKD/股</strong> ≈ 港股科技股大盘股水平（参考阿里巴巴、京东港股价位）</li>
+</ul>
+<hr />
+<h2 id="7">7. 流动性折价与时间价值讨论</h2>
+<h3 id="71">7.1 流动性折价层次</h3>
+<p>非上市股权到上市股权的折价通常分三段：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>折价类型</th>
+<th>通常幅度</th>
+<th>蚂蚁数科适用情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>私募一级市场到二级市场</strong></td>
+<td>30-50%</td>
+<td>中国私募股权基金过去两年折价40-50%（TR Capital数据，2024-2025）</td>
+</tr>
+<tr>
+<td><strong>Pre-IPO到IPO定价</strong></td>
+<td>10-25%</td>
+<td>IPO通常给基石投资者15-20%账面收益空间</td>
+</tr>
+<tr>
+<td><strong>港股小盘流动性</strong></td>
+<td>10-30%</td>
+<td>港股2025-2026年度日均成交额分布两极分化，小盘股流动性差</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>综合判断</strong>：当下A层"中性26.1元/元注册资本"在没有外部融资锚的情况下，<strong>还需要打30-40%的折扣</strong>才是真正"可成交价"。即真实A层估值可能落在 18-21元/元注册资本之间。</p>
+</blockquote>
+<h3 id="72">7.2 时间价值折扣</h3>
+<p>员工股权激励的时间维度（参考蚂蚁集团2025年4月起新规）：</p>
+<ul>
+<li><strong>Cliff期</strong>：1年（首次归属前不得出售）</li>
+<li><strong>Vesting期</strong>：4年（按季度1/16归属）</li>
+<li><strong>IPO最早时点</strong>：2027年下半年（CEO公开口径）→ 距今约18个月</li>
+</ul>
+<p><strong>折现率假设10%</strong>（参考蚂蚁集团权益资本成本）：</p>
+<pre><code>今天1元 vs 2027年底1元 → 折现因子 ≈ 0.85
+今天1元 vs 2030年底（充分流通）→ 折现因子 ≈ 0.62
+</code></pre>
+<blockquote>
+<p><strong>关键发现</strong>：即便假设上市达成，<strong>今天的"账面价值"比上市后流通价至少打0.85折</strong>。叠加IPO失败概率（保守假设30-40%），真实"风险调整后"价值还要再打折。</p>
+</blockquote>
+<h3 id="73">7.3 港股小盘流动性折价案例</h3>
+<ul>
+<li><strong>金融壹账通</strong>（OCFT）：2019年12月IPO招股价10美元，2026年4月仅7.89美元，折价21%；港股6638成交极度清淡</li>
+<li><strong>港股18C特科技</strong>：2025-2026年度新挂牌的小盘科技股普遍出现首日破发或交投清淡</li>
+</ul>
+<blockquote>
+<p><strong>教训</strong>：即便C层挂牌成功，<strong>前2-3年股价大概率在招股价上下波动</strong>，真正流通价值兑现可能要到上市3年以上。</p>
+</blockquote>
+<hr />
+<h2 id="8">8. 核心不确定性清单</h2>
+<h3 id="81">8.1 已知项 🟢</h3>
+<ul>
+<li>蚂蚁数科注册资本：21.07亿元（2024/5）</li>
+<li>SER拆分后价格：108.21元/份；RSU：19.58元/份</li>
+<li>一拆四映射比例：93.4% / 4.8% / 1.4% / 0.4%</li>
+<li>蚂蚁集团2025估值：6,350亿（胡润）/ 5,710亿（一拆四公允价对接）</li>
+<li>蚂蚁集团2024净利润：383亿元，同比+61%</li>
+</ul>
+<h3 id="82">8.2 估算项 🟡</h3>
+<ul>
+<li>蚂蚁数科市场化估值区间：450-750亿（4/17研究）</li>
+<li>蚂蚁数科第三方收入：60-90亿（2025E）</li>
+<li>净利率：5-10%（基于盈亏平衡+50%增长指引推算）</li>
+<li>员工股权口径估值：约80亿（5,710亿 × 1.4%）</li>
+</ul>
+<h3 id="83">8.3 未知项 🔴</h3>
+<ul>
+<li>蚂蚁数科<strong>上市后总股本设计</strong>——尚未做股改和股票拆分</li>
+<li>蚂蚁数科<strong>IPO确切时间</strong>（CEO仅说"再给一年看看"）</li>
+<li>蚂蚁数科<strong>SER总份数和员工持股池占股本比例</strong>——蚂蚁集团2020年招股书披露30.79亿股对应SERs（占当时总股本约13%），但"一拆四"后子公司单独的股本设计未披露</li>
+<li>蚂蚁数科<strong>最终上市架构</strong>——是否会设VIE、是否新设港股控股壳、是否引入Pre-IPO融资</li>
+<li><strong>在职员工数科部分的退出/分享机制</strong>——目前协议未公开承诺数科上市后允许员工独立持股</li>
+</ul>
+<hr />
+<h2 id="9">9. 综合结论</h2>
+<h3 id="91">9.1 三层每股价值锚定</h3>
+<blockquote>
+<p><strong>A层（当下出资份额）</strong>：每元注册资本市场价值 <strong>21-36元</strong>（基于4/17估值450-750亿区间），中性26.1元/元注册资本
+<strong>B层（员工激励隐含）</strong>：会计口径每份SER的数科部分 <strong>1.51-1.62元</strong>；市场化修正口径 <strong>5.7-14.2元</strong>（保守-上限），中性10.4元
+<strong>C层（IPO预测）</strong>：港币 <strong>8-30元/股</strong>（中性场景，取决于股本设计），中性约18-26 HKD/股</p>
+</blockquote>
+<h3 id="92-vsipo">9.2 当下"账面"vs"IPO预期"的乘数关系</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>路径</th>
+<th>起点</th>
+<th>终点</th>
+<th>乘数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>会计口径 SER数科部分 → 中性市场化数科估值</td>
+<td>1.51元</td>
+<td>10.4元</td>
+<td><strong>6.9倍</strong></td>
+</tr>
+<tr>
+<td>中性市场化数科估值 → 流通后IPO上市价值</td>
+<td>10.4元</td>
+<td>13-15元</td>
+<td><strong>1.3-1.5倍</strong></td>
+</tr>
+<tr>
+<td><strong>总乘数（会计 → 流通）</strong></td>
+<td>1.51元</td>
+<td>13-15元</td>
+<td><strong>约8.6-9.9倍</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>核心结论</strong>：若中性情景兑现且员工能分享数科部分独立上市的收益，<strong>当下账面价值与未来流通价值之间的乘数约8-10倍</strong>。但兑现前提苛刻（IPO成功 + 分享机制）。一旦IPO失败（极端情景），账面价值=0。</p>
+</blockquote>
+<h3 id="93">9.3 给读者的判断框架</h3>
+<ol>
+<li><strong>判断估值区间</strong>：相信4/17的"450-750亿"中位还是相信"80亿员工激励反推口径"？前者隐含市场化逻辑，后者隐含会计保守。</li>
+<li><strong>判断IPO概率</strong>：基础概率约50-60%（参考蚂蚁国际2026先行、数科最早2027下半年）。</li>
+<li><strong>判断股本设计</strong>：紧凑型（11亿股）vs 大型（33亿股）招股价相差约3倍。</li>
+<li><strong>判断流动性</strong>：港股小盘上市后2-3年通常流动性差，"账面价值"到"可兑现现金"还有30-50%折价。</li>
+</ol>
+<blockquote>
+<p><strong>最朴素的回答</strong>：如果今天有人问"蚂蚁数科一份SER背后的数科部分值多少？"——<strong>会计回答1.6元，市场化回答10元，乐观IPO兑现回答15元，IPO失败回答接近会计回购价</strong>。差距6-10倍。</p>
+</blockquote>
+<hr />
+<p><strong>报告字数约 4,100 字 | 数据截止：2026-04-28 | 总置信度：🟡 中（无外部融资锚定为最大不确定性）</strong></p>
+<hr />
+<h3 id="sources">Sources</h3>
+<ul>
+<li><a href="https://finance.sina.com.cn/roll/2025-03-11/doc-inepiccx9386799.shtml">蚂蚁一拆四，离职员工股权激励强制回购被质疑（新浪财经，2025-03-11）</a></li>
+<li><a href="https://www.finlaw.pku.edu.cn/jrfy/gk/2021/2021zd105j/525422.htm">拆解蚂蚁集团SERs激励计划（北大金融法研究中心）</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/190970563">蚂蚁集团"明里暗里"的股权造富史（知乎专栏）</a></li>
+<li><a href="https://m.mp.oeeee.com/a/BAAFRD000020230724822493.html">按5671亿公司估值，蚂蚁集团向股东回购股份（南都）</a></li>
+<li><a href="https://www.guancha.cn/economy/2023_07_10_700346.shtml">蚂蚁估值较巅峰缩水73%，最大赢家竟是前员工？（观察者网）</a></li>
+<li><a href="https://www.thepaper.cn/newsDetail_forward_27719140">蚂蚁数科开始独立运营，注册资本增加20亿元（澎湃新闻）</a></li>
+<li><a href="https://finance.sina.com.cn/wm/2024-09-10/doc-incnsueh9071534.shtml">独立的蚂蚁数科，距离IPO还有多远？（新浪财经）</a></li>
+<li><a href="https://www.investing.com/equities/hundsun-tech">恒生电子（600570）股票最新价格行情（Investing.com）</a></li>
+<li><a href="https://www.investing.com/equities/beijing-kingsoft-office-software-in">金山办公（688111）股票最新价格行情（Investing.com）</a></li>
+<li><a href="http://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2020/2020-9/2020-09-09/6600089.PDF">蚂蚁集团IPO招股说明书（科创板，2020-09-09）</a></li>
+<li><a href="https://news.qq.com/rain/a/20250713A06Z0E00">蚂蚁集团 All in AI，分拆上市能成功吗？（腾讯新闻）</a></li>
+<li><a href="https://news.fx168news.com/politics/cn/2602/7417884.shtml">中国资产折价40-50%也无法套现？全球10大私募巨头遭遇"退出寒冬"（FX168）</a></li>
+<li><a href="https://www.stcn.com/article/detail/3598767.html">2026年港股IPO的四大新趋势（证券时报）</a></li>
+<li><a href="https://www.caproasia.com/2025/05/20/alibaba-fintech-ant-group-plans-hong-kong-ipo-for-ant-international-with-reports-of-valuation-between-8-billion-to-24-billion/">Caproasia: Ant Group Plans Hong Kong IPO for Ant International</a></li>
+<li><a href="http://stock.finance.sina.com.cn/hkstock/info/06638.html">金融壹账通（06638）公司资料（新浪港股）</a></li>
+<li><a href="https://finance.sina.com.cn/roll/2025-05-19/doc-inexazpt0866057.shtml">蚂蚁集团年度业绩出炉：2024年净利润383亿元同比大增61%（新浪财经）</a></li>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/a4b607ef8ab2.html">《看懂蚂蚁数科》系列说明</a><div class="meta">2026-07-13 · 底稿</div></li><li><a href="../r/4fd49db56b96.html">估值迷雾与三重不确定性</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/c26d0abf0436.html">小赛道的龙头，大赛道的追赶者</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/fd0499790777.html">一台金融科技的瑞士军刀</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/90fd78b7bbf2.html">从蚂蚁集团到蚂蚁数科</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/e21f53620456.html">蚂蚁数科（Ant Digital Technologies）5年估值预测（2026-2031）</a><div class="meta">2026-05-15 · 估值仓位</div></li><li><a href="../r/b58abd71a910.html">蚂蚁数科竞争全景研究报告</a><div class="meta">2026-05-12 · 研究</div></li><li><a href="../r/b97fb6c3e1d9.html">蚂蚁数科（Ant Digital Technologies）未上市公司深度研究报告</a><div class="meta">2026-05-11 · 研究</div></li><li><a href="../r/ff45906737fd.html">蚂蚁数科投资研究最终报告</a><div class="meta">2026-05-08 · 研究</div></li><li><a href="../r/590bd8094fa5.html">蚂蚁数科风险与管理层评估</a><div class="meta">2026-05-08 · 组织管理</div></li><li><a href="../r/05dbfa24d3bb.html">蚂蚁数科行业与竞争格局分析</a><div class="meta">2026-05-08 · 研究</div></li><li><a href="../r/e987c19e90c4.html">蚂蚁数科财务与估值深度分析</a><div class="meta">2026-05-08 · 估值仓位</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>

@@ -1,0 +1,118 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>美股七姐妹：七份独立投资研究 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/综合与横评/index.html">综合与横评</a></div><h1>美股七姐妹：七份独立投资研究</h1><div class="meta"><a href="../topics/综合与横评/index.html">综合与横评</a> ｜ 2026-10-19 · 导读 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">报告入口</a></li>
+<li><a href="#_2">方法与审计边界</a></li>
+<li><a href="#_3">复算入口</a></li>
+</ul>
+</div>
+</details><article><p>研究日期：2026年10月19日（北京时间）。行情统一截止2026年10月16日美股常规交易收盘；财务资料采用各公司截至研究日已公布的最新报告，具体期间见各篇首页。</p>
+<p>按照仓库 <code>skills/investment-research.md</code>，使用7路并行分别研究七家公司，再进行交叉审阅。每家公司独立建立业务判断、财务口径与估值假设，报告与复算、数据来源和审计附件一起归档。本目录是一次研究快照，不会随行情自动更新。</p>
+<h2 id="_1">报告入口</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>独立报告</th>
+<th>本次研究判断摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>苹果 Apple（AAPL）</td>
+<td><a href="../r/8153127dfc87.html">苹果投资研究报告</a></td>
+<td>当前安全边际不足，等待更合适的价格</td>
+</tr>
+<tr>
+<td>微软 Microsoft（MSFT）</td>
+<td><a href="../r/1c2a8830b881.html">微软投资研究报告</a></td>
+<td>持有或小额参与，重视AI资本开支兑现</td>
+</tr>
+<tr>
+<td>谷歌 Alphabet（GOOGL / GOOG）</td>
+<td><a href="../r/7aea5ee1f76c.html">谷歌投资研究报告</a></td>
+<td>接近基准估值，持有并关注搜索与云的变化</td>
+</tr>
+<tr>
+<td>亚马逊 Amazon（AMZN）</td>
+<td><a href="../r/6e6703913bcd.html">亚马逊投资研究报告</a></td>
+<td>持有或小额观察，投资收益与经营盈利须分开</td>
+</tr>
+<tr>
+<td>Meta（META）</td>
+<td><a href="../r/759fb4f3ee98.html">Meta投资研究报告</a></td>
+<td>持有或小额观察，现价安全边际有限</td>
+</tr>
+<tr>
+<td>英伟达 NVIDIA（NVDA）</td>
+<td><a href="../r/ca12b2c8a684.html">英伟达投资研究报告</a></td>
+<td>持有或小额参与，关注高增长与终值风险</td>
+</tr>
+<tr>
+<td>特斯拉 Tesla（TSLA）</td>
+<td><a href="../r/24093aff5cf4.html">特斯拉投资研究报告</a></td>
+<td>观察，当前价格要求较高的远期商业化成果</td>
+</tr>
+</tbody>
+</table></div>
+<p>具体买入条件、估值区间、下行情景及推翻结论的触发条件均以完整报告为准。上述摘要不是组合配置建议；各公司的业务结构、财年、正常化调整及风险不同，不宜把单点估值或十年情景回报直接当作统一排名。</p>
+<h2 id="_2">方法与审计边界</h2>
+<ul>
+<li>各报告覆盖商业模式、历史及最新季度财务、护城河、管理层、风险、文明贡献、估值和综合判断，并明确AI研究可能存在的偏差。</li>
+<li>数值使用仓库财务工具与本地Python复算；十年终值采用永续增长与再投资约束，并检查折现率敏感性。三年估值与十年压力情景的关系在报告中解释，十年模型不作为机械的一票否决规则。</li>
+<li>报告数值按固定随机种子进行约15%抽样，保留提取、判定、异常说明与模型配置。工具判定通过不等于整篇报告所有事实均经两份独立外部来源确认。</li>
+<li>审计区分外部双来源、单来源或推导、模型重算及解析器误识别；模型假设的算术一致性不等于对未来结果的事实验证。无法满足双来源要求的项目保留缺口，第三方口径冲突保留原始差异和采用理由。</li>
+<li>本次交叉审阅修正了微软当前股息、特斯拉持股与投票权表述，以及谷歌辅助反向DCF的金融资产重复计入口径；补充了英伟达现金流近似中SBC经济稀释成本未扣除的限制。</li>
+</ul>
+<h2 id="_3">复算入口</h2>
+<p>在仓库根目录使用Python 3运行相应脚本。复算使用归档输入，不自动抓取或更新市场行情；运行会重写同目录中的结果与部分日志。报告文本还包括人工研究判断，单独运行模型脚本并不代表重新完成研究。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>计算脚本</th>
+<th>抽样审计脚本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>苹果</td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E8%8B%B9%E6%9E%9C/recalculate.py">recalculate.py</a></td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E8%8B%B9%E6%9E%9C/audit_report.py">audit_report.py</a></td>
+</tr>
+<tr>
+<td>微软</td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E5%BE%AE%E8%BD%AF/reproduce.py">reproduce.py</a></td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E5%BE%AE%E8%BD%AF/audit_report.py">audit_report.py</a></td>
+</tr>
+<tr>
+<td>谷歌</td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E8%B0%B7%E6%AD%8C/recalculate.py">recalculate.py</a></td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E8%B0%B7%E6%AD%8C/audit_report.py">audit_report.py</a></td>
+</tr>
+<tr>
+<td>亚马逊</td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E4%BA%9A%E9%A9%AC%E9%80%8A/recalculate.py">recalculate.py</a></td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E4%BA%9A%E9%A9%AC%E9%80%8A/audit_report.py">audit_report.py</a></td>
+</tr>
+<tr>
+<td>Meta</td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/Meta/model.py">model.py</a></td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/Meta/audit_meta.py">audit_meta.py</a></td>
+</tr>
+<tr>
+<td>英伟达</td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E8%8B%B1%E4%BC%9F%E8%BE%BE/model.py">model.py</a></td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E8%8B%B1%E4%BC%9F%E8%BE%BE/audit_report.py">audit_report.py</a></td>
+</tr>
+<tr>
+<td>特斯拉</td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E7%89%B9%E6%96%AF%E6%8B%89/reproduce.py">reproduce.py</a></td>
+<td><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-20261019/%E7%89%B9%E6%96%AF%E6%8B%89/audit_report.py">audit_report.py</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>Meta审计脚本读取同目录已归档的 <code>audit-extract.log</code>；若改动报告中的数字或表格，应先使用仓库 <code>tools/report_audit.py extract</code> 重新提取，再核实样本证据与审计映射。其他公司的审计映射同样只适用于本次报告快照，不能直接用于未来版本。</p>
+<p>本项目用于学习与研究，不构成个性化投资建议。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/0f7db0f0b448.html">研究报告索引</a><div class="meta">2026-10-19 · 导读</div></li><li><a href="../r/2fd4a5ed4622.html">除了你自己，没人关心你的成本价</a><div class="meta">2026-09-28 · 公众号</div></li><li><a href="../r/05d9b0332f04.html">快手与 MiniMax：护城河与五年盈利推演</a><div class="meta">2026-09-22 · 研究</div></li><li><a href="../r/9afae466678c.html">六家公司研究与持仓判断</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/692147003320.html">技术分析冲力系统实证检验：三万次事件的证伪记录</a><div class="meta">2026-09-04 · 研究</div></li><li><a href="../r/3fffde9e8894.html">九公司凯利赔率横评：上行、下行与仓位框架</a><div class="meta">2026-09-03 · 横评对比</div></li><li><a href="../r/6a076e0af7bb.html">破净与净现金股全球筛选：美股、港股、A股</a><div class="meta">2026-08-27 · 筛选</div></li><li><a href="../r/13793d9c42cd.html">12 家公司 10 年后利润结局推演（2036 年视角）</a><div class="meta">2026-08-27 · 研究</div></li><li><a href="../r/4328f84a5552.html">巴菲特、段永平、李录 2026Q2 13F 持仓全解</a><div class="meta">2026-08-15 · 财报</div></li><li><a href="../r/be601dae083d.html">七公司十年横评：谁值得重仓，谁应该规避</a><div class="meta">2026-08-14 · 横评对比</div></li><li><a href="../r/8395b6213382.html">BNP Paribas — Income Investment</a><div class="meta">2026-07-15 · 研究</div></li><li><a href="../r/4e1b35597fc2.html">社区研究报告 / Community Reports</a><div class="meta">2026-07-04 · 导读</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
