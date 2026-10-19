@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>搜狐（Sohu.com Limited，NASDAQ: SOHU）投资研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/搜狐/index.html">搜狐</a></div><h1>搜狐（Sohu.com Limited，NASDAQ: SOHU）投资研究报告</h1><div class="meta"><a href="../companies/搜狐/index.html">搜狐</a> ｜ 2026-08-27 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%90%9C%E7%8B%90/%E6%90%9C%E7%8B%90-research-20260827.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>搜狐（Sohu.com Limited，NASDAQ: SOHU）投资研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/搜狐/index.html">搜狐</a></div><div class="layout"><div><h1>搜狐（Sohu.com Limited，NASDAQ: SOHU）投资研究报告</h1><div class="meta"><a href="../companies/搜狐/index.html">搜狐</a> ｜ 2026-08-27 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%90%9C%E7%8B%90/%E6%90%9C%E7%8B%90-research-20260827.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#ai">零、前置：AI 研究偏见自觉</a><ul>
 <li><a href="#b">信息丰富度评级：B+ 级（一手资料极充裕，二手研究几乎为零）</a></li>
@@ -3284,4 +3294,102 @@ EV           = 348.971 − 1,161.732              =  −812.761 M
 </ol>
 <p><strong>过程中被推翻并重做的一整节</strong>：初稿的 13 家同业对比表（宽口径净现金）经复核发现至少 3 处重大错误（微博漏扣 18.7 亿债务、迅雷计入 6.74 亿性质不明的长期投资、知乎市值报低 13%），已整节删除重做为 6 家窄口径可验证版本。<strong>详见 7.5 节开头的方法论说明。</strong></p>
 <hr />
-<p><em>本报告基于截至 2026-08-27 的公开信息。全部核心财务数据取自 SEC 原始申报文件（20-F / 6-K / 13D / 13G）并经 <code>financial_rigor.py</code> 精确验算，已通过 <code>report_audit.py</code> 15% 随机抽样准出流程。不构成投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/5f44bf8b3fa4.html">搜狐(NASDAQ: SOHU) 投研团队研究</a><div class="meta">2026-08-27 · 导读</div></li><li><a href="../r/a461fc5a9230.html">风险与判断——管理层、业务前景、投资价值</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/5a78f8cee136.html">资产价值——净现金与隐含资产分析</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/52278819d1f0.html">业务拆解——搜狗出售后的业务版图</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/73542536e177.html">一家被遗忘的互联网公司</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/93d7d086fb0a.html">搜狐(NASDAQ: SOHU) 投研团队最终报告</a><div class="meta">2026-04-26 · 研究</div></li><li><a href="../r/706292584fe1.html">搜狐(SOHU) 风险与管理层深度分析报告（李录视角）</a><div class="meta">2026-04-26 · 组织管理</div></li><li><a href="../r/d396cbdb5a7f.html">搜狐(SOHU) 行业格局分析报告（芒格&quot;反过来想&quot;视角）</a><div class="meta">2026-04-26 · 研究</div></li><li><a href="../r/ce2a5524570e.html">搜狐(SOHU) 财务深度分析报告：净现金折价的烟蒂股标的（巴菲特视角）</a><div class="meta">2026-04-26 · 估值仓位</div></li><li><a href="../r/11ede32acbff.html">搜狐(NASDAQ: SOHU) 商业模式深度分析（段永平视角）</a><div class="meta">2026-04-26 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<p><em>本报告基于截至 2026-08-27 的公开信息。全部核心财务数据取自 SEC 原始申报文件（20-F / 6-K / 13D / 13G）并经 <code>financial_rigor.py</code> 精确验算，已通过 <code>report_audit.py</code> 15% 随机抽样准出流程。不构成投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/5f44bf8b3fa4.html">搜狐(NASDAQ: SOHU) 投研团队研究</a><div class="meta">2026-08-27 · 导读</div></li><li><a href="../r/a461fc5a9230.html">风险与判断——管理层、业务前景、投资价值</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/5a78f8cee136.html">资产价值——净现金与隐含资产分析</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/52278819d1f0.html">业务拆解——搜狗出售后的业务版图</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/73542536e177.html">一家被遗忘的互联网公司</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/93d7d086fb0a.html">搜狐(NASDAQ: SOHU) 投研团队最终报告</a><div class="meta">2026-04-26 · 研究</div></li><li><a href="../r/706292584fe1.html">搜狐(SOHU) 风险与管理层深度分析报告（李录视角）</a><div class="meta">2026-04-26 · 组织管理</div></li><li><a href="../r/d396cbdb5a7f.html">搜狐(SOHU) 行业格局分析报告（芒格&quot;反过来想&quot;视角）</a><div class="meta">2026-04-26 · 研究</div></li><li><a href="../r/ce2a5524570e.html">搜狐(SOHU) 财务深度分析报告：净现金折价的烟蒂股标的（巴菲特视角）</a><div class="meta">2026-04-26 · 估值仓位</div></li><li><a href="../r/11ede32acbff.html">搜狐(NASDAQ: SOHU) 商业模式深度分析（段永平视角）</a><div class="meta">2026-04-26 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#ai">零、前置：AI 研究偏见自觉</a><ul>
+<li><a href="#b">信息丰富度评级：B+ 级（一手资料极充裕，二手研究几乎为零）</a></li>
+<li><a href="#ai_1">AI 研究局限性声明</a></li>
+</ul>
+</li>
+<li><a href="#_1">一、数据收集与交叉验证</a><ul>
+<li><a href="#11">1.1 市值与股本（已用工具验算）</a></li>
+<li><a href="#12-2026-06-30">1.2 资产负债表（2026-06-30，单位：百万美元）</a></li>
+<li><a href="#13">1.3 每股价值锚（工具精确验算）</a></li>
+<li><a href="#14-5">1.4 近 5 年损益（单位：百万美元）</a></li>
+<li><a href="#15-6">1.5 近 6 个季度（单位：百万美元）</a></li>
+<li><a href="#16-2026q2">1.6 用户数据（畅游，2026Q2）</a></li>
+</ul>
+</li>
+<li><a href="#_2">二、生意本质分析 — 段永平"对的生意"</a><ul>
+<li><a href="#21">2.1 一句话定义</a></li>
+<li><a href="#22">2.2 分部经济：一个吞噬另一个</a></li>
+<li><a href="#23-2007">2.3 单点依赖：一款 2007 年的游戏撑起整个公司</a></li>
+<li><a href="#24">2.4 商业模式画布</a></li>
+<li><a href="#25">2.5 经营杠杆与现金消耗速率</a></li>
+<li><a href="#26">2.6 段永平式追问</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、护城河评估 — 巴菲特"经济护城河"</a><ul>
+<li><a href="#31">3.1 护城河趋势判断</a></li>
+<li><a href="#32">3.2 巴菲特式追问</a></li>
+</ul>
+</li>
+<li><a href="#_4">四、逆向思考与风险清单 — 芒格"反过来想"</a><ul>
+<li><a href="#41">4.1 搜狐可能失败的所有路径</a></li>
+<li><a href="#42-2025">4.2 本报告最重要的发现：2025 年的利润，是"承诺永不分红"换来的</a></li>
+<li><a href="#43">4.3 现金的可及性——精确拆分</a></li>
+<li><a href="#44">4.4 折价为什么不会自己收敛：一套完整的防御工事</a></li>
+<li><a href="#45-4046">4.5 但股东的不满是真实的：独立董事反对票高达 40%–46%</a></li>
+<li><a href="#46">4.6 历史类比</a></li>
+<li><a href="#47">4.7 跨学科交叉检验</a></li>
+<li><a href="#48">4.8 偏误自查</a></li>
+<li><a href="#49">4.9 芒格式追问</a></li>
+</ul>
+</li>
+<li><a href="#_5">五、管理层评估 — 段永平"对的人" + 巴菲特"管理层诚信"</a><ul>
+<li><a href="#51-charles-zhang">5.1 张朝阳（Charles Zhang）</a></li>
+<li><a href="#52">5.2 关键决策复盘</a></li>
+<li><a href="#53">5.3 资本配置能力评分</a></li>
+<li><a href="#54">5.4 激励结构：一个被严重低估的问题</a></li>
+<li><a href="#55-2025">5.5 一个重要的新变量：2025 年枢密院判决</a></li>
+<li><a href="#56">5.6 段永平式追问</a></li>
+</ul>
+</li>
+<li><a href="#_6">六、行业与文明趋势 — 李录"文明演进框架"</a><ul>
+<li><a href="#61">6.1 所在行业的范式位置</a></li>
+<li><a href="#62-tam">6.2 TAM 与天花板</a></li>
+<li><a href="#63">6.3 产业价值链位置</a></li>
+<li><a href="#64">6.4 李录式追问</a></li>
+</ul>
+</li>
+<li><a href="#_7">七、估值与安全边际 — 巴菲特"内在价值" + 段永平"对的价格"</a><ul>
+<li><a href="#71">7.1 当前市场定价</a></li>
+<li><a href="#72-dcf">7.2 反向 DCF：当前股价隐含了什么？</a></li>
+<li><a href="#73">7.3 三情景估值（工具精确计算）</a></li>
+<li><a href="#74">7.4 与自身历史估值对比——这里有一个必须修正的常见误读</a></li>
+<li><a href="#75">7.5 与同类对比：中概"净现金占市值高比例"标的</a></li>
+<li><a href="#76-2">7.6 卖方覆盖：只剩 2 家</a></li>
+<li><a href="#77-pfic">7.7 一个容易被忽略的税务副作用：PFIC</a></li>
+<li><a href="#78">7.8 段永平式追问</a></li>
+</ul>
+</li>
+<li><a href="#_8">八、综合决策备忘录</a><ul>
+<li><a href="#81">8.1 六维汇总</a></li>
+<li><a href="#82">8.2 最终决策</a></li>
+<li><a href="#83">8.3 四位大师的模拟点评</a></li>
+</ul>
+</li>
+<li><a href="#ai-vs">九、AI 分析置信度 vs 投资确定性</a><ul>
+<li><a href="#91">9.1 基于充分数据、置信度高的结论（可以当作事实）</a></li>
+<li><a href="#92">9.2 基于有限信息推理、置信度中等的结论（是判断，不是事实）</a></li>
+<li><a href="#93-ai">9.3 AI 分析置信度 ≠ 投资确定性</a></li>
+</ul>
+</li>
+<li><a href="#_9">十、需要一手验证的问题清单</a><ul>
+<li><a href="#_10">关于游戏（决定现金流还能撑多久）</a></li>
+<li><a href="#_11">关于媒体（决定烧钱还要烧多久）</a></li>
+<li><a href="#_12">关于治理（决定钱能不能回到股东手里）——最重要</a></li>
+</ul>
+</li>
+<li><a href="#a_1">附录 A：关键数据交叉验证记录</a><ul>
+<li><a href="#a1-financial_rigorpy-verify-market-cap">A.1 市值验算（financial_rigor.py verify-market-cap）</a></li>
+<li><a href="#a2-financial_rigorpy-calc">A.2 每股价值锚（financial_rigor.py calc，精确十进制，全部可复现）</a></li>
+<li><a href="#a3">A.3 数据源交叉验证表</a></li>
+<li><a href="#a4">A.4 一手资料清单（可复现）</a></li>
+</ul>
+</li>
+<li><a href="#b_1">附录 B：一页纸结论</a></li>
+<li><a href="#c">附录 C：数据抽检准出记录</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>五强争霸与大厂围猎 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/智谱/index.html">智谱</a></div><h1>五强争霸与大厂围猎</h1><div class="meta"><a href="../companies/智谱/index.html">智谱</a> ｜ 2026-07-06 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%99%BA%E8%B0%B1/%E3%80%8A%E7%9C%8B%E6%87%82%E6%99%BA%E8%B0%B1AI%E3%80%8B/03-%E7%AB%9E%E4%BA%89%E6%A0%BC%E5%B1%80-%E4%BA%94%E5%BC%BA%E4%BA%89%E9%9C%B8%E4%B8%8E%E5%A4%A7%E5%8E%82%E5%9B%B4%E7%8C%8E.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>五强争霸与大厂围猎 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/智谱/index.html">智谱</a></div><div class="layout"><div><h1>五强争霸与大厂围猎</h1><div class="meta"><a href="../companies/智谱/index.html">智谱</a> ｜ 2026-07-06 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%99%BA%E8%B0%B1/%E3%80%8A%E7%9C%8B%E6%87%82%E6%99%BA%E8%B0%B1AI%E3%80%8B/03-%E7%AB%9E%E4%BA%89%E6%A0%BC%E5%B1%80-%E4%BA%94%E5%BC%BA%E4%BA%89%E9%9C%B8%E4%B8%8E%E5%A4%A7%E5%8E%82%E5%9B%B4%E7%8C%8E.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">中国大模型赛道的残酷现实</a></li>
 <li><a href="#_2">创业五强：智谱排在什么位置？</a><ul>
@@ -358,4 +368,25 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 </ul>
 <hr />
 <p><em>本文是《看懂智谱AI》系列第 03 篇。最后 1 篇将于近期推出。</em>
-<em>本系列基于公开信息撰写，不构成任何投资建议。AI行业变化极快，文中数据截至2026年5月，请以最新公告为准。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/86d8914f6111.html">智谱（02513.HK）三大报表解析 · 2026年中期</a><div class="meta">2026-09-01 · 研究</div></li><li><a href="../r/3b7460fa6dbd.html">930 倍市销率，与 2027 年 1 月的大考</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/230778d43384.html">收 1 元烧 4 元的生意怎么读</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/70b80cfcae88.html">全球第六的模型，和一份&quot;租来的&quot;定价权</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/da809ec85068.html">半年二十倍的公司，你以为你看懂了智谱，其实没有</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/0612bdf686ec.html">《看懂智谱AI》系列说明（2026-07-14 版）</a><div class="meta">2026-07-14 · 底稿</div></li><li><a href="../r/50be50f38aac.html">烧钱机器的终局推演</a><div class="meta">2026-07-06 · 深度系列</div></li><li><a href="../r/21a36274b78d.html">智谱（Z.ai，02513.HK）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/68025819dc91.html">智谱AI（Zhipu AI）深度研究报告</a><div class="meta">2026-04-10 · 研究</div></li><li><a href="../r/3ca2f60012de.html">GLM大模型的真实水位</a><div class="meta">2026-04-08 · 深度系列</div></li><li><a href="../r/d34b0bbfeac7.html">清华实验室走出的大模型独角兽</a><div class="meta">2026-01-08 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<em>本系列基于公开信息撰写，不构成任何投资建议。AI行业变化极快，文中数据截至2026年5月，请以最新公告为准。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/86d8914f6111.html">智谱（02513.HK）三大报表解析 · 2026年中期</a><div class="meta">2026-09-01 · 研究</div></li><li><a href="../r/3b7460fa6dbd.html">930 倍市销率，与 2027 年 1 月的大考</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/230778d43384.html">收 1 元烧 4 元的生意怎么读</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/70b80cfcae88.html">全球第六的模型，和一份&quot;租来的&quot;定价权</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/da809ec85068.html">半年二十倍的公司，你以为你看懂了智谱，其实没有</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/0612bdf686ec.html">《看懂智谱AI》系列说明（2026-07-14 版）</a><div class="meta">2026-07-14 · 导读</div></li><li><a href="../r/50be50f38aac.html">烧钱机器的终局推演</a><div class="meta">2026-07-06 · 深度系列</div></li><li><a href="../r/21a36274b78d.html">智谱（Z.ai，02513.HK）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/68025819dc91.html">智谱AI（Zhipu AI）深度研究报告</a><div class="meta">2026-04-10 · 研究</div></li><li><a href="../r/3ca2f60012de.html">GLM大模型的真实水位</a><div class="meta">2026-04-08 · 深度系列</div></li><li><a href="../r/d34b0bbfeac7.html">清华实验室走出的大模型独角兽</a><div class="meta">2026-01-08 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">中国大模型赛道的残酷现实</a></li>
+<li><a href="#_2">创业五强：智谱排在什么位置？</a><ul>
+<li><a href="#deepseek">DeepSeek：智谱的头号威胁</a></li>
+<li><a href="#minimax">MiniMax：同赛道的港股竞争</a></li>
+<li><a href="#kimic">月之暗面/Kimi：C端的赢家</a></li>
+</ul>
+</li>
+<li><a href="#_3">大厂围猎：智谱面对的降维打击</a><ul>
+<li><a href="#_4">字节跳动/豆包：流量碾压</a></li>
+<li><a href="#_5">阿里巴巴/通义千问：开源生态的正面对撞</a></li>
+<li><a href="#tob">百度/文心一言：ToB的老对手</a></li>
+</ul>
+</li>
+<li><a href="#token">全球Token消耗份额：智谱在哪里？</a></li>
+<li><a href="#_6">智谱的生态位到底是什么？</a></li>
+<li><a href="#_7">竞争格局的三个判断</a></li>
+<li><a href="#_8">下期预告</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
