@@ -1,0 +1,80 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>关于 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script></head><body data-root="" data-page="" data-title="关于"><header class="top"><div class="bar"><a class="brand" href="index.html">AI Berkshire</a><nav class="main"><a href="index.html">首页</a><a href="companies/index.html">公司</a><a href="topics/index.html">专题</a><a href="dates/index.html">时间</a><a href="types/index.html">类型</a><a href="wechat/index.html">公众号</a><a href="search.html">搜索</a><a href="about.html" class="on">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="">
+<h1>关于 AI Berkshire</h1>
+<div class="meta">一个用 AI 做价值投资研究的开源项目 · 收录 1420 篇成品报告 · 109 家公司 · 更新至 2026-10-19</div>
+
+<h2>这是什么</h2>
+<p>AI Berkshire 是一套开源的投资研究方法：把价值投资的分析框架写成 Claude Code 与 Codex 都能调用的研究技能（Skill），
+让一个人加上 AI 代理，能完成一个投研小组的工作量：读一手财报、交叉核验数字、多视角对抗论证、写成结论明确的报告。</p>
+<p>这个网站是项目的阅读入口，收录全部成品研究，按公司、专题、时间、类型整理，电脑、手机、电子阅读器都能读。</p>
+
+<h2>三个地方，三种精度</h2>
+<div class="layers">
+<div><b>公众号「复利炼丹炉」</b><span>最精简。只发值得深研的公司，加上报告之外的个人判断与取舍。共 53 篇。</span></div>
+<div><b>本网站</b><span>全部成品报告。日常阅读、按公司翻历史判断、查找都在这里。</span></div>
+<div><b><a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a></b><span>全部底稿：研究技能、审计核验、证据、中间稿都在。每篇报告页底部列有对应底稿。</span></div>
+</div>
+
+<h2>研究方法的几条原则</h2>
+<ul>
+<li><b>只用一手材料</b>：交易所公告、年报、业绩会原话。旧报告只当线索，不当证据。</li>
+<li><b>事实与判断分开写</b>：凡是推算和判断都标明，数字注明来源与口径。</li>
+<li><b>强制给结论</b>：不写"一方面、另一方面"的两头讨好，给出可以被检验的判断和检验时间点。</li>
+<li><b>可追溯</b>：同一家公司的报告按时间排在一起，判断怎么变、为什么变，都能对照着看。</li>
+</ul>
+
+<h2>怎么用这个网站</h2>
+<ul>
+<li><a href="companies/index.html">按公司</a>：每家公司一页，分公众号发表、深度系列、财报、估值等类型。</li>
+<li><a href="topics/index.html">专题</a>：行业研究、横向对比、筛选池。</li>
+<li><a href="dates/index.html">按时间</a>与<a href="types/index.html">按类型</a>：看最近写了什么。</li>
+<li><a href="search.html">搜索</a>：输入公司名或关键词，例如"拼多多 财报"。</li>
+<li>右上角可调字号和深浅色；读过的文章会标记进度，下次打开可以接着读（只记在你自己的浏览器里）。</li>
+<li>也可以用 RSS 订阅更新：<a href="feed.xml">feed.xml</a>。</li>
+</ul>
+
+<h2>关注公众号</h2>
+<div class="wx"><img src="files/assets/wechat-qr.png" alt="公众号复利炼丹炉二维码"><div><b>公众号「复利炼丹炉」</b><span>站上是全部成品报告；值得深研的公司和报告之外的判断与取舍，精选发在公众号。微信扫码关注。</span></div></div>
+
+<h2>想自己跑一遍</h2>
+<p>研究技能、使用说明和全部报告原稿都在 <a href="https://github.com/xbtlin/ai-berkshire">GitHub</a>，按仓库首页的"快速开始"装好即可在 Claude Code 或 Codex 里调用。
+欢迎提 issue 和改进建议。</p>
+
+<h2>免责声明</h2>
+<p class="meta">本站内容是个人研究记录，不构成任何投资建议。报告中的判断可能有误，数据以公司公告原件为准。投资有风险，决策请独立判断。</p>
+</main><footer>AI Berkshire 研究阅读 ｜ <a href="about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 08:05 UTC</footer></body></html>
