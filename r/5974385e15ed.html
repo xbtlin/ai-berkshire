@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 会不会绕过美团？ · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/美团/index.html">美团</a></div><h1>AI 会不会绕过美团？</h1><div class="meta"><a href="../companies/美团/index.html">美团</a> ｜ 2026-07-01 · 公众号 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/%E6%8A%95%E8%B5%84%E7%82%BC%E4%B8%B9/%E7%BE%8E%E5%9B%A2/20260701-AI-%E4%BC%9A%E4%B8%8D%E4%BC%9A%E7%BB%95%E8%BF%87%E7%BE%8E%E5%9B%A2.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>AI 会不会绕过美团？ · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/美团/index.html">美团</a></div><div class="layout"><div><h1>AI 会不会绕过美团？</h1><div class="meta"><a href="../companies/美团/index.html">美团</a> ｜ 2026-07-01 · 公众号 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/%E6%8A%95%E8%B5%84%E7%82%BC%E4%B8%B9/%E7%BE%8E%E5%9B%A2/20260701-AI-%E4%BC%9A%E4%B8%8D%E4%BC%9A%E7%BB%95%E8%BF%87%E7%BE%8E%E5%9B%A2.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">外卖不是信息生意，是履约生意</a></li>
 <li><a href="#ai">AI 反而可能强化头部平台</a></li>
@@ -18,7 +28,7 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 </details><article><blockquote>
 <p>公众号发表：2026-07-01｜发表标题：AI 会不会绕过美团？
 公众号原文：https://mp.weixin.qq.com/s?__biz=MzIzNjQ4Nzc2OQ==&amp;mid=2247483926&amp;idx=1&amp;sn=82b621e4dcc6b571b0098d734192ac76&amp;chksm=e8d65720dfa1de365888da27d319749fb5a848bbdeae0590cd6b46be85f2fb83f52808d7c496
-原稿：<a href="../r/a349d6ac557c.html">reports/美团/美团-公众号-AI抖音护城河01-AI会不会绕过美团-20260629.md</a>
+原稿：<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E5%9B%A2/%E7%BE%8E%E5%9B%A2-%E5%85%AC%E4%BC%97%E5%8F%B7-AI%E6%8A%96%E9%9F%B3%E6%8A%A4%E5%9F%8E%E6%B2%B301-AI%E4%BC%9A%E4%B8%8D%E4%BC%9A%E7%BB%95%E8%BF%87%E7%BE%8E%E5%9B%A2-20260629.md">reports/美团/美团-公众号-AI抖音护城河01-AI会不会绕过美团-20260629.md</a>
 备注：三篇系列只发了第1篇
 以下正文抓取自公众号发表版本。</p>
 </blockquote>
@@ -186,4 +196,18 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 <p>一面是效率工具，帮助它优化调度、推荐、客服和商户运营；</p>
 <p>一面是入口变量，可能削弱 App 心智、压缩广告价值、加剧跨平台比价。</p>
 <p>所以，对美团护城河的判断要分层：</p>
-<p><strong>AI 会冲击入口，但很难替代履约；AI 会重分配利润，但不等于消灭平台</strong>。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/46875cd48cf3.html">美团（3690.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/faeed57c9604.html">美团：AI 能创造多少利润，十年后还能留下多少？</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/0f5eec4b44dd.html">审计范围</a><div class="meta">2026-09-25 · 底稿</div></li><li><a href="../r/b9902ea4a5b8.html">美团（03690.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/14f7d53fcf1f.html">audit_scope</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/5c818f86a8c3.html">美团这27亿利润，有35亿不是主业赚的</a><div class="meta">2026-08-29 · 财报</div></li><li><a href="../r/c0f90d479cfd.html">美团扭亏为盈了</a><div class="meta">2026-08-29 · 公众号</div></li><li><a href="../r/f18ab8ccf860.html">全球最赚钱的外卖平台，为什么反而最便宜？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/636f49fa1105.html">抖音、京东和骑手成本，谁才是美团真正的威胁？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/a349d6ac557c.html">AI 会不会绕过美团？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/c24146600d5e.html">全球本地生活投资地图：美团之外，谁更像好生意？</a><div class="meta">2026-06-28 · 公众号</div></li><li><a href="../r/237df92d9661.html">美团到底输在哪里，又赢在哪里？</a><div class="meta">2026-06-28 · 公众号</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<p><strong>AI 会冲击入口，但很难替代履约；AI 会重分配利润，但不等于消灭平台</strong>。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/46875cd48cf3.html">美团（3690.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/faeed57c9604.html">美团：AI 能创造多少利润，十年后还能留下多少？</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/b9902ea4a5b8.html">美团（03690.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/c0f90d479cfd.html">美团扭亏为盈了</a><div class="meta">2026-08-29 · 公众号</div></li><li><a href="../r/f18ab8ccf860.html">全球最赚钱的外卖平台，为什么反而最便宜？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/636f49fa1105.html">抖音、京东和骑手成本，谁才是美团真正的威胁？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/c24146600d5e.html">全球本地生活投资地图：美团之外，谁更像好生意？</a><div class="meta">2026-06-28 · 公众号</div></li><li><a href="../r/237df92d9661.html">美团到底输在哪里，又赢在哪里？</a><div class="meta">2026-06-28 · 公众号</div></li><li><a href="../r/234f472498ba.html">万物到家的命门，不是流量，是那张配送网</a><div class="meta">2026-06-28 · 公众号</div></li><li><a href="../r/17e2187bbcdd.html">本地生活服务产业链投资研究报告：以美团为核心</a><div class="meta">2026-06-25 · 研究</div></li><li><a href="../r/8fadef149063.html">AI与抖音对美团护城河的影响 + 全球外卖平台对比</a><div class="meta">2026-06-25 · 横评对比</div></li><li><a href="../r/8ce93598869e.html">外卖大战：美团一年亏 234 亿换来了什么</a><div class="meta">2026-06-14 · 公众号</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">外卖不是信息生意，是履约生意</a></li>
+<li><a href="#ai">AI 反而可能强化头部平台</a></li>
+<li><a href="#ai_1">酒旅比外卖更容易被 AI 冲击</a></li>
+<li><a href="#ai_2">AI 入口变强后，美团会损失什么</a><ul>
+<li><a href="#_2">第一，品牌心智变弱</a></li>
+<li><a href="#_3">第二，平台可能被迫更透明地比价</a></li>
+<li><a href="#_4">第三，商家投放预算可能重新分流</a></li>
+</ul>
+</li>
+<li><a href="#_5">本篇结论</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

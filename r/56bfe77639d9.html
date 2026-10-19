@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>快手 AI 赌注双向推演：赌赢与赌输的完整路径 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/快手/index.html">快手</a></div><h1>快手 AI 赌注双向推演：赌赢与赌输的完整路径</h1><div class="meta"><a href="../companies/快手/index.html">快手</a> ｜ 2026-08-27 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B-AI%E8%B5%8C%E6%B3%A8%E5%8F%8C%E5%90%91%E6%8E%A8%E6%BC%94-%E8%B5%8C%E8%B5%A2%E4%B8%8E%E8%B5%8C%E8%BE%93%E7%9A%84%E5%AE%8C%E6%95%B4%E8%B7%AF%E5%BE%84-20260827.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>快手 AI 赌注双向推演：赌赢与赌输的完整路径 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/快手/index.html">快手</a></div><div class="layout"><div><h1>快手 AI 赌注双向推演：赌赢与赌输的完整路径</h1><div class="meta"><a href="../companies/快手/index.html">快手</a> ｜ 2026-08-27 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B-AI%E8%B5%8C%E6%B3%A8%E5%8F%8C%E5%90%91%E6%8E%A8%E6%BC%94-%E8%B5%8C%E8%B5%A2%E4%B8%8E%E8%B5%8C%E8%BE%93%E7%9A%84%E5%AE%8C%E6%95%B4%E8%B7%AF%E5%BE%84-20260827.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">零、这份报告解决什么问题</a></li>
 <li><a href="#_2">一、赌注的内容</a></li>
@@ -530,4 +540,37 @@ IPO 比回购更划算的条件：  持股价值 &gt; 42 亿美元
 </tbody>
 </table></div>
 <p><strong>腾讯 13.63 亿人民币与阿里云 13.63 亿人民币出资完全相同，并列最大单一战略投资方</strong>，百度为 3.41 亿人民币。既有报告因未识别"上海啟善投資"与"Parallel Mars"的实际控制人，将其归入独立财务投资者，导致误判。</p>
-<p>这一更正同时解释了公告的关连交易属性：甲方 Atypical Holdings 的普通合伙人为独立非执行董事卢蓉女士，丙方 Neumann Intelligence I Holdings 由独立非执行董事张斐先生全资拥有，乙方由公司主要股东腾讯最终控制。张斐先生、卢蓉女士及李朝晖先生（于腾讯任职）就相关董事会决议案放弃投票，系四方均为关连方所致。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2f73e86f63d4.html">快手与可灵：创始人、技术选型、赛道与十年推演</a><div class="meta">2026-10-17 · 研究</div></li><li><a href="../r/b78ea6a95236.html">可灵与快手十年推演（2026-10-17）</a><div class="meta">2026-10-17 · 导读</div></li><li><a href="../r/f80334f8f914.html">快手与可灵：财务与经营证据底稿</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/722f16789334.html">可灵技术与竞争证据：从模型领先到经济护城河</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/8ab3cb0a66e9.html">快手与可灵深度研究报告</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/948672d4f2d6.html">审计说明</a><div class="meta">2026-10-16 · 底稿</div></li><li><a href="../r/1ac5b5717c6b.html">快手与可灵：创始人、组织与治理证据</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/7661a5d37927.html">快手与可灵深度研究 · 2026-10-16</a><div class="meta">2026-10-16 · 导读</div></li><li><a href="../r/29d256651108.html">快手科技（1024.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/207317a7a1f4.html">快手十年后：生态还在不在、为什么还去快手、可灵结局、还能赚多少</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/16ff30b4d9f0.html">快手AI利润模型与核验记录</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/4ac8125172ef.html">快手：AI对未来三年利润的影响与2036年盈利能力</a><div class="meta">2026-09-24 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<p>这一更正同时解释了公告的关连交易属性：甲方 Atypical Holdings 的普通合伙人为独立非执行董事卢蓉女士，丙方 Neumann Intelligence I Holdings 由独立非执行董事张斐先生全资拥有，乙方由公司主要股东腾讯最终控制。张斐先生、卢蓉女士及李朝晖先生（于腾讯任职）就相关董事会决议案放弃投票，系四方均为关连方所致。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2f73e86f63d4.html">快手与可灵：创始人、技术选型、赛道与十年推演</a><div class="meta">2026-10-17 · 研究</div></li><li><a href="../r/8ab3cb0a66e9.html">快手与可灵深度研究报告</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/7661a5d37927.html">快手与可灵深度研究 · 2026-10-16</a><div class="meta">2026-10-16 · 导读</div></li><li><a href="../r/29d256651108.html">快手科技（1024.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/207317a7a1f4.html">快手十年后：生态还在不在、为什么还去快手、可灵结局、还能赚多少</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/4ac8125172ef.html">快手：AI对未来三年利润的影响与2036年盈利能力</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/10599f815158.html">藏在快手账上的另一家公司——可灵、180 亿美元与一纸对赌</a><div class="meta">2026-09-08 · 公众号</div></li><li><a href="../r/2a50c3bd07f0.html">快手（01024.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/26ace3ca9427.html">快手与可灵：差异化与护城河研究</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/59171a329556.html">看懂快手③：不到八倍市盈率，为什么还要看现金</a><div class="meta">2026-09-06 · 公众号</div></li><li><a href="../r/09e117072e53.html">看懂快手②：藏在账上的另一家公司，和一纸对赌</a><div class="meta">2026-09-06 · 公众号</div></li><li><a href="../r/720b4c67e325.html">看懂快手③：便宜的市盈率，与昂贵的再投资</a><div class="meta">2026-09-06 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">零、这份报告解决什么问题</a></li>
+<li><a href="#_2">一、赌注的内容</a></li>
+<li><a href="#180">一点五、180 亿美元是什么价：优先权益不等于普通股</a><ul>
+<li><a href="#6833">附带一条：68.33% 的控制权是打折的</a></li>
+</ul>
+</li>
+<li><a href="#280-180">一点六、赌赢的真实门槛是 280 亿美元，不是 180 亿美元</a></li>
+<li><a href="#_3">二、赌赢：三档结局</a><ul>
+<li><a href="#_4">时间对赌赢的稀释</a></li>
+</ul>
+</li>
+<li><a href="#_5">三、赌输：认输的财务恢复路径</a><ul>
+<li><a href="#31">3.1 认输后利润表会发生什么</a></li>
+<li><a href="#32">3.2 自由现金流：需要打一个折扣</a></li>
+<li><a href="#33">3.3 回购权触发是负债，不是资产</a></li>
+<li><a href="#34">3.4 赌输两档</a></li>
+</ul>
+</li>
+<li><a href="#_6">四、双向推演的结论：风险不在资产，在时间和纪律</a></li>
+<li><a href="#_7">五、对资本配置的重新评价</a></li>
+<li><a href="#_8">六、为什么不能用衰退型社交媒体做对标</a></li>
+<li><a href="#_9">七、监控清单（按对结局的影响排序）</a><ul>
+<li><a href="#_10">决定赌赢赌输</a></li>
+<li><a href="#_11">决定止损纪律</a></li>
+<li><a href="#_12">决定主业分母</a></li>
+</ul>
+</li>
+<li><a href="#_13">八、结论</a></li>
+<li><a href="#_14">数据来源</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
