@@ -1,0 +1,857 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>茅台：10 年后吨价是现在的几倍，以及 2036 年利润推导 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/茅台/index.html">茅台</a></div><h1>茅台：10 年后吨价是现在的几倍，以及 2036 年利润推导</h1><div class="meta"><a href="../companies/茅台/index.html">茅台</a> ｜ 2026-09-26 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8C%85%E5%8F%B0/%E8%8C%85%E5%8F%B0-%E5%90%A8%E4%BB%B7%E5%80%8D%E6%95%B0%E4%B8%8E2036%E5%B9%B4%E5%88%A9%E6%B6%A6%E6%8E%A8%E5%AF%BC-20260926.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、结论先行</a></li>
+<li><a href="#_2">二、茅台的涨价历史</a><ul>
+<li><a href="#21">2.1 飞天出厂价（含税，元/瓶）</a></li>
+<li><a href="#22">2.2 年复合增速对照</a></li>
+<li><a href="#23">2.3 吨价增长拆解</a></li>
+<li><a href="#24">2.4 渠道空间还剩多少</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、顶级奢侈品的涨价历史</a><ul>
+<li><a href="#31">3.1 单品长期序列</a></li>
+<li><a href="#32">3.2 公司层面的提价幅度</a></li>
+<li><a href="#33">3.3 涨价快于财富增速的后果</a></li>
+<li><a href="#34">3.4 对茅台适用的四条规律</a></li>
+</ul>
+</li>
+<li><a href="#_4">四、吨价倍数：两个视角及其调和</a><ul>
+<li><a href="#41">4.1 视角一：价格类比（只看价格，不看需求）</a></li>
+<li><a href="#42">4.2 视角二：终端消费预算（量和价一起约束）</a></li>
+<li><a href="#43">4.3 两个视角的调和</a></li>
+</ul>
+</li>
+<li><a href="#2036">五、2036 年利润推导</a><ul>
+<li><a href="#51-2025">5.1 模型与 2025 年校准</a></li>
+<li><a href="#52">5.2 三个情景</a></li>
+<li><a href="#53-2036">5.3 敏感性：吨价倍数 × 2036 年销量</a></li>
+</ul>
+</li>
+<li><a href="#_5">六、风险与未建模因素</a></li>
+<li><a href="#_6">七、跟踪清单</a></li>
+<li><a href="#_7">附：一手来源</a></li>
+</ul>
+</div>
+</details><article><p><strong>ai-berkshire 茅台研究 | 2026-09-26</strong></p>
+<blockquote>
+<p>口径：吨价只算茅台酒（营收 ÷ 销量，不含增值税）；利润为全公司归母净利润。基准年是 2025 年，推演年是 2036 年（共 11 年）。
+可信度标注<strong>：[A]</strong> 一手原件已打开核对（年报、公告、统计公报、业绩会逐字稿、品牌官网价格存档）<strong>；[B]</strong> 权威媒体或研究机构转述，已打开核对<strong>；[C]</strong> 转售平台或博主汇编<strong>；[估]</strong> 本文推算。
+本文只用一手事实和可复核的计算，不引用任何既有研究报告的结论。
+销量部分见同目录《茅台-基酒产量与5年后销量-2036可售量推导-20260925》。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、结论先行</h2>
+<ol>
+<li><strong>10 年后（2036 年）茅台酒吨价约是 2025 年的 1.25 倍，区间 0.9 到 1.5 倍</strong>。 2025 年吨价 313.4 万元，2036 年中性约 391 万元，年化约 2.0%。</li>
+<li><strong>单看涨价速度去类比，会高估</strong>。 如果照搬茅台过去和顶级奢侈品的提价速度，吨价是 1.16 到 2.08 倍，中性 1.58 倍。但这要求茅台酒的终端消费总额每年增长 6.8%（乐观情景要 10.1%），而同期销量还要多卖约 35%。奢侈品史给出的规律是：可持续的提价约等于核心客群的财富增速（名义 4% 到 7%），涨得比财富快，量就会掉。量和价必须一起受"终端消费预算"约束。</li>
+<li><strong>约束变紧的关键事实：公司几乎已经拿走了全部终端价格</strong>。
+   - 2025 年茅台酒每瓶含税收入约 1,770 元，同期飞天散瓶批价在 1,560（年末）到 2,210 元（2024 年末）之间。
+   - 2026 年 9 月批价 1,715 到 1,730 元，合同价 1,369 元，两者之比只有 1.25。
+   - 2020 到 2025 年，公司茅台酒收入年增 11.5%。但按"销量 × 年末散瓶批价"估算的终端消费额，从约 1,661 亿降到约 1,459 亿，年化 −2.6%[估]。过去五年的收入增长，主要来自把渠道利润收回公司，而这个空间已经所剩无几。</li>
+<li><strong>2036 年归母净利润：中性约 1,270 亿元，是 2025 年 823 亿的约 1.5 倍，年化约 4.0%；悲观约 690 亿（年化 −1.6%），乐观约 1,750 亿（年化 7.1%）</strong>。</li>
+<li><strong>最敏感的变量是终端消费额的增速，其次是销量</strong>。 按中性的其他参数，吨价每差 0.1 倍，2036 年利润差约 110 亿；销量每差 3,000 吨，利润差约 60 亿。</li>
+</ol>
+<hr />
+<h2 id="_2">二、茅台的涨价历史</h2>
+<h3 id="21">2.1 飞天出厂价（含税，元/瓶）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>生效</th>
+<th>调价</th>
+<th>涨幅</th>
+<th>一手依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2001-08</td>
+<td>185→218</td>
+<td>+17.8%</td>
+<td>研报转述 [B]</td>
+</tr>
+<tr>
+<td>2003 下半年</td>
+<td>218→268</td>
+<td>+22.9%</td>
+<td>2003 年报"下半年适当调整产品结构和产品价格"[A]，单价 [C]</td>
+</tr>
+<tr>
+<td>2006-02-10</td>
+<td>268→308</td>
+<td>+14.9%</td>
+<td>临 2006-005"平均上调幅度约为 15%"[A]</td>
+</tr>
+<tr>
+<td>2007-03-01</td>
+<td>308→358</td>
+<td>+16.2%</td>
+<td>临 2007-001"平均上调幅度约为 12%"[A]</td>
+</tr>
+<tr>
+<td>2008-01-11</td>
+<td>358→439</td>
+<td>+22.6%</td>
+<td>临 2008-001"平均上调幅度约为 20%"[A]</td>
+</tr>
+<tr>
+<td>2010-01-01</td>
+<td>439→499</td>
+<td>+13.7%</td>
+<td>临 2009-012"约为 13%"[A]</td>
+</tr>
+<tr>
+<td>2011-01-01</td>
+<td>499→619</td>
+<td>+24.0%</td>
+<td>临 2010-023"20%左右"[A]</td>
+</tr>
+<tr>
+<td>2012-09-01</td>
+<td>619→819</td>
+<td>+32.3%</td>
+<td>临 2012-015"20%～30%"[A]</td>
+</tr>
+<tr>
+<td>2018 年起</td>
+<td>819→969</td>
+<td>+18.3%</td>
+<td>临 2017-028"18%左右"[A]</td>
+</tr>
+<tr>
+<td>2023-11-01</td>
+<td>969→1,169</td>
+<td>+20.6%</td>
+<td>临 2023-032"约为 20％"[A]</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>1,169→1,269</td>
+<td>+8.6%</td>
+<td>临 2026-006，原文写明单价[A]</td>
+</tr>
+<tr>
+<td><strong>2026-07-18</strong></td>
+<td><strong>1,269→1,369</strong></td>
+<td><strong>+7.9%</strong></td>
+<td><strong>临 2026-028："随行就市、相对平稳、供需适配、量价平衡"，i 茅台零售价 1,539→1,639</strong>[A]</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>规律一：提价集中在少数年份</strong>。
+- 2013 到 2017 年冻结 5 年，2019 到 2023 年 10 月又冻结近 5 年。
+- 每次提价 8% 到 32%，最近两次幅度在变小。</p>
+<h3 id="22">2.2 年复合增速对照</h3>
+<p>截至 2025 年；CPI、收入、人均 GDP、M2 均来自国家统计局历年统计公报[A]。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>5 年</th>
+<th>10 年</th>
+<th>15 年</th>
+<th>20 年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>飞天出厂价</td>
+<td>3.8%</td>
+<td>3.6%</td>
+<td>5.8%</td>
+<td>7.6%</td>
+</tr>
+<tr>
+<td>茅台酒吨价</td>
+<td>4.9%</td>
+<td>7.0%</td>
+<td>缺</td>
+<td>缺</td>
+</tr>
+<tr>
+<td>散瓶批价（年末）</td>
+<td>−8.4%</td>
+<td>6.3%*</td>
+<td>约 1.5%</td>
+<td>缺</td>
+</tr>
+<tr>
+<td>CPI</td>
+<td>0.7%</td>
+<td>1.4%</td>
+<td>1.9%</td>
+<td>2.2%</td>
+</tr>
+<tr>
+<td>城镇人均可支配收入</td>
+<td>5.2%</td>
+<td>6.1%</td>
+<td>7.5%</td>
+<td>8.8%</td>
+</tr>
+<tr>
+<td>人均 GDP</td>
+<td>6.3%</td>
+<td>7.0%</td>
+<td>8.0%</td>
+<td>10.1%</td>
+</tr>
+</tbody>
+</table></div>
+<p>* 10 年批价的起点是 2015 年厂家规定的最低一批价 850 元，不是市场价。</p>
+<p><strong>规律二：拉长到 20 年，出厂价增速（7.6%）略低于城镇收入增速（8.8%）；近 10 年则明显更慢（3.6% 对 6.1%）</strong>。</p>
+<h3 id="23">2.3 吨价增长拆解</h3>
+<p>计算方法：年报"茅台酒营收 ÷ 茅台酒销量"[A]，再拆成三个因子。
+- <strong>出厂价因子</strong>：不含税合同价 × 2,000 瓶/吨。
+- <strong>渠道因子</strong>：直销卖价高于合同价带来的加成。
+- <strong>结构因子</strong>：非标产品和规格结构，是前两项之外的残差。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>吨价（万元/吨）</th>
+<th>直销占比</th>
+<th>渠道因子</th>
+<th>结构因子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2015</td>
+<td>159.3</td>
+<td>6.0%</td>
+<td>1.024</td>
+<td>1.112</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>247.2</td>
+<td>14.0%</td>
+<td>1.058</td>
+<td>1.362</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>284.5</td>
+<td>39.9%</td>
+<td>1.193</td>
+<td>1.390</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>314.4</td>
+<td>43.9%</td>
+<td>1.127</td>
+<td>1.348</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>313.4</td>
+<td>50.1%</td>
+<td>1.146</td>
+<td>1.322</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>区间</th>
+<th>吨价倍数</th>
+<th>年化</th>
+<th>出厂价 × 渠道 × 结构</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2015→2025</td>
+<td>1.97</td>
+<td>7.0%</td>
+<td>1.478 × 1.119 × 1.189</td>
+</tr>
+<tr>
+<td>2020→2025</td>
+<td>1.27</td>
+<td>4.9%</td>
+<td>1.206 × 1.082 × 0.971</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>规律三：2020 年以后，结构因子转为拖累</strong>。 2026 年这一趋势在加速：
+- 公司 1 月 1 日"取消市场指导价，生肖、精品、陈年贵州茅台酒等产品全部下调回归市场定价"。
+- 2026 年半年度业绩说明会上，陈华说"产品综合吨酒单价和利润同比有所下降"[A，本地实录]。
+- 2026 年上半年直销占比 57.3%（2025 年同期 44.8%），合同价平均也在上涨，但吨价仍然下降。这说明结构因子的降幅大于另外两项的升幅[估]。</p>
+<h3 id="24">2.4 渠道空间还剩多少</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年末</th>
+<th>散瓶批价</th>
+<th>批价 ÷ 出厂价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2019</td>
+<td>2,420-2,450</td>
+<td>约 2.5</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>约 2,700</td>
+<td>2.79</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>2,750</td>
+<td>2.84</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>2,700</td>
+<td>2.31</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>2,210</td>
+<td>1.89</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>1,560（12-12 首次跌破 1,499）</td>
+<td>1.33</td>
+</tr>
+<tr>
+<td>2026-09-08</td>
+<td>1,715</td>
+<td>1.25（按 1,369 算）</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源与可信度：批价来自今日酒价、券商研报和媒体报道 [B]；2020-2022 年的数据来自自媒体行情表 [C]。</p>
+<p><strong>规律四：比值从 2.8 降到 1.25，是公司收入增速远高于终端价格的原因，也说明提价空间的来源正在枯竭</strong>。
+- 2014 到 2015 年最困难时，这个比值是 1.0 到 1.04。那时经销商几乎零毛利，是历史下限。
+- 如果全部走直销：i 茅台 1,639 元 ÷ 合同价 1,369 元 = 1.197，而 2025 年的渠道因子是 1.146。所以渠道因子最多还能再抬高约 4.5%。</p>
+<hr />
+<h2 id="_3">三、顶级奢侈品的涨价历史</h2>
+<h3 id="31">3.1 单品长期序列</h3>
+<p>以下都是名义美元价格。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>单品</th>
+<th>区间</th>
+<th>年化</th>
+<th>可信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>爱马仕铂金包 35 码</td>
+<td>1984–2026</td>
+<td>5.1%</td>
+<td>2025/26 年为 [B]，早年为 [C]</td>
+</tr>
+<tr>
+<td>爱马仕铂金包 30 码（美国）</td>
+<td>2019–2026</td>
+<td>4.6%，其中 2019–2021 年近乎零</td>
+<td>[B]/[C]</td>
+</tr>
+<tr>
+<td>香奈儿 Classic Flap 中号</td>
+<td>1990–2026</td>
+<td>6.7%</td>
+<td>[C]+[B]</td>
+</tr>
+<tr>
+<td>同上</td>
+<td>2016–2026</td>
+<td>9.1%</td>
+<td>[C]+[B]</td>
+</tr>
+<tr>
+<td>劳力士 Submariner Date</td>
+<td>1996–2026</td>
+<td>4.15%</td>
+<td>近年为 [A]，早年为 [C]</td>
+</tr>
+<tr>
+<td>同上</td>
+<td>2016–2026</td>
+<td>2.9%</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>百达翡丽 Nautilus</td>
+<td>1976–2020</td>
+<td>5.6%</td>
+<td>[A]/[B]</td>
+</tr>
+<tr>
+<td>路易威登 Speedy 30</td>
+<td>2001–2022</td>
+<td>7.1%；其中 2014–2019 年约 1%，2019–2022 年 16.8%</td>
+<td>[A]</td>
+</tr>
+<tr>
+<td>路易十三干邑</td>
+<td>2010–2025</td>
+<td>6.9%</td>
+<td>[B]</td>
+</tr>
+<tr>
+<td>唐培里侬香槟</td>
+<td>2010–2024</td>
+<td>5.0%</td>
+<td>[A]/[B]</td>
+</tr>
+<tr>
+<td>拉菲期酒首发价</td>
+<td>2010–2025 年份</td>
+<td>−3.8%</td>
+<td>[A]/[B]</td>
+</tr>
+<tr>
+<td>LVMH 干邑每瓶收入</td>
+<td>2015–2025</td>
+<td>−0.5%</td>
+<td>[A] LVMH 财务文件</td>
+</tr>
+<tr>
+<td>LVMH 香槟每瓶收入</td>
+<td>2015–2025</td>
+<td>+2.0%</td>
+<td>[A]</td>
+</tr>
+</tbody>
+</table></div>
+<p>对照：美国 CPI 1990–2025 年化 2.6% [A]。</p>
+<h3 id="32">3.2 公司层面的提价幅度</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>提价</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>爱马仕</td>
+<td>2011–2021 年每年 1.5%–2%；2023 年约 7%；2024 年 8%–9%；2025 年 6%–7%；2026 年"5%-6%"</td>
+<td>路透转载 [B]；2026 年为业绩会逐字稿 [A]</td>
+</tr>
+<tr>
+<td>LVMH / 路易威登</td>
+<td>2019 年"no price increase"；过去四五年增长中"volume was one-third"</td>
+<td>业绩会逐字稿 [A]</td>
+</tr>
+<tr>
+<td>香奈儿</td>
+<td>2024 年时装均价 +3%，此后按通胀节奏</td>
+<td>[B]</td>
+</tr>
+<tr>
+<td>开云 / Gucci</td>
+<td>营收 2022→2025 −43%；CEO："we went too far with prices"</td>
+<td>[A]/[B]</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="33">3.3 涨价快于财富增速的后果</h3>
+<p><strong>涨价速度</strong>：
+- 汇丰测算，2019 到 2024 年个人奢侈品均价年化约 8.7% [B]。
+- 同期高净值人群财富年增约 5% [B]。</p>
+<p><strong>随后发生的事</strong>：
+- 2023 年行业销量十年来首次下降。
+- 客户减少约 5,000 万 [B]。
+- 香奈儿 2024 年营业利润 −30% [B]。
+- 2025 年干邑行业出货量 −15%、金额 −25% [B]。</p>
+<h3 id="34">3.4 对茅台适用的四条规律</h3>
+<ol>
+<li><strong>长期中枢</strong>： 名义 4% 到 7%，扣除 CPI 后 2% 到 4%，约等于核心客群的财富增速。</li>
+<li><strong>节奏</strong>： 涨价集中在少数年份，中间常有多年不动。</li>
+<li><strong>超速的代价</strong>： 十年持续涨 9% 以上的先例只有香奈儿一家，而且随后掉量。涨得比财富快，先掉量，再被迫放慢或降价。</li>
+<li><strong>酒和包不一样</strong>： 手袋、腕表的官方标价几乎不下调；酒类（葡萄酒期酒、干邑）的市场价会回撤 30% 到 50%。茅台两者兼有：出厂价像手袋，批价像酒。</li>
+</ol>
+<hr />
+<h2 id="_4">四、吨价倍数：两个视角及其调和</h2>
+<h3 id="41">4.1 视角一：价格类比（只看价格，不看需求）</h3>
+<pre><code>吨价倍数 = 出厂价倍数 × 渠道因子变化 × 结构因子变化
+出厂价倍数 = (1,369 / 1,169) × (1 + g)^10
+</code></pre>
+<ul>
+<li>1,369 元是 2026 年 7 月的合同价，比 2025 年全年的 1,169 元已高 17.1%。</li>
+<li>从 2026 年年中到 2036 年年中按 10 年计。</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>g（出厂价年增）</th>
+<th>依据</th>
+<th>渠道</th>
+<th>结构</th>
+<th>吨价倍数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>低</td>
+<td>1%</td>
+<td>约等于中国 CPI；参照爱马仕 2011-2021 年、劳力士近十年</td>
+<td>1.00</td>
+<td>0.90</td>
+<td>1.16</td>
+</tr>
+<tr>
+<td>中</td>
+<td>3.5%</td>
+<td>茅台近 10 年出厂价 3.6%；奢侈品实际 2%-3% 加中国 CPI 约 1%</td>
+<td>1.02</td>
+<td>0.94</td>
+<td>1.58</td>
+</tr>
+<tr>
+<td>高</td>
+<td>5.5%</td>
+<td>奢侈品长期区间上沿</td>
+<td>1.04</td>
+<td>1.00</td>
+<td>2.08</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="42">4.2 视角二：终端消费预算（量和价一起约束）</h3>
+<p><strong>核心恒等式</strong>： 公司茅台酒收入 = 终端消费额 × 公司拿走的比例。</p>
+<p><strong>第一步：公司拿走的比例已接近上限</strong>。
+- 2025 年每瓶含税收入约 1,770 元，已经和飞天散瓶批价同一个量级。
+- 批价 ÷ 合同价只剩 1.25，渠道因子最多再抬约 4.5%。
+- 所以"公司拿走的比例"未来最多再提高 0% 到 5%。</p>
+<p><strong>第二步：终端消费额的增速决定一切</strong>。 历史参照如下。
+- 茅台自己：2020 到 2025 年，按"销量 × 年末散瓶批价"估算，终端额从约 1,661 亿降到约 1,459 亿，年化 −2.6% [估]。这个口径把非标产品也按飞天批价计算，而且对年末时点很敏感，只能作为方向性证据。
+- 奢侈品：长期中枢约等于核心客群财富增速，名义 4% 到 7%。
+- 中国城镇人均可支配收入：近 5 年名义年增 5.2%。</p>
+<p><strong>第三步：吨价 = 终端额增长 ÷ 销量增长 × 拿走比例变化</strong>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>终端额年增 G</th>
+<th>依据</th>
+<th>2036 年销量</th>
+<th>量倍数</th>
+<th>拿走比例</th>
+<th><strong>吨价倍数</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td>0%</td>
+<td>延续 2020-2025 年的实际走势</td>
+<td>52,300 吨（兑现率 0.80，低产能）</td>
+<td>1.12</td>
+<td>1.00</td>
+<td><strong>0.89</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td><strong>4.5%</strong></td>
+<td>奢侈品财富同步规律，城镇收入近 5 年 5.2%，名义增长放缓</td>
+<td><strong>62,700 吨</strong></td>
+<td><strong>1.34</strong></td>
+<td><strong>1.03</strong></td>
+<td><strong>1.25</strong></td>
+</tr>
+<tr>
+<td>乐观</td>
+<td>7%</td>
+<td>奢侈品长期上沿，需要需求回到上行周期</td>
+<td>67,900 吨</td>
+<td>1.45</td>
+<td>1.05</td>
+<td><strong>1.52</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="43">4.3 两个视角的调和</h3>
+<p>视角一的中性情景（吨价 1.58 倍）加上销量增长，隐含终端消费额每年增长 <strong>6.8%</strong>；乐观情景隐含 <strong>10.1%</strong>。这比奢侈品可持续的中枢（约 5%）和茅台近 5 年的实际表现（约 −2.6%）都高。按奢侈品史的规律，这会导致掉量，也就是卖不完新增的产能。</p>
+<p>所以<strong>以视角二为准</strong>：视角一是"价格不受需求约束"时的上限，视角二是量价一致的解。</p>
+<p><strong>结论：2036 年茅台酒吨价约为 2025 年的 1.25 倍（约 391 万元/吨），区间 0.9 到 1.5 倍</strong>。</p>
+<p>对出厂价的含义 [估]：2026 年的两次提价已经预支了约 17% 的涨幅。中性情景下，2027 到 2036 年出厂价只能跟着终端价温和上涨，大约每年 1% 到 2%。更高的提价需要需求回升来支撑。</p>
+<hr />
+<h2 id="2036">五、2036 年利润推导</h2>
+<h3 id="51-2025">5.1 模型与 2025 年校准</h3>
+<p>以下参数全部来自 2025 年年报原件 [A]。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2025 年</th>
+<th>模型取法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>茅台酒营业成本</td>
+<td>94.85 亿，折合每吨 20.3 万元</td>
+<td>吨成本每年 +5%（敏感性 3% 到 7%）</td>
+</tr>
+<tr>
+<td>系列酒营业成本率</td>
+<td>23.9%</td>
+<td>保持不变</td>
+</tr>
+<tr>
+<td>税金及附加 / 营业收入</td>
+<td>16.2%（2026 年上半年同为 16.2%）</td>
+<td>保持不变</td>
+</tr>
+<tr>
+<td>销售费用 / 营业收入</td>
+<td>4.3%</td>
+<td>保持不变</td>
+</tr>
+<tr>
+<td>管理 + 研发费用</td>
+<td>85.1 亿</td>
+<td>每年 +4%</td>
+</tr>
+<tr>
+<td>利息收入加财务收益（净额）</td>
+<td>约 38.6 亿</td>
+<td>2036 年取 30 亿（利率下行）</td>
+</tr>
+<tr>
+<td>实际所得税率</td>
+<td>25.7%</td>
+<td>保持不变</td>
+</tr>
+<tr>
+<td>少数股东占净利润</td>
+<td>3.5%</td>
+<td>保持不变</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>校准结果</strong>： 用 2025 年实际的销量、吨价和系列酒收入代入，模型算出归母净利润 823.3 亿，年报实际值是 823.2 亿。</p>
+<h3 id="52">5.2 三个情景</h3>
+<p>系列酒收入的背景：2025 年 222.7 亿（同比 −9.8%），2026 年上半年 129.3 亿（同比 −6.0%）[A]。2036 年取悲观 150 亿、中性 250 亿、乐观 350 亿，属于假设，占利润比重小。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>茅台酒销量</th>
+<th>吨价（万元/吨）</th>
+<th>茅台酒收入</th>
+<th>营业收入</th>
+<th><strong>归母净利润</strong></th>
+<th>较 2025 年</th>
+<th>年化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td>52,300</td>
+<td>280</td>
+<td>1,465</td>
+<td>1,616</td>
+<td><strong>约 690 亿</strong></td>
+<td>0.84 倍</td>
+<td>−1.6%</td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td><strong>62,700</strong></td>
+<td><strong>391</strong></td>
+<td><strong>2,449</strong></td>
+<td><strong>2,699</strong></td>
+<td><strong>约 1,270 亿</strong></td>
+<td><strong>1.54 倍</strong></td>
+<td><strong>4.0%</strong></td>
+</tr>
+<tr>
+<td>乐观</td>
+<td>67,900</td>
+<td>477</td>
+<td>3,238</td>
+<td>3,588</td>
+<td><strong>约 1,750 亿</strong></td>
+<td>2.12 倍</td>
+<td>7.1%</td>
+</tr>
+</tbody>
+</table></div>
+<p>吨成本增速取 3% 或 7% 时，中性利润在 1,232 到 1,298 亿之间，影响很小。茅台酒毛利率在 93% 左右，成本不是关键变量。</p>
+<h3 id="53-2036">5.3 敏感性：吨价倍数 × 2036 年销量</h3>
+<p>表中是 2036 年归母净利润（亿元），其他参数按中性。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>吨价倍数 \ 销量</th>
+<th>52,000</th>
+<th>56,000</th>
+<th>60,000</th>
+<th>63,000</th>
+<th>66,000</th>
+<th>69,000</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.9</td>
+<td>735</td>
+<td>789</td>
+<td>843</td>
+<td>884</td>
+<td>925</td>
+<td>966</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>827</td>
+<td>889</td>
+<td>951</td>
+<td>997</td>
+<td>1,043</td>
+<td>1,089</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>920</td>
+<td>989</td>
+<td>1,058</td>
+<td>1,109</td>
+<td>1,161</td>
+<td>1,212</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>1,013</td>
+<td>1,089</td>
+<td>1,165</td>
+<td>1,222</td>
+<td>1,279</td>
+<td>1,336</td>
+</tr>
+<tr>
+<td><strong>1.3</strong></td>
+<td>1,106</td>
+<td>1,189</td>
+<td>1,272</td>
+<td><strong>1,334</strong></td>
+<td>1,397</td>
+<td>1,459</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>1,199</td>
+<td>1,289</td>
+<td>1,379</td>
+<td>1,447</td>
+<td>1,515</td>
+<td>1,582</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>1,292</td>
+<td>1,389</td>
+<td>1,487</td>
+<td>1,560</td>
+<td>1,633</td>
+<td>1,706</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>1,385</td>
+<td>1,489</td>
+<td>1,594</td>
+<td>1,672</td>
+<td>1,751</td>
+<td>1,829</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td>1,757</td>
+<td>1,890</td>
+<td>2,023</td>
+<td>2,123</td>
+<td>2,222</td>
+<td>2,322</td>
+</tr>
+</tbody>
+</table></div>
+<p>注意：量和价不是独立的。在需求一定时，多卖量就得接受更低的价，所以表中右下角（量价同时最高）需要终端消费额每年增长 7% 以上。</p>
+<hr />
+<h2 id="_5">六、风险与未建模因素</h2>
+<ol>
+<li><strong>终端消费额是最大变量</strong>。 中性情景假设它从近 5 年的约 −2.6% 回到 4.5%，这是一个"需求恢复正常"的假设，不是既成事实。如果终端额保持零增长，结果接近悲观情景。</li>
+<li><strong>消费税政策</strong>。 模型假设税金及附加占收入 16.2% 不变。如果消费税征收环节从生产端后移、按更高的终端价计税，税负会上升。这一项没有建模。</li>
+<li><strong>2026 年吨价下降的幅度</strong>。 半年报不披露销量，2026 年全年吨价要等 2027 年 4 月的年报。如果降幅较大，起点就会下移。</li>
+<li><strong>产能投产节奏</strong>。 销量情景依赖"十四五"技改剩余片区何时招标，详见销量推导报告。每多投产或少投产一个车间，约影响 2036 年利润 ±40 亿 [估]。</li>
+<li><strong>利息收入和分红政策</strong>。 现金大量分红会减少利息收入，但对利润影响不到 3%。</li>
+</ol>
+<h2 id="_6">七、跟踪清单</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>看什么</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每月</td>
+<td>飞天散瓶批价 ÷ 合同价 1,369</td>
+<td>低于 1.15 说明经销商利润被挤压，公司提价空间关闭；回到 1.5 以上说明需求在恢复</td>
+</tr>
+<tr>
+<td>2027-04</td>
+<td>2026 年报的茅台酒吨价</td>
+<td>检验结构因子下滑了多少，确定吨价起点</td>
+</tr>
+<tr>
+<td>每年</td>
+<td>销量 × 批价（终端额代理）</td>
+<td>检验 G 更接近 0% 还是 4.5%</td>
+</tr>
+<tr>
+<td>每年</td>
+<td>直销占比、i 茅台收入</td>
+<td>渠道因子还剩约 4.5% 的空间</td>
+</tr>
+<tr>
+<td>持续</td>
+<td>消费税改革动向</td>
+<td>模型没有覆盖的最大政策风险</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_7">附：一手来源</h2>
+<p><strong>茅台公告与年报</strong>
+- 茅台历次调价公告：巨潮资讯网 static.cninfo.com.cn（临 2006-005、2007-001、2008-001、2009-012、2010-023、2012-015、2017-028、2023-032、2026-006、2026-028）。
+  - 临 2026-028：http://static.cninfo.com.cn/finalpage/2026-07-18/1225431263.PDF
+  - 临 2026-006：http://static.cninfo.com.cn/finalpage/2026-03-31/1225055491.PDF
+- 2015-2025 年年报、2026 年半年报：上交所、巨潮资讯网。
+- 2026 年半年度业绩说明会：上证路演中心活动 40250。</p>
+<p><strong>宏观</strong>
+- 国家统计局 2005-2025 年国民经济和社会发展统计公报。</p>
+<p><strong>奢侈品：公司与官方</strong>
+- 爱马仕 2025 年报业绩会逐字稿：https://www.investing.com/news/transcripts/earnings-call-transcript-hermes-q4-2025-sees-strong-revenue-growth-93CH-4501940
+- 路透关于爱马仕提价的报道：https://www.investing.com/news/stock-market-news/hermes-eyes-big-price-rises-says-no-sign-of-slowdown-2916708
+- 开云 CEO 谈涨价过头：https://www.marketscreener.com/news/kering-ceo-de-meo-we-recognize-we-went-too-far-with-prices-to-point-where-volumes-dropped-dramatica-ce7e5adfdf8bfe21</p>
+<p><strong>奢侈品：媒体与研究</strong>
+- 香奈儿：https://www.vogue.com/article/we-expect-ebbs-and-flows-chanels-ceo-on-why-its-investing-despite-the-downturn
+- 奢侈品是否该降价（汇丰数据）：https://www.vogue.com/article/should-luxury-brands-reduce-their-prices
+- 贝恩 2025：https://www.bain.com/insights/finding-a-new-longevity-for-luxury/
+- 苏富比，铂金包与 Classic Flap 价格：https://www.sothebys.com/en/articles/hermes-raises-the-birkin-bag-price-what-you-need-to-know ，https://www.sothebys.com/en/articles/the-always-timeless-chanel-classic-flap-bag</p>
+<p><strong>批价</strong>
+- 今日酒价（经东方财富转载）；2019 年末为中信证券研报。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/182781367df7.html">贵州茅台（600519.SH）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/6fe91ae8beda.html">贵州茅台：年提价5%、基酒与扩产约束下的2036年利润</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/7ee64f0fa927.html">贵州茅台：年轻人还喝白酒吗，2036 年能赚多少钱？</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/38a9c82be7ef.html">茅台酒：基酒产量与 5 年后销量的关系，及 2036 年可销售吨数推导</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/1810203c51d0.html">核查记录：5%提价与产能补充</a><div class="meta">2026-09-25 · 底稿</div></li><li><a href="../r/453a65139351.html">核查说明：茅台需求与2036利润</a><div class="meta">2026-09-25 · 底稿</div></li><li><a href="../r/707730966f80.html">贵州茅台护城河、文化、需求与十年利润研究报告</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/a99fffd717dd.html">核查范围与复算</a><div class="meta">2026-09-07 · 导读</div></li><li><a href="../r/ac3332f16888.html">贵州茅台 2026 年半年度业绩说明会全文实录</a><div class="meta">2026-08-21 · 财报</div></li><li><a href="../r/a7f540a35746.html">贵州茅台（600519）1 / 3 / 5 / 10 年利润推演</a><div class="meta">2026-08-15 · 研究</div></li><li><a href="../r/c44cc84c3a8e.html">贵州茅台2026年中报解读</a><div class="meta">2026-08-15 · 公众号</div></li><li><a href="../r/ba235b333dc3.html">白酒消费下降对茅台的真实影响，与 10 年、20 年利润推演</a><div class="meta">2026-08-14 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

@@ -1,0 +1,141 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>美股七姐妹财务口径独立复核 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/美股七姐妹-investment-team-20261019/index.html">美股七姐妹-investment-team-20261019</a></div><h1>美股七姐妹财务口径独立复核</h1><div class="meta"><a href="../topics/美股七姐妹-investment-team-20261019/index.html">美股七姐妹-investment-team-20261019</a> ｜ 2026-10-19 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E8%82%A1%E4%B8%83%E5%A7%90%E5%A6%B9-investment-team-20261019/evidence/price-and-calendar-review.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">价格截面</a></li>
+<li><a href="#_2">美国财政部收益率</a></li>
+<li><a href="#_3">下一次财报：均在截止日之后</a></li>
+</ul>
+</div>
+</details><article><p>复核日与信息截止：2026-10-19（Asia/Shanghai）。股票价格截面：2026-10-16 美国正常交易时段收盘，单位 USD/股。此文件是行业研究员的独立交叉检查，不替代主财务报告。</p>
+<p><strong>结论：指定七个收盘价均一致；美国财政部 10 年 5.09%、30 年 5.43% 均准确。七家公司下一次财报均尚未发生。需特别校正 META 为 10 月 21 日、NVDA 为 11 月 17 日；Apple 11 月 2 日已在官方动态页面直接核实。</strong></p>
+<h2 id="_1">价格截面</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>股票</th>
+<th style="text-align: right;">待核价格</th>
+<th>本次核实</th>
+<th>两个公开行情入口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AAPL</td>
+<td style="text-align: right;">343.46</td>
+<td>一致</td>
+<td><a href="https://chartexchange.com/symbol/nasdaq-aapl/historical/">Chartexchange 日线</a>；<a href="https://idc.chase.com/stockspublic/historicalquotes?symbol=AAPL">JPMorgan/IDC</a></td>
+</tr>
+<tr>
+<td>MSFT</td>
+<td style="text-align: right;">529.05</td>
+<td>一致</td>
+<td><a href="https://finance.yahoo.com/quote/MSFT/history/?ltr=1">Yahoo 历史行情</a>；<a href="https://chartexchange.com/symbol/nasdaq-msft/historical/">Chartexchange 日线</a></td>
+</tr>
+<tr>
+<td>GOOGL</td>
+<td style="text-align: right;">340.59</td>
+<td>一致，Class A</td>
+<td><a href="https://stockanalysis.com/stocks/googl/history/">Stock Analysis 历史行情</a>；<a href="https://www.google.com/finance/beta/quote/GOOGL%3ANASDAQ?window=6M">Google Finance</a></td>
+</tr>
+<tr>
+<td>AMZN</td>
+<td style="text-align: right;">250.00</td>
+<td>一致</td>
+<td><a href="https://finance.yahoo.com/quote/AMZN/history/?p=AMZN">Yahoo 历史行情</a>；<a href="https://ca.investing.com/equities/amazon-com-inc-historical-data">Investing 日线</a></td>
+</tr>
+<tr>
+<td>META</td>
+<td style="text-align: right;">709.33</td>
+<td>一致</td>
+<td><a href="https://finance.yahoo.com/quote/META/history/">Yahoo 历史行情</a>；<a href="https://stockanalysis.com/stocks/meta/history/">Stock Analysis 历史行情</a></td>
+</tr>
+<tr>
+<td>NVDA</td>
+<td style="text-align: right;">214.13</td>
+<td>一致</td>
+<td><a href="https://chartexchange.com/symbol/nasdaq-nvda/historical/">Chartexchange 日线</a>；<a href="https://www.google.com/finance/quote/NVDA%3ANASDAQ?window=5D">Google Finance</a></td>
+</tr>
+<tr>
+<td>TSLA</td>
+<td style="text-align: right;">354.72</td>
+<td>一致</td>
+<td><a href="https://finance.yahoo.com/quote/TSLA/history/">Yahoo 历史行情</a>；<a href="https://www.investing.com/equities/tesla-motors-historical-data">Investing 日线</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>七组已调用 <code>tools/financial_rigor.py cross-validate</code>，容差设为 0%，均返回偏差 0.00%。此检查只确认录入值一致，不验证底层数据源是否完全独立。</p>
+<p>价格边界与易错点：</p>
+<ul>
+<li>以上是多个行情商公开页面的交叉检查，未取得交易所签发的原始收盘数据文件。Nasdaq 历史页本次未返回可用日线。因此可表述为“多行情源核实的正常收盘价”，不应写成“交易所原始数据已核验”。不同入口可能共享底层供应商。</li>
+<li>Chartexchange 页头最后一笔显示 AAPL 343.42、MSFT 528.99、NVDA 214.12，而 10 月 16 日日线 Close 为表内数值；TSLA 页头 16:00:08 为 354.91，日线 Close 为 354.72。不可用页头秒级快照替换日线正常收盘。</li>
+<li>盘后价格另列，例如 Yahoo 的 MSFT 526.83、META 705.32、TSLA 352.46，均不进入本次估值价格截面。GOOGL 与 GOOG 为不同股份类别，也不能混用报价。</li>
+<li>以上核实不证明市值分母正确；市值还须按各公司对应时点实际流通/发行股数及股份类别重新核对，不能直接使用 EPS 的加权平均稀释股数。</li>
+</ul>
+<h2 id="_2">美国财政部收益率</h2>
+<p><a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&amp;type=daily_treasury_yield_curve">U.S. Treasury Daily Treasury Par Yield Curve Rates，2026 年表</a> 的 <strong>10/16/2026</strong> 一行明确列示：10 年 <strong>5.09%</strong>，20 年 <strong>5.47%</strong>，30 年 <strong>5.43%</strong>。两个待核数字正确，勿把 20 年列误当 30 年列。</p>
+<p>口径是美元名义国债的 par/CMT 曲线估计。财政部说明其依据约纽约时间下午 3:30 的指示性买方报价，并非实际成交价；它不是零息即期利率，也不是任意具体债券的到期收益率。不能把该值直接称为股票资本成本：风险现金流与折现率必须匹配；若使用无风险折现率，现金流须采用一致的确定性等价处理。上述利率只是当前可核验的美元长期无风险参照。</p>
+<h2 id="_3">下一次财报：均在截止日之后</h2>
+<p>日期按美国当地日历；“电话会”时间不自动等同于新闻稿精确发布时间。下面只列原始来源可支持的精度。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>下一次报告/电话会</th>
+<th>已核实时间与期间</th>
+<th>原始来源和证据日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AAPL</td>
+<td><strong>2026-11-02</strong></td>
+<td>FY26Q4 电话会 14:00 PT / 17:00 ET；该页未给新闻稿精确发布时间</td>
+<td><a href="https://investor.apple.com/investor-relations/default.aspx">Apple IR</a>，2026-10-19 浏览器实际渲染页直接读取 “FY 26 Fourth Quarter Results”；未标公告发布日期</td>
+</tr>
+<tr>
+<td>MSFT</td>
+<td><strong>2026-10-28</strong></td>
+<td>FY27Q1；本次直接读取的主 IR 页确认日期，未列时分</td>
+<td><a href="https://www.microsoft.com/en-us/investor/default?DocType=Current&amp;SortOrder=Date+Ascending">Microsoft IR</a>，2026-10-19 页面标为 Upcoming，并明确 next earnings release 日期</td>
+</tr>
+<tr>
+<td>GOOGL</td>
+<td><strong>2026-10-28</strong></td>
+<td>2026Q3 电话会 13:30 PT / 16:30 ET</td>
+<td><a href="https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/default.aspx">Alphabet 官方活动页</a>，2026-10-19 浏览器直接读取；公司日期公告为 2026-10-06，另见<a href="https://www.marketscreener.com/news/alphabet-announces-date-of-third-quarter-2026-financial-results-conference-call-ce785dd9dc89f62d">公司公告原文转载</a></td>
+</tr>
+<tr>
+<td>AMZN</td>
+<td><strong>2026-10-29</strong></td>
+<td>2026Q3 电话会 14:00 PT / 17:00 ET</td>
+<td><a href="https://press.aboutamazon.com/2026/10/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call">Amazon 官方公告</a>，2026-10-15 发布</td>
+</tr>
+<tr>
+<td>META</td>
+<td><strong>2026-10-21</strong></td>
+<td>2026Q3 正常收盘后发布；电话会 13:30 PT / 16:30 ET</td>
+<td><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Third-Quarter-2026-Results/default.aspx">Meta 官方公告</a>，2026-10-12 发布</td>
+</tr>
+<tr>
+<td>NVDA</td>
+<td><strong>2026-11-17</strong></td>
+<td>FY27Q3；已核实下一次电话会日期，未给精确时间</td>
+<td><a href="https://investor.nvidia.com/files/content_files/TRANSCRIPT_-NVIDIA-Corp-NVDA-US-Q2-2027-Earnings-Call-26-August-2026-5_00-PM-ET.pdf">NVIDIA 官方托管 FY27Q2 电话会全文</a>，2026-08-26，第 15 页，IR 负责人结束语明确下一次为 November 17；该文本由 FactSet 整理并托管于公司 IR</td>
+</tr>
+<tr>
+<td>TSLA</td>
+<td><strong>2026-10-21</strong></td>
+<td>2026Q3 正常收盘后发布；电话会 16:30 Central / 17:30 ET</td>
+<td><a href="https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments">Tesla 官方交付公告</a>，2026-10-02 发布</td>
+</tr>
+</tbody>
+</table></div>
+<p>需要带回总报告的差异与证据边界：</p>
+<ol>
+<li><strong>META 不可套用月底惯例，NVDA 不可沿用 11 月 19 日等历史日期。</strong> 当前读到的公司来源分别支持 10 月 21 日和 11 月 17 日；NVDA 的证据日期较早，若公司后来更新应以最新公告为准。</li>
+<li><strong>Apple 的 11 月 2 日已经公司官方确认。</strong> 部分第三方页面仍标 Estimated，另有第三方把季度错写为 Q3；本次官方动态页明确 FY26Q4，电话会为 17:00 ET，不能使用第三方 16:30 ET 说法。</li>
+<li><strong>截至 10 月 19 日，七家的上述财报结果都还不能作为已发生事实。</strong> Tesla 已在 10 月 2 日披露 Q3 交付与储能装机，但尚未披露 Q3 利润、现金流；Apple FY26 已结束也不等于 FY26 年报已发布。财年标签不同：Microsoft FY27Q1、NVIDIA FY27Q3 不等于自然年 2027 已发生。</li>
+<li>Apple、Alphabet 的静态网页抓取未显示活动内容，但浏览器渲染页可以读取，故不能把抓取空白解读为公司尚未公告。所有日期是已公布安排，仍可能在截止日以后变更。</li>
+</ol></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/da37ffbf8ac5.html">七姐妹股份、非经常损益与净现金桥接复核</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/8e787fdf654f.html">发布前审计与证据边界</a><div class="meta">2026-10-19 · 底稿</div></li><li><a href="../r/82694e84fe2e.html">特斯拉（TSLA）独立投资研究：特斯拉已有汽车、储能和有限无人运营业务，但当前市值主要依靠尚未完整证明的自动驾驶与新业务现金</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/5f2ae49af9a0.html">英伟达（NVDA）独立投资研究：英伟达仍拥有最强的AI计算系统优势之一，但不能再按完全不承担客户资本风险的供应商估值</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/5d7f2f55b07a.html">Meta（META）独立投资研究：Meta的AI广告回报证据比许多纯AI叙事更直接，但前沿模型、数据中心和硬件投入远超已证明的收益范围</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/4e32cdda886b.html">亚马逊（AMZN）独立投资研究：亚马逊同时拥有购物闭环与云平台优势，但经营增长尚未等比例变成股东现金</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/47de0ee840f4.html">谷歌（GOOGL）独立投资研究：谷歌的搜索、YouTube和云依然拥有强大变现基础；真正的估值分歧是AI改变每次交互利润后的长期现金</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/5910c21f367a.html">微软（MSFT）独立投资研究：微软的企业客户基础和工作流优势最扎实，但云增长正在消耗更多资本</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/3854c0441f72.html">苹果（AAPL）独立投资研究：苹果仍是高质量消费科技生意，但当前价格要求远高于成熟硬件与服务组合的基准增长</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/918c8e9c0fa0.html">美股七姐妹：七份独立投研报告</a><div class="meta">2026-10-19 · 导读</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

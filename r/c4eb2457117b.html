@@ -1,0 +1,345 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>泡泡玛特与 MiniMax：商业质量和 2036 年利润底稿 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/七公司商业质量与十年利润-20260906/index.html">七公司商业质量与十年利润-20260906</a></div><h1>泡泡玛特与 MiniMax：商业质量和 2036 年利润底稿</h1><div class="meta"><a href="../topics/七公司商业质量与十年利润-20260906/index.html">七公司商业质量与十年利润-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E4%B8%83%E5%85%AC%E5%8F%B8%E5%95%86%E4%B8%9A%E8%B4%A8%E9%87%8F%E4%B8%8E%E5%8D%81%E5%B9%B4%E5%88%A9%E6%B6%A6-20260906/%E6%B3%A1%E6%B3%A1%E7%8E%9B%E7%89%B9%E4%B8%8EMiniMax%E5%BA%95%E7%A8%BF.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">实际利润基点</a></li>
+<li><a href="#_2">商业模式、护城河与文化</a></li>
+<li><a href="#2036">2036 年单年利润模型：全部为假设</a><ul>
+<li><a href="#_3">泡泡：客户消费额决定规模，产品和渠道纪律决定留下的利润</a></li>
+<li><a href="#minimax">MiniMax：用收入、毛利与持续研发推利润，不给亏损做复利</a></li>
+</ul>
+</li>
+<li><a href="#_4">最强反方与年度证伪指标</a></li>
+<li><a href="#_5">计算与核验范围</a></li>
+</ul>
+</div>
+</details><article><p>研究与资料截止：2026-09-06。已执行系统 <code>date</code>。金额按表内原币；2036 为十年后的<strong>单年、名义币值、可持续税后归母经济利润</strong>，不是十年累计、自由现金流或每股收益。模型扣持续研发、股份支付、折旧摊销与正常库存损耗；不计公允价值重估、资产出售等一次性收益。负利润不给税盾。情景不赋概率，“基准”是明确条件成立时的经营结果，并非统计中位数。</p>
+<p>泡泡玛特信息丰富度 A、十年判断置信度中等；MiniMax 信息丰富度 B、十年判断置信度低。两者的报表可信度均高于对其未来利润的确定性。本次只研究指定四维，不含价格或交易建议。</p>
+<h2 id="_1">实际利润基点</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司与指标</th>
+<th style="text-align: right;">2025 全年实际</th>
+<th style="text-align: right;">2026 上半年实际</th>
+<th>口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>泡泡收入，亿元人民币</td>
+<td style="text-align: right;">371.20052</td>
+<td style="text-align: right;">171.72921</td>
+<td>IFRS</td>
+</tr>
+<tr>
+<td>泡泡归母净利润，亿元人民币</td>
+<td style="text-align: right;">127.75689</td>
+<td style="text-align: right;">50.38384</td>
+<td>IFRS，本公司拥有人应占</td>
+</tr>
+<tr>
+<td>泡泡公司经调整净利润，亿元人民币</td>
+<td style="text-align: right;">130.83646</td>
+<td style="text-align: right;">51.55777</td>
+<td>非 IFRS、合并口径，不能直接替代归母</td>
+</tr>
+<tr>
+<td>泡泡毛利率</td>
+<td style="text-align: right;">72.1%</td>
+<td style="text-align: right;">69.7%</td>
+<td>公司披露四舍五入</td>
+</tr>
+<tr>
+<td>MiniMax 收入，百万美元</td>
+<td style="text-align: right;">79.038</td>
+<td style="text-align: right;">116.573</td>
+<td>IFRS、已确认收入</td>
+</tr>
+<tr>
+<td>MiniMax 归母净利润，百万美元</td>
+<td style="text-align: right;">-1,871.617</td>
+<td style="text-align: right;">-357.997</td>
+<td>IFRS</td>
+</tr>
+<tr>
+<td>MiniMax 经调整净利润，百万美元</td>
+<td style="text-align: right;">-250.856</td>
+<td style="text-align: right;">-293.031</td>
+<td>非 IFRS，剔除股份支付、金融负债重估及上市费用</td>
+</tr>
+<tr>
+<td>MiniMax 研发费用，百万美元</td>
+<td style="text-align: right;">252.771</td>
+<td style="text-align: right;">296.870</td>
+<td>持续经营支出</td>
+</tr>
+<tr>
+<td>MiniMax 毛利率</td>
+<td style="text-align: right;">25.4%</td>
+<td style="text-align: right;">17.9%</td>
+<td>公司披露四舍五入</td>
+</tr>
+</tbody>
+</table></div>
+<p>泡泡来源：<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0421/2026042100395_c.pdf">2025 年报</a>、<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000354_c.pdf">2026 中期公告</a>；独立发布方核对：<a href="https://stockanalysis.com/quote/hkg/9992/financials/">StockAnalysis</a>、<a href="https://www.finet.hk/newscenter/news_content/6a86c2d02308290c11eadd7c">财华社</a>。收入、归母净利润差异均小于 1%，来自显示精度。第三方标准化经营利润与公司经营利润不同，未混用。</p>
+<p>MiniMax 来源：<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf">2025 年报</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf">2026 中期公告</a>；独立核对：<a href="https://stockanalysis.com/quote/hkg/0100/financials/">StockAnalysis</a>、<a href="https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820">Reuters</a>、<a href="https://www.eeo.com.cn/2026/0827/1012665.shtml">经济观察网</a>。中期官方 PDF 的 web 解析失败后，已在本次直接下载并提取原文，存于证据目录；经济观察网正文直开返回 403，但当前搜索索引提供对应收入、研发和经调整亏损字段，因此该项交叉证据强度低于全文可取的 Reuters。</p>
+<p>这些独立发布方多数仍使用公司报表，属于信息转录交叉核验，不是独立审计第二套账。</p>
+<p>MiniMax 2025 年金融负债公允价值亏损 1,589.850 百万美元；2026 上半年为 31.025 百万美元。巨亏变化不能代表核心盈利趋势。公司经调整利润还加回股份支付：将其保留为成本后，2025 年与本期分别为 <strong>-274.887、-321.239 百万美元</strong>，仍含其他收入及金融收益。若再保守剔除全部“其他收入及收益净额”，经营经济利润参考为 <strong>-315.256、-329.278 百万美元</strong>；这是研究者口径，不是公司审计指标，也不作为未来 CAGR 起点。</p>
+<h2 id="_2">商业模式、护城河与文化</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>泡泡玛特</th>
+<th>MiniMax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>谁付钱，买什么</td>
+<td>消费者为角色审美、情感、收藏、礼赠和社交表达买商品；主要是商品销售，并非稳定授权年金</td>
+<td>企业、开发者为模型调用和服务付费；个人或创作者为视频、语音、互动等产品订阅或用量付费</td>
+</tr>
+<tr>
+<td>为什么重复付费</td>
+<td>喜爱的 IP 不断推出新系列和新品类；社群传播、门店与自有渠道让发现和购买更方便</td>
+<td>任务不断发生；准确率、速度、可靠性及每次完成任务总成本有优势，就会复用；工作流集成可能提高迁移成本</td>
+</tr>
+<tr>
+<td>最有价值的资产</td>
+<td>艺术家合作、选品设计、供应链与直营渠道的组合，能把新角色商业化并延长生命周期</td>
+<td>研究与工程团队、推理效率、多模态能力及企业服务经验；需逐步沉淀成客户留存和流程依赖</td>
+</tr>
+<tr>
+<td>护城河判断</td>
+<td>中等。商品品牌和产品组织有证据，但消费者转换成本低，社群热度可逆转，尚未证明跨代 IP 长寿</td>
+<td>尚在建立。技术优势必须不断续投；模型接口、多模型路由和开源替代削弱锁定，不把榜单领先视作持久定价权</td>
+</tr>
+<tr>
+<td>文化的行为证据</td>
+<td>同时经营多个 IP，扩充毛绒和海外直营；有分红回购执行；在海外退潮后承认年度目标压力</td>
+<td>2026 上半年持续大幅增加研发，同时减少销售推广支出，体现研发优先、用产品吸引客户的方向；公司称内部广泛使用 AI，但这仍是自述</td>
+</tr>
+<tr>
+<td>文化评价的边界</td>
+<td>产品判断和执行力已被收入验证；库存纪律、低效门店退出、乐园等资本回报仍待验证，不能由创始人口号推断</td>
+<td>技术组织能力有证据，成熟期资本回报、资源收缩纪律和长期股东友好程度尚无法证实；创始人控制与少数股东监督需分开</td>
+</tr>
+</tbody>
+</table></div>
+<p>泡泡可观察事实：2026 上半年 THE MONSTERS 收入下降、星星人接力；中国内地会员复购率 51.6%，定义是当期购买两次及以上的会员占当期购买会员，<strong>不是注册会员留存率，更不是次年留存率</strong>。注册会员不等于活跃付费人数。<a href="https://www.yicai.com/news/103326855.html">第一财经</a>、<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000354_c.pdf">公司中报会员和 IP 表</a>。这支持“平台能够再造产品”的判断，但不能保证每年都有接班 IP。</p>
+<p>文化应由付出的代价来观察。泡泡在全球扩店上下注后，本期海外业务承压、存货周转延长；王宁在业绩会上承认全年原定增长目标大概率无法实现。承认压力是沟通信号，真正的文化检验是接下来的库存、关店与投资纪律。<a href="https://finance.eastmoney.com/a/202608203848013364.html">科创板日报业绩会报道</a>。截至本期的实际分红回购与未来计划应分别看待，后者不算兑现。</p>
+<p>MiniMax 2026 上半年开放平台及企业服务收入 73.929 百万美元，原生产品 42.644 百万美元；研发 296.870 百万美元，销售费用 26.973 百万美元，去年同期分别为 124.333 和 32.843 百万美元。费用配置说明团队重研发、减少推广，尚不能证明每美元研发的回报提高。企业付费收入是真的；“客户都会长期留下”仍是假设。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf">官方中期公告</a>、<a href="https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820">Reuters</a>。</p>
+<p>MiniMax 官方年报的 2025 原生产品/企业收入为 53.075/25.963 百万美元。旧本地报告的 53.080/25.958 是小额转录误差，本底稿使用原件值；未改写旧报告。</p>
+<h2 id="2036">2036 年单年利润模型：全部为假设</h2>
+<h3 id="_3">泡泡：客户消费额决定规模，产品和渠道纪律决定留下的利润</h3>
+<p>人数均是 2036 年<strong>年度实际付费人数</strong>，不是今天的累计注册会员。每人消费采用公司确认净收入，不用终端含税零售价、二手交易额或 GMV。中国及海外按客户所在地区划分；“其他”仅计未包含在这两类直购客户中的授权、批发与体验业务收入，避免重复。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>2036 模型假设</th>
+<th style="text-align: right;">悲观</th>
+<th style="text-align: right;">基准</th>
+<th style="text-align: right;">乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国直购付费人数，万人</td>
+<td style="text-align: right;">2,000</td>
+<td style="text-align: right;">3,500</td>
+<td style="text-align: right;">5,000</td>
+</tr>
+<tr>
+<td>每人年贡献公司净收入，人民币元</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: right;">1,300</td>
+</tr>
+<tr>
+<td>海外直购付费人数，万人</td>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: right;">3,000</td>
+<td style="text-align: right;">6,000</td>
+</tr>
+<tr>
+<td>每人年贡献公司净收入，人民币元</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: right;">1,300</td>
+<td style="text-align: right;">1,600</td>
+</tr>
+<tr>
+<td>其他非重叠收入，亿元人民币</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">90</td>
+</tr>
+<tr>
+<td>总收入，亿元人民币</td>
+<td style="text-align: right;">210</td>
+<td style="text-align: right;">780</td>
+<td style="text-align: right;">1,700</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">55%</td>
+<td style="text-align: right;">67%</td>
+<td style="text-align: right;">70%</td>
+</tr>
+<tr>
+<td>销售管理及持续产品费用率</td>
+<td style="text-align: right;">35%</td>
+<td style="text-align: right;">31%</td>
+<td style="text-align: right;">29%</td>
+</tr>
+<tr>
+<td>税率 / 归母经济比例</td>
+<td style="text-align: right;">25% / 98%</td>
+<td style="text-align: right;">25% / 98%</td>
+<td style="text-align: right;">25% / 98%</td>
+</tr>
+<tr>
+<td><strong>税后归母经济利润，亿元人民币</strong></td>
+<td style="text-align: right;"><strong>30.870</strong></td>
+<td style="text-align: right;"><strong>206.388</strong></td>
+<td style="text-align: right;"><strong>512.295</strong></td>
+</tr>
+<tr>
+<td>主表建议展示</td>
+<td style="text-align: right;"><strong>约 30</strong></td>
+<td style="text-align: right;"><strong>约 210</strong></td>
+<td style="text-align: right;"><strong>约 510</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>收入公式：<code>(中国人数×每人年净收入 + 海外人数×每人年净收入)/1亿 + 其他收入</code>。利润公式：<code>收入×(毛利率－销售管理及持续产品费用率)×(1－25%)×98%</code>。成本与费用已包含持续设计研发、授权费、股份支付、折旧摊销、门店租金、物流、正常库存损失等，按所属项目计一次；不再次加回。净融资收益假设为零。</p>
+<p>基准需要老 IP 长寿与新品接力并存，也需要海外形成真正复购。乐观更要求全球消费人群及人均消费同时提高，这只是全球 IP 平台成功后的尺度，不能因为当前利润率高就视作轻易可达。悲观允许收入低于目前规模、高毛利显著回落；不是仍保持快速增长的“伪悲观”。</p>
+<p><strong>失败尾部并未被三情景下限包住</strong>：如果十年后收入仅 100 亿元，毛利率 40%、费用率 50%，归母比例 98%，不确认税盾，则单年归母经济亏损 <strong>9.8 亿元</strong>；长期失败也可能被收购或清算，2036 不再存在独立利润表。因此约 30 亿元不是盈利保底。</p>
+<h3 id="minimax">MiniMax：用收入、毛利与持续研发推利润，不给亏损做复利</h3>
+<p>企业账户包括付费企业及付费开发者组织；免费注册、试用和累计触达不计入。产品付费人数只计原生产品渠道收入，不重复包含开放平台调用。人数与客单均是假设，公司并未披露足够净收入留存数据来校准这些十年数值。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>2036 模型假设</th>
+<th style="text-align: right;">悲观</th>
+<th style="text-align: right;">基准</th>
+<th style="text-align: right;">乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>年度付费企业账户数</td>
+<td style="text-align: right;">10,000</td>
+<td style="text-align: right;">100,000</td>
+<td style="text-align: right;">200,000</td>
+</tr>
+<tr>
+<td>每账户年收入，美元</td>
+<td style="text-align: right;">60,000</td>
+<td style="text-align: right;">70,000</td>
+<td style="text-align: right;">100,000</td>
+</tr>
+<tr>
+<td>原生产品年付费人数，万人</td>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: right;">3,000</td>
+<td style="text-align: right;">5,000</td>
+</tr>
+<tr>
+<td>每人年产品收入，美元</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr>
+<td><strong>总收入，亿美元</strong></td>
+<td style="text-align: right;"><strong>10</strong></td>
+<td style="text-align: right;"><strong>100</strong></td>
+<td style="text-align: right;"><strong>300</strong></td>
+</tr>
+<tr>
+<td>综合毛利率</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">60%</td>
+</tr>
+<tr>
+<td>持续研发费用，亿美元</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr>
+<td>销售管理费用，亿美元</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td>税前经济利润，亿美元</td>
+<td style="text-align: right;">-5.5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">80</td>
+</tr>
+<tr>
+<td>所得税率</td>
+<td style="text-align: right;">亏损不确认税盾</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">25%</td>
+</tr>
+<tr>
+<td>母公司对业务经济归属</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">100%</td>
+</tr>
+<tr>
+<td><strong>税后归母经济利润，亿美元</strong></td>
+<td style="text-align: right;"><strong>-5.5</strong></td>
+<td style="text-align: right;"><strong>11.25</strong></td>
+<td style="text-align: right;"><strong>60</strong></td>
+</tr>
+<tr>
+<td><strong>固定假设 1 美元 = 7 元人民币后，亿元人民币</strong></td>
+<td style="text-align: right;"><strong>-38.5</strong></td>
+<td style="text-align: right;"><strong>78.75</strong></td>
+<td style="text-align: right;"><strong>420</strong></td>
+</tr>
+<tr>
+<td>主表建议展示，亿元人民币</td>
+<td style="text-align: right;"><strong>约 -40</strong></td>
+<td style="text-align: right;"><strong>约 80</strong></td>
+<td style="text-align: right;"><strong>约 420</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>收入公式：<code>(付费账户数×账户年收入 + 原生产品人数×产品年收入)/1亿美元</code>。税前利润：<code>收入×毛利率－持续研发－销售管理</code>；只有正利润乘 <code>1－25%</code>。研发、销售管理均含对应股份支付；推理所需算力、基础设施折旧和支持成本已进入毛利，训练算力进入持续研发。净融资收益假设为零；若未来长期负债利息净支出较大，需继续扣除。</p>
+<p><strong>100 亿美元收入与 50% 毛利率的基准本身已是要求很高的成功情景</strong>。2026 上半年实际毛利率只有 17.854%，从 2025 全年减上半年推得的 2025 下半年毛利率约 33.726%；同比改善与环比回落可以同时存在。若 2036 做到基准收入，但毛利仍维持本期水平，研发与销售管理仍按基准，则单年亏损约 <strong>120 亿元人民币</strong>，不给税盾。上述基准费用对应的盈亏平衡毛利率为 <strong>35%</strong>。真实限制是智能需求扩大后，公司能留下多少毛利，而非调用量是否增长。</p>
+<p>汇率 7 是为了横向比较而冻结的模型假设，不是当前汇率或对 2036 的汇率预测。MiniMax 全部实际报表先保留美元，不用假设汇率改写事实。母公司对经营业务的经济归属暂假设 100%；若引入子公司少数股东则需下调。<strong>母公司增发和员工获股改变每股收益及原股东占比，不机械削减上市公司归母总利润</strong>；但融资回报不足、付息或研发消耗会影响总利润。融资失败、模型被替代或业务中断另属于失败尾部；停业后零收入不等于当前股东无损。</p>
+<h2 id="_4">最强反方与年度证伪指标</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>最强反方</th>
+<th>需要长期看到什么，才愿提高十年置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>泡泡</td>
+<td>当前高利润可能来自一轮全球情绪性热潮；新增门店与库存将热潮转成固定成本，下一代消费者未必继续喜欢</td>
+<td>按会员队列的跨年复购；新品接力速度超过老 IP 衰退；海外成熟店同店与经营回报；库存库龄、折扣与减值；非商品项目回报；离开创始人后选品机制仍有效</td>
+</tr>
+<tr>
+<td>MiniMax</td>
+<td>可以长期做出优秀模型，但智能供给越来越便宜，云、芯片和掌握用户入口的应用拿走经济利益，模型公司承担训练账单</td>
+<td>付费客户续费和净收入留存；同等任务的有效售价与单位推理成本；分业务毛利；研发相对新增毛利的回报；不靠持续融资也能迭代；客户迁移率；稀释后每股经济成果</td>
+</tr>
+</tbody>
+</table></div>
+<p>最重要的比较：泡泡已经证明消费者愿意为差异化付出高于物料成本的价格，未知的是这种偏好能持续多久；MiniMax 已证明客户愿意购买模型能力，未知的是价格竞争与持续研发之后能否产生长期超额利润。两家都不能凭行业空间或一次爆款直接推导十年复利。</p>
+<h2 id="_5">计算与核验范围</h2>
+<p>全部列示计算通过 <code>tools/financial_rigor.py calc/cross-validate</code>，重要算式再由独立 Decimal 运算核对。可复跑脚本：<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E4%B8%83%E5%85%AC%E5%8F%B8%E5%95%86%E4%B8%9A%E8%B4%A8%E9%87%8F%E4%B8%8E%E5%8D%81%E5%B9%B4%E5%88%A9%E6%B6%A6-20260906/%E6%B3%A1%E6%B3%A1MiniMax%E8%AF%81%E6%8D%AE/%E5%A4%8D%E7%AE%97.py">复算.py</a>；原始输出：<a href="../files/reports/%E4%B8%83%E5%85%AC%E5%8F%B8%E5%95%86%E4%B8%9A%E8%B4%A8%E9%87%8F%E4%B8%8E%E5%8D%81%E5%B9%B4%E5%88%A9%E6%B6%A6-20260906/%E6%B3%A1%E6%B3%A1MiniMax%E8%AF%81%E6%8D%AE/financial-rigor.txt">financial-rigor.txt</a>；<a href="../files/reports/%E4%B8%83%E5%85%AC%E5%8F%B8%E5%95%86%E4%B8%9A%E8%B4%A8%E9%87%8F%E4%B8%8E%E5%8D%81%E5%B9%B4%E5%88%A9%E6%B6%A6-20260906/%E6%B3%A1%E6%B3%A1MiniMax%E8%AF%81%E6%8D%AE/decimal-checks.json">Decimal 复核</a>；<a href="../r/246fadaf4bb6.html">来源登记</a>。2025/本期收入、归母利润及部分经营字段均已交叉核验。模型参数只能核验定义、币种与算术，不能被“审计通过”证明为未来事实。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/ab32987a1ad5.html">阿里巴巴横评底稿</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/43ba467471b5.html">腾讯与拼多多：商业质量及2036年度利润底稿</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/246fadaf4bb6.html">本次来源访问与边界</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d085e597bbde.html">核验说明</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/7b92160cca38.html">快手与美团：商业质量和2036年利润底稿</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/b00252e12cfa.html">七家公司商业质量与十年利润对比研究报告</a><div class="meta">2026-09-06 · 横评对比</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

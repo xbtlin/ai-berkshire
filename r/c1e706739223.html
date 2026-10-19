@@ -1,0 +1,180 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MiniMax研究报告：来源、冲突与核验边界 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/MiniMax/index.html">MiniMax</a></div><h1>MiniMax研究报告：来源、冲突与核验边界</h1><div class="meta"><a href="../companies/MiniMax/index.html">MiniMax</a> ｜ 2026-10-16 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/MINIMAX/%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%A0%B8%E9%AA%8C-20261016/%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%A0%B8%E9%AA%8C.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">发布核验结果</a></li>
+<li><a href="#_2">关键财务来源与核对</a><ul>
+<li><a href="#_3">抓取与口径冲突处理</a></li>
+</ul>
+</li>
+<li><a href="#_4">技术、组织与经营事实的来源边界</a></li>
+<li><a href="#_5">竞争资料组</a></li>
+<li><a href="#pass">不能被审计PASS消除的未知</a></li>
+</ul>
+</div>
+</details><article><p>对应<a href="../r/5f320d2574ae.html">主报告</a>。研究与抓取日期2026-10-16，北京时间；行情基准为10月15日收盘，财务基准为2026H1。原有报告只用于寻找来源，不作为本次最新数据的事实依据。本次未修改旧报告。</p>
+<h2 id="_1">发布核验结果</h2>
+<ul>
+<li>Decimal模型已运行；financial_rigor完成10组数据交叉比较、10项算术及市值验算。</li>
+<li>report_audit固定种子42、15%抽取20项：8项历史事实、7项模型算术、5项未来假设。</li>
+<li>历史8项数字与来源相符，其中6项有独立渠道直接或TTM桥接核对，2项调整后亏损仅有发行人原始披露。后者没有伪装为独立双源。</li>
+<li>模型7项仅通过算术一致性；5项假设保留为未验证，包括客户数、单价、毛利率和研发预算。工具将“800万”抽取为800，人工分类记录明确补回“万”单位，没有当作800个客户核验。</li>
+<li>技术复核更正了许可年度收入门槛、音乐API停止新增边界及MSA实验范围。财务复核明确64.13亿美元是保留股份支付经济成本的资金消耗代理，不能直接当作实际融资缺口。</li>
+<li>共享工具的PASS字样仅表示输入数字匹配，不代表研究结论、盈利路径、概率、估值或护城河获验证。资料缺口仍然存在，报告按条件性研究发布。</li>
+</ul>
+<p>脚本：<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/MINIMAX/%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%A0%B8%E9%AA%8C-20261016/%E6%A8%A1%E5%9E%8B%E5%A4%8D%E7%AE%97.py">模型复算.py</a>、<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/MINIMAX/%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%A0%B8%E9%AA%8C-20261016/%E6%A0%B8%E9%AA%8C.py">核验.py</a>。结果：<a href="../files/reports/MINIMAX/%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%A0%B8%E9%AA%8C-20261016/%E8%AE%A1%E7%AE%97%E7%BB%93%E6%9E%9C.json">计算结果.json</a>、<a href="../files/reports/MINIMAX/%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%A0%B8%E9%AA%8C-20261016/financial-rigor.json">financial-rigor.json</a>、<a href="../files/reports/MINIMAX/%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%A0%B8%E9%AA%8C-20261016/audit-scope.json">audit-scope.json</a>。审计输入与输出在同目录，可复现；无需网络，网络来源由本轮人工读取核对，不把离线复算说成重新抓取。</p>
+<h2 id="_2">关键财务来源与核对</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标/资料</th>
+<th>一手来源</th>
+<th>第二渠道与核对方法</th>
+<th>结论/边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023—2025年度财务</td>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf">2025年报p4、p7、p101、p106–107</a>；<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf">招股书</a></td>
+<td><a href="https://stockanalysis.com/quote/hkg/0100/financials/">StockAnalysis</a>、<a href="https://stockanalysis.com/quote/hkg/0100/financials/income-statement/">损益表</a>、<a href="https://stockanalysis.com/quote/hkg/0100/financials/cash-flow-statement/">现金流</a></td>
+<td>收入/毛利/研发/经营现金流口径相符；厂商四舍五入，原件精度优先。2023研发70.002百万美元，第三方显示70.00</td>
+</tr>
+<tr>
+<td>2026H1收入、分部、净亏损</td>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf">中报p6–9</a></td>
+<td><a href="https://www.investing.com/news/stock-market-news/chinas-minimax-sees-revenue-nearly-quadruple-in-first-half-as-ai-demand-surges-4876820">路透2026-08-26</a></td>
+<td>116.573/116.6、73.929/73.9、42.644/42.6、亏损357.997/358，均百万美元；独立编辑渠道仍基于公司财务，并非独立审计</td>
+</tr>
+<tr>
+<td>2026H1研发</td>
+<td>中报296.870百万美元</td>
+<td>第三方TTM425.31−2025全年252.77+2025H1原件124.333=296.873</td>
+<td>桥接核对，误差源于精度；上一年同期仍依赖公司原件</td>
+</tr>
+<tr>
+<td>2026H1经营现金流</td>
+<td>中报p38：-318.106百万美元</td>
+<td>第三方TTM-429.21−全年(-279.64)+同期(-168.538)=-318.108</td>
+<td>并非第三方直接列示H1；不能将TTM误当半年</td>
+</tr>
+<tr>
+<td>2026H1PPE现金采购</td>
+<td>中报p39：187.626百万美元</td>
+<td>第三方TTM188.16−全年0.92+同期0.383=187.623</td>
+<td>与PPE账面余额不是同一指标；粗FCF=-318.106−187.626=-505.732</td>
+</tr>
+<tr>
+<td>中期毛利与调整后亏损</td>
+<td>中报p6；年报p4</td>
+<td>部分毛利用第三方TTM桥接；调整后亏损未找到独立同口径精确表</td>
+<td>单源项明确保留；不用公司官网重复刊登冒充双源</td>
+</tr>
+<tr>
+<td>价格</td>
+<td><a href="https://qt.gtimg.cn/q=hk00100">腾讯行情</a>，2026-10-15 16:08:42，179.500港元</td>
+<td><a href="https://stockanalysis.com/quote/hkg/0100/financials/">StockAnalysis概览</a>16:08；<a href="https://hk.investing.com/equities/minimax-group-inc-historical-data">Investing收盘历史</a></td>
+<td>均179.50；其他页面存在盘中缓存，不能直接混用</td>
+</tr>
+<tr>
+<td>股本</td>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1002/2026100200077.pdf">9月月报，10月2日</a>：A股271,377,649+B股81,102,534</td>
+<td>腾讯总股本352,480,183；<a href="https://www.gurufocus.com/stock/HKSE%3A00100/summary">GuruFocus</a>市值约632.7亿港元</td>
+<td>用全部经济权益股份，不只A股，也不用年度加权平均股数；未含未来未归属奖励与潜在转股</td>
+</tr>
+<tr>
+<td>融资净额</td>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0716/2026071601147.pdf">7月16日完成公告</a>及中报p49</td>
+<td>路透报道融资总额约160.4亿港元，但那是毛额近似</td>
+<td>不把毛额与净额直接计算误差；采净配股9443.71百万港元、净CB6433.3百万港元</td>
+</tr>
+<tr>
+<td>债券经济条款</td>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0710/2026071000027.pdf">7月10日公告p12–15</a></td>
+<td>中报/完成公告确认实际发行；转股价335港元</td>
+<td>本金6500百万港元，未转换赎回102.75%，不是零成本资金；不以条款早期预计净额替代完成公告</td>
+</tr>
+<tr>
+<td>融资用途与采购上限</td>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082601949.pdf">8月26日公告p4、6–8</a></td>
+<td>公司计划，未当实际支出交叉验证</td>
+<td>资金用途含基础设施与研发；采购上限不等于最低承诺，不能重复加进模型费用</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_3">抓取与口径冲突处理</h3>
+<ol>
+<li>财务概览、损益、现金流页面的行情缓存时点不一致。只用一致的10月15日收盘179.50；FT出现179.10、成交量也较少，未混作收盘。该差异小于1%仍保留时点说明。</li>
+<li>第三方“总债务”可能把上市前可赎回优先股算入，不能当银行借款。期末现金等价物、广义现金结余和流动金融资产也不相同。主报告期后融资演示只使用明确列出的流动三项，且不称净现金。</li>
+<li>股本月报须读“已发行股份”部分，不能误用授权股本。9月底股数与中报最新可行日持股比例时点不同。</li>
+<li>StockAnalysis分部TTM合计与总收入TTM不能简单拼用。本次2026H1分部以中报和路透为准，不使用第三方错期分部估算。</li>
+<li>财务数据服务商、媒体与公司公告有不同编辑渠道，但底层仍来自发行人披露。独立渠道核对能识别转录或口径错误，不能替代审计。</li>
+</ol>
+<h2 id="_4">技术、组织与经营事实的来源边界</h2>
+<p>技术索引见主报告T1—T17。全部使用论文、官方代码/模型卡、API文档或评测作者原始报告。读取日为2026-10-16，页面可能在以后更新。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>采信边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M3.1-Flash-Preview</td>
+<td>官方接口已可见，仅M Plan和MiniMax Code；准确首次发布日期未完整核实，不采论坛日期</td>
+</tr>
+<tr>
+<td>MSA</td>
+<td>实验条件与量产模型分开；论文attention加速不代表全模型、服务总成本或利润同比例变化</td>
+</tr>
+<tr>
+<td>H3</td>
+<td>Base开放权重与完整云端2K系统分开；权重许可地域和官方API服务安排分开</td>
+</tr>
+<tr>
+<td>模型许可证</td>
+<td><a href="https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE">M3</a>、<a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE">H3</a>、<a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/QA-about-License.md">H3 FAQ</a>；年度商业收入门槛、另行授权和标识按原文，不概括为MIT</td>
+</tr>
+<tr>
+<td>团队</td>
+<td><a href="https://ir.minimax.io/corporate-information/management">官网</a>与年报交叉；贠烨祎旧COO页面被年报2026年3月总裁职务覆盖；员工/研发占比注明各自日期</td>
+</tr>
+<tr>
+<td>创始人观点</td>
+<td><a href="https://podcast.latepost.com/99">晚点聊第99期</a>，2025-01-20；本人观点不是独立确认组织表现</td>
+</tr>
+<tr>
+<td>人才与股权激励</td>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092901775.pdf">9月29日授予公告</a>；奖励并非已全部归属，未凭招聘页估GPU数或核心离职率</td>
+</tr>
+<tr>
+<td>M Plan</td>
+<td><a href="https://platform.minimax.io/docs/m-plan/token-plan-notice">迁移说明</a>、<a href="https://platform.minimax.io/docs/m-plan/monthly-offer">优惠说明</a>；优惠与标准价、升级队列和旧权益区分</td>
+</tr>
+<tr>
+<td>日本IP</td>
+<td><a href="https://www.minimax.io/news/minimax-japanese-ip-ready-for-the-global-ai-era">10月13日公告</a>；意向不是合同、合作不等于独家；PixVerse案例不归MiniMax</td>
+</tr>
+<tr>
+<td>版权诉讼</td>
+<td><a href="https://www.motionpictures.org/press/mpa-statement-on-copyright-infringement-lawsuit-filed-today-against-minimax/">MPA声明</a>、<a href="https://lexsummary.com/wp-content/uploads/2026/05/disney-v-minimax-mtd-denied.pdf">2026-05-22法院裁定镜像</a>、中报p44</td>
+</tr>
+</tbody>
+</table></div>
+<p>法院原件镜像显示案号2:25-cv-08768-SB-E、ECF57与提交日期；拒绝撤诉动议不等于最终侵权判决。未取得10月16日完整最新案卷，不能宣称所有最新程序已经穷尽。许可条款摘要不是特定客户部署的法律意见。</p>
+<h2 id="_5">竞争资料组</h2>
+<p>这些资料证明产品入口、部署生态与价值链位置，不用于认定旧版本截至今日仍领先。</p>
+<ul>
+<li><a href="https://openai.com/index/introducing-chatgpt-agent/">OpenAI ChatGPT agent官方发布，2025-07-17</a>：任务执行与入口。</li>
+<li><a href="https://claude.com/resources/articles/claude-for-enterprise">Anthropic企业产品官方说明</a>：企业身份、权限、集成。</li>
+<li><a href="https://blog.google/products-and-platforms/products/workspace/gemini-workspace-updates-march-2026/">Google Workspace官方更新，2026-03-10</a>：文档与协作入口。</li>
+<li><a href="https://github.com/QwenLM/Qwen3">Qwen官方项目</a>、<a href="https://github.com/deepseek-ai/DeepSeek-V3">DeepSeek官方项目</a>：开放权重与部署生态，未把所链接版本称为最新。</li>
+<li><a href="https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5">字节Seedance 2.5，2026-07-31</a>：多模态参考与工作流方向。</li>
+<li><a href="https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-technology-announces-second-quarter-and-interim-2026">快手2026中期业绩，2026-08-19</a>：可灵商业化与集团业务，不据此推导与MiniMax口径一致的市场份额。</li>
+</ul>
+<h2 id="pass">不能被审计PASS消除的未知</h2>
+<p>没有公开完整客户队列/NRR、分模型和分产品贡献利润、训练失败成本、核心人才留存、数据反馈训练消融、完整IP独家权利与收入、未来股权融资条款。2036客户数、80亿美元收入、55%毛利、22%研发、20%税率、70%保留份额、情景概率与退出倍数，全部是研究假设。</p>
+<p>64.13亿美元累计经济资金消耗没有加回股份支付，不能直接与会计现金余额相减就称净融资缺口；未来SBC现金化或通过稀释结算会改变结果。模型70%保留经济份额是独立假设，正文的50亿美元融资例子只验证融资数学。</p>
+<p>本次结论可发布为有来源、有边界、可复算的研究观点，不能发布为经过验证的盈利承诺。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/4587c8c773a2.html">MiniMax 创始人访谈研究与结论复核</a><div class="meta">2026-10-18 · 研究</div></li><li><a href="../r/8a072c27bb1d.html">收入增 283%、毛利率 17.9%：MiniMax 卖的是便宜的智能</a><div class="meta">2026-10-18 · 公众号</div></li><li><a href="../r/cf9c268d3d6d.html">MiniMax 深度研究：创始人、技术路线、赛道与十年推演</a><div class="meta">2026-10-17 · 深度系列</div></li><li><a href="../r/5f320d2574ae.html">MiniMax（00100.HK）研究报告</a><div class="meta">2026-10-16 · 研究</div></li><li><a href="../r/f1f5a85ec474.html">MiniMax（稀宇科技）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/1f005b032732.html">MiniMax（0100.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/1c170ddf04db.html">MiniMax差异化与护城河研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/af1d6c9b551f.html">研究审计说明（2026-09-06）</a><div class="meta">2026-09-06 · 导读</div></li><li><a href="../r/bcf3b1df7e7e.html">MiniMax差异化与护城河研究核验记录</a><div class="meta">2026-09-06 · 导读</div></li><li><a href="../r/111c8837b826.html">智谱和 MiniMax，半年烧掉了几乎一样多的钱</a><div class="meta">2026-09-01 · 公众号</div></li><li><a href="../r/deb6de91ddf8.html">MiniMax（0100.HK）麦肯锡 7S 组织诊断</a><div class="meta">2026-08-28 · 组织管理</div></li><li><a href="../r/c83f83eef645.html">MiniMax（0100.HK）：给定「8月ARR = 8亿美元」，合理估值是多少</a><div class="meta">2026-08-27 · 估值仓位</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

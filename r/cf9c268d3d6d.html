@@ -1,0 +1,1183 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MiniMax 深度研究：创始人、技术路线、赛道与十年推演 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/MiniMax/index.html">MiniMax</a></div><h1>MiniMax 深度研究：创始人、技术路线、赛道与十年推演</h1><div class="meta"><a href="../companies/MiniMax/index.html">MiniMax</a> ｜ 2026-10-17 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/MINIMAX/MiniMax-%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-%E5%88%9B%E5%A7%8B%E4%BA%BA%E6%8A%80%E6%9C%AF%E8%B5%9B%E9%81%93%E4%B8%8E%E5%8D%81%E5%B9%B4%E6%8E%A8%E6%BC%94-20261017.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#2026-10-18">修订说明（2026-10-18）</a></li>
+<li><a href="#_1">阅读说明</a></li>
+<li><a href="#_2">一、结论</a></li>
+<li><a href="#_3">二、事实底座</a><ul>
+<li><a href="#21">2.1 核心财务数据</a></li>
+<li><a href="#22">2.2 分部毛利率的推算</a></li>
+<li><a href="#23">2.3 用户与客户</a></li>
+<li><a href="#24">2.4 融资与估值史</a></li>
+<li><a href="#25">2.5 股权与治理</a></li>
+<li><a href="#26">2.6 阿里：股东、云供应商、客户三重身份</a></li>
+<li><a href="#27">2.7 股价</a></li>
+</ul>
+</li>
+<li><a href="#_4">三、创始人与团队</a><ul>
+<li><a href="#31">3.1 创始人</a></li>
+<li><a href="#32">3.2 创始人的公开判断</a></li>
+<li><a href="#33">3.3 决策记录</a></li>
+<li><a href="#34">3.4 团队规模与效率</a></li>
+<li><a href="#35">3.5 人物风险</a></li>
+</ul>
+</li>
+<li><a href="#_5">四、技术选型</a><ul>
+<li><a href="#41">4.1 架构史</a></li>
+<li><a href="#42">4.2 从线性注意力到稀疏注意力</a></li>
+<li><a href="#43">4.3 模型水平</a></li>
+<li><a href="#44">4.4 用量：从前三到榜外</a></li>
+<li><a href="#45">4.5 定价</a></li>
+<li><a href="#46">4.6 算力</a></li>
+<li><a href="#47">4.7 开源与蒸馏</a></li>
+<li><a href="#48">4.8 技术壁垒判断</a></li>
+</ul>
+</li>
+<li><a href="#_6">五、赛道与竞争</a><ul>
+<li><a href="#51">5.1 市场结构</a></li>
+<li><a href="#52">5.2 对标表</a></li>
+<li><a href="#53">5.3 细分赛道</a></li>
+<li><a href="#54">5.4 结构性力量（推断）</a></li>
+</ul>
+</li>
+<li><a href="#_7">六、护城河</a><ul>
+<li><a href="#61">6.1 现在</a></li>
+<li><a href="#62-2029">6.2 三年后（2029）</a></li>
+</ul>
+</li>
+<li><a href="#_8">七、差异化</a></li>
+<li><a href="#_9">八、五年与十年</a><ul>
+<li><a href="#81-2031">8.1 五年后（2031）（推演）</a></li>
+<li><a href="#82-2036">8.2 十年后（2036）（推演）</a></li>
+</ul>
+</li>
+<li><a href="#_10">九、检验点</a></li>
+<li><a href="#_11">十、未查到与存疑</a></li>
+<li><a href="#_12">十一、来源</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>研究日期：2026-10-17｜数据截止：2026-10-16 收盘
+视角：大模型技术 + 一级市场投资
+一手来源：港交所招股书（2025-12-31）、2025 年报与全年业绩公告、2026 中期业绩公告与中报、2026 年 5 月至 10 月全部公告（含 7 月配售与可转债、8 月关连交易上限修订、9 月与 10 月股本月报）、Hugging Face 模型卡、arXiv 技术报告、Artificial Analysis 与 OpenRouter 页面、雅虎财经行情、Anthropic 官方博客
+本次没能取到的材料：创始人访谈原话、Sensor Tower 等第三方 App 数据、国内 token 市场份额统计、团队流失的媒体报道（联网检索额度在研究中途耗尽，详见文末"未查到"清单）</p>
+</blockquote>
+<h2 id="2026-10-18">修订说明（2026-10-18）</h2>
+<p>次日读完闫俊杰 2024 到 2026 年的 12 次访谈与业绩会发言后做了复核，见同目录《MiniMax-创始人访谈研究与结论复核-20261018.md》。两处数字要改：一是收入规模，2026 年 8 月 ARR 已超 8 亿美元（周收入年化口径），全年收入看 4 到 5 亿美元而非本文第八节起算的 3 亿；二是第 4.4 节"用量从前三到榜外"只说明第三方聚合渠道的份额，公司自有渠道 7 月 token 消耗是 1 月的 20 倍，"用量流失"的说法撤回。方向性结论（无护城河、期权型资产）不变。</p>
+<h2 id="_1">阅读说明</h2>
+<p>报告分两层。第一层是法定披露和可复核页面上的事实，置信度高。第二层是从事实出发的推演（护城河判断、五年与十年情景、利润区间），置信度低，标注"推演"或"推算"的段落都不是事实。十年利润数字按用户要求给出，但它是情景演算，不是预测。</p>
+<h2 id="_2">一、结论</h2>
+<ol>
+<li>MiniMax 是一家靠"便宜的智能"卖 token 的公司，不是靠"最强的智能"卖 token 的公司。2026 年上半年收入 1.166 亿美元，同比增 283%，其中开放平台（API）占 63.4%，海外占 60.8%。</li>
+<li>技术上它已经不在中国开源模型第一梯队。2026 年 10 月的 Artificial Analysis 三项指数上，旗舰 M3 比 Kimi K3、Qwen3.8 Max、GLM-5.3 低 14 到 18 分，比全球前沿低约 24 分。OpenRouter 周用量榜前二十名里已经没有 MiniMax 模型，而 2025 年 10 月它的 M2 曾是榜上第三。</li>
+<li>商业上它用价格换量：2026 年上半年毛利率 17.9%，比 2025 全年的 25.4% 回落。按分部推算，API 业务毛利率从 2025 年前三季度的 69% 掉到了 20% 到 25% 之间。经调整净亏损 2.93 亿美元，是收入的 2.5 倍。</li>
+<li>现在的护城河：没有能通过"对手 12 个月内复制不了"检验的护城河。有的是三样可以折旧的资产：全模态自研（文本、视频、语音、音乐）带来的产品面宽度、推理效率工程（自报 75% 推理 MFU）、以及阿里既是股东又是云供应商又是客户的关系。</li>
+<li>三年后可能形成的护城河只有一种：把"便宜 + 全模态 + 套餐与工具链"做成开发者的默认选择，靠分发和使用习惯而不是靠模型分数。这条路的对手是 DeepSeek、智谱、阶跃、小米这些同样便宜的开源模型，能不能跑赢没有把握。</li>
+<li>十年情景（推演）：悲观 35% 概率公司被并购或边缘化，利润为零；中性 45% 概率 2036 年收入约 30 亿美元、经营利润约 4.5 亿美元（约 32 亿元人民币）；乐观 20% 概率收入约 80 亿美元、经营利润约 20 亿美元。按中性情景折算，当前市值十年回报接近零；这家公司只能按期权型资产对待。</li>
+<li>2027 年有一笔硬约束：65 亿港元零息可转债到期，转股价 335 港元，现价 182 港元，大概率要用现金赎回。</li>
+</ol>
+<h2 id="_3">二、事实底座</h2>
+<h3 id="21">2.1 核心财务数据</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目（百万美元）</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025</th>
+<th>2025H1</th>
+<th>2026H1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td>3.5（五大客户 2.1 占 60.5% 反推）</td>
+<td>30.5</td>
+<td>79.0</td>
+<td>30.4</td>
+<td>116.6</td>
+</tr>
+<tr>
+<td>其中 AI 原生产品</td>
+<td>—</td>
+<td>21.8</td>
+<td>53.1</td>
+<td>21.2</td>
+<td>42.6</td>
+</tr>
+<tr>
+<td>其中开放平台与企业服务</td>
+<td>—</td>
+<td>8.7</td>
+<td>26.0</td>
+<td>9.2</td>
+<td>73.9</td>
+</tr>
+<tr>
+<td>中国内地以外收入占比</td>
+<td>—</td>
+<td>69.8%</td>
+<td>73.0%</td>
+<td>71.8%</td>
+<td>60.8%</td>
+</tr>
+<tr>
+<td>毛利</td>
+<td>-0.9</td>
+<td>3.7</td>
+<td>20.1</td>
+<td>3.7</td>
+<td>20.8</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>-24.7%</td>
+<td>12.2%</td>
+<td>25.4%</td>
+<td>12.1%</td>
+<td>17.9%</td>
+</tr>
+<tr>
+<td>研发开支</td>
+<td>—</td>
+<td>189.0</td>
+<td>252.8</td>
+<td>124.3</td>
+<td>296.9</td>
+</tr>
+<tr>
+<td>销售及分销开支</td>
+<td>—</td>
+<td>87.0</td>
+<td>51.9</td>
+<td>32.8</td>
+<td>27.0</td>
+</tr>
+<tr>
+<td>行政开支</td>
+<td>—</td>
+<td>14.4</td>
+<td>36.8</td>
+<td>14.8</td>
+<td>30.2</td>
+</tr>
+<tr>
+<td>经调整净亏损</td>
+<td>—</td>
+<td>-244.2</td>
+<td>-250.9</td>
+<td>-138.7</td>
+<td>-293.0</td>
+</tr>
+<tr>
+<td>年内 / 期内亏损（含优先股公允价值）</td>
+<td>—</td>
+<td>-465.2</td>
+<td>-1,871.6</td>
+<td>-402.2</td>
+<td>-358.0</td>
+</tr>
+<tr>
+<td>期末现金结余（含理财）</td>
+<td>—</td>
+<td>880.6</td>
+<td>1,050.3</td>
+<td>—</td>
+<td>1,322.8</td>
+</tr>
+<tr>
+<td>全职员工</td>
+<td>—</td>
+<td>—</td>
+<td>428</td>
+<td>—</td>
+<td>568</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：2025 年全年业绩公告（2026-03-02）、2026 中期业绩公告（2026-08-26）、招股书"财务资料"章节。2023 年收入由招股书"五大客户收入 210 万美元占总收入 60.5%"反推，约 350 万美元。</p>
+<p><strong>单位经济（2026H1）</strong> ：毛利率 17.9%，研发费用率 255%，销售费用率 23%，行政费用率 26%，经调整亏损率 251%。半年研发开支 2.97 亿美元里主要是训练用云服务，管理层原话："主要由于与训练活动相关的云服务开支增加"。</p>
+<h3 id="22">2.2 分部毛利率的推算</h3>
+<p>招股书披露 2025 年前三季度开放平台毛利率 69.4%，AI 原生产品毛利率 4.7%。2026 年上半年开放平台收入占比升到 63.4%，按理总毛利率应该上升，实际却从 25.4% 回落到 17.9%。设 AI 原生产品毛利率在 5% 到 15% 之间，反推开放平台毛利率落在 19.5% 到 25% 之间。中报对此只有一句"主要受基础设施效率提升驱动"，没有解释为什么分部结构改善而毛利率下降。</p>
+<p>这是推算不是披露。最合理的解释是 Token Plan 与 Coding Plan 的套餐定价，以及 M3 定价页标注的"永久 5 折"。API 业务从高毛利生意变成了低毛利生意，这是本报告最重要的一个数字变化。</p>
+<h3 id="23">2.3 用户与客户</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025 年前三季度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 原生产品平均月活（百万）</td>
+<td>3.1</td>
+<td>19.1</td>
+<td>27.6</td>
+</tr>
+<tr>
+<td>其中 Talkie / 星野 月活（百万）</td>
+<td>2.9</td>
+<td>14.7</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>其中海螺 AI 月活（百万）</td>
+<td>—</td>
+<td>2.2</td>
+<td>5.6</td>
+</tr>
+<tr>
+<td>累计用户（百万）</td>
+<td>11.1</td>
+<td>115.4</td>
+<td>212.4</td>
+</tr>
+<tr>
+<td>AI 原生产品付费用户</td>
+<td>11.97 万</td>
+<td>65.03 万</td>
+<td>177.16 万</td>
+</tr>
+<tr>
+<td>开放平台付费客户（单期 API 消费不少于 50 美元）</td>
+<td>约 100</td>
+<td>约 700</td>
+<td>约 2,500</td>
+</tr>
+<tr>
+<td>开放平台月均活跃客户</td>
+<td>4 千</td>
+<td>5 千</td>
+<td>1.6 万</td>
+</tr>
+<tr>
+<td>前五大客户收入占比</td>
+<td>60.5%</td>
+<td>44.1%</td>
+<td>21.7%</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：招股书"概要"与"业务"章节。2025 年报补充：累计服务 2.36 亿用户、21.4 万企业客户与开发者；视频模型累计生成超 6 亿个视频；语音模型累计生成超 2 亿小时语音。</p>
+<p>早期客户画像（招股书匿名披露）：2023 年第一大客户是上海一家以数字阅读为基础的文化集团（占当年收入 37.2%），其余是办公软件商、社交电商平台、在线招聘平台。这说明 B 端起步靠的是国内互联网公司的内容生成需求，不是海外开发者。</p>
+<h3 id="24">2.4 融资与估值史</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>轮次</th>
+<th>最后签约</th>
+<th>每股成本（美元）</th>
+<th>融资额（百万美元）</th>
+<th>投后估值（百万美元）</th>
+<th>招股书给出的估值上升理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>天使</td>
+<td>2021-12</td>
+<td>1.69</td>
+<td>31.0</td>
+<td>200</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Pre-A</td>
+<td>2022-03</td>
+<td>4.23</td>
+<td>50.0</td>
+<td>550</td>
+<td>文本模型 abab1</td>
+</tr>
+<tr>
+<td>A</td>
+<td>2023-05</td>
+<td>6.91</td>
+<td>257.0</td>
+<td>1,157</td>
+<td>首个 API 客户、abab5.5</td>
+</tr>
+<tr>
+<td>A+</td>
+<td>2023-07</td>
+<td>8.81</td>
+<td>50.0</td>
+<td>1,600</td>
+<td>Talkie 上线</td>
+</tr>
+<tr>
+<td>Pre-B</td>
+<td>2024-03</td>
+<td>10.46</td>
+<td>654.0</td>
+<td>2,554</td>
+<td>星野、Speech-01、MoE 模型 abab6</td>
+</tr>
+<tr>
+<td>Pre-B+</td>
+<td>2024-12</td>
+<td>12.28</td>
+<td>123.5</td>
+<td>3,124</td>
+<td>海螺 AI、Hailuo-01、月活破千万</td>
+</tr>
+<tr>
+<td>Pre-B++</td>
+<td>2025-08</td>
+<td>15.14</td>
+<td>390.4</td>
+<td>4,240</td>
+<td>M1（线性注意力）、Hailuo-02、Speech-02、Agent</td>
+</tr>
+<tr>
+<td>港股 IPO</td>
+<td>2026-01-09</td>
+<td>165 港元</td>
+<td>净募 5,293（百万港元，含超额配售）</td>
+<td>约 517 亿港元（按 313.6M 股）</td>
+<td>2025 年收入增长</td>
+</tr>
+<tr>
+<td>配售</td>
+<td>2026-07-14</td>
+<td>268 港元</td>
+<td>净募 9,443.7（百万港元）</td>
+<td>约 936 亿港元</td>
+<td>增强 AI 基建与模型研发、Harness 产品商业化</td>
+</tr>
+<tr>
+<td>可转债</td>
+<td>2026-07-16</td>
+<td>转股价 335 港元</td>
+<td>净募 6,433.3（百万港元），零息，2027 年到期</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>上市前累计融资 15.56 亿美元；上市后一年内又募 27 亿美元（IPO 6.75 亿、配售 12.05 亿、可转债 8.21 亿）。招股书披露上市时 Pre-IPO 资金只用了约 30%。</p>
+<h3 id="25">2.5 股权与治理</h3>
+<ul>
+<li>同股不同权：B 类股每股 10 票。2026 年 9 月末 A 类 271,377,649 股、B 类 81,102,534 股，总股本 352,480,183 股。</li>
+<li>闫俊杰及其关联实体持有 79,102,534 股（22.65%，锁定至 2027-01-08），几乎全部是 B 类股。按 10 票计算，他掌握约 73% 的投票权。董事长、CEO、CTO 三职一人，中报明确披露偏离企业管治守则 C.2.1 条。</li>
+<li>阿里：2026 年 6 月末持 39,662,627 股 A 类（占 A 类 17.06%，占总股本 12.6%），配售后稀释到 11.36%。阿里战投董事总经理陈英杰任非执行董事。</li>
+<li>米哈游：刘伟（米哈游总裁）任非执行董事；米哈游体系在招股书中持 7.34%，罗宇皓控制的 Fanstellar 持 16,015,779 股 A 类（6.89%）。</li>
+<li>IDG 体系持 13,839,721 股（5.95% A 类）。员工持股信托 20,890,736 股（8.98% A 类），此外股权激励计划还剩 15,310,465 股额度未授出。</li>
+<li>2026 年 5 月 31 日公告：已聘请顾问、签署辅导协议，评估科创板发行人民币股份。</li>
+</ul>
+<h3 id="26">2.6 阿里：股东、云供应商、客户三重身份</h3>
+<p>2026 年 8 月 26 日关连交易上限修订公告（需独立股东批准）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>协议</th>
+<th>2025 实际</th>
+<th>2026H1 实际</th>
+<th>原 2026 上限</th>
+<th>新 2026 上限</th>
+<th>新 2027 上限</th>
+<th>新 2028 上限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>向阿里云采购云服务（百万美元）</td>
+<td>75.9</td>
+<td>75.6</td>
+<td>115</td>
+<td>300</td>
+<td>400</td>
+<td>500</td>
+</tr>
+<tr>
+<td>向阿里集团提供 API 服务（百万美元）</td>
+<td>0.34</td>
+<td>0.50</td>
+<td>0.65</td>
+<td>7.5</td>
+<td>22</td>
+<td>33</td>
+</tr>
+</tbody>
+</table></div>
+<p>2025 年向阿里云采购额占研发开支的 30%。公司在公告里把 2026 到 2028 年研发开支的增长假设写明了：配售与可转债净额的约 80%（127 亿港元，约 16.2 亿美元）要在 2027 年底前用于 AI 基建和模型研发，折合每月约 9,260 万美元。这是公司自己给出的未来 18 个月烧钱速度。</p>
+<p>API 卖给阿里的上限从 65 万美元提到 3,300 万美元，理由是语音模型接入阿里数字媒体场景、文本模型接入阿里软件生态、联合开发行业方案。阿里自己有千问，还要买 MiniMax 的语音和文本 API，这说明 MiniMax 的语音模型在阿里内部有真实需求，也说明阿里在用采购扶持被投公司，两种解释都成立。</p>
+<h3 id="27">2.7 股价</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时点</th>
+<th>价格（港元）</th>
+<th>事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-01-09</td>
+<td>165 发行，首日收 345</td>
+<td>IPO，首日涨 109%</td>
+</tr>
+<tr>
+<td>2026-04-01</td>
+<td>1,060（52 周最高价 1,330）</td>
+<td>高点，市值约 3,300 亿港元</td>
+</tr>
+<tr>
+<td>2026-07-09</td>
+<td>297.4</td>
+<td>配售前最后交易日</td>
+</tr>
+<tr>
+<td>2026-07-14</td>
+<td>268</td>
+<td>配售价</td>
+</tr>
+<tr>
+<td>2026-10-16</td>
+<td>182.1</td>
+<td>市值约 642 亿港元（约 82 亿美元）</td>
+</tr>
+</tbody>
+</table></div>
+<p>从高点下跌 83%，比配售价低 32%，比发行价高 10%。</p>
+<p><strong>估值口径</strong> ：过去 12 个月收入 1.652 亿美元（2025 下半年 4,860 万 + 2026 上半年 1.166 亿），市销率约 50 倍。按 2026 上半年年化 2.33 亿美元算 35 倍。扣除备考净现金约 24 亿美元（6 月末现金 13.2 亿 + 配售 12.1 亿 + 可转债 8.2 亿 - 银行借款 1.3 亿 - 可转债本金 8.3 亿），企业价值约 58 亿美元，企业价值 / 过去 12 个月收入约 35 倍。</p>
+<h2 id="_4">三、创始人与团队</h2>
+<h3 id="31">3.1 创始人</h3>
+<p>闫俊杰，36 岁。2010 年东南大学数学本科，2015 年中科院自动化所人工智能博士，清华博士后。商汤工作六年多，做到副总裁、研究院副院长。约 200 篇论文、3 万次引用，2019 年吴文俊人工智能自然科学奖与科技进步奖。2021 年 12 月创办 MiniMax。</p>
+<p>招股书披露的三位创始人（闫俊杰、贠燁禕、周彧聰）全部出自商汤。贠燁禕 31 岁，约翰霍普金斯电子工程本科，商汤 CEO 执行助理兼战略负责人出身，现任 COO，负责产品与商业化。周彧聰 32 岁，北航数学本科、计算机硕士，商汤与华为算法岗出身，2022 年 3 月加入，负责视觉模型。</p>
+<p>语言模型负责人赵鹏宇 29 岁，北大计算机本硕，Hulu 推荐算法出身，2023 年 8 月以研究员身份加入，2025 年 6 月进董事会，是 M3 稀疏注意力论文的通讯作者。两年从研究员到执行董事，说明文本模型线在 2023 到 2025 年间换过负责人，也说明公司的人才梯队很年轻。</p>
+<h3 id="32">3.2 创始人的公开判断</h3>
+<p>本次没取到访谈原话。能引用的是公司在法定文件里的自述：</p>
+<ul>
+<li>使命"Intelligence with Everyone"，公告原文把"推理效率"定义为既是普及智能的前提，也是"通过更多后训练、实验和部署来继续扩展模型能力"的前提。这句话值得注意：它把效率放在能力前面，是一家资源受限公司的自我定位。</li>
+<li>2025 年报展望："编程领域将迎来 L4 至 L5 级别的智能，从工具走向同事级协作；办公领域将复刻去年编程领域的进步速度；多模态创作走向直出可交付的中长内容。"并提出"从大模型公司向 AI 时代的平台型公司迈进"。</li>
+<li>2025 年报披露内部"Agent 实习生"覆盖近 90% 员工，把自己当作 AI 原生组织的试验场。</li>
+</ul>
+<h3 id="33">3.3 决策记录</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>决策</th>
+<th>时间</th>
+<th>结果（以事实衡量）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>做 MoE 架构</td>
+<td>2023 研究、2024 发布 abab6</td>
+<td>招股书称"亚洲第一个商业化 MoE 基础模型"。后来 DeepSeek V2/V3 把 MoE 做成行业标准，先发没有转化成持续领先。</td>
+</tr>
+<tr>
+<td>做 Talkie 出海</td>
+<td>2023 年 6 月</td>
+<td>带来了用户基数（累计 1.47 亿）和早期收入，也带来 2024 年 12 月到 2025 年 2 月被苹果下架两个月（日均下载减少 1.68 万）。AI 原生产品毛利率 2024 年为负，2025 年前三季度只有 4.7%。</td>
+</tr>
+<tr>
+<td>做线性注意力（MiniMax-01、M1）</td>
+<td>2025 年 1 月到 6 月</td>
+<td>技术上做到百万上下文，商业上没有形成用量。M1 在 Artificial Analysis 智能指数上只有 11.7 分。M2 放弃了线性注意力。</td>
+</tr>
+<tr>
+<td>M2 转向 Agent 与编程、开放权重</td>
+<td>2025 年 10 月</td>
+<td>最成功的一次决策。发布一周内成为 OpenRouter 日用量前三、首个单日 500 亿 token 的中国模型。API 收入从 2025 全年 2,600 万美元跳到 2026 上半年 7,390 万美元。</td>
+</tr>
+<tr>
+<td>做视频（Hailuo）和语音</td>
+<td>2024 年起</td>
+<td>视频模型累计 6 亿条生成，H3 开放权重上月下载 436 万次；语音累计 2 亿小时。这两条线是公司最有辨识度的产品，但视频单季收入被快手可灵（2026Q2 超 8.5 亿元人民币）压制。</td>
+</tr>
+<tr>
+<td>上市时点</td>
+<td>2026 年 1 月</td>
+<td>选在估值窗口期，上市后 6 个月内高点市值 3,300 亿港元，并趁高位完成 160 亿港元再融资。从融资角度是成功的，从股东回报角度高点买入者亏 83%。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="34">3.4 团队规模与效率</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时点</th>
+<th>员工</th>
+<th>研发占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-09-30</td>
+<td>385</td>
+<td>74%（284 人）</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>428</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td>568</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>9 个月扩员 48%。按 2026 上半年年化收入算，人均收入约 41 万美元；半年研发开支 2.97 亿美元中大头是云服务，不是人力（半年员工薪酬总额含股份支付 6,890 万美元）。</p>
+<h3 id="35">3.5 人物风险</h3>
+<ul>
+<li>一人兼董事长、CEO、CTO，掌握 73% 投票权，没有制衡。好处是决策快，坏处是技术路线选错时没有纠错机制，线性注意力的弯路就是例子。</li>
+<li>核心人员锁定期 2027-01-08 到期。</li>
+<li>文本模型线负责人入职两年即进董事会，之前的负责人去向在披露文件里没有记录，团队流失的媒体报道本次未取得。</li>
+<li>两位投资方董事（阿里、米哈游）同时是业务伙伴，关连交易上限一年内上调近 3 倍，独立股东需要持续盯这件事。</li>
+</ul>
+<h2 id="_5">四、技术选型</h2>
+<h3 id="41">4.1 架构史</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>模型</th>
+<th>发布</th>
+<th>总参数 / 激活</th>
+<th>注意力</th>
+<th>上下文</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>abab 系列</td>
+<td>2022-2024</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>abab6 为 MoE</td>
+</tr>
+<tr>
+<td>MiniMax-01</td>
+<td>2025-01</td>
+<td>456B</td>
+<td>Lightning Attention（线性）+ MoE</td>
+<td>100 万</td>
+<td></td>
+</tr>
+<tr>
+<td>M1</td>
+<td>2025-06</td>
+<td>—</td>
+<td>线性混合</td>
+<td>100 万</td>
+<td>CISPO 强化学习；Artificial Analysis 智能指数 11.7</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>2025-10-23</td>
+<td>230B / 10B</td>
+<td>全注意力</td>
+<td>20.5 万</td>
+<td>修改版 MIT 许可；交错思考；SWE-bench Verified 69.4</td>
+</tr>
+<tr>
+<td>M2.1</td>
+<td>2025-12-23</td>
+<td>229B</td>
+<td>全注意力</td>
+<td>20.5 万</td>
+<td></td>
+</tr>
+<tr>
+<td>M2.5</td>
+<td>2026-02-12</td>
+<td>229B</td>
+<td>全注意力</td>
+<td>20.5 万</td>
+<td>公司称 SWE-bench Verified 刷新纪录，效率比 M2.1 高 37%</td>
+</tr>
+<tr>
+<td>M2.7</td>
+<td>2026-03-18</td>
+<td>229B</td>
+<td>全注意力</td>
+<td>20.5 万</td>
+<td></td>
+</tr>
+<tr>
+<td>M3</td>
+<td>2026-05-31</td>
+<td>约 428B / 23B</td>
+<td>MiniMax Sparse Attention（块稀疏）</td>
+<td>100 万</td>
+<td>原生多模态（文本 + 图像 + 视频输入）；SWE-bench Verified 80.5，SWE-bench Pro 59</td>
+</tr>
+<tr>
+<td>H3</td>
+<td>2026-08</td>
+<td>33B 稠密</td>
+<td>—</td>
+<td>—</td>
+<td>视频 + 同步音频，最高 2K 24 帧，4 到 15 秒；社区许可</td>
+</tr>
+<tr>
+<td>Speech 2.6 / 2.8</td>
+<td>2025-10 / 2026</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>40 多种语言</td>
+</tr>
+<tr>
+<td>Music 2.5 / 3.0</td>
+<td>2025 / 2026-08</td>
+<td>2B</td>
+<td>—</td>
+<td>—</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：Hugging Face 模型卡、Artificial Analysis 模型页、arXiv 2606.13392（MiniMax Sparse Attention，2026-06-11）。M3 参数量两处来源不一致：模型卡写约 428B / 23B 激活，论文摘要抓取结果写 109B，以模型卡为准，存疑。</p>
+<h3 id="42">4.2 从线性注意力到稀疏注意力</h3>
+<p>这是理解这家公司技术判断的关键线索。2025 年上半年它押线性注意力，卖点是百万上下文；2025 年 10 月 M2 退回全注意力；2026 年 M3 改走块稀疏注意力（每个查询组用轻量打分分支选 top-k 键值块，再在选中的块上做精确注意力），论文自报百万上下文下注意力计算量降 28.4 倍，H800 上预填充提速 14.2 倍、解码提速 7.6 倍。</p>
+<p><strong>推断</strong> ：这条路线和 DeepSeek 的 DSA 稀疏注意力方向一致，说明 MiniMax 在注意力机制上从"自创路线"回到了"跟随主流"。线性注意力失败的原因公司没有正式解释，从结果看是复杂多步推理和智能体任务上的能力损失没法用长上下文补回来。一家公司在 18 个月内换三次注意力机制，技术判断力不算稳定，但纠错速度快。</p>
+<h3 id="43">4.3 模型水平</h3>
+<p>Artificial Analysis 三项指数（2026-10-16 页面，每个模型三个数依次为编程指数、智能体指数、智能指数，顺序按 M3 页面标注推定）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>模型</th>
+<th>编程</th>
+<th>智能体</th>
+<th>智能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Fable 5.1</td>
+<td>81.6</td>
+<td>57.9</td>
+<td>53.4</td>
+</tr>
+<tr>
+<td>Kimi K3</td>
+<td>76.2</td>
+<td>50.0</td>
+<td>43.6</td>
+</tr>
+<tr>
+<td>Qwen3.8 Max (0902)</td>
+<td>76.2</td>
+<td>56.0</td>
+<td>45.4</td>
+</tr>
+<tr>
+<td>GLM-5.3</td>
+<td>74.8</td>
+<td>53.1</td>
+<td>44.8</td>
+</tr>
+<tr>
+<td>DeepSeek V4 Flash 0731</td>
+<td>69.1</td>
+<td>41.0</td>
+<td>34.3</td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro 0813</td>
+<td>68.8</td>
+<td>41.3</td>
+<td>36.0</td>
+</tr>
+<tr>
+<td>腾讯 Hy3</td>
+<td>58.8</td>
+<td>25.3</td>
+<td>24.1</td>
+</tr>
+<tr>
+<td><strong>MiniMax-M3</strong></td>
+<td><strong>58.6</strong></td>
+<td><strong>29.5</strong></td>
+<td><strong>29.2</strong></td>
+</tr>
+<tr>
+<td>MiniMax-M2.7</td>
+<td>52.6</td>
+<td>22.8</td>
+<td>15.3</td>
+</tr>
+</tbody>
+</table></div>
+<p>M3 的智能指数 29.2（v4.3.2），页面标注在同类 120 个模型里排第 22。编程指数 58.6 比 M2.7 高 6 分，但比 Kimi K3、Qwen3.8、GLM-5.3 低 16 到 18 分，比 DeepSeek V4 低 10 分。</p>
+<p>M3 模型卡自报 SWE-bench Verified 80.5，GPQA Diamond 92.9%。模型卡数字和第三方指数的差距，说明公司在它选的榜上调得很好，在综合榜上没有优势。</p>
+<p>OpenRouter 的模型对战评分：M3 1259 分（胜率 51.9%），榜首 Claude Opus 5.5 为 1479 分。</p>
+<p>视频与语音没有取到第三方榜数据。H3 在 Hugging Face 上月下载 436 万次，是 MiniMax 所有模型里最高的，高于 M2.5（78 万）和 M3（20 万）。开放权重视频模型的下载量不等于收入，但说明 H3 在开发者里的关注度远超文本模型。</p>
+<h3 id="44">4.4 用量：从前三到榜外</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时点</th>
+<th>OpenRouter 用量位置</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-10 M2 发布一周内</td>
+<td>日用量前三，首个单日超 500 亿 token 的中国模型</td>
+<td>招股书</td>
+</tr>
+<tr>
+<td>2026-02</td>
+<td>M2.5 发布后"霸榜"，M2 系列日均 token 为 2025 年 12 月的 6 倍以上</td>
+<td>2025 年报</td>
+</tr>
+<tr>
+<td>2026-10-16 当周</td>
+<td>前二十名无 MiniMax 模型</td>
+<td>OpenRouter 榜单页</td>
+</tr>
+</tbody>
+</table></div>
+<p>2026 年 10 月当周前二十名的 token 分布：DeepSeek V4.1 Flash 26.0%，阶跃 Step 5 Preview 13.3%，GLM-5.3 Flash 8.8%，小米 MiMo V2.6 Flash 8.1%，腾讯 Hy4 5.5%，英伟达 Nemotron 3 Ultra 5.3%，GPT-6 Luna 4.9%，Claude Opus 5.5 4.0%。</p>
+<p><strong>推断</strong> ：OpenRouter 只是公开开发者渠道的一个切片，MiniMax 自家平台和 Coding Plan 的用量不在这里体现，中报说 API 收入增 703% 也是事实。但这个切片说明一件事：在"便宜的开源模型"这个池子里，MiniMax 2025 年 10 月到 2026 年 2 月的领先，在 8 个月内被 DeepSeek、阶跃、智谱、小米、腾讯轮番超过。这是没有护城河的直接证据。</p>
+<h3 id="45">4.5 定价</h3>
+<p>OpenRouter 上的价格（美元 / 百万 token，2026-10-16）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>模型</th>
+<th>输入</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MiniMax M3</td>
+<td>0.30</td>
+<td>1.20</td>
+</tr>
+<tr>
+<td>MiniMax M2.7</td>
+<td>0.30</td>
+<td>1.20</td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash</td>
+<td>0.016</td>
+<td>0.72</td>
+</tr>
+<tr>
+<td>DeepSeek V4 Flash</td>
+<td>0.091</td>
+<td>0.18</td>
+</tr>
+<tr>
+<td>GLM-5.3 Flash</td>
+<td>0.15</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>GLM-5.3</td>
+<td>0.11</td>
+<td>4.80</td>
+</tr>
+<tr>
+<td>小米 MiMo V2.6 Flash</td>
+<td>0.14</td>
+<td>0.28</td>
+</tr>
+<tr>
+<td>Qwen3.8 Flash</td>
+<td>0.15</td>
+<td>0.47</td>
+</tr>
+<tr>
+<td>Qwen3.8 Max (0902)</td>
+<td>2.00</td>
+<td>6.00</td>
+</tr>
+<tr>
+<td>Kimi K3</td>
+<td>0.45</td>
+<td>16.5</td>
+</tr>
+<tr>
+<td>阶跃 Step 5 Preview</td>
+<td>1.00</td>
+<td>2.70</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>2.00</td>
+<td>10.0</td>
+</tr>
+<tr>
+<td>Claude Opus 5.5</td>
+<td>4.00</td>
+<td>20.0</td>
+</tr>
+<tr>
+<td>GPT-6 Luna</td>
+<td>0.10</td>
+<td>0.50</td>
+</tr>
+</tbody>
+</table></div>
+<p>MiniMax 官方定价页标注 M3 价格为"永久 5 折"后的价格，超过 51.2 万 token 的请求加倍。视频 H3 按秒计费 0.08 到 0.13 美元，语音 60 到 100 美元每百万字符。</p>
+<p><strong>推断</strong> ：M3 的价格在"便宜模型"里已经不算便宜，DeepSeek、智谱、小米、千问的 Flash 档都比它低。它的分数又比贵的模型低。处在价格和能力都不占优的中间位置，这是用量流失的直接原因，也是毛利率上不去的直接原因：价格要跟 DeepSeek 比，成本却没有 DeepSeek 的规模。</p>
+<h3 id="46">4.6 算力</h3>
+<ul>
+<li>没有自有算力。2025 年末物业厂房设备只有 157 万美元，2026 年 6 月末升到 7,491 万美元，开始买设备但规模很小。训练和推理都买云。</li>
+<li>2025 年研发开支 2.53 亿美元，其中阿里云 7,590 万美元（30%）。五大供应商占采购 62.5%。</li>
+<li>公司自报推理 MFU 超过 75%，行业平均 40% 到 50%。统一训练推理资源池、跨集群负载均衡是招股书强调的工程能力。</li>
+<li>未来 18 个月基建与研发预算 16.2 亿美元。与它对照：Anthropic 2026 年 5 月估值 9,650 亿美元；OpenAI 与甲骨文签了五年 3,000 亿美元算力合同。MiniMax 的算力预算和美国头部公司差两个数量级，和字节、阿里差一个数量级以上（后两者数字本次未取得，不写）。</li>
+<li>出口管制：招股书风险因素披露 2025 年 9 月 29 日美国商务部"关联方规则"（实体清单股东持股 50% 以上的实体视同受限），实施推迟到 2026 年 10 月。它在中国租的高端算力能否持续获得，不由它决定。</li>
+</ul>
+<h3 id="47">4.7 开源与蒸馏</h3>
+<ul>
+<li>M2 系列、M3、H3、Music 3.0 全部开放权重。文本模型用修改版 MIT 许可，H3 用社区许可且对美欧英韩用户设申请流程。</li>
+<li>Anthropic 2026 年 2 月博客点名 MiniMax：通过欺诈账户与 Claude 产生超过 1,300 万次交互，目标是智能体编程、工具调用与编排能力，Anthropic 称通过请求元数据和基础设施指标定位到 MiniMax，并与其产品路线图的时间对上；在 Anthropic 发布新模型后 24 小时内，近一半流量转向新模型。同一篇博客还点名 DeepSeek 和月之暗面，三家合计约 2.4 万个欺诈账户、1,600 万次交互。</li>
+<li><strong>推断</strong> ：这件事有两层含义。技术上，M2 以后智能体能力的快速提升，部分来自对前沿模型的蒸馏，这是全行业的做法，但说明"自研"的含金量要打折。商业上，这是海外 B 端的合规风险，美国企业客户采购时会被问到。</li>
+</ul>
+<h3 id="48">4.8 技术壁垒判断</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>能力</th>
+<th>对手 12 个月内能否复制</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文本模型（M3）</td>
+<td>已被复制并超越</td>
+<td>无壁垒</td>
+</tr>
+<tr>
+<td>稀疏注意力工程</td>
+<td>DeepSeek 已有同类</td>
+<td>无壁垒</td>
+</tr>
+<tr>
+<td>推理效率（75% MFU）</td>
+<td>大厂基建团队可以做到</td>
+<td>6 到 12 个月的时间优势</td>
+</tr>
+<tr>
+<td>视频 + 同步音频（H3）</td>
+<td>可灵、Seedance、Veo 都在做</td>
+<td>产品级差异，不是技术壁垒</td>
+</tr>
+<tr>
+<td>语音（低延迟、40 多种语言、2 亿小时累计）</td>
+<td>ElevenLabs、字节都有</td>
+<td>在中国公司里有辨识度，全球无壁垒</td>
+</tr>
+<tr>
+<td>全模态一个团队做完</td>
+<td>568 人做四个模态</td>
+<td>是资源分散还是协同，目前看是分散：每条线都没做到第一</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_6">五、赛道与竞争</h2>
+<h3 id="51">5.1 市场结构</h3>
+<ul>
+<li>招股书引用的灼识咨询数据：2024 年全球基础模型市场（按模型收入）107 亿美元，MiniMax 以 0.3% 份额排全球第十；预测 2029 年 2,065 亿美元。前两名份额 30.1% 和 16.9%。</li>
+<li>中国创业公司已上市的两家：智谱（2513.HK，2026-01-08 上市）市值 2,526 亿港元，2025 年收入 7.24 亿元人民币、毛利率 41%、净亏损 47.2 亿元；过去 12 个月收入 14.9 亿元、毛利率 30.4%、净亏损 44.3 亿元。MiniMax 市值 642 亿港元，是智谱的四分之一，但过去 12 个月收入（约 11.9 亿元人民币）接近智谱的 80%。</li>
+<li>月之暗面 2026 年 7 月融资估值 350 亿美元，4 月年化收入 3 亿美元；7 月发布 2.8 万亿参数的 Kimi K3。</li>
+<li>DeepSeek 不融资不上市，V4.1 Flash 占 OpenRouter 当周 26% 的 token。</li>
+<li>大厂：阿里 Qwen3.8、腾讯 Hy4、字节 Seed，以及小米 MiMo、阶跃 Step 5 都在开源模型用量榜前列。</li>
+</ul>
+<h3 id="52">5.2 对标表</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>估值 / 市值</th>
+<th>收入口径</th>
+<th>收入</th>
+<th>毛利率</th>
+<th>市销率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MiniMax</td>
+<td>82 亿美元</td>
+<td>过去 12 个月</td>
+<td>1.65 亿美元</td>
+<td>17.9%（2026H1）</td>
+<td>50 倍</td>
+</tr>
+<tr>
+<td>智谱</td>
+<td>322 亿美元</td>
+<td>过去 12 个月</td>
+<td>2.07 亿美元</td>
+<td>30.4%</td>
+<td>156 倍</td>
+</tr>
+<tr>
+<td>月之暗面</td>
+<td>350 亿美元</td>
+<td>年化（2026-04）</td>
+<td>3 亿美元</td>
+<td>未披露</td>
+<td>117 倍</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>9,650 亿美元</td>
+<td>维基页面数字已过时，不引用</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>三家中国创业公司里 MiniMax 按收入最便宜，但三家都在"收入 100 倍左右"的定价区间，这个区间的前提是收入每年翻倍以上，MiniMax 2026 上半年做到了（283%），能不能持续是估值的全部。</p>
+<h3 id="53">5.3 细分赛道</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>赛道</th>
+<th>MiniMax 位置</th>
+<th>对手数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>视频生成</td>
+<td>海螺 AI 累计 6 亿条视频；H3 开放权重上月 436 万下载</td>
+<td>快手可灵 2026Q2 收入超 8.5 亿元人民币、同比增超 200%，单季收入约为 MiniMax 全部 AI 原生产品半年收入（4,260 万美元）的近 3 倍</td>
+</tr>
+<tr>
+<td>语音</td>
+<td>累计 2 亿小时，40 多种语言，接入阿里数字媒体场景</td>
+<td>ElevenLabs 数据未取得</td>
+</tr>
+<tr>
+<td>陪伴（Talkie / 星野）</td>
+<td>月活 2,010 万（2025 年前三季度），累计 1.47 亿用户；2024 年底被苹果下架两个月</td>
+<td>Character.ai 现状未取得</td>
+</tr>
+<tr>
+<td>Agent 与编程 API</td>
+<td>M2 到 M3 的主战场；Coding Plan token 用量 2026 年 2 月比 12 月增 10 倍以上</td>
+<td>2026 年 10 月 OpenRouter 用量榜前二十无 MiniMax</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="54">5.4 结构性力量（推断）</h3>
+<ol>
+<li>开源权重把 API 价格压到每百万 token 几毛钱美元，价格由 DeepSeek 定，不由 MiniMax 定。</li>
+<li>推理成本每年下降的速度，决定了低毛利能不能转成高毛利。MiniMax 的毛利率 2025 年升到 25.4%、2026 上半年又降回 17.9%，说明降本的速度跟不上降价的速度。</li>
+<li>算力管制让中国公司训练下一代模型的成本结构不确定，这对没有自有算力、靠租云的公司影响最大。</li>
+<li>三年后这条赛道大概率的结构：中国有 2 到 3 家大厂模型（字节、阿里、腾讯）、1 家不融资的 DeepSeek、2 到 3 家靠资本市场活着的创业公司。利润沉淀在算力（云厂商）和应用（有分发的公司），模型层本身是薄利。MiniMax 在这个结构里是"靠资本市场活着的创业公司"之一。</li>
+</ol>
+<h2 id="_7">六、护城河</h2>
+<h3 id="61">6.1 现在</h3>
+<p>逐项检验：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>候选护城河</th>
+<th>证据</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型能力</td>
+<td>三项指数落后中国第一梯队 14 到 18 分</td>
+<td>无</td>
+</tr>
+<tr>
+<td>成本优势</td>
+<td>毛利率 17.9%，价格高于 DeepSeek、智谱、小米 Flash 档</td>
+<td>无</td>
+</tr>
+<tr>
+<td>用户网络 / 转换成本</td>
+<td>API 用户按价格和分数随时切换；Talkie 用户有情感粘性但毛利接近零</td>
+<td>弱</td>
+</tr>
+<tr>
+<td>数据</td>
+<td>1.47 亿陪伴用户的对话数据、6 亿条视频生成记录，有价值但没有变成模型分数优势</td>
+<td>弱</td>
+</tr>
+<tr>
+<td>品牌 / 渠道</td>
+<td>阿里采购与分发；海外开发者社区认知（Hugging Face 下载量）</td>
+<td>弱，且依赖股东</td>
+</tr>
+<tr>
+<td>全模态产品面</td>
+<td>文本 + 视频 + 语音 + 音乐一家供货，对需要多模态的中小企业客户有便利</td>
+<td>这是它唯一的差异点，但不是壁垒</td>
+</tr>
+</tbody>
+</table></div>
+<p>结论：没有通过检验的护城河。公司活着靠的是资本（备考净现金 24 亿美元）和增速。</p>
+<h3 id="62-2029">6.2 三年后（2029）</h3>
+<p>可能形成护城河的路径只有一条：把"便宜 + 全模态 + 套餐 + 工具链（MiniMax Code、Agent）"打包成开发者和中小企业的默认选项，靠使用习惯和集成深度留住客户。类似 Twilio 之于通信 API：技术不是最强，但集成了就懒得换。</p>
+<p>需要看到的证据：
+- 开放平台毛利率回到 40% 以上，同时收入继续翻倍。
+- Coding Plan / Token Plan 的续费率（公司尚未披露）。
+- H3 的开放权重下载量转成视频 API 收入。
+- 阿里 API 采购上限（2027 年 2,200 万美元、2028 年 3,300 万美元）实际用满。</p>
+<p>做不到这些，三年后的护城河和现在一样是零，区别只是现金少了 16 亿美元。</p>
+<h2 id="_8">七、差异化</h2>
+<p>和对手逐一比：</p>
+<ul>
+<li>对 DeepSeek：DeepSeek 更便宜、分数更高、不需要赚钱。MiniMax 的差异是有视频、语音、音乐，有 C 端产品，有销售团队。</li>
+<li>对智谱：智谱毛利率更高（30% 到 41%）、国内 B 端与政企更深、估值高四倍。MiniMax 海外收入占比 60.8%，智谱海外弱。</li>
+<li>对月之暗面：Kimi K3 2.8 万亿参数走"大模型对标前沿"路线，MiniMax 走"23B 激活参数的便宜模型"路线。</li>
+<li>对大厂：大厂有算力、有分发、有补贴；MiniMax 有速度（M2 到 M3 七个月五个版本）和没有历史包袱。</li>
+<li>对海外（Anthropic、OpenAI）：不在一个价格段，MiniMax 是它们的蒸馏方而不是竞争方。</li>
+</ul>
+<p>差异化真正成立的只有一条：<strong>它是中国创业公司里唯一同时在海外卖文本、视频、语音 API 且海外收入过半的</strong> 。这条差异化的脆弱之处是海外合规（蒸馏指控、Talkie 下架史、迪士尼等片方诉讼、出口管制关联方规则）。</p>
+<h2 id="_9">八、五年与十年</h2>
+<h3 id="81-2031">8.1 五年后（2031）（推演）</h3>
+<p>三种状态：</p>
+<ol>
+<li>独立存活并盈利（概率约 35%）：收入 10 到 15 亿美元，毛利率 45% 以上，经营盈亏平衡。路径是 API 套餐 + 视频 + 语音三条线都做成，海外占比维持过半。</li>
+<li>独立存活但持续亏损（概率约 30%）：收入 5 到 8 亿美元，毛利率 30% 左右，靠再融资。科创板发行人民币股份是为此准备的。</li>
+<li>被并购或大幅收缩（概率约 35%）：最可能的买家是阿里（已持 11.36%、是最大云供应商、有董事席位）。并购价格参考 2027 年可转债赎回后的现金和用户资产，不参考今天的市值。</li>
+</ol>
+<h3 id="82-2036">8.2 十年后（2036）（推演）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>2036 收入</th>
+<th>毛利率</th>
+<th>经营利润率</th>
+<th>经营利润</th>
+<th>折人民币</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观（被并购 / 边缘化）</td>
+<td>35%</td>
+<td>不足 10 亿美元</td>
+<td>—</td>
+<td>0 或负</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>中性（活成中型 API 公司）</td>
+<td>45%</td>
+<td>约 30 亿美元（2026 年约 3 亿美元起年化增 26%）</td>
+<td>50%</td>
+<td>15%</td>
+<td>约 4.5 亿美元</td>
+<td>约 32 亿元</td>
+</tr>
+<tr>
+<td>乐观（全模态平台做成）</td>
+<td>20%</td>
+<td>约 80 亿美元（年化增 39%）</td>
+<td>60%</td>
+<td>25%</td>
+<td>约 20 亿美元</td>
+<td>约 145 亿元</td>
+</tr>
+</tbody>
+</table></div>
+<p>概率加权经营利润约 6 亿美元（约 43 亿元人民币），但这个加权数没有意义，因为三个情景不能平均：35% 的情景里股权接近归零。</p>
+<p>对照当前 82 亿美元市值：中性情景下 2036 年税后利润约 3.8 亿美元，给 20 倍市盈率是 77 亿美元，十年回报约为零。乐观情景 20 倍市盈率约 340 亿美元，4 倍。悲观情景接近归零。概率加权约 1.3 倍，年化约 2%，低于无风险利率。这是期权型资产的赔率结构，不是复利型资产的赔率结构。</p>
+<p>能不能比现在赚得多这个问题不用十年，看两件事就够：开放平台毛利率能不能从 20% 多回到 50%，OpenRouter 这类公开渠道的用量能不能重回前十。两件事在 2027 年中报前都看得到。</p>
+<h2 id="_10">九、检验点</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事项</th>
+<th>击穿信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2027-03</td>
+<td>2026 年报</td>
+<td>全年毛利率低于 20%；开放平台增速低于 150%</td>
+</tr>
+<tr>
+<td>2027-01-08</td>
+<td>创始人与核心人员锁定期到期</td>
+<td>出现减持公告</td>
+</tr>
+<tr>
+<td>2027 年内</td>
+<td>65 亿港元零息可转债到期</td>
+<td>转股价 335 港元，股价不过线就要现金赎回，占备考现金约四分之一</td>
+</tr>
+<tr>
+<td>持续</td>
+<td>阿里关连交易</td>
+<td>API 采购额远低于上限说明阿里内部需求不实；云采购超上限说明烧钱超预算</td>
+</tr>
+<tr>
+<td>持续</td>
+<td>Artificial Analysis 智能指数与 OpenRouter 用量榜</td>
+<td>下一代模型（M4）发布后 30 天内进不了开源模型前五</td>
+</tr>
+<tr>
+<td>2026-10</td>
+<td>美国商务部关联方规则生效</td>
+<td>算力供应是否受影响</td>
+</tr>
+<tr>
+<td>待定</td>
+<td>科创板人民币股份</td>
+<td>推进意味着港股融资渠道不够用</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_11">十、未查到与存疑</h2>
+<ol>
+<li>创始人访谈原话（对 AGI、开源、算力、成本的判断）：联网检索额度耗尽，只用了法定文件里的公司自述。</li>
+<li>联合创始人与核心研究员的流失记录：披露文件无，媒体报道未取得。</li>
+<li>Talkie / 星野 的第三方下载与收入数据、美国监管动向（议员点名、儿童安全诉讼）：未取得；招股书只披露了 2024 年 12 月苹果下架事件。</li>
+<li>国内 token 调用量市场份额、企业 API 市场规模的第三方统计：未取得，只有招股书引用的灼识 2024 年全球份额。</li>
+<li>视频与语音模型的第三方评测榜位置：未取得。</li>
+<li>M3 参数量：模型卡 428B / 23B 激活与论文摘要抓取的 109B 不一致。</li>
+<li>Artificial Analysis 三项指数的对应顺序按 M3 页面标注推定，其他模型的三个数可能顺序不同，但每一项 M3 都低于第一梯队，结论不受影响。</li>
+<li>2026 年上半年分部毛利率为推算，公司未披露。</li>
+<li>字节、阿里、DeepSeek 的算力规模数字未取得，报告只写数量级判断。</li>
+<li>Anthropic 的蒸馏指控是单方面陈述，MiniMax 的回应未取得。</li>
+</ol>
+<h2 id="_12">十一、来源</h2>
+<ul>
+<li>招股书：https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf</li>
+<li>配发结果：https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0108/2026010801342.pdf</li>
+<li>2025 年全年业绩：https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0302/2026030202838_c.pdf</li>
+<li>2025 年报：https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042202118.pdf</li>
+<li>科创板评估公告：https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0531/2026053100218_c.pdf</li>
+<li>配售与可转债：https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0710/2026071000028_c.pdf 、https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0716/2026071601147.pdf</li>
+<li>2026 中期业绩：https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf</li>
+<li>关连交易上限修订：https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082601949.pdf</li>
+<li>2026 中报：https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093002173.pdf</li>
+<li>9 月股本月报：https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1002/2026100200077.pdf</li>
+<li>MiniMax-M3 模型卡：https://huggingface.co/MiniMaxAI/MiniMax-M3 ；M2：https://huggingface.co/MiniMaxAI/MiniMax-M2 ；H3：https://huggingface.co/MiniMaxAI/MiniMax-H3 ；组织页：https://huggingface.co/MiniMaxAI</li>
+<li>MiniMax Sparse Attention：https://arxiv.org/abs/2606.13392</li>
+<li>Artificial Analysis M3 页：https://artificialanalysis.ai/models/minimax-m3</li>
+<li>OpenRouter 榜单与模型定价：https://openrouter.ai/rankings 、https://openrouter.ai/api/v1/models</li>
+<li>MiniMax 定价页：https://platform.minimax.io/docs/guides/pricing</li>
+<li>Anthropic 蒸馏博客：https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks</li>
+<li>快手 2026Q2 业绩转载：https://money.udn.com/money/story/123828/9701633</li>
+<li>行情：https://finance.yahoo.com/quote/0100.HK 、https://finance.yahoo.com/quote/2513.HK</li>
+<li>维基百科（仅用于智谱上市信息、月之暗面融资与 K3 发布、MiniMax 创始人名单）</li>
+</ul></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/4587c8c773a2.html">MiniMax 创始人访谈研究与结论复核</a><div class="meta">2026-10-18 · 研究</div></li><li><a href="../r/8a072c27bb1d.html">收入增 283%、毛利率 17.9%：MiniMax 卖的是便宜的智能</a><div class="meta">2026-10-18 · 公众号</div></li><li><a href="../r/c1e706739223.html">MiniMax研究报告：来源、冲突与核验边界</a><div class="meta">2026-10-16 · 底稿</div></li><li><a href="../r/5f320d2574ae.html">MiniMax（00100.HK）研究报告</a><div class="meta">2026-10-16 · 研究</div></li><li><a href="../r/f1f5a85ec474.html">MiniMax（稀宇科技）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/1f005b032732.html">MiniMax（0100.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/1c170ddf04db.html">MiniMax差异化与护城河研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/af1d6c9b551f.html">研究审计说明（2026-09-06）</a><div class="meta">2026-09-06 · 导读</div></li><li><a href="../r/bcf3b1df7e7e.html">MiniMax差异化与护城河研究核验记录</a><div class="meta">2026-09-06 · 导读</div></li><li><a href="../r/111c8837b826.html">智谱和 MiniMax，半年烧掉了几乎一样多的钱</a><div class="meta">2026-09-01 · 公众号</div></li><li><a href="../r/deb6de91ddf8.html">MiniMax（0100.HK）麦肯锡 7S 组织诊断</a><div class="meta">2026-08-28 · 组织管理</div></li><li><a href="../r/c83f83eef645.html">MiniMax（0100.HK）：给定「8月ARR = 8亿美元」，合理估值是多少</a><div class="meta">2026-08-27 · 估值仓位</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

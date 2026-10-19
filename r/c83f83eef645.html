@@ -1,0 +1,1163 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MiniMax（0100.HK）：给定「8月ARR = 8亿美元」，合理估值是多少 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/MiniMax/index.html">MiniMax</a></div><h1>MiniMax（0100.HK）：给定「8月ARR = 8亿美元」，合理估值是多少</h1><div class="meta"><a href="../companies/MiniMax/index.html">MiniMax</a> ｜ 2026-08-27 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/MINIMAX/MiniMax-ARR8%E4%BA%BF%E6%83%85%E6%99%AF%E4%BC%B0%E5%80%BC-20260827.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">〇、一句话结论</a></li>
+<li><a href="#8-arr">一、先确认这个条件本身：8 亿 ARR 是真的吗</a><ul>
+<li><a href="#11">1.1 出处与口径</a></li>
+<li><a href="#12-arr">1.2 ARR 时间序列（已剔除媒体推算）</a></li>
+<li><a href="#13-arr">1.3 关键校验：ARR 和报表收入对得上吗</a></li>
+<li><a href="#14-8-arr">1.4 但 8 亿 ARR 隐含的是什么</a></li>
+<li><a href="#15">1.5 两条容易被误读的期后信息</a></li>
+</ul>
+</li>
+<li><a href="#8">二、致命的另一半：这 8 亿美元的毛利含量</a><ul>
+<li><a href="#21">2.1 公司没披露分部毛利率，但可以反解</a></li>
+<li><a href="#22-65">2.2 增量毛利率只有 6.5%</a></li>
+<li><a href="#23-8-arr">2.3 8 亿 ARR 折算成毛利</a></li>
+</ul>
+</li>
+<li><a href="#_2">三、当前市场在给什么价</a><ul>
+<li><a href="#31">3.1 市值与企业价值</a></li>
+<li><a href="#32">3.2 现价隐含的倍数</a></li>
+</ul>
+</li>
+<li><a href="#_3">四、可比估值：三个口径，三个答案</a><ul>
+<li><a href="#41">4.1 收入倍数口径——看起来不贵</a></li>
+<li><a href="#42">4.2 毛利倍数口径——贵一倍以上</a></li>
+<li><a href="#43">4.3 增速调整口径——最硬的一个，也是本文的核心证据</a></li>
+<li><a href="#44-ai">4.4 港股 AI 同业：换一个参照系，结论就翻转</a></li>
+<li><a href="#45">4.5 卖方目标价：分歧比数字本身更有信息量</a></li>
+<li><a href="#46-arr-2026">4.6 ARR 掺水的行业实证：这个指标在 2026 年已被系统性质疑</a></li>
+<li><a href="#47">4.7 流失率：这门生意最被低估的风险</a></li>
+</ul>
+</li>
+<li><a href="#dcf">五、DCF：这是一张期权，不是一份资产</a></li>
+<li><a href="#dcf-hk3146">六、反向 DCF：现价 HK$314.6 要求什么</a></li>
+<li><a href="#_4">七、合理估值：绝对法与相对法给出两个答案</a><ul>
+<li><a href="#71">7.1 绝对法（内在价值）</a></li>
+<li><a href="#72">7.2 相对法（板块内定价）</a></li>
+<li><a href="#73-2-3">7.3 两个答案差 2 到 3 倍，怎么办</a></li>
+</ul>
+</li>
+<li><a href="#_5">八、这个结论可能错在哪（芒格式自查）</a></li>
+<li><a href="#_6">九、决策含义</a><ul>
+<li><a href="#_7">唯一的裁决点</a></li>
+</ul>
+</li>
+<li><a href="#_8">来源</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>研究日期：2026-08-27
+命题：以 2026-08-26 中期业绩会披露的「8月 ARR 突破 8 亿美元」为已知条件，反推公司的合理股权价值。
+前置：本文是 <a href="../r/1b936bfd19eb.html">MiniMax-三大报表解析-1H2026-20260826.md</a> 的估值续篇，财务底稿全部取自该文核对过的一手报表数。</p>
+</blockquote>
+<hr />
+<h2 id="_1">〇、一句话结论</h2>
+<p><strong>8 亿美元 ARR 这个口径是干净的——一条独立拟合的月度收入路径同时对上了三个各自独立披露的数字（Q1/Q2 环比 81.8%、1H 报表收入 1.166 亿、2 月 ARR 超 1.5 亿），比同业的 ARR 口径硬得多。但 8 月这一档本身无法交叉验证：它隐含的月收入是 Q2 月均的 2.66 倍，而 ARR 从未进入公告或官方新闻稿。</strong></p>
+<p><strong>它不值现在这个价，原因只有一个：MiniMax 的每一美元 ARR 只带 18 到 21 美分毛利。按收入倍数看，现价 14.8 倍 EV/ARR 落在全球基模样本的最低分位（中位数 25 至 32 倍），确实便宜；按毛利倍数看，69.3 倍 EV/毛利对 Anthropic 的 29.7 倍，贵 2.3 倍；按「每一点增速付多少倍数」看，现价比值 0.253，而市场给低毛利算力公司（CoreWeave 经济毛利率 7.3%、Nebius 32.5%）的比值只有 0.10 到 0.11。</strong></p>
+<p><strong>毛利平价法、增速调整法、八年 DCF——三条互不相干的路径，独立收敛到 HK$140 至 190。</strong></p>
+<p><strong>合理估值中枢：股权 US$85 亿，每股 HK$175（完全摊薄口径）；合理区间 US$65 亿至 115 亿，即 HK$132 至 233。现价 HK$314.60（2026-08-27 收盘）对应股权 US$140 亿，较中枢溢价 65%。</strong></p>
+<p><strong>唯一能推翻这个结论的变量是 2H2026 毛利率。</strong> 上 30%，本文全错；守不住 18%，中性与悲观情景合流。</p>
+<p>需要同时说明的反面：在港股 18C 这批 AI 公司里，MiniMax 是最便宜的一个——17.5 倍 P/ARR 对智谱的 58.9 倍，折价 70%。但这是「在一个整体高估的板块里高估得少一些」，不是「便宜」。详见第七节。</p>
+<hr />
+<h2 id="8-arr">一、先确认这个条件本身：8 亿 ARR 是真的吗</h2>
+<h3 id="11">1.1 出处与口径</h3>
+<p>2026-08-26 晚间中期业绩电话会，管理层披露：8 月 ARR 已 <strong>超过</strong> 8 亿美元；二季度收入较一季度环比增长 81.8%；7 月 Token 消耗量为 1 月的 20 倍；最新 ARR 结构中 To B 超过 80%、To C 约 20%（去年同期为 To B 约 30%、To C 约 70%）；ETTR（有效训练时间比例）达 97%；企业客户及开发者已突破 200 万。</p>
+<p><strong>口径警告（三条，必须前置）</strong></p>
+<ol>
+<li><strong>ARR 这个指标在港交所公告原文和 PR Newswire 官方新闻稿里一次都没有出现。</strong> 对公告全文做 ARR／recurring／annualized 全词检索，零命中。它是<strong>只在电话会上口头披露</strong>的口径，无定义、无脚注、无与 IFRS 收入的对账表。是否等于最近一月收入乘 12、是否含一次性收入，公司从未说明。</li>
+<li><strong>「5 月底 ARR 超 3 亿美元」不是公司口径。</strong> 公司原话只说「过去两个月 ARR 增长超过 100%」，3 亿是媒体拿 1.5 亿乘 2 倒推出来的标题。本文表格中标注为推算值。</li>
+<li><strong>「2025 年 2 月 ARR 1.5 亿」不存在。</strong> 1.5 亿是 <strong>2026 年 2 月</strong> 的数，在 2026 年 3 月的 2025 全年业绩会上披露。2025 全年总收入才 7,900 万美元，2025 年 2 月的 ARR 不可能是 1.5 亿。此前研究里的这条记载应予更正。</li>
+</ol>
+<p>唯一进了官方新闻稿的运营数据是 Token 消耗量——CEO 闫俊杰原话：「By July 2026, Token consumption on MiniMax had grown to 20 times its January level.」这一条可采信。</p>
+<p><strong>管理层未给任何量化指引。</strong> 公告 Business Outlook 全章为定性描述，无收入指引、无毛利率指引、无盈亏平衡时点指引。这是「无指引」，不是「未找到」。</p>
+<h3 id="12-arr">1.2 ARR 时间序列（已剔除媒体推算）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时点</th>
+<th>ARR</th>
+<th>性质</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026年2月</td>
+<td>超过 1.5 亿美元</td>
+<td><strong>公司口径</strong></td>
+<td>2025 全年业绩会（闫俊杰）</td>
+</tr>
+<tr>
+<td>2026年5月底</td>
+<td>「过去两个月增长超 100%」，约 3 亿</td>
+<td><strong>公司只给增速，3 亿为媒体推算</strong></td>
+<td>2026-05-28</td>
+</tr>
+<tr>
+<td>2026年8月</td>
+<td><strong>超过 8 亿美元</strong></td>
+<td><strong>公司口径（电话会口头）</strong></td>
+<td>2026-08-26 业绩会</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="13-arr">1.3 关键校验：ARR 和报表收入对得上吗</h3>
+<p>这是本文最重要的一次交叉验证。电话会给了一个可以做硬约束的数——<strong>Q2 收入较 Q1 环比 +81.8%</strong> 。已知 1H2026 收入 116.573 百万美元，联立解出：</p>
+<ul>
+<li><strong>Q1 = 41.37 百万美元</strong>（月均 13.79，年化 165）</li>
+<li><strong>Q2 = 75.21 百万美元</strong>（月均 25.07，年化 301）</li>
+</ul>
+<p>在这两个季度总额约束下拟合逐月路径：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>月份</th>
+<th>拟合月收入</th>
+<th>隐含 ARR（×12）</th>
+<th>与已披露 ARR 对照</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1月</td>
+<td>11.50</td>
+<td>138</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2月</td>
+<td>13.40</td>
+<td><strong>161</strong></td>
+<td>公司称「超过 150」 ✅</td>
+</tr>
+<tr>
+<td>3月</td>
+<td>16.47</td>
+<td>198</td>
+<td>—</td>
+</tr>
+<tr>
+<td>4月</td>
+<td>20.00</td>
+<td>240</td>
+<td>—</td>
+</tr>
+<tr>
+<td>5月</td>
+<td>25.00</td>
+<td><strong>300</strong></td>
+<td>公司称「两个月增长超 100%」（对 2 月 161 → 300，+86%）✅</td>
+</tr>
+<tr>
+<td>6月</td>
+<td>30.20</td>
+<td>362</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Q1合计</strong></td>
+<td><strong>41.37</strong></td>
+<td></td>
+<td>对电话会约束 ✅</td>
+</tr>
+<tr>
+<td><strong>Q2合计</strong></td>
+<td><strong>75.20</strong></td>
+<td></td>
+<td>对电话会约束 ✅</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一条独立拟合的月度路径，同时对上了三个各自独立披露的数字：Q1/Q2 环比 81.8%、1H 报表收入 116.573、2 月 ARR 超 1.5 亿。</strong></p>
+<p>这条校验很硬。此前两份研究都把「ARR 与确认收入的落差」列为核心疑点（2026 年 2 月 ARR 1.5 亿，而 FY2025 全年报表收入只有 0.79 亿），现在可以结案了：<strong>落差来自时间错位，不是来自掺水</strong>。ARR 是退出跑速，报表收入是期间累计，一条陡峭上升曲线下二者必然相差数倍。<strong>ARR 口径的历史一致性可以采信。</strong></p>
+<p><strong>但 8 月这一档需要单独存疑。</strong> 6 月隐含 ARR 约 3.62 亿，8 月 8 亿——两个月 2.21 倍；8 月对应的月收入 6,670 万美元，是 Q2 月均 2,507 万的 <strong>2.66 倍</strong> 。这个跳跃幅度远大于 1H 内任何一个月的环比，需要 M3、H3 两代模型在 7 至 8 月同时放量才能解释。它可能是真的（H3 于 7 月 31 日发布、8 月 3 日开源，入港股通同期），但它是本文唯一一个<strong>无法用任何已披露数字交叉验证</strong>的数据点。下一次校验时点是 2026 年报（预计 2027 年 3 月）：若 2H2026 报表收入低于 3.5 亿美元，说明 8 月这一档的口径有水分。</p>
+<h3 id="14-8-arr">1.4 但 8 亿 ARR 隐含的是什么</h3>
+<p>6月隐含 ARR 约 3.62 亿 → 8月 ARR 8 亿，<strong>两个月 2.21 倍</strong>。若 8 月起 ARR 冻结不动，2H2026 报表收入约 3.8 亿美元，FY2026 全年约 5.0 亿；若 12 月 ARR 到 12 亿，2H 收入约 4.7 亿，全年约 5.9 亿。</p>
+<p>对照 S&amp;P Global 2026 年 4 月给的 FY2026 收入预测 2.19 亿美元——<strong>实际会是预测的 2.3 到 2.7 倍</strong>。这是一次真实的、大幅度的超预期。</p>
+<hr />
+<h3 id="15">1.5 两条容易被误读的期后信息</h3>
+<ul>
+<li><strong>A 股上市：只到辅导备案，没有「提交申请」。</strong> 2026-05-29 与中信证券签署上市辅导协议，5-30 在证监会 IPO 辅导公示系统完成备案，拟登陆上海科创板，<strong>未提交招股说明书、未获受理，拟募资额未披露</strong>。市面上「已提交 A 股 IPO 申请」的说法不准确。若成功，将是全球首家 A+H 双重上市的 AI 大模型公司。</li>
+<li><strong>客户数口径打架。</strong> 官方新闻稿「关于 MiniMax」样板段写「超 100 万企业客户和开发者」，电话会口径是「已突破 200 万，是去年年底的 10 倍」。样板段是陈旧文案，应以电话会为准（与 5 月「100 万、半年增 5 倍」的序列自洽）。</li>
+</ul>
+<hr />
+<h2 id="8">二、致命的另一半：这 8 亿美元的毛利含量</h2>
+<h3 id="21">2.1 公司没披露分部毛利率，但可以反解</h3>
+<p>1H2026：开放平台（B端）收入 73.929、AI原生产品（C端）收入 42.644、合计毛利 20.813（混合毛利率 17.9%）。招股书曾披露 B端毛利率 69.4%、C端 4.7%。用这两个约束反解：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设 C 端毛利率</th>
+<th>C端毛利</th>
+<th>反解 B 端毛利</th>
+<th><strong>反解 B 端毛利率</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.7%（招股书口径）</td>
+<td>2.00</td>
+<td>18.81</td>
+<td><strong>25.4%</strong></td>
+</tr>
+<tr>
+<td>10%</td>
+<td>4.26</td>
+<td>16.55</td>
+<td>22.4%</td>
+</tr>
+<tr>
+<td>20%</td>
+<td>8.53</td>
+<td>12.28</td>
+<td>16.6%</td>
+</tr>
+<tr>
+<td>30%</td>
+<td>12.79</td>
+<td>8.02</td>
+<td>10.8%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>无论 C 端毛利率取哪个值，B 端毛利率都不可能高于 25.4%。</strong> 对照招股书的 69.4%，开放平台的毛利率在一年半内塌掉了至少 44 个百分点。</p>
+<p>这条推论是本文的核心，因为它直接决定 8 亿 ARR 的价值：Token 单价的下行速度快于推理成本的下降速度，规模没有带来单位经济改善。</p>
+<h3 id="22-65">2.2 增量毛利率只有 6.5%</h3>
+<p>以 2H2025 为基数，1H2026 增量收入 67.964 百万美元，增量毛利 4.419 百万美元，<strong>增量毛利率 6.5%</strong>。最近半年新增的每一美元收入，只带来 6.5 美分毛利。</p>
+<p>而增长的全部来源正是 B 端开放平台（占比 30.3% → 63.4%，最新 ARR 口径已到 80%）。<strong>结构越优化，毛利率越差</strong>——这是一个反直觉但由报表直接支撑的事实。</p>
+<h3 id="23-8-arr">2.3 8 亿 ARR 折算成毛利</h3>
+<p>按最新 ARR 结构 B 80% / C 20%：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>B端毛利率</th>
+<th>C端毛利率</th>
+<th>ARR毛利（百万美元）</th>
+<th>混合毛利率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25.4%</td>
+<td>4.7%</td>
+<td><strong>170.1</strong></td>
+<td><strong>21.3%</strong></td>
+</tr>
+<tr>
+<td>20%</td>
+<td>10%</td>
+<td>144.0</td>
+<td>18.0%</td>
+</tr>
+<tr>
+<td>30%</td>
+<td>10%</td>
+<td>208.0</td>
+<td>26.0%</td>
+</tr>
+<tr>
+<td>40%</td>
+<td>15%</td>
+<td>280.0</td>
+<td>35.0%</td>
+</tr>
+<tr>
+<td>55%</td>
+<td>20%</td>
+<td>384.0</td>
+<td>48.0%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>当前状态下，8 亿美元 ARR 对应的年化毛利大约 1.4 至 1.7 亿美元。</strong> 而 1H2026 年化研发开支已是 5.94 亿美元，公司自述 2027 年底前还要月均额外投入 9,260 万美元（年化 11.1 亿）。</p>
+<p>一句话：<strong>这门生意目前的形态是，卖 8 亿美元的东西，赚 1.7 亿毛利，花 17 亿研发。</strong></p>
+<hr />
+<h2 id="_2">三、当前市场在给什么价</h2>
+<h3 id="31">3.1 市值与企业价值</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价（2026-08-27 盘中）</td>
+<td>HK$314.60（另一行情源 HK$303.00）</td>
+</tr>
+<tr>
+<td>总股本（2026-07-31 月报表法定口径）</td>
+<td>349,235,308 股</td>
+</tr>
+<tr>
+<td>完全摊薄股本（可转债 + 上市后激励计划授满）</td>
+<td>386,027,640 股</td>
+</tr>
+<tr>
+<td><strong>市值</strong></td>
+<td><strong>HK$1,099 亿 = US$140.2 亿</strong></td>
+</tr>
+<tr>
+<td>备考现金（6/30 现金结余 13.23亿 + 7月配售净额 12.05亿 + 可转债净额 8.21亿）</td>
+<td>33.49 亿美元</td>
+</tr>
+<tr>
+<td>减：银行借款 1.34亿 + 租赁 0.04亿 + 可转债本金 8.29亿</td>
+<td>−9.67 亿</td>
+</tr>
+<tr>
+<td>减：7–8月经营烧钱（估）</td>
+<td>−1.75 亿</td>
+</tr>
+<tr>
+<td><strong>净现金</strong></td>
+<td><strong>约 22.1 亿美元</strong></td>
+</tr>
+<tr>
+<td><strong>企业价值 EV</strong></td>
+<td><strong>约 US$118 亿</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="32">3.2 现价隐含的倍数</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>口径</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P/ARR（8亿）</td>
+<td><strong>17.5x</strong></td>
+</tr>
+<tr>
+<td>EV/ARR（8亿）</td>
+<td><strong>14.8x</strong></td>
+</tr>
+<tr>
+<td>EV/ARR毛利（1.70亿）</td>
+<td><strong>69.4x</strong></td>
+</tr>
+<tr>
+<td>P/FY2026E 报表收入（5.0–5.9亿）</td>
+<td>23.8–28.0x</td>
+</tr>
+<tr>
+<td>P/FY2025 报表收入（0.79亿）</td>
+<td>177x</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_3">四、可比估值：三个口径，三个答案</h2>
+<h3 id="41">4.1 收入倍数口径——看起来不贵</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>估值</th>
+<th>ARR／收入跑速</th>
+<th>倍数</th>
+<th>日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anthropic</td>
+<td>US$9,650 亿</td>
+<td>US$650 亿（7 月底）</td>
+<td><strong>14.8x</strong></td>
+<td>估值 2026-05-28</td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>US$8,520 亿</td>
+<td>US$400 亿以上（7 月）</td>
+<td><strong>21.3x</strong></td>
+<td>估值 2026-03-31</td>
+</tr>
+<tr>
+<td>Mistral AI</td>
+<td>US$138 亿（已关闭轮）</td>
+<td>US$4 亿以上</td>
+<td>34.5x</td>
+<td>2025-09</td>
+</tr>
+<tr>
+<td>Cohere</td>
+<td>US$70 亿（已关闭轮）</td>
+<td>US$2.4 亿</td>
+<td>29x</td>
+<td>2025-09</td>
+</tr>
+<tr>
+<td>智谱 2513.HK</td>
+<td>US$589 亿</td>
+<td>US$10 亿（7 月，知情人士口径）</td>
+<td><strong>58.9x</strong></td>
+<td>2026-08-27</td>
+</tr>
+<tr>
+<td>月之暗面</td>
+<td>US$200 亿以上</td>
+<td>US$2 亿（4 月）</td>
+<td>约 100x</td>
+<td>2026-05-07</td>
+</tr>
+<tr>
+<td><strong>MiniMax 0100.HK</strong></td>
+<td><strong>US$140 亿</strong></td>
+<td><strong>US$8 亿</strong></td>
+<td><strong>17.5x</strong></td>
+<td>2026-08-27</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>西方基模四家（已关闭估值）中位数 25.2x，区间 14.8 至 34.5x；加上中国三家后中位数 31.8x。MiniMax 的 17.5x 落在全样本最低分位。</strong> 与它同样便宜的只有 OpenAI 和 Anthropic ——两家收入体量大 50 到 80 倍的公司。</p>
+<p><strong>倍数与规模严重反相关</strong>：最大的两家最便宜（21x／15x），最小的最贵（月之暗面 2 亿 ARR 给 100x）。按这条规律，8 亿 ARR 的 MiniMax 本该在 30 至 60x，实际只有 17.5x。<strong>这是当前股价最强的多头论证，必须承认它成立。</strong></p>
+<h3 id="42">4.2 毛利倍数口径——贵一倍以上</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>估值</th>
+<th>ARR</th>
+<th>P/ARR</th>
+<th>毛利率</th>
+<th><strong>P/毛利</strong></th>
+<th>毛利率口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anthropic</td>
+<td>9,650 亿</td>
+<td>650 亿</td>
+<td>14.8x</td>
+<td>约 50%</td>
+<td><strong>29.7x</strong></td>
+<td>内部预测泄露，2025 年 50%、2028 年目标 77%，<strong>非审计数</strong></td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>8,520 亿</td>
+<td>400 亿</td>
+<td>21.3x</td>
+<td><strong>未公开</strong></td>
+<td>—</td>
+<td>只有 2025 年泄露的「compute margin 70%」，口径不等于毛利率</td>
+</tr>
+<tr>
+<td>智谱 2513.HK</td>
+<td>589 亿</td>
+<td>10 亿</td>
+<td>58.9x</td>
+<td>41.0%（2025）</td>
+<td><strong>143.7x</strong></td>
+<td>已上市审计数；云端／MaaS 分部仅 18.9%</td>
+</tr>
+<tr>
+<td><strong>MiniMax（EV 口径）</strong></td>
+<td><strong>118 亿</strong></td>
+<td><strong>8 亿</strong></td>
+<td>14.8x</td>
+<td><strong>21.3%</strong></td>
+<td><strong>69.3x</strong></td>
+<td>由 1H2026 报表反解，按最新 ARR 结构折算</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>MiniMax 在毛利口径上是 Anthropic 的 2.3 倍。</strong> 收入倍数把毛利率这个变量藏起来了——同样给 15 倍收入，50% 毛利率的公司实际是 30 倍毛利，21% 毛利率的公司是 69 倍毛利。</p>
+<p><strong>一个必须说清的诚实之处</strong>：这张表里只有 MiniMax 和智谱的毛利率是审计口径。Anthropic 的 50% 是泄露的内部预测，OpenAI 从未公开毛利率，Mistral／Cohere／月之暗面／月活类应用公司的真实毛利率全部未公开。<strong>做全球横向毛利率对比，这一列在数据上是不成立的。</strong> 唯一扎实的对比是中国这两家已上市公司之间。</p>
+<h3 id="43">4.3 增速调整口径——最硬的一个，也是本文的核心证据</h3>
+<p>绝对倍数看不出低毛利的折价（Nebius 47x 比 Cloudflare 40x 还高）。但<strong>按每一个百分点增速付多少收入倍数</strong>看，折价立刻现形：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>EV/Sales</th>
+<th>最新增速</th>
+<th><strong>比值</strong></th>
+<th>账面毛利率</th>
+<th><strong>把折旧并回成本后的经济毛利率</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nebius NBIS</td>
+<td>47.08x</td>
+<td>+454%</td>
+<td><strong>0.104</strong></td>
+<td>77.1%</td>
+<td><strong>32.5%</strong></td>
+</tr>
+<tr>
+<td>CoreWeave CRWV</td>
+<td>12.58x</td>
+<td>+112%</td>
+<td><strong>0.112</strong></td>
+<td>65.8%</td>
+<td><strong>7.3%</strong></td>
+</tr>
+<tr>
+<td><strong>MiniMax 0100.HK</strong></td>
+<td><strong>71.5x</strong></td>
+<td><strong>+283%</strong></td>
+<td><strong>0.253</strong></td>
+<td><strong>17.9%</strong></td>
+<td>17.9%</td>
+</tr>
+<tr>
+<td>Datadog DDOG</td>
+<td>19.67x</td>
+<td>+36%</td>
+<td>0.553</td>
+<td>78.6%</td>
+<td>78.6%</td>
+</tr>
+<tr>
+<td>Snowflake SNOW</td>
+<td>22.34x</td>
+<td>+34%</td>
+<td>0.667</td>
+<td>66.6%</td>
+<td>66.6%</td>
+</tr>
+<tr>
+<td>Palantir PLTR</td>
+<td>67.80x</td>
+<td>+93%</td>
+<td>0.729</td>
+<td>84.7%</td>
+<td>84.7%</td>
+</tr>
+<tr>
+<td>Cloudflare NET</td>
+<td>40.13x</td>
+<td>+36%</td>
+<td>1.115</td>
+<td>71.8%</td>
+<td>71.8%</td>
+</tr>
+</tbody>
+</table></div>
+<p>先看那一列「经济毛利率」：<strong>CoreWeave 账面毛利率 65.8%，看起来比 Snowflake 还高，实际只有 7.3%</strong> ——它把技术与基础设施折旧（Q2 单季 15.07 亿美元，占收入 58.5%）放在毛利线以下。Nebius 同理，77.1% 实为 32.5%。这是算力生意的会计特征：<strong>用软件公司的毛利线看它，会系统性高估</strong>。</p>
+<p>MiniMax 正在变成这类公司：1H2026 把 7,300 万美元变成自有设备、2.49 亿美元变成预付算力容量，而折旧只有 233 万——<strong>绝大部分设备是期末附近才转固，2H2026 折旧会台阶式跳升</strong>。也就是说，17.9% 这个毛利率本身还没有充分承担折旧，往后只会更难看，不会更好看。</p>
+<p>再看比值这一列：<strong>市场为算力公司的每一点增速只付 0.10 到 0.11 的收入倍数，为高毛利软件付 0.55 到 1.12，差 5 到 11 倍。</strong> 低毛利公司的超高增速，被市场打了一到两折。</p>
+<p><strong>MiniMax 现价的比值是 0.253</strong> ——介于算力公司（0.10–0.11）和软件公司（0.55+）之间。但它的毛利率结构属于前者。若按算力公司的比值定价：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>比值</th>
+<th>隐含 EV/Sales</th>
+<th>隐含 EV</th>
+<th>股权价值</th>
+<th>每股（完全摊薄）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.10</td>
+<td>28.3x</td>
+<td>US$46.8 亿</td>
+<td>US$68.8 亿</td>
+<td><strong>HK$140</strong></td>
+</tr>
+<tr>
+<td>0.12</td>
+<td>34.0x</td>
+<td>US$56.1 亿</td>
+<td>US$78.2 亿</td>
+<td>HK$159</td>
+</tr>
+<tr>
+<td>0.15</td>
+<td>42.5x</td>
+<td>US$70.1 亿</td>
+<td>US$92.2 亿</td>
+<td><strong>HK$187</strong></td>
+</tr>
+<tr>
+<td>0.20</td>
+<td>56.6x</td>
+<td>US$93.5 亿</td>
+<td>US$115.6 亿</td>
+<td>HK$235</td>
+</tr>
+<tr>
+<td>0.25（现价）</td>
+<td>70.8x</td>
+<td>US$116.9 亿</td>
+<td>US$139.0 亿</td>
+<td>HK$282</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>HK$140 到 187 这个区间，和第二节的毛利平价法、第七节的绝对法各自独立地收敛到同一个位置。三条互不相干的路径给出同一个答案，这是本文最强的一块证据。</strong></p>
+<p>同一张表还有两个反面的实证案例：
+- <strong>Cerebras（CBRS）</strong>：LTM 毛利率 34.9%（Q2 单季仅 14.5%），2026-05-14 上市时给 54x EV/Sales（比毛利率 71.8% 的 Cloudflare 还贵），三个月后市值从 950 亿美元跌到 431 亿，<strong>跌 55%</strong>。
+- <strong>Klarna（KLAR）</strong>：毛利率 36.8% 加低增速，今天 EV/Sales 只有 <strong>0.58x</strong>。</p>
+<p>Bessemer《State of AI 2025》把最快的一批 AI 公司归为 Supernova，并直书其特征是<strong>毛利率约 25%、常为负，且「fragile retention and thin margins」</strong>。这正是 18% 毛利率加超高增速这个组合在一级市场里的标准画像。</p>
+<h3 id="44-ai">4.4 港股 AI 同业：换一个参照系，结论就翻转</h3>
+<p>上面用的是 OpenAI／Anthropic 这个参照系。换成 MiniMax 实际所在的港股 18C 章 AI 板块，答案完全不同：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>市值</th>
+<th>收入／ARR 口径</th>
+<th>倍数</th>
+<th>日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>智谱 2513.HK</td>
+<td>HK$4,592 亿（US$589 亿）</td>
+<td>ARR US$10 亿（7月，知情人士口径）</td>
+<td><strong>P/ARR 58.9x</strong></td>
+<td>2026-08-27</td>
+</tr>
+<tr>
+<td>智谱 2513.HK</td>
+<td>同上</td>
+<td>TTM 会计收入 HK$8.06 亿</td>
+<td>P/S 570x</td>
+<td>2026-08-27</td>
+</tr>
+<tr>
+<td>壁仞科技 6082.HK</td>
+<td>HK$1,192 亿</td>
+<td>FY2025 收入 RMB 10.35 亿</td>
+<td>P/S 104–137x</td>
+<td>2026-04-16</td>
+</tr>
+<tr>
+<td>天数智芯 9903.HK</td>
+<td>—</td>
+<td>—</td>
+<td>P/S 96.9x</td>
+<td>2026-04-16</td>
+</tr>
+<tr>
+<td><strong>MiniMax 0100.HK</strong></td>
+<td><strong>HK$1,099 亿（US$140 亿）</strong></td>
+<td><strong>ARR US$8 亿</strong></td>
+<td><strong>P/ARR 17.5x</strong></td>
+<td>2026-08-27</td>
+</tr>
+<tr>
+<td>寒武纪 688256.SH</td>
+<td>RMB 7,539 亿</td>
+<td>2026E 收入 RMB 145 亿</td>
+<td>P/S 31.6x（2026E）</td>
+<td>2026-08-07</td>
+</tr>
+<tr>
+<td>商汤 0020.HK</td>
+<td>HK$646 亿</td>
+<td>1H26 年化 RMB 58.2 亿</td>
+<td>P/S 约 10x</td>
+<td>2026-08-17</td>
+</tr>
+<tr>
+<td>云知声 9678.HK</td>
+<td>HK$56 亿</td>
+<td>2026 年化约 RMB 11 亿</td>
+<td>P/S 约 4x</td>
+<td>2026-07-31</td>
+</tr>
+<tr>
+<td>科大讯飞 002230.SZ</td>
+<td>RMB 993 亿</td>
+<td>FY2025 收入 RMB 271 亿</td>
+<td>P/S 约 3.7x</td>
+<td>2026-07-15</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>在这个参照系里，MiniMax 是同一梯队中最便宜的一个，对智谱折价整整 70%。</strong></p>
+<p>这个对比必须给两条限定：</p>
+<ol>
+<li><strong>折价的一部分是市场在做正确的事。</strong> 智谱 2025 年整体毛利率 41.0%（其云端／MaaS 分部只有 18.9%），MiniMax 是 17.9% ——毛利率差 23 个百分点，倍数差 3.9 倍。换句话说，<strong>港股市场其实已经在按毛利率给这两家打分了</strong>，只是打分的绝对水平仍然过高：按毛利倍数算，智谱是 143.7x、MiniMax 是 82.3x，两家都远高于 Anthropic 的 29.7x。「比智谱便宜 70%」的正确读法是「在一个整体高估的板块里，MiniMax 高估得少一些」，不是「MiniMax 便宜」。</li>
+<li><strong>ARR 口径无法跨公司比较</strong>。智谱 7 月自称 ARR US$10 亿，而同期 TTM 会计收入只有 HK$8.06 亿（约 US$1.03 亿），差 8 倍——用 ARR 算 P/S 是 62x，用会计收入算是 570x。MiniMax 的 ARR 与报表收入交叉验证只差 1.5%（见 1.3 节），口径质量明显更硬。这一条是 MiniMax 少有的、可验证的优势。</li>
+</ol>
+<h3 id="45">4.5 卖方目标价：分歧比数字本身更有信息量</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>机构</th>
+<th>日期</th>
+<th>评级</th>
+<th>目标价</th>
+<th>变动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中金</td>
+<td>2026-03-03</td>
+<td>跑赢行业</td>
+<td>HK$1,109</td>
+<td>—</td>
+</tr>
+<tr>
+<td>摩根士丹利</td>
+<td>2026-04-27</td>
+<td>增持</td>
+<td>HK$1,100</td>
+<td>990 → 1,100，DCF 法，相当于 2027 年市销率 56 倍</td>
+</tr>
+<tr>
+<td>汇丰</td>
+<td>2026-06-05</td>
+<td>谨慎</td>
+<td>HK$760</td>
+<td>1,000 → 760（解禁）</td>
+</tr>
+<tr>
+<td>摩根大通</td>
+<td>2026-06</td>
+<td>增持 → <strong>中性</strong></td>
+<td>HK$400</td>
+<td>1,100 → 400</td>
+</tr>
+<tr>
+<td>花旗</td>
+<td>2026-08-04</td>
+<td>买入（高风险）</td>
+<td>HK$533</td>
+<td>—</td>
+</tr>
+<tr>
+<td>高盛</td>
+<td>2026-07-26</td>
+<td>买入</td>
+<td>HK$860</td>
+<td>重申</td>
+</tr>
+<tr>
+<td>摩根士丹利</td>
+<td>2026-08</td>
+<td>增持</td>
+<td>HK$900</td>
+<td>下调，「增长加速将后移」</td>
+</tr>
+<tr>
+<td><strong>摩根大通</strong></td>
+<td><strong>2026-08-17</strong></td>
+<td><strong>中性</strong></td>
+<td><strong>HK$260</strong></td>
+<td>上调下年收入预测 11%，同时把经调整净亏损预测放到 US$9.31 亿</td>
+</tr>
+</tbody>
+</table></div>
+<p>一致目标价约 HK$625（19 位分析师），但这个均值被 3 月至 4 月的存量高目标价严重拉高。<strong>按日期取最新，分布是 HK$260（摩根大通）到 HK$900（摩根士丹利），中位数落在 HK$500 附近。</strong> 本文中枢 HK$175 低于最保守的卖方，差异全部来自一件事：<strong>是否用毛利率给收入倍数打折。</strong></p>
+<p>值得单独记一笔的是摩根大通 8 月 17 日的动作——上调收入预测的同时把目标价只给到 HK$260，并且把 2027 年经调整净亏损预测放到 9.31 亿美元。这是卖方里第一个明确表达「收入超预期不等于价值增加」的口径，与本文的推理路径一致。</p>
+<hr />
+<h3 id="46-arr-2026">4.6 ARR 掺水的行业实证：这个指标在 2026 年已被系统性质疑</h3>
+<p>有了同业的对照，可以给「8 亿 ARR」放一个坐标：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>宣称的 ARR／跑速</th>
+<th>同期实际确认收入年化</th>
+<th>缺口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI 2025 全年</td>
+<td>年末超过 200 亿</td>
+<td>GAAP <strong>130.7 亿</strong>（经营亏损 209.2 亿）</td>
+<td>宣称数高 <strong>53%</strong></td>
+</tr>
+<tr>
+<td>OpenAI 2026Q2</td>
+<td>8 月宣称超过 400 亿</td>
+<td>Q2 实收 67 亿 × 4 = <strong>268 亿</strong></td>
+<td>高 <strong>49%</strong></td>
+</tr>
+<tr>
+<td>Anthropic 2026Q2</td>
+<td>5 月宣称 470 亿</td>
+<td>Q2 实收 116 亿 × 4 = <strong>464 亿</strong></td>
+<td><strong>几乎无缺口</strong></td>
+</tr>
+<tr>
+<td>DeepSeek 2026</td>
+<td>外媒称年化 4 至 5 亿</td>
+<td>1 至 7 月实收人民币 4.75 亿（约 0.67 亿美元）</td>
+<td>差 <strong>3 至 4 倍</strong></td>
+</tr>
+<tr>
+<td><strong>MiniMax 2026年8月</strong></td>
+<td><strong>8 亿</strong></td>
+<td><strong>Q2 实收年化 3.01 亿</strong></td>
+<td><strong>高 166%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>这张表要看两遍。第一遍看绝对缺口，MiniMax 的 166% 是最大的之一；第二遍要扣掉时间差——8 月对 Q2，中间隔了两个月的高速增长，OpenAI 那两行也是同样的错期比较。<strong>真正的信息是：Anthropic 几乎没有缺口，OpenAI 有 50%，MiniMax 和 DeepSeek 在更高的档位。</strong> 这不是掺水的证据，是「口径可验证程度」的排序。</p>
+<p>行业层面，ARR 在 2026 年已经被主流财经媒体系统性质疑：Bloomberg 2026-04-07 的专文标题直接是《What Is ARR? Behind the Least-Trusted Metric of the AI Era》；TechCrunch 2026-05-22 的调查里，Spellbook 的 CEO 具名称之为 "huge scam"，调查发现有公司把整年免费试点计入 ARR、有公司报 5,000 万实为 4,200 万。Altimeter 的 Jamin Ball 提出用 <strong>ERR（Experimental Runrate Revenue）</strong> 替代 ARR，理由是消费型／按结果计费缺少锁定，「可以暴涨也可以崩塌」。</p>
+<p><strong>OpenAI 和 Anthropic 自己也从未公布 ARR 的书面定义。</strong> OpenAI 的 CFO 在 2026-07-29 告诉员工「7 月单月的 annualized recurring revenue 已超过整个 Q2 的总额」——拿一个月年化去比一个季度总额，这句话本身就说明口径是「近月乘 12」。两家至今没有公开的 S-1，不存在任何一家的公开审计报表。</p>
+<p><strong>结论：MiniMax 的 ARR 不比同业更脏，但也不比同业更干净。它的优势在于历史一致性可验证（1.3 节），劣势在于 8 月这一档正好卡在无法验证的位置。</strong></p>
+<h3 id="47">4.7 流失率：这门生意最被低估的风险</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>样本</th>
+<th>中位 GRR</th>
+<th>中位 NRR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 原生公司（约 200 家）</td>
+<td><strong>40%</strong></td>
+<td><strong>48%</strong></td>
+</tr>
+<tr>
+<td>B2B SaaS（约 2,700 家）</td>
+<td>—</td>
+<td><strong>82%</strong></td>
+</tr>
+<tr>
+<td>AI 原生，客单价 250 美元以上／月</td>
+<td>70%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>AI 原生，客单价 50 美元以下／月</td>
+<td><strong>23%</strong></td>
+<td><strong>32%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>数据来自 ChartMogul 的留存研究（窗口 2025 年 1 至 9 月）。<strong>AI 原生公司的净留存中位数只有 48%，对 B2B SaaS 的 82%。</strong></p>
+<p>基础模型 API 层的具体数据更直接：Ramp 基于 7 万家以上美国企业的真实支付数据（2026-02）显示，OpenAI 与 Anthropic 的流失率「几乎相同」，<strong>每月约 4% 的企业取消订阅或合同</strong>；<strong>79% 的 Anthropic 客户同时付费给 OpenAI</strong>。这两个数字说明基模 API 几乎没有锁定，可替换性极高。</p>
+<p>对 MiniMax 的直接含义：
+- 它的收入 70.7% 按用量在时点确认，合同负债只有 1,830 万美元（相当于 15.7% 的半年收入），<strong>几乎没有递延收入蓄水池</strong>；
+- 应收周转天数已从 41 天拉长到 61 天；
+- 开放平台业务的客单结构未披露，但按 Token 计费、面向开发者，大概率落在 ChartMogul 那张表的中低客单价档。</p>
+<p><strong>一条 ARR 曲线的斜率，和这条曲线的留存率，是两件事。8 亿 ARR 只回答了第一件。</strong></p>
+<hr />
+<h2 id="dcf">五、DCF：这是一张期权，不是一份资产</h2>
+<p>以 8 亿 ARR 为 2026 年退出跑速起点，八年模型（终值 = 退出倍数 × 2034 年 NOPAT，已扣未来再融资摊薄）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>2034年收入</th>
+<th>2034年毛利率</th>
+<th>期间累计自由现金流</th>
+<th>股权价值</th>
+<th>每股（完全摊薄）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>乐观</strong>：推理规模化，毛利率修到 50%，费用增速慢于收入</td>
+<td>US$140 亿</td>
+<td>50%</td>
+<td>+24.7 亿</td>
+<td>US$209 亿</td>
+<td><strong>HK$425</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong>：增速降档，毛利率停在 35%，管理层主动收缩费用</td>
+<td>US$56 亿</td>
+<td>35%</td>
+<td>−43.1 亿</td>
+<td>US$11 亿</td>
+<td><strong>HK$22</strong></td>
+</tr>
+<tr>
+<td><strong>悲观</strong>：毛利率锁死 22%，被迫大幅收缩</td>
+<td>US$19 亿</td>
+<td>22%</td>
+<td>−43.8 亿</td>
+<td>约 0</td>
+<td><strong>HK$0</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>概率分布</th>
+<th>期望价值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观30% / 中性50% / 悲观20%</td>
+<td>HK$137</td>
+</tr>
+<tr>
+<td>乐观35% / 中性50% / 悲观15%</td>
+<td>HK$158</td>
+</tr>
+<tr>
+<td>乐观25% / 中性45% / 悲观30%</td>
+<td>HK$114</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>DCF 的结论是极端双峰的：要么 HK$425，要么归零。</strong> 中间地带几乎不存在，原因是数学上的——毛利率 35% 的公司要盈利，经营费用必须压到收入的 35% 以下；而 AI 实验室的研发开支从来没有低于收入 40% 的先例。<strong>毛利率能不能上 45%，是这家公司唯一的二元变量。</strong> 上不去，中间情景和悲观情景是同一个结局，只是慢一点。</p>
+<p>这也印证了此前研究的定位：<strong>这是一张期权，不是一份资产</strong>。</p>
+<hr />
+<h2 id="dcf-hk3146">六、反向 DCF：现价 HK$314.6 要求什么</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>期限</th>
+<th>假设</th>
+<th>需要达到的收入</th>
+<th>从 8 亿 ARR 起算的 CAGR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5 年</td>
+<td>EBIT 率 20%、退出 20x、折现 15%</td>
+<td>US$67 亿</td>
+<td><strong>52.9%</strong></td>
+</tr>
+<tr>
+<td>8 年</td>
+<td>EBIT 率 20%、退出 20x、折现 15%</td>
+<td>US$102 亿</td>
+<td>37.4%</td>
+</tr>
+<tr>
+<td>10 年</td>
+<td>EBIT 率 25%、退出 20x、折现 12%</td>
+<td>US$83 亿</td>
+<td>26.3%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>收入这一半是可以做到的。</strong> 按 Bessemer 的增速持续率基准（私有云约 70%，即今年增速等于去年的 0.70 倍）从 8 亿 ARR 起算：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>首年增速</th>
+<th>5 年后收入</th>
+<th>5 年 CAGR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100%</td>
+<td>US$67.5 亿</td>
+<td>53.2%</td>
+</tr>
+<tr>
+<td>150%</td>
+<td>US$146.5 亿</td>
+<td>78.9%</td>
+</tr>
+<tr>
+<td>200%</td>
+<td>US$284.6 亿</td>
+<td>104.3%</td>
+</tr>
+</tbody>
+</table></div>
+<p>即使按最保守的首年 100%，5 年后也有 67.5 亿美元，正好落在反向 DCF 要求的 67 亿上。<strong>收入不是问题。</strong></p>
+<p><strong>真正苛刻的是 EBIT 率 20% 到 25% 这个前提</strong>：它要求毛利率从今天的 21% 修复到 50% 以上，并且经营费用率压到 30% 以下。这不是增长问题，是单位经济问题。</p>
+<p>需要同时标注两条：① Bessemer 的持续率官方口径是私有云 70%、上市云 80%，且分布中 <strong>40% 的公司低于 70%</strong>；② 从未有任何权威机构发布过「5 亿至 10 亿美元 ARR 起步、后续 5 年 CAGR 中位数」这个数——上表是用持续率推的，不是机构基准。McKinsey 的长期统计是：只有 <strong>28%</strong> 的软件公司做到 1 亿美元收入、<strong>3%</strong> 做到 10 亿；约 <strong>85% 的 supergrower 无法维持增速，一旦失速不到四分之一能夺回</strong>。</p>
+<hr />
+<h2 id="_4">七、合理估值：绝对法与相对法给出两个答案</h2>
+<h3 id="71">7.1 绝对法（内在价值）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>隐含股权价值（亿美元）</th>
+<th>每股（完全摊薄）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>毛利平价（Anthropic 27x 毛利）</td>
+<td>68</td>
+<td>HK$138</td>
+</tr>
+<tr>
+<td>毛利修复到 35% + 给 25x 毛利</td>
+<td>92</td>
+<td>HK$187</td>
+</tr>
+<tr>
+<td>EV/ARR 给 8x（同业按毛利率折算后的合理值）</td>
+<td>86</td>
+<td>HK$175</td>
+</tr>
+<tr>
+<td>EV/ARR 给 10x（认可其增速溢价）</td>
+<td>102</td>
+<td>HK$207</td>
+</tr>
+<tr>
+<td>增速调整法（比值 0.10，算力公司口径）</td>
+<td>69</td>
+<td>HK$140</td>
+</tr>
+<tr>
+<td>增速调整法（比值 0.15，给一档溢价）</td>
+<td>92</td>
+<td>HK$187</td>
+</tr>
+<tr>
+<td>DCF 概率加权（乐观30/中性50/悲观20）</td>
+<td>56 – 78</td>
+<td>HK$114 – 158</td>
+</tr>
+<tr>
+<td>DCF 纯乐观</td>
+<td>209</td>
+<td>HK$425</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>绝对法中枢：股权 US$85 亿，每股 HK$175（完全摊薄）／HK$191（现股本）；区间 US$65 亿至 115 亿，即 HK$132 至 233。</strong> 对应 EV/ARR 5.4x 至 11.6x，中枢 7.9x。</p>
+<p><strong>三条互不相干的路径独立收敛到同一位置</strong>：毛利平价法给 HK$138 至 187，增速调整法给 HK$140 至 187，DCF 概率加权给 HK$114 至 158。这不是同一个假设换了三种算法——毛利平价用的是 Anthropic 的估值，增速调整用的是美股六家上市公司的 EV/Sales 与增速，DCF 用的是八年现金流。三者共用的唯一输入是 MiniMax 自己的 17.9% 毛利率。</p>
+<h3 id="72">7.2 相对法（板块内定价）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>参照</th>
+<th>倍数</th>
+<th>隐含市值</th>
+<th>每股（完全摊薄）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>智谱倍数的 30%（＝现价水平）</td>
+<td>17.6x P/ARR</td>
+<td>US$141 亿</td>
+<td>HK$285</td>
+</tr>
+<tr>
+<td>智谱倍数的 50%</td>
+<td>29.3x P/ARR</td>
+<td>US$234 亿</td>
+<td>HK$476</td>
+</tr>
+<tr>
+<td>卖方最新区间（摩根大通 260 至 摩根士丹利 900）</td>
+<td>—</td>
+<td>US$120–415 亿</td>
+<td>HK$260 – 900</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>相对法中枢：HK$300 至 480。</strong></p>
+<h3 id="73-2-3">7.3 两个答案差 2 到 3 倍，怎么办</h3>
+<p>这不是计算误差，是两套世界观：</p>
+<ul>
+<li>绝对法问「这门生意一辈子能赚多少钱，折现回来值多少」。答案受制于 21% 的毛利率，得出 HK$175。</li>
+<li>相对法问「同一个板块里别人卖多少钱」。答案受制于智谱 58.9 倍 P/ARR 这个锚，得出 HK$300 以上。</li>
+</ul>
+<p><strong>两者都对，但只有一个能用来做决策。</strong> 相对法的锚（智谱 58.9x P/ARR、壁仞 104x P/S、云知声上市一年跌九成）本身就是同一批资产在 18 个月内从 665 倍市销率跌到 76 倍的产物。用一个正在坍塌的参照系定价，得到的不是估值，是排队顺序——它只能告诉你「板块跌的时候 MiniMax 会跌得少一些」，不能告诉你它值多少钱。</p>
+<p><strong>本文取绝对法：合理估值中枢 US$85 亿（每股 HK$175），合理区间 US$65 亿至 115 亿（HK$132 至 233）。现价 HK$314.6 对应 US$140 亿，较中枢溢价 65%，较区间上沿溢价 35%。</strong></p>
+<h2 id="_5">八、这个结论可能错在哪（芒格式自查）</h2>
+<p><strong>最可能错的一条：低估了毛利率修复的速度。</strong> 1H2026 的 17.9% 毛利率里，藏着一件正在发生的事——公司半年内把 7,300 万美元变成自有设备、2.49 亿美元变成预付算力容量。自建推理集群替代云采购，理论上能把毛利率抬 15 到 25 个百分点。若 2H2026 毛利率回到 30% 以上，本文的中枢应上调 50% 以上。<strong>这是唯一需要盯的数。</strong></p>
+<p><strong>第二条（本文最强的反方证据）：在全球基模样本里，MiniMax 的倍数是最低的。</strong> 西方四家已关闭估值的基模公司中位数 25.2x，加上中国三家后 31.8x，MiniMax 只有 17.5x。而且倍数与规模严重反相关——最大的 OpenAI 和 Anthropic 最便宜（21.3x／14.8x），最小的月之暗面最贵（100x）。按这条经验规律，8 亿 ARR 的 MiniMax 本该在 30 至 60x。<strong>本文实质上是在说「这条经验规律不该适用于毛利率 18% 的公司」，而这条规律在过去两年一直有效。</strong> 如果错，就错在这里。</p>
+<p><strong>第三条：ARR 前瞻倍数其实不贵。</strong> 若 12 月 ARR 到 15 亿美元，现价对应 P/ARR 只有 9.3x；若 2027 年退出跑速 25 亿，只有 5.6x。在一条 60 天翻倍的曲线上做静态估值，天然会低估。本文用 8 月 ARR 做分母，是题目设定，但读者应知道分母在动。</p>
+<p><strong>第四条：本文比最保守的卖方还低。</strong> 按日期取最新，卖方分布是摩根大通 HK$260 到摩根士丹利 HK$900，中位数约 HK$500，本文中枢 HK$175 低于全部。分歧的根源不是增速判断——摩根大通 8 月还上调了收入预测——而是<strong>要不要用毛利率给收入倍数打折</strong>。本文认为要。需要承认的是，独自站在分布之外，本身就是需要额外举证的位置；本文的举证是第二节反解出的 B 端 25.4% 毛利率，那是唯一一条卖方报告里从未出现过的数。</p>
+<p><strong>第六条：相对估值的锚可能不会塌。</strong> 若港股 18C AI 板块的定价体系维持（智谱 58.9x P/ARR、壁仞 104x P/S），MiniMax 作为板块内最便宜的标的，价格可以长期停在 HK$300 以上而不「回归」。本文说的是价值，不是价格，二者的收敛时间可能以年计。</p>
+<p><strong>第五条：叙事偏差自查。</strong> 「Token 洪水 → 中国推理层龙头」这个故事非常完美，而完美的故事通常定价充分。历史类比是 2000 年的光纤——需求预测全部兑现，铺光纤的公司全部破产，因为单位价格跌得比流量涨得快。MiniMax 的 6.5% 增量毛利率，正是这个类比的当代版本。更近的一个案例是 Cerebras：34.9% 毛利率给 54 倍 EV/Sales，三个月跌 55%。</p>
+<p><strong>第七条：留存率这一项完全没有数据。</strong> AI 原生公司的净留存中位数只有 48%（B2B SaaS 是 82%），基模 API 层企业客户月流失约 4%、79% 的 Anthropic 客户同时付费给 OpenAI。MiniMax 从未披露任何留存或流失数据，其 70.7% 的收入按用量在时点确认、合同负债只有 15.7% 的半年收入。<strong>如果留存率也在行业中位数附近，8 亿 ARR 的可持续性要再打一个折——这个折本文没有打，因为无数可用。</strong></p>
+<hr />
+<h2 id="_6">九、决策含义</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8 亿 ARR 的口径质量</td>
+<td><strong>历史一致性可采信</strong>。月度路径同时对上 Q1/Q2 环比、1H 报表收入、2 月 ARR 三个独立数字</td>
+</tr>
+<tr>
+<td>8 亿 ARR 本身</td>
+<td><strong>存疑一档</strong>。隐含月收入为 Q2 月均的 2.66 倍，无任何已披露数字可交叉验证；且 ARR 从未进入公告或官方新闻稿，无定义、无对账表</td>
+</tr>
+<tr>
+<td>8 亿 ARR 的含金量</td>
+<td><strong>低</strong>。对应年化毛利仅 1.4–1.7 亿美元</td>
+</tr>
+<tr>
+<td>现价定位</td>
+<td>高于合理中枢约 65%，位于合理区间上沿之外</td>
+</tr>
+<tr>
+<td>若已持有</td>
+<td>不构成加仓理由。8 亿 ARR 是好消息，但已被现价充分定价且超额定价</td>
+</tr>
+<tr>
+<td>建仓价位参考</td>
+<td>HK$130–175 区间进入合理，HK$100 以下有安全边际</td>
+</tr>
+<tr>
+<td>仓位属性</td>
+<td>期权，非核心资产。乐观情景 HK$425、中性情景 HK$22，上下限差 20 倍，仓位应按可归零处理</td>
+</tr>
+<tr>
+<td>板块相对位置</td>
+<td>港股 18C AI 里最便宜的一个（对智谱折价 70%）。若只做板块内相对配置，MiniMax 是首选；若做绝对价值，现价不成立</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_7">唯一的裁决点</h3>
+<p><strong>2H2026 毛利率。</strong> 上 30%，本文全错，重估；守不住 18%，中性情景与悲观情景合流。所有其他变量——ARR 增速、Token 消耗量、开源许可、版权诉讼、A 股上市——都是次要的。</p>
+<hr />
+<h2 id="_8">来源</h2>
+<ol>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600681_c.pdf">MiniMax 2026 年中期业绩公告（港交所，2026-08-26）</a></li>
+<li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082601950_c.pdf">修订持续关连交易年度上限公告（港交所，2026-08-26）</a></li>
+<li><a href="https://www.prnewswire.com/news-releases/minimax-announces-first-half-2026-financial-results-302860489.html">MiniMax Announces First Half 2026 Financial Results — PR Newswire</a></li>
+<li><a href="https://finance.ifeng.com/c/8vuc9Uhy7IT">MiniMax：从 ARR 结构看 To B 业务占比已达到约 80% — 凤凰网财经</a></li>
+<li><a href="https://tech.ifeng.com/c/8vvgqvFRDWp">B端暴涨7倍，MiniMax悄悄换了增长引擎 — 凤凰网科技</a></li>
+<li><a href="https://tw.stock.yahoo.com/news/minimax%E5%85%A9%E5%80%8B%E6%9C%88arr%E7%BF%BB%E5%80%8D%E8%A1%9D%E7%A0%B43%E5%84%84%E7%BE%8E%E5%85%83-%E5%85%A8%E7%90%83%E5%AE%A2%E6%88%B6%E7%A0%B4%E7%99%BE%E8%90%AC%E9%BB%9E%E7%87%83ai%E8%AE%8A%E7%8F%BE%E6%83%B3%E5%83%8F-075514767.html">MiniMax 两个月 ARR 翻倍冲破 3 亿美元 — Yahoo 股市</a></li>
+<li><a href="http://www.21jingji.com/article/20260302/herald/1c87fc3731a7252df995f8e733db8ab2.html">MiniMax 最新 ARR 超 1.5 亿美元 — 21 世纪经济报道</a></li>
+<li><a href="https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html">Anthropic tops OpenAI as most valuable AI startup — CNBC</a></li>
+<li><a href="https://valueaddvc.com/blog/openai-valuation-2026-852-billion-after-the-122b-raise">OpenAI Valuation 2026: $852B, a 34x Revenue Multiple — ValueAdd VC</a></li>
+<li><a href="https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/04/minimax-revenue-seen-rising-to-usd219m-in-2026-reaching-usd6b-by-2030">MiniMax revenue seen rising to $219M in 2026 — S&amp;P Global Market Intelligence</a></li>
+<li><a href="https://www.scmp.com/tech/big-tech/article/3365341/minimax-revenue-surges-283-remains-behind-pace-meet-forecast-amid-crowded-ai-race">MiniMax revenue surges 283% but remains behind pace to meet forecast — SCMP</a></li>
+<li><a href="https://finance.sina.com.cn/stock/hkstock/hkgg/2026-07-26/doc-inikassp3901649.shtml">高盛：MiniMax-W 重申买入评级 目标价 860 港元 — 新浪财经</a></li>
+<li><a href="https://finance.sina.com.cn/stock/hkstock/hkgg/2026-03-03/doc-inhpteik7480227.shtml">中金：MINIMAX 评级跑赢行业 目标价 1109 港元 — 新浪财经</a></li>
+<li><a href="https://stockanalysis.com/quote/hkg/0100/">MiniMax Group (HKG:0100) 行情 — StockAnalysis</a></li>
+<li><a href="https://finance.yahoo.com/quote/0100.HK/">MiniMax Group Inc (0100.HK) — Yahoo Finance</a></li>
+<li><a href="https://stockanalysis.com/quote/hkg/2513/">MiniMax Group (HKG:2513／0100) 行情与统计 — StockAnalysis</a></li>
+<li><a href="https://www.cnbc.com/2026/08/17/anthropic-says-annualized-revenue-climbed-to-65-billion-in-july.html">Anthropic says annualized revenue climbed to $65 billion in July — CNBC，2026-08-17</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-08-13/openai-s-revenue-run-rate-tops-40-billion-ahead-of-ipo">OpenAI's revenue run rate tops $40 billion ahead of IPO — Bloomberg，2026-08-13</a></li>
+<li><a href="https://fortune.com/2026/06/16/openai-financials-leaked-losses-revenue-profit/">OpenAI 泄露财报：2025 年确认收入 130.7 亿美元 — Fortune，2026-06-16</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-04-07/what-is-arr-behind-the-least-trusted-metric-of-the-ai-era">What Is ARR? Behind the Least-Trusted Metric of the AI Era — Bloomberg，2026-04-07</a></li>
+<li><a href="https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/">How VCs and founders use inflated 'ARR' to kingmake AI startups — TechCrunch，2026-05-22</a></li>
+<li><a href="https://cloudedjudgement.substack.com/p/clouded-judgement-32224-err-vs-arr">ERR vs ARR — Clouded Judgement（Jamin Ball, Altimeter），2024-03-22</a></li>
+<li><a href="https://chartmogul.com/reports/saas-retention-the-ai-churn-wave/">SaaS Retention: The AI Churn Wave — ChartMogul</a></li>
+<li><a href="https://econlab.substack.com/p/anthropics-breakout-month">Anthropic's Breakout Month（企业支付数据，月流失约4%）— Ramp EconLab，2026-02-11</a></li>
+<li><a href="https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx">CoreWeave Q2 2026 业绩</a></li>
+<li><a href="https://assets.nebius.com/assets/a6ecfd85-a6cb-4967-8ef7-9a25bd261f9c/SHLQ226.pdf">Nebius Q2 2026 股东信</a></li>
+<li><a href="https://www.bvp.com/atlas/state-of-the-cloud-2021">State of the Cloud 2021（Growth Endurance 定义与基准）— Bessemer</a></li>
+<li><a href="https://www.bvp.com/assets/uploads/2025/08/Final_PDF_State_of_AI_2025_slides_Bessemer_Venture_Partners.pdf">State of AI 2025（Supernova 毛利率约25%）— Bessemer</a></li>
+<li><a href="https://aventis-advisors.com/ai-valuation-multiples/">AI Valuation Multiples（私募 AI 交易 EV/Revenue 中位 24.2x）— Aventis Advisors，更新至 2026-05-15</a></li>
+<li><a href="https://cdn.prod.website-files.com/65d0d38fc4ec8ce8a8921654/68f2b54dbc22502304ab812d_ICONIQ%20Analytics%20-%20State%20of%20Software%202025.pdf">State of Software 2025（ARR 分档增速上四分位）— ICONIQ</a></li>
+<li><a href="https://stock.jrj.com.cn/2026/05/30101357268258.shtml">MiniMax 签署 A 股上市辅导协议（中信证券，2026-05-29）— 金融界</a></li>
+</ol></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/4587c8c773a2.html">MiniMax 创始人访谈研究与结论复核</a><div class="meta">2026-10-18 · 研究</div></li><li><a href="../r/8a072c27bb1d.html">收入增 283%、毛利率 17.9%：MiniMax 卖的是便宜的智能</a><div class="meta">2026-10-18 · 公众号</div></li><li><a href="../r/cf9c268d3d6d.html">MiniMax 深度研究：创始人、技术路线、赛道与十年推演</a><div class="meta">2026-10-17 · 深度系列</div></li><li><a href="../r/c1e706739223.html">MiniMax研究报告：来源、冲突与核验边界</a><div class="meta">2026-10-16 · 底稿</div></li><li><a href="../r/5f320d2574ae.html">MiniMax（00100.HK）研究报告</a><div class="meta">2026-10-16 · 研究</div></li><li><a href="../r/f1f5a85ec474.html">MiniMax（稀宇科技）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/1f005b032732.html">MiniMax（0100.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/1c170ddf04db.html">MiniMax差异化与护城河研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/af1d6c9b551f.html">研究审计说明（2026-09-06）</a><div class="meta">2026-09-06 · 导读</div></li><li><a href="../r/bcf3b1df7e7e.html">MiniMax差异化与护城河研究核验记录</a><div class="meta">2026-09-06 · 导读</div></li><li><a href="../r/111c8837b826.html">智谱和 MiniMax，半年烧掉了几乎一样多的钱</a><div class="meta">2026-09-01 · 公众号</div></li><li><a href="../r/deb6de91ddf8.html">MiniMax（0100.HK）麦肯锡 7S 组织诊断</a><div class="meta">2026-08-28 · 组织管理</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
