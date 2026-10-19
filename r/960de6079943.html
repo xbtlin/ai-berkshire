@@ -1,0 +1,648 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>早期年度财务补录（用于重建长历史估值序列） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/持仓估值分位与未来盈利-20260912/index.html">持仓估值分位与未来盈利-20260912</a></div><h1>早期年度财务补录（用于重建长历史估值序列）</h1><div class="meta"><a href="../topics/持仓估值分位与未来盈利-20260912/index.html">持仓估值分位与未来盈利-20260912</a> ｜ 2026-09-12 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8C%81%E4%BB%93%E4%BC%B0%E5%80%BC%E5%88%86%E4%BD%8D%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9B%88%E5%88%A9-20260912/%E6%97%A9%E6%9C%9F%E5%B9%B4%E5%BA%A6%E8%B4%A2%E5%8A%A1%E8%A1%A5%E5%BD%95.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#ntescik-000111064620002010">一、网易 NTES（CIK 0001110646）2000–2010</a></li>
+<li><a href="#biducik-00013290992005201020112019ads">二、百度 BIDU（CIK 0001329099）2005–2010（+2011–2019补充股数/ADS比例）</a></li>
+<li><a href="#tcomctrpcik-000126923820032010">三、携程 TCOM/CTRP（CIK 0001269238）2003–2010</a></li>
+<li><a href="#jdcik-000154980220142018">四、京东 JD（CIK 0001549802）2014–2018</a></li>
+<li><a href="#1810hk-20182022">五、小米集团 1810.HK 2018–2022</a></li>
+<li><a href="#_1">六、补录年数与缺失汇总</a></li>
+</ul>
+</div>
+</details><article><p>数据整理日期：2026-09-12
+数据来源优先级：SEC EDGAR 20-F原件 / 港交所披露易年报（一手） → macrotrends / stockanalysis.com（交叉核对）
+误差&gt;1%已标注⚠️；搜不到的字段明确写"未取得"，不编造。</p>
+<hr />
+<h2 id="ntescik-000111064620002010">一、网易 NTES（CIK 0001110646）2000–2010</h2>
+<p><strong>方法论修正（重要）</strong>：
+1. 网易全期间（FY2000–2010）记账本位币均为<strong>人民币RMB</strong>，并非任务假设的"早期美元、约2010年转人民币"——每份20-F只对最新一个财年提供USD"读者便利折算"，不是实际记账货币。
+2. <strong>ADS比例</strong>：2000年6月IPO起为 <strong>1 ADS = 100普通股</strong>；<strong>2006年3月27日起变更为 1 ADS = 25普通股</strong>，此后保持不变。
+3. <strong>FY2000/FY2001原始20-F电子版在EDGAR上不存在</strong>（该CIK最早电子化记录始于2002年；2002-06-21提交的纸质20-F仅1KB占位无正文）。这与2001年网易会计丑闻直接相关：SEC认定原始FY2000收入被超报109%（约430万美元）、净亏损被少报16%，2001年8月完成重述，险遭纳斯达克摘牌（<a href="https://www.sec.gov/enforcement-litigation/litigation-releases/lr-19578">SEC诉讼稿</a>）。表中FY2000/2001为<strong>重述后</strong>数字，转引自2003年FY2002 20-F的五年对比表。
+4. <strong>交叉验证局限</strong>：macrotrends.net对NTES 2000-2010返回403拦截；stockanalysis.com免费版仅覆盖2021年起。<strong>2000-2010年完全没有可用的独立第三方来源</strong>，全部以SEC 20-F原文为准，改用"同一数字在多份连续年度20-F对比表中反复出现"做内部交叉核验。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>期末日</th>
+<th>币种</th>
+<th>营业收入(元)</th>
+<th>归母净利润(元)</th>
+<th>期末归母权益(元)</th>
+<th>加权稀释普通股(百万股)</th>
+<th>ADS比例</th>
+<th>20-F提交日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2000</td>
+<td>2000-12-31</td>
+<td>CNY</td>
+<td>30,497,217（重述后；原始68,900,000，超报109%）</td>
+<td>(169,268,799)（重述后；原始(142,800,000)，少报16%）</td>
+<td>772,540,436</td>
+<td>2,497.5</td>
+<td>100</td>
+<td>未知（原始20-F无EDGAR记录），转引自<a href="https://www.sec.gov/Archives/edgar/data/1110646/000102140803009190/0001021408-03-009190-index.htm">FY2002 20-F</a>(2003-06-27)</td>
+</tr>
+<tr>
+<td>2001</td>
+<td>2001-12-31</td>
+<td>CNY</td>
+<td>26,025,537</td>
+<td>(233,163,914)</td>
+<td>555,029,534</td>
+<td>3,013.4</td>
+<td>100</td>
+<td>纸质20-F 2002-06-21提交无可读正文；数字转引同上</td>
+</tr>
+<tr>
+<td>2002</td>
+<td>2002-12-31</td>
+<td>CNY</td>
+<td>220,941,252（US$26,683,727）</td>
+<td>16,301,638（US$1,968,797）</td>
+<td>581,023,752（US$70,171,951）</td>
+<td>3,127.8</td>
+<td>100</td>
+<td><strong>2003-06-27</strong> <a href="https://www.sec.gov/Archives/edgar/data/1110646/000102140803009190/0001021408-03-009190-index.htm">来源</a></td>
+</tr>
+<tr>
+<td>2003</td>
+<td>2003-12-31</td>
+<td>CNY</td>
+<td>542,134,515（US$65,501,288）</td>
+<td>322,872,724（US$39,009,838）</td>
+<td>881,024,415（US$106,446,339）</td>
+<td>3,301.3→<strong>3,353.7</strong>（20-F/A修订+1.6%⚠️）</td>
+<td>100</td>
+<td><strong>2004-06-29</strong>（修订2005-01-24）<a href="https://www.sec.gov/Archives/edgar/data/1110646/000119312504110822/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2004</td>
+<td>2004-12-31</td>
+<td>CNY</td>
+<td>903,597,827（US$109,176,322）</td>
+<td>441,420,682（US$53,334,223）</td>
+<td>1,353,245,520（US$163,504,563）</td>
+<td>3,491.4</td>
+<td>100</td>
+<td><strong>2005-06-27</strong> <a href="https://www.sec.gov/Archives/edgar/data/1110646/000119312505131680/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2005</td>
+<td>2005-12-31</td>
+<td>CNY</td>
+<td>1,612,363,481（US$199,792,258）</td>
+<td>931,990,169→<strong>885,404,948</strong>（重列-5.0%⚠️疑似NCI口径变化）</td>
+<td>2,391,093,361→<strong>2,416,295,460</strong>（重列+1.05%⚠️同因）</td>
+<td>3,565.4</td>
+<td>年内100，2006-03-27起改25</td>
+<td><strong>2006-06-29</strong> <a href="https://www.sec.gov/Archives/edgar/data/1110646/000119312506138671/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2006</td>
+<td>2006-12-31</td>
+<td>CNY</td>
+<td>2,164,359,470（US$277,336,204）</td>
+<td>1,242,777,584→<strong>1,217,575,485</strong>（重列-2.0%⚠️同因）</td>
+<td>2,905,668,181（各版本一致）</td>
+<td>3,498.4</td>
+<td>100(1-3月)→<strong>25</strong>(3/27起)</td>
+<td><strong>2007-06-26</strong> <a href="https://www.sec.gov/Archives/edgar/data/1110646/000119312507142483/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2007</td>
+<td>2007-12-31</td>
+<td>CNY</td>
+<td>2,213,286,764（US$303.4M，叙述性数字，精确值未取得）</td>
+<td>1,264,086,122（各版本一致）</td>
+<td>3,398,425,631≈3,398,633,429（重列+0.006%可忽略）</td>
+<td>3,307.5</td>
+<td>25</td>
+<td><strong>2008-06-26</strong> <a href="https://www.sec.gov/Archives/edgar/data/1110646/000119312508140745/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2008</td>
+<td>2008-12-31</td>
+<td>CNY</td>
+<td>3,084,584,149（US$452,119,333）</td>
+<td>1,596,687,907</td>
+<td>5,516,435,976≈5,516,645,241（重列+0.004%可忽略）</td>
+<td>3,234.2</td>
+<td>25</td>
+<td><strong>2009-06-30</strong> <a href="https://www.sec.gov/Archives/edgar/data/1110646/000119312509141163/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2009</td>
+<td>2009-12-31</td>
+<td>CNY</td>
+<td>3,756,947,133（US$550,395,864）</td>
+<td>1,850,436,004（US$271,090,405）</td>
+<td>7,425,343,711（US$1,087,819,000）</td>
+<td>3,249.0</td>
+<td>25</td>
+<td><strong>2010-06-29</strong> <a href="https://www.sec.gov/Archives/edgar/data/1110646/000119312510149321/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2010</td>
+<td>2010-12-31</td>
+<td>CNY</td>
+<td>5,507,669,000（US$834,496,000）</td>
+<td>2,235,772,000（US$338,753,000）</td>
+<td>9,723,638,000（US$1,473,278,000）</td>
+<td>3,261.9</td>
+<td>25</td>
+<td><strong>2011-06-22</strong> <a href="https://www.sec.gov/Archives/edgar/data/1110646/000110465911035900/a11-14725_120f.htm">来源</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>未取得</strong>：FY2000/FY2001原始20-F全文及准确提交日期；FY2007营收USD精确折算；2000-2010任一年份的macrotrends/stockanalysis独立交叉验证。</p>
+<hr />
+<h2 id="biducik-00013290992005201020112019ads">二、百度 BIDU（CIK 0001329099）2005–2010（+2011–2019补充股数/ADS比例）</h2>
+<p><strong>ADS比例变更</strong>：IPO(2005-08)起为1 ADS=1普通股；2010-05-12起变更为1 ADS=0.1普通股（10 ADS=1股，通过SEC 6-K核实生效日期）；2011-2019期间保持0.1不变；2021-03-01起因1拆80变更为1 ADS=8股（超出本次范围，仅供参照）。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>期末日</th>
+<th>币种</th>
+<th>营业收入(千元)</th>
+<th>归母净利润(千元)</th>
+<th>期末归母权益(千元)</th>
+<th>加权稀释普通股(百万股)</th>
+<th>ADS比例</th>
+<th>20-F提交日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2005</td>
+<td>2005-12-31</td>
+<td>CNY</td>
+<td>319,215 ✅</td>
+<td>47,605 ✅</td>
+<td>1,005,053（无独立交叉源）</td>
+<td>32.04</td>
+<td>1</td>
+<td><strong>2006-06-21</strong> <a href="https://www.sec.gov/Archives/edgar/data/1329099/000119312506133151/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2006</td>
+<td>2006-12-31</td>
+<td>CNY</td>
+<td>837,838 ✅</td>
+<td>301,766 ✅</td>
+<td>1,357,261（无独立交叉源）</td>
+<td>34.51</td>
+<td>1</td>
+<td><strong>2007-05-30</strong> <a href="https://www.sec.gov/Archives/edgar/data/1329099/000119312507125387/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2007</td>
+<td>2007-12-31</td>
+<td>CNY</td>
+<td>1,744,425 ✅</td>
+<td>628,968 ✅</td>
+<td>2,021,372（无独立交叉源）</td>
+<td>34.72</td>
+<td>1</td>
+<td><strong>2008-06-05</strong> <a href="https://www.sec.gov/Archives/edgar/data/1329099/000114554908001006/h02175e20vf.htm">来源</a></td>
+</tr>
+<tr>
+<td>2008</td>
+<td>2008-12-31</td>
+<td>CNY</td>
+<td>3,198,252 ✅</td>
+<td>1,048,108 ✅</td>
+<td>3,088,663（无独立交叉源）</td>
+<td>34.72</td>
+<td>1</td>
+<td><strong>2009-04-09</strong> <a href="https://www.sec.gov/Archives/edgar/data/1329099/000095014409003054/h03242e20vf.htm">来源</a></td>
+</tr>
+<tr>
+<td>2009</td>
+<td>2009-12-31</td>
+<td>CNY</td>
+<td>4,447,776 ✅</td>
+<td>1,485,104 ✅</td>
+<td>4,753,101（无独立交叉源）</td>
+<td>34.78</td>
+<td>1</td>
+<td><strong>2010-03-26</strong> <a href="https://www.sec.gov/Archives/edgar/data/1329099/000095012310028511/h03358e20vf.htm">来源</a></td>
+</tr>
+<tr>
+<td>2010</td>
+<td>2010-12-31</td>
+<td>CNY</td>
+<td>7,915,074 ✅</td>
+<td>3,525,168</td>
+<td>8,405,592（无独立交叉源）</td>
+<td>34.92</td>
+<td>1(1-5月)→0.1(5/12起)</td>
+<td><strong>2011-03-29</strong> <a href="https://www.sec.gov/Archives/edgar/data/1329099/000095012311030187/h04360de20vf.htm">来源</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>✅ = 与stockanalysis.com核对一致（误差0%）。净利润用"净利润÷加权稀释股数=披露稀释EPS"反算校验通过。<strong>股东权益2005-2009仅有SEC单一来源</strong>，交叉源（stockanalysis/macrotrends）免费版无该区间历史资产负债表数据。</p>
+<p><strong>补充：2011–2019 加权平均稀释普通股数与ADS比例</strong>（本轮仅采集这两项，不含营收/净利润/权益）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>加权稀释普通股数(股)</th>
+<th>折合百万股</th>
+<th>ADS比例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2011</td>
+<td>34,962,831</td>
+<td>34.96</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>2012</td>
+<td>34,979,459</td>
+<td>34.98</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>2013</td>
+<td>35,036,346</td>
+<td>35.04</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>2014</td>
+<td>35,198,474</td>
+<td>35.20</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>2015</td>
+<td>35,034,470</td>
+<td>35.03</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>2016</td>
+<td>34,757,086</td>
+<td>34.76</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>34,952,391</td>
+<td>34.95</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>35,171,043</td>
+<td>35.17</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>34,884,854</td>
+<td>34.88</td>
+<td>0.1</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：<a href="https://www.sec.gov/Archives/edgar/data/1329099/000119312512139789/d243699d20f.htm">FY2011 20-F</a>、<a href="https://www.sec.gov/Archives/edgar/data/1329099/000119312514120068/d641077d20f.htm">FY2013 20-F</a>、<a href="https://www.sec.gov/Archives/edgar/data/1329099/000119312516534644/d45315d20f.htm">FY2015 20-F</a>、<a href="https://www.sec.gov/Archives/edgar/data/1329099/000119312518084050/d480652d20f.htm">FY2017 20-F</a>、<a href="https://www.sec.gov/Archives/edgar/data/1329099/000119312520073092/d833212d20f.htm">FY2019 20-F</a>，相邻年度比较列互相核对一致。</p>
+<p><strong>未取得</strong>：2005-2010股东权益无独立第三方来源核对；2011-2019营收/净利润/权益未在本轮核实。</p>
+<hr />
+<h2 id="tcomctrpcik-000126923820032010">三、携程 TCOM/CTRP（CIK 0001269238）2003–2010</h2>
+<p><strong>ADS比例变更历史</strong>（20-F封面及Item 3核实）：
+- 2003-12-08（IPO）–2006-04-10：1 ADS = 2 普通股
+- 2006-04-11 – 2007-07-30：1 ADS = 1 普通股
+- 2007-07-31 – 2010-01-20：1 ADS = 0.5 普通股
+- 2010-01-21起：1 ADS = 0.25 普通股</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>期末日</th>
+<th>币种</th>
+<th>营业收入(千元)</th>
+<th>归母净利润(千元)</th>
+<th>期末归母权益(千元)</th>
+<th>加权稀释普通股(百万股)</th>
+<th>ADS比例(年末)</th>
+<th>20-F提交日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2003</td>
+<td>2003-12-31</td>
+<td>CNY</td>
+<td>173,146</td>
+<td>53,814</td>
+<td>492,724</td>
+<td>14.36</td>
+<td>2</td>
+<td><strong>2004-05-11</strong> <a href="https://www.sec.gov/Archives/edgar/data/1269238/000119312504084450/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2004</td>
+<td>2004-12-31</td>
+<td>CNY</td>
+<td>333,820</td>
+<td>133,126</td>
+<td>601,371</td>
+<td>31.50</td>
+<td>2</td>
+<td><strong>2005-06-22</strong> <a href="https://www.sec.gov/Archives/edgar/data/1269238/000119312505128992/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2005</td>
+<td>2005-12-31</td>
+<td>CNY</td>
+<td>521,225（重列524,183，差0.57%，重分类无损益影响）</td>
+<td>224,246</td>
+<td>764,716</td>
+<td>32.44</td>
+<td>2</td>
+<td><strong>2006-06-26</strong> <a href="https://www.sec.gov/Archives/edgar/data/1269238/000119312506135591/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2006</td>
+<td>2006-12-31</td>
+<td>CNY</td>
+<td>779,952</td>
+<td>240,564</td>
+<td>1,027,697</td>
+<td>33.27</td>
+<td>1(4/11变更)</td>
+<td><strong>2007-04-12</strong> <a href="https://www.sec.gov/Archives/edgar/data/1269238/000119312507079411/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2007</td>
+<td>2007-12-31</td>
+<td>CNY</td>
+<td>1,199,111</td>
+<td>398,324</td>
+<td>1,450,119</td>
+<td>34.12</td>
+<td>0.5(7/31变更)</td>
+<td><strong>2008-04-29</strong> <a href="https://www.sec.gov/Archives/edgar/data/1269238/000119312508094260/d20f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2008</td>
+<td>2008-12-31</td>
+<td>CNY</td>
+<td>1,482,004</td>
+<td>444,108</td>
+<td>1,931,088（重列2,011,971，差4.19%⚠️见下）</td>
+<td>34.42</td>
+<td>0.5</td>
+<td><strong>2009-05-26</strong> <a href="https://www.sec.gov/Archives/edgar/data/1269238/000136231009008154/c85975e20vf.htm">来源</a></td>
+</tr>
+<tr>
+<td>2009</td>
+<td>2009-12-31</td>
+<td>CNY</td>
+<td>1,988,007</td>
+<td>658,974</td>
+<td>2,925,048</td>
+<td>35.25</td>
+<td>0.5(年末)/提交时1/21已变0.25</td>
+<td><strong>2010-02-03</strong> <a href="https://www.sec.gov/Archives/edgar/data/1269238/000095012310008368/c95193e20vf.htm">来源</a></td>
+</tr>
+<tr>
+<td>2010</td>
+<td>2010-12-31</td>
+<td>CNY</td>
+<td>2,881,233</td>
+<td>1,048,070</td>
+<td>6,103,693</td>
+<td>37.58</td>
+<td>0.25(1/21变更)</td>
+<td><strong>2011-03-31</strong> <a href="https://www.sec.gov/Archives/edgar/data/1269238/000095012311031061/c13419e20vf.htm">来源</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>差异说明</strong>：
+- <strong>FY2008期末权益 ⚠️差异4.19%</strong>：原始1,931,088千元 → FY2009 20-F重列2,011,971千元。原因：携程2009年增持如家(Home Inns)股权至约18%后改用权益法核算，依据ASC 323-10-35-33对2008年约9%投资部分追溯采用权益法，此前计入OCI的未实现浮亏80,883千元被重分类冲减。
+- <strong>FY2005营收 差异0.57%</strong>：原始521,225千元 → FY2006 20-F重列524,183千元，附注注明"重分类，对净利润和留存收益无影响"。</p>
+<p>交叉验证局限：macrotrends.net对TCOM返回403拦截；stockanalysis.com免费版仅覆盖2021年起。2003-2010无独立第三方来源，改用SEC连续年度20-F互证（8年数据在相邻年报比较列中除上述两处外全部完全一致）。</p>
+<p><strong>未取得</strong>：无字段完全缺失。</p>
+<hr />
+<h2 id="jdcik-000154980220142018">四、京东 JD（CIK 0001549802）2014–2018</h2>
+<p><strong>ADS比例</strong>：全期间未变更，1 ADS = 2股Class A普通股（2014年IPO招股书与2018年20-F封面均确认）。口径：GAAP，归属普通股股东。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>期末日</th>
+<th>币种</th>
+<th>营业收入(百万元)</th>
+<th>归母净利润/(亏损)(百万元)</th>
+<th>期末归母权益(百万元)</th>
+<th>加权稀释普通股(百万股)</th>
+<th>ADS比例</th>
+<th>20-F提交日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2014</td>
+<td>2014-12-31</td>
+<td>CNY</td>
+<td>115,002</td>
+<td>(12,954)</td>
+<td>37,498</td>
+<td>2,419.7</td>
+<td>2</td>
+<td><strong>2015-04-17</strong> <a href="https://www.sec.gov/Archives/edgar/data/1549802/000110465915028403/a15-5694_120f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2015</td>
+<td>2015-12-31</td>
+<td>CNY</td>
+<td>181,287（原始）→重述181,042（差0.14%）</td>
+<td>(9,378)（原始）→重述(9,108)（差<strong>2.9%⚠️</strong>）</td>
+<td>30,541（原始）→重述30,583（差0.14%）</td>
+<td>2,735.0</td>
+<td>2</td>
+<td><strong>2016-04-18</strong> <a href="https://www.sec.gov/Archives/edgar/data/1549802/000110465916111984/a16-3659_120f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2016</td>
+<td>2016-12-31</td>
+<td>CNY</td>
+<td>260,122（原始）→重述258,290（差0.70%）</td>
+<td>(3,807)</td>
+<td>33,893</td>
+<td>2,804.8</td>
+<td>2</td>
+<td><strong>2017-05-01</strong> <a href="https://www.sec.gov/Archives/edgar/data/1549802/000110465917028187/a17-4445_120f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2017</td>
+<td>2017-12-31</td>
+<td>CNY</td>
+<td>362,332</td>
+<td>(152)（精确-152.257）</td>
+<td>52,041</td>
+<td>2,911.5</td>
+<td>2</td>
+<td><strong>2018-04-27</strong> <a href="https://www.sec.gov/Archives/edgar/data/1549802/000110465918027777/a18-5116_120f.htm">来源</a></td>
+</tr>
+<tr>
+<td>2018</td>
+<td>2018-12-31</td>
+<td>CNY</td>
+<td>462,020</td>
+<td>(2,492)（精确-2,491.633）</td>
+<td>59,771</td>
+<td>2,877.9</td>
+<td>2</td>
+<td><strong>2019-04-15</strong> <a href="https://www.sec.gov/Archives/edgar/data/1549802/000110465919021236/a18-42062_120f.htm">来源</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>重要澄清</strong>：网传"京东2017年GAAP净利润5.0亿元"经核实为误传/与Non-GAAP口径混淆，20-F原文确认2017年归母口径为<strong>净亏损</strong>1.52亿元。</p>
+<p><strong>差异说明</strong>：FY2015净利润原始值与后续重述值差异2.9%（超1%阈值），原因为京东金融相关业务重分类/会计调整，非独立数据源误差。stockanalysis.com免费版无2014-2018历史数据，交叉源实际不可得，改用macrotrends（美元列报）做方向性核对（非同币种精确对比）。</p>
+<p><strong>未取得</strong>：无字段完全缺失。</p>
+<hr />
+<h2 id="1810hk-20182022">五、小米集团 1810.HK 2018–2022</h2>
+<p><strong>说明</strong>：披露易上3月发布的是"年度业绩公告"（含完整审计合并报表），正式印刷版"年报"滞后至4月发布，下表两个日期都已给出。小米为港股直接上市（同股不同权AB股结构），<strong>不存在ADS/ADR存托凭证结构</strong>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th>期末日</th>
+<th>币种</th>
+<th>营业收入(百万元)</th>
+<th>归母净利润(IFRS,百万元)</th>
+<th>经调整净利润(Non-GAAP,百万元)</th>
+<th>期末归母权益(百万元)</th>
+<th>加权稀释普通股(百万股)</th>
+<th>ADS比例</th>
+<th>业绩公告/年报发布日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2018</td>
+<td>2018-12-31</td>
+<td>CNY</td>
+<td>174,915.4</td>
+<td><strong>+13,553.9</strong>（利润，非亏损）</td>
+<td>8,554.5</td>
+<td>71,323.0</td>
+<td>23,562.930</td>
+<td>N/A(港股无ADS)</td>
+<td><strong>2019-03-19</strong> / 2019-04-08 <a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2019/0319/ltn20190319788.pdf">来源</a></td>
+</tr>
+<tr>
+<td>2019</td>
+<td>2019-12-31</td>
+<td>CNY</td>
+<td>205,838.7</td>
+<td>10,044.2</td>
+<td>11,532.3</td>
+<td>81,330.6</td>
+<td>24,508.764</td>
+<td>N/A</td>
+<td><strong>2020-03-31</strong> / 2020-04-26 <a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0331/2020033101447.pdf">来源</a></td>
+</tr>
+<tr>
+<td>2020</td>
+<td>2020-12-31</td>
+<td>CNY</td>
+<td>245,865.6</td>
+<td>20,355.5</td>
+<td>13,006.4</td>
+<td>123,691.7</td>
+<td>24,668.280</td>
+<td>N/A</td>
+<td><strong>2021-03-24</strong> / 2021-04-26 <a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2021/0324/2021032400780.pdf">来源</a></td>
+</tr>
+<tr>
+<td>2021</td>
+<td>2021-12-31</td>
+<td>CNY</td>
+<td>328,309.1 ✅</td>
+<td>19,339.3 ✅</td>
+<td>22,039.5</td>
+<td>137,212.9 ✅</td>
+<td>25,509.431</td>
+<td>N/A</td>
+<td><strong>2022-03-22</strong> / 2022-04-27 <a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2022/0322/2022032200831.pdf">来源</a></td>
+</tr>
+<tr>
+<td>2022</td>
+<td>2022-12-31</td>
+<td>CNY</td>
+<td>280,044.0 ✅</td>
+<td>2,474.0 ✅</td>
+<td>8,518.0</td>
+<td>143,658.5 ✅</td>
+<td>25,297.383</td>
+<td>N/A</td>
+<td><strong>2023-03-24</strong> / 2023-04-26 <a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2023/0324/2023032400811.pdf">来源</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>✅ = 与stockanalysis.com核对一致（误差0%，2021-2022）。2018-2020用相邻年度公告比较列+媒体报道二次核对（macrotrends/aastocks反爬拦截无法直接抓取）。</p>
+<p><strong>重要澄清（推翻常见误传）</strong>：小米2018<strong>全年</strong>（非上市前招股书区间）IFRS归母净利润为<strong>盈利135.5亿元</strong>，不是坊间常说的"巨亏"——真正的巨亏年份是2017年（亏损439.9亿元，因优先股公允价值变动损失540.7亿元）。2018年上市后优先股全部转换为普通股，公允价值变动科目全年净额转为收益125.1亿元，使2018全年IFRS利润转正。<strong>本报告已用WebSearch独立信源交叉验证</strong>：确认"For the year ended December 31, 2018, Xiaomi reached a profit of RMB13.5 billion, compared with a loss of RMB43.9 billion for the year ended December 31, 2017"，与本表数字一致。</p>
+<p><strong>未取得</strong>：无字段完全缺失。</p>
+<hr />
+<h2 id="_1">六、补录年数与缺失汇总</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>要求财年范围</th>
+<th>实际补录年数</th>
+<th>完全缺失年份</th>
+<th>部分缺失/需注意字段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网易 NTES</td>
+<td>2000–2010</td>
+<td>11年（全部覆盖）</td>
+<td>无</td>
+<td>FY2000/2001原始（重述前）20-F全文未取得（仅重述后数字可用，FY2000原始revenue/net_income已从对比表反查到，FY2001原始数字仍未取得）；FY2007营收USD精确折算未取得</td>
+</tr>
+<tr>
+<td>百度 BIDU</td>
+<td>2005–2009（用户要求）→ 实际扩展到2005–2010</td>
+<td>6年主表 + 2011–2019股数/ADS比例补充9年</td>
+<td>无</td>
+<td>2005-2010股东权益无独立第三方来源核对（仅SEC内部互证）；2011-2019的营收/净利润/权益未取得（本轮未要求）</td>
+</tr>
+<tr>
+<td>携程 TCOM</td>
+<td>2003–2010</td>
+<td>8年（全部覆盖）</td>
+<td>无</td>
+<td>无缺失，FY2005营收与FY2008权益各有一处&gt;1%重述差异已标注</td>
+</tr>
+<tr>
+<td>京东 JD</td>
+<td>2014–2018</td>
+<td>5年（全部覆盖）</td>
+<td>无</td>
+<td>无缺失，FY2015净利润重述差异2.9%已标注；stockanalysis早期数据源不可得</td>
+</tr>
+<tr>
+<td>小米 1810.HK</td>
+<td>2018–2022</td>
+<td>5年（全部覆盖）</td>
+<td>无</td>
+<td>无缺失；2018年净利润数字已澄清并独立验证，纠正常见"巨亏"误传</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>合计</strong>：5家公司、11+15+8+5+5=44条年度记录（含百度2011-2019补充记录），核心三项财务指标（营收/净利润/权益）在用户原始要求的年份范围内<strong>无完全缺失年份</strong>；缺口集中在网易FY2000/2001的"原始（重述前）"版本（因原始20-F从未电子化，属客观数据缺失，非搜索能力问题）。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/bd6d20499d4d.html">阿里巴巴与京东：财务底稿及2036年度利润情景</a><div class="meta">2026-09-12 · 底稿</div></li><li><a href="../r/44b12c3e53c8.html">网易与百度：财务底稿、分部正常化利润及2036年度利润情景</a><div class="meta">2026-09-12 · 底稿</div></li><li><a href="../r/e8decc85693d.html">小米与携程：财务底稿及2036年度利润情景</a><div class="meta">2026-09-12 · 底稿</div></li><li><a href="../r/90e4bdc86f58.html">十家中概都便宜，只有两家不在历史低位</a><div class="meta">2026-09-12 · 公众号</div></li><li><a href="../r/3f3f9c358874.html">中概十公司估值分位与未来盈利研究：腾讯、拼多多、快手、美团、阿里巴巴、京东、网易、百度、小米、携程</a><div class="meta">2026-09-12 · 估值仓位</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

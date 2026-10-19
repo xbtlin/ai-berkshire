@@ -1,0 +1,311 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>从蚂蚁集团到蚂蚁数科 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/蚂蚁数科/index.html">蚂蚁数科</a></div><h1>从蚂蚁集团到蚂蚁数科</h1><div class="meta"><a href="../companies/蚂蚁数科/index.html">蚂蚁数科</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%9A%82%E8%9A%81%E6%95%B0%E7%A7%91/%E3%80%8A%E7%9C%8B%E6%87%82%E8%9A%82%E8%9A%81%E6%95%B0%E7%A7%91%E3%80%8B/01-%E5%BC%80%E7%AF%87-%E4%BB%8E%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E5%88%B0%E8%9A%82%E8%9A%81%E6%95%B0%E7%A7%91.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#80-2000-25">一家估值从 80 亿到 2,000 亿、跨度 25 倍的公司</a></li>
+<li><a href="#_1">蚂蚁数科从哪里来</a></li>
+<li><a href="#_2">蚂蚁数科"是什么"——三个关键事实</a><ul>
+<li><a href="#_3">事实一：它是一家企业服务公司，不是消费互联网公司</a></li>
+<li><a href="#ai">事实二：它不做基础大模型，它做的是"金融级 AI 服务"</a></li>
+<li><a href="#_4">事实三：它目前的体量，在蚂蚁集团里只是个"零头"</a></li>
+</ul>
+</li>
+<li><a href="#_5">蚂蚁数科"不是什么"——三个常见误解</a><ul>
+<li><a href="#_6">误解一：蚂蚁数科 = 蚂蚁链</a></li>
+<li><a href="#oceanbase">误解二：蚂蚁数科 = OceanBase</a></li>
+<li><a href="#_7">误解三：蚂蚁数科 = 蚂蚁集团的科技部门</a></li>
+</ul>
+</li>
+<li><a href="#_8">看懂蚂蚁数科，需要回答三个问题</a></li>
+<li><a href="#_9">一组定调数字</a></li>
+<li><a href="#_10">与蚂蚁集团其他板块的关系</a></li>
+<li><a href="#_11">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂蚂蚁数科》系列 · 第 01 篇 · 开篇
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="80-2000-25">一家估值从 80 亿到 2,000 亿、跨度 25 倍的公司</h2>
+<p>2024 年 3 月蚂蚁集团完成"一拆四"，把整个集团拆成四块独立运营的公司。其中三块——支付宝、蚂蚁国际、OceanBase——在各自赛道内都有清晰的参照系。唯独第四块，让人看了半天说不清楚：它叫蚂蚁数科。</p>
+<p>区块链大会上有它，AI 智能体评测榜上有它，香港代币化峰会上有它，法国戛纳的科技峰会上也有它。不同口径下，这家公司的估值从 <strong>80 亿</strong>到 <strong>2,000 亿</strong>，跨度达到 <strong>25 倍</strong>。问身边的人，大概率得到三种回答：</p>
+<ul>
+<li>"蚂蚁集团的科技业务吧"</li>
+<li>"做区块链的那个"</li>
+<li>"不太清楚，跟支付宝有关系？"</li>
+</ul>
+<p>三种都不算错，但也都不够准确。这个系列要做的第一件事，是把"蚂蚁数科到底是什么"说清楚。</p>
+<hr />
+<h2 id="_1">蚂蚁数科从哪里来</h2>
+<p>要理解蚂蚁数科，必须先理解蚂蚁集团的"一拆四"。</p>
+<p><strong>2024 年 3 月</strong>，蚂蚁集团完成了一次重大架构调整，把集团拆成四个独立运营的板块：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>板块</th>
+<th>核心业务</th>
+<th>CEO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>蚂蚁集团本体</strong></td>
+<td>支付宝 + 数字金融（消费金融、理财、保险等）</td>
+<td>韩歆毅</td>
+</tr>
+<tr>
+<td><strong>蚂蚁国际</strong></td>
+<td>跨境支付（WorldFirst/Antom/Alipay+）</td>
+<td>杨鹏</td>
+</tr>
+<tr>
+<td><strong>OceanBase</strong></td>
+<td>分布式数据库</td>
+<td>杨冰</td>
+</tr>
+<tr>
+<td><strong>蚂蚁数科</strong></td>
+<td>企业级 AI + 区块链 + 云中间件 + 隐私计算</td>
+<td>赵闻飙</td>
+</tr>
+</tbody>
+</table></div>
+<p>四家公司各自设独立董事会，各自有 CEO，各自独立运营——但<strong>全部由蚂蚁集团 100% 控股</strong>，没有引入外部财务投资者。</p>
+<p><strong>蚂蚁数科的本质</strong>：蚂蚁集团用十几年在支付宝、网商银行、芝麻信用等金融场景中打磨出来的金融级技术能力（区块链、隐私计算、风控、中间件、AI），打包成产品，卖给外部企业客户。</p>
+<p>用一个比方：如果蚂蚁集团是一家米其林餐厅，蚂蚁数科就是把这家餐厅的厨房设备、食材供应链和厨师培训体系，打包卖给其他想开餐厅的人。</p>
+<hr />
+<h2 id="_2">蚂蚁数科"是什么"——三个关键事实</h2>
+<h3 id="_3">事实一：它是一家企业服务公司，不是消费互联网公司</h3>
+<p>蚂蚁数科的客户是<strong>企业和机构</strong>——银行、保险公司、能源企业、政府部门——不是普通消费者。</p>
+<p>它不像支付宝那样有 <strong>10 亿</strong> 用户，但它覆盖了 <strong>1.3 万+</strong> 企业客户、<strong>300+</strong> 合作伙伴、<strong>24</strong> 个国家和地区（来源：蚂蚁数科迪拜峰会 2025-04）。</p>
+<p>更关键的客户画像是：<strong>100%</strong> 国有股份制银行 + <strong>60%+</strong> 地方性商业银行 + 数百家金融机构（来源：蚂蚁数科外滩大会 2025-09）。</p>
+<p><strong>反方观点</strong>：1.3 万客户的口径可能包含大量低付费甚至免费试用客户。真正的高价值付费客户（年合同价值千万级以上）可能只有几十家。</p>
+<h3 id="ai">事实二：它不做基础大模型，它做的是"金融级 AI 服务"</h3>
+<p>这是最容易搞混的地方。</p>
+<p>蚂蚁集团确实有自己的基础大模型——<strong>百灵家族</strong>（Ling/Ring/Ming 三个系列，参数从百亿到万亿）。但百灵大模型属于<strong>蚂蚁集团的百灵基模团队</strong>，不属于蚂蚁数科。</p>
+<p>蚂蚁数科做的是什么？<strong>在百灵开源底座上叠加四层增量</strong>：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>层次</th>
+<th>蚂蚁数科做了什么</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>垂直微调</td>
+<td>用金融行业数据训练金融推理模型</td>
+<td>Agentar-Fin-R1（基于 Qwen3 微调，金融评测超 DeepSeek-R1）</td>
+</tr>
+<tr>
+<td>智能体平台</td>
+<td>提供企业级 Agent 开发工具</td>
+<td>Agentar 平台（信通院最高级别认证）</td>
+</tr>
+<tr>
+<td>效率优化</td>
+<td>针对企业场景的 Token 消耗优化</td>
+<td>LingDT-2.6-flash（Token 消耗节省 <strong>90%</strong>）</td>
+</tr>
+<tr>
+<td>合规闭环</td>
+<td>金融级安全防护 + 私有化部署 + 审计</td>
+<td>宁波银行全行落地案例</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一句话</strong>：蚂蚁数科不是"做大模型的公司"，是"把大模型变成金融机构敢用的产品"的公司。</p>
+<p><strong>反方观点</strong>：这种"集成+微调+服务"的模式，本质上高度依赖集团百灵团队。如果百灵在与千问、DeepSeek 的竞争中掉队，蚂蚁数科的 AI 产品也会连带受影响。</p>
+<h3 id="_4">事实三：它目前的体量，在蚂蚁集团里只是个"零头"</h3>
+<p>一组让你感受量级的数字：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>蚂蚁集团整体</th>
+<th>蚂蚁数科（推算）</th>
+<th>数科占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024 年营收</td>
+<td>约 <strong>1,350 亿</strong>元（推算，来源：阿里财报权益法核算）</td>
+<td>约 <strong>55 亿</strong>元（推算，来源：CEO 口径+招股书基线）</td>
+<td><strong>约 4%</strong></td>
+</tr>
+<tr>
+<td>2024 年净利</td>
+<td><strong>383 亿</strong>元（来源：阿里财报 2025-05）</td>
+<td>刚盈亏平衡（来源：CEO 外滩大会 2025）</td>
+<td>几乎为零</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>约 <strong>6,350 亿</strong>元（来源：胡润 2025 独角兽榜）</td>
+<td>约 <strong>300-500 亿</strong>元（推算）</td>
+<td><strong>约 5-8%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>蚂蚁数科在集团里的收入占比仅约 4%。</strong> 这意味着，即使蚂蚁数科营收翻一倍，对蚂蚁集团整体的贡献也非常有限。</p>
+<p>但反过来看——蚂蚁集团 2024 年净利 <strong>383 亿</strong>，有充足的资源持续输血数科的研发投入。集团整体研发投入 <strong>234.5 亿</strong>/年（来源：ESG 报告），是蚂蚁数科最大的后盾，也是最大的依赖。</p>
+<hr />
+<h2 id="_5">蚂蚁数科"不是什么"——三个常见误解</h2>
+<h3 id="_6">误解一：蚂蚁数科 = 蚂蚁链</h3>
+<p>蚂蚁链（区块链 BaaS）只是蚂蚁数科的<strong>五条产品线之一</strong>。蚂蚁数科的完整版图是"ABC"——AI + Blockchain + Cloud，再加上隐私计算和海外 eKYC：</p>
+<pre><code>蚂蚁数科
+├── A：AI 服务（Agentar 智能体平台、金融推理模型、蚁盾风控）
+├── B：区块链服务（蚂蚁链 BaaS、RWA 代币化、Jovay 公链、ZAN）
+├── C：云中间件（SOFAStack、mPaaS）
+├── 隐私计算（摩斯 MORSE）
+└── 海外（ZOLOZ eKYC 身份验证）
+</code></pre>
+<p>只看区块链，是把大象看成了象鼻子。</p>
+<h3 id="oceanbase">误解二：蚂蚁数科 = OceanBase</h3>
+<p>OceanBase（分布式数据库）经常和蚂蚁数科搞混，但它们是<strong>平行的兄弟公司</strong>，不是父子关系。OceanBase 2024 年已独立运营，有自己的 CEO（杨冰），有自己的客户体系（TPC-C 世界纪录、100 家银行客户），正在独立筹备 IPO。</p>
+<p><strong>OceanBase 的数据（金融 DB 份额 18.3%、TPC-C 世界纪录等）不属于蚂蚁数科。</strong> 很多分析把 OceanBase 的成绩算到蚂蚁数科头上，这是严重的归属错误。</p>
+<h3 id="_7">误解三：蚂蚁数科 = 蚂蚁集团的科技部门</h3>
+<p>蚂蚁数科不是集团内部的技术支撑部门。它有自己的客户、自己的收入、自己的损益表。CEO 赵闻飙在 2025 年外滩大会上说过："去年（2024 年）就盈亏平衡了"，"今年增速差不多能达到 50% 以上"。</p>
+<p>它是一家<strong>有独立商业目标的公司</strong>——只是目前还被蚂蚁集团 100% 控股，没有外部投资者，也没有上市。</p>
+<hr />
+<h2 id="_8">看懂蚂蚁数科，需要回答三个问题</h2>
+<blockquote>
+<p><strong>蚂蚁数科 = 蚂蚁集团技术外溢变现的载体。在几个细分赛道占据第一，但核心赛道市场规模偏小，AI 和 RWA 是想象空间的来源，也是最大不确定性的来源。</strong></p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>展开篇章</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>怎么赚钱？五条产品线各是什么量级？</td>
+<td>第 02 篇</td>
+</tr>
+<tr>
+<td>竞争对手是谁？护城河是真的还是幻觉？</td>
+<td>第 03 篇</td>
+</tr>
+<tr>
+<td>值多少钱？什么时候上市？风险在哪里？</td>
+<td>第 04 篇（终章）</td>
+</tr>
+</tbody>
+</table></div>
+<p>三个问题单独回答都不完整——必须放在一起看。</p>
+<hr />
+<h2 id="_9">一组定调数字</h2>
+<p>在展开分析之前，先记住这组数字。它们会在后续三篇里反复出现：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>来源</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024 年营收</td>
+<td>约 <strong>55 亿</strong>元（推算）</td>
+<td>CEO 口径 + 招股书基线</td>
+<td>低</td>
+</tr>
+<tr>
+<td>2025 年营收</td>
+<td>约 <strong>85 亿</strong>元（推算，增速 50%+）</td>
+<td>CEO 外滩大会 2025</td>
+<td>低</td>
+</tr>
+<tr>
+<td>2024 年盈亏</td>
+<td><strong>盈亏平衡</strong></td>
+<td>CEO 公开表态</td>
+<td>中</td>
+</tr>
+<tr>
+<td>客户数</td>
+<td><strong>1.3 万+</strong> 企业客户</td>
+<td>迪拜峰会、多家媒体</td>
+<td>中</td>
+</tr>
+<tr>
+<td>蚂蚁链 BaaS 份额</td>
+<td><strong>26.5%</strong> 第一（连续 4 年）</td>
+<td>IDC 报告</td>
+<td>高</td>
+</tr>
+<tr>
+<td>隐私计算份额</td>
+<td><strong>36.7%</strong> 第一（连续 3 年）</td>
+<td>IDC 报告</td>
+<td>高</td>
+</tr>
+<tr>
+<td>零售信贷风控份额</td>
+<td><strong>15.7%</strong> 第一</td>
+<td>IDC 2025-05</td>
+<td>高</td>
+</tr>
+<tr>
+<td>推算估值区间</td>
+<td><strong>80-2,000 亿</strong>元</td>
+<td>多口径交叉（详见终章）</td>
+<td>低</td>
+</tr>
+</tbody>
+</table></div>
+<p>25 倍的估值跨度不是数据问题——这是"未上市分拆型科技子公司"这一物种本身的估值困境。终章会详细解释为什么。</p>
+<hr />
+<h2 id="_10">与蚂蚁集团其他板块的关系</h2>
+<p>最后补一张关系图，防止后续阅读中混淆：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>板块</th>
+<th>与蚂蚁数科的关系</th>
+<th>常见混淆</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蚂蚁集团本体（支付宝）</td>
+<td>母公司，100% 控股蚂蚁数科；蚂蚁数科的关联交易大客户</td>
+<td>蚂蚁数科 ≠ 支付宝</td>
+</tr>
+<tr>
+<td>蚂蚁国际</td>
+<td>平行兄弟公司，做跨境支付，2026 年可能先行港股 IPO</td>
+<td>蚂蚁国际的跨境支付 ≠ 蚂蚁数科的 Web3</td>
+</tr>
+<tr>
+<td>OceanBase</td>
+<td>平行兄弟公司，做分布式数据库</td>
+<td>OceanBase 的数据库成绩 ≠ 蚂蚁数科的成绩</td>
+</tr>
+<tr>
+<td>百灵基模团队</td>
+<td>属于蚂蚁集团（非数科），为数科提供大模型底座</td>
+<td>百灵大模型 ≠ 蚂蚁数科自研</td>
+</tr>
+<tr>
+<td>阿里云通义</td>
+<td>曾同属阿里系但独立运营，在金融客户处存在竞争</td>
+<td>通义千问 ≠ 蚂蚁百灵</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_11">下期预告</h2>
+<p>55 亿营收里，哪条线是压舱石、哪条线是增长引擎、哪条线是期权？<strong>600 亿元</strong>新能源资产上链计划到底是什么？1.3 万客户里有多少是真正的付费客户？</p>
+<p>下一篇，五条产品线逐一过堂。</p>
+<hr />
+<p><em>本文是《看懂蚂蚁数科》系列第 01 篇。后续 3 篇将陆续推出。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/a4b607ef8ab2.html">《看懂蚂蚁数科》系列说明</a><div class="meta">2026-07-13 · 底稿</div></li><li><a href="../r/4fd49db56b96.html">估值迷雾与三重不确定性</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/c26d0abf0436.html">小赛道的龙头，大赛道的追赶者</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/fd0499790777.html">一台金融科技的瑞士军刀</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/e21f53620456.html">蚂蚁数科（Ant Digital Technologies）5年估值预测（2026-2031）</a><div class="meta">2026-05-15 · 估值仓位</div></li><li><a href="../r/b58abd71a910.html">蚂蚁数科竞争全景研究报告</a><div class="meta">2026-05-12 · 研究</div></li><li><a href="../r/b97fb6c3e1d9.html">蚂蚁数科（Ant Digital Technologies）未上市公司深度研究报告</a><div class="meta">2026-05-11 · 研究</div></li><li><a href="../r/ff45906737fd.html">蚂蚁数科投资研究最终报告</a><div class="meta">2026-05-08 · 研究</div></li><li><a href="../r/590bd8094fa5.html">蚂蚁数科风险与管理层评估</a><div class="meta">2026-05-08 · 组织管理</div></li><li><a href="../r/05dbfa24d3bb.html">蚂蚁数科行业与竞争格局分析</a><div class="meta">2026-05-08 · 研究</div></li><li><a href="../r/e987c19e90c4.html">蚂蚁数科财务与估值深度分析</a><div class="meta">2026-05-08 · 估值仓位</div></li><li><a href="../r/fcb50356ab0d.html">蚂蚁数科商业模式深度分析</a><div class="meta">2026-05-08 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

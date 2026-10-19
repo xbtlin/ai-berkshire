@@ -1,0 +1,551 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>烧钱、估值与生死判断 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/生数科技/index.html">生数科技</a></div><h1>烧钱、估值与生死判断</h1><div class="meta"><a href="../companies/生数科技/index.html">生数科技</a> ｜ 2026-07-13 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%94%9F%E6%95%B0%E7%A7%91%E6%8A%80/%E3%80%8A%E7%9C%8B%E6%87%82%E7%94%9F%E6%95%B0%E7%A7%91%E6%8A%80%E3%80%8B/04-%E7%BB%88%E7%AF%87-%E7%83%A7%E9%92%B1%E4%BC%B0%E5%80%BC%E4%B8%8E%E7%94%9F%E6%AD%BB%E5%88%A4%E6%96%AD.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#ai">先回答一个根本问题：AI视频生成能赚钱吗？</a></li>
+<li><a href="#_1">行业经济学：推理成本是生死线</a><ul>
+<li><a href="#_2">生数科技的成本困境</a></li>
+</ul>
+</li>
+<li><a href="#20">估值拆解：20亿美元贵不贵？</a><ul>
+<li><a href="#_3">硬数据</a></li>
+<li><a href="#_4">同行对比</a></li>
+</ul>
+</li>
+<li><a href="#20_1">反向推算：20亿美元隐含了什么预期？</a></li>
+<li><a href="#_5">三种情景估值</a></li>
+<li><a href="#ipo">IPO定价猜想</a><ul>
+<li><a href="#ai_1">港股对AI公司的态度</a></li>
+</ul>
+</li>
+<li><a href="#_6">风险清单：什么能杀死这家公司</a></li>
+<li><a href="#_7">什么信号值得关注</a><ul>
+<li><a href="#_8">积极信号（加分）</a></li>
+<li><a href="#_9">危险信号（减分）</a></li>
+</ul>
+</li>
+<li><a href="#_10">终极判断：不同身份的人应该怎么看</a></li>
+<li><a href="#_11">总结：生数科技的三层真相</a></li>
+<li><a href="#_12">系列回顾</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂生数科技》系列 · 第 04 篇 · 终篇
+阅读时间约 16 分钟</p>
+</blockquote>
+<hr />
+<h2 id="ai">先回答一个根本问题：AI视频生成能赚钱吗？</h2>
+<p>在讨论生数科技值多少钱之前，必须先回答一个行业级问题：<strong>AI视频生成这门生意，到底能不能赚钱？</strong></p>
+<p>Sora的数据给了一个令人不安的答案：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>Sora的数据</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>日均推理成本</td>
+<td><strong>1500万美元</strong></td>
+<td>Forbes、Cantor Fitzgerald</td>
+</tr>
+<tr>
+<td>总生命周期收入</td>
+<td><strong>210万美元</strong></td>
+<td>媒体报道</td>
+</tr>
+<tr>
+<td>单条10秒视频成本</td>
+<td>约<strong>1.30美元</strong></td>
+<td>分析师估算</td>
+</tr>
+<tr>
+<td>用户留存</td>
+<td>60天后趋近于<strong>零</strong></td>
+<td>第三方数据</td>
+</tr>
+<tr>
+<td>结局</td>
+<td>2026年4月26日<strong>停服</strong></td>
+<td>OpenAI公告</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一天烧的钱比一辈子赚的钱还多。</strong> 这是AI视频生成赛道迄今为止最昂贵的失败。</p>
+<p>但Sora的失败不等于整个赛道不行。它失败的原因有其特殊性：</p>
+<ol>
+<li><strong>定价过高</strong>：Sora绑定ChatGPT Plus订阅（$20/月），没有独立的灵活定价</li>
+<li><strong>产品体验差</strong>：生成速度慢、成功率低、画面一致性差</li>
+<li><strong>战略错配</strong>：OpenAI的核心是ChatGPT，Sora只是副产品，没有得到足够的产品化投入</li>
+<li><strong>推理成本失控</strong>：没有针对视频推理做充分的成本优化</li>
+</ol>
+<p><strong>反方观点</strong>：可灵证明了AI视频生成可以有收入——ARR已达5亿美元。但可灵的盈利能力同样未知，5亿收入不等于能赚钱，毛利率可能为负。整个行业800多家公司，商业闭环不足两成。</p>
+<hr />
+<h2 id="_1">行业经济学：推理成本是生死线</h2>
+<p>AI视频生成的成本结构和传统SaaS完全不同：</p>
+<pre><code>           传统SaaS成本结构              AI视频生成成本结构
+
+        ┌──────────────────┐         ┌──────────────────┐
+        │   固定成本(低)    │         │  模型训练(极高)    │
+        │  服务器、带宽     │         │  GPU集群、数据     │
+        ├──────────────────┤         ├──────────────────┤
+        │  边际成本(极低)   │         │  推理成本(高)      │
+        │  每新增用户≈0     │         │  每生成1秒视频     │
+        │                  │         │  都要消耗GPU算力   │
+        └──────────────────┘         └──────────────────┘
+
+        毛利率：70-80%                毛利率：可能为负
+</code></pre>
+<p>传统SaaS的魅力在于边际成本趋近于零——多一个用户几乎不增加成本。但AI视频生成<strong>每生成一段视频都要消耗大量GPU算力</strong>，边际成本居高不下。</p>
+<p>这意味着：<strong>用户越多，亏得越多</strong>——除非单位推理成本能降到用户付费能覆盖的水平。</p>
+<h3 id="_2">生数科技的成本困境</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>情况</th>
+<th>风险等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU来源</td>
+<td>外采为主（无自有大规模GPU集群）</td>
+<td>高</td>
+</tr>
+<tr>
+<td>华为昇腾适配</td>
+<td>已部分迁移至昇腾950PR</td>
+<td>中（缓解了部分芯片断供风险）</td>
+</tr>
+<tr>
+<td>API定价</td>
+<td>$0.0375/秒（比行业均价低55%）</td>
+<td>高（低价意味着毛利率更低）</td>
+</tr>
+<tr>
+<td>推理成本趋势</td>
+<td>硬件进步+算法优化将持续降低</td>
+<td>利好（但降速未知）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>生数科技大概率当前处于毛利率为负的阶段。</strong> 这在高速增长的创业公司中很常见，但关键问题是：<strong>它有多少时间和资金等到推理成本降到盈亏平衡点？</strong></p>
+<p>累计融资30亿元人民币，如果月烧钱速度在1-3亿元级别（参考同类AI创业公司），现金跑道约10-30个月。<strong>这就是为什么两个月内连融26亿——不是太抢手，是真的需要钱。</strong></p>
+<hr />
+<h2 id="20">估值拆解：20亿美元贵不贵？</h2>
+<h3 id="_3">硬数据</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B轮投后估值</td>
+<td>超<strong>20亿美元</strong>（约140亿元）</td>
+<td>2026年4月，Bloomberg等多源验证</td>
+</tr>
+<tr>
+<td>已知ARR</td>
+<td><strong>2000万美元</strong></td>
+<td>2025年初数据，Pandaily、量子位</td>
+</tr>
+<tr>
+<td>基于已知ARR的PS</td>
+<td><strong>100倍</strong></td>
+<td>20亿/0.2亿</td>
+</tr>
+<tr>
+<td>假设2025年底ARR达2亿美元的PS</td>
+<td><strong>10倍</strong></td>
+<td>基于"10倍增长"推算，但未经审计</td>
+</tr>
+<tr>
+<td>天使轮估值</td>
+<td>1亿美元</td>
+<td>2023年6月</td>
+</tr>
+<tr>
+<td>3年估值增长</td>
+<td><strong>20倍</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_4">同行对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>估值</th>
+<th>ARR</th>
+<th>PS倍数</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>生数科技</strong></td>
+<td>20亿美元</td>
+<td>2000万美元</td>
+<td><strong>100倍</strong></td>
+<td>技术排名第二，但收入最少</td>
+</tr>
+<tr>
+<td><strong>可灵</strong></td>
+<td>200亿美元</td>
+<td>5亿美元</td>
+<td><strong>40倍</strong></td>
+<td>收入最高，快手生态加持</td>
+</tr>
+<tr>
+<td><strong>Pika Labs</strong></td>
+<td>9-15亿美元</td>
+<td>约1.3亿美元（2026年预计）</td>
+<td><strong>7-12倍</strong></td>
+<td>同为独立创业公司，ARR远高于Vidu</td>
+</tr>
+<tr>
+<td><strong>Runway</strong></td>
+<td>53亿美元</td>
+<td>未公开</td>
+<td>未知</td>
+<td>海外创作者首选之一</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键发现</strong>：</p>
+<ol>
+<li><strong>基于2025年初ARR，PS 100倍在同行中最高</strong>——这个价格定入了大量乐观预期</li>
+<li><strong>如果2025年底ARR确实达到2亿美元，PS降至10倍</strong>——低于可灵的40倍，看起来合理。但"2亿美元"是基于公司自行披露的"10倍增长"推算，没有审计数据</li>
+<li><strong>Pika Labs的ARR已经是Vidu的6.5倍，但估值只有Vidu的一半到同等水平</strong>——这说明市场对Vidu的估值中包含了技术溢价和中国市场溢价</li>
+</ol>
+<hr />
+<h2 id="20_1">反向推算：20亿美元隐含了什么预期？</h2>
+<p>用反向DCF（贴现现金流）思路看，20亿美元的估值需要什么条件来支撑：</p>
+<p><strong>假设条件</strong>：
+- VC要求年化回报率<strong>20%</strong>
+- 5年后以<strong>15倍PS</strong>退出</p>
+<p><strong>则5年后需要的ARR</strong> = 20亿 x (1.2^5) / 15 = 约<strong>3.3亿美元</strong></p>
+<p>从2000万美元增长到3.3亿美元，5年需要增长<strong>16.5倍</strong>，对应年复合增长率约<strong>75%</strong>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>假设</th>
+<th>5年后ARR</th>
+<th>达成难度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>年增100%+</td>
+<td>5亿+美元</td>
+<td>需要连续5年翻倍，可灵当前水平</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>年增50%</td>
+<td>约1.5亿美元</td>
+<td>增速逐年放缓，未达退出估值要求</td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>年增20%</td>
+<td>约5000万美元</td>
+<td>大厂挤压+商业化不力</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论：20亿美元的估值需要年增75%持续5年才能给VC赚到合理回报。这不是不可能，但在大厂夹缝中实现这个增速，挑战巨大。</strong></p>
+<hr />
+<h2 id="_5">三种情景估值</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>2028年ARR假设</th>
+<th>PS倍数</th>
+<th>对应估值</th>
+<th>vs当前估值</th>
+<th>概率判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>乐观</strong></td>
+<td>5亿美元</td>
+<td>20倍</td>
+<td>100亿美元</td>
+<td>+400%</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>2亿美元</td>
+<td>12倍</td>
+<td>24亿美元</td>
+<td>+20%</td>
+<td>50%</td>
+</tr>
+<tr>
+<td><strong>悲观</strong></td>
+<td>5000万美元</td>
+<td>5倍</td>
+<td>2.5亿美元</td>
+<td>-87.5%</td>
+<td>30%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>几个关键点</strong>：</p>
+<ol>
+<li><strong>乐观情景（+400%）</strong> 需要：AI视频市场爆发 + Vidu保持技术前二 + B端大客户规模化 + 成功IPO</li>
+<li><strong>中性情景（+20%）</strong> 意味着：当前估值基本合理，没什么安全边际</li>
+<li><strong>悲观情景（-87.5%）</strong> 的触发条件：大厂价格战 + 开源追平闭源 + 商业化持续不力</li>
+</ol>
+<p><strong>30%的概率亏损87.5%</strong> —— 这个风险回报结构说明：20亿美元的定价对普通投资者来说<strong>没有足够的安全边际</strong>。</p>
+<hr />
+<h2 id="ipo">IPO定价猜想</h2>
+<p>生数科技2026年3月已完成股改，港股IPO可能在2026下半年到2027年之间启动。</p>
+<h3 id="ai_1">港股对AI公司的态度</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>参考案例</th>
+<th>IPO前估值</th>
+<th>IPO后表现</th>
+<th>启示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MiniMax</td>
+<td>约100亿美元</td>
+<td>需观察</td>
+<td>港股对AI公司估值偏保守</td>
+</tr>
+<tr>
+<td>商汤科技</td>
+<td>IPO市值约1400亿港元</td>
+<td>上市后市值大幅缩水</td>
+<td>港股不吃"纯技术故事"</td>
+</tr>
+<tr>
+<td>快手</td>
+<td>IPO时期市值曾超万亿港元</td>
+<td>随后腰斩再腰斩</td>
+<td>二级市场的估值逻辑与一级市场完全不同</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>港股投资者更看重盈利能力和现金流，而非技术故事。</strong> 生数科技如果以20亿美元+的估值IPO，需要展示出清晰的商业化路径和经审计的财务数据。</p>
+<p><strong>可能的IPO定价区间</strong>（纯推测）：
+- 如果2026下半年IPO：可能围绕B轮估值（20亿美元）上下波动，取决于当时的市场情绪
+- 如果2027年IPO：取决于届时的ARR水平。如果ARR达到3-5亿美元，估值有可能上行；如果ARR停滞，可能面临估值折让</p>
+<hr />
+<h2 id="_6">风险清单：什么能杀死这家公司</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>风险</th>
+<th>概率</th>
+<th>影响</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>大厂碾压</strong></td>
+<td>高</td>
+<td>致命</td>
+<td>可灵ARR是Vidu的25倍，字节资本开支2000亿。大厂可以长期亏钱抢市场</td>
+</tr>
+<tr>
+<td><strong>商业化不及预期</strong></td>
+<td>中高</td>
+<td>严重</td>
+<td>行业80%+公司未实现商业闭环，Sora的教训就在眼前</td>
+</tr>
+<tr>
+<td><strong>开源模型侵蚀定价</strong></td>
+<td>中</td>
+<td>严重</td>
+<td>阿里Wan 2.2、腾讯HunyuanVideo等开源模型快速接近闭源质量，API定价空间被压缩</td>
+</tr>
+<tr>
+<td><strong>IPO失败或估值缩水</strong></td>
+<td>中</td>
+<td>严重</td>
+<td>港股对AI公司估值偏保守，一级市场的20亿美元不等于二级市场认可</td>
+</tr>
+<tr>
+<td><strong>烧钱耗尽现金</strong></td>
+<td>中</td>
+<td>致命</td>
+<td>推理成本高企+低价策略，现金消耗速度可能快于融资速度</td>
+</tr>
+<tr>
+<td><strong>芯片断供</strong></td>
+<td>中</td>
+<td>中等</td>
+<td>华为昇腾部分缓解，但训练端仍有差距</td>
+</tr>
+<tr>
+<td><strong>核心人才流失</strong></td>
+<td>低</td>
+<td>中等</td>
+<td>朱军保持清华教职（精力分散），骆怡航刚空降（磨合风险）</td>
+</tr>
+<tr>
+<td><strong>地缘政治</strong></td>
+<td>低</td>
+<td>严重</td>
+<td>Vidu海外收入占比高，TikTok式限制可能影响海外业务</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>最大的风险不是某一项，而是多项风险同时发生的可能性。</strong> 大厂碾压 + 商业化不力 + 开源追平 三者叠加的概率不低，一旦同时发生，结果是毁灭性的。</p>
+<hr />
+<h2 id="_7">什么信号值得关注</h2>
+<p>不管你是一级市场投资者、准备打新的散户、还是纯粹对AI赛道感兴趣的观察者，以下信号值得持续跟踪：</p>
+<h3 id="_8">积极信号（加分）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>信号</th>
+<th>为什么重要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经审计ARR确认超<strong>2亿美元</strong>且增速维持100%+</td>
+<td>验证收入增长的真实性</td>
+</tr>
+<tr>
+<td>在阿里云生态内实现规模化B端收入</td>
+<td>证明B端路径可行</td>
+</tr>
+<tr>
+<td>推理成本公开数据显示毛利率转正</td>
+<td>证明商业模式可持续</td>
+</tr>
+<tr>
+<td>成功IPO且估值合理（PS 15-20倍）</td>
+<td>二级市场认可</td>
+</tr>
+<tr>
+<td>Vidu下一代模型继续保持全球前二</td>
+<td>技术壁垒未被追平</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_9">危险信号（减分）</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>信号</th>
+<th>为什么危险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>连续两个季度收入增速低于<strong>50%</strong></td>
+<td>增长引擎熄火</td>
+</tr>
+<tr>
+<td>可灵或即梦推出大规模价格战</td>
+<td>独立公司无法承受</td>
+</tr>
+<tr>
+<td>核心管理层（朱军/鲍凡/骆怡航）离职</td>
+<td>人才引力场消失</td>
+</tr>
+<tr>
+<td>IPO持续延期</td>
+<td>可能说明财务数据不够好看</td>
+</tr>
+<tr>
+<td>又一轮融资但估值持平或下降</td>
+<td>一级市场信心动摇</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_10">终极判断：不同身份的人应该怎么看</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>身份</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>一级市场投资者</strong></td>
+<td><strong>谨慎。</strong> 20亿美元定价了大量乐观预期，安全边际有限。如果能拿到10亿美元以下的二手份额，值得考虑</td>
+</tr>
+<tr>
+<td><strong>港股IPO打新者</strong></td>
+<td><strong>关注但不追高。</strong> 港股对AI公司估值偏保守，IPO价格可能比B轮有折让。等经审计财报出来再决定</td>
+</tr>
+<tr>
+<td><strong>已持有的早期投资者</strong></td>
+<td><strong>准备部分退出。</strong> 天使/Pre-A轮已获20倍+回报，IPO是合理的退出窗口。建议锁定50%+利润</td>
+</tr>
+<tr>
+<td><strong>行业观察者</strong></td>
+<td><strong>值得持续关注。</strong> 不管生数科技本身结果如何，它是理解"独立AI创业公司能否生存"的最佳样本</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_11">总结：生数科技的三层真相</h2>
+<p>看完整个系列，生数科技的画像可以用三层来概括：</p>
+<p><strong>第一层（最确定）：技术很强。</strong> U-ViT原创架构、Vidu Q3全球评测前二、清华顶级团队——这些都是经过第三方验证的事实。</p>
+<p><strong>第二层（有分歧）：商业化很难。</strong> ARR只有2000万美元、面对25倍收入差距的可灵和无限弹药的即梦、行业80%公司亏损——技术领先能否转化为商业成功，目前没有答案。</p>
+<p><strong>第三层（最不确定）：估值很贵。</strong> PS 100倍（基于已知ARR）定价了大量乐观预期，安全边际不足。除非2025年底ARR确实达到2亿美元（PS降至10倍），否则当前估值对投资者不友好。</p>
+<p><strong>一句话总结</strong>：</p>
+<blockquote>
+<p><strong>生数科技是一家拥有全球前二技术的AI视频生成创业公司，面对的核心问题不是"技术够不够强"，而是"在大厂碾压和烧钱竞赛中，独立创业公司能不能活到盈利那一天"。</strong></p>
+</blockquote>
+<p>这个问题没有标准答案。答案取决于AI视频市场的增长速度、推理成本的下降曲线、阿里云生态的协同深度、以及骆怡航能否在12个月内把商业化做起来。</p>
+<hr />
+<h2 id="_12">系列回顾</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>篇章</th>
+<th>核心结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第01篇</td>
+<td>成立3年估值20亿美元，技术全球前二，但竞争环境极其残酷</td>
+</tr>
+<tr>
+<td>第02篇</td>
+<td>技术是最强护城河，但也是最脆弱的——保鲜期6-12个月，其余四项护城河均弱</td>
+</tr>
+<tr>
+<td>第03篇</td>
+<td>可灵收入25倍领先、字节资本开支量级碾压，独立公司的生存空间在B端</td>
+</tr>
+<tr>
+<td>第04篇</td>
+<td>PS 100倍定价过高，安全边际不足；核心赌注是"能不能活到盈利"</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<p><em>本文是《看懂生数科技》系列第 04 篇（终篇）。</em>
+<em>本系列不构成任何投资建议。生数科技为未上市公司，所有财务数据均未经审计，投资风险极高。作者可能持有或不持有文中提及公司的相关头寸。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/e8472d0d77d6.html">三国杀：可灵、即梦、Vidu</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/93a03b092120.html">技术很强，但技术不是护城河</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/ace3a4a4b62e.html">一家成立三年的AI视频公司</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/cd37d14bb76c.html">《看懂生数科技》系列说明</a><div class="meta">2026-05-21 · 底稿</div></li><li><a href="../r/8d7aea625f8e.html">生数科技（Shengshu Technology）投资研究报告</a><div class="meta">2026-05-16 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

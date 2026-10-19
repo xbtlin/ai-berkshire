@@ -1,0 +1,409 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>估值迷局 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/平安集团/index.html">平安集团</a></div><h1>估值迷局</h1><div class="meta"><a href="../companies/平安集团/index.html">平安集团</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%B9%B3%E5%AE%89%E9%9B%86%E5%9B%A2/%E3%80%8A%E7%9C%8B%E6%87%82%E5%B9%B3%E5%AE%89%E9%9B%86%E5%9B%A2%E3%80%8B/03-%E4%BC%B0%E5%80%BC%E8%BF%B7%E5%B1%80.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#065-pev">0.65 倍 PEV 意味着什么？</a></li>
+<li><a href="#_1">市场在担心什么？——拆解估值折价</a><ul>
+<li><a href="#_2">第一层：利率下行折价</a></li>
+<li><a href="#_3">第二层：综合金融折价</a></li>
+<li><a href="#_4">第三层：信心折价</a></li>
+</ul>
+</li>
+<li><a href="#_5">分部估值：把平安拆开来算</a><ul>
+<li><a href="#ev">方法一：寿险 EV + 其他业务</a></li>
+<li><a href="#pev-nbv">方法二：P/EV + NBV 增长</a></li>
+<li><a href="#_6">方法三：股息率隐含估值</a></li>
+</ul>
+</li>
+<li><a href="#_7">券商怎么看？</a></li>
+<li><a href="#_8">市场分歧的本质</a></li>
+<li><a href="#vs">一个容易被忽略的角度：平安 vs "存银行"</a></li>
+<li><a href="#_9">本篇结论</a></li>
+<li><a href="#_10">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂平安集团》系列 · 第 03 篇
+阅读时间约 15 分钟</p>
+</blockquote>
+<hr />
+<h2 id="065-pev">0.65 倍 PEV 意味着什么？</h2>
+<p>1.5 万亿的内含价值，市场只愿意给 1 万亿——打了六五折。这不是一个"便宜"的标签，而是一个等待被解释的问题：<strong>市场在给什么打折？</strong></p>
+<p>平安当前 A 股 PEV 约 <strong>0.65 倍</strong>，H 股更低，约 <strong>0.58 倍</strong>。折价不是随机噪音，它由三层逻辑叠加而成，每一层都有真实的基本面支撑。</p>
+<p>历史上，平安 A 股 PEV 的波动区间：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>PEV 区间</th>
+<th>历史上对应什么时候</th>
+<th>事后看是什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.5-2.0 倍</td>
+<td>2017-2018 年</td>
+<td>市场过度乐观</td>
+</tr>
+<tr>
+<td>1.0-1.5 倍</td>
+<td>2019-2020 年</td>
+<td>合理偏高</td>
+</tr>
+<tr>
+<td>0.8-1.0 倍</td>
+<td>2023 年</td>
+<td>合理区间</td>
+</tr>
+<tr>
+<td>0.6-0.8 倍</td>
+<td>2022 年、2024-2026 年</td>
+<td>历史大底区域</td>
+</tr>
+<tr>
+<td>0.6 倍以下</td>
+<td>2022 年 10 月极端低点</td>
+<td>恐慌性低估</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>0.65 倍 PEV 处于历史上非常低的位置。</strong> 但"历史低位"不等于"必然反弹"——如果基本面在恶化，低估值可能维持很长时间（日本保险股就是前车之鉴）。</p>
+<p>关键问题变成了：<strong>市场在给什么打折？</strong></p>
+<hr />
+<h2 id="_1">市场在担心什么？——拆解估值折价</h2>
+<p>平安的 PEV 折价来自三层：</p>
+<h3 id="_2">第一层：利率下行折价</h3>
+<p>这是最核心的折价因素。</p>
+<p>中国 10 年期国债收益率从 2018 年的 <strong>3.6%</strong> 降至 2026 年的约 <strong>1.7%</strong>。对保险公司意味着：</p>
+<ol>
+<li><strong>新增固收资产收益率持续下降：</strong> 平安 6.49 万亿保险资金中，大部分配置在债券和定存。老资产到期后，新资产的收益率越来越低。</li>
+<li><strong>净投资收益率承压：</strong> 2025 年净投资收益率 <strong>3.8%</strong>，同比下降 0.4 个百分点。近 10 年平均 <strong>4.8%</strong>。</li>
+<li><strong>利差损风险：</strong> 如果投资收益率长期低于保单的预定利率，保险公司就在"赔钱卖保险"。</li>
+</ol>
+<p><strong>平安管理层的说法：</strong> "无论新单还是存量业务均不存在利差损问题。" 他们的依据是已将产品结构转向分红险（保底利率低至 <strong>1.25%-1.75%</strong>），死差益和费差益占比提高，降低了对利差的依赖。</p>
+<p><strong>市场的疑虑：</strong> 管理层说没有利差损，但市场不信。当前 PEV 0.65 倍隐含的投资收益率假设仅约 <strong>1.3%-1.7%</strong>——也就是说，市场在定价时假设平安未来只能赚到 1.7% 的投资收益率。2025 年实际综合投资收益率是 <strong>6.3%</strong>。</p>
+<p><strong>如果你相信平安能长期做到 4% 以上的投资收益率，那 0.65 倍 PEV 就是明显低估。如果你认为利率会像日本那样长期趋近零，那当前估值可能仍不够便宜。</strong></p>
+<p>数据来源：东吴证券深度研报、兴业证券点评、界面新闻</p>
+<h3 id="_3">第二层：综合金融折价</h3>
+<p>纯寿险公司（如友邦保险）的 PEV 通常高于综合金融集团。原因是：</p>
+<ol>
+<li><strong>业务复杂性：</strong> 综合金融集团的估值更难算，市场倾向于给"看不懂"的东西打折</li>
+<li><strong>银行拖累：</strong> 平安银行利润占比约 18%，但银行 PB 仅 0.5-0.7 倍，拉低整体估值</li>
+<li><strong>科技/资管亏损：</strong> 资管板块亏损、科技板块微利，都是"估值负担"</li>
+</ol>
+<p><strong>对比友邦：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>友邦保险</th>
+<th>中国平安</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PEV</td>
+<td><strong>1.12 倍</strong></td>
+<td><strong>0.65 倍</strong></td>
+</tr>
+<tr>
+<td>业务结构</td>
+<td>纯寿险</td>
+<td>寿险 + 财险 + 银行 + 科技</td>
+</tr>
+<tr>
+<td>市场定位</td>
+<td>高端</td>
+<td>全客群</td>
+</tr>
+<tr>
+<td>管理层透明度</td>
+<td>高</td>
+<td>中</td>
+</tr>
+<tr>
+<td>利率敏感度</td>
+<td>中（多市场分散）</td>
+<td>高（集中在中国市场）</td>
+</tr>
+<tr>
+<td>地产风险</td>
+<td>无</td>
+<td>有（虽在压降）</td>
+</tr>
+</tbody>
+</table></div>
+<p>友邦 PEV 是平安的 <strong>1.7 倍</strong>。这个差距里，大约 30%-40% 是合理的（综合金融折价+中国利率风险），但剩下的 60%-70% 可能是过度悲观。</p>
+<p><strong>反方观点：</strong> 友邦是亚太多市场经营，利率风险天然分散；平安集中在中国市场，利率风险集中度高。而且友邦没有银行包袱、没有华夏幸福历史、代理人团队质量更高。1.7 倍的差距可能并不是"过度悲观"，而是"合理定价"。</p>
+<p>数据来源：东方财富网、东方财富研报</p>
+<h3 id="_4">第三层：信心折价</h3>
+<p>这一层最不可量化，但可能最重要。</p>
+<ul>
+<li><strong>华夏幸福的"伤疤"：</strong> 540 亿暴雷已过去 4 年，但投资者的信任一旦受损，恢复需要很长时间</li>
+<li><strong>马明哲的年龄：</strong> 68 岁，接班人安排市场认为不够清晰</li>
+<li><strong>保险行业的"不性感"：</strong> 在 AI、新能源、半导体当道的时代，保险股天然吸引不了增量资金</li>
+<li><strong>AH 价差的锁定效应：</strong> A 股和 H 股价差不大（约 5%-10%），但港股流动性更差，压制整体估值</li>
+</ul>
+<hr />
+<h2 id="_5">分部估值：把平安拆开来算</h2>
+<p>既然市场给综合金融"打折"，我们就把平安拆成几块分别估值。</p>
+<h3 id="ev">方法一：寿险 EV + 其他业务</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>分部</th>
+<th>估值方法</th>
+<th>估值（亿元）</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寿险及健康险</td>
+<td>0.8 倍寿险 EV</td>
+<td>9,286 × 0.8 = <strong>7,429</strong></td>
+<td>保守给 0.8 倍（友邦 1.12 倍）</td>
+</tr>
+<tr>
+<td>财险</td>
+<td>15 倍净利润（估计 200 亿）</td>
+<td><strong>3,000</strong></td>
+<td>财险 COR 优秀，参考行业水平</td>
+</tr>
+<tr>
+<td>平安银行</td>
+<td>0.6 倍 PB（净资产约 4,600 亿）</td>
+<td><strong>2,760</strong></td>
+<td>银行股当前估值中枢</td>
+</tr>
+<tr>
+<td>科技/资管/其他</td>
+<td>净资产法</td>
+<td><strong>500</strong>（估计）</td>
+<td>保守估值</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td></td>
+<td><strong>~13,689</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>减：</strong> 控股公司折价 10%</td>
+<td></td>
+<td><strong>-1,369</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>分部估值合计</strong></td>
+<td></td>
+<td><strong>~12,320</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>当前市值</td>
+<td></td>
+<td>~<strong>10,500</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>低估幅度</strong></td>
+<td></td>
+<td><strong>~17%</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="pev-nbv">方法二：P/EV + NBV 增长</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>假设</th>
+<th>合理 PEV</th>
+<th>目标市值（亿元）</th>
+<th>对应 A 股股价</th>
+<th>当前价格 58 元的空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>NBV 持续高增 + 利率企稳</td>
+<td>1.0 倍</td>
+<td>~15,500</td>
+<td>~<strong>86 元</strong></td>
+<td>+48%</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>NBV 温和增长 + 投资收益率维持</td>
+<td>0.8 倍</td>
+<td>~12,400</td>
+<td>~<strong>69 元</strong></td>
+<td>+19%</td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>利率大幅下行 + NBV 增速放缓</td>
+<td>0.55 倍</td>
+<td>~8,500</td>
+<td>~<strong>47 元</strong></td>
+<td>-19%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_6">方法三：股息率隐含估值</h3>
+<p>如果把平安当作一只"高息股"来定价：</p>
+<ul>
+<li>2025 年每股股息：<strong>2.70 元</strong></li>
+<li>如果市场要求 <strong>5%</strong> 股息率：对应股价 <strong>54 元</strong>（接近当前价格）</li>
+<li>如果市场接受 <strong>4%</strong> 股息率：对应股价 <strong>67.5 元</strong>（+16%）</li>
+<li>如果市场接受 <strong>3.5%</strong> 股息率：对应股价 <strong>77 元</strong>（+33%）</li>
+</ul>
+<p>考虑到平安分红连续 14 年增长，假设未来每年分红增速 <strong>5%</strong>，三年后每股股息可达约 <strong>3.12 元</strong>。以 4% 股息率计算，三年后对应 <strong>78 元</strong>。加上三年累计分红约 <strong>8.5 元</strong>，总回报约 <strong>49%</strong>。</p>
+<p><strong>这个计算的关键前提是：分红能持续增长。</strong> 如果利率下行导致利润持续下滑，分红增长可能中断。</p>
+<hr />
+<h2 id="_7">券商怎么看？</h2>
+<p>截至 2026 年 5 月，卖方分析师对平安的共识如下：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>来源</th>
+<th>目标价（A 股）</th>
+<th>评级</th>
+<th>PEV 假设</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12 个月平均目标价</td>
+<td><strong>78.19 元</strong></td>
+<td>买入</td>
+<td>~0.9 倍</td>
+</tr>
+<tr>
+<td>最高目标价</td>
+<td><strong>89.8 元</strong></td>
+<td>—</td>
+<td>~1.0 倍</td>
+</tr>
+<tr>
+<td>最低目标价</td>
+<td><strong>68 元</strong></td>
+<td>—</td>
+<td>~0.8 倍</td>
+</tr>
+<tr>
+<td>当前股价</td>
+<td><strong>~58 元</strong></td>
+<td>—</td>
+<td>~0.65 倍</td>
+</tr>
+</tbody>
+</table></div>
+<p>数据来源：Investing.com、同花顺</p>
+<p><strong>17 位分析师全部给出"买入"评级</strong>，平均目标价比当前价格高 <strong>35%</strong>。</p>
+<p>这看起来很乐观。但需要注意：卖方分析师对保险股的目标价历史上经常"偏高"——2022-2023 年，几乎所有分析师都给平安"买入"评级，但股价从 60 元跌到 36 元。<strong>卖方共识的方向可以参考，幅度不能当真。</strong></p>
+<hr />
+<h2 id="_8">市场分歧的本质</h2>
+<p>把上面所有分析汇总，市场对平安的分歧本质上是一个问题：</p>
+<blockquote>
+<p><strong>中国的利率环境会"日本化"吗？</strong></p>
+</blockquote>
+<p><strong>如果不会（利率在 2%-3% 企稳）：</strong>
+- 平安的投资收益率能维持 4% 以上
+- EV 假设（4.0%-4.5%）是保守的，真实 EV 被低估
+- 0.65 倍 PEV 严重低估，合理 PEV 应在 0.8-1.0 倍
+- 加上 4.8% 股息率和 NBV 增长，年化回报可达 <strong>15%-20%</strong></p>
+<p><strong>如果会（利率趋近 0-1%）：</strong>
+- 平安的投资收益率可能跌到 2%-3%
+- EV 中的投资回报假设（4.0%）可能过高，真实 EV 需要打折 20%-30%
+- 存量保单利差损问题可能从"不存在"变成"确实存在"
+- 0.65 倍 PEV 可能并不便宜，日本保险股长期在 0.3-0.5 倍 PEV 交易</p>
+<p><strong>这是一个宏观问题，不是一个公司问题。</strong> 如果你对中国宏观经济有信心（GDP 增速维持 4%-5%、通胀回到 2% 左右），平安大概率是低估的。如果你认为中国正在走日本的老路，那所有中国保险股都不应该买，不只是平安。</p>
+<hr />
+<h2 id="vs">一个容易被忽略的角度：平安 vs "存银行"</h2>
+<p>在当前利率环境下，很多保守型投资者的替代选择是：把钱存银行或者买国债。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>选择</th>
+<th>年化回报</th>
+<th>风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>银行定存（3 年）</td>
+<td><strong>~2.0%</strong></td>
+<td>几乎无风险</td>
+</tr>
+<tr>
+<td>10 年国债</td>
+<td><strong>~1.7%</strong></td>
+<td>几乎无风险</td>
+</tr>
+<tr>
+<td>中国平安（股息）</td>
+<td><strong>~4.8%</strong></td>
+<td>股价波动 + 分红可能下调</td>
+</tr>
+<tr>
+<td>中国平安（股息 + 估值修复）</td>
+<td><strong>~10%-15%/年（3 年）</strong></td>
+<td>取决于利率走势和业绩兑现</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>如果你持有 3 年，最坏情况（悲观情景）：</strong> 股价跌到 47 元（-19%），但三年累计分红约 8.5 元，实际亏损约 <strong>-4%</strong>。分红提供了显著的下行保护。</p>
+<p><strong>如果你持有 3 年，中性情景：</strong> 股价涨到 69 元（+19%），加上三年累计分红约 8.5 元，总回报约 <strong>34%</strong>，年化约 <strong>10%</strong>。</p>
+<p><strong>这不是一个"暴涨"的故事，而是一个"高确定性复合回报"的故事——前提是你能接受短期波动，并且对利率走向有自己的判断。</strong></p>
+<hr />
+<h2 id="_9">本篇结论</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>回答</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平安贵不贵？</td>
+<td>PEV 0.65 倍处于历史低位，除非认为中国"日本化"，否则偏便宜</td>
+</tr>
+<tr>
+<td>便宜有多少？</td>
+<td>分部估值法显示低估约 17%，卖方共识目标价高 35%</td>
+</tr>
+<tr>
+<td>下行保护够不够？</td>
+<td>4.8% 股息率 + 连续 14 年分红增长提供了显著安全垫</td>
+</tr>
+<tr>
+<td>催化剂是什么？</td>
+<td>利率企稳、NBV 持续增长、银行业绩拐点确认</td>
+</tr>
+<tr>
+<td>最大风险是什么？</td>
+<td>利率持续下行导致 EV 缩水 + 利差损显现</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一句话：0.65 倍 PEV 给了足够的安全边际——但安全边际是不是"够用"，取决于你对利率的判断。</strong></p>
+<hr />
+<h2 id="_10">下期预告</h2>
+<p>下一篇是终章，我们直面最核心的风险，并给出长期判断——</p>
+<ul>
+<li>地产敞口 2,000 亿，如果房地产再来一轮冲击会怎样？</li>
+<li>利差损到底存不存在？管理层说没有，市场说有，谁对？</li>
+<li>马明哲 68 岁，接班人问题到底有多严重？</li>
+<li>10 年后的平安会是什么样？</li>
+<li>最终判断：什么样的投资者适合持有平安？</li>
+</ul>
+<p>下周见。</p>
+<hr />
+<p><em>本文是《看懂平安集团》系列第 03 篇。终章即将推出。</em>
+<em>本系列不构成任何投资建议。作者可能持有或未来可能买卖文中提及的证券。投资有风险，请独立判断。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/a9c35f7ba6c1.html">风险与长期判断</a><div class="meta">2026-07-13 · 深度系列</div></li><li><a href="../r/4431d4e24c18.html">中国平安（601318.SS / 2318.HK）投资研究报告</a><div class="meta">2026-06-25 · 研究</div></li><li><a href="../r/75768db72ac6.html">四大业务引擎</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/aaeb271ce2e0.html">中国最大综合金融集团的全景</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/4b4efdd993c3.html">《看懂平安集团》系列说明</a><div class="meta">2026-05-22 · 底稿</div></li><li><a href="../r/b97d0bf94d1a.html">中国平安集团（601318.SH / 2318.HK）深度研究报告</a><div class="meta">2026-04-10 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

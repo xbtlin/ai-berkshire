@@ -1,0 +1,288 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ling-2.6-1T-base · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a></div><h1>Ling-2.6-1T-base</h1><div class="meta"><a href="../topics/大模型全景对比-20260906/index.html">大模型全景对比-20260906</a> ｜ 2026-09-06 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%A8%E6%99%AF%E5%AF%B9%E6%AF%94-20260906/evidence/inclusionAI__Ling-2.6-1T-base__README.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#1-model-overview">1. Model Overview</a></li>
+<li><a href="#2-key-features">2. Key Features</a></li>
+<li><a href="#3-model-summary">3. Model Summary</a></li>
+<li><a href="#4-training-highlights">4. Training Highlights</a><ul>
+<li><a href="#architecture-migration">Architecture Migration</a></li>
+<li><a href="#data-mixture">Data Mixture</a></li>
+</ul>
+</li>
+<li><a href="#5-base-model-evaluation">5. Base Model Evaluation</a></li>
+<li><a href="#6-intended-use">6. Intended Use</a></li>
+<li><a href="#7-limitations">7. Limitations</a></li>
+<li><a href="#8-relationship-to-other-releases">8. Relationship to Other Releases</a></li>
+<li><a href="#9-usage">9. Usage</a></li>
+<li><a href="#10-license">10. License</a></li>
+</ul>
+</div>
+</details><article><p align="center">
+    <img src="https://mdn.alipayobjects.com/huamei_qa8qxu/afts/img/A*4QxcQrBlTiAAAAAAQXAAAAgAemJ7AQ/original" width="100"/>
+</p>
+<p align="center">🤗 <a href="https://huggingface.co/inclusionAI">Hugging Face</a>&nbsp;&nbsp; | &nbsp;&nbsp;🤖 <a href="https://modelscope.cn/organization/inclusionAI">ModelScope </a>&nbsp;&nbsp; | &nbsp;&nbsp; <a href="https://arxiv.org/abs/2606.15079">Tech Report </a>&nbsp;&nbsp; | &nbsp;&nbsp; 🐙 <a href="https://github.com/inclusionAI/Ling-V2.5">GitHub</a></p>
+
+<p>Ling-2.6-1T-base is the base checkpoint behind the Ling-2.6-1T and Ring-2.6-1T. It is a trillion-parameter Mixture-of-Experts language model retrofitted from Ling-2.0-1T-base with a hybrid linear attention design, continued pre-training, and long-context mid-training.</p>
+<p>This release is intended for research, continued pre-training, distillation, and supervised or preference-based fine-tuning. It is not a chat-aligned assistant model. If you want an out-of-the-box instruction or reasoning model, use the corresponding Ling-2.6 or Ring-2.6 post-trained checkpoints instead.</p>
+<h2 id="1-model-overview">1. Model Overview</h2>
+<p>Ling-2.6-1T-base is designed to preserve the capability of the Ling-2.0 trillion-scale backbone while making long-context training and inference materially more efficient. The core upgrade is a hybrid attention retrofit that combines Lightning Attention with MLA in a 7:1 ratio, together with a smooth migration pipeline from the original GQA-based architecture.</p>
+<p>According to the technical report, the model is trained through approximately 9.6T tokens across migration pre-training, continued pre-training, and mid-training, with staged context extension from 4K to 256K. The same base checkpoint is later specialized into:</p>
+<ul>
+<li>Ling-2.6 for instant, token-efficient response</li>
+<li>Ring-2.6 for deeper reasoning and long-horizon agentic workflows</li>
+</ul>
+<h2 id="2-key-features">2. Key Features</h2>
+<ul>
+<li>Hybrid linear attention architecture combining Lightning Attention and MLA in a 7:1 ratio</li>
+<li>Trillion-parameter MoE backbone upgraded from Ling-2.0-1T-base instead of retraining from scratch</li>
+<li>Long-context training pipeline extended to 256K context during mid-training</li>
+<li>Continued pre-training mixture covering agentic data, long-context data, knowledge-rich web data, math, code, and multilingual corpora</li>
+<li>Strong base-model quality across knowledge, math, code, reasoning, and long-context understanding benchmarks</li>
+</ul>
+<h2 id="3-model-summary">3. Model Summary</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Architecture</td>
+<td>Fine-grained MoE with hybrid linear attention</td>
+</tr>
+<tr>
+<td>Parameter Scale</td>
+<td>Totoal ~1T, Activated ~63B</td>
+</tr>
+<tr>
+<td>Transformer layers</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Attention heads</td>
+<td>64</td>
+</tr>
+<tr>
+<td>Hidden size</td>
+<td>8192</td>
+</tr>
+<tr>
+<td>Routed experts per MoE layer</td>
+<td>256</td>
+</tr>
+<tr>
+<td>Shared experts per MoE layer</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Active routed experts per token</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Dense FFN layers</td>
+<td>First 4 transformer blocks</td>
+</tr>
+<tr>
+<td>Expert intermediate size</td>
+<td>2048</td>
+</tr>
+<tr>
+<td>Dense intermediate size</td>
+<td>18432</td>
+</tr>
+<tr>
+<td>Vocabulary size</td>
+<td>157,184</td>
+</tr>
+<tr>
+<td>Positional encoding</td>
+<td>Partial RoPE</td>
+</tr>
+<tr>
+<td>Attention design</td>
+<td>Lightning Attention + MLA, 7:1 ratio</td>
+</tr>
+<tr>
+<td>Training recipe</td>
+<td>Migration pre-training + continued pre-training + mid-training</td>
+</tr>
+<tr>
+<td>Total training tokens</td>
+<td>~9.6T</td>
+</tr>
+<tr>
+<td>Context training schedule</td>
+<td>4K -&gt; 32K -&gt; 256K</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="4-training-highlights">4. Training Highlights</h2>
+<h3 id="architecture-migration">Architecture Migration</h3>
+<p>The model starts from Ling-2.0-1T-base and is converted into the Ling-2.6-1T architecture through a multi-stage migration pipeline that includes:</p>
+<ol>
+<li>Lightning Attention conversion</li>
+<li>Linear warmup</li>
+<li>MLA conversion</li>
+<li>MLA warmup</li>
+<li>Full continued pre-training</li>
+</ol>
+<p>This retrofit is designed to preserve pre-trained capability while reducing long-context compute cost and KV-cache pressure.</p>
+<h3 id="data-mixture">Data Mixture</h3>
+<p>The continued pre-training and mid-training stages include:</p>
+<ul>
+<li>Agentic corpus built from tool-use and coding environments</li>
+<li>Long-context corpus covering mathematics, web parsing, summarization, retrieval, and multi-hop reasoning</li>
+<li>General web knowledge data with targeted STEM and factual augmentation</li>
+<li>Math and code corpora</li>
+<li>Multilingual data spanning 21 languages</li>
+</ul>
+<h2 id="5-base-model-evaluation">5. Base Model Evaluation</h2>
+<p>The following numbers are selected from the technical report and reflect base-model evaluation rather than chat-aligned or instruction-tuned performance.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Benchmark</th>
+<th style="text-align: right;">Ling-2.0-1T-base</th>
+<th style="text-align: right;">Ling-2.6-1T-base</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MMLU</td>
+<td style="text-align: right;">86.03</td>
+<td style="text-align: right;">86.82</td>
+</tr>
+<tr>
+<td>MMLU-Pro</td>
+<td style="text-align: right;">67.91</td>
+<td style="text-align: right;">67.79</td>
+</tr>
+<tr>
+<td>GPQA</td>
+<td style="text-align: right;">41.92</td>
+<td style="text-align: right;">45.45</td>
+</tr>
+<tr>
+<td>SimpleQA</td>
+<td style="text-align: right;">20.87</td>
+<td style="text-align: right;">38.26</td>
+</tr>
+<tr>
+<td>C-SimpleQA</td>
+<td style="text-align: right;">64.53</td>
+<td style="text-align: right;">76.83</td>
+</tr>
+<tr>
+<td>MMMLU</td>
+<td style="text-align: right;">68.68</td>
+<td style="text-align: right;">71.53</td>
+</tr>
+<tr>
+<td>GSM8K</td>
+<td style="text-align: right;">89.31</td>
+<td style="text-align: right;">93.93</td>
+</tr>
+<tr>
+<td>OmniMath</td>
+<td style="text-align: right;">33.60</td>
+<td style="text-align: right;">38.70</td>
+</tr>
+<tr>
+<td>HumanEval-Plus</td>
+<td style="text-align: right;">83.54</td>
+<td style="text-align: right;">85.98</td>
+</tr>
+<tr>
+<td>LiveCodeBench</td>
+<td style="text-align: right;">40.09</td>
+<td style="text-align: right;">44.27</td>
+</tr>
+<tr>
+<td>BIRD-SQL</td>
+<td style="text-align: right;">42.70</td>
+<td style="text-align: right;">44.59</td>
+</tr>
+<tr>
+<td>BBH</td>
+<td style="text-align: right;">86.88</td>
+<td style="text-align: right;">89.73</td>
+</tr>
+<tr>
+<td>AutoLogic</td>
+<td style="text-align: right;">65.76</td>
+<td style="text-align: right;">67.43</td>
+</tr>
+<tr>
+<td>LEval</td>
+<td style="text-align: right;">72.30</td>
+<td style="text-align: right;">76.21</td>
+</tr>
+<tr>
+<td>LongBenchv2</td>
+<td style="text-align: right;">30.02</td>
+<td style="text-align: right;">43.54</td>
+</tr>
+</tbody>
+</table></div>
+<p>In the technical report, Ling-2.6-1T-base shows broad gains over Ling-2.0-1T-base, especially on factual knowledge, multilingual knowledge coverage, long-context understanding, and reasoning-oriented evaluations, while preserving or improving strong math and code capability. One notable exception in this selected subset is MMLU-Pro, where Ling-2.0-1T-base remains slightly higher.</p>
+<h2 id="6-intended-use">6. Intended Use</h2>
+<p>Recommended use cases:</p>
+<ul>
+<li>Continued pre-training</li>
+<li>Supervised fine-tuning for domain adaptation</li>
+<li>Preference optimization and RL post-training</li>
+<li>Distillation research</li>
+<li>Long-context and MoE systems research</li>
+</ul>
+<p>Not recommended as-is for:</p>
+<ul>
+<li>Direct end-user chat deployment</li>
+<li>Safety-critical applications without additional alignment and evaluation</li>
+<li>Single-GPU local inference</li>
+</ul>
+<h2 id="7-limitations">7. Limitations</h2>
+<ul>
+<li>This is a base model and is not instruction-aligned.</li>
+<li>Outputs may be inaccurate, biased, incomplete, or unsafe without additional post-training.</li>
+<li>Long-context quality depends on the serving stack, positional scaling configuration, and prompt format used at inference time.</li>
+<li>The training mixture includes web-scale and synthetic data, so the model may reproduce factual errors or undesirable artifacts.</li>
+<li>Benchmark results in the technical report are collected under controlled internal evaluation settings and should not be treated as a guarantee of downstream production behavior.</li>
+</ul>
+<h2 id="8-relationship-to-other-releases">8. Relationship to Other Releases</h2>
+<ul>
+<li><a href="https://huggingface.co/inclusionAI/Ling-2.6-1T">Ling-2.6-1T</a>: instruction and instant-response optimized model derived from this base</li>
+<li><a href="https://huggingface.co/inclusionAI/Ring-2.6-1T">Ring-2.6-1T</a>: reasoning- and agent-optimized model derived from the same 2.6 generation</li>
+</ul>
+<p>If your goal is interactive assistant use rather than research on base checkpoints, these post-trained models are usually the better starting point.</p>
+<h2 id="9-usage">9. Usage</h2>
+<p>This is a base checkpoint. One can load it for simple generation or further post-training. Notably, real deployment of a trillion-parameter model typically requires multi-node distributed infrastructure. The example below illustrates the loading pattern only.</p>
+<pre><code class="language-python">import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model_name = &quot;inclusionAI/Ling-2.6-1T-base&quot;
+
+tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        trust_remote_code=True,
+        device_map=&quot;auto&quot;,
+)
+
+prompt = &quot;Explain the difference between full attention and linear attention.&quot;
+inputs = tokenizer(prompt, return_tensors=&quot;pt&quot;).to(model.device)
+
+outputs = model.generate(
+        **inputs,
+        max_new_tokens=256,
+        do_sample=False,
+)
+
+print(tokenizer.decode(outputs[0], skip_special_tokens=True))
+</code></pre>
+<p>For production inference, prefer distributed serving stacks such as SGLang or other engines that support the released architecture and model size. You can refer to our <a href="https://huggingface.co/inclusionAI/Ling-2.6-1T">instruction version</a> for SGLang deployment.</p>
+<h2 id="10-license">10. License</h2>
+<p>This checkpoint and code repository is licensed under the MIT License.</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/94b63c16f6b1.html">GLM-5</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/224a0c39bab5.html">GLM-5.3</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/22905c393a9c.html">GLM-5.3-Flash</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/d060129a14be.html">GLM-5.2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/f90617223e31.html">GLM-4.7</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/0edcfc955787.html">GLM-4.6V</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/8cf89aee725c.html">GLM-4.5-Air</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/10aa23c70e91.html">Grok 2</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/652b9a513303.html">Grok-1</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/4224b4932376.html">Solar Open</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/32e837241209.html">tencent__Hy3__README</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/e9c250974ef4.html">tencent__Hunyuan-Large__README</a><div class="meta">2026-09-06 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

@@ -1,0 +1,41 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>审计说明 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/快手/index.html">快手</a></div><h1>审计说明</h1><div class="meta"><a href="../companies/快手/index.html">快手</a> ｜ 2026-10-16 · 底稿 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E5%8F%AF%E7%81%B5%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6-20261016/%E5%AE%A1%E8%AE%A1%E8%AF%B4%E6%98%8E.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">检查结果及范围</a></li>
+<li><a href="#_2">检查中纠正或明确的问题</a></li>
+<li><a href="#_3">工具自身的边界</a></li>
+<li><a href="#_4">发布范围</a></li>
+</ul>
+</div>
+</details><article><p>日期：2026-10-16。对象为同目录主报告及利润、估值模型。主报告事实由技术、治理和财务三条研究线实时核查，写作后分别进行反方审读。</p>
+<h2 id="_1">检查结果及范围</h2>
+<ol>
+<li><code>tools/report_audit.py extract</code> 使用固定种子20261016、15%比例，从147个识别项抽出23项。原始输出完整保留。</li>
+<li>23项中有4项是年份、月份或版本号误提取，逐项保留并说明；没有为了通过而删除原始抽样。</li>
+<li>4项真实财务抽样经原件或数据商核对；15项情景假设、演示输入和算式另作一致性检查，二者分别出判决。</li>
+<li>另增加13项重点复核，覆盖2025收入与归母、现金流与资本支出、TTM重建、供应商融资、行情股本、汇率、市值与现金桥梁。</li>
+<li>分范围判决均无数字偏差失败或未解释警告。季度细分、半年资本支出、供应商融资注释等仍有独立第二源缺口，不因工具PASS称为独立双源审计。</li>
+<li><code>financial_rigor.py</code> 完成21项命令检查；专属模型用字符串构造Decimal，计算归母利润、折现、现金桥梁、敏感性及一级市场回报门槛。所有计算结果与报告展示精度一致。</li>
+</ol>
+<p><strong>PASS只代表已声明范围内的取数或算式一致；不验证训练集、客户留存、资金到账，也不验证十年预测或估值假设。</strong> 工具输出中的“准出”应按这一范围理解。</p>
+<h2 id="_2">检查中纠正或明确的问题</h2>
+<ul>
+<li>2022年现金流使用2023年报重分类后的CFO7.95亿元及资本支出51.00亿元。</li>
+<li>第三方TTM资本支出滞留2025全年，已拒绝其正FCF结果；官方滚动重建简单FCF为-18.29亿元。</li>
+<li>财务表用人民币，股价和上市市值用港币；不使用行情页已换算成港币的利润再除人民币市值。</li>
+<li>市值包括A、B类经济权益，采用9月末已发行总数，未误用仅B类股或财报加权股数。第三方股数滞后造成约0.53%市值差异，未取平均来掩盖。</li>
+<li>供应商融资252.53亿元纳入融资性负债；可灵融资款不算营业收入。DCF在银行/供应商融资前、租赁付款后，与债务桥梁保持一致。</li>
+<li>净资金102.08亿元是6月末底稿、应付分配及150亿元研究缓冲的混合计算，含7.19亿元上市权益；不是当前纯现金。2026H2其余净变动暂取零，明确给出每100亿元约2.71港元的敏感性。</li>
+<li>可灵4.0早期访问、宣布规格与待上线功能分开；3.0 Turbo不套用3.0/Omni的4K规格。</li>
+<li>李岩现任京东岗位与之前可图岗位分开；不据此推断整个可灵视频团队流失。</li>
+<li>融资全额认购不等于已逐笔确认到账；经济持股不等于投票权；回购义务不写成未经证实的上市母公司担保。</li>
+<li>模型业务收入相加项不命名为无条件“合并收入”；未来失去控制权时，会计列报可能改变，经济权益模型仍可单独观察。</li>
+<li>删除了保持显性恢复路径、再强行反求较低终值现金的反向DCF展示，避免出现不直观的2036至2037现金断崖。保留平稳零增长反算。</li>
+</ul>
+<h2 id="_3">工具自身的边界</h2>
+<p>现有<code>financial_rigor.py calc</code>内部先计算表达式再转Decimal，部分“精确值”带浮点尾数；本次没有扩展任务去修改共享工具。最终金额以专属模型直接Decimal计算及审计中的独立Decimal公式为准，展示精度不受该尾数影响。工具的P/FCF可计算出负数，但负倍数不具有通常的“低估值”比较含义，因此未拿来作买入依据。</p>
+<p>抽检器不能可靠识别所有正文数字，也会遗漏年份作行名的部分表格；因此补充了重点复核及独立审读。2021年CFO/资本支出只有本次数据库取数，未逐项重开当年原件，已经在主文标记为背景数据。</p>
+<h2 id="_4">发布范围</h2>
+<p>本次仅新增这一研究目录；旧报告、既有改动与其他未跟踪文件不在发布清单中。发布前检查暂存文件白名单、空白错误与可能的凭证，提交后核对GitHub远端分支提交。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/2f73e86f63d4.html">快手与可灵：创始人、技术选型、赛道与十年推演</a><div class="meta">2026-10-17 · 研究</div></li><li><a href="../r/b78ea6a95236.html">可灵与快手十年推演（2026-10-17）</a><div class="meta">2026-10-17 · 导读</div></li><li><a href="../r/f80334f8f914.html">快手与可灵：财务与经营证据底稿</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/722f16789334.html">可灵技术与竞争证据：从模型领先到经济护城河</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/8ab3cb0a66e9.html">快手与可灵深度研究报告</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/1ac5b5717c6b.html">快手与可灵：创始人、组织与治理证据</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/7661a5d37927.html">快手与可灵深度研究 · 2026-10-16</a><div class="meta">2026-10-16 · 导读</div></li><li><a href="../r/29d256651108.html">快手科技（1024.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/207317a7a1f4.html">快手十年后：生态还在不在、为什么还去快手、可灵结局、还能赚多少</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/16ff30b4d9f0.html">快手AI利润模型与核验记录</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/4ac8125172ef.html">快手：AI对未来三年利润的影响与2036年盈利能力</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/10599f815158.html">藏在快手账上的另一家公司——可灵、180 亿美元与一纸对赌</a><div class="meta">2026-09-08 · 公众号</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

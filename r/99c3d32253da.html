@@ -1,0 +1,270 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>一门不拥有酒店的酒店生意 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/Booking/index.html">Booking</a></div><h1>一门不拥有酒店的酒店生意</h1><div class="meta"><a href="../companies/Booking/index.html">Booking</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Booking/%E3%80%8A%E7%9C%8B%E6%87%82Booking%E3%80%8B/02-%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F-%E4%B8%80%E9%97%A8%E4%B8%8D%E6%8B%A5%E6%9C%89%E9%85%92%E5%BA%97%E7%9A%84%E9%85%92%E5%BA%97%E7%94%9F%E6%84%8F.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">这门生意的底层逻辑</a></li>
+<li><a href="#15-18">佣金结构：15-18% 凭什么？</a><ul>
+<li><a href="#_2">佣金率的行业对比</a></li>
+</ul>
+</li>
+<li><a href="#booking">从代理到商户：Booking 最重要的战略转型</a><ul>
+<li><a href="#agency">代理模式（Agency）</a></li>
+<li><a href="#merchant">商户模式（Merchant）</a></li>
+<li><a href="#_3">转型进度</a></li>
+</ul>
+</li>
+<li><a href="#booking_1">网络效应：Booking 的核心护城河</a><ul>
+<li><a href="#_4">双边网络效应的运转逻辑</a></li>
+<li><a href="#_5">评价体系：不可复制的时间壁垒</a></li>
+</ul>
+</li>
+<li><a href="#booking_2">财务质感：为什么说 Booking 是"印钞机"</a><ul>
+<li><a href="#_6">利润率对比</a></li>
+<li><a href="#_7">自由现金流的特殊优势</a></li>
+</ul>
+</li>
+<li><a href="#connected-trip">Connected Trip：从"订房工具"到"旅行操作系统"</a><ul>
+<li><a href="#2025">2025 年进展</a></li>
+</ul>
+</li>
+<li><a href="#_8">这门生意的一句话总结</a></li>
+<li><a href="#_9">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂Booking》系列 · 第 02 篇 · 商业模式
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">这门生意的底层逻辑</h2>
+<p>意大利小镇，一家 30 间房的独立酒店。淡季空一半，老板没钱做全球营销，也雇不起多语种客服。</p>
+<p>Booking.com 来了。把这 30 间房推给全球 2 亿月活旅行者，老板什么都不用动，只要在系统里设好价格和房态，订单自动进来。代价：每笔成交 <strong>15-18%</strong> 的佣金。</p>
+<p>贵吗？当然贵。但这家酒店有选择吗？全球几百万家这样的中小酒店，都没有选择。</p>
+<p><strong>这就是 Booking 商业模式的核心：它不拥有一间房，但全球数百万酒店离不开它。</strong></p>
+<hr />
+<h2 id="15-18">佣金结构：15-18% 凭什么？</h2>
+<h3 id="_2">佣金率的行业对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>平均佣金/费率</th>
+<th>向谁收</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Booking.com</strong></td>
+<td><strong>15-18%</strong></td>
+<td>酒店端</td>
+</tr>
+<tr>
+<td><strong>Expedia</strong></td>
+<td><strong>15-20%</strong></td>
+<td>酒店端</td>
+</tr>
+<tr>
+<td><strong>Airbnb</strong></td>
+<td><strong>3%（房东）+ 14%（房客）</strong></td>
+<td>双边收</td>
+</tr>
+<tr>
+<td><strong>携程</strong></td>
+<td><strong>10-15%</strong></td>
+<td>酒店端</td>
+</tr>
+</tbody>
+</table></div>
+<p>数据来源：各平台公开政策、Skift 行业报告</p>
+<p>Booking 的佣金率在行业中处于中高水平。酒店当然想少交——万豪、希尔顿等大型连锁持续推动"直订运动"，用会员积分和最优价格保证引导用户绕过 OTA。</p>
+<p><strong>但关键事实是：大型连锁酒店仅占全球住宿供给的约 30%，剩余 70% 是独立酒店和另类住宿。</strong> 这些中小供应商没有品牌影响力、没有会员体系、没有全球分销能力——它们 <strong>30-50%</strong> 的订单来自 Booking.com。</p>
+<p>对这 70% 的供给端来说，Booking 不是"可选的营销渠道"，而是"生存必需品"。这就是 <strong>15-18%</strong> 佣金率能维持的根本原因。</p>
+<p><strong>反方观点：</strong> 佣金率并非铁板一块。欧盟已有讨论对 OTA 佣金设上限。如果主要市场立法将佣金率限制在 10%，Booking 的收入将受到直接冲击。此外，Google Hotels 的免费预订链接正在为酒店提供一个低成本的替代获客渠道，长期可能侵蚀 OTA 的佣金定价权。</p>
+<hr />
+<h2 id="booking">从代理到商户：Booking 最重要的战略转型</h2>
+<p>理解 Booking 的商业模式，必须理解两个关键词：<strong>代理模式</strong>和<strong>商户模式</strong>。</p>
+<h3 id="agency">代理模式（Agency）</h3>
+<p>传统做法：用户在 Booking 上选好酒店，到酒店前台付款。Booking 事后向酒店收取佣金。</p>
+<ul>
+<li>优点：用户信任高（到店付款）</li>
+<li>缺点：Booking 拿不到支付数据，无法控制用户体验，也没有"浮存金"</li>
+</ul>
+<h3 id="merchant">商户模式（Merchant）</h3>
+<p>新做法：用户在 Booking 上直接预付。Booking 先收钱，再和酒店结算。</p>
+<ul>
+<li>优点：（1）掌握支付数据，为个性化推荐打基础；（2）获得"浮存金"——用户的钱先到 Booking 账上；（3）用户体验更好（灵活取消、锁定汇率等）</li>
+<li>缺点：承担更多支付风险和退款处理</li>
+</ul>
+<h3 id="_3">转型进度</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>商户收入占比</th>
+<th>代理收入占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2018 年</td>
+<td>~30%</td>
+<td>~70%</td>
+</tr>
+<tr>
+<td>2022 年</td>
+<td>~50%</td>
+<td>~50%</td>
+</tr>
+<tr>
+<td>2024 年</td>
+<td>60%</td>
+<td>40%</td>
+</tr>
+<tr>
+<td><strong>2025 年</strong></td>
+<td><strong>66%</strong></td>
+<td><strong>30%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>数据来源：Booking Holdings 10-K 年报</p>
+<p><strong>7 年时间，商户收入占比从 30% 翻到 66%——这是 Booking 过去十年最重要的战略举措。</strong></p>
+<p>为什么重要？因为商户模式让 Booking 从"帮酒店卖房间的中间人"变成了"掌控交易全流程的基础设施"。这个转变对应的是：</p>
+<ol>
+<li><strong>数据优势加深</strong>——Booking 知道你什么时候订、订多贵、取消率多少、搭配买不买机票</li>
+<li><strong>浮存金优势</strong>——用户提前付款产生的资金沉淀，类似保险公司的模式</li>
+<li><strong>Connected Trip 的技术基础</strong>——只有掌握支付环节，才能在一个平台串联住宿+机票+租车+门票</li>
+</ol>
+<hr />
+<h2 id="booking_1">网络效应：Booking 的核心护城河</h2>
+<h3 id="_4">双边网络效应的运转逻辑</h3>
+<pre><code>更多酒店上线 → 用户选择更多 → 更多用户使用 → 酒店获得更多订单
+→ 更多酒店上线 → ……（飞轮持续转动）
+</code></pre>
+<p>这个飞轮的强度取决于一个关键问题：<strong>用户和酒店是否会"多归属"——同时使用多个平台？</strong></p>
+<p>答案是：<strong>会，但程度有限。</strong></p>
+<ul>
+<li><strong>用户端：</strong> 旅行者确实会在 Booking、Expedia、Airbnb 之间比价。但 Booking 的优势在于：（1）覆盖最全；（2）评价体系最完善（数亿条评价，数十年积累）；（3）用户偏好数据形成个性化推荐，越用越准。这意味着虽然用户"可以"比价，但<strong>惯性和数据锁定</strong>会让多数人默认用 Booking</li>
+<li><strong>供给端：</strong> 独立酒店理论上可以同时挂在多个平台，但管理多个平台的房态、价格、评价成本很高。很多中小酒店实际上把 Booking 当作"主渠道"——<strong>30-50% 的订单来自 Booking</strong>，这种依赖程度意味着转换成本很高</li>
+</ul>
+<p><strong>反方观点：</strong> 旅游行业的网络效应不如社交网络（微信、Facebook）那样具有排他性。用户不会因为朋友都在 Booking 上就只用 Booking——旅行决策主要取决于价格和供给，而非社交关系。这意味着护城河虽宽，但不是万里长城。</p>
+<h3 id="_5">评价体系：不可复制的时间壁垒</h3>
+<p>Booking.com 上积累了<strong>数亿条用户评价</strong>——这不仅是数据，更是信任。</p>
+<p>你会在一个只有 5 条评价的平台订一家从未去过的国外酒店吗？大概率不会。你会在有 2,000 条评价、评分 8.7 的平台上订？大概率会。</p>
+<p><strong>评价的价值在于它是时间的函数——不能花钱买，不能快速追赶。</strong> 即使 Google 有无限的资金和流量，它也无法在短时间内复制 Booking 二十年积累的评价体系。</p>
+<hr />
+<h2 id="booking_2">财务质感：为什么说 Booking 是"印钞机"</h2>
+<h3 id="_6">利润率对比</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>Booking（2025）</th>
+<th>携程（2025）</th>
+<th>Expedia（2025）</th>
+<th>Airbnb（2025）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>毛利率</td>
+<td><strong>87.4%</strong></td>
+<td>~80%</td>
+<td>~60%</td>
+<td>~80%</td>
+</tr>
+<tr>
+<td>营业利润率</td>
+<td><strong>32.8%</strong></td>
+<td>~25%</td>
+<td>~12%</td>
+<td>~22%</td>
+</tr>
+<tr>
+<td>自由现金流率</td>
+<td><strong>33.8%</strong></td>
+<td>~25%</td>
+<td>~15%</td>
+<td>~35%</td>
+</tr>
+<tr>
+<td>ROIC</td>
+<td><strong>43.7%</strong></td>
+<td>~15-20%</td>
+<td>~10%</td>
+<td>~30%</td>
+</tr>
+</tbody>
+</table></div>
+<p>数据来源：各公司财报、GuruFocus</p>
+<p><strong>87.4% 的毛利率意味着：Booking 每收入 100 美元，只有 12.6 美元是成本</strong>——这个成本主要是支付处理费和少量基础设施费用。剩下的 87.4 美元全部是毛利润。</p>
+<p>为什么这么高？因为 Booking 不拥有任何实体资产——它不建酒店、不养机队、不管理房间清洁。所有"重"的事情都由供应商承担，Booking 只做"连接"和"撮合"。</p>
+<p><strong>ROIC 43.7% 的含义是：每投入 1 美元资本，能赚回近 44 美分的利润。</strong> 行业中位数仅 3.6%。这是"轻资产+双边网络效应+规模经济"三重优势叠加的结果。</p>
+<h3 id="_7">自由现金流的特殊优势</h3>
+<p>Booking 的自由现金流率（33.8%）长期高于净利率（20.1%），原因是商户模式带来的<strong>营运资金优势</strong>：</p>
+<ul>
+<li>用户提前付款 → 现金先到 Booking 账上</li>
+<li>Booking 在用户入住后才和酒店结算</li>
+<li>中间的时间差产生"浮存金"</li>
+</ul>
+<p><strong>这个模式和保险公司非常相似——先收钱，后提供服务。</strong> 这意味着 Booking 的实际现金创造能力比利润表显示的更强。</p>
+<hr />
+<h2 id="connected-trip">Connected Trip：从"订房工具"到"旅行操作系统"</h2>
+<p>CEO Glenn Fogel 推动的 Connected Trip 战略，本质是<strong>提升每个用户的消费额和使用频次</strong>。</p>
+<h3 id="2025">2025 年进展</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>品类</th>
+<th>2025 年表现</th>
+<th>同比增速</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>住宿</td>
+<td>12.35 亿间夜</td>
+<td>核心业务</td>
+</tr>
+<tr>
+<td>机票</td>
+<td>6,800 万张，总预订额 <strong>168 亿美元</strong></td>
+<td><strong>+37%</strong></td>
+</tr>
+<tr>
+<td>景点门票</td>
+<td>未披露具体数字</td>
+<td><strong>~+80%</strong></td>
+</tr>
+<tr>
+<td>多品类交叉预订</td>
+<td>—</td>
+<td><strong>+20%+</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>数据来源：Booking Holdings 10-K 年报、AInvest 分析</p>
+<p><strong>AI 是 Connected Trip 的加速器。</strong> Booking 的 AI Trip Planner 已在超过 10 个国家上线，2025 年第二季度 Connected Trip 交易量因 AI 集成同比增长 <strong>30%</strong>。</p>
+<p><strong>这件事如果做成了，意味着什么？</strong> 用户从"每次旅行只在 Booking 订酒店"变成"在 Booking 上完成整个旅程"——客单价翻倍甚至翻三倍，用户粘性大幅提升，竞争对手更难切入。</p>
+<p><strong>反方观点：</strong> Connected Trip 听起来很美，但机票是低利润业务（利润率远低于住宿），景点门票市场高度分散。Booking 能否在住宿之外的品类建立同样强的竞争优势，目前尚未得到验证。管理层把 Connected Trip 当作未来增长引擎，但目前利润贡献有限——投资者需要区分"战略愿景"和"已兑现的业绩"。</p>
+<hr />
+<h2 id="_8">这门生意的一句话总结</h2>
+<p><strong>Booking 的生意本质是：用算法和数据，把全球旅行者和住宿供应商高效匹配在一起，每笔交易抽取 15-18% 佣金。它不拥有任何实体资产，但全球数百万酒店依赖它获客。双边网络效应和数十年积累的评价体系构成了宽阔但非垄断性的护城河。</strong></p>
+<p>这门生意好在哪？轻资产、高利润、强现金流、网络效应递增。</p>
+<p>这门生意的隐患在哪？护城河虽宽，但不排他——用户可以比价，酒店可以多挂平台。更重要的是，如果搜索入口被 AI 重塑，Booking 作为"信息聚合中间层"的价值可能被压缩。</p>
+<p>下一篇我们来拆第二个问题：<strong>谁能威胁 Booking？AI 时代的 OTA 行业会被颠覆吗？</strong></p>
+<hr />
+<h2 id="_9">下期预告</h2>
+<p>下一篇，我们聚焦竞争与增长——全球 OTA 行业的"战争地图"。</p>
+<p>要回答的几个尖锐问题：</p>
+<ul>
+<li>Expedia 为什么永远追不上 Booking？</li>
+<li>Airbnb 和 Booking 是竞争还是互补？</li>
+<li>Google 如果用 AI 直接帮用户订酒店，Booking 怎么办？</li>
+<li>全球旅游市场还有多大增长空间？</li>
+</ul>
+<p>下篇见。</p>
+<hr />
+<p><em>本文是《看懂Booking》系列第 02 篇。后续 2 篇将陆续推出。</em>
+<em>本系列不构成任何投资建议。所有数据基于公开财报和第三方分析，不保证准确性。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/bcc84bde515b.html">好公司也需要好价格</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/09a3ccc7414d.html">一场关于搜索入口的战争</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/889147875873.html">全球最大的旅行撮合机器</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/feac9c9004da.html">Booking Holdings (BKNG) 投资研究最终报告</a><div class="meta">2026-05-16 · 研究</div></li><li><a href="../r/d540c89d7af5.html">Booking Holdings (BKNG) 风险与管理层评估</a><div class="meta">2026-05-16 · 组织管理</div></li><li><a href="../r/09f41e48fe84.html">Booking Holdings (BKNG) 行业竞争分析</a><div class="meta">2026-05-16 · 研究</div></li><li><a href="../r/05371d5255e0.html">Booking Holdings (BKNG) 财务与估值分析</a><div class="meta">2026-05-16 · 估值仓位</div></li><li><a href="../r/c792aa7660b1.html">Booking Holdings (BKNG) 商业模式分析</a><div class="meta">2026-05-16 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

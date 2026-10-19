@@ -1,0 +1,344 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>技术很强，但技术不是护城河 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/生数科技/index.html">生数科技</a></div><h1>技术很强，但技术不是护城河</h1><div class="meta"><a href="../companies/生数科技/index.html">生数科技</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%94%9F%E6%95%B0%E7%A7%91%E6%8A%80/%E3%80%8A%E7%9C%8B%E6%87%82%E7%94%9F%E6%95%B0%E7%A7%91%E6%8A%80%E3%80%8B/02-%E6%8A%80%E6%9C%AF%E4%B8%8E%E4%BA%A7%E5%93%81-%E6%8A%80%E6%9C%AF%E5%BE%88%E5%BC%BA%E4%BD%86%E6%8A%80%E6%9C%AF%E4%B8%8D%E6%98%AF%E6%8A%A4%E5%9F%8E%E6%B2%B3.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">从一篇论文说起</a></li>
+<li><a href="#vidu">Vidu的技术路线：一张图说清楚</a></li>
+<li><a href="#vidu_1">Vidu的产品矩阵</a></li>
+<li><a href="#vidu-q3">Vidu Q3："全球屠榜"的含金量</a><ul>
+<li><a href="#_2">关键能力突破</a></li>
+<li><a href="#artificial-analysis">Artificial Analysis评测排名</a></li>
+</ul>
+</li>
+<li><a href="#_3">护城河分析：五个维度逐一拆解</a><ul>
+<li><a href="#1">1. 品牌与定价权：★★☆☆☆（弱）</a></li>
+<li><a href="#2">2. 转换成本：★★☆☆☆（弱）</a></li>
+<li><a href="#3">3. 网络效应：★☆☆☆☆（极弱）</a></li>
+<li><a href="#4">4. 规模效应：★★★☆☆（中等）</a></li>
+<li><a href="#5">5. 技术/专利壁垒：★★★★☆（较强）</a></li>
+</ul>
+</li>
+<li><a href="#6-12">技术壁垒的保鲜期：6-12个月</a></li>
+<li><a href="#65">65项专利：能保护多少？</a></li>
+<li><a href="#_4">护城河趋势判断</a></li>
+<li><a href="#_5">本篇小结</a></li>
+<li><a href="#_6">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂生数科技》系列 · 第 02 篇
+阅读时间约 12 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">从一篇论文说起</h2>
+<p>2022年9月，清华大学朱军团队的博士生鲍凡发表了一篇论文，提出了<strong>U-ViT架构</strong>——全球第一个将扩散模型（Diffusion Model）与Transformer深度融合的架构设计。</p>
+<p>这篇论文获得了ICLR 2023杰出论文奖（全球顶级AI会议，获奖率不到1%）。</p>
+<p>为什么这篇论文重要？因为它比OpenAI的DiT（Diffusion Transformer，Sora的技术底座）<strong>早了整整一年</strong>。换句话说，Sora的核心架构思路，清华团队更早地走通了。</p>
+<p>这就是生数科技的技术起点：<strong>不是在别人的技术上做改良，而是拥有原创的架构底座。</strong></p>
+<hr />
+<h2 id="vidu">Vidu的技术路线：一张图说清楚</h2>
+<pre><code>             Vidu 技术架构（简化版）
+
+   输入                  模型层                   输出
+┌────────┐         ┌──────────────┐         ┌────────┐
+│ 文字   │         │              │         │        │
+│ 图片   │ ──────▶ │   U-ViT架构   │ ──────▶ │  视频  │
+│ 参考图 │         │ (Diffusion +  │         │ +音频  │
+│ 音频   │         │  Transformer) │         │        │
+└────────┘         └──────────────┘         └────────┘
+                          │
+                   ┌──────┴──────┐
+                   │  核心特性    │
+                   │             │
+                   │ · 统一架构   │
+                   │ · 多模态输入 │
+                   │ · 长时序建模 │
+                   │ · 音画同出   │
+                   └─────────────┘
+</code></pre>
+<p>简单说：</p>
+<ul>
+<li><strong>传统视频生成</strong>：分别训练文字理解模型和视频生成模型，再拼在一起。效果像两个不同母语的人合作写作文，经常"牛头不对马嘴"</li>
+<li><strong>U-ViT架构</strong>：把文字理解和视频生成统一在一个架构里端到端训练。效果像一个人同时理解文字和画面，输出更连贯</li>
+</ul>
+<p>这个架构优势在早期产品中体现为：<strong>角色一致性好、运动连贯性强、对复杂场景的理解更准确。</strong></p>
+<hr />
+<h2 id="vidu_1">Vidu的产品矩阵</h2>
+<p>截至2026年5月，Vidu的产品线已经从单一的"文生视频"扩展到多个方向：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>产品</th>
+<th>功能</th>
+<th>定价</th>
+<th>目标用户</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vidu SaaS</strong></td>
+<td>文生视频、图生视频、参考生视频</td>
+<td>免费/$9.99月起</td>
+<td>C端创作者</td>
+</tr>
+<tr>
+<td><strong>Vidu API/MaaS</strong></td>
+<td>开发者调用视频生成能力</td>
+<td>约$0.0375/秒</td>
+<td>B端开发者</td>
+</tr>
+<tr>
+<td><strong>Vidu Agent</strong></td>
+<td>AI视频创作智能体</td>
+<td>未公开</td>
+<td>专业创作者</td>
+</tr>
+<tr>
+<td><strong>Vidu Claw</strong></td>
+<td>AI广告视频生成</td>
+<td>百元级/广告片</td>
+<td>广告主</td>
+</tr>
+<tr>
+<td><strong>Vidu App</strong></td>
+<td>移动端视频生成</td>
+<td>同SaaS定价</td>
+<td>移动端用户</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>API定价值得单独说一下</strong>：Vidu的API价格约$0.0375/秒，比行业均价$0.084/秒低<strong>55%</strong>。</p>
+<p>这个定价策略传递的信号很明确：<strong>用低价换市场份额</strong>。在当前阶段，生数科技选择的是"先跑量，后提价"的互联网打法。</p>
+<p>但反方观点同样有力：<strong>低价是因为没有定价权。</strong> 如果用户因为便宜才来，那谁更便宜他们就去谁那里。这不是护城河，是价格战。</p>
+<hr />
+<h2 id="vidu-q3">Vidu Q3："全球屠榜"的含金量</h2>
+<p>2026年4月，生数科技发布了Vidu Q3版本，这是一次重大升级。</p>
+<h3 id="_2">关键能力突破</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>能力</th>
+<th>Vidu Q3表现</th>
+<th>行业对比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>视频时长</td>
+<td>最长<strong>16秒</strong>音视频同出</td>
+<td>行业首个原生音画同出模型</td>
+</tr>
+<tr>
+<td>分辨率</td>
+<td><strong>1080P</strong>高清</td>
+<td>行业主流水平</td>
+</tr>
+<tr>
+<td>参考生视频</td>
+<td>SuperClue榜单<strong>双榜第一</strong></td>
+<td>多图/单图参考任务均第一</td>
+</tr>
+<tr>
+<td>音频能力</td>
+<td>背景音乐+音效+多语言对白</td>
+<td>竞品多数需要外挂音频模型</td>
+</tr>
+<tr>
+<td>镜头控制</td>
+<td>多机位切换、电影级镜头语言</td>
+<td>接近专业影视制作需求</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="artificial-analysis">Artificial Analysis评测排名</h3>
+<p>在全球权威AI评测机构Artificial Analysis的视频生成评测中：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>排名</th>
+<th>模型</th>
+<th>ELO评分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Google Veo（部分榜单）/ Vidu Q3（部分榜单）</td>
+<td>~1242</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Vidu Q3 / Google Veo</td>
+<td>~1220-1244</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Runway Gen-4.5</td>
+<td>略低</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>注：不同榜单和时间点排名有波动，Vidu Q3稳定在全球前二。来源：Artificial Analysis</em></p>
+<p><strong>一个重要细节</strong>：Vidu Q3在评测中超过了xAI Grok、Runway Gen-4.5和已停服的Sora。考虑到Sora背后是OpenAI、Grok背后是马斯克的xAI，这个排名的含金量不低。</p>
+<p><strong>但需要警惕</strong>：评测排名和实际用户体验之间往往有差距。评测用的是精选prompt，实际使用中的稳定性、出片率、边缘案例处理能力才是决定用户留存的关键。Sora在评测中也排名很高，但用户留存趋近于零。</p>
+<hr />
+<h2 id="_3">护城河分析：五个维度逐一拆解</h2>
+<p>技术强不等于有护城河。我们用经典的五维度框架来评估：</p>
+<h3 id="1">1. 品牌与定价权：★★☆☆☆（弱）</h3>
+<ul>
+<li>API定价比行业均价低<strong>55%</strong>——这说明它在<strong>买市场</strong>，不是在<strong>卖品牌</strong></li>
+<li>在专业创作者圈子有一定认知，但C端声量远不及可灵和即梦</li>
+<li>没有形成"用Vidu = 专业"的品牌心智</li>
+</ul>
+<h3 id="2">2. 转换成本：★★☆☆☆（弱）</h3>
+<ul>
+<li>C端用户可以零成本切换到可灵、即梦、Runway等竞品</li>
+<li>B端API客户有一定集成成本（对接文档、工作流适配），但不构成强锁定</li>
+<li>积分制预付费能制造一点点粘性，但本质上是弱锁定</li>
+</ul>
+<h3 id="3">3. 网络效应：★☆☆☆☆（极弱）</h3>
+<ul>
+<li>视频生成是<strong>工具型产品</strong>，用户之间几乎没有网络效应</li>
+<li>不像微信（越多人用越离不开）或淘宝（越多卖家越吸引买家）</li>
+<li>这是AI工具类产品的通病，不只是生数科技的问题</li>
+</ul>
+<h3 id="4">4. 规模效应：★★★☆☆（中等）</h3>
+<ul>
+<li>模型训练是高固定成本，用户量越大推理边际成本越低</li>
+<li><strong>但规模劣势明显</strong>：字节跳动2025年资本开支<strong>2000亿元</strong>，快手可灵背靠快手自有算力——生数科技的算力规模无法与之相比</li>
+<li>规模效应存在，但在这个赛道里，独立创业公司的规模永远追不上大厂</li>
+</ul>
+<h3 id="5">5. 技术/专利壁垒：★★★★☆（较强）</h3>
+<ul>
+<li>U-ViT原创架构，<strong>65项专利</strong></li>
+<li>鲍凡的ICLR杰出论文奖，朱军的IEEE Fellow身份</li>
+<li>Vidu Q3在Artificial Analysis评测中全球前二</li>
+</ul>
+<p><strong>但这是生数科技护城河中最脆弱的一项——因为技术壁垒在AI领域的衰减速度极快。</strong></p>
+<hr />
+<h2 id="6-12">技术壁垒的保鲜期：6-12个月</h2>
+<p>AI领域有一个残酷的规律：<strong>今天的技术突破，6-12个月后就会被追平。</strong></p>
+<p>历史证据：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>技术突破</th>
+<th>首发方</th>
+<th>被追平时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-4（大语言模型）</td>
+<td>OpenAI（2023年3月）</td>
+<td>Claude 3.5 Sonnet约18个月后追平</td>
+</tr>
+<tr>
+<td>Stable Diffusion（图像生成）</td>
+<td>Stability AI（2022年8月）</td>
+<td>6个月内多家开源模型追平</td>
+</tr>
+<tr>
+<td>Sora（视频生成）</td>
+<td>OpenAI（2024年2月发布demo）</td>
+<td>可灵、Vidu等12个月内达到接近水平</td>
+</tr>
+<tr>
+<td>DiT架构</td>
+<td>U-ViT（2022年9月）→ OpenAI DiT（2023年）</td>
+<td>全行业已统一采用</td>
+</tr>
+</tbody>
+</table></div>
+<p>U-ViT架构本身就是一个例子：它提出后不到一年，这个思路就被整个行业吸收。现在所有主流视频生成模型都采用类似的Diffusion+Transformer架构。<strong>原创者的先发优势，已经被行业的快速跟进消化了大部分。</strong></p>
+<p>生数科技目前的技术优势更多体现在<strong>工程化能力</strong>（把架构优势转化为产品体验的速度）和<strong>持续迭代能力</strong>（每一代模型的提升幅度），而非架构本身的独占性。</p>
+<p><strong>看多派会说</strong>：技术壁垒虽然衰减快，但生数科技的团队能持续跑在前面——朱军的学术能力保证了方向判断，鲍凡的执行力保证了工程落地。</p>
+<p><strong>看空派会说</strong>：技术壁垒快速衰减 + 大厂有10倍以上的算力优势 = 技术领先维持不了多久。开源模型（阿里Wan 2.2、腾讯HunyuanVideo）正在快速接近闭源模型的质量，一旦开源追平闭源，API定价将归零。</p>
+<p><strong>两边都有道理。</strong> 技术壁垒是生数科技当前最强的护城河，但也是最脆弱的。它的价值不在于"现在很深"，而在于"能不能持续挖深"——这取决于团队在接下来每一代模型上能否保持全球前二的水平。</p>
+<hr />
+<h2 id="65">65项专利：能保护多少？</h2>
+<p>专利在AI领域的保护力度值得打个问号。</p>
+<p><strong>有利的一面</strong>：
+- 65项专利覆盖了U-ViT架构及相关技术
+- 在B端大客户谈判中，专利组合是一种信号（"我们有自主知识产权"）
+- 如果未来涉及专利许可，这是潜在的收入来源</p>
+<p><strong>不利的一面</strong>：
+- AI领域的专利绕过（workaround）相对容易——改几个模块设计就可以规避
+- 中国AI公司之间很少互相打专利战
+- 开源模型不受专利限制——阿里可以用完全不同的架构达到类似效果</p>
+<p><strong>结论：专利更多是防守工具（防止被抄袭时有法律追索权），而非进攻武器（不能阻止竞品出现）。</strong></p>
+<hr />
+<h2 id="_4">护城河趋势判断</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间维度</th>
+<th>判断</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>过去2年</td>
+<td><strong>拓宽</strong></td>
+<td>从零到全球技术排名第二，用户突破4000万，建立了技术和品牌的初始积累</td>
+</tr>
+<tr>
+<td>当前</td>
+<td><strong>承压</strong></td>
+<td>可灵、即梦快速追赶，开源模型侵蚀定价空间，技术同质化加剧</td>
+</tr>
+<tr>
+<td>未来5年</td>
+<td><strong>高度不确定</strong></td>
+<td>取决于能否建立"技术之外"的护城河——B端生态粘性、数据飞轮、平台化能力</td>
+</tr>
+</tbody>
+</table></div>
+<p>一个直白的比喻：生数科技的护城河更像是<strong>一条正在融化的冰河</strong>——现在看着还在，但如果不持续补充新的冰（新技术突破、B端深度绑定、生态锁定），它会越来越浅。</p>
+<hr />
+<h2 id="_5">本篇小结</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>技术能力</td>
+<td>全球前二，U-ViT原创架构有真实的技术贡献</td>
+</tr>
+<tr>
+<td>产品矩阵</td>
+<td>从SaaS到API到广告工具，覆盖面广但单点深度待验证</td>
+</tr>
+<tr>
+<td>护城河深度</td>
+<td>技术壁垒较强但衰减极快，其余四项护城河均弱</td>
+</tr>
+<tr>
+<td>核心风险</td>
+<td>技术同质化 + 开源追平闭源 + 大厂规模碾压</td>
+</tr>
+<tr>
+<td>关键问题</td>
+<td><strong>能否在技术壁垒衰减之前，建立起"技术之外"的竞争优势？</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_6">下期预告</h2>
+<p>下一篇，我们进入最残酷的部分——竞争格局。</p>
+<p>可灵、即梦、Vidu三家的正面对比：</p>
+<ul>
+<li>可灵ARR <strong>5亿美元</strong> vs Vidu ARR <strong>2000万美元</strong>——25倍差距怎么追？</li>
+<li>字节即梦背后是<strong>2000亿元</strong>年资本开支——独立创业公司拿什么打？</li>
+<li>Sora已死，Runway在缩，全球AI视频赛道正在快速洗牌</li>
+<li>生数科技的生存空间到底在哪？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂生数科技》系列第 02 篇。</em>
+<em>本系列不构成任何投资建议。生数科技为未上市公司，所有财务数据均未经审计，投资风险极高。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/9ce3697c8887.html">烧钱、估值与生死判断</a><div class="meta">2026-07-13 · 深度系列</div></li><li><a href="../r/e8472d0d77d6.html">三国杀：可灵、即梦、Vidu</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/ace3a4a4b62e.html">一家成立三年的AI视频公司</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/cd37d14bb76c.html">《看懂生数科技》系列说明</a><div class="meta">2026-05-21 · 底稿</div></li><li><a href="../r/8d7aea625f8e.html">生数科技（Shengshu Technology）投资研究报告</a><div class="meta">2026-05-16 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

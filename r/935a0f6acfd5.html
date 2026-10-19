@@ -1,0 +1,532 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>现在的茅台贵不贵 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/茅台/index.html">茅台</a></div><h1>现在的茅台贵不贵</h1><div class="meta"><a href="../companies/茅台/index.html">茅台</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8C%85%E5%8F%B0/%E3%80%8A%E7%9C%8B%E6%87%82%E8%8C%85%E5%8F%B0%E3%80%8B/05-%E4%BB%B7%E6%A0%BC%E5%88%A4%E6%96%AD-%E7%8E%B0%E5%9C%A8%E7%9A%84%E8%8C%85%E5%8F%B0%E8%B4%B5%E4%B8%8D%E8%B4%B5.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#1315">1,315 元买茅台，你在赌什么？</a></li>
+<li><a href="#_1">当前价格隐含了什么假设？</a></li>
+<li><a href="#_2">三种估值方法的交叉验证</a><ul>
+<li><a href="#_3">方法一：十年折现现金流</a></li>
+<li><a href="#_4">方法二：市盈率区间法</a></li>
+<li><a href="#_5">方法三：股息率倒推</a></li>
+<li><a href="#_6">三种方法汇总</a></li>
+</ul>
+</li>
+<li><a href="#_7">与同业和替代品的比较</a></li>
+<li><a href="#_8">三种情景下的投资回报</a><ul>
+<li><a href="#60">情景一：温和复苏（概率 60%）</a></li>
+<li><a href="#15">情景二：快速修复（概率 15%）</a></li>
+<li><a href="#25">情景三：深度探底（概率 25%）</a></li>
+</ul>
+</li>
+<li><a href="#_9">什么价格值得买？</a></li>
+<li><a href="#_10">这轮调整的真实定位</a></li>
+<li><a href="#_11">终章总结</a><ul>
+<li><a href="#_12">最终判断</a></li>
+</ul>
+</li>
+<li><a href="#_13">数据来源汇总</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂茅台》系列 · 第 05 篇 · 终章
+阅读时间约 10 分钟</p>
+</blockquote>
+<hr />
+<h2 id="1315">1,315 元买茅台，你在赌什么？</h2>
+<p>截至 2026 年 5 月，茅台的核心估值指标：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>当前数据</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价</td>
+<td><strong>~1,315 元</strong></td>
+<td>较 2021 年高点 -50%</td>
+</tr>
+<tr>
+<td>市盈率（静态，基于 2025 年净利 823 亿）</td>
+<td><strong>~20 倍</strong></td>
+<td>历史中位数 30-46 倍</td>
+</tr>
+<tr>
+<td>市盈率（动态，基于 2026 年预测净利 ~885 亿）</td>
+<td><strong>~19 倍</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>市净率</td>
+<td><strong>~7 倍</strong></td>
+<td>历史中位数约 12 倍</td>
+</tr>
+<tr>
+<td>股息率</td>
+<td><strong>~4%</strong></td>
+<td>基于 2025 年每股派现约 51.8 元（年度 + 中期）</td>
+</tr>
+<tr>
+<td>盈利收益率（1/市盈率）</td>
+<td><strong>~5%</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>自由现金流收益率</td>
+<td><strong>~5.3%</strong>（估）</td>
+<td></td>
+</tr>
+<tr>
+<td>10 年期国债收益率</td>
+<td>~2.3%</td>
+<td>风险溢价约 2.7 个百分点</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>数据来源：公开市场行情、贵州茅台 2025 年报、2026 年一季报</em></p>
+<hr />
+<h2 id="_1">当前价格隐含了什么假设？</h2>
+<p>20 倍市盈率买入茅台，实际上你在"赌"什么？</p>
+<p><strong>简化计算</strong>：以 20 倍市盈率、2025 年每股收益约 65.5 元计算，当前股价约 1,315 元。如果市盈率维持 20 倍不变，股价的涨幅完全取决于盈利增速。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设情景</th>
+<th>年化净利增速</th>
+<th>5 年后每股收益</th>
+<th>股价（20 倍市盈率）</th>
+<th>5 年总回报（含分红）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>10%</td>
+<td>~105 元</td>
+<td>2,100 元</td>
+<td><strong>+80%（年化 ~12%）</strong></td>
+</tr>
+<tr>
+<td>中性</td>
+<td>7%</td>
+<td>~92 元</td>
+<td>1,840 元</td>
+<td><strong>+60%（年化 ~10%）</strong></td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>3%</td>
+<td>~76 元</td>
+<td>1,520 元</td>
+<td><strong>+35%（年化 ~6%）</strong></td>
+</tr>
+<tr>
+<td>极端悲观</td>
+<td>0%</td>
+<td>65.5 元</td>
+<td>1,310 元</td>
+<td><strong>+20%（纯分红，年化 ~4%）</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键发现</strong>：即使在极端悲观情景下（利润零增长），4% 的股息率也能提供每年 4% 的回报。<strong>股息率构成了估值的硬底</strong>。</p>
+<p>但如果市盈率从 20 倍<strong>压缩到 15 倍</strong>呢？</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>市盈率</th>
+<th>5 年后每股收益（7% 增速）</th>
+<th>对应股价</th>
+<th>5 年回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>市盈率维持 20 倍</td>
+<td>20</td>
+<td>92 元</td>
+<td>1,840 元</td>
+<td>+60%</td>
+</tr>
+<tr>
+<td><strong>市盈率压缩到 15 倍</strong></td>
+<td><strong>15</strong></td>
+<td>92 元</td>
+<td><strong>1,380 元</strong></td>
+<td><strong>+25%（含分红）</strong></td>
+</tr>
+<tr>
+<td>市盈率回升到 25 倍</td>
+<td>25</td>
+<td>92 元</td>
+<td>2,300 元</td>
+<td>+95%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>风险在于市盈率压缩。</strong> 如果市场认定茅台的增速永久性降到 5% 以下，15-18 倍市盈率并非不可能——那意味着股价在 1,200-1,400 元区间徘徊，几年不涨。</p>
+<hr />
+<h2 id="_2">三种估值方法的交叉验证</h2>
+<h3 id="_3">方法一：十年折现现金流</h3>
+<p>假设未来 5 年净利增速 10%、后 5 年 7%、永续增速 3%、折现率 9%（注：前 5 年 10% 增速高于第 03 篇中性预测的 7%，属偏乐观假设）：</p>
+<p><strong>每股内在价值 ≈ 1,820 元</strong></p>
+<p>若将前 5 年增速调为 7%（与中性预测一致），内在价值约 <strong>1,580 元</strong>。</p>
+<p><em>来源：ai-berkshire 茅台估值模型</em></p>
+<h3 id="_4">方法二：市盈率区间法</h3>
+<p>基于 2026 年预测每股收益约 70 元：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>市盈率</th>
+<th>对应股价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15 倍（历史低位）</td>
+<td>1,050 元</td>
+</tr>
+<tr>
+<td>20 倍（当前）</td>
+<td>1,400 元</td>
+</tr>
+<tr>
+<td><strong>25 倍（合理中枢）</strong></td>
+<td><strong>1,750 元</strong></td>
+</tr>
+<tr>
+<td>30 倍（偏高）</td>
+<td>2,100 元</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_5">方法三：股息率倒推</h3>
+<p>2025 年分红率 79%，每股派现约 51.8 元。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>目标股息率</th>
+<th>对应股价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3%（偏低，对应偏高估值）</td>
+<td>1,727 元</td>
+</tr>
+<tr>
+<td><strong>4%（当前）</strong></td>
+<td><strong>~1,295 元</strong></td>
+</tr>
+<tr>
+<td>5%（较高，对应较低估值）</td>
+<td>1,036 元</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_6">三种方法汇总</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>乐观假设</th>
+<th>中性假设</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>折现现金流（前5年增速10%/7%）</td>
+<td>~1,820 元</td>
+<td>~1,580 元</td>
+</tr>
+<tr>
+<td>市盈率法（25 倍/20 倍 × 70 元）</td>
+<td>~1,750 元</td>
+<td>~1,400 元</td>
+</tr>
+<tr>
+<td>股息率法（3.5%/4%）</td>
+<td>~1,480 元</td>
+<td>~1,295 元</td>
+</tr>
+<tr>
+<td><strong>综合中枢</strong></td>
+<td><strong>1,680-1,820 元</strong></td>
+<td><strong>1,400-1,580 元</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>当前股价 ~1,315 元。</strong> 如果你相信乐观假设（25 倍市盈率 + 10% 增速），安全边际约 25%。但如果你用中性假设（20 倍市盈率 + 7% 增速），综合中枢约 1,400-1,580 元，安全边际仅 <strong>6-17%——谈不上极端便宜</strong>。</p>
+<p>关键分歧在于：市场最终会给茅台多少倍市盈率？这取决于增速假设——年化 7% 的稳健龙头值 20 倍，年化 10% 的成长消费龙头值 25 倍。</p>
+<hr />
+<h2 id="_7">与同业和替代品的比较</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>标的</th>
+<th>市盈率</th>
+<th>净资产收益率</th>
+<th>股息率</th>
+<th>增速预期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>贵州茅台</strong></td>
+<td><strong>~20 倍</strong></td>
+<td><strong>~37%</strong></td>
+<td><strong>~4%</strong></td>
+<td>~7%</td>
+</tr>
+<tr>
+<td>五粮液</td>
+<td>~15 倍</td>
+<td>~22%</td>
+<td>~3.5%</td>
+<td>~5%</td>
+</tr>
+<tr>
+<td>泸州老窖</td>
+<td>~13 倍</td>
+<td>~28%</td>
+<td>~4%</td>
+<td>~3%</td>
+</tr>
+<tr>
+<td>10 年期国债</td>
+<td>—</td>
+<td>—</td>
+<td>2.3%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>沪深 300 指数</td>
+<td>~12 倍</td>
+<td>~11%</td>
+<td>~3%</td>
+<td>~6%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>茅台相对同业溢价约 30-50%</strong>（市盈率 20 倍 vs 五粮液 15 倍、泸州老窖 13 倍）。这个溢价合理吗？</p>
+<p>合理的部分：
+- 茅台的净资产收益率（37%）远超同业
+- 护城河深度不在一个量级
+- 业绩确定性最高</p>
+<p>不合理的部分：
+- 如果增速都降到 5% 以下，溢价是否还能维持？
+- 白酒行业如果整体进入存量竞争，龙头溢价通常会收窄</p>
+<p><strong>茅台的盈利收益率约 5%，比 10 年期国债高出约 2.7 个百分点。</strong> 这个风险溢价说不上丰厚——通常价值投资者要求 3-4 个百分点以上的溢价才会动手。</p>
+<hr />
+<h2 id="_8">三种情景下的投资回报</h2>
+<h3 id="60">情景一：温和复苏（概率 60%）</h3>
+<ul>
+<li>批价 2026 下半年站稳 1,700-1,800 元</li>
+<li>利润 2026 年 +3-5%，2027 年 +8-10%</li>
+<li>市盈率从 20 倍温和修复至 22 倍</li>
+<li><strong>5 年年化回报：~10-12%（利润增长 + 分红 + 温和估值修复）</strong></li>
+</ul>
+<h3 id="15">情景二：快速修复（概率 15%）</h3>
+<ul>
+<li>消费回暖，批价重回 2,000 元以上</li>
+<li>利润增速回到 10%+</li>
+<li>市盈率修复至 25 倍</li>
+<li><strong>5 年年化回报：~15-18%</strong></li>
+</ul>
+<h3 id="25">情景三：深度探底（概率 25%）</h3>
+<ul>
+<li>消费持续降级，批价再跌破 1,500 元</li>
+<li>利润 2026 年继续负增长</li>
+<li>市盈率维持 17-18 倍甚至压缩至 15 倍</li>
+<li><strong>5 年年化回报：~4-6%（主要靠分红）</strong></li>
+</ul>
+<p><strong>概率加权年化回报：约 9-10%。</strong> 比国债高出 7 个百分点，但不是暴利，更像是"确定性较高的中等回报"。</p>
+<hr />
+<h2 id="_9">什么价格值得买？</h2>
+<p>基于上述分析，画一张决策图：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>价格区间</th>
+<th>对应市盈率</th>
+<th>判断</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>&lt; 1,100 元</strong></td>
+<td>&lt; 15 倍</td>
+<td><strong>明显低估</strong>——股息率 &gt;5%，历史级别机会</td>
+<td>重仓</td>
+</tr>
+<tr>
+<td><strong>1,100-1,250 元</strong></td>
+<td>15-17 倍</td>
+<td><strong>偏低估</strong>——安全边际充足</td>
+<td>积极建仓</td>
+</tr>
+<tr>
+<td><strong>1,250-1,400 元</strong></td>
+<td>17-19 倍</td>
+<td><strong>合理偏低</strong>——当前位置附近</td>
+<td>分批建仓</td>
+</tr>
+<tr>
+<td>1,400-1,700 元</td>
+<td>19-23 倍</td>
+<td>合理区间</td>
+<td>持有，不追高</td>
+</tr>
+<tr>
+<td>1,700-2,000 元</td>
+<td>23-27 倍</td>
+<td>合理偏高</td>
+<td>减少仓位</td>
+</tr>
+<tr>
+<td>&gt; 2,000 元</td>
+<td>&gt; 27 倍</td>
+<td>偏贵</td>
+<td>等回调</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>当前 ~1,315 元处于"合理偏低"区间。</strong> 不算极端便宜（不是 2014 年那种 9 倍市盈率的"百年一遇"），但对长期投资者来说，是一个可以接受的建仓价格。</p>
+<hr />
+<h2 id="_10">这轮调整的真实定位</h2>
+<p>把当前的茅台放在更大的坐标里：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>2014 年 1 月</th>
+<th>2026 年 5 月</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>市盈率</td>
+<td>9 倍</td>
+<td>20 倍</td>
+</tr>
+<tr>
+<td>股息率</td>
+<td>3.7%</td>
+<td>~4%</td>
+</tr>
+<tr>
+<td>净资产收益率</td>
+<td>~31%</td>
+<td>~37%</td>
+</tr>
+<tr>
+<td>下行空间</td>
+<td>-20%</td>
+<td>-15%</td>
+</tr>
+<tr>
+<td>上行空间（5 年）</td>
+<td><strong>+1,000%</strong></td>
+<td><strong>+60-100%</strong></td>
+</tr>
+<tr>
+<td>性质</td>
+<td>戴维斯三击反转</td>
+<td>确定性资产的合理价位</td>
+</tr>
+<tr>
+<td>预期年化回报</td>
+<td>40%+</td>
+<td><strong>9-12%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>这不是"百年一遇"，是"十年一遇的合理买点"。</strong></p>
+<p>2014 年买茅台是"捡黄金"——估值极端低估 + 增速即将爆发。
+2026 年买茅台是"买国债替代品"——合理估值 + 稳健增长 + 4% 股息。</p>
+<p>两种都是好投资，但预期回报差了一个量级。</p>
+<hr />
+<h2 id="_11">终章总结</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>茅台到底是什么？</td>
+<td>一台全球顶级的消费品印钞机，正在经历增速下台阶 + 渠道重构</td>
+</tr>
+<tr>
+<td>凭什么赚这么多？</td>
+<td>社交货币属性 + 物理稀缺 + 先收钱后发货 + 极低资本开支</td>
+</tr>
+<tr>
+<td>增长还能持续多久？</td>
+<td>中性预测净利年化 ~7%，量受产能约束（年化 ~3%），价是主引擎（年化 ~5%）</td>
+</tr>
+<tr>
+<td>有哪些真实风险？</td>
+<td>代际消费转变（最大）、管理层治理（系统性）、行业拐点（不确定）</td>
+</tr>
+<tr>
+<td>当前贵不贵？</td>
+<td>合理偏低——不是极端便宜，但 5 年预期年化 9-12% + 4% 股息率</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_12">最终判断</h3>
+<p><strong>茅台是一门 4.5 分的好生意，当前是一个 3.5 分的投资机会。</strong></p>
+<ul>
+<li>"4.5 分的好生意"——91% 毛利率、零负债、不可复制的护城河，全球消费品的天花板</li>
+<li>"3.5 分的投资机会"——20 倍市盈率不算贵但不算极端便宜；7% 的增速不算快但有确定性；管理层治理是扣分项</li>
+</ul>
+<p>如果你追求"睡得着觉"的稳健回报（年化 9-12%，比国债高 7 个百分点），当前价位可以分批建仓。
+如果你追求更高的弹性回报，等 1,100-1,200 元（市盈率 15-17 倍）会更从容。
+如果你只靠分红，4% 的股息率已经接近长期国债收益率的两倍。</p>
+<p><strong>好东西值得持有，但不一定值得在任何价格买入。</strong> 茅台的生意质量不需要讨论，<strong>唯一值得花时间想的是价格。</strong></p>
+<hr />
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>关键信号</th>
+<th>触发条件</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>加仓信号</td>
+<td>批价站稳 1,700 元以上 + 经销商库存恢复正常 + 一季报预收款转正</td>
+<td>周期触底确认</td>
+</tr>
+<tr>
+<td>减仓信号</td>
+<td>连续两季度营收增速 &lt;3% + 批价跌破 1,500 元 + 新管理层出现重大争议</td>
+<td>基本面恶化</td>
+</tr>
+<tr>
+<td>长期警戒</td>
+<td>年轻消费者白酒饮用数据加速下降 + 白酒行业产量连续 10 年下滑</td>
+<td>结构性拐点确认</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_13">数据来源汇总</h2>
+<p>本系列核心数据来自：
+- 贵州茅台 2024 年报、2025 年报、2026 年一季报
+- 茅台官方公告（2026-03-30 提价公告、2026-05-16 非标提价公告）
+- ai-berkshire 内部研究底稿（产能研究、历史提价复盘、国际奢侈品涨价基准、利润拐点预测、两次调整对比）
+- 券商研报（中金、高盛、大摩、东吴、华创、国信、开源）
+- 公开市场行情数据</p>
+<hr />
+<p><em>本文是《看懂茅台》系列第 05 篇，也是终章。</em></p>
+<p><em>免责声明：本系列所有内容（包括数据分析、估值测算、情景预测及价格区间参考）均仅供研究参考，不构成任何形式的投资建议。股票投资存在风险，历史表现不代表未来收益。请在作出任何投资决策前自行判断或咨询专业人士。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/182781367df7.html">贵州茅台（600519.SH）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/cc5848a33699.html">茅台：10 年后吨价是现在的几倍，以及 2036 年利润推导</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/6fe91ae8beda.html">贵州茅台：年提价5%、基酒与扩产约束下的2036年利润</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/7ee64f0fa927.html">贵州茅台：年轻人还喝白酒吗，2036 年能赚多少钱？</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/38a9c82be7ef.html">茅台酒：基酒产量与 5 年后销量的关系，及 2036 年可销售吨数推导</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/1810203c51d0.html">核查记录：5%提价与产能补充</a><div class="meta">2026-09-25 · 底稿</div></li><li><a href="../r/453a65139351.html">核查说明：茅台需求与2036利润</a><div class="meta">2026-09-25 · 底稿</div></li><li><a href="../r/707730966f80.html">贵州茅台护城河、文化、需求与十年利润研究报告</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/a99fffd717dd.html">核查范围与复算</a><div class="meta">2026-09-07 · 导读</div></li><li><a href="../r/ac3332f16888.html">贵州茅台 2026 年半年度业绩说明会全文实录</a><div class="meta">2026-08-21 · 财报</div></li><li><a href="../r/a7f540a35746.html">贵州茅台（600519）1 / 3 / 5 / 10 年利润推演</a><div class="meta">2026-08-15 · 研究</div></li><li><a href="../r/c44cc84c3a8e.html">贵州茅台2026年中报解读</a><div class="meta">2026-08-15 · 公众号</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>

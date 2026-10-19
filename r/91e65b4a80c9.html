@@ -1,0 +1,472 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>四面楚歌 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
+window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
+</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><h1>四面楚歌</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E3%80%8A%E7%9C%8B%E6%87%82%E8%8B%B1%E4%BC%9F%E8%BE%BE%E3%80%8B/04-%E7%AB%9E%E4%BA%89%E4%B8%8E%E5%A8%81%E8%83%81-%E5%9B%9B%E9%9D%A2%E6%A5%9A%E6%AD%8C.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">英伟达面对的不是一个对手</a></li>
+<li><a href="#_2">威胁一：客户即对手——已从"未来威胁"变成"当下现实"</a><ul>
+<li><a href="#_3">四大自研芯片全景</a></li>
+<li><a href="#_4">"自研短期威胁被高估"——这个判断需要修正</a></li>
+</ul>
+</li>
+<li><a href="#amd">威胁二：博通——比 AMD 更危险的"幕后推手"</a></li>
+<li><a href="#amd_1">威胁三：AMD——性价比搅局者</a><ul>
+<li><a href="#_5">现状</a></li>
+<li><a href="#amd_2">AMD 的真正瓶颈</a></li>
+<li><a href="#intel">历史参照：Intel 的教训</a></li>
+</ul>
+</li>
+<li><a href="#ai-cuda">威胁四：AI 编程 + 开源编译器——CUDA 代码层的终结</a></li>
+<li><a href="#_6">威胁五：中国市场——从"已消化"变为"永久损失"</a><ul>
+<li><a href="#_7">短期：已实现的损失</a></li>
+<li><a href="#_8">长期：失去的市场</a></li>
+</ul>
+</li>
+<li><a href="#_9">护城河的精确分层——谁在翻墙，谁还被锁着</a></li>
+<li><a href="#_10">对定价权的影响</a></li>
+<li><a href="#_11">本篇结论</a></li>
+<li><a href="#_12">下期预告</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p>《看懂英伟达》系列 · 第 04 篇 · 竞争与威胁
+阅读时间约 14 分钟</p>
+</blockquote>
+<hr />
+<h2 id="_1">英伟达面对的不是一个对手</h2>
+<p>90% 市场份额、75% 毛利率——这两个数字本身就是一张悬赏令。全世界有钱有能力的公司，都有动力砸钱造一个替代品。不是因为意识形态，而是因为算盘：英伟达每赚 $100，其中 $75 是利润，这 $75 里有一大块本可以留在买方手里。</p>
+<p>英伟达面对的威胁来自 5 个方向，每个方向的威胁程度不同：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>威胁向量</th>
+<th>代表</th>
+<th>威胁等级</th>
+<th>时间表</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>客户自研芯片</td>
+<td>Google TPU、AWS Trainium、微软 Maia、Meta MTIA</td>
+<td><strong>最高</strong></td>
+<td>已在发生</td>
+</tr>
+<tr>
+<td>博通（帮客户造芯片）</td>
+<td>定制 ASIC 代工</td>
+<td><strong>高</strong></td>
+<td>加速中</td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>MI300X / MI355X / MI400</td>
+<td><strong>中</strong></td>
+<td>持续追赶</td>
+</tr>
+<tr>
+<td>AI 编程 + 开源编译器</td>
+<td>Claude Code、Triton、ROCm</td>
+<td><strong>中</strong></td>
+<td>侵蚀 CUDA 代码层</td>
+</tr>
+<tr>
+<td>中国本土替代</td>
+<td>华为昇腾</td>
+<td><strong>中</strong>（区域性）</td>
+<td>中国市场封闭化</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_2">威胁一：客户即对手——已从"未来威胁"变成"当下现实"</h2>
+<h3 id="_3">四大自研芯片全景</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>客户</th>
+<th>自研芯片</th>
+<th>能力</th>
+<th>规模（2026）</th>
+<th>关键合同</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Google</strong></td>
+<td>TPU Ironwood (v7)</td>
+<td><strong>训练 + 推理均可替代英伟达</strong></td>
+<td>9,216 芯片/Pod，42.5 EFLOPS</td>
+<td>Anthropic <strong>$500 亿+</strong>、Meta 租赁</td>
+</tr>
+<tr>
+<td><strong>AWS</strong></td>
+<td>Trainium2 / Trainium3</td>
+<td>推理已验证，训练部分验证</td>
+<td>Project Rainier <strong>50-100 万颗</strong></td>
+<td>Anthropic、OpenAI、Apple 均在使用</td>
+</tr>
+<tr>
+<td><strong>微软</strong></td>
+<td>Maia 200</td>
+<td><strong>纯推理芯片</strong></td>
+<td>已在 Iowa 部署</td>
+<td>服务 GPT-5.2</td>
+</tr>
+<tr>
+<td><strong>Meta</strong></td>
+<td>MTIA 300-500</td>
+<td>推荐排序推理</td>
+<td>数十万颗，每 6 个月迭代一代</td>
+<td>内部使用</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：Google Cloud Blog、AWS 官方、微软 Blog 2026-01、Meta 官方 2026-03、Bloomberg 2026-04-06</p>
+</blockquote>
+<p><strong>几个必须记住的事实</strong>：</p>
+<ol>
+<li><strong>Google 是唯一已证明可以完全不用英伟达训练前沿模型的公司</strong>——Gemini 3 全程在 TPU 上训练</li>
+<li><strong>Anthropic 已从英伟达的"增量大客户"变成了自研芯片的最大拥趸</strong>——50-100 万颗 Trainium2 + 40 万颗 TPU Ironwood，未来 GW 级算力全部押注非英伟达方案</li>
+<li><strong>TechCrunch 2026 年 3 月报道：Trainium 已赢得 Anthropic、OpenAI、甚至 Apple 的使用</strong>——AWS 的芯片从"内部替代"升级为"外部销售"</li>
+<li><strong>四家中只有 Google 验证了训练替代</strong>——其余三家主要替代推理端</li>
+</ol>
+<h3 id="_4">"自研短期威胁被高估"——这个判断需要修正</h3>
+<p>很多分析师说："Google 做了 10 年 TPU，仍是英伟达最大客户——自研替代速度比想象中慢。"</p>
+<p>这在 2024 年是对的。但 2025-2026 年发生了质变：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-11</td>
+<td>AWS 官宣 Project Rainier 50 万颗 Trainium2 上线</td>
+<td>从"测试"到"生产部署"</td>
+</tr>
+<tr>
+<td>2026-01</td>
+<td>微软 Maia 200 开始服务 GPT-5.2</td>
+<td>推理端替代进入生产</td>
+</tr>
+<tr>
+<td>2026-03</td>
+<td>Meta 官宣 MTIA 300/400/450/500 四代规划，每 6 个月一代</td>
+<td>比行业速度快 2 倍</td>
+</tr>
+<tr>
+<td>2026-04</td>
+<td>Anthropic 签下 40 万颗 TPU Ironwood、~$100 亿合同</td>
+<td><strong>GW 级合同 + SEC 披露 = 不再是传闻</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>判断：自研芯片已从"长期威胁"变成"当下现实"。2025 Q4-2026 Q2 是 ASIC 规模化生产部署的拐点。</strong></p>
+<hr />
+<h2 id="amd">威胁二：博通——比 AMD 更危险的"幕后推手"</h2>
+<p>AMD 是英伟达在公开市场上的直接竞争者。但<strong>博通（Broadcom）可能是更大的威胁</strong>——因为它不是在和英伟达竞争，而是在<strong>帮英伟达的客户造自己的芯片</strong>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>定制 AI 芯片客户数</td>
+<td><strong>6 家</strong>：Google、Meta、OpenAI、Anthropic + 2 家未公开（推测字节跳动、Apple）</td>
+</tr>
+<tr>
+<td>FY2025 AI 收入</td>
+<td><strong>$199 亿</strong>（+63%）</td>
+</tr>
+<tr>
+<td>FY2027 CEO 目标</td>
+<td><strong>&gt;$1,000 亿</strong></td>
+</tr>
+<tr>
+<td>积压订单</td>
+<td><strong>$730 亿</strong></td>
+</tr>
+<tr>
+<td>Google TPU 长约</td>
+<td>至 <strong>2031 年</strong></td>
+</tr>
+<tr>
+<td>OpenAI 合同</td>
+<td>"Titan" XPU，<strong>10GW</strong> 算力目标</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：CNBC 2025-12、Broadcom 财报、Next Platform</p>
+</blockquote>
+<p><strong>博通 AI 收入两年目标从 $199 亿增至 $1,000 亿+（约 5 倍），这个增量的每一分钱都对应着从英伟达 GPU 转向定制 ASIC 的市场转移。</strong></p>
+<p>博通的角色是"军火商"——它不直接和英伟达竞争，而是帮 Google 设计 TPU、帮 Meta 设计 MTIA、帮 OpenAI 设计 Titan。<strong>它的成功建立在英伟达的失败之上。</strong></p>
+<hr />
+<h2 id="amd_1">威胁三：AMD——性价比搅局者</h2>
+<p>AMD 不是英伟达最大的威胁（自研芯片才是），但它是最持久的。</p>
+<h3 id="_5">现状</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>AMD MI300X</th>
+<th>英伟达 B200</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HBM 容量</td>
+<td><strong>192 GB</strong></td>
+<td><strong>192 GB</strong></td>
+</tr>
+<tr>
+<td>内存带宽</td>
+<td>5.3 TB/s</td>
+<td><strong>8 TB/s</strong></td>
+</tr>
+<tr>
+<td>FP8 算力</td>
+<td>2,615 TFLOPS</td>
+<td><strong>~9,000 TFLOPS（稀疏）</strong></td>
+</tr>
+<tr>
+<td>价格</td>
+<td><strong>$10-15K</strong></td>
+<td>$35-45K</td>
+</tr>
+<tr>
+<td>互连带宽</td>
+<td>~896 GB/s</td>
+<td><strong>1.8 TB/s（NVLink 5）</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：AMD 官方、英伟达官方</p>
+</blockquote>
+<p><strong>AMD 的硬件单项指标在缩小差距，但英伟达在全栈整合上仍有 2-3 年的系统级领先。</strong></p>
+<h3 id="amd_2">AMD 的真正瓶颈</h3>
+<p>AMD 最大的问题不是硬件，而是<strong>软件</strong>。</p>
+<p>ROCm 与 CUDA 的差距从 2023 年的 2-3 倍缩窄到 2026 年的 10-30%——但"10-30% 的差距"在追求极致性能的训练场景中就是"不可接受"。</p>
+<p>更关键的是长尾生态：调试工具（AMD 没有 Nsight 级别的产品）、优化闭环（cuDNN 每代 GPU 手工调优到 90%+ 利用率）、框架集成（ROCm 在 PyTorch 中仍是二等公民，bug 修复落后 6-12 个月）。</p>
+<p><strong>AMD 的策略是"不和英伟达比极致，在性价比战场赢"</strong>——MI355X 在大批量推理场景的 TCO 已经反超英伟达。这在推理市场是有效的，但在训练市场几乎无效。</p>
+<h3 id="intel">历史参照：Intel 的教训</h3>
+<p>Intel 在 x86 服务器市场的份额从 2017 年的 <strong>98%</strong> 降至 2025 年的 <strong>73%</strong>（x86 内）。加上 ARM 服务器的侵蚀，Intel 的"广义份额"可能已降至 55-60%。</p>
+<p><strong>从 98% 降到 73% 用了约 8 年。</strong> Intel 的衰落很大程度因为自身执行失败（制程落后、错过移动端）。英伟达的执行力远强于 Intel——每年一代新品，主动防御。</p>
+<p><strong>但最大的教训是</strong>：Intel 的毛利率从约 60% 就足以吸引替代者。英伟达的毛利率高达 <strong>75%</strong>——替代动机只会更强。</p>
+<hr />
+<h2 id="ai-cuda">威胁四：AI 编程 + 开源编译器——CUDA 代码层的终结</h2>
+<p>这一点在第 02 篇已详细讨论，这里做一个总结：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>AI 编程能力</th>
+<th>CUDA→ROCm 迁移成本</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td>基础</td>
+<td>团队 + 数月</td>
+<td>CUDA 代码锁定坚固</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>能写 tensor core kernel</td>
+<td>1-2 人 + 数周</td>
+<td>开始松动</td>
+</tr>
+<tr>
+<td>2026</td>
+<td>能端到端移植</td>
+<td><strong>1 人 + 数小时</strong></td>
+<td><strong>代码锁定层基本消失</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>但系统级护城河（万卡通信、极致优化、全栈集成）仍然坚固</strong>。AI 工具能翻译简单 kernel，但攻不下 NCCL 级别的分布式系统优化。</p>
+<p><strong>一个有趣的反直觉现象</strong>：互联网上 99% 的 GPU 代码都是 CUDA 写的。这意味着 AI 大模型的训练数据里 CUDA 代码远多于 ROCm 代码——<strong>AI 写 CUDA 比写 ROCm 更擅长</strong>。这是英伟达的"反向飞轮"——AI 编程越发达，CUDA 生态反而越强化。</p>
+<hr />
+<h2 id="_6">威胁五：中国市场——从"已消化"变为"永久损失"</h2>
+<h3 id="_7">短期：已实现的损失</h3>
+<ul>
+<li>2025 年 Q1：美国政府叫停 H20 对华出货，英伟达计提 <strong>$45 亿</strong>库存减值 + 损失 $25 亿可发货收入</li>
+<li>此前的 Trump 首禁已导致 <strong>$55 亿</strong> write-off</li>
+<li>2025 年 7 月政策逆转，H20 恢复出货</li>
+<li>B30A（阉割版 Blackwell）仍需获批</li>
+</ul>
+<h3 id="_8">长期：失去的市场</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>华为昇腾 910C 2026 年产量目标</td>
+<td><strong>60 万颗</strong>（约 2025 年的 2 倍）</td>
+</tr>
+<tr>
+<td>Ascend 950DT SuperCluster</td>
+<td>524 EFLOPS FP8（2026 Q4 出货）</td>
+</tr>
+<tr>
+<td>CANN（华为版 CUDA）开源</td>
+<td>2025 年 12 月 31 日</td>
+</tr>
+<tr>
+<td>华为生态投入</td>
+<td>5 年 <strong>$21 亿/年</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>数据来源：TrendForce 2025-09、华为官方 HC 大会</p>
+</blockquote>
+<p><strong>中国 AI 算力市场潜在每年 $200-500 亿——英伟达正在被永久性排除在外。</strong> 这不是短期政策波动，而是中美技术脱钩的结构性后果。</p>
+<p><strong>反方观点</strong>：中国市场在英伟达总收入中的占比已降至约 3%，已基本被消化。B30A 如果获批，仍有一定的增量空间。</p>
+<p><strong>反面的反面</strong>：3% 的收入占比掩盖了一个事实——中国市场的增量 TAM 可能是英伟达失去的最大一块。如果没有出口管制，英伟达每年可以多卖 $200-500 亿——这是被永久封锁的增长空间。</p>
+<hr />
+<h2 id="_9">护城河的精确分层——谁在翻墙，谁还被锁着</h2>
+<p>把所有竞争威胁综合起来，英伟达的用户群可以分成三类：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>用户群体</th>
+<th>CUDA 护城河</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Google</strong></td>
+<td>已脱离</td>
+<td>Gemini 3 全 TPU 训练，JAX/XLA 完整替代</td>
+</tr>
+<tr>
+<td><strong>AWS / Anthropic</strong></td>
+<td>正在脱离</td>
+<td>百万颗 Trainium2，但前沿训练未完全验证</td>
+</tr>
+<tr>
+<td><strong>Meta</strong></td>
+<td>推理脱离，训练锁定</td>
+<td>60 万颗 H100 训练不可替代，MTIA 只做推理</td>
+</tr>
+<tr>
+<td><strong>微软</strong></td>
+<td>推理脱离，训练锁定</td>
+<td>Maia 200 纯推理，训练仍深度依赖英伟达</td>
+</tr>
+<tr>
+<td><strong>OpenAI</strong></td>
+<td>中期脱离</td>
+<td>Broadcom 合作 Titan XPU 2027 部署</td>
+</tr>
+<tr>
+<td><strong>创业公司 / 大学 / 研究机构</strong></td>
+<td><strong>深度锁定</strong></td>
+<td>没钱没人自研，CUDA 是唯一选择</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>护城河从顶部瓦解——最大的 5-6 个客户正在翻越城墙；但全世界 99% 的 AI 开发者仍被锁在城里。</strong></p>
+<p>问题是：那 5-6 个客户占了英伟达 <strong>61%</strong> 的收入。</p>
+<hr />
+<h2 id="_10">对定价权的影响</h2>
+<p>以前英伟达是<strong>收费桥</strong>——唯一的路，随便定价。以后英伟达是<strong>最好的桥</strong>——还有其他桥，但它最快最宽。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>之前</th>
+<th>之后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>客户想买 AI 芯片 → 只能找英伟达</td>
+<td>客户 → 英伟达<strong>或</strong> TPU / Trainium / Maia</td>
+</tr>
+<tr>
+<td>毛利率 78%，无人议价</td>
+<td>客户有筹码："你不降价我就买 TPU"</td>
+</tr>
+<tr>
+<td>定价权来自垄断</td>
+<td>定价权来自"最好"——但"最好"需要每年证明</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>定价权不会一夜消失</strong>。但从 78% 降到 71%（FY2025→FY2026）已经是信号。中性预期下，5 年后毛利率可能稳定在 <strong>65-70%</strong> 区间。</p>
+<hr />
+<h2 id="_11">本篇结论</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>威胁</th>
+<th>短期（1-2 年）</th>
+<th>中期（3-5 年）</th>
+<th>长期（5-10 年）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>客户自研芯片</td>
+<td>推理端开始替代</td>
+<td>训练端开始松动</td>
+<td>重大侵蚀</td>
+</tr>
+<tr>
+<td>博通</td>
+<td>订单加速</td>
+<td>收入可达 $1,000 亿+（直接对应英伟达流失）</td>
+<td>成为 AI 芯片第二极</td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>推理性价比领先</td>
+<td>训练端仍差距明显</td>
+<td>持续缩小差距</td>
+</tr>
+<tr>
+<td>AI 编程 + 编译器</td>
+<td>代码层侵蚀</td>
+<td>系统级开始松动</td>
+<td>CUDA 锁定基本消失</td>
+</tr>
+<tr>
+<td>中国市场</td>
+<td>已损失</td>
+<td>永久封锁</td>
+<td>TAM 永久失去</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>综合判断</strong>：英伟达 2-3 年内训练端安全，但推理端已在加速流失。5 年视角下，"近垄断"将变为"最大玩家但非垄断"。<strong>这家公司不会衰落——但它的超额垄断利润正在被结构性压缩。</strong></p>
+<hr />
+<h2 id="_12">下期预告</h2>
+<p>最后一篇是终章——<strong>风险、估值与决策</strong>。</p>
+<p>把所有分析综合起来，回答最终的投资问题：</p>
+<ul>
+<li>AI 资本开支周期会在什么时候见顶？</li>
+<li>当前 $5.4 万亿市值需要什么样的未来才能支撑？</li>
+<li>DeepSeek 事件告诉我们什么？</li>
+<li>段永平为什么敢买 7.7% 但不敢买 30%？</li>
+<li>如果判断错了，安全垫有多厚？</li>
+</ul>
+<hr />
+<p><em>本文是《看懂英伟达》系列第 04 篇。</em>
+<em>本系列不构成任何投资建议。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/12be4daf50fb.html">审计说明</a><div class="meta">2026-09-07 · 底稿</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/fc0dae7fdd42.html">英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</a><div class="meta">2026-08-28 · 财报</div></li><li><a href="../r/5e4b7e854e9f.html">07 增量更新底稿（2026-07-14 → 2026-08-01）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/6e56cabdf58e.html">《看懂英伟达》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/6601b82f2d5a.html">06 管理层评估 + 当前估值与卖方观点（研究底稿）</a><div class="meta">2026-07-14 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
