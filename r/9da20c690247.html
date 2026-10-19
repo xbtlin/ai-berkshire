@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>拼多多（PDD）研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/拼多多/index.html">拼多多</a></div><h1>拼多多（PDD）研究报告</h1><div class="meta"><a href="../companies/拼多多/index.html">拼多多</a> ｜ 2026-09-24 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/%E6%8B%BC%E5%A4%9A%E5%A4%9A-AI%E4%B8%8E%E4%B8%89%E5%B9%B4%E5%8D%81%E5%B9%B4%E5%88%A9%E6%B6%A6%E7%A0%94%E7%A9%B6-20260924.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>拼多多（PDD）研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/拼多多/index.html">拼多多</a></div><div class="layout"><div><h1>拼多多（PDD）研究报告</h1><div class="meta"><a href="../companies/拼多多/index.html">拼多多</a> ｜ 2026-09-24 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/%E6%8B%BC%E5%A4%9A%E5%A4%9A-AI%E4%B8%8E%E4%B8%89%E5%B9%B4%E5%8D%81%E5%B9%B4%E5%88%A9%E6%B6%A6%E7%A0%94%E7%A9%B6-20260924.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#ai">AI研究偏见自觉</a></li>
 <li><a href="#_1">第一步：当前盈利基数</a><ul>
@@ -1105,6 +1115,55 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 <li><a href="https://digital-strategy.ec.europa.eu/en/news/commission-fines-temu-eu200-million-breaching-digital-services-act">S19：欧委会对Temu的DSA罚款</a>，2026-05-28。</li>
 <li><a href="https://competition-policy.ec.europa.eu/foreign-subsidies-regulation/latest-news_en?prefLang=ga">S20：欧委会FSR官方消息索引</a>，2026-07-31事项。</li>
 </ul>
-<p>复算附件：<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/AI%E5%88%A9%E6%B6%A6%E6%A8%A1%E5%9E%8B-20260924/model.py">模型代码</a>、<a href="../files/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/AI%E5%88%A9%E6%B6%A6%E6%A8%A1%E5%9E%8B-20260924/model-results.json">全部假设与结果</a>、<a href="../files/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/AI%E5%88%A9%E6%B6%A6%E6%A8%A1%E5%9E%8B-20260924/validation.json">数据与算术校验</a>、<a href="../r/ea06217eed0b.html">审计说明</a>。</p>
+<p>复算附件：<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/AI%E5%88%A9%E6%B6%A6%E6%A8%A1%E5%9E%8B-20260924/model.py">模型代码</a>、<a href="../files/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/AI%E5%88%A9%E6%B6%A6%E6%A8%A1%E5%9E%8B-20260924/model-results.json">全部假设与结果</a>、<a href="../files/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/AI%E5%88%A9%E6%B6%A6%E6%A8%A1%E5%9E%8B-20260924/validation.json">数据与算术校验</a>、<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/AI%E5%88%A9%E6%B6%A6%E6%A8%A1%E5%9E%8B-20260924/audit-notes.md">审计说明</a>。</p>
 <p>审计范围包括历史关键数据双源比对、固定种子抽样、情景公式及防重复计算检查。模型假设只核验计算和标注，不冒充外部事实核验。资料不足之处包括实时精确股本、分业务利润与AI投入产出；均未宣称完全核实。</p>
-<p>本报告用于学习研究，不构成保证收益的投资建议。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/add3b8034f65.html">拼多多控股（PDD Holdings，PDD.US）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/581cb36c9940.html">拼多多2036：活下来没有悬念，多赚要看两个变量</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/a4afe86cabe3.html">黄峥与拼多多控制权：谁在掌舵、他还能不能回来</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/2ef823d3a551.html">拼多多（PDD Holdings）投资研究 — 2026.04.07</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/ea06217eed0b.html">拼多多AI与利润研究：审计说明</a><div class="meta">2026-09-24 · 底稿</div></li><li><a href="../r/eec9a3d4deca.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/6c5fe33f9647.html">PDD研究来源与复核记录</a><div class="meta">2026-09-06 · 底稿</div></li><li><a href="../r/a07290b67941.html">拼多多2026Q2：6-K原件逐行核对底稿</a><div class="meta">2026-08-26 · 底稿</div></li><li><a href="../r/4fc48a244b16.html">拼多多2026年二季报深度解读：一笔找不到科目的投入</a><div class="meta">2026-08-25 · 财报</div></li><li><a href="../r/b870b0a0d5b4.html">拼多多2026年中报解读</a><div class="meta">2026-08-25 · 公众号</div></li><li><a href="../r/7a2822470350.html">拼多多三大报表解析：从交易所原件到逐项含义</a><div class="meta">2026-08-24 · 财报</div></li><li><a href="../r/582e3d2622ed.html">Temu——一个估值 0 到 700 亿美元的政治期权</a><div class="meta">2026-07-13 · 深度系列</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<p>本报告用于学习研究，不构成保证收益的投资建议。</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/add3b8034f65.html">拼多多控股（PDD Holdings，PDD.US）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/581cb36c9940.html">拼多多2036：活下来没有悬念，多赚要看两个变量</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/a4afe86cabe3.html">黄峥与拼多多控制权：谁在掌舵、他还能不能回来</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/2ef823d3a551.html">拼多多（PDD Holdings）投资研究 — 2026.04.07</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/b870b0a0d5b4.html">拼多多2026年中报解读</a><div class="meta">2026-08-25 · 公众号</div></li><li><a href="../r/7a2822470350.html">拼多多三大报表解析：从交易所原件到逐项含义</a><div class="meta">2026-08-24 · 财报</div></li><li><a href="../r/7b0e339dcb86.html">拼多多（PDD Holdings, NASDAQ: PDD）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/0e96a7d52297.html">PDD Holdings（拼多多）四大师综合投资研究</a><div class="meta">2026-07-02 · 研究</div></li><li><a href="../r/ea08984766d5.html">黄峥公众号：如创业的投资和如投资的创业</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/4e9d63b6e354.html">PDD研究覆盖度评估：信息缺口分析</a><div class="meta">2026-06-27 · 研究</div></li><li><a href="../r/20ae084f0438.html">核心中概股与美股 P/FCF 对比</a><div class="meta">2026-06-26 · 横评对比</div></li><li><a href="../r/2a4a8028eaf6.html">拼多多4200亿现金之谜：一场延迟满足的实验</a><div class="meta">2026-06-26 · 公众号</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#ai">AI研究偏见自觉</a></li>
+<li><a href="#_1">第一步：当前盈利基数</a><ul>
+<li><a href="#1">1. 从高速扩张转向利润分配问题</a></li>
+<li><a href="#2">2. 现金多，但三个口径不是一回事</a></li>
+</ul>
+</li>
+<li><a href="#_2">第二步：生意本质与护城河</a></li>
+<li><a href="#_3">第三步：竞争格局决定利润上限</a><ul>
+<li><a href="#1_1">1. 国内进入存量竞争，不能用收入直接算份额</a></li>
+<li><a href="#2-temuamazon">2. Temu的对手不是只有一个Amazon</a></li>
+<li><a href="#3-ai">3. AI购物入口的三种格局</a></li>
+</ul>
+</li>
+<li><a href="#ai_1">第四步：AI究竟能增加多少钱</a><ul>
+<li><a href="#1_2">1. 先定义反事实，避免把同一收益算三次</a></li>
+<li><a href="#2-202950">2. 2029年基准桥接：为什么是约50亿元税后增量</a></li>
+<li><a href="#3-ai_1">3. 未来三年AI的独立影响</a></li>
+</ul>
+</li>
+<li><a href="#20272029">第五步：2027—2029年完整利润情景</a><ul>
+<li><a href="#1_3">1. 起点与假设</a></li>
+<li><a href="#2_1">2. 结果</a></li>
+</ul>
+</li>
+<li><a href="#2036">第六步：2036年年利润是多少</a><ul>
+<li><a href="#1_4">1. 从收入与竞争经济性推导，而非套历史复利</a></li>
+<li><a href="#2_2">2. 三种不同的竞争终局</a></li>
+<li><a href="#3">3. 哪个变量更重要</a></li>
+</ul>
+</li>
+<li><a href="#_4">第七步：反方、监管与管理层</a><ul>
+<li><a href="#1_5">1. 最强反方</a></li>
+<li><a href="#2_3">2. 已发生的监管变化</a></li>
+<li><a href="#3_1">3. 管理层：执行力与股东回报分开评分</a></li>
+</ul>
+</li>
+<li><a href="#_5">第八步：估值与行动条件</a><ul>
+<li><a href="#1_6">1. 股价和股本口径</a></li>
+<li><a href="#2-2029">2. 用2029情景估值，不把现金重复加一次</a></li>
+<li><a href="#3_2">3. 四维评分与决策</a></li>
+<li><a href="#4">4. 何时上调或下调模型</a></li>
+</ul>
+</li>
+<li><a href="#ai_2">AI分析置信度与投资确定性</a></li>
+<li><a href="#_6">数据来源与审计记录</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

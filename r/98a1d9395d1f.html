@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>技术红利属于谁 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/灵境万维/index.html">灵境万维</a></div><h1>技术红利属于谁</h1><div class="meta"><a href="../companies/灵境万维/index.html">灵境万维</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%81%B5%E5%A2%83%E4%B8%87%E7%BB%B4-team-20260512/%E3%80%8A%E7%9C%8B%E6%87%82%E7%81%B5%E5%A2%83%E4%B8%87%E7%BB%B4%E3%80%8B/02-%E4%BA%A7%E5%93%81%E4%B8%8E%E6%8A%80%E6%9C%AF-%E6%8A%80%E6%9C%AF%E7%BA%A2%E5%88%A9%E5%B1%9E%E4%BA%8E%E8%B0%81.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>技术红利属于谁 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/灵境万维/index.html">灵境万维</a></div><div class="layout"><div><h1>技术红利属于谁</h1><div class="meta"><a href="../companies/灵境万维/index.html">灵境万维</a> ｜ 2026-05-22 · 深度系列 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%81%B5%E5%A2%83%E4%B8%87%E7%BB%B4-team-20260512/%E3%80%8A%E7%9C%8B%E6%87%82%E7%81%B5%E5%A2%83%E4%B8%87%E7%BB%B4%E3%80%8B/02-%E4%BA%A7%E5%93%81%E4%B8%8E%E6%8A%80%E6%9C%AF-%E6%8A%80%E6%9C%AF%E7%BA%A2%E5%88%A9%E5%B1%9E%E4%BA%8E%E8%B0%81.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#ai">AI 漫剧到底是什么</a></li>
 <li><a href="#_1">灵境万维的技术路线</a><ul>
@@ -214,4 +224,30 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 </ul>
 <hr />
 <p><em>本文是《看懂灵境万维》系列第 02 篇。后续 2 篇将陆续推出。</em>
-<em>本系列不构成任何投资建议。所有数据来源已在文中标注，估算值均标注"估计"或"估算"。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/0af2f656ed6a.html">三个必须想清楚的问题</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/76b673e90e74.html">大厂碾压下的生存空间</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/c9cbbb0c0da9.html">一家踩在风口上的内容工厂</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/c35224e6d399.html">《看懂灵境万维》系列说明</a><div class="meta">2026-05-21 · 底稿</div></li><li><a href="../r/822362fdb553.html">灵境万维（灵境AI）投资研究报告</a><div class="meta">2026-05-12 · 研究</div></li><li><a href="../r/bf9a375380fb.html">灵境万维 风险评估与管理层质量分析</a><div class="meta">2026-05-12 · 研究</div></li><li><a href="../r/af8fe0d959fb.html">灵境万维：商业模式、护城河与用户价值分析</a><div class="meta">2026-05-12 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+<em>本系列不构成任何投资建议。所有数据来源已在文中标注，估算值均标注"估计"或"估算"。</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/0af2f656ed6a.html">三个必须想清楚的问题</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/76b673e90e74.html">大厂碾压下的生存空间</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/c9cbbb0c0da9.html">一家踩在风口上的内容工厂</a><div class="meta">2026-05-22 · 深度系列</div></li><li><a href="../r/c35224e6d399.html">《看懂灵境万维》系列说明</a><div class="meta">2026-05-21 · 导读</div></li><li><a href="../r/822362fdb553.html">灵境万维（灵境AI）投资研究报告</a><div class="meta">2026-05-12 · 研究</div></li><li><a href="../r/bf9a375380fb.html">灵境万维 风险评估与管理层质量分析</a><div class="meta">2026-05-12 · 研究</div></li><li><a href="../r/af8fe0d959fb.html">灵境万维：商业模式、护城河与用户价值分析</a><div class="meta">2026-05-12 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#ai">AI 漫剧到底是什么</a></li>
+<li><a href="#_1">灵境万维的技术路线</a><ul>
+<li><a href="#ai_1">全链路 AI 生产线</a></li>
+<li><a href="#_2">生产效率</a></li>
+</ul>
+</li>
+<li><a href="#_3">技术壁垒的三层追问</a><ul>
+<li><a href="#_4">第一层：这些效率提升是真的吗？</a></li>
+<li><a href="#_5">第二层：技术壁垒是灵境万维独有的吗？</a></li>
+<li><a href="#_6">第三层：三年后，灵境万维的技术还有多少价值？</a></li>
+</ul>
+</li>
+<li><a href="#_7">与浙江大学的合作：加分项，但不是决定性因素</a></li>
+<li><a href="#_8">"数据飞轮"是真命题还是话术？</a></li>
+<li><a href="#_9">抄袭风波：内容工厂的结构性隐患</a></li>
+<li><a href="#_10">本篇核心判断</a><ul>
+<li><a href="#1">1. 效率提升是真实的</a></li>
+<li><a href="#2">2. 但效率提升不是灵境万维独有的</a></li>
+<li><a href="#3-ai">3. 最大的不确定性：通用 AI 工具会不会"一键替代"整条生产线</a></li>
+</ul>
+</li>
+<li><a href="#_11">下期预告</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

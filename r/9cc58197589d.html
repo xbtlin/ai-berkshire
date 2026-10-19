@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>看懂 Kimi K3：2.8 万亿参数的开源前沿模型 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型技术/index.html">大模型技术</a></div><h1>看懂 Kimi K3：2.8 万亿参数的开源前沿模型</h1><div class="meta"><a href="../topics/大模型技术/index.html">大模型技术</a> ｜ 2026-07-20 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF/Kimi-K3%E6%B7%B1%E5%BA%A6%E8%A7%A3%E8%AF%BB-%E6%9E%B6%E6%9E%84%E5%88%9B%E6%96%B0%E4%B8%8E%E7%9C%9F%E5%AE%9E%E6%B0%B4%E5%B9%B3-20260720.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>看懂 Kimi K3：2.8 万亿参数的开源前沿模型 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型技术/index.html">大模型技术</a></div><div class="layout"><div><h1>看懂 Kimi K3：2.8 万亿参数的开源前沿模型</h1><div class="meta"><a href="../topics/大模型技术/index.html">大模型技术</a> ｜ 2026-07-20 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF/Kimi-K3%E6%B7%B1%E5%BA%A6%E8%A7%A3%E8%AF%BB-%E6%9E%B6%E6%9E%84%E5%88%9B%E6%96%B0%E4%B8%8E%E7%9C%9F%E5%AE%9E%E6%B0%B4%E5%B9%B3-20260720.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">一句话总结</a></li>
 <li><a href="#_2">一、基本档案</a></li>
@@ -170,4 +180,30 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 - Latent.Space：https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest
 - Simon Willison：https://simonwillison.net/2026/Jul/16/kimi-k3/
 - The Decoder（定价评论）：https://the-decoder.com/kimis-open-model-k3-nears-gpt-5-6-sol-and-fable-5-while-signaling-the-end-of-super-cheap-chinese-ai/
-- Arena 前端盲测：https://x.com/arena/status/2077824029126504525</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/558d98e7ee09.html">2025-2026年基础大模型训练方法论综述：从DeepSeek V4到Kimi K2.5</a><div class="meta">2026-07-13 · 研究</div></li><li><a href="../r/b48c4181ab3e.html">2025-2026年基础大模型训练方法论综述：从DeepSeek V4到Kimi K2.5</a><div class="meta">2026-07-13 · 研究</div></li><li><a href="../r/5cc668ee9b95.html">扩散语言模型（diffusion LLM）技术路线综述：与自回归（AR）路线的对比</a><div class="meta">2026-07-06 · 横评对比</div></li><li><a href="../r/e7623dd944a2.html">Mid-train 技术综述与落地手册：面向有 post-train 经验的基模团队</a><div class="meta">2026-06-29 · 研究</div></li><li><a href="../r/eadd05c9ea81.html">Mid-train 技术综述与落地手册：面向有 post-train 经验的基模团队</a><div class="meta">2026-06-29 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+- Arena 前端盲测：https://x.com/arena/status/2077824029126504525</p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/b48c4181ab3e.html">2025-2026年基础大模型训练方法论综述：从DeepSeek V4到Kimi K2.5</a><div class="meta">2026-07-13 · 研究</div></li><li><a href="../r/5cc668ee9b95.html">扩散语言模型（diffusion LLM）技术路线综述：与自回归（AR）路线的对比</a><div class="meta">2026-07-06 · 横评对比</div></li><li><a href="../r/e7623dd944a2.html">Mid-train 技术综述与落地手册：面向有 post-train 经验的基模团队</a><div class="meta">2026-06-29 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">一句话总结</a></li>
+<li><a href="#_2">一、基本档案</a></li>
+<li><a href="#k2">二、架构创新：相对 K2 改了什么</a><ul>
+<li><a href="#0-kv-mla">0. 预备知识：注意力、KV 缓存与 MLA</a></li>
+<li><a href="#1-kimi-delta-attentionkda-34">1. Kimi Delta Attention（KDA）：把 3/4 的注意力层换成线性注意力</a></li>
+<li><a href="#2-attention-residualsattnres">2. Attention Residuals（AttnRes）：让深层网络能"回头查任何一层"</a></li>
+<li><a href="#3-stable-latentmoe896">3. Stable LatentMoE：896 个专家与分位数负载均衡</a></li>
+<li><a href="#4-per-head-muon-situ">4. Per-Head Muon 优化器 + SiTU 激活函数</a></li>
+<li><a href="#5-sft-mxfp4-mxfp8">5. 从 SFT 阶段起的量化感知训练（MXFP4 权重 + MXFP8 激活）</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、真实水平：独立评测怎么说</a><ul>
+<li><a href="#artificial-analysis2026-07-17">独立评测（Artificial Analysis，2026-07-17）</a></li>
+<li><a href="#_4">社区盲测</a></li>
+<li><a href="#_5">厂商自报基准（未独立复现，谨慎采信）</a></li>
+<li><a href="#_6">综合判断</a></li>
+</ul>
+</li>
+<li><a href="#_7">四、定价与开源：便宜中国模型时代的落幕信号</a></li>
+<li><a href="#agent">五、给 Agent / 基模方向从业者的几点启示</a></li>
+<li><a href="#_8">六、信息可信度分级与待解问题</a></li>
+<li><a href="#_9">参考资料</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
