@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CUDA 护城河三问精简版：本质、AI 编程冲击、英伟达全部护城河清单 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><h1>CUDA 护城河三问精简版：本质、AI 编程冲击、英伟达全部护城河清单</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-04-24 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/CUDA%E6%8A%A4%E5%9F%8E%E6%B2%B3%E4%B8%89%E9%97%AE%E7%B2%BE%E7%AE%80%E7%89%88-20260424.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>CUDA 护城河三问精简版：本质、AI 编程冲击、英伟达全部护城河清单 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><div class="layout"><div><h1>CUDA 护城河三问精简版：本质、AI 编程冲击、英伟达全部护城河清单</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-04-24 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/CUDA%E6%8A%A4%E5%9F%8E%E6%B2%B3%E4%B8%89%E9%97%AE%E7%B2%BE%E7%AE%80%E7%89%88-20260424.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#cuda">一、CUDA 护城河具体是什么</a></li>
 <li><a href="#ai">二、AI 编程之后护城河如何变化</a><ul>
@@ -236,4 +246,25 @@ window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;
 </table></div>
 <p><strong>一句话</strong>：护城河仍是计算机行业近 30 年最深的之一，但租金会被慢慢压低；不必恐慌减仓，也别加重仓位，<strong>观察 Rubin Ultra 2027 H2 + OpenAI Titan 量产</strong>作为再评估窗口。</p>
 <hr />
-<p><em>ai-berkshire | 详细版见 <code>英伟达推理护城河与CUDA护城河-20260424.md</code> 及 4 份子报告</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/12be4daf50fb.html">审计说明</a><div class="meta">2026-09-07 · 底稿</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/fc0dae7fdd42.html">英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</a><div class="meta">2026-08-28 · 财报</div></li><li><a href="../r/5e4b7e854e9f.html">07 增量更新底稿（2026-07-14 → 2026-08-01）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/6e56cabdf58e.html">《看懂英伟达》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 底稿</div></li><li><a href="../r/6601b82f2d5a.html">06 管理层评估 + 当前估值与卖方观点（研究底稿）</a><div class="meta">2026-07-14 · 底稿</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:40 UTC</footer></body></html>
+<p><em>ai-berkshire | 详细版见 <code>英伟达推理护城河与CUDA护城河-20260424.md</code> 及 4 份子报告</em></p></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/fc0dae7fdd42.html">英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</a><div class="meta">2026-08-28 · 财报</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/6e56cabdf58e.html">《看懂英伟达》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 导读</div></li><li><a href="../r/876768f83b1f.html">多少钱值得买，什么信号必须卖（系列终章）</a><div class="meta">2026-07-14 · 深度系列</div></li><li><a href="../r/80e643b685e3.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-07-14 · 财报</div></li><li><a href="../r/96dc8aa5b048.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-07-14 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#cuda">一、CUDA 护城河具体是什么</a></li>
+<li><a href="#ai">二、AI 编程之后护城河如何变化</a><ul>
+<li><a href="#ai-2024-2026">AI 编程能力进展（2024 → 2026）</a></li>
+<li><a href="#_1">转译性能保留率</a></li>
+<li><a href="#_2">哪些被削弱、哪些仍坚固</a></li>
+<li><a href="#5-10">5-10 年演化</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、英伟达的护城河有哪些（综合清单）</a><ul>
+<li><a href="#1-5-10">1. 软件生态（最深，5-10 年）</a></li>
+<li><a href="#2-1-2">2. 硬件性能领先（中-强，1-2 年）</a></li>
+<li><a href="#3">3. 客户惯性 + 安装基数（强）</a></li>
+<li><a href="#4-2-3">4. 系统化销售（独有，2-3 年护城河）</a></li>
+<li><a href="#5">5. 供应链 + 防御性收购（中）</a></li>
+</ul>
+</li>
+<li><a href="#_4">四、对当前持仓的判断</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>

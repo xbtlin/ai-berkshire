@@ -1,7 +1,17 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mid-train 技术综述与落地手册：面向有 post-train 经验的基模团队 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
-(function(){var k='aib-size',h=document.documentElement;var s=localStorage.getItem(k);if(s)h.className=s;
-window.setSize=function(c){h.className=c;localStorage.setItem(k,c);return false;}})();
-</script></head><body><nav class="top"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><span class="size">字号 <a href="#" onclick="return setSize('s1')">小</a><a href="#" onclick="return setSize('')">中</a><a href="#" onclick="return setSize('s3')">大</a><a href="#" onclick="return setSize('s4')">特大</a></span></nav><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型技术/index.html">大模型技术</a></div><h1>Mid-train 技术综述与落地手册：面向有 post-train 经验的基模团队</h1><div class="meta"><a href="../topics/大模型技术/index.html">大模型技术</a> ｜ 2026-06-29 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF/mid-train%E6%8A%80%E6%9C%AF%E7%BB%BC%E8%BF%B0-%E5%9F%BA%E6%A8%A1%E5%9B%A2%E9%98%9F%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97-20260629.md">GitHub 原文</a></div><details><summary>目录</summary><div class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>Mid-train 技术综述与落地手册：面向有 post-train 经验的基模团队 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+</script></head><body><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/大模型技术/index.html">大模型技术</a></div><div class="layout"><div><h1>Mid-train 技术综述与落地手册：面向有 post-train 经验的基模团队</h1><div class="meta"><a href="../topics/大模型技术/index.html">大模型技术</a> ｜ 2026-06-29 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF/mid-train%E6%8A%80%E6%9C%AF%E7%BB%BC%E8%BF%B0-%E5%9F%BA%E6%A8%A1%E5%9B%A2%E9%98%9F%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97-20260629.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
 <ul>
 <li><a href="#_1">使用导航 / 主线地图</a></li>
 <li><a href="#0">0. 摘要</a><ul>
@@ -3083,4 +3093,112 @@ next_action:
 <td>后续若新增案例或论文，应继续用同一套 claim/source matrix 和 gate 口径维护</td>
 </tr>
 </tbody>
-</table></div></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/9cc58197589d.html">看懂 Kimi K3：2.8 万亿参数的开源前沿模型</a><div class="meta">2026-07-20 · 研究</div></li><li><a href="../r/558d98e7ee09.html">2025-2026年基础大模型训练方法论综述：从DeepSeek V4到Kimi K2.5</a><div class="meta">2026-07-13 · 研究</div></li><li><a href="../r/b48c4181ab3e.html">2025-2026年基础大模型训练方法论综述：从DeepSeek V4到Kimi K2.5</a><div class="meta">2026-07-13 · 研究</div></li><li><a href="../r/5cc668ee9b95.html">扩散语言模型（diffusion LLM）技术路线综述：与自回归（AR）路线的对比</a><div class="meta">2026-07-06 · 横评对比</div></li><li><a href="../r/eadd05c9ea81.html">Mid-train 技术综述与落地手册：面向有 post-train 经验的基模团队</a><div class="meta">2026-06-29 · 研究</div></li></ul><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ 生成时间 2026-10-19 05:39 UTC</footer></body></html>
+</table></div></article><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/9cc58197589d.html">看懂 Kimi K3：2.8 万亿参数的开源前沿模型</a><div class="meta">2026-07-20 · 研究</div></li><li><a href="../r/b48c4181ab3e.html">2025-2026年基础大模型训练方法论综述：从DeepSeek V4到Kimi K2.5</a><div class="meta">2026-07-13 · 研究</div></li><li><a href="../r/5cc668ee9b95.html">扩散语言模型（diffusion LLM）技术路线综述：与自回归（AR）路线的对比</a><div class="meta">2026-07-06 · 横评对比</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">使用导航 / 主线地图</a></li>
+<li><a href="#0">0. 摘要</a><ul>
+<li><a href="#01-mid-train">0.1 读者决策树：你到底该做哪类 mid-train</a></li>
+<li><a href="#02">0.2 第一天怎么启动</a></li>
+<li><a href="#03">0.3 如何使用本文：按角色和任务跳读</a></li>
+</ul>
+</li>
+<li><a href="#1-mid-train">1. 术语边界：什么是 mid-train</a><ul>
+<li><a href="#11">1.1 一个实用定义</a></li>
+<li><a href="#12-post-train">1.2 它和 post-train 的分工</a></li>
+<li><a href="#13-mid-train">1.3 不宜把所有训练都叫 mid-train</a></li>
+<li><a href="#14-post-train-10">1.4 给有 post-train 经验的基模团队的 10 条差异认知</a></li>
+</ul>
+</li>
+<li><a href="#2">2. 公开证据强弱分层</a><ul>
+<li><a href="#20">2.0 本文的证据标签</a></li>
+<li><a href="#21">2.1 强证据：技术报告明确披露的阶段设计</a></li>
+<li><a href="#22">2.2 中证据：综述和受控实验的归纳</a></li>
+<li><a href="#23">2.3 弱证据：访谈、博客和行业口径</a></li>
+<li><a href="#24">2.4 从公开资料抽出的保守共识</a></li>
+</ul>
+</li>
+<li><a href="#3">3. 公开案例能证明什么，不能证明什么</a><ul>
+<li><a href="#31-olmo-2-mid-training">3.1 OLMo 2：最清楚的 mid-training 公开范式</a></li>
+<li><a href="#32-qwen3general-reasoning-long-context">3.2 Qwen3：General -&gt; Reasoning -&gt; Long Context</a></li>
+<li><a href="#33-deepseek-v3-base-context-extension">3.3 DeepSeek-V3：大规模 base 后的 context extension 和工程约束</a></li>
+<li><a href="#34-phi-4synthetic-heavy-training-strategy-reasoning-mid-train">3.4 Phi-4：synthetic-heavy training strategy，而不是干净的 reasoning mid-train</a></li>
+<li><a href="#35-qwen25-1m">3.5 Qwen2.5-1M：训练扩展、推理外推和部署优化要分开</a></li>
+<li><a href="#36-llama-3initial-pre-training-long-context-annealing">3.6 Llama 3：initial pre-training + long-context + annealing 的保守样本</a></li>
+<li><a href="#37-prism-premidrl">3.7 PRISM 与 pre/mid/RL 研究：把机制假设当假设</a></li>
+</ul>
+</li>
+<li><a href="#4-mid-train">4. Mid-train 的设计框架</a><ul>
+<li><a href="#40">4.0 第一轮最小闭环</a></li>
+<li><a href="#41">4.1 能力目标分层</a></li>
+<li><a href="#42">4.2 数据桶设计</a></li>
+<li><a href="#421">4.2.1 数据桶准入卡</a></li>
+<li><a href="#422">4.2.2 合成数据使用边界</a></li>
+<li><a href="#43-token-budget">4.3 学习率和 token budget</a></li>
+<li><a href="#431">4.3.1 配方旋钮与不可同时改变原则</a></li>
+<li><a href="#44-ablation">4.4 第一轮 ablation 设计表</a></li>
+<li><a href="#441-ablation">4.4.1 如何读 ablation</a></li>
+<li><a href="#45-curriculum">4.5 Curriculum：先能力，后长度，还是并行？</a></li>
+<li><a href="#46">4.6 组织运行机制：角色、台账和质量门</a></li>
+</ul>
+</li>
+<li><a href="#5">5. 训练工程检查点</a><ul>
+<li><a href="#51">5.1 启动前检查</a></li>
+<li><a href="#52">5.2 训练中监控</a></li>
+<li><a href="#53-checkpoint">5.3 Checkpoint 策略</a></li>
+<li><a href="#54">5.4 容易低估的工程风险</a></li>
+</ul>
+</li>
+<li><a href="#6">6. 评估体系</a><ul>
+<li><a href="#60-benchmark-list-eval-registry">6.0 从 benchmark list 到 eval registry</a></li>
+<li><a href="#61-eval-registry-schema">6.1 Eval registry 的最小 schema</a></li>
+<li><a href="#62-eval-suite-matrix">6.2 Eval suite matrix</a></li>
+<li><a href="#63-base-regression-eval">6.3 Base regression eval</a></li>
+<li><a href="#64-target-capability-eval">6.4 Target capability eval</a></li>
+<li><a href="#65-long-context-eval">6.5 Long-context eval</a></li>
+<li><a href="#66-post-train-readiness-eval">6.6 Post-train readiness eval</a></li>
+<li><a href="#67-scorecard">6.7 Scorecard：如何读评估结果</a></li>
+</ul>
+</li>
+<li><a href="#7-runbook">7. 风险与事故处理 Runbook</a><ul>
+<li><a href="#70">7.0 如何使用本章</a></li>
+<li><a href="#71">7.1 事故分级：观察、警报、阻断</a></li>
+<li><a href="#72-triage">7.2 训练中事故 triage 表</a></li>
+<li><a href="#73-runbook">7.3 数据事故 runbook</a></li>
+<li><a href="#74-runbook">7.4 训练事故 runbook</a></li>
+<li><a href="#75-runbook">7.5 评估事故 runbook</a></li>
+<li><a href="#76-post-train">7.6 Post-train 接力事故</a></li>
+<li><a href="#77">7.7 事故复盘模板</a></li>
+</ul>
+</li>
+<li><a href="#8-90">8. 给新团队的 90 天路线图</a><ul>
+<li><a href="#80-gate-dashboard">8.0 Gate dashboard：每一阶段只回答一个决策问题</a></li>
+<li><a href="#0-14">第 0-14 天：定义目标和评估</a></li>
+<li><a href="#15-35-ablation">第 15-35 天：数据和小模型 ablation</a></li>
+<li><a href="#36-60-mid-train">第 36-60 天：主模型短程 mid-train</a></li>
+<li><a href="#61-75-post-train">第 61-75 天：post-train 接力验证</a></li>
+<li><a href="#76-90">第 76-90 天：放大或收缩决策</a></li>
+</ul>
+</li>
+<li><a href="#9-checklist">9. 可执行 checklist</a><ul>
+<li><a href="#90">9.0 最小交付包与交付物索引</a></li>
+<li><a href="#91-checklist">9.1 数据 checklist</a></li>
+<li><a href="#92-checklist">9.2 训练 checklist</a></li>
+<li><a href="#93-checklist">9.3 评估 checklist</a></li>
+<li><a href="#94-checklist">9.4 组织 checklist</a></li>
+</ul>
+</li>
+<li><a href="#10-post-train">10. 对有 post-train 经验的基模团队的特别提醒</a></li>
+<li><a href="#11-mix">11. 第一轮搜索空间：示例搜索网格，不可直接作为默认 mix</a></li>
+<li><a href="#12">12. 资料地图</a><ul>
+<li><a href="#121">12.1 一手技术报告：事实底座</a></li>
+<li><a href="#122">12.2 综述和受控实证研究：假设来源</a></li>
+<li><a href="#123-claim-source-matrix">12.3 Claim / source matrix</a></li>
+<li><a href="#124">12.4 推荐阅读顺序</a></li>
+</ul>
+</li>
+<li><a href="#13-gono-go-memo">13. Go/no-go memo 最小模板</a></li>
+<li><a href="#a">附录 A：审稿意见吸收记录</a></li>
+<li><a href="#b">附录 B：最终质量说明</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-19 07:32 UTC</footer></body></html>
