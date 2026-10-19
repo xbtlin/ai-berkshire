@@ -38,7 +38,7 @@ ul.list .meta{margin:.15rem 0 0}
 .grid a.btn{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem;
 color:var(--fg);font-size:.92rem;box-shadow:var(--shadow)}
 .grid a.btn:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
-.hero>.grid:first-of-type a.btn{border-radius:var(--radius);padding:.7rem 1.1rem;font-weight:600}
+.grid.big a.btn{border-radius:var(--radius);padding:.7rem 1.1rem;font-weight:600}
 .idx{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:0}
 .idx li{border-bottom:1px solid var(--line)!important}
 article{font-size:1.02rem}
@@ -65,6 +65,20 @@ aside.side{display:none}
 aside.side{display:block}aside.side .toc{position:sticky;top:4.5rem;max-height:calc(100vh - 6rem);overflow:auto;font-size:.85rem;
 border-left:1px solid var(--line);padding-left:1rem}aside.side .toc ul{padding-left:.8rem}
 details.toc{display:none}}
+.resume{position:fixed;left:50%;bottom:1.2rem;transform:translateX(-50%);z-index:12;background:var(--card);color:var(--fg);
+border:1px solid var(--line);border-radius:999px;padding:.45rem .6rem .45rem 1rem;box-shadow:0 4px 16px rgba(0,0,0,.12);font-size:.9rem;white-space:nowrap}
+.resume button{font:inherit;margin-left:.6rem;border:0;border-radius:999px;background:var(--accent);color:#fff;padding:.2rem .8rem;cursor:pointer}
+.resume .x{margin-left:.5rem;color:var(--muted);cursor:pointer;padding:0 .3rem}
+ul.list li.done>a{color:var(--muted);font-weight:400}.rd{color:var(--accent)}
+ul.work li>a{font-weight:400;font-size:.95rem}
+.wx{display:flex;gap:1rem;align-items:center;margin:2.4rem 0 1rem;padding:1rem;background:var(--card);
+border:1px solid var(--line);border-radius:var(--radius)}.wx img{width:92px;height:92px;border-radius:6px;flex-shrink:0}
+.wx b{display:block;font-size:1rem}.wx span{color:var(--muted);font-size:.86rem}
+.intro{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.2rem;margin:1rem 0 1.4rem}
+.intro p{margin:.3rem 0}
+.layers{display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:.8rem;margin:1rem 0}
+.layers div{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:.9rem 1rem}
+.layers b{display:block;margin-bottom:.2rem}.layers span{color:var(--muted);font-size:.88rem}
 .progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:11}
 footer{max-width:72rem;margin:3rem auto 0;padding:1.2rem 1rem 2rem;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:underline}
