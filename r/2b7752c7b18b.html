@@ -1,0 +1,962 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>快手科技（01024.HK）研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/2b7752c7b18b.html" data-title="快手科技（01024.HK）研究报告"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/快手/index.html">快手</a></div><div class="layout"><div><h1>快手科技（01024.HK）研究报告</h1><div class="meta"><a href="../companies/快手/index.html">快手</a> ｜ 2026-10-20 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/%E5%BF%AB%E6%89%8B%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261020.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#ai">AI研究偏见自觉</a></li>
+<li><a href="#_1">第一步：核心数据总览</a><ul>
+<li><a href="#_2">先把收入与利润看完整</a></li>
+<li><a href="#_3">最近四个已公布季度</a></li>
+<li><a href="#_4">现金流是本轮研究的关键校正</a></li>
+</ul>
+</li>
+<li><a href="#_5">第二步：生意本质分析</a></li>
+<li><a href="#_6">第三步：护城河评估</a><ul>
+<li><a href="#_7">可灵最新发布状态：本轮必须更新的事实</a></li>
+<li><a href="#_8">三年、五年、十年分别在赌什么</a></li>
+</ul>
+</li>
+<li><a href="#_9">第四步：逆向思考与风险清单</a></li>
+<li><a href="#_10">第五步：管理层与资本配置</a><ul>
+<li><a href="#_11">经济权益与投票权是两回事</a></li>
+</ul>
+</li>
+<li><a href="#_12">第六步：行业与文明趋势</a></li>
+<li><a href="#_13">第七步：估值与安全边际</a><ul>
+<li><a href="#_14">当前价格隐含什么</a></li>
+<li><a href="#1213">现金桥梁：1,213亿元可用资金不是净现金</a></li>
+<li><a href="#_15">模型契约与三情景</a></li>
+<li><a href="#_16">基准经营桥：利润为什么没有全变成现金</a></li>
+<li><a href="#_17">反向估值与十年利润</a></li>
+</ul>
+</li>
+<li><a href="#_18">第八步：最终决策与行动清单</a></li>
+<li><a href="#ai_1">AI分析置信度与投资确定性</a></li>
+<li><a href="#_19">数据来源与审计记录</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>研究截止：2026年10月20日北京时间，开市前。</strong> 最近正式财务期为2026年上半年。港股10月19日因重阳节翌日休市，采用10月16日正规收盘价29.30港元；9月底已发行A、B类股份合计43.0415亿股，计算市值1,261.12亿港元。按统一研究参考汇率1港元=0.8525元人民币，市值1,075.10亿元，滚动归母市盈率6.82倍。股本原件本轮访问失败，采用证券之星月报转录并与富途舍入股本核对，不能称为当前登记册确认。<a href="https://hk.investing.com/equities/kuaishou-technology-historical-data">价格</a>、<a href="https://stock.stockstar.com/AN2026100700004333.shtml">股本</a>、<a href="https://www.hkex.com.hk/-/media/HKEX-Market/Services/Circulars-and-Notices/Participant-and-Members-Circulars/SEHK/2025/ce_SEHK_CT_075_2025.pdf">休市日历</a></p>
+<p><strong>研究主线：成熟社区能产生利润，但可灵正在把快手改造成资本投入更重的公司；便宜与否取决于全部投入后的股东现金，而不是可灵一轮融资的纸面估值。</strong> 本文依 <code>/investment-research</code> 独立执行八个步骤，用事实、公司口径、推论和情景假设分别组织证据。研究用于学习，不构成针对个人资金情况的投资建议。</p>
+</blockquote>
+<hr />
+<h2 id="ai">AI研究偏见自觉</h2>
+<p>信息丰富度为<strong>主平台A级、可灵B级</strong>。集团有多年财务数据；可灵仍缺独立审计损益、分客户留存、训练与推理成本、关联资源结算及资金逐笔到账资料。资料密集并不自动提高投资胜率，模型发布很频繁也不代表护城河在同样频率地加深。</p>
+<ul>
+<li>[x] 不把低历史市盈率视作低资本投入下的稳定股东收益。</li>
+<li>[x] 不把公司自报能力、融资估值、ARR和确认收入混成一种证据。</li>
+<li>[x] 正面检验“主业放缓、AI吞噬现金”的聪明空方论点。</li>
+<li>[x] 保留可灵快速形成专业工作流的上行路径，同时不先兑现全部利润。</li>
+</ul>
+<p><strong>AI研究局限性：</strong>本轮重新打开年报、中报、融资原件及独立数据库；旧报告只帮助定位资料。数据库也会错：截至本轮，StockAnalysis的滚动资本支出仍停在上年全年值，导致FCF明显高估。可灵真实客户项目没有亲自交付测试；模型优劣与版权保障主要是官方产品资料，不能冒充独立性能审计。股本、控制权、现金分别有不同日期，全文保留这些日期，不能拼成一张不存在的实时资产负债表。</p>
+<h2 id="_1">第一步：核心数据总览</h2>
+<h3 id="_2">先把收入与利润看完整</h3>
+<p>单位：人民币亿元；利润为归母净利润。毛利率由报表毛利/收入计算并按展示精度舍入。经营利润率优先采用公司原始口径；第三方标准化利润表会剔除部分其他收益，不能机械替换。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">2021</th>
+<th style="text-align: right;">2022</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">810.82</td>
+<td style="text-align: right;">941.83</td>
+<td style="text-align: right;">1,134.70</td>
+<td style="text-align: right;">1,268.98</td>
+<td style="text-align: right;">1,427.76</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">42.0%</td>
+<td style="text-align: right;">44.7%</td>
+<td style="text-align: right;">50.6%</td>
+<td style="text-align: right;">54.6%</td>
+<td style="text-align: right;">55.0%</td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td style="text-align: right;">-780.74</td>
+<td style="text-align: right;">-136.90</td>
+<td style="text-align: right;">63.96</td>
+<td style="text-align: right;">153.35</td>
+<td style="text-align: right;">186.17</td>
+</tr>
+<tr>
+<td>公司经营利润率</td>
+<td style="text-align: right;">-34.2%</td>
+<td style="text-align: right;">-13.3%</td>
+<td style="text-align: right;">5.7%</td>
+<td style="text-align: right;">12.0%</td>
+<td style="text-align: right;">14.5%</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">-55.19</td>
+<td style="text-align: right;">7.95</td>
+<td style="text-align: right;">207.81</td>
+<td style="text-align: right;">297.87</td>
+<td style="text-align: right;">267.16</td>
+</tr>
+<tr>
+<td>固定及无形资产付款/预付款</td>
+<td style="text-align: right;">77.64</td>
+<td style="text-align: right;">51.00</td>
+<td style="text-align: right;">48.97</td>
+<td style="text-align: right;">80.63</td>
+<td style="text-align: right;">149.42</td>
+</tr>
+<tr>
+<td>简单自由现金流</td>
+<td style="text-align: right;">-132.83</td>
+<td style="text-align: right;">-43.05</td>
+<td style="text-align: right;">158.84</td>
+<td style="text-align: right;">217.24</td>
+<td style="text-align: right;">117.74</td>
+</tr>
+<tr>
+<td>第三方现金与短期投资口径</td>
+<td style="text-align: right;">454.57</td>
+<td style="text-align: right;">356.20</td>
+<td style="text-align: right;">490.18</td>
+<td style="text-align: right;">516.40</td>
+<td style="text-align: right;">622.56</td>
+</tr>
+</tbody>
+</table></div>
+<p>收入、毛利、归母序列与2025年报五年摘要及独立S&amp;P/StockAnalysis一致。2024—2025现金流与年度原件核对；2021—2023现金流及历史资金池本轮仅取得第三方标准化序列，属于历史背景的二源缺口，不能标全表双源通过。2022现金流采用后续重分类口径，避免混用旧版经营现金流。2021大额亏损还含上市前优先股等估值因素，不能据此把经营亏损全解释为现金烧钱。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042401899.pdf">年报</a>、<a href="https://stockanalysis.com/quote/hkg/1024/financials/">第三方财务</a></p>
+<p>五年趋势说明快手曾完成规模经济转折：收入扩大、费用率下降，平台经营有过真实改善。但2025资本支出已明显提升，因此不能只看净利润增长；2026又出现收入增长放缓与成本增加叠加。利润改善史证明它有商业价值，无法保证下一轮资本配置同样成功。</p>
+<h3 id="_3">最近四个已公布季度</h3>
+<p>单位：人民币亿元。可灵通常只披露“超过”的收入下限，不能当作精确值。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>季度</th>
+<th style="text-align: right;">在线营销</th>
+<th style="text-align: right;">直播</th>
+<th style="text-align: right;">其他服务</th>
+<th style="text-align: right;">总收入</th>
+<th style="text-align: right;">归母净利润</th>
+<th>可灵确认收入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025Q3</td>
+<td style="text-align: right;">201.02</td>
+<td style="text-align: right;">95.74</td>
+<td style="text-align: right;">58.78</td>
+<td style="text-align: right;">355.54</td>
+<td style="text-align: right;">44.88</td>
+<td>超过3亿元</td>
+</tr>
+<tr>
+<td>2025Q4</td>
+<td style="text-align: right;">236.18</td>
+<td style="text-align: right;">96.55</td>
+<td style="text-align: right;">62.95</td>
+<td style="text-align: right;">395.68</td>
+<td style="text-align: right;">52.29</td>
+<td>3.4亿元</td>
+</tr>
+<tr>
+<td>2026Q1</td>
+<td style="text-align: right;">196.43</td>
+<td style="text-align: right;">84.92</td>
+<td style="text-align: right;">55.81</td>
+<td style="text-align: right;">337.16</td>
+<td style="text-align: right;">29.03</td>
+<td>超过6.5亿元</td>
+</tr>
+<tr>
+<td>2026Q2</td>
+<td style="text-align: right;">206.39</td>
+<td style="text-align: right;">86.90</td>
+<td style="text-align: right;">62.06</td>
+<td style="text-align: right;">355.35</td>
+<td style="text-align: right;">31.46</td>
+<td>超过8.5亿元</td>
+</tr>
+</tbody>
+</table></div>
+<p>季度业务拆分以公司原件为主，独立逐项第二来源不完整；不将媒体转载算成独立审计。集团正式地域分部为国内/海外，广告、直播、其他是收入类别。<strong>没有披露可灵独立毛利率，不应把集团毛利率套给可灵，也不能把“其他服务”整体当作可灵收入。</strong> <a href="https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-technology-announces-third-quarter-2025-unaudited">季度原件</a></p>
+<p>2026H1收入692.51亿元、归母净利润60.49亿元、公司调整净利润72.87亿元；公司经营利润73.52亿元。Q2收入同比+1.4%，广告+4.4%，直播-13.5%，其他服务+18.5%；毛利率51.6%，上年同期55.7%。DAU为4.123亿，同比+0.8%；MAU为7.973亿，同比+11.5%。月活增速远高于日活，不能由此认定日常黏性同步大幅增长。国内H1经营利润68.26亿元、海外亏损0.56亿元，未分摊收益5.82亿元，分部结果不能忽略未分摊项后直接相加为股东利润。<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0903/2026090300643_c.pdf">中报</a></p>
+<p>2026H1研发82.02亿元，对比上年同期66.98亿元；设备折旧31.09亿元，对比16.67亿元。两项是不同会计口径：研发费用并不包含所有将来会进入折旧的算力投入，单看“研发率”会漏掉资产侧成本。营销开支202.55亿元仍很大，说明平台没有变成不需要维护的收费站。<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0903/2026090300643_c.pdf">中报财务附注</a></p>
+<h3 id="_4">现金流是本轮研究的关键校正</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目，亿元人民币</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2025H1</th>
+<th style="text-align: right;">2026H1</th>
+<th style="text-align: right;">滚动十二月计算值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">267.16</td>
+<td style="text-align: right;">117.81</td>
+<td style="text-align: right;">90.44</td>
+<td style="text-align: right;">239.79</td>
+</tr>
+<tr>
+<td>设备及无形资产付款/预付款</td>
+<td style="text-align: right;">149.42</td>
+<td style="text-align: right;">70.75</td>
+<td style="text-align: right;">179.41</td>
+<td style="text-align: right;">258.08</td>
+</tr>
+<tr>
+<td>简单FCF</td>
+<td style="text-align: right;">117.74</td>
+<td style="text-align: right;">47.06</td>
+<td style="text-align: right;">-88.97</td>
+<td style="text-align: right;">-18.29</td>
+</tr>
+<tr>
+<td>租赁本金及相关利息现金付款</td>
+<td style="text-align: right;">38.23</td>
+<td style="text-align: right;">17.33</td>
+<td style="text-align: right;">19.19</td>
+<td style="text-align: right;">40.09</td>
+</tr>
+<tr>
+<td>再扣租赁付款后的现金</td>
+<td style="text-align: right;">79.51</td>
+<td style="text-align: right;">29.73</td>
+<td style="text-align: right;">-108.16</td>
+<td style="text-align: right;">-58.38</td>
+</tr>
+</tbody>
+</table></div>
+<p>滚动值=全年减去年上半年加今年上半年。StockAnalysis把滚动CFO更新为239.79亿元，却仍用149.42亿元资本支出，给出90.37亿元FCF；原件重建后为-18.29亿元。<strong>该差异已解释并拒用数据库错误值，没有为了通过核验把错误数字带进报告。</strong> <a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0903/2026090300643_c.pdf">原件现金流</a>、<a href="https://stockanalysis.com/quote/hkg/1024/financials/cash-flow-statement/">第三方现金流</a></p>
+<p>这不是说179.41亿元全是损失。预付服务器可能换来未来产能，资本投入时间与收入时间也可能错配。但投资者必须回答产能利用率、更新周期、可收费任务量和定价能否让资本回收，而不能把所有新增投入都永久剔除为“一次性”。如果算力三年后需要更新，今天所称增长资本支出会变成下一阶段的维持性支出。</p>
+<p>股份支付2025为26.40亿元，2026H1为13.11亿元。公司调整净利润将它加回，但股东经济成本没有消失。本报告预测把其保留为人工成本，不再额外用同额未来股数稀释扣第二遍；若实际以新增股结算，应更新每股分母。回购也是现金用途，不能既把回购金额加到股东总回报、又把同一部分消失股份的全部增厚收益重复相加。</p>
+<blockquote>
+<p>段永平式追问：如果不允许用“调整后”“融资估值”和“未来赛道”解释，今天主营业务留下的现金有多少？答案必须从上述资本支出与租赁表开始。</p>
+</blockquote>
+<hr />
+<h2 id="_5">第二步：生意本质分析</h2>
+<p><strong>快手把用户与创作者的持续关系变成可成交的注意力，向商家收获客与交易服务费；可灵向创作者出售可重复完成视频任务的算力和产品能力。</strong> 两门生意有协同，付钱理由却不同。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th>谁付钱、为什么重复</th>
+<th>主要成本</th>
+<th>真正影响利润的变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>在线营销</td>
+<td>品牌与商家为了增量订单持续投放</td>
+<td>分成、流量补贴、推荐和算力、销售服务</td>
+<td>商家扣退货后的增量利润、转化率、广告负载</td>
+</tr>
+<tr>
+<td>直播</td>
+<td>用户为互动、陪伴、娱乐付费</td>
+<td>主播分成、内容治理、支付渠道</td>
+<td>付费人群稳定性、优质主播供给与分成比例</td>
+</tr>
+<tr>
+<td>电商与其他服务</td>
+<td>商家为成交、经营和技术服务付费</td>
+<td>商家服务、消费者补贴、售后与风控</td>
+<td>真实复购、货架与内容联动、退货后佣金</td>
+</tr>
+<tr>
+<td>可灵</td>
+<td>创作者与开发者为生成、修改、交付视频付费</td>
+<td>推理、训练、服务器、版权、渠道与研发人员</td>
+<td>成片成功率、客户留存、单个有效任务的全成本</td>
+</tr>
+</tbody>
+</table></div>
+<p>平台有正反馈，但不是所有用户天然构成网络效应。更多相同低质内容可能降低体验；广告多一点提高当期收入，也可能减少未来时长。对商家来说，平台价值是增量客户能否赚钱，不是后台归因订单越多越好。若商家本就会获得订单，广告系统把自然成交算为投放成果，会夸大“算法提效”的可持续收益。</p>
+<p>快手区别于泛娱乐巨头的机会在于社区关系、信任成交和中小商家经营。但“老铁文化”不应停留在标签：要看用户是否因为信任某类创作者而回访、商家是否有可迁移困难的复购关系、售后纠纷是否被有效解决。创作者可以多平台发布，商家可以多平台经营，消费者更没有切换应用的高昂技术成本。因此这是多边关系与运营积累形成的中等壁垒，不是天然独家市场。</p>
+<p>可灵则要按生产工具研究。生成一个惊艳镜头能带来尝鲜，稳定完成客户交付才带来续费。客户愿意支付的不是模型每次推理成本加固定毛利，而是节省的拍摄、修改和等待成本，以及最终内容增加的商业回报。模型单位价格下降可以扩大使用量；如果客户因此更容易在不同模型间比较替换，新增价值也可能主要留给客户。</p>
+<p>广告与可灵最有价值的协同是“生成素材—真实投放—验证转化—改进素材”。公司披露Q2 AIGC短视频营销素材投放消耗同比增长超过70%，这是公司业务口径，既不能推出70%的增量利润，也未证实因果。应要求同类商家控制实验，排除季节、预算、促销、补贴变化，并考察净退款后效果。通用视频生成与快手广告素材生成共享部分技术，全球电影客户却未必因此更愿意付费。</p>
+<p>经营杠杆有两面。推荐、内容审核和研发的固定成本可以由更大收入摊薄；但视频模型可能引入随用量上升的推理成本和快速折旧资产。收入增长若由低价包量带来，未必改善毛利。下一阶段关键不只是营收增速，还要看毛利增量能否覆盖算力折旧和持续研发的增量。</p>
+<blockquote>
+<p>段永平式追问：这门生意好在哪？主平台好在商家有持续经营需求且用户关系有积累；可灵只有在客户愿意持续为可交付结果付费时，才会成为同样好的生意。</p>
+</blockquote>
+<hr />
+<h2 id="_6">第三步：护城河评估</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>来源</th>
+<th>当前判断</th>
+<th>有效证据</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>品牌与定价权</td>
+<td>主平台中等，可灵待证</td>
+<td>用户规模、创作者和商家持续经营</td>
+<td>提价或减补贴即流失、商家ROI下降</td>
+</tr>
+<tr>
+<td>转换成本</td>
+<td>社区关系中等，模型API偏低</td>
+<td>粉丝关系、商品运营、历史项目积累</td>
+<td>商家和创作者预算轻易迁移、多模型默认路由</td>
+</tr>
+<tr>
+<td>网络效应</td>
+<td>有，但多归属削弱</td>
+<td>内容、互动、交易反馈相互促进</td>
+<td>内容供给增加但用户留存和商家利润恶化</td>
+</tr>
+<tr>
+<td>规模与成本</td>
+<td>平台已有，AI仍须验证</td>
+<td>多年盈利改善、基础设施与研发组织</td>
+<td>同质量有效视频成本持续高于竞品</td>
+</tr>
+<tr>
+<td>技术能力</td>
+<td>有差异化，难证明十年排他</td>
+<td>推荐系统与可控视频持续迭代</td>
+<td>新版本提高榜单却没有留存和贡献利润</td>
+</tr>
+<tr>
+<td>授权内容与交付责任</td>
+<td>潜在增量壁垒</td>
+<td>商用合同、授权资产、企业安全要求</td>
+<td>只能卖生成能力，无法承担实际制作责任</td>
+</tr>
+</tbody>
+</table></div>
+<p>过去五年平台从高速补贴转向经营效率，经济性曾变强；但短视频时间竞争没有结束，2026直播和利润下滑要求重新检验，而不能简单延长2023—2025的改善趋势。广告主和头部主播多归属意味着竞争对手无需完整复制社区，只需吸走利润较高的那部分用户和商业预算。</p>
+<h3 id="_7">可灵最新发布状态：本轮必须更新的事实</h3>
+<p>10月17日官方公告称Kling 4.0已于10月15日正式上线，强调单次原生生成最长30秒、最多15项参考素材与10张关键帧。<strong>这是已经发布的公司产品口径，不能继续笼统写成尚未上线。</strong> 本轮没有独立验收所有地区、套餐和API；也没有把此前路线图中的更长视频或HDR能力自动视为全部已交付。<a href="https://ir.kuaishou.com/zh-hant/news-releases/news-release-details/kelingaixinyidaimoxingkling-40zhengshishangxian-0">可灵4.0公告</a></p>
+<p>这些能力针对的是专业生产难点：动作连续性、复杂运镜、对象一致性和镜头控制。它们有商业意义，因为少重做一次就可能显著节省客户时间。不过，“参考素材多”“支持多镜头”“提供API”等功能本身易被追赶。真正的壁垒要由客户资产、协作流程、审阅历史、可追责交付和低总成本组合形成。Google Flow/Veo、字节视频模型、Runway和Adobe生态均构成竞争或渠道压力；本轮不制作未统一口径的排行榜，也不宣称可灵全面第一。</p>
+<h3 id="_8">三年、五年、十年分别在赌什么</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>可能留下的优势</th>
+<th>需要兑现的条件</th>
+<th>会削弱优势的力量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三年后</td>
+<td>社区关系、视频工程与专业客户积累</td>
+<td>成片效率提高，付费客户持续续费，资本支出强度见顶</td>
+<td>模型能力追平，低价API与免费分发</td>
+</tr>
+<tr>
+<td>五年后</td>
+<td>商家经营与创作工作流成为收入入口</td>
+<td>项目资产、审批、素材管理和效果数据真正留在产品里</td>
+<td>编辑器或代理层成为入口，模型变成可替换供应商</td>
+</tr>
+<tr>
+<td>十年后</td>
+<td>跨内容与商业任务的生产平台</td>
+<td>多代技术迭代后仍能取得超额资本回报，组织不依赖单一人才</td>
+<td>新内容形态替代短视频、算力商品化、权利成本上升</td>
+</tr>
+</tbody>
+</table></div>
+<p>十年后存在不等于十年后仍是好投资。即使公司规模更大，若每一代能力都需要巨额新增资本、客户把降本收益拿走，股东回报仍可能平淡。我的判断是主平台护城河中等，可灵有产品和工程差异化，但尚未证明长期定价权；未来三年最值得跟踪的指标是续费客户贡献毛利、同质量成片总成本及资本回收周期。</p>
+<blockquote>
+<p>巴菲特式追问：十年后客户为什么还必须经过快手或可灵？如果答案只剩“因为模型现在很强”，这条护城河还不够。</p>
+</blockquote>
+<hr />
+<h2 id="_9">第四步：逆向思考与风险清单</h2>
+<p>最强空方论点可以这样表达：市场没有忽略可灵，而是在对主业变慢、AI研发不断升级、资本开支吞噬现金和利益被外部融资分享同时定价。所谓“买快手等于免费得到可灵”，隐含了主业不会衰退、AI投入能随时停止、私募估值能按比例变现三个未经证明的前提。一旦这些前提不成立，低PE只是过去利润留下的错觉。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>失败路径</th>
+<th>主观发生可能性</th>
+<th>影响</th>
+<th>领先观察指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主站注意力与商业预算流失</td>
+<td>中高</td>
+<td>利润持续下降</td>
+<td>日活与时长、商家续投、扣退货后的复购</td>
+</tr>
+<tr>
+<td>视频模型价格战</td>
+<td>高</td>
+<td>收入增长但利润薄</td>
+<td>每个有效成片净收费、推理成本、重试率</td>
+</tr>
+<tr>
+<td>重资产投入回报低</td>
+<td>中高</td>
+<td>现金消耗与资产减值</td>
+<td>设备利用率、预付款转资产、资本支出/CFO</td>
+</tr>
+<tr>
+<td>专业工作流由第三方掌控</td>
+<td>中高</td>
+<td>可灵只收薄技术费</td>
+<td>直接客户占比、渠道折扣、多模型切换</td>
+</tr>
+<tr>
+<td>子公司权益与母公司股东分配不利</td>
+<td>中</td>
+<td>母公司价值低于技术价值</td>
+<td>持股变化、优先权、关联成本和资金用途</td>
+</tr>
+<tr>
+<td>内容、版权、广告及跨境政策限制</td>
+<td>中</td>
+<td>成本和可用市场受影响</td>
+<td>实际诉讼、下架、合同赔偿、数据授权</td>
+</tr>
+<tr>
+<td>核心团队不稳定</td>
+<td>中</td>
+<td>研发节奏受损</td>
+<td>人才留存、继任安排、版本持续性</td>
+</tr>
+</tbody>
+</table></div>
+<p>“中高”“高”是定性研究判断，不是统计概率，彼此也非互斥，不能相加。低频高损害事项未另塞进一个任意高贴现率，再加资产折价重复惩罚；它们主要通过悲观经营路径和行动门槛体现。</p>
+<p>历史类比应看机制，而不照搬公司结局。内容平台曾多次因用户迁移失去议价权，但也有平台通过创作者工具与商业基础设施延长生命周期；软件工具若掌握项目文件、团队协作和交付标准，就比单一特效插件更能抵御替换。可灵当前更需要回答自己会成为哪一种。产业繁荣带来更多创作者，并不保证模型厂商获得最大利润，这与通信建设扩大但设备制造商和网络经营者回报分化的机制相似。</p>
+<p>我最容易犯的错，是把当前成熟业务的盈利修复能力看得过强，同时把AI成本下降过多归给可灵。另一个风险是反过来把所有资本开支都当成浪费，从而低估真实产品化突破。因此本报告保留宽情景，不把一个目标价包装为确定价值。</p>
+<blockquote>
+<p>芒格式追问：聪明人为什么不买？因为他可能相信技术会成功，却不相信成功的现金会以足够高比例流向今天的普通股。</p>
+</blockquote>
+<hr />
+<h2 id="_10">第五步：管理层与资本配置</h2>
+<p>程一笑是联合创始人、董事长兼CEO，产品与工程背景来自惠普、人人以及GIF快手；宿华为联合创始人兼执行董事，曾任Google中国和百度工程师。现任职务依据中报，不把历史分工当成今天组织图。管理层值得研究的能力是从产品、推荐和商业化组合中持续做选择，而非名人履历本身。<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0903/2026090300643_c.pdf">董事资料</a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>关键决策</th>
+<th>可观察结果</th>
+<th>研究判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>从工具转向内容与推荐平台</td>
+<td>形成大规模内容社区和多元变现</td>
+<td>产品与工程结合得到验证</td>
+</tr>
+<tr>
+<td>从高投入扩张转向经营效率</td>
+<td>连续年度盈利改善</td>
+<td>有成本纪律记录，但新周期需重验</td>
+</tr>
+<tr>
+<td>持续投入可灵并引入外部资本</td>
+<td>已有收费需求、分担部分资金压力</td>
+<td>能孵化新业务，独立资本回报未知</td>
+</tr>
+<tr>
+<td>母子公司设置不同股权激励</td>
+<td>有利人才留任，利益结构更复杂</td>
+<td>必须检查资源转移和少数股东保护</td>
+</tr>
+<tr>
+<td>分红、回购与重投入并行</td>
+<td>增加回报同时占用现金</td>
+<td>应以长期净股份变化和投资回报评价</td>
+</tr>
+</tbody>
+</table></div>
+<p>不为每项决策编造精确评分。2025经营改善足够支持“有执行能力”，不足以证明对AI扩张的回报估算正确。投资者应看到每轮预算的预期、退出规则和事后复盘，不能只看到成功发布会。</p>
+<h3 id="_11">经济权益与投票权是两回事</h3>
+<p>中报以8月25日最后可行日期披露：宿华通过Reach Best持有/控制约9.88%经济权益、32.49%非保留事项投票权；程一笑通过Ke Yong约8.84%经济权益、33.34%投票权。这里只列载体已发行股份，不把个人期权与底层股份重复相加。A类通常每股十票、B类一票，保留事项例外。二人载体经济权益合计18.72%，相关投票权合计65.83%，均不是10月实时登记册。<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0903/2026090300643_c.pdf">中报第46页</a></p>
+<p>7月可灵融资和8月更新另构成子公司层面的权利。若认购与激励计划额度全部用满，快手控制实体经济权益为68.33%，约53.8%的投票权；管理人员特殊表决权可显著超过其经济份额。快手继续合并报表不意味着可灵全部利润属于快手普通股。8月31日公告确认总认购额度204.471亿元，不能由“认购额度用满”推导资金全部到账。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0831/2026083102335.pdf">融资原件</a></p>
+<p>7月公告的投资人回购权包含特定上市/重组条件，价格含原投资金额及8%单利等调整，义务按文件由北京可灵及其集团公司承担。不能将其写成快手上市母公司无条件全额担保，也不能将有条件权益直接当作已经到期借款。融资估值反映优先权、赎回安排、流动性和战略价值，不能直接作为普通股立即变现价值。</p>
+<p>10月19日媒体转述公司授予13,293,362份RSU，约为9月底股数的0.31%，须待承授人接纳。本轮未取得原公告，不将其列为原件已核事实，也不立即加进已发行股本。这一后续信号提醒我们持续更新激励台账；它不是单独足以证明管理层损害股东的证据。<a href="https://www.caiwennews.com/article/1658033.shtml">期后激励转述</a></p>
+<p>若CEO退休，主平台具有多年工程和商业组织，继续运行的能力相对强；但对视频模型研发的路线判断、核心人才和资金配置仍有更高关键人依赖。好组织应能在负责人变更后保持可复现训练、客户反馈闭环和独立负责的团队梯队，现有披露未充分证明这一点。</p>
+<blockquote>
+<p>段永平式追问：管理层是否愿意停止没有回报的投入？真正的答案应体现在预算与资本回收纪律，而不只是他们持有多少股份。</p>
+</blockquote>
+<hr />
+<h2 id="_12">第六步：行业与文明趋势</h2>
+<p>AI把视频从昂贵、稀缺、专业分工密集的产物，变成更多人可以持续试错的表达工具。这个方向可能扩大广告、小微商家、教育、游戏和娱乐的创作需求。但制作成本下降也会增加内容供给，用户注意力仍有限，所以内容价格与单条曝光回报可能下降。更多视频不等于更多平台利润，更不等于更多可灵利润。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>价值链位置</th>
+<th>可以获得的收益</th>
+<th>可能被谁拿走</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>芯片、云和数据中心</td>
+<td>算力租售、容量保障</td>
+<td>扩产与技术替代压低回报</td>
+</tr>
+<tr>
+<td>基础模型</td>
+<td>推理费与技术能力溢价</td>
+<td>开源替代、同质化与渠道议价</td>
+</tr>
+<tr>
+<td>专业工作流</td>
+<td>项目管理、协作、可控交付收费</td>
+<td>大型编辑器与生产平台争夺入口</td>
+</tr>
+<tr>
+<td>内容与版权资产</td>
+<td>人物/IP/授权素材的稀缺收益</td>
+<td>海量内容降低普通素材价格</td>
+</tr>
+<tr>
+<td>分发与交易</td>
+<td>注意力、转化和真实交易数据</td>
+<td>用户迁移、广告负载与监管</td>
+</tr>
+</tbody>
+</table></div>
+<p>快手同时站在分发交易和视频生成两端，这提供实验和商业闭环，但不自动形成排他优势：广告客户可以去别处投放，专业创作者可以使用多个模型，可灵的海外业务也未必依赖国内快手流量。其最好的机会是把模型改善直接转成客户更低的总交付成本，并通过客户项目资产和服务机制留住关系。</p>
+<p>本报告不采信单一“AI视频市场几年几倍”的TAM数字作为估值输入。广义影视制作支出包含演员、IP、拍摄、分发和营销，不可能全部成为模型收入；只有可被模型完成、客户愿意外购、并且可灵有渠道触达的那部分才是可服务市场。用总制作预算乘一个份额会严重夸大空间。底层需求更适合按付费客户数×年有效任务×净单价测量，再扣重试、渠道、算力与服务成本。</p>
+<p>供应链方面，算力设备、托管和模型人才的集中度可能高于表面客户集中度；预付款、供应商融资和折旧已经证明资本环节重要。公司没有披露可灵完整客户集中、自然/付费获客和渠道分成，因此无法认定其已具备订阅软件式高毛利与低集中度。</p>
+<blockquote>
+<p>李录式追问：二十年后谁保留收费权？我的回答是有可能掌握客户工作流、合法资产与交易结果的一方，不能仅因为处于AI趋势就指定快手是最终胜者。</p>
+</blockquote>
+<hr />
+<h2 id="_13">第七步：估值与安全边际</h2>
+<h3 id="_14">当前价格隐含什么</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">本文计算</th>
+<th>使用边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总市值</td>
+<td style="text-align: right;">1,261.12亿港元</td>
+<td>10月16日价×9月底已发行股数</td>
+</tr>
+<tr>
+<td>人民币市值</td>
+<td style="text-align: right;">1,075.10亿元</td>
+<td>参考汇率换算，不是同时成交价格</td>
+</tr>
+<tr>
+<td>FY2025归母PE</td>
+<td style="text-align: right;">5.77倍</td>
+<td>历史净利润，尚未包含完整本轮投入</td>
+</tr>
+<tr>
+<td>TTM归母PE</td>
+<td style="text-align: right;">6.82倍</td>
+<td>归母157.66亿元</td>
+</tr>
+<tr>
+<td>TTM市销率</td>
+<td style="text-align: right;">0.745倍</td>
+<td>收入1,443.73亿元</td>
+</tr>
+<tr>
+<td>TTM简单FCF收益率</td>
+<td style="text-align: right;">负值，不赋予正收益率</td>
+<td>FCF为-18.29亿元</td>
+</tr>
+<tr>
+<td>PE比较的限制</td>
+<td style="text-align: right;">不以PEG作决策</td>
+<td>当前利润增长为负，且资本密度变化</td>
+</tr>
+</tbody>
+</table></div>
+<p>历史PE位置较低是可观察现象，但公司过去亏损、现在资本结构不同，单一分位没有可比现金流支撑。同行比较也要谨慎：腾讯的社交、游戏与投资资产，字节的非上市业务，可灵独立融资及MiniMax的亏损成长阶段不能用同一个PE横排。本文不借未核实的最新可比倍数制造精确排名，而用所有者实际现金能力进行横向机会成本比较。</p>
+<h3 id="1213">现金桥梁：1,213亿元可用资金不是净现金</h3>
+<p>单位：人民币亿元。2026年6月末快照。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">金额</th>
+<th>本文处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现金等价物+短定存+流动金融资产</td>
+<td style="text-align: right;">804.07</td>
+<td>作为起点，非纯现金</td>
+</tr>
+<tr>
+<td>其中上市股权</td>
+<td style="text-align: right;">7.19</td>
+<td>排除，避免当成稳定现金</td>
+</tr>
+<tr>
+<td>银行借款、优先票据及应计利息</td>
+<td style="text-align: right;">273.62</td>
+<td>扣除</td>
+</tr>
+<tr>
+<td>供应商融资安排负债</td>
+<td style="text-align: right;">252.53</td>
+<td>扣除，不能藏在其他应付款里</td>
+</tr>
+<tr>
+<td>应付股息</td>
+<td style="text-align: right;">25.84</td>
+<td>扣除，7月已支付属于期后用途</td>
+</tr>
+<tr>
+<td>运营及投入缓冲，研究假设</td>
+<td style="text-align: right;">150.00</td>
+<td>留作经营所需，非公司受限资产披露</td>
+</tr>
+<tr>
+<td><strong>估值可加的研究净余量</strong></td>
+<td style="text-align: right;"><strong>94.89</strong></td>
+<td>历史快照衍生值，非10月净现金</td>
+</tr>
+</tbody>
+</table></div>
+<p>长期定存、非流动投资与受限现金未进入这一保守起点，属于主动收窄资产计入范围，不是断言价值为零。缓冲覆盖经营押金与周转、部分投入需求，不再将同一经营押金全额重复扣一次。未来FCF已经扣租赁现金，净桥梁不再扣全额租赁负债；若改成租赁前经营现金流，必须对应改债务桥梁。供应商融资的资金流入在融资活动，不能又从CFO减一遍。<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0903/2026090300643_c.pdf">资产负债表和附注</a></p>
+<h3 id="_15">模型契约与三情景</h3>
+<p>主模型是人民币名义经营自由现金流折现，使用10.5%的名义WACC研究假设，终值增长悲观0%、基准2%、乐观2.5%。这不是把无风险利率与风险经营现金直接配对，也不是宣称10.5%来自精确市场校准。风险主要由经营路径承载；另列贴现率敏感性，不再给每个资产打任意折扣。</p>
+<p>现金流先扣现金税、持续研发、股份支付经济成本、资本支出、营运资本及租赁现金，排除融资收支与非经营投资收益。主业与可灵分开建模；可灵使用全额度融资/激励后的68.33%经济权益假设。银行与供应商金融债务全放母公司桥梁，可灵暂按无额外独立债务处理；若其未来承债或继续稀释需重算。融资到账尚未核实，因此没有把期后融资现金加进估值，未来投入仍逐年扣除；这会少计真实到账资金的价值，属于明确边界，不能拿结果称无条件精确公允价值。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景假设</th>
+<th>2027主业/可灵FCFF，亿元</th>
+<th>2031主业/可灵FCFF，亿元</th>
+<th>2036主业/可灵FCFF，亿元</th>
+<th style="text-align: right;">2036归属口径FCFF，亿元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td>70 / -40</td>
+<td>60 / -10</td>
+<td>40 / 0</td>
+<td style="text-align: right;">40.00</td>
+</tr>
+<tr>
+<td>基准</td>
+<td>80 / -30</td>
+<td>120 / 10</td>
+<td>170 / 60</td>
+<td style="text-align: right;">211.00</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td>100 / -30</td>
+<td>180 / 50</td>
+<td>280 / 200</td>
+<td style="text-align: right;">416.66</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_16">基准经营桥：利润为什么没有全变成现金</h3>
+<p>下面全部为研究假设，单位亿元。将2027起点和2036终点拆开，避免直接凭印象填FCFF。正常化EBIT已扣持续研发、经济SBC及现金租赁成本；折旧只加回设备折旧，不再把租赁使用权折旧重复加回。盈利时现金税取20%，可灵亏损期不假设现金税盾。主业指剔除可灵后的业务，两个栏目的收入与成本没有重复计算。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>基准经营桥，亿元</th>
+<th style="text-align: right;">2027主业</th>
+<th style="text-align: right;">2027可灵100%</th>
+<th style="text-align: right;">2036主业</th>
+<th style="text-align: right;">2036可灵100%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入假设</td>
+<td style="text-align: right;">1450</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">2200</td>
+<td style="text-align: right;">600</td>
+</tr>
+<tr>
+<td>正常化EBIT，含经济SBC和现金租赁</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">-25</td>
+<td style="text-align: right;">275</td>
+<td style="text-align: right;">187.5</td>
+</tr>
+<tr>
+<td>现金税</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">37.5</td>
+</tr>
+<tr>
+<td>税后经营利润</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">-25</td>
+<td style="text-align: right;">220</td>
+<td style="text-align: right;">150</td>
+</tr>
+<tr>
+<td>加：设备折旧</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">80</td>
+</tr>
+<tr>
+<td>减：设备及相关预付资本开支</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">150</td>
+</tr>
+<tr>
+<td>减：新增营运资本占用</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>经营FCFF</td>
+<td style="text-align: right;"><strong>80</strong></td>
+<td style="text-align: right;"><strong>-30</strong></td>
+<td style="text-align: right;"><strong>170</strong></td>
+<td style="text-align: right;"><strong>60</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>主业2027需要恢复约12.1%的正常化经营利润率，2036约12.5%；可灵终局则需要31.25%，比“有付费需求”强得多，是产品形成规模与收费能力的假设。2027两部分合计资本支出150亿元，明显低于当前TTM258.08亿元，意味着部分设备预付高峰过去、已付产能转为服务，不能把恢复视为已发生。2036合计资本支出280亿元，保留算力持续更新需求；可灵资本支出占其收入25%，尚未把它建模成轻资产软件。上述拆分没有公司分部资本开支披露作直接背书，只是用当前集团资本密度约束研究路径，实际主业/可灵分摊仍待验证。</p>
+<p>2036税后经营利润220与150亿元同时用作正常化净利，前提是届时税后净融资费用、非经营投资损益及主业少数股东权益不重大；它不是直接沿用当前集团债务状态的IFRS预测。主业净利220减净资本投入30及营运占用20，得到FCFF170；可灵净利150减净资本投入70及营运占用20，得到FCFF60。归属口径净利322.50与FCFF211.00之间的差额，就是50＋90×68.33%=111.50亿元再投资。没有靠未说明的投资收益补利润，也没有把子公司少数权益再扣第二遍。</p>
+<p>终局净再投资相对利润仍高，特别是可灵，意味着会计利润不能被当成可分配利润。2%的FCFF终值增长沿用较高再投资负担，是对股东现金的压力假设，而不是声称31.25%的会计经营利润率对应同样优秀的资本回报。长期设备折旧年限、升级频率和预付滚动必须在后续完整资产模型中校准；当前桥表只保证起点、终点与现金公式自洽，并未证明十年资本产能路径真实可实现。</p>
+<p><strong>出资义务另有边界。</strong> 主模型把可灵正负现金都乘68.33%，隐含外部股东以同比例承担新增经营投入。经济持股本身不能证明这种义务，实际出资、优先权与亏损承担条款尚未完整核实。压力分支改为“快手承担可灵100%的负现金，只享有68.33%的正现金”，其他参数不变：悲观/基准/乐观每股值分别降为12.95/47.51/90.11港元，较主模型下降0.96/0.44/0.31港元。这个局部压力没有推翻现有宽区间，但如果未来亏损持续更久或实际责任超出表内投入，影响会更大，须重估而非沿用0.44港元。</p>
+<p>这些全部是假设，不是公司指引或历史报表。基准并未把当前负现金流永续化，而是要求设备投资逐步产生收益、主业恢复现金转化、可灵在数年后跨过盈亏平衡。这是需要验证的恢复路径，不能称“保守到不用增长”。悲观可灵的负经营价值表示母公司仍会承担有限期间投入，不表示有限责任股权必须具有负交易价格；若管理层提前停止投入，损失可小于此路径。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景结果</th>
+<th style="text-align: right;">股权价值，亿元人民币</th>
+<th style="text-align: right;">每股港元</th>
+<th style="text-align: right;">相对29.30港元</th>
+<th>主导条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td style="text-align: right;">510.19</td>
+<td style="text-align: right;"><strong>13.90</strong></td>
+<td style="text-align: right;">-52.55%</td>
+<td>主站衰退、可灵投入无法回收</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">1,759.26</td>
+<td style="text-align: right;"><strong>47.95</strong></td>
+<td style="text-align: right;">+63.64%</td>
+<td>主业稳定、AI逐步形成现金回报</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">3,317.65</td>
+<td style="text-align: right;"><strong>90.42</strong></td>
+<td style="text-align: right;">+208.59%</td>
+<td>创作工作流形成较强议价权</td>
+</tr>
+</tbody>
+</table></div>
+<p>这是当下条件价值相对现价的差额，<strong>不是一年目标回报，也不是十年年化收益</strong>。未来分红是FCF分配方式，已在现金流价值里，不能额外重复加一遍。没有使用私募可灵股权价值再叠加集团DCF。</p>
+<p>基准经营价值约56.05%来自终值，因此对长期利润相当敏感。相同现金流，WACC9%、10.5%、12%对应59.57、47.95、39.93港元。以基准价值75%得到35.96港元只是一条研究观察线，安全边际是买入纪律，不是对内在价值再做一轮会计减值。考虑基准恢复尚未发生，真正允许初步研究性参与的价格更低，见下一步。</p>
+<h3 id="_17">反向估值与十年利润</h3>
+<p>扣掉94.89亿元净余量，现价给经营资产约980.21亿元价值。若经营现金永不增长，以10.5%资本成本看，需要每年约102.92亿元可持续、归属口径税后经营FCFF；若从下一年起永续增长2%，首年需要83.32亿元。它们是假设的等价稳定现金，不是2027预测。当前TTM扣租赁后是负现金，市场要求的是恢复而非永续衰退。</p>
+<p>独立于DCF，2036正常化归母净利润的研究情景为80、322.50、623.32亿元。基准由主业220亿元、可灵150亿元×68.33%构成；乐观由主业350亿元、可灵400亿元×68.33%构成。这里已含持续研发和激励经济成本，净融资与非经营净损益假设不重大。利润并未全变现金，故不能把这些净利润直接替换前表FCFF。它们揭示公司成功需要达到的规模与成本结构，不是对十年后利润的高置信度预言。</p>
+<blockquote>
+<p>巴菲特与段永平式追问：股市关闭五年愿意持有吗？只有愿意接受投入期现金显著弱于利润、并相信主业仍能自我供血的投资者，才有资格进一步讨论今天的折价。</p>
+</blockquote>
+<hr />
+<h2 id="_18">第八步：最终决策与行动清单</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结论</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生意质量</td>
+<td>主平台经过盈利验证；可灵需求已验证、利润未充分验证</td>
+<td>中高/中</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>社区与商家关系中等；模型优势尚未转成长期收费权</td>
+<td>中</td>
+</tr>
+<tr>
+<td>管理层</td>
+<td>有执行与产品化记录，资本配置进入新考验</td>
+<td>中</td>
+</tr>
+<tr>
+<td>最大风险</td>
+<td>投入增长快于可分配现金、利益归属低于并表规模</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>行业趋势</td>
+<td>视频生产成本下降方向强，利润归属不确定</td>
+<td>中</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>29.30港元有条件吸引力，但不存在私募估值保底</td>
+<td>中低</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>研究结论：列为有条件买入观察，适合愿意持续验证的投资者小规模参与，不适合作为无需跟踪的高确定性重仓。</strong> 如果投资者要求当期稳定分红和已验证的自由现金流，当前应该观望；同一价位对不同能力圈并非同一种投资。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>对象/价格</th>
+<th>行动</th>
+<th>必须满足的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓，30港元及以下</td>
+<td>可考虑小规模、分批研究性建仓</td>
+<td>接受悲观约14港元的价值情景，核实主业仍自我供血</td>
+</tr>
+<tr>
+<td>空仓，30—36港元</td>
+<td>优先等待下一期现金流证据</td>
+<td>资本支出与预付款能解释、主业经营不再恶化</td>
+</tr>
+<tr>
+<td>36—48港元</td>
+<td>需要更强财务证据才扩大仓位</td>
+<td>扣全部投入后的FCF转正且可灵客户留存改善</td>
+</tr>
+<tr>
+<td>48港元以上</td>
+<td>重新检验是否已消耗基准安全边际</td>
+<td>不能仅凭模型升级提高目标价</td>
+</tr>
+<tr>
+<td>已持有</td>
+<td>持有逻辑以现金与权益归属为核心</td>
+<td>不因私募估值高于母公司就机械加仓</td>
+</tr>
+<tr>
+<td>卖出/下调信号</td>
+<td>主业持续失血、融资或关联条款显著不利、投入无回报纪律</td>
+<td>即使股价更低也不自动加仓</td>
+</tr>
+<tr>
+<td>加仓信号</td>
+<td>连续财务期证明租赁与资本支出后的现金改善</td>
+<td>同时验证外部客户贡献利润，不能只看用户数</td>
+</tr>
+</tbody>
+</table></div>
+<p>以上价格线不是保证成交或价格支撑，不依据未知的个人持仓推算仓位。若实际到账融资、资本支出指引、期后股本发生变化，应先更新模型，不能沿用价格线。对偏好稳定生意的投资者，其机会成本是已具备低再投资、稳定现金与更清晰治理的公司；在同等预期回报下，应该偏向证据更充分的一方。</p>
+<p>以下为方法论模拟，<strong>不是四位本人发言或真实评价</strong>：</p>
+<blockquote>
+<p>巴菲特式模拟：我愿意看一家被低估的社区企业，但不会把一个融资故事当作可分红现金。先弄清楚下一轮设备更新后还剩多少钱。</p>
+<p>芒格式模拟：先假定模型会被追上，再看谁控制客户、谁支付算力账单、谁拥有优先索取权。最危险的加法，常常发生在估值最诱人的地方。</p>
+<p>段永平式模拟：好产品值得尊重，买股票还要看生意和人。若必须不停追加资金才保持竞争，就不要只拿昨天利润算便宜。</p>
+<p>李录式模拟：生产工具的变化很大，但文明进步带来的剩余由谁占有，需要沿产业链逐层核对。管理层必须把技术能力转成股东能够长期拥有的经济权利。</p>
+</blockquote>
+<h2 id="ai_1">AI分析置信度与投资确定性</h2>
+<p>已披露集团收入、利润、资产负债与现金流的事实置信度较高，第三方FCF错误也能通过原件复算定位；最新股本原件本轮未取得、可灵经济性未拆分，使“当前每股价值”的确定性低于财务摘要。主平台商业机制判断为中等置信度，可灵未来工作流护城河与十年利润为低至中等置信度。</p>
+<p>必须补充的一手问题是：付费客户跨模型升级后的净收入留存；扣重试与人工修改的同任务总成本；训练、推理、服务器与带宽完整分摊；资金交割、重组与IP归属；优先权和回购触发条款；可灵与母公司的资源结算；设备预付款转产能及利用率；集团激励与回购后实际净股份变化。这些问题的答案比再做一张更精确的十年利润表更重要。</p>
+<h2 id="_19">数据来源与审计记录</h2>
+<p>模型、输入、结果和核验均在<a href="../r/d709ec93e0f6.html">研究附件</a>。所有计算采用Decimal；<code>financial_rigor.py</code>核验市值、历史财务交叉值、股数及收盘价，<code>report_audit.py</code>提取随机样本并输出判决。<strong>事实核对、模型复算与未解决缺口分别列示；程序通过不代表预测正确，也不代表全部来源已满足二源准出。</strong> 历史小项、股本原件、可灵独立经济性等缺口保留为限制，不以自填数字伪造独立验证。</p></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E5%BF%AB%E6%89%8B%E7%A7%91%E6%8A%80%EF%BC%8801024.HK%EF%BC%89%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A&amp;ticker=%E5%BF%AB%E6%89%8B&amp;source=reports%2F%E5%BF%AB%E6%89%8B%2F%E5%BF%AB%E6%89%8B%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261020.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2F2b7752c7b18b.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>底稿与核验（GitHub）</h2><div class="meta">这些文件不在阅读站上展示，点开为 GitHub 原文。</div><ul class="list work"><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E5%BF%AB%E6%89%8B/research-20261020/sources.md">来源与证据登记</a><div class="meta">审计核验底稿 · research-20261020/sources.md</div></li></ul><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/e568c061c70a.html">快手 1024.HK 独立 /investment-research 研究报告 — 2026-10-20</a><div class="meta">2026-10-20 · 研究</div></li><li><a href="../r/d709ec93e0f6.html">快手研究附件</a><div class="meta">2026-10-20 · 导读</div></li><li><a href="../r/2f73e86f63d4.html">快手与可灵：创始人、技术选型、赛道与十年推演</a><div class="meta">2026-10-17 · 研究</div></li><li><a href="../r/8ab3cb0a66e9.html">快手与可灵深度研究报告</a><div class="meta">2026-10-16 · 深度系列</div></li><li><a href="../r/7661a5d37927.html">快手与可灵深度研究 · 2026-10-16</a><div class="meta">2026-10-16 · 导读</div></li><li><a href="../r/29d256651108.html">快手科技（1024.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/40d4a3b706db.html">快手（01024.HK）研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/207317a7a1f4.html">快手十年后：生态还在不在、为什么还去快手、可灵结局、还能赚多少</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/4ac8125172ef.html">快手：AI对未来三年利润的影响与2036年盈利能力</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/10599f815158.html">藏在快手账上的另一家公司——可灵、180 亿美元与一纸对赌</a><div class="meta">2026-09-08 · 公众号</div></li><li><a href="../r/2a50c3bd07f0.html">快手（01024.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/26ace3ca9427.html">快手与可灵：差异化与护城河研究</a><div class="meta">2026-09-06 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#ai">AI研究偏见自觉</a></li>
+<li><a href="#_1">第一步：核心数据总览</a><ul>
+<li><a href="#_2">先把收入与利润看完整</a></li>
+<li><a href="#_3">最近四个已公布季度</a></li>
+<li><a href="#_4">现金流是本轮研究的关键校正</a></li>
+</ul>
+</li>
+<li><a href="#_5">第二步：生意本质分析</a></li>
+<li><a href="#_6">第三步：护城河评估</a><ul>
+<li><a href="#_7">可灵最新发布状态：本轮必须更新的事实</a></li>
+<li><a href="#_8">三年、五年、十年分别在赌什么</a></li>
+</ul>
+</li>
+<li><a href="#_9">第四步：逆向思考与风险清单</a></li>
+<li><a href="#_10">第五步：管理层与资本配置</a><ul>
+<li><a href="#_11">经济权益与投票权是两回事</a></li>
+</ul>
+</li>
+<li><a href="#_12">第六步：行业与文明趋势</a></li>
+<li><a href="#_13">第七步：估值与安全边际</a><ul>
+<li><a href="#_14">当前价格隐含什么</a></li>
+<li><a href="#1213">现金桥梁：1,213亿元可用资金不是净现金</a></li>
+<li><a href="#_15">模型契约与三情景</a></li>
+<li><a href="#_16">基准经营桥：利润为什么没有全变成现金</a></li>
+<li><a href="#_17">反向估值与十年利润</a></li>
+</ul>
+</li>
+<li><a href="#_18">第八步：最终决策与行动清单</a></li>
+<li><a href="#ai_1">AI分析置信度与投资确定性</a></li>
+<li><a href="#_19">数据来源与审计记录</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-20 15:56 UTC</footer></body></html>
