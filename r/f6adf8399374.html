@@ -1,0 +1,911 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>拼多多：便宜来自真实利润，也来自股东拿不到现金的疑问 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/f6adf8399374.html" data-title="拼多多：便宜来自真实利润，也来自股东拿不到现金的疑问"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/拼多多/index.html">拼多多</a></div><div class="layout"><div><h1>拼多多：便宜来自真实利润，也来自股东拿不到现金的疑问</h1><div class="meta"><a href="../companies/拼多多/index.html">拼多多</a> ｜ 2026-10-20 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261020.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">开篇决策卡：价格低，哪些理由够硬</a></li>
+<li><a href="#_2">第一步：建立可核查的数据底座</a><ul>
+<li><a href="#_3">收入结构与最近四季度</a></li>
+<li><a href="#_4">五年财务：利润并非只来自故事</a></li>
+<li><a href="#_5">双源核验与口径差异</a></li>
+</ul>
+</li>
+<li><a href="#_6">第二步：生意本质——低价格必须由低成本和好匹配支持</a></li>
+<li><a href="#_7">第三步：护城河——国内规模优势较强，全球持久性还要证明</a></li>
+<li><a href="#_8">第四步：逆向思考——最强空方不需要证明财务造假</a><ul>
+<li><a href="#_9">截止日最新监管事实</a></li>
+</ul>
+</li>
+<li><a href="#_10">第五步：管理层——执行力强，资本回报证据较弱</a></li>
+<li><a href="#_11">第六步：行业与价值捕获——廉价商品需求长久，平台利润不是必然</a></li>
+<li><a href="#_12">第七步：估值——把现金流、现金资产与每股分母分别处理</a><ul>
+<li><a href="#fcf">先审查现金流，不用一个 FCF 指标解决全部问题</a></li>
+<li><a href="#_13">哪些现金可以加在经营价值之外</a></li>
+<li><a href="#_14">股本、当前定价和模型合同</a></li>
+<li><a href="#_15">十年三情景与反向估值</a></li>
+<li><a href="#_16">三年回报检验、同业与历史估值</a></li>
+</ul>
+</li>
+<li><a href="#_17">第八步：综合决策与追踪纪律</a><ul>
+<li><a href="#_18">四位大师的模拟点评</a></li>
+</ul>
+</li>
+<li><a href="#_19">计算、来源与审计附录</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>研究结论：80.97 美元具备有条件的小仓研究性买入价值；已有持仓可以继续持有，暂不把它当作分红型核心资产。</strong> 国内低价供给与匹配效率已经形成强盈利能力；Temu 的长期增量价值仍取决于合规后利润。低市盈率不能消除海外经营、治理和现金归属的不确定性。</p>
+<p>数据截止：2026 年 10 月 20 日北京时间。已执行系统 <code>date</code> 确认日期。美股价格采用 <strong>2026 年 10 月 16 日正规收盘 80.97 美元/ADS</strong>，这是本轮研究统一锁定的参考价格；研究开始时 10 月 19 日尚未收盘，完成复核时该日已收盘，本文仍保持同一价格截面。最新财务为 2026 年第二季度及上半年，年度以 2025 年审计 20-F 为准。全文金额除注明外为人民币十亿元；1 十亿元 = 10 亿元。1 ADS = 4 股 A 类普通股。</p>
+<p>信息丰富度：集团财务 A，国内与 Temu 独立经济账 B/C。AI 研究局限：没有商户访谈、消费者留存队列、Temu 国别损益和完整股权奖励滚动表；集团增长无法反推 Temu 盈利。事实、管理层说法、分析推断和估值假设分别标识。本文是学习研究，不是针对读者完整资产状况的投资指令。</p>
+</blockquote>
+<h2 id="_1">开篇决策卡：价格低，哪些理由够硬</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>本报告判断</th>
+<th>会改变判断的证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主要买点</td>
+<td>国内平台有强现金创造能力；市场价格允许相当程度的盈利衰退</td>
+<td>商户流失、获客成本与补贴长期吞掉利润</td>
+</tr>
+<tr>
+<td>最大争议</td>
+<td>合并现金多，但缺乏分红承诺，也没有国内/Temu 分部利润</td>
+<td>明确资本回报政策、分部利润与现金上划披露</td>
+</tr>
+<tr>
+<td>当前估值</td>
+<td>按核验股本代理，TTM PE 8.37 倍、PS 1.71 倍</td>
+<td>最新法定股本或审计利润发生重大修订</td>
+</tr>
+<tr>
+<td>条件价值</td>
+<td>悲观 64.79、基准 143.31、乐观 248.68 美元/ADS</td>
+<td>正常经营现金流由模型的 70 降至 45 或以下</td>
+</tr>
+<tr>
+<td>价格纪律</td>
+<td>75—90 美元谨慎分批；65—75 更有吸引力；超过 110 不追价</td>
+<td>业务证据优先于任何预设价格线</td>
+</tr>
+<tr>
+<td>最需警惕</td>
+<td>把 456.414 现金及短期投资全部当分红，再用含投资收益利润估值</td>
+<td>这会同时高估现金可用性并重复计算投资回报</td>
+</tr>
+</tbody>
+</table></div>
+<p>这些价格是模型条件值，彼此间差距反映业务与治理结果，而不是概率预测。基准价值与当前价差很大，三年保守市盈率情景的年化回报却只有约 8.2%；两者提醒我们，资产看起来便宜，与市场何时给出回报是不同问题。</p>
+<h2 id="_2">第一步：建立可核查的数据底座</h2>
+<h3 id="_3">收入结构与最近四季度</h3>
+<p>拼多多集团拥有国内拼多多平台和国际 Temu，但披露收入的方式是“在线营销及其他”与“交易服务”。这两条收入线不能直接等同于国内与海外，更不能把交易服务收入视为 Temu 的销售额。公司没有给出足以建立可靠分部盈利模型的国内/国际收入、营业利润、GMV 与获客成本组合。<a href="https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf">2025 年审计年报</a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>期间</th>
+<th style="text-align: right;">在线营销及其他</th>
+<th style="text-align: right;">交易服务</th>
+<th style="text-align: right;">总收入</th>
+<th style="text-align: right;">集团毛利率</th>
+<th style="text-align: right;">集团营业利润</th>
+<th style="text-align: right;">集团营业利润率</th>
+<th style="text-align: right;">净利润</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 全年审计</td>
+<td style="text-align: right;">217.783</td>
+<td style="text-align: right;">214.063</td>
+<td style="text-align: right;">431.846</td>
+<td style="text-align: right;">56.28%</td>
+<td style="text-align: right;">93.102</td>
+<td style="text-align: right;">21.56%</td>
+<td style="text-align: right;">97.843</td>
+</tr>
+<tr>
+<td>2025Q3 原公告</td>
+<td style="text-align: right;">53.348</td>
+<td style="text-align: right;">54.929</td>
+<td style="text-align: right;">108.277</td>
+<td style="text-align: right;">56.74%</td>
+<td style="text-align: right;">25.026</td>
+<td style="text-align: right;">23.11%</td>
+<td style="text-align: right;">29.328</td>
+</tr>
+<tr>
+<td>2025Q4 原公告</td>
+<td style="text-align: right;">60.010</td>
+<td style="text-align: right;">63.902</td>
+<td style="text-align: right;">123.912</td>
+<td style="text-align: right;">55.49%</td>
+<td style="text-align: right;">27.720</td>
+<td style="text-align: right;">22.37%</td>
+<td style="text-align: right;">24.541</td>
+</tr>
+<tr>
+<td>2026Q1</td>
+<td style="text-align: right;">49.936</td>
+<td style="text-align: right;">56.293</td>
+<td style="text-align: right;">106.229</td>
+<td style="text-align: right;">55.86%</td>
+<td style="text-align: right;">19.566</td>
+<td style="text-align: right;">18.42%</td>
+<td style="text-align: right;">12.547</td>
+</tr>
+<tr>
+<td>2026Q2</td>
+<td style="text-align: right;">57.637</td>
+<td style="text-align: right;">54.721</td>
+<td style="text-align: right;">112.358</td>
+<td style="text-align: right;">57.26%</td>
+<td style="text-align: right;">27.764</td>
+<td style="text-align: right;">24.71%</td>
+<td style="text-align: right;">27.182</td>
+</tr>
+</tbody>
+</table></div>
+<p>收入分项是公司披露，毛利率和营业利润率由成本、收入精确复算；没有披露的分部毛利率保持空缺。季度引用：<a href="https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-third-quarter-2025-unaudited-financial">2025Q3</a>、<a href="https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-fourth-quarter-2025-and-fiscal-year-2025">2025Q4</a>、<a href="https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-first-quarter-2026-unaudited-financial">2026Q1</a>、<a href="https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial">2026Q2</a>。</p>
+<p><strong>必须保留的一处差异：</strong>2025 年初步公告净利为 99.364469，审计年报为 97.842539；营业利润分别为 94.624061 与 93.102131。审计年报一般行政费用 8.157733，高于初步公告的 6.635803，差额同为 1.521930。年报优先。本文没有找到足以把全部差异可靠分配到特定季度的更正说明，因此 Q4 保留原始“未经审计公告”标签，不能把表内四个季度简单相加当成同口径 TTM。估值采用“审计全年 + 最新上半年 − 上年同期”：收入 450.775713、净利 92.075539、营业利润 98.553131。半年披露精度为百万元，结果末位只是算术精度。</p>
+<p>2026Q2 的核心经营与归母利润方向不同：营业利润同比增长约 8%，净利下降约 12%。当季净利中包含 13.505 的利息及投资净收益，以及 7.399 的其他净损失。用“净利润下降”直接断言平台竞争力崩坏，或把投资收益增长视作商业模式改善，都过于简单。需要先确认营业利润，再看金融资产收益和其他项目的可持续性。对其他损失，本次公告未给出足以穿透全部性质的细目；不擅自称为一次性，也不从正常利润全部加回。<a href="https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial">2026Q2 利润表</a></p>
+<h3 id="_4">五年财务：利润并非只来自故事</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">毛利率</th>
+<th style="text-align: right;">营业利润率</th>
+<th style="text-align: right;">净利润</th>
+<th style="text-align: right;">经营现金流</th>
+<th style="text-align: right;">资本开支</th>
+<th style="text-align: right;">CFO 减资本开支</th>
+<th style="text-align: right;">现金及短期投资约数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td style="text-align: right;">93.950</td>
+<td style="text-align: right;">66.24%</td>
+<td style="text-align: right;">7.34%</td>
+<td style="text-align: right;">7.769</td>
+<td style="text-align: right;">28.783</td>
+<td style="text-align: right;">3.287</td>
+<td style="text-align: right;">25.496</td>
+<td style="text-align: right;">92.943</td>
+</tr>
+<tr>
+<td>2022</td>
+<td style="text-align: right;">130.558</td>
+<td style="text-align: right;">75.90%</td>
+<td style="text-align: right;">23.29%</td>
+<td style="text-align: right;">31.538</td>
+<td style="text-align: right;">48.508</td>
+<td style="text-align: right;">0.636</td>
+<td style="text-align: right;">47.872</td>
+<td style="text-align: right;">149.439</td>
+</tr>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">247.639</td>
+<td style="text-align: right;">62.96%</td>
+<td style="text-align: right;">23.70%</td>
+<td style="text-align: right;">60.027</td>
+<td style="text-align: right;">94.163</td>
+<td style="text-align: right;">0.584</td>
+<td style="text-align: right;">93.579</td>
+<td style="text-align: right;">217.210</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">393.836</td>
+<td style="text-align: right;">60.92%</td>
+<td style="text-align: right;">27.53%</td>
+<td style="text-align: right;">112.435</td>
+<td style="text-align: right;">121.929</td>
+<td style="text-align: right;">0.967</td>
+<td style="text-align: right;">120.962</td>
+<td style="text-align: right;">331.560</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">431.846</td>
+<td style="text-align: right;">56.28%</td>
+<td style="text-align: right;">21.56%</td>
+<td style="text-align: right;">97.843</td>
+<td style="text-align: right;">106.939</td>
+<td style="text-align: right;">1.145</td>
+<td style="text-align: right;">105.794</td>
+<td style="text-align: right;">422.308</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：<a href="https://investor.pddholdings.com/static-files/e9586d93-bb1d-4e98-af8a-4e73b62350f2">2023 年年报，含 2021—2023</a>、<a href="https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf">2025 年年报，含 2023—2025</a>、独立财务整理 <a href="https://stockanalysis.com/stocks/pdd/financials/">StockAnalysis</a>。历史现金栏保留第三方标准化口径与约数，不混入受限现金；并非每个历史余额都完成独立双源逐项验证。资本开支包括购买设备、软件及无形资产，不等于整个投资活动现金流。</p>
+<p>趋势不是“毛利率下降，所以生意坏了”这么简单。平台在不同收入确认与履约责任组合下，交易服务占比提升可能同时扩大收入和成本。2025 年的更重要信号是营业利润率与净利都从高点回落，说明规模扩张没有自动带来更多股东利润。2022 年高毛利率也不能直接作为未来正常水平。国内平台的高质量利润和海外扩张的投入混在同一张合并表内，是估值误差的主要来源。</p>
+<h3 id="_5">双源核验与口径差异</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>核验项目</th>
+<th>第一来源</th>
+<th>独立第二来源</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 月 16 日收盘</td>
+<td>StockAnalysis 80.97 美元</td>
+<td>MarketBeat 80.97 美元</td>
+<td>相符，采用正规收盘</td>
+</tr>
+<tr>
+<td>总股本代理</td>
+<td>年报 3 月 18 日 5,693,585,848 股 A 类</td>
+<td>StockAnalysis 约 14.2 亿 ADS</td>
+<td>换算 14.23396462 亿 ADS，差约 0.24%；日期与四舍五入仍有缺口</td>
+</tr>
+<tr>
+<td>市值</td>
+<td>股价乘上述 ADS 数得 115.2524 十亿美元</td>
+<td>MarketBeat 115.25 十亿美元</td>
+<td>差约 0.002%，数量级相符</td>
+</tr>
+<tr>
+<td>2025 收入</td>
+<td>年报 431.845713</td>
+<td>StockAnalysis 431.846</td>
+<td>四舍五入相符</td>
+</tr>
+<tr>
+<td>2025 净利</td>
+<td>年报 97.842539</td>
+<td>StockAnalysis 97.843</td>
+<td>四舍五入相符</td>
+</tr>
+<tr>
+<td>2026Q2 现金及短期投资</td>
+<td>公司 456.414</td>
+<td>StockAnalysis 456.414</td>
+<td>相符；不等于可分配现金</td>
+</tr>
+<tr>
+<td>美元兑人民币</td>
+<td>ExchangeRates.org.uk 6.6905</td>
+<td>Investing 6.6863</td>
+<td>差约 0.063%；统一用 6.6905</td>
+</tr>
+<tr>
+<td>管理层经济权益与投票权</td>
+<td>年报详细受益所有权及章程</td>
+<td>未获得同日期、同口径独立确认</td>
+<td>只作一手披露核验，不能标成双源通过</td>
+</tr>
+</tbody>
+</table></div>
+<p>价格：<a href="https://stockanalysis.com/stocks/pdd/history/">StockAnalysis 历史</a>、<a href="https://www.marketbeat.com/stocks/NASDAQ/PDD/chart/">MarketBeat 历史图表</a>；股本：<a href="https://stockanalysis.com/stocks/pdd/statistics/">StockAnalysis 统计</a>；汇率：<a href="https://www.exchangerates.org.uk/USD-CNY-spot-exchange-rates-history-2026-09.html">ExchangeRates.org.uk</a>、<a href="https://www.investing.com/currencies/usd-cny-historical-data">Investing 历史</a>。汇率仅为 10 月 16 日历史参考，不代表读者可成交报价。年报的报表美元折算使用不同期末汇率，不能直接拿该美元利润除以今天人民币市值。</p>
+<p>按照技能优先顺序尝试 Macrotrends，但本次正文页面打开失败；检索摘要的美元季度数据还存在与公司便捷折算数不一致的情况，未作为核验成功的依据。使用审计原文与可打开的 StockAnalysis 替代，并保留来源缺口。公司 IR、SEC 同一申报和新闻稿转载仍是同一个数据源。</p>
+<p>本节追问：<strong>如果只允许保留一个利润指标，应留什么？</strong> 我会保留扣除真实获客、履约、合规、研发与股权薪酬后的正常经营现金，而不是下载量、GMV，或未扣股份报酬的调整后利润。</p>
+<h2 id="_6">第二步：生意本质——低价格必须由低成本和好匹配支持</h2>
+<p>一句话概括：拼多多用消费者需求和商户供给的高效匹配，把商品交易转化为广告与交易服务收费；Temu 把这套供给组织能力带到国际市场。</p>
+<p>消费者大多不为进入平台支付订阅费。付费方主要是需要订单的商家。消费者获得更低价格、更容易发现商品和相应交易保障；商家得到需求聚合与订单；平台拿走营销及服务费用。好生意成立的条件，是平台帮商家增加的有效毛利，长期高于商家支付的广告、佣金、售后和合规成本。若商家只是用更高广告费用争抢同样的订单，平台短期利润可能增长，生态却在变脆。</p>
+<p>消费者需求与复购 + 制造商及商户供给</p>
+<p>↓ 商品匹配和价格竞争 → 真实完成且满意的订单 → 商家可留存的利润</p>
+<p>↓ 营销及交易服务支出 → 平台利润 → 合规及平台再投入 / 潜在股东回报</p>
+<p>平台再投入又影响订单质量，因此当前利润和长期收费能力之间需要平衡。</p>
+<p>这条循环中最容易被忽略的是“商家可留存的利润”。平台低价能力不能无限建立在供应商亏损、虚假品质或消费者维权成本上。更好的供给筛选、较少中间环节、需求预测和规模采购能够创造价值；把质量责任和库存风险推给议价更弱的人，则可能只是延后成本确认。二者在增长期看起来很像，最终会体现在退货、处罚、商家退出和重复购买上。</p>
+<p>国内与 Temu 的复购理由也不同。国内用户对本地物流、支付与平台规则更熟悉；海外用户需要在价格、送达时效、质量与退款便利之间取舍。下载并不是复购，更不是扣除广告后的获客回本。没有分国别重复购买数据，本报告不会声称 Temu 已经建立与国内同等强度的习惯。</p>
+<p><strong>经营杠杆的边界。</strong> 软件平台可以把固定研发与管理成本分摊到更多交易，但国际交易增加的物流、关税、退款、客服和产品检测并非零边际成本。2026Q2 销售营销费用 29.668、研发 4.567，平台持续需要大额投入。AI 可以改善商品理解、翻译、广告匹配与客服效率；若竞争对手也得到同样技术，节约额很可能被低价、投流竞争或商户让利消耗，而不会完整留给上市公司股东。<a href="https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial">最新季度成本与费用</a></p>
+<p>与京东相比，拼多多高得多的集团毛利率，不能直接证明它每笔订单的经济利润更高。京东自营商品大量按总额确认收入，拼多多的营销和平台服务按服务收入确认，两者分母不同。京东 2026Q2 零售分部营业利润率 4.6%，来自另一种履约与库存责任组合；比较时应看每单位用户或交易所需资本和长期现金回报，而非简单排名毛利率。<a href="https://ir.jd.com/news-releases/news-release-details/jdcom-announces-second-quarter-and-interim-2026-results">京东官方 2026Q2</a></p>
+<p>段永平式追问：<strong>这门生意好在哪里？</strong> 好在连接供需后可以反复收费，而且不必亲自拥有每件商品；弱点是用户容易切换、商家同时经营多平台，收费权必须不断靠更有效的订单和更可信的服务重新赢得。</p>
+<h2 id="_7">第三步：护城河——国内规模优势较强，全球持久性还要证明</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>护城河</th>
+<th>现有证据与机制</th>
+<th>反证与局限</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>品牌与定价权</td>
+<td>“价格有吸引力”的消费心智有助于进入购物选择集</td>
+<td>这不是能随意向消费者涨价的品牌；商家费率也受竞争约束</td>
+<td>中等，主要是价格信任</td>
+</tr>
+<tr>
+<td>转换成本</td>
+<td>商家的运营经验、广告学习和商品记录有一定沉淀</td>
+<td>消费者打开另一个应用很容易，商户普遍可多平台经营</td>
+<td>偏弱</td>
+</tr>
+<tr>
+<td>网络效应</td>
+<td>更多需求吸引更多供给，更多供给改善选择与匹配</td>
+<td>同质供给增加也会降低质量，消费者不会因商户无限增加而同比受益</td>
+<td>中等，需治理配合</td>
+</tr>
+<tr>
+<td>规模经济</td>
+<td>数据、投流、供给组织、产品实验和运营系统可分摊成本</td>
+<td>国际物流和法律合规具有地域性，不能完全复用中国经验</td>
+<td>国内较强、海外有条件</td>
+</tr>
+<tr>
+<td>技术与专利</td>
+<td>推荐、广告系统、交易风控依赖长期工程迭代</td>
+<td>无证据表明存在不可复制的独占算法；AI工具也向同行开放</td>
+<td>工程优势，非永久专利垄断</td>
+</tr>
+</tbody>
+</table></div>
+<p>过去五年，收入规模与利润证明其供给组织能力已非初创试验；但业务扩大也暴露了消费者保护、商家关系和国际法律成本。国内护城河更像持续运行的低成本组织，而不是建成后就不需维护的收费桥。2025 年利润率下降说明竞争和投入仍能显著改变收益分配。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>最可能保留的优势</th>
+<th>必须满足的条件</th>
+<th>观察而非预测的信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 年</td>
+<td>国内供给密度、低价定位与经营现金创造</td>
+<td>核心商家有利润，平台不靠长期补贴维持订单</td>
+<td>营销收入、营业利润、商户现金结算同时健康</td>
+</tr>
+<tr>
+<td>5 年</td>
+<td>跨国供给与本地履约组合可能形成规模壁垒</td>
+<td>Temu 从买流量转向稳定复购；合规成本可预测</td>
+<td>分部贡献利润、重复购买和退款率得到披露</td>
+</tr>
+<tr>
+<td>10 年</td>
+<td>可能成为全球高效率商品分发网络的一部分</td>
+<td>消费者信任与监管许可持续，管理层按每股价值配置现金</td>
+<td>正常现金流持续、资本回报机制可信</td>
+</tr>
+</tbody>
+</table></div>
+<p>十年后不一定需要今天的流量入口保持原样。AI 购物代理可能替用户跨平台比较商品，使平台通过界面设计吸引停留的能力减弱；但可靠商品信息、真实库存、价格、交付和售后仍需有人负责。若拼多多控制的是可信供应链与履约关系，它可以适应入口变化；若优势主要是刺激点击与投流，议价权可能转移到代理入口。这是机制推演，不是已有证据证明 AI 即将摧毁电商。</p>
+<p>巴菲特式追问：<strong>竞争对手拿一百亿元能否复制？</strong> 可以买流量和补贴，却很难一次性买齐供给组织、运营经验、价格认知与风险控制。但阿里、京东、抖音与海外平台本来就有重要资源；真正威胁来自已有生态和监管成本，而不只是一个新创业者。</p>
+<h2 id="_8">第四步：逆向思考——最强空方不需要证明财务造假</h2>
+<p>最强的空方论点是：国内平台真实赚钱，但利润已接近成熟；Temu 的增长需要持续补贴，合规和税费逐步收回早期成本优势；集团现金长期留存且少数股东缺乏分配决定权。因此低 PE 可以维持多年，甚至随着正常利润下移而变成价值陷阱。这个论点比“现金很多，所以股价一定涨”更难反驳。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>失败路径</th>
+<th>定性可能性</th>
+<th>影响</th>
+<th>需要看到什么才可否定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>国内商家投入回报恶化，平台收费受压</td>
+<td>中等</td>
+<td>高</td>
+<td>商户留存、广告投入回本和稳定经营利润</td>
+</tr>
+<tr>
+<td>海外税费及产品合规吞掉增量利润</td>
+<td>较高的持续成本压力；极端结果不可量化</td>
+<td>高</td>
+<td>成熟市场独立贡献利润与合规后复购</td>
+</tr>
+<tr>
+<td>消费者品质信任受损</td>
+<td>中等</td>
+<td>中高</td>
+<td>可靠的退货、投诉、抽检与纠纷处置趋势</td>
+</tr>
+<tr>
+<td>合并现金不能有效回到股东或被低回报投入消耗</td>
+<td>中等，缺乏资本回报承诺</td>
+<td>高</td>
+<td>透明回购/分红、重大投入回报与资金所在地披露</td>
+</tr>
+<tr>
+<td>股权奖励稀释每股收益</td>
+<td>持续存在</td>
+<td>中</td>
+<td>股本与奖励公允价值共同受控</td>
+</tr>
+<tr>
+<td>VIE、跨境支付或市场准入严重受限</td>
+<td>无可靠频率可估</td>
+<td>极高</td>
+<td>此类尾部风险不能靠一季增长消除</td>
+</tr>
+</tbody>
+</table></div>
+<p>这里的概率是定性风险分类，不是统计频率，也没有被作为精确数字塞进 DCF。悲观情景体现经营现金下降和资产可回收额减少；9% 折现率没有再额外叠加一套所谓“全部中国风险溢价”。</p>
+<h3 id="_9">截止日最新监管事实</h3>
+<p>美国 2026 年 10 月 8 日《联邦公报》背景说明，小额免税安排至少自 2025 年 8 月 29 日起暂停；2026 年 6 月的临时最终规则延续暂停。该 10 月文件本身涉及新的拟议程序规则，不能把其所有提议当成已经实施的法律。投资含义是：海外低价模型不能继续建立在永久免税的假设上；具体商品实际税负还需按原产地、品类、渠道与当时政策核实，不沿用旧新闻的某个统一关税百分比。<a href="https://www.govinfo.gov/content/pkg/FR-2026-10-08/html/2026-20650.htm">美国官方原文</a></p>
+<p>欧盟理事会公布，自 2026 年 7 月起对相关低价值小包征收 3 欧元固定关税，适用规则按包裹内不同税则类别计算；这不是每个物理商品必收 3 欧元，也不是另行讨论的处理费。低客单价商品更容易受影响，平台可通过本地仓、合并采购和提高客单价调整，但这些调整会改变库存、物流与商家分工，不能假设成本凭空消失。<a href="https://www.consilium.europa.eu/en/press/press-releases/2025/12/12/customs-council-agrees-to-levy-customs-duty-on-small-parcels-as-of-1-july-2026/">欧盟理事会说明</a></p>
+<p>2026 年 10 月 16 日，得州总检察长公布与 Temu 的和解，涉及 300 万美元支付、得州用户数据在美国受控服务器存储、限制中国人员接触数据并保留特定业务例外，以及独立产品安全检测、下架退款等义务。官方对既往行为的表述属于执法方主张，不能转换成法院对所有指控的终局认定。对估值更重要的是持续数据与产品合规能力，而不是这一笔支付本身。<a href="https://www.texasattorneygeneral.gov/news/releases/attorney-general-paxton-secures-first-its-kind-settlement-temu-protect-texans-data-ccp-and-protect">得州总检察长公告</a></p>
+<p>第二季度报表尚未完整体现欧盟 7 月措施和 10 月得州和解后的运行状态。拿六月利润率证明十月风险已完全消化，是时间上的错误。相反，一条监管新闻也不足以证明整个国际业务没有价值。应在第三、第四季度财务中观察履约成本、营销费用、其他损失、现金占用与管理层披露是否发生一致变化。</p>
+<p>历史类比只用于提出问题。平台早期的高速增长，可能像成熟零售组织一样沉淀为低成本能力，也可能像依赖持续补贴的渠道一样在获客停止后失速。拼多多已经有盈利基础，不能与所有亏损电商类比；但这也不能证明新市场复制必然成功。认知偏误主要是把国内成功外推海外、把高点利润当正常利润，以及被“现金接近市值”的叙事锚定。</p>
+<p>芒格式追问：<strong>聪明人为什么不买？</strong> 因为核心现金创造能力可以认可，少数股东获利路径仍可能看不清。低估值需要未来利润、资本配置和市场定价三方面至少有两项配合；仅有账面便宜未必足够。</p>
+<h2 id="_10">第五步：管理层——执行力强，资本回报证据较弱</h2>
+<p>陈磊和赵佳臻在最新公告中均以联席董事长、联席首席执行官身份发言。公司强调商家生态、信任、安全与长期投入，这些是管理层目标；成效仍应由扣除投入后的每股现金创造来判断。创始人黄峥不再以 CEO 身份管理日常经营，不能因此假定他完全没有治理影响。<a href="https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial">最新管理层公告</a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>权益主体</th>
+<th style="text-align: right;">2026 年 3 月年报披露权益</th>
+<th>经济权益与治理含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>黄峥相关实体</td>
+<td style="text-align: right;">1,409,744,080 股，24.8%</td>
+<td>大额相关受益持股；具体信托、载体与个人可支配财富不能等同</td>
+</tr>
+<tr>
+<td>腾讯相关实体</td>
+<td style="text-align: right;">783,468,116 股，13.8%</td>
+<td>重要战略股东，不是经营管理团队持股</td>
+</tr>
+<tr>
+<td>PDD Partnership 相关实体</td>
+<td style="text-align: right;">370,772,220 股，6.5%</td>
+<td>合伙人载体权益，不应全算黄峥个人经济财产</td>
+</tr>
+<tr>
+<td>陈磊</td>
+<td style="text-align: right;">28,320,000 股，约 0.5%</td>
+<td>有直接经济一致性，但远低于创始人相关载体</td>
+</tr>
+<tr>
+<td>赵佳臻</td>
+<td style="text-align: right;">6,160,380 股，约 0.1%</td>
+<td>有持股，不代表控制权按此比例决定</td>
+</tr>
+<tr>
+<td>全体董事及高管</td>
+<td style="text-align: right;">50,737,152 股，约 0.9%</td>
+<td>与创始人/合伙人相关载体不能简单重复相加</td>
+</tr>
+</tbody>
+</table></div>
+<p>年报明确该日只有 A 类普通股，没有 B 类流通股。虽然章程仍描述 B 类每股十票的制度，不能沿用早年“黄峥八成投票权”的旧说法。另一方面，合伙人拥有执行董事提名及 CEO 提名相关权利；黄峥又是 Qubit GP Limited 和 Quantum Dot Limited 的唯一董事。普通股投票比例、合伙人提名权与个人经济权益是三件事。因此，本报告不制造一个看似精确的“最终控制百分比”。上述细节仅完成年报一手核验，未取得同口径独立双源。<a href="https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf">年报 Share Ownership、PDD Partnership、Terms of Directors</a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>决策记录</th>
+<th>已知结果</th>
+<th>研究判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>聚焦消费者价格与商家匹配</td>
+<td>国内增长后形成可观集团利润与现金</td>
+<td>执行能力强，但须同时保护商家与消费者长期收益</td>
+</tr>
+<tr>
+<td>国际扩张</td>
+<td>交易服务形成大收入来源，合并报表未隔离其盈利</td>
+<td>战略选择具潜力，不能凭规模给资本配置高分</td>
+</tr>
+<tr>
+<td>研发与组织投入</td>
+<td>2025 研发费用 16.496，2026H1 为 8.985</td>
+<td>是成本与能力投入；尚无可信数据单独计算研发 ROI</td>
+</tr>
+<tr>
+<td>保留大量资金</td>
+<td>现金及短期投资持续增加，年报无近期分红计划</td>
+<td>抗风险能力强，股东资本回报纪律待证明</td>
+</tr>
+<tr>
+<td>股权薪酬</td>
+<td>2025 SBC 为 7.937，2026H1 约 2.831</td>
+<td>金额不是现金流出，但属于股东经济成本</td>
+</tr>
+</tbody>
+</table></div>
+<p>最需要追问的不是“管理层是否愿意长期思考”，而是长期投入的停止条件是什么。哪些国家、品类或项目在多年无法形成合规后贡献利润时应该退出？公司是否给每笔留存现金设定机会成本？如果从不分配、又没有足够回报的新增项目，现金增加也可能只是低回报资产积累。</p>
+<p>财务披露不能替代诚信判断，但可以检验可验证性。没有完整国别分部、没有可比商户留存，以及初步公告到审计年报存在利润差异，都提高了投资人要求安全边际的理由。差异本身不证明不诚信；忽视差异也不符合对股东负责的研究标准。当前资料不支持对管理层近期减持做完整结论，本文不把“未发现”写成“没有发生”。</p>
+<p>段永平式追问：<strong>CEO 再次更替，优势是否还在？</strong> 供给、产品和运营系统可以留下，但商家治理与全球合规越来越依赖组织纪律。合伙人安排可能提高文化延续性，也让外部股东更难纠正低回报扩张；两面必须同时看。</p>
+<h2 id="_11">第六步：行业与价值捕获——廉价商品需求长久，平台利润不是必然</h2>
+<p>国家统计局公布，2025 年中国网上零售额 15.9722 万亿元，其中实物商品 13.0923 万亿元，同比增长 5.2%，占社会消费品零售总额 26.1%。这是市场边界，不是拼多多收入 TAM；公司赚的是其中部分交易产生的服务费，而不是全部商品货值。统计口径也不等于公司披露的 GMV，不能据此直接计算市场份额。<a href="https://www.stats.gov.cn/sj/zxfbhjd/202601/t20260119_1962323.html">国家统计局</a></p>
+<p>国内需求的大背景已经从“网上购物快速渗透”转向效率、体验和分配方式的竞争。拼多多需要在低价、品质和商户可持续之间保持平衡；阿里重组电商与即时零售，京东强化履约和零售体验，内容平台把发现商品融入娱乐。阿里 2026 年六月季度披露，在剔除相关收入抵减计划后，客户管理收入可比增长约 1%；说明平台之间都在重新调整商家收费和用户投入。公司口径不完全可比，本文不拿不同业务总收入排出虚假市场份额榜。<a href="https://www.sec.gov/Archives/edgar/data/1577552/000110465926099220/tm2623667d1_ex99-1.htm">阿里官方季度申报</a></p>
+<p>全球市场理论空间更大，但真正能获取的利润取决于供应链、信任、法律责任和本地服务。跨境直发可以减少部分中间环节，也可能增加运输时效、逆向物流与产品责任成本。转向本地仓和当地卖家会改善体验，同时减弱“轻资产、低成本、无库存责任”叙事的纯度。集团能否仍保持低资本投入，需要新一轮现金流验证。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>价值链参与者</th>
+<th>可能获得的收益</th>
+<th>可能承担的成本</th>
+<th>对 PDD 股东的含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>消费者</td>
+<td>更便宜、更丰富的商品</td>
+<td>质量筛选、等待、退货时间</td>
+<td>消费者剩余增长不等于平台利润同比增长</td>
+</tr>
+<tr>
+<td>制造商与商户</td>
+<td>新需求、较少渠道层级</td>
+<td>投流、压价、检测、退款、备货</td>
+<td>商户利润是长期供给质量的前提</td>
+</tr>
+<tr>
+<td>广告渠道与物流商</td>
+<td>平台扩张带来的广告与运输需求</td>
+<td>服务能力投入</td>
+<td>增长利润可能先流向外部供应商</td>
+</tr>
+<tr>
+<td>政府与检测体系</td>
+<td>税收及可追溯产品保障</td>
+<td>执法和监管成本</td>
+<td>合规成本将进入正常经营，而非永久一次性</td>
+</tr>
+<tr>
+<td>PDD</td>
+<td>服务收入与规模效率</td>
+<td>获客、平台责任和组织复杂度</td>
+<td>只有最终剩余且归属于普通股的现金才构成投资价值</td>
+</tr>
+</tbody>
+</table></div>
+<p>AI 的作用首先可能是提高商品信息质量、翻译、需求预测与客服效率；但低成本生成广告也会提高竞争强度，虚假商品内容可能增加风控负担。即使技术能力提高，仍需完成付款、履约、退款、检测与跨境合规。公司没有披露足够的 AI 项目投入与增量利润，本报告不单独给 AI 业务加估值。</p>
+<p>供应商与客户集中度也有双重含义。商户数量多并不代表关键依赖分散：支付、广告流量、跨境物流、云服务和特定司法辖区可能成为集中节点。年报显示与腾讯体系存在支付及相关服务关系，但没有足够信息把所有关键渠道集中度转换成可靠百分比。全球监管许可实际上也是一种“单点条件”，因此不能只看最大客户占比。</p>
+<p>李录式追问：<strong>二十年后价值留下在哪里？</strong> 最可能留下的是更有效的商品生产、分发与信任体系。平台若持续为买卖双方降低全流程成本，会分享长期增长；若收益主要来自信息不对称、廉价投流或监管差异，文明与监管进步可能缩小其利润空间。</p>
+<h2 id="_12">第七步：估值——把现金流、现金资产与每股分母分别处理</h2>
+<h3 id="fcf">先审查现金流，不用一个 FCF 指标解决全部问题</h3>
+<p>2025 年 CFO 106.938690，购买设备、软件及无形资产 1.145077，常见简单 FCF 为 105.793613。再扣已经在 CFO 中加回的 SBC 7.936971，得到 97.856642。这个数仍包含营运资金变动和金融资产相关现金项目，所以只叫“扣 SBC 的 CFO 减资本开支代理”，不直接当长期股东可分配现金。</p>
+<p>2025 年应付商户增加 15.327685，应计及其他负债增加 12.359644，商户保证金增加 1.247597，都有助于当期现金流；短期投资在经营现金流中还有 12.600028 的流出。必须从完整现金流表理解分类，不能只取有利的融资浮存金增量，忽略投资现金项目。商户资金随规模增长可以提供低成本资金，但如果交易萎缩或结算加快，同样可能回吐。<a href="https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf">审计现金流表 F-12</a></p>
+<p>2026H1 CFO 42.115，同比增加；但季报只披露简式现金流，未提供足够的资本开支细分。与此同时，账面设备软件净额从年末 1.306 增至六月 4.752。不能把第三方沿用的年度资本开支直接当作最新 TTM 的精确开支，更不能假定仍可永久维持极低资本投入。模型因此使用高于 2025 实际值的正常资本开支假设。<a href="https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial">最新资产与现金流</a></p>
+<p><strong>租赁与 SBC 的处理：</strong>美国准则经营租赁现金通常已在经营现金流中体现，模型保留租赁运营费用，不再把租赁负债完整当金融债务重复扣除。正常营业利润是扣 SBC 后的经济利润，未来预测不再加回 SBC，也不同时假设未来每年额外稀释来重复计成本。已有未归属奖励与托管股份仍带来分母不确定性，另做稀释分母敏感性；这不是认为股份奖励免费。</p>
+<h3 id="_13">哪些现金可以加在经营价值之外</h3>
+<p>2026 年六月现金及等价物 128.918，加短期投资 327.496，合计 456.414。受限现金 77.274 单列，绝不再加入。其他非流动资产 96.383 主要包含定期存款和债券，但期限、税项、可用性及与运营需求的关系未完全穿透，本模型不额外加入这一整笔资产。</p>
+<p>商户应付款 109.924、商户保证金 18.545，以及税费、应计费用和其他经营负债提醒我们：资产总额不是股东随时能提走的钱。基准模型在 456.414 中保留 156.414 作为经营、结算、税项及跨境流动性缓冲，只把 <strong>300</strong> 计为经营以外可归属资产。这是估值假设，不是公司宣布的可分配余额；没有逐项测算证明 300 全部立即可上划。缓冲与情景资产反映同一风险分配，不会再把全部商户负债扣一次、同时把正常经营所需净营运资本扣第二次。</p>
+<p>年报称截至 2025 年末部分受限制净资产共约 125.917，且没有在可预见未来支付现金股息的现行计划。受限制净资产不是受限现金，不能把两项混为一谈。公司层面的投资价值可以包含有用的留存资产，但对股东而言，长期无效留存与无法合理配置的资金应降低价值。最直接的敏感性是把上述 300 全部不计入：基准经营价值仍约 111.81 美元/ADS；这检验“便宜是否完全依赖现金”，并不证明经营预测可靠。<a href="https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf">股息政策与受限制净资产</a></p>
+<h3 id="_14">股本、当前定价和模型合同</h3>
+<p>市值代理使用 3 月 18 日年报法定已发行 A 类 5,693,585,848 股，除以 4 得 1,423,396,462 ADS。研究未核验到十月最新精确法定股本，所以不能称为“当日精确股本”。2026Q2 加权平均稀释股数 5,894 百万股对应 1.4735 十亿 ADS，它是期间 EPS 分母，不是最新法定股本。年报还指出托管银行尚有部分合法发行、但计算 EPS 时视为托管的股份；这解释了部分分母差异，不支持随意选最小分母。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">本文复算</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价</td>
+<td style="text-align: right;">80.97 美元</td>
+<td>10 月 16 日正规收盘</td>
+</tr>
+<tr>
+<td>市值代理</td>
+<td style="text-align: right;">115.252 十亿美元 / 771.096 人民币十亿元</td>
+<td>价格乘法定股本代理，不含额外稀释期权</td>
+</tr>
+<tr>
+<td>2025 PE</td>
+<td style="text-align: right;">7.88 倍</td>
+<td>审计归母净利，含非经营金融收益</td>
+</tr>
+<tr>
+<td>TTM PE</td>
+<td style="text-align: right;">8.37 倍</td>
+<td>年报加减半年；不能等同核心经营 PE</td>
+</tr>
+<tr>
+<td>TTM PS</td>
+<td style="text-align: right;">1.71 倍</td>
+<td>平台收入，不是 GMV</td>
+</tr>
+<tr>
+<td>EV/收入：扣全部现金及短投</td>
+<td style="text-align: right;">0.70 倍</td>
+<td>容易过于乐观的屏幕指标，租赁按运营处理</td>
+</tr>
+<tr>
+<td>EV/收入：只扣假设剩余资产 300</td>
+<td style="text-align: right;">1.05 倍</td>
+<td>与基准模型更接近，仍是分析假设</td>
+</tr>
+<tr>
+<td>简单 2025 FCF 收益率</td>
+<td style="text-align: right;">13.72%</td>
+<td>不能与分红率混同</td>
+</tr>
+<tr>
+<td>扣 SBC 的代理 FCF 收益率</td>
+<td style="text-align: right;">12.69%</td>
+<td>仍未完全正常化营运资金、投资现金流</td>
+</tr>
+<tr>
+<td>模型正常 FCFF 收益率</td>
+<td style="text-align: right;">9.08%</td>
+<td>70 除当前市值，模型假设</td>
+</tr>
+<tr>
+<td>股息率</td>
+<td style="text-align: right;">0</td>
+<td>无已宣布现金分红基础；不预测未来分红</td>
+</tr>
+<tr>
+<td>PEG</td>
+<td style="text-align: right;">不给出</td>
+<td>盈利波动、缺少可靠正常增长率，单一 PEG 误导大于帮助</td>
+</tr>
+</tbody>
+</table></div>
+<p>DCF 使用<strong>人民币名义经营自由现金流 FCFF 与人民币名义 WACC 9% 配对</strong>，以普通股归属为目标；集团目前未显示重大普通金融债务，租赁作为运营成本，因此该 WACC 也近似本模型要求的股权回报率。9% 是研究假设而非实时 CAPM 事实，包含一般经营与市场风险；它不是无风险利率。离散的海外受限、利润下滑与资本浪费放入情景，不再每处追加折价。先在人民币中折现，再用同一历史汇率转换每 ADS 美元价值，没有把美元折现率混进人民币现金流。</p>
+<p>基准正常现金流假设桥接：营业利润 <strong>95</strong>，已扣持续股权报酬和租赁费用；按正常现金税率 <strong>20%</strong> 得税后经营利润 <strong>76</strong>；加非租赁折旧摊销 <strong>1</strong>，减资本开支 <strong>5</strong>，减新增营运资金 <strong>2</strong>，得到 <strong>70</strong>。这些均是正常化模型输入，不能声称公司已经披露这一张表。95 与 TTM 营业利润 98.553 的关系只是量级校准，税率、开支和正常化未得到独立经营验证。</p>
+<p>该起点不含利息和投资收益，所以把剩余金融资产加一次不会重复计算这些收益。未来新经营现金流已经在 DCF 中体现，不再另加十年累计现金或假设回购收益。回购本身只是分配方式，不能创造第二份同样现金的价值。</p>
+<h3 id="_15">十年三情景与反向估值</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: right;">起点 FCFF</th>
+<th style="text-align: right;">前五年增速</th>
+<th style="text-align: right;">后五年增速</th>
+<th style="text-align: right;">永续增长</th>
+<th style="text-align: right;">加入非经营资产</th>
+<th style="text-align: right;">每 ADS 价值</th>
+<th>第三/五/十年 FCFF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">-3%</td>
+<td style="text-align: right;">-2%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">64.79 美元</td>
+<td>41.1 / 38.6 / 34.9</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">3%</td>
+<td style="text-align: right;">2%</td>
+<td style="text-align: right;">2%</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">143.31 美元</td>
+<td>76.5 / 81.1 / 89.6</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">8%</td>
+<td style="text-align: right;">4%</td>
+<td style="text-align: right;">2.5%</td>
+<td style="text-align: right;">380</td>
+<td style="text-align: right;">248.68 美元</td>
+<td>119.7 / 139.6 / 169.8</td>
+</tr>
+</tbody>
+</table></div>
+<p>所有情景统一 9% 折现。悲观不是公司倒闭，而是海外长期消耗资源、国内收费能力弱化以及部分资金不能创造足够股东价值；基准不要求 Temu 复制第二个国内平台，只要求集团保持经营现金能力并有低增长；乐观要求海外合规后形成可持续贡献，不能由当前收入增速直接证明。终值约占基准经营价值 51.8%，说明十年后的持续性对估值仍然重要。</p>
+<p>十年后利润究竟是多少？可精确算出的是假设下的 FCFF，不是必然会出现的净利润。基准第十年 FCFF 89.6；若届时资本开支减折旧及营运资金投入合计保持 6，则税后经营利润约为 95.6；若正常税率仍为 20%，对应营业利润约 119.5。这个桥接是额外条件推演，不是对十年后利息、汇兑、税务及集团净利的精确预测。悲观与乐观的现金流差距很大，模型没有证据把其中某条路线标成确定。</p>
+<p>反向 DCF 固定起点 70、剩余资产 300、后五年和永续增长 2%、贴现率 9%，当前价对应前五年现金流年均约 <strong>下降 14.98%</strong>。另一种更直观的静态反推：扣除 300 资产后，当前经营价格在零增长、9% 回报率下需要约 <strong>42.40</strong> 的年度经营现金流。它比基准 70 低很多，但和悲观起点 45 接近。市场可能在定价业务下滑，也可能在定价现金无法分配或更高回报要求，不能把这一反推唯一解释成市场犯错。</p>
+<p>基准折现率改为 8%、9%、10%，价值分别为 <strong>162.04、143.31、129.27 美元</strong>；把分母换为 Q2 加权稀释 ADS 代理，9% 基准约 <strong>138.44 美元</strong>。后一个只是分母敏感性，不是第二套同时加扣所有奖励成本的主模型。资产金额、正常现金与治理假设，通常比小数点后的目标价更重要。</p>
+<h3 id="_16">三年回报检验、同业与历史估值</h3>
+<p>另用 <code>financial_rigor.py three-scenario</code> 检验从当前 TTM 每股利润出发的三年价格。该法含投资收益，与前述经营 DCF 是两种替代交叉检查，不能相加。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: right;">EPS 年增长假设</th>
+<th style="text-align: right;">三年后 PE</th>
+<th style="text-align: right;">三年后价格</th>
+<th style="text-align: right;">年化价格回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">8%</td>
+<td style="text-align: right;">14 倍</td>
+<td style="text-align: right;">170.51 美元</td>
+<td style="text-align: right;">28.2%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">2%</td>
+<td style="text-align: right;">10 倍</td>
+<td style="text-align: right;">102.60 美元</td>
+<td style="text-align: right;">8.2%</td>
+</tr>
+<tr>
+<td>悲观</td>
+<td style="text-align: right;">-10%</td>
+<td style="text-align: right;">7 倍</td>
+<td style="text-align: right;">49.34 美元</td>
+<td style="text-align: right;">-15.2%</td>
+</tr>
+</tbody>
+</table></div>
+<p>没有给未来股息加分。三年基准未达到特别高的回报门槛，说明不能只根据 DCF 与现价差距就立即重仓；如果市场持续给予低倍数且公司不分配现金，回报实现可能很慢。</p>
+<p>同业估值应比较“成熟零售或平台经营 + 新业务投入 + 可归属资产”，而不是用阿里全部利润、京东自营收入与拼多多平台收入直接比 PE/PS。腾讯更稳定的用户关系与可见资本回报，可能合理享有不同估值；京东履约资产与服务成本也决定不同利润率。本文未完成同一收盘日的全体可比公司统一净现金和正常利润重算，因此不发布貌似精准的同业倍数排名，也不把它当主估值依据。</p>
+<p>自身历史亦如此：早期亏损、快速扩张期和成熟平台时期的 PE 含义不同。未取得可回溯、同口径且经过年报修订的历史 PE 分位，故不宣称“历史最低百分位”。当前低倍数是可复算事实，“应回到曾经的高倍数”不是估值逻辑。</p>
+<p>段永平式追问：<strong>股市关闭五年，愿不愿持有？</strong> 如果能接受期间没有分红、海外经营波动，并有能力检验正常经营现金是否维持，可以接受有限仓位；如果需要稳定现金收入、不能承受长期低估或缺少分部信息，则应把它放在观察名单，而不是靠低 PE 克服能力圈限制。</p>
+<h2 id="_17">第八步：综合决策与追踪纪律</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结论</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生意质量</td>
+<td>国内匹配与供给组织有真实盈利基础，海外质量未充分拆分</td>
+<td>中高 / 海外中低</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>国内规模与低价心智较强，消费者转换成本较弱</td>
+<td>中等</td>
+</tr>
+<tr>
+<td>管理层</td>
+<td>执行力得到财务支持，资本分配与治理透明度仍待加强</td>
+<td>中等</td>
+</tr>
+<tr>
+<td>最大风险</td>
+<td>海外合规后利润不足、资金长期留存不能改善每股价值</td>
+<td>中高的关注必要性，非精确发生概率</td>
+</tr>
+<tr>
+<td>行业趋势</td>
+<td>提升商品分发效率有长期需求，利润捕获取决于责任与议价</td>
+<td>中等</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>当前价允许较差结果，但不覆盖所有极端监管和治理结果</td>
+<td>条件性中等</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投资者状态</th>
+<th>行动框架</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓、具备能力圈且能承担长期无分红</td>
+<td>75—90 美元区间可少量分批建立研究性仓位；先验证下一次财报，不因价格低一次买满</td>
+</tr>
+<tr>
+<td>已有持仓</td>
+<td>保留与风险预算相符的仓位；若组合已集中中国互联网或跨境政策风险，优先控制相关性</td>
+</tr>
+<tr>
+<td>65—75 美元</td>
+<td>在论文未破坏、现金和业务证据仍成立时提高研究与增持优先级；跌价本身不构成新证据</td>
+</tr>
+<tr>
+<td>90—110 美元</td>
+<td>更偏持有和等待，新增资金要求更清晰的海外贡献与资本回报</td>
+</tr>
+<tr>
+<td>110—145 美元</td>
+<td>不追价；重新计算正常现金流和机会成本，必要时减小权重</td>
+</tr>
+<tr>
+<td>高于 145 美元</td>
+<td>需要比当前基准更好的证据支持；若只靠估值修复而利润兑现不足，分步退出部分仓位</td>
+</tr>
+<tr>
+<td>不理解 VIE、海外责任或长期无分红约束</td>
+<td>观望；不以个人成本价作为持有理由</td>
+</tr>
+</tbody>
+</table></div>
+<p>这些行动线是研究判断，不是自动交易委托，也不是精确公平价值的上下界。更低价格可能对应更差事实，必须先更新事实再更新买入意愿。</p>
+<p>需要下修或退出的论文信号包括：国内正常经营现金持续跌向悲观区间且看不到改善；营销与履约投入增加但有效订单和利润不跟随；资金投向持续不透明或发生重大关联利益问题；产品、数据或准入责任使主要海外市场商业模式难以成立。季度利润受投资项目扰动时，应先拆经营和非经营，避免把单季噪声当成永久损伤。</p>
+<p>需要提高信心的证据包括：按地区或业务给出可以复核的贡献利润；商户结算与消费者保护改善后仍保持正现金；资本开支增长能够对应生产效率；股本和 SBC 共同受控；公司明确说明剩余资本的使用原则并实际兑现回报。最有价值的催化可能不是下一次下载量排名，而是经营责任和股东现金之间的链条变得更清楚。</p>
+<h3 id="_18">四位大师的模拟点评</h3>
+<p>以下仅为依据公开投资方法写出的<strong>模拟研究视角</strong>，不是本人原话、背书、持仓信息或对其当前观点的推断。</p>
+<blockquote>
+<p><strong>巴菲特视角（模拟）：</strong>先判断十年后商家和消费者是否还愿意经过这座平台，再判断付出的价格。现金是资产，但只有正确使用和归属于股东才有意义。</p>
+<p><strong>芒格视角（模拟）：</strong>最危险的可能不是看不见账上的钱，而是看到钱以后停止追问。把合规、商家生存和管理层激励放在一起，寻找可能让整条逻辑失效的地方。</p>
+<p><strong>段永平视角（模拟）：</strong>便宜不是生意好的证明。若说不清长期为什么赚钱，也不能接受管理层对现金的使用方式，就不要用低市盈率代替理解。</p>
+<p><strong>李录视角（模拟）：</strong>提高供需效率有长期意义，但文明进步也会要求更完整的产品责任。只有在新规则下仍创造并保留价值的公司，才配得到长期估值。</p>
+</blockquote>
+<p>AI 分析置信度对已公布合并财务较高，对 Temu 独立盈利、当前精确股本、资本回报时间及十年现金流为中低。投资确定性低于财务事实可读性：数据越多，未必越能证明股东能得到更多回报。进一步的一手验证应包括不同规模商家的真实广告回本、退款和处罚成本；海外用户复购与退货体验；本地仓/跨境直发的含税贡献利润；资金所在地及可上划限制。上述问题未解决前，本报告的明确建议仍是<strong>有条件的小仓买入或持有，不把巨额现金当成确定分红</strong>。</p>
+<h2 id="_19">计算、来源与审计附录</h2>
+<p>计算文件在 <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/research-20261020/model.py">research-20261020/model.py</a>、<a href="../files/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/research-20261020/inputs.json">输入</a>、<a href="../files/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/research-20261020/outputs.json">输出</a> 与 <a href="../files/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/research-20261020/financial-rigor.txt">金融工具原始输出</a>。全部估值、增长、比率采用 Decimal；金融工具验证市值、跨源数值、估值和三情景。现金流模型是条件计算，不是独立验证未来。</p>
+<p>金融工具记录摘要：市值验算为 115,252,411,528.14 美元，对照 115,250,000,000 美元；2025 收入、审计净利、2026Q2 现金及短期投资、10 月 16 日收盘均在 1% 内。法定股本代理与第三方四舍五入股本相差约 0.24%，不能由此证明十月精确股本已核实。审计与初步净利差异约 1.56%，超过项目 1% 阈值，已调查并使用审计值；工具默认容差可能为 2%，其输出不覆盖项目更严格规则。管理层权益只有一手确认，未伪造双源通过。</p>
+<p>自动抽样与人工复核记录保存在 <a href="../files/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/research-20261020/audit-extract.txt">audit-extract.txt</a>、<a href="../files/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/research-20261020/audit-facts.json">audit-facts.json</a>、<a href="../files/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/research-20261020/audit-excluded.json">audit-excluded.json</a>、<a href="../files/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/research-20261020/audit-verdict.txt">audit-verdict.txt</a> 和 <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/research-20261020/audit-scope.md">审计范围</a>。抽出的日期、模型假设及公式输出不作为外部事实 PASS；历史事实重新对照已打开的原始页面。工具数值准出不等于完整双源覆盖，更不验证护城河、因果判断或投资收益。</p>
+<p>本报告总体审计状态：<strong>LIMITED_FACT_VERIFICATION_WITH_EXPLICIT_GAPS</strong>。核心财务和价格完成独立核对，部分历史余额、管理层权益、最新精确股本及海外分部经济账仍有明确缺口。模型可复跑，不把缺口包装成确定结论。</p></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E6%8B%BC%E5%A4%9A%E5%A4%9A%EF%BC%9A%E4%BE%BF%E5%AE%9C%E6%9D%A5%E8%87%AA%E7%9C%9F%E5%AE%9E%E5%88%A9%E6%B6%A6%EF%BC%8C%E4%B9%9F%E6%9D%A5%E8%87%AA%E8%82%A1%E4%B8%9C%E6%8B%BF%E4%B8%8D%E5%88%B0%E7%8E%B0%E9%87%91%E7%9A%84%E7%96%91%E9%97%AE&amp;ticker=%E6%8B%BC%E5%A4%9A%E5%A4%9A&amp;source=reports%2F%E6%8B%BC%E5%A4%9A%E5%A4%9A%2F%E6%8B%BC%E5%A4%9A%E5%A4%9A%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261020.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2Ff6adf8399374.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>底稿与核验（GitHub）</h2><div class="meta">这些文件不在阅读站上展示，点开为 GitHub 原文。</div><ul class="list work"><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8B%BC%E5%A4%9A%E5%A4%9A/research-20261020/audit-scope.md">Audit scope</a><div class="meta">审计核验底稿 · research-20261020/audit-scope.md</div></li></ul><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/1136bd782920.html">拼多多（PDD）独立投资研究报告 /investment-research — 2026-10-20</a><div class="meta">2026-10-20 · 研究</div></li><li><a href="../r/add3b8034f65.html">拼多多控股（PDD Holdings，PDD.US）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/31305353fd50.html">拼多多（PDD）研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/581cb36c9940.html">拼多多2036：活下来没有悬念，多赚要看两个变量</a><div class="meta">2026-09-26 · 研究</div></li><li><a href="../r/a4afe86cabe3.html">黄峥与拼多多控制权：谁在掌舵、他还能不能回来</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/2ef823d3a551.html">拼多多（PDD Holdings）投资研究 — 2026.04.07</a><div class="meta">2026-09-25 · 导读</div></li><li><a href="../r/9da20c690247.html">拼多多（PDD）研究报告</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/b870b0a0d5b4.html">拼多多2026年中报解读</a><div class="meta">2026-08-25 · 公众号</div></li><li><a href="../r/7a2822470350.html">拼多多三大报表解析：从交易所原件到逐项含义</a><div class="meta">2026-08-24 · 财报</div></li><li><a href="../r/7b0e339dcb86.html">拼多多（PDD Holdings, NASDAQ: PDD）投资研究报告</a><div class="meta">2026-07-04 · 研究</div></li><li><a href="../r/0e96a7d52297.html">PDD Holdings（拼多多）四大师综合投资研究</a><div class="meta">2026-07-02 · 研究</div></li><li><a href="../r/ea08984766d5.html">黄峥公众号：如创业的投资和如投资的创业</a><div class="meta">2026-06-29 · 公众号</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">开篇决策卡：价格低，哪些理由够硬</a></li>
+<li><a href="#_2">第一步：建立可核查的数据底座</a><ul>
+<li><a href="#_3">收入结构与最近四季度</a></li>
+<li><a href="#_4">五年财务：利润并非只来自故事</a></li>
+<li><a href="#_5">双源核验与口径差异</a></li>
+</ul>
+</li>
+<li><a href="#_6">第二步：生意本质——低价格必须由低成本和好匹配支持</a></li>
+<li><a href="#_7">第三步：护城河——国内规模优势较强，全球持久性还要证明</a></li>
+<li><a href="#_8">第四步：逆向思考——最强空方不需要证明财务造假</a><ul>
+<li><a href="#_9">截止日最新监管事实</a></li>
+</ul>
+</li>
+<li><a href="#_10">第五步：管理层——执行力强，资本回报证据较弱</a></li>
+<li><a href="#_11">第六步：行业与价值捕获——廉价商品需求长久，平台利润不是必然</a></li>
+<li><a href="#_12">第七步：估值——把现金流、现金资产与每股分母分别处理</a><ul>
+<li><a href="#fcf">先审查现金流，不用一个 FCF 指标解决全部问题</a></li>
+<li><a href="#_13">哪些现金可以加在经营价值之外</a></li>
+<li><a href="#_14">股本、当前定价和模型合同</a></li>
+<li><a href="#_15">十年三情景与反向估值</a></li>
+<li><a href="#_16">三年回报检验、同业与历史估值</a></li>
+</ul>
+</li>
+<li><a href="#_17">第八步：综合决策与追踪纪律</a><ul>
+<li><a href="#_18">四位大师的模拟点评</a></li>
+</ul>
+</li>
+<li><a href="#_19">计算、来源与审计附录</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-20 15:56 UTC</footer></body></html>
