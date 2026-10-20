@@ -1,0 +1,694 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>阿里巴巴投资研究：AI扩张能否重新变成每股现金流 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/bdcc31557861.html" data-title="阿里巴巴投资研究：AI扩张能否重新变成每股现金流"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/阿里巴巴/index.html">阿里巴巴</a></div><div class="layout"><div><h1>阿里巴巴投资研究：AI扩张能否重新变成每股现金流</h1><div class="meta"><a href="../companies/阿里巴巴/index.html">阿里巴巴</a> ｜ 2026-10-20 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Alibaba/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261020.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、数据收集与口径：先看旧利润是否还能变成现金</a><ul>
+<li><a href="#_2">五年财务</a></li>
+<li><a href="#_3">最近四个季度：收入、利润与分部变更分开看</a></li>
+<li><a href="#_4">股价、股本与估值检查</a></li>
+</ul>
+</li>
+<li><a href="#_5">二、商业模式与护城河：电商入口和云迁移成本都有效，但作用不同</a></li>
+<li><a href="#_6">三、行业与技术：巨大的需求，不等于巨大的可分配利润</a></li>
+<li><a href="#_7">四、管理层与资本配置：把战略投入和每股结果分开打分</a></li>
+<li><a href="#_8">五、现金流、资产与风险：看清账上的钱归谁、会花到哪里</a><ul>
+<li><a href="#_9">从利润到现金</a></li>
+<li><a href="#_10">估值资产桥：已知余额与假设分栏</a></li>
+<li><a href="#_11">风险如何真正伤害每股价值</a></li>
+</ul>
+</li>
+<li><a href="#_12">六、估值：当前价格需要的是现金修复，而不只是云收入增长</a><ul>
+<li><a href="#_13">估值契约</a></li>
+<li><a href="#_14">三年、五年、十年可能赚多少</a></li>
+<li><a href="#_15">价格反推与敏感性</a></li>
+</ul>
+</li>
+<li><a href="#_16">七、多空对照与四位投资者视角</a></li>
+<li><a href="#_17">八、行动、反证与下次必须补齐的证据</a></li>
+<li><a href="#_18">来源与复算</a></li>
+</ul>
+</div>
+</details><article><p>研究与资料截止：2026-10-20（北京时间）；按 <code>/investment-research</code> 独立执行。最新已披露完整财务期为截至2026-06-30的季度，FY2026指截至2026-03-31的财年。行情统一采用2026-10-16港股正规收盘108.80港元：10月19日港股因重阳节翌日休市。本文只讨论9988普通股；1 ADS对应8普通股。[1][2][3][4]</p>
+<p><strong>核心判断：阿里具备电商与云基础设施两种真实优势，但眼下的主要矛盾是增长需要持续投入多少现金。108.80港元接近一条有条件修复路径的价值，尚不足以把巨额AI投入、增发与电商竞争当作已解决的问题。适合持续研究或小额试验，核心仓位需要等待资本开支后的现金证据。</strong></p>
+<p>信息丰富度A级，财务转录置信度较高，未来资本回报置信度中低。公开材料多，不代表阿里云长期赚取的现金一定多。最容易产生的偏见，是从Qwen模型能力、云收入增长和AI用户规模，直接跳到集团每股价值上升。本报告的反面检验贯穿始终：即使AI需求增长，折旧、补贴、推理成本与股本增加会不会让利益主要流向客户、供应商和新增股东？</p>
+<p>模型及核验文件见<a href="../r/4f94a55cb583.html">研究附件</a>。金额除每股价格、特别标注外均为人民币亿元；所有估值和情景数字由Decimal模型生成。本文是学习研究，不是针对读者账户的交易指令。</p>
+<h2 id="_1">一、数据收集与口径：先看旧利润是否还能变成现金</h2>
+<h3 id="_2">五年财务</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>期间</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">归普通股净利</th>
+<th style="text-align: right;">毛利率%</th>
+<th style="text-align: right;">GAAP经营利润</th>
+<th style="text-align: right;">CFO</th>
+<th style="text-align: right;">购建固定资产</th>
+<th style="text-align: right;">简单FCF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2022</td>
+<td style="text-align: right;">8,530.62</td>
+<td style="text-align: right;">619.59</td>
+<td style="text-align: right;">36.76</td>
+<td style="text-align: right;">696.38</td>
+<td style="text-align: right;">1,427.59</td>
+<td style="text-align: right;">533.09</td>
+<td style="text-align: right;">894.50</td>
+</tr>
+<tr>
+<td>FY2023</td>
+<td style="text-align: right;">8,686.87</td>
+<td style="text-align: right;">725.09</td>
+<td style="text-align: right;">36.72</td>
+<td style="text-align: right;">1,003.51</td>
+<td style="text-align: right;">1,997.52</td>
+<td style="text-align: right;">343.30</td>
+<td style="text-align: right;">1,654.22</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td style="text-align: right;">9,411.68</td>
+<td style="text-align: right;">797.41</td>
+<td style="text-align: right;">37.70</td>
+<td style="text-align: right;">1,133.50</td>
+<td style="text-align: right;">1,825.93</td>
+<td style="text-align: right;">320.87</td>
+<td style="text-align: right;">1,505.06</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td style="text-align: right;">9,963.47</td>
+<td style="text-align: right;">1,294.70</td>
+<td style="text-align: right;">39.95</td>
+<td style="text-align: right;">1,409.05</td>
+<td style="text-align: right;">1,635.09</td>
+<td style="text-align: right;">859.72</td>
+<td style="text-align: right;">775.37</td>
+</tr>
+<tr>
+<td>FY2026</td>
+<td style="text-align: right;">10,236.70</td>
+<td style="text-align: right;">1,059.04</td>
+<td style="text-align: right;">39.81</td>
+<td style="text-align: right;">501.50</td>
+<td style="text-align: right;">762.13</td>
+<td style="text-align: right;">1,260.63</td>
+<td style="text-align: right;">-498.50</td>
+</tr>
+<tr>
+<td>2026June</td>
+<td style="text-align: right;">2,689.53</td>
+<td style="text-align: right;">105.37</td>
+<td style="text-align: right;">38.24</td>
+<td style="text-align: right;">151.61</td>
+<td style="text-align: right;">229.45</td>
+<td style="text-align: right;">676.78</td>
+<td style="text-align: right;">-447.33</td>
+</tr>
+</tbody>
+</table></div>
+<p>收入、经营利润及归普通股净利来自FY2026年报五年摘要；FY2024—2026成本及现金流来自年报原表。FY2022—2023成本追溯旧年报，早期CFO/资本开支主要使用S&amp;P整理表，本轮原件逐项追溯覆盖不完整，保留限制。简单FCF=CFO−全部购建固定资产，不等于公司定义FCF，更不等于无条件归属股东的FCFE。[1][5][6]</p>
+<p>现金储备的窄口径也值得单列：FY2022—FY2026期末现金及现金等价物依次为1898.98、1930.86、2481.25、1454.87、1315.30亿元，六月末为1429.14亿元。它不包括短期投资，不能与公司“现金及其他流动投资”直接比较；前两年窄口径余额本轮主要依赖S&amp;P整理，后三年与年报原表核对。S&amp;P把六月短期投资和部分流动投资合并显示为2427.83亿元，而原表短期投资为1546.53亿元，加流动股权及其他投资881.30亿元才可对上。定义差异不应被抹成数据错误。[1][2][18]</p>
+<p>这里有两个不能省略的差异。第一，行情数据库把部分减值、摊销移出经营费用，FY2026展示经营利润629.83亿元，而公司GAAP原表是501.50亿元，相差明显；本文采用原表。第二，年报“归属集团净利”1035.92亿元、归普通股净利1059.04亿元、合并净利1021.27亿元不是同一分母；前两者的差别包含夹层权益调整。不能把三个数轮换使用来挑选最低PE。[1][5]</p>
+<p>收入在增长，资本开支与费用扩张更快。FY2024简单FCF1505.06亿元，到FY2026为负498.50亿元。FY2026利息及投资净收益875.12亿元，已高于GAAP经营利润501.50亿元；年度归普通股净利1059.04亿元并不是当前主营业务可持续赚钱能力的直接测量。非GAAP净利606.58亿元也没有解决资本开支问题：剔除会计调整不等于购置服务器不花钱。[1]</p>
+<h3 id="_3">最近四个季度：收入、利润与分部变更分开看</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>自然季度</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">GAAP经营利润</th>
+<th style="text-align: right;">归普通股净利</th>
+<th style="text-align: right;">云分部收入</th>
+<th style="text-align: right;">云同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025年9月季</td>
+<td style="text-align: right;">2477.95</td>
+<td style="text-align: right;">53.65</td>
+<td style="text-align: right;">209.90</td>
+<td style="text-align: right;">398.24</td>
+<td style="text-align: right;">34%</td>
+</tr>
+<tr>
+<td>2025年12月季</td>
+<td style="text-align: right;">2848.43</td>
+<td style="text-align: right;">106.45</td>
+<td style="text-align: right;">163.22</td>
+<td style="text-align: right;">432.84</td>
+<td style="text-align: right;">36%</td>
+</tr>
+<tr>
+<td>2026年3月季</td>
+<td style="text-align: right;">2433.80</td>
+<td style="text-align: right;">-8.48</td>
+<td style="text-align: right;">254.76</td>
+<td style="text-align: right;">416.26</td>
+<td style="text-align: right;">38%</td>
+</tr>
+<tr>
+<td>2026年6月季</td>
+<td style="text-align: right;">2689.53</td>
+<td style="text-align: right;">151.61</td>
+<td style="text-align: right;">105.37</td>
+<td style="text-align: right;">484.37</td>
+<td style="text-align: right;">45%</td>
+</tr>
+</tbody>
+</table></div>
+<p>前三季度云口径为Cloud Intelligence Group，六月季改为包含平头哥的AI Cloud and Compute Services；公司已重列六月同比基数。该表用于展示各季披露状态，不能把旧云与新云收入直接环比后称为有机增速。六月新电商部门又合并国内、国际电商及盒马等业务，新即时零售口径包括盒马、天猫超市即时配送；不能用它与旧“淘宝闪购+饿了么”口径计算夸大的增速。[2][7][8][9]</p>
+<p>六月季度经营利润回升不代表全面修复。客户管理收入825.47亿元，同比下降7%；公司称排除新业务计划抵减收入影响后同比约增长1%，并提到交易活动偏弱。部分补贴由销售费用改记抵减收入，销售费率改善和客户管理收入下降必须联合解释。此时把销售费用下降全部称为效率进步，会高估正常利润。[2]</p>
+<p>最新TTM由FY2026加六月26、减六月25重建：收入10449.71亿元、归普通股净利733.25亿元、GAAP经营利润303.23亿元、经营利润率2.90%。季度利润受投资重估、减值及税项影响，不适合用单季乘四给公司贴上低PE标签。[模型]</p>
+<h3 id="_4">股价、股本与估值检查</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">采用值</th>
+<th>核对与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>港股收盘</td>
+<td style="text-align: right;">108.80港元</td>
+<td>StockAnalysis与Webull一致，均标注10月16日</td>
+</tr>
+<tr>
+<td>9月末已发行普通股</td>
+<td style="text-align: right;">19,901,959,514股</td>
+<td>港交所月报；Webull为19.90bn舍入值</td>
+</tr>
+<tr>
+<td>自算市值</td>
+<td style="text-align: right;">21653.33亿港元</td>
+<td>与经济通21653.33亿港元基本一致</td>
+</tr>
+<tr>
+<td>折人民币市值</td>
+<td style="text-align: right;">18459.47亿元</td>
+<td>HKD/CNY参考0.8525，独立参考0.8520，非可成交汇价</td>
+</tr>
+<tr>
+<td>自算TTM PE</td>
+<td style="text-align: right;">25.17倍</td>
+<td>以最新期末总股本和归普通股净利重建</td>
+</tr>
+<tr>
+<td>自算TTM PS</td>
+<td style="text-align: right;">1.77倍</td>
+<td>收入含毛额确认零售、净额平台及云，不能机械横比</td>
+</tr>
+<tr>
+<td>PB（六月权益基数）</td>
+<td style="text-align: right;">1.76倍</td>
+<td>不是已计入八月增发后更新的账面PB</td>
+</tr>
+</tbody>
+</table></div>
+<p>市场页面可能显示不同PE：每股收益所用加权平均股本、稀释调整、汇率以及会计利润口径不同。本报告用“现在买整家公司支付多少/过去四季普通股利润”统一；并不宣称25.17倍比所有行情终端更准确。FY2026财务报表股数185.80亿与港交所发行股数191.34亿也不相同，包含会计库存股等口径差别。估值分母选月报199.02亿，不用较小的会计股数制造便宜感。[1][3][4][10][11]</p>
+<h2 id="_5">二、商业模式与护城河：电商入口和云迁移成本都有效，但作用不同</h2>
+<p>阿里的客户付三种钱。商家为成交机会支付广告和客户管理费用；消费者为自营商品与即时履约付费，里面很大部分收入随后付给供应商和配送环节；企业为计算、数据库、存储、安全和AI服务付费。价值判断要问每一元新增收入最后剩下什么，而不是把三种收入加总后给一个“科技公司倍数”。</p>
+<p>六月新分部账本如下；收入为分部披露、未扣全部集团内部抵销，不能直接相加等同集团收入。[2]</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>分部</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">调整后EBITA</th>
+<th>关键经济含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阿里电商集团</td>
+<td style="text-align: right;">2058.62</td>
+<td style="text-align: right;">397.49</td>
+<td>现有利润来源，但多种业务合并降低局部透明度</td>
+</tr>
+<tr>
+<td>AI云与计算服务</td>
+<td style="text-align: right;">484.37</td>
+<td style="text-align: right;">56.28</td>
+<td>同比增长45%，EBITA率11.62%，尚不是资本投入后FCF</td>
+</tr>
+<tr>
+<td>AI实验室与应用</td>
+<td style="text-align: right;">33.38</td>
+<td style="text-align: right;">-138.61</td>
+<td>收入增长16%，亏损扩大，推理与研发仍重</td>
+</tr>
+<tr>
+<td>其他</td>
+<td style="text-align: right;">288.03</td>
+<td style="text-align: right;">-33.43</td>
+<td>多项科技及其他业务仍需资本约束</td>
+</tr>
+</tbody>
+</table></div>
+<p>电商护城河来自商家和消费者的双边匹配、商品深度、品牌经营基础设施、交易信任与履约连接。它能降低消费者找货和商家经营的总成本，但用户可以同时使用拼多多、抖音、京东；商家也可以多平台经营。网络效应存在，排他性有限。竞争最激烈时，平台会把利润返还给商家和消费者，以维持网络的密度。</p>
+<p>云的护城河更接近企业工作流中的迁移成本：数据库、权限、安全、应用接口、运维流程与采购体系共同形成摩擦。客户迁移的是生产系统，不只是一段模型调用代码。阿里同时提供芯片、基础设施、模型及应用，可能降低成功交付一个任务的总成本。这种整合必须用稳定性、客户续费、付费扩容和贡献利润证明；模型开源或排行榜领先本身不保证租金留在阿里。</p>
+<p>用竞争者拥有100亿元的反事实检验：可以训练有竞争力的模型、采购一批算力、做单项应用；难以短期复制阿里商家关系、长期云运维经验和全国履约连接。不过，竞争者不必复制整个阿里。它只要在推荐购物、低价交易或关键云负载上抢走高利润的部分，就能削弱阿里的集团回报。</p>
+<p>我的判断是：电商护城河仍在、收费权承压；云企业服务护城河在增强、资本回报尚未完成验证；独立AI消费者应用的护城河证据较弱。三者不能互相借用确定性。</p>
+<h2 id="_6">三、行业与技术：巨大的需求，不等于巨大的可分配利润</h2>
+<p>云需求来自企业数字化与AI训练、推理、智能体。公司引用Omdia称2025年中国AI云市场阿里占38.1%；AAStocks对同一研究的报道给出市场规模567亿元、IaaS约69%、MaaS约31%。本轮没有取得Omdia完整原始报告，故38.1%属于公司及媒体引用的研究结果，不能当成两项独立市场测量。它也不是全部公有云、更不是全部企业IT支出的市场份额。[2][16]</p>
+<p>六月AI相关产品收入123.76亿元，是云部门内部一个口径；AI实验室与应用收入33.38亿元是另一个部门口径。不能把二者与云总收入反复相加。AI相关收入可能包含客户迁移既有计算支出；在没有客户级新增支出数据前，也不能全算成新创造的需求。</p>
+<p>技术链条包括Qwen模型、云计算调度、数据库/存储/网络、安全、平头哥芯片及企业应用入口。公司披露六月研发费用225.29亿元、全集团资本开支676.78亿元，说明其参与的是持续投入的基础设施竞争。资本开支不是可以随意删去的噪音：采购周期可能造成季度波动，但新设备未来会折旧、需要更新，也可能因模型算法进步而提前过时。[2]</p>
+<p>阿里的对手在不同层面不同：电商面对拼多多、抖音与京东，即时配送面对美团，云面对华为、腾讯、百度、运营商及海外云，模型与应用面对独立模型公司和设备入口。腾讯有社交与支付入口、美团有本地履约密度、拼多多有低价交易组织能力。这些差异使阿里不能仅凭“业务最全”胜出；全也意味着协调成本与资源分散。</p>
+<p>反直觉的一点是，推理价格下降既可能扩大云需求，也可能降低单位收入。只有付费工作量的增幅超过价格降幅，并覆盖折旧、能耗、研发和获客，股东现金才增加。六月云EBITA56.28亿元与AI实验室亏损138.61亿元并列，正好说明集团可能在基础设施端收费，同时在消费者端把更多钱花出去。</p>
+<h2 id="_7">四、管理层与资本配置：把战略投入和每股结果分开打分</h2>
+<p>蔡崇信任董事会主席、吴泳铭任CEO，公司最新10月14日披露确认董事名单。FY2026年报披露蔡相关权益273,835,408股、约1.43%，吴相关权益54,627,752股、约0.29%。这些是当时法定披露的长仓及相关权益，含家属、信托、RSU或期权；吴的披露中包括尚未行权的4000万份期权，不能称为其已实际持有同额流通股。该组个人权益本轮未取得独立二源逐项验证，且八月增发后比例分母已变化。[1][12]</p>
+<p>阿里合伙人的董事提名机制意味着经营控制不能只按个人经济权益比例理解。少数股东面对的是有持续战略自主权的管理团队。长期投入可以创造价值，也可能延长低回报项目的生命周期，关键在于预算约束与退出纪律，而不是简单赞美创始人文化。[1]</p>
+<p>资本配置的近期证据很具体：六月季度回购约1340万普通股、耗资1.62亿美元；八月26日却完成发行7.10亿新股、价格112.70港元，净募集约797亿港元。发行前股本增加约3.70%。把过去的回购额度当成未来每股收益必然增加的承诺，已不符合最新事实。[2][13]</p>
+<p>增发不自动是坏事。若新增投资的回报高于融资成本，原股东可以受益；若算力变成低回报商品，原股东同时承担资本消耗与摊薄。判断必须落到投入后每股可分配现金，而非“有人愿意在112.70买，所以108.80有底”。发行价格不是回购承诺，也不是资产净值担保。</p>
+<p>10月13日S-8另注册1亿普通股，含7200万股激励计划和2800万股Existing Shares计划。注册额度不等于当日已新增发行1亿股，不能直接再加进当前股本。本模型将SBC视为持续经济成本，未来现金流按覆盖替代性现金薪酬后的口径假设，保持股本不变；额外融资另作敏感性，避免既全额扣SBC又无差别重复扣同一份稀释。[12]</p>
+<h2 id="_8">五、现金流、资产与风险：看清账上的钱归谁、会花到哪里</h2>
+<h3 id="_9">从利润到现金</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>口径</th>
+<th style="text-align: right;">FY2026</th>
+<th style="text-align: right;">2026六月季</th>
+<th style="text-align: right;">截至六月TTM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CFO</td>
+<td style="text-align: right;">762.13</td>
+<td style="text-align: right;">229.45</td>
+<td style="text-align: right;">784.86</td>
+</tr>
+<tr>
+<td>全部购建固定资产</td>
+<td style="text-align: right;">1260.63</td>
+<td style="text-align: right;">676.78</td>
+<td style="text-align: right;">1550.65</td>
+</tr>
+<tr>
+<td>简单FCF</td>
+<td style="text-align: right;">-498.50</td>
+<td style="text-align: right;">-447.33</td>
+<td style="text-align: right;">-765.79</td>
+</tr>
+<tr>
+<td>公司定义FCF</td>
+<td style="text-align: right;">-466.09</td>
+<td style="text-align: right;">-446.70</td>
+<td style="text-align: right;">-724.64</td>
+</tr>
+</tbody>
+</table></div>
+<p>公司FCF剔除办公园区土地使用权与在建工程部分，并调整买家保障基金等项目。FY2026还包含购买无形资产；因此公司定义与简单减法有差异。两者都告诉我们当前扩张需要现金，两者都不是标准FCFF。以CFO减资本开支开始做DCF，还必须处理利息、投资收益、少数股东、股权激励及营运资本，不能把差额直接命名为自由归母现金。[1][2][6]</p>
+<h3 id="_10">估值资产桥：已知余额与假设分栏</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">金额</th>
+<th>性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>六月底现金及其他流动投资</td>
+<td style="text-align: right;">4745.05</td>
+<td>原始披露，含部分列于投资资产的财资工具</td>
+</tr>
+<tr>
+<td>八月增发净收入折人民币</td>
+<td style="text-align: right;">+679.44</td>
+<td>797亿港元按统一估值汇率折算，非实际入账汇兑值</td>
+</tr>
+<tr>
+<td>七月至估值日现金净变化</td>
+<td style="text-align: right;">-400.00</td>
+<td>未披露期间的模型占位假设，含经营、投资、分配等净影响，不是假装最新现金</td>
+</tr>
+<tr>
+<td>必需经营流动性保留</td>
+<td style="text-align: right;">-1000.00</td>
+<td>分析假设，不作为非经营资产加回</td>
+</tr>
+<tr>
+<td>六月有息借款及票据/可转债/可交换债</td>
+<td style="text-align: right;">-2665.30</td>
+<td>原表五项相加，不含作为经营费用处理的租赁</td>
+</tr>
+<tr>
+<td>非流动性战略投资归属价值</td>
+<td style="text-align: right;">+2000.00</td>
+<td>模型假设，已考虑流动性、税及非全额可实现性</td>
+</tr>
+<tr>
+<td>少数股东权益代理</td>
+<td style="text-align: right;">-572.72</td>
+<td>用账面值代理经济索取权，不是独立市场估值</td>
+</tr>
+<tr>
+<td>夹层权益</td>
+<td style="text-align: right;">-75.84</td>
+<td>单独扣除</td>
+</tr>
+<tr>
+<td>净股权桥合计</td>
+<td style="text-align: right;">2710.63</td>
+<td>以上合计，只加一次</td>
+</tr>
+</tbody>
+</table></div>
+<p>现金及短期投资分别为1429.14和1546.53亿元，4745.05亿元已包含其中，因此不能把三个数字相加。其他财资投资由差额推得1769.38亿元；从全部股权及其他投资、权益法投资合计中剔除后，非流动性投资账面池约4574.17亿元。模型只给其中2000亿元的归属价值，不再单独把蚂蚁、上市股权及同一投资未来利润重复资本化。这里仍需逐项资产估值，2000亿元是明确的敏感参数。[2][模型]</p>
+<p>七月至截止日净现金变动没有完整披露，因此没有真正的“10月实时净现金”。负400亿元只是让模型承认资金已可能被消耗：改为负800亿元或零，价值各变化约2.36港元/股；战略投资假设从2000改为1000或3000亿元，价值各变化约5.89港元。折现现金流从估值日往后计算，不与这段已过去的现金变化重叠。若未来公布九月季报，优先替换该占位项，而不是继续沿用它。</p>
+<h3 id="_11">风险如何真正伤害每股价值</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>风险</th>
+<th>传导路径</th>
+<th>应观察什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>电商转化或收费能力走弱</td>
+<td>流量需要更多补贴，商家回报下降，佣金/广告增长转弱</td>
+<td>同口径CMR、剔除补贴后的经营利润、商家留存</td>
+</tr>
+<tr>
+<td>算力投入低回报</td>
+<td>资本开支先支出，折旧后上升，利用率不足压低现金回报</td>
+<td>云外部收入、现金毛利、折旧、资本开支/CFO</td>
+</tr>
+<tr>
+<td>应用增长依赖免费推理</td>
+<td>活跃增长但每付费用户贡献为负</td>
+<td>续费、推理成本、AI应用亏损额</td>
+</tr>
+<tr>
+<td>跨境合规</td>
+<td>罚款、整改、商品治理与履约成本侵蚀利润</td>
+<td>欧盟整改、重复违规、卖家成本</td>
+</tr>
+<tr>
+<td>地缘与芯片供应</td>
+<td>算力供给受限或成本上升</td>
+<td>交付周期、产品性能/成本与出口政策</td>
+</tr>
+<tr>
+<td>控制权及再融资</td>
+<td>现金持续投入、股本扩张，未按股东偏好分配</td>
+<td>净新增股数、回购执行、资本预算回报</td>
+</tr>
+</tbody>
+</table></div>
+<p>欧盟委员会2026年7月20日已对AliExpress处以5.5亿欧元DSA罚款；公司六月季报计提相关准备。监管方要求于10月20日前提交行动计划。截止本研究，不能将“到期日来到”当成“整改已通过”；也不能把一次罚款简单从长期成本中永久剔除，商品治理可能产生持续费用。[2][17]</p>
+<h2 id="_12">六、估值：当前价格需要的是现金修复，而不只是云收入增长</h2>
+<h3 id="_13">估值契约</h3>
+<p>采用经营FCFF折现加资产桥，企业现金流与人民币名义WACC配对。统一WACC取9.5%，是分析设定，不是把期望收益率冒充市场测量：例如无风险利率假设2.5%、股权风险溢价6.5%、业务风险系数1.2形成约10.3%股权成本，90%股权/10%债务、债务成本4%、税率25%得到约9.6%的示例量级，主模型取整为9.5%。这些参数未被本轮逐个校准成可交易市场报价，须同时看8.5%—10.5%敏感性。若采用确定性等价现金流，理论上可配无风险利率；本文现金流没有完成那种风险调整，不能直接换成国债收益率。</p>
+<p>三个情景都用同一WACC，让经营失败主要表现为利润、资本投入和现金路径差异，不再给悲观情景叠加任意“风险折扣”。战略投资的2000亿元折价针对非经营资产可实现性，安全边际买入线则是交易纪律，两者与经营现金流风险不是同一个扣减。</p>
+<p>预测期十年，第一年是从估值日起未来十二个月。经营FCFF须在经营税、维护及增长资本开支、营运资本与持续SBC经济成本之后、融资利息之前；不含非经营投资收益。以下是明确假设路径，<strong>不是公司披露的未来FCFF，也不是把当前CFO自动校准出的预测</strong>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>第1年至第5年FCFF</th>
+<th>第6年至第10年FCFF</th>
+<th style="text-align: right;">永续增长</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td>-900、-700、-300、0、300</td>
+<td>450、550、650、750、850</td>
+<td style="text-align: right;">1.0%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td>-500、-100、500、900、1300</td>
+<td>1500、1650、1800、1950、2100</td>
+<td style="text-align: right;">2.5%</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td>-300、300、1000、1600、2200</td>
+<td>2600、3000、3400、3800、4200</td>
+<td style="text-align: right;">3.0%</td>
+</tr>
+</tbody>
+</table></div>
+<p>现金路径还需要损益到再投资的检验。第五年FCFF的假设桥分别为：悲观正常化EBIT1000×75%税后留存+折旧800−资本开支1200−新增营运资本50=300亿元；基准2000×75%+1000−1100−100=1300亿元；乐观3600×75%+1400−1700−200=2200亿元。基准第十年为3200×75%+1600−1700−200=2100亿元。EBIT已将持续股权激励作为经济薪酬成本，税率25%为正常化假设。这些是可反驳的经营假设：尤其基准要求资本开支相对当前TTM下降并保持增长，若设备更新和需求扩张使资本开支长期居高不下，基准现金路径就不成立。</p>
+<p>基准隐含电商维持主要现金来源、AI应用亏损逐步收窄、云收入在现有基础上持续扩张，同时资本开支相对经营现金的压力下降。第五年1300亿元FCFF要求真正恢复到可分配现金；它不是把某季度45%的收入增速延伸五年。悲观路径承认竞争和过度投资延续，前三年继续消耗现金；乐观路径需要阿里形成有高利用率、较强客户留存的AI云系统，以及可收费的应用生态。</p>
+<h3 id="_14">三年、五年、十年可能赚多少</h3>
+<p>归普通股净利情景排除依赖资产重估的偶然大额收益，作为经营正常化后的全股权盈利假设；不是DCF中FCFF的同义词。五年回报另以盈利×退出PE估计终值、加累计分红，与DCF价值区间交叉参考，不能把两种估值相加。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: right;">三年后净利</th>
+<th style="text-align: right;">五年后净利</th>
+<th style="text-align: right;">十年后净利</th>
+<th style="text-align: right;">当前DCF价值/股</th>
+<th style="text-align: right;">五年末股价/股</th>
+<th style="text-align: right;">五年含分红年化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td style="text-align: right;">300.00</td>
+<td style="text-align: right;">600.00</td>
+<td style="text-align: right;">1,000.00</td>
+<td style="text-align: right;">40.57</td>
+<td style="text-align: right;">49.51</td>
+<td style="text-align: right;">-13.38%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">750.00</td>
+<td style="text-align: right;">1,400.00</td>
+<td style="text-align: right;">2,400.00</td>
+<td style="text-align: right;">122.21</td>
+<td style="text-align: right;">181.54</td>
+<td style="text-align: right;">11.49%</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">1,300.00</td>
+<td style="text-align: right;">2,300.00</td>
+<td style="text-align: right;">4,500.00</td>
+<td style="text-align: right;">241.25</td>
+<td style="text-align: right;">379.57</td>
+<td style="text-align: right;">28.98%</td>
+</tr>
+</tbody>
+</table></div>
+<p>五年退出PE分别14/22/28倍；五年累计全公司分红假设600/1000/1500亿元，折每股3.54/5.89/8.84港元。股数固定、分红不再投资、不含税费及汇率变化，未来追加融资不在基准中。若未来额外融资所得全部消耗而股本增加10%，相同终值权益对应每股价格约再降9.09%；不能把新募现金和摊薄同时忽略。</p>
+<p>DCF基准122.21港元，仅比108.80高约12.3%，与模型不确定性相比并不宽裕。悲观40.57港元、乐观241.25港元的跨度是业务与资本回报的不确定性，不是给出概率后的统计置信区间。基准约68.84%的企业价值来自终值，悲观更达97.66%；所以所谓“保守情景也值40港元”仍依赖后期成功恢复正现金，不能当清算底价。</p>
+<h3 id="_15">价格反推与敏感性</h3>
+<p>固定前两年负现金、资产桥与9.5%/2.5%折现假设，将基准第三年至第十年正现金整体缩放，当前108.80港元隐含第五年FCFF约1140.62亿元、第十年约1842.54亿元。市场没有要求云永远增长45%，但也没有把阿里只当一堆现金出售：它已要求经营现金回到相当规模。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>WACC\永续增长</th>
+<th style="text-align: right;">1.5%</th>
+<th style="text-align: right;">2.5%</th>
+<th style="text-align: right;">3.5%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8.5%</td>
+<td style="text-align: right;">130.79</td>
+<td style="text-align: right;">144.94</td>
+<td style="text-align: right;">164.74</td>
+</tr>
+<tr>
+<td>9.5%</td>
+<td style="text-align: right;">112.45</td>
+<td style="text-align: right;">122.21</td>
+<td style="text-align: right;">135.24</td>
+</tr>
+<tr>
+<td>10.5%</td>
+<td style="text-align: right;">98.36</td>
+<td style="text-align: right;">105.35</td>
+<td style="text-align: right;">114.35</td>
+</tr>
+</tbody>
+</table></div>
+<p>最低与最高不是随意选择的目标价。研究必须回答哪种资本回报路径有事实支撑，然后才讨论选择哪一格。历史PE低位、同业云业务PS或海外云倍数在业务混合与资本强度变化时参考有限；本文没有构造未经同口径清洗的历史估值分位或PEG。</p>
+<h2 id="_16">七、多空对照与四位投资者视角</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>多方最有力的论点</th>
+<th>空方最有力的反驳</th>
+<th>能裁决的证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>电商利润足以资助AI，当前投入创造未来生产能力</td>
+<td>电商收费权可能走弱，投入规模已经超过内部现金</td>
+<td>正常化电商现金及集团FCF连续改善</td>
+</tr>
+<tr>
+<td>云收入提速且EBITA率提高</td>
+<td>EBITA没有扣足当期增长资本开支，未来折旧仍可能追上来</td>
+<td>利用率、续费与资本开支后的现金回报</td>
+</tr>
+<tr>
+<td>开源模型帮助云取得客户</td>
+<td>客户可自部署或迁到其他云，能力未必由阿里变现</td>
+<td>客户付费迁移、留存、跨产品收入与贡献利润</td>
+</tr>
+<tr>
+<td>股价低于增发价，长线股东愿意提供资本</td>
+<td>增发价不能保证回报，原股东已经承担摊薄</td>
+<td>新资本项目的实际现金回收与净股数</td>
+</tr>
+</tbody>
+</table></div>
+<p>以下是四种方法论的模拟检验，并非四位本人对当前阿里或价格的真实发言，也不代表其实际持仓。</p>
+<p><strong>巴菲特视角</strong>：电商与企业云可能是长期存在的需求，但技术与资本密集度变化降低了预测简单性。关键不是过去赚过多少钱，而是未来维护竞争地位要留下多少利润再投资。只有当资本回报显著高于资金成本，增长才增加价值。</p>
+<p><strong>芒格视角</strong>：先反过来看如何亏大钱：旧电商利润被竞争侵蚀、AI项目越成功越需要扩张资本、消费者应用免费、最后持续融资。好几个正面叙事可以同时成立，普通股回报却一般。必须警惕“阿里什么都有，所以一定赢”的组合错觉。</p>
+<p><strong>段永平视角</strong>：能够理解网上买卖，不等于能够估准全球AI基础设施周期。把能力圈拆成电商、云、芯片、应用分别判断；看不懂的部分不应该因为估值模型能填数就加仓。做对的事情也要以合适价格买入。</p>
+<p><strong>李录视角</strong>：组织、企业服务习惯和工程积累可能是长期复利源头，短期现金流恶化不应自动否定长期价值。但投资者要证明新增资本创造的所有者收益，并理解控制机制与普通股权利。研究需要留在企业实际客户和现金账本上。</p>
+<p>我的综合判断：阿里仍值得深入跟踪；它目前更接近“经营现金修复加AI回报兑现”的投资，而不是无需监测、价格便宜就能放心持有的静态资产折价。</p>
+<h2 id="_17">八、行动、反证与下次必须补齐的证据</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>价格/条件</th>
+<th>研究行动</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>85港元以下且经营证据没有恶化</td>
+<td>可进入分批买入的详细核查</td>
+<td>对基准模型有较多余量，但要先排除业务断裂</td>
+</tr>
+<tr>
+<td>85—100港元</td>
+<td>小额、有明确跟踪条件的研究仓</td>
+<td>仍须承受多年的资本回收不确定性</td>
+</tr>
+<tr>
+<td>100—125港元</td>
+<td>已持有者按证据持有；空仓不急于建立核心仓</td>
+<td>当前108.80位于此区，安全边际不足以抵消主要假设错误</td>
+</tr>
+<tr>
+<td>125—160港元</td>
+<td>需要更强现金/资本回报证据才支持增持</td>
+<td>单凭收入增长不足以扩大估值</td>
+</tr>
+<tr>
+<td>160港元以上</td>
+<td>若现金证据未显著增强，优先考虑降低预期或仓位</td>
+<td>接近更乐观路径，不能把愿景当事实</td>
+</tr>
+</tbody>
+</table></div>
+<p>这些区间是研究纪律，不是挂单建议；缺少读者可投资资金、债务、现金、期权义务和回撤承受信息，本文不生成具体买卖数量或完整组合权重。</p>
+<p>未来几次财报按顺序核对：同口径电商客户管理收入和真实补贴成本；云外部付费增长与EBITA率；集团全部资本开支、折旧及经营现金；AI应用亏损与付费留存；期末总股本和融资；九月及后续现金资产余额。核心条件是现金回报改善的持续性，而不是任一季会计利润超过预期。</p>
+<p>论文失效信号包括：电商长期失去商家盈利吸引力；AI资本投入常态性超过可形成的客户现金；到模型第三年仍看不到资本开支后转正路径；大规模增发却没有对应每股盈利改善；重大监管限制改变跨境或云经营方式。出现这些信号要重做估值，而不是因股价下跌自动调低买入线。</p>
+<p>尚未消除的来源缺口：管理层权益独立二源、早期现金流部分原件追溯、非流动性战略资产逐项价值、最新季度客户留存/算力利用率、七月至截止日真实净现金变化。模型明确标注这些变量，未将推算称为事实。数字核验通过只证明指定来源转录及算术一致，不能证明护城河、AI回报或十年利润一定成立。</p>
+<h2 id="_18">来源与复算</h2>
+<p>所有链接于2026-10-20检索；原件页码可按PDF内页标题定位。独立二源与原件镜像严格区分。</p>
+<ol>
+<li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0618/2026061800844.pdf">FY2026年报，五年摘要p56、财务报表F-5起、管理层权益p143</a>。</li>
+<li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000745.pdf">六月2026季度业绩原件，新分部及资产负债表/现金流调节</a>。</li>
+<li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/1007/2026100701422.pdf">港交所九月末股本月报p2</a>。</li>
+<li><a href="https://stockanalysis.com/quote/hkg/9988/history/">StockAnalysis港股历史价格</a>；<a href="https://www.webull.hk/quote/hkex-09988">Webull港股报价与舍入股本</a>；<a href="https://www.hkex.com.hk/-/media/HKEX-Market/Services/Circulars-and-Notices/Participant-and-Members-Circulars/SEHK/2025/ce_SEHK_CT_075_2025.pdf">港交所2026休市安排</a>。</li>
+<li><a href="https://stockanalysis.com/quote/hkg/9988/financials/income-statement/">StockAnalysis/S&amp;P利润表，注意其经营利润重分类</a>；<a href="https://www.sec.gov/Archives/edgar/data/1577552/000095017023033752/baba-20230331.htm">FY2023 SEC年报原件入口</a>。</li>
+<li><a href="https://stockanalysis.com/quote/hkg/9988/financials/cash-flow-statement/">StockAnalysis/S&amp;P现金流表</a>。</li>
+<li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/1125/2025112501051.pdf">2025年九月季度原件</a>。</li>
+<li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0319/2026031900801.pdf">2025年十二月季度原件</a>。</li>
+<li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0513/2026051300653.pdf">2026年三月季与全年业绩原件</a>。</li>
+<li><a href="https://content.etnet.com.hk/content/cpyrevamp/sc/stock_quote.php?code=09988">经济通报价及市值</a>。</li>
+<li><a href="https://www.exchangerates.org.uk/HKD-CNY-spot-exchange-rates-history-2026-03-01.html">ExchangeRates港元兑人民币历史</a>；<a href="https://ca.investing.com/currencies/hkd-cny-historical-data">Investing汇率历史</a>。</li>
+<li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101400017.pdf">2026年10月14日S-8公告及最新董事名单</a>。</li>
+<li><a href="https://data.alibabagroup.com/ir_filings/HKEX/09988/en/202608262026082601205/2026082601205.pdf">8月26日完成增发原件</a>；<a href="https://cincodias.elpais.com/companias/2026-08-24/alibaba-y-softbank-movilizan-mas-de-14100-millones-para-acelerar-su-apuesta-por-la-inteligencia-artificial.html">Cinco Días对增发规模、股数与价格的独立报道</a>。</li>
+<li><a href="https://apnews.com/article/8a30302d23a96fc7b9aab664b9c1897d">AP对六月季度财报的独立报道</a>。</li>
+<li><a href="https://apnews.com/article/e83a76c7188e27f69c9c3d7e4f8d9d83">AP对三月季云增长和经营亏损的报道</a>。</li>
+<li><a href="https://www.aastocks.com/en/mobile/news.aspx?newsid=NOW.1525184&amp;newssource=AAFN">AAStocks引述Omdia 2025中国AI云市场</a>；<a href="https://omdia.tech.informa.com/pr/2025/jul/mainland-chinas-cloud-infrastructure-market-growth-accelerated-in-q1-2025">Omdia关于云基础设施与开源模型商业化的原始说明</a>。两者时期和市场定义不同。</li>
+<li>
+<p><a href="https://digital-strategy.ec.europa.eu/en/news/commission-fines-aliexpress-eu550-million-breaching-digital-services-act">欧盟委员会DSA罚款公告</a>；<a href="https://intellectual-property-helpdesk.ec.europa.eu/news-events/news/eu-fines-aliexpress-eur550-million-over-illegal-product-risks-euipo-refuses-rosalias-lux-trade-mark-2026-07-31_en">欧委会IP Helpdesk关于10月20日整改期限</a>。</p>
+</li>
+<li>
+<p><a href="https://stockanalysis.com/quote/hkg/9988/financials/balance-sheet/">StockAnalysis/S&amp;P资产负债表：现金、投资、债务和权益核对</a>。</p>
+</li>
+</ol>
+<p><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Alibaba/research-20261020/model.py">模型源码</a> · <a href="../files/reports/Alibaba/research-20261020/model-results.json">完整模型输出</a> · <a href="../files/reports/Alibaba/research-20261020/financial-rigor-output.txt">金融严谨性检查</a> · <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Alibaba/research-20261020/audit-notes.md">核验边界</a>。</p></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6%EF%BC%9AAI%E6%89%A9%E5%BC%A0%E8%83%BD%E5%90%A6%E9%87%8D%E6%96%B0%E5%8F%98%E6%88%90%E6%AF%8F%E8%82%A1%E7%8E%B0%E9%87%91%E6%B5%81&amp;ticker=%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4&amp;source=reports%2FAlibaba%2F%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261020.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2Fbdcc31557861.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>底稿与核验（GitHub）</h2><div class="meta">这些文件不在阅读站上展示，点开为 GitHub 原文。</div><ul class="list work"><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/Alibaba/research-20261020/audit-notes.md">阿里巴巴核验边界</a><div class="meta">审计核验底稿 · research-20261020/audit-notes.md</div></li></ul><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/4f94a55cb583.html">阿里巴巴研究附件（2026-10-20）</a><div class="meta">2026-10-20 · 导读</div></li><li><a href="../r/5eacdfc62656.html">用巴菲特的方式，拆一份利润暴跌 62% 的财报</a><div class="meta">2026-08-18 · 公众号</div></li><li><a href="../r/3e9c0540f78d.html">阿里巴巴（NYSE:BABA / HK:9988）——晨星估值视角的增量分析</a><div class="meta">2026-08-17 · 估值仓位</div></li><li><a href="../r/0c979d59c8de.html">阿里巴巴集团（BABA / 9988.HK）投资研究报告——三场烧钱战</a><div class="meta">2026-08-17 · 研究</div></li><li><a href="../r/eb69737f826c.html">AI 时代，阿里是中国的亚马逊，还是下一个 IBM</a><div class="meta">2026-08-08 · 公众号</div></li><li><a href="../r/e5061154438c.html">淘天：一年被烧掉数百亿利润的现金牛</a><div class="meta">2026-08-05 · 公众号</div></li><li><a href="../r/9376fe7e65ec.html">马云回来了，方向盘在吴泳铭手里——以及多少钱值得买</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/8c30a23aa8b0.html">《看懂阿里巴巴》系列说明</a><div class="meta">2026-08-01 · 导读</div></li><li><a href="../r/bc7c11a33df1.html">你以为你看懂了阿里巴巴，其实没有</a><div class="meta">2026-08-01 · 公众号</div></li><li><a href="../r/222942adafa0.html">阿里三周暴跌25%又暴涨10%：市场把一个工地看成了废墟</a><div class="meta">2026-07-10 · 公众号</div></li><li><a href="../r/f299ce8992f7.html">阿里巴巴集团（BABA / 9988.HK）投资研究报告</a><div class="meta">2026-07-09 · 研究</div></li><li><a href="../r/34a723ff542f.html">风险、治理与估值判断（终章）</a><div class="meta">2026-06-24 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">一、数据收集与口径：先看旧利润是否还能变成现金</a><ul>
+<li><a href="#_2">五年财务</a></li>
+<li><a href="#_3">最近四个季度：收入、利润与分部变更分开看</a></li>
+<li><a href="#_4">股价、股本与估值检查</a></li>
+</ul>
+</li>
+<li><a href="#_5">二、商业模式与护城河：电商入口和云迁移成本都有效，但作用不同</a></li>
+<li><a href="#_6">三、行业与技术：巨大的需求，不等于巨大的可分配利润</a></li>
+<li><a href="#_7">四、管理层与资本配置：把战略投入和每股结果分开打分</a></li>
+<li><a href="#_8">五、现金流、资产与风险：看清账上的钱归谁、会花到哪里</a><ul>
+<li><a href="#_9">从利润到现金</a></li>
+<li><a href="#_10">估值资产桥：已知余额与假设分栏</a></li>
+<li><a href="#_11">风险如何真正伤害每股价值</a></li>
+</ul>
+</li>
+<li><a href="#_12">六、估值：当前价格需要的是现金修复，而不只是云收入增长</a><ul>
+<li><a href="#_13">估值契约</a></li>
+<li><a href="#_14">三年、五年、十年可能赚多少</a></li>
+<li><a href="#_15">价格反推与敏感性</a></li>
+</ul>
+</li>
+<li><a href="#_16">七、多空对照与四位投资者视角</a></li>
+<li><a href="#_17">八、行动、反证与下次必须补齐的证据</a></li>
+<li><a href="#_18">来源与复算</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-20 15:56 UTC</footer></body></html>
