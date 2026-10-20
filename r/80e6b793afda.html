@@ -1,0 +1,768 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>美团（03690.HK）研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/80e6b793afda.html" data-title="美团（03690.HK）研究报告"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/美团/index.html">美团</a></div><div class="layout"><div><h1>美团（03690.HK）研究报告</h1><div class="meta"><a href="../companies/美团/index.html">美团</a> ｜ 2026-10-20 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E5%9B%A2/%E7%BE%8E%E5%9B%A2%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261020.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#ai">AI研究偏见自觉</a></li>
+<li><a href="#_1">第一步：核心数据总览</a><ul>
+<li><a href="#_2">五年增长与利润波动</a></li>
+<li><a href="#_3">最近四个已披露季度</a></li>
+<li><a href="#_4">利润恢复的质量</a></li>
+<li><a href="#_5">现金比净利更严格</a></li>
+</ul>
+</li>
+<li><a href="#_6">第二步：生意本质分析</a></li>
+<li><a href="#_7">第三步：护城河评估</a></li>
+<li><a href="#_8">第四步：逆向思考与风险清单</a></li>
+<li><a href="#_9">第五步：管理层评估</a></li>
+<li><a href="#_10">第六步：行业与文明趋势</a></li>
+<li><a href="#_11">第七步：估值与安全边际</a><ul>
+<li><a href="#_12">先把价格、股本和现金统一</a></li>
+<li><a href="#_13">现金流模型的定义</a></li>
+<li><a href="#_14">反向估值：市场并非在定价倒闭</a></li>
+</ul>
+</li>
+<li><a href="#_15">第八步：最终决策与行动清单</a></li>
+<li><a href="#ai_1">AI分析置信度与投资确定性</a></li>
+<li><a href="#_16">数据来源与审计记录</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>研究与资料截止：2026年10月20日，北京时间。</strong> 价格采用10月16日港股正规收盘75.70港元；10月19日为重阳节翌日休市，不能虚构当日收盘。按9月月报A、B类合计61.7551亿股，计算市值4,674.86亿港元，约3,985.32亿元人民币。TTM收入约3,828.40亿元，市销率1.04倍；TTM亏损，静态PE不适用。港元兑人民币采用10月16日市场参考0.8525，非即时可成交汇率。</p>
+<p><strong>研究主线：美团最有价值的是高密度、可兑现的本地履约网络；当前价格买的是竞争缓和后能留下多少现金，而不是收入恢复增长这件事本身。</strong> 二季度经营改善已经出现，但其他收益、营运资金和股权薪酬仍须逐项穿透。</p>
+</blockquote>
+<p>本报告独立执行 <code>/investment-research</code> 八步骤，并采用投资研究写作规范。除特别标明外，财务金额均为人民币；事实、公司陈述、研究判断、模型假设分别表达。用户当前持仓和成本未知，行动建议不假定已有仓位。本项目用于学习研究，不构成投资建议。</p>
+<h2 id="ai">AI研究偏见自觉</h2>
+<p>信息丰富度为A级。年报、半年报和市场观点充分，最危险的偏见是把“外卖份额领先、竞争迟早结束、利润回到过去”串成无需验证的结论。资料多能提高核数准确性，却不会提高对竞争对手下一轮补贴的预测能力。</p>
+<ul>
+<li>[x] 把市场份额与股东利润分开，避免将公司自述的份额当独立统计。</li>
+<li>[x] 把集团经营利润、分部利润和数据库调整口径分开。</li>
+<li>[x] 不用单季度调整净利年化，代替现金流估值。</li>
+<li>[x] 既检验价格战永久化，也检验过度悲观错过盈利恢复的代价。</li>
+</ul>
+<p>AI研究局限：公开文件没有足够城市级、时段级、按订单类型划分的真实单位经济数据；消费者跨平台使用、真实流失率、配送每单补贴、商户增量获客回报也缺少统一审计口径。因此，“规模优势存在”可以较有把握地判断，“规模优势最终转化为多少可分配利润”仍是条件推理。</p>
+<hr />
+<h2 id="_1">第一步：核心数据总览</h2>
+<h3 id="_2">五年增长与利润波动</h3>
+<p>下表单位为亿元人民币。归母净利采用IFRS；经营利润采用公司合并报表，包含其列入经营项的其他收益。简单自由现金流定义为经营现金流减购置及预付固定资产、无形资产现金支出，并未扣融资栏的租赁与利息现金付款，不能直接作为股东所有者收益。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">2021年</th>
+<th style="text-align: right;">2022年</th>
+<th style="text-align: right;">2023年</th>
+<th style="text-align: right;">2024年</th>
+<th style="text-align: right;">2025年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">1,791.28</td>
+<td style="text-align: right;">2,199.55</td>
+<td style="text-align: right;">2,767.45</td>
+<td style="text-align: right;">3,375.92</td>
+<td style="text-align: right;">3,648.55</td>
+</tr>
+<tr>
+<td>毛利润</td>
+<td style="text-align: right;">424.74</td>
+<td style="text-align: right;">617.53</td>
+<td style="text-align: right;">971.91</td>
+<td style="text-align: right;">1,297.85</td>
+<td style="text-align: right;">1,110.09</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">23.71%</td>
+<td style="text-align: right;">28.07%</td>
+<td style="text-align: right;">35.12%</td>
+<td style="text-align: right;">38.44%</td>
+<td style="text-align: right;">30.43%</td>
+</tr>
+<tr>
+<td>集团经营利润</td>
+<td style="text-align: right;">-231.27</td>
+<td style="text-align: right;">-58.20</td>
+<td style="text-align: right;">134.15</td>
+<td style="text-align: right;">368.45</td>
+<td style="text-align: right;">-250.41</td>
+</tr>
+<tr>
+<td>集团经营利润率</td>
+<td style="text-align: right;">-12.91%</td>
+<td style="text-align: right;">-2.65%</td>
+<td style="text-align: right;">4.85%</td>
+<td style="text-align: right;">10.91%</td>
+<td style="text-align: right;">-6.86%</td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td style="text-align: right;">-235.38</td>
+<td style="text-align: right;">-66.86</td>
+<td style="text-align: right;">138.56</td>
+<td style="text-align: right;">358.07</td>
+<td style="text-align: right;">-233.55</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">-40.11</td>
+<td style="text-align: right;">114.11</td>
+<td style="text-align: right;">405.22</td>
+<td style="text-align: right;">571.47</td>
+<td style="text-align: right;">-138.15</td>
+</tr>
+<tr>
+<td>资本开支现金支出</td>
+<td style="text-align: right;">90.10</td>
+<td style="text-align: right;">57.31</td>
+<td style="text-align: right;">68.80</td>
+<td style="text-align: right;">109.99</td>
+<td style="text-align: right;">132.71</td>
+</tr>
+<tr>
+<td>简单自由现金流</td>
+<td style="text-align: right;">-130.22</td>
+<td style="text-align: right;">56.80</td>
+<td style="text-align: right;">336.42</td>
+<td style="text-align: right;">461.47</td>
+<td style="text-align: right;">-270.86</td>
+</tr>
+<tr>
+<td>现金及短期理财合计</td>
+<td style="text-align: right;">1,167.95</td>
+<td style="text-align: right;">1,120.32</td>
+<td style="text-align: right;">1,451.60</td>
+<td style="text-align: right;">1,682.43</td>
+<td style="text-align: right;">1,668.34</td>
+</tr>
+</tbody>
+</table></div>
+<p>收入、毛利及净利润核对<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042400179.pdf">2025年报第6页</a>与<a href="https://stockanalysis.com/quote/hkg/3690/financials/">StockAnalysis人民币财务表</a>；早期经营利润核对<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2023/0424/2023042400042.pdf">2022年报</a>和<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2024/0429/2024042900115.pdf">2023年报</a>。现金流主来源为年报现金流量表，独立辅助来源为StockAnalysis。2023年现金流、资本开支及早期现金理财合计采用第三方百万级展示，未逐项取得第二独立来源精确值，保留为历史背景数据缺口，不作为估值锚。</p>
+<p>这里最有用的事实不是收入翻倍，而是收入增加时利润既能大幅上升，也能转为严重亏损。需求与配送网络具有持续性，利润分配规则却不稳定。把2024年利润当长期起点，会忽略已经发生的商业压力；把2025年亏损当永续状态，又会忽略运营密度和补贴强度可能发生的改善。</p>
+<p><strong>三个“经营利润”不能混用。</strong> 2025年核心本地商业亏损69.04亿元，新业务亏损100.82亿元，两分部合计亏损169.86亿元；再计入未分配项目，集团经营亏损为250.41亿元。StockAnalysis的标准化经营利润又剔除了部分非核心收益，显示约负310.36亿元。上述差异属于口径差异，不能为了“多源一致”挑一个好看的数字。公司新闻使用的170亿元恰是分部合计附近的数值；本报告优先使用年报集团表。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042400179.pdf">年报第8、30页</a></p>
+<h3 id="_3">最近四个已披露季度</h3>
+<p>截至研究日，最新完整财务信息为2026年上半年及第二季度。第三季度尚无完整财务报表。本表单位亿元，2026年第一季度按半年减第二季度复算。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">2025Q3</th>
+<th style="text-align: right;">2025Q4</th>
+<th style="text-align: right;">2026Q1</th>
+<th style="text-align: right;">2026Q2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>集团收入</td>
+<td style="text-align: right;">954.88</td>
+<td style="text-align: right;">920.96</td>
+<td style="text-align: right;">910.39</td>
+<td style="text-align: right;">1,046.43</td>
+</tr>
+<tr>
+<td>核心本地商业收入</td>
+<td style="text-align: right;">674.47</td>
+<td style="text-align: right;">648.35</td>
+<td style="text-align: right;">640.63</td>
+<td style="text-align: right;">715.31</td>
+</tr>
+<tr>
+<td>新业务收入</td>
+<td style="text-align: right;">280.41</td>
+<td style="text-align: right;">272.62</td>
+<td style="text-align: right;">269.76</td>
+<td style="text-align: right;">331.12</td>
+</tr>
+<tr>
+<td>核心本地商业经营利润</td>
+<td style="text-align: right;">-140.71</td>
+<td style="text-align: right;">-100.46</td>
+<td style="text-align: right;">-20.30</td>
+<td style="text-align: right;">56.68</td>
+</tr>
+<tr>
+<td>新业务经营利润</td>
+<td style="text-align: right;">-12.78</td>
+<td style="text-align: right;">-46.50</td>
+<td style="text-align: right;">-21.16</td>
+<td style="text-align: right;">-17.39</td>
+</tr>
+<tr>
+<td>集团经营利润</td>
+<td style="text-align: right;">-197.59</td>
+<td style="text-align: right;">-160.74</td>
+<td style="text-align: right;">-64.70</td>
+<td style="text-align: right;">26.91</td>
+</tr>
+<tr>
+<td>期间净利润</td>
+<td style="text-align: right;">-186.32</td>
+<td style="text-align: right;">-151.44</td>
+<td style="text-align: right;">-68.27</td>
+<td style="text-align: right;">21.55</td>
+</tr>
+</tbody>
+</table></div>
+<p>出处：<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1128/2025112800483.pdf">2025Q3公告</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042400179.pdf">2025年报</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092900007.pdf">2026中报第4—7页</a>。Q4期间净亏损由全年减前三季度复算，四舍五入不影响判断。季度分部尚缺独立第三方逐项核验，不能称全部双源通过。</p>
+<p>2026Q2总收入同比增长14.4%，核心本地商业增长10.1%，新业务增长25.0%。这说明改善并非完全依靠自营商品全额确认收入：核心服务业务也重新增长。不过，新增收入的利润质量差别很大。自营商品销售额增加一元，通常需要先承担采购、库存和损耗；佣金或营销收入增加一元，则在履约与获客投入受控时更容易留下利润。</p>
+<p>2026H1核心本地商业收入1,355.94亿元、毛利495.45亿元，分部经营利润36.38亿元；新业务收入600.88亿元、毛利117.72亿元，分部经营亏损38.55亿元。集团上半年仍亏损46.72亿元。只看第二季度的扭亏，会遗漏第一季度损失，也会低估修复仍处于早期的事实。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092900007.pdf">中报</a></p>
+<h3 id="_4">利润恢复的质量</h3>
+<p>二季度集团经营利润26.912亿元，其他收益34.939亿元。机械扣除其他收益后是负8.028亿元，再扣金融投资公允价值收益后约负8.576亿元。这里的扣除只是判断盈利对非主营收益依赖度的诊断，不能称公司正式“经常性营业利润”：其他收益可能包含不同性质事项，必须继续看附注。</p>
+<p>公司调整净利润25.237亿元已经剔除部分投资净收益，同时加回股权薪酬等项目，因此不能再把全部其他收益从调整净利扣一次。正确方法是沿一条报表桥逐项调整，不应在IFRS净利、分部利润、调整净利之间反复扣同一事项。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092900007.pdf">中报第23—25页</a>；独立新闻核对季度收入与利润：<a href="https://secure.aastocks.com/en/mobile/News.aspx?NewsID=NOW.1541751&amp;NewsSource=HK6&amp;NewsType=">AASTOCKS</a>、<a href="https://www.rttnews.com/3686388/meituan-q2-profit-rises.aspx">RTTNews</a>。</p>
+<h3 id="_5">现金比净利更严格</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>2026H1现金核算</th>
+<th style="text-align: right;">亿元人民币</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">27.19</td>
+</tr>
+<tr>
+<td>减：资本开支现金支出</td>
+<td style="text-align: right;">65.84</td>
+</tr>
+<tr>
+<td>简单自由现金流</td>
+<td style="text-align: right;">-38.65</td>
+</tr>
+<tr>
+<td>再减：融资栏租赁付款</td>
+<td style="text-align: right;">16.07</td>
+</tr>
+<tr>
+<td>再减：融资栏财务费用付款</td>
+<td style="text-align: right;">14.15</td>
+</tr>
+<tr>
+<td>上述现金付款后余额</td>
+<td style="text-align: right;">-68.87</td>
+</tr>
+<tr>
+<td>当期费用化股权薪酬，非当期现金付款</td>
+<td style="text-align: right;">33.02</td>
+</tr>
+</tbody>
+</table></div>
+<p>现金流附注显示二季度经营现金流97.33亿元，半年仅27.19亿元。季节性与营运资金是重要原因，因此不能用二季度现金流乘四。用2025全年加2026H1减2025H1重建TTM，经营现金流约负260.00亿元，资本开支143.01亿元，简单自由现金流约负403.01亿元。集团尚未证明已恢复为稳定现金奶牛。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092900007.pdf">中报第64—65页</a></p>
+<p>股权薪酬已经在损益中列为成本，现金流量表把它加回是会计现金流调整，并不代表股东无需承担。估值选用“现金等价薪酬”处理：长期预测把维持人才队伍所需的经济薪酬留在成本，不再另加一个相同金额的稀释惩罚。回购用来抵消授予，也不能同时算成免费的额外股东收益。</p>
+<blockquote>
+<p>巴菲特式数据追问：如果把投资收益与供应商、商户结算时点的帮助拿掉，过去半年真正留给资本所有者的现金还有多少？目前答案仍不足以支持直接年化盈利。</p>
+</blockquote>
+<hr />
+<h2 id="_6">第二步：生意本质分析</h2>
+<p><strong>美团把分散的本地需求、商户供给与即时运力组织成可承诺到达时间的交易网络，并向商户和消费者收取这项协调服务的费用。</strong> 网络里最难复制的部分是有效订单密度与稳定履约，最容易被竞争重新分配的是抽佣和补贴后的剩余利润。</p>
+<p>消费者买的首先是节省时间与确定性，商户买的是订单与获客，骑手出售的是可交付的劳动时间。三者要同时愿意留在网络，平台才有可持续的利润。平台少补贴消费者、提高商户收费或压低骑手成本，都能短期改善报表，却未必提高长期价值。真正优质的增长应来自同一条路线完成更多合适订单、减少空驶与等待、降低差错，让各方共同节省资源。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th>主要付款人</th>
+<th>收入与成本机制</th>
+<th>应跟踪的利润变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>餐饮外卖</td>
+<td>商户及消费者</td>
+<td>配送服务、佣金、营销；配送及补贴占比高</td>
+<td>每单贡献、客单价与补贴后的留存</td>
+</tr>
+<tr>
+<td>到店酒旅</td>
+<td>商户</td>
+<td>交易与营销服务；履约主要由商户完成</td>
+<td>商户广告回报、交易转化、平台费率</td>
+</tr>
+<tr>
+<td>闪购及即时零售</td>
+<td>商户、品牌、消费者</td>
+<td>平台撮合与部分自营模式并存</td>
+<td>高频场景、夜间密度、库存与损耗</td>
+</tr>
+<tr>
+<td>生鲜零售</td>
+<td>消费者</td>
+<td>商品全额收入，采购与仓储配送成本</td>
+<td>毛利扣损耗、履约成本与库存周转</td>
+</tr>
+<tr>
+<td>Keeta海外等</td>
+<td>商户及消费者</td>
+<td>复制本地运力网络，前期获客投入重</td>
+<td>成熟城市现金贡献、开城现金回收期</td>
+</tr>
+</tbody>
+</table></div>
+<p>这张表也解释了为什么统一PS倍数很粗糙。商品零售收入和高毛利营销收入不能等价比较。2026年公司将商户服务、产品销售等收入重新整理展示，跨年研究应先按分部及会计确认口径对齐，再讨论变现率，不能用收入变化直接推导交易额变化。</p>
+<p>经营杠杆的核心有三条。第一，固定研发与平台运维可以随业务增长摊薄，但配送劳动并不是固定成本。第二，订单密度增加只在地理和时间上匹配才有意义；凌晨低密度远距离订单未必带来规模经济。第三，补贴的边际回报必须按停止补贴后的留存评估，而非按补贴期新增订单评估。</p>
+<p>因此，本报告不把外卖理解为纯软件平台，也不把它等同低附加值快递。它包含软件调度、信用与评价资产，也包含劳动密集的实际交付。优秀算法能改善供需匹配，却不能消除暴雨、等餐、楼宇通行和骑手安全这些现实约束。这也解释了为什么“AI降低成本”不能直接推导“利润率永久上升”：对手也能采用技术，节省可能通过更低配送费转给消费者。</p>
+<blockquote>
+<p>段永平式追问：这门生意好在哪里？它持续解决高频而真实的时间约束；难点在于客户和商户换平台很容易，平台必须反复证明自己提供的效率高于收费。</p>
+</blockquote>
+<hr />
+<h2 id="_7">第三步：护城河评估</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>护城河来源</th>
+<th>当前判断</th>
+<th>支持机制</th>
+<th>破坏条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>品牌与定价权</td>
+<td>使用心智强，提价权有限</td>
+<td>高频入口、履约与售后预期</td>
+<td>竞争平台接近体验且持续低价</td>
+</tr>
+<tr>
+<td>转换成本</td>
+<td>消费者低，商户中低</td>
+<td>用户习惯、评价积累、经营工具</td>
+<td>多平台经营成本继续下降</td>
+</tr>
+<tr>
+<td>网络效应</td>
+<td>局部较强</td>
+<td>更多有效订单支持更好的运力与供给</td>
+<td>补贴可在局部迅速造出替代密度</td>
+</tr>
+<tr>
+<td>规模与成本</td>
+<td>最可靠的优势</td>
+<td>调度、组织、商户覆盖、密度</td>
+<td>低价单占比上升抵消密度收益</td>
+</tr>
+<tr>
+<td>技术能力</td>
+<td>重要但非独占</td>
+<td>预测、推荐、调度和风控</td>
+<td>通用模型及第三方工具普及</td>
+</tr>
+<tr>
+<td>规则与生态治理</td>
+<td>必须维护的经营基础</td>
+<td>食安、投诉、劳动保障的组织能力</td>
+<td>平台责任与真实成本暴露速度快于收费能力</td>
+</tr>
+</tbody>
+</table></div>
+<p>这里有必要区分网络规模和网络效应。一个全国很大的平台，在某座城市某个时段的骑手供给仍可能不足；一个全国较小的对手，也可能集中补贴少数城市形成局部竞争力。美团的全国网络提高复制成本，却并不产生不可挑战的全局垄断。企业每天要在城市单元里重新赢得服务质量。</p>
+<p>过去五年，交易组织能力与商户服务能力总体变强；可保留利润的经济护城河则经历明显压力测试。2024年盈利高点后，2025年亏损证明“竞争者不愿意亏钱”不是可以无条件依赖的壁垒。公司关于外卖GTV份额保持六成以上的表述可作为管理层陈述，但缺少同口径独立测算，不将其写成已审计市场份额。<a href="https://www.meituan.com/news/NN260326174005788">公司2025业绩说明</a></p>
+<p>未来三年，最可能留下的是调度系统、用户习惯和商户覆盖；最需要验证的是补贴减少后消费者是否还留在原平台。未来五年，关键在于即时零售能否让淡时段运力更有效利用，而不是增加一批需要高补贴的低密度品类。未来十年，本地交付网络大概率仍有价值，但需求入口可能分散到聊天助手、内容平台、品牌直连与操作系统。</p>
+<p>AI入口本身不等于AI替代履约。助手能替用户比较价格、下单，却必须调用实际完成交付的网络。美团可能成为后台履约商，也可能继续掌握前端需求。两种结果都能产生收入，但前者可能降低营销收入和对商户的议价权。这是技术趋势里最值得观察的利润归属问题。</p>
+<p>护城河最有力的证据应当是竞争同样激烈时，美团依然以较低补贴实现更高真实留存，并让成熟城市产生更多现金。单看用户数、下载量或对手亏损金额无法完成这个证明。若未来出现订单份额稳定而补贴与骑手成本不断侵蚀利润，美团仍可能是行业最强公司，同时不是好的长期复利资产。</p>
+<blockquote>
+<p>巴菲特式追问：十年后护城河还在吗？履约组织能力很可能在，股东享有的收费权未必同样强。投资必须为两者之间的差距留出空间。</p>
+</blockquote>
+<hr />
+<h2 id="_8">第四步：逆向思考与风险清单</h2>
+<p>最强空方观点是：美团在不可消失的需求上占有领先位置，但需求刚性不代表利润刚性。消费者、商户、骑手与竞争平台都能要求更大份额，而拥有电商、内容、支付或云业务的对手，可能把本地生活当作获客工具。美团独立经营这门业务，需要的利润率，可能高于综合平台为整体生态接受的利润率。</p>
+<p>如果这个观点成立，价格战并不是暂时偏离均衡，而是在揭示旧利润率不可持续。二季度利润好转则可能是亏损高峰过后的正常反弹；与此同时海外、自营零售和AI投入继续消耗现金。市场用2024年利润算出低PE，实际上可能在为一个已经失去的利润池支付价格。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>失败路径</th>
+<th>概率判断，非统计估计</th>
+<th>影响</th>
+<th>最早可观察信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>低价竞争长期化</td>
+<td>中高</td>
+<td>正常化利润低于市场预期</td>
+<td>补贴减少后订单、用户质量明显下降</td>
+</tr>
+<tr>
+<td>骑手及食安成本上移</td>
+<td>高概率发生，幅度不确定</td>
+<td>压低单笔净贡献</td>
+<td>收入增长快于经营现金流改善</td>
+</tr>
+<tr>
+<td>到店利润池被分流</td>
+<td>中</td>
+<td>高利润业务补贴配送的能力减弱</td>
+<td>商户广告回报、复投率下降</td>
+</tr>
+<tr>
+<td>新业务反复投入不退出</td>
+<td>中</td>
+<td>留存利润被再投资耗尽</td>
+<td>成熟项目仍无法披露可持续现金贡献</td>
+</tr>
+<tr>
+<td>AI入口削弱营销收费</td>
+<td>中低、长期</td>
+<td>需求入口价值向外转移</td>
+<td>自动比价、跨平台下单快速普及</td>
+</tr>
+<tr>
+<td>大额投资价值波动</td>
+<td>中</td>
+<td>净利润、净资产与现金兑现脱节</td>
+<td>公允价值收益大于经营收益</td>
+</tr>
+<tr>
+<td>治理与资本配置失误</td>
+<td>中</td>
+<td>普通股东承担长期机会成本</td>
+<td>高投入项目缺少回报与退出标准</td>
+</tr>
+</tbody>
+</table></div>
+<p>这些路径并不互斥，不能把主观等级转换为相加等于百分之百的概率。商业风险放进情景现金流，折现率承担货币时间价值和系统性风险，安全边际用于购买纪律；不能在三个地方重复惩罚同一风险后，再把极低估值称为“严谨”。</p>
+<p>历史类比上，Groupon提醒投资者低转换成本的商户流量平台可能迅速失去优势；成熟配送与零售网络则说明大量低毛利交易可以依靠密度形成经营价值。美团同时具备两类属性，不能直接套用其中一个结局。这里使用类比是提出验证问题，不是声称商业结构或历史回报相同。</p>
+<p>最可能的研究错误是高估恢复速度。人很容易在负利润之后看到正利润，就外推到上一轮高点。本报告要求同时满足经营收益质量、租赁及资本开支后的现金、竞争补贴三项改善，才把反弹升级为稳定盈利。相反，若这些指标连续改善而股价仍按永久低利润定价，继续因为历史亏损拒绝更新判断，同样属于锚定偏差。</p>
+<blockquote>
+<p>芒格式追问：聪明人为什么不买？因为他可能认同网络难复制，却不愿押注利润分配规则恢复到对股东有利的状态。</p>
+</blockquote>
+<hr />
+<h2 id="_9">第五步：管理层评估</h2>
+<p>王兴的优势在于持续建立复杂组织、理解高频需求以及愿意长期投入。但股东需要评估的是这些能力是否创造每股价值，而不是投入范围是否不断扩大。既能构建网络，也愿意终止低回报项目，才是完整的资本配置能力。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>决策方向</th>
+<th>可核实事实或资料边界</th>
+<th>本报告评价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>聚焦本地商业效率</td>
+<td>2023—2024年经营与现金盈利显著改善</td>
+<td>证明组织有盈利能力，但高点不能直接永续化</td>
+</tr>
+<tr>
+<td>价格战防守</td>
+<td>2025年核心本地商业亏损</td>
+<td>可能保住长期网络，也可能支付过高防守成本，结果未定</td>
+</tr>
+<tr>
+<td>美团优选调整</td>
+<td>年报及中报提及业务终止、战略转型影响</td>
+<td>退出本身比固守规模更合理，不能将转型收益计作常态利润</td>
+</tr>
+<tr>
+<td>海外与生鲜扩张</td>
+<td>2026H1新业务仍亏损</td>
+<td>应按城市与项目看投资回收，收入扩张不足以证明成功</td>
+</tr>
+<tr>
+<td>AI及研发</td>
+<td>2025研发约260亿元，2026Q2研发76.70亿元</td>
+<td>有战略必要性，但需要应用回报而非模型排名证明</td>
+</tr>
+<tr>
+<td>股东回报</td>
+<td>2026H1及2025年未派息，股权激励持续存在</td>
+<td>应关注每股现金创造与净稀释，不能只看授权回购上限</td>
+</tr>
+</tbody>
+</table></div>
+<p>管理层经济权益必须与投票权分开。截至2026年6月底，中报列示王兴家族信托及直接控制载体持有A类515,869,783股；少量直接控制B类持股合计1,439股。按报告期总股本计算，剔除慈善基金会后约8.35%的经济权益可较明确归属于个人/家族利益范围。另有王兴基金会47,343,842股B类，基金会为不可撤销慈善用途，不能全部算作他的个人财富。按证券法规把基金会、配偶及控制载体合计视作权益，约9.12%，与个人经济权益不是一回事。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092900007.pdf">中报第30—35页</a></p>
+<p>A类每股十票、B类每股一票。中报给出的王兴A类对应非保留事项投票权约45.30%，穆荣均约5.56%；这并不意味着二人分别拥有相同比例经济权益。第三方媒体曾把年报时期持股概括为王兴约9.3%、投票权约45%，只适合数量级对照，不能把不同日期、包含慈善基金的数字硬拼成精确独立验证。<a href="https://finance.sina.com.cn/wm/2026-04-30/doc-inhwhvkc1231246.shtml">第三方股权报道</a></p>
+<p>这套控制结构既允许管理层承受短期压力，也降低普通股东改变战略的能力。判断一致性不能只看创始人持股较多，还要看决策回报率、关联交易和项目退出纪律。业务扩张若长期消耗现金而没有明确回报标准，控制权的长期性就可能转化为外部股东的长期等待。</p>
+<p>如果王兴退休，调度系统、城市运营和商户网络不会消失，但跨业务资本配置与战略优先级可能受影响。故本报告把管理层质量判断为“执行能力较强、资本配置需要持续审视”，不把创始人的过去成功当未来十年回报的担保。</p>
+<blockquote>
+<p>段永平式追问：如果CEO退休，公司还能保持竞争力吗？成熟履约系统可以延续；新业务取舍与股东回报纪律仍需要组织层面的证据。</p>
+</blockquote>
+<hr />
+<h2 id="_10">第六步：行业与文明趋势</h2>
+<p>本地生活数字化的长期方向较清晰：人们愿意付费节省时间，商户希望降低获客与经营成本，城市内交易逐渐拥有更完整的数字记录。但“更多交易线上完成”只描述规模，没有回答利润属于谁。</p>
+<p>价值链上，消费者可能获得更低价格和更快交付；商户可能获得订单但支付更高推广费；骑手获得收入与保障；供应商获得仓储、设备和计算支出；平台股东只拿走上述各方得到合理补偿后的余额。行业交易额越大，平台现金流反而越差的情况完全可能发生，2025年的报表已经展示了这种可能。</p>
+<p>本报告不采用一个宽泛的“餐饮加零售万亿市场”乘以假定份额与利润率的TAM估值。可服务市场应按场景拆开：高密度正餐、低价简餐、药品应急、夜间便利、家庭生鲜和低频大件，在履约承诺、客单价、配送半径与库存风险上差异很大。把这些场景相加是市场规模，把其中能持续贡献现金的部分筛出来才是可投资利润池。</p>
+<p>AI对美团的潜在帮助主要在需求预测、配送调度、客服、商户内容和运营工具。能否形成超额回报，取决于改进是否使用美团独有的实时供需与履约数据，以及节省成本后是否维持消费者体验。通用文案生成成本下降，通常会很快普及；减少高峰履约失败、在不损害骑手安全的情况下提高有效匹配，才更接近业务壁垒。</p>
+<p>无人配送也需用全生命周期成本评价：设备、折旧、维护、远程接管、保险、场景许可和最后几十米交付都应计入。技术演示成功不能直接推导全国替代骑手。若自动化首先在少数适用场景盈利，它可能增强美团；若技术可由商户与多个平台共同采购，收益也可能主要传递给客户。</p>
+<p>供应端不是单一供应商卡住公司，而是平台同时依赖大量商户与运力提供者。分散并不意味着没有议价压力，集体成本上升同样能改变经济模型。需求端也不是少数大客户决定收入，但消费者能低成本多平台使用，因而客户数量巨大不等于客户粘性不可逆。</p>
+<blockquote>
+<p>李录式追问：二十年后，它会是长期基础设施还是一轮互联网红利？取决于它能否持续降低社会交易成本，并以社会可接受的方式保留一部分效率收益。</p>
+</blockquote>
+<hr />
+<h2 id="_11">第七步：估值与安全边际</h2>
+<h3 id="_12">先把价格、股本和现金统一</h3>
+<p>9月证券变动月报列B类5,596,355,247股、A类579,152,986股，库存股为零，合计6,175,508,233股。CompaniesMarketCap展示6,174,383,320股，差约0.02%，主要为更新时间差；StockAnalysis显示约61.7亿股及市值4,672.1亿港元。用月报股本乘75.70港元得到4,674.86亿港元，与第三方市值差约0.06%，没有单位级错误。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1007/2026100700730.pdf">月报</a>、<a href="https://companiesmarketcap.com/meituan-dianping/shares-outstanding/">独立股本来源</a>、<a href="https://stockanalysis.com/quote/hkg/3690/statistics/">估值统计</a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>估值指标</th>
+<th>复算值与解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>市值</td>
+<td>4,674.86亿港元；3,985.32亿元人民币</td>
+</tr>
+<tr>
+<td>TTM PS</td>
+<td>1.04倍；不同收入模式混合，参考意义有限</td>
+</tr>
+<tr>
+<td>TTM PE、PEG</td>
+<td>不适用；亏损转盈使传统增长倍数失真</td>
+</tr>
+<tr>
+<td>按2024归母净利的回看PE</td>
+<td>11.13倍；仅说明恢复到旧高点时的定价</td>
+</tr>
+<tr>
+<td>现金及短期理财</td>
+<td>1,683.14亿元</td>
+</tr>
+<tr>
+<td>银行借款与票据债务</td>
+<td>887.01亿元，不含租赁</td>
+</tr>
+<tr>
+<td>净现金，未扣租赁</td>
+<td>796.13亿元</td>
+</tr>
+<tr>
+<td>净现金，扣租赁债务</td>
+<td>724.97亿元</td>
+</tr>
+<tr>
+<td>按全部未扣租赁净现金计算EV/TTM收入</td>
+<td>0.83倍；未扣经营现金需求</td>
+</tr>
+</tbody>
+</table></div>
+<p>银行存款和短期理财不是全部可发给股东。平台需要正常结算与风险缓冲，受限资金也不能当自由现金。本模型不计入受限现金，另预留300亿元经营现金，得到可桥接净现金496.13亿元。300亿元是可调整假设，不是公司披露的“法定最低现金”。长期股权投资本轮不单独加值，相应也不把投资收益计入核心未来现金流，防止重复归属。读者可以把它作为估值未充分反映的上行来源，但不能一边加投资市值，一边永续资本化同一投资收益。</p>
+<h3 id="_13">现金流模型的定义</h3>
+<p>采用人民币名义FCFF，按10%的人民币名义WACC折现。预测现金流已扣税、维护与增长资本开支、正常营运资金增加、经济股权薪酬和完整经营租赁成本；利息不进入FCFF，金融债务在股权桥里扣一次。因为租赁作为经营成本处理，股权桥不再扣租赁负债。所有情景共用折现率，将竞争和扩张风险主要放入现金流路径。</p>
+<p>模型从研究日起覆盖未来十个完整年度期间，而非把未发生的2026全年利润当事实。以下金额为亿元。前五期现金流是自下而上的经营结果假设，非管理层指引；后五期用明确减速增长率延伸。它们必须由未来真实单位经济与现金流验证，代码只能验证计算过程。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>未来五期FCFF</th>
+<th style="text-align: right;">后五期年增长</th>
+<th style="text-align: right;">永续增长</th>
+<th style="text-align: right;">第十期FCFF</th>
+<th style="text-align: right;">股权价值/股，港元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td>-50、50、100、150、200</td>
+<td style="text-align: right;">3%</td>
+<td style="text-align: right;">2%</td>
+<td style="text-align: right;">231.85</td>
+<td style="text-align: right;"><strong>46.45</strong></td>
+</tr>
+<tr>
+<td>基准</td>
+<td>100、200、300、380、450</td>
+<td style="text-align: right;">6%</td>
+<td style="text-align: right;">3%</td>
+<td style="text-align: right;">602.20</td>
+<td style="text-align: right;"><strong>117.48</strong></td>
+</tr>
+<tr>
+<td>乐观</td>
+<td>200、350、500、600、700</td>
+<td style="text-align: right;">8%</td>
+<td style="text-align: right;">3%</td>
+<td style="text-align: right;">1,028.53</td>
+<td style="text-align: right;"><strong>191.46</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>悲观路径不是清算：假设美团仍是大平台，但持续竞争使盈利恢复缓慢，新业务长期占用资源。基准路径要求配送补贴退坡、到店盈利稳定、成熟新业务亏损下降，并在第五期形成450亿元真实FCFF，接近旧周期简单FCF的量级，却已扣更多经济成本。乐观路径则需要即时零售与海外形成有效利润池，同时集团避免再次无约束扩张；它不应被当成默认结果。</p>
+<p>基准现金桥可以进一步拆开：第一期正常化EBIT假设200亿元，按四分之一的现金税率得税后经营利润150亿元，加非租赁折旧摊销60亿元，减完整资本开支90亿元、营运资金新增20亿元，得到FCFF100亿元。第五期EBIT假设640亿元，税后480亿元，加非租赁折旧摊销100亿元，减完整资本开支110亿元、营运资金新增20亿元，得到FCFF450亿元。上述EBIT已经扣经济SBC和完整租赁成本，不再加回租赁折旧或SBC；利息排除于FCFF。这是说明假设路径所需经营条件的数字桥，绝非公司指引或已验证预测；模型用Decimal断言两期勾稽。第五期要求较强的经营恢复，不能只靠削减资本开支达成。</p>
+<p>基准经营价值约60%来自终值，提醒我们117.48港元并不是精确客观的“正确价格”。折现率上下变化一个百分点、长期利润率稍有变化，都能显著影响估值。基准模型的关键问题不是选10%还是另一个相近数字，而是未来是否真的能产生模型要求的现金。</p>
+<h3 id="_14">反向估值：市场并非在定价倒闭</h3>
+<p>固定基准路径形状、10%折现率和3%永续增长，把现金流整体缩放至现市值，所需比例约61.34%。这相当于第五期FCFF约276.01亿元、第十期约369.36亿元。这个门槛低于本报告基准，但远高于目前TTM负现金流；当前价格同时反映恢复预期与恢复幅度折扣。</p>
+<p>这一结果比“11倍历史PE很便宜”更有用。只要未来成熟现金流能够超过该反向门槛，且恢复不被拖延太久，价格有吸引力；若长期只能产生100—200亿元，而新业务继续消耗现金，则75.70港元并不便宜。投资者下注的是恢复路径，不是账上现金足以覆盖市值。</p>
+<p>对历史估值，本报告不拼接未经前复权统一的历史价格序列，也不宣称当前处于准确百分位。对同业估值，不机械套用阿里巴巴、京东或海外外卖公司的PE：多业务集团利润结构、补贴策略、租赁、股权薪酬与现金政策差异很大。同业能帮助检验商业利润率上限，却不能替代美团自己的现金流桥。</p>
+<p>模型价值与价格差分别约负38.64%、正55.19%、正152.92%，这是当前内在价值情景差，不是某个持有期限的预期收益率。未来分红、回购均来自这些现金流，不额外叠加一次“股东收益”。如果实际持有期与现金回收时点不同，年化回报还要另算。</p>
+<blockquote>
+<p>段永平式追问：股市关闭五年，愿不愿意75.70港元持有？只有在相信成熟现金流能跨过约276亿元门槛，并接受中途明显亏损的前提下才愿意；仅凭用户规模和历史高利润不够。</p>
+</blockquote>
+<hr />
+<h2 id="_15">第八步：最终决策与行动清单</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结论</th>
+<th>信心度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生意质量</td>
+<td>高频真实需求，复杂履约创造价值，但利润分配易受竞争影响</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>密度与组织能力较强，消费者转换成本较低</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>管理层</td>
+<td>执行能力强，资本配置与普通股东现金回报需持续验证</td>
+<td>中</td>
+</tr>
+<tr>
+<td>最大风险</td>
+<td>把补贴退坡误判为旧利润率永久恢复</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>行业趋势</td>
+<td>本地交易数字化持续，收益未必主要留在平台</td>
+<td>高/利润归属中低</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>75.70港元具有条件性吸引力，但不是无需经营验证的低估</td>
+<td>中低</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>研究结论：允许研究型小仓位，核心仓位继续等待现金流确认。</strong> 这不是简单“观望”：当前价格低于基准价值的七成附近，但基准依赖盈利恢复。对不能接受竞争战与长期资本配置不确定性的投资者，宁可放弃，不应因为看起来便宜而放宽能力圈。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>价格或事件</th>
+<th>空仓者</th>
+<th>持仓者</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60港元以下且网络与现金安全未破坏</td>
+<td>可分批研究性建仓，仍须验证价值未同步下修</td>
+<td>可在风险预算内提高仓位</td>
+</tr>
+<tr>
+<td>60—82港元</td>
+<td>小仓位条件买入区；现金回收证据是加仓前提</td>
+<td>可持有，避免因单季扭亏追涨</td>
+</tr>
+<tr>
+<td>82—100港元</td>
+<td>等待连续现金改善或上调长期现金流</td>
+<td>不急于加仓，评估机会成本</td>
+</tr>
+<tr>
+<td>100—120港元</td>
+<td>基准价值折让有限，要求更强事实支持</td>
+<td>若经营兑现可持有，若仅估值扩张可降风险</td>
+</tr>
+<tr>
+<td>120港元以上</td>
+<td>需要高于基准的新证据</td>
+<td>逐步比较其他机会，不能机械永久持有</td>
+</tr>
+<tr>
+<td>经营现金流好转但租赁/资本开支后持续为负</td>
+<td>不满足核心仓位条件</td>
+<td>重审所谓盈利恢复质量</td>
+</tr>
+<tr>
+<td>补贴回升、成熟业务现金转弱且管理层扩大投入</td>
+<td>暂停购买</td>
+<td>依据论文失效程度减仓或退出</td>
+</tr>
+</tbody>
+</table></div>
+<p>82与100港元分别约为基准价值的七成与八五折；60港元是研究者结合悲观价值与恢复风险设置的观察线，非公式精确输出。价格线必须随现金、债务、股本与现金流路径更新，不能把本报告数字留在观察列表多年不变。</p>
+<p>最有意义的加仓信号是连续两个报告期同时出现：剔除投资相关因素后经营改善、租赁与资本开支后现金为正、核心本地商业利润恢复不是靠明显恶化商户或骑手生态换来、新业务成熟项目现金亏损下降。公司尚未充分披露单城经济数据时，应提高对聚合现金流的要求，不能靠自行估算补齐后宣布验证成功。</p>
+<p>卖出信号则不是股价跌破某条线，而是规模优势不能转成现金、普通股东长期被稀释、重大投入缺少退出纪律，或需求入口变化使平台收费权结构性下降。若基本面加强而市场短期波动，单纯价格下跌并不使论文失效。</p>
+<p>以下为基于公开投资理念的<strong>模拟点评，不是本人原话，也不代表其持仓或推荐</strong>：</p>
+<blockquote>
+<p>巴菲特式模拟：网络可以很值钱，但我要知道竞争结束以后，股东真正能拿走的现金，而不是平台每年通过多少订单。</p>
+<p>芒格式模拟：最容易犯的错，是把一场博弈当成一条趋势线。对手能为了别的业务接受亏损，你就不能只用行业供需预测利润。</p>
+<p>段永平式模拟：先想清楚这是不是你能理解的生意，再考虑价钱。不要因为以前赚过很多，就认定以后必然赚回来。</p>
+<p>李录式模拟：改善城市交易效率有长期价值，但文明进步创造的总价值，必须经过商业和治理机制才能属于上市股东。</p>
+</blockquote>
+<h2 id="ai_1">AI分析置信度与投资确定性</h2>
+<p>报表事实、股本与市值算术的置信度较高；集团与分部口径差异已有明确解释。单位经济、未来竞争均衡、海外投资回收及十年现金流的置信度较低。A级资料丰富度不能转换成A级投资确定性。</p>
+<p>本报告最需要一手验证的问题是：无券真实复购与有券复购差多少；商户在多个平台上获得的增量利润而非总流水差多少；成熟城市扣安全和保障成本后的每单贡献如何变化；即时零售是否真正填补运力闲时；海外项目退出标准是否明确。这些问题应通过消费者体验、商户访谈和具体城市数据补充，AI不能从一份集团中报中推出来。</p>
+<h2 id="_16">数据来源与审计记录</h2>
+<ul>
+<li>价格双源：<a href="https://stockanalysis.com/quote/hkg/3690/history/">StockAnalysis历史行情</a>、<a href="https://ms.investing.com/equities/meituan-dianping-historical-data">Investing历史行情</a>。休市依据：<a href="https://www.hkex.com.hk/-/media/HKEX-Market/Services/Circulars-and-Notices/Participant-and-Members-Circulars/SEHK/2025/ce_SEHK_CT_075_2025.pdf">港交所2026交易日历通告</a>。</li>
+<li>汇率双源：<a href="https://www.exchangerates.org.uk/HKD-CNY-spot-exchange-rates-history-2026-03-01.html">ExchangeRates历史</a>0.8525、<a href="https://ca.investing.com/currencies/hkd-cny-historical-data">Investing历史</a>0.8520；时间口径差约0.06%。</li>
+<li>核心财务主源：<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042400179.pdf">2025年报</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092900007.pdf">2026中报</a>；独立辅助源为StockAnalysis/S&amp;P数据与AASTOCKS新闻。公司IR、HKEX及同份公告镜像属于同一披露链，不算独立双源。</li>
+<li>2025收入核查：原文364,854.746百万元，第三方364,855百万元；归母净亏损原文23,355.015百万元，第三方23,355百万元。2026H1现金理财168,314.170百万元，第三方168,314百万元。均在舍入范围内。</li>
+<li>复算材料：<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E5%9B%A2/research-20261020/model.py">模型与输入</a>、<a href="../files/reports/%E7%BE%8E%E5%9B%A2/research-20261020/model-output.json">完整输出</a>、<a href="../files/reports/%E7%BE%8E%E5%9B%A2/research-20261020/financial-rigor.txt">金融工具记录</a>、<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E5%9B%A2/research-20261020/evidence-and-audit.md">证据及审计范围</a>。</li>
+<li><strong>审计性质：有限范围事实核对与算术复核。</strong> 自动抽样包含情景、日期或主观价格线时，必须另行分类，不能填入同值伪造独立来源。未披露的单位经济、未双源精确核对的历史小项和未来预测不获审计背书；模型运行成功不证明投资结论正确。</li>
+</ul></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E7%BE%8E%E5%9B%A2%EF%BC%8803690.HK%EF%BC%89%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A&amp;ticker=%E7%BE%8E%E5%9B%A2&amp;source=reports%2F%E7%BE%8E%E5%9B%A2%2F%E7%BE%8E%E5%9B%A2%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261020.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2F80e6b793afda.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>底稿与核验（GitHub）</h2><div class="meta">这些文件不在阅读站上展示，点开为 GitHub 原文。</div><ul class="list work"><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BE%8E%E5%9B%A2/research-20261020/evidence-and-audit.md">美团研究证据与审计边界</a><div class="meta">审计核验底稿 · research-20261020/evidence-and-audit.md</div></li></ul><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/eb2dc1e9565b.html">美团（3690.HK）独立投资研究报告 /investment-research — 2026-10-20</a><div class="meta">2026-10-20 · 研究</div></li><li><a href="../r/46875cd48cf3.html">美团（3690.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/245b47c4d8af.html">美团（03690.HK）研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/faeed57c9604.html">美团：AI 能创造多少利润，十年后还能留下多少？</a><div class="meta">2026-09-25 · 研究</div></li><li><a href="../r/c0f90d479cfd.html">美团扭亏为盈了</a><div class="meta">2026-08-29 · 公众号</div></li><li><a href="../r/5974385e15ed.html">AI 会不会绕过美团？</a><div class="meta">2026-07-01 · 公众号</div></li><li><a href="../r/f18ab8ccf860.html">全球最赚钱的外卖平台，为什么反而最便宜？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/636f49fa1105.html">抖音、京东和骑手成本，谁才是美团真正的威胁？</a><div class="meta">2026-06-29 · 公众号</div></li><li><a href="../r/c24146600d5e.html">全球本地生活投资地图：美团之外，谁更像好生意？</a><div class="meta">2026-06-28 · 公众号</div></li><li><a href="../r/237df92d9661.html">美团到底输在哪里，又赢在哪里？</a><div class="meta">2026-06-28 · 公众号</div></li><li><a href="../r/234f472498ba.html">万物到家的命门，不是流量，是那张配送网</a><div class="meta">2026-06-28 · 公众号</div></li><li><a href="../r/17e2187bbcdd.html">本地生活服务产业链投资研究报告：以美团为核心</a><div class="meta">2026-06-25 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#ai">AI研究偏见自觉</a></li>
+<li><a href="#_1">第一步：核心数据总览</a><ul>
+<li><a href="#_2">五年增长与利润波动</a></li>
+<li><a href="#_3">最近四个已披露季度</a></li>
+<li><a href="#_4">利润恢复的质量</a></li>
+<li><a href="#_5">现金比净利更严格</a></li>
+</ul>
+</li>
+<li><a href="#_6">第二步：生意本质分析</a></li>
+<li><a href="#_7">第三步：护城河评估</a></li>
+<li><a href="#_8">第四步：逆向思考与风险清单</a></li>
+<li><a href="#_9">第五步：管理层评估</a></li>
+<li><a href="#_10">第六步：行业与文明趋势</a></li>
+<li><a href="#_11">第七步：估值与安全边际</a><ul>
+<li><a href="#_12">先把价格、股本和现金统一</a></li>
+<li><a href="#_13">现金流模型的定义</a></li>
+<li><a href="#_14">反向估值：市场并非在定价倒闭</a></li>
+</ul>
+</li>
+<li><a href="#_15">第八步：最终决策与行动清单</a></li>
+<li><a href="#ai_1">AI分析置信度与投资确定性</a></li>
+<li><a href="#_16">数据来源与审计记录</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-20 15:56 UTC</footer></body></html>
