@@ -1,0 +1,33 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：拼多多研究报告-20261020.md
+======================================================================
+
+  [92m✅ 通过[0m [ 4] 最需警惕 · 本报告判断                         报告:       456.41 
+                                                    https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-second-quarter-2026-unaudited-financial cash128918+shortinvestment327496 million: 456.41 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 456.41 (偏差 0.00%)
+  [92m✅ 通过[0m [ 5] 2025 全年审计 · 在线营销及其他                  报告:       217.78 
+                                                    https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf note13: 217.78 (偏差 0.00%)
+  [92m✅ 通过[0m [18] 2025Q3 原公告 · 净利润                     报告:        29.33 
+                                                    https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-third-quarter-2025-unaudited-financial income statement: 29.33 (偏差 0.00%)
+  [92m✅ 通过[0m [14] 2025Q3 原公告 · 总收入                     报告:       108.28 
+                                                    https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-third-quarter-2025-unaudited-financial revenue: 108.28 (偏差 0.00%)
+  [92m✅ 通过[0m [12] 2025Q3 原公告 · 在线营销及其他                 报告:        53.35 
+                                                    https://investor.pddholdings.com/news-releases/news-release-details/pdd-holdings-announces-third-quarter-2025-unaudited-financial revenue notes: 53.35 (偏差 0.00%)
+  [92m✅ 通过[0m [29] 总股本代理 · 独立第二来源                       报告:        14.20 亿
+                                                    https://stockanalysis.com/stocks/pdd/statistics/: 14.20 (偏差 0.00%)
+  [92m✅ 通过[0m [32] 市值 · 独立第二来源                          报告:       115.25 
+                                                    https://www.marketbeat.com/stocks/NASDAQ/PDD/chart/ 20261016 row: 115.25 (偏差 0.00%)
+  [92m✅ 通过[0m [36] 2025 净利 · 第一来源                       报告:        97.84 
+                                                    https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf F-8: 97.84 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 97.84 (偏差 0.00%)
+  [92m✅ 通过[0m [1001] 2025收入十亿元                            报告:       431.85 
+                                                    https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf F-8: 431.85 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 431.85 (偏差 0.00%)
+  [92m✅ 通过[0m [1002] 2025经营现金流十亿元                         报告:       106.94 
+                                                    https://investor.pddholdings.com/static-files/92dafbdc-3125-4f2c-a28f-3d61203efbaf F-12: 106.94 (偏差 0.00%)  |  https://stockanalysis.com/stocks/pdd/financials/: 106.94 (偏差 0.00%)
+  [92m✅ 通过[0m [1003] 20261016正规收盘美元                       报告:        80.97 
+                                                    https://stockanalysis.com/stocks/pdd/history/: 80.97 (偏差 0.00%)  |  https://www.marketbeat.com/stocks/NASDAQ/PDD/chart/: 80.97 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 11  |  通过: [92m11[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================

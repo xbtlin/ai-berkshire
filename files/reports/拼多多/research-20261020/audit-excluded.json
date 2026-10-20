@@ -1,0 +1,93 @@
+[
+  {
+    "id": 15,
+    "label": "2025Q3 原公告 · 集团毛利率",
+    "reported_value": 56.74,
+    "unit": "%",
+    "line_number": 31,
+    "raw_text": "| 2025Q3 原公告 | 53.348 | 54.929 | 108.277 | 56.74% | 25.026 | 23.11% | 29.328 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "audit_scope": "DERIVED_RATIO_OR_MODEL_ASSUMPTION_NOT_EXTERNAL_FACT"
+  },
+  {
+    "id": 28,
+    "label": "总股本代理 · 第一来源",
+    "reported_value": 3.0,
+    "unit": "",
+    "line_number": 61,
+    "raw_text": "| 总股本代理 | 年报 3 月 18 日 5,693,585,848 股 A 类 | StockAnalysis 约 14.2 亿 ADS | 换算 14.23396462 亿 ADS，差约 0.24%；日期与四舍五入仍有缺口 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "audit_scope": "DATE_FALSE_POSITIVE"
+  },
+  {
+    "id": 55,
+    "label": "TTM PS · 本文复算",
+    "reported_value": 1.71,
+    "unit": "倍",
+    "line_number": 231,
+    "raw_text": "| TTM PS | 1.71 倍 | 平台收入，不是 GMV |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "audit_scope": "DERIVED_RATIO_OR_MODEL_ASSUMPTION_NOT_EXTERNAL_FACT"
+  },
+  {
+    "id": 70,
+    "label": "基准 · 后五年增速",
+    "reported_value": 2.0,
+    "unit": "%",
+    "line_number": 251,
+    "raw_text": "| 基准 | 70 | 3% | 2% | 2% | 300 | 143.31 美元 | 76.5 / 81.1 / 89.6 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "audit_scope": "DERIVED_RATIO_OR_MODEL_ASSUMPTION_NOT_EXTERNAL_FACT"
+  },
+  {
+    "id": 76,
+    "label": "乐观 · 前五年增速",
+    "reported_value": 8.0,
+    "unit": "%",
+    "line_number": 252,
+    "raw_text": "| 乐观 | 95 | 8% | 4% | 2.5% | 380 | 248.68 美元 | 119.7 / 139.6 / 169.8 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "audit_scope": "DERIVED_RATIO_OR_MODEL_ASSUMPTION_NOT_EXTERNAL_FACT"
+  },
+  {
+    "id": 82,
+    "label": "乐观 · EPS 年增长假设",
+    "reported_value": 8.0,
+    "unit": "%",
+    "line_number": 268,
+    "raw_text": "| 乐观 | 8% | 14 倍 | 170.51 美元 | 28.2% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "audit_scope": "DERIVED_RATIO_OR_MODEL_ASSUMPTION_NOT_EXTERNAL_FACT"
+  },
+  {
+    "id": 87,
+    "label": "基准 · 三年后 PE",
+    "reported_value": 10.0,
+    "unit": "倍",
+    "line_number": 269,
+    "raw_text": "| 基准 | 2% | 10 倍 | 102.60 美元 | 8.2% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": "",
+    "audit_scope": "DERIVED_RATIO_OR_MODEL_ASSUMPTION_NOT_EXTERNAL_FACT"
+  }
+]

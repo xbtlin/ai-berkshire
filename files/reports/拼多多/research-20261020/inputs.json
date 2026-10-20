@@ -1,0 +1,42 @@
+{
+  "price_usd": "80.97",
+  "legal_ordinary_shares_20260318": "5693585848",
+  "ordinary_per_ads": "4",
+  "usd_cny": "6.6905",
+  "revenue_2025_bn": "431.845713",
+  "net_income_2025_bn": "97.842539",
+  "operating_profit_2025_bn": "93.102131",
+  "cfo_2025_bn": "106.938690",
+  "capex_2025_bn": "1.145077",
+  "sbc_2025_bn": "7.936971",
+  "revenue_h1_2026_bn": "218.587",
+  "revenue_h1_2025_bn": "199.657",
+  "profit_h1_2026_bn": "39.729",
+  "profit_h1_2025_bn": "45.496",
+  "cash_and_short_investments_bn": "456.414",
+  "restricted_cash_bn": "77.274",
+  "lease_liability_bn": "4.844",
+  "scenarios": {
+    "bear": {
+      "fcff": "45",
+      "g1": "-.03",
+      "g2": "-.02",
+      "gt": "0",
+      "assets": "200"
+    },
+    "base": {
+      "fcff": "70",
+      "g1": ".03",
+      "g2": ".02",
+      "gt": ".02",
+      "assets": "300"
+    },
+    "bull": {
+      "fcff": "95",
+      "g1": ".08",
+      "g2": ".04",
+      "gt": ".025",
+      "assets": "380"
+    }
+  }
+}

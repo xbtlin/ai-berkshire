@@ -1,0 +1,214 @@
+======================================================================
+报告数据抽检清单
+文件：reports/拼多多/拼多多研究报告-20261020.md
+总提取数据点：94  |  抽样比例：15%  |  抽检数量：15
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  4     18  最需警惕 · 本报告判断                               456.41  
+  5     30  2025 全年审计 · 在线营销及其他                        217.78  
+ 15     31  2025Q3 原公告 · 集团毛利率                          56.74  %
+ 18     31  2025Q3 原公告 · 净利润                            29.33  
+ 14     31  2025Q3 原公告 · 总收入                           108.28  
+ 12     31  2025Q3 原公告 · 在线营销及其他                        53.35  
+ 29     61  总股本代理 · 独立第二来源                              14.20  亿
+ 28     61  总股本代理 · 第一来源                                 3.00  
+ 32     62  市值 · 独立第二来源                                115.25  
+ 36     64  2025 净利 · 第一来源                              97.84  
+ 55    231  TTM PS · 本文复算                                1.71  倍
+ 70    251  基准 · 后五年增速                                   2.00  %
+ 76    252  乐观 · 前五年增速                                   8.00  %
+ 82    268  乐观 · EPS 年增长假设                               8.00  %
+ 87    269  基准 · 三年后 PE                                 10.00  倍
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 4,
+    "label": "最需警惕 · 本报告判断",
+    "reported_value": 456.414,
+    "unit": "",
+    "line_number": 18,
+    "raw_text": "| 最需警惕 | 把 456.414 现金及短期投资全部当分红，再用含投资收益利润估值 | 这会同时高估现金可用性并重复计算投资回报 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "2025 全年审计 · 在线营销及其他",
+    "reported_value": 217.783,
+    "unit": "",
+    "line_number": 30,
+    "raw_text": "| 2025 全年审计 | 217.783 | 214.063 | 431.846 | 56.28% | 93.102 | 21.56% | 97.843 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "2025Q3 原公告 · 集团毛利率",
+    "reported_value": 56.74,
+    "unit": "%",
+    "line_number": 31,
+    "raw_text": "| 2025Q3 原公告 | 53.348 | 54.929 | 108.277 | 56.74% | 25.026 | 23.11% | 29.328 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "2025Q3 原公告 · 净利润",
+    "reported_value": 29.328,
+    "unit": "",
+    "line_number": 31,
+    "raw_text": "| 2025Q3 原公告 | 53.348 | 54.929 | 108.277 | 56.74% | 25.026 | 23.11% | 29.328 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 14,
+    "label": "2025Q3 原公告 · 总收入",
+    "reported_value": 108.277,
+    "unit": "",
+    "line_number": 31,
+    "raw_text": "| 2025Q3 原公告 | 53.348 | 54.929 | 108.277 | 56.74% | 25.026 | 23.11% | 29.328 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 12,
+    "label": "2025Q3 原公告 · 在线营销及其他",
+    "reported_value": 53.348,
+    "unit": "",
+    "line_number": 31,
+    "raw_text": "| 2025Q3 原公告 | 53.348 | 54.929 | 108.277 | 56.74% | 25.026 | 23.11% | 29.328 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "总股本代理 · 独立第二来源",
+    "reported_value": 14.2,
+    "unit": "亿",
+    "line_number": 61,
+    "raw_text": "| 总股本代理 | 年报 3 月 18 日 5,693,585,848 股 A 类 | StockAnalysis 约 14.2 亿 ADS | 换算 14.23396462 亿 ADS，差约 0.24%；日期与四舍五入仍有缺口 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 28,
+    "label": "总股本代理 · 第一来源",
+    "reported_value": 3.0,
+    "unit": "",
+    "line_number": 61,
+    "raw_text": "| 总股本代理 | 年报 3 月 18 日 5,693,585,848 股 A 类 | StockAnalysis 约 14.2 亿 ADS | 换算 14.23396462 亿 ADS，差约 0.24%；日期与四舍五入仍有缺口 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 32,
+    "label": "市值 · 独立第二来源",
+    "reported_value": 115.25,
+    "unit": "",
+    "line_number": 62,
+    "raw_text": "| 市值 | 股价乘上述 ADS 数得 115.2524 十亿美元 | MarketBeat 115.25 十亿美元 | 差约 0.002%，数量级相符 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "2025 净利 · 第一来源",
+    "reported_value": 97.842539,
+    "unit": "",
+    "line_number": 64,
+    "raw_text": "| 2025 净利 | 年报 97.842539 | StockAnalysis 97.843 | 四舍五入相符 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 55,
+    "label": "TTM PS · 本文复算",
+    "reported_value": 1.71,
+    "unit": "倍",
+    "line_number": 231,
+    "raw_text": "| TTM PS | 1.71 倍 | 平台收入，不是 GMV |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 70,
+    "label": "基准 · 后五年增速",
+    "reported_value": 2.0,
+    "unit": "%",
+    "line_number": 251,
+    "raw_text": "| 基准 | 70 | 3% | 2% | 2% | 300 | 143.31 美元 | 76.5 / 81.1 / 89.6 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 76,
+    "label": "乐观 · 前五年增速",
+    "reported_value": 8.0,
+    "unit": "%",
+    "line_number": 252,
+    "raw_text": "| 乐观 | 95 | 8% | 4% | 2.5% | 380 | 248.68 美元 | 119.7 / 139.6 / 169.8 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 82,
+    "label": "乐观 · EPS 年增长假设",
+    "reported_value": 8.0,
+    "unit": "%",
+    "line_number": 268,
+    "raw_text": "| 乐观 | 8% | 14 倍 | 170.51 美元 | 28.2% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 87,
+    "label": "基准 · 三年后 PE",
+    "reported_value": 10.0,
+    "unit": "倍",
+    "line_number": 269,
+    "raw_text": "| 基准 | 2% | 10 倍 | 102.60 美元 | 8.2% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]
