@@ -1,0 +1,875 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>腾讯控股（0700.HK）研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/a53f610ec809.html" data-title="腾讯控股（0700.HK）研究报告"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯/index.html">腾讯</a></div><div class="layout"><div><h1>腾讯控股（0700.HK）研究报告</h1><div class="meta"><a href="../companies/腾讯/index.html">腾讯</a> ｜ 2026-10-20 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/%E8%85%BE%E8%AE%AF%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261020.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#ai">AI研究偏见自觉</a></li>
+<li><a href="#_1">第一步：核心数据总览</a><ul>
+<li><a href="#_2">收入从哪里来</a></li>
+<li><a href="#_3">五年财务：经营改善真实，净利润历史波动不能直接外推</a></li>
+<li><a href="#ai_1">现金与AI：最容易被粉饰的地方</a></li>
+</ul>
+</li>
+<li><a href="#_4">第二步：生意本质分析</a></li>
+<li><a href="#_5">第三步：护城河评估</a></li>
+<li><a href="#_6">第四步：逆向思考与风险清单</a></li>
+<li><a href="#_7">第五步：管理层评估</a><ul>
+<li><a href="#_8">经济权益、投票权与控制</a></li>
+</ul>
+</li>
+<li><a href="#_9">第六步：行业与文明趋势</a></li>
+<li><a href="#_10">第七步：估值与安全边际</a><ul>
+<li><a href="#_11">市场当前付了多少钱</a></li>
+<li><a href="#fcff">主模型：经营FCFF与非经营资产分开</a></li>
+<li><a href="#_12">反向估值与三年收益检验</a></li>
+<li><a href="#_13">从估值到行动</a></li>
+</ul>
+</li>
+<li><a href="#_14">第八步：最终决策与行动清单</a></li>
+<li><a href="#ai_2">AI分析置信度与投资确定性</a></li>
+<li><a href="#_15">数据来源与审计记录</a></li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>研究截止：2026年10月20日北京时间。</strong> 财务截至2026年6月30日，最新完整年度为2025年。港股10月19日因重阳节翌日休市，采用10月16日正规收盘 <strong>417.80港元</strong>；最近打开的股本公告为10月15日，已发行90.92644829亿股。按此计算市值 <strong>3.799万亿港元／3.239万亿元人民币</strong>，TTM归母利润市盈率 <strong>13.75倍</strong>。汇率采用10月16日市场参考1港元＝0.8525元人民币，属于估值换算基准。</p>
+<p>腾讯最值得研究的是社交关系、支付和商户服务构成的长期收费基础；眼前最需要验证的是，这些基础赚来的现金有多少会被AI竞争持续消耗。</p>
+</blockquote>
+<p>价格由<a href="https://stockanalysis.com/quote/hkg/0700/history/">StockAnalysis历史行情</a>与<a href="https://ms.investing.com/equities/tencent-holdings-hk-historical-data">Investing历史行情</a>核验。<a href="https://www.hkex.com.hk/-/media/HKEX-Market/Services/Circulars-and-Notices/Participant-and-Members-Circulars/SEHK/2025/ce_SEHK_CT_075_2025.pdf">港交所假期通知</a>确认休市日。本报告是研究学习材料，价格行动线是条件判断，不涉及账户仓位或下单。</p>
+<h2 id="ai">AI研究偏见自觉</h2>
+<p><strong>信息丰富度：A级；AI研究置信度较高，长期投资确定性中等偏高，但二者不能等同。</strong> 年报、季报、行业报道充分，容易产生“大家都知道微信不可替代，所以腾讯永远便宜”的共识偏见。真正有争议的内容不是微信今天是否强，而是十年后的利润归属、需要投入多少资本，以及普通股东何时收到现金。</p>
+<p>本次将资料分为事实、公司判断、研究推论、模型假设。收入和现金流是事实；“WorkBuddy领先”“混元性能出色”是公司的判断，未在本次独立测试；社交基础可能帮助AI分发是推论；现金流长期增速和投资组合可实现价值是模型假设。公司公告的多个转载页面只有一个原始来源，不能伪装成双源。指定的AASTOCKS及Macrotrends部分页面读取失败，财务交叉核对主要用原始财报与独立数据平台StockAnalysis；同口径仍有缺口的项目逐一列明。</p>
+<ul>
+<li>[x] 不用资料数量替代对生意的理解。</li>
+<li>[x] 不把微信月活当作广告利润或AI付费收入。</li>
+<li>[x] 不把所有AI资本开支加回“正常现金流”。</li>
+<li>[x] 不把历史最高价、成本价或卖方目标价作为估值锚。</li>
+<li>[x] 不把财务计算正确解释为经营预测已经获证实。</li>
+</ul>
+<hr />
+<h2 id="_1">第一步：核心数据总览</h2>
+<h3 id="_2">收入从哪里来</h3>
+<p>除特别说明，财务表单位均为<strong>人民币十亿元</strong>，即每一单位相当于十亿元；收入不是交易总额，利润不是自由现金流。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务</th>
+<th style="text-align: right;">2025收入</th>
+<th style="text-align: right;">2026Q2收入</th>
+<th style="text-align: right;">Q2同比</th>
+<th style="text-align: right;">Q2分部毛利率</th>
+<th>付费方与实际收费对象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>增值服务</td>
+<td style="text-align: right;">369.281</td>
+<td style="text-align: right;">98.414</td>
+<td style="text-align: right;">+8%</td>
+<td style="text-align: right;">64%</td>
+<td>游戏玩家、音乐视频会员及其他增值用户</td>
+</tr>
+<tr>
+<td>营销服务</td>
+<td style="text-align: right;">144.973</td>
+<td style="text-align: right;">43.565</td>
+<td style="text-align: right;">+22%</td>
+<td style="text-align: right;">57%</td>
+<td>商家为可转化的广告曝光和点击付费</td>
+</tr>
+<tr>
+<td>金融科技及企业服务</td>
+<td style="text-align: right;">229.435</td>
+<td style="text-align: right;">60.286</td>
+<td style="text-align: right;">+9%</td>
+<td style="text-align: right;">52%</td>
+<td>商户支付、金融服务机构、云和企业软件客户</td>
+</tr>
+<tr>
+<td>其他</td>
+<td style="text-align: right;">8.077</td>
+<td style="text-align: right;">2.520</td>
+<td style="text-align: right;">+37%</td>
+<td style="text-align: right;">-35%</td>
+<td>其他业务，体量较小但仍消耗资源</td>
+</tr>
+<tr>
+<td>集团</td>
+<td style="text-align: right;">751.766</td>
+<td style="text-align: right;">204.785</td>
+<td style="text-align: right;">+11%</td>
+<td style="text-align: right;">58%</td>
+<td>不能把各分部毛利直接当归母利润</td>
+</tr>
+</tbody>
+</table></div>
+<p>增值服务内部，第二季度国内游戏473亿元、国际游戏186亿元、社交网络325亿元。微信免费通讯并不是单独收费分部，却降低多个付费业务寻找用户、建立身份和完成交易的成本。<a href="https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf">腾讯2026中报，第9—10页</a>、<a href="https://www.prnewswire.com/apac/news-releases/tencent-announces-2025-annual-and-fourth-quarter-results-302717280.html">2025全年公告</a>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>近四季度</th>
+<th style="text-align: right;">2025Q3</th>
+<th style="text-align: right;">2025Q4</th>
+<th style="text-align: right;">2026Q1</th>
+<th style="text-align: right;">2026Q2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>集团收入</td>
+<td style="text-align: right;">192.869</td>
+<td style="text-align: right;">194.371</td>
+<td style="text-align: right;">196.458</td>
+<td style="text-align: right;">204.785</td>
+</tr>
+<tr>
+<td>增值服务</td>
+<td style="text-align: right;">95.860</td>
+<td style="text-align: right;">89.920</td>
+<td style="text-align: right;">96.110</td>
+<td style="text-align: right;">98.414</td>
+</tr>
+<tr>
+<td>营销服务</td>
+<td style="text-align: right;">36.242</td>
+<td style="text-align: right;">41.116</td>
+<td style="text-align: right;">38.171</td>
+<td style="text-align: right;">43.565</td>
+</tr>
+<tr>
+<td>金融科技及企业服务</td>
+<td style="text-align: right;">58.174</td>
+<td style="text-align: right;">60.818</td>
+<td style="text-align: right;">59.885</td>
+<td style="text-align: right;">60.286</td>
+</tr>
+<tr>
+<td>其他</td>
+<td style="text-align: right;">2.593</td>
+<td style="text-align: right;">2.517</td>
+<td style="text-align: right;">2.292</td>
+<td style="text-align: right;">2.520</td>
+</tr>
+<tr>
+<td>集团毛利率，公告取整</td>
+<td style="text-align: right;">56%</td>
+<td style="text-align: right;">56%</td>
+<td style="text-align: right;">57%</td>
+<td style="text-align: right;">58%</td>
+</tr>
+</tbody>
+</table></div>
+<p>四季度表由<a href="https://financialfilings.com/filings/tencent-holdings-limited/interim-quarterly-report/2025/19504180/">2025Q3公告原文镜像</a>、<a href="https://www.prnewswire.com/apac/news-releases/tencent-announces-2025-annual-and-fourth-quarter-results-302717280.html">2025Q4公告</a>、<a href="https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-first-quarter-results-302770779.html">2026Q1公告</a>和2026中报重建。Q3官网PDF当前文本读取为空，使用明确标为公司公告的镜像；不视为独立第三方确认。各季度其他分部及尾差均保留，避免只呈现增长业务。</p>
+<p>趋势有三个含义。第一，广告是最快的增长引擎，其价格改善是否来自商户真实收益提升比单纯增加广告量重要。第二，金融与企业服务增长平稳，不能因含有云就全部赋予高增长软件估值。第三，游戏是内容生意，国内新品成功和海外工作室周期可能交错，不能把单季增长年化成永久增长。</p>
+<h3 id="_3">五年财务：经营改善真实，净利润历史波动不能直接外推</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年度</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">IFRS归母净利</th>
+<th style="text-align: right;">毛利率</th>
+<th style="text-align: right;">IFRS经营利润率</th>
+<th style="text-align: right;">经营现金流</th>
+<th style="text-align: right;">第三方CFO减资本开支</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td style="text-align: right;">560.118</td>
+<td style="text-align: right;">224.822</td>
+<td style="text-align: right;">43.91%</td>
+<td style="text-align: right;">22.26%</td>
+<td style="text-align: right;">175.186</td>
+<td style="text-align: right;">145.884</td>
+</tr>
+<tr>
+<td>2022</td>
+<td style="text-align: right;">554.552</td>
+<td style="text-align: right;">188.243</td>
+<td style="text-align: right;">43.05%</td>
+<td style="text-align: right;">19.98%</td>
+<td style="text-align: right;">146.091</td>
+<td style="text-align: right;">123.412</td>
+</tr>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">609.015</td>
+<td style="text-align: right;">115.216</td>
+<td style="text-align: right;">48.13%</td>
+<td style="text-align: right;">26.28%</td>
+<td style="text-align: right;">221.962</td>
+<td style="text-align: right;">200.954</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">660.257</td>
+<td style="text-align: right;">194.073</td>
+<td style="text-align: right;">52.90%</td>
+<td style="text-align: right;">31.52%</td>
+<td style="text-align: right;">258.521</td>
+<td style="text-align: right;">195.594</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">751.766</td>
+<td style="text-align: right;">224.842</td>
+<td style="text-align: right;">56.21%</td>
+<td style="text-align: right;">32.13%</td>
+<td style="text-align: right;">303.052</td>
+<td style="text-align: right;">215.570</td>
+</tr>
+</tbody>
+</table></div>
+<p>收入、归母利润及利润率分子来自<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040901231.pdf">2025年报第3页五年摘要</a>；收入及归母利润与<a href="https://stockanalysis.com/quote/hkg/0700/financials/">StockAnalysis财务表</a>一致。经营现金流及最后一列为StockAnalysis统一口径历史序列，后者<strong>不是腾讯口径自由现金流，也未完成每个历史年度现金流原件的独立双源核查</strong>。年报利润率由Decimal计算，不使用第三方调整过的经营利润。2025年StockAnalysis经营利润2456.28亿元与公司2415.62亿元不同，故没有混用。</p>
+<p>2021—2022年IFRS归母利润受到投资处置等影响。利润率趋势比净利绝对额更适合解释主业改善，但剔除非经常项目同样不能把股权激励、长期重复发生的投资损失和组织成本全部抹去。2025年公司自由现金流为1826亿元，明显低于第三方CFO减Capex的2155.70亿元，差异主要来自内容、租赁与资本开支分类，不是“多发现了三百亿元现金”。</p>
+<h3 id="ai_1">现金与AI：最容易被粉饰的地方</h3>
+<p>2026上半年经营现金流1540.61亿元；二季度公司披露自由现金流为负138亿元，而排除算力采购预付款后为正376亿元。两者都是真的，含义不同。前者是当期现金约束，后者帮助理解采购时点，但预付款最终会换成未来服务或资产，不能默认无成本返还。上半年资本开支847.20亿元，高于2025全年791.98亿元的水平；新增算力的经济寿命、利用率和付费需求决定能否收回成本。<a href="https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf">2026中报第14、21、33—34页</a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>2026年6月末资金口径</th>
+<th style="text-align: right;">金额，十亿元</th>
+<th>对估值的处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现金及现金等价物</td>
+<td style="text-align: right;">206.930</td>
+<td>不能等同全部现金储备</td>
+</tr>
+<tr>
+<td>定期存款及其他库务资金</td>
+<td style="text-align: right;">304.224</td>
+<td>含公司定义的高流动性投资产品</td>
+</tr>
+<tr>
+<td>公司总现金</td>
+<td style="text-align: right;">511.154</td>
+<td>前两项相加</td>
+</tr>
+<tr>
+<td>借款及应付票据</td>
+<td style="text-align: right;">452.963</td>
+<td>两项有息融资合计</td>
+</tr>
+<tr>
+<td>公司净现金</td>
+<td style="text-align: right;">58.191</td>
+<td>不包含租赁负债的净现金定义</td>
+</tr>
+<tr>
+<td>上市被投公司权益公允价值</td>
+<td style="text-align: right;">487.200</td>
+<td>非控股投资，不能再资本化其联营利润</td>
+</tr>
+<tr>
+<td>未上市被投公司权益账面值</td>
+<td style="text-align: right;">387.900</td>
+<td>账面值不是可立即出售价值</td>
+</tr>
+</tbody>
+</table></div>
+<p>StockAnalysis的Cash &amp; Investments为4589.04亿元、Total Debt为4718.28亿元，和公司总现金5111.54亿元、借款票据4529.63亿元不是同一集合。两个“净现金”方向甚至不同，因此报告不给这项虚假的交叉验证通过；采用原件定义，用现金流与债务披露解释口径差异。第三方余额表与公司库务表尚未逐项完全勾稽，是明确资料边界。</p>
+<p>SBC不是免费劳动力。中报经营利润调整中的半年股份支付为131.13亿元，归母利润层面的调整还包含联营公司的股份支付；不能把不同层级直接相减。估值采用未来现金化薪酬替代假设，扣一次SBC经济成本，之后不再按同一金额额外扩大股本。租赁按经营成本处理，现金流需覆盖租赁付款，不再把相同租赁义务当作额外债务扣第二遍。回购是现金分配与股份变化，不能同时加入自由现金流、股息和EPS增长三个项目。</p>
+<blockquote>
+<p>段永平式追问：不看股价，能否说清楚每一百元收入有多少最后属于股东？当前能说清主业很赚钱，但无法用公开资料证明AI新增投入的长期回报。</p>
+</blockquote>
+<hr />
+<h2 id="_4">第二步：生意本质分析</h2>
+<p><strong>腾讯通过不可随意迁移的关系与身份网络，把高频交流转换成可重复的娱乐、广告和交易服务收入。</strong> 对用户，最重要的价值是能联系到想联系的人；对商户，最重要的是有人、知道如何触达、能够成交；对游戏玩家，则是有趣的内容及共同游玩的伙伴。三个系统共享分发和身份，却不共享相同的利润率与风险。</p>
+<p>微信的网络效应不是“人多所以好”这么简单。个人更换通讯工具需要亲友、工作群、客户和服务账户共同迁移，迁移成本来自协作。单个用户安装另一个AI应用几乎没有成本，但全体用户把收款、群聊和商户关系迁出去成本很高。AI可能先拿走搜索和内容消费，再慢慢侵蚀商务入口，因此“微信没有消失”并不足以证明腾讯利润没有受损。</p>
+<p>游戏付费则不同。玩家能同时玩多款游戏，腾讯没有对娱乐预算的永久所有权。护城河是多个工作室、长期运营方法、分发、反作弊和社交匹配的组合。单款游戏每次更新都要证明自己；长青游戏组合降低失败概率，不能消除失败。游戏利润高时，可以为基础设施投入提供现金，但若多个新品失败同时叠加AI军备竞赛，集团层面的现金缓冲会收窄。</p>
+<p>广告的单位经济学可以写成：可售曝光 × 转化质量 × 广告主愿意付出的获客成本。模型让点击率提高，如果只是把用户更快送给同一批商家，商家利润改善后平台可获得一部分；如果各平台同时提升效果，竞争会将部分收益转给商家。如果AI生成内容急增却损害信任，表面曝光增加可能反而降低单位价值。应关注商户复投和转化回报，而不是只数模型调用量。</p>
+<p>金融科技将交易活动变成手续费或服务收益。支付需要风控、牌照、商户接入和消费者信任，是高频业务，但监管和大客户议价限制提价。云业务更依赖硬件、数据中心和服务交付能力，同样的收入可能有完全不同的资本回报。因此把金融、云、企业软件整体与纯软件公司比较，会高估轻资产属性。</p>
+<p>经营杠杆来自收入增长快于基础组织成本，但2026年新增AI研发与获客改变了这条关系。二季度非IFRS经营利润756.36亿元，剔除新AI产品后公司披露861亿元。这里约百亿元的差距是投入强度信号，不是可以永久加回的利润。若未来成功，则需要同时出现留存、付费和单位算力成本改善；若长期只讲用户增长，则现金股东承担的实质风险上升。<a href="https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-second-quarter-results-302849608.html">二季度公司公告</a></p>
+<blockquote>
+<p>段永平式追问：这门生意好在哪里？答案是关系、交易与服务能够重复收费；对新AI业务，需要重新证明重复收费能力，不能借微信的成功免试。</p>
+</blockquote>
+<hr />
+<h2 id="_5">第三步：护城河评估</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>来源</th>
+<th>当前判断</th>
+<th>可以观察的证据</th>
+<th>容易误判的地方</th>
+<th>失效指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>社交网络效应</td>
+<td>强</td>
+<td>微信与WeChat合并月活14.39亿，关系迁移需多方协调</td>
+<td>月活不是每日时长或独占注意力</td>
+<td>商务沟通和服务交易长期迁出</td>
+</tr>
+<tr>
+<td>转换成本</td>
+<td>强但分业务</td>
+<td>小程序、支付、群体身份、商户运营形成组合成本</td>
+<td>用户可多栖，广告预算可迅速调整</td>
+<td>商户无需微信也能稳定获客履约</td>
+</tr>
+<tr>
+<td>品牌与定价权</td>
+<td>中强</td>
+<td>游戏内容、可信支付和广告转化提供差异</td>
+<td>普遍涨价会引发监管或流失</td>
+<td>提价后商户回报与用户留存下降</td>
+</tr>
+<tr>
+<td>规模与成本</td>
+<td>强</td>
+<td>共用分发、基础设施与研发，长青游戏组合摊薄风险</td>
+<td>算力采购规模不保证低单位交付成本</td>
+<td>算力利用率低、外购收入补贴依赖</td>
+</tr>
+<tr>
+<td>技术壁垒</td>
+<td>中</td>
+<td>推荐、风控、游戏运营长期数据积累</td>
+<td>基础模型排行榜领先可短暂变化</td>
+<td>成功任务总成本持续落后</td>
+</tr>
+<tr>
+<td>监管与制度</td>
+<td>双刃剑</td>
+<td>合规能力与牌照提高进入门槛</td>
+<td>政策可限制收费或开放互联</td>
+<td>关键收费权被重设</td>
+</tr>
+</tbody>
+</table></div>
+<p>过去五年，广告和金融企业服务的效率改善增强了商业化能力，短视频竞争则削弱了腾讯对注意力的控制。这不是一条统一变宽的护城河，而是社交基础稳固、娱乐竞争持续、变现效率改善、资本强度上升的组合。</p>
+<p><strong>三年看现金流重建。</strong> 微信关系网被完整替代的难度高，但混元、元宝、办公和编程Agent必须解释资本使用。即便没有独立AI收入，若能可验证地改善广告、游戏生产和云交付，也可能产生回报；不能把内部效率、对外收入与减少人员费用加三次。</p>
+<p><strong>五年看交易入口和组织节制。</strong> 用户可能越来越多通过Agent找商品、预订和办事。腾讯有机会成为身份、支付、商户和履约连接层，但也可能只保留后台支付，被上层助手拿走较高的收费。有没有权限、可靠执行与争议处理，比聊天模型是否聪明更重要。若微信把复杂服务变得简单且保留商户经济性，护城河会拓宽；若拥挤的商业化损害通讯体验，则自损基础。</p>
+<p><strong>十年看利润权，而非产品名。</strong> 微信仍在、游戏仍有用户，并不保证每股可分配现金增长。技术让内容便宜后，稀缺性可能转向真实人际关系、原创IP、可信交易和确定性履约。腾讯占据部分稀缺环节，但须与商家、内容创作者、开发商和监管分享收益。十年投资逻辑应写成“维护这些节点并以合理资本投入收费”，而不是“十年后大家还用微信”。</p>
+<p>竞争对手拿出大额预算可以做一个通讯界面、支付产品或模型，却很难买来全部用户协调迁移。更现实的攻击来自逐层切走高价值行为。因此我们最应监测的不是微信是否被卸载，而是广告转化预算、商户交易以及年轻用户关系建立是否仍在生态内发生。</p>
+<blockquote>
+<p>巴菲特式追问：十年后护城河还在吗？关系网络大概率仍有价值，但若获得利润需要不断追加高额资本，股东拥有的护城河价值会低于产品层面的护城河。</p>
+</blockquote>
+<hr />
+<h2 id="_6">第四步：逆向思考与风险清单</h2>
+<p>最强空方观点是：腾讯以十几倍会计利润交易并不必然便宜。利润表尚未充分反映新增算力未来的折旧、更新和推理成本；社交网络只能保住入口，无法保证AI经济利益归属。若广告增长产生的现金持续投入竞争性AI产品，所谓被低估的投资组合又无法释放，普通股东可能只得到较低股息和有限回购。市场给低倍数，可能是在提前识别资本回报下滑。</p>
+<p>这套论证比“微信快被替代”更有杀伤力，因为不需要用户大规模离开。我们对空方的回应应当是持续现金流和资本分配证据，而不是产品流量截图。基准估值已经没有把当前AI亏损全部加回，但如果投入超过假设或长期盈利不达标，应主动下调现金流，不能只调低折现率挽救目标价。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>失败路径</th>
+<th>主观可能性</th>
+<th>影响</th>
+<th>跟踪信号与处置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI投资长期低回报</td>
+<td>中高</td>
+<td>高</td>
+<td>净资本开支、预付与研发持续增长，付费披露及现金回收无改善；下调正常现金流</td>
+</tr>
+<tr>
+<td>商务和广告入口被Agent截留</td>
+<td>中</td>
+<td>高</td>
+<td>微信月活稳定但交易转化和广告预算份额下降；重估网络效应盈利边界</td>
+</tr>
+<tr>
+<td>游戏组合老化</td>
+<td>中</td>
+<td>中高</td>
+<td>多款核心游戏流水、留存和新品成功率同步走弱；不再给单季修复溢价</td>
+</tr>
+<tr>
+<td>数据、支付、游戏监管改变收费权</td>
+<td>中</td>
+<td>高</td>
+<td>正式规则改变收入机制；按政策现金流情景处理</td>
+</tr>
+<tr>
+<td>国际限制影响算力或海外游戏</td>
+<td>中</td>
+<td>高</td>
+<td>具体供应或经营限制落实；不能把名单等同已全面禁售</td>
+</tr>
+<tr>
+<td>投资组合估值下跌且难变现</td>
+<td>中</td>
+<td>中高</td>
+<td>账面重估与现金回款背离；下调非经营资产价值</td>
+</tr>
+<tr>
+<td>资本分配恶化</td>
+<td>中</td>
+<td>高</td>
+<td>低回报并购、持续高价回购、稀释抵销回购；重新评估管理层</td>
+</tr>
+<tr>
+<td>VIE及控股结构法律尾部事件</td>
+<td>低至中</td>
+<td>极高</td>
+<td>合同执行或政策基础改变；不宜用一个小折价声称风险消失</td>
+</tr>
+</tbody>
+</table></div>
+<p>以上概率是定性研究判断，没有伪造统计频率。历史类比也只用于提出问题：大型平台可能保住用户却失去新增利润，成熟软件公司也可能通过产品整合保持收费权。不能因为腾讯更像其中某个案例，就把那家公司的股价结果搬过来。</p>
+<p>最容易犯的分析错误有两个。其一，把所有算力预付当成暂时扰动，却没有把未来消耗和补充放回预测；其二，在主业利润中保留联营收益，同时又把全部被投公司价值加到估值。后一种错误会让复杂公司看起来永远便宜。本报告主模型从经营利润构建FCFF，独立处理非经营投资，避免此项重计。</p>
+<blockquote>
+<p>芒格式追问：聪明人为什么不买？因为目前可以看清收入基础，却未必看清AI资本周期结束后的正常现金流；不买不等于不懂微信。</p>
+</blockquote>
+<hr />
+<h2 id="_7">第五步：管理层评估</h2>
+<p>管理层的长期优势是知道哪些关系与生态需要克制商业化，以及通过多团队维持游戏组合。但对新技术的投入节奏、资源重复、跨团队协调和人才竞争，同样可能出错。评价应该落在资本收益与用户体验，而不是仅凭低调、工程师文化或创始人声誉。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>决策或制度</th>
+<th>可核验表现</th>
+<th>本报告判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>聚焦高质量收入并改善效率</td>
+<td>五年毛利率和经营利润率改善</td>
+<td>已有财务证据，但未来仍需新增资本</td>
+</tr>
+<tr>
+<td>通过投资扩展内容及生态</td>
+<td>大规模上市和未上市投资组合</td>
+<td>提供选择权，也增加利润会计与治理复杂度</td>
+</tr>
+<tr>
+<td>股东回报</td>
+<td>2025回购约800亿港元；2026上半年244亿港元</td>
+<td>有实际返还记录，但投入上升使回报速度承压</td>
+</tr>
+<tr>
+<td>AI能力与基础设施扩张</td>
+<td>新AI产品经营投入及资本开支明显上升</td>
+<td>战略必要性合理，经济回报尚未获证实</td>
+</tr>
+<tr>
+<td>保留社交基础免费使用</td>
+<td>用户与商户生态共同构成变现基础</td>
+<td>克制有价值，但不能无限增加广告与商业摩擦</td>
+</tr>
+</tbody>
+</table></div>
+<p>回购来源为公司<a href="https://www.prnewswire.com/apac/news-releases/tencent-announces-2025-annual-and-fourth-quarter-results-302717280.html">2025全年公告</a>与<a href="https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf">2026中报第115页</a>。回购是否创造价值取决于支付价格低于价值，以及注销后每股权益增长；不能只看名义金额。2026年上半年回购价格跨度大，也表明它并不是精准择时机制。</p>
+<h3 id="_8">经济权益、投票权与控制</h3>
+<p>截至2026年6月末，马化腾在权益披露中持有8.048597亿股、约8.85%；其中披露包括通过基金会持有的股份。Prosus相关主体约22.60%。腾讯普通股不存在本报告所识别的创始人A/B股超级投票安排，投票原则与普通股股份权利相连；但创始人影响力、管理职位、董事会结构和公众持股分散会影响实际控制，不能用8.85%机械推导“无控制力”。董事权益披露不是私人可自由支配经济财富的精确计算，慈善相关权益也不能简单归入个人现金资产。<a href="https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf">2026中报第91—92、114页</a></p>
+<p>股份数和持股比例有日期。10月公告已发行股数并不等于6月持股表分母；本次没有把6月持股比例偷换为10月实时比例。StockAnalysis“内部人持股7.89%”与法定权益披露8.85%不是同一定义，缺少同口径第三方完全独立确认，因此管理层持股披露列为原始文件已核验、独立双源不足。</p>
+<p>VIE境内公司名义股权同上市公司经济权益是不同层级。马化腾在腾讯计算机的名义持股不能被当作其持有上市腾讯一半收益权；同样，上市公司通过合同取得经济利益，不等于对全部境内资产享有直接股权。这个结构应纳入尾部风险识别，但不能在每个现金流、折现率、净现金和买入线中重复打折。</p>
+<p>若CEO退休，腾讯的用户网络、支付和游戏组织大概率不会立即失效；更难替代的是跨业务资源分配及对用户体验的克制。需要观察继任者是否清楚停止低回报项目，而不是仅关注是否继续招聘优秀工程师。管理层与股东利益一致性总体较强，但这种判断每年应由资本回报、稀释、关联交易与信息披露重新验证。</p>
+<blockquote>
+<p>段永平式追问：如果CEO明天退休，愿意继续持有吗？社交和游戏系统支持继续研究，但AI投资及资本分配决策需要重新核验，不能把创始人声誉当永久合同。</p>
+</blockquote>
+<hr />
+<h2 id="_9">第六步：行业与文明趋势</h2>
+<p>AI会降低生成、匹配和执行部分任务的成本，但不会自动消除信任、权限、版权、支付、履约和责任。腾讯的战略机会在于把这些已有条件与模型组合起来，而不只是在模型榜单上争第一。最具经济意义的产品，不一定是最多下载的聊天软件，而可能是能重复完成商家运营、客服、广告投放和交易处理的可靠服务。</p>
+<p>这一链条至少有四道门槛：模型完成局部任务，产品在真实环境中可靠工作，客户愿意持续付费，收费足以覆盖推理与交付并产生现金。腾讯披露的调用量、用户增长和行业排名主要对应前两道中的部分，不能直接证明最后两道。即便客户省钱，也可能是竞争让平台让利，或者硬件与云供应商先拿走利润。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>价值环节</th>
+<th>腾讯的现有位置</th>
+<th>可能的利益获得者</th>
+<th>投资人应看的证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型及算力</td>
+<td>采购与自研者</td>
+<td>芯片、设备、电力、模型和云供应商</td>
+<td>成功任务总成本、利用率与资产寿命</td>
+</tr>
+<tr>
+<td>任务入口</td>
+<td>微信、游戏、办公工具</td>
+<td>用户、上层Agent、平台</td>
+<td>自然留存、付费转化及交易完成率</td>
+</tr>
+<tr>
+<td>内容与商品供给</td>
+<td>工作室、创作者、商家生态</td>
+<td>IP所有者、头部供给者、消费者</td>
+<td>收益分配与供给持续性</td>
+</tr>
+<tr>
+<td>交易执行与信任</td>
+<td>身份、支付、商户服务</td>
+<td>平台、支付机构、履约伙伴</td>
+<td>风险损失、退款成本与复购</td>
+</tr>
+<tr>
+<td>股东兑现</td>
+<td>经营现金流和资本配置</td>
+<td>员工、债权人、少数股东、普通股东</td>
+<td>SBC后每股现金、分红与净注销</td>
+</tr>
+</tbody>
+</table></div>
+<p>TAM不宜把广告、游戏、支付流水、云收入和AI潜在产值简单相加。广告上限来自商户能承受的获客预算，游戏来自消费者时间和付费意愿，云来自客户算力与软件预算；同一笔商家支出在多个环节出现不代表多个独立市场。中国用户数量已进入成熟阶段，下一阶段主要靠单位用户价值、海外内容和企业服务，需配合更好的资本效率。</p>
+<p>供应端，关键算力可能受少数厂商与政策约束；需求端，广告及支付客户广泛，但行业景气和平台规则会造成共同波动。分散客户不等于宏观风险分散。公司没有为每个新AI产品披露足够的单独收入、毛利和付费留存，本报告不制造产品级DCF，也不假设所有AI收入都是集团增量。</p>
+<blockquote>
+<p>李录式追问：二十年后是长期基础设施还是短暂明星？腾讯已拥有部分社会连接基础，但股东只有在收费合理、再投资有效、规则允许的条件下分享文明进步。</p>
+</blockquote>
+<hr />
+<h2 id="_10">第七步：估值与安全边际</h2>
+<h3 id="_11">市场当前付了多少钱</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">本报告计算</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>港元市值</td>
+<td style="text-align: right;">37989.07亿港元</td>
+<td>417.80港元乘10月15日已发行股份</td>
+</tr>
+<tr>
+<td>人民币市值</td>
+<td style="text-align: right;">32385.68亿元</td>
+<td>港元兑人民币0.8525</td>
+</tr>
+<tr>
+<td>2025归母净利PE</td>
+<td style="text-align: right;">14.40倍</td>
+<td>保留投资会计影响</td>
+</tr>
+<tr>
+<td>TTM归母净利PE</td>
+<td style="text-align: right;">13.75倍</td>
+<td>TTM利润2355.08亿元</td>
+</tr>
+<tr>
+<td>TTM市销率</td>
+<td style="text-align: right;">4.11倍</td>
+<td>TTM收入7884.83亿元</td>
+</tr>
+<tr>
+<td>EV／TTM收入，未剥离投资</td>
+<td style="text-align: right;">4.03倍</td>
+<td>市值减公司净现金；租赁按经营处理</td>
+</tr>
+<tr>
+<td>2025公司FCF收益率</td>
+<td style="text-align: right;">5.64%</td>
+<td>不是2026常态现金流保证</td>
+</tr>
+<tr>
+<td>已公布每股股息收益率</td>
+<td style="text-align: right;">1.27%</td>
+<td>5.30港元除现价，不承诺未来不变</td>
+</tr>
+</tbody>
+</table></div>
+<p>StockAnalysis显示9.00十亿股、3.76万亿港元市值，较公告已发行股数相差约1.03%。可能涉及流通/在外股数、回购待注销、奖励股份及数据更新时间，当前没有逐项桥接，因此这是未完全消除的口径差异；按较大的已发行股数计算较审慎，也能完整复算。第三方PE14.22倍亦不直接替代本文人民币盈利、港元价格和统一汇率下的结果。</p>
+<p>历史比较只作估值解释，不提供未经统一复权核验的历史分位。腾讯过去经历过投资收益显著影响PE以及主业成本结构改变，直接说“低于历史平均所以便宜”没有解决现金流问题。同业也一样：Meta更集中于广告、网易更集中于游戏、阿里含电商和云。由于本次没有统一各公司当日价格、企业价值和SBC后现金流，<strong>不提供伪精确的同业倍数排名</strong>；比较重点是现金资本强度和收费权。PEG高度依赖所选增长口径，本报告不使用单一PEG支撑买入。</p>
+<h3 id="fcff">主模型：经营FCFF与非经营资产分开</h3>
+<p>采用人民币名义FCFF与名义WACC配对，经营业务估值后加非经营净资产。主模型统一WACC为9%，它是要求回报参数，不是“事实上的风险率”，也不是用无风险国债收益率直接折现有经营风险的现金流。若使用确定性等价现金流，才可以配风险较低的折现率；本模型没有完成那种概率校准。8%—10%的敏感度单列，不把不同折现率结果伪装成精确内在价值。</p>
+<p>基准正常化FCFF起点1600亿元，是<strong>假设桥</strong>：非IFRS经营利润3050亿元，减SBC经济成本250亿元；按20%经营税负后2240亿元，加非租赁折旧摊销450亿元（不含非IFRS口径已经加回的并购无形资产摊销），减资本支出940亿元、营运资金100亿元、少数股东现金归属近似调整50亿元，得到1600亿元。所有项目均是对未来正常经营的假设，不是2026预测财报；归属调整是简化，未逐家评估少数股权价值。租赁已经按经营费用计入，资本开支保留必要AI投入。经营利润不含联营利润和库务利息，因此可另计投资与净现金。</p>
+<p>基准非经营资产7093.41亿元，由净现金581.91亿元、上市投资4872亿元、未上市投资假设可实现价值1939.50亿元及税费成本减项300亿元组成。未上市价值取账面一半是缺乏市场交易下的条件估值，<strong>不是已验证可回收值</strong>。上市投资停留在6月末披露快照，未逐项滚动到10月；因此总资产桥有时点误差。悲观和乐观分别假设4500亿元、9000亿元。离散法律风险不在此资产桥重复扣减，整体报告也不声称这些情景覆盖所有尾部结果。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设及输出</th>
+<th style="text-align: right;">悲观</th>
+<th style="text-align: right;">基准</th>
+<th style="text-align: right;">乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>正常化起始FCFF，十亿元</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr>
+<td>前五年增长</td>
+<td style="text-align: right;">+1%</td>
+<td style="text-align: right;">+8%</td>
+<td style="text-align: right;">+12%</td>
+</tr>
+<tr>
+<td>后五年增长</td>
+<td style="text-align: right;">+1%</td>
+<td style="text-align: right;">+4%</td>
+<td style="text-align: right;">+6%</td>
+</tr>
+<tr>
+<td>永续增长</td>
+<td style="text-align: right;">+1%</td>
+<td style="text-align: right;">+2.5%</td>
+<td style="text-align: right;">+3%</td>
+</tr>
+<tr>
+<td>非经营净资产，十亿元</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">709.341</td>
+<td style="text-align: right;">900</td>
+</tr>
+<tr>
+<td>三年后FCFF，十亿元</td>
+<td style="text-align: right;">123.64</td>
+<td style="text-align: right;">201.55</td>
+<td style="text-align: right;">280.99</td>
+</tr>
+<tr>
+<td>五年后FCFF，十亿元</td>
+<td style="text-align: right;">126.12</td>
+<td style="text-align: right;">235.09</td>
+<td style="text-align: right;">352.47</td>
+</tr>
+<tr>
+<td>十年后FCFF，十亿元</td>
+<td style="text-align: right;">132.55</td>
+<td style="text-align: right;">286.03</td>
+<td style="text-align: right;">471.68</td>
+</tr>
+<tr>
+<td>条件价值，每股港元</td>
+<td style="text-align: right;"><strong>253.50</strong></td>
+<td style="text-align: right;"><strong>523.50</strong></td>
+<td style="text-align: right;"><strong>833.42</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>这张表预测的是可归属经营现金流，不是十年后会计净利润。基准十年后现金流2860亿元要求现有业务稳步扩展且AI投资不过度吞噬现金；乐观接近4717亿元要求新业务创造持续利润，不能视为“微信还在”的自然结果。终值占基准经营价值约56.90%，因此长期假设对结论影响很大。</p>
+<p>基准现金流假设不变，WACC为8%、9%、10%时，每股分别605.53、523.50、463.48港元。<strong>能复算到两位小数，不代表价值准确到两位小数。</strong> 正常化起点和投资价值比计算精度重要得多。</p>
+<h3 id="_12">反向估值与三年收益检验</h3>
+<p>保持基准起始现金流、后五年增速、永续增速与非经营资产不变，417.80港元对应前五年现金流增长约 <strong>+1.46%</strong>。这不是“市场只相信腾讯增长一点点”的唯一解释：相同价格也能由较低现金流起点、更弱投资回收或更高要求回报生成。反向DCF只能揭示组合条件，不能读取市场的单一思想。</p>
+<p>另用TTM归母每股盈利进行三年PE检验，增长分别+12%、+7%、0%，退出倍数20、16、10倍；所得期末价约853.70、595.51、303.82港元，未含期间股息。这是估值交叉检查，不与主DCF结果平均，更不加上投资组合第二遍。若假设未来三年每年仍分红5.30港元，则仅额外计15.90港元现金；分红实际取决于董事会和经营现金，不能当保证。此法的缺点是起点IFRS利润仍有投资会计影响，故权重低于主模型。</p>
+<h3 id="_13">从估值到行动</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>价格区间，港元</th>
+<th>行动含义</th>
+<th>必须同时满足的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>低于330</td>
+<td>值得优先深入核验并考虑分批配置</td>
+<td>社交与现金创造能力未受结构性破坏</td>
+</tr>
+<tr>
+<td>330—390</td>
+<td>较有吸引力的研究买入区</td>
+<td>能接受AI投入周期及资产桥不确定性</td>
+</tr>
+<tr>
+<td>390—450</td>
+<td>现价所在区域，适合小规模分批而非激进押注</td>
+<td>基准现金流1600亿元有望维持，未来投入可解释</td>
+</tr>
+<tr>
+<td>450—550</td>
+<td>接近基准价值，持仓者重在监测，空仓者提高要求</td>
+<td>需要更多真实回款与资本回报证据</td>
+</tr>
+<tr>
+<td>高于550</td>
+<td>当前模型安全边际收窄</td>
+<td>除非现金流与投入回报上修，否则不追价</td>
+</tr>
+</tbody>
+</table></div>
+<p>价格带不是交易指令，也不是短期走势预测。330、390等是围绕模型区间设置的研究门槛，安全边际是投资行动要求，不再拿它当第二次企业价值折价。若现金流起点被证明只有1200亿元，应该改模型，再重画价格线，而不是认为任何跌价都自动产生机会。</p>
+<blockquote>
+<p>巴菲特与段永平式追问：股市关闭五年，愿意按417.80港元持有吗？对能承受资本周期且资金足够长期的人，可以有条件回答“愿意分批”；对需要短期现金或不能接受治理和技术不确定性的人，低PE并不能解决适配问题。</p>
+</blockquote>
+<hr />
+<h2 id="_14">第八步：最终决策与行动清单</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>判断</th>
+<th>信心</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生意质量</td>
+<td>社交、游戏、广告、支付形成良好的复购现金基础</td>
+<td>高</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>关系与交易网络强，AI利润归属仍待验证</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>管理层</td>
+<td>有资本配置和股东回报记录，新AI投入需要持续问责</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>最大风险</td>
+<td>轻资产现金机器转成持续高投入竞争，现金回报低于会计利润</td>
+<td>中</td>
+</tr>
+<tr>
+<td>长期趋势</td>
+<td>AI能扩大服务能力，但必须通过收费、留存与资本效率兑现</td>
+<td>中</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>现价低于基准条件价值，但未便宜到可以忽略估计误差</td>
+<td>中</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>明确结论：417.80港元属于可以研究性分批买入、已有持仓继续持有观察的区间；不支持仅因PE低而重仓加杠杆。</strong> 这并非对账户仓位的判断，生活备用金、其他资产、期限、负债和期权义务均未知。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投资者或触发器</th>
+<th>具体做法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓者</td>
+<td>把390港元以下和现金流验证作为优先触发；现价仅在能解释1600亿元正常现金流时分批</td>
+</tr>
+<tr>
+<td>持仓者</td>
+<td>用每股现金、资本开支和回购净注销评价，不因单季投资公允价值亏损机械卖出</td>
+</tr>
+<tr>
+<td>加仓信号</td>
+<td>AI新增投入趋稳、付费及现金回收改善、主业毛利没有靠透支用户体验维持</td>
+</tr>
+<tr>
+<td>减仓或卖出信号</td>
+<td>正常化现金流持续下修、资本分配失去约束、收费权结构性受损，或价格显著超过更新价值</td>
+</tr>
+<tr>
+<td>下次财报最重要检查</td>
+<td>算力预付如何转化、现金资本开支与折旧缺口、AI产品可核验收入及留存、广告客户回报</td>
+</tr>
+</tbody>
+</table></div>
+<p>以下是对投资方法的<strong>模拟点评，不是任何人的真实言论、持仓建议或背书</strong>：</p>
+<blockquote>
+<p>巴菲特式：关系网络值得拥有，但我必须知道维护它未来需要多少钱。</p>
+<p>芒格式：不要让一项优秀业务替另一项未经验证的投入作无限担保。</p>
+<p>段永平式：看懂产品只是开始，还要看懂钱最后怎样回到股东。</p>
+<p>李录式：社会服务数字化与智能化会继续，投资回报属于能长期保留合理收费权的组织。</p>
+</blockquote>
+<h2 id="ai_2">AI分析置信度与投资确定性</h2>
+<p>充分证据支持腾讯拥有稳定用户基础、多元收入及长期盈利能力改善；证据不足之处是AI独立业务经济性、投资组合10月实时可变现价值、部分财务数据的完整独立双源以及未来资本强度。报告没有访问内部经营数据、没有访谈客户、没有独立测量模型表现。未来现金流和价格带都属于条件推理，不是经审计事实。</p>
+<p>最值得补充的一手研究包括：商户使用AI广告前后的完整获客回报及退款成本，企业客户真实付费留存，算力资产寿命和利用率，以及微信中AI代理完成任务的权限与失败责任机制。只补充更多市场评论，不会解决这些缺口。</p>
+<h2 id="_15">数据来源与审计记录</h2>
+<p>本次重新打开公司2025年报、2026中报、三季与年度公告、10月15日股本公告及独立财务和行情页面。原始财报优先于数据平台；旧报告只用于定位资料，未作为本次当前证据。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>证据</th>
+<th>用途与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040901231.pdf">2025年报</a></td>
+<td>五年利润和资产摘要；公司原始口径</td>
+</tr>
+<tr>
+<td><a href="https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf">2026中报</a></td>
+<td>最新经营、资金、现金流、SBC及权益披露</td>
+</tr>
+<tr>
+<td><a href="https://www.tencent.com/wp-content/uploads/2026/10/e_Next-Day-Disclosure-Return_20261015.pdf">10月15日股份披露</a></td>
+<td>股数快照；第三方在外股口径未完全勾稽</td>
+</tr>
+<tr>
+<td><a href="https://stockanalysis.com/quote/hkg/0700/financials/">StockAnalysis财务</a>及<a href="https://stockanalysis.com/quote/hkg/0700/statistics/">统计</a></td>
+<td>独立聚合交叉来源；净现金与经营利润定义有差异</td>
+</tr>
+<tr>
+<td><a href="https://www.exchangerates.org.uk/HKD-CNY-spot-exchange-rates-history-2026-03-01.html">汇率历史</a>与<a href="https://ca.investing.com/currencies/hkd-cny-historical-data">Investing汇率</a></td>
+<td>0.8525与0.8520，日内截止不同，差异0.059%</td>
+</tr>
+</tbody>
+</table></div>
+<p>复算材料在<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/research-20261020">research-20261020</a>：<code>model.py</code>、<code>inputs.json</code>、<code>outputs.json</code>、<code>financial-rigor.txt</code>及抽样审计。所有估值计算采用Decimal，工具原始输出保留，现金和股本差异保留警告而不修改成PASS。工具默认多源误差阈值比本项目要求宽，人工仍按1%检查；公司IR与HKEX视为同源。</p>
+<p>审计结论为<strong>完成事实抽检与模型复算，带明确范围限制</strong>：价格、年度收入利润等已取得独立两源；持股、若干现金分类和历史现金流序列未完成同口径独立双源。日期、情景增长率、价格行动线不属于外部事实，不作为抽检PASS。报告可作为透明披露缺口的研究成果阅读，不能称为全部数字均获独立双源验证。</p></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E8%85%BE%E8%AE%AF%E6%8E%A7%E8%82%A1%EF%BC%880700.HK%EF%BC%89%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A&amp;ticker=%E8%85%BE%E8%AE%AF&amp;source=reports%2F%E8%85%BE%E8%AE%AF%2F%E8%85%BE%E8%AE%AF%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261020.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2Fa53f610ec809.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>底稿与核验（GitHub）</h2><div class="meta">这些文件不在阅读站上展示，点开为 GitHub 原文。</div><ul class="list work"><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF/research-20261020/audit-scope.md">Audit scope</a><div class="meta">审计核验底稿 · research-20261020/audit-scope.md</div></li></ul><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/01c9b8207aea.html">腾讯（0700.HK）独立投资研究报告 /investment-research — 2026-10-20</a><div class="meta">2026-10-20 · 研究</div></li><li><a href="../r/2652e82726f6.html">腾讯控股（0700.HK）投资研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/92482cf26772.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-10-02 · 研究</div></li><li><a href="../r/5e62bf980379.html">腾讯：AI如何影响未来三年利润，2036年能赚多少钱？</a><div class="meta">2026-09-24 · 研究</div></li><li><a href="../r/f448e73f3a42.html">腾讯（0700.HK）研究报告</a><div class="meta">2026-09-06 · 研究</div></li><li><a href="../r/2aa1ed0db663.html">08｜腾讯值多少，取决于你愿意为哪一条现金路径付钱</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/0614b9b3b761.html">07｜买腾讯，也是在判断谁有权决定下一笔钱的去向</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/44a599b79405.html">06｜腾讯的利润很好看，股东现金要再走几步</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/32f7482c5016.html">05｜AI 同时在增加腾讯的收入，也在消耗腾讯的现金</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/f0a5b185b9b5.html">04｜投资组合很有价值，为什么不能按账面金额直接减掉市值</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/bd9a060c8627.html">03｜游戏与广告：优良经济性，必须靠每天的经营维持</a><div class="meta">2026-09-06 · 深度系列</div></li><li><a href="../r/6832de236773.html">02｜微信的护城河，保护了什么，又漏掉了什么</a><div class="meta">2026-09-06 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#ai">AI研究偏见自觉</a></li>
+<li><a href="#_1">第一步：核心数据总览</a><ul>
+<li><a href="#_2">收入从哪里来</a></li>
+<li><a href="#_3">五年财务：经营改善真实，净利润历史波动不能直接外推</a></li>
+<li><a href="#ai_1">现金与AI：最容易被粉饰的地方</a></li>
+</ul>
+</li>
+<li><a href="#_4">第二步：生意本质分析</a></li>
+<li><a href="#_5">第三步：护城河评估</a></li>
+<li><a href="#_6">第四步：逆向思考与风险清单</a></li>
+<li><a href="#_7">第五步：管理层评估</a><ul>
+<li><a href="#_8">经济权益、投票权与控制</a></li>
+</ul>
+</li>
+<li><a href="#_9">第六步：行业与文明趋势</a></li>
+<li><a href="#_10">第七步：估值与安全边际</a><ul>
+<li><a href="#_11">市场当前付了多少钱</a></li>
+<li><a href="#fcff">主模型：经营FCFF与非经营资产分开</a></li>
+<li><a href="#_12">反向估值与三年收益检验</a></li>
+<li><a href="#_13">从估值到行动</a></li>
+</ul>
+</li>
+<li><a href="#_14">第八步：最终决策与行动清单</a></li>
+<li><a href="#ai_2">AI分析置信度与投资确定性</a></li>
+<li><a href="#_15">数据来源与审计记录</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-20 15:56 UTC</footer></body></html>
