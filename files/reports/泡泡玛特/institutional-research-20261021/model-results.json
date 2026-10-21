@@ -1,0 +1,116 @@
+{
+  "cutoff": "2026-10-21 Asia/Shanghai",
+  "unit": "CNY 100 million",
+  "facts": {
+    "fy2025_revenue": "371.20052",
+    "fy2025_attributable_profit": "127.75689",
+    "h1_2025_revenue": "138.76276",
+    "h1_2026_revenue": "171.72921",
+    "h1_2025_attributable_profit": "45.74368",
+    "h1_2026_attributable_profit": "50.38384",
+    "h1_2026_group_profit": "51.00310",
+    "h1_2026_adjusted_profit": "51.55777",
+    "h1_2026_china_revenue": "122.00509",
+    "h1_2025_china_revenue": "82.82812",
+    "h1_2026_overseas_revenue": "49.72412",
+    "h1_2025_overseas_revenue": "55.93464",
+    "h1_2026_overseas_segment_profit": "15.08492",
+    "h1_2025_overseas_segment_profit": "24.64510",
+    "h1_2026_gross_profit": "119.65740",
+    "h1_2026_cfo": "36.37324",
+    "h1_2026_ppe_capex": "6.73560",
+    "h1_2026_intangible_capex": "0.50579",
+    "h1_2026_lease_payments": "5.02889",
+    "h1_2026_star_revenue": "26.49969",
+    "h1_2025_star_revenue": "3.89363"
+  },
+  "derived": {
+    "h1_revenue_growth_pct": "23.7574187771993004463157117947207160",
+    "h1_attributable_profit_growth_pct": "10.1438275189053438638955151837368570",
+    "h1_china_growth_pct": "47.2991177392412142156552629710779380",
+    "h1_overseas_growth_pct": "-11.1031732750939310595366306102980193",
+    "h1_net_margin_pct": "29.3391205840870053498761218315742558",
+    "h1_gross_margin_pct": "69.6779540300686179130504356247839258",
+    "h1_overseas_segment_margin_pct": "30.3372286930366992920136143183629997",
+    "h1_2025_overseas_segment_margin_pct": "44.0605320781540741122138267091734210",
+    "h1_overseas_segment_profit_growth_pct": "-38.7914027534885230735521462684265838",
+    "h1_cfo_to_group_profit_pct": "71.3157435528428664140022861355486235",
+    "h1_post_capex_lease_cash": "24.10296",
+    "star_share_of_group_increment_pct": "68.5729279312755847232565229195136267",
+    "ex_star_revenue_growth_pct": "7.68180976625266285917318514622286100",
+    "fy2025_h2_revenue": "232.43776"
+  },
+  "author_2026_scenarios": {
+    "bear": {
+      "h2_revenue_growth_assumption_pct": "-35.00",
+      "h2_attributable_margin_assumption_pct": "22.00",
+      "h2_revenue": "151.0845440",
+      "fy2026_revenue": "322.8137540",
+      "fy2026_attributable_profit": "83.622439680",
+      "fy2026_revenue_growth_pct": "-13.0352096489520003905166943192859751",
+      "fy2026_profit_growth_pct": "-34.5456517609343809167552528869480151"
+    },
+    "base": {
+      "h2_revenue_growth_assumption_pct": "-25.00",
+      "h2_attributable_margin_assumption_pct": "25.00",
+      "h2_revenue": "174.3283200",
+      "fy2026_revenue": "346.0575300",
+      "fy2026_attributable_profit": "93.965920000",
+      "fy2026_revenue_growth_pct": "-6.77342531739987864241138455301732870",
+      "fy2026_profit_growth_pct": "-26.4494306334476363662265103666815935"
+    },
+    "bull": {
+      "h2_revenue_growth_assumption_pct": "-15.00",
+      "h2_attributable_margin_assumption_pct": "28.00",
+      "h2_revenue": "197.5720960",
+      "fy2026_revenue": "369.3013060",
+      "fy2026_attributable_profit": "105.704026880",
+      "fy2026_revenue_growth_pct": "-0.511640985847756894306074786748682400",
+      "fy2026_profit_growth_pct": "-17.2615841854008813145028812144691374"
+    }
+  },
+  "author_2036_scenarios": {
+    "bear": {
+      "fy2036_revenue_assumption": "350",
+      "fy2036_attributable_profit_assumption": "70",
+      "net_margin_pct": "20.0",
+      "revenue_cagr_from_2026_base_pct": "0.11334540311467613234428340597641100",
+      "profit_cagr_from_2026_base_pct": "-2.90144497690467492936583512016318380",
+      "profit_cagr_from_actual_2025_pct": "-5.32251763062529930844460958946501370"
+    },
+    "base": {
+      "fy2036_revenue_assumption": "650",
+      "fy2036_attributable_profit_assumption": "170",
+      "net_margin_pct": "26.1538461538461538461538461538461538",
+      "revenue_cagr_from_2026_base_pct": "6.50659615783053320918700652469624600",
+      "profit_cagr_from_2026_base_pct": "6.10793315369299672016459038519980500",
+      "profit_cagr_from_actual_2025_pct": "2.63100911529591634157334645840860600"
+    },
+    "bull": {
+      "fy2036_revenue_assumption": "1000",
+      "fy2036_attributable_profit_assumption": "320",
+      "net_margin_pct": "32.00",
+      "revenue_cagr_from_2026_base_pct": "11.1949770736249096789745302886493140",
+      "profit_cagr_from_2026_base_pct": "13.0363071404166607557689697174850560",
+      "profit_cagr_from_actual_2025_pct": "8.70547609975653862602052463759601400"
+    },
+    "strong_execution_crosscheck": {
+      "fy2036_revenue_assumption": "900",
+      "fy2036_attributable_profit_assumption": "225",
+      "net_margin_pct": "25.00",
+      "revenue_cagr_from_2026_base_pct": "10.0295712301503366584049443817423600",
+      "profit_cagr_from_2026_base_pct": "9.12423566004842687217972812525901100",
+      "profit_cagr_from_actual_2025_pct": "5.27985781115894082395103966083935800"
+    }
+  },
+  "geography_crosscheck": {
+    "note": "Author assumptions; China includes Hong Kong, Macau and Taiwan. No separate addition of category/IP revenue.",
+    "2026_base_china_revenue_assumption": "240",
+    "2026_base_overseas_revenue_assumption": "106.0575300",
+    "2036_base_china_revenue_assumption": "350",
+    "2036_base_overseas_revenue_assumption": "300",
+    "china_cagr_pct": "3.84502142365560126888451551407984300",
+    "overseas_cagr_pct": "10.9578350998451031148217291871764690"
+  },
+  "forecast_warning": "All future operating scenarios are author assumptions, not issuer guidance, not broker consensus, and not probability intervals."
+}
