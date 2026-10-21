@@ -1,0 +1,218 @@
+{
+  "shares": "2061229316.0000",
+  "mcap_hkd_bn": "940.7451",
+  "mcap_cny_bn": "802.0792",
+  "mcap_cny_via_ads_bn": "778.5290",
+  "ads_implied_hkd_per_share": "44.2999",
+  "ttm_revenue_bn": "1047.8990",
+  "ttm_ni_attr_bn": "-46.1217",
+  "ttm_cfo_bn": "-99.5020",
+  "ttm_capex_bn": "51.8349",
+  "ttm_interest_inv_income_bn": "17.5522",
+  "ttm_fcf_bn": "-151.3369",
+  "ps_ttm": "0.7654",
+  "pb": "1.2259",
+  "pe_fy2025": "71.3316",
+  "fy_gross_margin_pct": {
+    "2021": "21.3310",
+    "2022": "19.4106",
+    "2023": "22.2014",
+    "2024": "20.5290",
+    "2025": "18.6845"
+  },
+  "fy_op_margin_pct": {
+    "2021": "-3.7665",
+    "2022": "-8.0705",
+    "2023": "5.9805",
+    "2024": "4.8589",
+    "2025": "-0.4640"
+  },
+  "fy_fcf_bn": {
+    "2021": "48.9581",
+    "2022": "22.5237",
+    "2023": "441.8633",
+    "2024": "82.0314",
+    "2025": "-128.1691"
+  },
+  "rnd_ratio_2025_pct": "10.0745",
+  "mid_cycle_ni_2023_2025_bn": "69.5364",
+  "q3_2026_deliveries": "99964.0000",
+  "gross_cash_bn": "856.0684",
+  "borrowings_bn": "71.5020",
+  "net_fin_cash_bn": "784.5663",
+  "buyback_post_june_bn": "15.5622",
+  "net_cash_after_buyback_bn": "769.0041",
+  "operating_float_bn": "302.1579",
+  "net_cash_after_float_bn": "482.4085",
+  "deployable_cash_bn": "569.0041",
+  "net_cash_per_share_hkd": "43.7580",
+  "implied_operating_value_bn": "233.0751",
+  "implied_perpetual_nopat_r8_bn": "18.6460",
+  "implied_perpetual_nopat_r10_bn": "23.3075",
+  "implied_ev_bn": "17.5129",
+  "three_year": {
+    "bear": {
+      "operating_value_bn": "95.0000",
+      "cash_2028_after_buffer_bn": "319.0041",
+      "equity_bn": "414.0041",
+      "per_share_hkd_2028": "23.5577",
+      "per_ads_usd_2028": "6.0038",
+      "per_share_hkd_pv": "19.0874",
+      "per_ads_usd_pv": "4.8645",
+      "vs_price_pct": "-48.3836"
+    },
+    "base": {
+      "operating_value_bn": "450.0000",
+      "cash_2028_after_buffer_bn": "529.0041",
+      "equity_bn": "979.0041",
+      "per_share_hkd_2028": "55.7074",
+      "per_ads_usd_2028": "14.1972",
+      "per_share_hkd_pv": "45.1364",
+      "per_ads_usd_pv": "11.5032",
+      "vs_price_pct": "22.0583"
+    },
+    "bull": {
+      "operating_value_bn": "1425.0000",
+      "cash_2028_after_buffer_bn": "719.0041",
+      "equity_bn": "2144.0041",
+      "per_share_hkd_2028": "121.9984",
+      "per_ads_usd_2028": "31.0917",
+      "per_share_hkd_pv": "98.8481",
+      "per_ads_usd_pv": "25.1918",
+      "vs_price_pct": "167.3058"
+    }
+  },
+  "three_year_expected_hkd_2028": "57.7132",
+  "three_year_expected_hkd_pv": "46.7616",
+  "discount_factor_2_2y": "1.2342",
+  "buy_below_hkd": "36.1092",
+  "buy_below_ads_usd": "9.2025",
+  "ten_year": {
+    "r=0.06": {
+      "bear": {
+        "exit_pe": "16.6667",
+        "terminal_equity_bn": "700.0000",
+        "irr_pct": "-1.3520",
+        "r_minus_g_pct": "6.0000",
+        "equivalent_profit_for_tool_bn": "42.0000"
+      },
+      "base": {
+        "exit_pe": "19.4444",
+        "terminal_equity_bn": "2311.1111",
+        "irr_pct": "11.1630",
+        "r_minus_g_pct": "4.5000",
+        "equivalent_profit_for_tool_bn": "118.8571"
+      },
+      "bull": {
+        "exit_pe": "20.8333",
+        "terminal_equity_bn": "4833.3333",
+        "irr_pct": "19.6749",
+        "r_minus_g_pct": "4.0000",
+        "equivalent_profit_for_tool_bn": "232.0000"
+      },
+      "expected_irr_pct": "8.4851",
+      "covers_r": true
+    },
+    "r=0.07": {
+      "bear": {
+        "exit_pe": "14.2857",
+        "terminal_equity_bn": "664.2857",
+        "irr_pct": "-1.8673",
+        "r_minus_g_pct": "7.0000",
+        "equivalent_profit_for_tool_bn": "46.5000"
+      },
+      "base": {
+        "exit_pe": "15.9091",
+        "terminal_equity_bn": "2063.6364",
+        "irr_pct": "9.9111",
+        "r_minus_g_pct": "5.5000",
+        "equivalent_profit_for_tool_bn": "129.7143"
+      },
+      "bull": {
+        "exit_pe": "16.6667",
+        "terminal_equity_bn": "4166.6667",
+        "irr_pct": "17.9118",
+        "r_minus_g_pct": "5.0000",
+        "equivalent_profit_for_tool_bn": "250.0000"
+      },
+      "expected_irr_pct": "7.3888",
+      "covers_r": true
+    },
+    "r=0.08": {
+      "bear": {
+        "exit_pe": "12.5000",
+        "terminal_equity_bn": "637.5000",
+        "irr_pct": "-2.2704",
+        "r_minus_g_pct": "8.0000",
+        "equivalent_profit_for_tool_bn": "51.0000"
+      },
+      "base": {
+        "exit_pe": "13.4615",
+        "terminal_equity_bn": "1892.3077",
+        "irr_pct": "8.9626",
+        "r_minus_g_pct": "6.5000",
+        "equivalent_profit_for_tool_bn": "140.5714"
+      },
+      "bull": {
+        "exit_pe": "13.8889",
+        "terminal_equity_bn": "3722.2222",
+        "irr_pct": "16.5892",
+        "r_minus_g_pct": "6.0000",
+        "equivalent_profit_for_tool_bn": "268.0000"
+      },
+      "expected_irr_pct": "6.5564",
+      "covers_r": false
+    },
+    "r=0.09": {
+      "bear": {
+        "exit_pe": "11.1111",
+        "terminal_equity_bn": "616.6667",
+        "irr_pct": "-2.5945",
+        "r_minus_g_pct": "9.0000",
+        "equivalent_profit_for_tool_bn": "55.5000"
+      },
+      "base": {
+        "exit_pe": "11.6667",
+        "terminal_equity_bn": "1766.6667",
+        "irr_pct": "8.2166",
+        "r_minus_g_pct": "7.5000",
+        "equivalent_profit_for_tool_bn": "151.4286"
+      },
+      "bull": {
+        "exit_pe": "11.9048",
+        "terminal_equity_bn": "3404.7619",
+        "irr_pct": "15.5545",
+        "r_minus_g_pct": "7.0000",
+        "equivalent_profit_for_tool_bn": "286.0000"
+      },
+      "expected_irr_pct": "5.9003",
+      "covers_r": false
+    },
+    "r=0.10": {
+      "bear": {
+        "exit_pe": "10.0000",
+        "terminal_equity_bn": "600.0000",
+        "irr_pct": "-2.8611",
+        "r_minus_g_pct": "10.0000",
+        "equivalent_profit_for_tool_bn": "60.0000"
+      },
+      "base": {
+        "exit_pe": "10.2941",
+        "terminal_equity_bn": "1670.5882",
+        "irr_pct": "7.6131",
+        "r_minus_g_pct": "8.5000",
+        "equivalent_profit_for_tool_bn": "162.2857"
+      },
+      "bull": {
+        "exit_pe": "10.4167",
+        "terminal_equity_bn": "3166.6667",
+        "irr_pct": "14.7198",
+        "r_minus_g_pct": "8.0000",
+        "equivalent_profit_for_tool_bn": "304.0000"
+      },
+      "expected_irr_pct": "5.3685",
+      "covers_r": false
+    }
+  },
+  "ten_year_note": "直接法：净现金不随r重估；flip工具把全部终值当作PE×利润随r换算，会高估低r下的IRR，故以本表为准"
+}

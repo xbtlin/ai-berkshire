@@ -1,0 +1,39 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：汽车之家研究报告-20261021.md
+======================================================================
+
+  ✅ 通过 [ 2] ADS 收盘价（2026-10-20） · 口径与来源          报告:        20.16 
+                                                    https://query1.finance.yahoo.com/v8/finance/chart/ATHM 2026-10-20 close: 20.16 (偏差 0.00%)  |  https://stockanalysis.com/stocks/athm/history/: 20.15 (偏差 0.05%)
+  ✅ 通过 [ 7] 当前普通股（本文估计上限） · 数值                   报告: 424455140.00 
+                                                    derived: 20-F p136 460,683,644 shares (2026-03-31) minus 4x ADS bought back after 05-22 (https://www.sec.gov/Archives/edgar/data/1527636/000119312526242898/d142685dex995.htm; https://www.sec.gov/Archives/edgar/data/1527636/000119312526357963/d404747dex991.htm): 424455140.00 (偏差 0.00%)
+  ✅ 通过 [ 9] 市值 · 数值                              报告:        21.38 亿美元
+                                                    derived: 20.15 USD x 106,113,785 ADS: 21.38 (偏差 0.01%)
+  ✅ 通过 [23] 近 12 个月宣派股息 · 数值                     报告:         1.86 
+                                                    Q3-2025 release (https://www.sec.gov/Archives/edgar/data/1527636/000119312525267929/d95376dex991.htm) US$1.20/ADS + Q1-2026 release (https://www.sec.gov/Archives/edgar/data/1527636/000119312526242898/d142685dex995.htm) US$0.66/ADS: 1.86 (偏差 0.00%)
+  ✅ 通过 [29] 媒体服务 · 2026Q2                        报告:       280.40 
+                                                    https://www.sec.gov/Archives/edgar/data/1527636/000119312526357963/d404747dex991.htm media services Q2-2026 (RMB thousand 280,386): 280.39 (偏差 0.00%)
+  ✅ 通过 [27] 媒体服务 · 2025                          报告:      1153.40 
+                                                    https://www.sec.gov/Archives/edgar/data/1527636/000119312526155932/athm-20251231.htm F-6 media services 2025: 1153.42 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/1527636/000119312526092419/d102598dex991.htm: 1153.42 (偏差 0.00%)
+  ✅ 通过 [36] 线索服务 · Q2 同比                         报告:       -23.50 %
+                                                    derived from https://www.sec.gov/Archives/edgar/data/1527636/000119312526357963/d404747dex991.htm leads 560,357 vs 732,581: -23.51 (偏差 0.04%)
+  ✅ 通过 [57] 2026-03-05 · 事件                      报告:         2.00 亿美元
+                                                    https://www.sec.gov/Archives/edgar/data/1527636/000119312526092419/d102598dex991.htm US$200 million repurchase program: 2.00 (偏差 0.00%)
+  ✅ 通过 [58] 2026-07-28 · 事件                      报告:         4.00 亿美元
+                                                    https://www.sec.gov/Archives/edgar/data/1527636/000119312526318789/d152654dex991.htm US$400 million repurchase program: 4.00 (偏差 0.00%)
+  ✅ 通过 [60] 股息率 · 数值                             报告:         9.23 %
+                                                    derived: US$1.86 declared / US$20.15 close: 9.23 (偏差 0.01%)
+  ✅ 通过 [63] 减：应付股息（7 月已支付） · 百万元                 报告:      -489.80 
+                                                    https://www.sec.gov/Archives/edgar/data/1527636/000119312526357963/d404747dex991.htm balance sheet dividends payable 489,821 (RMB thousand): -489.82 (偏差 0.00%)
+  ✅ 通过 [109] 2026-10-20 ADS 收盘价 · 来源一             报告:        20.15 
+                                                    https://stockanalysis.com/stocks/athm/history/ 2026-10-20 close: 20.15 (偏差 0.00%)  |  https://query1.finance.yahoo.com/v8/finance/chart/ATHM: 20.16 (偏差 0.05%)
+  ✅ 通过 [115] 2025 年收入 · 来源二                       报告:      6452.00 
+                                                    https://www.sec.gov/Archives/edgar/data/1527636/000119312526155932/athm-20251231.htm F-6 total net revenues 2025: 6452.03 (偏差 0.00%)  |  https://stockanalysis.com/stocks/athm/financials/: 6452.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 13  |  通过: 13  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================
+
+分类汇总：抽样 21 点；进入判决 13 点（双来源 4，单一来源或原件推算 9）；模型假设/输出 3 点；抽取噪声 5 点（不进判决）。

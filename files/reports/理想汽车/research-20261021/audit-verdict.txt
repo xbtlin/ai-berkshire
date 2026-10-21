@@ -1,0 +1,49 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：理想汽车研究报告-20261021.md
+======================================================================
+
+  ✅ 通过 [ 7] 毛利率 · 2022                           报告:        19.40 %
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001791706.json (20-F FY2025) GrossProfit/Revenue 2022: 19.41 (偏差 0.05%)  |  https://stockanalysis.com/stocks/li/financials/ Gross Margin FY2022: 19.41 (偏差 0.05%)
+  ✅ 通过 [ 9] 毛利率 · 2024                           报告:        20.50 %
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001791706.json (20-F FY2025) GrossProfit/Revenue 2024: 20.53 (偏差 0.14%)  |  https://stockanalysis.com/stocks/li/financials/ Gross Margin FY2024: 20.53 (偏差 0.15%)
+  ✅ 通过 [ 8] 毛利率 · 2023                           报告:        22.20 %
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001791706.json (20-F FY2025) GrossProfit/Revenue 2023: 22.20 (偏差 0.01%)  |  https://stockanalysis.com/stocks/li/financials/ Gross Margin FY2023: 22.20 (偏差 0.00%)
+  ✅ 通过 [23] 自由现金流 · 2023                         报告:       441.86 
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001791706.json (20-F FY2025) CFO-PaymentsToAcquireProductiveAssets 2023: 441.86 (偏差 0.00%)  |  https://stockanalysis.com/stocks/li/financials/cash-flow-statement/ FCF FY2023 44,186: 441.86 (偏差 0.00%)
+  ✅ 通过 [24] 自由现金流 · 2024                         报告:        82.03 
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001791706.json (20-F FY2025) CFO-capex 2024: 82.03 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/1791706/000110465926026803/tm268559d1_ex99-1.htm FY2024 free cash flow 8,203.1: 82.03 (偏差 0.00%)
+  ✅ 通过 [27] 全年交付（辆） · 2024                       报告:    500508.00 
+                                                    https://www.sec.gov/Archives/edgar/data/1791706/000110465926026803/tm268559d1_ex99-1.htm FY2024 deliveries table: 500508.00 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/1791706/000110465926041705/li-20251231x20f.htm MD&A deliveries of 500,508 vehicles in 2024: 500508.00 (偏差 0.00%)
+  ✅ 通过 [29] 交付量（辆） · 2025Q3                      报告:     93211.00 
+                                                    https://www.sec.gov/Archives/edgar/data/1791706/000110465926101065/tm2624080d1_ex99-1.htm deliveries table 2025Q3: 93211.00 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/1791706/000110465926026803/tm268559d1_ex99-1.htm deliveries table 2025Q3: 93211.00 (偏差 0.00%)
+  ✅ 通过 [36] 总收入 · 2026Q2                         报告:       256.67 
+                                                    https://www.sec.gov/Archives/edgar/data/1791706/000110465926101065/tm2624080d1_ex99-1.htm total revenues: 256.67 (偏差 0.00%)  |  https://stockanalysis.com/stocks/li/financials/?p=quarterly Q2 2026: 256.67 (偏差 0.00%)
+  ✅ 通过 [51] 归母净利润 · 2026Q1                       报告:       -22.90 
+                                                    https://www.sec.gov/Archives/edgar/data/1791706/000110465926067465/tm2615887d1_ex99-1.htm net loss attributable: -22.90 (偏差 0.02%)  |  https://stockanalysis.com/stocks/li/financials/?p=quarterly Q1 2026: -22.90 (偏差 0.00%)
+  ✅ 通过 [56] 经营现金流 · 2026Q2                       报告:         0.15 
+                                                    https://www.sec.gov/Archives/edgar/data/1791706/000110465926101065/tm2624080d1_ex99-1.htm cash flow statement CFO: 0.15 (偏差 0.17%)  |  https://stockanalysis.com/stocks/li/financials/?p=quarterly Q2 2026 OCF: 0.15 (偏差 0.20%)
+  ✅ 通过 [58] 自由现金流（公司口径） · 2025Q4                 报告:        24.68 
+                                                    https://www.sec.gov/Archives/edgar/data/1791706/000110465926067465/tm2615887d1_ex99-1.htm FCF 2025Q4 column: 24.68 (偏差 0.02%)  |  https://www.sec.gov/Archives/edgar/data/1791706/000110465926026803/tm268559d1_ex99-1.htm Key results FCF Q4 2025 (StockAnalysis capex differs, not used): 24.68 (偏差 0.02%)
+  ✅ 通过 [60] 自由现金流（公司口径） · 2026Q2                 报告:       -13.01 
+                                                    https://www.sec.gov/Archives/edgar/data/1791706/000110465926101065/tm2624080d1_ex99-1.htm FCF: -13.01 (偏差 0.02%)  |  https://stockanalysis.com/stocks/li/financials/?p=quarterly Q2 2026 FCF: -13.01 (偏差 0.00%)
+  ✅ 通过 [57] 自由现金流（公司口径） · 2025Q3                 报告:       -89.12 
+                                                    https://www.sec.gov/Archives/edgar/data/1791706/000110465925116474/tm2532303d1_ex99-1.htm FCF: -89.12 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/1791706/000110465926026803/tm268559d1_ex99-1.htm Key results FCF Q3 2025: -89.12 (偏差 0.00%)
+  ✅ 通过 [63] 2025年归母净利润（百万元） · 一手原件               报告:      1124.44 
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001791706.json (20-F FY2025) NetIncomeLossAvailableToCommonStockholdersBasic 2025: 1124.44 (偏差 0.00%)  |  https://stockanalysis.com/stocks/li/financials/ Net Income FY2025: 1124.00 (偏差 0.04%)
+  ✅ 通过 [71] 港股收盘价（港元） · 第二来源                     报告:        45.64 
+                                                    https://query1.finance.yahoo.com/v8/finance/chart/2015.HK close 2026-10-20: 45.64 (偏差 0.00%)  |  https://stockanalysis.com/quote/hkg/2015/history/: 45.64 (偏差 0.00%)
+  ✅ 通过 [72] ADS收盘价（美元） · 一手原件                    报告:        11.29 
+                                                    https://query1.finance.yahoo.com/v8/finance/chart/LI close 2026-10-19: 11.29 (偏差 0.00%)  |  https://stockanalysis.com/stocks/li/history/: 11.29 (偏差 0.00%)
+  ✅ 通过 [108] 同行市销率（StockAnalysis快照） · 数值          报告:         0.85 倍
+                                                    https://stockanalysis.com/stocks/xpev/statistics/ PS Ratio (single third-party source): 0.85 (偏差 0.00%)
+  ✅ 通过 [109] 现金及等价物+受限现金+定期存款与短期投资 · 金额           报告:       856.07 
+                                                    https://www.sec.gov/Archives/edgar/data/1791706/000110465926101065/tm2624080d1_ex99-1.htm balance sheet cash+restricted+TD/STI: 856.07 (偏差 0.00%)  |  https://stockanalysis.com/stocks/li/financials/balance-sheet/ Cash&ST + restricted: 856.07 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 18  |  通过: 18  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================
+
+抽样总数 25；进入判决的事实项 18（双源 17，单源 1）；模型假设/行动条件 6 项与解析误识别 1 项单独归类，不进判决，见 audit-classified.json。

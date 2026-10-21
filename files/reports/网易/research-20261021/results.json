@@ -1,0 +1,204 @@
+{
+  "ads_equivalent": "640330430.200000",
+  "market_cap_usd_bn": "80.201386",
+  "market_cap_cny_bn": "535.801402",
+  "hk_price_in_usd_per_ads": "124.351803",
+  "hk_vs_us_gap_pct": "-0.717123",
+  "TTM": {
+    "revenue": "116.603425",
+    "gross_profit": "78.304377",
+    "op_profit": "41.078795",
+    "ni_attr": "32.512395",
+    "nongaap_ni": "35.596582",
+    "cfo": "51.477285",
+    "capex_ppe": "0.752396",
+    "capex_intangible": "0.726542",
+    "da": "2.208261",
+    "interest_income": "3.692578",
+    "nci": "0.657960",
+    "sbc": "3.147231",
+    "capex_total": "1.478938",
+    "simple_fcf": "49.998347",
+    "gross_margin_pct": "67.154440",
+    "op_margin_pct": "35.229493"
+  },
+  "FY2025_margins_pct": {
+    "gross": "64.285327",
+    "op": "31.817634",
+    "net": "29.975190",
+    "eff_tax": "14.774961"
+  },
+  "H1_2026_eff_tax_pct": "21.668111",
+  "net_cash_recomputed_bn": "167.499913",
+  "net_cash_vs_company_gap_pct": "-0.000052",
+  "usable_net_cash_bn": "153.048655",
+  "usable_net_cash_per_ads_usd": "35.776958",
+  "net_cash_share_of_mcap_pct": "31.261567",
+  "normalized": {
+    "nopat_parent_bn": "33.026652",
+    "fcff_parent_bn": "33.755975",
+    "after_tax_interest_bn": "2.203901",
+    "normalized_ni_bn": "35.230553",
+    "normalized_eps_usd_per_ads": "8.235564"
+  },
+  "valuation": {
+    "gaap_eps_ttm_usd_per_ads": "7.600162",
+    "PE_ttm_gaap": "16.479912",
+    "PE_ttm_nongaap": "15.052046",
+    "PE_fy2025_gaap": "15.870989",
+    "PE_normalized": "15.208430",
+    "PS_ttm": "4.595074",
+    "ev_ops_bn": "382.752747",
+    "EV_ops_over_nopat": "11.589208",
+    "EV_ops_over_ttm_op_profit": "9.317526",
+    "fcf_yield_simple_pct": "9.331507",
+    "dividend_ttm_usd_per_ads": "2.930000",
+    "dividend_yield_pct": "2.339321",
+    "share_count_change_yoy_pct": "0.451980",
+    "k_div_minus_dilution": "0.018873",
+    "PB": "3.206653"
+  },
+  "historical_year_end_PE": {
+    "2021": "25.810270",
+    "2022": "16.241575",
+    "2023": "14.627458",
+    "2024": "14.171479",
+    "2025": "18.386977"
+  },
+  "scenarios": {
+    "bear": {
+      "fcff_path_bn": [
+        "30.380377",
+        "29.772770",
+        "29.177314",
+        "28.593768",
+        "28.021893",
+        "27.461455",
+        "26.912226",
+        "26.373981",
+        "25.846502",
+        "25.329572"
+      ],
+      "ev_bn": "346.040748",
+      "terminal_share_pct": "45.432627",
+      "equity_bn": "499.089403",
+      "value_per_ads_usd": "116.668130",
+      "upside_pct": "-6.851792",
+      "fcff_2036_bn": "25.329572",
+      "exit_pe_formula": "13.066667",
+      "r_minus_g": "0.075000"
+    },
+    "base": {
+      "fcff_path_bn": [
+        "34.431094",
+        "35.808338",
+        "37.240672",
+        "38.730299",
+        "40.279511",
+        "41.487896",
+        "42.732533",
+        "44.014509",
+        "45.334944",
+        "46.694992"
+      ],
+      "ev_bn": "634.880408",
+      "terminal_share_pct": "57.914825",
+      "equity_bn": "787.929063",
+      "value_per_ads_usd": "184.187863",
+      "upside_pct": "47.056178",
+      "fcff_2036_bn": "46.694992",
+      "exit_pe_formula": "15.333333",
+      "r_minus_g": "0.060000"
+    },
+    "bull": {
+      "fcff_path_bn": [
+        "36.456453",
+        "39.372969",
+        "42.522807",
+        "45.924631",
+        "49.598602",
+        "52.078532",
+        "54.682458",
+        "57.416581",
+        "60.287410",
+        "63.301781"
+      ],
+      "ev_bn": "870.441261",
+      "terminal_share_pct": "62.776931",
+      "equity_bn": "1023.489916",
+      "value_per_ads_usd": "239.253036",
+      "upside_pct": "91.020388",
+      "fcff_2036_bn": "63.301781",
+      "exit_pe_formula": "16.363636",
+      "r_minus_g": "0.055000"
+    },
+    "tail": {
+      "equity_bn": "241.657587",
+      "value_per_ads_usd": "56.490358",
+      "upside_pct": "-54.897918"
+    }
+  },
+  "probability_weighted_value_usd": "171.936089",
+  "action_prices_usd": {
+    "buy_below_70pct_of_weighted": "120.355262",
+    "add_below_bear": "116.668130",
+    "trim_above_base": "184.187863"
+  },
+  "reverse_dcf": {
+    "implied_perpetual_g_r8": "-0.007529",
+    "implied_perpetual_g_r10": "0.010850",
+    "implied_perpetual_g_r12": "0.029230",
+    "zero_growth_value_r8_bn": "574.998341"
+  },
+  "sensitivity_base_value_usd": {
+    "r=0.07": "214.519053",
+    "r=0.08": "184.187863",
+    "r=0.09": "162.549696",
+    "r=0.10": "146.342919",
+    "tax=0.15": "189.606051",
+    "tax=0.22": "176.963611"
+  },
+  "three_year": {
+    "bull": {
+      "eps_2029": "10.374439",
+      "price": "186.739897"
+    },
+    "base": {
+      "eps_2029": "9.263889",
+      "price": "138.958341"
+    },
+    "bear": {
+      "eps_2029": "7.060967",
+      "price": "77.670633"
+    }
+  },
+  "irr10": {
+    "bear": {
+      "profit_2036_tool_bn": "27.533472",
+      "exit_pe": "13.066667",
+      "irr_tool_pct": "-2.017348",
+      "irr_tool_at_r10_pct": "-4.262295",
+      "irr_explicit_cash_pct": "3.950588",
+      "cash_2036_bn": "309.208656"
+    },
+    "base": {
+      "profit_2036_tool_bn": "48.898893",
+      "exit_pe": "15.333333",
+      "irr_tool_pct": "5.304636",
+      "irr_tool_at_r10_pct": "2.371893",
+      "irr_explicit_cash_pct": "9.903010",
+      "cash_2036_bn": "388.766533"
+    },
+    "bull": {
+      "profit_2036_tool_bn": "65.505681",
+      "exit_pe": "16.363636",
+      "irr_tool_pct": "9.067771",
+      "irr_tool_at_r10_pct": "5.794540",
+      "irr_explicit_cash_pct": "13.258520",
+      "cash_2036_bn": "447.247338"
+    },
+    "expected_tool_pct": "3.860668",
+    "expected_explicit_pct": "8.788385",
+    "note": "三档概率把5%尾部并入悲观档（0.25+0.05）"
+  }
+}

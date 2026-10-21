@@ -1,0 +1,187 @@
+{
+  "price_usd_per_ads": "12.80",
+  "price_date": "2026-10-19 (NYSE close; Nasdaq & StockAnalysis)",
+  "usd_cny": "6.6807",
+  "fx_date": "2026-10-19 ECB reference via frankfurter.dev; Fed H.10 2026-10-16 = 6.6861",
+  "ordinary_shares_outstanding_m": "95.1",
+  "shares_date": "2026-06-30 (Q2 2026 balance sheet note, rounded to 0.1m)",
+  "ordinary_shares_20f_m": "96.054108",
+  "shares_20f_date": "2026-03-31 (20-F Item 6.E)",
+  "diluted_weighted_ordinary_q2_m": "97.619760",
+  "ads_per_ordinary": "5",
+  "fy": {
+    "revenue": {
+      "2021": "117059.7",
+      "2022": "103152.5",
+      "2023": "112856.0",
+      "2024": "108420.8",
+      "2025": "105919.5"
+    },
+    "gross_profit": {
+      "2021": "23106.6",
+      "2022": "21616.1",
+      "2023": "25720.9",
+      "2024": "25469.7",
+      "2025": "24490.3"
+    },
+    "op_income": {
+      "2021": "5582.4",
+      "2022": "6197.4",
+      "2023": "9104.1",
+      "2024": "9173.3",
+      "2025": "8135.9"
+    },
+    "ni_attr": {
+      "2021": "4681.1",
+      "2022": "6298.8",
+      "2023": "8116.6",
+      "2024": "7739.9",
+      "2025": "7242.5"
+    },
+    "cfo": {
+      "2021": "6744.6",
+      "2022": "10519.7",
+      "2023": "14414.5",
+      "2024": "9129.0",
+      "2025": "7454.2"
+    },
+    "capex_ppe": {
+      "2021": "2732.4",
+      "2022": "2430.8",
+      "2023": "2167.2",
+      "2024": "2723.2",
+      "2025": "1985.8"
+    },
+    "buyback": {
+      "2021": "1938.8",
+      "2022": "6257.7",
+      "2023": "5106.9",
+      "2024": "3865.8",
+      "2025": "4940.8"
+    },
+    "sbc": {
+      "2021": "1010.0",
+      "2022": "1207.6",
+      "2023": "1509.8",
+      "2024": "1537.7",
+      "2025": "1731.1"
+    }
+  },
+  "quarters": {
+    "Q3_2025": {
+      "rev": "21370.865",
+      "gp": "4908.911",
+      "op": "1262.400",
+      "ni": "1220.677",
+      "nongaap": "1501.489",
+      "sbc": "346.352"
+    },
+    "Q4_2025": {
+      "rev": "32473.779",
+      "gp": "7444.199",
+      "op": "2898.846",
+      "ni": "2589.219",
+      "nongaap": "2858.031",
+      "sbc": "336.254"
+    },
+    "Q1_2026": {
+      "rev": "26574.509",
+      "gp": "6495.150",
+      "op": "2497.769",
+      "ni": "2206.308",
+      "nongaap": "2305.623",
+      "sbc": "220.645"
+    },
+    "Q2_2026": {
+      "rev": "24707.149",
+      "gp": "5754.692",
+      "op": "1519.657",
+      "ni": "4306.193",
+      "nongaap": "392.213",
+      "sbc": "486.514"
+    }
+  },
+  "one_offs_q2_2026": {
+    "reit_gain_pre_tax": "5790",
+    "reit_gain_tax": "1630",
+    "withholding_tax_accrual": "1560"
+  },
+  "ttm_company_fcf_jun26": "7201.751",
+  "ttm_cfo_jun26": "8766.247",
+  "ttm_capex_jun26": "1512.848",
+  "fy2025_interest_income": "801.587",
+  "fy2025_interest_expense": "90.037",
+  "tax_rate_on_interest": "0.25",
+  "bridge_jun26": {
+    "cash": "29246.429",
+    "restricted_cash": "604.940",
+    "short_term_investments": "3618.481",
+    "short_term_loans": "10968.130",
+    "accounts_payable": "10350.342",
+    "inventories": "4327.466",
+    "equity_method_investees": "7616.184",
+    "other_investments": "4980.862",
+    "htm_securities": "806.443"
+  },
+  "assumption_unpaid_tax": "3190 = REIT tax 1630 + withholding 1560, assumed unpaid at 2026-06-30 (conservative; not verified)",
+  "scenarios_3y": {
+    "bear": {
+      "core_ni_growth": "-0.08",
+      "pe_ex_cash": "5",
+      "bridge": "conservative"
+    },
+    "base": {
+      "core_ni_growth": "0",
+      "pe_ex_cash": "7",
+      "bridge": "base"
+    },
+    "bull": {
+      "core_ni_growth": "0.04",
+      "pe_ex_cash": "9",
+      "bridge": "bull"
+    }
+  },
+  "dcf": {
+    "r_base": "0.08",
+    "r_sensitivity": [
+      "0.08",
+      "0.10",
+      "0.12"
+    ],
+    "owner_fcf_2027_bn": {
+      "bear": "3.5",
+      "base": "4.5",
+      "bull": "5.5"
+    },
+    "growth_2027_2036": {
+      "bear": "-0.08",
+      "base": "0",
+      "bull": "0.03"
+    },
+    "terminal_g": {
+      "bear": "0",
+      "base": "0.01",
+      "bull": "0.02"
+    },
+    "tail": {
+      "probability": "0.10",
+      "value": "50% of conservative cash bridge only"
+    },
+    "probabilities": {
+      "bear": "0.30",
+      "base": "0.50",
+      "bull": "0.20"
+    },
+    "definition": "Owner FCF = company-defined FCF (CFO + internet-finance adj - capex incl. land use rights) minus SBC minus after-tax net interest income, CNY bn; cash bridge added separately so interest is not double counted. Calibration: FY2024 ~3.5, FY2025 ~3.1, TTM Jun-26 ~5.3"
+  },
+  "ten_year": {
+    "roic": "0.15",
+    "profit_2036_m": {
+      "bear": "3500",
+      "base": "6700",
+      "bull": "9000"
+    },
+    "k": "0.03",
+    "k_note": "dividend yield 4.84% minus estimated gross SBC dilution ~1.8%; buybacks excluded (conservative)"
+  }
+}

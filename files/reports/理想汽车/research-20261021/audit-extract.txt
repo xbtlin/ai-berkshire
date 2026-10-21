@@ -1,0 +1,344 @@
+======================================================================
+报告数据抽检清单
+文件：reports/理想汽车/理想汽车研究报告-20261021.md
+总提取数据点：163  |  抽样比例：15%  |  抽检数量：25
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  7     39  毛利率 · 2022                                  19.40  %
+  9     39  毛利率 · 2024                                  20.50  %
+  8     39  毛利率 · 2023                                  22.20  %
+ 23     42  自由现金流 · 2023                               441.86  
+ 24     42  自由现金流 · 2024                                82.03  
+ 27     43  全年交付（辆） · 2024                          500508.00  
+ 29     51  交付量（辆） · 2025Q3                          93211.00  
+ 36     52  总收入 · 2026Q2                               256.67  
+ 51     56  归母净利润 · 2026Q1                             -22.90  
+ 56     57  经营现金流 · 2026Q2                               0.15  
+ 58     58  自由现金流（公司口径） · 2025Q4                        24.68  
+ 60     58  自由现金流（公司口径） · 2026Q2                       -13.01  
+ 57     58  自由现金流（公司口径） · 2025Q3                       -89.12  
+ 63     71  2025年归母净利润（百万元） · 一手原件                    1124.44  
+ 71     74  港股收盘价（港元） · 第二来源                            45.64  
+ 72     75  ADS收盘价（美元） · 一手原件                           11.29  
+108    212  同行市销率（StockAnalysis快照） · 数值                  0.85  倍
+109    220  现金及等价物+受限现金+定期存款与短期投资 · 金额                 856.07  
+115    225  经营缓冲（研究假设，约两个月营业成本） · 金额                   200.00  
+162    235  对照                                        2023.00  
+130    244  中性 · 2028年每股价值                              55.71  
+140    265  悲观 · 退出市盈率                                  12.50  倍
+144    266  基准 · 2036经营利润                               70.00  亿
+152    288  最大风险 · 结论                                   10.00  %
+156    299  加仓信号 · 建议                                   15.00  %
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 7,
+    "label": "毛利率 · 2022",
+    "reported_value": 19.4,
+    "unit": "%",
+    "line_number": 39,
+    "raw_text": "| 毛利率 | 21.3% | 19.4% | 22.2% | 20.5% | 18.7% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "毛利率 · 2024",
+    "reported_value": 20.5,
+    "unit": "%",
+    "line_number": 39,
+    "raw_text": "| 毛利率 | 21.3% | 19.4% | 22.2% | 20.5% | 18.7% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "毛利率 · 2023",
+    "reported_value": 22.2,
+    "unit": "%",
+    "line_number": 39,
+    "raw_text": "| 毛利率 | 21.3% | 19.4% | 22.2% | 20.5% | 18.7% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "自由现金流 · 2023",
+    "reported_value": 441.86,
+    "unit": "",
+    "line_number": 42,
+    "raw_text": "| 自由现金流 | 48.96 | 22.52 | 441.86 | 82.03 | -128.17 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "自由现金流 · 2024",
+    "reported_value": 82.03,
+    "unit": "",
+    "line_number": 42,
+    "raw_text": "| 自由现金流 | 48.96 | 22.52 | 441.86 | 82.03 | -128.17 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 27,
+    "label": "全年交付（辆） · 2024",
+    "reported_value": 500508.0,
+    "unit": "",
+    "line_number": 43,
+    "raw_text": "| 全年交付（辆） | — | — | 376,030 | 500,508 | 406,343 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "交付量（辆） · 2025Q3",
+    "reported_value": 93211.0,
+    "unit": "",
+    "line_number": 51,
+    "raw_text": "| 交付量（辆） | 93,211 | 109,194 | 95,142 | 98,330 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "总收入 · 2026Q2",
+    "reported_value": 256.67,
+    "unit": "",
+    "line_number": 52,
+    "raw_text": "| 总收入 | 273.65 | 287.75 | 229.83 | 256.67 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 51,
+    "label": "归母净利润 · 2026Q1",
+    "reported_value": -22.9,
+    "unit": "",
+    "line_number": 56,
+    "raw_text": "| 归母净利润 | -6.25 | 0.07 | -22.90 | -17.04 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "经营现金流 · 2026Q2",
+    "reported_value": 0.15,
+    "unit": "",
+    "line_number": 57,
+    "raw_text": "| 经营现金流 | -73.96 | 35.21 | -60.91 | 0.15 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 58,
+    "label": "自由现金流（公司口径） · 2025Q4",
+    "reported_value": 24.68,
+    "unit": "",
+    "line_number": 58,
+    "raw_text": "| 自由现金流（公司口径） | -89.12 | 24.68 | -73.88 | -13.01 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "自由现金流（公司口径） · 2026Q2",
+    "reported_value": -13.01,
+    "unit": "",
+    "line_number": 58,
+    "raw_text": "| 自由现金流（公司口径） | -89.12 | 24.68 | -73.88 | -13.01 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 57,
+    "label": "自由现金流（公司口径） · 2025Q3",
+    "reported_value": -89.12,
+    "unit": "",
+    "line_number": 58,
+    "raw_text": "| 自由现金流（公司口径） | -89.12 | 24.68 | -73.88 | -13.01 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 63,
+    "label": "2025年归母净利润（百万元） · 一手原件",
+    "reported_value": 1124.438,
+    "unit": "",
+    "line_number": 71,
+    "raw_text": "| 2025年归母净利润（百万元） | 1,124.438 | 1,124 | 0.02% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 71,
+    "label": "港股收盘价（港元） · 第二来源",
+    "reported_value": 45.64,
+    "unit": "",
+    "line_number": 74,
+    "raw_text": "| 港股收盘价（港元） | 45.64 | 45.64 | 0.00% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 72,
+    "label": "ADS收盘价（美元） · 一手原件",
+    "reported_value": 11.29,
+    "unit": "",
+    "line_number": 75,
+    "raw_text": "| ADS收盘价（美元） | 11.29 | 11.29 | 0.00% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 108,
+    "label": "同行市销率（StockAnalysis快照） · 数值",
+    "reported_value": 0.85,
+    "unit": "倍",
+    "line_number": 212,
+    "raw_text": "| 同行市销率（StockAnalysis快照） | 小鹏0.85倍、蔚来0.51倍、零跑0.55倍、比亚迪0.89倍 | 第三方单一来源，仅作参照 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 109,
+    "label": "现金及等价物+受限现金+定期存款与短期投资 · 金额",
+    "reported_value": 856.07,
+    "unit": "",
+    "line_number": 220,
+    "raw_text": "| 现金及等价物+受限现金+定期存款与短期投资 | 856.07 | 起点；不含长期投资中的长期定存，公司“现金储备”口径为875亿元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 115,
+    "label": "经营缓冲（研究假设，约两个月营业成本） · 金额",
+    "reported_value": 200.0,
+    "unit": "",
+    "line_number": 225,
+    "raw_text": "| 经营缓冲（研究假设，约两个月营业成本） | 200.00 | 维持经营所需，不可分配 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 162,
+    "label": "对照",
+    "reported_value": 2023.0,
+    "unit": "",
+    "line_number": 235,
+    "raw_text": "对照：2023年归母净利润117.04亿元，2023至2025年平均69.54亿元。**市场的定价不是“理想永远亏损”，而是“理想以后每年只能赚20亿元左右的经营利润”**。 这个预期并不苛刻，取决于车辆毛利率能否回到15%附近。",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 130,
+    "label": "中性 · 2028年每股价值",
+    "reported_value": 55.71,
+    "unit": "",
+    "line_number": 244,
+    "raw_text": "| 中性 | 45% | 1,200亿 | 30亿 | 450亿 | -40亿 | 55.71港元 | 45.14港元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 140,
+    "label": "悲观 · 退出市盈率",
+    "reported_value": 12.5,
+    "unit": "倍",
+    "line_number": 265,
+    "raw_text": "| 悲观 | 35% | 15亿 | 12.5倍 | 450亿 | -2.27% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 144,
+    "label": "基准 · 2036经营利润",
+    "reported_value": 70.0,
+    "unit": "亿",
+    "line_number": 266,
+    "raw_text": "| 基准 | 45% | 70亿 | 13.5倍 | 950亿 | 8.96% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 152,
+    "label": "最大风险 · 结论",
+    "reported_value": 10.0,
+    "unit": "%",
+    "line_number": 288,
+    "raw_text": "| 最大风险 | 车辆毛利率停在10%左右，现金被持续消耗 | 高 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 156,
+    "label": "加仓信号 · 建议",
+    "reported_value": 15.0,
+    "unit": "%",
+    "line_number": 299,
+    "raw_text": "| 加仓信号 | 车辆毛利率回到15%以上并维持两个季度；新L6、新i6月销量稳定；海外收入开始单独披露并形成规模 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

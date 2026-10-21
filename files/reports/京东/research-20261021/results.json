@@ -1,0 +1,219 @@
+{
+  "market_cap": {
+    "hkd_bn": "280.63",
+    "cny_bn": "240.30",
+    "usd_bn": "35.76",
+    "ads_equivalent_usd": "26.61",
+    "ads_close_check_usd": "26.78",
+    "ads_vs_hk_gap_pct": "0.65",
+    "usd_bn_via_ads_close": "35.99"
+  },
+  "history": {
+    "2021": {
+      "revenue_bn": "951.59",
+      "gross_margin_pct": "13.56",
+      "op_margin_pct": "0.44",
+      "ni_attr_bn": "-3.56",
+      "net_margin_pct": "-0.37",
+      "non_gaap_ni_bn": "17.21",
+      "cfo_bn": "42.30",
+      "company_fcf_bn": "26.23"
+    },
+    "2022": {
+      "revenue_bn": "1046.24",
+      "gross_margin_pct": "14.06",
+      "op_margin_pct": "1.89",
+      "ni_attr_bn": "10.38",
+      "net_margin_pct": "0.99",
+      "non_gaap_ni_bn": "28.22",
+      "cfo_bn": "57.82",
+      "company_fcf_bn": "35.60"
+    },
+    "2023": {
+      "revenue_bn": "1084.66",
+      "gross_margin_pct": "14.72",
+      "op_margin_pct": "2.40",
+      "ni_attr_bn": "24.17",
+      "net_margin_pct": "2.23",
+      "non_gaap_ni_bn": "35.20",
+      "cfo_bn": "59.52",
+      "company_fcf_bn": "40.65"
+    },
+    "2024": {
+      "revenue_bn": "1158.82",
+      "gross_margin_pct": "15.87",
+      "op_margin_pct": "3.34",
+      "ni_attr_bn": "41.36",
+      "net_margin_pct": "3.57",
+      "non_gaap_ni_bn": "47.83",
+      "cfo_bn": "58.10",
+      "company_fcf_bn": "43.74"
+    },
+    "2025": {
+      "revenue_bn": "1309.08",
+      "gross_margin_pct": "16.04",
+      "op_margin_pct": "0.21",
+      "ni_attr_bn": "19.63",
+      "net_margin_pct": "1.50",
+      "non_gaap_ni_bn": "27.03",
+      "cfo_bn": "18.99",
+      "company_fcf_bn": "6.48"
+    }
+  },
+  "ttm_bn": {
+    "revenue": "1313.44",
+    "ni_attr": "14.79",
+    "non_gaap_ni": "23.19",
+    "retail_oi": "53.06",
+    "logistics_oi": "6.45",
+    "new_business_oi": "-50.74",
+    "unallocated": "-7.31",
+    "nci_income": "4.88",
+    "company_fcf": "31.42"
+  },
+  "multiples": {
+    "pe_ttm_gaap": "16.24",
+    "pe_ttm_non_gaap": "10.36",
+    "pe_fy2025_gaap": "12.24",
+    "pe_fy2024_gaap": "5.81",
+    "ps_ttm": "0.183",
+    "fcf_yield_ttm_pct": "13.07",
+    "pb": "1.10"
+  },
+  "cash_bridge_cny_bn": {
+    "gross_cash_restricted_sti": "235.06",
+    "less_restricted_cash": "-13.40",
+    "less_interest_bearing_debt": "-69.89",
+    "less_seasonal_payables_above_dec2025": "-40.58",
+    "adjusted_consolidated_net_cash": "111.19",
+    "less_listed_subsidiaries_net_cash_100pct": "-77.60",
+    "parent_ex_listed_net_cash": "33.59",
+    "post_period_items": "0.00",
+    "parent_ex_listed_net_cash_after_post_items": "33.59",
+    "jd_share_of_listed_subsidiaries_market_value": "131.92",
+    "equity_investees_book": "58.04",
+    "noncurrent_securities_and_investments_book": "38.40",
+    "less_listed_subsidiaries_noncurrent_fvtpl": "-37.35",
+    "investments_ex_listed_subsidiaries_book": "59.08",
+    "nci_book_value_reference": "63.26"
+  },
+  "listed_subsidiaries": {
+    "京东物流2618": {
+      "market_cap_cny_mn": "58236.19",
+      "jd_shares_held": "4192271100",
+      "jd_stake_of_sep30_shares_pct": "63.24",
+      "jd_share_cny_mn": "36830.92",
+      "net_cash_100pct_cny_mn": "15440.386"
+    },
+    "京东健康6618": {
+      "market_cap_cny_mn": "108731.41",
+      "jd_shares_held": "2149253732",
+      "jd_stake_of_sep30_shares_pct": "67.36",
+      "jd_share_cny_mn": "73246.45",
+      "net_cash_100pct_cny_mn": "47415.760"
+    },
+    "京东工业7618": {
+      "market_cap_cny_mn": "30500.93",
+      "jd_shares_held": "1944222154",
+      "jd_stake_of_sep30_shares_pct": "71.61",
+      "jd_share_cny_mn": "21842.16",
+      "net_cash_100pct_cny_mn": "14744.845"
+    }
+  },
+  "implied_core": {
+    "non_core_value_cny_bn": "195.05",
+    "non_core_share_of_market_cap_pct": "81.17",
+    "implied_core_value_cny_bn": "45.25",
+    "core_ttm_pre_tax_operating_cny_bn": "-12.68",
+    "core_retail_ex_listed_ttm_cny_bn": "45.37",
+    "implied_multiple_on_retail_ex_listed_after_tax": "1.25"
+  },
+  "scenarios": {
+    "bull": {
+      "core_pre_tax_2029_cny_bn": "49.00",
+      "core_nopat_2029_cny_bn": "39.20",
+      "core_value_cny_bn": "470.40",
+      "subsidiaries_cny_bn": "158.30",
+      "investments_cny_bn": "44.31",
+      "parent_net_cash_cny_bn": "33.59",
+      "cum_core_cash_2027_2029_cny_bn": "100.00",
+      "equity_2029_cny_bn": "806.60",
+      "shares_2029_mn": "2688.00",
+      "value_per_ads_2029_usd": "89.31",
+      "value_per_share_2029_hkd": "350.44",
+      "pv_today_per_share_hkd": "263.29",
+      "annualized_return_pct": "49.73",
+      "pv_today_at_hurdle_usd": "67.10",
+      "probability": "0.25"
+    },
+    "base": {
+      "core_pre_tax_2029_cny_bn": "23.50",
+      "core_nopat_2029_cny_bn": "18.80",
+      "core_value_cny_bn": "188.00",
+      "subsidiaries_cny_bn": "131.92",
+      "investments_cny_bn": "29.54",
+      "parent_net_cash_cny_bn": "33.59",
+      "cum_core_cash_2027_2029_cny_bn": "37.00",
+      "equity_2029_cny_bn": "420.05",
+      "shares_2029_mn": "2688.00",
+      "value_per_ads_2029_usd": "46.51",
+      "value_per_share_2029_hkd": "182.50",
+      "pv_today_per_share_hkd": "137.11",
+      "annualized_return_pct": "20.46",
+      "pv_today_at_hurdle_usd": "34.94",
+      "probability": "0.50"
+    },
+    "bear": {
+      "core_pre_tax_2029_cny_bn": "3.00",
+      "core_nopat_2029_cny_bn": "2.40",
+      "core_value_cny_bn": "19.20",
+      "subsidiaries_cny_bn": "92.34",
+      "investments_cny_bn": "14.77",
+      "parent_net_cash_cny_bn": "33.59",
+      "cum_core_cash_2027_2029_cny_bn": "-37.00",
+      "equity_2029_cny_bn": "122.90",
+      "shares_2029_mn": "2688.00",
+      "value_per_ads_2029_usd": "13.61",
+      "value_per_share_2029_hkd": "53.40",
+      "pv_today_per_share_hkd": "40.12",
+      "annualized_return_pct": "-20.03",
+      "pv_today_at_hurdle_usd": "10.22",
+      "probability": "0.25"
+    }
+  },
+  "probability_weighted_pv_usd": "36.80",
+  "buy_below_usd": "27.60",
+  "probability_weighted_pv_hkd_per_share": "144.41",
+  "buy_below_hkd_per_share": "108.31",
+  "current_vs_weighted_pv_pct": "-27.70",
+  "bear_pv_usd": "10.22",
+  "reverse_implied_core_nopat_cny_bn_by_pe": {
+    "6": "7.54",
+    "8": "5.66",
+    "10": "4.52",
+    "12": "3.77"
+  },
+  "reverse_flat_perpetuity_core_fcf_cny_bn": {
+    "0.08": "3.62",
+    "0.10": "4.52"
+  },
+  "ten_year_inputs": {
+    "market_cap_cny_bn": "240.30",
+    "profit_2036_cny_bn": {
+      "bear": "15",
+      "base": "46",
+      "bull": "75"
+    },
+    "note": "终值年利润 = 核心税后经营利润 + 上市子公司归属利润 + 净现金利息（税后）；用 terminal_value.py irr 计算"
+  },
+  "base_pe_sensitivity_pv_usd": {
+    "-2": "31.81",
+    "0": "34.94",
+    "2": "38.07"
+  },
+  "base_new_business_loss_sensitivity_pv_usd": {
+    "-10000": "41.60",
+    "-18000": "36.27",
+    "-30000": "28.29"
+  }
+}

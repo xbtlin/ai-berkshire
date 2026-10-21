@@ -1,0 +1,194 @@
+{
+  "price_usd_ads": "125.25",
+  "price_date": "2026-10-19 (NASDAQ close; 10-20 US session not closed at research time)",
+  "price_hkd_9999": "195.20",
+  "price_hkd_date": "2026-10-20 (HKEX close)",
+  "shares_ex_treasury": "3201652151",
+  "shares_date": "2026-09-30 HKEX monthly return (SEC 6-K 2026-10-07)",
+  "ads_ratio": "5",
+  "usd_cny": "6.6807",
+  "usd_cny_date": "2026-10-19 ECB reference via frankfurter; Yahoo 6.6909 as second source",
+  "usd_hkd": "7.8487",
+  "usd_hkd_date": "2026-10-20 ECB reference",
+  "FY2025": {
+    "revenue": "112.625807",
+    "gross_profit": "72.401868",
+    "op_profit": "35.834867",
+    "ni_attr": "33.759800",
+    "nongaap_ni": "37.343702",
+    "cfo": "50.739800",
+    "capex_ppe": "1.065376",
+    "capex_intangible": "0.987089",
+    "da": "2.247427",
+    "interest_income": "3.953486",
+    "nci": "1.033718",
+    "sbc": "3.647662",
+    "dividends_paid": "13.825681",
+    "buyback": "0.639335",
+    "tax": "6.032686",
+    "pretax": "40.830470"
+  },
+  "H1_2025": {
+    "revenue": "56.720209",
+    "gross_profit": "36.531888",
+    "op_profit": "19.502243",
+    "ni_attr": "18.902167",
+    "nongaap_ni": "20.768658",
+    "cfo": "22.968515",
+    "capex_ppe": "0.643913",
+    "capex_intangible": "0.612120",
+    "da": "0.909188",
+    "interest_income": "2.014376",
+    "nci": "0.730969",
+    "sbc": "1.898267"
+  },
+  "H1_2026": {
+    "revenue": "60.697827",
+    "gross_profit": "42.434397",
+    "op_profit": "24.746171",
+    "ni_attr": "17.654762",
+    "nongaap_ni": "19.021538",
+    "cfo": "23.706000",
+    "capex_ppe": "0.330933",
+    "capex_intangible": "0.351573",
+    "da": "0.870022",
+    "interest_income": "1.753468",
+    "nci": "0.355211",
+    "sbc": "1.397836",
+    "tax": "4.982512",
+    "pretax": "22.994676"
+  },
+  "BS_2026_06_30": {
+    "cash": "22.814542",
+    "time_deposits_current": "101.978645",
+    "restricted_current": "4.447483",
+    "short_term_investments": "50.599638",
+    "time_deposits_noncurrent": "0.260000",
+    "restricted_noncurrent": "0.003775",
+    "short_term_loans": "12.604170",
+    "long_term_investments": "21.336343",
+    "contract_liabilities": "19.297191",
+    "equity_attr": "167.090540"
+  },
+  "company_net_cash_2026_06_30": "167.5",
+  "dividends_declared_ttm_usd_per_share": [
+    "0.114",
+    "0.232",
+    "0.144",
+    "0.096"
+  ],
+  "weighted_basic_shares_q2_2025_k": "3188634",
+  "weighted_basic_shares_q2_2026_k": "3203046",
+  "normalization": {
+    "tax_rate": "0.18",
+    "note": "FY2025 实际税率14.8%，2026H1 21.7%，取18%为中值假设"
+  },
+  "operating_buffer_bn": "10",
+  "pre_tax_cash_yield": "0.018",
+  "interest_tax": "0.20",
+  "r": "0.08",
+  "rf_cny": "0.016385",
+  "roic_incremental": "0.25",
+  "scenarios": {
+    "bear": {
+      "p": "0.25",
+      "steps": [
+        "-0.10",
+        "-0.02",
+        "-0.02",
+        "-0.02",
+        "-0.02",
+        "-0.02",
+        "-0.02",
+        "-0.02",
+        "-0.02",
+        "-0.02"
+      ],
+      "g": "0.005",
+      "story": "旧IP加速衰退、新品连续失利、渠道分成红利回吐，2027年经营利润回落10%后每年-2%"
+    },
+    "base": {
+      "p": "0.50",
+      "steps": [
+        "0.02",
+        "0.04",
+        "0.04",
+        "0.04",
+        "0.04",
+        "0.03",
+        "0.03",
+        "0.03",
+        "0.03",
+        "0.03"
+      ],
+      "g": "0.02",
+      "story": "利润率从2026H1高位小幅回落，收入中个位数增长，经营利润年增3%-4%"
+    },
+    "bull": {
+      "p": "0.20",
+      "steps": [
+        "0.08",
+        "0.08",
+        "0.08",
+        "0.08",
+        "0.08",
+        "0.05",
+        "0.05",
+        "0.05",
+        "0.05",
+        "0.05"
+      ],
+      "g": "0.025",
+      "story": "海外与主机产品形成第二曲线，新品（如Ananta）成功，前五年年增8%"
+    },
+    "tail": {
+      "p": "0.05",
+      "story": "监管重击或境外上市结构受损：可动用净现金按5折、经营利润按5倍计"
+    }
+  },
+  "explicit_cash_model": {
+    "dividend_payout_of_earnings": "0.40",
+    "annual_buyback_bn": "3.0",
+    "note": "回购只用于抵消股权激励稀释，股本按不变处理；现金在第十年按1倍计入"
+  },
+  "three_scenario_tool": {
+    "growth": [
+      "0.08",
+      "0.04",
+      "-0.05"
+    ],
+    "pe": [
+      "18",
+      "15",
+      "11"
+    ],
+    "years": 3
+  },
+  "historical_pe_inputs": {
+    "2021": {
+      "close_usd": "101.78",
+      "usd_cny": "6.3524",
+      "diluted_eps_rmb_per_share": "5.01"
+    },
+    "2022": {
+      "close_usd": "72.63",
+      "usd_cny": "6.8987",
+      "diluted_eps_rmb_per_share": "6.17"
+    },
+    "2023": {
+      "close_usd": "93.16",
+      "usd_cny": "7.1049",
+      "diluted_eps_rmb_per_share": "9.05"
+    },
+    "2024": {
+      "close_usd": "89.21",
+      "usd_cny": "7.2994",
+      "diluted_eps_rmb_per_share": "9.19"
+    },
+    "2025": {
+      "close_usd": "137.62",
+      "usd_cny": "7.001",
+      "diluted_eps_rmb_per_share": "10.48"
+    }
+  }
+}

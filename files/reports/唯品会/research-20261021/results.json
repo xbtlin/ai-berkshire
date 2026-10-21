@@ -1,0 +1,282 @@
+{
+  "ads_basic_m": "475.5000",
+  "ads_diluted_m": "488.0988",
+  "mcap_usd_m": "6086.4000",
+  "mcap_cny_m": "40661.4125",
+  "mcap_usd_m_20f_shares": "6147.4629",
+  "history": {
+    "2021": {
+      "gross_margin_pct": "19.7392",
+      "op_margin_pct": "4.7688",
+      "net_margin_pct": "3.9989",
+      "simple_fcf": "4012.2000",
+      "simple_fcf_minus_sbc": "3002.2000",
+      "buyback_over_ni_pct": "41.4176"
+    },
+    "2022": {
+      "gross_margin_pct": "20.9555",
+      "op_margin_pct": "6.0080",
+      "net_margin_pct": "6.1063",
+      "simple_fcf": "8088.9000",
+      "simple_fcf_minus_sbc": "6881.3000",
+      "buyback_over_ni_pct": "99.3475"
+    },
+    "2023": {
+      "gross_margin_pct": "22.7909",
+      "op_margin_pct": "8.0670",
+      "net_margin_pct": "7.1920",
+      "simple_fcf": "12247.3000",
+      "simple_fcf_minus_sbc": "10737.5000",
+      "buyback_over_ni_pct": "62.9192"
+    },
+    "2024": {
+      "gross_margin_pct": "23.4915",
+      "op_margin_pct": "8.4608",
+      "net_margin_pct": "7.1388",
+      "simple_fcf": "6405.8000",
+      "simple_fcf_minus_sbc": "4868.1000",
+      "buyback_over_ni_pct": "49.9464"
+    },
+    "2025": {
+      "gross_margin_pct": "23.1216",
+      "op_margin_pct": "7.6812",
+      "net_margin_pct": "6.8377",
+      "simple_fcf": "5468.4000",
+      "simple_fcf_minus_sbc": "3737.3000",
+      "buyback_over_ni_pct": "68.2195"
+    }
+  },
+  "revenue_cagr_2021_2025_pct": "-2.4691",
+  "quarters": {
+    "Q3_2025": {
+      "rev": "21370.8650",
+      "gp": "4908.9110",
+      "op": "1262.4000",
+      "ni": "1220.6770",
+      "nongaap": "1501.4890",
+      "sbc": "346.3520",
+      "gm_pct": "22.9701",
+      "om_pct": "5.9071"
+    },
+    "Q4_2025": {
+      "rev": "32473.7790",
+      "gp": "7444.1990",
+      "op": "2898.8460",
+      "ni": "2589.2190",
+      "nongaap": "2858.0310",
+      "sbc": "336.2540",
+      "gm_pct": "22.9237",
+      "om_pct": "8.9267"
+    },
+    "Q1_2026": {
+      "rev": "26574.5090",
+      "gp": "6495.1500",
+      "op": "2497.7690",
+      "ni": "2206.3080",
+      "nongaap": "2305.6230",
+      "sbc": "220.6450",
+      "gm_pct": "24.4413",
+      "om_pct": "9.3991"
+    },
+    "Q2_2026": {
+      "rev": "24707.1490",
+      "gp": "5754.6920",
+      "op": "1519.6570",
+      "ni": "4306.1930",
+      "nongaap": "392.2130",
+      "sbc": "486.5140",
+      "gm_pct": "23.2916",
+      "om_pct": "6.1507"
+    }
+  },
+  "ttm": {
+    "rev": "105126.3020",
+    "gp": "24602.9520",
+    "op": "8178.6720",
+    "ni": "10322.3970",
+    "nongaap": "7057.3560",
+    "sbc": "1389.7650",
+    "ni_ex_oneoffs": "7722.3970",
+    "nongaap_ex_wht": "8617.3560",
+    "gross_margin_pct": "23.4032",
+    "op_margin_pct": "7.7799"
+  },
+  "q2_2026_nongaap_ex_wht": "1952.2130",
+  "pe_fy2025_gaap": "5.6143",
+  "pe_ttm_gaap": "3.9391",
+  "pe_ttm_ex_oneoffs": "5.2654",
+  "ps_ttm": "0.3868",
+  "fcf_yield_ttm_pct": "17.7115",
+  "eps_fy2025_cny_per_current_diluted_ads": "14.8382",
+  "eps_fy2025_usd_per_current_diluted_ads": "2.2211",
+  "bvps_usd_jun26": "14.1619",
+  "dividend_yield_pct": "4.8438",
+  "shareholder_return_2025_over_mcap_pct": "15.5116",
+  "cash_bridge": {
+    "gross_cash": "33469.8500",
+    "net_cash": "22501.7200",
+    "unpaid_tax_assumed": "3190.0000",
+    "supplier_float_net_of_inventory": "6022.8760",
+    "long_term_investments_book": "13403.4890",
+    "accounting_net_cash": "22501.7200",
+    "base": "19311.7200",
+    "conservative": "13288.8440",
+    "bull": "29203.4645"
+  },
+  "net_cash_per_ads_usd": "6.9006",
+  "ev_cny_m_base": "21349.6925",
+  "after_tax_net_interest_2025": "533.6625",
+  "core_ni_2025_ex_interest": "6708.8375",
+  "ev_over_core_ni": "3.1823",
+  "three_year_sotp": {
+    "bear": {
+      "core_ni_2028": "5224.0913",
+      "equity_cny_m": "39409.3003",
+      "value_usd_per_ads": "12.0856",
+      "vs_price_pct": "-5.5811"
+    },
+    "base": {
+      "core_ni_2028": "6708.8375",
+      "equity_cny_m": "66273.5825",
+      "value_usd_per_ads": "20.3241",
+      "vs_price_pct": "58.7818"
+    },
+    "bull": {
+      "core_ni_2028": "7546.5298",
+      "equity_cny_m": "97122.2326",
+      "value_usd_per_ads": "29.7844",
+      "vs_price_pct": "132.6907"
+    }
+  },
+  "owner_fcf_ttm_ex_interest": "5278.3235",
+  "reverse_dcf": {
+    "0.08": {
+      "implied_g_pct_using_owner_fcf_ttm": "-16.7232",
+      "implied_g_pct_using_core_ni_2025": "-23.4236"
+    },
+    "0.10": {
+      "implied_g_pct_using_owner_fcf_ttm": "-14.7232",
+      "implied_g_pct_using_core_ni_2025": "-21.4236"
+    },
+    "0.12": {
+      "implied_g_pct_using_owner_fcf_ttm": "-12.7232",
+      "implied_g_pct_using_core_ni_2025": "-19.4236"
+    }
+  },
+  "dcf": {
+    "0.08": {
+      "bear": {
+        "pv_flows": "17473.6209",
+        "pv_terminal": "9568.2155",
+        "equity": "40330.6804",
+        "value_usd_per_ads": "12.3682",
+        "terminal_share_pct": "35.3830",
+        "fcf_2036": "1652.5648"
+      },
+      "base": {
+        "pv_flows": "30195.3663",
+        "pv_terminal": "30074.4915",
+        "equity": "79581.5778",
+        "value_usd_per_ads": "24.4052",
+        "terminal_share_pct": "49.8997",
+        "fcf_2036": "4500.0000"
+      },
+      "bull": {
+        "pv_flows": "41525.7353",
+        "pv_terminal": "56507.8883",
+        "equity": "117345.3436",
+        "value_usd_per_ads": "35.9862",
+        "terminal_share_pct": "57.6413",
+        "fcf_2036": "7176.2525"
+      },
+      "tail_value_usd_per_ads": "2.0376",
+      "probability_weighted_usd_per_ads": "21.0030"
+    },
+    "0.10": {
+      "bear": {
+        "pv_flows": "16187.9753",
+        "pv_terminal": "6371.3526",
+        "equity": "35848.1719",
+        "value_usd_per_ads": "10.9935",
+        "terminal_share_pct": "28.2427",
+        "fcf_2036": "1652.5648"
+      },
+      "base": {
+        "pv_flows": "27650.5520",
+        "pv_terminal": "19469.9361",
+        "equity": "66432.2081",
+        "value_usd_per_ads": "20.3727",
+        "terminal_share_pct": "41.3195",
+        "fcf_2036": "4500.0000"
+      },
+      "bull": {
+        "pv_flows": "37860.5903",
+        "pv_terminal": "35276.1390",
+        "equity": "92448.4493",
+        "value_usd_per_ads": "28.3511",
+        "terminal_share_pct": "48.2331",
+        "fcf_2036": "7176.2525"
+      },
+      "tail_value_usd_per_ads": "2.0376",
+      "probability_weighted_usd_per_ads": "17.4429"
+    },
+    "0.12": {
+      "bear": {
+        "pv_flows": "15052.4245",
+        "pv_terminal": "4434.0136",
+        "equity": "32775.2821",
+        "value_usd_per_ads": "10.0512",
+        "terminal_share_pct": "22.7544",
+        "fcf_2036": "1652.5648"
+      },
+      "base": {
+        "pv_flows": "25426.0036",
+        "pv_terminal": "13303.3487",
+        "equity": "58041.0724",
+        "value_usd_per_ads": "17.7994",
+        "terminal_share_pct": "34.3495",
+        "fcf_2036": "4500.0000"
+      },
+      "bull": {
+        "pv_flows": "34668.0213",
+        "pv_terminal": "23567.7247",
+        "equity": "77547.4660",
+        "value_usd_per_ads": "23.7814",
+        "terminal_share_pct": "40.4695",
+        "fcf_2036": "7176.2525"
+      },
+      "tail_value_usd_per_ads": "2.0376",
+      "probability_weighted_usd_per_ads": "15.2080"
+    }
+  },
+  "action": {
+    "anchor_r10_weighted": "17.4429",
+    "buy_below_70pct": "12.2101",
+    "fair_low_90pct": "15.6986",
+    "trim_above_120pct": "20.9315"
+  },
+  "ten_year_pe": {
+    "0.08": {
+      "bear": "12.5000",
+      "base": "13.3333",
+      "bull": "14.4444"
+    },
+    "0.10": {
+      "bear": "10.0000",
+      "base": "10.3704",
+      "bull": "10.8333"
+    }
+  },
+  "irr10_parsed": {
+    "0.08": {
+      "bear": "3.73",
+      "base": "11.19",
+      "bull": "15.32"
+    },
+    "0.10": {
+      "bear": "1.51",
+      "base": "8.50",
+      "bull": "12.14"
+    }
+  }
+}

@@ -1,0 +1,383 @@
+======================================================================
+报告数据抽检清单
+文件：reports/滴滴/滴滴研究报告-20261021.md
+总提取数据点：185  |  抽样比例：15%  |  抽检数量：28
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  7     44  归母净利润 · 2022                              -237.84  
+  9     44  归母净利润 · 2024                                12.58  
+  8     44  归母净利润 · 2023                               -47.94  
+ 23     52  毛利率 · 2025                                  19.19  %
+ 24     53  经营利润率 · 2023                                -1.48  %
+ 29     54  扣租赁本金后自由现金流，亿元 · 2025                       59.04  
+ 27     54  扣租赁本金后自由现金流，亿元 · 2023                        1.46  
+ 36     65  国际 · 2023收入                                 78.42  
+ 51     71  订单量，百万笔 · 2023                           10809.00  
+ 56     72  总交易额，亿元 · 2025                            3337.59  
+ 58     73  平台销售额占交易额 · 2024                            19.92  %
+ 57     73  平台销售额占交易额 · 2023                            17.69  %
+ 60     74  调整后EBITA占交易额 · 2023                          1.97  %
+ 63     97  现金及等价物 · 2025-12-31                        238.08  
+ 71    101  借款（流动+非流动） · 2025-12-31                    125.85  
+183    153  俄罗斯以出售换股权退出，退出后估值重估向上。滴滴自身也有先例            2016.00  
+109    222  经济股本口径市值，人民币 · 使用边界                         11.65  亿
+108    222  经济股本口径市值，人民币 · 本文计算                        999.47  亿元
+115    226  市值 / 中国出行调整后EBITA · 本文计算                     7.02  倍
+130    261  乐观 · 国际                                    -60.00  
+140    268  基准 · 国际现值，亿元                               174.41  
+144    268  基准 · 相对3.19美元                              113.10  %
+152    283  乐观 · 目标市盈率                                  18.00  倍
+151    283  乐观 · 年增速                                   160.00  %
+155    284  中性 · 年增速                                   130.00  %
+164    299  悲观 g=0% · r−g                                9.00  
+174    301  乐观 g=2.5% · 十年IRR                           21.00  %
+176    330  空仓者 · 建议                                     3.00  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 7,
+    "label": "归母净利润 · 2022",
+    "reported_value": -237.84,
+    "unit": "",
+    "line_number": 44,
+    "raw_text": "| 归母净利润 | -493.43 | -237.84 | -47.94 | 12.58 | 9.93 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "归母净利润 · 2024",
+    "reported_value": 12.58,
+    "unit": "",
+    "line_number": 44,
+    "raw_text": "| 归母净利润 | -493.43 | -237.84 | -47.94 | 12.58 | 9.93 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "归母净利润 · 2023",
+    "reported_value": -47.94,
+    "unit": "",
+    "line_number": 44,
+    "raw_text": "| 归母净利润 | -493.43 | -237.84 | -47.94 | 12.58 | 9.93 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "毛利率 · 2025",
+    "reported_value": 19.19,
+    "unit": "%",
+    "line_number": 52,
+    "raw_text": "| 毛利率 | 15.32% | 18.28% | 19.19% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "经营利润率 · 2023",
+    "reported_value": -1.48,
+    "unit": "%",
+    "line_number": 53,
+    "raw_text": "| 经营利润率 | -1.48% | 0.94% | -1.60% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "扣租赁本金后自由现金流，亿元 · 2025",
+    "reported_value": 59.04,
+    "unit": "",
+    "line_number": 54,
+    "raw_text": "| 扣租赁本金后自由现金流，亿元 | 1.46 | 22.81 | 59.04 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 27,
+    "label": "扣租赁本金后自由现金流，亿元 · 2023",
+    "reported_value": 1.46,
+    "unit": "",
+    "line_number": 54,
+    "raw_text": "| 扣租赁本金后自由现金流，亿元 | 1.46 | 22.81 | 59.04 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "国际 · 2023收入",
+    "reported_value": 78.42,
+    "unit": "",
+    "line_number": 65,
+    "raw_text": "| 国际 | 78.42 | 110.43 | 149.47 | -23.02 | -18.46 | -60.50 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 51,
+    "label": "订单量，百万笔 · 2023",
+    "reported_value": 10809.0,
+    "unit": "",
+    "line_number": 71,
+    "raw_text": "| 订单量，百万笔 | 10,809 | 12,392 | 13,735 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "总交易额，亿元 · 2025",
+    "reported_value": 3337.59,
+    "unit": "",
+    "line_number": 72,
+    "raw_text": "| 总交易额，亿元 | 2,707.21 | 3,014.36 | 3,337.59 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 58,
+    "label": "平台销售额占交易额 · 2024",
+    "reported_value": 19.92,
+    "unit": "%",
+    "line_number": 73,
+    "raw_text": "| 平台销售额占交易额 | 17.69% | 19.92% | 22.37% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 57,
+    "label": "平台销售额占交易额 · 2023",
+    "reported_value": 17.69,
+    "unit": "%",
+    "line_number": 73,
+    "raw_text": "| 平台销售额占交易额 | 17.69% | 19.92% | 22.37% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "调整后EBITA占交易额 · 2023",
+    "reported_value": 1.97,
+    "unit": "%",
+    "line_number": 74,
+    "raw_text": "| 调整后EBITA占交易额 | 1.97% | 3.05% | 3.70% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 63,
+    "label": "现金及等价物 · 2025-12-31",
+    "reported_value": 238.08,
+    "unit": "",
+    "line_number": 97,
+    "raw_text": "| 现金及等价物 | 238.08 | 206.48 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 71,
+    "label": "借款（流动+非流动） · 2025-12-31",
+    "reported_value": 125.85,
+    "unit": "",
+    "line_number": 101,
+    "raw_text": "| 借款（流动+非流动） | 125.85 | 163.10 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 183,
+    "label": "俄罗斯以出售换股权退出，退出后估值重估向上。滴滴自身也有先例",
+    "reported_value": 2016.0,
+    "unit": "",
+    "line_number": 153,
+    "raw_text": "**历史类比**： 优步 2016-2018 年也曾把国内（美国）利润投入多个海外战场，最终在中国、东南亚、俄罗斯以出售换股权退出，退出后估值重估向上。滴滴自身也有先例：2016 年并购优步中国后补贴战结束，利润率才开始修复。类比的含义是：",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 109,
+    "label": "经济股本口径市值，人民币 · 使用边界",
+    "reported_value": 11.6546,
+    "unit": "亿",
+    "line_number": 222,
+    "raw_text": "| 经济股本口径市值，人民币 | 999.47 亿元 | 11.6546 亿股（2026Q1 基本加权，含已归属未发行奖励） |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 108,
+    "label": "经济股本口径市值，人民币 · 本文计算",
+    "reported_value": 999.47,
+    "unit": "亿元",
+    "line_number": 222,
+    "raw_text": "| 经济股本口径市值，人民币 | 999.47 亿元 | 11.6546 亿股（2026Q1 基本加权，含已归属未发行奖励） |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 115,
+    "label": "市值 / 中国出行调整后EBITA · 本文计算",
+    "reported_value": 7.02,
+    "unit": "倍",
+    "line_number": 226,
+    "raw_text": "| 市值 / 中国出行调整后EBITA | 7.02 倍 | 未扣股份支付与税，仅作量级参考 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 130,
+    "label": "乐观 · 国际",
+    "reported_value": -60.0,
+    "unit": "",
+    "line_number": 261,
+    "raw_text": "| 乐观 | 110 / 170 / 220 | -60 / 35 / 90 | -25 / 10 / 60 | 2.5% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 140,
+    "label": "基准 · 国际现值，亿元",
+    "reported_value": 174.41,
+    "unit": "",
+    "line_number": 268,
+    "raw_text": "| 基准 | 1,768.47 | 174.41 | -6.64 | 2,129.86 | 6.80美元 | +113.1% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 144,
+    "label": "基准 · 相对3.19美元",
+    "reported_value": 113.1,
+    "unit": "%",
+    "line_number": 268,
+    "raw_text": "| 基准 | 1,768.47 | 174.41 | -6.64 | 2,129.86 | 6.80美元 | +113.1% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 152,
+    "label": "乐观 · 目标市盈率",
+    "reported_value": 18.0,
+    "unit": "倍",
+    "line_number": 283,
+    "raw_text": "| 乐观 | 160% | 18倍 | 11.57 | 7.74美元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 151,
+    "label": "乐观 · 年增速",
+    "reported_value": 160.0,
+    "unit": "%",
+    "line_number": 283,
+    "raw_text": "| 乐观 | 160% | 18倍 | 11.57 | 7.74美元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 155,
+    "label": "中性 · 年增速",
+    "reported_value": 130.0,
+    "unit": "%",
+    "line_number": 284,
+    "raw_text": "| 中性 | 130% | 14倍 | 8.01 | 4.17美元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 164,
+    "label": "悲观 g=0% · r−g",
+    "reported_value": 9.0,
+    "unit": "",
+    "line_number": 299,
+    "raw_text": "| 悲观 g=0% | 40.00 | 9.0pct | 11.1倍 | -5.78% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 174,
+    "label": "乐观 g=2.5% · 十年IRR",
+    "reported_value": 21.0,
+    "unit": "%",
+    "line_number": 301,
+    "raw_text": "| 乐观 g=2.5% | 422.86 | 6.5pct | 13.5倍 | 21.00% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 176,
+    "label": "空仓者 · 建议",
+    "reported_value": 3.0,
+    "unit": "",
+    "line_number": 330,
+    "raw_text": "| 空仓者 | 观望为主；3.00 美元/ADS 以下可建试探仓，2.50 美元以下可加到计划仓位的一半 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

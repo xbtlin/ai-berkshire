@@ -1,0 +1,409 @@
+======================================================================
+报告数据抽检清单
+文件：reports/唯品会/唯品会研究报告-20261021.md
+总提取数据点：194  |  抽样比例：15%  |  抽检数量：30
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+192      3  date                                      2026.00  
+  7     38  毛利率 · 2022                                  20.96  %
+  9     38  毛利率 · 2024                                  23.49  %
+  8     38  毛利率 · 2023                                  22.79  %
+ 23     41  归母净利率 · 2023                                 7.19  %
+ 24     41  归母净利率 · 2024                                 7.14  %
+ 29     42  经营现金流 · 2024                                91.29  
+ 27     42  经营现金流 · 2022                               105.20  
+ 36     44  简单自由现金流 · 2021                              40.12  
+ 51     58  收入 · 2025Q3                                213.71  
+ 58     59  毛利率 · 2026Q1                                24.44  %
+ 56     59  毛利率 · 2025Q3                                22.97  %
+ 60     59  毛利率 · 滚动四季                                  23.40  %
+ 57     59  毛利率 · 2025Q4                                22.92  %
+ 63     60  经营利润 · 2026Q1                               24.98  
+ 71     62  非GAAP归母净利润 · 2025Q3                         15.01  
+108    130  技术/专利 · 证据                                1522.00  
+109    142  收入每年萎缩5%以上，利润率同步下滑 · 概率（十年内，主观）             30.00  %
+115    145  ADR被迫退市或VIE结构失效 · 概率（十年内，主观）                 5.00  %
+130    222  2025年GAAP市盈率 · 数值                            5.61  倍
+140    228  股息率 · 口径                                  2025.00  
+144    240  保守现金桥 · 金额（亿元）                             132.89  
+152    268  中性 · 三年后目标价                                 15.50  
+151    268  中性 · 目标市盈率                                   7.00  倍
+155    269  悲观 · 目标市盈率                                   5.00  倍
+164    276  中性 · 相对现价                                   58.80  %
+167    277  悲观 · 每ADS价值                                 12.09  
+174    288  中性 · 概率                                     50.00  %
+184    318  r=10%（退出PE 10.0/10.4/10.8倍） · 乐观IRR         12.14  %
+190    365  卖出信号 · 建议                                    8.00  %
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 192,
+    "label": "date",
+    "reported_value": 2026.0,
+    "unit": "",
+    "line_number": 3,
+    "raw_text": "date: 2026-10-21",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 7,
+    "label": "毛利率 · 2022",
+    "reported_value": 20.96,
+    "unit": "%",
+    "line_number": 38,
+    "raw_text": "| 毛利率 | 19.74% | 20.96% | 22.79% | 23.49% | 23.12% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "毛利率 · 2024",
+    "reported_value": 23.49,
+    "unit": "%",
+    "line_number": 38,
+    "raw_text": "| 毛利率 | 19.74% | 20.96% | 22.79% | 23.49% | 23.12% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "毛利率 · 2023",
+    "reported_value": 22.79,
+    "unit": "%",
+    "line_number": 38,
+    "raw_text": "| 毛利率 | 19.74% | 20.96% | 22.79% | 23.49% | 23.12% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "归母净利率 · 2023",
+    "reported_value": 7.19,
+    "unit": "%",
+    "line_number": 41,
+    "raw_text": "| 归母净利率 | 4.00% | 6.11% | 7.19% | 7.14% | 6.84% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "归母净利率 · 2024",
+    "reported_value": 7.14,
+    "unit": "%",
+    "line_number": 41,
+    "raw_text": "| 归母净利率 | 4.00% | 6.11% | 7.19% | 7.14% | 6.84% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "经营现金流 · 2024",
+    "reported_value": 91.29,
+    "unit": "",
+    "line_number": 42,
+    "raw_text": "| 经营现金流 | 67.45 | 105.20 | 144.15 | 91.29 | 74.54 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 27,
+    "label": "经营现金流 · 2022",
+    "reported_value": 105.2,
+    "unit": "",
+    "line_number": 42,
+    "raw_text": "| 经营现金流 | 67.45 | 105.20 | 144.15 | 91.29 | 74.54 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "简单自由现金流 · 2021",
+    "reported_value": 40.12,
+    "unit": "",
+    "line_number": 44,
+    "raw_text": "| 简单自由现金流 | 40.12 | 80.89 | 122.47 | 64.06 | 54.68 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 51,
+    "label": "收入 · 2025Q3",
+    "reported_value": 213.71,
+    "unit": "",
+    "line_number": 58,
+    "raw_text": "| 收入 | 213.71 | 324.74 | 265.75 | 247.07 | 1,051.26 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 58,
+    "label": "毛利率 · 2026Q1",
+    "reported_value": 24.44,
+    "unit": "%",
+    "line_number": 59,
+    "raw_text": "| 毛利率 | 22.97% | 22.92% | 24.44% | 23.29% | 23.40% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "毛利率 · 2025Q3",
+    "reported_value": 22.97,
+    "unit": "%",
+    "line_number": 59,
+    "raw_text": "| 毛利率 | 22.97% | 22.92% | 24.44% | 23.29% | 23.40% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "毛利率 · 滚动四季",
+    "reported_value": 23.4,
+    "unit": "%",
+    "line_number": 59,
+    "raw_text": "| 毛利率 | 22.97% | 22.92% | 24.44% | 23.29% | 23.40% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 57,
+    "label": "毛利率 · 2025Q4",
+    "reported_value": 22.92,
+    "unit": "%",
+    "line_number": 59,
+    "raw_text": "| 毛利率 | 22.97% | 22.92% | 24.44% | 23.29% | 23.40% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 63,
+    "label": "经营利润 · 2026Q1",
+    "reported_value": 24.98,
+    "unit": "",
+    "line_number": 60,
+    "raw_text": "| 经营利润 | 12.62 | 28.99 | 24.98 | 15.20 | 81.79 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 71,
+    "label": "非GAAP归母净利润 · 2025Q3",
+    "reported_value": 15.01,
+    "unit": "",
+    "line_number": 62,
+    "raw_text": "| 非GAAP归母净利润 | 15.01 | 28.58 | 23.06 | 3.92 | 70.57 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 108,
+    "label": "技术/专利 · 证据",
+    "reported_value": 1522.0,
+    "unit": "",
+    "line_number": 130,
+    "raw_text": "| 技术/专利 | 研发人员1,522人，技术与内容费用2025年17.55亿元 | 无明显壁垒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 109,
+    "label": "收入每年萎缩5%以上，利润率同步下滑 · 概率（十年内，主观）",
+    "reported_value": 30.0,
+    "unit": "%",
+    "line_number": 142,
+    "raw_text": "| 收入每年萎缩5%以上，利润率同步下滑 | 30% | 高：内在价值下降约一半 | 2026Q2收入-4.26%，Q3指引-5%到0% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 115,
+    "label": "ADR被迫退市或VIE结构失效 · 概率（十年内，主观）",
+    "reported_value": 5.0,
+    "unit": "%",
+    "line_number": 145,
+    "raw_text": "| ADR被迫退市或VIE结构失效 | 5% | 极高：ADS价值大部分损失 | 2022年5月曾被列入HFCAA认定名单，同年12月PCAOB撤销决定 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 130,
+    "label": "2025年GAAP市盈率 · 数值",
+    "reported_value": 5.61,
+    "unit": "倍",
+    "line_number": 222,
+    "raw_text": "| 2025年GAAP市盈率 | 5.61倍 | 市值/2025年归母净利润72.42亿元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 140,
+    "label": "股息率 · 口径",
+    "reported_value": 2025.0,
+    "unit": "",
+    "line_number": 228,
+    "raw_text": "| 股息率 | 4.84% | 2025年度每ADS派息0.62美元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 144,
+    "label": "保守现金桥 · 金额（亿元）",
+    "reported_value": 132.89,
+    "unit": "",
+    "line_number": 240,
+    "raw_text": "| 保守现金桥 | 132.89 | 再扣供应商净占款（应付账款减存货）60.23亿元，视为经营必需 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 152,
+    "label": "中性 · 三年后目标价",
+    "reported_value": 15.5,
+    "unit": "",
+    "line_number": 268,
+    "raw_text": "| 中性 | 0% | 7倍 | 15.5美元 | +21.5% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 151,
+    "label": "中性 · 目标市盈率",
+    "reported_value": 7.0,
+    "unit": "倍",
+    "line_number": 268,
+    "raw_text": "| 中性 | 0% | 7倍 | 15.5美元 | +21.5% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 155,
+    "label": "悲观 · 目标市盈率",
+    "reported_value": 5.0,
+    "unit": "倍",
+    "line_number": 269,
+    "raw_text": "| 悲观 | -8% | 5倍 | 8.6美元 | -32.4% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 164,
+    "label": "中性 · 相对现价",
+    "reported_value": 58.8,
+    "unit": "%",
+    "line_number": 276,
+    "raw_text": "| 中性 | 0% | 7倍 | 基准 | 20.32美元 | +58.8% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 167,
+    "label": "悲观 · 每ADS价值",
+    "reported_value": 12.09,
+    "unit": "",
+    "line_number": 277,
+    "raw_text": "| 悲观 | -8% | 5倍 | 保守 | 12.09美元 | -5.6% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 174,
+    "label": "中性 · 概率",
+    "reported_value": 50.0,
+    "unit": "%",
+    "line_number": 288,
+    "raw_text": "| 中性 | 45亿元 | 0% | 1% | 50% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 184,
+    "label": "r=10%（退出PE 10.0/10.4/10.8倍） · 乐观IRR",
+    "reported_value": 12.14,
+    "unit": "%",
+    "line_number": 318,
+    "raw_text": "| r=10%（退出PE 10.0/10.4/10.8倍） | 1.51% | 8.50% | 12.14% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 190,
+    "label": "卖出信号 · 建议",
+    "reported_value": 8.0,
+    "unit": "%",
+    "line_number": 365,
+    "raw_text": "| 卖出信号 | ① 连续两个季度收入同比下降超过8%，且经营利润率低于6%；② 年度分红暂停或回购明显缩减；③ 现金出境或分红受到新的监管限制；④ 控股股东主导大额关联交易或低回报并购；⑤ 价格超过20.9美元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

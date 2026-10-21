@@ -1,0 +1,236 @@
+{
+  "units": "人民币百万元，除非另注；子公司现金类为人民币千元换算成百万元",
+  "market": {
+    "hk_price_hkd": "104.40",
+    "hk_price_date": "2026-10-20（9618.HK收盘，stockanalysis与Yahoo一致）",
+    "ads_price_usd_check": "26.78",
+    "ads_price_date": "2026-10-19（JD ADS收盘，stockanalysis与Yahoo一致；10-20收盘未出）",
+    "shares_outstanding": "2688000000",
+    "shares_date": "2026-06-30流通股，公司2026Q2业绩6-K资产负债表（已发行2,756百万股）；7月后回购未公布",
+    "ordinary_per_ads": "2",
+    "usd_cny": "6.7200",
+    "hkd_cny": "0.85628",
+    "fx_date": "2026-10-20 中国外汇交易中心人民币汇率中间价"
+  },
+  "balance_sheet_20260630_cny_mn": {
+    "cash": "89068",
+    "restricted_cash": "13396",
+    "short_term_investments": "132594",
+    "short_term_debt": "3534",
+    "notes_current": "13555",
+    "notes_noncurrent": "16607",
+    "long_term_debt": "36196",
+    "accounts_payable": "228961",
+    "accounts_payable_20251231": "188379",
+    "jd_shareholders_equity": "219118",
+    "nci_book": "63257"
+  },
+  "investments_cny_mn": {
+    "equity_investees_book": "58040",
+    "noncurrent_securities_book": "38395"
+  },
+  "listed_subsidiaries": {
+    "京东物流2618": {
+      "price_hkd": "10.26",
+      "shares_total": "6628721572",
+      "jd_shares_held": "4192271100",
+      "cash": "15760.775",
+      "term_deposits": "1475.403",
+      "fvtpl_current": "3378.765",
+      "fvtpl_noncurrent": "15892.367",
+      "borrowings": "5174.557"
+    },
+    "京东健康6618": {
+      "price_hkd": "39.80",
+      "shares_total": "3190481011",
+      "jd_shares_held": "2149253732",
+      "cash": "20445.564",
+      "term_deposits": "13726.137",
+      "fvtpl_current": "13244.059",
+      "fvtpl_noncurrent": "20934.755",
+      "borrowings": "0"
+    },
+    "京东工业7618": {
+      "price_hkd": "13.12",
+      "shares_total": "2714959931",
+      "jd_shares_held": "1944222154",
+      "cash": "6633.368",
+      "term_deposits": "3604.501",
+      "fvtpl_current": "4506.976",
+      "fvtpl_noncurrent": "525.803",
+      "borrowings": "0"
+    }
+  },
+  "post_period_cash_items_cny_mn": {
+    "Ceconomy收购（未交割，按对价≈所购权益价值处理，记零）": "0"
+  },
+  "investment_haircut_base": "0.5",
+  "history_cny_mn": {
+    "revenue": {
+      "2021": "951592",
+      "2022": "1046236",
+      "2023": "1084662",
+      "2024": "1158819",
+      "2025": "1309085"
+    },
+    "cogs": {
+      "2021": "822526",
+      "2022": "899163",
+      "2023": "924958",
+      "2024": "974951",
+      "2025": "1099057"
+    },
+    "operating_income": {
+      "2021": "4141",
+      "2022": "19723",
+      "2023": "26025",
+      "2024": "38736",
+      "2025": "2774"
+    },
+    "ni_attr": {
+      "2021": "-3560",
+      "2022": "10380",
+      "2023": "24167",
+      "2024": "41359",
+      "2025": "19631"
+    },
+    "non_gaap_ni": {
+      "2021": "17207",
+      "2022": "28220",
+      "2023": "35200",
+      "2024": "47827",
+      "2025": "27032"
+    },
+    "cfo": {
+      "2021": "42301",
+      "2022": "57819",
+      "2023": "59521",
+      "2024": "58095",
+      "2025": "18991"
+    },
+    "company_fcf": {
+      "2021": "26228",
+      "2022": "35595",
+      "2023": "40651",
+      "2024": "43740",
+      "2025": "6476"
+    }
+  },
+  "ttm_components_cny_mn": {
+    "_note": "[FY2025, 2025H1, 2026H1]，TTM = FY2025 - 2025H1 + 2026H1",
+    "revenue": [
+      "1309085",
+      "657742",
+      "662095"
+    ],
+    "ni_attr": [
+      "19631",
+      "17068",
+      "12231"
+    ],
+    "non_gaap_ni": [
+      "27032",
+      "20152",
+      "16309"
+    ],
+    "retail_oi": [
+      "51402",
+      "26785",
+      "28438"
+    ],
+    "logistics_oi": [
+      "5269",
+      "2103",
+      "3283"
+    ],
+    "new_business_oi": [
+      "-46641",
+      "-16104",
+      "-20206"
+    ],
+    "unallocated": [
+      "-7256",
+      "-3110",
+      "-3161"
+    ],
+    "nci_income": [
+      "3511",
+      "920",
+      "2286"
+    ]
+  },
+  "ttm_company_fcf_cny_mn": "31415",
+  "core_retail_ex_listed_ttm_cny_mn": "45366",
+  "core_retail_ex_listed_note": "零售TTM经营利润53,055 - 京东健康FY2025归母净利5,375 - 京东工业FY2025净利2,314（估算：子公司口径为IFRS净利，含利息收入，扣除偏多，结果偏保守）",
+  "core_ttm_pre_tax_operating_cny_mn": "-12684",
+  "core_ttm_note": "45,366 + 新业务TTM -50,743 + 未分配TTM -7,307",
+  "tax_rate": "0.20",
+  "hurdle_usd": "0.10",
+  "margin_of_safety": "0.25",
+  "scenarios": {
+    "bull": {
+      "probability": "0.25",
+      "retail_ex_listed_2029": "60000",
+      "new_business_2029": "-5000",
+      "unallocated_2029": "-6000",
+      "exit_pe": "12",
+      "subsidiary_value_change": "0.20",
+      "investment_haircut": "0.75",
+      "core_cash_2027_2029": [
+        "25000",
+        "35000",
+        "40000"
+      ],
+      "net_share_reduction_3y": "0"
+    },
+    "base": {
+      "probability": "0.50",
+      "retail_ex_listed_2029": "50000",
+      "new_business_2029": "-20000",
+      "unallocated_2029": "-6500",
+      "exit_pe": "10",
+      "subsidiary_value_change": "0",
+      "investment_haircut": "0.5",
+      "core_cash_2027_2029": [
+        "5000",
+        "12000",
+        "20000"
+      ],
+      "net_share_reduction_3y": "0"
+    },
+    "bear": {
+      "probability": "0.25",
+      "retail_ex_listed_2029": "40000",
+      "new_business_2029": "-30000",
+      "unallocated_2029": "-7000",
+      "exit_pe": "8",
+      "subsidiary_value_change": "-0.30",
+      "investment_haircut": "0.25",
+      "core_cash_2027_2029": [
+        "-20000",
+        "-12000",
+        "-5000"
+      ],
+      "net_share_reduction_3y": "0"
+    },
+    "_note": "三年累计核心现金已包含回购与分红的资金来源，故不再另减股数，避免重复计算"
+  },
+  "reverse_pe_grid": [
+    "6",
+    "8",
+    "10",
+    "12"
+  ],
+  "reverse_r_grid": [
+    "0.08",
+    "0.10"
+  ],
+  "ten_year": {
+    "profit_2036_cny_bn": {
+      "bear": "15",
+      "base": "46",
+      "bull": "75"
+    },
+    "note": "终值年利润 = 核心税后经营利润 + 上市子公司归属京东利润 + 母公司净现金税后利息；均为情景假设"
+  }
+}

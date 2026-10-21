@@ -1,0 +1,393 @@
+COMMAND: python3 tools/financial_rigor.py verify-market-cap --price 125.25 --shares 640330430.2 --reported 80201386383 --currency USD
+EXIT: 0
+============================================================
+市值验算 (Market Cap Verification)
+============================================================
+  股价 (Price):       125.25 USD
+  总股本 (Shares):    640.33M
+  计算市值:           80.20B USD
+  报告市值:           80.20B USD
+  偏差:               0.00%
+
+  ✅ 验证通过, 偏差仅 0.00%
+
+COMMAND: python3 tools/financial_rigor.py calc --expr 195.20*3201652151
+EXIT: 0
+============================================================
+精确计算 (Exact Calculator)
+============================================================
+  表达式: 195.20*3201652151
+  结果:   624.96B
+  精确值: 624962499875.2
+
+COMMAND: python3 tools/financial_rigor.py cross-validate --field NTES close 2026-10-19 --values {"Yahoo": 125.25, "StockAnalysis": 125.25} --unit USD
+EXIT: 0
+============================================================
+交叉验证: NTES close 2026-10-19 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 125.25 USD
+
+  ✅ Yahoo               : 125.25 USD  (偏差 0.00%)
+  ✅ StockAnalysis       : 125.25 USD  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 125.25 USD
+
+COMMAND: python3 tools/financial_rigor.py cross-validate --field 9999.HK close 2026-10-20 (HKD) vs NTES-implied --values {"StockAnalysis_HK_x5_div_USDHKD": 124.3518, "NTES_close": 125.25} --unit USD per ADS
+EXIT: 0
+============================================================
+交叉验证: 9999.HK close 2026-10-20 (HKD) vs NTES-implied (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 124.80 USD per ADS
+
+  ✅ StockAnalysis_HK_x5_div_USDHKD: 124.35 USD per ADS  (偏差 0.36%)
+  ✅ NTES_close          : 125.25 USD per ADS  (偏差 0.36%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 124.80 USD per ADS
+
+COMMAND: python3 tools/financial_rigor.py cross-validate --field shares outstanding --values {"HKEX monthly return 2026-09-30": 3201652151, "20-F cover 2025-12-31": 3192111251, "StockAnalysis": 3200000000} --unit shares
+EXIT: 0
+============================================================
+交叉验证: shares outstanding (Cross-Validation)
+============================================================
+  数据来源数: 3
+  参考中位数: 3.20B shares
+
+  ✅ HKEX monthly return 2026-09-30: 3.20B shares  (偏差 0.05%)
+  ✅ 20-F cover 2025-12-31: 3.19B shares  (偏差 0.25%)
+  ✅ StockAnalysis       : 3.20B shares  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 3.20B shares
+
+COMMAND: python3 tools/financial_rigor.py cross-validate --field USD/CNY 2026-10-19 --values {"ECB_frankfurter": 6.6807, "Yahoo": 6.6909} --unit CNY
+EXIT: 0
+============================================================
+交叉验证: USD/CNY 2026-10-19 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 6.69 CNY
+
+  ✅ ECB_frankfurter     : 6.68 CNY  (偏差 0.08%)
+  ✅ Yahoo               : 6.69 CNY  (偏差 0.08%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 6.69 CNY
+
+COMMAND: python3 tools/financial_rigor.py cross-validate --field FY2025 revenue --values {"HKEX FY2025 results / 20-F": 112625.807, "StockAnalysis": 112626} --unit CNY million
+EXIT: 0
+============================================================
+交叉验证: FY2025 revenue (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 112,625.90 CNY million
+
+  ✅ HKEX FY2025 results / 20-F: 112,625.81 CNY million  (偏差 0.00%)
+  ✅ StockAnalysis       : 112,626.00 CNY million  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 112,625.90 CNY million
+
+COMMAND: python3 tools/financial_rigor.py cross-validate --field FY2025 net income attributable --values {"HKEX FY2025 results / 20-F": 33759.8, "StockAnalysis": 33760} --unit CNY million
+EXIT: 0
+============================================================
+交叉验证: FY2025 net income attributable (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 33,759.90 CNY million
+
+  ✅ HKEX FY2025 results / 20-F: 33,759.80 CNY million  (偏差 0.00%)
+  ✅ StockAnalysis       : 33,760.00 CNY million  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 33,759.90 CNY million
+
+COMMAND: python3 tools/financial_rigor.py cross-validate --field TTM revenue to 2026-06-30 --values {"computed FY25-H1'25+H1'26": 116603.425, "StockAnalysis TTM": 116603} --unit CNY million
+EXIT: 0
+============================================================
+交叉验证: TTM revenue to 2026-06-30 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 116,603.21 CNY million
+
+  ✅ computed FY25-H1'25+H1'26: 116,603.43 CNY million  (偏差 0.00%)
+  ✅ StockAnalysis TTM   : 116,603.00 CNY million  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 116,603.21 CNY million
+
+COMMAND: python3 tools/financial_rigor.py cross-validate --field TTM net income attributable --values {"computed": 32512.4, "StockAnalysis TTM": 32512} --unit CNY million
+EXIT: 0
+============================================================
+交叉验证: TTM net income attributable (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 32,512.20 CNY million
+
+  ✅ computed            : 32,512.40 CNY million  (偏差 0.00%)
+  ✅ StockAnalysis TTM   : 32,512.00 CNY million  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 32,512.20 CNY million
+
+COMMAND: python3 tools/financial_rigor.py cross-validate --field TTM operating cash flow --values {"computed": 51477.3, "StockAnalysis TTM": 51477} --unit CNY million
+EXIT: 0
+============================================================
+交叉验证: TTM operating cash flow (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 51,477.15 CNY million
+
+  ✅ computed            : 51,477.30 CNY million  (偏差 0.00%)
+  ✅ StockAnalysis TTM   : 51,477.00 CNY million  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 51,477.15 CNY million
+
+COMMAND: python3 tools/financial_rigor.py cross-validate --field net cash 2026-06-30 --values {"company stated": 167.5, "recomputed from balance sheet": 167.5} --unit CNY bn
+EXIT: 0
+============================================================
+交叉验证: net cash 2026-06-30 (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 167.50 CNY bn
+
+  ✅ company stated      : 167.50 CNY bn  (偏差 0.00%)
+  ✅ recomputed from balance sheet: 167.50 CNY bn  (偏差 0.00%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 167.50 CNY bn
+
+COMMAND: python3 tools/financial_rigor.py cross-validate --field Ding beneficial ownership --values {"20-F (2026-02-28)": 45.5, "StockAnalysis insider": 45.32} --unit %
+EXIT: 0
+============================================================
+交叉验证: Ding beneficial ownership (Cross-Validation)
+============================================================
+  数据来源数: 2
+  参考中位数: 45.41 %
+
+  ✅ 20-F (2026-02-28)   : 45.50 %  (偏差 0.20%)
+  ✅ StockAnalysis insider: 45.32 %  (偏差 0.20%)
+
+  ✅ 所有来源偏差 ≤ 2.0%, 数据一致
+
+  共识值 (加权中位数): 45.41 %
+
+COMMAND: python3 tools/financial_rigor.py verify-valuation --price 125.25 --eps 7.6002 --bvps 39.0594 --fcf-per-share 11.6877 --dividend 2.9300
+EXIT: 0
+============================================================
+估值指标验算 (Valuation Verification)
+============================================================
+  当前股价: 125.25
+
+  PE (TTM):  125.25 / 7.6002 = 16.48x
+  盈利收益率: 6.07%
+  PB:        125.25 / 39.0594 = 3.21x
+  ROE:       7.6002 / 39.0594 = 19.46%
+  P/FCF:     125.25 / 11.6877 = 10.72x
+  FCF Yield: 9.33%
+  股息率:    2.93 / 125.25 = 2.34%
+
+  ✅ 以上指标均使用精确十进制计算, 无浮点误差
+
+COMMAND: python3 tools/financial_rigor.py verify-valuation --price 125.25 --eps 8.2356
+EXIT: 0
+============================================================
+估值指标验算 (Valuation Verification)
+============================================================
+  当前股价: 125.25
+
+  PE (TTM):  125.25 / 8.2356 = 15.21x
+  盈利收益率: 6.58%
+
+  ✅ 以上指标均使用精确十进制计算, 无浮点误差
+
+COMMAND: python3 tools/financial_rigor.py three-scenario --price 125.25 --eps 8.2356 --shares 6.4033 --growth 0.08 0.04 -0.05 --pe 18 15 11 --years 3 --currency USD
+EXIT: 0
+============================================================
+三情景估值模型 (Three-Scenario Valuation)
+============================================================
+  当前股价: 125.25 USD
+  当前EPS:  8.2356
+  预测期:   3年
+
+  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅
+  ------------ -------- -------- ---------- ---------- --------
+  乐观 (Bull)          8%      18x      10.37     186.7   +49.1%
+  中性 (Base)          4%      15x       9.26     139.0   +10.9%
+  悲观 (Bear)         -5%      11x       7.06      77.7   -38.0%
+
+  ✅ 所有计算使用精确十进制, 结果可审计复现
+
+COMMAND: python3 tools/terminal_value.py audit --currency CNY --r 0.08 --roic 0.25 --g 0.005,0.02,0.025 --rf 0.016385 --beta 1.0 --discrete-risks 游戏监管重击:尾部档,境外上市结构或退市:尾部档,海外地缘与出口管制:情景,新品失败:情景,境内现金汇出预提税:未建模
+EXIT: 0
+
+========================================================================
+估值口径准出检查   币种=CNY   r=8.00%   ROIC=25%   g=0.5%/2.0%/2.5%
+========================================================================
+
+【C1】币种一致性 — r 与 g 必须用同一个币种
+     CNY 口径基准：中国10年期国债 1.70%（观测）/ 2.5-3.0%（合成）+ ERP 5.18%
+     r 合理区间 [6.0%, 9.0%]   g 上限 2.0%   Rf 1.70%
+     → ✓ 通过
+
+【C2】分母宽度 — r-g 至少 5 个百分点
+     悲观  g= 0.5%  r-g= 7.5pct  PE=     13.1x  g+0.5pct → 13.7x (+5%)  
+     基准  g= 2.0%  r-g= 6.0pct  PE=     15.3x  g+0.5pct → 16.4x (+7%)  
+     乐观  g= 2.5%  r-g= 5.5pct  PE=     16.4x  g+0.5pct → 17.6x (+8%)  
+     → ✓ 通过
+
+【C3】离散风险归属 — 退市/VIE/地缘/监管必须归情景，不得进 r 或 β
+     ✓ 游戏监管重击 → 尾部档
+     ✓ 境外上市结构或退市 → 尾部档
+     ✓ 海外地缘与出口管制 → 情景
+     ✓ 新品失败 → 情景
+     ⚠ 境内现金汇出预提税 → 未建模
+     β = 1.0（默认值，无需理由）
+     → ✓ 通过
+
+========================================================================
+⚠ C3: 「境内现金汇出预提税」未建模，必须写进报告的「限制」章节
+
+【准出】三条硬约束全部通过，可以把估值写进报告。
+       但上述 1 条警告必须在报告里显式写出。
+
+
+COMMAND: python3 tools/terminal_value.py pe --roic 0.25 --g 0.005 --r 0.08
+EXIT: 0
+
+PE(终值) = (1 - g/ROIC) / (r - g)
+
+  ROIC = 25.0%   g = 0.50%   r = 8.00%
+
+  留存率 g/ROIC   = 0.0050 / 0.25 = 0.0200  (2.0%)
+  分子 1 - 留存率 = 0.9800                    （即派息率 98.0%）
+  分母 r - g      = 0.0800 - 0.0050 = 0.0750  (7.5pct)
+
+  退出 PE = 0.9800 / 0.0750 = 13.1x
+
+
+COMMAND: python3 tools/terminal_value.py irr --profit 27.5335 --mcap 535.8014 --pe 13.0667 --years 10 --payout 0.01887
+EXIT: 0
+
+IRR = (2036市值 / 今日市值)^(1/10) - 1 + 股息率 - 稀释率
+
+  2036 市值 = 28 x 13.1x = 360
+  今日市值 = 536
+  总倍数   = 0.6715
+  几何年化 = -3.90%
+  股息-稀释 = +1.89%
+
+  IRR = -2.02%
+
+
+COMMAND: python3 tools/terminal_value.py pe --roic 0.25 --g 0.02 --r 0.08
+EXIT: 0
+
+PE(终值) = (1 - g/ROIC) / (r - g)
+
+  ROIC = 25.0%   g = 2.00%   r = 8.00%
+
+  留存率 g/ROIC   = 0.0200 / 0.25 = 0.0800  (8.0%)
+  分子 1 - 留存率 = 0.9200                    （即派息率 92.0%）
+  分母 r - g      = 0.0800 - 0.0200 = 0.0600  (6.0pct)
+
+  退出 PE = 0.9200 / 0.0600 = 15.3x
+
+
+COMMAND: python3 tools/terminal_value.py irr --profit 48.8989 --mcap 535.8014 --pe 15.3333 --years 10 --payout 0.01887
+EXIT: 0
+
+IRR = (2036市值 / 今日市值)^(1/10) - 1 + 股息率 - 稀释率
+
+  2036 市值 = 49 x 15.3x = 750
+  今日市值 = 536
+  总倍数   = 1.3994
+  几何年化 = +3.42%
+  股息-稀释 = +1.89%
+
+  IRR = +5.30%
+
+
+COMMAND: python3 tools/terminal_value.py pe --roic 0.25 --g 0.025 --r 0.08
+EXIT: 0
+
+PE(终值) = (1 - g/ROIC) / (r - g)
+
+  ROIC = 25.0%   g = 2.50%   r = 8.00%
+
+  留存率 g/ROIC   = 0.0250 / 0.25 = 0.1000  (10.0%)
+  分子 1 - 留存率 = 0.9000                    （即派息率 90.0%）
+  分母 r - g      = 0.0800 - 0.0250 = 0.0550  (5.5pct)
+
+  退出 PE = 0.9000 / 0.0550 = 16.4x
+
+
+COMMAND: python3 tools/terminal_value.py irr --profit 65.5057 --mcap 535.8014 --pe 16.3636 --years 10 --payout 0.01887
+EXIT: 0
+
+IRR = (2036市值 / 今日市值)^(1/10) - 1 + 股息率 - 稀释率
+
+  2036 市值 = 66 x 16.4x = 1,072
+  今日市值 = 536
+  总倍数   = 2.0006
+  几何年化 = +7.18%
+  股息-稀释 = +1.89%
+
+  IRR = +9.07%
+
+
+COMMAND: python3 tools/terminal_value.py flip --name 网易 --roic 0.25 --g 0.005,0.02,0.025 --p 0.30,0.50,0.20 --irr10=-4.26,2.37,5.79 --k 0.01887 --r 0.08 --delta 0.02 --currency CNY --g-shift 0 --rf 0.016385
+EXIT: 0
+
+网易  |  基准 r = 8.00%   Δr = ±2pp   币种 CNY   g平移 +0.0%   Rf = 1.64%   持有期 10 年
+币种合理区间：r ∈ [6.0%, 9.0%]（同 audit C1）；区间外档位仅供参考，不参与翻转判定。
+判定规则：期望 IRR ≥ r → 通过仓位压力测试；否则未通过。
+角色：十年模型 = 仓位压力测试，不是买入/持有/回避的唯一否决票。
+
+档位               r       期望IRR        相对 r      压力测试
+------------------------------------------------------
+r−2pp        6.00%      +7.90%     +1.90pp  通过
+基准 r         8.00%      +3.86%     -4.14pp  未通过
+r+2pp       10.00%      +1.07%     -8.93pp  未通过（区间外，仅供参考）
+------------------------------------------------------
+
+【翻转】结论在币种合理区间内随 Δr±2pp 翻转。报告必须写明：本结论对折现率敏感；不得用单一基准 r 的未通过一票否决买入。
+        正确用法：收紧仓位上限，并完成与三年三情景/thesis 的「估值分歧对账」。
+
+提醒：禁止为迎合买入结论而把 r 调出币种合理区间；敏感性是为了一致性审计，不是为了「调低 r 去买」。
+
+
+COMMAND: python3 tools/terminal_value.py flip --name 网易 --roic 0.25 --g 0.005,0.02,0.025 --p 0.30,0.50,0.20 --irr10=-4.26,2.37,5.79 --k 0.01887 --r 0.08 --delta 0.01 --currency CNY --g-shift 0 --rf 0.016385
+EXIT: 0
+
+网易  |  基准 r = 8.00%   Δr = ±1pp   币种 CNY   g平移 +0.0%   Rf = 1.64%   持有期 10 年
+币种合理区间：r ∈ [6.0%, 9.0%]（同 audit C1）；区间外档位仅供参考，不参与翻转判定。
+判定规则：期望 IRR ≥ r → 通过仓位压力测试；否则未通过。
+角色：十年模型 = 仓位压力测试，不是买入/持有/回避的唯一否决票。
+
+档位               r       期望IRR        相对 r      压力测试
+------------------------------------------------------
+r−1pp        7.00%      +5.66%     -1.34pp  未通过
+基准 r         8.00%      +3.86%     -4.14pp  未通过
+r+1pp        9.00%      +2.35%     -6.65pp  未通过
+------------------------------------------------------
+
+【稳定】Δr±1pp 区间内压力测试始终未通过——相对折现率扰动更稳健。
+        未通过仍只约束仓位，不自动等于回避；须与其他五个维度并列决策。
+
+提醒：禁止为迎合买入结论而把 r 调出币种合理区间；敏感性是为了一致性审计，不是为了「调低 r 去买」。
+

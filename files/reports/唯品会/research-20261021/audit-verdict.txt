@@ -1,0 +1,58 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：唯品会研究报告-20261021.md
+======================================================================
+
+  ✅ 通过 [ 7] 毛利率 · 2022                           报告:        20.96 %
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001529192.json FY2022 GrossProfit/Revenue: 20.96 (偏差 0.02%)  |  https://stockanalysis.com/stocks/vips/financials/ gross margin FY2022: 20.95 (偏差 0.05%)
+  ✅ 通过 [ 9] 毛利率 · 2024                           报告:        23.49 %
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000110465926044015/vips-20251231x20f.htm F-7 income statement 2024: 23.49 (偏差 0.01%)  |  https://stockanalysis.com/stocks/vips/financials/ gross margin FY2024: 23.49 (偏差 0.00%)
+  ✅ 通过 [ 8] 毛利率 · 2023                           报告:        22.79 %
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000110465926044015/vips-20251231x20f.htm F-7 income statement 2023: 22.79 (偏差 0.00%)  |  https://stockanalysis.com/stocks/vips/financials/ gross margin FY2023: 22.79 (偏差 0.00%)
+  ✅ 通过 [23] 归母净利率 · 2023                         报告:         7.19 %
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000110465926044015/vips-20251231x20f.htm F-8 NI attributable / revenue 2023: 7.19 (偏差 0.03%)  |  https://stockanalysis.com/stocks/vips/financials/ profit margin FY2023: 7.19 (偏差 0.00%)
+  ✅ 通过 [24] 归母净利率 · 2024                         报告:         7.14 %
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000110465926044015/vips-20251231x20f.htm F-8 NI attributable / revenue 2024: 7.14 (偏差 0.02%)  |  https://stockanalysis.com/stocks/vips/financials/ profit margin FY2024: 7.14 (偏差 0.00%)
+  ✅ 通过 [29] 经营现金流 · 2024                         报告:        91.29 
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000110465926044015/vips-20251231x20f.htm F-13 net cash from operating activities 2024 (9,128,983k): 91.29 (偏差 0.00%)  |  https://stockanalysis.com/stocks/vips/financials/cash-flow-statement/ FY2024 9,129: 91.29 (偏差 0.00%)
+  ✅ 通过 [27] 经营现金流 · 2022                         报告:       105.20 
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001529192.json NetCashProvidedByUsedInOperatingActivities FY2022 10519.7m: 105.20 (偏差 0.00%)  |  https://stockanalysis.com/stocks/vips/financials/cash-flow-statement/ FY2022 10,520: 105.20 (偏差 0.00%)
+  ✅ 通过 [36] 简单自由现金流 · 2021                       报告:        40.12 
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001529192.json FY2021 CFO 6744.6 - PP&E purchases 2732.4 (derived): 40.12 (偏差 0.00%)  |  https://stockanalysis.com/stocks/vips/financials/cash-flow-statement/ FY2021 FCF 4,012: 40.12 (偏差 0.00%)
+  ✅ 通过 [51] 收入 · 2025Q3                          报告:       213.71 
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000119312525288927/d842251dex991.htm total net revenues 21,370,865k: 213.71 (偏差 0.00%)  |  https://stockanalysis.com/stocks/vips/financials/?p=quarterly Q3 2025 21,371: 213.71 (偏差 0.00%)
+  ✅ 通过 [58] 毛利率 · 2026Q1                         报告:        24.44 %
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000110465926064870/tm2615319d1_ex99-1.htm gross profit / revenue: 24.44 (偏差 0.01%)  |  https://stockanalysis.com/stocks/vips/financials/?p=quarterly Q1 2026 gross margin: 24.44 (偏差 0.00%)
+  ✅ 通过 [56] 毛利率 · 2025Q3                         报告:        22.97 %
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000119312525288927/d842251dex991.htm gross profit / revenue: 22.97 (偏差 0.00%)  |  https://stockanalysis.com/stocks/vips/financials/?p=quarterly Q3 2025 gross margin: 22.97 (偏差 0.00%)
+  ✅ 通过 [60] 毛利率 · 滚动四季                           报告:        23.40 %
+                                                    sum of four 6-K quarters (derived): 23.40 (偏差 0.01%)  |  https://stockanalysis.com/stocks/vips/financials/ TTM gross margin: 23.40 (偏差 0.00%)
+  ✅ 通过 [57] 毛利率 · 2025Q4                         报告:        22.92 %
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000110465926019965/tm267413d1_ex99-1.htm gross profit / revenue: 22.92 (偏差 0.02%)  |  https://stockanalysis.com/stocks/vips/financials/?p=quarterly Q4 2025 gross margin: 22.92 (偏差 0.00%)
+  ✅ 通过 [63] 经营利润 · 2026Q1                        报告:        24.98 
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000110465926064870/tm2615319d1_ex99-1.htm income from operations 2,497,769k: 24.98 (偏差 0.00%)
+  ✅ 通过 [71] 非GAAP归母净利润 · 2025Q3                  报告:        15.01 
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000119312525288927/d842251dex991.htm non-GAAP NI attributable 1,501,489k: 15.01 (偏差 0.00%)
+  ✅ 通过 [108] 技术/专利 · 证据                           报告:      1522.00 
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000110465926044015/vips-20251231x20f.htm Item 6.D employees: research and development 1,522: 1522.00 (偏差 0.00%)
+  ✅ 通过 [130] 2025年GAAP市盈率 · 数值                    报告:         5.61 倍
+                                                    derived: 12.80 USD (Nasdaq 10-19 close) x 475.5m ADS (https://www.sec.gov/Archives/edgar/data/1529192/000110465926100484/tm2623972d1_ex99-1.htm 95.1m shares x5) x 6.6807 / FY2025 NI 7,242.49m (https://www.sec.gov/Archives/edgar/data/1529192/000110465926044015/vips-20251231x20f.htm): 5.61 (偏差 0.08%)
+  ✅ 通过 [140] 股息率 · 口径                             报告:      2025.00 
+                                                    https://www.sec.gov/Archives/edgar/data/1529192/000110465926019965/tm267413d1_ex99-1.htm 'annual cash dividend for fiscal year 2025 ... US$0.62 per ADS': 2025.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 18  |  通过: 18  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 18,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 18,
+  "fail_items": [],
+  "warn_items": []
+}
+
+抽样总数 30：事实类进入判决 18（双源 13），模型假设/输出/行动条件 11 单独归类不进判决，元数据 1。

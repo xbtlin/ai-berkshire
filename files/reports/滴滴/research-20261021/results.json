@@ -1,0 +1,183 @@
+{
+  "price_per_ordinary_share_usd": "12.7600",
+  "market_cap_legal_usd_bn": "14.3790",
+  "market_cap_legal_cny_bn": "96.6382",
+  "market_cap_economic_usd_bn": "14.8713",
+  "market_cap_economic_cny_bn": "99.9471",
+  "ads_equivalent_legal_bn": "4.5075",
+  "TTM_revenue_mn": "238300.0000",
+  "TTM_attrib_profit_mn": "767.0000",
+  "TTM_CM_adj_EBITA_mn": "13768.0000",
+  "TTM_Intl_adj_EBITA_mn": "-10901.0000",
+  "FY2025": {
+    "revenue_mn": "226701.4330",
+    "attrib_profit_mn": "992.6470",
+    "OCF_mn": "9816.0650",
+    "capex_gross_mn": "3355.7490",
+    "lease_principal_mn": "556.7740",
+    "class_action_accrual_mn": "5298.0000",
+    "FCF_simple_mn": "6460.3160",
+    "FCF_after_lease_mn": "5903.5420",
+    "FCF_after_lease_ex_unpaid_class_action_mn": "605.5420",
+    "adj_EBITA_mn": "3671.0000",
+    "CM_adj_EBITA_margin_on_revenue_pct": "6.1169",
+    "CM_adj_EBITA_over_GTV_pct": "3.7006",
+    "CM_platform_sales_over_GTV_pct": "22.3718",
+    "gross_margin_pct": "19.1903"
+  },
+  "history": {
+    "2023": {
+      "gross_margin_pct": "15.3155",
+      "op_margin_pct": "-1.4754",
+      "FCF_after_lease_mn": "145.7520",
+      "CM_EBITA_over_GTV_pct": "1.9662",
+      "CM_PS_over_GTV_pct": "17.6854",
+      "CM_EBITA_over_PS_pct": "11.1178"
+    },
+    "2024": {
+      "gross_margin_pct": "18.2813",
+      "op_margin_pct": "0.9393",
+      "FCF_after_lease_mn": "2280.8410",
+      "CM_EBITA_over_GTV_pct": "3.0467",
+      "CM_PS_over_GTV_pct": "19.9236",
+      "CM_EBITA_over_PS_pct": "15.2921"
+    },
+    "2025": {
+      "gross_margin_pct": "19.1903",
+      "op_margin_pct": "-1.6010",
+      "FCF_after_lease_mn": "5903.5420",
+      "CM_EBITA_over_GTV_pct": "3.7006",
+      "CM_PS_over_GTV_pct": "22.3718",
+      "CM_EBITA_over_PS_pct": "16.5412"
+    }
+  },
+  "Q1_2026_bridge_inputs": {
+    "buyback_cum_ADS_mn": "408.7000",
+    "buyback_cum_usd_mn": "1825.2000",
+    "avg_price_per_ADS": "4.4659"
+  },
+  "options_outstanding_shares": "89767822.0000",
+  "options_pct_of_legal": "7.9661",
+  "PE_FY2025_legal": "97.3541",
+  "PE_TTM_legal": "125.9951",
+  "PS_TTM_legal": "0.4055",
+  "mcap_over_TTM_CM_EBITA": "7.0190",
+  "TTM_EPS_economic_cny": "0.6581",
+  "three_year_per_ADS_usd": {
+    "bull": {
+      "EPS_2029_cny": "11.5669",
+      "price_cny_per_share": "208.2042",
+      "per_ADS_usd": "7.7448"
+    },
+    "base": {
+      "EPS_2029_cny": "8.0072",
+      "price_cny_per_share": "112.1007",
+      "per_ADS_usd": "4.1699"
+    },
+    "bear": {
+      "EPS_2029_cny": "1.4459",
+      "price_cny_per_share": "14.4586",
+      "per_ADS_usd": "0.5378"
+    }
+  },
+  "noncore_investments_after_haircut_bn": "7.5035",
+  "bridge_bn": "19.3615",
+  "bridge_june_secondary_bn": "12.2145",
+  "bridge_june_per_ADS_change_usd": "-0.2281",
+  "simple_net_cash_bn": "32.4150",
+  "scenarios": {
+    "bear": {
+      "PV_china_mobility_bn": "85.2876",
+      "PV_international_bn": "-26.1465",
+      "PV_other_bn": "-19.2530",
+      "EV_bn": "39.8881",
+      "equity_bn": "59.2496",
+      "value_per_ADS_usd": "1.8911",
+      "upside_pct": "-40.7190",
+      "terminal_share_pct": "82.3658",
+      "FCFF_2036_bn": "4.0000"
+    },
+    "base": {
+      "PV_china_mobility_bn": "176.8468",
+      "PV_international_bn": "17.4414",
+      "PV_other_bn": "-0.6639",
+      "EV_bn": "193.6243",
+      "equity_bn": "212.9858",
+      "value_per_ADS_usd": "6.7978",
+      "upside_pct": "113.0986",
+      "terminal_share_pct": "65.1675",
+      "FCFF_2036_bn": "20.5000"
+    },
+    "bull": {
+      "PV_china_mobility_bn": "250.1226",
+      "PV_international_bn": "72.8736",
+      "PV_other_bn": "45.5451",
+      "EV_bn": "368.5412",
+      "equity_bn": "387.9027",
+      "value_per_ADS_usd": "12.3807",
+      "upside_pct": "288.1082",
+      "terminal_share_pct": "66.8746",
+      "FCFF_2036_bn": "37.0000"
+    }
+  },
+  "probability_weighted_value_per_ADS_usd": "6.4424",
+  "base_x_0_75_per_ADS_usd": "5.0984",
+  "sensitivity_base_per_ADS": {
+    "0.07": "9.8381",
+    "0.08": "8.0583",
+    "0.09": "6.7978",
+    "0.10": "5.8614",
+    "0.11": "5.1403"
+  },
+  "stress_intl_burn_10y_per_ADS": "4.6025",
+  "implied_operating_value_bn": "80.5856",
+  "reverse_flat_FCFF_bn": "7.2527",
+  "reverse_g2_FCFF_year1_bn": "5.6410",
+  "base_2027_CM_bridge": {
+    "EBIT_after_SBC": "13.5000",
+    "NOPAT": "10.8000",
+    "FCFF": "10.1000"
+  },
+  "ten_year": {
+    "bear": {
+      "NI_2036_bn": "4.0000",
+      "r0.09": {
+        "exit_PE": "11.1111",
+        "exit_equity_bn": "44.4444",
+        "IRR_pct": "-5.7843"
+      },
+      "r0.10": {
+        "exit_PE": "10.0000",
+        "exit_equity_bn": "40.0000",
+        "IRR_pct": "-6.7508"
+      }
+    },
+    "base": {
+      "NI_2036_bn": "22.7778",
+      "r0.09": {
+        "exit_PE": "12.8571",
+        "exit_equity_bn": "292.8571",
+        "IRR_pct": "13.3496"
+      },
+      "r0.10": {
+        "exit_PE": "11.2500",
+        "exit_equity_bn": "256.2500",
+        "IRR_pct": "11.8726"
+      }
+    },
+    "bull": {
+      "NI_2036_bn": "42.2857",
+      "r0.09": {
+        "exit_PE": "13.4615",
+        "exit_equity_bn": "569.2308",
+        "IRR_pct": "21.0013"
+      },
+      "r0.10": {
+        "exit_PE": "11.6667",
+        "exit_equity_bn": "493.3333",
+        "IRR_pct": "19.3105"
+      }
+    }
+  },
+  "ten_year_expected_IRR_pct_r0.09": "9.1398"
+}

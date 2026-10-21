@@ -1,0 +1,61 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：网易研究报告-20261021.md
+======================================================================
+
+  ✅ 通过 [23] 总市值（人民币） · 数值                        报告:      5358.01 亿元
+                                                    derived: 125.25 USD (Yahoo/StockAnalysis 10-19 close) x 3,201,652,151/5 ADS (https://www.sec.gov/Archives/edgar/data/1110646/000110465926114177/tm2627023d1_ex99-1.htm) x 6.6807 (https://api.frankfurter.app/2026-10-16..2026-10-20?from=USD&to=CNY,HKD), 亿元: 5358.01 (偏差 0.00%)
+  ✅ 通过 [24] 总市值（人民币） · 来源与日期                     报告:         6.68 
+                                                    https://api.frankfurter.app/2026-10-16..2026-10-20?from=USD&to=CNY,HKD ECB reference USD/CNY 2026-10-19: 6.68 (偏差 0.00%)  |  https://query1.finance.yahoo.com/v8/finance/chart/CNY=X (2026-10-19 bar): 6.69 (偏差 0.15%)
+  ✅ 通过 [27] 公司口径净现金（2026-06-30） · 数值             报告:      1675.00 亿元
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000465.pdf p7 Other financial information: net cash RMB167.5 billion: 1675.00 (偏差 0.00%)  |  https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000465.pdf p11 balance sheet, recomputed: 1675.00 (偏差 0.00%)
+  ✅ 通过 [29] 净现金占市值 · 数值                          报告:        31.26 %
+                                                    derived: company net cash 167.5bn / market cap CNY: 31.26 (偏差 0.00%)
+  ✅ 通过 [36] 截至2026-06的十二个月 · 经营利润                报告:       410.79 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0211/2026021100732.pdf p11 + https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000465.pdf p12 (FY2025 - H1'25 + H1'26): 410.79 (偏差 0.00%)  |  https://stockanalysis.com/stocks/ntes/financials/ TTM operating income 41,079 CNY m: 410.79 (偏差 0.00%)
+  ✅ 通过 [51] 有道 · 2026H1 毛利率                      报告:        46.86 %
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000465.pdf p14 segment Youdao GP/revenue H1 2026: 46.86 (偏差 0.00%)
+  ✅ 通过 [56] 网易云音乐 · 2026H1 毛利率                   报告:        37.24 %
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000465.pdf p14 segment Cloud Music GP/revenue H1 2026: 37.24 (偏差 0.00%)
+  ✅ 通过 [58] 创新及其他 · 2025 收入                      报告:        68.09 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0211/2026021100732.pdf p13 segment: innovative businesses FY2025 6,808,730 千元: 68.09 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/0001110646/000110465926043468/ntes-20251231x20f.htm Item 5 segment table (same company, audited): 68.09 (偏差 0.00%)
+  ✅ 通过 [60] 创新及其他 · 2026H1 收入                    报告:        31.88 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000465.pdf p14 segment: innovative businesses H1 2026 3,188,475 千元: 31.88 (偏差 0.00%)
+  ✅ 通过 [57] 创新及其他 · 2024 收入                      报告:        80.97 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0211/2026021100732.pdf p13 segment: innovative businesses FY2024 8,096,528 千元: 80.97 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/0001110646/000110465926043468/ntes-20251231x20f.htm Item 5 segment table (same company, audited): 80.97 (偏差 0.00%)
+  ✅ 通过 [71] 规模效应 · 证据                            报告:       177.19 亿元
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0211/2026021100732.pdf p11 R&D expenses FY2025 17,719,110 千元: 177.19 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/0001110646/000110465926043468/ntes-20251231x20f.htm consolidated statements of operations (audited): 177.19 (偏差 0.00%)
+  ✅ 通过 [109] 自由现金流收益率（简单口径） · 数值                  报告:         9.33 %
+                                                    derived: TTM CFO minus PPE and intangible purchases (https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0211/2026021100732.pdf p12, https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0820/2026082000465.pdf p13) / market cap CNY: 9.33 (偏差 0.00%)
+  ✅ 通过 [190] 2025 收入（百万元） · 来源二                   报告:    112626.00 
+                                                    https://stockanalysis.com/stocks/ntes/financials/ FY2025 revenue: 112626.00 (偏差 0.00%)
+  ✅ 通过 [189] 2025 收入（百万元） · 来源一                   报告:    112625.81 
+                                                    https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0211/2026021100732.pdf p11 net revenues 112,625,807 千元: 112625.81 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/0001110646/000110465926043468/ntes-20251231x20f.htm audited income statement: 112625.81 (偏差 0.00%)
+  ✅ 通过 [192] 2025 归母净利润（百万元） · 来源二                报告:     33760.00 
+                                                    https://stockanalysis.com/stocks/ntes/financials/ FY2025 net income: 33760.00 (偏差 0.00%)
+  ✅ 通过 [201] 丁磊持股 · 偏差                            报告:         0.40 %
+                                                    derived: |45.5 (https://www.sec.gov/Archives/edgar/data/0001110646/000110465926043468/ntes-20251231x20f.htm Item 6.E) - 45.32 (https://stockanalysis.com/stocks/ntes/statistics/)| / 45.32: 0.40 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 16  |  通过: 16  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 16,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 16,
+  "fail_items": [],
+  "warn_items": []
+}
+
+模型项复算核对（不进判决）：
+  [7] 概率加权折现价值 · 结论: 报告 171.94 / 模型 171.9361 / 一致=True
+  [8] 三年三情景（中性） · 结论: 报告 138.96 / 模型 138.9583 / 一致=True
+  [9] 十年压力测试 · 结论: 报告 3.86 / 模型 3.8607 / 一致=True
+  [108] 经营业务市值 ÷ 经营利润 · 数值: 报告 9.32 / 模型 9.3175 / 一致=True
+  [144] 乐观 · 较现价: 报告 91.0 / 模型 91.0204 / 一致=True
+  [155] 悲观（含尾部） · 2036 年累计可动用现金（亿元）: 报告 3092.09 / 模型 3092.0866 / 一致=True
+  [167] 十年压力测试显式现金口径 · 结论: 报告 8.79 / 模型 8.7884 / 一致=True

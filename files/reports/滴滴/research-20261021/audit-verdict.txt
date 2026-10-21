@@ -1,0 +1,60 @@
+======================================================================
+报告数据抽检 — 准出/打回判决
+报告：滴滴研究报告-20261021.md
+======================================================================
+
+  ✅ 通过 [ 7] 归母净利润 · 2022                         报告:      -237.84 
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465924047255/didi-20231231x20f.htm Item 3 合并简表 FY2022 Net loss attributable -23,784 RMB mn（美国会计准则）: -237.84 (偏差 0.00%)
+  ✅ 通过 [ 9] 归母净利润 · 2024                         报告:        12.58 
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm F-4 合并利润表 1,258,329 千元: 12.58 (偏差 0.03%)  |  https://stockanalysis.com/quote/otc/DIDIY/financials/ FY2024 Net Income 1,258: 12.58 (偏差 0.00%)
+  ✅ 通过 [ 8] 归母净利润 · 2023                         报告:       -47.94 
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm F-4 合并利润表 -4,793,564 千元: -47.94 (偏差 0.01%)  |  https://stockanalysis.com/quote/otc/DIDIY/financials/ FY2023 Net Income -4,794: -47.94 (偏差 0.00%)
+  ✅ 通过 [23] 毛利率 · 2025                           报告:        19.19 %
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm F-4 收入与营业成本推算: 19.19 (偏差 0.00%)
+  ✅ 通过 [24] 经营利润率 · 2023                         报告:        -1.48 %
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm F-4 经营亏损/收入推算: -1.48 (偏差 0.31%)
+  ✅ 通过 [29] 扣租赁本金后自由现金流，亿元 · 2025                报告:        59.04 
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm F-11 经营现金流-购建资产-租赁本金推算: 59.04 (偏差 0.01%)  |  https://stockanalysis.com/quote/otc/DIDIY/financials/cash-flow-statement/ FY2025 OCF/CapEx/Lease Payments 推算: 59.03 (偏差 0.01%)
+  ✅ 通过 [27] 扣租赁本金后自由现金流，亿元 · 2023                报告:         1.46 
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm F-11 2023 列推算: 1.46 (偏差 0.17%)  |  https://stockanalysis.com/quote/otc/DIDIY/financials/cash-flow-statement/ FY2023 OCF/CapEx/Lease Payments 推算: 1.46 (偏差 0.01%)
+  ✅ 通过 [36] 国际 · 2023收入                          报告:        78.42 
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm Item 5A 国际分部表 Revenues 2023 = 7,842 RMB mn: 78.42 (偏差 0.00%)
+  ✅ 通过 [51] 订单量，百万笔 · 2023                       报告:     10809.00 
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm Item 5A 中国出行分部表 Transactions 2023 = 10,809 百万: 10809.00 (偏差 0.00%)
+  ✅ 通过 [56] 总交易额，亿元 · 2025                       报告:      3337.59 
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm Item 5A 中国出行 GTV 2025 = 333,759 RMB mn: 3337.59 (偏差 0.00%)  |  https://ir.didiglobal.com/static-files/433e2d74-b1a6-4551-8449-477fd20cbb7a 2025 全年列 China Mobility GTV 333,759: 3337.59 (偏差 0.00%)
+  ✅ 通过 [58] 平台销售额占交易额 · 2024                     报告:        19.92 %
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm Item 5A 平台销售额/交易额推算 2024: 19.92 (偏差 0.02%)
+  ✅ 通过 [57] 平台销售额占交易额 · 2023                     报告:        17.69 %
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm Item 5A 平台销售额/交易额推算 2023: 17.69 (偏差 0.03%)
+  ✅ 通过 [60] 调整后EBITA占交易额 · 2023                  报告:         1.97 %
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm Item 5A 调整后EBITA/交易额推算 2023: 1.97 (偏差 0.19%)
+  ✅ 通过 [63] 现金及等价物 · 2025-12-31                  报告:       238.08 
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm F-7 现金及现金等价物 23,808,032 千元: 238.08 (偏差 0.00%)  |  https://stockanalysis.com/quote/otc/DIDIY/financials/balance-sheet/ FY2025 Cash & Equivalents 23,808: 238.08 (偏差 0.00%)
+  ✅ 通过 [71] 借款（流动+非流动） · 2025-12-31              报告:       125.85 
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm F-7 流动借款 12,353,652 + 非流动借款 230,831 千元: 125.84 (偏差 0.00%)  |  https://ir.didiglobal.com/static-files/4b89fb29-83da-4338-a136-7e557f6cdab9 资产负债表 2025-12-31 列 12,354 + 231: 125.85 (偏差 0.00%)
+  ✅ 通过 [183] 俄罗斯以出售换股权退出，退出后估值重估向上。滴滴自身也有先例       报告:      2016.00 
+                                                    https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm Item 4A 时间线：2016 年收购优步中国: 2016.00 (偏差 0.00%)
+  ✅ 通过 [109] 经济股本口径市值，人民币 · 使用边界                  报告:        11.65 亿
+                                                    https://ir.didiglobal.com/static-files/4b89fb29-83da-4338-a136-7e557f6cdab9 2026Q1 基本加权普通股 1,165,462,746 股: 11.65 (偏差 0.00%)
+  ✅ 通过 [108] 经济股本口径市值，人民币 · 本文计算                  报告:       999.47 亿元
+                                                    推算：2026-10-19 收盘 3.19 美元×4×1,165,462,746 股×中间价 6.7208（收盘价三源一致，股数为 Q1 原件）: 999.47 (偏差 0.00%)
+  ✅ 通过 [115] 市值 / 中国出行调整后EBITA · 本文计算             报告:         7.02 倍
+                                                    推算：法定股本市值 / 滚动四季度中国出行调整后EBITA（Q3/Q4 2025、Q1 2026 原件 + Q2 2026 财新 42 亿元）: 7.02 (偏差 0.01%)
+
+----------------------------------------------------------------------
+  抽检总数: 19  |  通过: 19  |  警告: 0  |  不通过: 0
+
+【准出】所有抽检数据通过，报告可发布。
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 19,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 19,
+  "fail_items": [],
+  "warn_items": []
+}
+
+模型假设/输出类抽样点（不进判决）：130, 140, 144, 151, 152, 155, 164, 174, 176

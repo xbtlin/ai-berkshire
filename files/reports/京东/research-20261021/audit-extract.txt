@@ -1,0 +1,331 @@
+======================================================================
+报告数据抽检清单
+文件：reports/京东/京东研究报告-20261021.md
+总提取数据点：160  |  抽样比例：15%  |  抽检数量：24
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+153      9  价格基准                                      9618.00  
+  2     60  滚动十二月收入 · 数值                             13134.38  亿元
+  7     65  滚动十二月公司口径自由现金流 · 数值                        314.15  亿元
+  8     66  滚动十二月少数股东损益 · 数值                            48.77  亿元
+  9     80  2024-12-31 · 应付账款（亿元）                     1928.60  
+ 23    102  平台及广告服务收入 · 2025（亿元）                      1071.31  
+ 24    102  平台及广告服务收入 · 2025同比                          18.90  %
+ 29    103  物流及其他服务收入 · 2025占比                          13.61  %
+ 27    103  物流及其他服务收入 · 2025（亿元）                      1781.52  
+ 36    174  2021-05 · 结果                              2025.00  
+ 51    219  京东 · 市盈率                                    12.24  倍
+ 56    221  拼多多 · 最近财年归母净利润（亿元）                        978.43  
+ 57    221  拼多多 · 市盈率                                    7.96  倍
+ 58    235  港股总市值（104.40 港元 × 2,688 百万股） · 数值         2806.30  亿港元
+ 60    237  折合美元市值 · 数值                                357.60  亿美元
+ 63    240  滚动十二月市盈率（归母） · 数值                           16.24  倍
+ 71    255  减：有息债务（短期借款、优先票据、长期借款） · 金额               -698.92  亿元
+ 72    256  减：应付账款高于 2025 年末的季节性部分 · 金额               -405.82  亿元
+109    293  基准 · 核心零售（扣上市子公司）经营利润                      500.00  亿元
+108    293  基准 · 概率                                     50.00  %
+115    293  基准 · 2029年末每股价值                            182.50  
+130    305  退出市盈率 10 倍 · 每ADS今日现值                       34.94  
+140    327  悲观 · 十年内部收益率                                 0.55  %
+159    361  下一个检验点                                    2026.00  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 153,
+    "label": "价格基准",
+    "reported_value": 9618.0,
+    "unit": "",
+    "line_number": 9,
+    "raw_text": "研究日期：2026-10-21。价格基准：9618.HK 在 2026-10-20 收盘 104.40 港元；JD ADS 在 2026-10-19 收盘 26.78 美元（10-20 美股收盘在取数时尚未产生）。股本：2026-06-30",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 2,
+    "label": "滚动十二月收入 · 数值",
+    "reported_value": 13134.38,
+    "unit": "亿元",
+    "line_number": 60,
+    "raw_text": "| 滚动十二月收入 | 13,134.38亿元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 7,
+    "label": "滚动十二月公司口径自由现金流 · 数值",
+    "reported_value": 314.15,
+    "unit": "亿元",
+    "line_number": 65,
+    "raw_text": "| 滚动十二月公司口径自由现金流 | 314.15亿元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "滚动十二月少数股东损益 · 数值",
+    "reported_value": 48.77,
+    "unit": "亿元",
+    "line_number": 66,
+    "raw_text": "| 滚动十二月少数股东损益 | 48.77亿元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "2024-12-31 · 应付账款（亿元）",
+    "reported_value": 1928.6,
+    "unit": "",
+    "line_number": 80,
+    "raw_text": "| 2024-12-31 | 1,928.60 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "平台及广告服务收入 · 2025（亿元）",
+    "reported_value": 1071.31,
+    "unit": "",
+    "line_number": 102,
+    "raw_text": "| 平台及广告服务收入 | 901.11 | 1,071.31 | 18.9% | 8.18% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "平台及广告服务收入 · 2025同比",
+    "reported_value": 18.9,
+    "unit": "%",
+    "line_number": 102,
+    "raw_text": "| 平台及广告服务收入 | 901.11 | 1,071.31 | 18.9% | 8.18% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "物流及其他服务收入 · 2025占比",
+    "reported_value": 13.61,
+    "unit": "%",
+    "line_number": 103,
+    "raw_text": "| 物流及其他服务收入 | 1,407.01 | 1,781.52 | 26.6% | 13.61% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 27,
+    "label": "物流及其他服务收入 · 2025（亿元）",
+    "reported_value": 1781.52,
+    "unit": "",
+    "line_number": 103,
+    "raw_text": "| 物流及其他服务收入 | 1,407.01 | 1,781.52 | 26.6% | 13.61% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "2021-05 · 结果",
+    "reported_value": 2025.0,
+    "unit": "",
+    "line_number": 174,
+    "raw_text": "| 2021-05 | 京东物流港股上市 | 物流独立融资，2025 年收入 2,171.47 亿元；京东持股约 63% | ★★★★ |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 51,
+    "label": "京东 · 市盈率",
+    "reported_value": 12.24,
+    "unit": "倍",
+    "line_number": 219,
+    "raw_text": "| 京东 | 2,402.95亿元 | 196.31 | 12.24倍 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "拼多多 · 最近财年归母净利润（亿元）",
+    "reported_value": 978.43,
+    "unit": "",
+    "line_number": 221,
+    "raw_text": "| 拼多多 | 1,158.8亿美元 | 978.43 | 7.96倍 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 57,
+    "label": "拼多多 · 市盈率",
+    "reported_value": 7.96,
+    "unit": "倍",
+    "line_number": 221,
+    "raw_text": "| 拼多多 | 1,158.8亿美元 | 978.43 | 7.96倍 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 58,
+    "label": "港股总市值（104.40 港元 × 2,688 百万股） · 数值",
+    "reported_value": 2806.3,
+    "unit": "亿港元",
+    "line_number": 235,
+    "raw_text": "| 港股总市值（104.40 港元 × 2,688 百万股） | 2,806.3亿港元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "折合美元市值 · 数值",
+    "reported_value": 357.6,
+    "unit": "亿美元",
+    "line_number": 237,
+    "raw_text": "| 折合美元市值 | 357.6亿美元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 63,
+    "label": "滚动十二月市盈率（归母） · 数值",
+    "reported_value": 16.24,
+    "unit": "倍",
+    "line_number": 240,
+    "raw_text": "| 滚动十二月市盈率（归母） | 16.24倍 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 71,
+    "label": "减：有息债务（短期借款、优先票据、长期借款） · 金额",
+    "reported_value": -698.92,
+    "unit": "亿元",
+    "line_number": 255,
+    "raw_text": "| 减：有息债务（短期借款、优先票据、长期借款） | -698.92亿元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 72,
+    "label": "减：应付账款高于 2025 年末的季节性部分 · 金额",
+    "reported_value": -405.82,
+    "unit": "亿元",
+    "line_number": 256,
+    "raw_text": "| 减：应付账款高于 2025 年末的季节性部分 | -405.82亿元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 109,
+    "label": "基准 · 核心零售（扣上市子公司）经营利润",
+    "reported_value": 500.0,
+    "unit": "亿元",
+    "line_number": 293,
+    "raw_text": "| 基准 | 50% | 500亿元 | -200亿元 | -65亿元 | 235亿元 | 10倍 | 0 | 370亿元 | 182.50港元 | 137.11港元 | 34.94美元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 108,
+    "label": "基准 · 概率",
+    "reported_value": 50.0,
+    "unit": "%",
+    "line_number": 293,
+    "raw_text": "| 基准 | 50% | 500亿元 | -200亿元 | -65亿元 | 235亿元 | 10倍 | 0 | 370亿元 | 182.50港元 | 137.11港元 | 34.94美元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 115,
+    "label": "基准 · 2029年末每股价值",
+    "reported_value": 182.5,
+    "unit": "",
+    "line_number": 293,
+    "raw_text": "| 基准 | 50% | 500亿元 | -200亿元 | -65亿元 | 235亿元 | 10倍 | 0 | 370亿元 | 182.50港元 | 137.11港元 | 34.94美元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 130,
+    "label": "退出市盈率 10 倍 · 每ADS今日现值",
+    "reported_value": 34.94,
+    "unit": "",
+    "line_number": 305,
+    "raw_text": "| 退出市盈率 10 倍 | 34.94美元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 140,
+    "label": "悲观 · 十年内部收益率",
+    "reported_value": 0.55,
+    "unit": "%",
+    "line_number": 327,
+    "raw_text": "| 悲观 | 12.5倍 | 0.55% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 159,
+    "label": "下一个检验点",
+    "reported_value": 2026.0,
+    "unit": "",
+    "line_number": 361,
+    "raw_text": "下一个检验点：2026 年第三季度业绩（公司尚未公布日期，第三方预估为 11 月中旬），重点看新业务亏损、带电收入同比、九月底应付账款回落后的现金余额。",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]
