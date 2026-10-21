@@ -1,0 +1,93 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>网易研究附件 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/b3af4007c411.html" data-title="网易研究附件"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/网易/index.html">网易</a></div><div class="layout"><div><h1>网易研究附件</h1><div class="meta"><a href="../companies/网易/index.html">网易</a> ｜ 2026-10-21 · 导读 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BD%91%E6%98%93/research-20261021/README.md">GitHub 原文</a></div><article><p>研究日期：2026-10-21；正文：<code>../网易研究报告-20261021.md</code>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>文件</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model.py</code></td>
+<td>Decimal 计算：市值与港美股折算、滚动十二个月、净现金重算与可动用净现金、正常化利润、估值指标、历史年末市盈率、反向折现、三年三情景、十年折现四情景（含尾部）、十年 IRR（工具口径与显式现金口径）、敏感性；并实跑 <code>tools/financial_rigor.py</code> 与 <code>tools/terminal_value.py</code>。运行：<code>python3 reports/网易/research-20261021/model.py</code></td>
+</tr>
+<tr>
+<td><code>inputs.json</code> / <code>results.json</code></td>
+<td>全部输入（含口径说明与情景假设）与输出；金额单位为人民币十亿元，每 ADS 价值为美元</td>
+</tr>
+<tr>
+<td><code>financial-rigor.txt</code></td>
+<td>工具实跑原始输出：verify-market-cap、cross-validate（股价、股本、汇率、收入、归母、滚动收入/归母/经营现金流、净现金、创始人持股）、verify-valuation、three-scenario，以及 terminal_value 的 audit / pe / irr / flip（±2pp 与 ±1pp）</td>
+</tr>
+<tr>
+<td><code>audit-extract.txt</code></td>
+<td><code>python3 tools/report_audit.py extract --report reports/网易/网易研究报告-20261021.md --seed 42</code> 的输出：204 个可提取点中抽 30 个</td>
+</tr>
+<tr>
+<td><code>audit.py</code></td>
+<td>把抽中点逐一填入取数值与来源后调用 <code>report_audit.py verdict</code>；运行：<code>python3 reports/网易/research-20261021/audit.py</code></td>
+</tr>
+<tr>
+<td><code>audit-classified.json</code> / <code>audit-facts.json</code></td>
+<td>30 个抽中点的分类；进入判决的 16 个事实项</td>
+</tr>
+<tr>
+<td><code>audit-verdict.txt</code></td>
+<td>判决结果：【准出】16/16 通过；另附模型项复算核对</td>
+</tr>
+<tr>
+<td><code>sources.md</code></td>
+<td>来源 URL、访问日期、页码定位与缺口</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_1">抽检分类</h2>
+<ul>
+<li>进入判决的 16 项：7 项填了两个来源，但真正独立的只有 2 项（汇率：欧洲央行与 Yahoo；滚动十二个月经营利润：原件推算与 StockAnalysis）；其余 5 项的第二来源是同一公司的 20-F 或同一份公告的报表重算。9 项为单一原件、单一数据库或由原件数字推算。</li>
+<li>不进判决的 14 项：11 项为模型假设或模型输出（只与 <code>results.json</code> 复算一致，不是外部事实）；3 项为非数据（日期、星级）。</li>
+</ul>
+<h2 id="_2">核验边界</h2>
+<ul>
+<li>PASS 只说明报告数字与原件或数据库一致，不说明情景假设正确。</li>
+<li>9999.HK 10-20 收盘价只有 StockAnalysis 一个来源（Yahoo 当日为空），用美股价折算核对，偏差 0.72%。</li>
+<li>2021 年全部财务数据、2021—2022 年经营利润与固定资产开支为 StockAnalysis 单一来源。</li>
+<li>公司口径净现金 1675 亿元已按资产负债表逐项重算一致；但境内外现金分布未披露，汇出预提税未建模。</li>
+<li>净现金与资产负债表为 2026-06-30 快照，不是 10 月实时余额。</li>
+<li>未编辑旧报告、未提交、未推送。</li>
+</ul></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E7%BD%91%E6%98%93%E7%A0%94%E7%A9%B6%E9%99%84%E4%BB%B6&amp;ticker=%E7%BD%91%E6%98%93&amp;source=reports%2F%E7%BD%91%E6%98%93%2Fresearch-20261021%2FREADME.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2Fb3af4007c411.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>底稿与核验（GitHub）</h2><div class="meta">这些文件不在阅读站上展示，点开为 GitHub 原文。</div><ul class="list work"><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E7%BD%91%E6%98%93/research-20261021/sources.md">来源与证据登记</a><div class="meta">审计核验底稿 · sources.md</div></li></ul><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/972e58ca7b85.html">网易研究：三成市值是净现金的游戏现金流，125美元处在观望区，115美元以下分批</a><div class="meta">2026-10-21 · 研究</div></li><li><a href="../r/5eeeee7de2e9.html">网易（NetEase）深度投研报告</a><div class="meta">2026-05-19 · 深度系列</div></li><li><a href="../r/8c4e8e36e310.html">价格判断——$113买入的真问题</a><div class="meta">2026-05-19 · 深度系列</div></li><li><a href="../r/06e5ce24649c.html">丁磊与风险——一个产品天才的资本困境</a><div class="meta">2026-05-19 · 深度系列</div></li><li><a href="../r/8ddef50b951d.html">云音乐与有道——游戏之外的两个赌注</a><div class="meta">2026-05-19 · 深度系列</div></li><li><a href="../r/401fa613b37d.html">游戏帝国——一头大象学跳舞</a><div class="meta">2026-05-19 · 深度系列</div></li><li><a href="../r/e08303bcb264.html">中国游戏行业的隐形贵族</a><div class="meta">2026-05-19 · 深度系列</div></li><li><a href="../r/240ac60daeec.html">《看懂网易》系列说明</a><div class="meta">2026-05-19 · 导读</div></li><li><a href="../r/516695601343.html">网易公司各业务线未来3-5年发展展望</a><div class="meta">2026-04-10 · 研究</div></li></ul></div><aside class="side"></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-21 01:11 UTC</footer></body></html>
