@@ -1,0 +1,987 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>汽车之家：市值约等于净现金，收入一年少三成，买的是现金怎么回到股东手里 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/ee1c9a430e1b.html" data-title="汽车之家：市值约等于净现金，收入一年少三成，买的是现金怎么回到股东手里"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/汽车之家/index.html">汽车之家</a></div><div class="layout"><div><h1>汽车之家：市值约等于净现金，收入一年少三成，买的是现金怎么回到股东手里</h1><div class="meta"><a href="../companies/汽车之家/index.html">汽车之家</a> ｜ 2026-10-21 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6/%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261021.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">信息丰富度评级与研究局限</a></li>
+<li><a href="#_2">一、关键数据总览</a></li>
+<li><a href="#_3">二、生意本质</a><ul>
+<li><a href="#21">2.1 一句话定义</a></li>
+<li><a href="#22">2.2 收入结构</a></li>
+<li><a href="#23">2.3 五年盈利能力</a></li>
+<li><a href="#24">2.4 经营杠杆</a></li>
+<li><a href="#25">2.5 生意好在哪、坏在哪</a></li>
+</ul>
+</li>
+<li><a href="#_4">三、护城河</a></li>
+<li><a href="#_5">四、反过来想：失败路径</a></li>
+<li><a href="#_6">五、管理层与治理</a><ul>
+<li><a href="#51">5.1 控制权变化</a></li>
+<li><a href="#52">5.2 资本配置</a></li>
+<li><a href="#53">5.3 利益一致性</a></li>
+</ul>
+</li>
+<li><a href="#_7">六、行业趋势</a></li>
+<li><a href="#_8">七、估值与安全边际</a><ul>
+<li><a href="#71">7.1 当前定价</a></li>
+<li><a href="#72">7.2 净现金桥</a></li>
+<li><a href="#73">7.3 反向测算</a></li>
+<li><a href="#74">7.4 三情景估值（经营现金流折现 + 净现金）</a></li>
+<li><a href="#75">7.5 十年压力测试</a></li>
+<li><a href="#76">7.6 估值分歧对账</a></li>
+<li><a href="#77">7.7 价格区间与安全边际</a></li>
+</ul>
+</li>
+<li><a href="#_9">八、综合决策</a></li>
+<li><a href="#_10">九、各维度追问汇总</a></li>
+<li><a href="#_11">十、限制与未建模风险</a></li>
+<li><a href="#ai">十一、AI 分析置信度与投资确定性</a></li>
+<li><a href="#_12">附录：关键数据交叉验证记录</a></li>
+</ul>
+</div>
+</details><article><p>研究日期：2026-10-21。标的：汽车之家（纽交所 ATHM，1 份 ADS = 4 股普通股；港股 2518，第二上市）。</p>
+<p><strong>结论：观望</strong>。现价 US$20.15/ADS（2026-10-20 收盘）约等于保守口径的每 ADS 净现金 US$19.61，经营业务被市场定价接近零；但经营业务本身正在失血，现金能否回到股东手里取决于新控股股东海尔，十年压力测试在合理折现率区间内全部未通过。<strong>买入区间：US$17 以下，港股约 HK$33.4 以下</strong>，并须同时满足两个条件中的一个：11 月 4 日三季报宣布下半年分红不低于约 10 亿元，或经营利润连续两个季度同比恢复增长。持有者在 US$26.5 以上减仓。</p>
+<p>附件：<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6/research-20261021/model.py">模型与输入</a>、<a href="../files/reports/%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6/research-20261021/results.json">结果</a>、<a href="../files/reports/%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6/research-20261021/financial-rigor.txt">工具验算输出</a>、<a href="../files/reports/%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6/research-20261021/audit-verdict.txt">抽检判决</a>、<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6/research-20261021/sources.md">来源登记</a>、<a href="../r/020cf3dc9e33.html">附件说明</a>。</p>
+<hr />
+<h2 id="_1">信息丰富度评级与研究局限</h2>
+<p><strong>信息丰富度：B 级，信息适中</strong>。上市十余年、年报与季报完整，财务数据可从 SEC 原件逐项核对；但三类关键信息拿不到：一是 2026 年 3 月 31 日之后的期末股本（第二上市公司不发月报，季报只给加权股数），二是新零售、加盟门店、出海业务的分部利润，三是与懂车帝、易车的同口径流量与线索份额。</p>
+<p><strong>AI 研究局限声明</strong>：</p>
+<ul>
+<li>本文所有财务数字来自 20-F 与季度业绩公告原件，市场价格与汇率来自第三方数据库；行业销量来自乘联分会转载。</li>
+<li>当前股本是本文用原件数字推算的上限估计（只扣除可证明发生在 3 月 31 日之后的回购），不是公司披露值，估值对股本敏感约 ±3%。</li>
+<li>经营业务的十年现金流全部是情景假设，不是预测。</li>
+<li>"资料多"不等于"看得清"：汽车之家的公开资料很多，但最影响估值的变量（海尔会怎么用这笔现金）几乎没有可核验的公开信息。</li>
+</ul>
+<hr />
+<h2 id="_2">一、关键数据总览</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>口径与来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADS 收盘价（2026-10-20）</td>
+<td>US$20.15</td>
+<td>StockAnalysis 历史价；Yahoo 为 20.16</td>
+</tr>
+<tr>
+<td>港股收盘价（2026-10-16）</td>
+<td>HK$39.50</td>
+<td>折合 US$20.13/ADS，与美股一致</td>
+</tr>
+<tr>
+<td>普通股（2026-03-31，20-F）</td>
+<td>460,683,644 股</td>
+<td>20-F 第 136 页</td>
+</tr>
+<tr>
+<td>当前普通股（本文估计上限）</td>
+<td>424,455,140 股</td>
+<td>3 月 31 日股本扣除 5 月 22 日后可证明的回购</td>
+</tr>
+<tr>
+<td>市值</td>
+<td>21.38 亿美元</td>
+<td>约 143.06 亿元人民币（美元兑人民币 6.6909）</td>
+</tr>
+<tr>
+<td>现金与投资（2026-06-30）</td>
+<td>193.65 亿元</td>
+<td>现金 + 短期投资 + 其他长期投资，无有息负债</td>
+</tr>
+<tr>
+<td>保守净现金桥</td>
+<td>139.25 亿元</td>
+<td>扣应付股息、6 月后回购上限、天天拍车优先股、15 亿元经营备用金</td>
+</tr>
+<tr>
+<td>每 ADS 保守净现金</td>
+<td>US$19.61</td>
+<td>不扣优先股和备用金为 US$24.85</td>
+</tr>
+<tr>
+<td>TTM 收入（2025Q3–2026Q2）</td>
+<td>54.87 亿元</td>
+<td>四个季度公告加总</td>
+</tr>
+<tr>
+<td>TTM 经营利润</td>
+<td>3.35 亿元</td>
+<td>经营利润率 6.1%</td>
+</tr>
+<tr>
+<td>TTM 归属汽车之家净利润</td>
+<td>9.63 亿元</td>
+<td>其中利息与投资收益 5.93 亿元</td>
+</tr>
+<tr>
+<td>TTM 市盈率</td>
+<td>14.86 倍</td>
+<td>按归属汽车之家净利润</td>
+</tr>
+<tr>
+<td>TTM 市销率</td>
+<td>2.61 倍</td>
+<td></td>
+</tr>
+<tr>
+<td>近 12 个月宣派股息</td>
+<td>US$1.86/ADS</td>
+<td>2025-11 宣派 1.20 + 2026-05 宣派 0.66，股息率 9.23%</td>
+</tr>
+</tbody>
+</table></div>
+<p>数字的含义：143 亿元市值里，约 139 亿元是保守口径下的净现金，剩下约 3.8 亿元是市场给经营业务的全部定价；而这块业务过去十二个月税前经营利润 3.35 亿元。</p>
+<hr />
+<h2 id="_3">二、生意本质</h2>
+<h3 id="21">2.1 一句话定义</h3>
+<p>汽车之家是一个靠汽车厂和经销商的营销预算吃饭的垂直流量平台：用户来看车型资料、评测和报价，平台把注意力卖给厂家（媒体服务），把购车意向卖给经销商（线索服务），再在交易环节收佣金或差价（在线交易及其他）。</p>
+<h3 id="22">2.2 收入结构</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>业务（百万元）</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025</th>
+<th>2025 同比</th>
+<th>2026Q2</th>
+<th>Q2 同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>媒体服务</td>
+<td>1,870.8</td>
+<td>1,523.1</td>
+<td>1,153.4</td>
+<td>-24.3%</td>
+<td>280.4</td>
+<td>+0.4%</td>
+</tr>
+<tr>
+<td>线索服务</td>
+<td>3,111.8</td>
+<td>3,135.9</td>
+<td>2,709.2</td>
+<td>-13.6%</td>
+<td>560.4</td>
+<td>-23.5%</td>
+</tr>
+<tr>
+<td>在线交易及其他</td>
+<td>2,201.5</td>
+<td>2,380.6</td>
+<td>2,589.4</td>
+<td>+8.8%</td>
+<td>357.3</td>
+<td>-52.1%</td>
+</tr>
+<tr>
+<td>合计</td>
+<td>7,184.1</td>
+<td>7,039.6</td>
+<td>6,452.0</td>
+<td>-8.3%</td>
+<td>1,198.0</td>
+<td>-31.9%</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：20-F（FY2025）F-6 页；2026Q2 业绩公告。2026 年上半年收入同比下降 30.1%，毛利同比下降 28.3%。</p>
+<p>公司对下滑的解释：媒体服务下滑来自"燃油车厂家在燃油车销量萎缩下减少广告投放"，线索服务下滑来自"付费经销商数量减少、单店收入下降"，2026 年二季度交易业务腰斩来自"整车销售业务收入减少"。</p>
+<h3 id="23">2.3 五年盈利能力</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年度</th>
+<th>收入（亿元）</th>
+<th>经营利润（亿元）</th>
+<th>经营利润率</th>
+<th>归属净利润（亿元）</th>
+<th>经营现金流（亿元）</th>
+<th>资本开支（亿元）</th>
+<th>简单自由现金流（亿元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td>72.37</td>
+<td>17.82</td>
+<td>24.6%</td>
+<td>22.49</td>
+<td>35.24</td>
+<td>2.19</td>
+<td>33.05</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>69.41</td>
+<td>12.48</td>
+<td>18.0%</td>
+<td>18.55</td>
+<td>25.65</td>
+<td>1.17</td>
+<td>24.49</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>71.84</td>
+<td>11.37</td>
+<td>15.8%</td>
+<td>19.35</td>
+<td>24.51</td>
+<td>0.79</td>
+<td>23.73</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>70.40</td>
+<td>10.03</td>
+<td>14.3%</td>
+<td>16.81</td>
+<td>13.73</td>
+<td>1.40</td>
+<td>12.33</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>64.52</td>
+<td>7.69</td>
+<td>11.9%</td>
+<td>14.43</td>
+<td>8.89</td>
+<td>1.18</td>
+<td>7.71</td>
+</tr>
+<tr>
+<td>TTM</td>
+<td>54.87</td>
+<td>3.35</td>
+<td>6.1%</td>
+<td>9.63</td>
+<td>3.78</td>
+<td>未单列</td>
+<td>未单列</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：2021–2022 年取自 FY2022 20-F；2023–2025 年取自 FY2025 20-F 的 F-6、F-7 页；TTM 由四个季度公告加总。收入 2021–2025 年复合增速 -2.8%。</p>
+<p>三个事实：</p>
+<ol>
+<li><strong>收入只降了一成，经营利润降了六成</strong>。2021 到 2025 年收入从 72.37 亿元降到 64.52 亿元，经营利润从 17.82 亿元降到 7.69 亿元。高毛利的媒体和线索收入在缩，低毛利的交易收入在涨：2025 年营业成本同比增加 20.3%，其中运营成本增加 41.7%，公司归因于低线城市新零售业务的交易成本。</li>
+<li><strong>现金流比利润掉得更快</strong>。2023 年经营现金流 24.51 亿元，2025 年 8.89 亿元；2026 年一季度经营现金流为负 1.43 亿元。</li>
+<li><strong>利润的一大块不是经营挣的</strong>。TTM 利息与投资收益 5.93 亿元，高于经营利润 3.35 亿元。</li>
+</ol>
+<h3 id="24">2.4 经营杠杆</h3>
+<p>成本结构以人员和营销为主。2026 年二季度营业费用 8.71 亿元，同比只降 14.3%，收入降 31.9%，经营利润从 2.97 亿元降到 1.30 亿元。员工数从 2023 年末的 5,511 人降到 2026 年 6 月末的 3,839 人，2026 年一季度计提一次性裁员补偿 6,179 万元。成本在追着收入降，但追不上。</p>
+<h3 id="25">2.5 生意好在哪、坏在哪</h3>
+<p>好的一面：用户基础没丢。QuestMobile 口径的移动端日活 2023 年 12 月 6,820 万、2024 年 12 月 7,750 万、2025 年 12 月 7,750 万，公司称 2026 年 3 月超过 8,000 万。</p>
+<p>坏的一面：流量没丢、钱丢了。收入下滑来自客户端（厂家和经销商）的预算，而不是用户端。中国乘用车零售 2026 年 1–9 月 1,333.4 万辆，同比下降 21.7%，9 月单月同比下降 28.0%（乘联分会，2026-10-13 发布）；燃油车 9 月零售同比下降 43%，而汽车之家历史上最依赖的正是燃油车厂和传统 4S 店的预算。</p>
+<p><strong>追问：这门生意如果只能用一句话描述是什么</strong>？一个用户还在、但付费方正在缩表的广告与线索中介。它的好坏不取决于自己做得多好，而取决于汽车经销体系愿意为一个线索付多少钱。</p>
+<hr />
+<h2 id="_4">三、护城河</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>护城河类型</th>
+<th>证据</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>品牌与定价权</td>
+<td>线索服务"单店收入下降"、付费经销商减少（公司口径）</td>
+<td>无定价权，正在被动降价</td>
+</tr>
+<tr>
+<td>转换成本</td>
+<td>经销商可同时在懂车帝、易车、抖音买线索；20-F 竞争章节点名懂车帝、易车、字节跳动、腾讯</td>
+<td>低</td>
+</tr>
+<tr>
+<td>网络效应</td>
+<td>车型库、口碑评价、二手车车源有一定积累；但内容生产已被短视频平台的创作者体系分流</td>
+<td>弱，且在减弱</td>
+</tr>
+<tr>
+<td>规模效应</td>
+<td>日活约 8,000 万，行业内仍居前列（公司引用 QuestMobile 称第一）</td>
+<td>有，但变现效率在下降</td>
+</tr>
+<tr>
+<td>技术壁垒</td>
+<td>2025 年推出 5 条 AI 产品线；2026 年 7 月推出独立智能体产品</td>
+<td>未见可量化领先</td>
+</tr>
+</tbody>
+</table></div>
+<p>趋势：过去五年护城河变窄，最直接的证据是经营利润率从 24.6% 降到 11.9%，再到 TTM 的 6.1%，而日活基本持平甚至上升。用户没走、但单位用户能卖出的钱少了，说明议价权从平台转向了买方，也转向了能同时提供内容、搜索和直播的综合平台。</p>
+<p><strong>追问：十年后这条护城河还在吗？什么能摧毁它</strong>？车型数据库与评测资料会在，但"买车前先上汽车之家"的习惯正在被两类入口替代：短视频平台的汽车内容，以及大模型问答直接给出车型对比和报价。后者如果成熟，垂直资讯站点的线索价值会被进一步压缩。目前没有证据证明汽车之家的智能体产品能扭转这一点。</p>
+<hr />
+<h2 id="_5">四、反过来想：失败路径</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>失败路径</th>
+<th>概率（主观判断）</th>
+<th>影响</th>
+<th>可观察信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现金被用于低回报项目（加盟门店、授权经销、出海、关联交易）</td>
+<td>中</td>
+<td>高：保守桥假设一次性损失 30 亿元，每 ADS 约 -US$4.2</td>
+<td>资本开支、长期投资、关联交易科目上升；回购暂停</td>
+</tr>
+<tr>
+<td>2027 年起分红政策不续（现政策只承诺到 2026 年）</td>
+<td>中</td>
+<td>高：现金留在账上只赚约 1.7% 税后收益</td>
+<td>2027 年初是否公布新三年政策</td>
+</tr>
+<tr>
+<td>乘用车销量继续下滑，经营业务转为持续亏损</td>
+<td>中</td>
+<td>中：情景内已建模</td>
+<td>单季经营利润再次为负（2026Q1 已出现 -0.34 亿元）</td>
+</tr>
+<tr>
+<td>控股股东以低溢价私有化</td>
+<td>低到中</td>
+<td>中：锁定低价退出</td>
+<td>海尔增持、聘请财务顾问</td>
+</tr>
+<tr>
+<td>中概股退市或协议控制架构风险</td>
+<td>低</td>
+<td>高</td>
+<td>中美监管事件；港股第二上市提供部分缓冲</td>
+</tr>
+<tr>
+<td>大模型问答绕过垂直平台</td>
+<td>中（十年尺度）</td>
+<td>高</td>
+<td>线索单价、付费经销商数量</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>历史类比</strong>：处在类似位置的中国垂直资讯平台（门户时代的行业频道、PC 时代的分类信息站点）多数走向了用户还在、变现萎缩的长期下行；少数靠转向交易抽佣活下来。汽车之家正在走后一条路，但交易业务 2026 年二季度收入同比下降 52.1%，转型本身也在承压。</p>
+<p><strong>偏误自查</strong>：</p>
+<ul>
+<li>锚定效应：海尔 2025 年的入股价是每股 65.21 元人民币、折合约 US$35.84/ADS，比现价高 78%。这个价格反映的是控股权与战略价值，不能当作对小股东的价值锚。</li>
+<li>叙事偏差：净现金约等于市值，很容易被讲成"白送经营业务"。这个说法只在现金能回到股东手里时成立。</li>
+<li>幸存者偏差：低市净率、高现金的中概股里，长期被价值陷阱困住的案例不少。</li>
+</ul>
+<p><strong>空方核心论点</strong>：收入一年下降三成，经营利润率 6%，管理层来自家电集团、缺乏互联网经验；控股股东入股资金全部来自银行贷款（13D 文件），且以所持股份质押，存在用上市公司现金服务控股股东战略的激励。</p>
+<p><strong>追问：最可能在哪里犯错？聪明人为什么不买</strong>？最可能的错误是把账面现金当作股东现金。海尔通过 CARTECH 持有约 43.6% 的股份（2026-03-31），按本文估计的当前股本约 47.3%；2026 年以来回购的 ADS 折合约 10% 的流通股，海尔无需增持持股比例就在逼近半数。聪明人不买的原因不是生意差，而是不确定这笔钱最后由谁花。</p>
+<hr />
+<h2 id="_6">五、管理层与治理</h2>
+<h3 id="51">5.1 控制权变化</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-02-20</td>
+<td>平安旗下 Yun Chen 与海尔旗下 CARTECH 签约，转让 200,884,012 股（当时约 41.91%），对价约 18 亿美元</td>
+<td>控股股东由平安变为海尔</td>
+</tr>
+<tr>
+<td>2025-08-27</td>
+<td>交割完成；原 CEO 杨松转任高级副总裁，海尔系刘驰任董事长兼 CEO</td>
+<td>董事会 9 席中 5 席为交割时新任</td>
+</tr>
+<tr>
+<td>2025-08-29</td>
+<td>13D 文件披露：收购资金来自等额定期贷款，所购股份须质押给招商永隆银行</td>
+<td>控股股东有偿债压力</td>
+</tr>
+<tr>
+<td>2026-03-05</td>
+<td>宣布 2 亿美元回购，7 月 30 日完成，回购 10,627,269 份 ADS</td>
+<td>执行速度快</td>
+</tr>
+<tr>
+<td>2026-07-28</td>
+<td>再宣布 4 亿美元、12 个月回购；截至 8 月 14 日用掉 4,360 万美元</td>
+<td>规模为前一轮的两倍</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：2025-02-20 港交所公告、2025-08-27 6-K、2025-08-29 Schedule 13D、2026Q2 业绩公告。</p>
+<h3 id="52">5.2 资本配置</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年度</th>
+<th>分红支付（亿元）</th>
+<th>回购支付（亿元）</th>
+<th>合计（亿元）</th>
+<th>同期经营现金流（亿元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td>4.91</td>
+<td>6.34</td>
+<td>11.25</td>
+<td>24.51</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>14.81</td>
+<td>2.23</td>
+<td>17.04</td>
+<td>13.73</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>14.81</td>
+<td>10.52</td>
+<td>25.33</td>
+<td>8.89</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：20-F（FY2025）F-7 页现金流量表。2025 年股东回报 25.33 亿元，相当于当前市值的 17.7%，也是当年经营现金流的 2.8 倍，钱来自存量现金。分红政策（20-F 第 60 页）：2024–2026 年每年不少于 15 亿元，半年一付。2026 年上半年已宣派 US$0.66/ADS、约 5 亿元，下半年要兑现承诺需再宣派约 10 亿元，11 月 4 日三季报是检验点。</p>
+<h3 id="53">5.3 利益一致性</h3>
+<ul>
+<li>现任董事和高管合计持股不足 1%（20-F 第 137 页标注为"*"）；刘驰、梁海山等海尔系董事个人不持股。</li>
+<li>主要股东：CARTECH 43.6%、富达 9.3%、景顺 5.6%、Yun Chen 5.2%（截至 2026-03-31）。</li>
+<li>2025 年与海尔的关联交易金额很小：海尔向公司提供车辆租赁等服务 900 万元，公司向海尔提供广告与技术服务 510 万元（20-F 第 36 页）。</li>
+</ul>
+<p>海尔的利益在两件事上与小股东一致：贷款买的股份需要分红和股价来支撑；回购在提升海尔的持股比例。在一件事上可能不一致：海尔把汽车之家定位为"汽车服务生态"的一部分，CEO 在二季报中提到授权经销模式试点、线下加盟连锁品牌"汽车之家好车"、出海二手车出口平台，这些都需要资本投入，回报率尚无披露。</p>
+<p><strong>追问：CEO 离开，这家公司还能保持竞争力吗</strong>？这个问题对汽车之家意义有限，因为竞争力下降发生在管理层更换之前（2021–2024 年经营利润率已从 24.6% 降到 14.3%）。更该问的是：控股股东会不会把现金从股东回报转向自己的产业布局。</p>
+<hr />
+<h2 id="_7">六、行业趋势</h2>
+<ul>
+<li><strong>行业正在收缩，而且不是周期性的小幅回调</strong>。乘用车零售 2026 年 1–9 月同比下降 21.7%，新能源渗透率 9 月达到 67.0%。燃油车厂商是汽车之家媒体服务的传统大客户，燃油车零售 9 月同比下降 43%。</li>
+<li><strong>价值链位置在下移</strong>。新能源品牌更多采用直营或代理制，自建应用直连用户（20-F 风险因素也承认"厂家自有应用直连用户"构成竞争）。中间商的线索价值被压缩。</li>
+<li><strong>技术路线风险</strong>：大模型问答可以直接回答"20 万左右买什么车"，这正是汽车之家的核心使用场景。公司 2026 年 7 月推出智能体产品，方向对，但尚无用户或收入数据。</li>
+<li><strong>客户集中度</strong>：20-F 附注称 2023–2025 年没有单一客户收入占比超过 10%；客户分散在数万家经销商和数十家厂商，单一客户风险低，但整体受行业景气支配。</li>
+</ul>
+<p><strong>追问：二十年后回看，这家公司更像哪一类</strong>？更像 PC 时代的垂直门户：在一个行业信息不透明的年代建立了入口，随着信息透明化和入口迁移，价值逐步收敛到它积累的数据资产和账上现金。它不太可能成为这个时代的基础设施，但也不至于很快消失，因为车型库、评测和二手车拍卖（天天拍车）仍是真实需求。</p>
+<hr />
+<h2 id="_8">七、估值与安全边际</h2>
+<h3 id="71">7.1 当前定价</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>市值</td>
+<td>21.38 亿美元</td>
+<td>US$20.15 × 106,113,785 份 ADS（估计）</td>
+</tr>
+<tr>
+<td>TTM 市盈率</td>
+<td>14.86 倍</td>
+<td>每 ADS 收益 US$1.36</td>
+</tr>
+<tr>
+<td>TTM 自由现金流收益率</td>
+<td>1.82%</td>
+<td>经营现金流 3.78 亿元减 2025 年资本开支 1.18 亿元</td>
+</tr>
+<tr>
+<td>股息率</td>
+<td>9.23%</td>
+<td>近 12 个月宣派，来自存量现金</td>
+</tr>
+<tr>
+<td>市场隐含经营业务价值</td>
+<td>3.82 亿元</td>
+<td>市值减保守净现金桥</td>
+</tr>
+</tbody>
+</table></div>
+<p>市值验算（financial_rigor.py）：US$20.15 × 106.11M = US$2.14B，偏差 0.00%。第三方数据库按 115.76M 份 ADS 算出 23.3 亿美元，用的是 2025 年末股本，未反映 2026 年约 9% 的回购。</p>
+<h3 id="72">7.2 净现金桥</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>百万元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现金、短期投资、其他长期投资（2026-06-30）</td>
+<td>19,364.6</td>
+</tr>
+<tr>
+<td>减：应付股息（7 月已支付）</td>
+<td>-489.8</td>
+</tr>
+<tr>
+<td>减：6 月 30 日后回购现金（上限估计）</td>
+<td>-1,230.1</td>
+</tr>
+<tr>
+<td>毛净现金</td>
+<td>17,644.6</td>
+</tr>
+<tr>
+<td>减：天天拍车可赎回优先股（夹层权益）</td>
+<td>-2,220.1</td>
+</tr>
+<tr>
+<td>减：经营备用金（本文假设）</td>
+<td>-1,500.0</td>
+</tr>
+<tr>
+<td>保守净现金桥</td>
+<td>13,924.6</td>
+</tr>
+</tbody>
+</table></div>
+<p>口径说明：6 月后回购按"3 月计划在 5 月 22 日后全部花在 7 月"计，是上限；天天拍车优先股可由持有人要求赎回，按 IFRS 计为金融负债，本文全额扣除，偏保守；未计入长期股权投资 3.87 亿元。</p>
+<h3 id="73">7.3 反向测算</h3>
+<p>保守桥口径下，现价隐含经营业务每年永续自由现金流 0.34 亿元（按 9% 折现、零增长）；按毛净现金口径，隐含值为 -3.00 亿元/年。对照 TTM 经营利润按 15% 税率估算的税后值约 2.85 亿元，市场的定价相当于假设经营业务今后基本不挣钱，或者账上现金不会以面值回到股东手里。</p>
+<h3 id="74">7.4 三情景估值（经营现金流折现 + 净现金）</h3>
+<p>情景定义：2027–2036 年经营自由现金流（已扣现金税、股权激励、资本开支，不含利息收入），人民币口径，折现率 9%；净现金按保守桥计入。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>经营现金流路径（亿元/年）</th>
+<th>永续增速</th>
+<th>额外假设</th>
+<th>每 ADS 价值</th>
+<th>相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td>30%</td>
+<td>-4 到 0，第六年起持平为零</td>
+<td>0%</td>
+<td>30 亿元现金被低效消耗</td>
+<td>US$13.78</td>
+<td>-31.6%</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>50%</td>
+<td>2.5 逐步升至 5</td>
+<td>0%</td>
+<td>无</td>
+<td>US$26.57</td>
+<td>+31.9%</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td>20%</td>
+<td>5 逐步升至 14</td>
+<td>2%</td>
+<td>无</td>
+<td>US$40.81</td>
+<td>+102.5%</td>
+</tr>
+<tr>
+<td>概率加权</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>US$25.58</td>
+<td>+26.9%</td>
+</tr>
+</tbody>
+</table></div>
+<p>折现率敏感性：r 从 7% 到 11%，中性情景每 ADS 价值在 US$28.77 到 US$25.18 之间，悲观情景几乎不变（价值主要是现金）。</p>
+<p>另用 financial_rigor.py three-scenario 按市盈率法复算（三年，每 ADS 收益 US$1.36，增速 5%/-5%/-20%，目标市盈率 16/12/8 倍）：乐观 US$25.1、中性 US$13.9、悲观 US$5.6。市盈率法把 176 亿元现金只按其约 1.7% 的税后利息资本化，对现金超过市值的公司系统性低估，本文不以它作为主结论，只作为"如果市场永远不给现金面值"的下限参照。</p>
+<h3 id="75">7.5 十年压力测试</h3>
+<p>参数：人民币口径，r = 9%（区间 6%–9% 上沿），稳态增量 ROIC 12%，永续增速 0%/0%/2%，股息减稀释 6%。terminal_value.py audit 三条硬约束全部通过；"私有化低溢价"标为未建模，列入第十节。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>档位</th>
+<th>r</th>
+<th>期望 IRR（工具口径）</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r - 2pp</td>
+<td>7%</td>
+<td>+1.19%</td>
+<td>未通过</td>
+</tr>
+<tr>
+<td>基准</td>
+<td>9%</td>
+<td>-1.35%</td>
+<td>未通过</td>
+</tr>
+<tr>
+<td>r + 2pp</td>
+<td>11%</td>
+<td>-3.30%</td>
+<td>未通过（区间外，仅参考）</td>
+</tr>
+</tbody>
+</table></div>
+<p>±1pp 复核：8% 档 -0.18%、10% 档 -2.38%，同样未通过。结论在合理区间内不随折现率翻转。</p>
+<p>工具口径的退出价值只按"2036 年利润 × 退出市盈率"计，现金只通过利息进入利润，会低估现金。本文模型另算两条现金路径（三档 IRR 的概率加权）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>现金处理方式</th>
+<th>悲观</th>
+<th>中性</th>
+<th>乐观</th>
+<th>概率加权</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现金留在账上十年、期末按面值返还</td>
+<td>-2.22%</td>
+<td>7.11%</td>
+<td>15.19%</td>
+<td>5.93%</td>
+</tr>
+<tr>
+<td>现金在 2027–2029 年分三年返还</td>
+<td>-17.04%</td>
+<td>15.00%</td>
+<td>26.15%</td>
+<td>7.62%</td>
+</tr>
+</tbody>
+</table></div>
+<p>两种方式下概率加权 IRR 都低于 9%。中性情景下，现金三年内返还的 IRR 是留在账上的两倍多：这只股票的回报，主要取决于现金返还的速度，经营业务本身贡献有限。</p>
+<h3 id="76">7.6 估值分歧对账</h3>
+<ul>
+<li><strong>分歧双方</strong>：折现估值（中性 US$26.57、加权 US$25.58）显示现价有约 27% 的空间，属于"便宜"；十年压力测试显示在 9% 的资本成本下期望回报不达标，属于"不值得重仓"。</li>
+<li><strong>哪边是定价判断、哪边是仓位压力测试</strong>：折现估值回答"贵不贵"，它默认现金按面值归股东；十年测试回答"能放多重"，它把现金在公司里的低收益和悲观情景的本金损失都算了进去。</li>
+<li><strong>综合结论</strong>：两者并不矛盾。现价不贵，但便宜的那部分（现金）不由小股东控制；经营业务在收缩、管理层与资本配置取向尚未经过完整周期检验。六个维度综合给出观望，十年测试的作用是把仓位上限压低，而不是单独否决。</li>
+<li><strong>仓位含义</strong>：即使到了买入区间，也只适合低仓位；十年测试未通过意味着它不适合作为核心持仓。</li>
+</ul>
+<h3 id="77">7.7 价格区间与安全边际</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>价格（每 ADS）</th>
+<th>港股约合</th>
+<th>依据</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≤ US$17.0</td>
+<td>≤ HK$33.4</td>
+<td>比保守净现金桥低 13.3%，悲观情景回撤约 19%</td>
+<td>可建低仓位</td>
+</tr>
+<tr>
+<td>US$17–25</td>
+<td>HK$33.4–49.0</td>
+<td>在保守净现金与加权价值之间</td>
+<td>观望</td>
+</tr>
+<tr>
+<td>≥ US$26.5</td>
+<td>≥ HK$52.0</td>
+<td>达到中性情景价值</td>
+<td>持有者减仓</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>追问：如果股市明天关闭五年，愿意以这个价格持有吗</strong>？以现价不愿意重仓。五年不能交易，意味着唯一的回报来源是分红和回购，而 2027 年以后的分红政策尚未公布。<strong>追问：r 错 2 个百分点，结论会翻转吗</strong>？不会：7%–9% 区间内十年测试都未通过，中性情景价值在 US$25–29 之间移动，观望结论不变。</p>
+<hr />
+<h2 id="_9">八、综合决策</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结论</th>
+<th>信心度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生意质量</td>
+<td>用户在、付费方缩表；经营利润率从 24.6% 降到 6.1%</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>窄且在变窄，定价权在流失</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>管理层与治理</td>
+<td>控股股东换成贷款收购的海尔，股东回报执行积极，但战略方向偏重资产</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>最大风险</td>
+<td>现金被留存或用于低回报布局；2027 年分红政策不续</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>行业趋势</td>
+<td>乘用车零售 1–9 月 -21.7%，燃油车预算塌缩，入口迁移</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>三年：现价约等于保守净现金，加权价值 US$25.58，便宜 / 十年压力测试：r = 7%–9% 均未通过，结论不翻转</td>
+<td>★★★</td>
+</tr>
+</tbody>
+</table></div>
+<p>估值一栏不是最终裁决：十年测试未通过只用于压低仓位上限。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>策略</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓者</td>
+<td>观望。US$17 以下且三季报确认下半年分红约 10 亿元或经营利润连续两个季度同比增长，可建低仓位</td>
+</tr>
+<tr>
+<td>持有者</td>
+<td>持有，US$26.5 以上减仓；不在 US$17–25 之间加仓</td>
+</tr>
+<tr>
+<td>卖出信号</td>
+<td>回购计划暂停或缩减；2027 年起不再承诺固定分红；长期投资、加盟门店或关联交易显著增加</td>
+</tr>
+<tr>
+<td>加仓信号</td>
+<td>公布 2027 年以后的分红与回购政策；经营利润连续两个季度同比增长</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>近期检验点</strong>：2026-11-04 三季报（是否宣派下半年分红、回购进度、季度经营利润）；2027 年 3 月前后年报（2027 年以后股东回报政策）。</p>
+<hr />
+<h2 id="_10">九、各维度追问汇总</h2>
+<ul>
+<li>生意本质：这门生意的问题是流量还是变现？证据指向变现：日活稳定，收入下降三成。</li>
+<li>护城河：如果懂车帝和大模型问答把线索价格再压低三成，汽车之家的线索业务还能赚钱吗？目前数据无法回答。</li>
+<li>失败路径：海尔用贷款买下控股权后，最符合其利益的现金用途是什么？分红能直接帮它还贷，这是对小股东最有利的一点。</li>
+<li>管理层：家电渠道出身的管理团队，能否把线下加盟和授权经销做成高回报业务？没有先例可参考。</li>
+<li>行业：汽车销量下行是暂时的政策退坡，还是长期的需求透支？乘联分会数据只能说明 2026 年在下行，不能说明下行何时结束。</li>
+<li>估值：市场给经营业务的定价接近零，到底是低估，还是对现金归属的合理折价？本文判断两者都有，比例取决于 11 月的分红决定。</li>
+</ul>
+<hr />
+<h2 id="_11">十、限制与未建模风险</h2>
+<ol>
+<li><strong>股本为估计值</strong>。当前股本 424,455,140 股是上限估计，未扣除 2026 年 3 月 5–31 日的回购和 8 月 14 日后的回购，也未加回限制性股票归属；实际股本可能低至约 4.11 亿股，对应市值约 20.68 亿美元。</li>
+<li><strong>私有化低溢价未建模</strong>。海尔持股接近半数，若以低溢价私有化，小股东无法享受折现估值中的价值。</li>
+<li><strong>分部利润缺失</strong>。新零售、天天拍车、出海业务的利润未单独披露，无法判断哪块业务在亏钱。</li>
+<li><strong>竞争数据缺失</strong>。未取得 2026 年懂车帝、易车与汽车之家同口径的流量和线索份额。</li>
+<li><strong>汇率为单一来源</strong>。美元兑人民币 6.6909 为 2026-10-19 市场参考价。</li>
+<li><strong>乘联分会数据为转载</strong>。本轮未直接打开乘联分会官网原文。</li>
+</ol>
+<hr />
+<h2 id="ai">十一、AI 分析置信度与投资确定性</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>结论</th>
+<th>AI 分析置信度</th>
+<th>投资确定性</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入与利润在下滑</td>
+<td>高</td>
+<td>高</td>
+<td>SEC 原件逐项核对</td>
+</tr>
+<tr>
+<td>市值约等于保守净现金</td>
+<td>高</td>
+<td>中</td>
+<td>资产负债表为原件；股本为估计</td>
+</tr>
+<tr>
+<td>经营业务的十年现金流</td>
+<td>低</td>
+<td>低</td>
+<td>全部为情景假设</td>
+</tr>
+<tr>
+<td>海尔的资本配置取向</td>
+<td>低</td>
+<td>低</td>
+<td>只有两轮回购和一次分红可观察，缺乏长期记录</td>
+</tr>
+<tr>
+<td>行业持续收缩</td>
+<td>中</td>
+<td>中</td>
+<td>乘联分会数据为转载，周期长度不可知</td>
+</tr>
+</tbody>
+</table></div>
+<p>AI 分析置信度取决于资料是否可核验，投资确定性取决于生意本质与控制权结构。本文的财务事实部分有充分数据；"现金最终归谁"这个最关键的问题，公开资料不足以给出确定答案，只能通过 11 月三季报和 2027 年初的政策公告来验证。</p>
+<hr />
+<h2 id="_12">附录：关键数据交叉验证记录</h2>
+<p>完整输出见 <a href="../files/reports/%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6/research-20261021/financial-rigor.txt">financial-rigor.txt</a>。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>来源一</th>
+<th>来源二</th>
+<th>偏差</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-10-20 ADS 收盘价</td>
+<td>StockAnalysis US$20.15</td>
+<td>Yahoo US$20.16；港股折算 US$20.13</td>
+<td>≤ 0.08%</td>
+</tr>
+<tr>
+<td>2025 年末普通股</td>
+<td>20-F 463,038,708 股</td>
+<td>StockAnalysis 115.76M ADS × 4</td>
+<td>0.00%</td>
+</tr>
+<tr>
+<td>2025 年收入</td>
+<td>20-F 6,452.03 百万元</td>
+<td>StockAnalysis 6,452 百万元</td>
+<td>0.00%</td>
+</tr>
+<tr>
+<td>2025 年归属普通股东净利润</td>
+<td>20-F 1,385.13 百万元</td>
+<td>StockAnalysis 1,385 百万元</td>
+<td>0.00%</td>
+</tr>
+<tr>
+<td>2025 年经营现金流</td>
+<td>20-F 889.46 百万元</td>
+<td>StockAnalysis 889.46 百万元</td>
+<td>0.00%</td>
+</tr>
+<tr>
+<td>TTM 归属普通股东净利润</td>
+<td>季报加总 937.92 百万元</td>
+<td>StockAnalysis 937.88 百万元</td>
+<td>0.00%</td>
+</tr>
+<tr>
+<td>2026-06-30 现金与短期投资</td>
+<td>季报 18,154.91 百万元</td>
+<td>StockAnalysis 18,155 百万元</td>
+<td>0.00%</td>
+</tr>
+<tr>
+<td>市值</td>
+<td>US$20.15 × 106.11M</td>
+<td>工具复算 US$2.14B</td>
+<td>0.00%</td>
+</tr>
+</tbody>
+</table></div>
+<p>数据抽检：固定随机种子 42 抽样，判决见 <a href="../files/reports/%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6/research-20261021/audit-verdict.txt">audit-verdict.txt</a>。</p></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6%EF%BC%9A%E5%B8%82%E5%80%BC%E7%BA%A6%E7%AD%89%E4%BA%8E%E5%87%80%E7%8E%B0%E9%87%91%EF%BC%8C%E6%94%B6%E5%85%A5%E4%B8%80%E5%B9%B4%E5%B0%91%E4%B8%89%E6%88%90%EF%BC%8C%E4%B9%B0%E7%9A%84%E6%98%AF%E7%8E%B0%E9%87%91%E6%80%8E%E4%B9%88%E5%9B%9E%E5%88%B0%E8%82%A1%E4%B8%9C%E6%89%8B%E9%87%8C&amp;ticker=%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6&amp;source=reports%2F%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6%2F%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261021.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2Fee1c9a430e1b.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>底稿与核验（GitHub）</h2><div class="meta">这些文件不在阅读站上展示，点开为 GitHub 原文。</div><ul class="list work"><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6/research-20261021/sources.md">来源与证据登记</a><div class="meta">审计核验底稿 · research-20261021/sources.md</div></li></ul><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/020cf3dc9e33.html">汽车之家研究附件</a><div class="meta">2026-10-21 · 导读</div></li><li><a href="../r/ba5044fbca81.html">汽车之家（NYSE: ATHM / HKEX: 2518）深度投研报告</a><div class="meta">2026-06-14 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">信息丰富度评级与研究局限</a></li>
+<li><a href="#_2">一、关键数据总览</a></li>
+<li><a href="#_3">二、生意本质</a><ul>
+<li><a href="#21">2.1 一句话定义</a></li>
+<li><a href="#22">2.2 收入结构</a></li>
+<li><a href="#23">2.3 五年盈利能力</a></li>
+<li><a href="#24">2.4 经营杠杆</a></li>
+<li><a href="#25">2.5 生意好在哪、坏在哪</a></li>
+</ul>
+</li>
+<li><a href="#_4">三、护城河</a></li>
+<li><a href="#_5">四、反过来想：失败路径</a></li>
+<li><a href="#_6">五、管理层与治理</a><ul>
+<li><a href="#51">5.1 控制权变化</a></li>
+<li><a href="#52">5.2 资本配置</a></li>
+<li><a href="#53">5.3 利益一致性</a></li>
+</ul>
+</li>
+<li><a href="#_7">六、行业趋势</a></li>
+<li><a href="#_8">七、估值与安全边际</a><ul>
+<li><a href="#71">7.1 当前定价</a></li>
+<li><a href="#72">7.2 净现金桥</a></li>
+<li><a href="#73">7.3 反向测算</a></li>
+<li><a href="#74">7.4 三情景估值（经营现金流折现 + 净现金）</a></li>
+<li><a href="#75">7.5 十年压力测试</a></li>
+<li><a href="#76">7.6 估值分歧对账</a></li>
+<li><a href="#77">7.7 价格区间与安全边际</a></li>
+</ul>
+</li>
+<li><a href="#_9">八、综合决策</a></li>
+<li><a href="#_10">九、各维度追问汇总</a></li>
+<li><a href="#_11">十、限制与未建模风险</a></li>
+<li><a href="#ai">十一、AI 分析置信度与投资确定性</a></li>
+<li><a href="#_12">附录：关键数据交叉验证记录</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-21 01:11 UTC</footer></body></html>
