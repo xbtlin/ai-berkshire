@@ -6,6 +6,7 @@
 
 import json
 import subprocess
+import sys
 import time
 import csv
 import os
@@ -149,4 +150,6 @@ def main():
 
 
 if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
     main()
