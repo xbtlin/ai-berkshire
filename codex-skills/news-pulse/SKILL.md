@@ -9,7 +9,10 @@ This skill is generated from `skills/news-pulse.md` so Claude Code and Codex use
 
 - Treat `$ARGUMENTS` as the user's request in the current Codex thread.
 - When the source mentions Claude-only surfaces such as Task, Agent, WebSearch, Bash, Read, or Write, use the closest Codex capability available in this session: subagents when available, web search when needed, shell commands for local tools, and normal file edits for workspace files.
-- Use shared project tools from `tools/` in this repository. Prefer running commands from the repository root with paths like `python3 tools/financial_rigor.py ...`; if the current thread starts outside the repo, locate the actual checkout path first instead of assuming a fixed home-directory path.
+- Locate the actual project root containing `AGENTS.md`, `skills/`, and `tools/` before resolving project paths. Do not assume `~/ai-berkshire` or use the installed skill directory as the root. Run shared tools from the project root, or pass absolute tool and report paths. Save reports under its `reports/` directory unless the user specifies another destination.
+- Before running Python commands, identify and verify a usable interpreter; replace the example command `python3` as needed. A WindowsApps command entry alone does not verify an interpreter.
+- Adapt examples to the active shell. In PowerShell, use single-line commands instead of Bash backslash continuations, quote path arguments, and replace `grep`/`head` pipelines with available `rg` or PowerShell commands.
+- Use the system temporary directory instead of assuming `/tmp` exists: `tempfile.gettempdir()` with `pathlib.Path` in Python, or `[System.IO.Path]::GetTempPath()` with `Join-Path` in PowerShell. Ensure output parent directories exist before writing.
 - Before starting research, run the `date` command to confirm today's date; treat it as the baseline for "latest" data and state the data cutoff date in the report header. Never assume the current date from training data.
 - Preserve the research quality rules from `AGENTS.md`: cross-check financial data, use exact arithmetic tools for valuation/math, and clearly label uncertainty and source gaps.
 
@@ -108,7 +111,8 @@ This skill is generated from `skills/news-pulse.md` so Claude Code and Codex use
   3. **做空数据**：做空比例、新发布的做空报告（如有）
   4. **大 V 观点**：可调用 `python3 tools/xueqiu_scraper.py` 抓段永平等大 V 最近相关发言
      - 段永平 user_id: `1247347556`
-     - 命令示例：`python3 tools/xueqiu_scraper.py --user-id 1247347556 --keywords {公司名},{股票代码} --output /tmp/dyp-{公司名}.md`
+     - 先取得系统临时目录，用路径拼接生成 `dyp-{公司名}.md` 的完整输出路径；PowerShell 使用 `[System.IO.Path]::GetTempPath()` 和 `Join-Path`，Python 使用 `tempfile.gettempdir()` 和 `pathlib.Path`。不要假设 `/tmp` 存在。
+     - 从实际项目根目录运行，使用已验证的 Python 解释器，替换示例中的占位符并给完整路径加引号：`python3 tools/xueqiu_scraper.py --user-id 1247347556 --keywords "{公司名},{股票代码}" --output "{临时文件完整路径}"`
      - 仅在该公司是段永平/李录关注标的时调用，否则跳过节省时间
   5. **传言与小作文**：媒体未证实的传言、社交媒体讨论热点（雪球/X/Reddit）
   6. **技术面信号**：是否触及关键支撑/阻力、是否有大宗交易、融资融券异常

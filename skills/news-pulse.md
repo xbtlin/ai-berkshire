@@ -98,7 +98,8 @@ description: 公司新闻脉搏：股价异动时快速归因。用 4 个并行 
   3. **做空数据**：做空比例、新发布的做空报告（如有）
   4. **大 V 观点**：可调用 `python3 tools/xueqiu_scraper.py` 抓段永平等大 V 最近相关发言
      - 段永平 user_id: `1247347556`
-     - 命令示例：`python3 tools/xueqiu_scraper.py --user-id 1247347556 --keywords {公司名},{股票代码} --output /tmp/dyp-{公司名}.md`
+     - 先取得系统临时目录，用路径拼接生成 `dyp-{公司名}.md` 的完整输出路径；PowerShell 使用 `[System.IO.Path]::GetTempPath()` 和 `Join-Path`，Python 使用 `tempfile.gettempdir()` 和 `pathlib.Path`。不要假设 `/tmp` 存在。
+     - 从实际项目根目录运行，使用已验证的 Python 解释器，替换示例中的占位符并给完整路径加引号：`python3 tools/xueqiu_scraper.py --user-id 1247347556 --keywords "{公司名},{股票代码}" --output "{临时文件完整路径}"`
      - 仅在该公司是段永平/李录关注标的时调用，否则跳过节省时间
   5. **传言与小作文**：媒体未证实的传言、社交媒体讨论热点（雪球/X/Reddit）
   6. **技术面信号**：是否触及关键支撑/阻力、是否有大宗交易、融资融券异常
