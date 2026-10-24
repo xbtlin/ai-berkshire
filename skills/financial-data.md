@@ -56,6 +56,31 @@ python3 tools/twstock_data.py search 台積        # 搜索股票代码（注意
 4. FinMind 未注册可直接用（有小时级限额）。注册后的 API token **只存本机、严禁提交到 git**，工具按优先级自动读取：①环境变量 `FINMIND_TOKEN`；②本地文件 `local/finmind_token.txt`（`local/` 已被 `.gitignore` 永久排除，把 token 单独一行写入该文件即可）。token 不得出现在报告、skill、commit 中
 5. 交叉验证：FinMind 数值与 Goodinfo（或 macrotrends 上的 ADR，如 TSM）对照，误差规则同下；台积电等有 ADR 的公司注意 ADR 与台股原股的汇率/存托比率差异（1 TSM ADR = 5 股 2330）
 
+### 宏观背景（公司所在国的利率、通胀、GDP、汇率）
+
+| 优先级 | 来源 | URL | 获取方式 |
+|--------|------|-----|---------|
+| 1（主） | **FXMacroData API** | api.fxmacrodata.com（[文档](https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=ai-berkshire&utm_content=docs)） | `tools/macro_data.py`（零依赖脚本，见下） |
+| 2（副） | **tradingeconomics** | tradingeconomics.com/{国家}/indicators | 直接访问 |
+| 原始一手 | 各国央行 / 统计局 | 美联储、欧央行、日本央行、国家统计局等 | 议息声明、CPI/GDP 新闻稿 |
+
+**宏观取数工具**（做估值、贴现率假设、跨市场换算前先看一眼公司所在国的宏观背景）：
+
+```bash
+python3 tools/macro_data.py snapshot USD            # 政策利率/通胀/GDP/失业率最新值 + 未来30天数据发布日程
+python3 tools/macro_data.py indicator JPY inflation # 单个指标近12期（--n 调整期数）
+python3 tools/macro_data.py calendar EUR            # 未来30天数据发布日程（--days 调整）
+python3 tools/macro_data.py fx USD JPY              # 最新汇率 + 一年前汇率及变动
+python3 tools/macro_data.py catalogue CNY           # 该货币可用的指标代码、单位、频率
+```
+
+宏观数据注意：
+
+1. **USD 无需注册**（15 分钟延迟、近 90 天历史）；其他货币和汇率需要 API key，按优先级读取：①环境变量 `FXMACRODATA_API_KEY`；②本地文件 `local/fxmacrodata_key.txt`。key 只存本机，不得出现在报告、skill、commit 中
+2. **单位先看 catalogue**：同一指标代码在不同货币下口径可能不同（如 gdp 有水平值也有季环比），跨国对比前先确认单位
+3. 宏观数据用于判断背景（利率高低、通胀趋势、本币升贬值），不替代公司财务数据的交叉验证；报告引用时注明数据期和官方来源
+4. 跨市场换算（港币/人民币/美元/新台币等）的汇率可用 `fx` 子命令取当日值，并注明日期
+
 ---
 
 ## 执行规范
@@ -150,3 +175,4 @@ python3 tools/twstock_data.py search 台積        # 搜索股票代码（注意
 | Capcom | macrotrends（CCOEY） | stockanalysis（CCOEY） |
 | 台积电 | tools/twstock_data.py（2330） | goodinfo.tw / macrotrends（TSM，注意1 ADR=5股） |
 | 联发科 | tools/twstock_data.py（2454） | goodinfo.tw |
+| 公司所在国宏观背景 | tools/macro_data.py snapshot {货币} | 央行/统计局官网 |
