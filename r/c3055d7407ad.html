@@ -1,0 +1,512 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>恒生科技与纳斯达克估值对比研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/c3055d7407ad.html" data-title="恒生科技与纳斯达克估值对比研究报告"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../topics/恒生科技/index.html">恒生科技</a></div><div class="layout"><div><h1>恒生科技与纳斯达克估值对比研究报告</h1><div class="meta"><a href="../topics/恒生科技/index.html">恒生科技</a> ｜ 2026-10-24 · 横评对比 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80%E4%B8%8E%E7%BA%B3%E6%96%AF%E8%BE%BE%E5%85%8B%E4%BC%B0%E5%80%BC%E5%AF%B9%E6%AF%94-20261024.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、先把答案落到数字上</a><ul>
+<li><a href="#1">1. 价格：都高于当年，差距很大</a></li>
+<li><a href="#2-pe-pb">2. 估值：恒科 PE 低、PB 高；纳指两者都高</a></li>
+</ul>
+</li>
+<li><a href="#_2">二、这些数字能信到什么程度</a><ul>
+<li><a href="#1_1">1. 多来源旁证支持大方向，但没有形成精确一致</a></li>
+<li><a href="#2-34885">2. 官方恒科 348.85 倍，不是打字错误</a></li>
+<li><a href="#3-pe">3. 前瞻 PE 是重要旁证，但本次不足以精确作差</a></li>
+</ul>
+</li>
+<li><a href="#pe">三、恒生科技：为什么 PE 更低，却还不能认定机会更好</a><ul>
+<li><a href="#1-2022">1. 2022 年的低价和低盈利同时出现</a></li>
+<li><a href="#2">2. 账面盈利与现金回报出现了实质分叉</a></li>
+<li><a href="#3-pb">3. PB 比当年月末高约两成，为什么仍不能提供“保底”</a></li>
+</ul>
+</li>
+<li><a href="#_3">四、纳斯达克：涨幅很大，估值扩张没有同样大</a><ul>
+<li><a href="#1_2">1. 盈利成长解释了相当一部分价格变化</a></li>
+<li><a href="#2_1">2. 现在主要担心的，是增长代价及持续性</a></li>
+<li><a href="#3-pb_1">3. 纳指 PB 更高，解释力弱于盈利和现金流</a></li>
+</ul>
+</li>
+<li><a href="#pe_1">五、利率和风险：同样的 PE，也不等于同样的吸引力</a></li>
+<li><a href="#_4">六、未来五年：要获得可接受回报，需要什么条件</a><ul>
+<li><a href="#_5">盈利分母错了，模型会有多大变化</a></li>
+</ul>
+</li>
+<li><a href="#_6">七、到什么位置，值得重新认真评估</a></li>
+<li><a href="#_7">八、最强的反方观点，与行动判断</a></li>
+<li><a href="#_8">数据质量与复核记录</a><ul>
+<li><a href="#_9">来源索引</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><blockquote>
+<p><strong>研究基准日：2026 年 10 月 24 日；行情截至 10 月 23 日收盘。</strong> 恒生科技 3,871.66 点，纳斯达克 100 为 28,957.53 点，纳斯达克综合指数为 25,955.34 点。估值有独立截止日：恒科主序列截至 10 月 23 日，纳指 100 主序列截至 10 月 21 日。历史主锚为 2022 年 10 月末；周频估值保留供应商日期标签。<a href="https://www.hsi.com.hk/zh-hk/indexes/all-indexes/index-details/?seriesCode=hstech">S01</a><a href="https://fred.stlouisfed.org/series/NASDAQCOM">S03</a></p>
+<p><strong>核心判断：按本次供应商历史序列，恒科当前的历史盈利倍数低于 2022 年 10 月底，但净资产倍数更高，不能据此宣称整体机会优于当年；纳指 100 最新可得估值标签为 10 月 21 日，历史盈利和净资产倍数均高于当年。两者现在都更需要验证 AI 投入后的股东现金回报。</strong></p>
+</blockquote>
+<p>信息丰富度：行情与公司披露为 A 级；历史估值来自可复取的公开供应商序列，证据为 B 级，口径可比性仍有限。本文把可验证事实、供应商口径、推论和情景假设分开。主要局限是：没有取得两个时点全部成分、权重、当时已披露财报与一致预期的完整底表，因此不能声称已独立重建两个指数的经济利润估值，也不能把供应商历史序列当成无前视偏差的回测。</p>
+<p>本文的“纳斯达克估值”主要指 <strong>Nasdaq-100（NDX）</strong>，因为常见纳指 100 ETF 跟踪这一组合。Nasdaq Composite（IXIC）覆盖面更广，本文单列其价格表现，不把 NDX 的 PE 填到 IXIC 名下。<a href="https://www.nasdaq.com/newsroom/nasdaq-composite-vs-nasdaq-100-what-investors-should-know">S05</a></p>
+<hr />
+<h2 id="_1">一、先把答案落到数字上</h2>
+<h3 id="1">1. 价格：都高于当年，差距很大</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指数</th>
+<th align="right">2022-10-31 收盘</th>
+<th align="right">2026-10-23 收盘</th>
+<th align="right">价格累计变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>恒生科技 HSTECH</td>
+<td align="right">2,852.57</td>
+<td align="right">3,871.66</td>
+<td align="right">+35.73%</td>
+</tr>
+<tr>
+<td>纳斯达克 100 NDX</td>
+<td align="right">11,405.57</td>
+<td align="right">28,957.53</td>
+<td align="right">+153.89%</td>
+</tr>
+<tr>
+<td>纳斯达克综合 IXIC</td>
+<td align="right">10,988.15</td>
+<td align="right">25,955.34</td>
+<td align="right">+136.21%</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：恒科当前由指数公司与信报行情核对，历史由证券时报与智通当日报道核对；美方采用 Nasdaq 经 FRED 发布的日收盘序列，辅以当日市场报道。<a href="https://fred.stlouisfed.org/series/NASDAQ100">S02</a><a href="https://www.stcn.com/article/detail/712355.html">S04</a><a href="https://stock360.hkej.com/stock">S07</a> 上表是当地货币价格指数变化，不包括分红再投资、费用、税款、人民币汇率及 ETF 折溢价，因此不是投资者实际总回报。</p>
+<p>恒科 2022 年 10 月收盘低点是 10 月 24 日的 2,801.99 点，盘中低点是 10 月 25 日的 2,720.38 点。当前分别高出 38.18% 和 42.32%；后一个比较混合了盘中与收盘，只用于说明极端价差，不作为主比较。<a href="https://zh.wikipedia.org/wiki/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80%E6%8C%87%E6%95%B8">S08</a></p>
+<p><strong>纳指上涨超过一倍，不意味着其估值倍数也上涨超过一倍。</strong> 价格同时包含盈利规模、每股权益、成分变化和估值变化。把价格涨幅直接叫作“贵了多少”，会把企业成长全部误判成泡沫。</p>
+<h3 id="2-pe-pb">2. 估值：恒科 PE 低、PB 高；纳指两者都高</h3>
+<p>下面采用同一公开展示平台的历史接口 <code>display_history</code>，各指数分别与自身比较。平台将恒科标为市值加权 PE-TTM；NDX 注明取自蛋卷基金历史估值。<strong>同一个网站不代表两个指数底层算法完全一致。</strong><a href="https://etf.whatsid.me/indices/valuation">S01</a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th align="right">2022 年 10 月历史观察</th>
+<th align="right">最新可得观察</th>
+<th align="right">倍数变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>恒生科技 PE-TTM</td>
+<td align="right">31.94 倍，10-31</td>
+<td align="right">20.63 倍，2026-10-23</td>
+<td align="right">-35.41%</td>
+</tr>
+<tr>
+<td>恒生科技 PB</td>
+<td align="right">1.743 倍，10-31</td>
+<td align="right">2.092 倍，2026-10-23</td>
+<td align="right">+20.02%</td>
+</tr>
+<tr>
+<td>纳指 100 PE-TTM</td>
+<td align="right">25.34 倍，10-30 网站周标签</td>
+<td align="right">28.74 倍，2026-10-21</td>
+<td align="right">+13.42%</td>
+</tr>
+<tr>
+<td>纳指 100 PB</td>
+<td align="right">6.490 倍，同上</td>
+<td align="right">9.037 倍，2026-10-21</td>
+<td align="right">+39.24%</td>
+</tr>
+</tbody>
+</table></div>
+<p>该表的证据等级为 <strong>B：数据可重复取得，逐股计算及历史重述规则未完全披露</strong>。2022-10-30 是星期日，不能冒充当日美股收盘估值，也不能擅自指定其对应哪一交易日。NDX 最新估值日期标签为 10-21，尚未核实对应的美国交易日及收盘时点。原始必要观察及精度说明保存在<a href="../files/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/index-comparison-20261024/valuation-extract.json">数据摘录</a>，计算见<a href="../files/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/index-comparison-20261024/model-results.json">复算结果</a>。</p>
+<p>这组数据给出的信息比一句“恒科很便宜”丰富：按该供应商的已实现利润分母，恒科每一元利润的购买价格下降了；但每一元净资产的购买价格没有回到当年的恐慌水平。纳指则需要比当年支付更高的利润与净资产倍数。</p>
+<p>选取低点附近会使结论更严格：NDX 在 2022-10-16 网站周标签的 PE 是 22.72 倍，最新高出 26.50%。因此“相对月末高约一成”和“相对低点附近高约四分之一”可以同时成立，不能挑一个最有利的基准替代另一个。<a href="https://etf.whatsid.me/indices/valuation">S01</a></p>
+<hr />
+<h2 id="_2">二、这些数字能信到什么程度</h2>
+<h3 id="1_1">1. 多来源旁证支持大方向，但没有形成精确一致</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>数据检查</th>
+<th>取得的旁证</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>恒科 2022 年 10 月末 TTM PE</td>
+<td>国海证券当时报告给出 35.3 倍；主序列为 31.94 倍</td>
+<td>存在明显口径差异，不能称误差小于 1%</td>
+</tr>
+<tr>
+<td>恒科当前 TTM PE</td>
+<td>百分位显示 20.63 倍；同花顺 10-22 报道约 21.20 倍</td>
+<td>支持约二十倍量级；可能共用底层数据，且时间不同</td>
+</tr>
+<tr>
+<td>NDX 2022 年 10 月末 PE</td>
+<td>KFH Capital 月报引 Refinitiv 给出 24.37 倍</td>
+<td>与周标签 25.34 倍方向一致，非精确同日核对</td>
+</tr>
+<tr>
+<td>NDX 当前 PE</td>
+<td>GuruFocus 10-23 为 28.7 倍；Worldperatio 10-23 为 26.68 倍</td>
+<td>后者明示基于 QQQ，不能冒充统一指数 PE</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源分别见 <a href="https://baifenwei.com/index/hstech/">S09</a><a href="https://www.gurufocus.com/economic_indicators/6778/nasdaq-100-pe-ratio">S11</a><a href="https://stock.10jqka.com.cn/20261022/c680963993.shtml">S13</a>。本报告不把不同来源平均成“更准确”的数值，也不利用其中最低值给出买入结论。</p>
+<p>主表的价值在于提供一条可复取的前后比较线，而非消除所有定义问题。尤其是“市值加权”四个字，不能证明亏损公司已经以负利润完整纳入。历史数据是否后来重述、年报公布前是否已回填，也没有获得足够说明。故本文没有计算貌似精确的全历史底部概率。</p>
+<h3 id="2-34885">2. 官方恒科 348.85 倍，不是打字错误</h3>
+<p>恒生指数公司 2022 年 10 月月报列示恒科 PE 为 <strong>348.85 倍</strong>。这与主表的 TTM 倍数是不同口径。<a href="https://www.hsi.com.hk/static/uploads/contents/en/dl_centre/monthly_roundup/20221101T000000.pdf">S14</a></p>
+<p>现行官方操作指南以各股最近完整年度业绩的 EPS 计算 PE；指数层面以指数市值除以相应成分盈利，股数经过自由流通与权重上限调整。它不等于普通软件的滚动四季 PE，也不是预测 PE。各公司年报披露不同步，因此“指数盈利一年只更新一次”同样不准确。<a href="https://www.hsi.com.hk/static/uploads/contents/en/dl_centre/methodologies/index_operation_guide_e.pdf">S15</a></p>
+<p>当总盈利被亏损或一次性项目抵消、分母接近零时，PE 会非常高。这个数学现象可以解释为什么危机低点也会出现高 PE；它不能单独证明当时贵，也不能直接证明后来便宜了九成以上。本次没有还原当年全部成分利润，因此不将异常数值精确归因于某一家企业。</p>
+<p>同理，选十家大型互联网公司，用总市值除以总利润，得到的是自建组合；只有使用真实指数权重并统一盈利权益口径，才能解释购买整个 ETF 对应多少盈利。</p>
+<h3 id="3-pe">3. 前瞻 PE 是重要旁证，但本次不足以精确作差</h3>
+<p>恒科有公开机构报告列出 16.9 倍，但其数据日是 2026-09-23，分母是 FY2026E；历史报道说 2022 年 10 月低点前瞻 PE 约 17 倍，却没有给出精确观察日和盈利年份。两者最多说明预测倍数处于相近数量级，不能写成“今天比当时便宜多少”。<a href="https://www.businesstimes.com.sg/companies-markets/china-tech-stocks-roar-back-new-normal-will-test-upside">S16</a></p>
+<p>纳指的公开前瞻历史也存在序列切换：History of Market 的旧终端周序列与新 FY1/FY2 自算序列分开保存。旧序列 2022-10-14 为 18.56 倍，新自算序列 2026-10-23 为 20.12 倍；<strong>本文不把它们拼成严格同口径涨幅</strong>。一致预期的低 PE 依赖未来利润兑现，不能替代已经到账的现金。<a href="https://historyofmarket.com/nasdaq/ndx-forward-pe/">S18</a></p>
+<blockquote>
+<p>应先问“我买到的利润包含了谁、扣除了什么”，再问“这个倍数是不是便宜”。</p>
+</blockquote>
+<hr />
+<h2 id="pe">三、恒生科技：为什么 PE 更低，却还不能认定机会更好</h2>
+<h3 id="1-2022">1. 2022 年的低价和低盈利同时出现</h3>
+<p>历史盈利倍数是一个滞后指标。若价格与盈利一起下降，PE 未必下降；盈利后来恢复，即使价格上涨，PE 也可能下降。因此当前的低 PE 至少表明供应商采用的利润分母与当时已经不同，并不意味着今天价格比当时低。</p>
+<p>2022 年 10 月末的投资者，还没有看到 11 月公布的防疫二十条，也没有看到 12 月 PCAOB 正式宣布取得完整检查权限。用后来已经知道的政策转向解释当时应有的“确定性”，会产生后见之明。那时投资者承担的是盈利下行与政策、市场准入不确定性的叠加风险。<a href="https://pcaobus.org/news-events/news-releases/news-release-detail/fact-sheet-pcaob-secures-complete-access-to-inspect-investigate-chinese-firms-for-first-time-in-history">S19</a></p>
+<p>今天的关键问题有所转移：成熟平台产生的利润，能有多少留给股东；多少用于补贴竞争、算力采购和新业务。过去利润恢复，不保证下一轮投入有足够回报。</p>
+<h3 id="2">2. 账面盈利与现金回报出现了实质分叉</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司与期间</th>
+<th>盈利或现金指标</th>
+<th>对估值的含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯，2026Q2</td>
+<td>IFRS 归母净利 560.22 亿元；公司定义 FCF 为 -138 亿元</td>
+<td>净利润为正，短期可分配现金仍可能为负</td>
+</tr>
+<tr>
+<td>阿里，2026 年 6 月季度</td>
+<td>归母净利 105.37 亿元；公司定义 FCF 为 -446.70 亿元</td>
+<td>用利润倍数不能完整表达再投资压力</td>
+</tr>
+<tr>
+<td>微软，FY2026Q4</td>
+<td>经营现金流 554 亿美元；PP&amp;E 现金支付 358 亿美元；FCF 196 亿美元</td>
+<td>收现能力强，也要支付庞大的基础设施账单</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：公司原始业绩公告/电话会，并分别用 Telecompaper、MoneyDJ、Reuters 报道交叉核对核心 FCF 数值。<a href="https://www.telecompaper.com/news/tencent-records-negative-free-cash-in-q2-after-surge-in-ai-capex--1579852">S21</a><a href="https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c70b733e-4ea8-4dfa-bd37-d11655f13382">S23</a><a href="https://ca.marketscreener.com/news/microsoft-tops-quarterly-cloud-growth-estimates-easing-spending-concerns-ce7f51d3dd88f520">S25</a> 三家公司 FCF 定义并不完全相同，表中仅用于说明利润与现金可能分叉，<strong>没有跨公司求和或用单季乘四估算正常年份</strong>。</p>
+<p>腾讯另披露，剔除算力采购预付款后，当季 FCF 会为正 376 亿元。预付款有跨期性质，负现金流不等于核心业务突然失去赚钱能力；但这笔资金确实暂时不能分给股东。正确处理是评估预付款对应资产、交付和回报，不能一边把现金支出全加回，一边又把新增业务增长全算进去。<a href="https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-second-quarter-results-302849608.html">S21</a></p>
+<p>阿里的现金流压力同样需要在云收入、投入强度、竞争性支出和每股权益之间建立联系。云增长快是一项经营事实；新增资本能够获得超过资金成本的回报，是另一项仍需验证的判断。</p>
+<h3 id="3-pb">3. PB 比当年月末高约两成，为什么仍不能提供“保底”</h3>
+<p>账面净资产不是可随时变现的现金。研发、人力和用户网络未必形成资产负债表上的资产；收购商誉、设备、投资和预付款则可能已经入账，却存在减值风险。高于每股账面价值的回购，通常还会在股价不变时抬高 PB。</p>
+<p>因此，PB 适合提示市场对资产回报的悲观程度，却不适合单独给平台公司定价。恒科当前相对当年更高的 PB，与更低的 PE 并不矛盾：盈利能力、资产结构和成分都发生了变化。</p>
+<p><strong>我的判断：当前恒科值得深入寻找现金回报被低估的成分公司，但“指数整体已重现 2022 年的极端机会”证据不足。</strong> 低 TTM PE 是研究入口，未来现金流与资本配置才决定它是低估还是价值陷阱。</p>
+<hr />
+<h2 id="_3">四、纳斯达克：涨幅很大，估值扩张没有同样大</h2>
+<h3 id="1_2">1. 盈利成长解释了相当一部分价格变化</h3>
+<p>纳指 100 的龙头业务覆盖企业软件、云基础设施、数字广告、芯片及消费生态。收费基础不完全依赖中国内需，部分业务拥有切换成本、规模效应或生态网络。这些特点可以支持较高的可持续回报率，但不能自动支持任何价格。</p>
+<p>在前述供应商序列中，PE 的扩张远小于价格涨幅，说明盈利分母增长与结构变化扮演了重要角色。由于估值日期存在周标签和更新延迟，而且成分不固定，本文不将二者硬除成一个精确的“原有公司 EPS 增幅”。</p>
+<p>作为近期经营背景，Nasdaq 10 月 23 日研究简报称，其跟踪的纳指 100 三季度盈利增速进展指向约 45%。这是财报季尚在进行中的跟踪判断，不是全部公司已公布的最终结果，更不是未来五年的复合增速。<a href="https://www.nasdaq.com/economic-institute/chartstopper-102326">S27</a></p>
+<h3 id="2_1">2. 现在主要担心的，是增长代价及持续性</h3>
+<p>AI 基础设施扩张对指数存在双重影响：芯片、设备和相关供应商获得收入；云与平台企业先承担投资支出。如果把供应商当前的高利润永久外推，又把购买方的支出全部当作将来必然收回的增长投资，就会在同一产业链上重复乐观。</p>
+<p>新增资产还带来折旧和持续替换需求。微软已明确，部分设施使用寿命调整会改变未来租赁分类，降低报表中计入 capex 的金额，但投资计划本身未随之减少。研究上要看现金支付与承诺，而不只看一个资本开支标题数字。<a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4">S25</a></p>
+<p>此外，投资收益、税项和法律支出可以显著改变 GAAP 净利润。剔除一次性损失可能合理，剔除一次性收益也必须同样认真。将“利润增长”进一步拆成经营增长、会计波动和每股权益变化，才知道较高 PE 是否得到支持。</p>
+<h3 id="3-pb_1">3. 纳指 PB 更高，解释力弱于盈利和现金流</h3>
+<p>纳指高 PB 既可能反映高 ROE，也可能受回购、未资本化研发和轻资产模式影响。不能直接拿纳指 PB 与恒科 PB 比例断言谁便宜几倍。不过，在自身时间序列上，PB 和 PE 同时高于危机期，说明当前并没有提供与当年相同的账面估值缓冲。</p>
+<p><strong>我的判断：纳指 100 是有经营增长支撑、但仍要求持续兑现的组合。现在不是仅靠“回归 2022 年估值”就能证明便宜的时点；也不能因为价格大涨，就把它等同于纯粹的倍数泡沫。</strong></p>
+<hr />
+<h2 id="pe_1">五、利率和风险：同样的 PE，也不等于同样的吸引力</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th align="right">历史观察</th>
+<th align="right">最新可得观察</th>
+<th>变化方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美国十年恒定期限国债收益率</td>
+<td align="right">4.10%，2022-10-31</td>
+<td align="right">4.96%，2026-10-22</td>
+<td>+86 个基点</td>
+</tr>
+<tr>
+<td>中国十年国债收益率</td>
+<td align="right">约 2.64%，2022-10 月末机构资料</td>
+<td align="right">1.64%，2026-10-23 中债曲线</td>
+<td>国内资金机会成本下降</td>
+</tr>
+</tbody>
+</table></div>
+<p>美国数值来自 Fed/FRED 的同一底层官方序列，不能算两条独立数据链；AP 报道 10-23 市场收益率为 4.99%，对应另一观察日。中国历史精确官方原表未取得，故保留“约”字，不伪装为全套双源一致数据。<a href="https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/more">S28</a><a href="https://www.cfachina.org/servicesupport/analygarden/jrl/gz/202211/P020221104548361065880.pdf">S30</a></p>
+<p>这给比较增加了两个方向相反的因素：人民币利率更低，有利于国内长期资产的相对价值；美元长期利率更高，提高了全球科技股的资金机会成本。恒科主要经营现金流与人民币有关、上市和境外资金又受港元及美元环境影响，不能只挑其中一项利率证明自己想要的结论。</p>
+<p>更不能把 <code>1/PE－国债收益率</code> 直接叫作预期股票超额回报。盈利不等于全额分红，未来增长需要再投资，债券收益率与股权现金流的期限、币种和风险也不同。</p>
+<p>一个纯假设例子：20 倍 PE 对应 5% 盈利收益率，若只有一半能够转成可分配现金，现金收益率为 2.5%；30 倍 PE 对应约 3.33% 盈利收益率，若九成能转成现金，现金收益率为 3%。<strong>较低 PE 完全可能对应较低的当前可提取现金。</strong> 例子并非对两指数现金转化率的估计。</p>
+<hr />
+<h2 id="_4">六、未来五年：要获得可接受回报，需要什么条件</h2>
+<p>以下是压力测试，不是预测目标，也不分配主观概率。为方便阅读，起始 PE 取供应商最新值附近的整数：恒科 21 倍、纳指 29 倍。<strong>这些数值尚未被证明等于包含全部亏损、剔除非经营损益后的经济利润 PE。</strong></p>
+<p>设初始每单位盈利为 1，逐年按假设增长；每年分配固定比例的盈利，现金保留至期末、不再投资；第五年按退出 PE 出售。计算累计财富年化，不是把股息率简单加到价格 CAGR 上。模型不计汇率、费用和税款，回购影响包含在每单位盈利增长里，不重复加“回购收益率”。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>组合/情景</th>
+<th align="right">起始 PE</th>
+<th align="right">每单位盈利年增速</th>
+<th align="right">第五年 PE</th>
+<th align="right">每年现金派息/利润</th>
+<th align="right">五年财富年化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>恒科：压力</td>
+<td align="right">21</td>
+<td align="right">0%</td>
+<td align="right">16</td>
+<td align="right">20%</td>
+<td align="right">-4.14%</td>
+</tr>
+<tr>
+<td>恒科：中间假设</td>
+<td align="right">21</td>
+<td align="right">+8%</td>
+<td align="right">20</td>
+<td align="right">25%</td>
+<td align="right">+8.08%</td>
+</tr>
+<tr>
+<td>恒科：乐观</td>
+<td align="right">21</td>
+<td align="right">+15%</td>
+<td align="right">24</td>
+<td align="right">30%</td>
+<td align="right">+19.23%</td>
+</tr>
+<tr>
+<td>纳指：压力</td>
+<td align="right">29</td>
+<td align="right">+4%</td>
+<td align="right">20</td>
+<td align="right">15%</td>
+<td align="right">-2.79%</td>
+</tr>
+<tr>
+<td>纳指：中间假设</td>
+<td align="right">29</td>
+<td align="right">+12%</td>
+<td align="right">25</td>
+<td align="right">20%</td>
+<td align="right">+9.42%</td>
+</tr>
+<tr>
+<td>纳指：乐观</td>
+<td align="right">29</td>
+<td align="right">+18%</td>
+<td align="right">30</td>
+<td align="right">20%</td>
+<td align="right">+19.38%</td>
+</tr>
+</tbody>
+</table></div>
+<p>全部输入为研究假设；退出倍数表达较低、接近和较高市场定价三种状态，不是已经算出的内在价值。恒科增长假设侧重成熟平台修复，纳指侧重企业服务和 AI 需求持续增长；这是一种有意拉开路径的压力测试，不是依据同一套盈利预测得出的优劣排名。<a href="../files/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/index-comparison-20261024/inputs.json">模型输入</a></p>
+<p>中间情景告诉我们：恒科需要盈利稳定增长且现金回报逐渐恢复；纳指则需要更高的持续增长，来消化较贵的起点。两者都不能只靠“跌得多”或“科技长期向上”保证两位数回报。</p>
+<h3 id="_5">盈利分母错了，模型会有多大变化</h3>
+<p>保持中间情景的增速、退出 PE 和派息率不变，仅把起始 PE 提高，模拟可持续盈利基数小于软件显示的利润：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>压力测试</th>
+<th align="right">起始 PE</th>
+<th align="right">五年财富年化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>恒科中间假设</td>
+<td align="right">21</td>
+<td align="right">+8.08%</td>
+</tr>
+<tr>
+<td>恒科盈利基数压力</td>
+<td align="right">30</td>
+<td align="right">+0.64%</td>
+</tr>
+<tr>
+<td>恒科更强盈利基数压力</td>
+<td align="right">35</td>
+<td align="right">-2.42%</td>
+</tr>
+<tr>
+<td>纳指中间假设</td>
+<td align="right">29</td>
+<td align="right">+9.42%</td>
+</tr>
+<tr>
+<td>纳指盈利基数压力</td>
+<td align="right">35</td>
+<td align="right">+5.38%</td>
+</tr>
+</tbody>
+</table></div>
+<p>30 倍、35 倍是敏感性输入，不是声称已经查明的“真实 PE”。这些是替代情景，没有在同一行继续叠加一次针对同一问题的盈利折扣。它们说明：<strong>核实利润分母，往往比争论当前指数多涨跌几个百分点更重要。</strong></p>
+<p>另一个联合压力例子：若盈利下调 20%，同时 PE 从 25 倍降至 20 倍，价格会下降 36%。这不是本报告对市场跌幅的预测，而是说明低倍数与盈利下修可以同时发生。</p>
+<hr />
+<h2 id="_6">七、到什么位置，值得重新认真评估</h2>
+<p>以下是“保持分母不变”的机械观察线，便于跟踪；<strong>不是 DCF 内在价值，不是承诺能够买到的底部，也不是独立的买入充分条件。</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标回到的水平</th>
+<th align="right">对应指数点位约值</th>
+<th>基准与限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>恒科 PB 为 1.90 倍</td>
+<td align="right">3,516</td>
+<td>以 10-23 点位和 PB 计算；净资产及成分不变</td>
+</tr>
+<tr>
+<td>恒科 PB 回到历史锚 1.743 倍</td>
+<td align="right">3,226</td>
+<td>同上；不是要求价格回到 2022 年原点位</td>
+</tr>
+</tbody>
+</table></div>
+<p>纳指保留同供应商的 <strong>25.34 倍与 22.72 倍</strong> 两档 PE 观察阈值。相对最新 28.74 倍，倍数分别需下降 11.83% 和 20.95%。由于供应商标签未能与美国收盘时点严格对应，本文不将这两项换成具体指数点位，更不把它们直接解释为从 10-23 收盘还会下跌的幅度。</p>
+<p>这些点位会随盈利、净资产和成分变化而移动。若盈利增长，即使指数不跌，PE 也能下降；若盈利下调，指数跌到上述区域也未必更便宜。未来发生调样或方法更新后，需要重新估算，而不是保留一条永远有效的线。</p>
+<p>指数本身也在变。Nasdaq 已公布 2026 年权重及快速纳入规则调整，恒生官网也公布了科技指数编制咨询结论。历史正式指数可以用来比较实际投资组合表现，却不能自动视作不变的一篮子企业。本文不使用尚未取得完整官方文件验证的未来名单预测。<a href="https://www.hsi.com.hk/media-room/">S31</a></p>
+<hr />
+<h2 id="_7">八、最强的反方观点，与行动判断</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>判断可能出错的路径</th>
+<th>能观察到的证据</th>
+<th>对结论的影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>恒科低 PE 来自盈利高点或不完整亏损处理</td>
+<td>逐股重建利润后倍数显著提高；经调整利润与现金流持续背离</td>
+<td>低估结论削弱，应采用更低盈利基数</td>
+</tr>
+<tr>
+<td>恒科 AI 支出和补贴只是暂时投入，回报很快兑现</td>
+<td>核心经营利润保持、云收入收现增长、投入高峰回落、每股自由现金流恢复</td>
+<td>当前可能比账面 PB 看起来更有吸引力</td>
+</tr>
+<tr>
+<td>纳指 AI 需求增长很强，但资本回报持续下降</td>
+<td>订单兑现弱于投入、折旧和租赁负担增加、客户信用质量恶化</td>
+<td>即使 EPS 增长，合理倍数也可能下降</td>
+</tr>
+<tr>
+<td>纳指增长显著强于中间假设</td>
+<td>广泛成分而非少数公司实现高质量盈利增长，现金分配同步增长</td>
+<td>较高当前倍数可能被增长消化</td>
+</tr>
+<tr>
+<td>通胀与长期利率维持高位</td>
+<td>长债收益率高位、融资成本上升、再投资回报未同步改善</td>
+<td>两地成长股都需要更高经营回报</td>
+</tr>
+</tbody>
+</table></div>
+<p>这里不填精确失败概率：现有证据不足以把这些路径可靠量化，填一个百分比会制造虚假的确定性。</p>
+<p>对于新增长期资金，我对恒科的态度是 <strong>有条件积极研究、分步建立判断</strong>：优先核对核心公司的持续经营利润、真正可动用的现金和分配纪律。若买整个指数，应先接受自己同时持有高质量平台、重投入业务以及亏损成长公司的事实。当前价格不能直接按“2022 年翻版”重仓解释。</p>
+<p>对纳指 100，我的态度是 <strong>认可长期经营基础，价格上保留纪律</strong>：长期分散投入可以继续讨论，但没有证据支持把当前称为 2022 年恐慌估值的重现。若要求较高回报，需要更低买入倍数，或者对盈利持续增长有更扎实的证据；不能同时假设永远高增长、永远高估值和资本开支很快下降。</p>
+<p>对于已有持仓，决定继续持有或降低风险的核心应是每单位可持续现金流和资本回报是否变化，而不是 PE 排名本身。恒科的跟踪重点是竞争支出及 AI 投入后的现金恢复；纳指是盈利增长能否覆盖折旧、租赁、资本承诺与估值要求。个人仓位比例还取决于其他资产、负债、流动性需求和持有期限，本文不据指数估值推导个人交易数量。</p>
+<p><strong>回答最初的问题：按本次可复核的供应商历史序列，恒科“利润倍数更低、净资产倍数更高”；纳指 100“两个倍数都更高”。风险调整后的投资吸引力，恒科取决于盈利兑现与资本配置改善，纳指取决于持续增长能否抵消较高估值及投入强度。当前没有一个单一 PE 足以证明其中任何一个重现了 2022 年的机会。</strong></p>
+<hr />
+<h2 id="_8">数据质量与复核记录</h2>
+<p>研究开始已用系统日期确认基准日；采集跨越午夜不改变上述行情截止日。本文未沿用上一份恒科报告中的十家公司合成历史分位，也未把其官方月报推算值、滞后的前瞻 EPS 或更早的美债收益率当作本次最新数据。</p>
+<p>已执行 <code>financial_rigor.py</code> 与独立 Decimal 复算；原工具 <code>calc</code> 内部先执行普通数值表达式，因此精确结果以本附录的字符串 Decimal 模型为准。已执行 <code>report_audit.py</code> 的固定种子抽样，并分别登记来源事实、公式、假设和解析噪声；完整覆盖情况见<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/index-comparison-20261024/audit-notes.md">审计说明</a>。</p>
+<p><strong>发布口径：有明确来源缺口的研究报告。</strong> 行情和核心现金流有交叉核验；主估值序列仍属于单一底层链条或算法未完全披露，不能宣布“所有金融数据已完成独立双源验证”。审计通过仅指所声明数字、来源及算式一致，不证明供应商方法、未来增长、情景概率或投资结论正确。</p>
+<p>复算入口：<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/index-comparison-20261024/model.py">模型</a>、<a href="../files/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/index-comparison-20261024/inputs.json">输入</a>、<a href="../files/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/index-comparison-20261024/model-results.json">结果</a>、<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/index-comparison-20261024/sources.md">来源登记</a>。</p>
+<p>本报告用于学习与研究。AI 分析置信度不等于投资确定性；其中历史数据支持的倍数方向强于对未来利润和现金流的判断。</p>
+<h3 id="_9">来源索引</h3>
+<p>主要来源及日期在正文对应位置标注；无法完整验证的指标与方法问题均保留在<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/index-comparison-20261024/sources.md">来源登记</a>，没有用旧报告或本文自身充当独立信源。</p></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80%E4%B8%8E%E7%BA%B3%E6%96%AF%E8%BE%BE%E5%85%8B%E4%BC%B0%E5%80%BC%E5%AF%B9%E6%AF%94%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A&amp;ticker=&amp;source=reports%2F%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80%2F%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80%E4%B8%8E%E7%BA%B3%E6%96%AF%E8%BE%BE%E5%85%8B%E4%BC%B0%E5%80%BC%E5%AF%B9%E6%AF%94-20261024.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2Fc3055d7407ad.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>底稿与核验（GitHub）</h2><div class="meta">这些文件不在阅读站上展示，点开为 GitHub 原文。</div><ul class="list work"><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/index-comparison-20261024/audit-notes.md">审计范围与结果</a><div class="meta">审计核验底稿 · index-comparison-20261024/audit-notes.md</div></li><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80/index-comparison-20261024/sources.md">来源、观察日与独立性登记</a><div class="meta">审计核验底稿 · index-comparison-20261024/sources.md</div></li></ul><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/1881730e76f1.html">恒生科技估值全景：指数与十家公司的历史位置（2026-10-23）</a><div class="meta">2026-10-23 · 估值仓位</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">一、先把答案落到数字上</a><ul>
+<li><a href="#1">1. 价格：都高于当年，差距很大</a></li>
+<li><a href="#2-pe-pb">2. 估值：恒科 PE 低、PB 高；纳指两者都高</a></li>
+</ul>
+</li>
+<li><a href="#_2">二、这些数字能信到什么程度</a><ul>
+<li><a href="#1_1">1. 多来源旁证支持大方向，但没有形成精确一致</a></li>
+<li><a href="#2-34885">2. 官方恒科 348.85 倍，不是打字错误</a></li>
+<li><a href="#3-pe">3. 前瞻 PE 是重要旁证，但本次不足以精确作差</a></li>
+</ul>
+</li>
+<li><a href="#pe">三、恒生科技：为什么 PE 更低，却还不能认定机会更好</a><ul>
+<li><a href="#1-2022">1. 2022 年的低价和低盈利同时出现</a></li>
+<li><a href="#2">2. 账面盈利与现金回报出现了实质分叉</a></li>
+<li><a href="#3-pb">3. PB 比当年月末高约两成，为什么仍不能提供“保底”</a></li>
+</ul>
+</li>
+<li><a href="#_3">四、纳斯达克：涨幅很大，估值扩张没有同样大</a><ul>
+<li><a href="#1_2">1. 盈利成长解释了相当一部分价格变化</a></li>
+<li><a href="#2_1">2. 现在主要担心的，是增长代价及持续性</a></li>
+<li><a href="#3-pb_1">3. 纳指 PB 更高，解释力弱于盈利和现金流</a></li>
+</ul>
+</li>
+<li><a href="#pe_1">五、利率和风险：同样的 PE，也不等于同样的吸引力</a></li>
+<li><a href="#_4">六、未来五年：要获得可接受回报，需要什么条件</a><ul>
+<li><a href="#_5">盈利分母错了，模型会有多大变化</a></li>
+</ul>
+</li>
+<li><a href="#_6">七、到什么位置，值得重新认真评估</a></li>
+<li><a href="#_7">八、最强的反方观点，与行动判断</a></li>
+<li><a href="#_8">数据质量与复核记录</a><ul>
+<li><a href="#_9">来源索引</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-27 18:15 UTC</footer></body></html>

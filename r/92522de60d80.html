@@ -1,0 +1,268 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>腾讯与快手估值：独立反证与模型复核 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/92522de60d80.html" data-title="腾讯与快手估值：独立反证与模型复核"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/腾讯快手比较/index.html">腾讯快手比较</a></div><div class="layout"><div><h1>腾讯与快手估值：独立反证与模型复核</h1><div class="meta"><a href="../companies/腾讯快手比较/index.html">腾讯快手比较</a> ｜ 2026-10-25 · 估值仓位 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF%E5%BF%AB%E6%89%8B%E6%AF%94%E8%BE%83/%E4%BC%B0%E5%80%BC-20261025/independent_review.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">初审结论</a></li>
+<li><a href="#_2">一、市场输入的独立核验</a></li>
+<li><a href="#_3">二、腾讯：最需要挑战的会计与资本配置问题</a></li>
+<li><a href="#_4">三、快手：可灵需要按现金权利估值</a></li>
+<li><a href="#_5">四、三年和十年回报的可复算要求</a></li>
+<li><a href="#_6">五、初审执行记录与边界</a></li>
+<li><a href="#_7">六、主模型第二轮独立复核</a><ul>
+<li><a href="#_8">额外反证：排名本身有多稳健</a></li>
+</ul>
+</li>
+<li><a href="#_9">来源</a></li>
+</ul>
+</div>
+</details><article><p>研究时间：2026-10-25（Asia/Shanghai）；行情时点：2026-10-23港股常规收盘。初审人在收到主模型前独立检查原始资料与会计结构，不预先指定哪家公司胜出。此文件的初审部分是发布前检查约束，不能被解释为尚未收到的主模型已经通过。</p>
+<h2 id="_1">初审结论</h2>
+<p>三年比较容易被估值回归左右，十年比较容易被现金转换、竞争与融资归属左右。当前价格低只能减少买入成本，不能证明利润可分配。必须同时报告<strong>经营结果、期末估值、真实每股现金分配</strong>；“公司更强”和“股票回报更高”分别回答。</p>
+<p>最高优先级的模型错误有四类：腾讯把新AI投入一律加回、同时保留免费增长；腾讯整体调整后利润与投资资产重复计价；快手沿用滞后的数据库资本开支；快手把可灵100%合并口径、融资投后估值、外部融资现金和上市母公司权益相互混用。下述市场输入可以使用，现金流正常化和十年终值仍必须作为假设公开。</p>
+<h2 id="_2">一、市场输入的独立核验</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>输入</th>
+<th>当前核验</th>
+<th>建模意见</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腾讯价格</td>
+<td>Stockanalysis、FT及Yahoo均显示2026-10-23收盘386.00港元</td>
+<td>可用；不要与人民币柜台价格混用。[R1–R3]</td>
+</tr>
+<tr>
+<td>快手价格</td>
+<td>Stockinvest与Investing均显示同日收盘27.90港元</td>
+<td>可用；它是价格事实，股本仍需另查月报/翌日披露。[R4–R5]</td>
+</tr>
+<tr>
+<td>人民币/港元</td>
+<td>SAFE官方中间价：100港元=85.696元人民币</td>
+<td>统一用1港元=0.85696元人民币可以复算，但应明确是中间价，不是个人成交汇率。[R6]</td>
+</tr>
+<tr>
+<td>人民币无风险利率</td>
+<td>中债2026-10-23政府债收益率曲线：10年1.6400%，30年2.0675%</td>
+<td>可把1.64%作为人民币模型的无风险基准；十年显式期加永续价值不代表现金流久期恰好10年，应展示更长期基准或利率扰动。[R7]</td>
+</tr>
+</tbody>
+</table></div>
+<p>若把汇率换成任务提供的0.8508，人民币权益折成港元的结果比0.85696口径提高约0.724%。这通常不足以改变两家公司结论，但未来人民币相对港元变化会影响港元回报；若预测未来汇率恒定，需要明示。0.8508本次没有取得独立成交时点核验，只用于敏感性，不能写成已核实官方收盘现汇。</p>
+<p>中债与市场单只活跃国债收益率的小差异不构成冲突；另一第三方拟合即期曲线显示1.87%，定义与样本不一致，不能平均。使用官方1.6400%后，股权风险溢价与个体不可分散风险补偿应单列解释。<strong>不能把一组普通悲观/中性/乐观预期现金流直接按1.64%折现</strong>；概率加权不自动消除系统性风险。竞争损失放入现金流，风险溢价反映风险补偿，同一具体损失不再重复扣。</p>
+<h2 id="_3">二、腾讯：最需要挑战的会计与资本配置问题</h2>
+<p>腾讯半年公告披露Q2自由现金流为负138亿元，剔除算力采购预付款影响后为正376亿元，差额514亿元；资本开支确认金额527.84亿元，资本开支现金付款约593亿元，两者口径不同。公告还显示非IFRS联营/合营利润依然存在。[R8，印刷第8、12、17页]</p>
+<ol>
+<li><strong>预付款不是损失，也不是免费资产。</strong> 正常化时可平滑采购时点，但不能把514亿元永久加回，同时在未来完全不计相关消耗、折旧/更新资本支出和营运资金变化。若预付未来设备，它可能减少之后付款；若预付算力服务，它可能进入后续经营成本。细节不明时至少设置“现金投入持续高企”和“逐步正常化”两条路径。</li>
+<li><strong>利润口径要能走到普通股现金。</strong> 不能直接把非IFRS净利润全部当所有者收益。对持续SBC、内容采购、设备更新和投资收益逐项处理。股权激励若已按经济工资扣入现金流，不能对同一批未来授予再重复扣稀释；存量未归属奖励则仍有索取权。</li>
+<li><strong>分部经营价值与持股价值去重。</strong> 核心盈利保留联营利润、利息或投资分红时，再加全部非经营资产会高估。最干净的主模型是核心经营现金流剥离非经营收益，再单独加可归属投资与超额现金，或者完整归母FCFE不再重复加资产。</li>
+<li><strong>回购效应必须穿过现金账。</strong> 若未来每年减少股本，必须同时扣回购现金；净现金不能在十年间冻结不变，又把所有经营现金派息或回购。回购注销进度、员工信托、未来激励应形成桥表。持有者不卖出股份时，回购款不是额外收到的分红。</li>
+<li><strong>不能只论社交入口稳定。</strong> 十年回报还取决于AI资本强度、游戏长青与新品替换、广告增长能否覆盖新AI亏损；微信入口持久与资本配置回报持久是两项不同证据。</li>
+</ol>
+<h2 id="_4">三、快手：可灵需要按现金权利估值</h2>
+<p>2026年8月31日原公告确认认购上限已用尽。其全额认购、员工激励额度全用足的假设表中，Lucky Labs持股66.33%，北京快灵瑞2.00%，合计约68.33%；资金认购额204.471亿元。该表不是全部现金到账、全部激励已归属的证明。[R9，印刷第3–5页]</p>
+<p>7月2日协议同时有条件回购权：在特定上市期限或重组条件未完成时触发；回购金额含8%年单利并调整股息，责任主体是北京可灵及其集团公司，不能改写为上市母公司无条件担保。递表后的缓冲条款也须保留。[R10，印刷第9–10、36页]</p>
+<p>独立挑战如下：</p>
+<ol>
+<li><strong>集团现金流与可灵估值只能选择一致拆法。</strong> 若采用集团现金流DCF，不能再加可灵融资估值；若主站和可灵SOTP，须从集团主站剥离可灵收入、亏损、capex、租赁和营运资本，再按现有股东真实经济权益加入可灵，不能只剔除其亏损。</li>
+<li><strong>融资现金不是两份资产。</strong> 使用投后股权估值，里面已有新资金；使用经营DCF则可以加子公司现金，但需要按权利分配，且集团现金表应同步剔除同笔现金。尚未到账资金应和融资条件、稀释同步建模。</li>
+<li><strong>68.33%不是永久常数。</strong> 后续融资、员工激励和IPO均可能稀释。十年可灵收入很高而归属股权仍100%是明显错误；即便用68.33%，也应展示未来归属下降的压力测试。控制权不等于全部经济收益。</li>
+<li><strong>当前融资本身不能证明上市股东的价值底。</strong> 私募认购权利含保护条款，普通股退出价值未必等于同一标价。若失败场景已将可灵剩余价值降为零，不宜再无依据地从母公司减整笔回购款；若模型假设母公司补资，则需明确这一新增损失及资金来源。</li>
+<li><strong>重建现金流而非沿用屏幕倍数。</strong> 可用2025全年+2026H1−2025H1重建TTM。数据库使用旧资本开支会高估自由现金。CFO−现金capex还需检查租赁、SBC、少数股东、现金利息，不能未经调整就叫归母所有者收益。</li>
+<li><strong>租赁替代采购不自动改善经济自由现金。</strong> 现金capex下降、租赁增加时，要保留对应未来现金租金/本金和续约成本；不得把负现金流改善全归因商业模式变好。</li>
+</ol>
+<p>一个仅用于压力测试的算式：204.471亿元本金、完整五年8%单利、没有股息调整时，对应286.2594亿元。它<strong>不是已确认到期债务、不是母公司现时负债、也不应无差别从全部情景扣除</strong>；真实金额取决于各投资者付款日期、触发及已分配金额。</p>
+<h2 id="_5">四、三年和十年回报的可复算要求</h2>
+<p>统一时钟：估值日2026-10-23，三年2029-10-23、十年2036-10-23。若用2027–2029财年利润及年末退出，应披露年度近似或stub，不能把3.2年收益称为恰好3年而不说明。</p>
+<p>对每一家公司、每一情景，至少留存逐年：业务收入/利润率、再投资、可归母现金、股息、回购额及均价、员工新增股份/净稀释、净现金、非经营资产、可灵归属比例、退出倍数或退出DCF。计算应满足：</p>
+<pre><code class="language-text">期末股份 = 期初股份 + 本年新增经济股份 − 本年回购现金/回购均价
+期末现金 = 期初现金 + 经营可分配现金 + 新融资/资产处置
+           − 派息 − 回购 − 尚未在经营现金中计入的投入/偿债
+期末普通股权益 = 期末经营价值 + 未计入经营价值的资产 − 未计入现金流的索取权
+期末港元股价 = 期末人民币普通股权益 / 期末股份 / 当时人民币每港元
+0 = −买价 + Σ[每股股息_t/(1+IRR)^实际年数_t]
+          + 退出股价/(1+IRR)^实际年数_退出
+</code></pre>
+<p>如果固定股份、把所有可分配现金视为等价股东分配，这是可复算的抽象，应命名为“全额分配的经济回报”，不能宣称是公司真实股息预测。如果只按期末财富计算CAGR，则必须说明途中股息按零利率累积、还是按什么回报再投资；CAGR与含中途现金流的IRR并不总相同。</p>
+<p>情景概率不能伪装成事实。建议同时给出各情景回报、基准结果、概率加权期末财富及下行情景。不要加权各情景IRR后把它称为单一真实IRR；如需综合指标，应先逐期加权现金流再求IRR，并说明概率主观性及非可实现性。</p>
+<p>最能反证比较结论的四组测试：</p>
+<ul>
+<li>两家公司都不发生估值修复，三年/十年收益分别剩多少。</li>
+<li>腾讯AI投入持续高于基准、快手主站利润不恢复时的结果。</li>
+<li>可灵零价值、归属比例下降、融资现金只用于运营三种变化分别重算。</li>
+<li>同一人民币汇率路径与退出倍数扰动下，谁的排名翻转，翻转门槛是多少。</li>
+</ul>
+<p>十年“确定性”应由证据分项判断：终端需求、客户迁移成本、持续盈利、再投资回报、股东权利和估值兑现。模型标准差小、悲观情景为正或历史波动低，均不能单独证明十年确定性高。</p>
+<h2 id="_6">五、初审执行记录与边界</h2>
+<p>本轮已执行日期检查，读取company-valuation技能及仓库公司方法约束，核验官方汇率、利率、腾讯Q2现金流、可灵7月/8月融资原件；价格由多个行情页面交叉。已运行<code>financial_rigor.py calc</code>对汇率差、经济权益和单利示例验算，并以独立Python Decimal复算。后台精度不等于预测精度。</p>
+<p>初审时尚未覆盖主模型逐情景算术；现已完成如下第二轮复核。仍未覆盖：当日完整经济摊薄股份台账、所有投资持仓当日价值、可灵单体资金实际到账及现金跑道。复核人未修改主模型参数，发现问题由主模型作者修正。</p>
+<h2 id="_7">六、主模型第二轮独立复核</h2>
+<p>已复核本目录<code>model_inputs.json</code>、<code>model.py</code>、<code>model_results.json</code>。独立程序<code>independent_check.py</code>不导入主模型函数；DCF从终值向前逐年递推，IRR采用含导数的Newton迭代，和主模型的直接贴现/二分法分别实现。输入/结果的SHA256、实际复核时间、全部算术记录保存于<code>independent_verification.json</code>。<strong>312项算术核验通过，最大绝对差约1.40×10⁻⁴¹；通过范围仅限公式与给定输入，不认证预测、概率和资本配置真实性。</strong></p>
+<p>复核中处理了两项实质问题：腾讯已经以97%近似比例排除少数股东现金流，主模型作者据此撤掉再次扣除的61.17亿元少数股东回售权，只留23.12亿元其他或有对价；该近似仍须在未来取得逐项少数权益价值后重估。可灵原先对正负现金都乘68.33%，作者改为负现金由母公司承担68.33%÷85%=80.3882%，不假定15%员工激励持有人垫资；正现金仍乘68.33%。外部投资者分担未来负现金仍是条件假设，协议认购不等于无限追加资本承诺。</p>
+<p>现金流口径须写准确：腾讯和快手主站是归属代理调整后的经营FCFF，配经营WACC；可灵是无独立债务假设下，母公司分配与补资的股权收支，配13.5%股权成本。因此汇总行虽然程序沿用<code>attributable_fcff</code>字段名，经济解释并非每一分部都是普通FCFF。主站债务/净现金在权益桥处理，股东持有期分配再扣融资利息。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>独立重算：基准情景</th>
+<th align="right">腾讯</th>
+<th align="right">快手</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经营/股权分部现值合计，亿元人民币</td>
+<td align="right">38,565.41</td>
+<td align="right">1,322.17</td>
+</tr>
+<tr>
+<td>权益桥，亿元人民币</td>
+<td align="right">6,258.79</td>
+<td align="right">398.97</td>
+</tr>
+<tr>
+<td>每股现值，港元</td>
+<td align="right">567.93</td>
+<td align="right">44.63</td>
+</tr>
+<tr>
+<td>第3年退出价，港元</td>
+<td align="right">673.23</td>
+<td align="right">53.52</td>
+</tr>
+<tr>
+<td>第3年末累计留存，亿元人民币</td>
+<td align="right">3,022.83</td>
+<td align="right">105.09</td>
+</tr>
+<tr>
+<td>三年含分红IRR</td>
+<td align="right">21.84%</td>
+<td align="right">25.58%</td>
+</tr>
+<tr>
+<td>第10年退出价，港元</td>
+<td align="right">950.61</td>
+<td align="right">76.49</td>
+</tr>
+<tr>
+<td>第10年末累计留存，亿元人民币</td>
+<td align="right">14,449.67</td>
+<td align="right">670.21</td>
+</tr>
+<tr>
+<td>十年含分红IRR</td>
+<td align="right">11.08%</td>
+<td align="right">12.57%</td>
+</tr>
+<tr>
+<td>基准三年无倍数修复IRR</td>
+<td align="right">11.28%</td>
+<td align="right">9.38%</td>
+</tr>
+<tr>
+<td>基准十年无倍数修复IRR</td>
+<td align="right">10.66%</td>
+<td align="right">11.26%</td>
+</tr>
+</tbody>
+</table></div>
+<p>例如腾讯第1年现金为<code>(850×32%×78%−65)×97%=142.7452</code>十亿元，扣利息12十亿元后，分红45.76082、留存84.98438十亿元。十年终值为<code>317.966×1.025/(8.5%−2.5%)=5,431.91917</code>十亿元。现值3,856.54076，加权益桥625.879，除9.21十亿股及0.85696汇率，得到567.92677港元。</p>
+<p>快手主站基准现值1,374.13亿元，可灵母公司收支现值<strong>负51.95亿元</strong>。因此主估值没有用可灵千亿私募标价抬高权益值，反而包含多年补资拖累。基准第1年主站现金95.72亿元，减可灵母公司补资52.2524亿元后，再扣15亿元融资费用；分红9.9637亿元、留存18.5040亿元。模型所有情景的最差累计负留存约22.88亿元，仍小于398.97亿元初始现金桥，但该算术不能证明全部现金在子公司间可自由调拨。</p>
+<p>固定股份、零净回购、35%正股东现金派息、其余留存的账逐年闭合，未发现回购收益重复计入。腾讯十年累计留存达到约1.44万亿元，说明这是统一资本分配假设，不是管理层会长期囤积这笔现金的预测。留存现金不生息、投资资产不增值、债务本金保持不变也均是假设。退出价格按未分配未来DCF加留存计算，属于条件估值回归，不能叫已预测的未来市场价。</p>
+<h3 id="_8">额外反证：排名本身有多稳健</h3>
+<p>按主观情景概率加权逐期现金流后，腾讯三年/十年IRR为19.71%/10.43%，快手18.05%/10.23%。<strong>十年差距约0.20个百分点，远不足以证明真实期望回报谁高。</strong> 固定所有经营假设和乐观概率，快手只需把1.665个百分点概率从悲观移到基准，就追平腾讯十年加权IRR；三年对应4.636个百分点。当前其他条件不变，快手入场价降至约27.42港元即可追平腾讯十年结果，三年对应26.76港元。概率权重和小幅买价变化即可改变结论，因此经营确定性比较应与这两个加权小数分开表达。</p>
+<p>进一步独立敏感性：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>快手变动，其他条件保持</th>
+<th align="right">基准现值（港元）</th>
+<th align="right">基准三年IRR</th>
+<th align="right">基准十年IRR</th>
+<th align="right">加权十年IRR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>母公司承担可灵全部未来负现金，正现金仍取68.33%</td>
+<td align="right">43.86</td>
+<td align="right">24.75%</td>
+<td align="right">12.36%</td>
+<td align="right">10.04%</td>
+</tr>
+<tr>
+<td>可灵正现金权益降到50%，负现金补资比例不变、无补偿融资款</td>
+<td align="right">44.15</td>
+<td align="right">25.04%</td>
+<td align="right">12.34%</td>
+<td align="right">9.85%</td>
+</tr>
+</tbody>
+</table></div>
+<p>这两项没有证明亏损上限，只证明当前模型对融资权利应当保持条件措辞。若204.471亿元认购款全部实缴、尚未消耗且没有新增优先索偿，按68.33%归属的名义现金为139.715亿元，对快手每股约3.623港元；这只能是“现金到账后重新对账”的敏感性上限，不能直接加成已确认净现金。</p>
+<p>本轮未发现修订后主模型新的算术阻断项。发布时应保留完整现金流口径、融资假设、十年排名不稳健和截至六月资产负债表并非十月实况这四项限制。税率、存量摊薄代理、经营备用金、正常化再投资与终值增长仍由研究作者负责论证，审计程序无法为其背书。</p>
+<h2 id="_9">来源</h2>
+<ul>
+<li>R1：<a href="https://stockanalysis.com/quote/hkg/0700/history/">腾讯历史价格，Stockanalysis</a>。</li>
+<li>R2：<a href="https://markets.ft.markitdigital.com/data/equities/tearsheet/historical?s=700%3AHKG">腾讯历史价格，FT</a>。</li>
+<li>R3：<a href="https://nz.finance.yahoo.com/quote/0700.HK/history/">腾讯历史价格，Yahoo</a>。</li>
+<li>R4：<a href="https://stockinvest.us/stock-price/1024.HK">快手历史价格，Stockinvest</a>。</li>
+<li>R5：<a href="https://id.investing.com/equities/kuaishou-technology-historical-data">快手历史价格，Investing</a>。</li>
+<li>R6：<a href="https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760">SAFE人民币汇率中间价</a>。</li>
+<li>R7：<a href="https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/more">中债国债及其他债券收益率曲线</a>。</li>
+<li>R8：<a href="https://www.tencent.com/wp-content/uploads/2026/08/E700_IRA.pdf">腾讯2026年第二季度及半年业绩公告</a>。</li>
+<li>R9：<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0831/2026083102335.pdf">快手2026年8月31日认购进展公告</a>。</li>
+<li>R10：<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0702/2026070204065.pdf">快手2026年7月2日可灵认购、激励、回购权及重组公告</a>。</li>
+</ul></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E8%85%BE%E8%AE%AF%E4%B8%8E%E5%BF%AB%E6%89%8B%E4%BC%B0%E5%80%BC%EF%BC%9A%E7%8B%AC%E7%AB%8B%E5%8F%8D%E8%AF%81%E4%B8%8E%E6%A8%A1%E5%9E%8B%E5%A4%8D%E6%A0%B8&amp;ticker=%E8%85%BE%E8%AE%AF%E5%BF%AB%E6%89%8B%E6%AF%94%E8%BE%83&amp;source=reports%2F%E8%85%BE%E8%AE%AF%E5%BF%AB%E6%89%8B%E6%AF%94%E8%BE%83%2F%E4%BC%B0%E5%80%BC-20261025%2Findependent_review.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2F92522de60d80.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>底稿与核验（GitHub）</h2><div class="meta">这些文件不在阅读站上展示，点开为 GitHub 原文。</div><ul class="list work"><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF%E5%BF%AB%E6%89%8B%E6%AF%94%E8%BE%83/%E4%BC%B0%E5%80%BC-20261025/audit/README.md">核验范围与已知限制</a><div class="meta">证据/审计/调研目录 · audit/README.md</div></li><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF%E5%BF%AB%E6%89%8B%E6%AF%94%E8%BE%83/%E4%BC%B0%E5%80%BC-20261025/kuaishou_research.md">快手估值研究底稿：低利润倍数背后的现金消耗与可灵归属</a><div class="meta">审计核验底稿 · kuaishou_research.md</div></li><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%85%BE%E8%AE%AF%E5%BF%AB%E6%89%8B%E6%AF%94%E8%BE%83/%E4%BC%B0%E5%80%BC-20261025/tencent_research.md">腾讯估值证据与经营分析底稿</a><div class="meta">审计核验底稿 · tencent_research.md</div></li></ul><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/f23a2ce5a092.html">腾讯与快手估值及三年、十年回报研究报告</a><div class="meta">2026-10-25 · 估值仓位</div></li><li><a href="../r/af9debf5bb30.html">腾讯与快手估值比较：阅读入口</a><div class="meta">2026-10-25 · 导读</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">初审结论</a></li>
+<li><a href="#_2">一、市场输入的独立核验</a></li>
+<li><a href="#_3">二、腾讯：最需要挑战的会计与资本配置问题</a></li>
+<li><a href="#_4">三、快手：可灵需要按现金权利估值</a></li>
+<li><a href="#_5">四、三年和十年回报的可复算要求</a></li>
+<li><a href="#_6">五、初审执行记录与边界</a></li>
+<li><a href="#_7">六、主模型第二轮独立复核</a><ul>
+<li><a href="#_8">额外反证：排名本身有多稳健</a></li>
+</ul>
+</li>
+<li><a href="#_9">来源</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-27 18:15 UTC</footer></body></html>

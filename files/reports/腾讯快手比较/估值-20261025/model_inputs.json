@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "research_date": "2026-10-25",
+    "valuation_date": "2026-10-23",
+    "forecast_clock": "full annual periods ending 2027-10-23 through 2036-10-23",
+    "units": "CNY billion; shares billion; prices HKD",
+    "classification": "All forecasts, probabilities, operating reserves, asset realization values and discount risk premiums are research assumptions, not company guidance."
+  },
+  "cny_per_hkd": "0.85696",
+  "companies": {
+    "Tencent": {
+      "price": "386",
+      "basic_shares": "9.088885829",
+      "model_shares": "9.21",
+      "ttm_ifrs_profit": "235.508",
+      "ttm_adjusted_profit": "271.565",
+      "after_tax_interest": "12",
+      "dividend_payout": "0.35",
+      "normalized_starting_fcff": "150",
+      "reverse_rate": "0.085",
+      "reverse_g": "0.025",
+      "bridge_explanation": "Parent core cash flows exclude minority share via 0.97 ownership proxy. Gross cash 511.154 minus operating reserve 80 minus debt 452.963 minus contingent consideration2.312; NCI put6.117 not deducted again because NCI is already excluded through0.97 proxy plus nonconsolidated investments (base650,bear500,bull800). No lease debt deduction: rent is an operating cost. June balances are not an October balance sheet.",
+      "scenarios": {
+        "bear": {
+          "probability": "0.25",
+          "bridge": "475.879",
+          "components": [
+            {
+              "name": "core",
+              "tax": "0.22",
+              "ownership": "0.97",
+              "rate": "0.085",
+              "g": "0.015",
+              "anchors": {
+                "1": {
+                  "revenue": "830",
+                  "margin": "0.30",
+                  "net_reinvestment": "85"
+                },
+                "3": {
+                  "revenue": "900",
+                  "margin": "0.28",
+                  "net_reinvestment": "85"
+                },
+                "10": {
+                  "revenue": "1100",
+                  "margin": "0.27",
+                  "net_reinvestment": "85"
+                }
+              }
+            }
+          ]
+        },
+        "base": {
+          "probability": "0.55",
+          "bridge": "625.879",
+          "components": [
+            {
+              "name": "core",
+              "tax": "0.22",
+              "ownership": "0.97",
+              "rate": "0.085",
+              "g": "0.025",
+              "anchors": {
+                "1": {
+                  "revenue": "850",
+                  "margin": "0.32",
+                  "net_reinvestment": "65"
+                },
+                "3": {
+                  "revenue": "1000",
+                  "margin": "0.33",
+                  "net_reinvestment": "60"
+                },
+                "10": {
+                  "revenue": "1500",
+                  "margin": "0.34",
+                  "net_reinvestment": "70"
+                }
+              }
+            }
+          ]
+        },
+        "bull": {
+          "probability": "0.20",
+          "bridge": "775.879",
+          "components": [
+            {
+              "name": "core",
+              "tax": "0.22",
+              "ownership": "0.97",
+              "rate": "0.085",
+              "g": "0.03",
+              "anchors": {
+                "1": {
+                  "revenue": "880",
+                  "margin": "0.33",
+                  "net_reinvestment": "55"
+                },
+                "3": {
+                  "revenue": "1120",
+                  "margin": "0.35",
+                  "net_reinvestment": "55"
+                },
+                "10": {
+                  "revenue": "1900",
+                  "margin": "0.36",
+                  "net_reinvestment": "85"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Kuaishou": {
+      "price": "27.90",
+      "basic_shares": "4.304151598",
+      "model_shares": "4.50",
+      "ttm_ifrs_profit": "15.766",
+      "ttm_adjusted_profit": "17.736",
+      "after_tax_interest": "1.5",
+      "dividend_payout": "0.35",
+      "normalized_starting_fcff": "8",
+      "reverse_rate": "0.11",
+      "reverse_g": "0.015",
+      "bridge_explanation": "121.095 liquid financial assets minus bank debt27.362 minus supplier financing25.253 minus refundable deposits8.657 minus customer prepayments4.842 minus paid July dividend2.584 minus operating reserve12.5 =39.897. Excludes restricted cash0.220 and standalone noncash equity investments3.351; latter unverified October realization, shown as sensitivity. Lease cash costs inside operating forecasts. No unverified Kling fundraising proceeds added.",
+      "scenarios": {
+        "bear": {
+          "probability": "0.40",
+          "bridge": "39.897",
+          "components": [
+            {
+              "name": "main_platform",
+              "tax": "0.22",
+              "ownership": "1",
+              "rate": "0.105",
+              "g": "0",
+              "anchors": {
+                "1": {
+                  "revenue": "140",
+                  "margin": "0.09",
+                  "net_reinvestment": "5"
+                },
+                "3": {
+                  "revenue": "132",
+                  "margin": "0.08",
+                  "net_reinvestment": "4.5"
+                },
+                "10": {
+                  "revenue": "100",
+                  "margin": "0.05",
+                  "net_reinvestment": "3"
+                }
+              }
+            },
+            {
+              "name": "Kling",
+              "tax": "0.22",
+              "ownership": "0.6833",
+              "rate": "0.135",
+              "g": "0",
+              "shutdown": true,
+              "anchors": {
+                "1": {
+                  "revenue": "4",
+                  "margin": "-0.75",
+                  "net_reinvestment": "3"
+                },
+                "3": {
+                  "revenue": "4",
+                  "margin": "-0.25",
+                  "net_reinvestment": "1"
+                },
+                "10": {
+                  "revenue": "0",
+                  "margin": "0",
+                  "net_reinvestment": "0"
+                }
+              },
+              "loss_funding_share": "0.8038823529411764705882352941",
+              "cash_flow_basis": "Parent equity distributions less funding; 68.33% of positive cash, 80.3882% of negative cash; employee 15% is not assumed to fund; external co-funding is an assumption."
+            }
+          ]
+        },
+        "base": {
+          "probability": "0.45",
+          "bridge": "39.897",
+          "components": [
+            {
+              "name": "main_platform",
+              "tax": "0.22",
+              "ownership": "1",
+              "rate": "0.105",
+              "g": "0.01",
+              "anchors": {
+                "1": {
+                  "revenue": "145",
+                  "margin": "0.12",
+                  "net_reinvestment": "4"
+                },
+                "3": {
+                  "revenue": "158",
+                  "margin": "0.13",
+                  "net_reinvestment": "4"
+                },
+                "10": {
+                  "revenue": "190",
+                  "margin": "0.14",
+                  "net_reinvestment": "5"
+                }
+              }
+            },
+            {
+              "name": "Kling",
+              "tax": "0.22",
+              "ownership": "0.6833",
+              "rate": "0.135",
+              "g": "0.025",
+              "anchors": {
+                "1": {
+                  "revenue": "5",
+                  "margin": "-0.70",
+                  "net_reinvestment": "3"
+                },
+                "3": {
+                  "revenue": "11",
+                  "margin": "-0.05",
+                  "net_reinvestment": "2"
+                },
+                "10": {
+                  "revenue": "40",
+                  "margin": "0.20",
+                  "net_reinvestment": "3"
+                }
+              },
+              "loss_funding_share": "0.8038823529411764705882352941",
+              "cash_flow_basis": "Parent equity distributions less funding; 68.33% of positive cash, 80.3882% of negative cash; employee 15% is not assumed to fund; external co-funding is an assumption."
+            }
+          ]
+        },
+        "bull": {
+          "probability": "0.15",
+          "bridge": "39.897",
+          "components": [
+            {
+              "name": "main_platform",
+              "tax": "0.22",
+              "ownership": "1",
+              "rate": "0.105",
+              "g": "0.02",
+              "anchors": {
+                "1": {
+                  "revenue": "150",
+                  "margin": "0.14",
+                  "net_reinvestment": "4"
+                },
+                "3": {
+                  "revenue": "175",
+                  "margin": "0.16",
+                  "net_reinvestment": "4.5"
+                },
+                "10": {
+                  "revenue": "240",
+                  "margin": "0.18",
+                  "net_reinvestment": "6"
+                }
+              }
+            },
+            {
+              "name": "Kling",
+              "tax": "0.22",
+              "ownership": "0.6833",
+              "rate": "0.135",
+              "g": "0.03",
+              "anchors": {
+                "1": {
+                  "revenue": "7",
+                  "margin": "-0.4",
+                  "net_reinvestment": "3"
+                },
+                "3": {
+                  "revenue": "22",
+                  "margin": "0.1",
+                  "net_reinvestment": "4"
+                },
+                "10": {
+                  "revenue": "120",
+                  "margin": "0.25",
+                  "net_reinvestment": "6"
+                }
+              },
+              "loss_funding_share": "0.8038823529411764705882352941",
+              "cash_flow_basis": "Parent equity distributions less funding; 68.33% of positive cash, 80.3882% of negative cash; employee 15% is not assumed to fund; external co-funding is an assumption."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -149,7 +149,7 @@ AI Scientist &amp; Research artifacts &amp; Experiments and review &amp; Researc
 <p>SWE-bench measures repository-level issue resolution; MLE-bench measures machine-learning engineering; RE-Bench examines research-engineering performance with comparisons to human experts [@swebench2023; @mlebench2024; @rebench2024]. They can serve as useful operational outcomes, yet a single score on any of them is not an intrinsic measure of recursive improvement. A benchmark that tests the products of research may never test the next researcher's ability to improve them further.</p>
 <p>PAST-Bench addresses experience retention, RSIBench-Data addresses training-data decisions, PostTrainBench addresses autonomous post-training, and AI4AI-Bench emphasizes algorithmic changes [@pastbench2026; @rsidata2026; @posttrain2026; @ai4ai2026]. Together they motivate a modular evaluation suite rather than one universal RSI number. The relevant modules are persistence, productive proposal, valid selection, inheritance, and multi-generation transfer.</p>
 <h2 id="a-matched-operator-comparison">A matched-operator comparison</h2>
-<p>To evaluate an improver, let $A$ be a starting target system, $U$ an improvement operator, $b$ a development budget, and $V^*$ an isolated audit evaluator. Define a proposed measure of <strong>improvement yield</strong>:</p>
+<p>To evaluate an improver, let $A$ be a starting target system, $U$ an improvement operator, $b$ a development budget, and $V^<em>$ an isolated audit evaluator. Define a proposed measure of </em><em>improvement yield</em>*:</p>
 <p>$$
 Y(U,A;b)=\mathbb{E}\left[V^<em>(\operatorname{Run}(U,A;b))-V^</em>(A)\right].
 $$</p>
@@ -165,21 +165,21 @@ $$</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Starting target</th>
-<th style="text-align: left;">Original operator $U_0$</th>
-<th style="text-align: left;">Updated operator $U_t$</th>
+<th align="left">Starting target</th>
+<th align="left">Original operator $U_0$</th>
+<th align="left">Updated operator $U_t$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Original target $A_0$</td>
-<td style="text-align: left;">Baseline development run</td>
-<td style="text-align: left;">Operator effect from the original target</td>
+<td align="left">Original target $A_0$</td>
+<td align="left">Baseline development run</td>
+<td align="left">Operator effect from the original target</td>
 </tr>
 <tr>
-<td style="text-align: left;">Updated target $A_t$</td>
-<td style="text-align: left;">Target-state effect under fixed improvement</td>
-<td style="text-align: left;">Joint effect and possible interaction</td>
+<td align="left">Updated target $A_t$</td>
+<td align="left">Target-state effect under fixed improvement</td>
+<td align="left">Joint effect and possible interaction</td>
 </tr>
 </tbody>
 </table></div>
@@ -236,50 +236,50 @@ $$</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Item</th>
-<th style="text-align: left;">Information needed to interpret an RSI claim</th>
+<th align="left">Item</th>
+<th align="left">Information needed to interpret an RSI claim</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">System boundary</td>
-<td style="text-align: left;">Model, scaffold, memory, data, improver, evaluator; mutable and externally fixed components</td>
+<td align="left">System boundary</td>
+<td align="left">Model, scaffold, memory, data, improver, evaluator; mutable and externally fixed components</td>
 </tr>
 <tr>
-<td style="text-align: left;">Claimed mechanism</td>
-<td style="text-align: left;">Refinement, persistent adaptation, operator improvement, or repeated acceleration</td>
+<td align="left">Claimed mechanism</td>
+<td align="left">Refinement, persistent adaptation, operator improvement, or repeated acceleration</td>
 </tr>
 <tr>
-<td style="text-align: left;">Inheritance</td>
-<td style="text-align: left;">Exact artifact passed to the next generation; whether the successor conducts the next improvement</td>
+<td align="left">Inheritance</td>
+<td align="left">Exact artifact passed to the next generation; whether the successor conducts the next improvement</td>
 </tr>
 <tr>
-<td style="text-align: left;">Controls</td>
-<td style="text-align: left;">Frozen improver, matched starting target, no persistence, equivalent search and inference budgets</td>
+<td align="left">Controls</td>
+<td align="left">Frozen improver, matched starting target, no persistence, equivalent search and inference budgets</td>
 </tr>
 <tr>
-<td style="text-align: left;">Evaluation access</td>
-<td style="text-align: left;">Development, selection, and audit tasks; feedback returned at each stage</td>
+<td align="left">Evaluation access</td>
+<td align="left">Development, selection, and audit tasks; feedback returned at each stage</td>
 </tr>
 <tr>
-<td style="text-align: left;">Selection</td>
-<td style="text-align: left;">Current, validation-selected, and retrospective-best candidates reported separately</td>
+<td align="left">Selection</td>
+<td align="left">Current, validation-selected, and retrospective-best candidates reported separately</td>
 </tr>
 <tr>
-<td style="text-align: left;">Resources</td>
-<td style="text-align: left;">Proposal, evaluation, training, failed runs, human work, and deployment inference</td>
+<td align="left">Resources</td>
+<td align="left">Proposal, evaluation, training, failed runs, human work, and deployment inference</td>
 </tr>
 <tr>
-<td style="text-align: left;">Uncertainty</td>
-<td style="text-align: left;">Independent lineages, task-family variation, paired design, confidence-interval method</td>
+<td align="left">Uncertainty</td>
+<td align="left">Independent lineages, task-family variation, paired design, confidence-interval method</td>
 </tr>
 <tr>
-<td style="text-align: left;">Transfer and retention</td>
-<td style="text-align: left;">New targets and model families; subsequent improvement; old capability regressions</td>
+<td align="left">Transfer and retention</td>
+<td align="left">New targets and model families; subsequent improvement; old capability regressions</td>
 </tr>
 <tr>
-<td style="text-align: left;">Reproducibility</td>
-<td style="text-align: left;">Versioned artifacts, ancestry graph, logs, seeds, model identifiers, and failure cases</td>
+<td align="left">Reproducibility</td>
+<td align="left">Versioned artifacts, ancestry graph, logs, seeds, model identifiers, and failure cases</td>
 </tr>
 </tbody>
 </table></div>
@@ -288,38 +288,38 @@ $$</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Term</th>
-<th style="text-align: left;">Meaning in this survey</th>
+<th align="left">Term</th>
+<th align="left">Meaning in this survey</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Recursive self-improvement</td>
-<td style="text-align: left;">Inherited change to a mechanism used for subsequent improvement</td>
+<td align="left">Recursive self-improvement</td>
+<td align="left">Inherited change to a mechanism used for subsequent improvement</td>
 </tr>
 <tr>
-<td style="text-align: left;">Persistent adaptation</td>
-<td style="text-align: left;">A committed change available beyond the original episode</td>
+<td align="left">Persistent adaptation</td>
+<td align="left">A committed change available beyond the original episode</td>
 </tr>
 <tr>
-<td style="text-align: left;">Improvement operator</td>
-<td style="text-align: left;">The procedure that proposes or selects changes to a target system</td>
+<td align="left">Improvement operator</td>
+<td align="left">The procedure that proposes or selects changes to a target system</td>
 </tr>
 <tr>
-<td style="text-align: left;">Agent scaffold or harness</td>
-<td style="text-align: left;">Prompts, tools, memory interfaces, and control flow around a foundation model</td>
+<td align="left">Agent scaffold or harness</td>
+<td align="left">Prompts, tools, memory interfaces, and control flow around a foundation model</td>
 </tr>
 <tr>
-<td style="text-align: left;">Metaproductivity</td>
-<td style="text-align: left;">Capacity to produce useful descendants; interpreted relative to a task and resource setting</td>
+<td align="left">Metaproductivity</td>
+<td align="left">Capacity to produce useful descendants; interpreted relative to a task and resource setting</td>
 </tr>
 <tr>
-<td style="text-align: left;">Audit evaluator</td>
-<td style="text-align: left;">An evaluation channel isolated from the candidate's modification and selection process</td>
+<td align="left">Audit evaluator</td>
+<td align="left">An evaluation channel isolated from the candidate's modification and selection process</td>
 </tr>
 <tr>
-<td style="text-align: left;">Grounding</td>
-<td style="text-align: left;">Evidence or constraints supplied by an environment, specification, or independent reference</td>
+<td align="left">Grounding</td>
+<td align="left">Evidence or constraints supplied by an environment, specification, or independent reference</td>
 </tr>
 </tbody>
 </table></div></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20Recursive%20Self-Improvement%20in%20AI%3A%20A%20Critical%20Survey%20of%20Mecha&amp;ticker=&amp;source=reports%2FRSI-survey-20260906%2Fmanuscript-en.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2F807f305dd199.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/ace25e84f3ad.html">人工智能递归自我改进：机制、证据与评估的批判性综述</a><div class="meta">2026-09-06 · 研究</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
@@ -344,4 +344,4 @@ $$</p>
 <li><a href="#self-modification-and-control-integrity">Self-modification and control integrity</a></li>
 </ul>
 </div>
-</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-22 17:59 UTC</footer></body></html>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-27 18:15 UTC</footer></body></html>

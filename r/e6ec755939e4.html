@@ -88,7 +88,7 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>维度</th>
-<th style="text-align: center;">权重</th>
+<th align="center">权重</th>
 <th>含义</th>
 <th>噪声特征</th>
 </tr>
@@ -96,31 +96,31 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <tbody>
 <tr>
 <td>收入（Revenue）</td>
-<td style="text-align: center;">30%</td>
+<td align="center">30%</td>
 <td>用钱投票——开发者愿意为这个模型花多少钱</td>
 <td>偏向有钱的企业用户</td>
 </tr>
 <tr>
 <td>采用广度（Apps）</td>
-<td style="text-align: center;">25%</td>
+<td align="center">25%</td>
 <td>有多少不同应用集成了这个模型</td>
 <td>最不受价格影响</td>
 </tr>
 <tr>
 <td>使用量（Tokens）</td>
-<td style="text-align: center;">20%</td>
+<td align="center">20%</td>
 <td>原始 token 处理量</td>
 <td>价格噪声最大</td>
 </tr>
 <tr>
 <td>质量领先（#1 Slots）</td>
-<td style="text-align: center;">15%</td>
+<td align="center">15%</td>
 <td>在多少个应用中被选为首选模型</td>
 <td>样本小但信号强</td>
 </tr>
 <tr>
 <td>单开发者付费</td>
-<td style="text-align: center;">10%</td>
+<td align="center">10%</td>
 <td>Revenue/Apps——每个开发者愿意花多少</td>
 <td>过滤掉"便宜才用"的噪声</td>
 </tr>
@@ -133,237 +133,237 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th style="text-align: center;">排名</th>
+<th align="center">排名</th>
 <th>模型</th>
 <th>供应商</th>
-<th style="text-align: center;">综合分</th>
-<th style="text-align: center;">收入</th>
-<th style="text-align: center;">使用量</th>
-<th style="text-align: center;">采用</th>
-<th style="text-align: center;">#1</th>
-<th style="text-align: center;">有效价格</th>
+<th align="center">综合分</th>
+<th align="center">收入</th>
+<th align="center">使用量</th>
+<th align="center">采用</th>
+<th align="center">#1</th>
+<th align="center">有效价格</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">1</td>
+<td align="center">1</td>
 <td>Claude Sonnet 4.6</td>
 <td>Anthropic</td>
-<td style="text-align: center;">96.4</td>
-<td style="text-align: center;">#1</td>
-<td style="text-align: center;">#3</td>
-<td style="text-align: center;">#3</td>
-<td style="text-align: center;">#2</td>
-<td style="text-align: center;">$6.35/M</td>
+<td align="center">96.4</td>
+<td align="center">#1</td>
+<td align="center">#3</td>
+<td align="center">#3</td>
+<td align="center">#2</td>
+<td align="center">$6.35/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">2</td>
+<td align="center">2</td>
 <td>MiniMax M3</td>
 <td>MiniMax</td>
-<td style="text-align: center;">86.2</td>
-<td style="text-align: center;">#6</td>
-<td style="text-align: center;">#2</td>
-<td style="text-align: center;">#4</td>
-<td style="text-align: center;">#6</td>
-<td style="text-align: center;">$0.55/M</td>
+<td align="center">86.2</td>
+<td align="center">#6</td>
+<td align="center">#2</td>
+<td align="center">#4</td>
+<td align="center">#6</td>
+<td align="center">$0.55/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">3</td>
+<td align="center">3</td>
 <td>DeepSeek V4 Pro</td>
 <td>DeepSeek</td>
-<td style="text-align: center;">85.3</td>
-<td style="text-align: center;">#8</td>
-<td style="text-align: center;">#4</td>
-<td style="text-align: center;">#2</td>
-<td style="text-align: center;">#3</td>
-<td style="text-align: center;">$0.56/M</td>
+<td align="center">85.3</td>
+<td align="center">#8</td>
+<td align="center">#4</td>
+<td align="center">#2</td>
+<td align="center">#3</td>
+<td align="center">$0.56/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">4</td>
+<td align="center">4</td>
 <td>Claude Opus 4.8</td>
 <td>Anthropic</td>
-<td style="text-align: center;">84.8</td>
-<td style="text-align: center;">#2</td>
-<td style="text-align: center;">#7</td>
-<td style="text-align: center;">#8</td>
-<td style="text-align: center;">#8</td>
-<td style="text-align: center;">$10.60/M</td>
+<td align="center">84.8</td>
+<td align="center">#2</td>
+<td align="center">#7</td>
+<td align="center">#8</td>
+<td align="center">#8</td>
+<td align="center">$10.60/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">5</td>
+<td align="center">5</td>
 <td>DeepSeek V4 Flash</td>
 <td>DeepSeek</td>
-<td style="text-align: center;">78.6</td>
-<td style="text-align: center;">#13</td>
-<td style="text-align: center;">#1</td>
-<td style="text-align: center;">#1</td>
-<td style="text-align: center;">#1</td>
-<td style="text-align: center;">$0.12/M</td>
+<td align="center">78.6</td>
+<td align="center">#13</td>
+<td align="center">#1</td>
+<td align="center">#1</td>
+<td align="center">#1</td>
+<td align="center">$0.12/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">6</td>
+<td align="center">6</td>
 <td>Gemini 3.5 Flash</td>
 <td>Google</td>
-<td style="text-align: center;">73.1</td>
-<td style="text-align: center;">#7</td>
-<td style="text-align: center;">#14</td>
-<td style="text-align: center;">#5</td>
-<td style="text-align: center;">#11</td>
-<td style="text-align: center;">$3.59/M</td>
+<td align="center">73.1</td>
+<td align="center">#7</td>
+<td align="center">#14</td>
+<td align="center">#5</td>
+<td align="center">#11</td>
+<td align="center">$3.59/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">7</td>
+<td align="center">7</td>
 <td>GPT-5.5</td>
 <td>OpenAI</td>
-<td style="text-align: center;">72.8</td>
-<td style="text-align: center;">#3</td>
-<td style="text-align: center;">#13</td>
-<td style="text-align: center;">#15</td>
-<td style="text-align: center;">#9</td>
-<td style="text-align: center;">$12.01/M</td>
+<td align="center">72.8</td>
+<td align="center">#3</td>
+<td align="center">#13</td>
+<td align="center">#15</td>
+<td align="center">#9</td>
+<td align="center">$12.01/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">8</td>
+<td align="center">8</td>
 <td>Claude Opus 4.6</td>
 <td>Anthropic</td>
-<td style="text-align: center;">71.9</td>
-<td style="text-align: center;">#5</td>
-<td style="text-align: center;">#17</td>
-<td style="text-align: center;">#9</td>
-<td style="text-align: center;">#10</td>
-<td style="text-align: center;">$10.60/M</td>
+<td align="center">71.9</td>
+<td align="center">#5</td>
+<td align="center">#17</td>
+<td align="center">#9</td>
+<td align="center">#10</td>
+<td align="center">$10.60/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">9</td>
+<td align="center">9</td>
 <td>Claude Opus 4.7</td>
 <td>Anthropic</td>
-<td style="text-align: center;">68.3</td>
-<td style="text-align: center;">#4</td>
-<td style="text-align: center;">#16</td>
-<td style="text-align: center;">#12</td>
-<td style="text-align: center;">#16</td>
-<td style="text-align: center;">$10.59/M</td>
+<td align="center">68.3</td>
+<td align="center">#4</td>
+<td align="center">#16</td>
+<td align="center">#12</td>
+<td align="center">#16</td>
+<td align="center">$10.59/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">10</td>
+<td align="center">10</td>
 <td>Gemini 3 Flash Preview</td>
 <td>Google</td>
-<td style="text-align: center;">67.2</td>
-<td style="text-align: center;">#12</td>
-<td style="text-align: center;">#12</td>
-<td style="text-align: center;">#10</td>
-<td style="text-align: center;">#4</td>
-<td style="text-align: center;">$1.20/M</td>
+<td align="center">67.2</td>
+<td align="center">#12</td>
+<td align="center">#12</td>
+<td align="center">#10</td>
+<td align="center">#4</td>
+<td align="center">$1.20/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">11</td>
+<td align="center">11</td>
 <td>MiMo-V2.5-Pro</td>
 <td>Xiaomi</td>
-<td style="text-align: center;">62.9</td>
-<td style="text-align: center;">#14</td>
-<td style="text-align: center;">#9</td>
-<td style="text-align: center;">#6</td>
-<td style="text-align: center;">#13</td>
-<td style="text-align: center;">$0.56/M</td>
+<td align="center">62.9</td>
+<td align="center">#14</td>
+<td align="center">#9</td>
+<td align="center">#6</td>
+<td align="center">#13</td>
+<td align="center">$0.56/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">12</td>
+<td align="center">12</td>
 <td>Step 3.7 Flash</td>
 <td>StepFun</td>
-<td style="text-align: center;">61.4</td>
-<td style="text-align: center;">#9</td>
-<td style="text-align: center;">#5</td>
-<td style="text-align: center;">#27</td>
-<td style="text-align: center;">#7</td>
-<td style="text-align: center;">$0.47/M</td>
+<td align="center">61.4</td>
+<td align="center">#9</td>
+<td align="center">#5</td>
+<td align="center">#27</td>
+<td align="center">#7</td>
+<td align="center">$0.47/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">13</td>
+<td align="center">13</td>
 <td>Laguna M.1</td>
 <td>Poolside</td>
-<td style="text-align: center;">54.0</td>
-<td style="text-align: center;">#17</td>
-<td style="text-align: center;">#6</td>
-<td style="text-align: center;">#19</td>
-<td style="text-align: center;">#14</td>
-<td style="text-align: center;">$0.26/M</td>
+<td align="center">54.0</td>
+<td align="center">#17</td>
+<td align="center">#6</td>
+<td align="center">#19</td>
+<td align="center">#14</td>
+<td align="center">$0.26/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">14</td>
+<td align="center">14</td>
 <td>Kimi K2.6</td>
 <td>MoonshotAI</td>
-<td style="text-align: center;">48.8</td>
-<td style="text-align: center;">#15</td>
-<td style="text-align: center;">#18</td>
-<td style="text-align: center;">#13</td>
-<td style="text-align: center;">#18</td>
-<td style="text-align: center;">$1.43/M</td>
+<td align="center">48.8</td>
+<td align="center">#15</td>
+<td align="center">#18</td>
+<td align="center">#13</td>
+<td align="center">#18</td>
+<td align="center">$1.43/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">15</td>
+<td align="center">15</td>
 <td>GPT-5.3-Codex</td>
 <td>OpenAI</td>
-<td style="text-align: center;">44.7</td>
-<td style="text-align: center;">#10</td>
-<td style="text-align: center;">#22</td>
-<td style="text-align: center;">#29</td>
-<td style="text-align: center;">#12</td>
-<td style="text-align: center;">$5.19/M</td>
+<td align="center">44.7</td>
+<td align="center">#10</td>
+<td align="center">#22</td>
+<td align="center">#29</td>
+<td align="center">#12</td>
+<td align="center">$5.19/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">16</td>
+<td align="center">16</td>
 <td>GLM 5.2</td>
 <td>Z.ai</td>
-<td style="text-align: center;">44.1</td>
-<td style="text-align: center;">#16</td>
-<td style="text-align: center;">#20</td>
-<td style="text-align: center;">#17</td>
-<td style="text-align: center;">#19</td>
-<td style="text-align: center;">$1.52/M</td>
+<td align="center">44.1</td>
+<td align="center">#16</td>
+<td align="center">#20</td>
+<td align="center">#17</td>
+<td align="center">#19</td>
+<td align="center">$1.52/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">17</td>
+<td align="center">17</td>
 <td>Gemini 3.1 Flash Lite</td>
 <td>Google</td>
-<td style="text-align: center;">41.4</td>
-<td style="text-align: center;">#26</td>
-<td style="text-align: center;">#19</td>
-<td style="text-align: center;">#11</td>
-<td style="text-align: center;">#5</td>
-<td style="text-align: center;">$0.60/M</td>
+<td align="center">41.4</td>
+<td align="center">#26</td>
+<td align="center">#19</td>
+<td align="center">#11</td>
+<td align="center">#5</td>
+<td align="center">$0.60/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">18</td>
+<td align="center">18</td>
 <td>Nex-N2-Pro</td>
 <td>Nex AGI</td>
-<td style="text-align: center;">39.0</td>
-<td style="text-align: center;">#20</td>
-<td style="text-align: center;">#11</td>
-<td style="text-align: center;">#22</td>
-<td style="text-align: center;">#22</td>
-<td style="text-align: center;">$0.46/M</td>
+<td align="center">39.0</td>
+<td align="center">#20</td>
+<td align="center">#11</td>
+<td align="center">#22</td>
+<td align="center">#22</td>
+<td align="center">$0.46/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">19</td>
+<td align="center">19</td>
 <td>Claude Fable 5</td>
 <td>Anthropic</td>
-<td style="text-align: center;">36.4</td>
-<td style="text-align: center;">#11</td>
-<td style="text-align: center;">#29</td>
-<td style="text-align: center;">#28</td>
-<td style="text-align: center;">#17</td>
-<td style="text-align: center;">$21.21/M</td>
+<td align="center">36.4</td>
+<td align="center">#11</td>
+<td align="center">#29</td>
+<td align="center">#28</td>
+<td align="center">#17</td>
+<td align="center">$21.21/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">20</td>
+<td align="center">20</td>
 <td>Claude Sonnet 4.5</td>
 <td>Anthropic</td>
-<td style="text-align: center;">35.9</td>
-<td style="text-align: center;">#18</td>
-<td style="text-align: center;">#26</td>
-<td style="text-align: center;">#18</td>
-<td style="text-align: center;">#20</td>
-<td style="text-align: center;">$6.36/M</td>
+<td align="center">35.9</td>
+<td align="center">#18</td>
+<td align="center">#26</td>
+<td align="center">#18</td>
+<td align="center">#20</td>
+<td align="center">$6.36/M</td>
 </tr>
 </tbody>
 </table></div>
@@ -374,72 +374,72 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th style="text-align: center;">排名</th>
+<th align="center">排名</th>
 <th>模型</th>
-<th style="text-align: center;">Token 量</th>
-<th style="text-align: center;">有效价格</th>
+<th align="center">Token 量</th>
+<th align="center">有效价格</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">1</td>
+<td align="center">1</td>
 <td>DeepSeek V4 Flash</td>
-<td style="text-align: center;">6,420B</td>
-<td style="text-align: center;">$0.12/M</td>
+<td align="center">6,420B</td>
+<td align="center">$0.12/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">2</td>
+<td align="center">2</td>
 <td>MiniMax M3</td>
-<td style="text-align: center;">4,530B</td>
-<td style="text-align: center;">$0.55/M</td>
+<td align="center">4,530B</td>
+<td align="center">$0.55/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">3</td>
+<td align="center">3</td>
 <td>Claude Sonnet 4.6</td>
-<td style="text-align: center;">3,290B</td>
-<td style="text-align: center;">$6.35/M</td>
+<td align="center">3,290B</td>
+<td align="center">$6.35/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">4</td>
+<td align="center">4</td>
 <td>DeepSeek V4 Pro</td>
-<td style="text-align: center;">2,880B</td>
-<td style="text-align: center;">$0.56/M</td>
+<td align="center">2,880B</td>
+<td align="center">$0.56/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">5</td>
+<td align="center">5</td>
 <td>Step 3.7 Flash</td>
-<td style="text-align: center;">2,880B</td>
-<td style="text-align: center;">$0.47/M</td>
+<td align="center">2,880B</td>
+<td align="center">$0.47/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">6</td>
+<td align="center">6</td>
 <td>Laguna M.1</td>
-<td style="text-align: center;">2,130B</td>
-<td style="text-align: center;">$0.26/M</td>
+<td align="center">2,130B</td>
+<td align="center">$0.26/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">7</td>
+<td align="center">7</td>
 <td>Claude Opus 4.8</td>
-<td style="text-align: center;">1,540B</td>
-<td style="text-align: center;">$10.60/M</td>
+<td align="center">1,540B</td>
+<td align="center">$10.60/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">8</td>
+<td align="center">8</td>
 <td>Nemotron 3 Super</td>
-<td style="text-align: center;">1,470B</td>
-<td style="text-align: center;">$0.19/M</td>
+<td align="center">1,470B</td>
+<td align="center">$0.19/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">9</td>
+<td align="center">9</td>
 <td>MiMo-V2.5-Pro</td>
-<td style="text-align: center;">1,270B</td>
-<td style="text-align: center;">$0.56/M</td>
+<td align="center">1,270B</td>
+<td align="center">$0.56/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">10</td>
+<td align="center">10</td>
 <td>MiMo-V2.5</td>
-<td style="text-align: center;">857B</td>
-<td style="text-align: center;">$0.18/M</td>
+<td align="center">857B</td>
+<td align="center">$0.18/M</td>
 </tr>
 </tbody>
 </table></div>
@@ -449,72 +449,72 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th style="text-align: center;">排名</th>
+<th align="center">排名</th>
 <th>模型</th>
-<th style="text-align: center;">月收入</th>
-<th style="text-align: center;">Token 量</th>
+<th align="center">月收入</th>
+<th align="center">Token 量</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">1</td>
+<td align="center">1</td>
 <td>Claude Sonnet 4.6</td>
-<td style="text-align: center;">$20.9M</td>
-<td style="text-align: center;">3,290B</td>
+<td align="center">$20.9M</td>
+<td align="center">3,290B</td>
 </tr>
 <tr>
-<td style="text-align: center;">2</td>
+<td align="center">2</td>
 <td>Claude Opus 4.8</td>
-<td style="text-align: center;">$16.3M</td>
-<td style="text-align: center;">1,540B</td>
+<td align="center">$16.3M</td>
+<td align="center">1,540B</td>
 </tr>
 <tr>
-<td style="text-align: center;">3</td>
+<td align="center">3</td>
 <td>GPT-5.5</td>
-<td style="text-align: center;">$7.9M</td>
-<td style="text-align: center;">661B</td>
+<td align="center">$7.9M</td>
+<td align="center">661B</td>
 </tr>
 <tr>
-<td style="text-align: center;">4</td>
+<td align="center">4</td>
 <td>Claude Opus 4.7</td>
-<td style="text-align: center;">$5.9M</td>
-<td style="text-align: center;">554B</td>
+<td align="center">$5.9M</td>
+<td align="center">554B</td>
 </tr>
 <tr>
-<td style="text-align: center;">5</td>
+<td align="center">5</td>
 <td>Claude Opus 4.6</td>
-<td style="text-align: center;">$5.7M</td>
-<td style="text-align: center;">536B</td>
+<td align="center">$5.7M</td>
+<td align="center">536B</td>
 </tr>
 <tr>
-<td style="text-align: center;">6</td>
+<td align="center">6</td>
 <td>MiniMax M3</td>
-<td style="text-align: center;">$2.5M</td>
-<td style="text-align: center;">4,530B</td>
+<td align="center">$2.5M</td>
+<td align="center">4,530B</td>
 </tr>
 <tr>
-<td style="text-align: center;">7</td>
+<td align="center">7</td>
 <td>Gemini 3.5 Flash</td>
-<td style="text-align: center;">$2.2M</td>
-<td style="text-align: center;">599B</td>
+<td align="center">$2.2M</td>
+<td align="center">599B</td>
 </tr>
 <tr>
-<td style="text-align: center;">8</td>
+<td align="center">8</td>
 <td>DeepSeek V4 Pro</td>
-<td style="text-align: center;">$1.6M</td>
-<td style="text-align: center;">2,880B</td>
+<td align="center">$1.6M</td>
+<td align="center">2,880B</td>
 </tr>
 <tr>
-<td style="text-align: center;">9</td>
+<td align="center">9</td>
 <td>Step 3.7 Flash</td>
-<td style="text-align: center;">$1.3M</td>
-<td style="text-align: center;">2,880B</td>
+<td align="center">$1.3M</td>
+<td align="center">2,880B</td>
 </tr>
 <tr>
-<td style="text-align: center;">10</td>
+<td align="center">10</td>
 <td>GPT-5.3-Codex</td>
-<td style="text-align: center;">$1.3M</td>
-<td style="text-align: center;">247B</td>
+<td align="center">$1.3M</td>
+<td align="center">247B</td>
 </tr>
 </tbody>
 </table></div>
@@ -524,72 +524,72 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th style="text-align: center;">排名</th>
+<th align="center">排名</th>
 <th>模型</th>
-<th style="text-align: center;">Apps 数</th>
-<th style="text-align: center;">有效价格</th>
+<th align="center">Apps 数</th>
+<th align="center">有效价格</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">1</td>
+<td align="center">1</td>
 <td>DeepSeek V4 Flash</td>
-<td style="text-align: center;">36</td>
-<td style="text-align: center;">$0.12/M</td>
+<td align="center">36</td>
+<td align="center">$0.12/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">2</td>
+<td align="center">2</td>
 <td>DeepSeek V4 Pro</td>
-<td style="text-align: center;">34</td>
-<td style="text-align: center;">$0.56/M</td>
+<td align="center">34</td>
+<td align="center">$0.56/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">3</td>
+<td align="center">3</td>
 <td>Claude Sonnet 4.6</td>
-<td style="text-align: center;">29</td>
-<td style="text-align: center;">$6.35/M</td>
+<td align="center">29</td>
+<td align="center">$6.35/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">4</td>
+<td align="center">4</td>
 <td>MiniMax M3</td>
-<td style="text-align: center;">28</td>
-<td style="text-align: center;">$0.55/M</td>
+<td align="center">28</td>
+<td align="center">$0.55/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">5</td>
+<td align="center">5</td>
 <td>Gemini 3.5 Flash</td>
-<td style="text-align: center;">26</td>
-<td style="text-align: center;">$3.59/M</td>
+<td align="center">26</td>
+<td align="center">$3.59/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">6</td>
+<td align="center">6</td>
 <td>MiMo-V2.5-Pro</td>
-<td style="text-align: center;">26</td>
-<td style="text-align: center;">$0.56/M</td>
+<td align="center">26</td>
+<td align="center">$0.56/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">7</td>
+<td align="center">7</td>
 <td>MiMo-V2.5</td>
-<td style="text-align: center;">25</td>
-<td style="text-align: center;">$0.18/M</td>
+<td align="center">25</td>
+<td align="center">$0.18/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">8</td>
+<td align="center">8</td>
 <td>Claude Opus 4.8</td>
-<td style="text-align: center;">24</td>
-<td style="text-align: center;">$10.60/M</td>
+<td align="center">24</td>
+<td align="center">$10.60/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">9</td>
+<td align="center">9</td>
 <td>Claude Opus 4.6</td>
-<td style="text-align: center;">21</td>
-<td style="text-align: center;">$10.60/M</td>
+<td align="center">21</td>
+<td align="center">$10.60/M</td>
 </tr>
 <tr>
-<td style="text-align: center;">10</td>
+<td align="center">10</td>
 <td>Gemini 3 Flash Preview</td>
-<td style="text-align: center;">21</td>
-<td style="text-align: center;">$1.20/M</td>
+<td align="center">21</td>
+<td align="center">$1.20/M</td>
 </tr>
 </tbody>
 </table></div>
@@ -599,54 +599,54 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th style="text-align: center;">排名</th>
+<th align="center">排名</th>
 <th>模型</th>
-<th style="text-align: center;">#1 数</th>
-<th style="text-align: center;">总采用</th>
+<th align="center">#1 数</th>
+<th align="center">总采用</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">1</td>
+<td align="center">1</td>
 <td>DeepSeek V4 Flash</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">36 apps</td>
+<td align="center">6</td>
+<td align="center">36 apps</td>
 </tr>
 <tr>
-<td style="text-align: center;">2</td>
+<td align="center">2</td>
 <td>Claude Sonnet 4.6</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">29 apps</td>
+<td align="center">5</td>
+<td align="center">29 apps</td>
 </tr>
 <tr>
-<td style="text-align: center;">3</td>
+<td align="center">3</td>
 <td>DeepSeek V4 Pro</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">34 apps</td>
+<td align="center">3</td>
+<td align="center">34 apps</td>
 </tr>
 <tr>
-<td style="text-align: center;">4</td>
+<td align="center">4</td>
 <td>Gemini 3 Flash Preview</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">21 apps</td>
+<td align="center">3</td>
+<td align="center">21 apps</td>
 </tr>
 <tr>
-<td style="text-align: center;">5</td>
+<td align="center">5</td>
 <td>Gemini 3.1 Flash Lite</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">21 apps</td>
+<td align="center">3</td>
+<td align="center">21 apps</td>
 </tr>
 <tr>
-<td style="text-align: center;">6</td>
+<td align="center">6</td>
 <td>MiniMax M3</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">28 apps</td>
+<td align="center">2</td>
+<td align="center">28 apps</td>
 </tr>
 <tr>
-<td style="text-align: center;">7</td>
+<td align="center">7</td>
 <td>Step 3.7 Flash</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">7 apps</td>
+<td align="center">2</td>
+<td align="center">7 apps</td>
 </tr>
 </tbody>
 </table></div>
@@ -656,72 +656,72 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th style="text-align: center;">排名</th>
+<th align="center">排名</th>
 <th>模型</th>
-<th style="text-align: center;">每 App 收入</th>
-<th style="text-align: center;">Apps 数</th>
+<th align="center">每 App 收入</th>
+<th align="center">Apps 数</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">1</td>
+<td align="center">1</td>
 <td>Claude Sonnet 4.6</td>
-<td style="text-align: center;">$721K</td>
-<td style="text-align: center;">29</td>
+<td align="center">$721K</td>
+<td align="center">29</td>
 </tr>
 <tr>
-<td style="text-align: center;">2</td>
+<td align="center">2</td>
 <td>Claude Opus 4.8</td>
-<td style="text-align: center;">$680K</td>
-<td style="text-align: center;">24</td>
+<td align="center">$680K</td>
+<td align="center">24</td>
 </tr>
 <tr>
-<td style="text-align: center;">3</td>
+<td align="center">3</td>
 <td>GPT-5.5</td>
-<td style="text-align: center;">$496K</td>
-<td style="text-align: center;">16</td>
+<td align="center">$496K</td>
+<td align="center">16</td>
 </tr>
 <tr>
-<td style="text-align: center;">4</td>
+<td align="center">4</td>
 <td>Claude Opus 4.7</td>
-<td style="text-align: center;">$294K</td>
-<td style="text-align: center;">20</td>
+<td align="center">$294K</td>
+<td align="center">20</td>
 </tr>
 <tr>
-<td style="text-align: center;">5</td>
+<td align="center">5</td>
 <td>Claude Opus 4.6</td>
-<td style="text-align: center;">$270K</td>
-<td style="text-align: center;">21</td>
+<td align="center">$270K</td>
+<td align="center">21</td>
 </tr>
 <tr>
-<td style="text-align: center;">6</td>
+<td align="center">6</td>
 <td>GPT-5.3-Codex</td>
-<td style="text-align: center;">$256K</td>
-<td style="text-align: center;">5</td>
+<td align="center">$256K</td>
+<td align="center">5</td>
 </tr>
 <tr>
-<td style="text-align: center;">7</td>
+<td align="center">7</td>
 <td>Step 3.7 Flash</td>
-<td style="text-align: center;">$191K</td>
-<td style="text-align: center;">7</td>
+<td align="center">$191K</td>
+<td align="center">7</td>
 </tr>
 <tr>
-<td style="text-align: center;">8</td>
+<td align="center">8</td>
 <td>Claude Fable 5</td>
-<td style="text-align: center;">$149K</td>
-<td style="text-align: center;">6</td>
+<td align="center">$149K</td>
+<td align="center">6</td>
 </tr>
 <tr>
-<td style="text-align: center;">9</td>
+<td align="center">9</td>
 <td>MiniMax M3</td>
-<td style="text-align: center;">$89K</td>
-<td style="text-align: center;">28</td>
+<td align="center">$89K</td>
+<td align="center">28</td>
 </tr>
 <tr>
-<td style="text-align: center;">10</td>
+<td align="center">10</td>
 <td>Gemini 3.5 Flash</td>
-<td style="text-align: center;">$83K</td>
-<td style="text-align: center;">26</td>
+<td align="center">$83K</td>
+<td align="center">26</td>
 </tr>
 </tbody>
 </table></div>
@@ -735,60 +735,60 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>模型</th>
-<th style="text-align: center;">Token排名</th>
-<th style="text-align: center;">综合排名</th>
-<th style="text-align: center;">下降</th>
-<th style="text-align: center;">有效价格</th>
+<th align="center">Token排名</th>
+<th align="center">综合排名</th>
+<th align="center">下降</th>
+<th align="center">有效价格</th>
 <th>诊断</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Nemotron 3 Super</td>
-<td style="text-align: center;">#8</td>
-<td style="text-align: center;">#25</td>
-<td style="text-align: center;">↓17</td>
-<td style="text-align: center;">$0.19/M</td>
+<td align="center">#8</td>
+<td align="center">#25</td>
+<td align="center">↓17</td>
+<td align="center">$0.19/M</td>
 <td>10个 app，0个 #1。纯粹靠便宜跑批量</td>
 </tr>
 <tr>
 <td>MiMo-V2.5</td>
-<td style="text-align: center;">#10</td>
-<td style="text-align: center;">#21</td>
-<td style="text-align: center;">↓11</td>
-<td style="text-align: center;">$0.18/M</td>
+<td align="center">#10</td>
+<td align="center">#21</td>
+<td align="center">↓11</td>
+<td align="center">$0.18/M</td>
 <td>25个 app 但0个 #1，没人觉得它最好</td>
 </tr>
 <tr>
 <td>MiniMax M2.7</td>
-<td style="text-align: center;">#15</td>
-<td style="text-align: center;">#24</td>
-<td style="text-align: center;">↓9</td>
-<td style="text-align: center;">$0.44/M</td>
+<td align="center">#15</td>
+<td align="center">#24</td>
+<td align="center">↓9</td>
+<td align="center">$0.44/M</td>
 <td>被 M3 取代后仍靠老用户惯性</td>
 </tr>
 <tr>
 <td>Nemotron 3 Ultra</td>
-<td style="text-align: center;">#21</td>
-<td style="text-align: center;">#29</td>
-<td style="text-align: center;">↓8</td>
-<td style="text-align: center;">$0.98/M</td>
+<td align="center">#21</td>
+<td align="center">#29</td>
+<td align="center">↓8</td>
+<td align="center">$0.98/M</td>
 <td>benchmark 不错（AA 48）但实际采用很低</td>
 </tr>
 <tr>
 <td>Step 3.7 Flash</td>
-<td style="text-align: center;">#5</td>
-<td style="text-align: center;">#12</td>
-<td style="text-align: center;">↓7</td>
-<td style="text-align: center;">$0.47/M</td>
+<td align="center">#5</td>
+<td align="center">#12</td>
+<td align="center">↓7</td>
+<td align="center">$0.47/M</td>
 <td>只有7个 app，极度集中使用</td>
 </tr>
 <tr>
 <td>Laguna M.1</td>
-<td style="text-align: center;">#6</td>
-<td style="text-align: center;">#13</td>
-<td style="text-align: center;">↓7</td>
-<td style="text-align: center;">$0.26/M</td>
+<td align="center">#6</td>
+<td align="center">#13</td>
+<td align="center">↓7</td>
+<td align="center">$0.26/M</td>
 <td>2.13T token 但只有12个 app</td>
 </tr>
 </tbody>
@@ -799,60 +799,60 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>模型</th>
-<th style="text-align: center;">Token排名</th>
-<th style="text-align: center;">综合排名</th>
-<th style="text-align: center;">上升</th>
-<th style="text-align: center;">有效价格</th>
+<th align="center">Token排名</th>
+<th align="center">综合排名</th>
+<th align="center">上升</th>
+<th align="center">有效价格</th>
 <th>诊断</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Claude Fable 5</td>
-<td style="text-align: center;">#29</td>
-<td style="text-align: center;">#19</td>
-<td style="text-align: center;">↑10</td>
-<td style="text-align: center;">$21.21/M</td>
+<td align="center">#29</td>
+<td align="center">#19</td>
+<td align="center">↑10</td>
+<td align="center">$21.21/M</td>
 <td>全场最贵，42B token，但月入 $891K</td>
 </tr>
 <tr>
 <td>Claude Opus 4.6</td>
-<td style="text-align: center;">#17</td>
-<td style="text-align: center;">#8</td>
-<td style="text-align: center;">↑9</td>
-<td style="text-align: center;">$10.60/M</td>
+<td align="center">#17</td>
+<td align="center">#8</td>
+<td align="center">↑9</td>
+<td align="center">$10.60/M</td>
 <td>21个 app 愿意以 $10.60/M 持续用</td>
 </tr>
 <tr>
 <td>Gemini 3.5 Flash</td>
-<td style="text-align: center;">#14</td>
-<td style="text-align: center;">#6</td>
-<td style="text-align: center;">↑8</td>
-<td style="text-align: center;">$3.59/M</td>
+<td align="center">#14</td>
+<td align="center">#6</td>
+<td align="center">↑8</td>
+<td align="center">$3.59/M</td>
 <td>26个 app，价格适中但采用极广</td>
 </tr>
 <tr>
 <td>Claude Opus 4.7</td>
-<td style="text-align: center;">#16</td>
-<td style="text-align: center;">#9</td>
-<td style="text-align: center;">↑7</td>
-<td style="text-align: center;">$10.59/M</td>
+<td align="center">#16</td>
+<td align="center">#9</td>
+<td align="center">↑7</td>
+<td align="center">$10.59/M</td>
 <td>20个 app，$5.87M 月收入</td>
 </tr>
 <tr>
 <td>GPT-5.3-Codex</td>
-<td style="text-align: center;">#22</td>
-<td style="text-align: center;">#15</td>
-<td style="text-align: center;">↑7</td>
-<td style="text-align: center;">$5.19/M</td>
+<td align="center">#22</td>
+<td align="center">#15</td>
+<td align="center">↑7</td>
+<td align="center">$5.19/M</td>
 <td>只有5个 app 但月入 $1.28M，极度垂直</td>
 </tr>
 <tr>
 <td>GPT-5.5</td>
-<td style="text-align: center;">#13</td>
-<td style="text-align: center;">#7</td>
-<td style="text-align: center;">↑6</td>
-<td style="text-align: center;">$12.01/M</td>
+<td align="center">#13</td>
+<td align="center">#7</td>
+<td align="center">↑6</td>
+<td align="center">$12.01/M</td>
 <td>$7.94M 月收入，收入排第三</td>
 </tr>
 </tbody>
@@ -885,89 +885,89 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>供应商</th>
-<th style="text-align: center;">模型数</th>
-<th style="text-align: center;">总收入</th>
-<th style="text-align: center;">总 Token</th>
-<th style="text-align: center;">平均价格</th>
+<th align="center">模型数</th>
+<th align="center">总收入</th>
+<th align="center">总 Token</th>
+<th align="center">平均价格</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Anthropic</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">$50.1M</td>
-<td style="text-align: center;">6.0T</td>
-<td style="text-align: center;">$8.35/M</td>
+<td align="center">6</td>
+<td align="center">$50.1M</td>
+<td align="center">6.0T</td>
+<td align="center">$8.35/M</td>
 </tr>
 <tr>
 <td>OpenAI</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">$9.2M</td>
-<td style="text-align: center;">0.9T</td>
-<td style="text-align: center;">$10.22/M</td>
+<td align="center">2</td>
+<td align="center">$9.2M</td>
+<td align="center">0.9T</td>
+<td align="center">$10.22/M</td>
 </tr>
 <tr>
 <td>Google</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">$3.2M</td>
-<td style="text-align: center;">1.7T</td>
-<td style="text-align: center;">$1.88/M</td>
+<td align="center">3</td>
+<td align="center">$3.2M</td>
+<td align="center">1.7T</td>
+<td align="center">$1.88/M</td>
 </tr>
 <tr>
 <td>MiniMax</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">$2.5M</td>
-<td style="text-align: center;">4.5T</td>
-<td style="text-align: center;">$0.55/M</td>
+<td align="center">1</td>
+<td align="center">$2.5M</td>
+<td align="center">4.5T</td>
+<td align="center">$0.55/M</td>
 </tr>
 <tr>
 <td>DeepSeek</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">$2.3M</td>
-<td style="text-align: center;">9.3T</td>
-<td style="text-align: center;">$0.25/M</td>
+<td align="center">2</td>
+<td align="center">$2.3M</td>
+<td align="center">9.3T</td>
+<td align="center">$0.25/M</td>
 </tr>
 <tr>
 <td>StepFun</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">$1.3M</td>
-<td style="text-align: center;">2.9T</td>
-<td style="text-align: center;">$0.47/M</td>
+<td align="center">1</td>
+<td align="center">$1.3M</td>
+<td align="center">2.9T</td>
+<td align="center">$0.47/M</td>
 </tr>
 <tr>
 <td>Xiaomi</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">$0.7M</td>
-<td style="text-align: center;">1.3T</td>
-<td style="text-align: center;">$0.56/M</td>
+<td align="center">1</td>
+<td align="center">$0.7M</td>
+<td align="center">1.3T</td>
+<td align="center">$0.56/M</td>
 </tr>
 <tr>
 <td>MoonshotAI</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">$0.6M</td>
-<td style="text-align: center;">0.5T</td>
-<td style="text-align: center;">$1.43/M</td>
+<td align="center">1</td>
+<td align="center">$0.6M</td>
+<td align="center">0.5T</td>
+<td align="center">$1.43/M</td>
 </tr>
 <tr>
 <td>Z.ai</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">$0.6M</td>
-<td style="text-align: center;">0.4T</td>
-<td style="text-align: center;">$1.52/M</td>
+<td align="center">1</td>
+<td align="center">$0.6M</td>
+<td align="center">0.4T</td>
+<td align="center">$1.52/M</td>
 </tr>
 <tr>
 <td>Poolside</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">$0.5M</td>
-<td style="text-align: center;">2.1T</td>
-<td style="text-align: center;">$0.26/M</td>
+<td align="center">1</td>
+<td align="center">$0.5M</td>
+<td align="center">2.1T</td>
+<td align="center">$0.26/M</td>
 </tr>
 <tr>
 <td>Nex AGI</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">$0.4M</td>
-<td style="text-align: center;">0.8T</td>
-<td style="text-align: center;">$0.46/M</td>
+<td align="center">1</td>
+<td align="center">$0.4M</td>
+<td align="center">0.8T</td>
+<td align="center">$0.46/M</td>
 </tr>
 </tbody>
 </table></div>
@@ -1016,4 +1016,4 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <li><a href="#_10">数据来源</a></li>
 </ul>
 </div>
-</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-22 17:59 UTC</footer></body></html>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-27 18:16 UTC</footer></body></html>

@@ -1,0 +1,37 @@
+{
+  "research_baseline": "2026-10-24 Asia/Shanghai",
+  "market_close_cutoff": "2026-10-23",
+  "price_comparison": {
+    "HSTECH_month_end": {"old": "2852.57", "new": "3871.66", "old_date": "2022-10-31", "new_date": "2026-10-23"},
+    "HSTECH_close_low": {"old": "2801.99", "new": "3871.66", "old_date": "2022-10-24", "new_date": "2026-10-23"},
+    "HSTECH_intraday_low": {"old": "2720.38", "new": "3871.66", "old_date": "2022-10-25 intraday", "new_date": "2026-10-23 close"},
+    "NDX_month_end": {"old": "11405.57", "new": "28957.53", "old_date": "2022-10-31", "new_date": "2026-10-23"},
+    "IXIC_month_end": {"old": "10988.15", "new": "25955.34", "old_date": "2022-10-31", "new_date": "2026-10-23"}
+  },
+  "valuation_comparison": {
+    "HSTECH_PE": {"old": "31.94", "new": "20.63", "old_date": "2022-10-31", "new_date": "2026-10-23", "source": "S01 display_history"},
+    "HSTECH_PB": {"old": "1.743", "new": "2.092", "old_date": "2022-10-31", "new_date": "2026-10-23", "source": "S01 display_history"},
+    "NDX_PE": {"old": "25.34", "new": "28.74", "old_date": "2022-10-30 weekly label", "new_date": "2026-10-21", "source": "S01 display_history"},
+    "NDX_PB": {"old": "6.490", "new": "9.037", "old_date": "2022-10-30 weekly label", "new_date": "2026-10-21", "source": "S01 display_history"},
+    "NDX_PE_low_week": {"old": "22.72", "new": "28.74", "old_date": "2022-10-16 weekly label", "new_date": "2026-10-21", "source": "S01 display_history"}
+  },
+  "scenarios_notice": "All scenario inputs are analyst assumptions. Rounded start PE 21/29 are sensitivity anchors near vendor values, NOT reconstructed all-losses-included owner-earnings PE. No scenario probabilities or cross-index return ranking are asserted.",
+  "scenarios": {
+    "HSTECH_bear": {"start_pe": "21", "growth": "0", "end_pe": "16", "payout": "0.20"},
+    "HSTECH_base": {"start_pe": "21", "growth": "0.08", "end_pe": "20", "payout": "0.25"},
+    "HSTECH_bull": {"start_pe": "21", "growth": "0.15", "end_pe": "24", "payout": "0.30"},
+    "NDX_bear": {"start_pe": "29", "growth": "0.04", "end_pe": "20", "payout": "0.15"},
+    "NDX_base": {"start_pe": "29", "growth": "0.12", "end_pe": "25", "payout": "0.20"},
+    "NDX_bull": {"start_pe": "29", "growth": "0.18", "end_pe": "30", "payout": "0.20"},
+    "HSTECH_base_start30": {"start_pe": "30", "growth": "0.08", "end_pe": "20", "payout": "0.25"},
+    "HSTECH_base_start35": {"start_pe": "35", "growth": "0.08", "end_pe": "20", "payout": "0.25"},
+    "NDX_base_start35": {"start_pe": "35", "growth": "0.12", "end_pe": "25", "payout": "0.20"}
+  },
+  "thresholds_notice": "HSTECH price sensitivities, not fair values. Denominator and constituents held fixed. NDX is normalized to 100: valuation labels cannot be proven to align with US closes, so no NDX index point targets are generated.",
+  "thresholds": {
+    "HSTECH_PB_1.743": {"current_price": "3871.66", "current_multiple": "2.092", "target_multiple": "1.743"},
+    "HSTECH_PB_1.9": {"current_price": "3871.66", "current_multiple": "2.092", "target_multiple": "1.9"},
+    "NDX_normalized_PE_25.34": {"current_price": "100", "current_multiple": "28.74", "target_multiple": "25.34"},
+    "NDX_normalized_PE_22.72": {"current_price": "100", "current_multiple": "28.74", "target_multiple": "22.72"}
+  }
+}

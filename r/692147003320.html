@@ -197,74 +197,74 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>标的</th>
-<th style="text-align: right;">重叠交易日</th>
-<th style="text-align: right;">完全一致</th>
-<th style="text-align: right;">偏差 &gt;0.1%</th>
+<th align="right">重叠交易日</th>
+<th align="right">完全一致</th>
+<th align="right">偏差 &gt;0.1%</th>
 <th>差异性质</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>SPY</td>
-<td style="text-align: right;">1,172</td>
-<td style="text-align: right;">1,171</td>
-<td style="text-align: right;">0</td>
+<td align="right">1,172</td>
+<td align="right">1,171</td>
+<td align="right">0</td>
 <td>一致</td>
 </tr>
 <tr>
 <td>AAPL</td>
-<td style="text-align: right;">1,172</td>
-<td style="text-align: right;">1,170</td>
-<td style="text-align: right;">1</td>
+<td align="right">1,172</td>
+<td align="right">1,170</td>
+<td align="right">1</td>
 <td>一致</td>
 </tr>
 <tr>
 <td>PDD</td>
-<td style="text-align: right;">2,037</td>
-<td style="text-align: right;">2,033</td>
-<td style="text-align: right;">1</td>
+<td align="right">2,037</td>
+<td align="right">2,033</td>
+<td align="right">1</td>
 <td>一致</td>
 </tr>
 <tr>
 <td>美团-W 3690</td>
-<td style="text-align: right;">1,145</td>
-<td style="text-align: right;">1,137</td>
-<td style="text-align: right;">6</td>
+<td align="right">1,145</td>
+<td align="right">1,137</td>
+<td align="right">6</td>
 <td>假期收盘口径</td>
 </tr>
 <tr>
 <td>快手-W 1024</td>
-<td style="text-align: right;">1,145</td>
-<td style="text-align: right;">1,136</td>
-<td style="text-align: right;">9</td>
+<td align="right">1,145</td>
+<td align="right">1,136</td>
+<td align="right">9</td>
 <td>含 1 处真实错误</td>
 </tr>
 <tr>
 <td>五粮液 000858</td>
-<td style="text-align: right;">2,102</td>
-<td style="text-align: right;">1,988</td>
-<td style="text-align: right;">33</td>
+<td align="right">2,102</td>
+<td align="right">1,988</td>
+<td align="right">33</td>
 <td>四舍五入，最大 0.92%</td>
 </tr>
 <tr>
 <td>腾讯控股 0700</td>
-<td style="text-align: right;">1,145</td>
-<td style="text-align: right;">893</td>
-<td style="text-align: right;">251</td>
+<td align="right">1,145</td>
+<td align="right">893</td>
+<td align="right">251</td>
 <td>实物分派口径差</td>
 </tr>
 <tr>
 <td>贵州茅台 600519</td>
-<td style="text-align: right;">2,102</td>
-<td style="text-align: right;">2,100</td>
-<td style="text-align: right;">2</td>
+<td align="right">2,102</td>
+<td align="right">2,100</td>
+<td align="right">2</td>
 <td>含 1 处真实错误</td>
 </tr>
 <tr>
 <td>NVDA</td>
-<td style="text-align: right;">1,172</td>
-<td style="text-align: right;">560</td>
-<td style="text-align: right;">612</td>
+<td align="right">1,172</td>
+<td align="right">560</td>
+<td align="right">612</td>
 <td>拆股口径差</td>
 </tr>
 </tbody>
@@ -276,9 +276,9 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <tr>
 <th>标的</th>
 <th>日期</th>
-<th style="text-align: right;">雅虎值</th>
-<th style="text-align: right;">实际值</th>
-<th style="text-align: right;">误差</th>
+<th align="right">雅虎值</th>
+<th align="right">实际值</th>
+<th align="right">误差</th>
 <th>性质</th>
 </tr>
 </thead>
@@ -286,17 +286,17 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <tr>
 <td>600519.SS</td>
 <td>2018-10-29</td>
-<td style="text-align: right;">610.10</td>
-<td style="text-align: right;">549.09</td>
-<td style="text-align: right;">+11.1%</td>
+<td align="right">610.10</td>
+<td align="right">549.09</td>
+<td align="right">+11.1%</td>
 <td>三季报后跌停日，雅虎沿用前值</td>
 </tr>
 <tr>
 <td>1024.HK</td>
 <td>2022-03-14</td>
-<td style="text-align: right;">69.55</td>
-<td style="text-align: right;">60.20</td>
-<td style="text-align: right;">+15.5%</td>
+<td align="right">69.55</td>
+<td align="right">60.20</td>
+<td align="right">+15.5%</td>
 <td>雅虎写入 O=H=L=C 占位符坏柱</td>
 </tr>
 </tbody>
@@ -320,40 +320,40 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>周线颜色</th>
-<th style="text-align: right;">观测数</th>
-<th style="text-align: right;">未来 1 周</th>
-<th style="text-align: right;">未来 4 周</th>
-<th style="text-align: right;">未来 13 周</th>
+<th align="right">观测数</th>
+<th align="right">未来 1 周</th>
+<th align="right">未来 4 周</th>
+<th align="right">未来 13 周</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>绿</td>
-<td style="text-align: right;">9,204</td>
-<td style="text-align: right;">0.36%</td>
-<td style="text-align: right;">1.29%</td>
-<td style="text-align: right;">4.46%</td>
+<td align="right">9,204</td>
+<td align="right">0.36%</td>
+<td align="right">1.29%</td>
+<td align="right">4.46%</td>
 </tr>
 <tr>
 <td>蓝</td>
-<td style="text-align: right;">8,826</td>
-<td style="text-align: right;">0.23%</td>
-<td style="text-align: right;">1.17%</td>
-<td style="text-align: right;">4.10%</td>
+<td align="right">8,826</td>
+<td align="right">0.23%</td>
+<td align="right">1.17%</td>
+<td align="right">4.10%</td>
 </tr>
 <tr>
 <td>红</td>
-<td style="text-align: right;">6,431</td>
-<td style="text-align: right;">0.32%</td>
-<td style="text-align: right;">1.16%</td>
-<td style="text-align: right;">4.80%</td>
+<td align="right">6,431</td>
+<td align="right">0.32%</td>
+<td align="right">1.16%</td>
+<td align="right">4.80%</td>
 </tr>
 <tr>
 <td>无条件</td>
-<td style="text-align: right;">24,461</td>
-<td style="text-align: right;">0.30%</td>
-<td style="text-align: right;">1.21%</td>
-<td style="text-align: right;">4.41%</td>
+<td align="right">24,461</td>
+<td align="right">0.30%</td>
+<td align="right">1.21%</td>
+<td align="right">4.41%</td>
 </tr>
 </tbody>
 </table></div>
@@ -364,41 +364,41 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>策略</th>
-<th style="text-align: right;">平均年化</th>
-<th style="text-align: right;">年化波动</th>
-<th style="text-align: right;">夏普</th>
-<th style="text-align: right;">平均最大回撤</th>
-<th style="text-align: right;">在场时间</th>
-<th style="text-align: right;">跑赢持有的标的数</th>
+<th align="right">平均年化</th>
+<th align="right">年化波动</th>
+<th align="right">夏普</th>
+<th align="right">平均最大回撤</th>
+<th align="right">在场时间</th>
+<th align="right">跑赢持有的标的数</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>买入持有</td>
-<td style="text-align: right;">12.1%</td>
-<td style="text-align: right;">32.4%</td>
-<td style="text-align: right;">0.47</td>
-<td style="text-align: right;">−64.9%</td>
-<td style="text-align: right;">100%</td>
-<td style="text-align: right;">基准</td>
+<td align="right">12.1%</td>
+<td align="right">32.4%</td>
+<td align="right">0.47</td>
+<td align="right">−64.9%</td>
+<td align="right">100%</td>
+<td align="right">基准</td>
 </tr>
 <tr>
 <td>非红才持</td>
-<td style="text-align: right;">8.2%</td>
-<td style="text-align: right;">26.0%</td>
-<td style="text-align: right;">0.36</td>
-<td style="text-align: right;">−56.5%</td>
-<td style="text-align: right;">72.7%</td>
-<td style="text-align: right;">6/28</td>
+<td align="right">8.2%</td>
+<td align="right">26.0%</td>
+<td align="right">0.36</td>
+<td align="right">−56.5%</td>
+<td align="right">72.7%</td>
+<td align="right">6/28</td>
 </tr>
 <tr>
 <td>仅绿才持</td>
-<td style="text-align: right;">5.2%</td>
-<td style="text-align: right;">17.5%</td>
-<td style="text-align: right;">0.28</td>
-<td style="text-align: right;">−43.4%</td>
-<td style="text-align: right;">36.4%</td>
-<td style="text-align: right;">6/28</td>
+<td align="right">5.2%</td>
+<td align="right">17.5%</td>
+<td align="right">0.28</td>
+<td align="right">−43.4%</td>
+<td align="right">36.4%</td>
+<td align="right">6/28</td>
 </tr>
 </tbody>
 </table></div>
@@ -410,33 +410,33 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>策略</th>
-<th style="text-align: right;">28 只合计终值</th>
-<th style="text-align: right;">相对 A</th>
-<th style="text-align: right;">跑赢 A 的标的数</th>
-<th style="text-align: right;">跨标的 t</th>
+<th align="right">28 只合计终值</th>
+<th align="right">相对 A</th>
+<th align="right">跑赢 A 的标的数</th>
+<th align="right">跨标的 t</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>A 到点即买</td>
-<td style="text-align: right;">110,053.7</td>
-<td style="text-align: right;">1.000</td>
-<td style="text-align: right;">基准</td>
-<td style="text-align: right;">基准</td>
+<td align="right">110,053.7</td>
+<td align="right">1.000</td>
+<td align="right">基准</td>
+<td align="right">基准</td>
 </tr>
 <tr>
 <td>B 红柱持币后补买</td>
-<td style="text-align: right;">110,055.6</td>
-<td style="text-align: right;">1.000</td>
-<td style="text-align: right;">12/28</td>
-<td style="text-align: right;">−1.26</td>
+<td align="right">110,055.6</td>
+<td align="right">1.000</td>
+<td align="right">12/28</td>
+<td align="right">−1.26</td>
 </tr>
 <tr>
 <td>C 仅绿柱买</td>
-<td style="text-align: right;">109,222.2</td>
-<td style="text-align: right;">0.992</td>
-<td style="text-align: right;">11/28</td>
-<td style="text-align: right;">−2.08</td>
+<td align="right">109,222.2</td>
+<td align="right">0.992</td>
+<td align="right">11/28</td>
+<td align="right">−2.08</td>
 </tr>
 </tbody>
 </table></div>
@@ -447,45 +447,45 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th></th>
-<th style="text-align: right;">均值</th>
-<th style="text-align: right;">中位数</th>
-<th style="text-align: right;">第 5 百分位</th>
-<th style="text-align: right;">第 25 百分位</th>
-<th style="text-align: right;">第 75 百分位</th>
-<th style="text-align: right;">第 95 百分位</th>
-<th style="text-align: right;">标准差</th>
+<th align="right">均值</th>
+<th align="right">中位数</th>
+<th align="right">第 5 百分位</th>
+<th align="right">第 25 百分位</th>
+<th align="right">第 75 百分位</th>
+<th align="right">第 95 百分位</th>
+<th align="right">标准差</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>A 立刻买</td>
-<td style="text-align: right;">1.1976</td>
-<td style="text-align: right;">1.1042</td>
-<td style="text-align: right;">0.6476</td>
-<td style="text-align: right;">0.9309</td>
-<td style="text-align: right;">1.2911</td>
-<td style="text-align: right;">1.8494</td>
-<td style="text-align: right;">0.5157</td>
+<td align="right">1.1976</td>
+<td align="right">1.1042</td>
+<td align="right">0.6476</td>
+<td align="right">0.9309</td>
+<td align="right">1.2911</td>
+<td align="right">1.8494</td>
+<td align="right">0.5157</td>
 </tr>
 <tr>
 <td>B 等到非红</td>
-<td style="text-align: right;">1.1847</td>
-<td style="text-align: right;">1.0972</td>
-<td style="text-align: right;">0.6484</td>
-<td style="text-align: right;">0.9323</td>
-<td style="text-align: right;">1.2791</td>
-<td style="text-align: right;">1.8029</td>
-<td style="text-align: right;">0.4891</td>
+<td align="right">1.1847</td>
+<td align="right">1.0972</td>
+<td align="right">0.6484</td>
+<td align="right">0.9323</td>
+<td align="right">1.2791</td>
+<td align="right">1.8029</td>
+<td align="right">0.4891</td>
 </tr>
 <tr>
 <td>C 等到转绿</td>
-<td style="text-align: right;">1.1468</td>
-<td style="text-align: right;">1.0907</td>
-<td style="text-align: right;">0.6454</td>
-<td style="text-align: right;">0.9334</td>
-<td style="text-align: right;">1.2616</td>
-<td style="text-align: right;">1.7357</td>
-<td style="text-align: right;">0.4646</td>
+<td align="right">1.1468</td>
+<td align="right">1.0907</td>
+<td align="right">0.6454</td>
+<td align="right">0.9334</td>
+<td align="right">1.2616</td>
+<td align="right">1.7357</td>
+<td align="right">0.4646</td>
 </tr>
 </tbody>
 </table></div>
@@ -497,59 +497,59 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>策略</th>
-<th style="text-align: right;">52 周终值均值</th>
-<th style="text-align: right;">中位数</th>
-<th style="text-align: right;">最坏 5%</th>
-<th style="text-align: right;">标准差</th>
-<th style="text-align: right;">相对立刻买</th>
-<th style="text-align: right;">t</th>
+<th align="right">52 周终值均值</th>
+<th align="right">中位数</th>
+<th align="right">最坏 5%</th>
+<th align="right">标准差</th>
+<th align="right">相对立刻买</th>
+<th align="right">t</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>立刻买</td>
-<td style="text-align: right;">1.1726</td>
-<td style="text-align: right;">1.1042</td>
-<td style="text-align: right;">0.6444</td>
-<td style="text-align: right;">0.5157</td>
-<td style="text-align: right;">基准</td>
-<td style="text-align: right;">基准</td>
+<td align="right">1.1726</td>
+<td align="right">1.1042</td>
+<td align="right">0.6444</td>
+<td align="right">0.5157</td>
+<td align="right">基准</td>
+<td align="right">基准</td>
 </tr>
 <tr>
 <td>等到转非红（平均 2.6 周）</td>
-<td style="text-align: right;">1.1612</td>
-<td style="text-align: right;">1.0972</td>
-<td style="text-align: right;">0.6447</td>
-<td style="text-align: right;">0.4891</td>
-<td style="text-align: right;">−0.0113</td>
-<td style="text-align: right;">−4.18</td>
+<td align="right">1.1612</td>
+<td align="right">1.0972</td>
+<td align="right">0.6447</td>
+<td align="right">0.4891</td>
+<td align="right">−0.0113</td>
+<td align="right">−4.18</td>
 </tr>
 <tr>
 <td>固定等 2 周</td>
-<td style="text-align: right;">1.1664</td>
-<td style="text-align: right;">1.0988</td>
-<td style="text-align: right;">0.6469</td>
-<td style="text-align: right;">0.4980</td>
-<td style="text-align: right;">−0.0062</td>
-<td style="text-align: right;">−3.51</td>
+<td align="right">1.1664</td>
+<td align="right">1.0988</td>
+<td align="right">0.6469</td>
+<td align="right">0.4980</td>
+<td align="right">−0.0062</td>
+<td align="right">−3.51</td>
 </tr>
 <tr>
 <td>固定等 3 周</td>
-<td style="text-align: right;">1.1621</td>
-<td style="text-align: right;">1.0979</td>
-<td style="text-align: right;">0.6512</td>
-<td style="text-align: right;">0.4819</td>
-<td style="text-align: right;">−0.0104</td>
-<td style="text-align: right;">−3.59</td>
+<td align="right">1.1621</td>
+<td align="right">1.0979</td>
+<td align="right">0.6512</td>
+<td align="right">0.4819</td>
+<td align="right">−0.0104</td>
+<td align="right">−3.59</td>
 </tr>
 <tr>
 <td>固定等 4 周</td>
-<td style="text-align: right;">1.1600</td>
-<td style="text-align: right;">1.0972</td>
-<td style="text-align: right;">0.6534</td>
-<td style="text-align: right;">0.4736</td>
-<td style="text-align: right;">−0.0125</td>
-<td style="text-align: right;">−3.30</td>
+<td align="right">1.1600</td>
+<td align="right">1.0972</td>
+<td align="right">0.6534</td>
+<td align="right">0.4736</td>
+<td align="right">−0.0125</td>
+<td align="right">−3.30</td>
 </tr>
 </tbody>
 </table></div>
@@ -563,93 +563,93 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>标的</th>
-<th style="text-align: right;">周 K 数</th>
-<th style="text-align: right;">绿柱</th>
-<th style="text-align: right;">蓝柱</th>
-<th style="text-align: right;">红柱</th>
-<th style="text-align: right;">绿→13周</th>
-<th style="text-align: right;">蓝→13周</th>
-<th style="text-align: right;">红→13周</th>
-<th style="text-align: right;">无条件</th>
+<th align="right">周 K 数</th>
+<th align="right">绿柱</th>
+<th align="right">蓝柱</th>
+<th align="right">红柱</th>
+<th align="right">绿→13周</th>
+<th align="right">蓝→13周</th>
+<th align="right">红→13周</th>
+<th align="right">无条件</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>腾讯控股</td>
-<td style="text-align: right;">1,160</td>
-<td style="text-align: right;">449</td>
-<td style="text-align: right;">408</td>
-<td style="text-align: right;">260</td>
-<td style="text-align: right;">10.04%</td>
-<td style="text-align: right;">9.80%</td>
-<td style="text-align: right;">7.40%</td>
-<td style="text-align: right;">9.34%</td>
+<td align="right">1,160</td>
+<td align="right">449</td>
+<td align="right">408</td>
+<td align="right">260</td>
+<td align="right">10.04%</td>
+<td align="right">9.80%</td>
+<td align="right">7.40%</td>
+<td align="right">9.34%</td>
 </tr>
 <tr>
 <td>贵州茅台</td>
-<td style="text-align: right;">1,280</td>
-<td style="text-align: right;">450</td>
-<td style="text-align: right;">467</td>
-<td style="text-align: right;">320</td>
-<td style="text-align: right;">8.96%</td>
-<td style="text-align: right;">9.15%</td>
-<td style="text-align: right;">3.54%</td>
-<td style="text-align: right;">7.63%</td>
+<td align="right">1,280</td>
+<td align="right">450</td>
+<td align="right">467</td>
+<td align="right">320</td>
+<td align="right">8.96%</td>
+<td align="right">9.15%</td>
+<td align="right">3.54%</td>
+<td align="right">7.63%</td>
 </tr>
 <tr>
 <td>五粮液</td>
-<td style="text-align: right;">1,280</td>
-<td style="text-align: right;">416</td>
-<td style="text-align: right;">449</td>
-<td style="text-align: right;">372</td>
-<td style="text-align: right;">7.01%</td>
-<td style="text-align: right;">7.05%</td>
-<td style="text-align: right;">2.46%</td>
-<td style="text-align: right;">5.66%</td>
+<td align="right">1,280</td>
+<td align="right">416</td>
+<td align="right">449</td>
+<td align="right">372</td>
+<td align="right">7.01%</td>
+<td align="right">7.05%</td>
+<td align="right">2.46%</td>
+<td align="right">5.66%</td>
 </tr>
 <tr>
 <td>美团-W</td>
-<td style="text-align: right;">416</td>
-<td style="text-align: right;">104</td>
-<td style="text-align: right;">153</td>
-<td style="text-align: right;">116</td>
-<td style="text-align: right;">9.54%</td>
-<td style="text-align: right;">3.36%</td>
-<td style="text-align: right;">2.24%</td>
-<td style="text-align: right;">4.74%</td>
+<td align="right">416</td>
+<td align="right">104</td>
+<td align="right">153</td>
+<td align="right">116</td>
+<td align="right">9.54%</td>
+<td align="right">3.36%</td>
+<td align="right">2.24%</td>
+<td align="right">4.74%</td>
 </tr>
 <tr>
 <td>拼多多</td>
-<td style="text-align: right;">424</td>
-<td style="text-align: right;">114</td>
-<td style="text-align: right;">160</td>
-<td style="text-align: right;">107</td>
-<td style="text-align: right;">14.21%</td>
-<td style="text-align: right;">4.60%</td>
-<td style="text-align: right;">12.44%</td>
-<td style="text-align: right;">9.68%</td>
+<td align="right">424</td>
+<td align="right">114</td>
+<td align="right">160</td>
+<td align="right">107</td>
+<td align="right">14.21%</td>
+<td align="right">4.60%</td>
+<td align="right">12.44%</td>
+<td align="right">9.68%</td>
 </tr>
 <tr>
 <td>快手-W</td>
-<td style="text-align: right;">292</td>
-<td style="text-align: right;">64</td>
-<td style="text-align: right;">86</td>
-<td style="text-align: right;">99</td>
-<td style="text-align: right;">−10.58%</td>
-<td style="text-align: right;">−2.43%</td>
-<td style="text-align: right;">6.30%</td>
-<td style="text-align: right;">−1.06%</td>
+<td align="right">292</td>
+<td align="right">64</td>
+<td align="right">86</td>
+<td align="right">99</td>
+<td align="right">−10.58%</td>
+<td align="right">−2.43%</td>
+<td align="right">6.30%</td>
+<td align="right">−1.06%</td>
 </tr>
 <tr>
 <td>合并</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">1,597</td>
-<td style="text-align: right;">1,723</td>
-<td style="text-align: right;">1,274</td>
-<td style="text-align: right;">8.38%</td>
-<td style="text-align: right;">7.24%</td>
-<td style="text-align: right;">4.86%</td>
-<td style="text-align: right;">6.98%</td>
+<td align="right"></td>
+<td align="right">1,597</td>
+<td align="right">1,723</td>
+<td align="right">1,274</td>
+<td align="right">8.38%</td>
+<td align="right">7.24%</td>
+<td align="right">4.86%</td>
+<td align="right">6.98%</td>
 </tr>
 </tbody>
 </table></div>
@@ -660,69 +660,69 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>标的</th>
-<th style="text-align: right;">年数</th>
-<th style="text-align: right;">买入持有</th>
-<th style="text-align: right;">非红才持</th>
-<th style="text-align: right;">仅绿才持</th>
-<th style="text-align: right;">红柱占比</th>
+<th align="right">年数</th>
+<th align="right">买入持有</th>
+<th align="right">非红才持</th>
+<th align="right">仅绿才持</th>
+<th align="right">红柱占比</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>腾讯控股</td>
-<td style="text-align: right;">21.6</td>
-<td style="text-align: right;">33.8%</td>
-<td style="text-align: right;">21.2%</td>
-<td style="text-align: right;">13.7%</td>
-<td style="text-align: right;">23.5%</td>
+<td align="right">21.6</td>
+<td align="right">33.8%</td>
+<td align="right">21.2%</td>
+<td align="right">13.7%</td>
+<td align="right">23.5%</td>
 </tr>
 <tr>
 <td>贵州茅台</td>
-<td style="text-align: right;">24.4</td>
-<td style="text-align: right;">25.7%</td>
-<td style="text-align: right;">25.5%</td>
-<td style="text-align: right;">11.3%</td>
-<td style="text-align: right;">25.8%</td>
+<td align="right">24.4</td>
+<td align="right">25.7%</td>
+<td align="right">25.5%</td>
+<td align="right">11.3%</td>
+<td align="right">25.8%</td>
 </tr>
 <tr>
 <td>五粮液</td>
-<td style="text-align: right;">24.4</td>
-<td style="text-align: right;">13.8%</td>
-<td style="text-align: right;">16.4%</td>
-<td style="text-align: right;">10.5%</td>
-<td style="text-align: right;">30.1%</td>
+<td align="right">24.4</td>
+<td align="right">13.8%</td>
+<td align="right">16.4%</td>
+<td align="right">10.5%</td>
+<td align="right">30.1%</td>
 </tr>
 <tr>
 <td>美团-W</td>
-<td style="text-align: right;">7.4</td>
-<td style="text-align: right;">4.9%</td>
-<td style="text-align: right;">5.8%</td>
-<td style="text-align: right;">14.1%</td>
-<td style="text-align: right;">31.3%</td>
+<td align="right">7.4</td>
+<td align="right">4.9%</td>
+<td align="right">5.8%</td>
+<td align="right">14.1%</td>
+<td align="right">31.3%</td>
 </tr>
 <tr>
 <td>拼多多</td>
-<td style="text-align: right;">7.5</td>
-<td style="text-align: right;">14.7%</td>
-<td style="text-align: right;">6.4%</td>
-<td style="text-align: right;">14.6%</td>
-<td style="text-align: right;">28.7%</td>
+<td align="right">7.5</td>
+<td align="right">14.7%</td>
+<td align="right">6.4%</td>
+<td align="right">14.6%</td>
+<td align="right">28.7%</td>
 </tr>
 <tr>
 <td>快手-W</td>
-<td style="text-align: right;">5.0</td>
-<td style="text-align: right;">−17.5%</td>
-<td style="text-align: right;">−5.4%</td>
-<td style="text-align: right;">−5.4%</td>
-<td style="text-align: right;">39.7%</td>
+<td align="right">5.0</td>
+<td align="right">−17.5%</td>
+<td align="right">−5.4%</td>
+<td align="right">−5.4%</td>
+<td align="right">39.7%</td>
 </tr>
 <tr>
 <td>平均</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">12.6%</td>
-<td style="text-align: right;">11.7%</td>
-<td style="text-align: right;">9.8%</td>
-<td style="text-align: right;"></td>
+<td align="right"></td>
+<td align="right">12.6%</td>
+<td align="right">11.7%</td>
+<td align="right">9.8%</td>
+<td align="right"></td>
 </tr>
 </tbody>
 </table></div>
@@ -733,77 +733,77 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>标的</th>
-<th style="text-align: right;">红柱事件</th>
-<th style="text-align: right;">平均等待</th>
-<th style="text-align: right;">A 立刻买</th>
-<th style="text-align: right;">B 等待</th>
-<th style="text-align: right;">B−A</th>
-<th style="text-align: right;">B 胜率</th>
+<th align="right">红柱事件</th>
+<th align="right">平均等待</th>
+<th align="right">A 立刻买</th>
+<th align="right">B 等待</th>
+<th align="right">B−A</th>
+<th align="right">B 胜率</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>腾讯控股</td>
-<td style="text-align: right;">244</td>
-<td style="text-align: right;">2.69 周</td>
-<td style="text-align: right;">1.4418</td>
-<td style="text-align: right;">1.4146</td>
-<td style="text-align: right;">−0.0272</td>
-<td style="text-align: right;">29.9%</td>
+<td align="right">244</td>
+<td align="right">2.69 周</td>
+<td align="right">1.4418</td>
+<td align="right">1.4146</td>
+<td align="right">−0.0272</td>
+<td align="right">29.9%</td>
 </tr>
 <tr>
 <td>拼多多</td>
-<td style="text-align: right;">92</td>
-<td style="text-align: right;">2.51 周</td>
-<td style="text-align: right;">1.5425</td>
-<td style="text-align: right;">1.4959</td>
-<td style="text-align: right;">−0.0466</td>
-<td style="text-align: right;">31.5%</td>
+<td align="right">92</td>
+<td align="right">2.51 周</td>
+<td align="right">1.5425</td>
+<td align="right">1.4959</td>
+<td align="right">−0.0466</td>
+<td align="right">31.5%</td>
 </tr>
 <tr>
 <td>美团-W</td>
-<td style="text-align: right;">100</td>
-<td style="text-align: right;">2.87 周</td>
-<td style="text-align: right;">1.0114</td>
-<td style="text-align: right;">1.0017</td>
-<td style="text-align: right;">−0.0096</td>
-<td style="text-align: right;">43.0%</td>
+<td align="right">100</td>
+<td align="right">2.87 周</td>
+<td align="right">1.0114</td>
+<td align="right">1.0017</td>
+<td align="right">−0.0096</td>
+<td align="right">43.0%</td>
 </tr>
 <tr>
 <td>五粮液</td>
-<td style="text-align: right;">349</td>
-<td style="text-align: right;">2.87 周</td>
-<td style="text-align: right;">1.2464</td>
-<td style="text-align: right;">1.2455</td>
-<td style="text-align: right;">−0.0009</td>
-<td style="text-align: right;">44.1%</td>
+<td align="right">349</td>
+<td align="right">2.87 周</td>
+<td align="right">1.2464</td>
+<td align="right">1.2455</td>
+<td align="right">−0.0009</td>
+<td align="right">44.1%</td>
 </tr>
 <tr>
 <td>快手-W</td>
-<td style="text-align: right;">82</td>
-<td style="text-align: right;">3.15 周</td>
-<td style="text-align: right;">1.0691</td>
-<td style="text-align: right;">1.0706</td>
-<td style="text-align: right;">+0.0015</td>
-<td style="text-align: right;">43.9%</td>
+<td align="right">82</td>
+<td align="right">3.15 周</td>
+<td align="right">1.0691</td>
+<td align="right">1.0706</td>
+<td align="right">+0.0015</td>
+<td align="right">43.9%</td>
 </tr>
 <tr>
 <td>贵州茅台</td>
-<td style="text-align: right;">299</td>
-<td style="text-align: right;">3.05 周</td>
-<td style="text-align: right;">1.2854</td>
-<td style="text-align: right;">1.2921</td>
-<td style="text-align: right;">+0.0067</td>
-<td style="text-align: right;">39.5%</td>
+<td align="right">299</td>
+<td align="right">3.05 周</td>
+<td align="right">1.2854</td>
+<td align="right">1.2921</td>
+<td align="right">+0.0067</td>
+<td align="right">39.5%</td>
 </tr>
 <tr>
 <td>合并</td>
-<td style="text-align: right;">1,166</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">1.2880</td>
-<td style="text-align: right;">1.2794</td>
-<td style="text-align: right;">−0.0086</td>
-<td style="text-align: right;">38.9%</td>
+<td align="right">1,166</td>
+<td align="right"></td>
+<td align="right">1.2880</td>
+<td align="right">1.2794</td>
+<td align="right">−0.0086</td>
+<td align="right">38.9%</td>
 </tr>
 </tbody>
 </table></div>
@@ -818,29 +818,29 @@ var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).ma
 <thead>
 <tr>
 <th>样本</th>
-<th style="text-align: right;">实测绿红差</th>
-<th style="text-align: right;">零分布均值</th>
-<th style="text-align: right;">零分布 5% 分位</th>
-<th style="text-align: right;">零分布 95% 分位</th>
-<th style="text-align: right;">单侧 p</th>
+<th align="right">实测绿红差</th>
+<th align="right">零分布均值</th>
+<th align="right">零分布 5% 分位</th>
+<th align="right">零分布 95% 分位</th>
+<th align="right">单侧 p</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>中国资产（6 只）</td>
-<td style="text-align: right;">+3.53 pp</td>
-<td style="text-align: right;">+0.83 pp</td>
-<td style="text-align: right;">−2.21 pp</td>
-<td style="text-align: right;">+5.75 pp</td>
-<td style="text-align: right;">0.110</td>
+<td align="right">+3.53 pp</td>
+<td align="right">+0.83 pp</td>
+<td align="right">−2.21 pp</td>
+<td align="right">+5.75 pp</td>
+<td align="right">0.110</td>
 </tr>
 <tr>
 <td>宽样本（28 只）</td>
-<td style="text-align: right;">−0.34 pp</td>
-<td style="text-align: right;">+0.13 pp</td>
-<td style="text-align: right;">−1.19 pp</td>
-<td style="text-align: right;">+1.32 pp</td>
-<td style="text-align: right;">0.711</td>
+<td align="right">−0.34 pp</td>
+<td align="right">+0.13 pp</td>
+<td align="right">−1.19 pp</td>
+<td align="right">+1.32 pp</td>
+<td align="right">0.711</td>
 </tr>
 </tbody>
 </table></div>
@@ -942,4 +942,4 @@ def impulse(closes):
 <li><a href="#_9">参考文献</a></li>
 </ul>
 </div>
-</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-22 17:59 UTC</footer></body></html>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-10-27 18:15 UTC</footer></body></html>

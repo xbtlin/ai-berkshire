@@ -1,0 +1,64 @@
+{
+  "title": "腾讯与快手估值比较证据入口",
+  "retrieved_at": "2026-10-25T01:57:21.192650+08:00",
+  "valuation_date": "2026-10-23",
+  "research_date": "2026-10-25",
+  "financial_cutoff": "2026-06-30",
+  "detail_packages": {
+    "Tencent": "tencent_evidence.json",
+    "Kuaishou": "kuaishou_evidence.json"
+  },
+  "facts": [
+    {
+      "id": "cny_per_hkd",
+      "value": "0.85696",
+      "currency": "CNY",
+      "unit": "CNY per HKD",
+      "period": "2026-10-23 central parity",
+      "published_at": "2026-10-23",
+      "retrieved_at": "2026-10-25T01:57:21.192650+08:00",
+      "source_url": "https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760",
+      "locator": "HKD85.696CNY per100HKD",
+      "classification": "fact",
+      "secondary_source": "https://news.smm.cn/news/104174190",
+      "note": "Secondary is republishing official fixing, not independent rate measurement."
+    },
+    {
+      "id": "cny_rf_10y",
+      "value": "0.0164",
+      "currency": "CNY",
+      "unit": "annual nominal rate",
+      "period": "2026-10-23",
+      "published_at": "2026-10-23",
+      "retrieved_at": "2026-10-25T01:57:21.192650+08:00",
+      "source_url": "https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/more",
+      "locator": "CGB curve10Y1.6400%;30Y2.0675%",
+      "classification": "fact",
+      "note": "Independent reviewer verified curve; parent page extraction was sparse. Market yield references around1.6–1.7% differ by curve/instrument."
+    }
+  ],
+  "historical_background": {
+    "classification": "fact_single_source",
+    "sources": [
+      "https://stockanalysis.com/quote/hkg/0700/financials/",
+      "https://stockanalysis.com/quote/hkg/1024/financials/"
+    ],
+    "retrieved_at": "2026-10-25T01:57:21.192650+08:00",
+    "locator": "Revenue/Net Income/CFO FY2023–2025 rows",
+    "note": "2023/2024 rows were re-read live, not fully cross-audited from filings;2025 and current TTM have issuer/independent reconciliation."
+  },
+  "forecast_inputs": {
+    "path": "model_inputs.json",
+    "classification": "assumption",
+    "notes": [
+      "Forecast drivers, scenario probabilities, reserve cash, realization values, risk premiums and allocation policy are assumptions.",
+      "Tencent97% operating attribution is an estimate, not a full subsidiary rights ledger.",
+      "Kling positive distributions68.33%; negative capital calls80.3882%, external participation conditional; no unverified financing proceeds.",
+      "Current economic dilution denominators9.21bn/4.50bn are assumptions bounded by disclosed shares and awards."
+    ]
+  },
+  "source_gaps": [
+    "See detailed company files and audit/status.json. No all-facts two-source certification.",
+    "Latest reported share counts are dated10/15 Tencent and9/30 Kuaishou; subsequent awards included as conditional dilution."
+  ]
+}
