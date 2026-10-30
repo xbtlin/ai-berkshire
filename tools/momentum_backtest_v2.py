@@ -14,6 +14,16 @@ import os
 from datetime import datetime
 from collections import OrderedDict
 
+
+def _force_utf8_stdio():
+    """Windows 控制台默认 GBK，❌/✅ 等字符会让 print() 抛 UnicodeEncodeError。"""
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
+
 # ============================================================
 # 基本面数据（手工录入，比API更准确）
 # ============================================================
@@ -339,6 +349,7 @@ def nvda_manual_analysis():
 # ============================================================
 
 if __name__ == "__main__":
+    _force_utf8_stdio()
     print("=" * 70)
     print("  动量发现 + 价值验证 回测系统 v2")
     print("  标的：NVDA / AMD / MU | 框架验证")
