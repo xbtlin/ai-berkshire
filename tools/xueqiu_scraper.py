@@ -23,9 +23,10 @@
       --output ../reports/拼多多/段永平雪球发言-PDD相关.md
 
   # 其他用户 + 其他关键词
-  python3 xueqiu_scraper.py --user-id 6784593966 --keywords 茅台 --output /tmp/out.md
+  python3 xueqiu_scraper.py --user-id 6784593966 --keywords 茅台 --output "{临时文件完整路径}"
 
-登录态缓存默认 /tmp/xueqiu_state.json，可用 --state-path 覆盖。
+登录态缓存和默认原始 JSON 使用系统临时目录（tempfile.gettempdir()）。
+可用 --state-path 和 --raw-json 覆盖；--output 示例需替换为实际完整路径。
 """
 
 import argparse
@@ -34,6 +35,7 @@ import json
 import os
 import random
 import re
+import tempfile
 from datetime import datetime
 from pathlib import Path
 from playwright.async_api import async_playwright
@@ -356,8 +358,9 @@ def parse_args():
                     help='关键词列表，逗号分隔。例：拼多多,PDD,黄峥,Temu')
     ap.add_argument('--output', type=str, default='', help='markdown 输出路径')
     ap.add_argument('--raw-json', type=str, default='', help='（可选）命中条目原始 JSON 输出路径')
-    ap.add_argument('--state-path', type=str, default='/tmp/xueqiu_state.json',
-                    help='登录态缓存文件（默认 /tmp/xueqiu_state.json）')
+    ap.add_argument('--state-path', type=str,
+                    default=str(Path(tempfile.gettempdir()) / 'xueqiu_state.json'),
+                    help='登录态缓存文件（默认位于系统临时目录）')
     ap.add_argument('--dump-all', type=str, default='',
                     help='全量缓存路径：爬取时同时把该用户所有原发言写到这里，用于后续离线多主题分析')
     ap.add_argument('--from-cache', type=str, default='',
@@ -399,7 +402,13 @@ async def main():
         return
 
     progress_path = args.state_path + f'.progress.{args.user_id}'
-    raw_json = args.raw_json or f'/tmp/xueqiu_{args.user_id}_raw.json'
+    raw_json = args.raw_json or str(
+        Path(tempfile.gettempdir()) / f'xueqiu_{args.user_id}_raw.json'
+    )
+    # 登录态、进度和 JSON 输出可能使用自定义的多级目录。
+    for output_path in (args.state_path, progress_path, raw_json, args.dump_all):
+        if output_path:
+            Path(output_path).parent.mkdir(parents=True, exist_ok=True)
 
     print("=" * 60)
     print(f"雪球爬虫 | user_id={args.user_id} | keywords={keywords} | dump_all={args.dump_all}")

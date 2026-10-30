@@ -78,9 +78,9 @@
 **数据验证**：使用 `tools/financial_rigor.py` 对关键数据进行校验：
 
 ```bash
-# 收入和净利润交叉验证（至少2个来源）
+# 收入和净利润交叉验证（至少2个来源；以下示例单位为元，实际取数须统一币种和单位）
 python3 tools/financial_rigor.py cross-validate \
-  --metric "revenue" --values 108.3e9 107.9e9 --sources "公司财报" "Yahoo Finance"
+  --field "revenue" --values '{"公司财报": 108.3e9, "Yahoo Finance": 107.9e9}' --unit "元"
 
 # 市值校验
 python3 tools/financial_rigor.py verify-market-cap \
