@@ -1,10 +1,17 @@
 {
-  "date": "2026-11-01",
-  "extracted_count": 26,
-  "checked_transcriptions": 23,
-  "excluded_false_positives": 3,
-  "manually_reviewed_additional_phrases": 14,
-  "report_sha256": "5fc3abe9dc05cf85534a0f5acadc5286abccdd053396f9fea680efebe291cd39",
-  "evidence_sha256": "b855b29162f5ddc3256495046ca0d1065c5f4bccef883c55e5fbbd5fe021efc5",
-  "decision": "可以作为明确保留证据缺口的公开资料调研发布；非技术栈或财务认证"
+  "date": "2026-11-02",
+  "extracted_count": 60,
+  "classified_checked": 55,
+  "excluded_non_business_numbers": 5,
+  "catalog_rows": 43,
+  "episode_rows": 100,
+  "numeric_scope": "本地转录与算术一致性",
+  "status": "LOCAL_CONSISTENCY_PASS",
+  "sha256": {
+    "持械入宋研究报告-20261101.md": "393bf62a55a3cca2181b3f8cfda8599dbfdd38c9e860a07a22b7658ad73f772a",
+    "evidence.json": "3a2953c48d92ad385cef79ad1d47b367969a95a92bb53ee824fdc275e657e2f3",
+    "data/creator-catalog.csv": "7d6212b68e0056c3d9043e3f8405b0e0d682afbcc458fa883b4bfa2b9e6c9842",
+    "data/season10-episodes.csv": "a858b5d6eef1dd476c083964cdb91941f7c7d80f31df00d436902690b9479b4b"
+  },
+  "publication_condition": "正文保留相关工作室与本剧边界、财务自述及原始页面统计局限"
 }

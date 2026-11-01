@@ -1,22 +1,18 @@
 {
-  "scenarios": [
-    {
-      "scenario": "A",
-      "mean_attempts": "3",
-      "cost_yuan_per_minute": "72"
-    },
-    {
-      "scenario": "B",
-      "mean_attempts": "4.4",
-      "cost_yuan_per_minute": "105.6"
-    },
-    {
-      "scenario": "C",
-      "mean_attempts": "9.8",
-      "cost_yuan_per_minute": "235.2"
-    }
-  ],
-  "heat_change_percent": "-29.17560914026006817321045322560282792577",
-  "rounded_percent": "-29.18",
-  "status": "PASS"
+  "display_plays_sum_arithmetic_only": "695525000.0",
+  "rounded_100m_plays": "6.96",
+  "season1_share_percent": "33.1",
+  "episode_count": 100,
+  "total_seconds": 9830,
+  "mean_seconds": "98.3",
+  "median_seconds": "97.0",
+  "paid_badge_seconds": 8563,
+  "unmarked_seconds": 1267,
+  "paid_runtime_percent": "87.1",
+  "minimum_episode": 80,
+  "minimum_seconds": 57,
+  "maximum_episode": 98,
+  "maximum_seconds": 160,
+  "status": "LOCAL_CONSISTENCY_PASS",
+  "scope": "本地公开页面转录与算术；不认证平台真实流量或财务"
 }
