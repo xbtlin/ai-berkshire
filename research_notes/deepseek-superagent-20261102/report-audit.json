@@ -1,0 +1,212 @@
+{
+  "tool": "tools/report_audit.py",
+  "extraction_command": "python3 tools/report_audit.py extract --report reports/DeepSeek/DeepSeek-Super-agent-深度技术研究-20261102.md --ratio 1 --seed 42",
+  "extracted_count": 16,
+  "table_points_checked": [
+    {
+      "id": 1,
+      "label": "Super-agent · 完成时间 p50，分钟",
+      "reported_value": 12.4,
+      "unit": "",
+      "raw_text": "| Super-agent | 12.4 | 15.7 | 2323 |",
+      "line_number": 319,
+      "fetched_value": 12.4,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    },
+    {
+      "id": 2,
+      "label": "Super-agent · 完成时间 p95，分钟",
+      "reported_value": 15.7,
+      "unit": "",
+      "raw_text": "| Super-agent | 12.4 | 15.7 | 2323 |",
+      "line_number": 319,
+      "fetched_value": 15.7,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    },
+    {
+      "id": 3,
+      "label": "Super-agent · 全部 Session 读缓存 token，万",
+      "reported_value": 2323.0,
+      "unit": "",
+      "raw_text": "| Super-agent | 12.4 | 15.7 | 2323 |",
+      "line_number": 319,
+      "fetched_value": 2323.0,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    },
+    {
+      "id": 4,
+      "label": "Super-agent 去掉直通 · 完成时间 p50，分钟",
+      "reported_value": 12.6,
+      "unit": "",
+      "raw_text": "| Super-agent 去掉直通 | 12.6 | 15.5 | 3177 |",
+      "line_number": 320,
+      "fetched_value": 12.6,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    },
+    {
+      "id": 5,
+      "label": "Super-agent 去掉直通 · 完成时间 p95，分钟",
+      "reported_value": 15.5,
+      "unit": "",
+      "raw_text": "| Super-agent 去掉直通 | 12.6 | 15.5 | 3177 |",
+      "line_number": 320,
+      "fetched_value": 15.5,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    },
+    {
+      "id": 6,
+      "label": "Super-agent 去掉直通 · 全部 Session 读缓存 token，万",
+      "reported_value": 3177.0,
+      "unit": "",
+      "raw_text": "| Super-agent 去掉直通 | 12.6 | 15.5 | 3177 |",
+      "line_number": 320,
+      "fetched_value": 3177.0,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    },
+    {
+      "id": 7,
+      "label": "单 Session 加 Subagent，中性提示 · 完成时间 p50，分钟",
+      "reported_value": 20.4,
+      "unit": "",
+      "raw_text": "| 单 Session 加 Subagent，中性提示 | 20.4 | 29.5 | 605 |",
+      "line_number": 321,
+      "fetched_value": 20.4,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    },
+    {
+      "id": 8,
+      "label": "单 Session 加 Subagent，中性提示 · 完成时间 p95，分钟",
+      "reported_value": 29.5,
+      "unit": "",
+      "raw_text": "| 单 Session 加 Subagent，中性提示 | 20.4 | 29.5 | 605 |",
+      "line_number": 321,
+      "fetched_value": 29.5,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    },
+    {
+      "id": 9,
+      "label": "单 Session 加 Subagent，中性提示 · 全部 Session 读缓存 token，万",
+      "reported_value": 605.0,
+      "unit": "",
+      "raw_text": "| 单 Session 加 Subagent，中性提示 | 20.4 | 29.5 | 605 |",
+      "line_number": 321,
+      "fetched_value": 605.0,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    },
+    {
+      "id": 10,
+      "label": "单 Session 加 Subagent，优先委派提示 · 完成时间 p50，分钟",
+      "reported_value": 13.8,
+      "unit": "",
+      "raw_text": "| 单 Session 加 Subagent，优先委派提示 | 13.8 | 29.0 | 1082 |",
+      "line_number": 322,
+      "fetched_value": 13.8,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    },
+    {
+      "id": 11,
+      "label": "单 Session 加 Subagent，优先委派提示 · 完成时间 p95，分钟",
+      "reported_value": 29.0,
+      "unit": "",
+      "raw_text": "| 单 Session 加 Subagent，优先委派提示 | 13.8 | 29.0 | 1082 |",
+      "line_number": 322,
+      "fetched_value": 29.0,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    },
+    {
+      "id": 12,
+      "label": "单 Session 加 Subagent，优先委派提示 · 全部 Session 读缓存 token，万",
+      "reported_value": 1082.0,
+      "unit": "",
+      "raw_text": "| 单 Session 加 Subagent，优先委派提示 | 13.8 | 29.0 | 1082 |",
+      "line_number": 322,
+      "fetched_value": 1082.0,
+      "fetched_source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+      "fetched_value2": null,
+      "fetched_source2": null,
+      "evidence_status": "matched_author_reported_table_not_independently_replicated"
+    }
+  ],
+  "excluded_points": [
+    {
+      "id": 13,
+      "label": "资料截止",
+      "reported_value": 2026.0,
+      "unit": "",
+      "raw_text": "**资料截止：2026 年 11 月 2 日，北京时间。** 研究对象为 DeepSeek 10 月 31 日公开的 Super-agent 设计及 `dsh-superagent-prototype`。源码固定在首发提交 `6337fc8",
+      "line_number": 5,
+      "reason": "Datetime fragment, not a benchmark value; exact datetime checked against GitHub metadata separately."
+    },
+    {
+      "id": 14,
+      "label": "tHub 元数据显示，仓库创建于 2026-10-31T09",
+      "reported_value": 32.0,
+      "unit": "",
+      "raw_text": "GitHub 元数据显示，仓库创建于 `2026-10-31T09:32:46Z`；所核对提交的时间为 `2026-10-31T12:05:39Z`，对应北京时间 10 月 31 日 20:05:39。仓库采用 MIT 许可证。`packa",
+      "line_number": 31,
+      "reason": "Datetime fragment, not a benchmark value; exact datetime checked against GitHub metadata separately."
+    },
+    {
+      "id": 15,
+      "label": "Z；所核对提交的时间为 2026-10-31T12",
+      "reported_value": 5.0,
+      "unit": "",
+      "raw_text": "GitHub 元数据显示，仓库创建于 `2026-10-31T09:32:46Z`；所核对提交的时间为 `2026-10-31T12:05:39Z`，对应北京时间 10 月 31 日 20:05:39。仓库采用 MIT 许可证。`packa",
+      "line_number": 31,
+      "reason": "Datetime fragment, not a benchmark value; exact datetime checked against GitHub metadata separately."
+    },
+    {
+      "id": 16,
+      "label": "Z，对应北京时间 10 月 31 日 20",
+      "reported_value": 5.0,
+      "unit": "",
+      "raw_text": "GitHub 元数据显示，仓库创建于 `2026-10-31T09:32:46Z`；所核对提交的时间为 `2026-10-31T12:05:39Z`，对应北京时间 10 月 31 日 20:05:39。仓库采用 MIT 许可证。`packa",
+      "line_number": 31,
+      "reason": "Datetime fragment, not a benchmark value; exact datetime checked against GitHub metadata separately."
+    }
+  ],
+  "numeric_table_verdict": {
+    "verdict": "PASS",
+    "pass_count": 12,
+    "warn_count": 0,
+    "fail_count": 0,
+    "total": 12,
+    "fail_items": [],
+    "warn_items": []
+  },
+  "scope_warning": "PASS means 12 table cells match the visually inspected author-reported source. It is not a whole-report factual certification, independent benchmark replication, or confirmation by two independent experiments. Derived percentages and ratios checked separately in calculations.json.",
+  "report_sha256": "d32a6bb3308f7816a470884ef78e89473e15ec2f0fe712284068fa4ee631ed55"
+}

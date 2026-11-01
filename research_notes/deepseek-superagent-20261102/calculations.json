@@ -1,0 +1,97 @@
+{
+  "provenance": "Author-reported synthetic experiment; manually transcribed from visually inspected original table in attributed reprint. Recalculation is not independent experiment verification.",
+  "source": "https://public.chaincatcher.com/upload/image/20261031/1793458602197-239036.webp",
+  "image_sha256": "037b8ffb330c9fccff7f821a094734f3a1c85c9b9de05cb2c9921bb3ca89f8c4",
+  "rows": [
+    {
+      "scheme": "Super-agent",
+      "p50_minutes": "12.4",
+      "p95_minutes": "15.7",
+      "cache_read_tokens_10000": "2323"
+    },
+    {
+      "scheme": "Super-agent without passthrough",
+      "p50_minutes": "12.6",
+      "p95_minutes": "15.5",
+      "cache_read_tokens_10000": "3177"
+    },
+    {
+      "scheme": "Single session neutral",
+      "p50_minutes": "20.4",
+      "p95_minutes": "29.5",
+      "cache_read_tokens_10000": "605"
+    },
+    {
+      "scheme": "Single session delegation preferred",
+      "p50_minutes": "13.8",
+      "p95_minutes": "29.0",
+      "cache_read_tokens_10000": "1082"
+    }
+  ],
+  "calculations": [
+    {
+      "metric": "p95_reduction_vs_neutral_pct",
+      "expression": "(29.5 - 15.7) / 29.5 * 100",
+      "decimal_40_digit_result": "46.77966101694915254237288135593220338983",
+      "rounded_2dp": "46.78",
+      "financial_rigor_cli_exit_code": 0,
+      "financial_rigor_display_matches": true
+    },
+    {
+      "metric": "p95_reduction_vs_delegation_pct",
+      "expression": "(29.0 - 15.7) / 29.0 * 100",
+      "decimal_40_digit_result": "45.86206896551724137931034482758620689655",
+      "rounded_2dp": "45.86",
+      "financial_rigor_cli_exit_code": 0,
+      "financial_rigor_display_matches": true
+    },
+    {
+      "metric": "cache_saving_passthrough_pct",
+      "expression": "(3177 - 2323) / 3177 * 100",
+      "decimal_40_digit_result": "26.88070506767390620081838212149826880705",
+      "rounded_2dp": "26.88",
+      "financial_rigor_cli_exit_code": 0,
+      "financial_rigor_display_matches": true
+    },
+    {
+      "metric": "cache_multiple_vs_neutral",
+      "expression": "2323 / 605",
+      "decimal_40_digit_result": "3.839669421487603305785123966942148760331",
+      "rounded_2dp": "3.84",
+      "financial_rigor_cli_exit_code": 0,
+      "financial_rigor_display_matches": true
+    },
+    {
+      "metric": "cache_multiple_vs_delegation",
+      "expression": "2323 / 1082",
+      "decimal_40_digit_result": "2.146950092421441774491682070240295748614",
+      "rounded_2dp": "2.15",
+      "financial_rigor_cli_exit_code": 0,
+      "financial_rigor_display_matches": true
+    },
+    {
+      "metric": "cache_increase_without_passthrough_pct",
+      "expression": "(3177 - 2323) / 2323 * 100",
+      "decimal_40_digit_result": "36.76280671545415411106328024106758501937",
+      "rounded_2dp": "36.76",
+      "financial_rigor_cli_exit_code": 0,
+      "financial_rigor_display_matches": true
+    },
+    {
+      "metric": "p50_reduction_vs_neutral_pct",
+      "expression": "(20.4 - 12.4) / 20.4 * 100",
+      "decimal_40_digit_result": "39.21568627450980392156862745098039215686",
+      "rounded_2dp": "39.22",
+      "financial_rigor_cli_exit_code": 0,
+      "financial_rigor_display_matches": true
+    },
+    {
+      "metric": "p50_reduction_vs_delegation_pct",
+      "expression": "(13.8 - 12.4) / 13.8 * 100",
+      "decimal_40_digit_result": "10.14492753623188405797101449275362318841",
+      "rounded_2dp": "10.14",
+      "financial_rigor_cli_exit_code": 0,
+      "financial_rigor_display_matches": true
+    }
+  ]
+}

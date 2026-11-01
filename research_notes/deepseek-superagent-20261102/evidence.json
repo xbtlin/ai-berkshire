@@ -1,0 +1,308 @@
+{
+  "data_cutoff": "2026-11-02 Asia/Shanghai",
+  "repository": "deepseek-ai/dsh-superagent-prototype",
+  "commit": "6337fc823ce20251c8de8085948165c81aaa701e",
+  "upstream_tree_clean_after_check": true,
+  "release_metadata": {
+    "created_at_utc": "2026-10-31T09:32:46Z",
+    "commit_at_utc": "2026-10-31T12:05:39Z"
+  },
+  "method": "Read fixed-commit official documentation and code, inspect existing tests, independently run upstream pnpm check. Anchors identify evidence locations and do not alone prove the surrounding analytical claims.",
+  "limitations": [
+    "Official WeChat origin returned a verification page; Zhihu returned 403.",
+    "Design experiment data read from explicitly attributed author reprint and original table image. No independent benchmark replication.",
+    "No authenticated GitHub or Feishu agent execution; no model inference task was run.",
+    "Security discussion is architectural analysis, not an exploit validation or security certification."
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "claim": "公开版本是研究原型且不等同于内部系统或文章完整设计",
+      "evidence_kind": "verified_document",
+      "path": "README.md",
+      "anchor_lines": [
+        3
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/README.md#L3",
+      "sha256": "737997cf5b7d4129f12ed5485ebbdd5e9d2ce3859a82ded6ac535d222327b713"
+    },
+    {
+      "id": "C02",
+      "claim": "研究版本与运行时依赖声明",
+      "evidence_kind": "verified_source",
+      "path": "package.json",
+      "anchor_lines": [
+        53
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/package.json#L53",
+      "sha256": "f5170d812137dd370c568decb481e19f4da9a3d1fd7bad341a0f07942020a559"
+    },
+    {
+      "id": "C03",
+      "claim": "任务与执行实例分离且订阅关系为多对多",
+      "evidence_kind": "verified_document",
+      "path": "docs/001-domain.md",
+      "anchor_lines": [
+        36,
+        95,
+        111
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/docs/001-domain.md#L36",
+      "sha256": "cd010379e65cc428ffb335aee46529f2a524b8f573fc72359223060fb5a5111b"
+    },
+    {
+      "id": "C04",
+      "claim": "默认 observe；明确请求可在全部 accept modes 下工作",
+      "evidence_kind": "verified_source",
+      "path": "src/policy.ts",
+      "anchor_lines": [
+        84
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/policy.ts#L84",
+      "sha256": "01cff8c333b341ee2943e644046f0da3ed9675af1c0029489b5f4bc8226d293d"
+    },
+    {
+      "id": "C05",
+      "claim": "准入与恢复校验按来源身份和授权基础执行",
+      "evidence_kind": "verified_source",
+      "path": "src/policy.ts",
+      "anchor_lines": [
+        213
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/policy.ts#L213",
+      "sha256": "01cff8c333b341ee2943e644046f0da3ed9675af1c0029489b5f4bc8226d293d"
+    },
+    {
+      "id": "C06",
+      "claim": "事件去重、订阅扇出与跟进所有权",
+      "evidence_kind": "verified_source",
+      "path": "src/core/intake.ts",
+      "anchor_lines": [
+        19
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/core/intake.ts#L19",
+      "sha256": "323aadefea69436ba23ed2de3bdbaad673d61915be9e239f3233ecf551a74179"
+    },
+    {
+      "id": "C07",
+      "claim": "策略变化给活跃任务追加通知而非立刻统一撤销",
+      "evidence_kind": "verified_source",
+      "path": "src/core/tickets.ts",
+      "anchor_lines": [
+        200
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/core/tickets.ts#L200",
+      "sha256": "1d9f964ad34b54cbb0403bde16af58851e5e80111177ce73a27b6034e9af940e"
+    },
+    {
+      "id": "C08",
+      "claim": "恢复前重验原 Mandate，人工停止不恢复",
+      "evidence_kind": "verified_source",
+      "path": "src/core/tickets.ts",
+      "anchor_lines": [
+        252
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/core/tickets.ts#L252",
+      "sha256": "1d9f964ad34b54cbb0403bde16af58851e5e80111177ce73a27b6034e9af940e"
+    },
+    {
+      "id": "C09",
+      "claim": "领域命令以同步事务修改状态",
+      "evidence_kind": "verified_source",
+      "path": "src/core/engine.ts",
+      "anchor_lines": [
+        48
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/core/engine.ts#L48",
+      "sha256": "bd9a4caff834859877d1a08ccddebc990d0e1ca568674b80f9d59ce5adcac827"
+    },
+    {
+      "id": "C10",
+      "claim": "SQLite WAL、FULL 持久性配置",
+      "evidence_kind": "verified_source",
+      "path": "src/app/store.ts",
+      "anchor_lines": [
+        64
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/app/store.ts#L64",
+      "sha256": "c124de893fbe260571b18b0ac4875bc7647e44e72062ba38b02c809e0012d583"
+    },
+    {
+      "id": "C11",
+      "claim": "savepoint 与提交后回调",
+      "evidence_kind": "verified_source",
+      "path": "src/app/store.ts",
+      "anchor_lines": [
+        140
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/app/store.ts#L140",
+      "sha256": "c124de893fbe260571b18b0ac4875bc7647e44e72062ba38b02c809e0012d583"
+    },
+    {
+      "id": "C12",
+      "claim": "副作用按 kind/key 去重并维护 generation",
+      "evidence_kind": "verified_source",
+      "path": "src/app/effects.ts",
+      "anchor_lines": [
+        62
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/app/effects.ts#L62",
+      "sha256": "d350590473299398b17c50dd641c72e1995dd95920c5138699491ab77e3ae481"
+    },
+    {
+      "id": "C13",
+      "claim": "外发消息回执与副作用原子写入",
+      "evidence_kind": "verified_source",
+      "path": "src/app/outbox.ts",
+      "anchor_lines": [
+        31,
+        36
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/app/outbox.ts#L31",
+      "sha256": "48d20062dd8c34c2b95e851c78265c9e403d1040894e97c7d9d0fa190d54415e"
+    },
+    {
+      "id": "C14",
+      "claim": "GitHub 回复依靠稳定标记检查重复",
+      "evidence_kind": "verified_source",
+      "path": "src/sources/github-channel.ts",
+      "anchor_lines": [
+        34
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/sources/github-channel.ts#L34",
+      "sha256": "6de9657465b8bae9a7cb4748d469fedff3c8d27fec6ed6b4dd52e620a239a0d1"
+    },
+    {
+      "id": "C15",
+      "claim": "飞书回复使用幂等键",
+      "evidence_kind": "verified_source",
+      "path": "src/sources/feishu-channel.ts",
+      "anchor_lines": [
+        23
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/sources/feishu-channel.ts#L23",
+      "sha256": "c6fa722414256df055ae09e935ec402ccec9b63bdb5f73d2b5ff3f34d6d1abf7"
+    },
+    {
+      "id": "C16",
+      "claim": "WorkerSlots 同步预留且人类唤醒有额外一个槽位",
+      "evidence_kind": "verified_source",
+      "path": "src/executor/dsh.ts",
+      "anchor_lines": [
+        192
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/executor/dsh.ts#L192",
+      "sha256": "6445a03121fa9bd15fc437736bcc2acc6ab950c5fe732e5b99eb8ee2c8a9476b"
+    },
+    {
+      "id": "C17",
+      "claim": "后台工作有独立生命周期管理",
+      "evidence_kind": "verified_source",
+      "path": "src/executor/background.ts",
+      "anchor_lines": [
+        159
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/executor/background.ts#L159",
+      "sha256": "60b98302d412426cda7df12ed69d750183f60fb00ac802a01ae2c963cfc79420"
+    },
+    {
+      "id": "C18",
+      "claim": "主会话等待 guard，不是任意代码的耗时证明",
+      "evidence_kind": "verified_source_with_analysis",
+      "path": "src/app/sessions.ts",
+      "anchor_lines": [
+        77
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/app/sessions.ts#L77",
+      "sha256": "ca2b98e57e9f27b2abb0afab59d44ea744a96d8be4cf81d7b3776901b56cd36b"
+    },
+    {
+      "id": "C19",
+      "claim": "会话以 danger-full-access 运行",
+      "evidence_kind": "verified_source",
+      "path": "src/app/sessions.ts",
+      "anchor_lines": [
+        152
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/app/sessions.ts#L152",
+      "sha256": "ca2b98e57e9f27b2abb0afab59d44ea744a96d8be4cf81d7b3776901b56cd36b"
+    },
+    {
+      "id": "C20",
+      "claim": "资源读取按 Ticket 限制并提供分页",
+      "evidence_kind": "verified_source",
+      "path": "src/app/resources.ts",
+      "anchor_lines": [
+        94
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/app/resources.ts#L94",
+      "sha256": "cc09f56669b2ccacfc889aa98132590b618f77e6648a7ff8fe8454106c8c663f"
+    },
+    {
+      "id": "C21",
+      "claim": "运行时锁定本地状态目录",
+      "evidence_kind": "verified_source",
+      "path": "src/app/runtime.ts",
+      "anchor_lines": [
+        93
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/app/runtime.ts#L93",
+      "sha256": "5befef035b4a70978cd881b32282680260c6d2561679f890dd911214664cf515"
+    },
+    {
+      "id": "C22",
+      "claim": "管理 API 检查本地 Host、Origin 和请求头",
+      "evidence_kind": "verified_source",
+      "path": "src/app/http.ts",
+      "anchor_lines": [
+        75
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/app/http.ts#L75",
+      "sha256": "5da39830429559975cae7ae6d39416acb2322ac8e31cfb4da3436df602cb7ec4"
+    },
+    {
+      "id": "C23",
+      "claim": "外部 hourly check 是部署配置步骤",
+      "evidence_kind": "verified_document",
+      "path": "docs/006-deployment.md",
+      "anchor_lines": [
+        133
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/docs/006-deployment.md#L133",
+      "sha256": "92c5a1c6aecab6782a64b3847a2d6f36a48dc9865fa7b04b892fcdaf04f7de9d"
+    },
+    {
+      "id": "C24",
+      "claim": "自动合并约束位于 prompt 而非 host 合并决策代码",
+      "evidence_kind": "verified_document",
+      "path": "docs/003-execution.md",
+      "anchor_lines": [
+        84
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/docs/003-execution.md#L84",
+      "sha256": "049aa22a717f75b9dec4cd6969356db6f736c127de4501c3ce1f6d846217f6eb"
+    },
+    {
+      "id": "C25",
+      "claim": "记录尚无删除机制",
+      "evidence_kind": "verified_document",
+      "path": "docs/007-architecture.md",
+      "anchor_lines": [
+        484
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/docs/007-architecture.md#L484",
+      "sha256": "e3747665587fdf88b28d4e9c1a1f8ac40cbc2c65a9999be1fce14b69ec44d748"
+    },
+    {
+      "id": "C26",
+      "claim": "暂停不打断已运行的 Executor turn",
+      "evidence_kind": "verified_document",
+      "path": "docs/003-execution.md",
+      "anchor_lines": [
+        196
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/docs/003-execution.md#L196",
+      "sha256": "049aa22a717f75b9dec4cd6969356db6f736c127de4501c3ce1f6d846217f6eb"
+    }
+  ]
+}
