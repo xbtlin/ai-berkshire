@@ -1,0 +1,22 @@
+{
+  "scenarios": [
+    {
+      "scenario": "A",
+      "mean_attempts": "3",
+      "cost_yuan_per_minute": "72"
+    },
+    {
+      "scenario": "B",
+      "mean_attempts": "4.4",
+      "cost_yuan_per_minute": "105.6"
+    },
+    {
+      "scenario": "C",
+      "mean_attempts": "9.8",
+      "cost_yuan_per_minute": "235.2"
+    }
+  ],
+  "heat_change_percent": "-29.17560914026006817321045322560282792577",
+  "rounded_percent": "-29.18",
+  "status": "PASS"
+}

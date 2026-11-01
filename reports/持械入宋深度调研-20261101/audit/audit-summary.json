@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-01",
+  "extracted_count": 26,
+  "checked_transcriptions": 23,
+  "excluded_false_positives": 3,
+  "manually_reviewed_additional_phrases": 14,
+  "report_sha256": "5fc3abe9dc05cf85534a0f5acadc5286abccdd053396f9fea680efebe291cd39",
+  "evidence_sha256": "b855b29162f5ddc3256495046ca0d1065c5f4bccef883c55e5fbbd5fe021efc5",
+  "decision": "可以作为明确保留证据缺口的公开资料调研发布；非技术栈或财务认证"
+}

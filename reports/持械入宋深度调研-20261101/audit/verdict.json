@@ -1,0 +1,10 @@
+{
+  "verdict": "PASS",
+  "pass_count": 23,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 23,
+  "fail_items": [],
+  "warn_items": [],
+  "scope": "仅检查报告与所录公开来源的数字一致性；不审计来源真实性、不验证技术栈"
+}

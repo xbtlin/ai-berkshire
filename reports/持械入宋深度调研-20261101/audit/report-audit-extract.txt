@@ -1,0 +1,357 @@
+======================================================================
+报告数据抽检清单
+文件：reports/持械入宋深度调研-20261101/持械入宋研究报告-20261101.md
+总提取数据点：26  |  抽样比例：100%  |  抽检数量：26
+随机种子：20261101（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  1     15  数据到底有多大？ · 本次调查结论                           40.00  亿
+ 25     40  索显示约170.3万字、仍在连载，最近更新时间为11月1日17              3.00
+  2     74  其他常见工具 · 产品或服务                               8.00
+ 26     77  表中关联线索的出处需要逐条保留                              2.00
+  3    146  2026-10-08 · 数据或事件                          40.00  亿
+  4    147  2026-10-18 · 数据或事件                        8200.00
+  5    148  2026-10-28 · 数据或事件                          10.00
+  6    149  2026-11-01检索 · 数据或事件                        44.60
+  8    163  2026-10-24 · 热播指数，单位：万                    7921.00
+  7    163  2026-10-24 · 该站记录的名次                         1.00
+  9    164  2026-10-25 · 该站记录的名次                         2.00
+ 10    164  2026-10-25 · 热播指数，单位：万                    7557.00
+ 11    165  2026-10-26 · 该站记录的名次                         2.00
+ 12    165  2026-10-26 · 热播指数，单位：万                    7103.00
+ 13    166  2026-10-27 · 该站记录的名次                         4.00
+ 14    166  2026-10-27 · 热播指数，单位：万                    6806.00
+ 15    167  2026-10-28 · 该站记录的名次                         4.00
+ 16    167  2026-10-28 · 热播指数，单位：万                    6566.00
+ 18    168  2026-10-29 · 热播指数，单位：万                    6385.00
+ 17    168  2026-10-29 · 该站记录的名次                         5.00
+ 19    169  2026-10-30 · 该站记录的名次                         4.00
+ 20    169  2026-10-30 · 热播指数，单位：万                    6247.00
+ 22    170  2026-10-31 · 热播指数，单位：万                    5874.00
+ 21    170  2026-10-31 · 该站记录的名次                        10.00
+ 24    171  2026-11-01 · 热播指数，单位：万                    5610.00
+ 23    171  2026-11-01 · 该站记录的名次                        28.00
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 1,
+    "label": "数据到底有多大？ · 本次调查结论",
+    "reported_value": 40.0,
+    "unit": "亿",
+    "line_number": 15,
+    "raw_text": "| 数据到底有多大？ | 制作方公开了系列播放突破40亿的喜报；本次直接核对了原帖海报 | 制作方宣称的累计播放，非去重观众数，非平台审计结果 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 25,
+    "label": "索显示约170.3万字、仍在连载，最近更新时间为11月1日17",
+    "reported_value": 3.0,
+    "unit": "",
+    "line_number": 40,
+    "raw_text": "原著官网截至本次检索显示约170.3万字、仍在连载，最近更新时间为11月1日17:03。这说明故事供给还在延伸，但小说长度不能直接换算为短剧剩余季数。〔S03〕",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 2,
+    "label": "其他常见工具 · 产品或服务",
+    "reported_value": 8.0,
+    "unit": "",
+    "line_number": 74,
+    "raw_text": "| 其他常见工具 | ComfyUI、Dify、LangGraph、n8n等 | 本次未查到项目级使用证据 | 不列为已采用框架 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 26,
+    "label": "表中关联线索的出处需要逐条保留",
+    "reported_value": 2.0,
+    "unit": "",
+    "line_number": 77,
+    "raw_text": "表中关联线索的出处需要逐条保留：2月的雪宝专访谈的是《长恨》使用可灵、即梦、AI拍，**不是《持械入宋》**；3月的新榜采访涉及 OpenClaw、扣子和 Nano Banana 实验；5月商汤官方报道的是生态活动与工作室经验分享。〔S08",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 3,
+    "label": "2026-10-08 · 数据或事件",
+    "reported_value": 40.0,
+    "unit": "亿",
+    "line_number": 146,
+    "raw_text": "| 2026-10-08 | 制作方海报：系列播放突破40亿，系列累计收藏620万，第一季收藏突破200万 | A，已直接看原帖画面 | 三个指标分别记录，收藏不是去重用户 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 4,
+    "label": "2026-10-18 · 数据或事件",
+    "reported_value": 8200.0,
+    "unit": "",
+    "line_number": 147,
+    "raw_text": "| 2026-10-18 | 制作方发帖庆祝第九季热度突破8200万 | A，已直接核对标题及发布时间 | 热度值，不能写成该季播放量 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "2026-10-28 · 数据或事件",
+    "reported_value": 10.0,
+    "unit": "",
+    "line_number": 148,
+    "raw_text": "| 2026-10-28 | 新榜报道已更新至10季、红果收藏1098万 | B，媒体观察及引用制作账号 | 不能和播放量相加；没有独立用户明细 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 6,
+    "label": "2026-11-01检索 · 数据或事件",
+    "reported_value": 44.6,
+    "unit": "",
+    "line_number": 149,
+    "raw_text": "| 2026-11-01检索 | 制作账号粉丝44.6万、获赞486.4万 | A，主页显示 | 账号级累计指标，涵盖其他作品 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "2026-10-24 · 热播指数，单位：万",
+    "reported_value": 7921.0,
+    "unit": "",
+    "line_number": 163,
+    "raw_text": "| 2026-10-24 | 1 | 7921 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 7,
+    "label": "2026-10-24 · 该站记录的名次",
+    "reported_value": 1.0,
+    "unit": "",
+    "line_number": 163,
+    "raw_text": "| 2026-10-24 | 1 | 7921 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "2026-10-25 · 该站记录的名次",
+    "reported_value": 2.0,
+    "unit": "",
+    "line_number": 164,
+    "raw_text": "| 2026-10-25 | 2 | 7557 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 10,
+    "label": "2026-10-25 · 热播指数，单位：万",
+    "reported_value": 7557.0,
+    "unit": "",
+    "line_number": 164,
+    "raw_text": "| 2026-10-25 | 2 | 7557 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 11,
+    "label": "2026-10-26 · 该站记录的名次",
+    "reported_value": 2.0,
+    "unit": "",
+    "line_number": 165,
+    "raw_text": "| 2026-10-26 | 2 | 7103 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 12,
+    "label": "2026-10-26 · 热播指数，单位：万",
+    "reported_value": 7103.0,
+    "unit": "",
+    "line_number": 165,
+    "raw_text": "| 2026-10-26 | 2 | 7103 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 13,
+    "label": "2026-10-27 · 该站记录的名次",
+    "reported_value": 4.0,
+    "unit": "",
+    "line_number": 166,
+    "raw_text": "| 2026-10-27 | 4 | 6806 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 14,
+    "label": "2026-10-27 · 热播指数，单位：万",
+    "reported_value": 6806.0,
+    "unit": "",
+    "line_number": 166,
+    "raw_text": "| 2026-10-27 | 4 | 6806 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "2026-10-28 · 该站记录的名次",
+    "reported_value": 4.0,
+    "unit": "",
+    "line_number": 167,
+    "raw_text": "| 2026-10-28 | 4 | 6566 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 16,
+    "label": "2026-10-28 · 热播指数，单位：万",
+    "reported_value": 6566.0,
+    "unit": "",
+    "line_number": 167,
+    "raw_text": "| 2026-10-28 | 4 | 6566 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "2026-10-29 · 热播指数，单位：万",
+    "reported_value": 6385.0,
+    "unit": "",
+    "line_number": 168,
+    "raw_text": "| 2026-10-29 | 5 | 6385 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 17,
+    "label": "2026-10-29 · 该站记录的名次",
+    "reported_value": 5.0,
+    "unit": "",
+    "line_number": 168,
+    "raw_text": "| 2026-10-29 | 5 | 6385 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 19,
+    "label": "2026-10-30 · 该站记录的名次",
+    "reported_value": 4.0,
+    "unit": "",
+    "line_number": 169,
+    "raw_text": "| 2026-10-30 | 4 | 6247 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 20,
+    "label": "2026-10-30 · 热播指数，单位：万",
+    "reported_value": 6247.0,
+    "unit": "",
+    "line_number": 169,
+    "raw_text": "| 2026-10-30 | 4 | 6247 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 22,
+    "label": "2026-10-31 · 热播指数，单位：万",
+    "reported_value": 5874.0,
+    "unit": "",
+    "line_number": 170,
+    "raw_text": "| 2026-10-31 | 10 | 5874 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 21,
+    "label": "2026-10-31 · 该站记录的名次",
+    "reported_value": 10.0,
+    "unit": "",
+    "line_number": 170,
+    "raw_text": "| 2026-10-31 | 10 | 5874 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "2026-11-01 · 热播指数，单位：万",
+    "reported_value": 5610.0,
+    "unit": "",
+    "line_number": 171,
+    "raw_text": "| 2026-11-01 | 28 | 5610 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "2026-11-01 · 该站记录的名次",
+    "reported_value": 28.0,
+    "unit": "",
+    "line_number": 171,
+    "raw_text": "| 2026-11-01 | 28 | 5610 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

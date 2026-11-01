@@ -1,0 +1,72 @@
+{
+  "research_date": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "scope": "老十一剧场/瑾叶剧场AI仿真人版",
+  "notice": "人工根据本次公开页面及浏览器观察录入；不是平台API或制作后台导出。数值一致性不代表来源真实性已独立审计。",
+  "observations": [
+    {"id":"poster_series_plays","date":"2026-10-08","value":"40","unit":"亿次","comparator":"突破","source":"S15","url":"https://www.douyin.com/video/7694063424465383498","method":"浏览器画面直接观察","meaning":"海报系列播放；新榜称全网累计","independent_audit":false},
+    {"id":"poster_series_favorites","date":"2026-10-08","value":"620","unit":"万次收藏","source":"S15","meaning":"系列累计收藏，未披露跨季去重","independent_audit":false},
+    {"id":"poster_season1_favorites","date":"2026-10-08","value":"200","unit":"万次收藏","comparator":"突破","source":"S15","independent_audit":false},
+    {"id":"season9_heat","date":"2026-10-18","value":"8200","unit":"万热度","comparator":"突破","source":"S16","url":"https://www.douyin.com/video/7697835268295925834","method":"浏览器标题及发布时间直接观察","independent_audit":false},
+    {"id":"reported_seasons","date":"2026-10-28","value":"10","unit":"季","source":"S17","url":"https://newrank.cn/article/detail/34814","method":"媒体报道"},
+    {"id":"reported_favorites","date":"2026-10-28","value":"1098","unit":"万次收藏","source":"S17","meaning":"媒体红果收藏口径，非去重人数"},
+    {"id":"account_followers","date":"2026-11-01","value":"44.6","unit":"万人","source":"S02","url":"https://www.douyin.com/user/MS4wLjABAAAAKUlKQSSrVSJ4yonh423oZKP2aSb7_lreNFrB9DWJP8E","method":"主页浏览器直接观察","meaning":"全账号，非本剧独占"},
+    {"id":"account_likes","date":"2026-11-01","value":"486.4","unit":"万次","source":"S02","meaning":"主页当次快照，随后视频页刷新到486.5万；全账号"},
+    {"id":"novel_length","date":"2026-11-01","value":"170.3","unit":"万字","source":"S03","url":"https://fanqienovel.com/page/7616151491132279832","meaning":"小说主书页；最近更新时间2026-11-01 17:03"},
+    {"id":"season10_episodes","date":"2026-11-01","value":"99","unit":"集","source":"S19","url":"https://duanjubaike.org/zh-Hans/drama/73184","meaning":"第三方索引，非全系列精确集数"},
+    {"id":"season10_minutes","date":"2026-11-01","value":"161","unit":"分钟","source":"S19","meaning":"第三方索引原显示2小时41分钟"}
+  ],
+  "interview_claims": {
+    "source":"S01",
+    "url":"https://www.thepaper.cn/newsDetail_forward_34352445",
+    "publication_date":"2026-10-29",
+    "status":"具名主创陈述；团队、财务未获得内部记录复核",
+    "brand_team_members":"30余人",
+    "project_team_members":"10人",
+    "roles":{"writer_directors":5,"editors":2,"chief_director":1,"lead_producer_writer":1,"ip_lead":1},
+    "preparation":"约半月",
+    "ordinary_shot_attempts":"平均约3次",
+    "complex_shot_attempts":"10次以上，有时超过20次",
+    "release_cadence":"约每周一季、每季100集",
+    "compute_spending":{"value":"100","unit":"万元","comparator":"超过","scope":"整个系列累计","independently_verified":false},
+    "commercial_return":{"value":"1000","unit":"万元","comparator":"约","scope":"整个系列；收入定义与期间不清","independently_verified":false}
+  },
+  "season10_series": {
+    "source":"S18",
+    "url":"https://www.duanjugongcheng.com/cn/bangdan/ju/chi-xie-ru-song-di-shi-ji",
+    "evidence_level":"C",
+    "limitations":"第三方自称红果榜单；页面同时使用抖音榜单表述；未直接核对官方原始记录",
+    "heat_unit":"万",
+    "rows":[
+      {"date":"2026-10-24","rank":1,"heat":7921},
+      {"date":"2026-10-25","rank":2,"heat":7557},
+      {"date":"2026-10-26","rank":2,"heat":7103},
+      {"date":"2026-10-27","rank":4,"heat":6806},
+      {"date":"2026-10-28","rank":4,"heat":6566},
+      {"date":"2026-10-29","rank":5,"heat":6385},
+      {"date":"2026-10-30","rank":4,"heat":6247},
+      {"date":"2026-10-31","rank":10,"heat":5874},
+      {"date":"2026-11-01","rank":28,"heat":5610}
+    ]
+  },
+  "illustrative_scenarios": {
+    "status":"全部为教学假设，不是本剧或厂商实际报价",
+    "shot_seconds":"5",
+    "price_per_attempt_yuan":"2",
+    "scenarios":[
+      {"id":"A","ordinary_share":"1","ordinary_attempts":"3","complex_share":"0","complex_attempts":"0","expected_mean_attempts":"3.0","expected_yuan_per_minute":"72.00"},
+      {"id":"B","ordinary_share":"0.8","ordinary_attempts":"3","complex_share":"0.2","complex_attempts":"10","expected_mean_attempts":"4.4","expected_yuan_per_minute":"105.60"},
+      {"id":"C","ordinary_share":"0.6","ordinary_attempts":"3","complex_share":"0.4","complex_attempts":"20","expected_mean_attempts":"9.8","expected_yuan_per_minute":"235.20"}
+    ]
+  },
+  "unresolved":[
+    "法人主体及统一社会信用代码",
+    "本剧逐季逐环节模型及版本",
+    "本剧harness框架与自动化比例",
+    "供应商采购份额、发票和实际付费入口",
+    "原著、配音、数字人物与成片的授权合同",
+    "第十一季实际播出状态",
+    "独立观看人数、完播率、观看时长、跨季留存",
+    "实际财务收入、成本、净利润和现金回款"
+  ]
+}
