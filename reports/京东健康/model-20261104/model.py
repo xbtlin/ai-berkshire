@@ -43,7 +43,27 @@ def reverse_growth(payout):
     return (lo + hi) / 2
 
 
+def operating_checks():
+    # FY2025 现金流量表、附注 32(a)，金额均为亿元人民币。
+    narrow_fcf = D("101.73949") - D("1.51009")
+    working_capital = D("88.41561") - D("52.40159")
+    received_interest = D("16.82135")
+    print(f"FY25 窄口径FCF {narrow_fcf:.2f}，营运资金贡献 {working_capital:.2f}，"
+          f"移除营运资金贡献及实收利息后 {narrow_fcf - working_capital - received_interest:.2f}")
+    # 2026 中报附注 5、20，同一会计口径下对照本期和上年同期。
+    fees, prior_fees = D("22.14700"), D("16.24027")
+    services, prior_services = D("69.84376"), D("59.58908")
+    increment_share = (fees - prior_fees) / (services - prior_services)
+    residual_growth = (services - fees) / (prior_services - prior_fees) - 1
+    print(f"集团营销费占服务收入增量 {increment_share:.1%}，扣除后服务增长 {residual_growth:.1%}")
+    extra_fees = (D("27.02592") + D("15.06808")) * D(".05")
+    print(f"集团物流与流量费用压力 {extra_fees:.2f}，占半年经营利润 {extra_fees / D('31.73756'):.1%}")
+    peer_mcap = D("2.955") * D("161.75300965") * FX
+    print(f"阿里健康人民币市值 {peer_mcap:.2f}，最新年度归母 PE {peer_mcap / D('19.36162'):.1f}")
+
+
 def main():
+    operating_checks()
     cross = [
         ("总股本（亿股）", str(SHARES), "31.9048", "HKEX", "同花顺"),
         ("2025营收", "734.41487", "734.41", "年报", "S&P"),
@@ -66,21 +86,31 @@ def main():
         "--growth", ".18", ".10", "-.03", "--pe", 22, 17, 12, "--years", 3, "--currency", "HKD")
     run("terminal_value", "audit", "--currency", "CNY", "--r", RATE, "--roic", ROIC,
         "--g", "0,.02,.03", "--rf", ".01621", "--beta", "1", "--discrete-risks",
-        "监管收紧:情景,集团费率上行:情景,重大医疗责任事件:未建模")
+        "监管收紧:情景,集团费率上行:情景,重大医疗责任事件:未建模,协议控制失效:未建模")
     print("股权市值/TTM利润/商品/服务:", MCAP, PROFIT, PRODUCT, SERVICE, flush=True)
     for growth, pe in [(D("-.03"),12),(D(".10"),17),(D(".18"),22)]:
         target = eps * (1 + growth) ** 3 * pe
         print(f"三年股价 {target:.2f}，今日按8%折回 {target / (1 + RATE)**3:.2f}")
     anchors = []
+    weighted_terminal_equity = D(0)
     for label, prob, prod, service, m5, m10, g in CASES:
         for years, margin in [(5, m5), (10, m10)]:
             revenue = PRODUCT * (1+D(prod))**years + SERVICE * (1+D(service))**years
             profit = revenue * D(margin)
             print(f"{label} {years}年 收入={revenue:.2f} 利润={profit:.2f}", flush=True)
         pe = exit_pe(float(ROIC), float(g), float(RATE))[0]
+        weighted_terminal_equity += D(prob) * profit * D(str(pe))
         run("terminal_value", "irr", "--profit", profit, "--mcap", MCAP, "--pe", pe, "--payout", 0)
+        if label == "基准":
+            terminal_price = profit * D(str(pe)) / (FX * SHARES)
+            print(f"十年基准终值 {terminal_price:.2f} 港元，32.70 港元买入年化 "
+                  f"{(terminal_price / D('32.70')) ** D('.1') - 1:.2%}")
+            for hurdle in map(D, [".08", ".10", ".12"]):
+                print(f"目标回报 {hurdle:.0%} 对应买价 {terminal_price / (1 + hurdle) ** 10:.2f} 港元")
         anchor_pe = exit_pe(float(ROIC), float(g), .10)[0]
         anchors.append(100 * irr_from_terminal(float(profit), float(MCAP), anchor_pe))
+    wealth_cagr = (weighted_terminal_equity / MCAP) ** D(".1") - 1
+    print(f"先加权十年终值再求年化：{wealth_cagr:.2%}")
     for delta in [".02", ".01"]:
         run("terminal_value", "flip", "--name", "京东健康", "--r", RATE, "--delta", delta,
             "--currency", "CNY", "--rf", ".01621", "--g", "0,.02,.03", "--roic", ROIC, "--p", ".25,.55,.20",
