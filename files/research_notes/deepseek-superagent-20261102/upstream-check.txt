@@ -1,0 +1,48 @@
+Upstream commit: 6337fc823ce20251c8de8085948165c81aaa701e
+Environment: Darwin x86_64, Node.js 24.22.1, Python 3.12.14, pnpm 11.25.0
+Command: pnpm check
+Temporary paths normalized and trailing whitespace trimmed; build warning preserved.
+
+$ pnpm typecheck && pnpm test && pnpm build
+$ tsc --noEmit
+$ vitest run
+
+ RUN  v4.1.8 <UPSTREAM_CHECKOUT>
+
+
+ Test Files  59 passed (59)
+      Tests  1197 passed (1197)
+   Start at  00:07:35
+   Duration  18.92s (transform 5.39s, setup 0ms, import 14.49s, tests 72.16s, environment 6.75s)
+
+$ tsdown
+ℹ tsdown v0.22.14 powered by rolldown v1.2.7
+ℹ config file: <UPSTREAM_CHECKOUT>/tsdown.config.ts
+ℹ entry: src/index.ts, src/sources/github.ts, src/sources/feishu.ts
+ℹ target: es2024
+ℹ tsconfig: tsconfig.json
+ℹ entry: src/client/index.tsx
+ℹ target: node22.19.0
+ℹ tsconfig: tsconfig.json
+ℹ Build start
+
+ WARN  We recommend using the ESM format instead of CommonJS.
+The ESM format is compatible with modern platforms and runtimes, and most new libraries are now distributed only in ESM format.
+Learn more at https://nodejs.org/en/learn/modules/publishing-a-package#how-did-we-get-here
+
+ℹ [CJS] lib/client.js  358.52 kB │ gzip: 86.64 kB
+ℹ [CJS] 1 files, total: 358.52 kB
+✔ Build complete in 2128ms
+ℹ [ESM] lib/index.js                 450.26 kB │ gzip: 127.47 kB
+ℹ [ESM] lib/github-watch.js           33.91 kB │ gzip:  11.00 kB
+ℹ [ESM] lib/feishu-watch.js            0.60 kB │ gzip:   0.29 kB
+ℹ [ESM] lib/feishu-rAGM9U9b.js        48.32 kB │ gzip:  14.58 kB
+ℹ [ESM] lib/poll-Dh7J1cdM.js          38.48 kB │ gzip:  13.83 kB
+ℹ [ESM] lib/github-pull-gSbjzypm.js   25.42 kB │ gzip:   8.23 kB
+ℹ [ESM] lib/index.d.ts                24.97 kB │ gzip:   7.72 kB
+ℹ [ESM] lib/feishu-watch.d.ts          5.98 kB │ gzip:   2.00 kB
+ℹ [ESM] lib/github-watch.d.ts          0.39 kB │ gzip:   0.22 kB
+ℹ [ESM] lib/kind-CC2z1Ko1.d.ts        35.84 kB │ gzip:   9.06 kB
+ℹ [ESM] lib/intake-BntR4bhz.d.ts      29.31 kB │ gzip:   9.22 kB
+ℹ [ESM] 11 files, total: 693.50 kB
+✔ Build complete in 2278ms

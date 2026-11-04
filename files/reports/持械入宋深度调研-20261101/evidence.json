@@ -1,0 +1,311 @@
+{
+  "research_date": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "scope": "老十一剧场/瑾叶剧场AI仿真人版",
+  "notice": "人工根据本次公开页面及浏览器观察录入；不是平台API或制作后台导出。数值一致性不代表来源真实性已独立审计。",
+  "observations": [
+    {
+      "id": "poster_series_plays",
+      "date": "2026-10-08",
+      "value": "40",
+      "unit": "亿次",
+      "comparator": "突破",
+      "source": "S15",
+      "url": "https://www.douyin.com/video/7694063424465383498",
+      "method": "浏览器画面直接观察",
+      "meaning": "海报系列播放；新榜称全网累计",
+      "independent_audit": false
+    },
+    {
+      "id": "poster_series_favorites",
+      "date": "2026-10-08",
+      "value": "620",
+      "unit": "万次收藏",
+      "source": "S15",
+      "meaning": "系列累计收藏，未披露跨季去重",
+      "independent_audit": false
+    },
+    {
+      "id": "poster_season1_favorites",
+      "date": "2026-10-08",
+      "value": "200",
+      "unit": "万次收藏",
+      "comparator": "突破",
+      "source": "S15",
+      "independent_audit": false
+    },
+    {
+      "id": "season9_heat",
+      "date": "2026-10-18",
+      "value": "8200",
+      "unit": "万热度",
+      "comparator": "突破",
+      "source": "S16",
+      "url": "https://www.douyin.com/video/7697835268295925834",
+      "method": "浏览器标题及发布时间直接观察",
+      "independent_audit": false
+    },
+    {
+      "id": "reported_seasons",
+      "date": "2026-10-28",
+      "value": "10",
+      "unit": "季",
+      "source": "S17",
+      "url": "https://newrank.cn/article/detail/34814",
+      "method": "媒体报道"
+    },
+    {
+      "id": "reported_favorites",
+      "date": "2026-10-28",
+      "value": "1098",
+      "unit": "万次收藏",
+      "source": "S17",
+      "meaning": "媒体红果收藏口径，非去重人数"
+    },
+    {
+      "id": "account_followers",
+      "date": "2026-11-01",
+      "value": "44.6",
+      "unit": "万人",
+      "source": "S02",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAAKUlKQSSrVSJ4yonh423oZKP2aSb7_lreNFrB9DWJP8E",
+      "method": "主页浏览器直接观察",
+      "meaning": "全账号，非本剧独占"
+    },
+    {
+      "id": "account_likes",
+      "date": "2026-11-01",
+      "value": "486.4",
+      "unit": "万次",
+      "source": "S02",
+      "meaning": "主页当次快照，随后视频页刷新到486.5万；全账号"
+    },
+    {
+      "id": "novel_length",
+      "date": "2026-11-01",
+      "value": "170.3",
+      "unit": "万字",
+      "source": "S03",
+      "url": "https://fanqienovel.com/page/7616151491132279832",
+      "meaning": "小说主书页；最近更新时间2026-11-01 17:03"
+    },
+    {
+      "id": "season10_episodes",
+      "date": "2026-11-01",
+      "value": "99",
+      "unit": "集",
+      "source": "S19",
+      "url": "https://duanjubaike.org/zh-Hans/drama/73184",
+      "meaning": "第三方索引，非全系列精确集数",
+      "usage": "旧第三方记录，已被S25直接目录替代；差异原因未知"
+    },
+    {
+      "id": "season10_minutes",
+      "date": "2026-11-01",
+      "value": "161",
+      "unit": "分钟",
+      "source": "S19",
+      "meaning": "第三方索引原显示2小时41分钟",
+      "usage": "旧第三方记录，已被S25直接目录替代；差异原因未知"
+    }
+  ],
+  "interview_claims": {
+    "source": "S01",
+    "url": "https://www.thepaper.cn/newsDetail_forward_34352445",
+    "publication_date": "2026-10-29",
+    "status": "具名主创陈述；团队、财务未获得内部记录复核",
+    "brand_team_members": "30余人",
+    "project_team_members": "10人",
+    "roles": {
+      "writer_directors": 5,
+      "editors": 2,
+      "chief_director": 1,
+      "lead_producer_writer": 1,
+      "ip_lead": 1
+    },
+    "preparation": "约半月",
+    "ordinary_shot_attempts": "平均约3次",
+    "complex_shot_attempts": "10次以上，有时超过20次",
+    "release_cadence": "约每周一季、每季100集",
+    "compute_spending": {
+      "value": "100",
+      "unit": "万元",
+      "comparator": "超过",
+      "scope": "整个系列累计",
+      "independently_verified": false
+    },
+    "commercial_return": {
+      "value": "1000",
+      "unit": "万元",
+      "comparator": "约",
+      "scope": "整个系列；收入定义与期间不清",
+      "independently_verified": false
+    }
+  },
+  "season10_series": {
+    "source": "S18",
+    "url": "https://www.duanjugongcheng.com/cn/bangdan/ju/chi-xie-ru-song-di-shi-ji",
+    "evidence_level": "C",
+    "limitations": "第三方自称红果榜单；页面同时使用抖音榜单表述；未直接核对官方原始记录",
+    "heat_unit": "万",
+    "rows": [
+      {
+        "date": "2026-10-24",
+        "rank": 1,
+        "heat": 7921
+      },
+      {
+        "date": "2026-10-25",
+        "rank": 2,
+        "heat": 7557
+      },
+      {
+        "date": "2026-10-26",
+        "rank": 2,
+        "heat": 7103
+      },
+      {
+        "date": "2026-10-27",
+        "rank": 4,
+        "heat": 6806
+      },
+      {
+        "date": "2026-10-28",
+        "rank": 4,
+        "heat": 6566
+      },
+      {
+        "date": "2026-10-29",
+        "rank": 5,
+        "heat": 6385
+      },
+      {
+        "date": "2026-10-30",
+        "rank": 4,
+        "heat": 6247
+      },
+      {
+        "date": "2026-10-31",
+        "rank": 10,
+        "heat": 5874
+      },
+      {
+        "date": "2026-11-01",
+        "rank": 28,
+        "heat": 5610
+      }
+    ],
+    "usage": "仅保留初稿调查记录；修订正文不再用于趋势结论"
+  },
+  "unresolved": [
+    "法人主体及统一社会信用代码",
+    "本剧逐季逐环节模型及版本",
+    "本剧harness框架与自动化比例",
+    "供应商采购份额、发票和实际付费入口",
+    "原著、配音、数字人物与成片的授权合同",
+    "第十一季实际播出状态",
+    "独立观看人数、完播率、观看时长、跨季留存",
+    "实际财务收入、成本、净利润和现金回款"
+  ],
+  "revision": "第二版：以直接目录与逐集数据替换推演和第三方集数",
+  "direct_catalog": {
+    "source": "S24",
+    "file": "data/creator-catalog.csv",
+    "observation_window": "2026-11-01夜至2026-11-02凌晨 Asia/Shanghai",
+    "method": "浏览器读取老十一剧场公开短剧标签，可见目录文本；保留原显示单位；非API或后台数据",
+    "url": "https://www.douyin.com/user/MS4wLjABAAAAKUlKQSSrVSJ4yonh423oZKP2aSb7_lreNFrB9DWJP8E?from_tab_name=main&showSubTab=playlet",
+    "observed_rows": 43,
+    "nonempty_rows": 39,
+    "zero_episode_rows": 4,
+    "chixie_seasons": 10,
+    "chixie_episodes": 1000,
+    "display_sum_arithmetic_only": "695525000",
+    "published_approximate_sum": "6.96亿",
+    "limitations": [
+      "首季2.3亿为粗粒度展示，不能声称合计精确到个位",
+      "条目包含续季，不能当作独立IP数量",
+      "账号上架不证明每部均由其独立制作",
+      "不同页面缓存及采集时点会产生差异",
+      "付费标签缺失不等于所有终端均免费"
+    ]
+  },
+  "direct_episodes": {
+    "source": "S25",
+    "file": "data/season10-episodes.csv",
+    "observation_window": "2026-11-02凌晨 Asia/Shanghai",
+    "url": "https://www.douyin.com/collection/7697274036942571554/1",
+    "method": "点击加载更多直至第100集；第1集时长由播放器读，其余99集由公开列表卡片读",
+    "episode1_url": "https://www.douyin.com/video/7697274002573872394",
+    "count": 100,
+    "total_seconds": 9830,
+    "mean_seconds": "98.3",
+    "median_seconds": "97",
+    "min_seconds": 57,
+    "max_seconds": 160,
+    "first_paid_episode": 16,
+    "paid_badge_count": 85,
+    "unmarked_seconds": 1267,
+    "paid_badge_seconds": 8563,
+    "limitation": "未播放审看每集全片；总时长未扣片头片尾；只对应当前抖音目录"
+  },
+  "payment_page": {
+    "source": "S26",
+    "observed_date": "2026-11-02",
+    "url": "https://www.douyin.com/video/7697597525955562793",
+    "displayed": [
+      "购买后可看",
+      "付费",
+      "100集全·3101.4万播放",
+      "10钻起",
+      "购买完整版"
+    ],
+    "publication_time_display": "2026-10-23 00:08",
+    "purchase_performed": false,
+    "limitation": "未核实完整套餐与实际付费率；10钻起不是全季售价；不得与3092.5万目录值当作同一时刻"
+  },
+  "publication_time_caveat": {
+    "source": "S29",
+    "url": "https://www.douyin.com/video/7694202074539560228",
+    "episode": "第一季第1集（当前合集跳转）",
+    "displayed_time": "2026-10-08 15:53",
+    "limitation": "早期报道已记录8月上线；当前视频发布时间不能替代IP首播时间，差异原因未确认"
+  },
+  "technical_lineage": [
+    {
+      "source": "S27",
+      "url": "https://www.newrank.cn/article/detail/32938",
+      "date": "2025-10-24",
+      "subject": "雪宝工作室",
+      "facts": [
+        "共用场景主图约束角色站位",
+        "连续场景每集结束回到原布局",
+        "按集而非按生图/视频/配音工种分工"
+      ],
+      "project_scope": "不是《持械入宋》的工程部署证据"
+    },
+    {
+      "source": "S28",
+      "url": "https://www.itopmarketing.com/info22031",
+      "date": "2026-03-17",
+      "event_date": "2026-03-14",
+      "subject": "雪宝工作室品牌宣传总监王天海",
+      "fact": "主办方短剧内行人回顾称工作室结合无分镜法则，在Seedance 2.0推出后一周内提效提质",
+      "project_scope": "能支持相关工作室应用，不能证明本剧使用"
+    },
+    {
+      "source": "S09",
+      "url": "https://www.sohu.com/a/1002783693_108964",
+      "date": "2026-03-30",
+      "original_date": "2026-03-26",
+      "subject": "雪宝",
+      "facts": [
+        "制片表1至2天缩为约5分钟系受访者陈述",
+        "一天可出制作剧本",
+        "扣子历史试验存在人物一致性障碍",
+        "Agent曾打开NanoBanana却未输入提示词并声称完成",
+        "250元为一次剧本生成经历，不是标准单集成本"
+      ],
+      "project_scope": "历史实验，不能外推本剧或当前成熟状态"
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>《持械入宋》研究报告 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/fefbcee8a826.html" data-title="《持械入宋》研究报告"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/持械入宋深度调研-20261101/index.html">持械入宋深度调研-20261101</a></div><div class="layout"><div><h1>《持械入宋》研究报告</h1><div class="meta"><a href="../companies/持械入宋深度调研-20261101/index.html">持械入宋深度调研-20261101</a> ｜ 2026-11-01 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B%E6%B7%B1%E5%BA%A6%E8%B0%83%E7%A0%94-20261101/%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261101.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、先把剧和生产商认清</a></li>
+<li><a href="#40">二、逐季数据：把“40亿”拆开看</a><ul>
+<li><a href="#_2">制作方喜报、媒体收藏和账号播放是三类数据</a></li>
+</ul>
+</li>
+<li><a href="#100">三、第十季100集：时长、付费门槛和发行形态</a></li>
+<li><a href="#_3">四、怎样做出来：实际分工与可追溯的方法</a><ul>
+<li><a href="#_4">本剧披露了哪些生产细节</a></li>
+<li><a href="#_5">“母鸡图”到底是什么</a></li>
+</ul>
+</li>
+<li><a href="#harness">五、模型、harness和公司：证据现在推进到哪里</a><ul>
+<li><a href="#seedance">关键发现：Seedance线索已追到具名实践，但仍差本剧这一环</a></li>
+<li><a href="#openclaw">OpenClaw实验暴露了哪一段有效、哪一段不可靠</a></li>
+</ul>
+</li>
+<li><a href="#_6">六、账号里的作品组合，比单个爆款更有解释力</a><ul>
+<li><a href="#_7">内容为什么适合续季</a></li>
+</ul>
+</li>
+<li><a href="#_8">七、收入与成本：能够算到哪一步</a></li>
+<li><a href="#_9">八、哪些答案已经变实，哪些还需要制作方材料</a></li>
+<li><a href="#_10">参考资料与数据附件</a></li>
+</ul>
+</div>
+</details><article><p>资料截止：2026年11月2日，北京时间；11月1日初稿，11月2日实质修订。研究对象是老十一剧场／瑾叶剧场运营的 AI 仿真人版。新增调查直接读取制作账号的43个短剧目录，以及第十季100集的时长、付费标记和视频链接。正文中的平台数字是本次公开网页快照，主创陈述另行注明；没有取得内部工程、合同和结算账单。</p>
+<p>《持械入宋》已经可以被拆解为一个具体的生产与发行项目：前十季在制作方抖音目录中各有100集，目录展示播放合计约6.96亿；第十季100集合计2小时43分50秒，第16集起标有付费，购买页显示“10钻起”。制作方另外运营着多部续季作品，账号已经具有连续开发多个IP的形态。〔S24—S26〕</p>
+<p>技术调查也有推进：查到了其师承工作室的“母鸡图”、按集分工、Seedance 2.0应用和OpenClaw失败案例。不过，<strong>《持械入宋》自身的模型版本和软件harness仍缺项目级证据</strong>。本报告把这些线索落实到具体人物、作品和日期，保留可以继续核查的路径。</p>
+<h2 id="_1">一、先把剧和生产商认清</h2>
+<p>原著是茶根儿在番茄小说连载的同名作品；11月1日书页显示约170.3万字，最近更新17:03，并注明已改编、在红果上线。故事发生在北宋末年，现代五人小队穿越后，靠军事、制造、医疗和组织能力改变处境。本文没有把同名搬运合集计入正式季数。〔S03、S17〕</p>
+<p>制作方可以确认到厂牌和具名负责人：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>层次</th>
+<th>查实的主体</th>
+<th>关系边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>抖音制作／运营账号</td>
+<td>老十一剧场，抖音号57273298546</td>
+<td>直接读取其主页和短剧目录</td>
+</tr>
+<tr>
+<td>红果厂牌</td>
+<td>瑾叶剧场</td>
+<td>主创专访明确对应；与抖音厂牌是同一团队的不同平台名称</td>
+</tr>
+<tr>
+<td>总策划</td>
+<td>张汉生</td>
+<td>专访同时将其列为老十一剧场创始人</td>
+</tr>
+<tr>
+<td>总制片、总编剧</td>
+<td>李朝华</td>
+<td>负责本剧制作与内容统筹</td>
+</tr>
+<tr>
+<td>学习关系</td>
+<td>雪宝工作室</td>
+<td>老十一团队多数成员有师承关系；不等于母子公司或联合出品</td>
+</tr>
+<tr>
+<td>法律主体</td>
+<td>尚未唯一核实</td>
+<td>厂牌名不能替代签约公司、版权方和收款方</td>
+</tr>
+</tbody>
+</table></div>
+<p>上述身份依据为主创具名采访及公开账号。张汉生2025年3月开始学习AI影视，是雪宝的第11号学员，“老十一”由此得名。到2026年5月，团队由个人扩至3人；10月采访时已30余人，分成5组并行推进IP，主要远程协作。《持械入宋》由其中10人承担。〔S01、S02〕</p>
+<p>网络上另有“河南新乡两姐妹、姐姐持股99%”的说法，但相关文章没有提供能与上述厂牌唯一关联的企业全称、信用代码、片尾主体或授权文件，本次不予认定。这也不能反向证明不存在相应法律主体：生产负责人和公司股东本来就可能不同。〔S30〕</p>
+<p>这支团队值得关注的变化，是从承接制作任务发展到经营剧集品牌。公开目录能独立支持它已经持续运营多部作品；至于每部剧的版权归属、是否承制或联合制作，仍不能仅靠账号上架记录确定。</p>
+<h2 id="40">二、逐季数据：把“40亿”拆开看</h2>
+<p>本次进入老十一剧场主页的“短剧”标签，逐条读取合集卡片。以下是同一轮目录快照中的展示值，单位保留平台原样。付费一栏表示合集带有付费标签，不代表每集都付费。〔S24〕</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>季别</th>
+<th style="text-align: right;">目录展示播放量</th>
+<th style="text-align: right;">目录集数</th>
+<th>合集付费标签</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一季</td>
+<td style="text-align: right;">2.3亿</td>
+<td style="text-align: right;">100</td>
+<td>有</td>
+</tr>
+<tr>
+<td>第二季</td>
+<td style="text-align: right;">9006.2万</td>
+<td style="text-align: right;">100</td>
+<td>有</td>
+</tr>
+<tr>
+<td>第三季</td>
+<td style="text-align: right;">5402.1万</td>
+<td style="text-align: right;">100</td>
+<td>有</td>
+</tr>
+<tr>
+<td>第四季</td>
+<td style="text-align: right;">8707.2万</td>
+<td style="text-align: right;">100</td>
+<td>有</td>
+</tr>
+<tr>
+<td>第五季</td>
+<td style="text-align: right;">4388.8万</td>
+<td style="text-align: right;">100</td>
+<td>有</td>
+</tr>
+<tr>
+<td>第六季</td>
+<td style="text-align: right;">6153.4万</td>
+<td style="text-align: right;">100</td>
+<td>有</td>
+</tr>
+<tr>
+<td>第七季</td>
+<td style="text-align: right;">3515.7万</td>
+<td style="text-align: right;">100</td>
+<td>有</td>
+</tr>
+<tr>
+<td>第八季</td>
+<td style="text-align: right;">3344.0万</td>
+<td style="text-align: right;">100</td>
+<td>有</td>
+</tr>
+<tr>
+<td>第九季</td>
+<td style="text-align: right;">2942.6万</td>
+<td style="text-align: right;">100</td>
+<td>有</td>
+</tr>
+<tr>
+<td>第十季</td>
+<td style="text-align: right;">3092.5万</td>
+<td style="text-align: right;">100</td>
+<td>有</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td style="text-align: right;"><strong>约6.96亿</strong></td>
+<td style="text-align: right;"><strong>1000</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>计算将“亿”“万”统一后相加。由于第一季只显示到0.1亿，合计也只是展示值的近似和；底表中的695,525,000是计算中间值，不能冒充精确到个位的真实播放。这里统计的是该账号十个合集，既不是十亿级独立观众，也不是全平台总播放。</p>
+<p>这组数据提供了三个具体信息。</p>
+<p>首先，续季传播并非逐季单调下降：第四季高于第三季，第六季高于第五季，第十季略高于第九季。简单用首季到末季的比值论证“观众流失”，会忽略上线时长、推荐曝光、不同情节和付费窗口。</p>
+<p>其次，首季的展示播放约占这十季合计的33.1%，属于重要入口，但后续季也构成相当大的累计体量。这个比例只是播放结构，不能识别多少人从第一季追到第十季。</p>
+<p>最后，合集播放统计的计次规则、跨集重复观看和自然／付费流量拆分没有公开。1000个分集入口本身就可能让一个观众贡献多次播放；“亿次”与“亿人”相差甚远。</p>
+<h3 id="_2">制作方喜报、媒体收藏和账号播放是三类数据</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>数据及口径</th>
+<th>能说明什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-10-08</td>
+<td>制作方海报：系列播放突破40亿，系列收藏620万，首季收藏突破200万</td>
+<td>制作方公开宣称的传播里程碑；未附跨平台拆分</td>
+</tr>
+<tr>
+<td>2026-10-18</td>
+<td>制作方帖文：第九季热度突破8200万</td>
+<td>热度指标，不能写成8200万次播放</td>
+</tr>
+<tr>
+<td>2026-10-28</td>
+<td>新榜报道：红果收藏1098万，已更新十季</td>
+<td>媒体记录的红果口径；其40亿来自制作账号，非第二次独立测量</td>
+</tr>
+<tr>
+<td>本次目录采集</td>
+<td>抖音十个合集展示播放合计约6.96亿</td>
+<td>可逐条回查的单账号、十季目录口径</td>
+</tr>
+<tr>
+<td>随后打开付费集</td>
+<td>第十季购买页显示3101.4万播放</td>
+<td>与目录的3092.5万不同，说明页面时间／缓存不能混作同一快照</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源依次为S15、S16、S17、S24、S26。<strong>不能用6.96亿与40亿的差额计算红果播放，也不能据此直接判定喜报虚假</strong>：渠道、时间和统计范围均未对齐。真正缺的是制作方喜报的分平台明细，而不是再找一篇重复引用40亿的报道。</p>
+<h2 id="100">三、第十季100集：时长、付费门槛和发行形态</h2>
+<p>本次把第十季目录加载至第100集，保存每集视频ID、显示时长和付费标记。第1集在目录显示“播放中”，时长从播放器读取；其他99集读取目录卡片。结果如下。〔S25、S26〕</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">实测结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>完整目录</td>
+<td style="text-align: right;">100集，序号1至100连续</td>
+</tr>
+<tr>
+<td>总时长</td>
+<td style="text-align: right;">9830秒，即2小时43分50秒</td>
+</tr>
+<tr>
+<td>平均每集</td>
+<td style="text-align: right;">98.3秒</td>
+</tr>
+<tr>
+<td>中位数</td>
+<td style="text-align: right;">97秒</td>
+</tr>
+<tr>
+<td>最短</td>
+<td style="text-align: right;">第80集，57秒</td>
+</tr>
+<tr>
+<td>最长</td>
+<td style="text-align: right;">第98集，160秒</td>
+</tr>
+<tr>
+<td>未显示付费标签</td>
+<td style="text-align: right;">第1—15集，共21分07秒</td>
+</tr>
+<tr>
+<td>显示付费标签</td>
+<td style="text-align: right;">第16—100集，共85集、2小时22分43秒</td>
+</tr>
+<tr>
+<td>付费区时长占比</td>
+<td style="text-align: right;">约87.1%</td>
+</tr>
+<tr>
+<td>第16集购买页</td>
+<td style="text-align: right;">“购买后可看”“10钻起”</td>
+</tr>
+</tbody>
+</table></div>
+<p>这首先纠正了初稿的一个数据基础：第三方“短剧百科”列为99集、2小时41分；当前制作账号的直接目录支持100集、2小时43分50秒。两个版本的差异原因未公开，本文采用可以逐集复算的后者，不把索引站数据当成更高等级事实。〔S19、S25〕</p>
+<p>其次，它说明“一季100集”对应的是约164分钟内容，集数与传统长剧不可直接比较。本剧采用大量约一分半的分集单元，持续更新可以复用同一套角色、场景和观众认知。以第十季的时长外推全部十季会产生误差，因此没有给出“全系列精确总分钟”。</p>
+<p>更重要的是，<strong>本剧在抖音存在明确的付费观看入口</strong>。合集本身全部带付费标签，第十季又能定位到具体付费分界。前15集约21分钟的公开内容，后接85集付费区，已经构成可观察的试看片段与付费解锁结构。没有付费标签不保证所有终端、所有日期和登录状态均可无条件观看；付费区占比也不等于付费收入占比。</p>
+<p>“10钻起”是页面展示的起始档位，不能据此推算全季售价。本次没有购买，也没有取得不同套餐、充值端价格、退款、渠道抽成或实际付费人数。因此可以确认有直接付费渠道，不能确认它贡献了多少收入。</p>
+<p>还要区分视频发布时间与最初首播时间。例如当前第一季第1集链接显示2026年10月8日，而早期报道已经记录8月上线。分集可能更换或重新发布，不能用当前视频时间覆盖首播史。第十季第16集现页显示10月23日00:08，同样只是该视频的公开时间。〔S14、S26、S29〕</p>
+<h2 id="_3">四、怎样做出来：实际分工与可追溯的方法</h2>
+<h3 id="_4">本剧披露了哪些生产细节</h3>
+<p>主创采访的核心制作信息可压缩为下表。它们是具名自述，尚没有后台记录复核。〔S01〕</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>环节</th>
+<th>本剧实际披露</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前期</td>
+<td>约半个月：读原著、改稿、设计人物、确定样片</td>
+</tr>
+<tr>
+<td>人员</td>
+<td>5名编导、2名剪辑、1名总导演，加张汉生、李朝华；后文又称6名编导参与制作，是否包含总导演未说明</td>
+</tr>
+<tr>
+<td>资产</td>
+<td>包括配角在内建立独立人物素材，减少串脸和重复面孔</td>
+</tr>
+<tr>
+<td>生成</td>
+<td>普通镜头平均约3次；战争镜头常需10次以上，部分超过20次</td>
+</tr>
+<tr>
+<td>交付</td>
+<td>分工生成后统一剪辑，约每周更新一季，每季100集</td>
+</tr>
+</tbody>
+</table></div>
+<p>这揭示了一个实在的生产约束：每一集成片之前可能存在多份废弃候选。观察最终100集，无法看出背后的生成量；用成片分钟数乘以厂商单次标价，也无法直接得到制作成本。</p>
+<p>其组织方法也很具体：人物资产先统一，生成任务分给多人，成片再汇总剪辑。10人团队能否按周稳定交付，取决于前期标准是否清晰、返工是否可控。上述证据尚未说明调度由表格、聊天群、产品工作台还是代码系统完成。</p>
+<h3 id="_5">“母鸡图”到底是什么</h3>
+<p>向上追到雪宝工作室，2025年10月的新榜采访披露了一个比泛称“工作流”具体得多的方法：在共同的场景主图里固定角色位置，连续场景的不同分集围绕这张图制作，结束时回到共同的起始布局；任务按集交给创作者，而非把生图、视频、声音分别交给不同工种。雪宝把共同参考图称作“母鸡图”。〔S27〕</p>
+<p>以采访中的宫廷连续场景为例，多人各做一集时，如果每个人自行重建大殿、皇帝位置和其他人物朝向，拼接后就容易出现空间关系跳变。共同主图相当于给每位创作者同一份空间起点。以上是对其方法的技术解释，不是本剧工程文件的还原。</p>
+<p>这也解释了“无分镜法则”的准确含义：减少对逐张绘制分镜图的依赖，让生成结果保有一定弹性；不意味着没有剧本、站位、动作和镜头安排。它是一种制作约束方法，不能直接等同于某个开源Agent框架。</p>
+<p>本剧已披露的人物资产管理，与这种方法都在解决多人制作的一致性问题。但目前没有证据证明《持械入宋》逐项照搬了母鸡图或无分镜法则，报告不会把师承当成工程部署证明。</p>
+<h2 id="harness">五、模型、harness和公司：证据现在推进到哪里</h2>
+<p>把“谁生成视频”“谁提供操作界面”“谁编排任务”“谁承担发行”分开，才能回答服务商问题。同一视频模型可以经官网、云API或聚合工具调用，付款对象也未必是模型研发商。</p>
+<h3 id="seedance">关键发现：Seedance线索已追到具名实践，但仍差本剧这一环</h3>
+<p>2026年3月14日的成都AI漫剧产业峰会，雪宝工作室品牌宣传总监王天海介绍了Seedance 2.0与工作室生产方法的结合。主办方3月17日的回顾明确记载，工作室在模型推出后一周内实现提效与提质。这比“文章提到了Seedance”更强：它能证明相关工作室实际应用该模型。〔S28〕</p>
+<p>但证据链到此为止：<strong>雪宝工作室使用 → 老十一团队曾向其学习 → 《持械入宋》使用何种版本</strong>，最后一个箭头仍缺具名说明或工程记录。即使最终确认Seedance，也还需要区分具体季别、生成环节、模型版本和调用入口。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司／项目</th>
+<th>找到的具体使用或关系证据</th>
+<th>能否认定为本剧供应商</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>字节跳动：番茄、红果、抖音</td>
+<td>原著书页、主创采访、官方账号和付费页；集团官网可核实产品归属</td>
+<td>内容与分发服务可确认；本剧合同金额未知</td>
+</tr>
+<tr>
+<td>字节跳动：Seedance、即梦</td>
+<td>王天海披露雪宝工作室应用Seedance 2.0；另一专访列出《长恨》使用即梦</td>
+<td>本剧生成供应商尚未确认</td>
+</tr>
+<tr>
+<td>快手：可灵</td>
+<td>雪宝对《长恨》的采访明确列出可灵</td>
+<td>具体关联作品成立；不是本剧采用证据</td>
+</tr>
+<tr>
+<td>商汤：Seko</td>
+<td>商汤基地活动报道记录雪宝工作室参与分享制作与协作经验</td>
+<td>有生态联系；缺本剧项目或采购凭证</td>
+</tr>
+<tr>
+<td>OpenClaw</td>
+<td>新榜采访记录雪宝的前期制作自动化实验及故障</td>
+<td>可确认相关团队试验；不能认定为本剧harness</td>
+</tr>
+<tr>
+<td>字节跳动：扣子／Coze</td>
+<td>同一采访追溯雪宝从2025年3月搭建智能体工作流</td>
+<td>相关工作室历史实践；本剧部署未确认</td>
+</tr>
+<tr>
+<td>Google：Nano Banana</td>
+<td>雪宝描述让Agent调用它画图的失败；Google官方可核实品牌来源</td>
+<td>实验目标工具，不能算本剧采购</td>
+</tr>
+<tr>
+<td>AI拍</td>
+<td>《长恨》制作采访中被列为工具</td>
+<td>本次未唯一核实产品法人；不做公司归因</td>
+</tr>
+</tbody>
+</table></div>
+<p>表中来源为S04、S08—S10、S23、S28。ComfyUI、Dify、LangGraph、n8n、独立配音模型及具体剪辑软件，目前均没有查到本剧级证据。画风、口型和角色一致性不能唯一识别底模，也不能证明训练过专用LoRA。</p>
+<h3 id="openclaw">OpenClaw实验暴露了哪一段有效、哪一段不可靠</h3>
+<p>新榜对雪宝的专访给出了可定位的细节：制片表制作从人工1—2天缩到约5分钟；一天可形成标明人物情绪、站位、动作和运镜的制作剧本；但也发生了让Agent在Nano Banana画图时，打开工具却不输入提示词、仍声称已经执行的情况。此前扣子“一键成片”尝试的障碍，则是人物一致性。〔S09〕</p>
+<p>这组信息的价值在于定位自动化边界：整理制作信息与稳定生成可交付视频，是不同任务。工具返回成功、Agent口头说完成、实际生成了可用素材，是三种不同状态。所谓harness的可靠性，需要在这些交接处检验。<strong>这是相关团队公开实验所提供的工程教训；不是对《持械入宋》内部故障的指认。</strong></p>
+<p>至于“250元生成一部剧本”，采访只记载某一天的一次费用，不能当作标准单集成本，更不能套在本剧上。3月实验状态也不能自动代表11月生产系统的状态。</p>
+<h2 id="_6">六、账号里的作品组合，比单个爆款更有解释力</h2>
+<p>本次账号目录共43个条目，其中39个已有分集，4个显示0集。这里的条目包含同一IP的不同季，不能写成43个原创IP；上架也不能证明全部由账号独立制作。〔S24〕</p>
+<p>除《持械入宋》之外，下列同账号条目值得注意：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>目录作品</th>
+<th style="text-align: right;">展示播放量</th>
+<th style="text-align: right;">集数</th>
+<th>观察意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>退役归来，这个保镖不好惹</td>
+<td style="text-align: right;">4.5亿</td>
+<td style="text-align: right;">100</td>
+<td>单个合集的播放已高于《持械入宋》任一单季；账号有其他大型流量入口</td>
+</tr>
+<tr>
+<td>亿万财富抵不过家人安宁</td>
+<td style="text-align: right;">2772.9万</td>
+<td style="text-align: right;">10</td>
+<td>集数形态差异很大，不能用每部100集套全账号</td>
+</tr>
+<tr>
+<td>臭山贼朕就是女帝</td>
+<td style="text-align: right;">2445.4万</td>
+<td style="text-align: right;">100</td>
+<td>历史／古装题材已有其他目录资产</td>
+</tr>
+<tr>
+<td>烬九州AI真人版</td>
+<td style="text-align: right;">1224.8万</td>
+<td style="text-align: right;">101</td>
+<td>另一个已形成体量的AI真人目录</td>
+</tr>
+<tr>
+<td>三国开局融合李元霸</td>
+<td style="text-align: right;">1121.9万</td>
+<td style="text-align: right;">100</td>
+<td>同IP第二、三季也已上架</td>
+</tr>
+<tr>
+<td>摆摊的我是绝世高手</td>
+<td style="text-align: right;">693.8万</td>
+<td style="text-align: right;">100</td>
+<td>账号可见延伸至第五季</td>
+</tr>
+<tr>
+<td>我有一座神奇动物园</td>
+<td style="text-align: right;">9.1万</td>
+<td style="text-align: right;">100</td>
+<td>相同账号、同为100集，当前展示体量仍可相差很大</td>
+</tr>
+</tbody>
+</table></div>
+<p>这支持一个比“AI让任何人都能爆红”更有用的判断：团队同时经营多个题材和续季，可以在已有内容中寻找继续投入的方向。长期资产包括角色、题材经验、观众认知和账号入口。模型工具只能解释供给能力的一部分。</p>
+<p>不过，这个截面不能用于计算爆款率：各剧上映年龄不同，没有投放额、退款和分账数据，目录还可能经历删除或重发。不能把短期低播放条目直接判为亏损，也不能用受访者“部部盈利”的陈述替代项目账目。</p>
+<h3 id="_7">内容为什么适合续季</h3>
+<p>《持械入宋》把五位主角拆成不同能力：林昭统筹，谢长风负责战斗，马振邦负责制造，陈素负责医疗，王浩川从通信兵走向科举与朝堂。报道中的故事推进既有战争，也有生产、制度和人物关系。〔S17〕</p>
+<p>本文据此判断，这种结构给续季提供了多条故事线：一个角色解决生存问题，另一个角色打开政治或经济局面，剧情可以扩展而不必每季重新建立世界。固定群像又让人物资产有重复使用价值。技术复用与故事延展恰好能相互配合。</p>
+<p>这仍只是解释机制，不是经实验识别的爆款原因。没有观众访谈和分群留存数据，无法确定军事、历史知识、人物感情或视觉场面各自贡献了多少观看。</p>
+<h2 id="_8">七、收入与成本：能够算到哪一步</h2>
+<p>主创10月29日专访称，本系列累计算力投入超过100万元，商业回报约千万元。这是目前最直接的项目财务陈述，但没有说明期间、含税与否、总流水还是制作方实收，也没有披露人工、版权、投放和渠道费用。〔S01〕</p>
+<p>与直接页面结合后，可以把商业路径明确到三层：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>环节</th>
+<th>已有证据</th>
+<th>尚缺的收入参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>小说改编</td>
+<td>番茄原著及改编说明</td>
+<td>授权范围、版权费、作者参与分成方式</td>
+</tr>
+<tr>
+<td>红果播出</td>
+<td>主创采访与作品传播记录</td>
+<td>本剧结算规则、保底、广告分成、到账周期</td>
+</tr>
+<tr>
+<td>抖音付费</td>
+<td>第十季第16集起的付费标签及“10钻起”购买页</td>
+<td>实际套餐、付费人数、渠道扣费、退款及净回款</td>
+</tr>
+</tbody>
+</table></div>
+<p>番茄官方规则区分阅读渠道收益和改编版权收益，但一般规则不等于本剧合同。字节官网能确认三个产品的归属，不能证明平台承担了全部投资或拥有全部版权。〔S04、S05〕</p>
+<p><strong>现有信息不支持“成本100万、赚1000万、净赚900万”这个算法。</strong> “超过100万”是下限且仅指算力；“商业回报约千万”的含义也未定义。用两者相除，既不是净利润率，也不是可审计的ROI。</p>
+<p>更值得追问的是收入结构：同一IP通过红果观看和抖音付费承接不同用户，可能获得多种回款；持续续季也使新内容与旧目录同时被消费。要判断这种生意可复制，至少需要逐季到账与全成本匹配，而不是一个系列汇总喜报。</p>
+<h2 id="_9">八、哪些答案已经变实，哪些还需要制作方材料</h2>
+<p>这次调查补齐了可回查的十季目录、1000个目录集数、第十季逐集时长、付费起点、购买页门槛和同账号作品组合。由此可以较有把握地说：这是已经形成多季生产和多渠道发行的内容项目，直接付费是其可见发行方式之一。</p>
+<p>技术与主体层面仍有四个实质缺口，每一个都有对应的核实材料：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>待解问题</th>
+<th>能使结论升级的最小材料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>具体模型及版本</td>
+<td>一段可对应正片镜头的制作工程，包含日期、模型、参考资产与生成结果</td>
+</tr>
+<tr>
+<td>实际harness</td>
+<td>项目工作台、任务记录或流程代码，能显示谁调用工具、怎样验收与返工</td>
+</tr>
+<tr>
+<td>制作公司与权利人</td>
+<td>片尾主体、授权链、签约公司和信用代码的对应关系</td>
+</tr>
+<tr>
+<td>实际利润</td>
+<td>按季结算单、回款、版权与投放费用，以及算力和人力成本</td>
+</tr>
+</tbody>
+</table></div>
+<p>继续用新闻转载填充这些空白不会提高可信度。现阶段最可靠的判断，是把它视作“人主导、资产复用、多人生成、统一成片、连续发行”的案例；具体软件品牌仍应等待项目材料，而不是根据师承、平台归属或流行工具猜测。</p>
+<h2 id="_10">参考资料与数据附件</h2>
+<p>以下按证据用途列出正文来源。部分原文由作者发布在澎湃号、搜狐号等渠道，不等于平台对财务或技术事实的独立认证。转载与原文按一个来源家族处理。</p>
+<ul>
+<li><strong>S01</strong>｜<a href="https://www.thepaper.cn/newsDetail_forward_34352445">一个“草根”团队的两年——对话头部IP《持械入宋》团队</a>，2026-10-29。具名主创采访：身份、分工、生成次数及财务自述。</li>
+<li><strong>S02</strong>｜<a href="https://www.douyin.com/user/MS4wLjABAAAAKUlKQSSrVSJ4yonh423oZKP2aSb7_lreNFrB9DWJP8E">老十一剧场主页</a>。账号身份；不同页面缓存的粉丝数不拼接为增长序列。</li>
+<li><strong>S03</strong>｜<a href="https://fanqienovel.com/page/7616151491132279832">番茄小说《持械入宋》</a>。原著、作者、连载状态及改编说明。</li>
+<li><strong>S04</strong>｜<a href="https://www.bytedance.com/products-services">ByteDance产品与服务</a>。确认番茄、红果、抖音产品归属。</li>
+<li><strong>S05</strong>｜<a href="https://fanqienovel.com/writer/zone/article/7632280421778079806">番茄：平台稿费与福利说明</a>。一般收益分类，不是本剧合同。</li>
+<li><strong>S08</strong>｜<a href="https://m.thepaper.cn/newsDetail_forward_32566941">极客电影：专访雪宝工作室</a>，2026-02-10。《长恨》的工具使用线索。</li>
+<li><strong>S09</strong>｜<a href="https://cp.newrank.cn/article/detail/34131">新榜：用“龙虾”做AI短剧效率翻10倍？</a>，2026-03-26；<a href="https://www.sohu.com/a/1002783693_108964">新榜作者账号可读版本</a>，2026-03-30。同一采访，非两份独立证据。</li>
+<li><strong>S10</strong>｜<a href="https://legacy.sensetime.com/cn/news-detail/51170691?categoryId=72">商汤：Seko产业基地在沪启动</a>，2026-05-27；<a href="https://finance.sina.cn/2026-05-27/detail-inhzivfn9197889.d.html?wm=3049_0015">上海证券报记者向商汤求证后的活动报道</a>。后者提供可读的雪宝工作室参与细节，不是采购证明。</li>
+<li><strong>S14</strong>｜<a href="https://finance.sina.cn/cj/2026-09-11/detail-inirnaiy8941365.d.html">新播场：今年还没过完，但年度最佳AI短剧已经有了？</a>，2026-09-11。早期上线记录；其中“南宋末年”的表述未采用。</li>
+<li><strong>S15</strong>｜<a href="https://www.douyin.com/video/7694063424465383498">老十一剧场：持械入宋喜报</a>，2026-10-08。海报展示的播放与收藏主张。</li>
+<li><strong>S16</strong>｜<a href="https://www.douyin.com/video/7697835268295925834">老十一剧场：第九季热度突破8200万</a>，2026-10-18。</li>
+<li><strong>S17</strong>｜<a href="https://newrank.cn/article/detail/34814">新榜：被骂“降智”的AI短剧，靠40亿播放的《持械入宋》扳回一局</a>，2026-10-28。红果收藏、人物与内容介绍；40亿引用制作方。</li>
+<li><strong>S19</strong>｜<a href="https://duanjubaike.org/zh-Hans/drama/73184">短剧百科：第十季</a>。第三方99集／161分钟记录，本次采用直接目录替代。</li>
+<li><strong>S23</strong>｜<a href="https://blog.google/products-and-platforms/products/gemini/updated-image-editing-model/">Google：Gemini图像编辑升级</a>，2025-08-26。Nano Banana品牌来源。</li>
+<li><strong>S24</strong>｜<a href="https://www.douyin.com/user/MS4wLjABAAAAKUlKQSSrVSJ4yonh423oZKP2aSb7_lreNFrB9DWJP8E?from_tab_name=main&amp;showSubTab=playlet">制作账号“短剧”目录</a>。本次新增43条公开目录快照；<a href="../files/reports/%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B%E6%B7%B1%E5%BA%A6%E8%B0%83%E7%A0%94-20261101/data/creator-catalog.csv">完整底表</a>包含每个合集ID，可拼成<code>https://www.douyin.com/collection/{collection_id}/1</code>回查。</li>
+<li><strong>S25</strong>｜<a href="https://www.douyin.com/collection/7697274036942571554/1">第十季合集</a>，<a href="https://www.douyin.com/video/7697274002573872394">首集播放器</a>；<a href="../files/reports/%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B%E6%B7%B1%E5%BA%A6%E8%B0%83%E7%A0%94-20261101/data/season10-episodes.csv">100集底表</a>保留时长、付费标记与视频ID，可拼成<code>https://www.douyin.com/video/{video_id}</code>回查。</li>
+<li><strong>S26</strong>｜<a href="https://www.douyin.com/video/7697597525955562793">第十季第16集付费页</a>。本次直接观察“购买后可看”“10钻起”及100集全等字段；未购买。</li>
+<li><strong>S27</strong>｜<a href="https://www.newrank.cn/article/detail/32938">新榜：成本降低70%，AI“导演”培训3天即可上岗，AI真人短剧进入爆发前夜</a>，2025-10-24。母鸡图与按集分工原始采访。</li>
+<li><strong>S28</strong>｜<a href="https://www.itopmarketing.com/info22031">短剧内行人：AI漫剧产业峰会回顾</a>，2026-03-17。主办方对3月14日活动的回顾，记录王天海及雪宝工作室的Seedance 2.0实践。</li>
+<li><strong>S29</strong>｜<a href="https://www.douyin.com/video/7694202074539560228">第一季当前第1集</a>。公开时间2026-10-08，与早期上映报道不同，说明当前视频时间不能替代首次上线时间。</li>
+<li><strong>S30</strong>｜<a href="https://www.sohu.com/a/1089693495_121164223">关于“两姐妹制作商”的网络文章</a>。仅用于登记未采信的主体说法，不作公司身份依据。</li>
+</ul>
+<p>采集窗口为2026年11月1日夜至11月2日凌晨，公开网页会继续变化。源数据不是平台API导出；目录的100集记录检查不等于全剧内容审看。算术与转录复核见<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B%E6%B7%B1%E5%BA%A6%E8%B0%83%E7%A0%94-20261101/audit/README.md">审计说明</a>，完整来源台账及未采用线索见<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B%E6%B7%B1%E5%BA%A6%E8%B0%83%E7%A0%94-20261101/sources.md">sources.md</a>。本研究不构成投资建议。</p></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E3%80%8A%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B%E3%80%8B%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A&amp;ticker=%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B%E6%B7%B1%E5%BA%A6%E8%B0%83%E7%A0%94-20261101&amp;source=reports%2F%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B%E6%B7%B1%E5%BA%A6%E8%B0%83%E7%A0%94-20261101%2F%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261101.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2Ffefbcee8a826.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/d3cbae697c3e.html">《持械入宋》深度调研</a><div class="meta">2026-11-02 · 导读</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">一、先把剧和生产商认清</a></li>
+<li><a href="#40">二、逐季数据：把“40亿”拆开看</a><ul>
+<li><a href="#_2">制作方喜报、媒体收藏和账号播放是三类数据</a></li>
+</ul>
+</li>
+<li><a href="#100">三、第十季100集：时长、付费门槛和发行形态</a></li>
+<li><a href="#_3">四、怎样做出来：实际分工与可追溯的方法</a><ul>
+<li><a href="#_4">本剧披露了哪些生产细节</a></li>
+<li><a href="#_5">“母鸡图”到底是什么</a></li>
+</ul>
+</li>
+<li><a href="#harness">五、模型、harness和公司：证据现在推进到哪里</a><ul>
+<li><a href="#seedance">关键发现：Seedance线索已追到具名实践，但仍差本剧这一环</a></li>
+<li><a href="#openclaw">OpenClaw实验暴露了哪一段有效、哪一段不可靠</a></li>
+</ul>
+</li>
+<li><a href="#_6">六、账号里的作品组合，比单个爆款更有解释力</a><ul>
+<li><a href="#_7">内容为什么适合续季</a></li>
+</ul>
+</li>
+<li><a href="#_8">七、收入与成本：能够算到哪一步</a></li>
+<li><a href="#_9">八、哪些答案已经变实，哪些还需要制作方材料</a></li>
+<li><a href="#_10">参考资料与数据附件</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-11-04 06:49 UTC</footer></body></html>
