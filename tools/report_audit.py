@@ -334,7 +334,7 @@ def render_verdict(results: list, report_name: str = "") -> dict:
             detail = f'{source}: {fetched:.2f} (偏差 {diff1*100:.2f}%)'
             if diff2 is not None:
                 detail += f'  |  {source2}: {fetched2:.2f} (偏差 {diff2*100:.2f}%)'
-        elif not pass1 and not pass2:
+        elif not pass1 and (diff2 is None or not pass2):
             status = f'{RED}❌ 不通过{RESET}'
             detail = f'{source}: {fetched:.2f} (偏差 {diff1*100:.2f}%)'
             if diff2 is not None:
