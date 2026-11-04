@@ -142,7 +142,8 @@
     "长鑫科技",
     "阿里巴巴",
     "领益智造",
-    "京东"
+    "京东",
+    "京东健康"
   ],
   "themes": [
     "AI产业研究",
@@ -206,7 +207,9 @@
     "README.md",
     "command-log.jsonl"
   ],
-  "tickers": {},
+  "tickers": {
+    "京东健康": "06618.HK"
+  },
   "drafts": {
     "_comment": "中间产物（底稿/证据/审计/复算）识别规则：命中即标为『底稿』，不进 reports/README.md 与根 README，只保留在 index.json。dirs=路径中任一目录名完全匹配（忽略大小写）；dir_suffixes=目录名去掉日期后缀后的结尾；file_patterns=文件名（去 .md 与日期后缀、小写）的正则。文件名含『公众号』的不算底稿。个别例外用 front-matter 的 type 覆盖。",
     "dirs": [

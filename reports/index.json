@@ -1,8 +1,74 @@
 {
-  "count": 2483,
-  "published": 2274,
-  "drafts": 209,
+  "count": 2489,
+  "published": 2279,
+  "drafts": 210,
   "reports": [
+    {
+      "title": "京东健康投资研究：药品供应链值多少钱，服务增长有多少来自京东集团",
+      "path": "reports/京东健康/京东健康研究报告-20261104.md",
+      "bucket": "公司",
+      "group": "京东健康",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-04",
+      "date_source": "front-matter",
+      "ticker": "06618.HK"
+    },
+    {
+      "title": "DeepSeek Super-agent 深度技术研究",
+      "path": "reports/DeepSeek/DeepSeek-Super-agent-深度技术研究-20261102.md",
+      "bucket": "公司",
+      "group": "DeepSeek",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-02",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "《持械入宋》研究报告",
+      "path": "reports/持械入宋深度调研-20261101/持械入宋研究报告-20261101.md",
+      "bucket": "公司",
+      "group": "持械入宋深度调研-20261101",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-01",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "证据登记表",
+      "path": "reports/持械入宋深度调研-20261101/sources.md",
+      "bucket": "公司",
+      "group": "持械入宋深度调研-20261101",
+      "series": "",
+      "type": "底稿",
+      "date": "2026-11-01",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "贵州茅台（600519）2026年三季报研究报告",
+      "path": "reports/茅台/贵州茅台-earnings-2026Q3-20261031.md",
+      "bucket": "公司",
+      "group": "茅台",
+      "series": "",
+      "type": "财报",
+      "date": "2026-10-31",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "茅台三季报：三个亮眼数字，三种不同含义",
+      "path": "reports/茅台/茅台-公众号-20261031.md",
+      "bucket": "公司",
+      "group": "茅台",
+      "series": "",
+      "type": "公众号",
+      "date": "2026-10-31",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "泡泡玛特（09992.HK）2026Q3业绩分析",
       "path": "reports/泡泡玛特/泡泡玛特-earnings-2026H1及Q3更新-20261028.md",
