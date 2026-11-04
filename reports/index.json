@@ -1,8 +1,19 @@
 {
-  "count": 2490,
-  "published": 2280,
+  "count": 2491,
+  "published": 2281,
   "drafts": 210,
   "reports": [
+    {
+      "title": "现代牙科（03600.HK）研究报告",
+      "path": "reports/现代牙科/现代牙科研究报告-20261104.md",
+      "bucket": "公司",
+      "group": "现代牙科",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-04",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "京东健康投资研究：药品供应链值多少钱，服务增长有多少来自京东集团",
       "path": "reports/京东健康/京东健康研究报告-20261104.md",
