@@ -78,7 +78,11 @@ def verify_market_cap(price, shares, reported_cap, currency=""):
     r = exact(reported_cap)
 
     calculated = _CTX.multiply(p, s)
-    deviation = abs(float(calculated - r) / float(r)) * 100 if r != 0 else 0
+    if r == 0:
+        # A nonzero calculated cap cannot agree with a zero reference.
+        deviation = float("inf") if calculated != 0 else 0
+    else:
+        deviation = abs(float(calculated - r) / float(r)) * 100
 
     print("=" * 60)
     print("市值验算 (Market Cap Verification)")

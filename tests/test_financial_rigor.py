@@ -19,6 +19,7 @@ import os
 import subprocess
 import sys
 import unittest
+from contextlib import redirect_stdout
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'tools'))
 
@@ -112,6 +113,31 @@ class TestMarketCapMathUnaffected(unittest.TestCase):
 
     def test_gross_mismatch_returns_false(self):
         self.assertFalse(F.verify_market_cap(8.00, 500000000, 40.00, 'CNY'))
+
+
+class TestZeroReportedMarketCap(unittest.TestCase):
+
+    def test_nonzero_calculated_cap_does_not_match_zero_reported_cap(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            result = F.verify_market_cap(8, 500000000, 0, 'CNY')
+        self.assertFalse(result)
+        self.assertIn('❌', output.getvalue())
+        self.assertNotIn('验证通过', output.getvalue())
+
+    def test_equal_zero_caps_still_match(self):
+        for price, shares in ((0, 500000000), (8, 0), (0, 0)):
+            with self.subTest(price=price, shares=shares), redirect_stdout(io.StringIO()):
+                self.assertTrue(F.verify_market_cap(price, shares, 0, 'CNY'))
+
+    def test_cli_warns_for_zero_reported_cap(self):
+        proc = _run(['verify-market-cap', '--price', '8',
+                     '--shares', '500000000', '--reported', '0',
+                     '--currency', 'CNY'])
+        self.assertEqual(proc.returncode, 0, proc.stderr.decode('utf-8', 'replace'))
+        output = proc.stdout.decode('utf-8')
+        self.assertIn('❌', output)
+        self.assertNotIn('验证通过', output)
 
 
 if __name__ == '__main__':
