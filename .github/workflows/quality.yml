@@ -1,0 +1,24 @@
+name: Quality checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check generated Codex artifacts
+        run: |
+          python3 scripts/sync-codex-skills.py --check
+          python3 scripts/sync-codex-prompts.py --check
+      - name: Compile Python entry points
+        run: python3 -m py_compile tools/*.py scripts/*.py
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -v
