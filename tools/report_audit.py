@@ -126,6 +126,15 @@ _KV_LABEL_RE = re.compile(
 )
 
 
+def _split_table_cells(line: str) -> list:
+    """Remove optional outer pipes while preserving empty column positions."""
+    if line.startswith('|'):
+        line = line[1:]
+    if line.endswith('|'):
+        line = line[:-1]
+    return line.split('|')
+
+
 def _parse_md_tables(lines: list) -> list:
     """解析 Markdown 中所有表格，返回 (row_label, col_header, value, unit, lineno, raw) 列表。"""
     results = []
@@ -134,8 +143,7 @@ def _parse_md_tables(lines: list) -> list:
         line = lines[i].strip()
         # 检测表头行（含 | 且不是分隔行）
         if '|' in line and not re.match(r'^\|[\-\s\|:]+\|$', line):
-            headers_raw = [h.strip().strip('*_').strip() for h in line.split('|')]
-            headers_raw = [h for h in headers_raw if h]
+            headers_raw = [h.strip().strip('*_').strip() for h in _split_table_cells(line)]
             # 下一行应是分隔行
             if i + 1 < len(lines) and re.match(r'^\|[\-\s\|:]+\|$', lines[i+1].strip()):
                 i += 2  # 跳过分隔行
@@ -144,8 +152,7 @@ def _parse_md_tables(lines: list) -> list:
                     dline = lines[i].strip()
                     if not dline or not dline.startswith('|'):
                         break
-                    cells = [c.strip().strip('*_~').strip() for c in dline.split('|')]
-                    cells = [c for c in cells if c != '']
+                    cells = [c.strip().strip('*_~').strip() for c in _split_table_cells(dline)]
                     if len(cells) < 2:
                         i += 1
                         continue
