@@ -9,7 +9,10 @@ This skill is generated from `skills/deep-company-series.md` so Claude Code and 
 
 - Treat `$ARGUMENTS` as the user's request in the current Codex thread.
 - When the source mentions Claude-only surfaces such as Task, Agent, WebSearch, Bash, Read, or Write, use the closest Codex capability available in this session: subagents when available, web search when needed, shell commands for local tools, and normal file edits for workspace files.
-- Use shared project tools from `tools/` in this repository. Prefer running commands from the repository root with paths like `python3 tools/financial_rigor.py ...`; if the current thread starts outside the repo, locate the actual checkout path first instead of assuming a fixed home-directory path.
+- Locate the actual project root containing `AGENTS.md`, `skills/`, and `tools/` before resolving project paths. Do not assume `~/ai-berkshire` or use the installed skill directory as the root. Run shared tools from the project root, or pass absolute tool and report paths. Save reports under its `reports/` directory unless the user specifies another destination.
+- Before running Python commands, identify and verify a usable interpreter; replace the example command `python3` as needed. A WindowsApps command entry alone does not verify an interpreter.
+- Adapt examples to the active shell. In PowerShell, use single-line commands instead of Bash backslash continuations, quote path arguments, and replace `grep`/`head` pipelines with available `rg` or PowerShell commands.
+- Use the system temporary directory instead of assuming `/tmp` exists: `tempfile.gettempdir()` with `pathlib.Path` in Python, or `[System.IO.Path]::GetTempPath()` with `Join-Path` in PowerShell. Ensure output parent directories exist before writing.
 - Before starting research, run the `date` command to confirm today's date; treat it as the baseline for "latest" data and state the data cutoff date in the report header. Never assume the current date from training data.
 - Preserve the research quality rules from `AGENTS.md`: cross-check financial data, use exact arithmetic tools for valuation/math, and clearly label uncertainty and source gaps.
 
@@ -144,7 +147,7 @@ This skill is generated from `skills/deep-company-series.md` so Claude Code and 
 □ 3. 重复加计扫描：已并表子公司不在"投资组合"里、SOTP 不双算
 □ 4. 横向比较公平性：不能"主业 PE（剔除现金+组合）" vs "对手 PE（不剔）"
 □ 5. 概率加权全删：见上一条
-□ 6. 绝对化表述全弱化：grep "显然|必然|严重|教科书|完美"
+□ 6. 绝对化表述全弱化：rg -n --hidden --no-ignore -F -e '显然' -e '必然' -e '严重' -e '教科书' -e '完美' -- 'reports/'
 □ 7. 第三方数据来源标注：每条非财报数据后跟"（来源：X）"
 ```
 
@@ -165,7 +168,7 @@ This skill is generated from `skills/deep-company-series.md` so Claude Code and 
 1. 阅读公司近 5 年年报、最新季报
 2. 阅读至少 3 份独立卖方研报（找共识 + 反共识）
 3. 用 `/investment-team` 或 `/investment-research` 先生成内部研究底稿
-4. 与用户确认 8 篇的核心论点（避免写完才发现方向不对）
+4. 按已确定的篇数，与用户确认各篇的核心论点（避免写完才发现方向不对）
 
 ### 阶段 2：写作（按 01→末篇顺序写，不跳）
 
@@ -186,9 +189,11 @@ This skill is generated from `skills/deep-company-series.md` so Claude Code and 
 ### 阶段 4：发布前最终核查
 
 ```bash
-# 推送前必须本地 grep 一次（按 ai-berkshire 隐私规则）
-grep -r "<本机用户名>\|/Users/\|<个人身份信息>" reports/ | head
+# 从实际项目根目录扫描；先替换个人信息占位符，不适用的搜索项应删除
+rg -n -i --hidden --no-ignore -F -e '<本机用户名>' -e '/Users/' -e '\Users\' -e '<真实姓名>' -e '<其他个人身份信息>' -- 'reports/'
 ```
+
+检查全部命中结果，不用 `head` 截断。`rg` 退出码 0 表示有命中、须逐项核查；1 表示无命中；其他退出码或读取错误表示扫描失败，不能视为通过。
 
 确认无误后才 `git pull --rebase && git commit && git push`。
 
@@ -249,7 +254,7 @@ grep -r "<本机用户名>\|/Users/\|<个人身份信息>" reports/ | head
 
 - 所有公开报告**只用公开信息**（财报、官方披露、券商研报、知名第三方机构）
 - 不用任何**用户个人信息**（公司花名、内部 IM、未公开持仓信息）
-- 推送前必须用 grep 扫描 本机用户名 / `/Users/` / 真实姓名 等隐私字段
+- 推送前必须按上述固定字符串搜索扫描本机用户名、`/Users/`、`\Users\`、真实姓名及其他个人身份信息，核查全部命中；扫描失败不得视为通过。
 - 公开署名按用户多层身份策略，不混用
 
 ---
