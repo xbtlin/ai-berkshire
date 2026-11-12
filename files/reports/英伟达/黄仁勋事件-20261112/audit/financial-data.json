@@ -1,0 +1,320 @@
+{
+  "cutoff_beijing": "2026-11-12 21:30 approximate research session",
+  "currency_unit": "USD million unless stated; prices USD/share; shares million",
+  "annual": [
+    {
+      "FY": 2022,
+      "revenue": 26914,
+      "net_income_gaap": 9752,
+      "gross_margin_pct": 64.9,
+      "operating_income_gaap": 10041,
+      "ocf": 9108,
+      "capex": 976,
+      "fcf_standard": 8132,
+      "fcf_company": 8049
+    },
+    {
+      "FY": 2023,
+      "revenue": 26974,
+      "net_income_gaap": 4368,
+      "gross_margin_pct": 56.9,
+      "operating_income_gaap": 4224,
+      "ocf": 5641,
+      "capex": 1833,
+      "fcf_standard": 3808,
+      "fcf_company": 3750
+    },
+    {
+      "FY": 2024,
+      "revenue": 60922,
+      "net_income_gaap": 29760,
+      "gross_margin_pct": 72.7,
+      "operating_income_gaap": 32972,
+      "ocf": 28090,
+      "capex": 1069,
+      "fcf_standard": 27021,
+      "fcf_company": 26947
+    },
+    {
+      "FY": 2025,
+      "revenue": 130497,
+      "net_income_gaap": 72880,
+      "gross_margin_pct": 75.0,
+      "operating_income_gaap": 81453,
+      "ocf": 64089,
+      "capex": 3236,
+      "fcf_standard": 60853,
+      "fcf_company": 60724
+    },
+    {
+      "FY": 2026,
+      "revenue": 215938,
+      "net_income_gaap": 120067,
+      "gross_margin_pct": 71.1,
+      "operating_income_gaap": 130387,
+      "ocf": 102718,
+      "capex": 6042,
+      "fcf_standard": 96676,
+      "fcf_company": 96575
+    }
+  ],
+  "quarters": [
+    {
+      "FY": 2026,
+      "Q": 3,
+      "end": "2025-10-26",
+      "revenue": 57006,
+      "data_center_revenue_rounded": 51200,
+      "net_income_gaap": 31910,
+      "eps_gaap": 1.3,
+      "gross_margin_pct": 73.4
+    },
+    {
+      "FY": 2026,
+      "Q": 4,
+      "end": "2026-01-25",
+      "revenue": 68127,
+      "data_center_revenue_rounded": 62300,
+      "net_income_gaap": 42960,
+      "eps_gaap": 1.76,
+      "gross_margin_pct": 75.0
+    },
+    {
+      "FY": 2027,
+      "Q": 1,
+      "end": "2026-04-26",
+      "revenue": 81615,
+      "data_center_revenue_rounded": 75200,
+      "net_income_gaap": 58321,
+      "eps_gaap": 2.39,
+      "eps_nongaap_current_sbc_included": 1.87,
+      "gross_margin_pct": 74.9,
+      "fcf_company": 48554
+    },
+    {
+      "FY": 2027,
+      "Q": 2,
+      "end": "2026-07-26",
+      "revenue": 96221,
+      "data_center_revenue_rounded": 89000,
+      "net_income_gaap": 59688,
+      "eps_gaap": 2.46,
+      "eps_nongaap_current_sbc_included": 2.22,
+      "gross_margin_pct": 75.0,
+      "fcf_company": 21341
+    }
+  ],
+  "ttm_20260726": {
+    "revenue": 302970,
+    "net_income_gaap": 192880,
+    "eps_gaap": 7.91,
+    "operating_income_gaap": 197579,
+    "ocf": 134360,
+    "capex": 7354,
+    "fcf_standard": 127006,
+    "fcf_company": 126886,
+    "stock_based_compensation": 7241,
+    "equity_gains_cashflow_adjustment": 30552,
+    "equity_gains_official_derivation": "8918(FY2026)+23707(H1FY2027)-2073(H1FY2026)=30552"
+  },
+  "balance_20260726_official": {
+    "cash": 22443,
+    "marketable_debt_securities": 34143,
+    "marketable_equity_securities": 42783,
+    "non_marketable_securities": 51157,
+    "short_debt": 1000,
+    "long_debt": 32366,
+    "interest_bearing_debt": 33366,
+    "cash_plus_debt_securities": 56586,
+    "conservative_net_cash": 23220,
+    "cash_plus_marketable_debt_and_equity_less_debt": 66003,
+    "current_lease_liabilities": 509,
+    "long_lease_liabilities": 4985,
+    "shareholders_equity": 228984,
+    "total_assets": 320272,
+    "accounts_receivable": 63059,
+    "inventory": 31575
+  },
+  "prices": {
+    "close_20261111": 173.73,
+    "close_market_cap_calculated": 4195058.31,
+    "premarket_stockanalysis_20261112_0814_EST": 159.43,
+    "premarket_stockanalysis_20261112_0757_EST": 160.91,
+    "premarket_AP_20261112_1226_UTC": 160.85,
+    "market_cap_at_15943_calculated": 3849756.21,
+    "shares_outstanding_stockanalysis": 24150,
+    "shares_outstanding_investing": 24150,
+    "shares_sec_20260821_rounded": 24100,
+    "shares_sec_20260726_exact": 24147,
+    "shares_lukb": 24147,
+    "mcap_17373_exact_shares": 4195058.31,
+    "mcap_15943_exact_shares": 3849756.21,
+    "market_cap_primary_share_basis": "24147 million shares as of 2026-07-26; not live current share count",
+    "shares_used_for_valuation": 24147,
+    "shares_used_for_valuation_date": "2026-07-26"
+  },
+  "guidance": {
+    "Q3_FY2027_revenue": 108000,
+    "revenue_range_pct": 2,
+    "Q3_GAAP_gross_margin_pct": 74.0,
+    "Q3_GAAP_opex": 9200,
+    "FY2027_tax_rate_pct_range": [
+      16,
+      18
+    ],
+    "china_dc_compute_in_guidance": 0,
+    "status": "company guidance, NOT reported results",
+    "earnings_date": "2026-11-17 after US close; StockAnalysis confirmed date"
+  },
+  "capital_return": {
+    "quarterly_dividend_per_share_current": 0.25,
+    "annualized_dividend_per_share": 1.0,
+    "first_half_FY2027_repurchase_spend_10Q": 39800,
+    "first_half_repurchase_shares_million": 203,
+    "remaining_authorization_10Q": 99300
+  },
+  "important_differences": [
+    "StockAnalysis cash+short investments 62469 (short investments40026) conflicts with SEC cash+marketable DEBT56586 (debt34143) by10.3966%; cannot reconcile difference; use SEC primary and mark vendor discrepancy. SEC separately has marketable EQUITY42783, which is not cash.",
+    "StockAnalysis Total Debt38860 includes operating leases5494; interest-bearing debt33366 excludes leases. Do not mix net cash denominators.",
+    "Standard FCF=OCF minus cash capex; NVIDIA FCF additionally subtracts principal payments on PP&E/intangibles. FY2026 difference101; TTM difference120. Both are legitimate defined measures.",
+    "StockAnalysis FY2023 operating income5577 excludes acquisition termination cost1353; GAAP official operating income4224. Use official.",
+    "TTM GAAP net income includes equity investment gains; Q1FY27 GAAP EPS2.39 vs adjusted1.87, Q2 2.46 vs2.22. Since FY27 nonGAAP includes SBC; old nonGAAP must be restated before comparisons.",
+    "Some latest cashflow/balance stockanalysis tables inconsistent with official filings beyond liquidity; for material decisions prefer official values.",
+    "Quote pages are asynchronous (159.43 to160.91 premarket); use explicit timestamp and about160 working reference, not falsely precise real-time claim.",
+    "Q1+Q2 revenue96221+81615=177836 but official half year177837 (million rounding discrepancy1); use official H1 forTTM302970."
+  ],
+  "sources": {
+    "q2_2027_news": {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "refs": [
+        "turn3search0",
+        "turn4view0",
+        "turn13view3"
+      ]
+    },
+    "q2_2027_sec": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "refs": [
+        "turn7view2",
+        "turn9view0",
+        "turn9view2",
+        "turn9view4"
+      ]
+    },
+    "q1_2027": {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027",
+      "refs": [
+        "turn7search2",
+        "turn7search1"
+      ]
+    },
+    "fy2026": {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
+      "refs": [
+        "turn13view0",
+        "turn14view1"
+      ]
+    },
+    "fy2025": {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025",
+      "refs": [
+        "turn13view1",
+        "turn14view2"
+      ]
+    },
+    "fy2024": {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2024",
+      "refs": [
+        "turn13view2",
+        "turn14view3",
+        "turn14view4"
+      ]
+    },
+    "fy2023": {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023",
+      "refs": [
+        "turn14view0",
+        "turn17view0",
+        "turn17view1"
+      ]
+    },
+    "q3_2026": {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026",
+      "refs": [
+        "turn11view3"
+      ]
+    },
+    "stockanalysis_financials": {
+      "url": "https://stockanalysis.com/stocks/nvda/financials/",
+      "refs": [
+        "turn3search2",
+        "turn13view4"
+      ]
+    },
+    "stockanalysis_cf": {
+      "url": "https://stockanalysis.com/stocks/nvda/financials/cash-flow-statement/",
+      "refs": [
+        "turn4view1",
+        "turn5view2"
+      ]
+    },
+    "stockanalysis_bs": {
+      "url": "https://stockanalysis.com/stocks/nvda/financials/balance-sheet/",
+      "refs": [
+        "turn4view2",
+        "turn5view1"
+      ]
+    },
+    "stockanalysis_stats": {
+      "url": "https://stockanalysis.com/stocks/nvda/statistics/",
+      "refs": [
+        "turn4view3"
+      ]
+    },
+    "yahoo_history": {
+      "url": "https://finance.yahoo.com/quote/NVDA/history/",
+      "refs": [
+        "turn5search0"
+      ]
+    },
+    "investing_quote": {
+      "url": "https://www.investing.com/equities/nvidia-corp?GL_Campaign_ID=23357599114",
+      "refs": [
+        "turn17search2"
+      ]
+    },
+    "ap_premarket": {
+      "url": "https://apnews.com/article/f9ac67fed10c86c1ed1ad1f41dd921a5",
+      "refs": [
+        "turn17news24"
+      ]
+    },
+    "macrotrends_fcf": {
+      "url": "https://www.macrotrends.net/stocks/charts/NVDA/nvidia/free-cash-flow",
+      "refs": [
+        "turn5search12"
+      ],
+      "status": "search snippet FY2026 standard FCF96676; direct fetch restricted. Revenue/net-income direct fetch restricted403; do not claim fully reviewed."
+    },
+    "exact_shares": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "refs": [
+        "turn20view1"
+      ],
+      "location": "Shareholders equity rollforward July26 balance 24147million"
+    },
+    "lukb_shares": {
+      "url": "https://boersenundmaerkte.lukb.ch/lukb/details/994529,67,333",
+      "refs": [
+        "turn20view0"
+      ],
+      "note": "24.147bn shares; price timestamp stale do not use quote"
+    },
+    "annual_equity_gains": {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
+      "refs": [
+        "turn20view2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1072 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>英伟达：黄仁勋事件、换帅风险与买入价格 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/c0bbc62025d3.html" data-title="英伟达：黄仁勋事件、换帅风险与买入价格"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><div class="layout"><div><h1>英伟达：黄仁勋事件、换帅风险与买入价格</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-11-12 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%BB%84%E4%BB%81%E5%8B%8B%E4%BA%8B%E4%BB%B6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261112.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#ai">AI研究偏见自觉</a></li>
+<li><a href="#_1">第一步：事件到底确认到哪一步</a><ul>
+<li><a href="#_2">一个容易忽略的时间差</a></li>
+</ul>
+</li>
+<li><a href="#_3">第二步：经营底盘有多强</a><ul>
+<li><a href="#_4">五年财务与最新滚动期</a></li>
+<li><a href="#20pe">为什么20倍PE不等于便宜</a></li>
+<li><a href="#_5">资产负债表并非大幅下跌的硬底</a></li>
+</ul>
+</li>
+<li><a href="#_6">第三步：短期实际影响怎样传到利润</a><ul>
+<li><a href="#_7">未来数周至一年</a></li>
+<li><a href="#_8">用经营杠杆把事件量级说清楚</a></li>
+</ul>
+</li>
+<li><a href="#_9">第四步：黄仁勋离任，护城河会怎样变化</a><ul>
+<li><a href="#_10">接班人是不是“另一个黄仁勋”并非唯一标准</a></li>
+<li><a href="#_11">人事类比只用于提问</a></li>
+</ul>
+</li>
+<li><a href="#_12">第五步：管理层、竞争与最强反方</a><ul>
+<li><a href="#_13">管理价值与治理评价分别看</a></li>
+<li><a href="#_14">比“黄仁勋走了”更强的看空论点</a></li>
+<li><a href="#_15">失败路径与可观察信号</a></li>
+</ul>
+</li>
+<li><a href="#_16">第六步：事件损失的条件情景</a></li>
+<li><a href="#160">第七步：160美元是否有安全边际</a><ul>
+<li><a href="#_17">三年情景：回答价格贵不贵</a></li>
+<li><a href="#_18">十年折现：检验仓位承受力</a></li>
+<li><a href="#_19">折现率敏感性和工具局限</a></li>
+<li><a href="#dcf">反向DCF：当前价格要求什么</a></li>
+<li><a href="#_20">估值分歧对账</a></li>
+</ul>
+</li>
+<li><a href="#_21">第八步：最终决策与行动清单</a><ul>
+<li><a href="#_22">哪些证据会让我更愿意买</a></li>
+<li><a href="#_23">哪些证据会要求减仓或重写论文</a></li>
+</ul>
+</li>
+<li><a href="#_24">分析置信度与投资确定性</a></li>
+<li><a href="#_25">数据来源与审计记录</a><ul>
+<li><a href="#_26">事件与治理</a></li>
+<li><a href="#_27">财务与行情</a></li>
+<li><a href="#_28">技术、竞争与历史类比</a></li>
+<li><a href="#_29">关键数据交叉验证记录</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article><p><strong>研究主题：黄仁勋事件的短期、长期实际影响，以及可能离任后的护城河与买入机会。</strong></p>
+<p>数据截止：2026年11月12日北京时间21:30。最新完整财务期为截至7月26日的FY2027第二财季，第三财季尚未公布。11月11日美股收盘173.73美元；11月12日北京时间21:14的盘前快照159.43美元。估值统一取整为160美元，不能当作实时可成交报价。币种均为美元；财务表采用十亿美元，1十亿美元＝10亿美元。</p>
+<p>以最近已披露精确股数241.47亿股估算，160美元对应市值3.864万亿美元、GAAP TTM市盈率20.23倍、主营税后经营利润代理倍数24.44倍、公司口径自由现金流收益率3.28%。</p>
+<p>核心判断：英伟达已经积累的软件与系统优势具有组织独立性；黄仁勋离任更可能损伤未来优势的更新速度。约160美元出现了重新评估的价值，但尚不足以认定是高确定性的错杀。需要把换帅、潜在公司违规和AI资本开支周期分别定价。</p>
+<p>“被开会”按“被开除、离任”理解。下文中的离任分析均为条件推演，不表示董事会已经宣布罢免。</p>
+<h2 id="ai">AI研究偏见自觉</h2>
+<p>信息丰富度评级：<strong>A级</strong>。公司业绩、产品和市场观点充分，调查材料、接班安排和客户内部采购决定则不公开。资料数量不能补足这些关键未知。</p>
+<ul>
+<li>[x] 不把媒体重复转载当作多份独立证据。</li>
+<li>[x] 不把婚外情承认扩大为泄密、间谍身份或公司违法已被证实。</li>
+<li>[x] 不用暴跌本身证明低估，也不用明星创始人叙事替代组织分析。</li>
+<li>[x] 用经营利润、现金流复核GAAP市盈率，并单列模型假设。</li>
+</ul>
+<p>这是事件驱动的公司研究，不是对涉事个人的事实裁判。未公开的调查结果、极端处罚和交易时点无法由模型可靠预测。</p>
+<hr />
+<h2 id="_1">第一步：事件到底确认到哪一步</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>已取得的证据</th>
+<th>可以得出的结论</th>
+<th>不能推出的结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11月4日信函、5日官网发布</td>
+<td>美国众议院相关委员会要求黄仁勋就安全措施和相关接触参加闭门简报 [E4]</td>
+<td>已存在国会层面的正式关注</td>
+<td>不等于监管机关已经认定泄密或出口违法</td>
+</tr>
+<tr>
+<td>11月8日</td>
+<td>公司官网发布黄仁勋致员工信，承认对婚姻不忠并道歉 [E1]</td>
+<td>道歉与个人行为承认有一手出处</td>
+<td>信中未确认新闻报道中的全部关系细节</td>
+</tr>
+<tr>
+<td>11月8日</td>
+<td>董事会启动独立调查，同时表示当时没有理由认为国家安全或公司秘密遭泄露 [E2]</td>
+<td>调查属实；当时董事会公开支持管理团队</td>
+<td>“没有理由认为”不是调查结论，也不是永久免责</td>
+</tr>
+<tr>
+<td>11月10日</td>
+<td>独立董事宣布聘请Joon H. Kim及Wachtell律师事务所 [E3]</td>
+<td>外部独立调查已进入具体执行</td>
+<td>不能推断必然罢免或刑事结论</td>
+</tr>
+<tr>
+<td>11月11日美国时间、12日亚洲时间</td>
+<td>WSJ报道董事会准备罢免；Reuters报道董事会讨论去留 [E5][E6]</td>
+<td>接班风险已成为需要认真分析的情景</td>
+<td>截止研究时未找到公司正式任免公告；报道不等于决议</td>
+</tr>
+</tbody>
+</table></div>
+<p>涉及所谓外国情报活动、另一段关系及具体当事人的报道，仍需按指控和未完成核实的信息处理。这里不复述与投资判断无关的私人细节。</p>
+<p><strong>实际损失与风险必须分开：</strong>已经能观察到股价重估、正式调查与治理不确定性；在本次检索取得的公告中，尚无可量化的“本事件已导致多少订单取消、收入减少、技术泄露损失或罚款”。因此不能编出一个已实现的利润损失数字，也不能把尚未披露损失写成损失为零。</p>
+<p>11月11日收盘与12日盘前不是同一交易时段。159.43美元相对173.73美元为约-8.23%；这只是两个快照的价格变化。缺少完整基准指数、盘前流动性与事件窗口控制，不能把整段跌幅全部归因于这条新闻。[M1][M2]</p>
+<h3 id="_2">一个容易忽略的时间差</h3>
+<p>公司宣布第三财季业绩电话会为11月17日美国东部时间17:00，即北京时间11月18日06:00；财报预计稍早发布。该季度截至10月25日，早于11月主要事件。因此三季报超预期只能证明此前经营强劲，<strong>不能验证事件之后的订单与组织没有变化</strong>。更有信息量的是下一季指引、客户订单与接班安排。[E7]</p>
+<blockquote>
+<p>投资追问：我们是在为已经证实的经营损失付出折价，还是为尚不知道的结果承担风险？</p>
+</blockquote>
+<hr />
+<h2 id="_3">第二步：经营底盘有多强</h2>
+<p>生意本质：英伟达把GPU、互联、软件库和整机系统组合成可快速部署的算力，让云厂商、模型公司和企业用更短工程时间完成训练与推理，从客户的时间和总成本节约中取得利润。</p>
+<h3 id="_4">五年财务与最新滚动期</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年/期间</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">GAAP净利润</th>
+<th style="text-align: right;">公司口径FCF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2022</td>
+<td style="text-align: right;">26.914</td>
+<td style="text-align: right;">9.752</td>
+<td style="text-align: right;">8.049</td>
+</tr>
+<tr>
+<td>FY2023</td>
+<td style="text-align: right;">26.974</td>
+<td style="text-align: right;">4.368</td>
+<td style="text-align: right;">3.750</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td style="text-align: right;">60.922</td>
+<td style="text-align: right;">29.760</td>
+<td style="text-align: right;">26.947</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td style="text-align: right;">130.497</td>
+<td style="text-align: right;">72.880</td>
+<td style="text-align: right;">60.724</td>
+</tr>
+<tr>
+<td>FY2026</td>
+<td style="text-align: right;">215.938</td>
+<td style="text-align: right;">120.067</td>
+<td style="text-align: right;">96.575</td>
+</tr>
+<tr>
+<td>截至2026年7月TTM</td>
+<td style="text-align: right;">302.970</td>
+<td style="text-align: right;">192.880</td>
+<td style="text-align: right;">126.886</td>
+</tr>
+</tbody>
+</table></div>
+<p>单位：十亿美元。财年以对应年份1月底结束，不等于自然年。公司FCF在经营现金流减现金资本开支外，还扣相关设备和无形资产融资本金。StockAnalysis常见的简化FCF，FY2026为96.676、TTM为127.006，差额分别为0.101和0.120。两种口径有定义差异，并非现金消失。[F1–F7]</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>近四财季</th>
+<th style="text-align: right;">总收入</th>
+<th style="text-align: right;">数据中心收入，约数</th>
+<th style="text-align: right;">GAAP毛利率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2026 Q3</td>
+<td style="text-align: right;">57.006</td>
+<td style="text-align: right;">51.2</td>
+<td style="text-align: right;">73.4%</td>
+</tr>
+<tr>
+<td>FY2026 Q4</td>
+<td style="text-align: right;">68.127</td>
+<td style="text-align: right;">62.3</td>
+<td style="text-align: right;">75.0%</td>
+</tr>
+<tr>
+<td>FY2027 Q1</td>
+<td style="text-align: right;">81.615</td>
+<td style="text-align: right;">75.2</td>
+<td style="text-align: right;">74.9%</td>
+</tr>
+<tr>
+<td>FY2027 Q2</td>
+<td style="text-align: right;">96.221</td>
+<td style="text-align: right;">89.0</td>
+<td style="text-align: right;">75.0%</td>
+</tr>
+</tbody>
+</table></div>
+<p>最新平台分类与历史披露存在调整，上表用于看数量级，不据未经重列的分项直接计算增长。FY2027 Q2重列后，数据中心精确值89.023，其中Hyperscale为48.710，AI Clouds、Industrial &amp; Enterprise为40.313；Edge为7.198。数据中心占总收入92.52%。这是市场平台口径，不能与Compute &amp; Networking、Graphics法定分部混算。[F1][F2][F8][F9]</p>
+<p>真正驱动利润的是三件事：客户新增和更新算力的规模，整套系统相对替代方案的总成本优势，以及供应交付能否跟上产品迭代。CEO新闻不会直接改变已经部署的GPU性能，但可能影响后两项在未来的兑现。</p>
+<h3 id="20pe">为什么20倍PE不等于便宜</h3>
+<p>TTM营业利润197.579；GAAP净利润192.880包含股权投资收益。税前股权投资收益按官方年度加本年上半年减上年同期回算为30.552。不能从净利润直接减税前收益后称为精确调整净利。[F2][F3]</p>
+<p>本报告采用透明的估算代理：</p>
+<p><strong>正常税后经营利润＝197.579×（1−20%）＝158.063十亿美元；每股经营利润代理＝6.546美元。</strong></p>
+<p>20%为研究使用的长期正常税率，不是公司当期实际税率，也不是其全年税率指引。该代理保留GAAP经营费用中的SBC，剔除了非经营投资收益和净利息；它不是官方调整EPS。三年倍数模型只能视为近似的经营盈利定价。</p>
+<p>160美元对应GAAP PE约20.23倍，而对应上述主营代理约24.44倍。公司FCF126.886再扣TTM SBC经济成本代理7.241，得到119.645，收益率约3.10%。这不是新会计指标，也不再在模型里重复扣同一份SBC。</p>
+<h3 id="_5">资产负债表并非大幅下跌的硬底</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>7月26日资产项目</th>
+<th style="text-align: right;">金额</th>
+<th>本报告处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现金及等价物</td>
+<td style="text-align: right;">22.443</td>
+<td>计入流动金融资产</td>
+</tr>
+<tr>
+<td>可交易债券</td>
+<td style="text-align: right;">34.143</td>
+<td>与现金合计56.586</td>
+</tr>
+<tr>
+<td>有息债务</td>
+<td style="text-align: right;">33.366</td>
+<td>短债加长债；不含经营租赁</td>
+</tr>
+<tr>
+<td>保守净现金</td>
+<td style="text-align: right;">23.220</td>
+<td>约占160美元参考市值0.60%</td>
+</tr>
+<tr>
+<td>可交易股权证券</td>
+<td style="text-align: right;">42.783</td>
+<td>单列，不当现金</td>
+</tr>
+<tr>
+<td>非交易证券</td>
+<td style="text-align: right;">51.157</td>
+<td>单列，不能视为可随时按账面兑现</td>
+</tr>
+</tbody>
+</table></div>
+<p>StockAnalysis的现金与短投62.469与官方56.586相差10.40%，本次未取得能闭合的分类解释，采用官方口径。其含租赁总债务也不能直接与这里的有息债务混用。对所有数据标“已双源完全一致”会制造虚假精度。[F1][F2][F7]</p>
+<blockquote>
+<p>投资追问：如果投资浮盈减少、客户付款变慢，主营能留下多少现金？</p>
+</blockquote>
+<hr />
+<h2 id="_6">第三步：短期实际影响怎样传到利润</h2>
+<h3 id="_7">未来数周至一年</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>传导渠道</th>
+<th>当前证据与判断</th>
+<th>应观察的经营变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>已有客户继续采购</td>
+<td>采购取决于性能、容量和交付；已形成的工程投入不因人事新闻自动作废。未取得事件导致大规模撤单的证据</td>
+<td>交付验收、采购承诺、下一季收入指引</td>
+</tr>
+<tr>
+<td>新单与大项目签约</td>
+<td>审批、尽调和CEO级谈判可能延长；最容易先影响未签署和融资依赖强的项目</td>
+<td>延期而非取消的金额、客户融资进展</td>
+</tr>
+<tr>
+<td>研发、产能与供应链</td>
+<td>已完成设计和既有合约有惯性；若决策权交接不清，跨团队问题解决会变慢</td>
+<td>新平台量产、关键系统问题处理、供应商预付款</td>
+</tr>
+<tr>
+<td>现金与投资收益</td>
+<td>若生态客户估值和信用恶化，投资收益、应收和采购可能同时承压</td>
+<td>应收回款、股权减值、客户资金来源</td>
+</tr>
+<tr>
+<td>人员与治理费用</td>
+<td>调查、留人激励、法律与合规成本可能增加，规模尚未披露</td>
+<td>新激励授予、核心负责人变化、费用指引</td>
+</tr>
+<tr>
+<td>监管许可</td>
+<td>可能影响特定客户/地区出货和审批；未证实新增处罚</td>
+<td>正式监管文件、许可状态和公司风险披露</td>
+</tr>
+</tbody>
+</table></div>
+<p>短期最容易发生的是估值倍数下降和管理精力分散，订单与利润变化往往滞后。股价先跌，并不要求当季利润已经下降；但股价跌得多，也不能证明最终利润损失一定很小。</p>
+<p><strong>中国业务不应重复扣减。</strong>公司此前Q3收入指引108十亿美元已明确不包含中国数据中心计算收入。不能先按该指引估值，再把“中国数据中心计算收入归零”完整扣一次。真正增量风险在于许可进一步收紧、第三国审查、其他地区项目或供应渠道受影响。[F1]</p>
+<h3 id="_8">用经营杠杆把事件量级说清楚</h3>
+<p>仅作算术压力演示：取公司原Q3收入指引108、毛利率74%、GAAP费用9.2，再用研究税率20%，税后经营利润代理为56.576十亿美元。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设冲击，仅演示</th>
+<th style="text-align: right;">冲击后利润代理</th>
+<th style="text-align: right;">相对变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入比该基准少5%，毛利率与费用不变</td>
+<td style="text-align: right;">53.379</td>
+<td style="text-align: right;">-5.65%</td>
+</tr>
+<tr>
+<td>毛利率下降3个百分点，收入与费用不变</td>
+<td style="text-align: right;">53.984</td>
+<td style="text-align: right;">-4.58%</td>
+</tr>
+</tbody>
+</table></div>
+<p>这不是预测Q3受到了11月事件影响，而是说明未来季度若出现类似冲击的利润敏感性。既有季度已经结束，不能倒置因果。也不能将两行损失简单相加而忽略交互影响。</p>
+<blockquote>
+<p>投资追问：客户是真的不买了，还是签约晚一点？这两种情况的终身现金损失完全不同。</p>
+</blockquote>
+<hr />
+<h2 id="_9">第四步：黄仁勋离任，护城河会怎样变化</h2>
+<p><strong>最重要的区分：现有优势的存量，与持续创造下一代优势的能力。</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>护城河来源</th>
+<th>黄仁勋离任后的直接影响</th>
+<th>长期受损路径</th>
+<th>可以反证的信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CUDA、库与工具链</td>
+<td>小。代码、兼容性、开发者经验归属于组织和生态</td>
+<td>软件维护与新架构支持跟不上，客户抽象层降低迁移成本</td>
+<td>库更新和实际工作负载迁移成本保持稳定</td>
+</tr>
+<tr>
+<td>NCCL、NVLink及集群系统协同</td>
+<td>小至中。已部署系统继续工作</td>
+<td>跨芯片、网络、软件协调失灵，新系统部署效率下降</td>
+<td>新平台按期交付并达到客户级集群效率</td>
+</tr>
+<tr>
+<td>装机量与工程人才网络</td>
+<td>小。客户与工程师不会一夜重做技术栈</td>
+<td>开发者逐渐转向多后端，替代平台成熟</td>
+<td>CUDA生态支持和客户工程投入延续</td>
+</tr>
+<tr>
+<td>供应组织与规模</td>
+<td>小至中。合同和经济利益仍在</td>
+<td>接班者配额、预付款和供应协调能力较弱</td>
+<td>关键器件获取和交付周期稳定</td>
+</tr>
+<tr>
+<td>客户高层关系与复杂合作</td>
+<td>中至大，依赖个人信用更多</td>
+<td>跨企业谈判速度下降，新市场扩张变慢</td>
+<td>客户负责人公开确认合作并持续落地</td>
+</tr>
+<tr>
+<td>产品方向与资源配置</td>
+<td>中至大，通常延迟显现</td>
+<td>错过架构转折、优先级摇摆、错误投入</td>
+<td>下一代产品与软件路线连续兑现</td>
+</tr>
+<tr>
+<td>人才吸引和组织文化</td>
+<td>不确定，取决于交接</td>
+<td>核心骨干离开、内部权力失衡</td>
+<td>技术负责人留任、职责清晰、研发效率稳定</td>
+</tr>
+<tr>
+<td>治理与监管信任</td>
+<td>有可能改善，也可能恶化</td>
+<td>若旧问题未解决，换人不足以消除责任</td>
+<td>独立调查可信，整改和披露明确</td>
+</tr>
+</tbody>
+</table></div>
+<p>CUDA官方文档展示编译器、库、调试和分析工具的完整层次；NCCL负责多GPU/多节点通信；Rubin平台又把计算、互联和系统设计组合起来。这支持“护城河嵌入大量工程资产”的判断，但厂商性能宣传不等于所有客户场景的独立验证。[T1–T3]</p>
+<p>对你熟悉的训练、后训练场景，可以这样理解：更换CEO不会自动消除现有算子、通信优化、故障排查和部署流程。真正的风险是之后若干代产品里，模型需求、GPU架构、内存、互联和软件之间的协同变慢。客户不必全面迁移，只要把新增推理负载逐渐交给替代平台，就可能压低英伟达的利润率。</p>
+<h3 id="_10">接班人是不是“另一个黄仁勋”并非唯一标准</h3>
+<p>公司已经有分别承担技术、客户、供应和财务工作的资深团队。Ian Buck的官方履历显示其长期负责AI硬件软件与超大规模客户；Bill Dally负责研究；Colette Kress长期负责财务。这证明能力不是只存在于一人，但不证明任何人已被选为继任者。[T4][T5][F10]</p>
+<p>更实际的评估条件是：接班人能否获得技术团队的信任；谁拥有最终产品裁决权；大客户与供应商是否愿意继续签长期约定；董事会是否避免反复更换领导；激励能否留住跨部门骨干。</p>
+<p><strong>有序交接可能是可消化的损失；突然离任加核心团队分裂，才可能把动态优势变成长期竞争力下降。</strong>如果留任意味着长期瘫痪、反复披露和监管不信任，一个可信的新管理团队甚至可能比带病留任更有利。不能默认“保住黄仁勋”在所有调查结果下都对股东最好。</p>
+<h3 id="_11">人事类比只用于提问</h3>
+<p>苹果2011年交接时已有长期任职的COO和明确接班计划；这说明创始人离开不必毁掉组织，但不能据此假设英伟达具备同样准备。Intel2018年因CEO违反内部政策而换帅，同时仍上调当季业绩预期，说明短期业务惯性可以与长期管理风险并存。两例都不能作为英伟达未来回报的统计样本。[H1][H2]</p>
+<blockquote>
+<p>投资追问：五年后公司还能不能持续领先，取决于哪几项组织能力？谁在负责这些能力？</p>
+</blockquote>
+<hr />
+<h2 id="_12">第五步：管理层、竞争与最强反方</h2>
+<h3 id="_13">管理价值与治理评价分别看</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>评价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>长期战略记录</td>
+<td>CUDA、加速计算与全栈系统是已经形成商业规模的成果；现有产品不能只解释为创始人个人才华</td>
+</tr>
+<tr>
+<td>资本配置</td>
+<td>研发与系统布局贡献显著；对生态客户的投资也增加需求、估值和信用同时波动的风险</td>
+</tr>
+<tr>
+<td>股东一致性</td>
+<td>2026代理文件披露黄仁勋3月23日实益持股比例3.58%；普通股一股一票，没有据此形成绝对控制。实益口径包含信托及基金会，不等于个人全部可支配经济权益 [G1]</td>
+</tr>
+<tr>
+<td>最新治理评价</td>
+<td>已确认的个人行为与正式调查足以提高治理审查要求，但不能预判未完成的法律事实</td>
+</tr>
+<tr>
+<td>继任能力</td>
+<td>尚无已核实的正式任命与完整交接计划；应作为管理层维度中的实质不确定性</td>
+</tr>
+</tbody>
+</table></div>
+<p>公司与被投客户之间的商业协同不等于虚假收入，但也不能据收入高速增长就跳过最终付款能力。上半年股权投资支出与应收增长提示：公司越来越多地参与整个AI生态的资本循环，实际风险已经超出纯粹卖芯片。[F1][F2]</p>
+<h3 id="_14">比“黄仁勋走了”更强的看空论点</h3>
+<p>AI需求继续增长，但大型客户为降低总成本和单一供应商依赖，逐步把稳定、大规模的负载迁至自研芯片；同时资本开支降速、融资收紧、软件可移植性提升，使英伟达的份额或毛利率下降。若管理交接恰好发生在这个阶段，组织应对能力变弱会放大原本就存在的竞争压力。</p>
+<p>这条路径不要求CUDA消失，也不要求AI失败。Google的TPU平台及配套软件、Amazon的Trainium业务和官方披露的客户采用，已经证明替代路线真实存在；Triton则展示了降低直接编写CUDA门槛的方向。但这些材料也不足以证明替代平台在所有训练和推理任务中成本更低。[T6–T9]</p>
+<h3 id="_15">失败路径与可观察信号</h3>
+<p>下表概率等级是主观风险排序，不是统计概率，彼此也不独立。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>失败路径</th>
+<th>主观概率等级</th>
+<th>价值影响</th>
+<th>关键验证信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>接班过渡拖延，关键人员流失</td>
+<td>中</td>
+<td>后续产品与合作兑现变慢</td>
+<td>权责模糊、重要负责人连续离职、版本延期</td>
+</tr>
+<tr>
+<td>公司层面的实质监管问题</td>
+<td>未知，公开资料不足以量化</td>
+<td>可能远大于个人名誉损失</td>
+<td>正式处罚、扩大范围的出口限制、许可撤回</td>
+</tr>
+<tr>
+<td>AI客户资本回报不足</td>
+<td>中</td>
+<td>订单、回款及投资资产同向恶化</td>
+<td>利用率、租金、最终付费收入与融资缺口</td>
+</tr>
+<tr>
+<td>ASIC及替代GPU侵蚀增量利润</td>
+<td>中高，长期</td>
+<td>行业增长而利润率下降</td>
+<td>可比模型总成本、客户新增负载分配</td>
+</tr>
+<tr>
+<td>高估长期现金转换</td>
+<td>中</td>
+<td>低PE看起来便宜，股东现金不足</td>
+<td>应收、存货、客户投资与融资支持持续上升</td>
+</tr>
+<tr>
+<td>台湾供应链极端中断</td>
+<td>低频且无法可靠量化</td>
+<td>极大</td>
+<td>该尾部风险不在三档定价中充分覆盖</td>
+</tr>
+</tbody>
+</table></div>
+<p>最大分析错误有两个：因为尊重技术实力而低估治理和周期；因为负面新闻而把一家公司的整套技术资产视为已经毁损。</p>
+<blockquote>
+<p>投资追问：即使事件平稳落地，当前价格是否仍过度依赖高利润率和持续资本开支？</p>
+</blockquote>
+<hr />
+<h2 id="_16">第六步：事件损失的条件情景</h2>
+<p>先把事件增量影响与公司原有竞争风险拆开。以下是相对“没有此次事件、其他条件相同”的压力假设，<strong>不是已披露损失、不是公司指引，也不是可信区间</strong>。区间只是帮助识别需要观察的量级，不赋予精确发生概率。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>条件</th>
+<th>未来一年主营利润的相对影响假设</th>
+<th>五年后主营利润的相对影响假设</th>
+<th>投资含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>留任、调查未发现重大公司问题、完成治理整改</td>
+<td>0至-3%</td>
+<td>0至-5%</td>
+<td>可能主要是暂时费用与精力损失，存在估值修复空间</td>
+</tr>
+<tr>
+<td>离任、交接有序、技术团队稳定、无重大公司处罚</td>
+<td>-2%至-6%</td>
+<td>-5%至-15%</td>
+<td>存量优势大体保留，但未来执行需重新验证</td>
+</tr>
+<tr>
+<td>离任且团队不稳、产品或项目明显延迟</td>
+<td>-8%至-15%</td>
+<td>-15%至-30%</td>
+<td>成为经营问题，低价不足以单独构成买入理由</td>
+</tr>
+<tr>
+<td>发现重大公司违规并限制重要销售渠道</td>
+<td>-15%至-35%，也可能更差</td>
+<td>-25%至-50%，也可能更差</td>
+<td>必须按正式措施重做模型，现有区间不提供损失下限</td>
+</tr>
+</tbody>
+</table></div>
+<p>这些损失不能与下文悲观估值再次全额叠加，否则会重复计入。三档估值已允许增长下降、现金投入增加和竞争损害；极端全球性处罚仍属未充分建模风险。</p>
+<p>一个同口径例子：若基准模型中的所有未来经营现金流和终值永久降低5%至15%，保持净现金不变，每股价值约减少5.76至17.28美元。它量化的是一个明确假设，而不是“黄仁勋本人值多少”。轻微暂时干扰的损失通常比永久折损小；严重监管后果则可能超出这个范围。</p>
+<p>AI计算长期需求扩张仍可能成立，但投资回报取决于英伟达能保留多少利润。技术革命会同时扩大市场和吸引客户自研，不能只计算市场变大的一边。</p>
+<blockquote>
+<p>投资追问：市场跌去的价值，是否已经超过可以合理推演的长期现金损失？目前证据还不足以肯定回答。</p>
+</blockquote>
+<hr />
+<h2 id="160">第七步：160美元是否有安全边际</h2>
+<h3 id="_17">三年情景：回答价格贵不贵</h3>
+<p>统一起点为每股主营税后经营利润代理6.546美元，股数保持不变；未叠加回购带来的每股增长。表内倍数是三年后经营盈利代理的情景倍数，不是长期终值估值。其合理性分别依赖竞争加剧、增速正常化、持续高增长，不能当作精确市场预测。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>三年情景</th>
+<th style="text-align: right;">主营利润年增速假设</th>
+<th style="text-align: right;">退出倍数假设</th>
+<th style="text-align: right;">三年后价格代理</th>
+<th style="text-align: right;">以10%折回今天</th>
+<th style="text-align: right;">从160起的价格年化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td style="text-align: right;">-5%</td>
+<td style="text-align: right;">15倍</td>
+<td style="text-align: right;">84.18</td>
+<td style="text-align: right;">63.25</td>
+<td style="text-align: right;">-19.27%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">+15%</td>
+<td style="text-align: right;">22倍</td>
+<td style="text-align: right;">219.02</td>
+<td style="text-align: right;">164.55</td>
+<td style="text-align: right;">+11.03%</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">+25%</td>
+<td style="text-align: right;">28倍</td>
+<td style="text-align: right;">357.98</td>
+<td style="text-align: right;">268.95</td>
+<td style="text-align: right;">+30.79%</td>
+</tr>
+</tbody>
+</table></div>
+<p>该简化倍数法没有单独分配资产与净利息，也不包含期间分红，只是盈利定价代理；完整经营资产与净金融资产桥见十年模型。按照主观悲观30%、基准50%、乐观20%权重，三年折回值为155.04美元。权重用于容错，不是对罢免或违法概率的预测。</p>
+<p><strong>约160美元接近三年中性定价，不能只凭跌幅认定已有明显安全垫。</strong>基准三年价格年化略超过10%，但悲观损失也大。这允许偏成长投资者小额研究性参与，并不支持仅因事件就建立核心仓位。</p>
+<h3 id="_18">十年折现：检验仓位承受力</h3>
+<p>本模型估值对象为主营经营资产，最终加保守净现金23.220十亿美元。未给42.783可交易股权及51.157非交易证券直接加账面价值；这些资产应结合税费、锁定、资本承诺和客户风险另估。经营租赁在费用与现金中经营化，不又从净现金中扣除同一负担。</p>
+<p>参数均为研究判断：美元折现率r＝10%，参考11月10日美国十年国债4.98%，加5.02个百分点股权风险补偿、基本面β取1。10%是经营资产的简化资本成本，当前净金融负债影响较小；不是从短期股价波动拟合出的精确WACC。事件、处罚和断供通过情景表达，不通过临时提高折现率隐藏。[M4]</p>
+<p>终值稳态增量ROIC取25%，承认轻资产技术平台的高回报，同时低于把历史账面回报无条件外推的假设。永续增长g取2%/3%/4%，描述2036年之后的美元名义增长，不是此前十年增速。终值分母r−g分别为8、7、6个百分点。</p>
+<p>终值采用永续模型：次年利润倍数＝（1−g/ROIC）÷（r−g）。分别得到11.50、12.57、14.00倍；这里利润是NOPAT，因此倍数实质是EV/NOPAT，不是股东净利润PE。因为是次年利润倍数，第十年终值使用第十年利润×（1+g）再乘倍数。没有用同行今天的PE证明十年后的PE。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>假设/结果</th>
+<th style="text-align: right;">悲观</th>
+<th style="text-align: right;">基准</th>
+<th style="text-align: right;">乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主观权重</td>
+<td style="text-align: right;">30%</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">20%</td>
+</tr>
+<tr>
+<td>第三年主营税后利润，十亿美元</td>
+<td style="text-align: right;">135.52</td>
+<td style="text-align: right;">240.39</td>
+<td style="text-align: right;">308.72</td>
+</tr>
+<tr>
+<td>第四至第十年利润年增速</td>
+<td style="text-align: right;">+0.47%</td>
+<td style="text-align: right;">+5.51%</td>
+<td style="text-align: right;">+11.22%</td>
+</tr>
+<tr>
+<td>2036年主营税后利润，十亿美元</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">350</td>
+<td style="text-align: right;">650</td>
+</tr>
+<tr>
+<td>利润转为可分配经营现金的比例</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">65%</td>
+<td style="text-align: right;">75%</td>
+</tr>
+<tr>
+<td>永续增长g</td>
+<td style="text-align: right;">2%</td>
+<td style="text-align: right;">3%</td>
+<td style="text-align: right;">4%</td>
+</tr>
+<tr>
+<td>次年利润终值倍数</td>
+<td style="text-align: right;">11.50</td>
+<td style="text-align: right;">12.57</td>
+<td style="text-align: right;">14.00</td>
+</tr>
+<tr>
+<td>今天核心经营加净现金价值，每股美元</td>
+<td style="text-align: right;">45.00</td>
+<td style="text-align: right;">116.19</td>
+<td style="text-align: right;">223.91</td>
+</tr>
+<tr>
+<td>160美元起、含期间经营现金的IRR代理</td>
+<td style="text-align: right;">-5.46%</td>
+<td style="text-align: right;">+5.86%</td>
+<td style="text-align: right;">+14.47%</td>
+</tr>
+</tbody>
+</table></div>
+<p>这些是用于压力测试的外生利润终点，不是经收入与利润率逐项推导的精确预测。悲观允许前三年回落后接近停滞；基准允许前三年15%增长后明显降速；乐观要求十年利润仍扩至当前的数倍。对应业务解释分别是竞争与周期侵蚀、平台领先但利润率正常化、平台在训练和推理中继续大规模扩张。要相信乐观结果，就必须持续验证实际客户回报和英伟达的价值获取能力。</p>
+<p>可分配现金比例综合扣除净资本开支、营运资金和维持增长需要的生态投入，未作逐项资产负债表预测。25% ROIC只用于终值，不代表前十年全程同一回报率。进入成熟期后，终值再投资率按g/ROIC下降，可分配比例分别升至92%/88%/84%；这种阶段变化也是模型假设，不能当作已证实的现金释放。</p>
+<p>未来SBC按经营费用包含，股数固定不再重复惩罚稀释；未分配部分被视为增长所消耗，不再积成一笔终值现金。这里的“可分配现金”不是承诺发出的股息；IRR以市值减净现金为购买经营资产的成本，是企业经营现金回报代理，不是精确的股东权益IRR。实际股东回报还取决于分红、回购价格及后续资本配置。</p>
+<p>三档加权核心价值116.38美元，含现金的情景IRR加权均值4.18%。<strong>加权IRR均值不等于期望现金流的IRR，更不是保证回报。</strong>基准模型约六成经营现值来自终值，远期假设仍主导结果。</p>
+<h3 id="_19">折现率敏感性和工具局限</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>折现率</th>
+<th style="text-align: right;">核心价值加权，每股美元</th>
+<th style="text-align: right;">含期间现金的情景IRR均值</th>
+<th>是否达到该折现率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8%</td>
+<td style="text-align: right;">174.33</td>
+<td style="text-align: right;">+7.08%</td>
+<td>未达到；区间外，仅供参考</td>
+</tr>
+<tr>
+<td>9%</td>
+<td style="text-align: right;">140.02</td>
+<td style="text-align: right;">+5.48%</td>
+<td>未达到</td>
+</tr>
+<tr>
+<td>10%</td>
+<td style="text-align: right;">116.38</td>
+<td style="text-align: right;">+4.18%</td>
+<td>未达到</td>
+</tr>
+<tr>
+<td>11%</td>
+<td style="text-align: right;">99.15</td>
+<td style="text-align: right;">+3.10%</td>
+<td>未达到</td>
+</tr>
+<tr>
+<td>12%</td>
+<td style="text-align: right;">86.06</td>
+<td style="text-align: right;">+2.17%</td>
+<td>未达到；区间外，仅供参考</td>
+</tr>
+</tbody>
+</table></div>
+<p>9%至11%的合理区间内，仓位压力测试未出现通过/不通过翻转。8%档乐观终值分母只有4个百分点，仅用于机械敏感性，不用于支撑买入。</p>
+<p>仓库terminal_value工具另要求只看期末价值的压力测试：r＝8%/10%/12%时加权年化为+3.67%/+0.22%/−2.27%；补做9%/10%/11%为+1.78%/+0.22%/−1.11%，均未覆盖相应资本成本。<strong>该工具不包含期间现金，本报告不把它叫作完整投资回报。</strong>上表已用逐年现金流补充，结论仍需与生意和风险并列判断。原始工具中的USD默认说明含其他市场的通用风险溢价文案，本报告实际参数为前述4.98%与5.02%，未采用该固定说明。</p>
+<h3 id="dcf">反向DCF：当前价格要求什么</h3>
+<p>固定10%资本成本、65%可分配经营现金、3%永续增长、25%稳态增量ROIC，假设主营利润十年匀速增长，反解如下：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>买入价格，美元</th>
+<th style="text-align: right;">所需十年主营利润年增速</th>
+<th style="text-align: right;">第十年利润，十亿美元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>120</td>
+<td style="text-align: right;">+9.13%</td>
+<td style="text-align: right;">378.71</td>
+</tr>
+<tr>
+<td>140</td>
+<td style="text-align: right;">+11.14%</td>
+<td style="text-align: right;">454.59</td>
+</tr>
+<tr>
+<td>160</td>
+<td style="text-align: right;">+12.89%</td>
+<td style="text-align: right;">531.27</td>
+</tr>
+<tr>
+<td>173.73</td>
+<td style="text-align: right;">+13.97%</td>
+<td style="text-align: right;">584.29</td>
+</tr>
+</tbody>
+</table></div>
+<p>160美元不是要求英伟达停止增长就能获得10%回报，而是仍需一条较强的长期利润曲线。反过来，如果你有证据支持十年利润接近或超过530十亿美元且能留下相应现金，160美元可以成立；仅凭“CUDA还在”还不够。</p>
+<h3 id="_20">估值分歧对账</h3>
+<p>三年基准折回值164.55接近现价，十年基准核心价值116.19更低，分歧来自三年仍容许22倍成长定价，而十年假设增长正常化、终值回归现金回报支撑的倍数，并显式扣除再投资。<strong>三年用于判断贵不贵；十年用于收紧仓位，不能一票否决买入或机械要求持仓者卖出。</strong></p>
+<p>仓库<a href="../r/5f2ae49af9a0.html">10月19日报告</a>在214.13美元时给出核心DCF约170美元、条件关注线约115美元。本次116美元不能被解释为事件毁掉了54美元价值：旧报告使用收入与现金率路径，本次使用主营利润与可分配率，并改变了远期增长和终值口径。两模型不是事件前后控制实验。为了估算纯事件增量损失，应使用第六步同口径现金流折损演示。</p>
+<p>同时修正数据口径：旧报告列示的可交易股权47.740与本次官方资产负债表42.783不符；本次以官方值为准，不沿用旧数。未重写旧报告，以免混淆当时版本与本次核验。</p>
+<p>没有列出未经同步核实的AMD/Broadcom“当前PE排名”。业务结构、股权投资收益、SBC和并购摊销差异足以使表面PE比较误导；本报告更重视公司自己的主营现金与所需增长。</p>
+<blockquote>
+<p>投资追问：买入所需的回报来自生意兑现，还是来自市场重新给它一个很高的倍数？</p>
+</blockquote>
+<hr />
+<h2 id="_21">第八步：最终决策与行动清单</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>决策维度</th>
+<th>结论</th>
+<th>信心</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生意质量</td>
+<td>当前产品有真实、巨大客户价值；现金质量需与投资浮盈分开</td>
+<td>高</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>现有软件和系统优势强；长期更新速度受接班质量影响</td>
+<td>存量高、远期中</td>
+</tr>
+<tr>
+<td>管理层</td>
+<td>战略成绩成立，治理评价下降；交接方案未核实</td>
+<td>中低</td>
+</tr>
+<tr>
+<td>最大风险</td>
+<td>事件可能与监管、资本开支周期和人才流失相互放大</td>
+<td>影响明确、概率不明</td>
+</tr>
+<tr>
+<td>长期行业方向</td>
+<td>AI计算需求仍有扩张基础，客户自研争夺利润也成立</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>三年中性附近；十年压力测试约束仓位，区间内无翻转</td>
+<td>模型算术高、输入中低</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>我的判断：约160美元是值得跟踪的事件机会，尚不是足以重仓的明显错杀。价值型空仓者优先等待交接与下一季指引，或更大价格余地；愿意承担事件波动的成长型投资者，可以把它视为很小的研究仓机会。</strong>这来自管理与事件风险、现价安全边际、现金与增长要求的综合判断，不是单凭十年IRR否决。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>价格与条件</th>
+<th>可执行的研究决策</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>160美元附近及以上</td>
+<td>不因下跌自动建立核心仓；先验证接班、公司责任边界与下一季指引。激进参与者仅用预定目标仓位的小部分</td>
+</tr>
+<tr>
+<td>120至140美元</td>
+<td>交接可信、核心人员稳定、无新增严重公司处罚且经营指引未实质恶化，是重新评估的必要条件；还需要新证据支持上修风险或盈利假设，才提高分批建仓优先级</td>
+</tr>
+<tr>
+<td>100至120美元</td>
+<td>更接近本模型核心价值或取得一定折价，满足上述经营条件时具备更好的分批买入理由；仍不是无条件安全</td>
+</tr>
+<tr>
+<td>100美元以下</td>
+<td>若只是个人事件和可控交接，吸引力明显提高；若对应出口/技术/客户需求永久损坏，必须重估，不能把此线当价格底</td>
+</tr>
+</tbody>
+</table></div>
+<p>价格线是本套保守假设下的执行区间，不是精确公允价。120至140美元仍高于10%折现率下的基准核心价值116.19美元，当前模型并未给该档明确安全边际；若新证据不改善假设，现有模型更支持约100至120美元的条件性关注区间。最悲观情景价值仍明显低于100美元；未提供你的完整组合、流动性需求与最大可承受损失，因此不指定个人总资产仓位。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投资者情形</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>尚未持有，偏价值投资</td>
+<td>目前不急于新建核心仓位。等待确定性改善是有价值的，即使届时价格更高</td>
+</tr>
+<tr>
+<td>已持有、仓位适中</td>
+<td>不因CEO可能离任机械清仓；重新核实你持有的是公司系统能力还是对创始人的个人押注</td>
+</tr>
+<tr>
+<td>已持有、AI科技高度集中</td>
+<td>复核共同风险。英伟达、云平台、模型融资与其他AI资产并非相互独立</td>
+</tr>
+<tr>
+<td>想捕捉反弹</td>
+<td>必须承认这是事件交易；留任、离任都可能出现利空出尽或新的下跌，方向不能靠新闻标题确定</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_22">哪些证据会让我更愿意买</h3>
+<ol>
+<li>正式任免及清晰交接安排，同时核心技术负责人和客户团队稳定。</li>
+<li>独立调查给出可信边界，重大公司层面的违法或广泛销售限制风险明显下降。</li>
+<li>下一季收入、毛利率和现金回款维持，客户继续部署而不只是口头支持。</li>
+<li>新平台交付进度、实际集群性能和客户采购预算继续兑现。</li>
+<li>在以上条件成立时，价格进入有余地的区间。</li>
+</ol>
+<h3 id="_23">哪些证据会要求减仓或重写论文</h3>
+<p>核心技术团队连续流失；产品延迟且影响客户部署；正式监管措施大幅缩小可售市场；大客户把新增负载持续转移而英伟达只能明显降价；应收和生态投资风险兑现；管理层披露失去可信度。</p>
+<p>近期信息节点：北京时间11月18日清晨的财报与电话会；国会信函要求的11月18日美国当地闭门简报。后者是要求日期，不能当作会议已经确认举行。更早的公司董事会公告优先于这两个日期。[E4][E7]</p>
+<blockquote>
+<p>最终追问：如果换帅后公司仍保持研发、交付与客户价值，愿不愿意持有五年？如果愿意，买入价格还需要给未知事项留出多少余地？</p>
+</blockquote>
+<h2 id="_24">分析置信度与投资确定性</h2>
+<p>高置信度：官方公告的存在、已披露财务、数据口径差异、估值算术。中等置信度：已有技术资产不随CEO离任立即消失、动态创新更依赖交接质量。低置信度：调查最终结论、接班安排、事件增量利润损失、十年利润和回报。</p>
+<p>四位投资人的方法用于组织问题，未取得他们对此次事件的足够可核验一手观点，<strong>不模拟本人代言，也不发明引语</strong>。</p>
+<p>未充分建模：严重全球性监管处罚、极端供应中断、尚未披露违法事实、重大技术范式跃迁；也未完成全部非经营投资和承诺的逐笔估值。这些限制意味着模型的低位情景不是最大损失边界。</p>
+<hr />
+<h2 id="_25">数据来源与审计记录</h2>
+<p>所有网页读取日期均为2026年11月12日。正文的事实、公司指引和研究假设已分别标示。</p>
+<h3 id="_26">事件与治理</h3>
+<ul>
+<li><a href="https://nvidianews.nvidia.com/news/a-message-to-our-company">E1 员工信，11月8日</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors">E2 董事会声明，11月8日</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board">E3 独立董事声明，11月10日</a></li>
+<li><a href="https://chinaselectcommittee.house.gov/media/press-releases/moolenaar-mast-and-crawford-seek-briefing-from-jensen-huang-on-ties-to-chinese-intelligence-asset">E4 美国众议院委员会公开信及简报要求</a></li>
+<li><a href="https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad">E5 WSJ关于准备罢免的报道</a></li>
+<li><a href="https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/">E6 Reuters关于董事会讨论的报道</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873">E7 公司第三财季电话会公告</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm">G1 2026 Proxy，实益股权与投票口径</a></li>
+</ul>
+<h3 id="_27">财务与行情</h3>
+<ul>
+<li><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/">F1 FY2027 Q2财报公告</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">F2 FY2027 Q2 SEC 10-Q</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026">F3 FY2026全年财报</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025">F4 FY2025全年财报</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2024">F5 FY2024全年财报</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023">F6 FY2023全年财报及FY2022比较数</a></li>
+<li><a href="https://stockanalysis.com/stocks/nvda/financials/">F7 StockAnalysis财务</a>；<a href="https://stockanalysis.com/stocks/nvda/financials/cash-flow-statement/">现金流</a>；<a href="https://stockanalysis.com/stocks/nvda/financials/balance-sheet/">资产负债表</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027">F8 FY2027 Q1财报</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026">F9 FY2026 Q3财报</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm">F10 FY2026 SEC年报</a></li>
+<li><a href="https://stockanalysis.com/stocks/nvda/financials/">M1 StockAnalysis行情快照</a></li>
+<li><a href="https://finance.yahoo.com/quote/NVDA/history/">M2 Yahoo历史行情</a></li>
+<li><a href="https://boersenundmaerkte.lukb.ch/lukb/details/994529%2C67%2C333">M3 LUKB股数</a>：只用于24.147十亿股核验，不采用页面异步价格。</li>
+<li><a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&amp;type=daily_treasury_yield_curve">M4 美国财政部日度收益率</a></li>
+</ul>
+<h3 id="_28">技术、竞争与历史类比</h3>
+<ul>
+<li><a href="https://developer.nvidia.com/cuda">T1 CUDA官方平台文档</a></li>
+<li><a href="https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/overview.html">T2 NCCL官方说明</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform">T3 Rubin平台公告</a></li>
+<li><a href="https://blogs.nvidia.com/blog/author/ian-buck/">T4 Ian Buck官方履历</a></li>
+<li><a href="https://blogs.nvidia.com/blog/author/bill-dally/">T5 Bill Dally官方履历</a></li>
+<li><a href="https://cloud.google.com/blog/products/compute/inside-the-ironwood-tpu-codesigned-ai-stack">T6 Google Ironwood及配套软件</a></li>
+<li><a href="https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-2025-letter-to-shareholders">T7 Amazon 2025股东信</a></li>
+<li><a href="https://www.aboutamazon.com/news/company-news/amazon-custom-chips-demand-q3-2026-earnings">T8 Amazon 2026年三季度自研芯片更新</a></li>
+<li><a href="https://openai.com/index/triton/">T9 Triton原始技术介绍</a></li>
+<li><a href="https://www.apple.com/newsroom/2011/08/24Steve-Jobs-Resigns-as-CEO-of-Apple/">H1 Apple 2011年CEO交接公告</a></li>
+<li><a href="https://www.intc.com/news-events/press-releases/detail/146/intel-ceo-brian-krzanich-resigns-board-appoints-bob-swan">H2 Intel 2018年CEO辞任公告</a></li>
+</ul>
+<h3 id="_29">关键数据交叉验证记录</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">一手/计算值</th>
+<th style="text-align: right;">独立比较值</th>
+<th>核验结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2026收入，百万美元</td>
+<td style="text-align: right;">215,938</td>
+<td style="text-align: right;">StockAnalysis 215,938</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>FY2026净利润，百万美元</td>
+<td style="text-align: right;">120,067</td>
+<td style="text-align: right;">StockAnalysis 120,067</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>TTM收入，百万美元</td>
+<td style="text-align: right;">302,970</td>
+<td style="text-align: right;">StockAnalysis 302,970</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>TTM净利润，百万美元</td>
+<td style="text-align: right;">192,880</td>
+<td style="text-align: right;">StockAnalysis 192,880</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>最近精确已发行股数，百万股</td>
+<td style="text-align: right;">SEC 24,147</td>
+<td style="text-align: right;">LUKB 24,147；StockAnalysis约24,150</td>
+<td>精度差异小；不是11月实时股数</td>
+</tr>
+<tr>
+<td>11月11日收盘，美元</td>
+<td style="text-align: right;">StockAnalysis 173.73</td>
+<td style="text-align: right;">Yahoo 173.73</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>现金与可交易债券，百万美元</td>
+<td style="text-align: right;">SEC 56,586</td>
+<td style="text-align: right;">StockAnalysis现金短投62,469</td>
+<td>差10.40%，以官方为准，独立分类未闭合</td>
+</tr>
+<tr>
+<td>TTM公司FCF，百万美元</td>
+<td style="text-align: right;">官方滚动126,886</td>
+<td style="text-align: right;">StockAnalysis简化127,006</td>
+<td>0.120十亿美元融资本金口径差</td>
+</tr>
+</tbody>
+</table></div>
+<p>市值工具原始摘录：173.73×24,147,000,000＝4,195,058,310,000美元。与报价平台约4.196万亿美元接近；工具的容差通过不代表价格和股数日期完全一致。</p>
+<p>股数、年度及TTM主要数据已交叉取数。Macrotrends正文访问受限，仅有摘要支持，未冒充完整核验；现金分类的独立来源缺口明确保留。完整复算与抽检记录随报告提交：</p>
+<ul>
+<li><a href="../files/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E9%BB%84%E4%BB%81%E5%8B%8B%E4%BA%8B%E4%BB%B6-20261112/audit/financial-data.json">结构化财务数据与来源</a></li>
+<li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E9%BB%84%E4%BB%81%E5%8B%8B%E4%BA%8B%E4%BB%B6-20261112/audit/valuation_model.py">估值模型与全部假设</a></li>
+<li><a href="../files/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E9%BB%84%E4%BB%81%E5%8B%8B%E4%BA%8B%E4%BB%B6-20261112/audit/model-results.json">模型结果</a></li>
+<li><a href="../files/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E9%BB%84%E4%BB%81%E5%8B%8B%E4%BA%8B%E4%BB%B6-20261112/audit/calculation-log.txt">financial_rigor与terminal_value原始输出</a></li>
+<li><a href="../files/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E9%BB%84%E4%BB%81%E5%8B%8B%E4%BA%8B%E4%BB%B6-20261112/audit/report-audit-results.json">数据抽检记录</a></li>
+<li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E9%BB%84%E4%BB%81%E5%8B%8B%E4%BA%8B%E4%BB%B6-20261112/audit/report-audit-summary.md">抽检判决与范围说明</a></li>
+</ul>
+<p>本研究用于学习与决策讨论。数据验证验证的是来源和算术，不证明未来预测或买入结论正确。</p></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E8%8B%B1%E4%BC%9F%E8%BE%BE%EF%BC%9A%E9%BB%84%E4%BB%81%E5%8B%8B%E4%BA%8B%E4%BB%B6%E3%80%81%E6%8D%A2%E5%B8%85%E9%A3%8E%E9%99%A9%E4%B8%8E%E4%B9%B0%E5%85%A5%E4%BB%B7%E6%A0%BC&amp;ticker=%E8%8B%B1%E4%BC%9F%E8%BE%BE&amp;source=reports%2F%E8%8B%B1%E4%BC%9F%E8%BE%BE%2F%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%BB%84%E4%BB%81%E5%8B%8B%E4%BA%8B%E4%BB%B6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261112.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2Fc0bbc62025d3.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>底稿与核验（GitHub）</h2><div class="meta">这些文件不在阅读站上展示，点开为 GitHub 原文。</div><ul class="list work"><li><a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E9%BB%84%E4%BB%81%E5%8B%8B%E4%BA%8B%E4%BB%B6-20261112/audit/report-audit-summary.md">抽检判决与范围</a><div class="meta">证据/审计/调研目录 · 黄仁勋事件-20261112/audit/report-audit-summary.md</div></li></ul><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/5f2ae49af9a0.html">英伟达（NVDA）独立投资研究：英伟达仍拥有最强的AI计算系统优势之一，但不能再按完全不承担客户资本风险的供应商估值</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/ca12b2c8a684.html">英伟达（NVIDIA / NASDAQ: NVDA）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/fc0dae7fdd42.html">英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</a><div class="meta">2026-08-28 · 财报</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/6e56cabdf58e.html">《看懂英伟达》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 导读</div></li><li><a href="../r/876768f83b1f.html">多少钱值得买，什么信号必须卖（系列终章）</a><div class="meta">2026-07-14 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#ai">AI研究偏见自觉</a></li>
+<li><a href="#_1">第一步：事件到底确认到哪一步</a><ul>
+<li><a href="#_2">一个容易忽略的时间差</a></li>
+</ul>
+</li>
+<li><a href="#_3">第二步：经营底盘有多强</a><ul>
+<li><a href="#_4">五年财务与最新滚动期</a></li>
+<li><a href="#20pe">为什么20倍PE不等于便宜</a></li>
+<li><a href="#_5">资产负债表并非大幅下跌的硬底</a></li>
+</ul>
+</li>
+<li><a href="#_6">第三步：短期实际影响怎样传到利润</a><ul>
+<li><a href="#_7">未来数周至一年</a></li>
+<li><a href="#_8">用经营杠杆把事件量级说清楚</a></li>
+</ul>
+</li>
+<li><a href="#_9">第四步：黄仁勋离任，护城河会怎样变化</a><ul>
+<li><a href="#_10">接班人是不是“另一个黄仁勋”并非唯一标准</a></li>
+<li><a href="#_11">人事类比只用于提问</a></li>
+</ul>
+</li>
+<li><a href="#_12">第五步：管理层、竞争与最强反方</a><ul>
+<li><a href="#_13">管理价值与治理评价分别看</a></li>
+<li><a href="#_14">比“黄仁勋走了”更强的看空论点</a></li>
+<li><a href="#_15">失败路径与可观察信号</a></li>
+</ul>
+</li>
+<li><a href="#_16">第六步：事件损失的条件情景</a></li>
+<li><a href="#160">第七步：160美元是否有安全边际</a><ul>
+<li><a href="#_17">三年情景：回答价格贵不贵</a></li>
+<li><a href="#_18">十年折现：检验仓位承受力</a></li>
+<li><a href="#_19">折现率敏感性和工具局限</a></li>
+<li><a href="#dcf">反向DCF：当前价格要求什么</a></li>
+<li><a href="#_20">估值分歧对账</a></li>
+</ul>
+</li>
+<li><a href="#_21">第八步：最终决策与行动清单</a><ul>
+<li><a href="#_22">哪些证据会让我更愿意买</a></li>
+<li><a href="#_23">哪些证据会要求减仓或重写论文</a></li>
+</ul>
+</li>
+<li><a href="#_24">分析置信度与投资确定性</a></li>
+<li><a href="#_25">数据来源与审计记录</a><ul>
+<li><a href="#_26">事件与治理</a></li>
+<li><a href="#_27">财务与行情</a></li>
+<li><a href="#_28">技术、竞争与历史类比</a></li>
+<li><a href="#_29">关键数据交叉验证记录</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-11-12 13:37 UTC</footer></body></html>
