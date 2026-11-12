@@ -1,8 +1,30 @@
 {
-  "count": 2491,
-  "published": 2281,
-  "drafts": 210,
+  "count": 2493,
+  "published": 2282,
+  "drafts": 211,
   "reports": [
+    {
+      "title": "抽检判决与范围",
+      "path": "reports/英伟达/黄仁勋事件-20261112/audit/report-audit-summary.md",
+      "bucket": "公司",
+      "group": "英伟达",
+      "series": "黄仁勋事件-20261112",
+      "type": "底稿",
+      "date": "2026-11-12",
+      "date_source": "front-matter",
+      "ticker": ""
+    },
+    {
+      "title": "英伟达：黄仁勋事件、换帅风险与买入价格",
+      "path": "reports/英伟达/英伟达黄仁勋事件研究报告-20261112.md",
+      "bucket": "公司",
+      "group": "英伟达",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-12",
+      "date_source": "front-matter",
+      "ticker": ""
+    },
     {
       "title": "现代牙科（03600.HK）研究报告",
       "path": "reports/现代牙科/现代牙科研究报告-20261104.md",
