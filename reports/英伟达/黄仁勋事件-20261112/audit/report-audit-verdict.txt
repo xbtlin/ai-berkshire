@@ -3,53 +3,56 @@
 报告：reports/英伟达/英伟达黄仁勋事件研究报告-20261112.md
 ======================================================================
 
-  ⬜ [115] date                                     2026.00   →  [未提供核验值，跳过]
-  ✅ 通过 [ 4] FY2022 · GAAP净利润                     报告:         9.75
+  ✅ 通过 [ 4] FY2022 · 收入                          报告:        26.91
+                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023: 26.91 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 26.91 (偏差 0.00%)
+  ✅ 通过 [ 5] FY2022 · GAAP净利润                     报告:         9.75
                                                     https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023: 9.75 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 9.75 (偏差 0.00%)
-  ✅ 通过 [ 5] FY2022 · 公司口径FCF                     报告:         8.05
-                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023: 8.05 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/cash-flow-statement/ ; official equipment principal 0.083: 8.05 (偏差 0.00%)
-  ✅ 通过 [14] FY2025 · 公司口径FCF                     报告:        60.72
+  ✅ 通过 [12] FY2024 · 公司口径FCF                     报告:        26.95
+                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2024: 26.95 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/cash-flow-statement/ ; official equipment principal 0.074: 26.95 (偏差 0.00%)
+  ✅ 通过 [15] FY2025 · 公司口径FCF                     报告:        60.72
                                                     https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025: 60.72 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/cash-flow-statement/ ; official equipment principal 0.129: 60.72 (偏差 0.00%)
-  ✅ 通过 [12] FY2025 · 收入                          报告:       130.50
-                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025: 130.50 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 130.50 (偏差 0.00%)
-  ✅ 通过 [15] FY2026 · 收入                          报告:       215.94
-                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026: 215.94 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 215.94 (偏差 0.00%)
-  ✅ 通过 [18] 截至2026年7月TTM · 收入                    报告:       302.97
-                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026 + https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm: 302.97 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 302.97 (偏差 0.00%)
-  ✅ 通过 [29] FY2027 Q1 · GAAP毛利率                  报告:        74.90 %
-                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027: 74.90 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm: 74.90 (偏差 0.00%)
-  ✅ 通过 [28] FY2027 Q1 · 数据中心收入，约数                报告:        75.20
+  ✅ 通过 [14] FY2025 · GAAP净利润                     报告:        72.88
+                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025: 72.88 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/: 72.88 (偏差 0.00%)
+  ✅ 通过 [18] FY2026 · 公司口径FCF                     报告:        96.58
+                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026: 96.58 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/cash-flow-statement/ ; official equipment principal 0.101: 96.58 (偏差 0.00%)
+  ✅ 通过 [29] FY2027 Q1 · 数据中心收入，约数                报告:        75.20
                                                     https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027: 75.20 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm: 75.25 (偏差 0.06%)
-  ✅ 通过 [32] FY2027 Q2 · GAAP毛利率                  报告:        75.00 %
-                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027: 75.00 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm: 75.00 (偏差 0.00%)
-  ✅ 通过 [30] FY2027 Q2 · 总收入                      报告:        96.22
-                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm: 96.22 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/?p=quarterly: 96.22 (偏差 0.00%)
-  ✅ 通过 [36] 有息债务 · 金额                            报告:        33.37
-                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm: 33.37 (偏差 0.00%)
-  ✅ 通过 [55] 悲观 · 以10%折回今天                        报告:        63.25
-                                                    独立Decimal复算三年折回价格: 63.25 (偏差 0.00%)
-  ✅ 通过 [70] 第三年主营税后利润，十亿美元 · 悲观                  报告:       135.52
-                                                    独立Decimal复算利润: 135.52 (偏差 0.00%)
-  ✅ 通过 [76] 2036年主营税后利润，十亿美元 · 悲观                报告:       140.00
-                                                    valuation_model.py SPECS：检查正文与显式输入一致: 140.00 (偏差 0.00%)
-  ✅ 通过 [82] 永续增长g · 悲观                           报告:         2.00 %
-                                                    valuation_model.py SPECS：检查正文与显式输入一致: 2.00 (偏差 0.00%)
-  ✅ 通过 [87] 次年利润终值倍数 · 乐观                        报告:        14.00
-                                                    独立Decimal永续倍数复算: 14.00 (偏差 0.00%)
-  ✅ 通过 [95] 173.73 · 第十年利润，十亿美元                  报告:       584.29
-                                                    valuation_model.py反向DCF求根；不属于外部预测: 584.29 (偏差 0.00%)
+  ✅ 通过 [28] FY2027 Q1 · 总收入                      报告:        81.61
+                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027: 81.61 (偏差 0.00%)  |  https://stockanalysis.com/stocks/nvda/financials/?p=quarterly: 81.61 (偏差 0.00%)
+  ✅ 通过 [30] FY2027 Q1 · GAAP毛利率                  报告:        74.90 %
+                                                    https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027: 74.90 (偏差 0.00%)  |  https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm: 74.90 (偏差 0.00%)
+  ✅ 通过 [32] FY2027 Q2 · 数据中心收入，约数                报告:        89.00
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm: 89.02 (偏差 0.03%)  |  https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027: 89.00 (偏差 0.00%)
+  ✅ 通过 [36] 可交易债券 · 本报告处理                        报告:        56.59
+                                                    https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm: 56.59 (偏差 0.00%)
+  ✅ 通过 [55] 悲观 · 三年后价格代理                         报告:        84.18
+                                                    独立Decimal复算三年价格: 84.18 (偏差 0.00%)
+  ✅ 通过 [65] 乐观 · 三年后价格代理                         报告:       357.98
+                                                    独立Decimal复算三年价格: 357.98 (偏差 0.00%)
+  ✅ 通过 [70] 主观权重 · 乐观                            报告:        20.00 %
+                                                    valuation_model.py SPECS：检查正文与显式输入一致: 20.00 (偏差 0.00%)
+  ✅ 通过 [76] 第四至第十年利润年增速 · 乐观                     报告:        11.22 %
+                                                    独立Decimal复算分段利润增长: 11.22 (偏差 0.02%)
+  ✅ 通过 [82] 利润转为可分配经营现金的比例 · 乐观                  报告:        75.00 %
+                                                    valuation_model.py SPECS：检查正文与显式输入一致: 75.00 (偏差 0.00%)
+  ✅ 通过 [87] 次年利润终值倍数 · 基准                        报告:        12.57
+                                                    独立Decimal永续倍数复算: 12.57 (偏差 0.01%)
+  ✅ 通过 [95] 173.73 · 所需十年主营利润年增速                 报告:        13.97 %
+                                                    valuation_model.py反向DCF求根；非外部预测: 13.97 (偏差 0.02%)
+  ✅ 通过 [115] TTM公司FCF，百万美元 · 核验结论                 报告:         0.12
+                                                    复核正文明确标示的十亿美元差额；表格标题百万美元不改变本格显式单位: 0.12 (偏差 0.00%)
 
 ----------------------------------------------------------------------
-  抽检总数: 17  |  通过: 17  |  警告: 0  |  不通过: 0
+  抽检总数: 19  |  通过: 19  |  警告: 0  |  不通过: 0
 
 【准出】所有抽检数据通过，报告可发布。
 ======================================================================
 {
   "verdict": "PASS",
-  "pass_count": 17,
+  "pass_count": 19,
   "warn_count": 0,
   "fail_count": 0,
-  "total": 17,
+  "total": 19,
   "fail_items": [],
   "warn_items": []
 }
