@@ -18,10 +18,12 @@ Zero external dependencies — 仅用 unittest，与 report_audit.py 本身保�
 """
 
 import io
+import json
 import os
 import subprocess
 import sys
 import unittest
+from contextlib import redirect_stdout
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'tools'))
 
@@ -169,6 +171,64 @@ class TestGbkStdoutSurvival(unittest.TestCase):
             R._force_utf8_stdio()      # 不应抛异常
         finally:
             sys.stdout = orig
+
+
+class TestVerdictSources(unittest.TestCase):
+    """可选的第二来源不能把唯一来源的不符判成可发布。"""
+
+    def verdict(self, primary, **kwargs):
+        item = dict(id=1, label='Revenue', reported_value=100,
+                    fetched_value=primary, fetched_source='fixture')
+        item.update(kwargs)
+        with redirect_stdout(io.StringIO()):
+            return R.render_verdict([item])
+
+    def test_mismatching_single_source_fails(self):
+        for optional in ({}, {'fetched_value2': None}):
+            with self.subTest(optional=optional):
+                result = self.verdict(200, **optional)
+                self.assertEqual(result['verdict'], 'FAIL')
+                self.assertEqual(result['fail_count'], 1)
+                self.assertEqual(result['warn_count'], 0)
+                self.assertEqual(result['pass_count'], 0)
+                self.assertIsNone(result['fail_items'][0]['diff2_pct'])
+
+    def test_single_source_preserves_tolerance_and_sign(self):
+        for reported, fetched, expected in (
+                (100, 101, 'PASS'), (100, 101.01, 'FAIL'),
+                (-100, -100, 'PASS'), (-100, -200, 'FAIL'),
+                (0, 0, 'PASS'), (0, 1, 'FAIL')):
+            with self.subTest(reported=reported, fetched=fetched):
+                result = self.verdict(fetched, reported_value=reported)
+                self.assertEqual(result['verdict'], expected)
+
+    def test_two_sources_preserve_existing_classification(self):
+        for primary, secondary, passed, warned, failed in (
+                (100, 101, 1, 0, 0), (200, 300, 0, 0, 1),
+                (100, 200, 0, 1, 0), (200, 100, 0, 1, 0),
+                (100, 0, 0, 1, 0)):
+            with self.subTest(primary=primary, secondary=secondary):
+                result = self.verdict(primary, fetched_value2=secondary,
+                                      fetched_source2='fixture2')
+                self.assertEqual(result['pass_count'], passed)
+                self.assertEqual(result['warn_count'], warned)
+                self.assertEqual(result['fail_count'], failed)
+                self.assertEqual(result['verdict'], 'FAIL' if failed else 'PASS')
+
+    def test_cli_exit_code_matches_single_source_verdict(self):
+        for fetched, expected_code, expected_verdict in (
+                (200, 1, 'FAIL'), (100, 0, 'PASS')):
+            with self.subTest(fetched=fetched):
+                items = [dict(id=1, label='Revenue', reported_value=100,
+                              fetched_value=fetched, fetched_source='fixture')]
+                proc = subprocess.run(
+                    [sys.executable, '-B', os.path.join(_TOOLS, 'report_audit.py'),
+                     'verdict', '--results', json.dumps(items), '--output-json'],
+                    capture_output=True, text=True, encoding='utf-8',
+                    env=dict(os.environ, PYTHONIOENCODING='utf-8'), timeout=30)
+                self.assertEqual(proc.returncode, expected_code, proc.stderr)
+                outcome = json.loads(proc.stdout[proc.stdout.index('\n{') + 1:])
+                self.assertEqual(outcome['verdict'], expected_verdict)
 
 
 if __name__ == '__main__':
