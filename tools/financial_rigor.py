@@ -198,7 +198,11 @@ def cross_validate(field_name, source_values: dict, unit="", tolerance_pct=2.0):
 
     all_ok = True
     for src, val in values.items():
-        dev = abs(float(val) - median) / median * 100 if median != 0 else 0
+        if median != 0:
+            dev = abs(float(val) - median) / abs(median) * 100
+        else:
+            # A nonzero value cannot agree with a zero reference in relative terms.
+            dev = 0 if val == 0 else math.inf
         status = "✅" if dev <= tolerance_pct else "❌"
         if dev > tolerance_pct:
             all_ok = False
