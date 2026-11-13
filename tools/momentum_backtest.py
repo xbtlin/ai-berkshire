@@ -329,6 +329,8 @@ def backtest_ticker(ticker):
 # ============================================================
 
 if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
     print("=" * 70)
     print("  动量发现 + 价值验证 回测系统")
     print("  标的：NVDA / AMD / MU | 时间：2022-2025")
