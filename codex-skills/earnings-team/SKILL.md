@@ -9,7 +9,10 @@ This skill is generated from `skills/earnings-team.md` so Claude Code and Codex 
 
 - Treat `$ARGUMENTS` as the user's request in the current Codex thread.
 - When the source mentions Claude-only surfaces such as Task, Agent, WebSearch, Bash, Read, or Write, use the closest Codex capability available in this session: subagents when available, web search when needed, shell commands for local tools, and normal file edits for workspace files.
-- Use shared project tools from `tools/` in this repository. Prefer running commands from the repository root with paths like `python3 tools/financial_rigor.py ...`; if the current thread starts outside the repo, locate the actual checkout path first instead of assuming a fixed home-directory path.
+- Locate the actual project root containing `AGENTS.md`, `skills/`, and `tools/` before resolving project paths. Do not assume `~/ai-berkshire` or use the installed skill directory as the root. Run shared tools from the project root, or pass absolute tool and report paths. Save reports under its `reports/` directory unless the user specifies another destination.
+- Before running Python commands, identify and verify a usable interpreter; replace the example command `python3` as needed. A WindowsApps command entry alone does not verify an interpreter.
+- Adapt examples to the active shell. In PowerShell, use single-line commands instead of Bash backslash continuations, quote path arguments, and replace `grep`/`head` pipelines with available `rg` or PowerShell commands.
+- Use the system temporary directory instead of assuming `/tmp` exists: `tempfile.gettempdir()` with `pathlib.Path` in Python, or `[System.IO.Path]::GetTempPath()` with `Join-Path` in PowerShell. Ensure output parent directories exist before writing.
 - Before starting research, run the `date` command to confirm today's date; treat it as the baseline for "latest" data and state the data cutoff date in the report header. Never assume the current date from training data.
 - Preserve the research quality rules from `AGENTS.md`: cross-check financial data, use exact arithmetic tools for valuation/math, and clearly label uncertainty and source gaps.
 
@@ -121,10 +124,11 @@ This skill is generated from `skills/earnings-team.md` so Claude Code and Codex 
    - 收入、毛利、经营利润、净利润——GAAP和Non-GAAP都要
    - GAAP vs Non-GAAP差异：差了多少、差在哪里、差距扩大还是缩小
    - 关键数据至少两个来源交叉验证
+   - 运行前统一两来源的币种和单位，将 `{值1}`、`{值2}` 替换为实际数值，`{单位}` 替换为对应单位。
 
    ```bash
    python3 tools/financial_rigor.py cross-validate \
-     --metric "revenue" --values {值1} {值2} --sources "来源1" "来源2"
+     --field "revenue" --values '{"来源1": {值1}, "来源2": {值2}}' --unit "{单位}"
    ```
 
 2. **现金流分析（最重要）**
