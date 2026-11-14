@@ -14,6 +14,8 @@ English | [中文](README.md) | [日本語](README_JA.md)
 
 One person + Claude Code / Codex = an entire investment research team.
 
+> 🎓 **Interactive financial-statement course: [Financial Academy — Understand a Company](apps/financial-academy/)**. A Chinese-language course with 12 chapters, 72 concepts, 48 chapter exercises and a 24-question final, plus interactive labs, mistake review and graduation gates. Source code, question bank and local setup instructions are included.
+
 [Track Record](#real-track-record) · [Why Not Just Ask AI?](#why-cant-you-just-ask-ai-directly) · [Skills](#skills-overview-20-skills) · [Quick Start](#quick-start) · [Reports](#live-research-reports) · [Design Philosophy](#design-philosophy)
 
 ---
@@ -711,3 +713,4 @@ If this project has been helpful to you, please give it a Star!
     <img alt="Star History Chart" src="assets/star-history.svg">
   </picture>
 </a>
+

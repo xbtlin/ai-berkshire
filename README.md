@@ -14,6 +14,8 @@
 
 > 📮 **仓库是全量框架，公众号是精选。** 真正值得深研的公司，加上报告之外我自己的判断与取舍，都在微信公众号「**复利炼丹炉**」——[扫码关注 ↓](#精选研究首发于公众号)
 
+> 🎓 **互动财报课程：[复利学堂 · 看懂一家公司](apps/financial-academy/)**。12 章、72 个知识点、48 道章节题与 24 道结业题，含互动实验、错题复习及出师门槛；源码、题库和本地运行说明均已入库。
+
 <!-- REPORTS-BANNER:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
 > 📖 **想读报告，用 [阅读站](https://xbtlin.github.io/ai-berkshire/)**：成品报告按公司、专题、时间整理，电脑和手机都好读，可搜索、记住阅读进度。
@@ -757,3 +759,4 @@ MIT License
     <img alt="Star History Chart" src="assets/star-history.svg">
   </picture>
 </a>
+
