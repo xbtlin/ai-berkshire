@@ -1,6 +1,6 @@
 {
-  "count": 2494,
-  "published": 2283,
+  "count": 2495,
+  "published": 2284,
   "drafts": 211,
   "reports": [
     {
@@ -12,6 +12,17 @@
       "type": "研究",
       "date": "2026-11-16",
       "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "Qwen4 系列深度研究：Max 的能力、价格、速度与三年竞争力",
+      "path": "reports/AI产业研究/Qwen4系列研究报告-20261116.md",
+      "bucket": "专题",
+      "group": "AI产业研究",
+      "series": "",
+      "type": "横评对比",
+      "date": "2026-11-16",
+      "date_source": "front-matter",
       "ticker": ""
     },
     {

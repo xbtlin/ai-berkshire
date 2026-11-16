@@ -1,0 +1,357 @@
+======================================================================
+报告数据抽检清单
+文件：reports/AI产业研究/Qwen4系列研究报告-20261116.md
+总提取数据点：171  |  抽样比例：15%  |  抽检数量：26
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  7     91  Claude Fable 5.2 · 耗时/测试                    43.00
+  9     92  Claude Sonnet 5.5 · 成本/测试，美元                16.18
+  8     92  Claude Sonnet 5.5 · Vals 分数，%               70.85
+ 23     97  Qwen4-Max · Vals 分数，%                       63.20
+ 24     97  Qwen4-Max · 成本/测试，美元                         9.33
+ 27     98  Kimi K3.1 Pro · 成本/测试，美元                     6.44
+ 29     99  DeepSeek V4.1 Flash 1017 · Vals 分数，         61.26
+ 36    101  Hy4 · 成本/测试，美元                               1.72
+ 51    124  Claude Fable 5.2 · 成本/测试，美元                 14.56
+ 58    126  Kimi K3.1 Pro · 耗时/测试                       49.00
+ 56    126  Kimi K3.1 Pro · Terminal-Bench 4.0，         63.64
+ 57    126  Kimi K3.1 Pro · 成本/测试，美元                     4.57
+ 60    127  Gemini 4 Carbon · 成本/测试，美元                   7.45
+ 63    128  GPT-6.1 Sol · 成本/测试，美元                       1.72
+ 71    131  DeepSeek V4.1 Flash 1017 · Terminal         31.82
+ 72    131  DeepSeek V4.1 Flash 1017 · 成本/测试，美元          0.54
+108    190  GPT-6.1 Sol · 主要口径                          16.00
+109    191  Claude Fable 5.2 · 输入，美元/百万 token            8.00
+115    192  Claude Opus 5.5 · 等 token 算例，美元              0.60
+130    196  Kimi K3.1 Pro · 输出，美元/百万 token              10.00
+140    199  DeepSeek V4.1 Flash，闲时 · 等 token 算例          0.02
+144    200  MiniMax M3.1 Flash · 等 token 算例，美元           0.02
+152    328  低延迟在线交互 · 核心验收                              95.00
+163    375  S10 · 来源                                     3.80
+164    376  S11 · 用途与性质                                  4.00
+169    388  S23 · 用途与性质                                  3.10
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 7,
+    "label": "Claude Fable 5.2 · 耗时/测试",
+    "reported_value": 43.0,
+    "unit": "",
+    "line_number": 91,
+    "raw_text": "| Claude Fable 5.2 | 71.31 | 17.94 | 43 分 42 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "Claude Sonnet 5.5 · 成本/测试，美元",
+    "reported_value": 16.18,
+    "unit": "",
+    "line_number": 92,
+    "raw_text": "| Claude Sonnet 5.5 | 70.85 | 16.18 | 约 86 分钟 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "Claude Sonnet 5.5 · Vals 分数，%",
+    "reported_value": 70.85,
+    "unit": "",
+    "line_number": 92,
+    "raw_text": "| Claude Sonnet 5.5 | 70.85 | 16.18 | 约 86 分钟 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "Qwen4-Max · Vals 分数，%",
+    "reported_value": 63.2,
+    "unit": "",
+    "line_number": 97,
+    "raw_text": "| **Qwen4-Max** | **63.20** | **9.33** | **64 分 39 秒** |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "Qwen4-Max · 成本/测试，美元",
+    "reported_value": 9.33,
+    "unit": "",
+    "line_number": 97,
+    "raw_text": "| **Qwen4-Max** | **63.20** | **9.33** | **64 分 39 秒** |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 27,
+    "label": "Kimi K3.1 Pro · 成本/测试，美元",
+    "reported_value": 6.44,
+    "unit": "",
+    "line_number": 98,
+    "raw_text": "| Kimi K3.1 Pro | 62.52 | 6.44 | 63 分 36 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "DeepSeek V4.1 Flash 1017 · Vals 分数，%",
+    "reported_value": 61.26,
+    "unit": "",
+    "line_number": 99,
+    "raw_text": "| DeepSeek V4.1 Flash 1017 | 61.26 | 0.66 | 39 分 55 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "Hy4 · 成本/测试，美元",
+    "reported_value": 1.72,
+    "unit": "",
+    "line_number": 101,
+    "raw_text": "| Hy4 | 59.35 | 1.72 | 51 分 31 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 51,
+    "label": "Claude Fable 5.2 · 成本/测试，美元",
+    "reported_value": 14.56,
+    "unit": "",
+    "line_number": 124,
+    "raw_text": "| Claude Fable 5.2 | 65.15 | 14.56 | 55 分 07 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 58,
+    "label": "Kimi K3.1 Pro · 耗时/测试",
+    "reported_value": 49.0,
+    "unit": "",
+    "line_number": 126,
+    "raw_text": "| Kimi K3.1 Pro | 63.64 | 4.57 | 49 分 21 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "Kimi K3.1 Pro · Terminal-Bench 4.0，%",
+    "reported_value": 63.64,
+    "unit": "",
+    "line_number": 126,
+    "raw_text": "| Kimi K3.1 Pro | 63.64 | 4.57 | 49 分 21 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 57,
+    "label": "Kimi K3.1 Pro · 成本/测试，美元",
+    "reported_value": 4.57,
+    "unit": "",
+    "line_number": 126,
+    "raw_text": "| Kimi K3.1 Pro | 63.64 | 4.57 | 49 分 21 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "Gemini 4 Carbon · 成本/测试，美元",
+    "reported_value": 7.45,
+    "unit": "",
+    "line_number": 127,
+    "raw_text": "| Gemini 4 Carbon | 63.13 | 7.45 | 45 分 07 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 63,
+    "label": "GPT-6.1 Sol · 成本/测试，美元",
+    "reported_value": 1.72,
+    "unit": "",
+    "line_number": 128,
+    "raw_text": "| GPT-6.1 Sol | 55.05 | 1.72 | 45 分 12 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 71,
+    "label": "DeepSeek V4.1 Flash 1017 · Terminal-Bench 4.0，%",
+    "reported_value": 31.82,
+    "unit": "",
+    "line_number": 131,
+    "raw_text": "| DeepSeek V4.1 Flash 1017 | 31.82 | 0.54 | 41 分 10 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 72,
+    "label": "DeepSeek V4.1 Flash 1017 · 成本/测试，美元",
+    "reported_value": 0.54,
+    "unit": "",
+    "line_number": 131,
+    "raw_text": "| DeepSeek V4.1 Flash 1017 | 31.82 | 0.54 | 41 分 10 秒 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 108,
+    "label": "GPT-6.1 Sol · 主要口径",
+    "reported_value": 16.0,
+    "unit": "",
+    "line_number": 190,
+    "raw_text": "| GPT-6.1 Sol | 2.00 | 10.00 | 0.300 | 常规模式、未触发长输入加价 [S16] |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 109,
+    "label": "Claude Fable 5.2 · 输入，美元/百万 token",
+    "reported_value": 8.0,
+    "unit": "",
+    "line_number": 191,
+    "raw_text": "| Claude Fable 5.2 | 8.00 | 40.00 | 1.200 | 标准报价 [S17] |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 115,
+    "label": "Claude Opus 5.5 · 等 token 算例，美元",
+    "reported_value": 0.6,
+    "unit": "",
+    "line_number": 192,
+    "raw_text": "| Claude Opus 5.5 | 4.00 | 20.00 | 0.600 | 标准报价 [S17] |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 130,
+    "label": "Kimi K3.1 Pro · 输出，美元/百万 token",
+    "reported_value": 10.0,
+    "unit": "",
+    "line_number": 196,
+    "raw_text": "| Kimi K3.1 Pro | 2.00 | 10.00 | 0.300 | Vals 模型页记录，非本次取得的官方完整价表 [S14] |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 140,
+    "label": "DeepSeek V4.1 Flash，闲时 · 等 token 算例，美元",
+    "reported_value": 0.021,
+    "unit": "",
+    "line_number": 199,
+    "raw_text": "| DeepSeek V4.1 Flash，闲时 | 0.15 | 0.60 | 0.021 | 按官方时段规则 [S22] |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 144,
+    "label": "MiniMax M3.1 Flash · 等 token 算例，美元",
+    "reported_value": 0.021,
+    "unit": "",
+    "line_number": 200,
+    "raw_text": "| MiniMax M3.1 Flash | 0.15 | 0.60 | 0.021 | 官方直连 [S23] |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 152,
+    "label": "低延迟在线交互 · 核心验收",
+    "reported_value": 95.0,
+    "unit": "",
+    "line_number": 328,
+    "raw_text": "| 低延迟在线交互 | 控制推理预算，复杂任务转异步 | 首段有效答案时间、P95、可中断性 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 163,
+    "label": "S10 · 来源",
+    "reported_value": 3.8,
+    "unit": "",
+    "line_number": 375,
+    "raw_text": "| S10 | [Vals：Qwen3.8-Max-0902](https://www.vals.ai/models/alibaba_qwen3.8-max-0902) | 上一代对应数据 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 164,
+    "label": "S11 · 用途与性质",
+    "reported_value": 4.0,
+    "unit": "",
+    "line_number": 376,
+    "raw_text": "| S11 | [Arena Code/WebDev](https://arena.ai/leaderboard/code/webdev) | 网页开发偏好评测；Qwen4 仍为 preliminary |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 169,
+    "label": "S23 · 用途与性质",
+    "reported_value": 3.1,
+    "unit": "",
+    "line_number": 388,
+    "raw_text": "| S23 | [MiniMax 定价](https://platform.minimax.io/docs/pricing/overview) | M3.1 Flash 官方报价 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

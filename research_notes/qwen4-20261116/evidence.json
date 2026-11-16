@@ -1,0 +1,216 @@
+{
+  "retrieved_on": "2026-11-16",
+  "vals_index_version": "2.2; publisher date 2026-11-15",
+  "vals_source": "https://www.vals.ai/benchmarks/vals_index",
+  "duration_detail_sources": [
+    "https://www.vals.ai/models/alibaba_qwen4-max",
+    "https://www.vals.ai/models/alibaba_qwen3.8-max-0902",
+    "https://www.vals.ai/models/kimi_kimi-k3.1-pro"
+  ],
+  "vals_columns": [
+    "model",
+    "score_pct",
+    "cost_per_test_usd",
+    "duration"
+  ],
+  "vals_rows": [
+    [
+      "Claude Fable 5.2",
+      "71.31",
+      "17.94",
+      "43m42s"
+    ],
+    [
+      "Claude Sonnet 5.5",
+      "70.85",
+      "16.18",
+      "1h26m"
+    ],
+    [
+      "Gemini 4 Carbon",
+      "70.45",
+      "10.51",
+      "47m45s"
+    ],
+    [
+      "Claude Opus 5.5",
+      "70.14",
+      "24.77",
+      "1h25m"
+    ],
+    [
+      "GPT-6 Astra",
+      "65.02",
+      "21.28",
+      "33m39s"
+    ],
+    [
+      "GPT-6.1 Sol",
+      "63.94",
+      "3.61",
+      "44m24s"
+    ],
+    [
+      "Qwen4-Max",
+      "63.20",
+      "9.33",
+      "64m39s"
+    ],
+    [
+      "Kimi K3.1 Pro",
+      "62.52",
+      "6.44",
+      "63m36s"
+    ],
+    [
+      "DeepSeek V4.1 Flash 1017",
+      "61.26",
+      "0.66",
+      "39m55s"
+    ],
+    [
+      "GLM 5.3",
+      "59.85",
+      "8.52",
+      "1h04m"
+    ],
+    [
+      "Hy4",
+      "59.35",
+      "1.72",
+      "51m31s"
+    ],
+    [
+      "Qwen3.8-Max-0902",
+      "59.05",
+      "8.73",
+      "105m46s"
+    ],
+    [
+      "MiMo V2.6 Pro",
+      "57.81",
+      "0.43",
+      "1h13m"
+    ],
+    [
+      "Step 5 Preview",
+      "54.76",
+      "2.73",
+      "1h05m"
+    ],
+    [
+      "MiniMax M3.1 Flash",
+      "53.78",
+      "0.66",
+      "43m18s"
+    ]
+  ],
+  "price_columns": [
+    "model",
+    "uncached_input_usd_per_million",
+    "output_usd_per_million",
+    "hypothetical_100k_input_10k_output_usd"
+  ],
+  "price_rows": [
+    [
+      "Qwen4-Max",
+      "1.5",
+      "4.5",
+      "0.195"
+    ],
+    [
+      "Qwen3.8-Max-0902",
+      "2",
+      "6",
+      "0.26"
+    ],
+    [
+      "GPT-6.1 Sol",
+      "2",
+      "10",
+      "0.30"
+    ],
+    [
+      "Claude Fable 5.2",
+      "8",
+      "40",
+      "1.20"
+    ],
+    [
+      "Claude Opus 5.5",
+      "4",
+      "20",
+      "0.60"
+    ],
+    [
+      "Claude Sonnet 5.5",
+      "2",
+      "10",
+      "0.30"
+    ],
+    [
+      "Gemini 4 Carbon promotional",
+      "2",
+      "10",
+      "0.30"
+    ],
+    [
+      "Gemini 4 Carbon from 2026-12-01",
+      "4",
+      "20",
+      "0.60"
+    ],
+    [
+      "Kimi K3.1 Pro (Vals-listed price)",
+      "2",
+      "10",
+      "0.30"
+    ],
+    [
+      "GLM 5.3",
+      "1.4",
+      "4.4",
+      "0.184"
+    ],
+    [
+      "DeepSeek V4.1 Flash peak",
+      "0.3",
+      "1.2",
+      "0.042"
+    ],
+    [
+      "DeepSeek V4.1 Flash off-peak",
+      "0.15",
+      "0.6",
+      "0.021"
+    ],
+    [
+      "MiniMax M3.1 Flash",
+      "0.15",
+      "0.6",
+      "0.021"
+    ]
+  ],
+  "calculations": {
+    "active_parameter_change_pct": "-25.26315789473684210526315789",
+    "cn_input_price_change_pct": "-16.66666666666666666666666667",
+    "international_input_price_change_pct": "-25.00",
+    "cn_implicit_cache_read_change_pct": "-66.66666666666666666666666667",
+    "vals_score_change_pp": "4.15",
+    "vals_cost_change_pct": "6.872852233676975945017182100",
+    "vals_duration_change_pct": "-38.87488181531673495115033092",
+    "terminal_score_change_pp": "9.59",
+    "terminal_cost_change_pct": "-67.90123456790123456790123457",
+    "terminal_duration_change_pct_rounded_inputs": "-47.55244755244755244755244755",
+    "work360_score_change_pp": "4.95",
+    "work360_en_cost_change_pct": "-62.30248306997742663656884876",
+    "work360_cn_cost_change_pct": "-58.01354401805869074492099323",
+    "cache_example_no_cache_rmb": "20.0",
+    "cache_example_5m_rmb": "2.20",
+    "cache_example_savings_pct": "89.00",
+    "future_base_scenario_cost_index": "21.600",
+    "future_fast_scenario_cost_index": "6.400",
+    "future_slow_scenario_cost_index": "61.412500"
+  },
+  "limitations": "No paid API calls or first-hand model tests. Prices are region/provider/time-specific. Equal-token arithmetic is not equal-work cost. Benchmark durations are not decode speeds. Future cost indices are illustrative assumptions, not forecasts from a source."
+}
