@@ -1,8 +1,19 @@
 {
-  "count": 2495,
-  "published": 2284,
+  "count": 2496,
+  "published": 2285,
   "drafts": 211,
   "reports": [
+    {
+      "title": "段永平三季度持仓：减苹果、英伟达，加了谁？",
+      "path": "reports/段永平/段永平-2026Q3持仓变化-公众号-20261117.md",
+      "bucket": "大师研究",
+      "group": "段永平",
+      "series": "",
+      "type": "财报",
+      "date": "2026-11-17",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "MiniMax（00100.HK）研究报告",
       "path": "reports/MINIMAX/MiniMax研究报告-20261116.md",
