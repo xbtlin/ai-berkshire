@@ -65,8 +65,19 @@ REPORT_DIR_ALIASES = {"MINIMAX": "MiniMax", "Alibaba": "阿里巴巴"}
 
 # ---------- 抓取 ----------
 
+# curl 超时（秒）。网络卡住时报错退出，而不是无限挂起。
+CONNECT_TIMEOUT = 15
+MAX_TIME = 60
+IMG_MAX_TIME = 120
+
+
+def _timeouts(max_time: int) -> list[str]:
+    return ["--connect-timeout", str(CONNECT_TIMEOUT), "--max-time", str(max_time)]
+
+
 def curl(url: str) -> str:
-    return subprocess.run(["curl", "-sL", "-A", UA, url], capture_output=True, check=True).stdout.decode("utf-8", "ignore")
+    return subprocess.run(["curl", "-sL", *_timeouts(MAX_TIME), "-A", UA, url],
+                          capture_output=True, check=True).stdout.decode("utf-8", "ignore")
 
 
 def album_articles() -> list[dict]:
@@ -172,7 +183,8 @@ def localize_images(md: str, date: str) -> str:
         u = m.group(1)
         path = IMG_DIR / f"{date.replace('-', '')}-{hashlib.md5(u.encode()).hexdigest()[:8]}"
         tmp = path.with_suffix(".tmp")
-        subprocess.run(["curl", "-sL", "-e", "https://mp.weixin.qq.com/", "-o", str(tmp), u], check=True)
+        subprocess.run(["curl", "-sL", *_timeouts(IMG_MAX_TIME), "-e", "https://mp.weixin.qq.com/",
+                        "-o", str(tmp), u], check=True)
         kind = subprocess.run(["file", "-b", str(tmp)], capture_output=True, text=True).stdout
         ext = "png" if "PNG" in kind else "gif" if "GIF" in kind else "webp" if "Web/P" in kind else "jpg"
         final = path.with_suffix("." + ext)
