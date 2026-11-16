@@ -209,5 +209,46 @@ class TestCoreRegression(unittest.TestCase):
         self.assertIn('退出 PE', proc.stdout)
 
 
+class TestPayoutGuard(unittest.TestCase):
+    """g >= ROIC 时留存率 >= 100%、派息率 <= 0，退出 PE 无意义，必须判失效。"""
+
+    _AUDIT = ['audit', '--currency', 'CNY', '--r', '0.08',
+              '--discrete-risks', '退市:尾部档']
+
+    def test_exit_pe_rejects_non_positive_payout(self):
+        pe, retention, numerator, _ = TV.exit_pe(0.015, 0.02, 0.08)
+        self.assertIsNone(pe)
+        self.assertGreater(retention, 1.0)
+        self.assertLess(numerator, 0.0)
+        self.assertIsNone(TV.exit_pe(0.02, 0.02, 0.08)[0])   # ROIC == g：派息率 0
+
+    def test_exit_pe_zero_roic_does_not_raise(self):
+        self.assertIsNone(TV.exit_pe(0.0, 0.02, 0.08)[0])
+
+    def test_exit_pe_valid_inputs_unchanged(self):
+        self.assertAlmostEqual(TV.exit_pe(0.20, 0.02, 0.06)[0], 0.9 / 0.04)
+
+    def test_audit_rejects_g_above_roic(self):
+        proc = _run(self._AUDIT + ['--roic', '0.015', '--g', '0.005,0.02,0.025'])
+        self.assertEqual(proc.returncode, 1, proc.stdout[-600:])
+        self.assertIn('【打回】', proc.stdout)
+        self.assertIn('派息率', proc.stdout)
+
+    def test_audit_rejects_g_equal_roic(self):
+        proc = _run(self._AUDIT + ['--roic', '0.02', '--g', '0.005,0.02,0.025'])
+        self.assertEqual(proc.returncode, 1, proc.stdout[-600:])
+        self.assertIn('【打回】', proc.stdout)
+
+    def test_audit_still_passes_valid_roic(self):
+        proc = _run(self._AUDIT + ['--roic', '0.25', '--g', '0.005,0.015,0.025'])
+        self.assertEqual(proc.returncode, 0, proc.stdout[-600:])
+        self.assertIn('【准出】', proc.stdout)
+
+    def test_pe_cli_rejects_g_above_roic(self):
+        proc = _run(['pe', '--roic', '0.015', '--g', '0.02', '--r', '0.08'])
+        self.assertEqual(proc.returncode, 1, proc.stdout[-400:])
+        self.assertIn('派息率', proc.stdout)
+
+
 if __name__ == '__main__':
     unittest.main()
