@@ -1,42 +1,42 @@
 ======================================================================
 报告数据抽检清单
 文件：/Users/linxuan/ai-berkshire-duan-13f-20261117/reports/段永平/段永平-2026Q3持仓变化-公众号-20261117.md
-总提取数据点：56  |  抽样比例：100%  |  抽检数量：30
+总提取数据点：57  |  抽样比例：100%  |  抽检数量：30
 随机种子：42（可用于复现同一批样本）
 ======================================================================
 
  ID     行号  数据标签                                          报告值  单位
 ───  ─────  ───────────────────────────────────  ────────────  ──────
-  2     29  拼多多 · 三季度末股数                          27990859.00
-  3     29  拼多多 · 幅度                                    11.86  %
-  1     29  拼多多 · 二季度末股数                          25022094.00
-  6     30  特斯拉 · 幅度                                    20.70  %
-  8     31  苹果 · 三季度末股数                           21202403.00
-  9     31  苹果 · 幅度                                    -21.76  %
-  7     31  苹果 · 二季度末股数                           27098707.00
- 15     33  英伟达 · 幅度                                   -63.07  %
- 14     33  英伟达 · 三季度末股数                           2319475.00
- 13     33  英伟达 · 二季度末股数                           6280675.00
- 18     34  谷歌C类 · 幅度                                  -41.50  %
- 16     34  谷歌C类 · 二季度末股数                          1968600.00
- 19     35  微软 · 二季度末股数                             754100.00
- 26    118  苹果 · 组合权重                                   41.07  %
- 28    119  伯克希尔B · 组合权重                                24.21  %
- 27    119  伯克希尔B · 市值（亿美元）                             41.61
- 32    121  特斯拉 · 组合权重                                   8.42  %
- 33    122  西方石油 · 市值（亿美元）                               5.68
- 35    123  英伟达 · 市值（亿美元）                                5.30
- 38    124  谷歌C类 · 组合权重                                  2.28  %
- 37    124  谷歌C类 · 市值（亿美元）                               3.92
- 40    125  微软 · 组合权重                                    2.07  %
- 41    126  迪士尼 · 市值（亿美元）                                1.79
- 44    127  联合健康 · 组合权重                                  0.85  %
- 46    128  Credo · 组合权重                                 0.68  %
- 48    129  SpaceX · 组合权重                                0.18  %
- 50    130  Palantir · 组合权重                              0.07  %
- 49    130  Palantir · 市值（亿美元）                           0.11
- 53    132  Snowflake · 市值（亿美元）                          0.03
- 54    132  Snowflake · 组合权重                             0.02  %
+  2     17  拼多多 · 三季度末股数                          27990859.00
+  3     17  拼多多 · 幅度                                    11.86  %
+  6     18  特斯拉 · 幅度                                    20.70  %
+  8     19  苹果 · 三季度末股数                           21202403.00
+  9     19  苹果 · 幅度                                    -21.76  %
+  7     19  苹果 · 二季度末股数                           27098707.00
+ 15     21  英伟达 · 幅度                                   -63.07  %
+ 14     21  英伟达 · 三季度末股数                           2319475.00
+ 13     21  英伟达 · 二季度末股数                           6280675.00
+ 18     22  谷歌C类 · 幅度                                  -41.50  %
+ 16     22  谷歌C类 · 二季度末股数                          1968600.00
+ 19     23  微软 · 二季度末股数                             754100.00
+ 57     56  SpaceX 是本次两季对照中的新增条目                    199900.00
+ 26     66  苹果 · 组合权重                                   41.07  %
+ 28     67  伯克希尔B · 组合权重                                24.21  %
+ 27     67  伯克希尔B · 市值（亿美元）                             41.61
+ 29     68  拼多多 · 市值（亿美元）                               21.82
+ 33     70  西方石油 · 市值（亿美元）                               5.68
+ 35     71  英伟达 · 市值（亿美元）                                5.30
+ 38     72  谷歌C类 · 组合权重                                  2.28  %
+ 41     74  迪士尼 · 市值（亿美元）                                1.79
+ 44     75  联合健康 · 组合权重                                  0.85  %
+ 43     75  联合健康 · 市值（亿美元）                               1.47
+ 45     76  Credo · 市值（亿美元）                              1.17
+ 48     77  SpaceX · 组合权重                                0.18  %
+ 47     77  SpaceX · 市值（亿美元）                             0.30
+ 50     78  Palantir · 组合权重                              0.07  %
+ 51     79  新思科技 · 市值（亿美元）                               0.04
+ 54     80  Snowflake · 组合权重                             0.02  %
+ 55     81  Tempus AI · 市值（亿美元）                          0.02
 
 ↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
   美股：macrotrends.net（主）+ stockanalysis.com（副）
@@ -51,7 +51,7 @@
     "label": "拼多多 · 三季度末股数",
     "reported_value": 27990859.0,
     "unit": "",
-    "line_number": 29,
+    "line_number": 17,
     "raw_text": "| 拼多多 | 25,022,094 | 27,990,859 | +11.86% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -63,19 +63,7 @@
     "label": "拼多多 · 幅度",
     "reported_value": 11.86,
     "unit": "%",
-    "line_number": 29,
-    "raw_text": "| 拼多多 | 25,022,094 | 27,990,859 | +11.86% |",
-    "fetched_value": null,
-    "fetched_source": "",
-    "fetched_value2": null,
-    "fetched_source2": ""
-  },
-  {
-    "id": 1,
-    "label": "拼多多 · 二季度末股数",
-    "reported_value": 25022094.0,
-    "unit": "",
-    "line_number": 29,
+    "line_number": 17,
     "raw_text": "| 拼多多 | 25,022,094 | 27,990,859 | +11.86% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -87,7 +75,7 @@
     "label": "特斯拉 · 幅度",
     "reported_value": 20.7,
     "unit": "%",
-    "line_number": 30,
+    "line_number": 18,
     "raw_text": "| 特斯拉 | 3,380,400 | 4,080,000 | +20.70% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -99,7 +87,7 @@
     "label": "苹果 · 三季度末股数",
     "reported_value": 21202403.0,
     "unit": "",
-    "line_number": 31,
+    "line_number": 19,
     "raw_text": "| 苹果 | 27,098,707 | 21,202,403 | -21.76% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -111,7 +99,7 @@
     "label": "苹果 · 幅度",
     "reported_value": -21.76,
     "unit": "%",
-    "line_number": 31,
+    "line_number": 19,
     "raw_text": "| 苹果 | 27,098,707 | 21,202,403 | -21.76% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -123,7 +111,7 @@
     "label": "苹果 · 二季度末股数",
     "reported_value": 27098707.0,
     "unit": "",
-    "line_number": 31,
+    "line_number": 19,
     "raw_text": "| 苹果 | 27,098,707 | 21,202,403 | -21.76% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -135,7 +123,7 @@
     "label": "英伟达 · 幅度",
     "reported_value": -63.07,
     "unit": "%",
-    "line_number": 33,
+    "line_number": 21,
     "raw_text": "| 英伟达 | 6,280,675 | 2,319,475 | -63.07% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -147,7 +135,7 @@
     "label": "英伟达 · 三季度末股数",
     "reported_value": 2319475.0,
     "unit": "",
-    "line_number": 33,
+    "line_number": 21,
     "raw_text": "| 英伟达 | 6,280,675 | 2,319,475 | -63.07% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -159,7 +147,7 @@
     "label": "英伟达 · 二季度末股数",
     "reported_value": 6280675.0,
     "unit": "",
-    "line_number": 33,
+    "line_number": 21,
     "raw_text": "| 英伟达 | 6,280,675 | 2,319,475 | -63.07% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -171,7 +159,7 @@
     "label": "谷歌C类 · 幅度",
     "reported_value": -41.5,
     "unit": "%",
-    "line_number": 34,
+    "line_number": 22,
     "raw_text": "| 谷歌C类 | 1,968,600 | 1,151,700 | -41.50% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -183,7 +171,7 @@
     "label": "谷歌C类 · 二季度末股数",
     "reported_value": 1968600.0,
     "unit": "",
-    "line_number": 34,
+    "line_number": 22,
     "raw_text": "| 谷歌C类 | 1,968,600 | 1,151,700 | -41.50% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -195,8 +183,20 @@
     "label": "微软 · 二季度末股数",
     "reported_value": 754100.0,
     "unit": "",
-    "line_number": 35,
+    "line_number": 23,
     "raw_text": "| 微软 | 754,100 | 694,100 | -7.96% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 57,
+    "label": "SpaceX 是本次两季对照中的新增条目",
+    "reported_value": 199900.0,
+    "unit": "",
+    "line_number": 56,
+    "raw_text": "SpaceX 是本次两季对照中的新增条目：199,900 股，市值约 3,016 万美元，占组合 0.18%，排第十二。这是一个小比例持仓，不能解读成组合重心转向。",
     "fetched_value": null,
     "fetched_source": "",
     "fetched_value2": null,
@@ -207,7 +207,7 @@
     "label": "苹果 · 组合权重",
     "reported_value": 41.07,
     "unit": "%",
-    "line_number": 118,
+    "line_number": 66,
     "raw_text": "| 苹果 | 70.608 | 41.07% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -219,7 +219,7 @@
     "label": "伯克希尔B · 组合权重",
     "reported_value": 24.21,
     "unit": "%",
-    "line_number": 119,
+    "line_number": 67,
     "raw_text": "| 伯克希尔B | 41.613 | 24.21% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -231,7 +231,7 @@
     "label": "伯克希尔B · 市值（亿美元）",
     "reported_value": 41.613,
     "unit": "",
-    "line_number": 119,
+    "line_number": 67,
     "raw_text": "| 伯克希尔B | 41.613 | 24.21% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -239,12 +239,12 @@
     "fetched_source2": ""
   },
   {
-    "id": 32,
-    "label": "特斯拉 · 组合权重",
-    "reported_value": 8.42,
-    "unit": "%",
-    "line_number": 121,
-    "raw_text": "| 特斯拉 | 14.476 | 8.42% |",
+    "id": 29,
+    "label": "拼多多 · 市值（亿美元）",
+    "reported_value": 21.816,
+    "unit": "",
+    "line_number": 68,
+    "raw_text": "| 拼多多 | 21.816 | 12.69% |",
     "fetched_value": null,
     "fetched_source": "",
     "fetched_value2": null,
@@ -255,7 +255,7 @@
     "label": "西方石油 · 市值（亿美元）",
     "reported_value": 5.677,
     "unit": "",
-    "line_number": 122,
+    "line_number": 70,
     "raw_text": "| 西方石油 | 5.677 | 3.30% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -267,7 +267,7 @@
     "label": "英伟达 · 市值（亿美元）",
     "reported_value": 5.297,
     "unit": "",
-    "line_number": 123,
+    "line_number": 71,
     "raw_text": "| 英伟达 | 5.297 | 3.08% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -279,32 +279,8 @@
     "label": "谷歌C类 · 组合权重",
     "reported_value": 2.28,
     "unit": "%",
-    "line_number": 124,
+    "line_number": 72,
     "raw_text": "| 谷歌C类 | 3.924 | 2.28% |",
-    "fetched_value": null,
-    "fetched_source": "",
-    "fetched_value2": null,
-    "fetched_source2": ""
-  },
-  {
-    "id": 37,
-    "label": "谷歌C类 · 市值（亿美元）",
-    "reported_value": 3.924,
-    "unit": "",
-    "line_number": 124,
-    "raw_text": "| 谷歌C类 | 3.924 | 2.28% |",
-    "fetched_value": null,
-    "fetched_source": "",
-    "fetched_value2": null,
-    "fetched_source2": ""
-  },
-  {
-    "id": 40,
-    "label": "微软 · 组合权重",
-    "reported_value": 2.07,
-    "unit": "%",
-    "line_number": 125,
-    "raw_text": "| 微软 | 3.560 | 2.07% |",
     "fetched_value": null,
     "fetched_source": "",
     "fetched_value2": null,
@@ -315,7 +291,7 @@
     "label": "迪士尼 · 市值（亿美元）",
     "reported_value": 1.79,
     "unit": "",
-    "line_number": 126,
+    "line_number": 74,
     "raw_text": "| 迪士尼 | 1.790 | 1.04% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -327,7 +303,7 @@
     "label": "联合健康 · 组合权重",
     "reported_value": 0.85,
     "unit": "%",
-    "line_number": 127,
+    "line_number": 75,
     "raw_text": "| 联合健康 | 1.467 | 0.85% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -335,11 +311,23 @@
     "fetched_source2": ""
   },
   {
-    "id": 46,
-    "label": "Credo · 组合权重",
-    "reported_value": 0.68,
-    "unit": "%",
-    "line_number": 128,
+    "id": 43,
+    "label": "联合健康 · 市值（亿美元）",
+    "reported_value": 1.467,
+    "unit": "",
+    "line_number": 75,
+    "raw_text": "| 联合健康 | 1.467 | 0.85% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 45,
+    "label": "Credo · 市值（亿美元）",
+    "reported_value": 1.171,
+    "unit": "",
+    "line_number": 76,
     "raw_text": "| Credo | 1.171 | 0.68% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -351,7 +339,19 @@
     "label": "SpaceX · 组合权重",
     "reported_value": 0.18,
     "unit": "%",
-    "line_number": 129,
+    "line_number": 77,
+    "raw_text": "| SpaceX | 0.302 | 0.18% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 47,
+    "label": "SpaceX · 市值（亿美元）",
+    "reported_value": 0.302,
+    "unit": "",
+    "line_number": 77,
     "raw_text": "| SpaceX | 0.302 | 0.18% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -363,7 +363,7 @@
     "label": "Palantir · 组合权重",
     "reported_value": 0.07,
     "unit": "%",
-    "line_number": 130,
+    "line_number": 78,
     "raw_text": "| Palantir | 0.112 | 0.07% |",
     "fetched_value": null,
     "fetched_source": "",
@@ -371,24 +371,12 @@
     "fetched_source2": ""
   },
   {
-    "id": 49,
-    "label": "Palantir · 市值（亿美元）",
-    "reported_value": 0.112,
+    "id": 51,
+    "label": "新思科技 · 市值（亿美元）",
+    "reported_value": 0.043,
     "unit": "",
-    "line_number": 130,
-    "raw_text": "| Palantir | 0.112 | 0.07% |",
-    "fetched_value": null,
-    "fetched_source": "",
-    "fetched_value2": null,
-    "fetched_source2": ""
-  },
-  {
-    "id": 53,
-    "label": "Snowflake · 市值（亿美元）",
-    "reported_value": 0.034,
-    "unit": "",
-    "line_number": 132,
-    "raw_text": "| Snowflake | 0.034 | 0.02% |",
+    "line_number": 79,
+    "raw_text": "| 新思科技 | 0.043 | 0.03% |",
     "fetched_value": null,
     "fetched_source": "",
     "fetched_value2": null,
@@ -399,8 +387,20 @@
     "label": "Snowflake · 组合权重",
     "reported_value": 0.02,
     "unit": "%",
-    "line_number": 132,
+    "line_number": 80,
     "raw_text": "| Snowflake | 0.034 | 0.02% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 55,
+    "label": "Tempus AI · 市值（亿美元）",
+    "reported_value": 0.016,
+    "unit": "",
+    "line_number": 81,
+    "raw_text": "| Tempus AI | 0.016 | 0.01% |",
     "fetched_value": null,
     "fetched_source": "",
     "fetched_value2": null,

@@ -42,7 +42,7 @@ python3 research_notes/段永平13F-2026Q3-20261117/audit_article.py
 
 `recompute.py` 解析已保存的原始证据，输出 `comparison.json`，并实际调用共享 `tools/financial_rigor.py` 完成 72 次精确运算/跨源检查，结果保存在 `financial_rigor.json`。其中 34 次为逐行市值跨源核对，股数另外逐行作整数相等断言。
 
-`audit_article.py` 对正文两个表格全部 56 个可提取数值逐一检查。先保留两个来源的精确值，再按文章显示位数舍入，防止将 0.01% 与 0.0095% 的显示差异误判为经济错误；每个结果都保存未舍入值与显示精度。随后运行共享 `tools/report_audit.py extract`（100%）与 `verdict`。日志、结果和文章 SHA-256 分别保存在 `audit-extract.txt`、`audit-verdict.txt`、`audit-results.json`、`audit-manifest.json`。这覆盖数值表格；正文逻辑和解释另经人工式审读。
+`audit_article.py` 对正文两个表格全部 56 个可提取数值逐一检查，并核查精简版正文额外提取的 SpaceX 股数，合计 57 项。先保留两个来源的精确值，再按文章显示位数舍入，防止将 0.01% 与 0.0095% 的显示差异误判为经济错误；每个结果都保存未舍入值与显示精度。随后运行共享 `tools/report_audit.py extract`（100%）与 `verdict`。日志、结果和文章 SHA-256 分别保存在 `audit-extract.txt`、`audit-verdict.txt`、`audit-results.json`、`audit-manifest.json`。这覆盖数值表格；正文逻辑和解释另经人工式审读。
 
 图表由 `charts.py` 基于同一 `comparison.json` 生成，使用 matplotlib 和本机中文字体；两张 2000×1520 PNG 已目视核对。脚本中的字体路径可按其他机器的中文字体位置调整。
 

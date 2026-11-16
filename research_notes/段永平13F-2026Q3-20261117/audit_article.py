@@ -27,7 +27,12 @@ text=REPORT.read_text()
 points=audit.extract_data_points(text)
 result=[]
 for p in points:
-    name,field=p['label'].split(' · ')
+    if ' · ' in p['label']:
+        name,field=p['label'].split(' · ')
+    elif p['label']=='SpaceX 是本次两季对照中的新增条目':
+        name,field='SpaceX','三季度末股数'
+    else:
+        raise AssertionError(('Unmapped prose point',p))
     r=rows[name];a=other['q2'].get(r['ticker']);b=other['q3'][r['ticker']]
     if field=='二季度末股数': v1,v2,precision=r['q2_shares'],a[6],'1'
     elif field=='三季度末股数': v1,v2,precision=r['q3_shares'],b[6],'1'
@@ -46,7 +51,8 @@ for p in points:
         'fetched_value':str(norm1),'fetched_source':'SEC原始XML，按文章显示精度舍入',
         'fetched_value2':str(norm2),'fetched_source2':'13f.info两季独立转录，按文章显示精度舍入',
         'source_exact_value':str(v1),'source2_exact_value':str(v2),'display_quantum':precision})
-assert len(result)==56,('Unexpected table point count',len(result))
+table_count=sum(' · ' in p['label'] for p in points)
+assert table_count==56 and len(result)==57,('Unexpected data point count',table_count,len(result))
 for target in re.findall(r'!\[[^\]]*\]\(([^)]+)\)',text):
     assert (REPORT.parent/target).is_file(),target
 assert all(word not in text for word in ['每股估值','自身期末估值','[图X','TODO'])
@@ -58,7 +64,8 @@ clean_verdict=re.sub(r'\x1b\[[0-9;]*m','',ver.stdout)
 (HERE/'audit-verdict.txt').write_text('\n'.join(line.rstrip() for line in clean_verdict.splitlines())+'\n')
 assert '"verdict": "PASS"' in ver.stdout
 manifest={'article':str(REPORT.relative_to(ROOT)), 'sha256':hashlib.sha256(REPORT.read_bytes()).hexdigest(),
-          'extracted_table_data_points':len(result),'validated_table_data_points':len(result),
+          'extracted_table_data_points':table_count,'validated_table_data_points':table_count,
+          'additional_prose_data_points':len(result)-table_count,'validated_total_data_points':len(result),
           'skipped':0,'source_rows_cross_checked':len(comp['cross_checks']),
           'note':'Arithmetic and transcription audit, not independent verification of actual asset ownership. Prose additionally reviewed by editor, reader and parent agent.'}
 (HERE/'audit-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

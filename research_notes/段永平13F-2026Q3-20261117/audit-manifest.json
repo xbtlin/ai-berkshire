@@ -1,8 +1,10 @@
 {
   "article": "reports/段永平/段永平-2026Q3持仓变化-公众号-20261117.md",
-  "sha256": "ecba62e7f832ac52bb85d6892441807fbf1903613b22b1a8229f410629c6bad5",
+  "sha256": "a27488d1ae5850408587ac4a50961d2b90cf66b08379af2eb2ac91c6548458ff",
   "extracted_table_data_points": 56,
   "validated_table_data_points": 56,
+  "additional_prose_data_points": 1,
+  "validated_total_data_points": 57,
   "skipped": 0,
   "source_rows_cross_checked": 34,
   "note": "Arithmetic and transcription audit, not independent verification of actual asset ownership. Prose additionally reviewed by editor, reader and parent agent."
