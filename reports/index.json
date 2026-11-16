@@ -1,8 +1,19 @@
 {
-  "count": 2493,
-  "published": 2282,
+  "count": 2494,
+  "published": 2283,
   "drafts": 211,
   "reports": [
+    {
+      "title": "MiniMax（00100.HK）研究报告",
+      "path": "reports/MINIMAX/MiniMax研究报告-20261116.md",
+      "bucket": "公司",
+      "group": "MiniMax",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-16",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "抽检判决与范围",
       "path": "reports/英伟达/黄仁勋事件-20261112/audit/report-audit-summary.md",
