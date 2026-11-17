@@ -1,6 +1,6 @@
 {
-  "count": 2496,
-  "published": 2285,
+  "count": 2497,
+  "published": 2286,
   "drafts": 211,
   "reports": [
     {
@@ -12,6 +12,17 @@
       "type": "财报",
       "date": "2026-11-17",
       "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "闫俊杰最新播客访谈：中文摘要与官方原文导读",
+      "path": "reports/MINIMAX/闫俊杰播客访谈-中文摘要与原文导读-20261117.md",
+      "bucket": "公司",
+      "group": "MiniMax",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-17",
+      "date_source": "front-matter",
       "ticker": ""
     },
     {
