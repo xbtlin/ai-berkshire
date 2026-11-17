@@ -1,6 +1,6 @@
 {
-  "count": 2497,
-  "published": 2286,
+  "count": 2498,
+  "published": 2287,
   "drafts": 211,
   "reports": [
     {
@@ -23,6 +23,17 @@
       "type": "研究",
       "date": "2026-11-17",
       "date_source": "front-matter",
+      "ticker": ""
+    },
+    {
+      "title": "中美 AI 创业并购与创业选址：高价收购买的是什么，技术创始人应该去哪里？",
+      "path": "reports/AI产业研究/中美AI创业并购与创业选址研究-20261117.md",
+      "bucket": "专题",
+      "group": "AI产业研究",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-17",
+      "date_source": "文件名",
       "ticker": ""
     },
     {
