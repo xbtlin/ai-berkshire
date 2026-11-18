@@ -339,6 +339,8 @@ def nvda_manual_analysis():
 # ============================================================
 
 if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
     print("=" * 70)
     print("  动量发现 + 价值验证 回测系统 v2")
     print("  标的：NVDA / AMD / MU | 框架验证")
