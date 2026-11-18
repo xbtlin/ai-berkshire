@@ -1,0 +1,140 @@
+{
+  "unit_note": "RMB m=million; b=billion. FCF/cash capex disclosed at 0.1 billion precision. Q3 OCF reconstructed from YTD minus H1. Company capex is not identical to cash capex.",
+  "quarters": [
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2",
+    "2026Q3"
+  ],
+  "series": {
+    "revenue_rmb_m": [
+      192869,
+      194371,
+      196458,
+      204785,
+      207336
+    ],
+    "gross_profit_rmb_m": [
+      108798,
+      108289,
+      111265,
+      118433,
+      115911
+    ],
+    "ifrs_operating_profit_rmb_m": [
+      63554,
+      60338,
+      67375,
+      67276,
+      59147
+    ],
+    "nonifrs_operating_profit_rmb_m": [
+      72570,
+      69518,
+      75627,
+      75636,
+      68073
+    ],
+    "profit_for_period_rmb_m": [
+      64943,
+      59089,
+      59392,
+      57977,
+      65139
+    ],
+    "ifrs_attributable_profit_rmb_m": [
+      63133,
+      58260,
+      58093,
+      56022,
+      63612
+    ],
+    "nonifrs_attributable_profit_rmb_m": [
+      70551,
+      64694,
+      67905,
+      68415,
+      66519
+    ],
+    "operating_cash_flow_rmb_m": [
+      85312,
+      66475,
+      101351,
+      52710,
+      2652
+    ],
+    "company_capex_rmb_m": [
+      12983,
+      19632,
+      31936,
+      52784,
+      81433
+    ],
+    "cash_capex_rmb_b_rounded": [
+      "20.0",
+      "22.4",
+      "37.0",
+      "59.3",
+      "65.1"
+    ],
+    "company_fcf_rmb_b_rounded": [
+      "58.5",
+      "34.0",
+      "56.7",
+      "-13.8",
+      "-69.1"
+    ],
+    "net_cash_rmb_m": [
+      102422,
+      107145,
+      146860,
+      58191,
+      -13702
+    ],
+    "ifrs_basic_eps": [
+      "6.952",
+      "6.433",
+      "6.431",
+      "6.207",
+      "7.059"
+    ],
+    "ifrs_diluted_eps": [
+      "6.779",
+      "6.276",
+      "6.302",
+      "6.104",
+      "6.947"
+    ],
+    "nonifrs_basic_eps": [
+      "7.769",
+      "7.144",
+      "7.517",
+      "7.581",
+      "7.382"
+    ],
+    "nonifrs_diluted_eps": [
+      "7.575",
+      "6.966",
+      "7.364",
+      "7.433",
+      "7.227"
+    ],
+    "reported_revenue_growth_pct": [
+      15,
+      13,
+      9,
+      11,
+      8
+    ],
+    "nonifrs_profit_growth_pct": [
+      18,
+      17,
+      11,
+      9,
+      -6
+    ]
+  },
+  "retrieved_at": "2026-11-18 Asia/Shanghai",
+  "independent_source_note": "Historical original Tencent announcements downloaded from FinancialFilings PDF mirror; Tencent press releases republished by PRNewswire. They share the same original company source and must not be labeled two independent sources."
+}

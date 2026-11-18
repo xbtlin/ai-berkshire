@@ -1,0 +1,357 @@
+[
+  {
+    "id": 1,
+    "label": "调整归母利润",
+    "reported_value": 665,
+    "unit": "亿元",
+    "fetched_value": 665.19,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p1",
+    "classification": "manual_prose_check",
+    "fetched_value2": 665.19,
+    "fetched_source2": "https://m.jrj.com.cn/madapter/stock/2026/11/18163659194053.shtml independent media transcription"
+  },
+  {
+    "id": 2,
+    "label": "调整归母同比",
+    "reported_value": -6,
+    "unit": "%",
+    "fetched_value": -6.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p1 rounded",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 3,
+    "label": "收入",
+    "reported_value": 2073,
+    "unit": "亿元",
+    "fetched_value": 2073.36,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p1",
+    "classification": "manual_prose_check",
+    "fetched_value2": 2073.36,
+    "fetched_source2": "https://m.jrj.com.cn/madapter/stock/2026/11/18163659194053.shtml independent media transcription"
+  },
+  {
+    "id": 4,
+    "label": "收入同比",
+    "reported_value": 8,
+    "unit": "%",
+    "fetched_value": 8.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p1 rounded",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 5,
+    "label": "报告FCF",
+    "reported_value": -691,
+    "unit": "亿元",
+    "fetched_value": -691.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p17",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 6,
+    "label": "剔预付款FCF",
+    "reported_value": 169,
+    "unit": "亿元",
+    "fetched_value": 169.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p17",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 7,
+    "label": "预付款影响差额",
+    "reported_value": 860,
+    "unit": "亿元",
+    "fetched_value": 860.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p17 rounded difference, not itemized pure AI spend",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 8,
+    "label": "本土游戏收入",
+    "reported_value": 476,
+    "unit": "亿元",
+    "fetched_value": 476.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p6",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 9,
+    "label": "本土游戏同比",
+    "reported_value": 11,
+    "unit": "%",
+    "fetched_value": 11.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p6",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 10,
+    "label": "国际游戏收入",
+    "reported_value": 189,
+    "unit": "亿元",
+    "fetched_value": 189.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p6",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 11,
+    "label": "国际游戏同比",
+    "reported_value": -9,
+    "unit": "%",
+    "fetched_value": -9.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p6",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 12,
+    "label": "国际固定汇率同比",
+    "reported_value": -4,
+    "unit": "%",
+    "fetched_value": -4.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p6",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 13,
+    "label": "广告收入同比",
+    "reported_value": 19,
+    "unit": "%",
+    "fetched_value": 19.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p6",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 14,
+    "label": "广告毛利率去年",
+    "reported_value": 57,
+    "unit": "%",
+    "fetched_value": 57.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p7 rounded",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 15,
+    "label": "广告毛利率本季",
+    "reported_value": 52,
+    "unit": "%",
+    "fetched_value": 52.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p7 rounded",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 16,
+    "label": "调整经营利润含新AI",
+    "reported_value": 681,
+    "unit": "亿元",
+    "fetched_value": 680.73,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p1",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 17,
+    "label": "调整经营利润剔新AI",
+    "reported_value": 833,
+    "unit": "亿元",
+    "fetched_value": 833.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p8",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 18,
+    "label": "新AI净拖累",
+    "reported_value": 152,
+    "unit": "亿元",
+    "fetched_value": 152.27,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p8 rounded difference",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 19,
+    "label": "上季新AI净拖累",
+    "reported_value": 105,
+    "unit": "亿元",
+    "fetched_value": 104.64,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/08/C700_IRA.pdf p8 rounded difference",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 20,
+    "label": "剔新AI经营同比本季",
+    "reported_value": 8,
+    "unit": "%",
+    "fetched_value": 8.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p8",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 21,
+    "label": "剔新AI经营同比上季",
+    "reported_value": 19,
+    "unit": "%",
+    "fetched_value": 19.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/08/C700_IRA.pdf p8",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 22,
+    "label": "经营现金流取整",
+    "reported_value": 26,
+    "unit": "亿元",
+    "fetched_value": 26.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p17 company rounded",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 23,
+    "label": "资本开支付款",
+    "reported_value": 651,
+    "unit": "亿元",
+    "fetched_value": 651.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p17",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 24,
+    "label": "媒体内容付款",
+    "reported_value": 46,
+    "unit": "亿元",
+    "fetched_value": 46.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p17",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 25,
+    "label": "租赁付款",
+    "reported_value": 20,
+    "unit": "亿元",
+    "fetched_value": 20.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p17",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 26,
+    "label": "权责资本开支",
+    "reported_value": 814,
+    "unit": "亿元",
+    "fetched_value": 814.33,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p12",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 27,
+    "label": "上季剔预付款FCF",
+    "reported_value": 376,
+    "unit": "亿元",
+    "fetched_value": 376.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/08/C700_IRA.pdf liquidity section",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 28,
+    "label": "云增长",
+    "reported_value": 35,
+    "unit": "%",
+    "fetched_value": 35.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p7",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 29,
+    "label": "金科企业服务毛利率",
+    "reported_value": 50,
+    "unit": "%",
+    "fetched_value": 50.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p7",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 30,
+    "label": "WorkBuddy日用户下界",
+    "reported_value": 1000,
+    "unit": "万",
+    "fetched_value": 1000.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p3: exceeds, recent update not quarter average",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 31,
+    "label": "WorkBuddy日token下界",
+    "reported_value": 100,
+    "unit": "万亿",
+    "fetched_value": 100.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p3: exceeds, recent update not quarter average",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 32,
+    "label": "上季净现金",
+    "reported_value": 582,
+    "unit": "亿元",
+    "fetched_value": 581.91,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p17",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 33,
+    "label": "本季净债务",
+    "reported_value": 137,
+    "unit": "亿元",
+    "fetched_value": 137.02,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p17",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 34,
+    "label": "现金定存及其他",
+    "reported_value": 5257,
+    "unit": "亿元",
+    "fetched_value": 5257.27,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p17",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 35,
+    "label": "本季回购",
+    "reported_value": 70,
+    "unit": "亿港元",
+    "fetched_value": 70.3225951704,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf p44",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 36,
+    "label": "上季回购",
+    "reported_value": 169,
+    "unit": "亿港元",
+    "fetched_value": 169.0,
+    "fetched_source": "https://www.tencent.com/wp-content/uploads/2026/08/C700_IRA.pdf repurchase section rounded",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 37,
+    "label": "股价",
+    "reported_value": 372.8,
+    "unit": "港元",
+    "fetched_value": 372.8,
+    "fetched_source": "Tencent + Eastmoney captured quote endpoints",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 38,
+    "label": "人民币市值",
+    "reported_value": 2.88,
+    "unit": "万亿",
+    "fetched_value": 2.880177065814947,
+    "fetched_source": "October monthly shares * close * spot FX; Decimal",
+    "classification": "manual_prose_check"
+  },
+  {
+    "id": 39,
+    "label": "单季年化PE",
+    "reported_value": 10.8,
+    "unit": "倍",
+    "fetched_value": 10.824640575681185,
+    "fetched_source": "Decimal; not TTM or guidance",
+    "classification": "manual_prose_check"
+  }
+]

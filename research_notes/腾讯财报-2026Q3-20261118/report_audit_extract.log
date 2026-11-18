@@ -1,0 +1,331 @@
+======================================================================
+报告数据抽检清单
+文件：/Users/linxuan/ai-berkshire-tencent-q3-20261118/reports/腾讯/腾讯-earnings-2026Q3-研究报告-20261118.md
+总提取数据点：159  |  抽样比例：15%  |  抽检数量：24
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  2     37  收入 · 2025Q3                               1928.69
+  7     38  毛利 · 2026Q2                               1184.33
+  8     38  毛利 · 环比                                     -2.13  %
+  9     39  IFRS 经营利润 · 2026Q3                         591.47
+ 23     42  调整归母利润 · 2026Q2                            684.15
+ 24     42  调整归母利润 · 环比                                 -2.77  %
+ 27     43  IFRS 基本 EPS · 2026Q2                         6.21
+ 29     44  IFRS 稀释 EPS · 2026Q3                         6.95
+ 36     45  调整基本 EPS · 环比                               -2.63  %
+ 51     61  智通转述野村预测，资本开支 · 可以得出的结论                     38.73  %
+ 58     74  增值服务 · 公司取整毛利率，去年→本季                        61.00  %
+ 56     74  增值服务 · Q3毛利                                630.17
+ 57     74  增值服务 · 毛利同比                                  7.49  %
+ 63     75  营销服务 · 公司取整毛利率，去年→本季                        57.00  %
+ 60     75  营销服务 · 收入同比                                 18.78  %
+ 71     77  其他 · Q3毛利                                  -12.35
+ 72     77  其他 · 公司取整毛利率，去年→本季                          16.00  %
+109    174  公司FCF（约） · 2025Q4                          340.00
+108    174  公司FCF（约） · 2025Q3                          585.00
+115    175  净现金／负数为净债务 · 2026Q1                       1468.60
+130    204  应付账款 · 本季证据                               1991.76  亿元
+140    288  压力 · 2027股东现金                              600.00  亿元
+152    290  乐观 · 2027股东现金                             1600.00  亿元
+158    332  约290港元以下，且经营论文未进一步恶化 · 空仓者                 363.00
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 2,
+    "label": "收入 · 2025Q3",
+    "reported_value": 1928.69,
+    "unit": "",
+    "line_number": 37,
+    "raw_text": "| 收入 | 2,073.36 | 1,928.69 | +7.50% | 2,047.85 | +1.25% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 7,
+    "label": "毛利 · 2026Q2",
+    "reported_value": 1184.33,
+    "unit": "",
+    "line_number": 38,
+    "raw_text": "| 毛利 | 1,159.11 | 1,087.98 | +6.54% | 1,184.33 | -2.13% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "毛利 · 环比",
+    "reported_value": -2.13,
+    "unit": "%",
+    "line_number": 38,
+    "raw_text": "| 毛利 | 1,159.11 | 1,087.98 | +6.54% | 1,184.33 | -2.13% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "IFRS 经营利润 · 2026Q3",
+    "reported_value": 591.47,
+    "unit": "",
+    "line_number": 39,
+    "raw_text": "| IFRS 经营利润 | 591.47 | 635.54 | -6.93% | 672.76 | -12.08% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 23,
+    "label": "调整归母利润 · 2026Q2",
+    "reported_value": 684.15,
+    "unit": "",
+    "line_number": 42,
+    "raw_text": "| 调整归母利润 | 665.19 | 705.51 | -5.72% | 684.15 | -2.77% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 24,
+    "label": "调整归母利润 · 环比",
+    "reported_value": -2.77,
+    "unit": "%",
+    "line_number": 42,
+    "raw_text": "| 调整归母利润 | 665.19 | 705.51 | -5.72% | 684.15 | -2.77% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 27,
+    "label": "IFRS 基本 EPS · 2026Q2",
+    "reported_value": 6.207,
+    "unit": "",
+    "line_number": 43,
+    "raw_text": "| IFRS 基本 EPS | 7.059 | 6.952 | +1.54% | 6.207 | +13.73% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 29,
+    "label": "IFRS 稀释 EPS · 2026Q3",
+    "reported_value": 6.947,
+    "unit": "",
+    "line_number": 44,
+    "raw_text": "| IFRS 稀释 EPS | 6.947 | 6.779 | +2.48% | 6.104 | +13.81% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 36,
+    "label": "调整基本 EPS · 环比",
+    "reported_value": -2.63,
+    "unit": "%",
+    "line_number": 45,
+    "raw_text": "| 调整基本 EPS | 7.382 | 7.769 | -4.98% | 7.581 | -2.63% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 51,
+    "label": "智通转述野村预测，资本开支 · 可以得出的结论",
+    "reported_value": 38.73,
+    "unit": "%",
+    "line_number": 61,
+    "raw_text": "| 智通转述野村预测，资本开支 | 587 亿元 | 814.33 亿元 | 高约 38.73%，不能说是高于全市场一致预期 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 58,
+    "label": "增值服务 · 公司取整毛利率，去年→本季",
+    "reported_value": 61.0,
+    "unit": "%",
+    "line_number": 74,
+    "raw_text": "| 增值服务 | 983.26 | +2.57% | 630.17 | +7.49% | 61% → 64% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 56,
+    "label": "增值服务 · Q3毛利",
+    "reported_value": 630.17,
+    "unit": "",
+    "line_number": 74,
+    "raw_text": "| 增值服务 | 983.26 | +2.57% | 630.17 | +7.49% | 61% → 64% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 57,
+    "label": "增值服务 · 毛利同比",
+    "reported_value": 7.49,
+    "unit": "%",
+    "line_number": 74,
+    "raw_text": "| 增值服务 | 983.26 | +2.57% | 630.17 | +7.49% | 61% → 64% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 63,
+    "label": "营销服务 · 公司取整毛利率，去年→本季",
+    "reported_value": 57.0,
+    "unit": "%",
+    "line_number": 75,
+    "raw_text": "| 营销服务 | 430.49 | +18.78% | 225.78 | +9.86% | 57% → 52% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 60,
+    "label": "营销服务 · 收入同比",
+    "reported_value": 18.78,
+    "unit": "%",
+    "line_number": 75,
+    "raw_text": "| 营销服务 | 430.49 | +18.78% | 225.78 | +9.86% | 57% → 52% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 71,
+    "label": "其他 · Q3毛利",
+    "reported_value": -12.35,
+    "unit": "",
+    "line_number": 77,
+    "raw_text": "| 其他 | 23.06 | -11.07% | -12.35 | 由盈转亏 | 16% → -54% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 72,
+    "label": "其他 · 公司取整毛利率，去年→本季",
+    "reported_value": 16.0,
+    "unit": "%",
+    "line_number": 77,
+    "raw_text": "| 其他 | 23.06 | -11.07% | -12.35 | 由盈转亏 | 16% → -54% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 109,
+    "label": "公司FCF（约） · 2025Q4",
+    "reported_value": 340.0,
+    "unit": "",
+    "line_number": 174,
+    "raw_text": "| 公司FCF（约） | 585.00 | 340.00 | 567.00 | -138.00 | -691.00 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 108,
+    "label": "公司FCF（约） · 2025Q3",
+    "reported_value": 585.0,
+    "unit": "",
+    "line_number": 174,
+    "raw_text": "| 公司FCF（约） | 585.00 | 340.00 | 567.00 | -138.00 | -691.00 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 115,
+    "label": "净现金／负数为净债务 · 2026Q1",
+    "reported_value": 1468.6,
+    "unit": "",
+    "line_number": 175,
+    "raw_text": "| 净现金／负数为净债务 | 1,024.22 | 1,071.45 | 1,468.60 | 581.91 | -137.02 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 130,
+    "label": "应付账款 · 本季证据",
+    "reported_value": 1991.76,
+    "unit": "亿元",
+    "line_number": 204,
+    "raw_text": "| 应付账款 | 1,991.76亿元，年末1,211.27亿元 | 供应商信用也在支持资金周转；未披露足够细节，不能全部指认为服务器款 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 140,
+    "label": "压力 · 2027股东现金",
+    "reported_value": 600.0,
+    "unit": "亿元",
+    "line_number": 288,
+    "raw_text": "| 压力 | 600亿元 | 1,200亿元 | 1,500亿元 | 11% | 2% | 约192港元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 152,
+    "label": "乐观 · 2027股东现金",
+    "reported_value": 1600.0,
+    "unit": "亿元",
+    "line_number": 290,
+    "raw_text": "| 乐观 | 1,600亿元 | 2,400亿元 | 3,000亿元 | 9% | 4% | 约692港元 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 158,
+    "label": "约290港元以下，且经营论文未进一步恶化 · 空仓者",
+    "reported_value": 363.0,
+    "unit": "",
+    "line_number": 332,
+    "raw_text": "| 约290港元以下，且经营论文未进一步恶化 | 相对363港元基准值约有20%模型折让，可考虑分批研究建仓 | 可重新评估增持，但先检查预付、净债务和AI成本是否恶化 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

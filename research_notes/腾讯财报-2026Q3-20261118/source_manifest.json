@@ -1,0 +1,88 @@
+{
+  "cutoff": "2026-11-18 Asia/Shanghai; after Q3 announcement, before 20:00 call",
+  "q3_announcement": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf",
+  "historical_sources": {
+    "2025Q3": "https://www.prnewswire.com/apac/news-releases/tencent-announces-2025-third-quarter-results-302614403.html",
+    "2025Q4": "https://www.prnewswire.com/apac/news-releases/tencent-announces-2025-annual-and-fourth-quarter-results-302717280.html",
+    "2026Q1": "https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-first-quarter-results-302770779.html",
+    "2025Q3_announcement": "https://cdn.financialreports.eu/financialreports/media/filings/49405/2025/RNS/49405_rns_2025-11-13_4b860ebe-7513-467b-9251-5057e807a70c.pdf",
+    "2025Q4_announcement": "https://cdn.financialreports.eu/financialreports/media/filings/49405/2026/RNS/49405_rns_2026-03-18_a2d7675b-ebb4-4511-8a2e-7449bd1802c6.pdf",
+    "2026Q1_announcement": "https://cdn.financialreports.eu/financialreports/media/filings/49405/2026/RNS/49405_rns_2026-05-13_d20950f7-4efe-4d25-9444-7f624ca6587a.pdf",
+    "2026Q2_announcement": "https://www.tencent.com/wp-content/uploads/2026/08/E700_IRA.pdf",
+    "2026Q2_release": "https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf",
+    "2026Q3_announcement": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf"
+  },
+  "q2_announcement": "https://www.tencent.com/wp-content/uploads/2026/08/C700_IRA.pdf",
+  "raw_files_retained_locally": [
+    {
+      "file": "history_2025Q3_announcement.pdf",
+      "bytes": 749662,
+      "sha256": "2cfaa94023b11e842d898f23fb19fd9949af68c57630c61a4d47ae542cdaa4bf"
+    },
+    {
+      "file": "history_2025Q3_release.html",
+      "bytes": 411714,
+      "sha256": "d189030aa0f3ad1e2b1238ca9e454f1261a3c113b5f18edd48893b757135252e"
+    },
+    {
+      "file": "history_2025Q4_announcement.pdf",
+      "bytes": 759669,
+      "sha256": "b44ff0a1bf467361b70cc0046a5bd2245d927ce69e536d32ac883ea992640f3d"
+    },
+    {
+      "file": "history_2025Q4_release.html",
+      "bytes": 316547,
+      "sha256": "3ef53131948f8ed3641bedf77f480aa9f964d4564bedc59d97a69136d68ee2d7"
+    },
+    {
+      "file": "history_2026Q1_announcement.pdf",
+      "bytes": 657605,
+      "sha256": "e457a6b8eab0e107430ac16d374bc92d37a920161551826685324882235f8a61"
+    },
+    {
+      "file": "history_2026Q1_release.html",
+      "bytes": 279001,
+      "sha256": "0fa107bacc359f0c8d9e24c5a97e9f792c2aec0ab31fb3823b8bbdce076d5fab"
+    },
+    {
+      "file": "history_2026Q2_announcement.pdf",
+      "bytes": 746938,
+      "sha256": "6ae9083e568a17ea49c796c5f6d15741a5ab720b0d98e8e97291292a29385119"
+    },
+    {
+      "file": "history_2026Q2_release.pdf",
+      "bytes": 412297,
+      "sha256": "64d8d2038eeef993571b96bb3361b6f1a567d6e84157eb16af20d2fd9a095f0a"
+    },
+    {
+      "file": "q3_announcement_cn.pdf",
+      "bytes": 962682,
+      "sha256": "a66964468491e2e518c7dbd5a4313c78f1cbe8975eabf2141512b5e28f3bfbcf"
+    },
+    {
+      "file": "quote_eastmoney_raw.json",
+      "bytes": 354,
+      "sha256": "59ed9382ec7ac7f5a91bffc603a948ced1fb0692f7f0b489dbc4eeae520b4729"
+    },
+    {
+      "file": "quote_jrj_20261118.html",
+      "bytes": 10275,
+      "sha256": "42d828082bcc22322d414851289c46c59eb0d4d5bff3c28a3cf972f812ba7322"
+    },
+    {
+      "file": "quote_monthly_october_2026.pdf",
+      "bytes": 135931,
+      "sha256": "cf86e72038b1c08ebf0e79a1e958f752af8d4cd55b264265857bf3c8fcd13d6e"
+    },
+    {
+      "file": "quote_sina_raw.txt",
+      "bytes": 401,
+      "sha256": "2c283efd0cab7abcf0c356e4256bbb3668c70228cbfd30fd95aa7c8fe2022647"
+    },
+    {
+      "file": "quote_tencent_raw.txt",
+      "bytes": 439,
+      "sha256": "4932db5947a05fe4c3a116c1e1cc95c1acca6f8c0c85a75bf8d97012b543eb34"
+    }
+  ]
+}

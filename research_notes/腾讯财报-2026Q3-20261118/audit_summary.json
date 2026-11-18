@@ -1,0 +1,12 @@
+{
+  "report": {
+    "checked": 36,
+    "report_sha256": "01bc595a10beab45f15b093b56207b95995e108fd4e20c2c53d677772b84f559",
+    "note": "report: 24 seeded samples incl assumptions plus 12 targeted; article: tool extracted zero prose points, manual 39 checks; PASS validates numbers, not completeness or forecasts"
+  },
+  "article": {
+    "checked": 39,
+    "report_sha256": "78e7d57b9f3739a66898eb4117c157e772628b652a975408a5be54a1e6d44d11",
+    "note": "report: 24 seeded samples incl assumptions plus 12 targeted; article: tool extracted zero prose points, manual 39 checks; PASS validates numbers, not completeness or forecasts"
+  }
+}

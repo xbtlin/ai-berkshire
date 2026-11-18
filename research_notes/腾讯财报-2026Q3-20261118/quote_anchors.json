@@ -1,0 +1,38 @@
+{
+  "cutoff_beijing": "2026-11-18 17:02",
+  "price_hkd": "372.8",
+  "shares_oct31": "9092644829",
+  "market_cap_hkd": "3389737992251.2",
+  "fx_cny_per_hkd_sina_165854": "0.849675424",
+  "market_cap_cny": "2880177065814.9470745088",
+  "shares_note": "Monthly return shows legal treasury shares zero, 3759000 repurchased pending cancellation; market cap uses quote total issued shares; do not mix with quarterly weighted diluted shares.",
+  "source_price_a": "https://qt.gtimg.cn/q=hk00700",
+  "source_price_b": "https://push2.eastmoney.com/api/qt/stock/get?secid=116.00700&fields=f43,f44,f45,f46,f47,f48,f57,f58,f60,f84,f85,f86,f116,f117,f162,f168,f170,f171",
+  "source_shares_primary": "https://www.tencent.com/wp-content/uploads/2026/11/c_THL_monthly-return-October-2026.pdf",
+  "source_fx_a": "https://hq.sinajs.cn/list=fx_shkdcny",
+  "source_fx_b": "https://wise.com/us/currency-converter/hkd-to-cny-rate/history/18-11-2026",
+  "financial_transcription": [
+    {
+      "metric": "revenue",
+      "million_cny": "207336"
+    },
+    {
+      "metric": "ifrs_operating_profit",
+      "million_cny": "59147"
+    },
+    {
+      "metric": "ifrs_parent_profit",
+      "million_cny": "63612"
+    },
+    {
+      "metric": "nonifrs_parent_profit",
+      "million_cny": "66519"
+    },
+    {
+      "metric": "fintech_business_services_revenue",
+      "million_cny": "63655"
+    }
+  ],
+  "transcription_source": "https://m.jrj.com.cn/madapter/stock/2026/11/18163659194053.shtml",
+  "transcription_limitation": "Independent media transcription of issuer release, not independent audit/accounting evidence."
+}
