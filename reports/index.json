@@ -1,8 +1,41 @@
 {
-  "count": 2498,
-  "published": 2287,
+  "count": 2501,
+  "published": 2290,
   "drafts": 211,
   "reports": [
+    {
+      "title": "拼多多2026Q3财报精读：利润超预期来自降费，收入零增长才是核心问题",
+      "path": "reports/拼多多/拼多多-earnings-2026Q3-精读-20261120.md",
+      "bucket": "公司",
+      "group": "拼多多",
+      "series": "",
+      "type": "财报",
+      "date": "2026-11-20",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "腾讯三季报：AI投入正在改写股东回报",
+      "path": "reports/腾讯/腾讯-公众号-20261118.md",
+      "bucket": "公司",
+      "group": "腾讯",
+      "series": "",
+      "type": "公众号",
+      "date": "2026-11-18",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "腾讯控股（0700.HK）2026Q3 财报研究报告",
+      "path": "reports/腾讯/腾讯-earnings-2026Q3-研究报告-20261118.md",
+      "bucket": "公司",
+      "group": "腾讯",
+      "series": "",
+      "type": "财报",
+      "date": "2026-11-18",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "段永平三季度持仓：减苹果、英伟达，加拼多多、特斯拉",
       "path": "reports/段永平/段永平-2026Q3持仓变化-公众号-20261117.md",
