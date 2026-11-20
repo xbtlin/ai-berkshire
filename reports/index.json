@@ -1,8 +1,19 @@
 {
-  "count": 2502,
-  "published": 2291,
+  "count": 2503,
+  "published": 2292,
   "drafts": 211,
   "reports": [
+    {
+      "title": "MiniMax 十年后最差情景：资本链、单位经济、应用层三条链同时走坏",
+      "path": "reports/MINIMAX/MiniMax十年最差情景-20261121.md",
+      "bucket": "公司",
+      "group": "MiniMax",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-21",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "拼多多2026Q3财报精读：利润超预期来自降费，收入零增长才是核心问题",
       "path": "reports/拼多多/拼多多-earnings-2026Q3-精读-20261120.md",
