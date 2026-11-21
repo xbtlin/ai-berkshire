@@ -1,8 +1,19 @@
 {
-  "count": 2503,
-  "published": 2292,
+  "count": 2504,
+  "published": 2293,
   "drafts": 211,
   "reports": [
+    {
+      "title": "英伟达十年后最差情景：路径、利润与检验指标",
+      "path": "reports/英伟达/英伟达十年最差情景-20261121.md",
+      "bucket": "公司",
+      "group": "英伟达",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-21",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "MiniMax 十年后最差情景：资本链、单位经济、应用层三条链同时走坏",
       "path": "reports/MINIMAX/MiniMax十年最差情景-20261121.md",
