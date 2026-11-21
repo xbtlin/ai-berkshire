@@ -1,6 +1,6 @@
 {
-  "count": 2505,
-  "published": 2294,
+  "count": 2506,
+  "published": 2295,
   "drafts": 211,
   "reports": [
     {
@@ -56,6 +56,17 @@
       "type": "研究",
       "date": "2026-11-20",
       "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "快手2026Q3财报精读：主业收缩，自由现金流仍告负",
+      "path": "reports/快手/快手-earnings-2026Q3.md",
+      "bucket": "公司",
+      "group": "快手",
+      "series": "",
+      "type": "财报",
+      "date": "2026-11-19",
+      "date_source": "正文",
       "ticker": ""
     },
     {
