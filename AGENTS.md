@@ -34,8 +34,22 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
 - For Codex-only hand-written packages under `codex-skills/`, keep them clearly
   marked as Codex-only and do not create a same-named `skills/*.md` file unless
   intentionally adopting the workflow for Claude Code too.
-- Keep tool paths compatible with the documented checkout path:
-  `~/ai-berkshire/tools/...`
+- Locate the actual project root before resolving paths; it must contain
+  `AGENTS.md`, `skills/`, and `tools/`. Do not assume `~/ai-berkshire` or
+  resolve project paths relative to an installed skill directory.
+- Run project tools from that root, or pass absolute tool and report paths.
+  Save reports under that root's `reports/` directory unless the user specifies
+  another destination.
+- Before running Python commands, identify and verify a usable interpreter.
+  Examples use `python3`; adapt to the interpreter available in the session.
+  A WindowsApps command entry alone does not verify an interpreter.
+- Adapt command examples to the active shell. In PowerShell, use single-line
+  commands instead of Bash backslash continuations, quote path arguments, and
+  replace `grep`/`head` pipelines with available `rg` or PowerShell commands.
+- Use the system temporary directory instead of assuming `/tmp` exists.
+  In Python, construct paths with `tempfile.gettempdir()` and `pathlib.Path`;
+  in PowerShell, use `[System.IO.Path]::GetTempPath()` and `Join-Path`.
+  Ensure output parent directories exist before writing.
 - Keep `CLAUDE.md` for Claude Code behavior and this `AGENTS.md` for Codex
   behavior.
 
