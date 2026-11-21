@@ -1,8 +1,19 @@
 {
-  "count": 2506,
-  "published": 2295,
+  "count": 2507,
+  "published": 2296,
   "drafts": 211,
   "reports": [
+    {
+      "title": "英伟达投资研究：利润在顶点，创始人离场，账本还没交",
+      "path": "reports/英伟达/英伟达-research-20261122.md",
+      "bucket": "公司",
+      "group": "英伟达",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-22",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "英伟达十年后最差情景：路径、利润与检验指标",
       "path": "reports/英伟达/英伟达十年最差情景-20261121.md",
