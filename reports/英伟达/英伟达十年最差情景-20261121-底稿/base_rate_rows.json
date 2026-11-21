@@ -1,0 +1,1610 @@
+{
+ "rows": [
+  {
+   "tic": "AAPL",
+   "peak_year": 2007,
+   "peak": 3495.0,
+   "trough": 6119.0,
+   "ratio": 1.7507868383404863,
+   "span": 10
+  },
+  {
+   "tic": "AAPL",
+   "peak_year": 2012,
+   "peak": 41733.0,
+   "trough": 37037.0,
+   "ratio": 0.8874751395777921,
+   "span": 10
+  },
+  {
+   "tic": "AAPL",
+   "peak_year": 2018,
+   "peak": 59531.0,
+   "trough": 55256.0,
+   "ratio": 0.9281886748080832,
+   "span": 8
+  },
+  {
+   "tic": "ADBE",
+   "peak_year": 2007,
+   "peak": 723.807,
+   "trough": 268.395,
+   "ratio": 0.370810174535477,
+   "span": 10
+  },
+  {
+   "tic": "ADBE",
+   "peak_year": 2016,
+   "peak": 1168.782,
+   "trough": 1693.954,
+   "ratio": 1.4493327241521516,
+   "span": 9
+  },
+  {
+   "tic": "ADI",
+   "peak_year": 2009,
+   "peak": 247.772,
+   "trough": 629.32,
+   "ratio": 2.53991572897664,
+   "span": 10
+  },
+  {
+   "tic": "ADI",
+   "peak_year": 2018,
+   "peak": 1506.98,
+   "trough": 1220.761,
+   "ratio": 0.810071135648781,
+   "span": 7
+  },
+  {
+   "tic": "AMAT",
+   "peak_year": 2007,
+   "peak": 1710.196,
+   "trough": -305.0,
+   "ratio": -0.17834213154515624,
+   "span": 10
+  },
+  {
+   "tic": "AMAT",
+   "peak_year": 2017,
+   "peak": 3519.0,
+   "trough": 2706.0,
+   "ratio": 0.7689684569479965,
+   "span": 8
+  },
+  {
+   "tic": "AMD",
+   "peak_year": 2010,
+   "peak": 471.0,
+   "trough": -1183.0,
+   "ratio": -2.5116772823779194,
+   "span": 10
+  },
+  {
+   "tic": "AMD",
+   "peak_year": 2020,
+   "peak": 2490.0,
+   "trough": 854.0,
+   "ratio": 0.3429718875502008,
+   "span": 5
+  },
+  {
+   "tic": "AMZN",
+   "peak_year": 2007,
+   "peak": 476.0,
+   "trough": -241.0,
+   "ratio": -0.5063025210084033,
+   "span": 10
+  },
+  {
+   "tic": "AMZN",
+   "peak_year": 2016,
+   "peak": 2371.0,
+   "trough": -2722.0,
+   "ratio": -1.1480388021931673,
+   "span": 9
+  },
+  {
+   "tic": "BA",
+   "peak_year": 2007,
+   "peak": 4074.0,
+   "trough": 1312.0,
+   "ratio": 0.32204221894943547,
+   "span": 10
+  },
+  {
+   "tic": "BA",
+   "peak_year": 2013,
+   "peak": 4585.0,
+   "trough": -11873.0,
+   "ratio": -2.5895310796074154,
+   "span": 10
+  },
+  {
+   "tic": "BA",
+   "peak_year": 2018,
+   "peak": 10460.0,
+   "trough": -11873.0,
+   "ratio": -1.1350860420650095,
+   "span": 7
+  },
+  {
+   "tic": "CIEN",
+   "peak_year": 2008,
+   "peak": 38.894,
+   "trough": -581.154,
+   "ratio": -14.941996194785828,
+   "span": 10
+  },
+  {
+   "tic": "CIEN",
+   "peak_year": 2016,
+   "peak": 72.584,
+   "trough": -344.69,
+   "ratio": -4.748842720158712,
+   "span": 9
+  },
+  {
+   "tic": "CRM",
+   "peak_year": 2008,
+   "peak": 18.356,
+   "trough": -270.445,
+   "ratio": -14.733329701460011,
+   "span": 10
+  },
+  {
+   "tic": "CRM",
+   "peak_year": 2017,
+   "peak": 323.0,
+   "trough": 126.0,
+   "ratio": 0.39009287925696595,
+   "span": 9
+  },
+  {
+   "tic": "CSCO",
+   "peak_year": 2008,
+   "peak": 8052.0,
+   "trough": 110.0,
+   "ratio": 0.01366120218579235,
+   "span": 10
+  },
+  {
+   "tic": "CSCO",
+   "peak_year": 2013,
+   "peak": 9983.0,
+   "trough": 110.0,
+   "ratio": 0.01101873184413503,
+   "span": 10
+  },
+  {
+   "tic": "CSCO",
+   "peak_year": 2019,
+   "peak": 11621.0,
+   "trough": 10180.0,
+   "ratio": 0.8760003442044575,
+   "span": 7
+  },
+  {
+   "tic": "CVX",
+   "peak_year": 2007,
+   "peak": 18688.0,
+   "trough": -497.0,
+   "ratio": -0.026594606164383562,
+   "span": 10
+  },
+  {
+   "tic": "DELL",
+   "peak_year": 2020,
+   "peak": 4616.0,
+   "trough": 2442.0,
+   "ratio": 0.5290294627383015,
+   "span": 6
+  },
+  {
+   "tic": "GE",
+   "peak_year": 2007,
+   "peak": 22208.0,
+   "trough": -8484.0,
+   "ratio": -0.38202449567723346,
+   "span": 10
+  },
+  {
+   "tic": "GOOGL",
+   "peak_year": 2013,
+   "peak": 12733.0,
+   "trough": 12662.0,
+   "ratio": 0.9944239377994188,
+   "span": 10
+  },
+  {
+   "tic": "GOOGL",
+   "peak_year": 2018,
+   "peak": 30736.0,
+   "trough": 34343.0,
+   "ratio": 1.1173542425819885,
+   "span": 7
+  },
+  {
+   "tic": "HPE",
+   "peak_year": 2013,
+   "peak": 2051.0,
+   "trough": -322.0,
+   "ratio": -0.15699658703071673,
+   "span": 10
+  },
+  {
+   "tic": "HPQ",
+   "peak_year": 2007,
+   "peak": 7264.0,
+   "trough": 2496.0,
+   "ratio": 0.3436123348017621,
+   "span": 8
+  },
+  {
+   "tic": "IBM",
+   "peak_year": 2015,
+   "peak": 13190.0,
+   "trough": 1639.0,
+   "ratio": 0.12426080363912055,
+   "span": 10
+  },
+  {
+   "tic": "INTC",
+   "peak_year": 2007,
+   "peak": 6976.0,
+   "trough": 4369.0,
+   "ratio": 0.6262901376146789,
+   "span": 10
+  },
+  {
+   "tic": "INTC",
+   "peak_year": 2018,
+   "peak": 21053.0,
+   "trough": -18756.0,
+   "ratio": -0.8908944093478364,
+   "span": 7
+  },
+  {
+   "tic": "JNJ",
+   "peak_year": 2011,
+   "peak": 13334.0,
+   "trough": 1300.0,
+   "ratio": 0.09749512524373781,
+   "span": 8
+  },
+  {
+   "tic": "KLAC",
+   "peak_year": 2010,
+   "peak": 212.3,
+   "trough": 366.158,
+   "ratio": 1.7247197362223268,
+   "span": 10
+  },
+  {
+   "tic": "KLAC",
+   "peak_year": 2017,
+   "peak": 926.076,
+   "trough": 802.265,
+   "ratio": 0.8663057891576933,
+   "span": 9
+  },
+  {
+   "tic": "KO",
+   "peak_year": 2007,
+   "peak": 5981.0,
+   "trough": 1248.0,
+   "ratio": 0.20866075907038956,
+   "span": 10
+  },
+  {
+   "tic": "LRCX",
+   "peak_year": 2010,
+   "peak": 346.669,
+   "trough": 113.879,
+   "ratio": 0.3284949043612207,
+   "span": 10
+  },
+  {
+   "tic": "LRCX",
+   "peak_year": 2016,
+   "peak": 914.049,
+   "trough": 1697.763,
+   "ratio": 1.8574091760944982,
+   "span": 10
+  },
+  {
+   "tic": "LRCX",
+   "peak_year": 2021,
+   "peak": 3908.458,
+   "trough": 3827.772,
+   "ratio": 0.9793560529497822,
+   "span": 5
+  },
+  {
+   "tic": "MCHP",
+   "peak_year": 2008,
+   "peak": 296.793,
+   "trough": 127.389,
+   "ratio": 0.429218344098412,
+   "span": 10
+  },
+  {
+   "tic": "MCHP",
+   "peak_year": 2020,
+   "peak": 570.6,
+   "trough": -0.5,
+   "ratio": -0.0008762705923589204,
+   "span": 6
+  },
+  {
+   "tic": "META",
+   "peak_year": 2010,
+   "peak": 606.0,
+   "trough": 53.0,
+   "ratio": 0.08745874587458746,
+   "span": 10
+  },
+  {
+   "tic": "META",
+   "peak_year": 2015,
+   "peak": 3688.0,
+   "trough": 10217.0,
+   "ratio": 2.7703362255965294,
+   "span": 10
+  },
+  {
+   "tic": "META",
+   "peak_year": 2020,
+   "peak": 29146.0,
+   "trough": 23200.0,
+   "ratio": 0.7959925890345159,
+   "span": 5
+  },
+  {
+   "tic": "MSFT",
+   "peak_year": 2008,
+   "peak": 17681.0,
+   "trough": 12193.0,
+   "ratio": 0.6896103161585884,
+   "span": 10
+  },
+  {
+   "tic": "MSFT",
+   "peak_year": 2017,
+   "peak": 25489.0,
+   "trough": 16571.0,
+   "ratio": 0.6501235827219585,
+   "span": 9
+  },
+  {
+   "tic": "MU",
+   "peak_year": 2010,
+   "peak": 1850.0,
+   "trough": -1032.0,
+   "ratio": -0.5578378378378378,
+   "span": 10
+  },
+  {
+   "tic": "MU",
+   "peak_year": 2017,
+   "peak": 5089.0,
+   "trough": -5833.0,
+   "ratio": -1.1461976812733345,
+   "span": 9
+  },
+  {
+   "tic": "NTAP",
+   "peak_year": 2009,
+   "peak": 64.6,
+   "trough": 116.0,
+   "ratio": 1.7956656346749227,
+   "span": 10
+  },
+  {
+   "tic": "NTAP",
+   "peak_year": 2019,
+   "peak": 1169.0,
+   "trough": 730.0,
+   "ratio": 0.6244653550042771,
+   "span": 7
+  },
+  {
+   "tic": "NXPI",
+   "peak_year": 2017,
+   "peak": 2215.0,
+   "trough": 52.0,
+   "ratio": 0.02347629796839729,
+   "span": 8
+  },
+  {
+   "tic": "ORCL",
+   "peak_year": 2008,
+   "peak": 5581.0,
+   "trough": 3587.0,
+   "ratio": 0.6427163590754346,
+   "span": 10
+  },
+  {
+   "tic": "ORCL",
+   "peak_year": 2013,
+   "peak": 10925.0,
+   "trough": 3587.0,
+   "ratio": 0.3283295194508009,
+   "span": 10
+  },
+  {
+   "tic": "ORCL",
+   "peak_year": 2019,
+   "peak": 11083.0,
+   "trough": 6717.0,
+   "ratio": 0.6060633402508346,
+   "span": 7
+  },
+  {
+   "tic": "PFE",
+   "peak_year": 2007,
+   "peak": 8144.0,
+   "trough": 6960.0,
+   "ratio": 0.8546168958742633,
+   "span": 10
+  },
+  {
+   "tic": "PFE",
+   "peak_year": 2012,
+   "peak": 14570.0,
+   "trough": 6960.0,
+   "ratio": 0.4776938915579959,
+   "span": 10
+  },
+  {
+   "tic": "QCOM",
+   "peak_year": 2007,
+   "peak": 3303.0,
+   "trough": 1592.0,
+   "ratio": 0.4819860732667272,
+   "span": 10
+  },
+  {
+   "tic": "QCOM",
+   "peak_year": 2012,
+   "peak": 6109.0,
+   "trough": -4964.0,
+   "ratio": -0.8125716156490423,
+   "span": 10
+  },
+  {
+   "tic": "QCOM",
+   "peak_year": 2021,
+   "peak": 9043.0,
+   "trough": 5541.0,
+   "ratio": 0.6127391352427292,
+   "span": 5
+  },
+  {
+   "tic": "QRVO",
+   "peak_year": 2011,
+   "peak": 13.632624,
+   "trough": -225.777175,
+   "ratio": -16.56153466860085,
+   "span": 10
+  },
+  {
+   "tic": "QRVO",
+   "peak_year": 2016,
+   "peak": 47.793178,
+   "trough": -38.302599,
+   "ratio": -0.801423981472837,
+   "span": 9
+  },
+  {
+   "tic": "SNPS",
+   "peak_year": 2008,
+   "peak": 189.978,
+   "trough": 136.563,
+   "ratio": 0.7188358652054447,
+   "span": 10
+  },
+  {
+   "tic": "SNPS",
+   "peak_year": 2013,
+   "peak": 247.8,
+   "trough": 136.563,
+   "ratio": 0.5511016949152542,
+   "span": 10
+  },
+  {
+   "tic": "SNPS",
+   "peak_year": 2018,
+   "peak": 432.518,
+   "trough": 532.367,
+   "ratio": 1.2308551320407475,
+   "span": 7
+  },
+  {
+   "tic": "T",
+   "peak_year": 2007,
+   "peak": 11951.0,
+   "trough": -2625.0,
+   "ratio": -0.21964689147351685,
+   "span": 10
+  },
+  {
+   "tic": "T",
+   "peak_year": 2017,
+   "peak": 29450.0,
+   "trough": -8524.0,
+   "ratio": -0.2894397283531409,
+   "span": 8
+  },
+  {
+   "tic": "TXN",
+   "peak_year": 2007,
+   "peak": 2657.0,
+   "trough": 1470.0,
+   "ratio": 0.5532555513737297,
+   "span": 10
+  },
+  {
+   "tic": "TXN",
+   "peak_year": 2016,
+   "peak": 3595.0,
+   "trough": 3682.0,
+   "ratio": 1.0242002781641169,
+   "span": 9
+  },
+  {
+   "tic": "VZ",
+   "peak_year": 2007,
+   "peak": 5521.0,
+   "trough": -2193.0,
+   "ratio": -0.3972106502445209,
+   "span": 10
+  },
+  {
+   "tic": "VZ",
+   "peak_year": 2013,
+   "peak": 11497.0,
+   "trough": 9625.0,
+   "ratio": 0.8371749151952683,
+   "span": 10
+  },
+  {
+   "tic": "WDC",
+   "peak_year": 2008,
+   "peak": 867.0,
+   "trough": 242.0,
+   "ratio": 0.279123414071511,
+   "span": 10
+  },
+  {
+   "tic": "WDC",
+   "peak_year": 2014,
+   "peak": 1617.0,
+   "trough": -1684.0,
+   "ratio": -1.04143475572047,
+   "span": 10
+  },
+  {
+   "tic": "XOM",
+   "peak_year": 2007,
+   "peak": 40610.0,
+   "trough": 7840.0,
+   "ratio": 0.1930558975621768,
+   "span": 10
+  }
+ ],
+ "rows_10y": [
+  {
+   "tic": "AAPL",
+   "peak_year": 2007,
+   "peak": 3495.0,
+   "trough": 6119.0,
+   "ratio": 1.7507868383404863,
+   "span": 10
+  },
+  {
+   "tic": "AAPL",
+   "peak_year": 2012,
+   "peak": 41733.0,
+   "trough": 37037.0,
+   "ratio": 0.8874751395777921,
+   "span": 10
+  },
+  {
+   "tic": "ADBE",
+   "peak_year": 2007,
+   "peak": 723.807,
+   "trough": 268.395,
+   "ratio": 0.370810174535477,
+   "span": 10
+  },
+  {
+   "tic": "ADI",
+   "peak_year": 2009,
+   "peak": 247.772,
+   "trough": 629.32,
+   "ratio": 2.53991572897664,
+   "span": 10
+  },
+  {
+   "tic": "AMAT",
+   "peak_year": 2007,
+   "peak": 1710.196,
+   "trough": -305.0,
+   "ratio": -0.17834213154515624,
+   "span": 10
+  },
+  {
+   "tic": "AMD",
+   "peak_year": 2010,
+   "peak": 471.0,
+   "trough": -1183.0,
+   "ratio": -2.5116772823779194,
+   "span": 10
+  },
+  {
+   "tic": "AMZN",
+   "peak_year": 2007,
+   "peak": 476.0,
+   "trough": -241.0,
+   "ratio": -0.5063025210084033,
+   "span": 10
+  },
+  {
+   "tic": "BA",
+   "peak_year": 2007,
+   "peak": 4074.0,
+   "trough": 1312.0,
+   "ratio": 0.32204221894943547,
+   "span": 10
+  },
+  {
+   "tic": "BA",
+   "peak_year": 2013,
+   "peak": 4585.0,
+   "trough": -11873.0,
+   "ratio": -2.5895310796074154,
+   "span": 10
+  },
+  {
+   "tic": "CIEN",
+   "peak_year": 2008,
+   "peak": 38.894,
+   "trough": -581.154,
+   "ratio": -14.941996194785828,
+   "span": 10
+  },
+  {
+   "tic": "CRM",
+   "peak_year": 2008,
+   "peak": 18.356,
+   "trough": -270.445,
+   "ratio": -14.733329701460011,
+   "span": 10
+  },
+  {
+   "tic": "CSCO",
+   "peak_year": 2008,
+   "peak": 8052.0,
+   "trough": 110.0,
+   "ratio": 0.01366120218579235,
+   "span": 10
+  },
+  {
+   "tic": "CSCO",
+   "peak_year": 2013,
+   "peak": 9983.0,
+   "trough": 110.0,
+   "ratio": 0.01101873184413503,
+   "span": 10
+  },
+  {
+   "tic": "CVX",
+   "peak_year": 2007,
+   "peak": 18688.0,
+   "trough": -497.0,
+   "ratio": -0.026594606164383562,
+   "span": 10
+  },
+  {
+   "tic": "GE",
+   "peak_year": 2007,
+   "peak": 22208.0,
+   "trough": -8484.0,
+   "ratio": -0.38202449567723346,
+   "span": 10
+  },
+  {
+   "tic": "GOOGL",
+   "peak_year": 2013,
+   "peak": 12733.0,
+   "trough": 12662.0,
+   "ratio": 0.9944239377994188,
+   "span": 10
+  },
+  {
+   "tic": "HPE",
+   "peak_year": 2013,
+   "peak": 2051.0,
+   "trough": -322.0,
+   "ratio": -0.15699658703071673,
+   "span": 10
+  },
+  {
+   "tic": "IBM",
+   "peak_year": 2015,
+   "peak": 13190.0,
+   "trough": 1639.0,
+   "ratio": 0.12426080363912055,
+   "span": 10
+  },
+  {
+   "tic": "INTC",
+   "peak_year": 2007,
+   "peak": 6976.0,
+   "trough": 4369.0,
+   "ratio": 0.6262901376146789,
+   "span": 10
+  },
+  {
+   "tic": "KLAC",
+   "peak_year": 2010,
+   "peak": 212.3,
+   "trough": 366.158,
+   "ratio": 1.7247197362223268,
+   "span": 10
+  },
+  {
+   "tic": "KO",
+   "peak_year": 2007,
+   "peak": 5981.0,
+   "trough": 1248.0,
+   "ratio": 0.20866075907038956,
+   "span": 10
+  },
+  {
+   "tic": "LRCX",
+   "peak_year": 2010,
+   "peak": 346.669,
+   "trough": 113.879,
+   "ratio": 0.3284949043612207,
+   "span": 10
+  },
+  {
+   "tic": "LRCX",
+   "peak_year": 2016,
+   "peak": 914.049,
+   "trough": 1697.763,
+   "ratio": 1.8574091760944982,
+   "span": 10
+  },
+  {
+   "tic": "MCHP",
+   "peak_year": 2008,
+   "peak": 296.793,
+   "trough": 127.389,
+   "ratio": 0.429218344098412,
+   "span": 10
+  },
+  {
+   "tic": "META",
+   "peak_year": 2010,
+   "peak": 606.0,
+   "trough": 53.0,
+   "ratio": 0.08745874587458746,
+   "span": 10
+  },
+  {
+   "tic": "META",
+   "peak_year": 2015,
+   "peak": 3688.0,
+   "trough": 10217.0,
+   "ratio": 2.7703362255965294,
+   "span": 10
+  },
+  {
+   "tic": "MSFT",
+   "peak_year": 2008,
+   "peak": 17681.0,
+   "trough": 12193.0,
+   "ratio": 0.6896103161585884,
+   "span": 10
+  },
+  {
+   "tic": "MU",
+   "peak_year": 2010,
+   "peak": 1850.0,
+   "trough": -1032.0,
+   "ratio": -0.5578378378378378,
+   "span": 10
+  },
+  {
+   "tic": "NTAP",
+   "peak_year": 2009,
+   "peak": 64.6,
+   "trough": 116.0,
+   "ratio": 1.7956656346749227,
+   "span": 10
+  },
+  {
+   "tic": "ORCL",
+   "peak_year": 2008,
+   "peak": 5581.0,
+   "trough": 3587.0,
+   "ratio": 0.6427163590754346,
+   "span": 10
+  },
+  {
+   "tic": "ORCL",
+   "peak_year": 2013,
+   "peak": 10925.0,
+   "trough": 3587.0,
+   "ratio": 0.3283295194508009,
+   "span": 10
+  },
+  {
+   "tic": "PFE",
+   "peak_year": 2007,
+   "peak": 8144.0,
+   "trough": 6960.0,
+   "ratio": 0.8546168958742633,
+   "span": 10
+  },
+  {
+   "tic": "PFE",
+   "peak_year": 2012,
+   "peak": 14570.0,
+   "trough": 6960.0,
+   "ratio": 0.4776938915579959,
+   "span": 10
+  },
+  {
+   "tic": "QCOM",
+   "peak_year": 2007,
+   "peak": 3303.0,
+   "trough": 1592.0,
+   "ratio": 0.4819860732667272,
+   "span": 10
+  },
+  {
+   "tic": "QCOM",
+   "peak_year": 2012,
+   "peak": 6109.0,
+   "trough": -4964.0,
+   "ratio": -0.8125716156490423,
+   "span": 10
+  },
+  {
+   "tic": "QRVO",
+   "peak_year": 2011,
+   "peak": 13.632624,
+   "trough": -225.777175,
+   "ratio": -16.56153466860085,
+   "span": 10
+  },
+  {
+   "tic": "SNPS",
+   "peak_year": 2008,
+   "peak": 189.978,
+   "trough": 136.563,
+   "ratio": 0.7188358652054447,
+   "span": 10
+  },
+  {
+   "tic": "SNPS",
+   "peak_year": 2013,
+   "peak": 247.8,
+   "trough": 136.563,
+   "ratio": 0.5511016949152542,
+   "span": 10
+  },
+  {
+   "tic": "T",
+   "peak_year": 2007,
+   "peak": 11951.0,
+   "trough": -2625.0,
+   "ratio": -0.21964689147351685,
+   "span": 10
+  },
+  {
+   "tic": "TXN",
+   "peak_year": 2007,
+   "peak": 2657.0,
+   "trough": 1470.0,
+   "ratio": 0.5532555513737297,
+   "span": 10
+  },
+  {
+   "tic": "VZ",
+   "peak_year": 2007,
+   "peak": 5521.0,
+   "trough": -2193.0,
+   "ratio": -0.3972106502445209,
+   "span": 10
+  },
+  {
+   "tic": "VZ",
+   "peak_year": 2013,
+   "peak": 11497.0,
+   "trough": 9625.0,
+   "ratio": 0.8371749151952683,
+   "span": 10
+  },
+  {
+   "tic": "WDC",
+   "peak_year": 2008,
+   "peak": 867.0,
+   "trough": 242.0,
+   "ratio": 0.279123414071511,
+   "span": 10
+  },
+  {
+   "tic": "WDC",
+   "peak_year": 2014,
+   "peak": 1617.0,
+   "trough": -1684.0,
+   "ratio": -1.04143475572047,
+   "span": 10
+  },
+  {
+   "tic": "XOM",
+   "peak_year": 2007,
+   "peak": 40610.0,
+   "trough": 7840.0,
+   "ratio": 0.1930558975621768,
+   "span": 10
+  }
+ ],
+ "still_profitable_5y": [
+  {
+   "tic": "AAPL",
+   "peak_year": 2007,
+   "peak": 3495.0,
+   "trough": 6119.0,
+   "ratio": 1.7507868383404863,
+   "span": 10
+  },
+  {
+   "tic": "AAPL",
+   "peak_year": 2012,
+   "peak": 41733.0,
+   "trough": 37037.0,
+   "ratio": 0.8874751395777921,
+   "span": 10
+  },
+  {
+   "tic": "AAPL",
+   "peak_year": 2018,
+   "peak": 59531.0,
+   "trough": 55256.0,
+   "ratio": 0.9281886748080832,
+   "span": 8
+  },
+  {
+   "tic": "ADBE",
+   "peak_year": 2007,
+   "peak": 723.807,
+   "trough": 268.395,
+   "ratio": 0.370810174535477,
+   "span": 10
+  },
+  {
+   "tic": "ADBE",
+   "peak_year": 2016,
+   "peak": 1168.782,
+   "trough": 1693.954,
+   "ratio": 1.4493327241521516,
+   "span": 9
+  },
+  {
+   "tic": "ADI",
+   "peak_year": 2009,
+   "peak": 247.772,
+   "trough": 629.32,
+   "ratio": 2.53991572897664,
+   "span": 10
+  },
+  {
+   "tic": "ADI",
+   "peak_year": 2018,
+   "peak": 1506.98,
+   "trough": 1220.761,
+   "ratio": 0.810071135648781,
+   "span": 7
+  },
+  {
+   "tic": "AMAT",
+   "peak_year": 2017,
+   "peak": 3519.0,
+   "trough": 2706.0,
+   "ratio": 0.7689684569479965,
+   "span": 8
+  },
+  {
+   "tic": "AMD",
+   "peak_year": 2020,
+   "peak": 2490.0,
+   "trough": 854.0,
+   "ratio": 0.3429718875502008,
+   "span": 5
+  },
+  {
+   "tic": "BA",
+   "peak_year": 2007,
+   "peak": 4074.0,
+   "trough": 1312.0,
+   "ratio": 0.32204221894943547,
+   "span": 10
+  },
+  {
+   "tic": "CRM",
+   "peak_year": 2017,
+   "peak": 323.0,
+   "trough": 126.0,
+   "ratio": 0.39009287925696595,
+   "span": 9
+  },
+  {
+   "tic": "CSCO",
+   "peak_year": 2008,
+   "peak": 8052.0,
+   "trough": 110.0,
+   "ratio": 0.01366120218579235,
+   "span": 10
+  },
+  {
+   "tic": "CSCO",
+   "peak_year": 2013,
+   "peak": 9983.0,
+   "trough": 110.0,
+   "ratio": 0.01101873184413503,
+   "span": 10
+  },
+  {
+   "tic": "CSCO",
+   "peak_year": 2019,
+   "peak": 11621.0,
+   "trough": 10180.0,
+   "ratio": 0.8760003442044575,
+   "span": 7
+  },
+  {
+   "tic": "DELL",
+   "peak_year": 2020,
+   "peak": 4616.0,
+   "trough": 2442.0,
+   "ratio": 0.5290294627383015,
+   "span": 6
+  },
+  {
+   "tic": "GOOGL",
+   "peak_year": 2013,
+   "peak": 12733.0,
+   "trough": 12662.0,
+   "ratio": 0.9944239377994188,
+   "span": 10
+  },
+  {
+   "tic": "GOOGL",
+   "peak_year": 2018,
+   "peak": 30736.0,
+   "trough": 34343.0,
+   "ratio": 1.1173542425819885,
+   "span": 7
+  },
+  {
+   "tic": "HPQ",
+   "peak_year": 2007,
+   "peak": 7264.0,
+   "trough": 2496.0,
+   "ratio": 0.3436123348017621,
+   "span": 8
+  },
+  {
+   "tic": "IBM",
+   "peak_year": 2015,
+   "peak": 13190.0,
+   "trough": 1639.0,
+   "ratio": 0.12426080363912055,
+   "span": 10
+  },
+  {
+   "tic": "INTC",
+   "peak_year": 2007,
+   "peak": 6976.0,
+   "trough": 4369.0,
+   "ratio": 0.6262901376146789,
+   "span": 10
+  },
+  {
+   "tic": "JNJ",
+   "peak_year": 2011,
+   "peak": 13334.0,
+   "trough": 1300.0,
+   "ratio": 0.09749512524373781,
+   "span": 8
+  },
+  {
+   "tic": "KLAC",
+   "peak_year": 2010,
+   "peak": 212.3,
+   "trough": 366.158,
+   "ratio": 1.7247197362223268,
+   "span": 10
+  },
+  {
+   "tic": "KLAC",
+   "peak_year": 2017,
+   "peak": 926.076,
+   "trough": 802.265,
+   "ratio": 0.8663057891576933,
+   "span": 9
+  },
+  {
+   "tic": "KO",
+   "peak_year": 2007,
+   "peak": 5981.0,
+   "trough": 1248.0,
+   "ratio": 0.20866075907038956,
+   "span": 10
+  },
+  {
+   "tic": "LRCX",
+   "peak_year": 2010,
+   "peak": 346.669,
+   "trough": 113.879,
+   "ratio": 0.3284949043612207,
+   "span": 10
+  },
+  {
+   "tic": "LRCX",
+   "peak_year": 2016,
+   "peak": 914.049,
+   "trough": 1697.763,
+   "ratio": 1.8574091760944982,
+   "span": 10
+  },
+  {
+   "tic": "LRCX",
+   "peak_year": 2021,
+   "peak": 3908.458,
+   "trough": 3827.772,
+   "ratio": 0.9793560529497822,
+   "span": 5
+  },
+  {
+   "tic": "MCHP",
+   "peak_year": 2008,
+   "peak": 296.793,
+   "trough": 127.389,
+   "ratio": 0.429218344098412,
+   "span": 10
+  },
+  {
+   "tic": "META",
+   "peak_year": 2010,
+   "peak": 606.0,
+   "trough": 53.0,
+   "ratio": 0.08745874587458746,
+   "span": 10
+  },
+  {
+   "tic": "META",
+   "peak_year": 2015,
+   "peak": 3688.0,
+   "trough": 10217.0,
+   "ratio": 2.7703362255965294,
+   "span": 10
+  },
+  {
+   "tic": "META",
+   "peak_year": 2020,
+   "peak": 29146.0,
+   "trough": 23200.0,
+   "ratio": 0.7959925890345159,
+   "span": 5
+  },
+  {
+   "tic": "MSFT",
+   "peak_year": 2008,
+   "peak": 17681.0,
+   "trough": 12193.0,
+   "ratio": 0.6896103161585884,
+   "span": 10
+  },
+  {
+   "tic": "MSFT",
+   "peak_year": 2017,
+   "peak": 25489.0,
+   "trough": 16571.0,
+   "ratio": 0.6501235827219585,
+   "span": 9
+  },
+  {
+   "tic": "NTAP",
+   "peak_year": 2009,
+   "peak": 64.6,
+   "trough": 116.0,
+   "ratio": 1.7956656346749227,
+   "span": 10
+  },
+  {
+   "tic": "NTAP",
+   "peak_year": 2019,
+   "peak": 1169.0,
+   "trough": 730.0,
+   "ratio": 0.6244653550042771,
+   "span": 7
+  },
+  {
+   "tic": "NXPI",
+   "peak_year": 2017,
+   "peak": 2215.0,
+   "trough": 52.0,
+   "ratio": 0.02347629796839729,
+   "span": 8
+  },
+  {
+   "tic": "ORCL",
+   "peak_year": 2008,
+   "peak": 5581.0,
+   "trough": 3587.0,
+   "ratio": 0.6427163590754346,
+   "span": 10
+  },
+  {
+   "tic": "ORCL",
+   "peak_year": 2013,
+   "peak": 10925.0,
+   "trough": 3587.0,
+   "ratio": 0.3283295194508009,
+   "span": 10
+  },
+  {
+   "tic": "ORCL",
+   "peak_year": 2019,
+   "peak": 11083.0,
+   "trough": 6717.0,
+   "ratio": 0.6060633402508346,
+   "span": 7
+  },
+  {
+   "tic": "PFE",
+   "peak_year": 2007,
+   "peak": 8144.0,
+   "trough": 6960.0,
+   "ratio": 0.8546168958742633,
+   "span": 10
+  },
+  {
+   "tic": "PFE",
+   "peak_year": 2012,
+   "peak": 14570.0,
+   "trough": 6960.0,
+   "ratio": 0.4776938915579959,
+   "span": 10
+  },
+  {
+   "tic": "QCOM",
+   "peak_year": 2007,
+   "peak": 3303.0,
+   "trough": 1592.0,
+   "ratio": 0.4819860732667272,
+   "span": 10
+  },
+  {
+   "tic": "QCOM",
+   "peak_year": 2021,
+   "peak": 9043.0,
+   "trough": 5541.0,
+   "ratio": 0.6127391352427292,
+   "span": 5
+  },
+  {
+   "tic": "SNPS",
+   "peak_year": 2008,
+   "peak": 189.978,
+   "trough": 136.563,
+   "ratio": 0.7188358652054447,
+   "span": 10
+  },
+  {
+   "tic": "SNPS",
+   "peak_year": 2013,
+   "peak": 247.8,
+   "trough": 136.563,
+   "ratio": 0.5511016949152542,
+   "span": 10
+  },
+  {
+   "tic": "SNPS",
+   "peak_year": 2018,
+   "peak": 432.518,
+   "trough": 532.367,
+   "ratio": 1.2308551320407475,
+   "span": 7
+  },
+  {
+   "tic": "TXN",
+   "peak_year": 2007,
+   "peak": 2657.0,
+   "trough": 1470.0,
+   "ratio": 0.5532555513737297,
+   "span": 10
+  },
+  {
+   "tic": "TXN",
+   "peak_year": 2016,
+   "peak": 3595.0,
+   "trough": 3682.0,
+   "ratio": 1.0242002781641169,
+   "span": 9
+  },
+  {
+   "tic": "VZ",
+   "peak_year": 2013,
+   "peak": 11497.0,
+   "trough": 9625.0,
+   "ratio": 0.8371749151952683,
+   "span": 10
+  },
+  {
+   "tic": "WDC",
+   "peak_year": 2008,
+   "peak": 867.0,
+   "trough": 242.0,
+   "ratio": 0.279123414071511,
+   "span": 10
+  },
+  {
+   "tic": "XOM",
+   "peak_year": 2007,
+   "peak": 40610.0,
+   "trough": 7840.0,
+   "ratio": 0.1930558975621768,
+   "span": 10
+  }
+ ],
+ "still_profitable_10y": [
+  {
+   "tic": "AAPL",
+   "peak_year": 2007,
+   "peak": 3495.0,
+   "trough": 6119.0,
+   "ratio": 1.7507868383404863,
+   "span": 10
+  },
+  {
+   "tic": "AAPL",
+   "peak_year": 2012,
+   "peak": 41733.0,
+   "trough": 37037.0,
+   "ratio": 0.8874751395777921,
+   "span": 10
+  },
+  {
+   "tic": "ADBE",
+   "peak_year": 2007,
+   "peak": 723.807,
+   "trough": 268.395,
+   "ratio": 0.370810174535477,
+   "span": 10
+  },
+  {
+   "tic": "ADI",
+   "peak_year": 2009,
+   "peak": 247.772,
+   "trough": 629.32,
+   "ratio": 2.53991572897664,
+   "span": 10
+  },
+  {
+   "tic": "BA",
+   "peak_year": 2007,
+   "peak": 4074.0,
+   "trough": 1312.0,
+   "ratio": 0.32204221894943547,
+   "span": 10
+  },
+  {
+   "tic": "CSCO",
+   "peak_year": 2008,
+   "peak": 8052.0,
+   "trough": 110.0,
+   "ratio": 0.01366120218579235,
+   "span": 10
+  },
+  {
+   "tic": "CSCO",
+   "peak_year": 2013,
+   "peak": 9983.0,
+   "trough": 110.0,
+   "ratio": 0.01101873184413503,
+   "span": 10
+  },
+  {
+   "tic": "GOOGL",
+   "peak_year": 2013,
+   "peak": 12733.0,
+   "trough": 12662.0,
+   "ratio": 0.9944239377994188,
+   "span": 10
+  },
+  {
+   "tic": "IBM",
+   "peak_year": 2015,
+   "peak": 13190.0,
+   "trough": 1639.0,
+   "ratio": 0.12426080363912055,
+   "span": 10
+  },
+  {
+   "tic": "INTC",
+   "peak_year": 2007,
+   "peak": 6976.0,
+   "trough": 4369.0,
+   "ratio": 0.6262901376146789,
+   "span": 10
+  },
+  {
+   "tic": "KLAC",
+   "peak_year": 2010,
+   "peak": 212.3,
+   "trough": 366.158,
+   "ratio": 1.7247197362223268,
+   "span": 10
+  },
+  {
+   "tic": "KO",
+   "peak_year": 2007,
+   "peak": 5981.0,
+   "trough": 1248.0,
+   "ratio": 0.20866075907038956,
+   "span": 10
+  },
+  {
+   "tic": "LRCX",
+   "peak_year": 2010,
+   "peak": 346.669,
+   "trough": 113.879,
+   "ratio": 0.3284949043612207,
+   "span": 10
+  },
+  {
+   "tic": "LRCX",
+   "peak_year": 2016,
+   "peak": 914.049,
+   "trough": 1697.763,
+   "ratio": 1.8574091760944982,
+   "span": 10
+  },
+  {
+   "tic": "MCHP",
+   "peak_year": 2008,
+   "peak": 296.793,
+   "trough": 127.389,
+   "ratio": 0.429218344098412,
+   "span": 10
+  },
+  {
+   "tic": "META",
+   "peak_year": 2010,
+   "peak": 606.0,
+   "trough": 53.0,
+   "ratio": 0.08745874587458746,
+   "span": 10
+  },
+  {
+   "tic": "META",
+   "peak_year": 2015,
+   "peak": 3688.0,
+   "trough": 10217.0,
+   "ratio": 2.7703362255965294,
+   "span": 10
+  },
+  {
+   "tic": "MSFT",
+   "peak_year": 2008,
+   "peak": 17681.0,
+   "trough": 12193.0,
+   "ratio": 0.6896103161585884,
+   "span": 10
+  },
+  {
+   "tic": "NTAP",
+   "peak_year": 2009,
+   "peak": 64.6,
+   "trough": 116.0,
+   "ratio": 1.7956656346749227,
+   "span": 10
+  },
+  {
+   "tic": "ORCL",
+   "peak_year": 2008,
+   "peak": 5581.0,
+   "trough": 3587.0,
+   "ratio": 0.6427163590754346,
+   "span": 10
+  },
+  {
+   "tic": "ORCL",
+   "peak_year": 2013,
+   "peak": 10925.0,
+   "trough": 3587.0,
+   "ratio": 0.3283295194508009,
+   "span": 10
+  },
+  {
+   "tic": "PFE",
+   "peak_year": 2007,
+   "peak": 8144.0,
+   "trough": 6960.0,
+   "ratio": 0.8546168958742633,
+   "span": 10
+  },
+  {
+   "tic": "PFE",
+   "peak_year": 2012,
+   "peak": 14570.0,
+   "trough": 6960.0,
+   "ratio": 0.4776938915579959,
+   "span": 10
+  },
+  {
+   "tic": "QCOM",
+   "peak_year": 2007,
+   "peak": 3303.0,
+   "trough": 1592.0,
+   "ratio": 0.4819860732667272,
+   "span": 10
+  },
+  {
+   "tic": "SNPS",
+   "peak_year": 2008,
+   "peak": 189.978,
+   "trough": 136.563,
+   "ratio": 0.7188358652054447,
+   "span": 10
+  },
+  {
+   "tic": "SNPS",
+   "peak_year": 2013,
+   "peak": 247.8,
+   "trough": 136.563,
+   "ratio": 0.5511016949152542,
+   "span": 10
+  },
+  {
+   "tic": "TXN",
+   "peak_year": 2007,
+   "peak": 2657.0,
+   "trough": 1470.0,
+   "ratio": 0.5532555513737297,
+   "span": 10
+  },
+  {
+   "tic": "VZ",
+   "peak_year": 2013,
+   "peak": 11497.0,
+   "trough": 9625.0,
+   "ratio": 0.8371749151952683,
+   "span": 10
+  },
+  {
+   "tic": "WDC",
+   "peak_year": 2008,
+   "peak": 867.0,
+   "trough": 242.0,
+   "ratio": 0.279123414071511,
+   "span": 10
+  },
+  {
+   "tic": "XOM",
+   "peak_year": 2007,
+   "peak": 40610.0,
+   "trough": 7840.0,
+   "ratio": 0.1930558975621768,
+   "span": 10
+  }
+ ]
+}

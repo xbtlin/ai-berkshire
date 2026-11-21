@@ -46,7 +46,10 @@
       "收入_十亿": 2000.0,
       "净利率": 0.45,
       "净利_十亿": 900.0,
-      "假设说明": "价值池 3 万亿美元、份额 60%、其他收入 2000 亿、净利率 45%（沿用 2026-09-07 报告口径）"
+      "假设说明": "价值池 3 万亿美元、份额 60%、其他收入 2000 亿、净利率 45%（沿用 2026-09-07 报告口径）",
+      "终值现值": {
+        "PE25_r10": 8674.7
+      }
     }
   },
   "reverse_valuation": [
@@ -368,6 +371,20 @@
       "value": "62.4136392888882835457520234540198379",
       "unit": "%",
       "source": "SEC 8-K EX-99.3"
+    },
+    {
+      "name": "9M_FY27_资本开支_十亿",
+      "expr": "8856/1000",
+      "value": "8.856",
+      "unit": "十亿美元",
+      "source": "SEC 8-K EX-99.3"
+    },
+    {
+      "name": "9M_FY27_资本开支占收入_pct",
+      "expr": "8856/293681*100",
+      "value": "3.01551683629516380017774387856211331",
+      "unit": "%",
+      "source": "测算：fabless 模式下资本开支强度，用于判断连续亏损年的承受能力"
     },
     {
       "name": "Q4FY27_指引收入中点_十亿",
@@ -888,10 +905,73 @@
       "source": "测算"
     },
     {
+      "name": "乐观情景_终值现值_退出PE25",
+      "expr": "900.0*25/1.1^10",
+      "value": "8674.7",
+      "unit": "十亿美元",
+      "source": "测算"
+    },
+    {
       "name": "最差情景现值相对当前市值",
       "expr": "最差情景现值/当前市值",
       "value": "0.0157428185091295582905511603308204391",
       "unit": "倍",
+      "source": "测算"
+    },
+    {
+      "name": "最差情景_退出PE12_现值占当前市值_pct",
+      "expr": "现值/当前市值",
+      "value": "1.25942548073036466324409282646563513",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "最差情景_退出PE12_发生时的跌幅_pct",
+      "expr": "1-现值占比",
+      "value": "98.7405745192696353367559071735343649",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "最差情景_退出PE15_现值占当前市值_pct",
+      "expr": "现值/当前市值",
+      "value": "1.57428185091295582905511603308204391",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "最差情景_退出PE15_发生时的跌幅_pct",
+      "expr": "1-现值占比",
+      "value": "98.4257181490870441709448839669179561",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "基准情景_退出PE20_现值占当前市值_pct",
+      "expr": "现值/当前市值",
+      "value": "87.4875227526275615054899888438729376",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "基准情景_退出PE20_发生时的跌幅_pct",
+      "expr": "1-现值占比",
+      "value": "12.5124772473724384945100111561270624",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "最差情景_期望损失_百分点",
+      "expr": "8% × 跌幅98.7%",
+      "value": "7.89924596154157082694047257388274919",
+      "unit": "百分点",
+      "source": "测算：按最差情景概率中值折算"
+    },
+    {
+      "name": "基准情景_现值相对今天价格的跌幅_pct",
+      "expr": "1-87.53%",
+      "value": "12.5124772473724384945100111561270624",
+      "unit": "%",
       "source": "测算"
     },
     {
@@ -1119,6 +1199,307 @@
       "source": "Motley Fool 2026-11-03"
     },
     {
+      "name": "历史基准率_样本_公司数",
+      "expr": "见 prob_base_rate.py",
+      "value": "39",
+      "unit": "家/观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，39 家可比公司"
+    },
+    {
+      "name": "历史基准率_样本_年度观测",
+      "expr": "见 prob_base_rate.py",
+      "value": "667",
+      "unit": "家/观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，39 家可比公司"
+    },
+    {
+      "name": "历史基准率_窗口5年_观测数",
+      "expr": "见 prob_base_rate.py",
+      "value": "74",
+      "unit": "家/观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，39 家可比公司"
+    },
+    {
+      "name": "历史基准率_窗口5年_谷底<=峰值20%_占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "40.5",
+      "unit": "家/观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，39 家可比公司"
+    },
+    {
+      "name": "历史基准率_窗口5年_谷底<=峰值40%_占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "52.7",
+      "unit": "家/观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，39 家可比公司"
+    },
+    {
+      "name": "历史基准率_窗口10年_观测数",
+      "expr": "见 prob_base_rate.py",
+      "value": "45",
+      "unit": "家/观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，39 家可比公司"
+    },
+    {
+      "name": "历史基准率_窗口10年_谷底<=峰值20%_占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "44.4",
+      "unit": "家/观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，39 家可比公司"
+    },
+    {
+      "name": "历史基准率_窗口10年_谷底<=峰值40%_占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "57.8",
+      "unit": "家/观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，39 家可比公司"
+    },
+    {
+      "name": "历史基准率_排除2007_2010起点_<=20%",
+      "expr": "见 prob_era.py",
+      "value": "39.5",
+      "unit": "%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_排除2020起点_<=20%",
+      "expr": "见 prob_era.py",
+      "value": "41.0",
+      "unit": "%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_只看2011后起点_<=20%",
+      "expr": "见 prob_era.py",
+      "value": "39.5",
+      "unit": "%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_半导体组_<=20%",
+      "expr": "见 prob_base_rate.py",
+      "value": "36.7",
+      "unit": "%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_大型科技组_<=20%",
+      "expr": "见 prob_base_rate.py",
+      "value": "33.3",
+      "unit": "%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_其他对照组_<=20%",
+      "expr": "见 prob_base_rate.py",
+      "value": "64.3",
+      "unit": "%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_半导体组_中位谷底比",
+      "expr": "见 prob_base_rate.py",
+      "value": "48.2",
+      "unit": "%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_大型科技组_中位谷底比",
+      "expr": "见 prob_base_rate.py",
+      "value": "60.6",
+      "unit": "%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_窗口5年_谷底为负观测数",
+      "expr": "见 prob_base_rate.py",
+      "value": "23",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_窗口5年_谷底为负占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "31.1",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_窗口5年_仍盈利观测数",
+      "expr": "见 prob_base_rate.py",
+      "value": "51",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_窗口5年_仍盈利_谷底<=峰值2%_占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "3.9",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_窗口5年_仍盈利_谷底<=峰值5%_占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "5.9",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_窗口5年_仍盈利_谷底<=峰值10%_占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "9.8",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_窗口5年_仍盈利_谷底<=峰值20%_占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "13.7",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_窗口5年_仍盈利_谷底<=峰值40%_占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "31.4",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_窗口5年_仍盈利_<=5%命中数",
+      "expr": "见 prob_base_rate.py",
+      "value": "3",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_窗口10年_仍盈利观测数",
+      "expr": "见 prob_base_rate.py",
+      "value": "30",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_窗口10年_仍盈利_谷底<=峰值5%_占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "6.7",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_窗口10年_仍盈利_谷底<=峰值20%_占比",
+      "expr": "见 prob_base_rate.py",
+      "value": "16.7",
+      "unit": "观测/命中/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，仅谷底为正的观测"
+    },
+    {
+      "name": "历史基准率_半导体组_仍盈利观测数",
+      "expr": "见 prob_base_rate.py",
+      "value": "20",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_半导体组_仍盈利_<=5%",
+      "expr": "见 prob_base_rate.py",
+      "value": "5.0",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_半导体组_仍盈利_<=20%",
+      "expr": "见 prob_base_rate.py",
+      "value": "5.0",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_半导体组_仍盈利_<=40%",
+      "expr": "见 prob_base_rate.py",
+      "value": "20.0",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_半导体组_仍盈利_中位谷底比",
+      "expr": "见 prob_base_rate.py",
+      "value": "71.9",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_大型科技组_仍盈利观测数",
+      "expr": "见 prob_base_rate.py",
+      "value": "24",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_大型科技组_仍盈利_<=5%",
+      "expr": "见 prob_base_rate.py",
+      "value": "8.3",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_大型科技组_仍盈利_<=20%",
+      "expr": "见 prob_base_rate.py",
+      "value": "16.7",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_大型科技组_仍盈利_中位谷底比",
+      "expr": "见 prob_base_rate.py",
+      "value": "65.0",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_对照组_仍盈利观测数",
+      "expr": "见 prob_base_rate.py",
+      "value": "7",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_对照组_仍盈利_<=20%",
+      "expr": "见 prob_base_rate.py",
+      "value": "28.6",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_对照组_仍盈利_中位谷底比",
+      "expr": "见 prob_base_rate.py",
+      "value": "32.2",
+      "unit": "观测/%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "英伟达FY2026净利率_pct",
+      "expr": "120067/215938*100",
+      "value": "55.6025340607026090822365679037501505",
+      "unit": "%",
+      "source": "SEC XBRL：英伟达 FY2026 收入 215938、净利 120067"
+    },
+    {
+      "name": "英伟达FY2027Q3净利率_pct",
+      "expr": "65287/115844*100",
+      "value": "56.3576879251407064673181174683194641",
+      "unit": "%",
+      "source": "SEC 8-K EX-99.3"
+    },
+    {
+      "name": "英伟达TTM净利率_pct",
+      "expr": "2262.6/3618.1*100",
+      "value": "62.5355849755396478814847571930018518",
+      "unit": "%",
+      "source": "StockAnalysis 统计页"
+    },
+    {
       "name": "尾部路径_兑付前年度净利_十亿",
       "expr": "423.681*8%",
       "value": "33.89448",
@@ -1214,6 +1595,258 @@
       "expr": "合计/120",
       "value": "2.4269",
       "unit": "倍",
+      "source": "测算"
+    },
+    {
+      "name": "概率_环节1_概率分布校验",
+      "expr": "五档之和",
+      "value": "1.00",
+      "unit": "概率",
+      "source": "作者判断，依据见报告第二节"
+    },
+    {
+      "name": "概率_条件_环节2_份额降至15%",
+      "expr": "作者判断区间",
+      "value": "0.3-0.6",
+      "unit": "概率",
+      "source": "作者判断的条件概率（前提：环节1已发生），依据见报告第七节"
+    },
+    {
+      "name": "概率_条件_环节3_净利率压至8%",
+      "expr": "作者判断区间",
+      "value": "0.25-0.5",
+      "unit": "概率",
+      "source": "作者判断的条件概率（前提：环节1已发生），依据见报告第七节"
+    },
+    {
+      "name": "概率_条件_环节4_其他收入萎缩至300亿",
+      "expr": "作者判断区间",
+      "value": "0.7-0.9",
+      "unit": "概率",
+      "source": "作者判断的条件概率（前提：环节1已发生），依据见报告第七节"
+    },
+    {
+      "name": "概率_条件_环节5_资产负债表被兑现",
+      "expr": "作者判断区间",
+      "value": "0.25-0.45",
+      "unit": "概率",
+      "source": "作者判断的条件概率（前提：环节1已发生），依据见报告第七节"
+    },
+    {
+      "name": "最差情景概率_中枢_pct",
+      "expr": "P(环节1) × 条件乘积(中值)",
+      "value": "4.7249999999999995800000000",
+      "unit": "%",
+      "source": "测算：条件概率结构，见 prob_cond.py"
+    },
+    {
+      "name": "最差情景概率_下界_pct",
+      "expr": "条件概率取区间下界",
+      "value": "1.31250000",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "最差情景概率_上界_pct",
+      "expr": "条件概率取区间上界",
+      "value": "12.1500000",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "单年巨亏概率_中枢_pct",
+      "expr": "P(环节1)×P(违约|环节1)+局部违约3%",
+      "value": "38.0000",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "单年巨亏概率_下界_pct",
+      "expr": "环节5取下界",
+      "value": "28.0000",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "单年巨亏概率_上界_pct",
+      "expr": "环节5取上界",
+      "value": "53.0000",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "历史基准率_仍盈利_<=5%_比例",
+      "expr": "3/51",
+      "value": "5.88235294117647058823529411764705882",
+      "unit": "%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss，39 家可比公司，谷底为正的 51 个观测"
+    },
+    {
+      "name": "历史基准率_仍盈利_<=5%_命中数",
+      "expr": "原文",
+      "value": "3",
+      "unit": "个",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_仍盈利_观测数",
+      "expr": "原文",
+      "value": "51",
+      "unit": "个",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "历史基准率_全样本_<=5%_比例",
+      "expr": "26/74（含转亏观测，口径错误示例）",
+      "value": "35.1351351351351351351351351351351351",
+      "unit": "%",
+      "source": "SEC EDGAR XBRL NetIncomeLoss"
+    },
+    {
+      "name": "两条路径_最差情景概率差异_pct",
+      "expr": "|5.9-4.7|",
+      "value": "1.1750000000000004200000000",
+      "unit": "百分点",
+      "source": "测算：历史基准率（仍盈利口径）与条件概率结构互证"
+    },
+    {
+      "name": "最差情景概率_综合区间下界_pct",
+      "expr": "两条路径交集下沿",
+      "value": "5",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "最差情景概率_综合区间上界_pct",
+      "expr": "两条路径交集上沿",
+      "value": "12",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "错误做法_五环节独立乘积_pct",
+      "expr": "各环节中值相乘（错误方法，仅留档）",
+      "value": "0.0974531250000000173249999999999994225",
+      "unit": "%",
+      "source": "测算：错误方法，环节之间实际为条件关系"
+    },
+    {
+      "name": "两种做法之比_倍数",
+      "expr": "正确中枢/独立乘积",
+      "value": "48.4848484848484719191919191919217778",
+      "unit": "倍",
+      "source": "测算"
+    },
+    {
+      "name": "敏感性_池12000亿_净利_亿",
+      "expr": "见 prob_sens.py",
+      "value": "168",
+      "unit": "亿美元",
+      "source": "情景假设"
+    },
+    {
+      "name": "敏感性_池12000亿_相对最差_pct",
+      "expr": "净利/最差净利",
+      "value": "175.00",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "敏感性_池9000亿_净利_亿",
+      "expr": "见 prob_sens.py",
+      "value": "132",
+      "unit": "亿美元",
+      "source": "情景假设"
+    },
+    {
+      "name": "敏感性_池9000亿_相对最差_pct",
+      "expr": "净利/最差净利",
+      "value": "137.500",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "敏感性_池3000亿_净利_亿",
+      "expr": "见 prob_sens.py",
+      "value": "60",
+      "unit": "亿美元",
+      "source": "情景假设"
+    },
+    {
+      "name": "敏感性_池3000亿_相对最差_pct",
+      "expr": "净利/最差净利",
+      "value": "62.500",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "敏感性_份额30%_净利_亿",
+      "expr": "见 prob_sens.py",
+      "value": "168",
+      "unit": "亿美元",
+      "source": "情景假设"
+    },
+    {
+      "name": "敏感性_份额30%_相对最差_pct",
+      "expr": "净利/最差净利",
+      "value": "175.00",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "敏感性_份额10%_净利_亿",
+      "expr": "见 prob_sens.py",
+      "value": "72",
+      "unit": "亿美元",
+      "source": "情景假设"
+    },
+    {
+      "name": "敏感性_份额10%_相对最差_pct",
+      "expr": "净利/最差净利",
+      "value": "75.00",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "敏感性_净利率20%_净利_亿",
+      "expr": "见 prob_sens.py",
+      "value": "240",
+      "unit": "亿美元",
+      "source": "情景假设"
+    },
+    {
+      "name": "敏感性_净利率20%_相对最差_pct",
+      "expr": "净利/最差净利",
+      "value": "250.0",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "敏感性_净利率4%_净利_亿",
+      "expr": "见 prob_sens.py",
+      "value": "48",
+      "unit": "亿美元",
+      "source": "情景假设"
+    },
+    {
+      "name": "敏感性_净利率4%_相对最差_pct",
+      "expr": "净利/最差净利",
+      "value": "50.0",
+      "unit": "%",
+      "source": "测算"
+    },
+    {
+      "name": "敏感性_其他收入1000亿_净利_亿",
+      "expr": "见 prob_sens.py",
+      "value": "152",
+      "unit": "亿美元",
+      "source": "情景假设"
+    },
+    {
+      "name": "敏感性_其他收入1000亿_相对最差_pct",
+      "expr": "净利/最差净利",
+      "value": "158.333333333333333333333333333333333",
+      "unit": "%",
       "source": "测算"
     },
     {
