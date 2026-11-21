@@ -350,7 +350,49 @@ SB Energy 细节（2026-08-17 8-K 一手）：俄亥俄州 PORTS-Pike 科技园�
 - **微软、Meta、OpenAI**：均在推进自研加速器。
 - **AMD**：Q3 2026（截至 2026-09-26）总营收 133.77 亿（同比 +44.7%），**Data Center 分部 85.46 亿（同比 +96.8%，去年同期 43.41 亿）**。增速接近英伟达（英伟达同期 Data Center +110%），但规模只有英伟达的约 8%。**目前看不到份额流失，看到的是英伟达在跑道上跑得更快。**
 
+**还有一条护城河的第二条腿的实况，需要单独记：网络业务正在"不讲"了。**
+
+| 时点 | 口径 | 事实 |
+|---|---|---|
+| FY2027 Q1（2026-05-20 电话会） | **单列** | Spectrum-X "is now larger than all ethernet network peers combined"；InfiniBand "growing more than **4x** year-over-year"；数据中心网络收入 **150 亿**（近三倍） |
+| IDC 2Q26（2026-09-11） | 第三方 | 数据中心以太网交换市场 123 亿，**英伟达收入 25 亿、同比 +181.1%、份额 20.4% 居第一** |
+| Dell'Oro（2026-06-02） | 第三方 | 2026Q1 以太网约占 AI 集群数据中心交换销量的 **三分之二**；厂商排名 Celestica、NVIDIA、Arista、Cisco |
+| **FY2027 Q2 起** | **停止单列** | CFO 评论不再单列网络收入 |
+| **FY2027 Q3（2026-11-17）** | **品牌名都不提** | Q3 电话会逐字稿里 "Spectrum-X"、"InfiniBand"、"Ethernet" **一次都没出现**，只有一句 "networking revenue exceeding **$21 billion**" |
+
+**这是口径变化，不是业务出问题**——按 150 亿 → 210 亿推算网络收入仍在高速增长。**但一家把网络当成"第二条护城河"的公司不再单列披露它，这件事本身值得记一笔：它要么是分部复杂度到了必须简化的地步，要么是不想让市场把这块拆开看。** 加上友商视角更直接：**戴尔'Oro 2026-09-03 记录 2Q26 AI 后端交换销售额首次超过前端（从出现到超越仅三年），市场将"供给受限而非需求受限"的状态持续至少 1–2 年。**
+
+**但真正的竞争机制，比"份额被侵蚀"这条复杂得多，也锋利得多——这是本次 CheckList 最该写出来的一条：**
+
+**英伟达自己说"缺货到 FY2028 底"，同时被内存涨价打掉 3 个百分点的毛利率。**
+
+Kress 在 FY2027 Q2 电话会（2026-08-26）原话：
+> "Although we will work to close the supply-demand gap, **we expect supply to remain a bottleneck at least through the end of fiscal year 2028**."
+> "we are experiencing **extreme pricing conditions in memory**. The magnitude of the price increase has exceeded our prior expectations and are headed even higher into next year. As a result, we are **resetting expectations** today."
+
+**所以 2026 年的真实处境不是"份额被侵蚀"，而是"供不应求到 FY2028 底 + 毛利率被内存吃掉"。** 英伟达用稀缺性换来了收入，用内存长约的涨价交出了毛利率——而**拥有自研芯片的客户（Google TPU、AWS Trainium、Meta MTIA）恰恰绕开了这个排队**。
+
+**这就把 ASIC 竞争的传导链改写了：不是"英伟达芯片不好"，而是"自研芯片能保证拿到货 + 内存成本可控"。** 任何只写"英伟达份额在降"的报告都会错过这一层——**在供不应求的市场里，缺货本身就是竞争武器。**
+
+**供给侧的三条硬约束（三家口径一致）：**
+
+| 来源 | 关键事实 |
+|---|---|
+| **SK 海力士**（Q3 2026，2026-10-28） | "our DRAM and HBM volumes for the next 3 years **through 2029 are effectively sold out**"；"customers' volume requirement is **more than double** that of what we can supply today"；LTA 已覆盖 2027–2028 产量 50% 以上、已签 14 家客户；供需缺口持续到 2030 |
+| **三星**（Q3 2026，2026-10-29） | HBM4 销售额环比增 3 倍以上、已占 HBM 总销售 60%；**2027 年 HBM 供应量已按目标价售罄**，客户仍在追加要量；存储紧张持续到 2028 |
+| **美光**（FQ4 FY26，2026-09-30） | "We have completed agreements for the vast majority of our calendar 2027 HBM bit supply **with significant price increases** year-over-year"；"we **do not have line of sight to when supply and demand will return to balance**" |
+
+TrendForce（2026-09-29）：**HBM 混合 ASP 2027 年同比 +121%**，且 GPU 与 ASIC 厂商正考虑**削减单台设备的 HBM 容量**。
+
+**结论：英伟达未来两年的出货上限由别人决定（内存、CoWoS、电力），不由自己的需求决定。** 这是多头和空头都容易忽略的一点。
+
+> ⚠️ **一个必须防的引用错误**：台积电 CoWoS 的"月产能 8 万片/16 万片"**从来没有出现在台积电任何一次法说会**——魏哲家在 2025-10-16 被直接追问时明确拒绝回答（"The real number, we probably update you next year"），五次法说会逐字稿检索 "wafers per month" 零命中。可用的只有第三方序列（TrendForce 转述）：2024 年底约 4 万 → 2025 年底约 7.25 万片/月 → 2026 年底 12–14 万片/月，供需缺口 2026 年中约 20%、年底收窄到约 10%，机构估 2027 年缺口约 70 万片（>30%）。台积电 3Q26 一手：营收 467.2 亿（+41.2%）、毛利率 66.4%、HPC 占营收 68%、AI 加速器 2024–2029 复合增速"mid to high 50s"；Morgan Stanley 估英伟达已锁定 2026 年约 60% 的 CoWoS 产能。
+
+**份额本身并没有崩**（Epoch 口径）：69.2%（2024Q1）→ **62.5%（2026Q2）**，横盘偏下，而绝对出货量 +30%。**这是"涨得慢"，不是"被抢走"。**
+
 **结论：英伟达的护城河不是被钱攻破的，是被"客户愿意忍受重复投资"攻破的。** 而这个变量在英伟达自己的收入表里已经可见——**"AI Clouds, Industrial & Enterprise" 这块（475 亿，+195%，占数据中心 44%）正是最依赖融资的付费群体**，也是循环融资质疑指向的地方。
+
+**护城河的形状正在迁移**：从"英伟达的芯片"迁移到"机架标准 + 互联 + 迁移成本 + 全栈变现（每 GW 400 亿美元）"。英伟达自己在用 NVLink Fusion 接纳定制 XPU、用 170 亿买 Groq 的 LPU——**它可能不需要赢下每一颗加速器，只需要赢下每一个机架。** 这句话既是防守策略，也是这份 CheckList 里对护城河最有建设性的判断。
 
 **另外必须记一笔英伟达为护城河花的钱——它买的是漏斗，不是收费站：**
 - **Hugging Face（119 亿美元 + 最多 10 亿留任股权）**：买的是整个开源模型与工具链的中枢门户，**同时公开承诺"保持 Hugging Face 平台开放"、继续支持其他芯片厂商**。买入口、不堵入口——这与当年 Google 买 Android 后不做封闭应用商店是同一种策略。
@@ -603,7 +645,7 @@ SB Energy 细节（2026-08-17 8-K 一手）：俄亥俄州 PORTS-Pike 科技园�
 1. **SEC 会计调查升级（杀伤力最大）**。可能指向收入地域口径、客户融资与担保确认、**以及并购的会计处理**。三个具体的抓手：①**收入地域口径**——公司自己披露"Revenue by geographic region is designated based on the location of the headquarters of direct customers"并加了"最终客户与发货地可能与直接客户总部所在地不同"的警示；②**10-K 里"我们没有进入任何融资安排"与"我们被要求提供融资安排以支持客户和合作伙伴建设数据中心"两句话之间的张力**，以及 1,180 亿担保是否应确认负债；③**Groq 交易确认了 144 亿商誉 + 25 亿已开发技术无形资产，却只买到非独家许可和一部分员工**——一笔许可加团队引进产生 169 亿美元商誉与无形资产的会计依据，是执法审查最典型的落点。后果不是罚款，是**分母作废**——TTM 2,263 亿净利里有 254 亿非现金证券收益，且 36% 的收入与 35% 的应收集中在 3 个和 2 个直接客户身上。
 2. **表外信用敞口**。1,180 亿担保，其中 1,050 亿集中在俄亥俄州一个园区、单一承租方（OpenAI）、20 年租约，首笔 FY2029 生效。承诺表 5,180 亿（供应与产能 3,900 亿，且一个季度增加 1,110 亿），加 320 亿条件性新云承诺。公司称迄今未支付任何担保款项。
 3. **循环融资与客户集中**。这是本次最被低估的一条，因为**证据全部来自英伟达自己的文件**（见 2.6）：8-K 残值担保（OpenAI 关联公司 20 年租约）+ 5,000 亿美元第三方资本平台（"NVIDIA compute is an investable asset"）+ 已到位 300 亿 OpenAI 投资承诺 + 20 亿 CoreWeave 股权（另 63 亿美元云服务订单、容量由英伟达兜底至 2032）+ 20 亿 xAI 股权（SPV 收购的正是英伟达 GPU）+ 655 亿非上市股权证券（九个月净增 464 亿）+ 客户预付款从 1.60 亿跳到 28 亿。<br>**后果是可以量化的：摩根大通口径，近三个季度 58% 的经营现金流被股权投资与并购吃掉。** 客户侧：Q3 三个直接客户占 36% 收入、两个占 35% 应收；DSO 从 60 天升到 64 天，账期最长给到 1 年；Data Center 里 "AI Clouds, Industrial & Enterprise" 475 亿、同比 +195%（占数据中心 44%），是最依赖融资的付费群体。<br>**正面的一点也要写：英伟达 11-19 已被报道对 neocloud 循环融资实行 "strict review"，Kress 说以后对 AI 行业融资"far more selective"。公司自己踩了刹车——这是本次观察清单里最值得盯的正面信号。**
-4. **AI 投入的回报率，而不是需求本身**（这一条比"capex 见顶"更值得盯）。一手证据：**Anthropic 招股书披露算力支出从 FY2023 的 4.33 亿涨到 2026Q3 单季 98.63 亿（年化 394.5 亿），但与付费客户相关的算力占比从 38% 降到 26%——74% 的算力用于内部研发**，未来算力承诺 4,475 亿；OpenAI 2026 年算力支出预计 500 亿，但**其年化收入找不到可核实数字**，算力/收入比算不出来。**"单位智能"成本每季度下降 47%（年约 13 倍），是"单位算力"降价速度的约 8.6 倍**；英伟达自己承认"Token prices have fallen nearly 60% since May"。**卖方最明确的减速数字是 UBS：2028 年仅 +6%。**
+4. **AI 投入的回报率，而不是需求本身**（这一条比"capex 见顶"更值得盯）。**先记住一句被误读的话：财报里的 2.5 万亿是"云行业积压"（Cloud industry backlog），不是英伟达自己的订单积压——英伟达从不披露自己的 backlog，可用的替代口径只有采购承诺 3,900 亿 + 云服务与租约 1,020 亿 + 新云承诺 320 亿 = 5,180 亿。** 一手证据：**Anthropic 招股书披露算力支出从 FY2023 的 4.33 亿涨到 2026Q3 单季 98.63 亿（年化 394.5 亿），但与付费客户相关的算力占比从 38% 降到 26%——74% 的算力用于内部研发**，未来算力承诺 4,475 亿；OpenAI 2026 年算力支出预计 500 亿，但**其年化收入找不到可核实数字**，算力/收入比算不出来。**"单位智能"成本每季度下降 47%（年约 13 倍），是"单位算力"降价速度的约 8.6 倍**；英伟达自己承认"Token prices have fallen nearly 60% since May"。**卖方最明确的减速数字是 UBS：2028 年仅 +6%。**
    **另一条容量侧的硬阈值**：SemiAnalysis 测算 2027 年全球数据中心新增容量约 50GW、在建 60GW，但 2027 实际只完成约 25GW；政治侧 2028 年美国新增容量的 70% 集中在 13 个州，20 位州长候选人中 9 位支持暂停新建数据中心；CoreWeave 五年期 CDS 已到 1,145bp，Meta 五年期 CDS 因 8,250 亿表外承诺走阔至 114.79bp。
    **对英伟达的直接含义：如果客户的产能计划滑期，超出计划的那部分算力采购不会消失，但会推迟到更晚、价格更低的时点。**
 5. **大客户自研替代**。AWS Trainium 收入承诺同比 +20 倍、单季帮客户省 20 亿美元、TorchNeuron 已开源降低迁移成本、计划 2027 年底出 AWS；Google TPU 多代迭代对外出租；微软、Meta、OpenAI 均自研。侵蚀的是**增量利润**——行业继续增长，但英伟达拿到的份额和毛利率下降。
@@ -667,11 +709,18 @@ SB Energy 细节（2026-08-17 8-K 一手）：俄亥俄州 PORTS-Pike 科技园�
 - [Epoch AI：AI 算力新增量收敛（2026-10-29）](https://epoch.ai/data-insights/ai-computing-capacity-additions-doubling) — 年增速 6× → 2.5×，季度回归斜率 32% → 19%（p=0.26 不显著）
 - [SemiAnalysis：Anthropic 订阅把毛利打成负数（2026-10-05）](https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x) — 订阅占收入 10%、耗 40%+ 推理算力
 - [SemiAnalysis：TPU v7 与 TPU 对英伟达的影响](https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the) — Ironwood 全成本比 GB200 低 44%、"切换威胁"换来 30% 车队降价、Anthropic 40 万机架直购 + 60 万租用
-- SemiAnalysis 通讯首页（https://newsletter.semianalysis.com/）——2026-10-19《2027 全球数据中心容量》原文在付费墙内，正文为转述：2027 新增约 50GW、在建 60GW、租赁合同 1.3 万亿；另有 2026-11-01 政治风险模型（2028 美国新增容量 70% 集中在 13 个州）
+- SemiAnalysis 通讯（2026-10-19《2027 全球数据中心容量》与 2026-11-01 政治风险模型原文在付费墙内，正文为转述）：2027 新增约 50GW、在建 60GW、租赁合同 1.3 万亿；2028 美国新增容量 70% 集中在 13 个州
 - [BIS Bulletin 140（2026-10-27）](https://www.bis.gov/) — AI 基建资本开支"rising quickly, with a growing proportion financed using long-term debt and complex off-balance-sheet arrangements"
 - [董事 Mark A. Stevens Form 4 三批（2026-08-31 / 09-04 / 09-18）](https://www.sec.gov/Archives/edgar/data/1045810/000119903926000016/wk-form4_1790110579.xml) — 合计 4,236,740 股 / 约 9.46 亿美元，**10b5-1 indicator 全部为 0**
 - [股东集体诉讼立案（PR Newswire，2026-11-19）](https://www.prnewswire.com/) — 案号 5:26-cv-13448，类别期 2025-10-09 至 2026-11-08，首席原告截止 2027-01-08，**诉状未指控收入确认、会计不实或渠道压货**
 - [Fortune：英伟达变更地域收入披露口径与新加坡（2026-11-12）](https://fortune.com/2026/11/12/nvidia-changed-earnings-report-format-singapore-revenue-megaspeed-probe-colette-kress/) — 会计学教授 Shiva Rajgopal 限定："These are just financial statements. Nothing is illegal. It's disclosed."
+- [Dell'Oro：Ethernet Extends Lead in AI Scale-Out Networks（2026-06-02）](https://www.delloro.com/news/ethernet-extends-lead-in-ai-scale-out-networks-despite-strong-infiniband-rebound/) — 2026Q1 以太网约占 AI 集群数据中心交换销量三分之二
+- [Dell'Oro：AI 后端交换销售额首次超过前端（2026-09-03）](https://www.delloro.com/news/ai-back-end-networks-switch-sales-surpass-front-end-networks-for-the-first-time-in-2q2026/) — "supply-constrained, rather than demand-constrained" 持续 1–2 年
+- [IDC：2Q26 数据中心以太网交换市场（2026-09-11）](https://www.idc.com/resource-center/blog/ethernet-switch-market-surges-43-4-to-18-9b-in-2q26-as-ai-infrastructure-demand-drives-record-datacenter-spending/) — 市场 123 亿，英伟达 25 亿、+181.1%、份额 20.4% 第一
+- [SK 海力士 Q3 2026 业绩](https://news.skhynix.com/) — "DRAM and HBM volumes for the next 3 years through 2029 are effectively sold out"
+- [美光 FQ4 FY2026 业绩](https://investors.micron.com/) — 2027 日历年 HBM 位数供给"vast majority"签约且大幅涨价，"do not have line of sight to when supply and demand will return to balance"
+- [台积电 3Q26 法说会（2026-10-15）](https://investor.tsmc.com/) — 营收 467.2 亿、毛利率 66.4%、HPC 占 68%、AI 加速器 2024–2029 CAGR "mid to high 50s"；**CoWoS 月产能未披露**
+- [TrendForce：HBM 混合 ASP 2027 同比 +121%（2026-09-29）](https://www.trendforce.com/presscenter/) — 及"GPU 与 ASIC 厂商考虑削减单台设备 HBM 容量"
 - 行情与历史分位：Yahoo Finance 日线/月线收盘价（2021-12 至 2026-11-20）
 
 **口径与复核**
@@ -684,6 +733,7 @@ SB Energy 细节（2026-08-17 8-K 一手）：俄亥俄州 PORTS-Pike 科技园�
 - **已核实但方向相反的事实**（为免读者误读）：**Blackwell 无召回、EDGAR 全文 "overheating" 命中 0、"黑火"这一术语不存在**；FY2026 那 72 亿存货与超额采购计提中 45 亿明确归因 H20，**没有一笔被归因为 Blackwell**；Rubin 路线图未推迟且已超预期兑现。
 - **口径冲突，不替任何一方背书**：①**Groq 交易金额**——SEC 附注为 **170 亿**（交割付 130 亿 + 一年内应付 40 亿含推算利息），媒体普遍报道为 200 亿；②**表外担保口径**——公司披露最大毛敞口 **1,180 亿**，SemiAnalysis 测算 **5,300 亿**（含 360 亿 neocloud take-or-pay 下限），**4.5 倍差异待解释**；③**Megaspeed 采购规模**有四个互相矛盾的口径（46 亿 / 48 亿 / 至少 75 亿）；④**新加坡收入**——2025-07-27 季度为 101.56 亿、占总收入 22%、同比 +81%，随后从地域披露表中消失；⑤**10-K 附注显示公司未计提任何与上述调查相关的或有负债**。
 - **明确不存在的东西**：**不存在"商务部/DOJ 传唤黄仁勋与 Kress"的程序**——所有"传票"措辞都出自国会委员会，且是**出席要求 + 条件性传票威胁**（参院银行委员会信中原文："the Committee is prepared to use all tools at our disposal, including subpoenas"），不是已发出的传票；英伟达也就 CEO 变更**未提交 Item 8.01 专项 8-K**，只在 11-17 的 CFO Commentary 前瞻性声明中首次出现调查表述。
+- **两个引用陷阱**：①**台积电 CoWoS 的"月产能 8 万/16 万片"从未出现在台积电任何一次法说会**——魏哲家 2025-10-16 被直接追问时明确拒绝回答（"The real number, we probably update you next year"），五次法说会逐字稿检索 "wafers per month" 零命中。**任何把该数字挂在台积电法说会名下的说法都是错的**（第三方估算请注明来源）。②**财报里的 2.5 万亿是"云行业积压"，不是英伟达自己的订单积压**——英伟达从不披露自己的 backlog。
 - **最大的信息缺口是披露真空**：11-11 辞任、11-08 董事会调查、SEC 会计调查、加州诉讼、1,180 亿担保中未具名的 95 亿、Q3 FY27 10-Q 延迟提交（上年同期是 11-19 提交）——**全部没有对应的专项 8-K**。10-Q 一旦提交，诉讼、监管、担保、减值、递延收入与应收集中度的附注会一次性补齐大量空白。
 
 ---
