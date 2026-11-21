@@ -1,0 +1,1176 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>巴菲特买入前 Checklist：英伟达（NVDA） · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/30de021c572d.html" data-title="巴菲特买入前 Checklist：英伟达（NVDA）"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><div class="layout"><div><h1>巴菲特买入前 Checklist：英伟达（NVDA）</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-11-21 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E5%B7%B4%E8%8F%B2%E7%89%B9Checklist-%E8%8B%B1%E4%BC%9F%E8%BE%BE-20261121.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">结论先行</a></li>
+<li><a href="#_2">第一步：解析输入与研究偏见预警</a><ul>
+<li><a href="#a">信息丰富度评级：A 级</a></li>
+</ul>
+</li>
+<li><a href="#_3">第二步：核心数据底稿</a><ul>
+<li><a href="#21-gaapsec-xbrl-companyfacts-10-k">2.1 五年财务（GAAP，一手：SEC XBRL companyfacts + 各年 10-K）</a></li>
+<li><a href="#22">2.2 现金流与资本配置</a></li>
+<li><a href="#23-fy2027-2026-10-25">2.3 FY2027 第三财季（截至 2026-10-25）与下一季指引</a></li>
+<li><a href="#24">2.4 三处必须扣掉的"水分"</a></li>
+<li><a href="#25">2.5 表外规模：这家公司已经不只是卖芯片的</a></li>
+<li><a href="#26">2.6 客户集中度</a></li>
+</ul>
+</li>
+<li><a href="#checklist">第三步：六关 Checklist</a><ul>
+<li><a href="#_4">第一关：我能理解这门生意吗 ★★★★☆</a></li>
+<li><a href="#_5">第二关：这是一门好生意吗 ★★★★★</a></li>
+<li><a href="#_6">第三关：护城河够不够深 ★★★★☆</a></li>
+<li><a href="#_7">第四关：管理层是否值得信任 ★★☆☆☆</a></li>
+<li><a href="#_8">第五关：价格是否足够便宜 ★★★☆☆</a></li>
+<li><a href="#_9">第六关：仓位与决策纪律</a></li>
+</ul>
+</li>
+<li><a href="#_10">第四步：镜子测试</a><ul>
+<li><a href="#_11">镜子测试判定：❌ 未通过</a></li>
+</ul>
+</li>
+<li><a href="#_12">第五步：快速否决清单</a></li>
+<li><a href="#_13">第六步：总览对比表</a></li>
+<li><a href="#_14">第七步：最终结论与决策条件</a><ul>
+<li><a href="#_15">❓ 灰色地带 —— 关键争议点</a></li>
+</ul>
+</li>
+<li><a href="#_16">关键风险（按对结论的杀伤力排序）</a></li>
+<li><a href="#_17">数据来源与口径说明</a></li>
+<li><a href="#_18">结语</a></li>
+</ul>
+</div>
+</details><article><p>研究日与信息截止日：2026-11-21。价格基准：2026-11-20（周五）收盘 125.53 美元。财务基准：FY2027 第三财季（截至 2026-10-25），业绩于 2026-11-17 发布。金额除另注明外均为美元。</p>
+<h2 id="_1">结论先行</h2>
+<p><strong>❓ 灰色地带。六关得分 4.5/6，不是通过，也不是否决。</strong></p>
+<p>生意本身是本清单能给出的最高评价：★★★★★。但<strong>第四关（管理层 ★★☆☆☆）明确失分</strong>，<strong>第五关（安全边际 ★★★☆☆）的内在价值无法定值</strong>，<strong>镜子测试第 4、5 句写不完整</strong>。</p>
+<p>最要紧的不是估值，是三个同时悬在头上的调查：董事会独立调查（公司自己在 11 月 17 日财报里书面披露）、SEC 会计调查（Reuters 11 月 20 日）、DOJ 审查 129 亿美元 Hugging Face 收购。这些不是"市场担忧"，是监管程序。</p>
+<p><strong>这家公司现在便宜得反常（PE 13.4 倍，样本内 2% 分位），同时又危险得反常（创始人突然走了，监管在查账）。</strong> 这两件事同时成立，就是灰色地带的定义。</p>
+<p><strong>Checklist 的目的是排除坏选择。排除不了的东西，就该排除。</strong></p>
+<hr />
+<h2 id="_2">第一步：解析输入与研究偏见预警</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公司全称</td>
+<td>NVIDIA Corporation（英伟达）</td>
+</tr>
+<tr>
+<td>代码 / 交易所</td>
+<td>NVDA / 纳斯达克（普通股一股一票，无不同投票权架构）</td>
+</tr>
+<tr>
+<td>财年</td>
+<td>截至每年 1 月底。FY2027 = 截至 2027 年 1 月</td>
+</tr>
+<tr>
+<td>行业</td>
+<td>加速计算（AI 数据中心 GPU、系统、网络、软件）</td>
+</tr>
+<tr>
+<td>上市</td>
+<td>1999 年，上市 27 年</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="a">信息丰富度评级：A 级</h3>
+<p>财务与治理事实全部可回溯到 SEC 一手原件（10-K、10-Q、8-K 及其 EX-99 附件），第三方榜单与行情数据可复核。</p>
+<p><strong>但 A 级恰恰是本次最容易翻车的地方。</strong> 巴菲特最贵的一课不是看不懂公司，是看懂了全部指标之后仍然判断错。英伟达当前的状态是：</p>
+<ul>
+<li><strong>所有财务指标都在历史最好区间</strong>：毛利率 74.8%、营业利润率 66.9%、ROE 84.8%、自由现金流 TTM 1,487 亿美元（FY2022 的 8 倍以上）。</li>
+<li><strong>同时</strong>：7 连阴、周跌 46%、从 10 月 6 日收盘高点 239.24 回撤 47.5%、创 2008 年以来最长周连跌；创始人 10 天前辞任；SEC 在查它的账。</li>
+</ul>
+<p>指标越干净，越容易让人以为看懂了这门生意。<strong>看不懂的那部分不在表里</strong>：一个用"客户总部地址"而不是"账单地址"披露地域收入的、给客户垫资 1,180 亿担保的、单一园区单一承租方 1,050 亿担保的公司，它的利润质量有多少？</p>
+<p><strong>本报告立场：</strong> 事实只用一手原件，判断明确标注为判断。仓库既往研究只是观点，不作证据引用；所有数字本次独立从 SEC XBRL / 8-K / 10-K 重新取数并复算。</p>
+<hr />
+<h2 id="_3">第二步：核心数据底稿</h2>
+<h3 id="21-gaapsec-xbrl-companyfacts-10-k">2.1 五年财务（GAAP，一手：SEC XBRL companyfacts + 各年 10-K）</h3>
+<p>单位：百万美元</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th style="text-align: right;">收入</th>
+<th style="text-align: right;">毛利率</th>
+<th style="text-align: right;">营业利润</th>
+<th style="text-align: right;">营业利润率</th>
+<th style="text-align: right;">净利润</th>
+<th style="text-align: right;">净利率</th>
+<th style="text-align: right;">期末权益</th>
+<th style="text-align: right;">ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2022</td>
+<td style="text-align: right;">26,914</td>
+<td style="text-align: right;">64.9%</td>
+<td style="text-align: right;">10,041</td>
+<td style="text-align: right;">37.3%</td>
+<td style="text-align: right;">9,752</td>
+<td style="text-align: right;">36.2%</td>
+<td style="text-align: right;">26,612</td>
+<td style="text-align: right;">36.6%</td>
+</tr>
+<tr>
+<td>FY2023</td>
+<td style="text-align: right;">26,974</td>
+<td style="text-align: right;">56.9%</td>
+<td style="text-align: right;">4,224</td>
+<td style="text-align: right;">15.7%</td>
+<td style="text-align: right;">4,368</td>
+<td style="text-align: right;">16.2%</td>
+<td style="text-align: right;">22,101</td>
+<td style="text-align: right;">19.8%</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td style="text-align: right;">60,922</td>
+<td style="text-align: right;">72.7%</td>
+<td style="text-align: right;">32,972</td>
+<td style="text-align: right;">54.1%</td>
+<td style="text-align: right;">29,760</td>
+<td style="text-align: right;">48.8%</td>
+<td style="text-align: right;">42,978</td>
+<td style="text-align: right;">69.2%</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td style="text-align: right;">130,497</td>
+<td style="text-align: right;">75.0%</td>
+<td style="text-align: right;">81,453</td>
+<td style="text-align: right;">62.4%</td>
+<td style="text-align: right;">72,880</td>
+<td style="text-align: right;">55.8%</td>
+<td style="text-align: right;">79,327</td>
+<td style="text-align: right;">91.9%</td>
+</tr>
+<tr>
+<td>FY2026</td>
+<td style="text-align: right;">215,938</td>
+<td style="text-align: right;">71.1%</td>
+<td style="text-align: right;">130,387</td>
+<td style="text-align: right;">60.4%</td>
+<td style="text-align: right;">120,067</td>
+<td style="text-align: right;">55.6%</td>
+<td style="text-align: right;">157,293</td>
+<td style="text-align: right;">76.3%</td>
+</tr>
+<tr>
+<td><strong>TTM 至 Q3 FY27</strong></td>
+<td style="text-align: right;"><strong>361,808</strong></td>
+<td style="text-align: right;"><strong>74.9%</strong></td>
+<td style="text-align: right;"><strong>239,090</strong></td>
+<td style="text-align: right;"><strong>66.1%</strong></td>
+<td style="text-align: right;"><strong>226,257</strong></td>
+<td style="text-align: right;"><strong>62.5%</strong></td>
+<td style="text-align: right;"><strong>266,666</strong></td>
+<td style="text-align: right;"><strong>84.8%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>ROE 用期末权益口径会低估真实回报（权益还在增长）。按期初期末平均权益，FY2025 约 120%、FY2026 约 101.5%。高企的另一原因是净利里含权益证券未实现收益（见 2.4）。</p>
+</blockquote>
+<h3 id="22">2.2 现金流与资本配置</h3>
+<p>单位：百万美元</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>财年</th>
+<th style="text-align: right;">经营现金流</th>
+<th style="text-align: right;">资本开支</th>
+<th style="text-align: right;">自由现金流</th>
+<th style="text-align: right;">FCF/净利</th>
+<th style="text-align: right;">回购</th>
+<th style="text-align: right;">股息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2022</td>
+<td style="text-align: right;">9,108</td>
+<td style="text-align: right;">976</td>
+<td style="text-align: right;">8,132</td>
+<td style="text-align: right;">83%</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>FY2023</td>
+<td style="text-align: right;">5,641</td>
+<td style="text-align: right;">1,833</td>
+<td style="text-align: right;">3,808</td>
+<td style="text-align: right;">87%</td>
+<td style="text-align: right;">10,039</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td style="text-align: right;">28,090</td>
+<td style="text-align: right;">1,069</td>
+<td style="text-align: right;">27,021</td>
+<td style="text-align: right;">91%</td>
+<td style="text-align: right;">9,533</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td style="text-align: right;">64,089</td>
+<td style="text-align: right;">3,236</td>
+<td style="text-align: right;">60,853</td>
+<td style="text-align: right;">83%</td>
+<td style="text-align: right;">33,706</td>
+<td style="text-align: right;">834</td>
+</tr>
+<tr>
+<td>FY2026</td>
+<td style="text-align: right;">102,718</td>
+<td style="text-align: right;">6,042</td>
+<td style="text-align: right;">96,676</td>
+<td style="text-align: right;">81%</td>
+<td style="text-align: right;">40,086</td>
+<td style="text-align: right;">974</td>
+</tr>
+<tr>
+<td>9M FY2027</td>
+<td style="text-align: right;">122,675</td>
+<td style="text-align: right;">8,856</td>
+<td style="text-align: right;">113,819</td>
+<td style="text-align: right;">62%</td>
+<td style="text-align: right;">61,166</td>
+<td style="text-align: right;">12,316</td>
+</tr>
+<tr>
+<td><strong>TTM</strong></td>
+<td style="text-align: right;"><strong>158,863</strong></td>
+<td style="text-align: right;"><strong>10,140</strong></td>
+<td style="text-align: right;"><strong>148,723</strong></td>
+<td style="text-align: right;"><strong>65.7%</strong></td>
+<td style="text-align: right;"><strong>64,981</strong></td>
+<td style="text-align: right;"><strong>12,558</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>FCF 口径 = 经营现金流 − 购置 PP&amp;E 及无形资产。NVIDIA 官方口径另外扣 PP&amp;E 本金支付（每年 0.1–0.15 十亿），差异可忽略。</p>
+<p><strong>资本开支强度</strong>：FY2026 资本开支占收入 2.8%，TTM 仍是 2.8%。即便自建数据中心，英伟达的重资产程度依然极低。</p>
+<p><strong>股东回报强度</strong>：TTM 回购 + 股息 775 亿美元 = TTM 自由现金流的 52%。回购授权余额 2,273 亿美元（计划用至 FY2028）。</p>
+</blockquote>
+<h3 id="23-fy2027-2026-10-25">2.3 FY2027 第三财季（截至 2026-10-25）与下一季指引</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">数值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">115,844</td>
+<td>环比 +20%，同比 +103%，公司明文 "record"</td>
+</tr>
+<tr>
+<td>GAAP 毛利率</td>
+<td style="text-align: right;">74.8%</td>
+<td>上季 75.0%，同比 73.4%</td>
+</tr>
+<tr>
+<td>GAAP 营业利润</td>
+<td style="text-align: right;">77,520</td>
+<td>营业利润率 66.9%</td>
+</tr>
+<tr>
+<td>GAAP 净利润</td>
+<td style="text-align: right;">65,287</td>
+<td>净利率 56.4%</td>
+</tr>
+<tr>
+<td>摊薄 EPS</td>
+<td style="text-align: right;">2.70</td>
+<td>non-GAAP 2.68</td>
+</tr>
+<tr>
+<td>经营现金流 / FCF</td>
+<td style="text-align: right;">48,253 / 43,777</td>
+<td></td>
+</tr>
+<tr>
+<td>Data Center</td>
+<td style="text-align: right;">107,600</td>
+<td>同比 +110%</td>
+</tr>
+<tr>
+<td>├ Hyperscale</td>
+<td style="text-align: right;">60,100</td>
+<td>同比 +71%</td>
+</tr>
+<tr>
+<td>└ AI Clouds, Industrial &amp; Enterprise</td>
+<td style="text-align: right;">47,500</td>
+<td><strong>同比 +195%</strong></td>
+</tr>
+<tr>
+<td>Edge Computing</td>
+<td style="text-align: right;">8,200</td>
+<td>同比 +42%</td>
+</tr>
+<tr>
+<td>应收账款</td>
+<td style="text-align: right;">81,033</td>
+<td><strong>周转 64 天</strong>（上季 60 天）</td>
+</tr>
+<tr>
+<td>存货</td>
+<td style="text-align: right;">39,724</td>
+<td>上季 31,600；FY2025 末 10,080</td>
+</tr>
+<tr>
+<td>现金及等价物</td>
+<td style="text-align: right;">29,089</td>
+<td>另有可交易债券 24,423、可交易股权 44,219</td>
+</tr>
+<tr>
+<td>有息负债</td>
+<td style="text-align: right;">32,371</td>
+<td>短期 0</td>
+</tr>
+<tr>
+<td>股东权益</td>
+<td style="text-align: right;">266,666</td>
+<td>总资产 372,188，总负债 105,522</td>
+</tr>
+<tr>
+<td>商誉</td>
+<td style="text-align: right;">26,451</td>
+<td>较 FY2025 末 5,188 增长约 5 倍</td>
+</tr>
+<tr>
+<td><strong>Q4 FY2027 指引</strong></td>
+<td style="text-align: right;"><strong>收入 130,000 ±3%；GAAP 毛利率 71.0%–72.0%；GAAP 费用约 11,000；全年税率 16%–18%；本季 14 周</strong></td>
+<td><strong>不含任何中国数据中心计算收入</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="24">2.4 三处必须扣掉的"水分"</h3>
+<p><strong>(a) 净利里的非现金权益证券收益。</strong> 9M FY2027 净利 1,833 亿中含权益证券净收益 254.7 亿；Q3 单季 18 亿（公开证券 +28 亿，非公开 −10 亿，含 18 亿减值）。剔除后经营口径净利率约 55%–56%，而不是 62.5%。<strong>这一项在 11 月 20 日的 SEC 调查语境下不是小事。</strong></p>
+<p><strong>(b) FCF/净利比率从 91% 掉到 62%。</strong> 原因不是盈利能力下降，是应收和存货吃现金：9M FY2027 存货占用 184 亿、应收占用 426 亿。<strong>公司自己给的解释是"给投资级大客户延长了账期"。</strong></p>
+<p><strong>(c) 收入地域口径。</strong> Q3 收入地域表按<strong>直接客户总部所在地</strong>划分，并附有公司自己的警示："最终客户与发货地可能与直接客户总部所在地不同"（Revenue by geographic region is designated based on the location of the headquarters of direct customers / The end customer and shipping location may be different from our direct customers' headquarters location）。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>直接客户总部所在地</th>
+<th style="text-align: right;">Q3 FY2027</th>
+<th style="text-align: right;">Q3 FY2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美国</td>
+<td style="text-align: right;">72,899</td>
+<td style="text-align: right;">39,177</td>
+</tr>
+<tr>
+<td>台湾</td>
+<td style="text-align: right;">30,295</td>
+<td style="text-align: right;">13,751</td>
+</tr>
+<tr>
+<td>中国（含香港）</td>
+<td style="text-align: right;">11,050</td>
+<td style="text-align: right;">2,973</td>
+</tr>
+<tr>
+<td>其他</td>
+<td style="text-align: right;">1,600</td>
+<td style="text-align: right;">1,105</td>
+</tr>
+<tr>
+<td>合计</td>
+<td style="text-align: right;">115,844</td>
+<td style="text-align: right;">57,006</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>这是 SEC 会计调查最可能指向的第一个位置。</strong> 据《金融时报》引述公司账目，新加坡销售额已升至接近全球收入的一半，而新加坡与东南亚正是 AI 芯片转运至中国的重要通道。公司已把新加坡从地域披露中移除。</p>
+<h3 id="25">2.5 表外规模：这家公司已经不只是卖芯片的</h3>
+<p><strong>未来承诺（截至 2026-10-25，单位：十亿美元）</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">FY27 剩余</th>
+<th style="text-align: right;">2028</th>
+<th style="text-align: right;">2029</th>
+<th style="text-align: right;">2030</th>
+<th style="text-align: right;">2031</th>
+<th style="text-align: right;">2032+</th>
+<th style="text-align: right;">合计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>供应与产能</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">203</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"><strong>390</strong></td>
+</tr>
+<tr>
+<td>云服务协议</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr>
+<td>未起租数据中心租约</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">74</td>
+</tr>
+<tr>
+<td>股权投资</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>资本开支</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td style="text-align: right;"><strong>82</strong></td>
+<td style="text-align: right;"><strong>222</strong></td>
+<td style="text-align: right;"><strong>103</strong></td>
+<td style="text-align: right;"><strong>22</strong></td>
+<td style="text-align: right;"><strong>16</strong></td>
+<td style="text-align: right;"><strong>73</strong></td>
+<td style="text-align: right;"><strong>518</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>另有条件性"新云协议"承诺 320 亿美元（仅在新云公司完成融资、部署基础设施、投入运行并被英伟达验收时生效）。</p>
+<p>供应与产能承诺的爬升轨迹：FY2026 末 952 亿 → FY2027Q1 1,190 亿 → Q2 2,790 亿 → <strong>Q3 3,900 亿</strong>（主要是多年期存储采购）。<strong>一个季度增加 1,110 亿美元。</strong></p>
+<p><strong>担保最大毛敞口：1,180 亿美元</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>担保项目</th>
+<th style="text-align: right;">金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SB Energy Corp. 信用支持担保</td>
+<td style="text-align: right;">1,050</td>
+</tr>
+<tr>
+<td>土地、电力与外壳担保</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr>
+<td>电力与系统信用支持担保</td>
+<td style="text-align: right;">95</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td style="text-align: right;"><strong>1,180</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>SB Energy 细节（2026-08-17 8-K 一手）：俄亥俄州 PORTS-Pike 科技园区，约 4.25 GW IT 负载，<strong>承租方是 OpenAI 的关联实体</strong>，20 年租约。英伟达提供的是<strong>剩余价值担保</strong>——OpenAI 破产或违约时，英伟达须补足租赁担保最低价值与转租/出售回收之间的差额，上限累计 1,050 亿美元；另有约 3.8 GW 的额外支持选择权由英伟达自行决定是否行使。<strong>首笔担保预计 FY2029 生效</strong>（园区 ready-for-service 条件预计 2028 年起满足）。公司明确："To date, we have not made any payments related to our guarantees."</p>
+<p><strong>1,180 亿担保 + 5,180 亿承诺 + 320 亿条件性承诺 = 6,680 亿美元，相当于当前市值（3.03 万亿）的 22.0%。</strong></p>
+<h3 id="26">2.6 客户集中度</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Q3 FY2027</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>直接客户收入占比</td>
+<td><strong>三个直接客户分别占 14%、11%、11%，合计 36%</strong></td>
+</tr>
+<tr>
+<td>应收账款集中度</td>
+<td><strong>两个直接客户占 18% 和 17%，合计 35%</strong></td>
+</tr>
+<tr>
+<td>中国出货</td>
+<td>本季向中国出货 Hopper 产品 24 亿美元</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="checklist">第三步：六关 Checklist</h2>
+<h3 id="_4">第一关：我能理解这门生意吗 ★★★★☆</h3>
+<p><strong>一句话说清怎么赚钱：</strong> 英伟达卖的不是芯片，是<strong>让客户用更少工程时间完成训练和推理的总成本优势</strong>。客户付钱买的是"GPU + 互联 + 整机系统 + CUDA 软件栈"这一整套能在几周内上线并跑出稳定吞吐的算力工厂，利润来自客户省下的工程时间和总拥有成本。</p>
+<p><strong>10 年后大概率还在做什么：</strong> 同一件事。卖加速计算系统，外加软件与网络。数据中心占收入 92.4%，这个结构 10 年内大概率仍是主体。</p>
+<p><strong>决定成败的关键变量（六条，重要性排序）：</strong></p>
+<ol>
+<li>大客户自研 ASIC（Google TPU、AWS Trainium、Microsoft Maia、Meta MTIA）的替代速度</li>
+<li>AI 资本开支周期的位置，以及客户从这些投入里拿到的回报率</li>
+<li>台海供应链（台积电 CoWoS、HBM、封装）</li>
+<li>出口管制与中国市场</li>
+<li>定价权与毛利率能否守住 70% 以上</li>
+<li>创始人离任后的研发节奏与组织稳定性</li>
+</ol>
+<p><strong>认知来源：</strong> 一手 SEC 文件 + 第三方账单 + 公司电话会原文。不是道听途说。</p>
+<p><strong>为什么不是 ★★★★★：</strong> 段永平说"看不懂"有两种，一种是生意太复杂，一种是还没花时间去看。<strong>这门生意我看得懂，但它 10 年后的样子我预测不了</strong>——上面六条变量里，第一条和第二条在能力圈之外。所以给 ★★★★☆：模式清晰度够满分，10 年确定性不够。</p>
+<h3 id="_5">第二关：这是一门好生意吗 ★★★★★</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>参考标准</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE</td>
+<td>FY2022–FY2026：36.6% / 19.8% / 69.2% / 91.9% / 76.3%；TTM 84.8%</td>
+<td>&gt;15% 优秀，&gt;20% 卓越</td>
+<td>✅ 卓越</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>74.8%（峰值 FY2025 75.0%）</td>
+<td>&gt;40% 暗示定价权</td>
+<td>✅ 极强</td>
+</tr>
+<tr>
+<td>自由现金流</td>
+<td>TTM 1,487 亿美元，连续为正，FCF/净利 65.7%</td>
+<td>持续为正、≈净利润</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>资本开支强度</td>
+<td>2.8%（占总收入），TTM 仍 2.8%</td>
+<td>轻资产优于重资产</td>
+<td>✅ 极轻</td>
+</tr>
+<tr>
+<td>有息负债</td>
+<td>323.7 亿；有息负债/净利润 = 0.14 年；净现金 211 亿</td>
+<td>有息负债/净利润 &lt; 3 年</td>
+<td>✅ 几乎无杠杆</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>五项全部达标 → ★★★★★。</strong> 芒格说的"用合理价格买优秀公司"里的"优秀公司"，在数据上就是这个样子。</p>
+<p><strong>但"好生意"这一关必须把三条暗面写出来，否则这一关就是假的：</strong></p>
+<p><strong>暗面一：定价权有过台阶式下滑的先例。</strong> 毛利率 FY2025 峰值 75.0% → FY2026 <strong>71.1%</strong>（H20 出口管制引发的 45 亿过剩存货与采购承诺一次性计提，拖累毛利率 2.6 个百分点）。Q4 FY2027 指引 71%–72%，是<strong>同一个季度级别的第二次台阶</strong>。<strong>英伟达的毛利率不是一条线，是一个有台阶的函数。</strong> 台阶的成因分别是：政策（出口管制）和竞争（Rubin 爬坡 + 存储涨价）。第三个台阶如果来自竞争，性质完全不同。</p>
+<p><strong>暗面二：净利里有一块不是经营赚来的。</strong> 9M FY2027 的 1,833 亿净利含 254.7 亿权益证券净收益（非现金）。TTM 净利率 62.5% 是被这块抬起来的，经营口径约 55%–56%。<strong>用 62.5% 去和同行比利润率，是拿会计口径比生意。</strong></p>
+<p><strong>暗面三：资产负债表已经从"轻资产"变成"信用支持方"。</strong> 这才是最重要的暗面。一家 26% 资本开支强度、零净负债的公司，同时背着 1,180 亿担保和 6,500 亿承诺，<strong>它的风险形态已经变了</strong>。英伟达不再只是卖硬件的公司，它开始为客户的信用和项目的存续担保。这既是护城河的延伸（绑定客户），也是全新的风险类别（信用风险）。</p>
+<h3 id="_6">第三关：护城河够不够深 ★★★★☆</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>护城河类型</th>
+<th>是否具备</th>
+<th>具体证据</th>
+<th>变宽还是变窄</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>品牌 / 定价权</td>
+<td>有</td>
+<td>毛利率 74.8%，营业利润率 66.9%</td>
+<td><strong>略微变窄</strong>：75.0%→74.8%→指引 71%–72%</td>
+</tr>
+<tr>
+<td>转换成本</td>
+<td>极强</td>
+<td>CUDA 代码库 + NCCL 集合通信 + 客户已调优的算子 + 已建成的工程师团队 + 已上架机架。换卡不是换卡，是重写训练栈</td>
+<td>稳定</td>
+</tr>
+<tr>
+<td>网络效应</td>
+<td>中等</td>
+<td>开发者生态有正反馈，但不是赢家通吃</td>
+<td>稳定</td>
+</tr>
+<tr>
+<td>成本 / 规模优势</td>
+<td>强</td>
+<td>采购规模、CoWoS 产能优先权、HBM 议价、整机系统（HGX / GB200 / Vera Rubin）自研</td>
+<td>稳定</td>
+</tr>
+<tr>
+<td>技术 / 专利壁垒</td>
+<td>强但半衰期短</td>
+<td>每代架构都要重新证明自己（Hopper→Blackwell→Blackwell Ultra→Rubin）</td>
+<td>每代重置一次</td>
+</tr>
+<tr>
+<td>第二条护城河：网络 + 系统 + 软件</td>
+<td>正在成形</td>
+<td>Compute &amp; Networking 分部 1,060 亿；网络不再单独披露；"AI Clouds, Industrial &amp; Enterprise" 475 亿、同比 +195%，这是系统与软件能力的变现</td>
+<td><strong>变宽</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>追加检验：给竞争对手 100 亿美元，能不能复制这门生意？</strong></p>
+<p><strong>不能靠钱复制。</strong> 100 亿买不到：CUDA 二十年积累的库与工具链（不能用钱直接买）、台积电 CoWoS 的产能优先级、HBM 的供货份额、客户机房里已经跑着客户模型的那一整堆系统、以及客户三年积累的调优经验。</p>
+<p><strong>但也不需要 100 亿。</strong> 需要的是<strong>一个有云规模的客户愿意花 5 年时间和几十亿研发去容忍重复投资</strong>。这条路已经有硬证据：</p>
+<ul>
+<li><strong>AWS</strong>：自研芯片业务同比三位数增长；<strong>Trainium 收入承诺同比增长 20 倍以上</strong>；仅 Q3 一个季度，客户使用自研芯片就省下 <strong>20 亿美元</strong>；已把 TorchNeuron 开源，开发者可以不重写 PyTorch 代码就跑在 Trainium 上；计划 2027 年底把 Trainium 卖到 AWS 之外。<strong>推理已占 AWS AI 收入的一半以上。</strong></li>
+<li><strong>Google</strong>：TPU（Ironwood）多代迭代并对外出租。</li>
+<li><strong>微软、Meta、OpenAI</strong>：均在推进自研加速器。</li>
+<li><strong>AMD</strong>：Q3 2026（截至 2026-09-26）总营收 133.77 亿（同比 +44.7%），<strong>Data Center 分部 85.46 亿（同比 +96.8%，去年同期 43.41 亿）</strong>。增速接近英伟达（英伟达同期 Data Center +110%），但规模只有英伟达的约 8%。<strong>目前看不到份额流失，看到的是英伟达在跑道上跑得更快。</strong></li>
+</ul>
+<p><strong>结论：英伟达的护城河不是被钱攻破的，是被"客户愿意忍受重复投资"攻破的。</strong> 而这个变量在英伟达自己的收入表里已经可见——<strong>"AI Clouds, Industrial &amp; Enterprise" 这块（475 亿，+195%，占数据中心 44%）正是最依赖融资的付费群体</strong>，也是循环融资质疑指向的地方。</p>
+<p><strong>另外必须记一笔英伟达为护城河花的钱——它买的是漏斗，不是收费站：</strong>
+- <strong>Hugging Face（119 亿美元 + 最多 10 亿留任股权）</strong>：买的是整个开源模型与工具链的中枢门户，<strong>同时公开承诺"保持 Hugging Face 平台开放"、继续支持其他芯片厂商</strong>。买入口、不堵入口——这与当年 Google 买 Android 后不做封闭应用商店是同一种策略。
+- <strong>Groq（170 亿美元总对价，非独家许可 + 团队引进）</strong>：买的是推理速度（LPU 架构），而推理正是 AWS 自研芯片渗透最快的地方。</p>
+<p><strong>这两笔加起来 289 亿美元，全部在监管审查与反垄断视野里。</strong> 英伟达一边说"竞争是好事"，一边把别人做的东西买下来——<strong>这条一致性能不能维持，是判断护城河方向的关键观察项。</strong></p>
+<p><strong>评分 ★★★★☆</strong>（至少一条强护城河且存量稳定，但增量方向在变窄，且护城河的第二条腿正在被人为拆解）。</p>
+<h3 id="_7">第四关：管理层是否值得信任 ★★☆☆☆</h3>
+<p><strong>这一关是本次扣分最多的一关，也是决定结论的一关。</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>评估</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>诚实度（承诺 vs 交付）</strong></td>
+<td><strong>历史上很好，近期被监管质疑。</strong> 抽查 FY2022 Q4：2021-11-17 指引收入 74.0 亿 ±2%，实际 76.43 亿，<strong>超指引</strong>——英伟达的指引命中率长期很高，没有"连续说错"的记录。<strong>但 11 月 17 日财报的前瞻性声明安全港里，公司自己白纸黑字写进了"the ongoing investigation by an independent committee of NVIDIA's board of directors and related matters"——公司书面承认董事会的独立调查在进行中。</strong></td>
+</tr>
+<tr>
+<td><strong>资本配置能力</strong></td>
+<td><strong>优秀，但流传的那条"崩盘年回购"叙事是错的，必须改过来。</strong> ①<strong>真实记录是"停回购、留现金备并购"，不是恐慌回购</strong>：FY2019（加密崩盘季）回购 15.8 亿，<strong>随后 FY2020、FY2021 两个完整财年回购金额为零</strong>——10-K 原文："We did not repurchase any shares during fiscal year 2020. We intend to return to repurchasing shares after closing the acquisition of Mellanox."，FY2021 同样为零；<strong>FY2022 也是零</strong>（SEC XBRL 独立复核）。回购直到 FY2023 才重启并放大到 100.4 亿（FY2024 95.3 亿 → FY2025 337.1 亿 → FY2026 400.9 亿，TTM 650 亿）。②<strong>2026-05-18 股息从每股 0.01 美元/季提到 0.25 美元/季，25 倍</strong>，年化 1.00 美元，股息率 0.80%。③回购授权余额 2,273 亿，计划用至 FY2028。④<strong>两次"买能力"都不买故事，但性质要分清</strong>：<strong>Groq 不是收购</strong>——是 2025-12 的<strong>非独家 LPU 技术许可 + 雇佣部分 Groq 员工</strong>，总对价 170 亿（交割付 130 亿 + 一年内付 40 亿含推算利息），<strong>没有买股权、没有买客户合同、没有买现有产品</strong>，却确认了 <strong>144 亿商誉 + 25 亿已开发技术无形资产</strong>（FY2026 商誉因此从 51.9 亿暴增到 208.3 亿）。<strong>Hugging Face</strong> 是真收购：约 <strong>119 亿美元</strong>股权购买价 + 最多 10 亿员工留任股权，预计 2027 上半年交割，需监管批准；英伟达同时承诺"保持 Hugging Face 平台开放"、继续支持其他芯片厂商。⑤<strong>审计师 PwC 长期连任、内控有效、无财报重述历史</strong>；关键审计事项<strong>只有一项</strong>——存货跌价与过剩采购承诺的估值，恰好是今天被监管盯上的那块。</td>
+</tr>
+<tr>
+<td><strong>股东利益导向</strong></td>
+<td>黄仁勋 2026 年代理文件披露 3 月 23 日实益持股 3.58%（约 8.70 亿股，含信托与基金会）；<strong>普通股一股一票，无双重股权</strong>。<strong>2018–2026 财年累计薪酬 2.229 亿美元，其中股票奖励 1.750 亿</strong>，相对公司体量极其克制；<strong>CEO 期权为零，100% 股权为 PSU</strong>（单年 PSU 考核非 GAAP 营业利润，多年 PSU 考核 3 年相对标普 500 的 TSR，年度现金计划考核营收）。FY2026 三项考核全部超过 stretch 上限，2026 年 say-on-pay 反对率 6.38%（2025 年 8.19%），<strong>股东没有发起治理 revolt</strong>。FY2026 末员工约 42,000 人，31,000 人在研发。</td>
+</tr>
+<tr>
+<td><strong>所有者心态</strong></td>
+<td><strong>创始人已离任。</strong> 2026-11-11 8-K：<strong>Jen-Hsun Huang 辞去总裁、CEO 及董事职务，立即生效</strong>；<strong>Colette M. Kress 出任临时 CEO</strong>（同时继续担任自 2013 年起未变的 EVP 兼 CFO）；<strong>Harvey C. Jones 出任首任董事长</strong>（此前公司不设董事长，只设 Lead Director）；董事会启动永久 CEO 遴选（内部 + 外部），<strong>未披露任何候选人</strong>。<strong>辞任理由未披露，无过渡期安排，无顾问角色，黄仁勋此后无任何公开声明。</strong><br><strong>更关键的一条结构性事实：英伟达从未有过成文的 CEO 继任计划。</strong> 2026 年代理文件全文检索 "succession" <strong>零命中</strong>；10-K 里唯一相关的风险因素是通用的高管保留风险。<br><strong>而且 2026 年是英伟达关键人流失的密集年</strong>：董事 Persis Drell 辞任（01-20）、首席会计官 Donald Robertson 退休（04-24）、EVP 全球现场运营 Ajay Puri 退休（06-28，前微软 EVP/CBO 接任）、<strong>黄仁勋辞职（11-11）</strong>——<strong>一年内四名关键人离开</strong>，紧接着 CEO 换人。<br>10-K 还写明黄仁勋本人是 ASC 280 下的<strong>首席经营决策者（CODM）</strong>，继任 CEO 需重新确定这一角色并承接分部业绩评估职责。<br>11-17 董事会新设<strong>常设国家安全与出口管制监督委员会</strong>（主席 Suzanne Nora Johnson），至少每季度开会，向临时 CEO 汇报的合规团队做监督——<strong>这是换帅后第一个明确的治理动作，方向正确</strong>。</td>
+</tr>
+<tr>
+<td><strong>公司治理</strong></td>
+<td><strong>三个监管程序同时悬着：</strong><br>①<strong>董事会独立调查</strong>——公司自己在 11-17 财报披露<br>②<strong>SEC 会计调查</strong>——WSJ 11-17 首报 SEC 在调查英伟达但说不清查什么；<strong>Reuters 11-20 引述两名知情人士称 SEC 执法部门正在审查"潜在会计问题"</strong>，可能指向收入地域口径变更与客户融资/担保相关。<strong>SEC 拒绝置评，英伟达未回应。Reuters 自己写明"调查不等于不当行为，很多以不起诉告终"。</strong><br>③<strong>DOJ 审查 129 亿 Hugging Face 收购，并进行更广泛的反垄断审查</strong><br>④客户集中度：Q3 三个直接客户占 36% 收入、两个占 35% 应收；<strong>FY2026 单一直接客户占全年收入 22%</strong>；10-K 明写"one AI research and deployment company contributed to a meaningful amount of our revenue"（一家 AI 研究与部署公司对收入有实质性贡献）<br>⑤<strong>10-K 里的一处自相矛盾值得单独记一笔</strong>：投资风险因素下写"We have not entered into any financing arrangements"，而"Commercial arrangements expose us to counterparty risks"风险因素下写，公司"have been asked to offer financing arrangements to support our customers' and partners' buildout of datacenter infrastructure"、"long-term capacity purchase obligations and financial guarantees"。<strong>这两句话之间的张力，正是 SEC 执法部门会问的问题：这些安排在会计上到底算不算融资。</strong></td>
+</tr>
+<tr>
+<td><strong>CEO 离开后能否照常运转</strong></td>
+<td><strong>不确定，而且情况比大多数创始人离开更糟。</strong> 这次是<strong>突发辞职、即刻生效、无过渡安排、无继任者</strong>，同时公司正被 SEC 和 DOJ 调查，且面临史上最大规模的客户融资与担保敞口。苹果 2011 年交接有明确接班计划，英伟达这次什么都没有。<br><strong>英伟达自己 10-K 风险因素里写着："A significant amount of our revenue stems from a limited number of partners and distributors"，以及"Some of our customers have in-house expertise and internal development capabilities similar to some of ours... and can use or develop their own solutions to replace those we are providing."</strong><br><strong>10-K 里还有一条几乎是为今天量身定做的风险因素</strong>："If we are unable to attract, retain and motivate our executives and key employees, our business may be harmed"——"we are highly dependent on the services of our longstanding executive team"、"Failure to ensure effective succession planning, transfer of knowledge, and smooth transitions"。**公司自己把"继任规划与平稳过渡失败"列为风险，然后发生了没有继任规划、没有过渡的换帅。</td>
+</tr>
+<tr>
+<td><strong>诉讼记录</strong></td>
+<td><strong>干净，这是必须写出来的一面。</strong> 2018–2019 年加密矿卡期间的证券集体诉讼（In re NVIDIA Corporation Securities Litigation）已于 2021-03 被法院驳回且不予修改；四起派生诉讼全部处于中止状态，核心指控（渠道库存与挖矿需求陈述）均属 2017–2018 年期间，<strong>10-K 明确未计提任何或有负债</strong>；<strong>10-K 与 10-Q 中无新增证券集体诉讼披露</strong>。审计师 PwC 长期连任、<strong>内控被认定有效、无重大缺陷、无财报重述历史</strong>。股东治理上，<strong>2026 年股东以简单多数废除了超级多数表决条款</strong>，say-on-pay 反对率降至 6.38%。</td>
+</tr>
+<tr>
+<td><strong>循环融资自证</strong></td>
+<td>临时 CEO Kress 在电话会上说，未来对 AI 行业融资交易会"far more selective"（挑剔得多）。<strong>这句话本身就是承认以前不够挑剔。</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>评分 ★★☆☆☆（有治理问题）。</strong></p>
+<p>不给 ★☆☆☆☆ 的理由：没有已证实的诚信污点。SEC 的调查是<strong>调查不是定性</strong>；指引记录历史上可靠；审计师长期连任、内控有效、无财报重述、无新增集体诉讼；治理结构在 2026 年反而由股东做了一次改善（废除超级多数表决条款）；创始人的个人行为问题（不当关系）与公司经营是两条线，本报告不做道德裁决。</p>
+<p><strong>也必须把这条记下来：流传的"英伟达在加密崩盘年照常大额回购"是错的。</strong> 真实记录是它<strong>停了两个完整财年</strong>（FY2020、FY2021 回购为零，FY2022 也是零），现金留着买 Mellanox，FY2023 才恢复回购并放大到 100 亿。这是一段"留现金备并购"的记录，不是"别人恐惧我贪婪"的记录——<strong>两种叙事都会让人高估它，都不对。</strong></p>
+<p>给不到 ★★★☆☆ 的理由：三项监管程序 + 创始人真空 + 客户融资敞口 + 收入地域口径变更 + 36% 客户集中度，<strong>同时</strong>发生。这已经超出"管理层合格但有治理隐患"。</p>
+<h3 id="_8">第五关：价格是否足够便宜 ★★★☆☆</h3>
+<p><strong>当前价格（2026-11-20 收盘 125.53 美元，当日 −14.01%，成交 6.26 亿股，盘中 124.50 创 52 周新低）</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">数值</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>市值</td>
+<td style="text-align: right;">3.03 万亿美元</td>
+<td>工具验算偏差 0.01%</td>
+</tr>
+<tr>
+<td>PE (TTM)</td>
+<td style="text-align: right;"><strong>13.45 倍</strong></td>
+<td>盈利收益率 7.43%</td>
+</tr>
+<tr>
+<td>前瞻 PE（FY2027E EPS 10.52 推演）</td>
+<td style="text-align: right;">11.9 倍</td>
+<td>推演</td>
+</tr>
+<tr>
+<td>前瞻 PE（FY2028 市场一致 EPS 16.61）</td>
+<td style="text-align: right;">7.6 倍</td>
+<td>二手口径</td>
+</tr>
+<tr>
+<td>PS (TTM)</td>
+<td style="text-align: right;">8.39 倍</td>
+<td></td>
+</tr>
+<tr>
+<td>PB</td>
+<td style="text-align: right;">11.37 倍</td>
+<td>ROE 84.8% 下的 PB</td>
+</tr>
+<tr>
+<td>FCF Yield</td>
+<td style="text-align: right;"><strong>4.89%</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>股息率</td>
+<td style="text-align: right;">0.80%</td>
+<td>年化 1.00 美元</td>
+</tr>
+<tr>
+<td>EV/TTM 营业利润</td>
+<td style="text-align: right;">12.6 倍</td>
+<td>EV = 3,010 亿（扣净现金 211 亿）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>历史分位（自算：月度收盘价 + 按实际披露日对齐的 TTM 盈利，区间 2022-12 至今 n=49）</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">当前</th>
+<th>样本区间</th>
+<th style="text-align: right;">分位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PE (TTM)</td>
+<td style="text-align: right;">13.42 倍</td>
+<td>13.4 – 267.7 倍</td>
+<td style="text-align: right;"><strong>2.0%</strong></td>
+</tr>
+<tr>
+<td>PS (TTM)</td>
+<td style="text-align: right;">8.39 倍</td>
+<td>8.03 – 49.59 倍</td>
+<td style="text-align: right;"><strong>4.1%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>这是 AI 时代以来的最低值，不是英伟达历史最低值（2022 年前公司是另一门生意、另一套盈利）。<strong>低分位里有一部分是分母（盈利）正处在周期高速扩张的位置，不是纯粹的价格便宜。</strong></p>
+</blockquote>
+<p><strong>三情景估值（<code>financial_rigor.py three-scenario</code>）</strong></p>
+<p>基数：EPS 10.52 美元（<strong>推演</strong>：9M FY2027 实际净利 1,833 亿 + Q4 按指引收入 1,300 亿、毛利率 71.5%、费用约 110 亿、税率 16%–18% 推算 Q4 净利约 700 亿，全年约 2,533 亿，按 241.47 亿股摊薄）。预测期 3 年（至 FY2030）。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: right;">EPS 年增速</th>
+<th style="text-align: right;">退出 PE</th>
+<th style="text-align: right;">3 年后 EPS</th>
+<th style="text-align: right;">3 年后股价</th>
+<th style="text-align: right;">相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">+40%</td>
+<td style="text-align: right;">24 倍</td>
+<td style="text-align: right;">28.87</td>
+<td style="text-align: right;">692.8</td>
+<td style="text-align: right;">+451.9%</td>
+</tr>
+<tr>
+<td>中性</td>
+<td style="text-align: right;">+22%</td>
+<td style="text-align: right;">17 倍</td>
+<td style="text-align: right;">19.10</td>
+<td style="text-align: right;">324.7</td>
+<td style="text-align: right;">+158.7%</td>
+</tr>
+<tr>
+<td><strong>悲观</strong></td>
+<td style="text-align: right;"><strong>−15%</strong></td>
+<td style="text-align: right;"><strong>12 倍</strong></td>
+<td style="text-align: right;"><strong>6.46</strong></td>
+<td style="text-align: right;"><strong>77.5</strong></td>
+<td style="text-align: right;"><strong>−38.2%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>悲观情景加上三年累计股息约 3.7 美元，总回报约 −35%。</p>
+<p><strong>反向计算：125.53 美元买入，要挣到 10%/年（三年，不含股息）需要什么？</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: right;">三年后市场给的 PE</th>
+<th style="text-align: right;">需要的 EPS 年复合增速</th>
+<th style="text-align: right;">对应 3 年后 EPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">12 倍</td>
+<td style="text-align: right;">+9.79%</td>
+<td style="text-align: right;">13.92</td>
+</tr>
+<tr>
+<td style="text-align: right;">15 倍</td>
+<td style="text-align: right;"><strong>+1.92%</strong></td>
+<td style="text-align: right;">11.14</td>
+</tr>
+<tr>
+<td style="text-align: right;">20 倍</td>
+<td style="text-align: right;">−7.40%</td>
+<td style="text-align: right;">8.35</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>这张表说明的不是"英伟达便宜"。它说明的是：如果三年后市场还愿意给 15 倍 PE（对一家 55% 净利率、还在以 75% 增速扩张的公司，这是荒谬的低倍数），今天这个价几乎不要求任何增长。</strong></p>
+<p><strong>所以风险不在"贵"，在"分母会不会被重述"。</strong> 13.45 倍 PE 的分母是 2,263 亿 TTM 净利，其中：254.7 亿（9M）是非现金权益证券收益；810 亿应收和 397 亿存货的付款人集中在 36% 的收入和 35% 的应收上；1,180 亿担保指向单一园区单一承租方。<strong>分母的三个部分都正在被监管审视。</strong></p>
+<p><strong>"股价腰斩你敢加仓吗？"</strong> —— 这个问题今天无法回答，因为答案取决于 SEC 调查的结论：</p>
+<ul>
+<li>若调查无正式指控、无收入重述、无担保会计调整 → 跌到 63 美元是荒谬的便宜（PE 6.7 倍），且 FCF 每年 1,500 亿，三年就能赚回一半市值。</li>
+<li>若 SEC 正式指控、要求重述收入口径、或认定担保与客户融资需要确认负债 → 63 美元可能一点都不便宜，因为分母本身作废。</li>
+</ul>
+<p><strong>同一支股票、同一个价格，两种完全相反的答案。这就是"内在价值无法定值"的准确含义。</strong></p>
+<p><strong>评分 ★★★☆☆</strong>（合理估值，安全边际一般——不给 ★★★★☆ 的原因不是价格，是估值分母待定；不给 ★★☆☆☆ 的原因也不是价格，是价格已经打到 2% 分位）。</p>
+<h3 id="_9">第六关：仓位与决策纪律</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>检查</th>
+<th>回答</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>是否因为 FOMO 想买？</strong></td>
+<td><strong>部分是，而且是最容易犯的那一种。</strong> 11 月 20 日单日 −14%，"跌了 44% 总该反弹了"是市场当前最泛滥的理由。但这是<strong>连续第 7 周下跌</strong>，是 2008 年以来最长周连跌。<strong>在一个监管调查未决的标的上，用"跌多了"做买入理由，是把止损当成计划。</strong></td>
+</tr>
+<tr>
+<td><strong>是否因为别人推荐才想买？</strong></td>
+<td>不完全是。但"英伟达是 AI 时代的核心资产"是被极度广泛持有的共识——<strong>芒格教的第一件事是反过来想：这个位置上谁是那个没被别人持有的判断？</strong> 现在的共识是"跌了 47.5% 太便宜了"。</td>
+</tr>
+<tr>
+<td><strong>如果停牌 5 年你能接受吗？</strong></td>
+<td>英伟达不会停牌。但等价的问题更狠：<strong>如果 SEC 的调查导致财务报表被重述，或美国进一步限制中国业务（Q4 指引已经不含任何中国数据中心计算收入），你能持有五年不动吗？</strong> 你需要先回答这个问题，再谈仓位。</td>
+</tr>
+<tr>
+<td><strong>买入论述能否用 200 字以内写清楚？</strong></td>
+<td><strong>能，但写完会暴露尴尬。</strong> 论述里必须包含一句"我认为 SEC 的调查不会导致重大重述"——<strong>这是一句关于概率的判断，不是关于生意的事实。</strong> 价值投资者可以接受自己判断错概率，但要知道自己在判断什么。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>本关结论：不构成否决项，但要求仓位必须是"能承受调查结论为坏的"的小仓位，而不是"跌了 44% 所以抄底"的仓位。</strong> 本报告不指定个人总资产仓位（未掌握完整组合、流动性需求与最大可承受损失）。</p>
+<hr />
+<h2 id="_10">第四步：镜子测试</h2>
+<blockquote>
+<p>我以 <strong>125.53 美元</strong>买入 <strong>英伟达</strong>，因为：</p>
+<ol>
+<li><strong>这门生意的本质</strong>是卖加速计算系统，让客户用更少的工程时间完成训练和推理，从客户省下的时间和总拥有成本里赚钱；<strong>我理解它</strong>。</li>
+<li><strong>它的护城河</strong>是 CUDA 软件栈 + 集群互联 + 装机量与工程人才网络 + 供应链规模；<strong>存量很宽，增量在变窄</strong>——AWS Trainium 收入承诺同比 20 倍，TorchNeuron 已开源，客户用自研芯片单季省下 20 亿美元。</li>
+<li><strong>管理层</strong>资本配置优秀（崩盘年仍回购、股息提 25 倍、两次买能力型收购），但<strong>不值得完全信赖</strong>——创始人突然离任、董事会独立调查进行中、SEC 在查会计、DOJ 在查 129 亿收购。</li>
+<li><strong>当前价格相当于内在价值的 ____ 折</strong> —— <strong>写不出来。</strong> 内在价值取决于 SEC 调查结论，而这个结论不可预判；我能算的只有"若分母成立，13.45 倍 PE 已在 2% 分位"和"若分母不成立，任何倍数都是假的"。</li>
+<li><strong>即使我错了，下行风险不可控</strong>，因为分母（2,263 亿 TTM 净利）里含 254 亿非现金证券收益，810 亿应收与 397 亿存货的付款人集中在 36% 的收入与 35% 的应收上，而 1,050 亿担保指向单一承租方 OpenAI。</li>
+</ol>
+</blockquote>
+<h3 id="_11"><strong>镜子测试判定：❌ 未通过</strong></h3>
+<p>第 4、5 句写不完整。<strong>5 句话说不完整 = 不买。</strong> 这不是可以商量的程序。</p>
+<hr />
+<h2 id="_12">第五步：快速否决清单</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>否决项</th>
+<th>判定</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>说不清楚这家公司怎么赚钱</td>
+<td>✅ 不触发</td>
+<td>一句话说清，见第一关</td>
+</tr>
+<tr>
+<td>连续 3 年自由现金流为负</td>
+<td>✅ 不触发</td>
+<td>FCF 连续为正，FY2026 967 亿、TTM 1,487 亿</td>
+</tr>
+<tr>
+<td><strong>管理层有诚信污点</strong></td>
+<td>⚠️ <strong>最接近触发，但尚未触发</strong></td>
+<td>一手证据里<strong>没有</strong>已证实的违规：指引记录历史上可靠（抽查 FY2022 Q4 指引 74.0 亿 ±2%、实际 76.43 亿，超指引）；审计师 PwC 长期连任、内控被认定有效、<strong>无财报重述历史</strong>；<strong>10-K 与 10-Q 中无新增证券集体诉讼</strong>，2018–2019 年旧案 2021 年已被驳回且未计提或有负债；say-on-pay 反对率 6.38%，股东无治理 revolt。SEC 的调查是<strong>调查不是定性</strong>——Reuters 自己写明"调查不等于不当行为，很多以不起诉告终"，SEC 拒绝置评，公司未承认任何违规；公司自己书面确认的只有"董事会独立调查正在进行"。<strong>在 SEC 给出结论前，这一条既不能判定通过，也不能判定否决</strong>——这是本次结论停在灰色的直接原因。</td>
+</tr>
+<tr>
+<td>竞争优势正在被不可逆侵蚀</td>
+<td>✅ 不触发</td>
+<td>尚未发生：份额与毛利率仍在历史高位；ASIC 侵蚀的是<strong>增量</strong>（ACIE 段 +195% 是英伟达自己的账）</td>
+</tr>
+<tr>
+<td>需要靠"下一个接盘者出更高价"来赚钱（博傻）</td>
+<td>✅ 不触发</td>
+<td>现金流生意</td>
+</tr>
+<tr>
+<td>无法承受这笔投资归零</td>
+<td>⚠️ 需自答</td>
+<td>本报告不代替回答</td>
+</tr>
+<tr>
+<td>买入理由主要是"别人都在买"或"最近跌得多"</td>
+<td>✅ 不触发</td>
+<td>若理由是"跌了 44%"则触发</td>
+</tr>
+<tr>
+<td>无法用 200 字以内写清楚买入理由</td>
+<td>✅ 不触发</td>
+<td>能写清，但如上文所述，写清后第 4 句是空的</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>八条硬否决：零条明确触发，一条（诚信污点）处于未决状态。</strong></p>
+<hr />
+<h2 id="_13">第六步：总览对比表</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>公司</th>
+<th>Checklist 通过？</th>
+<th>能力圈</th>
+<th>好生意</th>
+<th>护城河</th>
+<th>管理层</th>
+<th>安全边际</th>
+<th>核心结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>英伟达 NVDA</td>
+<td><strong>❓ 灰色地带（4.5/6）</strong></td>
+<td>★★★★☆</td>
+<td>★★★★★</td>
+<td>★★★★☆</td>
+<td>★★☆☆☆</td>
+<td>★★★☆☆</td>
+<td>生意优秀到极致，治理与会计调查风险同时压顶；价格打到 2% 分位，但内在价值无法定值；镜子测试未通过</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="_14">第七步：最终结论与决策条件</h2>
+<h3 id="_15">❓ 灰色地带 —— 关键争议点</h3>
+<p><strong>为什么不是"通过 Checklist"：</strong></p>
+<ol>
+<li><strong>第四关 ★★☆☆☆</strong>：三个监管程序同时进行（董事会独立调查 / SEC 会计调查 / DOJ 反垄断审查），创始人突发离任无过渡安排，1,180 亿担保 + 6,500 亿承诺的表外敞口叠加在收入与应收高度集中的客户结构上。</li>
+<li><strong>第五关 ★★★☆☆</strong>：不是价格不够便宜，是<strong>估值分母本身待定</strong>。13.45 倍 PE 的分母里有 254 亿非现金证券收益、有 36% 收入与 35% 应收的集中度、有一个正在被审查的地域收入口径。</li>
+<li><strong>镜子测试第 4、5 句写不完整</strong>——按巴菲特的规矩，这就是不买。</li>
+</ol>
+<p><strong>为什么不是"未通过 Checklist"：</strong></p>
+<ol>
+<li><strong>生意本身没有触发任何一条硬否决</strong>：好生意五项指标全达标（★★★★★），自由现金流连续为正且创纪录，指引记录历史上可靠，资本配置记录优秀。</li>
+<li><strong>SEC 的调查是调查不是定性。</strong> Reuters 明确写"调查不等于不当行为，很多以不起诉告终"；SEC 拒绝置评；公司未承认任何违规。<strong>在结论出来之前就按"有污点"处理，和按"没问题"处理，都是偷懒。</strong></li>
+<li><strong>价格已经打到自己历史上的低位</strong>：PE(TTM) 13.42 倍，AI 时代以来 2.0% 分位；FCF 收益率 4.89%。</li>
+</ol>
+<p><strong>需要自己判断的两件事（不可预判，只能等）：</strong></p>
+<ol>
+<li><strong>SEC 调查的性质</strong>：是否会导致收入重述、担保与客户融资的会计调整、或正式指控。这决定分母，也决定价格。</li>
+<li><strong>AI 资本开支周期的位置</strong>：拐点方向可预测，拐点时点不可预测。五家超大规模厂商 + CoreWeave 的年度资本开支合计已从 2,673 亿升至 <strong>4,748 亿美元</strong>（SEC XBRL 独立复核：Amazon CY2025 1,318 亿、Alphabet 914 亿、微软 FY2026 1,159 亿、Meta 697 亿、Oracle FY2026 557 亿、CoreWeave 103 亿），这个斜率什么时候 flatten，只有资本开支委员会知道。</li>
+</ol>
+<p><strong>可执行的条件（价格 + 事实双条件，缺一不可）：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>条件</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>价格档</strong></td>
+<td>100–110 美元区间（对应 PE(TTM) 约 10.7–11.8 倍）。<strong>注意：125.53 已经在我上个月给出的"100–120 美元条件性关注区间"内。价格条件已满足。</strong></td>
+</tr>
+<tr>
+<td><strong>事实档（必须全部满足）</strong></td>
+<td>① SEC 调查无正式指控、无收入重述；② Q4 指引（1,300 亿收入、71%–72% 毛利率）被 Q1 实际兑现；③ 正式 CEO 已确定且技术决策权责明确；④ 核心技术与客户团队无连续离职</td>
+</tr>
+<tr>
+<td><strong>满足后</strong></td>
+<td>可考虑分批建立<strong>小仓位</strong>（不是核心仓位），因为第四节反向计算显示：只要三年后市场还认 15 倍 PE，现在的价几乎不要求增长</td>
+</tr>
+<tr>
+<td><strong>若 SEC 正式指控或财务报表被重述</strong></td>
+<td><strong>重做模型，估值分母作废，任何价格档位都不成立</strong>。这是唯一需要推翻上面全部结论的情形</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>如果是已经持有的人：</strong> 不要因为 11 月 20 日的 −14% 机械清仓，也不要因为"跌了 44%"机械加仓。先做一个动作——<strong>把你当初买入的理由重新写一遍，如果里面有一句依赖"黄仁勋还在"，那你现在持的就不是英伟达，是一段记忆。</strong></p>
+<hr />
+<h2 id="_16">关键风险（按对结论的杀伤力排序）</h2>
+<ol>
+<li><strong>SEC 会计调查升级（杀伤力最大）</strong>。可能指向收入地域口径、客户融资与担保确认、<strong>以及并购的会计处理</strong>。三个具体的抓手：①<strong>收入地域口径</strong>——公司自己披露"Revenue by geographic region is designated based on the location of the headquarters of direct customers"并加了"最终客户与发货地可能与直接客户总部所在地不同"的警示；②<strong>10-K 里"我们没有进入任何融资安排"与"我们被要求提供融资安排以支持客户和合作伙伴建设数据中心"两句话之间的张力</strong>，以及 1,180 亿担保是否应确认负债；③<strong>Groq 交易确认了 144 亿商誉 + 25 亿已开发技术无形资产，却只买到非独家许可和一部分员工</strong>——一笔许可加团队引进产生 169 亿美元商誉与无形资产的会计依据，是执法审查最典型的落点。后果不是罚款，是<strong>分母作废</strong>——TTM 2,263 亿净利里有 254 亿非现金证券收益，且 36% 的收入与 35% 的应收集中在 3 个和 2 个直接客户身上。</li>
+<li><strong>表外信用敞口</strong>。1,180 亿担保，其中 1,050 亿集中在俄亥俄州一个园区、单一承租方（OpenAI）、20 年租约，首笔 FY2029 生效。承诺表 5,180 亿（供应与产能 3,900 亿，且一个季度增加 1,110 亿），加 320 亿条件性新云承诺。公司称迄今未支付任何担保款项。</li>
+<li><strong>循环融资与客户集中</strong>。Data Center 里 "AI Clouds, Industrial &amp; Enterprise" 475 亿、同比 +195%（占数据中心 44%），是最依赖融资的付费群体；DSO 从 60 天升至 64 天，公司归因于"给投资级大客户延长账期"；Kress 已承诺以后对 AI 行业融资"far more selective"。</li>
+<li><strong>大客户自研替代</strong>。AWS Trainium 收入承诺同比 +20 倍、单季帮客户省 20 亿美元、TorchNeuron 已开源降低迁移成本、计划 2027 年底出 AWS；Google TPU 多代迭代对外出租；微软、Meta、OpenAI 均自研。侵蚀的是<strong>增量利润</strong>——行业继续增长，但英伟达拿到的份额和毛利率下降。</li>
+<li><strong>地缘与供应链</strong>。Q4 指引已明确<strong>不含任何中国数据中心计算收入</strong>；本季对华 Hopper 出货 24 亿；出口管制已造成 FY2026 45 亿过剩存货一次性计提；台积电 CoWoS 与 HBM 供应集中于台海。<strong>英伟达自己在 10-K 里承认了这条风险的长期代价</strong>："we were effectively foreclosed from competing in China's data center computing/compute market"，以及更狠的一句——"our effective foreclosure from the China market helped our competitors build larger developer and customer ecosystems"。<strong>被挤出市场反而帮竞争对手养大了生态——这是英伟达自己写下的判断，不是空方的说法。</strong> |</li>
+<li><strong>组织真空</strong>。正式 CEO 未定、独立调查进行中、DOJ 反垄断审查在跑，同时公司进入史上最大规模的客户融资与担保阶段。<strong>英伟达自己 10-K 风险因素明写客户可"develop their own solutions to replace those we are providing"。</strong></li>
+</ol>
+<hr />
+<h2 id="_17">数据来源与口径说明</h2>
+<p><strong>一手原件（SEC）</strong>
+- <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm">Q3 FY2027 财报新闻稿（8-K EX-99.1，2026-11-17）</a> — 利润表、资产负债表、现金流量表、Q4 指引、非 GAAP 调节、前瞻性声明（含独立调查表述）
+- <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm">Q3 FY2027 CFO Commentary（8-K EX-99.2）</a> — 承诺表 5,180 亿、担保表 1,180 亿、SB Energy 条款、分部收入、地域收入表、客户集中度
+- <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/supplementalfinancialinfor.htm">Q3 FY2027 补充财务信息（EX-99.3）</a> — 客户集中度与地域收入口径说明
+- <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm">CEO 变更 8-K（2026-11-11）</a>
+- <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm">SB Energy 担保 8-K（2026-08-17）</a> 与 <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/sbeoainvidia-portsrelease.htm">EX-99.1</a>
+- <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm">Hugging Face 收购 8-K（2026-09-02）</a>
+- <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm">FY2026 10-K</a>、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">Q2 FY2027 10-Q</a>、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm">Q1 FY2027 10-Q</a>
+- <a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json">SEC XBRL companyfacts（CIK 0001045810）</a> — 五年及季度财务、股本、现金流、承诺
+- <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026">Q4 FY2026 财报</a> — FY2027 Q1 指引、税率指引、Groq 投资现金流
+- <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm">2026 年代理文件 DEF 14A（2026-05-12）</a> — 黄仁勋实益持股 3.58%、PSU 考核指标、董事会结构、薪酬表、<strong>"succession" 零命中</strong>
+- <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvidiaannouncesceotransiti.htm">CEO 过渡公告 8-K EX-99.1（2026-11-12）</a> — 辞任、临时 CEO、董事长
+- <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000056/nvda-20260624.htm">2026 年年会投票结果 8-K（2026-06-24）</a> — say-on-pay 反对率、董事选举、废除超级多数表决条款
+- <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581019000023/nvda-2019x10k.htm">FY2019 / FY2020 10-K</a> — "We did not repurchase any shares during fiscal year 2020"（回购暂停的原文）
+- <a href="https://nvidianews.nvidia.com/news/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout">英伟达扩大供应链伙伴承诺（2026-11-17）</a> — Kinsus、Samsung Electro-Mechanics、Amkor 等具名伙伴与预付款
+- <a href="https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee">董事会设立国家安全与出口管制监督委员会（2026-11-17）</a>
+- <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2022">Q3 FY2022 财报（2021-11-17）</a> — FY2022 Q4 指引原始口径（74.0 亿 ±2%）</p>
+<p><strong>二手（仅用于事件与市场反应，标注为二手）</strong>
+- <a href="https://finance.yahoo.com/technology/articles/nvidia-accounting-under-sec-investigation-193823505.html">Reuters（Yahoo 转载，2026-11-21）：SEC 执法部门审查英伟达潜在会计问题</a> — 两名知情人士口径；地域收入口径变更；Kress"far more selective"；DOJ 审查 Hugging Face 收购与更广泛反垄断
+- <a href="https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html">CNBC（2026-11-20）：7 周连跌，2008 年以来最长</a> — 单日 −14%、周跌 46%、市值蒸发 2.6 万亿、Kress 称 FY2028 增长约 75%、"customers aren't going anywhere"
+- <a href="https://www.fool.com/investing/2026/11/20/nvidia-stock-plunge-wipes-out-nearly-usd500-billion-in-one-day-as-sec-reportedly-probes-its-accounting/">Motley Fool（2026-11-20）：单日蒸发 4,910 亿美元</a> — 收盘 125.53、市值 3.52 → 3.03 万亿、10 月 6 日收盘高点 239.24
+- <a href="https://www.aboutamazon.com/news/company-news/amazon-custom-chips-demand-q3-2026-earnings">Amazon（2026-10-30）：自研芯片 Q3 需求</a> — Trainium 收入承诺同比 +20 倍、Q3 客户省 20 亿美元、TorchNeuron 开源、推理占 AWS AI 收入一半以上
+- <a href="https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm">AMD Q3 2026 10-Q（2026-11-04）</a> — 总营收 13,377 百万、Data Center 分部 8,546 百万（同比 +96.8%）
+- <a href="https://www.wsj.com/business/sec-is-probing-nvidia-amid-departure-of-ceo-jensen-huang-ee7643f8">WSJ（2026-11-17）：SEC 正在调查英伟达</a>（仅标题与事实要点，经 Reuters 二手引用）
+- <a href="https://www.reuters.com/world/asia-pacific/what-we-know-about-nvidias-probe-into-ceo-jensen-huang-2026-11-09/">Reuters（2026-11-17）：黄仁勋事件调查已知信息汇总</a>（二手转述）
+- <a href="https://www.reuters.com/business/california-ag-says-nvidia-scandal-has-raised-red-flags-could-lead-probe-2026-11-17/">Reuters（2026-11-17）：加州总检察长称英伟达事件引发"红旗"、可能引发调查</a>（二手转述）
+- 行情与历史分位：Yahoo Finance 日线/月线收盘价（2021-12 至 2026-11-20）</p>
+<p><strong>口径与复核</strong>
+- 市值验算：<code>financial_rigor.py verify-market-cap --price 125.53 --shares 24,147,000,000 --reported 3.03e12</code> → 偏差 0.01%，通过
+- 估值指标：<code>financial_rigor.py verify-valuation --price 125.53 --eps 9.33 --bvps 11.043 --fcf-per-share 6.143 --dividend 1.00</code>
+- 三情景：<code>financial_rigor.py three-scenario --price 125.53 --eps 10.52 --shares 241.47 --growth 0.40 0.22 -0.15 --pe 24 17 12 --years 3</code>
+- 历史分位为自算：月度收盘价 + 按各季<strong>实际披露日</strong>对齐的 TTM 盈利，非网站现成分位
+- <strong>口径变更提示</strong>：英伟达自 FY2027Q1 起停止使用 Data Center / Gaming / ProViz / Auto / OEM 五分法，改为 Data Center（内含 Hyperscale + ACIE）+ Edge Computing 两分法并重述可比期；同时 non-GAAP 自 FY2027Q1 起不再剔除股权激励，与 FY2026 及以前不可直接比较。<strong>本报告所有同比、环比均使用重述后口径。</strong>
+- <strong>未披露项</strong>：FY2027Q3 的 10-Q 尚未提交（公司称"未来数周内"），Q3 存货明细、债务到期表、分部资产、承诺附注无一手来源；Q3 商誉增加 53.26 亿的构成无一手来源；Run:ai 收购金额在三份 10-K 中均未检索到。</p>
+<hr />
+<h2 id="_18">结语</h2>
+<p>巴菲特的第一条规则是不要亏损，第二条规则是别忘了第一条。</p>
+<p>这份 Checklist 给英伟达的是：<strong>生意本身满分，管理层这一关不通过，镜子测试不通过。</strong></p>
+<p>芒格在《穷查理宝典》里反复讲的那个反面推理，放在这里是最好用的一次——<strong>不要问"英伟达是不是好公司"，要问"在这个价格上，我是不是在做一件我无法证伪的事"。</strong> 而今天在 125.53 美元买入英伟达，本质上是在赌 SEC 的调查不会重述英伟达的分母，同时赌 AI 资本开支不会在两年内见顶，同时赌一个刚上任的临时 CEO 能守住 74% 的毛利率，同时赌 1,050 亿担保的承租方不会违约。</p>
+<p><strong>四个赌注叠在一起，每一个都不便宜。</strong></p>
+<p>同时我也不能装作看不到另一面：这门生意的财务表现是本清单能给出的最高评价，资本开支只占收入 2.8%，五年自由现金流从 81 亿涨到 1,487 亿，回购授权余额 2,273 亿，股息一年提了 25 倍，而股价打到了 AI 时代以来的 2% 分位。<strong>如果调查干净地过去、CEO 顺利接任、Q4 指引兑现，这个价格是不讲道理的。</strong></p>
+<p>所以结论不是"买"或"不买"，是<strong>"等"。</strong></p>
+<p><strong>等调查有结论，等正式 CEO 到位，等价格再给出一点余地。</strong> 段永平的原话是"不为清单而买"——<strong>这一份清单现在给出的答案，恰恰是"还没到"。</strong></p>
+<p><em>本报告用于学习与决策讨论。数据验证只证明来源与算术，不证明未来预测或买入结论正确。</em></p></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E5%85%A5%E5%89%8D%20Checklist%EF%BC%9A%E8%8B%B1%E4%BC%9F%E8%BE%BE%EF%BC%88NVDA%EF%BC%89&amp;ticker=%E8%8B%B1%E4%BC%9F%E8%BE%BE&amp;source=reports%2F%E8%8B%B1%E4%BC%9F%E8%BE%BE%2F%E5%B7%B4%E8%8F%B2%E7%89%B9Checklist-%E8%8B%B1%E4%BC%9F%E8%BE%BE-20261121.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2F30de021c572d.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/217ca3de74b3.html">英伟达十年后最差情景：路径、利润与检验指标</a><div class="meta">2026-11-21 · 研究</div></li><li><a href="../r/c0bbc62025d3.html">英伟达：黄仁勋事件、换帅风险与买入价格</a><div class="meta">2026-11-12 · 研究</div></li><li><a href="../r/5f2ae49af9a0.html">英伟达（NVDA）独立投资研究：英伟达仍拥有最强的AI计算系统优势之一，但不能再按完全不承担客户资本风险的供应商估值</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/ca12b2c8a684.html">英伟达（NVIDIA / NASDAQ: NVDA）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/fc0dae7fdd42.html">英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</a><div class="meta">2026-08-28 · 财报</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">结论先行</a></li>
+<li><a href="#_2">第一步：解析输入与研究偏见预警</a><ul>
+<li><a href="#a">信息丰富度评级：A 级</a></li>
+</ul>
+</li>
+<li><a href="#_3">第二步：核心数据底稿</a><ul>
+<li><a href="#21-gaapsec-xbrl-companyfacts-10-k">2.1 五年财务（GAAP，一手：SEC XBRL companyfacts + 各年 10-K）</a></li>
+<li><a href="#22">2.2 现金流与资本配置</a></li>
+<li><a href="#23-fy2027-2026-10-25">2.3 FY2027 第三财季（截至 2026-10-25）与下一季指引</a></li>
+<li><a href="#24">2.4 三处必须扣掉的"水分"</a></li>
+<li><a href="#25">2.5 表外规模：这家公司已经不只是卖芯片的</a></li>
+<li><a href="#26">2.6 客户集中度</a></li>
+</ul>
+</li>
+<li><a href="#checklist">第三步：六关 Checklist</a><ul>
+<li><a href="#_4">第一关：我能理解这门生意吗 ★★★★☆</a></li>
+<li><a href="#_5">第二关：这是一门好生意吗 ★★★★★</a></li>
+<li><a href="#_6">第三关：护城河够不够深 ★★★★☆</a></li>
+<li><a href="#_7">第四关：管理层是否值得信任 ★★☆☆☆</a></li>
+<li><a href="#_8">第五关：价格是否足够便宜 ★★★☆☆</a></li>
+<li><a href="#_9">第六关：仓位与决策纪律</a></li>
+</ul>
+</li>
+<li><a href="#_10">第四步：镜子测试</a><ul>
+<li><a href="#_11">镜子测试判定：❌ 未通过</a></li>
+</ul>
+</li>
+<li><a href="#_12">第五步：快速否决清单</a></li>
+<li><a href="#_13">第六步：总览对比表</a></li>
+<li><a href="#_14">第七步：最终结论与决策条件</a><ul>
+<li><a href="#_15">❓ 灰色地带 —— 关键争议点</a></li>
+</ul>
+</li>
+<li><a href="#_16">关键风险（按对结论的杀伤力排序）</a></li>
+<li><a href="#_17">数据来源与口径说明</a></li>
+<li><a href="#_18">结语</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-11-21 02:29 UTC</footer></body></html>
