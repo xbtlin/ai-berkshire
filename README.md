@@ -677,7 +677,7 @@ REM 可选：安装 Codex slash prompts
 | 2026-11-21 | [MiniMax 十年后最差情景：资本链、单位经济、应用层三条链同时走坏](reports/MINIMAX/MiniMax十年最差情景-20261121.md) | MiniMax |
 | 2026-11-20 | [拼多多2026Q3财报精读：利润超预期来自降费，收入零增长才是核心问题](reports/拼多多/拼多多-earnings-2026Q3-精读-20261120.md) | 拼多多 |
 | 2026-11-20 | [MiniMax 投资研究：102.40 港元买入，十年后需要赚多少钱？](reports/MINIMAX/MiniMax研究报告-20261120.md) | MiniMax |
-| 2026-11-19 | [快手2026Q3财报精读：主业收缩，自由现金流仍告负](reports/快手/快手-earnings-2026Q3.md) | 快手 |
+| 2026-11-19 | [快手2026Q3财报精读：广告和电商同步收缩，利润几乎归零，自由现金流仍为负](reports/快手/快手-earnings-2026Q3.md) | 快手 |
 
 <!-- REPORTS-INDEX:END -->
 
