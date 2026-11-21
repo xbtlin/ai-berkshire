@@ -193,7 +193,7 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 | Skill | 用途 | 适合场景 |
 |-------|------|---------|
 | [`/investment-research`](skills/investment-research.md) | 四大师综合深度分析 | 对一家上市公司进行全方位投资研究 |
-| [`/investment-research-lite`](skills/investment-research-lite.md) | 精简版深度分析 | 流程同上、规则合并，token 约为原版一半 |
+| [`/investment-research-lite`](skills/investment-research-lite.md) | 四大师综合深度分析（精简版） | 流程同上、规则合并，token 约为原版一半 |
 | [`/company-valuation`](skills/company-valuation.md) | 公司内在价值与估值复核 | 腾讯等重点公司及美股七姐妹：现金流、SOTP、反向估值与可复算验证 |
 | [`/investment-team`](skills/investment-team.md) | 多Agent并行投研团队 | 4个Agent并行研究，最快速、最全面 |
 | [`/management-deep-dive`](skills/management-deep-dive.md) | 管理层纵深研究 | "买股票就是买人"——当管理层是核心变量时深挖 |
