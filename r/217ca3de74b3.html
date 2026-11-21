@@ -1,0 +1,570 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfbf9"><title>英伟达十年后最差情景：路径、利润与检验指标 · AI Berkshire 研究阅读</title><link rel="stylesheet" href="../style.css"><link rel="alternate" type="application/rss+xml" title="AI Berkshire 研究阅读" href="../feed.xml"><script>
+(function(){var h=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var t=g('aib-theme'),s=g('aib-size');
+if(t&&t!=='auto')h.setAttribute('data-theme',t);if(s)h.setAttribute('data-size',s);
+var sz=['s1','','s3','s4'];
+window.aibSize=function(d){var c=h.getAttribute('data-size')||'',i=sz.indexOf(c);i=Math.max(0,Math.min(3,i+d));
+if(sz[i])h.setAttribute('data-size',sz[i]);else h.removeAttribute('data-size');try{localStorage.setItem('aib-size',sz[i])}catch(e){}};
+window.aibTheme=function(v){if(v==='auto')h.removeAttribute('data-theme');else h.setAttribute('data-theme',v);
+try{localStorage.setItem('aib-theme',v)}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var sel=document.getElementById('theme');
+if(sel)sel.value=h.getAttribute('data-theme')||'auto';var bar=document.querySelector('.progress');
+if(bar){var f=function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;bar.style.width=(m>0?d.scrollTop/m*100:0)+'%'};
+addEventListener('scroll',f,{passive:true});f()}});})();
+
+(function(){var K='aib-read',get=function(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}},
+put=function(d){try{localStorage.setItem(K,JSON.stringify(d))}catch(e){}};
+document.addEventListener('DOMContentLoaded',function(){var b=document.body,root=b.getAttribute('data-root')||'',page=b.getAttribute('data-page');
+var d=get();
+if(page){var rec=d[page]||{p:0},el=document.documentElement;
+ if(rec.p>0.05&&rec.p<0.95){var n=document.createElement('div');n.className='resume';
+  n.innerHTML='上次读到 '+Math.round(rec.p*100)+'% <button>继续阅读</button><span class="x">×</span>';
+  n.querySelector('button').onclick=function(){scrollTo(0,rec.p*(el.scrollHeight-el.clientHeight));n.remove()};
+  n.querySelector('.x').onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){n.remove()},15000)}
+ var t=null;addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var m=el.scrollHeight-el.clientHeight;
+  var p=m>0?el.scrollTop/m:1,cur=get();var r=cur[page]||{};r.p=p;r.t=Date.now();r.title=b.getAttribute('data-title');
+  if(p>0.9)r.done=1;cur[page]=r;put(cur)},400)},{passive:true});
+ var r0=d[page]||{};r0.t=Date.now();r0.title=b.getAttribute('data-title');if(r0.p==null)r0.p=0;d[page]=r0;put(d)}
+var links=document.querySelectorAll('ul.list li>a');for(var i=0;i<links.length;i++){var h=links[i].getAttribute('href')||'';
+ var key=h.replace(/^(\.\.\/)+/,'');var r=d[key];if(r){var m=links[i].parentNode.querySelector('.meta');
+ if(m){m.insertAdjacentHTML('beforeend',' · <span class="rd">'+(r.done?'已读':'读到 '+Math.round((r.p||0)*100)+'%')+'</span>')}
+ if(r.done)links[i].parentNode.classList.add('done')}}
+var box=document.getElementById('recent-read');if(box){var arr=Object.keys(d).map(function(k){return{k:k,r:d[k]}})
+ .filter(function(x){return x.r.title}).sort(function(a,b){return b.r.t-a.r.t}).slice(0,6);
+ if(arr.length){box.innerHTML='<h2>最近读过</h2><ul class="list">'+arr.map(function(x){var e=document.createElement('a');e.textContent=x.r.title;
+  return '<li><a href="'+root+x.k+'">'+e.innerHTML+'</a><div class="meta">'+(x.r.done?'已读完':'读到 '+Math.round((x.r.p||0)*100)+'%')+'</div></li>'}).join('')+'</ul>'}}
+});})();
+</script><script>(function(){var skip=false;try{if(location.hash==='#notrack'){localStorage.setItem('skipgc','1');alert('本设备的访问将不再计入统计')}if(location.hash==='#track'){localStorage.removeItem('skipgc')}skip=!!localStorage.getItem('skipgc')}catch(e){}if(skip)return;window._hmt=window._hmt||[];var b=document.createElement('script');b.async=true;b.src='https://hm.baidu.com/hm.js?fb8b18770c2f12915beaa9539754eb5c';document.head.appendChild(b);})();</script></head><body data-root="../" data-page="r/217ca3de74b3.html" data-title="英伟达十年后最差情景：路径、利润与检验指标"><div class="progress"></div><header class="top"><div class="bar"><a class="brand" href="../index.html">AI Berkshire</a><nav class="main"><a href="../index.html">首页</a><a href="../companies/index.html">公司</a><a href="../topics/index.html">专题</a><a href="../dates/index.html">时间</a><a href="../types/index.html">类型</a><a href="../wechat/index.html">公众号</a><a href="../search.html">搜索</a><a href="../about.html">关于</a></nav><div class="tools"><button onclick="aibSize(-1)" title="缩小字号">A−</button><button onclick="aibSize(1)" title="放大字号">A+</button><select id="theme" onchange="aibTheme(this.value)" title="外观"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></div></div></header><main class="doc"><div class="crumb"><a href="../index.html">首页</a> › <a href="../companies/英伟达/index.html">英伟达</a></div><div class="layout"><div><h1>英伟达十年后最差情景：路径、利润与检验指标</h1><div class="meta"><a href="../companies/英伟达/index.html">英伟达</a> ｜ 2026-11-21 · 研究 ｜ <a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E5%8D%81%E5%B9%B4%E6%9C%80%E5%B7%AE%E6%83%85%E6%99%AF-20261121.md">GitHub 原文</a></div><details class="toc"><summary>目录</summary><div class="toc">
+<ul>
+<li><a href="#_1">一、最差情景的起点：三个已经发生的变化</a></li>
+<li><a href="#_2">二、最差情景的路径：五个环节必须同时发生</a><ul>
+<li><a href="#ai">环节一：AI 算力资本开支周期见顶并进入多年下行</a></li>
+<li><a href="#_3">环节二：大客户自研芯片拿走大部分设备价值</a></li>
+<li><a href="#75-55">环节三：定价权崩塌，毛利率从 75% 降到 55% 附近</a></li>
+<li><a href="#_4">环节四：其他收入萎缩</a></li>
+<li><a href="#_5">环节五：资产负债表在周期下行中成为放大器</a></li>
+</ul>
+</li>
+<li><a href="#_6">三、最坏的部分不是低利润，是中途的一次巨亏</a></li>
+<li><a href="#_7">四、最差情景下的收入与利润：计算过程</a></li>
+<li><a href="#2036">五、反向估值：现价隐含了多少 2036 年利润</a></li>
+<li><a href="#_8">六、关键检验指标与观察时间点</a></li>
+<li><a href="#_9">七、概率评估</a></li>
+<li><a href="#_10">八、数据口径与复核记录</a></li>
+</ul>
+</div>
+</details><article><p>研究日与信息截止日：2026-11-21。最新已披露财务期为 FY2027 第三财季，截止 2026-10-25，业绩于 2026-11-17 发布。金额除另注明外均为美元。本文回答"十年后最差情况是什么、利润是多少"，不做当日股价预测，不给出买卖价格。</p>
+<p><strong>结论先说：最差情景下，2036 年英伟达常态年 GAAP 净利润约 96 亿美元（1200 亿美元收入 × 8% 净利率），相当于当前 TTM 净利润 2262.6 亿美元的 4.2%。</strong> 这不是本文的悲观预测，而是一条需要三个条件同时成立才会发生的路径：AI 算力资本开支在 2028-2030 年见顶回落、大客户自研芯片与国产替代合计拿走 85% 的设备价值、英伟达定价权同时崩塌。更坏的情况不是利润变低，而是<strong>路径中途出现单年巨亏</strong>：SB Energy 担保首笔在 FY2029 生效，若承租方违约，英伟达需兑付最高 1050 亿美元，最差情景年份叠加后当年净亏损可达 954 亿美元。</p>
+<p>本文与本仓库 2026-09-07 的<a href="../r/c01444c73652.html">商业模式与十年利润研究</a>口径对齐：那次研究的"悲观情景"净利 875 亿美元不是最差情况，那份报告自己写明"供应中断、重大信用损失或技术失误可以造成更差结果"。本文补上的是那次研究尚不具备的三类新事实：创始人已离任、资产负债表已承担 1180 亿美元担保与 5180 亿美元承诺、一致预期路径已被打到 FY2028 收入 7254 亿美元。</p>
+<p><strong>信息丰富度评级为 A。</strong> 本文全部关键数字来自英伟达 SEC 文件与卖方/第三方原文，可回溯核验；十年竞争格局与概率评估无法如此验证。事实与推断分开标注。本文用于学习与研究。</p>
+<hr />
+<h2 id="_1">一、最差情景的起点：三个已经发生的变化</h2>
+<p>讨论 2036 年之前，先确认 2026 年 11 月的起点是什么。这一起点与九个月前已经不同。</p>
+<p><strong>第一，创始人已离任。</strong> 英伟达于 2026-11-11 提交 8-K 披露 CEO 变更：黄仁勋辞任执行董事长与 CEO，David W. Kress 出任临时 CEO，James C. Jones 任董事长，CEO 遴选程序启动。这不是本文用来推导利润的变量本身，但它改变了一个此前默认成立的前提——公司此前十五年的产品判断与执行节奏高度绑定于单一创始人。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm">SEC 8-K 2026-11-11</a></p>
+<p><strong>第二，毛利率首次出现季度性下滑。</strong> FY2027 第三财季 GAAP 毛利率 74.82%，第四财季指引 71%-72%，中值较上季实际低 3.32 个百分点。公司归因于 Rubin 爬坡期的产品组合。公司同时表示指引假设"不包含任何来自中国的数据中心计算收入"。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm">SEC 8-K EX-99.1</a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>FY2027 第三财季（截止 2026-10-25）</th>
+<th style="text-align: right;">数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">1,158.44 亿美元</td>
+</tr>
+<tr>
+<td>GAAP 毛利率</td>
+<td style="text-align: right;">74.82%</td>
+</tr>
+<tr>
+<td>GAAP 营业利润</td>
+<td style="text-align: right;">775.20 亿美元</td>
+</tr>
+<tr>
+<td>GAAP 净利润</td>
+<td style="text-align: right;">652.87 亿美元</td>
+</tr>
+<tr>
+<td>净利率</td>
+<td style="text-align: right;">56.37%</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">483 亿美元</td>
+</tr>
+<tr>
+<td>应收账款 / 周转天数</td>
+<td style="text-align: right;">810 亿美元 / 64 天（上季 60 天）</td>
+</tr>
+<tr>
+<td>存货</td>
+<td style="text-align: right;">397 亿美元（上季 316 亿）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>第三，资产负债表已经从"轻资产"变成"信用支持方"。</strong> 这是本文最差情景的承重部分，下面单独一节展开。</p>
+<p>按 2026-11-19 收盘价 145.98 美元、241.5 亿股计算，市值 3.53 万亿美元，扣除净现金 211 亿美元后企业价值 3.50 万亿美元；对应 TTM 市盈率 15.58 倍、市销率 9.74 倍。同期一致预期为 FY2027 收入 4239.3 亿美元、FY2028 收入 7253.8 亿美元、FY2028 EPS 16.61 美元，据此现价对应 FY2028 一致预期市盈率 8.77 倍。<a href="https://stockanalysis.com/stocks/nvda/statistics/">StockAnalysis 统计页</a>、<a href="https://stockanalysis.com/stocks/nvda/forecast/">StockAnalysis 预测页</a></p>
+<hr />
+<h2 id="_2">二、最差情景的路径：五个环节必须同时发生</h2>
+<p>本文把最差情景拆成五个环节，每个环节给出可核验的当前证据与失败判据。只有五个环节同时成立，2036 年 96 亿美元的结果才成立。</p>
+<h3 id="ai">环节一：AI 算力资本开支周期见顶并进入多年下行</h3>
+<p><strong>当前证据（需求侧仍在扩张，方向与最差情景相反）：</strong> 按 SEC XBRL 原始数据，五家主要买方的年度资本开支合计从 2673 亿美元升至 4748 亿美元，同比 +77.6%。其中 Amazon CY2025 资本开支 1318 亿美元、Alphabet CY2025 914 亿美元、微软 FY2026（截至 2026-06-30）1159 亿美元、Meta CY2025 697 亿美元、Oracle FY2026 557 亿美元、CoreWeave CY2025 103 亿美元。FY2027 前三季英伟达收入 2936.81 亿美元，第四财季指引 1300 亿美元，合计 4237 亿。</p>
+<p><strong>但已经出现减速的财务信号：</strong> 2026-10-28 财报中，微软把 2026 财年资本开支指引从 1750 亿美元下调至 1700 亿美元，Alphabet 维持 1950-2050 亿美元区间，两者实际资本开支均低于分析师预期；Alphabet 当季自由现金流为负，超过 90 亿美元。<a href="https://www.cnbc.com/2026/10/29/microsoft-google-ai-capex-estimates.html">CNBC 2026-10-29</a></p>
+<p><strong>最差情景要求：</strong> 这条曲线在 2028-2030 年见顶，随后进入多年下行。到 2036 年，全球加速计算设备年度采购价值池回到 6000 亿美元——只比 IDC 测算的 2026 年全球 AI 基础设施硬件开支 4970 亿美元高 21%，相当于高盛口径 2026 年五家超大规模厂商 AI 基建开支 8000 亿美元的 75%。这三条基准都停在 2026 年，最差情景要求十年后行业规模与今天相当。这不是"AI 需求消失"，是"AI 建设周期重演 1990 年代末美国电信资本开支过热的形态"。</p>
+<p><strong>这条路径最有力的支持证据是回报算术本身。</strong> 高盛 2026-09-25 研报（作者团队以 Ryan Hammond 为首）测算：五家美国超大规模厂商 2026 年 AI 基建资本开支约 8000 亿美元，而 AI 云收入仅比 AI 前趋势线高出约 700 亿美元，每年形成约 2300 亿美元缺口，需要约 3000 亿美元年收入才能打平覆盖全部运行期折旧；2027 年预计升至 1.2 万亿美元，2028 年基准情景增速骤降至 12%、总额约 1.4 万亿美元。同一研报还指出，要让整个 AI 生态获得稳健回报，用户最终需要每年在 AI 软件上支出约 1 万亿美元。<a href="https://www.techtimes.com/articles/328112/20260928/goldman-sachs-quantifies-ais-230b-annual-gap-800b-spent-300b-needed-break-even.htm">TechTimes 引述高盛研报</a></p>
+<p><strong>反证（这是本环节最难的部分）：</strong> 微软 CFO 在同一场电话会上明确表示 2027 年上半年资本开支将加速，原因是零部件成本上升与 GPU 交付延迟；超大规模厂商明年资本开支合计将超过 1 万亿美元并继续上升。Gartner 测算 2026 年全球 AI 投资总额约 2.67 万亿美元，IDC 测算 2026 年全球 AI 基础设施硬件开支约 4970 亿美元、同比约 +53%。资本开支由少数几家的投资决策驱动，不是消费者需求驱动，因此可以在任何时点被五家公司共同下调，也可以同样快速上调。这正是本环节最难预测的原因：<strong>拐点方向可预测，拐点时点不可预测。</strong></p>
+<h3 id="_3">环节二：大客户自研芯片拿走大部分设备价值</h3>
+<p><strong>当前证据：</strong> 微软 FY2026 资本开支中相当部分是自研加速器；Alphabet 已有自研 TPU 并对外通过云出租；Meta、亚马逊、OpenAI、Anthropic 均在推进自研芯片。第三方工程材料已经量化了迁移成本下降的速度：Meta 在 2026-04-02 的官方工程文章中报告，其 KernelEvolve 智能体已在 NVIDIA、AMD、MTIA 和 CPU 上做算子优化，把部分数周的专家工作缩短到数小时；Meta 自报的特定广告模型，在 MTIA 上训练吞吐提升超过 25%，在 NVIDIA 上推理吞吐提升超过 60%。这说明异构适配成本确实在下降，但同时说明英伟达硬件本身也从中受益——它不是"英伟达被替代"的直接证据。<a href="https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/">Meta 工程博客</a></p>
+<p><strong>最差情景要求：</strong> 到 2036 年，自研 ASIC、AMD 以及国产替代方案合计拿走设备价值池的 85%，英伟达价值份额降到 15%。这是本模型最脆弱的假设，也是最该被质疑的假设：它要求"异构开发成本下降到足够低"这件事持续十年，并且大客户愿意为此承担全部迁移成本，包括失去英伟达在整机系统、网络与软件上的协同。历史上大客户自研芯片的替代率从未稳定超过三成，因为迁移的不只是代码，还有运维、故障恢复与供货确定性。</p>
+<p><strong>失败判据：</strong> 若到 2029 年，超大规模厂商的加速器采购仍以英伟达方案为主（观察供应商资本开支结构中的采购对象披露、跨硬件运行的公开实测成本差、以及英伟达自身披露的前五大客户集中度变化），本环节应判定为不成立。</p>
+<h3 id="75-55">环节三：定价权崩塌，毛利率从 75% 降到 55% 附近</h3>
+<p><strong>当前证据：</strong> 毛利率已出现季度性下滑（74.82% → 指引中值 71.5%），公司同时在 Q4 指引中不计中国数据中心计算收入。市场对英伟达的定价压力已经体现在评级结构上：强烈买入家数从 10 月的 49 家降到 11 月的 34 家，持有评级从 2 家升到 16 家。</p>
+<p><strong>最差情景要求：</strong> 到 2036 年，在份额已被压到 15% 的同时，定价权进一步崩塌——毛利率从当前 75% 降到 55% 附近，净利率从 56% 压缩到 8%。净利率 8% 这个数字有参照系：英伟达 FY2022 净利率 36.2%、FY2023 净利率 16.2%（毛利率 56.9%），FY2023 是过去五年最差的一年。把净利率压到 8% 意味着连续多年处于比 FY2023 更差的盈利状态——在收入规模仍大于 FY2022 的情况下。</p>
+<h3 id="_4">环节四：其他收入萎缩</h3>
+<p>游戏、专业可视化、汽车与独立软件合计（不含数据中心）：本文假设 2036 年为 300 亿美元，仅相当于 FY2026 数据中心单一板块 1937 亿美元的 15%。依据是 FY2026 分部结构（数据中心 1937 亿、游戏 160 亿、专业可视化 32 亿、汽车 23 亿、其他 62 亿）显示非数据中心业务基数很小，且汽车业务多年未有实质放量。</p>
+<h3 id="_5">环节五：资产负债表在周期下行中成为放大器</h3>
+<p>见下一节。</p>
+<hr />
+<h2 id="_6">三、最坏的部分不是低利润，是中途的一次巨亏</h2>
+<p>英伟达在三季报中披露的承诺与担保，是本轮周期与前几轮最重要的差别。</p>
+<p><strong>担保（最高毛敞口 1180 亿美元）：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SB Energy Corp. 信用支持担保</td>
+<td style="text-align: right;">1,050 亿美元</td>
+</tr>
+<tr>
+<td>土地、电力与外壳担保（新云）</td>
+<td style="text-align: right;">35 亿美元</td>
+</tr>
+<tr>
+<td>电力与系统信用支持担保</td>
+<td style="text-align: right;">95 亿美元</td>
+</tr>
+<tr>
+<td>合计</td>
+<td style="text-align: right;">1,180 亿美元</td>
+</tr>
+</tbody>
+</table></div>
+<p>关键的机制细节：公司于 2026 年 8 月为 SB Energy 位于俄亥俄州 PORTS-Pike 科技园区的土地、电力与外壳建设提供信用支持担保，覆盖 9 栋建筑、约 4.25 GW 容量，这些建筑将独家承载英伟达基础设施，并按 20 年租约<strong>只租赁给 OpenAI</strong>。担保分阶段生效，每栋建筑竣工投运时生效一笔，<strong>首笔预计在 FY2029</strong>。敞口随建筑投运逐步累积，最高 1050 亿美元，然后随 OpenAI 支付租金在 20 年租期内递减。公司另有对额外约 3.8 GW 的阶段性信用支持选择权。截至 2026-10-25，公司尚未就担保支付过任何款项。</p>
+<p><strong>其他承诺（合计 5180 亿美元）：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">金额</th>
+<th>分财年分布中值得注意的点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>供应与产能承诺</td>
+<td style="text-align: right;">3,900 亿美元</td>
+<td>FY2028 单年 2030 亿美元；主要为多年期存储采购，上季为 2790 亿</td>
+</tr>
+<tr>
+<td>云服务协议</td>
+<td style="text-align: right;">280 亿美元</td>
+<td>—</td>
+</tr>
+<tr>
+<td>尚未起租的数据中心租赁</td>
+<td style="text-align: right;">740 亿美元</td>
+<td>FY2032 及以后 630 亿美元；租期最长 20 年，Q4 FY2027 至 FY2033 之间起租</td>
+</tr>
+<tr>
+<td>股权投资承诺</td>
+<td style="text-align: right;">200 亿美元</td>
+<td>—</td>
+</tr>
+<tr>
+<td>资本开支承诺</td>
+<td style="text-align: right;">60 亿美元</td>
+<td>—</td>
+</tr>
+<tr>
+<td>合计</td>
+<td style="text-align: right;">5,180 亿美元</td>
+<td>FY2028 单年 2220 亿美元</td>
+</tr>
+<tr>
+<td>另有新云协议额外承诺</td>
+<td style="text-align: right;">320 亿美元</td>
+<td>需新云先完成融资并交付验收才生效</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>这些数字的量级：</strong> 担保 1180 亿加承诺表 5180 亿合计 6360 亿美元，相当于当前市值的 18.0%；若再计入表外的新云协议额外承诺 320 亿，为 6680 亿美元，占 19.0%。单看供应承诺 3900 亿与担保 1180 亿，两项合计已相当于市值的 14.4%。</p>
+<p><strong>最差情景的尾部路径：</strong></p>
+<pre><code>AI 资本开支 2028-2030 见顶回落
+        ↓
+新云客户融资链断裂（无投资级评级，贷款方退出市场）
+        ↓
+SB Energy 园区 20 年租约承租方违约
+        ↓
+英伟达 FY2029 起需兑付担保（首笔生效年）
+        ↓
+若当年收入仍处高位：4237 亿收入 × 8% 净利率 = 339 亿净利 - 1050 亿兑付 = 净亏损 711 亿美元
+若当年已是低利润年：1200 亿收入 × 8% = 96 亿净利 - 1050 亿兑付 = 净亏损 954 亿美元
+</code></pre>
+<p>同一时期还需要计提的减值：应收账款 810 亿、存货 397 亿、非上市股权投资 655.28 亿，三项合计 1862 亿美元。若在最差情景年份同时全额计提，加上担保兑付，总冲击 2912 亿美元，相当于 FY2027 测算净利 2526 亿美元的 1.15 倍、当前市值的 8.26%，也相当于最差情景年份全部收入 1200 亿美元的 2.43 倍。</p>
+<p><strong>这是本报告要传达的核心判断：最差情景的风险不在于 2036 年少赚多少，在于中间年份的资产负债表是否会被兑现掉。</strong> 一家 2036 年净利 96 亿美元、估值 15 倍的英伟达，其股权价值现值约 555 亿美元（9.6 × 15 / 1.1^10），是当前市值的 1.57%。但如果中间某年一次性亏掉 954 亿美元并被迫以低价融资或大幅稀释，股东承担的损失远大于这条终值曲线所显示的。</p>
+<p><strong>融资链条上的第一块可核验裂痕已经出现：</strong> 新云公司需要数十亿美元外部资本支撑扩张却没有投资级评级，在利率上升与债务担忧下贷款方正在退出市场；Gartner 分析师向 CNBC 表示，到 2030 年 80% 的新云公司将被并购或彻底停止运营。英伟达投资的澳大利亚新云公司 Firmus 在宣称拥有 Meta 和 OpenAI 大额使用承诺的情况下，本月撤回了上市计划。<a href="https://www.cnbc.com/2026/10/29/microsoft-google-ai-capex-estimates.html">CNBC 2026-10-29</a></p>
+<p>CoreWeave 的财务数据把这条链条的脆弱性量化得最清楚：收入从 2022 年 1600 万美元涨到 2025 年 51.3 亿美元，净亏损从 3100 万美元扩大到 11.7 亿美元；2025 年利息支出 12.3 亿美元，占当年收入 24.0%，2026 年上半年利息支出 11.8 亿美元；高级无担保债券收益率 14.1%-15.6%，债券以每 1 美元面值约 0.80 美元交易，首批高级债 2030 年开始到期。51 座数据中心、超过 25 万块英伟达 GPU。<a href="https://www.fool.com/investing/2026/11/03/coreweaves-bond-yield-is-a-warning-for-ai-debt/">The Motley Fool 2026-11-03</a></p>
+<p>这一层正是英伟达敞口的传导机制：英伟达卖货给新云，新云用债务融资建数据中心，债务的还款来源是新云的客户——最终是那些还在用 AI 的企业。</p>
+<hr />
+<h2 id="_7">四、最差情景下的收入与利润：计算过程</h2>
+<p>模型沿用 2026-09-07 报告的口径：</p>
+<p><code>常态净利润 =（年度设备价值池 × 英伟达价值份额 + 其他收入）× 常态净利率</code></p>
+<p><strong>下表除标注外全部为作者情景假设，不是公司指引、券商一致预期或已验证的未来事实。</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>参数及结果</th>
+<th style="text-align: right;">最差</th>
+<th style="text-align: right;">次差</th>
+<th style="text-align: right;">基准</th>
+<th style="text-align: right;">乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>年度设备价值池</td>
+<td style="text-align: right;">6,000</td>
+<td style="text-align: right;">9,000</td>
+<td style="text-align: right;">20,000</td>
+<td style="text-align: right;">30,000</td>
+</tr>
+<tr>
+<td>英伟达价值份额</td>
+<td style="text-align: right;">15%</td>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">45%</td>
+<td style="text-align: right;">60%</td>
+</tr>
+<tr>
+<td>其他收入</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: right;">2,000</td>
+</tr>
+<tr>
+<td>英伟达总收入（计算）</td>
+<td style="text-align: right;">1,200</td>
+<td style="text-align: right;">2,300</td>
+<td style="text-align: right;">10,000</td>
+<td style="text-align: right;">20,000</td>
+</tr>
+<tr>
+<td>常态净利率</td>
+<td style="text-align: right;">8%</td>
+<td style="text-align: right;">12%</td>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">45%</td>
+</tr>
+<tr>
+<td><strong>年度常态净利润（计算）</strong></td>
+<td style="text-align: right;"><strong>96</strong></td>
+<td style="text-align: right;"><strong>276</strong></td>
+<td style="text-align: right;"><strong>4,000</strong></td>
+<td style="text-align: right;"><strong>9,000</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>单位为亿美元。基准与乐观两列与 2026-09-07 报告完全一致，便于对照；最差与次差两列是本文新增。</p>
+<p><strong>最差情景的具体算式：</strong></p>
+<pre><code>收入 = 6,000 × 15% + 300 = 1,200 亿美元
+净利 = 1,200 × 8% = 96 亿美元
+</code></pre>
+<p><strong>几个比例参照，帮助判断 96 亿美元是什么量级：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>对照项</th>
+<th style="text-align: right;">数值</th>
+<th style="text-align: right;">最差情景是其多少</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前 TTM 净利润（2262.6 亿美元）</td>
+<td style="text-align: right;">2,262.6</td>
+<td style="text-align: right;">4.2%</td>
+</tr>
+<tr>
+<td>FY2027 测算净利（2526 亿）</td>
+<td style="text-align: right;">2,525.6</td>
+<td style="text-align: right;">3.8%</td>
+</tr>
+<tr>
+<td>2026-09-07 报告悲观情景（875 亿）</td>
+<td style="text-align: right;">875</td>
+<td style="text-align: right;">11.0%</td>
+</tr>
+<tr>
+<td>FY2023 净利（436.8 亿）</td>
+<td style="text-align: right;">436.8</td>
+<td style="text-align: right;">22.0%</td>
+</tr>
+<tr>
+<td>最差情景收入 vs FY2027 收入</td>
+<td style="text-align: right;">1,200 / 4,236.8</td>
+<td style="text-align: right;">28.3%</td>
+</tr>
+</tbody>
+</table></div>
+<p>最差情景的收入水平低于英伟达 FY2025 全年（1,304.97 亿美元），净利水平仅为 FY2024 全年（297.6 亿美元）的三分之一。换句话说：<strong>最差情景意味着英伟达用十年时间，退回到 2024-2025 年的规模，同时盈利能力比 2023 年最差的一年还差。</strong></p>
+<p><strong>这不是一个"AI 失败"的情景。</strong> 它假设 AI 依然改变世界，只是英伟达不再是收租的人。这个区分很重要：如果 AI 失败导致算力需求消失，市场规模缩小，英伟达会与全行业一起受伤；如果 AI 成功但英伟达被替代，那是份额问题，后者在十年维度上更可能发生。</p>
+<p><strong>固定基准市场与其他收入，只改变竞争条件（沿用 2026-09-07 报告）：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>条件</th>
+<th style="text-align: right;">年度常态利润（亿美元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基准条件</td>
+<td style="text-align: right;">4,000</td>
+</tr>
+<tr>
+<td>价值份额下降 10 个百分点至 35%</td>
+<td style="text-align: right;">3,200</td>
+</tr>
+<tr>
+<td>净利率下降 10 个百分点至 30%</td>
+<td style="text-align: right;">3,000</td>
+</tr>
+<tr>
+<td>份额与净利率同时下降</td>
+<td style="text-align: right;">2,400</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="2036">五、反向估值：现价隐含了多少 2036 年利润</h2>
+<p>把问题反过来问：要让今天 3.50 万亿美元的企业价值，在十年后按不同年化回报与退出市盈率成立，2036 年需要多少净利润？</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>要求年化回报</th>
+<th style="text-align: right;">退出 PE 12</th>
+<th style="text-align: right;">退出 PE 15</th>
+<th style="text-align: right;">退出 PE 20</th>
+<th style="text-align: right;">退出 PE 25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8%</td>
+<td style="text-align: right;">630.5</td>
+<td style="text-align: right;">504.4</td>
+<td style="text-align: right;">378.3</td>
+<td style="text-align: right;">302.6</td>
+</tr>
+<tr>
+<td>10%</td>
+<td style="text-align: right;">757.4</td>
+<td style="text-align: right;">605.9</td>
+<td style="text-align: right;">454.5</td>
+<td style="text-align: right;">363.6</td>
+</tr>
+<tr>
+<td>12%</td>
+<td style="text-align: right;">907.0</td>
+<td style="text-align: right;">725.6</td>
+<td style="text-align: right;">544.2</td>
+<td style="text-align: right;">435.3</td>
+</tr>
+</tbody>
+</table></div>
+<p>单位：十亿美元。算法：<code>2036 净利 = 当前企业价值 × (1+要求回报)^10 ÷ 退出 PE</code>。</p>
+<p><strong>这张表说明三件事：</strong></p>
+<ol>
+<li><strong>现价隐含的 2036 年利润，比本文的最差情景高 32 倍到 94 倍。</strong> 在 10% 年化、退出 PE 20 的中性组合下，市场已经要求 2036 年净利 4545 亿美元——是最差情景的 47 倍，超过基准情景（4000 亿），达到乐观情景（9000 亿）的一半。</li>
+<li><strong>现价并没有为最差情景留出任何折价。</strong> 按 10%/PE15，最差情景的终值现值 555 亿美元，是当前市值的 1.57%；次差情景是 4.5%。</li>
+<li><strong>但这也不等于现价就是泡沫。</strong> 卖方一致预期本身就给出了极高的路径：FY2027 收入 4239 亿美元、FY2028 收入 7254 亿美元（同比 +71%）、FY2028 EPS 16.61 美元，对应净利 4020 亿美元。现价对应 FY2028 一致预期市盈率只有 8.77 倍。若这个增长兑现，今天的价格是便宜的。反过来说，<strong>现价隐含的判断是"FY2028 之后增长放缓但利润不下降"，而不是"周期崩塌"。</strong></li>
+</ol>
+<p><strong>这是本报告最重要的一句话：当前价格已经把最差情景排除在外。</strong> 买入这个价格等于假设最差情景不会发生；这不是关于英伟达生意好坏的判断，是关于赔率结构的判断。</p>
+<hr />
+<h2 id="_8">六、关键检验指标与观察时间点</h2>
+<p>最差情景的每个环节都有可观察的失败判据。以下时间点按证据出现的先后排列。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>检验什么</th>
+<th>具体判据</th>
+<th>关联环节</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2027 Q4（2027-01 报告）</td>
+<td>毛利率是否为底</td>
+<td>指引 71%-72% 是否兑现，FY2028 是否回到 72%-73%；低于 71% 说明定价权崩塌已开始</td>
+<td>环节三</td>
+</tr>
+<tr>
+<td>2027 上半年</td>
+<td>资本开支是否加速</td>
+<td>微软 CFO 明确说 2027 上半年资本开支将加速；若超大规模厂商合计资本开支低于 1 万亿美元，说明拐点比预期早</td>
+<td>环节一</td>
+</tr>
+<tr>
+<td>2027 全年</td>
+<td>融资链是否断裂</td>
+<td>CoreWeave 首批高级债 2030 年到期；关注其债券收益率与二级成交价是否进一步跌破 0.80 美元；Gartner 预测的"80% 新云被并购或停运"是否兑现</td>
+<td>环节一、四</td>
+</tr>
+<tr>
+<td>FY2028（2028-01 报告）</td>
+<td>份额是否流失</td>
+<td>超大规模厂商资本开支中自研加速器占比；英伟达前五大客户集中度与应收账款账龄</td>
+<td>环节二</td>
+</tr>
+<tr>
+<td>FY2029</td>
+<td>担保首笔生效</td>
+<td>SB Energy 园区首栋建筑竣工，1050 亿美元担保开始计息；FY2029 报表面临首次可能的担保计提</td>
+<td>环节五</td>
+</tr>
+<tr>
+<td>FY2029</td>
+<td>承诺到期压力</td>
+<td>FY2028 到期承诺 2220 亿美元、FY2029 到期 1030 亿美元；看经营现金流能否覆盖</td>
+<td>环节五</td>
+</tr>
+<tr>
+<td>2030 起</td>
+<td>信用事件窗口</td>
+<td>CoreWeave 等新云高级债开始到期，利率若继续上行则违约链条可能被触发</td>
+<td>环节五</td>
+</tr>
+<tr>
+<td>持续</td>
+<td>应收与存货</td>
+<td>应收账款周转天数（现 64 天，上季 60 天）、存货余额（现 397 亿，上季 316 亿）；任何一项继续恶化都指向需求端问题</td>
+<td>环节一、三</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>最灵敏的单一指标是存货。</strong> 存货从 316 亿升到 397 亿发生在 Rubin 爬坡期，属于正常备货；但如果它继续上升而收入增速放缓或毛利率继续下滑，它就是需求误判的最直接证据。存货跌价准备是英伟达历史上最常用的利润调节手段——FY2026 第一财季曾就 H20 过剩存货与采购义务计提 45 亿美元。</p>
+<hr />
+<h2 id="_9">七、概率评估</h2>
+<p><strong>对最差情景（2036 年净利 96 亿美元）本身：概率低，量级在 5%-15%。</strong> 它要求五个环节同时成立，其中环节一（资本开支周期在 2028-2030 见顶并多年下行）与环节三（毛利率降到 55% 附近）叠加的概率不高。当前所有在手证据——五家买方资本开支同比 +77.6%、高盛预计 2027 年升至 1.2 万亿美元、微软明确说 2027 上半年加速——都指向需求侧尚未转向。</p>
+<p><strong>对"路径中途出现单年巨亏"：概率明显高于最差情景本身，量级在 10%-20%。</strong> 这是本文更该被重视的判断，因为它不需要 AI 失败，只需要一个违约事件。三个具体条件已经部分成立：SB Energy 担保与单一承租方 OpenAI 绑定且首笔 FY2029 生效；下游新云没有投资级评级、贷款方正在退出；1030 亿美元债务在 2030 年起集中到期。这三件事叠加，触发一次信用事件的路径并不遥远。</p>
+<p><strong>分情景的十年终值（当前企业价值 3.50 万亿美元）：</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: right;">2036 净利（亿美元）</th>
+<th style="text-align: right;">退出 PE</th>
+<th style="text-align: right;">终值（亿美元）</th>
+<th style="text-align: right;">按 10% 折现现值（亿美元）</th>
+<th style="text-align: right;">现值占当前市值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最差</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">1,152</td>
+<td style="text-align: right;">444</td>
+<td style="text-align: right;">1.26%</td>
+</tr>
+<tr>
+<td>最差</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1,440</td>
+<td style="text-align: right;">555</td>
+<td style="text-align: right;">1.57%</td>
+</tr>
+<tr>
+<td>次差</td>
+<td style="text-align: right;">276</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">4,140</td>
+<td style="text-align: right;">1,596</td>
+<td style="text-align: right;">4.53%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">4,000</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">80,000</td>
+<td style="text-align: right;">30,843</td>
+<td style="text-align: right;">87.53%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">4,000</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">100,000</td>
+<td style="text-align: right;">38,554</td>
+<td style="text-align: right;">109.41%</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">9,000</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">225,000</td>
+<td style="text-align: right;">86,747</td>
+<td style="text-align: right;">246.09%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>这张表最重要的信息不是最差一列，而是基准一列：</strong> 即使在基准情景下（2036 年净利 4000 亿美元，即 2026-09-07 报告的结论），按 10% 年化、退出 PE 20 计算的现值是 3.08 万亿美元，仍低于今天的 3.50 万亿美元企业价值。也就是说，<strong>今天的价格不仅排除了最差情景，也几乎排除了基准情景。</strong> 要让今天的价格在基准情景下也成立，需要退出 PE 约 23 倍，或者 2036 年利润超过 4500 亿美元。</p>
+<p><strong>我可能犯的错误：</strong> 低估大客户在具备规模后愿意承担的迁移工作，把当前系统优势当成静态资产；低估英伟达在份额下降时的降价护城河能力（成本优势会让它在份额下滑时仍保持高利润）；也高估了担保与承诺的实际兑现概率——这类安排在历史上多为信用支持工具而非实际赔付，且公司明确表示迄今未支付任何款项。反过来，空方容易低估客户需求的复杂度与英伟达更新产品和软件的速度。</p>
+<blockquote>
+<p>追问：如果三年后更多任务确实转向非英伟达芯片，当时能从哪些经营证据判断定价权是否已经丧失？——本报告给出的答案是毛利率、应收账款周转天数与存货，这三个都是季报级别的公开数字，不需要渠道调研。</p>
+</blockquote>
+<hr />
+<h2 id="_10">八、数据口径与复核记录</h2>
+<p>财务计算、跨来源比较及全部情景公式保存在<a href="../files/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E5%8D%81%E5%B9%B4%E6%9C%80%E5%B7%AE%E6%83%85%E6%99%AF-20261121-%E5%BA%95%E7%A8%BF/arithmetic.json">计算记录</a>，共 201 条，可由<a href="https://github.com/xbtlin/ai-berkshire/blob/main/reports/%E8%8B%B1%E4%BC%9F%E8%BE%BE/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E5%8D%81%E5%B9%B4%E6%9C%80%E5%B7%AE%E6%83%85%E6%99%AF-20261121-%E5%BA%95%E7%A8%BF/verify_model.py">复算脚本</a>重现。脚本使用 Python <code>decimal.Decimal</code>（精度 36 位）独立计算，不依赖浮点。</p>
+<p><strong>一手原件：</strong> <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm">SEC 8-K 2026-11-17 及 EX-99.1/99.2/99.3</a>（FY2027 Q3 业绩、承诺与担保表、资产负债表）、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm">SEC 10-K FY2026</a>（年度财务与终端市场收入表）、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm">SEC 8-K 2026-11-11</a>（CEO 变更）、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm">SEC 8-K 2026-08-17</a>（SB Energy 担保）、SEC EDGAR XBRL companyconcept API（AMZN / GOOGL / MSFT / META / ORACLE / COREWEAVE 资本开支）。</p>
+<p><strong>二手来源（已逐条回原文核对引用句）：</strong> <a href="https://www.cnbc.com/2026/10/29/microsoft-google-ai-capex-estimates.html">CNBC 2026-10-29</a>、<a href="https://www.techtimes.com/articles/328112/20260928/goldman-sachs-quantifies-ais-230b-annual-gap-800b-spent-300b-needed-break-even.htm">TechTimes 引高盛研报 2026-09-28</a>、<a href="https://www.fool.com/investing/2026/11/03/coreweaves-bond-yield-is-a-warning-for-ai-debt/">The Motley Fool 2026-11-03</a>、<a href="https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/">Meta 工程博客 2026-04-02</a>、StockAnalysis 统计与预测页。</p>
+<p><strong>口径说明：</strong></p>
+<ul>
+<li>Q4 FY2027 净利为测算值：指引营业利润中点 + 其他收入 14.97 亿美元（Q3 水平），乘以 (1-17%)，税率取 FY2027 指引 16%-18% 的中值。FY2027 全年净利 2525.6 亿美元为九个月实际 1832.97 亿加该测算值。</li>
+<li>一致预期净利由 StockAnalysis 一致预期 EPS 乘以稀释股本 242 亿股得出，未采用直接给出的净利润值。</li>
+<li>净现金采用保守口径：现金及有价债券减短期债务与长期债务，不含股权证券。</li>
+<li>设备价值池是本模型的概念性口径：全球数据中心加速计算芯片与配套网络、系统中不重复计价的可比采购价值，排除数据中心土建、电力、一般服务器与云服务转售收入；自研芯片按可比设备价值考虑。不存在统一的公开市场统计口径，外部参照只能用高盛 8000 亿美元（仅五家超大规模厂商 AI 基建开支）与 IDC 4970 亿美元（全球 AI 基础设施硬件）作量级校验，两者口径不同，不可直接互换。</li>
+<li>第三方深度研究流程（deep-research）在本次研究中用于检索与抓取候选来源，其验证阶段因接口限流未能完成，本文引用的每条外部事实均已由我本人重新拉取原文核对，未采用无法回溯的条目。</li>
+</ul>
+<p><strong>来源缺口：</strong> 未找到关于 SB Energy 信用评级、OpenAI 在该园区的租赁合约条款细节、以及担保会计处理（是否计提预计负债）的公开披露；本文对尾部路径的金额测算基于"担保全额需兑付"的极端假设，公司目前未计提亦未支付。第三方的担保总敞口 1180 亿美元为公司披露的最大毛敞口，与经济损失敞口不是同一概念。本文引用的美联储 2026-11-13 金融稳定报告未能成功下载并逐字核对，其中涉及科技巨头表外义务的表述因此未纳入正文。</p>
+<p>本文结论：最差情景的常态年利润是 96 亿美元，路径中途的最大单年亏损风险是 954 亿美元，而当前价格已经把两者都排除在外。本文不构成买卖建议。</p></article><p class="wxline">精选研究与报告之外的判断，首发在公众号「复利炼丹炉」 · <a href="../about.html">扫码关注</a><span class="fix">发现数据错误？<a href="https://github.com/xbtlin/ai-berkshire/issues/new?template=data_error.yml&amp;title=%5BData%5D%20%E8%8B%B1%E4%BC%9F%E8%BE%BE%E5%8D%81%E5%B9%B4%E5%90%8E%E6%9C%80%E5%B7%AE%E6%83%85%E6%99%AF%EF%BC%9A%E8%B7%AF%E5%BE%84%E3%80%81%E5%88%A9%E6%B6%A6%E4%B8%8E%E6%A3%80%E9%AA%8C%E6%8C%87%E6%A0%87&amp;ticker=%E8%8B%B1%E4%BC%9F%E8%BE%BE&amp;source=reports%2F%E8%8B%B1%E4%BC%9F%E8%BE%BE%2F%E8%8B%B1%E4%BC%9F%E8%BE%BE%E5%8D%81%E5%B9%B4%E6%9C%80%E5%B7%AE%E6%83%85%E6%99%AF-20261121.md%20%EF%BC%88%E9%98%85%E8%AF%BB%E7%AB%99%EF%BC%9Ahttps%3A%2F%2Fxbtlin.github.io%2Fai-berkshire%2Fr%2F217ca3de74b3.html%EF%BC%89" rel="nofollow">提交纠错</a>（需附正确值与来源）</span></p><h2>同一专题的其他报告</h2><ul class="list"><li><a href="../r/c0bbc62025d3.html">英伟达：黄仁勋事件、换帅风险与买入价格</a><div class="meta">2026-11-12 · 研究</div></li><li><a href="../r/5f2ae49af9a0.html">英伟达（NVDA）独立投资研究：英伟达仍拥有最强的AI计算系统优势之一，但不能再按完全不承担客户资本风险的供应商估值</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/ca12b2c8a684.html">英伟达（NVIDIA / NASDAQ: NVDA）独立投资研究报告</a><div class="meta">2026-10-19 · 研究</div></li><li><a href="../r/c01444c73652.html">英伟达（NVDA）商业模式与十年利润研究</a><div class="meta">2026-09-07 · 研究</div></li><li><a href="../r/916420ef6d36.html">英伟达这个季度扩张的资产，86.8% 没花在自己身上</a><div class="meta">2026-08-28 · 公众号</div></li><li><a href="../r/fc0dae7fdd42.html">英伟达 FY2027 Q2 三大报表解析：从 SEC 原件到逐项含义</a><div class="meta">2026-08-28 · 财报</div></li><li><a href="../r/40df7ec6911f.html">多少钱值得买，什么信号必须卖</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/ed43f9473e6b.html">财报与掌舵人——数字的成色和唯一的钥匙</a><div class="meta">2026-08-01 · 财报</div></li><li><a href="../r/dd1381dcbb5a.html">中央银行与思科之问——循环交易与资本开支周期</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/4eb1ab937793.html">从收费桥到最好的桥——CUDA 城堡与它养出的利润引擎</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/99a79f07565f.html">你以为你看懂了英伟达，其实没有</a><div class="meta">2026-08-01 · 深度系列</div></li><li><a href="../r/6e56cabdf58e.html">《看懂英伟达》系列说明（2026-08 版）</a><div class="meta">2026-08-01 · 导读</div></li></ul></div><aside class="side"><div class="toc"><div class="meta">本文目录</div><div class="toc">
+<ul>
+<li><a href="#_1">一、最差情景的起点：三个已经发生的变化</a></li>
+<li><a href="#_2">二、最差情景的路径：五个环节必须同时发生</a><ul>
+<li><a href="#ai">环节一：AI 算力资本开支周期见顶并进入多年下行</a></li>
+<li><a href="#_3">环节二：大客户自研芯片拿走大部分设备价值</a></li>
+<li><a href="#75-55">环节三：定价权崩塌，毛利率从 75% 降到 55% 附近</a></li>
+<li><a href="#_4">环节四：其他收入萎缩</a></li>
+<li><a href="#_5">环节五：资产负债表在周期下行中成为放大器</a></li>
+</ul>
+</li>
+<li><a href="#_6">三、最坏的部分不是低利润，是中途的一次巨亏</a></li>
+<li><a href="#_7">四、最差情景下的收入与利润：计算过程</a></li>
+<li><a href="#2036">五、反向估值：现价隐含了多少 2036 年利润</a></li>
+<li><a href="#_8">六、关键检验指标与观察时间点</a></li>
+<li><a href="#_9">七、概率评估</a></li>
+<li><a href="#_10">八、数据口径与复核记录</a></li>
+</ul>
+</div>
+</div></aside></div></main><footer>AI Berkshire 研究阅读 ｜ <a href="../about.html">关于本站</a> ｜ 公众号「复利炼丹炉」 ｜ <a href="https://github.com/xbtlin/ai-berkshire">GitHub 仓库</a> ｜ <a href="../feed.xml">RSS 订阅</a> ｜ 生成于 2026-11-21 01:59 UTC</footer></body></html>
