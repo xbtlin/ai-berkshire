@@ -161,7 +161,7 @@ def _parse_md_tables(lines: list) -> list:
                         if m:
                             val = _clean_num(m.group(1))
                             unit = (m.group(2) or '').strip()
-                            if val is not None and val != 0 and abs(val) < 1e15:
+                            if val is not None and abs(val) < 1e15:
                                 results.append((row_label, col_header, val, unit, i + 1, dline))
                     i += 1
                 continue
@@ -187,7 +187,7 @@ def extract_data_points(md_text: str) -> list:
         label = re.sub(r'[\*_`]+', '', label).strip()
         if not _is_valid_label(label):
             return
-        if val is None or val == 0 or abs(val) > 1e15:
+        if val is None or abs(val) > 1e15:
             return
         # 过滤纯年份/季度
         if re.fullmatch(r'(20\d{2}|Q[1-4]|\d{4}\s*Q[1-4])', label.strip()):
