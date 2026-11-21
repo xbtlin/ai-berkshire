@@ -720,7 +720,7 @@ TrendForce（2026-09-29）：**HBM 混合 ASP 2027 年同比 +121%**，且 GPU �
 - [SK 海力士 Q3 2026 业绩](https://news.skhynix.com/) — "DRAM and HBM volumes for the next 3 years through 2029 are effectively sold out"
 - [美光 FQ4 FY2026 业绩](https://investors.micron.com/) — 2027 日历年 HBM 位数供给"vast majority"签约且大幅涨价，"do not have line of sight to when supply and demand will return to balance"
 - [台积电 3Q26 法说会（2026-10-15）](https://investor.tsmc.com/) — 营收 467.2 亿、毛利率 66.4%、HPC 占 68%、AI 加速器 2024–2029 CAGR "mid to high 50s"；**CoWoS 月产能未披露**
-- [TrendForce：HBM 混合 ASP 2027 同比 +121%（2026-09-29）](https://www.trendforce.com/presscenter/) — 及"GPU 与 ASIC 厂商考虑削减单台设备 HBM 容量"
+- TrendForce（2026-09-29）：HBM 混合 ASP 2027 年同比 **+121%**，且 GPU 与 ASIC 厂商正考虑**削减单台设备的 HBM 容量**。〔TrendForce 新闻中心对非浏览器请求全量拦截，本链接无法在正文内挂出，读者可按日期与标题检索其新闻中心〕
 - 行情与历史分位：Yahoo Finance 日线/月线收盘价（2021-12 至 2026-11-20）
 
 **口径与复核**
