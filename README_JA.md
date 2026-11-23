@@ -1,4 +1,4 @@
-日本語 | [English](README_EN.md) | [中文](README.md)
+日本語 | [English](README_EN.md) | [中文](README.md) | [Italiano](README_IT.md)
 
 > 日本語版はコミュニティによりメンテナンスされています。内容が最新でない場合は、中文版・英語版を正としてください。
 
