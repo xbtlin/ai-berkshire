@@ -1,13 +1,35 @@
 {
-  "count": 2507,
-  "published": 2296,
+  "count": 2509,
+  "published": 2298,
   "drafts": 211,
   "reports": [
+    {
+      "title": "MiniMax 投资研究｜87.40 港元买到的，是多大的盈利机会？",
+      "path": "reports/MINIMAX/MiniMax研究报告-20261125.md",
+      "bucket": "公司",
+      "group": "MiniMax",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-25",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "英伟达投资研究：利润在顶点，创始人离场，账本还没交",
       "path": "reports/英伟达/英伟达-research-20261122.md",
       "bucket": "公司",
       "group": "英伟达",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-22",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "快手（1024.HK）投资研究：主业转弱、价格接近净现金，观望并等两个检验点",
+      "path": "reports/快手/快手-research-20261122.md",
+      "bucket": "公司",
+      "group": "快手",
       "series": "",
       "type": "研究",
       "date": "2026-11-22",
