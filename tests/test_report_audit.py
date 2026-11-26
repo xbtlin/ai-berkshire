@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """report_audit.py 回归测试.
 
-覆盖两个已修复的缺陷：
+覆盖已修复的缺陷：
 
   BUG-1  数字提取丢失负号
          7 处正则用 `([\\d,，\\.]+)` 捕获数字，无符号位。报告中的 "-1.72%"
@@ -13,11 +13,14 @@
          main() 中 print(json.dumps(...)) 遇到 €/→/★ 等字符抛
          UnicodeEncodeError 直接退出。
 
+  BUG-3  显式零值被过滤，无法进入抽检清单（#126）。
+
 Zero external dependencies — 仅用 unittest，与 report_audit.py 本身保持一致。
 运行：  python tests/test_report_audit.py
 """
 
 import io
+import json
 import os
 import subprocess
 import sys
@@ -120,6 +123,68 @@ class TestAbsoluteValueGuard(unittest.TestCase):
         self.assertTrue(
             all(abs(v) < 1e15 for v in values),
             "超过 1e15 的负值未被过滤（abs() 守卫失效）")
+
+
+class TestZeroValueExtraction(unittest.TestCase):
+    """#126: explicit zero claims must remain eligible for verification."""
+
+    def test_table_preserves_zero_values(self):
+        for value, unit in (('0', '亿元'), ('0.00', '%'), ('-0.0', 'x')):
+            with self.subTest(value=value, unit=unit):
+                md = (
+                    "| Metric | Value |\n"
+                    "|---|---|\n"
+                    f"| Operating profit | {value}{unit} |\n"
+                )
+                points = R.extract_data_points(md)
+                self.assertEqual(
+                    [(p['label'], p['reported_value'], p['unit']) for p in points],
+                    [('Operating profit · Value', 0.0, unit)])
+
+    def test_key_value_lines_preserve_zero_values(self):
+        for value, unit in (('0', '亿元'), ('0.00', '%'), ('-0.0', 'x')):
+            with self.subTest(value=value, unit=unit):
+                points = R.extract_data_points(f"Net income: {value}{unit}\n")
+                self.assertEqual(
+                    [(p['label'], p['reported_value'], p['unit']) for p in points],
+                    [('Net income', 0.0, unit)])
+
+    def test_missing_and_non_numeric_values_remain_excluded(self):
+        for value in ('', 'N/A', '—', '-', 'not disclosed'):
+            with self.subTest(value=value):
+                md = (
+                    "| Metric | Value |\n"
+                    "|---|---|\n"
+                    f"| Operating profit | {value} |\n\n"
+                    f"Net income: {value}\n"
+                )
+                self.assertEqual(R.extract_data_points(md), [])
+
+    def test_cli_full_sample_includes_zero_claims(self):
+        import tempfile
+        md = (
+            "| Metric | Value |\n"
+            "|---|---|\n"
+            "| Operating profit | 0亿元 |\n"
+            "| Revenue | 100亿元 |\n\n"
+            "Net income: 0亿元\n"
+            "Gross profit: -1亿元\n"
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            path = os.path.join(directory, 'synthetic-report.md')
+            with open(path, 'w', encoding='utf-8') as fh:
+                fh.write(md)
+            proc = subprocess.run(
+                [sys.executable, os.path.join(_TOOLS, 'report_audit.py'),
+                 'extract', '--report', path, '--ratio', '1', '--seed', '1'],
+                capture_output=True, encoding='utf-8', timeout=10)
+
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        template = json.loads(proc.stdout[proc.stdout.index('\n[\n') + 1:])
+        self.assertEqual(
+            [(p['label'], p['reported_value']) for p in template],
+            [('Operating profit · Value', 0.0), ('Revenue · Value', 100.0),
+             ('Net income', 0.0), ('Gross profit', -1.0)])
 
 
 class TestGbkStdoutSurvival(unittest.TestCase):
