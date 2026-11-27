@@ -34,6 +34,7 @@ import json
 import os
 import random
 import re
+import sys
 from datetime import datetime
 from pathlib import Path
 from playwright.async_api import async_playwright
@@ -197,8 +198,9 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_pa
     all_posts = {}
     if dump_all_path and os.path.exists(dump_all_path):
         try:
-            for e in json.load(open(dump_all_path)):
-                all_posts[e['id']] = e
+            with open(dump_all_path, encoding="utf-8") as f:
+                for e in json.load(f):
+                    all_posts[e['id']] = e
             print(f"  ↪ 载入已有全量缓存：{len(all_posts)} 条")
         except Exception as e:
             print(f"  全量缓存读取失败: {e}")
@@ -250,7 +252,7 @@ async def fetch_all_timeline(page, user_id, keywords, progress_path, dump_all_pa
     start_page = 2
     if os.path.exists(progress_path):
         try:
-            with open(progress_path) as f:
+            with open(progress_path, encoding="utf-8") as f:
                 prev = json.load(f)
             start_page = max(2, prev.get('next_page', 2))
             for e in prev.get('collected', []):
@@ -366,7 +368,8 @@ def parse_args():
 
 
 def filter_from_cache(cache_path, keywords, user_id):
-    posts = json.load(open(cache_path))
+    with open(cache_path, encoding="utf-8") as f:
+        posts = json.load(f)
     out = []
     for p in posts:
         if is_match((p.get('title','') + ' ' + p.get('text','')), keywords):
@@ -430,4 +433,6 @@ async def main():
 
 
 if __name__ == '__main__':
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
     asyncio.run(main())
