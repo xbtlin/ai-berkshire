@@ -157,12 +157,13 @@ RISK_PLACEMENT_WARN = {"未建模"}
 def exit_pe(roic, g, r):
     """永续增长模型的终值 PE。
 
-    返回 (pe, 留存率, 分子, 分母)。分母 <= 0 时返回 pe=None（模型失效）。
+    返回 (pe, 留存率, 分子, 分母)。分母 <= 0，或派息率 <= 0（g >= ROIC，留存率 >= 100%）
+    时返回 pe=None（模型失效）。
     """
     spread = r - g
-    retention = g / roic
+    retention = g / roic if roic > 0 else float("inf")
     numerator = 1.0 - retention
-    if spread <= 0:
+    if spread <= 0 or numerator <= 0:
         return None, retention, numerator, spread
     return numerator / spread, retention, numerator, spread
 
@@ -257,7 +258,8 @@ def cmd_pe(args):
     print(f"  分子 1 - 留存率 = {numerator:.4f}                    （即派息率 {numerator:.1%}）")
     print(f"  分母 r - g      = {args.r:.4f} - {args.g:.4f} = {spread:.4f}  ({spread*100:.1f}pct)")
     if pe is None:
-        print(f"\n  ✗ 分母 <= 0，模型失效。g 必须小于 r。\n")
+        why = "分母 <= 0，模型失效。g 必须小于 r" if spread <= 0 else "派息率 <= 0，模型失效。g 必须小于 ROIC"
+        print(f"\n  ✗ {why}。\n")
         return 1
     print(f"\n  退出 PE = {numerator:.4f} / {spread:.4f} = {pe:.1f}x\n")
     if spread < MIN_SPREAD:
@@ -618,6 +620,8 @@ def cmd_audit(args):
         print(f"     {label}  g={g:>5.1%}  r-g={spread*100:>4.1f}pct  PE={pe_s:>10}{delta}  {tag}")
         if spread <= 0:
             fails.append(f"C2: {label}档 r-g={spread*100:.1f}pct <= 0，模型失效")
+        elif pe is None:
+            fails.append(f"C2: {label}档 g={g:.1%} >= ROIC={args.roic:.1%}，派息率 <= 0，模型失效")
         elif spread < MIN_SPREAD:
             narrow.append(label)
     if narrow:
