@@ -1,8 +1,19 @@
 {
-  "count": 2509,
-  "published": 2298,
+  "count": 2510,
+  "published": 2299,
   "drafts": 211,
   "reports": [
+    {
+      "title": "国常会资本市场表态与居民财富中的股票占比：国际对比与中国未来",
+      "path": "reports/居民财富中的股票占比-国常会与中国展望-20261127.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "研究",
+      "date": "2026-11-27",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "MiniMax 投资研究｜87.40 港元买到的，是多大的盈利机会？",
       "path": "reports/MINIMAX/MiniMax研究报告-20261125.md",
