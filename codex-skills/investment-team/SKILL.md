@@ -9,7 +9,10 @@ This skill is generated from `skills/investment-team.md` so Claude Code and Code
 
 - Treat `$ARGUMENTS` as the user's request in the current Codex thread.
 - When the source mentions Claude-only surfaces such as Task, Agent, WebSearch, Bash, Read, or Write, use the closest Codex capability available in this session: subagents when available, web search when needed, shell commands for local tools, and normal file edits for workspace files.
-- Use shared project tools from `tools/` in this repository. Prefer running commands from the repository root with paths like `python3 tools/financial_rigor.py ...`; if the current thread starts outside the repo, locate the actual checkout path first instead of assuming a fixed home-directory path.
+- Locate the actual project root containing `AGENTS.md`, `skills/`, and `tools/` before resolving project paths. Do not assume `~/ai-berkshire` or use the installed skill directory as the root. Run shared tools from the project root, or pass absolute tool and report paths. Save reports under its `reports/` directory unless the user specifies another destination.
+- Before running Python commands, identify and verify a usable interpreter; replace the example command `python3` as needed. A WindowsApps command entry alone does not verify an interpreter.
+- Adapt examples to the active shell. In PowerShell, use single-line commands instead of Bash backslash continuations, quote path arguments, and replace `grep`/`head` pipelines with available `rg` or PowerShell commands.
+- Use the system temporary directory instead of assuming `/tmp` exists: `tempfile.gettempdir()` with `pathlib.Path` in Python, or `[System.IO.Path]::GetTempPath()` with `Join-Path` in PowerShell. Ensure output parent directories exist before writing.
 - Before starting research, run the `date` command to confirm today's date; treat it as the baseline for "latest" data and state the data cutoff date in the report header. Never assume the current date from training data.
 - Preserve the research quality rules from `AGENTS.md`: cross-check financial data, use exact arithmetic tools for valuation/math, and clearly label uncertainty and source gaps.
 
@@ -46,9 +49,17 @@ This skill is generated from `skills/investment-team.md` so Claude Code and Code
 
 将评级结果告知每个Agent，影响其研究方式。
 
-### 第一步¾：WebSearch 权限预检（关键 · 避免 Agent 静默退化）
+### 第一步¾：联网能力与权限预检（按客户端区分）
 
-在创建团队、启动任何后台 Agent **之前**，必须先确认 WebSearch 权限已放行。
+在创建团队、启动任何后台 Agent **之前**，必须先确认当前客户端的联网工具可用，并依据实际调用结果确认权限。
+
+**Codex**：
+1. 检查本次会话实际提供的搜索或网页读取工具，并进行一次与研究主题相关的只读检索，确认返回可核查的来源。
+2. 不读取或修改 `.claude/settings.local.json` 来判断 Codex 权限；该文件不存在也不代表 Codex 无法联网。
+3. 若工具不可用、权限受限或检索失败，说明实际原因及返回结果；按当前会话的权限机制处理，在恢复可用前不要启动依赖联网的研究。不得用训练知识冒充检索结果。
+4. 主会话成功不代表每个子 Agent 都有相同工具或权限；向子 Agent 明确要求核实自身可用能力并报告失败。
+
+**Claude Code**：保留以下 WebSearch 权限预检流程；其中 Bash 示例只用于 Bash 环境，其他 shell 使用等效的文件读取与查找操作。
 
 **为什么必须预检**：本 skill 用 `run_in_background: true` 启动 4 个后台子 Agent，而**后台 Agent 无法向用户弹出交互式权限确认**。若 `WebSearch` 未在 `.claude/settings.local.json` 的 `permissions.allow` 白名单中，子 Agent 的联网搜索会被**静默拦截**，导致其退化为仅凭训练知识（有知识截止日期）作答，却仍按框架输出一份"看起来完整、实则未联网"的伪研究——这是本 skill 最危险的失败模式（见 issue #58）。
 
@@ -209,7 +220,7 @@ This skill is generated from `skills/investment-team.md` so Claude Code and Code
 
 ### 第八步：保存报告
 
-将完整最终报告写入 `~/{公司名}投资研究报告_{日期}.md`（日期格式 YYYYMMDD）。
+将完整最终报告写入实际项目根目录下的 `reports/{公司名}/最终报告.md`，报告内标注研究日期（YYYYMMDD），保存前确保父目录存在。若已有同名报告，除非用户要求更新，否则另存为 `最终报告-{YYYYMMDD}.md`；若仍重名，增加序号，保留原报告。
 
 ### 第九步：数据抽检（准出流程）
 

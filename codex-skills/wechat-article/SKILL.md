@@ -9,7 +9,10 @@ This skill is generated from `skills/wechat-article.md` so Claude Code and Codex
 
 - Treat `$ARGUMENTS` as the user's request in the current Codex thread.
 - When the source mentions Claude-only surfaces such as Task, Agent, WebSearch, Bash, Read, or Write, use the closest Codex capability available in this session: subagents when available, web search when needed, shell commands for local tools, and normal file edits for workspace files.
-- Use shared project tools from `tools/` in this repository. Prefer running commands from the repository root with paths like `python3 tools/financial_rigor.py ...`; if the current thread starts outside the repo, locate the actual checkout path first instead of assuming a fixed home-directory path.
+- Locate the actual project root containing `AGENTS.md`, `skills/`, and `tools/` before resolving project paths. Do not assume `~/ai-berkshire` or use the installed skill directory as the root. Run shared tools from the project root, or pass absolute tool and report paths. Save reports under its `reports/` directory unless the user specifies another destination.
+- Before running Python commands, identify and verify a usable interpreter; replace the example command `python3` as needed. A WindowsApps command entry alone does not verify an interpreter.
+- Adapt examples to the active shell. In PowerShell, use single-line commands instead of Bash backslash continuations, quote path arguments, and replace `grep`/`head` pipelines with available `rg` or PowerShell commands.
+- Use the system temporary directory instead of assuming `/tmp` exists: `tempfile.gettempdir()` with `pathlib.Path` in Python, or `[System.IO.Path]::GetTempPath()` with `Join-Path` in PowerShell. Ensure output parent directories exist before writing.
 - Before starting research, run the `date` command to confirm today's date; treat it as the baseline for "latest" data and state the data cutoff date in the report header. Never assume the current date from training data.
 - Preserve the research quality rules from `AGENTS.md`: cross-check financial data, use exact arithmetic tools for valuation/math, and clearly label uncertainty and source gaps.
 
@@ -206,11 +209,11 @@ This skill is generated from `skills/wechat-article.md` so Claude Code and Codex
 
 论文解读类文章必须在定稿前完成配图提取：
 
-1. **渲染**：`pdftoppm -png -r 900 -f {页码} -l {页码} 论文.pdf /tmp/page`（900 DPI起步，如果图片不到500KB则升到1200或1500 DPI）
+1. **渲染**：先在系统临时目录中准备本次任务的子目录，再拼接 `page` 作为输出前缀；PowerShell 使用 `[System.IO.Path]::GetTempPath()` 和 `Join-Path`，Python 使用 `tempfile.gettempdir()` 和 `pathlib.Path`。确保父目录存在，替换占位符后运行：`pdftoppm -png -r 900 -f {页码} -l {页码} "{论文PDF完整路径}" "{临时目录中的完整输出前缀}"`（900 DPI起步，如果图片不到500KB则升到1200或1500 DPI）。
 2. **定位**：先用150 DPI渲染全页，目视确认各图表的像素坐标
 3. **裁切**：用 PIL 按坐标裁切，`compress_level=1` 保存，确保每张 ≥ 500KB
 4. **存储**：保存到 `assets/{主题简称}/` 目录，命名为 `fig{序号}-{描述}.png`
-5. **插入**：文章中用 `![描述](../../assets/{主题简称}/fig{序号}-{描述}.png)` 引用
+5. **插入**：以文章所在目录为基准计算到项目 `assets/{主题简称}/` 的相对路径。文章位于 `reports/{公司名}/` 或 `reports/AI产业研究/` 时，用 `![描述](../../assets/{主题简称}/fig{序号}-{描述}.png)`；文章直接位于 `reports/` 时，用 `![描述](../assets/{主题简称}/fig{序号}-{描述}.png)`。其他目录深度重新计算，写入后核对图片文件是否存在。
 
 ### 第四步：产出最终文件
 

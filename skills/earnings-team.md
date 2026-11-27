@@ -106,10 +106,11 @@
    - 收入、毛利、经营利润、净利润——GAAP和Non-GAAP都要
    - GAAP vs Non-GAAP差异：差了多少、差在哪里、差距扩大还是缩小
    - 关键数据至少两个来源交叉验证
+   - 运行前统一两来源的币种和单位，将 `{值1}`、`{值2}` 替换为实际数值，`{单位}` 替换为对应单位。
 
    ```bash
    python3 tools/financial_rigor.py cross-validate \
-     --metric "revenue" --values {值1} {值2} --sources "来源1" "来源2"
+     --field "revenue" --values '{"来源1": {值1}, "来源2": {值2}}' --unit "{单位}"
    ```
 
 2. **现金流分析（最重要）**
